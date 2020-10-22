@@ -13,7 +13,7 @@ The purpose of my work is to enable evidence-based decision making. I study sust
 
 My research is interdisciplinary, leveraging diverse methods matched to the problem at hand. I specialize in systems engineering and operations research, and integrate tools and insights from other disciplines including economics, data science, and political science. 
 
-My PhD work is on strategies and policies for the electrification of transport. Deep electrification is a cornerstone of effective climate change policy. I investigate electrification from a systems perspective and explore how to overcome the engineering, economic, and policy challenges in the way of integrating vehicles into the electric grid.
+My PhD work is on strategies and policies for simultaneous electricity decarbonization and transport electrification. I am working on methods to model the dynamics of energy transitions, in order to investigate the forces that determine the rate of transitions as well as the interactions between electrification and decarbonization. The purpose of this work is to contribute insights on how to better manage the decarbonization and electrification transitions.
 
 Follow my latest work on [Twitter](https://twitter.com/EmilDimanchev).
 
