@@ -13,7 +13,7 @@ The purpose of my work is to enable evidence-based decision making. I study sust
 
 My research is interdisciplinary, leveraging diverse methods matched to the problem at hand. I specialize in systems engineering and operations research, and integrate tools and insights from other disciplines including economics, data science, and political science. 
 
-My PhD work is on strategies and policies for simultaneous electricity decarbonization and transport electrification. I am working on methods to model the dynamics of energy transitions, in order to investigate the forces that determine the rate of transitions as well as the interactions between electrification and decarbonization. The purpose of this work is to contribute insights on how to better manage the decarbonization and electrification transitions.
+My PhD work is on strategies and policies for simultaneous electricity decarbonization and transport electrification. I am working on methods to model the dynamics of energy transitions, in order to investigate the forces that determine the rate of transitions as well as the interactions between electrification and decarbonization.
 
 Follow my latest work on [Twitter](https://twitter.com/EmilDimanchev).
 
@@ -21,7 +21,7 @@ Follow my latest work on [Twitter](https://twitter.com/EmilDimanchev).
 
 I am currently a PhD Candidate in electrical power engineering at the Norwegian University of Science and Technology ([Energy System Planning group](https://www.ntnu.edu/iel/research)), an External Researcher at the MIT [Center for Energy and Environmental Policy Research](http://ceepr.mit.edu), and a Superforecaster at [Good Judgment](https://goodjudgment.com).
 
-Previously, I was a Senior Carbon Market Analyst at Thomson Reuters Point Carbon, where I advised public and private sector decision makers on carbon markets. 
+In previous roles, I was a Senior Research Associate at MIT CEEPR, and a Senior Carbon Market Analyst at Thomson Reuters Point Carbon.
 
 I have testified in front of legislators on climate policy, served as a consultant to government officials on carbon pricing, and briefed senior staff at Fortune Global 500 companies. I advised on the reform of the European Emissions Trading System and my work was featured in policy hearings in the EU Parliament and the EU Commission, contributing to, in the words of one lawmaker: "a cool-headed debate". My research has also been quoted in the media including Bloomberg, the Wall Street Journal, Politico, BBC, and others.
 
