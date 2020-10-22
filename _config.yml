@@ -16,6 +16,7 @@ author: 杨李鑫
 navbar-links:
   关于我: "aboutme"
   我的文章:
+    Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
 
@@ -42,7 +43,7 @@ social-network-links:
   email: "2690688423@qq.com"
 #facebook: deanattali
   github: YLX621
-  #twitter: daattali
+  twitter: Lixin Yang
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -50,7 +51,7 @@ social-network-links:
   zhihu: "https://www.zhihu.com/people/li-xin-32-2"
 #  snapchat: deanat78
 #  instagram: deanat78
-#  youtube: user/deanat78
+  youtube: 杨李鑫/deanat78
 #  spotify: yourname
   #telephone:
 #  steam: deanat78
