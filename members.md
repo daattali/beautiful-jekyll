@@ -15,13 +15,13 @@ members:
       - name: PhD students
         full: true
         list:
-          - name: Brian Okorn
+          - name: Brian Okorn<br>(co-advised with Martial Hebert)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2016/12/okorn_brian_2019.jpg
             web_url: https://www.ri.cmu.edu/ri-people/brian-e-okorn/
-          - name: Siddharth Ancha
+          - name: Siddharth Ancha<br> (co-advised with Srinivasa Narasimhan)
             photo_url: https://siddancha.github.io/images/siddharth_ancha_520_780.png
             web_url: https://scholar.google.com/citations?user=H8e3R2JADJEC&hl=en
-          - name: Xingyu Lin
+          - name: Xingyu Lin 
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2018/01/Xingyu.Lin_-1.jpg
             web_url: https://xingyu-lin.github.io/
           - name: Thomas Weng
@@ -152,6 +152,7 @@ members:
           {% endfor %}
         </ul>
       {% endif %}
+    <br>
     {% endif %}
     {% endfor %}
   {% endfor %}
