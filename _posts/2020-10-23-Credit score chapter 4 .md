@@ -65,7 +65,17 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 
 Dưới đây là 1 ví dụ về Lime :
 
+<table border="1" class="dataframe">\n  <thead>\n    <tr style="text-align: right;">\n      <th></th>\n      <th>8002</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>MONTH_FROM_LAST</th>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>LAST_PAY_DAY</th>\n      <td>28</td>\n    </tr>\n    <tr>\n      <th>LAST_RECEIPT_AMT</th>\n      <td>85410</td>\n    </tr>\n    <tr>\n      <th>PAID_LAST_MONTH</th>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>AVG_PAID_3M</th>\n      <td>85410</td>\n    </tr>\n    <tr>\n      <th>PAID_COUNT_3M</th>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>PAID_COUNT_6M</th>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>DPD</th>\n      <td>44</td>\n    </tr>\n    <tr>\n      <th>DPD_1M</th>\n      <td>45</td>\n    </tr>\n    <tr>\n      <th>DPD_2M</th>\n      <td>15</td>\n    </tr>\n    <tr>\n      <th>POS_BOM</th>\n      <td>4.2225e+06</td>\n    </tr>\n    <tr>\n      <th>PTP</th>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>AVG_INSTLAMT</th>\n      <td>703665</td>\n    </tr>\n    <tr>\n      <th>TICKET</th>\n      <td>LOW</td>\n    </tr>\n    <tr>\n      <th>PRODUCT_GROUP</th>\n      <td>X-sell</td>\n    </tr>\n    <tr>\n      <th>GENDER</th>\n      <td>Male</td>\n    </tr>\n    <tr>\n      <th>TENOR</th>\n      <td>24</td>\n    </tr>\n    <tr>\n      <th>LABEL</th>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>FIX_BIN</th>\n      <td>9</td>\n    </tr>\n    <tr>\n      <th>SCORE</th>\n      <td>319</td>\n    </tr>\n  </tbody>\n</table>
+
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_2.png)
+
+Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 7 trong số đó phản đối cho kết quả "Paid"
+
+Các yếu tố phản đối: 
+POS_BOM <= 7,803,092 tr.
+PAID_LAST_MONTH = 0 : không có thanh toán vào tháng trước. 
+
+
 
 
 
