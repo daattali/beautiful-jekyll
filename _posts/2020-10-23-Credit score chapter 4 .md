@@ -63,6 +63,9 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 6. Việc diễn giải tính hợp lý của kết quả được thực hiện dựa vào Weight coefficient và danh sách M features được chọn. Nếu Weight coefficient > 0, thì giá trị quan sát của feature Mi đang ủng hộ cho kết quả tiên lượng (outcome) P, ngược lại, Weight Coefficient <0 thì giá trị feature Mi chống lại kết quả P.
 
 
+Dưới đây là 1 ví dụ về Lime :
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_2.png)
 
 
 
