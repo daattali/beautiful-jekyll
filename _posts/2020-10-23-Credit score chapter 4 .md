@@ -63,7 +63,7 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 6. Việc diễn giải tính hợp lý của kết quả được thực hiện dựa vào Weight coefficient và danh sách M features được chọn. Nếu Weight coefficient > 0, thì giá trị quan sát của feature Mi đang ủng hộ cho kết quả tiên lượng (outcome) P, ngược lại, Weight Coefficient <0 thì giá trị feature Mi chống lại kết quả P.
 
 
-Dưới đây là 1 ví dụ về Lime :
+Dưới đây là 1 ví dụ về Lime Cho B2:
 
 <table border="1" class="dataframe" float="left" font-size="10">
   <thead>
@@ -163,9 +163,9 @@ Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 7 trong s
 Các yếu tố phản đối: 
 POS_BOM = 4,2tr <= 7,8tr.
 PAID_LAST_MONTH = 0 : không có thanh toán vào tháng trước. 
-DPD_1M = 45 > 30 : DPD bom tháng trước lớn hơn 30 
-LAST_RECEIPT_AMT = 85410 : số tiền thanh toán lần cuối quá nhỏ 
-
+PAID_COUNT_6M = 1 : chỉ có 1 lần thanh toán trong 6 tháng.
+DPD_1M = 45 > 30 : DPD bom tháng trước lớn hơn 30.
+LAST_RECEIPT_AMT = 85,410 : số tiền thanh toán lần cuối quá nhỏ.
 
 
 
