@@ -3,7 +3,7 @@ layout: post
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/English study.jpg
 share-img: /assets/img/path.jpg
-tags: [books]
+tags: [text]
 ---
 
 # 为什么建议阅读英文文档！
