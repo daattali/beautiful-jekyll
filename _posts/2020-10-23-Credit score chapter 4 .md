@@ -49,3 +49,23 @@ Sơ đồ sau đây tóm tắt quy trình Suy diễn / Diễn dịch dựa vào 
 
   3. Giải thích được cơ chế của mô hình ở cấp độ cá thể: Mô hình hoạt động có chính xác không cho trường hợp này ? Tại sao kết quả lại như vậy ? Biến nào có vai trò/ ảnh hưởng quan trọng nhất ở cá thể này ?
 
+# 3 Giải thích black-box model
+
+Như đã nói ở trên các mô hình chúng ta đang sử dụng là Random Forest và Deep learning, do đó chúng ta không thể các phương pháp tính điểm cho từng giá trị như Logistic hay Cây quyết định như Decision tree, ... 
+
+Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Model-agnostic Explanations), dựa trên giả định là bất kể mô hình phức tạp đến đâu, thì tại một miền cục bộ trong không gian dữ liệu, mô hình có thể được ước lượng xấp xỉ bằng quy luật tuyến tính.
+
+1. Đầu tiên, LIME sẽ lấy thông tin về đặc tính phân phối của feature dựa vào training dataset và nội dung trong model. Thông tin này được lưu trữ trong một object gọi là explainer. 
+2. Việc diễn giải sẽ được áp dụng cho 1 trường hợp, cá thể mới. LIME sẽ mô phỏng một lượng lớn các trường hợp giả định (một đám mây nhiễu của features) nằm kề cận chung quanh trường hợp đang được xét, dựa vào quy luật phân phối của features mà nó đã ghi nhận từ trước.
+3. LIME áp dụng mô hình cho toàn bộ những điểm trong không gian nhiễu này, đồng thời tính khoảng cách giữa các điểm mô phỏng đến điểm trung tâm là trường hợp được xét. Khoảng cách này sẽ được chuyển thành thang điểm
+4. LIME chọn một số lượng M features tiêu biểu nhất cho phép mô tả tốt nhất khoảng cách nói trên.
+5. LIME dựng một mô hình rất đơn giản cho các điểm mô phỏng, sử dụng M features được chọn làm predictor, để giải nghĩa cho outcome của model. Mô hình này có dạng Tuyến tính, hoặc mô hình Decision tree. Tham số hồi quy cho mỗi Features được điều chỉnh bằng một trong số (Weight) tỉ lệ với khoảng cách sai biệt với giá trị feature có thực của cá thể.
+6. Việc diễn giải tính hợp lý của kết quả được thực hiện dựa vào Weight coefficient và danh sách M features được chọn. Nếu Weight coefficient > 0, thì giá trị quan sát của feature Mi đang ủng hộ cho kết quả tiên lượng (outcome) P, ngược lại, Weight Coefficient <0 thì giá trị feature Mi chống lại kết quả P.
+
+Ưu thế lớn nhất của phương pháp LIME, đó là tính đôc lập với Algorithm. Lime không phụ thuộc vào bản chất của algorithm, thậm chí nó không dùng đến (và không cần biết) cơ chế bên trong của mô hình. Do đó, LIME có thể áp dụng cho mọi algorithm, từ Naive Bayes, KNN cho đến Random Forest hay Neural network. Tính độc lập này cho phép LIME hoạt động tại mọi thời điểm, cho mọi version của mô hình.
+
+
+
+
+
+
