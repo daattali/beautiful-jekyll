@@ -65,7 +65,98 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 
 Dưới đây là 1 ví dụ về Lime :
 
-<table border="1" class="dataframe">
+<table border="1" class="dataframe" float="left">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>8002</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>MONTH_FROM_LAST</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>LAST_PAY_DAY</th>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>LAST_RECEIPT_AMT</th>
+      <td>85410</td>
+    </tr>
+    <tr>
+      <th>PAID_LAST_MONTH</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>AVG_PAID_3M</th>
+      <td>85410</td>
+    </tr>
+    <tr>
+      <th>PAID_COUNT_3M</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>PAID_COUNT_6M</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>DPD</th>
+      <td>44</td>
+    </tr>
+    <tr>
+      <th>DPD_1M</th>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>DPD_2M</th>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>POS_BOM</th>
+      <td>4.2225e+06</td>
+    </tr>
+    <tr>
+      <th>PTP</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>AVG_INSTLAMT</th>
+      <td>703665</td>
+    </tr>
+    <tr>
+      <th>TICKET</th>
+      <td>LOW</td>
+    </tr>
+    <tr>
+      <th>PRODUCT_GROUP</th>
+      <td>X-sell</td>
+    </tr>
+    <tr>
+      <th>GENDER</th>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <th>TENOR</th>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>LABEL</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>FIX_BIN</th>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>SCORE</th>
+      <td>319</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe" float="right">
   <thead>
     <tr style="text-align: right;">
       <th></th>
