@@ -42,8 +42,8 @@ subtitle:
     
 **JavaScript:** 
  - Build many small web applications with <a href="https://minmax49.github.io/2019-11-15-google_app/">google ecosystem</a>.
- - Front-End Web Development with React.
- - Mobile app Development with React Native.
+ - Web Development with React.
+ - Mobile App Development with React Native.
 
 **BI:** 
  - Data-studio, Python-Dash, has many <a href="https://minmax49.github.io/2020-04-18-HCM-housing-chapter-2/">projects</a>.
