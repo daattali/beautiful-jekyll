@@ -65,7 +65,7 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 
 Dưới đây là 1 ví dụ về Lime :
 
-<table border="1" class="dataframe" float="left">
+<table border="1" class="dataframe" float="left" font-size="10">
   <thead>
     <tr style="text-align: right;">
       <th></th>
