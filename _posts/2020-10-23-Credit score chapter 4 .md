@@ -47,10 +47,10 @@ Sơ đồ sau đây tóm tắt quy trình Suy diễn / Diễn dịch dựa vào 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_1.png)
 
+Để có thể thực hiện các ý tưởng kể trên chúng ta cần đặt ra các câu hỏi: 
+  1. Mô hình này chính xác đến đâu ? Có đáng tin cậy hay không ? 
 
-  1. Mô hình này chính xác đến đâu ? Có đáng tin cậy hay không ? Câu hỏi này dẫn đến việc kiểm định phẩm chất mô hình, không chỉ 1 lần trong khi làm nghiên cứu mà trong suốt quá trình lâu dài khi mà mô hình đó vẫn còn được ứng dụng trong thực hành lâm sàng (đối với mục tiêu tiên lượng) hoặc tồn tại trong thư viện y văn (đối với mô hình lý thuyết) .
+  2. Mô hình hoạt động như thế nào ? Nó đã học được gì từ dữ liệu ? Đây là câu hỏi rất quan trọng làm nền tảng cho việc diễn giải nội dung/cơ chế của mô hình. Giải đáp được câu hỏi này cho phép rút ra hàng loạt thông tin, suy diễn quan trọng, hữu ích bao gồm: Vai trò của mỗi biến ? Mối liên hệ bộ phận giữa mỗi biến và kết quả là gì ? Kết quả của việc giải thích cơ chế này còn có thể được sử dụng để quay ngược lại cải thiện mô hình bằng cách bỏ bớt những biến không quan trọng, tinh chỉnh tham số của algorithm, thêm dữ liệu mới
 
-  2. Mô hình hoạt động như thế nào ? Nó đã học được gì từ dữ liệu ? Đây là câu hỏi rất quan trọng làm nền tảng cho việc diễn giải nội dung/cơ chế của mô hình. Giải đáp được câu hỏi này cho phép rút ra hàng loạt thông tin, suy diễn quan trọng, hữu ích bao gồm: Vai trò của mỗi biến ? Mối liên hệ bộ phận giữa mỗi biến và kết quả là gì ? (Ghi chú: nếu kết quả là một chẩn đoán / tiên lượng – câu hỏi này cho phép xác định yếu tố nguy cơ, nếu kết quả là một đại lượng hay con số - câu hỏi trên cho phép so sánh, phân cụm hoặc phân tích tương quan bộ phận). Kết quả của việc giải thích cơ chế này còn có thể được sử dụng để quay ngược lại cải thiện mô hình bằng cách bỏ bớt những biến không quan trọng, tinh chỉnh tham số của algorithm, thêm dữ liệu mới
-
-  3. Giải thích được cơ chế của mô hình ở cấp độ cá thể: Mô hình hoạt động có chính xác không cho trường hợp này ? Tại sao kết quả lại như vậy ? Biến nào có vai trò/ ảnh hưởng quan trọng nhất ở cá thể này ? v.v Trong bài trước Nhi đã bàn luận về những lợi ích của việc diễn giải mô hình cho từng cá thể, các bạn có thể đọc thêm ở đây:
+  3. Giải thích được cơ chế của mô hình ở cấp độ cá thể: Mô hình hoạt động có chính xác không cho trường hợp này ? Tại sao kết quả lại như vậy ? Biến nào có vai trò/ ảnh hưởng quan trọng nhất ở cá thể này ?
 
