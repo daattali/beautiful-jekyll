@@ -38,11 +38,6 @@ Trong sơ đồ trên, những mô hình chính xác nhất lại chính là nh�
 
 Thật không may, các mô hình chính để xây dụng cho Scorecard lại là Random Forest và Deep learning, việc giải thích chúng đã khó lại càng khó. 
 
-George Box người được gọi là "một trong những bộ óc thống kê vĩ đại của thế kỷ 20" cũng từng phát biểu : "tất cả mô hình đều sai, nhưng đôi khi chúng hữu dụng"
-
-# 3 Hiểu hơn về cách thức mô hình hoạt động.
-
-
 Sơ đồ sau đây tóm tắt quy trình Suy diễn / Diễn dịch dựa vào mô hình:
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_1.png)
