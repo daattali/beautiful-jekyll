@@ -157,17 +157,22 @@ Dưới đây là 1 ví dụ về Lime Cho B2:
 </table>
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_2.png)
+
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_3.png)
-Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 7 trong số đó phản đối cho kết quả "Paid"
+
+Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 5 trong số đó phản đối cho kết quả "Paid"
 
 Các yếu tố phản đối: 
 - POS_BOM = 4,2tr <= 7,8tr.
-- PAID_LAST_MONTH = 0 : không có thanh toán vào tháng trước. 
 - PAID_COUNT_6M = 1 : chỉ có 1 lần thanh toán trong 6 tháng.
 - DPD_1M = 45 > 30 : DPD bom tháng trước lớn hơn 30.
+- DPD = 44 > DPD bom tháng này là 44
 - LAST_RECEIPT_AMT = 85,410 : số tiền thanh toán lần cuối quá nhỏ.
 
-
+Các yếu tố ủng hộ: 
+- PAID_LAST_MONTH  = 1 : có Paid vào tháng trước 
+- DPD_2M = 15 > 30 : DPD bom 2 tháng trước nhỏ hơn 30.
+- AVG_INSTLAMT = 703665  : AVG_INSTLAMT nhỏ
 
 
 
