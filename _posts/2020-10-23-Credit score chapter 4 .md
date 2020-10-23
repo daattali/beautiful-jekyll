@@ -157,7 +157,7 @@ Dưới đây là 1 ví dụ về Lime Cho B2:
 </table>
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_2.png)
-
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_3.png)
 Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 7 trong số đó phản đối cho kết quả "Paid"
 
 Các yếu tố phản đối: 
