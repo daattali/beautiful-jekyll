@@ -37,4 +37,6 @@ Trong Machine learning, có một lời nguyền tai ác, đó là : "Tính tư�
 
 Trong sơ đồ trên, những mô hình chính xác nhất lại chính là những mô hình bí hiểm nhất, bao gồm: Random Forest, GBM, Deep neural network, SVM… Chúng trở thành những hộp đen, hay mô hình "Bất khả Tri".
 
-Thật không may, các mô hình chính để xây dụng cho Scorecard lại là Random Forest và Deep learning, việc giải thích chúng đã khó lại càng khó.
+Thật không may, các mô hình chính để xây dụng cho Scorecard lại là Random Forest và Deep learning, việc giải thích chúng đã khó lại càng khó. 
+
+George Box người được gọi là "một trong những bộ óc thống kê vĩ đại của thế kỷ 20" cũng từng phát biểu : "tất cả mô hình đều sai, nhưng đôi khi chúng hữu dụng"
