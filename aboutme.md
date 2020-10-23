@@ -22,14 +22,6 @@ subtitle:
 
 ### SKILLS
 -----------------
-
-**Python:**
-- Object-oriented programming. 
-- Data analysis with pandas, numpy
-- Data visualization with matplotlib, seaborn, plotly
-- Build machine learning model with Sklearn, Keras, nltk, ...
-- Crawl data and build automation tool with selenium, beautiful soup, requset, request-html,...
-- Build website, restful-Api with Flask, Django. 
     
 **Machine learning:**
 - Proficient in building credit scoring model and implementing in business.
@@ -39,11 +31,20 @@ subtitle:
 **Database:** 
  - **SQL**: Oracle, MySql - build the data-mart for Machine learning models and reports
  - **No-SQL**: MongoDB - build database for small company.
+ 
+**Python:**
+- Build machine learning model with Sklearn, Keras, nltk, ...
+- Object-oriented programming. 
+- Data analysis with pandas, numpy
+- Data visualization with matplotlib, seaborn, plotly
+- Crawl data and build automation tool with selenium, beautiful soup, requset, request-html,...
+- Build website, restful-Api with Flask, Django. 
     
 **JavaScript:** 
  - Build many small web applications with <a href="https://minmax49.github.io/2019-11-15-google_app/">google ecosystem</a>.
  - Web Development with React.
  - Mobile App Development with React Native.
+
 
 **BI:** 
  - Data-studio, Python-Dash, has many <a href="https://minmax49.github.io/2020-04-18-HCM-housing-chapter-2/">projects</a>.
