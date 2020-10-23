@@ -161,10 +161,10 @@ Dưới đây là 1 ví dụ về Lime :
 Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 7 trong số đó phản đối cho kết quả "Paid"
 
 Các yếu tố phản đối: 
-POS_BOM <= 7,803,092 tr.
+POS_BOM = 4,2tr <= 7,8tr.
 PAID_LAST_MONTH = 0 : không có thanh toán vào tháng trước. 
-
-
+DPD_1M = 45 > 30 : DPD bom tháng trước lớn hơn 30 
+LAST_RECEIPT_AMT = 85410 : số tiền thanh toán lần cuối quá nhỏ 
 
 
 
