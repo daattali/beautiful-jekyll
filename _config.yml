@@ -18,9 +18,7 @@ navbar-links:
   Lab Members: "lab_members"
   #Open Positions: "positions"
   Software:
-    - CLARITE (R): "https://github.com/HallLab/clarite"
-    - CLARITE (Python): "https://clarite-python.readthedocs.io/en/stable/"
-    - CLARITE GUI: "https://clarite-gui.readthedocs.io/en/stable/"
+    - CLARITE: "projects/clarite"
 
 # --- Logo --- #
 

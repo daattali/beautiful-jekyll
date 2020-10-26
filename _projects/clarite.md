@@ -29,5 +29,11 @@ With the goal of demonstrating the utility of CLARITE, we performed [a novel EWA
     <a href="https://clarite-gui.readthedocs.io/en/stable/" class="btn btn-secondary">CLARITE GUI</a>
 </div>
 
+Questions?
+----------
+
+If you have any questions not answered by the [documentation](https://clarite-python.readthedocs.io/en/latest/), 
+feel free to open an [Issue](https://github.com/HallLab/clarite-python/issues) or contact John McGuigan (John.McGuigan at psu.edu).
+
 
 *This work is/was supported by the USDA National Institute of Food and Agriculture and Hatch Appropriations under Project #PEN04275 and Accession #1018544*
