@@ -8,18 +8,15 @@ tags: [Credit Scorecard]
 
 ## 1 Tại sao phải diễn giải mô hình Machine learning ?
 
-
 Lê Ngọc Khả Nhi - một data scientist mà tôi ngưỡng mộ đã từng nói : 
 
 "Một mô hình chính xác dĩ nhiên là tốt, nhưng chưa đủ. Độ chính xác của mô hình là tiêu chí được nhắm tới bởi hầu hết data scientist, tuy nhiên, tính chính xác không đồng nghĩa với tính hiệu quả. "
 
 Thật vậy trong quá trình đưa mô hình Scorecard vào với vận hành tại CS&A, tự bản thấy được còn có rất nhiều vấn đề cần được giải quyết ! 
 
-
 Cho đến thời điểm hiện tại, mô hình Machine learning đang được áp dụng để xây dựng Scorecard đã và đang cho những dự đoán rất chính xác về kết quả thu hồi nợ. Tuy nhiên khi đưa vào vận hành thì không ít người bắt đầu hoài nghi về kết quả dự đoán của mô hình, bao gồm những người vận hành có nhiều kinh nghiệm và một số chuyên viên phân tích thiếu kỹ năng. 
 
 Họ bắt đầu đặt ra các câu hỏi hoài nghi : 
-
 1. Tại sao một số trường hợp có thanh toán vào tháng trước nhưng vẫn được phân loại xấu (bin 8,9,10) ?
 2. Tại sao một số trường hợp mọi yếu tố đều giống nhau nhưng chỉ vì có số POS thấp hơn mà hợp đồng bị phân loại kém hẳn ?
 
@@ -45,10 +42,8 @@ Sơ đồ sau đây tóm tắt quy trình Suy diễn / Diễn dịch dựa vào 
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_1.png" width="700" text-align="center"/>
 
 Để có thể thực hiện các ý tưởng kể trên chúng ta cần đặt ra các câu hỏi: 
-  1. Mô hình này chính xác đến đâu ? Có đáng tin cậy hay không ? 
-
-  2. Mô hình hoạt động như thế nào ? Nó đã học được gì từ dữ liệu ? Đây là câu hỏi rất quan trọng làm nền tảng cho việc diễn giải nội dung/cơ chế của mô hình. Giải đáp được câu hỏi này cho phép rút ra hàng loạt thông tin, suy diễn quan trọng, hữu ích bao gồm: Vai trò của mỗi biến ? Mối liên hệ bộ phận giữa mỗi biến và kết quả là gì ? Kết quả của việc giải thích cơ chế này còn có thể được sử dụng để quay ngược lại cải thiện mô hình bằng cách bỏ bớt những biến không quan trọng, tinh chỉnh tham số của algorithm, thêm dữ liệu mới
-
+  1. Mô hình này chính xác đến đâu ? Có đáng tin cậy hay không ?
+  2. Mô hình hoạt động như thế nào ? Nó đã học được gì từ dữ liệu ? Đây là câu hỏi rất quan trọng làm nền tảng cho việc diễn giải nội dung/cơ chế của mô hình. Giải đáp được câu hỏi này cho phép rút ra hàng loạt thông tin, suy diễn quan trọng, hữu ích bao gồm: Vai trò của mỗi biến ? Mối liên hệ bộ phận giữa mỗi biến và kết quả là gì ? Kết quả của việc giải thích cơ chế này còn có thể được sử dụng để quay ngược lại cải thiện mô hình bằng cách bỏ bớt những biến không quan trọng, tinh chỉnh tham số của algorithm, thêm dữ liệu mới.
   3. Giải thích được cơ chế của mô hình ở cấp độ cá thể: Mô hình hoạt động có chính xác không cho trường hợp này ? Tại sao kết quả lại như vậy ? Biến nào có vai trò/ ảnh hưởng quan trọng nhất ở cá thể này ?
 
 ## 3 Giải thích black-box model
