@@ -148,19 +148,22 @@ Dưới đây là 1 ví dụ về Lime Cho B2:
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_3.png)
 
-Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 5 trong số đó phản đối cho kết quả "Paid"
+Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 8 trong số đó phản đối cho kết quả "Paid"
 
-Các yếu tố phản đối: 
-- POS_BOM = 4,2tr <= 7,8tr.
-- PAID_COUNT_6M = 1 : chỉ có 1 lần thanh toán trong 6 tháng.
-- DPD_1M = 45 > 30 : DPD bom tháng trước lớn hơn 30.
-- DPD = 44 > DPD bom tháng này là 44
-- LAST_RECEIPT_AMT = 85,410 : số tiền thanh toán lần cuối quá nhỏ.
 
 Các yếu tố ủng hộ: 
 - PAID_LAST_MONTH  = 1 : có Paid vào tháng trước 
-- DPD_2M = 15 > 30 : DPD bom 2 tháng trước nhỏ hơn 30.
-- AVG_INSTLAMT = 703665  : AVG_INSTLAMT nhỏ
+- DPD = 44 <= 44 
+- INSTALLMENT	 = 703665  : INSTALLMENT vừa phải
+
+Nhìn vào các yếu tố phải đối thì có thể rút ra 1 số điều sau: 
+Tuy có PAID_LAST_MONTH nhưng ngày thanh toán chỉ cách ngày 1 có 4 ngày, LAST_RECEIPT_AMT rất nhỏ chỉ có 85,410 => rất nghi ngờ đây là trường hợp đập tiền !
+
+**Mô hình đã tiên lượng trường hợp này vào bin 9, và đúng như dự báo, trường hợp này không có thanh toán trong tháng.**
 
 
+
+
+
+ 
 
