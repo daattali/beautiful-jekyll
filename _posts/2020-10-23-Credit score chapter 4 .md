@@ -365,7 +365,12 @@ Dưới đây là 1 ví dụ khác Cho B2:
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_4.png" width="700" text-align="center"/>
 
 
-Lại một trường hợp có PAID_LAST_MONTH và stable DPD trong 2 tháng: DPD bom cả đầu tháng và tháng trước đều là 44, POS cũng còn rất cao lên đến trên 40 triệu. 
-Tuy nhiên đây là 1 hợp đồng mới và mới có thanh toán được 1 lần trong 6 tháng, và ngày thanh toán lại là ngày cuối cùng của tháng trước, hơn nữa hợp đồng này có INSTALLMENT  khá cao. Khách hàng tuy có thanh toán nhưng 
+Lại một trường hợp có PAID_LAST_MONTH, và ngày thanh toán gần nhất là các đây 16 ngày. 
+
+Có thể thấy khác hàng thanh toán đều với 6 lần thanh toán trong 6 tháng, DPD cách đây 2 và 3 tháng đều bằng 0. Tuy nhiên tháng trước và tháng này, DPD liên tục rớt xuống dù khách hàng có thanh toán. Nhiều khả năng dù thanh toán đều khách hàng vẫn chưa đóng đủ EMI nên hợp đồng vẫn trượt xuống. Tình trạng trên đã kéo dài 2 tháng có thể tác động tiêu cực đến khách hàng nên trường hợp này được đưa vào trường hợp khó thu và được mô hình đưa ra xác xuất thanh toán rất thấp chỉ 16.2 %.
+
+Tuy nhiên khi phân tích rõ vấn đề, các bộ phận, phòng ban liên quan hoàn toàn có thể đưa ra các hành động, giải pháp kịp thời và phù hợp để giải quyết các khúc mắc của khách hàng, và có thể nâng cao xác xuất thu hơn.
+
+
 
 
