@@ -18,7 +18,9 @@ Cho đến thời điểm hiện tại, mô hình Machine learning đang đượ
 
 Họ bắt đầu đặt ra các câu hỏi hoài nghi : 
 1. Tại sao một số trường hợp có thanh toán vào tháng trước nhưng vẫn được phân loại xấu (bin 8,9,10) ?
-2. Tại sao một số trường hợp mọi yếu tố đều giống nhau nhưng chỉ vì có số POS thấp hơn mà hợp đồng bị phân loại kém hẳn ?
+2. Trường hợp khách hàng thanh toán rất đều tại sao lại xếp vào hợp đồng khó thu ?
+3. Tại sao một số trường hợp mọi yếu tố đều giống nhau nhưng chỉ vì có số POS thấp hơn mà hợp đồng bị phân loại kém hẳn ?
+
 
 Thời gian gần đây đã bắt đầu có những ý kiến hoài nghi, thậm chí cảnh báo về phong trào sử dụng Big data và Machine learning vào quá trình thu nợ. Một trong những luận điểm mà các bên phản đối đưa ra, đó là hầu hết những mô hình có nội dung không thể giải thích được. Khi họ không thể hiểu được cơ chế đằng sau kết quả, họ không thể tin cậy vào bản thân kết qủa đó, trong khi kết quả dự báo đôi khi ảnh hưởng rất nghiêm trọng đến kết quả thu nợ : thí dụ dự báo case xấu sẽ khiến nhân viên có tâm lý muốn bỏ !
 
