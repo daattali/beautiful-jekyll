@@ -3,6 +3,7 @@
 - Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
 - Fixed bug where navbar secondary level dropdown items didn't inherit te same colour as the primary navbar links
 - Fixed bug where the navbar "burger" collapsed button didn't always revert back to a light colour
+- Fixed bug where using an image as a navbar title did not render in GitHub Project pages that did not have a custom domain
 
 ## v5.0.0 (2020-09-15)
 
