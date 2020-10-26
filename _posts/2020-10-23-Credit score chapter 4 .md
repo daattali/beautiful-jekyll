@@ -30,7 +30,8 @@ Và cũng có vẻ bất công khi chúng ta đặt Target cao hơn cho 1 nhân 
 
 ## 2 Giải thích mô hình không đơn giản
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_0.png)
+
+<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_0.png" width="200" text-align="center"/>
 
 Trong Machine learning, có một lời nguyền tai ác, đó là : "Tính tường minh của mô hình tỉ lệ nghịch với tính chính xác", mô hình càng chính xác thì càng bí hiểm. Sự phức tạp đến từ bản chất của algorithm, số lượng input features hoặc cả 2. Thời đại Big Data và IOT đã cưỡng ép chúng ta phải lựa chọn những algorithm phức tạp nhất, vì những mô hình tuyến tính không có cách nào xử lý được lượng data lớn cỡ đó.
 
