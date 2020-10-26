@@ -68,7 +68,7 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 
 Dưới đây là 1 ví dụ về Lime Cho B2:
 
-<table border="1" class="dataframe">
+<table border="1" class="dataframe" style="text-align: center;">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -178,7 +178,7 @@ Descriptive Machine Learning EXplanations là phương pháp được Przemyslaw
 
 Dưới đây là 1 ví dụ khác Cho B2:
 
- <table border="1" class="dataframe">
+ <table border="1" class="dataframe" style="text-align: center;">
   <thead>
     <tr style="text-align: right;">
       <th></th>
