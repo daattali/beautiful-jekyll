@@ -41,7 +41,8 @@ Thật không may, các mô hình chính để xây dụng cho Scorecard lại l
 
 Sơ đồ sau đây tóm tắt quy trình Suy diễn / Diễn dịch dựa vào mô hình:
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_1.png)
+
+<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_1.png" width="200" text-align="center"/>
 
 Để có thể thực hiện các ý tưởng kể trên chúng ta cần đặt ra các câu hỏi: 
   1. Mô hình này chính xác đến đâu ? Có đáng tin cậy hay không ? 
@@ -146,9 +147,9 @@ Dưới đây là 1 ví dụ về Lime Cho B2:
   </tbody>
 </table>
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_2.png)
+<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_2.png" width="200" text-align="center"/>
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_3.png)
+<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_3.png" width="200" text-align="center"/>
 
 Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 8 trong số đó phản đối cho kết quả "Paid"
 
@@ -320,7 +321,7 @@ Dưới đây là 1 ví dụ khác Cho B2:
   </tbody>
 </table>
 
- ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_4.png)
 
+<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_4.png" width="200" text-align="center"/>
 
 
