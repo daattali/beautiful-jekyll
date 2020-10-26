@@ -65,64 +65,40 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 
 Dưới đây là 1 ví dụ về Lime Cho B2:
 
-<table border="1" class="dataframe" style="font-size: 10">
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>19507</th>
+      <th>DAY_FROM_LAST_PAID</th>
+      <th>PAID_LAST_MONTH</th>
+      <th>LAST_RECEIPT_AMT</th>
+      <th>PAID_COUNT_6M</th>
+      <th>DPD</th>
+      <th>DPD_1M</th>
+      <th>DPD_2M</th>
+      <th>POS_BOM</th>
+      <th>INSTALLMENT</th>
+      <th>ACTIVE_NUM</th>
+      <th>DEFER_FLAG</th>
+      <th>LABEL</th>
+      <th>FIX_BIN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>DAY_FROM_LAST_PAID</th>
+      <th>19507</th>
       <td>4.0</td>
-    </tr>
-    <tr>
-      <th>PAID_LAST_MONTH</th>
       <td>1.0</td>
-    </tr>
-    <tr>
-      <th>LAST_RECEIPT_AMT</th>
       <td>85410.0</td>
-    </tr>
-    <tr>
-      <th>PAID_COUNT_6M</th>
       <td>1.0</td>
-    </tr>
-    <tr>
-      <th>DPD</th>
       <td>44.0</td>
-    </tr>
-    <tr>
-      <th>DPD_1M</th>
       <td>44.0</td>
-    </tr>
-    <tr>
-      <th>DPD_2M</th>
       <td>14.0</td>
-    </tr>
-    <tr>
-      <th>POS_BOM</th>
       <td>4222496.0</td>
-    </tr>
-    <tr>
-      <th>INSTALLMENT</th>
       <td>704000.0</td>
-    </tr>
-    <tr>
-      <th>ACTIVE_NUM</th>
       <td>2.0</td>
-    </tr>
-    <tr>
-      <th>DEFER_FLAG</th>
       <td>0.0</td>
-    </tr>
-    <tr>
-      <th>LABEL</th>
       <td>0.0</td>
-    </tr>
-    <tr>
-      <th>FIX_BIN</th>
       <td>9.0</td>
     </tr>
   </tbody>
