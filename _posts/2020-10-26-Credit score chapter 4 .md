@@ -24,7 +24,7 @@ Họ bắt đầu đặt ra các câu hỏi hoài nghi :
 
 Thời gian gần đây đã bắt đầu có những ý kiến hoài nghi, thậm chí cảnh báo về phong trào sử dụng Big data và Machine learning vào quá trình thu nợ. Một trong những luận điểm mà các bên phản đối đưa ra, đó là hầu hết những mô hình có nội dung không thể giải thích được. Khi họ không thể hiểu được cơ chế đằng sau kết quả, họ không thể tin cậy vào bản thân kết qủa đó, trong khi kết quả dự báo đôi khi ảnh hưởng rất nghiêm trọng đến kết quả thu nợ : thí dụ dự báo case xấu sẽ khiến nhân viên có tâm lý muốn bỏ !
 
-Và cũng có vẻ bất công khi chúng ta đặt Target cao hơn cho 1 nhân viên nào đó vì một mô hình Machine learning đã dự báo rằng với danh mục của bạn thì phải đạt được con số như vậy. Nó cũng giống như một bệnh nhân đi khám và được bác sĩ giải thích như sau : "Bà có 99.5% nguy cơ bi ung thư, vì một mô hình Neural network đã quyết định như vậy". 
+Và cũng có vẻ bất công khi chúng ta đặt Target cao hơn cho 1 nhân viên nào đó vì một mô hình Machine learning đã dự báo rằng với danh mục của bạn thì phải đạt được con số như vậy. Nó cũng giống như một bệnh nhân đi khám và được bác sĩ giải thích như sau : "Bà có 99.5% nguy cơ đã mắc ung thư, vì một mô hình Neural network đã quyết định như vậy". 
 
 
 ## 2 Giải thích mô hình không đơn giản
@@ -60,7 +60,7 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 3. LIME áp dụng mô hình cho toàn bộ những điểm trong không gian nhiễu này, đồng thời tính khoảng cách giữa các điểm mô phỏng đến điểm trung tâm là trường hợp được xét. Khoảng cách này sẽ được chuyển thành thang điểm
 4. LIME chọn một số lượng M features tiêu biểu nhất cho phép mô tả tốt nhất khoảng cách nói trên.
 5. LIME dựng một mô hình rất đơn giản cho các điểm mô phỏng, sử dụng M features được chọn làm predictor, để giải nghĩa cho outcome của model. Mô hình này có dạng Tuyến tính, hoặc mô hình Decision tree. Tham số hồi quy cho mỗi Features được điều chỉnh bằng một trong số (Weight) tỉ lệ với khoảng cách sai biệt với giá trị feature có thực của cá thể.
-6. Việc diễn giải tính hợp lý của kết quả được thực hiện dựa vào Weight coefficient và danh sách M features được chọn. Nếu Weight coefficient > 0, thì giá trị quan sát của feature Mi đang ủng hộ cho kết quả tiên lượng (outcome) P, ngược lại, Weight Coefficient <0 thì giá trị feature Mi chống lại kết quả P.
+6. Việc diễn giải tính hợp lý của kết quả được thực hiện dựa vào Weight coefficient và danh sách M features được chọn. Nếu Weight coefficient > 0, thì giá trị quan sát của feature đang ủng hộ cho kết quả tiên lượng (outcome) P, ngược lại, Weight Coefficient <0 thì giá trị feature Mi chống lại kết quả P.
 
 
 *Dưới đây là 1 ví dụ về Lime Cho B2:*
