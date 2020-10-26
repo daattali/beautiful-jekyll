@@ -69,37 +69,77 @@ Dưới đây là 1 ví dụ về Lime Cho B2:
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>DAY_FROM_LAST_PAID</th>
-      <th>PAID_LAST_MONTH</th>
-      <th>LAST_RECEIPT_AMT</th>
-      <th>PAID_COUNT_6M</th>
-      <th>DPD</th>
-      <th>DPD_1M</th>
-      <th>DPD_2M</th>
-      <th>POS_BOM</th>
-      <th>INSTALLMENT</th>
-      <th>ACTIVE_NUM</th>
-      <th>DEFER_FLAG</th>
-      <th>LABEL</th>
-      <th>FIX_BIN</th>
+      <th>var</th>
+      <th>value</th>
+      <th>rule</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>19507</th>
+      <th>0</th>
+      <td>DAY_FROM_LAST_PAID</td>
       <td>4.0</td>
+      <td>DAY_FROM_LAST_PAID &lt;= 13.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>PAID_LAST_MONTH</td>
       <td>1.0</td>
+      <td>PAID_LAST_MONTH &lt;= 1.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>LAST_RECEIPT_AMT</td>
       <td>85410.0</td>
+      <td>LAST_RECEIPT_AMT &lt;= 1000000.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>PAID_COUNT_6M</td>
       <td>1.0</td>
+      <td>PAID_COUNT_6M &lt;= 4.00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DPD</td>
       <td>44.0</td>
+      <td>DPD &lt;= 44.00</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>DPD_1M</td>
       <td>44.0</td>
+      <td>43.00 &lt; DPD_1M &lt;= 53.00</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>DPD_2M</td>
       <td>14.0</td>
+      <td>DPD_2M &lt;= 17.00</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>POS_BOM</td>
       <td>4222496.0</td>
+      <td>POS_BOM &lt;= 9471104.50</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>INSTALLMENT</td>
       <td>704000.0</td>
+      <td>INSTALLMENT &lt;= 1403000.00</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>ACTIVE_NUM</td>
       <td>2.0</td>
+      <td>1.00 &lt; ACTIVE_NUM &lt;= 2.00</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>DEFER_FLAG</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>9.0</td>
+      <td>DEFER_FLAG &lt;= 0.00</td>
     </tr>
   </tbody>
 </table>
