@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Explain the Scorecard Model
 subtitle: Credit Scorecard chapter 4
 tags: [Credit Scorecard]
