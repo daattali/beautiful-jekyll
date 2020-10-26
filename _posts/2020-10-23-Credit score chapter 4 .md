@@ -178,7 +178,7 @@ Descriptive Machine Learning EXplanations là phương pháp được Przemyslaw
 
 Dưới đây là 1 ví dụ khác Cho B2:
 
- <table border="1" class="dataframe" style="text-align: center;">
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -193,128 +193,168 @@ Dưới đây là 1 ví dụ khác Cho B2:
     <tr>
       <th>0</th>
       <td>intercept</td>
-      <td>0.254452</td>
-      <td>0.254452</td>
+      <td>0.272975</td>
+      <td>0.272975</td>
       <td>1.0</td>
-      <td>15</td>
+      <td>20</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>PAID_LAST_MONTH = 1.0</td>
-      <td>0.490566</td>
-      <td>0.236114</td>
+      <td>DAY_FROM_LAST_PAID = 16.0</td>
+      <td>0.333200</td>
+      <td>0.060225</td>
       <td>1.0</td>
-      <td>14</td>
+      <td>19</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>POS_BOM = 40310000.0</td>
-      <td>0.640417</td>
-      <td>0.149850</td>
+      <td>PAID_LAST_MONTH = 1.0</td>
+      <td>0.380553</td>
+      <td>0.047353</td>
+      <td>1.0</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>PAID_COUNT_6M = 6.0</td>
+      <td>0.384423</td>
+      <td>0.003870</td>
+      <td>1.0</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>MOB = 21.0</td>
+      <td>0.385874</td>
+      <td>0.001451</td>
+      <td>1.0</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>PRODUCT = PL</td>
+      <td>0.383132</td>
+      <td>-0.002742</td>
+      <td>-1.0</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>EFF_RATE = 46.99</td>
+      <td>0.380881</td>
+      <td>-0.002252</td>
+      <td>-1.0</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ACTIVE_NUM = 1.0</td>
+      <td>0.381775</td>
+      <td>0.000895</td>
       <td>1.0</td>
       <td>13</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>LAST_RECEIPT_AMT = 3263000.0</td>
-      <td>0.610289</td>
-      <td>-0.030127</td>
-      <td>-1.0</td>
+      <th>8</th>
+      <td>PROVINCE = Tỉnh Vĩnh Long</td>
+      <td>0.383736</td>
+      <td>0.001960</td>
+      <td>1.0</td>
       <td>12</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>ACTIVE_NUM = 1.0</td>
-      <td>0.615844</td>
-      <td>0.005555</td>
-      <td>1.0</td>
+      <th>9</th>
+      <td>PTP = 3.0</td>
+      <td>0.383736</td>
+      <td>0.000000</td>
+      <td>0.0</td>
       <td>11</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>10</th>
       <td>TENOR = 18.0</td>
-      <td>0.615844</td>
+      <td>0.383736</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>10</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>EFF_RATE = 45.0</td>
-      <td>0.615844</td>
-      <td>0.000000</td>
-      <td>0.0</td>
+      <th>11</th>
+      <td>LAST_RECEIPT_AMT = 1699000.0</td>
+      <td>0.387844</td>
+      <td>0.004109</td>
+      <td>1.0</td>
       <td>9</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>PTP = 0.0</td>
-      <td>0.615844</td>
-      <td>0.000000</td>
-      <td>0.0</td>
+      <th>12</th>
+      <td>AGE = 38.0</td>
+      <td>0.383995</td>
+      <td>-0.003849</td>
+      <td>-1.0</td>
       <td>8</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>DAY_FROM_LAST_PAID = 1.0</td>
-      <td>0.523748</td>
-      <td>-0.092096</td>
+      <th>13</th>
+      <td>DEFER_FLAG = 0.0</td>
+      <td>0.383900</td>
+      <td>-0.000095</td>
       <td>-1.0</td>
       <td>7</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>DEFER_FLAG = 0.0</td>
-      <td>0.520220</td>
-      <td>-0.003528</td>
-      <td>-1.0</td>
+      <th>14</th>
+      <td>INSTALLMENT = 1687000.0</td>
+      <td>0.387731</td>
+      <td>0.003831</td>
+      <td>1.0</td>
       <td>6</td>
     </tr>
     <tr>
-      <th>10</th>
-      <td>DPD_2M = 14.0</td>
-      <td>0.518671</td>
-      <td>-0.001549</td>
+      <th>15</th>
+      <td>DPD_2M = 0.0</td>
+      <td>0.367192</td>
+      <td>-0.020538</td>
       <td>-1.0</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>11</th>
-      <td>INSTALLMENT = 3251000.0</td>
-      <td>0.467187</td>
-      <td>-0.051485</td>
+      <th>16</th>
+      <td>DPD = 53.0</td>
+      <td>0.352502</td>
+      <td>-0.014690</td>
       <td>-1.0</td>
       <td>4</td>
     </tr>
     <tr>
-      <th>12</th>
-      <td>DPD = 44.0</td>
-      <td>0.408504</td>
-      <td>-0.058682</td>
+      <th>17</th>
+      <td>DPD_3M = 0.0</td>
+      <td>0.320718</td>
+      <td>-0.031784</td>
       <td>-1.0</td>
       <td>3</td>
     </tr>
     <tr>
-      <th>13</th>
-      <td>PAID_COUNT_6M = 1.0</td>
-      <td>0.452468</td>
-      <td>0.043964</td>
-      <td>1.0</td>
+      <th>18</th>
+      <td>DPD_1M = 23.0</td>
+      <td>0.272327</td>
+      <td>-0.048391</td>
+      <td>-1.0</td>
       <td>2</td>
     </tr>
     <tr>
-      <th>14</th>
-      <td>DPD_1M = 44.0</td>
-      <td>0.273401</td>
-      <td>-0.179067</td>
+      <th>19</th>
+      <td>POS_BOM = 576900.0</td>
+      <td>0.161821</td>
+      <td>-0.110506</td>
       <td>-1.0</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>15</th>
+      <th>20</th>
       <td>prediction</td>
-      <td>0.273401</td>
-      <td>0.273401</td>
+      <td>0.161821</td>
+      <td>0.161821</td>
       <td>1.0</td>
       <td>0</td>
     </tr>
@@ -323,5 +363,9 @@ Dưới đây là 1 ví dụ khác Cho B2:
 
 
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_4.png" width="700" text-align="center"/>
+
+
+Lại một trường hợp có PAID_LAST_MONTH và stable DPD trong 2 tháng: DPD bom cả đầu tháng và tháng trước đều là 44, POS cũng còn rất cao lên đến trên 40 triệu. 
+Tuy nhiên đây là 1 hợp đồng mới và mới có thanh toán được 1 lần trong 6 tháng, và ngày thanh toán lại là ngày cuối cùng của tháng trước, hơn nữa hợp đồng này có INSTALLMENT  khá cao. Khách hàng tuy có thanh toán nhưng 
 
 
