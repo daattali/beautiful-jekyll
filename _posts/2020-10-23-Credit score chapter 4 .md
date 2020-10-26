@@ -65,93 +65,65 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 
 Dưới đây là 1 ví dụ về Lime Cho B2:
 
-<table border="1" class="dataframe" float="left" font-size="10">
+<table border="1" class="dataframe" style="font-size: 10">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>8002</th>
+      <th>19507</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>MONTH_FROM_LAST</th>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>LAST_PAY_DAY</th>
-      <td>28</td>
-    </tr>
-    <tr>
-      <th>LAST_RECEIPT_AMT</th>
-      <td>85410</td>
+      <th>DAY_FROM_LAST_PAID</th>
+      <td>4.0</td>
     </tr>
     <tr>
       <th>PAID_LAST_MONTH</th>
-      <td>1</td>
+      <td>1.0</td>
     </tr>
     <tr>
-      <th>AVG_PAID_3M</th>
-      <td>85410</td>
-    </tr>
-    <tr>
-      <th>PAID_COUNT_3M</th>
-      <td>1</td>
+      <th>LAST_RECEIPT_AMT</th>
+      <td>85410.0</td>
     </tr>
     <tr>
       <th>PAID_COUNT_6M</th>
-      <td>1</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>DPD</th>
-      <td>44</td>
+      <td>44.0</td>
     </tr>
     <tr>
       <th>DPD_1M</th>
-      <td>45</td>
+      <td>44.0</td>
     </tr>
     <tr>
       <th>DPD_2M</th>
-      <td>15</td>
+      <td>14.0</td>
     </tr>
     <tr>
       <th>POS_BOM</th>
-      <td>4.2225e+06</td>
+      <td>4222496.0</td>
     </tr>
     <tr>
-      <th>PTP</th>
-      <td>0</td>
+      <th>INSTALLMENT</th>
+      <td>704000.0</td>
     </tr>
     <tr>
-      <th>AVG_INSTLAMT</th>
-      <td>703665</td>
+      <th>ACTIVE_NUM</th>
+      <td>2.0</td>
     </tr>
     <tr>
-      <th>TICKET</th>
-      <td>LOW</td>
-    </tr>
-    <tr>
-      <th>PRODUCT_GROUP</th>
-      <td>X-sell</td>
-    </tr>
-    <tr>
-      <th>GENDER</th>
-      <td>Male</td>
-    </tr>
-    <tr>
-      <th>TENOR</th>
-      <td>24</td>
+      <th>DEFER_FLAG</th>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>LABEL</th>
-      <td>0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>FIX_BIN</th>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>SCORE</th>
-      <td>319</td>
+      <td>9.0</td>
     </tr>
   </tbody>
 </table>
