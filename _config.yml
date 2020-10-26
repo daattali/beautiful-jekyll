@@ -18,6 +18,7 @@ navbar-links:
   Resources:
   ---
   subtitle: [LinkedIn](linkedin.com/company/lany-prep.com)
+  ---
   
   Contact Us: To contact us, send an email to LANYprep1@outlook.com or, add MichaelGilroy on WeChat!
 
@@ -39,11 +40,12 @@ round-avatar: true
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
+---
 social-network-links:
 Email: LANYprep1@outlook.com
 WeChat: MichaelGilroy
 LinkedIn: https://www.linkedin.com/company/lany-prep/
-
+---
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
