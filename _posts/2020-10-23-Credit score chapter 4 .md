@@ -51,6 +51,7 @@ Sơ đồ sau đây tóm tắt quy trình Suy diễn / Diễn dịch dựa vào 
 
 # 3 Giải thích black-box model
 
+## 3.1 Local Interpretable Model-agnostic Explanations
 Như đã nói ở trên các mô hình chúng ta đang sử dụng là Random Forest và Deep learning, do đó chúng ta không thể các phương pháp tính điểm cho từng giá trị như Logistic hay Cây quyết định như Decision tree, ... 
 
 Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Model-agnostic Explanations), dựa trên giả định là bất kể mô hình phức tạp đến đâu, thì tại một miền cục bộ trong không gian dữ liệu, mô hình có thể được ước lượng xấp xỉ bằng quy luật tuyến tính. 
@@ -163,7 +164,15 @@ Tuy có PAID_LAST_MONTH nhưng ngày thanh toán chỉ cách ngày 1 có 4 ngày
 
 
 
+## 3.2 Descriptive mAchine Learning EXplanations
 
+Descriptive mAchine Learning EXplanations là phương pháp được Przemyslaw Biecek công bố trên CRAN vào giữa tháng 6 năm 2018. Tác giả Biecek đã đi xa hơn bất cứ người nào khác trong việc diễn giải nội dung mô hình, với 3 ý tưởng độc đáo:
+
+- Đưa ra một quy trình giải nghĩa phổ quát cho mọi mô hình, bất kể bản chất của algorithm và mục tiêu nghiên cứu (hồi quy/tiên lượng, phân loại hay suy diễn)
+
+- Cho phép trình bày trực quan kết quả diễn giải của hàng loạt mô hình.
+
+- Giải đáp hầu hết câu hỏi quan trọng để "hiểu" mô hình, bao gồm: Nội dung và cơ chế hoạt động : Tầm quan trọng của các biến, Quan hệ riêng phần của từng biến đối với kết quả (đặc biệt hữu ích cho bài toán hồi quy), độ chính xác của mô hình và diễn giải cho từng cá thể (theo phương pháp breakdown).
 
  
 
