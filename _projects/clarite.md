@@ -28,6 +28,7 @@ With the goal of demonstrating the utility of CLARITE, we performed [a novel EWA
     <a href="https://clarite-python.readthedocs.io/en/stable/" class="btn btn-secondary">CLARITE Python Package</a>
     <a href="https://clarite-gui.readthedocs.io/en/stable/" class="btn btn-secondary">CLARITE GUI</a>
 </div>
+<br>
 
 Questions?
 ----------
