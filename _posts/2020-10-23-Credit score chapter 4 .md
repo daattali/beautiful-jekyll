@@ -6,7 +6,7 @@ tags: [Credit Scorecard]
 ---
 
 
-# 1 Tại sao phải diễn giải mô hình Machine learning ?
+## 1 Tại sao phải diễn giải mô hình Machine learning ?
 
 
 Lê Ngọc Khả Nhi - một data scientist mà tôi ngưỡng mộ đã từng nói : 
@@ -28,7 +28,7 @@ Thời gian gần đây đã bắt đầu có những ý kiến hoài nghi, th�
 Và cũng có vẻ bất công khi chúng ta đặt Target cao hơn cho 1 nhân viên nào đó vì một mô hình Machine learning đã dự báo rằng với danh mục của bạn thì phải đạt được con số như vậy. Nó cũng giống như một bệnh nhân đi khám và được bác sĩ giải thích như sau : "Bà có 99.5% nguy cơ bi ung thư, vì một mô hình Neural network đã quyết định như vậy". 
 
 
-# 2 Giải thích mô hình không đơn giản.
+## 2 Giải thích mô hình không đơn giản
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_0.png)
 
@@ -49,9 +49,9 @@ Sơ đồ sau đây tóm tắt quy trình Suy diễn / Diễn dịch dựa vào 
 
   3. Giải thích được cơ chế của mô hình ở cấp độ cá thể: Mô hình hoạt động có chính xác không cho trường hợp này ? Tại sao kết quả lại như vậy ? Biến nào có vai trò/ ảnh hưởng quan trọng nhất ở cá thể này ?
 
-# 3 Giải thích black-box model
+## 3 Giải thích black-box model
 
-## 3.1 Local Interpretable Model-agnostic Explanations
+### 3.1 Local Interpretable Model-agnostic Explanations
 Như đã nói ở trên các mô hình chúng ta đang sử dụng là Random Forest và Deep learning, do đó chúng ta không thể các phương pháp tính điểm cho từng giá trị như Logistic hay Cây quyết định như Decision tree, ... 
 
 Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Model-agnostic Explanations), dựa trên giả định là bất kể mô hình phức tạp đến đâu, thì tại một miền cục bộ trong không gian dữ liệu, mô hình có thể được ước lượng xấp xỉ bằng quy luật tuyến tính. 
@@ -164,7 +164,7 @@ Tuy có PAID_LAST_MONTH nhưng ngày thanh toán chỉ cách ngày 1 có 4 ngày
 
 
 
-## 3.2 Descriptive Machine Learning EXplanations
+### 3.2 Descriptive Machine Learning EXplanations
 
 Descriptive Machine Learning EXplanations là phương pháp được Przemyslaw Biecek công bố trên CRAN vào giữa tháng 6 năm 2018. Tác giả Biecek đã đi xa hơn bất cứ người nào khác trong việc diễn giải nội dung mô hình, với 3 ý tưởng độc đáo:
 
@@ -174,5 +174,152 @@ Descriptive Machine Learning EXplanations là phương pháp được Przemyslaw
 
 3. Giải đáp hầu hết câu hỏi quan trọng để "hiểu" mô hình, bao gồm: Nội dung và cơ chế hoạt động : Tầm quan trọng của các biến, Quan hệ riêng phần của từng biến đối với kết quả (đặc biệt hữu ích cho bài toán hồi quy), độ chính xác của mô hình và diễn giải cho từng cá thể (theo phương pháp breakdown).
 
- 
+Dưới đây là 1 ví dụ khác Cho B2:
+
+ <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>variable</th>
+      <th>cumulative</th>
+      <th>contribution</th>
+      <th>sign</th>
+      <th>position</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>intercept</td>
+      <td>0.254452</td>
+      <td>0.254452</td>
+      <td>1.0</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>PAID_LAST_MONTH = 1.0</td>
+      <td>0.490566</td>
+      <td>0.236114</td>
+      <td>1.0</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>POS_BOM = 40310000.0</td>
+      <td>0.640417</td>
+      <td>0.149850</td>
+      <td>1.0</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LAST_RECEIPT_AMT = 3263000.0</td>
+      <td>0.610289</td>
+      <td>-0.030127</td>
+      <td>-1.0</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ACTIVE_NUM = 1.0</td>
+      <td>0.615844</td>
+      <td>0.005555</td>
+      <td>1.0</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>TENOR = 18.0</td>
+      <td>0.615844</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>EFF_RATE = 45.0</td>
+      <td>0.615844</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>PTP = 0.0</td>
+      <td>0.615844</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>DAY_FROM_LAST_PAID = 1.0</td>
+      <td>0.523748</td>
+      <td>-0.092096</td>
+      <td>-1.0</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>DEFER_FLAG = 0.0</td>
+      <td>0.520220</td>
+      <td>-0.003528</td>
+      <td>-1.0</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>DPD_2M = 14.0</td>
+      <td>0.518671</td>
+      <td>-0.001549</td>
+      <td>-1.0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>INSTALLMENT = 3251000.0</td>
+      <td>0.467187</td>
+      <td>-0.051485</td>
+      <td>-1.0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>DPD = 44.0</td>
+      <td>0.408504</td>
+      <td>-0.058682</td>
+      <td>-1.0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>PAID_COUNT_6M = 1.0</td>
+      <td>0.452468</td>
+      <td>0.043964</td>
+      <td>1.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>DPD_1M = 44.0</td>
+      <td>0.273401</td>
+      <td>-0.179067</td>
+      <td>-1.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>prediction</td>
+      <td>0.273401</td>
+      <td>0.273401</td>
+      <td>1.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+ ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_4.png)
+
+
 
