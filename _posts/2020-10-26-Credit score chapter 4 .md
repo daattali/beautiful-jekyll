@@ -34,12 +34,8 @@ Và cũng có vẻ bất công khi chúng ta đặt Target cao hơn cho 1 nhân 
 
 Trong Machine learning, có một lời nguyền tai ác, đó là : "Tính tường minh của mô hình tỉ lệ nghịch với tính chính xác", mô hình càng chính xác thì càng bí hiểm. Sự phức tạp đến từ bản chất của algorithm, số lượng input features hoặc cả 2. Thời đại Big Data và IOT đã cưỡng ép chúng ta phải lựa chọn những algorithm phức tạp nhất, vì những mô hình tuyến tính không có cách nào xử lý được lượng data lớn cỡ đó.
 
-Trong sơ đồ trên, những mô hình chính xác nhất lại chính là những mô hình bí hiểm nhất, bao gồm: Random Forest, GBM, Deep neural network,… Chúng trở thành những hộp đen, hay mô hình "Bất khả Tri".
-
-Thật không may, các mô hình chính để xây dụng cho Scorecard lại là Random Forest và Deep learning, việc giải thích chúng đã khó lại càng khó. 
-
+Trong sơ đồ trên, những mô hình chính xác nhất lại chính là những mô hình bí hiểm nhất, bao gồm: Random Forest, GBM, Deep neural network,… Chúng trở thành những hộp đen, hay mô hình "Bất khả Tri". Thật không may, các mô hình chính để xây dụng cho Scorecard lại là Random Forest và Deep learning, việc giải thích chúng đã khó lại càng khó. 
 Sơ đồ sau đây tóm tắt quy trình Suy diễn-Diễn dịch dựa vào mô hình:
-
 
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_1.png" width="700" text-align="center"/>
 
