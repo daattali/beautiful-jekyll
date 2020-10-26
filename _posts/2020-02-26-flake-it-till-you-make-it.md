@@ -4,7 +4,6 @@ title: Welcome to LANY Prep
 subtitle: Engaging in your academic future
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
-share-img: 
 tags: [books, test]
 ---
 
