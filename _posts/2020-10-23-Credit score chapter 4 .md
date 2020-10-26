@@ -367,7 +367,7 @@ Dưới đây là 1 ví dụ khác Cho B2:
 
 Lại một trường hợp có PAID_LAST_MONTH, và ngày thanh toán gần nhất là các đây 16 ngày. 
 
-Có thể thấy khác hàng thanh toán đều với 6 lần thanh toán trong 6 tháng, DPD cách đây 2 và 3 tháng đều bằng 0. Tuy nhiên tháng trước và tháng này, DPD liên tục rớt xuống dù khách hàng có thanh toán. Nhiều khả năng dù thanh toán đều khách hàng vẫn chưa đóng đủ EMI nên hợp đồng vẫn trượt xuống. Tình trạng trên đã kéo dài 2 tháng có thể tác động tiêu cực đến khách hàng nên trường hợp này được đưa vào trường hợp khó thu và được mô hình đưa ra xác xuất thanh toán rất thấp chỉ 16.2 %.
+Có thể thấy khác hàng thanh toán đều với 6 lần thanh toán trong 6 tháng, DPD cách đây 2 và 3 tháng đều bằng 0. Tuy nhiên tháng trước và tháng này, DPD liên tục rớt xuống dù khách hàng có thanh toán. Dù thanh toán đều khách hàng vẫn chưa đóng đủ EMI nên hợp đồng vẫn trượt xuống trong khi POS còn rất thấp, có thể khách hàng chưa hiểu rõ hoặc không đồng tình với cách tính phí-lãi của công ty. Tình trạng trên đã kéo dài 2 tháng có thể tác động tiêu cực đến khách hàng nên trường hợp này được đưa vào trường hợp khó thu và được mô hình đưa ra xác xuất thanh toán rất thấp chỉ 16.2 %.
 
 Tuy nhiên khi phân tích rõ vấn đề, các bộ phận, phòng ban liên quan hoàn toàn có thể đưa ra các hành động, giải pháp kịp thời và phù hợp để giải quyết các khúc mắc của khách hàng, và có thể nâng cao xác xuất thu hơn.
 
