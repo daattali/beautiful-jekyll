@@ -14,17 +14,16 @@ author: Michael Gilroy
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "Contact Us"
+  Our Mission: 
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - LinkedIn: 
+  Contact Us: 
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "C:\Users\mgilr\Downloads\LANY - Shortcut.lnk"
+avatar: "C:usersmgilrdownloadsLANY - Shortcut.lnk"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -51,7 +50,6 @@ social-network-links:
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
   linkedin: true
   
 # How to display the link to your website in the footer
@@ -183,7 +181,6 @@ defaults:
     values:
       layout: "post"
       comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
