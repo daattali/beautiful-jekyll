@@ -48,7 +48,7 @@ Sơ đồ sau đây tóm tắt quy trình Suy diễn-Diễn dịch dựa vào m�
 ## 3 Giải thích black-box model
 
 ### 3.1 Local Interpretable Model-agnostic Explanations
-Như đã nói ở trên các mô hình chúng ta đang sử dụng là Random Forest và Deep learning, do đó chúng ta không thể các phương pháp tính điểm cho từng giá trị như Logistic hay Cây quyết định như Decision tree, ... 
+Như đã nói ở trên các mô hình chúng ta đang sử dụng là Random Forest và Deep learning, do đó chúng ta không thể sử dụng các phương pháp tính điểm cho từng feature như Logistic hay Cây quyết định như Decision tree, ... 
 
 Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Model-agnostic Explanations), dựa trên giả định là bất kể mô hình phức tạp đến đâu, thì tại một miền cục bộ trong không gian dữ liệu, mô hình có thể được ước lượng xấp xỉ bằng quy luật tuyến tính. 
 
@@ -172,7 +172,7 @@ Descriptive Machine Learning EXplanations là phương pháp được Przemyslaw
 #### Diễn giải cho từng cá thể:
 
 
-Phương pháp Descriptive Machine Learning EXplanations cho phép diễn giải mô hình cho mỗi cá thể bằng phương pháp phân rã mô hình theo kiểu breakdown. Mỗi feature trong mô hình được phân rã để thể hiện sự đóng góp của mình trong xác xuất tiên lượng.
+Phương pháp Descriptive Machine Learning EXplanations cho phép diễn giải mô hình cho mỗi cá thể bằng phương pháp phân rã mô hình theo kiểu breakdown. Mỗi feature trong mô hình được phân rã để thể hiện sự đóng góp của mình trong xác suất tiên lượng.
 
 *Dưới đây là 1 ví dụ khác Cho B2:*
 
@@ -364,9 +364,9 @@ Phương pháp Descriptive Machine Learning EXplanations cho phép diễn giải
 
 
 
-Lại một trường hợp có thanh toán trong tháng trước, và ngày thanh toán gần nhất là các đây 16 ngày. Có thể thấy khác hàng thanh toán đều với 6 lần thanh toán trong 6 tháng, DPD cách đây 2 và 3 tháng đều bằng 0. Tuy nhiên tháng trước và tháng này, DPD liên tục rớt xuống dù khách hàng có thanh toán. Dù thanh toán đều khách hàng vẫn chưa đóng đủ EMI nên hợp đồng vẫn trượt xuống trong khi POS còn rất thấp, có thể khách hàng chưa hiểu rõ hoặc không đồng tình với cách tính phí-lãi của công ty. Tình trạng trên đã kéo dài 2 tháng có thể tác động tiêu cực đến khách hàng nên trường hợp này được đưa vào trường hợp khó thu và được mô hình đưa ra xác xuất thanh toán rất thấp chỉ 16.2 %.
+Lại một trường hợp có thanh toán trong tháng trước, và ngày thanh toán gần nhất là các đây 16 ngày. Có thể thấy khác hàng thanh toán đều với 6 lần thanh toán trong 6 tháng, DPD cách đây 2 và 3 tháng đều bằng 0. Tuy nhiên tháng trước và tháng này, DPD liên tục rớt xuống dù khách hàng có thanh toán. Dù thanh toán đều khách hàng vẫn chưa đóng đủ EMI nên hợp đồng vẫn trượt xuống trong khi POS còn rất thấp, có thể khách hàng chưa hiểu rõ hoặc không đồng tình với cách tính phí-lãi của công ty. Tình trạng trên đã kéo dài 2 tháng có thể tác động tiêu cực đến khách hàng nên trường hợp này được đưa vào trường hợp khó thu và được mô hình đưa ra xác suất thanh toán rất thấp chỉ 16.2 %.
 
-Tuy nhiên khi phân tích rõ vấn đề, các bộ phận, phòng ban liên quan hoàn toàn có thể đưa ra các hành động, giải pháp kịp thời và phù hợp để giải quyết các khúc mắc của khách hàng, và có thể nâng cao xác xuất thu hơn.
+Tuy nhiên khi phân tích rõ vấn đề, các bộ phận, phòng ban liên quan hoàn toàn có thể đưa ra các hành động, giải pháp kịp thời và phù hợp để giải quyết các khúc mắc của khách hàng, và có thể nâng cao xác suất thu hơn.
 
 
 
