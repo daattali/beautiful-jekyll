@@ -31,7 +31,7 @@ Và cũng có vẻ bất công khi chúng ta đặt Target cao hơn cho 1 nhân 
 ## 2 Giải thích mô hình không đơn giản
 
 
-<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_0.png" width="200" text-align="center"/>
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_0.png" width="700" text-align="center"/>
 
 Trong Machine learning, có một lời nguyền tai ác, đó là : "Tính tường minh của mô hình tỉ lệ nghịch với tính chính xác", mô hình càng chính xác thì càng bí hiểm. Sự phức tạp đến từ bản chất của algorithm, số lượng input features hoặc cả 2. Thời đại Big Data và IOT đã cưỡng ép chúng ta phải lựa chọn những algorithm phức tạp nhất, vì những mô hình tuyến tính không có cách nào xử lý được lượng data lớn cỡ đó.
 
@@ -42,7 +42,7 @@ Thật không may, các mô hình chính để xây dụng cho Scorecard lại l
 Sơ đồ sau đây tóm tắt quy trình Suy diễn / Diễn dịch dựa vào mô hình:
 
 
-<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_1.png" width="200" text-align="center"/>
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_1.png" width="700" text-align="center"/>
 
 Để có thể thực hiện các ý tưởng kể trên chúng ta cần đặt ra các câu hỏi: 
   1. Mô hình này chính xác đến đâu ? Có đáng tin cậy hay không ? 
@@ -147,9 +147,9 @@ Dưới đây là 1 ví dụ về Lime Cho B2:
   </tbody>
 </table>
 
-<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_2.png" width="200" text-align="center"/>
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_2.png" width="700" text-align="center"/>
 
-<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_3.png" width="200" text-align="center"/>
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_3.png" width="700" text-align="center"/>
 
 Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 8 trong số đó phản đối cho kết quả "Paid"
 
@@ -322,6 +322,6 @@ Dưới đây là 1 ví dụ khác Cho B2:
 </table>
 
 
-<img src="(https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_4.png" width="200" text-align="center"/>
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_4.png" width="700" text-align="center"/>
 
 
