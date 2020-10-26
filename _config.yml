@@ -9,7 +9,7 @@
 title: LANY Prep
 
 # Your name to show in the footer
-author: Michael Gilroy
+author: United States of America
 
 # --- List of links in the navigation bar --- #
 
@@ -38,9 +38,9 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  Email: LANYprep1@outlook.com
-  WeChat: MichaelGilroy
-  LinkedIn: https://www.linkedin.com/company/lany-prep/
+Email: LANYprep1@outlook.com
+WeChat: MichaelGilroy
+LinkedIn: https://www.linkedin.com/company/lany-prep/
 
 
 # If you want to show a link to an RSS in the footer, add the site description here.
