@@ -164,7 +164,7 @@ Tuy có PAID_LAST_MONTH nhưng ngày thanh toán chỉ cách ngày 1 có 4 ngày
 
 
 
-## 3.2 Descriptive mAchine Learning EXplanations
+## 3.2 Descriptive Machine Learning EXplanations
 
 Descriptive mAchine Learning EXplanations là phương pháp được Przemyslaw Biecek công bố trên CRAN vào giữa tháng 6 năm 2018. Tác giả Biecek đã đi xa hơn bất cứ người nào khác trong việc diễn giải nội dung mô hình, với 3 ý tưởng độc đáo:
 
