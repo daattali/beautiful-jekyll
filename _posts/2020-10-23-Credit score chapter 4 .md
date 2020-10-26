@@ -66,7 +66,7 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
 6. Việc diễn giải tính hợp lý của kết quả được thực hiện dựa vào Weight coefficient và danh sách M features được chọn. Nếu Weight coefficient > 0, thì giá trị quan sát của feature Mi đang ủng hộ cho kết quả tiên lượng (outcome) P, ngược lại, Weight Coefficient <0 thì giá trị feature Mi chống lại kết quả P.
 
 
-Dưới đây là 1 ví dụ về Lime Cho B2:
+*Dưới đây là 1 ví dụ về Lime Cho B2:*
 
 <table border="1" class="dataframe" style="text-align: center;">
   <thead>
@@ -176,7 +176,13 @@ Descriptive Machine Learning EXplanations là phương pháp được Przemyslaw
 
 3. Giải đáp hầu hết câu hỏi quan trọng để "hiểu" mô hình, bao gồm: Nội dung và cơ chế hoạt động : Tầm quan trọng của các biến, Quan hệ riêng phần của từng biến đối với kết quả (đặc biệt hữu ích cho bài toán hồi quy), độ chính xác của mô hình và diễn giải cho từng cá thể (theo phương pháp breakdown).
 
-Dưới đây là 1 ví dụ khác Cho B2:
+
+#### Diễn giải cho từng cá thể:
+
+
+Phương pháp Descriptive Machine Learning EXplanations cho phép diễn giải mô hình cho mỗi cá thể bằng phương pháp phân rã mô hình theo kiểu breakdown. Mỗi feature trong mô hình được phân rã để thể hiện sự đóng góp của mình trong xác xuất tiên lượng.
+
+*Dưới đây là 1 ví dụ khác Cho B2:*
 
 <table border="1" class="dataframe">
   <thead>
@@ -363,6 +369,7 @@ Dưới đây là 1 ví dụ khác Cho B2:
 
 
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_4.png" width="700" text-align="center"/>
+
 
 
 Lại một trường hợp có thanh toán trong tháng trước, và ngày thanh toán gần nhất là các đây 16 ngày. Có thể thấy khác hàng thanh toán đều với 6 lần thanh toán trong 6 tháng, DPD cách đây 2 và 3 tháng đều bằng 0. Tuy nhiên tháng trước và tháng này, DPD liên tục rớt xuống dù khách hàng có thanh toán. Dù thanh toán đều khách hàng vẫn chưa đóng đủ EMI nên hợp đồng vẫn trượt xuống trong khi POS còn rất thấp, có thể khách hàng chưa hiểu rõ hoặc không đồng tình với cách tính phí-lãi của công ty. Tình trạng trên đã kéo dài 2 tháng có thể tác động tiêu cực đến khách hàng nên trường hợp này được đưa vào trường hợp khó thu và được mô hình đưa ra xác xuất thanh toán rất thấp chỉ 16.2 %.
