@@ -498,8 +498,8 @@ footer .footer-custom-content {
   filter: grayscale(0%);
 }
 .post-preview .post-image img {
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 .post-preview .post-image-short {
   margin-top: -2.1875rem;
@@ -520,8 +520,8 @@ footer .footer-custom-content {
   display: none;
 }
 .post-preview .post-image-small img {
-  width: 6.25rem;
-  height: 6.25rem;
+  max-width: 6.25rem;
+  max-height: 6.25rem;
 }
 @media (max-width: 500px) {
   .post-preview .post-image {
