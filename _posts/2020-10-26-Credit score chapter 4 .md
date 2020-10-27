@@ -468,8 +468,31 @@ B2:
 
 
 
+<table border="1" class="dataframe" style="text-align: center; font-size: 10px;">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SCORE</th>
+      <th>FIX_BIN</th>
+      <th>PAID_LAST_MONTH</th>
+      <th>DEFER_FLAG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>20180907-0000074</th>
+      <td>443</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_4_0.png" width="700" text-align="center"/>
 
 
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_4_1.png" width="700" text-align="center"/>
 
 
 
