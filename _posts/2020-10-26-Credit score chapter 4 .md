@@ -381,193 +381,31 @@ Tuy nhiên khi phân tích rõ vấn đề, các bộ phận, phòng ban liên q
 
 ## 4 Các trường hợp thực tế: 
 
+B2: 
 
-<table border="1" class="dataframe"  style="text-align: center; font-size: 10px;">
+<table border="1" class="dataframe" style="text-align: center; font-size: 10px;">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>variable</th>
-      <th>cumulative</th>
-      <th>contribution</th>
-      <th>sign</th>
-      <th>position</th>
+      <th>SCORE</th>
+      <th>FIX_BIN</th>
+      <th>PAID_LAST_MONTH</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>intercept</td>
-      <td>0.272201</td>
-      <td>0.272201</td>
-      <td>1.0</td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>POS_BOM = 40310000.0</td>
-      <td>0.306150</td>
-      <td>0.033949</td>
-      <td>1.0</td>
-      <td>19</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>PRODUCT = TW</td>
-      <td>0.336751</td>
-      <td>0.030601</td>
-      <td>1.0</td>
-      <td>18</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>AGE = 24.0</td>
-      <td>0.343210</td>
-      <td>0.006459</td>
-      <td>1.0</td>
-      <td>17</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>ACTIVE_NUM = 1.0</td>
-      <td>0.353865</td>
-      <td>0.010655</td>
-      <td>1.0</td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>EFF_RATE = 45.0</td>
-      <td>0.360847</td>
-      <td>0.006982</td>
-      <td>1.0</td>
-      <td>15</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>PAID_LAST_MONTH = 1.0</td>
-      <td>0.361333</td>
-      <td>0.000486</td>
-      <td>1.0</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>PTP = 0.0</td>
-      <td>0.361333</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>TENOR = 18.0</td>
-      <td>0.361333</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>PROVINCE = Tỉnh Đồng Nai</td>
-      <td>0.359478</td>
-      <td>-0.001855</td>
-      <td>-1.0</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>DEFER_FLAG = 0.0</td>
-      <td>0.357813</td>
-      <td>-0.001665</td>
-      <td>-1.0</td>
+      <th>20200516-1922473</th>
+      <td>228</td>
       <td>10</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>MOB = 4.0</td>
-      <td>0.350395</td>
-      <td>-0.007418</td>
-      <td>-1.0</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>DPD_2M = 14.0</td>
-      <td>0.348346</td>
-      <td>-0.002049</td>
-      <td>-1.0</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>DPD = 44.0</td>
-      <td>0.325063</td>
-      <td>-0.023282</td>
-      <td>-1.0</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>DAY_FROM_LAST_PAID = 1.0</td>
-      <td>0.230287</td>
-      <td>-0.094777</td>
-      <td>-1.0</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>DPD_3M = 0.0</td>
-      <td>0.224556</td>
-      <td>-0.005731</td>
-      <td>-1.0</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>DPD_1M = 44.0</td>
-      <td>0.113216</td>
-      <td>-0.111340</td>
-      <td>-1.0</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>LAST_RECEIPT_AMT = 3263000.0</td>
-      <td>0.100305</td>
-      <td>-0.012911</td>
-      <td>-1.0</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>INSTALLMENT = 3251000.0</td>
-      <td>0.098620</td>
-      <td>-0.001686</td>
-      <td>-1.0</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>PAID_COUNT_6M = 1.0</td>
-      <td>0.083232</td>
-      <td>-0.015387</td>
-      <td>-1.0</td>
       <td>1</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>prediction</td>
-      <td>0.083232</td>
-      <td>0.083232</td>
-      <td>1.0</td>
-      <td>0</td>
     </tr>
   </tbody>
 </table>
 
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_1_0.png" width="700" text-align="center"/>
 
 
-
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_1_1.png" width="700" text-align="center"/>
 
 
 
