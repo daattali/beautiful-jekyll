@@ -518,12 +518,33 @@ B2:
 
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_5_0.png" width="700" text-align="center"/>
 
-
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_5_1.png" width="700" text-align="center"/>
 
 
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SCORE</th>
+      <th>FIX_BIN</th>
+      <th>PAID_LAST_MONTH</th>
+      <th>DEFER_FLAG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>20171218-0002010</th>
+      <td>331</td>
+      <td>9</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_6_0.png" width="700" text-align="center"/>
 
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_6_1.png" width="700" text-align="center"/>
 
 
 
