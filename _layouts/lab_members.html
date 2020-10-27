@@ -56,7 +56,6 @@ layout: base
       {% endif %}
     {% endfor %}
   </div>
-  </div>
   <h2>Graduate Students:</h2>
   <div class="row grad" style="display: flex; flex-wrap: wrap; justify-content: center;">
     {% for member in membersGradstudents %}
@@ -108,12 +107,15 @@ layout: base
 
   <!-- Todo: Add a former members section (where member.current is false) -->
 
-  <!-- Photo Galleries -->
-  <h1>Photos</h1>
-  <h2>Summer 2020</h2>
-  {% include image-gallery.html folder="assets/img/photos/summer_2020" %}
-  <h2>ASHG 2019</h2>
-  {% include image-gallery.html folder="assets/img/photos/ashg_2019" %}
-  <h2>Summer 2018</h2>
-  {% include image-gallery.html folder="assets/img/photos/summer_2018" %}
+  <!-- Photos -->
+  <h2>Photos</h2>
+  <div class="row photos">
+    <h3>Summer 2020</h3>
+      {% include image-gallery.html folder="assets/img/photos/summer_2020" %}
+    <h3>ASHG 2019</h3>
+      {% include image-gallery.html folder="assets/img/photos/ashg_2019" %}
+    <h3>Summer 2018</h3>
+      {% include image-gallery.html folder="assets/img/photos/summer_2018" %}
+  </div>
+
 </div>

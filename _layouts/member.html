@@ -9,23 +9,24 @@ layout: base
     <div class="row justify-content-center">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
     
-        <!-- About section from the member markdown file -->
-        <h2>About</h2>
-            {{ content | markdownify}}
-        
+            <!-- About section from the member markdown file -->
+            <h2>About</h2>
+                {{ content | markdownify}}
+
             <!-- News tagged with the member's name -->
-        <h2>News</h2>
-        <div class="list-group">
-        {% assign memberNewsSorted = site.news | where:"who",page.name | sort: "date" | reverse %}
-        {% for news in memberNewsSorted %}
-            <div class="list-group-item list-group-item-action">
-                <small class="text-muted">{{ news.date | date: '%B %d, %Y' }}</small>
-                <div class="d-flex w-100 justify-content-between"> 
-                <div style="margin: -1rem 0rem">{{ news.content | markdownify }}</div>
-                {% if news.img %}<img class="rounded float-right" style="max-height: 150px" src={{news.img}} alt="News Image">{% endif %}
+            <h2>News</h2>
+            <div class="list-group">
+            {% assign memberNewsSorted = site.news | where:"who",page.name | sort: "date" | reverse %}
+            {% for news in memberNewsSorted %}
+                <div class="list-group-item list-group-item-action">
+                    <small class="text-muted">{{ news.date | date: '%B %d, %Y' }}</small>
+                    <div class="d-flex w-100 justify-content-between">
+                    <div style="margin: -1rem 0rem">{{ news.content | markdownify }}</div>
+                    {% if news.img %}<img class="rounded float-right" style="max-height: 150px" src={{news.img}} alt="News Image">{% endif %}
+                    </div>
                 </div>
+            {% endfor %}
             </div>
-        {% endfor %}
         </div>
     </div>
 </div>
