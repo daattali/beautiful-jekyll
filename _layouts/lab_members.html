@@ -6,6 +6,7 @@ layout: base
 
 {% assign molly = site.members | where:"group","Molly" | first %}
 {% assign membersStaff = site.members | where:"group","Staff" %}
+{% assign membersPostdocs = site.members | where:"group","Postdoc" %}
 {% assign membersGradstudents = site.members | where:"group","Grad" %}
 {% assign membersAffiliate = site.members | where:"group","Affiliate" %}
 {% assign membersUndergrad = site.members | where:"group","Undergrad" %}
@@ -24,7 +25,7 @@ layout: base
     </a>
   </div>
   <h2>Lab Staff:</h2>
-  <div class="row grad" style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <div class="row staff" style="display: flex; flex-wrap: wrap; justify-content: center;">
     {% for member in membersStaff %}
       {% if member.current %}
       <a class="text-dark btn" href="{{ member.url }}">
@@ -38,6 +39,23 @@ layout: base
       </a>
       {% endif %}
     {% endfor %}
+  </div>
+  <h2>Postdocs:</h2>
+  <div class="row postdocs" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    {% for member in membersPostdocs %}
+      {% if member.current %}
+      <a class="text-dark btn" href="{{ member.url }}">
+        <div class="card h-100 text-center border-dark" style="width: 18rem;">
+          <img src="{{ member.image }}" class="card-img-top" alt="Photo of {{member.name}}">
+          <div class="card-body text-white bg-dark">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text mt-1">{{ member.position}}</p>
+          </div>
+        </div>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
   </div>
   <h2>Graduate Students:</h2>
   <div class="row grad" style="display: flex; flex-wrap: wrap; justify-content: center;">
@@ -56,7 +74,7 @@ layout: base
     {% endfor %}
   </div>
   <h2>Affiliates:</h2>
-  <div class="row grad" style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <div class="row affiliates" style="display: flex; flex-wrap: wrap; justify-content: center;">
     {% for member in membersAffiliate %}
       {% if member.current %}
       <a class="text-dark btn" href="{{ member.url }}">
@@ -72,7 +90,7 @@ layout: base
     {% endfor %}
   </div>
   <h2>Undergraduate Students:</h2>
-  <div class="row grad" style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <div class="row undergrad" style="display: flex; flex-wrap: wrap; justify-content: center;">
     {% for member in membersUndergrad %}
       {% if member.current %}
       <a class="text-dark btn" href="{{ member.url }}">
