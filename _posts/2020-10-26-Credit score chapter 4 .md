@@ -390,6 +390,7 @@ B2:
       <th>SCORE</th>
       <th>FIX_BIN</th>
       <th>PAID_LAST_MONTH</th>
+      <th>DEFER_FLAG</th>
     </tr>
   </thead>
   <tbody>
@@ -398,9 +399,11 @@ B2:
       <td>228</td>
       <td>10</td>
       <td>1</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
+
 
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_1_0.png" width="700" text-align="center"/>
 
