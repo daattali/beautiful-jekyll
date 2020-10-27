@@ -496,7 +496,8 @@ B2:
 
 
 
-<table border="1" class="dataframe">
+
+<table border="1" class="dataframe" style="text-align: center; font-size: 10px;">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -522,7 +523,7 @@ B2:
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_5_1.png" width="700" text-align="center"/>
 
 
-<table border="1" class="dataframe">
+<table border="1" class="dataframe" style="text-align: center; font-size: 10px;">
   <thead>
     <tr style="text-align: right;">
       <th></th>
