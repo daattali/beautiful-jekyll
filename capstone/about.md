@@ -4,7 +4,7 @@ title: Capstone Projects
 subtitle: With the UBC MDS Program
 ---
 
-During the last two months of the MDS program (May & June each year), our students work in teams of ~4 students with an external capstone partner and a UBC mentor to address a question facing the capstone partner's organization using data science. The capstone program is free for partner organizations to participate in, but requires a point person who is willing to meet regularly with the students and offer guidance.
+During the last two months of the Master of Data Science program (May & June each year), our students work in teams of ~4 students with an external capstone partner and a UBC mentor to address a question facing the capstone partner's organization using data science. The capstone program is free for partner organizations to participate in, but requires a point person who is willing to meet regularly with the students and offer guidance.
 
 *Due to COVID-19, it is unclear whether 2021 Capstone Projects will be conducted in-person or remotely. However, after a very successful "remote Capstone" in 2020, MDS is committed to facilitating Capstone Projects again in 2021.*
 
