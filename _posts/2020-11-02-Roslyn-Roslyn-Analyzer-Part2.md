@@ -1,12 +1,12 @@
 ---
 layout: post
-tags: [.net, roslyn, refactoring, analysis, analyzer, syntax tree]
+tags: [.net, roslyn, refactoring, analysis, analyzer, syntax tree, semantic, symbols, diagnostic, arguments]
 title: Adventures with Roslyn .NET, Part 2 - Analyzer
 author: emir_osmanoski
 comments: true
-image: /images/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/00_logo.png
-cover-img: /images/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/000_cover.png
-share-img: /images/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/00_logo.png
+image: /images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/00_logo.png
+cover-img: /images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/000_analysis_cover.png
+share-img: /images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/00_logo.png
 meta-description: An introduction to a basic Analyzer for the Multiple Method call Invocation
 ---
 
@@ -31,6 +31,8 @@ For full context, the following links (will) point to all the articles:
 This post starts looking at the basic out of the box Analyzer that is already setup when we create a new project out of the `Analyzer with
 Code Fix (.Net Standard)` template. After that introductory section we look at the Analyzer setup for our actual problem presented in the [Intro](https://blog.emirosmanoski.mk/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/)
 {: .box-note}
+
+### Contents
 
 - [Analyzer Recap](#analyzer-recap)
 - [Template Default setup](#template-default-setup)
@@ -81,7 +83,9 @@ what we are interested in has been "detected". So, let's have a look how that wo
 
 We start off by creating a new project based on the `Analyzer with Code Fix (.Net Standard)` template. We name the project `UpperCaseType` and we end up with a solution that looks a little bit like this:
 
+{:refdef: style="text-align: center;"}
 ![Sample Solution from Base Template](/images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/001__UpperCaseSolution.png)
+{:refdef}
 
 What our focus will be for now is the `UpperCaseType` project and specifically the `UpperCaseTypeAnalyzer.cs` file.
 
@@ -254,7 +258,9 @@ And that is basically it! :heavy_check_mark:
 This template project can be published generating an extension installation
 file. We can also Debug (F5) the .VSIX which will run a "Test" instance of Visual Studio with the extension installed and we can see how the sample analyzer reports the diagnostic:
 
+{:refdef: style="text-align: center;"}
 ![Reported Diagnostic](/images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/01_ReportedDiagnostic.png)
+{:refdef}
 
 ---
 
@@ -547,7 +553,9 @@ class Program
 }
 ```
 
+{:refdef: style="text-align: center;"}
 ![Foo Invocation Expression property in Tree](/images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/02_InvocationExpression_ExpressionProperty.png)
+{:refdef}
 
 Based on that, from here we need a simple filter on that property to give us all
 the invocations within our code block that are calling the same method.
@@ -648,7 +656,9 @@ The check is very simple and is based on the number of arguments and the
 `ArgumentSyntax` `Expression` property. Once again we can look at the `SyntaxAnalyzer` and use the `Foo()` method from the previous example to see how the
 properties of an `Argument` in the `Argument List` are described:
 
+{:refdef: style="text-align: center;"}
 ![Expressions in Tree](/images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/03_InvocationExpression_Arguments.png)
+{:refdef}
 
 For the purposes of the article we will leave the check to only look at the
 expression. There is more that can be done here and expand/improve
@@ -724,12 +734,16 @@ Getting back to our sample code after we've setup the extension in either way,
 we can see that both the methods have a `warning` squiggly line underlying the
 invocations:
 
-![Squiggly Lines under multiple Foo Method Invocation showing there have been reported diagnostics](/images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/04_Foo_Diagnostic.png_InvocationExpression_Arguments.png)
+{:refdef: style="text-align: center;"}
+![Squiggly Lines under multiple Foo Method Invocation showing there have been reported diagnostics](/images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/04_Foo_Diagnostic.png)
+{: refdef}
 
 And if we hover over either of the two `warnings` we get, as expected, we get the full
 IDE experience reporting our diagnostic:
 
-![Full details of reported multiple invocation warnings matching message format](/images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/05_Foo_DiagnosticDetails.png_Foo_Diagnostic.png_InvocationExpression_Arguments.png)
+{:refdef: style="text-align: center;"}
+![Full details of reported multiple invocation warnings matching message format](/images/2020-11-02-Roslyn-Syntax-Analyzer-Part-2/05_Foo_DiagnosticDetails.png)
+{: refdef}
 
 ## Summary
 
