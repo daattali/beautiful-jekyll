@@ -1,43 +1,38 @@
 ---
 layout: post
 title: One Cozy Family Bookish December Tradition
-subtitle: "...for busy families"
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200914_154033_0000_compress32.jpg"
 share-img: ''
 tags:
-- dishes routine
-- clear counters
-- clean kitchen ideas
-- chores for kids
+- family traditions
+- Christmas traditions
+- December family traditions
+- Christmas books
+- best Christmas books
 
 ---
-I'm going to be honest upfront here. This is a work in progress for our homeschooling family of six (our oldest is almost ten, youngest being 1.5). But it's been a thorn in my side for a while, so I've been thinking about it a lot. Today on the blog, I'm sharing with you three ideas to go from kitchen explosion to clear counters (for busy families). And maybe one of them is your solution to the explosive kitchen too.
+Do you have family traditions? Are you wanting to figure out more traditions for your family? As we are heading towards the holidays, my mind starts racing with all the past years. What do I need to prep, have ready? What traditions are staying, what do we want to add on? I even have a digital note on what we did last year because I used to keep forgetting year to year. Today on the blog, I'm sharing with you one cozy family bookish December tradition that we've done for the past few years. All ages enjoy it too!
 
-## 1. [Get rid of excess dishes](https://www.home-storage-solutions-101.com/declutter-dishes.html). 
+**What are traditions?**
 
-This one is a little obvious, but if you have less dishes, then you'll have.. Well. Less dishes on your counters and cupboards, although you may have to pick up the dishwasher turning on more often or handwashing. So catch 22. But maybe a great option for some families. 
+> \[Traditions\] are the handing down of information, beliefs, or customs from one generation to another. 2 : a belief or custom handed down from one generation to another.
 
-## 2. Wash your own dishes. 
+⁣For us, our traditions have to be:
 
-This was an idea we threw around and liked, but in the end, it didn't work for the ages of our younger kids. Essentially, the idea is for everyone in the family to have one set of dishes. You'd wash what you need in between each meal. I personally love this idea and am holding it for the future! You could even get your own color coded set if you wanted. 
+_Simple,⁣ Meaningful,⁣ Enjoyable, ⁣Purposeful,⁣ and Memorable._
 
-## 3. Using a dishes tub (you can find examples in my [Amazon shop US](http://www.amazon.com/shop/eastcoastkelly) + [Canadian shop](http://www.amazon.ca/shop/eastcoastkelly)).
+⁣Pancakes and slow breakfasts Saturday mornings. Sunday church and a full brunch. Reading after breakfast at the table. Weekends for rest and a bit of tidying. ⁣
 
-This was an idea I was tossing around. I sit in my dining room most of the morning and stare at the kitchen the whole time. So, if the counters are cluttered, it drives me bananas. Using a dishes tub in between dealing with dirty dishes would help reduce the visual clutter. This could also be paired with another strategy. 
+⁣Our traditions became clearer when we were able to name our values and priorities over the years. It's the foundation for our family life (and why I include this in the first unit of my [course](www.eastcoastkelly.com/course)). ⁣⁣So. Take your time as a family. Enjoy the journey and build some memories to last a lifetime. 
 
-## 4. Building habits for clearing counters.
+## Using books for cozy December family traditions
 
-This is the option we settled on for our family. The idea is to pick up the pace for teaching habits with clearing the counters as a family. It requires a plan. Strategy. And consistency. And we were ready to kick up the notch a bit.   
-   
-And hey? If it's not working? Tweak it and try something new. Simple is what we're always going for! [Clear counters are always nice, aren't they](https://www.thedailymeal.com/cook/how-to-marie-kondo-your-kitchen) (Marie Kondo goals!)?  
-   
-_PS my mail list received a freebie with the current steps we're taking to build habits with our kids in the kitchen (goal: more consistently having clear counters). If you'd like that freebie, send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'll send that off to you._
+At the beginning of December, we celebrate [St. Nicholas day](https://www.nationalgeographic.com/news/2018/12/131219-santa-claus-origin-history-christmas-facts-st-nicholas/). St. Nicholas was very giving and often would give his wealth away to people who needed it. Traditionally, some families pop treats and toys in their kids' shoes overnight to celebrate the memory of St. Nicholas. And one thing we've done has been to add a couple "Christmas-y" books every year on this day. It's a perfect cozy way to get into December for our family. The kids all look forward to seeing what books they'll receive this year! And it slowly builds our little book collection, one book at a time.
 
-![A picture of a kitchen with clear counters.](/uploads/0001-12409819322_20201028_143308_0000.png "kitchencounters")
+Our favourite Christmasy and holiday December books so far:
 
-Cheers,
+_PS I linked all these books and our wishlist on my Amazon shop for you to look over too. Maybe you'll find a gem for your family! Amazon Canadian shop or US shop._
 
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
+more reading: [How to Talk to Your Kids About Family Traditions](https://time.com/4143024/how-to-talk-to-your-kids-about-family-traditions/)
