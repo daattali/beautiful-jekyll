@@ -3,7 +3,7 @@ layout: post
 title: How to Instill Habits in Kids
 subtitle: "(our kids' morning routine)"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/20200914_154033_0000_compress32.jpg"
+thumbnail-img: "/uploads/89722164_10163109675490627_1846259836136718336_o.jpg"
 share-img: ''
 tags:
 - morning routines for kids
