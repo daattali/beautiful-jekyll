@@ -8,7 +8,7 @@ subtitle: ''
 
 * [Latest blogs](http://www.eastcoastkelly.com/)
 * [All blog tags](https://www.eastcoastkelly.com/tags/) (by topic)
-* [Weekly newsletter/freebie Friday](http://eepurl.com/gYFb-r) (latest hit was The Simple Capsule Wardrobe Guide!)
+* [Weekly newsletter/freebie Friday](http://eepurl.com/gYFb-r) 
 
 ## Products
 
@@ -21,7 +21,7 @@ subtitle: ''
 
 ## Courses
 
-* MY FIRST COURSE! Launching late October: [_The Simplify Your Life At Home: a course for busy moms_](https://www.eastcoastkelly.com/course)
+* MY FIRST COURSE! It's CLOSED currently, with a new round coming next year (email me at eastcoastkellyb@gmail.com if you'd like to get on the waitlist): [_The Simplify Your Life At Home: a course for busy moms_](https://www.eastcoastkelly.com/course)
 
   ![](/uploads/20201006_142440_0000_compress75.jpg)
 * Simplify your Instagram: A course I took recently that I LOVE. Erica gives it to you straight. I really enjoy how she lays things out for simply and doesn’t hold anything back: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq)
