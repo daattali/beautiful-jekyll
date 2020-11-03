@@ -91,9 +91,9 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/jianing-qian/
           - name: Junyu (Jenny) Nan (MSR) -> CMU PhD
             web_url: https://www.ri.cmu.edu/ri-people/junyu-nan/
-          - name: Edward Ahn (MSR) -> Apple
+          - name: Edward Ahn (MSR) -> AI / ML Engineer at Apple
             web_url: https://www.ri.cmu.edu/ri-people/edward-ahn/
-          - name: Mengyun (Olivia) Xu (MSCS)
+          - name: Mengyun (Olivia) Xu (MSCS) -> Amazon Robotics
             web_url: https://www.linkedin.com/in/mengyun-olivia-xu-36a7ab126
       - name: Undergraduate students
         full: False
