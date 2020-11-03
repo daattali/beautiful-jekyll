@@ -82,7 +82,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/eccv2020lightcurtains.jpg" img width="250">
         </td>
-        <td>Active 3D Perception using Light Curtains<br>
+        <td><a href="https://arxiv.org/abs/2008.02191">Active Perception using Light Curtains for Autonomous Driving</a><br>
             <div class="pubauthor">
                 Siddharth Ancha, Yaadhav Raaj, Peiyun Hu, Srinivasa Narasimhan, David Held<br>
             </div>
@@ -99,7 +99,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/iros2020_website_thumbnail.png" img width="250">
         </td>
-        <td>Cloth Region Segmentation for Robust Grasp Selection<br>
+        <td><a href="https://arxiv.org/abs/2008.05626">Cloth Region Segmentation for Robust Grasp Selection</a><br>
             <div class="pubauthor">
                 Jianing Qian*, Thomas Weng*, Luxin Zhang, Brian Okorn, David Held<br>
             </div>
@@ -116,7 +116,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/jianreniros2020.jpg" img width="250">
         </td>
-        <td>Self-supervised Learning for 3D Data Association<br>
+        <td><a href="https://arxiv.org/abs/2008.08173">Uncertainty-aware Self-supervised 3D Data Association</a><br>
             <div class="pubauthor">
                 Jianren Wang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
             </div>
@@ -133,7 +133,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/LearningOrientationDistributions-Website.png" img width="250">
         </td>
-        <td>Learning Orientation Distributions for Object Pose Estimation<br>
+        <td><a href="https://arxiv.org/abs/2007.01418">Learning Orientation Distributions for Object Pose Estimation</a><br>
             <div class="pubauthor">
                 Brian Okorn, Mengyun Xu, Martial Hebert, David Held<br>
             </div>
@@ -150,7 +150,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/ab3dmot.jpg" img width="250">
         </td>
-        <td>3D Multi-Object Tracking: A Baseline and New Evaluation Metrics<br>
+        <td><a href="https://arxiv.org/abs/1907.03961">3D Multi-Object Tracking: A Baseline and New Evaluation Metrics</a><br>
             <div class="pubauthor">
                 Xinshuo Weng, Jianren Wang, David Held, Kris Kitani<br>
             </div>
