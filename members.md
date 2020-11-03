@@ -87,13 +87,11 @@ members:
       - name: Master's students
         full: False
         list:
-          - name: Pengsheng Guo (MSCV)
-            web_url: https://www.ri.cmu.edu/ri-people/pengsheng-guo/
-          - name: Jianing (Aurora) Qian (MSR)
+          - name: Jianing (Aurora) Qian (MSR) -> U Penn PhD
             web_url: https://www.ri.cmu.edu/ri-people/jianing-qian/
-          - name: Junyu (Jenny) Nan (MSR)
+          - name: Junyu (Jenny) Nan (MSR) -> CMU PhD
             web_url: https://www.ri.cmu.edu/ri-people/junyu-nan/
-          - name: Edward Ahn (MSR)
+          - name: Edward Ahn (MSR) -> Apple
             web_url: https://www.ri.cmu.edu/ri-people/edward-ahn/
           - name: Mengyun (Olivia) Xu (MSCS)
             web_url: https://www.linkedin.com/in/mengyun-olivia-xu-36a7ab126
@@ -105,6 +103,7 @@ members:
       - name: Visiting students
         full: False
         list:
+          - name: Pengsheng Guo 
           - name: Wen-Hsuan Chu
           - name: Akshay Dharmavaram
           - name: Yifan Qiao
@@ -118,6 +117,7 @@ members:
           - name: Zhaoyuan (Andy) Fang
           - name: Yujie Lu
           - name: Amith Pallankize
+
 ---
 
 <div class="row">
