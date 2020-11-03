@@ -50,7 +50,7 @@ subtitle:
             <div class="pubauthor">
                 Wenxuan Zhou, Sujay Bajracharya, David Held<br>
             </div>
-            <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2020 - <award>Plenary talk</award> (Selection rate 4.1%)
             <!--div style="font-size:small">
                 <a href="GOTURN/GOTURN.html">[Project Page]</a>
                 <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
