@@ -17,7 +17,6 @@ subtitle: ''
 ![A picture of me looking in the mirror.](https://www.eastcoastkelly.com/uploads/20200606_151056_0000-1.png "meinmirror")
 
 * SO excited to partner with [Knix](https://prf.hn/click/camref:1101leRdT). I have had one of their bras for a few years now and am in love. It still looks brand new and is the comfiest bra I've ever owned. I value high quality + pieces that will last a long, long time so feel comfortable partnering with them. I have plans to add their [shelf tank](https://prf.hn/click/camref:1101leRdT) to my capsule wardrobe soon too and can't wait to share about it. You can also receive $10 off your first order with the code **knix10**.
-* Get 10% off + free shipping for my fave scrunchies that I wear almost daily with the code EASTCOASTKELLY10 at [Scrunchie Squad](https://www.scrunchiesquad.com/).
 
 ## Courses
 
