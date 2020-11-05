@@ -195,8 +195,6 @@ paginate: 5
 kramdown:
   input: GFM
 
-future: false
-
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
