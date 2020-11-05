@@ -6,6 +6,8 @@ layout: page
 
 ## Latest work
 
+**Dimanchev, E.** and Christopher R. Knittel. 2020. [Trade-offs in Climate Policy: Combining Low- Carbon Standards with Modest Carbon Pricing](http://ceepr.mit.edu/publications/working-papers/747). MIT CEEPR Working Paper 2020-020. (Related: short [Research Brief](http://ceepr.mit.edu/files/papers/2020-020-Brief.pdf)).
+
 **Dimanchev, E.**, et al. 2020. [Two-Way Trade in Green Electrons: Deep Decarbonization of the Northeastern U.S. and the Role of Canadian Hydropower](http://ceepr.mit.edu/publications/working-papers/719). MIT CEEPR Working Paper 2020-003. (Related: Presentation [recording](https://youtu.be/RI13YmaVvmk); short [Research Brief](http://ceepr.mit.edu/files/papers/2020-003-Brief.pdf)).
 
 **Dimanchev, E.**, et al. 2019. [Health Co-Benefits of Sub-National Renewable Energy Policy in the U.S.](https://iopscience.iop.org/article/10.1088/1748-9326/ab31d9) *Environmental Research Letters* 14 085012. (Related: [Testimony](http://search-prod.lis.state.oh.us/cm_pub_api/api/unwrap/chamber/133rd_ga/ready_for_publication/committee_docs/cmte_s_energy_pu_1/testimony/cmte_s_energy_pu_1_2019-06-19-0800_742/testimonyemildimanchevmit.pdf) for the Ohio Senate; [Report](https://globalchange.mit.edu/publication/17278) including Ohio case study; [Code and data](https://doi.org/10.5281/zenodo.3605637)).
