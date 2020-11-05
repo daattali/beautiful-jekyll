@@ -6,7 +6,6 @@
 - Fixed bug where using an image as a navbar title did not render in GitHub Project pages that did not have a custom domain
 - Fixed issue where image thumbnails on the feed page were always forced into a square rather than maintaining a proper image aspect ratio
 - Added support for Patreon in the social network links in the footer
-- Don't publish blog posts with a date in the future 
 
 ## v5.0.0 (2020-09-15)
 
