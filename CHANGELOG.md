@@ -5,6 +5,7 @@
 - Fixed bug where the navbar "burger" collapsed button didn't always revert back to a light colour
 - Fixed bug where using an image as a navbar title did not render in GitHub Project pages that did not have a custom domain
 - Fixed issue where image thumbnails on the feed page were always forced into a square rather than maintaining a proper image aspect ratio
+- Added support for Patreon in the social network links in the footer
 
 ## v5.0.0 (2020-09-15)
 
