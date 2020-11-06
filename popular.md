@@ -7,8 +7,10 @@ subtitle: ''
 ## The best of the best
 
 * [Latest blogs](http://www.eastcoastkelly.com/)
+* [How to Make Lunches Painless and Quick with Picky Plates](https://www.eastcoastkelly.com/2020-08-29-how-to-make-lunches-painless-and-quick-with-picky-plates/)
+* [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.eastcoastkelly.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
 * [All blog tags](https://www.eastcoastkelly.com/tags/) (by topic)
-* [Weekly newsletter/freebie Friday](http://eepurl.com/gYFb-r) 
+* [Weekly newsletter/freebie Friday](http://eepurl.com/gYFb-r)
 
 ## Products
 
@@ -24,16 +26,6 @@ subtitle: ''
 
   ![](/uploads/20201006_142440_0000_compress75.jpg)
 * Simplify your Instagram: A course I took recently that I LOVE. Erica gives it to you straight. I really enjoy how she lays things out for simply and doesn’t hold anything back: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq)
-
-## Books
-
-Book recommendations on minimalism/simple living that I love:
-
-* [Bullet Journal Method](https://amzn.to/3fB51uF) (the planning method I base my own planning method on)
-* [The Miracle Morning](https://amzn.to/398G8nw) (where I’ve been inspired to create my simple morning routine)
-* [Hands Free Mama ](https://amzn.to/2BduGKX)(learning to say no to screens/distractions and being more present with your children)
-* [Everything that Remains](https://amzn.to/2Cu5u3c) (minimalism)
-* [Teaching From Rest](https://amzn.to/2WINMjG) (homeschooling encouragement/what matters most)
 
 ## Other
 
