@@ -12,7 +12,7 @@ layout: page
 
 **Dimanchev, E.**, et al. 2019. [Health Co-Benefits of Sub-National Renewable Energy Policy in the U.S.](https://iopscience.iop.org/article/10.1088/1748-9326/ab31d9) *Environmental Research Letters* 14 085012. (Related: [Testimony](http://search-prod.lis.state.oh.us/cm_pub_api/api/unwrap/chamber/133rd_ga/ready_for_publication/committee_docs/cmte_s_energy_pu_1/testimony/cmte_s_energy_pu_1_2019-06-19-0800_742/testimonyemildimanchevmit.pdf) for the Ohio Senate; [Report](https://globalchange.mit.edu/publication/17278) including Ohio case study; [Code and data](https://doi.org/10.5281/zenodo.3605637)).
 
-Green et al. (**contributing author**) 2019. [Insights Into Future Mobility.](http://energy.mit.edu/research/mobilityofthefuture/) A report from the Mobility of the Future study.
+Green et al. (**contributing author**) 2019. [Insights Into Future Mobility.](http://energy.mit.edu/research/mobilityofthefuture/) A report from the Mobility of the Future study. MIT Energy Initiative.
 
 Mehling M. and **Emil Dimanchev**. 2017. [Achieving the Mexican Mitigation Targets: Options for an Effective Carbon Pricing Policy Mix.](https://www.researchgate.net/publication/320885810_Achieving_the_Mexican_Mitigation_Targets_Options_for_an_Effective_Carbon_Pricing_Policy_Mix?_sg=5M98oFOZeyGxyUWhIMpSuFgzYsxM_JSBX0ci5zu8_yAat6tFxKt_iguNIYA_hVvL1xKVgEsCtOxnPtUI3VtCqS0gAzImeUvLyQff5qEV.Xk8nZ_xO9upQj9AQ1GG_Adsj0PXFdxuDqaxs9vxIJN4H40gGiVNxCtpte24IrKhLFxKXd0pNfSNG2KFhmSfP3A) Report for the German-Mexican Climate Alliance
 
