@@ -44,3 +44,5 @@ Tank top (recent purchase after thinking about it for two years is a butter soft
  Cardigan
 
 _PS if this kind of thing interests you, my freebie Friday mail list received a look at my current capsule wardrobe situation where you can see exactly what's in my simple wardrobe right now. If you’re not on the list yet, send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can add you to the list and you’ll get access to this freebie and all the past and future ones!_
+
+![A picture of my closet with blog title. ](/uploads/20201107_135638_0000_compress80.jpg "Blogbasics")
