@@ -3,55 +3,44 @@ layout: post
 title: 'Fifteen Basics to Consider When Building a Simple Wardrobe '
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/89722164_10163109675490627_1846259836136718336_o.jpg"
+thumbnail-img: "/uploads/img_20201102_092340674_compress94.jpg"
 share-img: ''
 tags:
-- family traditions
-- Christmas traditions
-- December family traditions
-- Christmas books
-- best Christmas books
+- simple wardrobe
+- capsule wardrobe
+- wardrobe basics
 
 ---
-Do you have family traditions? Are you wanting to figure out more traditions for your family? As we are heading towards the holidays, my mind starts racing with all the past years. What do I need to prep, have ready? What traditions are staying, what do we want to add on? I even have a digital note on what we did last year because I used to keep forgetting year to year. Today on the blog, I'm sharing with you our cozy family bookish December tradition that we've done for the past few years. All ages enjoy it too!
+What are the basics in your wardrobe?
 
-**What are traditions?**
+Before switching to a smaller, [everything goes together wardrobe](https://en.wikipedia.org/wiki/Capsule_wardrobe), I had too many categories of what I thought were basics. Jeans. Leggings. Dress pants. Maxi skirts. Joggers. Ah! Right?
 
-> \[Traditions\] are the handing down of information, beliefs, or customs from one generation to another. 2 : a belief or custom handed down from one generation to another.
+_So where do you start if you're wanting to declutter your wardrobe?_ One place can be basics! Today on the blog, I'm sharing twenty potential simple wardrobe basics for you. I say potential because everyone will have different preferences.
 
-⁣For us, our traditions have to be:
+The best way I've found to go about finding out what basics work best for me it is to ask myself some questions:
 
-_Simple,⁣ Meaningful,⁣ Enjoyable, ⁣Purposeful,⁣ and Memorable._
+* What's my lifestyle like - ie what is practical wardrobe wise for my life right now
+* What kinds of clothing do I like wearing? 
+* Can I remove some "basics" categories and simplify (such as one or two kinds of bottoms vs seven)?
 
-⁣Pancakes and slow breakfasts Saturday mornings. Sunday church and a full brunch. Reading after breakfast at the table. Weekends for rest and a bit of tidying. ⁣
+For me, in one basic category for instance, that became leggings only for long pants for me eventually.
 
-⁣Our traditions became clearer when we were able to name our values and priorities over the years. It's the foundation for our family life (and why I include this in the first unit of my [course](www.eastcoastkelly.com/course)). ⁣⁣So. Take your time as a family. Enjoy the journey and build some memories to last a lifetime.
+**Here's the list of twenty basics:**
 
-![A baby boy sleeping with books.](/uploads/book-1966235_640.jpg "boysleeping")
+Tank top (recent purchase after thinking about it for two years is a butter soft, molds to the body shelf tank by knix) You can find them here (affiliate link) and also use the code knix10 for 10% off.   
+ Basic short sleeve tee  
+ Long sleeze blouse  
+ Long sleeve tee   
+ Jeans   
+ Leggings (linked mine....)   
+ Dress pant   
+ Skirt   
+ Long skirt   
+ Shorts  
+ Black Dress   
+ Blazer  
+ Poncho  
+ Sweater  
+ Cardigan
 
-## Using books for cozy December family traditions
-
-At the beginning of December, we celebrate [St. Nicholas day](https://www.nationalgeographic.com/news/2018/12/131219-santa-claus-origin-history-christmas-facts-st-nicholas/). St. Nicholas was very giving and often would give his wealth away to people who needed it. Some families, including ours, usually pop treats and toys in their kids' shoes overnight to celebrate the memory of St. Nicholas. And one thing we've done has been to add a couple "Christmas-y" books every year on this day. It's a perfect cozy way to get into December for our family. The kids all look forward to seeing what books they'll receive this year! And it slowly builds our little book collection, one book at a time.
-
-**Our ten favourite Christmasy and holiday December books so far:**
-
- 1. The Light at Tern Rock
- 2. The Hundred Dresses
- 3. The Nutcracker
- 4. Pick a Pine Tree
- 5. The Baker's Dozen
- 6. The Year of the Perfect Christmas Tree
- 7. The Donkey's Dream
- 8. Mortimer's Christmas Manger
- 9. A Charlie Brown Christmas
-10. Mr. Willowby's Christmas Tree
-
-_PS I linked all these books and our wishlist on my Amazon shop for you to look over too. Maybe you'll find a gem for your family!_ [_Amazon Canadian shop_](www.amazon.ca/shop/eastcoastkelly) _or_ [_US shop_](www.amazon.com/shop/eastcoastkelly)_._
-
-More reading on traditions: [How to Talk to Your Kids About Family Traditions](https://time.com/4143024/how-to-talk-to-your-kids-about-family-traditions/)
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
+_PS if this kind of thing interests you, my freebie Friday mail list received a look at my current capsule wardrobe situation where you can see exactly what's in my simple wardrobe right now. If you’re not on the list yet, send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can add you to the list and you’ll get access to this freebie and all the past and future ones!_
