@@ -8,7 +8,7 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/corl_logo.png" img width="250">
+            <img src="../pics/corl2020_softgym.png" img width="250">
         </td>
         <td>SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation<br>
             <div class="pubauthor">
