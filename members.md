@@ -58,7 +58,7 @@ members:
             photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
             web_url: https://yufeiwang63.github.io/
           - name: Gaurav Pathak (MSR)
-            photo_url: ttps://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
           - name: Ji Liu (MSCV)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/07/liu_ji_2019_2.jpg
