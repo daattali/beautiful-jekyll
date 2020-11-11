@@ -1,35 +1,69 @@
 ---
 layout: page
-title: Course
+title: The Simplify Your Life At Home Course
 subtitle: ''
 published: false
 
 ---
-## The best of the best
+_The Simplify Your Life At Home: a course for busy moms_ is a six week interactive course.
 
-* [Latest blogs](http://www.eastcoastkelly.com/)
-* [How to Make Lunches Painless and Quick with Picky Plates](https://www.eastcoastkelly.com/2020-08-29-how-to-make-lunches-painless-and-quick-with-picky-plates/)
-* [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.eastcoastkelly.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
-* [All blog tags](https://www.eastcoastkelly.com/tags/) (by topic)
-* [Weekly newsletter/freebie Friday](http://eepurl.com/gYFb-r)
+**Closed October 26th. Round 2 coming in early 2021. Signup below to get on the waitlist.**
 
-## Products
+#### COURSE DESCRIPTION
 
-* Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I love, use, and/or recommend from Amazon!
+This is NOT a one size fits all course. It’s also not a one-time solution course as I believe that life is a LIFELONG process of learning and growing. I will promise you, however, that this course will be packed with things you can learn and grow with today and going forward. There will be some things that stick and make you think, some things that may not apply, but you’ll still be able to learn from them.
 
-![A picture of me looking in the mirror.](https://www.eastcoastkelly.com/uploads/20200606_151056_0000-1.png "meinmirror")
+I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the Simplify Your Life At Home: a course for busy moms. I’m so happy to have you here to check this course out to see if it would be good for you!
 
-* SO excited to partner with [Knix](https://prf.hn/click/camref:1101leRdT). I have had one of their bras for a few years now and am in love. It still looks brand new and is the comfiest bra I've ever owned. I value high quality + pieces that will last a long, long time so feel comfortable partnering with them. I have plans to add their [shelf tank](https://prf.hn/click/camref:1101leRdT) to my capsule wardrobe soon too and can't wait to share about it. You can also receive $10 off your first order with the code **knix10**.
+![An image of the course title with a wreath around it.](/uploads/20201006_142440_0000_compress75.jpg "courseimage")
 
-## Courses
+## SIMPLIFY and MINIMIZE. MAKE YOUR HOME + MOM LIFE SIMPLER TO MANAGE.
 
-* MY FIRST COURSE! It's CLOSED currently, with a new round coming next year (email me at eastcoastkellyb@gmail.com if you'd like to get on the waitlist): [_The Simplify Your Life At Home: a course for busy moms_](https://www.eastcoastkelly.com/course)
+##### Overview of the units (*may be tweaked slightly before the launch):
 
-  ![](/uploads/20201006_142440_0000_compress75.jpg)
-* Simplify your Instagram: A course I took recently that I LOVE. Erica gives it to you straight. I really enjoy how she lays things out for simply and doesn’t hold anything back: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq)
+**SETTING THE STAGE**  
+Unit Discovering your priorities + values  
+Unit Habits
 
-## Other
+**DECLUTTERING**  
+Unit General decluttering concepts  
+Unit Wardrobes/clothing  
+Unit Kids' stuff  
+Unit Maintenance decluttering
 
-* Looking for simple online work? Start [here](https://forms.gle/v11JEewD81mxsUyf6).
+**TIME MANAGEMENT**  
+Unit Finding extra time tips  
+Unit Sustainable, slow productivity
 
-_All links above are my affiliate links, which means I’d make a small % if you decided to purchase at no change in price to you. Thank you!_
+**PLANNING**
+
+Unit Simplifying your to do list  
+Unit Planning strategies: autopilot/automate, loop planning
+
+**ROUTINES**  
+Unit Daily routines  
+Unit Cleaning and tidying routines
+
+**GOAL SETTING + MINDSET**
+
+_What you will find in this course:_
+
+* Weekly workbook(s) and/or worksheet(s)
+* Weekly posts
+* Weekly action steps
+* Weekly tips relating to the topics
+* Live Q and A videos
+
+Go at your own pace or follow along live (recommended). Community engagement posts to share our journey with one another. You’ll have access to this course afterwards forever too. Signing up for round one? YOU GET ACCESS TO ANY FUTURE UPDATE OF THE COURSE CONTENT TOO!
+
+<iframe src="[https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true](https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true "https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true")" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+The introductory rate has a one time payment of $27USD or you can split into two payments. We can chat about payment methods after your application is received.
+
+**ABOUT ME**
+
+I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom seven years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a minimalist lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by learning flexible planning methods + skills. More intention. Seeking less stuff, less to do. And. Always learning and growing.
+
+\--Kelly  :-)
+
+![](/uploads/headshot.jpg)
