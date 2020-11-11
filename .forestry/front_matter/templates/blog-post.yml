@@ -3,8 +3,8 @@ label: Blog post
 hide_body: false
 fields:
 - type: text
-  name: layout
-  label: layout
+  name: page
+  label: page
   default: post
   hidden: true
 - type: text
