@@ -4,6 +4,7 @@ description: Helping moms simplify life at home.
 author: 
 navbar-links:
   Popular: popular
+  Course: https://kellymbriggs.github.io/course
   Connect:
   - About me: https://kellymbriggs.github.io/aboutme/
   - Contact: https://kellymbriggs.github.io/contact/
