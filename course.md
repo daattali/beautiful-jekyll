@@ -7,6 +7,7 @@ cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: ''
 share-img: ''
 post: ''
+published: false
 
 ---
 _The Simplify Your Life At Home: a course for busy moms_ is a six week interactive course.
