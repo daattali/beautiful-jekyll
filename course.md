@@ -1,8 +1,12 @@
 ---
-layout: page
-title: The Simplify Your Life At Home Course
+layout: post
+tags: []
+title: Course
 subtitle: ''
-published: false
+cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
+thumbnail-img: ''
+share-img: ''
+post: ''
 
 ---
 _The Simplify Your Life At Home: a course for busy moms_ is a six week interactive course.
@@ -56,7 +60,7 @@ _What you will find in this course:_
 
 Go at your own pace or follow along live (recommended). Community engagement posts to share our journey with one another. You’ll have access to this course afterwards forever too. Signing up for round one? YOU GET ACCESS TO ANY FUTURE UPDATE OF THE COURSE CONTENT TOO!
 
-<iframe src="[https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true](https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true "https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true")" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 The introductory rate has a one time payment of $27USD or you can split into two payments. We can chat about payment methods after your application is received.
 
