@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: []
-title: Course
+title: The Simplify Your Life At Home Course
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: ''
@@ -10,7 +10,7 @@ share-img: ''
 ---
 _The Simplify Your Life At Home: a course for busy moms_ is a six week interactive course.
 
-Launch date October 26th!
+**Closed October 26th. Round 2 coming in early 2021. Signup below to get on the waitlist.**
 
 #### COURSE DESCRIPTION
 
