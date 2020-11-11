@@ -10,9 +10,6 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: subtitle
-  label: subtitle
 - name: tags
   type: tag_list
   default: []
