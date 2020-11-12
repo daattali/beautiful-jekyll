@@ -1,9 +1,9 @@
 ---
 layout: post
-title: One important thing to do when you feel confused about your direction
+title: One Important Thing to Do When You Feel Confused about your Direction
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/img_20201102_092340674_compress94.jpg"
+thumbnail-img: "/uploads/headshot.jpg"
 share-img: ''
 tags:
 - simple wardrobe
@@ -11,38 +11,25 @@ tags:
 - wardrobe basics
 
 ---
-**_What are the basics in your wardrobe?_**
-
-Before switching to a smaller, [everything goes together wardrobe](https://en.wikipedia.org/wiki/Capsule_wardrobe), I had too many categories of what I thought were basics. Jeans. Leggings. Dress pants. Maxi skirts. Joggers. Ah! Right?
-
-**_So where do you start if you're wanting to declutter your wardrobe?_** One place can be basics! Today on the blog, I'm sharing fifteen potential simple wardrobe basics for you. I say potential because everyone will have different preferences.
-
-The best way I've found to go about finding out what basics work best for me it is to ask myself some questions:
-
-* What's my lifestyle like - i.e. what is practical wardrobe wise for my life right now?
-* What kinds of clothing do I like wearing?
-* Can I remove some "basics" categories and simplify (such as one or two kinds of bottoms vs seven)?
-
-For me, in one basic category for instance, that became leggings only for long pants for me eventually.
-
-**Here's the list of fifteen basics for building a simple wardrobe:**
-
- 1. [Tank top](https://prf.hn/click/camref:1101leRdT) (recent purchase for my simple wardrobe after thinking about it for TWO years is a butter soft, molds to the body shelf tank by knix) You can find them [here](https://prf.hn/click/camref:1101leRdT) (affiliate link) and also use the code knix10 for 10% off too if you like the look of them too.
- 2. Basic short sleeve tee
- 3. Long sleeze blouse
- 4. Long sleeve tee
- 5. Jeans
- 6. Leggings (I linked the leggings I wear in my [Amazon shop](www.amazon.ca/shop/eastcoastkelly) for you)
- 7. Dress pant
- 8. Skirt
- 9. Long skirt
-10. Shorts
-11. Black Dress
-12. Blazer
-13. Poncho
-14. Sweater
-15. Cardigan
-
-_PS if this kind of thing interests you, my freebie Friday mail list received a look at my current capsule/simple wardrobe situation where you can see exactly what's in my simple wardrobe right now. If you’re not on the list yet, send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can add you to the list and you’ll get access to this freebie and all the past and future ones!_
-
-![A picture of my closet with blog title. ](/uploads/20201107_135638_0000_compress80.jpg "Blogbasics")
+**_Where are you heading?_**   
+  
+Heading slowly in the right direction is 1000% better than heading quickly in the wrong direction (for you). It's so easy to be swept up in the world's speed. My speed, with my crew  of four kids under ten in this season of life is _slowwww_. Sometimes painfully slow for my default ["to do list" personality](https://www.eastcoastkelly.com/2020-08-29-10-ways-to-simplify-your-to-do-list/). But I've learned to come back to slow every time, giving space for rest and reassessment. Today on the blog, I'm sharing about one important thing to do when you feel confused about your direction.  
+  
+Questions to ask yourself if you feel confused about your direction:  
+  
+Do I want to keep moving in this direction with my life?   
+Is it aligned with my values?   
+Am I doing this because I think others think I should?   
+Am I doing this because I think I'm supposed to, but don't really want to?   
+  
+_And if you're still not sure, the best thing, the one important thing I've found to do when I feel confused about my direct is to just: PAUSE.  
+_  
+Research on pausing...   
+  
+And last month was the launch of a special project to me that I worked on slowly, over many months. Simplify your life at home: a course for busy moms launches today. I truly took my time. Pausing and making sure it was the right direction...Every step of the way said "yes"! So I'm celebrating today in the slow and steady and am looking forward to learning alongside these lovely ladies for the next six weeks (round two coming early next year 🤗). Here's the link if xyz  
+  
+  
+Ending but  
+  
+  
+⁣
