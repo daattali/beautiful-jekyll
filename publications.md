@@ -26,17 +26,18 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/corl_logo.png" img width="250">
+            <img src="../pics/corl2020_ROLL.jpg" img width="250">
         </td>
-        <td>Visual Self-Supervised Reinforcement Learning with Object Reasoning<br>
+        <td>ROLL: Visual Self-Supervised Reinforcement Learning with Object Reasoning<br>
             <div class="pubauthor">
                 Yufei Wang*, Gautham Narayan Narasimhan*, Xingyu Lin, Brian Okorn, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            <div style="font-size:small">
+                <a href="https://sites.google.com/andrew.cmu.edu/roll/home">[Project Page]</a>
+                <!-- <a href="GOTURN/GOTURN.pdf">[Full Paper]</a> -->
+                <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
+            </div>
             </div>
             <br>
         </td>
