@@ -11,7 +11,6 @@ tags:
 - productive procrastination
 
 ---
-
 **_Where are you heading?_** Heading slowly in the right direction is 1000% better than heading quickly in the wrong direction (for you). It's so easy to be swept up in the world's speed. My speed, with my crew  of four kids under ten in this season of life is _slowwww_. Sometimes painfully slow for my default ["to do list" personality](https://www.eastcoastkelly.com/2020-08-29-10-ways-to-simplify-your-to-do-list/). But I've learned to come back to slow every time, giving space for rest and reassessment. Today on the blog, I'm sharing about one important thing to do when you feel confused about your direction.
 
 ![Question mark over someone's face.](/uploads/0001-13033839607_20201112_120637_0000_compress9.jpg "oneimportantquestion")
@@ -25,7 +24,7 @@ tags:
 
 And if you're still not sure, the best thing, the one important thing I've found to do when I feel confused about my direct is to just: **_PAUSE._** This would be a time to turn into prayer too - if you pray - and/or search within and reach out to close friends and family to share about your direction. Sometimes friends and family can have the best insights or insights that you might never have seen!
 
-From a blog recap on the book _The 5 Second Rule_ on pausing (or "productive procrastination"):
+From a [blog recap on the book _The 5 Second Rule_](https://medium.com/w-i-t/11-life-changing-insights-learned-from-best-seller-mel-robbins-f6722c1d946c) on pausing (or "productive procrastination"):
 
 > "Use Productive Procrastination
 >
