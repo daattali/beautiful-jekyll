@@ -45,9 +45,9 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/corl_logo.png" img width="250">
+            <img src="../pics/corl2020_plas.png" img width="250">
         </td>
-        <td>Latent Action Space for Offline Reinforcement Learning<br>
+        <td><a href="https://sites.google.com/view/latent-policy">PLAS: Latent Action Space for Offline Reinforcement Learning</a><br>
             <div class="pubauthor">
                 Wenxuan Zhou, Sujay Bajracharya, David Held<br>
             </div>
