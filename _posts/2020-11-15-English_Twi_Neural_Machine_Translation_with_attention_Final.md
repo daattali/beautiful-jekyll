@@ -4,7 +4,7 @@ title: Neural Machine Translation
 subtitle:  Application To English To Twi  Language Translation
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
-tags: [Language Translation, Deep Learning, NLP,Attention Mechanism]
+tags: [Language Translation, Deep Learning, NLP,Attention Mechanism,seq2seq, encoder-decoder model]
 ---
 
 
