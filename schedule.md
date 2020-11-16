@@ -25,7 +25,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 26-Oct	| Probability			| [2017 AMC 8](https://artofproblemsolving.com/wiki/index.php/2017_AMC_8_Problems) | |
 | 2-Nov		| Fractions				| [2015 AMC 8](https://artofproblemsolving.com/wiki/index.php/2015_AMC_8_Problems) | |
 | 9-Nov		| Area					| _No school_ | |
-| 16-Nov	| Patterns				| | |
+| 16-Nov	| Patterns				| _Cancelled_ | |
 | 23-Nov	| Work					| | _No school_ |
 | 30-Nov	| Similarity			| | |
 | 7-Dec		| Logic					| | |
