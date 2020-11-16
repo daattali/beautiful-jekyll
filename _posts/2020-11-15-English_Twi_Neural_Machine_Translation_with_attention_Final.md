@@ -1216,7 +1216,7 @@ translate(u' eyi haw me papa . ',actual)
     
 
 
-![png](img/EnglishToTwiTranslation/output_61_1.png)
+![png](/img/EnglishToTwiTranslation/output_61_1.png)
 
 
 
@@ -1230,7 +1230,7 @@ translate(u' eyi haw me papa . ')
     
 
 
-![png](  img/EnglishToTwiTranslation/output_62_1.png)
+![png](/img/EnglishToTwiTranslation/output_62_1.png)
 
 
     Input: <start> eyi haw me papa . <end>
@@ -1238,5 +1238,5 @@ translate(u' eyi haw me papa . ')
     
 
 
-![png](img/EnglishToTwiTranslation/output_62_3.png)
+![png](/img/EnglishToTwiTranslation/output_62_3.png)
 
