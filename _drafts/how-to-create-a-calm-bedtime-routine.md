@@ -3,7 +3,7 @@ layout: post
 title: 'How to Create a Calm Bedtime Routine '
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/book-1966235_640.jpg"
 share-img: ''
 tags:
 - bedtime routines
