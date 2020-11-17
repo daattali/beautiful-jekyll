@@ -1,12 +1,8 @@
 ---
-layout: post
-tags: []
-title: Course
+layout: page
+title: Simplify Course
 subtitle: ''
-cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
-share-img: ''
-post: ''
+published: false
 
 ---
 _The Simplify Your Life At Home: a course for busy moms_ is a six week interactive course.
@@ -60,7 +56,7 @@ _What you will find in this course:_
 
 Go at your own pace or follow along live (recommended). Community engagement posts to share our journey with one another. You’ll have access to this course afterwards forever too. Signing up for round one? YOU GET ACCESS TO ANY FUTURE UPDATE OF THE COURSE CONTENT TOO!
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="[https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true](https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true "https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true")" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 The introductory rate has a one time payment of $27USD or you can split into two payments. We can chat about payment methods after your application is received.
 
@@ -68,6 +64,6 @@ The introductory rate has a one time payment of $27USD or you can split into two
 
 I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom seven years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a minimalist lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by learning flexible planning methods + skills. More intention. Seeking less stuff, less to do. And. Always learning and growing.
 
-\-Kelly  :-)
+\--Kelly  :-)
 
 ![](/uploads/headshot.jpg)
