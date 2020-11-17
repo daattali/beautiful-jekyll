@@ -21,7 +21,7 @@ I don't know about you, but sometimes the duties of the day can just sweep me aw
 4. Move your body. Run around with your kids. Wiggle your toes (I found this suggestion [here](https://www.productiveflourishing.com/12-simple-ways-to-be-present/)). Moving your body reminds you where you are and whom you are with.
 5. Do something that you enjoy with your kids. For me, that's 100% when I get to chase them around and make them laugh and squeel. It's almost always my favourite moment of the day when I take time to do this. Whatever it is for you and your kids, take time to do that fun thing.
 
-_PS Enjoyed these tips? I have ten more of them like these if you'd like that I found. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to share them with you._
+_PS Enjoyed these tips? I have ten more of them like these if you'd like that I found. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to share them with you._
 
 Cheers,
 

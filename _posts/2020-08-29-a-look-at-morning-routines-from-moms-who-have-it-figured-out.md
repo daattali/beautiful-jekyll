@@ -56,9 +56,9 @@ You can read all about how I designed my morning routine by taking a read throug
 
 You can find Mandy Yang on Instagram at [amongallofthis](https://www.instagram.com/amongallofthis/).
 
-_Have a morning routine to share? Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to add yours too._
+_Have a morning routine to share? Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to add yours too._
 
-_Also - Last year, I finally started a morning routine for myself and it’s really helped my days out so much. I feel more peaceful throughout the rest of the day and I’m finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/398G8nw) _that everything clicked for me. I was so inspired. If you’d like a quick breakdown of what the Miracle Morning is and have an overview of how to create your own, I can send you a basic overview from what I read. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+_Also - Last year, I finally started a morning routine for myself and it’s really helped my days out so much. I feel more peaceful throughout the rest of the day and I’m finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/398G8nw) _that everything clicked for me. I was so inspired. If you’d like a quick breakdown of what the Miracle Morning is and have an overview of how to create your own, I can send you a basic overview from what I read. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
 
 Cheers,
 

@@ -26,7 +26,7 @@ I actually have [this wallet](https://bemorewithless.com/how-to-build-a-capsule-
 
 You can find the link to the wallet I bought [here](https://amzn.to/385fJqa ). It would make for a great gift for someone who is looking to simplify this area of their lives or is a diehard wallet collector perhaps?
 
-_PS And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” If you’d like that guide, feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send that off to you._
+_PS And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” If you’d like that guide, feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send that off to you._
 
   
 **Cheers,**

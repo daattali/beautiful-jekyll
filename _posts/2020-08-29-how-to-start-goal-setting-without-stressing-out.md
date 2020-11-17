@@ -31,7 +31,7 @@ From [hubspot’s blog](https://blog.hubspot.com/marketing/smart-goal-examples):
 
 Smart goals and the simple goal setting method I use that’s shared about on [this blog](https://medium.com/better-humans/how-to-break-down-your-goals-into-sprints-689af9e97c52) and [this book](https://amzn.to/3fB51uF) I read last year – they are helping me plan out a bigger project right now. It's made things a lot clearer and simpler and low stress for me. I'm excited about it!
 
-_PS A couple weeks ago, I created a freebie for my mail list all about smart goals and a deeper dive into the goal planning method I shared about so you can apply it to your life too. It was called “Simple, stress free goal setting” with clear steps to go through the process. If you’d like that, I’d be happy to email it off to you for free. Just send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
+_PS A couple weeks ago, I created a freebie for my mail list all about smart goals and a deeper dive into the goal planning method I shared about so you can apply it to your life too. It was called “Simple, stress free goal setting” with clear steps to go through the process. If you’d like that, I’d be happy to email it off to you for free. Just send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
 
 Cheers,
 

@@ -56,7 +56,7 @@ So yes, read the advice, learn the method, watch the YouTube. But in the end, li
 
 ##### You will feel soooo good once it’s all done. Making space for the new you!
 
-_And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+_And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
 
 Cheers,
 

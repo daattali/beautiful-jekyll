@@ -24,7 +24,7 @@ Basing your day around your energy level requirements for your task list will he
 
 I was able to easily apply these concepts to my life at home with kids too and my own projects! Helpful? I recommend you listen to the podcast too if this is something that interests you. I found it really helpful!
 
-_PS if you want to learn more about habit stacking, you may love the freebie my mail list received last Friday - 20 ideas to habit stack + a habit stacking planning sheet. You can receive that for free by emailing me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
+_PS if you want to learn more about habit stacking, you may love the freebie my mail list received last Friday - 20 ideas to habit stack + a habit stacking planning sheet. You can receive that for free by emailing me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
 
 **Further reading**: And if you are majorly struggling in this area, the book [Eat That Frog!](https://amzn.to/3gVpdaF) is soooo helpful. The author has researched for years so he knows what he’s talking about and has 1.5 million copies sold of his book.
 

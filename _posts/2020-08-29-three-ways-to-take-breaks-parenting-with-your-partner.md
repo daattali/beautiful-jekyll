@@ -28,7 +28,7 @@ Have more than one child? Dividing kids between parents gives both of you a brea
 
 The thing about finding and taking breaks is that is if you don't schedule them into your routine, oftentimes they just will not happen and then the inevitable may happen too - burnout. Don't wait for burnout to take a break. How can you schedule in those breaks? Start by looking at the above tips and see how you can fit them into your life.
 
-_And if you are like me right now and are working at home as well as your partner, you may like my working at home with children guide I did up a few years ago. I've shared it with many friends who've found it very helpful! Some things may not apply during a pandemic, but there will be other things that will be helpful. Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to send you that guide._
+_And if you are like me right now and are working at home as well as your partner, you may like my working at home with children guide I did up a few years ago. I've shared it with many friends who've found it very helpful! Some things may not apply during a pandemic, but there will be other things that will be helpful. Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to send you that guide._
 
 Cheers,
 

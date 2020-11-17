@@ -25,7 +25,7 @@ More tips on easing back into the week (after the summer)? Check this blog out [
 **Let's say no to keeping up with that cheetah pace and lead a sane, well paced life. Alright? Unless being a cheetah is your thing, that is.**   
    
 Further reading? I enjoyed the book [Eat that Frog](https://amzn.to/2DmKOdX) for planning and procrastination tips as well as the [Bullet Journal Method](https://amzn.to/3fB51uF) for simple planning.  
-_PS if you’d like more tips just like these ones that I found for easing back into the week, send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send you those for free too._
+_PS if you’d like more tips just like these ones that I found for easing back into the week, send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send you those for free too._
 
 ![An image overview of the blog and three planners.](/uploads/20200902_144750_0000_compress96.jpg "journals3")
 

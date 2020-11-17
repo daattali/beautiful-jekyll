@@ -29,7 +29,7 @@ This week it's ...[**Simplify Your Life Week**](https://nationaldaycalendar.com/
  9. **Pick a place to keep your daily to do list**. [Written is best](https://www.forbes.com/sites/markmurphy/2018/04/15/neuroscience-explains-why-you-need-to-write-down-your-goals-if-you-actually-want-to-achieve-them/#2501ca0d7905). But if written is not your thing, use something. Anything. Consistently. And in one spot vs. all over the place (i.e. hello sticky notes that I used to lose all over the house). I now use the [bullet journaling method](https://amzn.to/3fB51uF) so my to do list stays in one place, where it needs to be.
 10. And. **Default to a bare minimum “to do list” day** when you have to throw out the to do list. Because sometimes even a simple to do list needs to be thrown out. I know it does here sometimes having four kids in the home!
 
-_PS if creating a simple to do list and planning is a struggle for you, you may like what my mail list received for their freebie Friday recently: The simple guide to finding more time + an attached worksheet. You can email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) and I can email you that freebie directly if you’d like that.
+_PS if creating a simple to do list and planning is a struggle for you, you may like what my mail list received for their freebie Friday recently: The simple guide to finding more time + an attached worksheet. You can email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) and I can email you that freebie directly if you’d like that.
 
 Cheers,
 

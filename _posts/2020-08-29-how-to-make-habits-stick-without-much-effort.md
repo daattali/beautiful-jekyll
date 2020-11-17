@@ -37,7 +37,7 @@ I try to habit stack habits that have been having a hard time sticking and also 
 
 [**Habit Stacking: 127 Small Changes to Improve Your Health, Wealth, and Happiness**](https://amzn.to/2Z7f30B)**,** S. J. Scott
 
-_PS if you want to learn more about habit stacking, you may love the freebie my mail list is receiving on Friday - 20 ideas to habit stack + a habit stacking planning sheet. You can receive that for free by emailing me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
+_PS if you want to learn more about habit stacking, you may love the freebie my mail list is receiving on Friday - 20 ideas to habit stack + a habit stacking planning sheet. You can receive that for free by emailing me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
 
 Cheers,
 

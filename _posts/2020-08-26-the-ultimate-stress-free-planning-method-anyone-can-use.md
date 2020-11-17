@@ -32,7 +32,7 @@ Start with one, go through the next task. Keep going and then repeat. That's the
 * Homeschooling
 * Work tasks that don't need to be done daily
 
-  _These are the areas I use too. If you'd like to dive in and start creating your own loop plan and are looking for a template, I have one for you! Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that._
+  _These are the areas I use too. If you'd like to dive in and start creating your own loop plan and are looking for a template, I have one for you! Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that._
 
 Cheers,
 

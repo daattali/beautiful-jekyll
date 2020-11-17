@@ -122,7 +122,7 @@ Art supplies.. This is not all encompassing, but it's the majority of what we us
 * The book [Teaching From Rest](https://amzn.to/2WINMjG) that I recommend to everyone starting out. It’s so encouraging and helpful.
 
 _PS I guest blogged over on my friend Jessica’s blog titled “_[_All Your Homeschool Questions Answered By Guest Blogger Kelly Briggs_](https://mamabearwooten.com/all-your-homeschool-questions-answered-by-guest-blogger-kelly-briggs/)_” if you’d like to read that too!  
-PPS If you’d like to take a look at how I use flexible routines with all of the things above and more, feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like me to send that along to you or if you have any other questions._
+PPS If you’d like to take a look at how I use flexible routines with all of the things above and more, feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like me to send that along to you or if you have any other questions._
 
 Cheers,
 

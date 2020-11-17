@@ -38,7 +38,7 @@ And guess what? _I haven't looked at those pictures once since I took them_. I s
 
 [Decluttering at the Speed of Life](https://amzn.to/3bcR9oL)
 
-_And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+_And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
 
 Cheers,
 

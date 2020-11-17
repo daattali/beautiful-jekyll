@@ -28,7 +28,7 @@ Making do vs. buying new and minimalism. Minimalism to me means being content wi
 
 (Now tally up all that amount that I saved by not purchasing new...at least $200!).
 
-_PS if you love the idea of repurposing and want some more ideas, I found 20 more ideas you may find useful. You can receive that list for free by emailing me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
+_PS if you love the idea of repurposing and want some more ideas, I found 20 more ideas you may find useful. You can receive that list for free by emailing me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
 
 PPS And my friends I've met through [Tips for Minimal Living](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts/www.instagram.com/tipsforminimalliving) tip Tuesdays shared some great making do/reusing items too...you can find their tips here:  
 [3 Ways To Living More Minimal By Making Do Without Buying New](https://mamabearwooten.com/3-ways-to-living-more-minimal-by-making-do-without-buying-new/)

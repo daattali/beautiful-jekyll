@@ -27,7 +27,7 @@ Example of an ordered priority pyramid – it’ll look different for everyone:
 
 A priority pyramid is meant to be a tool, something to help you out when needed. Refer to it often when you are faced with overwhelm in your day too. It may help refocus you on what matters most! Keep it in a place where you may see it often if that’s helpful.
 
-_PS want to dive into discovering your priorities for your Priority Pyramid a bit more? I have a list of 20 other possible priorities for you to look at that you may want to include. Just send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for that list._
+_PS want to dive into discovering your priorities for your Priority Pyramid a bit more? I have a list of 20 other possible priorities for you to look at that you may want to include. Just send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for that list._
 
 Cheers!
 

@@ -43,7 +43,7 @@ If you can pass along a task to someone else, this would be a way to free up mor
 
 We’ve been trying to get most of our grocery errands done within one day or two, depending, for instance. This will help free up time for us compared to doing weekly grocery runs.
 
-_PS if this is a struggle for you, you may like what my mail list is receiving for their freebie Friday. The simple guide to finding more time and an attached worksheet. If you’re not on it yet (why not? ), you can email me your email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can email you that directly._
+_PS if this is a struggle for you, you may like what my mail list is receiving for their freebie Friday. The simple guide to finding more time and an attached worksheet. If you’re not on it yet (why not? ), you can email me your email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can email you that directly._
 
 Cheers,
 

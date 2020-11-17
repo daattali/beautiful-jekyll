@@ -21,7 +21,7 @@ Procrastination can be a strategy to avoid stress. Unlike laziness, procrastinat
 
 Procrastination is much more than meets the eye. A good thing to do to discover why you are procrastinating is to sit and write your thoughts down. Write down all the areas of your life that you procrastinate in and think about the root cause of your procrastination. For me, almost always, it's to avoid doing hard things and avoiding stress! So instead of focusing on the procrastination, I can think of ways to deal with the stress.
 
-_If you’d like to dive in deeper to your own areas of procrastination, you may enjoy the worksheet I put together that lists the four main causes for procrastination and strategies to deal with each. Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that!_
+_If you’d like to dive in deeper to your own areas of procrastination, you may enjoy the worksheet I put together that lists the four main causes for procrastination and strategies to deal with each. Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that!_
 
 Cheers,
 

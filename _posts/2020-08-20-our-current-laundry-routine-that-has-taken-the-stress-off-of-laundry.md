@@ -57,7 +57,7 @@ Now, if the laundry makes its way fully upstairs, Arthur, Josie, Felix’s baske
 
 _Why do we use this above laundry routine?_ Because it gives us OPTIONS. We can go all in and make sure things are put away completely periodically, but we also have a laundry routine in place for when we need extra grace, space, time for ourselves. Which, frankly. Is often! And that’s ok too. Whose expectations are we trying to meet anyway, right? You have to do what works for us (and for yourself)!
 
-_Your laundry routine is going to look different from mine, but hopefully looking at mine will give you a good place to start. And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” If you’d like that guide, feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send that off to you._
+_Your laundry routine is going to look different from mine, but hopefully looking at mine will give you a good place to start. And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” If you’d like that guide, feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send that off to you._
 
 Cheers,
 

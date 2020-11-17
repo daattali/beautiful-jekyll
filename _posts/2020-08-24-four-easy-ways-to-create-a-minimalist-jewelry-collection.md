@@ -22,7 +22,7 @@ I know there are some folk who do no to little jewelry, but I like to have more 
 3. Versatility. I try to focus on pieces that can be worn different ways such as a bracelet that can also be a necklace or a 3 in 1 necklace. Having versatility in your jewelry collection will mean you will have less pieces overall.
 4. Durability. Not easily breakable. I have four children, but even if I didn’t, a good quality piece that is durable is so key! It’ll stand the test of time and save you money too.
 
-_And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” If you’d like that guide, feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send that off to you._
+_And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” If you’d like that guide, feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send that off to you._
 
 Cheers,
 

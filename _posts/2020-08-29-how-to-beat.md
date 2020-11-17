@@ -42,7 +42,7 @@ The key to making this ABCDE Method is to follow through with it with consistent
 
 And. That's it! I’ve been using it now for a few weeks and I can say for sure, it’s having an impact on my focus and productivity. I used to look at, even a SMALL to do list and just get lost in thought or scrolling on Facebook because I couldn’t decide which to do first. Now, I just take a minute in the morning to label them from A-E. Problem solved!
 
-_And if you are majorly struggling in this area, the book_ [_Eat That Frog!_](https://amzn.to/3gVpdaF) _is soooo helpful, as I mentioned. The author has researched for years so he knows what he’s talking about and has 1.5 million copies sold of his book. If you’d like a quick recap of all of the ways he suggests beating procrastination, send me at email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to send you that recap._
+_And if you are majorly struggling in this area, the book_ [_Eat That Frog!_](https://amzn.to/3gVpdaF) _is soooo helpful, as I mentioned. The author has researched for years so he knows what he’s talking about and has 1.5 million copies sold of his book. If you’d like a quick recap of all of the ways he suggests beating procrastination, send me at email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to send you that recap._
 
 Cheers,
 

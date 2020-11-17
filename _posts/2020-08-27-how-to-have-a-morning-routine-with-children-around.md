@@ -28,7 +28,7 @@ I get up when my two littlest are awake, anywhere from 6:30-7:30. I usually do m
 
 What others do may not work for you. If it becomes more of a fight, then take it as a sign that it just might be the wrong strategy or time of a day. If it's important to you, you'll find a way. Keep going!
 
-_Last year, I finally started a morning routine for myself and it's really helped my days out so much. I feel more peaceful throughout the rest of the day and I'm finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/2BduGKX) _that everything clicked for me. I was so inspired. If you'd like a quick breakdown of what the Miracle Morning is, I can send you a basic overview from what I read. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that._
+_Last year, I finally started a morning routine for myself and it's really helped my days out so much. I feel more peaceful throughout the rest of the day and I'm finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/2BduGKX) _that everything clicked for me. I was so inspired. If you'd like a quick breakdown of what the Miracle Morning is, I can send you a basic overview from what I read. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that._
 
 Cheers,
 

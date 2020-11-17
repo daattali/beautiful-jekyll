@@ -39,7 +39,7 @@ Notes:
 
 _And that's it!_
 
-_If you'd like a simple worksheet to fill in your own simple exercise routine and with a few more exercise suggestions for each category, I can send you my personal setup too. Although they are all exercises that I know well and enjoy. Feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that worksheet for free._
+_If you'd like a simple worksheet to fill in your own simple exercise routine and with a few more exercise suggestions for each category, I can send you my personal setup too. Although they are all exercises that I know well and enjoy. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that worksheet for free._
 
 Cheers,
 
