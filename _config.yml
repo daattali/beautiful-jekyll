@@ -1,5 +1,5 @@
 ---
-title: East Coast Kelly
+title: Simple Home Mom
 description: Helping moms simplify life at home.
 author: 
 navbar-links:
@@ -11,15 +11,15 @@ navbar-links:
 avatar: "/assets/img/Headshot.jpg"
 round-avatar: true
 social-network-links:
-  email: eastcoastkellyb@gmail.com
+  email: simplehomemom@gmail.com
   facebook: kelly.briggs
-  instagram: eastcoastkelly
+  instagram: simplehomemom
   rss: true
 share-links-active:
   twitter: true
   facebook: true
   vk: false
-url-pretty: www.eastcoastkelly.com
+url-pretty: www.simplehomemom.com
 link-tags: true
 excerpt_length: "50"
 navbar-col: "#F5F5F5"
