@@ -28,7 +28,6 @@ python manage.py collectstatic
 ```
 
 
-
 ```bash 
 cd /etc/systemd/system
 touch wl-app.service
@@ -53,7 +52,7 @@ WantedBy=multi-user.target
 **start service:**
 
 ```bash
-systemctl enable wl-app
+systemctl enable wl-app # set enable, service sẽ tự khởi động cùng hệ thống (mất điện, sập server)
 systemctl start wl-app
 systemctl status wl-app
 
