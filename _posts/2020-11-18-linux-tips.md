@@ -112,7 +112,7 @@ sudo systemctl status nginx.service
 ```
 
 # Lỗi bất cập
-## lỗi page admin: kg đăng nhập được user admin khi sử dụng MongoDb:
+## lỗi page admin: không đăng nhập được user admin khi sử dụng MongoDb backend:
 
 Vẫn tạo superuser "root" như bình thường nhưng vẫn lỗi có thể là do
 
