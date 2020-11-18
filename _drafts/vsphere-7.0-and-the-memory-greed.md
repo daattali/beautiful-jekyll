@@ -1,0 +1,37 @@
+---
+layout: post
+title: vSphere 7.0 and the memory greed
+DATE: 
+
+---
+As I was fooling around with esxcli in my lab I decided to upgrade a 6.7u3 host to 7.0u1. Not that it is a simple vSphere host in workstation to which I allocated a mere 4GB of RAM because I only needed the minimum. I connected the ISO, upgraded, no problem. Then I went on to patch vSphere 7.0 with esxcli and was greeted with :
+
+> Error: Unknown command or namespace software install
+
+Strange. I tried running just "esxcli" and got the following output. Wait what?
+
+![](/img/vsphere7memorygreed.JPG)
+
+At this point I'm wondering how on earth I managed to screw up the most common vSphere upgrade path ever. I looked into _vmkernel.log_ and found truckloads of these records:
+
+> 2020-11-18T11:35:44.431Z cpu3:68620)UserWorld 'vim-cmd' with cmdline '/bin/vim-cmd -U root -c /etc/vmware/hostd/config.xml hostsvc/autostartmanager/autostart'
+>
+> 2020-11-18T11:35:44.431Z cpu3:68620)uw.68620 (18832) extraMin/extraFromParent: 256/256, host (0) childEmin/eMinLimit: 1043298/1043298
+>
+> 2020-11-18T11:35:44.431Z cpu3:68620)User: 3201: vim-cmd: wantCoreDump:vim-cmd signal:6 exitCode:0 coredump:disabled
+>
+> 2020-11-18T11:35:47.848Z cpu0:68626)Admission failure in path: host:vim:vmvisor:boot:vim-cmd.68626:uw.68626
+>
+> 2020-11-18T11:35:47.848Z cpu0:68626)UserWorld 'vim-cmd' with cmdline '/bin/vim-cmd -U root -c /etc/vmware/hostd/config.xml hostsvc/autostartmanager/autostart'
+>
+> 2020-11-18T11:35:47.848Z cpu0:68626)uw.68626 (18877) extraMin/extraFromParent: 50/50, host (0) childEmin/eMinLimit: 1043298/1043298
+>
+> 2020-11-18T11:35:47.848Z cpu0:68626)Admission failure in path: host:vim:vmvisor:boot:vim-cmd.68626:uw.68626
+
+After a quick googling I found [KB74527](https://kb.vmware.com/s/article/74527) which is not identical but similar "Admission failure in path: nicmgmtd/nicmgmtd". The identified cause relates to a lack of memory:
+
+> This issue occurs because the process nicmgmtd runs out of memory and is not able to fulfill the requests.
+
+Sure enough, when I changed my ESXi VM from 4GB to 8GB everything was back to normal.
+
+**Bottom line**: vSphere 7.0 is hungrier than 6.x in terms of memory... Maybe consider this and run some tests before upgrading your production environment to 7.0 if you don't have much legroom in the resources department.
