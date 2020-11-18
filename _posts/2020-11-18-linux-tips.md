@@ -121,6 +121,6 @@ query thử collection db.auth_user, xem có trường 'id' chưa, nếu chưa c
 
 ```bash
 db.auth_user.updateOne({"username" : "root"}, {$set:{'id': NumberInt(1)}})
-```bash
+```
 
 
