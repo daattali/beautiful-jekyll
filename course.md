@@ -9,7 +9,7 @@ share-img: ''
 post: ''
 
 ---
-_The Simplify Your Life At Home: a course for busy moms_ is a six week interactive course.
+_The Simplify Your Home Life: a course for busy moms_ is a six week interactive course.
 
 **Closed October 26th. Round 2 coming in early 2021. Signup below to get on the waitlist.**
 
@@ -17,13 +17,11 @@ _The Simplify Your Life At Home: a course for busy moms_ is a six week interacti
 
 This is NOT a one size fits all course. It’s also not a one-time solution course as I believe that life is a LIFELONG process of learning and growing. I will promise you, however, that this course will be packed with things you can learn and grow with today and going forward. There will be some things that stick and make you think, some things that may not apply, but you’ll still be able to learn from them.
 
-I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the Simplify Your Life At Home: a course for busy moms. I’m so happy to have you here to check this course out to see if it would be good for you!
+I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the Simplify Your Home Life: a course for busy moms. I’m so happy to have you here to check this course out to see if it would be good for you!
 
-![An image of the course title with a wreath around it.](/uploads/20201006_142440_0000_compress75.jpg "courseimage")
+![An image of the course. ](/uploads/20201118_113322_0000_compress56.jpg "courseimage ")
 
-## SIMPLIFY and MINIMIZE. MAKE YOUR HOME + MOM LIFE SIMPLER TO MANAGE.
-
-##### Overview of the units (*may be tweaked slightly before the launch):
+##### Overview of the units:
 
 **SETTING THE STAGE**  
 Unit Discovering your priorities + values  
