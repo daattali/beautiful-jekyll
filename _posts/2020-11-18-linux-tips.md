@@ -6,7 +6,7 @@ tag: [other, linux, devops]
 ---
 
 
-Code chán rồi thì ta qua làm Devops luôn nhé. Bài này sẽ nói về sau khi ta code Django, Flask chán chê rồi thì làm sao đưa nó lên production nhé.
+Code chán rồi thì ta qua làm Devops luôn nhé. Bài này sẽ nói về sau khi ta code Django, Flask chán chê rồi thì làm sao đưa nó lên production.
 
 Nói chung cái flow sẽ như thế này, tài liệu nhiều lắm ở đây chúng ta sẽ không lam man mà tập trung vào 1 số vấn dề quan trọng trong quá trình setup: 
 
