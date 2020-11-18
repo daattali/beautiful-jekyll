@@ -20,10 +20,10 @@ subtitle: ''
 
 ## Courses
 
-* MY FIRST COURSE! It's CLOSED currently, with a new round coming next year (email me at simplehomemom@gmail.com if you'd like to get on the waitlist): [_The Simplify Your Life At Home: a course for busy moms_](http://kellymbriggs.github.io/course)
+* MY FIRST COURSE! It's CLOSED currently, with a new round coming next year (email me at simplehomemom@gmail.com if you'd like to get on the waitlist): [_Simplify Your Home Life: a course for busy moms_](http://kellymbriggs.github.io/course)
 
-  ![](/uploads/20201006_142440_0000_compress75.jpg)
-* Simplify your Instagram: A course I took recently that I LOVE. Erica gives it to you straight. I really enjoy how she lays things out for simply and doesn’t hold anything back: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq)
+  ![Image of course.](/uploads/20201118_113322_0000_compress56.jpg "courseimage")
+  * Simplify your Instagram: A course I took recently that I LOVE. Erica gives it to you straight. I really enjoy how she lays things out for simply and doesn’t hold anything back: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq)
 
 ## Other
 
