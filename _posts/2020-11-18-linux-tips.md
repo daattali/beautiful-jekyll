@@ -105,4 +105,22 @@ server {
 }
 ``` 
 
+```bash
+sudo systemctl enable nginx.service
+sudo systemctl start nginx.service
+sudo systemctl status nginx.service
+```
+
+# Lỗi bất cập
+## lỗi page admin: kg đăng nhập được user admin khi sử dụng MongoDb:
+
+Vẫn tạo superuser "root" như bình thường nhưng vẫn lỗi có thể là do
+
+*trong collection auth_user thiếu trường id, cần thêm vào ở dạng NumberInt* 
+query thử collection db.auth_user, xem có trường 'id' chưa, nếu chưa có thì thêm vào:
+
+```bash
+db.auth_user.updateOne({"username" : "root"}, {$set:{'id': NumberInt(1)}})
+```bash
+
 
