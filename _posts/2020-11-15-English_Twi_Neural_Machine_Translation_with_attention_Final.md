@@ -1240,3 +1240,6 @@ translate(u' eyi haw me papa . ')
 
 ![png](/img/EnglishToTwiTranslation/output_62_3.png)
 
+
+The results from the translation model does not look very good since we are using a very small subest of the dataset. To improve the performance we would need to train on a lot 
+more data. The idea behind this post is to illustrate how neural machine translation is used in language tranlsation applications. The set up here works if you have access to more computational resources and would be  able to train on a larger dataset. 
