@@ -16,8 +16,20 @@ Nói chung cái flow sẽ như thế này, tài liệu nhiều lắm ở đây c
 
 # step 1 : setup gunicorn.service
 
-*nếu là dự án django thì phải collectstatic*
+### chạy thử  gunicorn
 
+*flask*
+```cmd
+gunicorn --bind 0.0.0.0:8001 wsgi
+```
+*django*
+```cmd
+gunicorn --bind 0.0.0.0:8001 Wl_app_01.wsgi
+```
+
+### gunicorn.service:
+
+*nếu là dự án django thì phải collectstatic*
 *trong setting.py :*
 ```python 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
