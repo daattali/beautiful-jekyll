@@ -3,7 +3,7 @@ layout: post
 title: How to Use Strengths to Assign Family Chores
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/book-1966235_640.jpg"
+thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
 share-img: ''
 tags:
 - Family chores
