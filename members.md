@@ -29,7 +29,7 @@ members:
             web_url: https://www.thomasweng.com
           - name: Wenxuan Zhou
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/07/zhou_wenxuan_2019_1.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/wenxuan-zhou/
+            web_url: https://wenxuan-zhou.github.io/
           - name: Ben Eisner
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/07/Eisner_Benjamin_2020.png
             web_url: http://beisner.me/
