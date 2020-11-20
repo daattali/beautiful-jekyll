@@ -37,10 +37,10 @@ members:
         full: true
         list:
           - name: Himangi Mittal (MSCV)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/himangi.jpeg
             web_url: https://www.ri.cmu.edu/ri-people/himangi-mittal/
           - name: Jianren Wang (MSR)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/jianren.jpeg
             web_url: https://jianrenw.github.io/
           - name: Sujay Bajrachaya (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/08/bajracharya_sujay_2019_2.jpg
@@ -49,7 +49,7 @@ members:
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/08/gu_qiao_2019_1.jpg
             web_url: https://georgegu1997.github.io/
           - name: Gautham Narayan Narasimhan (MS MechE)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/gautham.jpeg
             web_url: https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/
           - name: Harshit Sikchi (MSCS)
             photo_url: /img/members/harshit.jpeg
@@ -58,7 +58,7 @@ members:
             photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
             web_url: https://yufeiwang63.github.io/
           - name: Gaurav Pathak (MSR)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/Gaurav.jpg
             web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
           - name: Ji Liu (MSCV)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/07/liu_ji_2019_2.jpg
@@ -79,9 +79,10 @@ members:
             photo_url: /img/members/gu_yi_2019.jpg
             web_url: https://www.ri.cmu.edu/ri-people/yi-gu/
       - name: Undergraduate Students
-        full: false
+        full: true
         list:
           - name: Rashmi Anil
+            photo_url: /img/members/ranil.png
       #- name: Visiting Students
       #  full: false
        # list:
