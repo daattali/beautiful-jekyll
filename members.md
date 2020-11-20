@@ -29,7 +29,7 @@ members:
             web_url: https://www.thomasweng.com
           - name: Wenxuan Zhou
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/07/zhou_wenxuan_2019_1.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/wenxuan-zhou/
+            web_url: https://wenxuan-zhou.github.io/
           - name: Ben Eisner
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/07/Eisner_Benjamin_2020.png
             web_url: http://beisner.me/
@@ -47,7 +47,7 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/sujay-bajracharya/
           - name: Qiao Gu (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/08/gu_qiao_2019_1.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/qiao-gu/
+            web_url: https://georgegu1997.github.io/
           - name: Gautham Narayan Narasimhan (MS MechE)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/
@@ -75,6 +75,9 @@ members:
           - name: Chuer Pan (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/08/pan_chu-er_2020.jpg
             web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
+          - name: Yi Gu (MRSD)
+            photo_url: /img/members/gu_yi_2019.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/yi-gu/
       - name: Undergraduate Students
         full: false
         list:

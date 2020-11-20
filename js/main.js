@@ -138,3 +138,15 @@ var main = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', main.init);
+
+
+function copy(dest, source) {
+  if(dest.source == source) {
+    dest.innerHTML = "";
+    dest.source = null;
+  } else {
+    dest.innerHTML = source.innerHTML;
+    dest.source = source;
+  }
+  dest.blur();
+}
