@@ -26,10 +26,10 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 2-Nov		| Fractions				| [2015 AMC 8](https://artofproblemsolving.com/wiki/index.php/2015_AMC_8_Problems) | |
 | 9-Nov		| Area					| _No school_ | |
 | 16-Nov	| Patterns				| _Cancelled_ | |
-| 23-Nov	| Work					| | _No school_ |
-| 30-Nov	| Similarity			| | |
-| 7-Dec		| Logic					| | |
-| 14-Dec	| Counting				| | |
+| 23-Nov	| Work					| 2017 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iTmtVRFV6LTJEbWs) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iYjZIVGprcmdDQ0E) | _No school_ |
+| 30-Nov	| Similarity			| 2016 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-ic0hBV2VNOGhCa3M) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-ialoyLTc3NVlYc3M) | |
+| 7-Dec		| Logic					| 2015 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-id0RIZUJrOWRIOE0) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iRU9JRVBRQU1LMVU) | |
+| 14-Dec	| Counting				| 2014 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iMEdDNm05TWVMY0k) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iRVlPVGtjZlVwS2c) | |
 | 4-Jan		| Coordinate Geometry	| | |
 | 11-Jan	| Pascal's Triangle		| | |
 | 18-Jan	| _No school_			| | _Mathcounts_ |
