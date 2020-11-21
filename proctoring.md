@@ -4,7 +4,10 @@ title: Proctor Instructions
 subtitle: Proctoring coaching sessions in Microsoft Teams
 ---
 
-For general information about proctoring, please see [this page](/parents).
+For general information about proctoring, please see [this page](/parents). The steps and screenshots below are from the Microsoft Teams client.
+The process may vary slightly if you use the browser interface.
+
+1. Make sure you can access [our portal](https://rmsptsa.sharepoint.com/sites/MathClub) well ahead of the session. If not, see [this page](/portal) to learn how to set up your Microsoft account.
 
 1. Arrive in <a href="https://teams.microsoft.com/l/channel/19%3a732a7f9358af4a37affd3f56a592fbee%40thread.tacv2/General?groupId=1820c33d-ed0b-4685-9f38-c1b24c841dad&tenantId=f2d61132-f6d6-42d2-b97f-caa2960fb0f7" target="_blank">our Microsoft Teams channel</a> by 2:45PM.
 

@@ -22,3 +22,4 @@ use-site-title: true
 - <a href="/schedule">Coaching session homework and schedule</a>
 - <a href="/competitions">Competition schedule</a>
 - <a href="/sessions">About coaching sessions</a>
+- <a href="/portal">Accessing the PTSA portal and Microsoft Teams</a>
