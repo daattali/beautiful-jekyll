@@ -25,4 +25,4 @@ account referenced above, after which you should be able to access our docs and 
 the guest provisioning process. If you try to go directly to a document link before the provisioning process completes for the first time, it may give you an unhelpful login error.
 Once you're able to get to the portal page, you should be able to access resources using direct links moving forward.
 
-If you would like to access the portal through a different email address, please (let us know)[mathclubchair@rmsptsa.org].
+If you would like to access the portal through a different email address, please [let us know](mailto:mathclubchair@rmsptsa.org).
