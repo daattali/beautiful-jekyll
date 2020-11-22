@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Background
-subtitle: Machine/Statistical Learning, NLP, Deep Learning, Quantitative Finance 
+subtitle: Machine/Statistical Learning, NLP,Computer Vision, Quantitative Finance 
 ---
 
 My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scientist:
