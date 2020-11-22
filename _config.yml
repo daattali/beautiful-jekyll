@@ -39,13 +39,13 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "soujanya.chan@gmail.com"
-#   facebook: deanattali
   github: soujanyachan
+  linkedin: https://www.linkedin.com/in/soujanya-chandrashekar/
 #   twitter: daattali
 #   patreon: DeanAttali
 #   youtube: c/daattali
 #  reddit: yourname
- linkedin: https://www.linkedin.com/in/soujanya-chandrashekar/
+#   facebook: deanattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -196,16 +196,14 @@ kramdown:
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
+  - scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
