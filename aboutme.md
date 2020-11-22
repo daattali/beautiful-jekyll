@@ -16,7 +16,7 @@ My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scienti
 
 
 ###  Programming Languages: 
--  R, Matlab, Python, C++, Octave, SAS, Stata
+-  R, Matlab, Python,Julia,Scala, C++, Octave, SAS, Stata
 
 
 ###   My History 
