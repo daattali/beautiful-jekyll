@@ -1,10 +1,10 @@
-----
+---
 layout: post
 title: How to do stratified splitting of Multi-class Multi-labeled image classification data
 subtitle: Complete with code and unit tests.
 tags: [code]
 comments: true
-----
+---
 
 I saw a [post on StackOverflow](https://stackoverflow.com/questions/64838108/multi-labeled-image-classification-with-imbalanced-data-how-to-split-it) about how to do stratified sampling with multi-class, multi-label image data. Stratified sampling is imporant when you have extremely unbalanced machine learning datasets to ensure that each class is evenly distributed across your train/test/validation splits.
 
