@@ -1,12 +1,17 @@
----
-layout: post
-title: How to do stratified splitting of Multi-class Multi-labeled image classification data
-subtitle: Complete with code and unit tests.
-tags: [code]
-comments: true
----
+----
+-layout: post
+-title: How to do stratified splitting of Multi-class Multi-labeled image classification data
+-subtitle: Complete with code and unit tests.
+-tags: [code]
+-comments: true
+----
 
-I saw a [post on StackOverflow](https://stackoverflow.com/questions/64838108/multi-labeled-image-classification-with-imbalanced-data-how-to-split-it) about how to do stratified sampling with multi-class, multi-label image data. I had some code which solves this exact problem, so I am making this available here as-is.
+I saw a [post on StackOverflow](https://stackoverflow.com/questions/64838108/multi-labeled-image-classification-with-imbalanced-data-how-to-split-it) about how to do stratified sampling with multi-class, multi-label image data. Stratified sampling is imporant when you have extremely unbalanced machine learning datasets to ensure that each class is evenly distributed across your train/test/validation splits.
+
+Here's a handy visual for stratified sampling from Wikipedia:
+![Stratified Sampling example. Source: Wikipedia](https://upload.wikimedia.org/wikipedia/commons/f/fa/Stratified_sampling.PNG)
+
+I had some code which solves this exact problem, so I am making this available here as-is.
 
 The solution depends on `skmultilearn`'s `IterativeStratification` method. Unfortunately, `skmultilearn` is not very well maintained and I ran into a few sharp corners while coming up with this solution. I documented those sharp corners in the comments below.
 
@@ -352,5 +357,6 @@ ipytest.run()
     7 passed, 1 warning in 0.15s
 
 
+# Conclusion
 
-If you found this useful, feel free to upvote the linked StackOverflow question.
+If you found this helpful, feel free to upvote my answer for the [original question](https://stackoverflow.com/questions/64838108/multi-labeled-image-classification-with-imbalanced-data-how-to-split-it). Also, if you have suggestions please let me know!
