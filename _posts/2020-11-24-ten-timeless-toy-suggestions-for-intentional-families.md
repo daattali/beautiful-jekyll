@@ -6,9 +6,9 @@ cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/unnamed-1.jpg"
 share-img: ''
 tags:
-- Family chores
-- Chores for children
-- family strengths
+- minimalist toys
+- simple toys
+- timeless toys
 
 ---
 Timeless toys.  I started decluttering about four years ago and out the door went so many toys that were broken or unused. Going forward, I knew for our kids that we needed to keep and bring in what would be very intentional for them vs. just filling up a space or checking off a box. Today on the blog, I'm sharing about ten timeless toys for intentional families.
