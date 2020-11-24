@@ -53,9 +53,11 @@ What product(s) would you like to receive from our students, and what (in genera
 
 ### Legal info
 
-Outline the gist of the legalities you intend to have in place, if any -- particularly on how secretive you anticipate the students to be with the data and their finished data product. The key here is to just put the main ideas here, not an actual legal document (we'll address that later).
+Please indicate "yes" or "no" as to whether students will need to sign any sort of legal documents.
 
-We understand that you may require some restrictions to be put in place, but we also would like for our students to have some freedom to talk about the work they've done when applying for jobs. We want our students to know about these restrictions up-front so that they can make an informed decision about the project. In the proposal, please be as concrete as possible: do you anticipate students will be able to open-source the code they write? Publish a blog post about their work? Discuss it in a private job interview? 
+If "yes", outline the gist of the legalities you intend to have in place - particularly on how secretive you anticipate the students to be with the data and their finished data product. The key here is to just put the main ideas here, not an actual legal document (we'll address that later).
+
+We understand that you may require some restrictions to be put in place, but we also would like for our students to have some freedom to talk about the work they've done when applying for jobs. We want our students to know about these restrictions up-front so that they can make an informed decision about the project. In the proposal, please be as concrete as possible: do you anticipate students will be able to open-source the code they write? Publish a blog post about their work? Discuss it in a private job interview?
 
 This section should also include any other requirements of students participating in the project, like background checks, etc.
 
