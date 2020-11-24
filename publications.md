@@ -30,7 +30,7 @@ The collection of my research work that I have done till date. Profile [Research
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Md. Rafiuzzaman Bhuiyan, Sharun Akter Khushbu, Md. Sanzidul Islam_ 
-- **Link:** https://ieeexplore.ieee.org/document/9225384
+- **Link:** [Click here](https://ieeexplore.ieee.org/document/9225384)
 <details>
   <summary>Abstract</summary>
   <p>Computer vision learning pay a high attention due to global pandemic COVID-19 to enhance public health service. During the fatality, tiny object detection is a more challenging task of computer vision, as it recruits the pair of classification and detection beneath of video illustration. Compared to other
@@ -53,7 +53,7 @@ has 96% classification and detection accuracy.
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Md. Rafiuzzaman Bhuiyan, Abu Kaisar Mohammad Masum, Md. Abdullahil- Oaphy, Syed Akhter Hossain, Sheikh Abujar_
-- **Link:** https://ieeexplore.ieee.org/document/9225264
+- **Link:** [Click here](https://ieeexplore.ieee.org/document/9225264)
 
 ***
 
@@ -62,7 +62,7 @@ has 96% classification and detection accuracy.
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Md. Rafiuzzaman Bhuiyan, Mahmudul Hasan Mahedi, Naimul Hossain, Zerin Nasrin Tumpa, Syed Akhter Hossain_
-- **Link:** https://ieeexplore.ieee.org/document/9225637
+- **Link:** [Click here](https://ieeexplore.ieee.org/document/9225637)
 
 ***
 
@@ -93,7 +93,7 @@ has 96% classification and detection accuracy.
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Md. Sabbir Alam Pran, Md. Rafiuzzaman Bhuiyan, Syed Akhter Hossain, Sheikh Abujar_
-- **Link:** https://ieeexplore.ieee.org/document/9225500
+- **Link:** [Click here](https://ieeexplore.ieee.org/document/9225500)
 
 ***
 
@@ -102,7 +102,7 @@ has 96% classification and detection accuracy.
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Naimul Hossain, Md. Rafiuzzaman Bhuiyan, Zerin Nasrin Tumpa, Syed Akhter Hossain_
-- **Link:** https://ieeexplore.ieee.org/document/9225328
+- **Link:** [Click here](https://ieeexplore.ieee.org/document/9225328)
 
 ***
 
