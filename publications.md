@@ -4,7 +4,8 @@ title: Publications
 subtitle: Things that i Love to do
 ---
 
-The collection of my research work that I have done till date.
+The collection of my research work that I have done till date. Profile [ResearchGate](https://www.researchgate.net/profile/Md_Bhuiyan52) [IEEE](https://ieeexplore.ieee.org/author/37088532848) [dblp](https://dblp.org/pid/276/8741.html) [Google scholar](https://scholar.google.com/citations?user=vKbKsA8AAAAJ&hl=en)
+[Microsoft Academic](https://academic.microsoft.com/author/3094476699/publication/search?q=Md.%20Rafiuzzaman%20Bhuiyan&qe=Composite(AA.AuId%253D3094476699)&f=&orderBy=0&paperId=3093818734)
 
 *“**Success** is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.” - **Pele** (Brazilian footballer).*
 
@@ -29,7 +30,7 @@ The collection of my research work that I have done till date.
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Md. Rafiuzzaman Bhuiyan, Sharun Akter Khushbu, Md. Sanzidul Islam_ 
-- **Link:** when online 
+- **Link:** https://ieeexplore.ieee.org/document/9225384
 <details>
   <summary>Abstract</summary>
   <p>Computer vision learning pay a high attention due to global pandemic COVID-19 to enhance public health service. During the fatality, tiny object detection is a more challenging task of computer vision, as it recruits the pair of classification and detection beneath of video illustration. Compared to other
@@ -52,10 +53,7 @@ has 96% classification and detection accuracy.
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Md. Rafiuzzaman Bhuiyan, Abu Kaisar Mohammad Masum, Md. Abdullahil- Oaphy, Syed Akhter Hossain, Sheikh Abujar_
-- **Link:** when online 
-<p align='center'>
-<img src="https://user-images.githubusercontent.com/35966401/88454619-b70f4600-ce92-11ea-85ca-c57c97079db2.png" alt=" " width="600" height="400">
-</p>
+- **Link:** https://ieeexplore.ieee.org/document/9225264
 
 ***
 
@@ -64,7 +62,7 @@ has 96% classification and detection accuracy.
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Md. Rafiuzzaman Bhuiyan, Mahmudul Hasan Mahedi, Naimul Hossain, Zerin Nasrin Tumpa, Syed Akhter Hossain_
-- **Link:** when online 
+- **Link:** https://ieeexplore.ieee.org/document/9225637
 
 ***
 
@@ -95,7 +93,7 @@ has 96% classification and detection accuracy.
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Md. Sabbir Alam Pran, Md. Rafiuzzaman Bhuiyan, Syed Akhter Hossain, Sheikh Abujar_
-- **Link:** when online 
+- **Link:** https://ieeexplore.ieee.org/document/9225500
 
 ***
 
@@ -104,7 +102,7 @@ has 96% classification and detection accuracy.
 - **Publisher:** IEEE Xplorer
 - **Publication Year:** 2020
 - **Authors:** _Naimul Hossain, Md. Rafiuzzaman Bhuiyan, Zerin Nasrin Tumpa, Syed Akhter Hossain_
-- **Link:** when online 
+- **Link:** https://ieeexplore.ieee.org/document/9225328
 
 ***
 
