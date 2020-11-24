@@ -12,7 +12,7 @@ The projects that I need to share.
 ### 1. Face Match api
 
 An api provides compares faces with my faces & return a meaningful response.
-Live demo : https://face-match-api.herokuapp.com
+Live demo : [api](https://face-match-api.herokuapp.com)
 
 ***
 
