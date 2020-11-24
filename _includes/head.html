@@ -4,19 +4,19 @@
 
   {% capture title %}
     {%- if page.share-title -%}
-      {{ page.share-title }}
+      {{ page.share-title | strip_html | xml_escape }}
     {%- elsif page.title -%}
-      {{ page.title }}
+      {{ page.title | strip_html | xml_escape  }}
     {%- else -%}
-      {{ site.title }}
+      {{ site.title | strip_html | xml_escape }}
     {%- endif -%}
   {% endcapture %}
 
   {% capture description %}
     {%- if page.share-description -%}
-      {{ page.share-description }}
+      {{ page.share-description | strip_html | xml_escape }}
     {%- elsif page.subtitle -%}
-      {{ page.subtitle }}
+      {{ page.subtitle | strip_html | xml_escape }}
     {%- else -%}
       {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
       {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
