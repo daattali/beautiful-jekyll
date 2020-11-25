@@ -5,29 +5,17 @@ subtitle: ''
 published: false
 
 ---
-## The best of the best
+# What is the Simple Capsule Wardrobe Guide?
 
-* [Latest blogs](http://kellymbriggs.github.io/)
-* [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
-* [Weekly newsletter/freebie Friday](http://eepurl.com/gYFb-r)
+Does your wardrobe speak to your life right now? Does it take more effort to think about what you want to wear or do you just have too many choices and you'd like to simplify? If these are questions you are asking yourself, this guide is for you.
 
-## Products
+Have you heard of [a capsule wardrobe](https://en.wikipedia.org/wiki/Capsule_wardrobe) before? After doing a ton of research on them a few years back, I found out that there are many ways to do them and I found it very overwhelming to figure it all out. Which do I pick? What rules do I use? What steps do I take? I'm going to simplify the process for you - to give you the most important steps. Sound like a plan?
 
-* Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I love, use, and/or recommend from Amazon!
+So if you are not sure where to start (or continue) because you're confused about what to do, then this guide is for you too. it's a complete, but open-ended flexible guide to help you along the journey. I hope you enjoy it and make your way to a capsule wardrobe... simplified. Tailored just for you!
 
-![A picture of me looking in the mirror.](/uploads/20200606_151056_0000-1.png "mirrorpic")
-
-* SO excited to partner with [Knix](https://prf.hn/click/camref:1101leRdT). I have had one of their bras for a few years now and am in love. It still looks brand new and is the comfiest bra I've ever owned. I value high quality + pieces that will last a long, long time so feel comfortable partnering with them. I have plans to add their [shelf tank](https://prf.hn/click/camref:1101leRdT) to my capsule wardrobe soon too and can't wait to share about it. You can also receive $10 off your first order with the code **knix10**.
-
-## Courses
-
-* MY FIRST COURSE! It's CLOSED currently, with a new round coming next year (email me at simplehomemom@gmail.com if you'd like to get on the waitlist): [_Simplify Your Home Life: a course for busy moms_](http://kellymbriggs.github.io/course)
-
-  ![Image of course.](/uploads/20201118_113322_0000_compress56.jpg "courseimage")
-  * Simplify your Instagram: A course I took recently that I LOVE. Erica gives it to you straight. I really enjoy how she lays things out for simply and doesn’t hold anything back: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq)
-
-## Other
-
-* Looking for simple online work? Start [here](https://forms.gle/v11JEewD81mxsUyf6).
-
-_All links above are my affiliate links, which means I’d make a small % if you decided to purchase at no change in price to you. Thank you!_
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="GH2ZJXKHGTM2U">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
