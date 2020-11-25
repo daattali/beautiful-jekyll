@@ -19,5 +19,3 @@ When the time comes, the main content of the event will be streamed over at Yout
 * Twitch: We don't have it yet
 * Should we be somewhere on the internet that we aren't currently? Suggest it to us on twitter or head on over to the [contact](/contact) page to send us an email.
 * [Telegram: FurSquared](https://t.me/fursquaredchat)
-
-## blah blah blah
