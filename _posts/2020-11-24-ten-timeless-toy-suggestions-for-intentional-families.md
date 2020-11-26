@@ -27,8 +27,7 @@ Timeless toys.  I started decluttering about four years ago and out the door wen
 
 There is no right or wrong way to go about toys, but just to look at your own children and see what they use and love the most. Bonus points if they can be saved and passed on to friends or future grandchildren!
 
-  
-_I linked what I could above under minimalist toys in my Amazon shop too if you'd like to check them out._ [_Amazon US_](www.amazon.com/shop/eastcoastkelly) _and_ [_Amazon Canada_](www.amazon.ca/shop/eastcoastkelly)_._
+_I linked what I could above under minimalist toys in my Amazon shop too if you'd like to check them out._ [_Amazon US_](https://www.amazon.com/shop/eastcoastkelly) _and_ [_Amazon Canada_](https://www.amazon.ca/shop/eastcoastkelly)_._
 
 ![A picture of wooden toys.](/uploads/unnamed-1.jpg "toyskids")
 
