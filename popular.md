@@ -6,6 +6,7 @@ subtitle: ''
 ---
 ## The best of the best
 
+* [COUNTDOWN TO CHRISTMAS HOME CHALLENGE FREEBIBE](https://mailchi.mp/8d987a566c22/christmashomechallenge) 
 * [Latest blogs](http://kellymbriggs.github.io/)
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
 * [Weekly newsletter/freebie Friday](http://eepurl.com/gYFb-r)
