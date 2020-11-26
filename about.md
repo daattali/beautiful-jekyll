@@ -8,7 +8,7 @@ Fur Squared is a furry convention typically held in Brookfield, WI in February.&
 
 ### Q: Will there be a Fur Squared in 2021?
 
-Yes\! Fur Squared 2021 will be happening on February 26th-28th in a new, completely virtual format. **(DO NOT SHOW UP AT THE HOTEL\!)**
+Yes\! Fur Squared 2021 will be happening on February 26th-28th in a new and completely virtual format. **(DO NOT SHOW UP AT THE HOTEL\!)**
 
 ### Q: Why is Fur Squared virtual?
 
