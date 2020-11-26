@@ -5,7 +5,12 @@ subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/unnamed-2.jpg"
 share-img: ''
-tags: []
+tags:
+- tidying up with kids
+- living room tidying tips
+- tidying tips
+- organizing tips
+- organizing tips with kids
 
 ---
 Is your living room an explosion more often than not? I’m going to be honest and upfront here. This is a work in progress for our homeschooling family of six (our oldest is almost ten, youngest being 1.5). Today on the blog, I’m sharing with you four ideas to go from living room explosions to tidier floors (for busy families). And maybe one of them is your solution to the explosive living room too.  
