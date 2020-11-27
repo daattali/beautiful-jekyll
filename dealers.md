@@ -6,14 +6,14 @@ subtitle: How we're helping you during our virtual event
 
 # Dealer's Den & Artist Alley
 
-We are super excited about some of the ideas we have planned for our virtual dealer's den and artist alley this year\!
+Fur Squared has gone digital for 2021, and with this transition comes a new approach to the way we present dealers and artists! We plan to provide an organized list of artists and dealers that includes a short description of each business, links to their online platforms and stores, and examples of the types of products offered. 
 
-We are looking into specifics such as an online marketplace as well as advertising opportunities that will play throughout the main and our multi-multi-multi-stream.
+In addition to the directory, we will be hosting an Artists & Dealers' stream that will operate the entire run of the convention, dedicated to showcasing offerings from the dealers and artists, and hosting what we're affectionately calling the "multi-multi-multi-stream".  For this, we will be asking for dealers to send us information, photos, and sample products for our presenters to help promote, as well as looking for any on screen help, such as live interviews, Q and A's, and tutorials.
 
-Dealers and Artists are the backbone of any great convention and we want to make sure we maintain the high level of care we always place into this particular part of the con. A virtual convention is an entirely new endeavor for us and for the organization as a whole. So we ask for your patience during this time as we figure out the best course of action forward.
+We recognize that virtual platforms present unique difficulties when directing traffic and we are taking steps to provide equivalent visibility to applicants. Since operating Fur Squared virtually is a first for all of us, we would appreciate your feedback and patience as we plan around this new platform. We have a lot of ideas that are taking shape that we are very excited to share with you when they are ready. Due to the nature of an online event, we are committing ourselves this year more than ever to prompt and ongoing communication with you, our valued dealers, to ensure a smooth convention experience.
 
-For those looking to sign up to our virtual Dealers Den please use the following form: [https://bit.ly/F2-2021\_Dealer-Den-Application](https://bit.ly/F2-2021\_Dealer-Den-Application)
+If you have any feedback or inquiry about the application process or any other related topics, please contact us at [info@fursquared.com](mailto:info@fursquared.com).
 
-Artists looking to participate in our Virtual Artist Alley, please use the following form: [https://bit.ly/F2-2021\_Artist-Alley-Signup](https://bit.ly/F2-2021\_Artist-Alley-Signup)
+## [Click here for the Fur Squared 2021 Virtual Art & Dealer Form](https://docs.google.com/forms/d/1m_wfXagESRKXt7onfnJE88ZgzMazasVNnZDT8_wwS50/viewform)
 
-Expect more information soon as we work behind the scenes to put together this incredible virtual event\!
+Expect more information soon as we work behind the scenes to put together this incredible virtual event!
