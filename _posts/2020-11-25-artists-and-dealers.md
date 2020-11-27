@@ -10,7 +10,7 @@ tags:
 
 
 # We have an Art & Dealer stream application form!
-[Click here to apply to the Art & Dealer Stream](https://docs.google.com/forms/d/1m_wfXagESRKXt7onfnJE88ZgzMazasVNnZDT8_wwS50/viewform?edit_requested=true)
+[Click here to apply to the Art & Dealer Stream](https://docs.google.com/forms/d/1m_wfXagESRKXt7onfnJE88ZgzMazasVNnZDT8_wwS50/viewform)
 
 Please head over to [the Art & Dealers page](/dealers) to learn more!
 
