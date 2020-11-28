@@ -1,8 +1,11 @@
 ---
 layout: post
 title: 'Exemple de publication'
-published: false
+published: true
 ---
+
+
+On considèe l'équation $x^3+nx+1=0$.
 
 On propose dans cet article une preuve alternative du petit théorème de Fermat via des considérations combinatoires. On en profitera pour introduire la notion d'action de groupe, primordiale en théorie des groupes.
 
