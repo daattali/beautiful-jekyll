@@ -5,10 +5,10 @@ published: true
 ---
 
 
-Soit $n\in \N$.~On considère l'équation $x^3+nx-1=0$.
+Soit $n\in \dN$.~On considère l'équation $x^3+nx-1=0$.
 
 1. Pour tout entier naturel $n$,~on pose $f_n(x)=x^3+nx-1$.\\
-Démontrer que l'équation $f_n(x)=0$ admet dans $\R$ une unique solution.~On note $u_n$ cette solution.
+Démontrer que l'équation $f_n(x)=0$ admet dans $\dR$ une unique solution. On note $u_n$ cette solution.
 2. Justifier que $u_n\in [0\,;\,1]$.
 3. Démontrer que la suite $(u_n)$ est strictement décroissante.
 4. Justifier que la suite $(u_n)$ est convergente.
