@@ -5,7 +5,7 @@ published: true
 ---
 
 
-Soit $n\in \dN$. On considère l'équation $(E)$ d'inconnue $x$ : $(E)\quad : x^3+nx-1=0$.
+Soit $n\in \dN$. On considère l'équation $(E)$ d'inconnue $x$ : x^3+nx-1=0$.
 
 1. Pour tout entier naturel $n$, on pose $f_n(x)=x^3+nx-1$.\\
 Démontrer que l'équation $f_n(x)=0$ admet dans $\dR$ une unique solution notée $u_n$.
