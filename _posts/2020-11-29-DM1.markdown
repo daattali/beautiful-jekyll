@@ -1,12 +1,12 @@
 ---
 layout: post
 title: 'DM n°1'
-published: false
+published: true
 ---
 
 
 On considère l'équation $x^3+nx+1=0$.
 
-1. Démontrer que l'équation $f_n(x)=0$ admet une unique solution dans $[0;\infty[$.
+1. Démontrer que l'équation $f_n(x)=0$ admet une unique solution dans $[0;4].
 2. En déduire que 
 
