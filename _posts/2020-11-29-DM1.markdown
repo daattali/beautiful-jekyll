@@ -6,6 +6,7 @@ published: false
 
 
 On considère l'équation $x^3+nx+1=0$.
-ccccccccc cccccccccccccc
-cccccccccccc
+
+1. Démontrer que l'équation $f_n(x)=0$ admet une unique solution dans $[0;\infty[$.
+2. En déduire que 
 
