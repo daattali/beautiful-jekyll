@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'TMaths3/TMaths 6 : DM n°6'
-published: false
+title: 'TMaths 3/TMaths 6 : DM n°6'
+published: true
 ---
 
 
