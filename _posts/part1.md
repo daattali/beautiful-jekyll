@@ -2,7 +2,7 @@
 layout: post
 title: Manage the Application Portfolio
 subtitle: Understand the services and products your deliver to the business
-cover-img: /assets/img/path.jpg
+cover-img: /assets/img/download (23).png
 tags: [books, test]
 ---
 
