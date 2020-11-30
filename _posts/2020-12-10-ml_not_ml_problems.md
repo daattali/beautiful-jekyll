@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
+title: Not Everything is an ML problem
+subtitle: Think rwice before start
+gh-repo: aissaei/ml_problems
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [ml, problems, ai ]
 comments: true
 ---
 
