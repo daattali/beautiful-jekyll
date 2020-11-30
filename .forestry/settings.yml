@@ -9,7 +9,7 @@ sections:
   label: Pages
   create: documents
   match: "*.md"
-  exclude: README.md
+  exclude: "{README.md,CHANGELOG.md}"
 - type: directory
   path: _posts
   label: Blog posts
