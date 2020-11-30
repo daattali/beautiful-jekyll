@@ -1,16 +1,15 @@
 ---
 layout: page
 title: About Us
-subtitle: Why you'd want to go on a date with me
+subtitle: Things you need to know about us!
 ---
 
-![Amir's image](/assets/img/amir.png)
+![Amir's image](/assets/img/amir.png=100x20)
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+#### Amir Issaei
 
-What else do you need?
+- Head of Go-to-Market Data Science @ Databricks
+- Applied Scientist: Math + Tech
+- Enjoy reading about economics
+- Based in Dallas
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
