@@ -5,12 +5,21 @@ subtitle: Things you need to know about us!
 ---
 
 <!-- ![Amir's image](/assets/img/amir.png=100x20) -->
-<img src="/assets/img/amir.png" class="center" width="200" height="200">
+<img src="/assets/img/amir.png" class="center" width="400" height="400">
 
-#### Amir Issaei
+### Amir Issaei
 
-- Head of Go-to-Market Data Science @ Databricks
+- Lead Data Scientist @ Databricks
 - Applied Scientist: Math + Tech
 - Enjoy reading about economics
 - Based in Dallas
+
+<img src="/assets/img/amir.png" class="center" width="400" height="400">
+
+### Ben wilson
+
+- Practice Lead @ Databricks
+- TBD
+- TBD
+- TBD
 
