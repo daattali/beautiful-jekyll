@@ -16,7 +16,7 @@ subtitle: Things you need to know about us!
 
 <img src="/assets/img/ben.png" class="center" width="300" height="300">
 
-### Ben wilson
+### Ben Wilson
 
 - Practice Lead @ Databricks
 - TBD
