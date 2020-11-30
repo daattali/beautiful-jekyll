@@ -9,7 +9,7 @@ published: true
 
 # Tout le monde a déjà attendu parlé du "cloud", mais qu'est ce que c'est exactement ?
 
-Après avoir visionné la vidéo ci-dessous, répondez aux questions suivantes : 
+Après avoir visionné la <a href="https://www.youtube.com/watch?v=5YawCCUxa_E&feature=youtu.be">vidéo </a>, répondez aux questions suivantes : 
 
 - Qu'est-ce que le cloud ?
 - D'où vient le terme cloud ?
@@ -20,9 +20,3 @@ Après avoir visionné la vidéo ci-dessous, répondez aux questions suivantes :
 
 
 
-
-[![Audi R8](http://img.youtube.com/vi/K5YawCCUxa_E&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=5YawCCUxa_E&feature=youtu.be "Audi R8")
-
-
-
-[![Audi R8](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=KOxbO0EI4MA "Audi R8")
