@@ -16,10 +16,10 @@ author: Amir Issaei & Ben Wilson
 navbar-links:
   About Us: "aboutme"
   Mission : "missionstatement"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://randomlyordered.com"
+  # Resources:
+  #   - Beautiful Jekyll: "https://beautifuljekyll.com"
+  #   - Learn markdown: "https://www.markdowntutorial.com/"
+  # Author's home: "https://randomlyordered.com"
 
 # --- Logo --- #
 
