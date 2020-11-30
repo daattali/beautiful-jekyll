@@ -5,7 +5,7 @@ subtitle: Things you need to know about us!
 ---
 
 <!-- ![Amir's image](/assets/img/amir.png=100x20) -->
-<img src="/assets/img/amir.png" class="center" width="400" height="400">
+<img src="/assets/img/amir.png" class="center" width="300" height="300">
 
 ### Amir Issaei
 
@@ -14,7 +14,7 @@ subtitle: Things you need to know about us!
 - Enjoy reading about economics
 - Based in Dallas
 
-<img src="/assets/img/amir.png" class="center" width="400" height="400">
+<img src="/assets/img/ben.png" class="center" width="300" height="300">
 
 ### Ben wilson
 
