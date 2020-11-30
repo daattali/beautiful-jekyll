@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Not Everything is an ML problem
-subtitle: Think rwice before start
+subtitle: Think twice before start
 gh-repo: aissaei/ml_problems
 gh-badge: [star, fork, follow]
 tags: [ml, problems, ai ]
