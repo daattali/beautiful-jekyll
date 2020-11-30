@@ -23,11 +23,3 @@ fields:
 - type: file
   name: share-img
   label: share-img
-pages:
-- _posts/2020-08-20-where-and-how-to-start-decluttering-a-no-brainer-guide.md
-- _posts/2020-08-21-three-key-steps-to-maintaining-decluttering-sanity-with-kids.md
-- _posts/2020-08-24-six-ways-to-declutter-your-time.md
-- _posts/2020-08-25-how-this-one-phrase-can-help-remind-you-to-slow-down-declutter-your-life-and-home.md
-- _posts/2020-08-29-three-indoor-plants.md
-- _posts/2020-08-29-three-ways-to-take-breaks-parenting-with-your-partner.md
-- course.md
