@@ -14,7 +14,7 @@ author: Amir Issaei & Ben Wilson
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Us: "aboutus"
+  About Us: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
