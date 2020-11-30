@@ -7,7 +7,7 @@ published: true
 
 
 
-# Tout le monde a déjà attendu parlé du "cloud", mais qu'est ce que c'est exactement ?
+# Le Cloud
 
 Après avoir visionné la <a href="https://www.youtube.com/watch?v=5YawCCUxa_E&feature=youtu.be">vidéo </a>, répondez aux questions suivantes : 
 
@@ -18,5 +18,7 @@ Après avoir visionné la <a href="https://www.youtube.com/watch?v=5YawCCUxa_E&f
 
 
 
+# Principales causes de la consommation énérgétique des centres de données
 
+Après avoir visionné la <a href="https://www.youtube.com/watch?v=iiHxCX76bYU&feature=youtu.be">vidéo </a>, faites un inventaire des principales causes de la consommation énergétique des centres de données.
 
