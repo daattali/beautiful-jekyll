@@ -1,9 +1,7 @@
 ---
 layout: post
-title: Not Everything is an ML problem
-subtitle: Think twice before start
-gh-repo: aissaei/ml_problems
-gh-badge: [star, fork, follow]
+title: Philosophy
+subtitle: Ben and I are here
 tags: [ml, problems, ai ]
 comments: true
 ---
