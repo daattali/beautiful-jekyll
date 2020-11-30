@@ -7,8 +7,9 @@ sections:
 - type: directory
   path: ''
   label: Pages
-  create: all
-  match: "**/*"
+  create: documents
+  match: "*.md"
+  exclude: README.md
 - type: directory
   path: _posts
   label: Blog posts
