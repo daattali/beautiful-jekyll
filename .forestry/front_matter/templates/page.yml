@@ -13,3 +13,6 @@ fields:
 - type: text
   name: subtitle
   label: subtitle
+pages:
+- aboutme.md
+- contact.md
