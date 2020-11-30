@@ -5,7 +5,7 @@ subtitle: Things you need to know about us!
 ---
 
 <!-- ![Amir's image](/assets/img/amir.png=100x20) -->
-<img src="/assets/img/ben.jpeg" class="center" width="300" height="300">
+<img src="/assets/img/ben.png" class="center" width="300" height="300">
 
 ### Benjamin Wilson
 
