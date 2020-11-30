@@ -5,7 +5,7 @@ subtitle: Things you need to know about us!
 ---
 
 <!-- ![Amir's image](/assets/img/amir.png=100x20) -->
-<img src="/assets/img/amir.png" width="48">
+<img src="/assets/img/amir.png" width="200" height="200">
 
 #### Amir Issaei
 
