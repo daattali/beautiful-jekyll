@@ -3,7 +3,7 @@ layout: page
 tags: []
 title: Course
 subtitle: ''
-cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
+cover-img: ''
 thumbnail-img: ''
 share-img: ''
 post: ''
