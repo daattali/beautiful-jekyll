@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Us
-subtitle: Who are we?
+subtitle: Who are wee?
 ---
 
 <!-- ![Amir's image](/assets/img/amir.png=100x20) -->
