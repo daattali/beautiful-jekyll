@@ -3,7 +3,7 @@ post: post
 tags:
 - simple home tips
 readtime: true
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/20201201_140718_0000_compress26.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 show-avatar: true
 title: '3 Tips to Get Started on Simplifying Your Home Life '
