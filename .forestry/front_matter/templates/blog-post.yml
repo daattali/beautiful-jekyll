@@ -10,16 +10,21 @@ fields:
 - type: text
   name: title
   label: title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: subtitle
 - name: tags
   type: tag_list
   default: []
   label: tags
 - type: file
-  name: cover-img
-  label: cover-img
-- type: file
   name: thumbnail-img
   label: thumbnail-img
+- type: file
+  name: cover-img
+  label: cover-img
 - type: file
   name: share-img
   label: share-img
