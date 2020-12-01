@@ -35,6 +35,7 @@ fields:
 - type: file
   name: cover-img
   label: cover-img
+  default: "/uploads/20200822_110434_0000_compress19.jpg"
 - type: file
   name: share-img
   label: share-img
