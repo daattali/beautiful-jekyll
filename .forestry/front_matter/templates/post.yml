@@ -1,0 +1,28 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: text
+  name: gh-repo
+  label: gh-repo
+- type: list
+  name: gh-badge
+  label: gh-badge
+- type: list
+  name: tags
+  label: tags
+- type: boolean
+  name: comments
+  label: comments
+- type: file
+  name: thumbnail-img
+  label: thumbnail-img
