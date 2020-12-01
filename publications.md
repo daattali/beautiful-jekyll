@@ -10,7 +10,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/corl2020_softgym.png" img width="250">
         </td>
-        <td>SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation<br>
+        <td><a href="https://arxiv.org/abs/2011.07215">SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation</a><br>
             <div class="pubauthor">
                 Xingyu Lin, Yufei Wang, Jake Olkin, David Held<br>
             </div>
@@ -28,7 +28,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/corl2020_ROLL.jpg" img width="250">
         </td>
-        <td><a href="https://arxiv.org/abs/2011.06777">ROLL: Visual Self-Supervised Reinforcement Learning with Object Reasoning</a><br>
+        <td><a href="https://arxiv.org/abs/2011.06777">Visual Self-Supervised Reinforcement Learning with Object Reasoning</a><br>
             <div class="pubauthor">
                 Yufei Wang*, Gautham Narayan Narasimhan*, Xingyu Lin, Brian Okorn, David Held<br>
             </div>
@@ -59,9 +59,9 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/corl_logo.png" img width="250">
+            <img src="../pics/corl2020_plas.png" img width="250">
         </td>
-        <td>Latent Action Space for Offline Reinforcement Learning<br>
+        <td><a href="https://sites.google.com/view/latent-policy">Latent Action Space for Offline Reinforcement Learning</a><br>
             <div class="pubauthor">
                 Wenxuan Zhou, Sujay Bajracharya, David Held<br>
             </div>
