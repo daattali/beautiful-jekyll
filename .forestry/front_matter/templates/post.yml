@@ -5,24 +5,22 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post
+  hidden: true
 - type: text
   name: title
   label: title
 - type: text
   name: subtitle
   label: subtitle
-- type: text
-  name: gh-repo
-  label: gh-repo
-- type: list
-  name: gh-badge
-  label: gh-badge
-- type: list
-  name: tags
+- name: tags
+  type: tag_list
+  default: []
   label: tags
-- type: boolean
-  name: comments
-  label: comments
 - type: file
   name: thumbnail-img
   label: thumbnail-img
+  default: "/uploads/headshot.jpg"
+- type: boolean
+  name: comments
+  label: comments
