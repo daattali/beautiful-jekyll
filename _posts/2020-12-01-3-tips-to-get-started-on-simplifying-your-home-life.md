@@ -17,7 +17,7 @@ Recently, I was chatting with Elizabeth and [Bonnie](www.bonnielandry.ca) on the
 
 1\. Start somewhere. Start anywhere. There are so many methods or places to start, but really just starting is the best thing to do. Maybe it's a drawer in your kitchen, or taking things off your to do list. Maybe it's a massive declutter of your home. Starting can be the biggest battle!
 
-2\. Look towards your values and priorities. Once you have your values and priorities established, everything will flow fm there from the stuff in your home, to the routines you make as a family. Not sure where to start looking at yours? [My blog](https://www.kellymbriggs.github.io.com/2020-08-17-flake-it-till-you-make-it-copy/) on finding your values may help. 
+2\. Look towards your values and priorities. Once you have your values and priorities established, everything will flow fm there from the stuff in your home, to the routines you make as a family. Not sure where to start looking at yours? [My blog](https://www.kellymbriggs.github.io/2020-08-17-flake-it-till-you-make-it-copy/) on finding your values may help.
 
 3\. Find support and community. It's hard to do anything alone. We are meant for community. Books, instagram communities, Facebook groups, in person friends who are simplifying their home life will inspire and encourage you on your journey. Learning from one another is such a great gift.
 
