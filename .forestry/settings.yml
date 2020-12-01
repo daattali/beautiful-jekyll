@@ -15,8 +15,6 @@ sections:
   label: Blog posts
   create: documents
   match: "**/*"
-  templates:
-  - blog-post
 - type: document
   path: _config.yml
   label: Configuration
