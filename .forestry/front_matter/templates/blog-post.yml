@@ -32,3 +32,7 @@ fields:
 - name: comments
   type: boolean
   label: comments
+- name: readtime
+  type: boolean
+  label: readtime
+  default: true
