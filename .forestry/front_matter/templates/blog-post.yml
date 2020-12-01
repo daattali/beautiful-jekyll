@@ -22,9 +22,13 @@ fields:
 - type: file
   name: thumbnail-img
   label: thumbnail-img
+  default: "/uploads/headshot.jpg"
 - type: file
   name: cover-img
   label: cover-img
 - type: file
   name: share-img
   label: share-img
+- name: comment
+  type: boolean
+  label: comment
