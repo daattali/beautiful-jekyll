@@ -46,3 +46,5 @@ fields:
   type: boolean
   label: show-avatar
   default: true
+pages:
+- _posts/3-tips-to-get-started-on-simplifying-your-home-life.md
