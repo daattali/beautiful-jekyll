@@ -13,7 +13,7 @@ share-img: ''
 comments: false
 
 ---
-Recently, I was chatting with Elizabeth and Bonnie on the podcast [Make Joy Normal](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761) about keeping it simple. Today on the blog, I'm sharing with you the three tips I shared with them for getting started with simplifying your home life, especially if you don't know where to start:
+Recently, I was chatting with Elizabeth and [Bonnie](www.bonnielandry.ca) on the podcast [Make Joy Normal](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761) about keeping it simple. Today on the blog, I'm sharing with you the three tips I shared with them for getting started with simplifying your home life, especially if you don't know where to start:
 
 1\. Start somewhere. Start anywhere. There are so many methods or places to start, but really just starting is the best thing to do. Maybe it's a drawer in your kitchen, or taking things off your to do list. Maybe it's a massive declutter of your home. Starting can be the biggest battle!
 
