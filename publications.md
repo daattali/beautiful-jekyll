@@ -32,12 +32,26 @@ subtitle:
             <div class="pubauthor">
                 Yufei Wang*, Gautham Narayan Narasimhan*, Xingyu Lin, Brian Okorn, David Held<br>
             </div>
+            <div id="bib2020roll" style="display:none">
+                    <blockquote>
+                                            <pre>@isnproceedings{corl2020roll,
+                    title={ROLL: Visual Self-Supervised Reinforcement Learning with Object Reasoning},
+                    author={Wang, Yufei and Narasimhan Gautham and Lin, Xingyu and Okorn, Brian and Held, David},
+                    booktitle={Conference on Robot Learning},
+                    year={2020}
+                 }                    </pre>
+                </blockquote>
+            </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
             <div style="font-size:small">
                 <a href="https://sites.google.com/andrew.cmu.edu/roll/home">[Project Page]</a>
+                <a href="https://github.com/yufeiwang63/ROLL">[Code]</a>
+                <a href="javascript:copy(div2020roll, bib2020roll)">[Bibtex]</a>
                 <!-- <a href="GOTURN/GOTURN.pdf">[Full Paper]</a> -->
                 <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
             </div>
+            <div id="div2020roll" class="pubInfo"></div>
+
             </div>
             <br>
         </td>
