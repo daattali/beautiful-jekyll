@@ -15,6 +15,7 @@ tags:
 comments: true
 thumbnail-img: "/uploads/headshot.jpg"
 comment: false
+readtime: true
 
 ---
 Do you pencil in your "self care"? And by "self care", I mean, the things that fill you up spiritually, mentally, emotionally, physically. Today on the blog, I'm sharing about ten areas of self care for busy moms to consider penciling into your routine as well as a look into what I pencil in on the regular.
