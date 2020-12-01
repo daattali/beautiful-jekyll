@@ -29,6 +29,6 @@ fields:
 - type: file
   name: share-img
   label: share-img
-- name: comment
+- name: comments
   type: boolean
-  label: comment
+  label: comments
