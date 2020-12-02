@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Simple Capsule Wardrobe Guide
+title: simplecapsulewardrobe
 subtitle: ''
 
 ---
