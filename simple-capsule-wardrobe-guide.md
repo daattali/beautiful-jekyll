@@ -23,6 +23,7 @@ So if you are not sure where to start (or continue) because you're confused abou
 
 ## Included inside
 
+* $7 USD 
 * 9 pages
 * Questions to get you thinking about your ideal simple capsule wardrobe
 * Six simple steps to get you well on the way to design your simple capsule wardrobe
