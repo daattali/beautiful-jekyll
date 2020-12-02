@@ -2,7 +2,6 @@
 layout: page
 title: Simple Capsule Wardrobe Guide
 subtitle: ''
-published: false
 
 ---
 # What is the Simple Capsule Wardrobe Guide?
