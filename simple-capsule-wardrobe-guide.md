@@ -23,9 +23,9 @@ So if you are not sure where to start (or continue) because you're confused abou
 
 ## Included inside
 
-* 9 pages 
-* Questions to get you thinking about your ideal wardrobe
-* Six simple steps to get you well on the way to design your wardrobe
+* 9 pages
+* Questions to get you thinking about your ideal simple capsule wardrobe
+* Six simple steps to get you well on the way to design your simple capsule wardrobe
 * Resources section
-* Examples 
+* Examples
 * My support if you need any help along the way
