@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SNT : le Cloud'
+title: 'SNT : le :innocent: Cloud'
 published: true
 ---
 
