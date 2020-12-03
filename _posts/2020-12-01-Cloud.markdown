@@ -7,15 +7,14 @@ published: true
 
 
 
-# Le Cloud :disappointed:
+# Le Cloud 
 
 Après avoir visionné la <a href="https://www.youtube.com/watch?v=5YawCCUxa_E&feature=youtu.be">vidéo </a>, répondez aux questions suivantes : 
 
 - Qu'est-ce que le cloud ? 
 - D'où vient le terme cloud ?
 - Quelles sont les évolutions techniques qui ont permis le développement le cloud ? 
-- Quels sont les avantages du cloud ? Et les désavantages ? :disappointed:
-
+- Quels sont les avantages du cloud ? Et les désavantages ?
 
 
 # Principales causes de la consommation énérgétique des centres de données
