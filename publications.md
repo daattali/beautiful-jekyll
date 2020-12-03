@@ -304,7 +304,7 @@ year={2020}
 }</pre>
                 </blockquote>
             </div>
-            <div class="pubjournal">Conference on Robot Learning (CoRL), 2019</div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2019
             <div style="font-size:small">
                 <a href="https://jnan1.github.io/FlowVerify/">[Project Page]</a>
                 <a href="https://github.com/siddancha/FlowVerify">[Code]</a>
