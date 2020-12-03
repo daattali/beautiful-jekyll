@@ -101,11 +101,39 @@ year={2020}
             <div class="pubauthor">
                 Siddharth Ancha, Yaadhav Raaj, Peiyun Hu, Srinivasa Narasimhan, David Held<br>
             </div>
+            <div id="bib2020eccv" style="display:none">
+                    <blockquote>
+<pre>@InProceedings{Ancha_2020_ECCV,
+  author="Ancha, Siddharth
+  and Raaj, Yaadhav
+  and Hu, Peiyun
+  and Narasimhan, Srinivasa G.
+  and Held, David",
+  editor="Vedaldi, Andrea
+  and Bischof, Horst
+  and Brox, Thomas
+  and Frahm, Jan-Michael",
+  title="Active Perception Using Light Curtains for Autonomous Driving",
+  booktitle="Computer Vision -- ECCV 2020",
+  year="2020",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="751--766",
+  isbn="978-3-030-58558-7"
+}</pre>
+                </blockquote>
+            </div>
             <div class="pubjournal">European Conference on Computer Vision (ECCV), 2020 - <award>Spotlight</award> (Selection rate 5.3%)
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            <div style="font-size:small">
+                <a href="http://siddancha.github.io/projects/active-perception-light-curtains/">[Project Page]</a>
+                <a href="https://github.com/siddancha/active-perception-light-curtains">[Code]</a>
+                <a href="javascript:copy(div2020eccv, bib2020eccv)">[Bibtex]</a>
+                <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123500732.pdf">[Paper]</a>
+                <a href="https://arxiv.org/pdf/2008.02191.pdf">[ArXiv]</a>
+                <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
+            </div>
+            <div id="div2020eccv" class="pubInfo"></div>
+            
             </div>
             <br>
         </td>
@@ -251,11 +279,41 @@ year={2020}
         <td><a href="https://arxiv.org/abs/1912.12270">Combining Deep Learning and Verification for Precise Object Instance Detection</a><br>
             <div class="pubauthor">
                 Siddharth Ancha*, Junyu Nan*, David Held</div>
+            <div id="bib2019corl" style="display:none">
+                    <blockquote>
+<pre>@inproceedings{FlowVerify2019CoRL,
+  author    = {Siddharth Ancha and
+               Junyu Nan and
+               David Held},
+  editor    = {Leslie Pack Kaelbling and
+               Danica Kragic and
+               Komei Sugiura},
+  title     = {Combining Deep Learning and Verification for Precise Object Instance
+               Detection},
+  booktitle = {3rd Annual Conference on Robot Learning, CoRL 2019, Osaka, Japan,
+               October 30 - November 1, 2019, Proceedings},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {100},
+  pages     = {122--141},
+  publisher = {{PMLR}},
+  year      = {2019},
+  url       = {http://proceedings.mlr.press/v100/ancha20a.html},
+  timestamp = {Mon, 25 May 2020 15:01:26 +0200},
+  biburl    = {https://dblp.org/rec/conf/corl/AnchaNH19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}</pre>
+                </blockquote>
+            </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2019</div>
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+                <a href="https://jnan1.github.io/FlowVerify/">[Project Page]</a>
+                <a href="https://github.com/siddancha/FlowVerify">[Code]</a>
+                <a href="javascript:copy(div2019corl, bib2019corl)">[Bibtex]</a>
+                <a href="https://arxiv.org/pdf/1912.12270.pdf">[ArXiv]</a>
+                <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
+            </div>
+            <div id="div2019corl" class="pubInfo"></div>
+            
+            </div>
             <br>
         </td>
     </tr>
