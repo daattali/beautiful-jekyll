@@ -13,7 +13,7 @@ fields:
 - name: description
   type: text
   config:
-    required: false
+    required: true
   label: description
 - name: subtitle
   type: text
