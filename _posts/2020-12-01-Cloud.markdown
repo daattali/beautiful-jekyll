@@ -9,7 +9,7 @@ published: true
 
 # Le Cloud
 
-Après avoir visionné la <a href="https://www.youtube.com/watch?v=5YawCCUxa_E&feature=youtu.be">vidéo </a>, répondez aux questions suivantes : 
+:innocent: Après avoir visionné la <a href="https://www.youtube.com/watch?v=5YawCCUxa_E&feature=youtu.be">vidéo </a>, répondez aux questions suivantes : 
 
 - Qu'est-ce que le cloud ?
 - D'où vient le terme cloud ?
