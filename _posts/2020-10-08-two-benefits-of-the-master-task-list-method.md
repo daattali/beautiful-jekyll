@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Two Benefits of the Master Task List Method '
-subtitle: "...a helpful planning method"
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/img_20200916_095240631-1-_compress16.jpg"
 share-img: ''
@@ -9,6 +9,7 @@ tags:
 - simple planning
 - master task list
 - planning tips
+description: A helpful planning method.
 
 ---
 What do you think of when you hear the word master task list? I keep coming back to this concept for many areas of my life at home. Grocery master task list. Master work task list. And so on. I pull from it often when I'm sitting down to plan the next day. I think I keep coming back to this concept because there's no timeframe on anything. It's just a list. Timeframes sometimes stress me out because with having kids (at least MY kids ), timeframes just sometimes do not work at.all. at all. On the blog today, I'm sharing with you two benefits of the master task list.
