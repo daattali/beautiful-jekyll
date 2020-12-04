@@ -14,6 +14,7 @@ author: Ritobrata Ghosh
 
 navbar-links:
   About Me: "aboutme"
+  Learning Deep: ""
 #   Resources:
 #     - Beautiful Jekyll: "https://beautifuljekyll.com"
 #     - Learn markdown: "https://www.markdowntutorial.com/"
@@ -73,7 +74,7 @@ share-links-active:
   facebook: false
   linkedin: true
   vk: false
-#   reddit: true
+  reddit: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
