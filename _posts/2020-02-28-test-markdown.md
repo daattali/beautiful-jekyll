@@ -23,7 +23,7 @@ Here's a useless table:
 | Seven | Eight | Six |
 | Two | Three | One |
 
-Math test: $\dfrac{p}{q} = p^2 + q_2$
+Math test: $ \dfrac{p}{q} = p^2 + q_2 $
 
 $$ (a + b) \times (a + b)$$
 
