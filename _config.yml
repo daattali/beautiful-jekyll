@@ -4,13 +4,10 @@
 # the initial set up you won't need to come back to this file often.
 
 # --- Required options --- #
-
 # Name of website
 title: Ritobrata Ghosh
-
 # Your name to show in the footer
 author: Ritobrata Ghosh
-
 # --- List of links in the navigation bar --- #
 
 navbar-links:
