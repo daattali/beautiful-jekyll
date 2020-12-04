@@ -25,6 +25,8 @@ Here's a useless table:
 
 Math test: $\dfrac{p}{q} = p^2 + q_2$
 
+\sqrt{b^2-4ac}
+
 \(a + b\) \times \(a + b\)
 
 How about a yummy crepe?
