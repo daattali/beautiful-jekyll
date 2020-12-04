@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'Maths expertes : la question de la semaine 50'
+published: true
+---
+
+
+Soit $n\in \dZ$. Démontrer que la fraction $\dfrac{12n+7}{3n+1}$ est irréductible.
+
