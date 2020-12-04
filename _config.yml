@@ -47,19 +47,10 @@ social-network-links:
 #   youtube: c/daattali
 #  reddit: yourname
   linkedin: ritobrata-ghosh
-#  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
   instagram: rito.dl
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
 #  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 
 # If you want to show a link to an RSS in the footer, add the site description here.
@@ -73,8 +64,8 @@ share-links-active:
   twitter: true
   facebook: false
   linkedin: true
-  vk: false
-  reddit: true
+  vk: true
+  # reddit: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
