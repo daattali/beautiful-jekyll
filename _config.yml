@@ -45,7 +45,6 @@ social-network-links:
   twitter: AllesistKode
 #   patreon: DeanAttali
 #   youtube: c/daattali
-#  reddit: yourname
   linkedin: ritobrata-ghosh
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -87,14 +86,25 @@ feed_show_tags: true
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
+# navbar-col: "#EAEAEA"
+# navbar-text-col: "#404040"
+# navbar-border-col: "#DDDDDD"
+# page-col: "#FFFFFF"
+# text-col: "#404040"
+# link-col: "#008AFF"
+# hover-col: "#0085A1"
+# footer-col: "#EAEAEA"
+# footer-text-col: "#777777"
+# footer-link-col: "#404040"
+
+navbar-col: "#02919E"
+navbar-text-col: "#FFFFFF"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#EAEAEA"
+footer-col: "#02919E"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
