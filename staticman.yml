@@ -103,8 +103,8 @@ comments:
   # 3. Uncomment `siteKey` and `secret` and fill them in with your values
   reCaptcha:
     enabled: true
-    siteKey: "6Lf3rPkZAAAAADec_VJiEKwWxqStifIWvF9ETY3D"
+    siteKey: "6Lcxs_kZAAAAAOojYrsVrzxOZOZtE9q-les47-Zw"
     # ENCRYPT reCaptcha secret key using Staticman /encrypt endpoint
     # i.e. https://{STATICMAN API INSTANCE}/v3/encrypt/{your-site-secret}
     # For more information, visit https://staticman.net/docs/encryption
-    secret: "ZibZ+AIj5teIqkhYYhzLfKlD4W3eIaZ1bPMs8l1PQypJy+2tCBGr3MSfhBIadfPF44ynf9l5ixLUA2wMeYLCWKEG1L17hwBqfcpoyJWYssRh6P4qe1YdZYhIscALPJ8ynCBK1NRnUduu95DY650Ib2qEBHLUU7SgybZ31zsIEjyVz67jqPvk8D/hD53N075pSlNVXW1sjB67QZJYVBVzsIq8AJoY1/9oTZlLyaG9QaUhVmt+Zg9zurS+Zhh3kCUz+2iD3m4hyAAX3mBwiae4F7MVFLkO+UwKtoLeLWB0I0dBEIHIbrFwJDEuPucDd6oz7BI9pp7qcvpP5J1d9sGrYw=="
+    secret: "o65+nNYWT0eTz7KpIug05e4VJoy3+rWpe39DTwGgms+10WWU7TzkLNwhPTJgVpH5JLr5FbsSZRBb+0QauQoxfkxeTvg9F1U9fDV4H8wXWfInQ1aRevLIX5EI/4ZnYEKlyu6fT/CYF2WbNhfXHZS3uMOqeCUo1uYN/+7vfizQJSencMQ0HHmH1/PWM4Ht3VMGPYSGLcXgQhN4BK412ucrDQWhvn6qgECCCUyRsAiyaDjKzdORNfTuprW+Qeh97igRsO0nroclpkX8gGyO1EYFF6s2kGc4K++mYSb71JhYl4XcIUeJXkcut2ZYcSXii+fw+heoGr/6mhdcWlHBGm95pQ=="
