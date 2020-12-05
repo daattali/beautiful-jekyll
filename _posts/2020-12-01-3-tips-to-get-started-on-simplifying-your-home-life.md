@@ -7,7 +7,8 @@ thumbnail-img: "/uploads/20201201_140718_0000_compress26.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 show-avatar: true
 title: '3 Tips to Get Started on Simplifying Your Home Life '
-description: ''
+description: Simplifying your home need not to be complicated, but starting somewhere
+  is how you get started.
 subtitle: ''
 share-img: ''
 comments: false
