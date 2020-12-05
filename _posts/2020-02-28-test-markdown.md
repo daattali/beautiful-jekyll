@@ -11,8 +11,6 @@ usemathjax: true
 
 This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
-**Here is some bold text**
-
 ## Here is a secondary heading
 
 Here's a useless table:
@@ -24,11 +22,11 @@ Here's a useless table:
 | Seven | Eight | Six |
 | Two | Three | One |
 
-Math test: $\dfrac{p}{q} = p^2 + q_2$
+Math test: $$\dfrac{p}{q} = p^2 + q_2$$
 
 $$\sqrt{b^2-4ac}$$
 
-\(a + b\) \times \(a + b\)
+$(a + b) \times (a + b)$
 
 How about a yummy crepe?
 
@@ -40,7 +38,7 @@ It can also be centered!
 
 Here's a code chunk:
 
-~~~
+~~~js
 var foo = function(x) {
   return(x + 5);
 }
@@ -64,8 +62,8 @@ var foo = function(x) {
 }
 foo(3)
 {% endhighlight %}
-
 ## Boxes
+
 You can add notification, warning and error boxes like this:
 
 ### Notification
