@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Three Reasons to Switch to a Multipurpose Wallet
-subtitle: "(review)"
+title: Three Reasons to Switch to a Multipurpose Wallet (review)
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/fb_img_1601321667359_compress24.jpg"
 share-img: ''
@@ -10,6 +10,8 @@ tags:
 - multipurpose wallet
 - capsule wardrobe accessories
 - reviews
+description: A practical, multipurpose wallet that acts as a clutch and a purse as
+  well.
 
 ---
 One of the ways I've simplified the things that I own has been focusing on items that have more than one use. Pieces of clothing, small appliances, and my personal fave: my wallet - purse - clutch. A true multipurpose wallet. I kind of obsess and agonize over decisions when making purchases, so spent a bunch of time researching before buying [this wallet](https://amzn.to/385fJqa ). I think it's because I tend to use and keep things forever and I also wanted it to work with my [capsule wardrobe](https://bemorewithless.com/how-to-build-a-capsule-wardrobe/). 
