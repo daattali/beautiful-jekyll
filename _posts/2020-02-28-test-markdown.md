@@ -24,9 +24,8 @@ Here's a useless table:
 
 Math test: $$\dfrac{p}{q} = p^2 + q_2$$
 
-$$\sqrt{b^2-4ac}$$
-
-$(a + b) \times (a + b)$
+inline with kramdown in-built: \(x \notin \text{N} \) , get along
+block with kramdown in-built: \[\sqrt{b^2-4ac}\]
 
 How about a yummy crepe?
 
