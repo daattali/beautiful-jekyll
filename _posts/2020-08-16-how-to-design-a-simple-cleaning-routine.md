@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Design a Simple Cleaning Routine
-subtitle: The key is flexibility.
+subtitle: ''
 gh-repo: daattali/beautiful-jekyll
 gh-badge:
 - star
@@ -17,6 +17,7 @@ tags:
 - loop planning
 - bare minimum day
 comments: true
+description: Aspects of a simple cleaning routine to help you build your own.
 
 ---
 Having a family means that there is always cleaning and tidying to be done. No kidding, right? I think I was at the number of two kids that I felt stressed out by the house...trying to keep on top of all things at all times. I remember a good friend of mine laughing, telling me it'll eventually come crashing down (or something like that). She was right. I'm at four kids now and I've finally realized that nope. I cannot (and will not) stay on top of all things in the house. Unless I wanted to make that my life's work. And I have other things that are life giving to me than that, so enter a simple cleaning routine.
