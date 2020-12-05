@@ -9,6 +9,8 @@ tags:
 - intentional living
 - the power of a pause
 - productive procrastination
+description: Going slow and giving space for reassessment when confused about what
+  to do next in life can be a helpful strategy.
 
 ---
 **_Where are you heading?_** Heading slowly in the right direction is 1000% better than heading quickly in the wrong direction (for you). It's so easy to be swept up in the world's speed. My speed, with my crew  of four kids under ten in this season of life is _slowwww_. Sometimes painfully slow for my default ["to do list" personality](https://www.eastcoastkelly.com/2020-08-29-10-ways-to-simplify-your-to-do-list/). But I've learned to come back to slow every time, giving space for rest and reassessment. Today on the blog, I'm sharing about one important thing to do when you feel confused about your direction.
