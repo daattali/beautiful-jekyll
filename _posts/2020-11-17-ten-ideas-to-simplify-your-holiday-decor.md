@@ -10,6 +10,7 @@ tags:
 - simple holiday decor
 - simple holiday decor ideas
 - simple christmas decor
+description: Ten helpful ideas to keep your holiday decor simple.
 
 ---
 Do complicated things stress you out? They do for me, at least. I used to try and be an elaborate planner and [crafty mom](https://www.urbandictionary.com/define.php?term=Pinterest%20Mom). It just wasn't me and didn't [spark much joy](https://www.cheatsheet.com/entertainment/tidying-up-with-marie-kondo-what-does-spark-joy-really-mean.html/) for me either. Instead, I learned through the years that for me, I thrive on being simple. Today on the blog, I'm sharing ten ideas to simplify your holiday decor.
