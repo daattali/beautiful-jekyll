@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Thanksgiving in Our Homeschool
-subtitle: "(review of a mini Thanksgiving unit)"
+title: Thanksgiving in Our Homeschool (review of a mini Thanksgiving unit)
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/pumpkin-1768857_640.jpg"
 share-img: ''
@@ -11,6 +11,7 @@ tags:
 - homeschooling curriculum review
 - canadian thanksgiving
 - american thanksgiving
+description: A review of a thanksgiving curriculum we used in our homeschool.
 
 ---
 Crystin Morris over at [Delightfully Feasting](https://www.instagram.com/delightfullyfeasting/) on Instagram gifted me [a mini Thanksgiving unit](https://huitlife.com/product/delighting-in-festivity-thanksgiving-pdf-only/) to use with our family (ages 9, 7, 4, and 1). Today, I'll be sharing with you my thoughts on it when we went through it a couple weeks ago for our [Canadian Thanksgiving week](https://en.wikipedia.org/wiki/Thanksgiving_(Canada)).  
@@ -44,6 +45,3 @@ All of our children enjoyed the materials in this unit and I see myself using it
    
  Shop: [https://huitlife.com/co-op-shop/](https://huitlife.com/co-op-shop/ "https://huitlife.com/co-op-shop/")  
  Instagram: [https://www.instagram.com/delightfullyfeasting/](https://huitlife.com/co-op-shop/ "https://huitlife.com/co-op-shop/")
-
-  
- 
