@@ -61,15 +61,28 @@ year={2020}
         <td class="pubimg" width="250" height="100">
             <img src="../pics/corl2020_plas.png" img width="250">
         </td>
-        <td><a href="https://sites.google.com/view/latent-policy">Latent Action Space for Offline Reinforcement Learning</a><br>
+        <td><a href="https://arxiv.org/abs/2011.07213">Latent Action Space for Offline Reinforcement Learning</a><br>
             <div class="pubauthor">
                 Wenxuan Zhou, Sujay Bajracharya, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2020 - <award>Plenary talk</award> (Selection rate 4.1%)
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+             <div id="bib2020corl" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{PLAS_corl2020,
+ title={PLAS: Latent Action Space for Offline Reinforcement Learning},
+ author={Zhou, Wenxuan and Bajracharya, Sujay and Held, David},
+ booktitle={Conference on Robot Learning},
+ year={2020}
+ }</pre>
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/latent-policy">[Project Page]</a>
+                <a href="https://github.com/Wenxuan-Zhou/PLAS">[Code]</a>
+                <a href="javascript:copy(div2020corl, bib2020corl)">[Bibtex]</a>
+                <a href="https://arxiv.org/abs/2011.07213">[Paper]</a>
+            </div>
+            <div id="div2020corl" class="pubInfo"></div>
             </div>
             <br>
         </td>
