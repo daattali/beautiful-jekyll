@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gift Ideas for my Minimalist Family
-subtitle: "(our actual list)"
+title: Gift Ideas for my Minimalist Family (our actual list)
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/89722164_10163109675490627_1846259836136718336_o.jpg"
 share-img: ''
@@ -10,6 +10,7 @@ tags:
 - minimalist gift giving for kids
 - minimalist gifts for kids
 - minimalist family
+description: A variety of gift ideas for a minimalist family.
 
 ---
 How many days left until...gift giving time? I'm not counting.
