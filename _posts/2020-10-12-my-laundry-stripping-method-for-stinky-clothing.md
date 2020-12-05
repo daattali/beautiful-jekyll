@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Laundry Stripping Method for Stinky Clothing
-subtitle: I mean. The deep, deep cleaning.
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/img_20201011_093711_324_compress80.jpg"
 share-img: ''
@@ -11,6 +11,8 @@ tags:
 - laundry routine
 - laundry stripping
 - deep cleaning clothes
+description: A four step laundry stripping method that deeply cleans even the dirtiest
+  clothes.
 
 ---
 With all of the buzz around the laundry stripping I did with my husband's clothes, I wanted to write out the two ingredients that I used to make the laundry stripping powder and how I went about it.  My husband's clothing was just not getting the smells out anymore. We cleaned the washer, I used hot washes, a different detergent, and nothing was helping. So I knew I had to do something heavy duty. He was skeptical until I added the clothing to the bath tub..Today on the blog, I'm sharing my laundry stripping method for stinky clothing. I was inspired by [Go Clean Go](https://www.instagram.com/gocleanco/)'s stripping method on Instagram, but I wanted to use what I had on hand, and boy, it definitely did the trick!
