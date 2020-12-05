@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Four Ways to Create a Simpler Home
-subtitle: Keep it simple.
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200914_154033_0000_compress32.jpg"
 share-img: ''
@@ -10,6 +10,7 @@ tags:
 - creating a simple home
 - simple living
 - simple home tips
+description: Helpful suggestions to simplify your home more.
 
 ---
 Is your home running smoothly? What are the areas that feel bumpy? A simple rule of thumb here at our home that I know something needs to be changed is _if something just doesn't feel good or right._ It usually means something needs to change. Today on the blog, I'm sharing with you four ways to create a simpler home.
