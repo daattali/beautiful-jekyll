@@ -32,3 +32,5 @@ You should study benchmarks. Benchmarks are a great way to achieve better result
 #### Prototype a Lot
 
 Whether it's a school project or personal, whether it is Kaggle competitions, prototype a lot with the same data- use different architectures, different variants, and so on. And judge for yourself which is the best. Ultimately, using models for a certain task is a skill that you master through practice. You have to do experiments, make prototypes with different pre-trained models to get a feel for them.
+
+(Originally [a Kaggle discussion post](https://www.kaggle.com/getting-started/201230#1101714) by the Author.)
