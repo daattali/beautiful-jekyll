@@ -12,7 +12,7 @@ comments:
   #
   # Names of the fields the form is allowed to submit. If a field that is
   # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "email", "url", "message"]
+  allowedFields: ["name", "email", "message"]
 
   # (*) REQUIRED WHEN USING NOTIFICATIONS
   #
@@ -63,7 +63,7 @@ comments:
   #   type: "comment"
 
   # Name of the site. Used in notification emails.
-  # name: "Your Site"
+  name: "Ritobrata Ghosh"
 
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
@@ -103,7 +103,7 @@ comments:
   # 3. Uncomment `siteKey` and `secret` and fill them in with your values
   reCaptcha:
     enabled: true
-    siteKey: ""
+    siteKey: "6Lf3rPkZAAAAADec_VJiEKwWxqStifIWvF9ETY3D"
     # ENCRYPT reCaptcha secret key using Staticman /encrypt endpoint
     # i.e. https://{STATICMAN API INSTANCE}/v3/encrypt/{your-site-secret}
     # For more information, visit https://staticman.net/docs/encryption
