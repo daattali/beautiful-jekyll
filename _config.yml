@@ -116,7 +116,7 @@ footer-link-col: "#404040"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+mobile-theme-col: "#02919E"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
@@ -164,12 +164,12 @@ matomo:
 # in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
 # See more details at https://staticman.net/
 #staticman:
-#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+ repository : "ghosh-r/ghosh-r.github.io"
+ branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
 #  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
-#  reCaptcha:
-#    siteKey  : # Use your own site key, you need to apply for one on Google
-#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
+ reCaptcha:
+  siteKey  : "6Lf3rPkZAAAAADec_VJiEKwWxqStifIWvF9ETY3D"
+  secret   : "ZibZ+AIj5teIqkhYYhzLfKlD4W3eIaZ1bPMs8l1PQypJy+2tCBGr3MSfhBIadfPF44ynf9l5ixLUA2wMeYLCWKEG1L17hwBqfcpoyJWYssRh6P4qe1YdZYhIscALPJ8ynCBK1NRnUduu95DY650Ib2qEBHLUU7SgybZ31zsIEjyVz67jqPvk8D/hD53N075pSlNVXW1sjB67QZJYVBVzsIq8AJoY1/9oTZlLyaG9QaUhVmt+Zg9zurS+Zhh3kCUz+2iD3m4hyAAX3mBwiae4F7MVFLkO+UwKtoLeLWB0I0dBEIHIbrFwJDEuPucDd6oz7BI9pp7qcvpP5J1d9sGrYw=="
 
 # --- Misc --- #
 
