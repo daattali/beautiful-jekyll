@@ -11,6 +11,8 @@ tags:
 - December family traditions
 - Christmas books
 - best Christmas books
+description: A simple, meaningful bookish tradition in December to help bring the
+  family closer together and enjoy family time.
 
 ---
 Do you have family traditions? Are you wanting to figure out more traditions for your family? As we are heading towards the holidays, my mind starts racing with all the past years. What do I need to prep, have ready? What traditions are staying, what do we want to add on? I even have a digital note on what we did last year because I used to keep forgetting year to year. Today on the blog, I'm sharing with you our cozy family bookish December tradition that we've done for the past few years. All ages enjoy it too!
