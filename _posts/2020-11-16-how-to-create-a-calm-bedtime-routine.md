@@ -9,6 +9,8 @@ tags:
 - bedtime routines
 - routines with kids
 - calm bedtime routine
+description: Questions to ask and some steps to take to creating a calmer bedtime
+  routine.
 
 ---
 Do you sometimes feel like you don't know where the time went? Like life is happening to you and you just roll with it without every really thinking about it? Know what I mean?
