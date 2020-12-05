@@ -11,6 +11,8 @@ tags:
 - running to do list
 - bullet journaling
 - brain dump
+description: A helpful planning method that can help simplify your week and reduce
+  overwhelm.
 
 ---
 Does your head often fill with tons of things you'd like to do and you keep forgetting about them or writing way too much down? Maybe the running to do list method I do will help you out. Today on the blog, I'm sharing with you my simple running to do list method I use every week to help me stay on track and keep realistic expectations on myself too.
