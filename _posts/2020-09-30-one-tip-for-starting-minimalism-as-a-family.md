@@ -9,6 +9,8 @@ tags:
 - minimalism
 - minimalism as a family
 - minimalism tips with kids
+description: The one key thing to know if you are starting your minimalist journey
+  as a family.
 
 ---
 I started my minimalist journey after I had my third kid and I knew something had to give. I was standing with my to do list, extremely stressed out and trying to keep up with all things at all times. I first turned to decluttering to reduce the things in our home and then learned how to do some simple planning (bye bye scrap paper) and the rest, they say is history. On the blog today, I'm sharing one must know tip for starting minimalism as a family.
