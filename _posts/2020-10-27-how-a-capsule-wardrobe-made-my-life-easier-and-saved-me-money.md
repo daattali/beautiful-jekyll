@@ -11,6 +11,7 @@ tags:
 - capsule wardrobe guide
 - wardrobe declutter
 - simple wardrobe
+description: Having a capsule wardrobe can save time and money.
 
 ---
 Are you swimming in clothes? Or just want to get better at figuring out what to wear? This was me a handful of years back. I asked for help from a trusted friend. And booted sooo much out. Like teacher clothes I no longer needed as a stay at home mom. From there, I wanted to simplify and get better at figuring out my clothing situation. It was quite the process, but worth it now that I'm mostly out the other side. I know what I like now! I eventually learned about capsule wardrobes and created my own method (because I'm always planning ha!) for creating one because I became super overwhelmed with all of the ways they can be done. Today on the blog, I'm sharing with you how a capsule wardrobe can make your life easier, plus save you money long term.
