@@ -9,6 +9,8 @@ tags:
 - simple wardrobe
 - capsule wardrobe
 - wardrobe basics
+description: Basic pieces of clothing to consider when you want to build a simple
+  wardrobe for yourself.
 
 ---
 **_What are the basics in your wardrobe?_**
