@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ten Areas of Self Care for Busy Moms
-subtitle: The key is flexibility.
+subtitle: ''
 gh-repo: daattali/beautiful-jekyll
 gh-badge:
 - star
@@ -16,6 +16,7 @@ comments: true
 thumbnail-img: "/uploads/headshot.jpg"
 comment: false
 readtime: true
+description: Helpful, simple ideas of self care for busy moms.
 
 ---
 Do you pencil in your "self care"? And by "self care", I mean, the things that fill you up spiritually, mentally, emotionally, physically. Today on the blog, I'm sharing about ten areas of self care for busy moms to consider penciling into your routine as well as a look into what I pencil in on the regular.
