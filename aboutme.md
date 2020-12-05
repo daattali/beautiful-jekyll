@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-cover-img: ["/assets/img/aboutme/shallowgan.png", "/assets/img/aboutme/style_transfer.png", "/assets/img/self.jpeg"]
+cover-img: ["/assets/img/aboutme/shallowgan.png", "/assets/img/aboutme/style_transfer.png"]
 ---
 
 Hi, 😀 I am Ritobrata Ghosh.
