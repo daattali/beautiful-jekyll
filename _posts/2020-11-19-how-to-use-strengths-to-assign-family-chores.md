@@ -9,6 +9,7 @@ tags:
 - Family chores
 - Chores for children
 - family strengths
+description: Helpful ideas for assigning chores with kids by looking at their strengths.
 
 ---
 _Working from our strengths._ Everyone of us has different gifts, skills, things we like, and strongly don't like (handwashing dishes is my nemesis). A couple months ago, I had an idea pop into my head to focus more on our strengths when working together as a family vs expecting similar from everyone. Today on the blog, I'm sharing about how to use strengths to assign family chores.
