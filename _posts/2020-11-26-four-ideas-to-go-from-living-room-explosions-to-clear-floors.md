@@ -11,6 +11,7 @@ tags:
 - tidying tips
 - organizing tips
 - organizing tips with kids
+description: Helpful tips to keep your living room tidy, even with a busy household.
 
 ---
 Is your living room an explosion more often than not? I’m going to be honest and upfront here. This is a work in progress for our homeschooling family of six (our oldest is almost ten, youngest being 1.5). Today on the blog, I’m sharing with you four ideas to go from living room explosions to tidier floors (for busy families). And maybe one of them is your solution to the explosive living room too.  
