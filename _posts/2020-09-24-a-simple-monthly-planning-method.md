@@ -1,13 +1,15 @@
 ---
 layout: post
 title: 'A Simple Monthly Planning Method '
-subtitle: "...that keeps me sane!"
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/img_20200906_095105025_compress37.jpg"
 share-img: ''
 tags:
 - simple planning
 - bullet journal method
+description: A simple monthly planning method that helps to reduce overwhelm and keeps
+  you organized.
 
 ---
 I have a busy life at home. I homeschool. I have four children. I run a business, blog, social media, regular home and life stuff. I also enjoy keeping everything simple as much as possible. It was through [bullet journaling](https://amzn.to/3fB51uF) that I found my planning peace. Today on the blog, I'm sharing with you my simple monthly planning method (that keeps me sane).  
