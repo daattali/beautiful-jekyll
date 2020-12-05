@@ -164,13 +164,13 @@ matomo:
 # If you want to use reCaptcha for staticman (optional for spam protection), then fill
 # in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
 # See more details at https://staticman.net/
-staticman:
- repository : "ghosh-r/ghosh-r.github.io"
- branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
- reCaptcha:
-  siteKey  : "6Lcxs_kZAAAAAOojYrsVrzxOZOZtE9q-les47-Zw"
-  secret   : "o65+nNYWT0eTz7KpIug05e4VJoy3+rWpe39DTwGgms+10WWU7TzkLNwhPTJgVpH5JLr5FbsSZRBb+0QauQoxfkxeTvg9F1U9fDV4H8wXWfInQ1aRevLIX5EI/4ZnYEKlyu6fT/CYF2WbNhfXHZS3uMOqeCUo1uYN/+7vfizQJSencMQ0HHmH1/PWM4Ht3VMGPYSGLcXgQhN4BK412ucrDQWhvn6qgECCCUyRsAiyaDjKzdORNfTuprW+Qeh97igRsO0nroclpkX8gGyO1EYFF6s2kGc4K++mYSb71JhYl4XcIUeJXkcut2ZYcSXii+fw+heoGr/6mhdcWlHBGm95pQ=="
+# staticman:
+#  repository : "ghosh-r/ghosh-r.github.io"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+# #  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
+#  reCaptcha:
+#   siteKey  : "6Lcxs_kZAAAAAOojYrsVrzxOZOZtE9q-les47-Zw"
+#   secret   : "o65+nNYWT0eTz7KpIug05e4VJoy3+rWpe39DTwGgms+10WWU7TzkLNwhPTJgVpH5JLr5FbsSZRBb+0QauQoxfkxeTvg9F1U9fDV4H8wXWfInQ1aRevLIX5EI/4ZnYEKlyu6fT/CYF2WbNhfXHZS3uMOqeCUo1uYN/+7vfizQJSencMQ0HHmH1/PWM4Ht3VMGPYSGLcXgQhN4BK412ucrDQWhvn6qgECCCUyRsAiyaDjKzdORNfTuprW+Qeh97igRsO0nroclpkX8gGyO1EYFF6s2kGc4K++mYSb71JhYl4XcIUeJXkcut2ZYcSXii+fw+heoGr/6mhdcWlHBGm95pQ=="
 
 # --- Misc --- #
 
