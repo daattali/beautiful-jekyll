@@ -1,7 +1,7 @@
 ---
 layout: post
 title: " Four Ideas to Go from Kitchen Explosions to Clear Counters "
-subtitle: "...for busy families"
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200914_154033_0000_compress32.jpg"
 share-img: ''
@@ -10,6 +10,8 @@ tags:
 - clear counters
 - clean kitchen ideas
 - chores for kids
+description: Helpful ideas to keep your kitchen clean and tidy more often, even with
+  a busy family.
 
 ---
 I'm going to be honest upfront here. This is a work in progress for our homeschooling family of six (our oldest is almost ten, youngest being 1.5). But it's been a thorn in my side for a while, so I've been thinking about it a lot. Today on the blog, I'm sharing with you three ideas to go from kitchen explosion to clear counters (for busy families). And maybe one of them is your solution to the explosive kitchen too.
