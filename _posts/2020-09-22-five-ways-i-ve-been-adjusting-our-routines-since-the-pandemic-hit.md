@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Five Ways I’ve Been Adjusting our Routines Since the Pandemic Hit
-subtitle: "(for myself and the kids)"
+title: Five Ways I’ve Been Adjusting our Routines Since the Pandemic Hit (for myself
+  and the kids)
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/img_20200906_095105025_compress37.jpg"
 share-img: ''
@@ -10,6 +11,7 @@ tags:
 - simple routines
 - routines with kids
 - routines during the pandemic
+description: Helpful suggestions for adjusting routines with kids during the pandemic.
 
 ---
 It’s been a huge turn of events here in our home since the pandemic hit and of course, the rest of the world. Today on the blog, I’m sharing with you five ways I’ve been adjusting our routines (for myself and the kids) since the pandemic hit. Today on the blog, I'm sharing five ways I've been adjusting our routine
