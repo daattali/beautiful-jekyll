@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Instill Habits in Kids
-subtitle: "(our kids' morning routine)"
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/89722164_10163109675490627_1846259836136718336_o.jpg"
 share-img: ''
@@ -9,6 +9,7 @@ tags:
 - morning routines for kids
 - habits for kids
 - habit training
+description: Instilling habits can help the days go smoother with children.
 
 ---
 How do you instill (good) habits in kids? It takes a long time, that's all I know so far with almost ten years of parenting. And when I look at the bigger picture, sometimes I feel overwhelmed at looking at point Z when I need to just look at point A. Point A today and for the x amount of days (unknowable at this point), it's instilling my children's morning time routine until it becomes second nature / habit.⁣ I've been really learning to focus on one thing at a time. Applying that to teaching kids habits, it's really helpful to work on one little thing at a time. And once it's a habit, we'll work through the next thing. Oftentimes habits get dropped because I try to take on too many at once. Less is always more, right! ⁣Today on the blog, I'm sharing about our kids' morning routine and a little bit about how to instill habits.
