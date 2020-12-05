@@ -8,6 +8,7 @@ share-img: ''
 tags:
 - simple planning
 - bullet journal method
+description: An effective daily planning method that can help you stay organized.
 
 ---
 First off, my daily planning method is based on [the bullet journal method](https://amzn.to/3fB51uF). I've tweaked things over the years, so I'm going to share with you step by step how I daily plan with my simple daily planning method (for right now, that is). I like to switch things up sometimes!
