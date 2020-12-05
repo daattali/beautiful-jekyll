@@ -43,9 +43,9 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 
 <h2 id="sponsors">Sponsors 🏆</h2>
 
-> There are no sponsors yet
+- [Matt Artist](https://mja00.dev/)
 
-[Become the first sponsor for Beautiful Jekyll and unlock special rewards\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)
+[Become a sponsor for Beautiful Jekyll and unlock special rewards\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)
 
 # Build your website in 3 steps
 
