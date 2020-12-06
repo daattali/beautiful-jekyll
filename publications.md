@@ -14,11 +14,31 @@ subtitle:
             <div class="pubauthor">
                 Xingyu Lin, Yufei Wang, Jake Olkin, David Held<br>
             </div>
+            <div id="bib2020softgym" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{corl2020softgym,
+                          title={SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation},
+                          author={Lin, Xingyu and Wang, Yufei and Olkin, Jake and Held, David},
+                          booktitle={Conference on Robot Learning},
+                          year={2020}
+                         }
+                    }</pre>
+                </blockquote>
+            </div>
+            <div id="abs2020softgym" style="display:none">
+                <blockquote>
+                    Manipulating deformable objects has long been a challenge in robotics due to its high dimensional state representation and complex dynamics. Recent success in deep reinforcement learning provides a promising direction for learning to manipulate deformable objects with data driven methods. However, existing reinforcement learning benchmarks only cover tasks with direct state observability and simple low-dimensional dynamics or with relatively simple image-based environments, such as those with rigid objects. In this paper, we present SoftGym, a set of open-source simulated benchmarks for manipulating deformable objects, with a standard OpenAI Gym API and a Python interface for creating new environments. Our benchmark will enable reproducible research in this important area. Further, we evaluate a variety of algorithms on these tasks and highlight challenges for reinforcement learning algorithms, including dealing with a state representation that has a high intrinsic dimensionality and is partially observable. The experiments and analysis indicate the strengths and limitations of existing methods in the context of deformable object manipulation that can help point the way forward for future methods development. Code and videos of the learned policies can be found on our project website.
+                </blockquote>
+            </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/softgym/home">[Project Page]</a>
+                <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a>
+                <a href="javascript:copy(div2020softgym, bib2020softgym)">[Bibtex]</a>
+                <a href="javascript:copy(div2020softgym, abs2020softgym)">[Abstract]</a>
+                <a href="https://arxiv.org/abs/2011.07215">[PDF]</a>
+            </div>
+            <div id="div2020softgym" class="pubInfo"></div>
             </div>
             <br>
         </td>
