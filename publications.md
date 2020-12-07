@@ -16,13 +16,11 @@ subtitle:
             </div>
             <div id="bib2020softgym" style="display:none">
                 <blockquote>
-                    <pre>@inproceedings{corl2020softgym,
-                          title={SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation},
-                          author={Lin, Xingyu and Wang, Yufei and Olkin, Jake and Held, David},
-                          booktitle={Conference on Robot Learning},
-                          year={2020}
-                         }
-                    }</pre>
+<pre>@inproceedings{corl2020softgym,
+title={SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation},
+author={Lin, Xingyu and Wang, Yufei and Olkin, Jake and Held, David},
+booktitle={Conference on Robot Learning},
+year={2020}}</pre>
                 </blockquote>
             </div>
             <div id="abs2020softgym" style="display:none">
@@ -36,7 +34,7 @@ subtitle:
                 <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a>
                 <a href="javascript:copy(div2020softgym, bib2020softgym)">[Bibtex]</a>
                 <a href="javascript:copy(div2020softgym, abs2020softgym)">[Abstract]</a>
-                <a href="https://arxiv.org/abs/2011.07215">[PDF]</a>
+                <a href="https://arxiv.org/pdf/2011.07215.pdf">[PDF]</a>
             </div>
             <div id="div2020softgym" class="pubInfo"></div>
             </div>
