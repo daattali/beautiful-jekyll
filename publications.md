@@ -85,7 +85,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
                 <a href="https://github.com/Wenxuan-Zhou/PLAS">[Code]</a>
                 <a href="javascript:copy(div2020corl, bib2020corl)">[Bibtex]</a>
                 <a href="javascript:copy(div2020corl, abs2020corl)">[Abstract]</a>
-                <a href="https://arxiv.org/abs/2011.07213">[Paper]</a>
+                <a href="https://arxiv.org/pdf/2011.07213.pdf">[PDF]</a>
             </div>
             <div id="div2020corl" class="pubInfo"></div>
             </div>
