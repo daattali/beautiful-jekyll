@@ -76,10 +76,15 @@ year={2020}
  }</pre>
                 </blockquote>
             </div>
+            <div id="abs2020corl" style="display:none">
+                <blockquote>
+The goal of offline reinforcement learning is to learn a policy from a fixed dataset, without further interactions with the environment.  This setting will be an increasingly more important paradigm for real-world applications of reinforcement learning such as robotics, in which data collection is slow and potentially dangerous. Existing off-policy algorithms have limited performance on static datasets due to extrapolation errors from out-of-distribution actions. This leads to the challenge of constraining the policy to select actions within the support of the dataset during training. We propose to simply learn the Policy in the Latent Action Space (PLAS) such that this requirement is naturally satisfied. We evaluate our method on continuous control benchmarks in simulation and a deformable object manipulation task with a physical robot. We demonstrate that our method provides competitive performance consistently across various continuous control tasks and different types of datasets, outperforming existing offline reinforcement learning methods with explicit constraints.                </blockquote>
+            </div>
             <div style="font-size:small">
                 <a href="https://sites.google.com/view/latent-policy">[Project Page]</a>
                 <a href="https://github.com/Wenxuan-Zhou/PLAS">[Code]</a>
                 <a href="javascript:copy(div2020corl, bib2020corl)">[Bibtex]</a>
+                <a href="javascript:copy(div2020corl, abs2020corl)">[Abstract]</a>
                 <a href="https://arxiv.org/abs/2011.07213">[Paper]</a>
             </div>
             <div id="div2020corl" class="pubInfo"></div>
