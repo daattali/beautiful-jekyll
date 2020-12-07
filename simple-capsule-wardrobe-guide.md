@@ -8,6 +8,8 @@ subtitle: ''
 
 Does your wardrobe speak to your life right now? Does it take more effort to think about what you want to wear or do you just have too many choices and you'd like to simplify? If these are questions you are asking yourself, then this guide may be for you.
 
+![A picture of my ebook on a tablet. ](/uploads/0001-14050326233_20201205_222458_0000_compress99.jpg "SHM")
+
 Have you heard of [a capsule wardrobe](https://en.wikipedia.org/wiki/Capsule_wardrobe) before? After doing a ton of research on them a few years back, I found out that there are many ways to do them and I found it very overwhelming to figure it all out. Which do I pick? What rules do I use? What steps do I take? I'm going to simplify the process for you - to give you the most important steps. Sound like a plan?
 
 So if you are not sure where to start (or continue) because you're confused about what to do, then this **simple capsule wardrobe guide** is for you too. it's a complete, but open-ended _flexible_ guide to help you along the journey. I hope you enjoy it and make your way to a capsule wardrobe... simplified. Tailored just for you!
@@ -23,7 +25,7 @@ So if you are not sure where to start (or continue) because you're confused abou
 
 ## Included inside
 
-* $7 USD 
+* $7 USD (click through to the download link) 
 * 9 pages
 * Questions to get you thinking about your ideal simple capsule wardrobe
 * Six simple steps to get you well on the way to design your simple capsule wardrobe
