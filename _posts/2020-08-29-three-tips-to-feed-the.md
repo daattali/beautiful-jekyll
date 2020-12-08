@@ -10,6 +10,7 @@ tags:
 - finger foods
 - busy family quick meals
 - lunch food ideas for kids
+description: Helpful tips for feeding younger children fast when they are hangry.
 
 ---
 ![A picture of our dining table with plates on it.](/uploads/20200617_103658_0000-1.png "diningtable")
