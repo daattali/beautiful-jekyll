@@ -9,6 +9,8 @@ tags:
 - self care for moms
 - taking breaks as parents
 - self care ideas for moms
+description: Creative suggestions for finding some time for self care with a busy
+  household.
 
 ---
 ![Pumping out soap from a dispenser.](/uploads/20200518_105019_0000-1.png "soapdispenser")
