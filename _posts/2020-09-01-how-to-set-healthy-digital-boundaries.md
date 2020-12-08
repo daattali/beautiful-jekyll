@@ -9,6 +9,7 @@ tags:
 - digital minimalism
 - setting boundaries with social media
 - digital boundaries
+description: Ideas for setting healthy digital boundaries surrounding screen time.
 
 ---
 The digital world has been a part of my life for as long as I've been a mom. Nine and a half years. And over the years, I've had to grapple with why I use [social media](www.instagram.com/eastcoastkelly) in particular. For me, it's all about the WHY in why I'm showing up in the digital world. Over the years, I've had to create boundaries with the digital world. It used to suck me in often. So my relationship with the digital world is often under reassessment to make sure the time I spend here is with intention. It'll look different for everyone, of course. For me currently, I come to the digital world for inspiration, support, community. It's not meant to replace my "real life", but to add to it. To be a part of my life, but not to become my life. When I remind myself of these things, it helps me to stick to these things. Without the guilt or time sucking (as often). ⁣
