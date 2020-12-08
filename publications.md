@@ -159,13 +159,18 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
 }</pre>
                 </blockquote>
             </div>
+            <div id="abs2020eccv" style="display:none">
+                <blockquote>
+                    Most real-world 3D sensors such as LiDARs perform fixed scans of the entire environment, while being decoupled from the recognition system that processes the sensor data. In this work, we propose a method for 3D object recognition using light curtains, a resource-efficient controllable sensor that measures depth at user-specified locations in the environment. Crucially, we propose using prediction uncertainty of a deep learning based 3D point cloud detector to guide active perception. Given a neural network’s uncertainty, we derive an optimization objective to place light curtains using the principle of maximizing information gain. Then, we develop a novel and efficient optimization algorithm to maximize this objective by encoding the physical constraints of the device into a constraint graph and optimizing with dynamic programming. We show how a 3D detector can be trained to detect objects in a scene by sequentially placing uncertainty-guided light curtains to successively improve detection accuracy.
+                </blockquote>
+            </div>
             <div class="pubjournal">European Conference on Computer Vision (ECCV), 2020 - <award>Spotlight</award> (Selection rate 5.3%)
             <div style="font-size:small">
                 <a href="http://siddancha.github.io/projects/active-perception-light-curtains/">[Project Page]</a>
                 <a href="https://github.com/siddancha/active-perception-light-curtains">[Code]</a>
                 <a href="javascript:copy(div2020eccv, bib2020eccv)">[Bibtex]</a>
-                <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123500732.pdf">[Paper]</a>
-                <a href="https://arxiv.org/pdf/2008.02191.pdf">[ArXiv]</a>
+                <a href="javascript:copy(div2020eccv, abs2020eccv)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2008.02191.pdf">[PDF]</a>
                 <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
             </div>
             <div id="div2020eccv" class="pubInfo"></div>
@@ -340,12 +345,18 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
 }</pre>
                 </blockquote>
             </div>
+            <div id="abs2019corl" style="display:none">
+                <blockquote>
+                    Deep learning object detectors often return false positives with very high confidence. Although they optimize generic detection performance, such as mean average precision (mAP), they are not designed for reliability. For a reliable detection system, if a high confidence detection is made, we would want high certainty that the object has indeed been detected. To achieve this, we have developed a set of verification tests which a proposed detection must pass to be accepted. We develop a theoretical framework which proves that, under certain assumptions, our verification tests will not accept any false positives. Based on an approximation to this framework, we present a practical detection system that can verify, with high precision, whether each detection of a machine-learning based object detector is correct. We show that these tests can improve the overall accuracy of a base detector and that accepted examples are highly likely to be correct. This allows the detector to operate in a high precision regime and can thus be used for robotic perception systems as a reliable instance detection method.
+                </blockquote>
+            </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2019
             <div style="font-size:small">
                 <a href="https://jnan1.github.io/FlowVerify/">[Project Page]</a>
                 <a href="https://github.com/siddancha/FlowVerify">[Code]</a>
                 <a href="javascript:copy(div2019corl, bib2019corl)">[Bibtex]</a>
-                <a href="https://arxiv.org/pdf/1912.12270.pdf">[ArXiv]</a>
+                <a href="javascript:copy(div2019corl, abs2019corl)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/1912.12270.pdf">[PDF]</a>
                 <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
             </div>
             <div id="div2019corl" class="pubInfo"></div>
