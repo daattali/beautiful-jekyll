@@ -10,6 +10,7 @@ tags:
 - decluttering
 - dealing with sentimental items
 - decluttering sentimental items
+description: 3 practical suggestions to deal with decluttering sentimental items.
 
 ---
 Sentimental items. Should they stay or should they go now? Today on the blog, I’m sharing with you a bit about my process of dealing with sentimental items and 3 (practical) ways to declutter and deal with sentimental items.
