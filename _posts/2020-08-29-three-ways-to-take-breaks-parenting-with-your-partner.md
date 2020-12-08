@@ -10,6 +10,7 @@ tags:
 - parenting tips
 - parenting littles
 - taking breaks as parents
+description: Some helpful planning ideas to take breaks parenting with your partner.
 
 ---
 It's no secret that family life can be TOUGH. Reinventing ourselves as a new person practically - once little people come around, but it's important for us to find time for ourselves too in the midst of those parenting days. Today I'm sharing some creative ways to take turns finding time by yourself, with the support of a partner.
