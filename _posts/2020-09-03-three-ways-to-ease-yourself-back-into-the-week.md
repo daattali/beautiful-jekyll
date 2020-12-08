@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Three Ways to Ease Yourself Back into the Week
-subtitle: Saying no to that cheetah pace!
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200902_144153_0000_compress13.jpg"
 share-img: ''
@@ -10,6 +10,7 @@ tags:
 - slow living
 - simplify your life
 - easing back into the week
+description: Three helpful planning suggestions to ease yourself back into the week.
 
 ---
 After a weekend break, _I used to be that cheetah_. The more I get done Monday, the better the rest of the week will be, I thought! I'll be all set. Nope. It always ended up burning me out for the rest of the week. And I'm not doing myself or family any service by doing that. ⁣Today on the blog, I'm sharing with you how to ease yourself back into the week (without burning out).   
