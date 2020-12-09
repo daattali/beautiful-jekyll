@@ -29,6 +29,8 @@ Email: eda.gjergo@whu.edu.cn
 
 # Bio
 
- In October 2019, Eda Gjergo has joined as a Postdoctoral Fellow the rapidly growing and vibrant Astronomy group at Wuhan University. She worked on the photometric identification of Type Ia supernovae for the Dark Energy Survey (DES) at Argonne National Laboratory (ANL), and she conducted analyses on filter transmission for the Large Synoptic Survey Telescope (LSST). Due to her work within the collaboration, she won the 222nd American Astronomical Society (AAS) Chambliss Astronomy Achievement Student Award, as well as an honorable mention the following year.
+ In October 2019, Eda Gjergo has joined as a Postdoctoral Fellow the rapidly growing and vibrant Astronomy group at Wuhan University. She previously worked on the photometric identification of Type Ia supernovae for the Dark Energy Survey (DES) at Argonne National Laboratory (ANL), and she conducted analyses on filter transmission for the Large Synoptic Survey Telescope (LSST). Due to her work within the collaboration, she won the 222nd American Astronomical Society (AAS) Chambliss Astronomy Achievement Student Award, as well as an honorable mention the following year.
 
 Over the course of her Ph.D., she has grown an interest in dust modeling and in the chemical evolution of galaxies. She has lead the development of a dust evolution code within zoom-in cosmological simulations of galaxy clusters.
+
+Currently, she is working on the impact of 
