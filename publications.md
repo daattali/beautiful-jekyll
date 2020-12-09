@@ -194,11 +194,36 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
                 Jianing Qian*, Thomas Weng*, Luxin Zhang, Brian Okorn, David Held<br>
             </div>
             <div class="pubjournal">International Conference on Intelligent Robots and Systems (IROS), 2020
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
             </div>
+            <div id="bibqian2020iros" style="display:none">
+                <blockquote>
+                    <pre>
+@InProceedings{Qian_2020_IROS,
+    author="Qian, Jianing
+    and Weng, Thomas
+    and Zhang, Luxin
+    and Okorn, Brian
+    and Held, David",
+    title="Cloth Region Segmentation for Robust Grasp Selection",
+    booktitle="International Conference on Intelligent Robots and Systems",
+    year="2020",
+    publisher="IEEE"}
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="absqian2020iros" style="display:none">
+                <blockquote>
+                    Cloth detection and manipulation is a common task in domestic and industrial settings, yet such tasks remain a challenge for robots due to cloth deformability. Furthermore, in many cloth-related tasks like laundry folding and bed making, it is crucial to manipulate specific regions like edges and corners, as opposed to folds. In this work, we focus on the problem of segmenting and grasping these key regions. Our approach trains a network to segment the edges and corners of a cloth from a depth image, distinguishing such regions from wrinkles or folds. We also provide a novel algorithm for estimating the grasp location, direction, and directional uncertainty from the segmentation. We demonstrate our method on a real robot system and show that it outperforms baseline methods on grasping success. Video and other supplementary materials are available at: <a href="https://sites.google.com/view/cloth-segmentation">this https URL</a>.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/cloth-segmentation">[Project Page]</a>
+                <!-- <a href="">[Code]</a> -->
+                <a href="javascript:copy(divqian2020iros, bibqian2020iros)">[Bibtex]</a>
+                <a href="javascript:copy(divqian2020iros, absqian2020iros)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2008.05626.pdf">[PDF]</a>
+            </div>
+            <div id="divqian2020iros" class="pubInfo"></div>
             <br>
         </td>
     </tr>
@@ -290,15 +315,39 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
         <td class="pubimg" width="250" height="100">
             <img src="../pics/t3_cropped.png" img width="250">
         </td>
-        <td><a href="https://arxiv.org/abs/2006.00028">Multi-modal Transfer Learning for Grasping Transparent and Specular Objects</a><br>
+        <td><a href="https://arxiv.org/abs/2006.00028">Multi-Modal Transfer Learning for Grasping Transparent and Specular Objects</a><br>
             <div class="pubauthor">
                 Thomas Weng, Amith Pallankize, Yimin Tang, Oliver Kroemer, David Held<br>
             </div>
             <div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference of Robotics and Automation (ICRA), 2020</div>
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            <div id="bibweng2020ral" style="display:none">
+                <blockquote>
+                    <pre>
+@ARTICLE{9001238,
+    author={Thomas Weng and Amith Pallankize and Yimin Tang and Oliver Kroemer and David Held},
+    journal={IEEE Robotics and Automation Letters}, 
+    title={Multi-Modal Transfer Learning for Grasping Transparent and Specular Objects}, 
+    year={2020},
+    volume={5},
+    number={3},
+    pages={3791-3798},
+    doi={10.1109/LRA.2020.2974686}}
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="absweng2020ral" style="display:none">
+                <blockquote>
+                    State-of-the-art object grasping methods rely on depth sensing to plan robust grasps, but commercially available depth sensors fail to detect transparent and specular objects. To improve grasping performance on such objects, we introduce a method for learning a multi-modal perception model by bootstrapping from an existing uni-modal model. This transfer learning approach requires only a pre-existing uni-modal grasping model and paired multi-modal image data for training, foregoing the need for ground-truth grasp success labels nor real grasp attempts. Our experiments demonstrate that our approach is able to reliably grasp transparent and reflective objects. Video and supplementary material are available at <a href="https://sites.google.com/view/transparent-specular-grasping">https://sites.google.com/view/transparent-specular-grasping</a>.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/transparent-specular-grasping">[Project Page]</a>
+                <!-- <a href="">[Code]</a> -->
+                <a href="javascript:copy(divweng2020ral, bibweng2020ral)">[Bibtex]</a>
+                <a href="javascript:copy(divweng2020ral, absweng2020ral)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2006.00028.pdf">[PDF]</a>
+            </div>
+            <div id="divweng2020ral" class="pubInfo"></div>
             <br>
         </td>
     </tr>
