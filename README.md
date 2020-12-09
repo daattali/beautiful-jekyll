@@ -203,7 +203,7 @@ Visit the [official FAQ page](https://beautifuljekyll.com/faq) for answers to co
 
 Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web skills, so it's impossible to answer all the questions that may arise. For any question that's not specifically related to Beautiful Jekyll and is more about Jekyll or web development in general, the answer can often be found on Google, in the [Jekyll documentation](https://jekyllrb.com/), or on the [Jekyll support forum](https://talk.jekyllrb.com/).
 
-To receive support, select one of the [different plans](https://beautifuljekyll.com/plans) Beautiful Jekyll offers.
+To receive support, select one of the [different plans](https://beautifuljekyll.com/plans) Beautiful Jekyll offers. You can also use the [Discussions](https://github.com/daattali/beautiful-jekyll/discussions) area to try to get help from the community.
 
 # Contributions
 
