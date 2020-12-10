@@ -1,5 +1,301 @@
----
-layout: home
-title: My website
-subtitle: This is where I will tell my friends way too much about me
----
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Smooth Scroll -->
+  <script src="smooth-scroll.polyfills.min.js"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <!-- Theme CSS -->
+  <link href="application.css" rel="stylesheet">
+
+  <title>Eugene Yu</title>
+
+  <!-- font awesome -->
+  <script src="https://use.fontawesome.com/35ebfa7191.js"></script>
+  <!-- dev icons font -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+</head>
+
+<body>
+
+  <!--top navbar-->
+  <nav class="navbar sticky-top navbar-dark navbar-expand-sm">
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home" data-toggle="collapse" data-target=".navbar-collapse.show">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#summary" data-toggle="collapse" data-target=".navbar-collapse.show">Summary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" data-toggle="collapse" data-target=".navbar-collapse.show">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="front-page" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="hidden-xs col-sm-1 col-md-2 col-lg-3">
+        </div>
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 text-center hello-text">
+          <div class="front-page-content1">
+            <span class="title">Hi, <span class="im">I'm</span> <span>Eugene Yu</span></span><br>
+          </div>
+          <div class="front-page-content2">
+            <span class="summary quotes">Full-stack web developer</span>
+            <!--          <span class="summary quotes">A back-end web developer</span><span class="summary quotes">A software developer</span><br><br>-->
+          </div>
+          <br />
+          <div class="front-page-content3">
+            <a href="#about">
+              <div class="white-button center-block">
+                READ MORE
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--about me strip-->
+  <div class="about-me-strip" id="about">
+    <div class="container reveal">
+      <div class="title text-center">
+        Welcome to my personal webpage!
+      </div>
+      <div class="sub-title text-center">
+        Here's a little background about myself.
+      </div>
+    </div>
+
+  </div>
+  <div class="clear"></div>
+  <!--the blurb about me-->
+  <div class="about-me">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <img src="profile-pic.jpg" alt="Italian Trulli" width="340" height="525" class="center">
+          <!-- <%= image_tag("profile-pic.jpg", :class => 'center', :size => '340x525') %> -->
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+          After graduating with a degree in Mechanical Engineering from Carnegie Mellon University,
+          I worked as an assistant product manager at a BEA sensors for a year. I helped manage a few door sensor
+          products but
+          I never felt fulfilled in my work.
+          <br /><br />
+          This was when I started thinking back to my Carnegie Mellon days where
+          I did really well in an advanced level C++ course and was then asked to be the TA for the next semester. I
+          remembered how
+          engaging, challenging, and satisfying coding was and regretted not choosing software as my career path!
+          During my last
+          three months at work, I built webapps using Ruby on Rails and restudied data structures/algorithms in
+          python.
+          <br /><br />
+          Outside of coding, I like attending church activities, spending time with my family, and going to the gym. I
+          have also self-taught
+          myself how to play guitar by ear, and am a self-taught piano player by ear as well.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="clear"></div>
+  <div class="education-experience-skills" id="summary">
+    <div class="container">
+      <div class="row is-flex">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="box">
+            <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Education</h4>
+            <div class="line"></div>
+            2010 - 2014
+            <br><strong>Rice University</strong>
+            <br>Bachelor of Science Bioengineering and Business minor
+            <br>
+            <br>2016 - 2017
+            <br><strong>Carnegie Mellon University</strong>
+            <br>Master of Science Mechanical Engineering
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="box">
+            <h4><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Experience</h4>
+            <div class="line"></div>
+            2017 - 2018
+            <br><strong>BEA Sensors Americas</strong>
+            <br><span class="">Assistant Product Manager</span>
+            <br>
+            <br>
+            <br> 2018
+            <br><strong>Oak Atlantic</strong>
+            <br><span class="">Junior Ruby on Rails Developer</span>
+            <br>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="box">
+            <h4><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;Skills</h4>
+            <div class="line"></div>
+            <h1>
+              <div class="skill-icons">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-bootstrap-plain-wordmark colored"></i><br>
+                <i class="devicon-cplusplus-plain colored"></i>
+                <i class="devicon-ruby-plain-wordmark colored"></i>
+                <i class="devicon-rails-plain-wordmark colored"></i><br>
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="devicon-nodejs-plain colored"></i>
+                <i class="devicon-express-original colored"></i><br />
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-jquery-plain-wordmark colored"></i>
+                <i class="devicon-python-plain colored"></i><br />
+              </div>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="portfolio-strip text-center" id="projects">
+    <div class="container reveal">
+      Projects
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="portfolio text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 grid" id="portfolio-5">
+          <div class="portfolio-contents" onclick="window.open('https://www.youtube.com/watch?v=rEsKZhMeWJo');" style="cursor:pointer;">
+            <span>
+              <span class="title">Muscle Maximus</span><br>
+              <div class="line"></div>
+              <span class="summary">HP/Intel nationwide 2017 product design competition, our project won the Grand
+                final prize of $7500</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 grid" id="portfolio-1">
+          <div class="portfolio-contents" onclick="window.open('https://github.com/eugenius123/eugenius123.github.io/');"
+            style="cursor:pointer;">
+            <span>
+              <span class="title">Portfolio Website</span><br>
+              <div class="line"></div>
+              <span class="summary">My personal portfolio website using basic HTML/CSS and vanilla JS</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 grid" id="portfolio-2">
+          <div class="portfolio-contents" onclick="window.open('https://flixter-eugene-yu.herokuapp.com/');" style="cursor:pointer;">
+            <span>
+              <span class="title">Flixster</span><br>
+              <div class="line"></div>
+              <span class="summary">Video course website with user authentication, login, video upload and hosting
+                capabilities built on Rails framework</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 grid" id="portfolio-3">
+          <div class="portfolio-contents" onclick="window.open('https://nomster-eugene-yu.herokuapp.com/');" style="cursor:pointer;">
+            <span>
+              <span class="title">Nomster</span><br>
+              <div class="line"></div>
+              <span class="summary">Restaurant rating app built with Google maps integration and commenting on Rails
+                framework</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 grid" id="portfolio-4">
+          <div class="portfolio-contents" onclick="window.open('https://merntodo-eugene-yu.herokuapp.com/');" style="cursor:pointer;">
+            <span>
+              <span class="title">MERN todo list</span><br>
+              <div class="line"></div>
+              <span class="summary">A simple todo list built using MongoDB, Express, React, and Node</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 grid" id="portfolio-6">
+          <div class="portfolio-contents" onclick="window.open('http://grammable-eugene-yu.herokuapp.com/');" style="cursor:pointer;">
+            <span>
+              <span class="title">Grammable</span><br>
+              <div class="line"></div>
+              <span class="summary">Instagram clone with simple photo upload and commenting capabilities built using
+                Ruby on Rails</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contact-me text-center" id="contact-me">
+    <div class="container">
+      <h3>Contact</h3>
+      <div class="row">
+        <div class="hidden-xs col-sm-2 col-md-4 col-lg-4"></div>
+        <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 text-center">
+          <div class="line"></div><br>
+          <a href="https://www.linkedin.com/in/eugene-m-yu/" target="_blank"><i class="fa fa-linkedin-square"
+              aria-hidden="true"></i></a>&nbsp;
+          <a href="https://github.com/eugenius123" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>&nbsp;
+          <a href="https://www.facebook.com/Eugenius123" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <br><br>
+        </div>
+        <div class="hidden-xs col-sm-3 col-md-4 col-lg-4"></div>
+
+
+      </div>
+      <span class="copyright">&copy; 2018 Eugene Yu</span>
+
+    </div>
+  </div>
+
+
+
+  <!-- Smooth scrolling -->
+  <script type="text/javascript">
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jqugit ery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
