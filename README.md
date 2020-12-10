@@ -44,6 +44,7 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 <h2 id="sponsors">Sponsors 🏆</h2>
 
 - [Matt Artist](https://mja00.dev/)
+- [\_hyp3ri0n](https://hyperiongray.com)
 
 [Become a sponsor for Beautiful Jekyll and unlock special rewards\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)
 
