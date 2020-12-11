@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 'Maths expertes : correction de le question 50'
+title: 'Maths expertes : correction de la question 50'
 published: true
 ---
 
 
 Soit $n\in \dZ$. Démontrer que la fraction $\dfrac{12n+7}{3n+1}$ est irréductible.
 
-**Réponse :**
+**Réponse:**
 
 Soit $c\in \dZ^{*}$ un diviseur commun de $12n+7$ et $3n+1$ : $c$ divise toute combinaison linéaire de $12n+7$ et $3n+1$, soit par exemple $12n+7-4(3n+1)$ c'est-à-dire $3$.\
 Dans $\dN$ : les seuls diviseurs de 3 sont 1 et 3.
