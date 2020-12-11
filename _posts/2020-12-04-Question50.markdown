@@ -15,4 +15,4 @@ Raisonnons par l'absurde : supposons que $3$ divise $3n+1$.
 Comme $3$ divise $3n$ donc cela induirait que 3 divise $3n+1-3n$ c'est-à-dire $1$ d'où la contradiction.
 Tous les entiers relatifs sont divisibles par $1$ et $-1$, ainsi $12n+7$ et $3n+1$ ont pour seuls diviseurs communs $-1$ et $1$.
 
-:grin: La fraction $\dfrac{12n+7}{3n+1}$ est bien irréductible.
+<p style="font-size:30px">&#128540;</p> La fraction $\dfrac{12n+7}{3n+1}$ est bien irréductible.
