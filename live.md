@@ -11,6 +11,8 @@ Hang tight, this is where the live stream will be!
 ## 10am pacific / Noon central / 1pm eastern
 This is going to be a small charity stream to help out one of our own, Rob Hogan.
 
+[Rob Hogan's Go Fund Me](https://www.gofundme.com/f/support-for-rob-hogan)
+
 ## Tentative Schedule (all times are central)
 * Noon - 1pm: A @QQH_Designs paint along
 * 1pm - 2pm: Otherworld Stories
