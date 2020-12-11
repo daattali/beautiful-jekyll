@@ -5,7 +5,9 @@ subtitle: This is where the primary stream will be
 ---
 
 # Virtual Fur Squared
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LnMy3JPomYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 # The Next Stream is Saturday, December 12
 ## 10am pacific / Noon central / 1pm eastern
