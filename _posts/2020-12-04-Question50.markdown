@@ -7,11 +7,12 @@ published: true
 
 Soit $n\in \dZ$. Démontrer que la fraction $\dfrac{12n+7}{3n+1}$ est irréductible.
 
-**Réponse:**
+**Corrigé:**
 
 Soit $c\in \dZ^{*}$ un diviseur commun de $12n+7$ et $3n+1$ : $c$ divise toute combinaison linéaire de $12n+7$ et $3n+1$, soit par exemple $12n+7-4(3n+1)$ c'est-à-dire $3$.\
 Dans $\dN$ : les seuls diviseurs de 3 sont 1 et 3.
 Raisonnons par l'absurde : supposons que $3$ divise $3n+1$.
 Comme $3$ divise $3n$ donc cela induirait que 3 divise $3n+1-3n$ c'est-à-dire $1$ d'où la contradiction.
 Tous les entiers relatifs sont divisibles par $1$ et $-1$, ainsi $12n+7$ et $3n+1$ ont pour seuls diviseurs communs $-1$ et $1$.
-La fraction $\dfrac{12n+7}{3n+1}$ est bien irréductible.
+
+:grin: La fraction $\dfrac{12n+7}{3n+1}$ est bien irréductible.
