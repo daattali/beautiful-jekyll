@@ -18,7 +18,7 @@ For general information about proctoring, please see [this page](/parents). The 
 
     ![Posting a Teams message](/img/post-teams-message.png)
 
-1. Coaches will manage the session from 3:00-4:00. You don't need to introduce them or wrap up the session. If no coaches have arrived by 3:00, you can post a message that the session has been cancelled.
+1. Coaches will manage the session from 3:30. You don't need to introduce them or wrap up the session. If no coaches have arrived by 3:30, you can post a message that the session has been cancelled.
 
 1. End the meeting by selecting **End meeting** from the **Leave** dropdown.
 
