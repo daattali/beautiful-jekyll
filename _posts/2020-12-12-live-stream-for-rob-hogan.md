@@ -13,8 +13,7 @@ tags:
 We have a little charity stream for one of our own, Rob.  You probably have seen him at our dealer's den doing fantastic oil paintings, on stage at Whose Lion making us all laugh, or at LARP battling it out.
 
 # [Click here to go to live.fursquared.com](https://live.fursquared.com)
-
-  
+<br>
 
 ## Schedule (all times are central)
 * Noon - 1pm: A @QQH_Designs paint along
