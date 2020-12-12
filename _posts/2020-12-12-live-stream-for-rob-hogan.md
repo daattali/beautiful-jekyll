@@ -14,8 +14,7 @@ We have a little charity stream for one of our own, Rob.  You probably have seen
 
 # [Click here to go to live.fursquared.com](https://live.fursquared.com)
 
-
-
+  
 
 ## Schedule (all times are central)
 * Noon - 1pm: A @QQH_Designs paint along
