@@ -11,7 +11,7 @@ post: ''
 ---
 _The Simplify Your Home Life: a course for busy moms_ is a six week interactive course.
 
-**Closed October 26th. Round 2 coming in early 2021. Signup below to get on the waitlist.**
+**Round 2 coming in early 2021. Signup below to get on the waitlist.**
 
 #### COURSE DESCRIPTION
 
@@ -50,17 +50,16 @@ Unit Cleaning and tidying routines
 
 _What you will find in this course:_
 
-* Weekly workbook(s) and/or worksheet(s)
+* NEW: a guidebook to go along with the course full of worksheets, journal prompts, resources, and more
 * Weekly posts
 * Weekly action steps
 * Weekly tips relating to the topics
-* Live Q and A videos
 
-Go at your own pace or follow along live (recommended). Community engagement posts to share our journey with one another. You’ll have access to this course afterwards forever too. Signing up for round one? YOU GET ACCESS TO ANY FUTURE UPDATE OF THE COURSE CONTENT TOO!
+Go at your own pace, ask questions, learn alongside others.  You’ll have access to this course afterwards forever too. PS you get access to any future updates of this course too!
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-The introductory rate has a one time payment of $27USD or you can split into two payments. We can chat about payment methods after your application is received.
+The course is a one time payment of $27USD or you can split into two payments. Just send me an email at simplehomemom@gmail.com to chat about that before payment.
 
 **ABOUT ME**
 
