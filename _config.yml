@@ -4,7 +4,9 @@ description: Helping moms simplify life at home.
 author: 
 navbar-links:
   Popular: popular
-  Course: https://kellymbriggs.github.io/course/
+  Resources:
+  - Course: https://kellymbriggs.github.io/course/
+  - Simple Capsule Wardrobe Guide: https://kellymbriggs.github.io/simple-capsule-wardrobe-guide/
   Connect:
   - About me: https://kellymbriggs.github.io/aboutme/
   - Contact: https://kellymbriggs.github.io/contact/
