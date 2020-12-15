@@ -1,29 +1,5 @@
 <ul class="list-inline text-center footer-links">
 
-{%- if site.social-network-links.rss -%}
-  <li class="list-inline-item">
-    <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">RSS</span>
-    </a>
-  </li>
-{%- endif -%}
-
-{%- if site.social-network-links.email -%}
-  <li class="list-inline-item">
-    <a href="mailto:{{ site.social-network-links.email }}" title="Email me">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Email me</span>
-   </a>
-  </li>
-{%- endif -%}
-
 {%- if site.social-network-links.calendly -%}
   <li class="list-inline-item">
     <a href="https://calendly.com/{{ site.social-network-links.calendly }}" title="Schedule a meeting with me">
@@ -32,18 +8,6 @@
         <i class="fas fa-calendar-check fa-stack-1x fa-inverse"></i>
       </span>
       <span class="sr-only">Schedule a meeting with me</span>
-   </a>
-  </li>
-{%- endif -%}
-
-{%- if site.social-network-links.facebook -%}
-  <li class="list-inline-item">
-    <a href="https://www.facebook.com/{{ site.social-network-links.facebook }}" title="Facebook">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Facebook</span>
    </a>
   </li>
 {%- endif -%}
@@ -156,6 +120,18 @@
   </li>
 {%- endif -%}
 
+{%- if site.social-network-links.facebook -%}
+  <li class="list-inline-item">
+    <a href="https://www.facebook.com/{{ site.social-network-links.facebook }}" title="Facebook">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Facebook</span>
+   </a>
+  </li>
+{%- endif -%}
+
 {%- if site.social-network-links.pinterest -%}
   <li class="list-inline-item">
     <a href="https://www.pinterest.com/{{ site.social-network-links.pinterest }}" title="Pinterest">
@@ -164,6 +140,18 @@
         <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i>
       </span>
       <span class="sr-only">Pinterest</span>
+   </a>
+  </li>
+{%- endif -%}
+
+{%- if site.social-network-links.email -%}
+  <li class="list-inline-item">
+    <a href="mailto:{{ site.social-network-links.email }}" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
    </a>
   </li>
 {%- endif -%}
@@ -262,6 +250,18 @@
      <span class="sr-only">ORCID</span>
   </a>
  </li>
+{%- endif -%}
+
+{%- if site.social-network-links.rss -%}
+  <li class="list-inline-item">
+    <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li>
 {%- endif -%}
 
 {%- if site.social-network-links.google-scholar -%}
