@@ -20,6 +20,7 @@ social-network-links:
 share-links-active:
   twitter: true
   facebook: true
+  pinterest: true
   vk: false
 url-pretty: www.simplehomemom.com
 link-tags: true
