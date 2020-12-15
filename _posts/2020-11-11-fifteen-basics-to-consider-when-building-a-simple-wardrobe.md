@@ -45,6 +45,20 @@ For me, in one basic category for instance, that became leggings only for long p
 14. Sweater
 15. Cardigan
 
-_PS if this kind of thing interests you, my freebie Friday mail list received a look at my current capsule/simple wardrobe situation where you can see exactly what's in my simple wardrobe right now. If you’re not on the list yet, send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can add you to the list and you’ll get access to this freebie and all the past and future ones!_
+_And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [**_Simple Capsule Wardrobe Guide_**](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
+
+Other blogs you may enjoy:
+
+[Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
+
+[How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
+
+[How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
+
+**Thank you so much for reading to the end! Enjoyed this blog? I’d love if you shared it.**
+
+Thanks again,
+
+Kelly
 
 ![A picture of my closet with blog title. ](/uploads/20201107_135638_0000_compress80.jpg "Blogbasics")
