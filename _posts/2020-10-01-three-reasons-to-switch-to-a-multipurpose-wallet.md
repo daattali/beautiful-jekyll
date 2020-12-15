@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Three Reasons to Switch to a Multipurpose Wallet (review)
+title: 'Three Reasons to Switch to a Multipurpose Wallet '
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/fb_img_1601321667359_compress24.jpg"
