@@ -12,6 +12,8 @@ tags:
 - minimalism on a budget
 - minimal kids wardrobe
 - minimal kids wardrobes on a budget
+description: Tips for creating minimalist wardrobes for kids without breaking the
+  budget.
 
 ---
 Minimal living and wardrobes for kids on a budget? How does that even work? We have four kids so, I mean, that’s a lot of kids so it’s been important for us to figure out sustainable, not breaking the bank ways to do this. On the blog today I’m sharing how to create minimal wardrobes for kids on a budget.![An image of my son's closet with boxes up above.](/uploads/20200722_215357_0000_compress16-1.jpg "wadrobe")
@@ -34,10 +36,18 @@ I hosted a mega clothing and stuff swap party years back for a bunch of my mom f
 
 You can find also more general tips [here](https://www.becomingminimalist.com/thin-closet/) too from Joshua Becker’s Becoming Minimalist website that you may find helpful. Also Courtney Carver’s book [Project 333](https://amzn.to/2ZdURKp) on developing minimalist wardrobes may be helpful too.
 
-_And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” If you’d like that guide, feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send that off to you.  
-_  
-Cheers,
+_And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [**_Simple Capsule Wardrobe Guide_**](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
+
+Other blogs you may enjoy:
+
+[Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
+
+[How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
+
+[How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
+
+**Thank you so much for reading to the end! Enjoyed this blog? I’d love if you shared it.**
+
+Thanks again,
 
 Kelly
-
-Did you find this helpful? If so, I would greatly appreciate if you shared it.
