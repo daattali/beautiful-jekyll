@@ -24,10 +24,6 @@ fields:
   type: tag_list
   default: []
   label: tags
-- name: readtime
-  type: boolean
-  label: readtime
-  default: true
 - type: file
   name: thumbnail-img
   label: thumbnail-img
@@ -39,9 +35,16 @@ fields:
 - type: file
   name: share-img
   label: share-img
+- name: readtime
+  type: boolean
+  label: readtime
+  default: true
+  hidden: true
 - name: comments
   type: boolean
   label: comments
+  default: true
+  hidden: true
 - name: show-avatar
   type: boolean
   label: show-avatar
