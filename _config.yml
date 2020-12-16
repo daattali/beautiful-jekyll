@@ -32,7 +32,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: "/assets/img/self.jpeg"
 
 
 # --- Footer social media links --- #
@@ -48,14 +48,13 @@ social-network-links:
 #   youtube: c/daattali
   linkedin: ritobrata-ghosh
 #  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
   instagram: rito.dl
 #  twitch: yourname
 #  google-scholar: your google scholar
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: RSS of the site
 
 # --- General options --- #
 
@@ -81,22 +80,11 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "deep-learning, artificial-intelligence, ai, kaggle, machine-learning, vision, computer-vision, gan, reinforcement-learning"
 
 # --- Colours / background image --- #
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
-
-# navbar-col: "#EAEAEA"
-# navbar-text-col: "#404040"
-# navbar-border-col: "#DDDDDD"
-# page-col: "#FFFFFF"
-# text-col: "#404040"
-# link-col: "#008AFF"
-# hover-col: "#0085A1"
-# footer-col: "#EAEAEA"
-# footer-text-col: "#777777"
-# footer-link-col: "#404040"
 
 navbar-col: "#02919E"
 navbar-text-col: "#FFFFFF"
@@ -141,10 +129,10 @@ mobile-theme-col: "#02919E"
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
 # whether or not you want to allow users to opt out of tracking.
-matomo:
- site_id: "9"
- uri: "demo.wiki.pro"
- opt-out: false
+#matomo:
+ #site_id: "9"
+ #uri: "demo.wiki.pro"
+ #opt-out: false
 
 # --- Comments --- #
 
@@ -164,9 +152,9 @@ matomo:
 # If you want to use reCaptcha for staticman (optional for spam protection), then fill
 # in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
 # See more details at https://staticman.net/
-# staticman:
-#  repository : "ghosh-r/ghosh-r.github.io"
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+staticman:
+ repository : "ghosh-r/ghosh-r.github.io"
+ branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
 # #  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
 #  reCaptcha:
 #   siteKey  : "6Lcxs_kZAAAAAOojYrsVrzxOZOZtE9q-les47-Zw"
