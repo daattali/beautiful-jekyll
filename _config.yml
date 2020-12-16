@@ -54,7 +54,7 @@ defaults:
     cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
     comments: true
     social-share: true
-    readtime: false
+    readtime: true
 - scope:
     path: ''
   values:

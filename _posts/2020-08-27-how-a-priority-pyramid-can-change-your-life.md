@@ -24,7 +24,7 @@ Take some time and write down all of the things that are important to you. Organ
 
 Example of an ordered priority pyramid – it’ll look different for everyone:
 
-![A picture of my ordered priorities.](/uploads/20200414_094404_0000-1.png "pyramid")
+![A picture of my ordered priorities.](/uploads/spiritual-life.jpg "pyramid")
 
 ## Put Your Priority Pyramid into Practice
 
