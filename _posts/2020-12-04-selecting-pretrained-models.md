@@ -8,8 +8,9 @@ tags: [deep-learning, neural-networks, transfer-learning]
 comments: true
 cover-img: /assets/img/nn-sheet.jpg
 ---
+#### Introduction
 
-There isn't exactly a cheat sheet if you are looking for that. You can do it through these steps-
+When it comes to Deep Learning models, there are many architectures, and then there are variations of those architectures. Then there are hyperparameters to tune. It is easy to feel a bit overwhelmed when it comes to available options and choosing from them to solve the problem at hand. However you shouldn't feel helpless. These are some general advice to get started with using pre-trained architectures for transfer learning, or using an architecture for training the model from scratch-
 
 #### Read Respective Papers
 
