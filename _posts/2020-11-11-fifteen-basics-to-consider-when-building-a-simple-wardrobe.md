@@ -9,9 +9,9 @@ tags:
 - simple wardrobe
 - capsule wardrobe
 - wardrobe basics
-description: Basic pieces of clothing to consider when you want to build a simple
-  wardrobe for yourself.
-
+description: Basic pieces of clothing to consider when you want to build a simple wardrobe for yourself.
+redirect_from:
+  - 2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe
 ---
 **_What are the basics in your wardrobe?_**
 
@@ -54,11 +54,5 @@ Other blogs you may enjoy:
 [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
 
 [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
-
-**Thank you so much for reading to the end! Enjoyed this blog? I’d love if you shared it.**
-
-Thanks again,
-
-Kelly
 
 ![A picture of my closet with blog title. ](/uploads/20201107_135638_0000_compress80.jpg "Blogbasics")

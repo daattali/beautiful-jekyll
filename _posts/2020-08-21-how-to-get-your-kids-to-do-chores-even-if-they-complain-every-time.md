@@ -1,25 +1,22 @@
 ---
 layout: post
 title: How to Get Your Kids to do Chores Even if they Complain Every Time
-subtitle: ''
-gh-repo: daattali/beautiful-jekyll
-gh-badge:
-- star
-- fork
-- follow
+subtitle: ""
 tags:
-- chores for kids
-- age approproate chores
-- getting your kids to do chores
-- habits for the early years
-- children's habits
-- habits for kids
-- good habits for kids
-- habits of happy kids
+  - chores for kids
+  - age approproate chores
+  - getting your kids to do chores
+  - habits for the early years
+  - children's habits
+  - habits for kids
+  - good habits for kids
+  - habits of happy kids
 comments: true
-
+redirect_from:
+  - 2020-08-21-how-to-get-your-kids-to-do-chores-even-if-they-complain-every-time
 ---
-![My kids eating breakfast at the table.](/uploads/20200623_212612_0000-1.png "kidsattable")
+
+![My kids eating breakfast at the table.](/uploads/20200623_212612_0000-1.jpg "kidsattable")
 
 This can be how it looks like here some days - you might know what I mean. The complaining. I’m not going to pretend it’s perfect here. Because no home or kid is perfect. Although apparently, I was a pretty good kid with chores, according to my dad. Until I hit the teen years, that is. But, that’s a story for another day. Ha! Today on the blog, I’m going to share with you how to get your kids to do chores even if they complain every time.
 
@@ -44,9 +41,3 @@ Afterall…the hope for my kids - going forward in life:
 And routines that build good habits, I’ve found, have been 100% worth it so far.
 
 _PS if chores is an area you’d like to work on with your kids, my mail list is receiving a free sheet of age appropriate suggestions for chores for kids this Friday! If you’re not on it yet (why not? 😉), you can send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _to get that freebie._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

@@ -1,7 +1,7 @@
 ---
 title: Simple Home Mom
 description: Helping moms simplify life at home.
-author: 
+author: Kelly Briggs
 navbar-links:
   Popular: popular
   Resources:
@@ -41,7 +41,7 @@ date_format: "%B %-d, %Y"
 timezone: America/Vancouver
 markdown: kramdown
 highlighter: rouge
-permalink: "/:year-:month-:day-:title/"
+permalink: "/:title/"
 paginate: 5
 kramdown:
   input: GFM
@@ -51,6 +51,7 @@ defaults:
     type: posts
   values:
     layout: post
+    cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
     comments: true
     social-share: true
     readtime: false
@@ -71,4 +72,5 @@ exclude:
 - docs/
 plugins:
 - jekyll-paginate
+- jekyll-redirect-from
 - jekyll-sitemap

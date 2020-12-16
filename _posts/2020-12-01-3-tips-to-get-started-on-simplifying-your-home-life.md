@@ -1,19 +1,20 @@
 ---
 post: post
 tags:
-- simple home tips
+  - simple home tips
 readtime: true
 thumbnail-img: "/uploads/20201201_140718_0000_compress26.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 show-avatar: true
-title: '3 Tips to Get Started on Simplifying Your Home Life '
-description: Simplifying your home need not to be complicated, but starting somewhere
-  is how you get started.
-subtitle: ''
-share-img: ''
+title: "3 Tips to Get Started on Simplifying Your Home Life "
+description: Simplifying your home need not to be complicated, but starting somewhere is how you get started.
+subtitle: ""
+share-img: ""
 comments: false
-
+redirect_from:
+  - 2020-12-01-3-tips-to-get-started-on-simplifying-your-home-life
 ---
+
 Recently, I was chatting with Elizabeth and [Bonnie](www.bonnielandry.ca) on the podcast [Make Joy Normal](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761) about keeping it simple. Today on the blog, I'm sharing with you the three tips I shared with them for getting started with simplifying your home life, especially if you don't know where to start:
 
 1\. Start somewhere. Start anywhere. There are so many methods or places to start, but really just starting is the best thing to do. Maybe it's a drawer in your kitchen, or taking things off your to do list. Maybe it's a massive declutter of your home. Starting can be the biggest battle!
@@ -27,9 +28,3 @@ Recently, I was chatting with Elizabeth and [Bonnie](www.bonnielandry.ca) on the
 And. If you are a homeschooling family or have a family, you will find some encouragement and helpful tips in this lovely podcast. Check it out [here](https://podcasts.apple.com/ca/podcast/make-joy-normal-cozy-homeschooling/id1512837291). The episode I was on is [here](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761).
 
 _PS if you'd like to really dive into simplifying, you may love the freebie my mail list received called ten questions to ask yourself to simplify your home life. If you'd like that too, feel free to send me an email at simplehomemom@gmail.com._
-
-**Enjoyed this blog and think it would be helpful to other moms? I'd love if you shared it. Thank you.**
-
-Cheers,
-
-Kelly

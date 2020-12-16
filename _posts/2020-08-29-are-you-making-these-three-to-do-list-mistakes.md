@@ -1,18 +1,21 @@
 ---
 layout: post
 title: Are you Making These Three to do List Mistakes?
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/bulletjournal.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- to do lists
-- to do list tips
-- minimal to do lists
-- to do list mistakes
-
+  - to do lists
+  - to do list tips
+  - minimal to do lists
+  - to do list mistakes
+redirect_from:
+  - 2020-08-29-are-you-making-these-three-to-do-list-mistakes
 ---
-![](/uploads/20200702_110540_0000-1.png)
+
+![](/uploads/20200702_110540_0000-1.jpg)
 
 The pace of the world in general tends to be busy, busy, busy. I know for myself, that I can catch myself often speeding up, so it’s a constant reminding myself to slow down and smell the roses and reassess my to do list, for starters. At the top of my planner for a few weeks now is the reminder to do: less. less. less. And to focus on the [priorities](https://www.eastcoastkelly.com/planning/2020/04/14/how-a-priority-pyramid-can-change-your-life.html) and what matters most for me. I've been a geeky minimalist [bullet journal](https://amzn.to/38jOHvg) planner for a few years now (if you have no clue what I'm talking about, I was there too. It's a simple planning method that's had a positive impact on my life and mental health). Today on the blog, I’m sharing with you three to do list mistakes that can be made. Something to think about.
 
@@ -31,9 +34,3 @@ As mentioned, the first to go at the top of my weekly to do list is: less. less.
 **So here's to LESS. And MORE of what is needed in our lives!**
 
 _PS if this is a struggle for you, you may like what my mail list is receiving for their freebie Friday. The simple guide to finding more time and an attached worksheet. If you're not on it yet, you can email me your email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can email you that directly._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

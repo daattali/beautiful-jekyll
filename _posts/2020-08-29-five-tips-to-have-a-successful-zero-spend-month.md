@@ -1,17 +1,20 @@
 ---
 layout: post
 title: Five Tips to have a Successful Zero Spend Month
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: ""
 share-img: "/assets/img/path.jpg"
 tags:
-- zero spend months
-- simple budgeting
-- mindful spending
-
+  - zero spend months
+  - simple budgeting
+  - mindful spending
+redirect_from:
+  - 2020-08-29-five-tips-to-have-a-successful-zero-spend-month
 ---
-![Zero spend budget rules in my planner.](/uploads/20200519_151824_0000-1.png "budget")
+
+![Zero spend budget rules in my planner.](/uploads/zero-spend-month.jpg "budget")
 
 I have been sharing weekly minimal living tips with [Instagram](https://www.instagram.com/eastcoastkelly/) friends and thought I'd share my tips here for you too today.
 
@@ -34,9 +37,3 @@ And what's been working really well for us lately is sticking to a - zero spend 
 What does it look like on paper for us? Instead of setting aside certain amounts for spending areas (which in the past I'd want to spend if we didn't dip into it), we just track every purchase and take a look at it throughout the month and at the end of the month going forward. Talking about it. Did we really need xyz? And to make new "rules" going forward. Mindful budgeting and saving.
 
 _Want to get started with the zero spend method we use? I have a simple spending tracker monthly worksheet for you that'll help you clearly see what areas you need to work on very quickly. It's been so helpful for us. Since we started doing zero spending mindset for our budgeting, we’ve finally made a significant dent in our savings for our basement reno. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for that tracker for free!_
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

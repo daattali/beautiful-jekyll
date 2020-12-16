@@ -1,18 +1,21 @@
 ---
 layout: post
 title: Four Ways to be Realistic with Your to do List
+description: ""
 subtitle: Keeping it simple.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200822_110434_0000_compress19.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- to do lists
-- bullet journaling
-- bullet journal
-- planning
-- priorities
-
+  - to do lists
+  - bullet journaling
+  - bullet journal
+  - planning
+  - priorities
+redirect_from:
+  - 2020-08-26-four-ways-to-be-realistic-with-your-to-do-list
 ---
+
 You are worth so much more than the size of your crossed off to do list. But goodness knows those lists can also help in the time of decluttering or other pressing matters.⁣⁣⁣⁣⁣ Have an unending to do list? Feel like you are never on top of things? ⁣⁣⁣⁣⁣Today on the blog I'm going to leave you with some to do list tips I read in a [Forbes article](https://www.forbes.com/sites/bryancollinseurope/2020/02/20/how-to-put-together-a-realistic-to-do-list-every-day/#4476afb519e3) that were simple and practical:⁣
 
 ## Keep things simple
@@ -33,10 +36,4 @@ Do a brain dump if you feel the need to have a massive to do list and then set a
 
 ![A picture of my journal opened up.](/uploads/bulletjournal.jpg "bulletjournal")
 
-_If you liked these tips and love your to do lists or want to get better at them, learning the simple bullet journal method may be for you too! I have some great links to get you started with using this method if that sounds like something that would be helpful. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those links._ 
-
-_Cheers,_
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
+_If you liked these tips and love your to do lists or want to get better at them, learning the simple bullet journal method may be for you too! I have some great links to get you started with using this method if that sounds like something that would be helpful. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those links._

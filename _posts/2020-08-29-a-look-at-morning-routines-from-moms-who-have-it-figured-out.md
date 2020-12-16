@@ -1,15 +1,18 @@
 ---
 layout: post
 title: A Look at Morning Routines from Moms Who Have it Figured Out
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- morning routines for moms
-- affirmations for moms
-
+  - morning routines for moms
+  - affirmations for moms
+redirect_from:
+  - 2020-08-29-a-look-at-morning-routines-from-moms-who-have-it-figured-out
 ---
+
 Not long ago, I did up a blog on a bit about [my current morning routine](https://www.eastcoastkelly.com/2020-08-27-how-to-have-a-morning-routine-with-children-around/) and was interested to hear how others did theirs. I had a few moms reach out to me to share theirs. Perhaps you will find them helpful as well! Today on the blog, I’ll be sharing a handful of morning routines from moms who have it figured out.
 
 ## From my friend Terri, a mom of two littles, and a fellow business owner:
@@ -42,11 +45,11 @@ You can find Tabitha on Instagram at [brick_housebodies](https://www.instagram.c
 
 Here's what is in my morning routine that I learned about through the book The Miracle Morning (it's so good and helpful!).
 
-* Prayer. Usually I am doing a current Bible study with a group I'm in.
-* Affirmations & visualizations. Just short phrases of things I believe like scripture, my values, and goals.
-* Reading. I'm usually reading a personal book and business one.
-* Writing. I write a line of daily gratitude, a social media post, and a blog post now. Some days it's notes for a live video I'm doing. Or a special project. Just something I'm writing. It varies by day.
-* A quick stretch to get my body moving.
+- Prayer. Usually I am doing a current Bible study with a group I'm in.
+- Affirmations & visualizations. Just short phrases of things I believe like scripture, my values, and goals.
+- Reading. I'm usually reading a personal book and business one.
+- Writing. I write a line of daily gratitude, a social media post, and a blog post now. Some days it's notes for a live video I'm doing. Or a special project. Just something I'm writing. It varies by day.
+- A quick stretch to get my body moving.
 
 You can read all about how I designed my morning routine by taking a read through [The Miracle Morning book](https://amzn.to/398G8nw)! It changed my morning routine game last year and I haven’t gone back. You can find me on Instagram at [eastcoastkelly](https://www.instagram.com/eastcoastkelly/).
 
@@ -59,9 +62,3 @@ You can find Mandy Yang on Instagram at [amongallofthis](https://www.instagram.c
 _Have a morning routine to share? Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to add yours too._
 
 _Also - Last year, I finally started a morning routine for myself and it’s really helped my days out so much. I feel more peaceful throughout the rest of the day and I’m finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/398G8nw) _that everything clicked for me. I was so inspired. If you’d like a quick breakdown of what the Miracle Morning is and have an overview of how to create your own, I can send you a basic overview from what I read. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

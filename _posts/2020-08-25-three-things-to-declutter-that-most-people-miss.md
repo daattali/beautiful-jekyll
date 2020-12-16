@@ -1,26 +1,23 @@
 ---
 layout: post
 title: Three Things to Declutter that Most People Miss
-subtitle: ''
-gh-repo: daattali/beautiful-jekyll
-gh-badge:
-- star
-- fork
-- follow
+description: ""
+subtitle: ""
 tags:
-- decluttering
-- decluttering as a family
-- joshua becker
-- declutter schedules
-- declutter screen times
-- declutter toxic relationships
-- what matters most
-- declutter
+  - decluttering
+  - decluttering as a family
+  - joshua becker
+  - declutter schedules
+  - declutter screen times
+  - declutter toxic relationships
+  - what matters most
+  - declutter
 comments: true
-
+redirect_from:
+  - 2020-08-25-three-things-to-declutter-that-most-people-miss
 ---
 
-![A picture of a bunch of household things to declutter.](/uploads/declutter.png "declutter")
+![A picture of a bunch of household things to declutter.](/uploads/declutter.jpg "declutter")
 
 We’re all on a journey and there comes a point in our lives where we see what needs to go so very clearly. I started my deep physical declutter for our home a handful of years ago, but through that time I read from [Joshua Becker](https://www.becomingminimalist.com/) and others that it’s more than just the physical clutter. Mental declutter is there too. Holding us back from what matters most. Today on the blog I’m sharing about three things to declutter that most people miss.
 
@@ -41,14 +38,8 @@ This one is so, so tough. But it’s good to reassess those relationships in you
 And if you are feeling bogged down in life, it might be time to take a look at what you need to declutter. And then ask yourself:
 
 **What can I remove from my life today?  
-What can I add that fills me up?**_
+What can I add that fills me up?**\_
 
 Focusing on what matters most to you.
 
 _And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
-
-_Cheers,_
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

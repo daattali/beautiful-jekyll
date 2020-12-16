@@ -1,22 +1,19 @@
 ---
 layout: post
 title: A Look at Laundry Routines from Families Who Have it Figured Out
-subtitle: ''
-gh-repo: daattali/beautiful-jekyll
-gh-badge:
-- star
-- fork
-- follow
+subtitle: ""
 tags:
-- laundry routines
-- family laundry routines
-- tidying routine
-- staying on top of laundry
+  - laundry routines
+  - family laundry routines
+  - tidying routine
+  - staying on top of laundry
 comments: true
 description: Laundry routines need a little bit of planning to streamline.
-
+redirect_from:
+  - 2020-08-20-a-look-at-laundry-routines-from-families-who-have-it-figured-out
 ---
-![Person in a laundry basket at the laundromat.](/uploads/20200512_114953_0000.png "laundry")
+
+![Person in a laundry basket at the laundromat.](/uploads/laundry-routine.jpg "laundry")
 
 Not long ago, I did up a couple blogs on our [current laundry routine](https://www.eastcoastkelly.com/cleaning%20&%20tidying/2020/04/30/our-current-laundry-routine-that-has-taken-the-stress-off-of-laundry.html) and was interested to hear how others did theirs. I had a couple friends reach out to me to share theirs. Perhaps you will find them helpful as well!
 
@@ -49,9 +46,3 @@ Other blogs you may enjoy:
 [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
 
 [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
-
-**Thank you so much for reading to the end! Enjoyed this blog? I’d love if you shared it.**
-
-Thanks again,
-
-Kelly

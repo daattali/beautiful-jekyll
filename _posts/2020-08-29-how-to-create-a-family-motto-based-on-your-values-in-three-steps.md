@@ -1,17 +1,20 @@
 ---
 layout: post
 title: How to Create a Family Motto Based on Your Values in Three Steps
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: ""
 share-img: "/assets/img/path.jpg"
 tags:
-- family motto
-- family values
-- family core values
-
+  - family motto
+  - family values
+  - family core values
+redirect_from:
+  - 2020-08-29-how-to-create-a-family-motto-based-on-your-values-in-three-steps
 ---
-![A frame with the blog title in it and plants to the right.](/uploads/20200507_100302_0000.png "familymotto")
+
+![A frame with the blog title in it and plants to the right.](/uploads/family-motto.jpg "familymotto")
 
 When I went through the whole decluttering thing years back and started learning about [minimalism](https://amzn.to/2WdA0oD), I learned a couple of things:
 
@@ -26,23 +29,23 @@ Want to figure out quickly what your true values are? Take a moment and do this 
 
 Such as:
 
-* Do you get outside together?
-* Play board games together?
-* Watch tv together?
-* Eat dinner together?
-* Read together?
-* Listen attentively to each other?
-* Do projects together?
-* Do you value being hospitable?
+- Do you get outside together?
+- Play board games together?
+- Watch tv together?
+- Eat dinner together?
+- Read together?
+- Listen attentively to each other?
+- Do projects together?
+- Do you value being hospitable?
 
 This list could go on and on, but take some time to think, and perhaps quickly jot down those that come to mind. This is a great place to start.
 
 Here are some of my personal values, for reference:
 
-* I value growth. Daily time spent growing in areas I want to grow in (i.e. spiritual, learning new things, hobbies, business development etc).
-* I value close family relationships. I take time daily to check in with my people. And listen to what they are sharing with me.
-* I value hard work. To give my all at what I do.
-* I value taking care of myself to take care of others. Both physical, mental, and spiritual daily.
+- I value growth. Daily time spent growing in areas I want to grow in (i.e. spiritual, learning new things, hobbies, business development etc).
+- I value close family relationships. I take time daily to check in with my people. And listen to what they are sharing with me.
+- I value hard work. To give my all at what I do.
+- I value taking care of myself to take care of others. Both physical, mental, and spiritual daily.
 
 ## Step two. Dive deep into your priorities as a family.
 
@@ -59,9 +62,3 @@ Ours says:
 We're using this time to work on sibling relationships. Communication. Closeness. Taking time to listen to one another. Solving problems. And we’ll be working on updating our own family values and then family motto in the near future too.
 
 _And if you’d like a simple template and examples of 30 family values to start drafting your own family motto, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those free resources I found for you._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

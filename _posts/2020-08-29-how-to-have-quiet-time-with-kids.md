@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Have Quiet Time with Kids
+description: ""
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
@@ -11,9 +12,11 @@ tags:
 - quiet time afternoons
 - simple quiet time
 - benefits of quiet time for kids
-
+redirect_from:
+  - 2020-08-29-how-to-have-quiet-time-with-kids
 ---
-![A kid sitting at the table thinking.](/uploads/quiettime.png "quiettime")
+
+![A kid sitting at the table thinking.](/uploads/quiettime.jpg "quiettime")
 
 I don't know about you, but by the time I'm done lunch, I'm pooped. My ears. My body. My everything just needs some down time. I have four children, two with higher demands as they are both under five, so rest and quiet is needed for all of us. And we take that time every afternoon. We call it quiet time in our house. Today on the blog, I'm sharing with you how to have a quiet time routine with kids (and by taking a look at what we do).
 
@@ -40,8 +43,3 @@ And don’t take it just from me, [here’s a blog](https://blog.outschool.com/q
 
 _I also recently put together a step by step simple template for quiet time if you'd like that too. Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
 
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

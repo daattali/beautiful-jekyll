@@ -1,16 +1,19 @@
 ---
 layout: post
 title: The Ultimate Stress Free Planning Method Anyone Can Use
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: ""
 share-img: "/assets/img/path.jpg"
 tags:
-- loop planning
-- stress free planning
-- flexible planning
-
+  - loop planning
+  - stress free planning
+  - flexible planning
+redirect_from:
+  - 2020-08-26-the-ultimate-stress-free-planning-method-anyone-can-use
 ---
+
 Today on the blog I'm sharing with you a planning method I learned through the [homeschooling world](https://readaloudrevival.com/looping-task-management-for-recovering/) that applies to anyone. Anything. Any schedule. Any kind of life.
 
 So if you're feeling overwhelmed. If you're juggling all the things. If you constantly feel behind. Or if you just want to reduce the daily load, this method is for you!
@@ -27,15 +30,9 @@ Start with one, go through the next task. Keep going and then repeat. That's the
 
 ## Ideas of where to add loop planning
 
-* Errand running
-* Housework
-* Homeschooling
-* Work tasks that don't need to be done daily
+- Errand running
+- Housework
+- Homeschooling
+- Work tasks that don't need to be done daily
 
   _These are the areas I use too. If you'd like to dive in and start creating your own loop plan and are looking for a template, I have one for you! Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that._
-
-Cheers,
-
-_Kelly_
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

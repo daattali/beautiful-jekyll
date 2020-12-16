@@ -1,17 +1,20 @@
 ---
 layout: post
 title: How to Design a Simple Exercise Routine
+description: ""
 subtitle: Keep it simple.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: ""
 share-img: "/assets/img/path.jpg"
 tags:
-- minimal exercise routine
-- simple exercise routine
-- simple exercise
-- HIIT exercise routine
-
+  - minimal exercise routine
+  - simple exercise routine
+  - simple exercise
+  - HIIT exercise routine
+redirect_from:
+  - 2020-08-27-how-to-design-a-simple-exercise-routine
 ---
+
 A while back, I was helping my hubby come up with a simple exercise plan for himself to do before work that didn't require a lot of space or equipment. I remembered reading about how the Minimalists stripped back to a simple exercise routine in their book [Everything that Remains](https://amzn.to/2Cu5u3c) after ditching going to the gym to save on money and time. And then I found a blog with more details on it [here](https://www.theminimalists.com/18min/). My husband was easily able to make his own too!
 
 ## Using HIIT routines: what are they?
@@ -33,16 +36,10 @@ And I found out there were tons of ways to do HIIT routines and exercises, so I 
 
 Notes:
 
-* Repeat the above routine X amount of times that you want (I'm currently doing 10 and 15 minutes..hoping to work that up). Each time through is 5 minutes.
-* Each individual exercise is 50 seconds, followed by ten seconds of rest.
-* Find a HIIT timer that does 50 seconds, 10 seconds. You can find an app or a YouTube video that can do this. I use this one [here](https://www.youtube.com/watch?v=-nRDPNGj2EU&list=PL9VK7qHep7EdvuE-Ux_hVKsADmizewBA5&index=2&t=609s) for when I do 15 minutes.
+- Repeat the above routine X amount of times that you want (I'm currently doing 10 and 15 minutes..hoping to work that up). Each time through is 5 minutes.
+- Each individual exercise is 50 seconds, followed by ten seconds of rest.
+- Find a HIIT timer that does 50 seconds, 10 seconds. You can find an app or a YouTube video that can do this. I use this one [here](https://www.youtube.com/watch?v=-nRDPNGj2EU&list=PL9VK7qHep7EdvuE-Ux_hVKsADmizewBA5&index=2&t=609s) for when I do 15 minutes.
 
 _And that's it!_
 
 _If you'd like a simple worksheet to fill in your own simple exercise routine and with a few more exercise suggestions for each category, I can send you my personal setup too. Although they are all exercises that I know well and enjoy. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that worksheet for free._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

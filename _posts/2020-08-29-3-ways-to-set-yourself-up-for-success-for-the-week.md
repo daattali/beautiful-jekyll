@@ -1,18 +1,21 @@
 ---
 layout: post
 title: 3 Ways to Set Yourself Up for Success for the Week
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/bulletjournal.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- planning to beat procrastination
-- beating procrastination
-- weekly goal setting
-- what the most successful people to do on mondays
-
+  - planning to beat procrastination
+  - beating procrastination
+  - weekly goal setting
+  - what the most successful people to do on mondays
+redirect_from:
+  - 2020-08-29-3-ways-to-set-yourself-up-for-success-for-the-week
 ---
-![A picture of someone writing in their planner.](/uploads/success.png "monday")
+
+![A picture of someone writing in their planner.](/uploads/success.jpg "monday")
 
 Wish you had a bit of motivation and were able to spring forward into the week every Monday? According to [Time Magazine](https://time.com/2807006/15-things-successful-people-do-on-monday-mornings/), there are 15 things successful people routinely do on Monday mornings. Today on the blog, I'm going to share with you 3 ways to set yourself up for success for the week that the most successful people do every Monday.
 
@@ -35,9 +38,3 @@ Simple, right? It would be hard to get moving and feel that energy if we literal
 Most of us have a tendency to stick the toughest challenges near the end, but our energy is usually strongest earlier in the day and week. Is this something you do too? I'm back and forth on this. Sometimes I like to avoid by doing something else I like first. ....There's just something about the start of the week that gets me every time. A fresh start. Hopefulness. The unknown adventures to unfold. So here's to today and this week. Let's go!⁣⁣
 
 _If you'd like to dive more into goal setting, not just for Mondays, I came across a fantastic way to work through a systematic, but simple way to do this that I read in_ [_The Bullet Journal book_](https://amzn.to/3gWL0yI) _that has stuck with me. I'd be happy to share with you my notes on how to apply that step by step method. Just send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send along the steps from my notes I took when reading the book._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

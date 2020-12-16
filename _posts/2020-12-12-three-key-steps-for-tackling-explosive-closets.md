@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Three Key Steps for Tackling Explosive Closets
-subtitle: ''
-cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
+subtitle: ""
 thumbnail-img: "/uploads/capsule.jpg"
-share-img: ''
+share-img: ""
 tags:
-- capsule wardrobes
-- tackling explosive closets
-- simple wardrobes
-- simple capsule wardrobe guide
-- capsule wardrobe guide
-description: Learning helpful ways to tackle explosive, full closets and creating
-  a simpler wardrobe.
-
+  - capsule wardrobes
+  - tackling explosive closets
+  - simple wardrobes
+  - simple capsule wardrobe guide
+  - capsule wardrobe guide
+description: Learning helpful ways to tackle explosive, full closets and creating a simpler wardrobe.
+redirect_from:
+  - 2020-12-12-three-key-steps-for-tackling-explosive-closets
 ---
+
 Are you looking at your wardrobe and sometimes feel like catching all the clothes on fire and restarting from scratch? I thankfully had a friend go through mine with me before I did that. Today on the blog, I'm sharing three key steps for tackling explosive closets.
 
 ### Take inventory of your clothing first
@@ -44,9 +44,3 @@ Other blogs you may enjoy:
 [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
 
 [How to Declutter Your Wardrobe Even If You Don't Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
-
-**Thank you so much for reading to the end! Enjoyed this blog? I'd love if you shared it.**
-
-Thanks again,
-
-Kelly
