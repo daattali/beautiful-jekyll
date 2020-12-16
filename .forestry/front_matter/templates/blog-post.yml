@@ -46,5 +46,12 @@ fields:
   type: boolean
   label: show-avatar
   default: true
+- name: redirect_from
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: redirect_from
 pages:
 - _posts/2020-12-01-3-tips-to-get-started-on-simplifying-your-home-life.md
