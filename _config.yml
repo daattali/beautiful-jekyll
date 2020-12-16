@@ -32,7 +32,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "/assets/img/self.jpeg"
+# title-img: "/assets/img/self.jpeg"
 
 
 # --- Footer social media links --- #
@@ -154,7 +154,7 @@ mobile-theme-col: "#02919E"
 # See more details at https://staticman.net/
 staticman:
  repository : "ghosh-r/ghosh-r.github.io"
- branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+ branch     : "master"  # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
 # #  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
 #  reCaptcha:
 #   siteKey  : "6Lcxs_kZAAAAAOojYrsVrzxOZOZtE9q-les47-Zw"
@@ -210,4 +210,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
