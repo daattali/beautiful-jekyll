@@ -10,7 +10,8 @@ tags:
 - Chores for children
 - family strengths
 description: Helpful ideas for assigning chores with kids by looking at their strengths.
-
+redirect_from:
+  - 2020-11-19-how-to-use-strengths-to-assign-family-chores
 ---
 _Working from our strengths._ Everyone of us has different gifts, skills, things we like, and strongly don't like (handwashing dishes is my nemesis). A couple months ago, I had an idea pop into my head to focus more on our strengths when working together as a family vs expecting similar from everyone. Today on the blog, I'm sharing about how to use strengths to assign family chores.
 
@@ -41,11 +42,5 @@ So oftentimes now we keep in mind the things we are good at and what makes us ha
 Little tweaks like this can make a big difference.
 
 _PS if you'd like a list of fifty ideas of chores you can do as a family, feel free to email me at simplehomemom@gmail.com and I can send that off to you._
-
-**Did you enjoy this blog? If so, it would mean the world to me if you shared it!**
-
-Thank you,
-
-Kelly
 
 ![Overview of blog notes with family in the background. ](/uploads/0001-13327144259_20201119_095637_0000_compress3.jpg "Familyhugging")

@@ -1,29 +1,32 @@
 ---
 layout: post
 title: How to Reuse these Ten Items to Save You Money
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: ""
 share-img: "/assets/img/path.jpg"
 tags:
-- repurposing items
-- frugal living
-- saving money
-
+  - repurposing items
+  - frugal living
+  - saving money
+redirect_from:
+  - 2020-08-29-how-to-reuse-these-ten-items-to-save-you-money
 ---
-![A picture of my garbage can on the counter.](/uploads/20200714_133819_0000-1.png "bathroomcounter")
+
+![A picture of my garbage can on the counter.](/uploads/20200714_133819_0000-1.jpg "bathroomcounter")
 
 Making do vs. buying new and minimalism. Minimalism to me means being content with what I have and instead of clicking BUY NOW. I wait. And think. Can I borrow, find, thrift, or repurpose? I used to scoff at my father using peanut butter jars for paint or resusing milk bags for food storage. That's not what the cool kids do, right?! And alas, here I am, with years behind me and with four kids embracing the same. Reusability of items and making do. Thanks, dad. I finally listened. Today on the blog, I’m sharing about how to reuse ten items to save you money.
 
- 1. The blog image above is my [protein powder container](https://amzn.to/2WjQBHt) in all its glory as a bathroom garbage can (on the counter no less because the toddler dumps out the garbage on the regular).
- 2. Shampoo bottle for holding dish soap.
- 3. [Kitty litter plastic bucket](https://amzn.to/3h1CvTk) for under the sink cleaning supply bucket.
- 4. [Mason jars](https://amzn.to/3esjmZ0) given to use for water glasses.
- 5. Scrap wood to make a pencil holder like [this](https://amzn.to/2Oq0gbq).
- 6. Using leftover [jute](https://amzn.to/3071UEd) to make simple DIY macramé plant holders.
- 7. [Empty spray bottles](https://amzn.to/3etWBDG) from old cleaning supplies to use for a veggie spray wash.
- 8. Small cardboard boxes to use for sorting items.
- 9. Leftover fabric to make cloth wipes.
+1.  The blog image above is my [protein powder container](https://amzn.to/2WjQBHt) in all its glory as a bathroom garbage can (on the counter no less because the toddler dumps out the garbage on the regular).
+2.  Shampoo bottle for holding dish soap.
+3.  [Kitty litter plastic bucket](https://amzn.to/3h1CvTk) for under the sink cleaning supply bucket.
+4.  [Mason jars](https://amzn.to/3esjmZ0) given to use for water glasses.
+5.  Scrap wood to make a pencil holder like [this](https://amzn.to/2Oq0gbq).
+6.  Using leftover [jute](https://amzn.to/3071UEd) to make simple DIY macramé plant holders.
+7.  [Empty spray bottles](https://amzn.to/3etWBDG) from old cleaning supplies to use for a veggie spray wash.
+8.  Small cardboard boxes to use for sorting items.
+9.  Leftover fabric to make cloth wipes.
 10. Redoing a coffee table a friend gave us.
 
 (Now tally up all that amount that I saved by not purchasing new...at least $200!).
@@ -36,9 +39,3 @@ PPS And my friends I've met through [Tips for Minimal Living](https://github.com
 [Making Do vs. Buying New](https://www.dailymomliving.com/blog/making-due-vs-buying-new)
 
 [5 Ways to Make Do with Groceries](https://www.envision31.com/hope/5waystomakedowithgroceries)
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

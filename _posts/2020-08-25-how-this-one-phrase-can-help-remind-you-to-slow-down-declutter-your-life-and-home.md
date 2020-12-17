@@ -1,20 +1,22 @@
 ---
 layout: post
-title: How this One Phrase Can Help Remind you to Slow Down, Declutter your Life and
-  Home
+title: How this One Phrase Can Help Remind you to Slow Down, Declutter your Life and Home
+description: ""
 subtitle: Keeping it simple.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/phrase.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- keeping it simple
-- simple living
-- minimalism
-- slow down life
-- low stress living
-- keep it simple
-
+  - keeping it simple
+  - simple living
+  - minimalism
+  - slow down life
+  - low stress living
+  - keep it simple
+redirect_from:
+  - 2020-08-25-how-this-one-phrase-can-help-remind-you-to-slow-down-declutter-your-life-and-home
 ---
+
 ![](/uploads/phrase.jpg)
 
 **Keep it simple.**
@@ -27,12 +29,12 @@ _But now I know better_. I remind myself often to keep it simple. **And keeping 
 
 ## Ways I’ve learned to keep it simple over the years?
 
-* Saying no to keeping up with housework. See [my blog](https://www.eastcoastkelly.com/cleaning%20&%20tidying/2020/04/22/how-to-design-a-simple-cleaning-routine.html) on how I keep housework flexible now.
-* Saying no to keeping up with laundry (all put away perfectly). See [my blog on my laundry routine](https://www.eastcoastkelly.com/cleaning%20&%20tidying/2020/04/30/our-current-laundry-routine-that-has-taken-the-stress-off-of-laundry.html).
-* Saying no to complicated homeschool curriculum and trying to pull things out of my head. See [my blog on our slow and simple homeschooling routine](https://www.eastcoastkelly.com/routines/2020/07/22/our-slow-and-simple-homeschooling-routine.html).
-* Saying no to complicating my huge so called daily priority business tasks and went down to the MOST important.
-* Saying no to being a pinterest mom and embraced the mom I am: a dirt and cardboard loving mom.
-* Saying no to filling my house with decor stuff just because I thought I had to.
+- Saying no to keeping up with housework. See [my blog](https://www.eastcoastkelly.com/cleaning%20&%20tidying/2020/04/22/how-to-design-a-simple-cleaning-routine.html) on how I keep housework flexible now.
+- Saying no to keeping up with laundry (all put away perfectly). See [my blog on my laundry routine](https://www.eastcoastkelly.com/cleaning%20&%20tidying/2020/04/30/our-current-laundry-routine-that-has-taken-the-stress-off-of-laundry.html).
+- Saying no to complicated homeschool curriculum and trying to pull things out of my head. See [my blog on our slow and simple homeschooling routine](https://www.eastcoastkelly.com/routines/2020/07/22/our-slow-and-simple-homeschooling-routine.html).
+- Saying no to complicating my huge so called daily priority business tasks and went down to the MOST important.
+- Saying no to being a pinterest mom and embraced the mom I am: a dirt and cardboard loving mom.
+- Saying no to filling my house with decor stuff just because I thought I had to.
 
 There are so many ways that phrase “keep it simple” has affected my life since I embraced a life of living more simply. And I’m so looking forward to seeing how it evolves for me over time too.
 
@@ -41,9 +43,3 @@ There are so many ways that phrase “keep it simple” has affected my life sin
 I recommend the book [Slow: Simple Living for a Frantic World](https://amzn.to/3iE8gCI).
 
 _PS if you’re looking for some solid ideas of how to be more simple in your days, I have a list of ten other practical suggestions that I found for you. Feel free to email me at eastcoastkellyb@gmail.com if you’d like that list for free._
-
-Cheers,
-
-Kelly
-
-##### Did you find this helpful? If so, I would greatly appreciate if you shared it.

@@ -1,22 +1,24 @@
 ---
 layout: post
 title: How to Instill Habits in Kids
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/89722164_10163109675490627_1846259836136718336_o.jpg"
-share-img: ''
+share-img: ""
 tags:
-- morning routines for kids
-- habits for kids
-- habit training
+  - morning routines for kids
+  - habits for kids
+  - habit training
 description: Instilling habits can help the days go smoother with children.
-
+redirect_from:
+- 2020-11-03-how-to-instill-habits-in-kids
 ---
+
 How do you instill (good) habits in kids? It takes a long time, that's all I know so far with almost ten years of parenting. And when I look at the bigger picture, sometimes I feel overwhelmed at looking at point Z when I need to just look at point A. Point A today and for the x amount of days (unknowable at this point), it's instilling my children's morning time routine until it becomes second nature / habit.⁣ I've been really learning to focus on one thing at a time. Applying that to teaching kids habits, it's really helpful to work on one little thing at a time. And once it's a habit, we'll work through the next thing. Oftentimes habits get dropped because I try to take on too many at once. Less is always more, right! ⁣Today on the blog, I'm sharing about our kids' morning routine and a little bit about how to instill habits.
 
-**What's a habit?** 
+**What's a habit?**
 
-A habit is "a settled or regular tendency or practice, especially one that is hard to give up." Sounds good, right? A large percentage of our daily actions are habits! 
+A habit is "a settled or regular tendency or practice, especially one that is hard to give up." Sounds good, right? A large percentage of our daily actions are habits!
 
 **How can you form new habits?** There are lots of different ways and research out there on the right way to go about habits. Here's [one blog](https://www.developgoodhabits.com/how-to-form-a-habit-in-8-easy-steps/) looking at some of those ways. I personally like doing the _one at a time_ and then move on way of going about instilling habits. It's worked well for me and our family for a long time.
 
@@ -39,11 +41,5 @@ _My kids' current morning time routine:⁣
 My [Instagram friend Leah's](https://www.instagram.com/mylittlerobins/) little [ebook on habit training](https://my-little-robins-shop.myshopify.com/collections/frontpage/products/habits-for-the-early-years-a-mothers-journal) children. It's the sweetest!
 
 _PS if you want to learn more about a really effective habit strategy called habit stacking, you may love the freebie my mail list received - 20 ideas to habit stack + a habit stacking planning sheet. You can receive that for free by emailing me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
 
 ![Picture of morning routine for my kids.](/uploads/20201103_145238_0000_compress63.jpg "habitsblog")

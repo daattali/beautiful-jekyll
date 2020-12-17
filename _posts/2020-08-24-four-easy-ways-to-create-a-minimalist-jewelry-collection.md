@@ -1,20 +1,23 @@
 ---
 layout: post
 title: Four Easy Ways to Create a Minimalist Jewelry Collection
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/jewelry.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- minimal jewelry
-- decluttering jewelry
-- minimalism jewelry
-- capsule wardrobe
-- minimal wardrobe
-description: Using your current wardrobe as inspiration to create a minimalist jewelry
+  - minimal jewelry
+  - decluttering jewelry
+  - minimalism jewelry
+  - capsule wardrobe
+  - minimal wardrobe
+description:
+  Using your current wardrobe as inspiration to create a minimalist jewelry
   collection.
-
+redirect_from:
+  - 2020-08-24-four-easy-ways-to-create-a-minimalist-jewelry-collection
 ---
+
 ![An image of my necklaces hanging off a rod.](/uploads/jewelry.jpg "jewelry")
 
 I know there are some folk who do no to little jewelry, but I like to have more than that. It makes me happy. And that’s the beauty of[ minimalism](https://amzn.to/2E5IXKI) (one of my fave books on this subject). It looks different for every single person. So if you are on a journey to declutter and minimize your life and things and jewelry has been neglected, these suggestions may help you out. Today on the blog, I’m sharing four easy ways to create a minimalist jewelry collection.
@@ -33,9 +36,3 @@ Other blogs you may enjoy:
 [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
 
 [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
-
-**Thank you so much for reading to the end! Enjoyed this blog? I’d love if you shared it.**
-
-Thanks again,
-
-Kelly

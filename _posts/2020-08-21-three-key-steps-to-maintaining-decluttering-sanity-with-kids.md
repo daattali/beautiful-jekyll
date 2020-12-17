@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Three Key Steps to Maintaining Decluttering Sanity with Kids
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/20200513_150452_0000.png"
+thumbnail-img: "/uploads/maintaining-decluttering.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- decluttering
-- maintenance decluttering
-- decluttering with kids
-- marie kondo
-- spring decluttering
-- decluttering as a family
-- how to declutter with kids
-
+  - decluttering
+  - maintenance decluttering
+  - decluttering with kids
+  - marie kondo
+  - spring decluttering
+  - decluttering as a family
+  - how to declutter with kids
 ---
-![A picture of my dining room with mess on the floor.](/uploads/20200513_150452_0000.png "mess")
+
+![A picture of my dining room with mess on the floor.](/uploads/maintaining-decluttering.jpg "mess")
 
 Yup. It’s a losing battle. If it doesn’t leave the house, they. will. find. it. We’ve been spending this week doing a maintenance declutter on the home, top to bottom, since we’re out of the baby year with our number four. We let a lot go when we have a baby around, of course. Today on the blog, I’m sharing with you three key steps to maintaining decluttering sanity with kids.
 
@@ -32,9 +32,3 @@ Have a home for everything so that you know how much you have of everything. Leg
 Help them to recognize things they no longer need or love (it’s a long term process here as we’ve found lol). But, including the kids routinely will help them to learn the skills of decluttering too over time. Not perfectly of course. We have one child who enjoys collecting electricians. That’s his joy. But to help him make decisions on what is best to keep is still taught.
 
 _PS one of my mail list freebies was for a simple guide to maintenance decluttering with kids! I expanded on these three steps above and have seven more for you too. Just send me an email at eastcoastkellyb@gmail.com if you’d like that guide for free and I’ll send it off to you!_
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

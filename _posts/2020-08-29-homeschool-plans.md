@@ -1,15 +1,18 @@
 ---
 layout: post
-title: 'Homeschool Plans for 2020-2021: keeping it slow and simple'
+title: "Homeschool Plans for 2020-2021: keeping it slow and simple"
+description: ""
 subtitle: Slow + simple is sustainable.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/bulletjournal.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- homeschooling curriculum plans
-- homeschool planning
-
+  - homeschooling curriculum plans
+  - homeschool planning
+redirect_from:
+  - 2020-08-29-homeschool-plans
 ---
+
 ![A picture of three planners on top of one another.](/uploads/20200729_151554_0000_compress48-1.jpg "planners")
 
 This is my first year sharing our curriculum plans publicly. We've now done a year and a half of the new curriculum I came across, so I feel like I'm ready to share for sure. Our kids are thriving with it. And it's been so nice and simple and slow for us. Today on the blog, I'm sharing (most of) our curriculum picks and supplies with you for our 9, 7, 4 year old and tagalong 1 year old.
@@ -82,7 +85,7 @@ Here are some of the books my boys will be using and reading for the most part f
 
 [Beast Academy for Math](https://amzn.to/2BElBLd)
 
-\**He’s almost nearing the end of his current year for his curriculum above. I’ll be updating his resources again by the late fall.
+\*\*He’s almost nearing the end of his current year for his curriculum above. I’ll be updating his resources again by the late fall.
 
 **Everyone:**
 
@@ -115,17 +118,11 @@ Art supplies.. This is not all encompassing, but it's the majority of what we us
 
 #### Other resources I recommend:
 
-* [Minimalist homeschooling Facebook group](https://www.facebook.com/groups/minimalisthomeschool) - this group helped me find our current homeschooling curriculum that we’ve been loving. It’s saved a lot of brain space for me too to have a lot laid out for me.
-* [Ambleside online](https://www.amblesideonline.org/) once again (the free curriculum we use – more details about what we do is on their website)
-* My Amazon shop [US shop](http://www.amazon.com/shop/eastcoastkelly) - [Canadian shop](http://www.amazon.com/shop/eastcoastkelly) (under kids’ school and planning)
-* [Pam Barnhill’s course on planning your homeschool year ](https://pambarnhill.com/plan-your-year-2020/ref/258/)(I am affiliate of her course, so this would mean I’d make a small cut if you liked the look of this course too! She’s a wealth of knowledge in this area).
-* The book [Teaching From Rest](https://amzn.to/2WINMjG) that I recommend to everyone starting out. It’s so encouraging and helpful.
+- [Minimalist homeschooling Facebook group](https://www.facebook.com/groups/minimalisthomeschool) - this group helped me find our current homeschooling curriculum that we’ve been loving. It’s saved a lot of brain space for me too to have a lot laid out for me.
+- [Ambleside online](https://www.amblesideonline.org/) once again (the free curriculum we use – more details about what we do is on their website)
+- My Amazon shop [US shop](http://www.amazon.com/shop/eastcoastkelly) - [Canadian shop](http://www.amazon.com/shop/eastcoastkelly) (under kids’ school and planning)
+- [Pam Barnhill’s course on planning your homeschool year ](https://pambarnhill.com/plan-your-year-2020/ref/258/)(I am affiliate of her course, so this would mean I’d make a small cut if you liked the look of this course too! She’s a wealth of knowledge in this area).
+- The book [Teaching From Rest](https://amzn.to/2WINMjG) that I recommend to everyone starting out. It’s so encouraging and helpful.
 
 _PS I guest blogged over on my friend Jessica’s blog titled “_[_All Your Homeschool Questions Answered By Guest Blogger Kelly Briggs_](https://mamabearwooten.com/all-your-homeschool-questions-answered-by-guest-blogger-kelly-briggs/)_” if you’d like to read that too!  
 PPS If you’d like to take a look at how I use flexible routines with all of the things above and more, feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like me to send that along to you or if you have any other questions._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

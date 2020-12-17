@@ -24,10 +24,6 @@ fields:
   type: tag_list
   default: []
   label: tags
-- name: readtime
-  type: boolean
-  label: readtime
-  default: true
 - type: file
   name: thumbnail-img
   label: thumbnail-img
@@ -39,12 +35,26 @@ fields:
 - type: file
   name: share-img
   label: share-img
+- name: readtime
+  type: boolean
+  label: readtime
+  default: true
+  hidden: true
 - name: comments
   type: boolean
   label: comments
+  default: true
+  hidden: true
 - name: show-avatar
   type: boolean
   label: show-avatar
   default: true
+- name: redirect_from
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: redirect_from
 pages:
 - _posts/2020-12-01-3-tips-to-get-started-on-simplifying-your-home-life.md

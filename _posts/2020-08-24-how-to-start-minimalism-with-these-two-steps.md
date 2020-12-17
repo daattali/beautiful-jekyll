@@ -1,24 +1,26 @@
 ---
 layout: post
 title: How to Start Minimalism with these Two Steps
+description: ""
 subtitle: Keeping it simple.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200630_101240_0000-1.png"
 share-img: "/assets/img/path.jpg"
 tags:
-- decluttering
-- decluttering as a family
-- minimalism
-- joshua becker
-- marie kondo
-- starting minimalism
-- minimalism tips
-- minimalist family
-- the life changing magic of tidying up
-- how to start decluttering
-- bullet journaling
-- the bullet journal method
-
+  - decluttering
+  - decluttering as a family
+  - minimalism
+  - joshua becker
+  - marie kondo
+  - starting minimalism
+  - minimalism tips
+  - minimalist family
+  - the life changing magic of tidying up
+  - how to start decluttering
+  - bullet journaling
+  - the bullet journal method
+redirect_from:
+  - 2020-08-24-how-to-start-minimalism-with-these-two-steps
 ---
 
 ![An image of my journal with tulips next to it.](/uploads/20200630_101240_0000-1.png "bulletjournal")
@@ -31,8 +33,8 @@ It was that moment in my kitchen that I turned even more to decluttering and rea
 
 Some places that offer more hands on help:
 
-* My friend [Lisa on Instagram](https://www.instagram.com/lisatselebidis/) has a tidy project going on! She’s a konmari consultant.
-* [A 12 week uncluttered course](https://www.becomingminimalist.com/get-uncluttered/) by Joshua Becker ([Becoming Minimalist](http://www.becomingminimalist.com/)).
+- My friend [Lisa on Instagram](https://www.instagram.com/lisatselebidis/) has a tidy project going on! She’s a konmari consultant.
+- [A 12 week uncluttered course](https://www.becomingminimalist.com/get-uncluttered/) by Joshua Becker ([Becoming Minimalist](http://www.becomingminimalist.com/)).
 
 ## 2. Minimize your to do list.
 
@@ -45,9 +47,3 @@ Start looking within and around you to see what you can do without. Less stress.
 _And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
 
 To your minimalist journey!
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

@@ -1,16 +1,19 @@
 ---
 layout: post
-title: 'An Instagram Course Review: helping me plan out my instagram much better'
-subtitle: ''
+title: "An Instagram Course Review: helping me plan out my instagram much better"
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: ""
 share-img: "/assets/img/path.jpg"
 tags:
-- instagram course
-- instagram course review
-- growing your instagram account
-
+  - instagram course
+  - instagram course review
+  - growing your instagram account
+redirect_from:
+  - 2020-08-29-an-instagram-course-review-helping-me-plan-out-my-instagram-much-better
 ---
+
 ![A phone on a table.](/uploads/20200715_205027_0000_compress49-1.jpg "instagram")
 
 I'm always looking for simpler ways to do life, whether it be reducing clutter or streamlining our days as a family. Sometimes I make things harder than it is. One area of my life that needed some streamlining was the way I showed up on social media. My planning and content essentially. I was well on the way, but a recent course I took helped consolidate and simplify everything for me even more. Today on my blog, I'm sharing with you my Instagram review on Erica Fraser's [How I Grew My Instagram to 33, 000](https://digital.mombreak.ca/howigrewmyinstagram/26mcq) course, that I went through a couple months ago.
@@ -29,14 +32,14 @@ _Here's an overview of what the course offers, quoted from her_ [_website_](http
 >
 > This is a mini-series that will walk you through a story of exactly what I did:
 >
-> * How the account got started
-> * Did I use pods?
-> * Did I buy followers?
-> * What's helped me grow the fastest?
-> * What would I do again?
-> * What would I skip next time?
-> * Do a lot of people buy followers?
-> * Do a lot of people buy engagement?
+> - How the account got started
+> - Did I use pods?
+> - Did I buy followers?
+> - What's helped me grow the fastest?
+> - What would I do again?
+> - What would I skip next time?
+> - Do a lot of people buy followers?
+> - Do a lot of people buy engagement?
 
 ## My review of her course
 
@@ -51,9 +54,3 @@ Check out [How I Grew My Instagram to 33, 000](https://digital.mombreak.ca/howig
 _Disclaimer: I am an affiliate of this course because I found it of great value. If it looks good to you too, I'd receive a small % of the sale, with no difference in price for you._
 
 _PS_ I’m also happy to chat Instagram as well, you can find me anytime at [@eastcoastkelly](http://www.instagram.com/eastcoastkelly).
-
-Cheers,
-
-Kelly
-
-Did you find this helpful? If so, I would greatly appreciate if you shared it.

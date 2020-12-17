@@ -1,30 +1,30 @@
 ---
 layout: post
-title: 'Where and How to Start Decluttering: a No Brainer Guide'
-subtitle: ''
-gh-repo: daattali/beautiful-jekyll
-gh-badge: []
+title: "Where and How to Start Decluttering: a No Brainer Guide"
+subtitle: ""
 tags:
-- decluttering
-- decluttering as a family
-- minimalism
-- minimalist home
-- joshua becker
-- the minimalists
-- marie kondo
-- the life changing magic of tidying up
-- how to declutter
-- how to start decluttering
-- different ways to declutter
-- decluttering with kids
+  - decluttering
+  - decluttering as a family
+  - minimalism
+  - minimalist home
+  - joshua becker
+  - the minimalists
+  - marie kondo
+  - the life changing magic of tidying up
+  - how to declutter
+  - how to start decluttering
+  - different ways to declutter
+  - decluttering with kids
 comments: true
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
-share-img: ''
+thumbnail-img: ""
+share-img: ""
 readtime: true
 description: Decluttering ideas if you don't know where to start or need some help.
-
+redirect_from:
+  - 2020-08-20-where-and-how-to-start-decluttering-a-no-brainer-guide
 ---
+
 There are so many takes on decluttering and pieces of advice, so I’m going to leave you mine, of course. Looking back, I plowed through the big declutter when everything clicked for me. I was just anxious to get it done. Paper was the biggest for me. I remember taking days and days. Looking through young teenage years of letters back and forth with friends. That was quite painful ha. Today on the blog, I’m going to share with you, if you are new to decluttering. And you don’t know where to start… where and how to start decluttering: a no brainer guide.
 
 ## There is no right or wrong way
@@ -37,6 +37,7 @@ So, now that I’ve stepped off my soap box. Here are three ways you can tackle 
 
 1. [Marie Kondo](https://konmari.com/). This was actually the method that clicked first for me. Now, hear me out. I didn’t take everything that she taught and applied it. The folding method she uses, for instance, I didn’t apply to most things. Her take for decluttering is: go section by section and deal with it all at once. Her sequence of categories: clothes, books, papers, komono/miscellany, and mementos. And as you go through each category, you learn what “sparks joy”. It’s a neat way of looking at things. The book that I read of hers is [The Life Changing Magic of Tidying Up](https://amzn.to/38zOVi7) and here’s a blog to an overview of her method [here](https://medium.com/@dsilvestre/the-life-changing-magic-of-tidying-up-by-marie-kondo-lessons-d33dc4db73c2).
 2. [Joshua Becker](https://www.becomingminimalist.com/). I really enjoy his method and take on things. Here’s an overview of his method from his book the [The Minimalist Home](https://amzn.to/3f7lfv0):
+
    1. Set your goals.
    2. Include your family in the process. Let them know why you are doing it.
    3. Work room by room and start with the easiest.
@@ -44,6 +45,7 @@ So, now that I’ve stepped off my soap box. Here are three ways you can tackle 
    5. Revisit and revise your goals.
 
       Here’s a bit of a deeper look into his method [here](https://lessismoreorganizers.com/blog/the-becker-method-of-a-minimalist-home).
+
 3. [The Minimalists](https://www.theminimalists.com/). They have a blog titled “[Decluttering doesn’t work](https://www.theminimalists.com/decluttering/)” that is helpful. I also read [their books](https://amzn.to/2ZHCFrP) that I really enjoyed! Here’s a look into their take on decluttering:
 
 > The _what_—i.e., the _how to_—is easy. We all know, instinctually, _how to_ declutter. You can start small: focus on one room at a time, making progress each day as you work toward a simplified life. You can go big: rent a dumpster and throw out everything, moving on to [a more fulfilling life](http://theminimalists.com/lml). Or you can take the moderate approach: plunge into a [Packing Party](http://theminimalists.com/packing) and embrace the fun side of decluttering, enjoying the entire simplification process.
@@ -60,8 +62,3 @@ So yes, read the advice, learn the method, watch the YouTube. But in the end, li
 
 _And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
 
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

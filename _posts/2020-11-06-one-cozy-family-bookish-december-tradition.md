@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Our Cozy Family Bookish December Tradition
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/89722164_10163109675490627_1846259836136718336_o.jpg"
-share-img: ''
+share-img: ""
 tags:
-- family traditions
-- Christmas traditions
-- December family traditions
-- Christmas books
-- best Christmas books
-description: A simple, meaningful bookish tradition in December to help bring the
-  family closer together and enjoy family time.
-
+  - family traditions
+  - Christmas traditions
+  - December family traditions
+  - Christmas books
+  - best Christmas books
+description: A simple, meaningful bookish tradition in December to help bring the family closer together and enjoy family time.
+redirect_from:
+- 2020-11-06-one-cozy-family-bookish-december-tradition
 ---
+
 Do you have family traditions? Are you wanting to figure out more traditions for your family? As we are heading towards the holidays, my mind starts racing with all the past years. What do I need to prep, have ready? What traditions are staying, what do we want to add on? I even have a digital note on what we did last year because I used to keep forgetting year to year. Today on the blog, I'm sharing with you our cozy family bookish December tradition that we've done for the past few years. All ages enjoy it too!
 
 **What are traditions?**
@@ -37,23 +38,17 @@ At the beginning of December, we celebrate [St. Nicholas day](https://www.nation
 
 **Our ten favourite Christmasy and holiday December books so far:**
 
- 1. The Light at Tern Rock
- 2. The Hundred Dresses
- 3. The Nutcracker
- 4. Pick a Pine Tree
- 5. The Baker's Dozen
- 6. The Year of the Perfect Christmas Tree
- 7. The Donkey's Dream
- 8. Mortimer's Christmas Manger
- 9. A Charlie Brown Christmas
+1.  The Light at Tern Rock
+2.  The Hundred Dresses
+3.  The Nutcracker
+4.  Pick a Pine Tree
+5.  The Baker's Dozen
+6.  The Year of the Perfect Christmas Tree
+7.  The Donkey's Dream
+8.  Mortimer's Christmas Manger
+9.  A Charlie Brown Christmas
 10. Mr. Willowby's Christmas Tree
 
 _PS I linked all these books and our wishlist on my Amazon shop for you to look over too. Maybe you'll find a gem for your family!_ [_Amazon Canadian shop_](www.amazon.ca/shop/eastcoastkelly) _or_ [_US shop_](www.amazon.com/shop/eastcoastkelly)_._
 
 More reading on traditions: [How to Talk to Your Kids About Family Traditions](https://time.com/4143024/how-to-talk-to-your-kids-about-family-traditions/)
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
