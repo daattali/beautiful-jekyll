@@ -2,8 +2,8 @@
 layout: post
 title: Simple Meal Planning with Theme Nights
 subtitle: ''
-cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/1_20201211_211437_0000_compress84.jpg"
+cover-img: "/uploads/1_20201211_211350_0000_compress94-min-1.jpg"
+thumbnail-img: "/uploads/compressjpeg-1.zip"
 share-img: ''
 tags:
 - simple meal planning
@@ -18,7 +18,9 @@ Do you enjoy cooking? If it's a _big fat no_ this blog may help you out today.
 
 ## Simple Meal Planning with Theme Nights
 
-Tell me I can't be the only one who doesn't enjoy cooking. It's painful for me. Always has been. I cook out of necessity, but really, one thing that has made easier for me is _intentional planning_ and _theme simple meal planning_ is one of those things. Today on the blog, I'm sharing about simple meal planning with theme nights and giving you 15 simple meal planning theme night ideas.  
+Tell me I can't be the only one who doesn't enjoy cooking. It's painful for me. Always has been. I cook out of necessity, but really, one thing that has made easier for me is _intentional planning_ and _theme simple meal planning_ is one of those things. Today on the blog, I'm sharing about simple meal planning with theme nights and giving you 15 simple meal planning theme night ideas.
+
+![Pen to meal planning on paper.](/uploads/1_20201211_211350_0000_compress94-min-1.jpg "Simple meal planning with theme nights SHM")  
   
 If you're often standing in the kitchen wondering what to make, here are....
 
@@ -46,7 +48,9 @@ _Are you looking for more resources to simplify your life at home with children?
 
 <!--End mc_embed_signup-->  
   
-And. Even for the people who really dislike cooking (like me), having a plan can help relieve some of that dreading it feeling when it's supper time. We actually have a great setup for breakfast foods and lunch foods with o_r_ [picky plates](https://www.simplehomemom.com/how-to-make-lunches-painless-and-quick-with-picky-plates/), but suppers are the ones I struggle with for sure. Remembering to simple meal plan with theme nights makes it so much easier for me and predictable for everyone too!  
+And. Even for the people who really dislike cooking (like me), having a plan can help relieve some of that dreading it feeling when it's supper time. We actually have a great setup for breakfast foods and lunch foods with o_r_ [picky plates](https://www.simplehomemom.com/how-to-make-lunches-painless-and-quick-with-picky-plates/), but suppers are the ones I struggle with for sure. Remembering to simple meal plan with theme nights makes it so much easier for me and predictable for everyone too!
+
+![Pen to meal plan on paper with the 15 ideas.](/uploads/1_20201211_211248_0000_compress0-min-1.jpg "15 simple meal planning theme ideas SHM")  
   
 **Relevant blogs you may like:**  
 [Three tips to feed the hangry children fast](https://www.simplehomemom.com/three-tips-to-feed-the/)  
