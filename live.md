@@ -20,5 +20,3 @@ Fur Squared has volunteered to help host and manage a charity stream: [Donate to
 * 4pm - Convention War Stories
 * 5pm - Christmas Cryptids
 * 6pm - I Comedy Better When I've Had A Few
-
-We'll be ending just in time for Unkle Kage's Wine stream to begin!
