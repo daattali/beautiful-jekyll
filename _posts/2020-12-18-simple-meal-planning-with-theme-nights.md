@@ -5,7 +5,7 @@ tags:
 - meal planning
 - theme night meal planning ideas
 thumbnail-img: "/uploads/1_20201211_211350_0000_compress94-min-1.jpg"
-cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
+cover-img: "/uploads/20201220_141108_0000_compress76.jpg"
 readtime: true
 comments: true
 show-avatar: true
