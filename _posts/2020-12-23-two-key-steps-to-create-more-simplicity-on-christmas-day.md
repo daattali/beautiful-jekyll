@@ -58,7 +58,6 @@ _Are you looking for more resources to simplify your life at home with children?
 
 **Links to other blogs you may enjoy:**
 
-[5 Ways to be Present with Your Kids](https://www.simplehomemom.com/5-ways-to-be-present-with-your-kids/)
-
-[Our Slow and Simple Homeschooling Routine](https://www.simplehomemom.com/our-slow-and-simple-homeschooling-routine/)  
-[How this One Phrase Can Help Remind you to Slow Down, Declutter your Life and Home](https://www.simplehomemom.com/how-this-one-phrase-can-help-remind-you-to-slow-down-declutter-your-life-and-home/)
+* [5 Ways to be Present with Your Kids](https://www.simplehomemom.com/5-ways-to-be-present-with-your-kids/)
+* [Our Slow and Simple Homeschooling Routine](https://www.simplehomemom.com/our-slow-and-simple-homeschooling-routine/)
+* [How this One Phrase Can Help Remind you to Slow Down, Declutter your Life and Home](https://www.simplehomemom.com/how-this-one-phrase-can-help-remind-you-to-slow-down-declutter-your-life-and-home/)
