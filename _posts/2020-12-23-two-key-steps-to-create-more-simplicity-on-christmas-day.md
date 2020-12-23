@@ -20,11 +20,10 @@ Last year Christmas day was sort of a bomb in my mind. The kids had a great time
 
 ## Two key steps to create more simplicity on Christmas day
 
-**Focus on one good thing at a time.**  
-When there is too much going on, even in our own lives, it's SO hard to focus when there are ten things bombarding us all at once. We are not created for so much at once, but [one good thing at a time](https://facilethings.com/blog/en/how-taking-things-slowly-can-help-you-become-more-productive).
-
-**2. Go slowly.**  
-Nothing kills the mood more than speeding through things. Through life. Through the good things. Pacing and going slowly can help us be more present and savour the moments. A blog, "[The joy of a slow and simple Christmas](https://simpleasthatblog.com/joy-slow-simple-christmas/)" states:
+1. **Focus on one good thing at a time.**  
+   When there is too much going on, even in our own lives, it's SO hard to focus when there are ten things bombarding us all at once. We are not created for so much at once, but [one good thing at a time](https://facilethings.com/blog/en/how-taking-things-slowly-can-help-you-become-more-productive).
+2. **Go slowly.**  
+   Nothing kills the mood more than speeding through things. Through life. Through the good things. Pacing and going slowly can help us be more present and savour the moments. A blog, "[The joy of a slow and simple Christmas](https://simpleasthatblog.com/joy-slow-simple-christmas/)" states:
 
 > So I wonder, as you enter into a season of social expectation and bustle, what are the most important traditions or memories you want to pass along to your children? How might you slow down and simplify to make space for a joy-filled holiday that is, above all, about delighting in these people you share life with?
 
