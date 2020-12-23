@@ -51,7 +51,7 @@ _Are you looking for more resources to simplify your life at home with children?
 
 #### 
 
-Two steps to create more simplicity on Christmas day?
+##### Two steps to create more simplicity on Christmas day?
 
 1\. Focus on one good thing at a time and...
 
