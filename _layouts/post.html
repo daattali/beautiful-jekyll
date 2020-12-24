@@ -4,9 +4,9 @@ layout: base
 
 {% include header.html type="post" %}
 
-<div class="container-md">
+<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
-    <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
 
       {% if page.gh-repo %}
         {% assign gh_split =  page.gh-repo | split:'/'  %}
@@ -31,20 +31,32 @@ layout: base
         </div>
       {% endif %}
 
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
       <article role="main" class="blog-post">
         {{ content }}
       </article>
 
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
-          Tags:
-          {% if site.link-tags %}
+          <span>Tags:</span>
           {% for tag in page.tags %}
             <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
           {% endfor %}
-          {% else %}
-            {{ page.tags | join: ", " }}
-          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
         </div>
       {% endif %}
 

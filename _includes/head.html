@@ -4,26 +4,26 @@
   <meta name="monetization" content="$ilp.uphold.com/REUB7QPjnr6z">
   <meta http-equiv="Expires" content="600" />
 
-  {%- capture title -%}
-  {%- if page.share-title -%}
-  {{ page.share-title }}
-  {%- elsif page.title -%}
-  {{ page.title }}
-  {%- else -%}
-  {{ site.title }}
-  {%- endif -%}
-  {%- endcapture -%}
+  {% capture title %}
+    {%- if page.share-title -%}
+      {{ page.share-title | strip_html | xml_escape }}
+    {%- elsif page.title -%}
+      {{ page.title | strip_html | xml_escape  }}
+    {%- else -%}
+      {{ site.title | strip_html | xml_escape }}
+    {%- endif -%}
+  {% endcapture %}
 
-  {%- capture description -%}
-  {%- if page.share-description -%}
-  {{ page.share-description }}
-  {%- elsif page.subtitle -%}
-  {{ page.subtitle }}
-  {%- else -%}
-  {% assign excerpt_length = site.excerpt_length | default: 50 %}
-  {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length }}
-  {%- endif -%}
-  {%- endcapture -%}
+  {% capture description %}
+    {%- if page.share-description -%}
+      {{ page.share-description | strip_html | xml_escape }}
+    {%- elsif page.subtitle -%}
+      {{ page.subtitle | strip_html | xml_escape }}
+    {%- else -%}
+      {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
+      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
+    {%- endif -%}
+  {% endcapture %}
 
   <title>{{ title }}</title>
 
@@ -136,16 +136,16 @@
   <meta name="twitter:image" content="{{ img | absolute_url }}">
   {% endif %}
 
-  {% if site.matomo %}
   {% include matomo.html %}
-  {% endif %}
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
   {% endif %}
 
   {% if page.head-extra %}
-  {% include {{ page.head-extra }} %}
+    {% for file in page.head-extra %}
+      {% include {{ file }} %}
+    {% endfor %}
   {% endif %}
 
 </head>

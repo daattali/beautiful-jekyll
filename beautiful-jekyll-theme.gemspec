@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "beautiful-jekyll-theme"
-  spec.version       = "4.1.0"
+  spec.version       = "5.0.0"
   spec.authors       = ["Dean Attali"]
   spec.email         = ["daattali@gmail.com"]
 
@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|LICENSE|README|feed|404|_data|tags|staticman)}i) }
 
   spec.metadata      = {
-    "changelog_uri"     => "https://github.com/daattali/beautiful-jekyll/blob/master/CHANGELOG.md",
+    "changelog_uri"     => "https://beautifuljekyll.com/updates/",
     "documentation_uri" => "https://github.com/daattali/beautiful-jekyll#readme"
   }
 
@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
   spec.add_runtime_dependency "hash-joiner", "~> 0.0.7"
   spec.add_runtime_dependency "kramdown-parser-gfm", "~> 1.1"
+  spec.add_runtime_dependency "kramdown", "~> 2.3.0"
 
   spec.add_development_dependency "bundler", ">= 1.16"
   spec.add_development_dependency "rake", "~> 12.0"

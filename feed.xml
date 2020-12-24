@@ -12,7 +12,7 @@ layout: null
     {% endif %}
     <link>{{ '' | absolute_url }}</link>
     <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
-	{% assign excerpt_length = site.excerpt_length | default: 50 %}
+    {% assign excerpt_length = site.excerpt_length | default: 50 %}
     {% for post in site.posts limit:20 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
