@@ -13,9 +13,7 @@ author: Josemy Duarte
 
 navbar-links:
   Home: "https://josemyduarte.github.io/"
-  Stuff:
-    - Read later: "articles"
-    - Books: "books"
+  Read later: "articles"
   About Me: "aboutme"
 
 # --- Logo --- #
