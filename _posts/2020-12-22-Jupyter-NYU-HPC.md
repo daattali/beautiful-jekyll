@@ -13,6 +13,8 @@ To run Tensorflow in a Jupyter notebook, we have to complete the following steps
 2. Install python packages 
 3. Create Jupyter slurm run script
 
+All the code can be copied into the command line once you have ssh'ed into the NYU HPC. The NYU HPC team has a thorough [guide](https://devwikis.nyu.edu/display/NYUHPC/Logging+in+to+the+NYU+HPC+Clusters) for connecting to the HPC.
+
 ## Setup Conda Environment 
 
 We copy an (overlay) container image with a set amount of RAM and Disk space (.ext3), this will be the environment tensorflow will run in. Overlays are nice because we can persist changes to our (.ext3) file, it gives us a kind of write access to these containers. 
