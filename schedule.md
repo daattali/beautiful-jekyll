@@ -37,7 +37,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 18-Jan	| _No school_			| | _Mathcounts_ |
 | 25-Jan	| Sequences				| | |
 | 1-Feb		| Clocks				| | |
-| 8-Feb		| Statistics			| | _No school_ |
+| 8-Feb		| Statistics			| _Math Is Cool_ | _No school_ |
 | 15-Feb	| _No school_			| | |
 | 22-Feb	| Travel				| | |
 | 1-Mar		| Angles and Arcs		| | |
