@@ -4,13 +4,14 @@ tags:
 - new year's resolutions
 - formation vs resolutions
 - un new year's resolutions
-thumbnail-img: "/uploads/headshot.jpg"
+- new year's goals
+thumbnail-img: "/uploads/0001-14873369965_20201226_230909_0000_compress37.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
 show-avatar: true
 title: Why New Year's Resolutions Often Don't Work and What to Try Instead
-description: A different way to look towards the new year that is helpful.
+description: A different way to look towards the new year for goals that is helpful.
 subtitle: "+ a freebie worksheet for your un new year's resolutions"
 share-img: ''
 redirect_from: []
@@ -32,37 +33,25 @@ Developing myself into more of...myself, so to speak. _So instead of aiming for 
 
 ##### What I'm focusing on for areas of formation this year:
 
-Nutrition
-
-Spiritual life
-
-Relationships (close friends and my husband especially)
-
-Personal growth/education
-
-Creativity/play
+1. Nutrition
+2. Spiritual life
+3. Relationships (close friends and my husband especially)
+4. Personal growth/education
+5. Creativity/play
 
 ##### Other ideas of areas of formation to look at:
 
-Health  
-Exercise  
-Nutrition
-
-Systems in the home
-
-Organization
-
-Habits
-
-Mental health
-
-Emotional health
-
-Stress management
-
-Learn a new skill
-
-Family life
+* Health
+* Exercise
+* Nutrition
+* Systems in the home
+* Organization
+* Habits
+* Mental health
+* Emotional health
+* Stress management
+* Learn a new skill
+* Family life
 
 ...the list could go on and your list may be completely different too, such as [the 5 aspects of personal development](http://www.breakthroughpsychologyprogram.com/5-parts-of-personal-development.html).
 
