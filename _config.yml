@@ -14,7 +14,7 @@ author: Utkarsh
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  Tut_Hints: "Tut_hints"
   #Resources:
    # - Beautiful Jekyll: "https://beautifuljekyll.com"
     #- Learn markdown: "https://www.markdowntutorial.com/"
