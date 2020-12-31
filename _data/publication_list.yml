@@ -1,0 +1,137 @@
+- title: "2020 code_clone code_search"
+  publication_no: 25
+  image: 
+  description:  
+  authors: Toukir Ahammed, Moumita Asad, Kazi Sakib.
+  publisher: "In proceedings of the 8th International Workshop on Quantitative Approaches to Software Quality (QuASoQ20) co-located with 27th Asia-Pacific Software Engineering Conference (APSEC 2020) Singapore, December, 2020, pp: 64 - 70."
+  year: 2020
+  # use space to assign multiple domains
+  domain_id: code_clone code_search
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/381"
+  doi: 
+  code:
+  highlight: 0
+  news2:
+  
+
+- title: "2019 code_clone"
+  publication_no: 24
+  image: 
+  description:  
+  authors: Moumita Asad, Kishan Kumar Ganguly and Kazi Sakib
+  publisher: "IEEE/ACM 42nd International Conference on Software Engineering Workshops (ICSEW), 2020, Soul, Republic of South Korea, pp: 21 - 22."
+  year: 2019
+  domain_id: code_clone
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/372"
+  doi: 
+  code:
+  highlight: 0
+  news2:
+  
+- title: "2018 code_search"
+  publication_no: 23
+  image: 
+  description:  
+  authors: Moumita Asad, Kishan Kumar Ganguly and Kazi Sakib
+  publisher: "In Proceedings of the 15th International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE 2020), pages 170-180, 5 - 6 May, 2020."
+  year: 2018
+  domain_id: code_search
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/371"
+  doi: 
+  code:
+  highlight: 0
+  news2:
+  
+- title: "2017 code_search"
+  publication_no: 22
+  image: 
+  description:  
+  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
+  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
+  year: 2017
+  type: Conference
+  domain_id: code_search
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
+  doi: 
+  code:
+  highlight: 0
+  news2:
+
+- title: "2016 code_search"
+  publication_no: 22
+  image:
+  description:
+  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
+  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
+  year: 2016
+  type: Conference
+  domain_id: code_search
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
+  doi:
+  code:
+  highlight: 0
+  news2:
+
+- title:  "2015 code_search"
+  publication_no: 22
+  image:
+  description:
+  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
+  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
+  year: 2015
+  type: Conference
+  domain_id: code_search
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
+  doi:
+  code:
+  highlight: 0
+  news2:
+
+- title:  "2014 code_search"
+  publication_no: 22
+  image:
+  description:
+  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
+  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
+  year: 2014
+  type: Conference
+  domain_id: code_search
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
+  doi:
+  code:
+  highlight: 0
+  news2:
+
+- title:  "2013 code_search"
+  publication_no: 22
+  image:
+  description:
+  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
+  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
+  year: 2013
+  type: Conference
+  domain_id: code_search
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
+  doi:
+  code:
+  highlight: 0
+  news2:
+
+
+- title:  "2012 code_search"
+  publication_no: 22
+  image:
+  description:
+  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
+  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
+  year: 2012
+  type: Conference
+  domain_id: code_search
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
+  doi:
+  code:
+  highlight: 0
+  news2:
