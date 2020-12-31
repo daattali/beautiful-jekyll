@@ -1,6 +1,10 @@
 ---
 post: post
-tags: []
+tags:
+- zero spend month
+- simple budgeting
+- zero spend challenge
+- budgeting
 thumbnail-img: "/uploads/headshot.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
@@ -8,7 +12,7 @@ comments: true
 show-avatar: true
 title: How to Do a Zero Spend Month that Works For You
 description: Simple steps to create a zero spend month that works for you.
-subtitle: ''
+subtitle: "+ a plan your zero spend month freebie"
 share-img: ''
 redirect_from: []
 
@@ -45,7 +49,7 @@ Make your own rules, guidelines, and be mindful of your spending. Learn from you
 
 _And if this sounds interesting to you and you'd like to try it. I linked a "Plan Your Zero Spend Month" worksheets for you if you'd like to try a zero spend month that you can download_ [_here_](https://mailchi.mp/8264c25ebc2a/zerospend)_.   
  _  
-What's included in the zero spend month worksheets?
+**What's included in the zero spend month worksheets?**
 
 1. Some background information on what a zero spend month is.
 2. Examples.
@@ -53,6 +57,6 @@ What's included in the zero spend month worksheets?
 4. Spending tracker page for all expenses.
 5. Spending habit tracker (essentially to track the days you stick to zero spend)! So you can see your progess.
 
-I’d also suggest reading my friend's blog....
+I’d also suggest reading my friend Shelly's blog here " "....
 
-Here's to more mindful spending!
+**Here's to more mindful spending!**
