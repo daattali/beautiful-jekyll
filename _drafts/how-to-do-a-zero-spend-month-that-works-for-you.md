@@ -43,6 +43,8 @@ Instead of setting aside certain amounts for spending areas such as with a [trad
 
 Doing a zero spend month that works for you, helps you to become better at [intentional spending](https://circlein.com/tips-to-start-intentionally-saving-and-intentionally-spending/) because you’re reflecting on it so often. We also became much better at intentional saving too. We probably cut the time in half for saving for a basement reno last year by using a zero spend month, for instance. 
 
+![A picture of a notepad and calculator.](/uploads/how-to-do-a-zero-spend-month-that-works-for-you-shm3.jpg "How to Do a Zero Spend Month that Works For You SHM3")
+
 ## How do you do a zero spend month that works for you? 
 
 Make your own rules, guidelines, and be mindful of your spending. Learn from your mistakes and keep going. It’s worth it if you are really looking to be better at your finances. It can help so much if you have debt or want to start saving. Going a step further, you may also enjoy [Dave Ramsey’s steps](https://www.daveramsey.com/dave-ramsey-7-baby-steps) for taking control of your finances.
@@ -60,3 +62,5 @@ _And if this sounds interesting to you and you'd like to try it. I linked a "Pla
 I’d also suggest reading my friend Shelly's blog here " "....
 
 **Here's to more mindful spending!**
+
+![A picture of money on a table.](/uploads/how-to-do-a-zero-spend-month-that-works-for-you-shm2.jpg "How to Do a Zero Spend Month that Works For You SHM2")
