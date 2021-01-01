@@ -7,7 +7,7 @@ published: true
 
 
 Voici l'image dont vous aurez besoin.
-<img src="https://www.mon-hébergeur.fr/chemin/vers/mon/image.png"/>
+<img src="https://github.com/ymobian/ymobian.github.io/blob/master/pomme.jpg">
 
 
 
