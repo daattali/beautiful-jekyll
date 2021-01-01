@@ -23,4 +23,4 @@ Voici l'image dont vous aurez besoin.
 	      <img class="avatar-img" src="/pomme.jpg" />
 </center>
 
-![logo Markdown](/raw/master/src/pomme.jpg)
+![logo Markdown](src=/pomme.jpg)
