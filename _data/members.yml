@@ -1,161 +1,330 @@
 - name: Alim Ul Gias
   photo: alim-ul-gias.jpg
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: BSc, IIT University of Dhaka 
-  education2: MSc, IIT University of Dhaka 
-  education3: PhD, Imperial College London (On Going)
+  current_position: Ph.D Student
+  current_organization: Imperial College London
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=P-iDPQEAAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
 
 - name: Md. Rayhanur Rahman
   photo: md-rayhanur-rahman.png
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: AAA 
-  education2: AAA
-  education3: AAA
+  current_position: Ph.D Student
+  current_organization: NC State University
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=NIXg5VwAAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
  
 - name: Asif Imran
   photo: asif-imran.jpg
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: AAA 
-  education2: AAA
-  education3: AAA
+  current_position: Ph.D Student
+  current_organization: University at Buffalo (SUNY)
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=q6uPpHYAAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
 
 - name: Amit Seal Ami
   photo: amit-seal-ami.jpg
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: AAA 
-  education2: AAA
-  education3: AAA
+  current_position: Ph.D Student
+  current_organization: College of William and Mary
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=avZXflwAAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+  
+
+- name: A N M Bazlur Rahman
+  photo: a-n-m-bazlur-rahman.jpg
+  current_position: Senior Software Developer
+  current_organization: Loblaw Digital, Toronto Canada
+  email: iit.du.ac.bd
+  homepage: "https://ca.linkedin.com/in/bazlur"
+  number_educ: 1
+  education1: BSc University of Dhaka
+
 
 - name: Md. Saeed Siddik
   photo: md-saeed-siddik.jpg
-  info: AAA
-  email: AAA
-  homepage: ""
+  current_position: Assistant Professor
+  current_organization:  University of Dhaka
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=bPzEj3IAAAAJ&hl=en"
   number_educ: 2
-  education1: AAA 
-  education2: AAA
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
 
 - name: Rayhanul Islam
   photo: rayhanul-Islam.jpg
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: BSc, IIT University of Dhaka 
-  education2: MSc, IIT University of Dhaka 
-  education3: PhD, Imperial College London (On Going)
+  current_position: Lecturer
+  current_organization: University of Dhaka
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=pO82RB8AAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+  
+- name: Atish Kumar Dipongkor
+  photo: atish-kumar-dipongkor.jpg
+  current_position: Lecturer
+  current_organization: Jessore University of Science and Technology
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=lxpdfMUAAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+  
+
+- name: Md. Mahedi Mahfuj
+  photo: mahedi-mahfuj.jpg
+  current_position: Chief Software Architect 
+  current_organization: Techvision
+  email: iit.du.ac.bd
+  homepage: "https://bd.linkedin.com/in/mahedimahfuj"
+  number_educ: 1
+  education1: BSc University of Dhaka
+  
+
+- name: Farhan Ishraque Khan
+  photo: farhan-ishraque-khan.jpg
+  current_position: Date Engineer
+  current_organization: V2 Technologies Ltd
+  email: iit.du.ac.bd
+  homepage: "https://bd.linkedin.com/in/ishraque?"
+  number_educ: 2
+  education1: Executive MBA University of Dhaka   
+  education2: BSc University of Dhaka
+
+
+  
+
+- name: Rayhan Hossain
+  photo: rayhan-hossain.jpg
+  current_position: Software Development Engineer 
+  current_organization: Amazon USA
+  email: iit.du.ac.bd
+  homepage: "https://www.linkedin.com/in/mukla"
+  number_educ: 2
+  education1: MSc University of Tennessee   
+  education2: BSc University of Dhaka
+
   
 - name: Nadia Nahar
   photo: nadia-nahar.jpg
-  info: AAA
-  email: AAA
-  Homepage: ""
-  number_educ: 3
-  education1: AAA 
-  education2: AAA
-  education3: AAA 
+  current_position: Ph.D Student
+  current_organization: Carnegie Mellon University (CMU)
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=VuRv3BYAAAAJ"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+  
+- name: Shanto Rahman
+  photo: shanto-rahaman.jpg
+  current_position: Lecturer
+  current_organization: Bangladesh University of Professionals
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=MqLwWg0AAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka 
+  
+
+- name: Ahmad Tahmid
+  photo: ahmad-tahmid.jpg
+  current_position: Ph.D Student
+  current_organization: Concordia University
+  email: iit.du.ac.bd
+  homepage: "https://www.researchgate.net/profile/Ahmad_Tahmid"
+  number_educ: 1
+  education1: BSc University of Dhaka  
+  
+  
+
+- name: Lamisha Rawshan
+  photo: lamisha-rawshan.jpg
+  current_position: PDEng Trainee
+  current_organization: TU Eindhoven Netherlands
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?hl=en&user=qojdnwsAAAAJ"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka 
+  
+
+- name: Md. Shafiuzzaman (Hira)
+  photo: md-shafiuzzaman-hira.jpg
+  current_position: Assistant Professor
+  current_organization: Jashore University of Science and Technology
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?hl=en&user=vGNOv60AAAAJ"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka   
+
+
+- name: Md. Samsuddoha (Sams)
+  photo: md-samsuddoha-sams.jpg
+  current_position: Assistant Professor
+  current_organization: University of Barishal
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?hl=en&user=vGNOv60AAAAJ"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka   
+
+  
+  
+- name: Muksitul M Tanim Hasan
+  photo: muksitul-m-tanim-hasan.jpg
+  current_position: Business Analyst
+  current_organization: Simec System Ltd.
+  email: iit.du.ac.bd
+  homepage: "https://bd.linkedin.com/in/tanimhasaniitdu"
+  number_educ: 1
+  education1: BSc University of Dhaka  
+  
+  
+- name: Moshiur Moshi
+  photo: moshiur-moshi.jpg
+  current_position: Software Engineer
+  current_organization: Cefalo
+  email: iit.du.ac.bd
+  homepage: "https://bd.linkedin.com/in/mosh2i"
+  number_educ: 1
+  education1: BSc University of Dhaka
+
 
 - name: Abdus Satter
   photo: abdus-satter.jpg
-  info: AAA
-  email: AAA
-  homepage: ""
+  current_position: Lecturer
+  current_organization: University of Dhaka
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=8v8uaDAAAAAJ&hl=en&oi=sra"
   number_educ: 2
-  education1: AAA 
-  education2: AAA
-  education3: AAA 
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka 
+  
 
+- name: Afrina Khatun
+  photo: afrina-khatun.jpg
+  current_position: Lecturer
+  current_organization: BRAC University
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=YVK8-ScAAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+
+- name: Md. Masudur Rahman
+  photo: md-masudur-rahman.jpg
+  current_position: Lecture 
+  current_organization: Ahsanullah University of Science and Technology
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=g1l8PKIAAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+
+- name: Rashed Rabby Riyadh
+  photo: rashed-rubby-riyadh.jpg
+  current_position: Software Development Engineer
+  current_organization: Amazon Canada
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?hl=en&user=POvPO9MAAAAJ"
+  number_educ: 2
+  education1: MSc University of Alberta   
+  education2: BSc University of Dhaka 
+ 
+- name: Syed Ali Asif (Rabi)
+  photo: syed-ali-asif-rabi.jpg
+  current_position: Ph.D Student 
+  current_organization: University of Delaware
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=oHeZqOwAAAAJ&hl=en"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+
+
+ 
+ 
 - name: Kishan Kumar Ganguly
   photo: kishan-kumar-ganguly.jpg
-  info: AAA
-  email: AAA
-  homepage: ""
+  current_position: Lecturer
+  current_organization: University of Dhaka
+  email: iit.du.ac.bd
+  homepage: "https://scholar.google.com/citations?user=kazBuh8AAAAJ&hl=en"
   number_educ: 2
-  education1: AAA 
-  education2: AAA
-  education3: AAA
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+  
+  
+- name: Dipok Chandra Das
+  photo: dipok-chandra-das.jpg
+  current_position: Lecturer
+  current_organization: Noakhali Science and Technology University
+  email: iit.du.ac.bd
+  homepage: "https://www.researchgate.net/profile/Dipok_Chandra_Das"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+  
+  
+
+- name: Tarek Salah Uddin Mahmud
+  photo: tarek-salah-uddin-mahmud.jpg
+  current_position: Ph.D Student
+  current_organization: Texas State University
+  email: iit.du.ac.bd
+  homepage: "https://userweb.cs.txstate.edu/~t_m386/"
+  number_educ: 1
+  education1: BSc University of Dhaka
+  
+
+- name: Tahmim Jeba
+  photo: tahmim-Jeba.jpg
+  current_position: Lecturer
+  current_organization: Sonargaon University
+  email: iit.du.ac.bd
+  homepage: "https://www.researchgate.net/scientific-contributions/Tahmim-Jeba-2154532150"
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka
+
 
 - name: Md Rakib Hossain (Misu)
   photo: md-rakib-hossain-misu.jpg
-  info: AAA
-  email: AAA
-  homepage: ""
+  current_position: Senior Lecturer
+  current_organization: University of Liberal Arts Bangladesh
+  email: iit.du.ac.bd
+  homepage: "https://mrhmisu.github.io/"
   number_educ: 3
-  education1: BSc, IIT University of Dhaka 
-  education2: MSc, IIT University of Dhaka 
-  education3: PhD, Imperial College London (On Going)
-  
-- name: Member
+  education1: MSc University College London (UCL)
+  education2: MSc University of Dhaka
+  education3: BSc University of Dhaka   
+
+- name: Member-1
   photo: dummy_male_dp.png
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: BSc, IIT University of Dhaka 
-  education2: MSc, IIT University of Dhaka 
-  education3: PhD, Imperial College London (On Going)
+  current_position: ...
+  current_organization: ...
+  email: ...
+  homepage: "#"
+  number_educ: 2
+  education1: BSc University of Dhaka 
+  education2: MSc University of Dhaka  
 
-- name: Member
+- name: Member-2
   photo: dummy_female_dp.png
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: BSc, IIT University of Dhaka 
-  education2: MSc, IIT University of Dhaka 
-  education3: PhD, Imperial College London (On Going)
-
-- name: Member
-  photo: dummy_male_dp.png
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: BSc, IIT University of Dhaka 
-  education2: MSc, IIT University of Dhaka 
-  education3: PhD, Imperial College London (On Going)
-
-- name: Member
-  photo: dummy_female_dp.png
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: BSc, IIT University of Dhaka 
-  education2: MSc, IIT University of Dhaka 
-  education3: PhD, Imperial College London (On Going)
-
-- name: Member
-  photo: dummy_male_dp.png
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: BSc, IIT University of Dhaka 
-  education2: MSc, IIT University of Dhaka 
-  education3: PhD, Imperial College London (On Going)
-
-- name: Member
-  photo: dummy_female_dp.png
-  info: AAA
-  email: AAA
-  homepage: ""
-  number_educ: 3
-  education1: BSc, IIT University of Dhaka 
-  education2: MSc, IIT University of Dhaka 
-  education3: PhD, Imperial College London (On Going)
-      
- 
- 
+  current_position: ...
+  current_organization: ...
+  email: ...
+  homepage: "#"
+  number_educ: 2
+  education1: BSc University of Dhaka 
+  education2: MSc University of Dhaka  
