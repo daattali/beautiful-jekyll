@@ -7,7 +7,7 @@ tags:
 - budgeting
 - zero spend months
 - mindful spending
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/how-to-do-a-zero-spend-month-that-works-for-you-shm1.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
