@@ -5,7 +5,15 @@ published: true
 ---
 
 
+Soit $n\in \dN$. On considère l'équation $(E)$ d'inconnue $x$ : $x^3+nx-1=0$.
 
-Voici l'image dont vous aurez besoin.
+1. Pour tout entier naturel $n$, on pose $f_n(x)=x^3+nx-1$.\\
+Démontrer que l'équation $f_n(x)=0$ admet dans $\dR$ une unique solution notée $u_n$.
+2. Justifier que $u_n\in [0\,;\,1]$.
+3. Démontrer que la suite $(u_n)$ est strictement décroissante.
+4. Justifier que la suite $(u_n)$ est convergente.
+5. Soit $n$ un entier naturel non nul. Calculer $f_n\left(\dfrac{1}{n}\right)$ puis en déduire la limite de la suite $(u_n)$.
+
+Voici l'image dont vous aurez besoin. 
 <img src="https://github.com/ymobian/ymobian.github.io/blob/master/pomme.jpg"/>
 ![logo Markdown](https://github.com/ymobian/ymobian.github.io/blob/master/pomme.jpg)
