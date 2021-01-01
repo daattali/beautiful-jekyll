@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: default
 title: Effects of Internship on Fresh Graduates
 subtitle: A case study on IIT, DU students
 cover-img: /images/blog-post/internship-cover.jpg
 thumbnail-img: /images/blog-post/internship-cover.jpg
 share-img: /images/blog-post/internship-cover.jpg
 tags: [internship]
+permalink: /2020-08-03-internship-iitdublog/
 comments: true
 ---
 The aim of any curriculum is to produce industry ready students. The effectiveness of curricular activities, thus, can be measured by the performances of fresh 

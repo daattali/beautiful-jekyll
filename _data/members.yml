@@ -2,7 +2,7 @@
   photo: alim-ul-gias.jpg
   info: AAA
   email: AAA
-  Homepage: ""
+  homepage: ""
   number_educ: 3
   education1: BSc, IIT University of Dhaka 
   education2: MSc, IIT University of Dhaka 
@@ -12,7 +12,7 @@
   photo: md-rayhanur-rahman.png
   info: AAA
   email: AAA
-  Homepage: ""
+  homepage: ""
   number_educ: 3
   education1: AAA 
   education2: AAA
@@ -22,7 +22,7 @@
   photo: asif-imran.jpg
   info: AAA
   email: AAA
-  Homepage: ""
+  homepage: ""
   number_educ: 3
   education1: AAA 
   education2: AAA
@@ -32,7 +32,7 @@
   photo: amit-seal-ami.jpg
   info: AAA
   email: AAA
-  Homepage: ""
+  homepage: ""
   number_educ: 3
   education1: AAA 
   education2: AAA
@@ -42,11 +42,21 @@
   photo: md-saeed-siddik.jpg
   info: AAA
   email: AAA
-  Homepage: ""
+  homepage: ""
   number_educ: 2
   education1: AAA 
   education2: AAA
 
+- name: Rayhanul Islam
+  photo: rayhanul-Islam.jpg
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+  
 - name: Nadia Nahar
   photo: nadia-nahar.jpg
   info: AAA
@@ -61,7 +71,7 @@
   photo: abdus-satter.jpg
   info: AAA
   email: AAA
-  Homepage: ""
+  homepage: ""
   number_educ: 2
   education1: AAA 
   education2: AAA
@@ -71,10 +81,81 @@
   photo: kishan-kumar-ganguly.jpg
   info: AAA
   email: AAA
-  Homepage: ""
+  homepage: ""
   number_educ: 2
   education1: AAA 
   education2: AAA
-  education3: AAA   
+  education3: AAA
+
+- name: Md Rakib Hossain (Misu)
+  photo: md-rakib-hossain-misu.jpg
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+  
+- name: Member
+  photo: dummy_male_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+
+- name: Member
+  photo: dummy_female_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+
+- name: Member
+  photo: dummy_male_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+
+- name: Member
+  photo: dummy_female_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+
+- name: Member
+  photo: dummy_male_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+
+- name: Member
+  photo: dummy_female_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+      
  
  

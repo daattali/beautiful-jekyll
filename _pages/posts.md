@@ -10,19 +10,8 @@ permalink: /posts/
 
 <ul class="posts">
 
-	  {% for post in site.posts %}
-	  
-	  
-		<div class="card">
-		  <h5 class="card-header">{{post.title}}</h5>
-		  <div class="card-body">
-			<h5 class="card-title">{{post.subtitle}}</h5>
-			<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-			<a href="#" class="btn btn-primary">Go somewhere</a>
-		  </div>
-		</div>
-	  
-      <div class="card" >
+	  {% for post in site.posts %}  
+    <div class="card" >
 	  <a href="{{ post.url | absolute_url }}">
       <h2 class="post-title">{{ post.title }}</h2>
 
@@ -53,11 +42,11 @@ permalink: /posts/
       {% endcapture %}
       {% assign thumbnail=thumbnail | strip %}
       {% if thumbnail != "" %}
-	  <div class="post-image">
+	 <!-- <div class="post-image">
         <a href="{{ post.url | absolute_url }}">
           <img src="{{ thumbnail | absolute_url }}">
         </a>
-      </div>
+      </div>-->
       </div>
       {% endif %}
       <div class="post-entry">

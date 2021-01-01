@@ -16,8 +16,9 @@ permalink: /photos/
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/dsse-group-pic/{{ pic.image }}" class="img-responsive" width="95%" style="float: left" />
+<img  src="{{ site.url }}{{ site.baseurl }}/images/dsse-group-pic/{{ pic.image }}" class="img-responsive" width="95%" style="float: left" />
 <!-- <a>{{pic.title}}</a> -->
+<!-- The Modal -->
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}

@@ -1,0 +1,59 @@
+- name: Alumin-1
+  photo: dummy_male_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+
+- name: Alumin-2
+  photo: dummy_female_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+ 
+- name: Alumin-3
+  photo: dummy_male_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+
+- name: Alumin-4
+  photo: dummy_female_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+  
+- name: Alumin-5
+  photo: dummy_male_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
+
+- name: Alumin-6
+  photo: dummy_female_dp.png
+  info: AAA
+  email: AAA
+  homepage: ""
+  number_educ: 3
+  education1: BSc, IIT University of Dhaka 
+  education2: MSc, IIT University of Dhaka 
+  education3: PhD, Imperial College London (On Going)
