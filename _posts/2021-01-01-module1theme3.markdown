@@ -21,4 +21,4 @@ Voici l'image dont vous aurez besoin.
 
 <center>
 	      <img class="avatar-img" src="/pomme.jpg" />
-<\center>
+</center>
