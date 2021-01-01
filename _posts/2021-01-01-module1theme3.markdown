@@ -15,5 +15,9 @@ Démontrer que l'équation $f_n(x)=0$ admet dans $\dR$ une unique solution noté
 5. Soit $n$ un entier naturel non nul. Calculer $f_n\left(\dfrac{1}{n}\right)$ puis en déduire la limite de la suite $(u_n)$.
 
 Voici l'image dont vous aurez besoin. 
-<img src="https://github.com/ymobian/ymobian.github.io/blob/master/pomme.jpg"/>
-![logo Markdown](https://github.com/ymobian/ymobian.github.io/blob/master/pomme.jpg)
+
+
+<center>
+![](https://github.com/ymobian/ymobian.github.io/blob/master/pomme.jpg)
+[Source](https://fontmeme.com/signature-fonts/)
+</center>
