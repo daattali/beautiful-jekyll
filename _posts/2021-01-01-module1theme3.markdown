@@ -23,4 +23,4 @@ Voici l'image dont vous aurez besoin.
 	      <img class="avatar-img" src="/pomme.jpg" />
 </center>
 
-![logo Markdown](src=/pomme.jpg)
+![Zozor](http://uploads.siteduzero.com/files/420001_421000/420263.png)
