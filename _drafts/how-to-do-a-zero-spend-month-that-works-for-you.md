@@ -17,13 +17,13 @@ share-img: ''
 redirect_from: []
 
 ---
-Like with anything, there are many perspectives for finances. What's been working really well for us the past couple years is when we stick to a _zero spend budget_. Today on the blog, I'm sharing about how to do a zero spend month that works for you. 
+Like with anything, there are many perspectives for finances. What's been working really well for us the past couple years is when we stick to a _zero spend budget_. Today on the blog, I'm sharing about how to do a zero spend month that works for you.
 
-## ![A picture of an empty wallet.](/uploads/how-to-do-a-zero-spend-month-that-works-for-you-shm1.jpg "How to do a zero spend month that works for you SHM1")  
-   
-What does a zero spend month look like? 
+## ![A picture of an empty wallet.](/uploads/how-to-do-a-zero-spend-month-that-works-for-you-shm1.jpg "How to do a zero spend month that works for you SHM1")
 
-We keep a zero spend month simple - I see it more of a mindset than a list of rules. Essentially, we don't spend unless necessary, simplify, and streamline it all. We've ended up saving a lot of money faster this way too. Which is the goal, right? Little purchases used to add up so quickly for us, so this shift has been huge for us. 
+What does a zero spend month look like?
+
+We keep a zero spend month simple - I see it more of a mindset than a list of rules. Essentially, we don't spend unless necessary, simplify, and streamline it all. We've ended up saving a lot of money faster this way too. Which is the goal, right? Little purchases used to add up so quickly for us, so this shift has been huge for us.
 
 ### What does a zero spend month look like practically speaking?
 
@@ -41,16 +41,16 @@ Instead of setting aside certain amounts for spending areas such as with a [trad
 
 #### Some zero spend month benefits (that we’ve found)
 
-Doing a zero spend month that works for you, helps you to become better at [intentional spending](https://circlein.com/tips-to-start-intentionally-saving-and-intentionally-spending/) because you’re reflecting on it so often. We also became much better at intentional saving too. We probably cut the time in half for saving for a basement reno last year by using a zero spend month, for instance. 
+Doing a zero spend month that works for you, helps you to become better at [intentional spending](https://circlein.com/tips-to-start-intentionally-saving-and-intentionally-spending/) because you’re reflecting on it so often. We also became much better at intentional saving too. We probably cut the time in half for saving for a basement reno last year by using a zero spend month, for instance.
 
 ![A picture of a notepad and calculator.](/uploads/how-to-do-a-zero-spend-month-that-works-for-you-shm3.jpg "How to Do a Zero Spend Month that Works For You SHM3")
 
-## How do you do a zero spend month that works for you? 
+## How do you do a zero spend month that works for you?
 
 Make your own rules, guidelines, and be mindful of your spending. Learn from your mistakes and keep going. It’s worth it if you are really looking to be better at your finances. It can help so much if you have debt or want to start saving. Going a step further, you may also enjoy [Dave Ramsey’s steps](https://www.daveramsey.com/dave-ramsey-7-baby-steps) for taking control of your finances.
 
-_And if this sounds interesting to you and you'd like to try it. I linked a "Plan Your Zero Spend Month" worksheets for you if you'd like to try a zero spend month that you can download_ [_here_](https://mailchi.mp/8264c25ebc2a/zerospend)_.   
- _  
+_And if this sounds interesting to you and you'd like to try it. I linked a "Plan Your Zero Spend Month" worksheets for you if you'd like to try a zero spend month that you can download_ [_here_](https://mailchi.mp/8264c25ebc2a/zerospend)_.  
+_  
 **What's included in the zero spend month worksheets?**
 
 1. Some background information on what a zero spend month is.
@@ -59,7 +59,7 @@ _And if this sounds interesting to you and you'd like to try it. I linked a "Pla
 4. Spending tracker page for all expenses.
 5. Spending habit tracker (essentially to track the days you stick to zero spend)! So you can see your progess.
 
-I’d also suggest reading my friend Shelly's blog here " "....
+I’d also suggest reading my friend Shelly's blog here with some more great tips: "[5 No Spend Month Tips and Tricks.](https://www.envision31.com/blog1/5nospendmonthtipsandtricks) "
 
 **Here's to more mindful spending!**
 
