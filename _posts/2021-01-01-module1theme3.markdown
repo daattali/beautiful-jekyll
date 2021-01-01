@@ -18,5 +18,5 @@ Voici l'image dont vous aurez besoin.
 
 
 <center>
-<img src=".../images/em.gif"/>
+<img src="https://www.google.com/search?q=pomme+verte&client=firefox-b-d&sxsrf=ALeKk01uEPZX5cPl-R7aiYgxX-0xpAWtJw:1609499704650&tbm=isch&source=iu&ictx=1&fir=0dnIFSZ84i_cnM%252CZACy3WdA-NFITM%252C_&vet=1&usg=AI4_-kQRdEzSvNXudoGSt0VlAPzliZGugg&sa=X&ved=2ahUKEwiflaXRzfrtAhUHtRoKHbOsChkQ9QF6BAgLEAE&biw=1366&bih=626#imgrc=4nXndPzjNmHOgM"/>
 </center>
