@@ -17,4 +17,6 @@ Démontrer que l'équation $f_n(x)=0$ admet dans $\dR$ une unique solution noté
 Voici l'image dont vous aurez besoin. 
 
 
-:grin:
+<a href="https://fcoulombeau.github.io">
+	      <img class="avatar-img" src="/pomme.jpg" />
+		</a>
