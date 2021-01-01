@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SNT : module 2 thème 2'
-published: true
+published: false
 ---
 
 
@@ -23,4 +23,3 @@ Voici l'image dont vous aurez besoin.
 	      <img class="avatar-img" src="/pomme.jpg" />
 </center>
 
-![Zozor](http://uploads.siteduzero.com/files/420001_421000/420263.png)
