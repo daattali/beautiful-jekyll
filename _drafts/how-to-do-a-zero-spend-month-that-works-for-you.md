@@ -49,8 +49,9 @@ Doing a zero spend month that works for you, helps you to become better at [inte
 
 Make your own rules, guidelines, and be mindful of your spending. Learn from your mistakes and keep going. It’s worth it if you are really looking to be better at your finances. It can help so much if you have debt or want to start saving. Going a step further, you may also enjoy [Dave Ramsey’s steps](https://www.daveramsey.com/dave-ramsey-7-baby-steps) for taking control of your finances.
 
-_And if this sounds interesting to you and you'd like to try it. I linked a "Plan Your Zero Spend Month" worksheets for you if you'd like to try a zero spend month that you can download_ [_here_](https://mailchi.mp/8264c25ebc2a/zerospend)_.  
-_  
+_And if this sounds interesting to you and you'd like to try it. I linked a "Plan Your Zero Spend Month" worksheets for you if you'd like to try a zero spend month that you can download_ [_here_](https://mailchi.mp/8264c25ebc2a/zerospend).
+
+  
 **What's included in the zero spend month worksheets?**
 
 1. Some background information on what a zero spend month is.
@@ -60,6 +61,11 @@ _
 5. Spending habit tracker (essentially to track the days you stick to zero spend)! So you can see your progess.
 
 I’d also suggest reading my friend Shelly's blog here with some more great tips: "[5 No Spend Month Tips and Tricks.](https://www.envision31.com/blog1/5nospendmonthtipsandtricks) "
+
+Other blogs of mine you may like:
+
+* [Five Tips to Have a Successful Zero Spend Month](https://www.simplehomemom.com/five-tips-to-have-a-successful-zero-spend-month/) 
+* [How to Create Minimal Wardrobes for Kids on a Budget](https://www.simplehomemom.com/how-to-create-minimal-wardrobes-for-kids-on-a-budget/)
 
 **Here's to more mindful spending!**
 
