@@ -18,5 +18,5 @@ Voici l'image dont vous aurez besoin.
 
 
 <center>
-<img src="https://github.com/ymobian/ymobian.github.io/blob/master/pomme.jpg"/>
+<img src=".../images/em.gif"/>
 </center>
