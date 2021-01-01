@@ -18,5 +18,5 @@ Voici l'image dont vous aurez besoin.
 
 
 <center>
-![pommus](https://github.com/ymobian/ymobian.github.io/blob/master/pomme.jpg)
+![DESCRIPTION DE L'IMAGE](https://github.com/ymobian/ymobian.github.io/blob/master/pomme.jpg)
 </center>
