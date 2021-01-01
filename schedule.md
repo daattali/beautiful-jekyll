@@ -28,15 +28,15 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 2-Nov		| Fractions				| [2015 AMC 8](https://artofproblemsolving.com/wiki/index.php/2015_AMC_8_Problems) | |
 | 9-Nov		| Area					| _No school_ | |
 | 16-Nov	| Patterns				| _Cancelled_ | |
-| 23-Nov	| Work					| 2017 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iTmtVRFV6LTJEbWs) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iYjZIVGprcmdDQ0E) | _No school_ |
-| 30-Nov	| Similarity			| 2016 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-ic0hBV2VNOGhCa3M) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-ialoyLTc3NVlYc3M) | |
-| 7-Dec		| Logic					| 2015 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-id0RIZUJrOWRIOE0) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iRU9JRVBRQU1LMVU) | |
-| 14-Dec	| Counting				| 2014 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iMEdDNm05TWVMY0k) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iRVlPVGtjZlVwS2c) | |
-| 4-Jan		| Coordinate Geometry	| 2013 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iS3hJanN0Y0dVVXM) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iYTluQ211LUwwV3M) | |
-| 11-Jan	| Pascal's Triangle		| 2012 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-idkEtUEo0UXhhcjA) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-idkEtUEo0UXhhcjA) | |
-| 18-Jan	| _No school_			| 2011 Mathcounts Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iSmUwSk9ZZFAyZkk) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iNFQ3MjgxeHRhWkU) | _Mathcounts_ |
+| 23-Nov	| Work					| 2017 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iTmtVRFV6LTJEbWs) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iYjZIVGprcmdDQ0E) | _No school_ |
+| 30-Nov	| Similarity			| 2016 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-ic0hBV2VNOGhCa3M) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-ialoyLTc3NVlYc3M) | |
+| 7-Dec		| Logic					| 2015 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-id0RIZUJrOWRIOE0) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iRU9JRVBRQU1LMVU) | |
+| 14-Dec	| Counting				| 2014 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iMEdDNm05TWVMY0k) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iRVlPVGtjZlVwS2c) | |
+| 4-Jan		| Coordinate Geometry	| 2013 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iS3hJanN0Y0dVVXM) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iYTluQ211LUwwV3M) | |
+| 11-Jan	| Pascal's Triangle		| 2012 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-idkEtUEo0UXhhcjA) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-idkEtUEo0UXhhcjA) | |
+| 18-Jan	| _No school_			| 2011 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iSmUwSk9ZZFAyZkk) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iNFQ3MjgxeHRhWkU) | _Mathcounts_ |
 | 25-Jan	| Sequences				| [15-16 MIC Regional 8th Grade Individual](https://www.academicsarecool.com/assets/samples/15-16%2078%20Champs.pdf) | |
-| 1-Feb		| Clocks				| [16-17 MIC Regional 8th Grade Individual](https://www.academicsarecool.com/assets/samples/17-18Champs78.pdf) | |
+| 1-Feb		| Clocks				| [16-17 MIC Regional 8th Grade Individual](https://www.academicsarecool.com/assets/samples/16-17Champs8.pdf) | |
 | 8-Feb		| Statistics			| _Math Is Cool_ | _No school_ |
 | 15-Feb	| _No school_			| | |
 | 22-Feb	| Travel				| | |
