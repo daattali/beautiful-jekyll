@@ -64,7 +64,7 @@ _And if this sounds interesting to you and you'd like to try it. I linked a "Pla
 
 I’d also suggest reading my friend Shelly's blog here with some more great tips: "[5 No Spend Month Tips and Tricks.](https://www.envision31.com/blog1/5nospendmonthtipsandtricks) "
 
-Other blogs of mine you may like:
+**Other blogs of mine you may like:**
 
 * [Five Tips to Have a Successful Zero Spend Month](https://www.simplehomemom.com/five-tips-to-have-a-successful-zero-spend-month/) 
 * [How to Create Minimal Wardrobes for Kids on a Budget](https://www.simplehomemom.com/how-to-create-minimal-wardrobes-for-kids-on-a-budget/)
