@@ -5,6 +5,8 @@ tags:
 - simple budgeting
 - zero spend challenge
 - budgeting
+- zero spend months
+- mindful spending
 thumbnail-img: "/uploads/headshot.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
