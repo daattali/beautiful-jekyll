@@ -51,7 +51,7 @@ comments:
   # Whether entries need to be approved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
   # Otherwise, entries will be published to the main branch automatically.
-  moderation: true
+  moderation: false
 
   # Akismet spam detection.
   # akismet:
@@ -63,7 +63,7 @@ comments:
   #   type: "comment"
 
   # Name of the site. Used in notification emails.
-  # name: "Ritobrata Ghosh"
+  # name: "Your Site"
 
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
@@ -101,10 +101,10 @@ comments:
   # 1. Set `enabled` to `true`
   # 2. Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
   # 3. Uncomment `siteKey` and `secret` and fill them in with your values
-  #reCaptcha:
-    #enabled: true
-    #siteKey: "6Lcxs_kZAAAAAOojYrsVrzxOZOZtE9q-les47-Zw"
-    #ENCRYPT reCaptcha secret key using Staticman /encrypt endpoint
-    #i.e. https://{STATICMAN API INSTANCE}/v3/encrypt/{your-site-secret}
-    #For more information, visit https://staticman.net/docs/encryption
-    #secret: "o65+nNYWT0eTz7KpIug05e4VJoy3+rWpe39DTwGgms+10WWU7TzkLNwhPTJgVpH5JLr5FbsSZRBb+0QauQoxfkxeTvg9F1U9fDV4H8wXWfInQ1aRevLIX5EI/4ZnYEKlyu6fT/CYF2WbNhfXHZS3uMOqeCUo1uYN/+7vfizQJSencMQ0HHmH1/PWM4Ht3VMGPYSGLcXgQhN4BK412ucrDQWhvn6qgECCCUyRsAiyaDjKzdORNfTuprW+Qeh97igRsO0nroclpkX8gGyO1EYFF6s2kGc4K++mYSb71JhYl4XcIUeJXkcut2ZYcSXii+fw+heoGr/6mhdcWlHBGm95pQ=="
+  reCaptcha:
+    enabled: false
+    #siteKey: ""
+    # ENCRYPT reCaptcha secret key using Staticman /encrypt endpoint
+    # i.e. https://{STATICMAN API INSTANCE}/v3/encrypt/{your-site-secret}
+    # For more information, visit https://staticman.net/docs/encryption
+    #secret: ""

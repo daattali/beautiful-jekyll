@@ -1,15 +1,16 @@
 ---
 layout: page
-title: About Me
-cover-img: ["/assets/img/aboutme/shallowgan.png", "/assets/img/aboutme/style_transfer.png"]
+title: About me
+subtitle: Why you'd want to go on a date with me
 ---
 
-Hi, 😀 I am Ritobrata Ghosh.
+My name is Inigo Montoya. I have the following qualities:
 
-I am an undergraduate student studying Physics, Mathematics, and CS interested in **Deep Learning** and Machine Learning. I am especially interested in **Generative Adversarial Networks**, and **Deep Reinforcement Learning**. I am interested in cutting-edge research of these fields.
+- I rock a great mustache
+- I'm extremely loyal to my family
 
-I am fairly active on Kaggle.
+What else do you need?
 
-I care deeply about **solving real-world problems** with Machine Learning, and AI for good.
+### My story
 
-I enjoy reading books- fiction and non-fiction alike, listen to music, watch good TV Series, and recite poetry.
+To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.

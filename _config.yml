@@ -6,33 +6,32 @@
 # --- Required options --- #
 
 # Name of website
-title: Ritobrata Ghosh
+title: My Website
 
 # Your name to show in the footer
-author: Ritobrata Ghosh
+author: Some Person
+
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
-  Learning Deep: "https://medium.com/learningdeep"
-  Kaggle: "https://www.kaggle.com/truthr"
-#   Resources:
-#     - Beautiful Jekyll: "https://beautifuljekyll.com"
-#     - Learn markdown: "https://www.markdowntutorial.com/"
-#   Author's home: "https://deanattali.com"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/self.jpeg"
+avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-# title-img: "/assets/img/self.jpeg"
+#title-img: /path/to/image
 
 
 # --- Footer social media links --- #
@@ -40,35 +39,45 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "ritobrata-ghosh@outlook.com"
-#   facebook: deanattali
-  github: ghosh-r
-  twitter: AllesistKode
-#   patreon: DeanAttali
-#   youtube: c/daattali
-  linkedin: ritobrata-ghosh
+  email: "someone@example.com"
+  facebook: deanattali
+  github: daattali
+  twitter: daattali
+  patreon: DeanAttali
+  youtube: c/daattali
+#  reddit: yourname
+#  linkedin: daattali
+#  xing: yourname
 #  stackoverflow: "3943160/daattali"
-  instagram: rito.dl
+#  snapchat: deanat78
+#  instagram: deanat78
+#  spotify: yourname
+#  telephone: +14159998888
+#  steam: deanat78
 #  twitch: yourname
+#  yelp: yourname
+#  telegram: yourname
+#  calendly: yourname
+#  mastodon: instance.url/@username
+#  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: RSS of the site
+rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
 # Select which social network share links to show in posts
 share-links-active:
   twitter: true
-  facebook: false
+  facebook: true
   linkedin: true
-  vk: true
-  # reddit: true
+  vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "ghosh-r.github.io"
+url-pretty: "MyWebsite.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -80,21 +89,21 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "deep-learning, artificial-intelligence, ai, kaggle, machine-learning, vision, computer-vision, gan, reinforcement-learning"
+#keywords: "my,list,of,keywords"
 
 # --- Colours / background image --- #
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#02919E"
-navbar-text-col: "#FFFFFF"
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
-link-col: "#FF0001"
-hover-col: "#404040"
-footer-col: "#02919E"
-footer-text-col: "#FFFFFF"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
 footer-link-col: "#404040"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
@@ -105,7 +114,7 @@ footer-link-col: "#404040"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-mobile-theme-col: "#02919E"
+#mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
@@ -130,11 +139,17 @@ mobile-theme-col: "#02919E"
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
 # whether or not you want to allow users to opt out of tracking.
 #matomo:
- #site_id: "9"
- #uri: "demo.wiki.pro"
- #opt-out: false
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true
 
 # --- Comments --- #
+
+# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
+#disqus: ""
+
+# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
+#fb_comment_id: ""
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,
@@ -152,18 +167,21 @@ mobile-theme-col: "#02919E"
 # If you want to use reCaptcha for staticman (optional for spam protection), then fill
 # in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
 # See more details at https://staticman.net/
-staticman:
- repository : "ghosh-r/ghosh-r.github.io"
- branch     : "master"  # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-# #  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
+#staticman:
+#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
 #  reCaptcha:
-#   siteKey  : "6Lcxs_kZAAAAAOojYrsVrzxOZOZtE9q-les47-Zw"
-#   secret   : "o65+nNYWT0eTz7KpIug05e4VJoy3+rWpe39DTwGgms+10WWU7TzkLNwhPTJgVpH5JLr5FbsSZRBb+0QauQoxfkxeTvg9F1U9fDV4H8wXWfInQ1aRevLIX5EI/4ZnYEKlyu6fT/CYF2WbNhfXHZS3uMOqeCUo1uYN/+7vfizQJSencMQ0HHmH1/PWM4Ht3VMGPYSGLcXgQhN4BK412ucrDQWhvn6qgECCCUyRsAiyaDjKzdORNfTuprW+Qeh97igRsO0nroclpkX8gGyO1EYFF6s2kGc4K++mYSb71JhYl4XcIUeJXkcut2ZYcSXii+fw+heoGr/6mhdcWlHBGm95pQ=="
+#    siteKey  : # Use your own site key, you need to apply for one on Google
+#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # --- Misc --- #
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
+
+# Facebook App ID
+#fb_app_id: ""
 
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
@@ -210,3 +228,4 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+
