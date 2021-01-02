@@ -20,14 +20,13 @@ permalink: /members/
   </div>
   <div class="col-sm-9"> 
   <p align="justify">
-Kazi Muheymin-Us-Sakib is a Professor at the <a href="http://www.iit.du.ac.bd/about_iit/individual_teacher/47" target="_blank"> Institute of Information Technology (IIT)</a>, <a href="http://du.ac.bd/" target="_blank"> University of Dhaka </a>. He completed his Ph.D. at <a  href="https://www.rmit.edu.au/" target="_blank">RMIT University </a> on Distributed Systems and pursued a master's and a bachelor's degree in <a href="http://www.cse.du.ac.bd/" target="_blank"> Computer Science and Engineering (CSE)</a> at the University of Dhaka before joining as a faculty.
+<b>Dr. Kazi Muheymin-Us-Sakib</b> is a Professor at the <a href="http://www.iit.du.ac.bd/about_iit/individual_teacher/47" target="_blank"> Institute of Information Technology (IIT)</a>, <a href="http://du.ac.bd/" target="_blank"> University of Dhaka </a>. He completed his Ph.D. at <a  href="https://www.rmit.edu.au/" target="_blank">RMIT University </a> on Distributed Systems and pursued a master's and a bachelor's degree in <a href="http://www.cse.du.ac.bd/" target="_blank"> Computer Science and Engineering (CSE)</a> at the University of Dhaka before joining as a faculty.
 His research interest broadly lies in software engineering and its various aspects, for instance, Adaptive and Distributed System,  Cloud Computing, Software Testing, Software Architecture & Design, Requirement Analysis, Project Management, Code Smell & Refactoring, Code Search and Code Clone. 
 His work has been published in major and premier conferences & journals in the area of software engineering such as ICSE, ICSME, APSEC, ENASE, SANER attracting substantial interest from the software engineering research community.
-His research work and projects have been funded by <a href="https://ictd.gov.bd/" target="_blank">ICT Division Bangladesh </a>, <a href="https://ptd.gov.bd/" target="_blank"> Ministry of Posts, Telecommunications and Information Technology, Bangladesh</a>, <a href="http://www.ugc.gov.bd/" target="_blank"> University Grant Commission (UGC) </a>, <a href="https://www.bdren.net.bd/" target="_blank"> Bangladesh, and Bangladesh Research and Education Network (BdREN)</a>. 
-Former students of his reearch group have obtained Ph.D. position at Imperial College London, Carnegie Mellon University (CMU),  NC State University, University at Buffalo (SUNY), College of William and Mary, University of Alberta, and Concordia University. Besides, his graduated student got employment in high-tech industries like Amazon, Microsoft and, secured faculty position in many prestigious and renowned public and private universities in Bangladesh, for instance, University of Dhaka (DU), Shahjalal University of Science and Technology (SUST), Bangladesh University of Professionals (BUP), Islamic University of Technology (IUT), BRAC University, Noakhali Science and Technology University (NUST), University of Barishal, Jashore University of Science and Technology (JUST).</p> </div>
+His research work and projects have been funded by <a href="https://ictd.gov.bd/" target="_blank">ICT Division Bangladesh </a>, <a href="https://ptd.gov.bd/" target="_blank"> Ministry of Posts, Telecommunications and Information Technology, Bangladesh </a>, <a href="http://www.ugc.gov.bd/" target="_blank"> University Grant Commission (UGC) </a> and, <a href="https://www.bdren.net.bd/" target="_blank"> Bangladesh Research and Education Network (BdREN)</a>. 
+Former students of his reearch group have obtained Ph.D. position at Imperial College London, Carnegie Mellon University (CMU),  NC State University, University at Buffalo (SUNY), College of William and Mary, University of Alberta, and Concordia University. Besides, his graduated student got employment in high-tech industries like Amazon, Microsoft and, secured faculty position in many prestigious and renowned public and private universities in Bangladesh, for instance, University of Dhaka (DU), Shahjalal University of Science and Technology (SUST), Bangladesh University of Professionals (BUP), Islamic University of Technology (IUT), BRAC University, Noakhali Science and Technology University (NSTU), University of Barishal, Jashore University of Science and Technology (JUST).</p> </div>
 </div>
 
-<!-- Jump to [Research Staff and PhD Students](#research-staff-and-phd-students), [Master and Bachelor Students](#master-and-bachelor-students), [Alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors). -->
 
 <h2 style="font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 32px;">Members</h2>
 <br>
@@ -163,7 +162,7 @@ Former students of his reearch group have obtained Ph.D. position at Imperial Co
 
 
 ### Administrative Support
-If you need to update your information, feel free to contact <a href="bsse0516@iit.du.ac.bd">Md Rakib Hossain (Misu)</a>.
+If you need to update your information, feel free to contact <a href="https://mrhmisu.github.io/" target="_blank">Md Rakib Hossain (Misu)</a>.
 <br>
 <br>
 <br>

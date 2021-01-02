@@ -50,16 +50,22 @@ permalink: /
 
 <p style="text-align:center"><i>DSSE Research Group</i></p>
 
-We **love to collaborate**. ....
-
 Our work has been published in **major conferences and journals** in the areas of software engineering (ICSE, ICSME, APSEC, ENASE, SANER etc).
 
 **We are grateful for funding from** [IIT University of Dhaka](http://www.iit.du.ac.bd/), [ICT Division](https://ictd.gov.bd/), [ Ministry of Posts, Telecommunications and Information Technology](https://ptd.gov.bd/), [UGC](http://www.ugc.gov.bd/) and [BdREN](https://www.bdren.net.bd/).
 
+We **love to collaborate** with the software industries and we establish an industry-academia collaboration. We partnered with many renowned software firms like 
+<a href="https://selise.ch/"  target="_blank"> SELISE rockin' software</a>, <a href="https://brainstation-23.com/"  target="_blank"> Brain Station 23 </a>, <a href="https://research.samsung.com/srbd"  target="_blank"> Samsung R&D Institute Bangladesh (SRBD)</a>, and so on. 
+
+<br>
 <div class="w-100">
-  <a href="http://www.iit.du.ac.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_iit_du.png" style="width: 110px"></a>
-  <a href="https://ictd.gov.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_ict_division.png" style="width: 110px" ></a>
-  <a href="https://ptd.gov.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_digital_bd.jpeg" style="width: 110px"></a>
-  <a href="http://www.ugc.gov.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_ugc.jpg" style="width: 110px"></a>
-  <a href="https://www.bdren.net.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_bdren.png" style="width: 110px"></a>
+  <a href="http://dsse.github.io/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_dsse.png" width="130px" height="80px"></a>
+  <a href="http://www.iit.du.ac.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_iit_du.png" width="130px" height="60px"></a>
+  <a href="https://ictd.gov.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_ict_division.png" width="150px" height="60px"></a>
+  <a href="http://www.ugc.gov.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_ugc.jpg" width="130px" height="100px"></a>
+  <a href="https://www.bdren.net.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_bdren.png" width="130px" height="60px"></a> 
+  <a href="https://selise.ch/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_selise.png" width="130px" height="60px"></a>
+  <a href="https://research.samsung.com/srbd" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_srbd.png" width="130px" height="60px"></a>
+  <a href="https://brainstation-23.com/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_brain_station_23.jpg" width="130px" height="60px"></a>
+  
 </div>

@@ -2,8 +2,8 @@ $(document).ready(function () {
 
     // get recent five years
     const present = new Date().getFullYear();
-    const older = present - 5;
-    const recent_years = [present, present - 1, present - 2, present - 3, present - 4];
+    const older = present - 10;
+    const recent_years = [present, present - 1, present - 2, present - 3, present - 4, present-5, present-6, present-7,present-8, present-9];
 
     // add recent five years filter button dynamically
     $('#filterByYear').append('<button type="button" class="btn  filterBtn selected" id="all">All</button>');
@@ -26,7 +26,8 @@ $(document).ready(function () {
             $('.papers').hide();
             // show all publications except the recent years
             $('.papers').not('.' + recent_years[0]).not('.' + recent_years[1])
-                .not('.' + recent_years[2]).not('.' + recent_years[3]).not('.' + recent_years[4]).show();
+                .not('.' + recent_years[2]).not('.' + recent_years[3]).not('.' + recent_years[4]).not('.' + recent_years[5])
+				.not('.' + recent_years[6]).not('.' + recent_years[7]).not('.' + recent_years[8]).not('.' + recent_years[9]).show();
         } else {
             // show only the selected filtered papers
             $(filter_class).show();
