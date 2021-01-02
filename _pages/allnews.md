@@ -6,7 +6,9 @@ sitemap: false
 permalink: /allnews.html
 ---
 
-# News and Activities
+
+<h2 style="font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 32px;">News and Activities</h2>
+<br>
 
 {% for article in site.data.news %}
 <span style="color: #7a0000;">[{{ article.date }}]</span>

@@ -309,22 +309,20 @@
   education2: MSc University of Dhaka
   education3: BSc University of Dhaka   
 
-- name: Member-1
+- name: This could be You!!
   photo: dummy_male_dp.png
   current_position: ...
   current_organization: ...
   email: ...
   homepage: "#"
-  number_educ: 2
-  education1: BSc University of Dhaka 
-  education2: MSc University of Dhaka  
+  number_educ: 1
+  education1: ...  
 
-- name: Member-2
+- name: This could be You!!
   photo: dummy_female_dp.png
   current_position: ...
   current_organization: ...
   email: ...
   homepage: "#"
-  number_educ: 2
-  education1: BSc University of Dhaka 
-  education2: MSc University of Dhaka  
+  number_educ: 1
+  education1: ...   

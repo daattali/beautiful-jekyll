@@ -34,3 +34,11 @@
 # 12
 - broad_domain_name: Requirement Analysis
   domain_id: requirement_analysis
+  
+# 13
+- broad_domain_name: Program Repair
+  domain_id: program_repair
+  
+# 14
+- broad_domain_name: Empirical Study
+  domain_id: empirical_study

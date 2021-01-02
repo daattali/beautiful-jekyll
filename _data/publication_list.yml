@@ -1,137 +1,65 @@
-- title: "2020 code_clone code_search"
-  publication_no: 25
-  image: 
-  description:  
-  authors: Toukir Ahammed, Moumita Asad, Kazi Sakib.
-  publisher: "In proceedings of the 8th International Workshop on Quantitative Approaches to Software Quality (QuASoQ20) co-located with 27th Asia-Pacific Software Engineering Conference (APSEC 2020) Singapore, December, 2020, pp: 64 - 70."
+- title: "Impact on the Productivity of Remotely Working IT Professionals of Bangladesh during the Coronavirus Disease 2019" 
+  authors: Kishan Kumar Ganguly, Noshin Tahsin, Mridha Md Fuad, Toukir Ahammed, Moumita Asad, Fatiul Huq Sujoy, ATM Rabbi, Kazi Sakib.
+  publisher: "arXiv preprint arXiv:2008.11636"
+  # single year (used for filtering) 
   year: 2020
-  # use space to assign multiple domains
-  domain_id: code_clone code_search
-  type: Conference
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/381"
+  # use space to assign multiple domains (used for filtering)
+  domain_id: project_management
+  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
+  type: Arxiv
+  pdf: "https://arxiv.org/abs/2008.11636"
   doi: 
   code:
-  highlight: 0
-  news2:
   
-
-- title: "2019 code_clone"
-  publication_no: 24
-  image: 
-  description:  
-  authors: Moumita Asad, Kishan Kumar Ganguly and Kazi Sakib
-  publisher: "IEEE/ACM 42nd International Conference on Software Engineering Workshops (ICSEW), 2020, Soul, Republic of South Korea, pp: 21 - 22."
-  year: 2019
-  domain_id: code_clone
-  type: Conference
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/372"
-  doi: 
-  code:
-  highlight: 0
-  news2:
   
-- title: "2018 code_search"
-  publication_no: 23
-  image: 
-  description:  
-  authors: Moumita Asad, Kishan Kumar Ganguly and Kazi Sakib
-  publisher: "In Proceedings of the 15th International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE 2020), pages 170-180, 5 - 6 May, 2020."
-  year: 2018
-  domain_id: code_search
-  type: Conference
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/371"
+- title: "Effects of Internship on Fresh Graduates: A case study on IIT, DU students" 
+  authors: Amit Seal Ami, Asif Imran, Alim Ul Gias, Kazi Sakib
+  publisher: "arXiv preprint arXiv:2008.07450"
+  # single year (used for filtering) 
+  year: 2020
+  # use space to assign multiple domains (used for filtering)
+  domain_id: project_management
+  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
+  type: Arxiv
+  pdf: "https://arxiv.org/pdf/2008.07450"
   doi: 
   code:
-  highlight: 0
-  news2:
-  
-- title: "2017 code_search"
-  publication_no: 22
-  image: 
-  description:  
-  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
-  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
-  year: 2017
+
+- title: "Impact of Similarity on Repairing Small Programs: A Case Study on QuixBugs Benchmark" 
+  authors: Moumita Asad, Kishan Kumar Ganguly, Kazi Sakib
+  publisher: "Proceedings of the IEEE/ACM 42nd International Conference on Software Engineering Workshops"
+  # single year (used for filtering) 
+  year: 2020
+  # use space to assign multiple domains (used for filtering)
+  domain_id: program_repair
+  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
   type: Conference
-  domain_id: code_search
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
+  pdf: "https://www.researchgate.net/profile/Moumita_Asad/publication/343817779_Impact_of_Similarity_on_Repairing_Small_Programs_A_Case_Study_on_QuixBugs_Benchmark/links/5f41fcb6a6fdcccc43ee0ff6/Impact-of-Similarity-on-Repairing-Small-Programs-A-Case-Study-on-QuixBugs-Benchmark.pdf"
   doi: 
   code:
-  highlight: 0
-  news2:
 
-- title: "2016 code_search"
-  publication_no: 22
-  image:
-  description:
-  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
-  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
-  year: 2016
+- title: "Is Developer Sentiment Related to Software Bugs: An Exploratory Study on GitHub Commits" 
+  authors: Syed Fatiul Huq, Ali Zafar Sadiq, Kazi Sakib
+  publisher: "2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)"
+  # single year (used for filtering) 
+  year: 2020
+  # use space to assign multiple domains (used for filtering)
+  domain_id: empirical_study
+  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
   type: Conference
-  domain_id: code_search
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
-  doi:
+  pdf: "https://www.researchgate.net/profile/Syed_Fatiul_Huq/publication/340401339_Is_Developer_Sentiment_Related_to_Software_Bugs_An_Exploratory_Study_on_GitHub_Commits/links/5f40e79992851cd302158bd5/Is-Developer-Sentiment-Related-to-Software-Bugs-An-Exploratory-Study-on-GitHub-Commits.pdf"
+  doi: 
   code:
-  highlight: 0
-  news2:
 
-- title:  "2015 code_search"
-  publication_no: 22
-  image:
-  description:
-  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
-  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
-  year: 2015
+- title: "Impact of Combining Syntactic and Semantic Similarities on Patch Prioritization" 
+  authors: Moumita Asad, Kishan Kumar Ganguly, Kazi Sakib
+  publisher: "2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)"
+  # single year (used for filtering) 
+  year: 2020
+  # use space to assign multiple domains (used for filtering)
+  domain_id: program_repair
+  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
   type: Conference
-  domain_id: code_search
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
-  doi:
-  code:
-  highlight: 0
-  news2:
-
-- title:  "2014 code_search"
-  publication_no: 22
-  image:
-  description:
-  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
-  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
-  year: 2014
-  type: Conference
-  domain_id: code_search
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
-  doi:
-  code:
-  highlight: 0
-  news2:
-
-- title:  "2013 code_search"
-  publication_no: 22
-  image:
-  description:
-  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
-  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
-  year: 2013
-  type: Conference
-  domain_id: code_search
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
-  doi:
-  code:
-  highlight: 0
-  news2:
-
-
-- title:  "2012 code_search"
-  publication_no: 22
-  image:
-  description:
-  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
-  publisher: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pp: 527 - 531."
-  year: 2012
-  type: Conference
-  domain_id: code_search
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
-  doi:
-  code:
-  highlight: 0
-  news2:
+  pdf: "https://www.researchgate.net/profile/Syed_Fatiul_Huq/publication/340401339_Is_Developer_Sentiment_Related_to_Software_Bugs_An_Exploratory_Study_on_GitHub_Commits/links/5f40e79992851cd302158bd5/Is-Developer-Sentiment-Related-to-Software-Bugs-An-Exploratory-Study-on-GitHub-Commits.pdf"
+  doi: 
+  code:       

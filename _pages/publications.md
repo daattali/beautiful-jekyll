@@ -37,17 +37,17 @@ or [Google Scholar](https://scholar.google.com/citations?hl=en&user=G88J0-EAAAAJ
   {% endif %}
   {% if publi.type == "Conference" %} 
   <div class="box" style="background-color: #196CA3;"></div>
-  <p style="display:inline-block;">[Conf-{{publi.publication_no}}] </p>
+  <p style="display:inline-block;">[Conf] </p>
   {% endif %}
   {% if publi.type == "Arxiv" %} 
   <div class="box" style="background-color: #606B70;"></div>
   <p style="display:inline-block;">[Arxiv] </p>
   {% endif %}
-  {% if publi.type == "Editorship" %} 
+  {% if publi.type == "Thesis" %} 
   <div class="box" style="background-color: #33C3BA;"></div>
-  <p style="display:inline-block;">[Editor] </p>
+  <p style="display:inline-block;">[Thesis] </p>
   {% endif %}
-  {% if publi.type <> "Journal" and publi.type <> "Conference" and publi.type <> "Arxiv" and publi.type <> "Editorship" %} 
+  {% if publi.type <> "Journal" and publi.type <> "Conference" and publi.type <> "Arxiv" and publi.type <> "Thesis" %} 
   <div class="box"></div>
   <p style="display:inline-block;">[Other] </p>
   {% endif %}
@@ -56,7 +56,7 @@ or [Google Scholar](https://scholar.google.com/citations?hl=en&user=G88J0-EAAAAJ
   <p>
   **{{ publi.title }}** <br/>
   <em>{{ publi.authors }} </em><br/>
-  {{ publi.publisher }} ( {% if publi.pdf %} <a href="{{ publi.pdf }}" target="_blank">Paper PDF</a> {% endif %} {% if publi.pdf and publi.doi %} | {% endif %} {% if publi.doi %} <a href="{{ publi.doi }}" target="_blank">DOI</a> {% endif %} {% if publi.pdf and publi.code %} | {% endif %}  {% if publi.code %} <a href="{{ publi.code }}" target="_blank">Code</a> {% endif %} )
+  {{ publi.publisher }}, <b>{{publi.year}}</b> ( {% if publi.pdf %} <a href="{{ publi.pdf }}" target="_blank">Paper PDF</a> {% endif %} {% if publi.pdf and publi.doi %} | {% endif %} {% if publi.doi %} <a href="{{ publi.doi }}" target="_blank">DOI</a> {% endif %} {% if publi.pdf and publi.code %} | {% endif %}  {% if publi.code %} <a href="{{ publi.code }}" target="_blank">Code</a> {% endif %} )
   </p>
 </div>
 </div>
