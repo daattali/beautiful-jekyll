@@ -1,0 +1,163 @@
+---
+---
+
+@import "bootstrap";
+
+img {
+  margin-bottom: 24px;
+  margin-top: 17px;
+  border-radius: 2%;
+}
+
+
+body {
+  padding-top: 70px;
+}
+
+figcaption {
+  text-align: right;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+
+/* Top navigation bar */
+
+
+p.byline {
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+  margin-top: -24px;
+  margin-bottom: 48px;
+}
+
+
+pubtit {
+  font-weight: bold;
+}
+
+firstp {
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px; /* or 950px */
+}
+
+/* Home, News */
+#newsid p {
+  text-align: left;
+}
+
+#homeidtmp h1 {
+  text-align: center;
+}
+
+#newsid img {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+/* Team & Publications */
+#gridid img {
+  margin: 16px 22px 6px 0;
+  border-radius: 10%;
+  box-shadow: 2px 2px 5px #888888
+}
+
+#homeid img {
+  margin: 0 0 0 0;
+  border-radius: 5%;
+  box-shadow: 0px 0px 0px #888888
+}
+
+#picid img {
+  margin: 6px 3px 60px 6px;
+  border-radius: 1%;
+  box-shadow: 2px 2px 5px #888888
+}
+
+#gridid .row {
+  margin-bottom: 24px;
+}
+
+
+/* Grid overrides */
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
+.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Grid overrides */
+.col-sm-4 {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+
+/* Carusel */
+
+.carousel {
+  border-radius: 3px 3px 3px 3px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+/** filter and its buttons*/
+
+.btn {
+  margin: 10px;
+  background-color: white;
+  background: white;
+  box-shadow: 0px;
+  border-width: 1px;
+  border-color: #7a0000;
+  border-radius: 2px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: none;
+}
+
+.btn:hover {
+  background-color: #7a0000;
+  color: white;
+  margin: 10px;
+  border-bottom-width: 0;
+}
+
+.btn:focus {
+  border-color: black;
+  color: black;
+  background-color: white;
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.filters > p {
+  text-align: center
+}
+
+.filterBtn {
+  border-width: 0px;
+}
+
+.filterBtn:focus {
+  outline: 0;
+}
+
+.filterBtn.selected {
+  border-bottom-width: 1px;
+  background-color: #7a0000;
+  color: white;
+}

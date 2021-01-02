@@ -1,0 +1,8 @@
+<div class="well">
+    <h3>Recent News</h3>
+    {% for article in site.data.news limit:3 %}
+    <span style="color: #7a0000;" >[{{ article.date }}]</span>
+    <p>{{ article.headline }}</p>
+    {% endfor %}
+    <h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
+</div>

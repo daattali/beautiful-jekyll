@@ -1,0 +1,44 @@
+# 1
+- broad_domain_name: Code Search
+  domain_id: code_search
+# 2
+- broad_domain_name: Code Smell & Refactoring
+  domain_id: code_smell_and_refactoring
+# 3
+- broad_domain_name: Bug Triage
+  domain_id: bug_triage
+# 4
+- broad_domain_name: Software Testing
+  domain_id: software_testing
+# 5
+- broad_domain_name: Cloud Computing
+  domain_id: cloud_computing
+# 6
+- broad_domain_name: Project Management
+  domain_id: project_management
+# 7
+- broad_domain_name: Adaptive and Distributed System
+  domain_id: adaptive_and_distributed_system
+# 8
+- broad_domain_name: Design Pattern
+  domain_id: design_pattern
+# 9
+- broad_domain_name: Code Clone
+  domain_id: code_clone
+# 10
+- broad_domain_name: Software Architecture & Design
+  domain_id: software_architecture
+# 11
+- broad_domain_name: Bug Localization
+  domain_id: bug_localization
+# 12
+- broad_domain_name: Requirement Analysis
+  domain_id: requirement_analysis
+  
+# 13
+- broad_domain_name: Program Repair
+  domain_id: program_repair
+  
+# 14
+- broad_domain_name: Empirical Study
+  domain_id: empirical_study
