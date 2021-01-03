@@ -20,7 +20,7 @@ highlight: tango  # specifies the syntax highlighting style
 tags:  ggplot2,visualization,Data Exploration,ggplot Extensions
 ---
 
-<body style="background: #fff;">
+#<body style="background: #fff;">
 
 Introduction
 ---------------------------------
@@ -1217,4 +1217,4 @@ ggduo(
 
 
 
-</body>
+#</body>
