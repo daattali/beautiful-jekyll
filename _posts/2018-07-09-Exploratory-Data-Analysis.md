@@ -34,6 +34,7 @@ Load Required Packages
 
 The pacman package provides a convenient way to load packages. It installs the package before loading if it not already installed.One of my favorite themes that I use with ggplot is the theme_pubclean. Here I set all themes with ggplot by it.
 
+<body style="background: #fff;">
 ```r
 #install.packages("ggpubr")
 
@@ -46,7 +47,7 @@ pacman::p_load(tidyverse,janitor,DataExplorer,skimr,ggpubr,viridis,kableExtra,Am
 
 theme_set(theme_pubclean())
 ```
-
+</body>
 
 
 
