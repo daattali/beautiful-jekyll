@@ -9,6 +9,7 @@ subtitle: ''
 * **Just released:** [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * Join the [weekly newsletter](http://eepurl.com/gYFb-r) +get access to the freebie vault
 * MY FIRST COURSE! Get on the list for the new round coming early next year (email me at simplehomemom@gmail.com if you'd like to get on the waitlist): [_Simplify Your Home Life: a course for busy moms_](http://kellymbriggs.github.io/course)
+* **Keeping it simple: an interview with Kelly**...a podcast I was on recently talking about all things for simplifying your home life. You can find that [here](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761).
 * [Latest blogs](http://kellymbriggs.github.io/)
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
 
