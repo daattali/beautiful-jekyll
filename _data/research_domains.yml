@@ -14,8 +14,8 @@
 - broad_domain_name: Cloud Computing
   domain_id: cloud_computing
 # 6
-- broad_domain_name: Project Management
-  domain_id: project_management
+- broad_domain_name: Software Project Management
+  domain_id: software_project_management
 # 7
 - broad_domain_name: Adaptive and Distributed System
   domain_id: adaptive_and_distributed_system
@@ -32,8 +32,8 @@
 - broad_domain_name: Bug Localization
   domain_id: bug_localization
 # 12
-- broad_domain_name: Requirement Analysis
-  domain_id: requirement_analysis
+- broad_domain_name: Software Requirement Analysis
+  domain_id: software_requirement_analysis
   
 # 13
 - broad_domain_name: Program Repair
@@ -42,3 +42,11 @@
 # 14
 - broad_domain_name: Empirical Study
   domain_id: empirical_study
+
+#15  
+- broad_domain_name: Fix-Inducing Changes
+  domain_id: fix_iducing_changes
+
+#16  
+- broad_domain_name: Technical Report
+  domain_id: technical_report

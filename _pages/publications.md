@@ -9,8 +9,8 @@ permalink: /publications/
 
 <h1 style="font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 32px;">Publications</h1>
 
-(For a full list, please go to [DBLP](https://dblp.uni-trier.de/pid/33/8657.html)
-or [Google Scholar](https://scholar.google.com/citations?hl=en&user=G88J0-EAAAAJ&view_op=list_works&sortby=pubdate))
+(For a full list, please go to <a href="https://dblp.uni-trier.de/pid/33/8657.html" target="_blank">DBLP</a>
+or <a href="https://scholar.google.com/citations?hl=en&user=G88J0-EAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a>)
 
 <div class="row" style="margin-bottom: 0">
 <div id="filterByYear" class="filters">
@@ -56,7 +56,8 @@ or [Google Scholar](https://scholar.google.com/citations?hl=en&user=G88J0-EAAAAJ
   <p>
   **{{ publi.title }}** <br/>
   <em>{{ publi.authors }} </em><br/>
-  {{ publi.publisher }}, <b>{{publi.year}}</b> ( {% if publi.pdf %} <a href="{{ publi.pdf }}" target="_blank">Paper PDF</a> {% endif %} {% if publi.pdf and publi.doi %} | {% endif %} {% if publi.doi %} <a href="{{ publi.doi }}" target="_blank">DOI</a> {% endif %} {% if publi.pdf and publi.code %} | {% endif %}  {% if publi.code %} <a href="{{ publi.code }}" target="_blank">Code</a> {% endif %} )
+  {{ publi.booktitle }} <b>[{{publi.year}}]</b> <br>
+  ( {% if publi.pdf %} <a href="{{ publi.pdf }}" target="_blank">Paper PDF</a> {% endif %} {% if publi.pdf and publi.doi %} | {% endif %} {% if publi.doi %} <a href="{{ publi.doi }}" target="_blank">DOI</a> {% endif %} {% if publi.pdf and publi.code_link %} | {% endif %}  {% if publi.code_link %} <a href="{{ publi.code_link }}" target="_blank">Code</a> {% endif %} )
   </p>
 </div>
 </div>

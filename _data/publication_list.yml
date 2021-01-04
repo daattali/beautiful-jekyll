@@ -1,65 +1,685 @@
-- title: "Impact on the Productivity of Remotely Working IT Professionals of Bangladesh during the Coronavirus Disease 2019" 
-  authors: Kishan Kumar Ganguly, Noshin Tahsin, Mridha Md Fuad, Toukir Ahammed, Moumita Asad, Fatiul Huq Sujoy, ATM Rabbi, Kazi Sakib.
-  publisher: "arXiv preprint arXiv:2008.11636"
-  # single year (used for filtering) 
+###2020###
+#Arxiv
+- title: "Impact on the Productivity of Remotely Working IT Professionals of Bangladesh during the Coronavirus Disease 2019"
+  authors: Kishan Kumar Ganguly, Noshin Tahsin, Mridha Md Fuad, Toukir Ahammed, Moumita Asad, Fatiul Huq Sujoy, ATM Rabbi, Kazi Sakib
+  booktitle: "arXiv preprint arXiv:2008.11636"
   year: 2020
-  # use space to assign multiple domains (used for filtering)
-  domain_id: project_management
-  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
+  domain_id: technical_report
   type: Arxiv
-  pdf: "https://arxiv.org/abs/2008.11636"
+  pdf: "https://arxiv.org/pdf/2008.11636"
+  url: "#"
   doi: 
-  code:
-  
-  
-- title: "Effects of Internship on Fresh Graduates: A case study on IIT, DU students" 
+  code_link:
+
+#Arxiv
+- title: "Understanding the Involvement of Developers in Missing Link Community Smell: An exploratory Study on Apache Projects"
   authors: Amit Seal Ami, Asif Imran, Alim Ul Gias, Kazi Sakib
-  publisher: "arXiv preprint arXiv:2008.07450"
-  # single year (used for filtering) 
+  booktitle: "arXiv preprint arXiv:2008.07450"
   year: 2020
-  # use space to assign multiple domains (used for filtering)
-  domain_id: project_management
-  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
+  domain_id: technical_report
   type: Arxiv
   pdf: "https://arxiv.org/pdf/2008.07450"
-  doi: 
-  code:
+  url: "#"
+  doi:
+  code_link:
 
-- title: "Impact of Similarity on Repairing Small Programs: A Case Study on QuixBugs Benchmark" 
-  authors: Moumita Asad, Kishan Kumar Ganguly, Kazi Sakib
-  publisher: "Proceedings of the IEEE/ACM 42nd International Conference on Software Engineering Workshops"
-  # single year (used for filtering) 
+
+#Journal
+- title: "A Novel Approach for Converting N-Dimensional Dataset into Two Dimensions to Improve Accuracy in Software Defect Prediction"
+  authors: Rayhanul Islam, Abdus Satter, Atish Kumar Dipongkor, Md. Saeed Siddik, Kazi Sakib
+  booktitle: "Journal of Software, Vol: 15, No. 6, pp: 147 - 162."
   year: 2020
-  # use space to assign multiple domains (used for filtering)
-  domain_id: program_repair
-  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
+  domain_id: software_testing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/374"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+
+#Conf-37
+- title: "Understanding the Involvement of Developers in Missing Link Community Smell: An exploratory Study on Apache Projects"
+  authors: Toukir Ahammed, Moumita Asad, Kazi Sakib
+  booktitle: "In proceedings of the 8th International Workshop on Quantitative Approaches to Software Quality (QuASoQ20) co-located with 27th Asia-Pacific Software Engineering Conference (APSEC 2020) Singapore, December, 2020, pp: 64 - 70."
+  year: 2019
+  domain_id: software_project_management
   type: Conference
-  pdf: "https://www.researchgate.net/profile/Moumita_Asad/publication/343817779_Impact_of_Similarity_on_Repairing_Small_Programs_A_Case_Study_on_QuixBugs_Benchmark/links/5f41fcb6a6fdcccc43ee0ff6/Impact-of-Similarity-on-Repairing-Small-Programs-A-Case-Study-on-QuixBugs-Benchmark.pdf"
-  doi: 
-  code:
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/381"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
 
-- title: "Is Developer Sentiment Related to Software Bugs: An Exploratory Study on GitHub Commits" 
-  authors: Syed Fatiul Huq, Ali Zafar Sadiq, Kazi Sakib
-  publisher: "2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)"
-  # single year (used for filtering) 
+#Conf-36
+- title: "Impact of Similarity on Repairing Small Programs: A Case Study on QuixBugs Benchmark"
+  authors: Moumita Asad, Kishan Kumar Ganguly and Kazi Sakib 
+  booktitle: "IEEE/ACM 42nd International Conference on Software Engineering Workshops (ICSEW), 2020, Soul, Republic of South Korea, pp: 21 - 22."
   year: 2020
-  # use space to assign multiple domains (used for filtering)
+  domain_id: program_repair 
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/372"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+
+#Conf-35
+- title: "Impact of Combining Syntactic and Semantic Similarities on Patch Prioritization"
+  authors: Moumita Asad, Kishan Kumar Ganguly and Kazi Sakib
+  booktitle: "In Proceedings of the 15th International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE 2020), pages 170-180, 5 - 6 May."
+  year: 2020
+  domain_id: program_repair
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/371"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+  
+
+
+#Conf-34
+- title: "Is Developer Sentiment Related to Software Bugs: An Exploratory Study on GitHub Commits"
+  authors:  Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
+  booktitle: "In the proceedings of the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 20), London, ON, Canada, 18-21 February, 2020, pages: 527 - 531."
+  year: 2020
   domain_id: empirical_study
-  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
   type: Conference
-  pdf: "https://www.researchgate.net/profile/Syed_Fatiul_Huq/publication/340401339_Is_Developer_Sentiment_Related_to_Software_Bugs_An_Exploratory_Study_on_GitHub_Commits/links/5f40e79992851cd302158bd5/Is-Developer-Sentiment-Related-to-Software-Bugs-An-Exploratory-Study-on-GitHub-Commits.pdf"
-  doi: 
-  code:
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/362"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
 
-- title: "Impact of Combining Syntactic and Semantic Similarities on Patch Prioritization" 
-  authors: Moumita Asad, Kishan Kumar Ganguly, Kazi Sakib
-  publisher: "2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)"
-  # single year (used for filtering) 
+
+#Conf-33
+- title: "Understanding the Effect of Developer Sentiment on Fix-Inducing Changes: An Exploratory Study on GitHub Pull Requests"
+  authors: Syed Fatiul Huq, Ali Zafar Sadiq and Kazi Sakib
+  booktitle: "In the proceedings of the 26th IEEE Asia Pacific Software Engineering Conference (APSEC19), Putrajaya, Malaysia, 2-5 December, 2019, pp: 514 - 521."
   year: 2020
-  # use space to assign multiple domains (used for filtering)
-  domain_id: program_repair
-  # one of the types (Journal, Conference, Arxiv, Thesis or empty)
+  domain_id: empirical_study
   type: Conference
-  pdf: "https://www.researchgate.net/profile/Syed_Fatiul_Huq/publication/340401339_Is_Developer_Sentiment_Related_to_Software_Bugs_An_Exploratory_Study_on_GitHub_Commits/links/5f40e79992851cd302158bd5/Is-Developer-Sentiment-Related-to-Software-Bugs-An-Exploratory-Study-on-GitHub-Commits.pdf"
-  doi: 
-  code:       
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/356"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+  
+
+
+###2019###
+
+#Journal
+- title: "Prioritising test cases by collaborating artifacts of software development life cycle"
+  authors:  Md Saeed Siddik, Md Abdur Rahman and Kazi Sakib.
+  booktitle: "International Journal of Forensic Software Engineering, Vol. 1, No. 1, 2019, Inderscience Enterprises Ltd, pp: 47 - 72."
+  year: 2019
+  domain_id: software_testing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/357"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Journal
+- title: "An Environment Aware Learning-based Self-Adaptation Technique with Reusable Components"
+  authors:  K. Ganguly, S. Sddik, R. Islam and K. Sakib
+  booktitle: "International Journal of Modern Education and Computer Science (IJMECS), vol: 11, no: 6, pages: 53-64."
+  year: 2019
+  domain_id: adaptive_and_distributed_system
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/357"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+#Conf-32
+- title: "Impact Analysis of Syntactic and Semantic Similarities on Patch Prioritization in Automated Program Repair"
+  authors:  M. Asad, K. Ganguly and K. Sakib
+  booktitle: "In proceedings of the 35th IEEE International Conference on Software Maintenance and Evolution (ICSME 19) 2019, Cleveland, Ohio, USA, pp:328-332."
+  year: 2019
+  domain_id: program_repair
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/350"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+
+#Conf-31
+- title: "Finding Erroneous Components from Change Coupled Relations at Fix-inducing Changes"
+  authors: Ali Zafar Sadiq, Ahmedul Kabir, Kazi Sakib
+  booktitle: "In proceedings of the 31st International Conference on Software Engineering and Knowledge Engineering (SEKE 2019), Lisbon, Portugal, no: 87."
+  year: 2019
+  domain_id: fix_iducing_changes
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/354"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+
+#Conf-30
+- title: "On the Evolutionary Relationship between Change Coupling and Fix-Inducing Changes"
+  authors: A. Sadiq, M. Mostafa and K. Sakib
+  booktitle: "In Proceedings of the 14th International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE 2019), pages: 494 - 501."
+  year: 2019
+  domain_id: fix_iducing_changes
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/343"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+  
+
+###2018###
+
+#Journal
+- title: "Using Qualitative System Dynamics in the Development of an Agile Teamwork Productivity Model"
+  authors: Israt Fatema and Kazi Sakib
+  booktitle: "International Journal on Advances in Software, Vol. 11, No. 1 & 2, 2018, pp: 170 - 185."
+  year: 2018
+  domain_id: software_project_management
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/336"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+#Conf-29
+- title: "Mobicomonkey: context testing of Android apps"
+  authors: Amit Seal Ami, Md. Mehedi Hasan, Md. Rayhanur Rahman, and Kazi Sakib
+  booktitle: "In Proceedings of ACM/IEEE 5th International Conference on Mobile Software Engineering and Systems (MOBILESoft@ICSE18), Gothenburg, Sweden, pp:76-79."
+  year: 2018
+  domain_id: software_testing
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/355"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+
+#Conf-28
+- title: "A Bug Assignment Approach Combining Expertise and Recency of Both Bug Fixing and Source Commits"
+  authors: Afrina Khatun and Kazi Sakib
+  booktitle: "13th International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE18), pp: 351 - 358, Funchal, Madeira, Portugal."
+  year: 2018
+  domain_id: bug_triage
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/329" 
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+
+###2017###
+
+#Journal
+- title: "Software semantics and syntax as a tool for automated test generation"
+  authors: Nadia Nahar and Kazi Sakib
+  booktitle: "International Journal of Critical Computer-Based Systems (IJCCBS), Vol. 7, No. 4, 2017, pp: 369 - 396."
+  year: 2017
+  domain_id: software_testing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/314"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+
+#Journal
+- title: "UML Diagrams and Source Based Automatic Test Suite Regeneration for Improving State Model Coverage"
+  authors: A. Khatun, N. Nower and K. Sakib
+  booktitle: "International Journal of Computer Applications (IJCA). Foundation of Computer Science, 2017, Vol. 176, No. 7, pp: 1 - 8."
+  year: 2017
+  domain_id: software_testing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/272"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+
+
+#Journal
+- title: "A scalable resource provisioning scheme for the cloud using peer to peer resource discovery and multi-attribute utility theory"
+  authors: Md. Rayhanur Rahman and Kazi Sakib
+  booktitle: "International Journal of Cloud Computing, Inderscience Enterprises Ltd. Vol.6, No.3, pp.211 - 237"
+  year: 2017
+  domain_id: cloud_computing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/247"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+#Journal
+- title: "Code sniffer: a risk based smell detection framework to enhance code quality using static code analysis"
+  authors:  Ahmad Tahmid, Md. Nurul Ahad Tawhid*, Sumon Ahmed and Kazi Sakib
+  booktitle: "International Journal of Software Engineering, Technology and Applications (IJSETA), Inderscience, Vol. 2, No. 1, pp: 41 - 63."
+  year: 2017
+  domain_id: code_smell_and_refactoring
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/246"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+  
+
+#Journal
+- title: "MobileMonkey - A Contextual Stress Testing Framework for Android Application"
+  authors:  R. Rahman, A. Ami and K. Sakib
+  booktitle:  "International Journal of Computer Applications (IJCA). Foundation of Computer Science, 2017, Vol. 172, No. 9, pp: 1 - 7."
+  year: 2017
+  domain_id: software_testing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/243"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+
+
+#Conf-27
+- title: "Factors Influencing Productivity of Agile Software Development Teamwork: A Qualitative System Dynamics Approach"
+  authors:  Israt Fatema and Kazi Sakib
+  booktitle: "In Proceedings of the 24th Asia-Pacific Software Engineering Conference (APSEC), Nanjing, China, December 4-8, 2017, pages 737-742, IEEE."
+  year: 2017
+  domain_id: software_project_management
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/337"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-26
+- title: "Interface driven code clone detection"
+  authors: Md Rakib Hossain Misu and Kazi Sakib
+  booktitle: "In Proceedings of the 24th Asia-Pacific Software Engineering Conference (APSEC), Nanjing, China, December 4-8, 2017, pages 747-748, IEEE."
+  year: 2017
+  domain_id: code_clone
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/332" 
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+#Conf-25
+- title: "An Exploratory Study on Interface Similarities in Code Clones"
+  authors: Md Rakib Hossain Misu, Abdus Satter and Kazi Sakib
+  booktitle: "In Proceedings of 24th the Asia-Pacific Software Engineering Conference Workshops, (APSECW), Nanjing, China, December 4-8, 2017, pages 126-133, IEEE."
+  year: 2017
+  domain_id: code_clone empirical_study
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/331"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-24
+- title: "FANTASIA: A Tool for Automatically Identifying Inconsistency in AngularJS MVC Applications"
+  authors: Md Rakib Hossain Misu and Kazi Sakib
+  booktitle: "12th International Conference on Software Engineering Advances (ICSEA 2017), October 8 - 12, 2017, Athens, Greece pp: 178 - 184."
+  year: 2017
+  domain_id: bug_localization
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/269" 
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-23
+- title: "Analyse Agile Software Development Teamwork Productivity using Qualitative System Dynamics Approach"
+  authors: Israt Fatema and Kazi Sakib
+  booktitle: "12th International Conference on Software Engineering Advances (ICSEA 2017), October 8 - 12, 2017, Athens, Greece pp: 60 - 66."
+  year: 2017
+  domain_id: software_project_management
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/270"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-22
+- title: "A Reusable Adaptation Component Design for Learning-Based Self-Adaptive Systems"
+  authors: Kishan Kumar Ganguly and Kazi Sakib
+  booktitle: "12th International Conference on Software Engineering Advances (ICSEA), pp. 244-249, Athens, Greece, October 8 - 12, 2017."
+  year: 2017
+  domain_id: adaptive_and_distributed_system
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/335"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-21
+- title: "Team Allocation Technique Ensuring Bug Assignment to Existing and New Developers Using Their Recency and Expertise"
+  authors: Afrina Khatun and Kazi Sakib
+  booktitle: "In proceedings of the Third International Conference on Advances and Trends in Software Engineering (SOFTENG' 17), April 23 - 27, 2017, Venice, Italy, pp: 96 - 102."
+  year: 2017
+  domain_id: bug_triage
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/233"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-20
+- title: "A Statement Level Bug Localization Technique using Statement Dependency Graph"
+  authors: Shanto Rahman, M.M. Rahman and Kazi Sakib 
+  booktitle: "12th International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE17), pp: 171 - 178, Porto, Portugal"
+  year: 2017
+  domain_id: bug_localization
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/297" 
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+
+#Conf-19
+- title: "A Similarity-Based Method Retrieval Technique to Improve Effectiveness in Code Search"
+  authors: Abdus Satter and Kazi Sakib
+  booktitle: "In Proceedings of the ACM International Conference on the Art, Science, and Engineering of Programming, , Brussels, Belgium"
+  year: 2017
+  domain_id: code_search
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/236"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+
+
+###2016###
+
+#Journal
+- title:  "Web Data Amalgamation for Security Engineering: Digital Forensic Investigation of Open Source Cloud"
+  authors:  A. Imran and K. Sakib
+  booktitle:  "Journal of Universal Computer Science (JUCS), July, 2016, Vol. 22, No. 4, pp: 494 - 520."
+  year: 2016
+  domain_id: cloud_computing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/244"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+  
+#Journal
+- title:  "A Package Based Clustering Approach to Enhance the Accuracy and Performance of Software Defect Prediction"
+  authors:  R. Islam, and K. Sakib.
+  booktitle:  "International Journal of Software Engineering, Technology and Applications (IJSETA), Inderscience Publishers Ltd."
+  year: 2016
+  domain_id: software_testing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/163"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+  
+#Conf-18
+- title: "A search log mining based query expansion technique to improve effectiveness in code search."
+  authors: Abdus Satter and Kazi Sakib
+  booktitle: " In proceedings of the IEEE 19th International Conference on Computer and Information Technology (ICCIT), 2016 . Dhaka, Bangladesh."
+  year: 2016
+  domain_id: code_search
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/239"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-17
+- title: "A Bug Assignment Technique Based on Bug Fixing Expertise and Source Commit Recency of Developers"
+  authors: Afrina Khatun and Kazi Sakib
+  booktitle: "19th International Conference on Computer and Information Technology (ICCIT16), 18 - 20 December, 2016, Dhaka, Bangladesh. pp: 592 - 597 [IEEE Explore]."
+  year: 2016
+  domain_id: bug_triage
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/231"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-16
+- title: "Improving Recall in Code Search by Indexing Similar Codes under Proper Terms."
+  authors: Abdus Satter and Kazi Sakib
+  booktitle: "In Proceedings of the 4th International Workshop on Quantitative Approaches to Software Quality in conjunction with Asia Pacific Software Engineering Conference (APSEC2016), 6 - 9 December, 2016, Hamilton, New Zealand, pp: 35 - 41."
+  year: 2016
+  domain_id: code_search
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/238"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-15
+- title: "A Static Code Search Technique to Identify Dead Fields by Analyzing Usage of Setup Fields and Field Dependency in Test Code." 
+  authors:   Abdus Satter, Amit Seal Ami and Kazi Sakib
+  booktitle: "In the proceedings of The 3rd International Workshop on Concept Discovery in Unstructured Data (CDUD 2016), July, 2016, Moscow, Russia, pp: 60 - 71."
+  year: 2016
+  domain_id: code_search
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/237"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+
+#Conf-14
+- title:  "An Automatic Test Suite Regeneration Technique Ensuring State Model Coverage Using UML Diagrams and Source Syntax"
+  authors: Afrina Khatun and Kazi Sakib
+  booktitle: " 5th International Conference on Informatics, Electronics and Vision (ICIEV2016), 13 - 14 May, 2016, Dhaka, Bangladesh. pp: 88 - 93 [IEEE Explore]."
+  year: 2016
+  domain_id: software_testing
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/232"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-13
+- title: "An Appropriate Method Ranking Approach for Localizing Bugs using Minimized Search Space"
+  authors: Shanto Rahman and Kazi Sakib 
+  booktitle: "In Proceedings of the 11th International Conference on Evaluation of Novel Software Approaches to Software Engineering (ENASE 2016), Rome, Italy, pp: 303 - 309."
+  year: 2016
+  domain_id: bug_localization
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/188"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-12
+- title: "ACDPR: A Recommendation System for the Creational Design Patterns Using Antipatterns"
+  authors: Nadia Nahar and Kazi Sakib.
+  booktitle: "IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER) 2016 (volume 4), Osaka, Japan, pp: 4 - 7. [IEEE Explore]."
+  year: 2016
+  domain_id: design_pattern software_architecture
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/186"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+#Conf-11
+- title: "Understanding the Evolution of Code Smells by Observing Code Smell Clusters"
+  authors: Ahmad Tahmid and Kazi Sakib
+  booktitle: " IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER) 2016 (volume 4), Osaka, Japan, pp: 8 - 11. [IEEE Explore]." 
+  year: 2016
+  domain_id: code_smell_and_refactoring
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/187"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+
+
+###2015###
+
+#Journal
+- title:  "MapBeing: An Efficient Vector Data Manipulation Framework for WebGIS"
+  authors:  Moshiur Rahman, Shafiuzzaman Hira, Rayhanur Rahman and Kazi Sakib
+  booktitle:  "Jahangirnagar University Journal of Information Technology, December."
+  year: 2015
+  domain_id: software_architecture
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/137"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+
+#Journal
+- title:  "Approximating social ties based on call logs: Whom should we prioritize?"
+  authors:  M. Erfan, A. Gias, S. Sarwar and K. Sakib
+  booktitle:  "Analysis of Images, Social networks and Texts (AIST), Russia."
+  year: 2015
+  domain_id: software_requirement_analysis
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/136"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+
+#Conf-10
+- title: "Automatic Recommendation of Software Design Patterns Using Anti-Patterns in the Design Phase: A case study on Abstract Factory"
+  authors:  Nadia Nahar and Kazi Sakib.
+  booktitle: "3rd International Workshop on Quantitative Approaches to Software Quality, in collaboration with APSEC 2015, Delhi, India, pp: 9 - 16. [IEEE Explore, DBLP]."
+  year: 2015
+  domain_id: design_pattern software_architecture
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/176"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+
+#Conf-9
+- title: "Time-Waved Monitoring and Emergent Self Adaption of Software Components in Open Source Cloud"
+  authors:  Lamisha Rawshan, Kazi Sakib and Asif Imran
+  booktitle: "In Proceedings of The International Conference on Engineering & MIS 2015, ICEMIS’15, Article : 46 [ACM Digital Library]."
+  year: 2015
+  domain_id: cloud_computing
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/172"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-8
+- title: "CLBS-3: A Three-Tier Load Balancer for ensuring Fault-Tolerance of Software running in Open-Source Cloud"
+  authors: M. Shamshuddoha, M. Alam, S. Asif, S. Aljawarneh, K. Sakib, A. Imran
+  booktitle: "In Proceedings of The International Conference on Engineering & MIS 2015, ICEMIS’15, Article : 56 [ACM Digital Library]."
+  year: 2015
+  domain_id: cloud_computing
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/173"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+###2014###
+#Conf-7
+- title: "SSTF: A Novel Automated Test Generation Framework using Software Semantics and Syntax"
+  authors: Nadia Nahar and Kazi Sakib
+  booktitle: "17th International Conference on Computer and Information Technology (ICCIT14), 22 - 23 December, 2014, Dhaka, Bangladesh. pp: 69 - 74 [IEEE Explore]."
+  year: 2014
+  domain_id: software_testing
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/175"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-6
+- title: "RDCC: An Effective Test Case Prioritization Framework using Software Requirements, Design and Source Code Collaboration"
+  authors: Saeed Siddik and Kazi Sakib
+  booktitle: "17th International Conference on Computer and Information Technology, 22-23 December 2014, Dhaka, Bangladesh. pp: 75 - 80. [IEEE Explore]."
+  year: 2014
+  domain_id: software_requirement_analysis
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/177"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-5
+- title:  "A case-based framework for self-healing paralysed components in Distributed Software applications"
+  authors: T. Hasan, A. Imran and K. Sakib
+  booktitle: "The 8th International Conference on Software, Knowledge, Information Management and Applications (SKIMA'14), Dhaka, Bangladesh, pp: 1 - 7, 18 - 20 December."
+  year: 2014
+  domain_id: adaptive_and_distributed_system software_architecture
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/174"
+  url: "#"
+  doi: "#"
+  code_link:  "#"  
+
+#Conf-4
+- title: "An Adaptive Bayesian Approach for URL Selection to Test Performance of Large Scale Web-Based Systems"
+  authors: A. Gias and K. Sakib
+  booktitle: "36th International Conference on Software Engineering (ICSE 2014), Hyderabad, India, June 2014 [IEEE Explore]"
+  year: 2014
+  domain_id: adaptive_and_distributed_system
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/164"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+
+#Conf-3
+- title: "A Direction of Migrating Procedural Paradigm to Object Based Architecture by forming Cluster of Functions using Local Search Heuristics"
+  authors:  S. Siddik, M. Selim, A. Gias, S. Khaled and K. Sakib
+  booktitle: "3rd International Conference on Informatics, Electronics and Vision (ICIEV 2014), Dhaka, Bangladesh, May 2014[IEEE Explore]."
+  year: 2014
+  domain_id: software_requirement_analysis
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/178"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+
+#Conf-2
+- title: "Active-Threaded Algorithms for Provenance Cognition in the Cloud preserving Low Overhead and Fault Tolerance"
+  authors: A. Imran, E. Dey, K. Sakib, and M. Wadud
+  booktitle: "International Conference on Recent Advances in Computer Engineering, Communications and Information Technology (CEA2014), Spain, January 2014, pp: 249 - 255."
+  year: 2014
+  domain_id: adaptive_and_distributed_system
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/171"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+
+
+###2013###
+#Journal
+- title: "TFPaaS: Test-first Performance as a Service to Cloud for Software Testing Environment"
+  authors: A. Gias, R. Rahman, A. Imran and K. Sakib
+  booktitle: "International Journal of Web Applications (IJWA), December 2013, Vol. 5, No. 4, pp: 153 - 167"
+  year: 2013
+  domain_id: cloud_computing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/140"
+  url: "#"
+  doi: "#"
+  code_link:  "#"
+
+#Journal
+- title: "ProvIntSec: A Provenance Cognition Blueprint Ensuring Integrity and Security for Real Life Open Source Cloud"
+  authors:  A. Imran, A. Gias, R. Rahman and K. Sakib
+  booktitle: "International Journal of Information Privacy, Security and Integrity (IJIPSI). Inderscience Enterprises, 2013, Vol. 1, No. 4, pp: 360 - 380"
+  year: 2013
+  domain_id: cloud_computing
+  type: Journal
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/141"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 
+
+
+###2012###
+#Conf-1
+- title: "An Empirical Investigation of Cost-Resource Optimization for running Real-Life Applications in Open Source Cloud"
+  authors:  A. Imran, A. Gias and K. Sakib
+  booktitle: "10th International conference on High Performance Computing and Simulation (HPCS'12), Madrid, Spain, July 2012, pp. 718-723 [IEEE Explore]"
+  year: 2012
+  domain_id: 
+  type: Conference
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/165"
+  url: "#"
+  doi: "#"
+  code_link:  "#" 

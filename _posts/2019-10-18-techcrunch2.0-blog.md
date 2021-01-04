@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: posts
 title: Techcrunch 2.0
-subtitle: A workshop for female students addressing the gender gap in the ICT sector of Bangladesh 
+subtitle: A workshop for female students addressing the gender gap in the ICT sector of Bangladesh
+author: DSSE Research Group 
 cover-img: /images/blog-post/data.jpg
 thumbnail-img: /images/blog-post/data.jpg
 share-img: /images/blog-post/data.jpg

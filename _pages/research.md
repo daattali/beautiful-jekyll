@@ -8,42 +8,65 @@ permalink: /research/
 
 <h1 style="font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 32px;">Research</h1>
 
-<img src="/images/research/se_word_art.png" width="50%">
+<div class="col-sm-6"> 
+<p align="justify">
+We work on the advancement of software development, which is the integration of code and data analysis techniques to reduce software cost and improve software reliability and security.</p>
 
-###  Community Smell in Software Projects
+<p align="justify">
+In general, we are interested in how software can be developed, maintained, tested in a better way through an analysis of developer habits and practices, 
+and open-source software artifacts. We perform empirical studies to understand developer's practices how they develop software, resolve issues during development, 
+and follow the best practices. We work on their working pattern to automate software tools that help develop improve productivity. We are excited to work on various aspects of Software Engineering with the aim of high-quality software development and maintenance.</p>
 
-###  Software Development Team Formation
+<p align="justify">
+Our work has been published in top/major conferences and journals in the areas of software engineering (ICSE, ICSME, APSEC, ENASE, SANER ).
+Please feel free to explore some of our work below. <b>(Incomplete page, will add the summary of each research domain)</b>
+</p>
+ 
 
-### Software Auto-Repairing
 
-### Sentiment Analysis in Software Engineering
+</div>
+<div class="col-sm-6">
+<img class="img-responsive" src="/images/research/se_word_art.png" >
+</div>
 
-### Relationship between Change Couple and Fix-Inducing Changes
 
-### Code Clone Lifetime Analysis
+<div class="col-sm-12"> 
 
-### Distributed Control in Self-Adaptive Software
+* ####  Community Smell in Software Projects 
 
-### Fast and Scalable Code Clone Detection
+* ####   Software Development Team Formation
 
-### Method Name Mismatch in Code Search
+* ####  Software Auto-Repairing
 
-###  Efficient Bug Assignment
+* ####  Sentiment Analysis in Software Engineering
 
-### Software Project Management
+* ####  Relationship between Change Couple and Fix-Inducing Changes
 
-### Design Pattern Recommendation System Using Anti-Pattern
+* ####  Code Clone Lifetime Analysis
 
-### Code Smell Risk Assessment
+* ####  Distributed Control in Self-Adaptive Software
 
-### Test Case Prioritization Using Clustering Techniques
+* ####  Fast and Scalable Code Clone Detection
 
-### Adaptive Testing in Software Engineering
+* ####  Method Name Mismatch in Code Search
 
-### Resource Provisioning in Cloud Computing
+* ####   Efficient Bug Assignment
 
-### Provenance Detection in Cloud Computing
+* ####  Software Project Management
 
+* ####  Design Pattern Recommendation System Using Anti-Pattern
+
+* ####  Code Smell Risk Assessment
+
+* ####  Test Case Prioritization Using Clustering Techniques
+
+* ####  Adaptive Testing in Software Engineering
+
+* ####  Resource Provisioning in Cloud Computing
+
+* ####  Provenance Detection in Cloud Computing
+
+</div>
 
 
 

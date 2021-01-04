@@ -11,21 +11,22 @@ permalink: /posts/
 
 <ul class="posts">
 
-	  {% for post in site.posts %}  
+	{% for post in site.posts %}
+    {% capture number %}{{ forloop.length }}{% endcapture %}	
     <div class="card" >
 	  <a href="{{ post.url | absolute_url }}">
-      <h2 class="post-title">{{ post.title }}</h2>
+      <h2 class="post-title" style="color: #7a0000;">{{ post.title }}</h2>
 
       {% if post.subtitle %}
         <h4 class="post-subtitle">
-        {{ post.subtitle }}
+        <em>{{ post.subtitle }}</em>
         </h4>
       {% endif %}
     </a>
 	
 	<p class="post-meta" align="justify">
       {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-      Posted on <b><i>{{ post.date | date: date_format }}</i></b>
+      Posted on <span style="color: #7a0000;"><b><i>{{ post.date | date: date_format }}</i></b></span>
     </p>
         
 	<div class="post-entry-container">
@@ -43,11 +44,6 @@ permalink: /posts/
       {% endcapture %}
       {% assign thumbnail=thumbnail | strip %}
       {% if thumbnail != "" %}
-	 <!-- <div class="post-image">
-        <a href="{{ post.url | absolute_url }}">
-          <img src="{{ thumbnail | absolute_url }}">
-        </a>
-      </div>-->
       </div>
       {% endif %}
       <div class="post-entry" align="justify">
