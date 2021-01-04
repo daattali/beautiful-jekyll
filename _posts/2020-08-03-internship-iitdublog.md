@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: posts
 title: Effects of Internship on Fresh Graduates
 subtitle: A case study on IIT, DU students
+author: DSSE Research Group
 cover-img: /images/blog-post/internship-cover.jpg
 thumbnail-img: /images/blog-post/internship-cover.jpg
 share-img: /images/blog-post/internship-cover.jpg

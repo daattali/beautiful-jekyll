@@ -75,10 +75,10 @@ To add a publication, it requires to append the following entry at **the top** o
   domain_id:
   # Mandatory field, type must be one of these 4 (Journal, Conference, Arxiv, Thesis)
   type:
-  # If available, provide Digital Library (DL) url
-  url:
   # If available, provide the paper pdf link
   pdf:
+  # If available, provide Digital Library (DL) url
+  url:
   # If available, provide digital object identifier as provided in DBLP  
   doi:
   # If available, provide the paper artifacts link, such as source code GitHub link, or provided dataset link
@@ -95,9 +95,10 @@ Before writing the post contents, the following entry must be made at the top of
 
 ```yaml
 ---
-layout: default
+layout: posts
 title:
-subtitle: 
+subtitle:
+author: 
 cover-img: /images/blog-post/img_file
 thumbnail-img: /images/blog-post/img_file
 share-img: /images/blog-post/img_file

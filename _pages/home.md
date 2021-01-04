@@ -59,13 +59,13 @@ We **love to collaborate** with the software industries and we establish an indu
 
 <br>
 <div class="w-100">
-  <a href="http://dsse.github.io/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_dsse.png" width="130px" height="80px"></a>
   <a href="http://www.iit.du.ac.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_iit_du.png" width="130px" height="60px"></a>
   <a href="https://ictd.gov.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_ict_division.png" width="150px" height="60px"></a>
   <a href="http://www.ugc.gov.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_ugc.jpg" width="130px" height="100px"></a>
   <a href="https://www.bdren.net.bd/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_bdren.png" width="130px" height="60px"></a> 
-  <a href="https://selise.ch/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_selise.png" width="130px" height="60px"></a>
+  
+ <!-- <a href="https://selise.ch/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_selise.png" width="130px" height="60px"></a>
   <a href="https://research.samsung.com/srbd" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_srbd.png" width="130px" height="60px"></a>
-  <a href="https://brainstation-23.com/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_brain_station_23.jpg" width="130px" height="60px"></a>
+  <a href="https://brainstation-23.com/" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/logo/logo_brain_station_23.jpg" width="130px" height="60px"></a>-->
   
 </div>
