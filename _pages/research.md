@@ -19,7 +19,7 @@ and open-source software artifacts.</p>
 
 
 <p align="justify">
- We perform empirical studies to understand developer's practices how they develop software, resolve issues during development, and follow the best practices. We work on their working pattern to automate software tools that help develop improve productivity. We are excited to work on various aspects of Software Engineering with the aim of high-quality software development and maintenance.</p>
+ We perform empirical studies to understand developer's practices how they develop software, resolve issues during development, and follow the best practices. We work on their working pattern to automate software tools that help developers improve productivity. We are excited to work on various aspects of Software Engineering with the aim of high-quality software development and maintenance.</p>
 
 <p align="justify">
 Our work has been published in top/major conferences and journals in the areas of software engineering (ICSE, ICSME, APSEC, ENASE, SANER ).
