@@ -100,9 +100,6 @@
   education1: Executive MBA University of Dhaka   
   education2: BSc University of Dhaka
 
-
-  
-
 - name: Rayhan Hossain
   photo: rayhan-hossain.jpg
   current_position: Software Development Engineer 
@@ -141,8 +138,9 @@
   current_organization: Concordia University
   email: iit.du.ac.bd
   homepage: "https://www.researchgate.net/profile/Ahmad_Tahmid"
-  number_educ: 1
-  education1: BSc University of Dhaka  
+  number_educ: 2
+  education1: MSc University of Dhaka   
+  education2: BSc University of Dhaka  
   
   
 
@@ -288,9 +286,10 @@
   
 
 - name: Tahmim Jeba
-  photo: tahmim-Jeba.jpg
-  current_position: Lecturer
-  current_organization: Sonargaon University
+  # Using dummy pic as she demands
+  photo: dummy_female_dp.png
+  current_position: Web Developer
+  current_organization: Kichai IT Services Ltd.
   email: iit.du.ac.bd
   homepage: "https://www.researchgate.net/scientific-contributions/Tahmim-Jeba-2154532150"
   number_educ: 2
