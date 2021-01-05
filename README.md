@@ -19,7 +19,7 @@ A short description is provided to learn how to add/update each type of content 
 
 * ### Add Recent News
 
-To add a recent news items, it requires to append the following entry at 
+To add a recent news item, it requires to append the following entry at 
 **the top** of **[_news.yml_](https://github.com/DSSE/dsse.github.io/blob/gh-pages/_data/news.yml)** file.
 ```yml
 - date: 1<sup>st</sup> January 2021
@@ -27,7 +27,7 @@ To add a recent news items, it requires to append the following entry at
 ```
 * ### Add Members
 
-To add a new members, it requires to append the following entry in [**_members.yml_**](https://github.com/DSSE/dsse.github.io/blob/gh-pages/_data/members.yml) file. 
+To add a new member, it requires to append the following entry in [**_members.yml_**](https://github.com/DSSE/dsse.github.io/blob/gh-pages/_data/members.yml) file. 
 In generally, the entry should be at the  end of the file.<br> 
 However, it can be placed anywhere to maintain the order/ serialization of members. <br>
 Similarly, to add a new alumni just add an entry to the [**_alumni.yml_**](https://github.com/DSSE/dsse.github.io/blob/gh-pages/_data/alumni.yml) file.
@@ -61,7 +61,7 @@ To add a publication, it requires to append the following entry at **the top** o
 ```yaml
   # Mandatory field
 - title: "" 
-  # Mandatory field. List of all authors, separated by coma 
+  # Mandatory field. List of all authors, separated by comma 
   authors: 
   # Mandatory field
   # Add the full booktitle as DBLP provides and includes the page numbers and publisher as a single string . 
@@ -95,6 +95,7 @@ Before writing the post contents, the following entry must be made at the top of
 
 ```yaml
 ---
+# Mandatory field 'posts'
 layout: posts
 title:
 subtitle:
@@ -116,6 +117,7 @@ comments: false
 
 To add a new photo, it requires to append the following entry in [**_photos.yml_**](https://github.com/DSSE/dsse.github.io/blob/gh-pages/_data/photos.yml).
 <br> However, to place the photo in  specific position, make the entry in exact serialization order.
+
 ```yaml
 # serial no
 - title: photo description
