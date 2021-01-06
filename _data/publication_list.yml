@@ -8,11 +8,11 @@
   type: Arxiv
   pdf: "https://arxiv.org/pdf/2008.11636"
   url: "#"
-  doi: 
+  doi:
   code_link:
 
 #Arxiv
-- title: "Understanding the Involvement of Developers in Missing Link Community Smell: An exploratory Study on Apache Projects"
+- title: "Effects of Internship on Fresh Graduates: A case study on IIT, DU students"
   authors: Amit Seal Ami, Asif Imran, Alim Ul Gias, Kazi Sakib
   booktitle: "arXiv preprint arXiv:2008.07450"
   year: 2020
@@ -51,10 +51,10 @@
 
 #Conf-36
 - title: "Impact of Similarity on Repairing Small Programs: A Case Study on QuixBugs Benchmark"
-  authors: Moumita Asad, Kishan Kumar Ganguly and Kazi Sakib 
+  authors: Moumita Asad, Kishan Kumar Ganguly and Kazi Sakib
   booktitle: "IEEE/ACM 42nd International Conference on Software Engineering Workshops (ICSEW), 2020, Soul, Republic of South Korea, pp: 21 - 22."
   year: 2020
-  domain_id: program_repair 
+  domain_id: program_repair
   type: Conference
   pdf: "http://www.iit.du.ac.bd/about_iit/download/372"
   url: "#"
@@ -74,7 +74,7 @@
   doi: "#"
   code_link:  "#"
 
-  
+
 
 
 #Conf-34
@@ -101,7 +101,7 @@
   url: "#"
   doi: "#"
   code_link:  "#"
-  
+
 
 
 ###2019###
@@ -116,7 +116,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/357"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Journal
 - title: "An Environment Aware Learning-based Self-Adaptation Technique with Reusable Components"
@@ -167,7 +167,7 @@
   url: "#"
   doi: "#"
   code_link:  "#"
-  
+
 
 ###2018###
 
@@ -193,7 +193,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/355"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 
 #Conf-28
 - title: "A Bug Assignment Approach Combining Expertise and Recency of Both Bug Fixing and Source Commits"
@@ -202,10 +202,10 @@
   year: 2018
   domain_id: bug_triage
   type: Conference
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/329" 
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/329"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 
 ###2017###
@@ -233,7 +233,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/272"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 
 
 #Journal
@@ -259,7 +259,7 @@
   url: "#"
   doi: "#"
   code_link:  "#"
-  
+
 
 #Journal
 - title: "MobileMonkey - A Contextual Stress Testing Framework for Android Application"
@@ -285,7 +285,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/337"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-26
 - title: "Interface driven code clone detection"
@@ -294,7 +294,7 @@
   year: 2017
   domain_id: code_clone
   type: Conference
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/332" 
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/332"
   url: "#"
   doi: "#"
   code_link:  "#"
@@ -309,7 +309,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/331"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-24
 - title: "FANTASIA: A Tool for Automatically Identifying Inconsistency in AngularJS MVC Applications"
@@ -318,10 +318,10 @@
   year: 2017
   domain_id: bug_localization
   type: Conference
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/269" 
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/269"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-23
 - title: "Analyse Agile Software Development Teamwork Productivity using Qualitative System Dynamics Approach"
@@ -333,7 +333,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/270"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-22
 - title: "A Reusable Adaptation Component Design for Learning-Based Self-Adaptive Systems"
@@ -345,7 +345,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/335"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-21
 - title: "Team Allocation Technique Ensuring Bug Assignment to Existing and New Developers Using Their Recency and Expertise"
@@ -357,19 +357,19 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/233"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-20
 - title: "A Statement Level Bug Localization Technique using Statement Dependency Graph"
-  authors: Shanto Rahman, M.M. Rahman and Kazi Sakib 
+  authors: Shanto Rahman, M.M. Rahman and Kazi Sakib
   booktitle: "12th International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE17), pp: 171 - 178, Porto, Portugal"
   year: 2017
   domain_id: bug_localization
   type: Conference
-  pdf: "http://www.iit.du.ac.bd/about_iit/download/297" 
+  pdf: "http://www.iit.du.ac.bd/about_iit/download/297"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 
 #Conf-19
 - title: "A Similarity-Based Method Retrieval Technique to Improve Effectiveness in Code Search"
@@ -381,7 +381,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/236"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 
 
@@ -398,7 +398,7 @@
   url: "#"
   doi: "#"
   code_link:  "#"
-  
+
 #Journal
 - title:  "A Package Based Clustering Approach to Enhance the Accuracy and Performance of Software Defect Prediction"
   authors:  R. Islam, and K. Sakib.
@@ -410,7 +410,7 @@
   url: "#"
   doi: "#"
   code_link:  "#"
-  
+
 #Conf-18
 - title: "A search log mining based query expansion technique to improve effectiveness in code search."
   authors: Abdus Satter and Kazi Sakib
@@ -421,7 +421,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/239"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-17
 - title: "A Bug Assignment Technique Based on Bug Fixing Expertise and Source Commit Recency of Developers"
@@ -433,7 +433,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/231"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-16
 - title: "Improving Recall in Code Search by Indexing Similar Codes under Proper Terms."
@@ -445,10 +445,10 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/238"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-15
-- title: "A Static Code Search Technique to Identify Dead Fields by Analyzing Usage of Setup Fields and Field Dependency in Test Code." 
+- title: "A Static Code Search Technique to Identify Dead Fields by Analyzing Usage of Setup Fields and Field Dependency in Test Code."
   authors:   Abdus Satter, Amit Seal Ami and Kazi Sakib
   booktitle: "In the proceedings of The 3rd International Workshop on Concept Discovery in Unstructured Data (CDUD 2016), July, 2016, Moscow, Russia, pp: 60 - 71."
   year: 2016
@@ -457,7 +457,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/237"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 
 #Conf-14
 - title:  "An Automatic Test Suite Regeneration Technique Ensuring State Model Coverage Using UML Diagrams and Source Syntax"
@@ -469,11 +469,11 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/232"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-13
 - title: "An Appropriate Method Ranking Approach for Localizing Bugs using Minimized Search Space"
-  authors: Shanto Rahman and Kazi Sakib 
+  authors: Shanto Rahman and Kazi Sakib
   booktitle: "In Proceedings of the 11th International Conference on Evaluation of Novel Software Approaches to Software Engineering (ENASE 2016), Rome, Italy, pp: 303 - 309."
   year: 2016
   domain_id: bug_localization
@@ -481,7 +481,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/188"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-12
 - title: "ACDPR: A Recommendation System for the Creational Design Patterns Using Antipatterns"
@@ -493,18 +493,18 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/186"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 #Conf-11
 - title: "Understanding the Evolution of Code Smells by Observing Code Smell Clusters"
   authors: Ahmad Tahmid and Kazi Sakib
-  booktitle: " IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER) 2016 (volume 4), Osaka, Japan, pp: 8 - 11. [IEEE Explore]." 
+  booktitle: " IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER) 2016 (volume 4), Osaka, Japan, pp: 8 - 11. [IEEE Explore]."
   year: 2016
   domain_id: code_smell_and_refactoring
   type: Conference
   pdf: "http://www.iit.du.ac.bd/about_iit/download/187"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 
 
@@ -546,7 +546,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/176"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 
 #Conf-9
 - title: "Time-Waved Monitoring and Emergent Self Adaption of Software Components in Open Source Cloud"
@@ -558,7 +558,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/172"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-8
 - title: "CLBS-3: A Three-Tier Load Balancer for ensuring Fault-Tolerance of Software running in Open-Source Cloud"
@@ -570,7 +570,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/173"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 ###2014###
 #Conf-7
 - title: "SSTF: A Novel Automated Test Generation Framework using Software Semantics and Syntax"
@@ -582,7 +582,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/175"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-6
 - title: "RDCC: An Effective Test Case Prioritization Framework using Software Requirements, Design and Source Code Collaboration"
@@ -594,7 +594,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/177"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-5
 - title:  "A case-based framework for self-healing paralysed components in Distributed Software applications"
@@ -606,7 +606,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/174"
   url: "#"
   doi: "#"
-  code_link:  "#"  
+  code_link:  "#"
 
 #Conf-4
 - title: "An Adaptive Bayesian Approach for URL Selection to Test Performance of Large Scale Web-Based Systems"
@@ -618,7 +618,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/164"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 
 #Conf-3
 - title: "A Direction of Migrating Procedural Paradigm to Object Based Architecture by forming Cluster of Functions using Local Search Heuristics"
@@ -630,7 +630,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/178"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 
 #Conf-2
 - title: "Active-Threaded Algorithms for Provenance Cognition in the Cloud preserving Low Overhead and Fault Tolerance"
@@ -642,7 +642,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/171"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 
 
 ###2013###
@@ -668,7 +668,7 @@
   pdf: "http://www.iit.du.ac.bd/about_iit/download/141"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
 
 
 ###2012###
@@ -677,9 +677,9 @@
   authors:  A. Imran, A. Gias and K. Sakib
   booktitle: "10th International conference on High Performance Computing and Simulation (HPCS'12), Madrid, Spain, July 2012, pp. 718-723 [IEEE Explore]"
   year: 2012
-  domain_id: 
+  domain_id:
   type: Conference
   pdf: "http://www.iit.du.ac.bd/about_iit/download/165"
   url: "#"
   doi: "#"
-  code_link:  "#" 
+  code_link:  "#"
