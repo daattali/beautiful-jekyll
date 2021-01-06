@@ -8,8 +8,9 @@ permalink: /
 
 <h1 style="font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 32px;">Welcome to DSSE Research Group</h1>
 
+<p align="justify">
 <b>DSSE (Distributed Systems & Software Engineering) Research Group</b> is a research and development group of <a href="http://www.iit.du.ac.bd/" target="_blank"> Institute of Information Technology</a>, at the <a href="https://du.ac.bd/" target="_blank"> University of Dhaka </a>, founded in 2012 with the goal of working as a central platform for the software engineering researchers of Bangladesh. Currently having **more than 60 members**, this group has already conducted research and development on around **25 different domains in software engineering** and accumulated **more than 70 publications** (till June 2019) in reputed journals and conferences. Furthermore, the group is strongly focused on these research efforts and collaboration with the IT industries to build a solid foundation for the IT sector of Bangladesh. This group also holds some notable contributions in socio-technical research (e.g., Girls in ICT, Effects of Internship on Fresh Graduates) related to the IT sector of Bangladesh.
-
+</p>
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" >
     <!-- Menu -->
     <ol class="carousel-indicators">
@@ -51,12 +52,14 @@ permalink: /
 
 <p style="text-align:center"><i>DSSE Research Group</i></p>
 
-Our work has been published in **major conferences and journals** in the areas of software engineering (ICSE, ICSME, APSEC, ENASE, SANER etc).
-
-**We are grateful for funding from** [IIT University of Dhaka](http://www.iit.du.ac.bd/), [ICT Division](https://ictd.gov.bd/), [ Ministry of Posts, Telecommunications and Information Technology](https://ptd.gov.bd/), [UGC](http://www.ugc.gov.bd/) and [BdREN](https://www.bdren.net.bd/).
-
-We **love to collaborate** with the software industries and we establish an industry-academia collaboration. We partnered with many renowned software firms like 
+<p align="justify">
+Our work has been published in **major conferences, journals and workshops** in the areas of software engineering (ICSE, ICSME, APSEC, ENASE, SANER, SEKE).
+<br><br>
+<b>We are grateful to</b> [IIT University of Dhaka](http://www.iit.du.ac.bd/), [ICT Division](https://ictd.gov.bd/), [ Ministry of Posts, Telecommunications and Information Technology](https://ptd.gov.bd/), [UGC](http://www.ugc.gov.bd/) and [BdREN](https://www.bdren.net.bd/) for funding our research projets.
+<br><br>
+<b>We love to collaborate</b> with the software industries and we establish an industry-academia collaboration. We partnered with many renowned software firms like 
 <a href="https://selise.ch/"  target="_blank"> SELISE rockin' software</a>, <a href="https://brainstation-23.com/"  target="_blank"> Brain Station 23 </a>, <a href="https://research.samsung.com/srbd"  target="_blank"> Samsung R&D Institute Bangladesh (SRBD)</a>, and so on. 
+</p>
 
 <br>
 <div class="w-100">
