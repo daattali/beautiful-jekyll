@@ -43,13 +43,13 @@ And if this sounds interesting to you and you’d like to try simple budgeting. 
 
 What’s included in the zero spend month worksheets?
 
-Some background information on what a zero spend month is.  
-Examples.  
-Planning Your Own Zero Spend Month worksheet: Five questions to help you design your own month.  
-Spending tracker page for all expenses.  
-Spending habit tracker (essentially to track the days you stick to zero spend)! So you can see your progess.
+* Some background information on what a zero spend month is.
+* Examples.
+* Planning Your Own Zero Spend Month worksheet: Five questions to help you design your own month.
+* Spending tracker page for all expenses.
+* Spending habit tracker (essentially to track the days you stick to zero spend)! So you can see your progess.
 
-I’d also suggest reading my friend Shelly’s blog here with some more great tips: “5 No Spend Month Tips and Tricks" as well as the blogs "
+I’d also suggest reading my friend Shelly’s blog[ here](https://www.envision31.com/blog1/5nospendmonthtipsandtricks) with some more great tips: “[5 No Spend Month Tips and Tricks](https://www.envision31.com/blog1/5nospendmonthtipsandtricks)".
 
 **Other blogs of mine you may like:**
 
