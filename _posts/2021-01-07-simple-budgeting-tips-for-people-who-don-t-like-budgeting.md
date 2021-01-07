@@ -39,7 +39,7 @@ Our modified reverse budgeting is that we just track our purchases instead, help
 4. [**Try a budgeting app**](https://www.thebalance.com/best-budgeting-apps-4159414). It can help simplify budgeting, especially if you've never done one before.
 5. Work backwards and set aside money for debt/savings first. Instead of allotting money into each category at the beginning of the month, you take the debt/savings at the beginning of the month right away and set that aside.
 
-And if this sounds interesting to you and you’d like to try simple budgeting. I linked a “Plan Your Zero Spend Month” worksheets for you if you’d like to try a zero spend month that you can download [**here**](https://mailchi.mp/8264c25ebc2a/zerospend). The worksheets will be helpful if you you’re like me, as mentioned, and don’t like budgeting.
+_And if this sounds interesting to you and you’d like to try simple budgeting. I linked a “Plan Your Zero Spend Month” worksheets for you if you’d like to try a zero spend month that you can download_ [**_here_**](https://mailchi.mp/8264c25ebc2a/zerospend)_. The worksheets will be helpful if you you’re like me, as mentioned, and don’t like budgeting._
 
 What’s included in the zero spend month worksheets?
 
