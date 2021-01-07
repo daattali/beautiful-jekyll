@@ -6,7 +6,7 @@ tags:
 - mindful spending
 - reverse budgeting
 - zero spend challenge
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/1_20210102_145100_0000_compress61.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
