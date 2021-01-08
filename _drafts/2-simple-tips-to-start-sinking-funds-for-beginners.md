@@ -43,7 +43,7 @@ Right now, we have a sinking fund for our basement reno. We're not going into de
 
 And you can read other simple tips to start sinking funds for beginners here on [this blog](https://www.mintnotion.com/budgeting/sinking-funds-for-beginners/#:\~:text=It's%20a%20simple%20process%20to,to%20call%20your%20sinking%20fund.).  
    
-_Want to start applying this simple sinking funds method to start saving money for specific things? I created a freebie printable for you to do just that: a sinking fund goal tracker. You can download that here._
+_Want to start applying this simple sinking funds method to start saving money for specific things? I created a freebie printable for you to do just that:_ [_a sinking fund goals tracker_](https://mailchi.mp/8d79f4f33003/sinkingfunds)_. You can download that_ [_here_](https://mailchi.mp/8d79f4f33003/sinkingfunds)_._
 
 I’d also suggest reading my friend Shelly’s blog here with some more great tips: “[5 No Spend Month Tips and Tricks](https://www.envision31.com/blog1/5nospendmonthtipsandtricks)"   
    
