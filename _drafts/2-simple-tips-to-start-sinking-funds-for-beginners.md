@@ -24,6 +24,8 @@ Have you heard of [sinking funds](https://www.everydollar.com/blog/what-is-a-sin
 
 > "A sinking fund is a sum of money that you set aside (usually by saving a bit each month) that's completely separate from your savings account." – From [thebalance.com](https://www.thebalance.com/sinking-funds-2385686)
 
+![](/uploads/sinking-funds-tracker.jpg)
+
 ### What are some benefits of sinking funds if you’re a beginner to any kind of budgeting?
 
 * They prevent you from dipping into your savings / debt reduction funds.
