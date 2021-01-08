@@ -11,7 +11,7 @@ comments: true
 show-avatar: true
 title: 2 Simple Tips to Start Sinking Funds for Beginners
 description: Simple tips to help you manage your savings if you're new to budgeting.
-subtitle: "+ a free sinking fund goal tracker."
+subtitle: "+ a free sinking fund goal tracker"
 share-img: ''
 redirect_from: []
 
