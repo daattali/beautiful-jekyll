@@ -7,6 +7,7 @@ subtitle: ''
 ## Quick links
 
 * Free:[ Plan your zero spend month worksheets](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
+* Canadian online homeschooling conference affiliate link - signup [here](https://canadianhomeschoolconference.com/aff/42/) (my session is live and free on Feb. 3rd: **Simplify your homeschool life**) 
 * **Just released:** [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * Join the [weekly newsletter](http://eepurl.com/gYFb-r) +get access to the freebie vault
 * MY FIRST COURSE! Get on the list for the new round coming early next year (email me at simplehomemom@gmail.com if you'd like to get on the waitlist): [_Simplify Your Home Life: a course for busy moms_](http://kellymbriggs.github.io/course)
