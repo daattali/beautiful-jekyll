@@ -19,11 +19,8 @@ subtitle: Our competition calendar
 |February 25, 2021 | [Mathcounts Chapter Invitational](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | By Invitation
 |March 25, 2021 | [Mathcounts State](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | By Invitation
 |TBD | [Math Is Cool Masters](http://www.academicsarecool.com) | -- | --
-|TBD | RMS Benchmark | -- | --
-|TBD | RMS Mathcounts School | -- | --
 |TBD | RMS Final | -- | --
 |TBD | [Mustang Math Tournament](https://tinyurl.com/MustangMathCompetition2020) | -- | --
 |TBD | [LWSD Math Olympiad](https://kims.lwsd.org/activities/math-olympiad) | -- | --
-|TBD | [Washington State Math Championship](https://www.blainesd.org/o/blaine-school-district/browse/39313) | -- | --
 
 [2019-2020 schedule](competitions-1920.md)
