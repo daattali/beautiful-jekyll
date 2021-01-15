@@ -63,11 +63,7 @@ The course is a one time payment of $27USD or you can split into two payments. J
 
 ## Reviews
 
-> Simplify Your Home Life: a course for busy moms was an amazing experience! I loved the units; each was something that I needed to dig into more as I work to simplify my life and home.  
->   
-> The layout for this course was perfect, giving time and space to work on each subject before moving on. I love that I can go back and work through the ones that are more challenging for my household.  
->   
-> Kelly’s support and encouragement to tackle things one small bit at a time was just what I needed! I will definitely recommend this course to my friends who are looking to make changes in their lives to simplify. - Deanna
+> Simplify Your Home Life: a course for busy moms was an amazing experience! I loved the units; each was something that I needed to dig into more as I work to simplify my life and home. The layout for this course was perfect, giving time and space to work on each subject before moving on. I love that I can go back and work through the ones that are more challenging for my household. Kelly’s support and encouragement to tackle things one small bit at a time was just what I needed! I will definitely recommend this course to my friends who are looking to make changes in their lives to simplify. - Deanna
 
 ## About me
 
