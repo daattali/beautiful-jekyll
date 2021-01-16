@@ -12,7 +12,7 @@ show-avatar: true
 title: How This One Quote Can Help Simplify Your Homeschool Life
 description: Simplify your homeschool life with this one quote and tips for how to
   do that.
-subtitle: ''
+subtitle: "+ Simplify Your Homeschool Life Online Session"
 share-img: ''
 redirect_from: []
 
