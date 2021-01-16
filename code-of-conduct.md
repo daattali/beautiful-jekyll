@@ -24,15 +24,22 @@ All convention areas are considered to be "PG" at all times, with the exception 
 
 **Discord Chat Decorum:**
 
-Please be polite and respectful. Inappropriate conduct will not be tolerated.
+* Please be polite and respectful.
+* No Vulgar or abusive language, including when it is masked with symbols, characters or otherwise, will not be tolerated. This also includes usernames or Discord handles.
+* No Harassment (See Harassment section below).
+* No illegal content (links, images, etc.).
+* No harmful links (links to malicious websites, viruses, etc.).
+* Do not spam.
+* Do not impersonate members of the staff/moderation team.
+* Do not encourage others to break the rules.
+* Do not perform actions actions that seem specifically designed to test the limits of what is not offensive and to serve no other purpose&nbsp;
+* We do NOT tolerate Racism or discrimination on the basis of (but not limited to) sex, gender, sexual orientation, race, religious or spiritual belief, national origin, ethnicity, disability, or age.&nbsp;
+* Keep all Political talk to a minimum/sophisticated non-aggressive level.
+* No posting of anything NSFW.
 
-Vulgar or abusive language, including when it is masked with symbols, characters or otherwise, will not be tolerated. This also includes usernames or Discord handles. Warnings shall be issued to correct behavior and repeat offenses may result in immediate removal from chat.
+Breaking the rules may result in a warning, mute, and/or removal from our Discord server.&nbsp;
 
-Fur Squared does not discriminate on the basis of sex, gender, sexual orientation, race, religious or spiritual belief, national origin, ethnicity, disability, or age except in limiting access to 18+ or 21+ events. Speech or actions that violate these values may result in immediate removal from chat.
-
-Actions that seem specifically designed to test the limits of what is not offensive and to serve no other purpose will not be tolerated and may result in immediate removal from chat.
-
-Any other action that shall, at the sole discretion of Fur Squared staff, be deemed offensive will not be tolerated and may result in removal from chat.
+Any other action that shall, at the sole discretion of Fur Squared staff, be deemed offensive will not be tolerated and may result in removal from our Discord server.
 
 **Harassment:**
 
