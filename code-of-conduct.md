@@ -16,7 +16,7 @@ The primary purpose of Fur Squared is for our attendees to have fun. To ensure t
 
 The parent company, Con Glomerate, also reserves the right to amend these rules at any time without prior or posted notice and reserves the sole right of interpretation. In any dispute, the general rule above will apply. If you have any questions, please contact the convention operations staff for assistance.
 
-As a condition of attending or viewing events, all Fur Squared attendees are required to abide by this Code of Conduct for the entire duration of their participation in any event space, including the Discord and Telegram chats, even prior to Opening or after Closing Ceremonies.
+As a condition of attending, viewing, or hosting events, all Fur Squared attendees/artists/vendors are required to abide by this Code of Conduct for the entire duration of their participation in any event space, including the Discord and Telegram chats, even prior to Opening or after Closing Ceremonies.
 
 **General Rating of the Convention:**
 
