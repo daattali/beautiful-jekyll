@@ -6,7 +6,9 @@ subtitle: Registration and benefits of Fur Squared
 
 # You found Registration\!
 
-### ***Note that you won't need a registration this year to attend. Attendance will be free this year, however if you wish to support the con we will offer a sponsorship level registration.***
+### ***Note that you won't need a registration this year to attend. We also want to inform that free Registrations from 2020 will be honored at our next in person convention at 2022. Attendance will be free this year, however if you wish to support the con we will offer a sponsorship level registration. ($50)***
+
+&nbsp;
 
 More details about swag are to be announced at a later date so keep an eye out on our page for updates.&nbsp;
 

@@ -15,6 +15,7 @@ url: "https://fursquared.com"
 
 navbar-links:
   About: "about"
+  Code of Conduct: "code-of-conduct"
   Registration: "registration"
   Programming: "programming"
   Dealers & Artists: "dealers"
