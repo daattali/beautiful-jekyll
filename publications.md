@@ -286,11 +286,38 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
             <div class="pubauthor">
                 Himangi Mittal, Brian Okorn, David Held<br>
             </div>
+            <div id="bib2020cvprflow" style="display:none">
+                    <blockquote>
+<pre>
+@InProceedings{Mittal_2020_CVPR,
+author = {Mittal, Himangi and Okorn, Brian and Held, David},
+title = {Just Go With the Flow: Self-Supervised Scene Flow Estimation},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
+} 
+</pre>
+                </blockquote>
+            </div>
+            <div id="abs2020cvprflow" style="display:none">
+                <blockquote>
+                     When interacting with highly dynamic environments, scene flow allows autonomous systems to reason about the non-rigid motion of multiple independent objects. This is of particular interest in the field of autonomous driving, in which many cars, people, bicycles, and other objects need to be accurately tracked. Current state-of-the-art methods require annotated scene flow data from autonomous driving scenes to train scene flow networks with supervised learning. As an alternative, we present a method of training scene flow that uses two self-supervised losses, based on nearest neighbors and cycle consistency. These self-supervised losses allow us to train our method on large unlabeled autonomous driving datasets; the resulting method matches current state-of-the-art supervised performance using no real world annotations and exceeds state-of-the-art performance when combining our self-supervised approach with supervised learning on a smaller labeled dataset.
+                </blockquote>
+            </div>
             <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2020 - <award>Oral</award> (Selection rate 5.7%)
+            <div style="font-size:small">
+                <a href="https://just-go-with-the-flow.github.io/">[Project Page]</a>
+                <a href="https://github.com/HimangiM/Just-Go-with-the-Flow-Self-Supervised-Scene-Flow-Estimation">[Code]</a>
+                <a href="javascript:copy(div2020cvprflow, bib2020cvprflow)">[Bibtex]</a>
+                <a href="javascript:copy(div2020cvprflow, abs2020cvprflow)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/1912.00497.pdf">[PDF]</a>
+                <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
+            </div>
             <!--div style="font-size:small">
                 <a href="GOTURN/GOTURN.html">[Project Page]</a>
                 <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
                 <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+                <div id="div2020cvprflow" class="pubInfo"></div>
             </div>
             <br>
         </td>
