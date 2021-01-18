@@ -12,7 +12,8 @@ tags:
 - canadian thanksgiving
 - american thanksgiving
 description: A review of a thanksgiving curriculum we used in our homeschool.
-
+redirect_from:
+- 2020-10-27-thanksgiving-in-our-homeschool
 ---
 Crystin Morris over at [Delightfully Feasting](https://www.instagram.com/delightfullyfeasting/) on Instagram gifted me [a mini Thanksgiving unit](https://huitlife.com/product/delighting-in-festivity-thanksgiving-pdf-only/) to use with our family (ages 9, 7, 4, and 1). Today, I'll be sharing with you my thoughts on it when we went through it a couple weeks ago for our [Canadian Thanksgiving week](https://en.wikipedia.org/wiki/Thanksgiving_(Canada)).  
  

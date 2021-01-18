@@ -1,19 +1,20 @@
 ---
 layout: post
 title: Three Ways to be Creative with Squeezing in Some Self Care with a Busy Household
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/headshot.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- self care for moms
-- taking breaks as parents
-- self care ideas for moms
-description: Creative suggestions for finding some time for self care with a busy
-  household.
-
+  - self care for moms
+  - taking breaks as parents
+  - self care ideas for moms
+description: Creative suggestions for finding some time for self care with a busy household.
+redirect_from:
+  - 2020-08-29-three-ways-to-be-creative-with-squeezing-in-some-self-care-with-a-busy-household
 ---
-![Pumping out soap from a dispenser.](/uploads/20200518_105019_0000-1.png "soapdispenser")
+
+![Pumping out soap from a dispenser.](/uploads/20200518_105019_0000-1.jpg "soapdispenser")
 
 Sometimes it's really, really hard to get that "self care" time in over here with four kids. Sometimes I am relying on a few minutes here and there. Building it into my routine. Changing it up for different seasons of life. It really takes an extraordinary amount of flexibility and creativity. What's self care for moms? According to [this blog](https://www.washingtonpost.com/lifestyle/on-parenting/in-defense-of-a-parents-day-off/2017/01/23/270ffafc-d8f2-11e6-b8b2-cb5164beba6b_story.html) from Washington Post:
 
@@ -34,9 +35,3 @@ Leave a book in there, affirmations to read over on the mirror or something that
 I often do this with noise in the background. Even just a few minutes talking to another adult can help fill your cup just a little bit more.
 
 _Needing more of a plan to get you more motivated for some self care time? I found a list of twenty other ideas for self care ideas for moms. If you'd like, send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that list!_
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

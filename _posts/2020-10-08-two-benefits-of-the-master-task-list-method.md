@@ -1,17 +1,19 @@
 ---
 layout: post
-title: 'Two Benefits of the Master Task List Method '
-subtitle: ''
+title: "Two Benefits of the Master Task List Method "
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/img_20200916_095240631-1-_compress16.jpg"
-share-img: ''
+share-img: ""
 tags:
-- simple planning
-- master task list
-- planning tips
+  - simple planning
+  - master task list
+  - planning tips
 description: A helpful planning method to help you prioritize and reduce overwhelm.
-
+redirect_from:
+  - 2020-10-08-two-benefits-of-the-master-task-list-method
 ---
+
 What do you think of when you hear the word master task list? I keep coming back to this concept for many areas of my life at home. Grocery master task list. Master work task list. And so on. I pull from it often when I'm sitting down to plan the next day. I think I keep coming back to this concept because there's no timeframe on anything. It's just a list. Timeframes sometimes stress me out because with having kids (at least MY kids ), timeframes just sometimes do not work at.all. at all. On the blog today, I'm sharing with you two benefits of the master task list.
 
 ## It helps you to prioritize.
@@ -30,13 +32,7 @@ _PS I wrote up this list above for my mail list for freebie Friday. We pretty mu
 ⁣  
 More help:
 
-* My blogs...[Four ways to create a simpler home](https://www.eastcoastkelly.com/2020-09-17-four-ways-to-create-a-simpler-home/), [10 ways to simplify your to do list](https://www.eastcoastkelly.com/2020-08-29-10-ways-to-simplify-your-to-do-list/)
-* Books...I enjoyed the book [Eat that Frog](https://amzn.to/2DmKOdX) for planning and procrastination tips as well as the [Bullet Journal Method](https://amzn.to/3fB51uF) for simple planning (the method I use within my current planner setup in this blog).
+- My blogs...[Four ways to create a simpler home](https://www.eastcoastkelly.com/2020-09-17-four-ways-to-create-a-simpler-home/), [10 ways to simplify your to do list](https://www.eastcoastkelly.com/2020-08-29-10-ways-to-simplify-your-to-do-list/)
+- Books...I enjoyed the book [Eat that Frog](https://amzn.to/2DmKOdX) for planning and procrastination tips as well as the [Bullet Journal Method](https://amzn.to/3fB51uF) for simple planning (the method I use within my current planner setup in this blog).
 
 ![A picture of the two benefits.](/uploads/20201006_105223_0000.png "imagetext")
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

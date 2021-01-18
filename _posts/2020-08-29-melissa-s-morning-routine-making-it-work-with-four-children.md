@@ -1,16 +1,18 @@
 ---
 layout: post
-title: 'Melissa''s Morning Routine: Making it Work with Four Children'
-subtitle: ''
+title: "Melissa's Morning Routine: Making it Work with Four Children"
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/87326336_10163016305905627_3065688325206573056_o.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- morning routine for moms
-- morning routine
-- morning routines with kids
-
+  - morning routine for moms
+  - morning routine
+  - morning routines with kids
+redirect_from:
+  - 2020-08-29-melissa-s-morning-routine-making-it-work-with-four-children
 ---
+
 _I asked my friend_ [_Melissa_](https://www.instagram.com/slowscenesofhome/) _about her morning routine to share with all of you because I know she makes time for herself most mornings with and/or without kids. I absolutely love how she incorporates #3 into her routine. I'm so inspired! I hope you enjoy what she shares today._
 
 ...
@@ -36,9 +38,3 @@ Melissa is a quiet military wife, and stay-at-home mom of 4 kids under 6. She ho
 ...
 
 _PS Last year, I finally started a morning routine for myself and it’s really helped my days out so much. I feel more peaceful throughout the rest of the day and I’m finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/398G8nw) _that everything clicked for me. I was so inspired. If you’d like a quick breakdown of what the Miracle Morning is and have an overview of how to create your own, I can send you a basic overview from what I read. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

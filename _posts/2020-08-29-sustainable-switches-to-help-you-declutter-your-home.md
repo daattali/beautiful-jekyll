@@ -1,16 +1,19 @@
 ---
 layout: post
 title: Sustainable Switches to Help you Declutter Your Home
-subtitle: 'With guest blogger: Katie Mixon.'
+description: ""
+subtitle: "With guest blogger: Katie Mixon."
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/1595885675716_106510646_885379075305336_1600309345662252306_n_compress9-1.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- sustainable minimalism
-- reusable products
-- sustainable clothing
-
+  - sustainable minimalism
+  - reusable products
+  - sustainable clothing
+redirect_from:
+  - 2020-08-29-sustainable-switches-to-help-you-declutter-your-home
 ---
+
 ![A tabler with flowers on it.](/uploads/sustainable-switches_compress36.jpg "tablewithflowers")
 
 _I asked Katie to guest blog for me because I love her great suggestions for living more sustainably with minimalist living. She's the pro in my eyes! I hope you enjoy her sustainable switches to help you declutter your home._

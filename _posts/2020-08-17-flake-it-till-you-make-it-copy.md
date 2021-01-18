@@ -6,13 +6,15 @@ cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200528_114030_0000-1.png"
 share-img: "/assets/img/path.jpg"
 tags:
-- values
-- family values
-- personal values
-- simple values exercise
-- values exercise
-
+  - values
+  - family values
+  - personal values
+  - simple values exercise
+  - values exercise
+redirect_from:
+  - 2020-08-17-flake-it-till-you-make-it-copy
 ---
+
 ![Picture of hand holding a heart.](/uploads/20200528_114030_0000-1.png "heart")
 
 Firstly, let's set the stage. What are values exactly?
@@ -25,15 +27,12 @@ Take a look at what you do, your actions. What things do you do on the daily? Su
 
 **Here are some of my values that came from me writing my daily actions down:**
 
-* I value growth. Daily time spent growing in areas I want to grow in (i.e. spiritual, learning new things, hobbies, business development etc).
-* I value close family relationships. I take time daily to check in with my people. And listen to what they are sharing with me.
-* I value hard work. To give my all at what I do.
-* I value taking care of myself to take care of others: spiritual, physical, and mental...daily.
+- I value growth. Daily time spent growing in areas I want to grow in (i.e. spiritual, learning new things, hobbies, business development etc).
+- I value close family relationships. I take time daily to check in with my people. And listen to what they are sharing with me.
+- I value hard work. To give my all at what I do.
+- I value taking care of myself to take care of others: spiritual, physical, and mental...daily.
 
   Maybe through the above exercise, you'll also discover what you thought you valued, but really don't based on your actions. I thought I valued getting outside....but haven't been getting out much this year since having the new baby. But it's something I want to change for this year. Values can also change over time too. I hope you enjoyed and learned something new about yourself through this exercise. Happy exploring your values!
 
-  _If you enjoyed this type of exercise, another way to expand this is into creating a family motto for your family... if you’d like a simple template and examples of 30 family values to start drafting your own family motto, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those free resources I found for you._Cheers,
+  _If you enjoyed this type of exercise, another way to expand this is into creating a family motto for your family... if you’d like a simple template and examples of 30 family values to start drafting your own family motto, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) \_for those free resources I found for you.
 
-  Kelly
-
-  **Did you find this helpful? If so, I would greatly appreciate if you shared it.**

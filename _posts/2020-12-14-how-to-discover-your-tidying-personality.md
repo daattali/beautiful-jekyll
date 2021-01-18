@@ -1,25 +1,27 @@
 ---
 layout: post
 title: How to Discover Your Tidying Personality
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/1_20201211_211437_0000_compress84.jpg"
-share-img: ''
+share-img: ""
 tags:
-- simple tidying
-- tidying tips
-- tidying personality
-- tidying routine
+  - simple tidying
+  - tidying tips
+  - tidying personality
+  - tidying routine
 description: Discover your tidying personality in these four tidying personality types.
-
+redirect_from:
+  - 2020-12-14-how-to-discover-your-tidying-personality
 ---
+
 **Which tidying personality are you?** I'm a tidy by category person usually. I like to put all the books away, clothes away, dishes away, and so on. Today on the blog, I'm sharing about how to discover your tidying personality.
 
 ![A picture of clothes on the bed.](/uploads/1_20201211_211437_0000_compress84.jpg "How to discover your tidying personality SHM")
 
 #### How many tidying personalities are there?
 
-There are tons of tidying personalities out there if you do a google search, like this [blog](https://www.domain.com.au/living/the-seven-most-common-cleaning-personality-types-20180227-h0wbjf/ ) describes, but I'm pulling from a variety of sources and making up titles for some tidying personalities. You'll likely see yourself in more than one personality as well. _And sometimes different seasons of life calls for different personalities too - like having a home full of little people!_
+There are tons of tidying personalities out there if you do a google search, like this [blog](https://www.domain.com.au/living/the-seven-most-common-cleaning-personality-types-20180227-h0wbjf/) describes, but I'm pulling from a variety of sources and making up titles for some tidying personalities. You'll likely see yourself in more than one personality as well. _And sometimes different seasons of life calls for different personalities too - like having a home full of little people!_
 
 ## Discover your tidying personality: Four tidying personalities
 
@@ -51,12 +53,6 @@ And I also found [this fun quiz](https://www.buzzfeed.com/swiffercanada/cleaning
 
 ##### Other blogs you may like:
 
-* [One Daily Tidying Routine that Will Save You Money and Time](https://www.simplehomemom.com/2020-08-20-one-daily-tidying-routine-that-will-save-you-money-and-time/)
-* [Four Ideas to Go from Living Room Explosions to Clear Floors](https://www.simplehomemom.com/2020-11-26-four-ideas-to-go-from-living-room-explosions-to-clear-floors/)
-* [How to Design a Simple Cleaning Routine](https://www.simplehomemom.com/2020-08-16-how-to-design-a-simple-cleaning-routine/)
-
-**Thank you so much for reading to the end! Enjoyed this blog? I’d love if you shared it.**
-
-Thanks again,
-
-Kelly
+- [One Daily Tidying Routine that Will Save You Money and Time](https://www.simplehomemom.com/2020-08-20-one-daily-tidying-routine-that-will-save-you-money-and-time/)
+- [Four Ideas to Go from Living Room Explosions to Clear Floors](https://www.simplehomemom.com/2020-11-26-four-ideas-to-go-from-living-room-explosions-to-clear-floors/)
+- [How to Design a Simple Cleaning Routine](https://www.simplehomemom.com/2020-08-16-how-to-design-a-simple-cleaning-routine/)

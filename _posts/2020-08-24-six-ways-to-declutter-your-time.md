@@ -1,21 +1,24 @@
 ---
 layout: post
 title: Six Ways to Declutter Your Time
+description: ""
 subtitle: Keeping it simple.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/clock.png"
+thumbnail-img: "/uploads/clock.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- decluttering your time
-- decluttering time
-- decluttering your to do list
-- ways to declutter your time
-- declutter your to do list
-- finding more time
-- time management
-
+  - decluttering your time
+  - decluttering time
+  - decluttering your to do list
+  - ways to declutter your time
+  - declutter your to do list
+  - finding more time
+  - time management
+redirect_from:
+  - 2020-08-24-six-ways-to-declutter-your-time
 ---
-![Title of blog: six ways to declutter your time.](/uploads/clock.png "clock")
+
+![Title of blog: six ways to declutter your time.](/uploads/clock.jpg "clock")
 
 After I had a good handle on the physical clutter in our home, my time, my to-do lists needed a major rehaul. And it was certainly not one and done. I’m unlearning and relearning new habits and reassessing as life goes on. And how often do I put way more on my to-do list than the time that I’m given? I think it’s because I am optimistic. A few of these decluttering time ideas I read recently on [Becoming Minimalist’s](http://www.becomingminimalist.com/) blog – Joshua Becker, one of the minimalist leaders who inspire me. Today on the blog, I’m sharing with you six ways to declutter your time.
 
@@ -44,9 +47,3 @@ If you can pass along a task to someone else, this would be a way to free up mor
 We’ve been trying to get most of our grocery errands done within one day or two, depending, for instance. This will help free up time for us compared to doing weekly grocery runs.
 
 _PS if this is a struggle for you, you may like what my mail list is receiving for their freebie Friday. The simple guide to finding more time and an attached worksheet. If you’re not on it yet (why not? ), you can email me your email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can email you that directly._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

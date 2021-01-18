@@ -1,18 +1,21 @@
 ---
 layout: post
 title: Three Indoor Low Maintenance Plants that are Busy Family Proofed
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/82516897_10162839635745627_1128366162963333120_o.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- low maintenance plants
-- plants with kids
-- low key plants
-- how not to kill your houseplants
-
+  - low maintenance plants
+  - plants with kids
+  - low key plants
+  - how not to kill your houseplants
+redirect_from:
+  - 2020-08-29-three-indoor-plants
 ---
-![My hoya plant next to a mirror.](/uploads/20200706_210856_0000-1.png "houseplant")
+
+![My hoya plant next to a mirror.](/uploads/20200706_210856_0000-1.jpg "houseplant")
 
 I have successful killed quite a few plants over the years. I'm so sorry plants. This is including ones that shouldn't die according to the Googles. Today on the blog I'm sharing about three indoor plants that are low maintenance plants for busy families. Also known as you get busy and forget about them for a bit, they won't die on you. Oh. And also ones that don't kill cats.
 
@@ -27,9 +30,3 @@ _Real plants not your thing_ and you want even more low maintenance? Animals or 
 Also this book I found – [How Not to Kill Your Houseplant](https://amzn.to/2Az9Yoj) – may be helpful if you are completely brand new to plants or want to expand your repertoire. I haven't read this book, but hey, it has great reviews and if you are looking to find more low key plants, this may be a good place to start learning more about them.
 
 _PS If you'd love the full list of every low maintenance plant we have kept alive as well as the ones that have terribly failed, send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'll send that off to you._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

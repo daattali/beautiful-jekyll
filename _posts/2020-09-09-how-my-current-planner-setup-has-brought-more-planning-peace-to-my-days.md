@@ -1,17 +1,19 @@
 ---
 layout: post
 title: How my Current Planner Setup has Brought More Planning Peace to my Days
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/img_20200906_095105025_compress37.jpg"
-share-img: ''
+share-img: ""
 tags:
-- simple planning
-- traveller's ntoebook setup
-- bullet journal method
+  - simple planning
+  - traveller's ntoebook setup
+  - bullet journal method
 description: A simple planning setup to help create more peaceful days.
-
+redirect_from:
+  - 2020-09-09-how-my-current-planner-setup-has-brought-more-planning-peace-to-my-days
 ---
+
 I’ve tried lots of different planning systems and setups, but right now this is my “planning peace” – a term planning folk often use when they’ve found peace with the best system setup for them. I do tweak things over time and try different things, but this is what’s working for me right now. Today on the blog, I’m sharing with you how my current planner setup has brought more planning peace to my days.
 
 **But first. Here’s what my planner setup looks like right now…**
@@ -45,9 +47,3 @@ Unlike a one book method, separating my planner into three separate inserts has 
 **Further reading?** I enjoyed the book [Eat that Frog](https://amzn.to/2DmKOdX) for planning and procrastination tips as well as the [Bullet Journal Method](https://amzn.to/3fB51uF) for simple planning (the method I use within my current planner setup in this blog).  
 _  
 PS if you’d like to chat about this method more with me, feel free to drop me a line at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’ll also share my two favourite, simple videos for getting you started with this method, too!_
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

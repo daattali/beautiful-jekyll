@@ -1,19 +1,22 @@
 ---
 layout: post
-title: Five Ways I’ve Been Adjusting our Routines Since the Pandemic Hit (for myself
+title:
+  Five Ways I’ve Been Adjusting our Routines Since the Pandemic Hit (for myself
   and the kids)
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/img_20200906_095105025_compress37.jpg"
-share-img: ''
+share-img: ""
 tags:
-- routines
-- simple routines
-- routines with kids
-- routines during the pandemic
+  - routines
+  - simple routines
+  - routines with kids
+  - routines during the pandemic
 description: Helpful suggestions for adjusting routines with kids during the pandemic.
-
+redirect_from:
+  - 2020-09-22-five-ways-i-ve-been-adjusting-our-routines-since-the-pandemic-hit
 ---
+
 It’s been a huge turn of events here in our home since the pandemic hit and of course, the rest of the world. Today on the blog, I’m sharing with you five ways I’ve been adjusting our routines (for myself and the kids) since the pandemic hit. Today on the blog, I'm sharing five ways I've been adjusting our routine
 
 ## 1. I have taken a lot off the list.
@@ -41,9 +44,3 @@ The pandemic has affected my mental health and I’m glad to become more aware o
 _PS I know “self care” can look different for everyone. I found a list of 10 creative self care ideas for busy people (aka moms) if you’d like to take a look at them too. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that list for free and I'd be happy to send that off to you._
 
 ![An overview of the five tips. ](/uploads/five-ways-i-ve-been-adjusting-our-routines-since-the-pandemic-hit-1-_compress11.jpg "Pandemicroutine")
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

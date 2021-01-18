@@ -24,10 +24,6 @@ fields:
   type: tag_list
   default: []
   label: tags
-- name: readtime
-  type: boolean
-  label: readtime
-  default: true
 - type: file
   name: thumbnail-img
   label: thumbnail-img
@@ -39,12 +35,34 @@ fields:
 - type: file
   name: share-img
   label: share-img
+- name: readtime
+  type: boolean
+  label: readtime
+  default: true
+  hidden: true
 - name: comments
   type: boolean
   label: comments
+  default: true
+  hidden: true
 - name: show-avatar
   type: boolean
   label: show-avatar
   default: true
+- name: redirect_from
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: redirect_from
 pages:
 - _posts/2020-12-01-3-tips-to-get-started-on-simplifying-your-home-life.md
+- _posts/2020-12-18-simple-meal-planning-with-theme-nights.md
+- _posts/2020-12-23-two-key-steps-to-create-more-simplicity-on-christmas-day.md
+- _posts/2020-12-28-why-new-year-s-resolutions-often-don-t-work-and-what-to-try-instead.md
+- _posts/2021-01-01-how-to-do-a-zero-spend-month-that-works-for-you.md
+- _posts/2021-01-07-simple-budgeting-tips-for-people-who-don-t-like-budgeting.md
+- _posts/2021-01-15-2-simple-tips-to-start-sinking-funds-for-beginners.md
+- _posts/how-this-one-quote-can-help-simplify-your-homeschool-life.md
+- _posts/how-to-keep-your-laundry-routine-simple-for-busy-families.md

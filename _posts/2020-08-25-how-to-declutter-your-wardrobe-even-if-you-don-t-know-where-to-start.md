@@ -1,23 +1,22 @@
 ---
 layout: post
 title: How to Declutter Your Wardrobe Even If You Don't Know Where to Start
-subtitle: ''
-gh-repo: daattali/beautiful-jekyll
-gh-badge:
-- star
-- fork
-- follow
+description: ""
+subtitle: ""
 tags:
-- decluttering your wardrobe
-- wardrobe declutter
-- capsule wardrobe
-- capsule wardrobe guide
-- simple wardrobe
+  - decluttering your wardrobe
+  - wardrobe declutter
+  - capsule wardrobe
+  - capsule wardrobe guide
+  - simple wardrobe
 comments: true
 description: Simple tips for decluttering your wardrobe.
-
+redirect_from:
+  - 2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start
 ---
-![](/uploads/mywardrobe.png)  
+
+![](/uploads/mywardrobe.jpg)
+
 Wardrobes. Clothing. Is your wardrobe busting at the seams and you want to simplify but have no clue where to start? Today on the blog, I'm going to go over how you can declutter your wardrobe even if you don't know where to start. I'll also be sharing tips from one of the top minimalist living folk, [Joshua Becker](www.becomingminimalist.com) and drawing from my own experience with going through a mega wardrobe declutter.
 
 **It's simple, but not easy - guidelines to get you started**
@@ -48,9 +47,3 @@ Other blogs you may enjoy:
 [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
 
 [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
-
-**Thank you so much for reading to the end! Enjoyed this blog? I’d love if you shared it.**
-
-Thanks again,
-
-Kelly

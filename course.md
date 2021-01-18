@@ -59,7 +59,13 @@ Go at your own pace, ask questions, learn alongside others. You’ll have access
 
 The course is a one time payment of $27USD or you can split into two payments. Just send me an email at [simplehomemom@gmail.com](mailto:simplehomemom@gmail.com) to chat about that before payment.
 
-## About Me
+## Reviews
+
+> Simplify Your Home Life: a course for busy moms was an amazing experience! I loved the units; each was something that I needed to dig into more as I work to simplify my life and home. The layout for this course was perfect, giving time and space to work on each subject before moving on. I love that I can go back and work through the ones that are more challenging for my household. Kelly’s support and encouragement to tackle things one small bit at a time was just what I needed! I will definitely recommend this course to my friends who are looking to make changes in their lives to simplify. - Deanna
+
+> I have to say I love how simply laid out your course is! I love the units lay out and overall how great this has been . The printable sheets are so helpful I have my own little booklet of all of them now. - Terri
+
+## About me
 
 I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom seven years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a minimalist lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by learning flexible planning methods + skills. More intention. Seeking less stuff, less to do. And. Always learning and growing.
 

@@ -1,26 +1,27 @@
 ---
 layout: post
 title: Four Tips to Create Minimal Wardrobes for Kids
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/wardrobe.png"
+thumbnail-img: "/uploads/wardrobe.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- decluttering your wadrobe
-- capsule wadrobe
-- minimal wardrobe
-- minimal wardrobe for kids
-- capsule wardrobe for kids
-- creating mimimal wardrobes for kids
-- decluttering kids clothes
-- simple wardrobe for kids
-description: Tips for creating simple minimal wadrobes for kids. It doesn't need to
-  be expensive.
-
+  - decluttering your wadrobe
+  - capsule wadrobe
+  - minimal wardrobe
+  - minimal wardrobe for kids
+  - capsule wardrobe for kids
+  - creating mimimal wardrobes for kids
+  - decluttering kids clothes
+  - simple wardrobe for kids
+description: Tips for creating simple minimal wadrobes for kids. It doesn't need to be expensive.
+redirect_from:
+  - 2020-08-24-four-easy-ways-to-create-a-minimalist-jewelry-collection
 ---
+
 Minimal living and wardrobes for kids? How does that even work? We have four kids so, I mean, that’s a lot of kids, so it’s going to be a lot of clothes even with minimal wardrobes. But we’ve learned steps that have certainly helped. On the blog today I’m sharing four steps to create minimal wardrobes for kids.
 
-![An image of my son's closet.](/uploads/wardrobe.png "wadrobe")
+![An image of my son's closet.](/uploads/wardrobe.jpg "wadrobe")
 
 ## Pick your number
 
@@ -49,9 +50,3 @@ Other blogs you may enjoy:
 [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
 
 [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
-
-**Thank you so much for reading to the end! Enjoyed this blog? I’d love if you shared it.**
-
-Thanks again,
-
-Kelly

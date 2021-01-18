@@ -1,16 +1,19 @@
 ---
 layout: post
 title: How to Have a More Peaceful Dinnertime Even with a House of Young Children
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- dinner time with kids
-- peaceful dinner with kids
-- dinner routine with kids
-
+  - dinner time with kids
+  - peaceful dinner with kids
+  - dinner routine with kids
+redirect_from:
+  - 2020-08-29-how-to-have-a-more-peaceful-dinnertime-even-with-a-house-of-young-children
 ---
+
 ![A picture of my boys at the table.](/uploads/20200806_084001_0000_compress86-1.jpg "dinnertime")
 
 Flexibility is key in our family of four kids here and last month, we had a big awakening of something that just was not working anymore. A couple years ago, we clued into the fact that bedtime routine is much, much easier when we stagger the kids vs. try to get them ready all at the same time. It gets very loud if we do that. And likewise, dinner time was becoming a place of chaos here with siblings not getting along and meals not being eaten because of it. For a long time. Today on the blog, I'm sharing with you how to have a more peaceful dinner time even with a house of young children.
@@ -29,9 +32,3 @@ It looks like my hubby usually cooking supper and I'm with the kids, one at a ti
 PS Thank you to my friend Sara for reminding me that she staggers her kids at supper...you are my inspiration!
 
 _Is your dinner time a struggle for you right now? Are the kids grumpy and/or loud? I hear you. If this is a struggle in your home right now, I have been where you are and I know how you feel. If my solution to creating more peace at dinner time is not going to work for your family, I have a few more ideas that may work. If you'd like to read more about those ideas, feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to share that to you for free. Here's to more peaceful dinner times!_
-
-Cheers,
-
-Kelly
-
-##### Did you find this helpful? If so, I would greatly appreciate if you shared it.

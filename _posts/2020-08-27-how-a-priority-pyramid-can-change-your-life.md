@@ -1,18 +1,21 @@
 ---
 layout: post
 title: How a Priority Pyramid can Change Your Life
-subtitle: ''
+description: ""
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200826_203743_0001_compress41.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- priorities
-- values
-- priority pyramid
-- how to discover your priorities
-- what matters most
-
+  - priorities
+  - values
+  - priority pyramid
+  - how to discover your priorities
+  - what matters most
+redirect_from:
+  - 2020-08-27-how-a-priority-pyramid-can-change-your-life
 ---
+
 We know what priorities are and what they mean, but how do we really know what comes first? Today on the blog I'm going to share with you a visual way to structure and organize your priorities using a priority pyramid.
 
 ## Brainstorm your important areas of life
@@ -21,16 +24,10 @@ Take some time and write down all of the things that are important to you. Organ
 
 Example of an ordered priority pyramid – it’ll look different for everyone:
 
-![A picture of my ordered priorities.](/uploads/20200414_094404_0000-1.png "pyramid")
+![A picture of my ordered priorities.](/uploads/spiritual-life.jpg "pyramid")
 
 ## Put Your Priority Pyramid into Practice
 
 A priority pyramid is meant to be a tool, something to help you out when needed. Refer to it often when you are faced with overwhelm in your day too. It may help refocus you on what matters most! Keep it in a place where you may see it often if that’s helpful.
 
 _PS want to dive into discovering your priorities for your Priority Pyramid a bit more? I have a list of 20 other possible priorities for you to look at that you may want to include. Just send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for that list._
-
-Cheers!
-
-Kelly
-
-**Was this helpful? If you enjoyed this, I’d love it if you shared it below.**

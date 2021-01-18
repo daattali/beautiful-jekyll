@@ -1,17 +1,20 @@
 ---
 layout: post
 title: 5 Ways to be Present with Your Kids
-subtitle: ''
+subtitle: ""
+description: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- Slow living with kids
-- being present with your kids
-- ways to be present with your kids
-
+  - Slow living with kids
+  - being present with your kids
+  - ways to be present with your kids
+redirect_from:
+  - 2020-08-29-5-ways-to-be-present-with-your-kids
 ---
-![My boys eating pancakes at the table.](/uploads/20200709_225120_0000-1.png "diningtablekids")
+
+![My boys eating pancakes at the table.](/uploads/20200709_225120_0000-1.jpg "diningtablekids")
 
 I don't know about you, but sometimes the duties of the day can just sweep me away and by the end of the day I look back and realize. Oops. I was on autopilot all day. It can take practice to slow down and be present. Today on the blog, I'm sharing five ways to be present with your kids.
 
@@ -22,9 +25,3 @@ I don't know about you, but sometimes the duties of the day can just sweep me aw
 5. Do something that you enjoy with your kids. For me, that's 100% when I get to chase them around and make them laugh and squeel. It's almost always my favourite moment of the day when I take time to do this. Whatever it is for you and your kids, take time to do that fun thing.
 
 _PS Enjoyed these tips? I have ten more of them like these if you'd like that I found. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to share them with you._
-
-Cheers,
-
-Kelly Briggs
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

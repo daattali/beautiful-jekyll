@@ -1,18 +1,20 @@
 ---
 layout: post
 title: 3 Ways to Declutter and Deal with Sentimental Items
-subtitle: ''
+subtitle: ""
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200907_191643_0000_compress88.jpg"
-share-img: ''
+share-img: ""
 tags:
-- minimalism
-- decluttering
-- dealing with sentimental items
-- decluttering sentimental items
+  - minimalism
+  - decluttering
+  - dealing with sentimental items
+  - decluttering sentimental items
 description: 3 practical suggestions to deal with decluttering sentimental items.
-
+redirect_from:
+  - 2020-09-08-3-ways-to-declutter-and-deal-with-sentimental-items
 ---
+
 Sentimental items. Should they stay or should they go now? Today on the blog, I’m sharing with you a bit about my process of dealing with sentimental items and 3 (practical) ways to declutter and deal with sentimental items.
 
 At the very beginning of my decluttering journey, I went through the [konmari process](https://amzn.to/3kFAv5C) and the sentimental category was the last I tackled. I had so much stuff. Most of it was sentimental papers and pictures and random school awards. I kept things like report cards and junior high letters and diaries over the years. They came with me through two homes since I moved out of my childhood home.
@@ -40,9 +42,3 @@ And guess what? _I haven't looked at those pictures once since I took them_. I s
 [Decluttering at the Speed of Life](https://amzn.to/3bcR9oL)
 
 _And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
-
-Cheers,
-
-Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**

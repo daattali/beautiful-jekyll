@@ -25,10 +25,14 @@ So if you are not sure where to start (or continue) because you're confused abou
 
 ## Included inside
 
-* $7 USD (click through to the download link) 
+* $7 USD (click through to the download link)
 * 9 pages
 * Questions to get you thinking about your ideal simple capsule wardrobe
 * Six simple steps to get you well on the way to design your simple capsule wardrobe
 * Resources section
 * Examples
 * My support if you need any help along the way
+
+## Reviews
+
+> “As anyone who’s tried to make a capsule wardrobe knows, it’s easy to get overwhelmed and confused by all the “must-have” lists and “rules” floating around on Pinterest. Kelly’s guide cuts through all the noise with straightforward steps that makes creating a capsule wardrobe truly simple, and best of all - tailored to you and your needs.”
