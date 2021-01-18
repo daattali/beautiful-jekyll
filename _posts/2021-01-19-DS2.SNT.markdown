@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'SNT : devoir sur le thème 2'
+published: true
+---
+
+
+
+Voici l'image dont vous aurez besoin pour ce module.
+
+
+
+
+<center>
+	      <img class="avatar-img" src="/japan.jpg" />
+</center>
+
