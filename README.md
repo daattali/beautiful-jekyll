@@ -43,6 +43,8 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 
 <h2 id="sponsors">Sponsors 🏆</h2>
 
+Developing and maintaining Beautiful Jekyll takes a lot of time and effort - thank you to anyone who helps fund this effort!
+
 - [Matt Artist](https://mja00.dev/)
 - [\_hyp3ri0n](https://hyperiongray.com)
 
