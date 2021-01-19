@@ -5,7 +5,7 @@ subtitle: A few words to describe me
 published: true
 ---
 
-Mi nombre es Josemy Duarte. Soy Software Engineer con interés particularmente en tecnologías relacionadas al backend, cloud y devops. Para mayor información sobre mi carrera profesional puedes echar un vistazo a mí [LinkedIn](https://www.linkedin.com/in/josemyduarte/) o escríbeme un [email](mailto:duartejosemy@gmail.com) si tienes alguna pregunta.
+Mi nombre es Josemy Duarte. Soy Software Engineer con interés particularmente en tecnologías relacionadas al backend, cloud y devops. Para mayor información sobre mi carrera profesional puedes echar un vistazo a mi [LinkedIn](https://www.linkedin.com/in/josemyduarte/) o escríbeme un [email](mailto:duartejosemy@gmail.com) si tienes alguna pregunta.
 
 ## Un poco de historia...
 
