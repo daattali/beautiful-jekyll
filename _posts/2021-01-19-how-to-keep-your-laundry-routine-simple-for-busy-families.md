@@ -20,14 +20,14 @@ Laundry. We all have to do laundry, right? There was a point in my parenting lif
 
 ## Our busy family laundry system revolution
 
-What laundry looked like before for us: Laundry used to be my nemesis. I think I felt “on top of it” until I hit two kids. And if things weren’t put away and folded or hung, I never felt complete. Then entered that second child and laundry was really stressing me out. Something had to give. 
+What laundry looked like before for us: Laundry used to be my nemesis. I think I felt “on top of it” until I hit two kids. And if things weren’t put away and folded or hung, I never felt complete. Then entered that second child and laundry was really stressing me out. Something had to give.
 
 ![A picture of a person falling into a washer.](/uploads/how-to-keep-your-laundry-routine-simple-for-busy-families-shm.jpg "How to Keep Your Laundry Routine Simple for Busy Families SHM")
 
 ### How we started towards a simpler laundry routine for our busy family
 
-I started with my own closet, but after leaving the teaching world, I had a TON of "teacher clothes" to declutter for starters. [Minimizing our clothes](https://www.popsugar.com/family/Marie-Kondo-Clothing-Rules-45664729) for the whole family was the key to simplifying our laundry routine. The next thing was _to reduce my expectations_ and realize that I can't keep up with our old laundry routine. I had to figure out something new that was lower stress and simpler.  
-   
+I started with my own closet, but after leaving the teaching world, I had a TON of "teacher clothes" to declutter for starters. [Minimizing our clothes](https://www.popsugar.com/family/Marie-Kondo-Clothing-Rules-45664729) for the whole family was the key to simplifying our laundry routine. The next thing was _to reduce my expectations_ and realize that I can't keep up with our old laundry routine. I had to figure out something new that was lower stress and simpler.
+
 I made sure I have enough [laundry baskets](https://www.thespruce.com/best-laundry-baskets-4154604) for each person or area. So that when laundry is dry, I can sort it right away into the baskets (that mostly stack) and it can stay there or go away if we have time.
 
 ### Two key things that helps keep your laundry routine simple for busy families
@@ -35,7 +35,7 @@ I made sure I have enough [laundry baskets](https://www.thespruce.com/best-laund
 1. [Minimizing our wardrobes](https://www.littlehouseliving.com/how-to-minimalize-childrens-clothing.html#:\~:text=If%20you%20really%20want%20to,fold%20them%20into%20each%20other.) to what we all needed and then some backups because we have children here, of course. They definitely need backup! I also developed a [capsule wardrobe](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) for myself.
 2. [Having a simple routine that even the kids could follow](https://www.kaplanco.com/ii/why-routines-are-important-for-infants-toddlers#:\~:text=1.,make%20their%20environment%20more%20predictable.). This is key. Our family is busy, given there are four kids, so simple is only going to work here and having a routine that flows nicely even when things get dropped a bit.
 
-Laundry is something that is a part of most of our lives, so creating simple routines that are doable and sustainable is so key if you’re looking to keep your laundry routine simple for your busy family. And! Make sure to listen to me chatting about keeping laundry simple for busy families in detail over at Minimalist Moms Podcast as well, which you can find here “Creating a Minimalist Laundry Routine”.
+Laundry is something that is a part of most of our lives, so creating simple routines that are doable and sustainable is so key if you’re looking to keep your laundry routine simple for your busy family. And! Make sure to listen to me chatting about keeping laundry simple for busy families in detail over at [Minimalist Moms Podcast](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/) as well, which you can find [here](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/) “[Simplify Your Laundry Routine](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)”.
 
 _Also catch the freebie: Create Your Simple Laundry Routine (ten questions to ask yourself to help you design yours). You can snag that_ [_HERE_](https://mailchi.mp/a5efd04962e4/simplelaundry)_._
 
