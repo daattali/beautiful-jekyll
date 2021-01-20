@@ -1,4 +1,4 @@
-# To create a screen on windows susbsystem linux
+# To create a screen on windows susbsystem linux.
 
     sudo /etc/init.d/screen-cleanup start
 
