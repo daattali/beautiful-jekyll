@@ -1,5 +1,10 @@
-Growing objects (for loops)
-================
+---
+layout: post
+title: Growing objects with for loops
+subtitle: Why is pre-allocation important?
+tags: [R Programming]
+comments: true
+---
 
 When we make operations inside for loops, for instance, compute the mean
 of each row in a data frame. There is a huge difference in computation
