@@ -15,6 +15,7 @@ author: W. A. Corrales (Fairerbadge66 on Github)
 
 navbar-links:
   About Us: "aboutme"
+  Tutorials: "tutorials"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
