@@ -6,7 +6,8 @@ subtitle: ''
 ---
 ## Quick links
 
-* Free:[ Plan your zero spend month worksheets](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
+* [How This One Quote Can Help Simplify Your Homeschool Life + Simplify Your Homeschool Life Online Session](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
+* [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 * Canadian online homeschooling conference affiliate link - signup [here](https://canadianhomeschoolconference.com/aff/42/) (my session is live on Feb. 3rd: **Simplify your Homeschool Life**)
 * **Just released:** [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * Join the [weekly newsletter](http://eepurl.com/gYFb-r) +get access to the freebie vault
