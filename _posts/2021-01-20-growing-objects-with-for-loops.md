@@ -44,7 +44,7 @@ for (i in 1:ncol(mat)){
 toc()
 ```
 
-    ## 11.553 sec elapsed
+    ## 11.541 sec elapsed
 
 ### Example 2: Pre-allocating the recipient object
 
@@ -62,7 +62,9 @@ for (i in 1:ncol(mat)){
 toc()
 ```
 
-    ## 0.66 sec elapsed
+    ## 0.683 sec elapsed
 
 As you can see, pre-allocating the space needed to hold the results is
 in this case at least **10 times faster**
+
+![OMG](/assets/img/2021-01-20-growing-objects-with-for-loops/omg_cat.jpg){: .mx-auto.d-block :}
