@@ -56,11 +56,11 @@ From the organizer:
 >
 > It's absolutely free to attend live - which will give you from midnight to midnight to watch the daily sessions, or you can choose to purchase a 2021 all-access pass to watch sessions whenever you'd like (including after the event is over.) The pass is only $17 (CAD) for lifetime access."
 
-**SESSION: SIMPLIFY YOUR HOMESCHOOL LIFE**  
-This session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life.
+**SESSION:** [**SIMPLIFY YOUR HOMESCHOOL LIFE**](https://canadianhomeschoolconference.com/aff/42/)  
+[This session](https://canadianhomeschoolconference.com/aff/42/) will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life.
 
 **SESSION DATE: FEB 3RD.**
 
-Find my session Simplify Your Homeschool Life and signup for the conference [here](https://canadianhomeschoolconference.com/aff/42/).
+Find my session [Simplify Your Homeschool Life](https://canadianhomeschoolconference.com/aff/42/) and signup for the conference [here](https://canadianhomeschoolconference.com/aff/42/).
 
 \*If you decide to purchase a pass, a percentage of the cost will be paid directly to me, with no cost difference to you. Thank you for supporting!
