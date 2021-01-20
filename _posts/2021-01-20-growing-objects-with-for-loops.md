@@ -1,7 +1,12 @@
-Growing objects (for loops)
-================
-W. A. Corrales
-17-09-2020
+---
+layout: post
+title: Growing objects in R (for loops)
+subtitle: Why pre-allocation is important?
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [books, test]
+---
 
 ``` r
 knitr::opts_chunk$set(echo = TRUE)
