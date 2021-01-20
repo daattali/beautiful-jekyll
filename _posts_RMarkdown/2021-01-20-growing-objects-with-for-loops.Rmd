@@ -1,7 +1,5 @@
 ---
 title: "Growing objects (for loops)"
-author: "W. A. Corrales"
-date: "17-09-2020"
 output: github_document
 ---
 

@@ -1,7 +1,5 @@
 Growing objects (for loops)
 ================
-W. A. Corrales
-17-09-2020
 
 When we make operations inside for loops, for instance, compute the mean
 of each row in a data frame. There is a huge difference in computation
@@ -44,7 +42,7 @@ for (i in 1:ncol(mat)){
 toc()
 ```
 
-    ## 11.541 sec elapsed
+    ## 11.73 sec elapsed
 
 ### Example 2: Pre-allocating the recipient object
 
@@ -62,7 +60,7 @@ for (i in 1:ncol(mat)){
 toc()
 ```
 
-    ## 0.683 sec elapsed
+    ## 0.685 sec elapsed
 
 As you can see, pre-allocating the space needed to hold the results is
 in this case at least **10 times faster**
