@@ -1,0 +1,19 @@
+---
+title: "Web scraping in R"
+output: github_document
+---
+
+```{r Install required libraries, eval=FALSE}
+
+install.packages("rvest")
+install.packages("tidyverse")
+
+```
+
+```{r Load libraries}
+
+library(rvest)
+library(tidyverse)
+
+```
+
