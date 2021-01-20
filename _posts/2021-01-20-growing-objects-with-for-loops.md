@@ -67,4 +67,4 @@ toc()
 As you can see, pre-allocating the space needed to hold the results is
 in this case at least **10 times faster**
 
-![OMG](/assets/img/2021-01-20-growing-objects-with-for-loops/omg_cat.jpg){: .mx-auto.d-block :}
+![OMG](/assets/img/omg_cat.jpg){: .mx-auto.d-block :}
