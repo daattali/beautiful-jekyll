@@ -67,4 +67,4 @@ toc()
 As you can see, pre-allocating the space needed to hold the results is
 in this case at least **10 times faster**
 
-![OMG](/assets/img/omg_cat.jpg){: .mx-auto.d-block :}
+![OMG](https://i.ytimg.com/vi/C_S5cXbXe-4/maxresdefault.jpg){: .mx-auto.d-block :}
