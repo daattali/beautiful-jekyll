@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flake it till you make it
+title: Circular diagrams with circlize
 subtitle: Excerpt from Soulshaping by Jeff Brown
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
