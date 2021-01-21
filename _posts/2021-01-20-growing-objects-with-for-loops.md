@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Growing objects with for loops
+title: Growing objects with for loops in R
 subtitle: Why is pre-allocation important?
 tags: [R Programming]
 comments: true
