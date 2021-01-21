@@ -27,6 +27,7 @@ mat <- matrix(1:100000000, nrow = 1000, ncol = 100000, byrow = F)
 **Example 1:** Growing object with c()
 
 ``` r
+# Start time
 tic()
 
 # Create empty vector to hold results
@@ -37,6 +38,7 @@ for (i in 1:ncol(mat)){
   result_1 <- c(result_1, mean(mat[,i]))
 }
 
+# End time
 toc()
 ```
 
@@ -45,6 +47,7 @@ toc()
 **Example 2:** Pre-allocating the recipient object
 
 ``` r
+# Start time
 tic()
 
 # Create a vector with size 10.000 to hold the results
@@ -55,6 +58,7 @@ for (i in 1:ncol(mat)){
   result_2[i] <- mean(mat[,i])
 }
 
+# End time
 toc()
 ```
 
