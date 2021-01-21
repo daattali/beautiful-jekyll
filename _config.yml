@@ -58,7 +58,7 @@ social-network-links:
 #  yelp: yourname
 #  telegram: yourname
 #  calendly: yourname
-   mastodon: mstdn.jp/@kris57
+  mastodon: mstdn.jp/@kris57
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 
@@ -228,4 +228,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
