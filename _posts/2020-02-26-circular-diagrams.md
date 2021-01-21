@@ -6,10 +6,17 @@ thumbnail-img: /assets/img/2020-02-26-circular-diagrams/circlize.png
 tags: [R Programming, Plots]
 ---
 
-Circular layouts are useful and elegant plots to show relations between elements. Specifically, we will make a chord diagram to visualize relationships between target genes and miRNAs.
+Circular layouts are useful and elegant plots to show relations between elements. Specifically, we will make a chord diagram to visualize relationships between target genes and miRNAs. To achieve our goal, we will use the [circlize](https://jokergoo.github.io/circlize_book/book/) package for R.
+
+First, we will install the required packages. If you have tidyverse already installed, you actually have the readr package.
 
 ``` r
-library (readr)
+install.packages("readr")
+install.packages("circlize")
+```
+
+``` r
+library(readr)
 library(circlize)
 ```
 
