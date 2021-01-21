@@ -1,0 +1,33 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+2020-09-12
+Newest Hash:0000000000000000000eb11d9d6905a63fff9ea6e05f65bbc720f29c12890aa1
+Canary's proof of possession of control of the PGP key has been suspended.
+In the unlikely event that we lose control of a PGP key, we will notify you immediately and publish a revocation certificate.
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQQ7zMfP0ll+U0Tdlkpym1I9EfOo1wUCX1zTSAAKCRBym1I9EfOo
+1yyyAQCrp2FvfoczAh5Xp/EhswXZlO6cY46aTpQYZk6JiF2B1gEAzsnocgyC/2Sf
+cBLpOQkTUTZsD3YWvR3V+BNx6OJq6Qw=
+=ZEoq
+-----END PGP SIGNATURE-----
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+I am the admin of Internet Magician(aka Kijyutsushi) (@8A4AK).
+I am in control of my PGP key.
+I will update this canary within 14 days.
+Today is 2020-08-25.
+
+Latest bitcoin block hash:
+00000000000000000007b9fde4a666558bdf45060c6b65f10b82458b17a0513f
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQQ7zMfP0ll+U0Tdlkpym1I9EfOo1wUCX0S+WQAKCRBym1I9EfOo
+18TeAQCYfWxCz+UFvVaEOcZGN+Th+r1Hr2toKrfyDLvsv1x/ZgEA/eiNYyVTEVdE
+75/faKQ4QxVdkOrhJwXUSRjJoIZODgU=
+=zWAV
+-----END PGP SIGNATURE-----
+
