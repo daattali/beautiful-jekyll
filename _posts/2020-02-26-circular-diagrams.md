@@ -16,5 +16,5 @@ library(circlize)
 Download the example interaction dataset to work with
 
 ``` r
-read_csv(url(""))
+read_csv(url("https://raw.githubusercontent.com/FairerBadge66/neurito-bioinformatics/gh-pages/assets/input_data/miRNA-target-interactions.tsv"))
 ```
