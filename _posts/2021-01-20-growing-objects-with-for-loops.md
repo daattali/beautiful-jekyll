@@ -8,6 +8,8 @@ comments: true
 
 When we make operations inside for loops, for instance, compute the mean of each row in a data frame. There is a huge difference in computation time between generating a growing object (for example, with **combine function**) and pre-allocating the object before running the for loop.
 
+**For large datasets, the impact in run time is really considerable.**
+
 *Note: The next R package (tictoc), allow us to measure execution time in an easy way.*
 
 ``` r
@@ -15,7 +17,6 @@ install.packages("tictoc")
 library(tictoc)
 ```
 
-**For large datasets, the impact in run time is really considerable.**
 
 Create a large matrix (10^8 elements) to work with
 
