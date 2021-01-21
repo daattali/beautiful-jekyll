@@ -6,32 +6,25 @@ tags: [R Programming]
 comments: true
 ---
 
-When we make operations inside for loops, for instance, compute the mean
-of each row in a data frame. There is a huge difference in computation
-time between generating a growing object (for example, with **c()**
-function) and pre-allocating the object before running the for loop.
+When we make operations inside for loops, for instance, compute the mean of each row in a data frame. There is a huge difference in computation time between generating a growing object (for example, with **combine function**) and pre-allocating the object before running the for loop.
+
+*Note: The next R package (tictoc), allow us to measure execution time in an easy way.*
 
 ``` r
 install.packages("tictoc")
-```
-
-*Note: The R package tictoc, allow us to measure execution time in an
-easy way.*
-
-``` r
 library(tictoc)
 ```
 
 **For large datasets, the impact in run time is really considerable.**
 
-### Create a large matrix (10^8 elements) to work with
+##### Create a large matrix (10^8 elements) to work with
 
 ``` r
 # Create data
 mat <- matrix(1:100000000, nrow = 1000, ncol = 100000, byrow = F)
 ```
 
-### Example 1: Growing object with c()
+##### Example 1: Growing object with c()
 
 ``` r
 tic()
@@ -49,7 +42,7 @@ toc()
 
     ## 11.73 sec elapsed
 
-### Example 2: Pre-allocating the recipient object
+##### Example 2: Pre-allocating the recipient object
 
 ``` r
 tic()
