@@ -24,7 +24,7 @@ Create a large matrix (10^8 elements) to work with
 mat <- matrix(1:100000000, nrow = 1000, ncol = 100000, byrow = F)
 ```
 
-Example 1: Growing object with c()
+**Example 1:** Growing object with c()
 
 ``` r
 tic()
@@ -42,7 +42,7 @@ toc()
 
     ## 11.73 sec elapsed
 
-Example 2: Pre-allocating the recipient object
+**Example 2:** Pre-allocating the recipient object
 
 ``` r
 tic()
