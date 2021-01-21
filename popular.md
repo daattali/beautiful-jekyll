@@ -18,9 +18,8 @@ subtitle: ''
 
 ## Popular blogs
 
-* [My blog on picky plates](https://www.simplehomemom.com/2020-08-29-how-to-make-lunches-painless-and-quick-with-picky-plates/)
-* [My blog on how capsule wadrobes save me money and time](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
-* [My blog on our slow and simple homeschooling routine](https://www.simplehomemom.com/2020-08-29-our-slow-and-simple-homeschooling-routine/)
+* [My blog on picky plates](https://www.simplehomemom.com/how-to-make-lunches-painless-and-quick-with-picky-plates/)
+* [My blog on how capsule wadrobes save me money and time](https://www.simplehomemom.com/one-daily-tidying-routine-that-will-save-you-money-and-time/)
 
 ## Other
 
