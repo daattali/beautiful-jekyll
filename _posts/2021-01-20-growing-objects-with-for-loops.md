@@ -24,6 +24,7 @@ library(tictoc)
 mat <- matrix(1:100000000, nrow = 1000, ncol = 100000, byrow = F)
 ```
 
+
 ##### Example 1: Growing object with c()
 
 ``` r
