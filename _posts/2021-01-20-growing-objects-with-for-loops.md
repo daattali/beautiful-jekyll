@@ -62,6 +62,6 @@ toc()
     ## 0.685 sec elapsed
 
 As you can see, pre-allocating the space needed to hold the results is
-in this case at least **10 times faster**
+in this case at least **15 times faster**
 
 ![OMG](https://i.ytimg.com/vi/C_S5cXbXe-4/maxresdefault.jpg){: .mx-auto.d-block :}
