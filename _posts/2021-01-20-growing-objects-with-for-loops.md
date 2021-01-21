@@ -3,7 +3,6 @@ layout: post
 title: Growing objects with for loops in R
 subtitle: Why is pre-allocation important?
 tags: [R Programming]
-comments: true
 ---
 
 When we make operations inside for loops, for instance, compute the mean of each row in a data frame. There is a huge difference in computation time between generating a growing object (for example, with **combine function**) and pre-allocating the object before running the for loop.
@@ -12,7 +11,7 @@ When we make operations inside for loops, for instance, compute the mean of each
 
 *Note: The next R package (tictoc), allow us to measure execution time in an easy way.*
 
-```r
+``` r
 install.packages("tictoc")
 library(tictoc)
 ```
