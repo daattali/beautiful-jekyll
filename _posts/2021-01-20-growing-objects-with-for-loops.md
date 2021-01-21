@@ -12,7 +12,7 @@ When we make operations inside for loops, for instance, compute the mean of each
 
 *Note: The next R package (tictoc), allow us to measure execution time in an easy way.*
 
-``` r
+```r
 install.packages("tictoc")
 library(tictoc)
 ```
