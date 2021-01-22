@@ -2,10 +2,9 @@
 layout: page
 title: Course
 ---
+_The Simplify Your Home Life: a course for busy moms_ is a six week online course.
 
-_The Simplify Your Home Life: a course for busy moms_ is a six week interactive course.
-
-**Round 2 coming in early 2021. Signup below to get on the waitlist.**
+**Round 2 coming February 1st. Signup below to get on the list!**
 
 ## Course Description
 
