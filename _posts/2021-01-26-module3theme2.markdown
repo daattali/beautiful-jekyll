@@ -12,5 +12,5 @@ Voici l'image dont vous aurez besoin pour ce module.
 
 
 <center>
-	      <img class="avatar-img" src="/photo.jpg" />
+	      <img class="avatar-img" src="/photo.JPG" />
 </center>
