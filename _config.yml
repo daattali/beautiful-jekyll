@@ -5,8 +5,8 @@ author: Kelly Briggs
 navbar-links:
   Popular: popular
   Resources:
-  - Course: https://kellymbriggs.github.io/course/
-  - Simple Capsule Wardrobe Guide: https://kellymbriggs.github.io/simple-capsule-wardrobe-guide/
+  - Course: /course/
+  - Simple Capsule Wardrobe Guide: /simple-capsule-wardrobe-guide/
   Connect:
   - About me: https://kellymbriggs.github.io/aboutme/
   - Contact: https://kellymbriggs.github.io/contact/
