@@ -1,11 +1,11 @@
 ---
 layout: post
-title: F2 online store soon to come!
-subtitle: And keeping this site up to date
+title: F2 2020 PCB Badges up for sale!
+subtitle: Link to store inside this post
 thumbnail-img: /uploads/badges.png
 tags:
   - news
-  - vr
+  - Swag
 ---
 
 # F2 2020 PCB Badges are up for sale on our online store\!
