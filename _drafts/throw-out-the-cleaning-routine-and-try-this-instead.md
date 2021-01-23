@@ -58,7 +58,7 @@ So maybe throwing out the cleaning routine would work for you too. It's worth a 
 
 ##### Create your own master cleaning task list with a free printable
 
-_If you like the sounds of a master cleaning task list and want to try it out for yourself, I created a simple blank master cleaning task list printable for you to fill in. You can download it here._
+_If you like the sounds of a master cleaning task list and want to try it out for yourself, I created a simple blank master cleaning task list printable for you to fill in. You can download it here. And if you'd like to simplify your home even more, my course - Simplify Your Home Life: a course for busy moms is open. You can take a look at that_ [_here_](www.simplehomemom.com/course)_._
 
 You may like these past blogs too:
 
