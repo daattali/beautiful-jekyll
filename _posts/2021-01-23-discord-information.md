@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Discord Information
-subtitle: Find out what is going on in our discord!
+subtitle: How to participate in Fur Squared on Discord
 tags:
   - news
   - vr
