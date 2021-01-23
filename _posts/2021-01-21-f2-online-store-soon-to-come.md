@@ -2,6 +2,7 @@
 layout: post
 title: F2 online store soon to come!
 subtitle: And keeping this site up to date
+thumbnail-img: /uploads/badges.png
 tags:
   - news
   - vr
