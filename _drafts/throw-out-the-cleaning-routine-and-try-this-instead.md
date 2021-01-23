@@ -40,23 +40,25 @@ Priorities can be applied to cleaning too, which brings me to the current method
 
 THE MASTER TASK CLEANING LIST. **What is the master task cleaning list?** It's exactly as described. I have a page in my [bullet journal](https://www.oprahmag.com/life/work-money/a32155559/how-to-start-a-bullet-journal/) that has all of the cleaning tasks you can think of and categorized, even things I don't think of often like cleaning the oven.
 
-**How do I use the master task cleaning list?** I plan my days the night before for the next day usually (see my blog [here](https://www.simplehomemom.com/a-simple-daily-planning-method/)), and focus on top priorities - usually three in every category. Under the home category, I pick usually 3 priorities to focus on and will pull from the master task cleaning list. Sometimes I throw in a decluttering or organizing task, but for the most part is cleaning since we just do [maintenance decluttering](https://www.simplehomemom.com/three-key-steps-to-maintaining-decluttering-sanity-with-kids/) right now.
+**How do I use the master task cleaning list?** I plan my days the night before for the next day usually (see my blog [here](https://www.simplehomemom.com/a-simple-daily-planning-method/) on my daily planning method), and focus on top priorities - usually three in every category. Under the home category, I pick usually 3 priorities to focus on and will pull from the master task cleaning list. Sometimes I throw in a decluttering or organizing task, but for the most part it's cleaning since we just do [maintenance decluttering](https://www.simplehomemom.com/three-key-steps-to-maintaining-decluttering-sanity-with-kids/) periodically right now.
 
 So for instance, today’s top three priorities are:
 
-1\. Vacuum the master bedroom and office.
+1. Vacuum the master bedroom and office.
+2. Tidy the bedroom and office.
+3. Make sure laundry is caught up with.
 
-2\. Tidy the bedroom and office.
-
-3\. Make sure laundry is caught up with.
+### We prioritize the daily cleaning tasks
 
 And, that's it! We do have some daily essential cleaning like dishes and laundry, but this way we have a lot of overwhelm and simplified our cleaning routine for this season of life. It's small amounts every day, which leads to a cleaner home more consistently. Not in every area at all times, mind you, but I'm able to prioritize tasks every day and work on the priorities first.
 
-So maybe throwing out the cleaning routine would work for you too. It's worth a shot, right? I personally like having a few methods up my sleeve to use during those different seasons or days that require different things.
+### Try throwing out the cleaning routine and see how it feels
 
-If you like the sounds of a master cleaning task list and want to try it out for yourself, I created a simple blank master cleaning task list printable for you to fill in. You can download it here.
+So maybe throwing out the cleaning routine would work for you too. It's worth a shot, right? I personally like having a few methods up my sleeve to use during those different seasons or days that require different things. So in the end? Do what works for you and your family. And maybe try throwing out the cleaning routine and try a master task list instead, using your top priorities every day. I use three, but you can do what works for you. Happy cleaning!
 
-So in the end? Do what works for you and your family. And maybe try throwing out the cleaning routine and try a master task list instead, using your top priorities every day. I use three, but you can do what works for you. Happy cleaning!
+##### Create your own master cleaning task list with a free printable
+
+_If you like the sounds of a master cleaning task list and want to try it out for yourself, I created a simple blank master cleaning task list printable for you to fill in. You can download it here._
 
 You may like these past blogs too:
 
