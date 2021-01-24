@@ -1,3 +1,10 @@
+---
+layout: post
+title: leetCode 每日一题 674
+subtitle: 给定一个未经排序的整数数组，找到最长且 连续递增的子序列，并返回该序列的长度
+tags: [leetCode, DynamicProgramming]
+---
+
 ### leetCode 每日一题 674
 给定一个未经排序的整数数组，找到最长且 连续递增的子序列，并返回该序列的长度。
 
