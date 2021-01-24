@@ -23,7 +23,7 @@ leetCode 每日一题 674
 ## 题解
 
 ### 一维DP，保存前一位的最大连续数组
-'''python3
+```python3
 class Solution:
     def findLengthOfLCIS(self, nums: List[int]) -> int:
         if not nums: return 0
@@ -32,10 +32,10 @@ class Solution:
             if nums[i] > nums[i-1]: dp[i] = dp[i-1]+1
             else: dp[i] = 1
         return max(dp)
-'''
+```
 
 ### 不需要保存所有的状态值，可以仅保存最新的1个状态
-"""python3
+```python3
 class Solution:
     def findLengthOfLCIS(self, nums: List[int]) -> int:
         if not nums: return 0
@@ -44,4 +44,4 @@ class Solution:
             if nums[i-1] < nums[i]: temp += 1
             else:res,temp = max(res,temp),1
         return max(res,temp)
-"""
+```
