@@ -11,11 +11,11 @@ layout: post
 tags: [pas de bol, festival, insecte, malaisance]
 ---
 
-J’étais à un festival, je faisais ± parti du staff puisque je participais à un atelier en parallèle du festival où on faisait de la création de jeu pour les installer sur le festival (c’est quand je bossais comme game designer… whatever…)
+J’étais à un festival, je faisais ± parti du staff puisque je participais à un atelier en parallèle du festival où on faisait de la création de jeux pour créer des animation sur le festival, sensibiliser à des thématiques citoyennes, tout ça, tout ça (c’est quand je bossais comme game designer… whatever…).
 
-Et donc nos journées c’était lever à 8h et dès 9h en atelier création de jeu jusqu’à 16h où on allait monter le matos pour le festoche qui commençait le WE, bouffe à 19h puis retour en atelier de 20h à 23h (en vrai 1h du mat’ facile). Puis ceux qui tenaient debout allait se finir au bar du festoche…
+Et donc nos journées c’était lever à 8h et dès 9h en atelier création de jeux jusqu’à 16h où on allait monter le matos pour le festoche qui commençait le WE, bouffe à 19h puis retour en atelier de 20h à 23h (en vrai 1h du mat’ facile). Puis ceux qui tenaient debout allait se finir au bar du festoche…
 
-Le vendredi soir le festival ouvre (donc gros festoche de zic, énorme teuf…) sauf que nous on doit finir nos animations/jeu pour que tout soit nickel pour le lendemain, donc on bosse comme des ânes jusqu’à pas d’heure… la tension monte dans le groupe… engueulade suivi de « mais tu sais que je le pense pas » suivi de câlin et ça repart…
+Le vendredi soir le festival ouvre (donc gros festoche de zic, énorme teuf…) sauf que nous on doit finir nos animations/jeux pour que tout soit nickel pour le lendemain, donc on bosse comme des ânes jusqu’à pas d’heure… la tension monte dans le groupe… engueulade suivi de « mais tu sais que je le pense pas » suivi de câlin et ça repart…
 
 Et une des nanas avec qui on bossait vient de s’engueuler avec son groupe et essaye un peu de prendre du recul, car elle est over crevée et tout… donc elle va s’assoir dans la grange ou on a notre réserve de matos (le festoche est dans un centre hippique).
 
@@ -35,7 +35,7 @@ Elle s’était bien bien fait piquée… et on était les seules personnes à p
 
 Donc j’envoie la pote un peu défoncée chercher l’équipe de secouriste du festoche et moi je me retrouve avec la nana…
 
-« Tu t’es fait piquer ou ?
+« Tu t’es fait piquer ou ?\\
 — Euh…\\
 — Comment ça “euh” ? Tu t’es fait… piquée… ou… ou… ? »
 
