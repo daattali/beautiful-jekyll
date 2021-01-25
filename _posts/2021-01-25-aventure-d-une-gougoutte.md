@@ -28,6 +28,7 @@ peut-être même traverser une partie de la couche terrestre sous marine* »
 ## Someone was wrong…
 
 ![](https://imgs.xkcd.com/comics/duty_calls.png){: width="100%" }
+*[Dessin de Randall Munroe](https://xkcd.com/386/) sous [licence CC BY-NC 2.5](http://creativecommons.org/licenses/by-nc/2.5/)*{: .small }
 
 #someoneiswrongotheinternet et j’ai voulu expliquer pourquoi… accrochez-vous au
 pinceau, j’enlève l’échelle. Et je vous préviens hier j’étais très, très, très
