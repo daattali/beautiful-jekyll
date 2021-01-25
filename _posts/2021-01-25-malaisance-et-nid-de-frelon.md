@@ -47,7 +47,7 @@ Eh bien sa réponse a été : « *Je suis contente d’avoir pensé à m’épil
 
 ![](https://media.giphy.com/media/Nm8ZPAGOwZUQM/giphy.gif){: width="100%" }
 
-Donc à en gros 2 cm de ~~sa teuch~~ sa culotte… évidemment à l’intérieur de la cuisse sinon ce n’est drôle.
+Donc à, en gros, 2 cm de ~~sa teuch~~ sa culotte… évidemment à l’intérieur de la cuisse sinon ce n’est pas drôle.
 
 ## Et là tout s’accélère encore
 
