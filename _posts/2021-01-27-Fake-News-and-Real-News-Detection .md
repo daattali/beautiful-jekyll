@@ -438,6 +438,652 @@ fig.write_html("/content/drive/MyDrive/Colab Notebooks/NLP/htmlfies/file1.html")
 
 
 
+```python
+temp=df.groupby('label').apply(lambda x:x['title'].count()).reset_index(name='Counts')
+#sub_tf_df.label.replace({0:'False',1:'True'},inplace=True)
+fig = px.bar(temp, x="label", y="Counts",
+             color='Counts', barmode='group',
+             title =  "Frequency of Real and Fake News Distribution",
+             height=400)
+
+fig.update_layout(
+    font_family="Courier New",
+    font_color="white",
+    title_font_family="Times New Roman",
+    title_font_color="white"
+   # legend_title_font_color="green"
+)
+fig.update_xaxes(title_font_family="Arial")
+fig.update_xaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.update_yaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.update_layout( template="plotly_dark")
+#fig =px.scatter(x=range(10), y=range(10))
+fig.write_html("/content/drive/MyDrive/Colab Notebooks/NLP/htmlfies/file2.html")
+fig.show()
+```
+
+
+<iframe src="/img/FakeNewsDetector/file2.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+
+#### Common Words in News  Fake News Title
+
+
+```python
+top = Counter([item for sublist in df[df.label == "Fake"]["title"] for item in sublist])
+temp = pd.DataFrame(top.most_common(20))
+temp.columns = ['Common_words','count']
+temp.style.background_gradient(cmap='Greens')
+```
+
+
+
+
+<style  type="text/css" >
+#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row0_col1{
+            background-color:  #00441b;
+            color:  #f1f1f1;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row1_col1{
+            background-color:  #006227;
+            color:  #f1f1f1;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row2_col1{
+            background-color:  #cfecc9;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row3_col1{
+            background-color:  #d7efd1;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row4_col1{
+            background-color:  #e1f3dc;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row5_col1,#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row6_col1{
+            background-color:  #f0f9ec;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row7_col1{
+            background-color:  #f2faf0;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row8_col1{
+            background-color:  #f4fbf1;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row9_col1,#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row10_col1,#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row11_col1,#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row12_col1{
+            background-color:  #f4fbf2;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row13_col1,#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row14_col1,#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row15_col1{
+            background-color:  #f5fbf2;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row16_col1{
+            background-color:  #f5fbf3;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row17_col1,#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row18_col1{
+            background-color:  #f6fcf4;
+            color:  #000000;
+        }#T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row19_col1{
+            background-color:  #f7fcf5;
+            color:  #000000;
+        }</style><table id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Common_words</th>        <th class="col_heading level0 col1" >count</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row0_col0" class="data row0 col0" >trump</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row0_col1" class="data row0 col1" >9350</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row1_col0" class="data row1 col0" >video</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row1_col1" class="data row1 col1" >8558</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row2_col0" class="data row2 col0" >obama</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row2_col1" class="data row2 col1" >2582</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row3" class="row_heading level0 row3" >3</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row3_col0" class="data row3 col0" >hillary</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row3_col1" class="data row3 col1" >2322</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row4" class="row_heading level0 row4" >4</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row4_col0" class="data row4 col0" >watch</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row4_col1" class="data row4 col1" >1941</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row5" class="row_heading level0 row5" >5</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row5_col0" class="data row5 col0" >clinton</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row5_col1" class="data row5 col1" >1175</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row6" class="row_heading level0 row6" >6</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row6_col0" class="data row6 col0" >president</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row6_col1" class="data row6 col1" >1165</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row7" class="row_heading level0 row7" >7</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row7_col0" class="data row7 col0" >black</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row7_col1" class="data row7 col1" >975</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row8" class="row_heading level0 row8" >8</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row8_col0" class="data row8 col0" >tweet</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row8_col1" class="data row8 col1" >936</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row9" class="row_heading level0 row9" >9</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row9_col0" class="data row9 col0" >white</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row9_col1" class="data row9 col1" >905</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row10" class="row_heading level0 row10" >10</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row10_col0" class="data row10 col0" >new</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row10_col1" class="data row10 col1" >905</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row11" class="row_heading level0 row11" >11</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row11_col0" class="data row11 col0" >breaking</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row11_col1" class="data row11 col1" >896</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row12" class="row_heading level0 row12" >12</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row12_col0" class="data row12 col0" >news</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row12_col1" class="data row12 col1" >883</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row13" class="row_heading level0 row13" >13</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row13_col0" class="data row13 col0" >republican</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row13_col1" class="data row13 col1" >867</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row14" class="row_heading level0 row14" >14</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row14_col0" class="data row14 col0" >donald</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row14_col1" class="data row14 col1" >848</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row15" class="row_heading level0 row15" >15</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row15_col0" class="data row15 col0" >muslim</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row15_col1" class="data row15 col1" >842</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row16" class="row_heading level0 row16" >16</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row16_col0" class="data row16 col0" >gop</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row16_col1" class="data row16 col1" >807</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row17" class="row_heading level0 row17" >17</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row17_col0" class="data row17 col0" >american</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row17_col1" class="data row17 col1" >772</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row18" class="row_heading level0 row18" >18</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row18_col0" class="data row18 col0" >democrat</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row18_col1" class="data row18 col1" >772</td>
+            </tr>
+            <tr>
+                        <th id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002level0_row19" class="row_heading level0 row19" >19</th>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row19_col0" class="data row19 col0" >america</td>
+                        <td id="T_0fab6bae_5f75_11eb_a08c_0242ac1c0002row19_col1" class="data row19 col1" >703</td>
+            </tr>
+    </tbody></table>
+
+
+
+
+```python
+fig = px.bar(temp, x="count", y="Common_words", title='Commmon Words in Fake News Titles', orientation='h', 
+             width=700, height=700,color='Common_words')
+fig.update_xaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.update_yaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.update_layout( template="plotly_white")
+fig.show()
+fig.write_html("/content/drive/MyDrive/Colab Notebooks/NLP/htmlfies/file3.html")
+```
+
+<iframe src="/img/FakeNewsDetector/file3.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+
+
+#### Common Words in News Real News Title
+
+
+```python
+top = Counter([item for sublist in df[df.label == "Real"]["title"] for item in sublist])
+temp = pd.DataFrame(top.most_common(20))
+temp.columns = ['Common_words','count']
+temp.style.background_gradient(cmap='Purples')
+
+```
+
+
+
+
+<style  type="text/css" >
+#T_1a299132_5f75_11eb_a08c_0242ac1c0002row0_col1{
+            background-color:  #3f007d;
+            color:  #f1f1f1;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row1_col1{
+            background-color:  #a3a0cb;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row2_col1{
+            background-color:  #e7e6f1;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row3_col1,#T_1a299132_5f75_11eb_a08c_0242ac1c0002row4_col1{
+            background-color:  #f4f3f8;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row5_col1{
+            background-color:  #f5f4f9;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row6_col1{
+            background-color:  #f6f4f9;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row7_col1{
+            background-color:  #f6f5f9;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row8_col1,#T_1a299132_5f75_11eb_a08c_0242ac1c0002row9_col1{
+            background-color:  #f8f6fa;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row10_col1{
+            background-color:  #f8f7fb;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row11_col1,#T_1a299132_5f75_11eb_a08c_0242ac1c0002row12_col1{
+            background-color:  #f9f7fb;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row13_col1,#T_1a299132_5f75_11eb_a08c_0242ac1c0002row14_col1,#T_1a299132_5f75_11eb_a08c_0242ac1c0002row15_col1,#T_1a299132_5f75_11eb_a08c_0242ac1c0002row16_col1,#T_1a299132_5f75_11eb_a08c_0242ac1c0002row17_col1{
+            background-color:  #fbfafc;
+            color:  #000000;
+        }#T_1a299132_5f75_11eb_a08c_0242ac1c0002row18_col1,#T_1a299132_5f75_11eb_a08c_0242ac1c0002row19_col1{
+            background-color:  #fcfbfd;
+            color:  #000000;
+        }</style><table id="T_1a299132_5f75_11eb_a08c_0242ac1c0002" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Common_words</th>        <th class="col_heading level0 col1" >count</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row0_col0" class="data row0 col0" >trump</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row0_col1" class="data row0 col1" >5567</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row1_col0" class="data row1 col0" >say</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row1_col1" class="data row1 col1" >2981</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row2_col0" class="data row2 col0" >house</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row2_col1" class="data row2 col1" >1452</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row3" class="row_heading level0 row3" >3</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row3_col0" class="data row3 col0" >russia</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row3_col1" class="data row3 col1" >977</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row4" class="row_heading level0 row4" >4</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row4_col0" class="data row4 col0" >republican</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row4_col1" class="data row4 col1" >976</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row5" class="row_heading level0 row5" >5</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row5_col0" class="data row5 col0" >north</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row5_col1" class="data row5 col1" >926</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row6" class="row_heading level0 row6" >6</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row6_col0" class="data row6 col0" >korea</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row6_col1" class="data row6 col1" >898</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row7" class="row_heading level0 row7" >7</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row7_col0" class="data row7 col0" >new</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row7_col1" class="data row7 col1" >875</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row8" class="row_heading level0 row8" >8</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row8_col0" class="data row8 col0" >state</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row8_col1" class="data row8 col1" >825</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row9" class="row_heading level0 row9" >9</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row9_col0" class="data row9 col0" >white</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row9_col1" class="data row9 col1" >818</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row10" class="row_heading level0 row10" >10</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row10_col0" class="data row10 col0" >china</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row10_col1" class="data row10 col1" >782</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row11" class="row_heading level0 row11" >11</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row11_col0" class="data row11 col0" >senate</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row11_col1" class="data row11 col1" >759</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row12" class="row_heading level0 row12" >12</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row12_col0" class="data row12 col0" >court</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row12_col1" class="data row12 col1" >753</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row13" class="row_heading level0 row13" >13</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row13_col0" class="data row13 col0" >tax</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row13_col1" class="data row13 col1" >666</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row14" class="row_heading level0 row14" >14</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row14_col0" class="data row14 col0" >obama</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row14_col1" class="data row14 col1" >665</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row15" class="row_heading level0 row15" >15</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row15_col0" class="data row15 col0" >clinton</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row15_col1" class="data row15 col1" >659</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row16" class="row_heading level0 row16" >16</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row16_col0" class="data row16 col0" >election</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row16_col1" class="data row16 col1" >656</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row17" class="row_heading level0 row17" >17</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row17_col0" class="data row17 col0" >vote</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row17_col1" class="data row17 col1" >640</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row18" class="row_heading level0 row18" >18</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row18_col0" class="data row18 col0" >talk</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row18_col1" class="data row18 col1" >597</td>
+            </tr>
+            <tr>
+                        <th id="T_1a299132_5f75_11eb_a08c_0242ac1c0002level0_row19" class="row_heading level0 row19" >19</th>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row19_col0" class="data row19 col0" >leader</td>
+                        <td id="T_1a299132_5f75_11eb_a08c_0242ac1c0002row19_col1" class="data row19 col1" >597</td>
+            </tr>
+    </tbody></table>
+
+
+
+
+```python
+fig = px.bar(temp, x="count", y="Common_words", title='Commmon Words in Real news Titles', orientation='h', 
+             width=700, height=700,color='Common_words')
+fig.update_xaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.update_yaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.update_layout( template="plotly_dark")
+fig.show()
+fig.write_html("/content/drive/MyDrive/Colab Notebooks/NLP/htmlfies/file4.html")
+```
+
+
+<iframe src="/img/FakeNewsDetector/file4.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+
+
+
+
+#### Which Subjects have received the most News Coverage?
+
+
+```python
+temp=df.groupby('subject').apply(lambda x:x['title'].count()).reset_index(name='Counts')
+fig=px.bar(temp,x='subject',y='Counts',color='Counts',title='Count of News Articles by Subject')
+fig.update_xaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.update_yaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.write_html("/content/drive/MyDrive/Colab Notebooks/NLP/htmlfies/file2.html")
+fig.update_layout( template="plotly_dark")
+fig.show()
+fig.write_html("/content/drive/MyDrive/Colab Notebooks/NLP/htmlfies/file5.html")
+```
+
+<iframe src="/img/FakeNewsDetector/file5.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+
+
+
+#### Exploring Co-occurring Words (Bigrams)
+Let's now explore certain words which occuur together in the tweets. Such words are called bigrams.A bigram or digram is a sequence of two adjacent elements from a string of tokens, which are typically letters, syllables, or words
+
+
+
+```python
+from nltk import bigrams,trigrams,ngrams
+# Create list of lists containing bigrams in tweets
+terms_bigram = [list(bigrams(text)) for text in df[df.label == "Real"]["text"]]
+
+# Flatten list of bigrams in clean tweets
+bigrams_all = list(itertools.chain(*terms_bigram))
+
+# Create counter of words in clean bigrams
+bigram_counts = collections.Counter(bigrams_all)
+
+bigram_df = pd.DataFrame(bigram_counts.most_common(20),
+                             columns=['bigram', 'count'])
+bigram_df.style.background_gradient(cmap='Purples')
+```
+
+
+
+
+<style  type="text/css" >
+#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row0_col1{
+            background-color:  #3f007d;
+            color:  #f1f1f1;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row1_col1{
+            background-color:  #62429c;
+            color:  #f1f1f1;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row2_col1{
+            background-color:  #827fbb;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row3_col1{
+            background-color:  #adabd2;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row4_col1{
+            background-color:  #bebfdd;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row5_col1{
+            background-color:  #c5c6e1;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row6_col1{
+            background-color:  #dbdbec;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row7_col1{
+            background-color:  #e4e3f0;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row8_col1,#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row9_col1{
+            background-color:  #f0eef5;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row10_col1{
+            background-color:  #f1f0f6;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row11_col1{
+            background-color:  #f3f1f7;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row12_col1{
+            background-color:  #f5f4f9;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row13_col1,#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row14_col1,#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row15_col1{
+            background-color:  #faf9fc;
+            color:  #000000;
+        }#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row16_col1,#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row17_col1,#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row18_col1,#T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row19_col1{
+            background-color:  #fcfbfd;
+            color:  #000000;
+        }</style><table id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >bigram</th>        <th class="col_heading level0 col1" >count</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row0_col0" class="data row0 col0" >('united', 'state')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row0_col1" class="data row0 col1" >12215</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row1_col0" class="data row1 col0" >('donald', 'trump')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row1_col1" class="data row1 col1" >10169</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row2_col0" class="data row2 col0" >('white', 'house')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row2_col1" class="data row2 col1" >8419</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row3" class="row_heading level0 row3" >3</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row3_col0" class="data row3 col0" >('washington', 'reuters')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row3_col1" class="data row3 col1" >6674</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row4" class="row_heading level0 row4" >4</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row4_col0" class="data row4 col0" >('president', 'donald')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row4_col1" class="data row4 col1" >5930</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row5" class="row_heading level0 row5" >5</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row5_col0" class="data row5 col0" >('north', 'korea')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row5_col1" class="data row5 col1" >5659</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row6" class="row_heading level0 row6" >6</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row6_col0" class="data row6 col0" >('new', 'york')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row6_col1" class="data row6 col1" >4740</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row7" class="row_heading level0 row7" >7</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row7_col0" class="data row7 col0" >('prime', 'minister')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row7_col1" class="data row7 col1" >4206</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row8" class="row_heading level0 row8" >8</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row8_col0" class="data row8 col0" >('told', 'reuters')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row8_col1" class="data row8 col1" >3496</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row9" class="row_heading level0 row9" >9</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row9_col0" class="data row9 col0" >('islamic', 'state')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row9_col1" class="data row9 col1" >3477</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row10" class="row_heading level0 row10" >10</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row10_col0" class="data row10 col0" >('barack', 'obama')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row10_col1" class="data row10 col1" >3344</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row11" class="row_heading level0 row11" >11</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row11_col0" class="data row11 col0" >('told', 'reporter')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row11_col1" class="data row11 col1" >3189</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row12" class="row_heading level0 row12" >12</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row12_col0" class="data row12 col0" >('president', 'barack')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row12_col1" class="data row12 col1" >2960</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row13" class="row_heading level0 row13" >13</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row13_col0" class="data row13 col0" >('hillary', 'clinton')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row13_col1" class="data row13 col1" >2499</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row14" class="row_heading level0 row14" >14</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row14_col0" class="data row14 col0" >('supreme', 'court')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row14_col1" class="data row14 col1" >2481</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row15" class="row_heading level0 row15" >15</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row15_col0" class="data row15 col0" >('trump', 'administration')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row15_col1" class="data row15 col1" >2477</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row16" class="row_heading level0 row16" >16</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row16_col0" class="data row16 col0" >('reuters', 'president')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row16_col1" class="data row16 col1" >2394</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row17" class="row_heading level0 row17" >17</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row17_col0" class="data row17 col0" >('year', 'old')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row17_col1" class="data row17 col1" >2334</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row18" class="row_heading level0 row18" >18</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row18_col0" class="data row18 col0" >('united', 'nation')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row18_col1" class="data row18 col1" >2322</td>
+            </tr>
+            <tr>
+                        <th id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002level0_row19" class="row_heading level0 row19" >19</th>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row19_col0" class="data row19 col0" >('secretary', 'state')</td>
+                        <td id="T_37bfc54a_5f75_11eb_a08c_0242ac1c0002row19_col1" class="data row19 col1" >2317</td>
+            </tr>
+    </tbody></table>
+
+
+
+
+```python
+#df = title_per.to_frame().round(1)
+fig.update_layout(
+    title_text="High Frequency Bigrams  in Real News",
+    # Add annotations in the center of the donut pies.
+    annotations=[dict(text='High Frequency ', x=0.5, y=0.5, font_size=14, showarrow=False)])
+fig = px.pie(bigram_df, values=bigram_df['count'].values, names= bigram_df.bigram, color_discrete_sequence=px.colors.sequential.YlGnBu,
+             title='High Frquency Bigrams for Real News')
+fig.update_traces(textposition='inside', textinfo='percent')
+fig.update_layout(
+   # autosize=False,
+    width=800,
+    height=800,
+   
+)
+fig.show()
+fig.write_html("/content/drive/MyDrive/Colab Notebooks/NLP/htmlfies/file6.html")
+```
+
+
+<iframe src="/img/FakeNewsDetector/file6.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### Classification of News as Real or Fake using Titles as Features
 
 
