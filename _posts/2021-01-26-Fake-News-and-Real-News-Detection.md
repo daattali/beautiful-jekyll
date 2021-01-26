@@ -480,7 +480,7 @@ if (outputEl) {{
 }}
 
                         })
-                };
+                }};
 
             </script>
         </div>
