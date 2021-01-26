@@ -20,6 +20,10 @@ navbar-links:
     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://github.com/yuuki76/yuuki76.github.io/"
   Accounts: "Accounts"
+  SAKUHIN
+    - Anime Movie: "Anime,Movie"
+    - Literature: "Literature"
+    - Game: "Game"
 
 # --- Logo --- #
 
@@ -47,6 +51,7 @@ social-network-links:
   #patreon: DeanAttali
   #youtube: c/daattali
   reddit: yuuki76
+  keybase: kris57
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
