@@ -1,0 +1,27 @@
+{%- comment -%}  Whole card clickable {%- endcomment -%}
+
+{%- comment -%} 600x200 header image {%- endcomment -%}
+{%- comment -%} Name of dealer (display name) {%- endcomment -%}
+{%- comment -%} [direct link] {%- endcomment -%}
+{%- comment -%} Little blurb {%- endcomment -%}
+
+{% assign dealer = include.dealer %}
+{% assign dealer_id = dealer.path | split:"/" | last | split:"." | first %}
+
+<div class="dealer-card">
+    <img class="dealer-banner" src="/assets/img/dealers/{{ dealer_id }}.jpg" {% if dealer.alt != "" %}alt="{{ dealer.alt }}"{% endif %} />    
+    
+    <div class="dealer-card-content">
+        <div class="dealer-name">
+            {{ dealer.display-name | default: dealer.name }}
+        </div>
+        <div class="dealer-blurb">
+            {{ dealer.content }}
+        </div>
+        <div class="dealer-website">
+            {{ dealer.website }}
+        </div>
+    </div>
+    
+    <a class="dealer-card-link" href="{{ dealer.website }}" target="_blank"></a>
+</div>

@@ -1,0 +1,15 @@
+---
+layout: page
+title: Dealers
+subtitle: Here are all of our dealers featured at this year's convention!
+css:
+    - "/assets/css/dealer-list.css"
+---
+
+{% assign dealers = site.dealers %}
+
+<div class="dealer-list-container">
+{% for dealer in dealers %}
+    {% include dealer-card.html dealer=dealer %}
+{% endfor %}
+</div>
