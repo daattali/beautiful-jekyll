@@ -1,3 +1,19 @@
+---
+layout: post
+title: Fake and Real News Detector
+subtitle:  Classification and Sentiment Analysis of Fake and Real News
+gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
+gh-badge: [star, fork, follow]
+tags: [Sentiment Analysis,Tokenization, Text Analysis,xgboost,Plotly express]
+---
+
+### Introduction
+
+Fake news include false news stories,disinformation and misinformation with the intent of misleading people. The proliferation of fake news in recent years poses great danger to the safety and security of many people around the world. Some people have acted on fake news to commit certain crimes which are unpardonable. The growth of the internet and social media around the world has helped to explode  the consumption of fake news and conspiracy theories around the world. Determining if a piece of news item is fake or real is not so obvious these days especially when the perpetrators create websites with similar names like well-known authentic  news outlets. In this post we will try to do in-depth exploratory analysis and comparison of real and fake new. We will look at negativity, positivity and neutrality in sentiments expressed in both fake and real news. We would end by demonstrating how we can predict whether a news item is fake or real with a classification model.
+
+The dataset for this analysis is located on kaggle. Find the link [here](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset).
+
+
 ```python
 #!pip install gensim # Gensim is an open-source library for unsupervised topic modeling and natural language processing
 ```
@@ -79,6 +95,7 @@ drive.mount('/content/drive')
 
     Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
     
+
 
 
 ```python
@@ -1056,7 +1073,7 @@ fig.write_html("/content/drive/MyDrive/Colab Notebooks/NLP/htmlfies/file6.html")
 <iframe src="/img/FakeNewsDetector/file6.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
-    height="500"
+    height="800"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
