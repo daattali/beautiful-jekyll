@@ -3,7 +3,7 @@ layout : post
 title : Running Tensorflow in a Jupyter Notebook using Singularity and Slurm on NYU HPC
 ---
 
-I have been trying to collect tasks I've had to do on the NYU HPC as a resource for others in the future. This post details on to install Tensorflow onto the NYU HPC, and run an interactive session in Jupyter with Tensorflow, all using Singularity containers. 
+I have been trying to collect tasks I've had to do on the NYU HPC as a resource for others in the future. This post covers how to install Tensorflow onto the NYU HPC, and run an interactive session in Jupyter with Tensorflow, all using Singularity containers. 
 
 I will refer to a jupyter notebook file and a slurm batch file in this section, you can find those the [__tensorflow_jupyter/__](https://github.com/ryanlstevens/nyu_hpc_helpers/tree/main/tensorflow_jupyter) folder. 
 
