@@ -2,6 +2,7 @@
 layout: post
 title: Route-finding with pathfinder-ui
 tags: [tech]
+comments: true
 ---
 
 I recently needed a list of all the routes that were being used in a Node.js/Express application. After some
