@@ -11,7 +11,7 @@ layout: post
 tags: [pas de bol, festival, insecte, malaisance]
 ---
 
-J’étais à un festival, je faisais ± parti du staff puisque je participais à un atelier en parallèle du festival où on faisait de la création de jeux pour créer des animation sur le festival, sensibiliser à des thématiques citoyennes, tout ça, tout ça (c’est quand je bossais comme game designer… whatever…).
+J’étais à un festival, je faisais ± parti du staff puisque je participais à un atelier en parallèle du festival où on faisait de la création de jeux pour créer des animations sur le festival, sensibiliser à des thématiques citoyennes, tout ça, tout ça (c’est quand je bossais comme game designer… whatever…).
 
 Et donc nos journées c’était lever à 8h et dès 9h en atelier création de jeux jusqu’à 16h où on allait monter le matos pour le festoche qui commençait le WE, bouffe à 19h puis retour en atelier de 20h à 23h (en vrai 1h du mat’ facile). Puis ceux qui tenaient debout allait se finir au bar du festoche…
 
@@ -39,7 +39,7 @@ Donc j’envoie la pote un peu défoncée chercher l’équipe de secouriste du 
 — Euh…\\
 — Comment ça “euh” ? Tu t’es fait… piquée… ou… ou… ? »
 
-Mon regard se porte sur ses jambes… ses jambes nue… car elle était en short… un très très court short. Appelons ça un poom poom short quoi ! Techniquement une boom boom salopette d’ailleurs. Mais passons…
+Mon regard se porte sur ses jambes… ses jambes nue… car elle était en short… un très très court short. Appelons ça un poom poom short quoi ! Techniquement une poom poom salopette d’ailleurs. Mais passons…
 
 Et où tu te fais piquer quand tu t’assoies ? Hein ? **Je vous le demande ?**
 
@@ -97,7 +97,7 @@ J’avais l’impression d’être John MacLane… rien n’allait bien
 
 Bon bah là, je me jette sur elle, car elle tombait, littéralement, dans les pommes :point_right: je la rattrape, la prend un peu dans mes bras et lui tapote la joue pour qu’elle reste réveillée…
 
-Et là l’orga du festival rentre dans la pièce… au courant de rien… il venait chercher du matos élec stocké ici. Visualisons la scène : un mec qui tient une nana dans les pommes en culotte bien à l’écart du festival…
+Et là l’orga du festival rentre dans la pièce… au courant de rien… il venait chercher du matos élec' stocké ici. Visualisons la scène : un mec qui tient une nana dans les pommes en culotte bien à l’écart du festival…
 
 Voilà
 
@@ -120,7 +120,7 @@ J’ai donc opté pour le purement factuel :
 
 Et malaise vagal c’est ce qui se passe quand une grosse quantité de venin passe dans le cœur d’un coup :point_right: chute ultra brutale de pression :point_right: malaise  (youpi :tada:)
 
-Le mec a bien évalué la situation, il m’a passé la pince en voyant la bestiole… il a aussi checké le pouls de la nana et essayé de lui demander comment ça allait. Elle a dit « *PYM est là, ça va aller* » :point_left: Bordel mais d’où venait cette assurance :disappointed_relieved: ???
+Le mec a bien évalué la situation, il m’a passé la pince en voyant la bestiole… il a aussi checké le pouls de la nana et essayé de lui demander comment ça allait. Elle a dit « *PYM est là, ça va aller* » :point_left: Bordel mais d’où venait cette assurance :disappointed_relieved: ???
 
 Mais la situation le mettait pas à l’aise, n’écoutant que son courage à deux mains, il a donc décidé… d’aller chercher les secours !
 
@@ -174,7 +174,7 @@ Quand les pompiers ont fini par arriver (1h après l’incident), en fait ils on
 
 Ah mais en plus elle est ultra timide et réservée. Bon, au moins, elle a profité de l’expérience… le lendemain à la soirée elle a trouvé le courage d’embrasser un mec pour la première fois… ce qu’elle m’a dit… en me remerciant de lui avoir donné du courage… #waitWhat :point_left: oui forcément après elle me parlait de tout…
 
-Rétrospectivement je me suis dit « Rhoo nan mais en plus la nana n’avait littéralement pas d’expérience “intime” avant la scène mais mais mais what the fuck ?! ». J’ai imaginé son niveau de gêne à elle et je me dis franchement que moi c’était rien
+Rétrospectivement je me suis dit « Rhoo nan mais en plus la nana n’avait littéralement pas d’expérience “intime” avant la scène mais… mais… mais what the fuck ?! ». J’ai imaginé son niveau de gêne à elle et je me dis franchement que moi c’était rien
 
 Apparemment elle m’a dit que ça avait pas été traumatisant, car j’avais été calme et sympa et pas ambigu du tout :point_left: mais qui voudrait être ambigu pendant un truc comme ça ???! Mais d’un coup les 2 baffes me semblaient plus rien du tout.
 
