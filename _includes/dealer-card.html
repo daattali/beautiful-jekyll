@@ -7,9 +7,10 @@
 
 {% assign dealer = include.dealer %}
 {% assign dealer_id = dealer.path | split:"/" | last | split:"." | first %}
+{% assign dealer_image = dealer.image-url | default: dealer_id %}
 
 <div class="dealer-card">
-    <img class="dealer-banner" src="/assets/img/dealers/{{ dealer_id }}.jpg" {% if dealer.alt != "" %}alt="{{ dealer.alt }}"{% endif %} />    
+    <img class="dealer-banner" src="/assets/img/dealers/{{ dealer_image }}.jpg" {% if dealer.alt != "" %}alt="{{ dealer.alt }}"{% endif %} />    
     
     <div class="dealer-card-content">
         <div class="dealer-name">
