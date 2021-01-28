@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Course
----
-_The Simplify Your Home Life: a course for busy moms_ is a six week online course.
+subtitle: ''
 
-**Round 2 coming February 1st. Signup below to get on the list!**
+---
+_The Simplify Your Home Life: a course for busy moms_ is a six week flexible online course - pace it at your own pace or go at the suggested pace.
+
+**Round 2 opening February 1st. Signup below!**
 
 ## Course Description
 
@@ -18,41 +20,40 @@ I'm not an expert, but I have life experience as a mom of four, and journeying a
 
 ### Setting the stage
 
-- Unit Discovering your priorities + values
-- Unit Habit
+* Unit Discovering your priorities + values
+* Unit Habit
 
 ### Decluttering
 
-- Unit General decluttering concepts
-- Unit Wardrobes/clothing
-- Unit Kids' stuff
-- Unit Maintenance decluttering
+* Unit General decluttering concepts
+* Unit Wardrobes/clothing
+* Unit Kids' stuff
+* Unit Maintenance decluttering
 
 ### Time management
 
-- Unit Finding extra time tips
-- Unit Sustainable, slow productivity
+* Unit Finding extra time tips
+* Unit Sustainable, slow productivity
 
 ### Planning
 
-- Unit Simplifying your to do list
-- Unit Planning strategies: autopilot/automate, loop planning
+* Unit Simplifying your to do list
+* Unit Planning strategies: autopilot/automate, loop planning
 
 ### Routines
 
-- Unit Daily routines
-- Unit Cleaning and tidying routines
+* Unit Daily routines
+* Unit Cleaning and tidying routines
 
 ### Goal setting + Mindset
 
 _What you will find in this course:_
 
-- NEW: a guidebook to go along with the course full of worksheets, journal prompts, resources, and more
-- Weekly posts
-- Weekly action steps
-- Weekly tips relating to the topics
+* NEW: a guidebook to go along with the course full of worksheets, journal prompts, resources, and more
+* Text, videos, images for each unit
+* Worksheets to go alongside many topics in the course so you can take action
 
-Go at your own pace, ask questions, learn alongside others. You’ll have access to this course afterwards forever too. PS you get access to any future updates of this course too!
+Go at your own pace or follow along with the suggested outline and ask questions in the community course group. I'm also an email or message away. You’ll have access to this course afterwards forever too. PS you get access to any future updates of this course too!
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
@@ -63,6 +64,8 @@ The course is a one time payment of $27USD or you can split into two payments. J
 > Simplify Your Home Life: a course for busy moms was an amazing experience! I loved the units; each was something that I needed to dig into more as I work to simplify my life and home. The layout for this course was perfect, giving time and space to work on each subject before moving on. I love that I can go back and work through the ones that are more challenging for my household. Kelly’s support and encouragement to tackle things one small bit at a time was just what I needed! I will definitely recommend this course to my friends who are looking to make changes in their lives to simplify. - Deanna
 
 > I have to say I love how simply laid out your course is! I love the units lay out and overall how great this has been . The printable sheets are so helpful I have my own little booklet of all of them now. - Terri
+
+> I really enjoyed Kelly’s course! I think it’s perfect for busy moms trying to find ways to organize their home, create systems and better routines! My favorite module was the time management lesson! But every module gives practical and easy to follow tools to better your home life! Such a great course! - Shelly
 
 ## About me
 
