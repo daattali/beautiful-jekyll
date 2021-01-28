@@ -6,23 +6,22 @@
 {%- comment -%} Little blurb {%- endcomment -%}
 
 {% assign dealer = include.dealer %}
-{% assign dealer_id = dealer.path | split:"/" | last | split:"." | first %}
-{% assign dealer_image = dealer.image-url | default: dealer_id %}
+{% assign dealer_image = dealer["image_name"] | default: dealer["display_name"] | append: '.jpg' %}
 
 <div class="dealer-card">
-    <img class="dealer-banner" src="/assets/img/dealers/{{ dealer_image }}.jpg" {% if dealer.alt != "" %}alt="{{ dealer.alt }}"{% endif %} />    
+    <img class="dealer-banner" src="/assets/img/dealers/{{ dealer_image }}" alt="{{ dealer["display_name"] }}" />    
     
     <div class="dealer-card-content">
         <div class="dealer-name">
-            {{ dealer.display-name | default: dealer.name }}
+            {{ dealer["display_name"] }}
         </div>
         <div class="dealer-blurb">
-            {{ dealer.content }}
+            {{ dealer["short_description"] }}
         </div>
         <div class="dealer-website">
-            {{ dealer.website }}
+            {{ dealer["website_link"] }}
         </div>
     </div>
     
-    <a class="dealer-card-link" href="{{ dealer.website }}" target="_blank"></a>
+    <a class="dealer-card-link" href="{{ dealer["website_link"] }}" target="_blank"></a>
 </div>
