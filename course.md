@@ -20,30 +20,30 @@ I'm not an expert, but I have life experience as a mom of four, and journeying a
 
 ### Setting the stage
 
-* Unit Discovering your priorities + values
-* Unit Habit
+* Discovering your priorities + values
+* Habits
 
 ### Decluttering
 
-* Unit General decluttering concepts
-* Unit Wardrobes/clothing
-* Unit Kids' stuff
-* Unit Maintenance decluttering
+* General decluttering concepts
+* Wardrobes/clothing
+* Kids' stuff
+* Maintenance decluttering
 
 ### Time management
 
-* Unit Finding extra time tips
-* Unit Sustainable, slow productivity
+* Finding extra time tips
+* Sustainable, slow productivity
 
 ### Planning
 
-* Unit Simplifying your to do list
-* Unit Planning strategies: autopilot/automate, loop planning
+* Simplifying your to do list
+* Planning strategies: autopilot/automate, loop planning
 
 ### Routines
 
-* Unit Daily routines
-* Unit Cleaning and tidying routines
+* Daily routines
+* Cleaning and tidying routines
 
 ### Goal setting + Mindset
 
