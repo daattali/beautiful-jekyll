@@ -119,17 +119,39 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
 
     <tr>
         <td class="pubimg" width="250" height="100">
-        <img src="../pics/panonet3db.jpg" img width="250" height="100">
+            <img src="../pics/panonet3db.jpg" img width="250" height="100">
         </td>
-        <td>PanoNet3D: Combining Semantic and Geometric Understanding for LiDARPoint Cloud Detection<br>
+        <td><a href="https://arxiv.org/pdf/2012.09418.pdf">PanoNet3D: Combining Semantic and Geometric Understanding for LiDARPoint Cloud Detection</a><br>
             <div class="pubauthor">
                 Xia Chen, Jianren Wang, David Held, Martial Hebert<br>
             </div>
+            <div id="bib20203dv" style="display:none">
+                    <blockquote>
+<pre>@inproceedings{xia20panonet3d,
+    author = "Chen, Xia 
+    and Wang, Jianren 
+    and Held, David 
+    and Hebert, Martial",
+    title = "PanoNet3D: Combining Semantic and Geometric Understanding for LiDARPoint Cloud Detection",
+    booktitle = "3DV",
+    year = "2020"
+}</pre>
+                    </blockquote>
+            </div>
+            <div id="abs20203dv" style="display:none">
+                <blockquote>
+                    Visual data in autonomous driving perception, such as camera image and LiDAR point cloud, can be interpreted as a mixture of two aspects: semantic feature and geometric structure. Semantics come from the appearance and context of objects to the sensor, while geometric structure is the actual 3D shape of point clouds. Most detectors on LiDAR point clouds focus only on analyzing the geometric structure of objects in real 3D space. Unlike previous works, we propose to learn both semantic feature and geometric structure via a unified multi-view framework. Our method exploits the nature of LiDAR scans -- 2D range images, and applies well-studied 2D convolutions to extract semantic features. By fusing semantic and geometric features, our method outperforms state-of-the-art approaches in all categories by a large margin. The methodology of combining semantic and geometric features provides a unique perspective of looking at the problems in real-world 3D point cloud detection.
+                </blockquote>
+            </div>
             <div class="pubjournal">International Conference on 3D Vision (3DV), 2020
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            <div style="font-size:small">
+                <a href="https://jianrenw.github.io/PanoNet3D/">[Project Page]</a>
+                <a href="https://github.com/stooloveu/Det3D">[Code]</a>
+                <a href="javascript:copy(div20203dv, bib20203dv)">[Bibtex]</a>
+                <a href="javascript:copy(div2020eccv, abs20203dv)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2012.09418.pdf">[PDF]</a>
+            </div>
+            <div id="div20203dv" class="pubInfo"></div>
             </div>
             <br>
         </td>
@@ -235,11 +257,33 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
             <div class="pubauthor">
                 Jianren Wang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
             </div>
+            <div id="bibjianren2020iros" style="display:none">
+                    <blockquote>
+<pre>@inproceedings{jianren20s3da,
+    author = "Wang, Jianren 
+    and Ancha, Siddharth 
+    and Chen, Yi-Ting 
+    and Held, David",
+    title = "Uncertainty-aware Self-supervised 3D Data Association",
+    booktitle = "IROS",
+    year = "2020"
+}</pre>
+                    </blockquote>
+            </div>
+            <div id="absjianren2020iros" style="display:none">
+                <blockquote>
+                    3D object trackers usually require training on large amounts of annotated data that is expensive and time-consuming to collect. Instead, we propose leveraging vast unlabeled datasets by self-supervised metric learning of 3D object trackers, with a focus on data association. Large scale annotations for unlabeled data are cheaply obtained by automatic object detection and association across frames. We show how these self-supervised annotations can be used in a principled manner to learn point-cloud embeddings that are effective for 3D tracking. We estimate and incorporate uncertainty in self-supervised tracking to learn more robust embeddings, without needing any labeled data. We design embeddings to differentiate objects across frames, and learn them using uncertainty-aware self-supervised training. Finally, we demonstrate their ability to perform accurate data association across frames, towards effective and accurate 3D tracking.
+                </blockquote>
+            </div>
             <div class="pubjournal">International Conference on Intelligent Robots and Systems (IROS), 2020
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            <div style="font-size:small">
+                <a href="https://jianrenw.github.io/Self-Supervised-3D-Data-Association/">[Project Page]</a>
+                <a href="https://github.com/jianrenw/Self-Supervised-3D-Data-Association">[Code]</a>
+                <a href="javascript:copy(divjianren2020iros, bibjianren2020iros)">[Bibtex]</a>
+                <a href="javascript:copy(divjianren2020iros, absjianren2020iros)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2008.08173v1.pdf">[PDF]</a>
+            </div>
+            <div id="divjianren2020iros" class="pubInfo"></div>
             </div>
             <br>
         </td>
@@ -269,11 +313,30 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
             <div class="pubauthor">
                 Xinshuo Weng, Jianren Wang, David Held, Kris Kitani<br>
             </div>
+            <div id="bibxinshuo2020iros" style="display:none">
+                    <blockquote>
+<pre>@article{Weng2020_AB3DMOT, 
+author = {Weng, Xinshuo and Wang, Jianren and Held, David and Kitani, Kris}, 
+journal = {IROS}, 
+title = {{3D Multi-Object Tracking: A Baseline and New Evaluation Metrics}}, 
+year = {2020} 
+}</pre>
+                    </blockquote>
+            </div>
+            <div id="absxinshuo2020iros" style="display:none">
+                <blockquote>
+                    3D multi-object tracking (MOT) is an essential component for many applications such as autonomous driving and assistive robotics. Recent work on 3D MOT focuses on developing accurate systems giving less attention to practical considerations such as computational cost and system complexity. In contrast, this work proposes a simple real-time 3D MOT system. Our system first obtains 3D detections from a LiDAR point cloud. Then, a straightforward combination of a 3D Kalman filter and the Hungarian algorithm is used for state estimation and data association. Additionally, 3D MOT datasets such as KITTI evaluate MOT methods in the 2D space and standardized 3D MOT evaluation tools are missing for a fair comparison of 3D MOT methods. Therefore, we propose a new 3D MOT evaluation tool along with three new metrics to comprehensively evaluate 3D MOT methods. We show that, although our system employs a combination of classical MOT modules, we achieve state-of-the-art 3D MOT performance on two 3D MOT benchmarks (KITTI and nuScenes). Surprisingly, although our system does not use any 2D data as inputs, we achieve competitive performance on the KITTI 2D MOT leaderboard. Our proposed system runs at a rate of 207.4 FPS on the KITTI dataset, achieving the fastest speed among all modern MOT systems.
+                </blockquote>
+            </div>
             <div class="pubjournal">International Conference on Intelligent Robots and Systems (IROS), 2020
-            <!--div style="font-size:small">
-                <a href="GOTURN/GOTURN.html">[Project Page]</a>
-                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
-                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            <div style="font-size:small">
+                <a href="http://www.xinshuoweng.com/projects/AB3DMOT/">[Project Page]</a>
+                <a href="https://github.com/xinshuoweng/AB3DMOT">[Code]</a>
+                <a href="javascript:copy(divxinshuo2020iros, bibxinshuo2020iros)">[Bibtex]</a>
+                <a href="javascript:copy(divxinshuo2020iros, absxinshuo2020iros)">[Abstract]</a>
+                <a href="http://www.xinshuoweng.com/projects/AB3DMOT/">[PDF]</a>
+            </div>
+            <div id="divxinshuo2020iros" class="pubInfo"></div>
             </div>
             <br>
         </td>
