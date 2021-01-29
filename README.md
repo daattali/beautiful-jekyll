@@ -1,5 +1,18 @@
 # Setup locally
 
+# Setup and develop on Linux (Recommended)
+
+1. Clone the GitHub repo by `git clone git@github.com:r-pad/r-pad.github.io.git`. 
+1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`. 
+1. Change the working directory to the `r-pad.github.io` folder. 
+1. Run `bundle clean` to clean up the directory (no need to run `--force`). 
+1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+1. Run `bundle exec jekyll serve -P 4000 -l --livereload-port 8080` to generate the HTML and serve it from `localhost:4000`. 
+
+More documentations can be found [here](https://jekyllrb.com/docs/). 
+
+# Setup on Windows
+
 If the following command does not Network in Windows PowerShell
 ```
 docker run -d -p 4000:4000 -p 25003:25003 --name beautiful-jekyll -v "$PWD:/srv/jekyll" beautiful-jekyll
