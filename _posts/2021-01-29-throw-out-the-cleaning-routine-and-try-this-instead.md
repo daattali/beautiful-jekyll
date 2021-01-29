@@ -72,11 +72,10 @@ _If you like the sounds of a master cleaning task list and want to try it out fo
 
 [One Daily Tidying Routine that will Save You Time and Money](https://www.simplehomemom.com/one-daily-tidying-routine-that-will-save-you-money-and-time/)
 
-Check out some of my other friends and their home tips and tricks:
+**Check out some of my other friends and their home tips and tricks:**
 
 * The Patient Mom | [Blog](https://thepatientmom.com/) | [Instagram](https://www.instagram.com/the_patientmom/)
 * Mama Bear Wooten | [Blog](http://www.mamabearwooten.com/) | [Instagram](http://www.instagram.com/mama_bear_wooten)
 * Peace Love Military | [Blog](http://peace-love-military.com/)| [Instagram](http://www.instagram.com/peace_love_military)
-* The Simple Home Mom | [Blog](https://www.simplehomemom.com/) | [Instagram](http://instagram.com/simplehomemom)
 * Style Simpler| [Blog](http://www.stylesimpler.com/) | [Instagram](http://www.instagram.com/stylesimpler)
 * Alex Is A Mom | [Blog](http://alexisamom.com/) | [Instagram](http://instagram.com/alexisamomdotcom)
