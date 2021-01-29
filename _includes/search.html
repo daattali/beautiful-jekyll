@@ -1,0 +1,44 @@
+{% if site.post_search %}
+
+  <input type="text" id="search-input" placeholder="Search">
+  <p style="margin: 0.5rem 0"/>
+  <ul id="results-container"></ul>
+
+  <style>
+    #search-input {
+      width: 25%;
+      background-color: #ffffff00;
+      border: none;
+      text-align: center;
+      border-bottom: 1px solid #00000030;
+      margin: auto;
+      display: block;
+      transition: width 1s ease;
+    }
+    .page-dark-mode #search-input {
+      color: inherit;
+      border-bottom: 1px solid #ffffff15;
+    }
+
+    #search-input:focus {
+      outline: none; /* remove opera's onfocus outline */
+      width: 75%;
+    }
+
+
+    #results-container {
+      list-style: none;
+      padding-left: unset;
+    }
+  </style>
+
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script type="text/javascript">
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '{{ site.baseurl }}/search.json'
+    });
+  </script>
+
+{% endif %}

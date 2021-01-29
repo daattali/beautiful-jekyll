@@ -4,6 +4,8 @@ layout: page
 
 {{ content }}
 
+{% include search.html %}
+
 {% assign posts = paginator.posts | default: site.posts %}
 
 <div class="posts-list">

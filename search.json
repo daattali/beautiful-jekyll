@@ -1,0 +1,13 @@
+---
+layout: none
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{% if post.title != "" %}{{ post.title | escape }}{% else %}{{ post.excerpt | strip_html |  escape | strip }}{%endif%}",
+      "category" : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | date: "%B %e, %Y" }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
