@@ -10,6 +10,8 @@ css:
 
 <div class="dealer-list-container">
 {% for dealer in dealers %}
-    {% include dealer-card.html dealer=dealer %}
+    <div class="dealer-card-container">
+        {% include dealer-card.html dealer=dealer %}
+    </div>
 {% endfor %}
 </div>
