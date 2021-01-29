@@ -57,6 +57,8 @@ Go at your own pace or follow along with the suggested outline and ask questions
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
+#### Pricing
+
 The course is a one time payment of $27USD or you can split into two payments. Just send me an email at [simplehomemom@gmail.com](mailto:simplehomemom@gmail.com) to chat about that before payment.
 
 ## Reviews
