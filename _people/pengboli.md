@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Eda Gjergo
+title: Pengbo Li
 subtitle: PhD Student
 permalink: "pengboli"
 excerpt: "Joined during Fall 2019."

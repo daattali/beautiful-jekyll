@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Wang Wei
+title: Wei Wang
 subtitle: Professor
 permalink: "wangwei"
 excerpt: "Joined in [...]"
@@ -11,7 +11,7 @@ bigimg:	# /path/to/img - or multiple entries <- "Path": "Description">
   - "/assets/img/astroWHUheader.jpg" : "Photo by Xiaoming Jiang (蒋效铭)"
 #cover-img: /assets/img/astroWHUheader.jpg
 category: people
-tags: [About, Wang-Wei]
+tags: [About, Wei-Wang]
 googlefonts: ["Share+Tech+Mono"]
 comments: true
 # custom page vars
