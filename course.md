@@ -14,7 +14,7 @@ This is NOT a one size fits all course. It’s also not a one-time solution cour
 
 I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the Simplify Your Home Life: a course for busy moms. I’m so happy to have you here to check this course out to see if it would be good for you!
 
-![An image of the course](/uploads/20201118_113322_0000_compress56.jpg "courseimage ")
+![A picture of the course name with a wreath around it.](/uploads/143711566_168124874776024_169296773630613994_n.jpg "Simplify Your Home Life: a Course for Busy Moms.")
 
 ## Overview of the units
 
