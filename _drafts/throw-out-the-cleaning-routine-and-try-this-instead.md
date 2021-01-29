@@ -8,7 +8,7 @@ tags:
 - cleaning task list
 - cleaning task printable
 - simple cleaning routines
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/throw-out-the-cleaning-routine-and-try-this-instead.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
@@ -56,11 +56,13 @@ And, that's it! We do have some daily essential cleaning like dishes and laundry
 
 So maybe throwing out the cleaning routine would work for you too. It's worth a shot, right? I personally like having a few methods up my sleeve to use during those different seasons or days that require different things. So in the end? Do what works for you and your family. And maybe try throwing out the cleaning routine and try a master task list instead, using your top priorities every day. I use three, but you can do what works for you. Happy cleaning!
 
-##### Create your own master cleaning task list with a free printable
+# Create your own master cleaning task list with a free printable
 
 _If you like the sounds of a master cleaning task list and want to try it out for yourself, I created a simple blank master cleaning task list printable for you to fill in. You can download it_ [_here_](https://mailchi.mp/b99d58a9c22d/master-cleaning-task-list)_. And if you'd like to simplify your home even more, my course - Simplify Your Home Life: a course for busy moms is open. You can take a look at that_ [_here_](www.simplehomemom.com/course)_._
 
-You may like these past blogs too:
+![Cleaning supplies on a table with gloves.](/uploads/throw-out-the-cleaning-routine-and-try-this-instead.jpg "Throw Out The Cleaning Routine and Try This Instead SHM")
+
+**You may like these past blogs too:**
 
 [How to Design a Simple Cleaning Routine](https://www.simplehomemom.com/how-to-design-a-simple-cleaning-routine/)
 
@@ -69,3 +71,17 @@ You may like these past blogs too:
 [Our Current Laundry Routine that Has Taken the Stress Off of Laundry](https://www.simplehomemom.com/our-current-laundry-routine-that-has-taken-the-stress-off-of-laundry/)
 
 [One Daily Tidying Routine that will Save You Time and Money](https://www.simplehomemom.com/one-daily-tidying-routine-that-will-save-you-money-and-time/)
+
+Check out some of my other friends and their home tips and tricks:
+
+The Patient Mom | [Blog](https://thepatientmom.com/) | [Instagram](https://www.instagram.com/the_patientmom/)
+
+Mama Bear Wooten | [Blog](http://www.mamabearwooten.com/) | [Instagram](http://www.instagram.com/mama_bear_wooten)
+
+Peace Love Military | [Blog](http://peace-love-military.com/)| [Instagram](http://www.instagram.com/peace_love_military)
+
+The Simple Home Mom | [Blog](https://www.simplehomemom.com/) | [Instagram](http://instagram.com/simplehomemom)
+
+Style Simpler| [Blog](http://www.stylesimpler.com/) | [Instagram](http://www.instagram.com/stylesimpler)
+
+Alex Is A Mom | [Blog](http://alexisamom.com/) | [Instagram](http://instagram.com/alexisamomdotcom)
