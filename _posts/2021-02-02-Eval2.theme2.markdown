@@ -12,5 +12,5 @@ Voici l'image dont vous aurez besoin pour cette évaluation.
 
 
 <center>
-	      <img class="avatar-img" src="/erro.JPG" />
+	      <img class="avatar-img" src="/erro.jpg" />
 </center>
