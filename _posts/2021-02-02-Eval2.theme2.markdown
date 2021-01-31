@@ -1,0 +1,16 @@
+---
+layout: post
+title: 'SNT : évaluation EXIF'
+published: false
+---
+
+
+
+Voici l'image dont vous aurez besoin pour cette évaluation.
+
+
+
+
+<center>
+	      <img class="avatar-img" src="/erro.JPG" />
+</center>
