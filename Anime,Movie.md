@@ -62,6 +62,8 @@
 
 - Re:CREATORS (後半は微妙)
 
+- GOSICK
+
 ### 良作
 
 - 桜Trick
