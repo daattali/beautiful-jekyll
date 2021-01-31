@@ -6,12 +6,11 @@ subtitle: ''
 ---
 ## Quick links
 
-* [How This One Quote Can Help Simplify Your Homeschool Life + Simplify Your Homeschool Life Online Session](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
 * [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 * Canadian online homeschooling conference affiliate link - signup [here](https://canadianhomeschoolconference.com/aff/42/) (my session is live on Feb. 3rd: **Simplify your Homeschool Life**)
 * **Just released:** [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * Join the [weekly newsletter](http://eepurl.com/gYFb-r) +get access to the freebie vault
-* **SIMPLIFY YOUR HOME COURSE!** Get on the list for the new round coming February 1st (email me at simplehomemom@gmail.com if you'd like to get on the waitlist or click here): [_Simplify Your Home Life: a course for busy moms_](http://kellymbriggs.github.io/course)
+* **SIMPLIFY YOUR HOME COURSE!** click here: [_Simplify Your Home Life: a course for busy moms_](http://kellymbriggs.github.io/course)
 * [Latest blogs](http://kellymbriggs.github.io/)
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
 
