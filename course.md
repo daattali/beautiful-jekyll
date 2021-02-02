@@ -6,13 +6,13 @@ subtitle: ''
 ---
 _The Simplify Your Home Life: a course for busy moms_ is a six week flexible online course - pace it at your own pace or go at the suggested pace.
 
-**Round 2 opening February 1st. Signup below!**
+#### **Round 2 is OPEN now. Signup below!**
 
 ## Course Description
 
 This is NOT a one size fits all course. It’s also not a one-time solution course as I believe that life is a LIFELONG process of learning and growing. I will promise you, however, that this course will be packed with things you can learn and grow with today and going forward. There will be some things that stick and make you think, some things that may not apply, but you’ll still be able to learn from them.
 
-I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the Simplify Your Home Life: a course for busy moms. I’m so happy to have you here to check this course out to see if it would be good for you! 
+I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the Simplify Your Home Life: a course for busy moms. I’m so happy to have you here to check this course out to see if it would be good for you!
 
 ![A picture of the course name with a wreath around it.](/uploads/143711566_168124874776024_169296773630613994_n.jpg "Simplify Your Home Life: a Course for Busy Moms.")
 
@@ -68,6 +68,8 @@ The course is a one time payment of $27USD or you can split into two payments. J
 > I have to say I love how simply laid out your course is! I love the units lay out and overall how great this has been . The printable sheets are so helpful I have my own little booklet of all of them now. - Terri
 
 > I really enjoyed Kelly’s course! I think it’s perfect for busy moms trying to find ways to organize their home, create systems and better routines! My favorite module was the time management lesson! But every module gives practical and easy to follow tools to better your home life! Such a great course! - Shelly
+
+> Kelly’s course is truly amazing and life changing. She teaches you how to simplify your busy mom life and I love that I can work at my own pace. It’s not rushed at all. You get to be part of a community of other moms on the same journey as you are and working on the same steps! If anyone could guide you to living slow Kelly is definitely it! She’s also the mama that has helped me so much in simplifying our homeschool too and I can’t thank her enough! - Jessica
 
 ## About me
 
