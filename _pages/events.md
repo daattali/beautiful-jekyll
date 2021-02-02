@@ -1,6 +1,6 @@
 ---
 title: "DSSE->Events"
-layout: events 
+layout: default 
 excerpt: "DSSE -- Events."
 sitemap: false 
 permalink: /events/
@@ -43,7 +43,15 @@ permalink: /events/
   <em>{{ event.authors }} </em><br/>
   {{ event.booktitle }} <b>[{{event.year}}]</b> <br>
   <a href="{{ event.register_link }}" target="_blank">Register</a>
-  {% if event.detail_page %} | <a href="{{ event.detail_page }}" >Detail</a> {% endif %} {% if event.pdf and event.doi %} | {% endif %}  
+  {% if event.detail_page %} | 
+    {% for page in site.posts %} {% if page.path contains '/event/' %} <a href="{{ page.url | absolute_url }}" target="_blank">detail</a>
+
+        {% if page.url == event.detail_page %}[Detail]({{ page.url }}){% endif %}
+     {% endif %} 
+
+    {% endfor %}
+  {% endif %} 
+  {% if event.pdf and event.doi %} | {% endif %}  
   {% if event.pdf %} <a href="{{ event.pdf }}" target="_blank">Paper PDF</a> {% endif %} {% if event.pdf and event.doi %} | {% endif %} {% if event.doi %} <a href="{{ event.doi }}" target="_blank">DOI</a> {% endif %} {% if event.pdf and event.code_link %} | {% endif %}  {% if event.code_link %} <a href="{{ event.code_link }}" target="_blank">Code</a> {% endif %}
   </p>
 </div>
