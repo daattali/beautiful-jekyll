@@ -4,7 +4,8 @@ title: Proposals
 subtitle: For MDS Capstone Projects
 ---
 
-## Capstone Project Proposals for Spring 2021 are now open!
+>Capstone Project Proposals for Spring 2021 are now closed. The opening for Spring 2022 will be in September - watch this space.
+
 
 Partners may choose to submit a capstone project(s) to the [MDS Vancouver](https://ubc-mds.github.io/about/) program (general data science) and/or the [MDS Computational Linguistics](https://ubc-mds-cl.github.io/about) program (language-related data science). If you're unsure about which program to submit your project to, read more [here](#should-i-submit-my-proposal-to-mds-vancouver-or-mds-computational-linguistics).
 

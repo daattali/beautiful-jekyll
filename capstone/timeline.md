@@ -14,7 +14,7 @@ This year's capstone course will run __May - June, 2021__ (~8 weeks).
 | [Suggested initial submission of proposal](#proposal-revision-process)                         | November 15, 2020     |
 | [Proposal deadline](#proposal-revision-process)                                                | December 15, 2020     |
 | [Selection of proposals](#selection-of-proposals)                                              | January 15, 2021      |
-| [Capstone fair](#capstone-fair)                                                                | February, 2021        |
+| [Capstone fair](#capstone-fair)                                                                | February 11-12, 2021  |
 | [Partners declare project legalities](https://ubc-mds.github.io/capstone/proposal/#legal-info) | February, 2021        |
 | [Students rate the projects](#students-rate-the-projects)                                      | February, 2021        |
 | [Partners are notified of our decisions](#partners-are-notified-of-our-decisions)              | March 1, 2021         |
