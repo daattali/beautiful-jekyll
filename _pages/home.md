@@ -55,7 +55,7 @@ permalink: /
 <p align="justify">
 Our work has been published in **major conferences, journals and workshops** in the areas of software engineering (ICSE, ICSME, APSEC, ENASE, SANER, SEKE).
 <br><br>
-<b>We are grateful to</b> [IIT University of Dhaka](http://www.iit.du.ac.bd/), [ICT Division](https://ictd.gov.bd/), [ Ministry of Posts, Telecommunications and Information Technology](https://ptd.gov.bd/), [UGC](http://www.ugc.gov.bd/) and [BdREN](https://www.bdren.net.bd/) for funding our research projets.
+<b>We are grateful to</b> [IIT University of Dhaka](http://www.iit.du.ac.bd/), [ICT Division](https://ictd.gov.bd/), [ Ministry of Posts, Telecommunications and Information Technology](https://ptd.gov.bd/), [UGC](http://www.ugc.gov.bd/) and [BdREN](https://www.bdren.net.bd/) for funding our research projects.
 <br><br>
 <b>We love to collaborate</b> with the software industries and we establish an industry-academia collaboration. We partnered with many renowned software firms like 
 <a href="https://selise.ch/"  target="_blank"> SELISE rockin' software</a>, <a href="https://brainstation-23.com/"  target="_blank"> Brain Station 23 </a>, <a href="https://research.samsung.com/srbd"  target="_blank"> Samsung R&D Institute Bangladesh (SRBD)</a>, and so on. 
