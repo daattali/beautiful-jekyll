@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Free Resources
+title: Freebies
 subtitle: ''
-published: false
 
 ---
 This is a small sample of the free resources you'll gain access to by being apart of my biweekly (currently) mail list:
