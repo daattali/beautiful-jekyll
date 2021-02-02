@@ -1,6 +1,6 @@
 ---
 created: 2021-02-02T10:25:00+05:30
-modified: 2021-02-02T10:25:10+05:30
+modified: 2021-02-02T10:59:43+05:30
 ---
 
 # reading list
@@ -16,3 +16,11 @@ Are Prisons Obselete? by Angela Davis (classic short text on prison abolition, h
 Rise of the Warrior Cop by Radley Balko (examines how in the last decades the cop has become so deeply militarized, examines some of these massive militarized budgets we see)
 
 The Divide by Matt Tiabbi (explores the impact of income inequality in the justice system, and how the system is harsher to the lower classes and criminalizes poverty)
+
+The discovery of India by JL Nehru. It's important to read this because you can understand the perspective of one of the architects of modern India as a democratic state.
+
+ 2. Everybody loves a good drought by P Sainath. This is essential to understanding how the Indian government tries (and often fails) to serve its citizens.
+
+ 3. Choices: Inside the Making of Indian Foreign Policy by Shivshankar Menon. This is essential to understanding how India see its place in the world and how decisions are made. 
+
+ 4. The Argumentative Indian: Writings on Indian History, Culture and Identity by Amartya Sen
