@@ -1,9 +1,12 @@
 ---
 created: 2021-02-02T10:25:00+05:30
-modified: 2021-02-02T10:59:43+05:30
+modified: 2021-02-03T01:07:36+05:30
 ---
 
 # reading list
+
+The anatomy of prejudices
+Book by Elisabeth Young-Bruehl
 
 The New Jim Crow by Michelle Alexander (the makings of modern post-1960s mass incarceration, including the profound racial inequalities)
 
