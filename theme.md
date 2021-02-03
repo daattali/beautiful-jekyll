@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Theme
-subtitle: Information about the Roaring 2.0s
+subtitle: Information about the Roaring 2.0s and convention game!
 ---
 
 # Welcome to Fur Squared 2021, con-goers and fuzzies of myriad types abound\!
