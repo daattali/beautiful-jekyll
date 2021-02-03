@@ -15,11 +15,12 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ site.url }}{{ site.baseurl }}/" style="color: lightgray;">Home</a></li>
-				<li><a href="{{ site.url }}{{ site.baseurl }}/members" style="color: lightgray;">People</a></li>
+<!--                 <li><a href="{{ site.url }}{{ site.baseurl }}/" style="color: lightgray;">Home</a></li>
+ -->				<li><a href="{{ site.url }}{{ site.baseurl }}/members" style="color: lightgray;">People</a></li>
                 <li><a href="{{ site.url }}{{ site.baseurl }}/publications" style="color: lightgray;">Publications</a></li>
                 <li><a href="{{ site.url }}{{ site.baseurl }}/research" style="color: lightgray;">Research</a></li>
                 <li><a href="{{ site.url }}{{ site.baseurl }}/posts" style="color: lightgray;">Posts</a></li>
+                <li><a href="{{ site.url }}{{ site.baseurl }}/events" style="color: lightgray;">Events</a></li>
                 <li><a href="{{ site.url }}{{ site.baseurl }}/photos" style="color: lightgray;">Photos</a></li>
                 <li><a href="https://github.com/orgs/DSSE/" target="_blank" style="color: lightgray;">GitHub</a></li>
             </ul>
@@ -27,7 +28,30 @@
     </div>
 </div>
 <style>
-
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:70%;
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:10px;   /* Height of the footer */
+}
+#footer {
+   position:relative;
+   bottom:0;
+   width:100%;
+   background:#6cf;
+}
     @media (max-width: 420px) {
         .navbar-brand {
             float: left;
