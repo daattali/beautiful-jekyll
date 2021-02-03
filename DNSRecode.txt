@@ -1,0 +1,86 @@
+;;
+;; Domain:     kris.fail.
+;; Exported:   2021-02-03 07:17:55
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+kris.fail.	3600	IN	SOA	kris.fail. root.kris.fail. 2036400327 7200 3600 86400 3600
+
+;; A Records
+home.kris.fail.	1	IN	A	36.14.5.168
+kris.fail.	1	IN	A	185.199.109.153
+kris.fail.	1	IN	A	185.199.111.153
+kris.fail.	1	IN	A	185.199.110.153
+kris.fail.	1	IN	A	185.199.108.153
+tls.kris.fail.	1	IN	A	35.232.7.98
+
+;; CNAME Records
+archive.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+blog.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+cdn.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+d245effc-de33-4f0d-98f0-9f621a974b2a.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+d442da2f-4195-4cbe-81db-8d641edc1a0a.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+e8329d06-2d34-4a24-a0dd-9599bd700790.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+email.mailgun.kris.fail.	1	IN	CNAME	mailgun.org.
+gan1.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+gan2.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+gh.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+honey.kris.fail.	1	IN	CNAME	blog.kris.fail.
+i.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+libre-ja.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+netlify.kris.fail.	1	IN	CNAME	yuuki76.netlify.app.
+project.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+test.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+vercel-testing.kris.fail.	1	IN	CNAME	cname.vercel-dns.com.
+www.kris.fail.	1	IN	CNAME	kris.fail.
+xn--u8j2a3bc50akbr54aohpf0919ax75a1ocx86n.kris.fail.	1	IN	CNAME	yuuki76.github.io.
+
+;; MX Records
+kris.fail.	1	IN	MX	50 mx3.zoho.com.
+kris.fail.	1	IN	MX	20 mx2.zoho.com.
+kris.fail.	1	IN	MX	10 mx.zoho.com.
+
+;; NS Records
+kris.kris.fail.	1	IN	NS	ns104.cloudns.net.
+kris.kris.fail.	1	IN	NS	ns103.cloudns.net.
+kris.kris.fail.	1	IN	NS	ns102.cloudns.net.
+kris.kris.fail.	1	IN	NS	ns101.cloudns.net.
+nigger1.kris.fail.	1	IN	NS	ns2.epizy.com.
+nigger1.kris.fail.	1	IN	NS	ns1.epizy.com.
+
+;; SPF Records
+kris.fail.	1	IN	SPF	"v=spf1 include:zoho.com ~all"
+
+;; TXT Records
+_acme-challenge.kris.fail.	1	IN	TXT	"vCW6D_nHGhvNIzma7BLMLv02Jn8gx9eMWZBnl238sEk"
+_acme-challenge.kris.fail.	1	IN	TXT	"t97LZu04x1ZifaSXZejHtc3llGh47uVWkQQcV2ECG30"
+_acme-challenge.netlify.kris.fail.	1	IN	TXT	"aW153wODZO3_6WcF_HZVvWTNecMYc0Z005Ygejej17I"
+blog.kris.fail.	1	IN	TXT	"keybase-site-verification=XWE2bQwBKCCf2RSyu-F3MwBsEWU-uvr6r-npDcOhLnY"
+index._dnshosting.kris.fail.	1	IN	TXT	"<head>DNS BROWSER TEST</head><p>THIS IS DNS BROWSER TEST.</p>"
+kris.fail.	1	IN	TXT	"hab938551a5af4809b06c3322ecea54c4"
+kris.fail.	1	IN	TXT	"minisign public key RWQHEHnJILl93Aeq894MVwZdb5TuGJ1tg9uEfOWZy96bUEoYMssXmeYp"
+kris.fail.	1	IN	TXT	"google-site-verification=MGZXpxx_-38rfQbp6_TB9m5Vu6Lrp7v7VP5W82lwgS0"
+kris.fail.	1	IN	TXT	"v=spf1 include:zoho.com ~all"
+kris.fail.	120	IN	TXT	"zoho-verification=zb75697645.zmverify.zoho.com"
+kris.fail.	1	IN	TXT	"keybase-site-verification=z2F8kyPYJNBhXCnJ5oU2Eh9p0C2Rb9LP1Eg_x-4EMcY"
+zoho._domainkey.kris.fail.	1	IN	TXT	"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBe+6m9ivDMTCdY/F9WwhiabCj57bU0ZW1H/bHqL0G/g/agWk/iOodEyDHMBSKlbZC/U6NO9Yxd+hsXBRwsc+LEVIQjmMpQATWNN0dLDsqrAGHxrPNhrj5w62oEgePNYnnrBTfhpUpEZ457gafobqasA0m7Qsbszkod/wUmkyADQIDAQAB"
