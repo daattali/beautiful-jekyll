@@ -306,7 +306,17 @@
   number_educ: 3
   education1: MSc University College London (UCL)
   education2: MSc University of Dhaka
-  education3: BSc University of Dhaka   
+  education3: BSc University of Dhaka  
+
+- name: Ali Zafar Sadiq
+  photo: dummy_male_dp.png
+  current_position: ...
+  current_organization: ...
+  email: iit.du.ac.bd
+  homepage: ...
+  number_educ: 2
+  education1: MSc University of Dhaka
+  education2: BSc University of Dhaka   
 
 - name: This could be You!!
   photo: dummy_male_dp.png
