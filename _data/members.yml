@@ -309,7 +309,7 @@
   education3: BSc University of Dhaka  
 
 - name: Ali Zafar Sadiq
-  photo: dummy_male_dp.png
+  photo: ali-zafar-sadiq.jpeg
   current_position: Lecturer 
   current_organization: Northern University Bangladesh (NUB)
   email: bsse0603@iit.du.ac.bd
@@ -319,7 +319,7 @@
   education2: BSc University of Dhaka 
 
 - name: Md. Jubair Ibna Mostafa 
-  photo: dummy_male_dp.png
+  photo: md-jubair-ibna-mostafa.jpeg
   current_position: Lecturer 
   current_organization: Islamic University of Technology
   email: jubair0614@gmail.com
@@ -329,7 +329,7 @@
   education2: BSc University of Dhaka  
 
 - name: Moumita Asad 
-  photo: dummy_female_dp.png
+  photo: moumita-asad.jpeg
   current_position: Lecturer
   current_organization: Independent University, Bangladesh (IUB)
   email: bsse0731@iit.du.ac.bd
@@ -339,7 +339,7 @@
   education2: BSc University of Dhaka
 
 - name: Fatiul Huq Sujoy 
-  photo: dummy_male_dp.png
+  photo: fatiul-huq-sujoy.jpeg
   current_position: ...
   current_organization: ...
   email: bsse0732@iit.du.ac.bd
@@ -349,17 +349,16 @@
   education2: BSc, IIT, University of Dhaka 
 
 - name: Toukir Ahammed 
-  photo: dummy_male_dp.png
-  current_position: ...
-  current_organization: ...
+  photo: toukir-ahammed.jpeg
+  current_position: MSSE Student
+  current_organization: IIT, University of Dhaka
   email: bsse806@iit.du.ac.bd
   homepage: ...
-  number_educ: 2
-  education1: MSSE Student, IIT, University of Dhaka
-  education2: BSc University of Dhaka 
+  number_educ: 1
+  education1: BSc University of Dhaka 
 
 - name: Iftekhar Jamil 
-  photo: dummy_male_dp.png
+  photo: iftekhar-jamil.jpeg
   current_position: Software Engineer 
   current_organization: LEADS Corporation Limited
   email: bsse802@iit.du.ac.bd
@@ -368,40 +367,37 @@
   education1: BSc University of Dhaka
 
 - name: A.T.M Fazlay Rabbi 
-  photo: dummy_male_dp.png
-  current_position: ...
-  current_organization: ...
+  photo: fazlay-rabbi.jpeg
+  current_position: BSSE Student
+  current_organization: IIT, University of Dhaka
   email: bsse0926@iit.du.ac.bd
   homepage: ...
-  number_educ: 1
-  education1: BSSE Student, University of Dhaka
+  number_educ: 0
 
 - name: Mridha Md. Nafis Fuad
-  photo: dummy_male_dp.png
-  current_position: ...
-  current_organization: ...
+  photo: nafis-fuad.jpeg
+  current_position: BSSE Student
+  current_organization: IIT, University of Dhaka
   email: bsse0920@iit.du.ac.bd
   homepage: ...
-  number_educ: 1
-  education1: BSSE Student, University of Dhaka
+  number_educ: 0
 
 - name: Noshin Tahsin
-  photo: dummy_female_dp.png
-  current_position: ...
-  current_organization: ...
+  photo: noshin-tahsin.jpeg
+  current_position: BSSE Student
+  current_organization: IIT, University of Dhaka
   email: bsse0914@iit.du.ac.bd
   homepage: ...
-  number_educ: 1
-  education1: BSSE Student, University of Dhaka
+  number_educ: 0
 
 - name: Miran Al Mehrab
-  photo: dummy_male_dp.png
-  current_position: ...
-  current_organization: ...
+  photo: miran-al-mehrab.jpeg
+  current_position: BSSE Student
+  current_organization: IIT, University of Dhaka 
   email: bsse0931@iit.du.ac.bd
   homepage: ...
-  number_educ: 1
-  education1: BSSE Student, University of Dhaka   
+  number_educ: 0
+     
 
 - name: This could be You!!
   photo: dummy_male_dp.png
