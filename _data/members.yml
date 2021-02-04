@@ -309,7 +309,7 @@
   education3: BSc University of Dhaka  
 
 - name: Ali Zafar Sadiq
-  photo: ali-zafar-sadiq.jpeg
+  photo: ali-zafar-sadiq.jpg
   current_position: Lecturer 
   current_organization: Northern University Bangladesh (NUB)
   email: bsse0603@iit.du.ac.bd
@@ -340,8 +340,6 @@
 
 - name: Fatiul Huq Sujoy 
   photo: fatiul-huq-sujoy.jpeg
-  current_position: ...
-  current_organization: ...
   email: bsse0732@iit.du.ac.bd
   homepage: https://scholar.google.com/citations?user=J4GjvRUAAAAJ&hl=en&fbclid=IwAR25I6UoIVLjJaQFlpYidDwEVsIMBzURy1qUsmCtyocyjHo0HH8afDjCelo
   number_educ: 2
