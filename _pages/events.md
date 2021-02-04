@@ -44,7 +44,7 @@ permalink: /events/
   {{ event.booktitle }} <b>[{{event.year}}]</b> <br>
   <a href="{{ event.register_link }}" target="_blank">Register</a>
   {% if event.detail_page %} | 
-    {% for page in site.posts %} {% if page.path contains '/event/' %} <a href="{{ page.url | absolute_url }}" target="_blank">detail</a>
+    {% for page in site.posts %} {% if page.path contains '/event/' %} <a href="{{ page.url | absolute_url }}" target="_blank">Detail</a>
 
         {% if page.url == event.detail_page %}[Detail]({{ page.url }}){% endif %}
      {% endif %} 
