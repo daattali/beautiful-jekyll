@@ -25,7 +25,7 @@ PGP(Minimal):E600 AA56 F906 0786 C825  8353 5F47 0CC0 C1DD A2DB
 [Onion v3 mirror](http://kris57xeegb7q5mxrigcmnnjryrdkecfsjolya5m7jf6gyj3ff24hlyd.onion/)  
 [GitHub-Pages(Main)](https://kris.fail)  
 [Netlify(Currently NOT working)](https://yuuki76.netlify.app)  
-[ZeroNet](http://127.0.0.1:43110/16BY32M366k57cR5KRnCAKxXDX4PnHUVnP)  
+[~~ZeroNet~~](http://127.0.0.1:43110/16BY32M366k57cR5KRnCAKxXDX4PnHUVnP)  http://127.0.0.1:43110/1KzaASN8yqGqZCWuED93UB6pYyFLNVzfSX
 [Freedom Hosting RE Mirror](http://kris5kix477vlnr7vpufa3vdu3ncmlor6dellplxzaoy3levwchatrqd.onion/)  
 [IPFS](https://ipfs.io/ipfs/QmfMJJutVGN6AXZefhGjo2qb7HagGGfRrkWzaEeVxJpyUp)  
 
