@@ -35,10 +35,22 @@
 
   <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
   <script type="text/javascript">
+    var searchjson = '[
+      {% for post in site.posts %}
+        {
+          "title"    : "{% if post.title != "" %}{{ post.title | escape }}{% else %}{{ post.excerpt | strip_html |  escape | strip }}{%endif%}",
+          "category" : "{{ post.tags | join: \', \' }}",
+          "url"      : "{{ site.baseurl }}{{ post.url }}",
+          "date"     : "{{ post.date | date: "%B %e, %Y" }}"
+        } {% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]';
+    searchjson = JSON.parse(searchjson);
+
     var sjs = SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
-      json: '{{ site.baseurl }}/search.json'
+      json: searchjson
     });
   </script>
 
