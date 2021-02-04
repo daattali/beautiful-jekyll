@@ -310,13 +310,98 @@
 
 - name: Ali Zafar Sadiq
   photo: dummy_male_dp.png
-  current_position: ...
-  current_organization: ...
-  email: iit.du.ac.bd
-  homepage: ...
+  current_position: Lecturer 
+  current_organization: Northern University Bangladesh (NUB)
+  email: bsse0603@iit.du.ac.bd
+  homepage: https://www.linkedin.com/in/alizafar3/
   number_educ: 2
   education1: MSc University of Dhaka
-  education2: BSc University of Dhaka   
+  education2: BSc University of Dhaka 
+
+- name: Md. Jubair Ibna Mostafa 
+  photo: dummy_male_dp.png
+  current_position: Lecturer 
+  current_organization: Islamic University of Technology
+  email: jubair0614@gmail.com
+  homepage: https://www.linkedin.com/in/md-jubair-ibna-mostafa-6b8563126/
+  number_educ: 2
+  education1: MSc University of Dhaka
+  education2: BSc University of Dhaka  
+
+- name: Moumita Asad 
+  photo: dummy_female_dp.png
+  current_position: Lecturer
+  current_organization: Independent University, Bangladesh (IUB)
+  email: bsse0731@iit.du.ac.bd
+  homepage: https://scholar.google.com/citations?user=u-KPXtIAAAAJ&hl=en&fbclid=IwAR1ozJsOtMhAR8k-0aCgzxDNm04qi4kh82uZvBuAgYdmszQfSIgGAcjf_ug
+  number_educ: 2
+  education1: MSc University of Dhaka
+  education2: BSc University of Dhaka
+
+- name: Fatiul Huq Sujoy 
+  photo: dummy_male_dp.png
+  current_position: ...
+  current_organization: ...
+  email: bsse0732@iit.du.ac.bd
+  homepage: https://scholar.google.com/citations?user=J4GjvRUAAAAJ&hl=en&fbclid=IwAR25I6UoIVLjJaQFlpYidDwEVsIMBzURy1qUsmCtyocyjHo0HH8afDjCelo
+  number_educ: 2
+  education1: MSc, IIT, University of Dhaka
+  education2: BSc, IIT, University of Dhaka 
+
+- name: Toukir Ahammed 
+  photo: dummy_male_dp.png
+  current_position: ...
+  current_organization: ...
+  email: bsse806@iit.du.ac.bd
+  homepage: ...
+  number_educ: 2
+  education1: MSSE Student, IIT, University of Dhaka
+  education2: BSc University of Dhaka 
+
+- name: Iftekhar Jamil 
+  photo: dummy_male_dp.png
+  current_position: Software Engineer 
+  current_organization: LEADS Corporation Limited
+  email: bsse802@iit.du.ac.bd
+  homepage: https://www.linkedin.com/in/iftekhar-jamil/
+  number_educ: 1
+  education1: BSc University of Dhaka
+
+- name: A.T.M Fazlay Rabbi 
+  photo: dummy_male_dp.png
+  current_position: ...
+  current_organization: ...
+  email: bsse0926@iit.du.ac.bd
+  homepage: ...
+  number_educ: 1
+  education1: BSSE Student, University of Dhaka
+
+- name: Mridha Md. Nafis Fuad
+  photo: dummy_male_dp.png
+  current_position: ...
+  current_organization: ...
+  email: bsse0920@iit.du.ac.bd
+  homepage: ...
+  number_educ: 1
+  education1: BSSE Student, University of Dhaka
+
+- name: Noshin Tahsin
+  photo: dummy_female_dp.png
+  current_position: ...
+  current_organization: ...
+  email: bsse0914@iit.du.ac.bd
+  homepage: ...
+  number_educ: 1
+  education1: BSSE Student, University of Dhaka
+
+- name: Miran Al Mehrab
+  photo: dummy_male_dp.png
+  current_position: ...
+  current_organization: ...
+  email: bsse0931@iit.du.ac.bd
+  homepage: ...
+  number_educ: 1
+  education1: BSSE Student, University of Dhaka   
 
 - name: This could be You!!
   photo: dummy_male_dp.png
