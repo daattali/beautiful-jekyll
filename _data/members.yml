@@ -309,7 +309,7 @@
   education3: BSc University of Dhaka  
 
 - name: Ali Zafar Sadiq
-  photo: ali-zafar-sadiq.jpg
+  photo: ali-zafar-sadiq.jpeg
   current_position: Lecturer 
   current_organization: Northern University Bangladesh (NUB)
   email: bsse0603@iit.du.ac.bd
@@ -327,6 +327,15 @@
   number_educ: 2
   education1: MSc University of Dhaka
   education2: BSc University of Dhaka  
+
+- name: Fazle Mohammed Tawsif 
+  photo: fazle-mohammed-tawsif.jpeg
+  current_position: Lecturer 
+  current_organization: Shahjalal University of Science and Technology
+  email: tawsif93@gmail.com
+  homepage: https://www.linkedin.com/in/tawsif93/
+  number_educ: 1
+  education1: BSc University of Dhaka  
 
 - name: Moumita Asad 
   photo: moumita-asad.jpeg
@@ -381,7 +390,7 @@
   number_educ: 0
 
 - name: Noshin Tahsin
-  photo: noshin-tahsin.jpeg
+  photo: noshin-tahsin.jpg
   current_position: BSSE Student
   current_organization: IIT, University of Dhaka
   email: bsse0914@iit.du.ac.bd
@@ -397,20 +406,20 @@
   number_educ: 0
      
 
-- name: This could be You!!
-  photo: dummy_male_dp.png
-  current_position: ...
-  current_organization: ...
-  email: ...
-  homepage: "#"
-  number_educ: 1
-  education1: ...  
+#- name: This could be You!!
+#  photo: dummy_male_dp.png
+#  current_position: ...
+#  current_organization: ...
+#  email: ...
+#  homepage: "#"
+#  number_educ: 1
+#  education1: ...  
 
-- name: This could be You!!
-  photo: dummy_female_dp.png
-  current_position: ...
-  current_organization: ...
-  email: ...
-  homepage: "#"
-  number_educ: 1
-  education1: ...   
+#- name: This could be You!!
+#  photo: dummy_female_dp.png
+#  current_position: ...
+#  current_organization: ...
+#  email: ...
+#  homepage: "#"
+#  number_educ: 1
+#  education1: ...   
