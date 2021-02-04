@@ -1,6 +1,6 @@
 # Account List
 
-Updated:2021/01/15  
+Updated:2021/02/04  
 
 <details>
   <summary>Mail Address</summary>
@@ -91,3 +91,4 @@ Flightradar24:ADS-B:RJTY243
 Flightaware:yuuki76  
 はてな:yuuki76  
 Shakyo.io:yuuki76  
+Metacritic:kris57
