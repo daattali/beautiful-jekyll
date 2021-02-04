@@ -161,18 +161,8 @@ footer-link-col: "#404040"
 #  theme: github-light # Utterances theme
 #  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
-# To quickly use Staticman comments for GitHub, first set up your own instance
-# by clicking the "deploy" button in the project's README:
-# https://github.com/eduardoboucas/staticman/
-# Then create your new private GitHub Apps:
-# https://docs.github.com/en/developers/apps/creating-a-github-app
-# Set the "Homepage URL" to be the URL for your API instance, and the "Webhook
-# URL" to be the URL for your API instance followed by `/v1/webhook`
-# Grant the GitHub App "read & write" permissions for "Contents" and "Pull
-# Requests" and generate a RSA key pair at the bottom of the page.
-# Then configure the necessary environment variables via Heroku's online
-# dashboard: `GITHUB_APP_ID` `GITHUB_PRIVATE_KEY` and `RSA_PRIVATE_KEY`.
-# Then install your GitHub App to your GitHub repo for your site.
+# To use Staticman comments, it's recommended to set up your own API instance.
+# Please consult https://github.com/eduardoboucas/staticman/ for server-side setup.
 # Then uncomment the following section and fill in "repository" and "branch".
 # If you want to use reCaptcha for staticman (optional for spam protection), then fill
 # in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
@@ -180,8 +170,7 @@ footer-link-col: "#404040"
 #staticman:
 #  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # (mandatory) URL of your own deployment, with a trailing slash
-#  e.g. https://<your-api>/v3/entry/github/
+#  endpoint   : # (mandatory) URL of your own deployment, with a trailing slash e.g. https://<your-api>/v3/entry/github/
 #  reCaptcha:
 #    siteKey  : # Use your own site key, you need to apply for one on Google
 #    secret   : # ENCRYPT your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
