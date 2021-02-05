@@ -28,14 +28,16 @@ To solve this problem, we will use a dynamic programming setup. We define the fo
 
 <b><u> Initial Conditions </u></b>
 
+$$
 \begin{align}
     D(i,0) &= i\;\; \forall i \in \{1,..,m\} \\
     D(0,j) &= j\;\; \forall j \in \{1,..,n\} \\
 \end{align}
+$$
 
 <b><u> Recurrence Relation </u></b>
 
-$\forall$\;$i,j > 0$, $i \leq n$ and $j \leq m$, we have the following recurrence relation:
+$\forall \; i,j > 0$, $i \leq n$,\; $j \leq m$, we have the following recurrence relation:
 
 \begin{align*}
     D(i,j) = \min\Big\{\underbrace{D(i-1,j) + 1}_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}_{\text{Deletion}}, \underbrace{D(i-1,j-1) + t(i,j)}_{\text{Substitution or Exact Match}} \Big\}
