@@ -25,4 +25,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", ">= 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency 'tzinfo-data'
+  spec.add_development_dependency 'wdm'
+  spec.add_development_dependency 'webrick'
 end
+
