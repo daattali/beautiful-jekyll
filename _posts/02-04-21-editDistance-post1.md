@@ -5,7 +5,7 @@ title : Understanding the Dynamic Programming Problem in Edit Distances
 
 I have been recently dealing with string matching algorithms for a project I'm working on. I wanted to provide a brief explainer for how to interpret the dynamic programming problem in the simplest edit distance case.
 
-# Edit Distance' Problem
+# Edit Distance Problem
 
 We have two strings $S_{1}$ and $S_{2}$, which have lengths $n$ and $m$. We want to calculate the minimum number of edits to transform $S_{1}$ into $S_{2}$.  We formalize this minimum distance using the function $D$, taking two arguments $(i,j)$, where $i$ and $j$ represent the last letter index in substrings of $S_{1}[1,..,i]$ and $S_{2}[1,..,j]$.
 
