@@ -40,7 +40,7 @@ $$
 $\forall \; i,j > 0$, $i \leq n$,\; $j \leq m$, we have the following recurrence relation:
 
 \begin{align}
-    D(i,j) = \min\Big\{\underbrace{D(i-1,j) + 1}_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}_{\text{Deletion}}, \underbrace{D(i-1,j-1) + t(i,j)}_{\text{Substitution or Exact Match}} \Big\}
+    D(i,j) = \min\Big\{\underbrace{D(i-1,j) + 1}\_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}\_{\text{Deletion}}, \underbrace{D(i-1,j-1) + t(i,j)}\_{\text{Substitution or Exact Match}} \Big\}
 \end{align}
 
 We allow four operations. It is best to think about comparing the last letters in the sub-strings defined above. Our four operations are: 
@@ -55,7 +55,7 @@ We allow four operations. It is best to think about comparing the last letters i
 It took me a bit of time to understand what was happening to the indices. Let's start with the very last letters in both strings, this is equivalent to finding the minimum distance $D(4,5)$. This problem is the following:
 
 \begin{align}
-D(4,5) = \min\Big\{\underbrace{D(4,4) + 1}_{\text{Insertion}}, \underbrace{D(3,5) + 1}_{\text{Deletion}}, \underbrace{D(3,4) + t(i,j)}_{\text{Replace or March}} \Big\}
+D(4,5) = \min\Big\{\underbrace{D(4,4) + 1}\_{\text{Insertion}}, \underbrace{D(3,5) + 1}\_{\text{Deletion}}, \underbrace{D(3,4) + t(i,j)}\_{\text{Replace or March}} \Big\}
 \end{align}
 
 Now let's briefly think through why the indices change in the way they do. I will highlight the current letter our index is pointing to. 
