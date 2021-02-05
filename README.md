@@ -13,16 +13,30 @@
 
 ## Table of contents
 
+- [Beautiful Jekyll](#beautiful-jekyll)
+  - [Table of contents](#table-of-contents)
 - [Features](#features)
-- [Sponsors 🏆](#sponsors)
-- [**Build your website in 3 steps**](#build-your-website-in-3-steps)
+- [Build your website in 3 steps](#build-your-website-in-3-steps)
+  - [The easy way (recommended!)](#the-easy-way-recommended)
+    - [1. Fork this project](#1-fork-this-project)
+    - [2. Rename the project to `<yourusername>.github.io`](#2-rename-the-project-to-yourusernamegithubio)
+    - [3. Customize your website settings](#3-customize-your-website-settings)
+    - [4. Congratulations! You have a website!](#4-congratulations-you-have-a-website)
+  - [The hard way (using ruby gems)](#the-hard-way-using-ruby-gems)
 - [Plans](#plans)
 - [Add your own content](#add-your-own-content)
 - [Customizing parameters for each page](#customizing-parameters-for-each-page)
 - [Supported parameters](#supported-parameters)
+  - [Main parameters](#main-parameters)
+  - [Parameters for SEO and social media sharing](#parameters-for-seo-and-social-media-sharing)
+  - [Parameters for Related Posts](#parameters-for-related-posts)
+  - [Less commonly used parameters](#less-commonly-used-parameters)
+  - [Advanced parameters](#advanced-parameters)
+  - [Page types](#page-types)
 - [Featured users (success stories!)](#featured-users-success-stories)
 - [FAQ and support](#faq-and-support)
-- [Credits and contributions](#credits)
+- [Contributions](#contributions)
+- [Credits](#credits)
 
 # Features
 
@@ -39,6 +53,7 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 - **Tags**: Any blog post can be tagged with keywords, and an index page showing all the tags is automatically generated.
 - **Analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
 - **Photos support**: Any page can have a full-width cover photo and thumbnail.
+- **Related posts** Any blog post can show related posts that increases traffic and engagements to your site.
 - **RSS**: An RSS feed is automatically created, so you can even host a podcast easily with Beautiful Jekyll.
 
 <h2 id="sponsors">Sponsors 🏆</h2>
@@ -153,6 +168,34 @@ Parameter   | Description
 share-title | A title for the page. If not provided, then `title` will be used, and if that's missing then the site title (from `_config.yml`) is used.
 share-description | A brief description of the page. If not provided, then `subtitle` will be used, and if that's missing then an excerpt from the page content is used.
 share-img   | The image to show. If not provided, then `cover-img` or `thumbnail-img` will be used if one of them is provided.
+
+## Parameters for Related Posts
+
+Show related posts in your blogs. This feature works on GitHub Pages as well! Here are the default values for parameters:
+
+```yaml
+related-posts:
+  enabled: true
+  max-related: 4
+  min-common-tags: 1
+  title: Read next
+
+```
+
+Parameter   | Description
+----------- | -----------
+title | A title text displayed on top of related posts. Default title text is `Read next`.
+enabled | Flag to disable related posts from all posts by default it is `true` in `_config.yml` file.
+max-related | Maximum number of matching posts to be displayed. Default value is `4`.
+min-common-tags   | Minimum Number of common tags to search for matching blog post. Default value is `1`.
+
+Example of Related Posts: 
+```yaml
+related-posts:
+  enabled: true
+  max-related: 2
+```
+![](https://i.imgur.com/VP1UdJZ.png)
 
 ## Less commonly used parameters
 
