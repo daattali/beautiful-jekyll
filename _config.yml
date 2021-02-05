@@ -91,6 +91,9 @@ feed_show_tags: true
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
 
+# Uncomment the following section to enable anchors in site.
+#anchors: true
+
 # --- Colours / background image --- #
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
