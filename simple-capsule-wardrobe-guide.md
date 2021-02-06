@@ -23,7 +23,6 @@ So if you are not sure where to start (or continue) because you're confused abou
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-
 ## Included inside
 
 * $7 USD (click through to the download link)
@@ -36,4 +35,6 @@ So if you are not sure where to start (or continue) because you're confused abou
 
 ## Reviews
 
-> “As anyone who’s tried to make a capsule wardrobe knows, it’s easy to get overwhelmed and confused by all the “must-have” lists and “rules” floating around on Pinterest. Kelly’s guide cuts through all the noise with straightforward steps that makes creating a capsule wardrobe truly simple, and best of all - tailored to you and your needs.”
+> _As anyone who’s tried to make a capsule wardrobe knows, it’s easy to get overwhelmed and confused by all the “must-have” lists and “rules” floating around on Pinterest. Kelly’s guide cuts through all the noise with straightforward steps that makes creating a capsule wardrobe truly simple, and best of all - tailored to you and your needs._ - Emily
+
+> _My friend @simplehomemom has a capsule wadrobe guide that is simple and easy to follow!_ - Shelly from [@letsliveandlearn](https://www.instagram.com/letsliveandlearn/) or her website [here](https://letsliveandlearn.com/).
