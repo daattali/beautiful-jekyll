@@ -7,7 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
-* Simplify Your Home Life: a course for busy moms is open! Click [here](https://www.simplehomemom.com/course) for details and the signup form.
+* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) is open! Click [here](https://www.simplehomemom.com/course) for details.
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
