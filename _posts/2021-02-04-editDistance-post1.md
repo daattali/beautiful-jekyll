@@ -41,11 +41,10 @@ $$
 
 $\forall \; i,j > 0$, $i \leq n$, $j \leq m$, we have the following recurrence relation:
 
-$$
+
 \begin{align}
     D(i,j) = \min\Big\{\underbrace{D(i-1,j) + 1}\_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}\_{\text{Deletion}}, \underbrace{D(i-1,j-1) + t(i,j)}\_{\text{Substitution or Exact Match}} \Big\}
 \end{align}
-$$
 
 We allow four operations. It is best to think about comparing the last letters in the sub-strings defined above. Our four operations are: 
 
@@ -53,28 +52,6 @@ We allow four operations. It is best to think about comparing the last letters i
 2. Deletion : letter deleted from the end of $S_{1}[1,..,i]$ 
 3. Substitution : letter $S_{1}[i]$ is subsituted by $S_{2}[j]$
 4. Exact Match : letter $S_{1}[i]$ is already the same as $S_{2}[j]$, and thus nothing is done.
-
-Test underbrace equation : 
-$$
-\begin{align}
-    D(i,j) = \underbrace{D(i-1,j) + 1}\_{Insertion}, \underbrace{D(i,j-1) + 1}\_{Deletion}
-\end{align}
-$$
-
-Test text equation : 
-$$
-\begin{align}
-    D(i,j) = \underbrace{D(i-1,j) + 1}\_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}\_{\text{Deletion}}
-\end{align}
-$$
-
-Test min equation :
-
-$$
-\begin{align}
-    D(i,j) = \min \underbrace{D(i-1,j) + 1}\_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}\_{\text{Deletion}}
-\end{align}
-$$
 
 ## Intution for the Indices : Think Backwards
 
