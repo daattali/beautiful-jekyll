@@ -7,7 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
-* [SIMPLIFY YOUR HOME LIFE COURSE](https://www.simplehomemom.com/course) is open! Click [here](https://www.simplehomemom.com/course).
+* Simplify Your Home Life: a course for busy moms is open! Click [here](https://www.simplehomemom.com/course) for details and the signup form.
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
@@ -22,7 +22,6 @@ subtitle: ''
 
 * [Keeping it simple: an intverview with Kelly](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761)
 * [Simplify Your Laundry Routine with Kelly Briggs](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)
-* 
 
 ## Other
 
