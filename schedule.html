@@ -1,0 +1,96 @@
+---
+layout: page
+title: Schedule
+subtitle: Some temp text here
+css:
+    - "/assets/css/schedule.css"
+---
+{% assign schedule = site.data.schedule %}
+
+<div class="schedule showing-friday">
+    <div class="schedule-controls">
+        <div class="friday control" data-day="friday">Friday</div>
+        <div class="saturday control" data-day="saturday">Saturday</div>
+        <div class="sunday control" data-day="sunday">Sunday</div>
+    </div>
+    <div class="schedule-grid">
+        <div class="schedule-header">Time</div>
+        <div class="schedule-header">Main Events</div>
+        <div class="schedule-header">Secondary Events</div>
+        <div class="schedule-header">Tabletop</div>
+        <div class="schedule-header">Artists & Dealers</div>
+
+        {% for i in (9..11) %}
+            <div class="schedule-time" style="grid-area: {{ i | minus: 8 | times: 2 }} / time-col">{{i}}:00 AM</div>
+            <div class="schedule-time" style="grid-area: {{ i | minus: 8 | times: 2 | plus: 1 }} / time-col">{{i}}:30 AM</div>
+        {% endfor %}
+        <div class="schedule-time" style="grid-area: 8 / time-col">12:00 PM</div>
+        <div class="schedule-time" style="grid-area: 9 / time-col">12:30 PM</div>
+        {% for i in (1..11) %}
+            <div class="schedule-time" style="grid-area: {{ i | times: 2 | plus: 8 }} / time-col">{{i}}:00 PM</div>
+            <div class="schedule-time" style="grid-area: {{ i | times: 2 | plus: 9 }} / time-col">{{i}}:30 PM</div>
+        {% endfor %}
+        <div class="schedule-time" style="grid-area: 32 / time-col">12:00 AM</div>
+        <div class="schedule-time" style="grid-area: 33 / time-col">12:30 AM</div>
+        {% for i in (1..2) %}
+            <div class="schedule-time" style="grid-area: {{ i | times: 2 | plus: 32 }} / time-col">{{i}}:00 AM</div>
+            <div class="schedule-time" style="grid-area: {{ i | times: 2 | plus: 33 }} / time-col">{{i}}:30 AM</div>
+        {% endfor %}
+
+        <div class="schedule-time" style="grid-area: 38 / time-col">3:00 AM</div>
+
+        {% for schedule_item in schedule %}
+            {% if schedule_item["Start Time"] == nil or schedule_item["Start Time"] == "" %}
+                {% continue %}
+            {% endif %} 
+            {% if schedule_item["Location"] == nil or schedule_item["Location"] == "" %}
+                {% continue %}
+            {% endif %} 
+            {% if schedule_item["Day"] == nil or schedule_item["Day"] == "" %}
+                {% continue %}
+            {% endif %} 
+            {% if schedule_item["Duration"] == nil or schedule_item["Duration"] == "" %}
+                {% continue %}
+            {% endif %} 
+
+            {% assign start_time = "January 1, 2021 " | append: schedule_item["Start Time"] | date: "%k:%M" | split: ':' %}
+            {% assign start_hour =  start_time[0] %}
+            {% assign start_minute = start_time[1] %}
+
+            {% assign grid_y_minute = start_minute | divided_by: 30 | floor %}
+            {% assign grid_y = start_hour | times: 2 | plus: grid_y_minute | minus: 16 %}
+            
+            {% assign location = schedule_item["Location"] | strip | downcase | slugify%}
+            
+            {% assign day = schedule_item["Day"] | strip | downcase | slugify %}
+            
+            {% assign duration = schedule_item["Duration"] | split: " " %}
+            {% case duration.size %}
+                {% when 2 %}
+                    {% assign total_duration = duration[0] %}
+                {% when 4 %}
+                    {% assign total_duration = duration[0] | times: 60 | plus: duration[2] %}
+                {% else %}
+                    {%continue%}
+            {% endcase %}
+            
+            {% assign duration_length = total_duration | divided_by: 30.0 | round %}
+            
+            <div class="schedule-item day-{{day}} location-{{location}}" style="grid-area: {{grid_y}} / {{location}}; grid-row-end: span {{ duration_length }}">
+                {{ schedule_item["Title"] }}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    window.addEventListener('load', function(){
+        $('.schedule-controls .control').on('click', function( e){
+            var elem = e.target;
+            var day = $(elem).attr( 'data-day');
+
+            $('.schedule').removeClass( ['showing-friday', 'showing-saturday', 'showing-sunday']);
+            $('.schedule').addClass( 'showing-' + day)
+        });
+    });
+</script>

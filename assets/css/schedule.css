@@ -1,0 +1,91 @@
+.schedule-controls {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.schedule-controls .control {
+    border: 1px solid #b7a43a;
+    background-color: #1e465f;
+    flex: 33%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.schedule:not(.showing-friday) .friday.control {
+    background-color: #0e1826;
+}
+
+.schedule:not(.showing-friday) .friday.control:hover {
+    background-color: #2b6488;
+}
+
+.schedule:not(.showing-saturday) .saturday.control {
+    background-color: #0e1826;
+}
+.schedule:not(.showing-saturday) .saturday.control:hover {
+    background-color: #2b6488;
+}
+
+.schedule:not(.showing-sunday) .sunday.control {
+    background-color: #0e1826;
+}
+.schedule:not(.showing-sunday) .sunday.control:hover {
+    background-color: #2b6488;
+}
+
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: [time-col] 1fr [main] 1fr [secondary] 1fr [tabletop] 1fr [artists-dealers] 1fr;
+    grid-template-rows: [header] auto;
+    grid-auto-rows: 1fr;
+    grid-gap: 3px;
+    background: black;
+    margin-top: 0px;
+}
+
+.schedule-header {
+    font-weight: bold;
+    border-bottom: 2px solid #b7a43a;
+}
+
+.schedule-grid > *{
+    background: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.schedule-item {
+    color: black;
+}
+
+.schedule:not(.showing-friday) .schedule-item.day-friday {
+    display: none;
+}
+
+.schedule:not(.showing-saturday) .schedule-item.day-saturday {
+    display: none;
+}
+
+.schedule:not(.showing-sunday) .schedule-item.day-sunday {
+    display: none;
+}
+
+.schedule-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.schedule-time:nth-child( odd){
+    background-color: #e6e6e6;
+}
