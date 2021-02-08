@@ -15,10 +15,12 @@ We have two strings $S_{1}$ and $S_{2}$, which have lengths $n$ and $m$. We want
 
 As an example, let's work with this very simple problem:
 
+$$
 \begin{align}
-    S_{1} &= vine \\
-    S_{2} &= vines
+    S\_{1} &= vine \\
+    S\_{2} &= vines
 \end{align}
+$$
 
 Then $D(3,2)$ is the minimum edits needed to convert $vin$ into $vi$. 
 
@@ -37,11 +39,13 @@ $$
 
 <b><u> Recurrence Relation </u></b>
 
-$\forall \; i,j > 0$, $i \leq n$,\; $j \leq m$, we have the following recurrence relation:
+$\forall \; i,j > 0$, $i \leq n$, $j \leq m$, we have the following recurrence relation:
 
+$$
 \begin{align}
     D(i,j) = \min\Big\{\underbrace{D(i-1,j) + 1}\_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}\_{\text{Deletion}}, \underbrace{D(i-1,j-1) + t(i,j)}\_{\text{Substitution or Exact Match}} \Big\}
 \end{align}
+$$
 
 We allow four operations. It is best to think about comparing the last letters in the sub-strings defined above. Our four operations are: 
 
@@ -50,13 +54,37 @@ We allow four operations. It is best to think about comparing the last letters i
 3. Substitution : letter $S_{1}[i]$ is subsituted by $S_{2}[j]$
 4. Exact Match : letter $S_{1}[i]$ is already the same as $S_{2}[j]$, and thus nothing is done.
 
+Test underbrace equation : 
+$$
+\begin{align}
+    D(i,j) = \underbrace{D(i-1,j) + 1}\_{Insertion}, \underbrace{D(i,j-1) + 1}\_{Deletion}
+\end{align}
+$$
+
+Test text equation : 
+$$
+\begin{align}
+    D(i,j) = \underbrace{D(i-1,j) + 1}\_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}\_{\text{Deletion}}
+\end{align}
+$$
+
+Test min equation :
+
+$$
+\begin{align}
+    D(i,j) = \min \underbrace{D(i-1,j) + 1}\_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}\_{\text{Deletion}}
+\end{align}
+$$
+
 ## Intution for the Indices : Think Backwards
 
 It took me a bit of time to understand what was happening to the indices. Let's start with the very last letters in both strings, this is equivalent to finding the minimum distance $D(4,5)$. This problem is the following:
 
+$$
 \begin{align}
 D(4,5) = \min\Big\{\underbrace{D(4,4) + 1}\_{\text{Insertion}}, \underbrace{D(3,5) + 1}\_{\text{Deletion}}, \underbrace{D(3,4) + t(i,j)}\_{\text{Replace or March}} \Big\}
 \end{align}
+$$
 
 Now let's briefly think through why the indices change in the way they do. I will highlight the current letter our index is pointing to. 
 
