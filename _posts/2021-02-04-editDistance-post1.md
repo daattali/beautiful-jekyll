@@ -41,10 +41,11 @@ $$
 
 $\forall \; i,j > 0$, $i \leq n$, $j \leq m$, we have the following recurrence relation:
 
-
+$$
 \begin{align}
-    D(i,j) = \min\Big\{\underbrace{D(i-1,j) + 1}\_{\text{Insertion}}, \underbrace{D(i,j-1) + 1}\_{\text{Deletion}}, \underbrace{D(i-1,j-1) + t(i,j)}\_{\text{Substitution or Exact Match}} \Big\}
+    D(i,j) = \min\Big\{\underbrace{D(i-1,j) + 1}\_{Insertion}, \underbrace{D(i,j-1) + 1}\_{Deletion}, \underbrace{D(i-1,j-1) + t(i,j)}\_{Substitution} \Big\}
 \end{align}
+$$
 
 We allow four operations. It is best to think about comparing the last letters in the sub-strings defined above. Our four operations are: 
 
