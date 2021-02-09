@@ -62,7 +62,8 @@ It took me a bit of time to understand what was happening to the indices. Let's 
 
 $$
 \begin{align}
-D(4,5) = \min\Big\{\underbrace{D(4,4) + 1}\_{\text{Insertion}}, \underbrace{D(3,5) + 1}\_{\text{Deletion}}, \underbrace{D(3,4) + t(i,j)}\_{\text{Replace or March}} \Big\}
+D(4,5) &= \min\Big\{D(4,4) + 1, D(3,5) + 1, D(3,4) + t(i,j)} \Big\} \\
+       &= \min\Big\{\text{Insertion}, Deletion, Substitution} \Big\} 
 \end{align}
 $$
 
