@@ -35,7 +35,8 @@
 
   <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
   <script type="text/javascript">
-    var searchjson = '[
+    var searchjson = `
+    [
       {% for post in site.posts %}
         {
           "title"    : "{% if post.title != "" %}{{ post.title | escape }}{% else %}{{ post.excerpt | strip_html |  escape | strip }}{%endif%}",
@@ -44,7 +45,8 @@
           "date"     : "{{ post.date | date: "%B %e, %Y" }}"
         } {% unless forloop.last %},{% endunless %}
       {% endfor %}
-    ]';
+    ]
+    `;
     searchjson = JSON.parse(searchjson);
 
     var sjs = SimpleJekyllSearch({
