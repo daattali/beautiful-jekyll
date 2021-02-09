@@ -1,0 +1,52 @@
+---
+post: post
+tags:
+- simple homeschooling
+- homeschooling
+- simplifying homeschooling
+- homeschool planning
+- simple homeschool planning
+- simple homeschool routine
+- homeschooling routines
+- homeschool routine
+thumbnail-img: "/uploads/headshot.jpg"
+cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
+readtime: true
+comments: true
+show-avatar: true
+title: Three Things You Need to Know to Create a Simple Homeschool Routine
+description: Tips for creating a simple homeschool routine for homeschooling families.
+subtitle: ''
+share-img: ''
+redirect_from: []
+
+---
+BLOG: three things you need to know to create a simple homeschool routine  
+  
+Different homeschooling seasons calls for different things. Being aware of what those different things are is so key. And sometimes I get it wrong. But it's always a coming back to and reflecting on what worked, what needs to be changed or dropped. Today I'm sharing with you three things you need to know to create a simple homeschool routine.   
+  
+Complicated homeschool routines that don't work for your family can lead to burnout  
+  
+At the beginning of January, I tried a new to us homeschool routine, but I ended up burning out after two weeks. I'm laughing because I should've seen it coming. The simple routine and rhythms I had before have been working for us so well for a long time. Just the general flow of the day really. And when I stepped it up a notch, I definitely felt the burnout. Complication or just too much in the homeschool day can lead to burnout, I've always found. For refererence, my kids are 10, 7, almost 5, and almost 2.  
+  
+I basically took our regular routine and spread it much longer into the day and added on more independent work time for the kids and more family work time too. Our quiet time ended up being right before supper time vs at 1pmish. I just added on MORE really. So I guess I didn't actively hugely changed up the routine, but I definitely added more things. And it became pretty evident after a couple weeks, that this was not sustainable for myself or the kids.   
+  
+Create a simple homeschool routine that works for YOUR family  
+  
+After burning myself out, I came back to remembering to create a simple homeschool routine that works for OUR family. And reminded myself of these three things to keep in mind to create a simple homeschool routine that works for your family:  
+  
+1\. Create routines and rhythms that work for your family. It won't be figured out overnight, but one little thing at a time. A natural routine or rhythm will become evident over time when you're observing them slowly.   
+2\. Don't compare to other homeschooling families in the negative sense. Find inspiration, yes, but learn from vs. mimic another homeschool family. Every family's routines ans rhyhtms will be different from another family's.   
+3\. Make adjustments a little at a time vs a lot of changes at once. Big changes all at once can often lead to stress, frustration, burnout, the list goes on. Taking baby steps with a simple homeschool routine is a lot more enjoyable and doable.   
+  
+Now, we're back to our old faithful routine, but with some simple tweaks like normal. During our family work time and independent work time, for instance, I'll be pulling from a master list of all subjects that are categorized under frequency or topic. And go day by day. Some days we do less, some days we so more. This allows for so much flexibility! I just track what we do with a checklist to see if there are areas we need to focus on next.   
+  
+And if you're in the midst of creating a simple homeschool routine for your family or you'd like to switch things up, you may enjoy the homeschool daily routine printable I created for my family. You can snag a copy here. See it below!  
+  
+\*****link Pam and others I google, including Lisa's site.  
+  
+Other blogs of mine you may like:  
+• Five Tips to Have a Successful Zero Spend Month  
+• How to Do a Zero Spend Month that Works for You  
+• Simple Budgeting Tips for People Who Don’t Like Budgeting  
+• 2 Simple Tips to Start Sinking Funds for Beginners
