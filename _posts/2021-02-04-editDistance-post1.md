@@ -44,7 +44,7 @@ $\forall \; i,j > 0$, $i \leq n$, $j \leq m$, we have the following recurrence r
 $$
 \begin{align}
     D(i,j) &= \min\Big\{\;D(i-1,j) + 1,\;D(i,j-1) + 1,\;D(i-1,j-1) + t(i,j) \Big\} \\
-           &= \min\Big\{\;Insertion,\;Deletion,\;Substitution \Big\} 
+           &= \min\Big\{\;Insertion,\;Deletion,\;Substitution or Exact \Big\} 
 \end{align}
 $$
 
@@ -54,6 +54,8 @@ We allow four operations. It is best to think about comparing the last letters i
 2. Deletion : letter deleted from the end of $S_{1}[1,..,i]$ 
 3. Substitution : letter $S_{1}[i]$ is subsituted by $S_{2}[j]$
 4. Exact Match : letter $S_{1}[i]$ is already the same as $S_{2}[j]$, and thus nothing is done.
+
+We 
 
 ## Intution for the Indices : Think Backwards
 
