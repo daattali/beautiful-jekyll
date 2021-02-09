@@ -248,7 +248,7 @@
        <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
      </span>
      <span class="sr-only">ORCID</span>
-  </a>
+   </a>
  </li>
 {%- endif -%}
 
@@ -260,8 +260,20 @@
         <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
       </span>
       <span class="sr-only">Google Scholar</span>
-   </a>
+    </a>
   </li>
- {%- endif -%}
+{%- endif -%}
+
+{%- if site.social-network-links.patreon -%}
+  <li class="list-inline-item">
+    <a href="https://patreon.com/{{ site.social-network-links.patreon }}" title="Patreon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Patreon</span>
+    </a>
+  </li>
+{%- endif -%}
 
 </ul>

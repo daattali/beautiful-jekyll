@@ -1,39 +1,69 @@
 ## Unreleased version
 
-One of the major changes in this version is that a lot of time was spent on rethinking the entire SEO and social media sharing model (how a page looks on eg. Google, Twitter, Facebok). It was redesigned to be more simple and customizable. The new documentation has a section dedicated to SEO and social media sharing of a page. Unfortunately some changes had to be made that are not backwards-compatible.
+- Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari.
+- Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
+- Fixed bug where navbar secondary level dropdown items didn't inherit the same colour as the primary navbar links
+- Fixed bug where the navbar "burger" collapsed button didn't always revert back to a light colour
+- Fixed bug where using an image as a navbar title did not render in GitHub Project pages that did not have a custom domain
+- Fixed issue where image thumbnails on the feed page were always forced into a square rather than maintaining a proper image aspect ratio
+- Added support for Patreon in the social network links in the footer
+- Fixed bug where special characters in the title led to broken share tags (#744)
+- Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
 
-- **BREAKING CHANGE** Renamed `description` YAML option to `share-description` to be more clear
-- **BREAKING CHANGE** Renamed `description` config parameter to `rss-description` since it was only used in RSS (the FAQ in the README explains the difference between YAML options and config parameters if you're confused!)
-- **BREAKING CHANGE** Removed YAML option `use-site-title` (you can now specify the exact title using `share-title`)
-- **BREAKING CHANGE** Removed undocumented YAML options `meta-title` and `meta-description`
-- **BREAKING CHANGE** Removed `link-tags` config parameter because it wasn't necessary. If you use tags, there will be a tags page created; if you don't use tags there is no tags page.
-- **BREAKING CHANGE** The YAML setting `show-avatar` is now true by default. This has always been the case for GitHub Pages users, but not for `remote_theme` users. For consistency, it's now the default for everyone. (#715)
-- Added `share-title` YAML option to give control over the search engine/social media title
-- Added `before-content` and `after-content` YAML options that allow you to add some common HTML before the main content of a page (below the title) or after the main content (above the footer). Works in a similar way to `footer-extra`.
-- Added `head-extra` YAML option which i s similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
-- Added `full-width` YAML option to allow having full-width pages
-- Added `feed_show_excerpt` config option to show/hide the post excerpts on the feed page
-- Added `feed_show_tags` config option to show/hide the list of tags on post previews on the feed page
-- When `nav-short` is turned on, the avatar will also be shorter
-- Fixed rendering issues with `nav-short` option that caused the body of the page to start too low
-- Improved the `footer-extra` YAML option to support multiple files instead of only a single file
-- Upgraded kramdown to version 2.3.0 to fix security issues
-- Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version
+## v5.0.0 (2020-09-15)
+
+One of the major changes in this version is that a lot of time was spent on rethinking the entire SEO and social media sharing model (how a page looks on eg. Google, Twitter, Facebok). It was redesigned to be more simple and customizable. The new documentation has a section dedicated to SEO and social media sharing of a page. Unfortunately some changes that are not backwards-compatible had to be made.
+
+#### Breaking changes
+
+- Renamed `description` YAML parameter to `share-description` to be more clear
+- Renamed `description` config setting to `rss-description` since it was only used in RSS (the FAQ explains the difference between YAML parameters and config settings if you're confused)
+- Removed YAML parameter `use-site-title` (you can now specify the exact title using `share-title`)
+- Removed undocumented YAML parameters `meta-title` and `meta-description`
+- Removed `link-tags` config setting because it wasn't necessary. If you use tags, there will now always be a tags page created; if you don't use tags there won't be a tags page.
+- The YAML parameter `show-avatar` is now true by default. This has always been the case for GitHub Pages users, but not for `remote_theme` users. For consistency, it's now the default for everyone. (#715)
+
+#### New parameters and settings
+
+- Added `full-width` YAML parameter to allow having full-width pages
+- Added `feed_show_excerpt` config setting to show/hide the post excerpts on the feed page
+- Added `feed_show_tags` config setting to show/hide the list of tags on post previews on the feed page
+- Added `share-title` YAML parameter to give control over the search engine/social media title
+- Added `last-updated` YAML parameter to show a "Last Updated on" date for blog posts
+- Added `before-content` and `after-content` YAML parameters that allow you to add some common HTML before the main content of a page (below the title) or after the main content (above the footer). Works in a similar way to `footer-extra`.
+- Added `head-extra` YAML parameter which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
+- Added `site-js` config setting to provide JavaScript files that are used on all pages in the site
+
+#### New features and improvements
+
+- Improved the `footer-extra` YAML parameter to support multiple files instead of only a single file
 - Added automatic navbar color detection (#702)
-- Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background
-- Changed the behaviour of `site-css` to include site-wide CSS file **before** page-specific files 
+- When `nav-short` is turned on, the avatar will also be shorter
+- Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background for accessibility reasons
+- Changed the behaviour of `site-css` to include site-wide CSS file **before** instead of after page-specific files
 - Renamed internal css/js files from "main" to "beautifuljekyll" to make it easier for users to troubleshoot
 - Added alt text to all images for better accessibility
+- Made thumbnail images square instead of circles, as users reported that circles cut off important parts of images
+
+#### Bug fixes
+
+- Fixed rendering issues with `nav-short` parameter that caused the body of the page to start too low
 - Fixed some CSS styles that broke during the bootstrap 4 migration (#716)
+
+#### Library upgrades
+
+- Upgraded kramdown to version 2.3.0 to fix security issues
+- Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version
+
 
 ## v4.1.0 (2020-08-08)
 
 - Added Open Graph `site_name` meta field to pages automatically
-- Added `text-col `config setting for main text color (#694)
+- Added `text-col` config setting  for main text color (#694)
 - Added `keywords` config setting to set the meta keywords on all pages (for SEO purposes) (#691)
 - Added `mobile-theme-col` config setting to allow a mobile theme colour (#692)
 - Added `site-css` config setting in the config file to provide CSS files that are used on all pages in the site (#695)
-- Added YAML option `description`: creates the meta description on a page, intended to provide a brief description of the page for search engines and when the page is shared (#690)
+- Added YAML parameter `description`: creates the meta description on a page, intended to provide a brief description of the page for search engines and when the page is shared (#690)
 
 ## v4.0.1 (2020-07-13)
 
@@ -69,9 +99,9 @@ One of the major changes in this version is that a lot of time was spent on reth
 
 ## v2.3.0 (2020-04-29)
 
-- Added YAML option `footer-extra` for including custom content in the footer
+- Added YAML parameter `footer-extra` for including custom content in the footer
 - Fixed issue: linking to a specific part of a page resulted in scrolling too far (#69)
-- Added YAML option `nav-short` to have navbar permanently collapsed
+- Added YAML parameter `nav-short` to have navbar permanently collapsed
 - Added social network link: Calendly
 - Fixed bug where RSS link in footer was showing even when turned off
 

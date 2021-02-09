@@ -6,10 +6,10 @@
 {% assign number = finalReadTime | round %}
 {% if number >= 1 %}
   {% assign yesReadTime = number | append: " minute read" %}
-  <span class="reader-time post-meta"><span class="d-none d-md-inline middot">&middot;</span> {{ yesReadTime }}</span>
+  <span class="post-meta"><span class="d-none d-md-inline middot">&middot;</span> {{ yesReadTime }}</span>
 {% elsif number < 1 %}
   {% assign minReadTime = '&lt; 1 minute read' %}
-  <span class="reader-time post-meta"><span class="d-none d-md-inline middot">&middot;</span> {{ minReadTime }}</span>
+  <span class="post-meta"><span class="d-none d-md-inline middot">&middot;</span> {{ minReadTime }}</span>
 {% else %}
   {% assign nilReadTime = number | replace:'0',' ' %}
   {{ nilReadTime }}
