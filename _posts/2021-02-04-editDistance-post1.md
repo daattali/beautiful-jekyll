@@ -44,7 +44,8 @@ $\forall \; i,j > 0$, $i \leq n$, $j \leq m$, we have the following recurrence r
 <span>
 $$
 \begin{align}
-    D(i,j) = \min\Big\{\underbrace{D(i-1,j) + 1}\_{Insertion}, \underbrace{D(i,j-1) + 1}\_{Deletion}, \underbrace{D(i-1,j-1) + t(i,j)}\_{Substitution} \Big\}
+    D(i,j) &= \min\Big\{& D(i-1,j) + 1, & D(i,j-1) + 1, & D(i-1,j-1) + t(i,j) \Big\} \\
+           &= \min\Big\{& Insertion, & Deletion, & Substitution \Big\} 
 \end{align}
 $$
 </span>
@@ -62,8 +63,7 @@ It took me a bit of time to understand what was happening to the indices. Let's 
 
 $$
 \begin{align}
-D(4,5) &= \min\Big\{&D(4,4) + 1, &D(3,5) + 1, &D(3,4) + t(i,j) \Big\} \\
-       &= \min\Big\{&Insertion, &Deletion, &Substitution \Big\} 
+D(4,5) &= \min\Big\{&D(4,4) + 1, &D(3,5) + 1, &D(3,4) + t(i,j) \Big\}
 \end{align}
 $$
 
