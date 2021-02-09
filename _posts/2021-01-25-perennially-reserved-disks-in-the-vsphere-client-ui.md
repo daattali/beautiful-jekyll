@@ -16,4 +16,8 @@ Thankfully a warning message pops up when you click on it to let you know that y
 
 ![](/img/perenially2.png)
 
+**_Edit_**: There is also a new column in the device view to see which devices are set as perennially reserved.
+
+![](/img/peren1.png)
+
 Most people reading this already know that but it's never a bad thing to repeat it: **Be careful and double check everything when performing an action on a storage Lun in production !**
