@@ -27,7 +27,7 @@ Different homeschooling seasons call for different things. Being aware of what t
 
 ## Complicated homeschool routines that don't work for your family can lead to burnout
 
-At the beginning of January, I tried a new to us homeschool routine, but I ended up burning out after two weeks. I'm laughing because I should've seen it coming.[ The simple routine and rhythms I had before](https://www.simplehomemom.com/our-slow-and-simple-homeschooling-routine/) have been working for us so well for a long time. And when I stepped it up a notch from what was working, I definitely felt the burnout. Complicating things or just too much in the homeschool day can lead to burnout, I've always found. For refererence, my kids are 10, 7, almost 5, and almost 2. For more on homeschool mama burnout, check out [@homeschoolmama_self_care](https://www.instagram.com/homeschool_mama_self_care/) on Instagram. She's all aboout sharing tips to help homeschool moms in particular avoid burning out.
+At the beginning of January, I tried a new to us homeschool routine, but I ended up burning out after two weeks. I'm laughing because I should've seen it coming.[ The simple routine and rhythms I had before](https://www.simplehomemom.com/our-slow-and-simple-homeschooling-routine/) have been working for us so well for a long time. And when I stepped it up a notch from what was working, I definitely felt the burnout. Complicating things or just too much in the homeschool day can lead to burnout, I've always found. For refererence, my kids are 10, 7, almost 5, and almost 2. For more on homeschool mama burnout, check out Teresa over on her blog [here](https://capturingthecharmedlife.com/). She's all aboout sharing tips to help homeschool moms in particular avoid burning out.
 
 **_What did I change up in our homeschool routine that led to burnout?_**
 
@@ -41,7 +41,7 @@ After burning myself out, I came back to remembering to create a simple homescho
 2. Don't compare to other homeschooling families in the negative sense. Find inspiration, yes, but learn from vs. mimic another homeschool family. Every family's routines and rhyhtms will be different from another family's.
 3. Make adjustments a little at a time vs a lot of changes at once. Big changes all at once can often lead to stress, frustration, burnout, the list goes on. Taking baby steps with a simple homeschool routine is a lot more enjoyable and doable.
 
-I also found a few blogs with different perspectives on simple homeschool routines as well: 
+I also found a few blogs with different perspectives on simple homeschool routines as well:
 
 * [Our Fun & Simple Homeschool Schedule (with lots of outside play)](https://www.localpassportfamily.com/2020/03/our-fun-simple-homeschool-schedule-with-lots-of-outside-play.html)
 * [HOW TO CREATE A SUPER SIMPLE HOMESCHOOL ROUTINE](https://my-little-poppies.com/simple-homeschool-routine/)
