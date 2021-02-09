@@ -41,14 +41,12 @@ $$
 
 $\forall \; i,j > 0$, $i \leq n$, $j \leq m$, we have the following recurrence relation:
 
-<span>
 $$
 \begin{align}
     D(i,j) &= \min\Big\{\;D(i-1,j) + 1,\;D(i,j-1) + 1,\;D(i-1,j-1) + t(i,j) \Big\} \\
            &= \min\Big\{\;Insertion,\;Deletion,\;Substitution \Big\} 
 \end{align}
 $$
-</span>
 
 We allow four operations. It is best to think about comparing the last letters in the sub-strings defined above. Our four operations are: 
 
