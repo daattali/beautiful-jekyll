@@ -9,7 +9,7 @@ tags:
 - simple homeschool routine
 - homeschooling routines
 - homeschool routine
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/three-things-you-need-to-know-to-create-a-simple-homeschool-routine-for-your-family.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
