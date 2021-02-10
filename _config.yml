@@ -24,7 +24,7 @@ navbar-links:
     - Anime Movie: "Anime,Movie"
     - Literature: "Literature"
     - Game: "Game"
-    - Awesome Soft,Service:"Softserv"
+    - Awesome Soft,Service: "Softserv"
 
 # --- Logo --- #
 
