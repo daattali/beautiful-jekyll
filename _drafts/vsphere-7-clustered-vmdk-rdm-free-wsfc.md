@@ -9,3 +9,5 @@ The end of the raw device mapping tyrannie on Windows Server Failover Clusters (
 WSFC on vSphere has always required the use of RDM disks. This is due to the fact that WSFC uses SCSI-3 PRs (Persistent Reservations) commands to coordinate access to a clustered disk resource. It essentially uses this command to lock the volume so only the active node is allowed to write to it.
 
 But because VMFS has its own locking mechanisms, these SCSI commands are intercepted and discarded with traditional virtual disks. Hence the need for RDM disks acting as a mapping device for the physical LUN.
+
+Anyway, managing these RDM disks involves
