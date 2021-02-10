@@ -2,12 +2,13 @@
 
 - Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari.
 - Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
-- Fixed bug where navbar secondary level dropdown items didn't inherit te same colour as the primary navbar links
+- Fixed bug where navbar secondary level dropdown items didn't inherit the same colour as the primary navbar links
 - Fixed bug where the navbar "burger" collapsed button didn't always revert back to a light colour
 - Fixed bug where using an image as a navbar title did not render in GitHub Project pages that did not have a custom domain
 - Fixed issue where image thumbnails on the feed page were always forced into a square rather than maintaining a proper image aspect ratio
 - Added support for Patreon in the social network links in the footer
 - Fixed bug where special characters in the title led to broken share tags (#744)
+- Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
 
 ## v5.0.0 (2020-09-15)
 
