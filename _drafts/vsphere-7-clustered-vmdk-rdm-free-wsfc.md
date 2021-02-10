@@ -25,4 +25,6 @@ Unfortunately I can't demonstrate it as it is only available on FC backed datast
 * The Lun backing the datastore must support ATS SCSI commands (usually does).
 * The Lun must support Write Exclusive All Resgistrants (WEAR) type reservations.
 * The VMDKs must use Eager Zeroed Thick type.
-* 
+* Don't present LUNs used for clustered VMDK to host in version lower than 7.0. 
+* Do not combine clustered and non-clustered VMDKs on the same clustered datastore.
+* Dedicate one datastore per WSFC, as in don't share a clustered datastore between multiple WSFC instances.
