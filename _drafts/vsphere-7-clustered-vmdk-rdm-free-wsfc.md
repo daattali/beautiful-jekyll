@@ -10,4 +10,4 @@ WSFC on vSphere has always required the use of RDM disks. This is due to the fac
 
 But because VMFS has its own locking mechanisms, these SCSI commands are intercepted and discarded with traditional virtual disks. Hence the need for RDM disks acting as a mapping device for the physical LUN.
 
-Anyway, managing these RDM disks isn't that big of a deal, but it represents an exotic configuration in the environment and you have to be in sync with the storage team, it adds a bunch of LUNs, expanding the size is done on the storage array... 
+Anyway, managing these RDM disks isn't that big of a deal, but it represents an exotic configuration in the environment and you have to be in sync with the storage team, it adds a bunch of LUNs, expanding the size is done on the storage array... Things are better since vSphere 6.5 that added the ability to vmotion running WSFC nodes but still.
