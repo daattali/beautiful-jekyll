@@ -20,7 +20,7 @@ Anyway, vSphere 7.0 brings an amazing new feature called [clustered VMDK](https:
 
 Unfortunately I can't demonstrate it as it is only available on FC backed datastores as the time of this writing and I don't have that in my lab. However, here are a few things and caveats to know about clustered VMDK:
 
-* It is enabled at the datastore level, set the attribute "_Clustered VMDK Supported_" to "_yes_".
+* It is enabled at the datastore level, set the attribute "_Clustered VMDK Supported_" to "_yes_". VMFS-6 required.
 * The Windows Cluster Parameter "[_QuorumArbitrationTimeMax_](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/mscs/cluster-quorumarbitrationtimemax)_"_ must be set to 60.
 * The Lun backing the datastore must support ATS SCSI commands (usually does).
 * The Lun must support Write Exclusive All Resgistrants (WEAR) type reservations.
@@ -32,3 +32,8 @@ Unfortunately I can't demonstrate it as it is only available on FC backed datast
 Here is a small table of the maximums. As you can see it is quite limited so far and only available with FC storage but there is no doubt that future releases will improve those numbers as usual.
 
 ![](/img/clusteredvmdk1.png)
+
+There is also a fairly long [list of limitations ](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.wsfc.doc/GUID-04626D3C-A305-40BE-A7B9-4E7C7A30BA3D.html)that you can review here. The main ones being:
+
+* Cluster in a Box (CIB) configuration is not supported.
+* 
