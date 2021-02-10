@@ -4,7 +4,7 @@ title: vSphere 7 clustered VMDK - RDM-free WSFC !
 DATE: 
 
 ---
-### Introduction
+### Background
 
 The end of the raw device mapping tyrannie on Windows Server Failover Clusters (WSFC) is nigh! If you managed virtual environments that contain Windows Clusters, you probably know that these are a different kind of beast compared to your usual virtual machines equipped with thick and thick virtual disks.
 
@@ -21,6 +21,9 @@ Anyway, vSphere 7.0 brings an amazing new feature called [clustered VMDK](https:
 Unfortunately I can't demonstrate it as it is only available on FC backed datastores as the time of this writing and I don't have that in my lab. However, here are a few things and caveats to know about clustered VMDK:
 
 * It is enabled at the datastore level, set the attribute "_Clustered VMDK Supported_" to "_yes_". VMFS-6 required.
+
+![](/img/clusteredvmdk2.png)
+
 * The Windows Cluster Parameter "[_QuorumArbitrationTimeMax_](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/mscs/cluster-quorumarbitrationtimemax)_"_ must be set to 60.
 * The Lun backing the datastore must support ATS SCSI commands (usually does).
 * The Lun must support Write Exclusive All Resgistrants (WEAR) type reservations.
@@ -35,5 +38,7 @@ Here is a small table of the maximums. As you can see it is quite limited so far
 
 There is also a fairly long [list of limitations ](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.wsfc.doc/GUID-04626D3C-A305-40BE-A7B9-4E7C7A30BA3D.html)that you can review here. The main ones being:
 
-* Cluster in a Box (CIB) configuration is not supported.
-* 
+* Cluster in a Box (CIB) configuration is not supported (You must use anti-affinity DRS Rules to separate VMs and nodes of the cluster on different ESXi hosts.).
+* Hot expansion of a VMDK that is associated with a clustered VM is not supported (not sure how that case would be handled).
+
+Note that VMware provided a guide on how to migrate your WSFC enabled RDM disks to clustered VMDK and it's [THERE](https://core.vmware.com/resource/vsphere-7-rdm-shared-vmdk-migration).
