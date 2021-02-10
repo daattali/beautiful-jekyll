@@ -17,3 +17,8 @@ Managing these RDM disks isn't that big a deal, but it represents an exotic conf
 ### Clustered VMDK
 
 Anyway, vSphere 7.0 brings an amazing new feature called [clustered VMDK](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.wsfc.doc/GUID-97B054E2-2EB0-4E10-855B-521A38776F39.html "Clustered VMDK") that allows SCSI3-PR commands issued to a virtual disk, meaning you will no longer need an dedicated physical LUN to spin up a windows failover cluster.
+
+Unfortunately I can't demonstrate it as it is only available on FC backed datastores as the time of this writing and I don't have that in my lab. However, here are a few things to know about clustered VMDK:
+
+* It is enabled at the datastore level, set the attribute "_Clustered VMDK Supported_" to "_yes_".
+* 
