@@ -1,7 +1,7 @@
 {% if site.post_search %}
 
   <input type="text" id="search-input" placeholder="Search">
-  <p style="margin: 0.5rem 0"/>
+  <p style="margin: 0.5rem 0"></p>
   <ul id="results-container"></ul>
 
   <style>
@@ -35,18 +35,16 @@
 
   <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
   <script type="text/javascript">
-    var searchjson = `
-    [
-      {% for post in site.posts %}
-        {
-          "title"    : "{% if post.title != "" %}{{ post.title | escape }}{% else %}{{ post.excerpt | strip_html |  escape | strip }}{%endif%}",
-          "category" : "{{ post.tags | join: \', \' }}",
-          "url"      : "{{ site.baseurl }}{{ post.url }}",
-          "date"     : "{{ post.date | date: "%B %e, %Y" }}"
-        } {% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ]
-    `;
+    var searchjson = '[ \
+      {% for post in site.posts %} \
+        { \
+          "title"    : "{% if post.title != "" %}{{ post.title | escape }}{% else %}{{ post.excerpt | strip_html |  escape | strip }}{%endif%}", \
+          "category" : "{{ post.tags | join: \', \' }}", \
+          "url"      : "{{ site.baseurl }}{{ post.url }}", \
+          "date"     : "{{ post.date | date: "%B %e, %Y" }}" \
+        } {% unless forloop.last %},{% endunless %} \
+      {% endfor %} \
+    ]';
     searchjson = JSON.parse(searchjson);
 
     var sjs = SimpleJekyllSearch({
