@@ -77,4 +77,4 @@ Webサイト系
 | [Wikibooks](https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%96%E3%83%83%E3%82%AF%E3%82%B9) | 教科書,解説本 | GFDL                                  | △              | 同上                                           |
 | [INTERNET  ARCHIVE](https://archive.org/)                                                                  | コンテンツ全般 | さまざま                                  | ？              | 非営利非政府データアーカイブとしては恐らく最大級のもの。雑誌などが多いように見える。   |
 
-<span style="color:white">nyaa,13dl,e-hentai,nhentai,iknowwhatyoudownload,zlib,btdig,TPB,Torrenz2</span>
+<span style="color:white">権利的にヤバイやつ:nyaa,13dl,e-hentai,nhentai,iknowwhatyoudownload,zlib,btdig,TPB,Torrentz2</span>
