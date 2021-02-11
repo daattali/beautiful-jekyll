@@ -20,7 +20,7 @@ As an example, let's work with this very simple problem:
     S\_{2} &= vines
 \end{align}
 
-Then $D(3,2)$ is the minimum edits needed to convert $vin$ into $vi$. 
+Then $D(4,5)$ is the minimum edits needed to convert $vine$ into $vines$. 
 
 # Dynamic Programming Problem
 
