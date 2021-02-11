@@ -16,10 +16,10 @@ We have two strings $S_{1}$ and $S_{2}$, which have lengths $n$ and $m$. We want
 As an example, let's work with this very simple problem:
 
 $$
-\begin{align}
+\begin{equation}
     S\_{1} &= vine \\
     S\_{2} &= vines
-\end{align}
+\end{equation}
 $$
 
 Then $D(3,2)$ is the minimum edits needed to convert $vin$ into $vi$. 
