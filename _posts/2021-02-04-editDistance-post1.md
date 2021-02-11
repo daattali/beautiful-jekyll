@@ -16,7 +16,7 @@ We have two strings $S_{1}$ and $S_{2}$, which have lengths $n$ and $m$. We want
 As an example, let's work with this very simple problem:
 
 \begin{align}
-    S\_{1} &= vine \\
+    S\_{1} &= vine \\\\
     S\_{2} &= vines
 \end{align}
 
