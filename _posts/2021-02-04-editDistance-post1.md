@@ -53,7 +53,7 @@ $$
 
 <b><u> Recurrence Relation </u></b>
 
-$\forall \; i,j > 0$, $i \leq n$, $j \leq m$, we have the following recurrence relation:
+$\forall \; i,j > 0$, $i \leq n$, $j \leq m$, we have the following recurrence relation (using our costs defined above):
 
 $$
 \begin{align}
@@ -61,6 +61,18 @@ $$
            &= \min\Big\{\;Insertion,\;Deletion,\;Substitution\;or\;Exact \Big\}
 \end{align}
 $$
+
+where the cost of substitution or exact matches is:
+
+$$
+\begin{align}
+    t(i,j) = \begin{cases} 2 &\mbox{ if } S\_{1}[i] \neq S\_{2}[j] \\\\\\
+    0 &\mbox{ otherwise}
+    \end{cases}
+\end{align}
+$$
+
+The recursion basically says that to compute minimum edits, all we have to do is to make the optimal action on suffixes defined by $(i,j)$, then assume we are make optimal actions in all other combinations of suffixes that emanate from $(i,j)$.
 
 
 ## Intution for the Indices : Think Backwards
