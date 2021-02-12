@@ -7,14 +7,16 @@ I have been recently dealing with string matching algorithms for a project I'm w
 
 # Edit Distance Problem
 
-We have two strings $S_{1}$ and $S_{2}$, which have lengths $n$ and $m$. We want to calculate the minimum number of edits to transform $S_{1}$ into $S_{2}$.  As a very simple case, say we want to compute the minimum number of edits it takes to transform $vine$ into $vines$: 
+We have two strings $S_{1}$ and $S_{2}$, which have lengths $n$ and $m$. We want to calculate the minimum number of edits to transform $S_{1}$ into $S_{2}$.  
+
+As a very simple case, say we want to compute the minimum number of edits it takes to transform $vine$ into $vines$: 
 
 \begin{align}
     S\_{1} &= vine \\\\\\
     S\_{2} &= vines
 \end{align}
 
-We formalize this minimum distance using the function $D$, taking two arguments $(i,j)$, where $i$ and $j$ represent the last letter index in substrings (or suffixes) of $S_{1}[1,..,i]$ and $S_{2}[1,..,j]$. 
+We formalize this minimum distance using the function $D$, taking two arguments $(i,j)$, where $i$ and $j$ represent the last letter index in substrings (or suffixes) of $S_{1}[1,..,i]$ and $S_{2}[1,..,j]$:
 
 \begin{equation}
     D(i,j) = \text{Minimum Edit Distance b\w}\;S_{1}[1,..,i]\;\text{and}\;S_{2}[1,..,j]
