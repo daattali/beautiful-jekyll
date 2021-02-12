@@ -19,6 +19,8 @@ layout: null
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
     xhr.onreadystatechange = function () {
       if(xhr.readyState === XMLHttpRequest.DONE) {
         var status = xhr.status;
