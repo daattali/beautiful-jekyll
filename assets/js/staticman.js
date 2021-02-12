@@ -17,22 +17,18 @@ layout: null
     let url = endpoint + repository + '/' + branch + '/comments';
     let data = $(this).serialize();
 
-    fetch(url, {
-      method: "POST",
-      body: data,
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+    xhr.onreadystatechange = function () {
+      if(xhr.readyState === XMLHttpRequest.DONE) {
+        var status = xhr.status;
+        if (status >= 200 && status < 400) {
+          formSubmitted();
+        } else {
+          formError();
+        }
       }
-    }).then(function(res) {
-      if (res.ok) {
-        formSubmitted();
-      } else {
-        formError();
-      }
-    }).catch(function(error) {
-      formError();
-      console.log(error);
-    });
+    };
 
     function formSubmitted() {
       $('#comment-form-submit').addClass('d-none');
@@ -50,6 +46,8 @@ layout: null
       showAlert('failure');
       $(form).removeClass('disabled');
     }
+
+    xhr.send(data);
 
     return false;
   });
