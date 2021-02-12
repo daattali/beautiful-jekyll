@@ -7,24 +7,38 @@ I have been recently dealing with string matching algorithms for a project I'm w
 
 # Edit Distance Problem
 
-We have two strings $S_{1}$ and $S_{2}$, which have lengths $n$ and $m$. We want to calculate the minimum number of edits to transform $S_{1}$ into $S_{2}$.  We formalize this minimum distance using the function $D$, taking two arguments $(i,j)$, where $i$ and $j$ represent the last letter index in substrings of $S_{1}[1,..,i]$ and $S_{2}[1,..,j]$.
-
-\begin{equation}
-    D(i,j) = \text{Minimum Edit Distance b\w}\;S_{1}[1,..,i]\;\text{and}\;S_{2}[1,..,j]
-\end{equation}
-
-As an example, let's work with this very simple problem:
+We have two strings $S_{1}$ and $S_{2}$, which have lengths $n$ and $m$. We want to calculate the minimum number of edits to transform $S_{1}$ into $S_{2}$.  As a very simple case, say we want to compute the minimum number of edits it takes to transform $vine$ into $vines$: 
 
 \begin{align}
     S\_{1} &= vine \\\\\\
     S\_{2} &= vines
 \end{align}
 
-Then $D(4,5)$ is the minimum edits needed to convert $vine$ into $vines$. 
+We formalize this minimum distance using the function $D$, taking two arguments $(i,j)$, where $i$ and $j$ represent the last letter index in substrings (or suffixes) of $S_{1}[1,..,i]$ and $S_{2}[1,..,j]$. 
+
+\begin{equation}
+    D(i,j) = \text{Minimum Edit Distance b\w}\;S_{1}[1,..,i]\;\text{and}\;S_{2}[1,..,j]
+\end{equation}
+
+Note, that $D$ is just a value function in the language of dynamic programming. For our application, $D(4,5)$ is the minimum edits needed to convert $vine$ into $vines$. 
 
 # Dynamic Programming Problem
 
+For this specific edit distance setup, we allow four operations. It is best to think about comparing the last letters in the sub-strings defined above. Our four operations are: 
+
+1. Insertion : letter inserted at the end of $S_{1}[1,..,i]$
+2. Deletion : letter deleted from the end of $S_{1}[1,..,i]$ 
+3. Substitution : letter $S_{1}[i]$ is subsituted by $S_{2}[j]$
+4. Exact Match : letter $S_{1}[i]$ is already the same as $S_{2}[j]$, and thus nothing is done.
+
 To solve this problem, we will use a dynamic programming setup. We define the following recurrence relation with the initial conditions. Note an index of 0 is equivalent to the empty string. 
+
+To define this setup, we need to define some cost of performing the operations. We will use the following costs:
+
+1. c(Insertion) = 1
+2. c(Deletion) = 1
+3. c(Substitution) = 2
+4. c(Exact Match) = 0
 
 <b><u> Initial Conditions </u></b>
 
@@ -42,18 +56,10 @@ $\forall \; i,j > 0$, $i \leq n$, $j \leq m$, we have the following recurrence r
 $$
 \begin{align}
     D(i,j) &= \min\Big\{\;D(i-1,j) + 1,\;D(i,j-1) + 1,\;D(i-1,j-1) + t(i,j) \Big\} \\
-           &= \min\Big\{\;Insertion,\;Deletion,\;Substitution or Exact \Big\} 
+           &= \min\Big\{\;Insertion,\;Deletion,\;Substitution\;or\;Exact \Big\}
 \end{align}
 $$
 
-We allow four operations. It is best to think about comparing the last letters in the sub-strings defined above. Our four operations are: 
-
-1. Insertion : letter inserted at the end of $S_{1}[1,..,i]$
-2. Deletion : letter deleted from the end of $S_{1}[1,..,i]$ 
-3. Substitution : letter $S_{1}[i]$ is subsituted by $S_{2}[j]$
-4. Exact Match : letter $S_{1}[i]$ is already the same as $S_{2}[j]$, and thus nothing is done.
-
-We 
 
 ## Intution for the Indices : Think Backwards
 
@@ -75,7 +81,7 @@ Insertion is equivalent to the following transformation:
     S_{1}[1,..i] = vin{\bf{e}} \to vin{\bf{e}}s = S_{1}[1,..,i] + s
 \end{align}
 
-What happens to our pointers in the previous iteration, the idea is that we have now matched the added $s$ to the $S_{2}[5]=s$, so we iterate backwards for our index for $S_{2}$ but not for $S_{1}$.
+What happens to our pointers in the previous iteration. We basically fill in a "gap" or empty space at the end of $S_{1}$, this "gap" is paired with the $s$ at the end of $S_{2}$. Thus, we iterate backwards for our index for $S_{2}$ but not for $S_{1}$.
 
 Thus, with insertation the new indices are $(i,j-1)$.
 
@@ -87,9 +93,11 @@ Deletion is equivalent to:
     S_{1}[1,..i] = vin{\bf{e}} \to vi{\bf{n}} = S_{1}[1,..,i-1]
 \end{align}
 
-Now why might we delete? Remember, the recursion depends on prior decisions. So if the last letter in $S_{1}[1,..,i-1]$ is the same as the last letter $S_{2}[1,..,j]$, then maybe we are willing to sacrifice a high cost deletion for a low cost exact match. 
+If we are thinking about "gaps", deletion is the "inverse" operation of insertion. We now insert a "gap" at the end of $S_{2}$, this gap is paired with the $e$ at the end of $S_{1}$. 
 
 Thus, with deletion the new indices as $(i-1,j)$.
+
+As an aside, why might we delete? Remember, the recursion depends on prior decisions. So if the last letter in $S_{1}[1,..,i-1]$ is the same as the last letter $S_{2}[1,..,j]$, then maybe we are willing to sacrifice a high cost deletion for a low cost exact match. 
 
 <b> Substitution or Exact Match </b>
 
