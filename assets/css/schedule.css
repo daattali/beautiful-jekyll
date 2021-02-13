@@ -1,3 +1,8 @@
+
+.schedule-grid-container {
+    overflow-x: auto;
+}
+
 .schedule-controls {
     margin-top: 60px;
     display: flex;
@@ -14,6 +19,15 @@
     font-weight: bold;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.schedule-controls .control:first-child {
+    border-top-left-radius: 7px;
+}
+
+.schedule-controls .control:last-child {
+    border-top-right-radius: 7px;
 }
 
 .schedule:not(.showing-friday) .friday.control {
@@ -41,12 +55,16 @@
 
 .schedule-grid {
     display: grid;
-    grid-template-columns: [time-col] 1fr [main] 1fr [secondary] 1fr [tabletop] 1fr [artists-dealers] 1fr;
+    grid-template-columns: [time-col] 150px [main] 1fr [secondary] 1fr [tabletop-1] 1fr [tabletop-2] 1fr [artists-dealers] 1fr;
     grid-template-rows: [header] auto;
     grid-auto-rows: 1fr;
     grid-gap: 3px;
     background: black;
     margin-top: 0px;
+    
+    min-width: 750px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 .schedule-header {
@@ -63,6 +81,19 @@
 
 .schedule-item {
     color: black;
+    position: relative;
+}
+
+.schedule-item.age-restriction-18-only {
+    color: black;
+    position: relative;
+}
+
+.schedule-item .age-restriction-icon {
+    display: inline-block;
+    float: right;
+    width: 35px;
+    margin-left: 8px;
 }
 
 .schedule:not(.showing-friday) .schedule-item.day-friday {
@@ -86,6 +117,49 @@
     font-weight: bold;
 }
 
-.schedule-time:nth-child( odd){
+.schedule-time:nth-child( even){
     background-color: #e6e6e6;
+}
+
+.schedule-time.last-time{
+    border-bottom-left-radius: 7px;
+}
+
+
+
+
+
+
+.schedule-guide-header {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.schedule-guide .guide-item {
+    border-radius: 7px;
+    border: 2px solid #1e465f;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.schedule-guide .guide-item .item-header {
+    background-color: #1e465f;
+    font-size: 1.1em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.schedule-guide .guide-item .item-row {
+    border-bottom: 2px solid #1e465f;
+    padding: 5px 10px;
+}
+
+.schedule-guide .guide-item .item-row.description{
+    font-size: 1em;;
+}
+
+.schedule-guide .guide-item .item-row:last-of-type {
+    border-bottom: none;
 }
