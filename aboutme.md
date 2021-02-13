@@ -1,16 +1,15 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+# subtitle:
 ---
-
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+My name is Rodrigo Alejandro Vargas Hernandez. I was born in the great Mexico city in the late 80s.
+As any other mexican kid, I grew up playing soccer; however, as I got older and "wiser" my taste for sports change and I fall in love with cycling and basketball.
+
+I did my undergraduate at the National Autonomus University of Mexico (UNAM) where I got my degree in Chemistry. While doing my undegraduate I found out that my main interest was not on wet chemsitry but rather how to simulate chemical reactions in a computer.
+This made me move to Vancouver Canada to prosue my PhD under the supervision of professor R. Krems. 
+During my PhD I found two new passions that changed my life, cycling and machine learning. The later becae the main topic of my research carear. 
+
+
