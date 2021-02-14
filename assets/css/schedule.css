@@ -87,6 +87,7 @@ html {
     color: black;
     position: relative;
     cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 body.js-supported .schedule-grid .schedule-item:hover {
@@ -100,8 +101,9 @@ body.js-supported .schedule-grid .schedule-item:hover a {
 
 .schedule-item-link,
 .schedule-item-link:focus {
-    color: black;
+    color: inherit;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .schedule-item-link:hover,
