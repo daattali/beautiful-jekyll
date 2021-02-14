@@ -22,6 +22,7 @@ author: Rodrigo Alejandro Vargas-Hernandez
 navbar-links:
   About Me: "aboutme"
   Publications: "publications"
+  Research: "research"
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
