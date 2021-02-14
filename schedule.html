@@ -101,15 +101,33 @@ css:
                     Get the span of the grid cell based on the Duration field
                 {% endcomment %}
                 {% assign duration = schedule_item["Duration"] | split: " " %}
+                {% assign total_duration = 0 %}
+                {% assign last_itm_number = 0 %}
 
-                {% case duration.size %}
-                    {% when 2 %}
-                        {% assign total_duration = duration[0] %}
-                    {% when 4 %}
-                        {% assign total_duration = duration[0] | times: 60 | plus: duration[2] %}
+                {% for itm in duration%}
+
+                    {% assign mod = forloop.index | modulo: 2 %}
+
+                    {% if mod != 0 %}
+
+                        {% assign last_itm_number = itm %}
+
                     {% else %}
-                        {%continue%}
-                {% endcase %}
+
+                        {% case itm %}
+                            {% when 'hour' %}
+                            {% when 'hours' %}
+                                {% assign total_duration = last_itm_number | times: 60 | plus: total_duration%}
+                            {% when 'minute' %}
+                            {% when 'minutes' %}
+                                {% assign total_duration = last_itm_number | plus: total_duration%}
+                            {% else %}
+                                {%continue%}
+                        {% endcase %}
+
+                    {% endif %}
+
+                {% endfor %}
 
                 {% assign duration_length = total_duration | divided_by: 30.0 | round %}
 
