@@ -33,7 +33,7 @@ Physical Extrapolation of Quantum Observables by Generalization with Gaussian Pr
 In: Schütt K., Chmiela S., von Lilienfeld O., Tkatchenko A., Tsuda K., Müller KR. (eds) [Machine Learning Meets Quantum Physics. Lecture Notes in Physics, vol 968. Springer, Cham](ttps://doi.org/10.1007/978-3-030-40245-7_9)\
 R. A. Vargas-Hernández, and R. V. Krems
 
-Six-dimensional potential energy surface for NaK-NaK collisions: Gaussian Process representation with correct asymptotic form.\ 
+Six-dimensional potential energy surface for NaK-NaK collisions: Gaussian Process representation with correct asymptotic form.  
 [*J. Chem. Phys.* **150**, 064106 (2019).](https://doi.org/10.1063/1.5082740)\
   A. Christianen, T. Karman,  R. A. Vargas-Hernández, G. C. Groenenboom, and Roman V. Krems
 
