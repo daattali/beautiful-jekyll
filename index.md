@@ -4,7 +4,7 @@ title: About me
 subtitle: Rodrigo Alejandro Vargas Hernández
 ---
 
-**I am** a postdoctoral researcher at the University of Toronto in professor P. Brumers' group. I am also an associate postdoctoral researcher at the [Vector Institute](https://vectorinstitute.ai/about/).
+**I am** a postdoctoral researcher at the University of Toronto in professor [P. Brumers' group](https://www.chemistry.utoronto.ca/people/directories/all-faculty/paul-brumer). I am also an associate postdoctoral researcher at the [Vector Institute](https://vectorinstitute.ai/about/).
 I did my PhD in professor [R. Krems' group](https://groups.chem.ubc.ca/krems/) at the University of British Columbia. The main topic of my research is applications.
 
 **My current research topics are** applications of *automatic differentiation* to optimize energy transport systems under natural light, and the construction of more accurate *potential energy surfaces* using Gaussian processes.
