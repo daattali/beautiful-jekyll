@@ -13,6 +13,7 @@ baseurl: ""
 
 # Name of website
 title: Home
+description: This is my personal website 
 
 # Your name to show in the footer
 author: Rodrigo Alejandro Vargas-Hernandez
