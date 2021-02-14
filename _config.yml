@@ -221,19 +221,18 @@ defaults:
 
 # Exclude these files from production site
 exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
+#  - CHANGELOG.md
+# - CNAME
+#  - Gemfile
+#  - Gemfile.lock
   - LICENSE
   - README.md
-  - screenshot.png
-  - docs/
+#  - screenshot.png
+#  - docs/
 
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
+#  - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
