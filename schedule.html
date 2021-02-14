@@ -5,6 +5,11 @@ subtitle: Some temp text here
 css:
     - "/assets/css/schedule.css"
 ---
+{% comment %}
+    To update the schedule, just download the Schedule List sheet from the google spreadsheet as a csv.
+    And then drop it in the _data folder under the name "schedule.csv"
+{% endcomment %}
+
 {% assign schedule = site.data.schedule %}
 
 <div class="schedule showing-friday">
