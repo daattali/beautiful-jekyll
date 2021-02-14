@@ -26,7 +26,7 @@ A. Jasinski, J. Montaner, R. C. Forrey, B. H. Yang, P. C. Stancil, N. Balakrishn
 
 Bayesian Optimization for Calibrating and Selecting Hybrid-Density Functional Models.\
 [*J. Phys. Chem. A* **124**, 4053 (2020).](https://doi.org/10.1021/acs.jpca.0c01375)\
-R. A.Vargas-Hernández\ 
+R. A.Vargas-Hernández\
 Published as part of J. Phys. Chem. virtual special issue "*Machine Learning in Physical Chemistry*".
 
 Physical Extrapolation of Quantum Observables by Generalization with Gaussian Processes.\
@@ -34,7 +34,7 @@ In: Schütt K., Chmiela S., von Lilienfeld O., Tkatchenko A., Tsuda K., Müller 
 R. A. Vargas-Hernández, and R. V. Krems 
 
 Six-dimensional potential energy surface for NaK-NaK collisions: Gaussian Process representation with correct asymptotic form.\ 
-[*J. Chem. Phys.* **150**, 064106 (2019).](https://doi.org/10.1063/1.5082740)\
+[*J. Chem. Phys.* **150**, 064106 (2019).](https://doi.org/10.1063/1.5082740)\ 
 A. Christianen, T. Karman,  R. A. Vargas-Hernández, G. C. Groenenboom, and Roman V. Krems
 
 Assessing Gaussian Process Regression and Permutationally Invariant Polynomial Approaches to Represent High-Dimensional Potential Energy Surfaces.\
@@ -42,7 +42,7 @@ Assessing Gaussian Process Regression and Permutationally Invariant Polynomial A
 C. Qu, Q. Yu, B. L. Van Hoozen Jr., J. M. Bowman, and R. A. Vargas-Hernández
 
 Neural Networks vs Gaussian Process Regression for Representing Potential Energy Surfaces: a Comparative Study of Fit Quality and Vibrational Spectrum Accuracy.\
-[*J. Chem. Phys.* **148**, 241702 (2017).]({https://aip.scitation.org/doi/10.1063/1.5003074)(Editor's picks)\
+[*J. Chem. Phys.* **148**, 241702 (2017).]({https://aip.scitation.org/doi/10.1063/1.5003074) (Editor's picks)\
 A. Kamath, R. A. Vargas-Hernández, R. V. Krems, T. Carrington Jr., and S. Manzhos
 
 
