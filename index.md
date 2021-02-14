@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-# subtitle:
+subtitle: Rodrigo Alejandro Vargas Hernández
 ---
 
 **I am** a postdoctoral researcher at the University of Toronto in professor P. Brumers' group. I am also an associate postdoctoral researcher at the [Vector Institute](https://vectorinstitute.ai/about/).
