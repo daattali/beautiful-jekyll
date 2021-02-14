@@ -86,6 +86,27 @@ html {
 .schedule-item {
     color: black;
     position: relative;
+    cursor: pointer;
+}
+
+body.js-supported .schedule-grid .schedule-item:hover {
+    background-color: #1e465f;
+}
+
+body.js-supported .schedule-grid .schedule-item:hover a {
+    color: #b7a43a;
+    text-decoration: underline;
+}
+
+.schedule-item-link,
+.schedule-item-link:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.schedule-item-link:hover,
+.schedule-item-link:active {
+    color: #b7a43a;
 }
 
 .schedule-item.age-restriction-18-only,
@@ -111,17 +132,6 @@ html {
 
 .schedule:not(.showing-sunday) .schedule-item.day-sunday {
     display: none;
-}
-
-.schedule-item-link,
-.schedule-item-link:focus {
-    color: black;
-    text-decoration: none;
-}
-
-.schedule-item-link:hover,
-.schedule-item-link:active {
-    color: #b7a43a;
 }
 
 .schedule-time {

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Schedule
-subtitle: Some temp text here
+title: Programming Schedule
+subtitle: Click any event to be brought to it's guide entry below. <br> <br> Use the tabs above the schedule to change days.
 css:
     - "/assets/css/schedule.css"
 ---
@@ -147,14 +147,14 @@ css:
                 {% endcomment %}
                 
                 {% assign schedule_title_pre = schedule_item["Title"] | split: '(' %}
-                {% assign schedule_title_pre = schedule_title_pre[0]%}
+                {% assign schedule_title_pre = schedule_title_pre[0] | strip %}
                 {% assign schedule_fragment = schedule_title_pre | strip | downcase | slugify %}
 
 
                 {% comment %}
                     Schedule item template
                 {% endcomment %}
-                <div class="schedule-item day-{{day}} location-{{location}} age-restriction-{{age_restriction_slug}}" style="grid-area: {{grid_y}} / {{location}}; grid-row-end: span {{ duration_length }}">
+                <div class="schedule-item day-{{day}} location-{{location}} age-restriction-{{age_restriction_slug}}" style="grid-area: {{grid_y}} / {{location}}; grid-row-end: span {{ duration_length }}" data-guide-item ="#{{schedule_fragment}}">
                     {% if age_restriction_slug == "18-only" %}
 
                         <img class="age-restriction-icon" src="/assets/img/eighteenplus.svg">
@@ -178,12 +178,17 @@ css:
 
 <script>
     window.addEventListener('load', function(){
+        $('body').addClass('js-supported');
         $('.schedule-controls .control').on('click', function( e){
             var elem = e.target;
             var day = $(elem).attr( 'data-day');
 
             $('.schedule').removeClass( ['showing-friday', 'showing-saturday', 'showing-sunday']);
             $('.schedule').addClass( 'showing-' + day)
+        });
+        $('.schedule-item').on('click', function( e){
+            e.preventDefault();
+            location.href = $(e.target).closest('.schedule-item').attr('data-guide-item');
         });
     });
 </script>
@@ -199,16 +204,21 @@ css:
 
 <div class="schedule-guide">
     {% for schedule_item in alphabetical_schedule %}
-    
+
+
         {% assign is_duplicate = schedule_item['Duplicate'] | strip %}
-        {% if is_duplicate != "" %}
+
+        {% if is_duplicate != nil and is_duplicate != "" %}
             {% continue %}
         {% endif %%}
+        
 
-        {% if schedule_item['Additional Hosts'] != nil and schedule_item['Additional Hosts'] != "" %}
-            {% assign schedule_hosts = schedule_item['Hosts'] | append: ", " | append: schedule_item['Additional Hosts'] %}
+        {% assign additional_hosts = schedule_item['Additional Hosts'] | strip%}
+
+        {% if additional_hosts != nil and additional_hosts != "" %}
+            {% assign schedule_hosts = schedule_item['Hosts'] | strip | append: ", " | append: additional_hosts %}
         {% else %}
-            {% assign schedule_hosts = schedule_item['Hosts'] %}
+            {% assign schedule_hosts = schedule_item['Hosts'] | strip %}
         {% endif %}
 
 
@@ -217,9 +227,18 @@ css:
         {% endcomment %}
         
         {% assign schedule_title_pre = schedule_item["Title"] | split: '(' %}
-        {% assign schedule_title_pre = schedule_title_pre[0]%}
+        {% assign schedule_title_pre = schedule_title_pre[0] | strip %}
         {% assign schedule_fragment = schedule_title_pre | strip | downcase | slugify %}
 
+
+        {% comment %}
+            Clean and prep other fields.
+        {% endcomment %}
+
+        {% assign age_restriction = schedule_item["Age Restriction"] | strip %}
+        {% assign schedule_location = schedule_item["Location"] | strip %}
+        {% assign schedule_description = schedule_item["Description"] | strip %}
+        
         
         {% comment %}
             Schedule item template
@@ -230,10 +249,22 @@ css:
                 <span class="title">{{ schedule_title_pre }}</span>
                 <span class="datetime">{{ schedule_item["Day"] }}, {{ schedule_item["Start Time"] }}</span>
             </div>
-            <div class="item-row age-restriction">{{ schedule_item["Age Restriction"] }}</div>
-            <div class="item-row hosts">Hosted By: {{ schedule_hosts }}</div>
-            <div class="item-row location">Location: {{ schedule_item["Location"] }}</div>
-            <div class="item-row description">{{ schedule_item["Description"] }}</div>
+
+            {% if age_restriction != nil and age_restriction != "" %}
+                <div class="item-row age-restriction">{{ age_restriction }}</div>
+            {% endif %}
+            
+            {% if schedule_hosts != nil and schedule_hosts != "" %}
+                <div class="item-row hosts">Hosted By: {{ schedule_hosts }}</div>
+            {% endif %}
+
+            {% if schedule_location != nil and schedule_location != "" %}
+                <div class="item-row location">Location: {{ schedule_location }}</div>
+            {% endif %}
+
+            {% if schedule_description != nil and schedule_description != "" %}
+                <div class="item-row description">{{schedule_description}}</div>
+            {% endif %}
         </div>
     {% endfor %}
 </div>
