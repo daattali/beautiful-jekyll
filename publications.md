@@ -55,7 +55,7 @@ R. A. Vargas-Hernández, and R. V. Krems
 
 ## Quantum Simulators
 Engineering extended Hubbard models with Zeeman excitations of ultracold Dy atoms.
-[*J.  Phys. B * **49**, 235501 (2016).](http://iopscience.iop.org/article/10.1088/0953-4075/49/23/235501/meta)
+[*J.  Phys. B* **49**, 235501 (2016).](http://iopscience.iop.org/article/10.1088/0953-4075/49/23/235501/meta)
 R. A. Vargas-Hernández, and R. V. Krems, 
 
 ## PhD Thesis
