@@ -88,7 +88,8 @@ html {
     position: relative;
 }
 
-.schedule-item.age-restriction-18-only {
+.schedule-item.age-restriction-18-only,
+.schedule-item.age-restriction-21-only {
     color: black;
     position: relative;
 }
