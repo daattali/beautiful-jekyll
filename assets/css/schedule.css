@@ -1,4 +1,8 @@
 
+html {
+    scroll-padding-top: 65px;
+}
+
 .schedule-grid-container {
     overflow-x: auto;
 }
@@ -106,6 +110,17 @@
 
 .schedule:not(.showing-sunday) .schedule-item.day-sunday {
     display: none;
+}
+
+.schedule-item-link,
+.schedule-item-link:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.schedule-item-link:hover,
+.schedule-item-link:active {
+    color: #b7a43a;
 }
 
 .schedule-time {

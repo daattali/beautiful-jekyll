@@ -135,12 +135,19 @@ css:
 
                 {% assign duration_length = total_duration | divided_by: 30.0 | round %}
 
+                {% comment %}
+                    Fragment code that connects the schedule item to the guide item.
+                    Splitting on ( done on request to deal with items that differ slightly only by parenthesis
+                    This must match down below.
+                {% endcomment %}
+                
+                {% assign schedule_fragment_pre = schedule_item["Title"] | split: '(' %}
+                {% assign schedule_fragment = schedule_fragment_pre[0] | strip | downcase | slugify %}
 
 
                 {% comment %}
-                    Schedule Item template
+                    Schedule item template
                 {% endcomment %}
-                
                 <div class="schedule-item day-{{day}} location-{{location}} age-restriction-{{age_restriction_slug}}" style="grid-area: {{grid_y}} / {{location}}; grid-row-end: span {{ duration_length }}">
                     {% if age_restriction_slug == "18-only"%}
 
@@ -148,9 +155,10 @@ css:
 
                     {% endif %}
 
-                    {{ schedule_item["Title"] }}
+                    <a class="schedule-item-link" href="#{{schedule_fragment}}">
+                        {{ schedule_item["Title"] }}
+                    </a>
                 </div>
-
 
             {% endfor %}
         </div>
@@ -192,7 +200,20 @@ css:
             {% assign schedule_hosts = schedule_item['Hosts'] %}
         {% endif %}
 
-        <div class="guide-item ">
+
+        {% comment %}
+            This must match up above, see above for more info.
+        {% endcomment %}
+        
+        {% assign schedule_fragment_pre = schedule_item["Title"] | split: '(' %}
+        {% assign schedule_fragment = schedule_fragment_pre[0] | strip | downcase | slugify %}
+
+        
+        {% comment %}
+            Schedule item template
+        {% endcomment %}
+
+        <div id="{{schedule_fragment}}" class="guide-item">
             <div class="item-header">
                 <span class="title">{{ schedule_item["Title"] }}</span>
                 <span class="datetime">{{ schedule_item["Day"] }}, {{ schedule_item["Start Time"] }}</span>
