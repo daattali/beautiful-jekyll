@@ -5,6 +5,12 @@
 
 # --- Required options --- #
 
+
+# url is the full website URL
+# baseurl is the website's URL without the hostname
+url: "http://rodrigoavargashdz.github.io"
+baseurl: ""
+
 # Name of website
 title: About me
 
