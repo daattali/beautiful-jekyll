@@ -92,6 +92,7 @@ css:
                     For some reason I can't call these location_slug and day_slug without breaking the code?
                     But yeah, these are slugs for use as classes.
                 {% endcomment %}
+
                 {% assign location = schedule_item["Location"] | strip | downcase | slugify %}
                 {% assign day = schedule_item["Day"] | strip | downcase | slugify %}
                 {% assign age_restriction_slug = schedule_item["Age Restriction"] | strip | downcase | slugify%}
@@ -100,6 +101,7 @@ css:
                 {% comment %}
                     Get the span of the grid cell based on the Duration field
                 {% endcomment %}
+                
                 {% assign duration = schedule_item["Duration"] | split: " " %}
                 {% assign total_duration = 0 %}
                 {% assign last_itm_number = 0 %}
@@ -116,9 +118,11 @@ css:
 
                         {% case itm %}
                             {% when 'hour' %}
+                                {% assign total_duration = last_itm_number | times: 60 | plus: total_duration%}
                             {% when 'hours' %}
                                 {% assign total_duration = last_itm_number | times: 60 | plus: total_duration%}
                             {% when 'minute' %}
+                                {% assign total_duration = last_itm_number | plus: total_duration%}
                             {% when 'minutes' %}
                                 {% assign total_duration = last_itm_number | plus: total_duration%}
                             {% else %}
@@ -146,6 +150,8 @@ css:
 
                     {{ schedule_item["Title"] }}
                 </div>
+
+
             {% endfor %}
         </div>
     </div>
