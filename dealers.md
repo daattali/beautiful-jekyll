@@ -14,6 +14,6 @@ We recognize that virtual platforms present unique difficulties when directing t
 
 If you have any feedback or inquiry about the application process or any other related topics, please contact us at [info@fursquared.com](mailto:info@fursquared.com).
 
-## [Click here for the Fur Squared 2021 Virtual Art & Dealer Form (Closes January 29th\!)](https://docs.google.com/forms/d/1m_wfXagESRKXt7onfnJE88ZgzMazasVNnZDT8_wwS50/viewform)
+## Art & Dealer Form Closed January 29th
 
 Expect more information soon as we work behind the scenes to put together this incredible virtual event\!
