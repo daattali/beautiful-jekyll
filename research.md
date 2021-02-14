@@ -6,7 +6,7 @@ title: Research
 ## Machine learning to discover phase transitions
 What if we could explore physical observables where data could not be aquired? 
 
-$`a^2+b^2=c^2`$
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 
 ## Potential energy surfaces with Gaussian Processes
