@@ -168,6 +168,11 @@ body.js-supported .schedule-grid .schedule-item:hover a {
     border: 2px solid #1e465f;
     margin-top: 30px;
     margin-bottom: 30px;
+    transition: border-color 0.2s ease;
+}
+
+.schedule-guide .guide-item:hover{
+    border-color: #2a6386;
 }
 
 .schedule-guide .guide-item .item-header {
@@ -177,11 +182,21 @@ body.js-supported .schedule-grid .schedule-item:hover a {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.schedule-guide .guide-item:hover .item-header{
+    background-color: #2a6386;
 }
 
 .schedule-guide .guide-item .item-row {
     border-bottom: 2px solid #1e465f;
     padding: 5px 10px;
+    transition: border-color 0.2s ease;
+}
+
+.schedule-guide .guide-item:hover .item-row {
+    border-color: #2a6386;
 }
 
 .schedule-guide .guide-item .item-row.description{
