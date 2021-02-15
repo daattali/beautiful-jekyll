@@ -1,58 +1,30 @@
 ---
-# layout: page
-title: Research
-# subtitle:
-recon-list:
-  - name: GP extrapolation
-    desc: Phase transitions with GPs.
-    url: aboutme.md
-    img: /assets/img/spin_extrapolation_prl.png
+layout: null
+title : Research
 ---
-<br>
-
-## Released projects and packages
-
-These projects are in a usable form. Packages have been developed following
-RECON's standards, are fully functional, documented and tested, and have been
-released on CRAN.
-
-{% include list-circles.html items=page.recon-list %}
-
-
-
-
-<br>
-
-## Up-and-coming packages
-
-The RECON packages listed below are still in development. They may be functional
-already, but a stable version has yet to be released.
-
-{% include list-circles.html items=page.upcoming-list %}
-
-
-
-
-<br>
-
-## Related packages
-
-The packages listed below mostly predate RECON, but have been authored by RECON
-members and are relevant for infectious disease epidemiology.
-
-{% include list-circles.html items=page.related-list %}
-
-
-<!---
-# ![ML to discover phase transitions](/assets/img/spin_extrapolation_prl.png){: style="float: right"}
-# What if we could explore physical observables where data could not be aquired? 
-
-# <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
-
-
-# ## Potential energy surfaces with Gaussian Processes
-
-
-
-# ## Inverse design of physical models
---->
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    {% if site.title %}
+    <title>{{ site.title | xml_escape }}</title>
+    {% endif %}
+    {% if site.rss-description %}
+    <description>{{ site.rss-description | xml_escape }}</description>
+    {% endif %}
+    <link>{{ '' | absolute_url }}</link>
+    <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+    {% assign excerpt_length = site.excerpt_length | default: 0 %}
+    {% for post in site.posts limit:0 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>
+          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
+          {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}
+        </description>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ post.url | absolute_url }}</link>
+        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
