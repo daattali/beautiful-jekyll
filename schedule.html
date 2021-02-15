@@ -1,0 +1,270 @@
+---
+layout: page
+title: Programming Schedule
+subtitle: Click any event to be brought to it's guide entry below. <br> <br> Use the tabs above the schedule to change days.
+css:
+    - "/assets/css/schedule.css"
+---
+{% comment %}
+    To update the schedule, just download the Schedule List sheet from the google spreadsheet as a csv.
+    And then drop it in the _data folder under the name "schedule.csv"
+{% endcomment %}
+
+{% assign schedule = site.data.schedule %}
+
+<div class="schedule showing-friday">
+    <div class="schedule-controls">
+        <div class="friday control" data-day="friday">Friday</div>
+        <div class="saturday control" data-day="saturday">Saturday</div>
+        <div class="sunday control" data-day="sunday">Sunday</div>
+    </div>
+    <div class="schedule-grid-container">
+        <div class="schedule-grid">
+            <div class="schedule-header">Time</div>
+            <div class="schedule-header">Main Events</div>
+            <div class="schedule-header">Secondary Events</div>
+            <div class="schedule-header">Tabletop 1</div>
+            <div class="schedule-header">Tabletop 2</div>
+            <div class="schedule-header">Artists & Dealers</div>
+
+            {% comment %}
+                These just create all the times on the side.
+            {% endcomment %}
+
+            {% for i in (9..11) %}
+                <div class="schedule-time" style="grid-area: {{ i | minus: 8 | times: 2 }} / time-col">{{i}}:00 AM</div>
+                <div class="schedule-time" style="grid-area: {{ i | minus: 8 | times: 2 | plus: 1 }} / time-col">{{i}}:30 AM</div>
+            {% endfor %}
+            <div class="schedule-time" style="grid-area: 8 / time-col">12:00 PM</div>
+            <div class="schedule-time" style="grid-area: 9 / time-col">12:30 PM</div>
+            {% for i in (1..11) %}
+                <div class="schedule-time" style="grid-area: {{ i | times: 2 | plus: 8 }} / time-col">{{i}}:00 PM</div>
+                <div class="schedule-time" style="grid-area: {{ i | times: 2 | plus: 9 }} / time-col">{{i}}:30 PM</div>
+            {% endfor %}
+            <div class="schedule-time" style="grid-area: 32 / time-col">12:00 AM</div>
+            <div class="schedule-time" style="grid-area: 33 / time-col">12:30 AM</div>
+            {% for i in (1..2) %}
+                <div class="schedule-time" style="grid-area: {{ i | times: 2 | plus: 32 }} / time-col">{{i}}:00 AM</div>
+                <div class="schedule-time" style="grid-area: {{ i | times: 2 | plus: 33 }} / time-col">{{i}}:30 AM</div>
+            {% endfor %}
+
+            <div class="schedule-time last-time" style="grid-area: 38 / time-col">3:00 AM</div>
+
+
+            {% comment %}
+                Schedule Item Loop
+            {% endcomment %}
+
+            {% for schedule_item in schedule %}
+
+                {% comment %}
+                    These items are crucial for positioning the item within the system.
+                    If they are not available, then we ignore tham and they don't get shown.
+                {% endcomment %}
+
+                {% if schedule_item["Start Time"] == nil or schedule_item["Start Time"] == "" %}
+                    {% continue %}
+                {% endif %} 
+                {% if schedule_item["Location"] == nil or schedule_item["Location"] == "" %}
+                    {% continue %}
+                {% endif %} 
+                {% if schedule_item["Day"] == nil or schedule_item["Day"] == "" %}
+                    {% continue %}
+                {% endif %} 
+                {% if schedule_item["Duration"] == nil or schedule_item["Duration"] == "" %}
+                    {% continue %}
+                {% endif %} 
+
+
+                {% comment %}
+                    This is just a trick to convert the time into a 24 hour version.
+                {% endcomment %}
+
+                {% assign start_time = "January 1, 2021 " | append: schedule_item["Start Time"] | date: "%k:%M" | split: ':' %}
+
+
+                {% comment %}
+                    Figure out the position within grid, with each cell being 30 minutes.
+                {% endcomment %}
+        
+                {% assign start_hour =  start_time[0] %}
+                {% assign start_minute = start_time[1] %}
+
+                {% assign grid_y_minute = start_minute | divided_by: 30 | floor %}
+                {% assign grid_y = start_hour | times: 2 | plus: grid_y_minute | minus: 16 %}
+                
+                {% comment %}
+                    For some reason I can't call these location_slug and day_slug without breaking the code?
+                    But yeah, these are slugs for use as classes.
+                {% endcomment %}
+
+                {% assign location = schedule_item["Location"] | strip | downcase | slugify %}
+                {% assign day = schedule_item["Day"] | strip | downcase | slugify %}
+                {% assign age_restriction_slug = schedule_item["Age Restriction"] | strip | downcase | slugify%}
+
+
+                {% comment %}
+                    Get the span of the grid cell based on the Duration field
+                {% endcomment %}
+                
+                {% assign duration = schedule_item["Duration"] | split: " " %}
+                {% assign total_duration = 0 %}
+                {% assign last_itm_number = 0 %}
+
+                {% for itm in duration%}
+
+                    {% assign mod = forloop.index | modulo: 2 %}
+
+                    {% if mod != 0 %}
+
+                        {% assign last_itm_number = itm %}
+
+                    {% else %}
+
+                        {% case itm %}
+                            {% when 'hour' %}
+                                {% assign total_duration = last_itm_number | times: 60 | plus: total_duration%}
+                            {% when 'hours' %}
+                                {% assign total_duration = last_itm_number | times: 60 | plus: total_duration%}
+                            {% when 'minute' %}
+                                {% assign total_duration = last_itm_number | plus: total_duration%}
+                            {% when 'minutes' %}
+                                {% assign total_duration = last_itm_number | plus: total_duration%}
+                            {% else %}
+                                {%continue%}
+                        {% endcase %}
+
+                    {% endif %}
+
+                {% endfor %}
+
+                {% assign duration_length = total_duration | divided_by: 30.0 | round %}
+
+                {% comment %}
+                    Fragment code that connects the schedule item to the guide item.
+                    Splitting on ( done on request to deal with items that differ slightly only by parenthesis
+                    This must match down below.
+                {% endcomment %}
+                
+                {% assign schedule_title_pre = schedule_item["Title"] | split: '(' %}
+                {% assign schedule_title_pre = schedule_title_pre[0] | strip %}
+                {% assign schedule_fragment = schedule_title_pre | strip | downcase | slugify %}
+
+
+                {% comment %}
+                    Schedule item template
+                {% endcomment %}
+                <div class="schedule-item day-{{day}} location-{{location}} age-restriction-{{age_restriction_slug}}" style="grid-area: {{grid_y}} / {{location}}; grid-row-end: span {{ duration_length }}" data-guide-item ="#{{schedule_fragment}}">
+                    {% if age_restriction_slug == "18-only" %}
+
+                        <img class="age-restriction-icon" src="/assets/img/eighteenplus.svg">
+
+                    {% endif %}
+                    {% if age_restriction_slug == "21-only" %}
+
+                        <img class="age-restriction-icon" src="/assets/img/twentyoneplus.svg">
+
+                    {% endif %}
+
+                    <a class="schedule-item-link" href="#{{schedule_fragment}}">
+                        {{ schedule_item["Title"] }}
+                    </a>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('load', function(){
+        $('body').addClass('js-supported');
+        $('.schedule-controls .control').on('click', function( e){
+            var elem = e.target;
+            var day = $(elem).attr( 'data-day');
+
+            $('.schedule').removeClass( ['showing-friday', 'showing-saturday', 'showing-sunday']);
+            $('.schedule').addClass( 'showing-' + day)
+        });
+        $('.schedule-item').on('click', function( e){
+            e.preventDefault();
+            location.href = $(e.target).closest('.schedule-item').attr('data-guide-item');
+        });
+    });
+</script>
+
+
+
+
+
+<h2 class="schedule-guide-header">Schedule Guide</h2>
+<hr class="small">
+
+{% assign alphabetical_schedule = schedule | sort: 'Title' %}
+
+<div class="schedule-guide">
+    {% for schedule_item in alphabetical_schedule %}
+
+
+        {% assign is_duplicate = schedule_item['Duplicate'] | strip %}
+
+        {% if is_duplicate != nil and is_duplicate != "" %}
+            {% continue %}
+        {% endif %%}
+        
+
+        {% assign additional_hosts = schedule_item['Additional Hosts'] | strip%}
+
+        {% if additional_hosts != nil and additional_hosts != "" %}
+            {% assign schedule_hosts = schedule_item['Hosts'] | strip | append: ", " | append: additional_hosts %}
+        {% else %}
+            {% assign schedule_hosts = schedule_item['Hosts'] | strip %}
+        {% endif %}
+
+
+        {% comment %}
+            This must match up above, see above for more info.
+        {% endcomment %}
+        
+        {% assign schedule_title_pre = schedule_item["Title"] | split: '(' %}
+        {% assign schedule_title_pre = schedule_title_pre[0] | strip %}
+        {% assign schedule_fragment = schedule_title_pre | strip | downcase | slugify %}
+
+
+        {% comment %}
+            Clean and prep other fields.
+        {% endcomment %}
+
+        {% assign age_restriction = schedule_item["Age Restriction"] | strip %}
+        {% assign schedule_location = schedule_item["Location"] | strip %}
+        {% assign schedule_description = schedule_item["Description"] | strip %}
+        
+        
+        {% comment %}
+            Schedule item template
+        {% endcomment %}
+
+        <div id="{{schedule_fragment}}" class="guide-item">
+            <div class="item-header">
+                <span class="title">{{ schedule_title_pre }}</span>
+                <span class="datetime">{{ schedule_item["Day"] }}, {{ schedule_item["Start Time"] }}</span>
+            </div>
+
+            {% if age_restriction != nil and age_restriction != "" %}
+                <div class="item-row age-restriction">{{ age_restriction }}</div>
+            {% endif %}
+            
+            {% if schedule_hosts != nil and schedule_hosts != "" %}
+                <div class="item-row hosts">Hosted By: {{ schedule_hosts }}</div>
+            {% endif %}
+
+            {% if schedule_location != nil and schedule_location != "" %}
+                <div class="item-row location">Location: {{ schedule_location }}</div>
+            {% endif %}
+
+            {% if schedule_description != nil and schedule_description != "" %}
+                <div class="item-row description">{{schedule_description}}</div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

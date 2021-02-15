@@ -1,0 +1,208 @@
+
+html {
+    scroll-padding-top: 65px;
+}
+
+.schedule-grid-container {
+    overflow-x: auto;
+}
+
+.schedule-controls {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.schedule-controls .control {
+    border: 1px solid #b7a43a;
+    background-color: #1e465f;
+    flex: 33%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.schedule-controls .control:first-child {
+    border-top-left-radius: 7px;
+}
+
+.schedule-controls .control:last-child {
+    border-top-right-radius: 7px;
+}
+
+.schedule:not(.showing-friday) .friday.control {
+    background-color: #0e1826;
+}
+
+.schedule:not(.showing-friday) .friday.control:hover {
+    background-color: #2b6488;
+}
+
+.schedule:not(.showing-saturday) .saturday.control {
+    background-color: #0e1826;
+}
+.schedule:not(.showing-saturday) .saturday.control:hover {
+    background-color: #2b6488;
+}
+
+.schedule:not(.showing-sunday) .sunday.control {
+    background-color: #0e1826;
+}
+.schedule:not(.showing-sunday) .sunday.control:hover {
+    background-color: #2b6488;
+}
+
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: [time-col] 150px [main] 1fr [secondary] 1fr [tabletop-1] 1fr [tabletop-2] 1fr [artists-dealers] 1fr;
+    grid-template-rows: [header] auto;
+    grid-auto-rows: 1fr;
+    grid-gap: 3px;
+    background: black;
+    margin-top: 0px;
+    
+    min-width: 750px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.schedule-header {
+    font-weight: bold;
+    border-bottom: 2px solid #b7a43a;
+}
+
+.schedule-grid > *{
+    background: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.schedule-item {
+    color: black;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body.js-supported .schedule-grid .schedule-item:hover {
+    background-color: #1e465f;
+}
+
+body.js-supported .schedule-grid .schedule-item:hover a {
+    color: #b7a43a;
+    text-decoration: underline;
+}
+
+.schedule-item-link,
+.schedule-item-link:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.schedule-item-link:hover,
+.schedule-item-link:active {
+    color: #b7a43a;
+}
+
+.schedule-item.age-restriction-18-only,
+.schedule-item.age-restriction-21-only {
+    color: black;
+    position: relative;
+}
+
+.schedule-item .age-restriction-icon {
+    display: inline-block;
+    float: right;
+    width: 35px;
+    margin-left: 8px;
+}
+
+.schedule:not(.showing-friday) .schedule-item.day-friday {
+    display: none;
+}
+
+.schedule:not(.showing-saturday) .schedule-item.day-saturday {
+    display: none;
+}
+
+.schedule:not(.showing-sunday) .schedule-item.day-sunday {
+    display: none;
+}
+
+.schedule-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.schedule-time:nth-child( even){
+    background-color: #e6e6e6;
+}
+
+.schedule-time.last-time{
+    border-bottom-left-radius: 7px;
+}
+
+
+
+
+
+
+.schedule-guide-header {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.schedule-guide .guide-item {
+    border-radius: 7px;
+    border: 2px solid #1e465f;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: border-color 0.2s ease;
+}
+
+.schedule-guide .guide-item:hover{
+    border-color: #2a6386;
+}
+
+.schedule-guide .guide-item .item-header {
+    background-color: #1e465f;
+    font-size: 1.1em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.schedule-guide .guide-item:hover .item-header{
+    background-color: #2a6386;
+}
+
+.schedule-guide .guide-item .item-row {
+    border-bottom: 2px solid #1e465f;
+    padding: 5px 10px;
+    transition: border-color 0.2s ease;
+}
+
+.schedule-guide .guide-item:hover .item-row {
+    border-color: #2a6386;
+}
+
+.schedule-guide .guide-item .item-row.description{
+    font-size: 1em;;
+}
+
+.schedule-guide .guide-item .item-row:last-of-type {
+    border-bottom: none;
+}
