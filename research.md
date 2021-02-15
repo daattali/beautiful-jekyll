@@ -3,7 +3,7 @@
 title: Research
 # subtitle:
 ---
-{% for post in site.posts limit:0 %}
+{% for post in site.posts limit:10 %}
   <item>
     <title>{{ post.title | xml_escape }}</title>
     <description>
