@@ -2,12 +2,6 @@
 # layout: page
 title: Research
 # subtitle:
-recon-list:
-  - name: GP extrapolation
-    desc: Extrapolation of quantum observables with GPs
-   
-    img: /assets/img/spin_extrapolation_prl.png
-    
 ---
 
 
