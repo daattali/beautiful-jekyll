@@ -3,6 +3,18 @@
 title: Research
 # subtitle:
 ---
+{% for post in site.posts limit:0 %}
+  <item>
+    <title>{{ post.title | xml_escape }}</title>
+    <description>
+      {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
+      {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}
+      </description>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <link>{{ post.url | absolute_url }}</link>
+      <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+  </item>
+ {% endfor %}
 
 <!---
 # ![ML to discover phase transitions](/assets/img/spin_extrapolation_prl.png){: style="float: right"}
