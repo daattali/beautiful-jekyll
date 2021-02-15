@@ -4,7 +4,7 @@ title: Research
 # subtitle:
 ---
 
-
+<!---
 # ![ML to discover phase transitions](/assets/img/spin_extrapolation_prl.png){: style="float: right"}
 # What if we could explore physical observables where data could not be aquired? 
 
@@ -16,3 +16,4 @@ title: Research
 
 
 # ## Inverse design of physical models
+--->
