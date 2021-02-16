@@ -18,9 +18,10 @@ navbar-links:
   Code of Conduct: "code-of-conduct"
   Registration: "registration"
   Programming: "programming"
+  Schedule: "schedule"
   Theme: "theme"
   Dealers & Artists: "dealers"
-  Staff: "staff"
+  #  Staff: "staff"
   Volunteer: "volunteer"
   Contact: "contact"
     #  Social Media:
