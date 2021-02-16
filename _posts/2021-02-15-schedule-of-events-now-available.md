@@ -7,7 +7,7 @@ tags:
   - Programming
 ---
 
-Our schedule of events is now posted at&nbsp;[https://fursquared.com/schedule](programming@fursquared.com.)
+Our schedule of events is now posted at&nbsp;[https://fursquared.com/schedule](https://fursquared.com/schedule)
 
 This year, we have four different programming tracks. To recap:
 
