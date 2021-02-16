@@ -4,8 +4,9 @@ title: Programming
 subtitle: Things to do at Virtual Fur Squared
 ---
 
+### Looking for the schedule of events? It's at&nbsp;[https://fursquared.com/schedule](https://fursquared.com/schedule)
 
-### The deadline for programming submissions this year was November 30, 2020.
+### &nbsp;
 
 ### What's different this year?
 
@@ -21,7 +22,7 @@ Unfortunately, Fur Squared doesn't have the resources to do any editing on prere
 
 ### Will I need VRChat to watch panels?
 
-No, you will not need VRChat to watch panels. Panels will be streamed via popular online streaming services (such as YouTube or Twitch) and available for everyone with Internet access to watch.
+*No, you will not need VRChat to watch panels*. Panels will be streamed via popular online streaming services (such as YouTube or Twitch) embedded on our website and available for everyone with Internet access to watch.
 
 ### Why do panels have weird times this year?
 
@@ -33,15 +34,7 @@ Given the virtual nature of this year's con, we want to include expanded video a
 
 ### When will I hear back about my submission?
 
-We'll start reviewing panel submissions as soon as we can. Once we review your submission, you'll receive an email letting you know if your submission was approved or denied. Prerecorded panels will receive priority evaluation to give panelists as much lead time as possible to record and submit their panels.
-
-### What technical requirements are there for panels (e.g. file type, streaming setup, etc.)?
-
-We are still working to finalize the technical requirements for both live and prerecorded panels. We will update this page once we finalize those requirements, and will notify all submitted panelists via email at that time. If you have submitted a panel and cannot meet the technical requirements when they are established, don't worry\! You are free to withdraw at that time. Just email us at [programming@fursquared.com](mailto:programming@fursquared.com).
-
-### Is there a deadline to submit programming?
-
-We have decided to move our programming submission deadline a month earlier than usual to accommodate the necessary preparation for a virtual event. **The deadline for submitting programming for Fur Squared 2021 was <u>November 30, 2020</u>.&nbsp;**
+You should have already heard back\! If you haven't, please reach out to [programming@fursquared.com](mailto:programming@fursquared.com).
 
 ### What if I have other programming questions?
 
