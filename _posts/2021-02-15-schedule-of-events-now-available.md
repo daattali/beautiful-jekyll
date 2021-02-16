@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Schedule of Events
-subtitle: Check out our three programming tracks!
+title: Schedule of Events now available
+subtitle: Check out our four programming tracks!
 tags:
   - news
   - Programming
