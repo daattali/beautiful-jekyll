@@ -57,6 +57,7 @@ fields:
     max: 
   label: redirect_from
 pages:
+- _posts/10-simple-habits-to-create-a-simpler-home.md
 - _posts/2020-12-01-3-tips-to-get-started-on-simplifying-your-home-life.md
 - _posts/2020-12-18-simple-meal-planning-with-theme-nights.md
 - _posts/2020-12-23-two-key-steps-to-create-more-simplicity-on-christmas-day.md
