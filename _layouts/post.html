@@ -3,22 +3,13 @@ layout: base
 ---
 
 {% include header.html type="post" %}
-<!--
-<p>
-<center>
-	<a rel="nofollow" href="https://go.altaro.com/holiday-contest/?LP=vxav-Banner-holidayseason2019&Cat=SC&utm_source=vxav&utm_medium=sc&utm_campaign=holidayseason2019&utm_content=banner">
-		<img src="http://www.vxav.fr/img/altaro-banner-2019.png" style="box-shadow: 0px 0px 10px grey;">
-	</a>
-</center>
-</p>
--->
 
 <div class="container">
 	
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-	      
+<!-- GOOGLE ADSENSE MANUAL	      
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
@@ -29,7 +20,7 @@ layout: base
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-	      
+-->
 	      {{ content }}
 	    </article>
 	  	  
@@ -44,19 +35,7 @@ layout: base
           <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
         </li>
         {% endif %}
-      </ul>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-4676575955468694"
-     data-ad-slot="5864356539"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-	    
+      </ul>	    
 	    {% if page.comments %}
         <div class="disqus-comments">
 	        {% include disqus.html %}
