@@ -62,6 +62,6 @@ Other blogs of mine you may like:
 
   ## FREEBIE WORKSHEET: 10 questions to help you simplify your home life
 
-  And _PS if you'd like ideas to create more simplicity in your home, I attached a worksheet for you too: 10 questions to help you simplify your home life. You can find that_ [_HERE_](https://mailchi.mp/d7eafb4e2738/simplifyyourhomelife)_. Or you may enjoy my six week flexible online Simplify Your Home Life course for busy moms. Find out about it [here](https://www.simplehomemom.com/course).
+  And _PS if you'd like ideas to create more simplicity in your home, I attached a worksheet for you too: 10 questions to help you simplify your home life. You can find that_ [_HERE_](https://mailchi.mp/d7eafb4e2738/simplifyyourhomelife). Or you may enjoy my six week flexible online Simplify Your Home Life course for busy moms. Find out about it [here](https://www.simplehomemom.com/course).
 
   ![An overview of the 10 simple habits image.](/uploads/20210218_143016_0001_compress12.jpg "10 simple habits to create a simpler home")_
