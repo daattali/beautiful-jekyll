@@ -46,7 +46,7 @@ _Our clean clothes are brought upstairs before quiet time at some point. And the
  9. Declutter and toss any garbage anytime you are tidying up.
 10. Leave a box of donations by the door and when full.. Get them out the door. My friend Carleen over at [@carleenarmstead](https://www.instagram.com/carleenarmstead/) on Instagram and on [Youtube here](https://www.youtube.com/channel/UCGHtaTd5sfnOvAAwHmOAIqg): _"One of my favorite ways to maintain a clutter-free home is to always have a donation box by my front door. Every month when I buy diapers I keep the box and fill it throughout the month with anything that I can- clothes, toys, baby items, things we no longer need etc. Once the box is full I donate it. This helps keep me stay on top of things that need to leave our home and a gives me a place to put everything instead of shoving it in the closet and forgetting it’s there."_
 
-###### Simple habits for creating a simpler home need not to be complex, but it can be overwhelming at first. Start with one. Start small. Keep going and building on it over time. And you will start to see your simpler home coming together!
+##### Simple habits for creating a simpler home need not to be complex, but it can be overwhelming at first. Start with one. Start small. Keep going and building on it over time. And you will start to see your simpler home coming together!
 
 ######   
 Other blogs of mine you may like:
