@@ -4,11 +4,11 @@ title: 'vCenter 7 update 1c: Advanced Cross vCenter vMotion (XVM)'
 DATE: 
 
 ---
-Migrating virtual machines across vCenter instances has been a thing for several years now but it wasn't a straightforward process at first. After a while the "Cross vCenter Workload Migration Utility" fling was released in order to simplify the process and remove the need for enhanced linked mode.
+Migrating virtual machines across vCenter instances has been a thing for several years now but it wasn't a straightforward process at first. After a while the <a href="[https://flings.vmware.com/cross-vcenter-workload-migration-utility](https://flings.vmware.com/cross-vcenter-workload-migration-utility "https://flings.vmware.com/cross-vcenter-workload-migration-utility")" target="_blank">Cross vCenter Workload Migration Utility</a> fling was released in order to simplify the process and remove the need for enhanced linked mode.
 
 ### Advanced Cross vCenter vMotion (XVM)
 
-It is not often that a minor update is exciting but this time it certainly is! In the latest vCenter 7.0 update 1c (7.0.1.00300) iteration, "_Advanced Cross vCenter vMotion_" (also called XVM) was finally embedded natively into the vSphere client. This feature simplifies a number of scenarios ranging from basic workload mobility to bulk migrations to a public cloud.
+It is not often that a minor update is exciting but this time it certainly is! In the latest <a href="[https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-vcenter-server-70u1c-release-notes.html](https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-vcenter-server-70u1c-release-notes.html "https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-vcenter-server-70u1c-release-notes.html")" target="_blank">vCenter 7.0 update 1c (7.0.1.00300)</a> iteration, "_Advanced Cross vCenter vMotion_" (also called XVM) was finally embedded natively into the vSphere client. This feature simplifies a number of scenarios ranging from basic workload mobility to bulk migrations to a public cloud.
 
 * Does not depend on vCenter Enhanced Linked Mode or Hybrid Linked Mode
 * Works for both on-premise and cloud environments.
@@ -58,7 +58,7 @@ In our demonstrations below we are running vCenter 7.0u1c on the initiating inst
 
 ![](/img/xvm8.png)
 
-* Review the migration summary details and click **Finish** to trigger the move. 
+* Review the migration summary details and click **Finish** to trigger the move.
 
 ![](/img/xvm9.png)
 
@@ -76,7 +76,7 @@ Advanced Cross vCenter vMotion also brings the possibility to import virtual mac
 
 * To initiate an **Import VMs** task, right click on a compute resource and select the option.
 
- **![](/img/xvm10.png)**
+**![](/img/xvm10.png)**
 
 * Select the remote vCenter like shown previously and then select the virtual machine(s) you wish to import.
 
@@ -86,6 +86,6 @@ The next steps are similar to the ones described in the Migrate chapter.
 
 ### Conclusion
 
-There has been many occurences of features that started out as Flings which eventually made it into the core product because it was so popular. vCenter Server 7.0 update 1c is another example of what the community can bring to the table and it goes on to show how VMware listens to them. 
+There has been many occurences of features that started out as Flings which eventually made it into the core product because it was so popular. vCenter Server 7.0 update 1c is another example of what the community can bring to the table and it goes on to show how VMware listens to them.
 
 Advanced Cross vCenter vMotion (XVM) will allow many companies to perform safe and efficient migrations whether they are on-premise or in hybrid scenarios. Is this a feature that you see yourself or your company using in the near future? Talk about your use case in the comment section !
