@@ -46,16 +46,16 @@ _Our clean clothes are brought upstairs before quiet time at some point. And the
  9. Declutter and toss any garbage anytime you are tidying up.
 10. Leave a box of donations by the door and when full.. Get them out the door. My friend Carleen over at [@carleenarmstead](https://www.instagram.com/carleenarmstead/) on Instagram and on [Youtube here](https://www.youtube.com/channel/UCGHtaTd5sfnOvAAwHmOAIqg): _"One of my favorite ways to maintain a clutter-free home is to always have a donation box by my front door. Every month when I buy diapers I keep the box and fill it throughout the month with anything that I can- clothes, toys, baby items, things we no longer need etc. Once the box is full I donate it. This helps keep me stay on top of things that need to leave our home and a gives me a place to put everything instead of shoving it in the closet and forgetting it’s there."_
 
-**Simple habits for creating a simpler home need not to be complex, but it can be overwhelming at first. Start with one. Start small. Keep going and building on it over time. And you will start to see your simpler home coming together!  
+###### Simple habits for creating a simpler home need not to be complex, but it can be overwhelming at first. Start with one. Start small. Keep going and building on it over time. And you will start to see your simpler home coming together!**  
 **  
-**Other blogs of mine you may like:**
+Other blogs of mine you may like:
 
 * [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 * [How to Make Habits Stick without Much Effort](https://www.simplehomemom.com/how-to-make-habits-stick-without-much-effort/)
 * [Five Ways I’ve Been Adjusting our Routines Since the Pandemic Hit (for myself and the kids)](https://www.simplehomemom.com/five-ways-i-ve-been-adjusting-our-routines-since-the-pandemic-hit/)
 * [Four Ways to Create a Simpler Home](https://www.simplehomemom.com/four-ways-to-create-a-simpler-home/)
 
-**As well as a couple podcasts you may like:**
+###### As well as a couple podcasts you may like:
 
 * [Keeping it simple: an interview with Kelly](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761)
 * [Simplify Your Laundry Routine with Kelly Briggs](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)
