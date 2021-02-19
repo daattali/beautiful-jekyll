@@ -16,6 +16,8 @@ In the latest vCenter 7.0 update 1c (7.0.1.00300), the "Advanced Cross vCenter v
 * Compatible with vCenter 6.x or later.
 * Possibility to "_Migrate_" (send) or "_Import_" (receive) virtual machines.
 
+![](/img/xvm000.PNG)
+
 In our demonstrations below we are running vCenter 7.0u1c on the initiating instance and vCenter 7u1a on the distant one.
 
 ### Migrating a virtual machine
