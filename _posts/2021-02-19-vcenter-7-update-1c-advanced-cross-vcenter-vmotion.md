@@ -85,3 +85,7 @@ Advanced Cross vCenter vMotion also brings the possibility to import virtual mac
 The next steps are similar to the ones described in the Migrate chapter.
 
 ### Conclusion
+
+There has been many occurences of features that started out as Flings which eventually made it into the core product because it was so popular. vCenter Server 7.0 update 1c is another example of what the community can bring to the table and it goes on to show how VMware listens to them. 
+
+Advanced Cross vCenter vMotion (XVM) will allow many companies to perform safe and efficient migrations whether they are on-premise or in hybrid scenarios. Is this a feature that you see yourself or your company using in the near future? Talk about your use case in the comment section !
