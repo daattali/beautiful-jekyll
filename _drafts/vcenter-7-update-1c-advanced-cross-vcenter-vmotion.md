@@ -8,7 +8,7 @@ Migrating virtual machines across vCenter instances has been a thing for several
 
 ### Advanced Cross vCenter vMotion (XVM)
 
-In the latest vCenter 7.0 update 1c (7.0.1.00300), the "Advanced Cross vCenter vMotion" (also called XVM) feature was embedded natively into the vSphere client. 
+It is not often that a minor update is exciting but this time it certainly is! In the latest vCenter 7.0 update 1c (7.0.1.00300) iteration, "_Advanced Cross vCenter vMotion_" (also called XVM) was finally embedded natively into the vSphere client. This feature simplifies a number of scenarios.
 
 * Does not depend on vCenter Enhanced Linked Mode or Hybrid Linked Mode
 * Works for both on-premise and cloud environments.
