@@ -40,13 +40,19 @@ In our demonstrations below we are running vCenter 7.0u1c on the initiating inst
 
 ![](/img/xvm4.png)
 
-* 
+* Select a **Compute resource** at the destination. In my example I only have a single host in the datacenter for testing.
 
 ![](/img/xvm5.png)
 
+* Then select a **datastore**. Note that just like any storage vMotion you can change the disk format should you want to (thin, thick..).
+
 ![](/img/xvm6.png)
 
+* Select a **VM Folder** where you want the VM in the inventory.
+
 ![](/img/xvm7.png)
+
+* And finally you can choose a **portgroup** to connect your VM. You obviously need to ensure beforehand that the distant network is configured properly (same gateway, routing...).
 
 ![](/img/xvm8.png)
 
