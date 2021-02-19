@@ -56,6 +56,10 @@ In our demonstrations below we are running vCenter 7.0u1c on the initiating inst
 
 ![](/img/xvm8.png)
 
+* Review the migration summary details and click **Finish** to trigger the move. 
+
 ![](/img/xvm9.png)
+
+The migration will appear in the tasks like any other vMotion as opposed to how it was with the Fling.
 
 ### Importing a virtual machine
