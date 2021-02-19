@@ -24,15 +24,23 @@ In our demonstrations below we are running vCenter 7.0u1c on the initiating inst
 
 ![](/img/xvm0-1.png)
 
-* Select the new "Cross vCenter Server export" migration type. Note that if you don't see this option you need to update to vCenter 7 update 1c (7.0.1.00300).
+* Select the new **Cross vCenter Server export** migration type. Note that if you don't see this option you need to update to vCenter 7 update 1c (7.0.1.00300).
 
 ![](/img/xvm1.png)
 
+* Then you need to specify the target vCenter. Start by selecting **New vCenter** and type in the connection details (IP/FQDN, user, password). You can then save this information to have it ready for later use. Then click on **Login** to validate the information.
+
 ![](/img/xvm2.png)
+
+* You may be prompted with the distant vCenter's certificate which you need to accept.
 
 ![](/img/xvm3.png)
 
+* If the connection is successful you will be able to click **Next**.
+
 ![](/img/xvm4.png)
+
+* 
 
 ![](/img/xvm5.png)
 
