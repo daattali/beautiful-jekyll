@@ -8,7 +8,7 @@ Migrating virtual machines across vCenter instances has been a thing for several
 
 ### Advanced Cross vCenter vMotion (XVM)
 
-In the latest vCenter 7.0 update 1c, the "Advanced Cross vCenter vMotion" (also called XVM) feature was embedded natively into the vSphere client. 
+In the latest vCenter 7.0 update 1c (7.0.1.00300), the "Advanced Cross vCenter vMotion" (also called XVM) feature was embedded natively into the vSphere client. 
 
 * Does not depend on vCenter Enhanced Linked Mode or Hybrid Linked Mode
 * Works for both on-premise and cloud environments.
@@ -20,7 +20,11 @@ In our demonstrations below we are running vCenter 7.0u1c on the initiating inst
 
 ### Migrating a virtual machine
 
-![](/img/xvm0.png)
+* Initiating a cross-vCenter vMotion is as easy as it gets. Right click on the VM you want to relocate and select **Migrate**.
+
+![](/img/xvm0-1.png)
+
+* Select the new "Cross vCenter Server export" migration type. Note that if you don't see this option you need to update to vCenter 7 update 1c (7.0.1.00300).
 
 ![](/img/xvm1.png)
 
