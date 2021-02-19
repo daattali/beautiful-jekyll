@@ -62,6 +62,26 @@ In our demonstrations below we are running vCenter 7.0u1c on the initiating inst
 
 ![](/img/xvm9.png)
 
-The migration will appear in the tasks like any other vMotion as opposed to how it was with the Fling.
+The task will appear like any relocating task on the source system but you will see an "_Initiate vMotion receive operation_" task on the destination vCenter.
+
+![](/img/xvm11.png)
+
+I ran a ping to the VM during the migration and I only got a longer response time during the switchover but that doesn't mean you are 100% sure not to lose pings (just a word of caution for mission critical workloads).
+
+![](/img/xvm12-1.png)
 
 ### Importing a virtual machine
+
+Advanced Cross vCenter vMotion also brings the possibility to import virtual machines from a distant vCenter. This can be useful of the remote instance runs a version lower than vCenter 7 update 1c and doesn't have XVM in the vSphere client for example.
+
+* To initiate an **Import VMs** task, right click on a compute resource and select the option.
+
+ **![](/img/xvm10.png)**
+
+* Select the remote vCenter like shown previously and then select the virtual machine(s) you wish to import.
+
+![](/img/xvm13.png)
+
+The next steps are similar to the ones described in the Migrate chapter.
+
+### Conclusion
