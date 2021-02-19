@@ -14,3 +14,7 @@ In the latest vCenter 7.0 update 1c, the "Advanced Cross vCenter vMotion" (also 
 * Works for both on-premise and cloud environments and across SSO domains.
 * Compatible with vCenter 6.x or later.
 * Possibility to "_Migrate_" (send) or "_Import_" (receive) virtual machines.
+
+In our demonstrations below we are running vCenter 7.0u1c on the initiating instance and vCenter 7u1a on the distant one.
+
+### Migrating a virtual machine
