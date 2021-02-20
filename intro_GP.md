@@ -25,8 +25,8 @@ In the following sections, we describe the training and prediction of GP regress
 
 # Prediction with Gaussian Processes
 GPs can be considered as a generative model, however, in the framework of GPs the predictive distribution has a close form meaning sampling techniques are not required. 
-As it was mentioned above, a \ac{GP} is the collection of random variables $f(\mathbf{x}_i)$ that follow a joint distribution. 
-The joint Gaussian distribution between $\cal{D}$, $\mathbf{x_*}$, and $f(\mathbf{x_*})$ is of the form,
+As it was mentioned above, a GP is the collection of random variables ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x}_i)) that follow a joint distribution. 
+The joint Gaussian distribution between ![formula](https://render.githubusercontent.com/render/math?math=\cal{D}), ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_*}), and ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x_*})) is of the form,
 ![formula](https://render.githubusercontent.com/render/math?math=\begin{pmatrix} f(X)\\f(\mathbf{x_*}) \end{pmatrix} \sim \cal{N} \begin{pmatrix} \begin{pmatrix}\mathbf{\mu}\\  \mathbf{\mu_*}\end{pmatrix}&, \begin{pmatrix}K & K_*\\  K_*^\top & K_{**}\end{pmatrix} \end{pmatrix})
 
 
