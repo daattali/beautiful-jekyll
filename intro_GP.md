@@ -54,6 +54,6 @@ This is the idea behind a class of ML algorithms known as Bayesian optimiation.
 An example of GP regression for ![formula](https://render.githubusercontent.com/render/math?math=f(x) = \frac{x}{10} + x^2 + 10\sin(\frac{3}{2}x)). We use the *exponential squared* kernel  and 7 training points.
 In the following section, we describe the most common procedure to train GPs.
 
-![Figure](assets/img/intro_GP/GP_mu.png)
+![Figure](assets/img/intro_gp/GP_mu.png)
 
 
