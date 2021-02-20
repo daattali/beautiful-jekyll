@@ -55,8 +55,7 @@ An example of GP regression for ![formula](https://render.githubusercontent.com/
 In the following section, we describe the most common procedure to train GPs.
 
 
-![prediction with a GP](assets/img/GP_mu.pdf)
-
+<image src="assets/img/GP_mu.pdf/">
 
 
 
