@@ -58,3 +58,23 @@ In the following section, we describe the most common procedure to train GPs.
 Interpolation using a GP model trained with 7 points and an exponential squared kernel. The black dashed line is <img src="http://www.sciweavers.org/tex2img.php?eq=f%28x%29%3D%5Cfrac%7Bx%7D%7B10%7D%20%2B%20x%5E2%20%2B%2010%5Csin%5Cleft%28%5Cfrac%7B3%7D%7B2%7Dx%5Cright%29%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="f(x)=\frac{x}{10} + x^2 + 10\sin\left(\frac{3}{2}x\right)" width="240" height="46" />. The solid blue line is the prediction of the GP model. The grey shaded area is the standard deviation of the predicted mean of the GP model. The blue square symbols are the training data.
 
 
+# Training GPs
+The goal of any supervised learning algorithm is to infer a function ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)), as accurately as possible, given some example data.
+In order to quantify the accuracy of a model we define a *loss* function, ![formula](https://render.githubusercontent.com/render/math?math={\cal L}), for example, the difference between the prediction ![formula](https://render.githubusercontent.com/render/math?math=y_i) and the real value ![formula](https://render.githubusercontent.com/render/math?math=\hat{y_i}) (training points) such as  ![formula](https://render.githubusercontent.com/render/math?math={\cal L} \approx \sum_i^N (y_i - \hat{y}_i)^2) or ![formula](https://render.githubusercontent.com/render/math?math={\cal L} \approx \sum_i^N |y_i - \hat{y}_i|).
+The parameters of the model ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{w}) and ![formula](https://render.githubusercontent.com/render/math?math={\cal L}) are interconnected. 
+To illustrate this idea let us assume that $f(\cdot)$ is a simple linear regression model, ![formula](https://render.githubusercontent.com/render/math?math=f(x) = a + bx). The loss function for such model is, 
+
+<img src="http://www.sciweavers.org/tex2img.php?eq=%7B%5Ccal%20L%7D%20%20%3D%20%5Csum_i%5EN%20%28y_i%20-%20%5Chat%7By%7D_i%29%5E2%20%3D%20%5Csum_i%5EN%20%28a%20%2B%20bx_i%20-%20%5Chat%7By%7D_i%29%5E2.%0A%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="{\cal L}  = \sum_i^N (y_i - \hat{y}_i)^2 = \sum_i^N (a + bx_i - \hat{y}_i)^2." width="296" height="53" />
+
+From the previous equation, we can observe that the value of ![formula](https://render.githubusercontent.com/render/math?math=
+{\cal L}) depends on *a* and *b*. 
+It can be argued that when ![formula](https://render.githubusercontent.com/render/math?math=
+{\cal L}) is large ![formula](https://render.githubusercontent.com/render/math?math=
+f(\mathbf{x_i}) \not\approx \hat{y_i}). On the other hand when ![formula](https://render.githubusercontent.com/render/math?math=
+f(\mathbf{x_i}) \approx \hat{y_i}) the value of ![formula](https://render.githubusercontent.com/render/math?math=
+{\cal L}) will tend to zero.
+Using a loss function to tune the parameters of ![formula](https://render.githubusercontent.com/render/math?math=
+f(\cdot)) is known as the *training8 stage in ML. 
+It must be mentioned that replicating the training data could also mean that  the model ''memorize'' the training data. 
+This common problem in ML is known as *overfitting*. 
+
