@@ -74,7 +74,7 @@ f(\mathbf{x_i}) \not\approx \hat{y_i}). On the other hand when ![formula](https:
 f(\mathbf{x_i}) \approx \hat{y_i}) the value of ![formula](https://render.githubusercontent.com/render/math?math=
 {\cal L}) will tend to zero.
 Using a loss function to tune the parameters of ![formula](https://render.githubusercontent.com/render/math?math=
-f(\cdot)) is known as the *training8 stage in ML. 
+f(\cdot)) is known as the *training* stage in ML. 
 It must be mentioned that replicating the training data could also mean that  the model ''memorize'' the training data. 
 This common problem in ML is known as *overfitting*. 
 
