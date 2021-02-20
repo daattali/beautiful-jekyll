@@ -24,8 +24,8 @@ navbar-links:
   About Me: "aboutme"
   Publications: "publications"
   Research:
-    --Research: ""
-    --Introduction to GP: "intro_GP"
+    - Research: ""
+    - Introduction to GP: "intro_GP"
 #    --Extrapolation : 
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
