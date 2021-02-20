@@ -30,6 +30,33 @@ The joint Gaussian distribution between ![formula](https://render.githubusercont
 
 <img src="http://www.sciweavers.org/tex2img.php?eq=%5Cbegin%7Bpmatrix%7D%20f%28X%29%5C%5Cf%28%5Cmathbf%7Bx_%2A%7D%29%20%5Cend%7Bpmatrix%7D%20%5Csim%20%5Ccal%7BN%7D%20%5Cbegin%7Bpmatrix%7D%20%5Cbegin%7Bpmatrix%7D%5Cmathbf%7B%5Cmu%7D%5C%5C%20%20%5Cmathbf%7B%5Cmu_%2A%7D%5Cend%7Bpmatrix%7D%26%2C%20%5Cbegin%7Bpmatrix%7DK%20%26%20K_%2A%5C%5C%20%20K_%2A%5E%5Ctop%20%26%20K_%7B%2A%2A%7D%5Cend%7Bpmatrix%7D%20%5Cend%7Bpmatrix%7D%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\begin{pmatrix} f(X)\\f(\mathbf{x_*}) \end{pmatrix} \sim \cal{N} \begin{pmatrix} \begin{pmatrix}\mathbf{\mu}\\  \mathbf{\mu_*}\end{pmatrix}&, \begin{pmatrix}K & K_*\\  K_*^\top & K_{**}\end{pmatrix} \end{pmatrix}" width="285" height="46" />
 
+where ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{K}) is the covariance matrix of the training data *X*, ![formula](https://render.githubusercontent.com/render/math?math=K_*) is the covariance matrix between *X* and ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_*}), and ![formula](https://render.githubusercontent.com/render/math?math=K_{**}) is the covariance with respect to itself. 
+
+
+The probability distribution over ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x_*})) can be inferred by computing the conditional distribution given the training data, ![formula](https://render.githubusercontent.com/render/math?math=p(f_* | \mathbf{x_*},\cal{D})). 
+Conditioning on the training data is the same as selecting the distribution of functions that agree with observed data points ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{y}).
+The mean and covariance matrix of the conditional distribution are,
+
+<img src="http://www.sciweavers.org/tex2img.php?eq=%0A%5Cmathbf%7B%5Cmu%7D%28%5Cmathbf%7Bx%7D_%2A%29%20%26%3D%26%20K%28%5Cmathbf%7Bx%7D_%2A%2CX%29%5E%5Ctop%20K%28X%2CX%29%5E%7B-1%7D%5Cmathbf%7By%7D%20%5C%5C%0A%5Csigma_%2A%20%26%3D%26%20K%28%5Cmathbf%7Bx%7D_%2A%2C%5Cmathbf%7Bx%7D_%2A%29-%20K%28%5Cmathbf%7Bx%7D_%2A%2CX%29%5E%5Ctop%20K%28X%2CX%29%5E%7B-1%7DK%28X%2C%5Cmathbf%7Bx%7D_%2A%29%20%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\mathbf{\mu}(\mathbf{x}_*) &=& K(\mathbf{x}_*,X)^\top K(X,X)^{-1}\mathbf{y} \\\sigma_* &=& K(\mathbf{x}_*,\mathbf{x}_*)- K(\mathbf{x}_*,X)^\top K(X,X)^{-1}K(X,\mathbf{x}_*) " width="375" height="44" />
+
+ where ![formula](https://render.githubusercontent.com/render/math?math=\sigma_*) is the predicted variance for ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x}_*). The mean of the conditional distribution can be rewritten as,
+
+<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cmathbf%7B%5Cmu%7D%28%5Cmathbf%7Bx%7D%2A%29%20%20%26%3D%26%20%5Csum_i%20d%28%5Cmathbf%7Bx%7D_%2A%2C%20%5Cmathbf%7Bx%7D_i%29y_i%20%20%3D%20%5Csum_i%20%5Calpha_i%20k%28%5Cmathbf%7Bx%7D_%2A%2C%5Cmathbf%7Bx%7D_i%29%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\mathbf{\mu}(\mathbf{x}*)  &=& \sum_i d(\mathbf{x}_*, \mathbf{x}_i)y_i  = \sum_i \alpha_i k(\mathbf{x}_*,\mathbf{x}_i)" width="340" height="42" />
+
+where ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{d} = K(\mathbf{x}_*,X)^\top K(X,X)^{-1}) and  ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{\alpha} = K(X,X)^{-1}\mathbf{y}). 
+The mean of the conditional distribution is a linear combination of the training data, ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{y}), or a linear combination of the kernel function between the training points and ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_*}). Function ![formula](https://render.githubusercontent.com/render/math?math=d(\cdot,\cdot)) can be understood as a *distance* function.
+It is important to state that the accuracy of the prediction with GPs directly depends on the size of the training data *N* and the kernel function ![formula](https://render.githubusercontent.com/render/math?math=k(\cdot,\cdot)). In the following sections, we illustrate the impact that different kernels on GPs' prediction. 
+
+In the GPs' framework, the predicted variance or standard deviation of ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_*}) represents the uncertainty of the model. 
+The uncertainty can be used to sample different regions of the function space to search the location of the minimum or maximum of a particular function.
+This is the idea behind a class of ML algorithms known as Bayesian optimiation.
+
+An example of GP regression for ![formula](https://render.githubusercontent.com/render/math?math=f(x) = \frac{x}{10} + x^2 + 10\sin(\frac{3}{2}x)). We use the *exponential squared* kernel  and 7 training points.
+In the following section, we describe the most common procedure to train GPs.
+
+
+![prediction with a GP](assets/img/GP_mu.pdf)
+
 
 
 
