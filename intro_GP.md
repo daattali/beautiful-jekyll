@@ -58,7 +58,7 @@ In the following section, we describe the most common procedure to train GPs.
    <img src="assets/img/intro_gp/GP_mu.png" width="400" height="300">
 </p>
 <p>
-    <em>image_caption</em>
+    <em>{Interpolation using a GP model trained with 7 points and an exponential squared kernel. The black dashed line is ![formula](https://render.githubusercontent.com/render/math?math=f(x)=\frac{x}{10} + x^2 + 10\sin(\frac{3}{2}x)). The solid blue line is the prediction of the GP model. The grey shaded area is the standard deviation of the predicted mean of the GP model. The blue square symbols are the training data.</em>
 </p>
 
 
