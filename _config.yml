@@ -23,7 +23,8 @@ author: Rodrigo Alejandro Vargas-Hernandez
 navbar-links:
   About Me: "aboutme"
   Publications: "publications"
-  Research: 
+  Research:
+    --Research: ""
     --Introduction to GP: "intro_GP"
 #    --Extrapolation : 
 #  Resources:
