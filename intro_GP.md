@@ -55,6 +55,6 @@ An example of GP regression for <img src="http://www.sciweavers.org/tex2img.php?
 In the following section, we describe the most common procedure to train GPs.
 
 ![Figure](assets/img/intro_gp/GP_mu.png)
-Interpolation using a GP model trained with 7 points and an exponential squared kernel. The black dashed line is <img src="http://www.sciweavers.org/tex2img.php?eq=f%28x%29%3D%5Cfrac%7Bx%7D%7B10%7D%20%2B%20x%5E2%20%2B%2010%5Csin%5Cleft%28%5Cfrac%7B3%7D%7B2%7Dx%5Cright%29%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="f(x)=\frac{x}{10} + x^2 + 10\sin\left(\frac{3}{2}x\right)" width="240" height="46" />.. The solid blue line is the prediction of the GP model. The grey shaded area is the standard deviation of the predicted mean of the GP model. The blue square symbols are the training data.
+Interpolation using a GP model trained with 7 points and an exponential squared kernel. The black dashed line is <img src="http://www.sciweavers.org/tex2img.php?eq=f%28x%29%3D%5Cfrac%7Bx%7D%7B10%7D%20%2B%20x%5E2%20%2B%2010%5Csin%5Cleft%28%5Cfrac%7B3%7D%7B2%7Dx%5Cright%29%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="f(x)=\frac{x}{10} + x^2 + 10\sin\left(\frac{3}{2}x\right)" width="240" height="46" />. The solid blue line is the prediction of the GP model. The grey shaded area is the standard deviation of the predicted mean of the GP model. The blue square symbols are the training data.
 
 
