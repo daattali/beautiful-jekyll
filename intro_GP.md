@@ -27,6 +27,7 @@ In the following sections, we describe the training and prediction of GP regress
 GPs can be considered as a generative model, however, in the framework of GPs the predictive distribution has a close form meaning sampling techniques are not required. 
 As it was mentioned above, a GP is the collection of random variables ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x}_i)) that follow a joint distribution. 
 The joint Gaussian distribution between ![formula](https://render.githubusercontent.com/render/math?math=\cal{D}), ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_*}), and ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x_*})) is of the form,
+
 <img src="http://www.sciweavers.org/tex2img.php?eq=%5Cbegin%7Bpmatrix%7D%20f%28X%29%5C%5Cf%28%5Cmathbf%7Bx_%2A%7D%29%20%5Cend%7Bpmatrix%7D%20%5Csim%20%5Ccal%7BN%7D%20%5Cbegin%7Bpmatrix%7D%20%5Cbegin%7Bpmatrix%7D%5Cmathbf%7B%5Cmu%7D%5C%5C%20%20%5Cmathbf%7B%5Cmu_%2A%7D%5Cend%7Bpmatrix%7D%26%2C%20%5Cbegin%7Bpmatrix%7DK%20%26%20K_%2A%5C%5C%20%20K_%2A%5E%5Ctop%20%26%20K_%7B%2A%2A%7D%5Cend%7Bpmatrix%7D%20%5Cend%7Bpmatrix%7D%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\begin{pmatrix} f(X)\\f(\mathbf{x_*}) \end{pmatrix} \sim \cal{N} \begin{pmatrix} \begin{pmatrix}\mathbf{\mu}\\  \mathbf{\mu_*}\end{pmatrix}&, \begin{pmatrix}K & K_*\\  K_*^\top & K_{**}\end{pmatrix} \end{pmatrix}" width="285" height="46" />
 
 
