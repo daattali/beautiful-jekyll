@@ -17,7 +17,22 @@ We denote ![formula](https://render.githubusercontent.com/render/math?math=\cal{
  
 GPs are a probabilistic method and assume that each training point is a random variable and they have a joint probability distribution ![formula](https://render.githubusercontent.com/render/math?math=p(f(\mathbf{x}_1), \cdots, f(\mathbf{x}_N))). 
 As its name suggests, GP assume that the joint distribution is Gaussian and has a mean ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{\mu}(\mathbf{x})) and covariance ![formula](https://render.githubusercontent.com/render/math?math=K(\mathbf{x},\mathbf{x'})). 
-The matrix elements of the covariance are defined as ![formula](https://render.githubusercontent.com/render/math?math=K_{ij} = k(\mathbf{x}_i,\mathbf{x}_j)) where ![formula](https://render.githubusercontent.com/render/math?math=k(\cdot,\cdot)) is a positive defined kernel functiol. The kernel function plays a key role as it describes the *similarity* relation between two points.
+The matrix elements of the covariance are defined as ![formula](https://render.githubusercontent.com/render/math?math=K_{ij} = k(\mathbf{x}_i,\mathbf{x}_j)) where ![formula](https://render.githubusercontent.com/render/math?math=k(\cdot,\cdot)) is a positive defined kernel function. The kernel function plays a key role as it describes the *similarity* relation between two points.
 A GP is denoted as,  ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x}) \sim GP \left ( \mu(\mathbf{x}), K(\mathbf{x},\mathbf{x'}) \right)).
 
 In the following sections, we describe the training and prediction of GP regression.
+
+
+# Prediction with Gaussian Processes
+GPs can be considered as a generative model, however, in the framework of GPs the predictive distribution has a close form meaning sampling techniques are not required. 
+As it was mentioned above, a \ac{GP} is the collection of random variables $f(\mathbf{x}_i)$ that follow a joint distribution. 
+The joint Gaussian distribution between $\cal{D}$, $\mathbf{x_*}$, and $f(\mathbf{x_*})$ is of the form,
+![formula](https://render.githubusercontent.com/render/math?math=\begin{pmatrix} f(X)\\f(\mathbf{x_*}) \end{pmatrix} \sim \cal{N} \begin{pmatrix} \begin{pmatrix}\mathbf{\mu}\\  \mathbf{\mu_*}\end{pmatrix}&, \begin{pmatrix}K & K_*\\  K_*^\top & K_{**}\end{pmatrix} \end{pmatrix})
+
+
+
+
+
+
+
+
