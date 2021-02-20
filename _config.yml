@@ -23,7 +23,9 @@ author: Rodrigo Alejandro Vargas-Hernandez
 navbar-links:
   About Me: "aboutme"
   Publications: "publications"
-  Research: "research"
+  Research: 
+    --Introduction to GP: "intro_GP"
+#    --Extrapolation : 
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
