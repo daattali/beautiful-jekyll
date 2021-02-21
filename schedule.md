@@ -48,7 +48,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 5-Apr		| _No school_			| _No school_ | _No school_ |
 | 12-Apr	| Measurement			| | |
 | 19-Apr	| Mass Point Geometry	| | |
-| 26-Apr	| Venn Diagrams			| | |
+| 26-Apr	| Venn Diagrams			| _Math Is Cool Masters_ | |
 | 3-May		| Functions				| | |
 | 10-May	| Geometric Proportions	| | |
 | 17-May	| Expected Value		| | |
