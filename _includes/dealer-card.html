@@ -6,7 +6,7 @@
 {%- comment -%} Little blurb {%- endcomment -%}
 
 {% assign dealer = include.dealer %}
-{% assign dealer_image = dealer["image_name"] | default: dealer["display_name"] | append: '.jpg' %}
+{% assign dealer_image = dealer["image_name"] | default: dealer["display_name"] %}
 
 <div class="dealer-card">
     <img class="dealer-banner" src="/assets/img/dealers/{{ dealer_image }}" alt="{{ dealer["display_name"] }}" />    
