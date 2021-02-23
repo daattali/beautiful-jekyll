@@ -7,7 +7,7 @@ css:
 ---
 
 <iframe
-    src="https://player.twitch.tv/?fursquared&parent=fursquared.com&parent=dev.fursquared.com"
+    src="https://player.twitch.tv/?channel=fursquared&parent=fursquared.com&parent=dev.fursquared.com"
     height="100%"
     width="100%"
     allowfullscreen="true">
