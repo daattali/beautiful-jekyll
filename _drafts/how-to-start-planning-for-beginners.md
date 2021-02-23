@@ -21,7 +21,7 @@ redirect_from: []
 ---
 Planning can be as elaborate or as simple as you make it. However you do it, [starting slowly and building on it over time](https://www.minimalismmadesimple.com/home/slowing-down/) can be less overwhelming and will make it more likely to stick. That goes for many things in life, right? Today on the blog, I'm sharing with you how to start planning for beginners by laying out some key building blocks of planning. I'll also be sharing a free printable daily task list that you can use to get you started.
 
-## Start by slow and simple planning to….start planning.
+### Start by slow and simple planning to….start planning.
 
 If you [google planning ideas](https://www.google.com/search?q=planning+ideas&rlz=1C1CHBF_enCA775CA775&sxsrf=ALeKk02jwlFYKF3S0jnMsL8jIUZZMqyU6w:1614106705287&source=lnms&tbm=isch&sa=X&ved=2ahUKEwib0bCG2IDvAhVEU98KHWUKDYYQ_AUoAXoECCEQAw&biw=1920&bih=937), you may get hit with a lot of fancy planners or designs and then get overwhelmed. I know I did. Starting slow and simple is a lot more doable for most people than jumping in and getting overwhelmed.
 
@@ -31,9 +31,7 @@ Practice using a consistent daily to do list in one place (a notebook, digital n
 
 ![A picture of a planner and pen.](/uploads/how-to-start-planning-for-beginners-shm.jpg "How to Start Planning for Beginners SHM")
 
-## 
-
-Pick your top 3 daily to do list tasks.
+### Pick your top 3 daily to do list tasks.
 
 If you're like me, you may tend to want to write down too much. By sticking to a doable number, it becomes, well, more doable. Learn to [simplify your daily to do list](https://www.simplehomemom.com/10-ways-to-simplify-your-to-do-list/). Read about simplifying the to do list on one of my blogs [here](https://www.simplehomemom.com/10-ways-to-simplify-your-to-do-list/).
 
@@ -51,11 +49,13 @@ Take all your tasks floating around in your brain and dump it in one spot.
 
 Pull from your braindump too. But essentially, learn how to prioritize better over time with your daily to do list. When it feels like it is too much, it likely is. Bump your tasks ahead or plop onto your braindump for the future.
 
-## And keep going until you've got a groove!
+## Keep going until you've got a groove!
 
 Simple, good planning doesn't come overnight. It does take practice, but slow and steady wins the race and soon you'll be reaping [the benefits of daily planning](https://letstalkbiz.ca/2019/09/13/6-benefits-of-using-a-daily-planner/) (see [my post from Monday](https://www.instagram.com/p/CLmk32yhZl_/) on Instagram to read about some of these benefits).
 
 \************LINK INSTA IMAGE HERE.
+
+I hope you enjoyed my blog on how to start planning for beginners. Take it slow, learn as you go, and enjoy the process. Writing down a daily to do list, learning how to prioritize, and being consistent are all great ways to become better at planning.
 
 **Other blogs of mine you may like:**
 
