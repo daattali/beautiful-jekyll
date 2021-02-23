@@ -47,9 +47,7 @@ Take all your tasks floating around in your brain and dump it in one spot.
 
 > [_Brain Dumping is a step above a coping skill. It is a technique. It involves removing the “over thinking” thoughts from your mind and placing them somewhere else. This can help you live more freely throughout each day as the things that are troubling you are being resolved._](https://psychcentral.com/pro/recovery-expert/2020/04/using-brain-dumping-to-manage-anxiety-and-over-thinking#1)
 
-## 
-
-Practice prioritizing daily.
+### Practice prioritizing daily.
 
 Pull from your braindump too. But essentially, learn how to prioritize better over time with your daily to do list. When it feels like it is too much, it likely is. Bump your tasks ahead or plop onto your braindump for the future.
 
@@ -69,4 +67,6 @@ Simple, good planning doesn't come overnight. It does take practice, but slow an
 
 ## DOWNLOAD YOUR FREE PRINTABLE DAILY PLANNER SHEET: a gift for you!
 
-_PS if you'd like to get started on daily planning or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it here._
+_PS if you'd like to get started on daily planning or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_._
+
+![A picture of my daily planner sheet.](/uploads/planner-sheet.png "How to Start Planning for Beginners SHM")
