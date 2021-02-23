@@ -8,8 +8,8 @@ css:
 
 <iframe
     src="https://player.twitch.tv/?channel=fursquared&parent=fursquared.com&parent=dev.fursquared.com"
-    height="100%"
-    width="100%"
+    height="1280"
+    width="720"
     allowfullscreen="true">
 </iframe>
 
