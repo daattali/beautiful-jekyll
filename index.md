@@ -23,6 +23,6 @@ I am currently a PhD Candidate in electrical power engineering at the Norwegian 
 
 In previous roles, I was a Senior Research Associate at MIT CEEPR, and a Senior Carbon Market Analyst at Thomson Reuters Point Carbon.
 
-I have testified in front of legislators on climate policy, served as a consultant to government officials on carbon pricing, and briefed senior staff at Fortune Global 500 companies. I advised on the reform of the European Emissions Trading System and my work was featured in policy hearings in the EU Parliament and the EU Commission, contributing to, in the words of one lawmaker: "a cool-headed debate". My research has also been quoted in the media including Bloomberg, the Wall Street Journal, Politico, BBC, and others.
+I have testified before legislators on climate policy, served as a consultant to government officials on carbon pricing, and briefed senior staff at Fortune Global 500 companies. I advised on the reform of the European Emissions Trading System and my work was featured in policy hearings in the EU Parliament and the EU Commission, contributing to, in the words of one lawmaker: "a cool-headed debate". My research has also been quoted in the media including Bloomberg, the Wall Street Journal, Politico, BBC, and others.
 
 I hold a M.Sc. from MIT's Technology and Policy Program and a B.A. in mathematical economics from Colorado College.
