@@ -10,4 +10,6 @@ We're now accepting submissions for our Fursuit Dance Competition. Since we're v
 
 To submit your recording, you can upload the video to Youtube (as an unlisted video), Dropbox, or Google Drive. Email the link to programming@fursquared.com with your furry name and 'Fursuit Dance Comp Submission' in the subject line.
 
+The submission deadline will be Friday, February 26th @12pm Central.
+
 Remember to have fun and shake those tails\!
