@@ -278,7 +278,13 @@ css:
         {% assign age_restriction = schedule_item["Age Restriction"] | strip %}
         {% assign schedule_location = schedule_item["Location"] | strip %}
         {% assign schedule_description = schedule_item["Description"] | strip %}
-        {% assign schedule_item_link = schedule_item["Link"] | strip %}
+        {% if schedule_location == "Main"%}
+            {% assign schedule_item_link = "/live" %}
+            {% assign schedule_item_link_text = "The Live Feed" %}
+            {% else  %}
+            {% assign schedule_item_link = schedule_item["Link"] | strip %}
+            {% assign schedule_item_link_text = schedule_item["Link"] | strip %}
+        {% endif %}
         
         
         {% comment %}
@@ -308,7 +314,7 @@ css:
             {% endif %}
 
             {% if schedule_item_link != nil and schedule_item_link != "" %}
-                <div class="item-row description"><a href="{{schedule_item_link}}">{{schedule_item_link}}</a></div>
+                <div class="item-row description"><a href="{{schedule_item_link}}">{{schedule_item_link_text}}</a></div>
             {% endif %}
         </div>
     {% endfor %}
