@@ -196,6 +196,7 @@ body.js-supported .schedule-grid .schedule-item:hover a {
     border-bottom: 2px solid #1e465f;
     padding: 5px 10px;
     transition: border-color 0.2s ease;
+    background-color: #202224;
 }
 
 .schedule-guide .guide-item:hover .item-row {
