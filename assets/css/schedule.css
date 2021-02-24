@@ -115,6 +115,7 @@ body.js-supported .schedule-grid .schedule-item:hover a {
 .schedule-item.age-restriction-21-only {
     color: black;
     position: relative;
+
 }
 
 .schedule-item .age-restriction-icon {
@@ -122,6 +123,8 @@ body.js-supported .schedule-grid .schedule-item:hover a {
     float: right;
     width: 35px;
     margin-left: 8px;
+    background: white;
+    border-radius: 9999px;
 }
 
 .schedule:not(.showing-friday) .schedule-item.day-friday {
