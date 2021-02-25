@@ -9,7 +9,9 @@
 {% assign dealer_image = dealer["image_name"] | default: dealer["display_name"] %}
 
 <div class="dealer-card">
+    {% if dealer["image_name"] %}
     <img class="dealer-banner" src="/assets/img/dealers/{{ dealer_image }}" alt="{{ dealer["display_name"] }}" />    
+    {% endif %}
     
     <div class="dealer-card-content">
         <div class="dealer-name">
