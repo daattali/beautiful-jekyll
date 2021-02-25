@@ -9,8 +9,10 @@
 {% assign dealer_image = dealer["image_name"] | default: dealer["display_name"] %}
 
 <div class="dealer-card">
+    {% if dealer["image_name"] %}
     <img class="dealer-banner" src="/assets/img/dealers/{{ dealer_image }}" alt="{{ dealer["display_name"] }}" />    
-    
+    {% endif %}
+
     <div class="dealer-card-content">
         <div class="dealer-name">
             {{ dealer["display_name"] }}
@@ -22,6 +24,8 @@
             {{ dealer["website_link"] }}
         </div>
     </div>
-    
+
+    {% if dealer["website_link"] %}
     <a class="dealer-card-link" href="{{ dealer["website_link"] }}" target="_blank"></a>
+    {% endif %}
 </div>
