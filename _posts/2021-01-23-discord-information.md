@@ -8,7 +8,7 @@ tags:
   - Swag
 ---
 
-Welcome to Fur Squared\! As you may know, this year Fur Squared has decided to be held virtually instead of in person due to safety concerns over COVID-19. While we wish we could all be together again in one place, that’s not going to stop us from putting on the best convention experience\! All of the fun and action you expect from us can all be found on our state of the art, one of a kind, bee’s knees Discord server\!
+Welcome to Fur Squared\! As you may know, this year Fur Squared has decided to be held virtually instead of in person due to safety concerns over COVID-19. While we wish we could all be together again in one place, that’s not going to stop us from putting on the best convention experience\! All of the fun and action you expect from us can all be found on our state of the art, one of a kind, bee’s knees [Discord server](https://discord.gg/WB9cHujN)\!
 
 Everything from Main Events to Dealers Den can be found in our easy to navigate server\! From the moment you log on, you’ll be in the center of all the exciting panels, showcases and experiences you’ve come to know and love. With plenty of spaces dedicated to your specific needs and wants, there’s something here for everyone. Our Main Events channel will play host to the very best programming, along with Secondary Programing\!&nbsp;&nbsp;
 
