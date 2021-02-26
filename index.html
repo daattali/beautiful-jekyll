@@ -23,4 +23,4 @@ css:
 
 <br/>
 
-<a href="https://e.givesmart.com/events/kjQ/"><h1>CLICK HERE TO DONATE TO OUR CHARITY, HAWS!</h1></a>
+<h1><a href="https://e.givesmart.com/events/kjQ/">CLICK HERE TO DONATE TO OUR CHARITY, HAWS!</a></h1>
