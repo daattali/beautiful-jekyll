@@ -8,9 +8,15 @@ subtitle: Registration and benefits of Fur Squared
 
 ### ***Note that you won't need a registration this year to attend. We also want to inform that free Registrations from 2020 will be honored at our next in person convention at 2022. Attendance will be free this year, however if you wish to support the con we will offer a sponsorship level registration. ($50)***
 
-&nbsp;
+Sponsorship includes:
 
-Sponsorship includes:<br>Con Shirt<br>Coffee Mug<br>Pin<br>Shiny Sponsor role on our Discord server<br>Our undying love\!<br><br>To find out more about the Sponsorship bundle as well as where to individually purchase the shirt, mug, or pin please use the following link: https://fursquared.square.site/
+* Con Shirt
+* Coffee Mug
+* Pin
+* Shiny Sponsor role on our Discord server
+* Our undying love and appreciation\!
+
+To find out more about the Sponsorship bundle as well as where to individually purchase the shirt, mug, or pin please use the following link: https://fursquared.square.site/
 
 Follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared){: target="_blank" rel="noopener"} to keep up to date on any updates that may come this way.
 
