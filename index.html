@@ -24,3 +24,5 @@ css:
 <br/>
 
 <h1><a href="https://e.givesmart.com/events/kjQ/">CLICK HERE TO DONATE TO OUR CHARITY, HAWS!</a></h1>
+<br/>
+<h1><a href="https://fursquared.square.site/">CLICK HERE FOR CON STORE!</a></h1>
