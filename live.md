@@ -11,7 +11,7 @@ css:
     <div class="feed-box">
         <div class="video-feed">
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/6fxS4DWFi-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/6fxS4DWFi-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
