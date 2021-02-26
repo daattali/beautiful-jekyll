@@ -13,7 +13,6 @@ Sponsorship includes:
 * Con Shirt
 * Coffee Mug
 * Pin
-* Shiny Sponsor role on our Discord server
 * Our undying love and appreciation\!
 
 To find out more about the Sponsorship bundle as well as where to individually purchase the shirt, mug, or pin please use the following link:&nbsp;[https://fursquared.square.site/](https://fursquared.square.site/)
