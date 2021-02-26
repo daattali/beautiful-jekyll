@@ -14,7 +14,7 @@ css:
 </iframe>
 
 <div class="chat-feed">
-    <iframe src="https://titanembeds.com/embed/737134155028103238?defaultchannel=737134155028103238" frameborder="0"></iframe>
+    <iframe src="https://titanembeds.com/embed/737134155028103238?defaultchannel=757326769308172309" frameborder="0"></iframe>
 </div>
 
 {% assign dealers = site.data.dealers %}
