@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Sample blog post2
-subtitle: Each post also has a subtitle
-tags: [test]
+title: Oblivious Parallel RAM
+subtitle: By George Wang and Haozhan Sun
+tags: [oblivious computation]
 ---
 
-# Oblivious Parallel RAM
 ## Motivation
 As previous blogs discussed, Oblivious RAM (ORAM) takes advantage of the property that each specific sequence of memory locations accessed during the execution of a certain program is independent of the program, so that an adversary cannot infer any additional information about the original operations other than the number of accesses by observing the access pattern. In real-life scenarios, there may exist multiple readers accessing a SQL database simultaneously to extract information, which we want to hide from an adversary. Therefore, the addition of parallelism is strongly preferable to guarantee security and efficiency. Oblivious Parallel RAM (OPRAM) achieves this notion such that it supports multiple clients simultaneously accessing a storage server in parallel, and ensures that the communication among clients shall also remain oblivious.
 
@@ -152,8 +151,6 @@ To eliminate the global position map, one would run OblivAgg at the first stage.
 
 ## Conclusion
 To summarize, the paper introduces an OPRAM scheme, Subtree-ORAM, inspired by Path ORAM, with the same per client efficiency as SOTA ORAM schemes. The authors first give a brief overview of Path-ORAM, which serves a single client with one access to the server. Then, they present the concept of Subtree-ORAM, which supports a single client to batch-processes $m$ logical accesses in parallel. They generalize this notion further by presenting Subtree-OPRAM, which supports concurrent access of $m$ blocks by $m$ clients. The paper also consists of a final section of generalizing the idea of Subtree-OPRAM to a generic transformation from any ORAM to a concurrent OPRAM scheme. As there are currently few OPRAM schemes available, we shall expect, with the help of such generalization, there would be more efficient OPRAM schemes being proposed in the future.
-
-### By George Wang and Haozhan Sun
 
 ## References
 
