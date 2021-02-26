@@ -22,7 +22,8 @@ navbar-links:
   Theme: "theme"
   Dealers & Artists: "dealers"
   #  Staff: "staff"
-  Volunteer: "volunteer"
+  #Volunteer: "volunteer"
+  Store: "https://fursquared.square.site/"
   Contact: "contact"
     #  Social Media:
     #    - Twitter: "https://twitter.com/fursquared"
