@@ -6,34 +6,20 @@ tags: [test]
 ---
 
 # Oblivious Parallel RAM
-<!---
-George
--->
 ## Motivation
 As previous blogs discussed, Oblivious RAM (ORAM) takes advantage of the property that each specific sequence of memory locations accessed during the execution of a certain program is independent of the program, so that an adversary cannot infer any additional information about the original operations other than the number of accesses by observing the access pattern. In real-life scenarios, there may exist multiple readers accessing a SQL database simultaneously to extract information, which we want to hide from an adversary. Therefore, the addition of parallelism is strongly preferable to guarantee security and efficiency. Oblivious Parallel RAM (OPRAM) achieves this notion such that it supports multiple clients simultaneously accessing a storage server in parallel, and ensures that the communication among clients shall also remain oblivious.
 
-<!---
-Haozhan
--->
 
 ## Overview
 In this blog post, we are looking into a special scheme of Oblivious RAM (ORAM): Oblivious Parallel RAM (OPRAM). We will first discuss Oblivious RAM (ORAM), which tries to "fool" the adversary using garbled read/write operations (to access a remote storage server or a random-access memory). Then we talk about the natural setting of Oblivious Parallel RAM (OPRAM) where $m$ parallelly access the storage server at the same time. Finally we discuss the contribution of the paper's work: 1. Having constructed the first OPRAM scheme that matches the storage and server-client communication complexities. 2. Presenting a generic transformation turning any ORAM scheme into an OPRAM scheme. 
 
 
-<!---
-Haozhan
--->
 ## Introduction
 
 The paper tries to solve the problem about the attempt to *hide access patterns* when we read from and write to a memory or storage server that is not trustworthy. This is a basic problem both in the context of software protection and secure outsourcing to a third-party storage provider.
 
 The most simple way to "hide access patterns" is to use *Oblivious RAM* (ORAM). This technique can compile logical access sequences into "garbled ones", so that a (potentially malicious) observer cannot infer anything other than *the overall number of logical accesses*.     These garbled access sequences are considered *oblivious*. The state-of-the-art implementation of the ORAM scheme currently has a $O(log^2N)$ computation overhead, where $N$ stands for the size of storage. 
 
-<!---
-George
-## Overview
-We introduce a OPRAM scheme, Subtree-ORAM, inspired by Path ORAM, with same per client efficiency as SOTA ORAM schemes. We first give a brief overview of Path-ORAM, then introduce the Subtree-ORAM, and finally adapt the scheme to batch processing and multiple client settings.
--->
 ***
 ### Parallel Oblivious Accesses
 There is an issue with existing ORAM schemes: they only support a *single client*. More importantly, they cannot handle *parallel accesses from multiple clients*. The authors then introduce the notion of *Oblivious Parallel RAM*, which compiles *synchronous parallel* logical access sequences by $m$ clients into *parallel* and garbled sequences. This, after introducing parallelism, still does not reveal any information other than the total number of logical accesses. The authors then introduced the OPRAM scheme, but pointing out that the complexity of the scheme is $\omega(log^3N)$, which is a factor of $\Omega(logN)$ higher than the state-of-the-art ORAM scheme. 
@@ -164,17 +150,11 @@ We can now formulate the preceding section more rigorously.
 6. Finally, each client flushes the retrieved subtree and stash, before writing the subtree back. 
 To eliminate the global position map, one would run OblivAgg at the first stage. The rest of the protocol should be identical to a non-recursive Subtree-OPRAM.
 
-<!---
-George
--->
 ## Conclusion
 To summarize, the paper introduces an OPRAM scheme, Subtree-ORAM, inspired by Path ORAM, with the same per client efficiency as SOTA ORAM schemes. The authors first give a brief overview of Path-ORAM, which serves a single client with one access to the server. Then, they present the concept of Subtree-ORAM, which supports a single client to batch-processes $m$ logical accesses in parallel. They generalize this notion further by presenting Subtree-OPRAM, which supports concurrent access of $m$ blocks by $m$ clients. The paper also consists of a final section of generalizing the idea of Subtree-OPRAM to a generic transformation from any ORAM to a concurrent OPRAM scheme. As there are currently few OPRAM schemes available, we shall expect, with the help of such generalization, there would be more efficient OPRAM schemes being proposed in the future.
 
 ### By George Wang and Haozhan Sun
 
-<!---
-George
--->
 ## References
 
 [Oblivious Parallel RAM: Improved Efficiency and Generic Constructions](https://eprint.iacr.org/2015/1053.pdf)
