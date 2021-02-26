@@ -6,8 +6,6 @@ css:
     - "/assets/css/live_feed.css"
 ---
 
-# The Next Stream is TBD
-We'll be doing something in January, stay tuned!
 
 <div class="live-feed-container">
     <div class="feed-box">
