@@ -16,7 +16,7 @@ Sponsorship includes:
 * Shiny Sponsor role on our Discord server
 * Our undying love and appreciation\!
 
-To find out more about the Sponsorship bundle as well as where to individually purchase the shirt, mug, or pin please use the following link: https://fursquared.square.site/
+To find out more about the Sponsorship bundle as well as where to individually purchase the shirt, mug, or pin please use the following link:&nbsp;[https://fursquared.square.site/](https://fursquared.square.site/)
 
 Follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared){: target="_blank" rel="noopener"} to keep up to date on any updates that may come this way.
 
