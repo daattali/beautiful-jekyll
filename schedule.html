@@ -292,7 +292,7 @@ css:
             {% assign schedule_location_down = schedule_location | downcase %}
             {% case schedule_location_down %}
                 {% when 'main' %}
-                    {% assign schedule_item_link = "/link" | strip %}
+                    {% assign schedule_item_link = "/live" | strip %}
                     {% assign schedule_item_link_text = "The Live Feed" | strip %}
                 {% when 'tabletop 1' %}
                     {% assign schedule_item_link = "https://discord.gg/WB9cHujN" | strip %}
@@ -300,6 +300,9 @@ css:
                 {% when 'tabletop 2' %}
                     {% assign schedule_item_link = "https://discord.gg/WB9cHujN" | strip %}
                     {% assign schedule_item_link_text = "FurSquared Discord" | strip %}
+                {% when 'artists & dealers' %}
+                    {% assign schedule_item_link = "/dealers" | strip %}
+                    {% assign schedule_item_link_text = "Artists & Dealers Stream" | strip %}
             {% endcase %}
         {% endif %}
         
