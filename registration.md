@@ -10,7 +10,7 @@ subtitle: Registration and benefits of Fur Squared
 
 &nbsp;
 
-More details about swag are to be announced at a later date so keep an eye out on our page for updates.&nbsp;
+Sponsorship includes:<br>Con Shirt<br>Coffee Mug<br>Pin<br>Shiny Sponsor role on our Discord server<br>Our undying love\!<br><br>To find out more about the Sponsorship bundle as well as where to individually purchase the shirt, mug, or pin please use the following link: https://fursquared.square.site/
 
 Follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared){: target="_blank" rel="noopener"} to keep up to date on any updates that may come this way.
 
