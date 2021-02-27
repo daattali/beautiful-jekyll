@@ -12,7 +12,7 @@ subtitle: Information to get set up for the multi stream
 
 Get your virtual camera ready and go to this link to connect:
 
-#### [Click here\!\!](also I think I got the onboard page right){: target="_blank" rel="noopener"}
+#### [Click here\!\!](https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20){: target="_blank" rel="noopener"}
 
 #### &nbsp;
 
@@ -60,7 +60,7 @@ Once you have streamlabs or OBS set up, follow this guide on show day:
 
 First: navigate to this link:
 
-[https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20](https://invite.cam/U2FsdGVkX1+RhO2BpUucj/EUaBa/hnIeLfdrIizL0ETSq35LtbBQZYlPB2V0y7pZRpj4Nggs3wagfLWUQLjDxlnZY6K8thzBIRCE0bi6PPs=){: target="_blank" rel="noopener"}
+[https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20](https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20){: target="_blank" rel="noopener"}
 
 You'll be asked to enter a display name. You’ll also get a request to allow your webcam.&nbsp; Click accept&nbsp; ![](assets/img/webcam-sel.png){: width="1280" height="960"}
 
@@ -90,7 +90,7 @@ First, open your preferred art program.
 
 go to the following link
 
-#### [Click here\!\!](also I think I got the onboard page right){: target="_blank" rel="noopener"}
+#### [Click here\!\!](https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20){: target="_blank" rel="noopener"}
 
 &nbsp;
 
