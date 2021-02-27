@@ -23,34 +23,6 @@ Currently, for every new customer you get, you upload their new balance into the
 
 ![test](../_images/osod1.png)
 
-<p align="center">
-<img src="/images/osod1.png" width="512" title="dummy title">
-</p>
-
-<p align="center">
-<img src="/_images/osod1.png" width="512" title="dummy title2">
-</p>
-
-<p align="center">
-<img src="images/osod1.png" width="512" title="dummy title">
-</p>
-
-<p align="center">
-<img src="_images/osod1.png" width="512" title="dummy title">
-</p>
-
-https://github.com/compsci590s21/compsci590s21.github.io/blob/master/_images/osod1.png
-
-![test2](_images/osod1.png)
-
-![test3](/_images/osod1.png)
-
-![test4](images/osod1.png)
-
-![test5](/images/osod1.png)
-
-![test6](../images/osod1.png)
-
 However, something still irks you. You do not trust Google, and you think they might be trying to figure out any information that they can on the balance in your customers’ accounts. You then realize that Google can look at the positions you accessed, graphed above, and correctly deduce that the balance deposited into the new account must be greater than at least half of all other accounts as no positions were accessed in the left half of your array. In other words, Google now knows that the new account balance is greater than all accounts on positions 0 through 6. In fact, if Google specifically instructed someone to deposit a specific amount of money into a new account with your bank, they can eventually figure out an accurate approximation on the balance in each of your customer's accounts.
 
 This immediately sends chills down your spine, such a security breach is absolutely unacceptable and must be remedied immediately. You try your hand at a few other algorithms for sorting the new account in position, but find out that all lead to similar problems. Finally, you correctly deduce that as long as your access pattern to the cloud varies depending on input, then Google can learn something about your encrypted data. If you truly wanted to keep Google’s nose out of your business, you will have to make sure that the behavior of whatever algorithm you implement is independent of the input.
@@ -75,6 +47,8 @@ The procedure you saw above was an example of Bitonic Sort, an oblivious sorting
 It expanded to any network of size $2n$ for any integer $n$. That does not sound awfully restrictive to you, as you can always pad your data with enough dummies to get it to the nearest greater power of two. Graphed below is a Bitonic network designed for exactly eight inputs.
 
 ![](../_images/bitonicnetwork.png)
+
+![tes](https://raw.githubusercontent.com/compsci590s21/compsci590s21.github.io/master/_images/bitonicnetwork.png)
 
 The eight elements start as inputs from the left hand side and proceed to the right. Each vertical line indicates a comparison between two elements and a possible swap. By the time the elements exist from the right, they are sorted after exactly 24 comparisons regardless of input. You test the network out many times, and it always holds.
 
