@@ -52,7 +52,7 @@ The eight elements start as inputs from the left hand side and proceed to the ri
 
 Bitonic Sort focuses on the creation of Bitonic Sequences. A sequence of numbers can be called bitonic if it is first increasing then decreasing, or vice versa. Fully increasing and fully decreasing sequences are also considered bitonic. Bitonic Sort builds on the following property:
 
-Consider a bitonic sequence $S = \langle a_0,a_1, \ldots ,a_n \rangle$ such that $a_0 \leq a_1 \leq \ldots a_{n/2-1}$
+Consider a bitonic sequence $S = \langle a_0,a_1, \ldots ,a_n \rangle$ such that $a_0 \leq a_1 \leq \ldots \leq a_{n/2-1}$
 
 Create the following subsequences:
 
@@ -60,7 +60,7 @@ $s_1 = \min(a_0,a_{n/2}), \min(a_1,a_{n/2+1}), \dots, \min(a_{n/2-1},a_{n-1})$
 
 $s_2 = \max(a_0,a_{n/2}), \max(a_1,a_{n/2+1}), \dots, \max(a_{n/2-1},a_{n-1})$
 
-It then follows that both $s_1$ and $s_2$ are not only Bitonic but also for all $ x,y | x \in s_1, y \in s_2, x  < y$
+It then follows that both $s_1$ and $s_2$ are not only Bitonic but also for all $ x,y $ s.t. $ x \in s_1, y \in s_2, x  < y$
 
 Applying the same merge concept recursively on both $s_1$ and $s_2$ will then yield a sorted list. However, this builds on the assumption that the original sequence was, in fact, bitonic. To sort a random sequence, Bitonic Sort first transforms the whole sequence to a bitonic sequence then sorts that as described above.
 
@@ -73,7 +73,7 @@ The process above is then repeated to create larger and larger bitonic sequences
 
 ![](../_images/visaid.png)
 
-You notice that Bitonic Sort even when applied to a random sequence still assumes that the number of items is on the form $2^n|n\in\mathbb{N}$ or else the recursive step would not work properly. However, with some modification, Bitonic Sorting can actually be used to create a sorting network of size n not a power of 2.
+You notice that Bitonic Sort even when applied to a random sequence still assumes that the number of items is on the form $2^n, n\in\mathbb{N}$ or else the recursive step would not work properly. However, with some modification, Bitonic Sorting can actually be used to create a sorting network of size n not a power of 2.
 
 ## Bucket Sort
 
@@ -119,7 +119,7 @@ Storing the locations in this way, you do not have to go through your entire loc
 
 ![](../_images/datamap.png)
 
-This diagram shows how we might generalize this oblivious stack. Here, we assume that we will only access datapoints 1 and 4 after accessing 0, so we store the locations of 1 and 4 with datapoint 0. In order to maintain the efficiency of this system, we must ensure that the graph of potential accesses is “sparse,” that is, from a given datapoint, there are only a few possibilities for the next datapoint we access. That way, the positions of those data can be stored without blowing up the size of the previous datapoint.
+This diagram shows how we might generalize this oblivious stack. Here, we assume that we will only access datapoints 1 and 4 after accessing 0, so we store the locations of 1 and 4 with datapoint 0. In order to maintain the efficiency of this system, we must ensure that the graph of potential accesses is “sparse”, that is, from a given datapoint, there are only a few possibilities for the next datapoint we access. That way, the positions of those data can be stored without blowing up the size of the previous datapoint.
 
 The other critical assumption is that this access graph is a “tree.” That is, each node can be reached from only one other node. This way, when we update position information of a node, we only need to modify the position information in its parent (which we had already accessed recently if we are modifying its child), and we do not need to worry about inaccurate position data floating around somewhere else in the graph.
 
