@@ -19,11 +19,11 @@ To see that constructing an ORAM is possible, consider the situation where the C
 
 Suppose we know the amount of memory required by the program in advance, call it $latex N$. Henceforth, the term 'virtual memory address' will mean an address in the RAM. The construction can be broken down into 3 parts: Setup, Read Protocol, and the Write Protocol.
 
-**Setup**. In this step, the CPU generates two keys $latex K_1$ and $latex K_2$. The first key is used to encrypt the data on the RAM and the second key is used to generate the tags for every memory location.
+**Setup**. In this step, the CPU generates two keys $K_1$ and $K_2$. The first key is used to encrypt the data on the RAM and the second key is used to generate the tags for every memory location.
 
 Now, the CPU goes over memory locations 1 to N and augments every memory location in the RAM as follows:
 
-$latex RAM_{2}[i] = <RAM[i], i, tag_{i}>$
+$RAM_{2}[i] = RAM[i], i, tag_{i}>$
 
 That is, every memory location now contains its virtual address and a tag along with its original content. The $latex tag_i$ is the tag for the $i$-th virtual address, generated as follows $latex tag_i = F_{K_2}(i)$. The tag will be used to permute the RAM and lookup the contents of the permuted RAM.
 
