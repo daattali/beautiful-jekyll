@@ -44,7 +44,7 @@ The RAM is reshuffled and encrypted again after every $\sqrt{N}$ I/O operations.
 
 There are two operations that need to be defined before we explain how read and write protocols work. 
 
-The **GET** operation takes as input a virtual memory address i and obtains $tag_i$ and finds the tag in RAM through an interactive binary search. This is possible because the RAM is sorted by tags. In other words, it asks the server for the item stored at location N/2 (assume N is even) decrypts it and compares its tag with $tag_i$. If $tag_i$ is less than the tag of item ORAM[N/2], then it asks for the item at location N/4; else it asks for the item at location 3N/4; and so on.
+The **GET** operation takes as input a virtual memory address i and obtains $tag_i$ and finds the tag in RAM through an interactive binary search. This is possible because the RAM is sorted by tags. In other words, it asks the server for the item stored at location $N/2$ (assume $N$ is even) decrypts it and compares its tag with $tag_i$. If $tag_i$ is less than the tag of item $ORAM[N/2]$, then it asks for the item at location $N/4$; else it asks for the item at location $3N/4$; and so on.
 
 Once the item with $tag_i$ has been fetched from ORAM, the CPU decrypts it locally. It then re-encrypts item i (possibly to something different) and asks the memory to store it at the same location. The **PUT** operation takes as input a virtual memory address and a value $v$ to be inserted in that location. It first calls GET(i) as above and then encrypts $v$ and stores it at the same location from which GET(i) returned the search result. For the sake of simplicity, we also define another operation **FETCH** that takes a physical address in the ORAM as an argument and just returns its contents.
 
@@ -77,15 +77,15 @@ A fundamental change to the interaction in ORAM is the exclusion of Read and Wri
 
 The reason for ReadAndRemove and Add to be implemented instead of the normal operations is to always change the location of an accessed block of data whether it is simply accessed as unchanged data, modified and returned, or a completely new block of data.
 
-**Construction of the Tree.** A binary tree is constructed with a depth of $\log{N}$, which leaves the tree with N leaf nodes. Each Node will have a capacity of $O(\log(N))$. When this capacity is filled, the node will then evict the data block that is at the end of its storage to one of its child buckets.
+**Construction of the Tree.** A binary tree is constructed with a depth of $\log{N}$, which leaves the tree with N leaf nodes. Each Node will have a capacity of $O(\log N)$. When this capacity is filled, the node will then evict the data block that is at the end of its storage to one of its child buckets.
 
 A note about data blocks. When a data block is ever added to the tree, it is assigned a path that is chosen independently at random. This path is a number associated with a leaf node. Whenever a block is evicted, it is put down the path toward its associated leaf node. This is how a block can be found when ReadAndRemove is enacted upon the block. The data structure indicates what block has what leaf node is stored by the client.
 
 **Proof of Security and Efficiency**
 
-For ReadAndRemove, each bucket is along a certain path where each of its log(N) blocks has a different destination leaf node. Whenever this function is called, the data block that is accessed is always uniformly randomly given a new leaf destination. Whenever the function Add is invoked, the root is the bucket that is accessed every time but will always invoke eviction, which moves its data in a random position down the tree.
+For ReadAndRemove, each bucket is along a certain path where each of its $\log N$ blocks has a different destination leaf node. Whenever this function is called, the data block that is accessed is always uniformly randomly given a new leaf destination. Whenever the function Add is invoked, the root is the bucket that is accessed every time but will always invoke eviction, which moves its data in a random position down the tree.
 
-Due to the nature of the Trivial Bucket ORAM that undergoes the same type and intense process for each access and writeback of data, which includes scanning down the tree, adding to the top of the tree with re-encrypted data which includes a new path, and evicting down the tree randomly to allow more blank space for new data blocks in each bucket, the amortized cost of use is the same as the Worst-case cost, which simplifies to $O(\log^3 (N))$.
+Due to the nature of the Trivial Bucket ORAM that undergoes the same type and intense process for each access and writeback of data, which includes scanning down the tree, adding to the top of the tree with re-encrypted data which includes a new path, and evicting down the tree randomly to allow more blank space for new data blocks in each bucket, the amortized cost of use is the same as the Worst-case cost, which simplifies to $O(\log^3 N)$.
 
 **References**
 
