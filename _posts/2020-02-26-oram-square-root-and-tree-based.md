@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: ORAM: Square-Root and Tree-Based
