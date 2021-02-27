@@ -46,9 +46,8 @@ The procedure you saw above was an example of Bitonic Sort, an oblivious sorting
 
 It expanded to any network of size $2n$ for any integer $n$. That does not sound awfully restrictive to you, as you can always pad your data with enough dummies to get it to the nearest greater power of two. Graphed below is a Bitonic network designed for exactly eight inputs.
 
-![](../_images/bitonicnetwork.png)
-
 ![tes](https://raw.githubusercontent.com/compsci590s21/compsci590s21.github.io/master/_images/bitonicnetwork.png)
+![](../_images/bitonicnetwork.png)
 
 The eight elements start as inputs from the left hand side and proceed to the right. Each vertical line indicates a comparison between two elements and a possible swap. By the time the elements exist from the right, they are sorted after exactly 24 comparisons regardless of input. You test the network out many times, and it always holds.
 
@@ -75,6 +74,7 @@ First, consider an input of size $2n$, that input is then split into $n$ pairs.
 Notice that after step (2), each two consecutive pair forms a bitonic sequence which can be fully sorted as described above to create $n/4$ sorted sequences.
 The process above is then repeated to create larger and larger bitonic sequences until the entire initial sequence is bitonic. At that point, the merge procedure from above could be used to fully sort it. The following example provides a good visual aid:
 
+![tes](https://raw.githubusercontent.com/compsci590s21/compsci590s21.github.io/master/_images/visaid.png)
 ![](../_images/visaid.png)
 
 You notice that Bitonic Sort even when applied to a random sequence still assumes that the number of items is on the form $2^n, n\in\mathbb{N}$ or else the recursive step would not work properly. However, with some modification, Bitonic Sorting can actually be used to create a sorting network of size n not a power of 2.
@@ -83,6 +83,7 @@ You notice that Bitonic Sort even when applied to a random sequence still assume
 
 Although being the go-to example when discussing oblivious sorting algorithms, Bitonic Sort is by far not the only oblivious sorting algorithm nor is it the fastest. After some searching, you come over the following construction of Bucket Sort that takes that idea to the next level:
 
+![tes](https://raw.githubusercontent.com/compsci590s21/compsci590s21.github.io/master/_images/bucketnet.png)
 ![](../_images/bucketnet.png)
 
 “The MergeSplit Procedure takes elements from two buckets at level i and put them into two buckets at level $i+1$, according to the $(i+1)^{th}$ most significant bit of the keys. At level $i$, every $2^i$ consecutive buckets are semi-sorted by the most significant bits of the keys.”
@@ -95,6 +96,7 @@ Well, yes and no. For once, Oblivious Sorting generally, and Bitonic Sort specif
 
 Furthermore, by introducing a negligible error probability several algorithms manage to get very close to the $O(n\log n)$ theoretical limit of sorting. The following table is of particular interest in this regard:
 
+![tes](https://raw.githubusercontent.com/compsci590s21/compsci590s21.github.io/master/_images/sorttable.png)
 ![](../_images/sorttable.png)
 
 What else could be oblivious you wonder? So you Google on, still unaware of the irony.
@@ -121,6 +123,7 @@ Your solution is that if task B is added before task A, then you will store the 
 
 Storing the locations in this way, you do not have to go through your entire location storage system with all the associated encrypting and decrypting each time you want a file. You are able to combine your location access step with your previous file decryption, effectively killing two birds with one stone.
 
+![tes](https://raw.githubusercontent.com/compsci590s21/compsci590s21.github.io/master/_images/datamap.png)
 ![](../_images/datamap.png)
 
 This diagram shows how we might generalize this oblivious stack. Here, we assume that we will only access datapoints 1 and 4 after accessing 0, so we store the locations of 1 and 4 with datapoint 0. In order to maintain the efficiency of this system, we must ensure that the graph of potential accesses is “sparse”, that is, from a given datapoint, there are only a few possibilities for the next datapoint we access. That way, the positions of those data can be stored without blowing up the size of the previous datapoint.
@@ -131,6 +134,7 @@ The other critical assumption is that this access graph is a “tree.” That is
 
 Below is a table comparing these oblivious data structures to their non-oblivious counterparts. Path ORAM and ORAM are algorithms which do not require any structure in the data. “Pointer based” describes the system we used for the task list.
 
+![tes](https://raw.githubusercontent.com/compsci590s21/compsci590s21.github.io/master/_images/datastructtable.png)
 ![](../_images/datastructtable.png)
 
 This is a powerful system, as it allows you to exploit the fundamental structure of your data to only encrypt the data which matters to you. You can keep a large amount of information out of Google’s hands while still storing it on their servers, and even hide the details of your access patterns.
