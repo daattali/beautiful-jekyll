@@ -25,12 +25,9 @@ css:
         </div>
     </div>
 </div>
-<<<<<<< HEAD
-=======
 
 <br/>
 
 <h1><a href="https://e.givesmart.com/events/kjQ/">CLICK HERE TO DONATE TO OUR CHARITY, HAWS!</a></h1>
 <br/>
 <h1><a href="https://fursquared.square.site/">CLICK HERE FOR CON STORE!</a></h1>
->>>>>>> 0f1e0ca1eb733ac6bdbe0e7865208303b4d8725f
