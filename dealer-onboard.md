@@ -36,7 +36,7 @@ If you already use some kind of streaming software, you’ll need to set up some
 
 First, make sure that you’ve updated to the newest version of OBS.&nbsp; They recently added virtual camera output.&nbsp; If the bottom right of OBS looks like this to you, you’re set
 
-![](assets/img/virtualWebcam.png){: width="1280" height="960"}
+![](assets/img/virtualWebcam.png)
 
 ### Streamlabs:
 
@@ -62,11 +62,17 @@ First: navigate to this link:
 
 [https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20](https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20){: target="_blank" rel="noopener"}
 
-You'll be asked to enter a display name. You’ll also get a request to allow your webcam.&nbsp; Click accept&nbsp; ![](assets/img/webcam-sel.png){: width="1280" height="960"}
+You'll be asked to enter a display name. You’ll also get a request to allow your webcam.&nbsp; Click accept&nbsp; 
 
-You’ll have two options.&nbsp; Click “join room with camera” ![](assets/img/connect-with-webcam.png){: width="1280" height="960"}
+![](assets/img/webcam-sel.png)
 
-Select “OBS camera” or “Streamlabs OBS”&nbsp; as your video source and no audio. ![](assets/img/source-select.png){: width="1280" height="960"}
+You’ll have two options.&nbsp; Click “join room with camera” 
+
+![](assets/img/connect-with-webcam.png)
+
+Select “OBS camera” or “Streamlabs OBS”&nbsp; as your video source and no audio. 
+
+![](assets/img/source-select.png)
 
 When you’re ready to begin, click start.&nbsp; We’ll know you’re streaming and take it from there\!
 
@@ -76,7 +82,7 @@ You can also start to stream to your preferred platform like normal, our system 
 
 If you want to stop your stream to us, click the bottom right icon on the webpage.&nbsp;
 
-![](assets/img/stream-buttons.png){: width="1280" height="960"}
+![](assets/img/stream-buttons.png)
 
 &nbsp;
 
