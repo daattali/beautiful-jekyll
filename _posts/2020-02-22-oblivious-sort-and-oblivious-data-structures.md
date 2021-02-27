@@ -29,6 +29,16 @@ Currently, for every new customer you get, you upload their new balance into the
 <img src="/_images/osod1.png" width="512" title="dummy title2">
 </p>
 
+<p align="center">
+<img src="images/osod1.png" width="512" title="dummy title">
+</p>
+
+<p align="center">
+<img src="_images/osod1.png" width="512" title="dummy title">
+</p>
+
+https://github.com/compsci590s21/compsci590s21.github.io/blob/master/_images/osod1.png
+
 ![test2](_images/osod1.png)
 
 ![test3](/_images/osod1.png)
