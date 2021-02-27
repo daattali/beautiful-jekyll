@@ -89,6 +89,8 @@ Due to the nature of the Trivial Bucket ORAM that undergoes the same type and in
 
 **References**
 
+[Software Protection and Simulation on Oblivious RAMs](http://web.cs.ucla.edu/~rafail//PUBLIC/09.pdf)
+
 [Oblivious RAM with $O(\log^3 N)$ Worst-Case Cost](https://eprint.iacr.org/2011/407.pdf)
 
 [Bitonic sort](https://www.wikiwand.com/en/Bitonic_sorter)
