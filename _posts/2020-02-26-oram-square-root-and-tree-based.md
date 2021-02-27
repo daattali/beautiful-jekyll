@@ -1,11 +1,9 @@
 ---
 layout: post
-title: ORAM: Square-Root and Tree-Based
+title: Introduction to Oblivious RAM
 subtitle: Andrew Demma and Anurag Kashyap
 tags: [oblivious computation]
 ---
-
-## Introduction to Oblivious RAM
 
 In several settings, an eavesdropping adversary can learn sensitive information just from the memory access patterns in a computer/network. An access pattern is defined as a sequence $[A_1, A_2, \ldots ]$ of memory addresses that a user/client wants to access in the exact order in which they appear in the list.
 
