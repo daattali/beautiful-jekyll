@@ -15,11 +15,15 @@ You and your best friend had recently founded your dream startup Cloud Bank, the
 
 Being short on cash, you decided to host all of your data on Google Cloud. Currently, your data mostly only consists of your customers' account balances, arranged in ascending order. For good measure, you also encrypted the balances so Google cannot figure out the balance of any customer’s account, even though Google might be able to make an educated guess and conclude the data is somehow sorted.
 
-## The Problem:
+## The Problem
 
 Currently, for every new customer you get, you upload their new balance into the correct position in your sorted and encrypted list. To do that, you use Binary Search to find the correct spot for the new customer's data. This, of course, involves repeated comparisons between the value of the new customer cn and one of the old customers ci. For each comparison, you are going to access ci on the Cloud, download it, unencrypt it locally, and compare it against cn. Eventually, you will find the correct position for cn among your uploaded data and all that is left is to encrypt cn then upload it into the correct position.
 
 ![](../_images/osod1.png)
+
+<p align="center">
+<img src="/images/osod1.png" width="512" title="dummy title">
+</p>
 
 However, something still irks you. You do not trust Google, and you think they might be trying to figure out any information that they can on the balance in your customers’ accounts. You then realize that Google can look at the positions you accessed, graphed above, and correctly deduce that the balance deposited into the new account must be greater than at least half of all other accounts as no positions were accessed in the left half of your array. In other words, Google now knows that the new account balance is greater than all accounts on positions 0 through 6. In fact, if Google specifically instructed someone to deposit a specific amount of money into a new account with your bank, they can eventually figure out an accurate approximation on the balance in each of your customer's accounts.
 
