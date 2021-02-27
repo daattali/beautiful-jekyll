@@ -41,7 +41,7 @@ Unbeknownst to you, you had just independently rediscovered Oblivious Algorithms
 
 ## Oblivious Algorithms
 
-Ironically, you went to Google to learn more about your problem. You later learned of the term Oblivious Algorithms. There seemed to be a whole class of algorithms under that name, all sharing the trait that the way they operate is  the same - from a certain perspective - independent of the input. Different algorithms would choose different aspects to obscure, but the idea still remains constant. Initially, this Obliviousness restriction sounds too unsurmountable that you are not entirely certain anything useful can be achieved while upholding it. However, you are later convinced that oblivious sorting is possible when you encounter the following oblivious procedure to sort four numbers:
+Ironically, you went to Google to learn more about your problem. You later learned of the term Oblivious Algorithms. There seemed to be a whole class of algorithms under that name, all sharing the trait that the way they operate is  the same - from a certain perspective - independent of the input. Different algorithms would choose different aspects to obscure, but the idea still remains constant. Initially, this Obliviousness restriction sounds too unsurmountable that you are not entirely certain anything useful can be achieved while upholding it. However, you are later convinced that oblivious sorting is possible when you encounter the following oblivious procedure to sort four numbers:\
 compareAndSwapIfNecessary(0, 1);\
 compareAndSwapIfNecessary(2, 3);\
 compareAndSwapIfNecessary(0, 2);\
