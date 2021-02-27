@@ -52,19 +52,15 @@ The eight elements start as inputs from the left hand side and proceed to the ri
 
 Bitonic Sort focuses on the creation of Bitonic Sequences. A sequence of numbers can be called bitonic if it is first increasing then decreasing, or vice versa. Fully increasing and fully decreasing sequences are also considered bitonic. Bitonic Sort builds on the following property:
 
-Consider a bitonic sequence $S = \langle a_0,a_1,...,a_n \rangle$ such that:
-
-$a_0 \leq a_1 \leq...a_{n/2-1}$
+Consider a bitonic sequence $S = \langle a_0,a_1, \ldots ,a_n \rangle$ such that $a_0 \leq a_1 \leq \ldots a_{n/2-1}$
 
 Create the following subsequences:
 
-\[s_1 = <min(a_0,a_{n/2}),min(a_1,a_{n/2+1}),\dots,min(a_{n/2-1},a_{n-1})\]
+$s_1 = \min(a_0,a_{n/2}), \min(a_1,a_{n/2+1}), \dots, \min(a_{n/2-1},a_{n-1})$
 
-\[s_1 = <max(a_0,a_{n/2}),max(a_1,a_{n/2+1}),\dots,max(a_{n/2-1},a_{n-1})\]
+$s_1 = \max(a_0,a_{n/2}), \max(a_1,a_{n/2+1}), \dots, \max(a_{n/2-1},a_{n-1})$
 
-It then follows that both and are not only Bitonic but also:
-
-\[\forall x,y|x\in s_1,y\in s_2, x  < y\]
+It then follows that both and are not only Bitonic but also $\forall x,y|x \in s_1, y \in s_2, x  < y$
 
 Applying the same merge concept recursively on both $s_1$ and $s_2$ will then yield a sorted list. However, this builds on the assumption that the original sequence was, in fact, bitonic. To sort a random sequence, Bitonic Sort first transforms the whole sequence to a bitonic sequence then sorts that as described above.
 
@@ -93,7 +89,7 @@ You are still somewhat skeptical, all of this obliviousness must come at the cos
 
 Well, yes and no. For once, Oblivious Sorting generally, and Bitonic Sort specifically, lead themselves very nicely to parallelization. Had your Cloud Bank had a large number of computers, you could have had all the comparison and swap operations in every level of Bitonic Sort run in parallel since the result of each operation is independent from the rest. Running Bitonic Sort on parallel like so would mean that you would finish in real time linear in the number of levels.
 
-Furthermore, by introducing a negligible error probability several algorithms manage to get very close to the $O(n\log n) theoretical limit of sorting. The following table is of particular interest in this regard:
+Furthermore, by introducing a negligible error probability several algorithms manage to get very close to the $O(n\log n)$ theoretical limit of sorting. The following table is of particular interest in this regard:
 
 ![](../_images/sorttable.png)
 
@@ -135,7 +131,7 @@ Below is a table comparing these oblivious data structures to their non-obliviou
 
 This is a powerful system, as it allows you to exploit the fundamental structure of your data to only encrypt the data which matters to you. You can keep a large amount of information out of Google’s hands while still storing it on their servers, and even hide the details of your access patterns.
 
-In particular, we see that by specifying the situation to which we want to apply the algorithm, we can reduce the bandwidth blowup of the data from essentially O(log^2(N)) to O(log(N)). This will substantially reduce computation time and reduce the amount of interaction necessary with the server.
+In particular, we see that by specifying the situation to which we want to apply the algorithm, we can reduce the bandwidth blowup of the data from essentially $O(\log^2 N)$ to $O(\log N)$. This will substantially reduce computation time and reduce the amount of interaction necessary with the server.
 
 ## Conclusion
 
