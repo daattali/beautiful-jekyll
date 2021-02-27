@@ -213,6 +213,7 @@ css:
             <div class="item-row age-restriction">All attendees admitted</div>
             <div class="item-row hosts">Hosted By: Eddie Dalmatian</div>
             <div class="item-row location">Location: Jackbox voice and text channels on Discord</div>
+            <div class="item-row link"><a href="https://discord.gg/WB9cHujN" target="_blank">FurSquared Discord</a></div>
         </div>
 
         <div class="guide-item">
@@ -223,6 +224,7 @@ css:
             <div class="item-row age-restriction">All attendees admitted</div>
             <div class="item-row hosts">Hosted By: GTGoggles</div>
             <div class="item-row location">Location: Smash Bros 1 & 2 voice and text channels on Discord</div>
+            <div class="item-row link"><a href="https://discord.gg/WB9cHujN" target="_blank">FurSquared Discord</a></div>
         </div>
 
         <div class="guide-item">
@@ -233,6 +235,7 @@ css:
             <div class="item-row age-restriction">All attendees admitted</div>
             <div class="item-row hosts">Hosted By: GTGoggles (or whoever wants to play)</div>
             <div class="item-row location">Location: Among Us voice and text channels on Discord</div>
+            <div class="item-row link"><a href="https://discord.gg/WB9cHujN" target="_blank">FurSquared Discord</a></div>
         </div>
 
 </div>
@@ -281,12 +284,26 @@ css:
         {% assign age_restriction = schedule_item["Age Restriction"] | strip %}
         {% assign schedule_location = schedule_item["Location"] | strip %}
         {% assign schedule_description = schedule_item["Description"] | strip %}
-        {% if schedule_location == "Main"%}
-            {% assign schedule_item_link = "/live" %}
-            {% assign schedule_item_link_text = "The Live Feed" %}
-            {% else  %}
-            {% assign schedule_item_link = schedule_item["Link"] | strip %}
-            {% assign schedule_item_link_text = schedule_item["Link"] | strip %}
+        
+        {% assign schedule_item_link = schedule_item["Link"] | strip %}
+        {% assign schedule_item_link_text = schedule_item["Link"] | strip %}
+        
+        {% if schedule_item_link == "" or schedule_item_link == nil %}
+            {% assign schedule_location_down = schedule_location | downcase %}
+            {% case schedule_location_down %}
+                {% when 'main' %}
+                    {% assign schedule_item_link = "/live" | strip %}
+                    {% assign schedule_item_link_text = "The Live Feed" | strip %}
+                {% when 'tabletop 1' %}
+                    {% assign schedule_item_link = "https://discord.gg/WB9cHujN" | strip %}
+                    {% assign schedule_item_link_text = "FurSquared Discord" | strip %}
+                {% when 'tabletop 2' %}
+                    {% assign schedule_item_link = "https://discord.gg/WB9cHujN" | strip %}
+                    {% assign schedule_item_link_text = "FurSquared Discord" | strip %}
+                {% when 'artists & dealers' %}
+                    {% assign schedule_item_link = "/dealers" | strip %}
+                    {% assign schedule_item_link_text = "Artists & Dealers Stream" | strip %}
+            {% endcase %}
         {% endif %}
         
         
@@ -317,7 +334,7 @@ css:
             {% endif %}
 
             {% if schedule_item_link != nil and schedule_item_link != "" %}
-                <div class="item-row link"><a href="{{schedule_item_link}}">{{schedule_item_link_text}}</a></div>
+                <div class="item-row link"><a href="{{schedule_item_link}}" target="_blank">{{schedule_item_link_text}}</a></div>
             {% endif %}
         </div>
     {% endfor %}
