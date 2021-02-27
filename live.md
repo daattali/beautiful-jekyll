@@ -11,7 +11,12 @@ css:
     <div class="feed-box">
         <div class="video-feed">
             <div class="video-box">
-                <iframe src="https://www.youtube-nocookie.com/embed/n1TOz-_YhZk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe
+                    src="https://player.twitch.tv/?channel=fursquared&parent=fursquared.com&parent=dev.fursquared.com"
+                    width="768"
+                    height="432"
+                    allowfullscreen="true">
+                </iframe>
             </div>
         </div>
 
