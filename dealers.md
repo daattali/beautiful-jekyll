@@ -27,6 +27,10 @@ css:
     </div>
 </div>
 
+<br/>
+<h2><a href="/dealer-onboard">Need to know how to join? Click here!</a></h2>
+<br/>
+
 {% assign dealers = site.data.dealers %}
 {% assign alphabetical_dealers = dealers | sort: 'display_name' %}
 
