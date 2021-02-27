@@ -15,7 +15,7 @@ You and your best friend had recently founded your dream startup Cloud Bank, the
 
 Being short on cash, you decided to host all of your data on Google Cloud. Currently, your data mostly only consists of your customers' account balances, arranged in ascending order. For good measure, you also encrypted the balances so Google cannot figure out the balance of any customer’s account, even though Google might be able to make an educated guess and conclude the data is somehow sorted.
 
-##The Problem:
+## The Problem:
 
 Currently, for every new customer you get, you upload their new balance into the correct position in your sorted and encrypted list. To do that, you use Binary Search to find the correct spot for the new customer's data. This, of course, involves repeated comparisons between the value of the new customer cn and one of the old customers ci. For each comparison, you are going to access ci on the Cloud, download it, unencrypt it locally, and compare it against cn. Eventually, you will find the correct position for cn among your uploaded data and all that is left is to encrypt cn then upload it into the correct position.
 
@@ -27,7 +27,7 @@ This immediately sends chills down your spine, such a security breach is absolut
 
 Unbeknownst to you, you had just independently rediscovered Oblivious Algorithms.
 
-##Oblivious Algorithms
+## Oblivious Algorithms
 
 Ironically, you went to Google to learn more about your problem. You later learned of the term Oblivious Algorithms. There seemed to be a whole class of algorithms under that name, all sharing the trait that the way they operate is  the same - from a certain perspective - independent of the input. Different algorithms would choose different aspects to obscure, but the idea still remains constant. Initially, this Obliviousness restriction sounds too unsurmountable that you are not entirely certain anything useful can be achieved while upholding it. However, you are later convinced that oblivious sorting is possible when you encounter the following oblivious procedure to sort four numbers:
 compareAndSwapIfNecessary(0, 1);
@@ -38,7 +38,7 @@ compareAndSwapIfNecessary(1, 2);
 
 In the above procedure, all indices will be accessed a constant number of times regardless of the input. Therefore, this does qualify as an oblivious sorting algorithm against an adversary who has insight over the number of accesses made on each position. You also learn that your problem is entirely not unique, and that researchers have worked on oblivious algorithms and devised oblivious sorting algorithms decades ago.
 
-##Bitonic Sort
+## Bitonic Sort
 
 The procedure you saw above was an example of Bitonic Sort, an oblivious sorting algorithm.
 
@@ -48,7 +48,7 @@ It expanded to any network of size 2n for any integer n. That does not sound awf
 
 The eight elements start as inputs from the left hand side and proceed to the right. Each vertical line indicates a comparison between two elements and a possible swap. By the time the elements exist from the right, they are sorted after exactly 24 comparisons regardless of input. You test the network out many times, and it always holds.
 
-##Under the Hood
+## Under the Hood
 
 Bitonic Sort focuses on the creation of Bitonic Sequences. A sequence of numbers can be called bitonic if it is first increasing then decreasing, or vice versa. Fully increasing and fully decreasing sequences are also considered bitonic. Bitonic Sort builds on the following property:
 
@@ -79,7 +79,7 @@ The process above is then repeated to create larger and larger bitonic sequences
 
 You notice that Bitonic Sort even when applied to a random sequence still assumes that the number of items is on the form $2^n|n\in\mathbb{N}$ or else the recursive step would not work properly. However, with some modification, Bitonic Sorting can actually be used to create a sorting network of size n not a power of 2.
 
-##Bucket Sort
+## Bucket Sort
 
 Although being the go-to example when discussing oblivious sorting algorithms, Bitonic Sort is by far not the only oblivious sorting algorithm nor is it the fastest. After some searching, you come over the following construction of Bucket Sort that takes that idea to the next level:
 
@@ -87,7 +87,7 @@ Although being the go-to example when discussing oblivious sorting algorithms, B
 
 “The MergeSplit Procedure takes elements from two buckets at level i and put them into two buckets at level $i+1$, according to the $(i+1)^{th}$ most significant bit of the keys. At level $i$, every $2^i$ consecutive buckets are semi-sorted by the most significant bits of the keys.”
 
-##Oblivious vs non-Oblivious Runtime
+## Oblivious vs non-Oblivious Runtime
 
 You are still somewhat skeptical, all of this obliviousness must come at the cost of runtime right?
 
@@ -99,19 +99,19 @@ Furthermore, by introducing a negligible error probability several algorithms ma
 
 What else could be oblivious you wonder? So you Google on, still unaware of the irony.
 
-##Oblivious Data Structures
+## Oblivious Data Structures
 
 Now that you have started your company, you are extremely busy, and need a way to store a list of your tasks. You want to store your task list on a Google server, but don't want Google to have access to your data. you can encrypt your files, and Google will not be able to tell which tasks were completed, but Google will still know when you check something off the list, and you do not want to give up that information. Recalling your previous work setting up the server, you shift your attention to the world of Oblivious Data Structures.
 
 Unfortunately, making the data oblivious will come at a steep price. Large segments of your data will need to be decrypted and re-encrypted each time you open a file. If you only decrypted the data that you need, then Google would know exactly when you had completed a task, and how many tasks remained. Therefore, you will need to encrypt a much larger segment of data in order to cover your tracks. This will take time, and because Google’s server is doing the work, it will cost you money as well.
 
-##The Structure of Your Data
+## The Structure of Your Data
 
 Fortunately, there is some information about your habits that you are willing to give up. In particular, you are fine with Google’s knowing that you like to do your tasks in order. Whichever task was most recently added to the list will be the first one you accomplish. To facilitate this work pattern, you store your data in a stack, a data structure which resembles a stack of chairs in an auditorium. Only the top chair can be removed safely, or else the entire stack would collapse. In addition, any chair which would be added to the stack must be added on top of the others. your access patterns are similar. you will only work on the most recently added task in the list.
 
 Until recently, similar to how cable channels are bundled together, you would need to encrypt and decrypt far more information than you wanted to encrypt, even though this operation was hiding information that was not secret. Just as a cable bundle would force you to pay for channels that you would never watch, this encryption scheme would force you to perform far more computation than was necessary to accomplish your goal.
 
-##Using This Structure
+## Using This Structure
 
 You can recall the scheme used in the previous blog post for tree based ORAM. This post described a scheme where the running time of an ORAM scheme could be improved by storing the data in a tree, and storing a map to each datapoint. These maps will take up less space than the original dataset, so they can be stored client side, or if the client does not have enough storage, a new ORAM can be created on the server which stores the position data. This can be done recursively, reducing the size of the data with each new ORAM stored, but with each new ORAM, the time to access the data increases as well.
 
@@ -127,7 +127,7 @@ This diagram shows how we might generalize this oblivious stack. Here, we assume
 
 The other critical assumption is that this access graph is a “tree.” That is, each node can be reached from only one other node. This way, when we update position information of a node, we only need to modify the position information in its parent (which we had already accessed recently if we are modifying its child), and we do not need to worry about inaccurate position data floating around somewhere else in the graph.
 
-##Time and Space Comparison
+## Time and Space Comparison
 
 Below is a table comparing these oblivious data structures to their non-oblivious counterparts. Path ORAM and ORAM are algorithms which do not require any structure in the data. “Pointer based” describes the system we used for the task list.
 
@@ -137,7 +137,7 @@ This is a powerful system, as it allows you to exploit the fundamental structure
 
 In particular, we see that by specifying the situation to which we want to apply the algorithm, we can reduce the bandwidth blowup of the data from essentially O(log^2(N)) to O(log(N)). This will substantially reduce computation time and reduce the amount of interaction necessary with the server.
 
-##Conclusion
+## Conclusion
 
 In order to store data securely on a server, not only do we need to store the data in an encrypted way. We must also store the data in an oblivious way to make sure that our adversary cannot derive any sensitive information from our access patterns. Many times oblivious calculations will be far less efficient than their non-oblivious counterparts, leading to significant time and space costs for the user. In this post, we have outlined two approaches to maintaining the security of an oblivious system while reducing the catastrophic effect on our runtime that oblivious computation can have.
 
