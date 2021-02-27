@@ -19,6 +19,8 @@ Being short on cash, you decided to host all of your data on Google Cloud. Curre
 
 Currently, for every new customer you get, you upload their new balance into the correct position in your sorted and encrypted list. To do that, you use Binary Search to find the correct spot for the new customer's data. This, of course, involves repeated comparisons between the value of the new customer cn and one of the old customers ci. For each comparison, you are going to access ci on the Cloud, download it, unencrypt it locally, and compare it against cn. Eventually, you will find the correct position for cn among your uploaded data and all that is left is to encrypt cn then upload it into the correct position.
 
+![tes](https://raw.githubusercontent.com/compsci590s21/compsci590s21.github.io/master/_images/osod1.png)
+
 ![test](../_images/osod1.png)
 
 <p align="center">
