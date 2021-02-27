@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to Oblivious RAM
-subtitle: Andrew Demma and Anurag Kashyap
+subtitle: By Andrew Demma and Anurag Kashyap
 tags: [oblivious computation]
 ---
 
