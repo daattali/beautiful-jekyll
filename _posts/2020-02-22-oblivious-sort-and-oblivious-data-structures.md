@@ -25,6 +25,10 @@ Currently, for every new customer you get, you upload their new balance into the
 <img src="/images/osod1.png" width="512" title="dummy title">
 </p>
 
+<p align="center">
+<img src="/_images/osod1.png" width="512" title="dummy title2">
+</p>
+
 ![](_images/osod1.png)
 
 ![](/_images/osod1.png)
