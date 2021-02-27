@@ -13,7 +13,7 @@ We'll be doing something in January, stay tuned!
     <div class="feed-box">
         <div class="video-feed">
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/yrq-qA6E-5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/n1TOz-_YhZk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
