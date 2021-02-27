@@ -89,6 +89,6 @@ Due to the nature of the Trivial Bucket ORAM that undergoes the same type and in
 
 **References**
 
-[Tree ORAM](https://eprint.iacr.org/2011/407.pdf)
+[Oblivious RAM with $O(\log^3 N)$ Worst-Case Cost](https://eprint.iacr.org/2011/407.pdf)
 
 [Bitonic sort](https://www.wikiwand.com/en/Bitonic_sorter)
