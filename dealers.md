@@ -13,7 +13,7 @@ css:
         <div class="video-feed">
             <div class="video-box">
                 <iframe
-                    src="https://player.twitch.tv/?channel=fursquared&parent=fursquared.com&parent=dev.fursquared.com"
+                    src="https://player.twitch.tv/?channel=alkaliandxander&parent=fursquared.com&parent=dev.fursquared.com"
                     width="768"
                     height="432"
                     allowfullscreen="true">
