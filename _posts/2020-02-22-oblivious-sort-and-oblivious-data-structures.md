@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Oblivious Sort and Oblivious Data Structures
-subtitle: Omar AlSughayer and Grayson York
+subtitle: By Omar AlSughayer and Grayson York
 tags: [oblivious computation]
 ---
 
@@ -30,10 +30,10 @@ Unbeknownst to you, you had just independently rediscovered Oblivious Algorithms
 ## Oblivious Algorithms
 
 Ironically, you went to Google to learn more about your problem. You later learned of the term Oblivious Algorithms. There seemed to be a whole class of algorithms under that name, all sharing the trait that the way they operate is  the same - from a certain perspective - independent of the input. Different algorithms would choose different aspects to obscure, but the idea still remains constant. Initially, this Obliviousness restriction sounds too unsurmountable that you are not entirely certain anything useful can be achieved while upholding it. However, you are later convinced that oblivious sorting is possible when you encounter the following oblivious procedure to sort four numbers:
-compareAndSwapIfNecessary(0, 1);
-compareAndSwapIfNecessary(2, 3);
-compareAndSwapIfNecessary(0, 2);
-compareAndSwapIfNecessary(1, 3);
+compareAndSwapIfNecessary(0, 1);\
+compareAndSwapIfNecessary(2, 3);\
+compareAndSwapIfNecessary(0, 2);\
+compareAndSwapIfNecessary(1, 3);\
 compareAndSwapIfNecessary(1, 2);
 
 In the above procedure, all indices will be accessed a constant number of times regardless of the input. Therefore, this does qualify as an oblivious sorting algorithm against an adversary who has insight over the number of accesses made on each position. You also learn that your problem is entirely not unique, and that researchers have worked on oblivious algorithms and devised oblivious sorting algorithms decades ago.
@@ -42,7 +42,7 @@ In the above procedure, all indices will be accessed a constant number of times 
 
 The procedure you saw above was an example of Bitonic Sort, an oblivious sorting algorithm.
 
-It expanded to any network of size 2n for any integer n. That does not sound awfully restrictive to you, as you can always pad your data with enough dummies to get it to the nearest greater power of two. Graphed below is a Bitonic network designed for exactly eight inputs.
+It expanded to any network of size $2n$ for any integer $n$. That does not sound awfully restrictive to you, as you can always pad your data with enough dummies to get it to the nearest greater power of two. Graphed below is a Bitonic network designed for exactly eight inputs.
 
 ![](../_images/bitonicnetwork.png)
 
@@ -52,9 +52,9 @@ The eight elements start as inputs from the left hand side and proceed to the ri
 
 Bitonic Sort focuses on the creation of Bitonic Sequences. A sequence of numbers can be called bitonic if it is first increasing then decreasing, or vice versa. Fully increasing and fully decreasing sequences are also considered bitonic. Bitonic Sort builds on the following property:
 
-Consider a bitonic sequence $S = <a_0,a_1,...,a_n>$ such that:
+Consider a bitonic sequence $S = \langle a_0,a_1,...,a_n \rangle$ such that:
 
-\[a_0 \leq a_1 \leq...a_{n/2-1}\]
+$a_0 \leq a_1 \leq...a_{n/2-1}$
 
 Create the following subsequences:
 
