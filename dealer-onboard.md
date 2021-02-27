@@ -23,6 +23,7 @@ If you already use some kind of streaming software, you’ll need to set up some
 ### OBS:
 
 First, make sure that you’ve updated to the newest version of OBS.&nbsp; They recently added virtual camera output.&nbsp; If the bottom right of OBS looks like this to you, you’re set
+<img src="{{ 'assets/img/virtualWebcam.png' | relative_url }}" />
 
 ### Streamlabs:
 
@@ -48,11 +49,14 @@ First: navigate to this link:
 
 [\[](https://invite.cam/U2FsdGVkX1+RhO2BpUucj/EUaBa/hnIeLfdrIizL0ETSq35LtbBQZYlPB2V0y7pZRpj4Nggs3wagfLWUQLjDxlnZY6K8thzBIRCE0bi6PPs=)link here\]
 
-You’ll also get a request to allow your webcam.&nbsp; Click accept&nbsp;
+You'll be asked to enter a display name.  You’ll also get a request to allow your webcam.&nbsp; Click accept&nbsp;
+<img src="{{ 'assets/img/webcam-sel.png' | relative_url }}" />
 
 You’ll have two options.&nbsp; Click “join room with camera”
+<img src="{{ 'assets/img/connect-with-webcam.png' | relative_url }}" />
 
 Select “OBS camera” or “Streamlabs OBS”&nbsp; as your video source and no audio.
+<img src="{{ 'assets/img/source-select.png' | relative_url }}" />
 
 When you’re ready to begin, click start.&nbsp; We’ll know you’re streaming and take it from there\!
 
@@ -61,6 +65,7 @@ The page should change to a message from the runners of the stream..&nbsp;
 You can also start to stream to your preferred platform like normal, our system operates like a second stream that is unconnected to that one.
 
 If you want to stop your stream to us, click the bottom right icon on the webpage.&nbsp;
+<img src="{{ 'assets/img/stream-buttons.png' | relative_url }}" />
 
 &nbsp;
 
@@ -76,9 +81,11 @@ go to the following link
 
 \[link here\]
 
-Click “screenshare with room”
+After entering your display name, click “screenshare with room”
 
 Click “select screen to share”
+
+<img src="{{ 'assets/img/source-sel.png' | relative_url }}" />
 
 A popup will appear.&nbsp; Click “application window” then the program you use for artings
 
