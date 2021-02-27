@@ -60,7 +60,7 @@ $s_1 = \min(a_0,a_{n/2}), \min(a_1,a_{n/2+1}), \dots, \min(a_{n/2-1},a_{n-1})$
 
 $s_2 = \max(a_0,a_{n/2}), \max(a_1,a_{n/2+1}), \dots, \max(a_{n/2-1},a_{n-1})$
 
-It then follows that both $s_1$ and $s_2$ are not only Bitonic but also $\forall x,y | x \in s_1, y \in s_2, x  < y$
+It then follows that both $s_1$ and $s_2$ are not only Bitonic but also for all $ x,y | x \in s_1, y \in s_2, x  < y$
 
 Applying the same merge concept recursively on both $s_1$ and $s_2$ will then yield a sorted list. However, this builds on the assumption that the original sequence was, in fact, bitonic. To sort a random sequence, Bitonic Sort first transforms the whole sequence to a bitonic sequence then sorts that as described above.
 
