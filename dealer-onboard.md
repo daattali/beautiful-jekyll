@@ -6,6 +6,18 @@ subtitle: Information to get set up for the multi stream
 
 # Artist alley information
 
+&nbsp;
+
+#### TL;DR&nbsp;
+
+Get your virtual camera ready and go to this link to connect:
+
+#### [Click here\!\!](also I think I got the onboard page right){: target="_blank" rel="noopener"}
+
+#### &nbsp;
+
+#### What we're doing
+
 First: a little bit of background.&nbsp; We’ve been thinking a lot about just what a virtual artist alley should look like, and how to make it as easy as possible for an artist to participate.&nbsp;&nbsp;
 
 After talking to a lot of furries, it seems the most common way a customer uses an artist alley is to browse up and down the aisles, make a note of who and what they like, and then finally go to the artists they like for a commission.&nbsp; We also have talked to several artists, and many of them already have a platform such as twitch or Picarto they already stream on and they want to use that as often as possible.&nbsp;&nbsp;
@@ -48,18 +60,13 @@ Once you have streamlabs or OBS set up, follow this guide on show day:
 
 First: navigate to this link:
 
-[\[](https://invite.cam/U2FsdGVkX1+RhO2BpUucj/EUaBa/hnIeLfdrIizL0ETSq35LtbBQZYlPB2V0y7pZRpj4Nggs3wagfLWUQLjDxlnZY6K8thzBIRCE0bi6PPs=)link here\]
+[https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20](https://invite.cam/U2FsdGVkX1+RhO2BpUucj/EUaBa/hnIeLfdrIizL0ETSq35LtbBQZYlPB2V0y7pZRpj4Nggs3wagfLWUQLjDxlnZY6K8thzBIRCE0bi6PPs=){: target="_blank" rel="noopener"}
 
-You'll be asked to enter a display name.  You’ll also get a request to allow your webcam.&nbsp; Click accept&nbsp;
-![](assets/img/webcam-sel.png){: width="1280" height="960"}
+You'll be asked to enter a display name. You’ll also get a request to allow your webcam.&nbsp; Click accept&nbsp; ![](assets/img/webcam-sel.png){: width="1280" height="960"}
 
+You’ll have two options.&nbsp; Click “join room with camera” ![](assets/img/connect-with-webcam.png){: width="1280" height="960"}
 
-You’ll have two options.&nbsp; Click “join room with camera”
-![](assets/img/connect-with-webcam.png){: width="1280" height="960"}
-
-
-Select “OBS camera” or “Streamlabs OBS”&nbsp; as your video source and no audio.
-![](assets/img/source-select.png){: width="1280" height="960"}
+Select “OBS camera” or “Streamlabs OBS”&nbsp; as your video source and no audio. ![](assets/img/source-select.png){: width="1280" height="960"}
 
 When you’re ready to begin, click start.&nbsp; We’ll know you’re streaming and take it from there\!
 
@@ -83,7 +90,9 @@ First, open your preferred art program.
 
 go to the following link
 
-\[link here\]
+#### [Click here\!\!](also I think I got the onboard page right){: target="_blank" rel="noopener"}
+
+&nbsp;
 
 After entering your display name, click “screenshare with room”
 
@@ -91,9 +100,12 @@ Click “select screen to share”
 
 ![](assets/img/source-sel.png){: width="1280" height="960"}
 
-
 A popup will appear.&nbsp; Click “application window” then the program you use for artings
 
 You should see a preview of your window in the browser.&nbsp;&nbsp;
 
 Aaand you’re done\!&nbsp; If you get a “no audio source selected”, don’t worry, we aren’t using your audio.&nbsp;&nbsp;
+
+## Troubleshooting
+
+If you can't see your camera as a source, open the browser page in an incognito/private window.&nbsp;&nbsp;
