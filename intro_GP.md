@@ -79,5 +79,19 @@ f(\cdot)) is known as the *training* stage in ML.
 It must be mentioned that replicating the training data could also mean that  the model ''memorize'' the training data. 
 This common problem in ML is known as *overfitting*. 
 
-GPs models can also be trained using a loss function. GP models are non- parametric models, therefore, the dimensionality of the loss function depends on the number of the parameters of the kernel function. Using a loss function to determine the optimal value for the kernel parameters for non-parametric models is computationally expensive and is prone to overfitting. However, it is possible to train GP methods without a loss function. The most common way to train GPs is by finding the kernel parameters (*θ*) that maximize the **marginal likelihood function**,
+GPs models can also be trained using a loss function. GP models are non- parametric models, therefore, the dimensionality of the loss function depends on the number of the parameters of the kernel function. Using a loss function to determine the optimal value for the kernel parameters for non-parametric models is computationally expensive and is prone to overfitting. However, it is possible to train GP methods without a loss function. The most common way to train GPs is by finding the kernel parameters (**θ**) that maximize the **marginal likelihood function**,
+
+![Figure](assets/img/intro_gp/Equations/argmax_likelihood.png)
+
+where ![Figure](assets/img/intro_gp/Equations/likelihood.png) is the marginal likelihood for a given model or kernel function Mi. Finding the value of **θ** where ![Figure](assets/img/intro_gp/Equations/likelihood.png) is maximized is known as type II maximum likelihood (ML-II). The marginal likelihood or evidence is defined as,
+
+![Figure](assets/img/intro_gp/Equations/marginal_LLH.png)
+
+In the case of GPs, the marginal likelihood has a closed form. Finding the kernel parameters that maximize the marginal likelihood can be done by maximizing the logarithm of the marginal likelihood w.r.t to **θ**,
+
+![Figure](assets/img/intro_gp/Equations/GP_MLLH.png)
+
+where the first term is known as the data-fit term, the second term reflects the complexity of the model ![Figure](assets/img/intro_gp/model.png), and the third term is a constant that depends on the number of training points, *N*. The value of ![Figure](assets/img/intro_gp/Equationlog_MLL.png) mainly depends on the data-fit and complexity terms. For instance, for a **θ** that memorizes the training data the value of log|K| is large, while 
+![Figure](assets/img/intro_gp/Equations/GP_MLLH_part2.png) will be small. The tradeoff between the data-fit and the complexity term is key for the optimal value of the kernel parameters.
+
 
