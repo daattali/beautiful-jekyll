@@ -138,5 +138,24 @@ The Matern  (MAT) kernels are probably the second most used kernel for GPs,
 
 ![Figure](assets/img/intro_gp/GP_k_mat_5-2.png)
 
+## Rotational Quadratic kernel
+The Rational quadratic kernel (RQ) is also a stationary kernel,
+
+![Figure](assets/img/intro_gp/Equations/k_RQ.png)
+
+where ![formula](https://render.githubusercontent.com/render/math?math=\alpha) and ![formula](https://render.githubusercontent.com/render/math?math=\ell_{i}) are the kernel parameters. In the limit of ![formula](https://render.githubusercontent.com/render/math?math=\alpha) to infinity, the RQ kernel is identical to the SE kernel. 
+
+![Figure](assets/img/intro_gp/GP_k_RQ.png)
+
+## Periodic kernel
+None of the previously mentioned kernels are capable of describing periodic functions. Periodicity can be described by trigonometric function like cos(x), or sin(x). Since any kernel function must be a semi-positive define function, ![formula](https://render.githubusercontent.com/render/math?math=\cos^2(x)) and  ![formula](https://render.githubusercontent.com/render/math?math=\sin^2(x)) are the only capable trigonometric functions that can be used
+as kernel functions. The periodic (PER) kernel has the form,
+
+![Figure](assets/img/intro_gp/Equations/k_PER.png)
+
+where *p* and ![formula](https://render.githubusercontent.com/render/math?math=\ell) are the kernel parameters. *p* describes the intrinsic periodicity in the data and ![formula](https://render.githubusercontent.com/render/math?math=\ell) is the length-scale parameter. 
+
+![Figure](assets/img/intro_gp/GP_k_PER.png)
+
 
 
