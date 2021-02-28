@@ -17,9 +17,9 @@ author: Josemy Duarte
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Home: "https://josemyduarte.github.io/"
   Read later: "articles"
   About Me: "aboutme"
-  Home: "https://josemyduarte.github.io/"
 
 # --- Logo --- #
 
