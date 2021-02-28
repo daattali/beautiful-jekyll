@@ -136,7 +136,7 @@ The Matern  (MAT) kernels are probably the second most used kernel for GPs,
 
 ![Figure](assets/img/intro_gp/Equations/k_Mat_5-2.png)
 
-![Figure](assets/img/intro_gp/GP_k_Mat_5-2.png)
+![Figure](assets/img/intro_gp/GP_k_mat_5-2.png)
 
 
 
