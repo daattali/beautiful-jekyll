@@ -38,11 +38,11 @@ The probability distribution over ![formula](https://render.githubusercontent.co
 Conditioning on the training data is the same as selecting the distribution of functions that agree with observed data points ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{y}).
 The mean and covariance matrix of the conditional distribution are,
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%0A%5Cmathbf%7B%5Cmu%7D%28%5Cmathbf%7Bx%7D_%2A%29%20%26%3D%26%20K%28%5Cmathbf%7Bx%7D_%2A%2CX%29%5E%5Ctop%20K%28X%2CX%29%5E%7B-1%7D%5Cmathbf%7By%7D%20%5C%5C%0A%5Csigma_%2A%20%26%3D%26%20K%28%5Cmathbf%7Bx%7D_%2A%2C%5Cmathbf%7Bx%7D_%2A%29-%20K%28%5Cmathbf%7Bx%7D_%2A%2CX%29%5E%5Ctop%20K%28X%2CX%29%5E%7B-1%7DK%28X%2C%5Cmathbf%7Bx%7D_%2A%29%20%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\mathbf{\mu}(\mathbf{x}_*) &=& K(\mathbf{x}_*,X)^\top K(X,X)^{-1}\mathbf{y} \\\sigma_* &=& K(\mathbf{x}_*,\mathbf{x}_*)- K(\mathbf{x}_*,X)^\top K(X,X)^{-1}K(X,\mathbf{x}_*) " width="375" height="44" />
+![Figure](assets/img/intro_gp/Equations/GP_mu_cov.png)
 
  where ![formula](https://render.githubusercontent.com/render/math?math=\sigma_*) is the predicted variance for ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x}_*). The mean of the conditional distribution can be rewritten as,
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cmathbf%7B%5Cmu%7D%28%5Cmathbf%7Bx%7D%2A%29%20%20%26%3D%26%20%5Csum_i%20d%28%5Cmathbf%7Bx%7D_%2A%2C%20%5Cmathbf%7Bx%7D_i%29y_i%20%20%3D%20%5Csum_i%20%5Calpha_i%20k%28%5Cmathbf%7Bx%7D_%2A%2C%5Cmathbf%7Bx%7D_i%29%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\mathbf{\mu}(\mathbf{x}*)  &=& \sum_i d(\mathbf{x}_*, \mathbf{x}_i)y_i  = \sum_i \alpha_i k(\mathbf{x}_*,\mathbf{x}_i)" width="340" height="42" />
+![Figure](assets/img/intro_gp/Equations/GP_mu.png)
 
 where ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{d} = K(\mathbf{x}_*,X)^\top K(X,X)^{-1}) and  ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{\alpha} = K(X,X)^{-1}\mathbf{y}). 
 The mean of the conditional distribution is a linear combination of the training data, ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{y}), or a linear combination of the kernel function between the training points and ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_*}). Function ![formula](https://render.githubusercontent.com/render/math?math=d(\cdot,\cdot)) can be understood as a *distance* function.
