@@ -53,7 +53,7 @@ The uncertainty can be used to sample different regions of the function space to
 This is the idea behind a class of ML algorithms known as Bayesian optimiation.
 
 An example of GP regression for,
-![Figure](assets/img/intro_gp/GP_mu.png)
+![Figure](assets/img/intro_gp/Equations/f_x.png)
 We use the *exponential squared* kernel  and 7 training points.
 In the following section, we describe the most common procedure to train GPs.
 
