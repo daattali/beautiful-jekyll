@@ -25,7 +25,8 @@ navbar-links:
   Publications: "publications"
   Research:
     - Research: ""
-    - Gaussian Prpcesses: "intro_GP"
+    - Gaussian Processes: "intro_GP"
+    - Gaussian Processes: "intro_BO"
 #    --Extrapolation : 
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
