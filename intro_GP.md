@@ -91,12 +91,13 @@ In the case of GPs, the marginal likelihood has a closed form. Finding the kerne
 
 ![Figure](assets/img/intro_gp/Equations/GP_MLLH.png)
 
-where the first term is known as the data-fit term, the second term reflects the complexity of the model ![Figure](assets/img/intro_gp/model.png), and the third term is a constant that depends on the number of training points, *N*. The value of ![Figure](assets/img/intro_gp/Equationlog_MLL.png) mainly depends on the data-fit and complexity terms. For instance, for a **θ** that memorizes the training data the value of log|K| is large, while 
+where the first term is known as the data-fit term, the second term reflects the complexity of the model ![Figure](assets/img/intro_gp/Equations/model.png), and the third term is a constant that depends on the number of training points, *N*. The value of ![Figure](assets/img/intro_gp/Equations/log_MLL.png) mainly depends on the data-fit and complexity terms. For instance, for a **θ** that memorizes the training data the value of log|K| is large, while 
 ![Figure](assets/img/intro_gp/Equations/GP_MLLH_part2.png) will be small. The tradeoff between the data-fit and the complexity term is key for the optimal value of the kernel parameters.
 
 
+Standard gradient-based optimization algorithm is the most common method to find the optimal value of the kernel parameters. The logarithm of the marginal
+likelihood has an analytic form, therefore, it is possible to compute the change of ![Figure](assets/img/intro_gp/Equations/log_MLL.png) as a function of the kernel parameters, ![Figure](assets/img/intro_gp/Equations/grad_log_MLLH.png) . For most cases, the function ![Figure](assets/img/intro_gp/Equations/log_MLL.png) is not a convex function; thus there is a possi- bility that the optimization algorithm gets trapped in one of the local maxima. For GP regression, the value of **θ** does depend on the training data y, and having different training data sets could lead to different values for the kernel parameters.
 
 
-
-
+# Kernel Functions
 
