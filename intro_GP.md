@@ -113,7 +113,6 @@ The Mahalanobis distance reduces to the square of the Euclidian distance when al
 Furthermore, when all ![formula](https://render.githubusercontent.com/render/math?math=\ell_{i}) have the same value, the kernel function is an **isotropic kernel**. In the following sections, we list some of the most common kernels that are used in GP models.
 
 ## Constant kernel
-
 The constant kernel, arguably the most simple kernel, assumes that the similarity relation between two points is constant,
 
 ![Figure](assets/img/intro_gp/Equations/k_constant.png)
@@ -122,8 +121,22 @@ The kernel parameter ![formula](https://render.githubusercontent.com/render/math
 marginal likelihood. ![formula](https://render.githubusercontent.com/render/math?math=k_{C}(\cdot,\cdot)) is a one-time differentiable function.
 
 
+## Square exponential kernel
+The square exponential (SE) kernel, also known as the radial basis function (**RBF**) kernel, is probably the most used kernel in GP regression. The SE kernel is a stationary kernel since it depends on the difference between two points,
+
+![Figure](assets/img/intro_gp/Equations/k_SE.png)
+
+Each ![formula](https://render.githubusercontent.com/render/math?math=\ell_{i}) defines the characteristic length-scale for each dimension. Depending on the user, the SE kernel can be isotropic, all ![formula](https://render.githubusercontent.com/render/math?math=\ell_{i}) have the same value, or anisotropic, each ![formula](https://render.githubusercontent.com/render/math?math=\ell_{i}) has a different value. As it was mentioned in the previous section, the values of each ![formula](https://render.githubusercontent.com/render/math?math=\ell_{i}) are optimized by maximizing the logarithm of the marginal likelihood. The training of an isotropic SE kernel is faster since the total number of parameters in the kernel is one, while anisotropic SE kernels have *d* parameters, *d* is the dimension of **x**. The SE kernel is infinitely differentiable.
+
+![Figure](assets/img/intro_gp/GP_k_SE.png)
 
 
+## Matern kernel
+The Matern  (MAT) kernels are probably the second most used kernel for GPs,
+
+![Figure](assets/img/intro_gp/Equations/k_Mat_5-2.png)
+
+![Figure](assets/img/intro_gp/GP_k_Mat_5-2.png)
 
 
 
