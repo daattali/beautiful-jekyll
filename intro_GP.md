@@ -157,5 +157,18 @@ where *p* and ![formula](https://render.githubusercontent.com/render/math?math=\
 
 ![Figure](assets/img/intro_gp/GP_k_PER.png)
 
+## Linear (Polynomial) kernel
+The linear kernel (LIN) is a *non-stationary* kernel and is also known as the dot product kernel,
 
+![Figure](assets/img/intro_gp/Equations/k_LIN.png)
+
+where ![formula](https://render.githubusercontent.com/render/math?math=\sigma) is the offset value of the kernel. 
+If ![formula](https://render.githubusercontent.com/render/math?math=\sigma=0) the linear kernel is considered to be *homogenous*. A more general form of the linear kernel is, ![Figure](assets/img/intro_gp/Equations/k_LIN_iso.png), where [formula](https://render.githubusercontent.com/render/math?math=\Lambda) is a diagonal matrix with unique length-scale parameters for each dimension in **x**. The linear kernel is the base of the polynomial kernel,
+
+![Figure](assets/img/intro_gp/Equations/k_POL.png)
+
+where *p* is the polynomial degree.
+
+
+![Figure](assets/img/intro_gp/GPpred_k_LIN.png)
 
