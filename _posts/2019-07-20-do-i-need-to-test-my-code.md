@@ -9,7 +9,7 @@ share-img: /assets/img/test.jpeg
 tags: [tests, notes]
 ---
 
-It is difficult to find any developer who does not agree with the title of this publication, even more, if asked in a job interview. Although, some developers took what Kent Beck once said ["I get paid for **code that works**, not for tests"](https://stackoverflow.com/questions/153234/how-deep-are-your-unit-tests/153565#153565) as a license to not test your code. I think we should take his words with special care. He did not mean that you should not develop tests because you are not paid for that, but you must concentrate on your production code.
+It is difficult to find any developer who does not agree with the title of this publication, even more, if asked in a job interview. Although, some developers took what Kent Beck once said ["I get paid for **code that works**, not for tests"](https://stackoverflow.com/questions/153234/how-deep-are-your-unit-tests/153565#153565) as a license to not test their code. I think we should take his words with special care. He did not mean that you should not develop tests because you are not paid for that, but you must concentrate on your production code.
 
 Now, if the title question creates debate, the subtitle is worse.  I know of companies that do not care at all about test coverage, others that think anything below 90% is bad. So, *how much testing is enough?*
 
