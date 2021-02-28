@@ -26,7 +26,7 @@ navbar-links:
   Research:
     - Research: ""
     - Gaussian Processes: "intro_GP"
-    - Gaussian Processes: "intro_BO"
+    - Bayesian Optimization: "intro_BO"
 #    --Extrapolation : 
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
