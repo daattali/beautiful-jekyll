@@ -53,12 +53,10 @@ The uncertainty can be used to sample different regions of the function space to
 This is the idea behind a class of ML algorithms known as Bayesian optimiation.
 
 An example of GP regression for,
-![Figure](assets/img/intro_gp/Equations/f_x.png)
+![Figure](assets/img/intro_gp/Equations/f_x.png).
 We use the *exponential squared* kernel  and 7 training points.
 In the following section, we describe the most common procedure to train GPs.
-
 ![Figure](assets/img/intro_gp/GP_mu.png)
-Interpolation using a GP model trained with 7 points and an exponential squared kernel. The black dashed line is [img]http://www.sciweavers.org/tex2img.php?eq=f%28x%29%20%3D%20x%2F10%20%2B%20%20x%5E%7B2%7D%20%2B%2010%5Csin%283x%2F2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]. The solid blue line is the prediction of the GP model. The grey shaded area is the standard deviation of the predicted mean of the GP model. The blue square symbols are the training data.
 
 
 # Training GPs
@@ -67,17 +65,19 @@ In order to quantify the accuracy of a model we define a *loss* function, ![form
 The parameters of the model ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{w}) and ![formula](https://render.githubusercontent.com/render/math?math={\cal L}) are interconnected. 
 To illustrate this idea let us assume that ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)) is a simple linear regression model, ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)=a %2B bx). The loss function for such model is, 
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%7B%5Ccal%20L%7D%20%20%3D%20%5Csum_i%5EN%20%28y_i%20-%20%5Chat%7By%7D_i%29%5E2%20%3D%20%5Csum_i%5EN%20%28a%20%2B%20bx_i%20-%20%5Chat%7By%7D_i%29%5E2.%0A%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="{\cal L}  = \sum_i^N (y_i - \hat{y}_i)^2 = \sum_i^N (a + bx_i - \hat{y}_i)^2." width="296" height="53" />
+![Figure](assets/img/intro_gp/Equations/L2_LR.png)
 
 From the previous equation, we can observe that the value of ![formula](https://render.githubusercontent.com/render/math?math=
 {\cal L}) depends on *a* and *b*. 
 It can be argued that when ![formula](https://render.githubusercontent.com/render/math?math=
 {\cal L}) is large ![formula](https://render.githubusercontent.com/render/math?math=
-f(\mathbf{x_i}) \not\approx \hat{y_i}). On the other hand when ![formula](https://render.githubusercontent.com/render/math?math=
+f(\mathbf{x_i})) not equal to![formula](https://render.githubusercontent.com/render/math?math= \hat{y_i}). On the other hand when ![formula](https://render.githubusercontent.com/render/math?math=
 f(\mathbf{x_i}) \approx \hat{y_i}) the value of ![formula](https://render.githubusercontent.com/render/math?math=
 {\cal L}) will tend to zero.
 Using a loss function to tune the parameters of ![formula](https://render.githubusercontent.com/render/math?math=
 f(\cdot)) is known as the *training* stage in ML. 
 It must be mentioned that replicating the training data could also mean that  the model ''memorize'' the training data. 
 This common problem in ML is known as *overfitting*. 
+
+GPs models can also be trained using a loss function. GP models are non- parametric models, therefore, the dimensionality of the loss function depends on the number of the parameters of the kernel function. Using a loss function to determine the optimal value for the kernel parameters for non-parametric models is computationally expensive and is prone to overfitting. However, it is possible to train GP methods without a loss function. The most common way to train GPs is by finding the kernel parameters (*θ*) that maximize the **marginal likelihood function**,
 
