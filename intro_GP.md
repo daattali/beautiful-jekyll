@@ -95,3 +95,5 @@ where the first term is known as the data-fit term, the second term reflects the
 ![Figure](assets/img/intro_gp/Equations/GP_MLLH_part2.png) will be small. The tradeoff between the data-fit and the complexity term is key for the optimal value of the kernel parameters.
 
 
+
+
