@@ -101,5 +101,21 @@ likelihood has an analytic form, therefore, it is possible to compute the change
 
 # Kernel Functions
 
-In the previous sections, we explained how a GP model is trained and also how it can make predictions. We also assumed that GPs need a kernel function in order to construct the covariance matrices ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{K}) and ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{K}_{∗}). In this section, we introduce various kernels that are used for training GPs and illustrate how prediction with GPs can drastically change depending on which kernel is used. As mentioned previously, the kernel function should describe the similarity between two points. In kernel regression, two points that are similar, under some metric, should have a similar output value ![formula](https://render.githubusercontent.com/render/math?math=y_{i}), predicted by ![formula](https://render.githubusercontent.com/render/math?math=\mu(\mathbf{x}_{i}).
+In the previous sections, we explained how a GP model is trained and also how it can make predictions. We also assumed that GPs need a kernel function in order to construct the covariance matrices ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{K}) and ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{K}_{*}). In this section, we introduce various kernels that are used for training GPs and illustrate how prediction with GPs can drastically change depending on which kernel is used. As mentioned previously, the kernel function should describe the similarity between two points. In kernel regression, two points that are similar, under some metric, should have a similar output value ![formula](https://render.githubusercontent.com/render/math?math=y_{i}), predicted by ![formula](https://render.githubusercontent.com/render/math?math=\mu(\mathbf{x}_{i})).
+
+The kernel function  ![formula](https://render.githubusercontent.com/render/math?math=k(\cdot,\cdot)) must be a positive definite function; this restriction comes from the requirement to invert the covariance matrix during training and prediction. The covariance matrix must be a symmetric matrix which forces the kernel function to be symmetric too,  ![formula](https://render.githubusercontent.com/render/math?math=k(\mathbf{x},\mathbf{x'}) = k(\mathbf{x'},\mathbf{x})). The Cholesky factorization is the most common algorithm to invert matrices with ![Figure](assets/img/intro_gp/Equations/O_N3.png) complexity where *N* is the number of training points.
+
+All of the kernels that are used in this thesis are *stationary* kernels except for the linear kernel. Any stationary kernel can be rewritten in terms of the **Mahalanobis** distance,
+
+![Figure](assets/img/intro_gp/Equations/Mahalanobis_distance.png)
+
+The Mahalanobis distance reduces to the square of the Euclidian distance when all ![formula](https://render.githubusercontent.com/render/math?math=l_{i} = 1). Furthermore, when all ![formula](https://render.githubusercontent.com/render/math?math=l_{i}) have the same value, the kernel function is an **isotropic kernel**. In the following sections, we list some of the most common kernels that are used in GP models.
+
+
+
+
+
+
+
+
 
