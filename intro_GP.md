@@ -101,3 +101,5 @@ likelihood has an analytic form, therefore, it is possible to compute the change
 
 # Kernel Functions
 
+In the previous sections, we explained how a GP model is trained and also how it can make predictions. We also assumed that GPs need a kernel function in order to construct the covariance matrices ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{K}) and ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{K}_{∗}). In this section, we introduce various kernels that are used for training GPs and illustrate how prediction with GPs can drastically change depending on which kernel is used. As mentioned previously, the kernel function should describe the similarity between two points. In kernel regression, two points that are similar, under some metric, should have a similar output value ![formula](https://render.githubusercontent.com/render/math?math=y_{i}), predicted by ![formula](https://render.githubusercontent.com/render/math?math=\mu(\mathbf{x}_{i}).
+
