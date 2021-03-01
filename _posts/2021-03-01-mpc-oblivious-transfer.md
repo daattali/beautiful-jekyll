@@ -16,7 +16,7 @@ This problem is relevant to a variety of practical applications:
 - **Secure auctions.** Bidders may want to keep their bids private and only reveal the winner using secure multi-party computation.
 - **Machine learning.** Data holders, such as health care providers, may be interested in statistics obtained from integrated databases. However, they are required by law to keep health records private. Secure multi-party computation can allow them to compute summaries of joint datasets without revealing individual records.
 
-These applications each have specific requirements regarding the kind of privacy required and the threat models presented. In this post, we discuss the generic framework of secure multi-party computation (MPC), which can be used as a building block for these applications.
+These applications each have specific requirements regarding the kind of privacy required and realistic threat models. In this post, we discuss the generic framework of secure multi-party computation (MPC), which can be used as a building block for these applications.
 
 ### Generic framework of MPC
 
@@ -28,9 +28,9 @@ We presented MPC as preserving the "privacy" of the individual inputs $x_i$, but
 
 #### MPC protocols
 
-Computation of the function $\mathcal{F}$ is carried out collaboratively through what is called an MPC protocol. This protocol dictates how parties share information to provide secure computation. We assume that pairs of parties can synchronously communicate on authenticated and private channels. 
+Computation of the function $\mathcal{F}$ is carried out collaboratively through what is called an MPC protocol. This protocol dictates how parties share information to provide secure computation. We assume that pairs of parties can synchronously communicate on authenticated and secure channels. 
 
-Through execution of a given protocol, each party obtains what is called a **view**: this contains the party's own input as well as the record of the execution of each protocol step. As previously stated, the goal of MPC is to ensure that each party's view, or any subset of party's views reveals no more information than what can be infered through their inputs and the function's output. The threat model under which this must hold is discussed next.
+Through execution of a given protocol, each party obtains what is called a **view**: this contains the party's own input as well as the record of the execution of each protocol step. As previously stated, the goal of MPC is to ensure that each party's view, or any subset of party's views, reveals no more information than what can be infered through their inputs and the function's output. The threat model under which this must hold is discussed next.
 
 
 #### Threat models
@@ -40,7 +40,7 @@ Here we assume the **semi-honest**, also called **honest-but-curious**, adversar
 This semi-honest adversary model can be contrasted with the broader *malicious* adversary model. In this case, compromised parties can deviate arbitrarily from the given protocol. A particular feature of this model is that an adversary may obtain the result of the computation but refuse to share it with other parties. Ensuring that all parties necessarily receive the result of the computation is called **guaranteed delivery**; ensuring that all parties receive the result if at least one does is called **output fairness**.
 
 <!-- https://www.ccs.neu.edu/home/rancohen/Papers/CL14.pdf-->
-An important **feasability result** states that, under a point-to-point communication model (pairwise authenticated and secure communication) and a malicious adversary model, fairness can be achieved if the number of compromised parties is a strict minority. If the number of compromised parties is a majority, then not all functions can be securely computed with fairness.
+An important **feasability result** states that, under the malicious adversary model, fairness can be achieved if the number of compromised parties is a strict minority. If the number of compromised parties is a majority, then not all functions can be securely computed with fairness.
 
 
 
@@ -48,7 +48,7 @@ An important **feasability result** states that, under a point-to-point communic
 
 Let us now precise the security framework which we consider. 
 
-For simplicity, we can consider **information-theoretic security** where adversaries have unbounded computational power. We assume the existence of random functions, and of secure public and private key encryption. These two primitives are sufficient for what is discussed in this post. 
+For simplicity, we can consider **information-theoretic security** where adversaries have unbounded computational power. We assume the existence of random functions, and of secure public and private key encryption. These two primitives are sufficient for this post. 
 
 As discussed earlier, in the ideal world, parties can share their inputs with a trusted third party which returns the result of the computation to each of them. In the real world, instead, a protocol $\pi$ is executed collaboratively, resulting in a view $V_i$ for each party.
 
@@ -60,8 +60,6 @@ $$
 $$
 
 **Note:** Within a computational security framework, we would require the two probabilities to be computationally indistinguishable rather than exactly the same. We would also rely on the weaker primitives of cryptographically secure pseudo-random functions and computationally secure encryption.
-
-MPC is fully detailed in *A Pragmatic Introduction to Secure Multi-Party Computation* [(see Evans, Kolesnikov & Rosulek, 2018)](https://securecomputation.org/docs/pragmaticmpc.pdf).
 
 ## Oblivious transfer
 
@@ -75,18 +73,18 @@ That is, suppose party 1, referred to as the **sender**, has a set of secrets $s
 - the sender does not know which secret $s_i$ was obtained, and 
 - the receiver does not learn about any other secret $s_j$, $j\not = i$.
 
-As previously discussed, this enables multi-party computation.
+This is one way to enable multi-party computation.
 
 ### Simple protocol for oblivious transfer
 
-We now introduce a very simple protocol for oblivious transfer in the context of two secrets ($s=2$) for simplicity. The sender has two secrets $s_1$ and $s_2$, while the receiver selects $i \in \{1,2\}$. 
+We now introduce a very simple protocol for oblivious transfer in the context of two secrets ($k=2$) for simplicity. The sender has two secrets $s_1$ and $s_2$, while the receiver selects $i \in \{1,2\}$. 
 
 The protocol is as follows. First, the sender generates two keys $k_1$ and $k_2$. It encrypts its secrets as $c_i = \text{Enc}_{k_i}(s_i)$ and sends both pairs of keys and cyphertexts to the receiver. The receiver can then decrypt the secret of its choice and discard the other key. This process is secure as long as the receiver follows the protocol and does not decrypt the other secret.
 
 The fact that the receiver must be trusted to discard a key is a major concern here. It can be fixed as follows:
 
 1. The sender generates a random secret key $k_1$ and the receiver generates a random secret key $k_2$.
-2. The sender shares the encryption function $\text{Enc}_{k_1}$ to the receiver. Here we assume that the key cannot be inferred from $\text{Enc}_{k_1}$.
+2. The sender shares the encryption function $\text{Enc}_{k_1}$ to the receiver. Here we assume that the key $k_1$ cannot be inferred from $\text{Enc}_{k_1}$.
 3. The receiver chooses $i\in\{1,2\}$. If $i=1$, then the receiver shares the value $A = k_2$; otherwise they share $A = \text{Enc}_{k_1}(k_2)$.
 4. The sender shares the tuple $(B_1, B_2) = (\text{Enc}_A(s_1), \text{Enc}_{\text{Dec}_{k_1}(A)}(s_2))$.
 5. The receiver attempts to decrypt $B_1$ and $B_2$ using its secret key $k_2$. Only $B_i$ can be decrypted in this case. Indeed, if $i=1$, then $B_1 = \text{Dec}_{k_2}(\text{Enc}_A(s_1)) = s_1$ and  $B_2 = \text{Dec}_{k_2}(\text{Enc}_{\text{Dec}_{k_1}(k_2)}(s_2))$ is meaningless. If $i=2$, then similarly only $s_2$ can be decrypted.
@@ -103,3 +101,7 @@ Now let's simulate the view of the receiver. In the real world, their view conta
 
 This proof may not cover all bases, but it roughly illustrates the concepts of the simulator and of indinstinguishability. A full detail of simulation proof for Oblivious Transfer for Semi-Honest Adversaries is explained in Section 4.3 from *How To Simulate It - A Tutorial on the Simulation Proof Technique* [(see Lindell, 2018)](https://eprint.iacr.org/2016/046.pdf)
 
+
+## References
+
+- [Evans, Kolesnikov & Rosulek (2018) A Pragmatic Introduction to Secure Multi-Party Computation](https://securecomputation.org/docs/pragmaticmpc.pdf).
