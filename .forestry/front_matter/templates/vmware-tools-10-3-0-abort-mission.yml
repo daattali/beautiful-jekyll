@@ -14,6 +14,21 @@ fields:
   default: ''
 - type: datetime
   name: DATE
+  label: Date
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: subtitle
+- name: metadescription
+  type: text
+  config:
+    required: false
+  label: metadescription
 pages:
 - _posts/2018-11-27-test.md
 - _posts/2018-12-03-canceling-hung-tools-upgrade-task.md
