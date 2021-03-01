@@ -2,6 +2,9 @@
 layout: post
 title: vSphere 7 clustered VMDK - RDM-free WSFC !
 DATE: 
+subtitle: ''
+metadescription: Find out how you can create Windows Server Failover Clusters in vSphere
+  7 without RDM with the new clustered VMDK feature.
 
 ---
 ### Background
