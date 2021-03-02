@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Modern Octopus
+title: The Modern Octopus
 subtitle: Applying for jobs and the imposter syndrome 
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Alice_queen2.jpg/300px-Alice_queen2.jpg
 tags: [jobs, science]
