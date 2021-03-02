@@ -38,6 +38,8 @@ If you don’t know where to start, these 3 steps to tackling your digital clutt
 2. Delete any photos, files, apps you no longer need. You can go through both your computer if you have one and phone for this task.
 3. Create a plan for tackling future digital clutter. If you want to stay on top of the digital clutter, it’s imperative for you to create a simple routine going forward to do some maintenance digital decluttering.
 
+![A picture of someone holding a phone.](/uploads/3-steps-to-start-tackling-your-digital-clutter-shm.jpg "3 Steps to Start Tackling Your Digital Clutter SHM")
+
 ## FREE DIGITAL DECLUTTER CHALLENGE AND CHECKLIST
 
 A couple weeks ago I publicly said (to [my mail list](https://eastcoastkelly.us4.list-manage.com/subscribe?u=581b5bf0ab44ab0870d2a00c0&id=3026fc64c7)) that no more [digital clutter](https://www.mindfulproductivityblog.com/blog/4-types-of-digital-clutter) for me. I need to go through it, start to finish. And. This is good news for you because you also reap the benefits of my work! I created a digital declutter challenge for tackling your digital clutter for myself and for you if you'd like it - [HERE](https://mailchi.mp/2537e5ab8d0f/free-digital-declutter-challenge).
