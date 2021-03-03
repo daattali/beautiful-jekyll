@@ -14,6 +14,7 @@ subtitle: ''
 ## Popular blogs
 
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
+* [Digital declutter challenge](https://www.simplehomemom.com/3-steps-to-start-tackling-your-digital-clutter/)
 * [Throw Out the Cleaning Routine and Try This Instead + fill out your master cleaning tasks in the free master task list printable](https://www.simplehomemom.com/throw-out-the-cleaning-routine-and-try-this-instead/)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
 * [How to Do a Zero Spend Month that Works For You + a plan your zero spend month freebie](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
