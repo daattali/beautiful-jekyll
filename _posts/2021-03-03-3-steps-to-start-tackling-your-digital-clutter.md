@@ -60,5 +60,3 @@ _Start tackling your digital clutter, bit by bit. The three steps described abov
 ###### [How to Set Healthy Digital Boundaries](https://www.simplehomemom.com/how-to-set-healthy-digital-boundaries/)
 
 ###### [Three Key Steps to Maintaining Decluttering Sanity with Kids](https://www.simplehomemom.com/three-key-steps-to-maintaining-decluttering-sanity-with-kids/)
-
-###### 
