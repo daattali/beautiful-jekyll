@@ -52,3 +52,4 @@ pages:
 - _posts/2020-11-18-vsphere-7.0-and-the-memory-greed.md
 - _posts/2021-02-10-vsphere-7-clustered-vmdk-rdm-free-wsfc.md
 - _posts/2021-02-19-vcenter-7-update-1c-advanced-cross-vcenter-vmotion.md
+- _posts/vmc-on-aws-network-connectivity-options.md
