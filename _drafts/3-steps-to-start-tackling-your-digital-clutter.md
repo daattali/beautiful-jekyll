@@ -6,7 +6,7 @@ tags:
 - digital declutter challenge
 - decluttering
 - simple decluttering
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/3-steps-to-start-tackling-your-digital-clutter-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
