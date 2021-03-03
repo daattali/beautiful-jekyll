@@ -12,8 +12,9 @@ readtime: true
 comments: true
 show-avatar: true
 title: 3 Steps to Start Tackling Your Digital Clutter
-description: " + a free digital decluttering challenge and checklist"
-subtitle: Start tackling your digital clutter today with 3 simple steps you can follow.
+description: Start tackling your digital clutter today with 3 simple steps you can
+  follow.
+subtitle: "+ a free digital decluttering challenge + checklist "
 share-img: ''
 redirect_from: []
 
