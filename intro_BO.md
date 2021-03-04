@@ -93,7 +93,7 @@ where ![Figure](assets/img/intro_bo/Equations/prob_dist_improvement.png) is the 
 
 ![Figure](assets/img/intro_bo/Equations/acq_EI.png)
 
-where ![Figure](assets/img/intro_bo/z_EI.png). ![formula](https://render.githubusercontent.com/render/math?math=\mu(\cdot)) and ![formula](https://render.githubusercontent.com/render/math?math=\sigma(\cdot)) are the mean and standard deviation of a GP. 
+where ![Figure](assets/img/intro_bo/Equations/z_EI.png). ![formula](https://render.githubusercontent.com/render/math?math=\mu(\cdot)) and ![formula](https://render.githubusercontent.com/render/math?math=\sigma(\cdot)) are the mean and standard deviation of a GP. 
 ![formula](https://render.githubusercontent.com/render/math?math=\Phi(\cdot)) is the normal cumulative distribution and ![formula](https://render.githubusercontent.com/render/math?math=\phi(\cdot)) is the normal probability distribution. 
 
 ![Figure](assets/img/intro_bo/bo_EI.png)
