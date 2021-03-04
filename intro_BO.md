@@ -41,8 +41,24 @@ The core of BO relays in two components,
 2. ![formula](https://render.githubusercontent.com/render/math?math=\alpha(\cdot))  --> **acquisition function** that quantifies the information gain for a given
 point.
 
-To mimic the unknown function $f(\cdot)$ we can use any supervised learning algorithm, like NNs. 
+To mimic the unknown function ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)) we can use any supervised learning algorithm, like NNs. 
 However, if ![Figure](assets/img/intro_bo/Equations/cal_F.png) is not capable to learn at every iteration, we may waist some of the evaluations because of the lack robustness of the model. 
 GP models are a great candidate for ![Figure](assets/img/intro_bo/Equations/cal_F.png) due to the accuracy and robustness to interpolate any continuous function. 
 Additionally, the ability of GP models to quantify the prediction's uncertainty ![formula](https://render.githubusercontent.com/render/math?math=\sigma(\mathbf{x})) without the need of extra data is what makes them the strongest candidate for BO. 
 In a previous post we introduced [Gaussian Processes](intro_GP.md), a probabilist regression model capable of learning complex functions. 
+
+The following figure illustrates how BO works to find the minimum of ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)) without using gradients.
+The maximum of the acquisition function is the query point where the black-box function is evaluated next, ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x_{n+1}})), % since it represents the point with the greatest informational gain. 
+ and at each iteration we add the new point ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_{n+1}}) to the training data and retrain the GP model. 
+
+![Figure](assets/img/intro_bo/Equations/bo.png)
+ 
+Pseudocode of BO,
+
+![Figure](assets/img/intro_bo/Equations/BO_algorithm.png)
+
+
+## Acquisition function
+In this section we 
+In \autoref{sec:BO_acq} we explain different acquisition functions that are used in BO. 
+
