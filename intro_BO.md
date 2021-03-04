@@ -51,14 +51,20 @@ The following figure illustrates how BO works to find the minimum of ![formula](
 The maximum of the acquisition function is the query point where the black-box function is evaluated next, ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x_{n+1}})), % since it represents the point with the greatest informational gain. 
  and at each iteration we add the new point ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_{n+1}}) to the training data and retrain the GP model. 
 
-![Figure](assets/img/intro_bo/Equations/bo.png)
+![Figure](assets/img/intro_bo/bo.png)
  
 Pseudocode of BO,
 
-![Figure](assets/img/intro_bo/Equations/BO_algorithm.png)
+![Figure](assets/img/intro_bo/BO_algorithm.png)
 
 
 ## Acquisition function
-In this section we 
-In \autoref{sec:BO_acq} we explain different acquisition functions that are used in BO. 
+In this section we explain different acquisition functions that are used in BO. 
+BO is an optimization algorithm designed for problems where gradients are not available. 
+As it was mention above, the acquisition function is designed to repre- sent which point in the space has the most information. 
+By iteratively evaluating the black-box function where the acquisition function is maximum we learn a more certain representation of ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)) where the minimum could be. There are many different acquisition functions, here we cover the three most used,
+1. Probability of improvement (PI) 
+2. Expected Improvement (EI)
+3. Upper confidence bound (UCB)
+
 
