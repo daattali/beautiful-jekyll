@@ -80,3 +80,13 @@ In the following figure we illustrate how the maximum of ![formula](https://rend
 
 ![Figure](assets/img/intro_bo/bo_PI.png)
 
+## Expected Improvement (EI)
+The expected improvement is one of the most known acquisition functions. The improvement is defined as the difference between the predicted point and the best known point (![formula](https://render.githubusercontent.com/render/math?math=\tau),
+
+![Figure](assets/img/intro_bo/Equations/improvement.png)
+
+and the expected improvement is defined as,
+
+![Figure](assets/img/intro_bo/Equations/expected_improvement.png)
+
+where ![Figure](assets/img/intro_bo/Equations/prob_dist_improvement.png) is the probability distribution over the improvement. If we consider that ![Figure](assets/img/intro_bo/Equations/prob_dist_improvement.png) is Gaussian distributed with a mean ![formula](https://render.githubusercontent.com/render/math?math=\mu(x)%20-\tau), the expectation integral has a closed-form expression 
