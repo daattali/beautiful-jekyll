@@ -78,3 +78,5 @@ If ![formula](https://render.githubusercontent.com/render/math?math=y_{n%2B1}) i
 PI is know as a greedy acquisition function, however if we relax the value of ![formula](https://render.githubusercontent.com/render/math?math=\tau) by adding a constant, ![formula](https://render.githubusercontent.com/render/math?math=\epsilon), we can make exploratory moves.
 In the following figure we illustrate how the maximum of ![formula](https://render.githubusercontent.com/render/math?math=\alpha_{PI}(\cdot)) changes for different values of ![formula](https://render.githubusercontent.com/render/math?math=\epsilon).
 
+![Figure](assets/img/intro_bo/bo_PI.png)
+
