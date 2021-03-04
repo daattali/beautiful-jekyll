@@ -98,3 +98,4 @@ where ![Figure](assets/img/intro_bo/Equations/z_EI.png). ![formula](https://rend
 
 ![Figure](assets/img/intro_bo/bo_EI.png)
 
+## Upper confidence bound (UCB)
