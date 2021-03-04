@@ -23,7 +23,7 @@ The most common optimization algorithm for continuous functions is *gradient des
 
 where the parameter ![formula](https://render.githubusercontent.com/render/math?math=\eta) is known as the *learning rate*.
 ![formula](https://render.githubusercontent.com/render/math?math=\eta) is also related in the trade-off between exploitation and exploration and plays a key role in the convergence of the algorithm.   
-For example, when ![formula](https://render.githubusercontent.com/render/math?math=\eta) is small GD is exploiting ![Figure](assets/img/intro_bo/Equations/x_n+1_x_n.png); where as  for ![formula](https://render.githubusercontent.com/render/math?math=\eta \gg 0)  is related to exploration. 
+For example, when ![formula](https://render.githubusercontent.com/render/math?math=\eta) is small GD is exploiting ![Figure](assets/img/intro_bo/Equations/x_n+1_x_n.png); where as  ![Figure](assets/img/intro_bo/Equations/for eta_gg_0.png)  is related to exploration. 
 GD is one of the first optimization algorithms used to train NNs, backpropagation algorithm. 
 
 In a previous post we introduced [Gaussian Processes](intro_GP.md), a probabilist regression model capable of learning complex functions. 
