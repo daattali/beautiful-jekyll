@@ -37,7 +37,7 @@ In the case of GD we assume that the gradient gives us the information of where 
 Considering that black-box functions do not have a gradient, it is necessary to propose a metric that quantifies the informational gain as a function of the space.
 
 The core of BO relays in two components,
-1. ![formula](https://render.githubusercontent.com/render/math?math={\cal F}(\cdot)) --> **model** that mimics the black-box function.
+1. ![Figure](assets/img/intro_bo/Equations/cal_F.png) --> **model** that mimics the black-box function.
 2. ![formula](https://render.githubusercontent.com/render/math?math=\alpha(\cdot))  --> **acquisition function** that quantifies the information gain for a given
 point.
 
