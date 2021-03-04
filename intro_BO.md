@@ -13,7 +13,7 @@ The goal of an *optimization problem* is to find the best solution among all pot
 In the field of ML, the optimization problem is associated with the search for the values of the parameters of a model that better described the problem, e.g. minimizing a loss function. 
 Synthetic chemistry also has optimization problems, for example varying the reaction conditions to increase percent yield.
 
-The optimization of a function is also a supervised learning problem, but instead of finding the best global representation of function $f(\cdot)$, the goal is to find the ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x})  where ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)) is minimum,
+The optimization of a function is also a supervised learning problem, but instead of finding the best global representation of function ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)), the goal is to find the ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x})  where ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)) is minimum,
 
 ![Figure](assets/img/intro_bo/Equations/arg_min.png)
 
