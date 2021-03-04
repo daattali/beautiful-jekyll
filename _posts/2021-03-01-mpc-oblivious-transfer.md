@@ -55,6 +55,7 @@ As discussed earlier, in the ideal world, parties can share their inputs with a 
 Now suppose that a set of parties $C$ is corrupted and semi-honest. In the real world, these parties each have a view $\{V_i\}_  {i \in C}$. In the ideal world, the behavior of these parties can be **simulated** as to result in a set of views $\{V_i'\}_  {i \in C}$. The simulated views $V_i'$ necessarily respect our notion of privacy since, in the ideal world, there is no communication between parties.
 
 A protocol $\pi$ is said to be **secure** if, for any given set of inputs, the distribution of $\{V_i\}_  {i \in C}$ is equal to the distribution of $\{V_i'\}_  {i \in C}$. In other words, for any boolean function $D$ which attempts to determine whether a set of view was generated in the real world or in the ideal world, we have
+
 $$
     \mathbb{P}(D(\{V_i\}_  {i \in C}) = 1) = \mathbb{P}(D(\{V_i'\}_  {i \in C}) = 1)
 $$
@@ -65,9 +66,12 @@ $$
 
 Consider the problem of secure 2-party computation of a function $\mathcal{F} : X\times Y \rightarrow Z.$
 Given its input $x_1$, party 1 can compute all possibilities for the result of the computation as
+
 $$
     \left(\mathcal{F}(x_1, y)\right)_ {y \in Y}
-$$If party 2 could obtain the value $\mathcal{F}(x_1, x_2)$ from party 1 without revealing its input $x_2$ and without learning about any other value $\mathcal{F}(x_1, y)$, $y \not = x_2$, this would solve the secure 2-party computation problem. Doing so is called **oblivious transfer**.
+$$
+
+If party 2 could obtain the value $\mathcal{F}(x_1, x_2)$ from party 1 without revealing its input $x_2$ and without learning about any other value $\mathcal{F}(x_1, y)$, $y \not = x_2$, this would solve the secure 2-party computation problem. Doing so is called **oblivious transfer**.
 
 That is, suppose party 1, referred to as the **sender**, has a set of secrets $s_1, s_2, \dots, s_k$. The goal of oblivious transfer is to allow party 2, the **receiver**, to obtain any secret $s_i$ of their choice under the two following constraints:
 - the sender does not know which secret $s_i$ was obtained, and 
