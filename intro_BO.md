@@ -67,13 +67,13 @@ By iteratively evaluating the black-box function where the acquisition function 
 3. Upper confidence bound (UCB)
 
 ## Probability of improvement (PI) 
-In 1964 H. Kushner proposed as an acquisition function to maximize the probability of improvement, the probability when ![formula](https://render.githubusercontent.com/render/math?math=f_g_tau.opng). 
-H. Kushner showed that if ![formula](https://render.githubusercontent.com/render/math?math=f(x)) is Gaussian distributed, ![formula](https://render.githubusercontent.com/render/math?math=P(f(x) > \tau)) can be written as,
+In 1964 H. Kushner proposed as an acquisition function to maximize the probability of improvement, the probability when ![Figure](assets/img/intro_bo/Equations/f_g_tau.png). 
+H. Kushner showed that if ![formula](https://render.githubusercontent.com/render/math?math=f(x)) is Gaussian distributed, ![Figure](assets/img/intro_bo/Equations/Gauss_cum.png) can be written as,
 
 ![Figure](assets/img/intro_bo/Equations/acq_PI.png)
 
-where ![formula](https://render.githubusercontent.com/render/math?math=\Phi(\cdot)) is the normal cumulative distribution function, ![formula](https://render.githubusercontent.com/render/math?math=\mu(\cdot)) and ![formula](https://render.githubusercontent.com/render/math?math=\sigma(\cdot)) are the predicted mean and standard deviation of a GP model trained with the data set ![formula](https://render.githubusercontent.com/render/math?math={\cal D}_n), and ![formula](https://render.githubusercontent.com/render/math?math=\tau) is the target value. 
-Since the goal of BO is to find ![formula](https://render.githubusercontent.com/render/math?math=\tau) we can approximate it with the best known value in the set ![formula](https://render.githubusercontent.com/render/math?math={\cal D}_n), for example ![Figure](assets/img/intro_bo/Equations/tau_max_y.png). 
+where ![formula](https://render.githubusercontent.com/render/math?math=\Phi(\cdot)) is the normal cumulative distribution function, ![formula](https://render.githubusercontent.com/render/math?math=\mu(\cdot)) and ![formula](https://render.githubusercontent.com/render/math?math=\sigma(\cdot)) are the predicted mean and standard deviation of a GP model trained with the data set ![Figure](assets/img/intro_bo/Equations/data.png), and ![formula](https://render.githubusercontent.com/render/math?math=\tau) is the target value. 
+Since the goal of BO is to find ![formula](https://render.githubusercontent.com/render/math?math=\tau) we can approximate it with the best known value in the set ![Figure](assets/img/intro_bo/Equations/data.png), for example ![Figure](assets/img/intro_bo/Equations/tau_max_y.png). 
 If ![formula](https://render.githubusercontent.com/render/math?math=y_{n%2B1}) is greater than the current value of [formula](https://render.githubusercontent.com/render/math?math=\tau), we update ![formula](https://render.githubusercontent.com/render/math?math=\tau).
 PI is know as a greedy acquisition function, however if we relax the value of ![formula](https://render.githubusercontent.com/render/math?math=\tau) by adding a constant, ![formula](https://render.githubusercontent.com/render/math?math=\epsilon), we can make exploratory moves.
 In the following figure we illustrate how the maximum of ![formula](https://render.githubusercontent.com/render/math?math=\alpha_{PI}(\cdot)) changes for different values of ![formula](https://render.githubusercontent.com/render/math?math=\epsilon).
