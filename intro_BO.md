@@ -48,8 +48,7 @@ Additionally, the ability of GP models to quantify the prediction's uncertainty 
 In a previous post we introduced [Gaussian Processes](intro_GP.md), a probabilist regression model capable of learning complex functions. 
 
 The following figure illustrates how BO works to find the minimum of ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)) without using gradients.
-The maximum of the acquisition function is the query point where the black-box function is evaluated next, ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x_{n+1}})), % since it represents the point with the greatest informational gain. 
- and at each iteration we add the new point ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_{n+1}}) to the training data and retrain the GP model. 
+The maximum of the acquisition function is the query point where the black-box function is evaluated next, ![formula](https://render.githubusercontent.com/render/math?math=f(\mathbf{x_{n%2B1}})), and at each iteration we add the new point ![formula](https://render.githubusercontent.com/render/math?math=\mathbf{x_{n%2B1}}) to the training data and retrain the GP model. 
 
 ![Figure](assets/img/intro_bo/bo.png)
  
