@@ -26,4 +26,20 @@ where the parameter ![formula](https://render.githubusercontent.com/render/math?
 For example, when ![formula](https://render.githubusercontent.com/render/math?math=\eta) is small GD is exploiting ![Figure](assets/img/intro_bo/Equations/x_n+1_x_n.png); where as  ![Figure](assets/img/intro_bo/Equations/eta_gg_0.png)  is related to exploration. 
 GD is one of the first optimization algorithms used to train NNs, backpropagation algorithm. 
 
+GD has been a widely successful optimization algorithm.
+However, not every function can be optimized using GD.
+For example, there is no analytic function that describes the relation between the percent yield given some experimental conditions for a chemical reaction, therefore one can not use GD to increase the percent yield.
+There are many other problems that are described by non-analytic functions or *black-box* functions, where evaluations are point-wise.
+BO is designed to tackle the optimization of black-box functions where gradients are not available.  
+For obvious reasons, trying to find the minimum of ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)) by randomly sampling is not the smartest strategy, since it may take a large number of evaluations from ![formula](https://render.githubusercontent.com/render/math?math=f(\cdot)) before finding the minimum.
+BO tries to infer the location of the minimum of a black-box function by proposing a smarter iterative sampling scheme. 
+In the case of GD we assume that the gradient gives us the information of where to sample the next point in order to get closer to the minimum. 
+Considering that black-box functions do not have a gradient, it is necessary to propose a metric that quantifies the informational gain as a function of the space.
+
+The core of BO relays in two components,
+1. ![formula](https://render.githubusercontent.com/render/math?math={\cal F}(\cdot)) --> **model** that mimics the black-box function.
+2. ![formula](https://render.githubusercontent.com/render/math?math=\alpha(\cdot))  --> **acquisition function** that quantifies the information gain for a given
+point.
+
+
 In a previous post we introduced [Gaussian Processes](intro_GP.md), a probabilist regression model capable of learning complex functions. 
