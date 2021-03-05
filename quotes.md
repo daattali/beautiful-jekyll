@@ -3,7 +3,7 @@ title: Commentary
 subtitle: Interviews featured in the press
 ---
 
-Solar Tribune ["Combating Climate Change"](https://solartribune.com/climate-change/policy/economic-approaches/) (February 24, 2021)
+Solar Tribune: ["Combating Climate Change"](https://solartribune.com/climate-change/policy/economic-approaches/) (February 24, 2021)
 
 Bloomberg: ["The Key to New York’s Green Dreams May Be Turning Quebec Into a Mega-Battery"](https://www.bloomberg.com/news/articles/2020-02-24/mit-researchers-how-quebec-can-help-bring-green-power-to-new-yor) (February 24, 2020)
 
