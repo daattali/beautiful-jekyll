@@ -48,8 +48,7 @@ _Our clean clothes are brought upstairs before quiet time at some point. And the
 
 ##### Simple habits for creating a simpler home need not to be complex, but it can be overwhelming at first. Start with one. Start small. Keep going and building on it over time. And you will start to see your simpler home coming together!
 
-######   
-Other blogs of mine you may like:
+##### Other blogs of mine you may like:
 
 * [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 * [How to Make Habits Stick without Much Effort](https://www.simplehomemom.com/how-to-make-habits-stick-without-much-effort/)
@@ -61,8 +60,8 @@ Other blogs of mine you may like:
 * [Keeping it simple: an interview with Kelly](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761)
 * [Simplify Your Laundry Routine with Kelly Briggs](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)
 
-  ## FREEBIE WORKSHEET: 10 questions to help you simplify your home life
+## FREEBIE WORKSHEET: 10 questions to help you simplify your home life
 
-  And _PS if you'd like ideas to create more simplicity in your home, I attached a worksheet for you too: 10 questions to help you simplify your home life. You can find that_ [_HERE_](https://mailchi.mp/d7eafb4e2738/simplifyyourhomelife). Or you may enjoy my six week flexible online Simplify Your Home Life course for busy moms. Find out about it [here](https://www.simplehomemom.com/course).
+And _PS if you'd like ideas to create more simplicity in your home, I attached a worksheet for you too: 10 questions to help you simplify your home life. You can find that_ [_HERE_](https://mailchi.mp/d7eafb4e2738/simplifyyourhomelife). Or you may enjoy my six week flexible online Simplify Your Home Life course for busy moms. Find out about it [here](https://www.simplehomemom.com/course).
 
-  ![An overview of the 10 simple habits image.](/uploads/20210218_143016_0001_compress12.jpg "10 simple habits to create a simpler home")
+![An overview of the 10 simple habits image.](/uploads/20210218_143016_0001_compress12.jpg "10 simple habits to create a simpler home")
