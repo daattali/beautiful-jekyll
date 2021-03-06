@@ -1,9 +1,8 @@
 ---
 layout: post
-title: ABY
-subtitle: By Norah Tan and Qiulin Li
+title: Oblivious Parallel RAM
+subtitle: By George Wang and Haozhan Sun
 tags: [oblivious computation]
-published: false
 ---
 
 ## Motivation
