@@ -1,3 +1,10 @@
+---
+layout: post
+title: Oblivious Parallel RAM
+subtitle: By Anurag Kashyap and Rahul Ramesh
+tags: [GMW, Yao's Garbled Circuits]
+---
+
 # Yao's Garbled Circuits
 
 ### Introduction
