@@ -34,14 +34,23 @@ All the tunable parameters for this type of models are, ![DFT list](assets/img/B
 
 The paremeters of **PBE0** are, ![formula](https://render.githubusercontent.com/render/math?math=a_0=1/4), ![formula](https://render.githubusercontent.com/render/math?math=a_X=3/4), and ![formula](https://render.githubusercontent.com/render/math?math=a_C=1). For **B3LYP**,![formula](https://render.githubusercontent.com/render/math?math=a_0=0.2), ![formula](https://render.githubusercontent.com/render/math?math=a_X=0.72), and ![formula](https://render.githubusercontent.com/render/math?math=a_C=0.81).
 
-In the Gaussian 09 suite, we can create 30 different ACM3 models. I tuned the [formula](https://render.githubusercontent.com/render/math?math=a_0), ![formula](https://render.githubusercontent.com/render/math?math=a_X), and ![formula](https://render.githubusercontent.com/render/math?math=a_C) constants by minimizng the root-mean-square error (RMSE) of the atomization energies of the G1 molecules, Refs. [9-11]. The entire data set consists of a total of 32 atomization energies.
+In the Gaussian 09 suite, we can create 30 different ACM3 models. I tuned the ![formula](https://render.githubusercontent.com/render/math?math=a_0), ![formula](https://render.githubusercontent.com/render/math?math=a_X), and ![formula](https://render.githubusercontent.com/render/math?math=a_C) constants by minimizng the root-mean-square error (RMSE) of the atomization energies of the G1 molecules, Refs. [9-11]. The entire data set consists of a total of 32 atomization energies.
 For each XC functional we carried out 5 different optimizations with different 15 initial points.
 These points were sampled using the latin hyper cube sampling (LHS) algorithm to avoid sampling multiple points close to each other. 
 For all calculations we used **6-31G(*d*)** and the molecular geometries were optimized with **MP2/6-31G(*d*)**.
-The lowest RMSE found by BO for each XC functional is displayed in the following Figure.
+The lowest RMSE found by BO for each XC functional is displayed in the following Figures.
 
+![DFT list](assets/img/BO_DFT/fig1.png)
+![DFT list](assets/img/BO_DFT/fig2b.png)
 
-![DFT list](assets/img/BO_DFT/Equations/XC_ACM3.png)
+For this simulations we used the **Upper Confidence Bound** (UCB) acquisition function,
+
+![DFT list](assets/img/BO_DFT/Equations/acq_UCB.png)
+
+where the balacen between GP's meand standard deviation is balanced by the constant ![formula](https://render.githubusercontent.com/render/math?math=\kappa).
+
+If we pay attention to the bar-plot figure for the 30 different models we can notice that not all models can reproduce the atomization energies with the same accuracy. For example, **B-P86** and **B-V5LYP** differ by more than 0.1 kcal/mol. 
+Probably, this is the reason why the field of DFT relies on benchmark studies. Additionally, we can see that on average it only takes BO less than 40 evaluations of the RMSE function to spot the optmal values of ![formula](https://render.githubusercontent.com/render/math?math=a_0), ![formula](https://render.githubusercontent.com/render/math?math=a_X), and ![formula](https://render.githubusercontent.com/render/math?math=a_C).
 
 
 
