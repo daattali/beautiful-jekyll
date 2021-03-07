@@ -24,10 +24,14 @@ The field of DF has created a large number of functionals [1], making it hard to
 The alphabet soup of approximate functionals available in a code near you, taken from Ref. [1].
 
 At the end of my PhD I decided to test if we can optimize and select more efficiently DFT models with Bayesian Optimization.
-Probably the most common DFT model is **B3LYP**, Refs. [2-3]. However, this model belongs to a class of models called **ACM3**, Refs. [4-7].
+Probably the two most common DFT models are **B3LYP**, Refs. [2-3], and **PBE0**, Refs. [4, 7-8]. However, this model belongs to a class of models called **ACM3**, Refs. [5-8].
 This type of models was introduced by Becke, and combine local and non-local treatments of exchange (**X**) and cor- relation (**C**) with the Hartree-Fock (**HF**) exchange,
 
 ![DFT list](assets/img/BO_DFT/Equations/XC_ACM3.png)
+
+where ![formula](https://render.githubusercontent.com/render/math?math=a_0), ![formula](https://render.githubusercontent.com/render/math?math=a_X), and ![formula](https://render.githubusercontent.com/render/math?math=a_C) are adjustable parameters. ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and ![formula](https://render.githubusercontent.com/render/math?math=E_C^{GGA}) are the generalized gradient approximation (GGA) exchange and correlation functionals, and ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and ![formula](https://render.githubusercontent.com/render/math?math=E^{LSD}) is the local spin density (LSD) part.
+
+**PBE0**, another famous DFT model 
 
 
 
@@ -46,19 +50,23 @@ Comparison of Density Functional and MP2 Calculations on the Water Monomer and D
 Ab Initio Calculation of Vibrational Absorption and Circular Dichroism Spectra Using Density Functional Force Fields. 
 *J. Phys. Chem.* **98**, 11623 (1994). 
 
-[4] A. D. Becke,
+[4] M. Ernzerhof, and G. E. Scuseria,
+Assessment and formal properties of exchange-correlation functionals constructed from the adiabatic connection.
+*J. Chem. Phys.* **110**, 5029 (1999).
+
+[5] A. D. Becke,
 A new mixing of Hartree–Fock and local density‐functional theories.
 *J. Chem. Phys.* **98**, 1372 (1993).
 
-[5]A. D. Becke, 
+[6]A. D. Becke, 
 Density‐functional thermochemistry. III. The role of exact exchange.
 *J. Chem. Phys.* **98**, 5648 (1993).
 
-[6] J. P. Perdew, M. Ernzerhof, and K. Burke,
+[7] J. P. Perdew, M. Ernzerhof, and K. Burke,
 Rationale for mixing exact exchange with density functional approximations. 
 *J. Chem. Phys.* **105**, 9982 (1996).
 
-[7] C. Adamo, and V. Barone,
+[8] C. Adamo, and V. Barone,
 Toward reliable density functional methods without adjustable parameters: The PBE0 model.
 *J. Chem. Phys.* **110**, 6158 (1999).
 
