@@ -22,7 +22,7 @@ The field of DF has created a large number of functionals [1], making it hard to
 
 ![DFT list](assets/img/BO_DFT/DFT_list.png)
 
-
+At the end of my PhD I decided to test if we can optimize and select more efficiently DFT models with Bayesian Optimization.
 
 
 
