@@ -21,13 +21,44 @@ Back in my undergaduate, I modeled Diels–Alder reaction using variuos DFT mode
 The field of DF has created a large number of functionals [1], making it hard to select a single one for computational simulations.
 
 ![DFT list](assets/img/BO_DFT/DFT_list.png)
+The alphabet soup of approximate functionals available in a code near you, taken from Ref. [1].
 
 At the end of my PhD I decided to test if we can optimize and select more efficiently DFT models with Bayesian Optimization.
+Probably the most common DFT model is **B3LYP**, Refs. [2-3]. However, this model belongs to a class of models called **ACM3**, Refs. [4-7].
+This type of models was introduced by Becke, and combine local and non-local treatments of exchange (**X**) and cor- relation (**C**) with the Hartree-Fock (**HF**) exchange,
+
+![DFT list](assets/img/BO_DFT/Equations/XC_ACM3.png)
 
 
 
 ## References 
 
 [1] K. Burke,
-Perspective on density functional theory
-J. Chem. Phys. **36**, 150901 (2012)
+Perspective on density functional theory.
+*J. Chem. Phys.* **36**, 150901 (2012)
+
+
+[2] K. Kim, and K. D. Jordan,
+Comparison of Density Functional and MP2 Calculations on the Water Monomer and Dimer.
+*J. Phys. Chem.* **98**, 10089 (1994).
+
+[3] P.J. Stephens; F. J. Devlin; C. F. Chabalowski; M. J. Frisch,
+Ab Initio Calculation of Vibrational Absorption and Circular Dichroism Spectra Using Density Functional Force Fields. 
+*J. Phys. Chem.* **98**, 11623 (1994). 
+
+[4] A. D. Becke,
+A new mixing of Hartree–Fock and local density‐functional theories.
+*J. Chem. Phys.* **98**, 1372 (1993).
+
+[5]A. D. Becke, 
+Density‐functional thermochemistry. III. The role of exact exchange.
+*J. Chem. Phys.* **98**, 5648 (1993).
+
+[6] J. P. Perdew, M. Ernzerhof, and K. Burke,
+Rationale for mixing exact exchange with density functional approximations. 
+*J. Chem. Phys.* **105**, 9982 (1996).
+
+[7] C. Adamo, and V. Barone,
+Toward reliable density functional methods without adjustable parameters: The PBE0 model.
+*J. Chem. Phys.* **110**, 6158 (1999).
+
