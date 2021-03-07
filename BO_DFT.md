@@ -13,3 +13,7 @@ Published as part of J. Phys. Chem. virtual special issue "*Machine Learning in 
 
 
 ## (The Big Picture) Motivation behind the project
+
+
+Density funcitonal theory (DFT) is probably one of the most used sucessfull theories developed by chemist. 
+While in "principle" DFT is *ab initio*, in practice the majority of the DFT models depend on internal parameters that are tuned by comparison with experimental quantities, e.g., standard enthalpy of formation, atomization energies, ionization energies, to mention few. 
