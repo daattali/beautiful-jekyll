@@ -30,8 +30,19 @@ This type of models was introduced by Becke, and combine local and non-local tre
 ![DFT list](assets/img/BO_DFT/Equations/XC_ACM3.png)
 
 where ![formula](https://render.githubusercontent.com/render/math?math=a_0), ![formula](https://render.githubusercontent.com/render/math?math=a_X), and ![formula](https://render.githubusercontent.com/render/math?math=a_C) are adjustable parameters. ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and ![formula](https://render.githubusercontent.com/render/math?math=E_C^{GGA}) are the generalized gradient approximation (GGA) exchange and correlation functionals, and ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and ![formula](https://render.githubusercontent.com/render/math?math=E^{LSD}) is the local spin density (LSD) part.
+All the tunable parameters for this type of models are, ![DFT list](assets/img/BO_DFT/Equations/ACM3_parameters.png). First, we will focuse on how standard BO can tune [formula](https://render.githubusercontent.com/render/math?math=a_0), ![formula](https://render.githubusercontent.com/render/math?math=a_X), and ![formula](https://render.githubusercontent.com/render/math?math=a_C).
 
 The paremeters of **PBE0** are, ![formula](https://render.githubusercontent.com/render/math?math=a_0=1/4), ![formula](https://render.githubusercontent.com/render/math?math=a_X=3/4), and ![formula](https://render.githubusercontent.com/render/math?math=a_C=1). For **B3LYP**,![formula](https://render.githubusercontent.com/render/math?math=a_0=0.2), ![formula](https://render.githubusercontent.com/render/math?math=a_X=0.72), and ![formula](https://render.githubusercontent.com/render/math?math=a_C=0.81).
+
+In the Gaussian 09 suite, we can create 30 different ACM3 models. I tuned the [formula](https://render.githubusercontent.com/render/math?math=a_0), ![formula](https://render.githubusercontent.com/render/math?math=a_X), and ![formula](https://render.githubusercontent.com/render/math?math=a_C) constants by minimizng the root-mean-square error (RMSE) of the atomization energies of the G1 molecules, Refs. [9-11]. The entire data set consists of a total of 32 atomization energies.
+For each XC functional we carried out 5 different optimizations with different 15 initial points.
+These points were sampled using the latin hyper cube sampling (LHS) algorithm to avoid sampling multiple points close to each other. 
+For all calculations we used **6-31G(*d*)** and the molecular geometries were optimized with **MP2/6-31G(*d*)**.
+The lowest RMSE found by BO for each XC functional is displayed in the following Figure.
+
+
+![DFT list](assets/img/BO_DFT/Equations/XC_ACM3.png)
+
 
 
 ## References 
@@ -68,4 +79,16 @@ Rationale for mixing exact exchange with density functional approximations.
 [8] C. Adamo, and V. Barone,
 Toward reliable density functional methods without adjustable parameters: The PBE0 model.
 *J. Chem. Phys.* **110**, 6158 (1999).
+
+[9] J.  A.  Pople,  M.  Head-Gordon,  D.  J.  Fox,  K.  Raghavachari,  and  L.  A.  Curtiss,
+Gaussian‐1 theory: A general procedure for prediction of molecular energies.
+*J. Chem.  Phys.* **90**,  5622 (1989). 
+
+[10] L.  A.  Curtiss, C. Jones,  G.  w.  Trucks, K.  Raghavachari, and J.  A.  Pople,
+Gaussian‐2 theory for molecular energies of first‐ and second‐row compounds.
+*J. Chem.  Phys.* **93**,  2537 (1990).
+
+[11] D. Feller, and K. A. Peterson,
+Re-examination of atomization energies for the Gaussian-2 set of molecules.
+*J. Chem.  Phys.* **110**, 8384 (1999).
 
