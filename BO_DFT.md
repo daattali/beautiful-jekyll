@@ -47,12 +47,28 @@ For this simulations we used the **Upper Confidence Bound** (UCB) acquisition fu
 
 ![DFT list](assets/img/BO_DFT/Equations/acq_UCB.png)
 
-where the balacen between GP's meand standard deviation is balanced by the constant ![formula](https://render.githubusercontent.com/render/math?math=\kappa).
+where the sum between GP's mean and standard deviation is balanced by the constant ![formula](https://render.githubusercontent.com/render/math?math=\kappa).
 
-If we pay attention to the bar-plot figure for the 30 different models we can notice that not all models can reproduce the atomization energies with the same accuracy. For example, **B-P86** and **B-V5LYP** differ by more than 0.1 kcal/mol. 
+If we pay attention to the bar-plot figure, we can notice that not all 30 models can reproduce the atomization energies with the same accuracy. For example, **B-P86** and **B-V5LYP** differ by more than 0.1 kcal/mol. 
 Probably, this is the reason why the field of DFT relies on benchmark studies. Additionally, we can see that on average it only takes BO less than 40 evaluations of the RMSE function to spot the optmal values of ![formula](https://render.githubusercontent.com/render/math?math=a_0), ![formula](https://render.githubusercontent.com/render/math?math=a_X), and ![formula](https://render.githubusercontent.com/render/math?math=a_C).
 
+To illustrate the power of BO we decided to include ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and ![formula](https://render.githubusercontent.com/render/math?math=E_C^{GGA}) in the searching parameters. 
+We assigned an integer value to each ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and (https://render.githubusercontent.com/render/math?math=E_C^{GGA}) functional, e.g., for PBE-PBE **z** = [5, 4] and for mPW-V5LYP **z** = [3, 6].
+During the numerical optimization of the acquisition function we replaced the continuous values of **z** to the closest integer using the floor function.
+This new trick increases the number of parameters of the error function, however, as we will show shortly, BO is capable of identifying the "full optimal" DFT model.
 
+![DFT list](assets/img/BO_DFT/fig4b.png)
+
+This figure illustrates that during the searching procedure, BO changes the ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and ![formula](https://render.githubusercontent.com/render/math?math=E_C^{GGA}) to locate the optimal XC functional. 
+Some of final optimal models are, **G06-LYP**, **B-P86**, and **B-LYP**. These models can be verified from the bar-plot figure.
+
+
+## Some other experiments in the paper.
+
+1. Use BO with a smaller basis set to save computational time and use the optimal value of the coefficients with a larger basis set. This procedure shows that even the optimal parameters work better than the standard **PBE0** and **B3LYP**.
+2. Optimize with respect to experimental bond lengths.
+3. Train with atomization energies of the G1 data set and predict the atomization energies for the G2 data set. 
+I was able to show that our procedure produces more accurate results than **PBE0** and **B3LYP**.
 
 ## References 
 
