@@ -53,7 +53,7 @@ If we pay attention to the bar-plot figure, we can notice that not all 30 models
 Probably, this is the reason why the field of DFT relies on benchmark studies. Additionally, we can see that on average it only takes BO less than 40 evaluations of the RMSE function to spot the optmal values of ![formula](https://render.githubusercontent.com/render/math?math=a_0), ![formula](https://render.githubusercontent.com/render/math?math=a_X), and ![formula](https://render.githubusercontent.com/render/math?math=a_C).
 
 To illustrate the power of BO we decided to include ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and ![formula](https://render.githubusercontent.com/render/math?math=E_C^{GGA}) in the searching parameters. 
-We assigned an integer value to each ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and (https://render.githubusercontent.com/render/math?math=E_C^{GGA}) functional, e.g., for PBE-PBE **z** = [5, 4] and for mPW-V5LYP **z** = [3, 6].
+We assigned an integer value to each ![formula](https://render.githubusercontent.com/render/math?math=E_X^{GGA}) and ![formula](https://render.githubusercontent.com/render/math?math=E_C^{GGA}) functional, e.g., for PBE-PBE **z** = [5, 4] and for mPW-V5LYP **z** = [3, 6].
 During the numerical optimization of the acquisition function we replaced the continuous values of **z** to the closest integer using the floor function.
 This new trick increases the number of parameters of the error function, however, as we will show shortly, BO is capable of identifying the "full optimal" DFT model.
 
