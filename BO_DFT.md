@@ -24,7 +24,7 @@ The field of DF has created a large number of functionals [1], making it hard to
 The alphabet soup of approximate functionals available in a code near you, taken from Ref. [1].
 
 At the end of my PhD I decided to test if we can optimize and select more efficiently DFT models with Bayesian Optimization.
-Probably the two most common DFT models are **B3LYP**, Refs. [2-3], and **PBE0**, Refs. [4, 7-8]. However, this model belongs to a class of models called **ACM3**, Refs. [5-8].
+Probably the two most common DFT models are **B3LYP**, Refs. [2-3], and **PBE0**, Refs. [4, 7-8]. Both models belong to a class of models called **ACM3**, Refs. [5-8].
 This type of models was introduced by Becke, and combine local and non-local treatments of exchange (**X**) and cor- relation (**C**) with the Hartree-Fock (**HF**) exchange,
 
 ![DFT list](assets/img/BO_DFT/Equations/XC_ACM3.png)
