@@ -3,7 +3,7 @@ layout: post
 title:  "BFCache 동작에서 발견된 iframe 내 비정상적 이벤트 발생 현상"
 date:   2019-10-07 02:00:00 +0900
 author: Changbae Bang
-tags: [ 방창배, bfcache, 모바일, 브라우져,  ]
+tags: [bfcache, 모바일, 브라우져]
 ---
 회사 블로그에 작성한 내용을 올려봅니다.
 https://teamdable.github.io/techblog/iframe-event-issue-with-bfcache

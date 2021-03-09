@@ -3,7 +3,7 @@ layout: post
 title:  "Azure Blob 에서 NFS 사용하기"
 date:   2021-03-03 01:00:00 +0900
 author: Changbae Bang
-tags: [ 방창배, azure, blob, nfs, 장애대응, ]
+tags: [azure, blob, nfs, 장애대응, ]
 ---
 
 거의 일년 반만에 다시 글을 올려 봅니다.
