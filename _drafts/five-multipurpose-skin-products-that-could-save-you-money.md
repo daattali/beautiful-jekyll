@@ -4,7 +4,7 @@ tags:
 - multipurpose products
 - multipurpose skin products
 - skin products
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/5-multipurpose-skin-products-that-could-save-you-money-shm-3.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
