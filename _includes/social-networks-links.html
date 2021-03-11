@@ -276,7 +276,7 @@
   </li>
 {%- endif -%}
   
- {%- if site.social-network-links.medium -%}
+{%- if site.social-network-links.medium -%}
   <li class="list-inline-item">
     <a href="https://medium.com/@{{ site.social-network-links.medium }}" title="Medium">
       <span class="fa-stack fa-lg" aria-hidden="true">
@@ -285,6 +285,18 @@
       </span>
       <span class="sr-only">Medium</span>
     </a>
+  </li>
+{%- endif -%}
+
+{%- if site.social-network-links.itchio -%}
+  <li class="list-inline-item">
+    <a href="https://{{ site.social-network-links.itchio }}.itch.io/" title="Itchio">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Itchio</span>
+   </a>
   </li>
 {%- endif -%}
 
