@@ -6,10 +6,9 @@
 - Fixed bug where the navbar "burger" collapsed button didn't always revert back to a light colour
 - Fixed bug where using an image as a navbar title did not render in GitHub Project pages that did not have a custom domain
 - Fixed issue where image thumbnails on the feed page were always forced into a square rather than maintaining a proper image aspect ratio
-- Added support for Patreon and Medium in the social network links in the footer (#783)
+- Added support for Patreon, Medium, and Itch.io in the social network links in the footer (#783, #788)
 - Fixed bug where special characters in the title led to broken share tags (#744)
 - Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
-- Added support for Itch.io in the social network links in the footer (#788)
 
 ## v5.0.0 (2020-09-15)
 
