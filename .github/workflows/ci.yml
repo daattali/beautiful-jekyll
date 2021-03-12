@@ -14,6 +14,7 @@ jobs:
           -e PAGES_REPO_NWO=${{ github.repository }} \
           jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
   deploy:
+    needs: build
     name: Deploy GitHub Pages
     runs-on: ubuntu-latest    
     steps:
