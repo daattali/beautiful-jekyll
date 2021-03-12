@@ -13,3 +13,24 @@ jobs:
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           -e PAGES_REPO_NWO=${{ github.repository }} \
           jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+  deploy:
+    name: Deploy GitHub Pages
+    runs-on: ubuntu-latest    
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: "2.6"
+    - run: gem install bundler
+    - run: bundle install --jobs 4 --retry 3
+    - run: bundle exec jekyll build --destination site
+      env:
+        JEKYLL_ENV: production
+
+    - name: Deploy to master
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: master
+        FOLDER: site
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
