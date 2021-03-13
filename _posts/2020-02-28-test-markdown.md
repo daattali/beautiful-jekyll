@@ -1,78 +1,22 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
+title: Website is up and running!
+subtitle: Welcome to the new website
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
+This is the first post to go into receipt-rewards. I am super happy to announce that we will be moving past the old way of distributing steam game keys via our [Discord](https://discord.gg/sVdUh6F) channel and onto this website instead. While how we distribute them is still very much a WIP, I am happy to listen to any feedback on our current method. 
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+Due to problems with the honor system in the current discord server, keys will now have to be requested via discord DMs. If you see a game that you would like, just click the title of the game and I can provide the key, 
 
-**Here is some bold text**
+Here's is an example table of the method. All of the links provided are empty, but they would link to contact me for the key:
 
-## Here is a secondary heading
-
-Here's a useless table:
-
-| Number | Next number | Previous number |
+| Number | Game Title | Date Added |
 | :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+| 1 | [This War of Mine]() | 09/15/2020 |
+| 2 | [Imperator Rome]() | 11/07/2020 |
+| 3 | [Dirt Rally]() | 12/23/2020 |
+| 4 | [Moons of Madness]() | 12/27/2020 |
 
-
-How about a yummy crepe?
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
-
-It can also be centered!
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
