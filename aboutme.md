@@ -7,8 +7,6 @@ published: true
 
 My name is Josemy Duarte. I am a Software Engineer with a particular interest in technologies related to backend, cloud and devops. For more information about my professional career you can take a look at my [LinkedIn](https://www.linkedin.com/in/josemyduarte/) or write me an [email](mailto: duarte.josemy@gmail.com) if you have any question.
 
-## Un poco de historia...
-
 ## A little history...
 
 I grew up in a small town in Venezuela. Since I was little, computers always caught my attention and in the midst of so much interest, added to the curiosity of a teenager, I damaged a few... However, it was not until college that I learned about the *art of programming*. So since 2010 I have been programming for fun and for work.
