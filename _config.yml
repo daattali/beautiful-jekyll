@@ -28,6 +28,7 @@ navbar-links:
     - Gaussian Processes: "intro_GP"
     - Bayesian Optimization: "intro_BO"
     - BO DFT: "BO_DFT"
+    - QAOA: "qaoa"
 #    --Extrapolation : 
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
