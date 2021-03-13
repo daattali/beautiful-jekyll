@@ -15,10 +15,6 @@ author: Adam Dunn
 
 navbar-links:
   Games List: "GamesList"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
@@ -97,14 +93,14 @@ keywords: "games,discord"
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#932432"
-navbar-text-col: "#EEFBFB"
+navbar-text-col: "#A9A9A9"
 navbar-border-col: "#283747"
 page-col: "#12232E"
-text-col: "#EEFBFB"
+text-col: "#A9A9A9"
 link-col: "#007CC7"
 hover-col: "#007CC7"
 footer-col: "#932432"
-footer-text-col: "#EEFBFB"
+footer-text-col: "#A9A9A9"
 footer-link-col: "#283747"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
