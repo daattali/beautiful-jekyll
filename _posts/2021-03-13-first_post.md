@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Website is up and running!
-subtitle: Welcome to the new website
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [games], [discord]
+title: The start of Reciept Rewards
+subtitle: how the website works
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [games, TacoBell]
 comments: true
 ---
 This is the first post to go into receipt-rewards. I am super happy to announce that we will be moving past the old way of distributing steam game keys via our [Discord](https://discord.gg/sVdUh6F) channel and onto this website instead. While how we distribute them is still very much a WIP, I am happy to listen to any feedback on our current method. 
