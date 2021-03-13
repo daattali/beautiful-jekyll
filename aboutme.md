@@ -5,18 +5,20 @@ subtitle: A few words to describe me
 published: true
 ---
 
-Mi nombre es Josemy Duarte. Soy Software Engineer con interés particularmente en tecnologías relacionadas al backend, cloud y devops. Para mayor información sobre mi carrera profesional puedes echar un vistazo a mi [LinkedIn](https://www.linkedin.com/in/josemyduarte/) o escríbeme un [email](mailto:duartejosemy@gmail.com) si tienes alguna pregunta.
+My name is Josemy Duarte. I am a Software Engineer with a particular interest in technologies related to backend, cloud and devops. For more information about my professional career you can take a look at my [LinkedIn](https://www.linkedin.com/in/josemyduarte/) or write me an [email](mailto: duarte.josemy@gmail.com) if you have any question.
 
 ## Un poco de historia...
 
-Crecí en un pequeño pueblo del estado Miranda, Venezuela. Desde pequeño siempre me llamaron la atención las computadoras y en medio de tanto interés, sumado a la curiosidad de un adolescente, dañé unas cuantas... Sin embargo, no fue sino hasta la universidad que aprendí sobre el *arte de la programación*. Así que desde el 2010 programo por diversión y por trabajo.
+## A little history...
 
-Actualmente estoy en [Unity](https://unity.com//) dando lo mejor de mi, junto a un gran equipo, para facilitar la monetización de las aplicaciones hechas por los desarrolladores.
+I grew up in a small town in Venezuela. Since I was little, computers always caught my attention and in the midst of so much interest, added to the curiosity of a teenager, I damaged a few... However, it was not until college that I learned about the *art of programming*. So since 2010 I have been programming for fun and for work.
 
-## Me gusta...
+I am currently at [Unity](https://unity.com/) giving my best, together with a great team, to facilitate the success of game creators.
 
-Me gusta programar, por lo que disfruto mi trabajo. También me gusta viajar y un buen día en la playa. Y aunque no sea uno de mis puntos fuertes, también me gusta cocinar. Por lo general en mi tiempo libre me gusta ir al cine, leer sobre tecnología o asistir a algún meetup.
+## What do I like?
 
-## ¿Por qué un blog?
+I like programming, so I enjoy doing my job and that's also why you will often find me coding on weekends or after hours. I also like traveling and a good day at the beach. Usually, I use my free time to go to the cinema, read books, attend meetups or try any new technology.
 
-Porque quiero contar mis experiencias, esperando que a alguien le sea útil (just to give back). Así que si te tomaste la molestia de leer esta breve biografía, ¿por qué no te tomas unos minutos para ver mis post? Espero lo disfrutes.
+## Why a blog?
+
+Because I want to tell my experiences, hoping that someone will find it useful. So if you took the trouble to read this short bio, why don't you take a few minutes to check my posts? Welcome!
