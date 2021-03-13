@@ -3,7 +3,7 @@ layout: post
 title: The start of Reciept Rewards
 subtitle: how the website works
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/TacoBell1.jpg
 share-img: /assets/img/path.jpg
 tags: [games, TacoBell]
 comments: true
