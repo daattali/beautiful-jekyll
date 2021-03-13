@@ -97,14 +97,14 @@ keywords: "games,discord"
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#932432"
-navbar-text-col: "#3C1874"
+navbar-text-col: "#EEFBFB"
 navbar-border-col: "#283747"
-page-col: "#F3F3F3"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#3C1874"
+page-col: "#12232E"
+text-col: "#EEFBFB"
+link-col: "#007CC7"
+hover-col: "#007CC7"
 footer-col: "#932432"
-footer-text-col: "#3C1874"
+footer-text-col: "#EEFBFB"
 footer-link-col: "#283747"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
