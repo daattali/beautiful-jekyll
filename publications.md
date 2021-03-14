@@ -8,6 +8,42 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100">
+            <img src="../pics/zephyr.png" img width="250">
+        </td>
+        <td><a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">ZePHyR: Zero-shot Pose Hypothesis Rating</a><br>
+            <div class="pubauthor">
+                Brian Okorn*, Qiao Gu*, Martial Hebert, David Held<br>
+            </div>
+            <div id="bib2021zephyr" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{icra2021zephyr,
+                    title={ZePHyR: Zero-shot Pose Hypothesis Rating},
+                    author={Brian Okorn, Qiao Gu, Martial Hebert, David Held},
+                    booktitle={International Conference of Robotics and Automation},
+                    year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="abs2021zephyr" style="display:none">
+                <blockquote>
+                    Pose estimation is a basic module in many robot manipulation pipelines. Estimating the pose of objects in the environment can be useful for grasping, motion planning, or manipulation. However, current state-of-the-art methods for pose estimation either rely on large annotated training sets or simulated data. Further, the long training times for these methods prohibit quick interaction with novel objects. To address these issues, we introduce a novel method for zero-shot object pose estimation in clutter. Our approach uses a hypothesis generation and scoring framework, with a focus on learning a scoring function that generalizes to objects not used for training. We achieve zero-shot generalization by rating hypotheses as a function of unordered point differences. We evaluate our method on challenging datasets with both textured and untextured objects in cluttered scenes and demonstrate that our method significantly outperforms previous methods on this task. We also demonstrate how our system can be used by quickly scanning and building a model of a novel object, which can immediately be used by our method for pose estimation. Our work allows users to estimate the pose of novel objects without requiring any retraining.
+                </blockquote>
+            </div>
+            <div class="pubjournal">International Conference of Robotics and Automation (ICRA), 2020
+            <div style="font-size:small">
+                <a href="https://bokorn.github.io/zephyr/">[Project Page]</a>
+                <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
+                <a href="javascript:copy(div2021zephyr, bib2021zephyr)">[Bibtex]</a>
+                <a href="javascript:copy(div2021zephyr, abs2021zephyr)">[Abstract]</a>
+                <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a>
+            </div>
+            <div id="div2021zephyr" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100">
             <img src="../pics/corl2020_softgym.png" img width="250">
         </td>
         <td><a href="https://arxiv.org/abs/2011.07215">SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation</a><br>
