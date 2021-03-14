@@ -28,7 +28,7 @@ subtitle:
                     Pose estimation is a basic module in many robot manipulation pipelines. Estimating the pose of objects in the environment can be useful for grasping, motion planning, or manipulation. However, current state-of-the-art methods for pose estimation either rely on large annotated training sets or simulated data. Further, the long training times for these methods prohibit quick interaction with novel objects. To address these issues, we introduce a novel method for zero-shot object pose estimation in clutter. Our approach uses a hypothesis generation and scoring framework, with a focus on learning a scoring function that generalizes to objects not used for training. We achieve zero-shot generalization by rating hypotheses as a function of unordered point differences. We evaluate our method on challenging datasets with both textured and untextured objects in cluttered scenes and demonstrate that our method significantly outperforms previous methods on this task. We also demonstrate how our system can be used by quickly scanning and building a model of a novel object, which can immediately be used by our method for pose estimation. Our work allows users to estimate the pose of novel objects without requiring any retraining.
                 </blockquote>
             </div>
-            <div class="pubjournal">International Conference of Robotics and Automation (ICRA), 2020
+            <div class="pubjournal">International Conference of Robotics and Automation (ICRA), 2021
             <div style="font-size:small">
                 <a href="https://bokorn.github.io/zephyr/">[Project Page]</a>
                 <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
