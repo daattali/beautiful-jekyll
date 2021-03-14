@@ -4,8 +4,17 @@ backend:
   branch: release
 media_folder: 'assets/img'
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
-    fields:
-      - { name: Title }
+  - name: "blog" 
+    label: "Blog" 
+    folder: "_posts/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
+    fields: 
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Featured Image", name: "bigimg", widget: "image"}
+      - {label: "Share Image", name: "share-img", widget: "image"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
