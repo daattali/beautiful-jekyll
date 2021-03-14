@@ -14,7 +14,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Featured Image", name: "bigimg", widget: "image"}
+      - {label: "Featured Image", name: "img", widget: "image"}
       - {label: "Share Image", name: "share-img", widget: "image"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
