@@ -2,7 +2,7 @@
 layout: post
 title: Test CMS Title
 subtitle: SubtTitle Test
-date: 2021-03-14T19:17:56.482Z
+date: 2021-03-14
 image: /assets/img/botfather.png
 share-img: /assets/img/404-southpark.jpg
 tags:
