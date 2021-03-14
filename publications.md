@@ -148,7 +148,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
                 <a href="https://jianrenw.github.io/PanoNet3D/">[Project Page]</a>
                 <a href="https://github.com/stooloveu/Det3D">[Code]</a>
                 <a href="javascript:copy(div20203dv, bib20203dv)">[Bibtex]</a>
-                <a href="javascript:copy(div2020eccv, abs20203dv)">[Abstract]</a>
+                <a href="javascript:copy(div20203dv, abs20203dv)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2012.09418.pdf">[PDF]</a>
             </div>
             <div id="div20203dv" class="pubInfo"></div>
