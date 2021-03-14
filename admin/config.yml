@@ -1,0 +1,11 @@
+backend:
+  name: github
+  repo: JosemyDuarte/josemyduarte.github.io
+  branch: release
+media_folder: 'assets/img'
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    fields:
+      - { name: Title }
