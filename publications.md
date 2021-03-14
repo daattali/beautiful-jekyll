@@ -19,7 +19,7 @@ subtitle:
                     <pre>@inproceedings{icra2021zephyr,
                     title={ZePHyR: Zero-shot Pose Hypothesis Rating},
                     author={Brian Okorn, Qiao Gu, Martial Hebert, David Held},
-                    booktitle={International Conference of Robotics and Automation},
+                    booktitle={2021 International Conference on Robotics and Automation (ICRA)},
                     year={2021}}</pre>
                 </blockquote>
             </div>
@@ -37,6 +37,76 @@ subtitle:
                 <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a>
             </div>
             <div id="div2021zephyr" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="" img width="250">
+        </td>
+        <td>Exploiting & Refining Depth Distributions with Triangulation Light Curtains<br>
+            <div class="pubauthor">Yaadhav Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan<br>
+            </div>
+            <div id="bib2021exploiting" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{cvpr2021raajexploiting,
+                    title={Exploiting & Refining Depth Distributions with Triangulation Light Curtains},
+                    author={Yaadhav Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan},
+                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+                    year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="abs2021exploiting" style="display:none">
+                <blockquote>
+                Active sensing through the use of Adaptive Depth Sensors is a nascent field, with potential in areas such as Advanced driver-assistance systems (ADAS). They do however require dynamically driving a laser / light-source to a specific location to capture information, with one such class of sensor being the Triangulation Light Curtains (LC). In this work, we introduce a novel approach that exploits prior depth distributions from RGB cameras to drive a Light Curtain's laser line to regions of uncertainty to get new measurements. These measurements are utilized such that depth uncertainty is reduced and errors get corrected recursively. We show real-world experiments that validate our approach in outdoor and driving settings, and demonstrate qualitative and quantitative improvements in depth RMSE when RGB cameras are used in tandem with a Light Curtain.
+                </blockquote>
+            </div>
+            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2021
+            <div style="font-size:small">
+                <!-- <a href="https://bokorn.github.io/zephyr/">[Project Page]</a> -->
+                <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
+                <a href="javascript:copy(div2021exploiting, bib2021exploiting)">[Bibtex]</a>
+                <a href="javascript:copy(div2021exploiting, abs2021exploiting)">[Abstract]</a>
+                <!-- <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a> -->
+            </div>
+            <div id="div2021exploiting" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="" img width="250">
+        </td>
+        <td>Safe Local Motion Planning with Self-Supervised Freespace Forecasting<br>
+            <div class="pubauthor">Peiyun Hu, Aaron Huang, John Dolan, David Held, Deva Ramanan<br>
+            </div>
+            <div id="bib2021cvpr_safe" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{cvpr2021husafe,
+                    title={Safe Local Motion Planning with Self-Supervised Freespace Forecasting},
+                    author={Peiyun Hu, Aaron Huang, John Dolan, David Held, Deva Ramanan},
+                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+                    year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="abs2021cvpr_safe" style="display:none">
+                <blockquote>
+                Safe local motion planning for autonomous driving in dynamic environments requires forecasting how the scene evolves. Practical autonomy stacks adopt a semantic object-centric representation of a dynamic scene and build object detection, tracking, and prediction modules to solve forecasting. However, training these modules comes at an enormous human cost of manually annotated objects across frames. In this work, we explore future freespace as an alternative representation to support motion planning. Our key intuition is that it is important to avoid straying into occupied space regardless of what is occupying it. Importantly, computing ground-truth future freespace is annotation-free. First, we explore freespace forecasting as a self-supervised learning task. We then demonstrate how to use forecasted freespace to identify collision-prone plans from off-the-shelf motion planners. Finally, we propose future freespace as an additional source of annotation-free supervision. We demonstrate how to integrate such supervision into the learning process of learning-based planners. Experimental results on nuScenes and CARLA suggest both approaches lead to significant reduction in collision rates.
+                </blockquote>
+            </div>
+            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2021
+            <div style="font-size:small">
+                <!-- <a href="https://bokorn.github.io/zephyr/">[Project Page]</a> -->
+                <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
+                <a href="javascript:copy(div2021cvpr_safe, bib2021cvpr_safe)">[Bibtex]</a>
+                <a href="javascript:copy(div2021cvpr_safe, abs2021cvpr_safe)">[Abstract]</a>
+                <!-- <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a> -->
+            </div>
+            <div id="div2021cvpr_safe" class="pubInfo"></div>
             </div>
             <br>
         </td>
