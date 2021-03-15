@@ -115,7 +115,7 @@ share-links-active:
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "G-ZF350JB7FG"
 
 # Google Tag Manager ID
 #gtm: ""
