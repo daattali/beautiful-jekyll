@@ -12,7 +12,7 @@ comments: true
 show-avatar: true
 title: Seven Tips on Making Routines Stick
 description: Tips to making routine stick by looking at instilling them as habits.
-subtitle: ''
+subtitle: "+ a printable checklist for making routines stick"
 share-img: ''
 redirect_from: []
 
