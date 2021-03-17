@@ -17,8 +17,8 @@ Published as part of J. Phys. Chem. virtual special issue "*Machine Learning in 
 Density funcitonal theory (DFT) is probably one of the most used sucessfull theories developed by chemist. 
 While in "principle" DFT is *ab initio*, in practice the majority of the DFT models depend on internal parameters that are tuned by comparison with experimental quantities, e.g., standard enthalpy of formation, atomization energies, ionization energies, to mention few. 
 
-Back in my undergaduate, I modeled Diels–Alder reaction using variuos DFT models which forced me to review the bibliography to decider which was the *optimal* model  for my chemical system. 
-The field of DF has created a large number of functionals [1], making it hard to select a single one for computational simulations.
+Back in my undergaduate, I modeled Diels–Alder reaction using variuos DFT models which forced me to review the bibliography to decide which was the *optimal* model  for my simulations. 
+The field of DF theory has created a large number of functionals [1], making it hard to select a single one for computational simulations.
 
 ![DFT list](assets/img/BO_DFT/DFT_list.png)
 The alphabet soup of approximate functionals available in a code near you, taken from Ref. [1].
