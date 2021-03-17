@@ -16,7 +16,7 @@ show-avatar: true
 title: A Simple Practice to Improve Your Daily to do List and Routines
 description: A simple suggestion to improve your daily to do list and routines that
   anyone can do.
-subtitle: ''
+subtitle: "+ a free worksheet to help you implement this practice"
 share-img: ''
 redirect_from: []
 
