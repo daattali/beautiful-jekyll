@@ -1,13 +1,17 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A small coder with big dreams
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Raihan Khan Raka. I am :
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- A competitive programmer since 2016
+- Participated in many national level contests as well as NCPC and ICPC Dhaka Regionals
+- Solved over 2000+ problems in various online judges
+- A forever learner of data structure and algorithms
+- Interested in new technologies
+- Trying to follow the path of righteousness and stay humble
 
 What else do you need?
 
