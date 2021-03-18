@@ -1,6 +1,11 @@
 ---
 post: post
-tags: []
+tags:
+- simple routines
+- simple home tips
+- simple home
+- simplify your home life
+- routines
 thumbnail-img: "/uploads/5-key-routines-to-help-simplify-your-home-life-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
