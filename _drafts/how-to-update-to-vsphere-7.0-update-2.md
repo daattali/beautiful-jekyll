@@ -54,4 +54,4 @@ Note that you can specify a proxy server for internet access in the **Networking
 
 ![](/img/v7u2-1.png)
 
-* First connect to the VAMI and browse to the Update 
+* First connect to the VAMI and browse to the Update pane, click **Check Update** and select one of the two according to whether the server has internet access or not.
