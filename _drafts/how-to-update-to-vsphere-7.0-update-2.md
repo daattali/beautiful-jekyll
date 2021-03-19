@@ -19,16 +19,17 @@ VMware recently released vSphere 7.0 Update 2. It delivers a number of really in
 
 · vSAN 7.0 Update 2
 
-Refer to my blog for Altaro to find more detailed information about the release.
+Refer to this blog I wrote for Altaro to find more detailed information about the release.
 
 ## Before upgrading
 
-The usual prerequisites and recommendations still apply:
+The following prerequisites and recommendations apply as usual. Make sure that:
 
-* Make sure your hardware and firmware are supported for vSphere 7.0 Update 2 in the VMware HCL. Even if it's not you can still upgrade vCenter though.
-* Make sure any third party products connecting to the environment is compatible with vCenter 7.0 Update 2.
+* The hardware and firmware are supported for vSphere 7.0 Update 2 in the VMware HCL. Even if it's not you can still upgrade vCenter though.
+* Third party products connecting to the environment are compatible with vCenter 7.0 Update 2.
+* A recent and consistent backup or snapshot of the vCenter Appliance has been taken.
 
-## WAIT: vSphere 7.0 Update 2 update
+## vSphere 7.0 Update 2 update : HOLD ON
 
 As of 19/03/2021, it is not possible to update to vSphere 7.0 Update 2 using either vLCM or esxcli. It has been pulled from the repo by VMware to address an issue discovered post release which would result in an error when trying to patch the host.
 
@@ -54,4 +55,25 @@ Note that you can specify a proxy server for internet access in the **Networking
 
 ![](/img/v7u2-1.png)
 
-* First connect to the VAMI and browse to the Update pane, click **Check Update** and select one of the two according to whether the server has internet access or not.
+Once you have downloaded the ISO you have to mount it on the VCSA VM virtual CD drive.
+
+* Then connect to the VAMI and browse to the Update pane, click **Check Update** and select one of the two according to whether the server has internet access or not.
+
+![](/img/v7u2-2.png)
+
+* Once the new version is detected (online or through the ISO) you can **Stage** or **Stage and Install**. In the example below I staged the patch so I can quickly install it whenever suits best.
+
+![](/img/v7u2-3.png)
+
+* You can then go ahead and click **Install**.
+* You will need to accept the **EULA**, Type in the **SSO administrator** password and certify that you have backed up the appliance before proceeding.
+
+![](/img/v7u2-4.png)
+
+* The update process a little bit of time (most likely more than the 3 minutes advertised).
+
+![](/img/v7u2-5.png)
+
+* Once the update is complete you should see the new version.
+
+![](/img/v7u2-6.png)
