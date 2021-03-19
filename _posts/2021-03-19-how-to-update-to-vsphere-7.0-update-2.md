@@ -19,7 +19,7 @@ VMware recently released **vSphere 7.0 Update 2**. It delivers a number of reall
 
 · vSAN 7.0 Update 2
 
-Refer to this blog I wrote for Altaro to find more detailed information about the release.
+Refer to this blog I wrote for Altaro to find more detailed information about the release (_Link not up yet_).
 
 ## Before upgrading
 
