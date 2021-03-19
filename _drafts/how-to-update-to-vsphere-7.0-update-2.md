@@ -23,7 +23,7 @@ Refer to my blog for Altaro to find more detailed information about the release.
 
 ## Caveat on vSphere 7.0 Update 2 update
 
-As of 19/03/2021, it is not possible to update to vSphere 7.0 Update 2 using either vLCM or esxcli. It has been pulled from the repo by VMware to address an issue discovered post release which would result in an error when trying to patch the host. 
+As of 19/03/2021, it is not possible to update to vSphere 7.0 Update 2 using either vLCM or esxcli. It has been pulled from the repo by VMware to address an issue discovered post release which would result in an error when trying to patch the host.
 
 > Cannot download VIB: ''. This might be because of network issues or the specified VIB does NOT exist or does NOT have a proper 'read' privilege set. Please make sure the specified VIB exists and is accessible from vCenter Server.
 
@@ -33,6 +33,6 @@ In the meantime it is still possible to update vSphere by booting the server on 
 
 ![](/img/v7u2.jpg)
 
-VMware is currently working on it and this blog will be updated accordingly.
+VMware is currently working on a patch and recommends to **NOT** upgrade to 7.0 U2 until this patch is available. This blog will be updated accordingly.
 
 ## How to update to vCenter 7.0 Update 2
