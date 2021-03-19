@@ -50,6 +50,8 @@ Before starting the update process, it is highly recommended to make sure you ca
 
 * If vCenter does not have internet access you need to download the patch on the [VMware Patch Download Center](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiL8ur1u7zvAhVL9IUKHRE4DckQFjAAegQIARAD&url=https%3A%2F%2Fmy.vmware.com%2Fgroup%2Fvmware%2Fpatch&usg=AOvVaw0rrH8ShNTJpCNFMMRton3o). Select **VC** with the latest version and click **Download**. On a side note, when you to update a product, make sure you get the "Patch-FP" iso.
 
+Note that you can specify a proxy server for internet access in the **Networking** pane
+
 ![](/img/v7u2-1.png)
 
 * First connect to the VAMI and browse to the Update 
