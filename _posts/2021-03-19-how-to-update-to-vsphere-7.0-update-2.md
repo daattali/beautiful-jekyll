@@ -7,7 +7,7 @@ metadescription: The latest vSphere 7.0 Update 2 brings a wealth of new features
   VSAN, vCenter and Tanzu.
 
 ---
-VMware recently released vSphere 7.0 Update 2. It delivers a number of really interesting features and improvements in terms of performance and LifeCycle management. Among the main features we find :
+VMware recently released **vSphere 7.0 Update 2**. It delivers a number of really interesting features and improvements in terms of performance and vSphere LifeCycle management. Among the main features we find :
 
 · Nvidia backed AI & Developer Ready Infrastructure
 
@@ -43,11 +43,11 @@ In the meantime it is still possible to do a fresh install or update by booting 
 
 ![](/img/v7u2.jpg)
 
-VMware is currently working on a patch and recommends to **NOT** upgrade to 7.0 U2 until this patch is available. This blog will be updated accordingly.
+**VMware is currently working on a patch and recommends to NOT upgrade to 7.0 U2 until this patch is available**. This blog will be updated accordingly.
 
 ## How to update to vCenter 7.0 Update 2
 
-While vSphere 7.0u2 is recovering from its hangover, vCenter 7.0 Update 2 is doing fine thank you very much. You can go ahead and patch vCenter.
+While vSphere 7.0u2 is recovering from its hangover, vCenter 7.0 Update 2 is doing fine thank you very much. So you can go ahead and patch it.
 
 Before starting the update process, it is highly recommended to make sure you can revert to the current version in case the update goes sideways. You can obviously take a backup of the VCSA in the VAMI or shut down the VM and take a snapshot.
 
@@ -55,7 +55,7 @@ Before starting the update process, it is highly recommended to make sure you ca
 
 ![](/img/v7u2-1.png)
 
-Once you have downloaded the ISO you have to mount it on the VCSA VM virtual CD drive.
+Once you have downloaded the ISO you have to mount it on the VCSA VM's virtual CD drive.
 
 * Then connect to the VAMI and browse to the Update pane, click **Check Update** and select one of the two according to whether the server has internet access or not.
 
