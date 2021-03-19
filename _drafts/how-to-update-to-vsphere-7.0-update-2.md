@@ -31,6 +31,8 @@ The following prerequisites and recommendations apply as usual. Make sure that:
 
 ## vSphere 7.0 Update 2 update : HOLD ON
 
+![](/img/v7u2-7.jpeg)
+
 As of 19/03/2021, it is not possible to update to vSphere 7.0 Update 2 using either vLCM or esxcli. It has been pulled from the repo by VMware to address an issue discovered post release which would result in an error when trying to patch the host.
 
 > Cannot download VIB: ''. This might be because of network issues or the specified VIB does NOT exist or does NOT have a proper 'read' privilege set. Please make sure the specified VIB exists and is accessible from vCenter Server.
