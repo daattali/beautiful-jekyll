@@ -49,3 +49,7 @@ remuse:
 Như ở trên có thể thấy Generator function có thể thực thi nhiều lần, nhìn thì giống như vòng lặp nhưng khác cái là có thể dừng lại và tiếp tục thực thi.
 Chúng ta sẽ găp nhiều Generator function trong Redux Saga - thư viện được sử dụng để xử lý các side effects trong redux.
 
+
+# Callback là gì?
+
+Nói một cách đơn giản: Callback là một hàm sẽ được thực hiện sau khi một hàm khác đã thực hiện xong - vì thế nó có tên là callback.
