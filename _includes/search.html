@@ -42,7 +42,7 @@
           "category" : "{{ post.tags | join: \', \' }}", \
           "url"      : "{{ site.baseurl }}{{ post.url }}", \
           "date"     : "{{ post.date | date: "%B %e, %Y" | default: "January 1, 1970" }}" \
-        } {% unless forloop.last %},{% endunless %} \
+        }, \
       {% endfor %} \
       {% for page in site.html_pages %}{% if page.title != "{title}" %} \
         { \
