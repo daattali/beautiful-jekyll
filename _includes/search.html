@@ -44,16 +44,14 @@
           "date"     : "{{ post.date | date: "%B %e, %Y" }}" \
         } {% unless forloop.last %},{% endunless %} \
       {% endfor %} \
-      {% for page in site.pages %} \
-      {% if page.title != '{title}' %} \
+      {% for page in site.html_pages %}{% if page.title != '{title}' %} \
         { \
           "title"    : "{% if page.title != "" %}{{ page.title | escape }}{% else %}{{ page.excerpt | strip_html |  escape | strip }}{% endif %}", \
           "category" : "{% if page.tags %}{{ page.tags | join: \', \' }}{% else %}page{% endif %}", \
           "url"      : "{{ site.baseurl }}{{ page.url }}", \
           "date"     : "{{ page.date | date: '%B %e, %Y' }}" \
         }{% unless forloop.last %},{% endunless %} \
-      {% endif %} \
-      {% endfor %} \
+      {% endif %}{% endfor %} \
     ]';
     searchjson = JSON.parse(searchjson);
 
