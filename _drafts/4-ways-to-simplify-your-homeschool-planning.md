@@ -18,7 +18,7 @@ share-img: ''
 redirect_from: []
 
 ---
-I'm a recovering major [overcomplicat-or](https://www.ivanbsignorelli.com.au/2017/03/18/110/), so through the years, I committed to finding ways to keep our homeschool planning simple, little by little. And today on the blog, I'm sharing five ways to keep homeschool planning simple for you too. I’ll also be sharing what my current homeschool planning method looks like as well if you'd like to read about that.
+I'm a recovering major [overcomplicat-or](https://www.ivanbsignorelli.com.au/2017/03/18/110/), so through the years, I committed to finding ways to keep our homeschool planning simple, little by little. And today on the blog, I'm sharing five ways to keep homeschool planning simple for you too. I’ll also be sharing what my current homeschool planning method looks like as well if you'd like to read about that too.
 
 ![A picture of my son's planning homeschool binder.](/uploads/1_20210324_053755_0000_compress69.jpg "4 Ways to Simplify Your Homeschool Planning SHM")
 
