@@ -53,5 +53,5 @@ pages:
 - _posts/2021-02-10-vsphere-7-clustered-vmdk-rdm-free-wsfc.md
 - _posts/2021-02-19-vcenter-7-update-1c-advanced-cross-vcenter-vmotion.md
 - _posts/2021-03-19-how-to-update-to-vsphere-7.0-update-2.md
-- _posts/how-to-use-postgresql-database-for-horizon-8-2103-events.md
+- _posts/2021-03-25-how-to-use-postgresql-database-for-horizon-8-2103-events.md
 - _posts/vmc-on-aws-network-connectivity-options.md

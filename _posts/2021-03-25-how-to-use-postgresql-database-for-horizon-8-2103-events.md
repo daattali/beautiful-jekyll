@@ -13,7 +13,7 @@ The benefits of using Postgres is that it is free, lightweight and very easy to 
 
 Do consider that if you are moving from a SQL server or Oracle DB, you will lose all past events. Unless you manage to migrate all the records to Postgres but I can't help you with that :).
 
-## Install and configure PostgreSQL
+## Installation and configuration of PostgreSQL
 
 Although it is not embedded in the installer like vCenter's vPostgres database, you will find that getting started with PostgreSQL is a lot easier than even Microsoft SQL Express.
 
@@ -74,3 +74,23 @@ The configuration of PostgreSQL is straightforward as you can see.
 Note that you can either enter the IPs one by one with a /32 netmask or specify a range like "_192.168.1.0/24_". Try and keep it as close to the Connection Servers' IP addresses as possible for security's sake.
 
 ![](/img/hzn2103-12.png)
+
+* Then restart the **postgres service**. If the service doesn't start it means you made a mistake in pg_hba.conf such as forgotten mask (yes I did it, so what?).
+
+![](/img/hzn2103-13.png)
+
+## Configuration in the Horizon console
+
+Now that the database is ready, we can log on the Horizon console and make the change. Let me remind you that all past events will be lost unless you somehow manage to migrate the records from the previous database to Postgres.
+
+* Head over to **Settings** > **Event Configuration** > **Event Database** and click **Edit**.
+
+![](/img/hzn2103-14.png)
+
+* Change the **Database Type** to **PostgreSQL**, set the **port** if you changed it, type **postgres** in the **Database Name** and **User Name** fields, type the **password** you entered during the installation and choose a **prefix** for the table, "_hz__" is as good as any. Then click **OK**.
+
+![](/img/hzn2103-15.png)
+
+* If everything is configured correctly you should now find the Database Configuration pane updated.
+
+![](/img/hzn2103-16.png)
