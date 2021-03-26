@@ -1,0 +1,3 @@
+ The Big Short by Michael Lewis: same author as The Blind Side and Moneyball.  
+
+This book is about the US financial collapse of 2008-2009.  It is a very gripping story of several individuals who discovered what was happening in the real estate market.  As they delve deeper into the mystery, their world's eventually collide when the recession hits.  Handsdown the best book I have ever read.  Not necessarily a how-to on investing, but a very good perspective on bubbles, financial tools, and the worst that can happen in this industry. 

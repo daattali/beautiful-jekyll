@@ -1,0 +1,1 @@
+ Never be your own critic. You are beautiful. 
