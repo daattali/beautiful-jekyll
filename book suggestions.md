@@ -1,6 +1,6 @@
 ---
 created: 2021-03-26T21:55:28+05:30
-modified: 2021-03-26T22:00:26+05:30
+modified: 2021-03-26T22:01:41+05:30
 type: Checklist
 ---
 
@@ -11,3 +11,4 @@ type: Checklist
 - [ ] The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results by Gary Keller
 - [ ] Blindness by Jose Saramago.
 - [ ] Invisible Monsters by Chuck Palahniuk
+- [ ] The Gulag Archipelago by Aleksandr Solzhenitsyn
