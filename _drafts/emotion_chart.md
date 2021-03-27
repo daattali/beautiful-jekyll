@@ -1,0 +1,3 @@
+ A chart for your emotions. My therapist sent me this, it's pretty cool :) 
+
+https://i.redd.it/ck2tdf87flj31.jpg

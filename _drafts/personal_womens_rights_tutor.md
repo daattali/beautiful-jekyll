@@ -1,0 +1,3 @@
+I'm bi, and same. It's right up there with "I'm tired of teaching Feminism for men 101 over and over and over...."
+
+I'm just tired of being treated as the personal civil rights tutor and extrapolated gender case study for a guy who can't listen to a women unless he's fucking her. 

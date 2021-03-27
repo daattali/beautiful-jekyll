@@ -1,1 +1,0 @@
- lol.. was about to crosspost it here. r/GetMotivated is a goldmine for twisted sheep fantasies. 

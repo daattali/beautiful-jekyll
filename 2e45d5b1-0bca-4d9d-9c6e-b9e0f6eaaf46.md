@@ -1,1 +1,0 @@
- Just another Google Sheets template to track all of your investments and savings 

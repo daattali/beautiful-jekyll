@@ -1,1 +1,0 @@
- I did a sorta venty comic about being aroace a while back, so I figured i might as well share it in honor of asexual awareness week. It's a bit more abstract than what I usually do so, uh, I hope you guys like it! 
