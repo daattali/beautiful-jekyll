@@ -1,0 +1,12 @@
+version: "3"
+services:
+  jekyll:
+    image: jekyll/jekyll
+    working_dir: /srv/jekyll
+    # Mount the repository as a Docker Volume so development changes
+    # are reflected immediately within the container
+    volumes:
+      - ./:/srv/jekyll:cached
+    ports:
+      - 4000:4000
+    command: sh -c "jekyll serve" 
