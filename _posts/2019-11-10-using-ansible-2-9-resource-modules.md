@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using Ansible 2.9 Resource Modules"
-tags: [Automation, Ansible]
+tags: [automation, ansible]
 readtime: true
 ---
 

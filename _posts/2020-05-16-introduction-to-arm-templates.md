@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Introduction to Azure Resource Manager (ARM) Templates"
-subtitle: Using ARM templates to automate Azure deployments
-tags: [ARM, Automation, Azure, Cloud]
+title: "Introduction to ARM Templates"
+subtitle: Using Azure Resource Manager to automate Cloud resources
+tags: [arm, automation, azure, cloud]
 readtime: true
 ---
 
