@@ -1,6 +1,6 @@
 ---
 created: 2021-03-26T21:55:28+05:30
-modified: 2021-03-26T22:02:05+05:30
+modified: 2021-03-28T07:27:07+05:30
 type: Checklist
 ---
 
@@ -69,7 +69,7 @@ type: Checklist
       - [ ]  Memory, Sorrow, and Thorn. It’s a little derivative, but it’s fantastically written. Winter is ever-present in the world, but the familiar story structure gives you a warm, cozy feeling. 
       - [ ] * Everything I Never Told You - Celeste Ng
            - [ ] * The Sun is Also a Star - Nicola Yoon
-            - [ ]* Aristotle and Dante Discover the Secrets of the Universe - Benjamin Alire Saenz
+            - [ ] * Aristotle and Dante Discover the Secrets of the Universe - Benjamin Alire Saenz
             - [ ] * Convenience Store Woman - Sayaka Murata
             - [ ] * Sweet Bean Paste - Durian Sukegawa 
       - [ ] Permission to Feel: Unlocking the Power of Emotions to Help Our Kids, Ourselves, and Our Society Thrive
@@ -90,6 +90,7 @@ type: Checklist
             - [ ] * * Burns' *Milkman* (2018).
             
             - [ ] * * Ellmann's *Ducks, Newburyport* (2019).
+- [ ] paradox of choice Barry schwartz
  1. Fool's Assassin & sequels by Robin Hobb (2014-2017)
 
 2. A Wise Man's Fear by Patrick Rothfuss (2011)
@@ -142,4 +143,4 @@ Nonfiction:
 
 2. Elements of Eloquence by Mark Forsyth (2013)
 
-3. Born a Crime by Trevor Noah (2016) 
+3. Born a Crime by Trevor Noah (2016)
