@@ -1,6 +1,6 @@
 ---
 created: 2021-03-27T23:53:24+05:30
-modified: 2021-03-28T07:36:15+05:30
+modified: 2021-03-28T07:36:28+05:30
 ---
 
 # blackface vs drag
@@ -58,7 +58,6 @@ as RuPaul says were born naked and then
 the rest is drag no one has ever said
 we're born naked and the rest is a
 minstrel show 
-
 
 that drag is an expression of yourself
 and blackface is an attack on someone
