@@ -1,6 +1,6 @@
 ---
 created: 2021-03-26T21:55:28+05:30
-modified: 2021-03-29T17:59:19+05:30
+modified: 2021-03-29T17:59:35+05:30
 type: Checklist
 ---
 
@@ -91,7 +91,7 @@ type: Checklist
             
             - [ ] * * Ellmann's *Ducks, Newburyport* (2019).
 - [ ] paradox of choice Barry schwartz
-- [ ] How many people can the earth support?
+- [ ] How many people can the earth support? Joel Cohen 
  1. Fool's Assassin & sequels by Robin Hobb (2014-2017)
 
 2. A Wise Man's Fear by Patrick Rothfuss (2011)
