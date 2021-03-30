@@ -4,10 +4,8 @@ subtitle: Microsoft Azure's command-line interface
 layout: post
 tags: [azure, cloud, automation, azure-cli]
 readtime: true
+before-content: old-post-warn.html
 ---
-{: .box-warning}
-**Warning:** This post is over a year old, and may not be up-to-date. Please read with its age in mind.
-
 One advantage of Cloud services being built in an _API-centric_ manner is that there are multiple different ways to interact with them, and **Microsoft Azure** is no exception. Whether instantiating services, gathering data, or ensuring compliance, a wealth of options are available for Microsoft Azure such as Vagrant, Terraform, PowerShell, and the Azure Portal.
 
 An example of such an option aimed at consumers and administrators more comfortable with a terminal is the **Azure CLI**, which this post will serve as a brief introduction to.

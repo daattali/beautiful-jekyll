@@ -7,12 +7,9 @@ readtime: true
 ---
 
 Automation is at the heart of everything that happens within the Public Cloud, and can be a big part of the value proposition for an organization's Cloud adoption. There are many benefits to automation, but one of the best initial use-cases is to achieve consistency when deploying resources, and reduce the opportunities for a human to reduce errors. As [Gregor Hohpe](https://architectelevator.com/) eloquently stated in his book [The Software Architect Elevator](https://www.amazon.ca/Software-Architect-Elevator-Redefining-Architects/dp/1492077542/), **Never send a human to do a machine's job**; therefore, standardizing our deployment process  can be a simple way to add value and attack some of the low-hanging fruit.
-<br>
-<br>
 
 > Never send a human to do a machine's job[^1] -- Gregor Hohpe
 
-<br>
 The wonderful thing about Public Cloud tooling is that there are so many options to choose from. The terrible thing about Public Cloud tooling is that _there are so many options to choose from_. Automation tools have become a bit like standards, in that there is always another springing up claiming to be the answer. In addition to it's native **Azure Resource Manager** (ARM), Microsoft Azure supports a number of automation tools as first-class citizens, such as the ever lovable [Ansible](https://docs.ansible.com/ansible/latest/scenario_guides/guide_azure.html)[^2], and more recently HashiCorp's [Terraform](https://www.terraform.io/docs/providers/azurerm/index.html)[^3].
 <br>
 <br>
@@ -45,7 +42,7 @@ When a deployment is performed using an ARM template, the template itself is con
 
 ### A Layer Deeper
 
-ARM templates are defined in easy to read JSON notation, and consist of a mixture of required and optional fields. Resources are declared within a JSON object, which is a dictionary of key-value pairs.
+ARM templates are defined in easy to read JSON notation, and consist of a mixture of required and optional fields. Resources are declared within a JSON object, which is a dictionary of _key:value_ pairs.
 
 ```json
 {
@@ -109,5 +106,3 @@ Azure Resource Manager and Azure Resource Manager Templates are a powerful tool 
 [^1]: [The Software Architect Elevator: Redefining the Architect's Role in the Digital Enterprise](https://www.amazon.ca/Software-Architect-Elevator-Redefining-Architects/dp/1492077542/)
 [^2]: [A great developer experience for Ansible](https://azure.microsoft.com/en-us/blog/a-great-developer-experience-for-ansible/)
 [^3]: [Announcing the Terraform AzureRM 2.0 Provider release](https://cloudblogs.microsoft.com/opensource/2020/03/02/announcing-the-terraform-azurerm-2-0-provider-release/)
-
-

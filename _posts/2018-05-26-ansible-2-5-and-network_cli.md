@@ -3,10 +3,8 @@ title: Ansible 2.5 and network_cli
 layout: post
 tags: [automation, ansible]
 readtime: true
+before-content: old-post-warn.html
 ---
-{: .box-warning}
-**Warning:** This post is over a year old, and may not be up-to-date. Please read with its age in mind.
-
 Red Hat recently released version 2.5 of Ansible Core, and with it comes a significant change to the connection method for Network devices, by way of the `network_cli` connection type. Up until now, Ansible playbooks used for managing Network devices utilised the connection type `local`, which required the creation of a _provider_. The provider is essentially a collection of authentication information that’s referenced in every task. Providers are unique to network modules, and create a framework to pass credentials to the managed device.
 
 For example, a simple playbook to gather facts from a network device and output to the terminal, **prior to version 2.5**:
