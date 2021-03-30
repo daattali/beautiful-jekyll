@@ -14,11 +14,16 @@ author: Robert Chambers
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  About: "aboutme"
+  Categories:
+    - Automation: "automation"
+    - Azure: "azure"
+    - Books: "books"
+    - Docker: "docker"
+    - PHP & Laravel: "laravel"
+    - Python: "python"
+
+  Archive: "tags"
 
 # --- Logo --- #
 
@@ -38,7 +43,7 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  #email: "someone@example.com"
   # facebook: deanattali
   github: MrThePlague
   twitter: mrtheplague
@@ -64,7 +69,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: Robert Chambers - [ Architecture, Networking, Cloud, Automation ]
 
 # --- General options --- #
 
