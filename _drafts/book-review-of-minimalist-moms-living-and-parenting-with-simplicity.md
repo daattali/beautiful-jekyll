@@ -31,24 +31,26 @@ Diane Boden's new book for minimalist moms gets an A+ from me. It was a quick re
 
 #### Aspects of Minimalist Moms: Living and Parenting with Simplicity that I really enjoyed and appreciated
 
-* Action steps you can take in your minimalist mom journey. Reading about theory on minimalism is great but having action steps to go hand in hand with that is even better, I think.
-* Ideas and perspectives from minimalist moms spread throughout the book. I loved hearing from other minimalist moms because it highlights how things can look differently for each mom.
+* Action steps you can take in your minimalist mom journey. Reading about [theory on minimalism](https://www.theminimalists.com/minimalism/) is great but having action steps to go hand in hand with that is even better, I think.
+* Ideas and perspectives from minimalist moms spread throughout the book. I loved hearing from [other minimalist moms](https://fourtolove.com/minimalist-lifestyle/) because it highlights how things can look differently for each mom.
 * Diane’s personal experience and background with many of the subjects. I really enjoyed how she wove in her own experiences and perspectives within the book here too.
 
-From the description:
+### What You Can Find in Minimalist Moms: Living and Parenting with Simplicity
 
-**Simple Minimalism for Your Family and Your Life A collection of daily wisdom, affirmations, and meditations that mothers can ruminate on as they go about their day to help them stay focused and inspired toward a minimalist lifestyle.**
+From the book's description:
 
-**Quick inspiration and wisdom to make minimalist living possible for your family.** Parenting is hard enough already without trying to change the way you live in one fell swoop. Diane Boden, the host of the Minimalist Moms podcast, knows that what busy moms desire is quick, daily inspiration and a reminder of the positive impact of minimalism and how to implement it right now. And, with her new book, she's here to deliver. _Minimalist Moms_ is a book of on-the-go minimalist wisdom, teaching busy parents how to embrace the core principles of a minimalist: simple living, focusing on what matters, and inner calm.
-
-**Thrive by living with less.** Minimalism is more of a way of life than a goal to be reached. We need little reminders to help keep perspective and focus on what's important to us. _Minimalist Moms_ helps busy moms who aspire toward minimalism to simplify their lives and homes. With daily meditations that take only a few minutes to read, this is the perfect, gentle guide to getting started.
-
-**In this book, find:**  
- Practical advice on how to live a minimalist lifestyle emotionally, physically, and mentally  
- Mantras that cover a range of topics, from slowing down and getting outside to habit stacking and decluttering  
- Accessible minimalism that is applicable to any lifestyle - and any mother
-
-**Readers of motivational books and minimalist books like _When Less Becomes More_, _Make Space_, or _Cozy Minimalist Home_ will love _Minimalist Moms_ .**
+> **Simple Minimalism for Your Family and Your Life A collection of daily wisdom, affirmations, and meditations that mothers can ruminate on as they go about their day to help them stay focused and inspired toward a minimalist lifestyle.**
+>
+> **Quick inspiration and wisdom to make minimalist living possible for your family.** Parenting is hard enough already without trying to change the way you live in one fell swoop. Diane Boden, the host of the Minimalist Moms podcast, knows that what busy moms desire is quick, daily inspiration and a reminder of the positive impact of minimalism and how to implement it right now. And, with her new book, she's here to deliver. _Minimalist Moms_ is a book of on-the-go minimalist wisdom, teaching busy parents how to embrace the core principles of a minimalist: simple living, focusing on what matters, and inner calm.
+>
+> **Thrive by living with less.** Minimalism is more of a way of life than a goal to be reached. We need little reminders to help keep perspective and focus on what's important to us. _Minimalist Moms_ helps busy moms who aspire toward minimalism to simplify their lives and homes. With daily meditations that take only a few minutes to read, this is the perfect, gentle guide to getting started.
+>
+> **In this book, find:**  
+>  Practical advice on how to live a minimalist lifestyle emotionally, physically, and mentally  
+>  Mantras that cover a range of topics, from slowing down and getting outside to habit stacking and decluttering  
+>  Accessible minimalism that is applicable to any lifestyle - and any mother
+>
+> **Readers of motivational books and minimalist books like _When Less Becomes More_, _Make Space_, or _Cozy Minimalist Home_ will love _Minimalist Moms _**
 
 And I had the privilege to interview Diane recently, too! In this video, we chat about 3 important tips for minimalist moms just starting out. Click on the video below to learn about these tips. Enjoy.
 
