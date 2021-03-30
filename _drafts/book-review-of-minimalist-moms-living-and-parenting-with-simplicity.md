@@ -21,7 +21,7 @@ redirect_from: []
 
 ---
 Minimalism as a mom. **Is it possible? How can it be done? How do you start?** [Diane Boden's](https://www.minimalistmomspodcast.com/about/) new book - _Minimalist Moms: Living and Parenting with Simplicity_  
-helps to answer these questions. I was sent an advance copy of her book, recently launched in March, and am sharing with you my honest thoughts on it below.
+helps to answer these questions. I was sent an advance copy of her book, recently launched in March, and today I'm sharing with you my book review of it.
 
 ## General review of Minimalist Moms: Living and Parenting with Simplicity
 
