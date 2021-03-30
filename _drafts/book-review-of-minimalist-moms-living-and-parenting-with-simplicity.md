@@ -27,7 +27,7 @@ General review of Minimalist Moms: Living and Parenting with Simplicity
 
 Diane Boden's new book for minimalist moms gets an A+ from me. It was a quick read full of practical advice, action steps, and encouragement. I found it easy to understand and particularly enjoyed how she gave actionable steps throughout the book. I enjoyed the other minimalist mom voices she used throughout as well. I would consider her book as almost a “guide” for minimalist moms on the minimalist journey and can see myself recommending this book for years to come.
 
-![A picture of the minimalist moms book.](/uploads/minimalist-moms-book-review-shm2.jpg "Minimalist Moms Book Review SHM")
+![](/uploads/minimalist-moms-book-review-blog-shm.jpg)
 
 Aspects of her book that I really enjoyed and appreciated:
 
@@ -54,6 +54,8 @@ From the description:
 
 And I had the privilege to interview Diane recently, too! In this video, we chat about 3 important tips for minimalist moms just starting out. Click on the video below to learn about these tips. Enjoy.
 
+POST IGTV...
+
 _"Diane Boden is the voice behind the top-rated podcast, Minimalist Moms, where she spreads her ideas and interviews others on living a life in pursuit of less. Her goal is simply this: think more and do with less. Diane has been a guest on Find the Magic, Millennial Minimalists, With Intention Podcast, and many others. She was featured in (614) Magazine in August 2019. She lives in Columbus, Ohio, with her husband and three children. You can also follow the podcast at @minimalistmomspodcast on Instagram or "like" the Minimalist Moms page on Facebook to get weekly motivation and encouragement. This is her first book."_
 
 RECAP:
@@ -63,6 +65,8 @@ In conclusion, I would recommend Minimalist Moms: Living and Parenting with Simp
 CTA:
 
 You can find Diane's book in my Amazon shop: US shop and Canadian shop.
+
+INPUT INSTA POST...
 
 **Other blogs of mine you may enjoy:**
 
