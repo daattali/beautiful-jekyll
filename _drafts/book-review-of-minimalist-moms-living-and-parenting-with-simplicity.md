@@ -20,16 +20,16 @@ share-img: ''
 redirect_from: []
 
 ---
-Minimalism as a mom. Is it possible? How can it be done? How do you start? Diane Boden's new book Minimalist Moms: Living and Parenting with Simplicity  
+Minimalism as a mom. **Is it possible? How can it be done? How do you start?** [Diane Boden's](https://www.minimalistmomspodcast.com/about/) new book - _Minimalist Moms: Living and Parenting with Simplicity_  
 helps to answer these questions. I was sent an advance copy of her book, recently launched in March, and am sharing with you my honest thoughts on it below.
 
-General review of Minimalist Moms: Living and Parenting with Simplicity
+## General review of Minimalist Moms: Living and Parenting with Simplicity
 
-Diane Boden's new book for minimalist moms gets an A+ from me. It was a quick read full of practical advice, action steps, and encouragement. I found it easy to understand and particularly enjoyed how she gave actionable steps throughout the book. I enjoyed the other minimalist mom voices she used throughout as well. I would consider her book as almost a “guide” for minimalist moms on the minimalist journey and can see myself recommending this book for years to come.
+Diane Boden's new book for minimalist moms gets an A+ from me. It was a quick read full of practical advice, action steps, and encouragement. I found it easy to understand and particularly enjoyed how she gave actionable steps throughout the book. I enjoyed the other minimalist mom voices she used throughout it as well. I would consider _Minimalist Moms: Living and Parenting with Simplicity_ as almost a guide for minimalist moms on the minimalist journey. I can see myself recommending this book for years to come.
 
 ![](/uploads/minimalist-moms-book-review-blog-shm.jpg)
 
-Aspects of her book that I really enjoyed and appreciated:
+#### Aspects of Minimalist Moms: Living and Parenting with Simplicity that I really enjoyed and appreciated
 
 · Action steps you can take in your minimalist mom journey. Reading about theory on minimalism is great but having action steps to go hand in hand with that is even better, I think.
 
