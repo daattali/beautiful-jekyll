@@ -52,11 +52,13 @@ From the book's description:
 >
 > **Readers of motivational books and minimalist books like _When Less Becomes More_, _Make Space_, or _Cozy Minimalist Home_ will love _Minimalist Moms _**
 
-And I had the privilege to interview Diane recently, too! In this video, we chat about 3 important tips for minimalist moms just starting out. Click on the video below to learn about these tips. Enjoy.
+And I had the privilege to interview [Diane Boden](https://www.instagram.com/diane_boden/) recently, too! In this video, we chat about 3 important tips for minimalist moms just starting out. Listen to the video below to learn about these tips.
 
-POST IGTV...
+**POST IGTV...**
 
-_"Diane Boden is the voice behind the top-rated podcast, Minimalist Moms, where she spreads her ideas and interviews others on living a life in pursuit of less. Her goal is simply this: think more and do with less. Diane has been a guest on Find the Magic, Millennial Minimalists, With Intention Podcast, and many others. She was featured in (614) Magazine in August 2019. She lives in Columbus, Ohio, with her husband and three children. You can also follow the podcast at @minimalistmomspodcast on Instagram or "like" the Minimalist Moms page on Facebook to get weekly motivation and encouragement. This is her first book."_
+I had the privelife of meeting Dinace with my interview....;laundry podcast link.
+
+_"Diane Boden is the voice behind the top-rated podcast,_ [_Minimalist Moms_]()_, where she spreads her ideas and interviews others on living a life in pursuit of less. Her goal is simply this: think more and do with less. Diane has been a guest on Find the Magic, Millennial Minimalists, With Intention Podcast, and many others. She was featured in (614) Magazine in August 2019. She lives in Columbus, Ohio, with her husband and three children. You can also follow the podcast at_ [_@minimalistmomspodcast_](www.instagram.com/minimalistmomspodcast) _on Instagram or "like" the_ [_Minimalist Moms page on Facebook_](https://www.facebook.com/minimalistmomspodcast) _to get weekly motivation and encouragement. This is her first book."_
 
 RECAP:
 
@@ -68,7 +70,7 @@ You can find Diane's book in my Amazon shop: US shop and Canadian shop.
 
 INPUT INSTA POST...
 
-**Other blogs of mine you may enjoy:**
+**Other blogs and of mine you may enjoy:**
 
 # [How to Start Minimalism with these Two Steps](https://www.simplehomemom.com/how-to-start-minimalism-with-these-two-steps/)
 
