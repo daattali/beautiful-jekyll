@@ -54,26 +54,24 @@ From the book's description:
 
 And I had the privilege to interview [Diane Boden](https://www.instagram.com/diane_boden/) recently, too! In this video, we chat about 3 important tips for minimalist moms just starting out. Listen to the video below to learn about these tips.
 
-**POST IGTV...**
+***
 
-I had the privelife of meeting Dinace with my interview....;laundry podcast link.
+\****POST IGTV...**
+
+#### Who is Diane Boden?
 
 _"Diane Boden is the voice behind the top-rated podcast,_ [_Minimalist Moms_]()_, where she spreads her ideas and interviews others on living a life in pursuit of less. Her goal is simply this: think more and do with less. Diane has been a guest on Find the Magic, Millennial Minimalists, With Intention Podcast, and many others. She was featured in (614) Magazine in August 2019. She lives in Columbus, Ohio, with her husband and three children. You can also follow the podcast at_ [_@minimalistmomspodcast_](www.instagram.com/minimalistmomspodcast) _on Instagram or "like" the_ [_Minimalist Moms page on Facebook_](https://www.facebook.com/minimalistmomspodcast) _to get weekly motivation and encouragement. This is her first book."_
 
-RECAP:
+**On a personal note, I had the privelege and pleasure of connecting with Diane last year where we talked about** [**simplifying laundry**](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)**. You can listen to that podcast** [**HERE**](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)**.**
 
-In conclusion, I would recommend Minimalist Moms: Living and Parenting with Simplicity - most especially to moms who may not know where to start or how to continue along the minimalist journey. I enjoyed Diane’s gentle, yet practical take on minimalism as a mom.
+#### Conclusion of my book review of Minimalist Moms: Living and Parenting with Simplicity
 
-CTA:
-
-You can find Diane's book in my Amazon shop: US shop and Canadian shop.
-
-INPUT INSTA POST...
+And. In conclusion, I would recommend _Minimalist Moms: Living and Parenting with Simplicity_ - most especially to moms who may not know where to start or how to continue along the minimalist journey. I enjoyed Diane’s gentle, yet practical take on minimalism as a mom. **You can find Diane's book in my Amazon shop:** [**US shop**](www.amazon.com/shop/simplehomemom) **and** [**Canadian shop**](www.amazon.ca/shop/simplehomemom)**.**
 
 **Other blogs and of mine you may enjoy:**
 
-# [How to Start Minimalism with these Two Steps](https://www.simplehomemom.com/how-to-start-minimalism-with-these-two-steps/)
+[How to Start Minimalism with these Two Steps](https://www.simplehomemom.com/how-to-start-minimalism-with-these-two-steps/)
 
-# [One Must Know Tip for Starting Minimalism as a Family](https://www.simplehomemom.com/one-tip-for-starting-minimalism-as-a-family/)
+[One Must Know Tip for Starting Minimalism as a Family](https://www.simplehomemom.com/one-tip-for-starting-minimalism-as-a-family/)
 
-# [Five Simple Ways to Get Your Kids on Board with Minimalism](https://www.simplehomemom.com/five-simple-ways-to-get-your-kids-on-board-with-minimalism/)
+[Five Simple Ways to Get Your Kids on Board with Minimalism](https://www.simplehomemom.com/five-simple-ways-to-get-your-kids-on-board-with-minimalism/)
