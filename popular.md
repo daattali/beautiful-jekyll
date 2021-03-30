@@ -18,6 +18,7 @@ subtitle: ''
 * [Throw Out the Cleaning Routine and Try This Instead + fill out your master cleaning tasks in the free master task list printable](https://www.simplehomemom.com/throw-out-the-cleaning-routine-and-try-this-instead/)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
 * [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
+* [How to Do a Zero Spend Month that Works For You + a plan your zero spend month freebie](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
 
 ## Homeschooling
 
@@ -29,7 +30,7 @@ subtitle: ''
 
 * [Keeping it simple: an intverview with Kelly](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761)
 * [Simplify Your Laundry Routine with Kelly Briggs](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)
-* [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/) 
+* [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
 
 ## Other
 
