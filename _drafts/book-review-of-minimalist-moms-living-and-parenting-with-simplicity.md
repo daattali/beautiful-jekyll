@@ -25,17 +25,15 @@ helps to answer these questions. I was sent an advance copy of her book, recentl
 
 ## General review of Minimalist Moms: Living and Parenting with Simplicity
 
-Diane Boden's new book for minimalist moms gets an A+ from me. It was a quick read full of practical advice, action steps, and encouragement. I found it easy to understand and particularly enjoyed how she gave actionable steps throughout the book. I enjoyed the other minimalist mom voices she used throughout it as well. I would consider _Minimalist Moms: Living and Parenting with Simplicity_ as almost a guide for minimalist moms on the minimalist journey. I can see myself recommending this book for years to come.
+Diane Boden's new book for minimalist moms gets an A+ from me. It was a quick read full of practical advice, action steps, and encouragement. I found it easy to understand and particularly enjoyed how she gave actionable steps throughout the book. I enjoyed the other minimalist mom voices she used throughout it as well. I would consider _Minimalist Moms: Living and Parenting with Simplicity_ as almost [a guide for minimalist moms](https://www.becomingminimalist.com/minimalism-for-moms/) on the minimalist journey. I can see myself recommending this book for years to come.
 
-![](/uploads/minimalist-moms-book-review-blog-shm.jpg)
+![A blog image of the book and title.](/uploads/minimalist-moms-book-review-blog-shm.jpg "Book Review of Minimalist Moms: Living and Parenting with Simplicity")
 
 #### Aspects of Minimalist Moms: Living and Parenting with Simplicity that I really enjoyed and appreciated
 
-· Action steps you can take in your minimalist mom journey. Reading about theory on minimalism is great but having action steps to go hand in hand with that is even better, I think.
-
-· Ideas and perspectives from minimalist moms spread throughout the book. I loved hearing from other minimalist moms because it highlights how things can look differently for each mom.
-
-· Diane’s personal experience and background with many of the subjects. I really enjoyed how she wove in her own experiences and perspectives within the book here too.
+* Action steps you can take in your minimalist mom journey. Reading about theory on minimalism is great but having action steps to go hand in hand with that is even better, I think.
+* Ideas and perspectives from minimalist moms spread throughout the book. I loved hearing from other minimalist moms because it highlights how things can look differently for each mom.
+* Diane’s personal experience and background with many of the subjects. I really enjoyed how she wove in her own experiences and perspectives within the book here too.
 
 From the description:
 
