@@ -24,7 +24,7 @@ redirect_from: []
 
 ---
 Minimalism as a mom. **Is it possible? How can it be done? How do you start?** [Diane Boden's](https://www.minimalistmomspodcast.com/about/) new book - _Minimalist Moms: Living and Parenting with Simplicity_  
-helps to answer these questions. I was sent an advance copy of her book, recently launched in March, and today I'm sharing with you my book review of it.
+helps to answer these questions. I was sent an advance copy of her book, recently launched in March, and today I'm sharing my book review of it with you.
 
 ## General review of Minimalist Moms: Living and Parenting with Simplicity
 
@@ -55,7 +55,7 @@ From the book's description:
 >
 > **Readers of motivational books and minimalist books like _When Less Becomes More_, _Make Space_, or _Cozy Minimalist Home_ will love _Minimalist Moms _**
 
-And I had the privilege to interview [Diane Boden](https://www.instagram.com/diane_boden/) recently, too! In this video, we chat about 3 important tips for minimalist moms just starting out. Listen to the video below to learn about these tips.
+##### I had the privilege to interview [Diane Boden](https://www.instagram.com/diane_boden/) recently, too! In this video, we chat about 3 important tips for minimalist moms just starting out. Listen to the video below to learn about these tips.
 
 ***
 
@@ -65,11 +65,13 @@ And I had the privilege to interview [Diane Boden](https://www.instagram.com/dia
 
 _"Diane Boden is the voice behind the top-rated podcast,_ [_Minimalist Moms_]()_, where she spreads her ideas and interviews others on living a life in pursuit of less. Her goal is simply this: think more and do with less. Diane has been a guest on Find the Magic, Millennial Minimalists, With Intention Podcast, and many others. She was featured in (614) Magazine in August 2019. She lives in Columbus, Ohio, with her husband and three children. You can also follow the podcast at_ [_@minimalistmomspodcast_](www.instagram.com/minimalistmomspodcast) _on Instagram or "like" the_ [_Minimalist Moms page on Facebook_](https://www.facebook.com/minimalistmomspodcast) _to get weekly motivation and encouragement. This is her first book."_
 
-**On a personal note, I had the privilege and pleasure of connecting with Diane last year where we talked about** [**simplifying laundry**](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)**. You can listen to that podcast** [**HERE**](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)**.**
+I also had the pleasure of connecting with Diane last year where we talked about [simplifying laundry](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/). You can listen to that podcast [HERE](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/) and read my blog on it here: [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/).
 
 #### Conclusion of my book review of Minimalist Moms: Living and Parenting with Simplicity
 
-And. In conclusion, I would recommend _Minimalist Moms: Living and Parenting with Simplicity_ - most especially to moms who may not know where to start or how to continue along the minimalist journey. I enjoyed Diane’s gentle, yet practical take on minimalism as a mom. **You can find Diane's book in my Amazon shop:** [**US shop**](www.amazon.com/shop/simplehomemom) **and** [**Canadian shop**](www.amazon.ca/shop/simplehomemom)**.**
+In conclusion, I would recommend _Minimalist Moms: Living and Parenting with Simplicity_ - most especially to moms who may not know where to start or how to continue along the minimalist journey. I enjoyed Diane’s gentle, yet practical take on minimalism as a mom. 
+
+**You can find Diane's book in my Amazon shop:** [**US shop**](www.amazon.com/shop/simplehomemom) **and** [**Canadian shop**](www.amazon.ca/shop/simplehomemom)**.**
 
 **Other blogs and of mine you may enjoy:**
 
