@@ -1,4 +1,8 @@
- **As a tour guide in Paris, here's my time to shine and help you save time and money**:  
+---
+modified: 2021-03-31T23:58:46+05:30
+---
+
+**As a tour guide in Paris, here's my time to shine and help you save time and money**:  
 Avoid Paris In June and July, August. September is best, May comes in second.    
 ALWAYS, always book your skip-the-line tickets online before going to a landmark. Nothing in Paris is worth waiting 3 hours in line. Instead, go drink some wine and eat some cheese + baguette in a nice park or by the river.
 
@@ -12,7 +16,7 @@ Also, Louvre has Night Openings on Fridays till 21.45. Avoid the crowds.
 
 - **Orsay**: it's awesome, but not worth standing in line for up to 90 min in June. Buy the skip the line. Better with a guide but not as critical as in the Louvre. Audio guide available. Orsay has night openings on Wednesdays till 21.45. Same.
 
-- **Catacombs**: BUY THE SKIP THE LINE! I adore the catacombs tour - in fact it's my favorite to give - but nothing down there is worth waiting 2 hours in line. Also, if you get a guide, you get access to a VIP section with cool carvings and a chapel. Audio guide is option #2
+- **Catacombs**: BUY THE SKIP THE LINE! I adore the catacombs tour - in fact it's my favorite to give - but nothing down there is worth waiting 2 hours in line. Also, if you get a guide, you get access to a VIP section with cool carvings and a chapel. Audio guide is option 2
 
 - **Invalids + war museum**: only worth it if you love Napoleon stuff and/or War history. There's a lot of that. No need to buy skip the line as the museum is almost always empty.
 
@@ -28,7 +32,7 @@ They also have ballets and they sell last minute tickets for people on a budget.
   
 - **Père Lachaise cemetery**: Yes, you should see it - and not just for Jim Morrison's grave - but I say book yourself a tour since you will get so much more out of it and you will more easily find what you are looking for. Some are even free. This is so much more than a cemetery. I love to hang out there on sunny days since it's so peaceful. The official website has a map with GPS coordinates. It is much more useful than any of the paper maps I have ever seen of the cemetery.
 
-- **Notre-Dame**: 😢
+- **Notre-Dame**: :cry:
 
 - **Sainte-Chapelle**: Absolutely worth it but the lines can be huge in June: BUY THE SKIP THE LINE. Most beautiful stained glass windows in Paris.
 
@@ -74,4 +78,4 @@ Same is true for the Metro: get yourself a metro card (Paris visit pass) and sav
 Check out [this website](https://www.sortiraparis.com/lang/en) (partially in EN, mostly in FR) for what to do in Paris.
 
 **AMA**  
-EDIT: Thanks for the gold, Silver and all the nice messages everyone! 
+EDIT: Thanks for the gold, Silver and all the nice messages everyone!
