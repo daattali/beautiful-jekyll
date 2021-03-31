@@ -1,3 +1,7 @@
+---
+modified: 2021-03-31T23:59:03+05:30
+---
+
 1. Try sleeping at the same time every night - This habit enable you to fall asleep faster and wake up at the same time like clockwork, all subconsciously. Back when I had a daily schedule, I didn’t need to set an alarm anymore.
 
 2. Do the most difficult thing first - This could be at the start of your day, the beginning of a project, or first hour of your study session. After completing this task, you’ll have not only done something meaningful with your day but you’ll feel the momentum carry through to other tasks.
@@ -50,7 +54,7 @@
 
 26. Split up your workload and tackle it chunk by chunk - This helps with procrastination as well as being organised. Massive projects and undertakings often are daunting and require more than willpower to tackle. Splitting it up into chunks not only makes things more digestible, but it also give you a sense of progress.
 
-27. Verbalise a problem that you’re struggling with - Either to a friend, co-worker or to yourself. When you start explaining your problem, there’s a good chance that you’ll work it out. The amount of times that the answer has just been staring at me is too high to count. #RubberDuckDebugging
+27. Verbalise a problem that you’re struggling with - Either to a friend, co-worker or to yourself. When you start explaining your problem, there’s a good chance that you’ll work it out. The amount of times that the answer has just been staring at me is too high to count. RubberDuckDebugging
 
 28. Bundle your social media distractions - Similar to designating hours for tasks like emails. If you designate a time in the day to consume Instagram, Facebook and Twitter, you’ll be less distracted by every notification that comes in. An experiment I conducted earlier last year was to delete every social media app from my phone that had a desktop alternative, this worked quite nicely albeit less convenient. I now use well-being features available in the latest iOS and Android updates.
 
