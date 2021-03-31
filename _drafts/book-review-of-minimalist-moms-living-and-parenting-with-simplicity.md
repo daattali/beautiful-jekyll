@@ -59,8 +59,6 @@ From the book's description:
 
 ***
 
-\****POST IGTV...**
-
 #### Who is Diane Boden?
 
 _"Diane Boden is the voice behind the top-rated podcast,_ [_Minimalist Moms_]()_, where she spreads her ideas and interviews others on living a life in pursuit of less. Her goal is simply this: think more and do with less. Diane has been a guest on Find the Magic, Millennial Minimalists, With Intention Podcast, and many others. She was featured in (614) Magazine in August 2019. She lives in Columbus, Ohio, with her husband and three children. You can also follow the podcast at_ [_@minimalistmomspodcast_](www.instagram.com/minimalistmomspodcast) _on Instagram or "like" the_ [_Minimalist Moms page on Facebook_](https://www.facebook.com/minimalistmomspodcast) _to get weekly motivation and encouragement. This is her first book."_
