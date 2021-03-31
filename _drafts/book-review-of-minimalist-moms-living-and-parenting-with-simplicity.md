@@ -8,6 +8,7 @@ tags:
 - book reviews
 - minimalist mom
 - tips for minimalist moms
+- new minimalist moms
 thumbnail-img: "/uploads/minimalist-moms-book-review-shm2.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
