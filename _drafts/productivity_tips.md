@@ -1,6 +1,8 @@
 ---
-modified: 2021-03-31T23:59:03+05:30
+modified: 2021-04-01T00:01:15+05:30
 ---
+
+#productivity
 
 1. Try sleeping at the same time every night - This habit enable you to fall asleep faster and wake up at the same time like clockwork, all subconsciously. Back when I had a daily schedule, I didn’t need to set an alarm anymore.
 
