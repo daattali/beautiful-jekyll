@@ -65,7 +65,7 @@ And I had the privilege to interview [Diane Boden](https://www.instagram.com/dia
 
 _"Diane Boden is the voice behind the top-rated podcast,_ [_Minimalist Moms_]()_, where she spreads her ideas and interviews others on living a life in pursuit of less. Her goal is simply this: think more and do with less. Diane has been a guest on Find the Magic, Millennial Minimalists, With Intention Podcast, and many others. She was featured in (614) Magazine in August 2019. She lives in Columbus, Ohio, with her husband and three children. You can also follow the podcast at_ [_@minimalistmomspodcast_](www.instagram.com/minimalistmomspodcast) _on Instagram or "like" the_ [_Minimalist Moms page on Facebook_](https://www.facebook.com/minimalistmomspodcast) _to get weekly motivation and encouragement. This is her first book."_
 
-**On a personal note, I had the privelege and pleasure of connecting with Diane last year where we talked about** [**simplifying laundry**](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)**. You can listen to that podcast** [**HERE**](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)**.**
+**On a personal note, I had the privilege and pleasure of connecting with Diane last year where we talked about** [**simplifying laundry**](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)**. You can listen to that podcast** [**HERE**](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)**.**
 
 #### Conclusion of my book review of Minimalist Moms: Living and Parenting with Simplicity
 
