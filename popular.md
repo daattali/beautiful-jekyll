@@ -14,8 +14,8 @@ subtitle: ''
 ## Popular blogs
 
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
+* [Book Review of Minimalist Moms: Living and Parenting with Simplicity + bonus video interview with Diane Boden: 3 important tips for minimalist moms just starting out](https://www.simplehomemom.com/book-review-of-minimalist-moms-living-and-parenting-with-simplicity/)
 * [Digital declutter challenge](https://www.simplehomemom.com/3-steps-to-start-tackling-your-digital-clutter/)
-* [Throw Out the Cleaning Routine and Try This Instead + fill out your master cleaning tasks in the free master task list printable](https://www.simplehomemom.com/throw-out-the-cleaning-routine-and-try-this-instead/)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
 * [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 * [How to Do a Zero Spend Month that Works For You + a plan your zero spend month freebie](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
