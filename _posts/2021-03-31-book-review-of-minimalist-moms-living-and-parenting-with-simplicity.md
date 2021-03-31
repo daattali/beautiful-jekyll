@@ -71,7 +71,7 @@ I also had the pleasure of connecting with Diane last year where we talked about
 
 In conclusion, I would recommend _Minimalist Moms: Living and Parenting with Simplicity_ - most especially to moms who may not know where to start or how to continue along the minimalist journey. I enjoyed Diane’s gentle, yet practical take on minimalism as a mom.
 
-**You can find Diane's book in my Amazon shop:** [**US shop**](www.amazon.com/shop/simplehomemom) **and** [**Canadian shop**](www.amazon.ca/shop/simplehomemom)**.**
+**You can find Diane's book in my Amazon shop:** [**US shop**](https://www.amazon.com/shop/simplehomemom) **and** [**Canadian shop**](https://www.amazon.ca/shop/simplehomemom)**.**
 
 **Other blogs and of mine you may enjoy:**
 
