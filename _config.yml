@@ -22,7 +22,6 @@ navbar-links:
     - Docker: "docker"
     - PHP & Laravel: "laravel"
     - Python: "python"
-
   Archive: "tags"
 
 # --- Logo --- #
@@ -82,7 +81,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "mrtheplague.ca"
+url-pretty: "robertchambers.co"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
