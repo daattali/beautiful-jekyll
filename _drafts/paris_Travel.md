@@ -1,8 +1,11 @@
 ---
-modified: 2021-03-31T23:58:46+05:30
+modified: 2021-04-01T00:02:02+05:30
 ---
 
-**As a tour guide in Paris, here's my time to shine and help you save time and money**:  
+# Paris travel
+
+#travel #paris
+As a tour guide in Paris, here's my time to shine and help you save time and money**:  
 Avoid Paris In June and July, August. September is best, May comes in second.    
 ALWAYS, always book your skip-the-line tickets online before going to a landmark. Nothing in Paris is worth waiting 3 hours in line. Instead, go drink some wine and eat some cheese + baguette in a nice park or by the river.
 
