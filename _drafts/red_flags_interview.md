@@ -1,7 +1,6 @@
 ---
-created: 2021-04-01T18:06:24+05:30
-modified: 2021-04-01T18:07:11+05:30
 tags: [work]
+modified: 2021-04-01T20:29:06+05:30
 ---
 
  What are some smart questions to ask about the team/company to reveal any red flags? 
@@ -42,7 +41,7 @@ Joel test.
 
 Extract info on turnover rate.
 
-Median time manager and other team members have been there and also longest and shortest time. Same for other team’s members doing similar function to you there. Average is sensitive to outliers, just a quick median and average can give you a slight idea. If I had to choose one I’d take median. I’d rather be on a team where 5 people of equal rank have been there 5 years each +/- 1 year averaging 5 years on the job, than a team where 4 people have been there less than 2 years each and one person has been there 19 years of the same rank. Average can hide this.
+Median time manager and other team members have been there and also longest and shortest time. Same for other team’s members doing similar function to you there. Average is sensitive to outliers, just a quick median and average can give you a slight idea. If I had to choose one I’d take median. I’d rather be on a team where 5 people of equal rank have been there 5 years each /- 1 year averaging 5 years on the job, than a team where 4 people have been there less than 2 years each and one person has been there 19 years of the same rank. Average can hide this.
 
 Get evidence of what the actual stack they are using is and if that’s the actual stack your team is using.
 
