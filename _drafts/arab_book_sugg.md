@@ -1,3 +1,8 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [books]
+---
  List of novels made by Middle-Eastern/MENA/Muslim/Arab authors (or those that have are written with those backgrounds/themes/religions/cultures/etc. in mind)/ Or: a list of novels and authors that I found throughout the net that I cobbled together to be further investigated for myself... 
  
  Salt Houses by Hala Alyan

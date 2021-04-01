@@ -2,6 +2,7 @@
 created: 2021-03-26T21:55:28+05:30
 modified: 2021-03-29T17:59:35+05:30
 type: Checklist
+tags: [books]
 ---
 
 # book suggestions

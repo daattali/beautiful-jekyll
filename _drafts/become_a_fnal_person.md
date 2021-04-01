@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [productivity]
+---
+
  My Ultimate ADHD/Autism "Become a Functional Person" Productivity Cheatsheet 
  
      I literally can't even tell what I'm feeling righ now": Like the right-below-mentioned mindmap app, but this time on a scrap paper. Instead of actively trying to make a structured map or to figure out "what to do next", I just write absolute nonsense onto a shitty scrap of paper I know I'll throw out. I'll write things like "I feel hungry." and then realize I'm actually hungry and that's why I can't think for shit. Or "Debra still needs to email me her reply" and just voicing that helps give that cycling thought an outlet, so I can move on and focus on something else. I like keeping a big scrappy "school-workbook" to a college I never went to, as I can write/doodle in it without worrying about making something nice-looking. It's the unfiltered braindump recepticle.

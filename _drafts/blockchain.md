@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [tech]
+---
+
  I feel qualified to answer this question. I've been working with blockchain for two years whether making architectural decisions, using API or coding hands-on. 
 
 I've worked with Ethereum, a permissionless blockchain. And I am currently working with Hyperledger Fabric, a permissioned distributed ledger.

@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [books]
+---
+
  My Professor created a Guitar Hero-esque "Set-list" of Essential Books that get more difficult as you progress (recently deleted from r/Books) 
  
  Level 0 (Warmup)
