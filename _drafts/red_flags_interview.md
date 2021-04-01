@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [work]
+---
+
  What are some smart questions to ask about the team/company to reveal any red flags? 
  
  "If there is one thing you could change about your team/work/company, what would it be". / Where do you think you can improve the most (as a company)?”

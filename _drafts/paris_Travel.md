@@ -1,5 +1,6 @@
 ---
 modified: 2021-04-01T00:02:26+05:30
+tags: [travel]
 ---
 
 # Paris travel

@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [tech]
+---
+
  For anyone who may not know the acronyms:
 
 [Elements of Statistical Learning by Hastie, Tibshirani, and Friedman](http://web.stanford.edu/~hastie/ElemStatLearn/)

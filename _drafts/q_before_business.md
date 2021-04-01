@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [tech]
+---
+
  42 Questions to Ask Before Starting a Business 
  https://www.preetamnath.com/micro-saas
  Through a series of prompts, this post is designed to help you ask the most important questions you need to answer when starting a business.

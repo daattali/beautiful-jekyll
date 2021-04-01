@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [feminism]
+---
+
  I think the answer to this depends on what you mean. 
 
 Feminism is a sociological framework/philosophy with a lot of academic discussion and literature surrounding it. It had existed for a long period of time and has thus developed and worked through a lot of different means through which to address social issues, lobby for change, protest, and revolt (unlike other movements like Egalitarianism, which seem to exist in name only with little movement supporting it). Therefore, feminism can be a lens through which to analyze social problems and enact social change. 

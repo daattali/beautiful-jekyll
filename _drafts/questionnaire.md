@@ -1,6 +1,7 @@
 ---
 created: 2021-02-27T20:36:49+05:30
 modified: 2021-02-27T20:37:23+05:30
+tags: [feminism]
 ---
 
 # questionnaire

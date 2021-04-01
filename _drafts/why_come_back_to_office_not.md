@@ -1,3 +1,10 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [work]
+---
+
+
  This is further up the leadership chain than your average Engineering Manager.  
 Most of my EM friends HATE forcing their engineers to come in.  
 Usually some C-level douche-bro wants to walk around their office and see hundreds of faced "wired in" so they feel like they're always making money.  

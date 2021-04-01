@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [work]
+---
+
  The game exists, and if you fight it you lose. So play the game.
  
 The first step is networking. Go to industry events, conferences, talks, etc. Meet people, head down to the pub with them and talk shop, grab a coffee and make connections (flavoured liquids quite literally run this planet and have done for millenia).

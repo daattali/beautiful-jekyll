@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-dev]
+---
+
  I'm also 100% the kind of person who tends towards solitude.  I used to tell my husband all the time that I simply have close to zero social drive.  I feel driven to spend time with one person, that's it.  I never feel lonely, and I have always felt content with my life independent of the size of my social circle.  It's like if people were food, I could eat the same thing every day and I get no joy out of eating other food, so I don't seek it out.  Seeking it out is a lot of work.
 
 Here is the danger in resigning yourself to the smallest social network possible:  you don't realize what you need other people for until something catastrophic happens.

@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [feminism]
+---
+
  I have an anecdote of the more subtle form of sexism that I would guess you've experienced without realizing. I'm copying the text from a post I've made previously before:
 
 STEM is hard. (Arguably, everything is hard.) For any person studying STEM, regardless of gender, they will reach a point where STEM is so hard that will become frustrated with it and question whether or not they want to continue doing it. A major difference between the two genders is how they have been socialized and/or positioned to deal with this situation. If you have learned, either explicitly or implicitly, that people like you aren't good at a certain thing, you'll be more likely to give up when things get tough. If you also don't have the support structure to help get you through this, you'll be more likely to give up.

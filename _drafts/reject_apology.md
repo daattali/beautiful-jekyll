@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-dev]
+---
+
  You aren't the bad person. The other person is admitting they wronged you. You can stand up and say this:
 
 * "Thank you for your apology. I appreciate it. I also **do not forgive you**. You have done the same wrong against me over and over and your wrongs have grown in intensity and audacity. I will no longer validate your wish for reconciliation because you're only going to betray our relationship or disrespect me again. BYE."

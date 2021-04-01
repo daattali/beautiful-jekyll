@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [recipe]
+---
+
  Two things, depending on the kind of dinner they'll be following: light and resfreshing [vegan lemon bars](http://www.savvyvegetarian.com/vegetarian-recipes/vegan-lemon-bars.php)-- I always use a *generous* amount of lemon juice, a bit more than the recipe calls for, and my fluffy, rich-tasting black magic cake.
 
 **Black magic cake**

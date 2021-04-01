@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [psych]
+---
+
  [Psychological First Aid Online](https://learn.nctsn.org/enrol/index.php?id=38). Free, about six hours long. Hosted by the National Child Traumatic Stress Network and promoted by the U.S. Department of Veterans Affairs. 
 
 You learn how to help disaster survivors get referenced to the professionals they need and how to triage those with more damaging psychological distress before it gets worse. Learn the signs, symptoms, etc., and know where to forward the survivors to the proper agencies. Additionally there are some things on how to secure relief sites in consideration for physical and mental health.

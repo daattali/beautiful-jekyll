@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [work]
+---
+
  You're in a toxic environment.  Full stop.  Your office is full of insensitive, rude, thoughtless people.
 
 You are not imagining things.  You're not crazy.
@@ -22,4 +28,3 @@ Get yourself into a better situation.  You'll be glad you did.  I wish someone h
 
 Good luck.
 
- 

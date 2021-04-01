@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-de ]
+---
+
  I was in last sem of my engineering and was doing an internship in Coimbatore this March. My friend's dad who works higher up in UP govt, strictly called him back citing covid (this was 15th March, around 300 cases in India) to his home in Gorakhpur and booked his next day flight ticket.
 
 I felt that was just reckless to leave internship in the middle and go back to hometown due to something that seemed so trivial at that time, there were hardly more than 300 cases throughout india, my friend said that there's gonna be a strict lockdown with transportation shut down in coming few weeks, while I was thinking pragmatically, I couldn't fathom govt shutting down railways and airlines, even then that was too stupid and moronic for me. 

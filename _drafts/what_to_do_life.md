@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-dev]
+---
+
  >Right now, I'm almost 26 and I have no family, no girlfriend, barely any friends since I moved to this huge city (Toronto). My job pays horribly and the life I imagined I'd have now is not what it is. 
 
 I'll say right upfront that *it's okay to not have all the answers*; and that it's okay to keep looking for answers.

@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [philosophy]
+---
+
  Fodder 'n' Frivolities: A Complaint Against Spectacle Society (essay linked from Blogger) 
  
      01) "How do our allegedly rational and programmed societies function? What moves the populations, what gets them going? Scientific progress, objective information, insight into the facts and causes, the punishment of those truly guilty or the growth of collective happiness? Absolutely not, nobody cares about that. What fascinates everyone is the debauchery of appearances, that reality is always and everywhere debauched by appearances. That's an interesting game, and it's played out in the media, in fashion, in advertising - more generally in the spectacle of technology, of science, of politics - in any spectacle whatsoever. The veritable contemporary social bond is the concerted partaking in seduction. If a revolution wants to take place then it must first seduce us, and it can only do so with the signs. But while a revolution might alter the course of history, only its sight is truly sublime. And what do we choose? 'The people didn't actually desire a revolution, they merely desired its view,' said Rivarol. For such a simulation-effect, for such a seduction-effect we are willing to pay any price, far more than for the 'real' quality of our lives. The spectaclistic drive is stronger than the self-preservation instinct, you can count on that." - Jean Baudrillard, Fatal Strategies

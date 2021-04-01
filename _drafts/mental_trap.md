@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-dev, work]
+---
+
  There is a certain mental trap you'll want to avoid... Some people do this:
 
 1. They get anxious/ashamed when they "just don't get it".

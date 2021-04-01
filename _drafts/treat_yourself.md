@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-dev]
+---
+
  Treat yourself the way you treat your lovers. Date yourself. Rediscover old hobbies, try new ones, make mistakes, be a huge beautiful mess and experiment.
 
 I was told a story once about self-love and self-validation that goes a little something like this:

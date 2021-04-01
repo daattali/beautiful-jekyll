@@ -1,6 +1,7 @@
 ---
 created: 2021-02-02T10:25:00+05:30
 modified: 2021-02-03T01:07:36+05:30
+tags: [books]
 ---
 
 # reading list

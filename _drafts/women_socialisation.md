@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [feminism]
+---
+
  So, a couple of things.
 
 1. I get feeling like you *have* to do this stuff. I do. Socialization is strong. Tradition is strong. Expectations are strong. Overcoming that stuff is real work.
