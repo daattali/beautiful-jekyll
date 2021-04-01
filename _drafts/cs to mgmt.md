@@ -1,6 +1,7 @@
 ---
 created: 2021-03-28T07:43:49+05:30
 modified: 2021-03-28T07:43:57+05:30
+tags: [work]
 ---
 
 # cs to mgmt

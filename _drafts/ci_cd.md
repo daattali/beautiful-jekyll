@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [tech]
+---
+
  CI and CD is automated builds and tests, when you merge something on the master, you run a tool that does every step necessary to deploy. For a website it might be doing installing vendors, installing assets, clearing caches, etc. Everything that you'd do by hand to update your application is done automatically
 
 CI is more about automated tests and CD about releasing updates

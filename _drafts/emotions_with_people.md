@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-dev]
+---
+
  There's a few things you can do here. There are two main strategies:
 
 * Don't dump a great emotional outpouring onto one person (unless they are a paid professional). That can be draining for friends and family. Instead, split your emotional outlet over several trusted people, and do it sparingly. Don't let any single relationship be entirely about emotional release. Learning to express how you feel is a walk in the mountains, not a sprint on a race-track.

@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [books]
+---
+
  Start from first principles. I wish I had these resources when I was starting out:
 
 1. [Code: The Hidden Language of Computer Hardware and Software](http://charlespetzold.com/code)

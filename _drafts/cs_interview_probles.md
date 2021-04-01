@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [tech]
+---
+
  I saw this list on reddit awhile ago. I think it solidly encapsulates the core types of problem you will see in the wild:
 
 [https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
