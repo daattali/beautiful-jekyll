@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [learning]
+---
+
  * Atleast a part of the Constituent Assembly Debates (they are available [online](http://parliamentofindia.nic.in/ls/debates/debates.htm), and Ambedkar's speech introducing the structure of the draft Constitution and it's goals is  [here](http://parliamentofindia.nic.in/ls/debates/vol7p1b.htm). (Do ctrl+f for the phrase "Mr. President, Sir, I introduce the Draft Constitution" and start reading there. It's a great introduction to the Constitution, which is the basic law of this country. If you're looking for background and context in the form of an easy, readable history, then Granville Austin's [The Indian Constitution: Cornerstone of a Nation](https://www.goodreads.com/book/show/5385816-the-indian-constitution?from_search=true) and [Working a Democratic Constitution](https://www.goodreads.com/book/show/3728126-working-a-democratic-constitution?from_search=true) are must-reads. 
 
 * P Sainath's [Everybody Loves a Good Drought](https://www.goodreads.com/book/show/547573.Everybody_Loves_a_Good_Drought): If you want to understand how most of India lives, then this is a fundamental book. It is the best rural reporter we have, telling stories that are usually not heard. His journalism has been collected in this book as a series of essays. In a similar vein, Aman Sethi's [A Free Man](https://www.goodreads.com/book/show/13707595-a-free-man?from_search=true) is also worth reading. 
@@ -16,4 +22,3 @@
 
 * All of these accounts of history tend to downplay the role of women, which is not surprising given the role of women in Indian society. To remedy this gap, I would suggest either [Women In India: A Social And Cultural History](https://www.goodreads.com/book/show/7645108-women-in-india?from_search=true) by Sita Raman, or Radha Kumar's [The History of Doing: An Illustrated Account of Movements for Women's Rights and Feminism in India, 1800-1990](https://www.goodreads.com/book/show/2046554.The_History_of_Doing?from_search=true)
 
- 

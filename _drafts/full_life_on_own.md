@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-dev]
+---
+
  1. Even if you’re in a happy, loving, long-term partnership, learn how to have a full life as if on your own. 
 
 Practical adulting things: bills, common repairs, cleaning/laundry, car stuff, going to the doctor, cooking nutritious food

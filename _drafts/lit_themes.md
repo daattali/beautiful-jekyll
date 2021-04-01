@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [books, philosophy]
+---
+
  By discovering the depth. It was difficult for me to see the point in high lit like John Updike or Herman Melville until I started to recognize symbol and theme. Then this stuff becomes like a cosmic drama hidden behind the page. You don't enjoy the Bible as literature because it's Tolkeinesque with magic and dwarves and shit, you enjoy it as literature because you start to recognize deep reverberating themes that relate to our own lives: God parts the waters, Moses parts the waters, Joshua parts the waters, Elijah parts the waters; all of these are echoes of each other that speak to the experience of birth; seeing the thread of meaning becomes life affirming, and colors the rest of the book. Until someone sees that high literature contains a deeper string of meaning, they'll end up just reading stuff that titillates.
 
 Let me put it like this (I've put a lot of thought into this stuff; [my buddy ended up writing an essay about it](http://www.kyleschen.com/2017/04/11/what-do-you-want-to-want/)): There is a scale in life I'll call the hedonic/[eudaimonic](https://en.wikipedia.org/wiki/Eudaimonia) scale. It works like this: Purely hedonic pleasures are surface pleasures that require very little effort on the part of the user to enjoy. Eudaimonic pleasures are the ones that require more effort. As a result, eudaimonic pleasures tend to be fuller, more lasting, engage more of our bodies, mind, and experience. But they're a slower burn.

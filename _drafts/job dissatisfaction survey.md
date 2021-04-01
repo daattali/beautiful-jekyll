@@ -1,6 +1,7 @@
 ---
 created: 2021-01-04T01:44:49+05:30
 modified: 2021-01-04T01:58:21+05:30
+tags: [work]
 ---
 
 # job dissatisfaction survey

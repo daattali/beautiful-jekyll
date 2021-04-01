@@ -1,5 +1,6 @@
 ---
 created: 2020-12-30T09:30:17+05:30
+tags: [philosophy, learning]
 ---
 
 # intro to political philosophy 1

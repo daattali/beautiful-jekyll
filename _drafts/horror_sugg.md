@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [books]
+---
+
  Liz Hand is amazing!
 
 I haven't been a juror for a long time. JoAnn Cox does the lionshare of the administration work but I help out behind the scenes, supporting the jurors and such. I'm so pleased you've found books that you like via the awards. 

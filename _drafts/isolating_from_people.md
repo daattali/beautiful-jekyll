@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-dev]
+---
+
  It was the same for me, except I realized what I was doing.  I would get so angry that I felt like a different person and I did these things.  It is still the same.  When I get really angry or depressed or sad, I can't remember what I'm like when I'm normal.  Emotionally manipulative, guilt tripping, finding fault...  A lot of it is because I have had my trust broken by many people that I cared for in my life, family and friends.  
 
 During and after, I spent much of my time isolating myself from people, only relying on myself and tending to my own emotional needs.  When it comes to the emotional needs of others, I am inconsiderate.  In order for a relationship to have even a chance of working, one must be considerate, sometimes putting a partner's wishes above their own and listening to their thoughts.  However, the partner must also extend the same consideration.  Consideration, communication, understanding...  There are things I know about relationships, but I can't apply them.

@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [feminism]
+---
+
  I read once that men say that about women as a tactic to reduce their potential. 
 
 Think about it - when you see middle aged or older men with young women, what do you notice about the power dynamic? It's always in the favor of the man. Younger women TEND not to have identified their voice, or if they have, they're afraid to use it - older women aren't. So by telling women that they've lost their value, some women will believe it and men keep the power. 

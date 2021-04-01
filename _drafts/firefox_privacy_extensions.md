@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [tech]
+---
+
  uBlock Original and Privcy Badger
 
 uBlock Origin and Privacy Badger are the best advertising blockers available. They also block invisible web trackers. When both are installed, Privacy Badger will catch some trackers that uBlock Origin misses.

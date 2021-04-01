@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [work]
+---
+
  WLB is actually pretty good (minus some teams but def in minority, team to team and org to org can vary **a lot** in bigN), that would be one of the pluses actually imo. Like 90%+ I would say are not overworked, if not more than that. e.g. Cloud sector in all the companies are prob the most overworked given the competition, the other ones are pretty good. Easiest way to find out unfortunately would be just know someone in that company and ask them, word gets around the grapevine really fast what the good and bad orgs/teams are but obviously not everyone has access to that. Otherwise, it is hard to get a straight answer.
 
 I worked way more for a start up than I've ever worked at a BigN. Though mid-sized company in midwest was the literal best WLB, like almost never more than 35 hrs a week and WFH whenever. Granted, I don't have enough of a life to take advantage of that but that's neither here or there.

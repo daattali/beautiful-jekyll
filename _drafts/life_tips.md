@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [self-dev]
+---
+
  Make your health your top priority. You can run away from a lot of things in life, but you can't run away from yourself.
 
 * Get a proper night's sleep for what your body needs. Go to bed at about the same time each night and try not to stray from it.

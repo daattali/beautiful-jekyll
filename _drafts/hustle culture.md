@@ -1,6 +1,7 @@
 ---
 created: 2021-03-29T08:57:58+05:30
 modified: 2021-03-29T08:58:12+05:30
+tags: [work]
 ---
 
 # hustle culture

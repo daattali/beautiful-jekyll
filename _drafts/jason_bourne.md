@@ -1,3 +1,9 @@
+---
+created: 2021-04-01T18:06:24+05:30
+modified: 2021-04-01T18:07:11+05:30
+tags: [travel]
+---
+
  Here is [u/RaymondReddington96](https://www.reddit.com/u/RaymondReddington96/) 's [new comment with the link](https://www.reddit.com/r/IWantToLearn/comments/e4hcjy/i_want_to_learn_to_think_like_jason_bourne/f9c7uee/). 
  
  be like jason bourne: :p
