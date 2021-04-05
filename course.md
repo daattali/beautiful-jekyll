@@ -6,7 +6,7 @@ subtitle: ''
 ---
 _The Simplify Your Home Life: a course for busy moms_ is a six week flexible online course - pace it at your own pace or go at the suggested pace.
 
-#### **Round 2 is OPEN now. Signup below!**
+#### ***currently closed, with a new round coming in June! You can signup to be on the waitlist below.**
 
 ## Course Description
 
