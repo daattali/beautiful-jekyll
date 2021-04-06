@@ -16,8 +16,8 @@ author: Matthew Strasiotto
 navbar-links:
   Projects:
     - mandrake: "/mandrake"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    # -  Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://mstrasiot.to"
 
 # --- Logo --- #
 
