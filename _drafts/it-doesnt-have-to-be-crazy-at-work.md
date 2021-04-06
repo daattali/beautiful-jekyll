@@ -1,7 +1,7 @@
 ---
 created: 2021-04-01T18:06:24+05:30
-modified: 2021-04-01T18:07:11+05:30
-tags: [learning]
+modified: 2021-04-06T06:07:47+05:30
+tags: [work]
 ---
 
 There are two primary reasons: (1) The workday is being sliced into tiny, fleeting work moments by an onslaught of physical and virtual distractions. And (2) an unhealthy obsession with growth at any cost sets towering, unrealistic expectations that stress people out.
