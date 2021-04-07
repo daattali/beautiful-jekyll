@@ -25,23 +25,23 @@ If you don't:
 
 
 ```
-    vi /etc/rc.conf
+vi /etc/rc.conf
     
-    i
+i
 ```
 * Enable the vm tools service in the file.
 
 
 ```
-    vmware-guestd_enable="YES
+vmware-guestd_enable="YES
 ```
 * Leave edit mode and save the file.
 
 
 ```
-    Press Escape
+Press Escape
     
-    :wq
+:wq
 ```
 * Restart the virtual machine. The VMware Tools should now start automatically.
 
