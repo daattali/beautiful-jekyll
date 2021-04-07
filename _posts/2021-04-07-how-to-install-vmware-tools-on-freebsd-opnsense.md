@@ -11,7 +11,7 @@ Recently I needed subnets in my nested lab to discover VMware Tanzu. I chose Opn
 First off, only the open vm tools are supported for recent versions of Unix. Meaning you'll have to install it from the public repo, no more mounting the iso. You'll have to make sure the server has internet access and name resolution.
 
 * Start by logging in the shell of your FreeBSD system. In OpnSense you press "8".
-* Install the open vm tools package. 
+* Install the open vm tools package.
 
 If you have a graphical interface:
 
@@ -24,7 +24,6 @@ If you don't:
 * The package is now installed but it doesn't start automatically. In order to do it, edit _/etc/rc.conf_ which controls the auto start of services, and press "i" to enter edit mode.
 
     vi /etc/rc.conf
-    
     i
 
 * Enable the vm tools service in the file.
@@ -38,3 +37,5 @@ If you don't:
     :wq
 
 * Restart the virtual machine. The VMware Tools should now start automatically.
+
+![](/img/freebsdtools.png)
