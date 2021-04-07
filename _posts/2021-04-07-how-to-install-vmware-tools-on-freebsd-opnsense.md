@@ -23,15 +23,21 @@ If you don't:
 
 * The package is now installed but it doesn't start automatically. In order to do it, edit _/etc/rc.conf_ which controls the auto start of services, and press "i" to enter edit mode.
 
+  
+
     vi /etc/rc.conf
     
     i
 
 * Enable the vm tools service in the file.
 
+  
+
     vmware-guestd_enable="YES"
 
 * Leave edit mode and save the file.
+
+  
 
     Press Escape
     
