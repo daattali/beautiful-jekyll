@@ -15,27 +15,27 @@ First off, only the open vm tools are supported for recent versions of Unix. Mea
 
 If you have a graphical interface:
 
-    ```pkg install open-vm-tools```
+    pkg install open-vm-tools
 
 If you don't:
 
-    ```pkg install open-vm-tools-nox11``` 
+    pkg install open-vm-tools-nox11 
 
 * The package is now installed but it doesn't start automatically. In order to do it, edit _/etc/rc.conf_ which controls the auto start of services, and press "i" to enter edit mode.
 
     ```vi /etc/rc.conf
     
-    i```
+    i
 
 * Enable the vm tools service in the file.
 
-    ```vmware-guestd_enable="YES"```
+    ```vmware-guestd_enable="YES
 
 * Leave edit mode and save the file.
 
     ```Press Escape
     
-    :wq```
+    :wq
 
 * Restart the virtual machine. The VMware Tools should now start automatically.
 
