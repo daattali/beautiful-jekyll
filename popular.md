@@ -7,13 +7,14 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
-* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) 
+* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
 ## Popular blogs
 
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
+* [Free Habit Tracker - How to Make a Plan to Take Back Your Habits and Instill New Ones](https://www.simplehomemom.com/how-to-make-a-plan-to-take-back-your-habits-or-instill-new-ones/)
 * [Book Review of Minimalist Moms: Living and Parenting with Simplicity + bonus video interview with Diane Boden: 3 important tips for minimalist moms just starting out](https://www.simplehomemom.com/book-review-of-minimalist-moms-living-and-parenting-with-simplicity/)
 * [Digital declutter challenge](https://www.simplehomemom.com/3-steps-to-start-tackling-your-digital-clutter/)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
