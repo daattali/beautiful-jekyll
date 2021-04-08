@@ -28,9 +28,11 @@ If your screen time routine is not written down or planned out, it has a much le
 
 ## Be consistent with your screen time routine.
 
-Consistency breeds familiarity. Consistency is key for instilling new habits and routines. Setting up a screen time routine will be more likely to be successful with consistency.
+Consistency breeds familiarity. Consistency is key for instilling new habits and routines. Setting up a screen time routine will be more likely successful with consistency. [Here is a blog](https://www.simplehomemom.com/how-to-make-a-plan-to-take-back-your-habits-or-instill-new-ones/) of mine on some tips for making habits more consistent.
 
-Revaulate. As with anything in life, it's so good to take time to periodically reevaluate. Is it working? How can it be improved? Does it feel natural? Is it helping? Make necessary tweaks along the way until it feels better.
+## Periodically revaulate your screen time routine.
+
+As with anything in life, it's so good to take time to periodically reevaluate. Is it working? How can it be improved? Does it feel natural? Is it helping? Make necessary tweaks along the way until it feels better.
 
 Build it onto another established part of the day. What I mean here is that, tacking your screen time routine onto an already established routine or part of the day means that it will become more predictable and also have a higher chance of sticking long term.
 
