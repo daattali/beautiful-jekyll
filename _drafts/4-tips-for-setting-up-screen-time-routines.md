@@ -32,27 +32,22 @@ Consistency breeds familiarity. Consistency is key for instilling new habits and
 
 ## Periodically revaulate your screen time routine.
 
-As with anything in life, it's so good to take time to periodically reevaluate. Is it working? How can it be improved? Does it feel natural? Is it helping? Make necessary tweaks along the way until it feels better.
+As with anything in life, it's so good to take time to periodically reevaluate. _Is it working? How can it be improved? Does it feel natural? Is it helping?_ Make necessary tweaks along the way until it feels better.
 
-Build it onto another established part of the day. What I mean here is that, tacking your screen time routine onto an already established routine or part of the day means that it will become more predictable and also have a higher chance of sticking long term.
+### Build it onto another established part of the day. 
 
-What's habit stacking from past blog of mine... Link insta post too.
+What I mean here is that, tacking your screen time routine onto an already established routine or part of the day means that it will become more predictable and also have a higher chance of sticking long term. This is sometimes referred to habit stacking. You can read about habit stacking in this blog [here](https://www.simplehomemom.com/how-to-make-habits-stick-without-much-effort/).
 
-Our current screen time routine for the kids:
+> Habit stacking is a strategy you can use to group together small changes into a routine that you follow daily. The key to consistency is to treat a habit stack like a single action instead of a series of individual tasks. (from [developinggoodhabits.com](http://www.developinggoodhabits.com/)).
 
-\-They get screen time at the end of their quiet time for usually 30 minutes.
+# Our current screen time routine for the kids, for reference:
 
-We watch a couple movies together on the weekend. Sometimes the kids watch one by themselves together (so the adults can nap lol).
+* They get screen time at the end of their quiet time for usually 30 minutes.
+* We watch a couple movies together on the weekend. Sometimes the kids watch one by themselves together (so the adults can nap lol).
+* My oldest (10) has old school video game time once a week for 45 minutes usually (he misses out on part of a movie).
+* We set timers for the timed screentimes.
 
-My oldest (10) has old school video game time once a week for 45 minutes usually (he misses out on part of a movie).
-
-We set timers for the timed screentimes.
-
-It's never perfect. Sometimes if it's raining out, they watch a little more. Sick days? Screentime is their gift.
-
-The nine months we had our house listed? Lots of extra screentime. It was on me to clean the house in full before showings and care for three kids, so screentime was a saving grace!
-
-Early and late pregnancy? Extra screentime.
+_It's never perfect. Sometimes if it's raining out, they watch a little more. Sick days? Screentime is their gift. The nine months we had our house listed? Lots of extra screentime. It was on me to clean the house in full before showings and care for three kids, so screentime was a saving grace! Early and late pregnancy? Extra screentime._
 
 Link insta post
 
@@ -61,3 +56,9 @@ RECAP
 And if screentime routines is an area you'd like to work on right now, I'd encourage you to grab your pen and paper. And write a plan down. Try it out, see how it feels, and then go from there. And instead of doing the comparing game, remember to look at your family and do what works best.
 
 Link to freebie habit stacking
+
+Other blogs of mine you may enjoy:
+
+[How to Make Habits Stick without Much Effort](https://www.simplehomemom.com/how-to-make-habits-stick-without-much-effort/)
+
+[10 Simple Habits to Create a Simpler Home](https://www.simplehomemom.com/10-simple-habits-to-create-a-simpler-home/)
