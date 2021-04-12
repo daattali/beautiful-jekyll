@@ -41,7 +41,7 @@ Function Convert-DSToCanonical {
 
 param(
     [Parameter(Mandatory = $True,ValueFromPipeline=$True)]
-    [VMware.VimAutomation.ViCore.Types.V1.DatastoreManagement.VmfsDatastoreImpl[]]
+    [VMware.VimAutomation.ViCore.Impl.V1.DatastoreManagement.VmfsDatastoreImpl[]]
     $datastore
 )
 
