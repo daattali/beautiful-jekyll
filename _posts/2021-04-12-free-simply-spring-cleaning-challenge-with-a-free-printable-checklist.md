@@ -48,11 +48,10 @@ And then make sure to pop on over to[ Jessica's blog](https://mamabearwooten.com
 
 #### Other longer spring cleaning challenges that I found:
 
-#### [Spring Cleaning Challenge](https://creatingmaryshome.com/spring-cleaning-challenge/#:\~:text=Cleaning%20is%20a%20safe%20and,the%20rest%20of%20your%20year)  
 [30 Day Spring Cleaning Challenge](https://www.popsugar.com/smart-living/30-Day-Cleaning-Challenge-Printable-34444842)  
 [40 bags in 40 days decluttering challenge](https://www.whitehouseblackshutters.com/40-bags-in-40-days/)  
-[Ultimate room by room spring cleaning checklist](https://www.tasteofhome.com/article/spring-cleaning-checklist/ )  
-  
+[Ultimate room by room spring cleaning checklist](https://www.tasteofhome.com/article/spring-cleaning-checklist/ )
+
 Other cleaning blogs of mine:
 
 * [My Laundry Stripping Method for Stinky Clothing](https://www.simplehomemom.com/my-laundry-stripping-method-for-stinky-clothing/)
