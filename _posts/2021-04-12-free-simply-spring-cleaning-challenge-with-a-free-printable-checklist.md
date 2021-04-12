@@ -40,7 +40,7 @@ Hello! It's Spring and bring out all of the Spring Cleaning challenges, right? I
 
 I usually do a spring cleaning something every year. The last couple have been mostly decluttering, but this year I am joining with my friend Jessica over at[ Mama Bear Wooten](https://mamabearwooten.com/) (or on Instagram [@mama_bear_wooten](https://www.instagram.com/mama_bear_wooten/)) to bring you a unique ten day challenge. There are two daily tasks you can pick from AND bonus tasks when you snag the printable challenge from both of our blogs too: Quick 15 minute tasks or abandoned tasks. I'm doing, you can guess it, abandoned tasks, while Jessica is doing quick 15 minute cleaning tasks.
 
-**In this freebie printable, you'll find ten days of abandoned tasks to complete, plus  bonus quick 15 minute tasks. Grab your freebie simply spring cleaning challenge printable checklist** [**HERE**]()**. Happy cleaning!**
+**In this freebie printable, you'll find ten days of abandoned tasks to complete, plus  bonus quick 15 minute tasks. Grab your freebie simply spring cleaning challenge printable checklist** [**HERE**](https://mailchi.mp/8ec31b16f849/simplyspringcleaningchallenge)**. Happy cleaning!**
 
 And then make sure to pop on over to[ Jessica's blog](https://mamabearwooten.com/simply-spring-cleaning-challenge-with-a-free-printable-checklist/) to read and then print out her challenge that goes hand in hand with mine here - she has ten 15 minute cleaning challenges plus 5 bonus challenges. Print them both out and pick through them!
 
