@@ -5,7 +5,7 @@ tags:
 - spring clean challenge
 - cleaning challenge
 - free spring cleaning challenge
-thumbnail-img: "/uploads/3_20210412_132342_0002_compress10.jpg"
+thumbnail-img: "/uploads/simple-cleaning-challenge-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
