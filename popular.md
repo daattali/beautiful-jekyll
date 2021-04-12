@@ -14,7 +14,7 @@ subtitle: ''
 ## Popular blogs
 
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
-* [Free Habit Tracker - How to Make a Plan to Take Back Your Habits and Instill New Ones](https://www.simplehomemom.com/how-to-make-a-plan-to-take-back-your-habits-or-instill-new-ones/)
+* [Simply Spring Cleaning Challenge Free Printable](https://www.simplehomemom.com/free-simply-spring-cleaning-challenge-with-a-free-printable-checklist/)
 * [Book Review of Minimalist Moms: Living and Parenting with Simplicity + bonus video interview with Diane Boden: 3 important tips for minimalist moms just starting out](https://www.simplehomemom.com/book-review-of-minimalist-moms-living-and-parenting-with-simplicity/)
 * [Digital declutter challenge](https://www.simplehomemom.com/3-steps-to-start-tackling-your-digital-clutter/)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
