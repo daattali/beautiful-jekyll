@@ -19,7 +19,7 @@ Follow my latest work on [Twitter](https://twitter.com/EmilDimanchev).
 
 ## Bio
 
-I am currently a PhD Candidate in electrical power engineering at the Norwegian University of Science and Technology ([Energy System Planning group](https://www.ntnu.edu/iel/research)), an External Researcher at the MIT [Center for Energy and Environmental Policy Research](http://ceepr.mit.edu), and a Superforecaster at [Good Judgment](https://goodjudgment.com).
+I am currently a PhD Candidate in electric power engineering at the Norwegian University of Science and Technology ([Energy System Planning group](https://www.ntnu.edu/iel/research)), an External Researcher at the MIT [Center for Energy and Environmental Policy Research](http://ceepr.mit.edu), and a Superforecaster at [Good Judgment](https://goodjudgment.com).
 
 In previous roles, I was a Senior Research Associate at MIT CEEPR, and a Senior Carbon Market Analyst at Thomson Reuters Point Carbon.
 
