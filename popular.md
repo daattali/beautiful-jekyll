@@ -8,6 +8,7 @@ subtitle: ''
 
 * [Newest blogs](https://www.simplehomemom.com)
 * [Simply Spring Cleaning Challenge Free Printable](https://www.simplehomemom.com/free-simply-spring-cleaning-challenge-with-a-free-printable-checklist/)
+* [Ten Areas for Self Care for Busy Moms](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
