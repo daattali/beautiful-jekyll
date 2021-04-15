@@ -18,7 +18,10 @@ navbar-links:
   Lab Members: "lab_members"
   #Open Positions: "positions"
   Software:
+    - BAMS (coming soon): "projects/bams"
     - CLARITE: "projects/clarite"
+    - EDGE (coming soon): "projects/edge" 
+    - SAMP (coming soon): "projects/samp"
 
 # --- Logo --- #
 
