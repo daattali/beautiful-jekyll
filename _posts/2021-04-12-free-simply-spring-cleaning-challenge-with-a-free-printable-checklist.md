@@ -12,9 +12,9 @@ readtime: true
 comments: true
 show-avatar: true
 title: Free Simply Spring Cleaning Challenge with a Free Printable Checklist
-description: '10 abandoned tasks + 5 bonus quick 15 minute cleaning tasks '
-subtitle: Ten spring cleaning challenges and five bonus quick 15 minute cleaning tasks
-  to get you simply cleaning for spring.
+description: Ten spring cleaning challenges and five bonus quick 15 minute cleaning
+  tasks to get you simply cleaning for spring.
+subtitle: 10 abandoned tasks + 5 bonus quick 15 minute cleaning tasks
 share-img: ''
 redirect_from: []
 
