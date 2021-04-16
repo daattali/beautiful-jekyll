@@ -13,7 +13,7 @@ comments: true
 show-avatar: true
 title: The First Simple Planning Step to Take as a Beginner Planner
 description: A couple simple steps to take when starting to plan your day.
-subtitle: "+ a freebeginner daily plan printable"
+subtitle: "+ a free beginner daily plan printable"
 share-img: ''
 redirect_from: []
 
