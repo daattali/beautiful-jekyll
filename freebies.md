@@ -6,8 +6,8 @@ subtitle: ''
 ---
 This is a small sample of the free resources you'll gain access to by being apart of my biweekly (currently) mail list. You'll receive a link to the freebie vault in my next mailed newsletter:
 
-* Create Your Simple Laundry Routine Worksheet
-* Plan Your Zero Spend Month Worksheets
+* [Create Your Simple Laundry Routine Worksheet](https://mailchi.mp/a5efd04962e4/simplelaundry)
+* [Plan Your Zero Spend Month Worksheets](https://mailchi.mp/8264c25ebc2a/zerospend)
 * DIY Natural Cleaners
 * Picky Plate Template
 * Daily Affirmations for Moms
@@ -26,12 +26,12 @@ This is a small sample of the free resources you'll gain access to by being apar
 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. _/
 </style>
 <div id="mc_embed_signup">
-<form action="https://eepurl.us4.list-manage.com/subscribe/post?u=581b5bf0ab44ab0870d2a00c0&id=3026fc64c7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="https://eepurl.us4.list-manage.com/subscribe/post?u=581b5bf0ab44ab0870d2a00c0&id=3026fc64c7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="blank" novalidate>
 <div id="mc_embed_signup_scroll">
 <h2>Access the Simple Home Mom Freebie Vault</h2>
 <div class="indicates-required"><span class="asterisk">_</span> indicates required</div>
 <div class="mc-field-group">
-<label for="mce-FNAME">Name  <span class="asterisk">_</span>
+<label for="mce-FNAME">Name  <span class="asterisk"></span>
 </label>
 <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
 </div>
