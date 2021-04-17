@@ -1,18 +1,20 @@
 ---
 layout: post
 title: How to Beat Procrastination with this One Simple Effective to do list Strategy
-subtitle: ""
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/bulletjournal.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-  - to do list tips
-  - beating procrastination
-  - time management tips
+- to do list tips
+- beating procrastination
+- time management tips
 redirect_from:
-  - 2020-08-29-how-to-beat
----
+- 2020-08-29-how-to-beat
+description: " A simple tip for learning how to prioritize your daily tasks, one at
+  a time."
 
+---
 ![An image of my coffee, pen, and planner with blog title.](/uploads/20200608_221652_0000.jpg "morningplanner")
 
 A couple months back I started reading the book [Eat that Frog!](https://amzn.to/3gVpdaF) after it was recommended to me by an Instagram friend, [@simply.a.momslife](https://www.instagram.com/simply.a.momslife/) It’s a book essentially about beating procrastination and the author, Brian Tracy, has years of research on this subject area behind him. It’s a quick, great read.
@@ -44,4 +46,4 @@ The key to making this ABCDE Method is to follow through with it with consistent
 
 And. That's it! I’ve been using it now for a few weeks and I can say for sure, it’s having an impact on my focus and productivity. I used to look at, even a SMALL to do list and just get lost in thought or scrolling on Facebook because I couldn’t decide which to do first. Now, I just take a minute in the morning to label them from A-E. Problem solved!
 
-_And if you are majorly struggling in this area, the book_ [_Eat That Frog!_](https://amzn.to/3gVpdaF) _is soooo helpful, as I mentioned. The author has researched for years so he knows what he’s talking about and has 1.5 million copies sold of his book. If you’d like a quick recap of all of the ways he suggests beating procrastination, send me at email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to send you that recap._
+_And if you are majorly struggling in this area, the book_ [_Eat That Frog!_](https://amzn.to/3gVpdaF) _is soooo helpful, as I mentioned. The author has researched for years so he knows what he’s talking about and has 1.5 million copies sold of his book. If you’d like a quick recap of all of the ways he suggests beating procrastination, you can find that_ [_HERE_](https://mailchi.mp/a51dd23c7640/eat-that-frog-recap)_._
