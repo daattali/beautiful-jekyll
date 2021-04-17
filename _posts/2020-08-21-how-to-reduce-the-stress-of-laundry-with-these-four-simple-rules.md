@@ -1,23 +1,24 @@
 ---
 layout: post
 title: How to Reduce the Stress of Laundry with these Four Simple Rules
-subtitle: ""
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200610_224713_0000.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-  - getting control of laundry
-  - laundry routine
-  - laundry
-  - laundry tips
-  - simplifying laundry
-  - tidying routine
-  - tidying tips
-  - housework tips
+- getting control of laundry
+- laundry routine
+- laundry
+- laundry tips
+- simplifying laundry
+- tidying routine
+- tidying tips
+- housework tips
 redirect_from:
-  - 2020-08-21-how-to-reduce-the-stress-of-laundry-with-these-four-simple-rules
----
+- 2020-08-21-how-to-reduce-the-stress-of-laundry-with-these-four-simple-rules
+description: Simple tips for reducing the stress of laundry for families.
 
+---
 ![Picture of clothes on top of a washer.](/uploads/20200610_224713_0000.jpg "laundry")
 
 We have six people here at home and even with minimizing our wardrobes, it’s really never-ending. Because clothes get dirty and we have to clean. them. Ya know? Laundry used to just be a bit stressful for me because there were piles here. Piles there. If you are stressed out from laundry, today’s blog is for you. I’m going to be sharing how to reduce the stress of laundry with these four simple rules (obviously if one rule doesn’t work for your situation, scrap it or redo for what works for you and your family!).
