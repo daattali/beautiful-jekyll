@@ -46,4 +46,4 @@ Unlike a one book method, separating my planner into three separate inserts has 
 
 **Further reading?** I enjoyed the book [Eat that Frog](https://amzn.to/2DmKOdX) for planning and procrastination tips as well as the [Bullet Journal Method](https://amzn.to/3fB51uF) for simple planning (the method I use within my current planner setup in this blog).  
 _  
-PS if you’d like to chat about this method more with me, feel free to drop me a line at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’ll also share my two favourite, simple videos for getting you started with this method, too!_
+PS if you’d like to chat about this method more with me, feel free to drop me a line at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _and I’ll also share my two favourite, simple videos for getting you started with this method, too!_

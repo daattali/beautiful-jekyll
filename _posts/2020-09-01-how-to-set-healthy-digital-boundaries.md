@@ -31,6 +31,6 @@ You can read more great ideas on [this blog](http://amyblankson.com/5-strategies
 ⁣  
 A couple book recommendations on this topic? [Hands Free Mama: A Guide to Putting Down the Phone, Burning the To-Do List, and Letting Go of Perfection to Grasp What Really Matter](https://amzn.to/2BduGKX)s and [Digital Minimalism: Choosing a Focused Life in a Noisy World](https://amzn.to/3jBof4D). Lots of food for thought for sure.⁣
 
-_PS if you'd like five more practical tips in creating healthy boundaries with the digital world, email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to share that with you for free._
+_PS if you'd like five more practical tips in creating healthy boundaries with the digital world, email me at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _and I'd be happy to share that with you for free._
 
 ![](/uploads/20200831_144130_0000_compress12.jpg)

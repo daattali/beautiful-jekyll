@@ -42,4 +42,4 @@ We aimed around a certain time to start the routine, but often missed the mark, 
 
 We get everyone upstairs for bed at the same time. We call each child one at a time and only focus on them to get them ready start to finish. Quiet activities are encouraged for the others while this is happening. One at a time until everyone is ready. It takes a while, but it's been such a good, peaceful change.
 
-_PS if you’d like a list of other ideas of boundaries you can set around bedtime for various ages, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+_PS if you’d like a list of other ideas of boundaries you can set around bedtime for various ages, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _if you’d like that._

@@ -28,7 +28,7 @@ What do you think of when you hear the word master task list? I keep coming back
 
 This fall, I'm going to apply the same method for cleaning the house. Creating a MASTER CLEANING TASK LIST. Including all of those tasks that don't get done as often (or never) like vacuuming under the stove. I'll pull from priorities first such as bathrooms and then periodically pull from less priority tasks here and there like wiping trim. ⁣  
 ⁣  
-_PS I wrote up this list above for my mail list for freebie Friday. We pretty much always keep up with tidying and mainetenance decluttering as it's so quick for us to do now, but cleaning I'd like to have a braindump master task list so I can look at and not just pull from my brain. If you'd like that freebie, I'd be happy to send it to you too. Just drop me an email at eastcoastkellyb@gmail.com._  
+_PS I wrote up this list above for my mail list for freebie Friday. We pretty much always keep up with tidying and mainetenance decluttering as it's so quick for us to do now, but cleaning I'd like to have a braindump master task list so I can look at and not just pull from my brain. If you'd like that freebie, I'd be happy to send it to you too. Just drop me an email at simplehomemom@gmail.com._  
 ⁣  
 More help:
 

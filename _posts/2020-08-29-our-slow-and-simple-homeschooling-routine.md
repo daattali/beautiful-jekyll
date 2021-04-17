@@ -43,6 +43,6 @@ I pay attention to our energy levels. Do we need a down day? Do we need rest? Ex
 - [Pam Barnhill’s course on planning your homeschool year ](https://pambarnhill.com/plan-your-year-2020/ref/258/)(I am affiliate of her course, so this would mean I’d make a small cut if you liked the look of this course too! She’s a wealth of knowledge in this area).
 - The book [Teaching From Rest](https://amzn.to/2WINMjG) that I recommend to everyone starting out. It's so encouraging and helpful.
 
-  I'm always here to chat too. Send me an email at [eastcoastkellyb@gmail.com](mailto:eastcoastkellyb@gmail.com) if you have any homeschooling routine questions or find me on [Instagram](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts/www.instagram.com/eastcoastkelly).
+  I'm always here to chat too. Send me an email at [simplehomemom@gmail.com](mailto:simplehomemom@gmail.com) if you have any homeschooling routine questions or find me on [Instagram](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts/www.instagram.com/eastcoastkelly).
 
 PS I guest blogged over on my friend Jessica's blog titled "[All Your Homeschool Questions Answered By Guest Blogger Kelly Briggs](https://mamabearwooten.com/all-your-homeschool-questions-answered-by-guest-blogger-kelly-briggs/)" if you'd like to read that too!

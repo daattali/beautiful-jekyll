@@ -47,4 +47,4 @@ _And that's it!_ This is what's been working for me for quite a few months now a
 
 **Further reading?** I enjoyed the book [Eat that Frog](https://amzn.to/2DmKOdX) for planning and procrastination tips as well as the [Bullet Journal Method](https://amzn.to/3fB51uF) for simple planning (the method I use within my current planner setup in this blog).
 
-_PS if you’d like to chat about this method more with me, feel free to drop me a line at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’ll also share my two favourite, simple videos for getting you started with the basics of the bullet journal method I learned from, too!_
+_PS if you’d like to chat about this method more with me, feel free to drop me a line at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _and I’ll also share my two favourite, simple videos for getting you started with the basics of the bullet journal method I learned from, too!_

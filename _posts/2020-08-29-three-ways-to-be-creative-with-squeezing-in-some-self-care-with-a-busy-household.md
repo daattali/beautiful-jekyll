@@ -34,4 +34,4 @@ Leave a book in there, affirmations to read over on the mirror or something that
 
 I often do this with noise in the background. Even just a few minutes talking to another adult can help fill your cup just a little bit more.
 
-_Needing more of a plan to get you more motivated for some self care time? I found a list of twenty other ideas for self care ideas for moms. If you'd like, send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that list!_
+_Needing more of a plan to get you more motivated for some self care time? I found a list of twenty other ideas for self care ideas for moms. If you'd like, send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _and I'd be happy to send you that list!_

@@ -33,4 +33,4 @@ If the kids are able, having them involved in whatever way will help speed up th
 
 And summers are GREAT times of the year to focus on fresh, quick, and [finger foods](https://www.superhealthykids.com/recipes/top-20-finger-foods-baby/). At least for our family.
 
-_PS if you'd like to work on a summer meal plan for your family, you may like what my mail list is receiving for freebie Friday this week: Summer snacks and ten meals that are quick, healthy, delicious. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that freebie too._
+_PS if you'd like to work on a summer meal plan for your family, you may like what my mail list is receiving for freebie Friday this week: Summer snacks and ten meals that are quick, healthy, delicious. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _if you’d like that freebie too._

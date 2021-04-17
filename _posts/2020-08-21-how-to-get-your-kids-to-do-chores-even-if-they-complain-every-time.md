@@ -40,4 +40,4 @@ Afterall…the hope for my kids - going forward in life:
 
 And routines that build good habits, I’ve found, have been 100% worth it so far.
 
-_PS if chores is an area you’d like to work on with your kids, my mail list is receiving a free sheet of age appropriate suggestions for chores for kids this Friday! If you’re not on it yet (why not? 😉), you can send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _to get that freebie._
+_PS if chores is an area you’d like to work on with your kids, my mail list is receiving a free sheet of age appropriate suggestions for chores for kids this Friday! If you’re not on it yet (why not? 😉), you can send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _to get that freebie._

@@ -42,4 +42,4 @@ This won't be helpful in our house, but I know many folk who use a song to trans
 
 Using a timer as a count down to the next transition can help some kids (and even us adults) prepare for what's coming up. You can also use a timer to set the amount of time used. ⁣Smooth, predictable transitions helps the days go smoother for everyone. Saving time, noise, sanity.
 
-_PS: if you love this kind of thing, you would love the 10 best tips worksheet to help you design your ultimate day at home with kids. These are strategies that are curated from parents who have lots of experience with kids and of course, parenting. Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that._
+_PS: if you love this kind of thing, you would love the 10 best tips worksheet to help you design your ultimate day at home with kids. These are strategies that are curated from parents who have lots of experience with kids and of course, parenting. Send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _if you'd like that._

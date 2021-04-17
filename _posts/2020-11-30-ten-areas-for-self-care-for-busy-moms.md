@@ -51,6 +51,6 @@ And there's something to be said about actually writing things down that helps u
 
 It's a noisy life. It's a noisy home with three boys and a toddler girl, and my goodness, it's so easy for time to slip by and the day happen to to me without thinking about it. Penciling in these kinds of things makes it more likely that these things will happen.
 
-_PS Needing more of a plan to get you more motivated for some self care time? I found a list of twenty other ideas for self care ideas for moms. If you’d like, send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to send you that list!_
+_PS Needing more of a plan to get you more motivated for some self care time? I found a list of twenty other ideas for self care ideas for moms. If you’d like, send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _and I’d be happy to send you that list!_
 
 ![A picture of my planner with self care ideas.](/uploads/unnamed-3.jpg "blogimage")

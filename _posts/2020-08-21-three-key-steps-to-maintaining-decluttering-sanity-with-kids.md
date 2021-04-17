@@ -31,4 +31,4 @@ Have a home for everything so that you know how much you have of everything. Leg
 
 Help them to recognize things they no longer need or love (it’s a long term process here as we’ve found lol). But, including the kids routinely will help them to learn the skills of decluttering too over time. Not perfectly of course. We have one child who enjoys collecting electricians. That’s his joy. But to help him make decisions on what is best to keep is still taught.
 
-_PS one of my mail list freebies was for a simple guide to maintenance decluttering with kids! I expanded on these three steps above and have seven more for you too. Just send me an email at eastcoastkellyb@gmail.com if you’d like that guide for free and I’ll send it off to you!_
+_PS one of my mail list freebies was for a simple guide to maintenance decluttering with kids! I expanded on these three steps above and have seven more for you too. Just send me an email at simplehomemom@gmail.com if you’d like that guide for free and I’ll send it off to you!_

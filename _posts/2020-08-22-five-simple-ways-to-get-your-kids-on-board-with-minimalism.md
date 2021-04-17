@@ -39,4 +39,4 @@ I see this as prioritize the now and slowly get better over time….as well as w
 
 PS I just love Joshua Becker’s [Clutterfree with Kids](https://amzn.to/2XMV06I) book! If you’re new to minimalism/decluttering and have kids, this book is a great place to start or even fine tune your methods.
 
-_PPS a while back I put together a freebie for my mail list called “The Simple Guide to Maintenance Decluttering with Kids”. It gives you five simple steps to staying on top of the clutter with kids going forward. If you’d like that, I’d be happy to send that to you for free. Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that!_
+_PPS a while back I put together a freebie for my mail list called “The Simple Guide to Maintenance Decluttering with Kids”. It gives you five simple steps to staying on top of the clutter with kids going forward. If you’d like that, I’d be happy to send that to you for free. Send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _if you’d like that!_

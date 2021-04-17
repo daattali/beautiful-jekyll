@@ -35,6 +35,6 @@ This is the option we settled on for our family. The idea is to pick up the pace
 
 And hey? If it's not working? Tweak it and try something new. Simple is what we're always going for! [Clear counters are always nice, aren't they](https://www.thedailymeal.com/cook/how-to-marie-kondo-your-kitchen) (Marie Kondo goals!)?
 
-_PS my mail list received a freebie with the current steps we're taking to build habits with our kids in the kitchen (goal: more consistently having clear counters). If you'd like that freebie, send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'll send that off to you._
+_PS my mail list received a freebie with the current steps we're taking to build habits with our kids in the kitchen (goal: more consistently having clear counters). If you'd like that freebie, send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _and I'll send that off to you._
 
 ![A picture of a kitchen with clear counters.](/uploads/0001-12409819322_20201028_143308_0000.jpg "kitchencounters")

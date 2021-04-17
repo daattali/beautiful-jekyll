@@ -61,4 +61,4 @@ Ours says:
 
 We're using this time to work on sibling relationships. Communication. Closeness. Taking time to listen to one another. Solving problems. And we’ll be working on updating our own family values and then family motto in the near future too.
 
-_And if you’d like a simple template and examples of 30 family values to start drafting your own family motto, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those free resources I found for you._
+_And if you’d like a simple template and examples of 30 family values to start drafting your own family motto, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _for those free resources I found for you._

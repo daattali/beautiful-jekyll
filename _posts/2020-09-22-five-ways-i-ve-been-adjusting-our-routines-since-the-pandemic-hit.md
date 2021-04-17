@@ -41,6 +41,6 @@ The pandemic almost forced me to put in scheduled “self care” such as bath n
 
 The pandemic has affected my mental health and I’m glad to become more aware of my needs and my family’s during this time. One day at a time, right?
 
-_PS I know “self care” can look different for everyone. I found a list of 10 creative self care ideas for busy people (aka moms) if you’d like to take a look at them too. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that list for free and I'd be happy to send that off to you._
+_PS I know “self care” can look different for everyone. I found a list of 10 creative self care ideas for busy people (aka moms) if you’d like to take a look at them too. Feel free to email me at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _if you’d like that list for free and I'd be happy to send that off to you._
 
 ![An overview of the five tips. ](/uploads/five-ways-i-ve-been-adjusting-our-routines-since-the-pandemic-hit-1-_compress11.jpg "Pandemicroutine")

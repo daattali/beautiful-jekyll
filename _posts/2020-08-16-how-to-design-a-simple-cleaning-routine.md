@@ -68,4 +68,4 @@ If you're wanting to create a simple cleaning routine for yourself, my best piec
 - involving the kids - what can you include them in?
 - setting your non-negotiable bare minimum daily tasks. Ours are 100% doing something with the laundry and the kitchen (or just the dishes).
 
-_Your simple cleaning routine is going to look different from mine, but hopefully taking a look at mine will give you a good place to start. If you'd like a master list of all of the tasks you could do for cleaning your home, feel free to email me at eastcoastkellyb@gmail.com if you’d like that._
+_Your simple cleaning routine is going to look different from mine, but hopefully taking a look at mine will give you a good place to start. If you'd like a master list of all of the tasks you could do for cleaning your home, feel free to email me at simplehomemom@gmail.com if you’d like that._

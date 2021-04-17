@@ -42,4 +42,4 @@ There are so many ways that phrase “keep it simple” has affected my life sin
 
 I recommend the book [Slow: Simple Living for a Frantic World](https://amzn.to/3iE8gCI).
 
-_PS if you’re looking for some solid ideas of how to be more simple in your days, I have a list of ten other practical suggestions that I found for you. Feel free to email me at eastcoastkellyb@gmail.com if you’d like that list for free._
+_PS if you’re looking for some solid ideas of how to be more simple in your days, I have a list of ten other practical suggestions that I found for you. Feel free to email me at simplehomemom@gmail.com if you’d like that list for free._

@@ -40,6 +40,6 @@ _My kids' current morning time routine:⁣
 
 My [Instagram friend Leah's](https://www.instagram.com/mylittlerobins/) little [ebook on habit training](https://my-little-robins-shop.myshopify.com/collections/frontpage/products/habits-for-the-early-years-a-mothers-journal) children. It's the sweetest!
 
-_PS if you want to learn more about a really effective habit strategy called habit stacking, you may love the freebie my mail list received - 20 ideas to habit stack + a habit stacking planning sheet. You can receive that for free by emailing me at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
+_PS if you want to learn more about a really effective habit strategy called habit stacking, you may love the freebie my mail list received - 20 ideas to habit stack + a habit stacking planning sheet. You can receive that for free by emailing me at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com)_._
 
 ![Picture of morning routine for my kids.](/uploads/20201103_145238_0000_compress63.jpg "habitsblog")

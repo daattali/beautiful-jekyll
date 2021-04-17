@@ -34,4 +34,4 @@ _Afternoons_: For years now, we’ve had quiet time in the afternoons. It used t
 
 Evenings: We have supper around 5 right now and aim for getting ready for bed at 6:30 with everyone. Pyjamas on, cleaned up, in bed. I usually exercise with the baby during this time here too as I’ve found it to be the best time of day for me. I’m usually toast after that, so if I have any work left to do, I make sure it’s more lowkey, not as much thinking kinds of tasks. I’ve recently been trying to end the day with a bit of writing, reading, praying too. The best way to end the day for myself and to encourage a restful sleep too!
 
-_Want to redo your days and create some rhythms for your days too? You may like the rhythm builder template I put together for you. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that for free._
+_Want to redo your days and create some rhythms for your days too? You may like the rhythm builder template I put together for you. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _if you’d like that for free._

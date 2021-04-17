@@ -34,5 +34,5 @@ Take a look at what you do, your actions. What things do you do on the daily? Su
 
   Maybe through the above exercise, you'll also discover what you thought you valued, but really don't based on your actions. I thought I valued getting outside....but haven't been getting out much this year since having the new baby. But it's something I want to change for this year. Values can also change over time too. I hope you enjoyed and learned something new about yourself through this exercise. Happy exploring your values!
 
-  _If you enjoyed this type of exercise, another way to expand this is into creating a family motto for your family... if you’d like a simple template and examples of 30 family values to start drafting your own family motto, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) \_for those free resources I found for you.
+  _If you enjoyed this type of exercise, another way to expand this is into creating a family motto for your family... if you’d like a simple template and examples of 30 family values to start drafting your own family motto, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) \_for those free resources I found for you.
 

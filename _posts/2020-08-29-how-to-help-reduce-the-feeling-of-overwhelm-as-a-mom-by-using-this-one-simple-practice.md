@@ -40,4 +40,4 @@ _I read my affirmations every morning during my_ [_miracle morning_](https://amz
 
 In hard moments, I am able to speak truth to myself and it’s brought me comfort and refocus many times in my life, but of course is not substitute for when I needed more than just affirmations – like when I suffered from mild PPD/anxiety last year. But, worth a shot to add these to your day, right? Little things can become big things to help long term!
 
-_And if you’d like more help on starting to create your own affirmations, I have a list of 20 basic ones you can use if you’d like. Just send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for that list._
+_And if you’d like more help on starting to create your own affirmations, I have a list of 20 basic ones you can use if you’d like. Just send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _for that list._

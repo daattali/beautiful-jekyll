@@ -31,4 +31,4 @@ If funds allow, hire a helper to watch the kids for when you need some extra foc
 
 And **the best thing that has kept me going through the years** is that I try not to compare to others. Comparing to others who work from home (with or without kids) will only set yourself up for failure. Focus on small wins and keep tweaking your days to make it natural for both yourself and your kids will keep you going.
 
-_PS if you love this kind of thing, you would enjoy the working at home with kids guide that I put together a couple years ago. It's filled with tips and strategies I've found helpful over the years. Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+_PS if you love this kind of thing, you would enjoy the working at home with kids guide that I put together a couple years ago. It's filled with tips and strategies I've found helpful over the years. Send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _if you’d like that._

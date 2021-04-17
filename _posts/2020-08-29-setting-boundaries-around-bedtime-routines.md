@@ -33,4 +33,4 @@ At first, I was like. Nooo! We weren’t in that place yet of more independence,
 - We share with them that bedtime is their quiet time and ours as adults too. We all need downtime!
 - Repeat, enforcing, making clear boundaries is so key here for bedtime routines.
 
-_PS if you’d like a list of other ideas of boundaries you can set around bedtime for various ages, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+_PS if you’d like a list of other ideas of boundaries you can set around bedtime for various ages, feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _if you’d like that._

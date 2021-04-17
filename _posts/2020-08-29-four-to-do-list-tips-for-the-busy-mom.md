@@ -26,4 +26,4 @@ You are worth so much more than the size of your crossed off to do list. But goo
 
    ![A picture of my bullet journal.](/uploads/bulletjournal.jpg "bulletjournal")
 
-   _If you liked these tips and love your to do lists or want to get better at them, learning the simple bullet journal method may be for you too! I have some great links to get you started with using this method if that sounds like something that would be helpful. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those links._
+   _If you liked these tips and love your to do lists or want to get better at them, learning the simple bullet journal method may be for you too! I have some great links to get you started with using this method if that sounds like something that would be helpful. Feel free to send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _for those links._

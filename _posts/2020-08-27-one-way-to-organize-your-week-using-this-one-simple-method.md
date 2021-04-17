@@ -32,4 +32,4 @@ I remember reading a [blog](https://readaloudrevival.com/i-am-not-an-airplane/) 
 
 ⁣Write down the most important things for you and your family. How much time do you want to set aside for...rest? Reading? Grocery shopping? Family movie night? Sitting down and looking at your time realistically with a LOT of extra space for breathing room. It's a neat way of looking at things! I hope this helps you out today.⁣
 
-_I hope this was helpful for you. If you'd like to dive in deeper, I have a time budgeting simple template worksheet you can fill out and start budgeting your time. Send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that!_
+_I hope this was helpful for you. If you'd like to dive in deeper, I have a time budgeting simple template worksheet you can fill out and start budgeting your time. Send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _if you'd like that!_

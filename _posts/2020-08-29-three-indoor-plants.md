@@ -29,4 +29,4 @@ _Real plants not your thing_ and you want even more low maintenance? Animals or 
 
 Also this book I found – [How Not to Kill Your Houseplant](https://amzn.to/2Az9Yoj) – may be helpful if you are completely brand new to plants or want to expand your repertoire. I haven't read this book, but hey, it has great reviews and if you are looking to find more low key plants, this may be a good place to start learning more about them.
 
-_PS If you'd love the full list of every low maintenance plant we have kept alive as well as the ones that have terribly failed, send me an email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'll send that off to you._
+_PS If you'd love the full list of every low maintenance plant we have kept alive as well as the ones that have terribly failed, send me an email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _and I'll send that off to you._

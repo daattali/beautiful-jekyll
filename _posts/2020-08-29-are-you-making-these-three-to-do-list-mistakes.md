@@ -33,4 +33,4 @@ As mentioned, the first to go at the top of my weekly to do list is: less. less.
 
 **So here's to LESS. And MORE of what is needed in our lives!**
 
-_PS if this is a struggle for you, you may like what my mail list is receiving for their freebie Friday. The simple guide to finding more time and an attached worksheet. If you're not on it yet, you can email me your email at_ [_simplehomemom@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can email you that directly._
+_PS if this is a struggle for you, you may like what my mail list is receiving for their freebie Friday. The simple guide to finding more time and an attached worksheet. If you're not on it yet, you can email me your email at_ [_simplehomemom@gmail.com_](mailto:simplehomemom@gmail.com) _and I can email you that directly._

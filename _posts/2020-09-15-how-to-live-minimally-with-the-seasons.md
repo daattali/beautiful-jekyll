@@ -43,6 +43,6 @@ My favourite weekend hot drink of choice?
 
 [Matcha tea](https://amzn.to/35ycKY8)
 
-_PS I found three other weekend worthy yummy drink recipes I want to try this fall. If you're a lover of hot drinks too, send me an email at eastcoastkellyb@gmail.com and I'd be happy to send you that list too! One of them is a fave hot chocolate of mine._
+_PS I found three other weekend worthy yummy drink recipes I want to try this fall. If you're a lover of hot drinks too, send me an email at simplehomemom@gmail.com and I'd be happy to send you that list too! One of them is a fave hot chocolate of mine._
 
 ![The four ways to live minimally with the seasons and a picture of fall trees.](/uploads/20200914_152654_0000_compress44.jpg "fallimage")
