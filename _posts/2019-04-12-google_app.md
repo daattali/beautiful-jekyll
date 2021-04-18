@@ -2,8 +2,8 @@
 layout: post
 title: Webapp with Google Ecosystem
 subtitle:  
-cover-img: /assets/img/google_app_cover.jpg
-thumbnail-img: /assets/img/google_app_2.png
+# cover-img: /assets/img/google_app_cover.jpg
+thumbnail-img: /assets/img/google_app_0.png
 tags: [Google Ecosystem, other]
 ---
 
@@ -12,6 +12,7 @@ tags: [Google Ecosystem, other]
 Chúng ta vẫn ngày ngày sử dụng các tiện ích của anh Google và bản thân tôi luôn cảm thấy biết ơn vì điều đó, Gmail, 
 Drive, Youtube, Google Spreadsheet...
 
+<img src="/assets/img/google_app_cover.jpg" width="700" />
 
 <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTGz_pqXbWaool5DAii_NGXjKo1NTtrNA5-vUrgc4pJPuhHCUV&usqp=CAU" width="500" /> -->
 
