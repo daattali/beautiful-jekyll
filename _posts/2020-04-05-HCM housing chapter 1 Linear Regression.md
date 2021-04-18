@@ -2,7 +2,7 @@
 layout: post
 title: House price prediction
 subtitle: HCM housing chapter 1 
-tags: [HCM housing]
+tags: [HCM-housing]
 thumbnail-img: /assets/img/chapter_1_house_prices_predict_4.png
 ---
 

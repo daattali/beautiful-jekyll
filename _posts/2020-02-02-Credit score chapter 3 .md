@@ -2,7 +2,7 @@
 layout: post
 title: Scorecard evaluation and deployment
 subtitle: Credit Scorecard chapter 3
-tags: [Credit Scorecard]
+tags: [credit-scorecard]
 thumbnail-img: /assets/img/scorecard_chapter3_6.png
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'HCM housing'
+title: 'Statistic'
 ---
 
 {%- capture site_tags -%}
@@ -12,8 +12,9 @@ title: 'HCM housing'
 
 {% assign posts = paginator.posts | default: site.posts %}
 
+
 {%- for tag in tags_list -%}
-{%- if tag == "HCM-housing" -%}
+{%- if tag == "Statistic" -%}
 <div id="full-tags-list">
   <div class="post-list">
     {%- for post in posts -%}

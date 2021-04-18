@@ -2,7 +2,7 @@
 layout: post
 title: Scorecard with Machine learning 
 subtitle: Credit Scorecard chapter 2
-tags: [Credit Scorecard]
+tags: [credit-scorecard]
 thumbnail-img: /assets/img/credit_scorecard_01.png
 ---
 

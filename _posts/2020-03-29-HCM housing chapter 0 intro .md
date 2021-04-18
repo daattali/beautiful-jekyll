@@ -2,7 +2,7 @@
 layout: post
 title: HCM housing Intro
 subtitle: HCM housing chapter 0
-tags: [HCM housing]
+tags: [HCM-housing]
 thumbnail-img: /assets/img/housing_0_2.png
 ---
 

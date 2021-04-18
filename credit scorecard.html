@@ -11,11 +11,9 @@ title: 'credit scorecard'
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
 {% assign posts = paginator.posts | default: site.posts %}
-{%- assign curtag= = site.title -%}
-
 
 {%- for tag in tags_list -%}
-{%- if tag == "Credit Scorecard" -%}
+{%- if tag == "credit-scorecard" -%}
 <div id="full-tags-list">
   <div class="post-list">
     {%- for post in posts -%}
@@ -30,7 +28,7 @@ title: 'credit scorecard'
       {% endif %}
 
       <a href="{{ post.url | absolute_url }}">
-        <h2 class="post-title">{{ post.title }} - {{site.title }}</h2>
+        <h2 class="post-title">{{ post.title }}</h2>
 
         {% if post.subtitle %}
         <h3 class="post-subtitle">

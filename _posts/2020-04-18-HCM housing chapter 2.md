@@ -2,7 +2,7 @@
 layout: post
 title: House price visualization
 subtitle: HCM housing chapter 2 
-tags: [HCM housing, Google Ecosystem]
+tags: [HCM-housing, Google Ecosystem]
 ---
 
 Currently, I am crawling real estate data to forecast future house price trends. In the meantime why not make a cool dashboard and we can use it to track daily house price movements, as easy as eating a cake, get started.

@@ -2,18 +2,18 @@
 layout: page
 title: Explain the Scorecard Model
 subtitle: Credit Scorecard chapter 4
-tags: [Credit Scorecard]
+tags: [credit-scorecard]
 thumbnail-img: /assets/img/scorecard_chapter4_1.png
 ---
 
 
 ## 1 Tại sao phải diễn giải mô hình Machine learning ?
 
-Lê Ngọc Khả Nhi - một data scientist mà tôi ngưỡng mộ đã từng nói : 
+Lê Ngọc Khả Nhi (bí danh trên của)- một data scientist mà tôi ngưỡng mộ đã từng nói : 
 
 "Một mô hình chính xác dĩ nhiên là tốt, nhưng chưa đủ. Độ chính xác của mô hình là tiêu chí được nhắm tới bởi hầu hết data scientist, tuy nhiên, tính chính xác không đồng nghĩa với tính hiệu quả. "
 
-Thật vậy trong quá trình đưa mô hình Scorecard vào với vận hành tại CS&A, tự bản thấy được còn có rất nhiều vấn đề cần được giải quyết ! 
+Thật vậy trong quá trình đưa mô hình Scorecard vào với vận hành tại thực tế công ty, tự bản thấy được còn có rất nhiều vấn đề cần được giải quyết ! 
 
 Cho đến thời điểm hiện tại, mô hình Machine learning đang được áp dụng để xây dựng Scorecard đã và đang cho những dự đoán rất chính xác về kết quả thu hồi nợ. Tuy nhiên khi đưa vào vận hành thì không ít người bắt đầu hoài nghi về kết quả dự đoán của mô hình, bao gồm những người vận hành có nhiều kinh nghiệm và một số chuyên viên phân tích. 
 
@@ -390,7 +390,7 @@ B2:
   </thead>
   <tbody>
     <tr>
-      <th>20181022-0003128</th>
+      <th>ddddd-ddddd</th>
       <td>779</td>
       <td>1</td>
       <td>1</td>
@@ -415,7 +415,7 @@ B2:
   </thead>
   <tbody>
     <tr>
-      <th>20180907-0000074</th>
+      <th>ccccccc-cccccccc</th>
       <td>443</td>
       <td>5</td>
       <td>1</td>
@@ -440,7 +440,7 @@ B2:
   </thead>
   <tbody>
     <tr>
-      <th>20200516-1922473</th>
+      <th>aaaaaa-aaaaaa</th>
       <td>228</td>
       <td>10</td>
       <td>1</td>
@@ -465,7 +465,7 @@ B2:
   </thead>
   <tbody>
     <tr>
-      <th>20180619-0006206</th>
+      <th>yyyyyyyy-yyyyyyyy</th>
       <td>335</td>
       <td>9</td>
       <td>1</td>
@@ -490,7 +490,7 @@ B2:
   </thead>
   <tbody>
     <tr>
-      <th>20200106-4904503</th>
+      <th>xxxxxxx-xxxxxxx</th>
       <td>314</td>
       <td>9</td>
       <td>1</td>
@@ -515,7 +515,7 @@ B2:
   </thead>
   <tbody>
     <tr>
-      <th>20181029-0003736</th>
+      <th>xxxxxxx-xxxxxxx</th>
       <td>336</td>
       <td>9</td>
       <td>1</td>
