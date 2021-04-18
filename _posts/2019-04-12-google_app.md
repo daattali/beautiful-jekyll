@@ -2,6 +2,8 @@
 layout: post
 title: Webapp with Google Ecosystem
 subtitle:  
+cover-img: /assets/img/google_app_cover.jpg
+thumbnail-img: /assets/img/google_app_2.png
 tags: [Google Ecosystem, other]
 ---
 
@@ -11,7 +13,7 @@ Chúng ta vẫn ngày ngày sử dụng các tiện ích của anh Google và b�
 Drive, Youtube, Google Spreadsheet...
 
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTGz_pqXbWaool5DAii_NGXjKo1NTtrNA5-vUrgc4pJPuhHCUV&usqp=CAU" width="500" />
+<!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTGz_pqXbWaool5DAii_NGXjKo1NTtrNA5-vUrgc4pJPuhHCUV&usqp=CAU" width="500" /> -->
 
 
 Nhưng hệ sinh thái Google cho chúng ta nhiều hơn thế Chúng ta có thể tự build cho mình một Webapp trên nền tảng Google Ecosystem. Các bạn không nghe lầm đâu, chính là 1 webapp như quản lý phòng khách sạn, quản lý quán cafe hoàn toàn miễn phí và rất đơn giản.
@@ -41,14 +43,12 @@ Với ý tưởng đơn giản như vậy mình đã cho ra đời rất nhiều
 
 Thực hiên việc gi chép các phát sinh chi tiêu , thống kê các chi tiêu và đặt ngân sách chi tiêu
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/google_app_0.png)
+<img src="/assets/img/google_app_0.png" width="700" />
 
 2. Ứng dụng chi tiêu chung 
 
 Mình từng ở chung cùng 3 bạn nữa hồi đại học nên có rất nhiều khoản chi tiêu chung, do vậy mình làm ứng dụng để thực hiện các chức năng phân bổ công nợ cho mỗi người và gửi mail tự động nhắc nợ mỗi cuối tuần.
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/google_app_1.png)
+<img src="/assets/img/google_app_1.png" width="700" />
 
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/google_app_2.png)
-
+<img src="/assets/img/google_app_2.png" width="700" />
