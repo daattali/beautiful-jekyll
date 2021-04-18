@@ -2,6 +2,10 @@
 layout: page
 title: 'Computer Vision'
 ---
+---
+layout: page
+title: 'Computer Vision'
+---
 
 {%- capture site_tags -%}
 {%- for tag in site.tags -%}
@@ -11,7 +15,6 @@ title: 'Computer Vision'
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
 {% assign posts = paginator.posts | default: site.posts %}
-
 
 {%- for tag in tags_list -%}
 {%- if tag == "computer-vision" -%}
