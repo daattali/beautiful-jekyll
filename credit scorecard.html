@@ -10,6 +10,9 @@ title: 'credit scorecard'
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
+{% assign posts = paginator.posts | default: site.posts %}
+{%- assign curtag= = site.title -%}
+
 
 {%- for tag in tags_list -%}
 {%- if tag == "Credit Scorecard" -%}
@@ -17,7 +20,7 @@ title: 'credit scorecard'
   <div class="post-list">
     {%- for post in site.tags[tag] -%}
     <article class="post-preview">
-
+      {{curtag}}
       {%- capture thumbnail -%}
       {% if post.thumbnail-img %}
       {{ post.thumbnail-img }}
