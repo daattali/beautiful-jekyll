@@ -10,23 +10,6 @@ title: 'Computer Vision'
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
-{%- capture img -%}
-{%- if page.share-img -%}
-{{ page.share-img }}
-{%- elsif page.cover-img -%}
-{%- if page.cover-img.first -%}
-{{ page.cover-img[0].first.first }}
-{%- else -%}
-{{ page.cover-img }}
-{%- endif -%}
-{%- elsif page.thumbnail-img -%}
-{{ page.thumbnail-img }}
-{%- elsif site.avatar -%}
-{{ site.avatar }}
-{% endif %}
-{%- endcapture -%}
-{%- assign img=img | strip -%}
-
 
 {%- for tag in tags_list -%}
 {%- if tag == "Computer Vision" -%}
