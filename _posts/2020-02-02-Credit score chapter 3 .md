@@ -3,6 +3,7 @@ layout: post
 title: Scorecard evaluation and deployment
 subtitle: Credit Scorecard chapter 3
 tags: [Credit Scorecard]
+thumbnail-img: /assets/img/scorecard_chapter3_6.png
 ---
 
 Ở bài trước chúng ta đã có thể xây dựng được mô hình scorecard rồi. Nhưng như vậy là chưa đủ, chúng ta cần trình bày, diễn giải nó một cách khoa học, và dễ hiểu để thuyết phục công ty đưa mô hình vào vận hành.
