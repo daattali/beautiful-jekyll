@@ -24,9 +24,6 @@ Mục tiêu bài viết :
 
 _______________________________
 
-
-
-
 ## Biểu đồ trực quan hóa dữ liệu 
 
 Cách để chúng ta hiểu dữ liệu nhanh nhất đó chính là qua hình ảnh 
@@ -35,56 +32,26 @@ Dưới đây mình chủ yếu sử dụng thư viện **seaborn** vì nó khá
 
 Biểu đồ histogram để thấy được tần suất của dữ liệu:
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_0.png)
-
-
+<img src="/assets/img/creadit_scorecard1_0.png" />
 
 Biến phân loại:
 
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_1.png)
-
+<img src="/assets/img/creadit_scorecard1_1.png" />
 
 Biểu đồ pairplot để thấy được mối quan hệ của dữ liệu:
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_2.png)
-
+<img src="/assets/img/creadit_scorecard1_2.png" />
 
 
 Quan sát thêm sự mối quan hệ giữa các biến với sns.jointplot:
 
-
-
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_3.png)
-
-
+<img src="/assets/img/creadit_scorecard1_3.png" />
 
 factor "field35" theo "field14" và "label":
 
-
-
-
-
-
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_4.png)
-
-
+<img src="/assets/img/creadit_scorecard1_4.png" />
 
 ## Giới thiệu :
-
 
 Sau khi nhìn qua dữ liệu chắc chúng ta ai cũng muốn hiểu sâu hơn về dữ liệu cũng như khai thác tri thức từ chúng. Một phương pháp thống kê phổ biến dễ hiểu và cũng rất hiệu quả cho các bài toán phân lớp nhị phân thường được nhắc tới đó chính là Logistic regression. 
 
@@ -100,7 +67,6 @@ Với cơ chế phân lớp đễ hiểu và các hàm kích hoạt cơ bản (a
 
 
 Về chi tiết cụ thể về cơ chế hoạt động của Logistic regression và hàm activation sigmoid thì mời các bạn các bạn đón đọc trang web rất uy tín dưới đây
-
 
 
 <a href="https://machinelearningcoban.com/2017/01/27/logisticregression/">machinelearningcoban.com</a>
@@ -135,33 +101,13 @@ Về phương pháp biến đổi WOE thì có rất nhiều, mình cũng tự c
 
 Dưới đây là kết quả chúng chạy mô hình credit scorecard
 
+<img src="/assets/img/creadit_scorecard1_5.png" />
 
+<img src="/assets/img/creadit_scorecard1_6.png" />
 
+<img src="/assets/img/creadit_scorecard1_7.png" />
 
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_5.png)
-
-
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_6.png)
-
-
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_7.png)
-
-
-
-
-
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_8.png)
-
+<img src="/assets/img/creadit_scorecard1_8.png" />
 
 Vậy là chúng  ta đã đi lướt qua khá nhiều kiến thức. 
 

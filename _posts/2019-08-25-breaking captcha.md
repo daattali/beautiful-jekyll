@@ -3,8 +3,8 @@ layout: post
 title: Breaking captcha CIC
 subtitle: ứng dụng Computer Vision
 tag: Computer Vision
-thumbnail-img: /assets/img/captcha3.png
-share-img: /assets/img/captcha3.png
+thumbnail-img: /assets/img/captcha_cover.png
+share-img: /assets/img/captcha_cover.png
 ---
 
 

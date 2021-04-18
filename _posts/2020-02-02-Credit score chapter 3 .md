@@ -16,23 +16,14 @@ Mục tiêu gồm :
     1. Giới thiệu các tiêu chuẩn đánh giá mô hình
     2. Các cách triển khai mô hình 
 
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_intro.png)
-
-
-
-
+<img src="/assets/img/scorecard_chapter3_intro.png" />
 
 ## Đầu tiên build lại mô hình giống kỳ trước
 
 
 Trong bài này sẽ đề cập đến cách diễn giải và trình bày là chính, do vậy ta sẽ dùng mô hình LogisticRegression để làm ví dụ cho đơn giản
 
-
-
-
 ## Dự báo với mô hình
-
 
 **Dự đoán với phương thức predict():**
 
@@ -44,24 +35,13 @@ Một cách dễ hiểu nếu kết quả là :
  - 0 tương ứng với khách hàng bình thường
  - 1 tương ứng với khách hàng mục tiêu
 
-    
-
 Phân bổ của các lớp thực tế:
 
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_0.png)
-
-
-
+<img src="/assets/img/scorecard_chapter3_0.png" />
 
 Phân bổ của các lớp theo dự báo:
 
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_1.png)
-
-
+<img src="/assets/img/scorecard_chapter3_1.png" />
 
 Nhìn vào pie chart ta thấy được tỷ lệ giữa 2 class 0, 1 trong kết quả dự báo của tệp test có sự khác biệt so với thực tế. 
 
@@ -87,9 +67,7 @@ Chúng ta cần làm quen với các khái niệm :
 -**confusion_matrix**: thể hiện có bao nhiêu dữ liệu được dự đoán vào class nào và class thực sự của chúng.
 
 
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_confusion.png)
-
+<img src="/assets/img/scorecard_chapter3_confusion.png" />
 
 
 **Accuracy:** = TP+TN / TP+TN+FP+FN  
@@ -105,16 +83,9 @@ Chúng ta cần làm quen với các khái niệm :
 
 #### confusion_matrix:
 
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_2.png)
-
-
-
+<img src="/assets/img/scorecard_chapter3_2.png" />
 
 #### Các chỉ số:
-
-
 
 <div>
 <style scoped>
@@ -150,17 +121,9 @@ Chúng ta cần làm quen với các khái niệm :
 </table>
 </div>
 
-
-
 Quay lại một chút về vấn đề dự đoán với phương thức predict() để hiểu hơn tại sao mô hình lại có thể dự báo nhãn cho tệp test. 
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_3.png)
-
-
-
+<img src="/assets/img/scorecard_chapter3_3.png" />
 
 Giá trị đầu ra của hàm sigmoid luôn nằm trong khoẳng từ 0 đến 1 nếu ta lấy ngưỡng(threshold) là 0.5 và chia dữ liệu làm 2 phần 
 phần < 0.5 sẽ được gán nhãn là 0 và ngược lại thì ta sẽ được kết quả như phương thức predict() đã làm.
@@ -182,11 +145,7 @@ Vẽ ROC curve và thể hiện 3 ví dụ trên biểu đồ:
     threshold:0.13, FPR:0.45, TPR:0.75
     threshold:0.07, FPR:0.85, TPR:0.97
 
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_4.png)
-
-
+<img src="/assets/img/scorecard_chapter3_4.png" />
 
 **AUC** - Area Under the Curve là diện tích nằm dưới ROC curve cũng là một tiêu chuẩn đánh giá mô hình, giá trị này càng cao thì mô hình càng tốt. 
 
@@ -201,7 +160,6 @@ Và chúng ta có thể tính GINI theo công thức đơn giản dưới đây:
 
 Sau khi chúng ta xây dựng được mô hình thì vấn đề triển khai thế nào cho dễ dàng hỗ trợ cho vận hành tốt nhất cũng là vấn đề quan trọng
 
-
 ### Bước 1:  Chuyển dải xác xuất về score:
 
 Đầu tiên khi Chúng ta dùng phương thức predict_proba() để chấm điểm thì kết quả trả về sẽ là một dải xác xuất, ta hoàn toàn có thể dùng dải xác xuất này là điểm số để đánh giá chất lượng của từng trường hợp. 
@@ -210,22 +168,11 @@ Tuy nhiên con số xác xuất thì sẽ không được mỹ quan và thân th
 
 Dữ liệu thường có phân phối lệch trái do số giá trị có class 0 chiếm áp đảo, cho nên điều quan trọng hơn hết là khi ta chuyển dải xác xuất sang dải score ta có thể tổ chức lại phân phối của dải điểm để gần với phân phối chuẩn.
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_5.png)
-
-
+<img src="/assets/img/scorecard_chapter3_5.png" />
 
 **Phân phối của dải score cân xứng hơn hẳn, sẽ phù hợp cho ứng dụng, hỗ trợ vận hành hơn dải xác xuất.**
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_6.png)
-
-
-
+<img src="/assets/img/scorecard_chapter3_6.png" />
 
 ### Bước 2: Chuyển dải score về các bin:
 
@@ -233,13 +180,7 @@ Tuy dải score đã đẹp rồi, nhưng ta vẫn cần khái quát chúng hơn
 
 Trường hợp dưới đây mình gon dải score vào 5 bin sao cho số lượng phần tử mỗi bin xấp xỉ nhau, từ đó ta có thể đễ dàng phân tích theo nhiều chiều hơn.
 
-
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_7.png)
-
-
+<img src="/assets/img/scorecard_chapter3_7.png" />
 
 Với cách thức trên thì việc đưa mô hình vào vận hành là rất thuận tiện rồi. Bài kỳ này xin kết thúc tại đây. 
 

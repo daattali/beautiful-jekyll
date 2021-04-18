@@ -3,6 +3,7 @@ layout: page
 title: Explain the Scorecard Model
 subtitle: Credit Scorecard chapter 4
 tags: [Credit Scorecard]
+thumbnail-img: /assets/img/scorecard_chapter4_1.png
 ---
 
 
@@ -29,16 +30,15 @@ Và cũng có vẻ bất công khi chúng ta đặt Target cao hơn cho 1 nhân 
 
 ## 2 Giải thích mô hình không đơn giản
 
-
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_0.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_0.png" width="700" text-align="center"/>
 
 Trong Machine learning, luôn có một sự đánh đổi: "Tính tường minh của mô hình tỉ lệ nghịch với tính chính xác", mô hình càng chính xác thì càng bí hiểm. Sự phức tạp đến từ bản chất của algorithm, số lượng input features hoặc cả 2. Thời đại Big Data và IOT đã cưỡng ép chúng ta phải lựa chọn những algorithm phức tạp nhất, vì những mô hình tuyến tính không có cách nào xử lý được lượng data lớn cỡ đó.
 
 Một số hình ảnh về sự phức tạp của các thuật toán Machine learning hiện đại:
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_0_1.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_0_1.png" width="700" text-align="center"/>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_0_2.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_0_2.png" width="700" text-align="center"/>
 
 Cả 2 mô hình trên đều có cấu trúc vô cùng phức tạp nhằm mục đích bao quát dữ liệu theo nhiều chiều và rút trích được các tri thức trong đó.
 
@@ -46,7 +46,7 @@ Trong sơ đồ trên, những mô hình chính xác nhất lại chính là nh�
 
 Sơ đồ sau đây tóm tắt quy trình Suy diễn-Diễn dịch dựa vào mô hình:
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_1.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_1.png" width="700" text-align="center"/>
 
 Để có thể thực hiện các ý tưởng kể trên chúng ta cần đặt ra các câu hỏi: 
   1. Mô hình này chính xác đến đâu ? Có đáng tin cậy hay không ?
@@ -150,12 +150,11 @@ Phương pháp đầu tiên được áp dụng là LIME (Local Interpretable Mo
   </tbody>
 </table>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_2.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_2.png" width="700" text-align="center"/>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_3.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_3.png" width="700" text-align="center"/>
 
 Trong 11 features có ảnh hưởng tới kết quả tiên lượng: 8 trong số đó phản đối cho kết quả "Paid"
-
 
 Các yếu tố ủng hộ: 
 - PAID_LAST_MONTH  = 1 : có Paid vào tháng trước 
@@ -368,16 +367,11 @@ Phương pháp Descriptive Machine Learning EXplanations cho phép diễn giải
   </tbody>
 </table>
 
-
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_4.png" width="700" text-align="center"/>
-
-
+<img src="/assets/img/scorecard_chapter4_4.png" width="700" text-align="center"/>
 
 Lại một trường hợp có thanh toán trong tháng trước, và ngày thanh toán gần nhất là các đây 16 ngày. Có thể thấy khác hàng thanh toán đều với 6 lần thanh toán trong 6 tháng, DPD cách đây 2 và 3 tháng đều bằng 0. Tuy nhiên tháng trước và tháng này, DPD liên tục rớt xuống dù khách hàng có thanh toán. Dù thanh toán đều khách hàng vẫn chưa đóng đủ EMI nên hợp đồng vẫn trượt xuống trong khi POS còn rất thấp, có thể khách hàng chưa hiểu rõ hoặc không đồng tình với cách tính phí-lãi của công ty. Tình trạng trên đã kéo dài 2 tháng có thể tác động tiêu cực đến khách hàng nên trường hợp này được đưa vào trường hợp khó thu và được mô hình đưa ra xác suất thanh toán rất thấp chỉ 16.2 %.
 
 Tuy nhiên khi phân tích rõ vấn đề, các bộ phận, phòng ban liên quan hoàn toàn có thể đưa ra các hành động, giải pháp kịp thời và phù hợp để giải quyết các khúc mắc của khách hàng, và có thể nâng cao xác suất thu hơn.
-
-
 
 ## 4 Các trường hợp thực tế: 
 
@@ -405,13 +399,9 @@ B2:
   </tbody>
 </table>
 
+<img src="/assets/img/scorecard_chapter4_eg_3_0.png" width="700" text-align="center"/>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_3_0.png" width="700" text-align="center"/>
-
-
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_3_1.png" width="700" text-align="center"/>
-
-
+<img src="/assets/img/scorecard_chapter4_eg_3_1.png" width="700" text-align="center"/>
 
 <table border="1" class="dataframe" style="text-align: center; font-size: 10px;">
   <thead>
@@ -434,11 +424,9 @@ B2:
   </tbody>
 </table>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_4_0.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_eg_4_0.png" width="700" text-align="center"/>
 
-
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_4_1.png" width="700" text-align="center"/>
-
+<img src="/assets/img/scorecard_chapter4_eg_4_1.png" width="700" text-align="center"/>
 
 <table border="1" class="dataframe" style="text-align: center; font-size: 10px;">
   <thead>
@@ -461,12 +449,9 @@ B2:
   </tbody>
 </table>
 
+<img src="/assets/img/scorecard_chapter4_eg_1_0.png" width="700" text-align="center"/>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_1_0.png" width="700" text-align="center"/>
-
-
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_1_1.png" width="700" text-align="center"/>
-
+<img src="/assets/img/scorecard_chapter4_eg_1_1.png" width="700" text-align="center"/>
 
 <table border="1" class="dataframe" style="text-align: center; font-size: 10px;">
   <thead>
@@ -489,13 +474,9 @@ B2:
   </tbody>
 </table>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_2_0.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_eg_2_0.png" width="700" text-align="center"/>
 
-
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_2_1.png" width="700" text-align="center"/>
-
-
-
+<img src="/assets/img/scorecard_chapter4_eg_2_1.png" width="700" text-align="center"/>
 
 <table border="1" class="dataframe" style="text-align: center; font-size: 10px;">
   <thead>
@@ -518,10 +499,9 @@ B2:
   </tbody>
 </table>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_5_0.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_eg_5_0.png" width="700" text-align="center"/>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_5_1.png" width="700" text-align="center"/>
-
+<img src="/assets/img/scorecard_chapter4_eg_5_1.png" width="700" text-align="center"/>
 
 <table border="1" class="dataframe" style="text-align: center; font-size: 10px;">
   <thead>
@@ -544,10 +524,9 @@ B2:
   </tbody>
 </table>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_6_0.png" width="700" text-align="center"/>
+<img src="/assets/img/scorecard_chapter4_eg_6_0.png" width="700" text-align="center"/>
 
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter4_eg_6_1.png" width="700" text-align="center"/>
-
+<img src="/assets/img/scorecard_chapter4_eg_6_1.png" width="700" text-align="center"/>
 
 
 

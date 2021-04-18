@@ -43,32 +43,30 @@ Một số dự án của mình:
 
 Scorecard cho nhóm nợ B3 Loan:
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_0.png)
 
+<img src="/assets/img/Scorecard_intro_0.png" />
 
 
 Scorecard cho sản phẩm Card:
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_1.png)
-
-
-
+<img src="/assets/img/Scorecard_intro_1.png" />
 
 Scorecard cho nhóm nợ B1 và B2 Loan:
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_2.png)
+<img src="/assets/img/Scorecard_intro_2.png" />
 
 ### Một số report mình build để theo dõi performance theo mô hình:
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report0.png)
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report1.png)
+<img src="/assets/img/scorecard_report0.png" />
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report2.png)
+<img src="/assets/img/scorecard_report1.png" />
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report3.png)
+<img src="/assets/img/scorecard_report2.png" />
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report4.png)
+<img src="/assets/img/scorecard_report3.png" />
+
+<img src="/assets/img/scorecard_report4.png" />
 
 
 

@@ -270,16 +270,11 @@ param và lựa chọn params cho score tốt nhất
 </table>
 </div>
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/credit_scorecard_01.png)
-
+<img src="/assets/img/credit_scorecard_01.png" />
 
 **Model RF: RandomForestClassifier() cho kết quả AUC cao nhất : 0.77**
 
 do vậy ta dùng bộ best params của mô hình của RF để train mô hình dự báo chính của chúng ta.
-
 
 
     RandomForestClassifier(bootstrap=True, class_weight=None, criterion='entropy',
@@ -291,11 +286,7 @@ do vậy ta dùng bộ best params của mô hình của RF để train mô hìn
                            verbose=0, warm_start=False)
 
 
-
 **Thêm các metrix để đánh giá mô hình:**
-
-
-
 
 <div>
 <style scoped>
@@ -340,22 +331,13 @@ do vậy ta dùng bộ best params của mô hình của RF để train mô hìn
 </div>
 
 
-
 Do chúng ta đang cố gắp phân loại khách hàng vào 2 nhóm, do vậy chỉ số **AUC** và **KS** sẽ được ưu tiên dùng trong việc đánh giá mô hình
 
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/credit_scorecard_02.png.png)
+<img src="/assets/img/credit_scorecard_02.png" />
 
 **Với mô hình RandomForestClassifier, chúng ta có thể lấy được độ quan trọng của từng biến tới mô hình:**
 
-
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/credit_scorecard_03.png)
-
-
+<img src="/assets/img/credit_scorecard_03.png" />
 
 Vậy là tới đây chúng ta đã biết cách để tìm ra mô hình machine learning tối ưu để giải quyết vấn đề của mình, bài cũng khá dài nên chapter này sẽ tạm dừng tại đây.
 
