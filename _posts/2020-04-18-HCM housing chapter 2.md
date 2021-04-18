@@ -11,21 +11,20 @@ Currently, I am crawling real estate data to forecast future house price trends.
 ## Step 1: 
 Create a Google spreadsheet file on my Google drive to store the data I've collected.
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_0.png)
-
+<img src="/assets/img/hcm_housing_chap2_0.png" text-align="center"/>
 
 ## Step 2: 
 Create your own Data Studio project:
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_1.png)
 
+<img src="/assets/img/hcm_housing_chap2_1.png" text-align="center"/>
 
 ## Step 3: 
 Connect the Data studio with the Google spreadsheet we just created:
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_2.png)
+<img src="/assets/img/hcm_housing_chap2_2.png" text-align="center"/>
 
 ## Step 4: 
 Reformat the data fields:
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_3.png)
+<img src="/assets/img/hcm_housing_chap2_3.png" text-align="center"/>
 
 ## Step 5: 
 

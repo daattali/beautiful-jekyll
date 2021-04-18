@@ -33,7 +33,9 @@ Chúng ta đã làm được các việc sau:
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
+    table {
+      font-size: 12px;
+    }
     .dataframe tbody tr th {
         vertical-align: top;
     }
@@ -201,7 +203,9 @@ Bộ dữ liệu thay thế giá trị missing = 0:
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
+    table {
+      font-size: 12px;
+    }
     .dataframe tbody tr th {
         vertical-align: top;
     }
@@ -279,7 +283,9 @@ Bộ dữ liệu thay thế giá trị missing = median:
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
+    table {
+      font-size: 12px;
+    }
     .dataframe tbody tr th {
         vertical-align: top;
     }
