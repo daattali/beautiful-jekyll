@@ -1,16 +1,79 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 
 ---
+    
+<img src="/assets/img/me.jpg" width="200" text-align="center"/>
+-----------------
 
-My name is Inigo Montoya. I have the following qualities:
+- Nguyen Quang Minh         
+- 0914198598
+- nguyenquanminh4996@gmail.com
+- District 2, HCM city
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+### EDUCATION : 
+-----------------
+**Banking University Of Ho Chi Minh City**:
+1. Finance and Banking 
+2. Management information systems 
 
-### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### SKILLS
+-----------------
+    
+**Machine learning:**
+- Proficient in building credit scoring model and implementing in business.
+- Build object detection model with keras
+- Build chatbot with ntlk, rasa
+    
+**Database:** 
+ - **SQL**: Oracle, MySql - build the data-mart for Machine learning models and reports
+ - **No-SQL**: MongoDB - build database for small company.
+ 
+**Python:**
+- Build machine learning model with Sklearn, Keras, nltk, ...
+- Object-oriented programming. 
+- Data analysis with pandas, numpy
+- Data visualization with matplotlib, seaborn, plotly
+- Crawl data and build automation tool with selenium, beautiful soup, requset, request-html,...
+- Build website, restful-Api with Flask, Django. 
+    
+**JavaScript:** 
+ - Build many small web applications with <a href="https://maximu49.github.io/2019-11-15-google_app/">google ecosystem</a>.
+ - Web Development with React.
+ - Mobile App Development with React Native.
+
+
+**BI:** 
+ - Data-studio, Python-Dash, has many <a href="https://maximu49.github.io/2020-04-18-HCM-housing-chapter-2/">projects</a>.
+
+
+### WORK EXPERIENCE:
+-----------------
+**Senior Data Modeling** at **VPBank Finance Company Limited - FECREDIT (07/2019 - Present)**   
+
+- Building Credit Scorecard models for Loan - B1, B2, B3 and Card-Product.
+- Building automation reports on development and operation of Credit Scorecard model.
+- Use machine learning and statistics on optimizing and forecasting business operations.
+- see more at <a href="/assets/img/2019-12-22-Credit-score-chapter-0/"> Scorecard series</a> and <a href="https://maximu49.github.io/Statistic/"> Statistic series</a>.
+
+
+**Deployment specialist** at **SS4U Softwares Join Stock Company (04/2018 - 10/2018)**
+
+- Business analysis: Manufacturing, purchasing, selling, inventory and accounting.
+- Building administrative reports.
+
+
+
+### HONORS & AWARDS:
+-----------------
+- Best Performance 2019 of FeCredit
+
+<img src="/assets/img/bang.jpg" width="500" />
+
+- Entering the semi-finals of the Entropy Data Analytics Competition organized by the John Von Neumann Institute.    
+
+<img src="/assets/img/jvn2017.jpg" width="500" />
+

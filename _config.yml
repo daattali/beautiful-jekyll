@@ -9,22 +9,33 @@
 title: My Website
 
 # Your name to show in the footer
-author: Some Person
+author: Nguyễn Quang Minh
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+#  Home: "https://minmax49.github.io/"
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
-
-# --- Logo --- #
-
-# Image to show in the navigation bar - works best with a square image
+#  Resources:
+#    - Githuh: "https://github.com/minmax49"
+#    - Facebook: "https://www.facebook.com/Minh4996"
+  Projects: 
+    - CRM : "https://minmax49.github.io/2020-10-26-Credit-score-chapter-4/"
+  Series: 
+    - Scorecard: "credit scorecard"
+    - HCM-housing: "HCM housing"
+    - Computer-vision: "computer-vision"
+    - NLP: "nlp"
+    - Statistic: "Statistic"
+    - javascript: "javascript"
+    - other: "other"
+    
+  Tags: "tags"
+  #Author's site: "https://sites.google.com/view/nguyen-quang-minh"
+  
+# Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -39,12 +50,19 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+ # rss: false
+  email: nguyenquangminh4996@gmail.com
+  facebook: Minh4996
+  linkedin: minh-nguyễn-quang-42b18a19a
+  telephone: 0914198598
+
+# social-network-links:
+#   email: "someone@example.com"
+#   facebook: deanattali
+#   github: daattali
+#   twitter: daattali
+#   patreon: DeanAttali
+#   youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -187,7 +205,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Asia/Ho_Chi_Minh"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
