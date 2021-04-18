@@ -3,6 +3,7 @@ layout: post
 title: Scorecard with Machine learning 
 subtitle: Credit Scorecard chapter 2
 tags: [Credit Scorecard]
+thumbnail-img: /assets/img/credit_scorecard_01.png
 ---
 
 Bài viết thứ 2 nằm trong series về **Credit Scorecard** trong các tổ chức tín dụng. Trong bài này chúng ta cùng tìm hiểu cách ứng dụng các mô hình Machine trong chấm điểm tín dụng cũng như tìm ra mô hình tối ưu nhất. 

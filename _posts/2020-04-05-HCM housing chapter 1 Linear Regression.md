@@ -3,6 +3,7 @@ layout: post
 title: House price prediction
 subtitle: HCM housing chapter 1 
 tags: [HCM housing]
+thumbnail-img: /assets/img/chapter_1_house_prices_predict_4.png
 ---
 
 Bài này mình sẽ nói thêm 1 chút về cách xử lý dữ liệu cũng như xây dựng mô hình dự đoán giá nhà cơ bản và rất đơn giản.
@@ -24,8 +25,6 @@ Chúng ta đã làm được các việc sau:
 - bỏ 1 số trường không dùng
 - đổi tên trường
 - tách giá trị số từ chuỗi
-
-
 
 
 
@@ -275,9 +274,6 @@ Bộ dữ liệu thay thế giá trị missing = 0:
 
 Bộ dữ liệu thay thế giá trị missing = median:
 
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -361,9 +357,7 @@ Bộ dữ liệu thay thế giá trị missing = median:
 
 Xem phân phối của các biến:
 
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_1.png)
-
+<img src="/assets/img/chapter_1_house_prices_predict_1.png" />
 
 
 **correlation matrix** cho ta thấy sự tương quan giữa các biến, 
@@ -372,39 +366,19 @@ Xem phân phối của các biến:
 - giá trị thấp (min =-1) cho nghịch biến 
 - và bàng quan khi = 0.
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_2.png)
-
-
-
-
+<img src="/assets/img/chapter_1_house_prices_predict_2.png" />
 
     array(['price', 'area', 'road_wide', 'bedrooms', 'toilets'], dtype=object)
 
-
-
 Top các thuộc tính có tương quan cao với biến price:
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_3.png)
-
-
-
+<img src="/assets/img/chapter_1_house_prices_predict_3.png" />
 
 Xem qua quan hệ tuyến tính giữa các biến độc lập và biến phụ thuộc:
 
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_4.png)
-
-
-
+<img src="/assets/img/chapter_1_house_prices_predict_4.png" />
 
 ### Hồi quy tuyến tính với phương pháp OLS
-
 
 <table class="simpletable">
 <caption>OLS Regression Results</caption>
@@ -482,12 +456,7 @@ Xem qua quan hệ tuyến tính giữa các biến độc lập và biến phụ
 </tr>
 </table>
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_5.png)
-
-
+<img src="/assets/img/chapter_1_house_prices_predict_5.png" />
 
 ### Giải thích 1 số thuật ngữ thống kê:
 
@@ -511,15 +480,11 @@ Xem qua quan hệ tuyến tính giữa các biến độc lập và biến phụ
 
 
 
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_6.png)
-
-
+<img src="/assets/img/chapter_1_house_prices_predict_6.png" />
 
   4. **RMSE**:  Root Mean Square Error
   
   Là chênh lệch giữa giá trị thực và giá trị dự báo nhằm đánh giá chất lượng hay sự phù hợp của mô hình dự báo.
-
 
 
     rmse on test: 1.2007801545340961

@@ -3,6 +3,7 @@ layout: post
 title: Credit Scorecard Intro
 subtitle: Credit Scorecard chapter 0
 tags: [Credit Scorecard]
+thumbnail-img: /assets/img/Scorecard_intro_2.png
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: HCM housing Intro
 subtitle: HCM housing chapter 0
 tags: [HCM housing]
+thumbnail-img: /assets/img/housing_0_2.png
 ---
 
 
@@ -366,14 +367,8 @@ Chỉ lấy các record có 'price_unit là' 'tỷ' và 'area_unit' là 'm²' v�
     dtypes: object(4)
     memory usage: 516.6+ KB
 
-
-
 Nhận thấy giá trị số sẽ bao gồm các phần tử bắt đầu cho đến ký tự '(' trong chuỗi nên ta viết hàm xử lý như dưới:
  
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -497,40 +492,20 @@ Nhận thấy giá trị số sẽ bao gồm các phần tử bắt đầu cho �
 </div>
 
 
-
 ## Bước 2 : Biểu diễn dữ liệu
 - Dữ liệu khá đa dạng nhưng mình chỉ quan tâm tới các diện tích < 200m2 và giá tiền < 100 tỷ:
 
-
-
 Có 24 quận nên chia làm 4 dòng 6 cột vẽ cho đẹp
 
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/output_22_0.png)
-
-
-
+<img src="/assets/img/housing_0_0.png" width="700" />
 
 Biểu đồ quan hệ giữa area và price theo từng quận :
 
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/output_24_0.png)
-
-
-
-
-
+<img src="/assets/img/housing_0_1.png" width="700" />
 
 Các quận nội thành và phân bổ price:
 
-
-
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/output_25_1.png)
-
-
+<img src="/assets/img/housing_0_2.png" width="700" />
 
 Tới đây thì dữ liệu cũng tàm tạm để xây dựng các mô hình dự đoán giá nhà rồi, và đó cũng sẽ là chủ để trong kỳ tới. 
 
