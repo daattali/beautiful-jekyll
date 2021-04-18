@@ -25,7 +25,7 @@ navbar-links:
     - Scorecard: "credit scorecard"
     - Statistic: "credit scorecard"
     - HCM-housing: "HCM housing"
-    - Computer-vision: "computer vision"
+    - Computer-vision: "ComputerVision"
     - NLP: "nlp"
     # - javascript: "javascript"
   DevOps: "DevOps"
