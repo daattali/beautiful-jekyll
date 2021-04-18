@@ -18,25 +18,9 @@ title: 'credit scorecard'
 {%- if tag == "Credit Scorecard" -%}
 <div id="full-tags-list">
   <div class="post-list">
-    {%- for post in site.tags[tag] -%}
+    {%- for post in posts -%}
     <article class="post-preview">
-      {{curtag}}
-      {%- capture thumbnail -%}
-      {% if post.thumbnail-img %}
-      {{ post.thumbnail-img }}
-      {% elsif post.cover-img %}
-      {% if post.cover-img.first %}
-      {{ post.cover-img[0].first.first }}
-      {% else %}
-      {{ post.cover-img }}
-      {% endif %}
-      {% else %}
-      {% endif %}
-      {% endcapture %}
-      {% assign thumbnail=thumbnail | strip %}
 
-      {% if site.feed_show_excerpt == false %}
-      {% if thumbnail != "" %}
       <div class="post-image post-image-normal">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
           <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
