@@ -23,10 +23,10 @@ navbar-links:
   #   - CRM : "https://minmax49.github.io/2020-10-26-Credit-score-chapter-4/"
   Data mining: 
     - Scorecard: "credit scorecard"
+    - Statistic: "statistic"
     - HCM-housing: "HCM housing"
     - Computer-vision: "computer vision"
     - NLP: "nlp"
-    - Statistic: "Statistic"
     # - javascript: "javascript"
   DevOps: "DevOps"
   Tags: "tags"
