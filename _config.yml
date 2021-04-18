@@ -19,9 +19,9 @@ navbar-links:
 #  Resources:
 #    - Githuh: "https://github.com/minmax49"
 #    - Facebook: "https://www.facebook.com/Minh4996"
-  Projects: 
-    - CRM : "https://minmax49.github.io/2020-10-26-Credit-score-chapter-4/"
-  Series: 
+  # Projects: 
+  #   - CRM : "https://minmax49.github.io/2020-10-26-Credit-score-chapter-4/"
+  Tech Series: 
     - Scorecard: "credit scorecard"
     - HCM-housing: "HCM housing"
     - Computer-vision: "computer-vision"
@@ -35,7 +35,7 @@ navbar-links:
   
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
