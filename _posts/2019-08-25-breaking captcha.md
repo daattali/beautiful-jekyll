@@ -3,8 +3,8 @@ layout: post
 title: Breaking captcha CIC
 subtitle: ứng dụng Computer Vision
 tag: Computer Vision
-thumbnail-img: /assets/img/captcha4.png
-share-img: /assets/img/captcha4.png
+thumbnail-img: /assets/img/captcha3.png
+share-img: /assets/img/captcha3.png
 ---
 
 
@@ -31,8 +31,8 @@ Việc lọc màu cũng là 1 cách rất tốt để lấy mẫu. Ta chỉ cầ
 
 Sau đây là một số kết quả dự báo từ mô hình (hình đã qua open-cv nên màu hơi khác, mình lười chỉnh lại): 
 
-<img src="/assets/img/captcha3.png" width="700" />
+<img src="/assets/img/captcha2.png" width="700" />
 
-<img src="/assets/img/captcha4.png" width="700" />
+<img src="/assets/img/captcha3.png" width="700" />
 
 Và bây giờ thì việc khó khăn nhất là captcha đã được hóa giải, công việc tự động khác thì đã có selenium lo, chúng ta có thể vào lấy thông tin trên CIC dễ như ăn cháo với hiệu suất gấp mấy chục lần con người. 
