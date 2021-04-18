@@ -21,15 +21,14 @@ navbar-links:
 #    - Facebook: "https://www.facebook.com/Minh4996"
   # Projects: 
   #   - CRM : "https://minmax49.github.io/2020-10-26-Credit-score-chapter-4/"
-  Tech Series: 
+  Data mining: 
     - Scorecard: "credit scorecard"
     - HCM-housing: "HCM housing"
-    - Computer-vision: "computer-vision"
+    - Computer-vision: "computer vision"
     - NLP: "nlp"
     - Statistic: "Statistic"
-    - javascript: "javascript"
-    - other: "other"
-    
+    # - javascript: "javascript"
+  DevOps: "DevOps"
   Tags: "tags"
   #Author's site: "https://sites.google.com/view/nguyen-quang-minh"
   

@@ -2,7 +2,7 @@
 layout: page
 title: Nginx - Gunicorn
 subtitle: Tips for deploying Python applications with Nginx using Gunicorn
-tag: [other, linux, devops]
+tag: [devops]
 ---
 
 
