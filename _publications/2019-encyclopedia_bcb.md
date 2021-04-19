@@ -1,5 +1,5 @@
 ---
-article_authors: Hall MA, Cole B, Moore JH.
+article_authors: <b>Hall MA</b>, Cole B, Moore JH.
 article_year: 2019
 article_title: "Gene-Gene Interactions: An Essential Component to Modeling Complexity for Precision Medicine."
 article_journal: Encyclopedia of Bioinformatics and Computational Biology

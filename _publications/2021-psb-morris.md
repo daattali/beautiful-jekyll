@@ -1,5 +1,5 @@
 ---
-article_authors: Morris A. Aguilar, John McGuigan, and Molly A. Hall
+article_authors: Morris A. Aguilar, John McGuigan, and <b>Molly A. Hall</b>
 article_year: 2021
 article_title: "Semi-automated NMR Pipeline for Environmental Exposures: New Insights on the Metabolomics of Smokers versus Non-smokers"
 article_journal: Pacific Symposium on Biocomputing
