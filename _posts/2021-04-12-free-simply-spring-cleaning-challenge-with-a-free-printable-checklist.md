@@ -54,7 +54,7 @@ And then make sure to pop on over to[ Jessica's blog](https://mamabearwooten.com
 * [Ultimate room by room spring cleaning checklist](https://www.tasteofhome.com/article/spring-cleaning-checklist/ )
 * [Spring Cleaning Challenge](https://creatingmaryshome.com/spring-cleaning-challenge/#:\~:text=Cleaning%20is%20a%20safe%20and,the%20rest%20of%20your%20year!)
 
-Other cleaning blogs of mine:
+#### Other cleaning blogs of mine you may enjoy:
 
 * [My Laundry Stripping Method for Stinky Clothing](https://www.simplehomemom.com/my-laundry-stripping-method-for-stinky-clothing/)
 * [Throw out the Cleaning Routine and Try this Instead + free printable master  task list you can fill in](https://www.simplehomemom.com/throw-out-the-cleaning-routine-and-try-this-instead/)
