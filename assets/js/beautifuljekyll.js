@@ -6,6 +6,8 @@ var BeautifulJekyllJS = {
   numImgs : null,
 
   init : function() {
+    setTimeout(BeautifulJekyllJS.initNavbar, 10);
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
@@ -25,6 +27,21 @@ var BeautifulJekyllJS = {
 
     // show the big header image
     BeautifulJekyllJS.initImgs();
+  },
+
+  initNavbar : function() {
+    // Set the navbar-dark/light class based on its background color
+    const rgb = $('.navbar').css("background-color").replace(/[^\d,]/g,'').split(",");
+    const brightness = Math.round(( // http://www.w3.org/TR/AERT#color-contrast
+      parseInt(rgb[0]) * 299 +
+      parseInt(rgb[1]) * 587 +
+      parseInt(rgb[2]) * 114
+    ) / 1000);
+    if (brightness <= 125) {
+      $(".navbar").removeClass("navbar-light").addClass("navbar-dark");
+    } else {
+      $(".navbar").removeClass("navbar-dark").addClass("navbar-light");
+    }
   },
 
   initImgs : function() {

@@ -1,6 +1,6 @@
 <ul class="list-inline text-center footer-links">
 
-{%- if site.social-network-links.rss -%}
+{%- if site.rss-description -%}
   <li class="list-inline-item">
     <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
       <span class="fa-stack fa-lg" aria-hidden="true">
@@ -59,7 +59,7 @@
     </a>
   </li>
 {%- endif -%}
-  
+
 {%- if site.social-network-links.github -%}
   <li class="list-inline-item">
     <a href="https://github.com/{{ site.social-network-links.github }}" title="GitHub">
@@ -248,7 +248,7 @@
        <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
      </span>
      <span class="sr-only">ORCID</span>
-  </a>
+   </a>
  </li>
 {%- endif -%}
 
@@ -260,8 +260,44 @@
         <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
       </span>
       <span class="sr-only">Google Scholar</span>
+    </a>
+  </li>
+{%- endif -%}
+
+{%- if site.social-network-links.patreon -%}
+  <li class="list-inline-item">
+    <a href="https://patreon.com/{{ site.social-network-links.patreon }}" title="Patreon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Patreon</span>
+    </a>
+  </li>
+{%- endif -%}
+  
+{%- if site.social-network-links.medium -%}
+  <li class="list-inline-item">
+    <a href="https://medium.com/@{{ site.social-network-links.medium }}" title="Medium">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Medium</span>
+    </a>
+  </li>
+{%- endif -%}
+
+{%- if site.social-network-links.itchio -%}
+  <li class="list-inline-item">
+    <a href="https://{{ site.social-network-links.itchio }}.itch.io/" title="Itchio">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Itchio</span>
    </a>
   </li>
- {%- endif -%}
+{%- endif -%}
 
 </ul>

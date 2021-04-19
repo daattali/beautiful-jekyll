@@ -2,7 +2,6 @@
 _site
 .sass-cache
 .vagrant
-Gemfile.lock
 
 # general
 .DS_Store
@@ -12,5 +11,3 @@ ehthumbs.db
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
-
-.idea
