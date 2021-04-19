@@ -15,8 +15,8 @@ layout: base
           {% assign publications_sorted = pub_year.items | sort: "article_title" %}
           {% for publication in publications_sorted %}
             <a href="{{ publication.article_url }}" class="list-group-item list-group-item-action border-0">
-                {{ publication.article_authors }} <b>({{ publication.article_year }})</b></br>
-                {{ publication.article_title }}</br>
+                {{ publication.article_authors }} ({{ publication.article_year }})
+                {{ publication.article_title }}
                 <i>{{publication.article_journal}}</i>
                 {%- if publication.article_volume %}{{publication.article_volume | prepend: ": " | strip}}{% endif -%}
                 {%- if publication.article_pages %}{{publication.article_pages | prepend: ", "}}{% endif -%}
