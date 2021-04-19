@@ -8,11 +8,9 @@ subtitle: ''
 
 ## Course Description
 
-_The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key areas such as daily routines, decluttering, and habits. Participants gain access to course units (both text and some video) as well as a course guide full of guided printables, journal prompts, resources, and more.
+_The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits. 
 
-**Please note:** This is NOT a one size fits all course. It’s also not a one-time solution course as I believe that life is a LIFELONG process of learning and growing. I will promise you, however, that this course is packed with things you can learn and grow with today and going forward. 
-
-I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the S_implify Your Home Life: a course for busy moms_. I’m so happy to have you here to check this course out to see if it would be helpful for you!
+**Please note:** This is not a one size fits all course. It’s also not a one-time solution course as I believe that life is a LIFELONG process of learning and growing. I will promise you, however, that this course is packed with things you can learn and grow with today and going forward.  I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the S_implify Your Home Life: a course for busy moms_. I’m so happy to have you here to check this course out to see if it would be helpful for you!
 
 ![A picture of the course name with a wreath around it.](/uploads/143711566_168124874776024_169296773630613994_n.jpg "Simplify Your Home Life: a Course for Busy Moms.")
 
@@ -28,10 +26,8 @@ I'm not an expert, but I have life experience as a mom of four, and journeying a
 
 * A guidebook to go along with the course full of worksheets, journal prompts, resources, and more
 * Text, videos, and images for each unit
-* Worksheets to go alongside many topics in the course so you can take action
-* A community course group that you'll have access to 
-* Support through the course - I'm an email or message away 
 * You’ll have access to this course forever as well as all of the future updates to the course
+* Support through the course - I'm an email or message away 
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
