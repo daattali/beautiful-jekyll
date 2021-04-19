@@ -4,17 +4,15 @@ title: Course
 subtitle: ''
 
 ---
-_The Simplify Your Home Life: a course for busy moms_ is a six week flexible online course - pace it at your own pace or go at the suggested pace.
-
 #### ***currently closed, with a new round coming in June! You can signup to be on the waitlist below.**
 
 ## Course Description
 
-The Simplify Your Home Life: a course for busy moms is a six week flexible online course designed to help busy moms explore how to simplify home life in many key areas such as daily routines, decluttering, and habits. Participants gain access to course units (both text and some video) as well as a course guide full of guided printables, journal prompts, resources, and more.
+_The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key areas such as daily routines, decluttering, and habits. Participants gain access to course units (both text and some video) as well as a course guide full of guided printables, journal prompts, resources, and more.
 
-This is NOT a one size fits all course. It’s also not a one-time solution course as I believe that life is a LIFELONG process of learning and growing. I will promise you, however, that this course will be packed with things you can learn and grow with today and going forward. There will be some things that stick and make you think, some things that may not apply, but you’ll still be able to learn from them.
+**Please note:** This is NOT a one size fits all course. It’s also not a one-time solution course as I believe that life is a LIFELONG process of learning and growing. I will promise you, however, that this course is packed with things you can learn and grow with today and going forward. 
 
-I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the Simplify Your Home Life: a course for busy moms. I’m so happy to have you here to check this course out to see if it would be good for you!
+I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to the S_implify Your Home Life: a course for busy moms_. I’m so happy to have you here to check this course out to see if it would be helpful for you!
 
 ![A picture of the course name with a wreath around it.](/uploads/143711566_168124874776024_169296773630613994_n.jpg "Simplify Your Home Life: a Course for Busy Moms.")
 
@@ -49,19 +47,20 @@ I'm not an expert, but I have life experience as a mom of four, and journeying a
 
 ### Goal setting + Mindset
 
-_What you will find in this course:_
+#### _What you will find in this course:_
 
-* NEW: a guidebook to go along with the course full of worksheets, journal prompts, resources, and more
-* Text, videos, images for each unit
+* A guidebook to go along with the course full of worksheets, journal prompts, resources, and more
+* Text, videos, and images for each unit
 * Worksheets to go alongside many topics in the course so you can take action
-
-Go at your own pace or follow along with the suggested outline and ask questions in the community course group. I'm also an email or message away. You’ll have access to this course afterwards forever too. PS you get access to any future updates of this course too!
+* A community course group that you'll have access to 
+* Support through the course - I'm an email or message away 
+* You’ll have access to this course forever as well as all of the future updates to the course
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 #### Pricing
 
-The course is a one time payment of $27USD or you can split into two payments. Just send me an email at [simplehomemom@gmail.com](mailto:simplehomemom@gmail.com) to chat about that before payment.
+\*Updated pricing coming soon.
 
 ## Reviews
 
@@ -75,7 +74,7 @@ The course is a one time payment of $27USD or you can split into two payments. J
 
 ## About me
 
-I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom seven years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a minimalist lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by learning flexible planning methods + skills. More intention. Seeking less stuff, less to do. And. Always learning and growing. Listen more about my take on simplifying things at home on a podcast I was interviewed on [here](https://www.stitcher.com/show/make-joy-normal-cozy-homeschooling/episode/keeping-it-simple-an-interview-with-kelly-79787253). And a blog of mine you may like: [Four Ways to Create a Simpler Home](https://www.simplehomemom.com/four-ways-to-create-a-simpler-home/).
+I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom eight  years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a simpler lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by learning flexible planning methods and skills. Listen more about my take on simplifying things at home on a podcast I was interviewed on [here](https://www.stitcher.com/show/make-joy-normal-cozy-homeschooling/episode/keeping-it-simple-an-interview-with-kelly-79787253). And a blog of mine you may like: [Four Ways to Create a Simpler Home](https://www.simplehomemom.com/four-ways-to-create-a-simpler-home/).
 
 Kelly :-)
 
