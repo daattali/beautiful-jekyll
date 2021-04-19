@@ -18,34 +18,11 @@ I'm not an expert, but I have life experience as a mom of four, and journeying a
 
 ## Overview of the units
 
-### Setting the stage
-
-* Discovering your priorities + values
-* Habits
-
-### Decluttering
-
-* General decluttering concepts
-* Wardrobes/clothing
-* Kids' stuff
-* Maintenance decluttering
-
-### Time management
-
-* Finding extra time tips
-* Sustainable, slow productivity
-
-### Planning
-
-* Simplifying your to do list
-* Planning strategies: autopilot/automate, loop planning
-
-### Routines
-
-* Daily routines
-* Cleaning and tidying routines
-
-### Goal setting + Mindset
+* **Setting the stage for simplifying:** discovering your priorities and values; habits
+* **Decluttering**: basic concepts and a few specific areas: clothing, kid's stuff, maintenance decluttering
+* **Planning**: finding extra time, productivity, simplifying your to do lists, helpful planning strategies for home life
+* **Routines**: daily routines in general; cleaning and tidying routines
+* **Goal setting and mindset**
 
 #### _What you will find in this course:_
 
