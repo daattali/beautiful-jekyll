@@ -28,7 +28,7 @@ common-js:
 <!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
 {% include head.html %}
 
-<body>
+<body {% if page.toc %}data-spy="scroll" data-target="#toc"{% endif %}>
 
   {% include gtm_body.html %}
 
