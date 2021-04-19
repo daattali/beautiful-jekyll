@@ -14,4 +14,4 @@ Huck Institutes of the Life Sciences
 
 The Pennsylvania State University
 
-[Current CV](../../pdfs/members/2019.8.14_CV_Hall.pdf)
+[Current CV](../../pdfs/members/2021-4-19_CV_Hall.pdf)
