@@ -9,6 +9,7 @@
 - Added support for Patreon, Medium, and Itch.io in the social network links in the footer (#783, #788)
 - Fixed bug where special characters in the title led to broken share tags (#744)
 - Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
+- Added support for Cloudflare Analytics (#797)
 
 ## v5.0.0 (2020-09-15)
 
