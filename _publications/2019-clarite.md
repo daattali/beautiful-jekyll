@@ -1,5 +1,5 @@
 ---
-article_authors: Lucas AM, et al
+article_authors: Lucas AM*, Palmiero N*, McGuigan J, Passero K, Zhou J, Orie D, Ritchie MD, and <b>Hall MA</b>
 article_year: 2019
 article_title: "CLARITE facilitates the quality control and analysis process for EWAS of metabolic-related traits."
 article_journal: Frontiers in Genetics

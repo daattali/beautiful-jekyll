@@ -1,5 +1,5 @@
 ---
-article_authors: Zhou J, et al
+article_authors: Zhou J, Passero K, Palmiero N, Mueller-Myhsok B, Kleber M, Maerz W, and <b>Hall MA</b>
 article_year: 2020
 article_title: "Investigation of gene-gene interactions in cardiac traits and serum fatty acid levels in the LURIC Health Study"
 article_journal: PloS one

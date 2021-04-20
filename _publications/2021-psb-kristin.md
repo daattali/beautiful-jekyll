@@ -1,5 +1,5 @@
 ---
-article_authors: Passero K, et al
+article_authors: Passero K, Setia-Verma S, McAllister K, Manrai A, Patel C, <b>Hall MA</b> 
 article_year: 2021
 article_title: "What about the environment? Leveraging multi-omic datasets to characterize the environment’s role in human health"
 article_journal: Pacific Symposium on Biocomputing
