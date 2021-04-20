@@ -11,4 +11,4 @@ I graduated with a PhD in Biostatistics from The University of Texas Health Scie
 
 **Application:** cancer prevention, smoking behaviors, mental health, addiction, physical activity, nutrition, microbiome, mHealth, ecological momentary assessment, intensive longitudinal data, environmental health, human health and performance in space
 
-Here's a link to my [CV](https://mkoslovsky.github.io/CV.pdf), updated Jan 2021.
+Here's a link to my [CV](https://mkoslovsky.github.io/CV.pdf), updated April 2021.
