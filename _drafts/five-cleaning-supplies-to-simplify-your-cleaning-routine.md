@@ -1,7 +1,12 @@
 ---
 post: post
-tags: []
-thumbnail-img: "/uploads/headshot.jpg"
+tags:
+- cleaning supplies
+- simplify your cleaning routine
+- cleaning routine
+- simple cleaning
+- simple cleaning supplies
+thumbnail-img: "/uploads/3_20210412_132342_0002_compress10.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
