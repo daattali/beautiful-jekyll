@@ -8,7 +8,7 @@ subtitle: ''
 
 * [Newest blogs](https://www.simplehomemom.com)
 * [Simply Spring Cleaning Challenge Free Printable](https://www.simplehomemom.com/free-simply-spring-cleaning-challenge-with-a-free-printable-checklist/)
-* [Ten Areas for Self Care for Busy Moms](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/)
+* [How to Do a Zero Spend Month that Works For You + a plan your zero spend month freebie](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
@@ -17,10 +17,8 @@ subtitle: ''
 
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
 * [Book Review of Minimalist Moms: Living and Parenting with Simplicity + bonus video interview with Diane Boden: 3 important tips for minimalist moms just starting out](https://www.simplehomemom.com/book-review-of-minimalist-moms-living-and-parenting-with-simplicity/)
-* [Digital declutter challenge](https://www.simplehomemom.com/3-steps-to-start-tackling-your-digital-clutter/)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
 * [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
-* [How to Do a Zero Spend Month that Works For You + a plan your zero spend month freebie](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
 
 ## Homeschooling
 
