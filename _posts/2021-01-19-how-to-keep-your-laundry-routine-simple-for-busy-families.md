@@ -39,7 +39,7 @@ I made sure I have enough [laundry baskets](https://www.thespruce.com/best-laund
 
 Laundry is something that is a part of most of our lives, so creating simple routines that are doable and sustainable is so key if you’re looking to keep your laundry routine simple for your busy family. And! Make sure to listen to me chatting about keeping laundry simple for busy families in detail over at [Minimalist Moms Podcast](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/) as well, which you can find [here](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/) “[Simplify Your Laundry Routine](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)”.
 
-_Also catch the freebie: Create Your Simple Laundry Routine (ten questions to ask yourself to help you design yours). You can snag that_ [_HERE_](https://mailchi.mp/a5efd04962e4/simplelaundry)_._
+_Also catch the freebie: Create Your Simple Laundry Routine (ten questions to ask yourself to help you design yours). You can snag that_ [_HERE_](https://mailchi.mp/a5efd04962e4/simplelaundry)_. You may also enjoy my six week online course Simplify Your Home Life: a course for busy moms. I do a whole unit just on routines. Find more on the course_ [_here_](https://www.simplehome.com/course)_._
 
 ![A picture of someone falling into a washer.](/uploads/how-to-keep-your-laundry-routine-simple-for-busy-families-shm2.jpg "How to Keep Your Laundry Routine Simple for Busy Families SHM")
 
