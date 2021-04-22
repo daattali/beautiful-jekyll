@@ -10,7 +10,7 @@ subtitle: ''
 
 _The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits.
 
-![A picture of the course name with a wreath around it.](/uploads/143711566_168124874776024_169296773630613994_n.jpg "Simplify Your Home Life: a Course for Busy Moms.")
+![A picture of a home and text describing the course.](/uploads/simplify-your-home-life-course.jpg "Simplify Your Home Life Course")
 
 ## Overview of the units
 
