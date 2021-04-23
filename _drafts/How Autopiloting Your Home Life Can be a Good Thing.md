@@ -7,7 +7,8 @@ readtime: true
 comments: true
 show-avatar: true
 title: How Autopiloting Your Home Life Can be a Good Thing
-description: ad
+description: Helpful suggestion of what you can autopilot in your home life that will
+  help simplify your days.
 subtitle: ''
 share-img: ''
 redirect_from: []
