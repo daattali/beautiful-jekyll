@@ -19,9 +19,9 @@ share-img: ''
 redirect_from: []
 
 ---
-![A lady sitting with all her cleaning supplies.](/uploads/3_20210412_132342_0002_compress10.jpg "Five Cleaning Supplies to Simplify Your Cleaning Routine SHM")
-
 I've come far in my cleaning skills over the years. I guess having four kids speeds up that process maybe? At least it did for me. I have gotten into a groove with my one cleaning bucket of supplies to simplify things a lot. It just travels with me around the home. And today on the blog, I'm sharing about five cleaning supplies to simplify your cleaning routine. I hope it helps you out today, too.
+
+![A lady sitting with her cleaning supplies.](/uploads/3_20210412_132342_0002_compress10.jpg "Five Cleaning Supplies to Simplify Your Cleaning Routine")
 
 ## Five cleaning supplies to simplify your cleaning routine:
 
