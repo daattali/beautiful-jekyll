@@ -38,7 +38,7 @@ Let's find out theta as shown in the circle. As theta is an angle in a parpendic
  ![CodeCogsEqn](https://user-images.githubusercontent.com/25270629/116124094-a885e180-a6e5-11eb-9593-a4bd3c815253.gif)
 
 
-Now lets's see - we have radius of the circle r, we have an angle theta, if we double theta we get the angle for arch AB. So, we can calculate the arch length using S = r * theta formula. At first we will calculate L' as given in the problem statement.
+Now lets's see - we have radius of the circle r, we have an angle theta, if we double theta we get the angle for arch AB. So, we can calculate the arch length using <img src="https://latex.codecogs.com/gif.latex?S=&space;r\Theta" title="S= r\Theta" /> formula. At first we will calculate L' as given in the problem statement.
     
     L' = (1 + n * C)
     
