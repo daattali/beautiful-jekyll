@@ -5,4 +5,4 @@ title: Jobs
 ---
 
 ## Current Positions
-- [Postdoctoral Teaching & Learning Fellow position(s)](https://www.stat.ubc.ca/postdoctoral-teaching-and-learning-fellow-ubc-master-data-science-program-1)
+- [2021W Term 1 TAs](https://ubc.ca1.qualtrics.com/jfe/form/SV_8iAOvYLnjShfs22)
