@@ -40,7 +40,7 @@ Let's find out theta as shown in the circle. As theta is an angle in a parpendic
 
 Now lets's see - we have radius of the circle r, we have an angle theta, if we double theta we get the angle for arch AB. So, we can calculate the arch length using <img src="https://latex.codecogs.com/gif.latex?S=&space;r\Theta" title="S= r\Theta" /> formula. At first we will calculate L' as given in the problem statement.
     
-    L' = (1 + n * C)
+<img src="https://latex.codecogs.com/gif.latex?L{}'=&space;\left&space;(&space;1&plus;n*c&space;\right&space;)*L{\color{Teal}&space;{\color{Emerald}&space;}}" title="L{}'= \left ( 1+n*c \right )*L{\color{Teal} {\color{Emerald} }}" />
     
 We can now apply binary search/bisection method using h as a key or mid value, lower bound as 0 and higher bound as L/2 (as it is said- Input data guarantee that no rod expands by more than one-half of its original length, so h must be smaller than L/2). For each corresponding value of h, S will be determined and compared to L'. If S is greater that L' that means we need to lower the value of h. If S is lesser that L' that means we need to increase the value of h. After some careful iteration we will get our required value of h within O(log2(L/2)) complexity for each testcase. 
 
