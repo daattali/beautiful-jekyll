@@ -16,4 +16,6 @@ Here we are given a solid rod of length L that expands to length L' and creates 
 
 Here h+c is the diameter of the circle. This line have intersected our original rod shape AB at the centre and so we can say that L = 2a or a = L/2. From [intersecting Cord Theorem](https://www.mathopenref.com/chordsintersecting.html) we get - 
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi}=-1">
+    a * a = h * c
+or, a^2 = h * c
+so, c = a^2 / h
