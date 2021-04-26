@@ -14,22 +14,22 @@ Here we are given a solid rod of length L that expands to length L' and creates 
 
 ![Crepe](/assets/img/1137.png)
 
-Here h+c is the diameter of the circle. our aim is to find this h. This line have intersected our original rod shape line AB at the centre and so we can say that L = 2a or a = L/2. Now, from the [intersecting Cord Theorem](https://www.mathopenref.com/chordsintersecting.html) we get - 
+Here h+c is the diameter of the circle. our aim is to find this h. This line have intersected our original rod shape line AB at the centre and so we can say that L = 2a or a = L/2. Now, from the [Intersecting Cord Theorem](https://www.mathopenref.com/chordsintersecting.html) we get - 
 
-    a * a = h * c
-    a^2 = h * c
-    so, c = a^2 / h
+<img src="https://latex.codecogs.com/gif.latex?a\cdot&space;a=&space;h\cdot&space;c" title="a\cdot a= h\cdot c" />
+<img src="https://latex.codecogs.com/gif.latex?a^{2}=&space;h\cdot&space;c" title="a^{2}= h\cdot c" />
+<img src="https://latex.codecogs.com/gif.latex?c=&space;\frac{a^{2}}{h}" title="c= \frac{a^{2}}{h}" />
 
 Let D be the diameter of this circle and r be the radius. Hence,
     
-    D = h + c
-      = h + a^2/h
+<img src="https://latex.codecogs.com/gif.latex?D&space;=h&plus;c" title="D =h+c" />
+<img src="https://latex.codecogs.com/gif.latex?D&space;=h&plus;\frac{a^{2}}{h}" title="D =h+\frac{a^{2}}{h}" />
 Deviding D by 2 we get the radius
     
-    r = D/2
-      = h/2 + a^2/2h
-      = h/2 + (L/2)^2/2h [as a=L/2]
-      = h/2 + L^2/8h
+<img src="https://latex.codecogs.com/gif.latex?r=&space;\frac{D}{2}" title="r= \frac{D}{2}" />
+  <img src="https://latex.codecogs.com/gif.latex?=\frac{h}{2}&plus;\frac{a^{2}}{h}" title="=\frac{h}{2}+\frac{a^{2}}{h}" />
+  <img src="https://latex.codecogs.com/gif.latex?=\frac{h}{2}&plus;\frac{(\frac{L}{2})^{2}}{2h}" title="=\frac{h}{2}+\frac{(\frac{L}{2})^{2}}{2h}" /> [as a=L/2]
+  <img src="https://latex.codecogs.com/gif.latex?=\frac{h}{2}&plus;\frac{{L}^{2}}{8h}" title="=\frac{h}{2}+\frac{{L}^{2}}{8h}" />
 
 Let's find out theta as shown in the circle. As theta is an angle in a parpendicular triangle and we know value of two of the sides r and a, we can easily calculate it.
     
