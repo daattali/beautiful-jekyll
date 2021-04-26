@@ -13,3 +13,7 @@ tags: [lightoj, binary_search, geometry]
 Here we are given a solid rod of length L that expands to length L' and creates an arch shape with the original shape of the rod. Our task is to compute the distance by which the center of the rod is displaced. The problem could be easily visualized with the given picture in the problem statement. Let's assume the straight rod is placed inside a circle and the arch shaped rod is on the perimeter of this circle. We can visualize it like this - 
 
 ![Crepe](/assets/img/1137.png)
+
+Here h+c is the diameter of the circle. This line have intersected our original rod shape AB at the centre and so we can say that L = 2a or a = L/2. From [intersecting Cord Theorem](https://www.mathopenref.com/chordsintersecting.html) we get - 
+
+$$a^2 + b^2 = c^2 $$
