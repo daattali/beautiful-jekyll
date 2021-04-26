@@ -52,16 +52,13 @@ int main()
 {
     int T;
     double L,n,C;
-    
     cin >> T;
-    
     for(int t=1;t<=T;t++)
     {
         cin >> L >> n >> C;
         double L_prime = (1.0+n*C)*L;
         double a = L/2.0,s=L_prime;
         double h,r,theta,temp_s,low=0,high=L/2.0;
-        
         while(high-low>EPS)
         {
 			h = (low+high)/2.0;
@@ -73,12 +70,8 @@ int main()
                 high=h;
             else low=h;
         }
-        
         cout <<  "Case " << t << ": " << setprecision(7) << fixed << low << endl;
-        
     }
-    
-    
     return 0;
 }
 {% endhighlight %}
