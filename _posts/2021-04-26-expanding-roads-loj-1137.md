@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expanding Roads (LightOj-11137)
+title: Expanding Roads (LightOj-1137)
 subtitle: Binary search with basic geometry
 cover-img: /assets/img/problem-1138-expanding_rod-1605774697103.png
 thumbnail-img: /assets/img/social media preview.png
