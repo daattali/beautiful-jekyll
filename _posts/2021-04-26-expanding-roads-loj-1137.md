@@ -34,7 +34,7 @@ Deviding D by 2 we get the radius
 Let's find out theta as shown in the circle. As theta is an angle in a parpendicular triangle and we know value of two of the sides r and a, we can easily calculate it.
     
     sin(theta) = a/r
-    theta = sin^-1(a/r)
+    theta = \arcsin(a/r)
 
 Now lets's see - we have radius of the circle r, we have an angle theta, if we double theta we get the angle for arch AB. So, we can calculate the arch length using S = r * theta formula. At first we will calculate L' as given in the problem statement.
     
