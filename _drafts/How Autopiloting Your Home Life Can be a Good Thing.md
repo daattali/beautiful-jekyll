@@ -14,15 +14,15 @@ share-img: ''
 redirect_from: []
 
 ---
-PICTURES ON DESKTOP
-
-How Autopiloting Your Home Life Can be a Good Thing
-
 Have you heard of autopiloting before? I see autopiloting as essentially the non-negotiable, no thinking decisions of your day that don’t require being fully present. The less small decisions we have to make every day, the better. This is because using autopiloting helps to free up our mental space for more pressing things. It also can give space for what matters most for us. Today on the blog, I'm sharing about [how autopiloting your home life can be a good thing](https://an.athletenetwork.com/blog/autopilot-is-a-good-thing).
 
-What is autopiloting? According to [a blog](https://www.mindfulnessmuse.com/mindfulness/pros-and-cons-of-being-on-automatic-pilot#:\~:text=In%20%E2%80%9CMindfulness%2DBased%20Cognitive%20Therapy,the%20present%20moment%20is%20clouded.) on mindfulnessmuse.com:
+![A picture of a home mat on the porch.](/uploads/how-autpiloting-your-home-life-can-be-a-good-thing-shm.jpg "How Autopiloting Your Home Life Can be a Good Thing SHM")
 
-In “Mindfulness-Based Cognitive Therapy,” Crane explains that “the term ‘automatic pilot’ describes a state of mind in which one acts without conscious intention or awareness of present-moment sensory perception.”
+## How Autopiloting Your Home Life Can be a Good Thing
+
+**What is autopiloting?** According to [a blog](https://www.mindfulnessmuse.com/mindfulness/pros-and-cons-of-being-on-automatic-pilot#:\~:text=In%20%E2%80%9CMindfulness%2DBased%20Cognitive%20Therapy,the%20present%20moment%20is%20clouded.) on mindfulnessmuse.com:
+
+> In “Mindfulness-Based Cognitive Therapy,” Crane explains that “the term ‘automatic pilot’ describes a state of mind in which one acts without conscious intention or awareness of present-moment sensory perception.”
 
 How many decisions do you make each day? 35 000. ["It's estimated that the average adult makes about 35 000 remotely conscious decisions each day."](http://science.unctv.org/) Holy guacamole, right? Making decisions takes up a huge amount of mental space, so when this (aka me) recovering over-complicator realized this, I really tried to simplify things in my life and our home. And. One simple time management and planning strategy I use to do this on the regular to slash that 35Kish is, you guessed it: autopiloting.
 
