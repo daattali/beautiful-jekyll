@@ -43,7 +43,7 @@ Now lets's see - we have radius of the circle r, we have an angle theta, if we d
 We can now apply binary search/bisection method using h as a key or mid value, lower bound as 0 and higher bound as L/2 (as it is said- Input data guarantee that no rod expands by more than one-half of its original length, so h must be smaller than L/2). For each corresponding value of h, S will be determined and compared to L'. If S is greater that L' that means we need to lower the value of h. If S is lesser that L' that means we need to increase the value of h. After some careful iteration we will get our required value of h within O(log2(L/2)) complexity for each testcase. 
 
 
-{% highlight c++ linenos %}
+{% highlight cpp linenos %}
 #include<bits/stdc++.h>
 #define EPS 1e-7
 using namespace std;
@@ -68,7 +68,7 @@ int main()
             r = ((L*L)/(8.0*h)) + (h/2.0);
             theta = 2.0*asin(a/r);
             temp_s = r*theta;
-            //cout << h << " " << temp_s << " " << s << endl;
+
             if(temp_s>=s)
                 high=h;
             else low=h;
