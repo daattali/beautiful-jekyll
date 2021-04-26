@@ -1,7 +1,7 @@
 ---
 post: post
 tags: []
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/sweeping-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
