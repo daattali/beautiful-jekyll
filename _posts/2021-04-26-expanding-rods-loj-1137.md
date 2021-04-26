@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expanding Roads (LightOj-1137)
+title: Expanding Rods(LightOj-1137)
 subtitle: Binary search with basic geometry
 cover-img: /assets/img/mathematical-seamless-pattern-with-geometric-shapes-formulas_89016-90.jpg
 thumbnail-img: /assets/img/problem-1138-expanding_rod-1605774697103.png
@@ -34,7 +34,7 @@ Deviding D by 2 we get the radius
 
   <img src="https://latex.codecogs.com/gif.latex?=\frac{h}{2}&plus;\frac{a^{2}}{h}" title="=\frac{h}{2}+\frac{a^{2}}{h}" />
   
-  <img src="https://latex.codecogs.com/gif.latex?=\frac{h}{2}&plus;\frac{(\frac{L}{2})^{2}}{2h}[&space;a&space;=&space;\frac{L}{2}]" title="=\frac{h}{2}+\frac{(\frac{L}{2})^{2}}{2h}[ a = \frac{L}{2}]"/>
+
   
   <img src="https://latex.codecogs.com/gif.latex?=\frac{h}{2}&plus;\frac{{L}^{2}}{8h}" title="=\frac{h}{2}+\frac{{L}^{2}}{8h}" />
 
