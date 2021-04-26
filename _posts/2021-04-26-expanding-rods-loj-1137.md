@@ -73,7 +73,7 @@ int main()
         
         while(high-low>EPS)
         {
-			h = (low+high)/2.0;
+	    h = (low+high)/2.0;
             r = ((L*L)/(8.0*h)) + (h/2.0);
             theta = 2.0*asin(a/r);
             temp_s = r*theta;
