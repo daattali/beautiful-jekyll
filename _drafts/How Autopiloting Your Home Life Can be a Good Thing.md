@@ -7,6 +7,7 @@ tags:
 - simple home tips
 - simple home life
 - simple living
+- simple home tips
 thumbnail-img: "/uploads/sweeping-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
