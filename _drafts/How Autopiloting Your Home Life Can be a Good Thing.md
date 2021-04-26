@@ -1,6 +1,12 @@
 ---
 post: post
-tags: []
+tags:
+- simple home
+- simple habits
+- autopilot planning
+- simple home tips
+- simple home life
+- simple living
 thumbnail-img: "/uploads/sweeping-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
