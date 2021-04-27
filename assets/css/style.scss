@@ -2,3 +2,34 @@
 ---
 
 @import "{{ site.theme }}";
+
+
+.c-nav {
+  &__list {
+    text-transform: uppercase;
+	list-style: none;
+	padding: 0;
+	background: #fff;
+	border-radius: None;
+	border: 0;
+	width: auto;
+  }
+
+  &__item {
+  	width: auto;
+  	float: none;
+  }
+
+  &__link {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+	line-height: 1;
+	color: #267CB9;
+	display: block;
+	text-align: left;
+	padding-top: 0;
+	height: auto;
+	width: auto;
+  }
+}
