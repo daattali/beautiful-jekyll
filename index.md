@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-permalink: /home/
+permalink: /
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
