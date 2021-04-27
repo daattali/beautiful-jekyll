@@ -8,6 +8,10 @@ share-img: /assets/img/social media preview.png
 comments: true
 tags: [lightoj, binary_search, geometry]
 ---
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZRMQJ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 [problem statement](https://lightoj.com/problem/expanding-rods)
 
