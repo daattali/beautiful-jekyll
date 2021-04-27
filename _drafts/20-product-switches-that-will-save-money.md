@@ -9,7 +9,7 @@ show-avatar: true
 title: '20 Product Switches that Will Save Money '
 description: 20 ideas of products to consider switching to, one at a time, to save
   money long-term and also be more sustainable too.
-subtitle: "+ bonus: 50 product switches to save money"
+subtitle: "+ bonus freebie: 50 product switches to save money"
 share-img: ''
 redirect_from: []
 
@@ -18,9 +18,9 @@ redirect_from: []
 
 IMAGES ON DESKTOP.
 
-Years back, I mean years back. I bought reusable [cloth pads](https://www.self.com/story/reusable-pads) from ebay. I was the only one of my friends to try them and I'm sure I was the oddball too. Ha! Nowadays it's much more common, so I don't feel so alone. Cloth pads has been among twenty product switches our family has made to save us money. Today on the blog I'm sharing with you 20 product switches that will save money.   
-   
- 20 product switches that will save money
+Years back, I mean years back. I bought reusable [cloth pads](https://www.self.com/story/reusable-pads) from ebay. I was the only one of my friends to try them and I'm sure I was the oddball too. Ha! Nowadays it's much more common, so I don't feel so alone. Cloth pads has been among twenty product switches our family has made to save us money. Today on the blog I'm sharing with you 20 product switches that will save money.
+
+20 product switches that will save money
 
 1\. Protein powder containers or really any nice empty containers you empty out after its original use for home organization.
 
@@ -62,22 +62,23 @@ Years back, I mean years back. I bought reusable [cloth pads](https://www.self.c
 
 20\. Castile soap and vinegar to replace various cleaning supplies.
 
-  
- 20 product switches that will save money. Is it worth it?
+20 product switches that will save money. Is it worth it?
 
 It took time, but we switched things out one at a time as we figured out what worked for us. The savings and environmental impact of a lot of the switches have been worth it to us too over the years.
 
-By the way, I linked as much as I could in my amazon shops from the above list – from the safety razor we use to the castile soap I like.  
- 
+By the way, I linked as much as I could in my amazon shops from the above list – from the safety razor we use to the castile soap I like.
 
 50 product switches to save money freebie
 
-I complied a list of 50 more product switches to save you money. You can find that HERE if you enjoy switching up your products too to save money!  
-   
- Tell me in the comments below. What's one product switch that has saved you money?   
-   
- Other blogs you may like of mine:  
- 
+I complied a list of 50 more product switches to save you money. You can find that HERE if you enjoy switching up your products too to save money!
+
+Tell me in the comments below. What's one product switch that has saved you money?
+
+**SAVE FOR FUTURE REFERENCE:**
+
+![A picture of someone punching in the calculator.](/uploads/20-product-switches-that-will-save-money-shm.jpg "20 Product Switches that Will Save Money SHM")
+
+Other blogs you may like of mine:
 
 Other blogs on saving money:
 
@@ -90,5 +91,3 @@ Other blogs on saving money:
 [https://www.savvynewcanadians.com/ways-frugal-people-save-money-everyday/](https://www.savvynewcanadians.com/ways-frugal-people-save-money-everyday/ "https://www.savvynewcanadians.com/ways-frugal-people-save-money-everyday/")
 
 ***
-
-[\[KB1\]](#_msoanchor_1)
