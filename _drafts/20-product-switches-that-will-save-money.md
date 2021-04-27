@@ -14,15 +14,11 @@ share-img: ''
 redirect_from: []
 
 ---
-20 product switches that will save money + bonus: 50 product switches to save money
-
-IMAGES ON DESKTOP.
-
 Years back, I mean years back. I bought reusable [cloth pads](https://www.self.com/story/reusable-pads) from ebay. I was the only one of my friends to try them and I'm sure I was the oddball too. Ha! Nowadays it's much more common, so I don't feel so alone. Cloth pads has been among twenty product switches our family has made to save us money. Today on the blog I'm sharing with you 20 product switches that will save money.
 
-20 product switches that will save money
+## 20 product switches that will save money
 
-1\. Protein powder containers or really any nice empty containers you empty out after its original use for home organization.
+1\. Protein powder containers or really any nice empty containers emptied out after its original use for home organization.
 
 2\. Disposable razors to a [safety razor](https://www.westcoastshaving.com/blogs/wet-shaving-and-grooming-blog/what-is-a-safety-razor-for-what-are-the-benefits). A safety razor is essentially a razor that has a handle that you use over and over and you only replace the blades as they dull, which are very affordable to replace.
 
@@ -68,7 +64,7 @@ It took time, but we switched things out one at a time as we figured out what wo
 
 By the way, I linked as much as I could in my amazon shops from the above list – from the safety razor we use to the castile soap I like.
 
-50 product switches to save money freebie
+### FREEBIE: 50 PRODUCT SWITCHES TO SAVE MONEY
 
 I complied a list of 50 more product switches to save you money. You can find that HERE if you enjoy switching up your products too to save money!
 
