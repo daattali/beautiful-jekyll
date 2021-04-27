@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Azure Blob 에서 Blobfuse 사용하기"
-date:   2021-03-23 11:15:00 +0900
+title:  "토이 프로젝트 안되나요? - 늦은 건가?"
+date:   2021-04-23 11:15:00 +0900
 author: Changbae Bang
-tags: [azure, blob, blobfuse, 장애대응, 잘지내죠, webOS]
+tags: [azure, blob, blobfuse, 장애대응, 잘지내죠, webOS, ]
 ---
 
 # 역사는 반복되고...
