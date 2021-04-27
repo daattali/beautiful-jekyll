@@ -1,7 +1,11 @@
 ---
 post: post
-tags: []
-thumbnail-img: "/uploads/headshot.jpg"
+tags:
+- saving money
+- frugal living
+- repurposing items
+- product switches to save money
+thumbnail-img: "/uploads/towels.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
@@ -28,7 +32,7 @@ Years back, I mean years back. I bought reusable [cloth pads](https://www.self.c
  8. Brand name cleaner to **natural** **soap spray**.
  9. Various products to **baking soda**. Here are some suggestions for [what you can use baking soda for](https://www.healthline.com/nutrition/baking-soda-benefits-uses).
 10. Toilet bowl cleaner to using **laundry powder**.
-11. Paper towels to using towels/rags and **microfiber cleaning cloths**. Here’s [a blog on some benefits to using microfiber for cleaning](https://tips.simplygoodstuff.com/benefits-of-cleaning-with-microfiber/).
+11. Paper towels to using towels/rags and **microfiber cleaning cloths**. Here’s [a blog on some benefits to using microfiber for cleaning](https://tips.simplygoodstuff.com/benefits-of-cleaning-with-microfiber/).![A picture of rolled up towels.](/uploads/towels.jpg "20 Product Switches that Will Save Money Towels SHM")
 12. Packaged mixes to **make our own DIY everything** such as [homemade hot chocolate](https://celebratingsweets.com/homemade-hot-chocolate/).
 13. Disposable one time use manual toothbrushes to **electric toothbrushes**.
 14. [**DIY oil cleanser**](https://www.healthline.com/health/oil-cleansing-method) for my washing my face.
