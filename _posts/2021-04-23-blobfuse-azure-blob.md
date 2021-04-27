@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "토이 프로젝트 안되나요? - 늦은 건가?"
+title:  "Azure Blob 에서 Blobfuse 사용하기"
 date:   2021-04-23 11:15:00 +0900
 author: Changbae Bang
 tags: [azure, blob, blobfuse, 장애대응, 잘지내죠, webOS, ]
@@ -30,7 +30,7 @@ Azure 의 저변이 확대 되길 바랍니다.
 
 Blob FUSE 라는 것인데 짧게 이야기 하면 Linux 만을 위한 것이고 Linux 에 깔아쓸 수 있는 페키지이며 깔면 Blob Storage 를 Mount 해서 사용할 수 있는 것인데 이게 나름 오픈소스 입니다.
 
-`I Love Linux` 잊지 않으셨죠?
+`I Love Linux` 있지 않으셨죠?
 
 사실 아래 포스트가 더 설명을 잘하고 있습니다.  
 
