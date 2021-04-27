@@ -20,8 +20,14 @@ The best thing about blogs is that people can share what they learn, talk from e
 </a>
 </p>
 
-I am passionate about new technologies in general but my heart goes to virtualization for which I grew a real interest and is in a way the foundation of every growing IT technologies nowadays. Containers, clouds, SDS, SDN, you name it, 95% chances that there is a hypervisor somewhere in the background. When time permits I run nested labs to test new features and products for potential implementation in my professional environment... or just to try new stuff with no real purpose apart from sharing it here.
+I am passionate about new technologies in general but my heart goes to virtualization for which I grew a real interest and is in a way the foundation of every growing IT technologies nowadays. Containers, clouds, SDS, SDN, you name it, 95% chances that there is a hypervisor somewhere in the background. When time permits I run nested labs to test new features and products for potential implementation in my professional environment or simply with no real purpose apart from sharing it here.
 
-I hope you find what you are after in this blog and maybe even learn something along the way, Cheers!
+---
+
+This blog being a mere brain dump of my IT journey, I also offer technical writing services in which the content is actually polished and professional.
+
+You can find most of my work on the <a href="https://www.altaro.com/dojo/author/xavier/">Altaro VMware Dojo</a> and <a href="https://www.vembu.com/blog/author/xavier/">Vembu's VMware blog</a>.
+
+Feel free to reach out if you seek technical writing or guest blogging services.
 
 ***
