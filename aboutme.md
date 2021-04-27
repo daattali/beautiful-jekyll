@@ -5,7 +5,7 @@ title: Author
 ---
 ### About me
 
-The best thing about blogs is that people can share what they learn, talk from experiences or make tutorials so everyone increase their knowledge in the process. I have always read articles and How-To's, be it for my job or not and it helped me a lot. This blog is the opportunity for me to contribute and give back to the community.
+The best thing about blogs is that people can share what they learn, talk from experiences or make tutorials so everyone increase their knowledge in the process. I have always read articles and How-To's, be it for my job or not and it helped me a lot. This blog is the opportunity for me to contribute and give back to the community. I consider it as being a mere brain dump of my IT journey.
 
 <p align="center">
 <a href="https://vexpert.vmware.com/directory/832" target="_blank">
@@ -24,7 +24,14 @@ I am passionate about new technologies in general but my heart goes to virtualiz
 
 ---
 
-This blog being a mere brain dump of my IT journey, I also offer technical writing services in which the content is actually polished and professional.
+As a day job I work as an IT consultant based in the south of France with a strong focus on infrastructure and virtualization.
+I work as a freelancer with various clients on various projects where I can add value and learn something in the process.
+
+Feel free to hit me up if you need consulting services and I'll be happy to chat.
+
+---
+
+I also offer technical writing services in which the content is a lot more polished and professional than my own blog.
 
 You can find most of my work on the <a href="https://www.altaro.com/dojo/author/xavier/">Altaro VMware Dojo</a> and <a href="https://www.vembu.com/blog/author/xavier/">Vembu's VMware blog</a>.
 
