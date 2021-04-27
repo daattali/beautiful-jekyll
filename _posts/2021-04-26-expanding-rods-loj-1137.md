@@ -5,6 +5,7 @@ subtitle: Binary search with basic geometry
 cover-img: /assets/img/mathematical-seamless-pattern-with-geometric-shapes-formulas_89016-90.jpg
 thumbnail-img: /assets/img/problem-1138-expanding_rod-1605774697103.png
 share-img: /assets/img/social media preview.png
+comments: true
 tags: [lightoj, binary_search, geometry]
 ---
 
