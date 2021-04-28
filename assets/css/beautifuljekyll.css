@@ -53,7 +53,7 @@ a:focus {
   color: {{ site.hover-col | default: "#0085A1" }};
 }
 blockquote {
-  color: #808080;
+  color: #FFFFFF;
   font-style: italic;
 }
 blockquote p:first-child {
@@ -786,7 +786,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 0.625rem 0.3125rem;
-  background-color: #FFF;
+  background-color: #404040;
   border-radius: 0;
   color: {{ site.text-col | default: "#404040" }};
 }
