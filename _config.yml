@@ -42,9 +42,9 @@ social-network-links:
   email: "marcoreis@me.com"
 #  facebook: deanattali
   github: mhar-vell
-  twitter: daattali
+  twitter: MarkoHeiss
 #  patreon: DeanAttali
-  youtube: c/daattali
+  youtube: MarcoReis15
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -78,7 +78,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "mmm"
+url-pretty: "mhar-vell/github.io/projects"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
