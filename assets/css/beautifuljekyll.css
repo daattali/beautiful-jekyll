@@ -870,7 +870,7 @@ pre {
   background-size: auto 3em;
   background-position-y: 0.625rem;
   border: 1px solid rgba(0,0,0,0.1);
-  border-left: 0.4375rem solid #444;
+  border-left: 0.4375rem solid #F8F8F8;
 }
 .highlight > pre:not([class~="highlight"]) { /* code block with line number */
   padding: 0;
@@ -927,6 +927,7 @@ pre {
   border: 1px solid #eee;
   border-left-width: 0.3125rem;
   border-radius: 0.3125rem 0.1875rem 0.1875rem 0.3125rem;
+  color: #404040;
 }
 
 .box-note {
