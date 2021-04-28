@@ -53,7 +53,7 @@ It took time, but we switched things out one at a time as we figured out what wo
 
 ### FREEBIE: 50 PRODUCT SWITCHES TO SAVE MONEY
 
-I complied a list of 50 more product switches to save you money, with some suggestions from friends. You can find that HERE if you enjoy switching up your products too to save money! And if you have a great product that will save money that you've switched, tell me in the comments below. I'd love to hear. I hope this blog gave you some new ideas today to save money. Happy saving!
+I complied a list of [50 more product switches to save money](https://mailchi.mp/cede3e30ede7/product-switches), with some suggestions from friends. You can find that [HERE](https://mailchi.mp/cede3e30ede7/product-switches) if you enjoy switching up your products too to save money! And if you have a great product that will save money that you've switched, tell me in the comments below. I'd love to hear. I hope this blog gave you some new ideas today to save money. Happy saving!
 
 **SAVE FOR FUTURE REFERENCE:**
 
