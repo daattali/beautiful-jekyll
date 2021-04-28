@@ -13,6 +13,7 @@
 .icon-cloud:before { content: '\e80b'; } /* '' */
 .icon-flight:before { content: '\e80c'; } /* '' */
 .icon-chart-bar:before { content: '\e80d'; } /* '' */
+.icon-link:before { content: '\e80e'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
@@ -21,6 +22,8 @@
 .icon-angle-circled-right:before { content: '\f138'; } /* '' */
 .icon-angle-circled-up:before { content: '\f139'; } /* '' */
 .icon-angle-circled-down:before { content: '\f13a'; } /* '' */
+.icon-youtube:before { content: '\f167'; } /* '' */
+.icon-youtube-play:before { content: '\f16a'; } /* '' */
 .icon-skype:before { content: '\f17e'; } /* '' */
 .icon-graduation-cap:before { content: '\f19d'; } /* '' */
 .icon-file-pdf:before { content: '\f1c1'; } /* '' */

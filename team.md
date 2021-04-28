@@ -1,18 +1,16 @@
 ---
 layout: default
-title: Team
+title: The team
 permalink: /team/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# The Team
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+|              |              |
+|:-------------|:------------------|
+| ![Christophe Eloy](/assets/img/ChEloy.jpg) | **Christophe Eloy** <br /> Principal Investigator <br /> <a href="mailto:christopheloy@gmail.com" title="email"><span class="icon-mail-alt"></span></a> <a href="http://www.irphe.fr/~eloy" title="personal webpage"><span class="icon-link"></span></a> <a href="http://www.twitter.com/EloyChristophe" title="Twitter: @EloyChristophe"><span class="icon-twitter"></span></a> <a href="http://github.com/celoy" title="Github: celoy"><span class="icon-github-circled"></span></a> |
+| <span class="icon-user"></span> | **Rémi Monthiller**  <br /> PhD student, since 2019  |
+| <span class="icon-user"></span> | **Tommaso Redaelli**  <br /> PhD student, since 2019 |
+| <span class="icon-user"></span> | **Aurore Loisy**  <br /> postdoc, since 2020         |
+| <span class="icon-user"></span> | **Hélène de Maleprade**  <br /> postdoc, since 2020  |
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll

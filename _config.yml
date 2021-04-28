@@ -23,7 +23,7 @@ logo: /assets/img/logoC0PEP0D.jpg
 show_downloads: false
 # email: christopheloy@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  EU-funded project "Life and death of a virtual copepod in turbulence".
+  EU-funded project
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: C0PEP0D

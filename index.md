@@ -24,6 +24,17 @@ The objective of C0PEP0D is to decipher how copepods exploit hydrodynamic and ch
 
 We hypothesize that reinforcement learning can help reverse-engineer the algorithms used by copepods. To test this hypothesis, we are building a virtual environment, where copepods are trained: virtual copepods sense flow velocity and chemical concentration and this sensing information is processed by a neural network trained by reinforcement learning. This theoretical and numerical approach is complemented by experiments on real copepods with the goal of measuring how copepods reacts in turbulent flow.
 
+## Project ID
+
+<dl>
+<dt>Title</dt><dd>Life and death of a virtual copepod in turbulence</dd>
+<dt>Acronym</dt><dd>C0PEP0D</dd>
+<dt>Host institution</dt><dd> <a href="https://www.centrale-marseille.fr">Centrale Marseille</a></dd>
+<dt>Principal investigator</dt><dd> <a href="https://www.irphe.fr/~eloy">Christophe Eloy</a></dd>
+<dt>Dates</dt><dd>2019-2024</dd>
+</dl>
+
+
 
 <!-- ----
 
@@ -34,7 +45,6 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
 # Header 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
