@@ -3,7 +3,7 @@ layout: post
 title: Maximum Palindromes (Hackerrank)
 subtitle: Elementary Combinatorics with Data Structure
 cover-img: /assets/img/1_s6hhrgR5_tXpO_j7uKaHMw.png
-thumbnail-img: /assets/img/social media preview.png
+thumbnail-img: /assets/img/1_s6hhrgR5_tXpO_j7uKaHMw.png
 share-img: /assets/img/social media preview.png
 comments: true
 tags: [hackerrank, data structure, combinatorics]
@@ -15,6 +15,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 [problem statement](https://www.hackerrank.com/challenges/maximum-palindromes/problem)
 
+The problem statement is clear and it states a query problem. We will be given a string and some queries l and r. For each query, we have to determine how many palindromes can be generated using the characters between and inclusive [l,r]. So, we need to calculate the character frequencies between [l,r] at first. It can be determined using a simple 2D cumulative sum array structure. But I have used segment tree because I wanted to solve a segment tree problem at that time :smile: . 
 
 {% highlight cpp linenos %}
 
