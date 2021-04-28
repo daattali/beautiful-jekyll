@@ -4,6 +4,29 @@ title: Home
 permalink: /
 ---
 
+# EU-funded C0PEP0D project
+
+## Context
+
+Copepods are millimetric crustaceans that play a crucial role in marine ecosystems. They
+live in all seas and oceans and are thought to be the most abundant multi-cellular organism of the planet. Yet, copepods are blind. To detect preys, predators and mates, copepods use highly-developed hydrodynamic and chemical sensing. How are they able to distinguish a meaningful signal in oceanic turbulence? Copepods being one of the greatest success story of marine evolution, they likely evolved smart algorithms to process this sensing information. But today, these algorithms are poorly understood.
+
+![Graphical abstract](/assets/img/graphical_abstract.jpg)
+**(Left)** View of a 5 mm long copepod _Euchaeta antarctica_ swimming (Catton et al. 2007). **(Right)** We train a virtual copepod by reinforcement learning. This copepod senses hydrodynamic and chemical signals, processes them with a neural network, and reacts.
+
+## Objectives
+
+The objective of C0PEP0D is to decipher how copepods exploit hydrodynamic and chemical sensing to track targets in turbulent flows. We address three questions:
+
+* **Q1: Mating.** How do male copepods follow the pheromone trail left by females?
+* **Q2: Finding.** How do copepods use hydrodynamic signals to "see"?
+* **Q3: Feeding.** What are the best feeding strategies in turbulent flow?
+
+We hypothesize that reinforcement learning can help reverse-engineer the algorithms used by copepods. To test this hypothesis, we are building a virtual environment, where copepods are trained: virtual copepods sense flow velocity and chemical concentration and this sensing information is processed by a neural network trained by reinforcement learning. This theoretical and numerical approach is complemented by experiments on real copepods with the goal of measuring how copepods reacts in turbulent flow.
+
+
+<!-- ----
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
@@ -122,4 +145,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 ```
 The final element.
-```
+``` -->

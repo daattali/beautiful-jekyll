@@ -41,20 +41,21 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+
+        <div class="social">
+          <a href="{{ site.twitter_url }}" title="Twitter: @{{ site.twitter_username }}"><span class="icon-twitter"></span></a>
+          <a href="{{ site.github_url }}" title="Github: {{ site.github_username }}"><span class="icon-github-circled"></span></a>
+        </div>
+
       </header>
+
       <section>
 
       {{ content }}
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View the Project on GitHub <small>{{ site.github.owner_name }}</small></a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
+        <img src="/assets/img/ERC.jpg" alt="EU flag and ERC logo" />
 
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>

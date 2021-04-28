@@ -21,13 +21,15 @@
 title: C0PEP0D
 logo: /assets/img/logoC0PEP0D.jpg
 show_downloads: false
-email: christopheloy@gmail.com
+# email: christopheloy@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  ERC-funded project "Life and death of a virtual copepod in turbulence".
+  EU-funded project "Life and death of a virtual copepod in turbulence".
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: EloyChristophe
-github_username:  celoy
+twitter_username: C0PEP0D
+twitter_url: http://twitter.com/C0PEP0D
+github_username:  C0PEP0D
+github_url: http://github.com/C0PEP0D
 
 # Build settings
 theme: jekyll-theme-minimal
