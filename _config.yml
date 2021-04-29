@@ -14,10 +14,13 @@ author: Raihan Khan
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+
+  Home: "https://raihankhan.github.io/"
   Contents:
     - Dynamic Programming: "Dynamic Programming"
-  Home: "https://raihankhan.github.io/"
+  
+  About Me: "aboutme"
+  
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #   - Learn markdown: "https://www.markdowntutorial.com/"
