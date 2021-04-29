@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Azure Blob 에서 Blobfuse 사용하기"
-date:   2021-04-23 11:15:00 +0900
+date:   2021-04-30 00:50:00 +0900
 author: Changbae Bang
 tags: [azure, blob, blobfuse, 새기능, content-type, 오픈소스, 야너두, 커미터모집, ]
 ---
