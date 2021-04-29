@@ -17,8 +17,8 @@ navbar-links:
 
   Home: "https://raihankhan.github.io/"
   Contents:
-    - Dynamic Programming: "Dynamic Programming"
-      - Decision Making:
+    - Dynamic Programming:
+      - Decision Making: "Dynamic Programming"
   
   About Me: "aboutme"
   
