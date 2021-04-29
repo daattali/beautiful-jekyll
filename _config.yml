@@ -17,6 +17,7 @@ navbar-links:
   About Me: "aboutme"
   Contents:
     - Dynamic Programming: "Dynamic Programming"
+  Home: "https://raihankhan.github.io/"
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #   - Learn markdown: "https://www.markdowntutorial.com/"
