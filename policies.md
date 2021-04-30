@@ -59,7 +59,7 @@ At the end of a course, you can convert your numerical grade back into a letter 
 
 ### Failed courses and C/C+ grades
 
-UBC courses are graded out of 100%. To pass an MDS course a student must score 60% or above. To graduate from MDS, a student must pass all courses, with no more than 3 credits in the 60%-67% range (C or C+). All MDS courses are worth 1 UBC credit except for Capstone, which is worth 6 credits. Thus, to graduate from MDS a student can get no more than 3 C/C+ grades in Blocks 1-6 and must also score higher than C/C+ in Capstone.
+UBC courses are graded out of 100%. To pass an MDS course a student must score 60% or above. To graduate from MDS, a student must pass all courses, with no more than 3 credits in the 60%-67% range (C or C+). All MDS courses are worth 1 UBC credit except for Capstone, which is worth 6 credits. Thus, to graduate from MDS a student can get no more than 3 C/C+ grades in Blocks 1-6 and must also score at least 68% in Capstone.
 
 ### Final course grades
 
