@@ -20,7 +20,7 @@ Scrambled eggs brain. Does this sound familiar sometimes? I know it does for me.
 
 > “Your mind is for having ideas, not holding them. There is no reason to ever have the same thought twice, unless you like having that thought.” - [David Allen](https://gettingthingsdone.com/), author of [_Getting Things Done_](https://fourminutebooks.com/getting-things-done-summary/#:\~:text=1%2DSentence%2DSummary%3A%20Getting,on%20the%20task%20at%20hand.)
 
-So what's a braindump?
+#### So what's a braindump?
 
 In my definition: A braindump is essentially writing your "brain down on paper". It’s writing down everything and anything (usually tasks or ideas) that comes to mind that keeps floating around in there. You can get fancier by categorizing or [prioritizing too](https://www.simplehomemom.com/how-a-priority-pyramid-can-change-your-life/).
 
@@ -34,7 +34,7 @@ In my definition: A braindump is essentially writing your "brain down on paper".
 
 ([from the Merriam Webster dictionary](https://www.merriam-webster.com/dictionary/brain%20dump))
 
-Ok, now we all understand what a braindump specifically is now. Right? Does braindumping sound good yet? Need a good braindump right now?
+_Ok, now we all understand what a braindump specifically is now. Right? Does braindumping sound good yet? Need a good braindump right now?_
 
 # How to unscramble your brain with a braindump: tips for making braindumps
 
@@ -48,15 +48,13 @@ Revisit your braindump when feeling less scrambled eggs and decide what to do wi
 
 #### 4 signs that you need to do a braindump to unscramble your brain
 
-INSERT INSTA POST
+**INSERT INSTA POST**
 
 Braindumping to unscramble your brain is a relatively simple concept and when put into practice, it can be so helpful. Make sure to have supplies on hand, braindump as needed, and enjoy!
 
-FREEBIE braindump printable planning page
+# FREEBIE: braindump printable planning page
 
-If braindumping is new to you or you just enjoy freebie planning pages, you may enjoy the braindumping printable planning page I put together. _I also have an upcoming class on beginner planning basics. If you’d like to be the first to know when that launches, shoot me a quick email at simplehomemom@gmail.com_
-
-[**https://mailchi.mp/df5816e44b8d/braindump-planner-pages**](https://mailchi.mp/df5816e44b8d/braindump-planner-pages "https://mailchi.mp/df5816e44b8d/braindump-planner-pages")
+If braindumping is new to you or you just enjoy freebie planning pages, you may enjoy the braindumping printable planning page I put together. You can find that braindump printable [HERE](https://mailchi.mp/df5816e44b8d/braindump-planner-pages). _I also have an upcoming class on beginner planning basics. If you’d like to be the first to know when that launches, shoot me a quick email at simplehomemom@gmail.com_
 
 **SAVE FOR FUTURE REFERENCE:**
 
@@ -66,15 +64,11 @@ If braindumping is new to you or you just enjoy freebie planning pages, you may 
 * [The Ultimate Stress Free Planning Method Anyone Can Use](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/)
 * [Four Ways to be Realistic with Your to do List](https://www.simplehomemom.com/four-ways-to-be-realistic-with-your-to-do-list/)
 * [How a Running to Do List Can Help Simplify Your Week](https://www.simplehomemom.com/how-a-running-to-do-list-can-help-simplify-your-weeks/)
+* And under the tag [simple planning](https://www.simplehomemom.com/tags/#simple%20planning).
 
-And under the tag [simple planning](https://www.simplehomemom.com/tags/#simple%20planning).
+**Other blogs on braindumping:**
 
-Other blogs on braindumping:
-
-[How to do a braindump](https://diaryofajournalplanner.com/brain-dump/)
-
-[How to complete and organize an effective brain dump](https://kalynbrooke.com/life-and-style/time-management/brain-dump-101/)
-
-[Braindumping for the stressed and anxious](https://medium.com/@micahmcg0035/brain-dumping-for-the-stressed-and-anxious-a6f76e6c05c8)
-
-[Using my Bullet journal to do a braindump](https://stationerynerd.com/braindump/)
+* [How to do a braindump](https://diaryofajournalplanner.com/brain-dump/)
+* [How to complete and organize an effective brain dump](https://kalynbrooke.com/life-and-style/time-management/brain-dump-101/)
+* [Braindumping for the stressed and anxious](https://medium.com/@micahmcg0035/brain-dumping-for-the-stressed-and-anxious-a6f76e6c05c8)
+* [Using my Bullet journal to do a braindump](https://stationerynerd.com/braindump/)
