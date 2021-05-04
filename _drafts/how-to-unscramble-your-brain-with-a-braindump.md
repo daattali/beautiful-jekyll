@@ -7,7 +7,7 @@ tags:
 - brain dump
 - planning tips
 - how to do a braindump
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/untitled-design.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
