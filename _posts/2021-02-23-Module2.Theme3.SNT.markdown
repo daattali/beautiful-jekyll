@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SNT : module 2 du thème 3'
-published: false
+published: true
 ---
 
 # À faire vous-même 1
@@ -15,9 +15,5 @@ En vous aidant de la vidéo située à <a href="https://www.youtube.com/watch?v=
 L'expérience du "petit monde" de 1967 a souvent été critiquée, expliquez pourquoi (vous trouverez ces informations sur le Net).
 
 
-# À faire vous-même 3
 
-<div class="centrer">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/fm5MSdPU8tY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
 
