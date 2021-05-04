@@ -3,6 +3,10 @@ post: post
 tags:
 - braindump
 - braindumping
+- simple planning
+- brain dump
+- planning tips
+- how to do a braindump
 thumbnail-img: "/uploads/headshot.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
@@ -26,11 +30,12 @@ In my definition: A braindump is essentially writing your "brain down on paper".
 
 **Other braindump descriptions:**
 
-* Definition of brain dump: the act or an instance of comprehensively and uncritically expressing and recording one's thoughts and ideas (as on a particular topic)  
-  Instead, Shafer recommends doing a brain dump—getting workflow, ideas, commitments, and to-do lists out of your head and onto a physical list and calendar.  
-  — Stephanie Vozza
-* First, you do a giant brain dump to force yourself to clear out the mental clutter and face head-on all the contradictory goals and obligations that are crowding your days.  
-  — Jessica Stillman
+> Definition of brain dump: the act or an instance of comprehensively and uncritically expressing and recording one's thoughts and ideas (as on a particular topic)  
+> Instead, Shafer recommends doing a brain dump—getting workflow, ideas, commitments, and to-do lists out of your head and onto a physical list and calendar.  
+> — Stephanie Vozza
+
+> First, you do a giant brain dump to force yourself to clear out the mental clutter and face head-on all the contradictory goals and obligations that are crowding your days.  
+> — Jessica Stillman
 
 ([from the Merriam Webster dictionary](https://www.merriam-webster.com/dictionary/brain%20dump))
 
@@ -38,13 +43,10 @@ _Ok, now we all understand what a braindump specifically is now. Right? Does bra
 
 # How to unscramble your brain with a braindump: tips for making braindumps
 
-Keep a notebook or digital notepad handy for those times you really need to write things down. I'm a big fan of [bullet journaling](https://www.tinyrayofsunshine.com/blog/bullet-journal-guide).
-
-Add to your braindump as you go throughout the day (because there's nothing more annoying than waking up at 3am remembering something lol! Been there).
-
-Revisit your braindump when feeling less scrambled eggs and decide what to do with those things. Move, remove, or get done.
-
-\*Here are more tips on a blog [here](https://www.lifehack.org/articles/productivity/how-to-do-the-ultimate-brain-dump.html) on braindumping.
+* Keep a notebook or digital notepad handy for those times you really need to write things down. I'm a big fan of [bullet journaling](https://www.tinyrayofsunshine.com/blog/bullet-journal-guide).
+* Add to your braindump as you go throughout the day (because there's nothing more annoying than waking up at 3am remembering something lol! Been there).
+* Revisit your braindump when feeling less scrambled eggs and decide what to do with those things. Move, remove, or get done.
+* *Here are more tips on a blog [here](https://www.lifehack.org/articles/productivity/how-to-do-the-ultimate-brain-dump.html) on braindumping.
 
 #### 4 signs that you need to do a braindump to unscramble your brain
 
@@ -54,9 +56,13 @@ Braindumping to unscramble your brain is a relatively simple concept and when pu
 
 # FREEBIE: braindump printable planning page
 
+![A picture of the braindump printable planning pages.](/uploads/braindump-printable-planner-pages.jpg "How to Unscramble Your Brain with a Braindump Printables SHM")
+
 If braindumping is new to you or you just enjoy freebie planning pages, you may enjoy the braindumping printable planning page I put together. You can find that braindump printable [HERE](https://mailchi.mp/df5816e44b8d/braindump-planner-pages). _I also have an upcoming class on beginner planning basics. If you’d like to be the first to know when that launches, shoot me a quick email at simplehomemom@gmail.com_
 
 **SAVE FOR FUTURE REFERENCE:**
+
+![A picture of the blog overview and printables.](/uploads/white-gold-accent-simple-minimalist-elegant-wedding-blog-pinterest-graphic.jpg "How to Unscramble Your Brain with a Braindump SHM")
 
 **Other blogs of mine you may like:**
 
