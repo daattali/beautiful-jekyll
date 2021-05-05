@@ -48,3 +48,7 @@ and then the new penetrance table is now defined as
 $$Pen_{new}=P_{min}+Pen_{norm}*(1-2P_{min})$$
 
 To prevent model non-convergence of regression using the simulated datasets, we allow the user to choose a baseline risk (i.e., the simulated samples with the lowest risk genotypes are provided a user-determined probability of being labeled “case”) and maximum risk (i.e., the maximum probability of being labeled “case” for simulated samples with highest-risk genotype). Therefore, penetrance can be tested by varying the baseline to maximum risk ratios. 
+
+**Relevant Links**
+
+* [EDGE Manuscript Materials/Data](https://github.com/HallLab/PLOS_Genetics_EDGE_Paper) - used BAMS to test EDGE performance
