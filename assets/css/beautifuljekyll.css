@@ -127,9 +127,7 @@ img {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
     background-image: url({{ site.navbar-img | relative_url }});
-  box-shadow: 0 0 5px 0;
-  background: inherit;
-  backdrop-filter: blur(10px);
+  
     background-attachment: fixed;
   {% endif %}
   -webkit-transition: padding .5s ease-in-out;
