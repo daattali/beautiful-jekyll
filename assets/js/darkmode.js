@@ -1,6 +1,6 @@
 const options = {
   bottom: '64px', // default: '32px'
-  right: 'unset', // default: '32px'
+  right: '32px', // default: '32px'
   left: '32px', // default: 'unset'
   time: '0.5s', // default: '0.3s'
   mixColor: '#D1DBBF', // default: '#fff'
@@ -9,7 +9,7 @@ const options = {
   buttonColorLight: '#D1DBBF', // default: '#fff'
   saveInCookies: true, // default: true,
   label: '🌓', // default: ''
-  autoMatchOsTheme: true // default: true
+  autoMatchOsTheme: false // default: true
 }
 
 const darkmode = new Darkmode(options);
