@@ -106,7 +106,7 @@ feed_show_tags: true
 
 # navbar-col: "#EAEAEA"
 navbar-img: "/assets/img/navbar_.jpg"
-navbar-text-col: "#404040"
+navbar-text-col: "#ffffff"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
