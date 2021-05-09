@@ -22,7 +22,7 @@ Blobfuse 를 통해 파일을 업로드 하게 되면 각 파일의 `content-typ
 
 만세!!!
 
-그런데 말입니다. 약간 아쉬원 상태입니다.
+그런데 말입니다. 약간 아쉬운 상태입니다.
 
 # 지금 구현의 상태
 [코오드](https://github.com/Azure/azure-storage-fuse/blob/master/cpplite/src/blob/blob_client.cpp#L189)
