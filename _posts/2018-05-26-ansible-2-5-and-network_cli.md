@@ -1,7 +1,7 @@
 ---
 title: Ansible 2.5 and network_cli
 layout: post
-tags: [automation, ansible]
+tags: [ansible, automation]
 readtime: true
 before-content: old-post-warn.html
 ---

@@ -22,6 +22,7 @@ navbar-links:
     - Docker: "docker"
     - PHP & Laravel: "laravel"
     - Python: "python"
+    - Tools: "tools"
   Archive: "tags"
 
 # --- Logo --- #

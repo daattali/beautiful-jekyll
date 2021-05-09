@@ -1,7 +1,7 @@
 version: "3"
 services:
   jekyll:
-    image: jekyll/jekyll
+    image: younglook/jekyll-arm64
     working_dir: /srv/jekyll
     # Mount the repository as a Docker Volume so development changes
     # are reflected immediately within the container

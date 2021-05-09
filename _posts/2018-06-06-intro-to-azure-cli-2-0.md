@@ -2,7 +2,7 @@
 title: Intro to Azure CLI 2.0
 subtitle: Microsoft Azure's command-line interface
 layout: post
-tags: [azure, cloud, automation, azure-cli]
+tags: [automation, azure, azure-cli, cloud]
 readtime: true
 before-content: old-post-warn.html
 ---

@@ -2,7 +2,7 @@
 title: 'Ansible Docker Image'
 subtitle: Creating a Docker image to work with Ansible automation
 layout: post
-tags: [automation, ansible, docker]
+tags: [ansible, automation, containers, docker]
 readtime: true
 before-content: old-post-warn.html
 ---
