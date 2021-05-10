@@ -10,5 +10,5 @@ published: true
 
 
 <div class="centrer">
-				<iframe width="560" height="315" src="https://pixees.fr/informatiquelycee/n_site/snt_web_cookies.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.dailymotion.com/video/x16lt53" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
