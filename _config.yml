@@ -27,7 +27,7 @@ navbar-links:
 avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: My Website
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
@@ -71,10 +71,10 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
+  twitter: My Website
+  facebook: My Website
+  linkedin: My Website
+  vk: My Website
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -84,10 +84,10 @@ url-pretty: "MyWebsite.com"
 excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
+feed_show_excerpt: My Website
 
 # Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
+feed_show_tags: My Website
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
