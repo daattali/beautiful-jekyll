@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 'SNT : les cookies'
-published: false
+published: true
 ---
 
-# Voici la vidéo de l'évaluation
+# Voici la vidéo de l'évaluation du jour
 
 
 
