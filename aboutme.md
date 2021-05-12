@@ -7,7 +7,6 @@ subtitle: What about me?
 My name is Stuart Eggerton. I have the following qualities:
 
 - I love to break things to understand how they work
-- I'm extremely loyal to my family
 - I am motivated by working with and coordinating others to deliver things of value
 - I like Agile
 - I like Dev
