@@ -6,7 +6,7 @@ tags:
 - toddler activities
 - preschooler activities
 - simple play
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/busybox-play.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
