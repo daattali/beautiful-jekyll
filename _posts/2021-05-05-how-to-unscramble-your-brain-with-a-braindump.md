@@ -15,7 +15,7 @@ show-avatar: true
 title: How to Unscramble Your Brain with a Braindump
 description: Tips and strategies for braindumping when you have too many ideas and
   tasks floating around your brain.
-subtitle: "+  free braindump printable planning page"
+subtitle: "+  free braindump printable planning pages"
 share-img: ''
 redirect_from: []
 
