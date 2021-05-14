@@ -7,8 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
-* [Simply Spring Cleaning Challenge Free Printable](https://www.simplehomemom.com/free-simply-spring-cleaning-challenge-with-a-free-printable-checklist/)
-* [How to Do a Zero Spend Month that Works For You + a plan your zero spend month freebie](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
+* [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
