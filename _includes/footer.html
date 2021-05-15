@@ -31,6 +31,11 @@
         {% endif %}
       {% endif%}
       </p>
+      {% if site.footer-extra %}
+        {% for file in site.footer-extra %}
+          {% include {{ file }} %}
+        {% endfor %}
+      {% endif %}        
       {% unless site.remove-ads %}<p class="theme-by text-muted">
         Powered by
         <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
