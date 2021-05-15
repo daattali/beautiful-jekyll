@@ -1,0 +1,28 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- site's landing/home page will already be in site.pages -->
+  {% for page in site.pages %}
+    {% if page.sitemap %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+    {% endif %}
+  {% endfor %}  
+  {% for post in site.posts %}
+    {% if post.sitemap %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+   </url>
+    {% endif %}
+  {% endfor %}
+</urlset>
