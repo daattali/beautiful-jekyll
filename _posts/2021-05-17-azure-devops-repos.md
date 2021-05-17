@@ -39,14 +39,16 @@ foreach ($Proj in $Projects) {
     foreach ($Repo in $Repos) {
         Write-Output $Repo.webUrl
     }
-}```
+}
+```
 
-Here is some sample output which you can use.
+Here is a sample showing output.
 ```
 PS C:\Dev\ado-api> & .\getRepos.ps1
 https://dev.azure.com/exampleorg/java-jsf1/_git/java-jsf1
 https://dev.azure.com/exampleorg/Jan2021Example/_git/Jan2021Example
-https://dev.azure.com/exampleorg/B2C%20Brownbag/_git/B2C%20Brownbag```
+https://dev.azure.com/exampleorg/B2C%20Brownbag/_git/B2C%20Brownbag
+```
 ## Credits
 Thanks to Simon Wahlinfor the [post](https://blog.simonw.se/cloning-all-repositories-from-azure-devops-using-azure-cli/)
 
