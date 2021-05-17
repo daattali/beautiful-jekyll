@@ -10,7 +10,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/zephyr.png" img width="250">
         </td>
-        <td><a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">ZePHyR: Zero-shot Pose Hypothesis Rating</a><br>
+        <td><a href="https://arxiv.org/abs/2104.13526">ZePHyR: Zero-shot Pose Hypothesis Rating</a><br>
             <div class="pubauthor">
                 Brian Okorn*, Qiao Gu*, Martial Hebert, David Held<br>
             </div>
@@ -34,7 +34,7 @@ subtitle:
                 <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
                 <a href="javascript:copy(div2021zephyr, bib2021zephyr)">[Bibtex]</a>
                 <a href="javascript:copy(div2021zephyr, abs2021zephyr)">[Abstract]</a>
-                <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a>
+                <a href="https://arxiv.org/pdf/2104.13526.pdf">[PDF]</a>
             </div>
             <div id="div2021zephyr" class="pubInfo"></div>
             </div>
