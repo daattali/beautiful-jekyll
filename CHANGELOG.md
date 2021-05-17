@@ -10,6 +10,7 @@
 - Fixed bug where special characters in the title led to broken share tags (#744)
 - Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
 - Added support for Cloudflare Analytics (#797)
+- Added Reddit in share options of posts (#815)
 
 ## v5.0.0 (2020-09-15)
 
