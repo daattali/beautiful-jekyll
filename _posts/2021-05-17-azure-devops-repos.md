@@ -50,5 +50,5 @@ https://dev.azure.com/exampleorg/Jan2021Example/_git/Jan2021Example
 https://dev.azure.com/exampleorg/B2C%20Brownbag/_git/B2C%20Brownbag
 ```
 ## Credits
-Thanks to Simon Wahlinfor the [post](https://blog.simonw.se/cloning-all-repositories-from-azure-devops-using-azure-cli/)
+Thanks to Simon Wahlin for the [post](https://blog.simonw.se/cloning-all-repositories-from-azure-devops-using-azure-cli/)
 
