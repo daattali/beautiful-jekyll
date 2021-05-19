@@ -31,7 +31,7 @@ subtitle:
             <div class="pubjournal">International Conference of Robotics and Automation (ICRA), 2021
             <div style="font-size:small">
                 <a href="https://bokorn.github.io/zephyr/">[Project Page]</a>
-                <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
+                <a href="https://github.com/r-pad/zephyr">[Code]</a>
                 <a href="javascript:copy(div2021zephyr, bib2021zephyr)">[Bibtex]</a>
                 <a href="javascript:copy(div2021zephyr, abs2021zephyr)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2104.13526.pdf">[PDF]</a>
