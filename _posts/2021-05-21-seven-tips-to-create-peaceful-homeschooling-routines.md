@@ -12,7 +12,7 @@ comments: true
 show-avatar: true
 title: Seven Tips to Create Peaceful Homeschooling Routines
 description: Practical tips for learning how to create peaceful homeschooling routines.
-subtitle: ''
+subtitle: "+ FREEBIE: 10 questions to help you simplify your homeschool life"
 share-img: ''
 redirect_from: []
 
