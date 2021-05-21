@@ -1,13 +1,17 @@
 ---
 post: post
-tags: []
-thumbnail-img: "/uploads/headshot.jpg"
+tags:
+- simple homeschool
+- homeschool planning
+- simple homeschool planning
+- homeschool tips
+thumbnail-img: "/uploads/seven-tips-to-create-peaceful-homeschooling-routines-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
 show-avatar: true
 title: Seven Tips to Create Peaceful Homeschooling Routines
-description: ss
+description: Practical tips for learning how to create peaceful homeschooling routines.
 subtitle: ''
 share-img: ''
 redirect_from: []
@@ -16,6 +20,8 @@ redirect_from: []
 I'm a good five years into homeschooling and over the past five years, I've gone through a lot of ups and downs figuring things out. This past year being home so often because of the pandemic has in many ways been a blessing in disguise for our homeschool as we've really been able to figure some things out to create **more peaceful homeschooling routines**.
 
 Today on the blog I'm sharing about **seven tips to create peaceful homeschooling routines**. These are seven tips I've noticed the past year especially and will pull from them through the years to come. And I hope it's helpful to you too.
+
+![A picture of pencils on top of worksheets.](/uploads/seven-tips-to-create-peaceful-homeschooling-routines-shm-2.jpg "Seven Tips to Create Peaceful Homeschooling Routines SHM")
 
 ## Seven tips to create peaceful homeschooling routines
 
@@ -33,7 +39,7 @@ Creating a peaceful homeschooling routine is certainly not a one and done thing,
 
 _If you are looking to simplify your homeschool life, you may enjoy the freebie I created for the Simplifying Your Homeschool Life session I gave for the Online Canadian Homeschool Conference (find the session_ [_here_](https://canadianhomeschoolconference.com/aff/42/) _). I’m happy to send you the “10 questions to help simplify your homeschool life” freebie to help you out too. Just click_ [_here_](https://mailchi.mp/63c04ffdad3a/simplify-your-homeschool-life-session-freebie) _and drop your email to access that. Enjoy!_
 
-Other blogs of mine you may enjoy:
+**Other blogs of mine you may enjoy:**
 
 * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
 * [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
