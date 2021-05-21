@@ -5,7 +5,7 @@ tags:
 - homeschool planning
 - simple homeschool planning
 - homeschool tips
-thumbnail-img: "/uploads/seven-tips-to-create-peaceful-homeschooling-routines-shm.jpg"
+thumbnail-img: "/uploads/seven-tips-to-create-peaceful-homeschooling-routines-shm-2.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
