@@ -40,3 +40,5 @@ Other blogs of mine you may enjoy:
 * [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
 
 **SAVE FOR FUTURE REFERENCE:**
+
+![A picture of a planner on a table. Blog overview.](/uploads/seven-tips-to-create-peaceful-homeschooling-routines-shm.jpg "Seven Tips to Create Peaceful Homeschooling Routines SHM")
