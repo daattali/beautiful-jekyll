@@ -6,7 +6,7 @@ layout: page
 
 ## Latest work
 
-**Dimanchev, E.**, J. Hodge, J. Parsons. 2021. [The role of hydropower reservoirs in deep decarbonization policy](https://www.sciencedirect.com/science/article/pii/S0301421521002391). *Energy Policy* 155 (Related: [Code and data](https://doi.org/10.5281/zenodo.3773861)).
+**Dimanchev, E.**, J. Hodge, J. Parsons. 2021. [The role of hydropower reservoirs in deep decarbonization policy](https://www.sciencedirect.com/science/article/pii/S0301421521002391). *Energy Policy* 155. (Related: [Code and data](https://doi.org/10.5281/zenodo.3773861)).
 
 **Dimanchev, E.**, and C. R. Knittel. 2020. [Trade-offs in Climate Policy: Combining Low- Carbon Standards with Modest Carbon Pricing](http://ceepr.mit.edu/publications/working-papers/747). MIT CEEPR Working Paper 2020-020. (Related: short [Research Brief](http://ceepr.mit.edu/files/papers/2020-020-Brief.pdf)).
 
