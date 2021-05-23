@@ -9,6 +9,7 @@ tags: [books, test]
 published: true
 category: dnd
 excerpt_separator: <!--more-->
+toc: true
 ---
 
 ## Morning:
@@ -114,11 +115,11 @@ Once again, I feel his blade inside me, and I taste dirt.
 
 ## Night
 
-For some time, I feel the heat of fire, and hear the roar of battle. Then I feel nothing and see only darkness. My mind wanders to Lewie. I am grateful Lewie is away to be named.
-I wonder if I will see him again. Then I hear his voice, as I lay dying.
+For some time, I feel the heat of fire, and hear the roar of battle. The roar dies down, I feel nothing and see only darkness. My mind wanders to Lewie. I am grateful Lewie is away to be named.
+I wonder if I will see him again. As I lay dying, I hear a familiar voice. He's returned.
 
-He sounds excited, at first - He's chosen his grown-name & this will be his first time using it. I hear him calling out with pride, reminding us of his new name, before he even reaches the
+He sounds excited - He's chosen his grown-name & this will be his first time using it. I hear him calling out with pride, reminding us of his new name, before he even reaches the
 village. 
 
-"It's me, Henk"
+**"It's me, Henk"**
 
