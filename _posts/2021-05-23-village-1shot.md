@@ -8,18 +8,20 @@ share-img: /assets/img/path.jpg
 tags: [books, test]
 published: true
 category: dnd
+excerpt_separator: <!--more-->
 ---
 
-## Morning
+## Morning:
 
 I wake with **Tia,** my wife to a loud ringing at the tent bell.
+
 
 I hope someone else answers the door, I did not get good sleep last night.
 Our son is on his naming quest, as he is old enough to prove himself ready for his grown-name.
 He is getting copper from the mountains for tools, defenses & wards for **Gruumsh**.
 Tia and I make the things from copper & tribe uses them.
-
 He should be back by now. I stay up last night and worry something has happened.
+<!--more-->
 His baby-name is **Lewie**, but soon he will have his grown-name.
 
 **Praise be Gruumsh. Turn your wrathful gaze from my son**
