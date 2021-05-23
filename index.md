@@ -9,7 +9,7 @@ Hi there, I am Emil Dimanchev and I am a climate policy researcher specializing 
 
 ## Research
 
-The purpose of my work is to enable evidence-based decision making. I study sustainable energy systems, the effects of alternative policy choices, and how to design climate policy that best meets societal goals. 
+The purpose of my work is to enable evidence-based decision making. I research sustainable energy systems, the effects of alternative policy choices, and how to design climate policy that best meets societal goals. 
 
 My research is interdisciplinary, leveraging diverse methods matched to the problem at hand. I specialize in systems engineering and operations research, and integrate tools and insights from other disciplines including economics, data science, and political science. 
 
@@ -23,6 +23,6 @@ I am currently a PhD Candidate in electric power engineering at the Norwegian Un
 
 In previous roles, I was a Senior Research Associate at MIT CEEPR, and a Senior Carbon Market Analyst at Thomson Reuters Point Carbon.
 
-I have testified before legislators on climate policy, served as a consultant to government officials on carbon pricing, and briefed senior staff at Fortune Global 500 companies. I advised on the reform of the European Emissions Trading System and my work was featured in policy hearings in the EU Parliament and the EU Commission, contributing to, in the words of one lawmaker: "a cool-headed debate". My research has also been quoted in the media including Bloomberg, the Wall Street Journal, Politico, BBC, and others.
+I have testified before legislators on climate policy, served as a consultant to government officials on carbon pricing, and briefed senior staff at Fortune Global 500 companies. My work on the reform of the European Emissions Trading System was featured in the EU Parliament and the EU Commission, "contributing to a cool-headed debate" in the words of one policy maker. My research has also been quoted in the media including Bloomberg, the Wall Street Journal, Politico, BBC, and others.
 
 I hold a M.Sc. from MIT's Technology and Policy Program and a B.A. in mathematical economics from Colorado College.
