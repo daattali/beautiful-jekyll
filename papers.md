@@ -6,6 +6,8 @@ layout: page
 
 ## Latest work
 
+**Dimanchev, E.**, Joshua Hodge, John Parsons. 2021. [The role of hydropower reservoirs in deep decarbonization policy](https://www.sciencedirect.com/science/article/pii/S0301421521002391). *Energy Policy* 155 (Related: [Code and data](https://doi.org/10.5281/zenodo.3773861)).
+
 **Dimanchev, E.** and Christopher R. Knittel. 2020. [Trade-offs in Climate Policy: Combining Low- Carbon Standards with Modest Carbon Pricing](http://ceepr.mit.edu/publications/working-papers/747). MIT CEEPR Working Paper 2020-020. (Related: short [Research Brief](http://ceepr.mit.edu/files/papers/2020-020-Brief.pdf)).
 
 **Dimanchev, E.**, et al. 2020. [Two-Way Trade in Green Electrons: Deep Decarbonization of the Northeastern U.S. and the Role of Canadian Hydropower](http://ceepr.mit.edu/publications/working-papers/719). MIT CEEPR Working Paper 2020-003. (Related: Presentation [recording](https://youtu.be/RI13YmaVvmk); short [Research Brief](http://ceepr.mit.edu/files/papers/2020-003-Brief.pdf)).
