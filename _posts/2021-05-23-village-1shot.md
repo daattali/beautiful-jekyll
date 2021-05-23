@@ -2,10 +2,10 @@
 layout: post
 title: "DnD: A day in the life of Garrod the Unsightly" 
 subtitle: Prayers to Gruumsh
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
-tags: [books, test]
+cover-img: /assets/img/Nomad_camp_near_Tingri_Tibet._1993i.jpg
+thumbnail-img: /assets/img/Nomad_camp_near_Tingri_Tibet._1993i.jpg
+share-img: /assets/img/Nomad_camp_near_Tingri_Tibet._1993i.jpg
+tags: [dnd, fractured ammeria]
 published: true
 category: dnd
 excerpt_separator: <!--more-->
