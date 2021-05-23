@@ -187,7 +187,7 @@ date_format: "%B %-d, %Y"
 timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:categories/:year-:month-:day-:title/
 paginate: 5
 
 kramdown:
