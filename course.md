@@ -33,7 +33,7 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 
 #### Pricing
 
-$49 USD. Payment will be via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada.
+$49 USD. Payment is via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada. Just shoot me an email - simplehomemom@gmail.com
 
 <div id="smart-button-container">
       <div style="text-align: center;">
