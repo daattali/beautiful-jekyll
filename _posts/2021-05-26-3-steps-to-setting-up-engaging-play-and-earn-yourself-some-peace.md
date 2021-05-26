@@ -14,7 +14,7 @@ show-avatar: true
 title: 3 Steps to Setting Up Engaging Play and Earn Yourself Some Peace
 description: Simple steps for creating busyboxes for toddlers and preschoolers for
   engaging play.
-subtitle: ''
+subtitle: "+ helpful ideas to get you started."
 share-img: ''
 redirect_from: []
 
