@@ -74,7 +74,7 @@ I tend to lean toward using a bin, but a simple tray with low sides, a serving t
 
 **Bonus:** Enjoy a little quiet! Here’s your permission to use the time to decompress, finish your chores, a cup of coffee, or give one-on-one time to another child.
 
-_We hope you enjoy creating busy boxes for your little one. Remember - the three simple steps we outlined: filler, accessories, and a boundary. If you make a busybox for your little one, we’d love for you to share it with our communities and us over on Instagram. Use the hashtag # __ and tag_ [_@thebeckablog_](https://www.instagram.com/thebeckablog) _and_ [_@simplehomemom_](https://www.instagram.com/simplehomemom)_._
+_We hope you enjoy creating busy boxes for your little one. Remember - the three simple steps we outlined: filler, accessories, and a boundary. If you make a busybox for your little one, we’d love for you to share it with our communities and us over on Instagram. Tag_ [_@thebeckablog_](https://www.instagram.com/thebeckablog) _and_ [_@simplehomemom_](https://www.instagram.com/simplehomemom)_! And check out Becka's blog over at_ [_The Becka Blog_](https://thebeckablog.com/)_._
 
 **SAVE FOR FUTURE REFERENCE:**
 
