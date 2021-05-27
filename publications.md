@@ -8,6 +8,42 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100">
+            <img src="" img width="250">
+        </td>
+        <td>Active Safety Envelopes using Light Curtains with Probabilistic Guarantees<br>
+            <div class="pubauthor">Siddharth Ancha, Gaurav Pathak, Srinivasa Narasimhan, David Held<br>
+            </div>
+            <div id="bib2021safetyenvelopes" style="display:none">
+                <blockquote>
+<pre>@INPROCEEDINGS{Ancha-RSS-21,
+    AUTHOR    = {Siddharth Ancha AND Gaurav Pathak AND Srinivasa G. Narasimhan AND David Held},
+    TITLE     = {Active Safety Envelopes using Light Curtains with Probabilistic Guarantees},
+    BOOKTITLE = {Proceedings of Robotics: Science and Systems},
+    YEAR      = {2021},
+    MONTH     = {July}
+}</pre>
+                </blockquote>
+            </div>
+            <div id="abs2021safetyenvelopes" style="display:none">
+                <blockquote>
+                To safely navigate unknown environments, robots must accurately perceive dynamic obstacles. Instead of directly measuring the scene depth with a LiDAR sensor, we explore the use of a much cheaper and higher resolution sensor: <b>programmable light curtains</b>. Light curtains are controllable depth sensors that sense only along a surface that a user selects.  We use light curtains to estimate the <b>safety envelope</b> of a scene: a hypothetical surface that separates the robot from all obstacles. We show that generating light curtains that sense <b>random</b> locations (from a particular distribution) can quickly discover the safety envelope for scenes with unknown objects. Importantly, we produce theoretical safety guarantees on the probability of detecting an obstacle using random curtains. We combine random curtains with a machine learning based model that forecasts and tracks the motion of the safety envelope efficiently. Our method accurately estimates safety envelopes while providing probabilistic safety guarantees that can be used to certify the efficacy of a robot perception system to detect and avoid dynamic obstacles. We evaluate our approach in a simulated urban driving environment and a real-world environment with moving pedestrians using a light curtain device and show that we can estimate safety envelopes efficiently and effectively.
+                </blockquote>
+            </div>
+            <div class="pubjournal">Robotics: Science and Systems (RSS), 2021
+            <div style="font-size:small">
+                <!-- <a href="https://bokorn.github.io/zephyr/">[Project Page]</a> -->
+                <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
+                <a href="javascript:copy(div2021safetyenvelopes, bib2021safetyenvelopes)">[Bibtex]</a>
+                <a href="javascript:copy(div2021safetyenvelopes, abs2021safetyenvelopes)">[Abstract]</a>
+                <!-- <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a> -->
+            </div>
+            <div id="div2021safetyenvelopes" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td class="pubimg" width="250" height="100">
             <img src="../pics/zephyr.png" img width="250">
         </td>
         <td><a href="https://arxiv.org/abs/2104.13526">ZePHyR: Zero-shot Pose Hypothesis Rating</a><br>
