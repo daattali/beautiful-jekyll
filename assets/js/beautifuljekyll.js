@@ -27,6 +27,8 @@ var BeautifulJekyllJS = {
 
     // show the big header image
     BeautifulJekyllJS.initImgs();
+
+    BeautifulJekyllJS.initSearch();
   },
 
   initNavbar : function() {
@@ -108,6 +110,25 @@ var BeautifulJekyllJS = {
     } else {
       $(".img-desc").hide();
     }
+  },
+
+  initSearch : function() {
+    if (!document.getElementById("beautifuljekyll-search-overlay")) {
+      return;
+    }
+
+    $("#nav-search-link").click(function(e) {
+      e.preventDefault();
+      $("#beautifuljekyll-search-overlay").show();
+      $("#nav-search-input").focus().select();
+    });
+    $("#nav-search-exit").click(function(e) {
+      e.preventDefault();
+      $("#beautifuljekyll-search-overlay").hide();
+    });
+    $(document).on('keyup', function(e) {
+      if (e.key == "Escape") $("#beautifuljekyll-search-overlay").hide();
+    });
   }
 };
 
