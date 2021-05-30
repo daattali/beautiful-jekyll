@@ -1068,9 +1068,13 @@ pre {
   color: #fff;
   font-size: 1.5rem;
 }
-#search-results-container a,
+#search-results-container a {
+  color: #fff;
+  text-decoration: none;
+}
 #search-results-container a:hover {
   color: #fff;
+  text-decoration: underline;
 }
 
 #nav-search-icon {
