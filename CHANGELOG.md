@@ -1,6 +1,6 @@
 ## Unreleased version
 
-- Added search to the navbar (can be turned off in the config file) (#770)
+- Added `post_search` config setting that creates a Search button in the navbar (older websites need to set `post_search: true` to enable this feature) (#770)
 - Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari.
 - Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
 - Fixed bug where navbar secondary level dropdown items didn't inherit the same colour as the primary navbar links
