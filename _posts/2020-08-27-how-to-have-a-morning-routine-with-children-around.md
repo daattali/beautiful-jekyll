@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Have a Morning Routine with Children Around
-subtitle: "+ morning routine template with kids freebie worksheet"
+subtitle: "+ a free morning routine template with kids"
 description: Tips for making a morning routine for yourself with kids at home.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
@@ -14,7 +14,7 @@ redirect_from:
 - 2020-08-27-how-to-have-a-morning-routine-with-children-around
 
 ---
-![](/uploads/how-to-have-a-morning-routine-with-kids-shm.jpg)
+![A picture of a coffee mug overlooking into the woods.](/uploads/how-to-have-a-morning-routine-with-kids-shm.jpg "How to have a morning routine with children around SHM")
 
 Images of 5am mornings, quiet cups of coffee alone before the kids wake up. Seems like a dream to you? You are not alone. Here's the truth: _not every morning routine has to be or will look like this._ Today on the blog I'm going to share with you **how to have a morning routine with children around**, especially little children around (my children are currently 9, 6, 4, and 1 for reference).
 
@@ -36,5 +36,7 @@ _What others do may not work for you. If it becomes more of a fight, then take i
 Last year, I finally started a morning routine for myself and it's really helped my days out so much. I feel more peaceful throughout the rest of the day and I'm finding time for those things that matter most to me. It was after I read the book [The Miracle Morning](https://amzn.to/2BduGKX) that everything clicked for me. I was so inspired. If you'd like a quick breakdown of what the Miracle Morning is, I can send you a basic overview from what I read. Feel free to email me at [simplehomemom@gmail.com](mailto:simplehomemom@gmail.com) if you'd like that.
 
 **SAVE FOR FUTURE REFERENCE:**
+
+![A picture of a coffee mug overlooking into the woods.](/uploads/1-1.jpg "How to have a morning routine with children around SHM2")
 
 #### Other blogs of mine you may like:
