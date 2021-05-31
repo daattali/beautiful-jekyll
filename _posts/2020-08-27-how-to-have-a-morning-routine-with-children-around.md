@@ -33,10 +33,16 @@ I get up when my two littlest are awake, anywhere from 6:30-7:30. I usually do m
 
 _What others do may not work for you. If it becomes more of a fight, then take it as a sign that it just might be the wrong strategy or time of a day. If it's important to you, you'll find a way. Keep going! I hope you enjoyed my tips on how to have a morning routine with children around._
 
-Last year, I finally started a morning routine for myself and it's really helped my days out so much. I feel more peaceful throughout the rest of the day and I'm finding time for those things that matter most to me. It was after I read the book [The Miracle Morning](https://amzn.to/2BduGKX) that everything clicked for me. I was so inspired. If you'd like a quick breakdown of what the Miracle Morning is, I can send you a basic overview from what I read. Feel free to email me at [simplehomemom@gmail.com](mailto:simplehomemom@gmail.com) if you'd like that.
+### FREEBIE: MORNING ROUTINE TEMPLATE WITH KIDS
+
+Last year, I finally started a morning routine for myself and it's really helped my days out so much. I feel more peaceful throughout the rest of the day and I'm finding time for those things that matter most to me. Morning routines can be tricky, but with a little bit of planning and using what you are given, you can start small with your own morning routine. I created a [simple template](https://mailchi.mp/b5550b9a5b6c/kxmxwhppym) for you to work through creating your own morning routine with children around - you can find that [HERE](https://mailchi.mp/b5550b9a5b6c/kxmxwhppym). Enjoy!
 
 **SAVE FOR FUTURE REFERENCE:**
 
 ![A picture of a coffee mug overlooking into the woods.](/uploads/1-1.jpg "How to have a morning routine with children around SHM2")
 
 #### Other blogs of mine you may like:
+
+* [Five Things You Can Do to Have the Best Morning Ever](https://www.simplehomemom.com/five-things/)
+* [Melissa's Morning Routine: Making it Work with Four Children](https://www.simplehomemom.com/melissa-s-morning-routine-making-it-work-with-four-children/)
+* [A Look at Morning Routines from Moms Who Have it Figured Out](https://www.simplehomemom.com/a-look-at-morning-routines-from-moms-who-have-it-figured-out/)
