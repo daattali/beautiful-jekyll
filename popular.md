@@ -15,6 +15,7 @@ subtitle: ''
 ## Popular blogs
 
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
+* [How to Have a Morning Routine with Kids + FREE Morning Routine Template with kids](https://www.simplehomemom.com/how-to-have-a-morning-routine-with-children-around/)
 * [Find Your Tidying Personality](https://www.simplehomemom.com/how-to-discover-your-tidying-personality/)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
 * [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
