@@ -16,7 +16,7 @@ redirect_from:
 ---
 ![A picture of a coffee mug overlooking into the woods.](/uploads/how-to-have-a-morning-routine-with-kids-shm.jpg "How to have a morning routine with children around SHM")
 
-Images of 5am mornings, quiet cups of coffee alone before the kids wake up. Seems like a dream to you? You are not alone. Here's the truth: _not every morning routine has to be or will look like this._ Today on the blog I'm going to share with you **how to have a morning routine with children around**, especially little children around (my children are currently 9, 6, 4, and 1 for reference).
+Images of 5am mornings, quiet cups of coffee alone before the kids wake up. Seems like a dream to you? You are not alone. Here's the truth: _not every morning routine has to be or will look like this._ Today on the blog I'm going to share with you **how to have a morning routine with children around**, especially little children around (my children are currently 10, 7, 5, and 2 for reference).
 
 ## Get up when you want to
 
