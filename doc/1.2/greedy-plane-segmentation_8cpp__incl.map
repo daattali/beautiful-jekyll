@@ -1,0 +1,52 @@
+<map id="greedy&#45;plane&#45;segmentation.cpp" name="greedy&#45;plane&#45;segmentation.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="3791,5,3994,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="2387,825,2459,852"/>
+<area shape="rect" id="node3" title=" " alt="" coords="3829,430,3887,457"/>
+<area shape="rect" id="node4" title=" " alt="" coords="4401,430,4441,457"/>
+<area shape="rect" id="node5" title=" " alt="" coords="3555,251,3601,278"/>
+<area shape="rect" id="node6" href="$Common_8h_source.html" title=" " alt="" coords="2156,512,2312,539"/>
+<area shape="rect" id="node30" href="$VolReader_8h_source.html" title=" " alt="" coords="249,341,441,367"/>
+<area shape="rect" id="node35" href="$Display3D_8h_source.html" title=" " alt="" coords="3225,162,3371,189"/>
+<area shape="rect" id="node41" href="$StdDefs_8h_source.html" title=" " alt="" coords="3437,341,3602,367"/>
+<area shape="rect" id="node42" href="$DrawWithDisplay3DModifier_8h_source.html" title=" " alt="" coords="2752,244,2935,285"/>
+<area shape="rect" id="node43" href="$Viewer3D_8h_source.html" title=" " alt="" coords="3645,80,3836,107"/>
+<area shape="rect" id="node44" href="$ImageSelector_8h_source.html" title=" " alt="" coords="4013,430,4213,457"/>
+<area shape="rect" id="node45" href="$SetFromImage_8h_source.html" title=" " alt="" coords="1278,155,1481,196"/>
+<area shape="rect" id="node46" href="$DigitalSurface_8h_source.html" title=" " alt="" coords="3931,341,4137,367"/>
+<area shape="rect" id="node47" href="$DigitalSetBoundary_8h_source.html" title=" " alt="" coords="4162,333,4333,375"/>
+<area shape="rect" id="node48" href="$BreadthFirstVisitor_8h_source.html" title=" " alt="" coords="2151,333,2317,375"/>
+<area shape="rect" id="node49" href="$COBANaivePlaneComputer_8h_source.html" title=" " alt="" coords="4459,333,4657,375"/>
+<area shape="rect" id="node50" title=" " alt="" coords="4733,80,4863,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2808,594,2887,621"/>
+<area shape="rect" id="node8" title=" " alt="" coords="3267,751,3342,777"/>
+<area shape="rect" id="node9" title=" " alt="" coords="3122,594,3247,621"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1039,594,1210,621"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2155,594,2313,621"/>
+<area shape="rect" id="node12" title=" " alt="" coords="795,594,964,621"/>
+<area shape="rect" id="node13" title=" " alt="" coords="591,594,770,621"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2337,587,2480,628"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2504,594,2697,621"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2765,676,2823,703"/>
+<area shape="rect" id="node17" title=" " alt="" coords="2722,594,2783,621"/>
+<area shape="rect" id="node18" href="$Config_8h_source.html" title=" " alt="" coords="1741,751,1882,777"/>
+<area shape="rect" id="node20" href="$Trace_8h_source.html" title=" " alt="" coords="1690,594,1826,621"/>
+<area shape="rect" id="node21" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="1856,676,2055,703"/>
+<area shape="rect" id="node22" href="$Assert_8h_source.html" title=" " alt="" coords="1589,676,1730,703"/>
+<area shape="rect" id="node23" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="632,751,823,777"/>
+<area shape="rect" id="node24" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="1234,594,1413,621"/>
+<area shape="rect" id="node25" href="$BasicTypes_8h_source.html" title=" " alt="" coords="2058,751,2229,777"/>
+<area shape="rect" id="node26" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="2911,594,3098,621"/>
+<area shape="rect" id="node28" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="2253,751,2455,777"/>
+<area shape="rect" id="node29" href="$Exceptions_8h_source.html" title=" " alt="" coords="2285,676,2453,703"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1296,825,1351,852"/>
+<area shape="rect" id="node27" href="$Color_8h_source.html" title=" " alt="" coords="3322,676,3437,703"/>
+<area shape="rect" id="node31" title=" " alt="" coords="45,430,114,457"/>
+<area shape="rect" id="node32" title=" " alt="" coords="139,430,196,457"/>
+<area shape="rect" id="node33" href="$CUnaryFunctor_8h_source.html" title=" " alt="" coords="1109,430,1300,457"/>
+<area shape="rect" id="node34" href="$VolReader_8ih_source.html" title=" " alt="" coords="221,430,415,457"/>
+<area shape="rect" id="node36" href="$CDomain_8h_source.html" title=" " alt="" coords="1376,423,1524,464"/>
+<area shape="rect" id="node37" href="$CountedPtr_8h_source.html" title=" " alt="" coords="2869,430,3037,457"/>
+<area shape="rect" id="node38" href="$CImage_8h_source.html" title=" " alt="" coords="1110,251,1273,278"/>
+<area shape="rect" id="node39" href="$CConstImage_8h_source.html" title=" " alt="" coords="1092,341,1291,367"/>
+<area shape="rect" id="node40" href="$Mesh_8h_source.html" title=" " alt="" coords="3111,341,3261,367"/>
+</map>

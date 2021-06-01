@@ -1,0 +1,4 @@
+<map id="DGtal::ClippingPlane" name="DGtal::ClippingPlane">
+<area shape="rect" id="node1" title="Class for adding a Clipping plane through the Viewer3D stream. Realizes the concept CDrawableWithView..." alt="" coords="48,80,192,107"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="5,5,235,32"/>
+</map>

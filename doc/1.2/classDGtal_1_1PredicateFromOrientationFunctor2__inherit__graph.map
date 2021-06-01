@@ -1,0 +1,5 @@
+<map id="DGtal::PredicateFromOrientationFunctor2&lt; TOrientationFunctor, acceptNeg, acceptZero &gt;" name="DGtal::PredicateFromOrientationFunctor2&lt; TOrientationFunctor, acceptNeg, acceptZero &gt;">
+<area shape="rect" id="node1" title="Aim: Small adapter to models of COrientationFunctor2. It is a model of concepts::CPointPredicate...." alt="" coords="5,31,217,87"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1PredicateFromOrientationFunctor2.html" title=" " alt="" coords="409,5,621,47"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1PredicateFromOrientationFunctor2.html" title=" " alt="" coords="409,71,621,112"/>
+</map>

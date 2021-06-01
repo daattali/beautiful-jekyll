@@ -1,0 +1,4 @@
+<map id="DGtal::concepts::CBackInsertable&lt; T &gt;" name="DGtal::concepts::CBackInsertable&lt; T &gt;">
+<area shape="rect" id="node1" title="Aim: Represents types for which a std::back_insert_iterator can be constructed with std::back_inserte..." alt="" coords="5,5,260,32"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CPositiveIrreducibleFraction.html" title="Aim: Defines positive irreducible fractions, i.e. fraction p/q, p and q non&#45;negative integers,..." alt="" coords="41,80,224,121"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="DGtal::STLMapToVertexMapAdapter&lt; TMap &gt;" name="DGtal::STLMapToVertexMapAdapter&lt; TMap &gt;">
+<area shape="rect" id="node1" title="Aim: This class adapts any map of the STL to match with the CVertexMap concept." alt="" coords="5,80,196,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="73,5,128,32"/>
+</map>

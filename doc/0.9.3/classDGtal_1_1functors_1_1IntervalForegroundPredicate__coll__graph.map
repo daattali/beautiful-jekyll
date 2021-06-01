@@ -1,8 +1,0 @@
-<map id="DGtal::functors::IntervalForegroundPredicate&lt; Image &gt;" name="DGtal::functors::IntervalForegroundPredicate&lt; Image &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1Image.html" title="Aim: implements association bewteen points lying in a digital domain and values. " alt="" coords="43,379,269,404"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; TImageContainer \&gt;" alt="" coords="40,292,272,317"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l TImageContainer \&gt;" alt="" coords="5,192,145,231"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="6,5,144,44"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="147,105,307,131"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer. " alt="" coords="169,199,306,224"/>
-</map>

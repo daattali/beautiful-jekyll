@@ -1,4 +1,0 @@
-<map id="DGtal::NaiveDSS8&lt; TCoordinate, TInteger &gt;" name="DGtal::NaiveDSS8&lt; TCoordinate, TInteger &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1ArithmeticalDSS.html" title="DGtal::ArithmeticalDSS\l\&lt; TCoordinate, TInteger, 8 \&gt;" alt="" coords="20,137,223,183"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS), ie. the sequence of simply 8&#45; (resp. 4&#45;)connected digital points contained in a naive (resp. standard) digital straight line (DSL) between two points of it. " alt="" coords="33,5,209,69"/>
-</map>

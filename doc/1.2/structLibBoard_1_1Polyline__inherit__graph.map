@@ -1,0 +1,9 @@
+<map id="LibBoard::Polyline" name="LibBoard::Polyline">
+<area shape="rect" id="node1" title="A polygonal line described by a series of 2D points." alt="" coords="213,80,339,107"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1GouraudTriangle.html" title="A triangle with shaded filling according to colors given for each vertex." alt="" coords="5,155,181,181"/>
+<area shape="rect" id="node4" href="$structLibBoard_1_1Rectangle.html" title="A rectangle." alt="" coords="206,155,346,181"/>
+<area shape="rect" id="node6" href="$structLibBoard_1_1Triangle.html" title="A triangle. Basically a Polyline with a convenient constructor." alt="" coords="377,155,503,181"/>
+<area shape="rect" id="node2" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="217,5,335,32"/>
+<area shape="rect" id="node5" href="$structLibBoard_1_1Image.html" title="Used to draw image in figure." alt="" coords="215,237,332,263"/>
+<area shape="rect" id="node7" href="$structLibBoard_1_1QuadraticBezierCurve.html" title="A quadratic Bezier curve having 3 control points. NB. It is also a parabola arc." alt="" coords="357,229,531,271"/>
+</map>

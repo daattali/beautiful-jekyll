@@ -1,5 +1,0 @@
-<map id="DGtal::NaiveDSL&lt; TCoordinate, TInteger &gt;" name="DGtal::NaiveDSL&lt; TCoordinate, TInteger &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1ArithmeticalDSL.html" title="DGtal::ArithmeticalDSL\l\&lt; TCoordinate, TInteger, 8 \&gt;" alt="" coords="882,109,1071,147"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1ArithmeticalDSL.html" title="Aim: This class represents a naive (resp. standard) digital straight line (DSL), ie. the set of digital points &#160;such that &#160;with , &#160;and &#160;(resp. ). Note that any DSL such that &#160;(resp. ) is simply 8&#45;connected (resp. 4&#45;connected). " alt="" coords="498,65,663,117"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="194,119,353,171"/>
-</map>

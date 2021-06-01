@@ -1,3 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDGtal_1_1SurfelNeighborhood.html" title="Aim: This helper class is useful to compute the neighboring surfels of a given surfel, especially over a digital surface or over an object boundary. Two signed surfels are incident if they share a common n&#45;2 cell. This class uses a SurfelAdjacency so as to determine adjacent surfels (either looking for them from interior to exterior or inversely). " alt="" coords="5,5,187,44"/>
-</map>

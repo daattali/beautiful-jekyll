@@ -1,0 +1,46 @@
+<map id="testOwningOrAliasingPtr.cpp" name="testOwningOrAliasingPtr.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="293,5,483,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1465,497,1537,524"/>
+<area shape="rect" id="node3" href="$Common_8h_source.html" title=" " alt="" coords="1155,177,1311,203"/>
+<area shape="rect" id="node43" href="$OwningOrAliasingPtr_8h_source.html" title=" " alt="" coords="290,80,486,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="814,266,893,293"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1011,423,1085,449"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1221,266,1347,293"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1371,266,1541,293"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1566,266,1725,293"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1749,266,1918,293"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1943,266,2121,293"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2146,259,2289,300"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2313,266,2506,293"/>
+<area shape="rect" id="node13" title=" " alt="" coords="945,348,1004,375"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2531,266,2592,293"/>
+<area shape="rect" id="node15" href="$Config_8h_source.html" title=" " alt="" coords="2761,423,2903,449"/>
+<area shape="rect" id="node17" href="$Trace_8h_source.html" title=" " alt="" coords="2717,266,2853,293"/>
+<area shape="rect" id="node24" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="2258,348,2457,375"/>
+<area shape="rect" id="node25" href="$Assert_8h_source.html" title=" " alt="" coords="2977,348,3119,375"/>
+<area shape="rect" id="node28" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="2043,348,2234,375"/>
+<area shape="rect" id="node29" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="968,266,1147,293"/>
+<area shape="rect" id="node30" href="$BasicTypes_8h_source.html" title=" " alt="" coords="1111,348,1281,375"/>
+<area shape="rect" id="node33" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="501,266,688,293"/>
+<area shape="rect" id="node41" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="1516,348,1719,375"/>
+<area shape="rect" id="node42" href="$Exceptions_8h_source.html" title=" " alt="" coords="163,348,331,375"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2805,497,2859,524"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2480,497,2549,524"/>
+<area shape="rect" id="node19" title=" " alt="" coords="2481,348,2535,375"/>
+<area shape="rect" id="node20" href="$Clock_8h_source.html" title=" " alt="" coords="1743,348,1881,375"/>
+<area shape="rect" id="node23" href="$TraceWriter_8h_source.html" title=" " alt="" coords="2273,423,2442,449"/>
+<area shape="rect" id="node27" href="$Trace_8ih_source.html" title=" " alt="" coords="2560,348,2699,375"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1403,423,1463,449"/>
+<area shape="rect" id="node22" href="$Clock_8ih_source.html" title=" " alt="" coords="1742,423,1882,449"/>
+<area shape="rect" id="node26" title=" " alt="" coords="3028,423,3204,449"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1256,423,1379,449"/>
+<area shape="rect" id="node32" title=" " alt="" coords="1160,423,1232,449"/>
+<area shape="rect" id="node34" title=" " alt="" coords="741,348,819,375"/>
+<area shape="rect" id="node35" href="$Color_8h_source.html" title=" " alt="" coords="364,348,479,375"/>
+<area shape="rect" id="node38" href="$BasicBoolFunctors_8h_source.html" title=" " alt="" coords="503,348,716,375"/>
+<area shape="rect" id="node36" title=" " alt="" coords="195,423,347,449"/>
+<area shape="rect" id="node37" href="$Color_8ih_source.html" title=" " alt="" coords="371,423,490,449"/>
+<area shape="rect" id="node39" title=" " alt="" coords="566,423,695,449"/>
+<area shape="rect" id="node40" href="$BasicBoolFunctors_8ih_source.html" title=" " alt="" coords="720,423,936,449"/>
+<area shape="rect" id="node44" href="$OwningOrAliasingPtr_8ih_source.html" title=" " alt="" coords="290,169,486,211"/>
+</map>

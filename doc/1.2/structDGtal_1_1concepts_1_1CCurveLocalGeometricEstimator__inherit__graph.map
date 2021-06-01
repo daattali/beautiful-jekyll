@@ -1,0 +1,4 @@
+<map id="DGtal::concepts::CCurveLocalGeometricEstimator&lt; T &gt;" name="DGtal::concepts::CCurveLocalGeometricEstimator&lt; T &gt;">
+<area shape="rect" id="node1" title="Aim: This concept describes an object that can process a range so as to return one estimated quantity..." alt="" coords="5,5,207,47"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CSegmentComputerEstimator.html" title="Aim: This concept is a refinement of CCurveLocalGeometricEstimator devoted to the estimation of a geo..." alt="" coords="13,95,199,136"/>
+</map>

@@ -1,9 +1,0 @@
-<map id="DGtal::concepts::CVertexPredicate&lt; T &gt;" name="DGtal::concepts::CVertexPredicate&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CPredicate.html" title="DGtal::concepts::CPredicate\l\&lt; T, T::Vertex \&gt;" alt="" coords="1439,36,1629,75"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="DGtal::concepts::CUnaryFunctor\l\&lt; T, T::Vertex, bool \&gt;" alt="" coords="846,5,1060,44"/>
-<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="5,49,163,75"/>
-<area shape="rect" id="node6" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="246,49,405,75"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="DGtal::concepts::CUnaryFunctor\l\&lt; T, TElement, bool \&gt;" alt="" coords="846,68,1060,107"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results. " alt="" coords="454,43,668,81"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1concepts_1_1CPredicate.html" title="Aim: Defines a predicate function, ie. a functor mapping a domain into the set of booleans..." alt="" coords="1109,64,1299,103"/>
-</map>

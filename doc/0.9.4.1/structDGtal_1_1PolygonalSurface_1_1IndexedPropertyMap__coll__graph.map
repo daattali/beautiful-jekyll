@@ -1,9 +1,0 @@
-<map id="DGtal::PolygonalSurface&lt; TPoint &gt;::IndexedPropertyMap&lt; TData &gt;" name="DGtal::PolygonalSurface&lt; TPoint &gt;::IndexedPropertyMap&lt; TData &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1PolygonalSurface.html" title="Aim: Represents a polygon mesh, i.e. a 2&#45;dimensional combinatorial surface whose faces are (topologic..." alt="" coords="1278,133,1445,171"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="202,134,315,159"/>
-<area shape="rect" id="node15" href="$classDGtal_1_1OwningOrAliasingPtr.html" title="DGtal::OwningOrAliasingPtr\l\&lt; Storage \&gt;" alt="" coords="613,17,799,55"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="199,345,318,370"/>
-<area shape="rect" id="node16" href="$classDGtal_1_1OwningOrAliasingPtr.html" title="Aim: This class describes a smart pointer that is, given the constructor called by the user..." alt="" coords="150,22,367,47"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1HalfEdgeDataStructure.html" title="Aim: This class represents an half&#45;edge data structure, which is a structure for representing the top..." alt="" coords="972,193,1172,218"/>
-<area shape="rect" id="node13" href="$structDGtal_1_1HalfEdgeDataStructure_1_1HalfEdge.html" title="DGtal::HalfEdgeDataStructure\l::HalfEdge" alt="" coords="158,282,358,321"/>
-</map>

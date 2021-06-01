@@ -1,0 +1,7 @@
+<map id="DGtal::concepts::CSinglePassRangeWithWritableIteratorFromPoint&lt; T, Value &gt;" name="DGtal::concepts::CSinglePassRangeWithWritableIteratorFromPoint&lt; T, Value &gt;">
+<area shape="rect" id="node1" title="Aim: refined concept of single pass range with a outputIterator() method from a point." alt="" coords="991,54,1196,110"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CConstSinglePassRangeFromPoint.html" title=" " alt="" coords="721,25,941,67"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range." alt="" coords="5,25,212,67"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CConstSinglePassRangeFromPoint.html" title="Aim: refined concept of const single pass range with a begin() method from a point." alt="" coords="261,25,468,67"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIterator.html" title="Aim: refined concept of const single pass range which require that an output iterator exists." alt="" coords="492,77,697,133"/>
+</map>

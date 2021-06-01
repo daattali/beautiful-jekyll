@@ -1,6 +1,0 @@
-<map id="DGtal::functors::ConstantPointPredicate&lt; TPoint, boolCst &gt;" name="DGtal::functors::ConstantPointPredicate&lt; TPoint, boolCst &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1functors_1_1ConstantPointPredicate.html" title="DGtal::functors::Constant\lPointPredicate\&lt; TPoint,\l true \&gt;" alt="" coords="325,5,496,57"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1functors_1_1ConstantPointPredicate.html" title="DGtal::functors::Constant\lPointPredicate\&lt; TPoint,\l false \&gt;" alt="" coords="325,81,496,133"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1functors_1_1TruePointPredicate.html" title="Aim: The predicate that returns always true. " alt="" coords="548,12,723,51"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1functors_1_1FalsePointPredicate.html" title="Aim: The predicate that returns always false. " alt="" coords="545,88,726,127"/>
-</map>

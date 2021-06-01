@@ -1,0 +1,5 @@
+<map id="DGtal::DelaunayRationalKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;" name="DGtal::DelaunayRationalKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;">
+<area shape="rect" id="node1" title="Aim: a geometric kernel to compute the Delaunay triangulation of a range of floating points with inte..." alt="" coords="15,244,219,300"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1ConvexHullCommonKernel.html" title=" " alt="" coords="5,139,228,195"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1ConvexHullCommonKernel.html" title="Aim: the common part of all geometric kernels for computing the convex hull or Delaunay triangulation..." alt="" coords="5,5,228,61"/>
+</map>

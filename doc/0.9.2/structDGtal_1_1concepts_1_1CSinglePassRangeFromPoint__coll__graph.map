@@ -1,5 +1,0 @@
-<map id="DGtal::concepts::CSinglePassRangeFromPoint&lt; T &gt;" name="DGtal::concepts::CSinglePassRangeFromPoint&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CSinglePassRange.html" title="Aim: Defines the concept describing a range. " alt="" coords="423,62,601,109"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range. " alt="" coords="103,127,319,174"/>
-<area shape="rect" id="node9" href="$structDGtal_1_1concepts_1_1CConstSinglePassRangeFromPoint.html" title="Aim: refined concept of const single pass range with a begin() method from a point. " alt="" coords="404,131,620,178"/>
-</map>

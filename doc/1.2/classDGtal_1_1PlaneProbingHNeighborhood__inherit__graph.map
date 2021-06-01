@@ -1,0 +1,4 @@
+<map id="DGtal::PlaneProbingHNeighborhood&lt; TPredicate &gt;" name="DGtal::PlaneProbingHNeighborhood&lt; TPredicate &gt;">
+<area shape="rect" id="node1" title="Aim: Represent a way to probe the H&#45;neighborhood." alt="" coords="5,95,236,136"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1PlaneProbingNeighborhood.html" title="Aim: A base virtual class that represents a way to probe a neighborhood, used in the plane probing ba..." alt="" coords="10,5,231,47"/>
+</map>

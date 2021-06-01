@@ -1,8 +1,0 @@
-<map id="DGtal::PowerMap&lt; TWeightImage, TPowerSeparableMetric, TImageContainer &gt;" name="DGtal::PowerMap&lt; TWeightImage, TPowerSeparableMetric, TImageContainer &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l OutputImage \&gt;" alt="" coords="650,22,788,61"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="5,13,143,51"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="260,35,421,61"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="284,87,398,113"/>
-<area shape="rect" id="node9" title="STL class. " alt="" coords="287,139,395,165"/>
-<area shape="rect" id="node10" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="639,234,799,286"/>
-</map>

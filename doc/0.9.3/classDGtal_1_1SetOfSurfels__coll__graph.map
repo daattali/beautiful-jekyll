@@ -1,6 +1,0 @@
-<map id="DGtal::SetOfSurfels&lt; TKSpace, TSurfelSet &gt;" name="DGtal::SetOfSurfels&lt; TKSpace, TSurfelSet &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1functors_1_1SurfelSetPredicate.html" title="DGtal::functors::SurfelSet\lPredicate\&lt; SurfelSet, Surfel \&gt;" alt="" coords="367,13,565,52"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1functors_1_1SurfelSetPredicate.html" title="Aim: The predicate returning true iff the point is in the domain given at construction. " alt="" coords="5,5,178,57"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1SurfelAdjacency.html" title="DGtal::SurfelAdjacency\l\&lt; KSpace::dimension \&gt;" alt="" coords="387,79,546,117"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1SurfelAdjacency.html" title="Aim: Represent adjacencies between surfel elements, telling if it follows an interior to exterior ord..." alt="" coords="12,81,171,120"/>
-</map>

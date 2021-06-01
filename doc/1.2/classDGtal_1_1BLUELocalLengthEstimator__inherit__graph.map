@@ -1,0 +1,4 @@
+<map id="DGtal::BLUELocalLengthEstimator&lt; TConstIterator &gt;" name="DGtal::BLUELocalLengthEstimator&lt; TConstIterator &gt;">
+<area shape="rect" id="node1" title="Aim: Best Linear Unbiased Two step length estimator." alt="" coords="5,95,231,136"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1TwoStepLocalLengthEstimator.html" title="Aim: a simple model of CGlobalCurveEstimator that compute the length of a curve using the l_1 metric ..." alt="" coords="25,5,211,47"/>
+</map>

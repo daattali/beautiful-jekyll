@@ -1,0 +1,8 @@
+<map id="DGtal::concepts::CPrimitiveComputer&lt; T &gt;" name="DGtal::concepts::CPrimitiveComputer&lt; T &gt;">
+<area shape="rect" id="node1" title="Aim: Defines the concept describing an object that computes some primitive from input points,..." alt="" coords="267,49,453,90"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CIncrementalPrimitiveComputer.html" title="Aim: Defines the concept describing an object that computes some primitive from input points given on..." alt="" coords="501,49,704,90"/>
+<area shape="rect" id="node2" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html." alt="" coords="5,5,219,32"/>
+<area shape="rect" id="node3" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html." alt="" coords="11,56,213,83"/>
+<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="33,107,191,133"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CAdditivePrimitiveComputer.html" title="Aim: Defines the concept describing an object that computes some primitive from input points given gr..." alt="" coords="752,49,935,90"/>
+</map>
