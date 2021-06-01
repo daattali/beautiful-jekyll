@@ -4,9 +4,9 @@ title: Course
 subtitle: ''
 
 ---
-#### ![](/uploads/20210601_154059_0000.png)
+![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
 
-## Course Description
+#### Course Description
 
 _The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits.
 
