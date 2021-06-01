@@ -1,0 +1,4 @@
+<map id="DGtal::TransformedPrism" name="DGtal::TransformedPrism">
+<area shape="rect" id="node1" title="class to modify the position and scale to construct better illustration mode." alt="" coords="35,80,205,107"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="5,5,235,32"/>
+</map>

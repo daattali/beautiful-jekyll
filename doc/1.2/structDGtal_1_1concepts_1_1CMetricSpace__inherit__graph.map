@@ -1,0 +1,7 @@
+<map id="DGtal::concepts::CMetricSpace&lt; T &gt;" name="DGtal::concepts::CMetricSpace&lt; T &gt;">
+<area shape="rect" id="node1" title="Aim: defines the concept of metric spaces." alt="" coords="124,80,295,121"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CDigitalMetricSpace.html" title="Aim: defines the concept of digital metric spaces." alt="" coords="21,169,193,211"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CSeparableMetric.html" title="Aim: defines the concept of separable metrics." alt="" coords="217,169,410,211"/>
+<area shape="rect" id="node2" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html." alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="233,5,391,32"/>
+</map>

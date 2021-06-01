@@ -1,0 +1,9 @@
+<map id="DGtal::ConvexHullCommonKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;" name="DGtal::ConvexHullCommonKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;">
+<area shape="rect" id="node1" title="Aim: the common part of all geometric kernels for computing the convex hull or Delaunay triangulation..." alt="" coords="5,127,228,183"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1ConvexHullCommonKernel.html" title=" " alt="" coords="407,85,629,141"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1ConvexHullCommonKernel.html" title=" " alt="" coords="407,165,629,221"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1DelaunayIntegralKernel.html" title="Aim: a geometric kernel to compute the Delaunay triangulation of digital points with integer&#45;only ari..." alt="" coords="687,5,885,61"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1DelaunayRationalKernel.html" title="Aim: a geometric kernel to compute the Delaunay triangulation of a range of floating points with inte..." alt="" coords="684,85,888,141"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1ConvexHullIntegralKernel.html" title="Aim: a geometric kernel to compute the convex hull of digital points with integer&#45;only arithmetic." alt="" coords="679,165,893,221"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1ConvexHullRationalKernel.html" title="Aim: a geometric kernel to compute the convex hull of floating points with integer&#45;only arithmetic...." alt="" coords="679,245,893,301"/>
+</map>

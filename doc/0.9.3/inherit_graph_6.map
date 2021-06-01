@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; I \&gt;" alt="" coords="5,33,159,59"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="DGtal::concepts::CUnaryFunctor\l\&lt; I, I ::Point, I ::Value \&gt;" alt="" coords="207,27,421,65"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CPointFunctor.html" title="DGtal::concepts::CPointFunctor\&lt; I \&gt;" alt="" coords="469,33,704,59"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CTrivialConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor. " alt="" coords="752,27,920,65"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor. " alt="" coords="968,5,1200,31"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1concepts_1_1CTrivialImage.html" title="Aim: Defines the concept describing an image without extra ranges, which is a refinement of CTrivialC..." alt="" coords="1000,55,1168,93"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CImage.html" title="Aim: Defines the concept describing a read/write image, having an output iterator. " alt="" coords="1248,33,1445,59"/>
-</map>

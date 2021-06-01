@@ -1,5 +1,0 @@
-<map id="DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::BlockPointer" name="DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::BlockPointer">
-<area shape="rect" id="node2" href="$structDGtal_1_1IndexedListWithBlocks_1_1FirstBlock.html" title="DGtal::IndexedListWithBlocks\l\&lt; TValue, N, M \&gt;::FirstBlock" alt="" coords="641,71,838,109"/>
-<area shape="rect" id="node3" href="$unionDGtal_1_1IndexedListWithBlocks_1_1ValueOrBlockPointer.html" title="Used in blocks to finish it or to point to the next block. " alt="" coords="312,71,563,109"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1IndexedListWithBlocks_1_1AnyBlock.html" title="DGtal::IndexedListWithBlocks\l\&lt; TValue, N, M \&gt;::AnyBlock" alt="" coords="5,43,202,81"/>
-</map>

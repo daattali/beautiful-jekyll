@@ -1,9 +1,0 @@
-<map id="DGtal::GridCurve&lt; TKSpace &gt;" name="DGtal::GridCurve&lt; TKSpace &gt;">
-<area shape="rect" id="node3" href="$structDGtal_1_1SignedKhalimskyCell.html" title="Represents a signed cell in a cellular grid space by its Khalimsky coordinates and a boolean value..." alt="" coords="100,604,288,643"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, Integer \&gt;" alt="" coords="101,504,287,543"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; dim, Integer \&gt;" alt="" coords="174,304,305,343"/>
-<area shape="rect" id="node11" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, TInteger \&gt;" alt="" coords="277,404,463,443"/>
-<area shape="rect" id="node7" title="STL class. " alt="" coords="297,92,405,117"/>
-<area shape="rect" id="node12" title="STL class. " alt="" coords="20,141,133,167"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="100,191,259,243"/>
-</map>

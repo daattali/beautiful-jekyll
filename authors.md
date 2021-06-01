@@ -23,6 +23,7 @@ title: Authors
 * Raphael Lenain (Univ. Poitiers)
 * Boris Mansencal (LaBRI, Univ. Bordeaux)
 * Nicolas Normand (IRCCyN, Université de Nantes)
+* Phuc Ngo (LORIA)
 * Xavier Provençal (LAMA, Université de Savoie)
 * Laurent Provot (LIMOS, Auvergne University)
 * Tristan Roussillon (LIRIS, INSA-Lyon)
@@ -39,6 +40,9 @@ title: Authors
 * Nicolas Silva (LIRIS, INSA-Lyon)
 * Jean-David Genevaux (LIRIS, Lyon 1)
 * Johanna Delanoy (GraphDeco, INRIA)
+* Mohamad Onayssi (ESIEE)
+* Bibiana Martinez (ESIEE)
+* Mohamed Mellouli (ESIEE)
 
 For any comment/question about the library itself, please use the mailing lists detailed in the [Documentation & Help][1] page. For any other request:
 

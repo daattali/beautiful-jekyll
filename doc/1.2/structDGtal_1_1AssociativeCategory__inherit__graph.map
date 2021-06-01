@@ -1,0 +1,18 @@
+<map id="DGtal::AssociativeCategory" name="DGtal::AssociativeCategory">
+<area shape="rect" id="node1" title=" " alt="" coords="227,225,412,251"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1MultipleAssociativeCategory.html" title=" " alt="" coords="475,64,653,105"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1OrderedAssociativeCategory.html" title=" " alt="" coords="475,129,653,171"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1PairAssociativeCategory.html" title=" " alt="" coords="460,195,668,222"/>
+<area shape="rect" id="node13" href="$structDGtal_1_1SimpleAssociativeCategory.html" title=" " alt="" coords="478,247,650,288"/>
+<area shape="rect" id="node15" href="$structDGtal_1_1UniqueAssociativeCategory.html" title=" " alt="" coords="477,377,651,419"/>
+<area shape="rect" id="node16" href="$structDGtal_1_1UnorderedAssociativeCategory.html" title=" " alt="" coords="468,312,660,353"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1ContainerCategory.html" title=" " alt="" coords="5,225,179,251"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1MultimapAssociativeCategory.html" title=" " alt="" coords="732,5,917,47"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1MultisetAssociativeCategory.html" title=" " alt="" coords="735,71,914,112"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1UnorderedMultimapAssociativeCategory.html" title=" " alt="" coords="736,136,913,177"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1UnorderedMultisetAssociativeCategory.html" title=" " alt="" coords="739,201,910,243"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1MapAssociativeCategory.html" title=" " alt="" coords="719,267,930,294"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1SetAssociativeCategory.html" title=" " alt="" coords="722,318,927,345"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1UnorderedMapAssociativeCategory.html" title=" " alt="" coords="716,369,933,411"/>
+<area shape="rect" id="node14" href="$structDGtal_1_1UnorderedSetAssociativeCategory.html" title=" " alt="" coords="719,435,931,476"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="LibBoard::Dot" name="LibBoard::Dot">
+<area shape="rect" id="node1" title="A line between two points." alt="" coords="13,80,116,107"/>
+<area shape="rect" id="node2" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="5,5,124,32"/>
+</map>

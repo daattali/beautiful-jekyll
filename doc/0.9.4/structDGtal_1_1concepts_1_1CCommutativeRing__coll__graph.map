@@ -1,9 +1,0 @@
-<map id="DGtal::concepts::CCommutativeRing&lt; T &gt;" name="DGtal::concepts::CCommutativeRing&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CSignedNumber.html" title="Aim: Concept checking for Signed Numbers. Models of this concept should be listed in NumberTraits cla..." alt="" coords="802,81,977,120"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal. " alt="" coords="539,88,753,113"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CLabel.html" title="Aim: Define the concept of DGtal labels. Models of CLabel can be default&#45;constructible, assignable and equality comparable. " alt="" coords="280,55,477,80"/>
-<area shape="rect" id="node5" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. " alt="" coords="5,5,217,31"/>
-<area shape="rect" id="node6" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="33,55,190,80"/>
-<area shape="rect" id="node7" href="$structboost_1_1EqualityComparable.html" title="Go to http://www.sgi.com/tech/stl/EqualityComparable.html. " alt="" coords="5,104,217,129"/>
-<area shape="rect" id="node8" href="$structboost_1_1LessThanComparable.html" title="Go to http://www.sgi.com/tech/stl/LessThanComparable.html. " alt="" coords="267,104,490,129"/>
-</map>

@@ -1,9 +1,0 @@
-var searchData=
-[
-  ['r',['r',['../structDGtal_1_1concepts_1_1CSTLAssociativeContainer.html#a42e024680fcd17b5ed218599cc416979',1,'DGtal::concepts::CSTLAssociativeContainer::r()'],['../structDGtal_1_1concepts_1_1CUnaryFunctor.html#a635ea97cbb6975e39fc53eacb283f29a',1,'DGtal::concepts::CUnaryFunctor::r()'],['../structDGtal_1_1concepts_1_1CUnaryFunctor_3_01X_00_01A_01_6_00_01R_01_6_01_4.html#aa590988700de4fa421d3a98455f3c8db',1,'DGtal::concepts::CUnaryFunctor&lt; X, A &amp;, R &amp; &gt;::r()'],['../structDGtal_1_1concepts_1_1CConstImage.html#a2a0cab2bb7f60c865820eb053923a8ec',1,'DGtal::concepts::CConstImage::r()']]],
-  ['radius',['radius',['../structDGtal_1_1functors_1_1SphereFittingEstimator_1_1Quantity.html#a16894d397b4b6e07e464b3cdcdd972e1',1,'DGtal::functors::SphereFittingEstimator::Quantity::radius()'],['../structDGtal_1_1Display3D_1_1BallD3D.html#a254bb4f559cd4b7c7a598c8e7cde9fcc',1,'DGtal::Display3D::BallD3D::radius()']]],
-  ['red',['Red',['../classDGtal_1_1Color.html#aa5e8679bd0da49f95d13cd95a17b619b',1,'DGtal::Color']]],
-  ['requiredheaders',['requiredHeaders',['../structDGtal_1_1LongvolReader.html#a1e1ccb8a20c370cca8949a9f2d0643cf',1,'DGtal::LongvolReader::requiredHeaders()'],['../structDGtal_1_1VolReader.html#a919e7c5a7425e58bb7cea9a7c64db87d',1,'DGtal::VolReader::requiredHeaders()']]],
-  ['resolution',['resolution',['../structDGtal_1_1Display3D_1_1BallD3D.html#aaaa1246847fafe2ce757427032cf0ff3',1,'DGtal::Display3D::BallD3D']]],
-  ['reverse',['reverse',['../classDGtal_1_1ImageToConstantFunctor.html#a381c68fd2b52efcc8edc8c43ddc58536',1,'DGtal::ImageToConstantFunctor']]]
-];

@@ -4,7 +4,7 @@ title: Download
 ---
 ### Releases
 
-* Last stable DGtal release: [DGtal 1.0][2]
+* Last stable DGtal release: [DGtal 1.2][2]
 
 ### Development version
 
@@ -42,7 +42,7 @@ See also [ the dedicated page][12] in the DGtal documentation.
 * use cmake-gui to generate the VS project for instance
 * open the DGtal project and compile with Visual Studio (VS14 or above)
 
-[1]: http://dgtal.org/releases/DGtal-0.9.4.1.tar.gz
+[1]: https://github.com/DGtal-team/DGtal/releases
 [2]: https://github.com/DGtal-team/DGtal/releases
 [3]: https://github.com/DGtal-team/DGtal
 [4]: http://www.cmake.org

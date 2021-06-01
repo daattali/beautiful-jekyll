@@ -1,0 +1,4 @@
+<map id="LibBoard::TransformCairo" name="LibBoard::TransformCairo">
+<area shape="rect" id="node1" title="Structure representing a scaling and translation suitable for an Cairo output." alt="" coords="5,80,176,107"/>
+<area shape="rect" id="node2" href="$structLibBoard_1_1Transform.html" title="base class for transforms." alt="" coords="21,5,161,32"/>
+</map>

@@ -1,5 +1,0 @@
-<map id="DGtal::VCMDigitalSurfaceLocalEstimator&lt; TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction, TVCMGeometricFunctor &gt;" name="DGtal::VCMDigitalSurfaceLocalEstimator&lt; TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction, TVCMGeometricFunctor &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DGtal::VoronoiCovariance\lMeasureOnDigitalSurface \&gt;" alt="" coords="431,5,684,69"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="7,50,196,97"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DGtal::DigitalSurface \&gt;" alt="" coords="437,93,677,139"/>
-</map>

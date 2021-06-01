@@ -1,9 +1,0 @@
-<map id="DGtal::concepts::CAdditivePrimitiveComputer&lt; T &gt;" name="DGtal::concepts::CAdditivePrimitiveComputer&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CIncrementalPrimitiveComputer.html" title="Aim: Defines the concept describing an object that computes some primitive from input points given on..." alt="" coords="666,167,868,205"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CPrimitiveComputer.html" title="Aim: Defines the concept describing an object that computes some primitive from input points..." alt="" coords="331,89,515,128"/>
-<area shape="rect" id="node4" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. " alt="" coords="5,5,217,31"/>
-<area shape="rect" id="node5" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. " alt="" coords="11,55,212,80"/>
-<area shape="rect" id="node6" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="33,104,190,129"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1CForwardIteratorArchetype.html" title="DGtal::CForwardIteratorArchetype\l\&lt; Point \&gt;" alt="" coords="655,285,879,324"/>
-<area shape="rect" id="node10" href="$structDGtal_1_1CForwardIteratorArchetype.html" title="An archetype of ForwardIterator. " alt="" coords="296,348,550,373"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="DGtal::DomainAdjacency&lt; TDomain, TAdjacency &gt;" name="DGtal::DomainAdjacency&lt; TDomain, TAdjacency &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1functors_1_1DomainPredicate.html" title="DGtal::functors::DomainPredicate\l\&lt; Domain \&gt;" alt="" coords="5,121,240,167"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1functors_1_1DomainPredicate.html" title="Aim: The predicate returning true iff the point is in the domain given at construction. It is just a wrapper class around the methods Domain::isInside( const Point &amp; ), where Domain stands for any model of CDomain. " alt="" coords="5,6,240,53"/>
-</map>

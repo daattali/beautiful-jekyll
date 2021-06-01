@@ -1,0 +1,14 @@
+<map id="DGtal::concepts::CPointFunctor&lt; T &gt;" name="DGtal::concepts::CPointFunctor&lt; T &gt;">
+<area shape="rect" id="node1" title="Aim: Defines a functor on points." alt="" coords="1125,45,1367,71"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1COrientationFunctor.html" title="Aim: This concept gathers models implementing an orientation test of &#160;points in a space of dimension ..." alt="" coords="1467,7,1666,48"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1concepts_1_1CPointFunctor.html" title=" " alt="" coords="1448,74,1685,101"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="861,37,1076,79"/>
+<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="5,46,164,73"/>
+<area shape="rect" id="node5" href="$structboost_1_1Assignable.html" title=" " alt="" coords="249,73,408,99"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results." alt="" coords="457,72,672,113"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1concepts_1_1COrientationFunctor2.html" title="Aim: This concept is a refinement of COrientationFunctor, useful for simple algebraic curves that can..." alt="" coords="1735,5,1933,47"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1concepts_1_1CTrivialConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor." alt="" coords="1749,71,1919,112"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1concepts_1_1CConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor." alt="" coords="1983,47,2217,74"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1concepts_1_1CTrivialImage.html" title="Aim: Defines the concept describing an image without extra ranges, which is a refinement of CTrivialC..." alt="" coords="2015,99,2185,140"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1concepts_1_1CImage.html" title="Aim: Defines the concept describing a read/write image, having an output iterator." alt="" coords="2267,78,2465,105"/>
+</map>

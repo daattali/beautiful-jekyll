@@ -1,6 +1,0 @@
-<map id="boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::out_edge_iterator" name="boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::out_edge_iterator">
-<area shape="rect" id="node3" title="STL iterator class. " alt="" coords="613,95,766,133"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l OutEdgeContainer \&gt;" alt="" coords="616,157,763,196"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="5,164,143,203"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="260,201,421,227"/>
-</map>

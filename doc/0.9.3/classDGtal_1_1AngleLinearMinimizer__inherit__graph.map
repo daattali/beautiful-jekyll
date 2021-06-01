@@ -1,5 +1,0 @@
-<map id="DGtal::AngleLinearMinimizer" name="DGtal::AngleLinearMinimizer">
-<area shape="rect" id="node2" href="$classDGtal_1_1AngleLinearMinimizerByAdaptiveStepGradientDescent.html" title="DGtal::AngleLinearMinimizer\lByAdaptiveStepGradientDescent" alt="" coords="244,5,461,44"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1AngleLinearMinimizerByGradientDescent.html" title="DGtal::AngleLinearMinimizer\lByGradientDescent" alt="" coords="257,68,448,107"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1AngleLinearMinimizerByRelaxation.html" title="DGtal::AngleLinearMinimizer\lByRelaxation" alt="" coords="257,131,448,169"/>
-</map>

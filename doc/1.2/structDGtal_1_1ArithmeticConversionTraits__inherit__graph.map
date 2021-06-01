@@ -1,0 +1,5 @@
+<map id="DGtal::ArithmeticConversionTraits&lt; T, U, Enable &gt;" name="DGtal::ArithmeticConversionTraits&lt; T, U, Enable &gt;">
+<area shape="rect" id="node1" title="Aim: Trait class to get result type of arithmetic binary operators between two given types." alt="" coords="5,58,195,99"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1ArithmeticConversionTraits.html" title=" " alt="" coords="428,29,635,129"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1ArithmeticConversionTraits_3_01T_00_01U_00_01typename_01std_1_1enable__if_3_01_9_25eb7aff75c55bf534e325120cc74d30.html" title="Specialization in order to remove const specifiers and references from given types." alt="" coords="684,7,945,151"/>
+</map>

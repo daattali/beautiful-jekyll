@@ -1,0 +1,5 @@
+<map id="DGtal::StandardDSL&lt; TCoordinate, TInteger &gt;" name="DGtal::StandardDSL&lt; TCoordinate, TInteger &gt;">
+<area shape="rect" id="node1" title="Aim: This class is an alias of ArithmeticalDSS for standard DSL. It represents a standard digital str..." alt="" coords="24,215,197,256"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1ArithmeticalDSL.html" title=" " alt="" coords="5,124,216,165"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1ArithmeticalDSL.html" title="Aim: This class represents a naive (resp. standard) digital straight line (DSL), ie...." alt="" coords="29,5,193,61"/>
+</map>

@@ -1,3 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structDGtal_1_1deprecated_1_1SetPredicate.html" title="Aim: The predicate returning true iff the point is in the set given at construction. The set given at construction is aliased in the predicate and not cloned, which means that the lifetime of the set should exceed the lifetime of the predicate. " alt="" coords="5,5,208,51"/>
-</map>

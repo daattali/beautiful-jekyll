@@ -1,7 +1,0 @@
-<map id="DGtal::Image&lt; TImageContainer &gt;" name="DGtal::Image&lt; TImageContainer &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; TImageContainer \&gt;" alt="" coords="84,331,332,360"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l TImageContainer \&gt;" alt="" coords="5,217,155,263"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="41,6,191,53"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="159,120,332,149"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer. " alt="" coords="179,225,325,255"/>
-</map>

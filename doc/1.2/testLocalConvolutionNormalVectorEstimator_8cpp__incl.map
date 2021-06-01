@@ -1,0 +1,52 @@
+<map id="testLocalConvolutionNormalVectorEstimator.cpp" name="testLocalConvolutionNormalVectorEstimator.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2420,5,2607,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="2527,705,2599,732"/>
+<area shape="rect" id="node3" title=" " alt="" coords="3201,109,3297,136"/>
+<area shape="rect" id="node4" href="$Common_8h_source.html" title=" " alt="" coords="2563,392,2719,419"/>
+<area shape="rect" id="node26" href="$DigitalSurface_8h_source.html" title=" " alt="" coords="421,206,627,233"/>
+<area shape="rect" id="node33" href="$DigitalSetBoundary_8h_source.html" title=" " alt="" coords="2332,199,2503,240"/>
+<area shape="rect" id="node34" href="$ImplicitDigitalSurface_8h_source.html" title=" " alt="" coords="1748,199,1940,240"/>
+<area shape="rect" id="node35" href="$LightImplicitDigitalSurface_8h_source.html" title=" " alt="" coords="1619,102,1802,143"/>
+<area shape="rect" id="node36" href="$BreadthFirstVisitor_8h_source.html" title=" " alt="" coords="1170,199,1337,240"/>
+<area shape="rect" id="node37" href="$CUndirectedSimpleLocalGraph_8h_source.html" title=" " alt="" coords="1275,295,1485,337"/>
+<area shape="rect" id="node38" href="$ExplicitDigitalSurface_8h_source.html" title=" " alt="" coords="2578,199,2771,240"/>
+<area shape="rect" id="node39" href="$LightExplicitDigitalSurface_8h_source.html" title=" " alt="" coords="2152,102,2336,143"/>
+<area shape="rect" id="node40" href="$FrontierPredicate_8h_source.html" title=" " alt="" coords="2679,295,2833,337"/>
+<area shape="rect" id="node41" href="$BoundaryPredicate_8h_source.html" title=" " alt="" coords="2908,295,3063,337"/>
+<area shape="rect" id="node42" href="$CUndirectedSimpleGraph_8h_source.html" title=" " alt="" coords="1413,199,1622,240"/>
+<area shape="rect" id="node43" href="$VolReader_8h_source.html" title=" " alt="" coords="3087,303,3279,329"/>
+<area shape="rect" id="node44" href="$SetFromImage_8h_source.html" title=" " alt="" coords="3303,295,3505,337"/>
+<area shape="rect" id="node45" href="$Viewer3D_8h_source.html" title=" " alt="" coords="1965,206,2155,233"/>
+<area shape="rect" id="node46" href="$ImageSelector_8h_source.html" title=" " alt="" coords="3529,303,3729,329"/>
+<area shape="rect" id="node47" href="$DGtal_2shapes_2Shapes_8h_source.html" title=" " alt="" coords="3754,303,3915,329"/>
+<area shape="rect" id="node48" href="$StdDefs_8h_source.html" title=" " alt="" coords="3940,303,4105,329"/>
+<area shape="rect" id="node49" href="$BasicConvolutionWeights_8h_source.html" title=" " alt="" coords="4129,288,4321,344"/>
+<area shape="rect" id="node50" href="$LocalConvolutionNormalVectorEstimator_8h_source.html" title=" " alt="" coords="1006,95,1197,151"/>
+<area shape="rect" id="node5" title=" " alt="" coords="3042,474,3121,501"/>
+<area shape="rect" id="node6" title=" " alt="" coords="3252,556,3327,583"/>
+<area shape="rect" id="node7" title=" " alt="" coords="3508,474,3633,501"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1549,474,1720,501"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1745,474,1903,501"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1927,474,2097,501"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2121,474,2300,501"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2325,467,2467,508"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1078,474,1271,501"/>
+<area shape="rect" id="node14" title=" " alt="" coords="3363,556,3421,583"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2492,474,2553,501"/>
+<area shape="rect" id="node16" href="$Config_8h_source.html" title=" " alt="" coords="1797,631,1939,657"/>
+<area shape="rect" id="node17" href="$Trace_8h_source.html" title=" " alt="" coords="2577,474,2713,501"/>
+<area shape="rect" id="node18" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="1449,556,1647,583"/>
+<area shape="rect" id="node19" href="$Assert_8h_source.html" title=" " alt="" coords="2563,556,2704,583"/>
+<area shape="rect" id="node20" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="2467,631,2658,657"/>
+<area shape="rect" id="node21" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="2683,631,2861,657"/>
+<area shape="rect" id="node22" href="$BasicTypes_8h_source.html" title=" " alt="" coords="2829,556,3000,583"/>
+<area shape="rect" id="node23" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="3196,474,3383,501"/>
+<area shape="rect" id="node24" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="2936,631,3139,657"/>
+<area shape="rect" id="node25" href="$Exceptions_8h_source.html" title=" " alt="" coords="3163,631,3331,657"/>
+<area shape="rect" id="node27" title=" " alt="" coords="2199,303,2257,329"/>
+<area shape="rect" id="node28" title=" " alt="" coords="504,303,544,329"/>
+<area shape="rect" id="node29" title=" " alt="" coords="43,303,229,329"/>
+<area shape="rect" id="node30" title=" " alt="" coords="253,303,429,329"/>
+<area shape="rect" id="node31" href="$CountedPtr_8h_source.html" title=" " alt="" coords="981,303,1149,329"/>
+<area shape="rect" id="node32" href="$CWithGradientMap_8h_source.html" title=" " alt="" coords="619,295,805,337"/>
+</map>

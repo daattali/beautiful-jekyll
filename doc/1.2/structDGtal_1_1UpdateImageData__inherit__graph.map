@@ -1,0 +1,5 @@
+<map id="DGtal::UpdateImageData&lt; TImageType, TFunctor &gt;" name="DGtal::UpdateImageData&lt; TImageType, TFunctor &gt;">
+<area shape="rect" id="node1" title="class to modify the data of an given image and also the possibility to translate it (optional)." alt="" coords="31,155,209,196"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithViewer3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="7,80,233,107"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="5,5,235,32"/>
+</map>

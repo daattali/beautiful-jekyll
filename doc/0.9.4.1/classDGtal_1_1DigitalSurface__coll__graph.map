@@ -1,8 +1,0 @@
-<map id="DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;" name="DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DigitalSurfaceContainer \&gt;" alt="" coords="692,25,870,63"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="24,14,162,53"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="306,35,467,61"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1UmbrellaComputer.html" title="DGtal::UmbrellaComputer\l\&lt; DigitalSurfaceTracker \&gt;" alt="" coords="694,87,868,126"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1UmbrellaComputer_1_1State.html" title="DGtal::UmbrellaComputer\l\&lt; TDigitalSurfaceTracker\l \&gt;::State" alt="" coords="5,83,180,135"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1UmbrellaComputer.html" title="Aim: Useful for computing umbrellas on &#39;DigitalSurface&#39;s, ie set of n&#45;1 cells around a n&#45;3 cell..." alt="" coords="297,153,477,191"/>
-</map>

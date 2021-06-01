@@ -1,5 +1,0 @@
-<map id="DGtal::UpdateImage3DEmbedding&lt; Space, KSpace &gt;" name="DGtal::UpdateImage3DEmbedding&lt; Space, KSpace &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithViewer3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream. " alt="" coords="335,5,561,31"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream. " alt="" coords="5,5,234,31"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="369,92,528,144"/>
-</map>

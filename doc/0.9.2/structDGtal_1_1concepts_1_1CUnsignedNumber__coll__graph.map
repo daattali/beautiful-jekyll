@@ -1,8 +1,0 @@
-<map id="DGtal::concepts::CUnsignedNumber&lt; T &gt;" name="DGtal::concepts::CUnsignedNumber&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal. " alt="" coords="579,85,811,115"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CLabel.html" title="Aim: Define the concept of DGtal labels. Models of CLabel can be default&#45;constructible, assignable and equality comparable. " alt="" coords="304,59,515,88"/>
-<area shape="rect" id="node6" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. " alt="" coords="7,5,239,35"/>
-<area shape="rect" id="node8" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="37,59,208,88"/>
-<area shape="rect" id="node10" href="$structboost_1_1EqualityComparable.html" title="Go to http://www.sgi.com/tech/stl/EqualityComparable.html. " alt="" coords="8,112,237,141"/>
-<area shape="rect" id="node12" href="$structboost_1_1LessThanComparable.html" title="Go to http://www.sgi.com/tech/stl/LessThanComparable.html. " alt="" coords="289,112,529,141"/>
-</map>

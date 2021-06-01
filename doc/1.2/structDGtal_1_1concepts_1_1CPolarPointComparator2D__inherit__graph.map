@@ -1,0 +1,6 @@
+<map id="DGtal::concepts::CPolarPointComparator2D&lt; T &gt;" name="DGtal::concepts::CPolarPointComparator2D&lt; T &gt;">
+<area shape="rect" id="node1" title="Aim: This concept gathers classes that are able to compare the position of two given points &#160;around a..." alt="" coords="267,49,461,90"/>
+<area shape="rect" id="node2" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html." alt="" coords="5,5,219,32"/>
+<area shape="rect" id="node3" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html." alt="" coords="11,56,213,83"/>
+<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="33,107,191,133"/>
+</map>

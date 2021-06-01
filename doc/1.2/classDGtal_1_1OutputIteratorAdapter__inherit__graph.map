@@ -1,0 +1,4 @@
+<map id="DGtal::OutputIteratorAdapter&lt; TIterator, TFunctor, TInputValue &gt;" name="DGtal::OutputIteratorAdapter&lt; TIterator, TFunctor, TInputValue &gt;">
+<area shape="rect" id="node1" title="Aim: Adapts an output iterator i with a unary functor f, both given at construction,..." alt="" coords="5,109,236,151"/>
+<area shape="rect" id="node2" title=" " alt="" coords="41,5,200,61"/>
+</map>

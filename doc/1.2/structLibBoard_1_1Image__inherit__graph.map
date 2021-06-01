@@ -1,0 +1,6 @@
+<map id="LibBoard::Image" name="LibBoard::Image">
+<area shape="rect" id="node1" title="Used to draw image in figure." alt="" coords="17,229,134,256"/>
+<area shape="rect" id="node2" href="$structLibBoard_1_1Rectangle.html" title="A rectangle." alt="" coords="5,155,145,181"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points." alt="" coords="12,80,139,107"/>
+<area shape="rect" id="node4" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="16,5,135,32"/>
+</map>

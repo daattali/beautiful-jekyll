@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDGtal_1_1StarShaped2D.html" title="DGtal::StarShaped2D\l\&lt; TSpace \&gt;" alt="" coords="5,119,165,166"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1AccFlower2D.html" title="Aim: Model of the concept StarShaped represents any accelerated flower in the plane. " alt="" coords="241,5,388,51"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1Ball2D.html" title="Aim: Model of the concept StarShaped represents any circle in the plane. " alt="" coords="223,75,407,104"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1Ellipse2D.html" title="Aim: Model of the concept StarShaped represents any ellipse in the plane. " alt="" coords="215,128,415,157"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1Flower2D.html" title="Aim: Model of the concept StarShaped represents any flower with k&#45;petals in the plane. " alt="" coords="215,181,415,211"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1NGon2D.html" title="Aim: Model of the concept StarShaped represents any regular k&#45;gon in the plane. " alt="" coords="216,235,413,264"/>
-</map>

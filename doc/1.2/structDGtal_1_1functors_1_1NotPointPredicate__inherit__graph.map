@@ -1,0 +1,4 @@
+<map id="DGtal::functors::NotPointPredicate&lt; TPointPredicate &gt;" name="DGtal::functors::NotPointPredicate&lt; TPointPredicate &gt;">
+<area shape="rect" id="node1" title="Aim: The predicate returns true when the point predicate given at construction return false...." alt="" coords="28,5,223,47"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1functors_1_1NotPointPredicate.html" title=" " alt="" coords="5,109,245,151"/>
+</map>

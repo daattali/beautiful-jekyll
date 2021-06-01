@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDGtal_1_1AngleLinearMinimizer.html" title="Aim: Used to minimize the angle variation between different angles while taking into accounts min and..." alt="" coords="5,83,208,112"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1AngleLinearMinimizerByAdaptiveStepGradientDescent.html" title="DGtal::AngleLinearMinimizer\lByAdaptiveStepGradientDescent" alt="" coords="256,5,488,51"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1AngleLinearMinimizerByGradientDescent.html" title="DGtal::AngleLinearMinimizer\lByGradientDescent" alt="" coords="271,74,473,121"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1AngleLinearMinimizerByRelaxation.html" title="DGtal::AngleLinearMinimizer\lByRelaxation" alt="" coords="271,143,473,190"/>
-</map>
