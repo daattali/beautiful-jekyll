@@ -14,7 +14,7 @@ title: DGtalTools
 The source code of the tools can also be used to non DGtal familiar user to show how to include the DGtal library framework directly in their own source code (in complement of [ DGtal tutorial][4] ).
 
 ### DGtalTools content:
-At the moment the DGTalTools project is organized as follows (<span style="color: #8b0000;">new</span> or <span style="color: #008b00;">improved</span> in 1.1):
+At the moment the DGTalTools project is organized as follows (<span style="color: #8b0000;">new</span> or <span style="color: #008b00;">improved</span> in 1.2):
 (see also the nightly build doxygen [documentation of the tools](https://dgtal-team.github.io/doctools-nightly/))
 * **converters/**: utilities to convert various simple file formats:
   * <span style="color: #00008b;">convertVol</span>: a simple generic volume image converters (can process actually pgm3d, vol, longvol, raw (for writing)).
@@ -26,7 +26,7 @@ At the moment the DGTalTools project is organized as follows (<span style="color
   - <span style="color: #00008b;">heightfield2vol</span>: a new tool to transform 2D heightmap into volumetric file.
   - <span style="color: #00008b;">img2freeman</span>: to extract a freeman chain contour from a grayscale image.
   - <span style="color: #00008b;">imgAddNoise</span>: a new tool to add noise (Kanungo's) to a binary 2D object.
-  - <span style="color: #00008b;">itk2vol</span>: convert any image of itk format (mhd, mha, ...) to vol (available with the itk option in DGtal).
+  - <span style="color: #008b00;">itk2vol</span>: convert any image of itk format (mhd, mha, ...) to vol (available with the itk option in DGtal).
   - <span style="color: #00008b;">longvol2vol</span>: convert longvol to vol file using different conversion policies.
   - <span style="color: #00008b;">mesh2heightfield</span>: new tool to convert a mesh file into a 2D height map (from a normal direction N and from a starting point P).
   - <span style="color: #00008b;">mesh2vol</span>: Convert a mesh file into a 26-separated or 6-separated voxelization in a given resolution grid.
@@ -53,7 +53,7 @@ At the moment the DGTalTools project is organized as follows (<span style="color
     * Binomial convolver based estimators
     * Integral Invariants based estimators
 
-  - <span style="color: #008b00;">3dCurveTangentEstimator</span>: to estimate the tangent vector to a set of 3D integer points, which are supposed to approximate a 3D curve.
+  - <span style="color: #00008b;">3dCurveTangentEstimator</span>: to estimate the tangent vector to a set of 3D integer points, which are supposed to approximate a 3D curve.
 
   - <span style="color: #00008b;">3dLocalEstimators</span>: program to compare 3D local curvature estimators  (mean, gaussian and principal curvatures) on 3D implicit shapes  with integral invariant and monge via jet fitting (with also noise robustness measure).
   - <span style="color: #00008b;">curvatureBC</span>: curvature estimator using the Binomial convolver.
@@ -65,7 +65,7 @@ At the moment the DGTalTools project is organized as follows (<span style="color
   - <span style="color: #00008b;">statisticsEstimators</span>: compute satistics (L1, L2, Loo) from results of two estimators.
   - <span style="color: #00008b;">tangentBC</span>: tangent estimator using the Binomial convolver.
   - <span style="color: #00008b;">vol2normalField</span>: compute the normal vector field of a given vol file.
-  - <span style="color: #008b00;">volSurfaceRegularization</span>: Regularize a cubical complex into a smooth quadrangulated complex.
+  - <span style="color: #00008b;">volSurfaceRegularization</span>: Regularize a cubical complex into a smooth quadrangulated complex.
 
 
 * * * *
@@ -76,8 +76,8 @@ At the moment the DGTalTools project is organized as follows (<span style="color
 
 * * * *
 
-* **<span style="color: #008b00;">shapeGenerator</span>/**:
-  - <span style="color: #8b0000;">3dParametricCurveDigitizer</span>: a tool for digitization of 3D parametric curves.
+* **<span style="color: #00008b;">shapeGenerator</span>/**:
+  - <span style="color: #00008b;">3dParametricCurveDigitizer</span>: a tool for digitization of 3D parametric curves.
   - <span style="color: #00008b;">shapeGenerator</span>: generate multigrid shape.
   - <span style="color: #00008b;">contourGenerator</span>: generate multigrid shape contours.
 
@@ -95,8 +95,8 @@ At the moment the DGTalTools project is organized as follows (<span style="color
   - <span style="color: #00008b;">3dImplicitSurfaceExtractorBy4DExtension</span>: a tool to visualize 3d polynomial implicit surface defined as some f(x,y,z)=0.
   - <span style="color: #00008b;">3dImplicitSurfaceExtractorByThickening</span>: a tool to visualize 3d polynomial implicit surface defined as some f(x,y,z)=0.
   - <span style="color: #00008b;">3dSDPViewer</span>: basic display of a sequence of 3d points (as voxel or sphere) and vectors by using QGLviewer.
-  - <span style="color: #00008b;">3dVolBoundaryViewer</span>: Display the boundary of a volume file by using QGLviewer.
-  - <span style="color: #00008b;">3dVolViewer</span>: volume file (.vol and .pgm3d) viewer with QGLViewer.
+  - <span style="color: #008b00;">3dVolBoundaryViewer</span>: Display the boundary of a volume file by using QGLviewer.
+  - <span style="color: #008b00;">3dVolViewer</span>: volume file (.vol and .pgm3d) viewer with QGLViewer.
   - <span style="color: #00008b;">displayContours</span>: display discrete contours from various format (.fc (freemanchain), .sdp).
   - <span style="color: #00008b;">meshViewer</span>: display 3D mesh from OFS or OFF format.
   - <span style="color: #00008b;">patternTriangulation</span>: a new tool that draws with Board2D the convex hull, the closest-point Delaunay triangulation or the farthest-point Delaunay triangulation of a pattern.
@@ -106,17 +106,17 @@ At the moment the DGTalTools project is organized as follows (<span style="color
 
 * **volumetric/**:
   - <span style="color: #00008b;">3dVolMarchingCubes</span>: marching cubes form a Vol file
-  - <span style="color: #008b00;">criticalKernelsThinning3D</span>: marching cubes form a Vol file
+  - <span style="color: #00008b;">criticalKernelsThinning3D</span>: marching cubes form a Vol file
   - <span style="color: #00008b;">homotopicThinning3D</span>: ultimate skeleton from vol file
   - <span style="color: #00008b;">volAddBorder</span>: add a 1 voxel boundary with value 0 to a vol file.
   - <span style="color: #00008b;">volCComponentCounter</span>: a simple program to count the number of connected components in a 3D image.
   - <span style="color: #00008b;">volCrop</span>: crop an 3D vol image from to points.
-  - <span style="color: #8b0000;">volFillInterior</span>: tool to fill the interior of a voxel set.
+  - <span style="color: #00008b;">volFillInterior</span>: tool to fill the interior of a voxel set.
   - <span style="color: #00008b;">volFlip</span>: tool to flip all volume slice images according a given dimension.
 
   - <span style="color: #00008b;">volImageMetrics</span>: apply basic measures from two volumetric images: RMSE and PSNR.
   - <span style="color: #00008b;">volIntensityScale</span>: a simple tool to apply a linear scale of the intensity given in a volumetric file.
-  - <span style="color: #00008b;">volReSample</span>: apply a basic re sampling of a 3D volumetric image (.vol, .longvol, .pgm3d) with a given grid size.
+  - <span style="color: #008b00;">volReSample</span>: apply a basic re sampling of a 3D volumetric image (.vol, .longvol, .pgm3d) with a given grid size.
   - <span style="color: #00008b;">volSegment</span>: Segment volumetric file from a simple threshold which can be set automatically from the otsu estimation.
   - <span style="color: #00008b;">volShapeMetrics</span>: apply shape measures for comparing two volumetric images A and B (shape defined from thresholds).
   - <span style="color: #00008b;">volSubSample</span>: sub sample a vol file (division by 2 in each direction)
@@ -125,7 +125,7 @@ At the moment the DGTalTools project is organized as follows (<span style="color
   - <span style="color: #00008b;">volTrValues</span>: a basic tool to transform the voxel values from an input/output set.
 
 ### DGtalTools-contrib content:
-At the moment the DFtalTools-contrib project is organized as follows (<span style="color: #8b0000;">new</span> or <span style="color: #008b00;">improved</span> in 1.0):
+At the moment the DFtalTools-contrib project is organized as follows (<span style="color: #8b0000;">new</span> or <span style="color: #00008b;">improved</span> in 1.0):
 
 * **Geometry2d/**:
   - <span style="color: #00008b;">houghLineDetect</span>: to detect line segment from Hough transform (using OpenCV).
@@ -138,7 +138,7 @@ At the moment the DFtalTools-contrib project is organized as follows (<span styl
 * * * *
 
 * **Geometry3d/**:
-  - <span style="color: #008b00;">basicEditMesh</span>: to apply basic mesh edition (scale change, mesh face contraction, face filtering).
+  - <span style="color: #00008b;">basicEditMesh</span>: to apply basic mesh edition (scale change, mesh face contraction, face filtering).
   - <span style="color: #00008b;">basicMorphoFilter</span>: apply basic morpho filter from a ball structural element.
   - <span style="color: #00008b;">computeMeshDistances</span>: computes for each face of a mesh A the minimal distance to another mesh B.
   - <span style="color: #00008b;">off2obj</span>: tool to convert a mesh represented in off format into obj format.
@@ -149,8 +149,8 @@ At the moment the DFtalTools-contrib project is organized as follows (<span styl
 * * * *
 
 * **Visualisation/**:
-  - <span style="color: #8b0000;">displayLineSegments</span>: new tool allowing to display line segment in an output image.
-  - <span style="color: #8b0000;">displaySetOf2dPts</span>: tool to display sets of 2d points.
+  - <span style="color: #00008b;">displayLineSegments</span>: new tool allowing to display line segment in an output image.
+  - <span style="color: #00008b;">displaySetOf2dPts</span>: tool to display sets of 2d points.
   - <span style="color: #00008b;">displayTgtCoverAlphaTS</span>: to display alpha-thick segment given on a simple contour.
   - <span style="color: #00008b;">graphViewer</span>: add a new tool allowing to display graph from edges, vertex and radii.
   - <span style="color: #00008b;">meshViewerEdit</span>: tool to visualize a mesh and to apply simple edits (face removal, color edits...).
