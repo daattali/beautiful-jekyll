@@ -53,7 +53,7 @@ Here are a couple blogs I found on [10 Simple Household Routines to Save Time](h
 
 ### FREE printable list of 20 routines to look at to save time in your home
 
-You can find that freebie HERE. And if you’d like a deeper dive into creating your routines for your home life, you’ll find a unit just on routines in my course: Simplify Your Home Life: a Course for busy moms. You can find more about the course [HERE](http://www.simplehomemom.com/course).
+You can find that freebie [HERE](https://mailchi.mp/fb4dd0689eec/5rpn7cuy68). And if you’d like a deeper dive into creating your routines for your home life, you’ll find a unit just on routines in my course: Simplify Your Home Life: a Course for busy moms. You can find more about the course [HERE](http://www.simplehomemom.com/course).
 
 **Other blogs of mine you may enjoy:**
 
