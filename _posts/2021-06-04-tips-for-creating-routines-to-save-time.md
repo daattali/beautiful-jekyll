@@ -16,7 +16,7 @@ redirect_from: []
 
 ---
 > The secret of your future is hidden in your daily routine. - Mike Murdock  
-> _Read more quotes on routines_ [_here_]( https://www.brainyquote.com/topics/routine-quotes)_._
+> _Read more quotes on routines_ [_here_](https://www.brainyquote.com/topics/routine-quotes)_._
 
 When we work through making simpler routines for ourselves and our homes, what we will notice is more time will become freed up naturally. And we will be less full of decisions to be made on the daily! Today on the blog, I'm sharing about tips for creating routines to save time. I hope they are helpful.
 
@@ -57,9 +57,8 @@ You can find that freebie [HERE](https://mailchi.mp/fb4dd0689eec/5rpn7cuy68). An
 
 **Other blogs of mine you may enjoy:**
 
-[How to Create a Calm Bedtime Routine](https://www.simplehomemom.com/how-to-create-a-calm-bedtime-routine/)
-
-[How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
+* [How to Create a Calm Bedtime Routine](https://www.simplehomemom.com/how-to-create-a-calm-bedtime-routine/)
+* [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 
 **SAVE FOR FUTURE REFERENCE:**
 
