@@ -17,7 +17,7 @@ navbar-links:
   About Me: "aboutme"
   Projects:
     - Flatfish: "project-1"
-    - Flatfish2: "project-2"
+    - Flatfish2: "_pages/project-2"
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
   #  - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
