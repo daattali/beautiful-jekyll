@@ -9,8 +9,9 @@ readtime: true
 comments: true
 show-avatar: true
 title: Tips for Creating Routines to Save Time
-description: "+ a free printable list of 20 routines to save time in your home"
-subtitle: Some simple tips anyone can apply for creating home routines to save time.
+description: Some simple tips anyone can apply for creating home routines to save
+  time.
+subtitle: " + a free printable list of 20 routines to save time in your home"
 share-img: ''
 redirect_from: []
 
