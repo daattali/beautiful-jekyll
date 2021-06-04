@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Sample blog post
 subtitle: Each post also has a subtitle
 gh-repo: daattali/beautiful-jekyll
