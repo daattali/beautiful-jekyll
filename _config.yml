@@ -15,7 +15,8 @@ author: Marco Reis
 
 navbar-links:
   About Me: "aboutme"
-  #Resources:
+  Projects:
+    - Flatfish: "https://mhar-vell.github.io/portfolio/index.html"
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
   #  - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
