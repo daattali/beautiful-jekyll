@@ -14,14 +14,14 @@ author: Marco Reis
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Industrial projects:
+  Industrial-projects:
     - D311: "project-1"
     - Flatfish: "project-1"
     - Espeleorobô: "project-1"
     - Geonosis: "project-1"
     - Kamino: "project-1"
     - Manisub: "project-1"
-    Academic projects:
+  Academic-projects:
     - Elir: "project-2"
     - Learnbotics: "project-2"
     - Doogie: "project-2"
