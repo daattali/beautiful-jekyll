@@ -21,7 +21,7 @@ navbar-links:
   #   - Geonosis: "project-1"
   #   - Kamino: "project-1"
   #   - Manisub: "project-1"
-  Academic-projects:
+  Done!-projects:
     - Elir: "project-2"
     - Learnbotics: "project-2"
     - Doogie: "project-2"
@@ -35,6 +35,7 @@ navbar-links:
     - WBM Orb2slam: "project-2"
     - WBM EKFslam: "project-2"
     - r-hope: "project-2"
+  InProg-projects:
     - Warthog: "project-2"
     - Moco: "project-2"
     - Droilt: "project-2"
