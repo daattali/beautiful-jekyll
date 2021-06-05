@@ -14,20 +14,20 @@ author: Marco Reis
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Industrial-projects:
-    - D311: "project-1"
-    - Flatfish: "project-1"
-    - Espeleorobô: "project-1"
-    - Geonosis: "project-1"
-    - Kamino: "project-1"
-    - Manisub: "project-1"
+  # Industrial-projects:
+  #   - D311: "project-1"
+  #   - Flatfish: "project-1"
+  #   - Espeleorobô: "project-1"
+  #   - Geonosis: "project-1"
+  #   - Kamino: "project-1"
+  #   - Manisub: "project-1"
   Academic-projects:
     - Elir: "project-2"
     - Learnbotics: "project-2"
     - Doogie: "project-2"
     - Birhex: "project-2"
-    - Open Manipulator Pro: "project-2"
-    - Dynamic End Effector: "project-2"
+    - Open Manipulator: "project-2"
+    - Dynamic End-Effector: "project-2"
     - Timon Manipulator: "project-2"
     - Raja Manipulator: "project-2"
     - Borg Arm: "project-2"
@@ -44,7 +44,7 @@ navbar-links:
     - Jetbot 1: "project-2"
     - Jetbot 2: "project-2"
     - Jetbot 3: "project-2"
-    - Walber: "project-2"
+    - Walker: "project-2"
     - bbot: "project-2"
   About Us: "aboutme"
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
