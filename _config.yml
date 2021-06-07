@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: Mharvellous Projects
+title: RoSA Projects
 
 # Your name to show in the footer
 author: Marco Reis
@@ -14,10 +14,40 @@ author: Marco Reis
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Projects:
-    - Flatfish: "project-1"
-    - Flatfish2: "project-2"
+  # Industrial-projects:
+  #   - D311: "project-1"
+  #   - Flatfish: "project-1"
+  #   - Espeleorobô: "project-1"
+  #   - Geonosis: "project-1"
+  #   - Kamino: "project-1"
+  #   - Manisub: "project-1"
+  Done!-projects:
+    - Elir: "project-2"
+    - Learnbotics: "project-2"
+    - Doogie: "project-2"
+    - Birhex: "project-2"
+    - Open Manipulator: "project-2"
+    - Dynamic End-Effector: "project-2"
+    - Timon Manipulator: "project-2"
+    - Raja Manipulator: "project-2"
+    - Borg Arm: "project-2"
+    - WBM Rtab-map: "project-2"
+    - WBM Orb2slam: "project-2"
+    - WBM EKFslam: "project-2"
+    - r-hope: "project-2"
+  InProg-projects:
+    - Warthog: "project-2"
+    - Moco: "project-2"
+    - Droilt: "project-2"
+    - AUM: "project-2"
+    - Turbot: "project-2"
+    - Poopy: "project-2"
+    - Jetbot 1: "project-2"
+    - Jetbot 2: "project-2"
+    - Jetbot 3: "project-2"
+    - Walker: "project-2"
+    - bbot: "project-2"
+  About Us: "aboutus"
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
   #  - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
@@ -26,7 +56,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/m8-1.png"
+avatar: "/assets/img/rosalogo2.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -192,7 +222,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/Araguaina"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
