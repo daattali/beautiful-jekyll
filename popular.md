@@ -8,6 +8,7 @@ subtitle: ''
 
 * [Newest blogs](https://www.simplehomemom.com)
 * [Tips for Creating Routines to Save Time + a free printable list of 20 routines to save time in your home](https://www.simplehomemom.com/tips-for-creating-routines-to-save-time)
+* [How to Set Healthy Digital Boundaries + free worksheet](https://www.simplehomemom.com/how-to-set-healthy-digital-boundaries/ )
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
