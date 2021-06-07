@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'How to Set Healthy Digital Boundaries '
-subtitle: "+ "
+subtitle: "+ a free digital boundaries worksheet"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200831_144359_0000_compress44.jpg"
 share-img: "/assets/img/path.jpg"
