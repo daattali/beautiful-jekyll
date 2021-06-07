@@ -14,11 +14,17 @@ redirect_from:
 - 2020-09-01-how-to-set-healthy-digital-boundaries
 
 ---
-The digital world has been a part of my life for as long as I've been a mom - ten years now. And over the years, I've had to grapple with why I use [social media](www.instagram.com/eastcoastkelly) in particular. For me, it's all about the WHY in why I'm showing up in the digital world. Over the years, I've had to create boundaries with the digital world. It used to suck me in often. So my relationship with the digital world is often under reassessment to make sure the time I spend here is with intention. It'll look different for everyone, of course. For me currently, I come to the digital world for _inspiration, support, and community_. It's not meant to replace my "real life", but to add to it. To be a part of my life, but not to become my life. When I remind myself of these things, it helps me to stick to these things. Without the guilt or time sucking (as often). ⁣For me, having healthy digital boundaries:
+The digital world has been a part of my life for as long as I've been a mom - ten years now. And over the years, I've had to grapple with why I use [social media](www.instagram.com/eastcoastkelly) in particular. For me, it's all about the WHY in why I'm showing up in the digital world. Over the years, I've had to create boundaries with the digital world. It used to suck me in often. So my relationship with the digital world is often under reassessment to make sure the time I spend here is with intention. It'll look different for everyone, of course. For me currently, I come to the digital world for _inspiration, support, and community_. It's not meant to replace my "real life", but to add to it. To be a part of my life, but not to become my life. When I remind myself of these things, it helps me to stick to these things. Without the guilt or time sucking (as often). ⁣
+
+![A picture of a phone with social media apps on it.](/uploads/untitled-design.jpg "How to Set Healthy Digital Boundaries")
+
+For me, having healthy digital boundaries:
 
 * It means **I don't reach for my phone as soon as I wake up.** I turn to my morning routine instead. ⁣
 * It means **I don't touch my phone (much) when I'm homeschooling** - my attention is with them. Sometimes I do pop in when they're doing independent work, but that's a boundary I made for myself I'm comfortable with. ⁣
 * It means **I have set aside times to check into social media.** This one is newer to me and it's still a work in progress, but it's getting there!⁣
+
+**Related:** [3 Steps to Start Tackling Your Digital Clutter + a free digital decluttering challenge + checklist](https://www.simplehomemom.com/3-steps-to-start-tackling-your-digital-clutter/)
 
 #### Here are a couple practical tips in setting healthy digital boundaries:⁣
 
@@ -36,10 +42,8 @@ PS if you'd like to work on your own healthy digital boundaries even more, I cre
 * my work in progress digital boundaries to give you an idea
 * five questions to ask yourself to create your own healthy digital boundaries
 
-You can find that free worksheet HERE. 
+You can find that free worksheet [HERE](https://mailchi.mp/5ebb6ee50df0/digitalboundaries). 
 
 **SAVE FOR FUTURE REFERENCE:**
 
-![](/uploads/20200831_144130_0000_compress12.jpg)
-
-**Other blogs of mine you may enjoy:**
+![A woman holding her phone.](/uploads/1-1.jpg "How to Set Healthy Digital Boundaries SHM")
