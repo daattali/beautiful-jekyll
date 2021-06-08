@@ -39,11 +39,22 @@ Dentre eles, os principais são:
 
 
 ## Equipe
+<table border="0">
+  <tr>
+    <td><b style="font-size:15px"><center>**Brenda Alencar**</b></td>
+    <td><b style="font-size:15px"><center> **Felipe Mohr** </b></td>
+  </tr>
+  <tr>
+    <td><center><img src="https://i.ibb.co/JqmgmSv/brenda-circle.png" align="center" width="120" /></td>
+    <td><center><img src="{{ 'assets/img/felipe_mohr.png' | relative_url }}" alt="felipe" /></td>
 
-|<img src="{{ 'assets/img/brenda_alencar.png' | relative_url }}" alt="brenda" />| <img src="{{ 'assets/img/felipe_mohr.png' | relative_url }}" alt="felipe" />|
-|--|--|
-| <p align="center">**Brenda Alencar**</p> | <p align="center">**Felipe Mohr**</p> |
-| <p align="center"> Estagiária no CC RoSA, graduanda em Eng. Elétrica. <br /> Participou de projetos de Robótica Subaquática e <br /> Manipuladores Subaquáticos  </p>| <p align="center"> Estagiário no CC RoSA, graduando em Eng. Elétrica. <br /> Participou de projetos de Robótica Subaquática e <br /> Robótica Móvel </p> |
+  </tr>
+  <tr>
+    <td><center> Estagiária no CC RoSA, graduanda em Eng. Elétrica. <br /> Participou de projetos de Robótica Subaquática e <br /> Manipuladores Subaquáticos </td>
+    <td><center> Estagiário no CC RoSA, graduando em Eng. Elétrica. <br /> Participou de projetos de Robótica Subaquática e <br /> Robótica Móvel</td>
+  </tr>
+</table>
+
 
 
 ## Referências
