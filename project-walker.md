@@ -6,7 +6,8 @@ subtitle: Um robô bípede
 
 ## Introdução
 
-<img src="assets/img/walker/walker_semelhantes.png" width="350">
+<!--img src="assets/img/walker/walker_semelhantes.png" width="350"-->
+![walker-semelhantes](https://github.com/mhar-vell/projects/blob/master/assets/img/walker/walker_semelhantes.png)
 
 Este projeto visa a construção de um robô autônomo bípede para exploração em um ambiente indoor controlado.
 
@@ -17,7 +18,7 @@ Da esquerda para direita: ROFI [1], Darwin-OP [2] e NAO [3]
 
 ## Missão
 
-<img src="assets/img/walker/walker_missao.png" width="250">
+<td><img src="assets/img/walker/walker_missao.png" width="250"></td>
 
 Como missão do robô Walker, ele deverá explorar uma área delimitada em busca de uma TAG. 
 Ao encontrá-la, ela indicará a posição de uma esfera no ambiente. 
