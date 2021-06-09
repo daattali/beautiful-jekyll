@@ -57,7 +57,7 @@ _Why do we use this above laundry routine?_ Because it gives us OPTIONS. We can 
 
 > Creating simple routines that are doable and sustainable is so key.
 
-Laundry is something that is a part of most of our lives, so creating simple routines that are doable and sustainable is so key if you’re looking to keep your laundry routine simple for your busy family. And! Make sure to listen to me chatting about keeping laundry simple for busy families in detail over at [Minimalist Moms Podcast](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/) as well, which you can find [here](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/) “[Simplify Your Laundry Routine](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)”.
+Laundry is something that is a part of most of our lives, so creating simple routines that are doable and sustainable is so key if you’re looking to keep your laundry routine simple for your busy family. And! Make sure to listen to me chatting about keeping laundry simple for busy families in detail over at [Minimalist Moms Podcast](https://podcasts.apple.com/ca/podcast/ep155-simplify-your-laundry-routine-with-kelly-briggs/id1159498258?i=1000505748717) as well, which you can find [here](https://podcasts.apple.com/ca/podcast/ep155-simplify-your-laundry-routine-with-kelly-briggs/id1159498258?i=1000505748717) “[Simplify Your Laundry Routine](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)”.
 
 ### Create Your Simple Laundry Routine Freebie
 
@@ -65,10 +65,7 @@ _Also catch the freebie: Create Your Simple Laundry Routine (ten questions to as
 
 **Links to other blogs of mine you may like on keeping laundry routines simple for busy families:**
 
-[Take Control of the Laundry with These Three Easy Suggestions](https://www.simplehomemom.com/take-control-of-the-laundry-with-these-three-easy-suggestions/)
-
-[Our Current Laundry Routine that Has Taken the Stress Off of Laundry](https://www.simplehomemom.com/our-current-laundry-routine-that-has-taken-the-stress-off-of-laundry/)
-
-[One Daily Tidying Routine that will Save you Money and Time](https://www.simplehomemom.com/one-daily-tidying-routine-that-will-save-you-money-and-time/)
-
-[A Look at Laundry Routines from Families Who Have it Figured Out](https://www.simplehomemom.com/a-look-at-laundry-routines-from-families-who-have-it-figured-out/)
+* [Take Control of the Laundry with These Three Easy Suggestions](https://www.simplehomemom.com/take-control-of-the-laundry-with-these-three-easy-suggestions/)
+* [Our Current Laundry Routine that Has Taken the Stress Off of Laundry](https://www.simplehomemom.com/our-current-laundry-routine-that-has-taken-the-stress-off-of-laundry/)
+* [One Daily Tidying Routine that will Save you Money and Time](https://www.simplehomemom.com/one-daily-tidying-routine-that-will-save-you-money-and-time/)
+* [A Look at Laundry Routines from Families Who Have it Figured Out](https://www.simplehomemom.com/a-look-at-laundry-routines-from-families-who-have-it-figured-out/)
