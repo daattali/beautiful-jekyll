@@ -23,7 +23,7 @@ subtitle: ''
 
 ## Homeschooling
 
-* [Simplify Your Homeschool Life Session]( https://canadianhomeschoolconference.com/aff/42/) - 30 minute session and notes (affiliate link)
+* [Simplify Your Homeschool Life Session](https://canadianhomeschoolconference.com/aff/42/) - 30 minute session and notes (affiliate link)
 * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
 * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
 * [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
@@ -32,7 +32,7 @@ subtitle: ''
 # Podcasts
 
 * [Keeping it simple: an intverview with Kelly](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761)
-* [Simplify Your Laundry Routine with Kelly Briggs](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)
+* [Simplify Your Laundry Routine with Kelly Briggs](https://podcasts.apple.com/ca/podcast/ep155-simplify-your-laundry-routine-with-kelly-briggs/id1159498258?i=1000505748717)
 * [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
 
 ## Other
