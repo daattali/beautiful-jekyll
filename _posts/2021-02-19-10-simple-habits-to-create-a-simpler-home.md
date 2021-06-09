@@ -58,7 +58,7 @@ _Our clean clothes are brought upstairs before quiet time at some point. And the
 ###### As well as a couple podcasts you may like:
 
 * [Keeping it simple: an interview with Kelly](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761)
-* [Simplify Your Laundry Routine with Kelly Briggs](https://www.minimalistmomspodcast.com/ep155-simplify-your-laundry-routine-with-kelly-briggs/)
+* [Simplify Your Laundry Routine with Kelly Briggs](https://podcasts.apple.com/ca/podcast/ep155-simplify-your-laundry-routine-with-kelly-briggs/id1159498258?i=1000505748717)
 
 ## FREEBIE WORKSHEET: 10 questions to help you simplify your home life
 
