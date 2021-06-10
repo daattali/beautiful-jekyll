@@ -97,7 +97,7 @@ The kids go through this routine:
 
 ### RESOURCES AND SUPPLIES
 
-* Amazon shop for supplies and books you can find here: Canadian Shop, US Shop:
+* Amazon shop for supplies and books you can find here: [Canadian Shop](www.amazon.ca/shop/simplehomemom), [US Shop](www.amazon.com/shop/simplehomemom):
   * Our devotional books
   * Addition Facts that Stick book
   * Readaloud: The Water Babies, Spirit of Canada book
