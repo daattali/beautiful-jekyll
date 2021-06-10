@@ -31,48 +31,41 @@ But first…
 
 \****Add in reel link..
 
-Self care, then, is just taking care of ourselves! And self care is being aware of our own needs. I remember many weeks and days as a young mom that I totally forgot about myself and often asking the question, “When WAS the last time I showered?” or “I can’t remember the last time I talked to my friends” or “I don’t know when I took time to actually sit in the quiet”. It certainly still happens even ten years into being a parent, but I’m much quicker to notice when I’m not taking care of myself now. I have a lot more practice in this area. Any routine can take practice to instill and make a habit.
+**Self care, then, is just taking care of ourselves! And self care is being aware of our own needs.** My friend Teresa's book: Homeschool Mama Self Care is all about this...tuning in to yourself and taking care of yourself while you homeschool. You can find her book here, connect with her on Instagram, or her website.
 
-Related: [Three Ways to be Creative with Squeezing in Some Self Care with a Busy Household](https://www.simplehomemom.com/three-ways-to-be-creative-with-squeezing-in-some-self-care-with-a-busy-household/)
+I remember many weeks and days as a young mom that I totally forgot about myself and often asking the question, “When WAS the last time I showered?” or “I can’t remember the last time I talked to my friends” or “I don’t know when I took time to actually sit in the quiet”. It certainly still happens even ten years into being a parent, but I’m much quicker to notice when I’m not taking care of myself now. I have a lot more practice in this area. Any routine can take practice to instill and make a habit.
 
-Four steps to create your own self care routines
+**Related:** [**Three Ways to be Creative with Squeezing in Some Self Care with a Busy Household**](https://www.simplehomemom.com/three-ways-to-be-creative-with-squeezing-in-some-self-care-with-a-busy-household/)
 
-1**. Decide your categories.** There are so many areas to think about from physical self care to mental self care. The list could be endless to fill in, so it’s important to think about what categories need to take priority for you. See my blog [here](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/) for ten self care areas to consider and for more ideas.
+#### Four steps to create your own self care routines
 
-Related: [Ten areas for self care for busy moms](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/)
+Decide your categories.** There are so many areas to think about from physical self care to mental self care. The list could be endless to fill in, so it’s important to think about what categories need to take priority for you. See my blog [here](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/) for ten self care areas to consider and for more ideas.
 
-Lydia's post [https://makeyourlifebeautiful.co/21-ways-to-make-your-life-beautiful-in-2021/](https://makeyourlifebeautiful.co/21-ways-to-make-your-life-beautiful-in-2021/ "https://makeyourlifebeautiful.co/21-ways-to-make-your-life-beautiful-in-2021/")
+      **Related:** [Ten areas for self care for busy moms](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/) and my friend Lydia's blog on [Ways to   Make Your Life Beautiful]( https://makeyourlifebeautiful.co/21-ways-to-make-your-life-beautiful-in-2021/) with tons of practical self care suggestions
 
-2\. **Write down a plan.** It goes without saying, if it’s not written down somewhere, whether paper or digital, it likely will not happen. Take some time to make a plan. Try it out and adjust as you go.
+**Write down a plan.** It goes without saying, if it’s not written down somewhere, whether paper or digital, it likely will not happen. Take some time to make a plan. Try it out and adjust as you go.
 
-1. **Be consistent.** Being consistent with your self care routines will help eventually make them habits and you will find it much easier to stick to them over time. And as above, try it out and adjust as you go too.
-2. **Test it out.** Most things in life aren’t perfect the first go around, so testing new self care routines out, and then adjusting over time is the way to make better self care routines for ourselves.
+**Be consistent.** Being consistent with your self care routines will help eventually make them habits and you will find it much easier to stick to them over time. And as above, try it out and adjust as you go too.
 
-Questions to ask when creating your own self care routines
+**Test it out.** Most things in life aren’t perfect the first go around, so testing new self care routines out, and then adjusting over time is the way to make better self care routines for ourselves.
 
-· How often do I want to do this self care routine? Once a day, once a week? Quarterly? etc.
+#### Questions to ask when creating your own self care routines
 
-· When do I do my self care routines?
+* How often do I want to do this self care routine? Once a day, once a week? Quarterly? etc.
+* When do I do my self care routines?
+* What self care routines need to be prioritized on busy days or seasons?
+* What categories of self care do I need?
 
-· What self care routines need to be prioritized on busy days or seasons?
+Another thing I want to mention is that **self care routines are also meant to flexible.** We are not robots and we all naturally have ups and downs and some self care routines are needed more in some seasons and less in others. In my small children parenting days? I need a lot of quiet, for instance, in my day to day lol! This may not be as true as the years go on and I will adjust accordingly.
 
-· What categories of self care do I need?
+##### MY SELF CARE ROUTINE EXAMPLES
 
-Another thing I want to mention is that self care routines are also meant to flexible. We are not robots and we all naturally have ups and downs and some self care routines are needed more in some seasons and less in others. In my small children parenting days? I need a lot of quiet, for instance, in my day to day lol! This may not be as true as the years go on and I will adjust accordingly.
-
-MY SELF CARE ROUTINE EXAMPLES
-
-· My morning routine. I take time to pray, sit in the quiet, read, slowly get up, and get dressed.
-
-· I take time periodically throughout the day to read and write, even with the kids around. Writing and reading are very life giving to me.
-
-· I grab a bath every few weeks currently.
-
-· I shower twice a week.
-
-· I sit in the quiet periodically through the day.
-
-· I listen to calming music daily.
+* My morning routine. I take time to pray, sit in the quiet, read, slowly get up, and get dressed.
+* I take time periodically throughout the day to read and write, even with the kids around. Writing and reading are very life giving to me.
+* I grab a bath every few weeks currently.
+* I shower twice a week.
+* I sit in the quiet periodically through the day.
+* I listen to calming music daily.
 
 · I have a morning and evening skin and hair routine.
 
@@ -83,8 +76,6 @@ MY SELF CARE ROUTINE EXAMPLES
 · I take a “day off” every couple weeks or so. My husband and I take turns taking days off.
 
 · I exercise daily and listen to a podcast.
-
-Also, my friend Teresa sent me a copy of her Homeschool Mama Self Care book that I won! It’s all about tuning in to yourself and taking care of yourself while you homeschool. You can find her book here, connect with her on Instagram, or her website.
 
 **SAVE FOR FUTURE REFERENCE:**
 
