@@ -1,19 +1,21 @@
 ---
 post: post
 tags: []
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/seven-tips-to-create-peaceful-homeschooling-routines-shm-2.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
 show-avatar: true
 title: Summer 2021 Homeschool Resources and Routine
-description: A look at what our simple homeschooling plans for the summer.
+description: A look at what our simple homeschooling plans for the summer of 2021.
 subtitle: ''
 share-img: ''
 redirect_from: []
 
 ---
 We homeschool year round and take breaks as needed currently. It's been what works best for our family. There are certainly times where we take it slower like around the holidays and summer season. Today, I'm sharing with you **our summer homeschool plans and routine for 2021**.
+
+![](/uploads/seven-tips-to-create-peaceful-homeschooling-routines-shm-2.jpg)
 
 ### OVERVIEW OF OUR HOMESCHOOL
 
@@ -30,6 +32,8 @@ We gather together for breakfast and start either during breakfast, or right aft
 A note about routines in general: Our routine and plans tend to change often because I periodically assess what needs to be tweaked (are we doing too much? Too little? Do we need a break? Does something need to be prioritized more?). But, taking the time to plan in advance is so, so helpful in allowing our days to be simpler and smoother. Having a foundation to work from and then tweak a little bit here and needed.  
 **_My rule of thumb is:_** _If the routine doesn't feel good, it likely needs some tweaking!_
 
+\*----Image of homeschooling plan.. Pics of kids check pages. Homeschool planner?
+
 ### SUMMER GROUP WORK
 
 **_Morning time:_**
@@ -43,9 +47,11 @@ A note about routines in general: Our routine and plans tend to change often bec
 
 **_Loop subjects:_**
 
-* Nature Study and nature journals (group):  
-  Foraging...resources  
-  Garden flowers...resources. Books, burgess book handbook videos
+* Nature Study and nature journals (group):
+  * Foraging...resources
+  * Garden flowers...resources. Books, burgess book handbook videos
+
+
 * Solfa
 * Art/Handicrafts loop
 * Geography
@@ -62,15 +68,17 @@ A note about routines in general: Our routine and plans tend to change often bec
 
 **_Daily:_**
 
-* Language Arts:  
-  Theo's loop – free writing/motor control/written narration  
-  • Felix's loop – Printing/copywork  
-  • Arthur's loop – letters/printing
+* Language Arts:
+  * Theo's loop – free writing/motor control/written narration
+  * Felix's loop – Printing/copywork
+  * Arthur's loop – letters/printing
+
+
 * Math: 
+  * Theo: 
 
-  Theo: 
 
-  Felix: MEP and Beast Academy
+  * Felix: MEP and Beast Academy
 * Daily readings
 * French: duolingo
 * Piano
@@ -79,7 +87,7 @@ A note about routines in general: Our routine and plans tend to change often bec
 
 Our quiet time routine is after lunch, at around 1-3. Sometimes more, sometimes less.
 
-The kids:
+The kids go through this routine:
 
 * Brush their teeth
 * Read an assigned book
@@ -87,17 +95,24 @@ The kids:
 * Tidy up their bedroom
 * Watch a show or two
 
-Cta simplify your homeschool life.. Link amazon for what I could.
+### RESOURCES AND SUPPLIES
 
-Image of homeschooling plan.. Pics of kids check pages. Homeschool planner?
+* DELIGHTFULLY FEASTING CODE Your Sharing Code: (10% discount on all products, for you to share with others) FEASTINGSIMPLEHOME
+* Amazon shop for supplies and books
+* **My blogs:** 
+  * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
 
-DELIGHTFULLY FEASTING CODE Your Sharing Code: (10% discount on all products, for you to share with others)  
-FEASTINGSIMPLEHOME
 
-Amazon shop for supplies and books
+  * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
 
-Fee;l free to email me with any questions!
+
+  * [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
+
+
+  * [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
+* **Simplify Your Homeschool Life online workshop:** This session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life.
+* **Podcast interview:** [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/) 
+
+_And, feel free to email me with any questions - simplehomemom@gmail.com or find me over on_ [_Instagram_](www.instagram.com/simplehomemom)_._
 
 **SAVE FOR FUTURE REFERENCE:**
-
-**Other blogs of mine you may find helpful:**
