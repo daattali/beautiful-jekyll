@@ -1,6 +1,10 @@
 ---
 post: post
-tags: []
+tags:
+- homeschooling routines
+- summer homeschooling
+- flexible homeschooling
+- simple homeschooling
 thumbnail-img: "/uploads/seven-tips-to-create-peaceful-homeschooling-routines-shm-2.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
