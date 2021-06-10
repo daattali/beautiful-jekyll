@@ -98,44 +98,14 @@ The kids go through this routine:
 ### RESOURCES AND SUPPLIES
 
 * DELIGHTFULLY FEASTING CODE Your Sharing Code: (10% discount on all products, for you to share with others) FEASTINGSIMPLEHOME
-* Amazon shop for supplies and books you can find here: Canadian Shop, US Shop
-  * What you can find there:
-    * Prayer loop: Rosary, finish devotional, and then start Imitation of Christ for Children
-    * Poetry readings
-    * Religion loop: Finish Religion 1, Dangerous Journey, Life of our Lord for Children/Old Testament
-    * Math: 
-      * Family Time Math
-      * Addition Facts that Stick
-    * Readaloud: The Water Babies/Canadian History (Year 1)
-
-    **_Loop subjects:_**
-    * Nature Study and nature journals (group):
-      * Foraging unit
-      * Garden flower study .resources. Books, burgess book handbook videos
-    * Solfa
-    * Art/Handicrafts loop
-    * Geography
-    * Composer/Art study loop
-
-    **Related:** See [this blog](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/) on loop planning if you're wondering what that's all about: [The Ultimate Stress Free Planning Method Anyone Can Use](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/)
-
-    **_Lunch:_**
-    * Podcast: saints, classical kids, French, science, little sprouts
-    * Readalouds when time allows
-
-    ### INDEPENDENT WORK
-
-    **_Daily:_**
-    * Language Arts:
-      * Theo's loop – free writing/motor control/written narration
-      * Felix's loop – Printing/copywork
-      * Arthur's loop – letters/printing
-    * Math:
-      * Theo:
-      * Felix: MEP and Beast Academy
-    * Daily readings
-    * French: duolingo
-    * Piano
+* Amazon shop for supplies and books you can find here: Canadian Shop, US Shop:
+  * Our devotional books
+  * Addition Facts that Stick book
+  * Readaloud: The Water Babies, Spirit of Canada book
+  * Nature study books: garden flowers and foraging
+  * Math program for my oldest
+  * Piano program books we use
+  * General homeschooling resources and supplies
 * **My blogs:**
   * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
   * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
