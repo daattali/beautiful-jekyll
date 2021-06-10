@@ -66,16 +66,11 @@ Another thing I want to mention is that **self care routines are also meant to f
 * I shower twice a week.
 * I sit in the quiet periodically through the day.
 * I listen to calming music daily.
-
-· I have a morning and evening skin and hair routine.
-
-· I use dim lights and candles at bedtime and my evening routine.
-
-· I eat well and am currently low/no gluten, processed foods, or refined sugars.
-
-· I take a “day off” every couple weeks or so. My husband and I take turns taking days off.
-
-· I exercise daily and listen to a podcast.
+* I have a morning and evening skin and hair routine.
+* I use dim lights and candles at bedtime and my evening routine.
+* I eat well and am currently low/no gluten, processed foods, or refined sugars.
+* I take a “day off” every couple weeks or so. My husband and I take turns taking days off.
+* I exercise daily and listen to a podcast.
 
 **SAVE FOR FUTURE REFERENCE:**
 
@@ -83,6 +78,5 @@ Another thing I want to mention is that **self care routines are also meant to f
 
 **Other blogs of mine you may enjoy:**
 
-[Ten Areas For Self Care for Busy Moms](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/)
-
-[Three Ways to be Creative with Squeezing in Some Self Care with a Busy Household](https://www.simplehomemom.com/three-ways-to-be-creative-with-squeezing-in-some-self-care-with-a-busy-household/)
+* [Ten Areas For Self Care for Busy Moms](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/)
+* [Three Ways to be Creative with Squeezing in Some Self Care with a Busy Household](https://www.simplehomemom.com/three-ways-to-be-creative-with-squeezing-in-some-self-care-with-a-busy-household/)
