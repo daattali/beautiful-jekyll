@@ -44,7 +44,7 @@ We gather together for breakfast and start either during breakfast, or right aft
 **_Morning time:_**
 
 * Prayer loop: Rosary, finish devotional, and then start Imitation of Christ for Children
-* Poetry readings
+* Poetry readings: we're currently working through year 2 and 3 of Ambleside Online's poetry rotation
 * Religion loop: Finish Religion 1, Dangerous Journey, Life of our Lord for Children/Old Testament
 * Math: 
   * Family Time Math
@@ -98,7 +98,44 @@ The kids go through this routine:
 ### RESOURCES AND SUPPLIES
 
 * DELIGHTFULLY FEASTING CODE Your Sharing Code: (10% discount on all products, for you to share with others) FEASTINGSIMPLEHOME
-* Amazon shop for supplies and books
+* Amazon shop for supplies and books you can find here: Canadian Shop, US Shop
+  * What you can find there:
+    * Prayer loop: Rosary, finish devotional, and then start Imitation of Christ for Children
+    * Poetry readings
+    * Religion loop: Finish Religion 1, Dangerous Journey, Life of our Lord for Children/Old Testament
+    * Math: 
+      * Family Time Math
+      * Addition Facts that Stick
+    * Readaloud: The Water Babies/Canadian History (Year 1)
+
+    **_Loop subjects:_**
+    * Nature Study and nature journals (group):
+      * Foraging unit
+      * Garden flower study .resources. Books, burgess book handbook videos
+    * Solfa
+    * Art/Handicrafts loop
+    * Geography
+    * Composer/Art study loop
+
+    **Related:** See [this blog](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/) on loop planning if you're wondering what that's all about: [The Ultimate Stress Free Planning Method Anyone Can Use](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/)
+
+    **_Lunch:_**
+    * Podcast: saints, classical kids, French, science, little sprouts
+    * Readalouds when time allows
+
+    ### INDEPENDENT WORK
+
+    **_Daily:_**
+    * Language Arts:
+      * Theo's loop – free writing/motor control/written narration
+      * Felix's loop – Printing/copywork
+      * Arthur's loop – letters/printing
+    * Math:
+      * Theo:
+      * Felix: MEP and Beast Academy
+    * Daily readings
+    * French: duolingo
+    * Piano
 * **My blogs:**
   * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
   * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
