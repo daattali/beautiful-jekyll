@@ -55,42 +55,39 @@ A note about routines in general: Our routine and plans tend to change often bec
 
 **Related:** See [this blog](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/) on loop planning if you're wondering what that's all about: [The Ultimate Stress Free Planning Method Anyone Can Use](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/)
 
+**_Lunch:_**
+
+* Podcast: saints, classical kids, French, science, little sprouts
+* Readalouds when time allows
+
 ### INDEPENDENT WORK
 
 **_Daily:_**
 
-Language Arts:  
-Theo:  
-Felix:  
-Arthur:
+* Language Arts:  
+  Theo's loop – free writing/motor control/written narration  
+  • Felix's loop – Printing/copywork  
+  • Arthur's loop – letters/printing
+* Math: 
 
-Math:
+  Theo: 
 
-MEP and Beast Academy
+  Felix: MEP and Beast Academy
+* Daily readings
+* French: duolingo
+* Piano
 
-**_Independent work time:_**
+### QUIET TIME
 
-daily work  
-Language Arts:  
-• Theo – free writing/motor control/written narration  
-• Felix – Printing/copywork  
-• Arthur – letters/printing
+Our quiet time routine is after lunch, at around 1-3. Sometimes more, sometimes less.
 
-Math: Felix MEP, Theo Beast Academy – both working with me  
-Readings  
-French: duolingo  
-Piano
+The kids:
 
-LUNCH
-
-**_Lunch:_**
-
-Podcast: saints, classical kids, French, science, little sprouts  
-Readalouds
-
-QUIET time
-
-Blogs :
+* Brush their teeth
+* Read an assigned book
+* Read a bit from the Bible
+* Tidy up their bedroom
+* Watch a show or two
 
 Cta simplify your homeschool life.. Link amazon for what I could.
 
@@ -102,3 +99,7 @@ FEASTINGSIMPLEHOME
 Amazon shop for supplies and books
 
 Fee;l free to email me with any questions!
+
+**SAVE FOR FUTURE REFERENCE:**
+
+**Other blogs of mine you may find helpful:**
