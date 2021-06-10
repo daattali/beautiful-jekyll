@@ -46,8 +46,6 @@ A note about routines in general: Our routine and plans tend to change often bec
 * Nature Study and nature journals (group):  
   Foraging...resources  
   Garden flowers...resources. Books, burgess book handbook videos
-
-
 * Solfa
 * Art/Handicrafts loop
 * Geography
