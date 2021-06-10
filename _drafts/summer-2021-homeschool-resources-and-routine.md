@@ -31,9 +31,9 @@ Our homeschool makeup compromises of four children ages ten to two. Three boys a
 
 We gather together for breakfast and start either during breakfast, or right after then. We do morning time activities together, a subject, and then break off into independent work. The ideal start time is around 8 and to be finished by ideally 10. Lunch time we gather again and listen to podcasts usually, sometimes read aloud. After lunch, we have our year round [quiet time routine](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/), which I describe below.
 
-* **Related:** [How to Have Quiet Time with Kids](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/) 
+* **Related:** [How to Have Quiet Time with Kids](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/)
 
-A note about routines in general: Our routine and plans tend to change often because I periodically assess what needs to be tweaked (are we doing too much? Too little? Do we need a break? Does something need to be prioritized more?). But, taking the time to plan in advance is so, so helpful in allowing our days to be simpler and smoother. Having a foundation to work from and then tweak a little bit here and needed.
+**A note about routines in general:** Our routine and plans tend to change often because I periodically assess what needs to be tweaked (are we doing too much? Too little? Do we need a break? Does something need to be prioritized more?). But, taking the time to plan in advance is so, so helpful in allowing our days to be simpler and smoother. Having a foundation to work from and then tweak a little bit here and needed.
 
 **_My rule of thumb is:_** _If the routine doesn't feel good, it likely needs some tweaking!_
 
@@ -43,20 +43,19 @@ A note about routines in general: Our routine and plans tend to change often bec
 
 **_Morning time:_**
 
-* Prayer loop: Rosary, finish devotional and start Imitation of Christ
+* Prayer loop: Rosary, finish devotional, and then start Imitation of Christ for Children
 * Poetry readings
 * Religion loop: Finish Religion 1, Dangerous Journey, Life of our Lord for Children/Old Testament
-* Math: Family Time Math...resources and supplies  
-  Addition Facts that Stick...link
+* Math: 
+  * Family Time Math
+  * Addition Facts that Stick
 * Readaloud: The Water Babies/Canadian History (Year 1)
 
 **_Loop subjects:_**
 
 * Nature Study and nature journals (group):
-  * Foraging...resources
-  * Garden flowers...resources. Books, burgess book handbook videos
-
-
+  * Foraging unit
+  * Garden flower study .resources. Books, burgess book handbook videos
 * Solfa
 * Art/Handicrafts loop
 * Geography
@@ -77,12 +76,8 @@ A note about routines in general: Our routine and plans tend to change often bec
   * Theo's loop – free writing/motor control/written narration
   * Felix's loop – Printing/copywork
   * Arthur's loop – letters/printing
-
-
-* Math: 
-  * Theo: 
-
-
+* Math:
+  * Theo:
   * Felix: MEP and Beast Academy
 * Daily readings
 * French: duolingo
@@ -104,18 +99,12 @@ The kids go through this routine:
 
 * DELIGHTFULLY FEASTING CODE Your Sharing Code: (10% discount on all products, for you to share with others) FEASTINGSIMPLEHOME
 * Amazon shop for supplies and books
-* **My blogs:** 
+* **My blogs:**
   * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
-
-
   * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
-
-
   * [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
-
-
   * [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
 * **Simplify Your Homeschool Life online workshop:** This session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life.
-* **Podcast interview:** [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/) 
+* **Podcast interview:** [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
 
 _And, feel free to email me with any questions - simplehomemom@gmail.com or find me over on_ [_Instagram_](www.instagram.com/simplehomemom)_._
