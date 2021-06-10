@@ -47,14 +47,14 @@ We gather together for breakfast and start either during breakfast, or right aft
 * Poetry readings: we're currently working through year 2 and 3 of Ambleside Online's poetry rotation
 * Religion loop: Finish Religion 1, Dangerous Journey, Life of our Lord for Children/Old Testament
 * Math: 
-  * Family Time Math
+  * [Family Time Math](https://my-little-robins-shop.myshopify.com/collections/math/products/family-time-math-digital-download). My friend Leah gifted me with this math program and I'm so excited to use it with the children. You can find it [here](https://my-little-robins-shop.myshopify.com/collections/math/products/family-time-math-digital-download). It looks so enjoyable and will be so bonding for us!
   * Addition Facts that Stick
 * Readaloud: The Water Babies/Canadian History (Year 1)
 
 **_Loop subjects:_**
 
 * Nature Study and nature journals (group):
-  * Foraging unit
+  * Foraging unit: You can find the Foraging Unit we are using [here](http://www.delightfullyfeasting.com/p/shop-special-studies.html). I'm an affiliate of Crystin's beautiful curriculum and if you decide to buy, you can use the code FEASTINGSIMPLEHOME for a 10% off discount.
   * Garden flower study .resources. Books, burgess book handbook videos
 * Solfa
 * Art/Handicrafts loop
@@ -97,7 +97,6 @@ The kids go through this routine:
 
 ### RESOURCES AND SUPPLIES
 
-* DELIGHTFULLY FEASTING CODE Your Sharing Code: (10% discount on all products, for you to share with others) FEASTINGSIMPLEHOME
 * Amazon shop for supplies and books you can find here: Canadian Shop, US Shop:
   * Our devotional books
   * Addition Facts that Stick book
@@ -106,7 +105,7 @@ The kids go through this routine:
   * Math program for my oldest
   * Piano program books we use
   * General homeschooling resources and supplies
-* **My blogs:**
+* **More homeschooling blogs of mine:**
   * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
   * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
   * [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
