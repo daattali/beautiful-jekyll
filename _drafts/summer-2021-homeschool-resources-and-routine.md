@@ -27,12 +27,13 @@ Our homeschool makeup compromises of four children ages ten to two. Three boys a
 
 We gather together for breakfast and start either during breakfast, or right after then. We do morning time activities together, a subject, and then break off into independent work. The ideal start time is around 8 and to be finished by ideally 10. Lunch time we gather again and listen to podcasts usually, sometimes read aloud. After lunch, we have our year round [quiet time routine](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/), which I describe below.
 
-**Related:** [How to Have Quiet Time with Kids](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/) + FREEBIEEEEEEEEEEEEEEEEEEE
+* **Related:** [How to Have Quiet Time with Kids](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/) 
 
-A note about routines in general: Our routine and plans tend to change often because I periodically assess what needs to be tweaked (are we doing too much? Too little? Do we need a break? Does something need to be prioritized more?). But, taking the time to plan in advance is so, so helpful in allowing our days to be simpler and smoother. Having a foundation to work from and then tweak a little bit here and needed.  
+A note about routines in general: Our routine and plans tend to change often because I periodically assess what needs to be tweaked (are we doing too much? Too little? Do we need a break? Does something need to be prioritized more?). But, taking the time to plan in advance is so, so helpful in allowing our days to be simpler and smoother. Having a foundation to work from and then tweak a little bit here and needed.
+
 **_My rule of thumb is:_** _If the routine doesn't feel good, it likely needs some tweaking!_
 
-\*----Image of homeschooling plan.. Pics of kids check pages. Homeschool planner?
+![](/uploads/homeschool-summer-routine-2021-1.png)
 
 ### SUMMER GROUP WORK
 
@@ -114,5 +115,3 @@ The kids go through this routine:
 * **Podcast interview:** [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/) 
 
 _And, feel free to email me with any questions - simplehomemom@gmail.com or find me over on_ [_Instagram_](www.instagram.com/simplehomemom)_._
-
-**SAVE FOR FUTURE REFERENCE:**
