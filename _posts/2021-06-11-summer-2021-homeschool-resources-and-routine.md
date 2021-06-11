@@ -11,7 +11,7 @@ readtime: true
 comments: true
 show-avatar: true
 title: 'Summer 2021: Our Homeschool Resources and Routine'
-description: A look at what our simple homeschooling plans are for the summer of 2021.
+description: A look our simple homeschooling plans are for the summer of 2021.
 subtitle: ''
 share-img: ''
 redirect_from: []

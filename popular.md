@@ -23,6 +23,7 @@ subtitle: ''
 
 ## Homeschooling
 
+* [Summer 2021: Our Homeschool Resources and Routine](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/)
 * [Simplify Your Homeschool Life Session](https://canadianhomeschoolconference.com/aff/42/) - 30 minute session and notes (affiliate link)
 * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
 * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
