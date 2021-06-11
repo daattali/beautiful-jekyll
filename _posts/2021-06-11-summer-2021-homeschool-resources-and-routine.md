@@ -43,13 +43,13 @@ We gather together for breakfast and start either during breakfast, or right aft
 
 **_Morning time:_**
 
-* Prayer loop: Rosary, finish devotional, and then start Imitation of Christ for Children
-* Poetry readings: we're currently working through year 2 and 3 of Ambleside Online's poetry rotation
-* Religion loop: Finish Religion 1, Dangerous Journey, Life of our Lord for Children/Old Testament
+* Prayer loop: rosary, finish devotional, and then start Imitation of Christ for Children
+* Poetry readings: we're currently working through year 2 and 3 of [Ambleside Online's poetry rotation](https://www.amblesideonline.org/Poets.shtml)
+* Religion loop: finish Religion 1, Dangerous Journey, Life of our Lord for Children/Old Testament
 * Math:
   * [Family Time Math](https://my-little-robins-shop.myshopify.com/collections/math/products/family-time-math-digital-download). My friend Leah gifted me with this math program and I'm so excited to use it with the children. You can find it [here](https://my-little-robins-shop.myshopify.com/collections/math/products/family-time-math-digital-download). It looks so enjoyable and will be so bonding for us!
   * Addition Facts that Stick
-* Readaloud: The Water Babies/Canadian History (Year 1)
+* Readaloud: The Water Babies/[Canadian History](https://www.amblesideonline.org/Canada.shtml) (Year 1)
 
 **_Loop subjects:_**
 
@@ -65,7 +65,7 @@ We gather together for breakfast and start either during breakfast, or right aft
 
 **_Lunch:_**
 
-* Podcast: saints, classical kids, french, science, little sprouts
+* Podcast: [saints](https://podcasts.apple.com/ca/podcast/saint-stories-for-kids/id1448514363), [classics for kids](https://www.classicsforkids.com/), [french](https://coffeebreaklanguages.com/coffeebreakfrench/), science, [catholic sprouts](https://catholicsprouts.com/)
 * Readalouds when time allows
 
 ### INDEPENDENT WORK
@@ -74,13 +74,13 @@ We gather together for breakfast and start either during breakfast, or right aft
 
 * Language Arts:
   * Theo's loop – free writing/motor control/written narration
-  * Felix's loop – Printing/copywork
+  * Felix's loop – printing/copywork
   * Arthur's loop – letters/printing
 * Math:
-  * Theo:
-  * Felix: MEP and Beast Academy
+  * Theo: Beast Academy
+  * Felix: [MEP](https://www.cimt.org.uk/projects/mepres/primary/index.htm) 
 * Daily readings
-* French: duolingo
+* French: [duolingo](https://www.duolingo.com/learn)
 * Piano
 
 ### QUIET TIME
