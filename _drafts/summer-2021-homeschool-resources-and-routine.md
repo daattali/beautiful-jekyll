@@ -10,7 +10,7 @@ cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
 show-avatar: true
-title: Summer 2021 Homeschool Resources and Routine
+title: 'Summer 2021: Our Homeschool Resources and Routine'
 description: A look at what our simple homeschooling plans for the summer of 2021.
 subtitle: ''
 share-img: ''
@@ -46,7 +46,7 @@ We gather together for breakfast and start either during breakfast, or right aft
 * Prayer loop: Rosary, finish devotional, and then start Imitation of Christ for Children
 * Poetry readings: we're currently working through year 2 and 3 of Ambleside Online's poetry rotation
 * Religion loop: Finish Religion 1, Dangerous Journey, Life of our Lord for Children/Old Testament
-* Math: 
+* Math:
   * [Family Time Math](https://my-little-robins-shop.myshopify.com/collections/math/products/family-time-math-digital-download). My friend Leah gifted me with this math program and I'm so excited to use it with the children. You can find it [here](https://my-little-robins-shop.myshopify.com/collections/math/products/family-time-math-digital-download). It looks so enjoyable and will be so bonding for us!
   * Addition Facts that Stick
 * Readaloud: The Water Babies/Canadian History (Year 1)
@@ -97,7 +97,7 @@ The kids go through this routine:
 
 ### RESOURCES AND SUPPLIES
 
-* Amazon shop for supplies and books you can find here: [Canadian Shop](www.amazon.ca/shop/simplehomemom), [US Shop](www.amazon.com/shop/simplehomemom):
+* Amazon shop for supplies and books you can find here under "Kids' School": [Canadian Shop](www.amazon.ca/shop/simplehomemom), [US Shop](www.amazon.com/shop/simplehomemom) 
   * Our devotional books
   * Addition Facts that Stick book
   * Readaloud: The Water Babies, Spirit of Canada book
@@ -110,7 +110,7 @@ The kids go through this routine:
   * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
   * [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
   * [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
-* **Simplify Your Homeschool Life online workshop:** This session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life.
+* **Simplify Your Homeschool Life online workshop:** This 30ish minute session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life. You can find the session in the Online Canadian Homeschooling conference [here](https://canadianhomeschoolconference.com/aff/42/).
 * **Podcast interview:** [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
 
 _And, feel free to email me with any questions - simplehomemom@gmail.com or find me over on_ [_Instagram_](www.instagram.com/simplehomemom)_._
