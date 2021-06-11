@@ -29,9 +29,7 @@ But first…
 
 > “Self-care is any activity that we do deliberately to take care of our mental, emotional, and physical health. Although it’s a simple concept in theory, it’s something we very often overlook. Good self-care is key to improved mood and reduced anxiety. It’s also key to a good relationship with oneself and others.” - from [Psychcentral.com](https://psychcentral.com/blog/what-self-care-is-and-what-it-isnt-2#1)
 
-\****Add in reel link..
-
-**Self care, then, is just taking care of ourselves! And self care is being aware of our own needs.** My friend Teresa's book: Homeschool Mama Self Care is all about this topic...tuning in to yourself and taking care of yourself while you homeschool. You can find her on [Instagram](https://www.instagram.com/homeschool_mama_self_care/), or [her website](https://capturingthecharmedlife.com/).
+**Self care, then, is just taking care of ourselves! And self care is being aware of our own needs.** My friend Teresa's book: _Homeschool Mama Self Care_ is all about this topic...tuning in to yourself and taking care of yourself while you homeschool. You can find her on [Instagram](https://www.instagram.com/homeschool_mama_self_care/) or [her website](https://capturingthecharmedlife.com/). I linked the book in my Amazon shop too: [US shop](www.amazon.com/shop/simplehomemom) and [Canadian shop](www.amazon.ca/shop/simplehomemom).
 
 I remember many weeks and days as a young mom that I totally forgot about myself and often asking the question, “When WAS the last time I showered?” or “I can’t remember the last time I talked to my friends” or “I don’t know when I took time to actually sit in the quiet”. It certainly still happens even ten years into being a parent, but I’m much quicker to notice when I’m not taking care of myself now. I have a lot more practice in this area. Any routine can take practice to instill and make a habit.
 
