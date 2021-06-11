@@ -55,7 +55,7 @@ We gather together for breakfast and start either during breakfast, or right aft
 
 * Nature Study and nature journals (group):
   * Foraging unit: You can find the Foraging Unit we are using [here](http://www.delightfullyfeasting.com/p/shop-special-studies.html). I'm an affiliate of Crystin's beautiful curriculum and if you decide to buy, you can use the code FEASTINGSIMPLEHOME for a 10% off discount.
-  * Garden flower study .resources. Books, burgess book handbook videos
+  * Garden flower study
 * Solfa
 * Art/Handicrafts loop
 * Geography
