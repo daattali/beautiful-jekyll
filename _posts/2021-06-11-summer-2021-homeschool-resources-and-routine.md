@@ -45,7 +45,7 @@ We gather together for breakfast and start either during breakfast, or right aft
 
 * Prayer loop: rosary, finish devotional, and then start Imitation of Christ for Children
 * Poetry readings: we're currently working through year 2 and 3 of [Ambleside Online's poetry rotation](https://www.amblesideonline.org/Poets.shtml)
-* Religion loop: finish Religion 1, Dangerous Journey, Life of our Lord for Children/Old Testament
+* Religion loop: finish [Religion 1](https://setonbooks.com/religion/1687-religion-1-for-young-catholics.html), Dangerous Journey, Life of our Lord for Children/Old Testament
 * Math:
   * [Family Time Math](https://my-little-robins-shop.myshopify.com/collections/math/products/family-time-math-digital-download). My friend Leah gifted me with this math program and I'm so excited to use it with the children. You can find it [here](https://my-little-robins-shop.myshopify.com/collections/math/products/family-time-math-digital-download). It looks so enjoyable and will be so bonding for us!
   * Addition Facts that Stick
