@@ -25,31 +25,30 @@ Self care has gotten a bad wrap by some over the past number of years. I think i
 
 But first…
 
-### What is self-care? 
+### What is self-care?
 
 > “Self-care is any activity that we do deliberately to take care of our mental, emotional, and physical health. Although it’s a simple concept in theory, it’s something we very often overlook. Good self-care is key to improved mood and reduced anxiety. It’s also key to a good relationship with oneself and others.” - from [Psychcentral.com](https://psychcentral.com/blog/what-self-care-is-and-what-it-isnt-2#1)
 
 \****Add in reel link..
 
-**Self care, then, is just taking care of ourselves! And self care is being aware of our own needs.** My friend Teresa's book: Homeschool Mama Self Care is all about this...tuning in to yourself and taking care of yourself while you homeschool. You can find her book here, connect with her on Instagram, or her website.
+**Self care, then, is just taking care of ourselves! And self care is being aware of our own needs.** My friend Teresa's book: Homeschool Mama Self Care is all about this topic...tuning in to yourself and taking care of yourself while you homeschool. You can find her on [Instagram](https://www.instagram.com/homeschool_mama_self_care/), or [her website](https://capturingthecharmedlife.com/).
 
 I remember many weeks and days as a young mom that I totally forgot about myself and often asking the question, “When WAS the last time I showered?” or “I can’t remember the last time I talked to my friends” or “I don’t know when I took time to actually sit in the quiet”. It certainly still happens even ten years into being a parent, but I’m much quicker to notice when I’m not taking care of myself now. I have a lot more practice in this area. Any routine can take practice to instill and make a habit.
 
 **Related:** [**Three Ways to be Creative with Squeezing in Some Self Care with a Busy Household**](https://www.simplehomemom.com/three-ways-to-be-creative-with-squeezing-in-some-self-care-with-a-busy-household/)
 
-#### Four steps to create your own self care routines
+#### Four steps to create your own self care routines:
 
-Decide your categories.** There are so many areas to think about from physical self care to mental self care. The list could be endless to fill in, so it’s important to think about what categories need to take priority for you. See my blog [here](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/) for ten self care areas to consider and for more ideas.
+1. **Decide your categories.** There are so many areas to think about from physical self care to mental self care. The list could be endless to fill in, so it’s important to think about what categories need to take priority for you. See my blog [here](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/) for ten self care areas to consider and for more ideas.
 
-      **Related:** [Ten areas for self care for busy moms](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/) and my friend Lydia's blog on [Ways to   Make Your Life Beautiful]( https://makeyourlifebeautiful.co/21-ways-to-make-your-life-beautiful-in-2021/) with tons of practical self care suggestions
+   **Related:** [Ten Areas for Self Care for Busy Moms](https://www.simplehomemom.com/ten-areas-for-self-care-for-busy-moms/) and my friend Lydia's blog on [Ways to   Make Your Life Beautiful](https://makeyourlifebeautiful.co/21-ways-to-make-your-life-beautiful-in-2021/ )( with tons of practical self care suggestions
 
-**Write down a plan.** It goes without saying, if it’s not written down somewhere, whether paper or digital, it likely will not happen. Take some time to make a plan. Try it out and adjust as you go.
 
-**Be consistent.** Being consistent with your self care routines will help eventually make them habits and you will find it much easier to stick to them over time. And as above, try it out and adjust as you go too.
+2. **Write down a plan.** It goes without saying, if it’s not written down somewhere, whether paper or digital, it likely will not happen. Take some time to make a plan. Try it out and adjust as you go.
+3. **Be consistent.** Being consistent with your self care routines will help eventually make them habits and you will find it much easier to stick to them over time. And as above, try it out and adjust as you go too.
+4. **Test it out.** Most things in life aren’t perfect the first go around, so testing new self care routines out, and then adjusting over time is the way to make better self care routines for ourselves.
 
-**Test it out.** Most things in life aren’t perfect the first go around, so testing new self care routines out, and then adjusting over time is the way to make better self care routines for ourselves.
-
-#### Questions to ask when creating your own self care routines
+#### Questions to ask when creating your own self care routines:
 
 * How often do I want to do this self care routine? Once a day, once a week? Quarterly? etc.
 * When do I do my self care routines?
