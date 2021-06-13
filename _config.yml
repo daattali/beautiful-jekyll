@@ -15,6 +15,7 @@ author: Ashley Baldry
 
 navbar-links:
   About Me: "aboutme"
+  Projects: "projects"
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
@@ -33,35 +34,17 @@ round-avatar: true
 # then specify the following parameter
 #title-img: /path/to/image
 
-
 # --- Footer social media links --- #
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "arbaldry91@gmail.com"
-#  facebook: deanattali
   github: ashbaldry
   twitter: ashbaldry_
-#  patreon: yourname
-#  youtube: c/yourname
-#  medium: yourname
-#  reddit: yourname
   linkedin: arbaldry
-#  xing: yourname
   stackoverflow: "3887838/ashley-baldry"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
 #  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
