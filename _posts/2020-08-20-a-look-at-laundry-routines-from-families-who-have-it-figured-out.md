@@ -1,18 +1,18 @@
 ---
 layout: post
 title: A Look at Laundry Routines from Families Who Have it Figured Out
-subtitle: ""
+subtitle: ''
 tags:
-  - laundry routines
-  - family laundry routines
-  - tidying routine
-  - staying on top of laundry
+- laundry routines
+- family laundry routines
+- tidying routine
+- staying on top of laundry
 comments: true
 description: Laundry routines need a little bit of planning to streamline.
 redirect_from:
-  - 2020-08-20-a-look-at-laundry-routines-from-families-who-have-it-figured-out
----
+- 2020-08-20-a-look-at-laundry-routines-from-families-who-have-it-figured-out
 
+---
 ![Person in a laundry basket at the laundromat.](/uploads/laundry-routine.jpg "laundry")
 
 Not long ago, I did up a couple blogs on our [current laundry routine](https://www.eastcoastkelly.com/cleaning%20&%20tidying/2020/04/30/our-current-laundry-routine-that-has-taken-the-stress-off-of-laundry.html) and was interested to hear how others did theirs. I had a couple friends reach out to me to share theirs. Perhaps you will find them helpful as well!
@@ -39,10 +39,8 @@ You can find Christa on Instagram at [newlifeos](http://www.instagram.com/newlif
 
 _Your laundry routine is probably going to look different, but hopefully looking at these examples will give you a good place to start. And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [**_Simple Capsule Wardrobe Guide_**](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
 
-Other blogs you may enjoy:
+**Other blogs you may enjoy:**
 
-[Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
-
-[How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
-
-[How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
+* [Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
+* [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
+* [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
