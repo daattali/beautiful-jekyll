@@ -4,8 +4,8 @@ tags:
 - simple meal planning
 - meal planning
 - theme night meal planning ideas
-thumbnail-img: "/uploads/1_20201211_211350_0000_compress94-min-1.jpg"
-cover-img: "/uploads/20201220_141108_0000_compress76.jpg"
+thumbnail-img: "/uploads/meal-plan-shm.jpg"
+cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
 show-avatar: true
@@ -17,6 +17,8 @@ redirect_from: []
 
 ---
 Do you enjoy cooking? If it's a _big fat no_ this blog may help you out today. This is honestly my driving force behind simple meal planning with theme nights!
+
+![A plate with the words "meal plan" on it.](/uploads/meal-plan-shm.jpg "Simple Meal Planning with Theme Nights SHM")
 
 ## Simple Meal Planning with Theme Nights
 
