@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Bitcoin Zitadelle
+subtitle: Was haben wir vor
 ---
 
 My name is Inigo Montoya. I have the following qualities:
