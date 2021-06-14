@@ -40,3 +40,9 @@ So if you are not sure where to start (or continue) because you're confused abou
 > _My friend @simplehomemom has a capsule wadrobe guide that is simple and easy to follow!_ - Shelly from [@letsliveandlearn](https://www.instagram.com/letsliveandlearn/) or her website [here](https://letsliveandlearn.com/).
 
 > _Kelly’s Capsule Wardrobe Guide was exactly what I needed for my second closet declutter. The first round of decluttering was easy for me, but the second round I needed some guidance in building an actual wardrobe that works for my lifestyle, and this guide did exactly that! It provides easy to follow steps that are comprehensive without being overwhelming and offers great questions to help you consider what your ultimate goal is. I would recommend this guide to anyone looking to build a capsule wardrobe!_ - [Lauren](www.instagram.com/home.sweet.hopkins)
+
+> _My closet was overrun with clothing spanning 15+ years. I was holding onto college t-shirts, a full professional teacher wardrobe, fancy cocktail dresses, and so, so many pairs of ill fitting jeans._
+>
+> _As a stay at home mom of twin toddlers, it was time to simplify my clothing to fit my lifestyle. Ultimately, I wanted comfortable clothes that fit well in colors that are flattering to my complexion._
+>
+> _Kelly’s simple capsule wardrobe guide walked me through the basic steps of simplifying my wardrobe. I found it especially helpful to create categories of clothing that work for you instead of sticking to guidelines that don’t make sense for your lifestyle. The guide leaves you with the feeling that you deserve to enjoy the clothes you wear and should be able to quickly and easily grab an outfit that will coordinate without going through hundreds of pieces of clothing that don’t work. -_ Jennifer
