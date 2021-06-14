@@ -4,7 +4,7 @@ title: Bitcoin Zitadelle
 subtitle: Was haben wir vor
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Wir sind Bitcoin
 
 - I rock a great mustache
 - I'm extremely loyal to my family
