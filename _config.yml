@@ -16,8 +16,10 @@ author: Markus Turm
 navbar-links:
   Das Schloss:
     - Burgscheidungen: "http://www.schloss-burgscheidungen.de/index2.html"
-  Author's home: "https://deanattali.com"
-
+  Communities: 
+    - Blocktrainer: "https://www.blocktrainer.de/"
+    - Einundzwanzig: "https://einundzwanzig.space/"
+    
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
