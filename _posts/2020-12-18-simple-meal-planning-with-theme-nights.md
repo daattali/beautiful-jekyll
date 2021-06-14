@@ -20,7 +20,7 @@ Do you enjoy cooking? If it's a _big fat no_ this blog may help you out today. T
 
 ## Simple Meal Planning with Theme Nights
 
-Tell me I can't be the only one who doesn't enjoy cooking. It's painful for me. Always has been. I cook out of necessity, but really, one thing that has made easier for me is _intentional planning_ and _theme simple meal planning_ is one of those things. Today on the blog, I'm sharing about simple meal planning with theme nights and giving you 15 simple meal planning theme night ideas.
+Tell me I can't be the only one who doesn't enjoy cooking. It's painful for me. Always has been. I cook out of necessity, but really, one thing that has made it easier for me is _intentional planning_ and  **simple meal planning with theme nights** is one of those things. Today on the blog, I'm sharing about simple meal planning with theme nights and I'm sharing 15 simple meal planning theme night ideas.
 
 ![Pen to meal planning on paper.](/uploads/1_20201211_211350_0000_compress94-min-1.jpg "Simple meal planning with theme nights SHM")
 
