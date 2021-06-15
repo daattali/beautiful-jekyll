@@ -24,6 +24,10 @@ Do you enjoy cooking? If it's a _big fat no_ this blog may help you out today. T
 
 Tell me I can't be the only one who doesn't enjoy cooking. It's sometimes painful for me. Always has been. I cook out of necessity, but really, one thing that has made it easier for me is _intentional planning_, especially with **simple meal planning with theme nights** as one of those planning strategies. Today on the blog, I'm sharing about simple meal planning with theme nights and I'm also sharing 15 simple meal planning theme night ideas.
 
+### What is a theme night?
+
+**Simple meal planning with theme nights** means that you pull from a certain theme for each night in your week. Reducing decision fatigue and making it easier to pick recipes for each night. It's a pretty simple concept, right?! 
+
 _If you're often standing in the kitchen wondering what to make, here are...._
 
 ### 15 simple meal planning theme night ideas
