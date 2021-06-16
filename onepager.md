@@ -1,8 +1,5 @@
-# Die Bitcoin Zitadelle
-
-```
 Sommer, Sonne und Satoshi
-```
+
 ## Organisation
 
 Da im Zuge der Corona-Beschränkungen persönliche Kontakte in den vergangenen 18 Monaten sehr
