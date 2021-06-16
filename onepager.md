@@ -10,43 +10,12 @@ spärlich gesät waren, veranstaltet die deutschsprachige Bitcoin-Szene rund um 
 Blocktrainer.de, dem Einundzwanzig Podcast und der Lightning-Schmiede „Fulmo“ die erste deutsche
 Bitcoin Konferenz seit Beginn der Covid-Krise.
 
-```
-Blocktrainer Einundzwanzig Fulmo
-```
-```
-Mit hunderten Videos,
-zahlreichen Artikeln, einem der
-größten deutschen Bitcoin-Foren
-(>650k Seitenaufrufe pro Monat)
-erreicht das Team von
-Blocktrainer über alle Kanäle
-hinweg mehr als 100.
-Bitcoiner im deutschsprachigen
-Raum.
-```
-```
-Das Team vom EINUNDZWANZIG
-Podcast, besteht aus einigen in
-Deutschland aber auch weltweit
-sehr bekannten Vertretern der
-Bitcoin-Szene. In mehr als 150
-Podcast-Folgen, Interviews und
-anderen Formaten ist
-EINUNDZWANZIG mittlerweile
-zum reichweitenstärksten
-deutschen Bitcoin-Podcast
-geworden.
-```
-```
-Das Team von Fulmo aus Berlin ist
-in der Bitcoin-Szene vor allem
-durch den Vertrieb der Fullnode-
-Lösung RapsiBlitz sowie der
-Organisation der Lightning
-Konferenz und der Lightning
-Hackdays in Berlin, München und
-New York bekannt.
-```
+
+| Blocktrainer  | Einundzwanzig  | Fulmo |
+| -------- | -------- | -------- |
+| Mit hunderten Videos, zahlreichen Artikeln, einem der größten deutschen Bitcoin-Foren (>650k Seitenaufrufe pro Monat) erreicht das Team von Blocktrainer über alle Kanäle hinweg mehr als 100. Bitcoiner im deutschsprachigen Raum. | Das Team vom EINUNDZWANZIG Podcast, besteht aus einigen in Deutschland aber auch weltweit sehr bekannten Vertretern der Bitcoin-Szene. In mehr als 150 Podcast-Folgen, Interviews und anderen Formaten ist EINUNDZWANZIG mittlerweile zum reichweitenstärksten deutschen Bitcoin-Podcast geworden.  | Das Team von Fulmo aus Berlin ist in der Bitcoin-Szene vor allem durch den Vertrieb der Fullnode- Lösung RapsiBlitz sowie der Organisation der Lightning Konferenz und der Lightning Hackdays in Berlin, München und New York bekannt.   |
+
+
 ```
 Passend zum Thema „Die Bitcoin Zitadelle – Sommer, Sonne und Satoshi“, findet die Veranstaltung
 vom 6.8 – 8.8.2021 auf Schloss Burgscheidungen in Sachsen-Anhalt statt.
