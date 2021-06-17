@@ -10,8 +10,7 @@ Wir sind Bitcoin
 <noscript>
    <div class="pretix-widget">
         <div class="pretix-widget-info-message">
-            JavaScript is disabled in your browser. To access our ticket shop without JavaScript,
-            please <a target="_blank" href="https://pretix.eu/fulmo/btczitadelle/">click here</a>.
+            JavaScript ist in Ihrem Browser deaktiviert. Um unseren Ticket-Shop ohne JavaScript aufzurufen, klicken Sie bitte <a target="_blank" rel="noopener" href="https://pretix.eu/fulmo/btczitadelle/">hier</a>.
         </div>
     </div>
 </noscript>
