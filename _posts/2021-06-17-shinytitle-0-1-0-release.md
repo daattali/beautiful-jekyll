@@ -86,4 +86,4 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-This package is now avialble on CRAN; please reach out about any further suggestions for this package!
+This package is now available on CRAN; please reach out about any further suggestions for this package!
