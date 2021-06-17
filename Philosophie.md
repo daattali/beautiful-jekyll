@@ -1,4 +1,11 @@
-Bitcoin Zitadelle 🏰 - Sommer, Sonne und Satoshi
+---
+layout: post
+title: Bitcoin Zitadelle 🏰
+subtitle: Sommer, Sonne und Satoshi
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Bitcoin, Lightning]
+---
 
 Philosophie
 
