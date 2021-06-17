@@ -59,7 +59,7 @@ Here is a before and after of clicking on the "toggle" button:
 
 ## Updating When Busy
 
-Alternatively, you can have a title that changes whenever the shiny application is in a "busy" state by adding `busy_shiny_title()` into the UI. This is more useful when there are just a couple of longer processes and very few/none quick functions - from an end user point of view, you don't want the title to be constantly switching.
+Alternatively, you can have the title change whenever the shiny application is in a "busy" state by adding `busy_shiny_title()` into the UI. This can be useful to find unexpected times that the shiny application is calculating in the background.
 
 Example:
 ```r
@@ -86,4 +86,4 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-This package is now avialble on CRAN; feel free to suggestion any further suggestions for this package!
+This package is now avialble on CRAN; please reach out about any further suggestions for this package!
