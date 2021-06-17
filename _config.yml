@@ -14,7 +14,7 @@ author: Wir sind Bitcoin!
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Tickets: "aboutme"
+  Tickets: "tickets"
   Onepager: "onepager"
   Philosophie:  "Philosophie"
   Das Schloss:
