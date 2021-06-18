@@ -20,7 +20,7 @@ redirect_from:
 - 2020-08-20-one-daily-tidying-routine-that-will-save-you-money-and-time
 
 ---
-**_Update laundry blog. Blog images. ADD IN POST NEXT WEEEK._**
+**_ADD IN POST NEXT WEEEK._**
 
 What if I told you that committing to staying on top of laundry would save you money and time. Would you do it? Those are the two benefits I clued into after we started adding laundry to our daily nonnegotiable tidying routine. Today on the blog I’m going to share with you **how staying on top of your laundry will also save you both money and time**.
 
@@ -32,15 +32,17 @@ It sounds simple, but in practice, may not be the easiest. By committing to wash
 
 #### How to start tackling the laundry to save you money and time
 
-* **Purge and downsize your clothes.** If you’re wanting to create a simple laundry routine for yourself and start saving money and time, the first thing to do to make it easier on yourself is to purge and downsize clothes that you no longer wear, fit, or are irreparable.  SEE THIS BLOG HERE...
-* Inspect clothes as you go. I did a big purge a while ago, but constantly maintenance purge when I’m doing the laundry. I inspect clothes as they go through the laundry routine.
-* See how much access clothes there are after you’ve established your daily laundry routine. This will give you an idea of how much excess you really do have.
+* **Purge and downsize your clothes.** If you’re wanting to create a simple laundry routine for yourself and start saving money and time, the first thing to do to make it easier on yourself is to purge and downsize clothes that you no longer wear, fit, or are irreparable.  See my blog: [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/) if you need help with that! And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some feedback on it: _“Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!”_ Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my [**Simple Capsule Wardrobe Guide**](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) ebook. You can find that guide [here](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/).
+* **Inspect clothes as you go.** I did a big purge a while ago, but often maintenance purge when I’m doing the laundry. I inspect clothes as they go through the laundry routine. Does anything not fit or is irreparable? Perhaps they need to go!
+* **Discover your click point for your clothing amounts.** See how much excess clothing there is after you’ve established your daily laundry routine. This will give you an idea of how much excess you really do have and what you need to fine tune from there.
 
 **Related:** [How to Keep Your Laundry Routine Simple for Busy Families](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 
-**_Cut/paste CTA from another laundry blog..link podcast etc..CTA course._** 
+#### FREEBIE: Create Your Simple Laundry Routine that will Save You Money and Time
 
-_Your laundry routine is going to look different from mine, but hopefully looking at mine will give you a good place to start. And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [**_Simple Capsule Wardrobe Guide_**](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
+Also catch the freebie: Create Your Simple Laundry Routine (ten questions to ask yourself to help you design yours). You can snag that [HERE](https://mailchi.mp/a5efd04962e4/simplelaundry). You may also enjoy my six week online course Simplify Your Home Life: a course for busy moms. I do a whole unit just on routines, including laundry routines. Find more on the course [here](https://www.simplehome.com/course).
+
+Your laundry routine is going to look different from someone else's, but hopefully the tips today will help you see that having a daily tidying routine for laundry may help you save both money and time. 
 
 **SAVE FOR FUTURE REFERENCE:**
 
@@ -50,4 +52,3 @@ _Your laundry routine is going to look different from mine, but hopefully lookin
 
 * [Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
 * [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
-* [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
