@@ -10,9 +10,10 @@ layout: base
     <div class="row justify-content-center">
       <div class="col-lg-12 col-md-12">
         <div class="list-group">
-        <!-- Displaying articles sorted by year (most recent first) and sorted by title within year-->
+        <!-- Displaying articles sorted by year (most recent first) then by title within year then priority (no priority = 999 = at the end)-->
+        <!-- This means adding a "priority" to the publication will sort in that order (1, 2, 3...) with ties broken by alphabetical title-->
         {% for pub_year in years %}
-          {% assign publications_sorted = pub_year.items | sort: "article_title" %}
+          {% assign publications_sorted = pub_year.items | sort: "article_title" | sort: "priority" %}
           {% for publication in publications_sorted %}
             <a href="{{ publication.article_url }}" class="list-group-item list-group-item-action border-0">
                 {{ publication.article_authors }} ({{ publication.article_year }})

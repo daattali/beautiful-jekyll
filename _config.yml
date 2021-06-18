@@ -216,6 +216,12 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+  -
+    scope:
+      path: ""
+      type: "publications"
+    values:
+      priority: 9999  # Low (high number) priority for articles by default
 
 # Exclude these files from production site
 exclude:
