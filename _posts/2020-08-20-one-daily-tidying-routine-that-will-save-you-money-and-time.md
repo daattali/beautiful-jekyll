@@ -36,7 +36,7 @@ It sounds simple, but in practice, may not be the easiest. By committing to wash
 * Inspect clothes as you go. I did a big purge a while ago, but constantly maintenance purge when I’m doing the laundry. I inspect clothes as they go through the laundry routine.
 * See how much access clothes there are after you’ve established your daily laundry routine. This will give you an idea of how much excess you really do have.
 
-Related:
+**Related:** 
 
 **_Cut/paste CTA from another laundry blog..link podcast etc..CTA course._** 
 
@@ -48,8 +48,6 @@ _Your laundry routine is going to look different from mine, but hopefully lookin
 
 **Other blogs you may enjoy:**
 
-[Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
-
-[How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
-
-[How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
+* [Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
+* [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
+* [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
