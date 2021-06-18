@@ -36,7 +36,7 @@ It sounds simple, but in practice, may not be the easiest. By committing to wash
 * Inspect clothes as you go. I did a big purge a while ago, but constantly maintenance purge when I’m doing the laundry. I inspect clothes as they go through the laundry routine.
 * See how much access clothes there are after you’ve established your daily laundry routine. This will give you an idea of how much excess you really do have.
 
-**Related:** 
+**Related:** [How to Keep Your Laundry Routine Simple for Busy Families](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 
 **_Cut/paste CTA from another laundry blog..link podcast etc..CTA course._** 
 
