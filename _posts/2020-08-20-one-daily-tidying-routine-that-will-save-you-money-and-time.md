@@ -24,6 +24,8 @@ redirect_from:
 
 What if I told you that committing to staying on top of laundry would save you money and time. Would you do it? Those are the two benefits I clued into after we started adding laundry to our daily nonnegotiable tidying routine. Today on the blog I’m going to share with you **how staying on top of your laundry will also save you both money and time**.
 
+![A picture of a washer and dryer with clothes in them.](/uploads/one-daily-tidying-routine-that-will-save-you-money-and-time-shm.jpg "One Daily Tidying Routine that Will Save You Money and Time SHM")
+
 ## Committing to daily laundry
 
 It sounds simple, but in practice, may not be the easiest. By committing to washing your laundry daily, you will notice that you no longer need to have a pile of extra clothes to wear for when you need to get caught up on laundry. So, in turn, that means less clothes to buy and less time spent washing clothes. And for us? A HUGE bonus has been that there are fewer stray socks around my house now too. So I’ll take it. Ha! _Note:_ I understand daily washing will not work for every family. You may prefer doing it once on the weekend or every few days. Do what works, always!
@@ -42,7 +44,9 @@ _Your laundry routine is going to look different from mine, but hopefully lookin
 
 **SAVE FOR FUTURE REFERENCE:**
 
-Other blogs you may enjoy:
+![A picture of a full washer.](/uploads/one-daily-tidying-routine-shm.jpg "One Daily Tidying Routine SHM")
+
+**Other blogs you may enjoy:**
 
 [Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
 
