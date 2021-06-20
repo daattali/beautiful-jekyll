@@ -15,7 +15,8 @@ author: Wir sind Bitcoin!
 
 navbar-links:
   Tickets: "tickets"
-  Infos: "onepager"
+  Onepager: "onepager"
+  Philosophie:  "Philosophie"
   Das Schloss:
     - Burgscheidungen: "http://www.schloss-burgscheidungen.de/index2.html"
   Communities: 
@@ -44,7 +45,7 @@ social-network-links:
   email: "someone@example.com"
   github: daattali
   twitter: https://twitter.com/BTCZitadelle
-  youtube: https://www.youtube.com/watch?v=vKkGwRbrltU
+  youtube: watch?v=vKkGwRbrltU
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
