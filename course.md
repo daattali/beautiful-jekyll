@@ -31,42 +31,13 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 
 $49 USD. Payment is via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada. Just shoot me an email - simplehomemom@gmail.com
 
-<div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=AfrJZyP_cm1XyInYJTaYkWJoEK67Jjrdl4XFtCn30zGgX1bB1y-CNmJBYn3Ie41wKBVVSyfd0TrMQEnr&currency=USD" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'rect',
-          color: 'black',
-          layout: 'vertical',
-          label: 'paypal',
-          
-        },
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="MWM25VCWWBDWA">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"description":"Simplify Your Home Life: a course for busy moms","amount":{"currency_code":"USD","value":49}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script>
 
 **Note:** You can also directly send funds to simplehomemom@gmail.com if it's easier that way.
 
