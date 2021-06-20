@@ -1,0 +1,1 @@
+We want to believe that human violence is somehow beyond our understanding, because as long as it remains a mystery, we have no duty to avoid it, explore it, or anticipate it.
