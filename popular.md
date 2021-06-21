@@ -9,7 +9,7 @@ subtitle: ''
 * [Newest blogs](https://www.simplehomemom.com)
 * [Simple Meal Planning with Theme Nights + 15 simple meal planning theme night ideas](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
-* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
+* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) - $10 off this week! Email simplehomemom@gmail.com to grab a spot!
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
