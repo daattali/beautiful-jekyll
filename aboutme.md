@@ -1,16 +1,19 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About us
+subtitle: 소개
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### 2021 캡스톤 디자인 프로젝트
+- 위성영상 분석정보 시각화 웹 서비스 개발
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+방학 기간 학습 정리를 위한 페이지
 
-What else do you need?
+### 구성원
+- 박태현
+- 송찬환
+- 유현수
 
-### My story
+### Git
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+[Front End](https://github.com/2021-jirijo/SatelliteVisualization)
