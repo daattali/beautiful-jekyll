@@ -7,9 +7,7 @@ published: false
 ---
 # What is the Simple Capsule Wardrobe Guide?
 
-Does your wardrobe speak to your life right now? Does it take more effort to think about what you want to wear or do you just have too many choices and you'd like to simplify? If these are questions you are asking yourself, then this guide may be for you.
-
-![A picture of my ebook on a tablet. ](/uploads/0001-14050326233_20201205_222458_0000_compress99.jpg "SHM")
+The Simple Meal Planning Guide will help you never to become stumped with meal planning again (when/if applied). 
 
 Have you heard of [a capsule wardrobe](https://en.wikipedia.org/wiki/Capsule_wardrobe) before? After doing a ton of research on them a few years back, I found out that there are many ways to do them and I found it very overwhelming to figure it all out. Which do I pick? What rules do I use? What steps do I take? I'm going to simplify the process for you - to give you the most important steps. Sound like a plan?
 
