@@ -10,6 +10,8 @@ sections:
   create: documents
   match: "*.md"
   exclude: "{README.md,CHANGELOG.md}"
+  templates:
+  - page
 - type: directory
   path: _posts
   label: Blog posts
