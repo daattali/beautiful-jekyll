@@ -1,7 +1,8 @@
 ---
 layout: post
 title: One Daily Tidying Routine that Will Save You Money and Time
-subtitle: ''
+subtitle: "+ FREEBIE: Create Your Simple Laundry Routine that will Save You Money
+  and Time"
 tags:
 - cleaning
 - tidying
@@ -20,8 +21,6 @@ redirect_from:
 - 2020-08-20-one-daily-tidying-routine-that-will-save-you-money-and-time
 
 ---
-**_ADD IN POST NEXT WEEEK._**
-
 What if I told you that committing to staying on top of laundry would save you money and time. Would you do it? Those are the two benefits I clued into after we started adding laundry to our daily nonnegotiable tidying routine. Today on the blog I’m going to share with you **how staying on top of your laundry will also save you both money and time**.
 
 ![A picture of a washer and dryer with clothes in them.](/uploads/one-daily-tidying-routine-that-will-save-you-money-and-time-shm.jpg "One Daily Tidying Routine that Will Save You Money and Time SHM")
@@ -42,7 +41,7 @@ It sounds simple, but in practice, may not be the easiest. By committing to wash
 
 Also catch the freebie: Create Your Simple Laundry Routine (ten questions to ask yourself to help you design yours). You can snag that [HERE](https://mailchi.mp/a5efd04962e4/simplelaundry). You may also enjoy my six week online course Simplify Your Home Life: a course for busy moms. I do a whole unit just on routines, including laundry routines. Find more on the course [here](https://www.simplehome.com/course).
 
-Your laundry routine is going to look different from someone else's, but hopefully the tips today will help you see that having a daily tidying routine for laundry may help you save both money and time. 
+Your laundry routine is going to look different from someone else's, but hopefully the tips today will help you see that having a daily tidying routine for laundry may help you save both money and time.
 
 **SAVE FOR FUTURE REFERENCE:**
 
