@@ -1,13 +1,13 @@
 ---
 title: Simple Home Mom
-description: Helping moms simplify life at home.
+description: Helping moms simplify home life.
 author: Kelly Briggs
 navbar-links:
   Popular: popular
   Resources:
-  - Course: /course/
-  - Simple Capsule Wardrobe Guide: /simple-capsule-wardrobe-guide/
-  - Freebies: /freebies/
+  - Course: "/course/"
+  - Simple Capsule Wardrobe Guide: "/simple-capsule-wardrobe-guide/"
+  - Freebies: "/freebies/"
   Connect:
   - About me: https://kellymbriggs.github.io/aboutme/
   - Contact: https://kellymbriggs.github.io/contact/
@@ -43,7 +43,7 @@ timezone: America/Vancouver
 markdown: kramdown
 highlighter: rouge
 permalink: "/:title/"
-paginate: 5
+paginate: "5"
 kramdown:
   input: GFM
 defaults:
