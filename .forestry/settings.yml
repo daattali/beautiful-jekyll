@@ -19,9 +19,6 @@ sections:
   match: "**/*"
   templates:
   - blog-post
-- type: document
-  path: _config.yml
-  label: Configuration
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
