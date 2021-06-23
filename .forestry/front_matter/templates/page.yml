@@ -14,7 +14,6 @@ fields:
   name: subtitle
   label: subtitle
 pages:
-- "./the-simple-meal-planning-guide.md"
 - aboutme.md
 - contact.md
 - course.md

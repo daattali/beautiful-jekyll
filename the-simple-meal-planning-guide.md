@@ -2,7 +2,6 @@
 layout: page
 title: The Simple Meal Planning Guide
 subtitle: ''
-published: false
 
 ---
 # What is the Simple Capsule Wardrobe Guide?
