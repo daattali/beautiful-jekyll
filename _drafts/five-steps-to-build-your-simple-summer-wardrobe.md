@@ -49,15 +49,17 @@ Having a smaller wardrobe, focusing on quality pieces that are classic and not [
 4. **Make note of gaps.** With your current summer wardrobe, are there obvious gaps? Such as you’re down to one pair of ripped shorts? Make note!
 5. **Tweak as you go and enjoy the process.**
 
-These above steps are inspired by my [Simple Capsule Wardrobe Guide](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/), which walks you through simple steps to create your own capsule wardrobe that are clear and easy to follow.
+PS These above steps are inspired by my [Simple Capsule Wardrobe Guide](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/), which walks you through simple steps to create your own capsule wardrobe that are clear and easy to follow. 
 
-_Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [_Simple Capsule Wardrobe Guide_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
+_Some recent feedback on my Simple Capsule Wadrobe Guide:_ 
 
-_My Summer Wardrobe_
+> _“Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [_Simple Capsule Wardrobe Guide_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
 
-_This was a long process to get to this place, but I know what I like now for summer clothing!
+### My Summer Wardrobe
 
-TOPS_
+This took a long process to get to this place, but I know what I like now for summer clothing!
+
+TOPS
 
 _BOTTOMS_
 
