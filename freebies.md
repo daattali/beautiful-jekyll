@@ -4,17 +4,17 @@ title: Freebies
 subtitle: ''
 
 ---
-This is a small sample of the free resources you'll gain access to by being apart of my biweekly (currently) mail list. You'll receive a link to the freebie vault in my next mailed newsletter:
+This is a small sample of the free resources you'll gain access to by being apart of my biweekly (currently) mail list. Click on the link to gain access to any freebie you'd like! You'll also gain full access to all of my freebies the next time I mail out a newsletter.
 
 * [Create Your Simple Laundry Routine Worksheet](https://mailchi.mp/a5efd04962e4/simplelaundry)
 * [Plan Your Zero Spend Month Worksheets](https://mailchi.mp/8264c25ebc2a/zerospend)
-* DIY Natural Cleaners
-* Picky Plate Template
-* Daily Affirmations for Moms
-* How I Plan on the Weekends (video)
-* A Deep Dive Into my Monthly Planning Method
-* Simple Social Media Monthly Planning
-* Five Ways to Strip Your Laundry
+* [20 Routines to Look at to Save Time in Your Home](https://mailchi.mp/fb4dd0689eec/5rpn7cuy68)
+* [Morning Routine Template with Kids](https://mailchi.mp/b5550b9a5b6c/kxmxwhppym)
+* [Braindump Planner Pages](https://mailchi.mp/df5816e44b8d/braindump-planner-pages)
+* [50 Product Switches that Will Save You Money](https://mailchi.mp/cede3e30ede7/product-switches)
+* [Free Digital Declutter Challenge](https://mailchi.mp/2537e5ab8d0f/free-digital-declutter-challenge)
+* [Printable Daily Planner Sheet](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)
+* [The Master Cleaning Task List Printable](https://mailchi.mp/b99d58a9c22d/master-cleaning-task-list)
 
 ..and so much more. I add to the freebie vault regularly!
 
