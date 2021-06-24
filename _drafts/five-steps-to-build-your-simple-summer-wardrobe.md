@@ -61,18 +61,14 @@ This took a long process to get to this place, but I know what I like now for su
 
 TOPS
 
-_BOTTOMS_
+BOTTOMS
 
 _You can find some of my pieces in my Amazon shops under “capsule wardrobe”. Click:_ [**Amazon Canada**](http://www.amazon.ca/shop/simplehomemom) _and_ [**Amazon US**](http://www.amazon.ca/shop/simplehomemom)_._
 
 **Other blogs of mine you may enjoy:**
 
-· [Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
-
-· [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
-
-· [Four Tips to Create Minimal Wardrobes for Kids](https://www.simplehomemom.com/how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
-
-· [Four Easy Ways to Create a Minimalist Jewelry Collection](https://www.simplehomemom.com/four-easy-ways-to-create-a-minimalist-jewelry-collection/)
-
-· [Three Key Steps for Tackling Explosive Closets](https://www.simplehomemom.com/three-key-steps-for-tackling-explosive-closets/)
+* ·[Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
+* [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
+* [Four Tips to Create Minimal Wardrobes for Kids](https://www.simplehomemom.com/how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
+* [Four Easy Ways to Create a Minimalist Jewelry Collection](https://www.simplehomemom.com/four-easy-ways-to-create-a-minimalist-jewelry-collection/)
+* [Three Key Steps for Tackling Explosive Closets](https://www.simplehomemom.com/three-key-steps-for-tackling-explosive-closets/)
