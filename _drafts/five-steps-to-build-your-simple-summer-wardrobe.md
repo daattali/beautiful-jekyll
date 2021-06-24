@@ -57,8 +57,6 @@ _Some recent feedback on my Simple Capsule Wadrobe Guide:_
 
 This took a long process to get to this place, but I know what I like now for summer clothing! I've got everything that I need and most pieces are mix and match. I love that as it simplifies things a lot for me.
 
-![A picture of my simple summer wardrobe collage.](/uploads/my-simple-summer-wardrobe-shm.jpg "My Simple Summer Wardrobe SHM")
-
 **Tops:**
 
 * Tees: Two super soft, buttery feel, and lightweight scoop neck tees
@@ -69,7 +67,7 @@ This took a long process to get to this place, but I know what I like now for su
 **Bottoms:**
 
 * Skirts: patterned skirt that I fixed with a new waist elastic (Walmart), grey flowy pocket skirt I bought for my birthday. I LOVE it!
-* Dress skirt (not pictured): turqoise wool pencil skirt
+* Dress skirt: turqoise wool pencil skirt
 * Shorts: cutoff shorts from my old jeggings that wore out in the knees
 
 **You can find some of my simple summer wadrobe pieces in my Amazon shops under “capsule wardrobe”. Click:** [**Amazon Canada**](http://www.amazon.ca/shop/simplehomemom) **and** [**Amazon US**](http://www.amazon.ca/shop/simplehomemom)**_._** 
