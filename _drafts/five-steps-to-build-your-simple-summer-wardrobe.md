@@ -49,6 +49,8 @@ Having a smaller wardrobe, focusing on quality pieces that are classic and not [
 4. **Make note of gaps.** With your current summer wardrobe, are there obvious gaps? Such as you’re down to one pair of ripped shorts? Make note!
 5. **Tweak as you go and enjoy the process.**
 
+### THE SIMPLE CAPSULE WARDROBE GUIDE
+
 PS These above steps are inspired by my [Simple Capsule Wardrobe Guide](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/), which walks you through simple steps to create your own capsule wardrobe that are clear and easy to follow. 
 
 _Some recent feedback on my Simple Capsule Wadrobe Guide:_ 
@@ -57,13 +59,13 @@ _Some recent feedback on my Simple Capsule Wadrobe Guide:_
 
 ### My Summer Wardrobe
 
-This took a long process to get to this place, but I know what I like now for summer clothing!
+This took a long process to get to this place, but I know what I like now for summer clothing! I've got everything that I need and most pieces go with everything else in my summer wardrobe.
 
 TOPS
 
 BOTTOMS
 
-_You can find some of my pieces in my Amazon shops under “capsule wardrobe”. Click:_ [**Amazon Canada**](http://www.amazon.ca/shop/simplehomemom) _and_ [**Amazon US**](http://www.amazon.ca/shop/simplehomemom)_._
+**_You can find some of my pieces in my Amazon shops under “capsule wardrobe”. Click: _**[**Amazon Canada **](http://www.amazon.ca/shop/simplehomemom)**_and _**[**Amazon US**](http://www.amazon.ca/shop/simplehomemom)**_._**
 
 **SAVE FOR FUTURE REFERENCE:**
 
