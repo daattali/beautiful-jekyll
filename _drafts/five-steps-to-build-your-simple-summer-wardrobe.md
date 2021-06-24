@@ -40,32 +40,39 @@ Having a smaller wardrobe, focusing on quality pieces that are classic and not [
 
    “The best way I’ve found to go about finding out what basics work best for me it is to ask myself some questions:
    * What’s my lifestyle like - i.e. what is practical wardrobe wise for my life right now?
-
-
    * What kinds of clothing do I like wearing?
-
-
    * Can I remove some “basics” categories and simplify (such as one or two kinds of bottoms vs seven)? For me, in one basic category for instance, that became leggings only for long pants for me eventually.”
 4. **Make note of gaps.** With your current summer wardrobe, are there obvious gaps? Such as you’re down to one pair of ripped shorts? Make note!
 5. **Tweak as you go and enjoy the process.**
 
 ### THE SIMPLE CAPSULE WARDROBE GUIDE
 
-PS These above steps are inspired by my [Simple Capsule Wardrobe Guide](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/), which walks you through simple steps to create your own capsule wardrobe that are clear and easy to follow. 
+PS These above steps are inspired by my [Simple Capsule Wardrobe Guide](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/), which walks you through simple steps to create your own capsule wardrobe that are clear and easy to follow.
 
-_Some recent feedback on my Simple Capsule Wadrobe Guide:_ 
+_Some recent feedback on my Simple Capsule Wadrobe Guide:_
 
 > _“Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [_Simple Capsule Wardrobe Guide_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
 
 ### My Simple Summer Wardrobe
 
-This took a long process to get to this place, but I know what I like now for summer clothing! I've got everything that I need and most pieces go with everything else in my summer wardrobe.
+This took a long process to get to this place, but I know what I like now for summer clothing! I've got everything that I need and most pieces are mix and match. I love that as it simplifies things a lot for me.
 
-TOPS
+![A picture of my simple summer wardrobe collage.](/uploads/my-simple-summer-wardrobe-shm.jpg "My Simple Summer Wardrobe SHM")
 
-BOTTOMS
+**Tops:**
 
-**_You can find some of my pieces in my Amazon shops under “capsule wardrobe”. Click: _**[**Amazon Canada **](http://www.amazon.ca/shop/simplehomemom)**_and _**[**Amazon US**](http://www.amazon.ca/shop/simplehomemom)**_._**
+* Tees: Two super soft, buttery feel, and lightweight scoop neck tees
+* Tanks: Three sport tank tops
+* Dress: black tank, navy tank
+* Under: Knix brand built in bra tank. I wear this all year under things usually
+
+**Bottoms:**
+
+* Skirts: patterned skirt that I fixed with a new waist elastic (Walmart), grey flowy pocket skirt I bought for my birthday. I LOVE it!
+* Dress skirt (not pictured): turqoise wool pencil skirt
+* Shorts: cutoff shorts from my old jeggings that wore out in the knees
+
+**You can find some of my simple summer wadrobe pieces in my Amazon shops under “capsule wardrobe”. Click:** [**Amazon Canada**](http://www.amazon.ca/shop/simplehomemom) **and** [**Amazon US**](http://www.amazon.ca/shop/simplehomemom)**_._** 
 
 **SAVE FOR FUTURE REFERENCE:**
 
