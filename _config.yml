@@ -6,25 +6,27 @@
 # --- Required options --- #
 
 # Name of website
-title: IEEE CIMATEC Website
+title: IEEE CIMATEC
 
 # Your name to show in the footer
-author: Some Person
+author: Felipe Mohr
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Projetos:
+    - (RAS) I3E-D3: "project-i3e_d3"
+  Capítulos:
+    - EMBS: "capitulo-EMBS"
+    - PES: "capitulo-PES"
+    - RAS: "capitulo-RAS"
+  Sobre Nós: "aboutme"
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/ieee_logo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -42,7 +44,7 @@ social-network-links:
   email: "ieee.cimatec@gmail.com"
   instagram: ieeecimatec
   github: ieeecimatec
-  youtube: IEEE CIMATEC
+  youtube: channel/UCQrVeHW-5qT0LgnvVYd-HbA
 # facebook: deanattali
 #  twitter: daattali
 #  patreon: DeanAttali
@@ -78,7 +80,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "ieeecimatec.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -99,16 +101,16 @@ post_search: true
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
+navbar-col: "#002855"
+navbar-text-col: "#FFFFFF"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
+link-col: "#002855"
+hover-col: "#00629B"
+footer-col: "#75787B"
+footer-text-col: "#FFFFFF"
+footer-link-col: "#002855"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
