@@ -33,8 +33,8 @@ Having a smaller wardrobe, focusing on quality pieces that are classic and not [
 ### Five Steps to Build Your Simple Summer Wardrobe
 
 1. **Take inventory of what you have.** Save money and time by using what you have first! Also, using what you have will also help you to figure what you actually do like wearing and what you may need in the future for your summer wardrobe.
-2. **Pick your colour palette.** It’s much harder to create a simple summer wardrobe if you’re not sure what colours you’re going be using. Limit yourself to a certain amount of colours and go from there. I’m around 4 colours and a neutral currently, for reference.  
-   3**. Pick your basics.** Pick what kinds of basics you’d like in your wardrobe. Are you a tank wearer? V neck or scoop neck? Skirts? Shorts? What will your basics be? If you’re feeling overwhelmed, focus on less categories at first and tweak along the way.
+2. **Pick your colour palette.** It’s much harder to create a simple summer wardrobe if you’re not sure what colours you’re going be using. Limit yourself to a certain amount of colours and go from there. I’m around 4 colours and a neutral currently, for reference.
+3. **Pick your basics for your summer wadrobe.** Pick what kinds of basics you’d like in your wardrobe. Are you a tank wearer? V neck or scoop neck? Skirts? Shorts? What will your basics be? If you’re feeling overwhelmed, focus on less categories at first and tweak along the way.
 
 # From my blog [“ Fifteen Basics to Consider When Building a Simple Wardrobe”:](https://www.simplehomemom.com/fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
 
