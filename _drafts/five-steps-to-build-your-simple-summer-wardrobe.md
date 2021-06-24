@@ -20,6 +20,8 @@ redirect_from: []
 ---
 Are you swimming in clothes? Or just want to get better at figuring out what to wear? This was me a handful of years back. I asked for help from a trusted friend. And booted sooo much out. Like teacher clothes I no longer needed as a stay at home mom. From there, I wanted to simplify and get better at figuring out my clothing situation. It was quite the process, but worth it now that I’m mostly out the other side. I know what I like now! Today on the blog, I’m sharing with you **five steps to build your simple summer wardrobe.** Plus you’ll get a peek at my summer wardrobe this year too. I’m so excited to share!
 
+![A picture of clothes on hangers.](/uploads/summer-wardrobe-shm.jpg "Simple Summer Wardrobe SHM")
+
 ## So, what is a capsule wardrobe?
 
 > _“Capsule wardrobe is a term coined by Susie Faux, the owner of a London boutique called “Wardrobe” in the 1970s. According to Faux, a capsule wardrobe is a collection of a few essential items of clothing that don’t go out of fashion, such as skirts, trousers, and coats, which can then be augmented with seasonal pieces.” (thanks, wiki)_
