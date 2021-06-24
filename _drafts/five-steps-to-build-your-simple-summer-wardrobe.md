@@ -36,18 +36,18 @@ Having a smaller wardrobe, focusing on quality pieces that are classic and not [
 2. **Pick your colour palette.** It’s much harder to create a simple summer wardrobe if you’re not sure what colours you’re going be using. Limit yourself to a certain amount of colours and go from there. I’m around 4 colours and a neutral currently, for reference.
 3. **Pick your basics for your summer wadrobe.** Pick what kinds of basics you’d like in your wardrobe. Are you a tank wearer? V neck or scoop neck? Skirts? Shorts? What will your basics be? If you’re feeling overwhelmed, focus on less categories at first and tweak along the way.
 
-# From my blog [“ Fifteen Basics to Consider When Building a Simple Wardrobe”:](https://www.simplehomemom.com/fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
+   From my blog ["Fifteen Basics to Consider When Building a Simple Wardobe"](https://www.simplehomemom.com/fifteen-basics-to-consider-when-building-a-simple-wardrobe/):
 
-“The best way I’ve found to go about finding out what basics work best for me it is to ask myself some questions:
+   “The best way I’ve found to go about finding out what basics work best for me it is to ask myself some questions:
+   * What’s my lifestyle like - i.e. what is practical wardrobe wise for my life right now?
 
-* What’s my lifestyle like - i.e. what is practical wardrobe wise for my life right now?
-* What kinds of clothing do I like wearing?
-* Can I remove some “basics” categories and simplify (such as one or two kinds of bottoms vs seven)?
 
-For me, in one basic category for instance, that became leggings only for long pants for me eventually.”
+   * What kinds of clothing do I like wearing?
 
-1. **Make note of gaps.** With your current summer wardrobe, are there obvious gaps? Such as you’re down to one pair of ripped shorts? Make note!
-2. **Tweak as you go and enjoy the process.**
+
+   * Can I remove some “basics” categories and simplify (such as one or two kinds of bottoms vs seven)? For me, in one basic category for instance, that became leggings only for long pants for me eventually.”
+4. **Make note of gaps.** With your current summer wardrobe, are there obvious gaps? Such as you’re down to one pair of ripped shorts? Make note!
+5. **Tweak as you go and enjoy the process.**
 
 These above steps are inspired by my [Simple Capsule Wardrobe Guide](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/), which walks you through simple steps to create your own capsule wardrobe that are clear and easy to follow.
 
