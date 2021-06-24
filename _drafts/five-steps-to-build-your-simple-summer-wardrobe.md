@@ -5,7 +5,7 @@ tags:
 - simple wardrobe
 - summer wardrobe
 - capsule wardrobe tips
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/summer-wadrobe-tips-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
@@ -64,6 +64,10 @@ TOPS
 BOTTOMS
 
 _You can find some of my pieces in my Amazon shops under “capsule wardrobe”. Click:_ [**Amazon Canada**](http://www.amazon.ca/shop/simplehomemom) _and_ [**Amazon US**](http://www.amazon.ca/shop/simplehomemom)_._
+
+**SAVE FOR FUTURE REFERENCE:**
+
+![A blog overview picture with hangers as the background picture.](/uploads/five-steps-to-build-your-simple-summer-wardrobe-shm.jpg "Five Steps to Build Your Simple Summer Wardrobe SHM")
 
 **Other blogs of mine you may enjoy:**
 
