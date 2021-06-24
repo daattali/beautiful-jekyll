@@ -57,7 +57,7 @@ _Some recent feedback on my Simple Capsule Wadrobe Guide:_
 
 > _“Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [_Simple Capsule Wardrobe Guide_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
 
-### My Summer Wardrobe
+### My Simple Summer Wardrobe
 
 This took a long process to get to this place, but I know what I like now for summer clothing! I've got everything that I need and most pieces go with everything else in my summer wardrobe.
 
