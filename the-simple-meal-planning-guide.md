@@ -4,24 +4,29 @@ title: The Simple Meal Planning Guide
 subtitle: ''
 
 ---
-# What is the Simple Capsule Wardrobe Guide?
+# What is the Simple Meal Planning Guide?
 
-The Simple Meal Planning Guide will help you never to become stumped with meal planning again (when/if applied). 
+The Simple Meal Planning Guide to help you never to become stumped with meal planning again (when/if applied).
 
-Have you heard of [a capsule wardrobe](https://en.wikipedia.org/wiki/Capsule_wardrobe) before? After doing a ton of research on them a few years back, I found out that there are many ways to do them and I found it very overwhelming to figure it all out. Which do I pick? What rules do I use? What steps do I take? I'm going to simplify the process for you - to give you the most important steps. Sound like a plan?
+**This guide is for you if…**
 
-So if you are not sure where to start (or continue) because you're confused about what to do, then this **simple capsule wardrobe guide** is for you too. it's a complete, but open-ended _flexible_ guide to help you along the journey. I hope you enjoy it and make your way to a capsule wardrobe... simplified. Tailored just for you!
+· you often feel stumped and uninspired with meal planning
 
-![An image of the title page of the ebook.](/uploads/simple-capsule-wardrobe-guide.jpg "simplecapsulewardrobeguide")
+· you often dread mealtimes
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="QEKUGKA8FZSMJ">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+· you often feel overwhelmed and do not know where to start with meal planning
 
-## Included inside
+· you would like a simple, streamlined process to meal plan that works for you in every season of life
+
+· you often google meal planning type ideas
+
+· you can’t seem to find a system for meal planning that sticks
+
+If some or all of these sounds like you, this guide will may be your best friend. It is going to be full of tips and ideas. It will have all kinds of ways to get yourself motivated and inspired. You will never again question yourself, “What's for dinner?” if you follow through with creating a routine and a plan that works for you and your family. There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works.
+
+Lastly, this simple meal planning guide is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in! Tag me over [@simplehomemom](http://www.instagram.com/simplehomemom) if you are on Instagram and/or use the hashtag #simplemealguide to share your simple meal planning progress.
+
+## Inside
 
 * $7 USD (click through to the download link)
 * 9 pages
