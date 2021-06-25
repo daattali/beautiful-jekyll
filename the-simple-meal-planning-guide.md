@@ -23,13 +23,12 @@ Lastly, this simple meal planning guide is about planning firstly. With a good p
 
 ## Inside
 
-* $7 USD (click through to the download link)
-* 9 pages
-* Questions to get you thinking about your ideal simple capsule wardrobe
-* Six simple steps to get you well on the way to design your simple capsule wardrobe
+* $14.99 USD, $9.99 introductory pricing (click through to the download link)
+* X pages
+* X printables:
+* 
 * Resources section
-* Examples
-* My support if you need any help along the way
+* Bonus sections:
 
 SEE A PREVIEW HERE?? Or pictures.
 
