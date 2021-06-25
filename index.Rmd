@@ -1,0 +1,47 @@
+---
+title: "Kynon JM Benjamin"
+image: "headshot_kjmb.jpg"
+links:
+  - label: LinkedIn
+    url: "https://linkedin.com/in/kjade-benjamin13"
+  - label: Twitter
+    url: "https://twitter.com/kjbenjamin90"
+  - label: GitHub
+    url: "https://github.com/Krotosbenjamin"
+  - label: Email
+    url: "mailto:kj.benjamin90@gmail.com"
+output:
+  postcards::trestles
+---
+
+## Bio
+
+Kynon J Benjamin is a computational geneticist with 9 years of expertise in
+bioinformatics, machine learning, and molecular biology. Authored and/or 
+contributed to 6 publications and 21 presentations, receiving 6 awards. 
+Experience in streamlining processes and efficient with resolving technical 
+issues with extensive leadership experience.
+
+## Education
+
+**Lieber Institute for Brain Development and Johns Hopkins University School of Medicine** | Baltimore, MD
+
+Postdoctoral fellow in computational genetics and psychiatry | Current
+
+**Texas A&M University** | College Station, TX
+
+Ph.D. in Genetics | August 2012 - August 2017
+
+**Rensselaer Polytechnic Institute** | Troy, NY
+
+B.S. in Biomedical Engineering | August 2010 - May 2012
+
+**Indiana University, Purdue University, Indianapolis** | Indianapolis, INcluding
+
+Biomedical Engineering | August 2008 - May 2010
+
+## Experience
+
+**Google Brain** | Principal Investigator | January 2018 - Present
+
+**Netflix** | Research Scientist | June 2014 - December 2017
