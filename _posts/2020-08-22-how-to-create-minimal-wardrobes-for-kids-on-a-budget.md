@@ -36,16 +36,14 @@ If you look hard enough, you will find people giving away clothes. How often did
 
 ## Host clothing swap parties.
 
-I hosted a mega clothing and stuff swap party years back for a bunch of my mom friends that filled our whole basement. I was set for a long time for my kids for clothes! Everyone left happy and we had a great time too.
+I hosted a mega clothing and stuff swap party years back for a bunch of my mom friends that filled our whole basement. I was set for a long time for my kids for clothes! Everyone left happy and we had a great time too. You can find also more general tips [here](https://www.becomingminimalist.com/thin-closet/) too from Joshua Becker’s Becoming Minimalist website that you may find helpful. Also Courtney Carver’s book [Project 333](https://amzn.to/2ZdURKp) on developing minimalist wardrobes may be helpful too.
 
-You can find also more general tips [here](https://www.becomingminimalist.com/thin-closet/) too from Joshua Becker’s Becoming Minimalist website that you may find helpful. Also Courtney Carver’s book [Project 333](https://amzn.to/2ZdURKp) on developing minimalist wardrobes may be helpful too.
+### THE SIMPLE CAPSULE WARDROBE GUIDE:
 
 _And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [**_Simple Capsule Wardrobe Guide_**](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
 
-Other blogs you may enjoy:
+**Other blogs of mine you may enjoy:**
 
-[Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
-
-[How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
-
-[How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
+* [Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
+* [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
+* [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
