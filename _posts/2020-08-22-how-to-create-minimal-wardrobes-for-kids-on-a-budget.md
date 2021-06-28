@@ -1,23 +1,24 @@
 ---
 layout: post
 title: How to Create Minimal Wardrobes for Kids on a Budget
-description: Tips for creating minimalist wardrobes for kids without breaking the budget.
-subtitle: ""
+description: Tips for creating minimalist wardrobes for kids without breaking the
+  budget.
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200722_215357_0000_compress16-1.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-  - minimal living
-  - minimalism
-  - minimal wardrobes
-  - minimalism on a budget
-  - minimal kids wardrobe
-  - minimal kids wardrobes on a budget
+- minimal living
+- minimalism
+- minimal wardrobes
+- minimalism on a budget
+- minimal kids wardrobe
+- minimal kids wardrobes on a budget
 redirect_from:
-  - 2020-08-22-how-to-create-minimal-wardrobes-for-kids-on-a-budget
----
+- 2020-08-22-how-to-create-minimal-wardrobes-for-kids-on-a-budget
 
-Minimal living and wardrobes for kids on a budget? How does that even work? We have four kids so, I mean, that’s a lot of kids so it’s been important for us to figure out sustainable, not breaking the bank ways to do this. On the blog today I’m sharing how to create minimal wardrobes for kids on a budget.![An image of my son's closet with boxes up above.](/uploads/20200722_215357_0000_compress16-1.jpg "wadrobe")
+---
+Minimal living and wardrobes for kids on a budget? How does that even work? We have four kids so, I mean, that’s a lot of kids. It’s been important for us to figure out sustainable, not breaking the bank ways to have wadrobes for all of them. On the blog today, I’m sharing about how to create minimal wardrobes for kids without breaking the budget.![An image of my son's closet with boxes up above.](/uploads/20200722_215357_0000_compress16-1.jpg "wadrobe")
 
 ## Shop your home.
 
