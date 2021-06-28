@@ -26,7 +26,9 @@ Oftentimes, we’ve found we’ve had more than enough in our own home. Either f
 
 ## Reduce what’s needed.
 
-In the past, I thought I needed more clothes because our closets were nearly empty, but it was because our clothes were waiting patiently - clean in the laundry room. I didn’t need to fill our closets, I needed to just put them away or get clothes from the [baskets](https://amzn.to/3eUBNWl) when we needed clothes. No guilt in that! I went from a ginormous mountain of clothes to a more reasonable sized one.
+In the past, I thought I needed more clothes because our closets were nearly empty often, but it was because our clothes were waiting patiently - clean in the laundry room. I didn’t need to fill our closets, I just needed to just put them away or get clothes from the [baskets](https://amzn.to/3eUBNWl) when we needed clothes. No guilt in that! I went from a ginormous mountain of clothes to a more reasonable sized one. And then also started to work on a more streamlined laundry routine too. A nice side benefit of that.
+
+* **Related:** 
 
 ## Hand me downs.
 
