@@ -22,7 +22,7 @@ Minimal living and wardrobes for kids on a budget? How does that even work? We h
 
 ## Shop your home.
 
-Oftentimes, we’ve found we’ve had more than enough in our own home. Either from older siblings or from clothes packed away or just extra laying around. Check to see what’s in the closet and make do with what’s there.
+Oftentimes, we’ve found we’ve had more than enough in our own home. Either from older siblings or from clothes packed away or just extra laying around. Check to see what’s in the closet and make do with what’s there first. Shopping your home for creating minimalist wardrobes for your kids will help you save money long term! Seeing what's there first will also prevent you from buying anything you may already have.
 
 ## Reduce what’s needed.
 
