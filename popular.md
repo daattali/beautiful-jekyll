@@ -9,7 +9,7 @@ subtitle: ''
 * [Newest blogs](https://www.simplehomemom.com)
 * [Five Steps to Build Your Simple Summer Wardrobe + my summer capsule wardrobe this year](https://www.simplehomemom.com/five-steps-to-build-your-simple-summer-wardrobe/)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
-* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) - $10 off this week! Email simplehomemom@gmail.com to grab a spot!
+* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) 
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
@@ -18,7 +18,6 @@ subtitle: ''
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
 * [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
-* [One Daily Tidying Routine that Will Save You Money and Time](https://www.simplehomemom.com/one-daily-tidying-routine-that-will-save-you-money-and-time/) + FREEBIE: Create Your Simple Laundry Routine that will Save You Money and Time
 
 ## Homeschooling
 
