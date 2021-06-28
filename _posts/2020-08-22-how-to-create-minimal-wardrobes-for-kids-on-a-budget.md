@@ -22,7 +22,7 @@ Minimal living and wardrobes for kids on a budget? How does that even work? We h
 
 ## Shop your home.
 
-Oftentimes, we’ve found we’ve had more than enough in our own home. Either from older siblings or from clothes packed away or just extra laying around. Check to see what’s in the closet and make do with what’s there first. Shopping your home for creating minimalist wardrobes for your kids will help you save money long term! Seeing what's there first will also prevent you from buying anything you may already have.
+Oftentimes, we’ve found we’ve had more than enough in our own home. Either from older siblings or from clothes packed away or just extra laying around. **Check to see what’s in the closet and make do with what’s there first.** Shopping your home for creating minimalist wardrobes for your kids will help you save money long term! Seeing what's there first will also prevent you from buying anything you may already have.
 
 ## Reduce what’s needed.
 
@@ -32,9 +32,9 @@ In the past, I thought I needed more clothes because our closets were nearly emp
 
 ## Hand me downs.
 
-If you look hard enough, you will find people giving away clothes. How often did I just drop off clothes at the thrift store when if I had a friend ask me, I’d much rather give to a friend who needed some hand me down clothes than donate? Asking around never hurts, right?! I sometimes ask around on Facebook when I’m looking for something like this. Asking around and grabbing some hand me downs will surely help you create minimalist wardrobes for kids without breaking the budget. It's a win all around, I'd say!
+If you look hard enough, you will find people giving away clothes. How often did I just drop off clothes at the thrift store when if I had a friend ask me, I’d much rather give to a friend who needed some hand me down clothes than donate? Asking around never hurts, right?! I sometimes ask around on Facebook when I’m looking for something like this. Asking around and grabbing some hand me downs will surely help you create minimalist wardrobes for kids without breaking the budget. It's a win all around, I'd say! [Here are some tips](https://alphamom.com/parenting/baby/making-the-most-of-a-hand-me-down-wardrobe/) I found on working with hand me downs.
 
-## Host clothing swap parties when it’s not a pandemic.
+## Host clothing swap parties.
 
 I hosted a mega clothing and stuff swap party years back for a bunch of my mom friends that filled our whole basement. I was set for a long time for my kids for clothes! Everyone left happy and we had a great time too.
 
