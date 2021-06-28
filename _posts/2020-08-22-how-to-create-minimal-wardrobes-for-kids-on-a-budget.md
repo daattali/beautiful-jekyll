@@ -26,7 +26,7 @@ Oftentimes, we’ve found we’ve had more than enough in our own home. Either f
 
 ## Reduce what’s needed.
 
-In the past, I thought I needed more clothes because our closets were nearly empty often, but it was because our clothes were waiting patiently - clean in the laundry room. I didn’t need to fill our closets, I just needed to just put them away or get clothes from the [baskets](https://amzn.to/3eUBNWl) when we needed clothes. No guilt in that! I went from a ginormous mountain of clothes to a more reasonable sized one. And then also started to work on a more streamlined laundry routine too. A nice side benefit of that.
+In the past, I thought I needed more clothes because our closets were nearly empty often, but it was because our clothes were waiting patiently - clean in the laundry room. I didn’t need to fill our closets, I just needed to just put them away or get clothes from the [baskets](https://amzn.to/3eUBNWl) when we needed clothes. No guilt in that! I went from a ginormous mountain of clothes to a more reasonable sized one. And then also started to work on a more streamlined laundry routine too. A nice side benefit of that. Not sure how to tackle reducing the clothes? Take a look at my blog, "[Where and How to Start Decluttering: a No Brainer Guide](https://www.simplehomemom.com/where-and-how-to-start-decluttering-a-no-brainer-guide/)."
 
 * **Related:** [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 
