@@ -40,8 +40,8 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  discord: https://discord.com/invite/2VtwvqDKUF
+#  email: "someone@example.com"
+#  discord: https://discord.com/invite/2VtwvqDKUF
 #  github: daattali
   twitter: https://twitter.com/rangersprotocol
 #  patreon: DeanAttali
