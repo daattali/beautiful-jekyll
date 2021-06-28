@@ -1,1 +1,0 @@
- female programmers aren't just office clerks! 

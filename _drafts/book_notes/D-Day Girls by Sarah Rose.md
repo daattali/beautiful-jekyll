@@ -1,0 +1,1 @@
+I took up arms, “quite simply, Colonel, because the men had dropped them.”

@@ -1,7 +1,0 @@
----
-created: 2021-03-29T08:14:01+05:30
-modified: 2021-03-29T08:14:04+05:30
-tags: [work]
----
-
-India is still stuck in 1857 while the rest of the world has moved on. People somehow think that sitting in office until midnight, ignoring all your other commitments like family etc. is somehow a pride-worthy achievement, whereas in reality it just turns you into a burnt-out piece of shit.

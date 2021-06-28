@@ -1,1 +1,0 @@
-When society wants to keep a woman safe, it never chooses to make public spaces safe for her. Instead, it seeks to lock her up at home or at school or college or in the home of a friend.

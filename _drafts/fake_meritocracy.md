@@ -1,1 +1,0 @@
- I'm sorry this happened to you. I'd consider it a dodged bullet, that same person is probably someone you'd have to work with and/or will get promoted in front of you. Eventually they will point to "meritocracy" when their entire team comes from the same type of school and looks the same as him. 

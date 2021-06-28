@@ -1,1 +1,0 @@
-grief burns but does not consume; instead, it makes the heart vulnerable to further suffering.

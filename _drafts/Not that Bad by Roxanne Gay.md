@@ -1,1 +1,0 @@
-Buying into the notion of not that bad made me incredibly hard on myself for not “getting over it” fast enough as the years passed and I was still carrying so much hurt, so many memories.

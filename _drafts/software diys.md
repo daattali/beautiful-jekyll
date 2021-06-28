@@ -5,3 +5,5 @@ tags: [todo]
 ---
 
 make a diy git journal
+clone new pipe and make it more no surf.
+Cross out the watched videos / swipe the videos you don't want to watch in feed. 
