@@ -32,7 +32,7 @@ In the past, I thought I needed more clothes because our closets were nearly emp
 
 ## Hand me downs.
 
-If you look hard enough, you will find people giving away clothes. How often did I just drop off at the thrift store when if I had a friend ask me, I’d much rather give to a friend who needed some hand me down clothes than donate? Asking around never hurts, right?! I sometimes ask around on Facebook when I’m looking for something like this.
+If you look hard enough, you will find people giving away clothes. How often did I just drop off clothes at the thrift store when if I had a friend ask me, I’d much rather give to a friend who needed some hand me down clothes than donate? Asking around never hurts, right?! I sometimes ask around on Facebook when I’m looking for something like this. Asking around and grabbing some hand me downs will surely help you create minimalist wardrobes for kids without breaking the budget. It's a win all around, I'd say!
 
 ## Host clothing swap parties when it’s not a pandemic.
 
