@@ -6,19 +6,21 @@
 # --- Required options --- #
 
 # Name of website
-title: rangersprotocol Website
+title: Rangers Protocol 
+          Foundation
 
 # Your name to show in the footer
-author: Some Person
+author: © 2021 All Rights Reserved, Rangers Protocol Foundation.
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  White Paper: "White Paper"
+    - Coming Soon!
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - DOCS: "https://rangersprotocol.gitbook.io/rangersprotocol/"
+    - WEBSITE: "https://www.rangersprotocol.com/"
+ 
 
 # --- Logo --- #
 
@@ -40,12 +42,12 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
-#  medium: yourname
+  discord: https://discord.com/invite/2VtwvqDKUF
+#  github: daattali
+  twitter: https://twitter.com/rangersprotocol
+#  patreon: DeanAttali
+#  youtube: c/daattali
+  medium: https://medium.com/rangersprotocol
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -57,7 +59,7 @@ social-network-links:
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-#  telegram: yourname
+  telegram:  https://t.me/RangersProtocol
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
@@ -65,7 +67,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
@@ -78,7 +80,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+# url-pretty: "MyWebsite.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
