@@ -6,9 +6,9 @@ subtitle: ''
 ---
 # The Simple Meal Planning Guide
 
-The Simple Meal Planning Guide will help you never to become stumped with meal planning again (when/if applied).
+_The Simple Meal Planning Guide will help you never to become stumped with meal planning again (when/if applied)._
 
-**This guide is for you if…**
+#### This guide is for you if…
 
 * you often feel stumped and uninspired with meal planning
 * you often dread mealtimes
@@ -17,11 +17,11 @@ The Simple Meal Planning Guide will help you never to become stumped with meal p
 * you often google meal planning type ideas
 * you can’t seem to find a system for meal planning that sticks
 
-If some or all of these sounds like you, this guide will may be your best friend. It is going to be full of tips and ideas. It will have all kinds of ways to get yourself motivated and inspired. You will never again question yourself, “What's for dinner?” if you follow through with creating a routine and a plan that works for you and your family. There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works.
+If some or all of these sound like you, this **Simple Meal Planning Guide** may just be your best friend. It is full of tips and ideas. It has all kinds of ways to get yourself motivated and inspired. You will never again question yourself, “_What's for dinner?_” if you follow through with creating a routine and a plan that works for you and your family. There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works.
 
-Lastly, this simple meal planning guide is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
+Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
 
-## Inside
+### What you'll find in the guide
 
 * $14.99 USD, $9.99 introductory pricing (click through to the download link)
 * X pages
