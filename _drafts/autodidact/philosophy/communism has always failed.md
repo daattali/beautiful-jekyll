@@ -10,3 +10,5 @@ Some responses to the claim "communism has always failed!"
 > Failed for whom?
 > Has capitalism served post-"communist states" better?
 > You're comparing 150 years since Marx to 500+ since capitalism began." 
+
+[[philosophy]]

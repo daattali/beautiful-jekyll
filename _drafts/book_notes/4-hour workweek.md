@@ -16,7 +16,7 @@ Reality is negotiable. Outside of science and law, all rules can be bent or brok
 
 techniques for cultivating selective ignorance, developing a low-information diet, and otherwise ignoring the unimportant.
 
-Liberation is not about cheap travel; it is about forever breaking the bonds that confine you to a single location.
+Liberation is not about cheap travel; it is about forever breaking the bonds that confine you to a [[single]] location.
 
 NR:To have others work for you.
 
@@ -76,7 +76,7 @@ Most people will choose unhappiness over uncertainty.
 
 I realized that on a scale of 1–10, 1 being nothing and 10 being permanently life-changing, my so-called worst-case scenario might have a temporary impact of 3 or 4.
 
-There’s no difference between a pessimist who says, “Oh, it’s hopeless, so don’t bother doing anything,” and an optimist who says, “Don’t bother doing anything, it’s going to turn out fine anyway.” Either way, nothing happens.
+There’s no [[difference]] between a pessimist who says, “Oh, it’s hopeless, so don’t bother doing anything,” and an optimist who says, “Don’t bother doing anything, it’s going to turn out fine anyway.” Either way, nothing happens.
 
 Pure hell forces action, but anything less can be endured with enough clever rationalization.
 

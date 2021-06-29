@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [work]
 ---
-
+[[burnout]]
  You and me, I think we're the exact fucking same.
 
 I have an hour long commute. I have to wake up at 5 am, leave at 6 am, and be in by 7. I leave at 3 pm, and make it home at 4. I have to go to bed at 9 pm in order to wake up the next day not feeling like tired shit because the human body is a disgustingly inefficient thing.

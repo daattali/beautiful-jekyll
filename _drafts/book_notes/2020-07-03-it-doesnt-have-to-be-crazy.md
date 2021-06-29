@@ -140,7 +140,7 @@ There’s an uncanny correlation between the companies with these kinds of benef
 
 we don’t offer gotcha benefits.
 
-Open-plan offices suck at providing an environment for calm, creative work done by professionals who need peace, quiet, privacy, and space to think and do their best.
+Open-plan offices suck at providing an environment for calm, creative work done by professionals who need peace, [[quiet]], privacy, and space to think and do their best.
 
 Rather than thinking of it as an office, we think of it as a library. In fact, we call our guiding principle: Library Rules.
 

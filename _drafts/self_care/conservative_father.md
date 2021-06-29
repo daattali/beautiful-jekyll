@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [feminism]
 ---
-
+[[feminism]]
  Something like that happened to me with my father.
 
 Growing up, my father was a fun guy, you know? He was the typical dad, kinda nerdy and funny. He had an abundance of dad jokes and let me sit on his shoulders and tucked me into bed every night and wiped my tears and held my tiny hand in his large, weathered one and did every single thing I'd ever want a dad to do.

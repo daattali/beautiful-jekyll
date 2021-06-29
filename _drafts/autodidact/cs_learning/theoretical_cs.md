@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [books]
 ---
-
+[[cs_learning]]
  I feel theoretical books are far more important than pop/hard non fiction.
 
 - **Concrete Mathematics**: A Foundation for Computer Science by Knuth et al.

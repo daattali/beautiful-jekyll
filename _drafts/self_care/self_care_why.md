@@ -4,7 +4,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [comfy, self-dev]
 ---
-
+[[self_care]]
  Hey OP, are you OK? 
 
 I made this account about a year ago during the absolute worst period of my life. I had to, through little fault of my own, restart my life using one outfit I had on, a wallet with 79 cents in it, and my driver’s license and social security card. These were my assets. All the physical and the financial ones were gone (married, joint accounts, we were renting a house, I came back one day to literally nothing. He took my bras and underwear! Why couldn’t I get like 1/50th of the collective assets? This was stupider than it had to be).

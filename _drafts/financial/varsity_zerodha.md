@@ -4,7 +4,7 @@ modified: 2021-04-01T18:07:11+05:30
 tags: [learning]
 ---
 
-
+[[financial]]
 # Module 1
 <details><summary>why invest?</summary>
 <ul>

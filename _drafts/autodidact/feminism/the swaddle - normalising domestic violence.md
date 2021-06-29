@@ -2,6 +2,7 @@
 created: 2021-05-16T14:04:44+05:30
 modified: 2021-05-16T14:11:44+05:30
 ---
+[[feminism]]
 
 the swaddle normalising domestic violence
 manusmriti equated women to animals

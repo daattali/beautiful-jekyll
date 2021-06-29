@@ -3,7 +3,7 @@ created: 2021-04-23T12:54:03+05:30
 modified: 2021-04-23T12:54:27+05:30
 tags: [tech]
 ---
-
+[[cs_learning]]
 https://www.reddit.com/r/sysadmin/comments/mwe43u/containers_docker_oh_my_an_intro_to_docker_for/
 
 Hello, and welcome to my TED talk about containers and why you, as a sysadmin, will find them to be extremely handy. This intro is meant for system administrators who haven't dipped their toes into the Docker waters just yet. This will focus on **Linux Systems** primarily.

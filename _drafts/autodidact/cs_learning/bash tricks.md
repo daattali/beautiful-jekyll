@@ -20,3 +20,4 @@ That allows me to see what's happening in the middle steps of the pipeline.
 I ended up compiling a list of tricks like that in https://raimonster.com/scripting-field-guide/ , in case anyone is interested (and feedback is appreciated)
 
 https://github.com/akavel/up
+[[cs_learning]]

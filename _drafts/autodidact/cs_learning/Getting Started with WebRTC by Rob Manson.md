@@ -1,3 +1,4 @@
+[[cs_learning]]
 important to understand that WebRTC is not really a single technology, but more a collection of standards and protocols,
 
 new XHR API enabled web developers to create web applications that didn't need to navigate to a new page to update their content or user interface. It allowed them to utilize server-based web services that provided access to structured data and snippets of pages or other content.

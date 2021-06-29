@@ -5,3 +5,5 @@ tags: [feminism]
 ---
 
  Ostracized her after she didn't accept to be treated like an object typical tech male bro behavior 
+[[feminism]]
+[[Brotopia by Emily Chang]]

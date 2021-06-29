@@ -5,3 +5,4 @@ tags: [checkout]
 ---
 
  Michel Foucault: Beyond Good and Evil | 1993 Documentary explores the philosopher and his complex and controversial life. 
+[[checkout]]

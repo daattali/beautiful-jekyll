@@ -3,6 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [feminism]
 ---
+[[feminism]]
 
  It's evidence that this messaging works exactly as intended. True equality will never be more profitable than the current system which relies on a certain degree of exploitation, whether that be of borderline slave labor in poorer countries, or of black culture in areas like music on home soil. 
 

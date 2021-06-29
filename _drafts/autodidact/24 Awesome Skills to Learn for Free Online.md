@@ -3,7 +3,7 @@ created: 2021-04-03T12:20:03+05:30
 tags: [learning]
 modified: 2021-04-03T12:20:31+05:30
 ---
-
+[[learning]]
 https://www.reddit.com/r/lifehacks/comments/1uex6v/24_awesome_skills_to_learn_for_free_online/cehgzqb/
 
 Here's the links and descriptions, sans pictures:

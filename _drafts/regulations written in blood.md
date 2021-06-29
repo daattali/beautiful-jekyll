@@ -3,7 +3,8 @@ created: 2021-03-26T15:47:59+05:30
 modified: 2021-03-26T15:48:22+05:30
 tags: [feminism]
 ---
-
+[[feminism]]
+[[philosophy]]
 Image Transcription: Tumblr Post
 
 themightyglamazon:

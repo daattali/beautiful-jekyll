@@ -5,3 +5,4 @@ tags: [feminism]
 ---
 
 wish the world wasn't so male centric, that feminists actually cared about finding structural solutions instead of forcing women to become copies of men to achieve gender parity.
+[[feminism]]

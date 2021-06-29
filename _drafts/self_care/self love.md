@@ -3,7 +3,7 @@ created: 2021-04-20T20:45:15+05:30
 tags: [self-dev]
 modified: 2021-04-20T20:45:32+05:30
 ---
-
+[[self_care]]
 :cherry_blossom:No arguing with yourself.
 
 :cherry_blossom:No feeling guilty for taking time to rest.

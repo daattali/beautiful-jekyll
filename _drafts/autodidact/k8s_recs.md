@@ -3,7 +3,8 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [tech]
 ---
-
+[[learning]]
+[[Kubernetes]]
  Depends on your use of k8s.
 
 If you're looking to dev in k8s (i.e run your apps and someone else manages it.

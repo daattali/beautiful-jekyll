@@ -3,7 +3,8 @@ created: 2021-03-26T18:50:12+05:30
 modified: 2021-03-26T18:50:28+05:30
 tags: [self-dev]
 ---
-
+[[self_care]]
+[[productivity]]
 # Leena norms how to make decisions
 
 ranked pro con list

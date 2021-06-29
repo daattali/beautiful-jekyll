@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [books]
 ---
-
+[[books]]
  I've got complicated emotions. When I first read Wizards First Rule when it came out, I was a teenager tired of being forced to read things like The Great Gatsby and Great Expectations. It was so edgy at the time for a mainstream fantasy book. BDSM Sex? Threatening to kill a snotty child? Sign me up!
 
 As the books got more... philosophical, I started losing more and more interest. As I read interview after interview where Terry Goodkind came across as... not so great, I lost even more. Of course, I'll never really know if it was due to all that or simply growing up and losing my teenage edgelord status.Towards the end of my interest, I rushed to the book store after a business trip to stand in line to get some books signed by him. I'm not really sure why; maybe just out of pure nostalgia.

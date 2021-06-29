@@ -5,3 +5,4 @@ tags: [self-dev]
 ---
 
  I can absolutely attest to being around people who were love-starved and then subsequently self-sabotaging or otherwise destructive. In a softer sense, if I have felt rejected I have felt peace in sort of burning bridges to find myself. 
+[[self_care]]

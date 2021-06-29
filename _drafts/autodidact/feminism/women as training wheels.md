@@ -5,3 +5,4 @@ tags: [feminism]
 ---
 
 We treat women and girls like training wheels to help boys and men grow up, and not as individuals with our own desires.
+[[feminism]]

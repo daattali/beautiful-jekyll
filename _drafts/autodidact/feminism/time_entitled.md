@@ -3,6 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [feminism]
 ---
+[[feminism]]
 
  Also, people who approach you on the street are self-sorted as people who feel entitled to your time and are already comfortable violating social norms, and have time to bother you, and it's not a coincidence that they decided to approach a woman alone instead of someone else. I am naturally a polite and cooperative person. When someone stops me for directions, what time it is, which aisle might the bread be, etc, I normally want to answer that question with a non-rude facial expression and tone of voice, and *then I expect them to go away.* What usually happens is that I am followed and verbally harassed. The initial interaction is testing a boundary, and the polite response is taken as a weakness and an invitation. The men then invariably get hostile when you do not want to continue to entertain them. I will not acknowledge a stranger saying a single thing to me in public now. I don't feel good about that, but it's necessary where I currently live. Go ask an old man which aisle has the bread.
 

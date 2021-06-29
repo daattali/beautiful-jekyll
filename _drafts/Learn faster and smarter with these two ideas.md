@@ -3,6 +3,8 @@ created: 2021-04-06T18:38:26+05:30
 tags: [productivity]
 modified: 2021-04-06T18:38:50+05:30
 ---
+[[learning]]
+[[productivity]]
 Sometimes, I can't believe that I spent four years in university writing proofs for macroeconomic theories, building quantitative financial models, and learning about why people love Apple.
 
 I can easily say that the knowledge required for my work today is vastly different from what I studied back then.

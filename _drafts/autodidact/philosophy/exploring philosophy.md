@@ -2,7 +2,7 @@
 created: 2021-05-30T00:36:01+05:30
 modified: 2021-05-30T00:36:03+05:30
 ---
-
+[[philosophy]]
 Exploring philosophy is not like mathematics. You should start with ideas that are more familiar to you, and follow links in bibliography/and footnotes to reach previous philosophers on which Derrida and Deleuze, or Zizek built their ideas.
 Always get the book with the most footnotes, and follow them if the idea fascinates you and is relevant to your current state of knowledge.
 Don't try to "understand everything" at once. Focus on the bits that speak to you personally, and after years you will get the entirety anyway.

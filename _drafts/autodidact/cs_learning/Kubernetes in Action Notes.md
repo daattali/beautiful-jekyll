@@ -1,3 +1,4 @@
+[[cs_learning]]
 # Kubernetes cluster arch
 types of nodes
 - master

@@ -7,3 +7,4 @@ tags: [feminism]
 deter bigotry by doling consequences prestige and paychecks
 
 I'm sorry doesn't cut it when something you want on the line
+[[feminism]]

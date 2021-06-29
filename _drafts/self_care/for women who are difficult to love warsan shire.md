@@ -2,7 +2,9 @@
 created: 2021-05-30T17:25:30+05:30
 modified: 2021-05-30T17:25:48+05:30
 ---
-
+[[self_care]]
+[[motivation]]
+[[poetry]]
 for women who are difficult to love warsan shire
 You are a horse running alone
 

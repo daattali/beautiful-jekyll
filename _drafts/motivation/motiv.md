@@ -5,3 +5,4 @@ tags: [self-dev]
 ---
 
  Never be your own critic. You are beautiful. 
+[[motivation]]

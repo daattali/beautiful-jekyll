@@ -3,7 +3,7 @@ created: 2021-02-01T13:35:24+05:30
 modified: 2021-02-01T13:35:29+05:30
 tags: [tech]
 ---
-
+[[psychology]]
 [[user domestication]] almost always follows the same three steps:
 
 1. A high level of dependence given from users to a software vendor

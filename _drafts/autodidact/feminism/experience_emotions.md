@@ -5,3 +5,4 @@ tags: [feminism]
 ---
 
  Right? Of course she was emotional, people typically experience emotions when other people are jerks to them! 
+[[feminism]]

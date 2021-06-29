@@ -4,7 +4,7 @@ modified: 2021-04-01T18:07:11+05:30
 tags: [self-dev]
 ---
  To hate snakes.
-
+[[learning]]
 EDIT: Looks like I have to address some comments.
 
 Humans are not born with an innate fear of snakes, they're born to easily develop that fear. And the way human culture treats snakes, with them almost always being depicted as scary/villainous, plays a big role in how that develops in impressionable children.

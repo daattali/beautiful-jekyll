@@ -3,7 +3,8 @@ created: 2021-03-29T08:51:47+05:30
 modified: 2021-03-29T08:52:12+05:30
 tags: [productivity]
 ---
-
+[[productivity]]
+[[self_care]]
 # productivity obsession tferg
 
 - Hello, my dudes, my name is Tiffany,

@@ -2,7 +2,7 @@
 created: 2021-05-22T02:07:03+05:30
 modified: 2021-05-22T02:12:11+05:30
 ---
-
+[[philosophy]]
 laptops for watching movies? 
 art
 private experience

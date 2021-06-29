@@ -1,3 +1,5 @@
+[[cs_learning]]
+
 A lambda expression is said to be in _normal form_ if it cannot be reduced any further, meaning that the expression no longer contains any function applications. More formally, a reducible expression is called a _redex_, and a lambda expression is in normal form when it contains no more redexes.
 
 Redex

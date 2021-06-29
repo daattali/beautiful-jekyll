@@ -3,7 +3,7 @@ created: 2021-01-31T15:14:05+05:30
 modified: 2021-01-31T15:14:08+05:30
 tags: [psych]
 ---
-
+[[psychology]]
 When people hear two things in conjunction with one another, they form a little unconscious link between them. 
 
 So, you don't have to believe something as fucking absurd as Jewish Space Lasers causing California wild fires. But the brain does internalize a link between something bad - the wild fires - with something else - Jews. It's conditioning. It doesn't happen through one absurdity. But it is a constellation of similar sentiments, "jokes", conspiracy theories, and other subtle methods of deumanization.

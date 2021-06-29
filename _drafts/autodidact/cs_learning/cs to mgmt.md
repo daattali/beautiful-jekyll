@@ -3,7 +3,7 @@ created: 2021-03-28T07:43:49+05:30
 modified: 2021-03-28T07:43:57+05:30
 tags: [work]
 ---
-
+[[work_self_dev]]
 # cs to mgmt
 
 If you are a senior who has done a lot of mentoring and have a keen interest in helping people grow, then it could be lateral move with a bit of a learning curve.

@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [feminism]
 ---
-
+[[feminism]]
  Revising a comment I made in the fantasy artist phase of this wave:
 
 These stories are so ubiquitous we really need to be thinking not only about the individuals but also about what encourages and enables this stuff to happen and how we an change it from the top down. Like, is there a way to have media conventions that do not create the environment for this stuff to happen?

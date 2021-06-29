@@ -3,7 +3,7 @@ tags: [tech]
 created: 2021-04-08T09:34:41+05:30
 modified: 2021-04-08T09:34:42+05:30
 ---
-
+[[cs_learning]]
 you're starting out, and want to get into back-end, I'd recommend Go. Go is very hot right now, and I personally like some features that are baked in.
 As for node.js, the syntax is ECMAScript only. It's almost similar to how it works in the browser, but your mental model is different when writing server side code. 
 

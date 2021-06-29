@@ -3,7 +3,7 @@ tags: [learning]
 created: 2021-04-06T06:08:26+05:30
 modified: 2021-04-06T06:08:30+05:30
 ---
-
+[[learning]]
 This list reflects the most rigorous courses I could find
 
 ​

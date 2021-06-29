@@ -3,7 +3,7 @@ created: 2021-04-05T09:58:03+05:30
 tags: [work]
 modified: 2021-04-05T09:58:21+05:30
 ---
-
+[[work]]
 In theory, you're correct, choice would make everyone happy.
 
 In practice, it would kill the office.

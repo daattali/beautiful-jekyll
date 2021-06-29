@@ -6,3 +6,4 @@ tags: [feminism]
 # women trivialise who they are
 
 ![](https://i.redd.it/R87EUSRKBRP61.JPG)
+[[feminism]]

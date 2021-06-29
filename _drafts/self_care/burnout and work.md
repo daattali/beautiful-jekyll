@@ -3,7 +3,7 @@ tags: [work]
 created: 2021-04-17T22:34:41+05:30
 modified: 2021-04-17T22:34:43+05:30
 ---
-
+[[burnout]]
 As well as once the exhaustion and fatigue set in, which we all know makes people grumpy, we don't want to do anything or be near anyone. We want solitude, peace, and sleep. 
 
 We get none of it... instead we get a thousand questions as to why we're so grumpy and never want to go anywhere, once again reassuring we won't get that peace. 

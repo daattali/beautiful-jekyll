@@ -3,7 +3,7 @@ created: 2021-04-08T06:35:42+05:30
 tags: [productivity]
 modified: 2021-04-08T06:36:10+05:30
 ---
-
+[[learning]]
 https://www.reddit.com/r/productivity/comments/mm1wsv/unconventional_productivity_tips_found_on_reddit/
 
 This mindset has helped me a lot when it comes to making improvements these last few years. The first and most important part of this mindset is that almost everything can be trained and improved. At its core, it's similar to the growth mindset, but I find there are some other distinct benefits to using the muscle analogy.

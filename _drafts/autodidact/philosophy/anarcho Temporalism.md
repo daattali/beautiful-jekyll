@@ -7,3 +7,4 @@ tags: [philosophy]
 # anarcho Temporalism
 
 I present Anarcho Temporalism, an ideology for those who wish to abolish time itself and the innate heirachy born it creates
+[[philosophy]]

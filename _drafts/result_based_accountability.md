@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [feminism]
 ---
-
+[[feminism]]
  I've never seen it articulated this accurately before.
 
 They then take accountability based on results.

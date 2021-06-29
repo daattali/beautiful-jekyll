@@ -2,7 +2,7 @@
 created: 2021-05-13T11:51:49+05:30
 modified: 2021-05-13T12:00:45+05:30
 ---
-
+[[self_care]]
 exclusion for the sake of exclusivity
 
 Facing constant rejection in

@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [learning]
 ---
-
+[[learning]]
  I haven't seen too many people put together an actual plan but here is how I did it for 4 years and across two different countries (decided to move country in this time period)
 
 1. Meal prep - 4 hours on a Sunday saves you  a bunch of time in the week.

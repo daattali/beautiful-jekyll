@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [writing]
 ---
-
+[[cs_learning]]
 scaling janus
 - https://webrtchacks.com/sfu-cascading/
 - https://www.meetecho.com/blog/data-channels-broadcasting-with-janus/streaming2/

@@ -3,10 +3,10 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [learning]
 ---
-
+[[learning]]
  ನಮಸ್ಕಾರ - This week's language of the week: Kannada 
  
- Kannada ( ಕನ್ನಡ [ˈkʌnːəɖɑː] ) is a Dravidian language spoken predominantly by Kannada people in the South Indian state of Karnataka. With about 50 million speakers across the globe [L1 users: 37,739,040. L2 users: 9,000,000]. Kannada ranks 32 in the list of most spoken languages in the world. It is one of the scheduled languages of India and the official and administrative language of the state of Karnataka.
+ [[Kannada]] ( ಕನ್ನಡ [ˈkʌnːəɖɑː] ) is a Dravidian language spoken predominantly by Kannada people in the South Indian state of Karnataka. With about 50 million speakers across the globe [L1 users: 37,739,040. L2 users: 9,000,000]. Kannada ranks 32 in the list of most spoken languages in the world. It is one of the scheduled languages of India and the official and administrative language of the state of Karnataka.
  History:
  
  Pre-old Kannada (Purava Halegannada) has a history of over 2000 years where the Ashoka rock edict found at Brahmagiri (dated to 230 BC) has been suggested to contain words in identifiable Kannada. 'Chariton mime', a Greek theatre play from the 1st century AD, refers to Kannada being a language that was spoken in the Udupi-Malabar section of India.

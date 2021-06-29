@@ -1,4 +1,5 @@
 # 10 builtin hooks
+[[cs_learning]]
 previosuly state was tightly coupled with a class constructor (component)
 complex nested tree of components
 

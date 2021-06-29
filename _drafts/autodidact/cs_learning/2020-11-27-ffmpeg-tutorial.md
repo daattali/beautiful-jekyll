@@ -4,7 +4,7 @@ title: FFmpeg Tutorial
 tags: [tech]
 published: false
 ---
-
+[[cs_learning]]
 basic structure of commands: 
 ```
 [command] [input] [flags/actions] [output]

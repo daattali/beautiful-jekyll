@@ -2,6 +2,7 @@
 created: 2021-05-16T14:16:22+05:30
 modified: 2021-05-16T14:27:16+05:30
 ---
+[[feminism]]
 
 the swaddle women aren't funny
 

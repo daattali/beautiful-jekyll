@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [work]
 ---
-
+[[work_self_dev]]
  If this is a career position, here is my advice
 
 1) Learn as much as you can.  If they offer paying for education, take advantage of it.

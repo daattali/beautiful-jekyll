@@ -11,3 +11,4 @@ Men will come and go, but many of your close woman  friendships are for a lifeti
 I’ve literally watched women change their life with just a shred of support and care from other women when they had no hope. 
 
 Turning women on their own kind is a divide and conquer technique. That is why the “not like other girls” trope is so toxic when men say it to you. 
+[[feminism]]

@@ -3,7 +3,7 @@ created: 2021-04-01T13:48:38+05:30
 modified: 2021-04-01T18:13:02+05:30
 tags: [work]
 ---
-
+[[work]]
 I think this is mostly driven by [[Management]]'s insecurities / needs to see their "subjects" right in front of them and their typical need to "show" their activities in an obvious/noisy way. Typical managers tend to be extroverts and find allies in other extroverts or in people who happen to work in/enjoy the social interaction in office. Unfortunately there is not much representation of introverts in the decision making circle so those people will be once more thrown under the "quality-of-face-to-face-interactions" bus. Engineering-driven, low-politics, not-so-large orgs might do things a bit differently.
 
 Curious, do the members of your team have activities, hobbies, and relationships they are involved with outside of work? From what I have seen the folks itching to get back to the office are the ones that don't have many outlets outside of work.

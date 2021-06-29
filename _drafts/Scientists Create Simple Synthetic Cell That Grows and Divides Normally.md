@@ -3,7 +3,7 @@ created: 2021-04-01T14:31:29+05:30
 modified: 2021-04-01T18:09:52+05:30
 tags: [tech]
 ---
-
+[[science]]
 [![An illustration of a green sphere made of puzzle pieces against a dark background.](https://www.nist.gov/sites/default/files/styles/480_x_480_limit/public/images/2021/03/25/21MML004_SEM_puzzle_simple_cell_highest_res.jpg?itok=5mMIaiFQ)](https://www.nist.gov/sites/default/files/images/2021/03/25/21MML004_SEM_puzzle_simple_cell_highest_res.jpg)
 
 Credit: Copyright Emily Grace

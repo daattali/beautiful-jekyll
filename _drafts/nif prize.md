@@ -3,7 +3,7 @@ created: 2021-04-01T18:04:35+05:30
 modified: 2021-04-01T18:07:32+05:30
 tags: [books]
 ---
-
+[[book_recs]]
 # nif prize
 
 The 2020 longlist is:

@@ -5,3 +5,4 @@ tags: [self-dev]
 ---
 
 gamblers mentality that you will win it back eventually
+[[financial]]

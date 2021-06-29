@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [work]
 ---
-
+[[work]]
  Because they are not product companies and survive on long term maintenance contracts for their clients They don't care about what code goes in their client system and client wants to get job done with minimum amount . Their hiring process reflects the attitude, a good programmer would not stay with them for long.
 
 Programmers are one of the highest paid professionals in Silicon valley companies and can easily take a Doctor, or Lawyers salary.

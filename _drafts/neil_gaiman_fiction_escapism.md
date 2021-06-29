@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [books]
 ---
-
+[[books]]
  Neil Gaiman on fiction and escapism:
 
 >Fiction can show you a different world. It can take you somewhere you've never been. Once you've visited other worlds, like those who ate fairy fruit, you can never be entirely content with the world that you grew up in. Discontent is a good thing: discontented people can modify and improve their worlds, leave them better, leave them different.  

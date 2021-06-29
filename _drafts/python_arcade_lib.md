@@ -6,3 +6,5 @@ tags: [checkout]
 ---
  AHHHH I SPENT SO LONG AT THIS AND PEOPLE STILL USE PYGAME INSTEAD:
 http://arcade.academy 
+[[checkout]]
+[[cs_learning]]

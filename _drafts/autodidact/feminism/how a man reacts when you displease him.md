@@ -5,3 +5,4 @@ tags: [feminism]
 ---
 
 ![Image](https://i.redd.it/9iwonna3knf61.png)
+[[feminism]]

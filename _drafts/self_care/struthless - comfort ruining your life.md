@@ -2,7 +2,8 @@
 created: 2021-06-11T12:18:34+05:30
 modified: 2021-06-11T12:27:01+05:30
 ---
-
+[[self_care]]
+[[productivity]]
 complacency feeling OK with not living up to your potential 
 why we do it
 journaling exercise 

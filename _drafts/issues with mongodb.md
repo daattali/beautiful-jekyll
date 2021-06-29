@@ -3,7 +3,8 @@ created: 2021-02-02T00:09:24+05:30
 modified: 2021-02-02T00:12:36+05:30
 tags: [tech]
 ---
-
+[[mongoDB]]
+[[cs_learning]]
 # don't use mongodb??
 
 Once we started doing ugly MongoDB joins manually in the Diaspora code, we knew it was the first sign of trouble. It was a sign that our data was actually relational, that there was value to that structure, and that we were going against the basic concept of a document data store.

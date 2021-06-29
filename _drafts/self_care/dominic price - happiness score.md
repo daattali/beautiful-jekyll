@@ -2,7 +2,8 @@
 created: 2021-05-21T22:41:45+05:30
 modified: 2021-05-21T22:45:28+05:30
 ---
-
+[[self_care]]
+[[motivation]]
 personal moral inventory scores (-1 0 1)
 productivity and profit
 people

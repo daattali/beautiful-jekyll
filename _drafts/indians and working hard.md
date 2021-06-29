@@ -3,7 +3,9 @@ tags: [writing]
 created: 2021-04-24T22:12:29+05:30
 modified: 2021-04-24T22:19:30+05:30
 ---
-
+[[work]]
+[[philosophy]]
+[[burnout]]
 why do Indians work so hard
 how much of it is bullshit work
 how much of it is related to the idea that work is worship

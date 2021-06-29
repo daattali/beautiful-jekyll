@@ -8,3 +8,4 @@ UX processes in many organizations these days amount to little more than UX thea
 businesses cherry-picked the bits of UX most compatible with their existing agendas and eschewed the parts that might lead to uncomfortable questions that could influence more than the color of a button on a screen.
 
 Businesses want scaling. And foundational UX work doesn’t scale. It doesn’t lend itself to predictable, repeatable processes and generic cookie-cutter roles. It can’t, because by definition it deals with unknown, slippery, hard-to-define problems that characterize the leading edge of an organically evolving business.
+[[cs_learning]]

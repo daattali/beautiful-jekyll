@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [learning]
 ---
-
+[[learning]]
  The quick and dirty answer is that modern historians and anthropologists are quite critical of, if not borderline/outright hostile to, *Guns, Germs, and Steel*. Put bluntly, historians and anthropologists believe Diamond plays fast and loose with history by generalizing highly complex topics to provide an ecological/geographical determinist view of human history that, in the end, paradoxically supports the very racism/Eurocentricism he is attempting to argue against. There is a reason historians avoid grand theories of human history: those ["just so stories"](http://en.wikipedia.org/wiki/Just-so_story) don't adequately explain human history. 
 
 Given our natural tendency to avoid speaking with authority on topics outside our expertise, academic analysis of *GG&S* is somewhat wanting. To work around this issue, /u/snickeringshadow and I constructed several point by point refutations in another history-related community. I will quote a bit from both analyses because they illustrate many of the critical issues permeating *GG&S*, though I'll just discuss three of the issues.

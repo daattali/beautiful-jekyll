@@ -3,6 +3,7 @@ created: 2021-03-27T23:53:24+05:30
 modified: 2021-03-28T07:36:28+05:30
 tags: [feminism]
 ---
+[[feminism]]
 
 # blackface vs drag
 

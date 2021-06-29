@@ -7,3 +7,4 @@ tags: [feminism]
 ![Image](image_picker925979582803439946.jpg)
 
 ecofeminism
+[[feminism]]

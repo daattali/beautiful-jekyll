@@ -3,6 +3,7 @@ created: 2021-04-20T20:19:33+05:30
 tags: [work]
 modified: 2021-04-20T20:19:51+05:30
 ---
+[[feminism]]
 
  made an inspiring post about careers for women in engineering and in the comments a question about setting boundaries at the workplace arised.
 

@@ -3,7 +3,7 @@ created: 2021-04-01T18:06:24+05:30
 modified: 2021-04-01T18:07:11+05:30
 tags: [checkout]
 ---
-
+[[checkout]]
  What are your favorite YouTube Channels/ Videos about Bangalore and Karnataka in general? 
  
  Food Lovers - Kripal Amaana travels across several locations tasting and reviewing and nowadays promoting failing Businesses also. Well shot and informative videos that go behind the Kitchen also.

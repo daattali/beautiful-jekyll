@@ -5,3 +5,4 @@ tags: [feminism]
 ---
 
  Capitalism has put a lot of effort into emotionally tying your job to your sense of self-worth. Never feel guilt nor shame about taking time off for your health. 
+[[work_self_dev]]
