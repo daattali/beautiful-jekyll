@@ -1,24 +1,22 @@
 ---
-layout: post
-title: Four Tips to Create Minimal Wardrobes for Kids
-subtitle: ""
-cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/wardrobe.jpg"
-share-img: "/assets/img/path.jpg"
+post: post
 tags:
-  - decluttering your wadrobe
-  - capsule wadrobe
-  - minimal wardrobe
-  - minimal wardrobe for kids
-  - capsule wardrobe for kids
-  - creating mimimal wardrobes for kids
-  - decluttering kids clothes
-  - simple wardrobe for kids
-description: Tips for creating simple minimal wadrobes for kids. It doesn't need to be expensive.
-redirect_from:
-  - 2020-08-24-four-easy-ways-to-create-a-minimalist-jewelry-collection
----
+- capsule wardrobe
+- simple wardrobe
+- capsule wardrobe for kids
+thumbnail-img: "/uploads/headshot.jpg"
+cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
+readtime: true
+comments: true
+show-avatar: true
+title: 4 Tips to Create Minimal Wardrobes for Kids
+description: Tips for creating simple minimal wadrobes for kids. It doesn't need to
+  be expensive.
+subtitle: ''
+share-img: ''
+redirect_from: []
 
+---
 Minimal living and wardrobes for kids? How does that even work? We have four kids so, I mean, that’s a lot of kids, so it’s going to be a lot of clothes even with minimal wardrobes. But we’ve learned steps that have certainly helped. On the blog today I’m sharing four steps to create minimal wardrobes for kids.
 
 ![An image of my son's closet.](/uploads/wardrobe.jpg "wadrobe")
