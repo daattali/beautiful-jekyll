@@ -8,8 +8,9 @@ subtitle: ''
 
 * [Newest blogs](https://www.simplehomemom.com)
 * [Five Steps to Build Your Simple Summer Wardrobe + my summer capsule wardrobe this year](https://www.simplehomemom.com/five-steps-to-build-your-simple-summer-wardrobe/)
+* [How to Create Minimal Wardrobes for Kids on a Budget](https://www.simplehomemom.com/how-to-create-minimal-wardrobes-for-kids-on-a-budget/)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
-* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) 
+* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
