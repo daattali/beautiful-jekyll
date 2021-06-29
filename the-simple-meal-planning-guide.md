@@ -21,7 +21,7 @@ If some or all of these sound like you, this **Simple Meal Planning Guide** may 
 
 Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
 
-### What you'll find in the guide
+### What you'll find in the guide (look in the guide to cut, paste)
 
 * $14.99 USD, $9.99 introductory pricing (click through to the download link)
 * X pages
