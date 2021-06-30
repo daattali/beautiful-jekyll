@@ -1,3 +1,5 @@
+[[book_notes]]
+
 How can we make sense of our lives, and hold people accountable for their choices, given the unconscious origins of our conscious minds?
 
 Some moments before you are aware of what you will do next—a time in which you subjectively appear to have complete freedom to behave however you please—your brain has already determined what you will do. You then become conscious of this “decision” and believe that you are in the process of making it.
