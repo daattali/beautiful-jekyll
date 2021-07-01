@@ -1,3 +1,5 @@
+[[feminism]]
+
 to be “manly” does not emphasise social and emotional skills’, and that, in contrast to women, ‘the “healthy” ways men cope are by using music or exercise to manage stress or worry, rather than “talking”’.
 
 When people defend male aggression as an inevitable part of our nature, it’s simply a way for men to avoid taking responsibility for their shitty behaviour, and allows them to inwardly justify a dangerous attitude on account of it being perceived as masculine.
