@@ -200,7 +200,7 @@ date_format: "%-d de %B, %Y"
 timezone: "America/Bahia"
 markdown: kramdown
 highlighter: rouge
-permalink: /:day-:month-:year-:title/
+permalink: /:year-:month-:day-:title/
 paginate: 5
 
 kramdown:
