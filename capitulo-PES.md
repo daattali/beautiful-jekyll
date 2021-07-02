@@ -9,6 +9,9 @@ cover-img: /assets/img/pes_cover.jpg
 
 Fundado em 1 de dezembro de 2017, o nosso Capítulo Estudantil PES CIMATEC
 
+#### Projetos
+- RES
+
 ### Diretoria Executiva PES CIMATEC 2021
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
@@ -20,10 +23,6 @@ Fundado em 1 de dezembro de 2017, o nosso Capítulo Estudantil PES CIMATEC
           <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="ygor" class="img-fluid rounded-circle"/></center></th>
           <th></th>
           <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="daniel" class="img-fluid rounded-circle"/></center></th>
-          <th></th>
-          <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="ruan" class="img-fluid rounded-circle"/></center></th>
-          <th></th>
-          <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="saulo" class="img-fluid rounded-circle"/></center></th>
         </tr>
       </thead>
       <tbody>
@@ -33,10 +32,6 @@ Fundado em 1 de dezembro de 2017, o nosso Capítulo Estudantil PES CIMATEC
           <td width="20%"><center>Ygor Vieira</center></td>
           <td></td>
           <td width="20%"><center>Daniel Menezes</center></td>
-          <td></td>
-          <td width="20%"><center>Ruan Utah</center></td>
-          <td></td>
-          <td width="20%"><center>Saulo Sergio</center></td>
         </tr>
         <tr style="text-align: center" >
           <td style="vertical-align: top"><small><center>Conselheiro</center></small></td>
@@ -44,10 +39,6 @@ Fundado em 1 de dezembro de 2017, o nosso Capítulo Estudantil PES CIMATEC
           <td style="vertical-align: top"><small><center>Presidente</center></small></td>
           <td></td>
           <td style="vertical-align: top"><small><center>Vice-Presidente</center></small></td>
-          <td></td>
-          <td style="vertical-align: top"><small><center>Secretario</center></small></td>
-          <td></td>
-          <td style="vertical-align: top"><small><center>Tesoureiro</center></small></td>
         </tr>
         <tr style="text-align: center" >
           <td style="vertical-align: top"><small><center>-</center></small></td>
@@ -55,10 +46,6 @@ Fundado em 1 de dezembro de 2017, o nosso Capítulo Estudantil PES CIMATEC
           <td style="vertical-align: top"><small><center>ygorvieira02@gmail.com</center></small></td>
           <td></td>
           <td style="vertical-align: top"><small><center>dmaraujo.arq.urb@gmail.com</center></small></td>
-          <td></td>
-          <td style="vertical-align: top"><small><center>ruanutah@ieee.org</center></small></td>
-          <td></td>
-          <td style="vertical-align: top"><small><center>saulomota2@gmail.com</center></small></td>
         </tr>
         <tr style="text-align: center" >
           <td style="vertical-align: top"><small><center>-</center></small></td>
@@ -66,7 +53,32 @@ Fundado em 1 de dezembro de 2017, o nosso Capítulo Estudantil PES CIMATEC
           <td style="vertical-align: top"><small><center>(75) 9 9995-0368</center></small></td>
           <td></td>
           <td style="vertical-align: top"><small><center>(71) 9 8337-5083</center></small></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="ruan" class="img-fluid rounded-circle"/></center></th>
+          <th></th>
+          <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="saulo" class="img-fluid rounded-circle"/></center></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+          <td width="20%"><center>Ruan Utah</center></td>
           <td></td>
+          <td width="20%"><center>Saulo Sergio</center></td>
+        </tr>
+        <tr style="text-align: center" >
+          <td style="vertical-align: top"><small><center>Secretario</center></small></td>
+          <td></td>
+          <td style="vertical-align: top"><small><center>Tesoureiro</center></small></td>
+        </tr>
+        <tr style="text-align: center" >
+          <td style="vertical-align: top"><small><center>ruanutah@ieee.org</center></small></td>
+          <td></td>
+          <td style="vertical-align: top"><small><center>saulomota2@gmail.com</center></small></td>
+        </tr>
+        <tr style="text-align: center" >
           <td style="vertical-align: top"><small><center>(71) 9 8148-6272</center></small></td>
           <td></td>
           <td style="vertical-align: top"><small><center>(71) 9 9121-7310</center></small></td>
