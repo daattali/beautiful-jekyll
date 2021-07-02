@@ -14,6 +14,8 @@ author: Felipe Mohr
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Prêmios: 
+    - Concurso Fotos SAC BR 21: "2021-06-24-concurso-fotos-sacbr-2021"
   Projetos:
     - (RAS) I3E-D3: "project-i3e_d3"
   Capítulos:
@@ -67,7 +69,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
@@ -187,7 +189,7 @@ footer-link-col: "#002855"
 # --- Misc --- #
 
 # Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
+date_format: "%-d de %B, %Y"
 
 # Facebook App ID
 #fb_app_id: ""
@@ -195,10 +197,10 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/Bahia"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:day-:month-:year-:title/
 paginate: 5
 
 kramdown:

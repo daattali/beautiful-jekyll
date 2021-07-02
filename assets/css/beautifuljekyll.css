@@ -391,7 +391,7 @@ footer a {
 footer .list-inline {
   margin: 0;
   padding: 0;
-  margin-bottom: 1.875rem;
+  margin-bottom: 0.875rem;
 }
 footer .copyright {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -401,7 +401,7 @@ footer .copyright {
 }
 footer .theme-by {
   text-align: center;
-  margin: 0.625rem 0 0;
+  margin: 0.250rem 0 0;
 }
 footer .footer-custom-content {
   text-align: center;
@@ -411,7 +411,7 @@ footer .footer-custom-content {
 
 @media (min-width: 768px) {
   footer {
-    padding: 3.125rem 0;
+    padding: 1.125rem 0;
   }
   footer .footer-links {
     font-size: 1.125rem;

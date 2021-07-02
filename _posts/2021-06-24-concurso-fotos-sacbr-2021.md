@@ -32,8 +32,7 @@ A votação se encerrou às 18h do dia 18 de junho e, por incrível que pareça,
 
 ![Fim de TardIEEE](/assets/img/fim_de_tardIEEE.jpg){: .mx-auto.d-block :}
 
-<p style="text-align: center;"> <b>Legenda: </b>"E nada como um dia após o outro"
-" </p>
+<p style="text-align: center;"> <b>Legenda: </b>"E nada como um dia após o outro"</p>
 
 E aí, gostou das fotos? 
 Siga nossas redes sociais e continue acompanhando nosso site, para manter-se sempre bem informado!

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RAS
-subtitle: Robotic and Automation Society
+subtitle: Robotics and Automation Society
 ---
 
 RAS
