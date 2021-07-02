@@ -8,7 +8,7 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="" img width="250">
+            <img src="../pics/rss2021lightcurtains.png" img width="250">
         </td>
         <td>Active Safety Envelopes using Light Curtains with Probabilistic Guarantees<br>
             <div class="pubauthor">Siddharth Ancha, Gaurav Pathak, Srinivasa Narasimhan, David Held<br>
@@ -31,11 +31,11 @@ subtitle:
             </div>
             <div class="pubjournal">Robotics: Science and Systems (RSS), 2021
             <div style="font-size:small">
-                <!-- <a href="https://bokorn.github.io/zephyr/">[Project Page]</a> -->
+                <a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees">[Project Page]</a>
                 <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
                 <a href="javascript:copy(div2021safetyenvelopes, bib2021safetyenvelopes)">[Bibtex]</a>
                 <a href="javascript:copy(div2021safetyenvelopes, abs2021safetyenvelopes)">[Abstract]</a>
-                <!-- <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a> -->
+                <a href="http://www.roboticsproceedings.org/rss17/p045.pdf">[PDF]</a>
             </div>
             <div id="div2021safetyenvelopes" class="pubInfo"></div>
             </div>
