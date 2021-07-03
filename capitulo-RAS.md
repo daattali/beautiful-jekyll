@@ -7,7 +7,7 @@ cover-img: /assets/img/ras_cover2.jpg
 
 <p style="text-align: center;"> <img src="/assets/img/ras.png" alt="drawing" width="250"/> </p>
 
-Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC...
+Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC
 
 #### Projetos
 - Projeto Jabuti
@@ -18,7 +18,7 @@ Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC...
 
 ### Diretoria Executiva RAS CIMATEC 2021
 <div class="row">
-  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+  <div class="mobile-side-scroller">
     <table class="table-borderless highlight">
       <thead>
         <tr>
