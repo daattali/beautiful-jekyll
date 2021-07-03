@@ -8,6 +8,10 @@ subtitle: ''
 
 _The Simple Meal Planning Guide will help you never to become stumped with meal planning again (when/if applied)._
 
+#### BE THE FIRST TO KNOW WHEN THE SIMPLE MEAL PLANNING GUIDE LAUNCHES! 
+
+I'll email you straight away. Signup to be notified [HERE](https://mailchi.mp/8472c00ae6c0/zo0pgut9gj). I'll also send you a freebie at the same time: Summer Food Ideas. Enjoy!!
+
 #### This guide is for you if…
 
 * you often feel stumped and uninspired with meal planning
