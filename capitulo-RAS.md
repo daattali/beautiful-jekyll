@@ -7,7 +7,7 @@ cover-img: /assets/img/ras_cover2.jpg
 
 <p style="text-align: center;"> <img src="/assets/img/ras.png" alt="drawing" width="250"/> </p>
 
-Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC
+Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC...
 
 #### Projetos
 - Projeto Jabuti
@@ -31,11 +31,11 @@ Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="20%"><center>Lucas Silva</center></td>
+          <td width="33%"><center>Lucas Silva</center></td>
           <td></td>
-          <td width="20%"><center>Marcella Giovanna</center></td>
+          <td width="33%"><center>Marcella Giovanna</center></td>
           <td></td>
-          <td width="20%"><center>Tayron Rodrigues</center></td>
+          <td width="33%"><center>Tayron Rodrigues</center></td>
         </tr>
         <tr style="text-align: center" >
           <td style="vertical-align: top"><small><center>Conselheiro</center></small></td>
@@ -68,9 +68,9 @@ Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC
       </thead>
       <tbody>
         <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-          <td width="20%"><center>Fernando Junior</center></td>
+          <td width="50%"><center>Fernando Junior</center></td>
           <td></td>
-          <td width="20%"><center>Leonardo Nomoto</center></td>
+          <td width="50%"><center>Leonardo Nomoto</center></td>
         </tr>
         <tr style="text-align: center" >
           <td style="vertical-align: top"><small><center>Secretario</center></small></td>

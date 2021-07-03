@@ -803,7 +803,15 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 
 /* --- Tables --- */
-
+@media (max-width: 768px) {
+  .mobile-side-scroller {
+    overflow-x: scroll;
+    /*margin: 0 -40px;*/
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 90%;
+  }
+}
 table {
   padding: 0;
 }
