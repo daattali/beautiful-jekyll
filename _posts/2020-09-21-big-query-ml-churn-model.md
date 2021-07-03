@@ -72,7 +72,7 @@ username,
 FROM
   test_data_table))
 ```
-### Conufsion Matrix:
+### Confusion Matrix:
 Checking the confusion matrix is really useful to see how many correct deals you predicted in each class (Won and Lost).
 
 ```
