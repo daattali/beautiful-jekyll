@@ -7,7 +7,7 @@ cover-img: /assets/img/embs_cover.jpg
 
 <p style="text-align: center;"> <img src="/assets/img/embs.png" alt="drawing" width="250"/> </p>
 
-O [EMBS (Engineering in Medicine and Biology Society)](https://www.embs.org/) é o Capítulo Técnico do IEEE voltado à aplicações da Engenharia na Medicina e Biologia. Fundado em 15 de Março de 2018, somos um dos poucos Capítulos Estudantis EMBS do Brasil, e focamos na realização de projetos voltados à área da saúde, sobretudo que possam colaborar com os profissionais ou trazer praticidade às pessoas.
+O [**EMBS** (Engineering in Medicine and Biology Society)](https://www.embs.org/) é o Capítulo Técnico do IEEE voltado à aplicações da Engenharia na Medicina e Biologia. Fundado em 15 de Março de 2018, somos um dos poucos Capítulos Estudantis EMBS do Brasil, e focamos na realização de projetos voltados à área da saúde, sobretudo que possam colaborar com os profissionais ou trazer praticidade às pessoas.
 
 #### Projetos
 - PIM & PELOD

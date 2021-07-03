@@ -7,7 +7,7 @@ cover-img: /assets/img/ras_cover2.jpg
 
 <p style="text-align: center;"> <img src="/assets/img/ras.png" alt="drawing" width="250"/> </p>
 
-A [RAS (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Sociedade Técnica do IEEE voltada às áreas de Robótica e Automação. Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC realiza diversos projetos dessas áreas, bem como promove a organização de cursos e workshops sobre assuntos relacionados, como de Arduino, Linguagem de Programação, Visão Computacional e outros.
+A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Sociedade Técnica do IEEE voltada às áreas de Robótica e Automação. Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC realiza diversos projetos dessas áreas, bem como promove a organização de cursos e workshops sobre assuntos relacionados, como de Arduino, Linguagem de Programação, Visão Computacional e outros.
 
 #### Projetos
 - Projeto Jabuti

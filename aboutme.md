@@ -40,20 +40,20 @@ Como maior organização profissional do mundo, o IEEE pode ser subdividido em *
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="branilson" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/branilson.jpeg' | relative_url }}" width="100" alt="branilson" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/felipemohr.png' | relative_url }}" width="100" alt="felipemohr" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/felipemohr.png' | relative_url }}" width="100" alt="felipe" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/marcellagiovanna.png' | relative_url }}" width="100" alt="felipemohr" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/marcellagiovanna.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
           </tr>
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="50%"><center>Branilson Luiz</center></td>
+            <td width="33%"><center>Branilson Luiz</center></td>
             <td></td>
-            <td width="50%"><center>Felipe Mohr</center></td>
+            <td width="33%"><center>Felipe Mohr</center></td>
             <td></td>
-            <td width="50%"><center>Marcella Giovanna</center></td>
+            <td width="33%"><center>Marcella Giovanna</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Conselheiro</center></small></td>
