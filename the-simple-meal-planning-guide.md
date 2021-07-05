@@ -8,9 +8,9 @@ subtitle: ''
 
 _The Simple Meal Planning Guide will help you never to become stumped with meal planning again (when/if applied)._
 
-#### BE THE FIRST TO KNOW WHEN THE SIMPLE MEAL PLANNING GUIDE LAUNCHES! 
+#### BE THE FIRST TO KNOW WHEN THE SIMPLE MEAL PLANNING GUIDE LAUNCHES!
 
-I'll email you straight away. Signup to be notified [HERE](https://mailchi.mp/8472c00ae6c0/zo0pgut9gj). I'll also send you a freebie at the same time: Summer Food Ideas. Enjoy!!
+I'll email you straight away. Signup to be notified [HERE](https://mailchi.mp/8472c00ae6c0/zo0pgut9gj). Plus I'll send you a _freebie_ at the same time: **Summer Food Ideas**. Enjoy!!
 
 #### This guide is for you if…
 
@@ -25,17 +25,9 @@ If some or all of these sound like you, this **Simple Meal Planning Guide** may 
 
 Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
 
-### What you'll find in the guide (look in the guide to cut, paste)
+### What you'll find in the Simple Meal Planning Guide:
 
-* $14.99 USD, $9.99 introductory pricing (click through to the download link)
-* X pages
-* X printables:
-* 
-* Resources section
-* Bonus sections:
-
-SEE A PREVIEW HERE?? Or pictures.
-
-## Reviews
-
-> _As anyone who’s tried to make a capsule wardrobe knows, it’s easy to get overwhelmed and confused by all the “must-have” lists and “rules” floating around on Pinterest. Kelly’s guide cuts through all the noise with straightforward steps that makes creating a capsule wardrobe truly simple, and best of all - tailored to you and your needs._ - Emily
+* Helpful tips in the areas of planning and organizing
+* Helpful printables to get you orgnanized
+* Steps to help guide you through the process of meal planning from start to finish
+* Bonus resources and ideas for meal planning
