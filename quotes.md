@@ -3,6 +3,8 @@ title: Commentary
 subtitle: Interviews featured in the press
 ---
 
+Energi Talks Podcast [Hydro's main value is not electricity generation, but storage for renewables](https://podcasts.apple.com/us/podcast/hydros-main-value-is-not-electricity-generation-but/id1534771882?i=1000524551245) (June 7, 2021)
+
 Solar Tribune: ["Combating Climate Change"](https://solartribune.com/climate-change/policy/economic-approaches/) (February 24, 2021)
 
 Bloomberg: ["The Key to New York’s Green Dreams May Be Turning Quebec Into a Mega-Battery"](https://www.bloomberg.com/news/articles/2020-02-24/mit-researchers-how-quebec-can-help-bring-green-power-to-new-yor) (February 24, 2020)
