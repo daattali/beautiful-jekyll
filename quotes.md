@@ -1,6 +1,6 @@
 ---
 title: Commentary
-subtitle: Interviews featured in the press
+subtitle: Selection of media interviews
 ---
 
 Energi Talks Podcast [Hydro's main value is not electricity generation, but storage for renewables](https://podcasts.apple.com/us/podcast/hydros-main-value-is-not-electricity-generation-but/id1534771882?i=1000524551245) (June 7, 2021)
