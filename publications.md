@@ -35,7 +35,7 @@ subtitle:
                 <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
                 <a href="javascript:copy(div2021safetyenvelopes, bib2021safetyenvelopes)">[Bibtex]</a>
                 <a href="javascript:copy(div2021safetyenvelopes, abs2021safetyenvelopes)">[Abstract]</a>
-                <a href="http://www.roboticsproceedings.org/rss17/p045.pdf">[PDF]</a>
+                <a href="https://arxiv.org/pdf/2107.04000.pdf">[PDF]</a>
             </div>
             <div id="div2021safetyenvelopes" class="pubInfo"></div>
             </div>
