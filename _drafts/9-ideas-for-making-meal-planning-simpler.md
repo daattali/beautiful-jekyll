@@ -19,7 +19,7 @@ Let's about chat meal planning today. Meal planning is an area of home life that
 
 There are so many ways to do meal planning (like the image I shared below), but I wanted to choose one that works for us that:
 
-1. Reduces trips out right now and
+1. Reduces trips out right now and;
 2. Requires the least amount of energy overall. We have a busy family, so anything that cuts time and thinking wins for me.
 
 So for us, that means an assigned day to day meal theme with some flexibility such as chicken/veggies on Wednesday, Fish Friday. As well as one weekend of picking up the groceries for the month and one mid month top up of fresh type items.
@@ -28,9 +28,9 @@ So for us, that means an assigned day to day meal theme with some flexibility su
 
 ### 9 IDEAS FOR MAKING MEAL PLANNING SIMPLER
 
-1. **Create daily themes.** i.e. Taco Tuesday, Fish Friday. See my blog on meal planning with themes [here](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/) for more ideas.
+1. **Create daily themes.** i.e. Taco Tuesday, Fish Friday. See my blog on meal planning with themes [here](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/) for more ideas. I also found a blog with 100 easy dinner recipes [here](https://www.taste.com.au/quick-easy/galleries/top-100-easy-dinner-recipes/biccuul7?page=18).
 2. **Create a rotating loop of meals.** Pick a bunch of favourite meals and loop through them starting at one, working through and then starting back at the beginning again. See my blog [here](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/) on loop planning.
-3. **Meal plan seasonally.** i.e. soups in colder seasons, quick foods in the summer.
+3. **Meal plan seasonally.** i.e. soups in colder seasons, quick foods in the summer. I found a blog called ["A Guide to Seasonal Meal Planning"](https://homespunseasonalliving.com/guide-seasonal-meal-planning/) that you may find helpful too.
 4. **Plan around seasonal produce.**
 5. **Meal plan based on sales.**
 6. **Make extras for future meals.**
