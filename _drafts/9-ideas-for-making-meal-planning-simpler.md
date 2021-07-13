@@ -13,8 +13,6 @@ share-img: ''
 redirect_from: []
 
 ---
-**LINK OUT, BOLD THINGS**
-
 Let's about chat meal planning today. Meal planning is an area of home life that can be a struggle for many people. So if this is an area you've completely got under control, you may know and apply all of the tips I'm sharing in this blog. I'm sharing about **9 ideas for making planning simpler today**.
 
 There are so many ways to do meal planning (like the image I shared below), but I wanted to choose one that works for us that:
