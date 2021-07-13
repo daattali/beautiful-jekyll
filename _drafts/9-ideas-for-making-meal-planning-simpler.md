@@ -4,7 +4,7 @@ tags:
 - simple meal planning
 - meal planning
 - simple meal ideas
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/untitled-design-2.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
@@ -45,7 +45,7 @@ So for us, that means an assigned day to day meal theme with some flexibility su
 
 #### SAVE MONEY WITH THIS FREEBIE:
 
-If you’re stumped with meal planning and grocery planning, you may enjoy the method I use for our monthly grocery planning. Since I started applying this method, I started saving our family $200-$300/month consistently. It’s also helped our meal planning situation as well. You can snatch that freebie [HERE.](https://mailchi.mp/82b428a1e609/our-grocery-planning-method)
+If you’re stumped with meal planning and grocery planning, you may enjoy the method I use for our monthly grocery planning. Since I started applying this method, I started saving our family $200-$300/month consistently. It’s also helped our meal planning situation as well. You can snatch that freebie [HERE.](https://mailchi.mp/82b428a1e609/our-grocery-planning-method) I also read a fantastic book with all of the tips and tricks you can imagine called _Cut Your Grocery Bill in Half._ You can find that book in my Amazon shops: [US shop](www.amazon.com/shop/simplehomemom) and [Canadian shop](www.amazon.ca/shop/simplehomemom).
 
 #### THE SIMPLE MEAL PLANNING GUIDE
 
