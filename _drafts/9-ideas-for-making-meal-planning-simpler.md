@@ -11,7 +11,8 @@ comments: true
 show-avatar: true
 title: 9 Ideas for Making Meal Planning Simpler
 description: Practical tips for making meal planning simpler for any family size.
-subtitle: ''
+subtitle: "+ freebie: my monthly grocery planning method that has saved us $2-$300
+  a month"
 share-img: ''
 redirect_from: []
 
