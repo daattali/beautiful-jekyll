@@ -1,6 +1,9 @@
 ---
 post: post
-tags: []
+tags:
+- simple meal planning
+- meal planning
+- simple meal ideas
 thumbnail-img: "/uploads/headshot.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
