@@ -7,8 +7,8 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
+* [Four Ideas to Go from Kitchen Explosions to Clear Counters](https://www.simplehomemom.com/four-ideas-to-go-from-kitchen-explosions-to-clear-counters/)
 * Be the first to know when it launches: [The Simple Meal Planning Guide + grab your freebie: Summer Food Ideas](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
-* [Five Steps to Build Your Simple Summer Wardrobe + my summer capsule wardrobe this year](https://www.simplehomemom.com/five-steps-to-build-your-simple-summer-wardrobe/)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
