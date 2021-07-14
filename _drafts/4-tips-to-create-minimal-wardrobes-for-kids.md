@@ -17,13 +17,13 @@ share-img: ''
 redirect_from: []
 
 ---
-Minimal living and wardrobes for kids? How does that even work? We have four kids so, I mean, that’s a lot of kids, so it’s going to be a lot of clothes even with minimal wardrobes. But we’ve learned steps that have certainly helped. On the blog today I’m sharing four steps to create minimal wardrobes for kids.
+Minimal living and wardrobes for kids? How does that even work? We have four kids so, I mean, that’s a lot of kids' clothing too, so it’s going to be a lot of clothes even with minimal wardrobes. But we’ve learned steps that have certainly helped. On the blog today I’m sharing four steps to create minimal wardrobes for kids.
 
 ![An image of my son's closet.](/uploads/wardrobe.jpg "wadrobe")
 
 #### 1. Pick your number
 
-Pick a number for each category of clothing that works for you and your kids. Keep in mind how often you do laundry, how often they soil their clothing. For our kids, for most areas, they have 3-4 items (tees, long sleeves, shorts, etc). I also have one to two items for their “dressier clothes” aka button down shirts and jeans or a dress for our toddler.
+Pick a number for each category of clothing that works for you and your kids. Keep in mind how often you do laundry and how often they soil their clothing. For our kids, for most areas, they have 3-4 items (tees, long sleeves, shorts, etc). I also have one to two items for their “dressier clothes” aka button down shirts and jeans or a dress for our toddler.
 
 #### 2. Choose quality
 
@@ -39,9 +39,19 @@ I know I don’t have enough clothing for any area if I’m washing daily and th
 
 You can find also more general tips [here](https://www.becomingminimalist.com/thin-closet/) too from Joshua Becker’s Becoming Minimalist website that you may find helpful. Also Courtney Carver’s book [Project 333](https://amzn.to/2ZdURKp) on developing minimalist wardrobes may be helpful too.
 
-**A LOOK AT MY KIDS' CURRENT SUMMER  MINIMAL WARDROBES:**
+### A LOOK AT MY KIDS' CURRENT SUMMER MINIMAL WARDROBES
 
-* Our ten year old has the most amount of clothing due to him having to hand me down his clothes! He has 5 t-shirts, 3 pairs of shorts, two dress short sleeves, and one pair of dress shorts. He also has one pair of sneakers, one pair of sandals, one pair of boots. I linked the sandals we buy and boots in my Amazon shops as they tend to last through more than one kid quite easily! [Amazon US Shop link](www.amazon.com/shop/simplehomemom) and [Amazon Canadian Shop link](www.amazon.ca/shop/simplehomemom).
+* Our ten year old has the most amount of clothing due to him having to hand me down his clothes to his brothers! He has 5 t-shirts, 4 pairs of shorts, two dress short sleeves, and one pair of dress shorts. All of the boys have one pair of sneakers, one pair of sandals, and one pair of boots. I linked the sandals we buy and boots in my Amazon shops as they tend to last through more than one kid quite easily: [Amazon US Shop link](www.amazon.com/shop/simplehomemom) and [Amazon Canadian Shop link](www.amazon.ca/shop/simplehomemom).
+
+
+* My younger two boys have 4 t-shirts, 2-3 dress t-shirts, and 2 dress shorts. 
+
+
+* My toddler daughter has 3 t-shirts, 3 pairs of shorts, 2 dresses, and 2 dressy dresses.
+
+We tend to keep play clothes through all boys as long as they are not falling apart or full of stains that won't come out. We replace things as we go along and are also thankful for family members during Christmas and birthdays who love gifting clothes too.
+
+#### The Simple Capsule Wardrobe Guide
 
 _And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [**_Simple Capsule Wardrobe Guide_**](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
 
