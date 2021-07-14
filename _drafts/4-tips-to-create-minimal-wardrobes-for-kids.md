@@ -9,9 +9,9 @@ cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
 show-avatar: true
-title: Four Tips to Create Minimal Wardrobes for Kids
-description: Tips for creating simple minimal wadrobes for kids. It doesn't need to
-  be expensive.
+title: Four Steps to Create Minimal Wardrobes for Kids
+description: Tips for creating simple minimal wardrobes for kids. It doesn't need
+  to be expensive.
 subtitle: ''
 share-img: ''
 redirect_from: []
@@ -44,6 +44,10 @@ You can find also more general tips [here](https://www.becomingminimalist.com/th
 * Our ten year old has the most amount of clothing due to him having to hand me down his clothes! He has 5 t-shirts, 3 pairs of shorts, two dress short sleeves, and one pair of dress shorts. He also has one pair of sneakers, one pair of sandals, one pair of boots. I linked the sandals we buy and boots in my Amazon shops as they tend to last through more than one kid quite easily! [Amazon US Shop link](www.amazon.com/shop/simplehomemom) and [Amazon Canadian Shop link](www.amazon.ca/shop/simplehomemom).
 
 _And if your wardrobe needs a total rehaul and you have a hard time knowing where to start, you may enjoy my Simple Capsule Wardrobe Guide. Some recent feedback on it: “Ahhh Kelly! That was brilliant! I’m going to do some sorting this weekend, more purging, and most importantly writing down what I have vs what I need. Thank you!!!” Want to know more about how I fine tuned my whole wardrobe and follow along the simple steps? You may like my_ [**_Simple Capsule Wardrobe Guide_**](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/) _ebook (new and updated). You can find that guide_ [_here_](https://www.simplehomemom.com/simple-capsule-wardrobe-guide/)_._
+
+**SAVE FOR FUTURE REFERENCE:**
+
+![A woman laying in a bed of messy clothes with the blog title below it.](/uploads/four-steps-to-create-minimal-wardrobes-for-kids-shm.jpg "Four steps to create minimal wardrobes for kids SHM")
 
 **Other blogs of mine you may enjoy:**
 
