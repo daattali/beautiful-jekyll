@@ -1,8 +1,8 @@
 ---
 layout: page
-title: MapVision
-subtitle: Mapeamento 3D
-cover-img: /assets/img/mapvision_wide.jpg
+# title: MapVision
+# subtitle: Mapeamento 3D
+cover-img: /assets/img/mapvision_wide.png
 ---
 
 O projeto map-vision consiste na utilização de 2 câmeras mono em 1 câmera stereo para implementação no I3E-D3 com o intuito de fazer o mapeamento 3D do SENAI CIMATEC utilizando ROS(ROBOT OPERATING SYSTEM. Outro objetivo do projeto é o aprendizado dos estudantes envolvidos e enriquecer o RAS com mais conhecimentos sobre robótica e programação.
