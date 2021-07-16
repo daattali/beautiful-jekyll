@@ -14,10 +14,14 @@ author: Felipe Mohr
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Prêmios: 
-    - Concurso Fotos SAC BR 21: "2021-06-24-concurso-fotos-sacbr-2021"
+  Nossos Prêmios: 
+    - Concurso Fotos SAC BR 2021: "2021-06-24-concurso-fotos-sacbr-2021"
+    - Financiamento BayIEEEmax:
+    - Concurso Fotos IEEE DAY 2018:
+    - Núcleo de Capacitação em Arduino SAC BR 2018:
   Projetos:
-    - (RAS) I3E-D3: "project-i3e_d3"
+    - Em Andamento: "projects-inprog"
+    - Finalizados: "projects-done"
   Capítulos:
     - EMBS: "capitulo-EMBS"
     - PES: "capitulo-PES"

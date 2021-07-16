@@ -9,12 +9,20 @@ cover-img: /assets/img/ras_cover2.jpg
 
 A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Sociedade Técnica do IEEE voltada às áreas de Robótica e Automação. Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC realiza diversos projetos dessas áreas, bem como promove a organização de cursos e workshops sobre assuntos relacionados, como de Arduino, Linguagem de Programação, Visão Computacional e outros.
 
-#### Projetos
+#### Projetos em Andamento
+- [I3E-D3](https://ieeecimatec.github.io/project-i3e_d3/)
+- [GamIEEEfication](https://ieeecimatec.github.io/project-gamieeefication/)
+- [BayIEEEmax](https://ieeecimatec.github.io/project-bayieeemax/)
+- [Mão Espelhada](https://ieeecimatec.github.io/project-mao_espelhada/)
+- [PetIEEE](https://ieeecimatec.github.io/project-petieee/)
+- RASpode
+- Map Vision
+- CompetIEEEção
+
+#### Projetos Finalizados
 - Projeto Jabuti
 - I3E-D2
-- I3E-D3
-- JarvIEEES
-- GamIEEEfication
+- JarvIEEEs
 
 [<img src="/assets/img/logo_instagram.png" alt="drawing" width="25"/> **@ieeerascimatec**](https://www.instagram.com/ieeerascimatec/)
 
@@ -28,7 +36,7 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/marcellagiovanna.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/marcella_giovanna.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="tayron" class="img-fluid rounded-circle"/></center></th>
           </tr>

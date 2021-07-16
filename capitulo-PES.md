@@ -11,6 +11,9 @@ A [**PES** (Power and Energy Society)](http://www.ieee-pes.org/) é a Sociedade 
 
 #### Projetos
 - RES
+- [BayIEEEmax](https://ieeecimatec.github.io/project-bayieeemax/)
+- TrackIEEErs
+- Smart Energy
 
 [<img src="/assets/img/logo_instagram.png" alt="drawing" width="25"/> **@ieeepescimatec**](https://www.instagram.com/ieeepescimatec/)
 
@@ -61,7 +64,7 @@ A [**PES** (Power and Energy Society)](http://www.ieee-pes.org/) é a Sociedade 
         </tbody>
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="ruan" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/ruan_utah.png' | relative_url }}" width="100" alt="ruan" class="img-fluid rounded-circle"/></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="saulo" class="img-fluid rounded-circle"/></center></th>
           </tr>
