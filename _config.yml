@@ -6,13 +6,13 @@
 # --- Required options --- #
 
 # Name of website
-title: My website
+title: Godev
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: Game for fun or boring
 
 # GitHub Actions
-repository: "VincentTam/beautiful-jekyll"
+repository: "Seapre/godev"
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
