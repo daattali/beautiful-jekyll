@@ -156,15 +156,64 @@ Even if your team finishes the whole project well in advance, just spend some mo
 panic.
 
 
+## Gotcha
+
+In this section, we go through pitfalls that occurred during our project to prevent you from succumbing to the same fate. Due to confidentiality, we are using a hypothetical dataset, which contains these features: a Data Science job title, the job’s characteristics (e.g. experience with python), applicant’s age, years of experience etc. And we are trying to predict the salary of the job posting.
+
+
+### Do the train_test_split properly
+
+![train test meme](../img/blog/AITT/train_test_meme.jpeg)
+
+
+Splitting the data into train and test sets is one of the first, and most likely the easiest, things you learn about undertaking
+machine learning project. It’s easy to neglect the importance of this step, but extreme care needs to be taken when doing this so that
+you avoid leakage of information between the splits. For example, a job can be listed multiple times with the same feature values.
+Therefore, we need to ensure that if a job is in the test dataset, it should not also be in the training dataset. 
+
+
+### Understanding the data well
+
+![Cleaning data](../img/blog/AITT/cleaning_data.jpeg)
+
+[Photo Source](https://www.linkedin.com/posts/calvindewilde_analytics-activity-6816703694743183360-yBRo)
+
+Real data is messy. It’s really just as simple as that. Your instructors, faculty mentors, and more experienced data scientists will
+say this a lot, but unless you experience it, you won’t understand the frustration and joy behind working with real data. Sometimes the
+data will contain obvious outliers, such as a person with 100 years of work experience. Other times it will contain nebulous outliers;
+for example, having 20 years of experience on its own is not strange, but if this person is only 25 years old, then we need to think
+about that critically. In these situations, don’t fret! Instead, leverage the abundant wealth of knowledge and experience available to
+you in the form of your faculty mentor and Capstone partner to understand how to approach these problems, and if you’re lucky, they
+might have a solution that works.
+
+
+### Things may happen for a reason, investigate:
+
+The capstone experience might sometimes feel like a constant race against time, such that when something strange, albeit beneficial,
+happens, you are more likely to ignore it and move on. For example, we observed that the error was halved by removing 0.01% of the
+data. Can removing 0.01% of the data cause such a change in the result!? Definitely not possible! Spurred on by our faculty mentor, we
+decided to further investigate why this happened. 
+
+In the end, we discovered that there was an inadvertent sorting of data during processing, which resulted in a very bad cross
+validation result for the first and last folds. However, during the process of removing the 0.01% of data, we shuffled the data again,
+which improved the result as they are calculated from properly randomized folds. 
+
+Things like these are more likely to happen than not. The only solution is to meticulously go through your entire process, ensuring
+that things work the way they ought to. Be pedantic. It’s arduous, but it’s better to thoroughly understand everything happening in
+your analysis and try your best to adhere to accurate data science practices. 
 
 
 
+### C'est la vie 
 
+Finally, some things are just out of your control, and you can’t really fight it; you just have to live with it. 
 
+*The model hyperparameters that you spend days tuning, may not improve your score at all.
+The features that took you one week to come up with, may not be used in the final model.*
 
+Having said that, don’t be discouraged, it is really more about the journey. And most importantly, be positive!
 
-
-
+C’est la vie! 
 
 
 
