@@ -18,7 +18,9 @@ However, more often than not, people tend to overestimate their productivity. Fu
 hackathon and the last two weeks for presentation, testing & documentation went by much quicker than we realized, hence the core time
 for the project development was actually around 5 weeks.
 
-<img src="../img/blog/AITT/realistic_timeline.png" width=300 class="center"></img>
+<p align="center">
+  <img src="../img/blog/AITT/realistic_timeline.png" width=300 />
+</p>
 
 [Photo obtained from Unsplash](https://unsplash.com/photos/oYmxe7sCitg)
 
@@ -35,7 +37,9 @@ Finally, given the short time frame, we recommend that you focus on the main par
 
 ### Have an agenda and a meeting moderator for each meeting with the faculty mentor/Capstone partner
 
-<img src="../img/blog/AITT/agenda_photo.png" width=300 class="center"></img>
+<p align="center">
+  <img src="../img/blog/AITT/agenda_photo.png" width=300 />
+</p>
 
 [Photo obtained from Unsplash](https://unsplash.com/photos/RLw-UC03Gwc)
 
@@ -48,7 +52,9 @@ meeting. In addition, our team members took turns moderating and making sure the
 
 ### "If you want to go fast, go alone; but if you want to go far, go together."
 
-<img src="../img/blog/AITT/going_far_together.png" width=300 class="center"></img>
+<p align="center">
+  <img src="../img/blog/AITT/going_far_together.png" width=300 />
+</p>
 
 [Photo obtained from Unsplash](https://unsplash.com/photos/Dph00R2SwFo)
 
@@ -68,8 +74,9 @@ Be clear with your partner from the beginning. Have a well thought out project p
 deliverables and ensure that the Capstone partner agrees and consents to the same by the end of the first week. For projects which have
 evolving goals, ensure that the team's vision is aligned with the capstone partner’s expectations through continuous communication. 
 
-<img src="../img/blog/AITT/communication.png" width=300 class="center"></img>
-
+<p align="center">
+  <img src="../img/blog/AITT/communication.png" width=300 />
+</p>
 
 [Photo Source](https://giphy.com/explore/communication)
 
@@ -81,11 +88,9 @@ with the Capstone partner and ask for more data if needed. Though it is harder t
 make sure to continue to evaluate your data needs during model development. Having sufficient and appropriate data is crucial for
 obtaining robust results. 
 
-
-![more data](../img/blog/AITT/more_data_photo.png)
-
-<img src="../img/blog/AITT/more_data_photo.png" width=300 class="center"></img>
-
+<p align="center">
+  <img src="../img/blog/AITT/more_data_photo.png" width=300 />
+</p>
 
 [Photo Source](https://makeameme.org/meme/yeahim-gonna-need-c45pbd)
 
@@ -94,9 +99,9 @@ obtaining robust results.
 
 ### Plan and refactor your code on a regular basis
 
-![plan refactor code](../img/blog/AITT/plan_refactor_code.png)
-
-<img src="../img/blog/AITT/plan_refactor_code.png" width=300 class="center"></img>
+<p align="center">
+  <img src="../img/blog/AITT/plan_refactor_code.png" width=300 />
+</p>
 
 **Make your code DRY, meaning Don’t Repeat Yourself**: More often than not, you will encounter pieces of code that appear repetitively
 throughout the project. The same lines of code used to initialize or tune hyperparameters for a Ridge model can be used for
@@ -117,11 +122,9 @@ notebooks, and abstract your major functionality into Python/R scripts.
 
 ### Make your code maintainable
 
-![write maintainable code](../img/blog/AITT/write_maintainable_code.png)
-
-<img src="../img/blog/AITT/write_maintainable_code.png" width=300 class="center"></img>
-
-
+<p align="center">
+  <img src="../img/blog/AITT/write_maintainable_code.png" width=300 />
+</p>
 
 **Write simple documentation or tests at first**: Documentation helps users understand how to use your functions, and tests help verify
 that the functions are working as expected. Without the existence of these two components, future users will be puzzled and get lost in
@@ -138,9 +141,9 @@ merged into the main branch.
 
 ### Rerun code often to discover errors early, and commit often.
 
-![rerun code](../img/blog/AITT/rerun_code_meme.png)
-
-<img src="../img/blog/AITT/rerun_code_meme.png" width=300 class="center"></img>
+<p align="center">
+  <img src="../img/blog/AITT/rerun_code_meme.png" width=300 />
+</p>
 
 
 **Run tests in the branches to make sure they pass, merge approved code into the main branch, pull down the latest change and run tests again**: You may never know if that single tiny innocent line of code can do a ton of damage to the whole project, especially if it
@@ -163,10 +166,9 @@ In this section, we go through pitfalls that occurred during our project to prev
 
 ### Pay careful attention to the train-test split
 
-![train test meme](../img/blog/AITT/train_test_meme.jpeg)
-
-<img src="../img/blog/AITT/train_test_meme.jpeg" width=300 class="center"></img>
-
+<p align="center">
+  <img src="../img/blog/AITT/train_test_meme.jpeg" width=300 />
+</p>
 
 Splitting the data into train and test sets is one of the first things you learn about undertaking
 machine learning project. It's easy to neglect the importance of this step, but extreme care needs to be taken when doing this so that
@@ -176,10 +178,9 @@ Therefore, we need to ensure that if a job is in the test dataset, it should not
 
 ### Understanding the data well
 
-![Cleaning data](../img/blog/AITT/cleaning_data.jpeg)
-
-<img src="../img/blog/AITT/cleaning_data.jpeg" width=300 class="center"></img>
-
+<p align="center">
+  <img src="../img/blog/AITT/cleaning_data.jpeg" width=300 />
+</p>
 
 [Photo Source](https://www.linkedin.com/posts/calvindewilde_analytics-activity-6816703694743183360-yBRo)
 
