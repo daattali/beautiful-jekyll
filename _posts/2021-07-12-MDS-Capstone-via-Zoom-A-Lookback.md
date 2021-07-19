@@ -68,8 +68,6 @@ Be clear with your partner from the beginning. Have a well thought out project p
 deliverables and ensure that the Capstone partner agrees and consents to the same by the end of the first week. For projects which have
 evolving goals, ensure that the team's vision is aligned with the capstone partner’s expectations through continuous communication. 
 
-![communication](../img/blog/AITT/communication.png)
-
 <img src="../img/blog/AITT/communication.png" class="fit image">
 
 
@@ -85,6 +83,9 @@ obtaining robust results.
 
 
 ![more data](../img/blog/AITT/more_data_photo.png)
+
+<img src="../img/blog/AITT/more_data_photo.png" class="fit image">
+
 
 [Photo Source](https://makeameme.org/meme/yeahim-gonna-need-c45pbd)
 
