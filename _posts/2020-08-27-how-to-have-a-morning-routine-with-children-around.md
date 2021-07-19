@@ -37,10 +37,6 @@ _What others do may not work for you. If it becomes more of a fight, then take i
 
 Last year, I finally started a morning routine for myself and it's really helped my days out so much. I feel more peaceful throughout the rest of the day and I'm finding time for those things that matter most to me. Morning routines can be tricky, but with a little bit of planning and using what you are given, you can start small with your own morning routine. I created a [simple template](https://mailchi.mp/b5550b9a5b6c/kxmxwhppym) for you to work through creating your own morning routine with children around - you can find that [HERE](https://mailchi.mp/b5550b9a5b6c/kxmxwhppym). Enjoy!
 
-**SAVE FOR FUTURE REFERENCE:**
-
-![A picture of a coffee mug overlooking into the woods.](/uploads/1-1.jpg "How to have a morning routine with children around SHM2")
-
 #### Other blogs of mine you may like:
 
 * [Five Things You Can Do to Have the Best Morning Ever](https://www.simplehomemom.com/five-things/)
