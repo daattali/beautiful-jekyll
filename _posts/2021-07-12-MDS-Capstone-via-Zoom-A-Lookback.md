@@ -17,7 +17,7 @@ This blogpost aims to share some of our learnings from the MDS Capstone project.
 
 8-weeks for capstone projects is double the time of your earlier group projects in MDS, and it may make you think you have more time. However, more often than not, people tend to overestimate their productivity. Furthermore, from our experience, the first week for the hackathon and the last two weeks for presentation, testing & documentation went by much quicker than we realized, hence the core time for the project development was actually around 5 weeks.
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Agenda](https://github.com/IfyAnene7/UBC-MDS.github.io/blob/master/img/blog/AITT/agenda_photo.jpg)
 
 
 
