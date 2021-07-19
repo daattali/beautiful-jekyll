@@ -70,6 +70,9 @@ evolving goals, ensure that the team's vision is aligned with the capstone partn
 
 ![communication](../img/blog/AITT/communication.png)
 
+<img src="../img/blog/AITT/communication.png" class="fit image">
+
+
 [Photo Source](https://giphy.com/explore/communication)
 
 
