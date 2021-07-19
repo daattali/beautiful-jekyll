@@ -14,6 +14,13 @@ My name is Raihan Khan Raka. I am :
 - Trying to follow the path of righteousness and stay humble
 
 
+Here are some problems contributed by me for the competitive programming community :
+
+1. [Plus Ultra!!](https://toph.co/p/plus-ultra)
+2. [The Attack Titan](https://toph.co/p/the-attack-titan)
+
+
+
 <!--
 ### My story
 To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.) -->
