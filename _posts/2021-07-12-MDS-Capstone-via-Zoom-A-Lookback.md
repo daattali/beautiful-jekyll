@@ -1,7 +1,9 @@
 ---
+
 layout: post
-title: MDS Capstone via Zoom: A lookback
+title: "MDS Capstone via Zoom: A lookback"
 subtitle: by Alex Truong Hai Yen, Ifeanyi Anene, Tran Doan Khanh Vu and Tanmay Sharma
+
 ---
 
 Hello dear reader,
@@ -220,10 +222,15 @@ C’est la vie!
 --------
 
 ## Authors:
-[Alex Truong Hai Yen](https://www.linkedin.com/in/alextruong91/)
+[Alex Truong Hai Yen](https://www.linkedin.com/in/alextruong91/) is a member of capstone group 27 and graduated from the UBC MDS program in 2021.
 
-[Ifeanyi Anene](https://www.linkedin.com/in/ifeanyianene/)
+[Ifeanyi Anene](https://www.linkedin.com/in/ifeanyianene/) is a member of capstone group 27 and graduated from the UBC MDS program in 2021.
 
-[Tran Doan Khanh Vu](https://www.linkedin.com/in/tdkhanhvu/)
+[Tran Doan Khanh Vu](https://www.linkedin.com/in/tdkhanhvu/) is a member of capstone group 27 and graduated from the UBC MDS program in 2021.
 
-[Tanmay Sharma](https://www.linkedin.com/in/tanmaysharma19/)
+[Tanmay Sharma](https://www.linkedin.com/in/tanmaysharma19/) is a member of capstone group 27 and graduated from the UBC MDS program in 2021.
+
+
+## Acknowledgements:
+
+We would like t
