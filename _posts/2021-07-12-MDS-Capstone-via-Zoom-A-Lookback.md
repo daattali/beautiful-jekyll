@@ -229,8 +229,3 @@ C’est la vie!
 [Tran Doan Khanh Vu](https://www.linkedin.com/in/tdkhanhvu/) is a member of capstone group 27 and graduated from the UBC MDS program in 2021.
 
 [Tanmay Sharma](https://www.linkedin.com/in/tanmaysharma19/) is a member of capstone group 27 and graduated from the UBC MDS program in 2021.
-
-
-## Acknowledgements:
-
-We would like t
