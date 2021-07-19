@@ -1,12 +1,8 @@
 ---
 layout: post
-title: Project courses in MDS
-subtitle: by Tiffany Timbers and Mike Gelbart
-share-img: "https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/mds-group-contract.jpg?raw=true"
+title: MDS Capstone via Zoom: A lookback
+subtitle: by Alex Truong Hai Yen, Ifeanyi Anene, Tran Doan Khanh Vu and Tanmay Sharma
 ---
-
-
-# MDS Capstone via Zoom: A lookback
 
 Hello dear reader,
 
@@ -108,7 +104,65 @@ obtaining robust results.
 
 ### Plan and refactor your code on a regular basis
 
-![more data](../img/blog/AITT/plan_refactor_code.png)
+![plan refactor code](../img/blog/AITT/plan_refactor_code.png)
+
+**Make your code DRY, meaning Don’t Repeat Yourself**: More often than not, you will encounter pieces of code that appear repetitively
+throughout the project. The same lines of code used to initialize or tune hyperparameters for a Ridge model can be used for
+RandomForest, XGBoost, CatBoost… By leveraging the power of inheritance, you can significantly reduce the amount of code written, and
+subsequently the time to review and test the same. Instead of rushing to write code, a more enlightened path would be to first think
+about how you can define a base class (BaseModel) with the necessary methods, and all other child classes (AdvancedModel) inheriting
+from this base class. Sometimes, a simple act of grouping codes into a separate function can help as you may realize that the same
+function can be used in another place. On top of that, reviewing and removing redundant code makes your code easier to follow and
+probably run faster.
+
+**Develop a habit of splitting your code into notebooks and scripts separately**: Although Jupyter notebooks are useful to display your
+results or any graphs plotted, they are extremely challenging when it comes to testing, merging or reviewing the code. On top of that,
+putting a lot of code in a notebook can distract the audience from the main flow of the analysis as they may want to pay more attention
+to the result, rather than the specific details on how it was done. As a result, you should include only the essential code in the
+notebook, and abstract major functionality to the Python/R scripts.
+
+
+### Make your code maintainable
+
+![write maintainable code](../img/blog/AITT/write_maintainable_code.png)
+
+
+**Write simple documentation or tests at first**: Documentation helps users understand how to use your functions, and tests help verify
+that the functions are working as expected. Without the existence of these two components, future users will be puzzled and get lost in
+your maze of code, increasing the chance that they discard anything done before and start from scratch. Having said that, do not write
+detailed documentation and complicated tests from the beginning, as it takes time and the code may need to be modified on a regular
+basis. Hence start simple first, and try to add more details to documentation and tests as the project progresses.
+
+**Have another teammate review your code**: Your code may be intuitive to you, the author, yet, it might be an insurmountable task for
+another person to comprehend. Hence, your teammates can play the role of future users to provide feedback in case your code takes too
+much time to digest. On top of that, they can help identify bugs or mistakes in those lines of code, which definitely help your team in
+the long run. You can enforce main branch protection to make sure that another teammate needs to review your code before it can be
+merged into the main branch.
+
+
+### Rerun code often to discover errors early, and commit often.
+
+![rerun code](../img/blog/AITT/rerun_code_meme.png)
+
+**Run tests in the branches to make sure they pass, merge approved code into the main branch, pull down the latest change and run tests again**: You may never know if that single tiny innocent line of code can do a ton of damage to the whole project, especially if it
+affects the data used for analysis. Besides, a change in one file can have an unintended effect on another file. As a result, the only
+way for us to find out is to run pytest tests in those branches first to make sure they do not break the main code. Once they all
+passed, merge this code into the main branch and test them thoroughly via pytest one more time.
+
+**Make use of free time to rerun the whole project regularly**: Sometimes, code takes a long time to run, especially if your dataset is
+huge or the simulation is massive. Your team can write an automated script to rerun the whole project from scratch and just let it run,
+while you can still do errands in the meantime. If needed, these automated scripts can be let to run overnight or over the weekend.
+Even if your team finishes the whole project well in advance, just spend some more time rerunning it again to avoid any last minute
+panic.
+
+
+
+
+
+
+
+
+
 
 
 
