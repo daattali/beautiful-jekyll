@@ -18,7 +18,7 @@ However, more often than not, people tend to overestimate their productivity. Fu
 hackathon and the last two weeks for presentation, testing & documentation went by much quicker than we realized, hence the core time
 for the project development was actually around 5 weeks.
 
-![Timeline](../img/blog/AITT/unsplash_photo.jpg)
+![Timeline](../img/blog/AITT/realistic_timeline.png)
 
 [Photo obtained from Unsplash](https://unsplash.com/photos/oYmxe7sCitg)
 
@@ -35,7 +35,7 @@ timeline with a buffer based on initial estimates and continuously track our pro
 
 ### Have an agenda and a meeting moderator for each meeting with the faculty mentor/Capstone partner
 
-![Agenda](../img/blog/AITT/agenda_photo.jpg)
+![Agenda](../img/blog/AITT/agenda_photo.png)
 
 [Photo obtained from Unsplash](https://unsplash.com/photos/RLw-UC03Gwc)
 
