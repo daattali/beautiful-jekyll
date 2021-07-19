@@ -8,6 +8,7 @@ My name is Raihan Khan Raka. I am :
 
 - A competitive programmer since 2016
 - Participated in many national level contests as well as NCPC and ICPC Dhaka Regionals
+- Judge and Problem Setter of [Intra CoU Programming Contest 2020](https://toph.co/c/intra-cou-2020)
 - Solved over 2000+ problems in various online judges
 - A forever learner of data structure and algorithms
 - Interested in new technologies
