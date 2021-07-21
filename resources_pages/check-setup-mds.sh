@@ -74,10 +74,10 @@ echo "## System programs" >> check-setup-mds.log
 # so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
-    if ! [ -x "$(command -v /Library/PostgreSQL/12/bin/psql)" ]; then
+    if ! [ -x "$(command -v /Library/PostgreSQL/13/bin/psql)" ]; then
         echo "MISSING   postgreSQL 12.*" >> check-setup-mds.log
     else
-        echo "OK        "$(/Library/PostgreSQL/12/bin/psql --version) >> check-setup-mds.log
+        echo "OK        "$(/Library/PostgreSQL/13/bin/psql --version) >> check-setup-mds.log
     fi
 
     # rstudio is installed as an .app
@@ -92,13 +92,13 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     fi
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda=4.* bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda=4.* bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
-    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/12/bin/psql')" ]; then
-        echo "MISSING   psql 12.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/13/bin/psql')" ]; then
+        echo "MISSING   psql 13.*" >> check-setup-mds.log
     else
-        echo "OK        "$('/c/Program Files/PostgreSQL/12/bin/psql' --version) >> check-setup-mds.log
+        echo "OK        "$('/c/Program Files/PostgreSQL/13/bin/psql' --version) >> check-setup-mds.log
     fi
     if ! [ -x "$(command -v '/c/Program Files/RStudio/bin/rstudio')" ]; then
         echo "MISSING   rstudio 1.*" >> check-setup-mds.log
@@ -112,11 +112,11 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         echo "OK        "$(tlmgr.bat --version | head -1) >> check-setup-mds.log
     fi
     # Remove rstudio from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* make=4.* latex=3.* docker=19.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* make=4.* latex=3.* docker=20.* code=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=12.* rstudio=1.* R=4.* python=3.* conda=4.* bash=4.* \
-        git=2.* make=4.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
+    sys_progs=(psql=13.* rstudio=1.* R=4.* python=3.* conda=4.* bash=4.* \
+        git=2.* make=4.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
     # can just paste in the same syntax as for the conda installations
@@ -164,7 +164,7 @@ if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executa
     echo "In order to do this after the installation process," >> check-setup-mds.log
     echo "first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
 else
-    py_pkgs=(jupyterlab=2 numpy=1 pandas=1 flake8=3 black=19 nodejs=10 jupytext=1 jupyterlab-git=0)
+    py_pkgs=(jupyterlab=3 numpy=1 pandas=1 flake8=3 black=21 nodejs=15 jupytext=1 jupyterlab-git=0)
     # installed_py_pkgs=$(pip freeze)
     installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
@@ -222,7 +222,7 @@ echo "## R packages" >> check-setup-mds.log
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' to check R package versions." >> check-setup-mds.log
 else
-    r_pkgs=(tidyverse=1 blogdown=0 xaringan=0 renv=0 IRkernel=1 tinytex=0)
+    r_pkgs=(tidyverse=1 blogdown=1 xaringan=0 renv=0 IRkernel=1 tinytex=0)
     installed_r_pkgs=$(R -q -e "print(format(as.data.frame(installed.packages()[,c('Package', 'Version')]), justify='left'), row.names=FALSE)" | grep -v "^>" | tail -n +2 | sed 's/^ //;s/ *$//' | tr -s ' ' '=')
     for r_pkg in ${r_pkgs[@]}; do
         if ! $(grep -iq "$r_pkg" <<< $installed_r_pkgs); then
