@@ -37,15 +37,15 @@ Creating a perfect daily routine. Is there really such a thing as a _perfect dai
 
 ### My journey with a daily routine as a mom
 
-I didn't really have any consistent routine in place probably until I had a third kid. I think at that point it became more necessary as my kids became older too. Before then, we had our meal times, quiet times, and bedtimes instilled, but not much outside of that for myself or the kids. It was really just all over the place in many ways. As I took time to declutter LINKKKKK our home years back, it was the start of something wonderful for myself and our home life. Over time, I came to see that the time I spent during the day wasn't really the best spent. I was letting life happen far too often for us without being very intentional with that time. That's when I started to create simple daily routines for the family and myself LINK. It eventually led to me creating my first morning routine. You can read about some of my early morning routines on a few of my blogs [here](https://www.simplehomemom.com/tags/#morning%20routine%20with%20kids).
+I didn't really have any consistent routine in place probably until I had a third kid. I think at that point it became more necessary as my kids became older too. Before then, we had our [meal times](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/), [quiet times](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/), and [bedtimes](https://www.simplehomemom.com/how-to-create-a-calm-bedtime-routine/) instilled, but not much outside of that for myself or the kids. It was really just all over the place in many ways. As I took time to [declutter our home](https://www.thespruce.com/decluttering-your-entire-home-2648002) years back, it was the start of something wonderful for myself and our home life. Over time, I came to see that the time I spent during the day wasn't really the best spent. I was letting life happen far too often for us without being very intentional with that time. That's when I started to create simple daily routines for the family and myself. It eventually led to me creating my first morning routine. You can read about some of my early morning routines on a few of my blogs [here](https://www.simplehomemom.com/tags/#morning%20routine%20with%20kids).
 
 * **Related:** [**How to Have a Morning Routine with Children Around**](https://www.simplehomemom.com/how-to-have-a-morning-routine-with-children-around/)
 
 ### Three steps to create the perfect daily routine:
 
-1. Take note about what you do daily for a few days. What do you want to keep? What do you want to do less of? What would you like to add? What did you notice?
-2. Jot down some of your values and goals for your daily routine. Such as: reading more consistently, taking quiet time, or making time for friends.
-3. Work towards your perfect daily routine day by day. And give yourself lots of time and grace as you are changing old habits and instilling new ones.
+1. **Take note about what you do daily for a few days.** What do you want to keep? What do you want to do less of? What would you like to add? What did you notice?
+2. **Jot down some of your** [**values**](https://www.simplehomemom.com/flake-it-till-you-make-it-copy/) **and goals for your daily routine.** Such as: reading more consistently, taking quiet time, or making time for friends.
+3. **Work towards your perfect daily routine day by day.** And give yourself lots of time and grace as you are changing old habits and instilling new ones.
 
 And always come back to your values. Ask why you are doing your daily routine in the first place whenever you feel the motivation waning. Reassess, change things up as needed and keep going! Related BLOG here.
 
