@@ -53,6 +53,8 @@ Sidebar: even though I am sharing about the perfect daily routine, there really 
 
 **SAVE FOR FUTURE REFERENCE:**
 
+![](/uploads/how-to-create-a-perfect-routine-shm.jpg)
+
 ## DOWNLOAD YOUR FREE PRINTABLE DAILY PLANNER SHEET: a gift for you!
 
 _If you’d like to get started on daily planning or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_. I also have an upcoming class on beginner planning basics. If you’d like to be the first to know when that launches, shoot me a quick email at simplehomemom@gmail.com_
