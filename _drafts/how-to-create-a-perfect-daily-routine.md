@@ -11,8 +11,7 @@ readtime: true
 comments: true
 show-avatar: true
 title: How to Create a Perfect Daily Routine
-description: Tips to create a daily routine for yourself no matter how busy your life
-  is.
+description: Tips for creating a daily routine no matter how busy your life is.
 subtitle: "+ free printable daily planner sheet"
 share-img: ''
 redirect_from: []
@@ -49,7 +48,9 @@ I didn't really have any consistent routine in place probably until I had a thir
 
 And always come back to your values. Ask why you are doing your daily routine in the first place whenever you feel the motivation waning. Reassess, change things up as needed and keep going! Related BLOG here.
 
-Sidebar: even though I am sharing about the perfect daily routine, there really isn't such a thing. I'm often tweaking our routines to meet the needs of the family and myself! Recently, I'm reading a book to help me to even more carve out some new routines that I want to put in. I find writing things up in a brainstorm and then time blocking them to be very helpful...and having a spot to put them in if they're more periodic - such as weekly or monthly.
+> _"Ask why you are doing your daily routine in the first place whenever you feel the motivation waning."_
+
+And to tie up everything? I'm going to sidebar and share that even though I am sharing about the perfect daily routine, there really isn't such a thing. I'm often tweaking our routines to meet the needs of the family and myself! Recently, I'm reading a book to help me to even more carve out some new routines that I want to put in. I find writing things up in a brainstorm and then time blocking them to be very helpful...and having a spot to put them in if they're more periodic - such as weekly or monthly. If a daily routine is currently not working for us and we do nothing about it, well, then, nothing changes. It's worth a try to see if something will work better for us and we will wonder why we didn't try sooner. **_Here's to creating a "perfect" daily routine!_**
 
 **SAVE FOR FUTURE REFERENCE:**
 
@@ -57,12 +58,10 @@ Sidebar: even though I am sharing about the perfect daily routine, there really 
 
 ## DOWNLOAD YOUR FREE PRINTABLE DAILY PLANNER SHEET: a gift for you!
 
-_If you’d like to get started on daily planning or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_. I also have an upcoming class on beginner planning basics. If you’d like to be the first to know when that launches, shoot me a quick email at simplehomemom@gmail.com_
+_If you’d like to get started on your perfect daily routine, I created a free printable daily planner sheet for you that you can use that may be helpful. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_. I also have an upcoming class on beginner planning basics. If you’d like to be the first to know when that launches, shoot me a quick email at simplehomemom@gmail.com_
 
 **Other blogs of mine you may find helpful:**
 
-# [Five Things You Can Do to Have the Best Morning Ever](https://www.simplehomemom.com/five-things/)
-
-[https://www.simplehomemom.com/how-to-have-a-morning-routine-with-children-around/](https://www.simplehomemom.com/how-to-have-a-morning-routine-with-children-around/ "https://www.simplehomemom.com/how-to-have-a-morning-routine-with-children-around/")
-
-[**https://www.simplehomemom.com/how-to-help-reduce-the-feeling-of-overwhelm-as-a-mom-by-using-this-one-simple-practice/**](https://www.simplehomemom.com/how-to-help-reduce-the-feeling-of-overwhelm-as-a-mom-by-using-this-one-simple-practice/ "https://www.simplehomemom.com/how-to-help-reduce-the-feeling-of-overwhelm-as-a-mom-by-using-this-one-simple-practice/")
+* [Five Things You Can Do to Have the Best Morning Ever](https://www.simplehomemom.com/five-things/)
+* [How to Have a Morning Routine With Children Around](https://www.simplehomemom.com/how-to-have-a-morning-routine-with-children-around/)
+* [How to Help Reduce the Feeling of Overwhelm as a Mom by Using This One Simple Practice](https://www.simplehomemom.com/how-to-help-reduce-the-feeling-of-overwhelm-as-a-mom-by-using-this-one-simple-practice/)
