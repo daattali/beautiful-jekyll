@@ -31,7 +31,7 @@ Creating a perfect daily routine. Is there really such a thing as a _perfect dai
 * Routines are calming and comforting.
 * Routines ensure enough time for what energizes you.
 
-  _-benefits of having routines are from the_ [_Real Simple blog_](https://www.realsimple.com/work-life/life-strategies/benefits-of-routines)
+  _-above benefits of having routines are from the_ [_Real Simple blog_](https://www.realsimple.com/work-life/life-strategies/benefits-of-routines)
 
 ## ![A woman sitting at a table with her planner.](/uploads/how-to-create-a-perfect-daily-routine-shm.jpg "How to Create a Perfect Daily Routine SHM")
 
