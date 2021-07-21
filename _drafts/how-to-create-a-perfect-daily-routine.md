@@ -18,7 +18,7 @@ share-img: ''
 redirect_from: []
 
 ---
-Creating a perfect daily routine. Is there really such a thing as a _perfect daily routine_? There is no perfection in life, but a good planned daily routine can be very life-giving and something to come back to over and over. I've found this to be true over and over again during my years of being a mom and having a daily routine. Today on the blog, I'm sharing about **how to create a perfect daily routine**. I hope it helps you out today and gives you some ideas to create or tweak your own routines.
+Creating a perfect daily routine. Is there really such a thing as a _perfect daily routine_? There is no perfection in life, but a good planned daily routine can be very life-giving and something to come back to over and over. I've found this to be true over and over again during my years of being a mom and having a daily routine. Today on the blog, I'm sharing about **how to create a perfect daily routine**. I hope it helps you out today and gives you some ideas to create or tweak your own routines. And make sure to scroll down to receive your FREE printable daily planner sheet too!
 
 > _..."a good planned daily routine can be very life-giving and something to come back to over and over."_
 
@@ -51,11 +51,13 @@ And always come back to your values. Ask why you are doing your daily routine in
 
 Sidebar: even though I am sharing about the perfect daily routine, there really isn't such a thing. I'm often tweaking our routines to meet the needs of the family and myself! Recently, I'm reading a book to help me to even more carve out some new routines that I want to put in. I find writing things up in a brainstorm and then time blocking them to be very helpful...and having a spot to put them in if they're more periodic - such as weekly or monthly.
 
+**SAVE FOR FUTURE REFERENCE:**
+
 ## DOWNLOAD YOUR FREE PRINTABLE DAILY PLANNER SHEET: a gift for you!
 
 _If you’d like to get started on daily planning or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_. I also have an upcoming class on beginner planning basics. If you’d like to be the first to know when that launches, shoot me a quick email at simplehomemom@gmail.com_
 
-Other blogs of mine you may find helpful:
+**Other blogs of mine you may find helpful:**
 
 # [Five Things You Can Do to Have the Best Morning Ever](https://www.simplehomemom.com/five-things/)
 
