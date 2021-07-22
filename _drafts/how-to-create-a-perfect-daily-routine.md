@@ -60,6 +60,8 @@ And to tie up everything? I'm going to sidebar and share that even though I am s
 
 _If you’d like to get started on your perfect daily routine, I created a free printable daily planner sheet for you that you can use that may be helpful. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_. I also have an upcoming class on beginner planning basics. If you’d like to be the first to know when that launches, shoot me a quick email at simplehomemom@gmail.com_
 
+![A picture of my daily planner sheet.](/uploads/planner-sheet.png "Planner Sheet SHM")
+
 **Other blogs of mine you may find helpful:**
 
 * [Five Things You Can Do to Have the Best Morning Ever](https://www.simplehomemom.com/five-things/)
