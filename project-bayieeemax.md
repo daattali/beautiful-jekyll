@@ -22,7 +22,7 @@ Durante a execução do projeto será construído um modelo em um software de mo
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/guilherme_martinho.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/maria_amado.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/joao_guilherme.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
           </tr>
