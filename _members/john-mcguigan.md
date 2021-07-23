@@ -3,7 +3,7 @@ layout: member
 name: John McGuigan
 position: Programmer/Analyst
 image: /assets/img/members/john-mcguigan.png
-current: true
+current: false
 group: Staff
 ---
 
@@ -13,9 +13,10 @@ group: Staff
 
 **Experience**:
 
-Almost 10 years experience in software development focusing on analysis of next-generation sequencing data in forensic, research, and clinical contexts.
+Over a decade of experience in software development, laregly focused on analysis of next-generation sequencing data in forensic, research, and clinical contexts.
 
 **Projects**:
 
   * CLARITE
+  * Pandas-Genomics
   * Lab Website
