@@ -10,6 +10,7 @@ layout: base
 {% assign membersGradstudents = site.members | where:"group","Grad" %}
 {% assign membersAffiliate = site.members | where:"group","Affiliate" %}
 {% assign membersUndergrad = site.members | where:"group","Undergrad" %}
+{% assign membersFormer = site.members | where:"current","false" %}
 
 
 <div class="container" role="main">
@@ -105,8 +106,6 @@ layout: base
     {% endfor %}
   </div>
 
-  <!-- Todo: Add a former members section (where member.current is false) -->
-
   <!-- Photos -->
   <h2>Photos</h2>
   <div class="row photos">
@@ -116,6 +115,22 @@ layout: base
       {% include image-gallery.html folder="assets/img/photos/ashg_2019" %}
     <h3>Summer 2018</h3>
       {% include image-gallery.html folder="assets/img/photos/summer_2018" %}
+  </div>
+
+  <!-- Former Members -->
+  <h2>Former Members:</h2>
+  <div class="row former_members" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    {% for member in membersFormer %}
+      <a class="text-dark btn" href="{{ member.url }}">
+        <div class="card h-100 text-center border-dark" style="width: 18rem;">
+          <img src="{{ member.image }}" class="card-img-top" alt="Photo of {{member.name}}">
+          <div class="card-body text-white bg-dark">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text mt-1">{{ member.position}}</p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
   </div>
 
 </div>
