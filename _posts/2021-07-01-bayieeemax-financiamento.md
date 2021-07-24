@@ -5,26 +5,25 @@ subtitle: Um robô para auxiliar em processos de triagens
 cover-img: /assets/img/baymax.png
 thumbnail-img: /assets/img/baymax_thumb.jpeg
 share-img: /assets/img/baymax.png
-tags: [premio, foto, concurso]
+tags: [financiamento, projeto]
 ---
 
-O Comitê de Atividades Estudantis do IEEE Brasil organizou o Concurso de Fotos do **RAS Chapter Initiative Grant**. Este concurso tem como objetivo reconhecer e premiar Ramos IEEE no Brasil que registrem suas experiências e atividades vinculadas ao IEEE. As fotografias devem ser inspiradoras, promovendo a imagem do IEEE ao redor do mundo. 
+O [RAS Chapter Initiative Grant](https://www.ieee-ras.org/chapters/support-for-chapters) é um edital de financiamento da [**RAS**](https://www.ieee-ras.org/) que tem o objetivo de fomentar e encorajar capítulos na realização de atividades voltadas à robótica e automação, ampliando a presença dessas áreas no ambiente local.
 
-O projeto surgiu da ideia de realizar um projeto entre nossos 3 capítulos - RAS, PES e EMBS, 
+Este não é um financiamento voltado diretamente para projetos, porém, caso o Capítulo possua um projeto que possa trazer benefícios à comunidade e à própria RAS, há sim a possibilidade de ele ser aceito e financiado (como foi o nosso caso! &#129321;).
 
+Após submetermos nosso projeto a esse edital, fomos selecionados pela **RAS Internacional** e conseguimos um financiamento de **$2.000 dólares**, o MÁXIMO valor ofertado &#128562;.
 
-<p style="text-align: center;"> <font size="6"> <b>1º Lugar: Placas SolarIEEEs</b> </font> </p>
+![BayIEEEmax Financiamento](/assets/img/baymax_premio.png){: .mx-auto.d-block :}
 
-![Placas SolarIEEEs](/assets/img/placas_solarIEEEs.jpg){: .mx-auto.d-block :}
+A ideia surgiu da nossa vontade em realizar um projeto entre nossos 3 capítulos - RAS, PES e EMBS, e, se você já assistiu a famosa animação [*Operação Big Hero*](https://www.adorocinema.com/filmes/filme-209529/), sabe que o **Baymax** é um **"robô enfermeiro"** que se carrega sozinho, através de uma **base de carregamento**. E aí, conseguiu ver a relação com cada um de nossos capítulos? &#128556;
 
-<p style="text-align: center;"> <b>Legenda: </b>"A luz do Sol pode gerar não só energia elétrica, mas também energia para nossas vidas" </p>
+Dessa forma, nosso projeto consiste-se em construir um robô para auxiliar os profissionais de saúde nos processos de triagem, através de uma interação com o paciente e pela medição de alguns parâmetros de seu estado de saúde, contando com a participação de voluntários de nossos 3 capítulos!
 
+Quer saber mais sobre o projeto e como está seu andamento? Que tal acessar [a página do BayIEEEmax](ieeecimatec.github.io/project-bayieeemax)?
 
-<p style="text-align: center;"> <font size="6"> <b>2º Lugar: Fim de TardIEEE</b> </font> </p>
-
-![Fim de TardIEEE](/assets/img/fim_de_tardIEEE.jpg){: .mx-auto.d-block :}
-
-<p style="text-align: center;"> <b>Legenda: </b>"E nada como um dia após o outro"</p>
-
-E aí, gostou das fotos? 
+---
+<p style="text-align: center;">
+E aí, gostou da novidade?
 Siga nossas redes sociais e continue acompanhando nosso site, para manter-se sempre bem informado!
+</p>

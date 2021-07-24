@@ -34,5 +34,8 @@ A votação se encerrou às 18h do dia 18 de junho e, por incrível que pareça,
 
 <p style="text-align: center;"> <b>Legenda: </b>"E nada como um dia após o outro"</p>
 
-E aí, gostou das fotos? 
+---
+<p style="text-align: center;">
+E aí, gostou das fotos?
 Siga nossas redes sociais e continue acompanhando nosso site, para manter-se sempre bem informado!
+</p>
