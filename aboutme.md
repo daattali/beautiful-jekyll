@@ -77,12 +77,41 @@ Como maior organização profissional do mundo, o IEEE pode ser subdividido em *
             <td style="vertical-align: top"><small><center>(71) 9 9996-8020</center></small></td>
           </tr>
         </tbody>
+        <thead>
+          <tr>
+            <th><center><img src="{{ 'assets/img/voluntarios/ruan_utah.png' | relative_url }}" width="100" alt="ruan" class="img-fluid rounded-circle"/></center></th>
+            <th></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url }}" width="100" alt="matheus" class="img-fluid rounded-circle"/></center></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+            <td width="50%"><center>Ruan Utah</center></td>
+            <td></td>
+            <td width="50%"><center>Matheus Bomfim</center></td>
+          </tr>
+          <tr style="text-align: center" >
+            <td style="vertical-align: top"><small><center>Secretario</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>Tesoureiro</center></small></td>
+          </tr>
+          <tr style="text-align: center" >
+            <td style="vertical-align: top"><small><center>ruanutah@ieee.org</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>matheus.sbomfim@ieee.org</center></small></td>
+          </tr>
+          <tr style="text-align: center" >
+            <td style="vertical-align: top"><small><center>(71) 9 8148-6272</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>(71) 9 8407-6533</center></small></td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
 </div>
 
-<br/>
+</br>
 
 ### Quer entrar em contato conosco?
 

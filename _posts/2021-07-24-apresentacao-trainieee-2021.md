@@ -28,9 +28,9 @@ tags: [trainieee, apresentação]
   <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 mobile-side-scroller">
     <table class="table-borderless highlight">
         <tr>
-          <th><center><img src="{{ 'assets/img/trainees_ras_21.jpg' | relative_url }}" alt="trainee_ras"/></center></th>
-          <th><center><img src="{{ 'assets/img/trainees_pes_21.jpg' | relative_url }}" alt="trainee_pes"/></center></th>
-          <th><center><img src="{{ 'assets/img/trainees_embs_21.jpg' | relative_url }}" alt="trainee_embs"/></center></th>
+          <th><center><img width="214" src="{{ 'assets/img/trainees_ras_21.jpg' | relative_url }}" alt="trainee_ras"/></center></th>
+          <th><center><img width="214" src="{{ 'assets/img/trainees_pes_21.jpg' | relative_url }}" alt="trainee_pes"/></center></th>
+          <th><center><img width="214" src="{{ 'assets/img/trainees_embs_21.jpg' | relative_url }}" alt="trainee_embs"/></center></th>
         </tr>
     </table>
   </div>
