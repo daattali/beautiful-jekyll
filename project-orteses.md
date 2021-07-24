@@ -2,7 +2,7 @@
 layout: page
 title: Órteses do Futuro
 subtitle: Órteses flexíveis impressas em 3D
-cover-img: /assets/img/orteses.png
+cover-img: /assets/img/orteses_1.png
 ---
 
 O projeto órteses tem como objetivo a pesquisa e o desenvolvimento de órteses utilizando tecnologias de modelagem e impressão 3D para reduzir custos e torná-las mais confortáveis com orifícios para que o paciente tenha mais higiene do que com uma órtese padrão, analisando também materiais e técnicas de impressão 3D em futuros protótipos.
