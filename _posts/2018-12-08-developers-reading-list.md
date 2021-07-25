@@ -37,9 +37,9 @@ Most of these books have a higher level of legibility and I believe are great in
 {% capture Intro-So-Great-They-Cant-Ignore-You %}
 In this eye-opening account, Cal Newport debunks the long-held belief that "follow your passion" is good advice. Not only is the cliché flawed -- preexisting passions are rare and have little to do with how most people end up loving their work -- but it can also be dangerous, leading to anxiety and chronic job hopping.
 
-After making his case against passion, Newport sets out on a quest to discover the reality of how people end up loving what they do. Spending time with organic farmers, venture capitalists, screenwriters, freelance computer programmers, and others who admitted to deriving great satisfaction from their work, Newport uncovers the strategies they used and the pitfalls they avoided in developing their compelling careers. 
+After making his case against passion, Newport sets out on a quest to discover the reality of how people end up loving what they do. Spending time with organic farmers, venture capitalists, screenwriters, freelance computer programmers, and others who admitted to deriving great satisfaction from their work, Newport uncovers the strategies they used and the pitfalls they avoided in developing their compelling careers.
 
-Matching your job to a preexisting passion does not matter, he reveals. Passion comes after you put in the hard work to become excellent at something valuable, not before. 
+Matching your job to a preexisting passion does not matter, he reveals. Passion comes after you put in the hard work to become excellent at something valuable, not before.
 In other words, what you do for a living is much less important than how you do it.
 
 With a title taken from the comedian Steve Martin, who once said his advice for aspiring entertainers was to "be so good they can't ignore you," Cal Newport's clearly written manifesto is mandatory reading for anyone fretting about what to do with their life, or frustrated by their current job situation and eager to find a fresh new way to take control of their livelihood. He provides an evidence-based blueprint for creating work you love.
@@ -56,11 +56,11 @@ SO GOOD THEY CAN'T IGNORE YOU will change the way we think about our careers, ha
 {% capture Intro-Zero-to-One %}
 If you want to build a better future, you must believe in secrets.
 
-The great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. In Zero to One, legendary entrepreneur and investor Peter Thiel shows how we can find singular ways to create those new things. 
+The great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. In Zero to One, legendary entrepreneur and investor Peter Thiel shows how we can find singular ways to create those new things.
 
 Thiel begins with the contrarian premise that we live in an age of technological stagnation, even if we’re too distracted by shiny mobile devices to notice. Information technology has improved rapidly, but there is no reason why progress should be limited to computers or Silicon Valley. Progress can be achieved in any industry or area of business. It comes from the most important skill that every leader must master: learning to think for yourself.
 
-Doing what someone else already knows how to do takes the world from 1 to n, adding more of something familiar. But when you do something new, you go from 0 to 1. The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won’t make a search engine. Tomorrow’s champions will not win by competing ruthlessly in today’s marketplace. They will escape competition altogether, because their businesses will be unique. 
+Doing what someone else already knows how to do takes the world from 1 to n, adding more of something familiar. But when you do something new, you go from 0 to 1. The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won’t make a search engine. Tomorrow’s champions will not win by competing ruthlessly in today’s marketplace. They will escape competition altogether, because their businesses will be unique.
 
 Zero to One presents at once an optimistic view of the future of progress in America and a new way of thinking about innovation: it starts by learning to ask the questions that lead you to find value in unexpected places.
 {% endcapture %}
@@ -209,8 +209,8 @@ With more than 40 standalone stories, Lopp walks through a complete job life cyc
 {% capture Intro-Start-up-of-You %}
 A blueprint for thriving in your job and building a career by applying the lessons of Silicon Valley’s most innovative entrepreneurs.
 LinkedIn cofounder and chairman Reid Hoffman and author Ben Casnocha show how to accelerate your career in today’s competitive world. The key is to manage your career as if it were a start-up business: a living, breathing, growing start-up of you.
-Why? Start-ups—and the entrepreneurs who run them—are nimble. They invest in themselves. They build their professional networks. They take intelligent risks. They make uncertainty and volatility work to their advantage. 
-These are the very same skills professionals need to get ahead today. 
+Why? Start-ups—and the entrepreneurs who run them—are nimble. They invest in themselves. They build their professional networks. They take intelligent risks. They make uncertainty and volatility work to their advantage.
+These are the very same skills professionals need to get ahead today.
 {% endcapture %}
 
 <div class="alexa-link">
@@ -276,7 +276,7 @@ Most of the books here should be legible for those who have worked in software f
 ##### Jason Fried, DHH: [Rework][link-devreadinglist-Rework]
 {% capture Intro-Rework %}
 Most business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you're looking for a book like that, put this one back on the shelf.
-Read it and you'll know why plans are actually harmful, why you don't need outside investors, and why you're better off ignoring the competition. The truth is, you need less than you think. You don't need to be a workaholic. You don't need to staff up. You don't need to waste time on paperwork or meetings. You don't even need an office. Those are all just excuses. 
+Read it and you'll know why plans are actually harmful, why you don't need outside investors, and why you're better off ignoring the competition. The truth is, you need less than you think. You don't need to be a workaholic. You don't need to staff up. You don't need to waste time on paperwork or meetings. You don't even need an office. Those are all just excuses.
 What you really need to do is stop talking and start working. This book shows you the way. You'll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you.
 With its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who’s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of "downsizing," and artists who don’t want to starve anymore will all find valuable guidance in these pages.
 {% endcapture %}
@@ -356,9 +356,9 @@ This book provides a consistent vocabulary and visual notation framework to desc
 
 ##### Gene Kim, et al.: [Phonenix Project][link-devreadinglist-Phoenix-Project]
 {% capture Intro-Phoenix-Project %}
-Five years after this sleeper hit took on the world of IT and flipped it on its head, the 5th Anniversary Edition of The Phoenix Project continues to guide IT in the DevOps revolution. In this newly updated and expanded edition of the bestselling The Phoenix Project, co-author Gene Kim includes a new afterword and a deeper delve into the Three Ways as described in The DevOps Handbook. 
-Bill, an IT manager at Parts Unlimited, has been tasked with taking on a project critical to the future of the business, code named Phoenix Project. But the project is massively over budget and behind schedule. The CEO demands Bill must fix the mess in ninety days or else Bill's entire department will be outsourced. 
-With the help of a prospective board member and his mysterious philosophy of The Three Ways, Bill starts to see that IT work has more in common with a manufacturing plant work than he ever imagined. With the clock ticking, Bill must organize work flow streamline interdepartmental communications, and effectively serve the other business functions at Parts Unlimited. 
+Five years after this sleeper hit took on the world of IT and flipped it on its head, the 5th Anniversary Edition of The Phoenix Project continues to guide IT in the DevOps revolution. In this newly updated and expanded edition of the bestselling The Phoenix Project, co-author Gene Kim includes a new afterword and a deeper delve into the Three Ways as described in The DevOps Handbook.
+Bill, an IT manager at Parts Unlimited, has been tasked with taking on a project critical to the future of the business, code named Phoenix Project. But the project is massively over budget and behind schedule. The CEO demands Bill must fix the mess in ninety days or else Bill's entire department will be outsourced.
+With the help of a prospective board member and his mysterious philosophy of The Three Ways, Bill starts to see that IT work has more in common with a manufacturing plant work than he ever imagined. With the clock ticking, Bill must organize work flow streamline interdepartmental communications, and effectively serve the other business functions at Parts Unlimited.
 In a fast-paced and entertaining style, three luminaries of the DevOps movement deliver a story that anyone who works in IT will recognize. Readers will not only learn how to improve their own IT organizations, they'll never view IT the same way again.
 {% endcapture %}
 <div class="alexa-link">
@@ -369,7 +369,7 @@ In a fast-paced and entertaining style, three luminaries of the DevOps movement 
 
 All book images from amazon.com.
 
-<!-- 
+<!--
   Startup [not linked]
 - Hard thing about Hard Things
 - How to Fight a Hydra
