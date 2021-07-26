@@ -2,6 +2,7 @@
 layout: page
 title: About me
 subtitle: A small coder with big dreams
+full-width: true
 ---
 
 My name is Raihan Khan Raka. I am :
