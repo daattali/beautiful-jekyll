@@ -73,7 +73,33 @@ If  n = P1^a1 * P2^a2 * P3^a3 ................ Pk^ak , where P1,P2....Pk are pri
              
              = n * ( 1-1/P1 )( 1-1/P2 ).........( 1-1/pk)
 
-A simple source code in cpp can be found [here](https://github.com/raihankhan/DATA-STRUCTURE-AND-ALGORITHMS/blob/master/Number%20Theory/Euler's%20Phi.cpp)
+A simple source code in cpp is as follows -
+
+{% highlight cpp linenos %}
+
+int Phi(int n)
+{
+    int i,result=n;
+
+    for(i=2;i*i<=n ; i++)
+    {
+        if(n%i==0)
+        {
+            while(n%i==0)
+            {
+                n=n/i;
+            }
+            result-=result/i;
+        }
+    }
+
+    if(n>1)
+        result-=result/n;
+
+    return result;
+}
+
+{% endhighlight %}
 
 #### calculating Phi for all numbers less than or equal to n
 
@@ -99,8 +125,112 @@ Below is complete algorithm:
 4) Run a loop from i = 1 to n and print all Ph[i] values.
 [collected](https://www.geeksforgeeks.org/eulers-totient-function-for-all-numbers-smaller-than-or-equal-to-n/)
 
-A simple source code in cpp can be found [here](https://github.com/raihankhan/DATA-STRUCTURE-AND-ALGORITHMS/blob/master/Number%20Theory/Euler's%20Phi%20of%20all%20numbers.cpp)
+A simple source code in cpp using precomputation of phi values for all numbers upto n is as follows - 
 
-#### For multiple queries we can calculate all the prime numbers requied using a seive of eratostenes and then calculate phi for each query. [This](https://github.com/raihankhan/DATA-STRUCTURE-AND-ALGORITHMS/blob/master/Number%20Theory/Euler's%20Phi%20for%20multiple%20queries(optimized).cpp) is a simple source code illustration.  
+{% highlight cpp linenos %}
 
-                    
+int phi[p6];
+void precompute(int n)
+{
+    int i,j;
+    for(i=1;i<=n;i++) phi[i]=i;
+
+    for(i=2;i<=n;i++)
+    {
+        if(phi[i]==i)
+        {
+            phi[i]=i-1;
+
+            for(j=2*i; j<=n ; j+=i)
+            {
+                phi[j] =( phi[j]/i )*(i-1) ;
+            }
+        }
+    }
+}
+int main()
+{
+   int n,i;
+   cin >> n ;
+   precompute(n);
+
+   for(i=1;i<=n;i++)
+   {
+       cout << "Phi(" << i << ") = " <<  phi[i] << endl;
+   }
+    return 0;
+}
+
+{% endhighlight %}
+
+
+#### For multiple queries we can calculate all the prime numbers requied using a seive of eratostenes and then calculate phi for each query.
+
+{% highlight cpp linenos %}
+
+#include<bits/stdc++.h>
+
+#define       p6                   1000007
+#define       veci                 vector<int>
+#define       pb                   push_back
+
+using namespace std;
+bool arr[1000007];
+veci v;
+void seive(int n)
+{
+    int root=sqrt(n)+1,p,i,j;
+    arr[0]=arr[1]=1;
+    v.pb(2);
+    for(i=3;i<=root;i+=2)
+    {
+        if(!arr[i])
+        {
+            v.pb(i);
+            p=i<<1;
+            for( j=i*i ; j<=n ; j+=p)
+                arr[j]=1;
+        }
+    }
+
+    for( i=root&1?root+2:root+1 ; i<=n ; i+=2 )
+        if(!arr[i])
+        v.pb(i);
+}
+
+lli phi(lli n)
+{
+    int i,j,k,result=n;
+
+    for(i=0 ; v[i]*v[i]<=n ; i++)
+    {
+        if(n%v[i]==0)
+        {
+            while(n%v[i]==0)
+                n/=v[i];
+
+            result-=result/v[i];
+        }
+    }
+
+    if(n>1)
+        result-=result/n;
+
+    return result;
+}
+int main()
+{
+    seive(p6);
+
+    int i,j,k,n,q;
+    cin >> q;
+    while(q--)
+    {
+        cin >> n;
+        printf("%d\n",phi(n));
+    }
+ 
+    return 0;
+} 
+
+{% endhighlight %}                
