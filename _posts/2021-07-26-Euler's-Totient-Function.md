@@ -129,6 +129,7 @@ A simple source code in cpp using precomputation of phi values for all numbers u
 
 {% highlight cpp linenos %}
 
+#include<bits/stdc++.h>
 int phi[p6];
 void precompute(int n)
 {
