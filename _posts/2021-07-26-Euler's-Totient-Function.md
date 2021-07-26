@@ -166,7 +166,7 @@ int main()
 {% endhighlight %}
 
 
-#### For multiple queries we can calculate all the prime numbers requied using a seive of eratostenes and then calculate phi for each query.
+For multiple queries we can calculate all the prime numbers requied using a seive of eratostenes and then calculate phi for each query.
 
 {% highlight cpp linenos %}
 
