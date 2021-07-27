@@ -22,7 +22,7 @@ I don't know about you, but by the time I'm done lunch, I'm pooped. My ears. My 
 
 ## Keep things simple
 
-Anytime I try to do anything elaborate, I find I always end up dropping it, so if you are new to quiet the idea of quiet time, start small. Keeping things simple will make quiet time that much more doable long term. Test and try different things over time, too. I read a fantastic book called _Simplicity Parenting_ once that reminded me over and over that oftentimes, simple is best for kids (and adults too!). Here are some tips from the book [here](https://designformankind.com/2018/05/simplicity-parenting/). You can also find the book in my book section in my Amazon shops: [US shop](www.amazon.com/shop/simplehomemom) and [Canadian shop](www.amazon.ca/shop/simplehomemom).
+Anytime I try to do anything elaborate, I find I always end up dropping it, so if you are new to quiet the idea of quiet time, start small. Keeping things simple will make quiet time that much more doable long term. Test and try different things over time, too. I read a fantastic book called _Simplicity Parenting_ once that reminded me over and over that oftentimes, simple is best for kids (and adults too!). Here are some tips from the book [here](https://designformankind.com/2018/05/simplicity-parenting/). You can also find the book in my book section in my Amazon shops: [US shop](www.amazon.com/shop/simplehomemom) and [Canadian shop](www.amazon.ca/shop/simplehomemom). LOGIN AND ADD FIRST!!!!
 
 * Related: [How to Instill Habits in Kids](https://www.simplehomemom.com/how-to-instill-habits-in-kids/)
 
