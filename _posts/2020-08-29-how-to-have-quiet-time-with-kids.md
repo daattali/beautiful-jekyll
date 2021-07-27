@@ -28,9 +28,13 @@ Anytime I try to do anything elaborate, I find I always end up dropping it, so i
 
 ## The key is consistency
 
-If you really desire a quiet time for your family, know that it may get harder before it gets easier. New things are just harder to implement because they are new. But, from nine years of quiet time over here, the upfront work was definitely worth it! I really look forward to quiet time every day and the kids do too (most of the time).
+If you really desire a quiet time for your family, know that it may get harder before it gets easier. New things are just harder to implement because they are new. But, from ten years of quiet time over here, the upfront work was definitely worth it! I really look forward to quiet time every day and the kids do too (most of the time). [Here is a blog](https://nurtureandthriveblog.com/quiet-time-for-kids/) I found on the scientific long term benefits of having a daily quiet time with kids:
 
-## A look at our quiet time right now
+1. Provides space for your child's developing creativity.
+2. Increases your child's autonomy.
+3. Provides a chance to recenter and recharge.
+
+### A look at our quiet time right now
 
 While I put the baby for a nap at 1, my boys:
 
@@ -44,3 +48,5 @@ When my baby is asleep, I am usually in my office working. Answering emails, lis
 And don’t take it just from me, [here’s a blog](https://blog.outschool.com/quiet-time-benefits/) that goes over the research of the benefits of quiet time for kids. Fascinating!
 
 _I also recently put together a step by step simple template for quiet time if you'd like that too. Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
+
+ (Blog updated July 2021)
