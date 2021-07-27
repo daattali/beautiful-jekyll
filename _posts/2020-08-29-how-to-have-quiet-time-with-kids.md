@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Have Quiet Time with Kids
-description: ""
+description: Simple tips to instill a quiet time with kids at home every day.
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
@@ -13,16 +13,18 @@ tags:
 - simple quiet time
 - benefits of quiet time for kids
 redirect_from:
-  - 2020-08-29-how-to-have-quiet-time-with-kids
----
+- 2020-08-29-how-to-have-quiet-time-with-kids
 
+---
 ![A kid sitting at the table thinking.](/uploads/quiettime.jpg "quiettime")
 
-I don't know about you, but by the time I'm done lunch, I'm pooped. My ears. My body. My everything just needs some down time. I have four children, two with higher demands as they are both under five, so rest and quiet is needed for all of us. And we take that time every afternoon. We call it quiet time in our house. Today on the blog, I'm sharing with you how to have a quiet time routine with kids (and by taking a look at what we do).
+I don't know about you, but by the time I'm done lunch, I'm pooped. My ears. My body. My everything just needs some down time. I have four children, two with higher demands as they are both under five, so . And we take that time every afternoon. We call it "quiet time" in our house. Today on the blog, I'm sharing with you how to have a quiet time routine with kids.
 
 ## Keep things simple
 
-Anytime I try to do anything elaborate, I find I always end up dropping it, so if you are new to quiet the idea of quiet time, start small. Keeping things simple will make quiet time that much more doable long term. Test and try different things over time, too.
+Anytime I try to do anything elaborate, I find I always end up dropping it, so if you are new to quiet the idea of quiet time, start small. Keeping things simple will make quiet time that much more doable long term. Test and try different things over time, too. I read a fantastic book called _Simplicity Parenting_ once that reminded me over and over that oftentimes, simple is best for kids (and adults too!). Here are some tips from the book [here](https://designformankind.com/2018/05/simplicity-parenting/). You can also find the book in my book section in my Amazon shops: [US shop](www.amazon.com/shop/simplehomemom) and [Canadian shop](www.amazon.ca/shop/simplehomemom).
+
+* Related: [How to Instill Habits in Kids](https://www.simplehomemom.com/how-to-instill-habits-in-kids/)
 
 ## The key is consistency
 
@@ -42,4 +44,3 @@ When my baby is asleep, I am usually in my office working. Answering emails, lis
 And don’t take it just from me, [here’s a blog](https://blog.outschool.com/quiet-time-benefits/) that goes over the research of the benefits of quiet time for kids. Fascinating!
 
 _I also recently put together a step by step simple template for quiet time if you'd like that too. Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
-
