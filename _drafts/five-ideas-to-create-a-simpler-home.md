@@ -15,7 +15,7 @@ share-img: ''
 redirect_from: []
 
 ---
-Many little things over a period of time add up in the home. It doesn't often start out that way in my experience, but **little habits over time can add up to so much**. Today on the blog, I'm sharing about five ideas to create a simpler home. I hope you find the ideas helpful too.
+Many little things over a period of time add up in the home. It doesn't often start out that way in my experience, but **little habits over time can add up to so much**. Today on the blog, I'm sharing about five ideas to create a simpler home. I hope the ideas are helpful!
 
 Lately we're needing work on some routines around meal times because some days...it's a bomb over here. Oh my. Simpler isn't the word I'd call it, but hey, one thing at a time is the goal, right?
 
@@ -25,7 +25,7 @@ Lately we're needing work on some routines around meal times because some days..
 
 ## FIVE IDEAS TO CREATE A SIMPLER HOME:
 
-1. **Pick up as you go (as much as you can).** I'm talking about seeing something at the top of the stairs that need to go downstairs or those scrap pieces of paper on the table. If you have a minute, picking up as you go can help so much overall. It's a habit our family is working on too, a little bit at a time! Sometimes this isn't doable, though, because we have a home full of children, so we do what we can when we can.
+1. **Pick up as we go (as much as you can).** I'm talking about seeing something at the top of the stairs that need to go downstairs or those scrap pieces of paper on the table. If you have a minute, picking up as you go can help so much overall. It's a habit our family is working on too, a little bit at a time! Sometimes this isn't doable, though, because we have a home full of children, so we do what we can when we can.
 2. **Focus on high traffic chores for tidying daily such as the kitchen and laundry.** These two places in the home tend to explode easily without consistent attention. Focusing on those two areas will help create a simpler home, even when the rest of the home is a bomb. That's what we do when we need to scale back for various reasons such as having a newborn or someone being sick.
 3. **Meal plan.** If we don't meal plan in our home, it becomes very obvious very quickly. There's nothing like having a hangry crew waiting for their supper! ha. Even taking five minutes every week to do a loose meal plan can help so very much. Starting somewhere is better than having no plan at all, right? Related BLOG here.
 4. **Write routines down.** Research shows that writing things down will help commit whatever you are writing down better to memory. Linkkkk. By writing those routines down, it's going to have a greater chance of sticking. Plus it won't be easily forgotten.
