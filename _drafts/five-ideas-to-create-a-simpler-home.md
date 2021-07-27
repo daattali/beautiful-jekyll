@@ -21,7 +21,9 @@ Lately we're needing work on some routines around meal times because some days..
 
 > _"Little habits over time can add up to so much."_
 
-FIVE IDEAS TO CREATE A SIMPLER HOME:
+![A home mat at the front door.](/uploads/5-ideas-to-create-a-simpler-home-shm.jpg "5 Ideas to Create a Simpler Home SHM")
+
+## FIVE IDEAS TO CREATE A SIMPLER HOME:
 
 1. **Pick up as you go (as much as you can).** I'm talking about seeing something at the top of the stairs that need to go downstairs or those scrap pieces of paper on the table. If you have a minute, picking up as you go can help so much overall. It's a habit our family is working on too, a little bit at a time! Sometimes this isn't doable, though, because we have a home full of children, so we do what we can when we can.
 2. **Focus on high traffic chores for tidying daily such as the kitchen and laundry.** These two places in the home tend to explode easily without consistent attention. Focusing on those two areas will help create a simpler home, even when the rest of the home is a bomb. That's what we do when we need to scale back for various reasons such as having a newborn or someone being sick.
