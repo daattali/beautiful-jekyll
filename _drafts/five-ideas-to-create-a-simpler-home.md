@@ -65,3 +65,7 @@ _If this is an area you’d like to work on – to simplify your home life, you 
 FREE printable list of 20 routines to look at to save time in your home
 
 You can find that freebie [HERE](https://mailchi.mp/fb4dd0689eec/5rpn7cuy68). And if you’d like a deeper dive into creating your routines for your home life, you’ll find a unit just on routines in my course: Simplify Your Home Life: a Course for busy moms. You can find more about the course [HERE](http://www.simplehomemom.com/course).
+
+**SAVE FOR FUTURE REFERENCE:**
+
+![Blog image overview with a "home" mat on a porch.](/uploads/five-ideas-to-create-a-simpler-home-shm.jpg "Five ideas to create a simpler home SHM")
