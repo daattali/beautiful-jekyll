@@ -3,6 +3,7 @@ layout : post
 title : Boostrap
 subtitle : data mining - bagging
 date : 2021-07-28
+use_math : True
 #categories:
 tags : [datascience, datamining, machinelearning]
 toc_sticky : True
