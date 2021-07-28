@@ -55,3 +55,5 @@ And don’t take it just from me, [here’s a blog](https://blog.outschool.com/q
 _I also recently put together a step by step simple template for quiet time if you'd like that too. Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
 
 (Blog updated July 2021)
+
+**Other blogs of mine you may enjoy too:**
