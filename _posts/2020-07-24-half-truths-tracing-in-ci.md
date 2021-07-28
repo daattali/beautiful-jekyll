@@ -15,6 +15,13 @@ This article is a compilation of my recent conference talk at o11ycon, a confere
 
 <!--[Slides]--> 
 * 🔗 [Video](https://www.youtube.com/watch?v=1qJIM2uJDT0) ([Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/))
+* 🔗 [Discussion](https://news.ycombinator.com/item?id=27976758) on hacker news.
+
+**Abstract**
+
+Traditional monitoring tools like logs and metrics were necessary but not sufficient to debug how and where systems failed in CI, which relies on multiple, interconnected critical systems (e.g. GHE, Checkpoint, Cypress).
+
+In this talk, Frank Chen shares how traces gave us a critical and compounding capability to better understand where, when, how, and why faults occur for our customers in CI. We share how shared tooling for high-dimensionality event traces (using SlackTrace and SpanEvents) could significantly increase our velocity to diagnose code in flight and to debug complex system interactions. We go from stories with early incidents that motivated further investment throughout Slack’s internal tooling teams to stories about gains in performance and resiliency throughout our infrastructure.
 
 ---
 
