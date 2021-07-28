@@ -15,7 +15,7 @@ This article is a compilation of my recent conference talk at o11ycon, a confere
 
 <!--[Slides]--> 
 * [🔗 Video](https://www.youtube.com/watch?v=1qJIM2uJDT0)
-* [📋 Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/))
+* [📋 Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/)
 * [💬 Discussion](https://news.ycombinator.com/item?id=27976758) on hacker news
 
 **💡 Abstract**
