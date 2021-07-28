@@ -1,7 +1,13 @@
 ---
 post: post
-tags: []
-thumbnail-img: "/uploads/headshot.jpg"
+tags:
+- simple home
+- simple habits
+- simpler home life
+- simple routines
+- simple home tips
+- habits
+thumbnail-img: "/uploads/5-ideas-to-create-a-simpler-home-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
@@ -69,3 +75,9 @@ You can find that freebie [HERE](https://mailchi.mp/fb4dd0689eec/5rpn7cuy68). An
 **SAVE FOR FUTURE REFERENCE:**
 
 ![Blog image overview with a "home" mat on a porch.](/uploads/five-ideas-to-create-a-simpler-home-shm.jpg "Five ideas to create a simpler home SHM")
+
+[How Autopiloting Your Home Life Can be a Good Thing](https://www.simplehomemom.com/How-Autopiloting-Your-Home-Life-Can-be-a-Good-Thing/)_April 26, 2021_
+
+[5 Key Routines to Help Simplify your Home Life](https://www.simplehomemom.com/5-key-routines-to-help-simplify-your-home-life/)_March 19, 2021_
+
+[10 Simple Habits to Create a Simpler Home](https://www.simplehomemom.com/10-simple-habits-to-create-a-simpler-home/)_February 19, 2021_
