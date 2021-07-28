@@ -7,7 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
-* [How to Create a Perfect Daily Routine + free printable daily planner sheet](https://www.simplehomemom.com/how-to-create-a-perfect-daily-routine/)
+* [Five Ideas to Create a Simpler Home FREEBIE: printable list of 20 routines to look at to save time in your home](https://www.simplehomemom.com/five-ideas-to-create-a-simpler-home/)
 * Be the first to know when it launches: [The Simple Meal Planning Guide + grab your freebie: Summer Food Ideas](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
