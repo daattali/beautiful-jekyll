@@ -14,10 +14,11 @@ This article is a compilation of my recent conference talk at o11ycon, a confere
 ---
 
 <!--[Slides]--> 
-* 🔗 [Video](https://www.youtube.com/watch?v=1qJIM2uJDT0) ([Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/))
-* 🔗 [Discussion](https://news.ycombinator.com/item?id=27976758) on hacker news.
+* [🔗 Video](https://www.youtube.com/watch?v=1qJIM2uJDT0)
+* [📋 Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/))
+* [💬 Discussion](https://news.ycombinator.com/item?id=27976758) on hacker news
 
-**Abstract**
+**💡 Abstract**
 
 Traditional monitoring tools like logs and metrics were necessary but not sufficient to debug how and where systems failed in CI, which relies on multiple, interconnected critical systems (e.g. GHE, Checkpoint, Cypress).
 
@@ -25,7 +26,7 @@ In this talk, Frank Chen shares how traces gave us a critical and compounding ca
 
 ---
 
-*By Eric Thompson 2021.07.08*
+*By [Eric Thompson](https://www.honeycomb.io/author/eric-thompson/) 2021.07.08*
  
 Slack experienced meteoric growth between 2017 and 2020—but that level of growth came with growing pains. In his talk at the 2021 o11ycon+hnycon, [Frank Chen](http://frankc.net/) ([LinkedIn](https://www.linkedin.com/in/fxchen/)), a Slack Senior Staff Engineer, detailed one of Slack’s biggest pain points in that period: flaky tests.
 
