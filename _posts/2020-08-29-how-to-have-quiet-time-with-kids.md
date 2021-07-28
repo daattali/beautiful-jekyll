@@ -57,3 +57,7 @@ _I also recently put together a step by step simple template for quiet time if y
 (Blog updated July 2021)
 
 **Other blogs of mine you may enjoy too:**
+
+* [Setting Boundaries Around Bedtime Routines](https://www.simplehomemom.com/setting-boundaries-around-bedtime-routines/)
+* [How to Create a Calm Bedtime Routine](https://www.simplehomemom.com/how-to-create-a-calm-bedtime-routine/)
+* [How to Create a Daily Rhythm at Home](https://www.simplehomemom.com/how-to-create-a-daily-rhythm-at-home/)
