@@ -20,7 +20,7 @@ navbar-links:
     #- Programming : "/_posts/2020-02-26-flake-it-till-you-make-it.md"
     - Programming: "https://www.markdowntutorial.com/" 
   링크연습 : "/_posts/"
-#Author's home: "https://deanattali.com"
+Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
