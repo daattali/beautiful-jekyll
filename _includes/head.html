@@ -119,10 +119,6 @@
   <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}">
   <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
   {% endif %}
-  
-  {% if page.use_math %}
-  {% include mathjax_support.html %}
-  {% endif %}
 
   {% if img != "" and img != site.avatar %}
   <meta name="twitter:card" content="summary_large_image">
@@ -150,5 +146,11 @@
       {% include {{ file }} %}
     {% endfor %}
   {% endif %}
+  
+    
+  {% if page.use_math %}
+  {% include mathjax_support.html %}
+  {% endif %}
+
 
 </head>
