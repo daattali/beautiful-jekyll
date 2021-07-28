@@ -17,9 +17,10 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Statistics: "https://beautifuljekyll.com"
-    - Programming : "/_posts/2020-02-26-flake-it-till-you-make-it.md"
-   # - Programming: "https://www.markdowntutorial.com/" 
-  #Author's home: "https://deanattali.com"
+    #- Programming : "/_posts/2020-02-26-flake-it-till-you-make-it.md"
+    - Programming: "https://www.markdowntutorial.com/" 
+  링크연습 : "/_posts/"
+#Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
