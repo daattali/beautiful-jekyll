@@ -22,7 +22,7 @@ I don't know about you, but by the time I'm done lunch, I'm pooped. My ears. My 
 
 ## Keep things simple
 
-Anytime I try to do anything elaborate, I find I always end up dropping it, so if you are new to quiet the idea of quiet time, start small. Keeping things simple will make quiet time that much more doable long term. Test and try different things over time, too. I read a fantastic book called _Simplicity Parenting_ once that reminded me over and over that oftentimes, simple is best for kids (and adults too!). Here are some tips from the book [here](https://designformankind.com/2018/05/simplicity-parenting/). You can also find the book in my book section in my Amazon shops: [US shop](www.amazon.com/shop/simplehomemom) and [Canadian shop](www.amazon.ca/shop/simplehomemom). LOGIN AND ADD FIRST!!!!
+Anytime I try to do anything elaborate, I find I always end up dropping it, so if you are new to quiet the idea of quiet time, start small. Keeping things simple will make quiet time that much more doable long term. Test and try different things over time, too. I read a fantastic book called _Simplicity Parenting_ once that reminded me over and over that oftentimes, simple is best for kids (and adults too!). Here are some tips from the book [here](https://designformankind.com/2018/05/simplicity-parenting/). You can also find the book in my book section in my Amazon shops: [US shop](www.amazon.com/shop/simplehomemom) and [Canadian shop](www.amazon.ca/shop/simplehomemom). 
 
 * Related: [How to Instill Habits in Kids](https://www.simplehomemom.com/how-to-instill-habits-in-kids/)
 
@@ -39,14 +39,19 @@ If you really desire a quiet time for your family, know that it may get harder b
 While I put the baby for a nap at 1, my boys:
 
 * Tidy their rooms, usually one to two tidy tasks if it’s more of a mess.
+* Put their clean clothes away.
 * Read an assigned school reading.
 * Listen to audiobooks.
 * Watch two shows…and don't bug mom. Ha!
 
+_(This routine is pretty much the same even more than a year later)._
+
 When my baby is asleep, I am usually in my office working. Answering emails, listening to music with the odd interruption here and there. I take some time to close my eyes and rest with the baby before this too.
+
+_Update 2021: Now that my youngest is not napping, she hangs out with the second youngest and plays, reads, and watches a couple shows. I've also since created my own routine during quiet time that includes prayer, rest, and work. It's been so life-giving for me!_
 
 And don’t take it just from me, [here’s a blog](https://blog.outschool.com/quiet-time-benefits/) that goes over the research of the benefits of quiet time for kids. Fascinating!
 
 _I also recently put together a step by step simple template for quiet time if you'd like that too. Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
 
- (Blog updated July 2021)
+(Blog updated July 2021)
