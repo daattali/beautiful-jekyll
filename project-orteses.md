@@ -14,9 +14,9 @@ O projeto órteses tem como objetivo a pesquisa e o desenvolvimento de órteses 
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/alexandre_adonai.png' | relative_url }}" width="100" alt="alexandre" class="img-fluid rounded-circle" /></center></th>
+            <th><a href="https://www.linkedin.com/in/alexandre-adonai-gama-da-silva-365a35211/"><center><img src="{{ 'assets/img/voluntarios/alexandre_adonai.png' | relative_url}}" width="100" alt="alexandreadonai" class="img-fluid rounded-circle" /></center></a></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url }}" width="100" alt="matheus" class="img-fluid rounded-circle"/></center></th>
+            <th><a href="https://www.linkedin.com/in/matheus-dos-santos-bomfim-459421191/"><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url}}" width="100" alt="matheus" class="img-fluid rounded-circle" /></center></a></th>
           </tr>
         </thead>
         <tbody>
