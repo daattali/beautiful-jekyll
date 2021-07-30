@@ -127,7 +127,7 @@ Go to <https://git-scm.com/download/win> and download the windows version of git
 
 ![](/resources_pages/imgs/vscode-as-git-editor.png)
 
-> Note if you wish to pin Git Bash to the taskbar, you need to search for the program in the start menu, right click the entry and select "Pin to taskbar". If you instead first launch the program and pin it by right clicking on the taskbar icon, Git Bash will open with the wrong home directory (`/` instead of `/c/users/$USERNAME`.
+> **Note** if you wish to pin Git Bash to the taskbar, you need to search for the program in the start menu, right click the entry and select "Pin to taskbar". If you instead first launch the program and pin it by right clicking on the taskbar icon, Git Bash will open with the wrong home directory (`/` instead of `/c/users/$USERNAME`.
 
 After installation, test if you were successful by opening the Git Bash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just "the terminal"):
 
@@ -161,7 +161,7 @@ git --version
 ```
 
 ```
-git version 2.28.0.windows.1
+git version 2.32.0.windows.2
 ```
 
 You can launch many windows programs from the Bash terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
@@ -171,8 +171,8 @@ code --version
 ```
 
 ```
-1.47.3
-91899dcef7b8110878ea59626991a18c8a6a1b3e
+1.58.2
+c3f126316369cd610563c75b1b1725e0679adfb3
 x64
 ```
 
@@ -185,7 +185,7 @@ git config --global user.name "Jane Doe"
 git config --global user.email janedoe@example.com
 ```
 
-> Note: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
+> **Note**: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 
 ### Setting VS Code as the default editor
 
@@ -195,7 +195,7 @@ To make programs run from the terminal (such as `git`) use VS Code by default, w
 code ~/.bash_profile
 ```
 
-> Note: If you see any existing lines in your `~/.bash_profile`
+> **Note**: If you see any existing lines in your `~/.bash_profile`
 > related to a previous Python or R installation,
 > please remove these.
 
@@ -228,7 +228,7 @@ python --version
 which should return something like this:
 
 ```
-Python 3.8.3
+Python 3.9.1
 ```
 
 > If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.8**.
@@ -254,10 +254,10 @@ python --version
 you should now see the same output as above:
 
 ```
-Python 3.8.3
+Python 3.9.1
 ```
 
-> Note that if you want to run Python interactively from the Git Bash terminal, you need to prepend the `winpty` command, so the full command would be `winpty python` (if you run this, note that you can exit the Python prompt by typing `exit()`). Running just `python` works on other setups, but will freeze the Git Bash terminal.
+> **Note** that if you want to run Python interactively from the Git Bash terminal, you need to prepend the `winpty` command, so the full command would be `winpty python` (if you run this, note that you can exit the Python prompt by typing `exit()`). Running just `python` works on other setups, but will freeze the Git Bash terminal.
 
 Let's also check the version of the `conda` package manager. If you type
 
@@ -268,7 +268,7 @@ conda --version
 you should see something like this
 
 ```
-conda 4.8.3
+conda 4.10.3
 ```
 
 > *Optional* One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
@@ -312,11 +312,11 @@ To install packages individually, we can now use the following command: `conda i
 
 ```
 conda install \
- jupyterlab=2.* \
+ jupyterlab=3.* \
  numpy=1.* \
  pandas=1.* \
  flake8=3.* \
- black=19.*
+ black=21.*
 ```
 
 `conda` will show you the packages that will be downloaded,
@@ -334,17 +334,15 @@ we need to use the `pip` package manager instead of `conda`:
 pip install https://github.com/jupyter/nbconvert/archive/6.0.0a6.zip
 ```
 
-> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
+> **Note**: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### JupyterLab setup
 
 We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
 
 ```
-conda install -y nodejs=10.*
-pip install --upgrade jupyterlab-git
-conda install -y jupytext=1.*
-jupyter lab build
+conda install nodejs=15.*
+conda install -c conda-forge jupyterlab jupyterlab-git jupytext
 ```
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
@@ -371,7 +369,7 @@ Append the following line to the file
 
 ```
 # Add R and Rscript to PATH
-export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+export PATH="/c/Program Files/R/R-4.1.0/bin/x64":$PATH
 ```
 
 Then save the file and exit VS Code.
@@ -384,8 +382,8 @@ R --version
 which should return something like:
 
 ```
-R version 4.0.2 (2020-06-22) -- "Taking Off Again"
-Copyright (C) 2020 The R Foundation for Statistical Computing
+R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+Copyright (C) 2021 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -395,7 +393,7 @@ For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
 
-> Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
+> **Note**: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
 
 ### RStudio
 
@@ -426,13 +424,20 @@ Click "OK" on all of the three windows we opened above and you're done! If you o
 both applications should return the same values, and the first one should be a path inside your user directory e.g.
 
 ```
-"C:/Users/joelo/R/win-library/4.0"   "C:/Program Files/R/R-4.0.2/library"
+"C:/Users/florencia/R/win-library/4.1" "C:/Program Files/R/R-4.1.0/library"
 ```
 
 If they don't return the same paths, please try to setting up your environmental variable again
 and making sure that it is pointing to the correct folder.
 
 **Do not continue unless both R from terminal and R from RStudio return the same paths here or later parts of the installation will fail.**
+
+Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
+Go to `Tools > Global Options > Code > Editing` and tick the following option:
+
+![](/resources_pages/imgs/new-pipe-rstudio.png)
+
+Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
 
 ### Rtools
 
@@ -458,7 +463,7 @@ install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'devtools', 'use
 
 If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
 
-> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
+> **Note**: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IRkernel
 
@@ -491,7 +496,7 @@ To improve the experience of using R in JupyterLab,
 we will add an extension that allows us to setup keyboard shortcuts for inserting text
 (thanks to former MDS student Ryan Homer for developing this extension!).
 By default,
-it creates shortcuts for inserting two of the most common R operators: `<-` and `%>%`.
+it creates shortcuts for inserting two of the most common R operators: `<-` and `|>`.
 Run the following from terminal to install the extension:
 
 ```
@@ -503,6 +508,7 @@ To check that the extension is working,
 open JupyterLab,
 launch an R notebook,
 and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m`, respectively.
+
 
 ## LaTeX
 
@@ -527,9 +533,9 @@ latex --version
 You should see something like this if you were successful:
 
 ```
-pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
-kpathsea version 6.3.2
-Copyright 2020 Han The Thanh (pdfTeX) et al.
+pdfTeX 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX)
+kpathsea version 6.3.3
+Copyright 2021 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
 covered by the terms of both the pdfTeX copyright and
 the Lesser GNU General Public License.
@@ -538,10 +544,10 @@ named COPYING and the pdfTeX source.
 Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
 Compiled with libpng 1.6.37; using libpng 1.6.37
 Compiled with zlib 1.2.11; using zlib 1.2.11
-Compiled with xpdf version 4.02
+Compiled with xpdf version 4.03
 ```
 
-The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Before we do this, please [sign out of Windows](https://wiki.washjeff.edu/download/attachments/84967772/windows_10_logoff.png?version=1&modificationDate=1474137276320&api=v2) and back in again in order for the Git Bash terminal to be able to find the location of TinyTex.
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Before we do this, please [sign out of Windows](https://support.microsoft.com/en-us/windows/sign-out-of-windows-346925bb-024c-cd86-7a53-9066242a9ed3) and back in again in order for the Git Bash terminal to be able to find the location of TinyTex.
 
 When you sign back in,
 install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
@@ -593,7 +599,7 @@ And replace the section that reads:
 
 ```
 # Add R and Rscript to path
-export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+export PATH="/c/Program Files/R/R-4.1.0/bin/x64":$PATH
 ```
 
 with the following to prepend make's bin folder to the PATH
@@ -625,7 +631,7 @@ There is NO WARRANTY, to the extent permitted by law.
 
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can [download PostgreSQL 12.4 from here](https://www.enterprisedb.com/downloads/postgresql) (do *not* select version 13). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
+We will be using PostgreSQL as our database management system. You can [download PostgreSQL 13.3 from here](https://www.enterprisedb.com/downloads/postgresql). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
 
 To test if the installation was successful open the `SQL Shell` app from the Start menu. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:
 
@@ -765,7 +771,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 The output from running the script will look something like this:
 
 ````
-# MDS setup check 0.1.0
+# MDS setup check 1.0.0
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
@@ -789,41 +795,42 @@ Microsoft Windows 10 Education
 10.0.19041
 
 ## System programs
-OK        psql 12.3
-MISSING   rstudio=1.*
-OK        R 4.0.2 (2020-06-22) -- "Taking Off Again"
-OK        python 3.8.3
-OK        conda 4.8.3
-OK        bash 4-pc-linux-gnu)
-OK        git 2.27.0
+MISSING   psql 13.*
+OK        rstudio 1.4.1725
+OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
+OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+OK        python 3.9.1
+OK        conda 4.10.3
+OK        bash 4.4.23(1)-release (x86_64-pc-msys)
+OK        git 2.32.0.windows.2
 OK        make 4.3
-OK        latex 3.14159265-2.6-1.40.21 (TeX Live 2020)
-OK        tlmgr 55369 (2020-06-01 02:32:00 +0200)
-MISSING   docker=19.*
-MISSING   code=1.*
+OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX)
+OK        docker 20.10.7, build f0df350
+OK        code 1.58.2
 
 ## Python packages
-MISSING   jupyterlab=2.*
-MISSING   numpy=1.*
-MISSING   pandas=1.*
-OK        flake8=3.7.9
-MISSING   black=19.*
-MISSING   nodejs=10.*
-OK        jupytext=1.3.4
-MISSING   jupyterlab-git=0.*
-MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.
+MISSING   jupyterlab=3.*
+OK        numpy=1.21.1
+OK        pandas=1.3.0
+OK        flake8=3.9.2
+MISSING   black=21.*
+MISSING   nodejs=15.*
+OK        jupytext=1.11.4
+OK        jupyterlab-git=0.30.1
+OK        jupyterlab PDF-generation was successful.
 
 ## R packages
-OK        tidyverse=1.3.0
-OK        blogdown=0.20
-OK        xaringan=0.16
-OK        renv=0.11.0
-OK        IRkernel=1.1.1
-OK        tinytex=0.25
-OK        rmarkdown PDF-generation was successful
+OK        tidyverse=1.3.1
+OK        blogdown=1.3
+OK        xaringan=0.22
+OK        renv=0.13.2
+OK        IRkernel=1.2
+OK        tinytex=0.32
+OK        rmarkdown PDF-generation was successful.
 
 This output and additional configuration details
-have been saved to the file check-setup-mds.log in this directory.
+have been saved to the file /c/Users/florencia/check-setup-mds.log.
+You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
 ````
 
 As you can see at the end of the output,
@@ -846,3 +853,4 @@ Details on where to submit will be provided later.
 * [Software Carpentry](https://software-carpentry.org/)
 * [Oracle - How do I set or change the PATH system variable?](https://www.java.com/en/download/help/path.xml)
 * [Numerical Methods - Getting started](https://clouds.eos.ubc.ca/~phil/numeric/python.html)
+* [RStudio - New native pipe operator](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/)

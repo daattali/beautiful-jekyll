@@ -313,6 +313,12 @@ To see if you were successful, try opening RStudio by clicking on its icon (from
 
 ![](/resources_pages/imgs/RStudio.png)
 
+Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
+Go to `Tools > Global Options > Code > Editing` and tick the following option:
+
+![](/resources_pages/imgs/new-pipe-rstudio.png)
+
+Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
 
 ### Essential R packages
 
@@ -360,7 +366,7 @@ To improve the experience of using R in JupyterLab,
 we will add an extension that allows us to setup keyboard shortcuts for inserting text
 (thanks to former MDS student Ryan Homer for developing this extension!).
 By default,
-it creates shortcuts for inserting two of the most common R operators: `<-` and `%>%`.
+it creates shortcuts for inserting two of the most common R operators: `<-` and `|>`.
 Run the following from terminal to install the extension:
 
 ```bash
