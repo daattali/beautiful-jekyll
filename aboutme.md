@@ -42,7 +42,7 @@ Como maior organização profissional do mundo, o IEEE pode ser subdividido em *
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/branilson.png' | relative_url }}" width="100" alt="branilson" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-             <th><a href="https://www.linkedin.com/in/felipe-mohr-a9922a15a"><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url}}" width="100" alt="felipe" class="img-fluid rounded-circle" /></center></a></th>
+             <th><a href="https://www.linkedin.com/in/felipe-mohr-a9922a15a"><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url}}" width="100" alt="felipe" class="img-fluid rounded-circle img-blur" /></center></a></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/marcella_giovanna.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
           </tr>
@@ -81,7 +81,7 @@ Como maior organização profissional do mundo, o IEEE pode ser subdividido em *
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/ruan_utah.png' | relative_url }}" width="100" alt="ruan" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><a href="https://www.linkedin.com/in/matheus-dos-santos-bomfim-459421191/"><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url}}" width="100" alt="matheus" class="img-fluid rounded-circle" /></center></a></th>
+            <th><a href="https://www.linkedin.com/in/matheus-dos-santos-bomfim-459421191/"><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url}}" width="100" alt="matheus" class="img-fluid rounded-circle img-blur" /></center></a></th>
           </tr>
         </thead>
         <tbody>
@@ -110,8 +110,7 @@ Como maior organização profissional do mundo, o IEEE pode ser subdividido em *
     </div>
   </div>
 </div>
-
-</br>
+<br>
 
 ### Quer entrar em contato conosco?
 

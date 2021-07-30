@@ -19,8 +19,6 @@ O [**EMBS** (Engineering in Medicine and Biology Society)](https://www.embs.org/
 
 [<img src="/assets/img/logo_instagram.png" alt="drawing" width="25"/> **@ieeeembscimatec**](https://www.instagram.com/ieeeembscimatec/)
 
-<div class="bg"><img src="https://unsplash.it/400/200" alt=""></div>
-
 
 ### Diretoria Executiva EMBS CIMATEC 2021
 <div class="row">
@@ -33,9 +31,9 @@ O [**EMBS** (Engineering in Medicine and Biology Society)](https://www.embs.org/
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/joao_guilherme.png' | relative_url }}" width="100" alt="guilherme" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><a href="https://www.linkedin.com/in/alexandre-adonai-gama-da-silva-365a35211/"><center><div class="bg"><img src="{{ 'assets/img/voluntarios/alexandre_adonai.png' | relative_url}}" width="100" alt="alexandreadonai" class="img-fluid rounded-circle" /></div></center></a></th>
+            <th><a href="https://www.linkedin.com/in/alexandre-adonai-gama-da-silva-365a35211/"><center><img src="{{ 'assets/img/voluntarios/alexandre_adonai.png' | relative_url}}" width="100" alt="alexandreadonai" class="img-fluid rounded-circle img-blur" /></center></a></th>
             <th></th>
-            <th><a href="https://www.linkedin.com/in/matheus-dos-santos-bomfim-459421191/"><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url}}" width="100" alt="matheus" class="img-fluid rounded-circle" /></center></a></th>
+            <th><a href="https://www.linkedin.com/in/matheus-dos-santos-bomfim-459421191/"><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url}}" width="100" alt="matheus" class="img-fluid rounded-circle img-blur" /></center></a></th>
           </tr>
         </thead>
         <tbody>
