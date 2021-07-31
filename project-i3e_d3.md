@@ -12,8 +12,7 @@ subtitle: Projeto I3E-D3
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
-            <th></th>
+            <th><a href="https://www.linkedin.com/in/felipe-mohr-a9922a15a"><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url}}" width="100" alt="felipe" class="img-fluid rounded-circle" /></center></a></th>
             <th><center><img src="{{ 'assets/img/voluntarios/caio_oliva.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
           </tr>
         </thead>
