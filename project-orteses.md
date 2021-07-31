@@ -2,7 +2,7 @@
 layout: page
 title: Órteses do Futuro
 subtitle: Órteses flexíveis impressas em 3D
-cover-img: /assets/img/orteses.png
+cover-img: /assets/img/orteses_4.png
 ---
 
 O projeto órteses tem como objetivo a pesquisa e o desenvolvimento de órteses utilizando tecnologias de modelagem e impressão 3D para reduzir custos e torná-las mais confortáveis com orifícios para que o paciente tenha mais higiene do que com uma órtese padrão, analisando também materiais e técnicas de impressão 3D em futuros protótipos.
@@ -14,9 +14,9 @@ O projeto órteses tem como objetivo a pesquisa e o desenvolvimento de órteses 
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/alexandre_adonai.png' | relative_url }}" width="100" alt="alexandre" class="img-fluid rounded-circle" /></center></th>
+            <th><a href="https://www.linkedin.com/in/alexandre-adonai-gama-da-silva-365a35211/"><center><img src="{{ 'assets/img/voluntarios/alexandre_adonai.png' | relative_url}}" width="100" alt="alexandreadonai" class="img-fluid rounded-circle" /></center></a></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url }}" width="100" alt="matheus" class="img-fluid rounded-circle"/></center></th>
+            <th><a href="https://www.linkedin.com/in/matheus-dos-santos-bomfim-459421191/"><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url}}" width="100" alt="matheus" class="img-fluid rounded-circle" /></center></a></th>
           </tr>
         </thead>
         <tbody>

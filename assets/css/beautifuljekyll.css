@@ -3,6 +3,7 @@ layout: null
 ---
 
 @import url("pygment_highlights.css");
+$bg: rgba(0, 0, 0, 0.2);
 
 /* --- General --- */
 
@@ -1144,4 +1145,39 @@ pre {
   font-size: smaller;
   color: #40c7f4;
   background-color: {{ site.hover-col | default: "#EAEAEA" }};
+}
+=======
+/* 
+  IMG-EFFECT
+
+    --contrast:100%;
+    --brightness:100%;
+    --contrast:100%;
+    --dropshadow:0px 0px 0px black;
+    --grayscale:0%;
+    --hue-rotate:0deg;
+    --invert:0%;
+    --opacity:100%;
+    --saturate:100%;
+    --sepia:0%;
+    --contrast:100%;
+    --brightness:100%;
+    --contrast:100%;
+    --dropshadow:0px 0px 0px black;
+    --grayscale:0%;
+    --hue-rotate:0deg;
+    --invert:0%;
+    --opacity:100%;
+    --saturate:100%;
+    --sepia:0%;
+
+*/
+
+.img-blur {
+  filter: grayscale(0%);
+}
+.img-blur:hover {
+  filter: blur(1px) 
+  grayscale(50%)
+  ;
 }

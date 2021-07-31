@@ -15,9 +15,9 @@ Desenvolver uma aplicação descentralizada (dapp) construída sobre uma rede de
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/alexandre_adonai.png' | relative_url }}" width="100" alt="alexandre" class="img-fluid rounded-circle" /></center></th>
+            <th><a href="https://www.linkedin.com/in/alexandre-adonai-gama-da-silva-365a35211/"><center><img src="{{ 'assets/img/voluntarios/alexandre_adonai.png' | relative_url}}" width="100" alt="alexandreadonai" class="img-fluid rounded-circle img-blur" /></center></a></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/eduardo_lobo.png' | relative_url }}" width="100" alt="eduardo" class="img-fluid rounded-circle"/></center></th>
+            <th><a href="https://www.linkedin.com/in/eduardo-l%C3%B4bo-8a4b961b3"><center><img src="{{ 'assets/img/voluntarios/eduardo_lobo.png' | relative_url}}" width="100" alt="eduardo" class="img-fluid rounded-circle img-blur" /></center></a></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/guilherme_braga.png' | relative_url }}" width="100" alt="guilherme" class="img-fluid rounded-circle" /></center></th>
             <th></th>
