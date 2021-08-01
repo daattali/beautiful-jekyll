@@ -1,6 +1,6 @@
 ## Hello! I'm Matthew (He/Him)
 
-I'm a big nerd, FOSS enthusiast & australian developer :australia:
+I'm a big nerd, FOSS enthusiast & australian developer living on Wangal/Gadigal Land of the Eora Nation (Sydney). 
 
 ### What I do for work
 
