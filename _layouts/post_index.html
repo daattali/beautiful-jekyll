@@ -1,11 +1,57 @@
 ---
 layout: page
+# This takes EITHER of the following:
+
+# exclude_categories: [ array, of, cats, to, exclude ]
+# include_categories: [ array, of, cats, to, include ]
+
+# If include is given, mode is treated as whitelist, and exclude ignored.
 ---
 
 {{ content }}
 
 
 {% assign posts = paginator.posts | default: site.posts %}
+
+
+{% assign include_categories = page.include_categories %}
+{% assign exclude_categories = page.exclude_categories %}
+{% assign site_cat_names = '' | split: '' %}
+
+{% for cat_item in site.categories %}
+  {% assign cat_name = cat_item[0] %}
+  {% assign site_cat_names = site_cat_names | push: cat_name %}
+{% endfor %}
+
+{% if include_categories != empty and include_categories != nil %}
+{% elsif exclude_categories != empty and exclude_categories != nil %}
+  {% assign include_categories = '' | split: '' %}
+  {% for cat_name in site_cat_names %}
+    {% unless exclude_categories contains cat_name %}
+      {% assign include_categories = include_categories | push: cat_name %}
+    {% endunless %}
+  {% endfor %}
+{% else %}
+  {% assign include_categories = site_cat_names %}
+{% endif %}
+
+{% comment %}
+  Before jekyll 4.0, cant use binary operators in "where_exp" filter
+  Have to use this hack to build to filter the post list.
+{% endcomment %}
+
+{% assign post_list = posts %}
+{% assign posts = '' | split: '' %}
+
+{% for post in post_list %}
+  {% if post.category %}
+    {% if include_categories contains post.category %}
+      {% assign posts = posts | push: post %}
+    {% endif %}
+  {% else %}
+    {% assign posts = posts | push: post %}
+  {% endif %}
+{% endfor %}
 
 <div class="posts-list">
   {% for post in posts %}
@@ -83,6 +129,11 @@ layout: page
       {% for tag in post.tags %}
       <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
       {% endfor %}
+    </div>
+    {% endif %}
+    {% if post.category %}
+    <div class="blog-tags">
+      <span>Category: {{ post.category }}</span>
     </div>
     {% endif %}
 
