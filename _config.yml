@@ -18,6 +18,7 @@ navbar-links:
   Projects:
     - mandrake: "/mandrake"
     # -  Learn markdown: "https://www.markdowntutorial.com/"
+  DnD Posts: "/dnd/"
   Home: "https://straz.to"
 
 # --- Logo --- #
