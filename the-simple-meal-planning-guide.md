@@ -38,9 +38,15 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-
 #### Pricing
 
 $9.99 USD. Payment is via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada.
 
 **Note:** You can directly send funds to simplehomemom@gmail.com and then follow up with an email so I know to send you the guide!
+
+**Blogs of mine you may enjoy:**
+
+* [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
+* [9 Ideas for Making Meal Planning Simpler]()
+* [Three tips to feed the hangry children fast](https://www.simplehomemom.com/three-tips-to-feed-the/)
+* [How to make lunches painless and quick with picky plates](https://www.simplehomemom.com/2020-08-29-how-to-make-lunches-painless-and-quick-with-picky-plates/)
