@@ -4,8 +4,6 @@ title: The Simple Meal Planning Guide
 subtitle: ''
 
 ---
-# The Simple Meal Planning Guide
-
 _The Simple Meal Planning Guide will help you never to become stumped with meal planning again (when/if applied)._
 
 ![An overview image of the Simple Meal Planning Guide.](/uploads/2-1.jpg "The Simple Meal Planning Guide SHM")
