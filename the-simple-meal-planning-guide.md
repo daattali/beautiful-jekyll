@@ -8,6 +8,8 @@ subtitle: ''
 
 _The Simple Meal Planning Guide will help you never to become stumped with meal planning again (when/if applied)._
 
+![An overview image of the Simple Meal Planning Guide.](/uploads/2-1.jpg "The Simple Meal Planning Guide SHM")
+
 ### This guide is for you if...
 
 * you often dread mealtimes
@@ -25,6 +27,15 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 ### What you'll find in the Simple Meal Planning Guide:
 
 * Helpful tips in the areas of planning and organizing
-* Helpful printables
+* 8 helpful printables to help you meal plan
 * Steps to help guide you through the process of meal planning from start to finish
 * Bonus resources and ideas for meal planning
+
+### I'm ready to take control of my meal planning!
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="2JAM876PECP9U">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
