@@ -37,3 +37,9 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
+
+#### Pricing
+
+$9.99 USD. Payment is via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada.
+
+**Note:** You can directly send funds to simplehomemom@gmail.com and then follow up with an email so I know to send you the guide!
