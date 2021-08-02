@@ -38,6 +38,7 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+
 #### Pricing
 
 $9.99 USD. Payment is via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada.
