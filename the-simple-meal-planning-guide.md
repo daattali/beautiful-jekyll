@@ -29,6 +29,8 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 * Steps to help guide you through the process of meal planning from start to finish
 * Bonus resources and ideas for meal planning
 
+![](/uploads/the-simple-meal-planning-guide-shm-2.jpg "The Simple Meal Planning Guide SHM")
+
 ### I'm ready to take control of my meal planning!
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -37,7 +39,6 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
-
 
 #### Pricing
 
