@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RasWeekend
+#title: RasWeekend
 #subtitle: 
 cover-img: /assets/img/rasweekend_cover.jpg
 ---
