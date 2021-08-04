@@ -8,6 +8,8 @@ subtitle: ''
 
 **_The Simple Meal Planning Guide will help you never to become stumped with meal planning again (when/if applied)._**
 
+> "If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource." - Crystin from [@delightfullyfeasting](www.instagram.com/delightfullyfeasting)
+
 ## This guide is for you if...
 
 * you often dread mealtimes
@@ -31,7 +33,7 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 
 ![](/uploads/the-simple-meal-planning-guide-shm-2.jpg "The Simple Meal Planning Guide SHM")
 
-### I'm ready to take control of my meal planning!
+#### I'm ready to take control of my meal planning!
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -42,9 +44,9 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 
 #### Pricing
 
-$9.99 USD. Payment is via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada. You can directly send funds to simplehomemom@gmail.com and then follow up with an email so I know to send you the guide! 
+$9.99 USD. Payment is via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada. You can directly send funds to simplehomemom@gmail.com and then follow up with an email so I know to send you the guide!
 
-**Note:** After payment, it directs you to the printable guide page for you to save and download. Please email me ASAP if anything goes wonky technology wise. So far it's been fine, but you know how technology works. Sometimes it doesn't! 
+**Note:** After payment, it directs you to the printable guide page for you to save and download. Please email me ASAP if anything goes wonky technology wise. So far it's been fine, but you know how technology works. Sometimes it doesn't!
 
 **Blogs of mine you may enjoy:**
 
