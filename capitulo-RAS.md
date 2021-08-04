@@ -16,7 +16,7 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
 - [Mão Espelhada](https://ieeecimatec.github.io/project-mao_espelhada/)
 - [PetIEEE](https://ieeecimatec.github.io/project-petieee/)
 - RASpode
-- Map Vision
+- [Map Vision](https://ieeecimatec.github.io/project-mapvision/)
 - CompetIEEEção
 
 #### Projetos Finalizados
