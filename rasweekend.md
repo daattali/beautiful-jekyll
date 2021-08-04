@@ -5,11 +5,14 @@ layout: page
 cover-img: /assets/img/rasweekend.png
 ---
 
-O rasweekends é um evento promovido pela RAS CIMATEC que tem como o intuito a capacitação dos nossos voluntários e a disseminação de conhecimentos importantes para a construção de nossos projetos. Os participantes terão a oportunidade de participar de workshops de: <br>
-1- Arduino e Eletrônica,  para a construção de projetos na prática e o aprendizado de como funcionam os componentes; <br>
-2- CAD, para o conhecimento em modelagem 3D; <br>
-3- Visão computacional, para a expansão de conhecimentos e possibilidades na  programação; <br>
-4- Git e Github, para a utilização da plataforma no gerenciamento e controle dos projetos.
+
+### O que é o RASWeekends
+O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a capacitação dos nossos voluntários e a disseminação de conhecimentos importantes para a construção de nossos projetos. Os participantes terão a oportunidade de participar de workshops de: <br>
+1- Arduino, que irá ajudar a aqueles que nunca mexeram com nenhuma plataforma de desenvolvimento e levará a construção de projetos reais, utilizando simuladores online.<br>
+2- Eletrônica,  para a construção de projetos na prática e o aprendizado de como funcionam os componentes; <br>
+3- CAD, para o conhecimento em modelagem 3D; <br>
+4- Visão computacional, para a expansão de conhecimentos e possibilidades na  programação; <br>
+5- Git e Github, para a utilização da plataforma no gerenciamento e controle dos projetos.
 
 
 ### WorkShops
@@ -58,3 +61,35 @@ O rasweekends é um evento promovido pela RAS CIMATEC que tem como o intuito a c
   </div>
 </div>
 
+### Valores
+Os valores de workshop variam de 10 a 15 reais por unidade de acordo com a categoria em que você se enquadra, como mostra a tabela abaixo.
+Já o passe RASWEEKEND, é um valor único para qualquer categoria e te dá o direito de assistir a todos os workshops.
+Lembrando que todo o material será gravado e será disponibilizado em uma pasta para os assinantes. 
+Além disso, vale ressaltar que todos os workshops contaram com certificados.
+
+<table>
+<thead>
+  <tr>
+    <th>Categoria</th>
+    <th>Valor por Workshop</th>
+    <th>Valor do Passe</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Membro do IEEE.</td>
+    <td>10 Reais</td>
+    <td>25 Reias</td>
+  </tr>
+  <tr>
+    <td>Estudante do Cimatec<br>ou da UFCG.</td>
+    <td>10 Reais</td>
+    <td>25 Reias</td>
+  </tr>
+  <tr>
+    <td>Demais estudantes.</td>
+    <td>20 Reais</td>
+    <td>25 Reias</td>
+  </tr>
+</tbody>
+</table>
