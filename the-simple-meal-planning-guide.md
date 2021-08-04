@@ -49,6 +49,6 @@ $9.99 USD. Payment is via PayPal (you can also checkout with your credit card wi
 **Blogs of mine you may enjoy:**
 
 * [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
-* [9 Ideas for Making Meal Planning Simpler]()
+* [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)
 * [Three tips to feed the hangry children fast](https://www.simplehomemom.com/three-tips-to-feed-the/)
-* [How to make lunches painless and quick with picky plates](https://www.simplehomemom.com/2020-08-29-how-to-make-lunches-painless-and-quick-with-picky-plates/)
+* [How to make lunches painless and quick with picky plates]()
