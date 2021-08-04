@@ -39,6 +39,7 @@ $49 USD. Payment is via PayPal (you can also checkout with your credit card with
 </form>
 
 
+
 **Note:** You can also directly send funds to simplehomemom@gmail.com if it's easier that way.
 
 ## Reviews
