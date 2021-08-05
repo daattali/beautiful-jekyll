@@ -14,10 +14,24 @@ author: Onur Atakan ULUSOY
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  My Projects:
+    - Decentra Network: "https://github.com/Decentra-Network/Decentra-Network"
+    - MIXON: "https://github.com/onuratakan/MIXON"
+    - (POW) Blockchain Network Infrustructure: "https://github.com/onuratakan/POW-Blockchain-Network-Infrustructure"
+    - ONUR Voice Assistant: "https://github.com/onuratakan/ONUR_Voice_Assistant"
+    - HACON: "https://github.com/onuratakan/HACON"
+    - Site Seo Scanner: "https://github.com/onuratakan/Site_Seo_Scanner"
+    - Ask Me Something: "https://github.com/onuratakan/ask_me_something"
+    - Say Me Something: "https://github.com/onuratakan/say_me_something"
+    - Linear Congruential Generator: "https://github.com/onuratakan/Linear_Congruential_Generator"
+  My Libraries:
+    - HACON: "https://pypi.org/project/hacon/"
+    - Linear Congruential Generator: "https://pypi.org/project/Linear-Congruential-Generator/"
+    - Site Seo Scanner: "https://pypi.org/project/Site-Seo-Scanner/"
+    - Say Me Something: "https://pypi.org/project/say-me-something/"
+    - Ask Me Something: "https://pypi.org/project/ask-me-something/"
+    - ONUR Voice Assistant: "https://pypi.org/project/ONUR-Voice-Assistant/"
   CV: "https://onuratakan.github.io/online-cv/"
-  #Resources:
-    #- Beautiful Jekyll: "https://beautifuljekyll.com"
-    #- Learn markdown: "https://www.markdowntutorial.com/"
 
 # --- Logo --- #
 
