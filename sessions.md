@@ -52,4 +52,4 @@ Signup spreadsheets will be provided to help parents in forming teams on a per-c
 
 # Parent Proctors
 We are required to staff each room with a parent proctor for the duration of each math club meeting.
-Please see the <a href="/parents">parent proctor page</a> for details.
+Please see the [parent proctor page](/parents) for details.

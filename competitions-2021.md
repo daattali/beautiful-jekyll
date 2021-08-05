@@ -23,4 +23,4 @@ subtitle: Our competition calendar
 |TBD | RMS Final | -- | --
 |TBD | [LWSD Math Olympiad](https://kims.lwsd.org/activities/math-olympiad) | -- | --
 
-[2019-2020 schedule](competitions-1920.md)
+[2019-2020 schedule](/competitions-1920.md)

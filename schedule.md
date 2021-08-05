@@ -12,6 +12,6 @@ It is expected that all members will attempt to complete the assignment for the 
 
 The Mathcounts Toolkit be downloaded [here](/files/Mathcounts%20Toolkit.pdf).
 
-[2020-2021 schedule](schedule-2021.md)
+[2020-2021 schedule](/schedule-2021.md)
 
-[2019-2020 schedule](schedule-1920.md)
+[2019-2020 schedule](/schedule-1920.md)

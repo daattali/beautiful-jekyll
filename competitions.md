@@ -16,6 +16,6 @@ subtitle: Our competition calendar
 |TBD | RMS Final | TBD | --
 
 
-[2020-2021 schedule](competitions-2021.md)
+[2020-2021 schedule](/competitions-2021.md)
 
-[2019-2020 schedule](competitions-1920.md)
+[2019-2020 schedule](/competitions-1920.md)

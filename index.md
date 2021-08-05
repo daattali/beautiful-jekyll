@@ -25,7 +25,7 @@ to be notified when registration becomes available.
 
 ## Top links
 
-- [Coaching session homework and schedule](schedule)
-- [Competition schedule](competitions)
-- [About coaching sessions](sessions)
-- [Accessing the PTSA portal and Microsoft Teams](portal)
+- [Coaching session homework and schedule](/schedule)
+- [Competition schedule](/competitions)
+- [About coaching sessions](/sessions)
+- [Accessing the PTSA portal and Microsoft Teams](/portal)

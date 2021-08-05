@@ -4,7 +4,7 @@ title: Proctor Instructions
 subtitle: Proctoring coaching sessions in Microsoft Teams
 ---
 
-For general information about proctoring, please see [this page](parents). The steps and screenshots below are from the Microsoft Teams client on Windows 10. The process may vary slightly if you use a different interface.
+For general information about proctoring, please see [this page](/parents). The steps and screenshots below are from the Microsoft Teams client on Windows 10. The process may vary slightly if you use a different interface.
 
 1. Make sure you can access [our portal](https://rmsptsa.sharepoint.com/sites/MathClub) well ahead of the session. If not, see [this page](/portal) to learn how to set up your Microsoft account.
 
@@ -12,14 +12,14 @@ For general information about proctoring, please see [this page](parents). The s
 
 1. Click **Meet** to begin the meeting.
 
-    ![Starting a Teams meeting](img/start-teams-meeting.png)
+    ![Starting a Teams meeting](/img/start-teams-meeting.png)
 
 1. In the meeting chat, post the message "*Your name* is proctoring."
 
-    ![Posting a Teams message](img/post-teams-message.png)
+    ![Posting a Teams message](/img/post-teams-message.png)
 
 1. Coaches will manage the session from 3:30. You don't need to introduce them or wrap up the session. If no coaches have arrived by 3:30, you can post a message that the session has been cancelled.
 
 1. End the meeting by selecting **End meeting** from the **Leave** dropdown.
 
-    ![Ending a Teams meeting](img/end-teams-meeting.png)
+    ![Ending a Teams meeting](/img/end-teams-meeting.png)
