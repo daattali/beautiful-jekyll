@@ -93,7 +93,7 @@ Além disso, vale ressaltar que todos os workshops contaram com certificados.
   </tr>
   <tr>
     <td>Demais estudantes.</td>
-    <td>20 Reais</td>
+    <td>15 Reais</td>
     <td>25 Reias</td>
   </tr>
 </tbody>
