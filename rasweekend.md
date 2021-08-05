@@ -1,7 +1,7 @@
 ---
 layout: page
-# title: 
-# subtitle: 
+title: 
+subtitle: 
 cover-img: /assets/img/rasweekend.png
 ---
 
