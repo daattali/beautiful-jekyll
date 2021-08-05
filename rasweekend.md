@@ -1,7 +1,7 @@
 ---
 layout: page
-# title: MapVision
-# subtitle: Mapeamento 3D
+# title: 
+# subtitle: 
 cover-img: /assets/img/rasweekend.png
 ---
 
