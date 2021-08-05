@@ -63,7 +63,7 @@ O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a c
 
 ### Trilha
 
-<th><center><img src="{{ 'assets/img/trilha.png' | relative_url }}" width="500" alt="Onshape" class="img" /></center></th>
+<th><center><img src="{{ 'assets/img/trilha.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
 <br>
 
 ### Valores
