@@ -6,13 +6,13 @@ subtitle: Our top 10 tips for math competitions
 
 We've put together a list of our favorite tips to help you take your math competition game to the next level. They are
 ordered chronologically starting at test preparation and leading up through the end of an exam. Some of these reference
-question numbers from our [2019-2020 Benchmark exam](../exams). If you'd like to share your own, please let us know
+question numbers from our [2019-2020 Benchmark exam](exams). If you'd like to share your own, please let us know
 at <a href="mailto:mathclubchair@rmsptsa.org">mathclubchair@rmsptsa.org</a>.
 
 ## 1) Practice past test problems.
 The absolute best way to prepare for a given competition is to master the questions from previous versions of that
 competition. Most competitions make some or all of their previous exams available, so check out the 
-[competitions](../competitions) page for links. For past RMS exams, please see our [exams](../exams) page.
+[competitions](competitions) page for links. For past RMS exams, please see our [exams](exams) page.
 
 Patterns and concepts repeat themselves, and you will get better at identifying questions with tricks
 and gotchas through experience. Sometimes there is no trick to a given question and you need to grind out the answer 
@@ -26,7 +26,7 @@ The Mathcounts Handbook provides a core set of common formulas and shortcuts con
 really easy to digest. A lot of competition questions are just applications of these formulas, so having them memorized
 will save you a lot of time. Question #3 (area of a rhombus given both diagonals) is a simple calculation if you
 have the formula memorized. We've extracted the toolkit into a single file you can download through the link on the
-[schedule](../schedule) page.
+[schedule](schedule) page.
 
 There are many other facts that are considered common knowledge for math tests, especially around measurement. Be sure you
 know the metric system (milli, centi, kilo, mega, etc.), imperial system (feet in a yard, cups in a gallon, etc.), and more.
@@ -57,7 +57,7 @@ internet.
 This might sound obvious, but it's really important and can score you critical points. There is a pattern across exams where
 questions get harder as you get deeper in. As a result, some competitors will grind through questions one by one from the
 beginning and often don't even read them all by the time the exam is over. That's why devious test designers 
-([like us](../exams)) will often slip an easier question near the end of the exam. For example, #25 (calculating centimeters
+([like us](exams)) will often slip an easier question near the end of the exam. For example, #25 (calculating centimeters
 per inch) is a straightforward set of multiplication and division operations. However, multiple top 10 ties were broken
 because one competitor solved this relatively easy question while the other left it blank, presumably because they had not
 gotten to it by the time the exam ended.
@@ -96,7 +96,7 @@ This is one of the most common mistakes competitors can make if they're not care
 questions have a lot of data or complexity that can be distracting, such as question #23 (horse betting). A lot of answers
 where given as the horse ("D") when the question was asking for an absolute return on investment in dollars ("-.50").
 
-Unfortunately, some devious test makers ([like us](../exams)) love to try to trick competitors. They'll set up a question
+Unfortunately, some devious test makers ([like us](exams)) love to try to trick competitors. They'll set up a question
 where the hard part is figuring out the area of a circle using obscure details about other geometric shapes,
 but then quietly slip in that the answer should be "the radius squared" and not the area itself. Question #4 (base-3 math)
 is a good example where many answers were given in base-10 when it was required they be in base-3.
@@ -124,7 +124,7 @@ Some specific form of answers docs are available at:
 ## 10) Don't leave blanks if there is no penalty.
 The title says it all here. If you're at the end of the exam and have blank answers on a test where this is no penalty for
 guessing incorrectly, put something (anything!) down. If you have time, try to come up with educated guesses based on the
-information you have. If you have no idea, 0's and/or 1's are a good choice. Devious test designers ([like us](../exams))
+information you have. If you have no idea, 0's and/or 1's are a good choice. Devious test designers ([like us](exams))
 will often put questions with these answers on very challenging problems late in the exam. For example, the answer to #22
 (randomly translated triangles) was 0 and the answer to #26 (point translation) was 1.
 

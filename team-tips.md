@@ -4,12 +4,12 @@ title: Competition Team Tips
 subtitle: Our top 10 tips for math teams
 ---
 
-We've put together a list of team tips to complement our [top 10 tips](../competition-tips). 
+We've put together a list of team tips to complement our [top 10 tips](competition-tips). 
 If you'd like to share your own, please let us know
 at <a href="mailto:mathclubchair@rmsptsa.org">mathclubchair@rmsptsa.org</a>.
 
 ## 1) Team competitions are all about solving math problems.
-It might sound obvious, but it’s true. As a result, our [top 10 article](../competition-tips) applies just as much here.
+It might sound obvious, but it’s true. As a result, our [top 10 article](competition-tips) applies just as much here.
 Be familiar with those tips as they can earn you some real points in team tests as well.
 
 ## 2) Teams should practice regularly throughout the season.
@@ -17,7 +17,7 @@ A good practice is 90-120 minutes and covers all round types for the events they
 individual rounds that are included as part of the team component, such as mental math. The best way to prepare for a 
 competition is to use past exams from that competition, which are usually available on their web site.
 
-We've put together a [sample team practice plan](../team-practice) that can help you get started.
+We've put together a [sample team practice plan](team-practice) that can help you get started.
 
 ## 3) Use an answer grid to coordinate work on group tests.
 Group tests are tests where all team members work together on the same set of questions. The goal is to distribute work 

@@ -5,7 +5,13 @@ subtitle: Keep up to date with our latest news and content.
 use-site-title: true
 ---
 
-## Welcome to the 2020-2021 season!
+## Welcome to the 2021-2022 season!
+
+Information about this year's math club will be available by early October. Please subscribe to the
+[RMS PTSA Bear Tracks newsletter](https://emailoctopus.com/lists/b1bc567a-d35d-11ea-a3d0-06b4694bee2a/forms/subscribe)
+to be notified when registration becomes available.
+
+### Materials from 2020-2021 (subject to change this year)
 
 1. New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
 
@@ -19,7 +25,7 @@ use-site-title: true
 
 ## Top links
 
-- <a href="/schedule">Coaching session homework and schedule</a>
-- <a href="/competitions">Competition schedule</a>
-- <a href="/sessions">About coaching sessions</a>
-- <a href="/portal">Accessing the PTSA portal and Microsoft Teams</a>
+- [Coaching session homework and schedule](schedule)
+- [Competition schedule](competitions)
+- [About coaching sessions](sessions)
+- [Accessing the PTSA portal and Microsoft Teams](portal)

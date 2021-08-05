@@ -4,10 +4,6 @@ title: Parent Volunteers
 subtitle: Proctoring at RMS
 ---
 
-**While school is remote, all sessions will be held over Microsoft Teams and still require a parent proctor. You can sign up [here](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B04784B0A-C6F9-42F1-851C-6BA66317BB27%7D&file=Volunteers.xlsx&action=default&mobileredirect=true).**
-
-[Proctoring instructions for Microsoft Teams meetings](proctoring.md)
-
 RMS Math Club activities at the school require parent proctor supervision.
 
 # Responsibilities
