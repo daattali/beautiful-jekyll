@@ -102,6 +102,7 @@ Além disso, vale ressaltar que todos os workshops contaram com certificados.
 
 ## Inscrição
 Para se inscrever acesse o link abaixo e preencha o formulário.
+As inscrições poderam ser feitas até o último dia do evento. Sendo que todo o conteúdo será gravado e ficará disponível para os assinantes.
 <p>
 <a href="https://forms.gle/gk6nBn9kRixsVu7LA"
    title="Formulário para inscrição."> Clique aqui para acessar o forms.</a>.
