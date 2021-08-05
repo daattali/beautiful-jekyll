@@ -38,9 +38,7 @@ $49 USD. Payment is via PayPal (you can also checkout with your credit card with
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-
-
-**Note:** You can also directly send funds to simplehomemom@gmail.com if it's easier that way.
+**Please note:** After payment, it directs you to the course group link for you to join and get started. Please email me ASAP if anything goes wonky technology wise and I'll send you the link to the course directly!
 
 ## Reviews
 
