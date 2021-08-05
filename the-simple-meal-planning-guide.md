@@ -46,7 +46,7 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 
 $9.99 USD. Payment is via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada. You can directly send funds to simplehomemom@gmail.com and then follow up with an email so I know to send you the guide!
 
-**Note:** After payment, it directs you to the printable guide page for you to save and download. Please email me ASAP if anything goes wonky technology wise. So far it's been fine, but you know how technology works. Sometimes it doesn't!
+**Please note:** After payment, it directs you to the printable guide page for you to save and download. Please email me ASAP if anything goes wonky technology wise and I'll send you the guide directly!
 
 **Blogs of mine you may enjoy:**
 
