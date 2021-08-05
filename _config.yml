@@ -14,11 +14,10 @@ author: Onur Atakan ULUSOY
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  CV: "https://onuratakan.github.io/online-cv/"
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     #- Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://onuratakan.github.io"
 
 # --- Logo --- #
 
