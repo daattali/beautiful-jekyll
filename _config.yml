@@ -22,8 +22,8 @@ navbar-links:
   Projetos:
     - Em Andamento: "projects-inprog"
     - Finalizados: "projects-done"
-  Eventos:
     - RASWEEKENDS: "rasweekend"
+    
   Capítulos:
     - EMBS: "capitulo-EMBS"
     - PES: "capitulo-PES"

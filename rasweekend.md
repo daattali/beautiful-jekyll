@@ -1,50 +1,59 @@
 ---
 layout: page
-#title: RasWeekend
-#subtitle: 
-cover-img: /assets/img/rasweekend_cover.jpg
+# title: MapVision
+# subtitle: Mapeamento 3D
+cover-img: /assets/img/rasweekend.png
 ---
 
-O projeto consiste na construção de um robô autônomo capaz de auxiliar os agentes de saúde no processo de triagem por meio da medição de parâmetros do estado de saúde do paciente, tais como pressão sanguínea, oxigenação e temperatura e registrá-los nas respectivas fichas dos pacientes. O robô exibirá perguntas numa tela LCD e também as emitirá pela via sonora através de um alto-falante e receberá as respostas do paciente por meio de comandos de voz.
 
-Durante a execução do projeto será construído um modelo em um software de modelagem 3D para o corpo do robô para posterior impressão 3D. Além disso, será desenvolvida uma placa de circuito impresso responsável por interligar os sensores, atuadores e controlador, bem como retificar a tensão de entrada a fim de disponibilizá-la para o carregamento das baterias. Por fim, a lógica de funcionamento do robô será implementada por meio do framework ROS (Robot Operating System).
+### O que é o RASWeekends
+O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a capacitação dos nossos voluntários e a disseminação de conhecimentos importantes para a construção de nossos projetos. Os participantes terão a oportunidade de participar de workshops de: <br>
+1- Arduino, que irá ajudar a aqueles que nunca mexeram com nenhuma plataforma de desenvolvimento e levará a construção de projetos reais, utilizando simuladores online.<br>
+2- Eletrônica,  para a construção de projetos na prática e o aprendizado de como funcionam os componentes; <br>
+3- CAD, para o conhecimento em modelagem 3D; <br>
+4- Visão computacional, para a expansão de conhecimentos e possibilidades na  programação; <br>
+5- Git e Github, para a utilização da plataforma no gerenciamento e controle dos projetos.
 
 
-### Equipe de desenvolvimento
-#### Software
+### WorkShops
+
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
     <div class="mobile-side-scroller">
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/gabriel_calmon.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/wk/logo_arduino.png' | relative_url }}" width="100" alt="arduino" class="img-fluid" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/guilherme_martinho.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/wk/logo_opencv.png' | relative_url }}" width="100" alt="OpenCV" class="img-fluid"/></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/maria_amado.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/wk/logo_onshape.png' | relative_url }}" width="100" alt="Onshape" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/joao_guilherme.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/wk/logo_github.png' | relative_url }}" width="100" alt="GitHub" class="img-fluid rounded-circle"/></center></th>
+            <th></th>
+            <th><center><img src="{{ 'assets/img/wk/logo_ele.jpg' | relative_url }}" width="100" alt="GitHub" class="img-fluid rounded-circle"/></center></th>
           </tr>
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="25%"><center>Gabriel Calmon</center></td>
+            <td width="20%"><center>Arduino</center></td>
             <td></td>
-            <td width="25%"><center>Guilherme Martinho</center></td>
+            <td width="20%"><center>OpenCV</center></td>
             <td></td>
-            <td width="25%"><center>Maria Amado</center></td>
+            <td width="20%"><center>OnShape</center></td>
             <td></td>
-            <td width="25%"><center>João Guilherme</center></td>
+            <td width="20%"><center>GitHub</center></td>
+            <td></td>
+            <td width="20%"><center>Eletrônica</center></td>
           </tr>
           <tr style="text-align: center" >
-            <td style="vertical-align: top"><small><center>Voluntário desde 2020 <p/> Líder do projeto</center></small></td>
+<td style="vertical-align: top"><small><center></center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
+            <td style="vertical-align: top"><small><center></center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntária desde 2019</center></small></td>
+            <td style="vertical-align: top"><small><center></center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2019</center></small></td>
+            <td style="vertical-align: top"><small><center></center></small></td>
           </tr>
         </tbody>
       </table>
@@ -52,60 +61,35 @@ Durante a execução do projeto será construído um modelo em um software de mo
   </div>
 </div>
 
-#### Eletro-eletrônica
-<div class="row">
-  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
-    <div class="mobile-side-scroller">
-      <table class="table-borderless highlight">
-        <thead>
-          <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/ruan_utah.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
-            <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/julia_nascimento.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="50%"><center>Ruan Utah</center></td>
-            <td></td>
-            <td width="50%"><center>Julia Nascimento</center></td>
-          </tr>
-          <tr style="text-align: center" >
-            <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>Voluntária desde 2021</center></small></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+### Valores
+Os valores de workshop variam de 10 a 15 reais por unidade de acordo com a categoria em que você se enquadra, como mostra a tabela abaixo.
+Já o passe RASWEEKEND, é um valor único para qualquer categoria e te dá o direito de assistir a todos os workshops.
+Lembrando que todo o material será gravado e será disponibilizado em uma pasta para os assinantes. 
+Além disso, vale ressaltar que todos os workshops contaram com certificados.
 
-#### CAD
-<div class="row">
-  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
-    <div class="mobile-side-scroller">
-      <table class="table-borderless highlight">
-        <thead>
-          <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/caio_oliva.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
-            <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/yan_valdez.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="50%"><center>Caio Oliva</center></td>
-            <td></td>
-            <td width="50%"><center>Yan Valdez</center></td>
-          </tr>
-          <tr style="text-align: center" >
-            <td style="vertical-align: top"><small><center>Voluntário desde 2019</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2021</center></small></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+<table>
+<thead>
+  <tr>
+    <th>Categoria</th>
+    <th>Valor por Workshop</th>
+    <th>Valor do Passe</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Membro do IEEE.</td>
+    <td>10 Reais</td>
+    <td>25 Reias</td>
+  </tr>
+  <tr>
+    <td>Estudante do Cimatec<br>ou da UFCG.</td>
+    <td>10 Reais</td>
+    <td>25 Reias</td>
+  </tr>
+  <tr>
+    <td>Demais estudantes.</td>
+    <td>20 Reais</td>
+    <td>25 Reias</td>
+  </tr>
+</tbody>
+</table>
