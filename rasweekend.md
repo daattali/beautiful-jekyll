@@ -8,8 +8,8 @@ cover-img: /assets/img/rasweekend.png
 
 ### O que é o RASWeekends
 O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a capacitação dos nossos voluntários e a disseminação de conhecimentos importantes para a construção de nossos projetos. Os participantes terão a oportunidade de participar de workshops de: <br>
-1- Arduino, que irá ajudar a aqueles que nunca mexeram com nenhuma plataforma de desenvolvimento e levará a construção de projetos reais, utilizando simuladores online.<br>
-2- Eletrônica,  para a construção de projetos na prática e o aprendizado de como funcionam os componentes; <br>
+1- Arduino, que irá ajudar a aqueles que nunca mexeram com nenhuma plataforma de desenvolvimento e levará a construção de projetos reais, utilizando simuladores online. Acontecerá nos dias: 14 e 15/08;<br>
+2- Eletrônica,  para a construção de projetos na prática e o aprendizado de como funcionam os componentes. Acontecerá no; <br>
 3- CAD, para o conhecimento em modelagem 3D; <br>
 4- Visão computacional, para a expansão de conhecimentos e possibilidades na  programação; <br>
 5- Git e Github, para a utilização da plataforma no gerenciamento e controle dos projetos.
@@ -61,6 +61,11 @@ O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a c
   </div>
 </div>
 
+### Trilha
+
+<th><center><img src="{{ 'assets/img/trilha.png' | relative_url }}" width="500" alt="Onshape" class="img" /></center></th>
+<br>
+
 ### Valores
 Os valores de workshop variam de 10 a 15 reais por unidade de acordo com a categoria em que você se enquadra, como mostra a tabela abaixo.
 Já o passe RASWEEKEND, é um valor único para qualquer categoria e te dá o direito de assistir a todos os workshops.
@@ -93,3 +98,18 @@ Além disso, vale ressaltar que todos os workshops contaram com certificados.
   </tr>
 </tbody>
 </table>
+
+
+## Inscrição
+Para se inscrever acesse o link abaixo e preencha o formulário.
+<p>
+<a href="https://forms.gle/gk6nBn9kRixsVu7LA"
+   title="Formulário para inscrição."> Clique aqui para acessar o forms.</a>.
+</p>
+
+### Dúvidas
+Está com dúvidas? Envie um email para 
+<p>
+<a href="vitor.mendes@ieee.org"
+   title="Email de Vitor."> vitor.mendes@ieee.org</a>.
+</p>
