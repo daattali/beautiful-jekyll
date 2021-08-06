@@ -35,18 +35,9 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 
 #### I'm ready to take control of my meal planning!
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="2JAM876PECP9U">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
 #### Pricing
 
-$9.99 USD. Payment is via PayPal (you can also checkout with your credit card without an account) or EMT as another option if you are in Canada. You can directly send funds to simplehomemom@gmail.com and then follow up with an email so I know to send you the guide!
-
-**Please note:** After payment, it directs you to the printable guide page for you to save and download. Please email me ASAP if anything goes wonky technology wise and I'll send you the guide directly!
+$9.99 USD. **Payment methods are being reworked as PayPal wasn't working! You can email me at simplehomemom@gmail.com to purchase in the meantime.
 
 **Blogs of mine you may enjoy:**
 
