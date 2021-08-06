@@ -22,6 +22,8 @@ navbar-links:
   Projetos:
     - Em Andamento: "projects-inprog"
     - Finalizados: "projects-done"
+    - RASWEEKENDS: "rasweekend"
+    
   Capítulos:
     - EMBS: "capitulo-EMBS"
     - PES: "capitulo-PES"
@@ -113,7 +115,7 @@ navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
 link-col: "#002855"
-hover-col: "#00629B"
+hover-col: "#006bb6"
 footer-col: "#75787B"
 footer-text-col: "#FFFFFF"
 footer-link-col: "#002855"
