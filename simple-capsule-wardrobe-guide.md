@@ -16,16 +16,9 @@ So if you are not sure where to start (or continue) because you're confused abou
 
 ![An image of the title page of the ebook.](/uploads/simple-capsule-wardrobe-guide.jpg "simplecapsulewardrobeguide")
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="QEKUGKA8FZSMJ">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
 ## Included inside
 
-* $7 USD (click through to the download link)
+* $7 USD **Payment methods are being reworked as PayPal wasn't working! You can email me at simplehomemom@gmail.com to purchase in the meantime.
 * 9 pages
 * Questions to get you thinking about your ideal simple capsule wardrobe
 * Six simple steps to get you well on the way to design your simple capsule wardrobe
