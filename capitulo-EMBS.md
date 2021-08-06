@@ -36,20 +36,16 @@ O [**EMBS** (Engineering in Medicine and Biology Society)](https://www.embs.org/
             <th><a href="https://www.linkedin.com/in/matheus-dos-santos-bomfim-459421191/"><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url}}" width="100" alt="matheus" class="img-fluid rounded-circle img-blur" /></center></a></th>
             <th></th>
             <th><a href="https://www.linkedin.com/in/eduardo-l%C3%B4bo-8a4b961b3"><center><img src="{{ 'assets/img/voluntarios/eduardo_lobo.png' | relative_url}}" width="100" alt="eduardo" class="img-fluid rounded-circle img-blur" /></center></a></th>
-            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="20%"><center>Josiane Viana</center></td>
+            <td width="33%"><center>Josiane Viana</center></td>
             <td></td>
-            <td width="20%"><center>João Guilherme</center></td>
+            <td width="33%"><center>João Guilherme</center></td>
             <td></td>
-            <td width="20%"><center>Alexandre Adonai</center></td>
+            <td width="33%"><center>Alexandre Adonai</center></td>
             <td></td>
-            <td width="20%"><center>Matheus Bomfim</center></td>
-            <td></td>
-            <td width="20%"><center>Eduardo Lôbo</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Conselheiro</center></small></td>
@@ -57,10 +53,6 @@ O [**EMBS** (Engineering in Medicine and Biology Society)](https://www.embs.org/
             <td style="vertical-align: top"><small><center>Presidente</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>Vice-Presidente</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>Tesoureiro</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>Secretário</center></small></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>-</center></small></td>
@@ -68,10 +60,6 @@ O [**EMBS** (Engineering in Medicine and Biology Society)](https://www.embs.org/
             <td style="vertical-align: top"><small><center>guilherme_ribeiro@ieee.org</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>alexandre.adonai@ieee.org</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>matheus.sbomfim@ieee.org</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>eduardo.lobo@ieee.org</center></small></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>-</center></small></td>
@@ -79,7 +67,32 @@ O [**EMBS** (Engineering in Medicine and Biology Society)](https://www.embs.org/
             <td style="vertical-align: top"><small><center>(71) 9 9909-9867</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>(13) 9 9766-3239</center></small></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th><a href="https://www.linkedin.com/in/matheus-dos-santos-bomfim-459421191/"><center><img src="{{ 'assets/img/voluntarios/matheus_bomfim.png' | relative_url}}" width="100" alt="matheus" class="img-fluid rounded-circle img-blur" /></center></a></th>
+            <th></th>
+            <th><a href="https://www.linkedin.com/in/eduardo-l%C3%B4bo-8a4b961b3"><center><img src="{{ 'assets/img/voluntarios/eduardo_lobo.png' | relative_url}}" width="100" alt="eduardo" class="img-fluid rounded-circle img-blur" /></center></a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+            <td width="50%"><center>Matheus Bomfim</center></td>
             <td></td>
+            <td width="50%"><center>Eduardo Lôbo</center></td>
+          </tr>
+          <tr style="text-align: center" >
+            <td style="vertical-align: top"><small><center>Tesoureiro</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>Secretário</center></small></td>
+          </tr>
+          <tr style="text-align: center" >
+            <td style="vertical-align: top"><small><center>matheus.sbomfim@ieee.org</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>eduardo.lobo@ieee.org</center></small></td>
+          </tr>
+          <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>(71) 9 8407-6533</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>(71) 9 9982-0906</center></small></td>
