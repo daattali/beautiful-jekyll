@@ -36,25 +36,31 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/marcella_giovanna.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
+            <th><a href="https://www.linkedin.com/in/marcella-santos-b20b42161/"><center><img src="{{ 'assets/img/voluntarios/marcella_giovanna.png' | relative_url }}" width="100" alt="Marcella" class="img-fluid rounded-circle img-blur"/></center></a></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/tayron.png' | relative_url }}" width="100" alt="tayron" class="img-fluid rounded-circle"/></center></th>
+            <th></th>
+            <th><a href="https://www.linkedin.com/in/vitorsmends/"><center><img src="{{ 'assets/img/voluntarios/vitor.png' | relative_url }}" width="100" alt="Vitor" class="img-fluid rounded-circle img-blur"/></center></a></th>
           </tr>
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="33%"><center>Lucas Silva</center></td>
+            <td width="25%"><center>Lucas Silva</center></td>
             <td></td>
-            <td width="33%"><center>Marcella Giovanna</center></td>
+            <td width="25%"><center>Marcella Giovanna</center></td>
             <td></td>
-            <td width="33%"><center>Tayron Rodrigues</center></td>
+            <td width="25%"><center>Tayron Rodrigues</center></td>
+            <td></td>
+            <td width="25%"><center>Vitor Mendes</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Conselheiro</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Presidente</center></small></td>
+            <td style="vertical-align: top"><small><center>Presidente e Tesoureira</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>Vice-Presidente</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>Tesoureiro</center></small></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>-</center></small></td>
@@ -62,6 +68,8 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
             <td style="vertical-align: top"><small><center>marcella.santos@ieee.org</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>tayronrodrigues@ieee.org</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>vitor.mendes@ieee.org</center></small></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>-</center></small></td>
@@ -69,35 +77,8 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
             <td style="vertical-align: top"><small><center>(71) 9 9996-8020</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>(71) 9 8702-3288</center></small></td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/vitor.png' | relative_url }}" width="100" alt="Vitor" class="img-fluid rounded-circle"/></center></th>
-            <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/marcella_giovanna.png' | relative_url }}" width="100" alt="Marcella" class="img-fluid rounded-circle"/></center></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="50%"><center>Vitor Mendes</center></td>
             <td></td>
-            <td width="50%"><center>Marcella Giovanna</center></td>
-          </tr>
-          <tr style="text-align: center" >
-            <td style="vertical-align: top"><small><center>Secretário</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>Tesoureiro</center></small></td>
-          </tr>
-          <tr style="text-align: center" >
-            <td style="vertical-align: top"><small><center>vitor.mendes@ieee.org</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>marcella.santos@ieee.org</center></small></td>
-          </tr>
-          <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>(71) 9 9920-9710</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>(71) 9 9996-8020</center></small></td>
           </tr>
         </tbody>
       </table>

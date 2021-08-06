@@ -45,7 +45,6 @@ O [**EMBS** (Engineering in Medicine and Biology Society)](https://www.embs.org/
             <td width="33%"><center>João Guilherme</center></td>
             <td></td>
             <td width="33%"><center>Alexandre Adonai</center></td>
-            <td></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Conselheiro</center></small></td>
