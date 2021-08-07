@@ -41,7 +41,7 @@ Je décide donc de prendre la grande avenue de France à pied vu que les transpo
 
 Je m'attendais bien à voir deux ou trois mecs se balader avec une 86 dans une main et l'autre occuper à attraper leur entrejambe en gueulant "mort aux flics" (oui je reste dans les classiques). Mais nan. Rien. La rue est vide comme celle d'un western spaghetti avant un duel.
 
-**Personne normale** : hmmm c'est louche...</br>
+**Personne normale** : hmmm c'est louche... </br>
 **Moi** : Ah cool je serai rentré plus tôt
 
 j'ai toute l'avenue à traverser, il n'y a personne, pas de bagnole rien alors je marche au milieu tranquillou... et là, je vois les nuages de lacrymo (poétiques, je le rappelle) se lever devant moi... et là je remarque qu'ils cachaient en fait une compagnie entière de CRS qui barraient entièrement l'avenue.
@@ -80,8 +80,8 @@ Et là tout s'emballe très très vite. Déjà les gars m'encercle... enfin pas 
 
 Petite note : j'ai fait plein de manif et avec ma veine forcément je me suis fait arrêter, taper (par les force de l'ordre, des extrémiste d'un bord ou l'autre) et fouiller plein de fois... littéralement je n'est jamais vu le truc se passer comme ça. Généralement on te fout par terre, on te fouille rarement tout de suite et on pose pas des masses de questions... là j'étais tout décontenancé.
 
-« _Z'avez des revendications ?_ »</br>
-« _Vous êtes avec qui ?_ »</br>
+« _Z'avez des revendications ?_ » </br>
+« _Vous êtes avec qui ?_ » </br>
 « _Avant de vous fouiller, avez vous des objets dangereux dans vos poches ? Couteaux ? Poinçon ? Ou des substance illicites ?_ » 
 
 Bon ok la dernière question m'a un peu rassurée celle-là je l'ai eu mille fois ! Ça tient à peu de chose la confiance en soi !
@@ -90,7 +90,7 @@ Et là ça part en couille mais vraiment vraiment :
 
 « _Il a un fliiiiiiiiiiiiiiiiingue !_ »
 
-![](https://tenor.com/brZJk.gif){: width="100%" }
+![](https://c.tenor.com/G8QswMXDtV8AAAAS/zero-to-one-hundred-that-escalated-quickly.gif){: width="100%" }
 
 Tout le groupe a reculé en une seconde, les masque se sont baissés et un nombra assez important d'arme à feu a été pointé sur moi.
 
