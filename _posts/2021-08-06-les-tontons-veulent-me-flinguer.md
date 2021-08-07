@@ -33,7 +33,7 @@ Je n'aurais pas du.
 
 Bon bah dehors c'est le calme plat : plus de manif, des cerisiers en fleurs et, je ne sais pas si vous le savez mais le coucher de soleil sur les nuages de lacrymo qui se dissipent lentement c'est super beau.
 
-<instant poétique>
+\<instant poétique\>
 
 Je décide donc de prendre la grande avenue de France à pied vu que les transports était encore coupés. Comme il n'y a plus de manif les flics me laisseront bien passer au pire...
 
@@ -102,7 +102,7 @@ Quand on t'appelle "monsieur" et ben tu obéis. Quand on point une vingtaine de 
 
 ...avec marqué "social traitre" dessus.
 
-<La scène qui suit est authentique et restera la plus débile référence cinématographique de l'histoire>
+\<La scène qui suit est authentique et restera la plus débile référence cinématographique de l'histoire\>
 
 La réponse du flic : « _Mais c'est quoi ça ?_ »</br>
 Moi : « _Je vous préviens qu'on a la puissance de feu d'un croiseur, et des flingues de concours._ »
