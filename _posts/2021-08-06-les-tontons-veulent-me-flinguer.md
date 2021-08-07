@@ -15,7 +15,7 @@ J'avais donc été au boulot tranquillou dans ce joli quartier tout plein d'étu
 
 Rhaaaa mais quand même c'était quoi ? La réforme du bac... nan le CPE... nan... c'était vers 2016... l'autonomie des université !! Ouais ça pourrait être ça... Bon enfin bref au final ils disaient :
 
-![](https://tenor.com/uqwt.gif){: width="100%" }
+![](https://c.tenor.com/fxBEWoN_oIIAAAAC/kaamelott-on-en-a-gros.gif){: width="100%" }
 
 Mais bon, je bossais à côté de la grosse Avenue de France (où se passe toutes les manifs) mais pas dessus même donc ça m'impactait pas des masses. J'ai bossé toute la journée, beaucoup. D'ailleurs j'ai oublié de faire ma pause goûter avec les potes du bureau d'à côté qui m'ont juste déposé un papier "social traître" sur mon bureau pour marquer leur désapprobation de cet abandon.
 
@@ -48,7 +48,7 @@ j'ai toute l'avenue à traverser, il n'y a personne, pas de bagnole rien alors j
 
 J'ajouterais bien qu'ils avaient l'air patibulaire... mais apparemment en "armure Robocop" je pense que même Elsa de la Reine de Neige aurait l'air patibulaire.
 
-![](https://tenor.com/6zEs.gif){: width="100%" }
+![](https://c.tenor.com/XthPyuhvGD0AAAAC/everything-proceeding.gif){: width="100%" }
 
 Moi je suis assez simple je #stickToThePlan quelque soit les circonstances.
 
@@ -62,7 +62,7 @@ What the...
 
 Là un gradé sort du rend et s'adresse à moi avec un megaphone, outil profondément inutile vu la distance... j'avais réussi à entendre les loulous discuter entre eux : « _Reculer ou approchez vous les mains sur la tête_ »
 
-![](https://tenor.com/blGer.gif){: width="100%" }
+![](https://c.tenor.com/Hht3QmnXPrIAAAAC/the-dude-white-russian.gif){: width="100%" }
 
 Je dois reculer ou avancer... et si je recule dois-je mettre les mains sur la tête ? Clairement l'injonction n'avait grammaticalement pas été suffisamment préparée. J'eus, pour une fois, la présence d'esprit de ne pas faire cette remarque à mon interlocuteur. C'est rare chez moi. Vous pourriez le noter.
 
@@ -74,7 +74,7 @@ Le problème c'est qu'en répondant j'avais avancé. A-van-cé. (sans mettre les
 
 Le gars au megaphone a reculer dans le rang qui a comme une belle légion romaine lever les boucliers bien en simultané. C'était beau comme une bouche de requin qui se referme sur une licorne 🦄🦈
 
-![](/assets/img/tortue-romaine.jpg){: width="100%" }
+![](https://c.tenor.com/_e-NywoQtIoAAAAC/rome-roman-legion.gif){: width="100%" }
 
 Et là tout s'emballe très très vite. Déjà les gars m'encercle... enfin pas tous les gars, un petit groupe de la légion romaine qui me faisait face. Par le trou dans les rang je vois que derrière il y a des flic en civil qui ont pas l'air super à l'aise. Ensuite on me demande d'écarter les jambes et de mettre lentement les mains sur la tête. Et là commence un genre d'interrogatoire...
 
