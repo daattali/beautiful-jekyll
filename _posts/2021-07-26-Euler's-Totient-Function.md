@@ -5,6 +5,8 @@ cover-img: /assets/img/common banner.jpg
 thumbnail-img: /assets/img/common banner.jpg
 share-img: /assets/img/social media preview.png
 comments: true
+social-share: true
+readtime: true
 tags: [number theory]
 ---
 <!-- Google Tag Manager (noscript) -->
