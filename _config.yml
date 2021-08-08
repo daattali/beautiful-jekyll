@@ -16,9 +16,10 @@ author: Raihan Khan
 navbar-links:
 
   Home: "https://raihankhan.github.io/"
-  At A Glance !!:
-    - Problem Solving Arsenals: ""
-    
+  Check out the contents!:
+    - Data Structure: ""
+    - Dynamic Programming: ""
+    - Number Theory: ""
 
   About Me: "aboutme"
   
