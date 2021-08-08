@@ -17,11 +17,12 @@ navbar-links:
 
   Home: "https://raihankhan.github.io/"
   Problem Solving Arsenals:
-    - Data Structures: ""
-    - Dynamic Programming: "Dynamic Programming"
-    - String Processing: ""
-    - Graphs: ""
-    - Miscellaneous: ""
+    - Contents: ""
+      - Data Structures: ""
+      - Dynamic Programming: "Dynamic Programming"
+      - String Processing: ""
+      - Graphs: ""
+      - Miscellaneous: ""
     
 
   About Me: "aboutme"
