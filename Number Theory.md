@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Number Theory
-subtitle: Mathematics is the queen of the sciences and number theory is the queen of mathematics - Carl Friedrich Gauss
+subtitle: Mathematics is the queen of the sciences and number theory is the queen of mathematics (Carl Friedrich Gauss)
 Comments: true
+full-width: true
 
 ---
 
