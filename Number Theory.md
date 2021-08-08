@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Number Theory
-subtitle: ......................
+subtitle: Mathematics is the queen of the sciences and number theory is the queen of mathematics - Carl Friedrich Gauss
 Comments: true
 
 ---
