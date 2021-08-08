@@ -17,9 +17,9 @@ navbar-links:
 
   Home: "https://raihankhan.github.io/"
   Check Out My Inventory:
-    - Data Structure: "/Data Structure.md"
-    - Dynamic Programming: "/Dynamic Programming.md"
-    - Number Theory: "/Number Theory.md"
+    - Data Structure: "/Data Structure.md/"
+    - Dynamic Programming: "/Dynamic Programming.md/"
+    - Number Theory: "/Number Theory.md/"
 
   About Me: "aboutme"
   
