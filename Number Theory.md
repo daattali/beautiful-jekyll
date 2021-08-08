@@ -3,7 +3,7 @@ layout: page
 title: Number Theory
 subtitle: There should be no such thing as boring mathematics.</br>— Edsger W. Dijkstra
 Comments: true
-
+social-share: true
 
 ---
 
