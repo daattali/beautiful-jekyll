@@ -1,30 +1,30 @@
 ---
 layout: page
-title: Projetos Finalizados
+title: Projetos em Andamento
 subtitle: Que tal conhecer um pouco nossos projetos?
-cover-img: /assets/img/done.jpeg
-share-img: /assets/img/done.jpeg
+cover-img: /assets/img/inprog.jpg
+share-img: /assets/img/inprog.jpg
 ---
 
 <!-- BayIEEEmax -->
 <article class="project-preview-left">
     <a href="https://ieeecimatec.github.io/projeto/">
-      <h2 class="project-title">Projeto 1</h2>      
+      <h2 class="project-title">BayIEEEmax</h2>      
     </a>
     <p class="project-meta project-meta-left">
         <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
-        Iniciado em mes de ano
+        Iniciado em julho de 2021
     </p>    
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/baymax_thumb.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
       <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/baymax_thumb.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-entry">
