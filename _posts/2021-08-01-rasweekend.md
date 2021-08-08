@@ -1,12 +1,12 @@
 ---
-layout: page
+layout: post
 title: 
 subtitle: 
 cover-img: /assets/img/rasweekend.png
+thumbnail-img: /assets/img/trilha.png
+share-img: /assets/img/trilha.png
 ---
 
-
-### O que é o RASWeekends
 O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a capacitação dos nossos voluntários e a disseminação de conhecimentos importantes para a construção de nossos projetos. Os participantes terão a oportunidade de participar de workshops de: 
 
 1. **Arduino**, que irá ajudar a aqueles que nunca mexeram com nenhuma plataforma de desenvolvimento e levará a construção de projetos reais, utilizando simuladores online. Acontecerá nos dias: 14 e 15/08;
@@ -106,7 +106,7 @@ Para se inscrever acesse o link abaixo e preencha o formulário.
 As inscrições poderam ser feitas até o último dia do evento. Sendo que todo o conteúdo será gravado e ficará disponível para os assinantes.
 <p>
 <a href="https://forms.gle/UH6mSo399iSizUHt8"
-   title="Formulário para inscrição."> Clique aqui para acessar o forms.</a>
+   title="Formulário para inscrição."> Clique aqui para acessar o forms.</a>.
 </p>
 
 ### Dúvidas

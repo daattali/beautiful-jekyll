@@ -17,8 +17,8 @@ navbar-links:
   Nossos Prêmios: 
     - Concurso Fotos SAC BR 2021: "2021-06-24-concurso-fotos-sacbr-2021"
     - Financiamento BayIEEEmax: "2021-07-01-bayieeemax-financiamento"
-    - Concurso Fotos IEEE DAY 2018:
-    - Núcleo de Capacitação em Arduino SAC BR 2018:
+    - Concurso Fotos IEEE DAY 2018: "concurso-fotos-2018"
+    - Núcleo de Capacitação em Arduino SAC BR 2018: "nucleo-capacitacoes-arduino-2018"
   Projetos:
     - Em Andamento: "projects-inprog"
     - Finalizados: "projects-done"
