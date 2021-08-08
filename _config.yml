@@ -16,13 +16,8 @@ author: Raihan Khan
 navbar-links:
 
   Home: "https://raihankhan.github.io/"
-  Problem Solving Arsenals:
-    - Contents: ""
-    - Data Structures: ""
-    - Dynamic Programming: "Dynamic Programming"
-    - String Processing: ""
-    - Graphs: ""
-    - Miscellaneous: ""
+  Contents:
+    - Problem Solving Arsenals: ""
     
 
   About Me: "aboutme"
