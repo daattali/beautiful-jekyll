@@ -8,7 +8,7 @@ share-img: /assets/img/inprog.jpg
 
 <!-- BayIEEEmax -->
 <article class="project-preview-left">
-    <a href="https://ieeecimatec.github.io/projeto/">
+    <a href="https://ieeecimatec.github.io/project-bayieeemax/">
       <h2 class="project-title">BayIEEEmax</h2>      
     </a>
     <p class="project-meta project-meta-left">
@@ -18,12 +18,12 @@ share-img: /assets/img/inprog.jpg
         Iniciado em julho de 2021
     </p>    
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-bayieeemax/">
         <img src="{{ 'assets/img/baymax_thumb.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-bayieeemax/">
         <img src="{{ 'assets/img/baymax_thumb.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
