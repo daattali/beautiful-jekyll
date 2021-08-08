@@ -16,9 +16,10 @@ author: Raihan Khan
 navbar-links:
 
   Home: "https://raihankhan.github.io/"
+  
   Check Out My Inventory:
     - Data Structure: "/Data Structure.md/"
-    - Dynamic Programming: "/Dynamic Programming.md/"
+    - Dynamic Programming: "https://github.com/raihankhan/raihankhan.github.io/blob/master/Dynamic%20Programming.md
     - Number Theory: "/Number Theory.md/"
 
   About Me: "aboutme"
