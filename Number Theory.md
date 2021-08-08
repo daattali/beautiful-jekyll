@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Number Theory
-subtitle: Game of numbers
+subtitle: ......................
+Comments: true
 
 ---
 
