@@ -24,6 +24,7 @@ navbar-links:
     - Ask Me Something: "https://github.com/onuratakan/ask_me_something"
     - Say Me Something: "https://github.com/onuratakan/say_me_something"
     - Linear Congruential Generator: "https://github.com/onuratakan/Linear_Congruential_Generator"
+    - Get Crypto Price: "https://github.com/onuratakan/get_crypto_price"
   My Libraries:
     - HACON: "https://pypi.org/project/hacon/"
     - Linear Congruential Generator: "https://pypi.org/project/Linear-Congruential-Generator/"
@@ -31,6 +32,7 @@ navbar-links:
     - Say Me Something: "https://pypi.org/project/say-me-something/"
     - Ask Me Something: "https://pypi.org/project/ask-me-something/"
     - ONUR Voice Assistant: "https://pypi.org/project/ONUR-Voice-Assistant/"
+    - Get Crypto Price: "https://pypi.org/project/get-crypto-price/"
   CV: "https://onuratakan.github.io/online-cv/"
 
 # --- Logo --- #
