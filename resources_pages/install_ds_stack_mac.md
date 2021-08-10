@@ -422,7 +422,7 @@ Here is a screenshot of what it looks like with the settings saved:
 To check that the extension is working,
 open JupyterLab,
 launch an R notebook,
-and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m`, respectively.
+and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Cmd` + `m`, respectively.
 You could add any arbitrary text insertion command the same way,
 but this is all that is required for MDS.
 
