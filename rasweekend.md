@@ -10,10 +10,10 @@ cover-img: /assets/img/rasweekend.png
 O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a capacitação dos nossos voluntários e a disseminação de conhecimentos importantes para a construção de nossos projetos. Os participantes terão a oportunidade de participar de workshops de: 
 
 1. **Arduino**, que irá ajudar a aqueles que nunca mexeram com nenhuma plataforma de desenvolvimento e levará a construção de projetos reais, utilizando simuladores online. Acontecerá nos dias: 14 e 15/08;
-2. **Eletrônica**,  para a construção de projetos na prática e o aprendizado de como funcionam os componentes. Acontecerá no;
-3. **CAD**, para o conhecimento em modelagem 3D;
-4. **Visão Computacional**, para a expansão de conhecimentos e possibilidades na  programação;
-5. **Git e Github**, para a utilização da plataforma no gerenciamento e controle dos projetos.
+2. **Eletrônica**,  para a construção de projetos na prática e o aprendizado de como funcionam os componentes. Acontecerá no dia 18/09;
+3. **CAD**, para o conhecimento em modelagem 3D. Acontecerá nos dias: 21 e 22/08;
+4. **Visão Computacional**, para a expansão de conhecimentos e possibilidades na  programação. Acontecerá no dia 25/08;
+5. **Git e Github**, para a utilização da plataforma no gerenciamento e controle dos projetos. Acontecerá no dia 04/09.
 
 
 ### Workshops
