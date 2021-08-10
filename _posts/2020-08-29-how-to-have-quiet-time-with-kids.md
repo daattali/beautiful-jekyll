@@ -45,15 +45,15 @@ My oldest two boys:
 * Listen to audiobooks sometimes.
 * Watch two shows…and don't bug mom. Ha!
 
-My younger two usually play with one another and look at books..and sometimes sneak away to find snacks. ha!
+My younger two usually play with one another and look at books..and sometimes sneak away to find snacks. ha! After this time, they watch a couple shows usually.
 
-When my baby is asleep, I am usually in my office working. Answering emails, listening to music with the odd interruption here and there. I take some time to close my eyes and rest with the baby before this too.
+While my kids do quiet time, I'm usually resting, praying, reading, and then working. I'm doing things like answering emails, listening to music with the odd interruption here and there. And don’t take it just from me, [here’s a blog](https://blog.outschool.com/quiet-time-benefits/) that goes over the research of the benefits of quiet time for kids. Fascinating!
 
-_Update 2021: Now that my youngest is not napping, she hangs out with the second youngest and plays, reads, and watches a couple shows. I've also since created my own routine during quiet time that includes prayer, rest, and work. It's been so life-giving for me!_
+### FREE QUIET TIME TEMPLATE
 
-And don’t take it just from me, [here’s a blog](https://blog.outschool.com/quiet-time-benefits/) that goes over the research of the benefits of quiet time for kids. Fascinating!
+_I also put together a step by step simple template for quiet time if you'd like that too._ 
 
-_I also recently put together a step by step simple template for quiet time if you'd like that too. Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
+_Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
 
 (Blog updated July 2021)
 
