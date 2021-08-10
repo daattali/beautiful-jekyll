@@ -463,7 +463,7 @@ And type in `R_USER` as the "Variable name" and `C:\Users\username` as the "Vari
 
 ![](/resources_pages/imgs/new-user-var-values.png)
 
-Click "OK" on all of the three windows we opened above and you're done! If you open RStudio and R from terminal and type the following in both:
+Click "OK" on all of the three windows we opened above and you're done! If you open R from terminal (type `R` and then press `enter`) and Rstudio and type the following in both:
 
 ```
 .libPaths()
@@ -510,6 +510,8 @@ typing the following into the R console inside RStudio:
 ```
 install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver'))
 ```
+
+> **Note:** It might take a rather long time to install these pacakges.
 
 If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
 
@@ -749,7 +751,7 @@ To test if the installation was successful open the `SQL Shell` app from the Sta
 
 You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one [here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
 
-After signing-up and signing into the Docker Store, go [here](https://store.docker.com/editions/community/docker-ce-desktop-windows) and click on the "Get Stable" button on the right hand side of the screen. Then follow the installation instructions on that screen to install the stable version.
+After signing-up and signing into the Docker Store, go [here](https://store.docker.com/editions/community/docker-ce-desktop-windows) and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen to install the stable version.
 
 After installation (Docker will make you sign out to finish installing), launch a terminal and type
 
