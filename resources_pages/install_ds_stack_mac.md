@@ -9,35 +9,18 @@ subtitle: MDS software stack install instructions for macOS
     <base target="_blank">
 </head>
 
-These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-
- - runs one of the following operating systems: macOS 10.4.X (Big Sur), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004.
-    - **Windows 10 Home is not sufficient** as not all the software required for the program can be installed on that OS. [Click here to download Windows 10 Education for free from UBC.](https://it.ubc.ca/software-downloads)
-    - When installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.
-- can connect to networks via a wireless connection for on campus work
-- has access to an internet connection that is fast and stable enough for video calling and conducting online quizzes
-- has at least 50 GB disk space available
-- has at least 8 GB of RAM
-- uses a 64-bit CPU
-- is at most 6 years old at the start of the program (4 years old or newer is recommended)
-- uses English as the default language
-- student user has full administrative access to the computer
-
-**Students' whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.**
-
 ## Table of Contents
 
+- [Installation notes](#installation-notes){:target="_self"}
 - [UBC Student Email](#ubc-student-email){:target="_self"}
 - [Web browser](#web-browser){:target="_self"}
-- [LastPass password manager](#lastpass-password-manager){:target="_self"}
+- [Password manager](#password-manager){:target="_self"}
 - [Slack](#slack){:target="_self"}
 - [Bash shell](#bash-shell){:target="_self"}
 - [Visual Studio Code](#visual-studio-code){:target="_self"}
 - [GitHub](#github){:target="_self"}
 - [Git](#git){:target="_self"}
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
-- [Essential python packages](#essential-python-packages){:target="_self"}
-- [JupyterLab setup](#jupyterlab-setup){:target="_self"}
 - [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio){:target="_self"}
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
@@ -73,9 +56,9 @@ In MDS we will be using many tools that work most reliably on Google Chrome and 
 - To install Chrome, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation.
 - To install Firefox, go to [https://www.mozilla.org/en-US/firefox/new/](https://www.mozilla.org/en-US/firefox/new/), click on "Download Firefox" and follow the instructions on the website to finish the installation.
 
-## LastPass password manager
+## Password manager
 
-Some MDS courses (e.g. the capstone project) use the LastPass password manager to share credentials. Although we will not cover privacy and security topics until the second semester of the program, we recommend that you use a password manager such as LastPass to help you create strong passwords and store them securely, and to facilitate online authentication. You can sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome or Firefox browser extension available here: [https://lastpass.com/misc_download2.php](https://lastpass.com/misc_download2.php).
+A password manager is an efficient and convenient measure to protect your online accounts from most common threats. While you don't strictly need to use one for any of the courses in MDS, we **highly recommend** that you set one up for your own benefit. Examples of reliable password managers include the ones built into Chrome and Firefox, [Bitwarden](https://bitwarden.com/), and [KeePassXC](https://keepassxc.org/) (if you prefer to sync your passwords manually).
 
 ## Slack
 
@@ -133,7 +116,7 @@ This step is required for
 
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it using the Xcode command line tools (not all of Xcode), which includes Git.
+We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if your Git is older than this version, we ask you to update it using the Xcode command line tools (not all of Xcode), which includes Git.
 
 Open Terminal and type the following command to install Xcode command line tools:
 
@@ -164,7 +147,7 @@ git config --global user.name "Jane Doe"
 git config --global user.email janedoe@example.com
 ```
 
-> **Note:** to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
+> **Note:** To ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 
 ### Setting VS Code as the default editor
 
@@ -188,7 +171,32 @@ VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
 
 Then save the file and exit VS Code.
 
-> Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+> **Note:** Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+
+In some cases,
+VScode is not set as the default text editor for git
+even after appending the two lines above,
+so to make sure it is registered properly,
+also run the following from your terminal:
+
+```bash
+git config --global core.editor "code --wait"
+```
+
+On MacOS,
+VScode sometimes reads a different configuration file than your other programs.
+To avoid this,
+open your `~/.bashrc` file:
+
+```bash
+code ~/.bashrc
+```
+
+And append the following line:
+
+```bash
+if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
+```
 
 ## Python, Conda, and JupyterLab
 
@@ -224,7 +232,7 @@ Python 3.8.3
 
 > **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.8**.
 
-## Essential Python packages
+## Installing Python packages
 
 `conda` installs Python packages from different online repositories which are called "channels".
 A package needs to go through thorough testing before it is included in the default channel,
@@ -240,36 +248,39 @@ To add the conda-forge channel by typing the following in the terminal:
 conda config --add channels conda-forge
 ```
 
-To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of our program:
-
-```bash
-conda install \
- jupyterlab=3.* \
- numpy=1.* \
- pandas=1.* \
- flake8=3.* \
- black=21.*
-```
-
+To install packages individually,
+we can now use the following command:
+`conda install <package-name>`.
+After running that command
 `conda` will show you the packages that will be downloaded,
 and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
-
-> **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
+Let's try this out in the next section,
+by installing some of the key packages we will use in MDS.
 
 ## JupyterLab setup
 
-We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
+We will be using `JupyterLab` as our main coding environment
+and `pandas` is one of the key data analyses packages in MDS.
+The Jupytext Python package and the JupyterLab git extension facilitates
+using notebooks in JupyterLab together with Git & GitHub.
+The spellchecker helps us correcting typos in our writing
+and the LSP packages fill the same function for our code.
+Install them via the following commands:
 
 ```bash
-conda install nodejs=15.*
-conda install -c conda-forge jupyterlab jupyterlab-git jupytext
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
 ```
 
-To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal,
+which should open a new tab in your default browser with the JupyterLab interface.
 To exit out of JupyterLab you can click `File -> Shutdown`,
 or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
+
+![](/resources_pages/imgs/jupyter_lab.PNG)
+
+> **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ## R, XQuartz, IRkernel, and RStudio
 
@@ -277,9 +288,9 @@ R is another programming language that we will be using a lot in the MDS program
 
 ### R
 
-Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac (Should look something like this: R-3.6.1.pkg). Open the file and follow the installer instructions.
+Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac. Open the file and follow the installer instructions.
 
-After installation, in Terminal type the following to ask for the version:
+After installation, open a new terminal window and type the following:
 
 ```bash
 R --version
@@ -320,14 +331,14 @@ Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
 
-### Essential R packages
+### Installing R packages
 
 Next, install the key R packages needed for the start of MDS program,
 by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```R
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools'))
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver'))
 ```
 
 > **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
@@ -363,21 +374,57 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
 To improve the experience of using R in JupyterLab,
-we will add an extension that allows us to setup keyboard shortcuts for inserting text
-(thanks to former MDS student Ryan Homer for developing this extension!).
-By default,
-it creates shortcuts for inserting two of the most common R operators: `<-` and `|>`.
-Run the following from terminal to install the extension:
+we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
+Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
+and paste the following in the rightmost panel that says `User Preferences`
+(replacing the `{}`):
 
-```bash
-jupyter labextension install @techrah/text-shortcuts
-jupyter lab build
+```json
+{
+    "shortcuts": [
+        {
+            "command": "apputils:run-first-enabled",
+            "selector": "body",
+            "keys": ["Alt -"],
+            "args": {
+                "commands": [
+                    "console:replace-selection",
+                    "fileeditor:replace-selection",
+                    "notebook:replace-selection",
+                ],
+                "args": {"text": "<- "}
+            }
+        },
+        {
+            "command": "apputils:run-first-enabled",
+            "selector": "body",
+            "keys": ["Accel Shift M"],
+            "args": {
+                "commands": [
+                    "console:replace-selection",
+                    "fileeditor:replace-selection",
+                    "notebook:replace-selection",
+                ],
+                "args": {"text": "|> "}
+            }
+        }
+    ]
+}
 ```
+
+After you have pasted this text,
+hit the small floppy disk in the top right (or `Ctrl` + `s`)
+to save the settings.
+Here is a screenshot of what it looks like with the settings saved:
+
+![](/resources_pages/imgs/r-jl-text-shortcuts.png)
 
 To check that the extension is working,
 open JupyterLab,
 launch an R notebook,
-and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Command` + `m`, respectively.
+and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m`, respectively.
+You could add any arbitrary text insertion command the same way,
+but this is all that is required for MDS.
 
 ## LaTeX
 
@@ -385,9 +432,9 @@ We will install the lightest possible version of LaTeX and it's necessary packag
 
 First, run the following command to make sure that `/usr/local/bin` is writable:
 
->```shell
-> sudo chown -R $(whoami):admin /usr/local/bin
->```
+```shell
+sudo chown -R $(whoami):admin /usr/local/bin
+```
 
 > **Note:** You might be asked to enter your password during installation.
 
@@ -396,10 +443,6 @@ Now open RStudio and run the following commands to install the `tinytex` package
 ```R
 install.packages('tinytex')
 tinytex::install_tinytex()
-```
-
-```bash
-~/Library/TinyTeX/bin/*/tlmgr path add
 ```
 
 You can check that the installation is working by opening a terminal and asking for the version of latex:
@@ -445,7 +488,9 @@ tlmgr install eurosym \
   trimspaces \
   ucs \
   ulem \
-  upquote
+  upquote \
+  lwarp \
+  oberdiek
 ```
 
 To test that your latex installation is working with jupyter notebooks,
@@ -455,9 +500,24 @@ Go to `File -> Export notebook as... -> Export Notebook to PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
 
+### WebPDF export
+
+Jupyter recently added another way to export notebooks to PDF
+which does not require Latex
+and makes the exported PDF look similar to notebooks exported to HTML.
+This requires the `pyppeteer` package,
+which we can install as follows.
+
+```bash
+conda install pyppeteer=0.2.2
+pyppeteer-install
+```
+
+Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
+
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can [download PostgreSQL 12.4 from [here](https://www.enterprisedb.com/downloads/postgresql) (do *not* select version 13). Follow the instructions for the installation. In the password page, type whatever password you want, **but make sure you'll remember it later**. For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
+We will be using PostgreSQL as our database management system. You can [download PostgreSQL 12.4 from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) (do *not* select version 13). Follow the instructions for the installation. In the password page, type whatever password you want, **but make sure you'll remember it later**. For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
 
 To test if the installation was successful open the `SQL Shell` app from the LaunchPad or applications directory. You will be asked to setup your configuration:
 
@@ -523,6 +583,7 @@ To install an extension, you simply search for it in the search bar, click the e
 - Python (everything Python: notebooks, debugging, linting, formatting, etc.)
 - markdownlint (markdown linting and style checking extension)
 - GitLens - Git supercharged (powerful extension that extends VS Code's native git capabilities)
+- Git History (intutive view of your git history)
 - Docker (easily use Docker from VS Code)
 - (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
 - (Optional) Material Icon Theme (great-looking custom file icons!)
@@ -534,20 +595,27 @@ To install an extension, you simply search for it in the search bar, click the e
 
 To improve your experience using bash,
 we recommend appending a few lines to the end of your bash configuration file.
-This is optional,
-but makes it easier to use the TAB key for autocompletion
-and improves how bash handles the command history
+These make it easier to use the TAB key for autocompletion
+improves how bash handles the command history,
+and the appearance of the terminal
 (we will talk more about these topics during class).
 It also adds colors to the terminal's text,
 which can make it easier to navigate visually.
 First,
-open the configuration file:
+run the following command to download a script
+that always shows information about git in the terminal prompt:
+
+```bash
+curl -Sso ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+```
+
+Then open the bash configuration file:
 
 ```bash
 code ~/.bash_profile
 ```
 
-Then paste the following at the end of the file
+Paste the following at the end of the file
 (make sure not to overwrite any existing lines)
 and save it afterwards:
 
@@ -555,10 +623,16 @@ and save it afterwards:
 # Silence default shell note when launching bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# Load the git prompt script
+source ~/.git-prompt.sh
+# Show unstaged (*) and staged (+) changes in the prompt string
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 # Color text so it is easier to distinguish elements from each other
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdxCxDxDxxbaDecac
-export PS1="${CONDA_PROMPT_MODIFIER}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+# Color the prompt string and add git info
+export PS1=${CONDA_PROMPT_MODIFIER}'\[\033[01;32m\]\u@\h\[\033[01;35m\] \w\[\033[34m\]$(__git_ps1 " (%s)")\[\033[00m\]\n\$ '
 
 # TAB completion configuration
 # TAB completion ignores case
@@ -585,6 +659,19 @@ PROMPT_COMMAND='history -a; echo'
 # Increase history size
 HISTSIZE=50000
 HISTFILESIZE=50000
+
+# Aliases and functions
+# Note that aliases only are in effect when you are using the shell interactively
+# (e.g. opening the terminal and typing or pasting commands).
+# If you run a bash script or makefile,
+# the original command is used instead of your alias.
+# More verbose file list format
+alias l='ls -vlrthAF'
+# Move, remove, and copy show what was done and prompt before overwriting files.
+alias rm="rm -vI"
+alias mv="mv -vi"
+alias cp="cp -vi"
+alias mkdir="mkdir -vp"
 ```
 
 ## Post-installation notes
@@ -602,7 +689,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 The output from running the script will look something like this:
 
 ````
-# MDS setup check 1.0.0
+# MDS setup check 1.1.0
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
@@ -625,32 +712,31 @@ ProductName:	macOS
 ProductVersion:	11.4
 BuildVersion:	20F71
 
-MISSING You need macOS Catalina (10.15.x).
-
 ## System programs
-OK        psql (PostgreSQL) 13.3
+MISSING   psql 13.*
 OK        rstudio 1.4.1725
 OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-OK        python 3.8.10
+OK        python 3.9.1
 OK        conda 4.10.3
 OK        bash 3.2.57(1)-release (x86_64-apple-darwin20)
-OK        git 2.30.1 (Apple Git-130)
-OK        make 3.81
-OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2022/dev)
-OK        tlmgr 59291 (2021-05-21 05:14:40 +0200)
+OK        git 2.32.0
+OK        make 4.3
+OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021)
+OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
 OK        docker 20.10.7, build f0df350
-OK        code 1.58.0
+OK        code 1.58.2
 
 ## Python packages
-OK        jupyterlab=3.0.16
-OK        numpy=1.21.0
-OK        pandas=1.2.5
+MISSING   jupyterlab=3.*
+OK        pandas=1.3.0
 OK        flake8=3.9.2
-OK        black=21.5b2
-OK        nodejs=15.14.0
-OK        jupytext=1.11.3
+MISSING   black=21.*
+MISSING   nodejs=15.*
+OK        jupytext=1.11.4
 OK        jupyterlab-git=0.30.1
-MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.
+OK        jupyterlab PDF-generation was successful.
+OK        jupyterlab WebPDF-generation was successful.
+OK        jupyterlab HTML-generation was successful.
 
 ## R packages
 OK        tidyverse=1.3.1
@@ -660,8 +746,10 @@ OK        renv=0.13.2
 OK        IRkernel=1.2
 OK        tinytex=0.32
 OK        rmarkdown PDF-generation was successful.
+OK        rmarkdown HTML-generation was successful.
 
-This output and additional configuration details have been saved to check-setup-mds.log in this directory.
+The above output has been saved to the file /home/joel/check-setup-mds.log
+together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `open .` (without the surrounding backticks).
 ````
 
@@ -677,7 +765,7 @@ we will ask you to submit this log file,
 so that we can confirm that your installation was successful.
 Details on where to submit will be provided later.
 
-> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
+> **Note:** In general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
 ## Attributions
 

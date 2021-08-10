@@ -9,30 +9,16 @@ subtitle: MDS software stack install instructions for Windows
     <base target="_blank">
 </head>
 
-These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-
- - runs one of the following operating systems: macOS 10.4.X (Big Sur), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004.
-    - **Windows 10 Home is not sufficient** as not all the software required for the program can be installed on that OS. [Click here to download Windows 10 Education for free from UBC.](https://it.ubc.ca/software-downloads)
-    - When installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.
-- can connect to networks via a wireless connection for on campus work
-- has access to an internet connection that is fast and stable enough for video calling and conducting online quizzes
-- has at least 50 GB disk space available
-- has at least 8 GB of RAM
-- uses a 64-bit CPU
-- is at most 6 years old at the start of the program (4 years old or newer is recommended)
-- uses English as the default language
-
- **Students' whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.**
-
 ## Table of Contents
 
+- [Installation notes](#installation-notes){:target="_self"}
 - [UBC Student Email](#ubc-student-email){:target="_self"}
 - [Web browser](#web-browser){:target="_self"}
-- [LastPass password manager](#lastpass-password-manager){:target="_self"}
+- [Password manager](#password-manager){:target="_self"}
 - [Slack](#slack){:target="_self"}
-- [Visual Studio code](#visual-studio-code){:target="_self"}
+- [Visual Studio Code](#visual-studio-code){:target="_self"}
 - [GitHub](#github){:target="_self"}
-- [Git and Bash](#git-and-bash){:target="_self"}
+- [Git, Bash, and Windows Terminal](#git-bash-and-windows-terminal){:target="_self"}
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
 - [R, IRkernel, Rtools, and RStudio](#r-irkernel-rtools-and-rstudio){:target="_self"}
 - [LaTeX](#latex){:target="_self"}
@@ -71,9 +57,9 @@ In MDS we will be using many tools that work most reliably on Google Chrome and 
 - To install Chrome, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation.
 - To install Firefox, go to [https://www.mozilla.org/en-US/firefox/new/](https://www.mozilla.org/en-US/firefox/new/), click on "Download Firefox" and follow the instructions on the website to finish the installation.
 
-## LastPass password manager
+## Password manager
 
-Some MDS courses (e.g. the capstone project) use the LastPass password manager to share credentials. Although we will not cover privacy and security topics until the second semester of the program, we recommend that you use a password manager such as LastPass to help you create strong passwords and store them securely, and to facilitate online authentication. You can sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome or Firefox browser extension available here: [https://lastpass.com/misc_download2.php](https://lastpass.com/misc_download2.php).
+A password manager is an efficient and convenient measure to protect your online accounts from most common threats. While you don't strictly need to use one for any of the courses in MDS, we **highly recommend** that you set one up for your own benefit. Examples of reliable password managers include the ones built into Chrome and Firefox, [Bitwarden](https://bitwarden.com/), and [KeePassXC](https://keepassxc.org/) (if you prefer to sync your passwords manually).
 
 ## Slack
 
@@ -111,29 +97,65 @@ This step is required for
 - all homework submission and grading
 - working collaboratively
 
-## Git and Bash
+## Git, Bash, and Windows Terminal
 
-Although Git and Bash are two separate programs,
-we are including them in the same section here 
+Although these three are separate programs,
+we are including them in the same section here
 since they are packaged together in the same installer on Windows.
 Briefly, we will be using the Bash shell to interact with our computers via a command line interface,
-and Git to keep a version history of our files and upload to/download from to GitHub.
-We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it.
+Git to keep a version history of our files and upload to/download from to GitHub,
+and Windows Terminal to run the both Bash and Git.
 
-Go to <https://git-scm.com/download/win> and download the windows version of git. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
+Go to <https://git-scm.com/download/win> and download the windows version of git.
+After the download has finished,
+run the installer and accept the default configuration for all pages except for the following:
 
-- *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
+- On the **Select Components** page, add a Git Bash profile to Windows Terminal.
+
+    ![](/resources_pages/imgs/gitbash-terminal-profile.png)
+
 - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
 
-![](/resources_pages/imgs/vscode-as-git-editor.png)
+    ![](/resources_pages/imgs/vscode-as-git-editor.png)
 
-> **Note** if you wish to pin Git Bash to the taskbar, you need to search for the program in the start menu, right click the entry and select "Pin to taskbar". If you instead first launch the program and pin it by right clicking on the taskbar icon, Git Bash will open with the wrong home directory (`/` instead of `/c/users/$USERNAME`.
+[To install windows terminal visit this link](https://aka.ms/terminal)
+and click `Get` to open it in Windows Store.
+Inside the Store, click `Get` again and then click `Install`.
+After installation,
+click `Launch` to start Windows Terminal.
+In the top of the window,
+you will see the tab bar with one open tab,
+a plus sign,
+and a down arrow.
+Click the down arrow and select `Settings`
+(or type the shortcut `Ctrl` + `,`).
+In the `Startup` section,
+click the dropdown menu under `Default profile`
+and select `Git Bash`.
 
-After installation, test if you were successful by opening the Git Bash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just "the terminal"):
+![](/resources_pages/imgs/git-bash-default-shell.png)
 
-![](/resources_pages/imgs/gitbash.png)
+You can now launch the Windows terminal from the start menu
+or pin it to the taskbar like any other program
+(you can read the rest of the article linked above for additional tips if you wish).
+To make sure everything worked,
+close down Windows Terminal,
+and open it again.
+Git Bash should open by default,
+the text should be green and purple,
+and the tab should read  `MINGW64:/c/Users/$USERNAME`
+(you should also see `/c/Users/$USERNAME` if you type `pwd` into the terminal).
+This screenshot shows what it should look like:
 
-In the terminal, type the following to check which version of Bash you just installed:
+![](/resources_pages/imgs/windows-terminal-gitbash.png)
+
+To open a new tab you can click the plus sign or use `Ctrl + Shift + t`
+(you can close a tab with `Ctrl + Shift + w`).
+To copy text from the terminal,
+you can highlight it with the mouse and then click `Ctrl + Shift + c`.
+To paste text you use `Ctrl + Shift + v`,
+try it by pasting the following into the terminal
+to check which version of Bash you just installed:
 
 ```
 bash --version
@@ -150,9 +172,13 @@ This is free software; you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
 
-> If you tried to paste the above into the Git Bash terminal, you will have noticed that `Ctrl+V` does not work in Git Bash. Instead you need to right click and select "Paste" or use the `Shift+Insert` shortcut. To copy from the Git Bash terminal you simply select the text you want and it is copied automatically.
-
-> Via right click you can also reach the settings menu where you can configure Git Bash to your preferences, a couple of tips would be to check "Mouse -> Clicks place command line cursor" and change the font to something more legible, e.g. Consolas ("Text -> Select").
+> **Note:** If there is a newline (the `enter` character) in the clipboard
+> when you are pasting into the terminal,
+> you will be asked if you are sure you want to paste 
+> since this newline will act as if you pressed `enter`
+> and run the command.
+> As a guideline you can press `Paste anyway`
+> unless you are sure you don't want this to happen.
 
 Let's also check which version of git was installed:
 
@@ -164,6 +190,9 @@ git --version
 git version 2.32.0.windows.2
 ```
 
+> **Note:** Some of the Git commands we will use are only available since Git 2.23,
+so make sure your if your Git is at least this version.
+
 You can launch many windows programs from the Bash terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
 
 ```
@@ -171,7 +200,7 @@ code --version
 ```
 
 ```
-1.58.2
+1.59.0
 c3f126316369cd610563c75b1b1725e0679adfb3
 x64
 ```
@@ -209,7 +238,32 @@ VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
 
 Then save the file and exit VS Code.
 
-> Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+> **Note:** Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+
+In some cases,
+VScode is not set as the default text editor for git
+even after appending the two lines above,
+so to make sure it is registered properly,
+also run the following from your terminal:
+
+```bash
+git config --global core.editor "code --wait"
+```
+
+On Windows,
+VScode sometimes reads a different configuration file than Git Bash.
+To avoid this,
+open your `~/.bashrc` file:
+
+```bash
+code ~/.bashrc
+```
+
+And append the following line:
+
+```bash
+if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
+```
 
 ## Python, Conda, and JupyterLab
 
@@ -217,7 +271,7 @@ Then save the file and exit VS Code.
 
 We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.8 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe). After the download has finished, run the installer and accept the default configuration for all pages.
 
-> Do *not* add miniconda to PATH. We will set this up later.
+> **Note:** Do *not* add miniconda to PATH. We will set this up later.
 
 After installation, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)". When this opens you will see a prompt similar to `(base) C:\Users\your_name`. Type the following to check that your Python installation is working:
 
@@ -231,7 +285,7 @@ which should return something like this:
 Python 3.9.1
 ```
 
-> If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.8**.
+> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.8**.
 
 ### Integrating Python with the Git Bash terminal
 
@@ -254,10 +308,8 @@ python --version
 you should now see the same output as above:
 
 ```
-Python 3.9.1
+Python 3.9.5
 ```
-
-> **Note** that if you want to run Python interactively from the Git Bash terminal, you need to prepend the `winpty` command, so the full command would be `winpty python` (if you run this, note that you can exit the Python prompt by typing `exit()`). Running just `python` works on other setups, but will freeze the Git Bash terminal.
 
 Let's also check the version of the `conda` package manager. If you type
 
@@ -271,7 +323,7 @@ you should see something like this
 conda 4.10.3
 ```
 
-> *Optional* One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
+> **Optional:** One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
 >
 > ```
 > code "/c/Program Files/Git/etc/profile.d/git-prompt.sh"
@@ -283,6 +335,10 @@ conda 4.10.3
 > PS1="$PS1"'\n'       # new line
 > ```
 >
+> While we are in this file,
+> let's also remove the line that says `PS1="$PS1"'$MSYSTEM '          # show MSYSTEM` (line 17),
+> to remove some clutter from the terminal.
+>
 > Click to save the file,
 > when VS Code prompts you that the saving failed,
 > click "Retry as Admin" and then "Yes".
@@ -292,7 +348,8 @@ conda 4.10.3
 >
 > ![](/resources_pages/imgs/remove-newline-from-ps1.png)
 
-### Essential Python packages
+
+## Installing Python packages
 
 `conda` installs Python packages from different online repositories which are called "channels".
 A package needs to go through thorough testing before it is included in the default channel,
@@ -304,52 +361,43 @@ To enable us to access the most up to date version of the Python packages we are
 we will add the more up to date  channel,
 To add the conda-forge channel by typing the following in the terminal:
 
-```
+```bash
 conda config --add channels conda-forge
 ```
 
-To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of the MDS program:
-
-```
-conda install \
- jupyterlab=3.* \
- numpy=1.* \
- pandas=1.* \
- flake8=3.* \
- black=21.*
-```
-
+To install packages individually,
+we can now use the following command:
+`conda install <package-name>`.
+After running that command
 `conda` will show you the packages that will be downloaded,
 and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
+Let's try this out in the next section,
+by installing some of the key packages we will use in MDS.
 
-Next we will update `nbconvert` (which was installed with `jupyterlab`),
-because we require a more recent version to make it work well with `tinytex` on Windows,
-which we will install later.
-To install the latest version directly from GitHub,
-we need to use the `pip` package manager instead of `conda`:
+## JupyterLab setup
 
-```
-pip install https://github.com/jupyter/nbconvert/archive/6.0.0a6.zip
-```
+We will be using `JupyterLab` as our main coding environment
+and `pandas` is one of the key data analyses packages in MDS.
+The Jupytext Python package and the JupyterLab git extension facilitates
+using notebooks in JupyterLab together with Git & GitHub.
+The spellchecker helps us correcting typos in our writing
+and the LSP packages fill the same function for our code.
+Install them via the following commands:
 
-> **Note**: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
-
-### JupyterLab setup
-
-We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
-
-```
-conda install nodejs=15.*
-conda install -c conda-forge jupyterlab jupyterlab-git jupytext
+```bash
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
 ```
 
-To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal,
+which should open a new tab in your default browser with the JupyterLab interface.
 To exit out of JupyterLab you can click `File -> Shutdown`,
 or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
 
 ![](/resources_pages/imgs/jupyter_lab.PNG)
+
+> **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ## R, IRkernel, Rtools, and RStudio
 
@@ -357,7 +405,7 @@ R is another programming language that we will be using a lot in the MDS program
 
 ### R
 
-Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (4.0.2 at the time of writing). Open the file and follow the installer instructions accepting the default configuration.
+Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows. Open the file and follow the installer instructions accepting the default configuration.
 
 After the installation is complete, we will add the R executables to the PATH variable in terminal so that you can use it without typing the full path to R each time. Open a terminal and type:
 
@@ -365,7 +413,7 @@ After the installation is complete, we will add the R executables to the PATH va
 code ~/.bash_profile
 ```
 
-Append the following line to the file
+Append the following lines to the file
 
 ```
 # Add R and Rscript to PATH
@@ -373,7 +421,7 @@ export PATH="/c/Program Files/R/R-4.1.0/bin/x64":$PATH
 ```
 
 Then save the file and exit VS Code.
-Now you can open terminal and type
+Now you can open a new terminal window and type
 
 ```
 R --version
@@ -441,9 +489,11 @@ Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m
 
 ### Rtools
 
-Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. Do *not* follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
+Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. **Do not** follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
 
-To test if you're installation was successful, open RStudio and type the following into the Console:
+To test if you're installation was successful,
+open RStudio (restart it if you already have it open)
+and type the following into the Console:
 
 ```
 install.packages("jsonlite", type = "source")
@@ -451,23 +501,23 @@ install.packages("jsonlite", type = "source")
 
 If the `jsonlite` package installs without errors, Rtools is setup correctly.
 
-### Essential R packages
+### Installing R packages
 
 Next, install the key R packages needed for the start of MDS program,
 by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'devtools', 'usethis'))
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver'))
 ```
 
 If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
 
-> **Note**: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
+> **Note**: We will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IRkernel
 
-The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R *from a terminal* and run the setup via the following two commands:
+The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from a terminal** (not R Studio) and run the setup via the following two commands:
 
 ```
 install.packages('IRkernel')
@@ -476,7 +526,7 @@ IRkernel::installspec()
 
 When asked to select a mirror, pick one at a location close to where you live for faster downloads.
 
-> Note that you cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
+> **Note:** You cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
 
 To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch the JupyterLab type the following in the terminal:
 
@@ -493,22 +543,57 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
 To improve the experience of using R in JupyterLab,
-we will add an extension that allows us to setup keyboard shortcuts for inserting text
-(thanks to former MDS student Ryan Homer for developing this extension!).
-By default,
-it creates shortcuts for inserting two of the most common R operators: `<-` and `|>`.
-Run the following from terminal to install the extension:
+we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
+Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
+and paste the following in the rightmost panel that says `User Preferences`
+(replacing the `{}`):
 
+```json
+{
+    "shortcuts": [
+        {
+            "command": "apputils:run-first-enabled",
+            "selector": "body",
+            "keys": ["Alt -"],
+            "args": {
+                "commands": [
+                    "console:replace-selection",
+                    "fileeditor:replace-selection",
+                    "notebook:replace-selection",
+                ],
+                "args": {"text": "<- "}
+            }
+        },
+        {
+            "command": "apputils:run-first-enabled",
+            "selector": "body",
+            "keys": ["Accel Shift M"],
+            "args": {
+                "commands": [
+                    "console:replace-selection",
+                    "fileeditor:replace-selection",
+                    "notebook:replace-selection",
+                ],
+                "args": {"text": "|> "}
+            }
+        }
+    ]
+}
 ```
-jupyter labextension install @techrah/text-shortcuts
-jupyter lab build
-```
+
+After you have pasted this text,
+hit the small floppy disk in the top right (or `Ctrl` + `s`)
+to save the settings.
+Here is a screenshot of what it looks like with the settings saved:
+
+![](/resources_pages/imgs/r-jl-text-shortcuts.png)
 
 To check that the extension is working,
 open JupyterLab,
 launch an R notebook,
 and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m`, respectively.
-
+You could add any arbitrary text insertion command the same way,
+but this is all that is required for MDS.
 
 ## LaTeX
 
@@ -523,8 +608,11 @@ tinytex::install_tinytex()
 
 Note that you might see two error messages regarding lua during the installation, you can safely ignore these, the installation will complete successfully after clicking "OK".
 
-
-You can check that the installation is working by opening a terminal and asking for the version of latex:
+In order for Git Bash to be able to find the location of TinyTex,
+you will need to [sign out of Windows](https://support.microsoft.com/en-us/windows/sign-out-of-windows-346925bb-024c-cd86-7a53-9066242a9ed3) and back in again.
+After doing that,
+you can check that the installation worked
+by opening a terminal and asking for the version of latex:
 
 ```
 latex --version
@@ -547,7 +635,7 @@ Compiled with zlib 1.2.11; using zlib 1.2.11
 Compiled with xpdf version 4.03
 ```
 
-The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Before we do this, please [sign out of Windows](https://support.microsoft.com/en-us/windows/sign-out-of-windows-346925bb-024c-cd86-7a53-9066242a9ed3) and back in again in order for the Git Bash terminal to be able to find the location of TinyTex.
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages.
 
 When you sign back in,
 install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
@@ -571,7 +659,9 @@ tlmgr.bat install eurosym \
   trimspaces \
   ucs \
   ulem \
-  upquote
+  upquote \
+  lwarp \
+  oberdiek
 ```
 
 To test that your latex installation is working with jupyter notebooks,
@@ -581,6 +671,22 @@ Go to `File -> Export notebook as... -> Export Notebook to PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
 
+### WebPDF export
+
+Jupyter recently added another way to export notebooks to PDF
+which does not require Latex
+and makes the exported PDF look similar to notebooks exported to HTML.
+This requires the `pyppeteer` package,
+which we can install as follows.
+
+```bash
+conda install pyppeteer=0.2.2
+pyppeteer-install
+```
+
+Now try exporting a notebook by clicking
+`File -> Export notebook as... -> Export Notebook to WebPDF`.
+
 ## Make
 
 Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip). Click on the downloaded zip-file to open it in the File Explorer and click the button in the "Extract" tab that reads "Extract all". Change the extract location to `C:\Users\YOUR_USERNAME\make-4.3` (substituting in your actual username instead of `YOUR_USERNAME`) and click "Extract". See the screenshots below if you're unsure what to click.
@@ -588,6 +694,8 @@ Later in the program, we will be using `make` to automate our analysis scripts. 
 ![](/resources_pages/imgs/extract-make.png)
 
 ![](/resources_pages/imgs/extract-make-path.png)
+
+> **Note:** It is advisable to show file extensions by default in the Windows File Explorer. Click the `View` tab and check the box next to `File name extensions`.
 
 Next we need to add make's `bin` folder to our PATH so that we can use the command `make` from the terminal (like we did with R earlier). Open the bash configuration file with VS Code again by pasting this into a terminal:
 
@@ -608,7 +716,7 @@ so you don't need to replace it manually.
 
 ```
 # Add R, Rscript, and Make to path
-export PATH="/c/Users/${USERNAME}/make-4.3/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+export PATH="/c/Users/${USERNAME}/make-4.3/bin":"/c/Program Files/R/R-4.1.0/bin/x64":$PATH
 ```
 
 Then save the file and exit VS Code.
@@ -631,7 +739,7 @@ There is NO WARRANTY, to the extent permitted by law.
 
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can [download PostgreSQL 13.3 from here](https://www.enterprisedb.com/downloads/postgresql). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
+We will be using PostgreSQL as our database management system. You can [download PostgreSQL 13.3 from here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
 
 To test if the installation was successful open the `SQL Shell` app from the Start menu. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:
 
@@ -689,6 +797,7 @@ To install an extension, you simply search for it in the search bar, click the e
 - Python (everything Python: notebooks, debugging, linting, formatting, etc.)
 - markdownlint (markdown linting and style checking extension)
 - GitLens (powerful extension that extends VS Code's native git capabilities)
+- Git History (intutive view of your git history)
 - Docker (easily use Docker from VS Code)
 - (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
 - (Optional) Material Icon Theme (great-looking custom file icons!)
@@ -700,10 +809,12 @@ This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excelle
 
 To improve your experience using bash,
 we recommend appending a few lines to the end of your bash configuration file.
-This is optional,
-but makes it easier to use the TAB key for autocompletion
-and improves how bash handles the command history
+These make it easier to use the TAB key for autocompletion
+improves how bash handles the command history,
+and the appearance of the terminal
 (we will talk more about these topics during class).
+It also adds colors to the terminal's text,
+which can make it easier to navigate visually.
 First,
 open the configuration file:
 
@@ -716,6 +827,9 @@ Then paste the following at the end of the file
 and save it afterwards:
 
 ```
+# Show unstaged (*) and staged (+) changes in the prompt string
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 # TAB completion configuration
 # TAB completion ignores case
 bind "set completion-ignore-case on"
@@ -742,14 +856,18 @@ PROMPT_COMMAND='history -a; echo'
 HISTSIZE=50000
 HISTFILESIZE=50000
 
-# Aliases
+# Aliases and functions
 # Note that aliases only are in effect when you are using the shell interactively
-# (e.g. opening the Git Bash terminal and typing or pasting commands).
+# (e.g. opening the terminal and typing or pasting commands).
 # If you run a bash script or makefile,
 # the original command is used instead of your alias.
-# Run Python and Docker in compatibility mode when started from an interactive shell
-alias python="winpty python"
-alias docker="winpty docker"
+# More verbose file list format
+alias l='ls -vlrthAF'
+# Move, remove, and copy show what was done and prompt before overwriting files.
+alias rm="rm -vI"
+alias mv="mv -vi"
+alias cp="cp -vi"
+alias mkdir="mkdir -vp"
 # `man` function to display help messages with a pager as on Unix
 man() {
     $1 --help | less
@@ -771,7 +889,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 The output from running the script will look something like this:
 
 ````
-# MDS setup check 1.0.0
+# MDS setup check 1.1.0
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
@@ -792,12 +910,11 @@ Checking program and package versions...
 ## Operating system
 Microsoft Windows 10 Education
 64-bit
-10.0.19041
+10.0.19044
 
 ## System programs
 MISSING   psql 13.*
 OK        rstudio 1.4.1725
-OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
 OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
 OK        python 3.9.1
 OK        conda 4.10.3
@@ -805,12 +922,12 @@ OK        bash 4.4.23(1)-release (x86_64-pc-msys)
 OK        git 2.32.0.windows.2
 OK        make 4.3
 OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX)
+OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
 OK        docker 20.10.7, build f0df350
 OK        code 1.58.2
 
 ## Python packages
 MISSING   jupyterlab=3.*
-OK        numpy=1.21.1
 OK        pandas=1.3.0
 OK        flake8=3.9.2
 MISSING   black=21.*
@@ -828,8 +945,8 @@ OK        IRkernel=1.2
 OK        tinytex=0.32
 OK        rmarkdown PDF-generation was successful.
 
-This output and additional configuration details
-have been saved to the file /c/Users/florencia/check-setup-mds.log.
+This output and additional configuration details have been saved to the file /c/Users/joel/check-setup-mds.log.
+together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
 ````
 
@@ -845,7 +962,7 @@ we will ask you to submit this log file,
 so that we can confirm that your installation was successful.
 Details on where to submit will be provided later.
 
-> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
+> **Note:** In general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
 ## Attributions
 * [Harvard CS109](http://cs109.github.io/2015/)

@@ -9,27 +9,12 @@ subtitle: MDS software stack install instructions for Ubuntu
     <base target="_blank">
 </head>
 
-These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-
- - runs one of the following operating systems: macOS 10.4.X (Big Sur), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004.
-    - **Windows 10 Home is not sufficient** as not all the software required for the program can be installed on that OS. [Click here to download Windows 10 Education for free from UBC.](https://it.ubc.ca/software-downloads)
-    - When installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.
-- can connect to networks via a wireless connection for on campus work
-- has access to an internet connection that is fast and stable enough for video calling and conducting online quizzes
-- has at least 50 GB disk space available
-- has at least 8 GB of RAM
-- uses a 64-bit CPU
-- is at most 6 years old at the start of the program (4 years old or newer is recommended)
-- uses English as the default language
-- student user has full administrative access to the computer
-
-**Students' whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.**
-
 ## Table of Contents
 
+- [Installation notes](#installation-notes){:target="_self"}
 - [UBC Student Email](#ubc-student-email){:target="_self"}
 - [Web browser](#web-browser){:target="_self"}
-- [LastPass password manager](#lastpass-password-manager){:target="_self"}
+- [Password manager](#password-manager){:target="_self"}
 - [Slack](#slack){:target="_self"}
 - [Visual Studio Code](#visual-studio-code){:target="_self"}
 - [GitHub](#github){:target="_self"}
@@ -71,11 +56,11 @@ In MDS we will be using many tools that work most reliably on Google Chrome and 
 - Firefox comes preinstalled with Ubuntu, so there is not need to download anything.
 - To install Chrome, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" choose the deb-file, download it to your computer and click on the downloaded file to install it.
 
-> Note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
+> **Note:** If you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
-## LastPass password manager
+## Password manager
 
-Some MDS courses (e.g. the capstone project) use the LastPass password manager to share credentials. Although we will not cover privacy and security topics until the second semester of the program, we recommend that you use a password manager such as LastPass to help you create strong passwords and store them securely, and to facilitate online authentication. You can sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome or Firefox browser extension available here: [https://lastpass.com/misc_download2.php](https://lastpass.com/misc_download2.php).
+A password manager is an efficient and convenient measure to protect your online accounts from most common threats. While you don't strictly need to use one for any of the courses in MDS, we **highly recommend** that you set one up for your own benefit. Examples of reliable password managers include the ones built into Chrome and Firefox, [Bitwarden](https://bitwarden.com/), and [KeePassXC](https://keepassxc.org/) (if you prefer to sync your passwords manually).
 
 ## Slack
 
@@ -94,7 +79,7 @@ code --version
 you should see something like this if you were successful:
 
 ```
-1.47.0
+1.59.0
 d5e9aa0227e057a60c82568bf31c04730dc15dcd
 x64
 ```
@@ -112,13 +97,14 @@ Sign up for a free account at [GitHub.com](https://github.com/) if you don't hav
 To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
 
 This step is required for
+
 - being able to store your work
 - all homework submission and grading
 - working collaboratively
 
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it using the following command:
+We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if your Git is older than this version, we ask you to update it using the following command:
 
 ```
 sudo apt update
@@ -140,7 +126,7 @@ git config --global user.name "Jane Doe"
 git config --global user.email janedoe@example.com
 ```
 
-> Note: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
+> **Note:** To ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 
 ### Setting VS Code as the default editor
 
@@ -150,7 +136,7 @@ To make programs run from the terminal (such as `git`) use VS Code by default, w
 code ~/.bashrc
 ```
 
-> Note: If you see any existing lines in your `~/.bashrc`
+> **Note:** If you see any existing lines in your `~/.bashrc`
 > related to a previous Python or R installation,
 > please remove these.
 
@@ -164,7 +150,17 @@ VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
 
 Then save the file and exit VS Code.
 
-> Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+> **Note:** Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+
+In some cases,
+VScode is not set as the default text editor for git
+even after appending the two lines above,
+so to make sure it is registered properly,
+also run the following from your terminal:
+
+```bash
+git config --global core.editor "code --wait"
+```
 
 ## Python, Conda, and JupyterLab
 
@@ -177,7 +173,7 @@ Once the download is finished, open Terminal and execute the following commands:
 bash path/to/file
 ```
 
-> Note: most often this file is downloaded to the `Downloads` directory, and thus the command will look like this:
+> **Note:** Most often this file is downloaded to the `Downloads` directory, and thus the command will look like this:
 >
 >```
 >bash Downloads/Miniconda3-latest-Linux-x86_64.sh
@@ -185,11 +181,11 @@ bash path/to/file
 
 The instructions for the installation will then appear:
 
-(1) Press Enter.
-(2) Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
-(3) Type `yes` and press enter to accept the licence agreement.
-(4) Press enter to accept the default installation location.
-(5) Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
+1. Press Enter.
+2. Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
+3. Type `yes` and press enter to accept the licence agreement.
+4. Press enter to accept the default installation location.
+5. Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
 
 After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 ```
@@ -198,7 +194,7 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.8.3
+conda 4.10.3
 ```
 
 Next, type the following to ask for the version of Python:
@@ -208,12 +204,13 @@ python --version
 which should return something like this:
 
 ```
-Python 3.8.3
+Python 3.9.5
 ```
 
-> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
+> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
 
-## Essential Python packages
+
+## Installing Python packages
 
 `conda` installs Python packages from different online repositories which are called "channels".
 A package needs to go through thorough testing before it is included in the default channel,
@@ -225,40 +222,43 @@ To enable us to access the most up to date version of the Python packages we are
 we will add the more up to date  channel,
 To add the conda-forge channel by typing the following in the terminal:
 
-```
+```bash
 conda config --add channels conda-forge
 ```
 
-To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of our program:
-
-```
-conda install \
- jupyterlab=2.* \
- numpy=1.* \
- pandas=1.* \
- flake8=3.* \
- black=19.*
-```
-
+To install packages individually,
+we can now use the following command:
+`conda install <package-name>`.
+After running that command
 `conda` will show you the packages that will be downloaded,
 and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
-
-> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
+Let's try this out in the next section,
+by installing some of the key packages we will use in MDS.
 
 ## JupyterLab setup
 
-We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
+We will be using `JupyterLab` as our main coding environment
+and `pandas` is one of the key data analyses packages in MDS.
+The Jupytext Python package and the JupyterLab git extension facilitates
+using notebooks in JupyterLab together with Git & GitHub.
+The spellchecker helps us correcting typos in our writing
+and the LSP packages fill the same function for our code.
+Install them via the following commands:
 
-```
-conda install nodejs=15.*
-conda install -c conda-forge jupyterlab jupyterlab-git jupytext
+```bash
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
 ```
 
-To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal,
+which should open a new tab in your default browser with the JupyterLab interface.
 To exit out of JupyterLab you can click `File -> Shutdown`,
 or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
+
+![](/resources_pages/imgs/jupyter_lab.PNG)
+
+> **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ## R, IRkernel, and RStudio
 
@@ -266,16 +266,16 @@ R is another programming language that we will be using a lot in the MDS program
 
 #### R
 
-The version of R available in the default Ubuntu repositories (`3.6.*`) is older than the one we use in MDS (`4.*`). To obtain the latest R `4.*` packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
+The version of R available in the default Ubuntu repositories is older than the one we use in MDS. To obtain the latest R packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
 
 ```
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
 ```
 
 Then add the URL to the repository:
 
 ```
-sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 ```
 
 Next, install `r-base` and `r-base-dev` (useful for compiling R packages from source):
@@ -284,7 +284,7 @@ Next, install `r-base` and `r-base-dev` (useful for compiling R packages from so
 sudo apt install r-base r-base-dev
 ```
 
-After installation, type the following in a terminal to ask for the version:
+After installation, type the following in a new terminal window:
 ```
 R --version
 ```
@@ -292,8 +292,8 @@ R --version
 You should see something like this if you were successful:
 
 ```
-R version 4.0.2 (2020-06-22) -- "Taking Off Again"
-Copyright (C) 2020 The R Foundation for Statistical Computing
+R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+Copyright (C) 2021 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -303,19 +303,21 @@ For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
 
-> Note: Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
+> **Note:** [See this page for additoinal instructions if you run into troubles while installing R](https://cloud.r-project.org/bin/linux/ubuntu/).
+
+> **Note:** Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
 
 ### RStudio
 
 Download the Ubuntu 18/Debian 10 Desktop version of RStudio Preview from [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions.
 
-> Note that there is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
+> **Note:** There is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
 To see if you were successful, try opening RStudio by clicking on its icon or typing `rstudio` in a terminal. It should open and look something like this picture below:
 
 ![](/resources_pages/imgs/RStudio-ubuntu.png)
 
-> Note that since we installed RStudio directly from a deb file rather than from a repository or a snap package, it will not be updated when we run `sudo apt upgrade` and not automatically as for snap packages. Instead, RStudio will notify you of any available updates when the program is launched.
+> **Note:** Since we installed RStudio directly from a deb file rather than from a repository or a snap package, it will not be updated when we run `sudo apt upgrade` and not automatically as for snap packages. Instead, RStudio will notify you of any available updates when the program is launched.
 
 Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
 Go to `Tools > Global Options > Code > Editing` and tick the following option:
@@ -324,7 +326,7 @@ Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
 
-### Essential R packages
+### Installing R packages
 
 The `tidyverse` R package (and some others) have external dependencies on Ubuntu outside of R. We need to install these first before we install such R packages:
 
@@ -337,10 +339,10 @@ by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools'))
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver'))
 ```
 
-> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
+> **Note:** We will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IRkernel
 
@@ -351,7 +353,7 @@ install.packages('IRkernel')
 IRkernel::installspec()
 ```
 
-> Note: If you see an error message saying "jupyter-client has to be installed...",
+> **Note:** If you see an error message saying "jupyter-client has to be installed...",
 > close RStudio and run the following line from your terminal instead `R -e "IRkernel::installspec()"`.
 
 To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch JupyterLab, type the following in a terminal:
@@ -369,21 +371,57 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
 To improve the experience of using R in JupyterLab,
-we will add an extension that allows us to setup keyboard shortcuts for inserting text
-(thanks to former MDS student Ryan Homer for developing this extension!).
-By default,
-it creates shortcuts for inserting two of the most common R operators: `<-` and `|>`.
-Run the following from terminal to install the extension:
+we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
+Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
+and paste the following in the rightmost panel that says `User Preferences`
+(replacing the `{}`):
 
+```json
+{
+    "shortcuts": [
+        {
+            "command": "apputils:run-first-enabled",
+            "selector": "body",
+            "keys": ["Alt -"],
+            "args": {
+                "commands": [
+                    "console:replace-selection",
+                    "fileeditor:replace-selection",
+                    "notebook:replace-selection",
+                ],
+                "args": {"text": "<- "}
+            }
+        },
+        {
+            "command": "apputils:run-first-enabled",
+            "selector": "body",
+            "keys": ["Accel Shift M"],
+            "args": {
+                "commands": [
+                    "console:replace-selection",
+                    "fileeditor:replace-selection",
+                    "notebook:replace-selection",
+                ],
+                "args": {"text": "|> "}
+            }
+        }
+    ]
+}
 ```
-jupyter labextension install @techrah/text-shortcuts
-jupyter lab build
-```
+
+After you have pasted this text,
+hit the small floppy disk in the top right (or `Ctrl` + `s`)
+to save the settings.
+Here is a screenshot of what it looks like with the settings saved:
+
+![](/resources_pages/imgs/r-jl-text-shortcuts.png)
 
 To check that the extension is working,
 open JupyterLab,
 launch an R notebook,
 and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m`, respectively.
+You could add any arbitrary text insertion command the same way,
+but this is all that is required for MDS.
 
 ## LaTeX
 
@@ -398,45 +436,17 @@ tinytex::install_tinytex()
 
 The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add the TinyTex executables to our `PATH` and install several more packages (`PATH` is a collection of directories which contain the available executable programs on your computer).
 
-To append the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `$HOME/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code $HOME/.bashrc`) and save the file:
+To append the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `~/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code ~/.bashrc`) and save the file:
 
 ```
 # Append TinyTex executables to the path
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:~/bin"
 ```
 
-When you launch a new terminal instance, this directory will have been added to your path (you can check this by running `echo $PATH` in the terminal.
-
-Next, install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
-
-```
-tlmgr install eurosym \
-  adjustbox \
-  caption \
-  collectbox \
-  enumitem \
-  environ \
-  fp \
-  jknapltx \
-  ms \
-  parskip \
-  pgf \
-  rsfs \
-  tcolorbox \
-  titling \
-  trimspaces \
-  ucs \
-  ulem \
-  upquote
-```
-
-To test that your latex installation is working with jupyter notebooks,
-launch `jupyter lab` from a terminal and open either a new notebook
-or the same one you used to test IRkernel above.
-Go to `File -> Export notebook as... -> Export Notebook to PDF`.
-If the PDF file is created,
-your LaTeX environment is set up correctly.
-You can also check by typing the following to ask for the version of latex:
+When you launch a new terminal instance, this directory will have been added to your path
+(you can check this by running `echo $PATH` in the terminal).
+Now you can check that the latex installation is working
+by opening a terminal and asking for the version of latex:
 
 ```
 latex --version
@@ -459,13 +469,63 @@ Compiled with zlib 1.2.11; using zlib 1.2.11
 Compiled with xpdf version 4.02
 ```
 
+Next, install the additional LaTeX packages needed for Jupyter
+by pasting the following into the new terminal instance and press enter:
+
+```
+tlmgr install eurosym \
+  adjustbox \
+  caption \
+  collectbox \
+  enumitem \
+  environ \
+  fp \
+  jknapltx \
+  ms \
+  parskip \
+  pgf \
+  rsfs \
+  tcolorbox \
+  titling \
+  trimspaces \
+  ucs \
+  ulem \
+  upquote \
+  lwarp \
+  oberdiek
+```
+
+To test that your latex installation is working with jupyter notebooks,
+launch `jupyter lab` from the terminal where you confirmed that latex works
+and open either a new notebook
+or the same one you used to test IRkernel above.
+Go to `File -> Export notebook as... -> Export Notebook to PDF`.
+If the PDF file is created,
+your LaTeX environment is set up correctly.
+
+### WebPDF export
+
+Jupyter recently added another way to export notebooks to PDF
+which does not require Latex
+and makes the exported PDF look similar to notebooks exported to HTML.
+This requires the `pyppeteer` package,
+which we can install as follows.
+
+```bash
+conda install pyppeteer=0.2.2
+pyppeteer-install
+```
+
+Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
+
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. To install PostgreSQL type the following command:
-
-```
-sudo apt install postgresql postgresql-contrib
-```
+We will be using PostgreSQL as our database management system.
+The Ubuntu repositories contain PostgreSQL 12,
+in MDS we will be using PostgreSQL 13,
+so you need to follow the instructions in the PostgreSQL documentation
+to [first add the their repository
+and then install the latest version](https://www.postgresql.org/download/linux/ubuntu/).
 
 By default, this installation creates a new user called `postgres`,
 which is the only one with permission to open the databases.
@@ -479,21 +539,23 @@ sudo su -c psql postgres
 The above should yield the prompt to change to what is shown below:
 
 ```
-psql (12.2 (Ubuntu 12.2-4))
+psql (13.3 (Ubuntu 13.3-1))
 Type "help" for help.
 
 postgres=#
 ```
 
-> Note: to exit from Postgres type `exit`, or press `ctrl` + `d`.
+> **Note:** To exit from Postgres type `exit`, or press `ctrl` + `d`.
 
 ## Docker
 
 You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can [sign up for a free one here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
 
-After signing-up, you also need to install Docker **CE** for Ubuntu. Install the stable version by following the installation instructions using the ["Install using the repository" methods found here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository), including the subheadings "Set up the repository" and "Install Docker engine".
+After signing-up, you also need to install Docker **CE** for Ubuntu. Install the stable version by following the installation instructions using the ["Install using the repository" methods found here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository), including the subheadings "Set up the repository" and "Install Docker engine" (you can skip step 2 "Install a specific version of the docker engine" since we already got the latest from step 1).
 
-Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`, and confirm that docker is working by following the verification instructions on that same page.
+Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`
+(only the subheading "Managing docker as a non-root user").
+Confirm that docker is working by following the verification instructions on that same page.
 
 ## VS Code extensions
 
@@ -506,6 +568,7 @@ To install an extension, you simply search for it in the search bar, click the e
 - Python (everything Python: notebooks, debugging, linting, formatting, etc.)
 - markdownlint (markdown linting and style checking extension)
 - GitLens (powerful extension that extends VS Code's native git capabilities)
+- Git History (intutive view of your git history)
 - Docker (easily use Docker from VS Code)
 - (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
 - (Optional) Material Icon Theme (great-looking custom file icons!)
@@ -517,22 +580,39 @@ To install an extension, you simply search for it in the search bar, click the e
 
 To improve your experience using bash,
 we recommend appending a few lines to the end of your bash configuration file.
-This is optional,
-but makes it easier to use the TAB key for autocompletion
-and improves how bash handles the command history
+These make it easier to use the TAB key for autocompletion
+improves how bash handles the command history,
+and the appearance of the terminal
 (we will talk more about these topics during class).
+It also adds colors to the terminal's text,
+which can make it easier to navigate visually.
 First,
-open the configuration file:
+run the following command to download a script
+that always shows information about git in the terminal prompt:
 
-```
-code ~/.bashrc
+```bash
+curl -Sso ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 ```
 
-Then paste the following at the end of the file
+Then open the bash configuration file:
+
+```bash
+code ~/.bash_profile
+```
+
+Paste the following at the end of the file
 (make sure not to overwrite any existing lines)
 and save it afterwards:
 
-```
+```bash
+# Load the git prompt script
+source ~/.git-prompt.sh
+# Show unstaged (*) and staged (+) changes in the prompt string
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+# Color the prompt string and add git info
+export PS1=${CONDA_PROMPT_MODIFIER}'\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[33m\]$(__git_ps1 " (%s)")\[\033[00m\]\n\$ '
+
 # TAB completion configuration
 # TAB completion ignores case
 bind "set completion-ignore-case on"
@@ -558,6 +638,19 @@ PROMPT_COMMAND='history -a; echo'
 # Increase history size
 HISTSIZE=50000
 HISTFILESIZE=50000
+
+# Aliases and functions
+# Note that aliases only are in effect when you are using the shell interactively
+# (e.g. opening the terminal and typing or pasting commands).
+# If you run a bash script or makefile,
+# the original command is used instead of your alias.
+# More verbose file list format
+alias l='ls -vlrthAF'
+# Move, remove, and copy show what was done and prompt before overwriting files.
+alias rm="rm -vI"
+alias mv="mv -vi"
+alias cp="cp -vi"
+alias mkdir="mkdir -vp"
 ```
 
 ## Post-installation notes
@@ -575,7 +668,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 The output from running the script will look something like this:
 
 ````
-# MDS setup check 0.1.0
+# MDS setup check 1.1.0
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
@@ -596,44 +689,47 @@ Checking program and package versions...
 ## Operating system
 Operating System: Ubuntu 20.04
 Architecture:     x86-64
-Kernel:           Linux 5.4.0-28-generic
+Kernel:           Linux 5.11.0-7620-generic
 
 ## System programs
-OK        psql 12.3
-MISSING   rstudio=1.*
-OK        R 4.0.2 (2020-06-22) -- "Taking Off Again"
-OK        python 3.8.3
-OK        conda 4.8.3
-OK        bash 4-pc-linux-gnu)
-OK        git 2.27.0
+MISSING   psql 13.*
+OK        rstudio 1.4.1725
+OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+OK        python 3.9.1
+OK        conda 4.10.3
+OK        bash 5.1.4(1)-release (x86_64-pc-linux-gnu)
+OK        git 2.32.0
 OK        make 4.3
-OK        latex 3.14159265-2.6-1.40.21 (TeX Live 2020)
-OK        tlmgr 55369 (2020-06-01 02:32:00 +0200)
-MISSING   docker=19.*
-MISSING   code=1.*
+OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021)
+OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
+OK        docker 20.10.7, build f0df350
+OK        code 1.58.2
 
 ## Python packages
-MISSING   jupyterlab=2.*
-MISSING   numpy=1.*
-MISSING   pandas=1.*
-OK        flake8=3.7.9
-MISSING   black=19.*
-MISSING   nodejs=10.*
-OK        jupytext=1.3.4
-MISSING   jupyterlab-git=0.*
-MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.
+MISSING   jupyterlab=3.*
+OK        pandas=1.3.0
+OK        flake8=3.9.2
+MISSING   black=21.*
+MISSING   nodejs=15.*
+OK        jupytext=1.11.4
+OK        jupyterlab-git=0.30.1
+OK        jupyterlab PDF-generation was successful.
+OK        jupyterlab WebPDF-generation was successful.
+OK        jupyterlab HTML-generation was successful.
 
 ## R packages
-OK        tidyverse=1.3.0
-OK        blogdown=0.20
-OK        xaringan=0.16
-OK        renv=0.11.0
-OK        IRkernel=1.1.1
-OK        tinytex=0.25
-OK        rmarkdown PDF-generation was successful
+OK        tidyverse=1.3.1
+OK        blogdown=1.3
+OK        xaringan=0.22
+OK        renv=0.13.2
+OK        IRkernel=1.2
+OK        tinytex=0.32
+OK        rmarkdown PDF-generation was successful.
+OK        rmarkdown HTML-generation was successful.
 
-This output and additional configuration details
-have been saved to the file check-setup-mds.log in this directory.
+The above output has been saved to the file /home/joel/check-setup-mds.log
+together with system configuration details and any detailed error messages about PDF and HTML generation.
+You can open this folder in your file browser by typing `xdg-open .` (without the surrounding backticks).
 ````
 
 As you can see at the end of the output,
@@ -648,7 +744,7 @@ we will ask you to submit this log file,
 so that we can confirm that your installation was successful.
 Details on where to submit will be provided later.
 
-> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
+> **Note:** In general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
 ## Attributions
 
