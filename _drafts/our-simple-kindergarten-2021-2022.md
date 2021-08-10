@@ -19,13 +19,15 @@ redirect_from: []
 ---
 My third son is heading into kindergarten at home this year and after having a bit more experience, I know exactly how I'd like to plan out his year. I'm all for slow and simple and lots of space to be a kid, still! Today on the blog, I can't wait to share with you our simple kindergarten 2021-2022.
 
+![A picture of pencils and paper on a table.](/uploads/simple-homeschooling-shm.jpg "Our Simple Kindergarten 2021-2022 SHM")
+
 I used to be a lower elementary teacher before staying home with the kids, so I assumed I had it all figured out before we started homeschooling years ago with our first. I was surprised to find out that my years as a teacher prepared me for not much. Kindergarten at home is nothing compared to my classroom!
 
 ## My take on kindergarten
 
-I believe that this age is the age to keep being a child. There's lots of time in the future to do older kid things. I love to allow a lot of space for play and rest and mud, of course. Our kindergarten tends to be slow and gentle. Coming from being a kindergarten teacher, it took me time to really figure out what worked for our family, but this has been it. However you do kindergarten, the biggest thing to remember is that this is a new experience. Both for the parent and child. And to go slow and enjoy the day to day. And that learning can also happen in organic ways beyond paper and pen. LINK OUT TO LEAH’s website.
+I believe that this age is the age to keep being a child. There's lots of time in the future to do older kid things. I love to allow a lot of space for play and rest and _mud_, of course. Our kindergarten tends to be slow and gentle. Coming from being a kindergarten teacher, it took me time to really figure out what worked for our family, but this has been it. However you do kindergarten, the biggest thing to remember is that this is a new experience. Both for the parent and child. And to go slow and enjoy the day to day. And that learning can also happen in organic ways beyond paper and pen. LINK OUT TO LEAH’s website.
 
-RELATED:
+* **Related:** [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
 
 ### An overview of our Simple Kindergarten 2021-2022
 
@@ -73,3 +75,15 @@ Link out otehr blogs on CM ....Leah...crystin..ambleside
   * [https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/ "https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/")
 * **Simplify Your Homeschool Life online workshop:** This 30ish minute session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life. You can find the session in the Online Canadian Homeschooling conference [here](https://canadianhomeschoolconference.com/aff/42/).
 * **Podcast interview:** [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
+
+Other blogs on kindergarten from friends of mine:
+
+# A Charlotte Mason (Informal) Kindergarten [https://mylittlerobins.com/2019/09/a-charlotte-mason-informal-kindergarten/](https://mylittlerobins.com/2019/09/a-charlotte-mason-informal-kindergarten/ "https://mylittlerobins.com/2019/09/a-charlotte-mason-informal-kindergarten/")
+
+# Easy Letter Learning From The Dinner Table
+
+[https://thebeckablog.com/easy-letter-learning-from-the-dinner-table/](https://thebeckablog.com/easy-letter-learning-from-the-dinner-table/ "https://thebeckablog.com/easy-letter-learning-from-the-dinner-table/")
+
+# Benefits of Reading Aloud to Your Kids
+
+[https://www.inspirethemom.com/2018/10/29/reading-aloud/](https://www.inspirethemom.com/2018/10/29/reading-aloud/ "https://www.inspirethemom.com/2018/10/29/reading-aloud/")
