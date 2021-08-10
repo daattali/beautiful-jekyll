@@ -17,45 +17,45 @@ share-img: ''
 redirect_from: []
 
 ---
-My third son is heading into kindergarten at home this year and after having a bit more experience, I know exactly how I'd like to plan out his year. I'm all for slow and simple and lots of space to be a kid, still! Today on the blog, I can't wait to share with you our simple kindergarten 2021-2022.  
-   
-I used to be a lower elementary teacher before staying home with the kids, so I assumed I had it all figured out before we started homeschooling years ago with our first. I was surprised to find out that my years as a teacher prepared me for not much. Kindergarten at home is nothing compared to my classroom!   
-   
-My take on kindergarten   
-   
+My third son is heading into kindergarten at home this year and after having a bit more experience, I know exactly how I'd like to plan out his year. I'm all for slow and simple and lots of space to be a kid, still! Today on the blog, I can't wait to share with you our simple kindergarten 2021-2022.
+
+I used to be a lower elementary teacher before staying home with the kids, so I assumed I had it all figured out before we started homeschooling years ago with our first. I was surprised to find out that my years as a teacher prepared me for not much. Kindergarten at home is nothing compared to my classroom!
+
+## My take on kindergarten
+
 I believe that this age is the age to keep being a child. There's lots of time in the future to do older kid things. I love to allow a lot of space for play and rest and mud, of course. Our kindergarten tends to be slow and gentle. Coming from being a kindergarten teacher, it took me time to really figure out what worked for our family, but this has been it. However you do kindergarten, the biggest thing to remember is that this is a new experience. Both for the parent and child. And to go slow and enjoy the day to day. And that learning can also happen in organic ways beyond paper and pen. LINK OUT TO LEAH’s website.
 
-RELATED:  
-   
-An overview of our Simple Kindergarten 2021-2022  
-   
-Language Arts:  
-   
+RELATED:
+
+### An overview of our Simple Kindergarten 2021-2022
+
+Language Arts:
+
 Reading books together. Listening to what he thinks about them.  
 Letter recognition.  
 Daily poetry. We are currently reading X and then we'll be reading Child's Garden of Verses.  
 Handicrafts. We do a variety of handicrafts as a family, but I'd like to focus on simple things like learning how to use hammers, scissors, painting, and clay. I don't really plan this area in detail.  
-Art.   
+Art.  
 Low key letter and number printing practice with a variety of materials: paints, pencils, writing in rice, etc.  
 Lots and lots of play.  
 Reading:  
 Closer to the age of six or showing signs of being ready: 100 lessons reading.  
 Math. Family math. MEP math....  
-HABITS...chores.  
-   
-I linked all of the books and supplies we use regularly in my Amazon shops too: US shop and Canadian shop.  
-   
-Supplies  
-   
-Books  
-   
-In a multikid family, they also get the benefit of being around for any family group work too and can join is as they are comfortable or interested.  
-   
-Questions about teaching kindergarten I received from my Instagram followers..  
-   
+HABITS...chores.
+
+I linked all of the books and supplies we use regularly in my Amazon shops too: US shop and Canadian shop.
+
+#### Supplies
+
+#### Books
+
+In a multikid family, they also get the benefit of being around for any family group work too and can join is as they are comfortable or interested.
+
+Questions about teaching kindergarten I received from my Instagram followers..
+
 Link out otehr blogs on CM ....Leah...crystin..ambleside
 
-### RESOURCES AND SUPPLIES
+### RESOURCES AND SUPPLIES FOR OUR SIMPLE KINDERGARTEN 
 
 * Amazon shop for supplies and books you can find here under “Kids’ School”: [Canadian Shop](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/www.amazon.ca/shop/simplehomemom), [US Shop](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/www.amazon.com/shop/simplehomemom)
   * Our devotional books
