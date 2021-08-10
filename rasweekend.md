@@ -85,17 +85,17 @@ Além disso, vale ressaltar que todos os workshops contaram com certificados.
   <tr>
     <td>Membro do IEEE.</td>
     <td>10 Reais</td>
-    <td>25 Reais</td>
+    <td>25 Reias</td>
   </tr>
   <tr>
-    <td>Estudante do Cimatec<br>ou da UFCG.</td>
+    <td>Voluntários do IEEE<br>(ramos do nordeste).</td>
     <td>10 Reais</td>
-    <td>25 Reais</td>
+    <td>25 Reias</td>
   </tr>
   <tr>
     <td>Demais estudantes.</td>
-    <td>15 Reais</td>
-    <td>25 Reais</td>
+    <td>10 Reais</td>
+    <td>25 Reias</td>
   </tr>
 </tbody>
 </table>
