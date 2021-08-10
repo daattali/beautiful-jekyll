@@ -665,14 +665,39 @@ HISTFILESIZE=50000
 # (e.g. opening the terminal and typing or pasting commands).
 # If you run a bash script or makefile,
 # the original command is used instead of your alias.
-# More verbose file list format
-alias l='ls -vlrthAF'
+# ---
+# MDS help script
+alias mds-help='bash ~/.mds-help.sh'
+# Some common operations
+alias l='ls -lthAF'
+alias jl='jupyter lab'
+alias ca='conda activate'
+alias gl='git log --date short -10 --pretty=format:"%C(auto,yellow)%h %C(auto,blue)%ad%C(auto)%d %C(auto,reset)%s"'
+alias gt='git status'
+alias gm='git commit -m'
+alias gap='git add -p'
 # Move, remove, and copy show what was done and prompt before overwriting files.
 alias rm="rm -vI"
 alias mv="mv -vi"
 alias cp="cp -vi"
 alias mkdir="mkdir -vp"
+# Case insensitive grep by default
+alias grep='grep -i'
 ```
+
+Finally, download and save the MDS help script via the following command.
+
+```
+curl -Sso ~/.mds-help.sh https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/master/resources_pages/mds-help.sh
+```
+
+Open a new terminal and type `mds-help`,
+your terminal should display
+the most important terminal commands we will be learning in MDS.
+You don't need to memorize these now,
+just remember that if you ever forget how to do something with `bash`, `git` or `conda`,
+you can type `mds-help` in your terminal
+and use it as a reference.
 
 ## Post-installation notes
 
