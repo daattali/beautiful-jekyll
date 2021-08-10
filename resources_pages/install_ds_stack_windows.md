@@ -279,13 +279,13 @@ After installation, open the Start Menu and search for the program called "Anaco
 python --version
 ```
 
-which should return something like this:
+which should return Python 3.9.0 or greater:
 
 ```
-Python 3.9.1
+Python 3.9.5
 ```
 
-> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.8**.
+> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.9**.
 
 ### Integrating Python with the Git Bash terminal
 

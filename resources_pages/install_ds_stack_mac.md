@@ -213,7 +213,7 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.8.2
+conda 4.10.3
 ```
 
 > **Note:** If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
@@ -224,13 +224,13 @@ Next, type the following to ask for the version of Python:
 python --version
 ```
 
-which should return something like this:
+which should return Python 3.9.0 or greater:
 
 ```
-Python 3.8.3
+Python 3.9.5
 ```
 
-> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.8**.
+> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.9**.
 
 ## Installing Python packages
 

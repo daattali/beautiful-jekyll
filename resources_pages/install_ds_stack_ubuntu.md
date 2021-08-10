@@ -201,13 +201,13 @@ Next, type the following to ask for the version of Python:
 ```
 python --version
 ```
-which should return something like this:
+which should return Python 3.9.0 or greater:
 
 ```
 Python 3.9.5
 ```
 
-> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
+> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.9**.
 
 
 ## Installing Python packages
