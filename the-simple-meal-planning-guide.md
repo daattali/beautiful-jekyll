@@ -37,7 +37,7 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 
 #### Pricing
 
-$9.99 USD. **Payment methods are being reworked as PayPal wasn't working! You can email me at simplehomemom@gmail.com to purchase in the meantime.
+$15 CAD (about $11 USD). (link coming later this week as I'm updating purchase methods). In the meantime, you can email me at simplehomemom@gmail.com and can purchase that way.
 
 **Blogs of mine you may enjoy:**
 
