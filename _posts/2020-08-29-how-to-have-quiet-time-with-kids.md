@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Have Quiet Time with Kids
+title: How to Have a Quiet Time Routine with Kids
 description: Simple tips to instill a quiet time with kids at home every day.
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
@@ -16,19 +16,20 @@ redirect_from:
 - 2020-08-29-how-to-have-quiet-time-with-kids
 
 ---
-![A kid sitting at the table thinking.](/uploads/quiettime.jpg "quiettime")
 
-I don't know about you, but by the time I'm done lunch, I'm pooped. My ears. My body. My everything just needs some down time. I have four children, two with higher demands as they are both under five, so . And we take that time every afternoon. We call it "quiet time" in our house. Today on the blog, I'm sharing with you how to have a quiet time routine with kids.
+I don't know about you, but by the time I'm done lunch, I'm pooped. My ears. My body. My everything just needs some down time. I have four children, two with higher demands as they are both under five, so quiet time is so importat for us. And we take that time every afternoon. We call it "quiet time" in our house. Today on the blog, I'm sharing with you how to have a quiet time routine with kids.
+
+![A kid sitting at the table thinking.](/uploads/quiettime.jpg "quiettime")
 
 ## Keep things simple
 
-Anytime I try to do anything elaborate, I find I always end up dropping it, so if you are new to quiet the idea of quiet time, start small. Keeping things simple will make quiet time that much more doable long term. Test and try different things over time, too. I read a fantastic book called _Simplicity Parenting_ once that reminded me over and over that oftentimes, simple is best for kids (and adults too!). Here are some tips from the book [here](https://designformankind.com/2018/05/simplicity-parenting/). You can also find the book in my book section in my Amazon shops: [US shop](www.amazon.com/shop/simplehomemom) and [Canadian shop](www.amazon.ca/shop/simplehomemom). 
+Anytime I try to do anything elaborate, I find I always end up dropping it, so if you are new to quiet the idea of quiet time, start small. Keeping things simple will make quiet time that much more doable long term. Test and try different things over time, too. I read a fantastic book called _Simplicity Parenting_ once that reminded me over and over that oftentimes, simple is best for kids (and adults too!). Here are some tips from the book [here](https://designformankind.com/2018/05/simplicity-parenting/). You can also find the book in my book section in my Amazon shops: [US shop](www.amazon.com/shop/simplehomemom) and [Canadian shop](www.amazon.ca/shop/simplehomemom).
 
 * Related: [How to Instill Habits in Kids](https://www.simplehomemom.com/how-to-instill-habits-in-kids/)
 
 ## The key is consistency
 
-If you really desire a quiet time for your family, know that it may get harder before it gets easier. New things are just harder to implement because they are new. But, from ten years of quiet time over here, the upfront work was definitely worth it! I really look forward to quiet time every day and the kids do too (most of the time). [Here is a blog](https://nurtureandthriveblog.com/quiet-time-for-kids/) I found on the scientific long term benefits of having a daily quiet time with kids:
+If you really desire a quiet time for your family, know that it may get harder before it gets easier. New things are just harder to implement because they are new. But, from ten plus years of quiet time over here, the upfront work was definitely worth it! I really look forward to quiet time every day and the kids do too (most of the time). [Here is a blog](https://nurtureandthriveblog.com/quiet-time-for-kids/) I found on the scientific long term benefits of having a daily quiet time with kids:
 
 1. Provides space for your child's developing creativity.
 2. Increases your child's autonomy.
@@ -36,15 +37,15 @@ If you really desire a quiet time for your family, know that it may get harder b
 
 ### A look at our quiet time right now
 
-While I put the baby for a nap at 1, my boys:
+My oldest two boys:
 
 * Tidy their rooms, usually one to two tidy tasks if it’s more of a mess.
 * Put their clean clothes away.
 * Read an assigned school reading.
-* Listen to audiobooks.
+* Listen to audiobooks sometimes.
 * Watch two shows…and don't bug mom. Ha!
 
-_(This routine is pretty much the same even more than a year later)._
+My younger two usually play with one another and look at books..and sometimes sneak away to find snacks. ha!
 
 When my baby is asleep, I am usually in my office working. Answering emails, listening to music with the odd interruption here and there. I take some time to close my eyes and rest with the baby before this too.
 
