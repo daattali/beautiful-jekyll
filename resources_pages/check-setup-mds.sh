@@ -75,7 +75,7 @@ echo "## System programs" >> check-setup-mds.log
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
     if ! [ -x "$(command -v /Library/PostgreSQL/13/bin/psql)" ]; then
-        echo "MISSING   postgreSQL 12.*" >> check-setup-mds.log
+        echo "MISSING   postgreSQL 13.*" >> check-setup-mds.log
     else
         echo "OK        "$(/Library/PostgreSQL/13/bin/psql --version) >> check-setup-mds.log
     fi
