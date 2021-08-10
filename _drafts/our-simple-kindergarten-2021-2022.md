@@ -31,25 +31,21 @@ I believe that this age is the age to keep being a child. There's lots of time i
 
 ### An overview of our Simple Kindergarten 2021-2022
 
-Language Arts:
+_Language Arts:_
 
-Reading books together. Listening to what he thinks about them.  
-Letter recognition.  
-Daily poetry. We are currently reading X and then we'll be reading Child's Garden of Verses.  
-Handicrafts. We do a variety of handicrafts as a family, but I'd like to focus on simple things like learning how to use hammers, scissors, painting, and clay. I don't really plan this area in detail.  
-Art.  
-Low key letter and number printing practice with a variety of materials: paints, pencils, writing in rice, etc.  
-Lots and lots of play.  
-Reading:  
-Closer to the age of six or showing signs of being ready: 100 lessons reading.  
-Math. Family math. MEP math....  
-HABITS...chores.
+* Reading books together. Listening to what he thinks about them.
+* Letter recognition.
+* Daily poetry. We are currently reading X and then we'll be reading Child's Garden of Verses.
+* Handicrafts. We do a variety of handicrafts as a family, but I'd like to focus on simple things like learning how to use hammers, scissors, painting, and clay. I don't really plan this area in detail.
+* Art.
+* Low key letter and number printing practice with a variety of materials: paints, pencils, writing in rice, etc.
+* Lots and lots of play.
+* Reading:  
+  Closer to the age of six or showing signs of being ready: 100 lessons reading.
+* Math. Family math. MEP math....
+* HABITS...chores.
 
-I linked all of the books and supplies we use regularly in my Amazon shops too: US shop and Canadian shop.
-
-#### Supplies
-
-#### Books
+I linked all of the books and supplies we use regularly in my Amazon shops: US shop and Canadian shop.
 
 In a multikid family, they also get the benefit of being around for any family group work too and can join is as they are comfortable or interested.
 
