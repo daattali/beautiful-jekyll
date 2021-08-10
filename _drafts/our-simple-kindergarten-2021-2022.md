@@ -57,6 +57,10 @@ Questions about teaching kindergarten I received from my Instagram followers..
 
 Link out otehr blogs on CM ....Leah...crystin..ambleside
 
+**SAVE FOR FUTURE REFERENCE:**
+
+![Blog image.](/uploads/2-1.jpg "Our Simple Kindergarten 2020-2021 SHM")
+
 ### RESOURCES AND SUPPLIES FOR OUR SIMPLE KINDERGARTEN 
 
 * Amazon shop for supplies and books you can find here under “Kids’ School”: [Canadian Shop](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/www.amazon.ca/shop/simplehomemom), [US Shop](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/www.amazon.com/shop/simplehomemom)
@@ -67,6 +71,7 @@ Link out otehr blogs on CM ....Leah...crystin..ambleside
   * Math program for my oldest
   * Piano program books we use
   * General homeschooling resources and supplies
+
 * **More homeschooling blogs of mine:**
   * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
   * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
