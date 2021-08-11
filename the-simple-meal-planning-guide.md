@@ -74,7 +74,7 @@ border-radius: 6px;
 </div>
 </div>
 
-**Please note:** I'll email you a copy of the Simple Meal Planning Guide within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
+**Please note:** I'll email you a copy of the Simple Meal Planning Guide within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
 
 **Blogs of mine you may enjoy:**
 
