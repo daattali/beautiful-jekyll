@@ -8,7 +8,7 @@ subtitle: ''
 
 > "If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource." - Crystin from [@delightfullyfeasting](www.instagram.com/delightfullyfeasting)
 
-![A graphic overview of the Simple Meal Planning Guide.](/uploads/the-simple-meal-planning-guide-shm-3.jpg "The Simple Meal Planning Guide SHM")
+![](/uploads/the-simple-meal-planning-guide-shm-2.jpg "The Simple Meal Planning Guide SHM")
 
 ## This guide is for you if...
 
@@ -32,8 +32,6 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 * 8 helpful printables to help you meal plan
 * Steps to help guide you through the process of meal planning from start to finish
 * Bonus resources and ideas for meal planning
-
-![](/uploads/the-simple-meal-planning-guide-shm-2.jpg "The Simple Meal Planning Guide SHM")
 
 #### I'm ready to take control of my meal planning!
 
