@@ -25,7 +25,7 @@ I used to be a lower elementary teacher before staying home with the kids, so I 
 
 ## My take on kindergarten
 
-I believe that this age is the age to keep being a child. There's lots of time in the future to do older kid things. I love to allow a lot of space for play and rest and _mud_, of course. Our kindergarten tends to be slow and gentle. Coming from being a kindergarten teacher, it took me time to really figure out what worked for our family, but this has been it. However you do kindergarten, the biggest thing to remember is that this is a new experience. Both for the parent and child. And to go slow and enjoy the day to day. And that learning can also happen in organic ways beyond paper and pen. 
+I believe that this is such a wonderful age. An age to keep playing and exploring the world. There's lots of time in the future to do older kid things. I love to allow a lot of space for play and rest and _mud_, of course. Our kindergarten tends to be [slow and gentle.](https://www.lifeabundantlyblog.com/lifeabundantlyblog/2019/11/2/relaxed-kindergarten-preschool-rhythm) Coming from being a kindergarten teacher, it took me time to really figure out what worked for our family, but this has been it. However you do kindergarten, the biggest thing to remember is that this is a new experience. Both for the parent and child. And to go slow and enjoy the day to day. And that learning can also happen in organic ways beyond paper and pen. 
 
 * **Related:** [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
 
