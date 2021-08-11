@@ -39,44 +39,46 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 
 #### Pricing
 
-$14.99 CAD (about $11 USD). 
+$14.99 CAD (about $11 USD).
 <div style="
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 258.96px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
-  border-radius: 10px;
-  font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
-  ">
-  <div style="padding: 20px;">
-  <p style="
-    font-size: 18px;
-    line-height: 20px;
-  ">The Simple Meal Planning Guide</p>
-  <p style="
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 600;
-  ">$14.99</p>
-  <a target="_blank" href="https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/6266WQCXUDZ7IMPJQBN6AE3O?src=embed" style="
-    display: inline-block;
-    font-size: 18px;
-    line-height: 48px;
-    height: 48px;
-    color: #000000;
-    min-width: 212px;
-    background-color: #d9d9d9;
-    text-align: center;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
-    border-radius: 6px;
-  ">Buy now</a>
-  </div>
+overflow: auto;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+width: 258.96px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
+border-radius: 10px;
+font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
+">
+<div style="padding: 20px;">
+<p style="
+font-size: 18px;
+line-height: 20px;
+">The Simple Meal Planning Guide</p>
+<p style="
+font-size: 18px;
+line-height: 20px;
+font-weight: 600;
+">$14.99</p>
+<a target="_blank" href="https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/6266WQCXUDZ7IMPJQBN6AE3O?src=embed" style="
+display: inline-block;
+font-size: 18px;
+line-height: 48px;
+height: 48px;
+color: #000000;
+min-width: 212px;
+background-color: #d9d9d9;
+text-align: center;
+box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+border-radius: 6px;
+">Buy now</a>
 </div>
+</div>
+
+Please email me at simplehomemom@gmail.com right away if technology goes wonky on you and I'll sort it out. Thanks!
 
 **Blogs of mine you may enjoy:**
 
