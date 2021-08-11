@@ -78,7 +78,7 @@ border-radius: 6px;
 </div>
 </div>
 
-Please email me at simplehomemom@gmail.com right away if technology goes wonky on you and I'll sort it out. Thanks!
+**Please note:** I'll email you a copy of the Simple Meal Planning Guide within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
 
 **Blogs of mine you may enjoy:**
 
