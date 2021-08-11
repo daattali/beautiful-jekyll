@@ -33,9 +33,9 @@ I believe that this is such a wonderful age. An age to keep playing and explorin
 
 _Language Arts:_
 
-* Reading books together. Listening to what he thinks about them.
-* Letter recognition.
-* Daily poetry. We are currently reading X and then we'll be reading Child's Garden of Verses.
+* Reading books together. 
+* Letter recognition. We use a variety of ways to recognize letters from magnet letters, to printing, to drawing in sand.
+* Daily poetry. We'll be reading through _A Child's Garden of Verses_.
 * Handicrafts. We do a variety of handicrafts as a family, but I'd like to focus on simple things like learning how to use hammers, scissors, painting, and clay. I don't really plan this area in detail.
 * Art.
 * Low key letter and number printing practice with a variety of materials: paints, pencils, writing in rice, etc.
