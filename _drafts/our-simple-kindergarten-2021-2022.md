@@ -47,39 +47,37 @@ _Language Arts:_
 
 ### Our Simple Kindergarten Books and Supplies
 
-I linked all of the books and supplies we use regularly in my Amazon shops: [US shop]() and [Canadian shop](www.amazon.ca/shop/simplehomemom) under "Kids' School".
+I linked all of the books and supplies we use regularly in my Amazon shops: [US shop]() and [Canadian shop](www.amazon.ca/shop/simplehomemom) under "Kids' School". You'll find things like:
+
+* Our devotional books
+* Math programs
+* Literature
+* Nature study books: garden flowers and foraging
+* Piano program books we use
+* General homeschooling resources and supplies
 
 **SAVE FOR FUTURE REFERENCE:**
 
 ![Blog image.](/uploads/2-1.jpg "Our Simple Kindergarten 2020-2021 SHM")
 
-### RESOURCES AND SUPPLIES FOR OUR SIMPLE KINDERGARTEN
+**More homeschooling blogs of mine you may find helpful:**
 
-* Amazon shop for supplies and books you can find here under “Kids’ School”: [Canadian Shop](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/www.amazon.ca/shop/simplehomemom), [US Shop](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/www.amazon.com/shop/simplehomemom)
-  * Our devotional books
-  * Addition Facts that Stick book
-  * Readaloud: The Water Babies, Spirit of Canada book
-  * Nature study books: garden flowers and foraging
-  * Math program for my oldest
-  * Piano program books we use
-  * General homeschooling resources and supplies
-* **More homeschooling blogs of mine:**
-  * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
-  * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
-  * [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
-  * [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
-  * [https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/ "https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/")
-* **Simplify Your Homeschool Life online workshop:** This 30ish minute session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life. You can find the session in the Online Canadian Homeschooling conference [here](https://canadianhomeschoolconference.com/aff/42/).
+* [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
+* [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
+* [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
+* [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
+* [Summer 2021 Homeschool Resources and Routine](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/)
+
+#### SIMPLIFY YOUR HOMESCHOOL LIFE ONLINE WORKSHOP
+
+* This 30ish minute session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life. You can access the past session in the Online Canadian Homeschooling conference [here](https://canadianhomeschoolconference.com/aff/42/).
+
+![](/uploads/1610818702170_kellybriggs_compress48.jpg)
+
 * **Podcast interview:** [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
 
-Other blogs on kindergarten from friends of mine:
+**Other blogs on kindergarten from friends of mine:**
 
-# A Charlotte Mason (Informal) Kindergarten [https://mylittlerobins.com/2019/09/a-charlotte-mason-informal-kindergarten/](https://mylittlerobins.com/2019/09/a-charlotte-mason-informal-kindergarten/ "https://mylittlerobins.com/2019/09/a-charlotte-mason-informal-kindergarten/")
-
-# Easy Letter Learning From The Dinner Table
-
-[https://thebeckablog.com/easy-letter-learning-from-the-dinner-table/](https://thebeckablog.com/easy-letter-learning-from-the-dinner-table/ "https://thebeckablog.com/easy-letter-learning-from-the-dinner-table/")
-
-# Benefits of Reading Aloud to Your Kids
-
-[https://www.inspirethemom.com/2018/10/29/reading-aloud/](https://www.inspirethemom.com/2018/10/29/reading-aloud/ "https://www.inspirethemom.com/2018/10/29/reading-aloud/")
+* [A Charlotte Mason (Informal) Kindergarten](https://mylittlerobins.com/2019/09/a-charlotte-mason-informal-kindergarten/)
+* [Easy Letter Learning From the Dinner Table](https://thebeckablog.com/easy-letter-learning-from-the-dinner-table/)
+* [Benefits of Reading Aloud to Your Kids](https://www.inspirethemom.com/2018/10/29/reading-aloud/)
