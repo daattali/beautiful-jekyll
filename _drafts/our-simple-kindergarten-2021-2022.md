@@ -34,24 +34,20 @@ I believe that this is such a wonderful age. An age to keep playing and explorin
 _Language Arts:_
 
 * Reading books together. 
-* Letter recognition. We use a variety of ways to recognize letters from magnet letters, to printing, to drawing in sand.
+* Letter and number recognition. We use a variety of ways to recognize letters from magnet letters, to printing, to drawing in sand.
 * Daily poetry. We'll be reading through _A Child's Garden of Verses_.
-* Handicrafts. We do a variety of handicrafts as a family, but I'd like to focus on simple things like learning how to use hammers, scissors, painting, and clay. I don't really plan this area in detail.
-* Art.
-* Low key letter and number printing practice with a variety of materials: paints, pencils, writing in rice, etc.
+* Handicrafts. We do a variety of handicrafts as a family, but I'd like to focus on simple things like learning how to use hammers, scissors, painting, and clay. I don't really plan this area in detail. [Here is a blog](https://mylittlerobins.com/2017/11/100-handicrafts/) from my friend about 100 handicrafts for the early years.
+* Art. Everything from painting to pastels and clay sculpting.
 * Lots and lots of play.
-* Reading:  
-  Closer to the age of six or showing signs of being ready: 100 lessons reading.
-* Math. Family math. MEP math....
-* HABITS...chores.
+* Reading: Closer to the age of six or showing signs of being ready, we use _Teach Your Child to Read in 100 Easy Lessons_.
+* Math. Arthur will be participating in [Family Math Lessons](https://my-little-robins-shop.myshopify.com/collections/math/products/family-time-math-digital-download) from My Little Robins and [MEP Math for kindergarten](https://www.cimt.org.uk/projects/mepres/primary/index.htm#reception).
+* Arthur will be working on habits and family chores. Habits are so important to start at an early age from making your bed to getting dressed.
+* In a multikid family, they also get the benefit of being around for any family group work too and can join is as they are comfortable or interested.
+* We use literature selections and inspiration from [Ambleside Online](https://www.amblesideonline.org/ao-y0).
 
-I linked all of the books and supplies we use regularly in my Amazon shops: US shop and Canadian shop.
+### Our Simple Kindergarten Books and Supplies
 
-In a multikid family, they also get the benefit of being around for any family group work too and can join is as they are comfortable or interested.
-
-Questions about teaching kindergarten I received from my Instagram followers..
-
-Link out otehr blogs on CM ....Leah...crystin..ambleside
+I linked all of the books and supplies we use regularly in my Amazon shops: [US shop]() and [Canadian shop](www.amazon.ca/shop/simplehomemom) under "Kids' School".
 
 **SAVE FOR FUTURE REFERENCE:**
 
