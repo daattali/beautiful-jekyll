@@ -17,15 +17,15 @@ share-img: ''
 redirect_from: []
 
 ---
-My third son is heading into kindergarten at home this year and after having a bit more experience, I know exactly how I'd like to plan out his year. I'm all for slow and simple and lots of space to be a kid, still! Today on the blog, I can't wait to share with you our simple kindergarten 2021-2022.
+My third son is heading into kindergarten at home this year and after having a bit more experience, I know exactly how I'd like to plan out his year. I'm all for slow and simple and lots of space to be a kid, still! Today on the blog, I'm sharing about our simple kindergarten 2021-2022.
 
 ![A picture of pencils and paper on a table.](/uploads/simple-homeschooling-shm.jpg "Our Simple Kindergarten 2021-2022 SHM")
 
-I used to be a lower elementary teacher before staying home with the kids, so I assumed I had it all figured out before we started homeschooling years ago with our first. I was surprised to find out that my years as a teacher prepared me for not much. Kindergarten at home is nothing compared to my classroom!
+I used to be a lower elementary teacher before staying home with the kids, so I assumed I had it all figured out before we started homeschooling years ago with our first. I was surprised to find out that my years as a teacher prepared me for not much. Kindergarten at home is nothing compared to my classroom! See [this blog here](https://homeeducator.com/homeschool-vs-public-school/) about the homeschool vs. public school debate.
 
 ## My take on kindergarten
 
-I believe that this age is the age to keep being a child. There's lots of time in the future to do older kid things. I love to allow a lot of space for play and rest and _mud_, of course. Our kindergarten tends to be slow and gentle. Coming from being a kindergarten teacher, it took me time to really figure out what worked for our family, but this has been it. However you do kindergarten, the biggest thing to remember is that this is a new experience. Both for the parent and child. And to go slow and enjoy the day to day. And that learning can also happen in organic ways beyond paper and pen. LINK OUT TO LEAH’s website.
+I believe that this age is the age to keep being a child. There's lots of time in the future to do older kid things. I love to allow a lot of space for play and rest and _mud_, of course. Our kindergarten tends to be slow and gentle. Coming from being a kindergarten teacher, it took me time to really figure out what worked for our family, but this has been it. However you do kindergarten, the biggest thing to remember is that this is a new experience. Both for the parent and child. And to go slow and enjoy the day to day. And that learning can also happen in organic ways beyond paper and pen. 
 
 * **Related:** [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
 
@@ -57,7 +57,7 @@ Link out otehr blogs on CM ....Leah...crystin..ambleside
 
 ![Blog image.](/uploads/2-1.jpg "Our Simple Kindergarten 2020-2021 SHM")
 
-### RESOURCES AND SUPPLIES FOR OUR SIMPLE KINDERGARTEN 
+### RESOURCES AND SUPPLIES FOR OUR SIMPLE KINDERGARTEN
 
 * Amazon shop for supplies and books you can find here under “Kids’ School”: [Canadian Shop](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/www.amazon.ca/shop/simplehomemom), [US Shop](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/www.amazon.com/shop/simplehomemom)
   * Our devotional books
@@ -67,7 +67,6 @@ Link out otehr blogs on CM ....Leah...crystin..ambleside
   * Math program for my oldest
   * Piano program books we use
   * General homeschooling resources and supplies
-
 * **More homeschooling blogs of mine:**
   * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
   * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
