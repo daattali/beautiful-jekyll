@@ -19,81 +19,43 @@ So if you are not sure where to start (or continue) because you're confused abou
 ## Included inside
 
 $9.99 CAD (about $8 US) 
-
 <div style="
-
   overflow: auto;
-
   display: flex;
-
   flex-direction: column;
-
   justify-content: flex-end;
-
   align-items: center;
-
   width: 258.96px;
-
   background: #FFFFFF;
-
   border: 1px solid rgba(0, 0, 0, 0.1);
-
   box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
-
   border-radius: 10px;
-
   font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
-
   ">
-
   <div style="padding: 20px;">
-
   <p style="
-
     font-size: 18px;
-
     line-height: 20px;
-
   ">The Simple Capsule Wardrobe Guide</p>
-
   <p style="
-
     font-size: 18px;
-
     line-height: 20px;
-
     font-weight: 600;
-
   ">$14.99</p>
-
-  <a target="_blank" href="[https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/KW7QQHILUFI7QDD45VQ74UN7?src=embed](https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/KW7QQHILUFI7QDD45VQ74UN7?src=embed "https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/KW7QQHILUFI7QDD45VQ74UN7?src=embed")" style="
-
+  <a target="_blank" href="https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/KW7QQHILUFI7QDD45VQ74UN7?src=embed" style="
     display: inline-block;
-
     font-size: 18px;
-
     line-height: 48px;
-
     height: 48px;
-
     color: #000000;
-
     min-width: 212px;
-
     background-color: #d9d9d9;
-
     text-align: center;
-
     box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
-
     border-radius: 6px;
-
   ">Buy now</a>
-
   </div>
-
 </div>
-
 **Please note:** I’ll email you a copy of the Simple Capsule Wardrobe Guide within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
 
 * 9 pages
