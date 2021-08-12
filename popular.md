@@ -22,9 +22,9 @@ subtitle: ''
 
 ## Homeschooling
 
+* **Simplify your Homeschool Life Video Session** with session notes and worksheet:  with the Canadian online homeschooling conference affiliate link - signup [here](https://canadianhomeschoolconference.com/aff/42/).
 * [Our Simple Kindergarten 2021-2022](https://www.simplehomemom.com/our-simple-kindergarten-2021-2022/)
 * [Summer 2021: Our Homeschool Resources and Routine](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/)
-* [Simplify Your Homeschool Life Session](https://canadianhomeschoolconference.com/aff/42/) - 30 minute session and notes (affiliate link)
 * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
 * [4 Ways to Simplify Your Homeschool Planning + 10 questions to help simplify your homeschool life freebie worksheet](https://www.simplehomemom.com/4-ways-to-simplify-your-homeschool-planning/)
 * [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
@@ -40,5 +40,4 @@ subtitle: ''
 ## Other
 
 * Amazon Shop: Shop [HERE](http://www.amazon.com/shop/simplehomemom) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/simplehomemom) if you are in Canada.
-* **Simplify your Homeschool Life Video Session** with session notes and worksheet:  with the Canadian online homeschooling conference affiliate link - signup [here](https://canadianhomeschoolconference.com/aff/42/).
 * Looking for simple online work? Start [here](https://forms.gle/v11JEewD81mxsUyf6).
