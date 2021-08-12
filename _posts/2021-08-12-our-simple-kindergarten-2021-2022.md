@@ -5,7 +5,7 @@ tags:
 - simple homeschool
 - kindergarten homeschooling
 - homeschooling tips
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/simple-homeschooling-shm.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
