@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bayesian Optimization
-subtitle:  Application To Hyperparameter Tuning
+subtitle:  Bayesian Hyperparameter Tuning
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
 tags: [hyperparameter tuning ,lightgbm,xgboost, bayesian optimization,scikit-optimize, hyperopt,optuna,neptune.ai]
