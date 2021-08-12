@@ -44,16 +44,19 @@ $browser_cmd                      Open the current folder in your file browser
 man <COMMAND>                   Show the manual (help) of a command
 history                         List all commands you have typed
 pwd                             Print the name of the current (working) directory
+clear                           Clear the terminal of all text
 
 ls                              List the content of the current directory
 ls <FOLDER>                     List the content of a specific directory
 ls -a                           List hidden files
 ls -l                           List additional information for each file
+ls -lh                          Same as above, but with easier to interpret size info
 
 cd <FOLDER>                     Navigate to a folder (one folder 'down')
 cd <FOLDER>/<FOLDER>            Navigate two folders down
 cd ..                           Navigate to the parent folder (one folder 'up')
 cd ../..                        Navigate two folders up
+cd -                            Navigate to the last visited directory (one folder 'back')
 
 code <FILE_or_NEW_NAME>         Open an existing or new file in VS Code
 mkdir <NEW_NAME>                Create a new directory
