@@ -25,7 +25,7 @@ I used to be a lower elementary teacher before staying home with the kids, so I 
 
 ## My take on kindergarten
 
-I believe that this is such a wonderful age. An age to keep playing and exploring the world. There's lots of time in the future to do older kid things. I love to allow a lot of space for play and rest and _mud_, of course. Our kindergarten tends to be [slow and gentle.](https://www.lifeabundantlyblog.com/lifeabundantlyblog/2019/11/2/relaxed-kindergarten-preschool-rhythm) Coming from being a kindergarten teacher, it took me time to really figure out what worked for our family, but this has been it. However you do kindergarten, the biggest thing to remember is that this is a new experience. Both for the parent and child. And to go slow and enjoy the day to day. And that learning can also happen in organic ways beyond paper and pen. 
+I believe that this is such a wonderful age. An age to keep playing and exploring the world. There's lots of time in the future to do older kid things. I love to allow a lot of space for play and rest and _mud_, of course. Our kindergarten tends to be [slow and gentle.](https://www.lifeabundantlyblog.com/lifeabundantlyblog/2019/11/2/relaxed-kindergarten-preschool-rhythm) Coming from being a kindergarten teacher, it took me time to really figure out what worked for our family, but this has been it. However you do kindergarten, the biggest thing to remember is that this is a new experience. Both for the parent and child. And to go slow and enjoy the day to day. And that learning can also happen in organic ways beyond paper and pen.
 
 * **Related:** [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
 
@@ -33,7 +33,7 @@ I believe that this is such a wonderful age. An age to keep playing and explorin
 
 _Language Arts:_
 
-* Reading books together. 
+* Reading books together.
 * Letter and number recognition. We use a variety of ways to recognize letters from magnet letters, to printing, to drawing in sand.
 * Daily poetry. We'll be reading through _A Child's Garden of Verses_.
 * Handicrafts. We do a variety of handicrafts as a family, but I'd like to focus on simple things like learning how to use hammers, scissors, painting, and clay. I don't really plan this area in detail. [Here is a blog](https://mylittlerobins.com/2017/11/100-handicrafts/) from my friend about 100 handicrafts for the early years.
@@ -70,7 +70,7 @@ I linked all of the books and supplies we use regularly in my Amazon shops: [US 
 
 #### SIMPLIFY YOUR HOMESCHOOL LIFE ONLINE WORKSHOP
 
-* This 30ish minute session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life. You can access the past session in the Online Canadian Homeschooling conference [here](https://canadianhomeschoolconference.com/aff/42/).
+_This 30ish minute session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life. You can access the past session in the Online Canadian Homeschooling conference_ [_here_](https://canadianhomeschoolconference.com/aff/42/)_._
 
 ![](/uploads/1610818702170_kellybriggs_compress48.jpg)
 
