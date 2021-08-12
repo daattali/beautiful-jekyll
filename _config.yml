@@ -15,15 +15,7 @@ author: Onur Atakan ULUSOY
 
 navbar-links:
   My Projects: "https://onuratakan.github.io/2021-08-12-my-projects/"
-  My Libraries:
-    - HACON: "https://pypi.org/project/hacon/"
-    - Linear Congruential Generator: "https://pypi.org/project/Linear-Congruential-Generator/"
-    - Site Seo Scanner: "https://pypi.org/project/Site-Seo-Scanner/"
-    - Say Me Something: "https://pypi.org/project/say-me-something/"
-    - Ask Me Something: "https://pypi.org/project/ask-me-something/"
-    - ONUR Voice Assistant: "https://pypi.org/project/ONUR-Voice-Assistant/"
-    - Get Crypto Price: "https://pypi.org/project/get-crypto-price/"
-    - RSI Calculator: "https://pypi.org/project/rsi-calculator/"
+  My Libraries: "https://onuratakan.github.io/2021-08-12-my-libraries/"
   CV: "https://onuratakan.github.io/online-cv/"
 
 # --- Logo --- #
