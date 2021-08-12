@@ -416,8 +416,10 @@ code ~/.bash_profile
 Append the following lines to the file
 
 ```
+# Automatically expand the R version number
+R_DIR=(/c/Program\ Files/R/*/bin/x64)
 # Add R and Rscript to PATH
-export PATH="/c/Program Files/R/R-4.1.0/bin/x64":$PATH
+export PATH="${R_DIR}:$PATH
 ```
 
 Then save the file and exit VS Code.
@@ -430,7 +432,7 @@ R --version
 which should return something like:
 
 ```
-R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+R version 4.1.1 (2021-05-18) -- "Camp Pontanezen"
 Copyright (C) 2021 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
@@ -709,7 +711,7 @@ And replace the section that reads:
 
 ```
 # Add R and Rscript to path
-export PATH="/c/Program Files/R/R-4.1.0/bin/x64":$PATH
+export PATH="${R_DIR}:$PATH
 ```
 
 with the following to prepend make's bin folder to the PATH
@@ -718,7 +720,7 @@ so you don't need to replace it manually.
 
 ```
 # Add R, Rscript, and Make to path
-export PATH="/c/Users/${USERNAME}/make-4.3/bin":"/c/Program Files/R/R-4.1.0/bin/x64":$PATH
+export PATH="/c/Users/${USERNAME}/make-4.3/bin":${R_DIR}:$PATH
 ```
 
 Then save the file and exit VS Code.
