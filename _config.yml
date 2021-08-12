@@ -16,9 +16,9 @@ author: 김태풍
 navbar-links:
   About Me: "김태풍"
   Resources:
-    - Beautiful Jekyll: null
-    - Learn markdown: null
-  Author's home: null
+    - Beautiful Jekyll: 
+    - Learn markdown: 
+  Author's home: 
   
 # --- Logo --- #
 
@@ -65,7 +65,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: 이게뭐지1
+rss-description: 
 
 # --- General options --- #
 
