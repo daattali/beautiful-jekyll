@@ -32,43 +32,42 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 $59.99 CAD (about $48 USD).
 
 <div style="
-overflow: auto;
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
-width: 258.96px;
-background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
-box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
-border-radius: 10px;
-font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
-">
-<div style="padding: 20px;">
-<p style="
-font-size: 18px;
-line-height: 20px;
-">Simplify Your Home Life: a Course for Busy Moms</p>
-<p style="
-font-size: 18px;
-line-height: 20px;
-font-weight: 600;
-">$59.99</p>
-<a target="_blank" href="https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/AHQ2ZTP5QMMKWWXMYZ5MNSF2?src=embed" style="
-display: inline-block;
-font-size: 18px;
-line-height: 48px;
-height: 48px;
-color: #000000;
-min-width: 212px;
-background-color: #d9d9d9;
-text-align: center;
-box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
-border-radius: 6px;
-">Buy now</a>
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 258.96px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
+  ">
+  <div style="padding: 20px;">
+  <p style="
+    font-size: 18px;
+    line-height: 20px;
+  ">Simplify Your Home Life: a Course for Busy Moms</p>
+  <p style="
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+  ">$59.99</p>
+  <a target="_blank" href="https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/AHQ2ZTP5QMMKWWXMYZ5MNSF2?src=embed" style="
+    display: inline-block;
+    font-size: 18px;
+    line-height: 48px;
+    height: 48px;
+    color: #000000;
+    min-width: 212px;
+    background-color: #d9d9d9;
+    text-align: center;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+    border-radius: 6px;
+  ">Buy now</a>
+  </div>
 </div>
-</div>
-
 **Please note:** I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
 
 ## Reviews
