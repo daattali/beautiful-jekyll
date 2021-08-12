@@ -41,7 +41,7 @@ $9.99 CAD (about $8 US)
     font-size: 18px;
     line-height: 20px;
     font-weight: 600;
-  ">$14.99</p>
+  ">$9.99</p>
   <a target="_blank" href="https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/KW7QQHILUFI7QDD45VQ74UN7?src=embed" style="
     display: inline-block;
     font-size: 18px;
