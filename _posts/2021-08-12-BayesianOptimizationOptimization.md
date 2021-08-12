@@ -1,4 +1,15 @@
-### Bayesian Optimization
+---
+layout: post
+title: Bayesian Optimization
+subtitle:  Application To Hyperparameter Tuning
+gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
+gh-badge: [star, fork, follow]
+tags: [hyperparameter tuning ,lightgbm,xgboost, bayesian optimization,scikit-optimize, hyperopt,optuna,neptune.ai]
+---
+
+
+
+ 
 
 **Bayesian optimization**  
 Suppose we want to optimize a function such as  validation error (which is a
