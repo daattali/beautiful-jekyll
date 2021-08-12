@@ -62,7 +62,7 @@ What the...
 
 Là un gradé sort du rend et s'adresse à moi avec un megaphone, outil profondément inutile vu la distance... j'avais réussi à entendre les loulous discuter entre eux : « _Reculer ou approchez vous les mains sur la tête_ »
 
-![](https://c.tenor.com/Hht3QmnXPrIAAAAC/the-dude-white-russian.gif){: width="100%" }
+![](https://c.tenor.com/Hht3QmnXPrIAAAAC/the-dude-white-russian.gif){: width="50%" }
 
 Je dois reculer ou avancer... et si je recule dois-je mettre les mains sur la tête ? Clairement l'injonction n'avait grammaticalement pas été suffisamment préparée. J'eus, pour une fois, la présence d'esprit de ne pas faire cette remarque à mon interlocuteur. C'est rare chez moi. Vous pourriez le noter.
 
