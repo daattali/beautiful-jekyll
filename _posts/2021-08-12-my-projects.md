@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Project
+title: My Projects
 ---
 - [Decentra Network](https://github.com/Decentra-Network/Decentra-Network)
 - [MIXON](https://github.com/onuratakan/MIXON)
