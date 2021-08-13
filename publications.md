@@ -10,7 +10,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/rss2021lightcurtains.png" img width="250">
         </td>
-        <td>Active Safety Envelopes using Light Curtains with Probabilistic Guarantees<br>
+        <td><a href="https://arxiv.org/abs/2107.04000">Active Safety Envelopes using Light Curtains with Probabilistic Guarantees</a><br>
             <div class="pubauthor">Siddharth Ancha, Gaurav Pathak, Srinivasa Narasimhan, David Held<br>
             </div>
             <div id="bib2021safetyenvelopes" style="display:none">
@@ -36,6 +36,8 @@ subtitle:
                 <a href="javascript:copy(div2021safetyenvelopes, bib2021safetyenvelopes)">[Bibtex]</a>
                 <a href="javascript:copy(div2021safetyenvelopes, abs2021safetyenvelopes)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2107.04000.pdf">[PDF]</a>
+                <a href="https://www.youtube.com/watch?v=1PUAjzcTz5g">[Talk]</a>
+                <a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a>
             </div>
             <div id="div2021safetyenvelopes" class="pubInfo"></div>
             </div>
@@ -341,6 +343,8 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
                 <a href="javascript:copy(div2020eccv, bib2020eccv)">[Bibtex]</a>
                 <a href="javascript:copy(div2020eccv, abs2020eccv)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2008.02191.pdf">[PDF]</a>
+                <a href="https://www.youtube.com/watch?v=WSb5T3HFE7w">[Short Talk]</a>
+                <a href="https://www.youtube.com/watch?v=uRP63hHArU0">[Long Talk]</a>
                 <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
             </div>
             <div id="div2020eccv" class="pubInfo"></div>
