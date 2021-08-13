@@ -142,7 +142,7 @@ Arman Seyed-Ahmadi joined The MDS program in July 2021. He obtained his undergra
 
 <img src='../img/team/florencia.jpg'   align="left" width="32%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
-Florencia D'Andrea joined the MDS team at UBC in the summer of 2016.  Florencia studied Biology at the University of Buenos Aires where she obtained her Bachelor's and Doctorate in Biology. Florencia is an ecotoxicologist specializing in Pesticide Risk Assessment. During her PhD, she worked with multiple databases and used a model to simulate the environmental fate of pesticides. Florencia has experience teaching as an instructor for the Carpentries and is an Rstudio Certified Trainer for Tidyverse and Shiny. When Florencia is not teaching or working, she can be found listening to podcasts, hiking or doing yoga.  <br>
+Florencia D'Andrea joined the MDS team at UBC in the summer of 2021. She studied Biology at the University of Buenos Aires where she obtained her Bachelor's and Doctorate in Biology. Florencia is an ecotoxicologist specializing in Pesticide Risk Assessment. During her PhD, she worked with multiple databases and used a model to simulate the environmental fate of pesticides. She has experience teaching as an instructor for the Carpentries and is an Rstudio Certified Trainer for Tidyverse and Shiny. When Florencia is not teaching or working, she can be found listening to podcasts, hiking or doing yoga.  <br>
 <br>
 
 <i>In the last 6 months, Florencia has learned key variations among Windows, Mac and Linux operating systems.</i> <br>
