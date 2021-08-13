@@ -4,7 +4,7 @@
 
 # 0. Help message and OS info
 echo ''
-echo "# MDS setup check 1.0.0" | tee check-setup-mds.log
+echo "# MDS setup check 1.1.1" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
 echo 'this means that you are missing the required version of that program or package.'
@@ -37,9 +37,9 @@ if [[ "$(uname)" == 'Linux' ]]; then
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
     file_browser="open"
-    if ! $(sw_vers | grep -iq "10.15"); then
+    if ! $(sw_vers | grep -iq "11.[4|5]"); then
         echo '' >> check-setup-mds.log
-        echo "MISSING You need macOS Catalina (10.15.x)." >> check-setup-mds.log
+        echo "MISSING You need macOS Big Sur (11.4.x or 11.5.x)." >> check-setup-mds.log
     fi
 elif [[ "$OSTYPE" == 'msys' ]]; then
     # wmic use some non-ASCII characters that we need grep (or sort or similar) to convert,
@@ -55,7 +55,7 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         echo '' >> check-setup-mds.log
         echo "MISSING Windows Home is not sufficient. Please upgrade to the free Education edition as per the setup instructions." >> check-setup-mds.log
     fi
-    if ! $(grep -iq "19041" <<< $os_version); then
+    if ! $(grep -iq "1904[1|2|3|4]" <<< $os_version); then
         echo '' >> check-setup-mds.log
         echo "MISSING You need at least Windows build 10.0.19041. Please run Windows update." >> check-setup-mds.log
     fi
@@ -75,7 +75,7 @@ echo "## System programs" >> check-setup-mds.log
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
     if ! [ -x "$(command -v /Library/PostgreSQL/13/bin/psql)" ]; then
-        echo "MISSING   postgreSQL 12.*" >> check-setup-mds.log
+        echo "MISSING   postgreSQL 13.*" >> check-setup-mds.log
     else
         echo "OK        "$(/Library/PostgreSQL/13/bin/psql --version) >> check-setup-mds.log
     fi
@@ -115,7 +115,7 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* make=4.* latex=3.* docker=20.* code=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=13.* rstudio=1.* R=4.* python=3.* conda=4.* bash=4.* \
+    sys_progs=(psql=13.* rstudio=1.* R=4.* python=3.* conda=4.* bash=5.* \
         git=2.* make=4.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
@@ -164,7 +164,7 @@ if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executa
     echo "In order to do this after the installation process," >> check-setup-mds.log
     echo "first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
 else
-    py_pkgs=(jupyterlab=3 numpy=1 pandas=1 flake8=3 black=21 nodejs=15 jupytext=1 jupyterlab-git=0)
+    py_pkgs=(pandas=1 pyppeteer=0 nbconvert=6 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyterlab-spellchecker=0)
     # installed_py_pkgs=$(pip freeze)
     installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
@@ -179,7 +179,7 @@ else
     done
 fi
 
-# jupyterlab PDF generation
+# jupyterlab PDF and HTML generation
 if ! [ -x "$(command -v jupyter)" ]; then  # Check that jupyter exists as an executable program
     echo "Please install 'jupyterlab' before testing PDF generation." >> check-setup-mds.log
 else
@@ -205,13 +205,54 @@ else
      },
      "nbformat": 4,
      "nbformat_minor": 4
-    }' > mds-nbconvert-pdf-test.ipynb
-    if ! jupyter nbconvert mds-nbconvert-pdf-test.ipynb --to pdf &> /dev/null; then
-        echo 'MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.' >> check-setup-mds.log
+    }' > mds-nbconvert-test.ipynb
+    # Test PDF
+    if ! jupyter nbconvert mds-nbconvert-test.ipynb --to pdf --log-level 'ERROR' &> jupyter-pdf-error.log; then
+        echo 'MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
     else
         echo 'OK        jupyterlab PDF-generation was successful.' >> check-setup-mds.log
     fi
-    rm mds-nbconvert-pdf-test.ipynb
+    # Test WebPDF
+    # I don't want to automate any of the installation steps since it can be harder to troubleshoot then,
+    # so we just output and error message telling students is the most probable cause of the failure.
+    if ! [ -x "$(command -v pyppeteer-install)" ]; then  # Check that pyppeteer-install exists as an executable program
+        echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you did not run `pip install "nbconvert[webpdf]"` to install pyppeteer.' >> check-setup-mds.log
+    else
+        # If the student didn't run `pypeteer-install`
+        # then that command will try to download chromium,
+        # which should always take more than 1s
+        # so `timeout` will interupt it with exit code 1.
+        # If chromium is already installed,
+        # this command just returns an info message which should not take more than 1s.
+        # ----
+        # Unfortunately, apple has decided not to use gnu-coreutils,
+        # so we need to use less reliable solution on macOS;
+        # there might be corner cases where this breaks
+        if [[ "$(uname)" == 'Darwin' ]]; then
+            # The surrounding $() here is just to supress the alarm clock output
+            # as redirection does not work.
+            $(perl -e 'alarm shift; exec pyppeteer-install' 1)
+        else
+            # Using the reliable `timeout` tool on Linux and Windows
+            timeout 1s pyppeteer-install &> /dev/null
+        fi
+        # `$?` stores the exit code of the last program that as executed
+        if ! [ $? ]; then
+            echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `pyppeteer-install` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
+        elif ! jupyter nbconvert mds-nbconvert-test.ipynb --to webpdf --log-level 'ERROR' &> jupyter-webpdf-error.log; then
+            echo 'MISSING   jupyterlab WebPDF-generation failed. Check that jupyterlab, nbconvert, and pyppeteer are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
+        else
+            echo 'OK        jupyterlab WebPDF-generation was successful.' >> check-setup-mds.log
+        fi
+    fi
+    # Test HTML
+    if ! jupyter nbconvert mds-nbconvert-test.ipynb --to html --log-level 'ERROR' &> jupyter-html-error.log; then
+        echo 'MISSING   jupyterlab HTML-generation failed. Check that jupyterlab and nbconvert are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
+    else
+        echo 'OK        jupyterlab HTML-generation was successful.' >> check-setup-mds.log
+    fi
+    # -f makes sure `rm` succeeds even when the file does not exists
+    rm -f mds-nbconvert-test.ipynb mds-nbconvert-test.pdf mds-nbconvert-test.html
 fi
 
 # 3. R packages
@@ -235,9 +276,9 @@ else
     done
 fi
 
-# rmarkdown PDF generation
+# rmarkdown PDF and HTML generation
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
-    echo "Please install 'R' before testing PDF generation." >> check-setup-mds.log
+    echo "Please install 'R' before testing PDF and HTML generation." >> check-setup-mds.log
 else
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
@@ -246,7 +287,13 @@ else
     else
         echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
     fi
-    rm mds-knit-pdf-test.Rmd
+    if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
+        echo "MISSING   rmarkdown HTML-generation failed. Check that rmarkdown is marked OK above." >> check-setup-mds.log
+    else
+        echo 'OK        rmarkdown HTML-generation was successful.' >> check-setup-mds.log
+    fi
+    # -f makes sure `rm` succeeds even when the file does not exists
+    rm -f mds-knit-pdf-test.Rmd mds-knit-pdf-test.html mds-knit-pdf-test.pdf
 fi
 
 # 4. Ouput the saved file to stdout
@@ -254,6 +301,30 @@ fi
 # instead of progressively with `tee` throughout
 # so that students have time to read the help message in the beginning.
 tail -n +2 check-setup-mds.log  # `tail` to skip rows already echoed to stdout
+
+# Output details about PDF and HTML creation errors
+# This is outputted after all the package OK/MISSING info
+# to separate the detailed error message from the overview of which packages installed correctly.
+if [ -s jupyter-pdf-error.log ]; then
+    echo '' >> check-setup-mds.log
+    echo '======== You had the following errors during Jupyter PDF generation ========' >> check-setup-mds.log
+    cat jupyter-pdf-error.log >> check-setup-mds.log
+    echo '======== End of Jupyter PDF error ========' >> check-setup-mds.log
+fi
+if [ -s jupyter-webpdf-error.log ]; then
+    echo '' >> check-setup-mds.log
+    echo '======== You had the following errors during Jupyter WebPDF generation ========' >> check-setup-mds.log
+    cat jupyter-webpdf-error.log >> check-setup-mds.log
+    echo '======== End of Jupyter WebPDF error ========' >> check-setup-mds.log
+fi
+if [ -s jupyter-html-error.log ]; then
+    echo '' >> check-setup-mds.log
+    echo 'You had the following errors during Jupyter HTML generation:' >> check-setup-mds.log
+    cat jupyter-html-error.log >> check-setup-mds.log
+    echo '======== End of Jupyter HTML error ========' >> check-setup-mds.log
+fi
+# -f makes sure `rm` succeeds even when the file does not exists
+rm -f jupyter-html-error.log jupyter-webpdf-error.log jupyter-pdf-error.log
 
 # Student don't need to see this in stdout, but useful to have in the log-file
 # env
@@ -280,6 +351,6 @@ else
 fi
 
 echo
-echo "This output and additional configuration details"
-echo "have been saved to the file $(pwd)/check-setup-mds.log."
+echo "The above output has been saved to the file $(pwd)/check-setup-mds.log"
+echo "together with system configuration details and any detailed error messages about PDF and HTML generation."
 echo "You can open this folder in your file browser by typing \`${file_browser} .\` (without the surrounding backticks)."
