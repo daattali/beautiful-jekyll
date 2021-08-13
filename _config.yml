@@ -26,6 +26,7 @@ navbar-links:
   Program:
     - About : "about"
     - Our vision: "vision"
+    - Our team: "team"
     - At a glance: "img/schedule.pdf"
     - Course Descriptions: "descriptions"
     - Course Materials: "https://github.com/UBC-MDS/public"
