@@ -1,7 +1,7 @@
 ---
 layout : post
 title : python code
-subtitle : 특정한 조건에 따라 리스트 인자 바꾸기
+subtitle : 조건에 따라 리스트 혹은 넘파이 배열 바꾸기 / 데이터 차원 바꾸기
 date : 2021-08-13
 #categories:
 tags : [datascience,  machinelearning, python, coding]
