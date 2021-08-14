@@ -20,6 +20,13 @@ subtitle: ''
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
 * [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
 
+## Podcasts
+
+* [Keeping it simple: an interview with Kelly](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761)
+* [4 Key Areas to Simplify Your Home Life](https://podcasts.apple.com/us/podcast/155-learn-4-key-areas-to-simplify-your-home-kelly-from/id1481909779?i=1000526375831)
+* [Simplify Your Laundry Routine with Kelly Briggs](https://podcasts.apple.com/ca/podcast/ep155-simplify-your-laundry-routine-with-kelly-briggs/id1159498258?i=1000505748717)
+* [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
+
 ## Homeschooling
 
 * **Simplify your Homeschool Life Video Session** with session notes and worksheet:  with the Canadian online homeschooling conference affiliate link - signup [here](https://canadianhomeschoolconference.com/aff/42/).
@@ -30,14 +37,6 @@ subtitle: ''
 * [Three Things You Need to Know to Create a Simple Homeschool Routine](https://www.simplehomemom.com/three-things-you-need-to-know-to-create-a-simple-homeschool-routine/)
 * [How This One Quote Can Help Simplify Your Homeschool Life](https://www.simplehomemom.com/how-this-one-quote-can-help-simplify-your-homeschool-life/)
 
-# Podcasts
-
-* [Keeping it simple: an interview with Kelly](https://podcasts.apple.com/ca/podcast/keeping-it-simple-an-interview-with-kelly/id1512837291?i=1000500930761)
-* [4 Key Areas to Simplify Your Home Life](https://podcasts.apple.com/us/podcast/155-learn-4-key-areas-to-simplify-your-home-kelly-from/id1481909779?i=1000526375831)
-* [Simplify Your Laundry Routine with Kelly Briggs](https://podcasts.apple.com/ca/podcast/ep155-simplify-your-laundry-routine-with-kelly-briggs/id1159498258?i=1000505748717)
-* [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
-
 ## Other
 
 * Amazon Shop: Shop [HERE](http://www.amazon.com/shop/simplehomemom) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/simplehomemom) if you are in Canada.
-* Looking for simple online work? Start [here](https://forms.gle/v11JEewD81mxsUyf6).
