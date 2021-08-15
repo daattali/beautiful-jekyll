@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg2"  version="1.2" baseProfile="tiny" y="0in" viewBox="0 0 36 36" gorn="0" x="0in" height="0.5in" width="0.5in">
+    <desc>
+        <referenceFile>generic_female_pin_header_10_100mil_10thin_double_schematic.svg</referenceFile>
+    </desc>
+    <g id="schematic"  gorn="0.0">
+        <line y2="3.6" y1="3.6" id="connector0pin"  stroke-width="0.7" x2="7.346" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="0.35" gorn="0.0.0" stroke="#000000"/>
+        <rect id="connector0terminal"  y="3.504" fill="none" gorn="0.0.1" x="-0.252" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="14.1,5.557 9.928,3.6 14.1,1.643" fill="none" stroke="#000000"/>
+        <line y2="3.6" y1="3.6" id="line"  stroke-width="0.7" x2="4.804" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="10.11" gorn="0.0.3" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="2.58" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="5.05" stroke="none">1</text>
+        <line y2="3.6" y1="3.6" id="connector1pin"  stroke-width="0.7" x2="28.654" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="35.65" gorn="0.0.5" stroke="#000000"/>
+        <rect id="connector1terminal"  y="3.504" fill="none" gorn="0.0.6" x="35.748" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="21.9,5.557 26.072,3.6 21.9,1.643" fill="none" stroke="#000000"/>
+        <line y2="3.6" y1="3.6" id="line"  stroke-width="0.7" x2="31.196" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="25.89" gorn="0.0.8" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="2.58" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="31.95" stroke="none">2</text>
+        <line y2="10.8" y1="10.8" id="connector2pin"  stroke-width="0.7" x2="7.346" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="0.35" gorn="0.0.10" stroke="#000000"/>
+        <rect id="connector2terminal"  y="10.704" fill="none" gorn="0.0.11" x="-0.252" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="14.1,12.757 9.928,10.8 14.1,8.843" fill="none" stroke="#000000"/>
+        <line y2="10.8" y1="10.8" id="line"  stroke-width="0.7" x2="4.804" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="10.11" gorn="0.0.13" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="9.78" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="5.05" stroke="none">3</text>
+        <line y2="10.8" y1="10.8" id="connector3pin"  stroke-width="0.7" x2="28.654" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="35.65" gorn="0.0.15" stroke="#000000"/>
+        <rect id="connector3terminal"  y="10.704" fill="none" gorn="0.0.16" x="35.748" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="21.9,12.757 26.072,10.8 21.9,8.843" fill="none" stroke="#000000"/>
+        <line y2="10.8" y1="10.8" id="line"  stroke-width="0.7" x2="31.196" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="25.89" gorn="0.0.18" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="9.78" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="31.95" stroke="none">4</text>
+        <line y2="18" y1="18" id="connector4pin"  stroke-width="0.7" x2="7.346" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="0.35" gorn="0.0.20" stroke="#000000"/>
+        <rect id="connector4terminal"  y="17.904" fill="none" gorn="0.0.21" x="-0.252" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="14.1,19.957 9.928,18 14.1,16.043" fill="none" stroke="#000000"/>
+        <line y2="18" y1="18" id="line"  stroke-width="0.7" x2="4.804" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="10.11" gorn="0.0.23" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="16.98" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="5.05" stroke="none">5</text>
+        <line y2="18" y1="18" id="connector5pin"  stroke-width="0.7" x2="28.654" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="35.65" gorn="0.0.25" stroke="#000000"/>
+        <rect id="connector5terminal"  y="17.904" fill="none" gorn="0.0.26" x="35.748" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="21.9,19.957 26.072,18 21.9,16.043" fill="none" stroke="#000000"/>
+        <line y2="18" y1="18" id="line"  stroke-width="0.7" x2="31.196" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="25.89" gorn="0.0.28" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="16.98" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="31.95" stroke="none">6</text>
+        <line y2="25.2" y1="25.2" id="connector6pin"  stroke-width="0.7" x2="7.346" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="0.35" gorn="0.0.30" stroke="#000000"/>
+        <rect id="connector6terminal"  y="25.104" fill="none" gorn="0.0.31" x="-0.252" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="14.1,27.157 9.928,25.2 14.1,23.243" fill="none" stroke="#000000"/>
+        <line y2="25.2" y1="25.2" id="line"  stroke-width="0.7" x2="4.804" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="10.11" gorn="0.0.33" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="24.18" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="5.05" stroke="none">7</text>
+        <line y2="25.2" y1="25.2" id="connector7pin"  stroke-width="0.7" x2="28.654" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="35.65" gorn="0.0.35" stroke="#000000"/>
+        <rect id="connector7terminal"  y="25.104" fill="none" gorn="0.0.36" x="35.748" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="21.9,27.157 26.072,25.2 21.9,23.243" fill="none" stroke="#000000"/>
+        <line y2="25.2" y1="25.2" id="line"  stroke-width="0.7" x2="31.196" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="25.89" gorn="0.0.38" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="24.18" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="31.95" stroke="none">8</text>
+        <line y2="32.4" y1="32.4" id="connector8pin"  stroke-width="0.7" x2="7.346" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="0.35" gorn="0.0.40" stroke="#000000"/>
+        <rect id="connector8terminal"  y="32.304" fill="none" gorn="0.0.41" x="-0.252" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="14.1,34.357 9.928,32.4 14.1,30.443" fill="none" stroke="#000000"/>
+        <line y2="32.4" y1="32.4" id="line"  stroke-width="0.7" x2="4.804" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="10.11" gorn="0.0.43" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="31.38" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="5.05" stroke="none">9</text>
+        <line y2="32.4" y1="32.4" id="connector9pin"  stroke-width="0.7" x2="28.654" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="35.65" gorn="0.0.45" stroke="#000000"/>
+        <rect id="connector9terminal"  y="32.304" fill="none" gorn="0.0.46" x="35.748" height="0.208" width="0.546"/>
+        <polyline  stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" points="21.9,34.357 26.072,32.4 21.9,30.443" fill="none" stroke="#000000"/>
+        <line y2="32.4" y1="32.4" id="line"  stroke-width="0.7" x2="31.196" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="25.89" gorn="0.0.48" stroke="#000000"/>
+        <text  stroke-width="0" font-size="2.5" y="31.38" fill="#8c8c8c" text-anchor="middle" font-family="'Droid Sans'" class="text" x="31.95" stroke="none">10</text>
+    </g>
+</svg>

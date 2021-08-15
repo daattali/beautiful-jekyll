@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 25.852 57.56"  version="1.1" y="0px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" viewBox="0 0 25.852 57.56" gorn="0" x="0px" height="0.799444in" width="0.359056in">
+    <desc>
+        <referenceFile>sparkfun-connectors_avr_icsp_pcb.svg</referenceFile>
+    </desc>
+    <g id="copper1"  gorn="0.0">
+        <g id="copper0"  gorn="0.0.0">
+            <circle id="connector0pad"  stroke-width="1.2" r="2.052" fill="none" cy="14.374" gorn="0.0.0.0" stroke="#F7BD13" cx="8.92"/>
+            <circle id="connector1pad"  stroke-width="1.2" r="2.052" fill="none" cy="14.374" gorn="0.0.0.1" stroke="#F7BD13" cx="16.121"/>
+            <circle id="connector2pad"  stroke-width="1.2" r="2.052" fill="none" cy="21.573" gorn="0.0.0.2" stroke="#F7BD13" cx="8.92"/>
+            <circle id="connector3pad"  stroke-width="1.2" r="2.052" fill="none" cy="21.573" gorn="0.0.0.3" stroke="#F7BD13" cx="16.121"/>
+            <circle id="connector4pad"  stroke-width="1.2" r="2.052" fill="none" cy="28.774" gorn="0.0.0.4" stroke="#F7BD13" cx="8.92"/>
+            <circle id="connector5pad"  stroke-width="1.2" r="2.052" fill="none" cy="28.774" gorn="0.0.0.5" stroke="#F7BD13" cx="16.121"/>
+            <circle id="connector6pad"  stroke-width="1.2" r="2.052" fill="none" cy="35.974" gorn="0.0.0.6" stroke="#F7BD13" cx="8.92"/>
+            <circle id="connector7pad"  stroke-width="1.2" r="2.052" fill="none" cy="35.974" gorn="0.0.0.7" stroke="#F7BD13" cx="16.121"/>
+            <circle id="connector8pad"  stroke-width="1.2" r="2.052" fill="none" cy="43.174" gorn="0.0.0.8" stroke="#F7BD13" cx="8.92"/>
+            <circle id="connector9pad"  stroke-width="1.2" r="2.052" fill="none" cy="43.174" gorn="0.0.0.9" stroke="#F7BD13" cx="16.121"/>
+        </g>
+    </g>
+    <g id="silkscreen"  gorn="0.1">
+        <line y2="16.174" y1="12.573"  stroke-width="0.3" x2="6.102" stroke-linecap="round" fill="none" x1="6.102" stroke="#FFFFFF"/>
+        <rect  stroke-width="0.9" y="0.435" fill="none" x="0.46" height="56.678" stroke="#FFFFFF" width="24.925"/>
+        <path  stroke-width="0.9" d="M3.577,22.826V3.552h18.691v50.947H3.577V34.721" fill="none" stroke="#FFFFFF"/>
+        <rect  stroke-width="0.9" y="22.826" fill="none" x="0.46" height="11.895" stroke="#FFFFFF" width="3.96"/>
+    </g>
+</svg>
