@@ -23,7 +23,6 @@ navbar-links:
     - Em Andamento: "projects-inprog"
     - Finalizados: "projects-done"
     - RasWeekend: "rasweekend"
-    
   Capítulos:
     - EMBS: "capitulo-EMBS"
     - PES: "capitulo-PES"
@@ -41,7 +40,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+# title-img: "/assets/img/logo_branca_simples.png"
 
 
 # --- Footer social media links --- #
@@ -206,7 +205,7 @@ date_format: "%-d de %B, %Y"
 timezone: "America/Bahia"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:title/
 paginate: 5
 
 kramdown:

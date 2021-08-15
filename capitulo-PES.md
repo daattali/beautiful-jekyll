@@ -10,10 +10,10 @@ cover-img: /assets/img/pes_cover.jpg
 A [**PES** (Power and Energy Society)](http://www.ieee-pes.org/) é a Sociedade Técnica do IEEE voltada à área de Potência e Energia. Nosso Capítulo Estudantil PES CIMATEC foi fundado em 1 de dezembro de 2017, e além da realização de projetos relacionados à essa área, organizamos workshops e promovemos visitas técnicas a Usinas Hidrelétricas, Usinas Solares, Museus e outros.
 
 #### Projetos
-- RES
+- [RES](https://ieeecimatec.github.io/project-res/)
 - [BayIEEEmax](https://ieeecimatec.github.io/project-bayieeemax/)
-- TrackIEEErs
-- Smart Energy
+- [TrackIEEErs](https://ieeecimatec.github.io/project-trackieeers/)
+- [Smart Energy](https://ieeecimatec.github.io/project-smart_energy/)
 
 [<img src="/assets/img/logo_instagram.png" alt="drawing" width="25"/> **@ieeepescimatec**](https://www.instagram.com/ieeepescimatec/)
 

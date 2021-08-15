@@ -15,9 +15,10 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
 - [BayIEEEmax](https://ieeecimatec.github.io/project-bayieeemax/)
 - [Mão Espelhada](https://ieeecimatec.github.io/project-mao_espelhada/)
 - [PetIEEE](https://ieeecimatec.github.io/project-petieee/)
-- RASpode
+- [RASpode](https://ieeecimatec.github.io/project-raspode/)
 - [Map Vision](https://ieeecimatec.github.io/project-mapvision/)
-- CompetIEEEção
+- [CompetIEEEção](https://ieeecimatec.github.io/project-competieeecao/)
+- [CertIEEEficados](https://ieeecimatec.github.io/project-certieeeficados/)
 
 #### Projetos Finalizados
 - Projeto Jabuti
@@ -38,9 +39,9 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
             <th></th>
             <th><a href="https://www.linkedin.com/in/marcella-santos-b20b42161/"><center><img src="{{ 'assets/img/voluntarios/marcella_giovanna.png' | relative_url }}" width="100" alt="Marcella" class="img-fluid rounded-circle img-blur"/></center></a></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/tayron.png' | relative_url }}" width="100" alt="tayron" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/tayron_rodrigues.png' | relative_url }}" width="100" alt="tayron" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><a href="https://www.linkedin.com/in/vitorsmends/"><center><img src="{{ 'assets/img/voluntarios/vitor.png' | relative_url }}" width="100" alt="Vitor" class="img-fluid rounded-circle img-blur"/></center></a></th>
+            <th><a href="https://www.linkedin.com/in/vitorsmends/"><center><img src="{{ 'assets/img/voluntarios/vitor_mendes.png' | relative_url }}" width="100" alt="Vitor" class="img-fluid rounded-circle img-blur"/></center></a></th>
           </tr>
         </thead>
         <tbody>
@@ -60,7 +61,7 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
             <td></td>
             <td style="vertical-align: top"><small><center>Vice-Presidente</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Tesoureiro</center></small></td>
+            <td style="vertical-align: top"><small><center>Secretário</center></small></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>-</center></small></td>

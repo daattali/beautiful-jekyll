@@ -11,12 +11,6 @@ Além disso, a ideia do projeto é que ele possa ser utilizado pelos voluntário
 #### Como surgiu?
 A ideia do projeto surgiu a partir do [I3E-D2](https://ieeecimatec.github.io/project-i3e_d2/), um robô bastante simples (inspirado no R2D2), construído por nós há alguns anos, e apresentado no IEEE DAY 2018. Então, ao fim de 2019, resolvemos projetar um robô mais complexo, autônomo e com mais funcionalidades.
 
-#### Funcionalidades implementadas:
-- Teleoperação
-- Localização
-- Mapeamento
-- Navegação Autônoma
-- Exploração
 
 ### Equipe de desenvolvimento
 <div class="row">
