@@ -4,7 +4,9 @@ layout: page
 
 # exclude_categories: [ array, of, cats, to, exclude ]
 # include_categories: [ array, of, cats, to, include ]
-
+#
+# As well as:
+# exclude_uncategorized: boolean
 # If include is given, mode is treated as whitelist, and exclude ignored.
 ---
 
@@ -49,7 +51,9 @@ layout: page
       {% assign posts = posts | push: post %}
     {% endif %}
   {% else %}
-    {% assign posts = posts | push: post %}
+    {% unless page.exclude_uncategorized %}
+      {% assign posts = posts | push: post %}
+    {% endunless %}
   {% endif %}
 {% endfor %}
 
