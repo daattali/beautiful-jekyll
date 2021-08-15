@@ -1,38 +1,41 @@
 ---
 layout: page
-title: I3E-D3
-subtitle: Projeto I3E-D3
+title: JarvIEEEs
+subtitle: Nosso assistente pessoal
+cover-img: /assets/img/jarvieees/jarvieees-cover.jpg
 ---
 
-#### O que é o I3E-D3?
-O I3E-D3 será o mascote do IEEE CIMATEC, um robô autônomo que servirá também como ferramenta de marketing para nosso Ramo
-Além disso, a ideia do projeto é que ele possa ser utilizado pelos voluntários da RAS para o aprendizado de robótica em uma plataforma física, implementando novas funcionalidades ao robô.
-
-#### Como surgiu?
-A ideia do projeto surgiu a partir do [I3E-D2](https://ieeecimatec.github.io/project-i3e_d2/), um robô bastante simples (inspirado no R2D2), construído por nós há alguns anos, e apresentado no IEEE DAY 2018. Então, ao fim de 2019, resolvemos projetar um robô mais complexo, autônomo e com mais funcionalidades.
+A ideia do projeto surgiu do assistente pessoal do Homem de Ferro, o J.A.R.V.I.S. Nosso JarvIEEES tem como objetivo principal ser um assistente pessoal para nosso Ramo, podendo ser utilizado futuramente para uma automação em nossa Sede. A ideia é que ele também seja utilizado para controle de robôs através de voz, como por exemplo em nosso [I3E-D3](https://ieeecimatec.github.io/project-i3e_d3/)
 
 
-### Equipe de desenvolvimento
+### Equipe de Desenvolvimento
 <div class="row">
   <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
     <div class="mobile-side-scroller">
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><a href="https://www.linkedin.com/in/felipe-mohr-a9922a15a"><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url}}" width="100" alt="felipe" class="img-fluid rounded-circle" /></center></a></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/caio_oliva.png' | relative_url }}" width="100" alt="caio" class="img-fluid rounded-circle img-blur"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/leonardo_nomoto.png' | relative_url }}" width="100" alt="leonardo" class="img-fluid rounded-circle" /></center></th>
+            <th></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/fernando_junior.png' | relative_url }}" width="100" alt="fernando" class="img-fluid rounded-circle"/></center></th>
+            <th></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/gabriel_calmon.png' | relative_url }}" width="100" alt="gabriel" class="img-fluid rounded-circle" /></center></th>
           </tr>
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="50%"><center>Felipe Mohr</center></td>
+            <td width="33%"><center>Leonardo Nomoto</center></td>
             <td></td>
-            <td width="50%"><center>Caio Oliva</center></td>
+            <td width="33%"><center>Fernando Junior</center></td>
+            <td></td>
+            <td width="33%"><center>Gabriel Calmon</center></td>
           </tr>
           <tr style="text-align: center" >
-            <td style="vertical-align: top"><small><center>Voluntário desde 2018 <p/> Líder do projeto</center></small></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2020 <p/> Líder do projeto</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2019</center></small></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
           </tr>
         </tbody>
       </table>

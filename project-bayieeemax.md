@@ -88,7 +88,7 @@ Durante a execução do projeto será construído um modelo em um software de mo
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/caio_oliva.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/caio_oliva.png' | relative_url }}" width="100" alt="caio" class="img-fluid rounded-circle" /></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/yan_valdez.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
           </tr>

@@ -21,9 +21,9 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
 - [CertIEEEficados](https://ieeecimatec.github.io/project-certieeeficados/)
 
 #### Projetos Finalizados
-- Projeto Jabuti
-- I3E-D2
-- JarvIEEEs
+- [Projeto Jabuti](https://ieeecimatec.github.io/project-certieeeficados/)
+- [I3E-D2](https://ieeecimatec.github.io/project-i3e_d2/)
+- [JarvIEEEs](https://ieeecimatec.github.io/project-jarvieees/)
 
 [<img src="/assets/img/logo_instagram.png" alt="drawing" width="25"/> **@ieeerascimatec**](https://www.instagram.com/ieeerascimatec/)
 

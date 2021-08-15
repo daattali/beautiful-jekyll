@@ -1,7 +1,8 @@
 ---
 layout: page
 title: I3E-D3
-subtitle: Projeto I3E-D3
+subtitle: Um mascote para nosso IEEE
+cover-img: /assets/img/i3ed3/i3ed3-cover.png
 ---
 
 #### O que é o I3E-D3?
@@ -25,8 +26,9 @@ A ideia do projeto surgiu a partir do [I3E-D2](https://ieeecimatec.github.io/pro
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><a href="https://www.linkedin.com/in/felipe-mohr-a9922a15a"><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url}}" width="100" alt="felipe" class="img-fluid rounded-circle" /></center></a></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/caio_oliva.png' | relative_url }}" width="100" alt="caio" class="img-fluid rounded-circle img-blur"/></center></th>
+            <th><a href="https://www.linkedin.com/in/felipe-mohr-a9922a15a"><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url}}" width="100" alt="felipe" class="img-fluid rounded-circle blur-img" /></center></a></th>
+            <th></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/caio_oliva.png' | relative_url }}" width="100" alt="caio" class="img-fluid rounded-circle" /></center></th>
           </tr>
         </thead>
         <tbody>
