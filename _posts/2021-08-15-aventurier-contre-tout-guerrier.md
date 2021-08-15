@@ -10,7 +10,7 @@ tags: [medecin, blessure, sport]
 
 Un jour je devais juste passer chez ma médecin pour un certificat médical.
 
-Premier problème ma doc habituelle n'est pas là. JE suis assez habitué, c'est une médecin formatrice et très souvent c'est un de ses interne qui s'occupe des patients. Je suis tout à fait pour la formation des internes en vraies conditions de terrain. Sauf que là la condition de terrain c'était moi… et clairement l'interne, elle était pas prête à ça.
+Premier problème ma doc habituelle n'est pas là. Je suis assez habitué, c'est une médecin formatrice et très souvent c'est un de ses interne qui s'occupe des patients. Je suis tout à fait pour la formation des internes en vraies conditions de terrain. Sauf que là la condition de terrain c'était moi… et clairement l'interne, elle était pas prête à ça.
 
 Bon j'arrive. Salle d'attente. Elle me fait rentrer. Jusqu'ici tout va bien.
 
@@ -26,19 +26,19 @@ Clairement elle n'était pas prête.
 
 Alors il doit y avoir un truc pendant les études de médecine où on traumatise les futurs médecins avec le concept d'antécédents médicaux. Donc j'étais bon pour un interrogatoire complet, un prélèvement de peau, de sang, de larme… ce que vous voulez pourvu que la pauvre arrête de dévorer son crayon comme un castor affamé !
 
-Après quelques questions de routine, elle commence à regarder mes yeux avec la lumière, vous savez le machin pour vérifier si nos pupilles réagissent. Et là elle me fait « Ah c'est étrange vos pupille réagissent AVANT que je mettent la lumière ! ». Et moi je lui répond juste « Bah oui je savais que vous alliez me mettre la lumière dans l'œil alors j'ai contracté ma pupille avant histoire de pas en prendre plein la gueule. » Apparemment les pupilles c'est juste des machins réflexe, on est pas sensé les contrôler "volontairement"[^oeil]. Ce genre de réponse c'est pas bon pour la pression artérielle, en tout cas pas pour notre médecin écureuil accro à la caféïne.
+Après quelques questions de routine, elle commence à regarder mes yeux avec la lumière, vous savez le machin pour vérifier si nos pupilles réagissent. Et là elle me fait « *Ah c'est étrange vos pupille réagissent AVANT que je mettent la lumière !* ». Et moi je lui répond juste « *Bah oui je savais que vous alliez me mettre la lumière dans l'œil alors j'ai contracté ma pupille avant histoire de pas en prendre plein la gueule.* » Apparemment les pupilles c'est juste des machins réflexe, on est pas sensé les contrôler "volontairement"[^oeil]. Ce genre de réponse c'est pas bon pour la pression artérielle, en tout cas pas pour notre médecin écureuil accro à la caféïne.
 
 Et là elle a vu que j'avais une cicatrice à l'œil. Elle tenait enfin un truc simple à me demander...
 
 Clairement elle n'était pas prête.
 
-![](https://zippy.gfycat.com/CharmingUnripeGalapagossealion.mp4){: width="100%" }
+![](https://c.tenor.com/Xx2zB4IKSLQAAAAC/oprah-suspicious.gif){: width="100%" }
 
 « Avez-vous déjà eu des blessures ou des points de suture ?
 — oui 36 à la tête.
 — qu'est-ce que... what ? »
 
-![](https://zippy.gfycat.com/InfantileDistortedGroundbeetle.mp4){: width="100%" }
+![](https://c.tenor.com/Kw-XzSZu8q4AAAAC/wtf-britney-spears.gif){: width="100%" }
 
 J'ai commencé assez jeune, avec une tentative plus ou moins volontaire de briser un bloc de béton avec la tête (le béton à gagné… je pense que c'est un complot de Bouygues !).
 
@@ -59,11 +59,11 @@ Je me suis fraturé une cervicale en sautant devant ma propre planche à voile �
 
 Petit écureuil demande si je n'ai pas eu de séquelle. « Nan pas particulièrement, mais mon coup fait un peu "cloc cloc" depuis. »
 
-![](https://zippy.gfycat.com/GlassPerfumedAmericanlobster.mp4){: width="100%" }
+![](https://c.tenor.com/78IzlUEem6gAAAAd/alrighty-then-ugh.gif){: width="100%" }
 
 Pour la colonne là c'est une virage en roller négocié "imparfaitement" qui a eu raison de moi. Il y a eu un lampadaire d'impliqué mais je ne l'ai absolument pas touché : arrivant un peu vite en bas de descente, j'ai tourné vers une petite place où j'aurais l'opportunité de freiner comme il faut. Une fois encore l'idée était bonne mais la réalisation a laissé à désirer : ma trajectoire s'est trouvée fortement perturbée par la présence inopinée d'un lampadaire. Vous savez les vieux modèles parisiens bien large et recouvert de cette peinture un peut vert sale mais surtout qui semble contenir plus de sable que de pigment… ça donne cette jolie texture "papier de verre industriel". En terme de partenaire de collision ça se situe entre la ponceuse et le semi-remorque. J'ai donc eu la présence d'esprit d'éviter l'obstacle. C'est juste mon choix de stratégie qui peut laisser à désirer : j'ai sauté. C'est con car le lampadaire faisait bien 6~8 mètres de haut. Me rendant compte de mon erreur d'approche j'ai immédiatement mis en place les contre-mesure adéquates : j'ai décidé d'enrouler mon corps autour du machin histoire de ne pas le toucher. Je me suis dit « en l'air ça doit passer ». Et ben vous savez quoi ? Ça a marché !
 
-![](https://giant.gfycat.com/HalfParchedBlackwidowspider.mp4){: width="100%" }
+![](https://c.tenor.com/j_ijiBkU2a8AAAAd/title-victory.gif){: width="100%" }
 
 …bon par contre j'avais été un peu entousiaste au moment de sauter : me voilà donc "enroulé autour d'un lampadaire" à l'horizontale (et sans touché le lampadaire !) mais à en gros 1m20 du sol. La lois de la gravitation universelle, tout comme le trottoire, est dure. Je suis tombé bien à plat sur le dos. Crac.
 
@@ -79,7 +79,7 @@ Elle n'était pas prête…
 — Ah oui…
 — et des fois on joue avec des bâtons et c'est là qu'il m'arrive de me fracturer un doigt ou deux. »
 
-![](https://i.giphy.com/media/26u4cHCELkqLF5qY8/giphy.mp4){: width="100%" }
+![](https://c.tenor.com/qVUdZ1fkYwMAAAAd/stick-fight-gina-rodriguez.gif){: width="100%" }
 
 Bon là j'ai senti que je devais la rassurer car elle commençait à me regarder comme un genre de zombie. Mais je pense que je n'ai pas trouvé les bons mots :
 
