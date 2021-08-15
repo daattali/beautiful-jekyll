@@ -22,7 +22,7 @@ navbar-links:
   Projetos:
     - Em Andamento: "projects-inprog"
     - Finalizados: "projects-done"
-    - RasWeekend: "rasweekend"
+    - RasWeekend: "rasweekends"
   Capítulos:
     - EMBS: "capitulo-EMBS"
     - PES: "capitulo-PES"
@@ -102,7 +102,7 @@ feed_show_tags: true
 post_search: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "IEEE CIMATEC,Ramo Estudantil,IEEE,CIMATEC"
 
 # --- Colours / background image --- #
 
@@ -162,7 +162,7 @@ footer-link-col: "#002855"
 # --- Comments --- #
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+disqus: "ieee-cimatec"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
