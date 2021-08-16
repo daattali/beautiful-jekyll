@@ -149,6 +149,10 @@ This screenshot shows what it should look like:
 
 ![](/resources_pages/imgs/windows-terminal-gitbash.png)
 
+> **Note:** **Whenever we refer to "the terminal" in these installation instructions,
+we want you to use the Windows Terminal that you just installed with the Git Bash profile.**
+Do **not** use Windows PowerShell, CMD, or anything else unless explicitly instructed to do so.
+
 To open a new tab you can click the plus sign or use `Ctrl + Shift + t`
 (you can close a tab with `Ctrl + Shift + w`).
 To copy text from the terminal,
@@ -193,7 +197,7 @@ git version 2.32.0.windows.2
 > **Note:** Some of the Git commands we will use are only available since Git 2.23,
 so make sure your if your Git is at least this version.
 
-You can launch many windows programs from the Bash terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
+You can launch many windows programs from the terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
 
 ```
 code --version
