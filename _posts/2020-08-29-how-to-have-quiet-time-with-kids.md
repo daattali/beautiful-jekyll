@@ -48,11 +48,9 @@ My younger two usually play with one another and look at books..and sometimes sn
 
 While my kids do quiet time, I'm usually resting, praying, reading, and then working. I'm doing things like answering emails, listening to music with the odd interruption here and there. And don’t take it just from me, [here’s a blog](https://blog.outschool.com/quiet-time-benefits/) that goes over the research of the benefits of quiet time for kids. Fascinating!
 
-### FREE QUIET TIME TEMPLATE
+### FREE QUIET TIME ROUTINE TEMPLATE
 
-_I also put together a step by step simple template for quiet time if you'd like that too._
-
-_Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
+_I also put together a step by step simple template for quiet time if you'd like that too. You can find that free quiet time routine template_ [_HERE_](https://mailchi.mp/05810388ff4a/quiet-time-freebie)_. It goes over some questions to get you thinking about what you'd like quiet time to look like in your home. Enjoy!_
 
 **Other blogs of mine you may enjoy too:**
 
