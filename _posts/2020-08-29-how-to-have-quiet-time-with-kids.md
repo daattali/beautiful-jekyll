@@ -16,7 +16,6 @@ redirect_from:
 - 2020-08-29-how-to-have-quiet-time-with-kids
 
 ---
-
 I don't know about you, but by the time I'm done lunch, I'm pooped. My ears. My body. My everything just needs some down time. I have four children, two with higher demands as they are both under five, so quiet time is so importat for us. And we take that time every afternoon. We call it "quiet time" in our house. Today on the blog, I'm sharing with you how to have a quiet time routine with kids.
 
 ![A kid sitting at the table thinking.](/uploads/quiettime.jpg "quiettime")
@@ -51,14 +50,14 @@ While my kids do quiet time, I'm usually resting, praying, reading, and then wor
 
 ### FREE QUIET TIME TEMPLATE
 
-_I also put together a step by step simple template for quiet time if you'd like that too._ 
+_I also put together a step by step simple template for quiet time if you'd like that too._
 
 _Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
-
-(Blog updated July 2021)
 
 **Other blogs of mine you may enjoy too:**
 
 * [Setting Boundaries Around Bedtime Routines](https://www.simplehomemom.com/setting-boundaries-around-bedtime-routines/)
 * [How to Create a Calm Bedtime Routine](https://www.simplehomemom.com/how-to-create-a-calm-bedtime-routine/)
 * [How to Create a Daily Rhythm at Home](https://www.simplehomemom.com/how-to-create-a-daily-rhythm-at-home/)
+
+(Blog updated August 2021)
