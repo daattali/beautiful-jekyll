@@ -149,8 +149,8 @@ This screenshot shows what it should look like:
 
 ![](/resources_pages/imgs/windows-terminal-gitbash.png)
 
-> **Note:** **Whenever we refer to "the terminal" in these installation instructions,
-we want you to use the Windows Terminal that you just installed with the Git Bash profile.**
+> **Note:** Whenever we refer to "the terminal" in these installation instructions,
+we want you to use the Windows Terminal that you just installed with the Git Bash profile.
 Do **not** use Windows PowerShell, CMD, or anything else unless explicitly instructed to do so.
 
 To open a new tab you can click the plus sign or use `Ctrl + Shift + t`
