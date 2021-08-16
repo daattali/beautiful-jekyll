@@ -419,7 +419,7 @@ Append the following lines to the file
 # Automatically expand the R version number
 R_DIR=(/c/Program\ Files/R/*/bin/x64)
 # Add R and Rscript to PATH
-export PATH="${R_DIR}:$PATH
+export PATH="${R_DIR}:$PATH"
 ```
 
 Then save the file and exit VS Code.
@@ -711,7 +711,7 @@ And replace the section that reads:
 
 ```
 # Add R and Rscript to path
-export PATH="${R_DIR}:$PATH
+export PATH="${R_DIR}:$PATH"
 ```
 
 with the following to prepend make's bin folder to the PATH
@@ -720,7 +720,7 @@ so you don't need to replace it manually.
 
 ```
 # Add R, Rscript, and Make to path
-export PATH="/c/Users/${USERNAME}/make-4.3/bin":${R_DIR}:$PATH
+export PATH="/c/Users/${USERNAME}/make-4.3/bin:${R_DIR}:$PATH"
 ```
 
 Then save the file and exit VS Code.
