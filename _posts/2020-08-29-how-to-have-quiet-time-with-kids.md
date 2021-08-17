@@ -2,7 +2,7 @@
 layout: post
 title: How to Have a Quiet Time Routine with Kids
 description: Simple tips to instill a quiet time with kids at home every day.
-subtitle: ''
+subtitle: "+ free quiet time routine template"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
 share-img: "/assets/img/path.jpg"
@@ -47,6 +47,22 @@ My oldest two boys:
 My younger two usually play with one another and look at books..and sometimes sneak away to find snacks. ha! After this time, they watch a couple shows usually.
 
 While my kids do quiet time, I'm usually resting, praying, reading, and then working. I'm doing things like answering emails, listening to music with the odd interruption here and there. And don’t take it just from me, [here’s a blog](https://blog.outschool.com/quiet-time-benefits/) that goes over the research of the benefits of quiet time for kids. Fascinating!
+
+#### Other quiet time ideas for kids:
+
+* audiobooks
+* quiet play
+* tidying up
+* reading
+* listening to music
+* watching a show or two
+* special quiet time box
+
+I also found a blog for more ideas for preschoolers and toddlers [here](https://toddlerapproved.com/2021/05/quiet-time-activities-for-toddlers-and-preschoolers.html).
+
+**Save for future reference:**
+
+![A boy reading a book on a bed.](/uploads/how-to-have-a-quiet-time-routine-with-kids-shm.jpg "How to Have a Quiet Time Routine with Kids SHM")
 
 ### FREE QUIET TIME ROUTINE TEMPLATE
 
