@@ -87,7 +87,7 @@ Bon là j'ai senti que je devais la rassurer, car elle commençait à me regarde
 
 Elle m'a répondu : « Vous êtes conscient que le problème ne semble pas être les sports mais plutôt vous ? »
 
-OH COME ON
+![](https://c.tenor.com/eaX_h3phFG0AAAAC/jim-carrey-ohcome-on.gif){: width="100%" }
 
 Petit écureuil : « Vous semblez avoir assez peu de respect pour votre propre intégrité physique… » </br>
 Moi : «…je préfère le terme d'aventurier… mais je vous laisse le formuler comme vous voulez.»
