@@ -28,7 +28,7 @@ avatar: "/assets/img/avatar-icon.png"
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
-baseurl: "/huanpv"
+baseurl: "huantianh.github.io"
 url: "https://huantianh.github.io"
 
 
