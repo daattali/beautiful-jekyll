@@ -34,8 +34,8 @@ Clairement elle n'était pas prête.
 
 ![](https://c.tenor.com/Xx2zB4IKSLQAAAAC/oprah-suspicious.gif){: width="100%" }
 
-« Avez-vous déjà eu des blessures ou des points de suture ? </br>
-— oui 36 à la tête. </br>
+« Avez-vous déjà eu des blessures ou des points de suture ? \\
+— oui 36 à la tête. \\
 — qu'est-ce que... what ? »
 
 ![](https://c.tenor.com/Kw-XzSZu8q4AAAAC/wtf-britney-spears.gif){: width="100%" }
@@ -48,7 +48,7 @@ Je l'ignore et je continue… j'évoque mon utilisation d'un agrafeuse-clouteuse
 
 Là clairement j'ai failli la perdre. Mais les obligations de son métier l'ont sauvée : le questionnaire n'était pas fini et elle a pu changer de sujet.
 
-« Est-ce que vous avez eu des fractures aussi ? </br>
+« Est-ce que vous avez eu des fractures aussi ? \\
 — oh oui ! Une à une cervicale… une grosse à la colonne… une bonne dizaine aux orteils… 2 ou 3 aux doigts. »
 
 Mon enthousiasme me sembla peu communicatif.
@@ -73,10 +73,10 @@ Elle n'était pas prête…
 
 …mais elle demanda quand même « Et les orteils, les doigts tout ça ? »
 
-« Oh ça c'est surtout à la capoeira… </br>
-— …la quoi ? </br>
-— L'art martial brésilien pour lequel je vous demande un certificat ! </br>
-— Ah oui… </br>
+« Oh ça c'est surtout à la capoeira… \\
+— …la quoi ? \\
+— L'art martial brésilien pour lequel je vous demande un certificat ! \\
+— Ah oui… \\
 — et des fois on joue avec des bâtons et c'est là qu'il m'arrive de me fracturer un doigt ou deux. »
 
 ![](https://c.tenor.com/qVUdZ1fkYwMAAAAd/stick-fight-gina-rodriguez.gif){: width="100%" }
@@ -89,7 +89,7 @@ Elle m'a répondu : « Vous êtes conscient que le problème ne semble pas être
 
 ![](https://c.tenor.com/eaX_h3phFG0AAAAC/jim-carrey-ohcome-on.gif){: width="100%" }
 
-Petit écureuil : « Vous semblez avoir assez peu de respect pour votre propre intégrité physique… » </br>
+Petit écureuil : « Vous semblez avoir assez peu de respect pour votre propre intégrité physique… » \\
 Moi : «…je préfère le terme d'aventurier… mais je vous laisse le formuler comme vous voulez.»
 
 Elle a ri… beaucoup.
