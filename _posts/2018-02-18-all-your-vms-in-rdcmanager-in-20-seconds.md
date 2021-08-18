@@ -4,7 +4,11 @@ published: true
 title: All your VMs in RDCManager in 20 seconds
 ---
 ```
-[ Update 201808/17 ]
+[ EDIT 2021/08/18 ]
+
+RDCMan suffered security flaws up until version 2.7 and Microsoft recommended against using it. RDC Manager 2.8 has been released in July 2021 and is now safe to use. Note that it is now part of the Sysinternals suite. Do not use version older than 2.8. (Links updated)
+
+[ Update 2018/08/17 ]
 
 - Added 3389 TCP port check on VM IP(s) - Set the first one the responds as hostname and "NO-RDP-RESPONSE" if none does.
 
@@ -17,7 +21,7 @@ I recently started a new job and just like in my previous one I wanted to have a
 
 The script below will create an RDG file you can use in RDCMan that will contain all the Windows VMs of the vCenter your are connected to. The VMs that are powered off or don't have VMware tools running won't be processed as PowerCLI won't be able to fetch the host name and IP (non Windows VMs are excluded for obvious reasons).
 
-Download RDC Man here : [**Remote Desktop Connection Manager**](https://www.microsoft.com/en-us/download/details.aspx?id=44989)
+Download RDC Man here : [**Remote Desktop Connection Manager**](https://docs.microsoft.com/en-us/sysinternals/downloads/rdcman)
 
 Download the module here: [**RDCMan.psm1**](https://github.com/vxav/Scripting/blob/master/Rdcman.psm1)
 
