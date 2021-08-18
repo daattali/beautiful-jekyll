@@ -7,6 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
+* [How to Have a Quiet Time Routine with Kid + free quiet time routine template](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/)
 * **JUST LAUNCHED:** [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
