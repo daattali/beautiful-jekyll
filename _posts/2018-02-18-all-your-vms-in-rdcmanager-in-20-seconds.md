@@ -8,6 +8,11 @@ title: All your VMs in RDCManager in 20 seconds
 
 RDCMan suffered security flaws up until version 2.7 and Microsoft recommended against using it. RDC Manager 2.8 has been released in July 2021 and is now safe to use. Note that it is now part of the Sysinternals suite. Do not use version older than 2.8. (Links updated)
 
+[ Updates 2019/03/17 & 2019/11/07 ]
+    - Bug fix - The RDG file must be opened at least once before running the set command to update it
+    - [Set-RDCManFile] Adds new VMs and new domains to an existing file.
+    - Added Function Set-RDCManFile.
+
 [ Update 2018/08/17 ]
 
 - Added 3389 TCP port check on VM IP(s) - Set the first one the responds as hostname and "NO-RDP-RESPONSE" if none does.
@@ -55,6 +60,5 @@ Sometimes you forget to edit RDCMan when added a new VM or changed an IP and it 
 
 I personally created one file per vCenter and I open them all in RDCMan. It gives me a nicely organized structure.
 
-**Note**: At the moment it does not update a file so if you run it against and existing rdg file it will overwrite it. You will then need to recreate your creds and your physical servers. I may add the feature in the future but I'd need to do the xml bit properly and I'm not too fussed about it for now...
 
 **Note2**: If you get an error about an unsupported special character when opening the file please tell me via the contact form so I can update it. a covered a few of them but I'm sure there'll be others.
