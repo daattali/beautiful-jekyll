@@ -7,6 +7,8 @@ published: false
 ---
 This session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life.
 
+![](/uploads/simple-homeschooling-shm.jpg)
+
 #### **TOPICS COVERED**
 
 * Values and priorities of your homeschool life
@@ -17,9 +19,11 @@ This session will help simplify your homeschool life by showing you how to exami
 * Areas of frustration/going forward
 * Resources
 
+![An image overview of the course.](/uploads/simplify-your-homeschool-life-workshop.jpg "Simplify Your Homeschool Life Workshop")
+
 ##### What's included:
 
-* A 30ish minute video workshop 
+* A 30ish minute video workshop
 * 3 pages of quick notes of the workshop with more resources to dive into
 * Free bonus worksheet: 10 Questions to Help You Simplify Your Homeschool Life
 
