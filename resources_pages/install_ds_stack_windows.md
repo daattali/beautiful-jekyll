@@ -469,7 +469,7 @@ And type in `R_USER` as the "Variable name" and `C:\Users\username` as the "Vari
 
 ![](/resources_pages/imgs/new-user-var-values.png)
 
-Click "OK" on all of the three windows we opened above and you're done! If you open the console in RStudio and also R from a terminal (open Windows Terminal, type `R`, and then press `enter`) and type the following in both:
+Click "OK" on all of the three windows we opened above and you're done! If you open the console in RStudio and also R from the Windows Terminal (open Windows Terminal, type `R`, and then press `enter`) and type the following in both:
 
 ```
 .libPaths()
@@ -525,7 +525,7 @@ If you get a prompt asking if you want to install packages that need compilation
 
 ### IRkernel
 
-The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from a terminal** (not R Studio) and run the setup via the following two commands:
+The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from the Windows Terminal** (not R Studio) and run the setup via the following two commands:
 
 ```
 install.packages('IRkernel')
