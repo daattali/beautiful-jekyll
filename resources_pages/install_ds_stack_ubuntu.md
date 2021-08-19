@@ -521,8 +521,8 @@ Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF
 ## PostgreSQL
 
 We will be using PostgreSQL as our database management system.
-The Ubuntu repositories contain PostgreSQL 12,
-in MDS we will be using PostgreSQL 13,
+The Ubuntu repositories contain PostgreSQL 12.x,
+in MDS we will be using PostgreSQL 13.x,
 so you need to follow the instructions in the PostgreSQL documentation
 to [first add the their repository
 and then install the latest version](https://www.postgresql.org/download/linux/ubuntu/).
@@ -536,7 +536,8 @@ but for now run the following to confirm that your installation was successful:
 sudo su -c psql postgres
 ```
 
-The above should yield the prompt to change to what is shown below:
+The above should yield the prompt to change to what is shown below
+(the exact minor version does not matter as the major version is 13):
 
 ```
 psql (13.3 (Ubuntu 13.3-1))
