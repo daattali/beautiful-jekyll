@@ -469,7 +469,7 @@ And type in `R_USER` as the "Variable name" and `C:\Users\username` as the "Vari
 
 ![](/resources_pages/imgs/new-user-var-values.png)
 
-Click "OK" on all of the three windows we opened above and you're done! If you open R from terminal (type `R` and then press `enter`) and Rstudio and type the following in both:
+Click "OK" on all of the three windows we opened above and you're done! If you open the console in RStudio and also R from a terminal (open Windows Terminal, type `R`, and then press `enter`) and type the following in both:
 
 ```
 .libPaths()
@@ -685,7 +685,7 @@ Jupyter recently added another way to export notebooks to PDF
 which does not require Latex
 and makes the exported PDF look similar to notebooks exported to HTML.
 This requires the `pyppeteer` package,
-which we can install as follows.
+which we can install by typing the following into Windows Terminal.
 
 ```bash
 conda install pyppeteer=0.2.2
