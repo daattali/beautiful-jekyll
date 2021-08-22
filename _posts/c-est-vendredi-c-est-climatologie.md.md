@@ -312,11 +312,14 @@ Dans tous les cas elle est toujours perpendiculaire au mouvement : elle te fait 
 
 Mais… on est tous sur Terre ! On devrait le sentir tout le temps !!! On devrait le voir partout ! Sauf que non ! Pourquoi ?
 
-Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effet notable si tu bouge pas trop vite, sur de longue distance et que tu résiste pas trop… les vents et les courants marins ça marche. À la rigueur si tu es tireur d'élite et que tu tires à plus d'1km de distance tu commence à devoir bien te faire chier car ta balle se décale avec la force de Coriolis…
+Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effet notable si tu bouge pas trop vite, sur de longue distance et que tu résiste pas trop… les vents et les courants marins ça marche. À la rigueur si tu es tireur d'élite et que tu tires à plus d'1km de distance tu commence à devoir bien te faire chier car ta balle se décale avec la force de Coriolis[^kyudo][^punk]…
 
 
+
+[^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
+[^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NDMyODEwNyw1OTQxNjAxNDMsLTgyMj
-A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
-NF19
+eyJoaXN0b3J5IjpbLTEyNzEwNjYyNDQsNTk0MTYwMTQzLC04Mj
+IwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4
+NjRdfQ==
 -->
