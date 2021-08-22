@@ -358,10 +358,17 @@ Or on vient de voir que les anti-cyclones sont plutôt sec et le dépression hum
 
 J'ajouterai (alors que ça figure pas sur le schema) : les pôles 👉 anticyclone (on a une forte pression car l'air froid retombe là) 👉 sec (eh oui aux pôle contrairement à une croyance populaire il ne neige quasiment jamais, c'est tout sec…les seuls morceaux de glace qu'on prend dans la gueule c'est ceux arraché au sol par les vent de ouf des pôles)
 
+C'est déjà assez énorme : on a retrouvé les principaux climats de la planète !!!
+
+Bon il y a encore des petits souci : les tropique c'est pas toujours sec… des fois c'est humide… et on a pas parlé de climat continental[^continental] (alors qu'on nous rabat les oreilles avec ça au collège !).
+
+
+
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
+[^continental]: Il est vrai que Berlin et Nantes c'est pas vraiment le même climat…
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MjkzNDQ2MiwxOTEzOTIzMjI0LDU5ND
-E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
-LC0yMDI0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbLTE0ODE0MzM5NDEsMTkxMzkyMzIyNCw1OT
+QxNjAxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUw
+NSwtMjAyNDkyNTg2NF19
 -->
