@@ -241,11 +241,25 @@ Bon par contre pas de bol celle-là n'a quasi aucun effet sur le climat 😅 à 
 
 ![…je le remet pour le plaisir, j'adore le voir galérer \<rire dément de méchant de James Bond\>](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
 
-
-
 Allons donc voir ailleurs si la pseudo-force qui nous manque y est !
+
+### Deuxième souvenir d'enfance : le manège !
+
+Un manège c'est le niveau au dessus du tourniquet. Déjà il tourne tout seul pas besoin de le lancer soi-même. Ensuite il y a des chevaux (rien à voir avec la latitude du même nom), des voitures, des carrosses et plein d'autre montures fantastique.
+
+\<PYM aime les manèges\>
+
+Mais bon quand on est gamins, on a beau nous dire de rester sur notre cheval/voiture/canard en bois… quand, comme moi vous êtes un gros punk, dès que les adultes avait la tête tournée 👉 zoooouuuuuuu tu change de monture !
+
+Sauf que…
+
+…là tu remarques que te déplacer du cheval A au hérisson clignotant B s'avère bordel plus compliqué. Même pire : c'est bordel plus compliqué sa mère. Pire : c'est nomdidiou plus compliqué sa grand-mère la fille de joie !
+
+Mais pourquoi donc, mon cruel ?!
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NzQ5NzgzMiw1OTQxNjAxNDMsLTgyMj
+eyJoaXN0b3J5IjpbMTc2MDA3NTkxMyw1OTQxNjAxNDMsLTgyMj
 A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
 NF19
 -->
