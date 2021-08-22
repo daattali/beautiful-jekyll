@@ -412,14 +412,25 @@ Ah… oui… bon. Expliquons un peu le machin.
 
 Si vous avez des radiateur chez vous, soit c'est des radiateurs électriques (et là bon courage niveau facture car c'est pas mais alors pas rentable du tout…) soit vous avez des radiateur à l'ancienne avec des tuyaux et tout (c'est souvent pour ça qu'on installe des radiateur électriques : on évite le passage de plein de tuyaux partout… les radiateurs électriques c'est juste un p'tits fil électrique et hop).
 
+On va s'intéresser aux radiateurs à l'ancienne, dit "à circulation d'eau". Vous êtes vous jamais demandé pourquoi on faisait circuler de l'eau dedans ? On pourrait utiliser plein d'autres trucs que de l'eau qui est une ressource utile pour plein d'autres truc : pour boire, pour l'irrigation, le nettoyage, la cuisine… Pourquoi ne pas utiliser de l'huile (usagée par exemple), ou de l'alcool ?
 
+Et bien de tous les liquides facilement disponibles l'eau est celle qui conserve le mieux la chaleur. On dit qu'elle a une inertie thermique élevée : si elle est chaude, elle reste chaude très longtemps et diffuse sa chaleur longtemps.
+
+On retrouve le même comportement pour certain matériaux solide : la brique ou la pierre ont une excellente inertie thermique par rapport au béton. C'est pour ça que les vieille maison "rayonne de la chaleur" en fin de journée l'été. Bon par contre c'est a double tranchant : l'eau garde super bien le froid aussi ! (idem pour la pierre et la brique : l'hiver dans les vieille maison il fait super froid même si il y a du soleil !!!)
+
+Pour info : on mesure l'inertie thermique d'un truc grâce un un chiffre la capacité thermique massique. Ça se mesure en Joule par Kelvin par kilogramme. Voilà.
+
+Et c'est utile pour le climat ça ? Oui énormément !
+
+![Nan mais il fallait me dire que Perceval était dans la salle !](https://c.tenor.com/wS9l25RT9gAAAAAC/cest-pas-faux.gif){: width="100%" }
+https://c.tenor.com/Drz_x_HhZXkAAAAC/yeah-baby-oh-yeah-baby.gif
 
 [^polemethane]: Si on avait des océans de méthane (comme sur Titan) ou d'huile (nan là sorry j'ai pas d'exemple…) il n'y aurait pas de glace de méthane ou d'huile au pôle car elle coulerait !
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTA4ODEwNCwxOTEzOTIzMjI0LDU5ND
-E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
-LC0yMDI0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbLTIxMzI2OTEyMjYsMTkxMzkyMzIyNCw1OT
+QxNjAxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUw
+NSwtMjAyNDkyNTg2NF19
 -->
