@@ -8,8 +8,11 @@ thumbnail-img: /assets/img/chalk-board-physics-thumb.jpg
 layout: post
 tags: [someone was wrong, sciences, physique, geographie, climat]
 ---
-"Comment ça fonctionne le climat des région du monde ?"
 
+« *Comment ça fonctionne le climat des région du monde ?* »\\
+**-- Z.**
+
+Voilà ce qu'on m'a posé la question et bon bah comme d'hab' je vais essayer d'y répon… quoi ?! On me l'a pas vraiment demandé ?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNzIzMzExMSwtNzA0OTEwMDAzXX0=
+eyJoaXN0b3J5IjpbODAyNjAyOTksLTcwNDkxMDAwM119
 -->
