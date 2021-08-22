@@ -84,12 +84,17 @@ Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses
 
 C'est bien l'inclinaison qui fait la différence de température épicétou !
 
-Alors si la Terre ne tournait pas sur son axe ça serait vraiment la merde car on aurait une face cramée et une face congelée (comme c'est le cas sur Mercure) heureusement nous on a une planète qui tourne bien comme il faut comme un bon kebab : le rayonnement soleil se répartit tout bien sur tout le tour.
+Alors si la Terre ne tournait pas sur son axe ça serait vraiment la merde car on aurait une face cramée et une face congelée (comme c'est le cas sur Mercure) heureusement nous on a une planète qui tourne bien comme il faut comme un bon kebab : le rayonnement soleil se répartit tout bien sur tout le tour. Donc tout l'équateur est chaud et tout le tour des pôles est bien froid (entre les deux c'est ni glacé ni brûlant). \\
+… \\
+… \\
+Bon bah voilà le climat c'est facile : il fait chaud autour et froid aux pôles !
 
+Alors si on avait pas d'atmosphère ça serait vrai...
 
+# 
 
 [^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NzAzNjY5OSwxOTIwOTQ3NTA1LC0yMD
-I0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbODk4MjIzOTA3LDE5MjA5NDc1MDUsLTIwMj
+Q5MjU4NjRdfQ==
 -->
