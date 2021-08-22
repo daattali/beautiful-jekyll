@@ -345,12 +345,23 @@ Et pourquoi seul les tourbillons des dépression font de la merde ? Bah la basse
 
 Re-voyons notre schema de tout à l'heure il va maintenant prendre tout son sens :
 
-![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
+
+👆Oh les vent sont tous orienté comme il faut !!!
+👆Et je vois même les zone où il y a des anti-cyclones (A) et de dépressions (D)
+
+Or on vient de voir que les anti-cyclones sont plutôt sec et le dépression humide (par effet "aspirateur a humidité"). Donc on peut en déduire oui il va pleuvoir et où il va faire sec :
+
+- front polaire 👉 dépression 👉 humide (d'où les chutes de neige et la flotte sur le nord de l'Europe)
+- latitude des chevaux 👉 anticyclone 👉 sec (ah bah oui là par exemple on a le Sahara… )
+- équateur 👉 dépression 👉 humide (d'où les forêt équatoriales humide où il flotte tous les jours)
+
+J'ajouterai (alors que ça figure pas sur le schema) : les pôles 👉 anticyclone (on a une forte pression car l'air froid retombe là) 👉 sec (eh oui aux pôle contrairement à une croyance populaire il ne neige quasiment jamais, c'est tout sec…les seuls morceaux de glace qu'on prend dans la gueule c'est ceux arraché au sol par les vent de ouf des pôles)
 
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NTE3MjA0LDE5MTM5MjMyMjQsNTk0MT
-YwMTQzLC04MjIwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUs
-LTIwMjQ5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbMTI5MjkzNDQ2MiwxOTEzOTIzMjI0LDU5ND
+E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
+LC0yMDI0OTI1ODY0XX0=
 -->
