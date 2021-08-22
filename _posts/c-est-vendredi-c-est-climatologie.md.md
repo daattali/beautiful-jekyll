@@ -159,13 +159,29 @@ Sur Terre, vu le rayonnement solaire, l'épaisseur de l'atmosphère et la taille
 
 Bon en vrai ça tombe pas pile-poil sur les tropiques... ça tombe sur la 🐎[latitude des chevaux](https://fr.wikipedia.org/wiki/Latitudes_des_chevaux)🐎.
 
-Exactement de manière similaire le vent au sol issu des pôle continue pas indéfiniment : rapidement l'air se réchauffe et finit par monter : idem à un tiers du voyage.  C'est ce qu'on appelle le front polaire (la limite avant de se prendre un vent de merde dans la gueule).
+Exactement de manière similaire le vent au sol issu des pôle continue pas indéfiniment : rapidement l'air se réchauffe et finit par monter : idem à un tiers du voyage. C'est ce qu'on appelle le front polaire a.k.a. la limite avant de se prendre un vent de merde dans la gueule.
+
+L'air (chaud en surpression) remonte et repart vers le pôle (froid en sous-pression).
+
+Ça forme donc ce qu'on appelle une "cellule" 🔁 : un vent qui tourne en continu : \\
+⬇️ descend au pôle \\
+➡️ va vers l'équateur au raz du sol \\
+⬆️ monte au niveau du front polaire \\
+⬅️ retourne vers le pôle en altitude
+
+On a aussi une cellule 🔁 de chaque côté de l'équateur : \\
+⬆️ monte au niveau de l'équateur \\
+⬅️ va vers le pôle en altitude \\
+⬇️ descend à la latitude des chevaux 🐎 \\
+➡️ retourne vers l'équateur au raz du sol \\
+
+Mais entre les deux cellules, il se passe quoi ? Ça correspond à la région tempérée du globe... c'est un peu important !
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 [^toolate]: Trop tard ! Libérééééééééeeeee, Délivréééééééeeeee... et vous aussi maintenant. Ça vous apprendra à lire mes notes de bas de page débiles.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMzE1MzYwNCwtODIyMDc1MzAyLDgyNT
+eyJoaXN0b3J5IjpbMTQ0OTUwMzQwNywtODIyMDc1MzAyLDgyNT
 A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
 -->
