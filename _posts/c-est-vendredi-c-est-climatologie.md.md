@@ -130,13 +130,18 @@ Conclusion : il y a du vent de l'équateur vers les pôles ! Tout le temps. \\
 …\\
 Ah on m'informe dans l'oreillette que nan c'est pas le cas : il n'y a pas un vent permanent sud-nord dans l'hémisphère nord et pas de vent permanent nord-sud dans l'hémisphère sud... Damned !
 
+Bah faut dire que mon raisonnement avait un gros défaut : si on suis mon raisonnement très rapidement il n'y a plus d'air à l'équateur ! Tout serait aspiré vers les pôles ! Alors quoi ? Et ben on a réfléchit en 2D alors que la vraie vie c'est en 3D : l'atmosphère ça a de la hauteur ma bonne dame !
 
+Ça change quoi ? Bah déjà l'air chaud comme ça se dilate... c'est plus léger que l'air froid (car moins dense) donc il a tendance à monter et l'air froid à descendre.
+#frèreMontgolfier
+
+![](https://c.tenor.com/p_tny-9Xgq0AAAAC/blow-blowing.gif){: width="100%" }
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMD
-k0NzUwNSwtMjAyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbMTI2MDc0NjI3MSwtODIyMDc1MzAyLDgyNT
+A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
 -->
