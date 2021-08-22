@@ -141,13 +141,17 @@ Donc ça fait juste que notre air chaud de l'équateur monte et se décale vers 
 
 Mais mais mais... si à l'équateur l'air se barre en altitude... en fait au niveau du sol on a plus une surpression... on a une sous-pression (vu que tout l'air se barre). Et au pôle si l'air retombe vers le sol on a en fait une surpression !
 
-Et bah oui ! 
+Et bah oui : Il y a en permanence un vent que se rapproche de l'équateur : les Alizés ! Et en permanence un vent (super puissant sa mère la flûte) que s'écarte des pôle : le vent polaire !
+
+Vous vous êtes jamais demandé pourquoi tout les explorateurs polaires on systématiquement le vent dans la gueule ? Et ben parce qu'il veut aller **VERS LE PÔLE** et que le vent polaire lui il veut pas !
+
+![](https://c.tenor.com/p_tny-9Xgq0AAAAC/blow-blowing.gif){: width="100%" }
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyMDIxMjk2LC04MjIwNzUzMDIsODI1MD
-g5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbLTEyMjQyMTYyODEsLTgyMjA3NTMwMiw4Mj
+UwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2NF19
 -->
