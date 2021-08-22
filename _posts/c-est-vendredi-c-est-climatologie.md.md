@@ -388,7 +388,7 @@ Et l'eau c'est un machin un peu bizarre physico-chimiquement. Mais une seule de 
 
 Voyons donc les particularité de l'eau :
 
-👉 **L'eau est un excellent solvant polaire** (elle dissout bien tout ce qui a une charge électrique, on appelle ça les composé ionique) : le sel par exemple de formule NaCl va se dissoudre en ions Na+ et Cl- et dans l'eau ça restera très stable. Essayez juste une fois de dissoudre du sel dans l'huile ça sera la fête du fail.
+1️⃣ **L'eau est un excellent solvant polaire** (elle dissout bien tout ce qui a une charge électrique, on appelle ça les composé ionique) : le sel par exemple de formule NaCl va se dissoudre en ions Na+ et Cl- et dans l'eau ça restera très stable. Essayez juste une fois de dissoudre du sel dans l'huile ça sera la fête du fail.
 
 Mais bon pour le climat on s'en tamponne. Ça fait juste que les océans sont salés…
 
@@ -453,7 +453,13 @@ On appelle ça un climat océanique (proche d'un océan) par opposition à un cl
 
 C'est pour ça qu'à Berlin ou pire a Moscou l'hiver on se les pèle grave et l'été c'est un four. Alors qu'à brest… l'été est juste chaud et l'hiver assez peu connu pour ses bonhomme de neige (on préfère les bonhomme de beurre salé là-bas !).
 
-4️⃣ Enfin ultime point important : l'eau ça mouille !
+4️⃣ **Enfin ultime point important : l'eau ça mouille !**
+
+![Gna gna gna !](https://c.tenor.com/aCsuRpVsQxgAAAAd/radicord-good-joke.gif){: width="100%" }
+
+Nan mais c'est vrai quoi ! L'eau ça mouille : à proximité d'un océan les dépression peuvent facilement se charger d'humidité et donc il pleut plus (Brest on pense à toi).
+
+
 
 
 
@@ -462,7 +468,7 @@ C'est pour ça qu'à Berlin ou pire a Moscou l'hiver on se les pèle grave et l'
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMDU4ODY4OSwxOTEzOTIzMjI0LDU5ND
-E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
-LC0yMDI0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbNjk2ODA5NjYwLDE5MTM5MjMyMjQsNTk0MT
+YwMTQzLC04MjIwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUs
+LTIwMjQ5MjU4NjRdfQ==
 -->
