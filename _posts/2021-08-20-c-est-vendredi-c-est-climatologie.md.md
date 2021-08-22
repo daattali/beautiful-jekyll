@@ -18,7 +18,11 @@ Bon ok, techniquement ce qu'on m'a dit c'est « *Le programme de géo au collèg
 
 Bon une grande partie de la géo au collège c'est apprendre où sont les trucs (continents, océan, pays…), mais aussi voir le climat des différentes régions du monde.
 
-!https://c.tenor.com/_aIAA5G35OcAAAAC/drunk-alcohol.gif]
+![](https://c.tenor.com/_aIAA5G35OcAAAAC/drunk-alcohol.gif){: width="100%" }
+
+Alors autant la position et le nom des pays, des mers et le découpage en continent c'est vraiment arbitraire (avoir un Pakistan et un Afghanistan qui ont une frontière qui coupe littéralement le peuple Pachtoune  ça n'a aucune logique autre que "ça arrangeait bien les anglais, les perses et les russes au XIXème siècle"). Autant les climat ça c'est logique… il y a plein de machin à prendre en compte mais il y a une logique derrière !
+
+Et si il y a de la logique derrière, PYM peut pondre un pavé dessus !  ça pourrait être un théorême
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwMzQ1ODg2LC03MDQ5MTAwMDNdfQ==
+eyJoaXN0b3J5IjpbLTMwMDE4NDM3MywtNzA0OTEwMDAzXX0=
 -->
