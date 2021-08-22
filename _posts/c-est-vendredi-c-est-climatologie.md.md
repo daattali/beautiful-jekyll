@@ -183,7 +183,7 @@ Sauf qu'elle tourne à l'inverse de ses voisine : le vent au sol va de l'équate
 
 Aller hop petit schéma de tout ça :
 
-![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](/assets/img/atmospheric_circulation.png){: width="100%" }
+![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
 
 Ces 3 cellules dans chaque hémisphère explique qu'on ait 4 climats bien marqué et nettement séparés : 
 - climat polaire 🥶
@@ -344,7 +344,7 @@ Re-voyons notre schema de tout à l'heure il va maintenant prendre tout son sens
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ1ODIxMTEzLDU5NDE2MDE0MywtODIyMD
-c1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0
-XX0=
+eyJoaXN0b3J5IjpbMTkxMzkyMzIyNCw1OTQxNjAxNDMsLTgyMj
+A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
+NF19
 -->
