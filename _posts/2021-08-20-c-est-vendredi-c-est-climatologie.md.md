@@ -55,6 +55,8 @@ Alors quoi ? Bah le soleil bébé ! #seaSexAndSun
 …ah bah nan… notre modèle est un peu trop simple pour "sea, sex and sun" 👉 on va oublier la ~~sea~~ et le ~~sex~~ (sorry) et on va garder juste le **sun**.
 
 ![](https://c.tenor.com/G1CpZxGWnmQAAAAC/perrie-edwards-sighs.gif){: width="100%" }
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MTk2MDAyLC03MDQ5MTAwMDNdfQ==
+eyJoaXN0b3J5IjpbMTEwMjIwMzAwMiwtNzA0OTEwMDAzXX0=
 -->
