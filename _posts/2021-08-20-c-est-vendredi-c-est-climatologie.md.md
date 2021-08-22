@@ -60,9 +60,10 @@ Le soleil chauffe la Terre par rayonnement, comme un lampe qui vous chauffe ta m
 
 Ben nan pas du tout : aviez-vous déjà remarqué que le matin et le soir il fait vachement moins chaud qu'à midi ?[^ete] Mais pourquoi donc ? Ah ah ! C'est l'heure du premier schema !
 
-
+![Inclinaison des rayon so](/assets/img/inclinaison-des-rayons-solaires.png){: width="100%" }
 
 [^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAxNjYyODA0LC03MDQ5MTAwMDNdfQ==
+eyJoaXN0b3J5IjpbODE1Mzk5NTQ5LDQwMTY2MjgwNCwtNzA0OT
+EwMDAzXX0=
 -->
