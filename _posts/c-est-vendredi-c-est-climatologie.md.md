@@ -290,11 +290,11 @@ Et là bordel : la balle tourne toute seule !!!!
 
 Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… mais si on avait une caméra à l'extérieur du manège et ben là on verrait… une belle ligne droite 😱 Ce qui nous donne l'impression que la balle "tourne" c'est qu'elle va tout droit et que NOUS on tourne !
 
-![Quelle plaie…](https://commons.wikimedia.org/wiki/File:Corioliskraftanimation.gif#/media/Fichier:Corioliskraftanimation.gif)
-<p><a href="https://commons.wikimedia.org/wiki/File:Corioliskraftanimation.gif#/media/Fichier:Corioliskraftanimation.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif" alt="Corioliskraftanimation.gif"></a><br>Par &lt;a href="https://de.wikipedia.org/wiki/Benutzer:Hubi" class="extiw" title="de:Benutzer:Hubi"&gt;Hubi&lt;/a&gt; — &lt;a href="https://en.wikipedia.org/wiki/de:Bild:Corioliskraftanimation.gif" class="extiw" title="w:de:Bild:Corioliskraftanimation.gif"&gt;German Wikipedia&lt;/a&gt;, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1008114">Lien</a></p>
+![This file is licensed under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons "w:en:Creative Commons") [Attribution-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/deed.en) license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDYyNjkwNCw1OTQxNjAxNDMsLTgyMj
-A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
-NF19
+eyJoaXN0b3J5IjpbOTQ1MTE2MDAyLDU5NDE2MDE0MywtODIyMD
+c1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0
+XX0=
 -->
