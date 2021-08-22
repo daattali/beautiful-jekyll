@@ -374,14 +374,22 @@ Je vais pas expliquer pourquoi il y a des continents et pourquoi ils sont là. C
 
 Nan, on va admettre qu'ils ont là où ils sont et puis c'est tout. Ils seraient ailleurs ça serait pareil juste les phénomènes qu'on va décrire seraient décalé ailleurs aussi… mais ça serait les même.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
+![Deal with it](https://c.tenor.com/KTuATLNVSnYAAAAC/elmo-shrug.gif){: width="100%" }
+
+Mais au fait ça change quoi d'avoir des océans et des continent au juste ?
+
+Bah déjà de manière totalement anthropocentrée, on a décidé de ne définir des "climats" que sur les continents… en mer on se contente de donner des latitudes.
+
+Ensuite les océans c'est de l'eau !
+
+![Deal with it](https://c.tenor.com/KTuATLNVSnYAAAAC/elmo-shrug.gif){: width="100%" }
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2OTIxODI2OCwxOTEzOTIzMjI0LDU5ND
+eyJoaXN0b3J5IjpbLTY2MzMyNTgxMCwxOTEzOTIzMjI0LDU5ND
 E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
 LC0yMDI0OTI1ODY0XX0=
 -->
