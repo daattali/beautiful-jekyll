@@ -42,10 +42,11 @@ Ok on va dire que la Terre est sphérique (*c'est pas tout à fait vrai elle est
 
 « Quoi encore ? \\
 — Ça serait encore plus simple si la Terre était plate…?! \\
-— Dehors le platiste ! Tu sors !
-— »
+— Dehors le platiste ! Tu sors ! \\
+— … \\
+— Nan ça serait pas plus simple. En physique on aime bien les trucs rond… ça a tout plein de symétries qui facilitent tous les calcul… et ça permet de se la péter avec de sinus et des cosinus partout ! #trigoÉlitisme »
 
-Dehors le platiste ! Tu sors !
+Donc notre planète ronde qui tourne pas elle se chauffe comment ?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMzMDIzNjExLC03MDQ5MTAwMDNdfQ==
+eyJoaXN0b3J5IjpbLTEyOTMwOTA3NjEsLTcwNDkxMDAwM119
 -->
