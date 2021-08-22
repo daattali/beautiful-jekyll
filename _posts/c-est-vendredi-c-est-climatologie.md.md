@@ -257,9 +257,12 @@ Sauf que…
 
 Mais pourquoi donc, mon cruel ?!
 
+J'avais pourtant passé des semaines si ce n'est des mois entiers à maîtriser le tourniquet et sa force centrifuge : je sais que je vais subir une force chelou qui cherche à m'expulser du manège ! Mais là c'est pas pareil, certes il y a la force centrifuge, mais ça je maîtrise, mais en plus j'ai l'impression de marcher comme un vieil alcoolo après un soir de match !
+
+![Ça va aller madame](https://c.tenor.com/MW4184ju7VcAAAAC/stumbling-drunk.gif)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MDA3NTkxMyw1OTQxNjAxNDMsLTgyMj
-A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
-NF19
+eyJoaXN0b3J5IjpbMTE1NTc5MTI4LDU5NDE2MDE0MywtODIyMD
+c1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0
+XX0=
 -->
