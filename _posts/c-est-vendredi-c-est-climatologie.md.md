@@ -284,17 +284,18 @@ Mais voyez plutôt :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8H3GF8Q73a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-👆 le jeu est très simple : une fois le manège en rotation il faut juste réussir à lancer la balle à une personne en face (ils disent de la faire rouler pour éviter qu'elle parte dans le décors… bon moi j'ai essayé ça fait pareil au sol ou en l'air c'est juste moins visible car on lance plus fort généralement).
+👆 Le jeu est très simple : une fois le manège en rotation il faut juste réussir à lancer la balle à une personne en face (ils disent de la faire rouler pour éviter qu'elle parte dans le décors… bon moi j'ai essayé ça fait pareil au sol ou en l'air c'est juste moins visible car on lance plus fort généralement).
 
 Et là bordel : la balle tourne toute seule !!!!
 
 Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… mais si on avait une caméra à l'extérieur du manège et ben là on verrait… une belle ligne droite 😱 Ce qui nous donne l'impression que la balle "tourne" c'est qu'elle va tout droit et que NOUS on tourne !
 
-![This file is licensed under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons "w:en:Creative Commons") [Attribution-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/deed.en) license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif)
+![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif)
+En haut la balle vu de l'extérieur immobile
 
-
+En bas la même balle vue depuis le disque qui tourne
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ1MTE2MDAyLDU5NDE2MDE0MywtODIyMD
-c1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0
-XX0=
+eyJoaXN0b3J5IjpbLTU2MTU1MDAzMiw1OTQxNjAxNDMsLTgyMj
+A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
+NF19
 -->
