@@ -337,12 +337,14 @@ Oui mais là aussi Coriolis : le vent va aller vers le centre de la basse pressi
 
 Et pourquoi seul les tourbillons des dépression font de la merde ? Bah la basse pression donc ça crée un effet d'aspiration au niveau de sol… ou de la mer et donc ça "pompe" de l'humidité en permanence. Les anticylone eux avec leurs haute pression plaque l'humidité au sol. #cqfd
 
+Re-voyons notre schema de tout à l'heure il va maintenant prendre tout son sens :
+
 
 
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4OTk3NzYzNSw1OTQxNjAxNDMsLTgyMj
-A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
-NF19
+eyJoaXN0b3J5IjpbOTQ1ODIxMTEzLDU5NDE2MDE0MywtODIyMD
+c1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0
+XX0=
 -->
