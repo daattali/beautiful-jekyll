@@ -331,10 +331,18 @@ Non seulement tous nos gros vent vont virer à droite ou à gauche… mais il y 
 
 Oui mais là aussi Coriolis : le vent va aller vers le centre de la basse pression… mais en tournant à droite (dans l'hémisphère nord). On obtient alors un tourbillon qui s'enroule dans le sens des aiguilles d'une montre. En météo on appelle ça une "dépression" et vous en voyez tous les jour sur les photos satellite de la météo !
 
+À l'opposé si il y a une surpression le vent devrait rayonner depuis cette surpression sauf que Coriolis ta mère : ça tourne à droite 👉 tourbillon mais dans le sens inverse des aiguilles d'une montre ! En météo (pour des raisons historiques) on appelle ça un anticyclone. Idem vous en voyez tous les jours à la météo.
+
+« *Mais pourquoi anticyclone ?* » Rhaaaaa j'aurais du m'y attendre… bah c'est simple, une dépression qui tourne mal (beaucoup de vent, très humide et chaude) ça donne un cyclone, pas cool… et assez vite on à remarqué qu'avant un cyclone il y avait une baisse de pression (vu que c'est une dépression) mais que si la pression restait haute bah jamais cyclone 👉 haute pression = anti-cyclone
+
+Et pourquoi seul les tourbillons des dépression font de la merde ? Bah la basse pression donc ça crée un effet d'aspiration au niveau de sol… ou de la mer et donc ça "pompe" de l'humidité en permanence. Les anticylone eux avec leurs haute pression plaque l'humidité au sol. #cqfd
+
+
+
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTU0NDc4OSw1OTQxNjAxNDMsLTgyMj
+eyJoaXN0b3J5IjpbMTY4OTk3NzYzNSw1OTQxNjAxNDMsLTgyMj
 A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
 NF19
 -->
