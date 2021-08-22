@@ -392,7 +392,7 @@ Voyons donc les particularité de l'eau :
 
 Mais bon pour le climat on s'en tamponne. Ça fait juste que les océans sont salés…
 
-👉 **L'eau a l'étrange particularité qu'en se solidifiant, quand ça devient de la glace, elle augmente en volume.** C'est bizarre car pour tout les autre corps chimique quand tu les refroidis il prenne moins de place : quand on chauffe un truc il se dilate (un rail de chemin de fer l'été par exemple… c'est même pour ça qu'on laisse de l'espace entre les rails, pour que l'été ils puissent se dilater sans faire dérailler les trains) et inversement quand on le refroidit il se contracte.
+2️⃣ **L'eau a l'étrange particularité qu'en se solidifiant, quand ça devient de la glace, elle augmente en volume.** C'est bizarre car pour tout les autre corps chimique quand tu les refroidis il prenne moins de place : quand on chauffe un truc il se dilate (un rail de chemin de fer l'été par exemple… c'est même pour ça qu'on laisse de l'espace entre les rails, pour que l'été ils puissent se dilater sans faire dérailler les trains) et inversement quand on le refroidit il se contracte.
 
 Mais la flotte… quand tu la refroidis et qu'elle se transforme en glace pouf elle augmente de volume ! (C'est pour ça qu'il ne faut pas mettre de bouteille d'eau en verre au congélateur : l'eau va augmenter de volume et le verre diminuer un peu… ce qui va la faire éclater)
 
@@ -402,7 +402,7 @@ Aux pôles, l'eau gèle et forme donc des gros glaçons flottant au dessus de l'
 
 Bon donc on vient de trouver pourquoi on a de la glace aux pôles. Mais c'est pas vraiment ce qu'on cherchait.[^polemethane]
 
-👉 **l'eau a une capacité calorifique thermique super élevée**…
+3️⃣ **l'eau a une capacité calorifique thermique super élevée**…
 
 « *On comprend pas ce que tu dis !* »
 
@@ -446,8 +446,14 @@ Et c'est quoi le rapport avec les océans ???
 
 Et ben sans océan on aurait des saisons bien marquées, propres et tout. Mais quand on est près d'un grosse masse d'eau (l'océan Atlantique par exemple)… et ben l'eau avec son inertie thermique elle va tout adoucir :
 
-- l'été arrive, il devrait faire méga chaud sa race… ah mais nan l'océan lui est encore froid car il met du temps à changer de température donc l'été est chaud mais pas trop
-- l'hiver arrive, on devrait se prendre tes tonnes de neige dans la gueule… sauf que nan, l'océan lui est resté chaud et il va adoucir l'hiver qui se retrouvera souvent à même pas être assez froid pour avoir de la neige
+- **l'été arrive**, il devrait faire méga chaud sa race… ah mais nan l'océan lui est encore froid car il met du temps à changer de température donc l'été est chaud mais pas trop
+- **l'hiver arrive**, on devrait se prendre tes tonnes de neige dans la gueule… sauf que nan, l'océan lui est resté chaud et il va adoucir l'hiver qui se retrouvera souvent à même pas être assez froid pour avoir de la neige
+
+On appelle ça un climat océanique (proche d'un océan) par opposition à un climat continental (loin d'un océan).
+
+C'est pour ça qu'à Berlin ou pire a Moscou l'hiver on se les pèle grave et l'été c'est un four. Alors qu'à brest… l'été est juste chaud et l'hiver assez peu connu pour ses bonhomme de neige (on préfère les bonhomme de beurre salé là-bas !).
+
+4️⃣ Enfin ultime point important : l'eau ça mouille !
 
 
 
@@ -456,7 +462,7 @@ Et ben sans océan on aurait des saisons bien marquées, propres et tout. Mais q
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNDM5NDUyOSwxOTEzOTIzMjI0LDU5ND
+eyJoaXN0b3J5IjpbMTYzMDU4ODY4OSwxOTEzOTIzMjI0LDU5ND
 E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
 LC0yMDI0OTI1ODY0XX0=
 -->
