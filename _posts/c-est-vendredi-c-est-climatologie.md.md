@@ -233,9 +233,19 @@ En fait c'est juste que quand le tourniquet commence à tourner… ben vous boug
 C'est le principe de la fronde : on fait tourner un truc au bout d'une ficelle et quand on lâche il part tout droit (perpendiculairement à la ficelle… ça surprend tous les novice cui se retrouve à éborgner leurs potes à côté plutôt que les cons en face)
 
 ![David il était balèze à la fronde ! Goliath lui était plutôt balèze en pierre dans la gueule…](https://c.tenor.com/InanccWZ7rcAAAAd/david-goliath.gif)
+Donc la force centrifuge c'est juste ton corps qui a envie de continuer tout droit… mais comme tu vois le tourniquet fixe (bordel arrête d'agiter la tête dans tous les sens ça foire mon explication !) tu a l'impression qu'on te tire vers l'arrière.
 
+Voilà 4 ans et on a déjà expérimenté une pseudo-force !
+
+Bon par contre pas de bol celle-là n'a quasi aucun effet sur le climat 😅 à part aux pôles où elle contribue à rendre les vents polaires au sol encore pire : elle éloigne l'air du pôle donc pile poil le sens des vents pôlaires !
+
+![…je le remet pour le plaisir, j'adore le voir galérer \<rire dément de méchant de James Bond\>](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
+
+
+
+Allons donc voir ailleurs si la pseudo-force qui nous manque y est !
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5MzkwOTYsNTk0MTYwMTQzLC04MjIwNz
-UzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4NjRd
-fQ==
+eyJoaXN0b3J5IjpbLTY4NzQ5NzgzMiw1OTQxNjAxNDMsLTgyMj
+A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
+NF19
 -->
