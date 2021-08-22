@@ -17,6 +17,8 @@ Voilà ce qu'on m'a posé la question et bon bah comme d'hab' je vais essayer d'
 Bon ok, techniquement ce qu'on m'a dit c'est « *Le programme de géo au collège c'est chiant* », il est possible qu'après j'ai sur-interprété la requête de mon interlocutrice…
 
 Bon une grande partie de la géo au collège c'est apprendre où sont les trucs (continents, océan, pays…), mais aussi voir le climat des différentes régions du monde.
+
+!https://c.tenor.com/_aIAA5G35OcAAAAC/drunk-alcohol.gif]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NjE5Mzg5NiwtNzA0OTEwMDAzXX0=
+eyJoaXN0b3J5IjpbMjcwMzQ1ODg2LC03MDQ5MTAwMDNdfQ==
 -->
