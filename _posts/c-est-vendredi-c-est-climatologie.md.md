@@ -62,9 +62,10 @@ Ben nan pas du tout : aviez-vous déjà remarqué que le matin et le soir il fai
 
 ![Inclinaison des rayons solaires](/assets/img/inclinaison-des-rayons-solaires.png){: width="100%" }
 
-
+Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses rayon sont parallèles. Si on prend un "tube"  de rayon solaire (disons d'1m² de diamètre) il apporte une certain quantité d'énergie (donc de chaleur). Si on prend un tube qui tape à l'équateur bah voilà il tape bien à la verticale, youpi 🥵 ! Mais si il tape plus près d'un pôle... il arrive sur un sol tout incliné ! Résultat l'énergie est "étalée" sur une surface bien plus grande et comme c'est la même quantité d'énergie sur une surface plus grande ça fait moins d'énergie au mètre carré 🥶 donc il fait tout plein plus froid vu que le chauffage solaire est moins fort.
+#cqfd
 
 [^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjQ5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbMTkyMDk0NzUwNSwtMjAyNDkyNTg2NF19
 -->
