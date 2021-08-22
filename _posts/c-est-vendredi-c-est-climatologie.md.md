@@ -362,13 +362,26 @@ C'est déjà assez énorme : on a retrouvé les principaux climats de la planèt
 
 Bon il y a encore des petits souci : les tropique c'est pas toujours sec… des fois c'est humide… et on a pas parlé de climat continental[^continental] (alors qu'on nous rabat les oreilles avec ça au collège !).
 
-
-
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
 [^continental]: Il est vrai que Berlin et Nantes c'est pas vraiment le même climat…
+
+## Chapitre 4 : et si on mettait des océans et des continents ?
+
+Ah oui jusqu'ici on a supposé notre planète uniformément constituée de… de rien. En fait on s'en foutait ! C'était une boule de billard avec une atmosphère… Ajoutons donc des continents et des océans… déjà ça rendra le lieu un poil plus habitable. Et en plus ça permettra d'expliquer les 2~3 trucs qui nous manquent.
+
+Je vais pas expliquer pourquoi il y a des continents et pourquoi ils sont là. C'est pifomètrique, ça dépend des fragilité de la croûte terrestre, des point chaud du manteau magmatique, de là où des astéroïdes géant nous sont tombé dessus il y a des milliards d'année… et en plus les continent ça arrête pas de se déplacer (tectonique des plaques, tout ça…).
+
+Nan, on va admettre qu'ils ont là où ils sont et puis c'est tout. Ils seraient ailleurs ça serait pareil juste les phénomènes qu'on va décrire seraient décalé ailleurs aussi… mais ça serait les même.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
+
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODE0MzM5NDEsMTkxMzkyMzIyNCw1OT
-QxNjAxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUw
-NSwtMjAyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbMTI2OTIxODI2OCwxOTEzOTIzMjI0LDU5ND
+E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
+LC0yMDI0OTI1ODY0XX0=
 -->
