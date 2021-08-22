@@ -117,13 +117,26 @@ Quand tu a un gaz sous pression d'un côté et un gaz à basse pression de l'aut
 
 En gros tu as un ballon de baudruche (haute pression vu que tu as fait rentré de force de l'air dedans en soufflant comme un ouf) et une pièce à pression normale (basse par rapport au ballon). Et là tu ouvre l'embouchure du ballon[^pfff] :
 
-![](https://c.tenor.com/ZkBrMi_7MlsAAAAC/ariel-little-mermaid.gif){: width="100%" }
+![](https://c.tenor.com/p_tny-9Xgq0AAAAC/blow-blowing.gif){: width="100%" }
+
+Oui voilà... du vent dans ta gueule ! Simple !
+
+Sur Terre c'est pareil : 
+- equateur 👉 chaud 👉 surpression
+- pôle 👉 froid 👉 sous-pression
+
+Conclusion : il y a du vent de l'équateur vers les pôles ! Tout le temps. \\
+…\\
+…\\
+Ah on m'informe dans l'oreillette que nan c'est pas le cas : il n'y a pas un vent permanent sud-nord dans l'hémisphère nord et pas de vent permanent nord-sud dans l'hémisphère sud... Damned !
+
+
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMj
-Q5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMD
+k0NzUwNSwtMjAyNDkyNTg2NF19
 -->
