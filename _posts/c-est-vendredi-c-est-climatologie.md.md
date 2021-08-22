@@ -216,9 +216,25 @@ Mais en fait si ça change un truc… seulement comme on a pas l'habitude de se 
 
 ### Premier souvenir d'enfance : le tourniquet
 
+C'est cet espèce de machin qui tourne et où on peut monter sur les bords (souvent en s'accrochant à des barre pour pas ce casser la gueule) …un genre de tourne disque géant quoi…
+
+Et ben là très très vite, même à 4 ans tu remarques qu'il y a un truc bizarre : dès que ça tourne… tu es tiré vers l'arrière. Et plus ça tourne vite, plus ça te tire fort. D'où l'intérêt des fameuses barre pour s'accrocher !
+
+Et pourtant aucun objet ne nous attire vers l'extérieur (un aimant à nain ?!) et aucun objet ne nous repousse depuis l'intérieur (un aimant à nain mais avec le même pôle que le nain ??!?).
+
+Nan rien de tout ça…
+
+C'est ce qu'on appelle une pseudo-force : ça ressemble à une force sauf que ça n'a pas d'objet physique pour la créer.
+
+Chelou vous disais-je.
+
+En fait c'est juste que quand le tourniquet commence à tourner… ben vous bouger avec, ça vous donne une vitesse. Seulement les objet (tous les objets !!) aiment garder des trajectoire rectiligne (c'est l'inertie) donc en fait le tourniquet si vous ne vous teniez pas vous éjecterait tout de suite car vous continueriez tout droit dans le sens de la marche (on dit tangentiellement au putain de tourniquet quand on veut briller en société mais garder sa street cred')
+
+C'est le principe de la fronde : on fait tourner un truc au bout d'une ficelle et quand on lâche il part tout droit (perpendiculairement à la ficelle… ça surprend tous les novice cui se retrouve à éborgner leurs potes à côté plutôt que les cons en face)
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU0MzM1ODA5LC04MjIwNzUzMDIsODI1MD
+eyJoaXN0b3J5IjpbNTk0MTYwMTQzLC04MjIwNzUzMDIsODI1MD
 g5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4NjRdfQ==
 -->
