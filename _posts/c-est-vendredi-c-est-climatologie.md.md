@@ -316,12 +316,15 @@ Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effe
 
 « *Ah mais en fait je connais ! C'est ça qui fait que le tourbillon qui se forme quand je vide ma baignoire tourne dans le sens des aiguilles d'une montre ! Et même quand tu passe l'équateur ça change de sens ! [Je l'ai vu sur Facebook](https://www.lesnumeriques.com/vie-du-net/facebook-terrain-fertile-a-la-propagation-des-fake-news-selon-une-etude-n153589.html) !!!* »
 
-![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif)
+![Tiens ça faisait longtemps…](https://c.tenor.com/WQkVAtajaR4AAAAC/vampire-diaries-eye-roll.gif)
+Bon déjà on prend pas ses infos scientifiques sur Facebook… ensuite tu peux essayer : tourne avec ton doigt dans le sens inverse avant de vider ta baignoire et pouf le tourbillon sera dans le sens inverse ! 
+
+Pour que ça marche il faudrait un bassin circulaire de plusieurs kilomètres ! Et même là l'effet serait minime. Nan ce qui joue le plus c'est la forme de ta baignoire et l'agitation oe l'au avant de la vider.
 
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNzI5NTcwMCw1OTQxNjAxNDMsLTgyMj
-A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
-NF19
+eyJoaXN0b3J5IjpbLTE4OTk1NTEwMTEsNTk0MTYwMTQzLC04Mj
+IwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4
+NjRdfQ==
 -->
