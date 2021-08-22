@@ -58,9 +58,11 @@ Alors quoi ? Bah le soleil bébé ! #seaSexAndSun
 
 Le soleil chauffe la Terre par rayonnement, comme un lampe qui vous chauffe ta main quand tu la met devant. Donc en gros la face de la Terre qui est face au soleil devrait être uniformément chaude nan ?
 
-Ben nan pas du tout : aviez-vous déjà remarqué que le matin et le soir il fait vachement moins chaud qu'à midi ? [^ete]
+Ben nan pas du tout : aviez-vous déjà remarqué que le matin et le soir il fait vachement moins chaud qu'à midi ?[^ete] Mais pourquoi donc ? Ah ah ! C'est l'heure du premier schema !
 
-[^ete]: Ça se remarque bien l'été… enfin quand on a pas un été tout pourri… ☔️
+
+
+[^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5ODA5NDQyNCwtNzA0OTEwMDAzXX0=
+eyJoaXN0b3J5IjpbNDAxNjYyODA0LC03MDQ5MTAwMDNdfQ==
 -->
