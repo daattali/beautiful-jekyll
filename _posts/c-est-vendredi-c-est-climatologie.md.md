@@ -117,11 +117,13 @@ Quand tu a un gaz sous pression d'un côté et un gaz à basse pression de l'aut
 
 En gros tu as un ballon de baudruche (haute pression vu que tu as fait rentré de force de l'air dedans en soufflant comme un ouf) et une pièce à pression normale (basse par rapport au ballon). Et là tu ouvre l'embouchure du ballon[^pfff] :
 
+![](https://c.tenor.com/ZkBrMi_7MlsAAAAC/ariel-little-mermaid.gif){: width="100%" }
+
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTQ0MTE4OCwxOTIwOTQ3NTA1LC0yMD
-I0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMj
+Q5MjU4NjRdfQ==
 -->
