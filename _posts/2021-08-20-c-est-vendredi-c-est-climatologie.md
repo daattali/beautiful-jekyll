@@ -300,7 +300,7 @@ Dans tous les cas elle est toujours perpendiculaire au mouvement : elle te fait 
 
 Mais… on est tous sur Terre ! On devrait le sentir tout le temps !!! On devrait le voir partout ! Sauf que non ! Pourquoi ?
 
-Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effet notable si tu bouges pas trop vite, sur de longue distance et que tu résistes pas trop… les vents et les courants marins ça marche. À la rigueur si tu es tireur d'élite et que tu tires à plus d'1km de distance tu commences à devoir bien te faire chier car ta balle se décale avec la force de Coriolis[^kyudo][^punk]…
+Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effet notable si tu bouges pas trop vite, sur de longue distance et que tu résistes pas trop… les vents et les courants marins ça marche. À la rigueur si tu es tireur d'élite et que tu tires à plus d'1km de distance tu commences à devoir bien te faire chier car ta balle se décale avec la force de Coriolis [^kyudo][^punk]…
 
 « *Ah mais en fait je connais ! C'est ça qui fait que le tourbillon qui se forme quand je vide ma baignoire tourne dans le sens des aiguilles d'une montre ! Et même quand tu passes l'équateur ça change de sens ! Je l'ai vu sur Facebook !!!* »
 
@@ -468,5 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDY4MTg4MjEsMjE3Mzg3MDM5XX0=
+eyJoaXN0b3J5IjpbLTEzNDM4OTcwODksLTEzNDY4MTg4MjEsMj
+E3Mzg3MDM5XX0=
 -->
