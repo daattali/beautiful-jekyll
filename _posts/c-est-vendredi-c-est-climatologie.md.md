@@ -232,7 +232,8 @@ En fait c'est juste que quand le tourniquet commence à tourner… ben vous boug
 
 C'est le principe de la fronde : on fait tourner un truc au bout d'une ficelle et quand on lâche il part tout droit (perpendiculairement à la ficelle… ça surprend tous les novice cui se retrouve à éborgner leurs potes à côté plutôt que les cons en face)
 
-![David il était balèze à la fronde ! Goliath lui était plutôt balèze en pierre dans la gueule…](https://c.tenor.com/InanccWZ7rcAAAAd/david-goliath.gif)
+![David il était balèze à la fronde ! Goliath lui était plutôt balèze en pierre dans la gueule…](https://c.tenor.com/InanccWZ7rcAAAAd/david-goliath.gif){: width="100%" }
+
 Donc la force centrifuge c'est juste ton corps qui a envie de continuer tout droit… mais comme tu vois le tourniquet fixe (bordel arrête d'agiter la tête dans tous les sens ça foire mon explication !) tu a l'impression qu'on te tire vers l'arrière.
 
 Voilà 4 ans et on a déjà expérimenté une pseudo-force !
@@ -259,17 +260,20 @@ Mais pourquoi donc, mon cruel ?!
 
 J'avais pourtant passé des semaines si ce n'est des mois entiers à maîtriser le tourniquet et sa force centrifuge : je sais que je vais subir une force chelou qui cherche à m'expulser du manège ! Mais là c'est pas pareil, certes il y a la force centrifuge, mais ça je maîtrise, mais en plus j'ai l'impression de marcher comme un vieil alcoolo après un soir de match !
 
-![Ça va aller madame…](https://c.tenor.com/MW4184ju7VcAAAAC/stumbling-drunk.gif)
+![Ça va aller madame…](https://c.tenor.com/MW4184ju7VcAAAAC/stumbling-drunk.gif){: width="100%" }
+
 Je pars du **cheval A** je vise le **hérisson clignotant B**, je compense la force centrifuge en forçant un peu vers l'extérieur proportionnellement à la vitesse angulaire et au rayon (oui petit déjà j'avais une approche assez analytique du monde). Mais nan ! Peau de zigounette ! Je me retrouve à faire une espèce de courbe merdasse et je finis sur la **luciole rose C** !
 
-![Pourquoi !? ](https://c.tenor.com/PSGySzyYf_YAAAAC/but-why-why.gif)
+![Pourquoi !? ](https://c.tenor.com/PSGySzyYf_YAAAAC/but-why-why.gif){: width="100%" }
+
 En fait c'est encore une pseudo-force très très chelou puissance 10 : la **force de Coriolis** !
 
 Et elle t'empêche de marcher droit en te poussant toujours vers la droite (ou la gauche ça dépend du sens de rotation de ton manège…).
 
 « *Je n'y crois pas ! Je suis platiste vous mentez !* » Ah notre ami platiste est de retour[^platiste]… pas de bol pour lui : même si la Terre était plate (ce qu'elle n'est pas !) pourvu qu'elle tourne, il y aurait une force de Coriolis… aller « *Couché panier le platiste !* »
 
-![Quelle plaie…](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif)
+![Quelle plaie…](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif){: width="100%" }
+
 Maintenant qu'on sait qu'il y a une force en plus… essayons de la comrendre un peu. Et pour ça utilisons encore un souvenir de ~~votre~~ **mon** ~~enfance~~ **adulescence** !
 
 [^platiste]: Mais qui l'a laissé entrer ? Moi… si on leur coupe l'accès à la science comment veux-tu qu'ils apprennent ?
@@ -290,7 +294,8 @@ Et là bordel : la balle tourne toute seule !!!!
 
 Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… mais si on avait une caméra à l'extérieur du manège et ben là on verrait… une belle ligne droite 😱 Ce qui nous donne l'impression que la balle "tourne" c'est qu'elle va tout droit et que NOUS on tourne !
 
-![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif)
+![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif){: width="100%" }
+
 👆 En haut la balle vu de l'extérieur immobile \\
 En bas la même balle vue depuis le disque qui tourne
 
@@ -316,7 +321,8 @@ Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effe
 
 « *Ah mais en fait je connais ! C'est ça qui fait que le tourbillon qui se forme quand je vide ma baignoire tourne dans le sens des aiguilles d'une montre ! Et même quand tu passe l'équateur ça change de sens ! [Je l'ai vu sur Facebook](https://www.lesnumeriques.com/vie-du-net/facebook-terrain-fertile-a-la-propagation-des-fake-news-selon-une-etude-n153589.html) !!!* »
 
-![Tiens ça faisait longtemps…](https://c.tenor.com/WQkVAtajaR4AAAAC/vampire-diaries-eye-roll.gif)
+![Tiens ça faisait longtemps…](https://c.tenor.com/WQkVAtajaR4AAAAC/vampire-diaries-eye-roll.gif){: width="100%" }
+
 Bon déjà on prend pas ses infos scientifiques sur Facebook… ensuite tu peux essayer : tourne avec ton doigt dans le sens inverse avant de vider ta baignoire et pouf le tourbillon sera dans le sens inverse ! Pour que ça marche il faudrait un bassin circulaire de plusieurs kilomètres ! Et même là l'effet serait minime. Nan ce qui joue le plus c'est la forme de ta baignoire et l'agitation de l'au avant de la vider.
 
 Et j'avais vérifié ça à 9 ans ! Le matos pour vérifier ça c'est : une baignoire (ou un lavabo), de l'eau et un doigt bordel !!!
@@ -339,12 +345,12 @@ Et pourquoi seul les tourbillons des dépression font de la merde ? Bah la basse
 
 Re-voyons notre schema de tout à l'heure il va maintenant prendre tout son sens :
 
-
+![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
 
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMzkyMzIyNCw1OTQxNjAxNDMsLTgyMj
-A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
-NF19
+eyJoaXN0b3J5IjpbMTY2NTE3MjA0LDE5MTM5MjMyMjQsNTk0MT
+YwMTQzLC04MjIwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUs
+LTIwMjQ5MjU4NjRdfQ==
 -->
