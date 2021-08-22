@@ -269,10 +269,14 @@ Et elle t'empêche de marcher droit en te poussant toujours vers la droite (ou l
 
 « *Je n'y crois pas ! Je suis platiste vous mentez !* » Ah notre ami platiste est de retour… pas de bol pour lui : même si la Terre était plate (ce qu'elle n'est pas !) pourvu qu'elle tourne, il y aurait une force de Coriolis… aller « *Couché panier le platiste !* »
 
-![Pourquoi !? ](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif)
+![Quelle plaie…](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif)
+Maintenant qu'on sait qu'il y a une force en plus… essayons de la comrendre un peu. Et pour ça utilisons encore un souvenir de ~~votre~~ **mon** ~~enfance~~ **adulescence** !
 
+### Troisième souvenir d'enfance : le manège du Palais de la Découverte
+
+Bon ok si vous avez pas passé votre enfance à Paris c'est plus dur… mais venez faire un tour dans ce musée tout plein d'expériences cools et de gens passionnés !
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDY1NDYwODksNTk0MTYwMTQzLC04Mj
-IwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4
-NjRdfQ==
+eyJoaXN0b3J5IjpbMTc5MjYzOTUyMSw1OTQxNjAxNDMsLTgyMj
+A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
+NF19
 -->
