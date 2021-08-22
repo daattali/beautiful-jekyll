@@ -209,13 +209,16 @@ Bon bah ok elle tourne… euh ça a pas l'air de changer grand chose à notre ra
 
 Mais en fait si ça change un truc… seulement comme on a pas l'habitude de se déplacer sur un truc qui tourne (bon à part la Terre…) on est pas habitué à la physique "dans un référentiel en rotation uniforme". Utilisons donc la vraie arme de tous les physiciens, climatologues et autres géographes : les souvenir d'enfance !
 
-https://c.tenor.com/LnVVa9CicNIAAAAC/flower-girl-girls.gif
+![vous voyez bien, quand on était gamin on kiffait les les référentiels en rotation uniforme ! Et vous avez vu comment je portais bien la robe de princesse ?](https://c.tenor.com/LnVVa9CicNIAAAAC/flower-girl-girls.gif){: width="100%" }
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 [^toolate]: Trop tard ! Libérééééééééeeeee, Délivréééééééeeeee... et vous aussi maintenant. Ça vous apprendra à lire mes notes de bas de page débiles.
 
+### Premier souvenir d'enfance : le tourniquet
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMDIxNTQ5OSwtODIyMDc1MzAyLDgyNT
-A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbOTU0MzM1ODA5LC04MjIwNzUzMDIsODI1MD
+g5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4NjRdfQ==
 -->
