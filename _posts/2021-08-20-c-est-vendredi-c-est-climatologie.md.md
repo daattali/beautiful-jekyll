@@ -25,6 +25,10 @@ Alors autant la position et le nom des pays, des mers et le découpage en contin
 Et si il y a de la logique derrière, PYM peut pondre un pavé dessus ! [^theorem]
 
 [^theorem]: Ça pourrait être un théorème !
+
+# Chapitre 1 : Pôle et équateur
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzIxNTI3NiwtNzA0OTEwMDAzXX0=
+eyJoaXN0b3J5IjpbLTE5MDAyNTM4NDYsLTcwNDkxMDAwM119
 -->
