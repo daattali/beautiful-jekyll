@@ -207,13 +207,15 @@ Alors pour nos vent ne sont pas nord-sud bien droit et tout ?! Eh ben parce que 
 
 Bon bah ok elle tourne… euh ça a pas l'air de changer grand chose à notre raisonnement de la faire tourner (d'ailleurs on l'avait déjà fait tourner tout à l'heure histoire de ne pas avoir une face [Dracaufeu](https://www.pokepedia.fr/Dracaufeu) 🔥 et une face [Sorbouboul](https://www.pokepedia.fr/Sorbouboul) 🧊.
 
+Mais en fait si ça change un truc… seulement comme on a pas l'habitude de se déplacer sur un truc qui tourne (bon à part la Terre…) on est pas habitué à la physique "dans un référentiel en rotation uniforme". Utilisons donc la vraie arme de tous les physiciens, climatologues et autres géographes : les souvenir d'enfance !
 
+https://c.tenor.com/LnVVa9CicNIAAAAC/flower-girl-girls.gif
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 [^toolate]: Trop tard ! Libérééééééééeeeee, Délivréééééééeeeee... et vous aussi maintenant. Ça vous apprendra à lire mes notes de bas de page débiles.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODI4MTkzODAsLTgyMjA3NTMwMiw4Mj
-UwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbLTQyMDIxNTQ5OSwtODIyMDc1MzAyLDgyNT
+A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
 -->
