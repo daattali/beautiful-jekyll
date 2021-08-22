@@ -469,8 +469,14 @@ Et voilà avec tout ça vous avez 90% des climats du globe !
 
 Après des fois il faut prendre en compte les montagnes qui bloque les vents et empêche les dépressions chargée de pluie de passer. Or comme les vent vont toujours dans le même sens à grande échelle (Coriolis tout ça… voir le schéma des cellules) les grosses montagnes on toujours un côté humide et un côté tout sec : au Chili les montagnes sont couverte de forêt humide d'un côté et un véritable désert de l'autre.
 
-![Gna gna gna !](https://c.tenor.com/aCsuRpVsQxgAAAAd/radicord-good-joke.gif){: width="100%" }
-https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Map_world_climate_zones_%28simplified_to_10%29-fr.svg/1024px-Map_world_climate_zones_%28simplified_to_10%29-fr.svg.png
+![Normalement maintenant vous pouvez sans problème prédire ou comprendre les différents climats sur une carte](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Map_world_climate_zones_%28simplified_to_10%29-fr.svg/1024px-Map_world_climate_zones_%28simplified_to_10%29-fr.svg.png){: width="100%" }
+
+Il vous manque :
+- **montagnard** : climat froid et sec car on est trop haut (température qui basse avec l'altitude et nuages qui sont trop bas pour arroser le coin)
+- **méditerranéen** : climat important historiquement mais c'est en gros de l'océanique un peu sec car son océan est petit (on peut le retrouver ailleurs qu'en méditerranée si il y a de bon facteur pour modérer un océanique classique)
+- **mousson/arride** : autre nom oe tropical humide et sec (selon si il y a de l'océan pour charger les dépressions)
+- **chinois** : pour faire plaisir au chinois… c'est du continental mais avec du tropical à côté donc "continental mais c'est souvent la merde"
+
 
 
 
@@ -479,7 +485,7 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Map_world_climate_zone
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NzM4MzMzNywxOTEzOTIzMjI0LDU5ND
+eyJoaXN0b3J5IjpbMTUxNTAyMDQwMSwxOTEzOTIzMjI0LDU5ND
 E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
 LC0yMDI0OTI1ODY0XX0=
 -->
