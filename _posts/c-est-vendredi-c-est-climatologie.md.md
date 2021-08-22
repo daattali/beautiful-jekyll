@@ -284,10 +284,16 @@ Mais voyez plutôt :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8H3GF8Q73a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+👆 le jeu est très simple : une fois le manège en rotation il faut juste réussir à lancer la balle à une personne en face (ils disent de la faire rouler pour éviter qu'elle parte dans le décors… bon moi j'ai essayé ça fait pareil au sol ou en l'air c'est juste moins visible car on lance plus fort généralement).
 
+Et là bordel : la balle tourne toute seule !!!!
+
+Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… mais si on avait une caméra à l'extérieur du manège et ben là on verrait… une belle ligne droite 😱 Ce qui nous donne l'impression que la balle "tourne" c'est qu'elle va tout droit et que NOUS on tourne !
+
+https://commons.wikimedia.org/wiki/File:Corioliskraftanimation.gif#/media/Fichier:Corioliskraftanimation.gif
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQzNzAxNjU3LDU5NDE2MDE0MywtODIyMD
-c1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0
-XX0=
+eyJoaXN0b3J5IjpbLTIxMjQ2MTQ2ODAsNTk0MTYwMTQzLC04Mj
+IwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4
+NjRdfQ==
 -->
