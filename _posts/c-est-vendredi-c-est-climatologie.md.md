@@ -382,14 +382,34 @@ Bah déjà de manière totalement anthropocentrée, on a décidé de ne définir
 
 Ensuite les océans c'est de l'eau !
 
-![Deal with it](https://c.tenor.com/KTuATLNVSnYAAAAC/elmo-shrug.gif){: width="100%" }
+![De rien](https://c.tenor.com/FQZUnqVzEeUAAAAC/captain-obvious-thank-you.gif){: width="100%" }
+
+Et l'eau c'est un machin un peu bizarre physico-chimiquement. Mais une seule de ses particularité nous intéresse ici.
+
+Voyons donc les particularité de l'eau :
+
+👉 **L'eau est un excellent solvant polaire** (elle dissout bien tout ce qui a une charge électrique, on appelle ça les composé ionique) : le sel par exemple de formule NaCl va se dissoudre en ions Na+ et Cl- et dans l'eau ça restera très stable. Essayez juste une fois de dissoudre du sel dans l'huile ça sera la fête du fail.
+
+Mais bon pour le climat on s'en tamponne. Ça fait juste que les océans sont salés…
+
+👉 **L'eau a l'étrange particularité qu'en se solidifiant, quand ça devient de la glace, elle augmente en volume.** C'est bizarre car pour tout les autre corps chimique quand tu les refroidis il prenne moins de place : quand on chauffe un truc il se dilate (un rail de chemin de fer l'été par exemple… c'est même pour ça qu'on laisse de l'espace entre les rails, pour que l'été ils puissent se dilater sans faire dérailler les trains) et inversement quand on le refroidit il se contracte.
+
+Mais la flotte… quand tu la refroidis et qu'elle se transforme en glace pouf elle augmente de volume ! (C'est pour ça qu'il ne faut pas mettre de bouteille d'eau en verre au congélateur : l'eau va augmenter de volume et le verre diminuer un peu… ce qui va la faire éclater)
+
+Et niveau climat c'est utile ? Bah un peu : la glace prend plus de place que l'eau liquide donc elle est plus légère donc elle flotte !
+
+Aux pôles, l'eau gèle et forme donc des gros glaçons flottant au dessus de l'océan 👉 une calotte polaire de glace.
+
+Bon au pôle sud il n'y a pas d'océan mais un gros continent, l'Antarctique, qui est recouvert de glace (qui ne flotte pas donc). Mais au pôle nord ça marche bien.
+
+Bon donc on vient de trouver pourquoi on a de la glace aux pôles. Mais c'est pas vraiment ce qu'on cherchait.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MzMyNTgxMCwxOTEzOTIzMjI0LDU5ND
-E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
-LC0yMDI0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbLTE4NzgyNjM3NDksMTkxMzkyMzIyNCw1OT
+QxNjAxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUw
+NSwtMjAyNDkyNTg2NF19
 -->
