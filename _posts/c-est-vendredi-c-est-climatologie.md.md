@@ -459,6 +459,16 @@ C'est pour ça qu'à Berlin ou pire a Moscou l'hiver on se les pèle grave et l'
 
 Nan mais c'est vrai quoi ! L'eau ça mouille : à proximité d'un océan les dépression peuvent facilement se charger d'humidité et donc il pleut plus (Brest on pense à toi).
 
+C'est ultra vrai au niveau des tropiques (juste aussi de la latitude des chevaux et ses anticyclones) il y fait très chaud et donc des dépressions peuvent s'y former.
+
+Si c'est au-dessus d'un désert… ben on s'en tamponne… mais au-dessus d'un océan alors là c'est la merde : ça va syphoner des milliers de tonnes d'eau et former des cyclones (appelé ouragan dans l'Atlantique et typhon dans le Pacifique parce que… ben les géographes font chier !).
+
+Et voilà avec tout ça vous avez 90% des climats du globe !
+
+## Quelques trucs qui manquent…
+
+Après des fois il faut prendre en compte les montagnes qui bloque les vents et empêche les dépressions chargée de pluie de passer. Or comme les vent vont toujours dans le même sens à grande échelle (Coriolis tout ça… voir le schéma des cellules) les grosses montagnes on toujours un côté humide et un côté tout sec : au Chili les montagnes sont couverte de forêt humide d'un côté et un véritable désert de l'autre.
+
 
 
 
@@ -468,7 +478,7 @@ Nan mais c'est vrai quoi ! L'eau ça mouille : à proximité d'un océan les dé
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2ODA5NjYwLDE5MTM5MjMyMjQsNTk0MT
-YwMTQzLC04MjIwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUs
-LTIwMjQ5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbNzUzMzA4ODksMTkxMzkyMzIyNCw1OTQxNj
+AxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwt
+MjAyNDkyNTg2NF19
 -->
