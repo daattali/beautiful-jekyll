@@ -149,13 +149,15 @@ Vous vous êtes jamais demandé pourquoi tout les explorateurs polaires on syst�
 
 👆Ah nan pas elle... je vais encore avoir une chanson dans la tête[^toolate]
 
-![](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
+![Con de vent...](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
+
+Au final on a un vent d'altitude de l'équateur vers le pôle et un vent au sol du pôle vers l'équateur ? Nan… évidemment ça serait trop simple
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 [^toolate]: Trop tard ! Libérééééééééeeeee, Délivréééééééeeeee... et vous aussi maintenant. Ça vous apprendra à lire mes notes de bas de page débiles.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5Mjg2NzYyLC04MjIwNzUzMDIsODI1MD
-g5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbMjAwNzU2NTQwOCwtODIyMDc1MzAyLDgyNT
+A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
 -->
