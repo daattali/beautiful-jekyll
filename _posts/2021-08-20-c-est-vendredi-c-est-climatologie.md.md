@@ -52,7 +52,9 @@ Chaleur interne ? 🤔 le noyau interne chauffe (à cause de réaction nucléair
 
 Alors quoi ? Bah le soleil bébé ! #seaSexAndSun
 
-…ah bah nan… notre modèle est un peu trop simple pour "sea, sex and sun" 👉 on va oublier la sea et le sex (sorry) et on va garder juste le **sun**.
+…ah bah nan… notre modèle est un peu trop simple pour "sea, sex and sun" 👉 on va oublier la ~~sea~~ et le ~~sex~~ (sorry) et on va garder juste le **sun**.
+
+![](https://c.tenor.com/G1CpZxGWnmQAAAAC/perrie-edwards-sighs.gif){: width="100%" }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyODY3NTYzMywtNzA0OTEwMDAzXX0=
+eyJoaXN0b3J5IjpbLTg3MTk2MDAyLC03MDQ5MTAwMDNdfQ==
 -->
