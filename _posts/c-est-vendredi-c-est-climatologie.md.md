@@ -422,15 +422,26 @@ Pour info : on mesure l'inertie thermique d'un truc grâce un un chiffre la capa
 
 Et c'est utile pour le climat ça ? Oui énormément !
 
-![Nan mais il fallait me dire que Perceval était dans la salle !](https://c.tenor.com/wS9l25RT9gAAAAAC/cest-pas-faux.gif){: width="100%" }
-https://c.tenor.com/Drz_x_HhZXkAAAAC/yeah-baby-oh-yeah-baby.gif
+![Du calme dans la salle !](https://c.tenor.com/Drz_x_HhZXkAAAAC/yeah-baby-oh-yeah-baby.gif){: width="100%" }
+
+Mais il nous manque un truc pour comprendre pourquoi : les saisons !
+
+Vous vous souvenez qu'on a négligé l'inclinaison de l'axe de la Terre ? Ben voilà on va le prendre en compte ! Alors c'est assez simple : comme la Terre est inclinée par rapport au soleil et qu'elle tourne autour de celui-ci, cet angle change selon la position de la Terre sur son orbite et ça change l'angle des rayons solaires (et donc la température).
+
+- **Inclinaison maximum** : il fait froid 👉 hiver
+- **Inclinaison minimum** : il fait chaud 👉 été
+- **Entre les deux** : il fait tiède 👉 automne ou printemps (la différence tient surtout au fait que les plantes ont poussé ou pas avant)
+
+Bon par contre à l'équateur ça change pas grand chose : il fait toujours chaud, la variation d'inclinaison est négligeable.
+
+Aux pôles on est tellement incliné qu'on peut se retrouver dans l'ombre permanente l'hiver (nuit polaire de plusieurs mois) ou toujours au soleil (jour polaire de plusieurs mois). Oui les pôles c'est vraiment un endroit de merde pour vivre… d'ailleurs quasi personne n'y habite…
 
 [^polemethane]: Si on avait des océans de méthane (comme sur Titan) ou d'huile (nan là sorry j'ai pas d'exemple…) il n'y aurait pas de glace de méthane ou d'huile au pôle car elle coulerait !
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI2OTEyMjYsMTkxMzkyMzIyNCw1OT
+eyJoaXN0b3J5IjpbLTE2NTExNDE1NjMsMTkxMzkyMzIyNCw1OT
 QxNjAxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUw
 NSwtMjAyNDkyNTg2NF19
 -->
