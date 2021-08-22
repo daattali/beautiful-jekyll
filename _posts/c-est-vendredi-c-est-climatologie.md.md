@@ -274,9 +274,11 @@ Maintenant qu'on sait qu'il y a une force en plus… essayons de la comrendre un
 
 ### Troisième souvenir d'enfance : le manège du Palais de la Découverte
 
-Bon ok si vous avez pas passé votre enfance à Paris c'est plus dur… mais venez faire un tour dans ce musée tout plein d'expériences cools et de gens passionnés !
+Bon ok si vous avez pas passé votre enfance à Paris c'est plus dur… mais venez faire un tour dans [ce musée tout plein d'expériences cools et de gens passionnés](https://www.palais-decouverte.fr/fr/accueil/) !
+
+[^platiste]: Mais qui l'a laissé entrer ? Moi… si on leur coupe l'accès à la science comment veux-tu qu'ils apprennent ?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MjYzOTUyMSw1OTQxNjAxNDMsLTgyMj
+eyJoaXN0b3J5IjpbMTM3NjA4OTQ2OSw1OTQxNjAxNDMsLTgyMj
 A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
 NF19
 -->
