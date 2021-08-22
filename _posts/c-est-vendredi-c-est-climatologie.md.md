@@ -205,7 +205,7 @@ En plus sur mon schéma là au dessus il y a des A et des D, c'est quoi ces mach
 
 Alors pour nos vent ne sont pas nord-sud bien droit et tout ?! Eh ben parce que notre modèle atteint un peu ses limites : en vraie la Terre elle tourne !
 
-Bon bah ok elle tourne… euh ça a pas l'air de changer grand chose à notre raisonnement de la faire tourner (d'ailleurs on l'avait déjà fait tourner tout à l'heure histoire de ne pas avoir une face Drakofeu 🔥 et une face Sorbouboul 🧊.
+Bon bah ok elle tourne… euh ça a pas l'air de changer grand chose à notre raisonnement de la faire tourner (d'ailleurs on l'avait déjà fait tourner tout à l'heure histoire de ne pas avoir une face [Dracaufeu](https://www.pokepedia.fr/Dracaufeu) 🔥 et une face [Sorbouboul](https://www.pokepedia.fr/Sorbouboul) 🧊.
 
 
 
@@ -214,6 +214,6 @@ Bon bah ok elle tourne… euh ça a pas l'air de changer grand chose à notre ra
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTExMDY3NzMsLTgyMjA3NTMwMiw4Mj
+eyJoaXN0b3J5IjpbLTE0ODI4MTkzODAsLTgyMjA3NTMwMiw4Mj
 UwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2NF19
 -->
