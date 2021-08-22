@@ -398,18 +398,20 @@ Mais la flotte… quand tu la refroidis et qu'elle se transforme en glace pouf e
 
 Et niveau climat c'est utile ? Bah un peu : la glace prend plus de place que l'eau liquide donc elle est plus légère donc elle flotte !
 
-Aux pôles, l'eau gèle et forme donc des gros glaçons flottant au dessus de l'océan 👉 une calotte polaire de glace.
+Aux pôles, l'eau gèle et forme donc des gros glaçons flottant au dessus de l'océan 👉 une calotte polaire de glace. Au pôle sud il n'y a pas d'océan mais un gros continent, l'Antarctique, qui est recouvert de glace (qui ne flotte pas donc). Mais au pôle nord ça marche bien.
 
-Bon au pôle sud il n'y a pas d'océan mais un gros continent, l'Antarctique, qui est recouvert de glace (qui ne flotte pas donc). Mais au pôle nord ça marche bien.
+Bon donc on vient de trouver pourquoi on a de la glace aux pôles. Mais c'est pas vraiment ce qu'on cherchait.[^polemethane]
 
-Bon donc on vient de trouver pourquoi on a de la glace aux pôles. Mais c'est pas vraiment ce qu'on cherchait.
+👉 **l'eau a une capacité calorifique thermique super élevée**…
 
+« On comprend pas ce que tu dis ! »
 
+[^polemethane]: Si on avait des océans de méthane (comme sur Titan) ou d'huile (nan là sorry j'ai pas d'exemple…) il n'y aurait pas de glace de méthane ou d'huile au pôle car elle coulerait !
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzgyNjM3NDksMTkxMzkyMzIyNCw1OT
-QxNjAxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUw
-NSwtMjAyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbMjM1NDc1NjY4LDE5MTM5MjMyMjQsNTk0MT
+YwMTQzLC04MjIwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUs
+LTIwMjQ5MjU4NjRdfQ==
 -->
