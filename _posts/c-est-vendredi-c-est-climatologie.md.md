@@ -262,11 +262,15 @@ J'avais pourtant passé des semaines si ce n'est des mois entiers à maîtriser 
 ![Ça va aller madame…](https://c.tenor.com/MW4184ju7VcAAAAC/stumbling-drunk.gif)
 Je pars du **cheval A** je vise le **hérisson clignotant B**, je compense la force centrifuge en forçant un peu vers l'extérieur proportionnellement à la vitesse angulaire et au rayon (oui petit déjà j'avais une approche assez analytique du monde). Mais nan ! Peau de zigounette ! Je me retrouve à faire une espèce de courbe merdasse et je finis sur la **luciole rose C** !
 
-![Ça va aller madame…](https://c.tenor.com/PSGySzyYf_YAAAAC/but-why-why.gif)
+![Pourquoi !? ](https://c.tenor.com/PSGySzyYf_YAAAAC/but-why-why.gif)
+En fait c'est encore une pseudo-force très très chelou puissance 10 : la **force de Coriolis** !
 
+Et elle t'empêche de marcher droit en te poussant toujours vers la droite (ou la gauche ça dépend du sens de rotation de ton manège…).
+
+« *Je n'y crois pas ! Je suis platiste vous mentez !* »
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMDM2MTI0MSw1OTQxNjAxNDMsLTgyMj
-A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
-NF19
+eyJoaXN0b3J5IjpbODgzOTQ1NDE5LDU5NDE2MDE0MywtODIyMD
+c1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0
+XX0=
 -->
