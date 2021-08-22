@@ -465,6 +465,9 @@ Si c'est au-dessus d'un désert… ben on s'en tamponne… mais au-dessus d'un o
 
 Et voilà avec tout ça vous avez 90% des climats du globe !
 
+[^polemethane]: Si on avait des océans de méthane (comme sur Titan) ou d'huile (nan là sorry j'ai pas d'exemple…) il n'y aurait pas de glace de méthane ou d'huile au pôle car elle coulerait !
+[^distancesoleil]: Et bordel non ça ne dépend pas de la distance au soleil sur l'orbite !!!!!
+
 ## Quelques trucs qui manquent…
 
 Après des fois il faut prendre en compte les montagnes qui bloque les vents et empêche les dépressions chargée de pluie de passer. Or comme les vent vont toujours dans le même sens à grande échelle (Coriolis tout ça… voir le schéma des cellules) les grosses montagnes on toujours un côté humide et un côté tout sec : au Chili les montagnes sont couverte de forêt humide d'un côté et un véritable désert de l'autre.
@@ -473,19 +476,20 @@ Après des fois il faut prendre en compte les montagnes qui bloque les vents et 
 
 Il vous manque :
 - **montagnard** : climat froid et sec car on est trop haut (température qui basse avec l'altitude et nuages qui sont trop bas pour arroser le coin)
-- **méditerranéen** : climat important historiquement mais c'est en gros de l'océanique un peu sec car son océan est petit (on peut le retrouver ailleurs qu'en méditerranée si il y a de bon facteur pour modérer un océanique classique)
+- **méditerranéen** : climat important historiquement mais c'est en gros de l'océanique un peu sec car son océan est petit (on peut le retrouver ailleurs qu'en méditerranée si il y a de bon facteur pour modérer un océanique classique)[^mediterranee]
 - **mousson/arride** : autre nom oe tropical humide et sec (selon si il y a de l'océan pour charger les dépressions)
-- **chinois** : pour faire plaisir au chinois… c'est du continental mais avec du tropical à côté donc "continental mais c'est souvent la merde"
+- **chinois** : pour faire plaisir au chinois #troll c'est du continental mais avec du tropical à côté donc "continental mais c'est souvent la merde"
+
+[^mediterranee]: La méditerranée est une très gra nde mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid.
 
 
 
 
-[^polemethane]: Si on avait des océans de méthane (comme sur Titan) ou d'huile (nan là sorry j'ai pas d'exemple…) il n'y aurait pas de glace de méthane ou d'huile au pôle car elle coulerait !
-[^distancesoleil]: Et bordel non ça ne dépend pas de la distance au soleil sur l'orbite !!!!!
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNTAyMDQwMSwxOTEzOTIzMjI0LDU5ND
-E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
-LC0yMDI0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbLTIwOTgzNTEyMzUsMTkxMzkyMzIyNCw1OT
+QxNjAxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUw
+NSwtMjAyNDkyNTg2NF19
 -->
