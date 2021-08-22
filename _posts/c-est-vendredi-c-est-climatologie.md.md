@@ -291,11 +291,15 @@ Et là bordel : la balle tourne toute seule !!!!
 Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… mais si on avait une caméra à l'extérieur du manège et ben là on verrait… une belle ligne droite 😱 Ce qui nous donne l'impression que la balle "tourne" c'est qu'elle va tout droit et que NOUS on tourne !
 
 ![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif)
-En haut la balle vu de l'extérieur immobile
-
+👆 En haut la balle vu de l'extérieur immobile \\
 En bas la même balle vue depuis le disque qui tourne
+
+« *Bordel c'est magique ! \\
+— Non c'est scientifique ! \\
+— *Pardon* \\
+— *Ya pas de mal* »
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTU1MDAzMiw1OTQxNjAxNDMsLTgyMj
+eyJoaXN0b3J5IjpbMjAyMTk3MzkxNyw1OTQxNjAxNDMsLTgyMj
 A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
 NF19
 -->
