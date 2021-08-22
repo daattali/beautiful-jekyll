@@ -26,7 +26,7 @@ Et si il y a de la logique derrière, PYM peut pondre un pavé dessus ! [^theore
 
 [^theorem]: Ça pourrait être un théorème !
 
-# Chapitre 1 : Pôle et équateur
+## Chapitre 1 : Pôle et équateur
 
 Ousékifécho ?
 
@@ -91,10 +91,12 @@ Bon bah voilà le climat c'est facile : il fait chaud autour et froid aux pôles
 
 Alors si on avait pas d'atmosphère ça serait vrai...
 
-# 
+## Chapitre 2 : Atmosphère, atmosphère... est-ce que j'ai une gueule d'atmosphère ?
+
+https://youtu.be/KYic1U1a6yw?t=58
 
 [^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk4MjIzOTA3LDE5MjA5NDc1MDUsLTIwMj
-Q5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbLTE2MjQ5MzMzOTQsMTkyMDk0NzUwNSwtMj
+AyNDkyNTg2NF19
 -->
