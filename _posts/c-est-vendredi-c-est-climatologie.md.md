@@ -145,13 +145,15 @@ Et bah oui : Il y a en permanence un vent que se rapproche de l'équateur : les 
 
 Vous vous êtes jamais demandé pourquoi tout les explorateurs polaires on systématiquement le vent dans la gueule ? Et ben parce qu'il veut aller **VERS LE PÔLE** et que le vent polaire lui il veut pas !
 
-![](https://c.tenor.com/p_tny-9Xgq0AAAAC/blow-blowing.gif){: width="100%" }
+![](https://c.tenor.com/rg2xhwUVLpYAAAAC/frozen-disney.gif){: width="100%" }
+
+👆Ah nan pas elle... je vais encore avoir une chanson dans la tê
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjQyMTYyODEsLTgyMjA3NTMwMiw4Mj
-UwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbMTM3MjExMTc3NiwtODIyMDc1MzAyLDgyNT
+A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
 -->
