@@ -93,10 +93,14 @@ Alors si on avait pas d'atmosphère ça serait vrai...
 
 ## Chapitre 2 : Atmosphère, atmosphère... est-ce que j'ai une gueule d'atmosphère ?
 
-https://youtu.be/KYic1U1a6yw?t=58
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KYic1U1a6yw?start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Oui je ne l'avais pas dit tout à l'heure, mais mon premier modèle c'était avec une Terre sans atmosphère aussi... mais qu'est ce que ça change ?
+
+
 
 [^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQ5MzMzOTQsMTkyMDk0NzUwNSwtMj
-AyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbODk2NjkwMDgzLDE5MjA5NDc1MDUsLTIwMj
+Q5MjU4NjRdfQ==
 -->
