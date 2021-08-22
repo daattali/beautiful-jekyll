@@ -183,7 +183,19 @@ Sauf qu'elle tourne à l'inverse de ses voisine : le vent au sol va de l'équate
 
 Aller hop petit schéma de tout ça :
 
-![Inclinaison des rayons solaires](/assets/img/atmospheric_circulation.png){: width="100%" }
+![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](/assets/img/atmospheric_circulation.png){: width="100%" }
+
+Ces 3 cellules dans chaque hémisphère explique qu'on ait 4 climats bien marqué et nettement séparés : 
+- climat polaire 🥶
+- climat tempéré 😎
+- climat subtropical 🥵
+- climat équatorial 🥵🥵
+
+Voilà on a résolu notre problème : on a bien de l'air sur toute la surface de la terre ! Et en plus on a retrouvé des vents qui existent en vrai !
+
+...enfin...
+
+...là on a que des vent nord-sud ou sud-nord (ce qui est rare en vrai). Et même nos alizés et nos vents polaires, eh ben ils sont au bon endroit... mais pas complétement dans le bon sens : les alizé pousse vers l'ouest (pratique pour faire Europe-Amérique ! N'est-ce pas monsieur Colomb ?) et idem pour les vent polaires !
 
 
 
@@ -192,6 +204,6 @@ Aller hop petit schéma de tout ça :
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjgzODkzNTUsLTgyMjA3NTMwMiw4Mj
-UwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbMzUwMzIwNTAwLC04MjIwNzUzMDIsODI1MD
+g5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4NjRdfQ==
 -->
