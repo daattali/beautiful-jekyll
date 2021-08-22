@@ -157,13 +157,15 @@ Où ça ? Bah ça dépend pas mal de la taille de la planète : si la Terre éta
 
 Sur Terre, vu le rayonnement solaire, l'épaisseur de l'atmosphère et la taille de la planète ça retombe à un tiers du chemin 👉 les tropiques !!!! (oui c'est pour ça que cette latitude chelou qui semble posé comme un cochon sur un gâteau de mariage est si importante : c'est là que l'air de l'équateur retombe).
 
-Bon en vrai ça tombe pas pile-poil sur les tropiques... ça tombe sur la "[latitude des chevaux".
+Bon en vrai ça tombe pas pile-poil sur les tropiques... ça tombe sur la 🐎[latitude des chevaux](https://fr.wikipedia.org/wiki/Latitudes_des_chevaux)🐎.
+
+Exactement de manière similaire le vent au sol issu des pôle continue pas indéfiniment : rapidement l'air se réchauffe et finit par monter : idem à un tiers du voyage.  C'est ce qu'on appelle le front polaire (la limite avant de se prendre un vent de merde dans la gueule).
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 [^toolate]: Trop tard ! Libérééééééééeeeee, Délivréééééééeeeee... et vous aussi maintenant. Ça vous apprendra à lire mes notes de bas de page débiles.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNDk1NzIxOCwtODIyMDc1MzAyLDgyNT
+eyJoaXN0b3J5IjpbLTQwMzE1MzYwNCwtODIyMDc1MzAyLDgyNT
 A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
 -->
