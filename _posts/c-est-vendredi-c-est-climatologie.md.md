@@ -195,7 +195,17 @@ Voilà on a résolu notre problème : on a bien de l'air sur toute la surface de
 
 ...enfin...
 
-...là on a que des vent nord-sud ou sud-nord (ce qui est rare en vrai). Et même nos alizés et nos vents polaires, eh ben ils sont au bon endroit... mais pas complétement dans le bon sens : les alizé pousse vers l'ouest (pratique pour faire Europe-Amérique ! N'est-ce pas monsieur Colomb ?) et idem pour les vent polaires !
+...là on a que des vent nord-sud ou sud-nord (ce qui est rare en vrai). Et même nos alizés et nos vents polaires, eh ben ils sont au bon endroit... mais pas complètement dans le bon sens : les alizé pousse vers l'ouest (pratique pour faire Europe-Amérique ! N'est-ce pas monsieur Colomb ?) et idem pour les vent polaires !
+
+En plus sur mon schéma là au dessus il y a des A et des D, c'est quoi ces machins ?
+
+## Chapitre 3 : va faire ton cours de physique dans un manège
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ScXxy0MI2WQ?start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Alors pour nos vent ne sont pas nord-sud bien droit et tout ?! Eh ben parce que notre modèle atteint un peu ses limites : en vraie la Terre elle tourne !
+
+Bon bah ok elle tourne… euh ça a pas l'air de changer grand chose à notre raisonnement de la faire tourner (d'ailleurs on l'avait déjà fait tourner tout à l'heure histoire de ne pas avoir une face Drakofeu 🔥 et une face Sorbouboul 🧊.
 
 
 
@@ -204,6 +214,6 @@ Voilà on a résolu notre problème : on a bien de l'air sur toute la surface de
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUwMzIwNTAwLC04MjIwNzUzMDIsODI1MD
-g5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbLTE0OTExMDY3NzMsLTgyMjA3NTMwMiw4Mj
+UwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2NF19
 -->
