@@ -304,8 +304,19 @@ Donc dès qu'on est sur un truc qui tourne (et où qu'on soit dessus) il faut aj
 La Terre tourne d'Ouest en Est donc vu depuis le Pôle nord comme le disque de ma figure d'avant : dans l'hémisphère nord la force de Coriolis est donc vers la droite (comme dans la figure). Dans l'hémisphère sud (on voit le disque par en dessous) la force est vers la gauche.
 
 Dans tous les cas elle est toujours perpendiculaire au mouvement : elle te fait toujours tourner… d'où l'impression d'être tout bourré dans un manège : on arrive VRAIMENT pas à marcher droit !
+
+**À retenir :**
+
+- Coriolis hémisphère **nord** : à **DROITE**
+- Coriolis hémisphère **sud** : à **GAUCHE**
+
+Mais… on est tous sur Terre ! On devrait le sentir tout le temps !!! On devrait le voir partout ! Sauf que non ! Pourquoi ?
+
+Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effet notable si tu bouge pas trop vite, sur de longue distance et que tu résiste pas trop… les vents et les courants marins ça marche. À la rigueur si tu es tireur d'élite et que tu tires à plus d'1km de distance tu commence à devoir bien te faire chier car ta balle se décale avec la force de Coriolis…
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjMzMjExMyw1OTQxNjAxNDMsLTgyMj
+eyJoaXN0b3J5IjpbMTk2NDMyODEwNyw1OTQxNjAxNDMsLTgyMj
 A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
 NF19
 -->
