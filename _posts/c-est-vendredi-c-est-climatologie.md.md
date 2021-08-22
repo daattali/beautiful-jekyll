@@ -147,13 +147,15 @@ Vous vous êtes jamais demandé pourquoi tout les explorateurs polaires on syst�
 
 ![](https://c.tenor.com/rg2xhwUVLpYAAAAC/frozen-disney.gif){: width="100%" }
 
-👆Ah nan pas elle... je vais encore avoir une chanson dans la tê
+👆Ah nan pas elle... je vais encore avoir une chanson dans la tête[^toolate]
+
+![](https://c.tenor.com/rg2xhwUVLpYAAAAC/frozen-disney.gif){: width="100%" }
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
-
+[^toolate]: Trop tard ! Libérééééééééeeeee, Délivréééééééeeeee... et vous aussi maintenant. Ça vous apprendra à lire mes notes de bas de page débiles.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjExMTc3NiwtODIyMDc1MzAyLDgyNT
+eyJoaXN0b3J5IjpbLTQ5Nzk2NjI4OCwtODIyMDc1MzAyLDgyNT
 A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
 -->
