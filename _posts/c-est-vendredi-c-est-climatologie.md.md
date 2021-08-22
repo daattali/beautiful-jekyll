@@ -177,11 +177,21 @@ On a aussi une cellule 🔁 de chaque côté de l'équateur : \\
 
 Mais entre les deux cellules, il se passe quoi ? Ça correspond à la région tempérée du globe... c'est un peu important !
 
+D'un côté on a le front polaire avec son air "chaud" (c'est relatif il est "moins froid que l'air polaire) qui monte... et de l'autre la latitude des chevaux avec son air "froid" qui descend. Comme l'air s'accumule au sol au niveau de des chevaux (surpression) et qu'il se barre tout vers le haut au niveau du front polaire (sous-pression) 👉 paf on forme encore du vent... et de nouveau une cellule. 
+
+Sauf qu'elle tourne à l'inverse de ses voisine : le vent au sol va de l'équateur vers le pôle et le vent en altitude du pôle vers l'équateur.
+
+Aller hop petit schéma de tout ça :
+
+![Inclinaison des rayons solaires](/assets/img/atmospheric_circulation.png){: width="100%" }
+
+
+
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 [^toolate]: Trop tard ! Libérééééééééeeeee, Délivréééééééeeeee... et vous aussi maintenant. Ça vous apprendra à lire mes notes de bas de page débiles.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0OTUwMzQwNywtODIyMDc1MzAyLDgyNT
-A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbLTExNjgzODkzNTUsLTgyMjA3NTMwMiw4Mj
+UwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2NF19
 -->
