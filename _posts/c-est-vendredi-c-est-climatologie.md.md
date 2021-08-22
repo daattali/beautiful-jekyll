@@ -71,14 +71,14 @@ Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses
 
 …ah un peu de contradiction, c'est bien ça la contradiction ! Oui mon bon Donald que veux-tu ?
 
-« STOP ! Moi je pense qu'on se prend la tête : si il fait plus froid au pôle c'est juste parce qu'il est plus loin du soleil que l'équateur du soleil ! \\
-— Ah oui... \\ 
-— Et quand je test avec la lampe je vois bien que plus je suis loin moins ma main est chaude ! \\
-— Certes mon cher palmipède... certes... \\
-— Ah ah ! Je le savais ! \\
-— Sauf que nan... déjà ta lampe elle est toute petite et proche donc ses rayons s'écartent les un des autres (ils ne sont pas parallèles) donc à la place d'un tube tu as un cône et ça fait que l'énergie "s'étale avec la distance" (en `R²` si tu veux tout savoir). \\
-— Et c'est pas le cas avec le Soleil peut-être ?! \\
-— Si mais sur des distance démentiellement grande... genre de l'ordre de la distance entre l'orbite de la Terre et l'orbite de Mars : 78 millions de km... et la différence entre l'équateur et le pôle en terme de distance parcouru par la lumière du soleil c'est le rayon de la Terre : 6371 km c'est-à-dire en gros 10 000 fois moins. Si la différence équateur/pôle c'était du à ça elle serait elle aussi ridicule en terme de température. \\
+« *STOP ! Moi je pense qu'on se prend la tête : si il fait plus froid au pôle c'est juste parce qu'il est plus loin du soleil que l'équateur du soleil !* \\
+— *Ah oui...* \\ 
+— *Et quand je test avec la lampe je vois bien que plus je suis loin moins ma main est chaude !* \\
+— *Certes mon cher palmipède... certes...* \\
+— *Ah ah ! Je le savais !* \\
+— *Sauf que nan... déjà ta lampe elle est toute petite et proche donc ses rayons s'écartent les un des autres (ils ne sont pas parallèles) donc à la place d'un tube tu as un cône et ça fait que l'énergie "s'étale avec la distance" (en `R²` si tu veux tout savoir).* \\
+— *Et c'est pas le cas avec le Soleil peut-être ?!* \\
+— *Si mais sur des distance démentiellement grande... genre de l'ordre de la distance entre l'orbite de la Terre et l'orbite de Mars : 78 millions de km... et la différence entre l'équateur et le pôle en terme de distance parcouru par la lumière du soleil c'est le rayon de la Terre : 6371 km c'est-à-dire en gros 10 000 fois moins. Si la différence équateur/pôle c'était du à ça elle serait elle aussi ridicule en terme de température.* \\
 — Ah merde... ça semblait facile avec la lampe... \\
 — Sorry Donald. »
 
@@ -294,12 +294,12 @@ Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… m
 👆 En haut la balle vu de l'extérieur immobile \\
 En bas la même balle vue depuis le disque qui tourne
 
-« *Bordel c'est magique ! \\
-— Non c'est scientifique ! \\
+« *Bordel c'est magique !* \\
+— *Non c'est scientifique !* \\
 — *Pardon* \\
 — *Ya pas de mal* »
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMTk3MzkxNyw1OTQxNjAxNDMsLTgyMj
-A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
-NF19
+eyJoaXN0b3J5IjpbLTE3NTAxNTA0OTksNTk0MTYwMTQzLC04Mj
+IwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4
+NjRdfQ==
 -->
