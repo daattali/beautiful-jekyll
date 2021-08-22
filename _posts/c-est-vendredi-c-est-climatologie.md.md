@@ -109,8 +109,16 @@ Et ?
 
 Eh ben pfffffft !
 
+![](https://c.tenor.com/ZkBrMi_7MlsAAAAC/ariel-little-mermaid.gif){: width="100%" }
+
+Bah oui : pfffffffffffffffffffffffff… Du vent quoi !
+
+Quand tu a un gaz sous pression d'un côté et un gaz à basse pression de l'autre côté, qu'est-ce qui se passe ? Et ben un courant se crée de la haute à la basse pression. Jusqu'à ce que les pression s'égalise.
+
+En gros tu as un ballon de baudruche (haute pression vu que tu as fait rentré de force de l'air dedans en soufflant comme un ouf) et une pièce à pression normale (basse par rapport au ballon). Et là tu...
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTkxNzAyMzQsMTkyMDk0NzUwNSwtMj
-AyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbMTczNTI2NjY1LDE5MjA5NDc1MDUsLTIwMj
+Q5MjU4NjRdfQ==
 -->
