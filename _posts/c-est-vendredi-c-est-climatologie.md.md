@@ -40,11 +40,11 @@ Modèle "un poil" simplifié de la Terre…?
 
 Ok on va dire que la Terre est sphérique (*c'est pas tout à fait vrai elle est aplatie aux pôles*), on va dire aussi que son axe de rotation est pas incliné (*alors qu'il l'est de 23,45°, c'est pas rien !*), bon et on va même carrément négliger totalement la rotation de la terre pour commencer (*pour être exact on va la moyenner et voir ce qui se passe sur le long terme uniquement*).
 
-« *Quoi encore ? \\
-— Ça serait encore plus simple si la Terre était plate…?! \\
-— Dehors le platiste ! Tu sors ! \\
-— … \\
-— Nan ça serait pas plus simple. En physique on aime bien les trucs rond… ça a tout plein de symétries qui facilitent tous les calcul… et ça permet de se la péter avec de sinus et des cosinus partout !* #trigoÉlitisme »
+« *Quoi encore ?* \\
+— *Ça serait encore plus simple si la Terre était plate…?!* \\
+— *Dehors le platiste ! Tu sors !* \\
+— *…* \\
+— *Nan ça serait pas plus simple. En physique on aime bien les trucs rond… ça a tout plein de symétries qui facilitent tous les calcul… et ça permet de se la péter avec de sinus et des cosinus partout !* #trigoÉlitisme »
 
 Donc notre planète ronde qui tourne pas elle se chauffe comment ?
 
@@ -79,8 +79,8 @@ Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses
 — *Sauf que nan... déjà ta lampe elle est toute petite et proche donc ses rayons s'écartent les un des autres (ils ne sont pas parallèles) donc à la place d'un tube tu as un cône et ça fait que l'énergie "s'étale avec la distance" (en `R²` si tu veux tout savoir).* \\
 — *Et c'est pas le cas avec le Soleil peut-être ?!* \\
 — *Si mais sur des distance démentiellement grande... genre de l'ordre de la distance entre l'orbite de la Terre et l'orbite de Mars : 78 millions de km... et la différence entre l'équateur et le pôle en terme de distance parcouru par la lumière du soleil c'est le rayon de la Terre : 6371 km c'est-à-dire en gros 10 000 fois moins. Si la différence équateur/pôle c'était du à ça elle serait elle aussi ridicule en terme de température.* \\
-— Ah merde... ça semblait facile avec la lampe... \\
-— Sorry Donald. »
+— *Ah merde... ça semblait facile avec la lampe…* \\
+— *Sorry Donald.* »
 
 C'est bien l'inclinaison qui fait la différence de température épicétou !
 
@@ -298,8 +298,14 @@ En bas la même balle vue depuis le disque qui tourne
 — *Non c'est scientifique !* \\
 — *Pardon* \\
 — *Ya pas de mal* »
+
+Donc dès qu'on est sur un truc qui tourne (et où qu'on soit dessus) il faut ajouter une force de Coriolis !
+
+La Terre tourne d'Ouest en Est donc vu depuis le Pôle nord comme le disque de ma figure d'avant : dans l'hémisphère nord la force de Coriolis est donc vers la droite (comme dans la figure). Dans l'hémisphère sud (on voit le disque par en dessous) la force est vers la gauche.
+
+Dans tous les cas elle est toujours perpendiculaire au mouvement : elle te fait toujours tourner… d'où l'impression d'être tout bourré dans un manège : on arrive VRAIMENT pas à marcher droit !
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTAxNTA0OTksNTk0MTYwMTQzLC04Mj
-IwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4
-NjRdfQ==
+eyJoaXN0b3J5IjpbMTQzMjMzMjExMyw1OTQxNjAxNDMsLTgyMj
+A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
+NF19
 -->
