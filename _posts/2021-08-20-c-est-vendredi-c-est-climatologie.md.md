@@ -40,13 +40,19 @@ Modèle "un poil" simplifié de la Terre…?
 
 Ok on va dire que la Terre est sphérique (*c'est pas tout à fait vrai elle est aplatie aux pôles*), on va dire aussi que son axe de rotation est pas incliné (*alors qu'il l'est de 23,45°, c'est pas rien !*), bon et on va même carrément négliger totalement la rotation de la terre pour commencer (*pour être exact on va la moyenner et voir ce qui se passe sur le long terme uniquement*).
 
-« Quoi encore ? \\
+« *Quoi encore ? \\
 — Ça serait encore plus simple si la Terre était plate…?! \\
 — Dehors le platiste ! Tu sors ! \\
 — … \\
-— Nan ça serait pas plus simple. En physique on aime bien les trucs rond… ça a tout plein de symétries qui facilitent tous les calcul… et ça permet de se la péter avec de sinus et des cosinus partout ! #trigoÉlitisme »
+— Nan ça serait pas plus simple. En physique on aime bien les trucs rond… ça a tout plein de symétries qui facilitent tous les calcul… et ça permet de se la péter avec de sinus et des cosinus partout !* #trigoÉlitisme »
 
 Donc notre planète ronde qui tourne pas elle se chauffe comment ?
+
+Chaleur interne ? 🤔 le noyau interne chauffe (à cause de réaction nucléaire et de frottement du magma qui bouge) effectivement la surface… par contre il chauffe uniformément toute la surface… et vraiment pas des masses…
+
+Alors quoi ? Bah le soleil bébé ! #seaSexAndSun
+
+…ah bah nan… notre modèle est un peu trop simple pour "sea, sex and sun" 👉 on va oublier la sea et le sex (sorry) et on va garder juste le **sun**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTMwOTA3NjEsLTcwNDkxMDAwM119
+eyJoaXN0b3J5IjpbLTYyODY3NTYzMywtNzA0OTEwMDAzXX0=
 -->
