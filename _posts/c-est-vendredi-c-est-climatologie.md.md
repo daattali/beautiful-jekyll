@@ -135,13 +135,19 @@ Bah faut dire que mon raisonnement avait un gros défaut : si on suis mon raison
 Ça change quoi ? Bah déjà l'air chaud comme ça se dilate... c'est plus léger que l'air froid (car moins dense) donc il a tendance à monter et l'air froid à descendre.
 #frèreMontgolfier
 
-![](https://c.tenor.com/p_tny-9Xgq0AAAAC/blow-blowing.gif){: width="100%" }
+![Si tu enferme ton air chaud dans un gros drap tu obtiens un ballon à air chaud cad une montgolfière](https://c.tenor.com/IEP7uGsgkwIAAAAC/gemab-mab.gif){: width="100%" }
+
+Donc ça fait juste que notre air chaud de l'équateur monte et se décale vers le pôle. Et parallèlement l'air froid au pôle lui descend...
+
+Mais mais mais... si à l'équateur l'air se barre en altitude... en fait au niveau du sol on a plus une surpression... on a une sous-pression (vu que tout l'air se barre). Et au pôle si l'air retombe vers le sol on a en fait une surpression !
+
+Et bah oui ! 
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MDc0NjI3MSwtODIyMDc1MzAyLDgyNT
-A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
+eyJoaXN0b3J5IjpbMzgyMDIxMjk2LC04MjIwNzUzMDIsODI1MD
+g5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4NjRdfQ==
 -->
