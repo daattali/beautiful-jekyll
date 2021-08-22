@@ -267,18 +267,27 @@ En fait c'est encore une pseudo-force très très chelou puissance 10 : la **for
 
 Et elle t'empêche de marcher droit en te poussant toujours vers la droite (ou la gauche ça dépend du sens de rotation de ton manège…).
 
-« *Je n'y crois pas ! Je suis platiste vous mentez !* » Ah notre ami platiste est de retour… pas de bol pour lui : même si la Terre était plate (ce qu'elle n'est pas !) pourvu qu'elle tourne, il y aurait une force de Coriolis… aller « *Couché panier le platiste !* »
+« *Je n'y crois pas ! Je suis platiste vous mentez !* » Ah notre ami platiste est de retour[^platiste]… pas de bol pour lui : même si la Terre était plate (ce qu'elle n'est pas !) pourvu qu'elle tourne, il y aurait une force de Coriolis… aller « *Couché panier le platiste !* »
 
 ![Quelle plaie…](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif)
 Maintenant qu'on sait qu'il y a une force en plus… essayons de la comrendre un peu. Et pour ça utilisons encore un souvenir de ~~votre~~ **mon** ~~enfance~~ **adulescence** !
+
+[^platiste]: Mais qui l'a laissé entrer ? Moi… si on leur coupe l'accès à la science comment veux-tu qu'ils apprennent ?
 
 ### Troisième souvenir d'enfance : le manège du Palais de la Découverte
 
 Bon ok si vous avez pas passé votre enfance à Paris c'est plus dur… mais venez faire un tour dans [ce musée tout plein d'expériences cools et de gens passionnés](https://www.palais-decouverte.fr/fr/accueil/) !
 
-[^platiste]: Mais qui l'a laissé entrer ? Moi… si on leur coupe l'accès à la science comment veux-tu qu'ils apprennent ?
+Alors c'est quoi un manège du Palais de la découverte ? C'est une plaque ronde de plusieurs mètres de diamètre, bien plate sans rien dessus à part des siège sur le tour, fort judicieusement tournés vers l'intérieur (et avec des dossier pour pas basculer comme des merdes avec la force centrifuge). En gros c'est un bar lounge qui tourne… et sans mojito… quelle honte !
+
+Mais voyez plutôt :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8H3GF8Q73a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NjA4OTQ2OSw1OTQxNjAxNDMsLTgyMj
-A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
-NF19
+eyJoaXN0b3J5IjpbNTQzNzAxNjU3LDU5NDE2MDE0MywtODIyMD
+c1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0
+XX0=
 -->
