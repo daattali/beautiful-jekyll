@@ -426,7 +426,7 @@ Et c'est utile pour le climat ça ? Oui énormément !
 
 Mais il nous manque un truc pour comprendre pourquoi : les saisons !
 
-Vous vous souvenez qu'on a négligé l'inclinaison de l'axe de la Terre ? Ben voilà on va le prendre en compte ! Alors c'est assez simple : comme la Terre est inclinée par rapport au soleil et qu'elle tourne autour de celui-ci, cet angle change selon la position de la Terre sur son orbite et ça change l'angle des rayons solaires (et donc la température).
+Vous vous souvenez qu'on a négligé l'inclinaison de l'axe de la Terre ? Ben voilà on va le prendre en compte ! Alors c'est assez simple : comme la Terre est inclinée par rapport au soleil et qu'elle tourne autour de celui-ci, cet angle change selon la position de la Terre sur son orbite et ça change l'angle des rayons solaires (et donc la température) [^distancesoleil].
 
 - **Inclinaison maximum** : il fait froid 👉 hiver
 - **Inclinaison minimum** : il fait chaud 👉 été
@@ -436,12 +436,27 @@ Bon par contre à l'équateur ça change pas grand chose : il fait toujours chau
 
 Aux pôles on est tellement incliné qu'on peut se retrouver dans l'ombre permanente l'hiver (nuit polaire de plusieurs mois) ou toujours au soleil (jour polaire de plusieurs mois). Oui les pôles c'est vraiment un endroit de merde pour vivre… d'ailleurs quasi personne n'y habite…
 
-[^polemethane]: Si on avait des océans de méthane (comme sur Titan) ou d'huile (nan là sorry j'ai pas d'exemple…) il n'y aurait pas de glace de méthane ou d'huile au pôle car elle coulerait !
+Et sous les tropiques ? Ben il y a une variation d'inclinaison notable mais pas assez pour qu'on ait une des saisons marquées. On a juste un genre d'été (saison chaude et humide) et un genre d'hiver (saison "froide" et sèche).
 
+Alors le froid sous les tropiques c'est très très relatif…
+
+Et pourquoi il pleut l'été sous les tropiques ? En fait on l'a déjà vu : air chaud 👉 dépression 👉 effet aspirateur à humidité 👉 il pleut
+
+Et c'est quoi le rapport avec les océans ???
+
+Et ben sans océan on aurait des saisons bien marquées, propres et tout. Mais quand on est près d'un grosse masse d'eau (l'océan Atlantique par exemple)… et ben l'eau avec son inertie thermique elle va tout adoucir :
+
+- l'été arrive, il devrait faire méga chaud sa race… ah mais nan l'océan lui est encore froid car il met du temps à changer de température donc l'été est chaud mais pas trop
+- l'hiver arrive, on devrait se prendre tes tonnes de neige dans la gueule… sauf que nan, l'océan lui est resté chaud et il va adoucir l'hiver qui se retrouvera souvent à même pas être assez froid pour avoir de la neige
+
+
+
+[^polemethane]: Si on avait des océans de méthane (comme sur Titan) ou d'huile (nan là sorry j'ai pas d'exemple…) il n'y aurait pas de glace de méthane ou d'huile au pôle car elle coulerait !
+[^distancesoleil]: Et bordel non ça ne dépend pas de la distance au soleil sur l'orbite !!!!!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTExNDE1NjMsMTkxMzkyMzIyNCw1OT
-QxNjAxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUw
-NSwtMjAyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbMTAxNDM5NDUyOSwxOTEzOTIzMjI0LDU5ND
+E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
+LC0yMDI0OTI1ODY0XX0=
 -->
