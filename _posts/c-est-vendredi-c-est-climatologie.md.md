@@ -267,10 +267,12 @@ En fait c'est encore une pseudo-force très très chelou puissance 10 : la **for
 
 Et elle t'empêche de marcher droit en te poussant toujours vers la droite (ou la gauche ça dépend du sens de rotation de ton manège…).
 
-« *Je n'y crois pas ! Je suis platiste vous mentez !* »
+« *Je n'y crois pas ! Je suis platiste vous mentez !* » Ah notre ami platiste est de retour… pas de bol pour lui : même si la Terre était plate (ce qu'elle n'est pas !) pourvu qu'elle tourne, il y aurait une force de Coriolis… aller « *Couché panier le platiste !* »
+
+![Pourquoi !? ](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgzOTQ1NDE5LDU5NDE2MDE0MywtODIyMD
-c1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0
-XX0=
+eyJoaXN0b3J5IjpbLTE0NDY1NDYwODksNTk0MTYwMTQzLC04Mj
+IwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4
+NjRdfQ==
 -->
