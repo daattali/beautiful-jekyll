@@ -404,14 +404,22 @@ Bon donc on vient de trouver pourquoi on a de la glace aux pôles. Mais c'est pa
 
 👉 **l'eau a une capacité calorifique thermique super élevée**…
 
-« On comprend pas ce que tu dis ! »
+« *On comprend pas ce que tu dis !* »
+
+![Nan mais il fallait me dire que Perceval était dans la salle !](https://c.tenor.com/wS9l25RT9gAAAAAC/cest-pas-faux.gif){: width="100%" }
+
+Ah… oui… bon. Expliquons un peu le machin.
+
+Si vous avez des radiateur chez vous, soit c'est des radiateurs électriques (et là bon courage niveau facture car c'est pas mais alors pas rentable du tout…) soit vous avez des radiateur à l'ancienne avec des tuyaux et tout (c'est souvent pour ça qu'on installe des radiateur électriques : on évite le passage de plein de tuyaux partout… les radiateurs électriques c'est juste un p'tits fil électrique et hop).
+
+
 
 [^polemethane]: Si on avait des océans de méthane (comme sur Titan) ou d'huile (nan là sorry j'ai pas d'exemple…) il n'y aurait pas de glace de méthane ou d'huile au pôle car elle coulerait !
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM1NDc1NjY4LDE5MTM5MjMyMjQsNTk0MT
-YwMTQzLC04MjIwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUs
-LTIwMjQ5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbMTYzNTA4ODEwNCwxOTEzOTIzMjI0LDU5ND
+E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
+LC0yMDI0OTI1ODY0XX0=
 -->
