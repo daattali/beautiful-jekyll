@@ -56,7 +56,9 @@ Alors quoi ? Bah le soleil bébé ! #seaSexAndSun
 
 ![](https://c.tenor.com/G1CpZxGWnmQAAAAC/perrie-edwards-sighs.gif){: width="100%" }
 
+Le soleil chauffe la Terre par rayonnement, comme un lampe qui vous chauffe ta main quand tu la met devant. Donc en gros la face de la Terre qui est face au soleil devrait être uniformément chaude nan ?
 
+Ben nan pas du tout : aviez-vous déjà remarqué que le matin et le soir il fait vachement moins chaud qu'à midi ? Ça se remarque bien l'été, Enfin quand on a pas un été tout pourri… ☔️
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjIwMzAwMiwtNzA0OTEwMDAzXX0=
+eyJoaXN0b3J5IjpbNzc1ODk0NjA4LC03MDQ5MTAwMDNdfQ==
 -->
