@@ -28,7 +28,15 @@ Et si il y a de la logique derrière, PYM peut pondre un pavé dessus ! [^theore
 
 # Chapitre 1 : Pôle et équateur
 
+Ousékifécho ?
 
+Bon là c'est facile, vous allez me dire qu'il fait chaud à l'équateur et froid aux pôles… alors déjà je pense que peu d'entre-vous ont été le constater par eux-même (quoique… mon audience va peut-être jusqu'au bases polaires et aux bar équatoriens !). En plus on a dit qu'on essayait d'aborder ça de manière lo-gi-queu ! Donc on va pas juste affirmer qu'il fait chaud ou froid !
+
+Alors pour ça comme pour la suite on va partir d'un modèle un poil simplifié et on complexifiera plus tard.
+
+Modèle "un poil" simplifié de la Terre…?
+
+![](https://c.tenor.com/_aIAA5G35OcAAAAC/drunk-alcohol.gif){: width="100%" }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDAyNTM4NDYsLTcwNDkxMDAwM119
+eyJoaXN0b3J5IjpbLTc4Mzc3Mzc0NCwtNzA0OTEwMDAzXX0=
 -->
