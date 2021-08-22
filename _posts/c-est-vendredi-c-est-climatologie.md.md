@@ -91,16 +91,26 @@ Bon bah voilà le climat c'est facile : il fait chaud autour et froid aux pôles
 
 Alors si on avait pas d'atmosphère ça serait vrai...
 
+[^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
+
 ## Chapitre 2 : Atmosphère, atmosphère... est-ce que j'ai une gueule d'atmosphère ?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KYic1U1a6yw?start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Oui je ne l'avais pas dit tout à l'heure, mais mon premier modèle c'était avec une Terre sans atmosphère aussi... mais qu'est ce que ça change ?
 
+L'air, comme à peu près tout quand on le chauffe il prend plus de place (il se dilate, c'est lié à l'agitation des molécules... je rentre pas dans les détails) comme il prend plus de place mais qu'on va pas non plus faire "gonfler l'atmosphère" (son épaisseur est fixée par le champ de gravitation terrestre... autant dire un truc pas hyper flexible...).
+
+Donc si notre air chauffe il ne peut pas prendre plus de place, damned ! Alors c'est la pression qui va augmenter !
+
+Forcément là où il fait froid c'est l'inverse : l'air devrait se contracter mais il va se contenter de baisser sa pression.
+
+Et ?
+
+Eh ben pfffffft !
 
 
-[^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2NjkwMDgzLDE5MjA5NDc1MDUsLTIwMj
-Q5MjU4NjRdfQ==
+eyJoaXN0b3J5IjpbLTEyNTkxNzAyMzQsMTkyMDk0NzUwNSwtMj
+AyNDkyNTg2NF19
 -->
