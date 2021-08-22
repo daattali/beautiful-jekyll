@@ -314,12 +314,14 @@ Mais… on est tous sur Terre ! On devrait le sentir tout le temps !!! On devrai
 
 Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effet notable si tu bouge pas trop vite, sur de longue distance et que tu résiste pas trop… les vents et les courants marins ça marche. À la rigueur si tu es tireur d'élite et que tu tires à plus d'1km de distance tu commence à devoir bien te faire chier car ta balle se décale avec la force de Coriolis[^kyudo][^punk]…
 
+« *Ah mais en fait je connais ! C'est ça qui fait que le tourbillon qui se forme quand je vide ma baignoire tourne dans le sens des aiguilles d'une montre ! Et même quand tu passe l'équateur ça change de sens ! [Je l'ai vu sur Facebook](https://www.lesnumeriques.com/vie-du-net/facebook-terrain-fertile-a-la-propagation-des-fake-news-selon-une-etude-n153589.html) !!!* »
 
+![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif)
 
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzEwNjYyNDQsNTk0MTYwMTQzLC04Mj
-IwNzUzMDIsODI1MDg5NzU2LDE5MjA5NDc1MDUsLTIwMjQ5MjU4
-NjRdfQ==
+eyJoaXN0b3J5IjpbLTkyNzI5NTcwMCw1OTQxNjAxNDMsLTgyMj
+A3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwtMjAyNDkyNTg2
+NF19
 -->
