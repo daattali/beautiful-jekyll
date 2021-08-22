@@ -151,13 +151,19 @@ Vous vous êtes jamais demandé pourquoi tout les explorateurs polaires on syst�
 
 ![Con de vent...](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
 
-Au final on a un vent d'altitude de l'équateur vers le pôle et un vent au sol du pôle vers l'équateur ? Nan… évidemment ça serait trop simple
+Au final on a un vent d'altitude de l'équateur vers le pôle et un vent au sol du pôle vers l'équateur ? Nan… évidemment ça serait trop simple : il y a beaucoup trop de chemin de l'un à l'autre... résultat l'air chaud de l'équateur une fois en altitude il finit par se refroidir (vu qu'il n'est plus à l'équateur) et retomber comme une merde 💩
+
+Où ça ? Bah ça dépend pas mal de la taille de la planète : si la Terre était plus petite ça retomberait à mi-chemin et si elle était plus grosse (comme Jupiter) ça retomberait à beaucoup plus tôt.
+
+Sur Terre, vu le rayonnement solaire, l'épaisseur de l'atmosphère et la taille de la planète ça retombe à un tiers du chemin 👉 les tropiques !!!! (oui c'est pour ça que cette latitude chelou qui semble posé comme un cochon sur un gâteau de mariage est si importante : c'est là que l'air de l'équateur retombe).
+
+Bon en vrai ça tombe pas pile-poil sur les tropiques... ça tombe sur la "[latitude des chevaux".
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon... si si...
 [^toolate]: Trop tard ! Libérééééééééeeeee, Délivréééééééeeeee... et vous aussi maintenant. Ça vous apprendra à lire mes notes de bas de page débiles.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNzU2NTQwOCwtODIyMDc1MzAyLDgyNT
+eyJoaXN0b3J5IjpbMTgzNDk1NzIxOCwtODIyMDc1MzAyLDgyNT
 A4OTc1NiwxOTIwOTQ3NTA1LC0yMDI0OTI1ODY0XX0=
 -->
