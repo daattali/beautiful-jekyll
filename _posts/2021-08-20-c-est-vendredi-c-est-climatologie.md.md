@@ -22,7 +22,9 @@ Bon une grande partie de la géo au collège c'est apprendre où sont les trucs 
 
 Alors autant la position et le nom des pays, des mers et le découpage en continent c'est vraiment arbitraire (avoir un Pakistan et un Afghanistan qui ont une frontière qui coupe littéralement le peuple Pachtoune  ça n'a aucune logique autre que "ça arrangeait bien les anglais, les perses et les russes au XIXème siècle"). Autant les climat ça c'est logique… il y a plein de machin à prendre en compte mais il y a une logique derrière !
 
-Et si il y a de la logique derrière, PYM peut pondre un pavé dessus ! Ça pourrait être un théorème
+Et si il y a de la logique derrière, PYM peut pondre un pavé dessus ! [^theorem]
+
+[^theorem]: Ça pourrait être un théorème !
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTMzNTA5NywtNzA0OTEwMDAzXX0=
+eyJoaXN0b3J5IjpbLTQzMzIxNTI3NiwtNzA0OTEwMDAzXX0=
 -->
