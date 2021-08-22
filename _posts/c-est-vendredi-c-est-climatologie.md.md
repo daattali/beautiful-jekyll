@@ -469,7 +469,8 @@ Et voilà avec tout ça vous avez 90% des climats du globe !
 
 Après des fois il faut prendre en compte les montagnes qui bloque les vents et empêche les dépressions chargée de pluie de passer. Or comme les vent vont toujours dans le même sens à grande échelle (Coriolis tout ça… voir le schéma des cellules) les grosses montagnes on toujours un côté humide et un côté tout sec : au Chili les montagnes sont couverte de forêt humide d'un côté et un véritable désert de l'autre.
 
-
+![Gna gna gna !](https://c.tenor.com/aCsuRpVsQxgAAAAd/radicord-good-joke.gif){: width="100%" }
+https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Map_world_climate_zones_%28simplified_to_10%29-fr.svg/1024px-Map_world_climate_zones_%28simplified_to_10%29-fr.svg.png
 
 
 
@@ -478,7 +479,7 @@ Après des fois il faut prendre en compte les montagnes qui bloque les vents et 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUzMzA4ODksMTkxMzkyMzIyNCw1OTQxNj
-AxNDMsLTgyMjA3NTMwMiw4MjUwODk3NTYsMTkyMDk0NzUwNSwt
-MjAyNDkyNTg2NF19
+eyJoaXN0b3J5IjpbMTE3NzM4MzMzNywxOTEzOTIzMjI0LDU5ND
+E2MDE0MywtODIyMDc1MzAyLDgyNTA4OTc1NiwxOTIwOTQ3NTA1
+LC0yMDI0OTI1ODY0XX0=
 -->
