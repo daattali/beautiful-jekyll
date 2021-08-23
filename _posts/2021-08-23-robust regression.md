@@ -76,7 +76,7 @@ T(G)의 값을 Gateaux derivative 라고 하고 a(x)의 값을 gradient라고 �
 
 (아래 사진에서 GAteaux derivative가 방향도함수와 같은지 알 수 있습니다. 방향도함수는 gradient와 방향벡터 v 와의 내적으로 구성되는데 내적은 결국 원소들의 곱에 대한 합과 동일하기 때문에 Gateaux derivative에서 a(x)는 gradient와 동일하다.)
 
-<그림>
+<img src='{{"/assets/img/robust1.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
 
 
 
@@ -155,7 +155,8 @@ $$
 
 이 정의에 따르면 평균의 경우, 평균을 이루는 원소 중에서 단 하나의 값만이라도 매우 커진다면 통계량이 크게 변화하기 때문에 breakdown point = 0 이라고 할 수 있다. 상대적으로 median의 경우는 breakdown point 가 크고 breakdown point 가 클수록 resistance가 크다고 말할 수 있다.
 
-<사진>
+<img src='{{"/assets/img/robust2.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
+
 
 수식으로 breakdown point를 정의해보자.
 $$
