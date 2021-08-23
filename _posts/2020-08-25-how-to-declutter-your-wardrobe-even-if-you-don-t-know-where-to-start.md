@@ -22,8 +22,8 @@ Is your wardrobe busting at the seams and you want to simplify but have no clue 
 
 These are simple guidelines, but not easy, especially if you are new to fine tuning your wardrobe, but write them down, and keep them in mind if you really want to make changes or make your own rules and use these as a guide.
 
-1. _Doesn't fit? Gone._
-2. _Ripped, broken zippers and not easily fixed? Gone._
+1. _Doesn't fit? Gone._ How often did I keep clothing just for when "I'm that size again?" Newsflash. Having a kid (or four in my case) changes things. And oftentimes, for good! I'm all about the comfy and roomy clothes nowadays to accomodate in between sizes.
+2. _Ripped, broken zippers and not easily fixed? Gone._ I sometimes fix my clothes when it's easy to fix, but anything super complicated go to scraps or recycling/garbage.
 3. _Colour awful on you? Gone._
 4. _Haven't worn in 12 months? Gone._
 5. _Too many of? Gone._
