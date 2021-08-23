@@ -53,7 +53,7 @@ Want to know more about how I fine tuned my whole wardrobe and follow along the 
 
 ![A blog image overview.](/uploads/how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start-shm.jpg "How to declutter your wardrobe even if you don't know where to start SHM")
 
-Other blogs you may enjoy:
+**Other blogs of mine you may enjoy:**
 
 [Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
 
