@@ -31,7 +31,7 @@ subtitle: MDS software stack install instructions for Ubuntu
 ## Installation notes
 
 If you have already installed Git, Latex, or any of the R or Python related packages
-please uninstall these and follow the instructions below to reinstall them
+**please uninstall these and follow the instructions below to reinstall them**
 (make sure to also remove any user configuration files and backup them if desired).
 In order to be able to support you effectively
 and minimize setup issues and software conflicts,
@@ -47,7 +47,15 @@ to check that all software is setup correctly.
 
 ## UBC Student Email
 
-Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started". 
+Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started".
+
+## Ubuntu software settings
+
+To ensure that you are installing the right version of the software below,
+open "Software & Updates" and make sure that the boxes in the screenshot are checked
+(this is the default configuration).
+
+![](/resources_pages/imgs/ubuntu-software-settings.png)
 
 ## Web browser
 

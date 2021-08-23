@@ -32,7 +32,7 @@ subtitle: MDS software stack install instructions for Windows
 ## Installation notes
 
 If you have already installed Git, Latex, Make, or any of the R or Python related packages
-please uninstall these and follow the instructions below to reinstall them
+**please uninstall these and follow the instructions below to reinstall them**
 (make sure to also remove any user configuration files and backup them if desired).
 In order to be able to support you effectively
 and minimize setup issues and software conflicts,
