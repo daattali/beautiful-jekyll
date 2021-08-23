@@ -22,12 +22,12 @@ Is your wardrobe busting at the seams and you want to simplify but have no clue 
 
 These are simple guidelines, but not easy, especially if you are new to fine tuning your wardrobe, but write them down, and keep them in mind if you really want to make changes or make your own rules and use these as a guide.
 
-1. _Doesn't fit? Gone._ How often did I keep clothing just for when "I'm that size again?" Newsflash. Having a kid (or four in my case) changes things. And oftentimes, for good! I'm all about the comfy and roomy clothes nowadays to accomodate in between sizes.
-2. _Ripped, broken zippers and not easily fixed? Gone._ I sometimes fix my clothes when it's easy to fix, but anything super complicated go to scraps or recycling/garbage.
-3. _Colour awful on you? Gone._
-4. _Haven't worn in 12 months? Gone._
-5. _Too many of? Gone._
-6. _Out of style, trend that you no longer enjoy? Gone. Focus on timely pieces you have._
+1. **Doesn't fit? Gone.** How often did I keep clothing just for when "I'm that size again?" Newsflash. Having a kid (or four in my case) changes things. And oftentimes, for good! I'm all about the comfy and roomy clothes nowadays to accomodate in between sizes.
+2. **Ripped, broken zippers and not easily fixed?** _Gone._ I sometimes fix my clothes when it's easy to fix, but anything super complicated go to scraps or recycling/garbage.
+3. **Colour awful on you? Gone. **This one took some time to figure out, but with some help from a friend and [google searches on skin tones/colours](https://womens-fashion.lovetoknow.com/What_Colors_Look_Good_on_Me) plus thinking about what colours I liked, I figured it out. 
+4. **Haven't worn in 12 months? Gone.** You can create whatever rule of thumb you want here, but for me, I find 12 months is a good rule of thumb.
+5. **Too many of? Gone.**
+6. **Out of style, trend that you no longer enjoy? Gone.** _Focus on timely pieces you have._
 
 When I went through this process, I kept in mind what works for me NOW as a home business owner, homeschooling mom, and purged a ton of professional clothes, to boot!  
 You can also find more tips [here](https://www.becomingminimalist.com/thin-closet/) from Joshua Becker's Becoming Minimalist website that you may find helpful. Also Courtney Carver’s book [Project 333](https://amzn.to/2ZdURKp) on developing minimalist wardrobes may be helpful too.
