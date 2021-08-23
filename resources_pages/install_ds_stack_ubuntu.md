@@ -13,6 +13,7 @@ subtitle: MDS software stack install instructions for Ubuntu
 
 - [Installation notes](#installation-notes){:target="_self"}
 - [UBC Student Email](#ubc-student-email){:target="_self"}
+- [Ubuntu software settings](#ubuntu-software-settings){:target="_self"}
 - [Web browser](#web-browser){:target="_self"}
 - [Password manager](#password-manager){:target="_self"}
 - [Slack](#slack){:target="_self"}
@@ -51,7 +52,7 @@ Please sign up for a UBC Student Email. This account will also grant you access 
 
 ## Ubuntu software settings
 
-To ensure that you are installing the right version of the software below,
+To ensure that you are installing the right version of the software in this guide,
 open "Software & Updates" and make sure that the boxes in the screenshot are checked
 (this is the default configuration).
 
