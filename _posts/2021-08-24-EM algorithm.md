@@ -2,7 +2,7 @@
 layout : post
 title : EM algorithm
 subtitle : bayesian, applied statistics
-date : 2021-08-23
+date : 2021-08-24
 #categories:
 tags : [datascience, bayesian, applied statistics in SNU]
 toc_sticky : true
@@ -37,10 +37,9 @@ comments: true
 아래는 EM 알고리즘 기본 유제를 풀이한 것이다.
 
 
+<img src='{{"/assets/img/EM1-1.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
 
-<그림1-1>
-
-<그림 1-2>
+<img src='{{"/assets/img/EM1-2.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
 
 
 
@@ -49,6 +48,7 @@ comments: true
 ※ E-step :
 
 compute 'Q-function'
+
 $$
 \begin{align} Q(\theta | \theta^{(t)}) = E\{logL(\theta | Y_{obs},Y_{mis})|y_{obs},\theta^{(t)}\} \\ = E\{logf(Y_{obs},Y_{mis} | \theta)|y_{obs},\theta^{(t)}\}
 \end{align}
@@ -56,6 +56,7 @@ $$
 
 
 ※ M-step : Maximize Q - function
+
 $$
 \theta^{(t+1)} = argmax_\theta Q(\theta | \theta^{(t)})
 $$
@@ -67,7 +68,15 @@ $$
 
 또한 결측치를  업데이트 할 때, 아래첨자 i 는 고려하지 않는데 이는 업데이트할 모수들이 모두 j와 관계있는 변수이기 때문이다.
 
-<그림 6-1,2,3,4>
+<img src='{{"/assets/img/EM6-1.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
+
+<img src='{{"/assets/img/EM6-2.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
+
+<img src='{{"/assets/img/EM6-3.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
+
+<img src='{{"/assets/img/EM6-4.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
+
+
 
 ###### The nature of EM
 
@@ -79,21 +88,24 @@ $$
 $$
 - H(\theta | \theta^{(t)}) = log f(y_{obs};\theta) - Q(\theta | \theta^{(t)})
 $$
+
 이 값은 
+
 $$
 \theta = \theta^{(t)}
 $$
+
 일 때 최소가 된다.
 
-<그림 3>
+<img src='{{"/assets/img/EM3.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
 
 
 
 ascent property을 증명하는 또 다른 수식이 있는데 여기서는 surrogate function 인 G - function 을 찾아내어 이를 최대화 하는 것이 EM 알고리즘과 같은 것임을 보이고 있다. 
 
-<그림4>
+<img src='{{"/assets/img/EM4.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
 
-<그림5>
+<img src='{{"/assets/img/EM5.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
 
 2. Convergence order
 
@@ -107,6 +119,7 @@ $$
 $$
 lim_{t \rightarrow \infty} \epsilon^{(t)} = 0 \ \ \& \ \ lim_{t \rightarrow \infty} \frac {|\epsilon^{(t+1)}   |}{|\epsilon^{t}   |^\beta} = c \\ where \ \ c \neq 0 \ \  \& \ \beta>0 
 $$
+
 를 만족하는 beta 값을 order of convergence라고 한다. 
 
 이 값이 클수록 수렴속도는 빠르나 robustness를 희생해야 한다. 뉴턴법이나 할선법(secant method)가 수렴 속도가 빠르다.
@@ -120,22 +133,29 @@ mapping \ \ \ \Psi : \Theta \rightarrow \Theta
 $$
 
 에 대해
+
 $$
 \theta^{(t+1)} = \Psi(\theta^{(t)})
 $$
+
 을 EM mapping 이라 하자. 프사이의 값은 데이터와 문제에 의해 항상 바뀐다. 
 
 
 
 만약 EM 알고리즘이 수렴한다고 가정하면,
+
 $$
 \hat \theta = \Psi(\hat \theta)
 $$
+
 이고 Taylor's expansion은
+
 $$
 \Psi( \hat\theta) \approx \Psi( \theta^{(t)}) + \Psi'( \theta^{(t)})(\hat \theta - \theta^{(t)})
 $$
+
 이고 알고리즘의 수렴성에 의해서 
+
 $$
 \hat \theta = \Psi( \hat\theta) \ \ \& \ \ \theta^{(t+1)} = \Psi( \theta^{(t)})
 $$
@@ -145,5 +165,4 @@ $$
 $$
 
 이 때 t 가 무한대로 갈 때 우변의 값이 C로 수렴하고, C 값이 작을 수록 수렴 속도가 빠르다.
-
-<사진2>
+<img src='{{"/assets/img/EM2.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
