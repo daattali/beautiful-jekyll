@@ -125,6 +125,9 @@ $
 
 2. 만약 T가 Gateaux differentiable이면 
 
+
+
+
    $
    \exists \ \ a(x) \ \ s.t. \ \ IF(x;T,F) = \int a(u)d\delta_x(u) = a(x)
    $
@@ -141,19 +144,18 @@ $
 
 4. 만약 
 
-$
-r^*(T,F) < \infty
-$
+
+   $
+   r^*(T,F) < \infty
+   $
 
 가 성립하면 functional T는 F에 대해 B-robutst 하다고 말한다. 
 
 5. 3에서 언급한 gross error sensitivity 를 고려할 때 population breakdown point를 다음과 같이 정의한다
 
-$
-\epsilon^* = inf\{\epsilon : b(\epsilon) = \infty\} \\ where \ \  b(\epsilon) =sup_x|T(F) - T(F_{x \cdot \epsilon})|
-$
-
-
+   $
+   \epsilon^* = inf\{\epsilon : b(\epsilon) = \infty\} \\ where \ \  b(\epsilon) =sup_x|T(F) - T(F_{x \cdot \epsilon})|
+   $
 
 
 #### resistency
