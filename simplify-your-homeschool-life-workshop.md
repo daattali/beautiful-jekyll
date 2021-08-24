@@ -58,7 +58,7 @@ border-radius: 6px;
 </div>
 </div>
 
-_Please note:_ It's $12.99 CAD, which is about $10 USD.
+_Please note:_ It's $12.99 CAD, which is about $10 USD. I’ll email you the workshop and extras within 24 hours after purchase! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
 
 ##### What's included:
 
