@@ -2,7 +2,6 @@
 layout: page
 title: Simplify Your Homeschool Life Workshop
 subtitle: ''
-published: false
 
 ---
 This session will help simplify your homeschool life by showing you how to examine and adjust your day to day from decluttering to planning and more. We will explore what matters most to your family as the basis for simplifying your homeschool life.
@@ -13,11 +12,11 @@ This session will help simplify your homeschool life by showing you how to exami
 
 * Values and priorities of your homeschool life
 * Habits to help simplify your homeschool life
-* Decluttering and organizing
-* Curriculum
-* Planning
-* Areas of frustration/going forward
-* Resources
+* Decluttering and organizing your homeschool life
+* Curriculum - how to keep it simple
+* Planning tips for your homeschool life
+* Areas of frustration/going forward in your homeschool life
+* Further resources
 
 ![An image overview of the course.](/uploads/simplify-your-homeschool-life-workshop.jpg "Simplify Your Homeschool Life Workshop")
 
@@ -59,14 +58,13 @@ border-radius: 6px;
 </div>
 </div>
 
-
 _Please note:_ It's $12.99 CAD, which is about $10 USD.
 
 ##### What's included:
 
 * A 30ish minute video workshop
 * 3 pages of quick notes of the workshop with more resources to dive into
-* _Free bonus worksheet: _10 Questions to Help You Simplify Your Homeschool Life
+* _Free bonus worksheet_: 10 Questions to Help You Simplify Your Homeschool Life
 
 _I'm Kelly Briggs from Halifax, Nova Scotia, and have four children under ten. I’m an elementary teacher, turned homeschool mom eight years ago._
 
