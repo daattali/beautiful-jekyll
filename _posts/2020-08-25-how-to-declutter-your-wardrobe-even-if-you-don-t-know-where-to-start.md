@@ -14,7 +14,7 @@ redirect_from:
 - 2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start
 
 ---
-Is your wardrobe busting at the seams and you want to simplify but have no clue where to start? Today on the blog, I'm going to go over how you can declutter your wardrobe even if you don't know where to start. I'll also be sharing tips from one of the top minimalist living folk, [Joshua Becker](www.becomingminimalist.com) and drawing from my own experience with going through a mega wardrobe declutter.
+Is your wardrobe busting at the seams and you want to simplify but have no clue where to start? Today on the blog, I'm going to go over how you can declutter your wardrobe even if you don't know where to start. I'll also be sharing tips from one of the top minimalist living folk, [Joshua Becker](https://www.becomingminimalist.com) and drawing from my own experience with going through a mega wardrobe declutter.
 
 ![](/uploads/mywardrobe.jpg)
 
@@ -29,7 +29,7 @@ These are simple guidelines, but not easy, especially if you are new to fine tun
 5. **Too many of x items? Gone.** There was a time I had so many clothes for myself that there were quite a few items I didn't wear often enough or had another that I preferred.
 6. **Out of style, trend that you no longer enjoy? Gone.** Focus on timely pieces that you have that'll stand the test of time.
 
-When I went through this process, I kept in mind what works for me NOW as a home business owner, homeschooling mom, and purged a ton of professional clothes, to boot! You can see my summer wardrobe that I shared about it detail [here](https://www.simplehomemom.com/five-steps-to-build-your-simple-summer-wardrobe/). I'm all about comfy, simple, and functional now. You can also find more tips [here](https://www.becomingminimalist.com/thin-closet/) from Joshua Becker's Becoming Minimalist website that you may find helpful. Also Courtney Carver’s book [Project 333](https://amzn.to/2ZdURKp) on developing minimalist wardrobes may be helpful too. 
+When I went through this process, I kept in mind what works for me NOW as a home business owner, homeschooling mom, and purged a ton of professional clothes, to boot! You can see my summer wardrobe that I shared about it detail [here](https://www.simplehomemom.com/five-steps-to-build-your-simple-summer-wardrobe/). I'm all about comfy, simple, and functional now. You can also find more tips [here](https://www.becomingminimalist.com/thin-closet/) from Joshua Becker's Becoming Minimalist website that you may find helpful. Also Courtney Carver’s book [Project 333](https://amzn.to/2ZdURKp) on developing minimalist wardrobes may be helpful too.
 
 ### THE SIMPLE CAPSULE WARDROBE GUIDE
 
@@ -46,7 +46,6 @@ _Want to know more about how I fine tuned my whole wardrobe and follow along the
 **Other blogs of mine you may enjoy:**
 
 * [Fifteen Basics to Consider When Building a Simple Wardrobe](https://www.simplehomemom.com/2020-11-11-fifteen-basics-to-consider-when-building-a-simple-wardrobe/)
-* [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/2020-10-27-how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
-* [How to Declutter Your Wardrobe Even If You Don’t Know Where to Start](https://www.simplehomemom.com/2020-08-25-how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
+* [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
 * [Five Steps to Build Your Simple Summer Wardrobe](https://www.simplehomemom.com/five-steps-to-build-your-simple-summer-wardrobe/)
 * [How a Capsule Wardrobe Made my Life Easier and Saved Me Money](https://www.simplehomemom.com/how-a-capsule-wardrobe-made-my-life-easier-and-saved-me-money/)
