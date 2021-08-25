@@ -34,7 +34,7 @@ comments: true
 
 
 
-아래는 EM 알고리즘 기본 유제를 풀이한 것이다.
+아래는 EM 알고리즘 기본 유제를 풀이한 것이다.(이는 GMM(Gaussian Mixture Model 의 학습과 관련이 있다는 것을 알게 되었다!)
 
 
 <img src='{{"/assets/img/EM1-1.jpg"| relative_url}}'  width="70%" height="70%" title="1" alt='relative'>
