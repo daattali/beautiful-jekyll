@@ -53,7 +53,7 @@ Florencia has a teaching degree at the University the Buenos Aires. She has been
   Mike Gelbart joined UBC in 2015 and was part of the team that designed the MDS curriculum. He attended Princeton University where he obtained an undergraduate degree in physics and worked on research projects in biophysics. Mike then changed directions and received a PhD from the machine learning group at Harvard University. Mike is passionate about education. Recently he has co-founded the Vancouver Independent School for Science and Technology, a not-for-profit STEM high school. When Mike isn't teaching, you can find him at home with his kids or driving them somewhere new, riding his bike or playing video games. <br>
 <br>
 
-<i>In the last 6 months, Mike has learned that graph neural networks are becoming an increasingly popular and powerful tool for harnessing network data. He also learned that how much temperature affects the quality of his sleep.</i> <br>
+<i>In the last 6 months, Mike has learned that graph neural networks are becoming an increasingly popular and powerful tool for harnessing network data. He also learned how much temperature affects the quality of his sleep.</i> <br>
 
 <i>Mike's favourite data science topic is interpreting ML models. </i> <br>
 
