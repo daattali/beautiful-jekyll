@@ -7,7 +7,7 @@ subtitle: Get to know the teaching team
 <img src='../img/team/group.jpeg' width="100%" align="middle"/>
 
 
-The Master of Data Science requires numerous people for the program to run smoothly however, those on the academic team are the individuals that you will be seeing every week and teaching you throughout the year. 
+Courses in the UBC Master of Data Science - Vancouver program are primarily taught by our core teaching team. The team is in constant communication to share ideas, support each other, and collaboratively build the best program we can. These are the faces that you will be seeing every day throughout the MDS program.
 
 ## Team Stats
 
