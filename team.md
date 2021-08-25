@@ -149,7 +149,7 @@ Alexi commenced his current role at MDS in January 2021. He completed his PhD in
 
 #### Arman Seyed-Ahmadi, Postdoctoral Research and Teaching Fellow
 
-<img src='../img/team/arman.jpeg'   align="left" width="34%" style="margin-right: 5px;"/>
+<img src='../img/team/arman.jpeg'   align="left" width="33%" style="margin-right: 5px;"/>
 <p style="font-size:12px">
 Arman Seyed-Ahmadi joined The MDS program in July 2021. He obtained his undergraduate degree from Urmia University of Technology in Mechanical Engineering and a Master's degree in Computational Fluid Dynamics from the University of Tabriz. Arman dove deeper into computational physics and continue his studies in the field by completing a doctorate from UBC. His research involves large-scale numerical simulations of particle-laden flows based on first principles, which he utilizes in developing physics-informed data-driven models. When Arman is not working, he is either reading, playing the violin or biking. <br>
 <br>
