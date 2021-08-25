@@ -48,7 +48,7 @@ Florencia has a teaching degree at the University the Buenos Aires. She has been
 
 #### Mike Gelbart, Co-Director and Assistant Professor of Teaching
 
-<img src="../img/team/mike.jpg" align="left" width="33%" style="margin-right: 5px;"/>
+<img src="../img/team/mike.jpg" align="left" width="34.5%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
   Mike Gelbart joined UBC in 2015 and was part of the team that designed the MDS curriculum. He attended Princeton University where he obtained an undergraduate degree in physics and worked on research projects in biophysics. Mike then changed directions and received a PhD from the machine learning group at Harvard University. Mike is passionate about education. Recently he has co-founded the Vancouver Independent School for Science and Technology, a not-for-profit STEM high school. When Mike isn't teaching, you can find him at home with his kids or driving them somewhere new, riding his bike or playing video games. <br>
 <br>
@@ -100,7 +100,7 @@ Varada Kolhatkar joined the MDS program in October 2018 as a teaching and resear
 
 #### Quan Nguyen, Postdoctoral Research and Teaching Fellow
 
-<img src='../img/team/quan.jpeg'   align="left" width="33%" style="margin-right: 5px;"/>
+<img src='../img/team/quan.jpeg'   align="left" width="34.5%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
 Quan Nguyen began his teaching role in the MDS program at UBC in the summer of 2021. Prior to joining UBC, he was a Postdoctoral Research Fellow in Learning Analytics and an Adjunct Lecturer in the Master of Applied Data Science at the University of Michigan. His research applies statistical and machine learning techniques on large-scale clickstream data from learning management systems to predict student performance and interactions. Quan completed his Ph.D. in Learning Analytics from The Open University and received his Bachelor’s and Master’s degree in Economics from Maastricht University. In his spare time, Quan enjoys playing soccer, basketball, guitar and piano. <br>
 <br>
@@ -132,7 +132,7 @@ Joel began his involvement with MDS as a TA while working on his PhD and joined 
 
 #### Alexi Rodriguez-Arelis, Postdoctoral Research and Teaching Fellow
 
-<img src='../img/team/alexi.jpg'   align="left" width="32%" style="margin-right: 5px;"/>
+<img src='../img/team/alexi.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
 Alexi commenced his current role at MDS in January 2021. He completed his PhD in Statistics at the University of British Columbia in 2020. Born and raised in Mexico, he pursued an undergraduate degree in Industrial Engineering and a master's degree in Applied Statistics at Tecnológico de Monterrey. His machine learning research focuses on computer experiments that emulate scientific and engineering systems via Gaussian stochastic processes. Moreover, he has professional experience in the financial sector along with statistical consulting. When Alexi is not working and teaching, he can be found swimming, trying out new restaurants, or exercising.   <br>
 <br>
