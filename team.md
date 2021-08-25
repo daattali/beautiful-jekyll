@@ -27,6 +27,7 @@ The Master of Data Science requires numerous people for the program to run smoot
 
 ## The Team 
 
+
 #### Florencia D'Andrea, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/florencia.jpg'   align="left" width="32%" style="margin-right: 5px;"/>
@@ -76,8 +77,6 @@ Gittu George became a part of the MDS team in the spring of 2021. He graduated w
 
 <br>
 <br>
-<br>
-
 
 
 
