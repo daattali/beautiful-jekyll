@@ -431,11 +431,11 @@ On appelle ça un climat océanique (proche d'un océan) par opposition à un cl
 
 C'est pour ça qu'à Berlin ou pire a Moscou, l'hiver, on se les pèle grave et l'été, c'est un four. Alors qu'à Brest… l'été est juste chaud et l'hiver assez peu connu pour ses bonhommes de neige (on préfère les bonhommes de beurre salé là-bas !).
 
-4️⃣ **Enfin ultime point important : l'eau ça mouille !**
+4️⃣ **Enfin ultime point important : l'eau, ça mouille !**
 
 ![Gna gna gna !](https://c.tenor.com/aCsuRpVsQxgAAAAd/radicord-good-joke.gif){: width="100%" }
 
-Nan mais c'est vrai quoi ! L'eau ça mouille : à proximité d'un océan les dépressions peuvent facilement se charger d'humidité et donc il pleut plus (☔️Brest☔️ on pense à toi).
+Nan mais c'est vrai quoi ! L'eau, ça mouille : à proximité d'un océan, les dépressions peuvent facilement se charger d'humidité et donc il pleut plus (☔️Brest☔️ on pense à toi).
 
 C'est ultra vrai au niveau des tropiques (juste aussi de la latitude des chevaux et ses anticyclones) il y fait très chaud et donc des dépressions peuvent s'y former.
 
@@ -448,7 +448,7 @@ Et voilà avec tout ça vous avez 90% des climats du globe !
 
 ## Quelques trucs qui manquent…
 
-Après des fois il faut prendre en compte les montagnes qui bloque les vents et empêche les dépressions chargées de pluie de passer. Or comme les vents vont toujours dans le même sens à grande échelle (Coriolis tout ça… voir le schéma des cellules) les grosses montagnes ont toujours un côté humide et un côté tout sec : au Chili les montagnes sont couvertes de forêt humide d'un côté et un véritable désert de l'autre.
+Après des fois, il faut prendre en compte les montagnes qui bloquent les vents et empêchent les dépressions chargées de pluie de passer. Or comme les vents vont toujours dans le même sens à grande échelle (Coriolis tout ça… voir le schéma des cellules) les grosses montagnes ont toujours un côté humide et un côté tout sec : au Chili les montagnes sont couvertes de forêt humide d'un côté et un véritable désert de l'autre.
 
 ![Normalement maintenant vous pouvez sans problème prédire ou comprendre les différents climats sur une carte](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Map_world_climate_zones_%28simplified_to_10%29-fr.svg/1024px-Map_world_climate_zones_%28simplified_to_10%29-fr.svg.png){: width="100%" }
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0MzM5NywtNDcxNzg2NzY5LC0xMzg4OD
-k5MDk5LDIwMDg5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4MTg4
-MjEsMjE3Mzg3MDM5XX0=
+eyJoaXN0b3J5IjpbNDgzNjExNjEzLC00NzE3ODY3NjksLTEzOD
+g4OTkwOTksMjAwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMTM0Njgx
+ODgyMSwyMTczODcwMzldfQ==
 -->
