@@ -344,7 +344,7 @@ J'ajouterai (alors que ça figure pas sur le schéma) :
 
 C'est déjà assez énorme : on a retrouvé les principaux climats de la planète !!!
 
-Bon il y a encore des petits soucis : les tropiques c'est pas toujours sec… des fois c'est humide… et on a pas parlé de climat continental[^continental] (alors qu'on nous rabat les oreilles avec ça au collège !).
+Bon il y a encore des petits soucis : les tropiques c'est pas toujours sec… des fois c'est humide… et on n'a pas parlé de climat continental[^continental] (alors qu'on nous rabat les oreilles avec ça au collège !).
 
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
 [^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
@@ -352,9 +352,9 @@ Bon il y a encore des petits soucis : les tropiques c'est pas toujours sec… de
 
 ## Chapitre 4 : et si on mettait des océans et des continents ?
 
-Ah oui jusqu'ici on a supposé notre planète uniformément constituée de… de rien. En fait on s'en foutait ! C'était une boule de billard avec une atmosphère… Ajoutons donc des continents et des océans… déjà ça rendra le lieu un poil plus habitable. Et en plus ça permettra d'expliquer les 2~3 trucs qui nous manquent.
+Ah oui, jusqu'ici, on a supposé notre planète uniformément constituée de… de rien. En fait, on s'en foutait ! C'était une boule de billard avec une atmosphère… Ajoutons donc des continents et des océans… déjà ça rendra le lieu un poil plus habitable. Et en plus ça permettra d'expliquer les 2~3 trucs qui nous manquent.
 
-Je vais pas expliquer pourquoi il y a des continents et pourquoi ils sont là. C'est pifométrique, ça dépend des fragilités de la croûte terrestre, des point chaud du manteau magmatique, de là où des astéroïdes géant nous sont tombé dessus il y a des milliards d'années… et en plus les continents ça arrête pas de se déplacer (tectonique des plaques, tout ça…).Nan, on va admettre qu'ils ont là où ils sont et puis c'est tout. Ils seraient ailleurs ça serait pareil juste les phénomènes qu'on va décrire seraient décalés ailleurs aussi… mais ça serait les mêmes.
+Je vais pas expliquer pourquoi il y a des continents et pourquoi ils sont là. C'est pifométrique, ça dépend des fragilités de la croûte terrestre, des points chaud du manteau magmatique, de là où des astéroïdes géant nous sont tombé dessus il y a des milliards d'années… et en plus les continents ça arrête pas de se déplacer (tectonique des plaques, tout ça…).Nan, on va admettre qu'ils ont là où ils sont et puis c'est tout. Ils seraient ailleurs ça serait pareil juste les phénomènes qu'on va décrire seraient décalés ailleurs aussi… mais ça serait les mêmes.
 
 ![Deal with it](https://c.tenor.com/KTuATLNVSnYAAAAC/elmo-shrug.gif){: width="100%" }
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjg2NjQ3ODAsLTQ3MTc4Njc2OSwtMT
-M4ODg5OTA5OSwyMDA4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2
-ODE4ODIxLDIxNzM4NzAzOV19
+eyJoaXN0b3J5IjpbODU4MDEyNDYsLTQ3MTc4Njc2OSwtMTM4OD
+g5OTA5OSwyMDA4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4
+ODIxLDIxNzM4NzAzOV19
 -->
