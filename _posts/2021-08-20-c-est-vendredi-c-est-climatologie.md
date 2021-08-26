@@ -322,15 +322,15 @@ Oui mais là aussi Coriolis : le vent va aller vers le centre de la basse pressi
 
 À l'opposé, s’il y a une surpression, le vent devrait rayonner depuis cette surpression sauf que Coriolis ta mère : ça tourne à droite 👉 tourbillon mais dans le sens inverse des aiguilles d'une montre ! En météo (pour des raisons historiques), on appelle ça un anticyclone. Idem vous en voyez tous les jours à la météo.
 
-« *Mais pourquoi anticyclone ?* » Rhaaaaa, j'aurais dû m'y attendre… bah c'est simple, une dépression qui tourne mal (beaucoup de vents, très humide et chaude) ça donne un cyclone, pas cool… et assez vite, on a remarqué qu'avant un cyclone, il y avait une baisse de pression (vu que c'est une dépression) mais que si la pression restait haute bah jamais cyclone 👉 haute pression = anti-cyclone
+« *Mais pourquoi anticyclone ?* » Rhaaaaa, j'aurais dû m'y attendre… bah c'est simple, une dépression qui tourne mal (beaucoup de vents, très humide et chaude) ça donne un cyclone, pas cool… et assez vite, on a remarqué qu'avant un cyclone, il y avait une baisse de pression (vu que c'est une dépression) mais que si la pression restait haute bah, jamais cyclone 👉 haute pression = anti-cyclone
 
-Et pourquoi seul les tourbillons des dépressions font de la merde ? Bah la basse pression donc ça crée un effet d'aspiration au niveau de sol… ou de la mer et donc ça "pompe" de l'humidité en permanence. Les anticyclones eux avec leurs hautes pressions plaque l'humidité au sol. #cqfd
+Et pourquoi seuls les tourbillons des dépressions font de la merde ? Bah la basse pression, donc ça crée un effet d'aspiration au niveau de sol… ou de la mer et donc ça "pompe" de l'humidité en permanence. Les anticyclones eux avec leurs hautes pressions plaquent l'humidité au sol. #cqfd
 
-Re-voyons notre schéma de tout à l'heure il va maintenant prendre tout son sens :
+Re-voyons notre schéma de tout à l'heure, il va maintenant prendre tout son sens :
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
 👆Oh les vent sont tous orientés comme il faut !!! \\
-👆Et je vois même les zone où il y a des anti-cyclones (A) et de dépressions (D)
+👆Et je vois même les zones où il y a des anticyclones (A) et des dépressions (D)
 
 Or on vient de voir que les anticyclones sont plutôt secs et les dépressions humides (par effet "aspirateur à humidité"). Donc on peut en déduire oui il va pleuvoir et où il va faire sec :
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTc3Mjc4NCwtNDcxNzg2NzY5LC0xMz
-g4ODk5MDk5LDIwMDg5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4
-MTg4MjEsMjE3Mzg3MDM5XX0=
+eyJoaXN0b3J5IjpbMzM2MjcxMzM2LC00NzE3ODY3NjksLTEzOD
+g4OTkwOTksMjAwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMTM0Njgx
+ODgyMSwyMTczODcwMzldfQ==
 -->
