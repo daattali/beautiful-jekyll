@@ -171,19 +171,19 @@ Allez hop petit schéma de tout ça :
 
 ![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
 
-Ces 3 cellules dans chaque hémisphère expliquent qu'on ait 4 climats bien marqué et nettement séparés : 
+Ces 3 cellules dans chaque hémisphère expliquent qu'on ait 4 climats bien marqué et nettement séparé : 
 - climat polaire 🥶
 - climat tempéré 😎
 - climat subtropical 🥵
 - climat équatorial 🥵🥵
 
-Voilà on a résolu notre problème : on a bien de l'air sur toute la surface de la terre ! Et en plus on a retrouvé des vents qui existent en vrai !
+Voilà, on a résolu notre problème : on a bien de l'air sur toute la surface de la terre ! Et en plus, on a retrouvé des vents qui existent en vrai !
 
 …enfin…
 
-…là on a que des vents nord-sud ou sud-nord (ce qui est rare en vrai). Et même nos alizés et nos vents polaires, eh ben ils sont au bon endroit… mais pas complètement dans le bon sens : les alizés pousse vers l'ouest (pratique pour faire Europe-Amérique ! N'est-ce pas monsieur Colomb ?) et idem pour les vents polaires !
+…là on a que des vents nord-sud ou sud-nord (ce qui est rare en vrai). Et même nos alizés et nos vents polaires, eh ben ils sont au bon endroit… mais pas complètement dans le bon sens : les alizés poussent vers l'ouest (pratique pour faire Europe-Amérique ! N'est-ce pas monsieur Colomb ?) et idem pour les vents polaires !
 
-En plus sur mon schéma là au-dessus il y a des A et des D, c'est quoi ces machins ?
+En plus sur mon schéma, là, au-dessus, il y a des A et des D, c'est quoi ces machins ?
 
 ## Chapitre 3 : va faire ton cours de physique dans un manège
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODczMzIwMzE4LC0xMzg4ODk5MDk5LDIwMD
-g5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4MTg4MjEsMjE3Mzg3
-MDM5XX0=
+eyJoaXN0b3J5IjpbMTk1OTg0Mzk4NywtMTM4ODg5OTA5OSwyMD
+A4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4
+NzAzOV19
 -->
