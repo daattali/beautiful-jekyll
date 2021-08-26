@@ -422,14 +422,14 @@ Et pourquoi il pleut l'été sous les tropiques ? En fait on l'a déjà vu : **a
 
 Et c'est quoi le rapport avec les océans ???
 
-Eh ben sans océan on aurait des saisons bien marquées, propres et tout. Mais quand on est près d'une grosse masse d'eau (l'océan Atlantique par exemple)… eh ben l'eau avec son inertie thermique elle va tout adoucir :
+Eh ben, sans océans, on aurait des saisons bien marquées, propres et tout. Mais quand on est près d'une grosse masse d'eau (l'océan Atlantique par exemple)… eh ben l'eau avec son inertie thermique, elle va tout adoucir :
 
 - **l'été arrive**, il devrait faire méga chaud sa race… ah mais nan l'océan lui est encore froid car il met du temps à changer de température donc l'été est chaud mais pas trop
 - **l'hiver arrive**, on devrait se prendre tes tonnes de neige dans la gueule… sauf que nan, l'océan lui est resté chaud et il va adoucir l'hiver qui se retrouvera souvent à même pas être assez froid pour avoir de la neige
 
 On appelle ça un climat océanique (proche d'un océan) par opposition à un climat continental (loin d'un océan).
 
-C'est pour ça qu'à Berlin ou pire a Moscou l'hiver on se les pèle grave et l'été c'est un four. Alors qu'à Brest… l'été est juste chaud et l'hiver assez peu connu pour ses bonhommes de neige (on préfère les bonhommes de beurre salé là-bas !).
+C'est pour ça qu'à Berlin ou pire a Moscou, l'hiver, on se les pèle grave et l'été, c'est un four. Alors qu'à Brest… l'été est juste chaud et l'hiver assez peu connu pour ses bonhommes de neige (on préfère les bonhommes de beurre salé là-bas !).
 
 4️⃣ **Enfin ultime point important : l'eau ça mouille !**
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTExNjI3NjgsLTQ3MTc4Njc2OSwtMT
-M4ODg5OTA5OSwyMDA4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2
-ODE4ODIxLDIxNzM4NzAzOV19
+eyJoaXN0b3J5IjpbNzE0MzM5NywtNDcxNzg2NzY5LC0xMzg4OD
+k5MDk5LDIwMDg5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4MTg4
+MjEsMjE3Mzg3MDM5XX0=
 -->
