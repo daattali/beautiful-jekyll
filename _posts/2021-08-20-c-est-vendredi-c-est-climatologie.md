@@ -82,15 +82,15 @@ Alors si la Terre ne tournait pas sur son axe, ça serait vraiment la merde car 
 … \\
 Bon bah voilà le climat c'est facile : il fait chaud autour et froid aux pôles !
 
-Alors si on avait pas d'atmosphère ça serait vrai…[^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
+Alors si on n'avait pas d'atmosphère ça serait vrai…[^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
 
 ## Chapitre 2 : Atmosphère, atmosphère… est-ce que j'ai une gueule d'atmosphère ?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KYic1U1a6yw?start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Oui je ne l'avais pas dit tout à l'heure, mais mon premier modèle c'était avec une Terre sans atmosphère aussi… mais qu'est-ce que ça change ?
+Oui, je ne l'avais pas dit tout à l'heure, mais mon premier modèle c'était avec une Terre sans atmosphère aussi… mais qu'est-ce que ça change ?
 
-L'air, comme à peu près tout quand on le chauffe il prend plus de place (il se dilate, c'est lié à l'agitation des molécules… je rentre pas dans les détails) comme il prend plus de place mais qu'on va pas non plus faire "gonfler l'atmosphère" (son épaisseur est fixée par le champ de gravitation terrestre… autant dire un truc pas hyper flexible…).
+L'air, comme à peu près tout quand on le chauffe, il prend plus de place (il se dilate, c'est lié à l'agitation des molécules… je rentre pas dans les détails) comme il prend plus de place mais qu'on va pas non plus faire "gonfler l'atmosphère" (son épaisseur est fixée par le champ de gravitation terrestre… autant dire un truc pas hyper flexible…).
 
 Donc si notre air chauffe il ne peut pas prendre plus de place, damned ! Alors c'est la pression qui va augmenter !
 
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTQwOTAxNDAsMjAwODkyNzUzNSwtMT
-M0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTczODcwMzldfQ==
+eyJoaXN0b3J5IjpbMTM4MzE0OTc3MywyMDA4OTI3NTM1LC0xMz
+QzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4NzAzOV19
 -->
