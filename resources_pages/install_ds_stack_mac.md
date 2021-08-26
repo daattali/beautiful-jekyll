@@ -239,9 +239,9 @@ A package needs to go through thorough testing before it is included in the defa
 which is good for stability,
 but also means that new versions will be delayed and fewer packages are available overall.
 There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
-which provides more up to date packages
+which provides more up to date packages.
 To enable us to access the most up to date version of the Python packages we are going to use,
-we will add the more up to date  channel,
+we will add the more up to date channel.
 To add the conda-forge channel by typing the following in the terminal:
 
 ```bash
@@ -256,6 +256,7 @@ After running that command
 and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
+Also note that we may occasionally need to install packages using `pip`, the standard Python package manager. The installation command is very similar to that of `conda`: `pip install <package-name>`.
 Let's try this out in the next section,
 by installing some of the key packages we will use in MDS.
 
@@ -270,8 +271,16 @@ and the LSP packages fill the same function for our code.
 Install them via the following commands:
 
 ```bash
-conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
+conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
 ```
+
+We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
+
+```bash
+pip install otter-grader
+```
+
+> Note: You will also install Otter-Grader for R in the later sections of this guide.
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal,
 which should open a new tab in your default browser with the JupyterLab interface.
@@ -338,7 +347,9 @@ by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```R
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver'))
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+devtools::install_github("ucbds-infra/ottr@stable")
+devtools::install_github("ttimbers/canlang")
 ```
 
 > **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
