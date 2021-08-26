@@ -24,7 +24,7 @@ Et s’il y a de la logique derrière, PYM peut pondre un pavé dessus ! [^theor
 
 Ousékifécho ?
 
-Bon là c'est facile, vous allez me dire qu'il fait chaud à l'équateur et froid aux pôles… alors déjà je pense que peu d'entre vous ont été le constater par eux-mêmes (quoique… mon audience va peut-être jusqu'aux bases polaires et aux bar équatoriens !). En plus on a dit qu'on essayait d'aborder ça de manière lo-gi-queu ! Donc on va pas juste affirmer qu'il fait chaud ou froid !
+Bon là c'est facile, vous allez me dire qu'il fait chaud à l'équateur et froid aux pôles… alors déjà je pense que peu d'entre vous ont été le constater par eux-mêmes (quoique… mon audience va peut-être jusqu'aux bases polaires et aux bars équatoriens !). En plus on a dit qu'on essayait d'aborder ça de manière lo-gi-queu ! Donc on va pas juste affirmer qu'il fait chaud ou froid !
 
 Alors pour ça comme pour la suite on va partir d'un modèle un poil simplifié et on complexifiera plus tard.
 
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjk1NTM0MTgsLTEzNDM4OTcwODksLT
-EzNDY4MTg4MjEsMjE3Mzg3MDM5XX0=
+eyJoaXN0b3J5IjpbMjAwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMT
+M0NjgxODgyMSwyMTczODcwMzldfQ==
 -->
