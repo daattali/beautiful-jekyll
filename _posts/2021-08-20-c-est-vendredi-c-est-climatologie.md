@@ -204,7 +204,7 @@ Mais, en fait si, ça change un truc… seulement comme on n'a pas l'habitude de
 
 C'est cette espèce de machin qui tourne et où on peut monter sur les bords (souvent en s'accrochant à des barres pour pas se casser la gueule) …un genre de tourne-disque géant quoi…
 
-Eh ben là, très très vite, même à 4 ans, tu remarques qu'il y a un truc bizarre : dès que ça tourne… tu es tiré vers l'arrière. Et plus ça tourne vite, plus ça te tire fort. D'où l'intérêt des fameuses barre pour s'accrocher !
+Eh ben là, très très vite, même à 4 ans, tu remarques qu'il y a un truc bizarre : dès que ça tourne… tu es tiré vers l'arrière. Et plus ça tourne vite, plus ça te tire fort. D'où l'intérêt des fameuses barres pour s'accrocher !
 
 Et pourtant aucun objet ne nous attire vers l'extérieur (un aimant à nain ?!) et aucun objet ne nous repousse depuis l'intérieur (un aimant à nain mais avec le même pôle que le nain ??!?).
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDQ3OTEyNywtMTM4ODg5OTA5OSwyMD
-A4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4
-NzAzOV19
+eyJoaXN0b3J5IjpbLTE2OTE3OTU5NDgsLTEzODg4OTkwOTksMj
+AwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTcz
+ODcwMzldfQ==
 -->
