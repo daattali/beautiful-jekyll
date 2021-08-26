@@ -214,13 +214,13 @@ Chelou, vous disais-je.
 
 En fait, c'est juste que quand le tourniquet commence à tourner… ben vous bouger avec, ça vous donne une vitesse. Seulement les objets (tous les objets !!) aiment garder des trajectoires rectilignes (c'est l'inertie) donc en fait le tourniquet, si vous ne vous teniez pas, vous éjecterait tout de suite, car vous continueriez tout droit dans le sens de la marche (on dit tangentiellement au putain de tourniquet quand on veut briller en société mais garder sa street cred')
 
-C'est le principe de la fronde : on fait tourner un truc au bout d'une ficelle et quand on lâche il part tout droit (perpendiculairement à la ficelle… ça surprend tous les novices qui se retrouve à éborgner leurs potes à côté plutôt que les cons en face)
+C'est le principe de la fronde : on fait tourner un truc au bout d'une ficelle et quand on lâche, il part tout droit (perpendiculairement à la ficelle… ça surprend tous les novices qui se retrouvent à éborgner leurs potes à côté plutôt que les cons en face)
 
 ![David il était balèze à la fronde ! Goliath lui était plutôt balèze en pierre dans la gueule…](https://c.tenor.com/InanccWZ7rcAAAAd/david-goliath.gif){: width="100%" }
 
-Donc la force centrifuge c'est juste ton corps qui a envie de continuer tout droit… mais comme tu vois le tourniquet fixe (bordel arrête d'agiter la tête dans tous les sens ça foire mon explication !) tu a l'impression qu'on te tire vers l'arrière.
+Donc la force centrifuge, c'est juste ton corps qui a envie de continuer tout droit… mais comme tu vois le tourniquet fixe (bordel, arrête d'agiter la tête dans tous les sens, ça foire mon explication !), tu as l'impression qu'on te tire vers l'arrière.
 
-Voilà 4 ans et on a déjà expérimenté une pseudo-force !
+Voilà 4 ans, et on a déjà expérimenté une pseudo-force !
 
 Bon par contre pas de bol celle-là n'a quasi aucun effet sur le climat 😅 à part aux pôles où elle contribue à rendre les vents polaires au sol encore pire : elle éloigne l'air du pôle donc pile poil le sens des vents polaires !
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTU3NzI0ODQsLTEzODg4OTkwOTksMj
-AwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTcz
-ODcwMzldfQ==
+eyJoaXN0b3J5IjpbLTM3NjE4NjA4MywtMTM4ODg5OTA5OSwyMD
+A4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4
+NzAzOV19
 -->
