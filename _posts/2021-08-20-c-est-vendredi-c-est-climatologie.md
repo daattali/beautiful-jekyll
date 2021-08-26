@@ -206,13 +206,13 @@ C'est cette espèce de machin qui tourne et où on peut monter sur les bords (so
 
 Eh ben là, très très vite, même à 4 ans, tu remarques qu'il y a un truc bizarre : dès que ça tourne… tu es tiré vers l'arrière. Et plus ça tourne vite, plus ça te tire fort. D'où l'intérêt des fameuses barres pour s'accrocher !
 
-Et pourtant aucun objet ne nous attire vers l'extérieur (un aimant à nain ?!) et aucun objet ne nous repousse depuis l'intérieur (un aimant à nain mais avec le même pôle que le nain ??!?).
+Et pourtant, aucun objet ne nous attire vers l'extérieur (un aimant à nain ?!) et aucun objet ne nous repousse depuis l'intérieur (un aimant à nain mais avec le même pôle que le nain ??!?).
 
 Nan rien de tout ça…C'est ce qu'on appelle une pseudo-force : ça ressemble à une force sauf que ça n'a pas d'objet physique pour la créer.
 
-Chelou vous disais-je.
+Chelou, vous disais-je.
 
-En fait c'est juste que quand le tourniquet commence à tourner… ben vous bouger avec, ça vous donne une vitesse. Seulement les objets (tous les objets !!) aiment garder des trajectoires rectilignes (c'est l'inertie) donc en fait le tourniquet si vous ne vous teniez pas vous éjecterait tout de suite, car vous continueriez tout droit dans le sens de la marche (on dit tangentiellement au putain de tourniquet quand on veut briller en société mais garder sa street cred')
+En fait, c'est juste que quand le tourniquet commence à tourner… ben vous bouger avec, ça vous donne une vitesse. Seulement les objets (tous les objets !!) aiment garder des trajectoires rectilignes (c'est l'inertie) donc en fait le tourniquet, si vous ne vous teniez pas, vous éjecterait tout de suite, car vous continueriez tout droit dans le sens de la marche (on dit tangentiellement au putain de tourniquet quand on veut briller en société mais garder sa street cred')
 
 C'est le principe de la fronde : on fait tourner un truc au bout d'une ficelle et quand on lâche il part tout droit (perpendiculairement à la ficelle… ça surprend tous les novices qui se retrouve à éborgner leurs potes à côté plutôt que les cons en face)
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTE3OTU5NDgsLTEzODg4OTkwOTksMj
+eyJoaXN0b3J5IjpbLTE5NTU3NzI0ODQsLTEzODg4OTkwOTksMj
 AwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTcz
 ODcwMzldfQ==
 -->
