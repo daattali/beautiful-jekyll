@@ -30,4 +30,10 @@ This is a post contains step-by-step guide to clear SharePoint configuration cac
 > Note: The file system cache is re-created after you perform this procedure. Make sure that you perform this procedure on all servers in the server farm.
 
 
-Besides the manually steps, you can try [spcachecleaner](https://github.com/DwayneSelsig/spcachecleaner) tool (https://github.com/DwayneSelsig/spcachecleaner) to clear the SharePoint Configuration Cache.
+Besides the manually steps, you can try [spcachecleaner][DwayneSelsig/spcachecleaner] tool to clear the SharePoint Configuration Cache.
+
+## References  
+* KB: https://docs.microsoft.com/en-US/sharepoint/troubleshoot/security/update-conflict-when-modify-or-delete-alternate-access-mapping
+* spcachecleaner: https://github.com/DwayneSelsig/spcachecleaner
+
+[DwayneSelsig/spcachecleaner]: https://github.com/DwayneSelsig/spcachecleaner
