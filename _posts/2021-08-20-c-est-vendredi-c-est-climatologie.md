@@ -16,7 +16,7 @@ Bon une grande partie de la géo au collège c'est apprendre où sont les trucs 
 
 ![](https://c.tenor.com/_aIAA5G35OcAAAAC/drunk-alcohol.gif){: width="100%" }
 
-Alors autant la position et le nom des pays, des mers et le découpage en continent c'est vraiment arbitraire (avoir un Pakistan et un Afghanistan qui ont une frontière qui coupe littéralement le peuple pachtoune  ça n'a aucune logique autre que "ça arrangeait bien les Anglais, les Perses et les Russes au XIXᵉ siècle"). Autant les climats ça c'est logique… il y a plein de machin à prendre en compte, mais il y a une logique derrière !
+Alors autant la position et le nom des pays, des mers et le découpage en continent,c'est vraiment arbitraire (avoir un Pakistan et un Afghanistan qui ont une frontière qui coupe littéralement le peuple pachtoune  ça n'a aucune logique autre que "ça arrangeait bien les Anglais, les Perses et les Russes au XIXᵉ siècle"). Autant les climats ça c'est logique… il y a plein de machin à prendre en compte, mais il y a une logique derrière !
 
 Et s’il y a de la logique derrière, PYM peut pondre un pavé dessus ! [^theorem][^theorem]: Ça pourrait être un théorème !
 
@@ -71,7 +71,7 @@ Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses
 — *Ah ah ! Je le savais !* \\
 — *Sauf que nan… déjà ta lampe elle est toute petite et proche donc ses rayons s'écartent les uns des autres (ils ne sont pas parallèles) donc à la place d'un tube tu as un cône et ça fait que l'énergie "s'étale avec la distance" (en `R²` si tu veux tout savoir).* \\
 — *Et c'est pas le cas avec le Soleil peut-être ?!* \\
-— *Si mais sur des distances démentiellement grande… genre de l'ordre de la distance entre l'orbite de la Terre et l'orbite de Mars : 78 millions de km… et la différence entre l'équateur et le pôle en termes de distance parcourue par la lumière du soleil c'est le rayon de la Terre : 6 371 km c'est-à-dire en gros 10 000 fois moins. Si la différence équateur/pôle c'était dû à ça elle serait elle aussi ridicule en termes de température.* \\
+— *Si mais sur des distances démentiellement grandes… genre de l'ordre de la distance entre l'orbite de la Terre et l'orbite de Mars : 78 millions de km… et la différence entre l'équateur et le pôle en termes de distance parcourue par la lumière du soleil c'est le rayon de la Terre : 6 371 km c'est-à-dire en gros 10 000 fois moins. Si la différence équateur/pôle était dû à ça, elle serait elle aussi ridicule en termes de température.* \\
 — *Ah merde… ça semblait facile avec la lampe…* \\
 — *Sorry Donald.* »
 
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NDA0MTY0NywyMDA4OTI3NTM1LC0xMz
+eyJoaXN0b3J5IjpbMTk2ODYwNjUyNCwyMDA4OTI3NTM1LC0xMz
 QzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4NzAzOV19
 -->
