@@ -25,6 +25,41 @@ $CorrelationId = ""
 Merge-SPLogFile -Path "C:\Temp\ULS_$CorrelationId.log" -Correlation $CorrelationId  
 ~~~
 
+### Collect Fiddler and ULS logs
+
+1. [Client] Download and install Fiddler Classic: https://www.telerik.com/download/fiddler 
+2. [Client] Close any instances of your web browser.
+3. [Client] Launch Fiddler by clicking Start, All Programs, and Fiddler2/Fiddler4.
+4. [Client] Pull down Fiddler’s Tools menu and choose Fiddler Options.
+5. [Client] Click the HTTPS tab, make sure there are checks in both the Capture and Decrypt checkboxes.
+6. [Client] When asked if you want to Trust the Fiddler Root certificate, click Yes.
+7. [Client] When asked Do you want to install this certificate, click Yes.
+8. [Client] When asked to Please confirm that you wish to ADD the following certificate to your PC’s Trusted Root List, click Yes.
+9. [Client] Click OK on the TrustCert Success dialog.
+10. [Client] Click OK on the Fiddler Options dialog.
+11. [Server] Run below script in SharePoint Managed Shell
+~~~
+$logPath = 'C:\Temp\merged.log';
+$logCategory = '*';
+$starttime = Get-Date
+New-SPLogFile
+Set-SPLogLevel -TraceSeverity VerboseEx -Identity $logCategory 
+~~~
+12. [Client] Reproduce the issue and capture a snapshot on the error and make sure the Correlation ID is included.
+13. [Server] Run below script in SharePoint Managed Shell
+~~~
+$endtime = Get-Date
+Clear-SPLogLevel -Identity $logCategory
+Merge-SPLogFile -Path $logPath -StartTime $starttime -EndTime $endtime -Overwrite
+New-SPLogFile 
+~~~
+14. [Client] Pull down Fiddler’s File menu and choose Save All Sessions.
+15. [Client] Type a file name and click Save.
+16. [Client] Pull down Fiddler’s File menu and choose Exit.
+> [Client] means you can run the steps from Client machine, you do not have to run from Server.  
+> [Server] means you have to run it from Server.
+
+
 ### Collect ULS logs from servers directly
 Credit: [acasilla/CollectULSLogs](https://github.com/acasilla/CollectULSLogs), [Download](https://github.com/acasilla/CollectULSLogs/releases/tag/v1.0)
 ~~~
