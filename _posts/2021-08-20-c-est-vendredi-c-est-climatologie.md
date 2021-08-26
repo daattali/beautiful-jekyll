@@ -354,7 +354,7 @@ Bon il y a encore des petits soucis : les tropiques c'est pas toujours sec… de
 
 Ah oui, jusqu'ici, on a supposé notre planète uniformément constituée de… de rien. En fait, on s'en foutait ! C'était une boule de billard avec une atmosphère… Ajoutons donc des continents et des océans… déjà ça rendra le lieu un poil plus habitable. Et en plus ça permettra d'expliquer les 2~3 trucs qui nous manquent.
 
-Je vais pas expliquer pourquoi il y a des continents et pourquoi ils sont là. C'est pifométrique, ça dépend des fragilités de la croûte terrestre, des points chaud du manteau magmatique, de là où des astéroïdes géant nous sont tombé dessus il y a des milliards d'années… et en plus les continents ça arrête pas de se déplacer (tectonique des plaques, tout ça…).Nan, on va admettre qu'ils ont là où ils sont et puis c'est tout. Ils seraient ailleurs ça serait pareil juste les phénomènes qu'on va décrire seraient décalés ailleurs aussi… mais ça serait les mêmes.
+Je vais pas expliquer pourquoi il y a des continents et pourquoi ils sont là. C'est pifométrique, ça dépend des fragilités de la croûte terrestre, des points chauds du manteau magmatique, de là où des astéroïdes géants nous sont tombés dessus il y a des milliards d'années… et en plus les continents, ça n'arrête pas de se déplacer (tectonique des plaques, tout ça…). Nan, on va admettre qu'ils ont là où ils sont et puis c'est tout. Ils seraient ailleurs ça serait pareil juste les phénomènes qu'on va décrire seraient décalés ailleurs aussi… mais ça serait les mêmes.
 
 ![Deal with it](https://c.tenor.com/KTuATLNVSnYAAAAC/elmo-shrug.gif){: width="100%" }
 
@@ -366,7 +366,7 @@ Ensuite les océans c'est de l'eau !
 
 ![De rien](https://c.tenor.com/FQZUnqVzEeUAAAAC/captain-obvious-thank-you.gif){: width="100%" }
 
-Et l'eau c'est un machin un peu bizarre physico-chimiquement. Mais une seule de ses particularités nous intéresse ici.Voyons donc les particularités de l'eau :
+Et l'eau c'est un machin un peu bizarre physico-chimiquement. Mais une seule de ses particularités nous intéresse ici. Voyons donc les particularités de l'eau :
 
 1️⃣ **L'eau est un excellent solvant polaire** (elle dissout bien tout ce qui a une charge électrique, on appelle ça les composés ioniques) : le sel par exemple de formule `NaCl` va se dissoudre en ions `Na+` et `Cl-` et dans l'eau ça restera très stable. Essayez juste une fois de dissoudre du sel dans l'huile ça sera la fête du fail.
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4MDEyNDYsLTQ3MTc4Njc2OSwtMTM4OD
-g5OTA5OSwyMDA4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4
-ODIxLDIxNzM4NzAzOV19
+eyJoaXN0b3J5IjpbLTE3MjE2ODg2OTgsLTQ3MTc4Njc2OSwtMT
+M4ODg5OTA5OSwyMDA4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2
+ODE4ODIxLDIxNzM4NzAzOV19
 -->
