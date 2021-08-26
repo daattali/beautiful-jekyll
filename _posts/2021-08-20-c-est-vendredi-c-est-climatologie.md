@@ -92,7 +92,7 @@ Oui, je ne l'avais pas dit tout à l'heure, mais mon premier modèle c'était av
 
 L'air, comme à peu près tout quand on le chauffe, il prend plus de place (il se dilate, c'est lié à l'agitation des molécules… je rentre pas dans les détails) comme il prend plus de place mais qu'on va pas non plus faire "gonfler l'atmosphère" (son épaisseur est fixée par le champ de gravitation terrestre… autant dire un truc pas hyper flexible…).
 
-Donc si notre air chauffe il ne peut pas prendre plus de place, damned ! Alors c'est la pression qui va augmenter !
+Donc si notre air chauffe, il ne peut pas prendre plus de place, damned ! Alors c'est la pression qui va augmenter !
 
 Forcément là où il fait froid c'est l'inverse : l'air devrait se contracter, mais il va se contenter de baisser sa pression.
 
@@ -104,9 +104,9 @@ Eh ben pfffffft !
 
 Bah oui : pfffffffffffffffffffffffff… Du vent quoi !
 
-Quand tu a un gaz sous pression d'un côté et un gaz à basse pression de l'autre côté, qu'est-ce qui se passe ? Eh ben un courant se crée de la haute à la basse pression. Jusqu'à ce que les pressions s'égalise.
+Quand tu a un gaz sous pression d'un côté et un gaz à basse pression de l'autre côté, qu'est-ce qui se passe ? Eh ben un courant se crée de la haute à la basse pression. Jusqu'à ce que les pressions s'égalisent.
 
-En gros tu as un ballon de baudruche (haute pression vu que tu as fait rentrer de force de l'air dedans en soufflant comme un ouf) et une pièce à pression normale (basse par rapport au ballon). Et là tu ouvres l'embouchure du ballon[^pfff] :
+En gros, tu as un ballon de baudruche (haute pression vu que tu as fait rentrer de force de l'air dedans en soufflant comme un ouf) et une pièce à pression normale (basse par rapport au ballon). Et là, tu ouvres l'embouchure du ballon[^pfff] :
 
 ![](https://c.tenor.com/p_tny-9Xgq0AAAAC/blow-blowing.gif){: width="100%" }
 
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MzE0OTc3MywyMDA4OTI3NTM1LC0xMz
+eyJoaXN0b3J5IjpbMTY0OTc1MzY0MywyMDA4OTI3NTM1LC0xMz
 QzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4NzAzOV19
 -->
