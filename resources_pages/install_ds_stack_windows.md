@@ -522,20 +522,10 @@ Next, install the key R packages needed for the start of MDS program,
 by opening up RStudio and
 typing the following into the R console inside RStudio:
 
-```
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver'))
-```
-
-> **Note:** It might take a rather long time to install these pacakges.
-
-If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
-
-> **Note**: We will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
-
-As mentioned earlier, you will need the Otter-Grader package in R as well, which you can install by runninng the following command in the R console:
-
 ```R
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
+devtools::install_github("ttimbers/canlang")
 ```
 
 ### IRkernel
