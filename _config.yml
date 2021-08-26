@@ -5,10 +5,11 @@ author: Kelly Briggs
 navbar-links:
   Popular: popular
   Resources:
-  - Course: "/course/"
-  - The Simple Meal Planning Guide: "/the-simple-meal-planning-guide/"
-  - Simple Capsule Wardrobe Guide: "/simple-capsule-wardrobe-guide/"
   - Freebies: "/freebies/"
+  - Simplify Your Home Life Course: "/course/"
+  - Simplify Your Homeschool Life Workshop: "/simplify-your-homeschool-life-workshop/"
+  - The Simple Meal Planning Guide: "/the-simple-meal-planning-guide/"
+  - The Simple Capsule Wardrobe Guide: "/simple-capsule-wardrobe-guide/"
   Connect:
   - About me: https://kellymbriggs.github.io/aboutme/
   - Contact: https://kellymbriggs.github.io/contact/
