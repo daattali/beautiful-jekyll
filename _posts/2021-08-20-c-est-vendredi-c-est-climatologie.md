@@ -193,7 +193,7 @@ Alors pourquoi nos vents ne sont-ils pas nord-sud bien droit et tout ?! Eh ben p
 
 Bon bah OK elle tourne… euh ça a pas l'air de changer grand-chose à notre raisonnement de la faire tourner (d'ailleurs on l'avait déjà fait tourner tout à l'heure, histoire de ne pas avoir une face [Dracaufeu](https://www.pokepedia.fr/Dracaufeu) 🔥 et une face [Sorbouboul](https://www.pokepedia.fr/Sorbouboul) 🧊.
 
-Mais, en fait si ça change un truc… seulement comme on a pas l'habitude de se déplacer sur un truc qui tourne (bon à part la Terre…) on est pas habitué à la physique "dans un référentiel en rotation uniforme". Utilisons donc la vraie arme de tous les physiciens, climatologues et autres géographes : les souvenirs d'enfance !
+Mais, en fait si, ça change un truc… seulement comme on n'a pas l'habitude de se déplacer sur un truc qui tourne (bon à part la Terre…) on n'est pas habitué à la physique "dans un référentiel en rotation uniforme". Utilisons donc la vraie arme de tous les physiciens, climatologues et autres géographes : les souvenirs d'enfance !
 
 ![vous voyez bien, quand on était gamin on kiffait les référentiels en rotation uniforme ! Et vous avez vu comment je portais bien la robe de princesse ?](https://c.tenor.com/LnVVa9CicNIAAAAC/flower-girl-girls.gif){: width="100%" }
 
@@ -204,7 +204,7 @@ Mais, en fait si ça change un truc… seulement comme on a pas l'habitude de se
 
 C'est cette espèce de machin qui tourne et où on peut monter sur les bords (souvent en s'accrochant à des barres pour pas se casser la gueule) …un genre de tourne-disque géant quoi…
 
-Eh ben là très très vite, même à 4 ans tu remarques qu'il y a un truc bizarre : dès que ça tourne… tu es tiré vers l'arrière. Et plus ça tourne vite, plus ça te tire fort. D'où l'intérêt des fameuses barre pour s'accrocher !
+Eh ben là, très très vite, même à 4 ans, tu remarques qu'il y a un truc bizarre : dès que ça tourne… tu es tiré vers l'arrière. Et plus ça tourne vite, plus ça te tire fort. D'où l'intérêt des fameuses barre pour s'accrocher !
 
 Et pourtant aucun objet ne nous attire vers l'extérieur (un aimant à nain ?!) et aucun objet ne nous repousse depuis l'intérieur (un aimant à nain mais avec le même pôle que le nain ??!?).
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0NTM2OTIxLC0xMzg4ODk5MDk5LDIwMD
-g5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4MTg4MjEsMjE3Mzg3
-MDM5XX0=
+eyJoaXN0b3J5IjpbMTM2NDQ3OTEyNywtMTM4ODg5OTA5OSwyMD
+A4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4
+NzAzOV19
 -->
