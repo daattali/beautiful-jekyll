@@ -77,7 +77,7 @@ Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses
 
 C'est bien l'inclinaison qui fait la différence de température épicétou !
 
-Alors si la Terre ne tournait pas sur son axe, ça serait vraiment la merde car on aurait une face cramée et une face congelée (comme c'est le cas sur Mercure). Heureusement, nous, on a une planète qui tourne bien comme il faut comme un bon kebab : le rayonnement soleil se répartit tout bien sur tout le tour. Donc tout l'équateur est chaud et tout le tour des pôles est bien froid (entre les deux c'est ni glacé ni brûlant). \\
+Alors si la Terre ne tournait pas sur son axe, ça serait vraiment la merde car on aurait une face cramée et une face congelée (comme c'est le cas sur Mercure). Heureusement, nous, on a une planète qui tourne bien comme il faut comme un bon kebab : le rayonnement solaire se répartit tout bien sur tout le tour. Donc tout l'équateur est chaud et tout le tour des pôles est bien froid (entre les deux c'est ni glacé ni brûlant). \\
 … \\
 … \\
 Bon bah voilà le climat c'est facile : il fait chaud autour et froid aux pôles !
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUzNzIxNTQxLDIwMDg5Mjc1MzUsLTEzND
-M4OTcwODksLTEzNDY4MTg4MjEsMjE3Mzg3MDM5XX0=
+eyJoaXN0b3J5IjpbLTExNTQwOTAxNDAsMjAwODkyNzUzNSwtMT
+M0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTczODcwMzldfQ==
 -->
