@@ -76,8 +76,8 @@ _Please note:_ It's $12.99 CAD, which is about $10 USD. I’ll email you the wor
 
 > "I suddenly have the overwhelming urge to purge! Thank you for reminding us to keep things simple. I get so caught up in things sometimes, this reminder was necessary at this point in the year!" - Gabriella
 
-_I'm Kelly Briggs from Halifax, Nova Scotia, and have four children under ten. I’m an elementary teacher, turned homeschool mom eight years ago._
+I'm Kelly Briggs from Halifax, Nova Scotia, and have four children under ten. I’m an elementary teacher, turned homeschool mom eight years ago.
 
-_I help busy moms by sharing tips to simplify home life. I also offer a course for busy moms called_ [_Simplify your Home Life: a course for busy moms_](https://www.simplehomemom.com/course/)_. I've found that it’s become even more important to discover what matters most as our children have aged. And simplifying our life at home and homeschool life has helped so much with that._
+I help busy moms by sharing tips to simplify home life. I also offer a course for busy moms called [Simplify your Home Life: a course for busy moms](https://www.simplehomemom.com/course/). I've found that it’s become even more important to discover what matters most as our children have aged. And simplifying our life at home and homeschool life has helped so much with that.
 
 ![](/uploads/headshot.jpg)
