@@ -374,11 +374,11 @@ Mais bon pour le climat on s'en tamponne. Ça fait juste que les océans sont sa
 
 2️⃣ **L'eau a l'étrange particularité qu'en se solidifiant, quand ça devient de la glace, elle augmente en volume.** C'est bizarre car, pour tous les autres corps chimique, quand tu les refroidis, ils prennent moins de place : quand on chauffe un truc, il se dilate (un rail de chemin de fer l'été par exemple… c'est même pour ça qu'on laisse de l'espace entre les rails, pour que l'été ils puissent se dilater sans faire dérailler les trains) et inversement, quand on le refroidit, il se contracte.
 
-Mais la flotte… quand tu la refroidis et qu'elle se transforme en glace, pouf elle augmente de volume ! (C'est pour ça qu'il ne faut pas mettre de bouteille d'eau en verre au congélateur : l'eau va augmenter de volume et le verre diminuer un peu… ce qui va la faire éclater)
+Mais la flotte… quand tu la refroidis et qu'elle se transforme en glace, pouf, elle augmente de volume ! (C'est pour ça qu'il ne faut pas mettre de bouteille d'eau en verre au congélateur : l'eau va augmenter de volume et le verre diminuer un peu… ce qui va la faire éclater)
 
 Et niveau climat c'est utile ? Bah un peu : la glace prend plus de place que l'eau liquide donc elle est plus légère donc elle flotte !
 
-Aux pôles, l'eau gèle et forme donc des gros glaçons flottant au-dessus de l'océan 👉 une calotte polaire de glace. Au Pôle Sud il n'y a pas d'océan mais un gros continent, l'Antarctique, qui est recouvert de glace (qui ne flotte pas donc). Mais au Pôle Nord ça marche bien.
+Aux pôles, l'eau gèle et forme donc des gros glaçons flottant au-dessus de l'océan 👉 une calotte polaire de glace. Au Pôle Sud, il n'y a pas d'océan mais un gros continent, l'Antarctique, qui est recouvert de glace (qui ne flotte pas donc). Mais au Pôle Nord ça marche bien.
 
 Bon, donc, on vient de trouver pourquoi on a de la glace aux pôles. Mais c'est pas vraiment ce qu'on cherchait.[^polemethane]
 
@@ -390,7 +390,7 @@ Bon, donc, on vient de trouver pourquoi on a de la glace aux pôles. Mais c'est 
 
 Ah… oui… bon. Expliquons un peu le machin.
 
-Si vous avez des radiateurs chez vous, soit c'est des radiateurs électriques (et là bon courage niveau facture, car c'est pas mais alors pas rentable du tout…) soit vous avez des radiateurs à l'ancienne avec des tuyaux et tout (c'est souvent pour ça qu'on installe des radiateurs électriques : on évite le passage de plein de tuyaux partout… les radiateurs électriques c'est juste un p’tit fil électrique et hop).
+Si vous avez des radiateurs chez vous, soit c'est des radiateurs électriques (et là, bon courage niveau facture, car c'est pas mais alors pas rentable du tout…) soit vous avez des radiateurs à l'ancienne avec des tuyaux et tout (c'est souvent pour ça qu'on installe des radiateurs électriques : on évite le passage de plein de tuyaux partout… les radiateurs électriques c'est juste un p’tit fil électrique et hop).
 
 On va s'intéresser aux radiateurs à l'ancienne, dit "à circulation d'eau". Vous êtes vous jamais demandé pourquoi on faisait circuler de l'eau dedans ? On pourrait utiliser plein d'autres trucs que de l'eau qui est une ressource utile pour plein d'autres trucs : pour boire, pour l'irrigation, le nettoyage, la cuisine… Pourquoi ne pas utiliser de l'huile (usagée par exemple), ou de l'alcool ?
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIxMjQ1NzM5LC00NzE3ODY3NjksLTEzOD
-g4OTkwOTksMjAwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMTM0Njgx
-ODgyMSwyMTczODcwMzldfQ==
+eyJoaXN0b3J5IjpbMTk0Njg5NjQ5NSwtNDcxNzg2NzY5LC0xMz
+g4ODk5MDk5LDIwMDg5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4
+MTg4MjEsMjE3Mzg3MDM5XX0=
 -->
