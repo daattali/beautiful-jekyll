@@ -145,9 +145,9 @@ Où ça ? Bah ça dépend pas mal de la taille de la planète : si la Terre éta
 
 Sur Terre, vu le rayonnement solaire, l'épaisseur de l'atmosphère et la taille de la planète ça retombe à un tiers du chemin 👉 les tropiques !!!! (oui c'est pour ça que cette latitude cheloue qui semble posée comme un cochon sur un gâteau de mariage est si importante : c'est là que l'air de l'équateur retombe).
 
-Bon en vrai ça tombe pas pile-poil sur les tropiques… ça tombe sur la 🐎[latitude des chevaux](https://fr.wikipedia.org/wiki/Latitudes_des_chevaux)🐎.
+Bon, en vrai, ça tombe pas pile-poil sur les tropiques… ça tombe sur la 🐎[latitude des chevaux](https://fr.wikipedia.org/wiki/Latitudes_des_chevaux)🐎.
 
-Exactement de manière similaire le vent au sol issu des pôles continue pas indéfiniment : rapidement l'air se réchauffe et finit par monter : idem à un tiers du voyage. C'est ce qu'on appelle le front polaire a.k.a. la limite avant de se prendre un vent de merde dans la gueule.
+Exactement de manière similaire, le vent au sol issu des pôles ne continue pas indéfiniment : rapidement, l'air se réchauffe et finit par monter : idem à un tiers du voyage. C'est ce qu'on appelle le front polaire a.k.a. la limite avant de se prendre un vent de merde dans la gueule.
 
 L'air (chaud en surpression) remonte et repart vers le pôle (froid en sous-pression).
 
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTYzNzk5ODQsMjAwODkyNzUzNSwtMT
+eyJoaXN0b3J5IjpbLTEzODg4OTkwOTksMjAwODkyNzUzNSwtMT
 M0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTczODcwMzldfQ==
 -->
