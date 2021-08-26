@@ -394,13 +394,13 @@ Si vous avez des radiateurs chez vous, soit c'est des radiateurs électriques (e
 
 On va s'intéresser aux radiateurs à l'ancienne, dit "à circulation d'eau". Vous êtes vous jamais demandé pourquoi on faisait circuler de l'eau dedans ? On pourrait utiliser plein d'autres trucs que de l'eau qui est une ressource utile pour plein d'autres trucs : pour boire, pour l'irrigation, le nettoyage, la cuisine… Pourquoi ne pas utiliser de l'huile (usagée par exemple), ou de l'alcool ?
 
-Eh bien de tous les liquides facilement disponibles l'eau est celle qui conserve le mieux la chaleur. On dit qu'elle a une inertie thermique élevée : si elle est chaude, elle reste chaude très longtemps et diffuse sa chaleur longtemps.
+Eh bien de tous les liquides facilement disponibles, l'eau est celle qui conserve le mieux la chaleur. On dit qu'elle a une inertie thermique élevée : si elle est chaude, elle reste chaude très longtemps et diffuse sa chaleur longtemps.
 
-On retrouve le même comportement pour certain matériaux solide : la brique ou la pierre ont une excellente inertie thermique par rapport au béton. C'est pour ça que les vieilles maisons "rayonnent de la chaleur" en fin de journée l'été. Bon par contre c'est à double tranchant : l'eau garde super bien le froid aussi ! (idem pour la pierre et la brique : l'hiver dans les vieilles maisons il fait super froid même s’il y a du soleil !!!)
+On retrouve le même comportement pour certains matériaux solides : la brique ou la pierre ont une excellente inertie thermique par rapport au béton. C'est pour ça que les vieilles maisons "rayonnent de la chaleur" en fin de journée l'été. Bon par contre c'est à double tranchant : l'eau garde super bien le froid aussi ! (idem pour la pierre et la brique : l'hiver dans les vieilles maisons il fait super froid même s’il y a du soleil !!!)
 
-Pour info : on mesure l'inertie thermique d'un truc grâce un chiffre la capacité thermique massique. Ça se mesure en Joule par Kelvin par kilogramme. Voilà.
+Pour info : on mesure l'inertie thermique d'un truc grâce à un chiffre : la capacité thermique massique. Ça se mesure en Joule par Kelvin par kilogramme. Voilà.
 
-Et c'est utile pour le climat ça (l'inertie thermique de l'eau pas le fait qu'elle se mesure en `J/K/kg`) ? Oui énormément ! 
+Et c'est utile pour le climat ça (l'inertie thermique de l'eau, pas le fait qu'elle se mesure en `J/K/kg`) ? Oui, énormément ! 
 
 ![Du calme dans la salle !](https://c.tenor.com/Drz_x_HhZXkAAAAC/yeah-baby-oh-yeah-baby.gif){: width="100%" }
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0Njg5NjQ5NSwtNDcxNzg2NzY5LC0xMz
+eyJoaXN0b3J5IjpbLTc1MTg2MjM5OSwtNDcxNzg2NzY5LC0xMz
 g4ODk5MDk5LDIwMDg5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4
 MTg4MjEsMjE3Mzg3MDM5XX0=
 -->
