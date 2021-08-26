@@ -372,9 +372,9 @@ Et l'eau c'est un machin un peu bizarre physico-chimiquement. Mais une seule de 
 
 Mais bon pour le climat on s'en tamponne. Ça fait juste que les océans sont salés…
 
-2️⃣ **L'eau a l'étrange particularité qu'en se solidifiant, quand ça devient de la glace, elle augmente en volume.** C'est bizarre car pour tous les autres corps chimique quand tu les refroidis il prenne moins de place : quand on chauffe un truc il se dilate (un rail de chemin de fer l'été par exemple… c'est même pour ça qu'on laisse de l'espace entre les rails, pour que l'été ils puissent se dilater sans faire dérailler les trains) et inversement quand on le refroidit il se contracte.
+2️⃣ **L'eau a l'étrange particularité qu'en se solidifiant, quand ça devient de la glace, elle augmente en volume.** C'est bizarre car, pour tous les autres corps chimique, quand tu les refroidis, ils prennent moins de place : quand on chauffe un truc, il se dilate (un rail de chemin de fer l'été par exemple… c'est même pour ça qu'on laisse de l'espace entre les rails, pour que l'été ils puissent se dilater sans faire dérailler les trains) et inversement, quand on le refroidit, il se contracte.
 
-Mais la flotte… quand tu la refroidis et qu'elle se transforme en glace pouf elle augmente de volume ! (C'est pour ça qu'il ne faut pas mettre de bouteille d'eau en verre au congélateur : l'eau va augmenter de volume et le verre diminuer un peu… ce qui va la faire éclater)
+Mais la flotte… quand tu la refroidis et qu'elle se transforme en glace, pouf elle augmente de volume ! (C'est pour ça qu'il ne faut pas mettre de bouteille d'eau en verre au congélateur : l'eau va augmenter de volume et le verre diminuer un peu… ce qui va la faire éclater)
 
 Et niveau climat c'est utile ? Bah un peu : la glace prend plus de place que l'eau liquide donc elle est plus légère donc elle flotte !
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE2ODg2OTgsLTQ3MTc4Njc2OSwtMT
-M4ODg5OTA5OSwyMDA4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2
-ODE4ODIxLDIxNzM4NzAzOV19
+eyJoaXN0b3J5IjpbOTIxMjQ1NzM5LC00NzE3ODY3NjksLTEzOD
+g4OTkwOTksMjAwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMTM0Njgx
+ODgyMSwyMTczODcwMzldfQ==
 -->
