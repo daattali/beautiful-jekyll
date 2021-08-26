@@ -38,13 +38,13 @@ OK on va dire que la Terre est sphérique (*c'est pas tout à fait vrai elle est
 — *Ça serait encore plus simple si la Terre était plate…?!* \\
 — *Dehors le platiste ! Tu sors !* \\
 — *…* \\
-— *Nan ça serait pas plus simple. En physique on aime bien les trucs ronds… ça a tout plein de symétries qui facilitent tous les calculs… et ça permet de se la péter avec de sinus et des cosinus partout !* #trigoÉlitisme »
+— *Nan ça serait pas plus simple. En physique on aime bien les trucs ronds… ça a tout pleins de symétries qui facilitent tous les calculs… et ça permet de se la péter avec des sinus et des cosinus partout !* #trigoÉlitisme »
 
 Donc notre planète ronde qui tourne pas elle se chauffe comment ?
 
 Chaleur interne ? 🤔 le noyau interne chauffe (à cause de réaction nucléaire et de frottement du magma qui bouge) effectivement la surface… par contre il chauffe uniformément toute la surface… et vraiment pas des masses…
 
-Alors quoi ? Bah le soleil bébé ! #seaSexAndSun…
+Alors quoi ? Bah le soleil bébé ! #SeaSexAndSun…
 
 ah bah nan… notre modèle est un peu trop simple pour "sea, sex and sun" 👉 on va oublier la ~~sea~~ et le ~~sex~~ (sorry) et on va garder juste le **sun**.
 
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMT
-M0NjgxODgyMSwyMTczODcwMzldfQ==
+eyJoaXN0b3J5IjpbMTAyNzk3Mzc4NywyMDA4OTI3NTM1LC0xMz
+QzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4NzAzOV19
 -->
