@@ -30,4 +30,4 @@ This is a post contains step-by-step guide to clear SharePoint configuration cac
 > Note: The file system cache is re-created after you perform this procedure. Make sure that you perform this procedure on all servers in the server farm.
 
 
-Besides the manually steps, you can try spcachecleaner tool (https://github.com/DwayneSelsig/spcachecleaner) to clear the SharePoint Configuration Cache.
+Besides the manually steps, you can try spcachecleaner [tool](https://github.com/DwayneSelsig/spcachecleaner)(https://github.com/DwayneSelsig/spcachecleaner) to clear the SharePoint Configuration Cache.
