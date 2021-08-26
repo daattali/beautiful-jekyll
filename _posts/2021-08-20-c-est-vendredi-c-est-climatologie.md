@@ -222,7 +222,7 @@ Donc la force centrifuge, c'est juste ton corps qui a envie de continuer tout dr
 
 Voilà 4 ans, et on a déjà expérimenté une pseudo-force !
 
-Bon par contre pas de bol celle-là n'a quasi aucun effet sur le climat 😅 à part aux pôles où elle contribue à rendre les vents polaires au sol encore pire : elle éloigne l'air du pôle donc pile poil le sens des vents polaires !
+Bon, par contre, pas de bol, celle-là n'a quasi aucun effet sur le climat 😅 à part aux pôles où elle contribue à rendre les vents polaires au sol encore pire : elle éloigne l'air du pôle donc pile poil le sens des vents polaires !
 
 ![…je le remets pour le plaisir, j'adore le voir galérer \<rire dément de méchant de James Bond\>](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
 
@@ -230,11 +230,11 @@ Allons donc voir ailleurs si la pseudo-force qui nous manque y est !
 
 ### Deuxième souvenir d'enfance : le manège !
 
-Un manège c'est le niveau au-dessus du tourniquet. Déjà il tourne tout seul pas besoin de le lancer soi-même. Ensuite il y a des chevaux (rien à voir avec la latitude du même nom), des voitures, des carrosses et plein d'autres montures fantastique.
+Un manège, c'est le niveau au-dessus du tourniquet. Déjà, il tourne tout seul, pas besoin de le lancer soi-même. Ensuite, il y a des chevaux (rien à voir avec la latitude du même nom), des voitures, des carrosses et pleins d'autres montures fantastiques.
 
 \<PYM aime les manèges\>
 
-Mais bon quand on est gamins, on a beau nous dire de rester sur notre cheval/voiture/canard en bois… quand, comme moi vous êtes un gros punk, dès que les adultes avaient la tête tournée 👉 zoooouuuuuuu tu changes de monture !
+Mais bon quand on est gamins, on a beau nous dire de rester sur notre cheval/voiture/canard en bois… quand, comme moi, vous êtes un gros punk, dès que les adultes avaient la tête tournée 👉 zoooouuuuuuu tu changes de monture !
 
 Sauf que……là tu remarques que te déplacer du **cheval A** au **hérisson clignotant B** s'avère bordel plus compliqué. Même pire : c'est bordel plus compliqué sa mère. Pire : c'est nomdidiou plus compliqué sa grand-mère la fille de joie !
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjE4NjA4MywtMTM4ODg5OTA5OSwyMD
+eyJoaXN0b3J5IjpbMTk5MTM1NjE1NywtMTM4ODg5OTA5OSwyMD
 A4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4
 NzAzOV19
 -->
