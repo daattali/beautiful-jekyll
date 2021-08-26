@@ -318,11 +318,11 @@ Bas tous nos vents, genre tous, vont tourner ! Par exemple nos alizés de l'hém
 
 Non seulement tous nos gros vents vont virer à droite ou à gauche… mais il y a mieux : dès que quelque-part, il y a une basse pression (pour quelques raisons que ce soit), il devrait y avoir du vent vers le milieu de cette basse pression pour "boucher le trou". Un genre de "convergence de vent".
 
-Oui mais là aussi Coriolis : le vent va aller vers le centre de la basse pression… mais en tournant à droite (dans l'hémisphère nord). On obtient alors un tourbillon qui s'enroule dans le sens des aiguilles d'une montre. En météo on appelle ça une "dépression" et vous en voyez tous les jours sur les photos satellites de la météo !
+Oui mais là aussi Coriolis : le vent va aller vers le centre de la basse pression… mais en tournant à droite (dans l'hémisphère nord). On obtient alors un tourbillon qui s'enroule dans le sens des aiguilles d'une montre. En météo, on appelle ça une "dépression" et vous en voyez tous les jours sur les photos satellites de la météo !
 
-À l'opposé s’il y a une surpression le vent devrait rayonner depuis cette surpression sauf que Coriolis ta mère : ça tourne à droite 👉 tourbillon mais dans le sens inverse des aiguilles d'une montre ! En météo (pour des raisons historiques) on appelle ça un anticyclone. Idem vous en voyez tous les jours à la météo.
+À l'opposé, s’il y a une surpression, le vent devrait rayonner depuis cette surpression sauf que Coriolis ta mère : ça tourne à droite 👉 tourbillon mais dans le sens inverse des aiguilles d'une montre ! En météo (pour des raisons historiques), on appelle ça un anticyclone. Idem vous en voyez tous les jours à la météo.
 
-« *Mais pourquoi anticyclone ?* » Rhaaaaa j'aurais dû m'y attendre… bah c'est simple, une dépression qui tourne mal (beaucoup de vent, très humide et chaude) ça donne un cyclone, pas cool… et assez vite on a remarqué qu'avant un cyclone il y avait une baisse de pression (vu que c'est une dépression) mais que si la pression restait haute bah jamais cyclone 👉 haute pression = anti-cyclone
+« *Mais pourquoi anticyclone ?* » Rhaaaaa, j'aurais dû m'y attendre… bah c'est simple, une dépression qui tourne mal (beaucoup de vents, très humide et chaude) ça donne un cyclone, pas cool… et assez vite, on a remarqué qu'avant un cyclone, il y avait une baisse de pression (vu que c'est une dépression) mais que si la pression restait haute bah jamais cyclone 👉 haute pression = anti-cyclone
 
 Et pourquoi seul les tourbillons des dépressions font de la merde ? Bah la basse pression donc ça crée un effet d'aspiration au niveau de sol… ou de la mer et donc ça "pompe" de l'humidité en permanence. Les anticyclones eux avec leurs hautes pressions plaque l'humidité au sol. #cqfd
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyODM0MzU3NywtNDcxNzg2NzY5LC0xMz
+eyJoaXN0b3J5IjpbLTEwMTc3Mjc4NCwtNDcxNzg2NzY5LC0xMz
 g4ODk5MDk5LDIwMDg5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4
 MTg4MjEsMjE3Mzg3MDM5XX0=
 -->
