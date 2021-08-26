@@ -404,19 +404,19 @@ Et c'est utile pour le climat ça (l'inertie thermique de l'eau, pas le fait qu'
 
 ![Du calme dans la salle !](https://c.tenor.com/Drz_x_HhZXkAAAAC/yeah-baby-oh-yeah-baby.gif){: width="100%" }
 
-Mais il nous manque un truc pour comprendre pourquoi : les saisons !
+Mais, il nous manque un truc pour comprendre pourquoi : les saisons !
 
-Vous vous souvenez qu'on a négligé l'inclinaison de l'axe de la Terre ? Ben voilà on va le prendre en compte ! Alors c'est assez simple : comme la Terre est inclinée par rapport au soleil et qu'elle tourne autour de celui-ci, cet angle change selon la position de la Terre sur son orbite et ça change l'angle des rayons solaires (et donc la température) [^distancesoleil].
+Vous vous souvenez qu'on a négligé l'inclinaison de l'axe de la Terre ? Ben voilà, on va le prendre en compte ! Alors c'est assez simple : comme la Terre est inclinée par rapport au soleil et qu'elle tourne autour de celui-ci, cet angle change selon la position de la Terre sur son orbite et ça change l'angle des rayons solaires (et donc la température) [^distancesoleil].
 
 - **Inclinaison maximum** : il fait froid 👉 hiver
 - **Inclinaison minimum** : il fait chaud 👉 été
 - **Entre les deux** : il fait tiède 👉 automne ou printemps (la différence tient surtout au fait que les plantes ont poussé ou pas avant)
 
-Bon par contre à l'équateur ça change pas grand-chose : il fait toujours chaud, la variation d'inclinaison est négligeable.
+Bon par contre à l'équateur, ça ne change pas grand-chose : il fait toujours chaud, la variation d'inclinaison est négligeable.
 
-Aux pôles on est tellement incliné qu'on peut se retrouver dans l'ombre permanente l'hiver (nuit polaire de plusieurs mois) ou toujours au soleil (jour polaire de plusieurs mois). Oui les pôles c'est vraiment un endroit de merde pour vivre… d'ailleurs quasi personne n'y habite…
+Aux pôles, on est tellement incliné qu'on peut se retrouver dans l'ombre permanente l'hiver (nuit polaire de plusieurs mois) ou toujours au soleil (jour polaire de plusieurs mois). Oui les pôles, c'est vraiment un endroit de merde pour vivre… d'ailleurs quasi personne n'y habite…
 
-Et sous les tropiques ? Ben il y a une variation d'inclinaison notable mais pas assez pour qu'on ait une des saisons marquées. On a juste un genre d'été (saison chaude et humide) et un genre d'hiver (saison "froide" et sèche). Mais bon, le froid, sous les tropiques, c'est très très relatif…
+Et sous les tropiques ? Ben, il y a une variation d'inclinaison notable mais pas assez pour qu'on ait une des saisons marquées. On a juste un genre d'été (saison chaude et humide) et un genre d'hiver (saison "froide" et sèche). Mais bon, le froid, sous les tropiques, c'est très très relatif…
 
 Et pourquoi il pleut l'été sous les tropiques ? En fait on l'a déjà vu : **air chaud 👉 dépression 👉 effet aspirateur à humidité 👉 il pleut**
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTg2MjM5OSwtNDcxNzg2NzY5LC0xMz
-g4ODk5MDk5LDIwMDg5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4
-MTg4MjEsMjE3Mzg3MDM5XX0=
+eyJoaXN0b3J5IjpbLTEzMTExNjI3NjgsLTQ3MTc4Njc2OSwtMT
+M4ODg5OTA5OSwyMDA4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2
+ODE4ODIxLDIxNzM4NzAzOV19
 -->
