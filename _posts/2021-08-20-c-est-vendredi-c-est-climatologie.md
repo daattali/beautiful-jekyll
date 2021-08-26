@@ -127,11 +127,11 @@ Bah faut dire que mon raisonnement avait un gros défaut : si on suit mon raison
 
 Donc, ça fait juste que notre air chaud de l'équateur monte et se décale vers le pôle. Et parallèlement l'air froid au pôle lui descend…
 
-Mais mais mais… si à l'équateur, l'air se barre en altitude… en fait, au niveau du sol, on n'a plus une surpression… on a une sous-pression (vu que tout l'air se barre). Et au pôle si l'air retombe vers le sol on a en fait une surpression !
+Mais mais mais… si à l'équateur, l'air se barre en altitude… en fait, au niveau du sol, on n'a plus une surpression… on a une sous-pression (vu que tout l'air se barre). Et au pôle si l'air retombe vers le sol, on a en fait une surpression !
 
 Et bah oui : Il y a en permanence un vent que se rapproche de l'équateur : les alizés ! Et en permanence un vent (super puissant sa mère la flûte) qui s'écarte des pôles : le vent polaire !
 
-Vous vous êtes jamais demandé pourquoi tous les explorateurs polaires ont systématiquement le vent dans la gueule ? Eh ben parce qu'il veut aller **VERS LE PÔLE** et que le vent polaire lui il veut pas !
+Vous vous êtes jamais demandé pourquoi tous les explorateurs polaires ont systématiquement le vent dans la gueule ? Eh ben parce qu'il veut aller **VERS LE PÔLE** et que le vent polaire, lui, il veut pas !
 
 ![](https://c.tenor.com/rg2xhwUVLpYAAAAC/frozen-disney.gif){: width="100%" }
 
@@ -139,7 +139,7 @@ Vous vous êtes jamais demandé pourquoi tous les explorateurs polaires ont syst
 
 ![Con de vent…](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
 
-Au final on a un vent d'altitude de l'équateur vers le pôle et un vent au sol du pôle vers l'équateur ? Nan… évidemment ça serait trop simple : il y a beaucoup trop de chemin de l'un à l'autre… résultat l'air chaud de l'équateur une fois en altitude il finit par se refroidir (vu qu'il n'est plus à l'équateur) et retomber comme une merde 💩
+Au final, on a un vent d'altitude de l'équateur vers le pôle et un vent au sol du pôle vers l'équateur ? Nan… évidemment ça serait trop simple : il y a beaucoup trop de chemin de l'un à l'autre… résultat l'air chaud de l'équateur une fois en altitude, il finit par se refroidir (vu qu'il n'est plus à l'équateur) et retomber comme une merde 💩
 
 Où ça ? Bah ça dépend pas mal de la taille de la planète : si la Terre était plus petite ça retomberait à mi-chemin et si elle était plus grosse (comme Jupiter) ça retomberait à beaucoup plus tôt.
 
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTU2OTYyMTAsMjAwODkyNzUzNSwtMT
+eyJoaXN0b3J5IjpbLTE1OTYzNzk5ODQsMjAwODkyNzUzNSwtMT
 M0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTczODcwMzldfQ==
 -->
