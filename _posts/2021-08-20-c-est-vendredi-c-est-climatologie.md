@@ -165,13 +165,13 @@ On a aussi une cellule 🔁 de chaque côté de l'équateur : \\
 
 Mais entre les deux cellules, il se passe quoi ? Ça correspond à la région tempérée du globe… c'est un peu important !
 
-D'un côté on a le front polaire avec son air "chaud" (c'est relatif il est "moins froid que l'air polaire) qui monte… et de l'autre la latitude des chevaux avec son air "froid" qui descend. Comme l'air s'accumule au sol au niveau de des chevaux (surpression) et qu'il se barre tout vers le haut au niveau du front polaire (sous-pression) 👉 paf on forme encore du vent… et de nouveau une cellule. Sauf qu'elle tourne à l'inverse de ses voisines : le vent au sol va de l'équateur vers le pôle et le vent en altitude du pôle vers l'équateur.
+D'un côté, on a le front polaire avec son air "chaud" (c'est relatif, il est "moins froid" que l'air polaire) qui monte… et de l'autre la latitude des chevaux avec son air "froid" qui descend. Comme l'air s'accumule au sol au niveau de la latitude des chevaux (surpression) et qu'il se barre tout vers le haut au niveau du front polaire (sous-pression) 👉 paf on forme encore du vent… et de nouveau une cellule. Sauf qu'elle tourne à l'inverse de ses voisines : le vent au sol va de l'équateur vers le pôle et le vent en altitude du pôle vers l'équateur.
 
-Aller hop petit schéma de tout ça :
+Allez hop petit schéma de tout ça :
 
 ![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
 
-Ces 3 cellules dans chaque hémisphère explique qu'on ait 4 climats bien marqué et nettement séparés : 
+Ces 3 cellules dans chaque hémisphère expliquent qu'on ait 4 climats bien marqué et nettement séparés : 
 - climat polaire 🥶
 - climat tempéré 😎
 - climat subtropical 🥵
@@ -468,6 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODg4OTkwOTksMjAwODkyNzUzNSwtMT
-M0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTczODcwMzldfQ==
+eyJoaXN0b3J5IjpbODczMzIwMzE4LC0xMzg4ODk5MDk5LDIwMD
+g5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4MTg4MjEsMjE3Mzg3
+MDM5XX0=
 -->
