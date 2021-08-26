@@ -276,18 +276,18 @@ Mais voyez plutôt :
 
 Et là bordel : la balle tourne toute seule !!!!
 
-Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… mais si on avait une caméra à l'extérieur du manège eh ben là on verrait… une belle ligne droite 😱 Ce qui nous donne l'impression que la balle "tourne" c'est qu'elle va tout droit et que NOUS on tourne !
+Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… mais si on avait une caméra à l'extérieur du manège, eh ben là on verrait… une belle ligne droite 😱 Ce qui nous donne l'impression que la balle "tourne" c'est qu'elle va tout droit et que NOUS, on tourne !
 
 ![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif){: width="100%" }
-👆 En haut la balle vue de l'extérieur immobile \\
-En bas la même balle vue depuis le disque qui tourne
+👆 En haut, la balle vue de l'extérieur immobile \\
+En bas, la même balle vue depuis le disque qui tourne
 
-« *Bordel c'est magique !* \\
-— *Non c'est scientifique !* \\
+« *Bordel, c'est magique !* \\
+— *Non, c'est scientifique !* \\
 — *Pardon* \\
-— *Ya pas de mal* »
+— *Y'a pas de mal* »
 
-Donc dès qu'on est sur un truc qui tourne (et où qu'on soit dessus) il faut ajouter une force de Coriolis !
+Donc dès qu'on est sur un truc qui tourne (et où qu'on soit dessus), il faut ajouter une force de Coriolis !
 
 La Terre tourne d'Ouest en Est donc vu depuis le Pôle Nord comme le disque de ma figure d'avant : dans l'hémisphère nord la force de Coriolis est donc vers la droite (comme dans la figure). Dans l'hémisphère sud (on voit le disque par en dessous) la force est vers la gauche.
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MTc4Njc2OSwtMTM4ODg5OTA5OSwyMD
-A4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4
-NzAzOV19
+eyJoaXN0b3J5IjpbLTE5MDU5Nzk4MDYsLTQ3MTc4Njc2OSwtMT
+M4ODg5OTA5OSwyMDA4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2
+ODE4ODIxLDIxNzM4NzAzOV19
 -->
