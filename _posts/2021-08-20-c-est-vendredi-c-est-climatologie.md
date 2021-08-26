@@ -240,11 +240,11 @@ Sauf que……là tu remarques que te déplacer du **cheval A** au **hérisson c
 
 Mais pourquoi donc, mon cruel ?!
 
-J'avais pourtant passé des semaines si ce n'est des mois entiers à maîtriser le tourniquet et sa force centrifuge : je sais que je vais subir une force cheloue qui cherche à m'expulser du manège ! Mais là c'est pas pareil, certes il y a la force centrifuge, mais ça je maîtrise, mais en plus j'ai l'impression de marcher comme un vieil alcoolo après un soir de match !
+J'avais pourtant passé des semaines, si ce n'est des mois entiers à maîtriser le tourniquet et sa force centrifuge : je sais que je vais subir une force cheloue qui cherche à m'expulser du manège ! Mais là, c'est pas pareil, certes il y a la force centrifuge, mais ça je maîtrise, mais en plus j'ai l'impression de marcher comme un vieil alcoolo après un soir de match !
 
 ![Ça va aller madame…](https://c.tenor.com/MW4184ju7VcAAAAC/stumbling-drunk.gif){: width="100%" }
 
-Je pars du **cheval A** je vise le **hérisson clignotant B**, je compense la force centrifuge en forçant un peu vers l'extérieur proportionnellement à la vitesse angulaire et au rayon (oui petit déjà j'avais une approche assez analytique du monde). Mais nan ! Peau de zigounette ! Je me retrouve à faire une espèce de courbe merdasse et je finis sur la **luciole rose C** !
+Je pars du **cheval A**, je vise le **hérisson clignotant B**, je compense la force centrifuge en forçant un peu vers l'extérieur proportionnellement à la vitesse angulaire et au rayon (oui, petit déjà, j'avais une approche assez analytique du monde). Mais nan ! Peau de zigounette ! Je me retrouve à faire une espèce de courbe merdasse et je finis sur la **luciole rose C** !
 
 ![Pourquoi !? ](https://c.tenor.com/PSGySzyYf_YAAAAC/but-why-why.gif){: width="100%" }
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTM1NjE1NywtMTM4ODg5OTA5OSwyMD
-A4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4
-NzAzOV19
+eyJoaXN0b3J5IjpbLTE4MjE4Nzk3NzksLTEzODg4OTkwOTksMj
+AwODkyNzUzNSwtMTM0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTcz
+ODcwMzldfQ==
 -->
