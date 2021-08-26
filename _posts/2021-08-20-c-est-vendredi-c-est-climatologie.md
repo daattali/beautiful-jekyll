@@ -258,21 +258,21 @@ Ah notre ami platiste est de retour[^platiste]… pas de bol pour lui : même si
 
 ![Quelle plaie…](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif){: width="100%" }
 
-Maintenant qu'on sait qu'il y a une force en plus… essayons de la comprendre un peu. Et pour ça utilisons encore un souvenir de ~~votre~~ **mon** ~~enfance~~ **adlescence** !
+Maintenant qu'on sait qu'il y a une force en plus… essayons de la comprendre un peu. Et pour ça utilisons encore un souvenir de ~~votre~~ **mon** ~~enfance~~ **adulescence** !
 
-[^platiste]: Mais qui l'a laissé entrer ? Moi… si on leur coupe l'accès à la science comment veux-tu qu'ils apprennent ?
+[^platiste]: Mais qui l'a laissé entrer ? Moi… si on leur coupe l'accès à la science, comment veux-tu qu'ils apprennent ?
 
 ### Troisième souvenir d'enfance : le manège du Palais de la Découverte
 
 Bon ok si vous avez pas passé votre enfance à Paris c'est plus dur… mais venez faire un tour dans [ce musée tout plein d'expériences cools et de gens passionnés](https://www.palais-decouverte.fr/fr/accueil/) !
 
-Alors c'est quoi un manège du Palais de la découverte ? C'est une plaque ronde de plusieurs mètres de diamètre, bien plate sans rien dessus à part des sièges sur le tour, fort judicieusement tournés vers l'intérieur (et avec des dossiers pour pas basculer comme des merdes avec la force centrifuge). En gros c'est un bar lounge qui tourne… et sans mojito… quelle honte !
+Alors c'est quoi un manège du Palais de la découverte ? C'est une plaque ronde de plusieurs mètres de diamètre, bien plate sans rien dessus à part des sièges sur le tour, fort judicieusement tournés vers l'intérieur (et avec des dossiers pour pas basculer comme des merdes avec la force centrifuge). En gros, c'est un bar lounge qui tourne… et sans mojito… quelle honte !
 
 Mais voyez plutôt :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8H3GF8Q73a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-👆 Le jeu est très simple : une fois le manège en rotation il faut juste réussir à lancer la balle à une personne en face (ils disent de la faire rouler pour éviter qu'elle parte dans le décor… bon moi j'ai essayé ça fait pareil au sol ou en l'air c'est juste moins visible, car on lance plus fort généralement).
+👆 Le jeu est très simple : une fois, le manège en rotation il faut juste réussir à lancer la balle à une personne en face (ils disent de la faire rouler pour éviter qu'elle parte dans le décor… bon moi j'ai essayé ça fait pareil au sol ou en l'air c'est juste moins visible, car on lance plus fort généralement).
 
 Et là bordel : la balle tourne toute seule !!!!
 
@@ -468,7 +468,7 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4NDY1NjQyLC0xMzg4ODk5MDk5LDIwMD
-g5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4MTg4MjEsMjE3Mzg3
-MDM5XX0=
+eyJoaXN0b3J5IjpbMTg2NTU2NjYzMywtMTM4ODg5OTA5OSwyMD
+A4OTI3NTM1LC0xMzQzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4
+NzAzOV19
 -->
