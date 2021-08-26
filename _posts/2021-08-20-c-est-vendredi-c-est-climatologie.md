@@ -119,15 +119,15 @@ Sur Terre c'est pareil :
 Conclusion : il y a du vent de l'équateur vers les pôles ! Tout le temps. \\
 …\\
 …\\
-Ah on m'informe dans l'oreillette que nan c'est pas le cas : il n'y a pas un vent permanent sud-nord dans l'hémisphère nord et pas de vent permanent nord-sud dans l'hémisphère sud… Damned !
+Ah, on m'informe dans l'oreillette que nan c'est pas le cas : il n'y a pas un vent permanent sud-nord dans l'hémisphère nord et pas de vent permanent nord-sud dans l'hémisphère sud… Damned !
 
-Bah faut dire que mon raisonnement avait un gros défaut : si on suit mon raisonnement très rapidement il n'y a plus d'air à l'équateur ! Tout serait aspiré vers les pôles ! Alors quoi ? Eh ben on a réfléchi en 2D alors que la vraie vie c'est en 3D : l'atmosphère ça a de la hauteur ma bonne dame !Ça change quoi ? Bah déjà l'air chaud comme ça se dilate… c'est plus léger que l'air froid (car moins dense) donc il a tendance à monter et l'air froid à descendre #frèreMontgolfier
+Bah faut dire que mon raisonnement avait un gros défaut : si on suit mon raisonnement très rapidement, il n'y a plus d'air à l'équateur ! Tout serait aspiré vers les pôles ! Alors quoi ? Eh ben on a réfléchi en 2D alors que la vraie vie c'est en 3D : l'atmosphère ça a de la hauteur ma bonne dame !Ça change quoi ? Bah déjà l'air chaud comme ça se dilate… c'est plus léger que l'air froid (car moins dense) donc il a tendance à monter et l'air froid à descendre #frèreMontgolfier
 
 ![Si tu enfermes ton air chaud dans un gros drap tu obtiens un ballon à air chaud cad une montgolfière](https://c.tenor.com/IEP7uGsgkwIAAAAC/gemab-mab.gif){: width="100%" }
 
-Donc ça fait juste que notre air chaud de l'équateur monte et se décale vers le pôle. Et parallèlement l'air froid au pôle lui descend…
+Donc, ça fait juste que notre air chaud de l'équateur monte et se décale vers le pôle. Et parallèlement l'air froid au pôle lui descend…
 
-Mais mais mais… si à l'équateur l'air se barre en altitude… en fait au niveau du sol on a plus une surpression… on a une sous-pression (vu que tout l'air se barre). Et au pôle si l'air retombe vers le sol on a en fait une surpression !
+Mais mais mais… si à l'équateur, l'air se barre en altitude… en fait, au niveau du sol, on n'a plus une surpression… on a une sous-pression (vu que tout l'air se barre). Et au pôle si l'air retombe vers le sol on a en fait une surpression !
 
 Et bah oui : Il y a en permanence un vent que se rapproche de l'équateur : les alizés ! Et en permanence un vent (super puissant sa mère la flûte) qui s'écarte des pôles : le vent polaire !
 
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTc1MzY0MywyMDA4OTI3NTM1LC0xMz
-QzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4NzAzOV19
+eyJoaXN0b3J5IjpbLTE2NTU2OTYyMTAsMjAwODkyNzUzNSwtMT
+M0Mzg5NzA4OSwtMTM0NjgxODgyMSwyMTczODcwMzldfQ==
 -->
