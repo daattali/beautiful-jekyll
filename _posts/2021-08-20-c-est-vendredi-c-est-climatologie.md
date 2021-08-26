@@ -16,7 +16,7 @@ Bon une grande partie de la géo au collège c'est apprendre où sont les trucs 
 
 ![](https://c.tenor.com/_aIAA5G35OcAAAAC/drunk-alcohol.gif){: width="100%" }
 
-Alors autant la position et le nom des pays, des mers et le découpage en continent,c'est vraiment arbitraire (avoir un Pakistan et un Afghanistan qui ont une frontière qui coupe littéralement le peuple pachtoune  ça n'a aucune logique autre que "ça arrangeait bien les Anglais, les Perses et les Russes au XIXᵉ siècle"). Autant les climats ça c'est logique… il y a plein de machin à prendre en compte, mais il y a une logique derrière !
+Alors autant la position et le nom des pays, des mers et le découpage en continent, c'est vraiment arbitraire (avoir un Pakistan et un Afghanistan qui ont une frontière qui coupe littéralement le peuple pachtoune,  ça n'a aucune logique autre que "ça arrangeait bien les Anglais, les Perses et les Russes au XIXᵉ siècle"). Autant les climats, ça c'est logique… il y a plein de machin à prendre en compte, mais il y a une logique derrière !
 
 Et s’il y a de la logique derrière, PYM peut pondre un pavé dessus ! [^theorem][^theorem]: Ça pourrait être un théorème !
 
@@ -24,15 +24,15 @@ Et s’il y a de la logique derrière, PYM peut pondre un pavé dessus ! [^theor
 
 Ousékifécho ?
 
-Bon là c'est facile, vous allez me dire qu'il fait chaud à l'équateur et froid aux pôles… alors déjà je pense que peu d'entre vous ont été le constater par eux-mêmes (quoique… mon audience va peut-être jusqu'aux bases polaires et aux bars équatoriens !). En plus on a dit qu'on essayait d'aborder ça de manière lo-gi-queu ! Donc on va pas juste affirmer qu'il fait chaud ou froid !
+Bon là, c'est facile, vous allez me dire qu'il fait chaud à l'équateur et froid aux pôles… alors, déjà, je pense que peu d'entre vous ont été le constater par eux-mêmes (quoique… mon audience va peut-être jusqu'aux bases polaires et aux bars équatoriens !). En plus on a dit qu'on essayait d'aborder ça de manière lo-gi-queu ! Donc on va pas juste affirmer qu'il fait chaud ou froid !
 
-Alors pour ça comme pour la suite on va partir d'un modèle un poil simplifié et on complexifiera plus tard.
+Alors pour ça comme pour la suite, on va partir d'un modèle un poil simplifié et on complexifiera plus tard.
 
 Modèle "un poil" simplifié de la Terre…?
 
 ![](https://c.tenor.com/BdcwU6gstRoAAAAC/pooh-think.gif){: width="100%" }
 
-OK on va dire que la Terre est sphérique (*c'est pas tout à fait vrai elle est aplatie aux pôles*), on va dire aussi que son axe de rotation est pas incliné (*alors qu'il l'est de 23,45°, c'est pas rien !*), bon et on va même carrément négliger totalement la rotation de la terre pour commencer (*pour être exact on va la moyenner et voir ce qui se passe sur le long terme uniquement*).
+OK, on va dire que la Terre est sphérique (*c'est pas tout à fait vrai elle est aplatie aux pôles*), on va dire aussi que son axe de rotation est pas incliné (*alors qu'il l'est de 23,45°, c'est pas rien !*), bon et on va même carrément négliger totalement la rotation de la terre pour commencer (*pour être exact on va la moyenner et voir ce qui se passe sur le long terme uniquement*).
 
 « *Quoi encore ?* \\
 — *Ça serait encore plus simple si la Terre était plate…?!* \\
@@ -468,6 +468,6 @@ Au niveau des développements humain c'est démentiellement important : les civi
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODYwNjUyNCwyMDA4OTI3NTM1LC0xMz
+eyJoaXN0b3J5IjpbLTUxNzI1NjExMCwyMDA4OTI3NTM1LC0xMz
 QzODk3MDg5LC0xMzQ2ODE4ODIxLDIxNzM4NzAzOV19
 -->
