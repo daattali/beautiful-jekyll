@@ -92,6 +92,13 @@ Unless otherwise specified, during a quiz students may **NOT** :
 
 Failing to observe the above expectations may result in a zero grade for the quiz in question.
 
+### Remote quiz requests
+
+In some cases you may be able to take a quiz but not able to do so from UBC campus (for example, due to mild illness). 
+In this case, you must fill out the [MDS remote quiz request form](https://ubc.ca1.qualtrics.com/jfe/form/SV_d6eseEoTCL2ficu) explaining
+why you are unable to be physically present for the quiz. We understand that in some cases (e.g. you wake up and are contacted by the health authority
+and asked to self-isolate) you may only be able to make this determination at the last-minute. We simply ask that if you need to request a remote
+quiz, you do so as early as possible.
 
 ## Plagiarism
 
