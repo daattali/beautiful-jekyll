@@ -12,6 +12,8 @@ The Master of Data Science Policies and Regulations are part of the campus-wide 
 
 Attendance in lectures and lab sessions is not required.
 
+**If you are feeling unwell, are experiencing any flu-like symptoms, or have reason to believe you may have Covid-19, please do not come to any in-person meetings including lectures, labs, office hours, or quizzes**. For quizzes specifically, see the information on "Remote quiz requests" below.
+
 ## Academic concession policy
 
 Students who miss an assignment or quiz can request an academic concession. From the UBC Senate [policy on academic concession](https://senate.ubc.ca/sites/senate.ubc.ca/files/downloads/20190515_V_135_Academic_Concession-Approved.pdf), grounds for academic concession can be illness, conflicting responsibilities, or compassionate grounds. Examples of compassionate grounds, from the above policy, include "a traumatic event experienced by the student, a family member, or a close friend; an act of sexual assault or other sexual misconduct experienced by the student, a family member, or a close friend; a death in the family or of a close friend."
