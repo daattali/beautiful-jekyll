@@ -20,45 +20,9 @@ This session will help simplify your homeschool life by showing you how to exami
 
 ![An image overview of the course.](/uploads/simplify-your-homeschool-life-workshop.jpg "Simplify Your Homeschool Life Workshop")
 
-<div style="
-overflow: auto;
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
-width: 258.96px;
-background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
-box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
-border-radius: 10px;
-font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
-">
-<div style="padding: 20px;">
-<p style="
-font-size: 18px;
-line-height: 20px;
-">Simplify Your Homeschool Life: an online video workshop</p>
-<p style="
-font-size: 18px;
-line-height: 20px;
-font-weight: 600;
-">$12.99</p>
-<a target="_blank" href="https://checkout.square.site/merchant/MLPD1STHM0KXZ/checkout/22TJ5BKW4BN45QO6BVYHAFJX?src=embed" style="
-display: inline-block;
-font-size: 18px;
-line-height: 48px;
-height: 48px;
-color: #000000;
-min-width: 212px;
-background-color: #d9d9d9;
-text-align: center;
-box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
-border-radius: 6px;
-">Buy now</a>
-</div>
-</div>
+Purchase this workshop [HERE](https://buy.stripe.com/7sI4iqel09CA4EM6op).
 
-_Please note:_ It's $12.99 CAD, which is about $10 USD. I’ll email you the workshop and extras within 24 hours after purchase! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
+_Please note: It's $12.99 CAD, which is about $10 USD. I’ll email you the workshop and extras within 24 hours after purchase! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
 ##### What's included:
 
