@@ -29,6 +29,7 @@ subtitle: ''
 * [4 Key Areas to Simplify Your Home Life](https://podcasts.apple.com/us/podcast/155-learn-4-key-areas-to-simplify-your-home-kelly-from/id1481909779?i=1000526375831)
 * [Simplify Your Laundry Routine with Kelly Briggs](https://podcasts.apple.com/ca/podcast/ep155-simplify-your-laundry-routine-with-kelly-briggs/id1159498258?i=1000505748717)
 * [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
+* [Quiet time](https://podcasts.apple.com/us/podcast/ep-23-quiet-time-and-homeschooling-with-kelly-briggs/id1527253695?i=1000533420517)
 
 ## Homeschooling
 
