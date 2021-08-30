@@ -9,7 +9,7 @@ subtitle: ''
 * [Newest blogs](https://www.simplehomemom.com)
 * [How to Have a Quiet Time Routine with Kid + free quiet time routine template](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/)
 * [How to Declutter Your Wardrobe + 6 guidelines to help you do just that!](https://www.simplehomemom.com/how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
-* **JUST LAUNCHED:** 
+* **JUST LAUNCHED:**
   * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
   * [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
@@ -32,7 +32,7 @@ subtitle: ''
 
 ## Homeschooling
 
-* **Simplify your Homeschool Life Video Session** with session notes and worksheet:  with the Canadian online homeschooling conference affiliate link - signup [here](https://canadianhomeschoolconference.com/aff/42/).
+* [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/)
 * [Our Simple Kindergarten 2021-2022](https://www.simplehomemom.com/our-simple-kindergarten-2021-2022/)
 * [Summer 2021: Our Homeschool Resources and Routine](https://www.simplehomemom.com/summer-2021-homeschool-resources-and-routine/)
 * [Seven Tips to Create Peaceful Homeschooling Routines](https://www.simplehomemom.com/seven-tips-to-create-peaceful-homeschooling-routines/)
