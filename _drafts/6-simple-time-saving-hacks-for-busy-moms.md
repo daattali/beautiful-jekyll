@@ -19,30 +19,23 @@ share-img: ''
 redirect_from: []
 
 ---
-Let's talk about those simple time saving hacks. As our family has grown, I've noticed how much better I must get at watching the time...or _the time is just gone in a flash_! Some days, I look down and it's 9am and then somehow it turns into 9pm. Some days it flies by without realizing it. That's why I'm a big fan of figuring out those small, simple time saving hacks for our family. They all can really add up and free up so much extra free time in a home. Today on the blog, I'm sharing about **6 simple time saving hacks for busy moms**.  
-   
- ![A picture of a couch with pictures hanging over it.](/uploads/tips-for-creating-routines-to-save-time-shm-2.jpg "6 Simple Time Saving Hacks for Busy Moms SHM")
+Let's talk about those simple time saving hacks. As our family has grown, I've noticed how much better I must get at watching the time...or _the time is just gone in a flash_! Some days, I look down and it's 9am and then somehow it turns into 9pm. Some days it flies by without realizing it. That's why I'm a big fan of figuring out those small, simple time saving hacks for our family. They all can really add up and free up so much extra free time in a home. Today on the blog, I'm sharing about **6 simple time saving hacks for busy moms**.
+
+![A picture of a couch with pictures hanging over it.](/uploads/tips-for-creating-routines-to-save-time-shm-2.jpg "6 Simple Time Saving Hacks for Busy Moms SHM")
 
 1. **Create boundaries around cleaning and tidying.** Before we did this in our home? I felt like I was CONSTANTLY cleaning and tidying the kitchen or elsewhere all day. Now we tackle the kitchen in full after supper every evening, creating a boundary around that so I don't have to feel like I have to clean it in full any other time.
-2. Prepare for the morning the night before. Elizabeth over at   
-    [@athomeontheprairie](https://www.instagram.com/athomeontheprairie/) on Instagram and   
-    @carleenarmstead are so good at reminding to prepare the night before for the next [morning](https://www.instagram.com/carleenarmstead/)! It can really help save time and lead to smoother mornings.
-
-  
- 3) Meal plan. I don't know what your house is like, butttt if I don't have my ducks in a row with meals, then it's a gong show here lol.
+2. **Prepare for the morning the night before.** Elizabeth over at  
+   [@athomeontheprairie](https://www.instagram.com/athomeontheprairie/) on Instagram and [@carleenarmstead](https://www.instagram.com/carleenarmstead/) are so good at reminding moms to prepare the night before for the next [morning](https://www.instagram.com/carleenarmstead/)! It can really help save time and lead to smoother mornings.
+3. **Meal plan.** I don't know what your house is like, butttt if I don't have my ducks in a row with meals, then it's a gong show here lol.
 
 · Related: [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
 
-  
- 4) Deal with wet laundry right away. Am I the only one who forgets about wet laundry and then have to wash it again? Building laundry into specific times of the day has helped so much with saving time for our family! We throw on the wash at breakfast and I dry at lunch.
+1. Deal with wet laundry right away. Am I the only one who forgets about wet laundry and then have to wash it again? Building laundry into specific times of the day has helped so much with saving time for our family! We throw on the wash at breakfast and I dry at lunch.
 
 · Related:
 
-  
- 5) Bulk cook. Bulk coooking can help so much. Sauces, rice, chopping veggies. It all can help save time.
-
-  
- 6) Put away, organize, and declutter as we go. We're really working on this habit, but if you see it and are walking by it, pick it up and put it away vs letting it sit for the future.
+1. Bulk cook. Bulk coooking can help so much. Sauces, rice, chopping veggies. It all can help save time.
+2. Put away, organize, and declutter as we go. We're really working on this habit, but if you see it and are walking by it, pick it up and put it away vs letting it sit for the future.
 
 ### My journey to creating a simpler home
 
@@ -73,8 +66,8 @@ The Simplify Your Home Life: a course for busy moms is a six week flexible onlin
 * [10 Simple Habits to Create a Simpler Home](https://www.simplehomemom.com/10-simple-habits-to-create-a-simpler-home/)
 * [Five Idea to Create a Simpler Home](https://www.simplehomemom.com/five-ideas-to-create-a-simpler-home/)
 
-**More blogs of mine you may enjoy:**  
-   
+**More blogs of mine you may enjoy:**
+
 BLOG CHECKLIST
 
 Pick a good title.
@@ -82,31 +75,27 @@ Pick a good title.
 Title ideas or google top selections
 
 ..... Without...How to... Even with...  
- How to use.... To...  
- Seven ways to....  
- How to... In... Mins  
- Do you make these x mistakes?  
- How to... Even if....
+How to use.... To...  
+Seven ways to....  
+How to... In... Mins  
+Do you make these x mistakes?  
+How to... Even if....
 
 Link other people's blogs  
- Image for blog with tips  
- Image for blog with name  
-   
- Share to instagram, Facebook  
- Not too short or too long (how many words?)   
- Use headlines of various sizes  
- Paragraphs 3-5 sentences  
-   
- Link to other relevant blogs of mine  
- Toss in subscribe links  
- When uploading a photo or file. Name the file with keywords from your blog. And - your blog too.
+Image for blog with tips  
+Image for blog with name
+
+Share to instagram, Facebook  
+Not too short or too long (how many words?)  
+Use headlines of various sizes  
+Paragraphs 3-5 sentences
+
+Link to other relevant blogs of mine  
+Toss in subscribe links  
+When uploading a photo or file. Name the file with keywords from your blog. And - your blog too.
 
 Link to other blogs
 
 Link up some other blogs.. Post in insta post.. Pinterest
 
 Remember to bold things!
-
-  
-   
- 
