@@ -37,6 +37,18 @@ Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4K
 
 **_Please note:_** _I'll email you a copy of the Simple Meal Planning Guide within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
+> Kelly's Simple Meal Planning Guide is the comprehensive guide you need so you never have to ask the question, "What's for dinner?" (or lunch, or breakfast for that matter!)
+>
+> Kelly walks you step-by-step through her process for simplifying meal planning, including:
+>
+> * Keeping all your recipes in ONE place
+> * Finding the meal plan rotation system that works for you and your family
+> * Fresh ideas for breakfast, lunch, dinner, and snacks when you feel like you're in a rut (picky plates is my favorite!)
+> * Monthly grocery planning tips
+> * Amazing meal planning, inventory, grocery list, and recipe printables!
+>
+> Kelly has really covered everything in this helpful guide. As she says, "Everything that is done well is usually done with a good plan." Meal planning reduces decision fatigue and stress, and I'm grateful for Kelly for creating this resource! - Emily from [@simplebyemmy](https://www.instagram.com/simplebyemmy/)
+
 **Blogs of mine you may enjoy:**
 
 * [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
