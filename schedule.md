@@ -4,7 +4,7 @@ title: Session Schedule
 subtitle: Our coaching session schedule
 ---
 
-Coaching sessions are expected to be in-person at RMS for the 2021-2022 season. Details will be finalized
+Coaching sessions are expected to be remote to begin the 2021-2022 season. Details will be finalized
 by early October.
 
 The homework packet may be downloaded [here](/files/Homework%20Packet.pdf). Assignments for the Homework sessions come from this packet.
