@@ -105,7 +105,7 @@ quiz, you do so as early as possible.
 There are two forms, one for courses that start with the DSCI course code and one for courses that start with the COLX course code. Please fill out the appropriate form based on which course you are submitting the request for:
 
 - [DSCI 5XX MDS-V and MDS-CL remote quiz request form](https://ubc.ca1.qualtrics.com/jfe/form/SV_d6eseEoTCL2ficu) 
-- [COLX 5XX MDS-CL remote quiz request form](https://ubc.ca1.qualtrics.com/jfe/form/SV_8Ak5clHffaU4nT8) 
+- [COLX 5XX MDS-CL remote quiz request form](https://ubc.ca1.qualtrics.com/jfe/form/SV_dncGBB8xlFI5gHQ) 
 
 ## Plagiarism
 
