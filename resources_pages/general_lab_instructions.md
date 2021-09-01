@@ -40,8 +40,8 @@ You should have a well organized lab repo/directory structure, where your files 
 
 Your work must be reproducible from beginning to end. This requirement will become more relevant in the later parts of the program as you progress to more advanced analyses. A reproducible lab submission means:
 
-  - For Jupyter notebooks, you must restart the kernel and run all cells in order before submitting.
-    Notebooks with cell execution numbers out of order or not starting from "1" will have submission marks deducted.
+  - **For Jupyter notebooks, you must restart the kernel and run all cells in order before submitting.**
+    Notebooks with cell execution numbers out of order or not starting from "1" will have marks deducted. Notebooks without the output displayed may not be graded at all (because we need to see the output in order to grade your work).
   - All data must be in the repo, or linked to and grabbed by your code (*e.g.,* `curl`, `wget`, `read_csv("<URL>")` etc) unless you are specifically instructed in the lab to not push your data to the repo.
   - All data cleaning/wrangling must be done programmatically (*i.e.,* in R, Python, etc) so that it is reproducible.
 
