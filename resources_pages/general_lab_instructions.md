@@ -8,8 +8,8 @@ title: General lab instructions
 For every lab, we will create a repository (repo) for each student. For example,
 if your CWL is `goatcabin` then for DSCI 521 lab 1 there will be a repository called
 `DSCI_521_lab1_goatcabin`. To see a list of all repositories that you have access to,
-navigate to the homepage of your year's organization; for example, for the 2020-21 cohort,
-go to <https://github.ubc.ca/mds-2020-21>.
+navigate to the homepage of your year's organization; for example, for the 2021-22 cohort,
+go to <https://github.ubc.ca/mds-2021-22>.
 
 NOTE: please do not confuse your personal lab-specific repository with the general course
 repository, which will be named something like `DSCI_521_platforms-dsci_students`. That
@@ -19,14 +19,10 @@ repo is public to all students and is where you can access lectures, due dates, 
 
 We anticipate that you will clone your lab-specific repository and do your work from
 within there. To submit your labs you must **both** push your work to <https://github.ubc.ca/> 
-**and** submit your rendered HTML file to Canvas. Your assignment will come bundled with a short script
-to render to HTML and push your work to Canvas. It is your responsibility to make sure
+**and** submit to Gradescope. It is your responsibility to make sure
 your lab is submitted to both places and failure to do so will result in a deduction of mechanics marks.
 
-Your notebook should include a link to your GitHub repository
-so that the TAs can click this when they are grading your HTML submission on Canvas
-(this will make it quicker for us to return your grades).
-You can push changes as many times as you want before the deadline; only the final version will be graded.
+You can submit (to both places) as many times as you want before the deadline; only the final version will be graded.
 
 ### Your submission on GitHub
 
@@ -34,28 +30,20 @@ You can push changes as many times as you want before the deadline; only the fin
 
 For your lab submission to GitHub, you are expected to commit regularly, **not** just once when you are done.
 You are required to make at least 3 commits per lab, and expected to make many more than that in practice.
-You may have mechanics marks from your lab if you fail to meet this minimum requirement. 
+You will lose mechanics marks from your lab if you fail to meet this minimum requirement. 
 
 #### Repo structure
 
-You should have a well organized lab repo/directory structure, where your files are organized in a sane directory structure, e.g., data in a `data` directory, results in a `results` directory, etc. In cases where your lab repo is already organized into a directory structure, you can assume that structure is acceptable unless notified otherwise. 
-
-If the lab contains any autograded content (this would be a Jupyter notebook with "autograde" rubrics in it), please _do not rename the main lab file or move it into a subdirectory_ as this causes problems for the autograding scripts.
-
-#### README
-
-In the main `README.md` file in the lab/assignment repo, there is a place to optionally provide feedback on the lab. You are encouraged but not required
-to fill this in. 
+You should have a well organized lab repo/directory structure, where your files are organized in a sane directory structure. In cases where your lab repo is already organized into a directory structure (this is most cases), you can assume that structure is acceptable and you don't need to change it. 
 
 #### Reproducibility
 
 Your work must be reproducible from beginning to end. This requirement will become more relevant in the later parts of the program as you progress to more advanced analyses. A reproducible lab submission means:
 
-  - For Jupyter notebooks, you must restart the kernel and run all cells in order before submitting.
-    Notebooks with cell execution numbers out of order or not starting from "1" will have submission marks deducted.
+  - **For Jupyter notebooks, you must restart the kernel and run all cells in order before submitting.**
+    Notebooks with cell execution numbers out of order or not starting from "1" will have marks deducted. Notebooks without the output displayed may not be graded at all (because we need to see the output in order to grade your work).
   - All data must be in the repo, or linked to and grabbed by your code (*e.g.,* `curl`, `wget`, `read_csv("<URL>")` etc) unless you are specifically instructed in the lab to not push your data to the repo.
   - All data cleaning/wrangling must be done programmatically (*i.e.,* in R, Python, etc) so that it is reproducible.
-  - All dependencies are listed (using a package or environment management strategy could make this easier in some cases... up to you!).
 
 #### Make it easy for others to run your code
 
@@ -65,14 +53,13 @@ Your work must be reproducible from beginning to end. This requirement will beco
 
 ### Deadline
 
-The lab deadlines are given on the course repo and/or MDS calendar. **These are hard deadlines.** In particular,
-when the deadline passes you will lose write access to the repository. The default deadline for labs is
+The lab deadlines are given on the course repo and/or MDS calendar.  The default deadline for labs is
 Saturday at 6pm, but there may be some exceptions. For the policy on late submissions, see the
 [MDS policies page](https://ubc-mds.github.io/policies/).
 
 ### Grades
 
-You will receive your grades through Canvas.
+You will receive your lab grades through Gradescope.
 
 ### Privacy notes
 
@@ -83,4 +70,4 @@ private (like your email password) to your lab repo. Committing something and th
 with another commit doesn't remove it from the git history! It is theoretically possible to pull all traces of
 something out of the git history, but it's not fun and uses more advanced git features.
 
-* <https://github.ubc.ca> and <https://canvas.ubc.ca/> are run on Canadian servers, so all your data will be kept within Canada.
+* <https://github.ubc.ca>, <https://gradescope.ca> and <https://canvas.ubc.ca/> are run on Canadian servers, so all your data will be kept within Canada.
