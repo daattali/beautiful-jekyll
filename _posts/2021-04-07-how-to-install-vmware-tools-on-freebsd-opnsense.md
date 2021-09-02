@@ -33,7 +33,7 @@ i
 
 
 ```
-vmware-guestd_enable="YES"
+vmware_guestd_enable="YES"
 ```
 * Leave edit mode and save the file.
 
