@@ -73,24 +73,18 @@ Sometimes serious grading errors are made, for example when a grader did not see
 
 Balancing these two sides is difficult. In MDS the policy is as follows: if a grade is challenged in a way that is deemed unreasonable, the student will receive a warning. This decision will be made by the instructor (not TA). If a student receives three warnings, the student will lose the privilege to challenge grades for the remainder of the program. Examples of unreasonable requests include extremely minor complaints (e.g. half a mark on an assignment) or repeatedly contesting the same issue once a decision has been reached. This policy applies to both labs and quizzes.
 
-## Quizzes
-
-### Open-book quizzes
+## Quiz policies
 
 Unless otherwise specified, MDS quizzes are open-book. This means it is permitted to use any materials such as course notes,
-the internet, software documentation, etc. However, it is **NOT** permitted to communicate with anyone else, including via posting quiz questions on internet forums, during a quiz.
+the internet, software documentation, etc. 
 
-### Quiz policies
+**However, it is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums, during a quiz.**
 
-**For Block 1 only:** The below policy does not apply during remote MDS. While we are remote, quizzes will be open book and done remotely. The part that still **does** apply is: students may not communicate with anyone else during quizzes. This includes classmates, internet tutors etc. 
+For Block 2 onward of 2021-22, the following are also **NOT** permitted:
 
-
-Unless otherwise specified, during a quiz students may **NOT** :
-
-- take a quiz from a remote location
-- communicate with other students or anyone else by any means
-- leave the quiz room early with your laptop
-- leave and re-enter the quiz room (other than for purposes such as using the washroom)
+- taking a quiz from a remote location without prior permission
+- leaving the quiz room early with your laptop
+- leaving and re-entering the quiz room (other than for purposes such as using the washroom)
 
 Failing to observe the above expectations may result in a zero grade for the quiz in question.
 
