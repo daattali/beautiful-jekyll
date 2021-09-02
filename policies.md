@@ -82,7 +82,7 @@ the internet, software documentation, etc.
 
 For Block 2 onward of 2021-22, the following are also **NOT** permitted:
 
-- taking a quiz from a remote location without prior permission
+- taking a quiz from a remote location without prior permission (see below on how to obtain permission)
 - leaving the quiz room early with your laptop
 - leaving and re-entering the quiz room (other than for purposes such as using the washroom)
 
