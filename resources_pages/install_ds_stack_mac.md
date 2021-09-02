@@ -352,7 +352,7 @@ devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
 ```
 
-> **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
+> **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
 
 ### IRkernel
 

@@ -528,6 +528,8 @@ devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
 ```
 
+> **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
+
 ### IRkernel
 
 The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from the Windows Terminal** (not R Studio) and run the setup via the following two commands:
