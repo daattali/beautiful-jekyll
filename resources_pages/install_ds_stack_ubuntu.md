@@ -618,7 +618,7 @@ curl -Sso ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/cont
 Then open the bash configuration file:
 
 ```bash
-code ~/.bash_profile
+code ~/.bashrc
 ```
 
 Paste the following at the end of the file
