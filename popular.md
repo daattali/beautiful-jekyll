@@ -7,7 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
-* [How to Have a Quiet Time Routine with Kid + free quiet time routine template](https://www.simplehomemom.com/how-to-have-quiet-time-with-kids/)
+* [6 Simple Time Saving Hacks for Busy Moms +FREEBIE: printable list of 20 routines to look at to save time in your home](https://www.simplehomemom.com/6-simple-time-saving-hacks-for-busy-moms/)
 * [How to Declutter Your Wardrobe + 6 guidelines to help you do just that!](https://www.simplehomemom.com/how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
 * **JUST LAUNCHED:**
   * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
