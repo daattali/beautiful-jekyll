@@ -7,11 +7,11 @@ metadescription: vCenter 7.0 update 1c brings the new Advanced Cross vCenter vMo
   (XVM) feature which migrates virtual machines between vCenters and SSO domaines.
 
 ---
-Migrating virtual machines across vCenter instances has been a thing for several years now but it wasn't a straightforward process at first. After a while the Cross vCenter Workload Migration Utility fling was released in order to simplify the process and remove the need for enhanced linked mode.
+Migrating virtual machines across vCenter instances has been a thing for several years now but it wasn't a straightforward process until advanced cross vcenter vmotion. After a while the Cross vCenter Workload Migration Utility fling was released in order to simplify the process and remove the need for enhanced linked mode.
 
 ### Advanced Cross vCenter vMotion (XVM)
 
-It is not often that a minor update is exciting but this time it certainly is! In the latest [vCenter 7.0 update 1c (7.0.1.00300)](https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-vcenter-server-70u1c-release-notes.html){:target="_blank"} iteration, "_Advanced Cross vCenter vMotion_" (also called XVM) was finally embedded natively into the vSphere client. This feature simplifies a number of scenarios ranging from basic workload mobility to bulk migrations to a public cloud.
+It is not often that a minor update is exciting but this time it certainly is! In the latest [vCenter 7.0 update 1c (7.0.1.00300)](https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-vcenter-server-70u1c-release-notes.html) iteration, "_Advanced Cross vCenter vMotion_" (also called XVM) was finally embedded natively into the vSphere client. This feature simplifies a number of scenarios ranging from basic workload mobility to bulk migrations to a public cloud.
 
 * Does not depend on vCenter Enhanced Linked Mode or Hybrid Linked Mode
 * Works for both on-premise and cloud environments.
@@ -21,23 +21,23 @@ It is not often that a minor update is exciting but this time it certainly is! I
 
 ![](/img/xvm000.PNG)
 
-In our demonstrations below we are running vCenter 7.0u1c on the initiating instance and vCenter 7u1a on the distant one.
+In our demonstrations below we are running vCenter 7u1c on the initiating instance and vCenter 7u1a on the distant one to demonstrate what is advanced cross vcenter vmotion.
 
 ### Migrating a virtual machine
 
-* Initiating a cross-vCenter vMotion is as easy as it gets. Right click on the VM you want to relocate and select **Migrate**.
+* Initiating advanced cross vCenter vMotion is as easy as it gets. Right click on the VM you want to relocate and select **Migrate**.
 
-![](/img/xvm0-1.png)
+![migrate vm with cross vcenter vmotion](/img/xvm0-1.png "migrate vm with cross vcenter vmotion")
 
-* Select the new **Cross vCenter Server export** migration type. Note that if you don't see this option you need to update to vCenter 7 update 1c (7.0.1.00300).
+* Select the new **Cross vCenter Server export** migration type. Note that if you don't see this option you need to update to vCenter 7u1c (7.0.1.00300).
 
-![](/img/xvm1.png)
+![cross vcenter vmotion](/img/xvm1.png "cross vcenter vmotion")
 
 * Then you need to specify the target vCenter. Start by selecting **New vCenter** and type in the connection details (IP/FQDN, user, password). You can then save this information to have it ready for later use. Then click on **Login** to validate the information.
 
 ![](/img/xvm2.png)
 
-* You may be prompted with the distant vCenter's certificate which you need to accept.
+* You may be prompted with the distant VMware vCenter's certificate which you need to accept.
 
 ![](/img/xvm3.png)
 
@@ -75,7 +75,7 @@ I ran a ping to the VM during the migration and I only got a longer response tim
 
 ### Importing a virtual machine
 
-Advanced Cross vCenter vMotion also brings the possibility to import virtual machines from a distant vCenter. This can be useful of the remote instance runs a version lower than vCenter 7 update 1c and doesn't have XVM in the vSphere client for example.
+Advanced Cross vCenter vMotion also brings the possibility to import virtual machines from a distant VMware vCenter. This can be useful of the remote instance runs a version lower than vCenter 7 update 1c and doesn't have XVM in the vSphere client for example.
 
 * To initiate an **Import VMs** task, right click on a compute resource and select the option.
 
@@ -89,6 +89,6 @@ The next steps are similar to the ones described in the Migrate chapter.
 
 ### Conclusion
 
-There has been many occurences of features that started out as Flings which eventually made it into the core product because it was so popular. vCenter Server 7.0 update 1c is another example of what the community can bring to the table and it goes on to show how VMware listens to them.
+Can you vMotion from one vCenter to another? Definitely. There has been many occurences of features that started out as Flings which eventually made it into the core product because it was so popular. vCenter Server 7.0 update 1c is another example of what the community can bring to the table and it goes on to show how VMware listens to them.
 
 Advanced Cross vCenter vMotion (XVM) will allow many companies to perform safe and efficient migrations whether they are on-premise or in hybrid scenarios. Is this a feature that you see yourself or your company using in the near future? Talk about your use case in the comment section !
