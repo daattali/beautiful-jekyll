@@ -2,7 +2,7 @@
 layout: page
 title: Health Chain
 subtitle: Interligação de clínicas com seus pacientes através da rede Ethereum
-cover-img: /assets/img/healthchain_cover.png
+cover-img: /assets/img/healthchain/healthchain_cover.png
 ---
 
 Desenvolver uma aplicação descentralizada (dapp) construída sobre uma rede descentralizada(Ethereum) que combina um contrato inteligente e uma interface de usuário frontend, com isso, será possível interligar clínicas com seus pacientes, marcando consultas e armazenando todo o histórico de saúde dos pacientes para acesso a qualquer profissional da saúde.

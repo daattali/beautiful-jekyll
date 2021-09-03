@@ -2,7 +2,7 @@
 layout: page
 title: Mão Espelhada 
 subtitle: Prótese para membros superiores
-cover-img: /assets/img/braco_robotico.jpg
+cover-img: /assets/img/mao_espelhada/braco_robotico.jpg
 ---
 
 Prótese robótica de um membro superior, no qual o movimento dos dedos será controlado por uma luva, com o objetivo de auxiliar pessoas que perderam um membro superior.

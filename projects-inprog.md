@@ -19,12 +19,12 @@ share-img: /assets/img/inprog.jpg
     </p>    
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-bayieeemax/">
-        <img src="{{ 'assets/img/baymax_thumb.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/bayieeemax/baymax_thumb.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
       <a href="https://ieeecimatec.github.io/project-bayieeemax/">
-        <img src="{{ 'assets/img/baymax_thumb.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/bayieeemax/baymax_thumb.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-entry">

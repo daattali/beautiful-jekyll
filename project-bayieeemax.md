@@ -2,7 +2,7 @@
 layout: page
 title: BayIEEEmax
 subtitle: Um robô para auxiliar em triagens
-cover-img: /assets/img/baymax.jpg
+cover-img: /assets/img//bayieeemax/baymax.jpg
 ---
 
 O projeto consiste na construção de um robô autônomo capaz de auxiliar os agentes de saúde no processo de triagem por meio da medição de parâmetros do estado de saúde do paciente, tais como pressão sanguínea, oxigenação e temperatura e registrá-los nas respectivas fichas dos pacientes. O robô exibirá perguntas numa tela LCD e também as emitirá pela via sonora através de um alto-falante e receberá as respostas do paciente por meio de comandos de voz.
@@ -18,13 +18,13 @@ Durante a execução do projeto será construído um modelo em um software de mo
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/gabriel_calmon.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/gabriel_calmon.png' | relative_url }}" width="100" alt="gabriel" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/guilherme_martinho.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/guilherme_martinho.png' | relative_url }}" width="100" alt="guilherme" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/maria_amado.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/joao_guilherme.png' | relative_url }}" width="100" alt="joão" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/joao_guilherme.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url }}" width="100" alt="felipe" class="img-fluid rounded-circle" /></center></th>
           </tr>
         </thead>
         <tbody>
@@ -33,18 +33,18 @@ Durante a execução do projeto será construído um modelo em um software de mo
             <td></td>
             <td width="25%"><center>Guilherme Martinho</center></td>
             <td></td>
-            <td width="25%"><center>Maria Amado</center></td>
-            <td></td>
             <td width="25%"><center>João Guilherme</center></td>
+            <td></td>
+            <td width="25%"><center>Felipe Mohr</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Voluntário desde 2020 <p/> Líder do projeto</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntária desde 2019</center></small></td>
-            <td></td>
             <td style="vertical-align: top"><small><center>Voluntário desde 2019</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2018</center></small></td>
           </tr>
         </tbody>
       </table>
@@ -59,9 +59,9 @@ Durante a execução do projeto será construído um modelo em um software de mo
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/ruan_utah.png' | relative_url }}" width="100" alt="lucas" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/ruan_utah.png' | relative_url }}" width="100" alt="ruan" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/julia_nascimento.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/julia_nascimento.png' | relative_url }}" width="100" alt="julia" class="img-fluid rounded-circle"/></center></th>
           </tr>
         </thead>
         <tbody>
@@ -90,7 +90,7 @@ Durante a execução do projeto será construído um modelo em um software de mo
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/caio_oliva.png' | relative_url }}" width="100" alt="caio" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/yan_valdez.png' | relative_url }}" width="100" alt="marcella" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/yan_valdez.png' | relative_url }}" width="100" alt="yan" class="img-fluid rounded-circle"/></center></th>
           </tr>
         </thead>
         <tbody>
