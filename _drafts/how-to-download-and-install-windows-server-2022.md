@@ -52,6 +52,8 @@ Notice the different options that also let you easily try Windows Server 2022 in
 
 ![Windows server 2022 iso download](/img/ws2022-2.png "Windows server language download")
 
+* Once downloaded, I uploaded the Windows Server 2022 ISO to my local content library You can also store it on a datastore or simply connect it in the virtual console.
+
 ## Install Windows Server 2022 in VMware
 
 Now the installation procedure will vary according to your environment and your needs. You can decide to create a Windows server 2022 VMware template to quickly deploy VMs from it, install it on a bare metal server by making a bootable USB stick, you name it. In our case, we install Windows server 2022 in VMware vSphere 7.
