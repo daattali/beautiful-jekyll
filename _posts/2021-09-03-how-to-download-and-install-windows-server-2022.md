@@ -54,7 +54,7 @@ Notice the different options that also let you easily try Windows Server 2022 in
 
 * Once downloaded, I had issues with the content library and my remote access so I uploaded the Windows Server 2022 ISO to my datastore. You can also simply connect it in the virtual console for the sake of creating a template.
 
-![](/img/ws2022-3.png)
+![Windows server 2022 iso in datastore](/img/ws2022-3.png "Upload the iso to datastore")
 
 ## Install Windows Server 2022 in VMware
 
@@ -64,15 +64,15 @@ Now the installation procedure will vary according to your environment and your 
 
 * **Create a new virtual machine** in the vSphere client.
 
-![](/img/ws2022-4.png)
+![create windows server 2022 server VM](/img/ws2022-4.png "create new vm")
 
 * I will be skipping a few panes here. I select my "TEMPLATES" **folder** as this is where this machine will live once it is converted to a windows server 2022 template.
 
-![](/img/ws2022-5.png)
+![Virtual machine folder](/img/ws2022-5.png "vm folder")
 
 * Select the correct **compatibility** for your VM and the latest **guest OS version**. Windows Server 2022 may not be available in the choices if you aren't running vSphere 7 Update 2, in which case you can use the next latest version such as Windows Server 2019.
 
-![](/img/ws2022-6.png)
+![guest os type windows server 2022](/img/ws2022-6.png "os type")
 
 * In the hardware section, we configure the **system hard disk** with 64GB which is a nice one-size-fits-all and set it to **Thin Provision**.
 
@@ -124,7 +124,7 @@ the first thing to do after installing a virtual machine, especially when buildi
 
 * The vSphere Client should now display the VMware Tools running.
 
-![](/img/ws2022-18.png)
+![windows server 2022 vmware tools](/img/ws2022-18.png)
 
 Install Windows Update
 
@@ -171,3 +171,18 @@ These will obviously depend on what you need in your environment. Here is a few 
 ### 4) Create Windows Server 2022 template
 
 Now that the install Windows Server 2022 in finished and the OS has been prepared, we can proceed with converting it to template. You don't need to sysprep if you plan on using customization specs to deploy new Windows Server 2022 virtual machines.
+
+* **Shut down** the Windows Server virtual machine.
+* **Convert the virtual machine to template**.
+
+![](/img/ws2022-24.png)
+
+* As a last step I suggest that you add some meta **notes** to the template. Especially if you work in a team with other admins. You can also use the content library which facilitates the versioning process.
+
+![](/img/ws2022-25.png)
+
+## Wrap up
+
+There you have it on how to download and install Windows Server 2022 in VMware. No doubt your mileage will vary according to your environment but this should give you a good baseline. 
+
+Once you have a solid base image, you can start creating customization specification to customize new Windows Server 2020 install at deployment. 
