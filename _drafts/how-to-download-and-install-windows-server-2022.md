@@ -3,11 +3,11 @@ layout: post
 title: How to download and install Windows Server 2022
 DATE: 
 subtitle: ''
-metadescription: Find out about Windows Server 2022 download and install in this blog.
-  Learn about some some of the Windows Server 2022 new features.
+metadescription: Find out about how to download and install Windows Server 2022 and
+  create a Windows Server 2022 VMware template.
 
 ---
-In a world where security is increasingly important along with the adoption of hybrid cloud options, Microsoft recently released Windows server 2022 which builds on these industry requirements to offer a mature and secure platform. In this blog, we will discuss how to download and install Windows Server 2022 in VMware. We will also touch base on the Windows Server 2022 new features. 
+In a world where security is increasingly important along with the adoption of hybrid cloud options, Microsoft recently released Windows server 2022 which builds on these industry requirements to offer a mature and secure platform. In this blog, we will discuss how to download and install Windows Server 2022 in VMware. We will also touch base on how to create a Windows Server 2022 template.
 
 ## Windows Server 2022 hardware requirements
 
@@ -60,11 +60,70 @@ Notice the different options that also let you easily try Windows Server 2022 in
 
 Now the installation procedure will vary according to your environment and your needs. You can automate the process with various automation tools or install it on a bare metal server by making a bootable USB stick, you name it. In our case, we install Windows server 2022 in VMware vSphere 7 in a VM using the ISO to turn it into a template.
 
-1. Create the virtual machine in vSphere
-2. Install Windows Server 2022
-3. Install VMware tools
-4. Install Windows Updates
+### 1) Create the virtual machine in vSphere
+
+* **Create a new virtual machine** in the vSphere client.
+
+![](/img/ws2022-4.png)
+
+* I will be skipping a few panes here. I select my "TEMPLATES" **folder** as this is where this machine will live once it is converted to a windows server 2022 template.
+
+![](/img/ws2022-5.png)
+
+* Select the correct **compatibility** for your VM and the latest **guest OS version**. Windows Server 2022 may not be available in the choices if you aren't running vSphere 7 Update 2, in which case you can use the next latest version such as Windows Server 2019.
+
+![](/img/ws2022-6.png)
+
+* In the hardware section, we configure the **system hard disk** with 64GB which is a nice one-size-fits-all and set it to **Thin Provision**.
+
+![](/img/ws2022-7.png)
+
+* Still in the hardware pane, I set the network **adapter type to VMXNET 3** and connect the Windows Server 2022 **ISO file**. 
+
+![](/img/ws2022-8.png)
+
+* You can then finish the wizard, power on the VM and open the virtual console to install the OS from the windows server 2022 ISO.
+
+### 2) Install Windows Server 2022
+
+The way to install Windows Server 2022 is similar to previous releases but we will show it here for the sake of demonstrating the complete process.
+
+* Like any Windows install, boot on the ISO and select your **languages**, click **Next** and click **Install** on the next pane.
+
+![](/img/ws2022-9.png)
+
+* Select the **edition** of the OS that fits your needs. In this case we selected Windows Server 2022 Standar Evaluation with Desktop Experience.
+
+![](/img/ws2022-11.png)
+
+* Click on **Custom: Install Microsoft**...
+
+![](/img/ws2022-12.png)
+
+* Click **New** to partition the 64GB disk and install Windows Server 2022 on it. Then Click **Next** and wait for the installation process to complete.
+
+![](/img/ws2022-13.png)
+
+* When the Windows server 2022 install finishes, type a **password** for the local admin account and move on.
+
+![](/img/ws2022-14.png)
+
+1. Install VMware tools
+
+Prepare a Windows Server 2022 template
+
+1. Install Windows Updates
 
 Run it until there are no more updates to install.
 
-5. Install all software that must be in the template
+2. Install all software that must be in the template
+
+Suggestions
+
+3. Tweak some OS properties
+
+Suggestions
+
+4. Enable ICMP (ping)
+5. Convert to template
+6. Add vSphere notes on the template
