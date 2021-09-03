@@ -108,22 +108,66 @@ The way to install Windows Server 2022 is similar to previous releases but we wi
 
 ![](/img/ws2022-14.png)
 
-1. Install VMware tools
+### 3) Prepare the Windows Server 2022 template
 
-Prepare a Windows Server 2022 template
+#### Install VMware Tools
 
-1. Install Windows Updates
+the first thing to do after installing a virtual machine, especially when building a template, is to install the VMware Tools. 
 
-Run it until there are no more updates to install.
+* Mount the ISO on the virtual machine with **Actions or right click on the VM > Guest OS > Install VMware Tools**
 
-2. Install all software that must be in the template
+![](/img/ws2022-15.png)
 
-Suggestions
+* Then run the installer in the virtual console and restart the virtual machine.
 
-3. Tweak some OS properties
+![](/img/ws2022-16.png)
 
-Suggestions
+* The vSphere Client should now display the VMware Tools running.
 
-4. Enable ICMP (ping)
-5. Convert to template
-6. Add vSphere notes on the template
+![](/img/ws2022-18.png)
+
+Install Windows Update
+
+Search and install the latest Windows Updates. Run the wizard again until there are no more updates available.
+
+![](/img/ws2022-19.png)
+
+#### Tweak Windows Server (optional)
+
+You can tweak a few OS properties when building a template. These are not mandatory and they might very well be overriden downstream by AD domain GPOs but I like to set them straight away.
+
+* **Enable ICMPv4 (ping)**
+
+Go to the Windows Defender Firewall rules configuration in the inbound rules section > Sort by protocol and scroll to ICMPv4 > **Enable both ICMPv4 Echo Requests**.
+
+![](/img/ws2022-20.png)
+
+**Disable open server manager at startup**
+
+The first thing I do on a new Windows Server is to disable the automatic opening of the server manager.Disable open server manager at startupDisable open server manager at startup
+
+![](/img/ws2022-21.png)
+
+* **Check the time zone**
+
+In Server Manager, make sure that the time zone configured corresponds to where you are located.  
+![](/img/ws2022-22.png)
+
+* **Set performance options to best performance**
+
+In Server manager, click on the server to open system properties > **Advanced** > **Performance** > **Settings** > Check **Adjust for best performance.**
+
+![](/img/ws2022-23-1.png)
+
+* **Install any software that must be in the template**
+
+These will obviously depend on what you need in your environment. Here is a few suggestions you may want to have a look at:
+
+* **BGInfo**: get quick information on the system on the wallpaper.
+* **Various agents**: Save time by installing agents in the template such as Horizon agent, monitoring, backup, anti-virus...
+* **7-zip**: The famous compression software, small enough to justify having it in the template if at all needed.
+* **Notepad++**: You will be happy to have it when you need to review log files.
+
+### 4) Create Windows Server 2022 template
+
+Now that the install Windows Server 2022 in finished and the OS has been prepared, we can proceed with converting it to template. You don't need to sysprep if you plan on using customization specs to deploy new Windows Server 2022 virtual machines.
