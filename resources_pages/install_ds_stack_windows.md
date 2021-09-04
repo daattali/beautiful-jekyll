@@ -766,6 +766,8 @@ You will use Docker to create reproducible, sharable and shippable computing env
 
 After signing-up and signing into the Docker Store, go [here](https://store.docker.com/editions/community/docker-ce-desktop-windows) and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen to install the stable version.
 
+> **Note:** If you see a warning saying that your WSL installation is incomplete, you can click the link to install the kernel update and then restart per the instructions in the warning message.
+
 After installation (Docker will make you sign out to finish installing), launch a terminal and type
 
 ```
