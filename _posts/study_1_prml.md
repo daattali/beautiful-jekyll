@@ -1,7 +1,7 @@
 ---
 layout : post
 
-title : PRML_study_chap_1
+title : PRML_study_chap_1_test_md
 
 subtitle : 
 
