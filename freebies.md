@@ -4,7 +4,7 @@ title: Freebies
 subtitle: ''
 
 ---
-This is a small sample of the free resources you'll gain access to by being apart of my biweekly (currently) mail list. Click on the link to gain access to any freebie you'd like! You'll also gain full access to all of my freebies the next time I mail out a newsletter.
+This is a small sample of the free resources you'll gain access to by being apart of my monthly mail list. Click on the link to gain access to any freebie you'd like! You'll also gain full access to all of my freebies the next time I mail out a newsletter.
 
 * [Create Your Simple Laundry Routine Worksheet](https://mailchi.mp/a5efd04962e4/simplelaundry)
 * [Plan Your Zero Spend Month Worksheets](https://mailchi.mp/8264c25ebc2a/zerospend)
