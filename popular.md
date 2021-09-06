@@ -17,11 +17,12 @@ subtitle: ''
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
-## Popular blogs
+## Feature blogs
 
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
-* [How to Keep Your Laundry Routine Simple for Busy Families + a freebie: Create Your Simple Laundry Routine](https://www.simplehomemom.com/how-to-keep-your-laundry-routine-simple-for-busy-families/)
+* [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)
+* [Simple Meal Planning with Theme Nights + 15 simple meal planning theme night ideas](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
 
 ## Podcasts
 
