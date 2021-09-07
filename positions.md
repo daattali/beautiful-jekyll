@@ -1,5 +1,5 @@
 ---
-layout: job_listings
+layout: positions
 title: Open Positions
 subtitle: 
 ---
