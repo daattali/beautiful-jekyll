@@ -23,9 +23,9 @@ Cada Capítulo organizou o Processo TrainIEEE da sua maneira, com diferentes des
   <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 mobile-side-scroller">
     <table class="table-borderless highlight">
         <tr>
-          <th><center><iframe width="214" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></center></th>
-          <th><center><iframe width="214" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></center></th>
-          <th><center><iframe width="214" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></center></th>
+          <th><center><iframe allow="fullscreen;" width="214" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></center></th>
+          <th><center><iframe allow="fullscreen;" width="214" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></center></th>
+          <th><center><iframe allow="fullscreen;" width="214" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></center></th>
         </tr>
     </table>
   </div>
