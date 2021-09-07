@@ -4,7 +4,7 @@ date: 2021-09-07
 title: Programmer/Analyst 3/4
 ---
 
-If interesested in this postions contact **Dr. Molly Hall** [mah546@psu.edu] with CV and cover letter.
+If interesested in this position contact **Dr. Molly Hall** [mah546@psu.edu] with CV and cover letter.
 
 The Hall Lab is seeking highly motivated individuals with a background in computer science, information technology, human genetics, epidemiology, 
 statistical genetics, big data, genomics, metabolomics, and/or bioinformatics for a Programmer/Analyst position at The Pennsylvania State University. 
