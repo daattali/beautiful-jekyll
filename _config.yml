@@ -18,7 +18,7 @@ navbar-links:
   Research: "research"
   Publications: "publications"
   Lab Members: "lab_members"
-  Open Positions: "list_of_positions"
+  Open Positions: "positions"
   Methods & Software:
     - BAMS: "projects/bams"
     - CLARITE: "projects/clarite"
