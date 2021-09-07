@@ -33,4 +33,4 @@ Email: eda.gjergo@whu.edu.cn
 
 Over the course of her Ph.D., she has grown an interest in dust modeling and in the chemical evolution of galaxies. She has lead the development of a dust evolution code within zoom-in cosmological simulations of galaxy clusters.
 
-Currently, she is working on the impact of 
+Currently, she is working on analytical models of the chemical evolution of galaxies, with a particular focus on the production of heavy elements.
