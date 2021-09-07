@@ -115,3 +115,9 @@ Está com dúvidas? Envie um email para
 <a href="vitor.mendes@ieee.org"
    title="Email de Vitor."> vitor.mendes@ieee.org</a>.
 </p>
+
+---
+<p style="text-align: center;">
+E aí, gostou do evento?
+Siga nossas redes sociais e continue acompanhando nosso site, para manter-se sempre bem informado!
+</p>

@@ -7,6 +7,7 @@ share-img: /assets/img/inprog.jpg
 ---
 
 <!-- BayIEEEmax -->
+<div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
     <a href="https://ieeecimatec.github.io/project-bayieeemax/">
       <h2 class="project-title">BayIEEEmax</h2>      
@@ -31,9 +32,10 @@ share-img: /assets/img/inprog.jpg
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
     </div> 
 </article>
-
+</div>
 
 <!-- Projeto 2 -->
+<div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
     <a href="https://ieeecimatec.github.io/projeto/">
       <h2 class="project-title">Projeto 2</h2>      
@@ -56,9 +58,10 @@ share-img: /assets/img/inprog.jpg
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
     </div> 
 </article>
-
+</div>
 
 <!-- Projeto 3 -->
+<div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
     <a href="https://ieeecimatec.github.io/projeto/">
       <h2 class="project-title">Projeto 3</h2>      
@@ -81,9 +84,10 @@ share-img: /assets/img/inprog.jpg
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
     </div> 
 </article>
-
+</div>
 
 <!-- Projeto 4 -->
+<div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
     <a href="https://ieeecimatec.github.io/projeto/">
       <h2 class="project-title">Projeto 4</h2>      
@@ -106,3 +110,4 @@ share-img: /assets/img/inprog.jpg
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
 </div> 
 </article>
+</div>

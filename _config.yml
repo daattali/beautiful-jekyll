@@ -225,6 +225,9 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+      comments: true  # add comments to all pages
+      social-share: true # add social media sharing buttons to all pages
+
 
 # Exclude these files from production site
 exclude:

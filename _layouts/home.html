@@ -8,7 +8,10 @@ layout: page
 
 <div class="posts-list">
   {% for post in posts %}
-  <article class="post-preview">
+  <div data-aos="flip-right" 
+       data-aos-duration="2000" 
+       data-aos-offset="100">
+    <article class="post-preview">
 
     {%- capture thumbnail -%}
       {% if post.thumbnail-img %}
@@ -86,6 +89,7 @@ layout: page
     {% endif %}
 
    </article>
+  </div>
   {% endfor %}
 </div>
 
