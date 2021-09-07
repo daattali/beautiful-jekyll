@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: positions
 ---
 
 If interesested in any of these postions contact **Dr. Molly Hall** [mah546@psu.edu] with CV and cover letter.
