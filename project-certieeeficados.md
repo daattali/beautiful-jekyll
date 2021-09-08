@@ -2,7 +2,7 @@
 layout: page
 title: CertIEEEficados
 subtitle: Preenchimento automático de certificados
-cover-img: /assets/img/certieeeficados/certifieeecados-cover.png
+cover-img: /assets/img/certieeeficados/workshop-cover.jpg
 ---
 
 ## O que é o projeto?
