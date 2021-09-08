@@ -7,8 +7,8 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
+* [How to Use Strengths to Assign Family Chores](https://www.simplehomemom.com/how-to-use-strengths-to-assign-family-chores/)
 * [6 Simple Time Saving Hacks for Busy Moms +FREEBIE: printable list of 20 routines to look at to save time in your home](https://www.simplehomemom.com/6-simple-time-saving-hacks-for-busy-moms/)
-* [How to Declutter Your Wardrobe + 6 guidelines to help you do just that!](https://www.simplehomemom.com/how-to-declutter-your-wardrobe-even-if-you-don-t-know-where-to-start/)
 * **JUST LAUNCHED:**
   * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
   * [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/)
