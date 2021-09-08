@@ -13,6 +13,7 @@ Assim, surgiu a ideia de desenvolver um Gerador de Certificados Automático, que
 
 Para desenvolver o programa, foi utilizada a linguagem Python, com auxílio de algumas bibliotecas, de forma que fosse criada uma interface gráfica para facilitar seu uso a qualquer usuário que tenha necessidade.
 
+<img width="30" src="{{ 'assets/img/github-logo.png' | relative_url }}" alt="logo github"/> **Repositório:** [rascimatec/CertIEEEficados](https://github.com/rascimatec/CertIEEEficados)
 
 ## Como faço para utilizar o programa?
 
