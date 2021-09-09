@@ -21,8 +21,8 @@ One thing we would like you to keep in mind is that the feedback passed on to in
 
 #### 3. Attend our team meeting
 
-We'll ask you to attend our team meeting, usually in the 3rd week of the block. Often, the block reps will share survey results with the
-Co-Directors right before the meeting (thought this is not required). These results don't need to be in a polished form (see below).
+We'll ask you to attend our team meeting, usually in the 3rd week of the block (or late in the 2nd week). Often, the block reps will share survey results with the
+teaching team right before the meeting (thought this is not required). These results don't need to be in a polished form (see below).
 
 #### 4. Communicate back to the cohort
 
