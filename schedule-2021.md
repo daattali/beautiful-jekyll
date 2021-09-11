@@ -4,45 +4,56 @@ title: Session Schedule
 subtitle: Our coaching session schedule
 ---
 
-**While school is out, please attend coaching sessions at [https://www.youtube.com/channel/UCd3ci6LTAvffke7SYgv1N8A](https://www.youtube.com/channel/UCd3ci6LTAvffke7SYgv1N8A)**
+**For this season's schedule, click [here](schedule).**
 
-The Club homework packet may be downloaded <a href="/files/Homework%20Packet.pdf">here</a>.
+While school is remote, coaching sessions will be held on our 
+[Microsoft Teams channel](https://teams.microsoft.com/l/channel/19%3a732a7f9358af4a37affd3f56a592fbee%40thread.tacv2/General?groupId=1820c33d-ed0b-4685-9f38-c1b24c841dad&tenantId=f2d61132-f6d6-42d2-b97f-caa2960fb0f7)
+from 3:30PM on the days scheduled below. Proctors must arrive 15 minutes ahead to start the meeting.
 
-The Mathcounts Toolkit be downloaded <a href="/files/Mathcounts%20Toolkit.pdf">here</a>.
+The homework packet may be downloaded [here](/files/Homework%20Packet.pdf). Assignments for the Homework sessions come from this packet.
+It is expected that all members will attempt to complete the assignment for the week. It will be covered completely in the Homework session.
 
-| Date | Club Homework | Varsity Homework |
-| ------------- |-------------| ----|
-|November 1, 2019 | Ratios stretch from homework packet | Problems 1-20 from benchmark exam
-|November 8, 2019 | Venn Diagrams stretch from homework packet | <a href="/files/RMS%201920B%20Exam.pdf" target="_blank">Benchmark exam</a>, <a href="https://artofproblemsolving.com/wiki/index.php/2016_AMC_8_Problems" target="_blank">AMC 2016</a>
-|November 15, 2019 | Clocks stretch from homework packet |
-|November 22, 2019 | Counting stretch from homework packet | <a href="https://www.mathcounts.org/sites/default/files/2019%20State%20Competition%20Target%20Round.pdf">2019 Mathcounts State Target round</a> 
-|December 13, 2019 | Area stretch from homework packet | <a href="/files/RMS%201920M%20Exam.pdf" target="_blank">Mathcounts school exam</a>
-|December 20, 2019 | Fractions stretch from homework packet | 
-|January 10, 2020 | Angles and Arcs stretch from homework packet | 
-|January 17, 2020 | Bases stretch from homework packet | <a href="https://www.mathcounts.org/sites/default/files/u5328/2018%20State%20Sprint%20Round.pdf" target="_blank">2018 Mathcounts State Sprint</a>, <a href="https://www.mathcounts.org/sites/default/files/u5328/2018%20State%20Target%20Round.pdf" target="_blank">2018 Mathcounts State Target</a>
-|January 24, 2020 | Probability stretch from homework packet | <a href="https://www.mathcounts.org/sites/default/files/u5328/2017%20State%20Sprint%20Round.pdf" target="_blank">2017 Mathcounts State Sprint</a>, <a href="https://www.mathcounts.org/sites/default/files/u5328/2017%20State%20Target%20Round.pdf" target="_blank">2017 Mathcounts State Target</a>
-|January 31, 2020 | Patterns stretch from homework packet | <a href="https://www.mathcounts.org/sites/default/files/u1706/2016%20State%20Sprint.pdf" target="_blank">2016 Mathcounts State Sprint</a>, <a href="https://www.mathcounts.org/sites/default/files/u1706/2016%20State%20Target.pdf" target="_blank">2016 Mathcounts State Target</a>
-|February 28, 2020 | Travel stretch from homework packet | <a href="https://www.scarsdaleschools.k12.ny.us/cms/lib5/NY01001205/Centricity/Domain/398/2015%20State%20Competition%20Sprint%20Round.pdf" target="_blank">2015 Mathcounts State Sprint</a>, <a href="https://www.scarsdaleschools.k12.ny.us/cms/lib5/NY01001205/Centricity/Domain/398/2015%20State%20Competition%20Target%20Round.pdf" target="_blank">2015 Mathcounts State Target</a>
-|March 6, 2020 | Measurement stretch from homework packet | <a href="https://samsmathclub.com/Forum/index.php?action=dlattach;topic=35.0;attach=43">2014 Mathcounts State Sprint</a>, <a href="https://samsmathclub.com/Forum/index.php?action=dlattach;topic=35.0;attach=44">2014 Mathcounts State Target</a>
-|March 20, 2020 (<a href="https://www.youtube.com/watch?v=lbaG5jKTAY4" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/202003-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Expected Value stretch from homework packet | <a href="https://www.mathcounts.org/sites/default/files/2020%20School%20Competition%20Sprint%20Round.pdf" target="_blank">2020 Mathcounts School Sprint</a>, <a href="https://www.mathcounts.org/sites/default/files/2020%20School%20Competition%20Target%20Round.pdf" target="_blank">2020 Mathcounts School Target</a>
-|March 27, 2020  (<a href="https://www.youtube.com/watch?v=UerEQXWiF7w" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200327-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>)  | Transformations stretch from homework packet | <a href="https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Sprint%20Round.pdf" target="_blank">2020 Mathcounts Chapter Sprint</a>, <a href="https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Target%20Round.pdf" target="_blank">2020 Mathcounts Chapter Target</a>
-|April 1, 2020 (<a href="https://youtu.be/4mCO4J9M5ig" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200401-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Modular Arithmetic stretch from homework packet |
-|April 3, 2020 (<a href="https://youtu.be/lcqlJpdvd84" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200403-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | <a href="http://academicsarecool.com/assets/samples/18-19Masters8.pdf" target="_blank">18-19 Math Is Cool 8th Grade Masters (Individual Exam)</a>
-|April 8, 2020 (<a href="https://youtu.be/vgOD_uAPzNw" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200408-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Surface Area & Volume stretch from homework packet |
-|April 10, 2020 (<a href="https://youtu.be/pNnDTmAim-Y" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200410-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194933/individual8.pdf" target="_blank">2018 WSMC Individual</a>, <a href="https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Team%20Round.pdf" target="_blank">2020 Mathcounts Chapter Team Round</a>
-|April 15, 2020 (<a href="https://youtu.be/BAUm598Dqeg" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200415-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Data & Statistics stretch from homework packet | 
-|April 17, 2020 (<a href="https://youtu.be/BiycX6_hH_s" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200417-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | WSMC 2018 8th Grade Team <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194930/algebra8.pdf" target="_blank">Algebra</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194929/geometry8.pdf" target="_blank">Geometry</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194931/probability8.pdf" target="_blank">Probability</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194928/potpourri8.pdf" target="_blank">Potpourri</a>
-|April 22, 2020 (<a href="https://youtu.be/x1PimNXBYRY" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200422-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Geometric Proportions stretch from homework packet |
-|April 24, 2020 (<a href="https://youtu.be/pbifbWnKHrA" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200424-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | <a href="https://newport-math-club.nyc3.digitaloceanspaces.com/past-kpmt/kpmt2018-19.zip" target="_blank">18-19 KPMT 7-8 Individual</a>
-|April 29, 2020 (<a href="https://youtu.be/0b1MSFpfCCw" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200429-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Functions stretch from homework packet |
-|May 1, 2020 (<a href="https://youtu.be/TF71tlI3GzE" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200501-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | WSMC 2017 8th Grade Team <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194896/algebra8.pdf" target="_blank">Algebra</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194895/geometry8.pdf" target="_blank">Geometry</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194897/probability8.pdf" target="_blank">Probability</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194894/potpourri8.pdf" target="_blank">Potpourri</a>
-|May 6, 2020 (<a href="https://youtu.be/TtboETgyLH0" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200506-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Work stretch from homework packet |
-|May 8, 2020 (<a href="https://youtu.be/UlvvzsCfOkU" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200508-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | WSMC 2016 8th Grade Team <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194863/algebra8.pdf" target="_blank">Algebra</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194862/geometry8.pdf" target="_blank">Geometry</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194864/probability8.pdf" target="_blank">Probability</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194861/potpourri8.pdf" target="_blank">Potpourri</a>
-|May 13, 2020 (<a href="https://youtu.be/Ofj2kraH5ec" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200513-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Coordinate Geometry stretch from homework packet |
-|May 15, 2020 (<a href="https://youtu.be/THf3Bay_BLk" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200515-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | WSMC 2015 8th Grade Team <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194850/algebra8.pdf" target="_blank">Algebra</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194846/geometry8.pdf" target="_blank">Geometry</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194830/probability8.pdf" target="_blank">Probability</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194834/potpourri8.pdf" target="_blank">Potpourri</a>
-|May 20, 2020 (<a href="https://youtu.be/yEjp7it7m_A" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200520-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Systems of Equations stretch from homework packet |
-|May 22, 2020 (<a href="https://youtu.be/mdgya8rTpcI" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200522-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | WSMC 2014 8th Grade Team <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194815/algebra-all.pdf" target="_blank">Algebra</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194814/geometry-all.pdf" target="_blank">Geometry</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194816/probability-all.pdf" target="_blank">Probability</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194813/potpourri-all.pdf" target="_blank">Potpourri</a>
-|May 27, 2020 (<a href="https://youtu.be/NSmgl2DiH6A" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200527-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Sequences stretch from homework packet |
-|May 29, 2020 (<a href="https://youtu.be/2ywD4A8ZirI" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200529-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | WSMC 2013 8th Grade Team <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194799/algebra-all.pdf" target="_blank">Algebra</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194798/geometry-all.pdf" target="_blank">Geometry</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194800/probability-all.pdf" target="_blank">Probability</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194797/potpourri-all.pdf" target="_blank">Potpourri</a>
-|June 3, 2020 (<a href="https://youtu.be/zOMAPJp1mIw" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200603-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | Similarity stretch from homework packet |
-|June 5, 2020 (<a href="https://youtu.be/GVmP7Hs_H4s" target="_blank">YouTube</a>, <a href="https://sharplogic.blob.core.windows.net/share/RMSMC/200605-VirtualCoachingSession.mp4" target="_blank">LWSD-friendly</a>) | | WSMC 2012 8th Grade Team <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194784/algebra-all.pdf" target="_blank">Algebra</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194783/geometry-all.pdf" target="_blank">Geometry</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194785/probability-all.pdf" target="_blank">Probability</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194782/potpourri-all.pdf" target="_blank">Potpourri</a>
+Club and Varsity sessions will provide links to their homework below, if assigned for the week.
+These assignments should be published here at least two weeks ahead of the session, so please check back weekly.
+It is expected that all members will attempt to complete the assignment for the week, if assigned.
+It will be covered selectively in their respective sessions, so please request questions in the session as needed.
+
+The Mathcounts Toolkit be downloaded [here](/files/Mathcounts%20Toolkit.pdf).
+
+_Cancelled_ sessions are in _italics_. If a session is cancelled via email, then that takes precedence over this schedule.
+
+| Week Of	| Homework (Mon)		| Club (Wed) | Varsity (Fri) |
+| ----------|-------------			| ----| ----|
+| 12-Oct	| Systems of Equations	| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems) | _No school_ |
+| 19-Oct	| Right Triangles		| [2018 AMC 8](https://artofproblemsolving.com/wiki/index.php/2018_AMC_8_Problems) | |
+| 26-Oct	| Probability			| [2017 AMC 8](https://artofproblemsolving.com/wiki/index.php/2017_AMC_8_Problems) | |
+| 2-Nov		| Fractions				| [2015 AMC 8](https://artofproblemsolving.com/wiki/index.php/2015_AMC_8_Problems) | |
+| 9-Nov		| Area					| _No school_ | |
+| 16-Nov	| Patterns				| _Cancelled_ | |
+| 23-Nov	| Work					| 2017 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iTmtVRFV6LTJEbWs) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iYjZIVGprcmdDQ0E) | _No school_ |
+| 30-Nov	| Similarity			| 2016 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-ic0hBV2VNOGhCa3M) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-ialoyLTc3NVlYc3M) | |
+| 7-Dec		| Logic					| 2015 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-id0RIZUJrOWRIOE0) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iRU9JRVBRQU1LMVU) | |
+| 14-Dec	| Counting				| 2014 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iMEdDNm05TWVMY0k) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iRVlPVGtjZlVwS2c) | |
+| 4-Jan		| Coordinate Geometry	| 2013 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-iS3hJanN0Y0dVVXM) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-iYTluQ211LUwwV3M) | |
+| 11-Jan	| Pascal's Triangle		| 2012 MC Chapter [Sprint](https://drive.google.com/open?id=0BxY_uj2XLv-idkEtUEo0UXhhcjA) and [Target](https://drive.google.com/open?id=0BxY_uj2XLv-idkEtUEo0UXhhcjA) | |
+| 18-Jan	| _No school_			| _Cancelled_ | _Mathcounts_ |
+| 25-Jan	| Sequences				| [15-16 MIC Regional 8th Grade Individual](https://www.academicsarecool.com/assets/samples/15-16%2078%20Champs.pdf) | |
+| 1-Feb		| Clocks				| [16-17 MIC Regional 8th Grade Individual](https://www.academicsarecool.com/assets/samples/16-17Champs8.pdf) | |
+| 8-Feb		| Statistics			| _Math Is Cool_ | _No school_ |
+| 15-Feb	| _No school_			| | |
+| 22-Feb	| Travel				| | |
+| 1-Mar		| Angles and Arcs		| | |
+| 8-Mar		| Ratios				| | _No school_ |
+| 15-Mar	| Mixture				| | |
+| 22-Mar	| Surface Area & Volume | | |
+| 29-Mar	| Bases					| | |
+| 5-Apr		| _No school_			| _No school_ | _No school_ |
+| 12-Apr	| Measurement			| | |
+| 19-Apr	| Mass Point Geometry	| | |
+| 26-Apr	| Venn Diagrams			| _Math Is Cool Masters_ | |
+| 3-May		| Functions				| | |
+| 10-May	| Geometric Proportions	| | |
+| 17-May	| Expected Value		| | |
+| 24-May	| Modular Arithmetic	| | _No school_ |
+
+[2019-2020 schedule](schedule-1920.md)
