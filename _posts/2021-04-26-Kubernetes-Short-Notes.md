@@ -1,3 +1,20 @@
+
+---
+layout: post
+title: Kubernetes and notes
+cover-img: /assets/img/common banner.jpg
+thumbnail-img: /assets/img/common banner.jpg
+share-img: /assets/img/social media preview.png
+comments: true
+social-share: true
+readtime: true
+tags: [number theory]
+---
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZRMQJ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 `Kubernetes` is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.
 
 
