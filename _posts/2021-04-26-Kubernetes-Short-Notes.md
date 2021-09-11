@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Kubernetes and notes
@@ -8,7 +7,7 @@ share-img: /assets/img/social media preview.png
 comments: true
 social-share: true
 readtime: true
-tags: [number theory]
+tags: [kubernetes]
 ---
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZRMQJ3"
