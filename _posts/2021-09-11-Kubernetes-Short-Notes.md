@@ -100,8 +100,7 @@ When a Kubernetes object refers to a set of other Kubernetes objects, a label se
 is used
 
 
-
- #### Deploying a `kubernetes` cluster using kind
+#### Deploying a `kubernetes` cluster using kind
 
 Create A cluster : `kind create cluster --name cluster-name`
 
