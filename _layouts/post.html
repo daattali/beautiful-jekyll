@@ -39,15 +39,6 @@ layout: base
         </div>
       {% endif %}
 
-      <article role="main" class="blog-post">
-        {{ content }}
-        <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-        </script>
-        <script type="text/javascript" src="http://cdn.mathjax.org/math...">
-        </script>
-      </article>
-
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           <span>Tags:</span>
@@ -85,3 +76,18 @@ layout: base
     </div>
   </div>
 </div>
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'] , ['\\(', '\\)']]
+    }
+  });
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+      
