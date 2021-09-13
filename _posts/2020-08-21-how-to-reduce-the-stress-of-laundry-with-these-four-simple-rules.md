@@ -19,9 +19,9 @@ redirect_from:
 description: Simple tips for reducing the stress of laundry for families.
 
 ---
-![Picture of clothes on top of a washer.](/uploads/20200610_224713_0000.jpg "laundry")
-
 We have six people here at home and even with minimizing our wardrobes, it’s really never-ending. Because clothes get dirty and we have to clean. them. Ya know? Laundry used to just be a bit stressful for me because there were piles here. Piles there. If you are stressed out from laundry, today’s blog is for you. I’m going to be sharing how to reduce the stress of laundry with these four simple rules (obviously if one rule doesn’t work for your situation, scrap it or redo for what works for you and your family!).
+
+![Picture of clothes on top of a washer.](/uploads/20200610_224713_0000.jpg "laundry")
 
 ## Have less clothes
 
@@ -46,6 +46,8 @@ Laundry is something that is a part of most of our lives, so creating simple rou
 _Also catch the freebie: Create Your Simple Laundry Routine (ten questions to ask yourself to help you design yours). You can snag that_ [_HERE_](https://mailchi.mp/a5efd04962e4/simplelaundry)_. You may also enjoy my six week online course Simplify Your Home Life: a course for busy moms. I do a whole unit just on routines. Find more on the course_ [_here_](https://www.simplehome.com/course)_._
 
 **SAVE FOR FUTURE REFERENCE:**
+
+![Blog image with a picture of laundry in the background.](/uploads/how-to-reduce-the-stress-of-laundry-shm.jpg "How to Reduce the Stress of Laundry SHM")
 
 **Links to other blogs of mine you may like on keeping laundry routines simple for busy families:**
 
