@@ -11,7 +11,7 @@ If you work with or learn Kubernetes, you probably know the docker is now deprec
 
 I am currently in the process of learning kubernetes and I went with containerd for no particular reason as I am not knowledgeable on the topic. However, I decided to write this piece to help those who are in the same boat get their bearing around containerd. 
 
-Disclaimer, you most likely (hopefully) won't need these often. Still I opted to show a few different things that I feel may be valuable if you are using containerd with kubernetes. 
+Disclaimer, you most likely (hopefully) won't need these often as Kubernetes takes care of it for you. Still I find it interesting to fiddle with it and opted to show a few different things that I feel may be valuable if you are using containerd with kubernetes. 
 
 I will try to update this blog with more commands when I need new ones.
 
@@ -79,6 +79,18 @@ To list the running containers, use the following command. You will find the Con
         Image ID:      k8s.gcr.io/etcd@sha256:9ce...b6d
 
 **_What are "k8s.gcr.io/pause:" containers_**? From what I could gather online, "pause" is an infrastructure container that sets up the network namespace for the pod before provisioning the actual containers. [Source](https://groups.google.com/g/kubernetes-users/c/jVjv0QK4b_o "k8s.gcr.io/pause")
+
+#### Kill a container
+
+Because you never know when you will need the big guns, you can kill a container using ctr directly. Note that kubelet will restart it if it is configured to do so. First you need to find the container ID, then use "task" to kill it.
+
+This can be useful when you need to restore etcd, in which case the process must be stopped manually.
+
+    I am killing the etcd container
+    -------------------------------
+    ubuntu@c1-cp1:~$ sudo ctr -n k8s.io task kill 132...a8a
+
+![kill containerd container](/img/etcdkill.png "kill containerd container")
 
 #### Print containerd version
 
