@@ -9,6 +9,8 @@ metadescription: Since docker deprecation in kubernetes, find out how to interac
 ---
 If you work with or learn Kubernetes, you probably know the docker is now deprecated. While most people are comfortable with the docker cli, you now need to use another runtime such as containerd or CRI-O.
 
+![containerd ctr kubernetes](/img/ctr.png "containerd ctr kubernetes")
+
 I am currently in the process of learning kubernetes and I went with containerd for no particular reason as I am not knowledgeable on the topic. However, I decided to write this piece to help those who are in the same boat get their bearing around containerd. 
 
 Disclaimer, you most likely (hopefully) won't need these often as Kubernetes takes care of it for you. Still I find it interesting to fiddle with it and opted to show a few different things that I feel may be valuable if you are using containerd with kubernetes. 
@@ -55,7 +57,7 @@ By default, containerd will use a default namespace, however, kubernetes uses it
 
 Just type the property you want information about to get help on it, just like with esxcli for instance. You can also add -h to your commands.
 
-![](/img/containerdhelp.png)
+![containerd ctr help](/img/containerdhelp-1.png "containerd ctr help")
 
 #### List containers
 
@@ -106,3 +108,11 @@ You can find the current latest containerd version on their [official page](http
       Version:  1.5.2-0ubuntu1~20.04.2
       Revision:
       UUID: 4976b576-650b-470c-9e9d-f92b6c8c7fc4
+
+#### List container images
+
+To display the list of pulled images, use the image property. I had to shrink the screenshot to make it a bit more readable for you.
+
+    ubuntu@c1-cp1:~$ sudo ctr -n k8s.io image ls
+
+![](/img/ctrimagels.png)
