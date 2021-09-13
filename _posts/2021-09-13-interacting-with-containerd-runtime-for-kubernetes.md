@@ -19,7 +19,12 @@ I will try to update this blog with more commands when I need new ones.
 
 Although you probably know what a container runtime is if you are reading this, I want to quickly touch base on the term to avoid the confusion that usually come with Docker and Kubernetes.
 
-Disclaimer, you most likely (hopefully) won't need these often as Kubernetes takes care of it for you. Still I find it interesting to fiddle with it and opted to show a few different things that I feel may be valuable if you are using containerd with kubernetes. 
+* **_Kubernetes_** is a container orchestration solution. It interact, among other things, with container runtimes to start pods. _In kubernetes you interact with pods_.
+* **_Container runtimes_** execute containers and manages container images on a node. You get to choose one when setting up your kubernetes nodes. _Interacts with containers (not pods)._
+* **_Docker and containerd_** are both container runtimes.
+* **_Containers_** are processes running on the nodes.
+
+Do note that this is an incredibly overly simplified explanation but the point of this blog isn't to deep dive in the terminology.
 
 ## Containerd command line: ctr
 
