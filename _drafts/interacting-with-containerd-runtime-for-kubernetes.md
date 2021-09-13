@@ -7,17 +7,21 @@ metadescription: Since docker deprecation in kubernetes, find out how to interac
   with the containerd runtime
 
 ---
-If you work with or learn Kubernetes, you probably know the docker is now deprecated. While most people are comfortable with the docker cli, you now need to use another runtime such as containerd or CRI-O.
+If you work with or learn Kubernetes, you probably know the [docker is being deprecated](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/). While most people are comfortable with the docker cli, you now need to use another runtime such as containerd or CRI-O.
 
 ![containerd ctr kubernetes](/img/ctr.png "containerd ctr kubernetes")
 
 I am currently in the process of learning kubernetes and I went with containerd for no particular reason as I am not knowledgeable on the topic. However, I decided to write this piece to help those who are in the same boat get their bearing around containerd. 
 
-Disclaimer, you most likely (hopefully) won't need these often as Kubernetes takes care of it for you. Still I find it interesting to fiddle with it and opted to show a few different things that I feel may be valuable if you are using containerd with kubernetes. 
-
 I will try to update this blog with more commands when I need new ones.
 
-#### Containerd command line: ctr
+## Kubernetes and container runtimes
+
+Although you probably know what a container runtime is if you are reading this, I want to quickly touch base on the term to avoid the confusion that usually come with Docker and Kubernetes.
+
+Disclaimer, you most likely (hopefully) won't need these often as Kubernetes takes care of it for you. Still I find it interesting to fiddle with it and opted to show a few different things that I feel may be valuable if you are using containerd with kubernetes. 
+
+## Containerd command line: ctr
 
 Everyone knows docker to interact with its eponymous container runtime. The default tool to interact with containerd is named "ctr". Although not as intuitive as docker, ctr is fairly user friendly and easy to use.
 
@@ -115,4 +119,10 @@ To display the list of pulled images, use the image property. I had to shrink th
 
     ubuntu@c1-cp1:~$ sudo ctr -n k8s.io image ls
 
-![](/img/ctrimagels.png)
+![list containerd images](/img/ctrimagels.png "list containerd images")
+
+## Wrap up
+
+Kubernetes has been the fastest growing container orchestrator and is without a doubt the future of where infrastructure is going. OpenShift, Tanzu and all their competitors are the living proof of that as well as the ever growing demand for DevOps/SRE engineers.
+
+While virtualisation isn't going anywhere anytime soon, VI admins can no longer ignore the container technologies which are now a must have to our tool belts.
