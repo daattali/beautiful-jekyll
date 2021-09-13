@@ -21,7 +21,7 @@ If you don't use sudo, you will get a permission error because your current user
 
     ctr: failed to dial "/run/containerd/containerd.sock": connection error: desc = "transport: error while dialing: dial unix /run/containerd/containerd.sock: connect: permission denied"
 
-* Specify the namespace
+* **Specify the namespace**
 
 By default, containerd will use a default namespace, however, kubernetes uses its own containerd namespace called "k8s.io". If you don't specify this namespace in your commands, your results will be empty. 
 
