@@ -15,13 +15,24 @@ I am currently in the process of learning kubernetes and I went with containerd 
 
 I will try to update this blog with more commands when I need new ones.
 
+## Use cases
+
+Now, why do we care about interacting with the container runtime when Kubernetes is taking care of it for us you may think?
+
+I will be updating this section as I figure out more use cases for it:
+
+* **Etcd restore**: When restoring etcd from a snapshot, you need to stop the container instead of deleting the pod.
+* **API server down**: If the API component is down for any number of reasons and kubectl isn't available, you may still want to interact with containers.
+
+Please, propose other use cases in the comments and I will add them here!
+
 ## Kubernetes and container runtimes
 
 Although you probably know what a container runtime is if you are reading this, I want to quickly touch base on the term to avoid the confusion that usually come with Docker and Kubernetes.
 
 ![containerd container runtime](/img/cri.png "containerd container runtime")
 
-* **_Kubernetes_** is a container orchestration solution. It interact, among other things, with container runtimes which must be [CRI ](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)compliant. _In kubernetes you interact with pods (which contain one or more containers)_. 
+* **_Kubernetes_** is a container orchestration solution. It interact, among other things, with container runtimes which must be [CRI ](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)compliant. _In kubernetes you interact with pods (which contain one or more containers)_.
 * **_Container runtimes_** execute containers and manages container images on a node. You get to choose one when setting up your kubernetes nodes. _Interacts with containers (not pods)._
 * **_Docker and containerd_** are both container runtimes.
 * **_Containers_** are processes running on the nodes.
