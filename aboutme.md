@@ -14,5 +14,5 @@ What else do you need?
 ### My story
 
 Do everything you want to do.
-It's not too late to regret it later[that movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29)lkie.
-##**Let's not regret it.**
+It's not too late to regret it later.
+**Let's not regret it.**

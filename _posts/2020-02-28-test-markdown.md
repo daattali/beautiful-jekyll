@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
+title: 첫글입니다.
+subtitle: 여긴 부제목이구 나만 볼꺼야!!
+gh-repo: dpdtydz/webday
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
