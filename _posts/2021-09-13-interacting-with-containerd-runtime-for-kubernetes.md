@@ -7,11 +7,11 @@ metadescription: Since docker deprecation in kubernetes, find out how to interac
   with the containerd runtime
 
 ---
-If you work with or learn Kubernetes, you probably know the [docker is being deprecated](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/). While most people are comfortable with the docker cli, you now need to use another runtime such as containerd or CRI-O.
+If you work with or learn Kubernetes, you probably know the [docker is being deprecated](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/). While most people are comfortable with the docker cli, you now need to use another runtime such as [containerd ](https://github.com/containerd/containerd)or CRI-O.
 
 ![containerd ctr kubernetes](/img/ctr.png "containerd ctr kubernetes")
 
-I am currently in the process of learning kubernetes and I went with containerd for no particular reason as I am not knowledgeable on the topic. However, I decided to write this piece to help those who are in the same boat get their bearing around containerd. 
+I am currently in the process of learning kubernetes and I went with containerd for no particular reason as I am not knowledgeable on the topic. However, I decided to write this piece to help those who are in the same boat get their bearing around containerd.
 
 I will try to update this blog with more commands when I need new ones.
 
@@ -19,7 +19,9 @@ I will try to update this blog with more commands when I need new ones.
 
 Although you probably know what a container runtime is if you are reading this, I want to quickly touch base on the term to avoid the confusion that usually come with Docker and Kubernetes.
 
-* **_Kubernetes_** is a container orchestration solution. It interact, among other things, with container runtimes to start pods. _In kubernetes you interact with pods_.
+![containerd container runtime](/img/cri.png "containerd container runtime")
+
+* **_Kubernetes_** is a container orchestration solution. It interact, among other things, with container runtimes which must be [CRI ](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)compliant. _In kubernetes you interact with pods (which contain one or more containers)_. 
 * **_Container runtimes_** execute containers and manages container images on a node. You get to choose one when setting up your kubernetes nodes. _Interacts with containers (not pods)._
 * **_Docker and containerd_** are both container runtimes.
 * **_Containers_** are processes running on the nodes.
@@ -38,7 +40,7 @@ If you don't use sudo, you will get a permission error because your current user
 
 * **Specify the namespace**
 
-By default, containerd will use a default namespace, however, kubernetes uses its own containerd namespace called "k8s.io". If you don't specify this namespace in your commands, your results will be empty. 
+By default, containerd will use a default namespace, however, kubernetes uses its own containerd namespace called "k8s.io". If you don't specify this namespace in your commands, your results will be empty.
 
     - No namespace specified
     ------------------------
@@ -60,7 +62,6 @@ By default, containerd will use a default namespace, however, kubernetes uses it
     ubuntu@c1-cp1:~$ sudo ctr namespaces ls
     NAME   LABELS
     k8s.io
-    
 
 #### Containerd help
 
@@ -70,7 +71,7 @@ Just type the property you want information about to get help on it, just like w
 
 #### List containers
 
-To list the running containers, use the following command. You will find the Container ID which is useful when you need to kill one, the image and the runtime (which is containerd obviously). 
+To list the running containers, use the following command. You will find the Container ID which is useful when you need to kill one, the image and the runtime (which is containerd obviously).
 
     ubuntu@c1-cp1:~$ sudo ctr -n k8s.io container ls
     CONTAINER    IMAGE                              RUNTIME
