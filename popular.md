@@ -7,8 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
-* [How to Use Strengths to Assign Family Chores](https://www.simplehomemom.com/how-to-use-strengths-to-assign-family-chores/)
-* [6 Simple Time Saving Hacks for Busy Moms +FREEBIE: printable list of 20 routines to look at to save time in your home](https://www.simplehomemom.com/6-simple-time-saving-hacks-for-busy-moms/)
+* [How to Reduce the Stress of Laundry with these Four Simple Rules + FREEBIE: CREATE YOUR SIMPLE LAUNDRY ROUTINE](https://www.simplehomemom.com/how-to-reduce-the-stress-of-laundry-with-these-four-simple-rules/)
 * **JUST LAUNCHED:**
   * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
   * [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/)
@@ -21,8 +20,7 @@ subtitle: ''
 
 * [All blog tags](http://kellymbriggs.github.io/tags/) (by topic)
 * [How to Start Planning for Beginners + free printable daily planner sheet](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
-* [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)
-* [Simple Meal Planning with Theme Nights + 15 simple meal planning theme night ideas](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
+* [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/) 
 
 ## Podcasts
 
