@@ -58,7 +58,7 @@ I linked all of the books and supplies we use regularly in my Amazon shops: [US 
 
 **SAVE FOR FUTURE REFERENCE:**
 
-![Blog image.](/uploads/2-1.jpg "Our Simple Kindergarten 2020-2021 SHM")
+![](/uploads/seven-tips-to-create-peaceful-homeschooling-routines-shm.jpg)
 
 **More homeschooling blogs of mine you may find helpful:**
 
