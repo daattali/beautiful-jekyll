@@ -8,6 +8,45 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100">
+            <img src="" img width="250">
+        </td>
+        <td><a href="https://openreview.net/forum?id=n1hDe9iK6ms">Learning Visible Connectivity Dynamics for Cloth Smoothing</a><br>
+            <div class="pubauthor">Xingyu Lin, Yufei Wang, Zixuan Huang, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2021</div>
+            <div id="div2021safetyenvelopes" class="pubInfo"></div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="" img width="250">
+        </td>
+        <td><a href="https://openreview.net/forum?id=TsqkJJMgHkk">FabricFlowNet: Bimanual Cloth Manipulation with a Flow-based Policy</a><br>
+            <div class="pubauthor">Thomas Weng, Sujay Bajracharya, Yufei Wang, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2021</div>
+            <div id="div2021safetyenvelopes" class="pubInfo"></div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="" img width="250">
+        </td>
+        <td><a href="https://openreview.net/forum?id=1GNV9SW95eJ">Learning Off-policy for Online Planning</a><br>
+            <div class="pubauthor">Harshit Sikchi, Wenxuan Zhou, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2021 - <award>Oral presentation</award> (Selection rate 6.5%)</div>
+            <div id="div2021safetyenvelopes" class="pubInfo"></div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100">
             <img src="../pics/rss2021lightcurtains.png" img width="250">
         </td>
         <td><a href="https://arxiv.org/abs/2107.04000">Active Safety Envelopes using Light Curtains with Probabilistic Guarantees</a><br>
@@ -82,9 +121,9 @@ subtitle:
     
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="" img width="250">
+            <img src="../pics/cvpr21.png" img width="250">
         </td>
-        <td>Exploiting & Refining Depth Distributions with Triangulation Light Curtains<br>
+        <td><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Raaj_Exploiting__Refining_Depth_Distributions_With_Triangulation_Light_Curtains_CVPR_2021_paper.pdf">Exploiting & Refining Depth Distributions with Triangulation Light Curtains</a><br>
             <div class="pubauthor">Yaadhav Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan<br>
             </div>
             <div id="bib2021exploiting" style="display:none">
@@ -117,9 +156,9 @@ subtitle:
     
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="" img width="250">
+            <img src="../pics/peiyunff.gif" img width="250" height="100">
         </td>
-        <td>Safe Local Motion Planning with Self-Supervised Freespace Forecasting<br>
+        <td><a href="https://www.cs.cmu.edu/~peiyunh/ff/paper.pdf">Safe Local Motion Planning with Self-Supervised Freespace Forecasting</a><br>
             <div class="pubauthor">Peiyun Hu, Aaron Huang, John Dolan, David Held, Deva Ramanan<br>
             </div>
             <div id="bib2021cvpr_safe" style="display:none">
@@ -138,8 +177,10 @@ subtitle:
             </div>
             <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2021
             <div style="font-size:small">
-                <!-- <a href="https://bokorn.github.io/zephyr/">[Project Page]</a> -->
-                <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
+                <a href="https://www.cs.cmu.edu/~peiyunh/ff/index.html">[Project Page]</a> 
+                <a href="https://www.cs.cmu.edu/~peiyunh/ff/poster.pdf">[Poster]</a> 
+                <a href="https://youtu.be/O_2MojWp7yk">[Talk]</a> 
+                <a href="https://github.com/peiyunh/ff">[Code]</a>
                 <a href="javascript:copy(div2021cvpr_safe, bib2021cvpr_safe)">[Bibtex]</a>
                 <a href="javascript:copy(div2021cvpr_safe, abs2021cvpr_safe)">[Abstract]</a>
                 <!-- <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a> -->
