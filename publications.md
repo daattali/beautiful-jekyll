@@ -7,8 +7,8 @@ subtitle:
 <table cellpadding="10" width="100%">
 
     <tr>
-        <td class="pubimg" width="250" height="100">
-            <img src="" img width="250">
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/corl_logo.png" img width="150">
         </td>
         <td><a href="https://openreview.net/forum?id=n1hDe9iK6ms">Learning Visible Connectivity Dynamics for Cloth Smoothing</a><br>
             <div class="pubauthor">Xingyu Lin, Yufei Wang, Zixuan Huang, David Held<br>
@@ -20,8 +20,8 @@ subtitle:
     </tr>
 
     <tr>
-        <td class="pubimg" width="250" height="100">
-            <img src="" img width="250">
+    <td class="pubimg" width="250" height="100" style="text-align:center">
+        <img src="../pics/corl_logo.png" img width="150">
         </td>
         <td><a href="https://openreview.net/forum?id=TsqkJJMgHkk">FabricFlowNet: Bimanual Cloth Manipulation with a Flow-based Policy</a><br>
             <div class="pubauthor">Thomas Weng, Sujay Bajracharya, Yufei Wang, David Held<br>
@@ -33,8 +33,8 @@ subtitle:
     </tr>
 
     <tr>
-        <td class="pubimg" width="250" height="100">
-            <img src="" img width="250">
+    <td class="pubimg" width="250" height="100" style="text-align:center">
+        <img src="../pics/corl_logo.png" img width="150">
         </td>
         <td><a href="https://openreview.net/forum?id=1GNV9SW95eJ">Learning Off-policy for Online Planning</a><br>
             <div class="pubauthor">Harshit Sikchi, Wenxuan Zhou, David Held<br>
