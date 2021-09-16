@@ -7,7 +7,7 @@ metadescription: Since docker deprecation in kubernetes, find out how to interac
   with the containerd runtime
 
 ---
-If you work with or learn Kubernetes, you probably know the [docker is being deprecated](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/). While most people are comfortable with the docker cli, you now need to use another runtime such as [containerd ](https://github.com/containerd/containerd)or CRI-O.
+If you work with or learn Kubernetes, you probably know that [docker is being deprecated](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/). While most people are comfortable with the docker cli, you now need to use another runtime such as [containerd ](https://github.com/containerd/containerd)or CRI-O.
 
 ![containerd ctr kubernetes](/img/ctr.png "containerd ctr kubernetes")
 
@@ -29,7 +29,7 @@ Please, propose other use cases in the comments and I will add them here!
 
 ## Kubernetes and container runtimes
 
-Although you probably know what a container runtime is if you are reading this, I want to quickly touch base on the term to avoid the confusion that usually come with Docker and Kubernetes.
+Although you probably know what a container runtime is if you are reading this, I want to quickly touch base on the term to avoid the confusion that usually comes with Docker and Kubernetes.
 
 ![containerd container runtime](/img/cri.png "containerd container runtime")
 
