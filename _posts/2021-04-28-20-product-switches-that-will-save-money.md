@@ -23,10 +23,10 @@ Years back, I mean years back. I bought reusable [cloth pads](https://www.self.c
 ## 20 product switches that will save money
 
  1. **Protein powder containers** or really any nice empty containers emptied out after its original use for home organization.
- 2. Disposable razors to a [**safety razor**](https://www.westcoastshaving.com/blogs/wet-shaving-and-grooming-blog/what-is-a-safety-razor-for-what-are-the-benefits)**.** A safety razor is essentially a razor that has a handle that you use over and over and you only replace the blades as they dull, which are very affordable to replace.
+ 2. Disposable razors to **a** [**safety razor**](https://www.westcoastshaving.com/blogs/wet-shaving-and-grooming-blog/what-is-a-safety-razor-for-what-are-the-benefits)**.** A safety razor is essentially a razor that has a handle that you use over and over and you only replace the blades as they dull, which are very affordable to replace. You can read more about safety razors [here](https://www.beardandblade.com.au/blogs/academy/how-to-shave-with-a-safety-razor).
  3. Shaving cream in a can to **shaving soap**.
- 4. Disposable to [**cloth diapers**](https://momlovesbest.com/diapering/cloth-diapers/benefits-cloth-diapers#:\~:text=Cloth%20diapers%20have%20more%20breathability,which%20can%20lead%20to%20rashes.)**.**
- 5. Menstrual pads to **cloth pads/**[**menstrual cup**](https://www.chatelaine.com/health/lady-bits/menstrual-cups-faq/)**.**
+ 4. Disposable to [**cloth diapers**](https://momlovesbest.com/diapering/cloth-diapers/benefits-cloth-diapers#:\~:text=Cloth%20diapers%20have%20more%20breathability,which%20can%20lead%20to%20rashes.)**.** There are so many different kinds of cloth diapers out there. Check [this blog](https://www.thenaturalbabyco.com/pages/the-five-major-styles-of-cloth-diapers) to learn about them.
+ 5. Menstrual pads to **cloth pads/**[**menstrual cup**](https://www.chatelaine.com/health/lady-bits/menstrual-cups-faq/)**.** Which are better? [This blog](https://lazy-monk.com/blog/reusable-cloth-pads-vs-menstrual-cups-which-is-better/) may help you out.
  6. Disposable wipes to **cloth wipes.** I mostly [made my own cloth wipes](https://wholefully.com/make-cloth-wipes-without-serger/) with using pinking shears and cotton fabric.
  7. All purpose brand name cleaner spray to **vinegar spray**. I share my recipes in the freebie vault for my mail list. You can signup and gain access to those recipes [HERE](http://eepurl.com/gPtQM9).
  8. Brand name cleaner to **natural** **soap spray**.
