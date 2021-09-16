@@ -18,7 +18,7 @@ These assignments should be published here at least two weeks ahead of the sessi
 It is expected that all members will attempt to complete the assignment for the week, if assigned.
 It will be covered selectively in their respective sessions, so please request questions in the session as needed.
 
-The Mathcounts Toolkit be downloaded [here](/files/Mathcounts%20Toolkit.pdf).
+The Mathcounts Toolkit can be downloaded [here](/files/Mathcounts%20Toolkit.pdf).
 
 _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then that takes precedence over this schedule.
 

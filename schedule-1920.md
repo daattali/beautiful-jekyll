@@ -10,7 +10,7 @@ subtitle: Our coaching session schedule
 
 The Club homework packet may be downloaded <a href="/files/Homework%20Packet.pdf">here</a>.
 
-The Mathcounts Toolkit be downloaded <a href="/files/Mathcounts%20Toolkit.pdf">here</a>.
+The Mathcounts Toolkit can be downloaded <a href="/files/Mathcounts%20Toolkit.pdf">here</a>.
 
 | Date | Club Homework | Varsity Homework |
 | ------------- |-------------| ----|
