@@ -23,6 +23,7 @@ I will be updating this section as I figure out more use cases for it:
 
 * **Etcd restore**: When restoring etcd from a snapshot, you need to stop the container instead of deleting the pod.
 * **API server down**: If the API component is down for any number of reasons and kubectl isn't available, you may still want to interact with containers.
+* **Exec in a container as a different user**: kubectl doesn't allow to run a command in a container as a different user (--user), which could be useful for troubleshooting purpose with root for instance. In which case, you need to use the CRI to do it. (Thanks to [u/lordkoba](https://www.reddit.com/r/kubernetes/comments/ppcg0s/what_are_your_use_cases_for_interacting_directly/hd3c9si?utm_source=share&utm_medium=web2x&context=3) for the tip)
 
 Please, propose other use cases in the comments and I will add them here!
 
@@ -109,7 +110,7 @@ Because you never know when you will need the big guns, you can kill a container
 
 This can be useful when you need to restore etcd, in which case the process must be stopped manually.
 
-    I am killing the etcd container
+    - I am killing the etcd container
     -------------------------------
     ubuntu@c1-cp1:~$ sudo ctr -n k8s.io task kill 132...a8a
 
@@ -137,6 +138,48 @@ To display the list of pulled images, use the image property. I had to shrink th
     ubuntu@c1-cp1:~$ sudo ctr -n k8s.io image ls
 
 ![list containerd images](/img/ctrimagels.png "list containerd images")
+
+#### Execute a command in a container as a different user
+
+You know you can use kubectl exec -it mycont -- /bin/sh to open a shell in a pod container for instance? Well you can do the same thing with ctr. However, like Docker, ctr allows you to specify a different user which you cannot do with kubectl. Read below this code block to get a pod to test the permissions.
+
+    - Find the container ID with "ctr -n k8s.io c ls" on the worker node
+    - or "k describe pod | grep ID" on the control plane
+    --------------------------------------------------------------------
+    ubuntu@c1-cp1:~$ k describe pod security-context-demo | grep ID
+    Annotations:  cni.projectcalico.org/containerID: e51...835
+        Container ID:  containerd://a48...964
+        
+     - Find the PID of the process on the worker node (here PID=341884)
+     ------------------------------------------------------------------
+     ubuntu@c1-node2:~$ sudo ctr -n k8s.io task ls | grep a48...964
+    a48...964    341884    RUNNING
+    
+    - Execute a command with "... task --exec-id <PID> <ContID> <CMD>"
+    ------------------------------------------------------------------
+    ubuntu@c1-node2:~$ sudo ctr -n k8s.io task exec --exec-id 341884 a48...964 /bin/sh
+    
+    - Display the user and try to create a file at the root: Failed
+    ---------------------------------------------------------------
+    whoami
+    whoami: unknown uid 1000
+    touch /test
+    touch: /test: Permission denied
+    exit
+    
+    - Now add --user root before the PID and try again: OK
+    ------------------------------------------------------
+    ubuntu@c1-node2:~$ sudo ctr -n k8s.io task exec --exec-id 341884 --user root a48...964 /bin/sh
+    
+    whoami
+    root
+    touch /test
+    ls /test
+    /test
+
+You can test the permissions by provisioning the following [pod](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/). Note that you need to change "allowPrivilegeEscalation: false" to "true" or you won't be able to execute as root.
+
+    kubectl apply -f https://k8s.io/examples/pods/security/security-context.yaml
 
 ## Wrap up
 
