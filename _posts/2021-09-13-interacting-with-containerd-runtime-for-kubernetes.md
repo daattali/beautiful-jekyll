@@ -21,7 +21,7 @@ Now, why do we care about interacting with the container runtime when Kubernetes
 
 I will be updating this section as I figure out more use cases for it:
 
-* **Etcd restore**: When restoring etcd from a snapshot, you need to stop the container instead of deleting the pod.
+* **Etcd restore**: When restoring etcd from a snapshot, you need to stop the container directly if etcd was set up as a static pod as the output of kubectl is nothing but a [mirror pod](https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/#behavior-of-static-pods), for instance if you created your cluster with kubeadm. 
 * **API server down**: If the API component is down for any number of reasons and kubectl isn't available, you may still want to interact with containers.
 * **Exec in a container as a different user**: kubectl doesn't allow to run a command in a container as a different user (--user), which could be useful for troubleshooting purpose with root for instance. In which case, you need to use the CRI to do it. (Thanks to [u/lordkoba](https://www.reddit.com/r/kubernetes/comments/ppcg0s/what_are_your_use_cases_for_interacting_directly/hd3c9si?utm_source=share&utm_medium=web2x&context=3) for the tip)
 
