@@ -21,12 +21,12 @@ competition for our membership.
 
 The second round is the **Chapter** round, which is invitational. The top ten performers from our School
 round advance to the Chapter round. Of them, the top four will represent our school in the team aspects.
-This competition is usually held in Building 33 of the Microsoft Campus.
+This competition is usually held in Building 33 of the Microsoft campus.
 
 # State
 
 The third round is the **State** round, which invites top teams and individual performers from the Chapter
-round. This competition is usually held in Building 33 of the Microsoft Campus.
+round. This competition is usually held in Building 33 of the Microsoft campus.
 
 # National
 
