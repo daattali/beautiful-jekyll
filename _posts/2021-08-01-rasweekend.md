@@ -2,9 +2,9 @@
 layout: post
 title: 
 subtitle: 
-cover-img: /assets/img/rasweekend.png
-thumbnail-img: /assets/img/trilha.png
-share-img: /assets/img/trilha.png
+cover-img: /assets/img/rasweekends/rasweekend.png
+thumbnail-img: /assets/img/rasweekends/trilha.png
+share-img: /assets/img/rasweekends/trilha.png
 ---
 
 O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a capacitação dos nossos voluntários e a disseminação de conhecimentos importantes para a construção de nossos projetos. Os participantes terão a oportunidade de participar de workshops de: 
@@ -64,7 +64,7 @@ O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a c
 
 ### Trilha
 
-<th><center><img src="{{ 'assets/img/trilha.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+<th><center><img src="{{ 'assets/img/rasweekends/trilha.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
 <br>
 
 ### Valores
@@ -88,7 +88,7 @@ Além disso, vale ressaltar que todos os workshops contaram com certificados.
     <td>25 Reais</td>
   </tr>
   <tr>
-    <td>Estudante do Cimatec<br>ou da UFCG.</td>
+    <td>Voluntário do Cimatec<br>ou da UFCG.</td>
     <td>10 Reais</td>
     <td>25 Reais</td>
   </tr>
@@ -115,6 +115,30 @@ Está com dúvidas? Envie um email para
 <a href="vitor.mendes@ieee.org"
    title="Email de Vitor."> vitor.mendes@ieee.org</a>.
 </p>
+
+## O Evento
+
+### Arduino
+
+<th><center><img src="{{ 'assets/img/rasweekends/wks/arduino.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+<br>
+
+### OnShape
+
+<th><center><img src="{{ 'assets/img/rasweekends/wks/cad.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+<br>
+
+### OpenCV
+<th><center><img src="{{ 'assets/img/rasweekends/wks/open.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+<br>
+
+### GIT/GitHub
+<th><center><img src="{{ 'assets/img/rasweekends/wks/git.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+<br>
+
+### Eletrônica
+<th><center><img src="{{ 'assets/img/rasweekends/wks/eletro.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+<br>
 
 ---
 <p style="text-align: center;">
