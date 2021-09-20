@@ -118,27 +118,42 @@ Está com dúvidas? Envie um email para
 
 ## O Evento
 
-### Arduino
 
-<th><center><img src="{{ 'assets/img/rasweekends/wks/arduino.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
-<br>
+<div data-aos="fade-right" data-aos-offset="150"> 
+<article class="project-preview-right">
+  <th><center><img src="{{ 'assets/img/rasweekends/wks/arduino.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+  <br>
+    <div class="project-entry">
 
-### OnShape
+<div data-aos="fade-right" data-aos-offset="150"> 
+<article class="project-preview-right">
+  Arduino
+  <th><center><img src="{{ 'assets/img/rasweekends/wks/cad.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+  <br>
+    <div class="project-entry">
 
-<th><center><img src="{{ 'assets/img/rasweekends/wks/cad.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
-<br>
 
-### OpenCV
-<th><center><img src="{{ 'assets/img/rasweekends/wks/open.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
-<br>
+<div data-aos="fade-right" data-aos-offset="150"> 
+<article class="project-preview-right">
+  Arduino
+  <th><center><img src="{{ 'assets/img/rasweekends/wks/open.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+  <br>
+    <div class="project-entry">
 
-### GIT/GitHub
-<th><center><img src="{{ 'assets/img/rasweekends/wks/git.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
-<br>
 
-### Eletrônica
-<th><center><img src="{{ 'assets/img/rasweekends/wks/eletro.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
-<br>
+<div data-aos="fade-right" data-aos-offset="150"> 
+<article class="project-preview-right">
+  Arduino
+  <th><center><img src="{{ 'assets/img/rasweekends/wks/git.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+  <br>
+    <div class="project-entry">
+
+<div data-aos="fade-right" data-aos-offset="150"> 
+<article class="project-preview-right">
+  Arduino
+  <th><center><img src="{{ 'assets/img/rasweekends/wks/eletro.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+  <br>
+    <div class="project-entry">
 
 ---
 <p style="text-align: center;">
