@@ -7,8 +7,8 @@ subtitle: Weekly coaching sessions at RMS
 **While school is remote, all sessions will be held over Microsoft Teams and all rooms are open to everyone. See [the schedule](/schedule) for details.**
 
 RMS Math Club membership is available to all students at Redmond Middle School. We provide coaching for students at
-every level of experience in order to foster an environment of skill development. Learn more about joining
-[here](/).
+every level of experience in order to foster an environment of skill development. Learn more about 
+[joining](/) and the [session schedule](/schedule).
 
 # Expectations
 Math club members are expected to regularly attend our weekly coaching sessions on Fridays from 2:50-4:00 in Red Cedar pod.
