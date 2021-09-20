@@ -7,8 +7,8 @@ subtitle: National competition series
 Our math club directly manages participation in this competition. Learn more about the competition
 on their [official web site](https://www.mathcounts.org).
 
-For details on dates and locations, please see [the competition schedule](/competitions). All math club 
-members are encouraged to participate.
+All math club members are encouraged to participate. For details on dates, locations, and registration,
+please see [the competition schedule](/competitions).
 
 The first round of the competition is the **School** round. This event is implemented by our math
 club and features [an exam](/exams) drafted by our coaches to effectively differentiate participants.
@@ -17,9 +17,10 @@ competition for our membership.
 
 The second round is the **Chapter** round, which is invitational. The top ten performers from our School
 round advance to the Chapter round. Of them, the top four will represent our school in the team aspects.
+This competition is usually held in Building 33 of the Microsoft Campus.
 
 The third round is the **State** round, which invites top teams and individual performers from the Chapter
-round.
+round. This competition is usually held in Building 33 of the Microsoft Campus.
 
 The final round is the **National** round, which invites the top four individual performers from each
 State round.
