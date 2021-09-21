@@ -13,4 +13,6 @@ share-img: ''
 redirect_from: []
 
 ---
+![](/uploads/sweeping-shm.jpg)
+
 ![Someone with cleaning gloves on washing a wall.](/uploads/how-to-develop-cleaning-and-tidying-routines-in-4-simple-steps-shm.jpg "How to Develop Cleaning and Tidying Routines in 4 Simple Steps SHM")
