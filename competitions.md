@@ -18,6 +18,7 @@ subtitle: Our competition calendar
 |TBD                     | [LWSD Math Olympiad](https://kims.lwsd.org/activities/math-olympiad) | TBD | --| TBD 
 |TBD                     | RMS Final                              | TBD | -- | TBD 
 
+All competitions are **optional**.
 
 [2020-2021 schedule](/competitions-2021.md)
 
