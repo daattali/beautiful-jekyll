@@ -2,7 +2,7 @@
 layout: page
 #title: PetIEEE
 #subtitle: Um mascote robótico para idosos
-cover-img: /assets/img/petieee/petieee_wide.jpg
+cover-img: /assets/img/petieee/petieee_wide.png
 ---
 
 O PetIEEE é um projeto de um robô auxiliar de idosos, principalmente se tratando da rotina deles, possuindo as funções de checagem do idoso via comandos de voz e lembrá-los de realizar as atividades importantes do dia a dia como escovar os dentes, horário de tomar remédios, ou até mesmo o horário dos banhos com a utilização de alarmes. O robô possui uma ligação com um bot do telegram que será a sua interface de configuração da função de checagem e dos seus alarmes, sendo importante a configuração do robô antes do uso. Além disso, o PetIEEE também possui um display gráfico que mostrará as "emoções" do robô, desse modo, tornando-o um dispositivo mais acolhedor para os idosos.
