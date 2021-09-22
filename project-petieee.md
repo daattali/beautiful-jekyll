@@ -14,7 +14,7 @@ O PetIEEE é um projeto de um robô auxiliar de idosos, principalmente se tratan
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/rafael_luna.pngmarina_calheira.png' | relative_url }}" width="100" alt="luna" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/rafael_luna.png' | relative_url }}" width="100" alt="luna" class="img-fluid rounded-circle" /></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/marina_calheira.png' | relative_url }}" width="100" alt="marina" class="img-fluid rounded-circle"/></center></th>
             <th></th>
