@@ -26,8 +26,7 @@ If you’re wanting to create a simple cleaning routine for yourself, my best pi
 
 Aspects of my simple cleaning routine that you can take to create your own cleaning and tidying routines:
 
-  
- 1 loop planning - creating a set of tasks that you can loop through at your own pace.
+1. Loop planning - creating a set of tasks that you can loop through at your own pace.
 
 ## What’s a loop plan?
 
@@ -47,12 +46,11 @@ Your simple cleaning routine is going to look different from mine, but hopefully
 
 * Related: [How to Design a Simple Cleaning Routine](https://www.simplehomemom.com/how-to-design-a-simple-cleaning-routine/)
 
-  
 As amazing as the 4 simple steps are above, it’s always good to keep in mind too that we are not robots. _We can’t keep up with all things at all times_, cleaning and tidying included.
 
-Having a family means that there is always cleaning and tidying to be done. No kidding, right? I think I was at the number of two kids that I felt stressed out by the house. I remember a good friend of mine laughing, telling me it’ll eventually come crashing down (or something like that). She was right. I’m at four kids now and I’ve finally realized that nope. I cannot (and will not) stay on top of all things in the house. Unless I wanted to make that my life’s work. And I have other things that are life giving to me than that.   
-   
-FREEBIE: master cleaning task list
+Having a family means that there is always cleaning and tidying to be done. No kidding, right? I think I was at the number of two kids that I felt stressed out by the house. I remember a good friend of mine laughing, telling me it’ll eventually come crashing down (or something like that). She was right. I’m at four kids now and I’ve finally realized that nope. I cannot (and will not) stay on top of all things in the house. Unless I wanted to make that my life’s work. And I have other things that are life giving to me than that. 
+
+### FREEBIE: master cleaning task list
 
 _If you like the sounds of a master cleaning task list and want to try it out for yourself, I created a simple blank master cleaning task list printable for you to fill in. You can download it_ [_here_](https://mailchi.mp/b99d58a9c22d/master-cleaning-task-list)_._
 
@@ -72,11 +70,6 @@ _“I really enjoyed Kelly’s course! I think it’s perfect for busy moms tryi
 
 **Other blogs of mine you may enjoy reading:**
 
-# [Throw Out the Cleaning Routine and Try This Instead](https://www.simplehomemom.com/throw-out-the-cleaning-routine-and-try-this-instead/)
-
-# · [Two Benefits of the Master Task List Method](https://www.simplehomemom.com/two-benefits-of-the-master-task-list-method/)
-
-* [How Autopiloting Your Home Life Can be a Good Thing](https://www.simplehomemom.com/How-Autopiloting-Your-Home-Life-Can-be-a-Good-Thing/)
+* [Throw Out the Cleaning Routine and Try This Instead](https://www.simplehomemom.com/throw-out-the-cleaning-routine-and-try-this-instead/)
 * [5 Key Routines to Help Simplify your Home Life](https://www.simplehomemom.com/5-key-routines-to-help-simplify-your-home-life/)
 * [10 Simple Habits to Create a Simpler Home](https://www.simplehomemom.com/10-simple-habits-to-create-a-simpler-home/)
-* [Five Ideas to Create a Simpler Home](https://www.simplehomemom.com/five-ideas-to-create-a-simpler-home/)
