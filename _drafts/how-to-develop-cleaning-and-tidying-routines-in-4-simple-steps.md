@@ -1,6 +1,10 @@
 ---
 post: post
-tags: []
+tags:
+- cleaning routines
+- tidying routines
+- routines
+- home routines
 thumbnail-img: "/uploads/headshot.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
