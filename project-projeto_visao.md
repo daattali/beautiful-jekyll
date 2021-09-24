@@ -15,8 +15,7 @@ Imagine facilitar a vida de atendentes e recepcionistas de hospitais na hora de 
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/alexandre_adonai.png' | relative_url}}" width="100" alt="alexandreadonai" class="img-fluid rounded-circle img-blur" /></center></th>
-            <th></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/pedro_barros.png' | relative_url}}" width="100" alt="pedrobarros" class="img-fluid rounded-circle img-blur" /></center></th>
             <th><center><img src="{{ 'assets/img/voluntarios/eduardo_lobo.png' | relative_url}}" width="100" alt="eduardo" class="img-fluid rounded-circle img-blur" /></center></th>
         </thead>
         <tbody>
