@@ -7,8 +7,6 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
-* [How to Reduce the Stress of Laundry with these Four Simple Rules + FREEBIE: CREATE YOUR SIMPLE LAUNDRY ROUTINE](https://www.simplehomemom.com/how-to-reduce-the-stress-of-laundry-with-these-four-simple-rules/)
-* [20 Product Switches that Will Save Money + bonus freebie: 50 product switches to save money](https://www.simplehomemom.com/20-product-switches-that-will-save-money/)
 * **JUST LAUNCHED:**
   * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
   * [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/)
