@@ -10,7 +10,7 @@ Imagine facilitar a vida de atendentes e recepcionistas de hospitais na hora de 
 
 ### Equipe de Desenvolvimento
 <div class="row">
-  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
     <div class="mobile-side-scroller">
       <table class="table-borderless highlight">
         <thead>
@@ -22,12 +22,10 @@ Imagine facilitar a vida de atendentes e recepcionistas de hospitais na hora de 
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
             <td width="25%"><center>Pedro Barros</center></td>
-            <td></td>
             <td width="25%"><center>Alexandre Magno</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Voluntário desde 2021 <p/> Líder do projeto</center></small></td>
-            <td></td>
             <td style="vertical-align: top"><small><center>Voluntário desde 2021</center></small></td>
           </tr>
         </tbody>
