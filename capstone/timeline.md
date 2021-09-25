@@ -11,7 +11,7 @@ This year's capstone course will run __May - June, 2021__ (~8 weeks).
 
 | Event                                                                                          | Deadline/Period       |
 |------------------------------------------------------------------------------------------------|-----------------------|
-| Call for Capstone proposals opens                                                              | End-September, 2021   |
+| Call for Capstone proposals opens                                                              | October, 2021   |
 | [Suggested initial submission of proposal](#proposal-revision-process)                         | November 19, 2021     |
 | [Proposal deadline](#proposal-revision-process)                                                | December 15, 2021     |
 | [Selection of proposals](#selection-of-proposals)                                              | January 15, 2022      |
