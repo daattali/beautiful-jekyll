@@ -34,24 +34,24 @@ share-img: /assets/img/inprog.jpg
 </article>
 </div>
 
-<!-- Projeto 2 -->
+<!-- Projeto Visão -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-    <a href="https://ieeecimatec.github.io/projeto/">
-      <h2 class="project-title">Projeto 2</h2>      
+    <a href="https://ieeecimatec.github.io/project-projeto_visao/">
+      <h2 class="project-title">Projeto Visão</h2>      
     </a>
     <p class="project-meta project-meta-right">
-        Finalizado em mes de ano
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em julho de 2021
+        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-projeto_visao/">
+        <img src="{{ 'assets/img/visao/olhoVisao.png' | relative_url }}" alt="visao" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-projeto_visao/">
+        <img src="{{ 'assets/img/visao/olhoVisao.png' | relative_url }}" alt="visao" class="img-blur">
       </a>
     </div>
     <div class="project-entry">
