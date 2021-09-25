@@ -10,8 +10,8 @@ subtitle: For MDS Capstone Projects
 Partners may choose to submit a capstone project(s) to the [MDS Vancouver](https://ubc-mds.github.io/about/) program (general data science) and/or the [MDS Computational Linguistics](https://ubc-mds-cl.github.io/about) program (language-related data science). If you're unsure about which program to submit your project to, read more [here](#should-i-submit-my-proposal-to-mds-vancouver-or-mds-computational-linguistics).
 
 Proposal forms can be found here:
-- [MDS Vancouver proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_cCmtC3gLkgyQ2c5).
-- [MDS Computational Linguistics proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_6G26k7yyLVRcb0F).
+- MDS Vancouver proposal form (opens October, 2021).
+- MDS Computational Linguistics proposal form (opens fall 2021).
 - [An example proposal](/capstone/sample_proposal).
 
 *Due to COVID-19, it is unclear whether 2021 Capstone Projects will be conducted in-person or remotely. However, after a very successful "remote Capstone" in 2020, MDS is committed to facilitating Capstone Projects again in 2021.*
