@@ -10,21 +10,25 @@ Imagine facilitar a vida de atendentes e recepcionistas de hospitais na hora de 
 
 ### Equipe de Desenvolvimento
 <div class="row">
-  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
     <div class="mobile-side-scroller">
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/pedro_barros.png' | relative_url}}" width="100" alt="pedrobarros" class="img-fluid rounded-circle img-blur" /></center></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/eduardo_lobo.png' | relative_url}}" width="100" alt="eduardo" class="img-fluid rounded-circle img-blur" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/pedro_barros.png' | relative_url }}" width="100" alt="pedrobarros" class="img-fluid rounded-circle" /></center></th>
+            <th></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/alexandre_magno.png' | relative_url }}" width="100" alt="marina" class="img-fluid rounded-circle"/></center></th>
+          </tr>
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
             <td width="25%"><center>Pedro Barros</center></td>
+            <td></td>
             <td width="25%"><center>Alexandre Magno</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Voluntário desde 2021 <p/> Líder do projeto</center></small></td>
+            <td></td>
             <td style="vertical-align: top"><small><center>Voluntário desde 2021</center></small></td>
           </tr>
         </tbody>
