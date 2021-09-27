@@ -57,6 +57,5 @@ pages:
 - _posts/2021-04-07-how-to-install-vmware-tools-on-freebsd-opnsense.md
 - _posts/2021-09-03-how-to-download-and-install-windows-server-2022.md
 - _posts/2021-09-13-interacting-with-containerd-runtime-for-kubernetes.md
-- _posts/2021-09-27-nakivo-vmware-vm-backup-and-restore-set-up.md
 - _posts/nakivo-backup-and-replication-for-vmware-and-more.md
 - _posts/vmc-on-aws-network-connectivity-options.md

@@ -11,6 +11,8 @@ Today we are going to have a look at Nakivo Backup and Replication, an all-in-on
 
 NAKIVO is a privately held company that distributes data protection and site recovery software targeted at SMB and enterprise markets and built a solid customer base since 2012. [Nakivo Backup and Replication ](https://www.nakivo.com/)offers a suite of features for physical, virtual, and cloud environments altogether.
 
+![Nakivo Backup and recovery web interface](/img/nakivo1-6.jpg)
+
 ### Main features
 
 Nakivo B&R includes all the features you can expect from a good backup software and more.
