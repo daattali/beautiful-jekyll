@@ -38,6 +38,10 @@ Nakivo B&R lets you deploy the software in many different ways such as virtual a
 
 Cloud integration in Backup products are a good way to fool proof your investment. Nakivo offers backup to Amazon S3, backup of M365 and EC2 instances. You can also maintain exact copies (replicas) of your original EC2 instances and fail over to the replicas for near-instant disaster recovery.
 
+* **Ransomware protection.**
+
+Although these are not specific to [ransomware ](https://www.nakivo.com/ransomware-protection/ransomware-recovery/)and more a way to attract clients, it is good content to spread best practices and make customers aware of these.
+
 ### Deployment types
 
 Nakivo Backup and Replication offers a surprising [number of options ](https://helpcenter.nakivo.com/User-Guide/Content/Deployment/Installing-NAKIVO-Backup-and-Replication/Installing-NAKIVO-Backup-and-Replication.htm)when it comes to deploying the solution. You can deploy it as a VMware or Nutanix appliance, install it on Windows, Linux.
@@ -83,8 +87,20 @@ Nakivo Backup and Replication offers several levels of licensing which vary acco
 
 **Per-Socket (CPU) licenses are perpetual** and let you backup as many VMs as you want and a number of physical target as well.
 
+![Nakivo Backup and replication pricing](/img/nakivo1-4.jpg)
+
 The **per-workload subscription lets you tailor** the number of virtual machines, physical server and AWS EC2 instances to backup. Note that the Basic edition isn't available with this pricing model.
+
+![](/img/nakivo1-5.jpg)
 
 The best way for you to get a good grasp of the licensing options available is to have a look at the [pricing calculator](https://www.nakivo.com/how-to-buy/pricing_calculator/). Adjust the sliders and values to tailor the license to your needs and get an idea of how much it would be. That way you can compare both license types and calculate your ROI to find out which one makes the most sense to your organization.
 
 ![](/img/nakivo1-1.jpg)
+
+### Wrap up
+
+Despite the fact that virtual machine backup and replication software is no longer niche and a crowded market, Nakivo Backup and Replication managed to carve out a solid place for themselves in this landscape. Their customer references page is a long scroll and includes a few significant names.
+
+While the pricing may seem a little complicated at first, it is valuable to ensure you only pay for what you need. Note that they also offer options to [trade ]()your current solution to poach customers from the competition.
+
+Anyway, a solid product at first glance that should fit in just fine in most SMB and medium sized companies environments.
