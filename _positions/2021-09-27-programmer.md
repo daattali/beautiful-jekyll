@@ -1,7 +1,7 @@
 ---
 layout: default
-date: 2021-09-07
-title: Programmer/Analyst 3/4
+date: 2021-09-27
+title: Programmer/Analyst 3-4
 ---
 
 If interesested in this position contact **Dr. Molly Hall** mah546@psu.edu with CV and cover letter, and submit application to [PSU Career Website](https://psu.wd1.myworkdayjobs.com/en-US/PSU_Staff/job/University-Park-Campus/Programmer---Analyst_REQ_0000018883-1).
