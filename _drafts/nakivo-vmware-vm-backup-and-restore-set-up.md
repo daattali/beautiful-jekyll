@@ -8,11 +8,41 @@ metadescription: How to set up Nakivo to backup and restore VMware VMs.
 ---
 Today we are going to have a look at Nakivo Backup and Replication, an all-in-one product that will let you backup, restore and replicate virtual machines in your VMware environment. The product supports a variety of environments to backup such as vSphere, Hyper-V, M365, Nutanix, Oracle...
 
-NAKIVO is a privately held company that distributes data protection and site recovery software targeted at SMB and enterprise markets and built a solid customer base since 2012. [Nakivo Backup and Replication ](https://www.nakivo.com/)offers a suite of features for physical, virtual, and cloud environments altogether. 
+NAKIVO is a privately held company that distributes data protection and site recovery software targeted at SMB and enterprise markets and built a solid customer base since 2012. [Nakivo Backup and Replication ](https://www.nakivo.com/)offers a suite of features for physical, virtual, and cloud environments altogether.
+
+### Main features
+
+Nakivo B&R includes all the features you can expect from a good backup software and more.
+
+*  **Data recovery.**
+
+Nakivo B&R can backup and recover objects for Active Directory SQL Server, Exchange and perform instant file or VM recovery.
+
+* **Instant verification.**
+
+After a backup runs, Nakivo uses the Flash VM boot feature to run the VM from backup, wait until the OS has booted and make a screenshot that you can receive via email or review manually. The other verification  mechanism relies on the readiness of the VMware Tools.
+
+* **Policy based backups.**
+
+I mention this one because I believe it should be in every single backup product. Policy based backups offer flexibility by creating jobs based on metadata such as vSphere tags, folders, vDisks, resources etc. You can then require multiple conditions to be met for a job.
+
+* **LAN-free data transfers.**
+
+LAN-free transfers let you make use of usually faster storage networks by using Hot-Add or Direct SAN Access methods to bypass the TCP-IP stack of the server.
+
+* **Wide array of deployment types.**
+
+Nakivo B&R lets you deploy the software in many different ways such as virtual appliances, installed on server OSes, NAS packages, RPi...
+
+* **Cloud integration.**
+
+Cloud integration in Backup products are a good way to fool proof your investment. Nakivo offers backup to Amazon S3, backup of M365 and EC2 instances. You can also maintain exact copies (replicas) of your original EC2 instances and fail over to the replicas for near-instant disaster recovery.
 
 ### Deployment types
 
-### Main features
+Nakivo Backup and Replication offers a surprising [number of options ](https://helpcenter.nakivo.com/User-Guide/Content/Deployment/Installing-NAKIVO-Backup-and-Replication/Installing-NAKIVO-Backup-and-Replication.htm)when it comes to deploying the solution. You can deploy it as a VMware or Nutanix appliance, install it on Windows, Linux.
+
+The more surprising deployment models include installing it on NAS devices (Synology, QNAP, WD, ASUSTOR, Netgear ReadyNAS, FreeNAS/TrueNAS) and you can even install it on Raspberry Pi or in Amazon EC2.
 
 ### Editions and Pricing
 
@@ -49,7 +79,7 @@ For more details on the _core, extended and complete feature sets_, refer to the
 
 #### Pricing
 
-Nakivo Backup and Replication offers several levels of licensing which vary according to the features set, environment size and type of support required. 
+Nakivo Backup and Replication offers several levels of licensing which vary according to the features set, environment size and type of support required.
 
 **Per-Socket (CPU) licenses are perpetual** and let you backup as many VMs as you want and a number of physical target as well.
 
