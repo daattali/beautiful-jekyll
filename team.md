@@ -47,7 +47,7 @@ Florencia has a teaching degree at the University the Buenos Aires. She has been
 
 
 
-#### Mike Gelbart, Co-Director and Assistant Professor of Teaching
+#### Mike Gelbart, Co-Director and Associate Professor of Teaching
 
 <img src="../img/team/mike.jpg" align="left" width="34.5%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
