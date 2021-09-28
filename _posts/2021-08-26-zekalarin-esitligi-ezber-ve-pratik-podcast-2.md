@@ -10,7 +10,7 @@ tags: [Cahil Hoca, Podcast, Eğitim, Öğretim, Ezber, Pratik]
 
 Bu bölümde Cahil Hoca kitabı üzerine tartışmaya devam ediyoruz. Kitap incelemesinin ikinci bölümünde “zekaların eşitliği”, “ezber ve pratik”, “ilişkilendirme”, “her şey her şeydedir” ve “sokratik yöntem” üzerine konuşuyoruz. Ayrıca ezber konusu ile alakalı aşağıda kısa bir not bulabilirsiniz.
 
-<iframe width="400" height="300" src="https://www.youtube.com/embed/2jKHKQlZZd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+{% include youtube.html id='2jKHKQlZZd8' %}
 
 ## Ezberci Eğitim Üzerine
 
