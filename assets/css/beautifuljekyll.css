@@ -1105,9 +1105,10 @@ pre {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   border: 0;
   max-width: 500px;
   max-height: 500px;
+  margin: 0 auto;
 }
