@@ -9,7 +9,7 @@ tags: [Cahil Hoca, Podcast, Eğitim, Zeka, İrade]
 
 Bu podcast bölümünde zekaların eşitliği kanısı üzerine konuştuk. Ranciere kitabında insanlar arasındaki farkın zekalarından çok, iradelerinden kaynaklandığını iddia etmektedir. Bu bizi eğitim konusunda çarpıcı noktalara götürmektedir. Podcast’imizi aşağıdan dinleyebilirsiniz:
 
-<iframe width="1520" height="591" src="https://www.youtube.com/embed/uaa9fgc2C8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+<iframe width="400" height="300" src="https://www.youtube.com/embed/uaa9fgc2C8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
 
 Ayrıca podcastte bahsettiğimiz düşünce deneyine buradan ulaşabilirsiniz: Dil Öğrenme Deneyi.
 
