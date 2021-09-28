@@ -19,7 +19,7 @@ competition for our membership.
 
 # Chapter
 
-The second round is the **Chapter** round, which is invitational. The top ten performers from our School
+The second round is the **Chapter** round, which is invitational. The top twelve performers from our School
 round advance to the Chapter round. Of them, the top four will represent our school in the team aspects.
 This competition is usually held in Building 33 of the Microsoft campus.
 
