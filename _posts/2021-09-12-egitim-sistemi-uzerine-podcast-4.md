@@ -9,7 +9,7 @@ tags: [Cahil Hoca, Podcast, Eğitim Sistemi, Öğretim, Kurumsallaşma, Zihinsel
 
 Bu bölümde birey ve toplum ilişkisini konuştuk. Acaba zihinleri özgürleştirilebilen bir eğitim sistemini kurabilir miyiz?
 
-<iframe width="1520" height="591" src="https://www.youtube.com/embed/87jB31Ic4s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+<iframe width="400" height="300" src="https://www.youtube.com/embed/87jB31Ic4s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
 
 Önceki bölümlerde eğitim sistemini öğretmen ve öğrenci düzeyinde ele almıştık. Bu bölümlerde zihinsel olarak özgürleşmiş bireyi tarif ettik. Kısaca bu kişiyi tekrar tarif edelim. 
 
