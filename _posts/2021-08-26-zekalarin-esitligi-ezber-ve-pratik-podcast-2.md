@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Zekaların Eşitliği, Ezber ve Pratik - Podcast (2/4)"
+title: "Zekaların Eşitliği, Ezber ve İlişkilendirme - Podcast (2/4)"
 subtitle: "Eğitimcilerin ezber konusunda ezberleri..."
 cover-img: /img/learning.jpg
 share-img: /img/kapak.jpg
