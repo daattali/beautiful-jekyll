@@ -114,7 +114,7 @@ Quan Nguyen began his teaching role in the MDS program at UBC in the summer of 2
 
 
 
-#### Joel Ostblom, Postdoctoral Research and Teaching Fellow
+#### Joel Östblom, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/joel.jpeg' align="left" width="32%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
@@ -129,7 +129,7 @@ Joel began his involvement with MDS as a TA while working on his PhD and joined 
 
 </p>
 
-#### Alexi Rodriguez-Arelis, Postdoctoral Research and Teaching Fellow
+#### Alexi Rodríguez-Arelis, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/alexi.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
