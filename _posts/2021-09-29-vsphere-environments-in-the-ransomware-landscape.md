@@ -27,6 +27,8 @@ I strongly suggest you have a look at that website and go through, at least, the
 
 We will have a brief look at how ransomware attack on vmware esxi work. You can get more information in a blog I wrote for Altaro (I'll add the link when it's published).
 
+![](/img/ransom2.png)
+
 In a nutshell and like I mentioned earlier, the attack usually comes from the "traditional" channels of attacks. That being social engineering, phishing malware, publicly exposed remote servers and even vCenters, iDRAC... (check out [https://www.shodan.io/](https://www.shodan.io/ "https://www.shodan.io/"), it's mortifying!).
 
 Anyway, once the attacker is in the network:
@@ -41,16 +43,25 @@ Now if it happens, **it is recommended against paying the ransom** as there is n
 
 As mentioned earlier, there is no magic anti-virus that will prevent ransomware or get rid of it should you get hit. The best way to protect from it is to implement industry standard best practices and harden your VMware environment.
 
-* Follow the [VMware security configuration guide ]()(encompasses all the VMware related best practices).
+* Follow the [**VMware security configuration guide** ]()(encompasses all the VMware related best practices).
 * Do not expose any service to internet (obvious but hey...).
 * Avoid third party vCenter plugins.
 * Enable Secure Boot and vSphere Trust Authority in vSphere.
 * Use different user/password for vCenter, hosts, out-of-band cards etc...
-* Educate your user on virus, phishing and social engineering.
+* **Educate your user** on virus, phishing and social engineering.
 * **PATCH YOUR SYSTEMS... ALL OF THEM**.
 * Use 2FA on vCenter and on a bastion (use a bastion).
 * Restrict management network access to trusted admins (IP ranges etc...).
-* Secure Active Directory (most attacks go for the AD first).
+* **Secure Active Directory** (most attacks go for the AD first).
 * Use syslog servers for audit trails.
 * Use a solid and secure password manager (no browser saved credentials).
 * Antivirus on workstations and servers.
+* **Have a solid backup strategy** with good retention and make sure the [backups are protected](https://www.altaro.com/backup-dr/ransomware-best-practices-backup/) (air-gapped).
+
+### Conclusion
+
+Anyway, is there really a conclusion to this ever changing madness? Every organization wants to protect from ransomware attack on vmware esxi. You should be fine as long as you strictly follow the sensible best practices and don't cut corners to save time (ALLOW ANY ANY, we've all done it, don't lie to yourself...).
+
+I think educating users, especially those with admin access, is as important, if not more, as all the other recommendations. It is also a way of putting best practices in everyone's mind and indrectly future proofing the population as a whole. That way you tackle the problem from the technical and the human angles.
+
+Either way, keep your systems up to date... At least the security patches, come on!
