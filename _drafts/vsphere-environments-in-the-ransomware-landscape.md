@@ -34,3 +34,23 @@ Anyway, once the attacker is in the network:
 1. He/she will try to escalate privileges (with [CVE-2020-1472 ](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-1472)for instance)
 2. Get access to a management box, either get access to vCenter if the account can or use a vulnerability such as [CVE-2019-5544](https://www.vmware.com/security/advisories/VMSA-2019-0022.html), [CVE-2020-3992](https://www.vmware.com/security/advisories/VMSA-2020-0023.html) or [CVE-2021-21985](https://www.vmware.com/security/advisories/VMSA-2021-0010.html) for instance
 3. Process to shut down the VMs and encrypt the content of the datastores with an [ELF executable](https://securelist.com/ransomexx-trojan-attacks-linux-systems/99279/) on each vSphere host and leave a ransom note in the datastore for the VI admin to find.
+
+Now if it happens, **it is recommended against paying the ransom** as there is no garanty you will get your data back. Your best course of action is to do a deep anti-virus sweep across all of your IT environments (workstations especially) and restore the servers from Backup.
+
+### How to protect from ransomware attacks on vSphere ESXi
+
+As mentioned earlier, there is no magic anti-virus that will prevent ransomware or get rid of it should you get hit. The best way to protect from it is to implement industry standard best practices and harden your VMware environment.
+
+* Follow the [VMware security configuration guide ]()(encompasses all the VMware related best practices).
+* Do not expose any service to internet (obvious but hey...).
+* Avoid third party vCenter plugins.
+* Enable Secure Boot and vSphere Trust Authority in vSphere.
+* Use different user/password for vCenter, hosts, out-of-band cards etc...
+* Educate your user on virus, phishing and social engineering.
+* **PATCH YOUR SYSTEMS... ALL OF THEM**.
+* Use 2FA on vCenter and on a bastion (use a bastion).
+* Restrict management network access to trusted admins (IP ranges etc...).
+* Secure Active Directory (most attacks go for the AD first).
+* Use syslog servers for audit trails.
+* Use a solid and secure password manager (no browser saved credentials).
+* Antivirus on workstations and servers.
