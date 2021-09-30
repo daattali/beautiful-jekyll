@@ -18,7 +18,7 @@ This article compiles resources on how Slack solved problems using tracing.
 **🔗 Resources**
 
 - [Video + transcript](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html). **👟 To be published / updated here as soon as our organizers post it**.
-- **Infrastructure Observability for Changing the Spend Curve**.  **👟 To be published next week**. A deep dive on how we crafted an order of magnitude change in our spend (10x reduction compared to baseline growth) over the last two years with iterative understanding and changes in Slack’s Continuous Integration (CI) infrastructure.
+- **Infrastructure Observability for Changing the Spend Curve**.  **👟 To be published next week**! A deep dive on how we crafted an order of magnitude change in our spend (10x reduction compared to baseline growth) over the last two years with iterative understanding and changes in Slack’s Continuous Integration (CI) infrastructure.
 - [Why We Built Our Own Distributed Column Store (Strange Loop 2017)](https://www.thestrangeloop.com/2017/why-we-built-our-own-distributed-column-store.html) - a talk by Sam Stokes at Strange Loop 2017 describing details of Honeycomb's columnar datastore.
 - [How Big Technical Changes Happen at Slack](https://slack.engineering/how-big-technical-changes-happen-at-slack/) - an article by Keith Adams / Johnny Rodgers on Slack's strategy for approaching technological adoption.
 - [Tracing at Slack: Thinking in Causal Graphs](https://slack.engineering/tracing-at-slack-thinking-in-causal-graphs/) - an article by Suman Karumuri on modeling traces as causal graphs at Slack with SlackTrace.
@@ -37,7 +37,7 @@ In this talk, Frank Chen shares how traces gave us a critical and compounding ca
 
 ---
 
-**📃 o11ycon (June 11)**
+**📃 o11ycon Resources** (Presented June 11 2021)
 
 * [🔗 Video](https://www.youtube.com/watch?v=1qJIM2uJDT0)
 * [📋 Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/)
