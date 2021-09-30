@@ -7,7 +7,7 @@ share-img: /assets/img/kube1.png
 comments: true
 social-share: true
 readtime: true
-tags: [kubernetes],[Ingress]
+tags: [kubernetes , Ingress]
 ---
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZRMQJ3"
