@@ -18,20 +18,20 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 
 | Week Of	| Homework (Mon)		| Club (Wed)  | Varsity (Fri) |
 | ----------|-------------			| ----------- | ----------- |
-| 11-Oct	| Systems of Equations	| ----------- | _No school_ |
-| 18-Oct	| Right Triangles		| ----------- | ----------- |
-| 25-Oct	| Probability			| ----------- | ----------- |
-| 1-Nov		| Fractions				| ----------- | ----------- |
-| 8-Nov		| Area					| ----------- | ----------- |
-| 15-Nov	| Patterns				| ----------- | ----------- |
-| 22-Nov	| Work					| ----------- | _No school_ |
-| 29-Nov	| Circles   			| ----------- | ----------- |
-| 6-Dec		| Logic					| ----------- | ----------- |
-| 13-Dec	| Counting				| ----------- | ----------- |
+| 11-Oct	| Systems of Equations	| [20-21 MIC 8th Regional Individual](https://www.academicsarecool.com/assets/samples/20-21Champs78.pdf) | _No school_ |
+| 18-Oct	| Right Triangles		| [19-20 MIC 8th Regional Individual](https://www.academicsarecool.com/assets/samples/19-20Champs78Tests.pdf) | ----------- |
+| 25-Oct	| Probability			| 2021 Mathcounts Chapter [Sprint](https://www.mathcounts.org/sites/default/files/2021-01/2021%20Chapter%20Competition%20Sprint%20Round.pdf) & [Target](https://www.mathcounts.org/sites/default/files/2021-01/2021%20Chapter%20Competition%20Target%20Round.pdf) | ----------- |
+| 1-Nov		| Fractions				| 2021 Mathcounts Chapter Invitational [Sprint](https://www.mathcounts.org/sites/default/files/2021-01/2021%20Chapter%20Invitational%20Sprint%20Round.pdf) & [Target](https://www.mathcounts.org/sites/default/files/2021-01/2021%20Chapter%20Invitational%20Target%20Round.pdf) | ----------- |
+| 8-Nov		| Area					| 2021 Mathcounts State [Sprint](https://www.mathcounts.org/sites/default/files/2021-01/2021%20State%20Competiton%20Sprint%20Round.pdf) & [Target](https://www.mathcounts.org/sites/default/files/2021-01/2021%20State%20Competition%20Target%20Round.pdf) | ----------- |
+| 15-Nov	| Patterns				| [AoPS Apocalyptic AMC 8](https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvMy9iLzYzYmE2NTYxMWM5ZjdiYWQ4NjYzYzUyZjcyN2I3ZDVkNzk2NDkxLnBkZg==&rn=QXBvY2FseXB0aWNBTUM4LnBkZg==) | ----------- |
+| 22-Nov	| Work					| [lethan3's Mock AMC 8](https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvNi81LzJkNDc0YTI5MGE3ZTM0ZTcwYTE1ZjE4Nzg3MWFjZDgxNzlkYjIwLnBkZg==&rn=TW9jayBBTUMgOC1taW4ucGRm) | _No school_ |
+| 29-Nov	| Circles   			| [popcorn1's AMC 8A](https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvYS9iLzAzYzNiZWU2NmY4ZmFjM2ZmNGE3MTk4Njk2MzIxMzY0YzMyNjRjLnBkZg==&rn=cG9wY29ybjFfMjAxOV9BTUNfOEFfdjEucGRm) | ----------- |
+| 6-Dec		| Logic					| [popcorn1's AMC 8B](https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvYi9mLzBiOGRjNjkwNWQwZTViOWI2NTlkMTBiZTJjMDA3N2YyMGRmMzJiLnBkZg==&rn=cG9wY29ybjFfMjAxOV9BTUNfOEJfdjIucGRm) | ----------- |
+| 13-Dec	| Counting				| [2020 AMC 8](https://artofproblemsolving.com/wiki/index.php/2020_AMC_8_Problems) | ----------- |
 | 20-Dec	| _No school_			| _No school_ | _No school_ |
 | 27-Dec	| _No school_			| _No school_ | _No school_ |
-| 3-Jan		| Similarity        	| ----------- | ----------- |
-| 10-Jan	| Pascal's Triangle		| ----------- | ----------- |
+| 3-Jan		| Similarity        	| [2020 MMT Gallop 1-8](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) | ----------- |
+| 10-Jan	| Pascal's Triangle		| [2020 MMT Mounting Mayhem](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) | ----------- |
 | 17-Jan	| _No school_			| ----------- | ----------- |
 | 24-Jan	| Sequences				| ----------- | ----------- |
 | 31-Jan	| Coordinate Geometry	| ----------- | ----------- |
