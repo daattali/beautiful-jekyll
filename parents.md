@@ -4,10 +4,18 @@ title: Parent Volunteers
 subtitle: Proctoring at RMS
 ---
 
-RMS Math Club activities at the school require parent proctor supervision.
+RMS Math Club activities at the school require parent proctor supervision. Proctors do not need to participate in coaching or prepare material.
 
-# Responsibilities
-Proctors do not need to participate in coaching or prepare material.
+Parent proctors need to be <a href="https://rmsptsa.org/Packet/Join" target="_blank">paid PTSA members</a> and also
+<a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteers</a>.
+
+# Virtual Session Responsibilities
+
+Details for proctoring virtual sessions are available [here](/proctoring).
+
+# In-Person Session Responsibilities
+
+When sessions are held in person:
 
 1. Proctors need to be physically present in the room while students are present. This is a school requirement for our club.
 
@@ -18,6 +26,3 @@ respectful of the coaches and each other, keep the room neat, and stack chairs o
 
 Since each room requires a parent volunteer to be present the entire time, sessions may need to be cancelled if a volunteer 
 has not signed up. Please use the shared sheet to sign up for slots.
-
-Note that you will also need to be an
-<a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a>.
