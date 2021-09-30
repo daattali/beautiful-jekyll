@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Externally Expose application services in kubernetes cluster using ingress
-cover-img: /assets/img/common banner.jpg
-thumbnail-img: /assets/img/common banner.jpg
-share-img: /assets/img/social media preview.png
+cover-img: /assets/img/kube1.png
+thumbnail-img: /assets/img/kube1.png
+share-img: /assets/img/kube1.png
 comments: true
 social-share: true
 readtime: true
@@ -18,7 +18,8 @@ Ingress exposes HTTP and HTTPS routes from outside the cluster to services withi
 
 You may need to deploy an Ingress controller such as ingress-nginx. Follow the steps - 
 
-1. Create a cluster. Must use extraPortMappings and node lables in cluster congiguration.
+1. Create a cluster. Must use extraPortMappings and node lables in cluster configuration.
+
 ```yaml
 apiVersion: kind.x-k8s.io/v1alpha4
 kind: Cluster
@@ -38,7 +39,9 @@ nodes:
       hostPort: 443
       protocol: TCP
 ```
+
 This configuration will expose port 80 and 443 on the host. It’ll also add a node label so that the nginx-controller may use a node selector to target only this node. If a kind configuration has multiple nodes, it’s essential to only bind ports 80 and 443 on the host for one node because port collision will occur otherwise.
+
 Then create a kind cluster using this config file via:
 
 `kind create cluster --config cluster-extraportmapping.yaml`
@@ -48,7 +51,9 @@ Then create a kind cluster using this config file via:
   `kubectl apply --filename https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml`
   
 3. Deploy necessary pods and services
+
 In this case, I am deploying following deployment and service.
+
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
