@@ -3,20 +3,31 @@ layout: post
 title: How Tracing Uncovers Half-truths in Slack’s CI Infrastructure
 subtitle: How Slack Transformed Their CI With Tracing
 image: /img-posts/tracing-in-ci-thumb.png
+modified-date: Sep 30, 2021
 image-height: 192px
 image-width: 192px
 permalink: tracing-in-ci
 ---
 
-This article is a compilation of my recent conference talk at o11ycon, a conference put out by Honeycomb. It includes a blog post that Honeycomb author Eric Thompson shared that summarized the talk. *The blog article, reshared was originally published in [Honeycomb's blog](https://www.honeycomb.io/blog/how-slack-transformed-their-ci-with-tracing)*
+This article compiles resources on how Slack solved problems using tracing.
+
+---
+
+**😍 Here from the [Strange Loop](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html)?**
+
+**🔗 Resources**
+
+- [Video + transcript](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html). **👟 To be published / updated here as soon as our organizers post it**.
+- [Why We Built Our Own Distributed Column Store (Strange Loop 2017)](https://www.thestrangeloop.com/2017/why-we-built-our-own-distributed-column-store.html) - a talk by Sam Stokes at Strange Loop 2017 describing details of Honeycomb's columnar datastore.
+- [How Big Technical Changes Happen at Slack](https://slack.engineering/how-big-technical-changes-happen-at-slack/) - an article by Keith Adams / Johnny Rodgers on Slack's strategy for approaching technological adoption.
+- [Tracing at Slack: Thinking in Causal Graphs](https://slack.engineering/tracing-at-slack-thinking-in-causal-graphs/) - an article by Suman Karumuri on modeling traces as causal graphs at Slack with SlackTrace.
+- [Gray failure: the Achilles’ heel of cloud-scale systems](https://blog.acolyer.org/2017/06/15/gray-failure-the-achilles-heel-of-cloud-scale-systems/) - an article summarizing gray failures from Microsoft Research.
+- [Getting started with Open Telemetry](https://docs.honeycomb.io/getting-data-in/opentelemetry/otel-collector/)
+- **Infrastructure Observability for Changing the Spend Curve**. A deep dive on how we crafted an order of magnitude change in our spend (10x reduction compared to baseline growth) over the last two years with iterative understanding and changes in Slack’s Continuous Integration (CI) infrastructure. **👟 To be published next week**.
 
 
 ---
 
-<!--[Slides]--> 
-* [🔗 Video](https://www.youtube.com/watch?v=1qJIM2uJDT0)
-* [📋 Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/)
-* [💬 Discussion](https://news.ycombinator.com/item?id=27976758) on hacker news
 
 **💡 Abstract**
 
@@ -25,6 +36,14 @@ Traditional monitoring tools like logs and metrics were necessary but not suffic
 In this talk, Frank Chen shares how traces gave us a critical and compounding capability to better understand where, when, how, and why faults occur for our customers in CI. We share how shared tooling for high-dimensionality event traces (using SlackTrace and SpanEvents) could significantly increase our velocity to diagnose code in flight and to debug complex system interactions. We go from stories with early incidents that motivated further investment throughout Slack’s internal tooling teams to stories about gains in performance and resiliency throughout our infrastructure.
 
 ---
+
+**📃 o11ycon (June 11)**
+
+* [🔗 Video](https://www.youtube.com/watch?v=1qJIM2uJDT0)
+* [📋 Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/)
+* [💬 Discussion](https://news.ycombinator.com/item?id=27976758) on hacker news
+
+*The blog article, reshared was originally published in [Honeycomb's blog](https://www.honeycomb.io/blog/how-slack-transformed-their-ci-with-tracing) summarizes the talk.*
 
 *By [Eric Thompson](https://www.honeycomb.io/author/eric-thompson/) 2021.07.08*
  
