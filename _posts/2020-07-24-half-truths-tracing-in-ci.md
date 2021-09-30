@@ -23,8 +23,8 @@ This article compiles resources on how Slack solved problems using tracing.
 - [How Big Technical Changes Happen at Slack](https://slack.engineering/how-big-technical-changes-happen-at-slack/) - an article by Keith Adams / Johnny Rodgers on Slack's strategy for approaching technological adoption.
 - [Tracing at Slack: Thinking in Causal Graphs](https://slack.engineering/tracing-at-slack-thinking-in-causal-graphs/) - an article by Suman Karumuri on modeling traces as causal graphs at Slack with SlackTrace.
 - [Gray failure: the Achilles’ heel of cloud-scale systems](https://blog.acolyer.org/2017/06/15/gray-failure-the-achilles-heel-of-cloud-scale-systems/) - an article summarizing gray failures from Microsoft Research.
-- [Getting started with Open Telemetry](https://docs.honeycomb.io/getting-data-in/opentelemetry/otel-collector/)
-
+- [Getting started with OpenTelemetry](https://docs.honeycomb.io/getting-data-in/opentelemetry/otel-collector/) - an article by Honeycomb on using OpenTelemetry
+- [`go-test-trace` OpenTelemetry collector](https://github.com/rakyll/go-test-trace) - a collector for go test to generate OpenTelemetry distributed traces! Very similar in spirit to Slack's internal scripts.
 
 ---
 
