@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pulls
-Issues
-Marketplace
-Explore
- 
-@rangersprotocol 
-mixmarvel
-/
-mixmarvel.github.io
-Public
-forked from daattali/beautiful-jekyll
-0
-111.6k
-Code
-Pull requests
-Actions
-Projects
-Security
-Insights
-mixmarvel.github.io/_config.yml
-@mixmarvel
-mixmarvel Update _config.yml
-Latest commit 35e6e87 on 25 Feb 2020
- History
- 30 contributors
-@daattali@mixmarvel@OCram85@VincentTam@eugenius1@lrdodge@jamesonzimmer@epwalsh@OrKoN@npes87184@kendaleiv@vietanhdev
-256 lines (212 sloc)  7.07 KB
-   
 # --- General options --- #
 
 # Name of website
@@ -284,16 +254,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
