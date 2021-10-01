@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: Raul Libório
+title: "Raul Libório"
 
 # Your name to show in the footer
 author: Raul Libório
@@ -14,7 +14,7 @@ author: Raul Libório
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "sobremim"
+  About Me: "aboutme"
   Resources:
     - LinkedIn: "https://www.linkedin.com/in/raulliborio"
   Author's home: "https://deanattali.com"
@@ -74,6 +74,7 @@ share-links-active:
   vk: false
   github: true
   telegram: true
+  youtube: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
