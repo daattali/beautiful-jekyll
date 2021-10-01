@@ -1,11 +1,11 @@
 # Podcast Dinle
 
 - [Youtube](https://www.youtube.com/channel/UCPzd7JNfYbiT3fFiaf8b-0g)
-- [https://open.spotify.com/show/1hc8OLU3PLTBoQmRUxMp7n](Spotify)
-- [https://podcasts.apple.com/us/podcast/cahil-hoca/id1581270250](Apple Podcasts)
-- [https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tL2IzMzdjM2NiLTlmYzgtNDMyOC04ODA1LWY3OTYxNWJhOWE1ZA](Google Podcast)
-- [https://app.redcircle.com/shows/b337c3cb-9fc8-4328-8805-f79615ba9a5d](RedCircle)
-- [https://www.amazon.com/item_name/dp/B08K58KMT7](Amazon)
+- [Spotify](https://open.spotify.com/show/1hc8OLU3PLTBoQmRUxMp7n)
+- [Apple Podcasts](https://podcasts.apple.com/us/podcast/cahil-hoca/id1581270250)
+- [Google Podcast](https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tL2IzMzdjM2NiLTlmYzgtNDMyOC04ODA1LWY3OTYxNWJhOWE1ZA)
+- [RedCircle](https://app.redcircle.com/shows/b337c3cb-9fc8-4328-8805-f79615ba9a5d)
+- [Amazon](https://www.amazon.com/item_name/dp/B08K58KMT7)
 
 # Cahil Hoca Kimdir?
 
