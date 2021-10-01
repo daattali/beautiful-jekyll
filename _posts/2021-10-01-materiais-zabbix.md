@@ -1,12 +1,17 @@
 ---
 layout: post
-title: Uma nova jornada
+title: Materiais sobre Zabbix
 subtitle: Será que manteremos uma regularidade de postagens?
 gh-repo: rauhmaru/zabbix-docs
 gh-badge: [star, fork, follow]
 tags: [github,vida]
 comments: true
 ---
+
+Sou um entusiasta do monitoramento, e, profissionalmente, acho vital e um dos eixos principais de uma empresa (que queira viver sem ter sustos). No decorrer do nosso dia-a-dia, sentimos a necessidade de monitorar algumas coisas, e, quando não achamos algo pronto, temos que desenvolver.
+Essa página é um compilado de alguns materiais que já fiz para o Zabbix. É uma
+referência ao meu [repositório do git](//github.com/rauhmaru/zabbix-docs).
+Espero que curtam!
 
 # zabbix-docs
 Materiais criados para atender demandas pessoais :)
