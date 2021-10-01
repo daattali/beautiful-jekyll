@@ -3,7 +3,7 @@ layout: post
 title: How Tracing Uncovers Half-truths in Slack’s CI Infrastructure
 subtitle: How Slack Transformed Their CI With Tracing
 image: /img-posts/tracing-in-ci-thumb.png
-modified-date: Sep 30, 2021
+modified-date: Oct 1, 2021
 image-height: 192px
 image-width: 192px
 permalink: tracing-in-ci
@@ -15,14 +15,18 @@ This article compiles resources on how Slack solved problems using tracing.
 
 **😍 Here from the [Strange Loop](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html)?**
 
-**🔗 Resources**
+**🔗 Slide References**
 
-- [Video + transcript](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html). **👟 To be published / updated here as soon as our organizers post it**.
-- **Infrastructure Observability for Changing the Spend Curve**.  **👟 To be published next week**! A deep dive on how we crafted an order of magnitude change in our spend (10x reduction compared to baseline growth) over the last two years with iterative understanding and changes in Slack’s Continuous Integration (CI) infrastructure.
+- [Video + transcript](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html). **👟 To be published once our organizers post it 👈**.
+- [Infrastructure Observability for Changing the Spend Curve](https://slack.engineering/). **👟 To be published in the coming week 👈 by Frank Chen**. A deep dive on how we crafted an order of magnitude change in our spend (10x reduction compared to baseline growth) over the last two years with iterative understanding and changes in Slack’s Continuous Integration (CI) infrastructure.
 - [Why We Built Our Own Distributed Column Store (Strange Loop 2017)](https://www.thestrangeloop.com/2017/why-we-built-our-own-distributed-column-store.html) - a talk by Sam Stokes at Strange Loop 2017 describing details of Honeycomb's columnar datastore.
 - [How Big Technical Changes Happen at Slack](https://slack.engineering/how-big-technical-changes-happen-at-slack/) - an article by Keith Adams / Johnny Rodgers on Slack's strategy for approaching technological adoption.
 - [Tracing at Slack: Thinking in Causal Graphs](https://slack.engineering/tracing-at-slack-thinking-in-causal-graphs/) - an article by Suman Karumuri on modeling traces as causal graphs at Slack with SlackTrace.
+- [Towards Observability Data Management at Scale](https://dl.acm.org/doi/10.1145/3456859.3456863). Abstract: Observability has been gaining importance as a key capability in today's large-scale software systems and services. Motivated by current experience in industry exemplified by Slack and as a call to arms for database research, this paper outlines the challenges and opportunities involved in designing and building Observability Data Management Systems (ODMSs) to handle this emerging workload at scale.
 - [Gray failure: the Achilles’ heel of cloud-scale systems](https://blog.acolyer.org/2017/06/15/gray-failure-the-achilles-heel-of-cloud-scale-systems/) - an article summarizing gray failures from Microsoft Research.
+
+**💯 Getting Started**
+
 - [Getting started with OpenTelemetry](https://docs.honeycomb.io/getting-data-in/opentelemetry/otel-collector/) - an article by Honeycomb on using OpenTelemetry to set up your pipelines
 - [`go-test-trace` OpenTelemetry collector](https://github.com/rakyll/go-test-trace) - a collector for go test to generate OpenTelemetry distributed traces! Useful to get started in conjunctino with Honeycomb's article described above!
 
