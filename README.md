@@ -4,4 +4,4 @@ Evet, eğitim benim de uzun zamandır dert edindiğim bir konu. Ukalaca, eğitim
 
 Ben de yaklaşık 2 yıl boyunca kitabın bir şerhini hazırladım. Kitabı ve benim şerhimi, burada birlikte çalışacağımız Talha ile tartıştım. Kendisinin fikirlerini almak istememin sebebi, Talha’nın Cahil Hoca kitabında konuşulan şeylerin bizatihi uygulayıcısı olmasıydı. Konuşmamız ilerledikçe, benim daha önce derlediğim düşüncelerimi yazılı diyaloglar olarak 1 sene tartıştık. Amacımız bunları kitap olarak yayınlamaktı ama podcast aracılığı ile daha fazla insana ulaşabileceğimizi düşündük. Bu yüzden bizim yazılı diyaloglarımızın tekrar düzenlenmiş halini podcast olarak yayınlayacağız. Bu arada gelen yorumları göz önünde bulundurarak, biz de düşüncelerimizi tekrar gözden geçireceğiz. Daha sonra inşa ettiğimiz eğitim felsefesini kitaplaştırmayı hedefliyoruz. Belki bir, belki iki seneye…
 
-(https://cahilhoca.com/2021-08-10-cahil-hoca-podcast-serileri-basliyor/)
+https://cahilhoca.com/2021-08-10-cahil-hoca-podcast-serileri-basliyor/
