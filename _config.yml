@@ -14,7 +14,7 @@ author: Raul Libório
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Sobre: "aboutme"
+  Sobre mim: "aboutme"
   Resources:
     - LinkedIn: "https://www.linkedin.com/in/raulliborio"
       #  Author's home: "https://deanattali.com"
