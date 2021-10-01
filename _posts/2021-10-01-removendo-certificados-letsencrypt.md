@@ -33,3 +33,21 @@ Certificate Name: www.medium.com.br
 ```
 
 Com isso, fica fácil. É só executar o comando `certbot-auto delete --cert-name www.medium.com.br` e tudo certo.
+
+## E dá pra melhorar?
+
+Sim, podemos fazer um shellscript
+
+
+{% highlight shell linenos %}
+#!/bin/bash
+# Remoção de certificados expirados
+CertsExpirados="certificados_expirados.txt"
+# Liste os certificados expirados, e retorne o nome deles
+certbot-auto certificates | grep -B4 EXPIRED \
+| awk /Certificate\ Name/'{ print $NF}' >> $CertsExpirados
+# Com os nomes dos certificados na mao, hora da remocao
+for certificado in $(cat $Expirados); do
+  certbot-auto delete --name $certificado
+done
+{ %endhighlight %}
