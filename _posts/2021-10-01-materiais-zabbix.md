@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Materiais sobre Zabbix
-subtitle: Alguns projetos e templates desenvolvidos por necessidade
+title: Uma nova jornada
+subtitle: Será que manteremos uma regularidade de postagens?
 gh-repo: rauhmaru/zabbix-docs
 gh-badge: [star, fork, follow]
-tags: [zabbix,linux,projetos]
+tags: [github,vida]
 comments: true
 ---
 
@@ -25,4 +25,3 @@ Materiais criados para atender demandas pessoais :)
 * [sysV Services Monitor](https://github.com/rauhmaru/sysv_services_monitor): Monitoramento de serviços baseados em SysVinit, usando LLD.
 * [Systemd Services Monitor](https://github.com/rauhmaru/zabbix-docs/tree/master/systemd-services-monitor): Monitora os serviços baseados em systemd, usando LLD.
 * [Backup Monitor](https://github.com/rauhmaru/zabbix-docs/tree/master/backup-monitor): Template para monitoramento de backups, principalmente de banco de dados. Usa LLD.
-
