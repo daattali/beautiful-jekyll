@@ -1,0 +1,20 @@
+---
+layout: post
+title: RaspberryPi + Alexa - Parte 01
+subtitle: Configurando o TRIGGERcmd
+tags: [linux, automation]
+comments: true
+---
+
+Outro dia conversando com o Fernando, ele comentou sobre uns scripts que estavam sendo executados por comando de voz, pela sua Alexa. Eu fiquei curioso, pois já havia tentado mas na época não funcionou bem (o middleware não cumpriu o desejado). Então ele me apresentou o [TRIGGERcmd](https://www.triggercmd.com), e este funcionou muito bem. É ele que irá fazer o meio de campo entre o seu hardware e a sua Alexa.
+![triggercmd](https://www.triggercmd.com/user/images/logoColor.png)
+
+Sem mais delongas, vamos ao how-to.
+
+## Instalação do TRIGGERcmd
+* Primeiro passo é criar uma conta no site.
+* Depois, vamos ao download. Acesse a página https://www.triggercmd.com/user/computer/create (tem que estar logado), e baixe o agente conforme sua plataforma. O meu rpi não tem interface gráfica, então nossa instalação será feita via CLI (como tudo nesse blog...)
+
+* Ainda nessa página, observe uma extensa linha em vermelho. É o seu token. Vai precisar na próxima etapa.
+
+* Após a instalação, execute o comando `triggercmdagent`.
