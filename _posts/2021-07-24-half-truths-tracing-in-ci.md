@@ -3,7 +3,7 @@ layout: post
 title: How Tracing Uncovers Half-truths in Slack’s CI Infrastructure
 subtitle: How Slack Transformed Their CI With Tracing
 image: /img-posts/tracing-in-ci-thumb.png
-modified-date: Oct 1, 2021
+modified-date: October 1, 2021
 image-height: 192px
 image-width: 192px
 permalink: tracing-in-ci
