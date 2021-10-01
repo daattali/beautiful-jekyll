@@ -4,6 +4,7 @@ title: Remoção de certificados expirados gerados pelo Let's Encrypt
 subtitle: Reduza a quantidade de erros na hora da renovação
 #gh-repo: rauhmaru/zabbix-docs
 #gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [lets encrypt, linux, shellscript]
 comments: true
 ---
