@@ -32,7 +32,8 @@ Certificate Name: www.medium.com.br
     Private Key Path: /etc/letsencrypt/live/www.medium.com.br/privkey.pem
 ```
 
-Com isso, fica fácil. É só executar o comando `certbot-auto delete --cert-name www.medium.com.br` e tudo certo.
+Com isso, fica fácil. É só executar o comando
+```certbot-auto delete --cert-name www.medium.com.br``` 
 
 ## E dá pra melhorar?
 
