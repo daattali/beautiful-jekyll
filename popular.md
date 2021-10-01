@@ -7,6 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
+* [Four Ideas to Go From Living Room Explosions to Clear Floors](https://www.simplehomemom.com/four-ideas-to-go-from-living-room-explosions-to-clear-floors/)
 * [How to Create Your Own Self Care Routines](https://www.simplehomemom.com/how-to-create-your-own-self-care-routines/)
 * **JUST LAUNCHED:**
   * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
