@@ -12,9 +12,9 @@ Outro dia conversando com o Fernando, ele comentou sobre uns scripts que estavam
 Sem mais delongas, vamos ao how-to.
 
 ## Instalação do TRIGGERcmd
-* Primeiro passo é criar uma conta no site.
-* Depois, vamos ao download. Acesse a página https://www.triggercmd.com/user/computer/create (tem que estar logado), e baixe o agente conforme sua plataforma. O meu rpi não tem interface gráfica, então nossa instalação será feita via CLI (como tudo nesse blog...)
+1. Primeiro passo é criar uma conta no site.
+2. Depois, vamos ao download. Acesse a página (https://www.triggercmd.com/user/computer/create) (tem que estar logado), e baixe o agente conforme sua plataforma. O meu rpi não tem interface gráfica, então nossa instalação será feita via CLI (como tudo nesse blog...)
 
-* Ainda nessa página, observe uma extensa linha em vermelho. É o seu token. Vai precisar na próxima etapa.
+3. Ainda nessa página, observe uma extensa linha em vermelho. É o seu token. Vai precisar na próxima etapa.
 
-* Após a instalação, execute o comando `triggercmdagent`.
+4. Após a instalação, execute o comando `triggercmdagent`. Em determinado momento ele irá aguardar você colcar o token. Cole e prossiga a instalação.
