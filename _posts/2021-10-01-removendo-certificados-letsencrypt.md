@@ -39,18 +39,20 @@ Com isso, fica fácil. É só executar o comando
 
 Sim, podemos fazer um shellscript
 
-```shell
-\#!/bin/bash
-\# Remoção de certificados expirados
+
+{% highlight javascript linenos %}
+#!/bin/bash
+# Remoção de certificados expirados
 CertsExpirados="certificados_expirados.txt"
-\# Liste os certificados expirados, e retorne o nome deles
+# Liste os certificados expirados, e retorne o nome deles
 certbot-auto certificates | grep -B4 EXPIRED \
 | awk /Certificate\ Name/'{ print $NF}' >> $CertsExpirados
-\# Com os nomes dos certificados na mao, hora da remocao
+# Com os nomes dos certificados na mao, hora da remocao
 for certificado in $(cat $Expirados); do
   certbot-auto delete --name $certificado
 done
-```
+{% highlight %}
+
 
 E é isso aí. Só precisa dar o enter pra confirmar a remoção de cada um.
 Até a próxima.
