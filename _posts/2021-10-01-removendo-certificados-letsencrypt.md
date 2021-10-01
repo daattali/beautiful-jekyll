@@ -50,3 +50,6 @@ for certificado in $(cat $Expirados); do
   certbot-auto delete --name $certificado
 done
 ```
+
+E é isso aí. Só precisa dar o enter pra confirmar a remoção de cada um.
+Até a próxima.
