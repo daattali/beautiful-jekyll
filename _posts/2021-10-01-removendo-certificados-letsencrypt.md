@@ -39,8 +39,12 @@ Com isso, fica fácil. É só executar o comando
 
 Sim, podemos fazer um shellscript
 
+<<<<<<< HEAD
 
 {% highlight javascript linenos %}
+=======
+```shell
+>>>>>>> parent of cf0e98e (testes de alterações)
 #!/bin/bash
 # Remoção de certificados expirados
 CertsExpirados="certificados_expirados.txt"
