@@ -38,8 +38,7 @@ Com isso, fica fácil. É só executar o comando `certbot-auto delete --cert-nam
 
 Sim, podemos fazer um shellscript
 
-
-{% highlight shell linenos %}
+```shell
 #!/bin/bash
 # Remoção de certificados expirados
 CertsExpirados="certificados_expirados.txt"
@@ -50,4 +49,4 @@ certbot-auto certificates | grep -B4 EXPIRED \
 for certificado in $(cat $Expirados); do
   certbot-auto delete --name $certificado
 done
-{ %endhighlight %}
+```
