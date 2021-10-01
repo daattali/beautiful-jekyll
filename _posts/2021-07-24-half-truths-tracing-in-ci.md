@@ -15,6 +15,12 @@ This article compiles resources on how Slack solved problems using tracing.
 
 **😍 Here from the [Strange Loop](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html)?**
 
+
+**💯 Getting Started**
+
+- [Getting started with OpenTelemetry](https://docs.honeycomb.io/getting-data-in/opentelemetry/otel-collector/) - an article by Honeycomb on using OpenTelemetry to set up your pipelines
+- [`go-test-trace` OpenTelemetry collector](https://github.com/rakyll/go-test-trace) - a collector for go test to generate OpenTelemetry distributed traces! Useful to get started in conjunctino with Honeycomb's article described above!
+
 **🔗 Slide References**
 
 - [Video + transcript](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html). **👟 To be published once our organizers post it 👈**.
@@ -24,11 +30,6 @@ This article compiles resources on how Slack solved problems using tracing.
 - [Tracing at Slack: Thinking in Causal Graphs](https://slack.engineering/tracing-at-slack-thinking-in-causal-graphs/) - an article by Suman Karumuri on modeling traces as causal graphs at Slack with SlackTrace.
 - [Towards Observability Data Management at Scale](https://dl.acm.org/doi/10.1145/3456859.3456863). Abstract: Observability has been gaining importance as a key capability in today's large-scale software systems and services. Motivated by current experience in industry exemplified by Slack and as a call to arms for database research, this paper outlines the challenges and opportunities involved in designing and building Observability Data Management Systems (ODMSs) to handle this emerging workload at scale.
 - [Gray failure: the Achilles’ heel of cloud-scale systems](https://blog.acolyer.org/2017/06/15/gray-failure-the-achilles-heel-of-cloud-scale-systems/) - an article summarizing gray failures from Microsoft Research.
-
-**💯 Getting Started**
-
-- [Getting started with OpenTelemetry](https://docs.honeycomb.io/getting-data-in/opentelemetry/otel-collector/) - an article by Honeycomb on using OpenTelemetry to set up your pipelines
-- [`go-test-trace` OpenTelemetry collector](https://github.com/rakyll/go-test-trace) - a collector for go test to generate OpenTelemetry distributed traces! Useful to get started in conjunctino with Honeycomb's article described above!
 
 ---
 
