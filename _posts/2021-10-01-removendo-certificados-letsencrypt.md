@@ -50,8 +50,7 @@ certbot-auto certificates | grep -B4 EXPIRED \
 for certificado in $(cat $Expirados); do
   certbot-auto delete --name $certificado
 done
-{% highlight %}
-
+```
 
 E é isso aí. Só precisa dar o enter pra confirmar a remoção de cada um.
 Até a próxima.
