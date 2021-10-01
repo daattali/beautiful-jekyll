@@ -9,7 +9,7 @@
 
 # Cahil Hoca Kimdir?
 
-Bizi tanımak için ilk bölümümüzü buradan dinleyebilirsiniz: [https://cahilhoca.com/2021-08-10-cahil-hoca-podcast-serileri-basliyor/](Cahil Hoca Kimdir?)
+Bizi tanımak için ilk bölümümüzü buradan dinleyebilirsiniz: [Cahil Hoca Kimdir?](https://cahilhoca.com/2021-08-10-cahil-hoca-podcast-serileri-basliyor/)
 
 # Hakkında
 
