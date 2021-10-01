@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Materiais sobre Zabbix
-subtitle: Será que manteremos uma regularidade de postagens?
+subtitle: Compilado de materiais desenvolvidos para atender demandas pessoais
 gh-repo: rauhmaru/zabbix-docs
 gh-badge: [star, fork, follow]
 tags: [github,vida]
