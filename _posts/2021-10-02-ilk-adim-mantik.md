@@ -1,5 +1,5 @@
 ---
-title: "İlk Adım - Mantık"
+title: "İlk Adım: Mantık - Podcast"
 cover-img: /img/blackboard.png
 share-img: /img/kapak.jpg
 thumbnail-img: /img/icon.jpg
