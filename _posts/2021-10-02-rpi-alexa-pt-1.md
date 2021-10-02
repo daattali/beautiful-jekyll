@@ -24,6 +24,7 @@ dpkg -i https://s3.amazonaws.com/triggercmdagents/triggercmdagent_1.0.1_all.deb
 4. Após a instalação, execute o comando `triggercmdagent`. Em determinado momento ele irá aguardar você colcar o token. Cole e prossiga a instalação.
 
 5. Com isso, provavelmente seu rpi já estará visível no {TRIGGERcmd pela web}(https://www.triggercmd.com/user/computer/list).
+
 ![Your Computers](img/20211001-01.jpg)
 
 
