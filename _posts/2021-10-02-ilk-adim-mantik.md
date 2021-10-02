@@ -47,8 +47,8 @@ Tüm mantık kurallarını her insan kendi zekası ile “keşfedebilir” ama b
 
 ## Okuma Listesi 
 
-1. Doğan Özlem - Mantık
-2. Bertrand Russel - Felsefe Yapma Sanatı
+1. Mantık - Doğan Özlem
+2. Felsefe Yapma Sanatı - Bertrand Russel
 3. Modern Mantık - Teo Grünberg
 4. Mantık İsagoci Tercümesi Mantık Terimleri Sözlüğü - Talha Hakan Alp
 
