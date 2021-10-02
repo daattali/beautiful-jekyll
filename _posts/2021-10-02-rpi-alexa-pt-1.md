@@ -24,4 +24,22 @@ dpkg -i https://s3.amazonaws.com/triggercmdagents/triggercmdagent_1.0.1_all.deb
 4. Após a instalação, execute o comando `triggercmdagent`. Em determinado momento ele irá aguardar você colcar o token. Cole e prossiga a instalação.
 
 5. Com isso, provavelmente seu rpi já estará visível no {TRIGGERcmd pela web}(https://www.triggercmd.com/user/computer/list).
-6. ![Your Computers](img/20211001-01.jpg)
+![Your Computers](img/20211001-01.jpg)
+
+
+{: .box-warning}
+**Atenção:** Ah, ponto importante: Coloque para que ele seja executado como serviço. Assim não vai precisar ter executar manualmente quando seu rpi reiniciar.
+```shell
+systemctl enable --now triggercmdagent
+```
+
+## Maravilha! Mas... E agora?
+Bem, a segunda etapa é você **acessar seu app Alexa, e conectar com a skill TRIGGERcmd**.
+Após isso, ele pedirá para conectar na sua conta, e então sua Alexa irá descobrir que seu rpi existe.
+
+## OK! E como eu adiciono meus comandos personalizados?
+No meu rpi, toda a estrutura do TRIGGERcmd está dentro do diretório /root/.TRIGGERcmdData. Lá temos o arquivo `commands.json`, que possui uma sintaxe bem simples.
+
+Qualquer dúvida, vocês podem recorrer também ao [fórum](https://www.triggercmd.com/forum), que é bem rico.
+
+**Até a parte 02!**
