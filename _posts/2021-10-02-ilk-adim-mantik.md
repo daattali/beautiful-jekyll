@@ -2,7 +2,7 @@
 title: "İlk Adım - Mantık"
 cover-img: /img/blackboard.png
 share-img: /img/kapak.jpg
-thumbnail-img: /img/hoca.jpg
+thumbnail-img: /img/icon.jpg
 tags: [Mantık, Düşünce, Tümevarım, Tümdengelim]
 ---
 
