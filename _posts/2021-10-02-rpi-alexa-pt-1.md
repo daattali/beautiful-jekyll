@@ -3,7 +3,7 @@ layout: post
 title: RaspberryPi + Alexa - Parte 01
 subtitle: Configurando o TRIGGERcmd
 tags: [linux, automation]
-comments: true
+comments: false
 ---
 
 Outro dia conversando com o Fernando, ele comentou sobre uns scripts que estavam sendo executados por comando de voz, pela sua Alexa. Eu fiquei curioso, pois já havia tentado mas na época não funcionou bem (o middleware não cumpriu o desejado). Então ele me apresentou o [TRIGGERcmd](https://www.triggercmd.com), e este funcionou muito bem. É ele que irá fazer o meio de campo entre o seu hardware e a sua Alexa.
@@ -25,11 +25,11 @@ dpkg -i https://s3.amazonaws.com/triggercmdagents/triggercmdagent_1.0.1_all.deb
 
 5. Com isso, provavelmente seu rpi já estará visível no {TRIGGERcmd pela web}(https://www.triggercmd.com/user/computer/list).
 
-![Your Computers](img/20211001-01.jpg)
+![Your Computers](./img/20211001-01.jpg)
 
 
 {: .box-warning}
-**Atenção:** Ah, ponto importante: Coloque para que ele seja executado como serviço. Assim não vai precisar ter executar manualmente quando seu rpi reiniciar.
+**Atenção:** Não esqueça de configurar para que seja executado como serviço. Assim não vai precisar ter executar manualmente quando seu rpi reiniciar.
 ```shell
 systemctl enable --now triggercmdagent
 ```
