@@ -7,7 +7,11 @@ tags: [Mantık, Düşünce, Tümevarım, Tümdengelim, Podcast]
 ---
 
 
-Düşünce hayatımızda ipleri elimize almamızın vakti artık geldi. Şimdiye kadar bize anlatılan her şey zihnimizin içerisine rastgele fırlatılan eşyalar gibi. Zihin odamız darmadağın. Biri bize herhangi bir soru sorduğunda o yığının ve karmaşanın içerisinden cevap bulup da vermekte zorlanıyoruz. Bunun en temel sebebi de kendi zihnimizi düzenlememiş olmamız. Bildiğimizi sandığımız bazı şeyleri gerçekte bilmiyoruz. Zaman zaman bazı düşüncelerimiz oluyor, fakat neden bu şekilde düşündüğümüzü temellendiremiyoruz. Yeni bir durumla karşılaştığımızda ne yapacağımıza karar veremiyoruz. Aslında tüm bu sorunların kaynağı eğitim hayatımızda bize en başta detaylı bir şekilde verilmesi gereken mantık bilgisinin zayıflatılarak geçiştirilmesi. 
+Düşünce hayatımızda ipleri elimize almamızın vakti artık geldi. 
+
+{% include youtube.html id='vR3WdCPcWSo' %}
+
+Şimdiye kadar bize anlatılan her şey zihnimizin içerisine rastgele fırlatılan eşyalar gibi. Zihin odamız darmadağın. Biri bize herhangi bir soru sorduğunda o yığının ve karmaşanın içerisinden cevap bulup da vermekte zorlanıyoruz. Bunun en temel sebebi de kendi zihnimizi düzenlememiş olmamız. Bildiğimizi sandığımız bazı şeyleri gerçekte bilmiyoruz. Zaman zaman bazı düşüncelerimiz oluyor, fakat neden bu şekilde düşündüğümüzü temellendiremiyoruz. Yeni bir durumla karşılaştığımızda ne yapacağımıza karar veremiyoruz. Aslında tüm bu sorunların kaynağı eğitim hayatımızda bize en başta detaylı bir şekilde verilmesi gereken mantık bilgisinin zayıflatılarak geçiştirilmesi. 
 
 Bugün burada konuşacağımız her şeyi aslında aklımız başımıza geldiğinden beri biliyor ve uyguluyor olmalıydık. Ama maalesef, neyse...
 
