@@ -14,9 +14,9 @@ Sem mais delongas, vamos ao how-to.
 ## Instalação do TRIGGERcmd
 1. Primeiro passo é criar uma conta no site.
 2. Depois, vamos ao download. Acesse a página [https://www.triggercmd.com/user/computer/create](https://www.triggercmd.com/user/computer/create) (tem que estar logado), e baixe o agente conforme sua plataforma. O meu rpi não tem interface gráfica, então nossa instalação será feita via CLI (como tudo nesse blog...)
+
 ```shell
 dpkg -i https://s3.amazonaws.com/triggercmdagents/triggercmdagent_1.0.1_all.deb
-
 ```
 
 3. Ainda nessa página, observe uma extensa linha em vermelho. É o seu token. Vai precisar na próxima etapa.
