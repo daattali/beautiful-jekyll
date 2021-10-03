@@ -1,6 +1,6 @@
 ---
 title: "Bireyden Topluma"
-cover-img: /img/blackboard.png
+cover-img: /img/puzzle.jpg
 share-img: /img/kapak.jpg
 thumbnail-img: /img/hoca.jpg
 tags: [Birey, Toplum, Eğitimde Birey]
