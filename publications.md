@@ -24,7 +24,7 @@ subtitle:
             <img src="../pics/corl_logo.png" img width="150">
         </td>
         <td><a href="https://openreview.net/forum?id=n1hDe9iK6ms">Learning Visible Connectivity Dynamics for Cloth Smoothing</a><br>
-            <div class="pubauthor">Xingyu Lin, Yufei Wang, Zixuan Huang, David Held<br>
+            <div class="pubauthor">Xingyu Lin*, Yufei Wang*, Zixuan Huang, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2021</div>
             <div id="div2021safetyenvelopes" class="pubInfo"></div>
