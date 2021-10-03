@@ -7,6 +7,19 @@ subtitle:
 <table cellpadding="10" width="100%">
 
     <tr>
+        <td class="pubimg" width="250" height="150" style="text-align:center">
+            <img src="../pics/3DV2021c.jpeg" width="250">
+        </td>
+        <td>Semi-supervised 3D Object Detection via Temporal Graph Neural Networks<br>
+            <div class="pubauthor">Jianren Wang, Haiming Gang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
+            </div>
+            <div class="pubjournal">International Conference on 3D Vision (3DV), 2021</div>
+            <div id="div2021-3dV" class="pubInfo"></div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
             <img src="../pics/corl_logo.png" img width="150">
         </td>
@@ -85,7 +98,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/zephyr.png" img width="250">
+            <img src="../pics/zephyr2.png" img width="250" height="150">
         </td>
         <td><a href="https://arxiv.org/abs/2104.13526">ZePHyR: Zero-shot Pose Hypothesis Rating</a><br>
             <div class="pubauthor">
