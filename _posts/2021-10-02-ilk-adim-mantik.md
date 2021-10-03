@@ -1,6 +1,6 @@
 ---
 title: "İlk Adım: Mantık - Podcast"
-cover-img: /img/blackboard.png
+cover-img: /img/brain.jpg
 share-img: /img/kapak.jpg
 thumbnail-img: /img/icon.jpg
 tags: [Mantık, Düşünce, Tümevarım, Tümdengelim, Podcast]
