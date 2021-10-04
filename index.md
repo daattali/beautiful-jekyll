@@ -19,7 +19,7 @@ use-site-title: true
 
 1. Opt in to [competitions](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B571B3375-9DF4-42A2-B345-8313C7182EEF%7D&file=Competitions%20%26%20Teams.xlsx&action=default&mobileredirect=true).
 
-1. Become an <a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a> and volunteer to [proctor](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B04784B0A-C6F9-42F1-851C-6BA66317BB27%7D&file=Volunteers.xlsx&action=default&mobileredirect=true).
+1. Become an <a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a> and volunteer to [proctor](https://www.signupgenius.com/go/10C0F49AAAE22A5F4CF8-coaching).
 
 ## Top links
 

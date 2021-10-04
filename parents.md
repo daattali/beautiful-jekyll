@@ -8,6 +8,7 @@ RMS Math Club activities at the school require parent proctor supervision. Proct
 
 Parent proctors need to be <a href="https://rmsptsa.org/Packet/Join" target="_blank">paid PTSA members</a> and also
 <a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteers</a>.
+Volunteer to proctor sessions [here](https://www.signupgenius.com/go/10C0F49AAAE22A5F4CF8-coaching).
 
 # Virtual Session Responsibilities
 
