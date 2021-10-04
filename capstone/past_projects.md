@@ -5,6 +5,34 @@ subtitle: For the MDS Capstone course
 
 ---
 
+2021:
+
+- [Analytika](http://www.analytika.ca/): _Transforming Customer Experiences_
+- [BC Centre on Substance Use](https://www.bccsu.ca/): _Using data science to identify and visualize novel compounds in illicit drug checking samples_
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Understanding voting method choices in the 2020 BC General Election_
+- [British Columbia Investment Management Corporation (BCI)](https://www.bci.ca/): _What Can SEC 10-K Textual Disclosures Tell Us About a Firm’s Earnings Quality and Future Stock Returns?_
+- Canada Web Analytics Team: _Determining the Use Cases Across Data Science Sub-Fields for the Government of Canada's Web Analytics Operations_
+- [Cenovus](https://www.cenovus.com/): _Using Time Series Temperature Data to Determine Well Productivity_
+- [Collaboration for Outcomes Research and Evaluation (CORE)](https://core.ubc.ca/): _Data science and health outcomes research_
+- [Dialpad](https://www.dialpad.com/): _Detecting Emerging Topics, Trends and Anomalies from Call Center Transcripts_
+- [Dialpad](https://www.dialpad.com/): _Understanding & Predicting Customer Satisfaction Using Vocal Features_
+- [Gerontology and Diabetes Research Laboratory (GDRL)](https://www.vchri.ca/): _Machine Learning Approaches to: 1. Diagnosing Lipohypertrophy at the bedside, and 2. Falls Prediction in Long Term Care_
+- [Glentel](https://www.glentel.com/home): _People Analytics_
+- [GoldSpot](https://goldspot.ca/): _Automated drill core logging through the lens of Machine learning and Deep learning_
+- [Hootsuite](https://www.hootsuite.com/): _Customer Segmentation using Hootsuite Product Usage Data_
+- [Newsly](https://www.newsly.me/): _Audio listening preferences_
+- [Orbis Investments](https://www.orbis.com/ca/institutional/home): _Earning Calls Deception Analysis_
+- [PayByPhone](https://www.paybyphone.com/): _Anomaly Detection_
+- [Properly Inc](https://www.properly.ca/): _Image Processing: Quantifying The Home Condition From Property Images_
+- [Realtor.com](https://www.realtor.com/): _Identifying real estate investment opportunities using Machine Learning_
+- [Realtor.com](https://www.realtor.com/): _Will they or won't they? Return user prediction_
+- [Sensing in Biomechanical Processes Lab (SimPL)](http://simpl.mech.ubc.ca/): _Extracting and visualizing the human brain state using EEG data_
+- UBC Cybersecurity Group: _Defend UBC_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Football Fortune Telling: Predicting MLS Performance_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Match Fit – Using Optical Tracking Data to Evaluate MLS Players’ Power, Fitness & Fatigue_
+- [aDolus Inc](https://www.adolus.com/): _Software File Clustering (What is this file?)_
+
+
 2020:
 
 - [aDolus](https://www.adolus.com/): _Unearthing Hidden Vulnerabilities in Mission Critical Software_
