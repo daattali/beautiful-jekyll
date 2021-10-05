@@ -13,8 +13,6 @@ This article compiles resources on how Slack solved problems using tracing.
 
 ---
 
-**😍 Here from the [Strange Loop](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html)?**
-
 
 **💯 Getting Started**
 
@@ -23,7 +21,6 @@ This article compiles resources on how Slack solved problems using tracing.
 
 **🔗 Slide References**
 
-- [Video + transcript](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html). **👟 To be published once our organizers post it 👈**.
 - [Infrastructure Observability for Changing the Spend Curve](https://slack.engineering/). **👟 To be published in the coming week at Slack's engineering blog 👈**. A deep dive on how we crafted an order of magnitude change in our spend (10x reduction compared to baseline growth) over the last two years with iterative understanding and changes in Slack’s Continuous Integration (CI) infrastructure.
 - [Why We Built Our Own Distributed Column Store (Strange Loop 2017)](https://www.thestrangeloop.com/2017/why-we-built-our-own-distributed-column-store.html) - a talk by Sam Stokes at Strange Loop 2017 describing details of Honeycomb's columnar datastore.
 - [How Big Technical Changes Happen at Slack](https://slack.engineering/how-big-technical-changes-happen-at-slack/) - an article by Keith Adams / Johnny Rodgers on Slack's strategy for approaching technological adoption.
@@ -33,7 +30,6 @@ This article compiles resources on how Slack solved problems using tracing.
 
 ---
 
-
 **💡 Abstract**
 
 Traditional monitoring tools like logs and metrics were necessary but not sufficient to debug how and where systems failed in CI, which relies on multiple, interconnected critical systems (e.g. GHE, Checkpoint, Cypress).
@@ -42,8 +38,12 @@ In this talk, Frank Chen shares how traces gave us a critical and compounding ca
 
 ---
 
-**📃 o11ycon Resources** (Presented June 11 2021)
+**Strange Loop Resources** (Presented 2021 October 2)
+- @wiredferret [**livetweet 🧵**](https://twitter.com/wiredferret/status/1444373200629125126)
+- @cyen [**livetweet 🧵**](https://twitter.com/cyen/status/1444373315812945921)
+- [Video + transcript](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html). **👟 To be published once our organizers post it 👈**.
 
+**📃 o11ycon Resources** (Presented 2021 June 11)
 * [🔗 Video](https://www.youtube.com/watch?v=1qJIM2uJDT0)
 * [📋 Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/)
 * [💬 Discussion](https://news.ycombinator.com/item?id=27976758) on hacker news
