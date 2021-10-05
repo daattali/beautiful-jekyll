@@ -9,9 +9,13 @@ image-width: 192px
 permalink: tracing-in-ci
 ---
 
-This article compiles resources on how Slack solved problems using tracing.
+This article compiles resources on how Slack solved problems using tracing. I've given this talk a few times and hoped to share references and links for folk to get started in this space.
 
----
+**💡 Abstract**
+
+Traditional monitoring tools like logs and metrics were necessary but not sufficient to debug how and where systems failed in CI, which relies on multiple, interconnected critical systems (e.g. GHE, Checkpoint, Cypress).
+
+In this talk, Frank Chen shares how traces gave us a critical and compounding capability to better understand where, when, how, and why faults occur for our customers in CI. We share how shared tooling for high-dimensionality event traces (using SlackTrace and SpanEvents) could significantly increase our velocity to diagnose code in flight and to debug complex system interactions. We go from stories with early incidents that motivated further investment throughout Slack’s internal tooling teams to stories about gains in performance and resiliency throughout our infrastructure.
 
 
 **💯 Getting Started**
@@ -19,7 +23,7 @@ This article compiles resources on how Slack solved problems using tracing.
 - [Getting started with OpenTelemetry](https://docs.honeycomb.io/getting-data-in/opentelemetry/otel-collector/) - an article by Honeycomb on using OpenTelemetry to set up your pipelines
 - [`go-test-trace` OpenTelemetry collector](https://github.com/rakyll/go-test-trace) - a collector for go test to generate OpenTelemetry distributed traces! Useful to get started in conjunctino with Honeycomb's article described above!
 
-**🔗 Slide References**
+**🔗 References**
 
 - [Infrastructure Observability for Changing the Spend Curve](https://slack.engineering/). **👟 To be published in the coming week at Slack's engineering blog 👈**. A deep dive on how we crafted an order of magnitude change in our spend (10x reduction compared to baseline growth) over the last two years with iterative understanding and changes in Slack’s Continuous Integration (CI) infrastructure.
 - [Why We Built Our Own Distributed Column Store (Strange Loop 2017)](https://www.thestrangeloop.com/2017/why-we-built-our-own-distributed-column-store.html) - a talk by Sam Stokes at Strange Loop 2017 describing details of Honeycomb's columnar datastore.
@@ -28,25 +32,18 @@ This article compiles resources on how Slack solved problems using tracing.
 - [Towards Observability Data Management at Scale](https://dl.acm.org/doi/10.1145/3456859.3456863). Abstract: Observability has been gaining importance as a key capability in today's large-scale software systems and services. Motivated by current experience in industry exemplified by Slack and as a call to arms for database research, this paper outlines the challenges and opportunities involved in designing and building Observability Data Management Systems (ODMSs) to handle this emerging workload at scale.
 - [Gray failure: the Achilles’ heel of cloud-scale systems](https://blog.acolyer.org/2017/06/15/gray-failure-the-achilles-heel-of-cloud-scale-systems/) - an article summarizing gray failures from Microsoft Research.
 
----
+## Conferences
 
-**💡 Abstract**
-
-Traditional monitoring tools like logs and metrics were necessary but not sufficient to debug how and where systems failed in CI, which relies on multiple, interconnected critical systems (e.g. GHE, Checkpoint, Cypress).
-
-In this talk, Frank Chen shares how traces gave us a critical and compounding capability to better understand where, when, how, and why faults occur for our customers in CI. We share how shared tooling for high-dimensionality event traces (using SlackTrace and SpanEvents) could significantly increase our velocity to diagnose code in flight and to debug complex system interactions. We go from stories with early incidents that motivated further investment throughout Slack’s internal tooling teams to stories about gains in performance and resiliency throughout our infrastructure.
-
----
-
-**Strange Loop Resources** (Presented 2021 October 2)
+**♻️ Strange Loop (2021 October 02)**
 - @wiredferret [**livetweet 🧵**](https://twitter.com/wiredferret/status/1444373200629125126)
 - @cyen [**livetweet 🧵**](https://twitter.com/cyen/status/1444373315812945921)
-- [Video + transcript](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html). **👟 To be published once our organizers post it 👈**.
+- [📹 Video + 📋 Transcript](https://thestrangeloop.com/2021/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure.html). **👟 To be published once our organizers post it 👈**.
 
-**📃 o11ycon Resources** (Presented 2021 June 11)
-* [🔗 Video](https://www.youtube.com/watch?v=1qJIM2uJDT0)
-* [📋 Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/)
+**🐝 o11ycon (2021 June 11)**
+* [📹 Video](https://www.youtube.com/watch?v=1qJIM2uJDT0); [📋 Transcript](https://www.honeycomb.io/resources/how-tracing-uncovers-half-truths-in-slacks-ci-infrastructure/)
 * [💬 Discussion](https://news.ycombinator.com/item?id=27976758) on hacker news
+
+## Accompanying Article
 
 *The blog article, reshared was originally published in [Honeycomb's blog](https://www.honeycomb.io/blog/how-slack-transformed-their-ci-with-tracing) summarizes the talk.*
 
