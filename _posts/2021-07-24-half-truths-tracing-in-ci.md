@@ -21,7 +21,7 @@ In this talk, Frank Chen shares how traces gave us a critical and compounding ca
 **💯 Getting Started**
 
 - [Getting started with OpenTelemetry](https://docs.honeycomb.io/getting-data-in/opentelemetry/otel-collector/) - an article by Honeycomb on using OpenTelemetry to set up your pipelines
-- [`go-test-trace` OpenTelemetry collector](https://github.com/rakyll/go-test-trace) - a collector for go test to generate OpenTelemetry distributed traces! Useful to get started in conjunctino with Honeycomb's article described above!
+- [`go-test-trace` OpenTelemetry collector](https://github.com/rakyll/go-test-trace) - a collector for go test to generate OpenTelemetry distributed traces
 
 **🔗 References**
 
@@ -29,7 +29,7 @@ In this talk, Frank Chen shares how traces gave us a critical and compounding ca
 - [Why We Built Our Own Distributed Column Store (Strange Loop 2017)](https://www.thestrangeloop.com/2017/why-we-built-our-own-distributed-column-store.html) - a talk by Sam Stokes at Strange Loop 2017 describing details of Honeycomb's columnar datastore.
 - [How Big Technical Changes Happen at Slack](https://slack.engineering/how-big-technical-changes-happen-at-slack/) - an article by Keith Adams / Johnny Rodgers on Slack's strategy for approaching technological adoption.
 - [Tracing at Slack: Thinking in Causal Graphs](https://slack.engineering/tracing-at-slack-thinking-in-causal-graphs/) - an article by Suman Karumuri on modeling traces as causal graphs at Slack with SlackTrace.
-- [Towards Observability Data Management at Scale](https://dl.acm.org/doi/10.1145/3456859.3456863). Abstract: Observability has been gaining importance as a key capability in today's large-scale software systems and services. Motivated by current experience in industry exemplified by Slack and as a call to arms for database research, this paper outlines the challenges and opportunities involved in designing and building Observability Data Management Systems (ODMSs) to handle this emerging workload at scale.
+- [Towards Observability Data Management at Scale](https://dl.acm.org/doi/10.1145/3456859.3456863) - a paper by Suman Karumuri, et. al. describing practices and patterns to design / build an Observability Data Management Systems (ODMSs), and how to operate this architecture at scale.
 - [Gray failure: the Achilles’ heel of cloud-scale systems](https://blog.acolyer.org/2017/06/15/gray-failure-the-achilles-heel-of-cloud-scale-systems/) - an article summarizing gray failures from Microsoft Research.
 
 ## Conferences
