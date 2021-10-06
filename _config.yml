@@ -182,6 +182,23 @@ footer-link-col: "#404040"
 #    siteKey  : # You need to apply for a site key on Google
 #    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
 
+# To use giscus comments, simply follow all instructions at https://giscus.app:
+# (0) uncomment the following giscus: section, (1) Enable Discussions in your repository, 
+# (2) Install the giscus app in your repository, (3) Fill in all remaining fields. 
+# See all necessary details about the parameters, including how to fetch ID-values,
+# at https://giscus.app. For any support with giscus please direct questions to giscus and
+# not to BeautifulJekyll.
+# giscus:
+#   hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
+#   repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#   repository-id: # ID-value of your GitHub username/repository, fetch from https://giscus.app
+#   category: # Category name of your GitHub Discussion posts
+#   category-id: # ID-value of your chosen category, fetch from https://giscus.app
+#   mapping: pathname # Option for how posts are mapped to discussions
+#   reactions-enabled: 1 # Reactions on top-level post enabled
+#   emit-metadata: 0 # Send discussions metadata to console
+#   theme: light # giscus theme
+
 # --- Misc --- #
 
 # Ruby Date Format to show dates of posts
