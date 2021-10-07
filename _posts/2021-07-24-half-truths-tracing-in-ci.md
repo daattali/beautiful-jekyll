@@ -3,7 +3,7 @@ layout: post
 title: How Tracing Uncovers Half-truths in Slack’s CI Infrastructure
 subtitle: How Slack Transformed Their CI With Tracing
 image: /img-posts/tracing-in-ci-thumb.png
-modified-date: October 1, 2021
+modified-date: October 7, 2021
 image-height: 192px
 image-width: 192px
 permalink: tracing-in-ci
@@ -25,14 +25,14 @@ In this talk, Frank Chen shares how traces gave us a critical and compounding ca
 
 **🔗 References**
 
-- [Infrastructure Observability for Changing the Spend Curve](https://slack.engineering/). **👟 To be published in the coming week at Slack's engineering blog 👈**. A deep dive on how we crafted an order of magnitude change in our spend (10x reduction compared to baseline growth) over the last two years with iterative understanding and changes in Slack’s Continuous Integration (CI) infrastructure.
+- [Infrastructure Observability for Changing the Spend Curve](https://slack.engineering/infrastructure-observability-for-changing-the-spend-curve/). **🎉 Published on 2021/10/07**. A deep dive on how we crafted an order of magnitude change in our spend (10x reduction compared to baseline growth) over the last two years with iterative understanding and changes in Slack’s Continuous Integration (CI) infrastructure.
 - [Why We Built Our Own Distributed Column Store (Strange Loop 2017)](https://www.thestrangeloop.com/2017/why-we-built-our-own-distributed-column-store.html) - a talk by Sam Stokes at Strange Loop 2017 describing details of Honeycomb's columnar datastore.
 - [How Big Technical Changes Happen at Slack](https://slack.engineering/how-big-technical-changes-happen-at-slack/) - an article by Keith Adams / Johnny Rodgers on Slack's strategy for approaching technological adoption.
 - [Tracing at Slack: Thinking in Causal Graphs](https://slack.engineering/tracing-at-slack-thinking-in-causal-graphs/) - an article by Suman Karumuri on modeling traces as causal graphs at Slack with SlackTrace.
 - [Towards Observability Data Management at Scale](https://dl.acm.org/doi/10.1145/3456859.3456863) - a paper by Suman Karumuri, et. al. describing practices and patterns to design / build an Observability Data Management Systems (ODMSs), and how to operate this architecture at scale.
 - [Gray failure: the Achilles’ heel of cloud-scale systems](https://blog.acolyer.org/2017/06/15/gray-failure-the-achilles-heel-of-cloud-scale-systems/) - an article summarizing gray failures from Microsoft Research.
 
-## Conferences
+## Conference talks
 
 **♻️ Strange Loop (2021 October 02)**
 - @wiredferret [**livetweet 🧵**](https://twitter.com/wiredferret/status/1444373200629125126)
