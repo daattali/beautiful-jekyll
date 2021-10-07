@@ -27,7 +27,7 @@ I’m home full time and when there is no pandemic around, I’m responsible for
 
 #### FREEBIE: Picky plate template to make your lunches much simpler!
 
-Are you looking for more resources to simplify your life at home with children? You may love being on my newsletter list. You'll get access to the freebie vault, full of helpful guides and tips to help you simplify even more. One of them being my much sought after - picky plate template. It's what we use most days for our lunch so that we're no more wondering what to eat for lunch. You can sign up for it below!
+Are you looking for more resources to simplify your life at home with children? You may love being on my newsletter list. You'll get access to the freebie vault, full of helpful guides and tips to help you simplify even more. One of them being my much sought after - picky plate template. It's what we use most days for our lunch so that we're no more wondering what to eat for lunch. You can sign up for it [HERE](https://www.simplehomemom.com/freebies).
 
 # The Simple Meal Planning Guide
 
