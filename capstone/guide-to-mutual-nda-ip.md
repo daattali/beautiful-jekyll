@@ -8,13 +8,13 @@ subtitle: Guide to mutual nondisclosure agreement and IP agreement for confident
 ## Background
 Some MDS-V Capstone projects may require agreements to be put in place 
 to protect confidential background information and to define how new project intellectual property, 
-if any is developed, will be handled.  
+if any is developed, will be handled.
 We ask Capstone partners to disclose if their project falls under this category in their project proposal
 so that students are aware of this requirement if they choose to work on the project.
 For all MDS-V Capstone projects that have such requirements, 
-the projects will be bound by the terms of these agreements.
+the projects will be bound by the terms of the agreements outlined below.
 
-### Agreements for non-UBC company sponsors
+### Agreements for non-UBC capstone partners
 
 #### Mutual non-disclosure agreement (NDA)
 
@@ -36,7 +36,8 @@ This agreement is between the students and the project partner.
 Further information on UBC’s policies for handling intellectual property can be found in 
 [UBC Policy LR11 - Inventions and Discoveries](https://universitycounsel-2015.sites.olt.ubc.ca/files/2019/08/Inventions-Policy_LR11.pdf).
 
-#### Agreements for UBC-affiliated sponsors
+### Agreements for UBC-affiliated capstone partners
+
 Many of our projects are sponsored by UBC faculty or by companies (startups) that are closely related to or incubated by UBC.  
 For these projects, any new inventions will be handled by the UBC’s University-Industry Liaison Office - the UILO.  
 The UILO is the UBC body that handles intellectual property and UBC-industry relationships for the university.  
