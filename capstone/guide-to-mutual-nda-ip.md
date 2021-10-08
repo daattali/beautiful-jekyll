@@ -41,11 +41,10 @@ Further information on UBC’s policies for handling intellectual property can b
 ### Agreements for UBC-affiliated capstone partners
 
 Many of our projects are sponsored by UBC faculty or by companies (startups) that are closely related to or incubated by UBC.  
-For these projects, any new inventions will be handled by the UBC’s University-Industry Liaison Office - the UILO.  
-The UILO is the UBC body that handles intellectual property and UBC-industry relationships for the university.  
+For these projects, any new inventions will be handled by the UBC’s University-Industry Liaison Office - the UILO.
+The UILO is the UBC body that handles intellectual property and UBC-industry relationships for the university.
 If a UBC professor or graduate student wishes to file a patent, start a company, 
 or engage in a paid research partnership with an external company, they would deal with the UILO.
-
 Intellectual property for UBC-affiliated projects is handled by the UILO, rather than the above agreements, 
 because these sponsors are UBC employees and the projects will be completed using university resources.
 
