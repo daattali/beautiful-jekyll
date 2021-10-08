@@ -25,7 +25,6 @@ and the obligations it entails.
 
 - [Template Reciprocal Nondisclosure Agreement](template-ubc-nda.pdf)
 
-<br>
 
 #### IP assignment agreement
 
