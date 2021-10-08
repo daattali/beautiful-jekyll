@@ -1,4 +1,9 @@
-## Guide to mutual nondisclosure agreement and IP agreement for confidential projects
+---
+layout: page
+title: Confidential projects
+subtitle: Guide to mutual nondisclosure agreement and IP agreement for confidential projects
+---
+
 
 ## Background
 Some MDS-V Capstone projects may require agreements to be put in place 
