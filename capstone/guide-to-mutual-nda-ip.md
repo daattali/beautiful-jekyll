@@ -24,12 +24,13 @@ the students and the instructors will sign the agreements to confirm that they h
 and the obligations it entails.
 
 - [Template Reciprocal Nondisclosure Agreement](template-ubc-nda.pdf)
-
+  
+  
 
 #### IP assignment agreement
 
 The purpose of the IP assignment agreement is to clarify who owns any intellectual property 
-that may be developed during the capstone project.  
+that may be developed during the capstone project. 
 This agreement is between the students and the project partner.
 
 - [Template IP Assignment Agreement](template-ubc-ip-assignment.pdf)
@@ -39,8 +40,8 @@ Further information on UBC’s policies for handling intellectual property can b
 
 ### Agreements for UBC-affiliated capstone partners
 
-Many of our projects are sponsored by UBC faculty or by companies (startups) that are closely related to or incubated by UBC.  
-For these projects, any new inventions will be handled by the UBC’s University-Industry Liaison Office - the UILO.
+For projects which are sponsored by UBC faculty or by companies (startups) that are closely related to or incubated by UBC,
+any new inventions will be handled by the UBC’s University-Industry Liaison Office - the UILO.
 The UILO is the UBC body that handles intellectual property and UBC-industry relationships for the university.
 If a UBC professor or graduate student wishes to file a patent, start a company, 
 or engage in a paid research partnership with an external company, they would deal with the UILO.
