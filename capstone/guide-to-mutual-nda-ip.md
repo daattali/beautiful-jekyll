@@ -25,6 +25,8 @@ and the obligations it entails.
 
 - [Template Reciprocal Nondisclosure Agreement](template-ubc-nda.pdf)
 
+<br>
+
 #### IP assignment agreement
 
 The purpose of the IP assignment agreement is to clarify who owns any intellectual property 
