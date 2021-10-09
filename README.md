@@ -207,9 +207,16 @@ If you'd like to showcase yourself and join this list, [upgrading to the Individ
 # Build the site locally
 Locally building the site allows you to see changes before commiting them. This enables much faster iteration cycles for small or visual changes (think changes to css or colors). GitHub pages uses `jekyll` to build the page in `_site`.
 
+## Without nix
+See [here](https://beautifuljekyll.com/getstarted/#install-steps-hard) for instructions on how to install the ruby gem locally.
+
+## With nix
+
 If you have `nix` installed (if not, see [here](https://nixos.org/guides/how-nix-works.html) what it is and how it works, and [here](https://nixos.org/guides/install-nix.html) for installation), you can build this page locally simply via executing `nix-shell`.
 
 Running `nix-shell` builds the `shell.nix`, which (locally, think virtual environment) installs `jekyll`, `jekyll-paginate` and starts the `jekyll`-server in incremental build mode. You can find your locally built page on `localhost:4000`.
+
+## Usage
 
 Initial page generation may take a few seconds. Changes to most files (`*.md`, `*.html`, `*.js`, `*.css`, ...), tend to take less than 0.2sec until you can see the changes when reloading the page in your browser (this is shorter than it takes me to switch from my editor to my browser).
 
