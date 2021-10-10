@@ -184,18 +184,18 @@ footer-link-col: "#404040"
 
 # To use giscus comments:
 # (0) uncomment the following giscus section, (1) Enable Discussions in your GitHub repository, 
-# (2) Install the giscus app in your repository, (3) Fill in all the parameters below 
-# See more details about giscus and the parameters at https://giscus.app
+# (2) Install the giscus app in your repository, (3) Fill in *all* the parameters below 
+# See more details about giscus and each of the following parameters at https://giscus.app
 #giscus:
 #  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
 #  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  repository-id: # ID-value of your GitHub username/repository, fetch from https://giscus.app
-#  category: # Category name of your GitHub Discussion posts
-#  category-id: # ID-value of your chosen category, fetch from https://giscus.app
-#  mapping: pathname # Option for how posts are mapped to discussions
-#  reactions-enabled: 1 # Reactions on top-level post enabled
-#  emit-metadata: 0 # Send discussions metadata to console
-#  theme: light # giscus theme
+#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
+#  category: Announcements # Category name of your GitHub Discussion posts
+#  category-id: # ID of your category, retrieve this info from https://giscus.app
+#  mapping: pathname
+#  reactions-enabled: 1
+#  emit-metadata: 0
+#  theme: light
 
 # --- Misc --- #
 
