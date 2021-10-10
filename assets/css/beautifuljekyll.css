@@ -20,6 +20,7 @@ body {
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
+  overflow-wrap: break-word;
 }
 p {
   line-height: 1.5;
@@ -386,6 +387,11 @@ footer p.text-muted {
 
 footer a {
   color: {{ site.footer-link-col | default: "#404040" }};
+}
+
+footer a:hover,
+footer a:focus {
+  color: {{ site.footer-hover-col | default: "#0085A1" }};
 }
 
 footer .list-inline {
