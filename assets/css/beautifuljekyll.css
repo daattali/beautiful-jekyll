@@ -20,6 +20,7 @@ body {
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
+  overflow-wrap: break-word;
 }
 p {
   line-height: 1.5;
