@@ -16,6 +16,7 @@
 - Added Reddit in share options of posts (#815)
 - Fixed bug where staticman didn't work jQuery slim version is used (#766)
 - Fixed very long strings to wrap around the next line rather than go off-screen (#787)
+- Added `footer-hover-col` config setting to customize the hover colour of links in the footer (#848)
 
 ## v5.0.0 (2020-09-15)
 

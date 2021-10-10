@@ -389,6 +389,11 @@ footer a {
   color: {{ site.footer-link-col | default: "#404040" }};
 }
 
+footer a:hover,
+footer a:focus {
+  color: {{ site.footer-hover-col | default: "#0085A1" }};
+}
+
 footer .list-inline {
   margin: 0;
   padding: 0;
