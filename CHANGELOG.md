@@ -1,6 +1,7 @@
 ## Unreleased version
 
 - Added `post_search` config setting that creates a Search button in the navbar (older websites need to set `post_search: true` to enable this feature) (#770)
+- BREAKING CHANGE: More control over RSS feed sharing: previously, an RSS feed was *always* generated, and if the config setting `rss-description` was set then there was an RSS icon in the footer. Now, an RSS feed is only generated when the config setting `rss-description` exists, and an RSS footer icon is only shown if `rss: true` is set in the `social-network-links` config settings 
 - Fixed page titles, subtitles, and excerpts rendering correctly when there are special characeters in them (#856) 
 - Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari.
 - Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
