@@ -60,7 +60,7 @@ There's a very easy way to use this theme, and there's a hard way. For most peop
 
 Getting started is *literally* as easy as 1-2-3 :smile:
 
-> A reminder for *advanced users only*: you can follow the instructions for [building locally](https://github.com/daattali/beautiful-jekyll#the-hard-way-using-ruby-gems) if you want more control but higher difficulty
+> A reminder for *advanced users only*: you can follow the instructions for [building locally](https://beautifuljekyll.com/getstarted/#install-steps-hard) if you want more control but higher difficulty
 
 Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com/join), you'll need to sign up.
 
