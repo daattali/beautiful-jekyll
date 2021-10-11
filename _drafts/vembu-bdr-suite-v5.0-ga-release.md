@@ -34,7 +34,7 @@ Customers can now configure backup and recovery through the unified management G
 
 #### New features in Vembu BDR Suite v5.0 
 
-This new version is packed with valued added features that span from traditional on-premise enhancements to Cloud services backup support.
+This new version is packed with valued added features that span from traditional on-premise enhancements to Cloud services backup support. In the next sections we will have a look at some of these features, in the meantime, here is the complete list of what you will find new in Vembu BDR Suite v5.0.
 
 * Microsoft 365 SharePoint Online Backup
 * Microsoft 365 Teams Backup
