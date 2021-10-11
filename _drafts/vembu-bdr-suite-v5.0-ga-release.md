@@ -51,6 +51,12 @@ This new version is packed with valued added features that span from traditional
 * Multi-host Backup Support
 * Application Item-level Recovery from web GUI
 
+#### Disk rotate for backup repository
+
+Set up rotated drives as the primary backup repository to store the backup data in multiple external detachable hard drives and swap them on a regular basis.
+
+![](/img/vmworld2021-7.png)
+
 #### Backup Job Templates
 
-You can now create backup templates based on frequently used backup configuration settings or backup policies that you can use to create new backup jobs quickly.
+You can now create backup templates based on frequently used backup configuration settings or backup policies that you can use to create new backup jobs quickly which require similar configuration settings as that of the already created template to skip steps and save time.
