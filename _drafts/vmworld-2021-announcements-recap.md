@@ -73,6 +73,20 @@ Because many organizations don't necessarily have the resources, times or in-hou
 
 Tanzu was mentioned in other areas such as [Tanzu Service Mesh Enterprise](https://tanzu.vmware.com/service-mesh), VMware Tanzu Standard for VMware Cloud Universal, New TKG features, New capabilities for [Tanzu Application Platform.]()
 
+## VMware EDGE
+
+Although it is not nearly as mentioned as cloud or container techs, Edge computing is going to be one of the next big things in IT. For all those use cases where you need your compute capacity as close to the endpoint as possible (at the Edge). 
+
+Because refactoring apps to run at the edge is complicated, time consuming and expensive, VMware is simplified the road to Edge computing with VMware Edge Compute Stack, a stack that extends your SDDC or Cloud infrastructure to the edge with HCI, SDN, Tanzu and vSphere. That way you keep delevoping your apps like you're used to and just push them to the Edge.
+
+![](/img/vmworld2021-4.png)
+
+The offering will be licensed in three tiers:
+
+* **Edge Compute Standard**: vSphere Enterprise Plus, Tanzu Standard
+* **Edge Compute Advanced**: vSphere Enterprise Plus, Tanzu Standard, vSAN Standard
+* **Edge Compute Enterprise**: vSphere Enterprise Plus, Tanzu Standard, vSAN Standard, SD-WAN by VeloCloud
+
 ## vSphere 7 Update 3
 
 As it is often the case, a new version of vSphere is released around the time of VMworld and is the topic of a session or two. This VMworld 2021 was no exception with a session around [vSphere 7 Update 3 release notes](https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-esxi-703-release-notes.html) and [vSAN 7 Update 3 release notes](https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vmware-vsan-703-release-notes.html). 
