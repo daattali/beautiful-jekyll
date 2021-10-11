@@ -53,6 +53,12 @@ DRaaS was announced during VMworld 2020 to showcase a more cost-effective approa
 * **Accelerated Ransomware recovery with File-level recovery**: You can restore files from various snapshots at different point in time into a restore point at another time to shorten the time to recover a virtual machine after a ransomware attack.
 * **Integrated and simple data protection for VMware Cloud on AWS**: VMC on AWS will now be able to leverage data protection in a unified DR, ransomware, and foundational backup-restore solution.
 
+### Project Arctic and Cascade
+
+Those two projects work hand in hand to address the needs of Operations teams and DevOps teams. **Project Arctic** will look after Ops teams by making vSphere "Cloud aware" by bringing connectivity directly to it to, again, compromise with beloved on-premise infrastructures and simplify the transition to hybrid cloud.
+
+**Project Cascade** focuses on DevOps folks by a proposing a unified Kubernetes interface for both on-demand infrastructure and containers across multi-clouds. It will leverage Tanzu VM service that lets "kubernetes" interact with VMs.
+
 ## VMware Tanzu
 
 ### VMware Tanzu Community Edition
@@ -97,7 +103,9 @@ Among the project in the VMworld 2021 announcements was Project Santa Cruz, a pu
 
 Note that Project Santa Cruz also includes "Bring-your-own-host" with a cluster API provider that can support existing infrastructure such as Hyper-V or specific kernel-tuned environments.
 
-## vSphere 7 Update 3
+## VMware Infrastructure
+
+### vSphere 7 Update 3
 
 As it is often the case, a new version of vSphere is released around the time of VMworld and is the topic of a session or two. This VMworld 2021 was no exception with a session around [vSphere 7 Update 3 release notes](https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-esxi-703-release-notes.html) and [vSAN 7 Update 3 release notes](https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vmware-vsan-703-release-notes.html). 
 
@@ -112,3 +120,24 @@ However, those customers will be consoled by the fact that VMware keeps building
 * vCenter RDU (Reduced Downtime Upgrade), bring cloud tech to on-prem
 * Future Linux distributions will have VMware Tools preinstalled (What??)
 * I/O Trip Analyzer for vSAN 7 Update 3
+
+### Project Capitola
+
+Now this project is REALLY cool as it will essentially let you virtualize and pool memory in several tiers such as DRAM, PMEM, NVMe and other future technologies that don't yet exist. This will make for a more cost-effective solution for those memory hungry workloads. This is somewhat like vSAN for memory and it will be managed by vSphere in the backend.
+
+![](/img/vmworld2021-6.png)
+
+## Other projects
+
+A bunch of projects were announced that we didn't mentioned earlier. Here they are if you're interested to see what VMware is currently working on:
+
+* **Project Radium**: AI oriented project to expand the compatibility of BitFusion to a wider range of hardware such as AMD, Graphcore, Intel, Nvidia and other vendors and make it dynamically attachable.
+* **Project Cryptographic agility**: Offer crypto agility through increased control over configurations and the ability to switch between standard and libraries.
+* **Project Ensemble**: streamlines multi-cloud operations through app-centric views of multi-clouds.
+* **Project IDEM**: Multi-cloud task automation platform with auto-discover of cloud APIs.
+
+## Conclusion
+
+Another big year ahead with all these VMworld 2021 announcements. Unless it wasn't already clear enough, it is obvious that VMware is directing the company toward a more service and subscription oriented model. Recurring streams of income make a lot more sense than upfront investments and in-house management of the assets.
+
+App modernization is still in its early days in the VMware space with Tanzu but it is coming and it is coming fast. Teams are skilling up on the technology and customer interest will only grow in the coming months bringing lots of interesting use cases and scenarios.
