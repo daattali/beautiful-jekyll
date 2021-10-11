@@ -75,6 +75,8 @@ Tanzu was mentioned in other areas such as [Tanzu Service Mesh Enterprise](https
 
 ## VMware EDGE
 
+### VMware Edge Compute Stack
+
 Although it is not nearly as mentioned as cloud or container techs, Edge computing is going to be one of the next big things in IT. For all those use cases where you need your compute capacity as close to the endpoint as possible (at the Edge). 
 
 Because refactoring apps to run at the edge is complicated, time consuming and expensive, VMware is simplified the road to Edge computing with VMware Edge Compute Stack, a stack that extends your SDDC or Cloud infrastructure to the edge with HCI, SDN, Tanzu and vSphere. That way you keep delevoping your apps like you're used to and just push them to the Edge.
@@ -86,6 +88,14 @@ The offering will be licensed in three tiers:
 * **Edge Compute Standard**: vSphere Enterprise Plus, Tanzu Standard
 * **Edge Compute Advanced**: vSphere Enterprise Plus, Tanzu Standard, vSAN Standard
 * **Edge Compute Enterprise**: vSphere Enterprise Plus, Tanzu Standard, vSAN Standard, SD-WAN by VeloCloud
+
+### Project Santa Cruz
+
+Among the project in the VMworld 2021 announcements was Project Santa Cruz, a purpose built box that will easily connect an Edge site to the SDDC or Cloud mothership where centralized management is. I find there's vibe in between apple products and desktop computers from the early 2000.
+
+![Project Santa Cruz VMworld 2021 box](/img/vmworld2021-5.png)
+
+Note that Project Santa Cruz also includes "Bring-your-own-host" with a cluster API provider that can support existing infrastructure such as Hyper-V or specific kernel-tuned environments.
 
 ## vSphere 7 Update 3
 
