@@ -52,3 +52,5 @@ This new version is packed with valued added features that span from traditional
 * Application Item-level Recovery from web GUI
 
 #### Backup Job Templates
+
+You can now create backup templates based on frequently used backup configuration settings or backup policies that you can use to create new backup jobs quickly.
