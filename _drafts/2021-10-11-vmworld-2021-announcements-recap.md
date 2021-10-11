@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VMworld 2021 announcements recap
-DATE: 2021-10-10 15:24:47 +0200
+DATE: 2021-10-10T15:24:47.000+02:00
 subtitle: ''
 metadescription: Keep reading to find out about the best VMworld 2021 announcements
   and learn about the future of virtualization.
