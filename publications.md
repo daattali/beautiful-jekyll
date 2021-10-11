@@ -10,7 +10,7 @@ subtitle:
         <td class="pubimg" width="250" height="150" style="text-align:center">
             <img src="" width="250">
         </td>
-        <td>RB2: Robotic Manipulation Benchmarking with a Twist<br>
+        <td><a href="https://openreview.net/forum?id=e82_BlJL43M">RB2: Robotic Manipulation Benchmarking with a Twist</a><br>
             <div class="pubauthor">Sudeep Dasari, Jianren Wang, Joyce Hong, Shikhar Bahl, Yixin Lin, Austin S Wang, Abitha Thankaraj, Karanbir Singh Chahal, Berk Calli, Saurabh Gupta, David Held, Lerrel Pinto, Deepak Pathak, Vikash Kumar, Abhinav Gupta<br>
             </div>
             <div class="pubjournal">NeurIPS 2021 Datasets and Benchmarks Track, 2021</div>
