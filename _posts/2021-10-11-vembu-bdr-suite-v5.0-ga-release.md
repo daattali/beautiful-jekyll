@@ -7,9 +7,11 @@ metadescription: Backup your virtual machines with Vembu BDR Suite v5.0 and lear
   all about its new features.
 
 ---
+Vembu BDR Suite v5.0 is a complete Backup and disaster recovery solution tailored to protect workloads across Virtual, Physical, on-premises, Cloud services, and SaaS applications.
+
 After a long hiatus since version 4, Vembu finally released Vembu BDR Suite v5.0, a major release which embeds many interesting features and will bring a lot of value to your infrastructure with solid virtual machines backup solution. The focus has been put on covering on-premise and cloud environments as more and more customers are moving to a hybrid cloud approach.
 
-Vembu BDR Suite is a Windows or Linux installer and you can use it unrestricted for free during a 30 days trial period.
+Vembu BDR Suite is a Windows or Linux installer and you can use it unrestricted for free during a **30 days trial period**.
 
 [![](/img/vembu5-1.png)](https://www.vembu.com/vembu-bdr-suite-download/)
 
@@ -84,3 +86,32 @@ In Vembu BDR Suite v5.0, you can use GFS retention to create restore points on a
 #### Instant Boot Live Migration
 
 Instant boot isn't a new feature as it's been around for a while now. However, you can now instantly boot VMs from backup repository while they are being fully restored in the background without any downtime. This will be particularly valuable for those critical workloads that you need recovered as soon as possible.
+
+![](/img/vmworld2021-12.png)
+
+#### Concurrent backup settings (Parallel VM Processing)
+
+With Concurrent backup settings, you can now set the maximum number of backup tasks the server can process concurrently before queuing them as well as the number of tasks each backup job can process. That way you can control your backup fluxes in a more granular fashion.
+
+![](/img/vmworld2021-12-1.png)
+
+#### Other changes in Vembu BDR Suite v5.0
+
+Anyway, I only scratched the surface of what's new in Vembu BDR Suite v5.0 as I'm sure you will be playing with it anyway. The [release notes](https://www.vembu.com/vembu-bdr-suite-release-notes/) also refer to additional enhancements that are brought by this new version such as:
+
+* You can start a restore while a backup is running
+* Backup and offsite copy job can run concurrently
+* Specify your backup window at the job level
+* File-level recovery support for dynamic disks
+* Compression and encryption can be turned off at the storage repo
+* Creating a backup job is significantly more user friendly
+* Throttle bandwidth on backups created in BDR Backup server
+* Hyper-V backup VMs can be restore with their original configuration
+
+#### Conclusion
+
+There you have it, Vembu BDR Suite v5.0 will help you protect those virtual machines and cloud services that run your organization. 
+
+Putting in place a solid backup strategy is critical, especially in these days of Ransomware attacks popping up all over the place. You want to ensure that your data is safe and that you can recover should anything happen.
+
+Feel free to give [Vembu BDR Suite v5.0 ]()a go!
