@@ -19,7 +19,7 @@ If you are running an earlier version of Vembu BDR Suite, you can already upgrad
 
 #### Unified web-based management console
 
-One of the big selling points of Vembu BDR Suite v5.0 is how it consolidates backup management for virtual, physical, cloud workloads, and SaaS applications into a single centralized management GUI. 
+One of the big selling points of Vembu BDR Suite v5.0 is how it consolidates backup management for virtual, physical, cloud workloads, and SaaS applications into a single centralized management GUI.
 
 ![](/img/vembu5-2.png)
 
@@ -32,7 +32,7 @@ Customers can now configure backup and recovery through the unified management G
 * [Microsoft 365 (Now supports Teams and SharePoint Online Backup)](https://www.vembu.com/office-365-backup/)
 * [Google Workspace with support for backup of Mails, Google Drive, Contacts, and Calendar](https://www.vembu.com/google-workspace-backup/)
 
-#### New features in Vembu BDR Suite v5.0 
+#### New features in Vembu BDR Suite v5.0
 
 This new version is packed with valued added features that span from traditional on-premise enhancements to Cloud services backup support. In the next sections we will have a look at some of these features, in the meantime, here is the complete list of what you will find new in Vembu BDR Suite v5.0.
 
@@ -43,9 +43,9 @@ This new version is packed with valued added features that span from traditional
 * Hyper-V VM Replication
 * Instant Boot Live Migration
 * Parallel VM Processing
-* Rotated Drives as Backup Repository 
+* Rotated Drives as Backup Repository
 * Optimized Backup with Where-it-left-off
-* Synthetic Full Backup 
+* Synthetic Full Backup
 * GFS (Grandfather-Father-Son) Retention
 * Backup Job Template
 * Multi-host Backup Support
@@ -60,3 +60,27 @@ Set up rotated drives as the primary backup repository to store the backup data 
 #### Backup Job Templates
 
 You can now create backup templates based on frequently used backup configuration settings or backup policies that you can use to create new backup jobs quickly which require similar configuration settings as that of the already created template to skip steps and save time.
+
+You can then, in your template, add disk exclusions such as only backing up the system disk, configure guest processing, VM quiescing, scheduling, settings, encryption...
+
+![](/img/vmworld2021-8.png)
+
+#### Cloud services Backups
+
+In Vembu BDR Suite v5.0, you can add Google Workspace and Microsoft 365 organizations in your data sources to start backing up your Cloud services.
+
+![](/img/vmworld2021-9.png)
+
+The AWS integration guides you through the process where you need to create an IAM policy with a piece of JSON provided in the Vembu management dashboard. Once done, attach it to a user, configure the access key ID with Secret Access key andyou can start backing up your instances. As you can see below my EC2 instance appears in the menu.
+
+![](/img/vmworld2021-10.png)
+
+#### GFS (Grandfather-Father-Son) Retention
+
+In Vembu BDR Suite v5.0, you can use GFS retention to create restore points on a weekly, monthly, quarterly, and yearly basis which are tied to an extra Full or Synthetic Full Backup. Note that this isn't available with disk rotation repositories.
+
+![](/img/vmworld2021-11.png)
+
+#### Instant Boot Live Migration
+
+Instant boot isn't a new feature as it's been around for a while now. However, you can now instantly boot VMs from backup repository while they are being fully restored in the background without any downtime. This will be particularly valuable for those critical workloads that you need recovered as soon as possible.
