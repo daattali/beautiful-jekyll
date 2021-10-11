@@ -50,3 +50,5 @@ This new version is packed with valued added features that span from traditional
 * Backup Job Template
 * Multi-host Backup Support
 * Application Item-level Recovery from web GUI
+
+#### Backup Job Templates
