@@ -9,7 +9,7 @@ metadescription: Backup your virtual machines with Vembu BDR Suite v5.0 and lear
 ---
 Vembu BDR Suite v5.0 is a complete Backup and disaster recovery solution tailored to protect workloads across Virtual, Physical, on-premises, Cloud services, and SaaS applications.
 
-After a long hiatus since version 4, Vembu finally released Vembu BDR Suite v5.0, a major release which embeds many interesting features and will bring a lot of value to your infrastructure with solid virtual machines backup solution. The focus has been put on covering on-premise and cloud environments as more and more customers are moving to a hybrid cloud approach.
+After a hiatus since version 4, Vembu finally released Vembu BDR Suite v5.0, a major release which embeds many interesting features and will bring a lot of value to your infrastructure with solid virtual machines backup solution. The focus has been put on covering on-premise and cloud environments as more and more customers are moving to a hybrid cloud approach.
 
 [![](/img/vembu5-1.png)](https://www.vembu.com/vembu-bdr-suite-download/)
 
