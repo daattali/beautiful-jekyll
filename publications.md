@@ -8,6 +8,19 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="150" style="text-align:center">
+            <img src="" width="250">
+        </td>
+        <td>RB2: Robotic Manipulation Benchmarking with a Twist<br>
+            <div class="pubauthor">Sudeep Dasari, Jianren Wang, Joyce Hong, Shikhar Bahl, Yixin Lin, Austin S Wang, Abitha Thankaraj, Karanbir Singh Chahal, Berk Calli, Saurabh Gupta, David Held, Lerrel Pinto, Deepak Pathak, Vikash Kumar, Abhinav Gupta<br>
+            </div>
+            <div class="pubjournal">NeurIPS 2021 Datasets and Benchmarks Track, 2021</div>
+            <div id="div2021-3dV" class="pubInfo"></div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="150" style="text-align:center">
             <img src="../pics/3DV2021c.jpeg" width="250">
         </td>
         <td>Semi-supervised 3D Object Detection via Temporal Graph Neural Networks<br>
