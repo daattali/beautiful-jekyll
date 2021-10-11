@@ -32,3 +32,23 @@ These five services include:
 * Cloud management: Managing (cost and performance) across multi-cloud.
 * Security and networking.
 * Anywhere workspace and edge-native apps.
+
+### VMware Sovereign Cloud
+
+Sovereign cloud refers to data legislation and how one can ensure it is secure for a government entity to store sensitive data in it. Such customers may include country governments, European Union, United Kingdom... Monaco recently announced their own [Monegasque sovereign cloud](https://extendedmonaco.com/en/project/monaco-cloud-the-monegasque-sovereign-cloud-set-for-launch-in-2021/).
+
+VMware Sovereign cloud will be a label that cloud providers can acquire in partnership with VMware via a checklist of best practices to become "VMware Cloud Verified".
+
+### VMware Cloud on AWS Outpost
+
+It is now possible to get the VMware Cloud on AWS offering as AWS Outpost to get the workload closer to home in an on-premise or co-located SDDC for instance. AWS ships the rack, configures it, VMware double checks everything and off you go to leverage it like you would any other VMC on AWS service (Because yes, it is a **service**).
+
+![](/img/vmworld2021-3.png)
+
+### Enhancements to DRaaS
+
+DRaaS was announced during VMworld 2020 to showcase a more cost-effective approach to cloud oriented DR. VMworld 2021 announced also included enhancements to DRaaS with:
+
+* **30-minutes RPO**: A tighter RPO ensure less data loss in case of recovery and this granularity will also serve in cases of ransomware attacks recovery.
+* **Accelerated Ransomware recovery with File-level recovery**: You can restore files from various snapshots at different point in time into a restore point at another time to shorten the time to recover a virtual machine after a ransomware attack.
+* **Integrated and simple data protection for VMware Cloud on AWS**: VMC on AWS will now be able to leverage data protection in a unified DR, ransomware, and foundational backup-restore solution.
