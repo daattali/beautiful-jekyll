@@ -38,8 +38,7 @@
 }
 
 .member-col {
-  height: auto;
-  margin-bottom: 100px;
+  height: 350px;
 }
 
 .member-col img {
@@ -49,7 +48,6 @@
   max-width: 100%;
   max-height: 250px;
   min-height: 250px;
-  /* min-width: 167px; */
   height: auto;
   width: auto;
 }
