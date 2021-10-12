@@ -38,6 +38,7 @@ navbar-links:
     - Partner info: "capstone/partner_info"
     - Proposals: "capstone/proposal"
     - Timeline: "capstone/timeline"
+    - Legal: "capstone/guide-to-mutual-nda-ip"
     - Past projects: "capstone/past_projects"
   Resources: "resources"
   Official website: "http://masterdatascience.ubc.ca/"
