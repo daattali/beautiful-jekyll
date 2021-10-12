@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Confidential projects
+title: Confidentiality and Intellectual Proprty
 subtitle: Guide to mutual nondisclosure agreement and IP agreement for confidential projects
 ---
 
