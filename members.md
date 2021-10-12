@@ -54,21 +54,21 @@ members:
           - name: Tanay Sharma (MSCV)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: 
-          - name: Sarthak Shetty
+          - name: Sarthak Shetty (MSME)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: 
           - name: Sashank Tirumala (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: 
-          - name: Carl Qi (MSR)
+          - name: Carl Qi (MSML)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
+          - name: Fan Yang (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: 
           - name: Haolun (Harry) Zhang (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: 
-          - name: Himangi Mittal (MSCV)
-            photo_url: /img/members/himangi.jpeg
-            web_url: https://www.ri.cmu.edu/ri-people/himangi-mittal/
           - name: Gaurav Pathak (MSR)
             photo_url: /img/members/Gaurav.jpg
             web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
@@ -82,9 +82,6 @@ members:
       - name: Undergraduate Students
         full: true
         list:
-          - name: Aditya Kannan
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
-            web_url: 
           - name: Edward Li
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: 
@@ -96,6 +93,8 @@ members:
       - name: Master's students
         full: False
         list:
+          - name: Himangi Mittal (MSCV)
+            web_url: https://www.ri.cmu.edu/ri-people/himangi-mittal/
           - name: Jianren Wang (MSR)
             web_url: https://jianrenw.github.io/
           - name: Sujay Bajrachaya (MSR)
