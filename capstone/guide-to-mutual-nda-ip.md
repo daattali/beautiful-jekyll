@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Confidentiality and Intellectual Proprty
-subtitle: Guide to mutual nondisclosure agreement and IP agreement for confidential projects
+title: Legal
+subtitle: Guide to mutual nondisclosure agreement and IP agreement for confidential capstone projects
 ---
 
 
