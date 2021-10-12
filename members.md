@@ -12,6 +12,12 @@ members:
             web_url: https://davheld.github.io
   - name: Current members
     list:
+      - name: Post-Docs
+        full: true
+        list:
+          - name: Daniel Seita
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg 
+            web_url: 
       - name: PhD students
         full: true
         list:
@@ -33,56 +39,55 @@ members:
           - name: Ben Eisner
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/07/Eisner_Benjamin_2020.png
             web_url: http://beisner.me/
+          - name: Yufei Wang<br>(co-advised with Zachary Erickson)
+            photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
+            web_url: https://yufeiwang63.github.io/
       - name: Masters students
         full: true
         list:
+          - name: Mansi Agrawal (MSR)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
+          - name: Xiaochen Han (MSCV)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
+          - name: Tanay Sharma (MSCV)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
+          - name: Sarthak Shetty
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
+          - name: Sashank Tirumala (MSR)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
+          - name: Carl Qi (MSR)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
+          - name: Haolun (Harry) Zhang (MSR)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
           - name: Himangi Mittal (MSCV)
             photo_url: /img/members/himangi.jpeg
             web_url: https://www.ri.cmu.edu/ri-people/himangi-mittal/
-          - name: Jianren Wang (MSR)
-            photo_url: /img/members/jianren.jpeg
-            web_url: https://jianrenw.github.io/
-          - name: Sujay Bajrachaya (MSR)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/08/bajracharya_sujay_2019_2.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/sujay-bajracharya/
-          - name: Qiao Gu (MSR)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/08/gu_qiao_2019_1.jpg
-            web_url: https://georgegu1997.github.io/
-          - name: Gautham Narayan Narasimhan (MS MechE)
-            photo_url: /img/members/gautham.jpeg
-            web_url: https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/
-          - name: Harshit Sikchi (MSCS)
-            photo_url: /img/members/harshit.jpeg
-            web_url: https://hari-sikchi.github.io/
-          - name: Yufei Wang (MSCS)
-            photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
-            web_url: https://yufeiwang63.github.io/
           - name: Gaurav Pathak (MSR)
             photo_url: /img/members/Gaurav.jpg
             web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
-          - name: Ji Liu (MSCV)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/07/liu_ji_2019_2.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/ji-liu/
-          - name: Arpit Jangid (MSCV)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/07/jangid_arpit_2019_2.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/arpit-jangid/
-          - name: Zhenli Zhang (MSCV)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/07/zhang_zhenli_2019_1.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/zhenli-zhang/
           - name: Zixuan Huang (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/08/huang_zixuan_2020.jpg
             web_url: https://www.ri.cmu.edu/ri-people/zixuan-huang/
           - name: Chuer Pan (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/08/pan_chu-er_2020.jpg
             web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
-          - name: Yi Gu (MRSD)
-            photo_url: /img/members/gu_yi_2019.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/yi-gu/
+          
       - name: Undergraduate Students
         full: true
         list:
-          - name: Rashmi Anil
-            photo_url: /img/members/ranil.png
+          - name: Aditya Kannan
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
+          - name: Edward Li
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: 
       #- name: Visiting Students
       #  full: false
        # list:
@@ -91,6 +96,24 @@ members:
       - name: Master's students
         full: False
         list:
+          - name: Jianren Wang (MSR)
+            web_url: https://jianrenw.github.io/
+          - name: Sujay Bajrachaya (MSR)
+            web_url: https://www.ri.cmu.edu/ri-people/sujay-bajracharya/
+          - name: Qiao Gu (MSR)
+            web_url: https://georgegu1997.github.io/
+          - name: Gautham Narayan Narasimhan (MS MechE)
+            web_url: https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/
+          - name: Harshit Sikchi (MSCS)
+            web_url: https://hari-sikchi.github.io/
+          - name: Ji Liu (MSCV)
+            web_url: https://www.ri.cmu.edu/ri-people/ji-liu/
+          - name: Arpit Jangid (MSCV)
+            web_url: https://www.ri.cmu.edu/ri-people/arpit-jangid/
+          - name: Zhenli Zhang (MSCV)
+            web_url: https://www.ri.cmu.edu/ri-people/zhenli-zhang/
+          - name: Yi Gu (MRSD)
+            web_url: https://www.ri.cmu.edu/ri-people/yi-gu/
           - name: Jianing (Aurora) Qian (MSR) -> U Penn PhD
             web_url: https://www.ri.cmu.edu/ri-people/jianing-qian/
           - name: Junyu (Jenny) Nan (MSR) -> CMU PhD
@@ -102,11 +125,13 @@ members:
       - name: Undergraduate students
         full: False
         list:
+          - name: Rashmi Anil
           - name: Jake Olkin
           - name: Patrick Liu
       - name: Visiting students
         full: False
         list:
+          - name: Khush Agrawal (RISS)
           - name: Pengsheng Guo 
           - name: Wen-Hsuan Chu
           - name: Akshay Dharmavaram
@@ -135,9 +160,9 @@ members:
       {% if group.full %}
       <div class="row member-row">
         {% for member in group.list %}
-          <div class="col-xl-2 col-lg-2 col-md-3 text-center col-sm-6 col-xs-6 member-col">
+          <div class="col-xl-3 col-lg-3 col-md-3 text-center col-sm-6 col-xs-6 member-col">
             <a target="_blank" href="{{ member.web_url }}">
-              <img class="img-responsive" src="{{ member.photo_url }}" alt="Dave Held">
+              <img class="img-responsive" src="{{ member.photo_url }}" alt="{{member.name}}">
             </a>
             <a target="_blank" href="{{ member.web_url }}">
               {{ member.name }}
