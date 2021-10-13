@@ -24,6 +24,7 @@ use-site-title: true
 ## Top links
 
 - [Coaching session homework and schedule](/schedule)
+- [Teams channel for coaching sessions](https://teams.microsoft.com/l/channel/19%3a732a7f9358af4a37affd3f56a592fbee%40thread.tacv2/General?groupId=1820c33d-ed0b-4685-9f38-c1b24c841dad&tenantId=f2d61132-f6d6-42d2-b97f-caa2960fb0f7)
 - [Competition schedule](/competitions)
 - [About coaching sessions](/sessions)
 - [Accessing the PTSA portal and Microsoft Teams](/portal)
