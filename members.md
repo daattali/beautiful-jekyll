@@ -95,7 +95,7 @@ members:
         list:
           - name: Edward Ahn (MSR) -> AI / ML Engineer at Apple
             web_url: https://www.ri.cmu.edu/ri-people/edward-ahn/
-          - name: Sujay Bajrachaya (MSR)
+          - name: Sujay Bajrachaya (MSR) -> Software Engineer at Epic Systems
             web_url: https://sujaybajracharya.me/
           - name: Qiao Gu (MSR) -> U Toronto PhD
             web_url: https://georgegu1997.github.io/
@@ -115,8 +115,6 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/jianing-qian/
           - name: Harshit Sikchi (MSCS) -> UT Austin PhD
             web_url: https://hari-sikchi.github.io/
-          - name: Jianren Wang (MSR)
-            web_url: https://jianrenw.github.io/
           - name: Yufei Wang (MSCS) -> CMU PhD
             web_url: https://yufeiwang63.github.io/
           - name: Mengyun (Olivia) Xu (MSCS) -> Amazon Robotics
@@ -133,6 +131,7 @@ members:
         full: False
         list:
           - name: Khush Agrawal (RISS)
+          - name: Jianren Wang
           - name: Pengsheng Guo
           - name: Wen-Hsuan Chu
           - name: Akshay Dharmavaram
