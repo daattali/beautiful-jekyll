@@ -4,6 +4,8 @@ title: Course
 subtitle: ''
 
 ---
+#### HEY mama! Do you feel often overwhelemed at home and would like to simplify all the things, but don't know how to start? If so, you've come to the right place! The Simplify Your Home Life: a course for busy moms is a self-paced course that will help you alng your journey to simplifying.
+
 ![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
 
 ## Course Description
@@ -30,7 +32,6 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 #### Pricing
 
 $59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX).
-
 
 **Please note:** _I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
