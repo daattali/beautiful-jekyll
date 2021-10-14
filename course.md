@@ -8,6 +8,8 @@ subtitle: ''
 
 ![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
 
+#### _Ready to start simplifying?  Click_ [_HERE_](https://buy.stripe.com/cN202a5Ou0206MUeUX) _to get started!_
+
 ## Course Description
 
 _The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits.
