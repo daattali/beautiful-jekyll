@@ -15,7 +15,7 @@ These are ANSI coloring characters. Windows 10 supports ANSI terminal control th
 
 #### Fix: Change default with a registry key
 
-The fix is as easy as adding a registry key to set the default behaviour of the SetConsoleMode function. 
+The fix is as easy as adding a registry key to set the default behaviour of the SetConsoleMode function.
 
     [HKEY_CURRENT_USER\Console]
     "VirtualTerminalLevel"=dword:00000001
@@ -24,6 +24,6 @@ Open Registry editor and create the key if it doesn't already exist.
 
 ![](/img/2021-10-14_10h14_42.png)
 
-You don't to restart your machine, just launch as new powershell window for instance and you should now get colors instead of ANSI coloring characters.
+You don't need to restart your machine, just launch a new powershell window for instance and you should now get colors instead of ANSI coloring characters.
 
 > ![](/img/2021-10-14_10h14_23.png)
