@@ -17,9 +17,9 @@ Como a equipe competitiva do RAS, nosso objetivo é levar o IEEE em campeonatos 
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="leonardo" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="fernando" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/Fernando_Schettini.jpg' | relative_url }}" width="100" alt="fernando" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="gabriel" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/Gustavo_Pacheco.jpg' | relative_url }}" width="100" alt="gabriel" class="img-fluid rounded-circle" /></center></th>
           </tr>
         </thead>
         <tbody>
@@ -33,7 +33,7 @@ Como a equipe competitiva do RAS, nosso objetivo é levar o IEEE em campeonatos 
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Voluntário desde 2020 <p/> Líder do projeto</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2020<p/> Sub-Líder do projeto</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
           </tr>
