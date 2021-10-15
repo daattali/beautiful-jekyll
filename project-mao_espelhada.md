@@ -2,7 +2,7 @@
 layout: page
 title: Mão Espelhada 
 subtitle: Prótese para membros superiores
-cover-img: /assets/img/mao_espelhada/mirrored hand.png
+cover-img: /assets/img/mao_espelhada/Mirrored hand.png
 ---
 
 # O que é o projeto?
