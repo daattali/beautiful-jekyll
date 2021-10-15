@@ -24,6 +24,8 @@ O cad foi desenvolvido utilizando o software Onshape que é um software online q
 <center><img width="420" src="{{ '/assets/img/mao_espelhada/cad.png' | relative_url }}" alt="interface"/>
 <br>Modelagem dos dedos feita no Onshape</center>
 
+Em seguida foi modelada a palma e integrou aos dedos. 
+
 <center><img width="420" src="{{ '/assets/img/mao_espelhada/cadpalma.png' | relative_url }}" alt="interface"/>
 <br>Modelagem da mão completa feita no Onshape</center>
 
@@ -52,7 +54,7 @@ O cad foi desenvolvido utilizando o software Onshape que é um software online q
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Voluntário desde 2021 <p/> Líder do projeto</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2021</center></small></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2021 <p/> Sub-Líder do projeto</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>Voluntária desde 2018</center></small></td>
           </tr>
