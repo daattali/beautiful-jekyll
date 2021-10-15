@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mão Espelhada 
-subtitle: Prótese para membros superiores
+#title: Mão Espelhada 
+#subtitle: Prótese para membros superiores
 cover-img: /assets/img/mao_espelhada/Mirrored hand.png
 ---
 
@@ -21,6 +21,11 @@ Para desenvolver o programa, foi utilizada a linguagem Arduino, a fim de program
 
 O cad foi desenvolvido utilizando o software Onshape que é um software online que facilita sua utilização entre os participantes do projeto. Foi desenvolvido cada dedo e cada falange separadamente para que o desing fosse o mais semelhante possível com uma mão humana.
 
+<center><img width="420" src="{{ '/assets/img/mao_espelhada/cad.png' | relative_url }}" alt="interface"/>
+<br>Modelagem dos dedos feita no Onshape</center>
+
+<center><img width="420" src="{{ '/assets/img/mao_espelhada/cadpalma.png' | relative_url }}" alt="interface"/>
+<br>Modelagem da mão completa feita no Onshape</center>
 
 ### Equipe de Desenvolvimento
 <div class="row">
