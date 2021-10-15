@@ -30,9 +30,9 @@ No universo das competições de robótica, estratégias diferentes e criativas 
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
             <td width="33%"><center>Heitor Rivera</center></td>
             <td></td>
-            <td width="33%"><center>Gustavo Pacheco</center></td>
-            <td></td>
             <td width="33%"><center>Fernando Schettini</center></td>
+            <td></td>
+            <td width="33%"><center>Gustavo Pacheco</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Voluntário desde 2020 <p/> Líder do projeto</center></small></td>
