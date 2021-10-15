@@ -544,7 +544,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
 <pre>@article{Weng2020_AB3DMOT, 
 author = {Weng, Xinshuo and Wang, Jianren and Held, David and Kitani, Kris}, 
 journal = {IROS}, 
-title = {{3D Multi-Object Tracking: A Baseline and New Evaluation Metrics}}, 
+title = {3D Multi-Object Tracking: A Baseline and New Evaluation Metrics}, 
 year = {2020} 
 }</pre>
                     </blockquote>
