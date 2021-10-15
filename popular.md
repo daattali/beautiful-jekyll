@@ -7,17 +7,15 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
-* [FREE morning routine for moms printable](https://mailchi.mp/b5550b9a5b6c/kxmxwhppym)
-* [Four Ideas to Go From Living Room Explosions to Clear Floors](https://www.simplehomemom.com/four-ideas-to-go-from-living-room-explosions-to-clear-floors/)
-* [How to Create Your Own Self Care Routines](https://www.simplehomemom.com/how-to-create-your-own-self-care-routines/)
+* [Four Ideas to Go from Kitchen Explosions to Clear Counters](https://www.simplehomemom.com/four-ideas-to-go-from-kitchen-explosions-to-clear-counters/)
 
 ## Resources
 
+* [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
+* [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
-* [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
-* [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
 ## Podcasts
 
