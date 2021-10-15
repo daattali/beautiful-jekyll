@@ -10,6 +10,19 @@ subtitle:
         <td class="pubimg" width="250" height="150" style="text-align:center">
             <img src="" width="250">
         </td>
+        <td>Self-Supervised Point Cloud Completion via Inpainting<br>
+            <div class="pubauthor">Himangi Mittal, Brian Okorn, Arpit Jangid, David Held<br>
+            </div>
+            <div class="pubjournal">British Machine Vision Conference (BMVC), 2021 - <award>Oral presentation</award> (Selection rate 3.3%)</div>
+            <div id="div2021-BMVC" class="pubInfo"></div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="150" style="text-align:center">
+            <img src="" width="250">
+        </td>
         <td><a href="https://openreview.net/forum?id=e82_BlJL43M">RB2: Robotic Manipulation Benchmarking with a Twist</a><br>
             <div class="pubauthor">Sudeep Dasari, Jianren Wang, Joyce Hong, Shikhar Bahl, Yixin Lin, Austin S Wang, Abitha Thankaraj, Karanbir Singh Chahal, Berk Calli, Saurabh Gupta, David Held, Lerrel Pinto, Deepak Pathak, Vikash Kumar, Abhinav Gupta<br>
             </div>
@@ -403,7 +416,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
                     Most real-world 3D sensors such as LiDARs perform fixed scans of the entire environment, while being decoupled from the recognition system that processes the sensor data. In this work, we propose a method for 3D object recognition using light curtains, a resource-efficient controllable sensor that measures depth at user-specified locations in the environment. Crucially, we propose using prediction uncertainty of a deep learning based 3D point cloud detector to guide active perception. Given a neural network’s uncertainty, we derive an optimization objective to place light curtains using the principle of maximizing information gain. Then, we develop a novel and efficient optimization algorithm to maximize this objective by encoding the physical constraints of the device into a constraint graph and optimizing with dynamic programming. We show how a 3D detector can be trained to detect objects in a scene by sequentially placing uncertainty-guided light curtains to successively improve detection accuracy.
                 </blockquote>
             </div>
-            <div class="pubjournal">European Conference on Computer Vision (ECCV), 2020 - <award>Spotlight</award> (Selection rate 5.3%)
+            <div class="pubjournal">European Conference on Computer Vision (ECCV), 2020 - <award>Spotlight presentation</award> (Selection rate 5.3%)
             <div style="font-size:small">
                 <a href="http://siddancha.github.io/projects/active-perception-light-curtains/">[Project Page]</a>
                 <a href="https://github.com/siddancha/active-perception-light-curtains">[Code]</a>
@@ -580,7 +593,7 @@ year = {2020}
                      When interacting with highly dynamic environments, scene flow allows autonomous systems to reason about the non-rigid motion of multiple independent objects. This is of particular interest in the field of autonomous driving, in which many cars, people, bicycles, and other objects need to be accurately tracked. Current state-of-the-art methods require annotated scene flow data from autonomous driving scenes to train scene flow networks with supervised learning. As an alternative, we present a method of training scene flow that uses two self-supervised losses, based on nearest neighbors and cycle consistency. These self-supervised losses allow us to train our method on large unlabeled autonomous driving datasets; the resulting method matches current state-of-the-art supervised performance using no real world annotations and exceeds state-of-the-art performance when combining our self-supervised approach with supervised learning on a smaller labeled dataset.
                 </blockquote>
             </div>
-            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2020 - <award>Oral</award> (Selection rate 5.7%)
+            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2020 - <award>Oral presentation</award> (Selection rate 5.7%)
             <div style="font-size:small">
                 <a href="https://just-go-with-the-flow.github.io/">[Project Page]</a>
                 <a href="https://github.com/HimangiM/Just-Go-with-the-Flow-Self-Supervised-Scene-Flow-Estimation">[Code]</a>
@@ -606,7 +619,7 @@ year = {2020}
             <div class="pubauthor">
                 Peiyun Hu, Jason Ziglar, David Held, Deva Ramanan<br>
             </div>
-            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2020 - <award>Oral</award> (Selection rate 5.7%)</div>
+            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2020 - <award>Oral presentation</award> (Selection rate 5.7%)</div>
             <!--div style="font-size:small">
                 <a href="GOTURN/GOTURN.html">[Project Page]</a>
                 <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
