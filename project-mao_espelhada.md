@@ -5,8 +5,6 @@ title: ""
 cover-img: /assets/img/mao_espelhada/mirrored_hand.png
 ---
 
-# O que é o projeto?
-
 O projeto consiste na criação de uma prótese robótica de um membro superior, na qual o movimento dos dedos será inicialmente controlado por pela outra mão, por isso o nome **Mão-ESPELHADA**. O controle será feito utilizando uma câmera através de visão computacional.
 
 A mão robótica inicialmente deverá repetir o mesmo movimento feito pela mão, porém isto nem sempre será muito útil, de forma que esse projeto terá bastantes aperfeiçoamentos futuros.
