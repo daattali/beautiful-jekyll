@@ -81,7 +81,7 @@ share-img: /assets/img/inprog.jpg
       </a>
     </div>
     <div class="project-entry">
-      O projeto consiste na construção de uma prótese robótica de um membro superior, no qual o movimento dos dedos será controlado pelo movimento da outra mão através de uma câmera, tem o objetivo de auxiliar pessoas que perderam um membro superior. 
+      O projeto consiste na construção de uma prótese robótica de um membro superior, no qual o movimento dos dedos será controlado pelo movimento da outra mão através de uma câmera, tendo o objetivo de auxiliar pessoas que perderam um membro superior. 
     </div> 
 </article>
 </div>
