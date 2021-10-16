@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: ""
 subtitle: 
 cover-img: /assets/img/rasweekends/rasweekend.png
 thumbnail-img: /assets/img/rasweekends/trilha.png
@@ -127,7 +127,6 @@ Está com dúvidas? Envie um email para
 
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-  Arduino
   <th><center><img src="{{ 'assets/img/rasweekends/wks/cad.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
   <br>
     <div class="project-entry">
@@ -135,7 +134,6 @@ Está com dúvidas? Envie um email para
 
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-  Arduino
   <th><center><img src="{{ 'assets/img/rasweekends/wks/open.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
   <br>
     <div class="project-entry">
@@ -143,14 +141,12 @@ Está com dúvidas? Envie um email para
 
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-  Arduino
   <th><center><img src="{{ 'assets/img/rasweekends/wks/git.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
   <br>
     <div class="project-entry">
 
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-  Arduino
   <th><center><img src="{{ 'assets/img/rasweekends/wks/eletro.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
   <br>
     <div class="project-entry">
