@@ -76,7 +76,7 @@ share-img: /assets/img/inprog.jpg
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto-mao_espelhada/">
+      <a href="https://ieeecimatec.github.io/project-mao_espelhada/">
         <img src="{{ 'assets/img/mao_espelhada/logo_mao_espelhada.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
