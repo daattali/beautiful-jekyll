@@ -29,7 +29,7 @@ share-img: /assets/img/inprog.jpg
       </a>
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
+     Bayieeemax é um robô responsável pela triagem médica dos pacientes nas alas hospitalares, aumentando a segurança não só dos pacientes, mas também dos profissionais de saúde, coletando dados por meio de sensores, permitindo um monitoramento remoto do paciente, assim diminuindo os riscos de transmissão de doenças infectocontagiosas. 
     </div> 
 </article>
 </div>
@@ -60,28 +60,28 @@ share-img: /assets/img/inprog.jpg
 </article>
 </div>
 
-<!-- Projeto 3 -->
+<!-- Projeto Mão-Espelhada -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
-    <a href="https://ieeecimatec.github.io/projeto/">
-      <h2 class="project-title">Projeto 3</h2>      
+    <a href="https://ieeecimatec.github.io/project-mao_espelhada/">
+      <h2 class="project-title">Projeto Mão-Espelhada</h2>      
     </a>
     <p class="project-meta project-meta-left">
-        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
-        Iniciado em mes de ano
+        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em junho de 2021
     </p>    
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-mao_espelhada/">
+        <img src="{{ 'assets/img/mao_espelhada/logo_mao_espelhada.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-mao_espelhada/">
+        <img src="{{ 'assets/img/mao_espelhada/logo_mao_espelhada.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
+      O projeto consiste na construção de uma prótese robótica de um membro superior, no qual o movimento dos dedos será controlado pelo movimento da outra mão através de uma câmera, tendo o objetivo de auxiliar pessoas que perderam um membro superior. 
     </div> 
 </article>
 </div>
