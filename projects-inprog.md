@@ -86,28 +86,30 @@ share-img: /assets/img/inprog.jpg
 </article>
 </div>
 
-<!-- Projeto 4 -->
+<!-- Projeto: CompetIEEEção -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-    <a href="https://ieeecimatec.github.io/project/">
-      <h2 class="project-title">Projeto 4</h2>      
+    <a href="https://ieeecimatec.github.io/project-competieeecao/">
+      <h2 class="project-title">Projeto: CompetIEEEção</h2>      
     </a>
     <p class="project-meta project-meta-right">
-        Finalizado em mes de ano
-        <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em julho de 2021
+        <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/ras_logo.png | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/project/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-competieeecao/">
+        <img src="{{ 'assets\img\competieeecao\Logo_comp.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/project/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-competieeecao/"">
+        <img src="{{ 'assets\img\competieeecao\Logo_comp.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
+      O projeto competIEEEção é uma iniciativa dentro do RAS e visa introduzir o IEEE – CIMATEC ao mundo das competições de robótica.
+      Hoje o foco do projeto é participar de um campeonato de futebol da RobôCup, a CBR, na categoria very small soccer. Construiremos nossos próprios robôs jogadores, controlados por visão computacional e criaremos um time para jogar contra outros nos torneios!    
 </div> 
 </article>
 </div>
+
