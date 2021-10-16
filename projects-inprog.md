@@ -115,3 +115,30 @@ share-img: /assets/img/inprog.jpg
 </article>
 </div>
 
+
+<!-- Projeto Trackieeers -->
+<div data-aos="fade-right" data-aos-offset="150"> 
+<article class="project-preview-right">
+    <a href="https://ieeecimatec.github.io/project-projeto_Trackieeers/">
+      <h2 class="project-title">Projeto Trackieeers</h2>      
+    </a>
+    <p class="project-meta project-meta-right">
+        Iniciado em julho de 2021
+        <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+    </p>
+    <div class="project-image project-image-small">
+      <a href="https://ieeecimatec.github.io/project-projeto_Trackieeers/">
+        <img src="{{ 'assets/img/logo-trackieeers.jpg' | relative_url }}" alt="trackieeers" class="img-blur">
+      </a>
+    </div>
+    <div class="project-image project-image-short">
+      <a href="https://ieeecimatec.github.io/project-projeto_Trackieeers/">
+        <img src="{{ 'assets/img/logo-trackieeers.jpg' | relative_url }}" alt="logo trackieeers" class="img-blur">
+      </a>
+    </div>
+    <div class="project-entry">
+     Elaborado pela PES, Trackieeers é um projeto que envolve a construção de um Tracker, seguidor solar, monitorado por um aplicativo.  
+    </div> 
+</article>
+</div>
+
