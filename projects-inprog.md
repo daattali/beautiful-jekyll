@@ -34,31 +34,33 @@ share-img: /assets/img/inprog.jpg
 </article>
 </div>
 
-<!-- Projeto Visão -->
+
+<!-- Projeto: CompetIEEEção -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-    <a href="https://ieeecimatec.github.io/project-projeto_visao/">
-      <h2 class="project-title">Projeto Visão</h2>      
+    <a href="https://ieeecimatec.github.io/project-competieeecao/">
+      <h2 class="project-title">CompetIEEEção</h2>      
     </a>
     <p class="project-meta project-meta-right">
         Iniciado em julho de 2021
-        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/project-projeto_visao/">
-        <img src="{{ 'assets/img/visao/olhoVisao.png' | relative_url }}" alt="visao" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-competieeecao/">
+        <img src="{{ 'assets/img/competieeecao/Logo_comp.jpg' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/project-projeto_visao/">
-        <img src="{{ 'assets/img/visao/olhoVisao.png' | relative_url }}" alt="visao" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-competieeecao/">
+        <img src="{{ 'assets/img/competieeecao/Logo_comp.jpg' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-entry">
-     Projeto do Embs que utiliza a visão computacional para cadastrar e mostrar dados de pacientes.  
-    </div> 
+      O projeto visa introduzir o IEEE CIMATEC ao mundo das competições de robótica, tendo o foco de participar de um campeonato de futebol da RobôCup, a CBR, na categoria Very Small Soccer. Construiremos nossos próprios robôs jogadores, controlados por visão computacional e criaremos um time para jogar contra outros nos torneios!
+</div> 
 </article>
 </div>
+
 
 <!-- Projeto Mão-Espelhada -->
 <div data-aos="fade-left" data-aos-offset="150"> 
@@ -86,28 +88,30 @@ share-img: /assets/img/inprog.jpg
 </article>
 </div>
 
-<!-- Projeto: CompetIEEEção -->
+
+<!-- Projeto Visão -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-    <a href="https://ieeecimatec.github.io/project-competieeecao/">
-      <h2 class="project-title">CompetIEEEção</h2>      
+    <a href="https://ieeecimatec.github.io/project-projeto_visao/">
+      <h2 class="project-title">Projeto Visão</h2>      
     </a>
     <p class="project-meta project-meta-right">
         Iniciado em julho de 2021
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/project-competieeecao/">
-        <img src="{{ 'assets/img/competieeecao/Logo_comp.jpg' | relative_url }}" alt="project thumbnail" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-projeto_visao/">
+        <img src="{{ 'assets/img/visao/olhoVisao.png' | relative_url }}" alt="visao" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/project-competieeecao/">
-        <img src="{{ 'assets/img/competieeecao/Logo_comp.jpg' | relative_url }}" alt="project thumbnail" class="img-blur">
+      <a href="https://ieeecimatec.github.io/project-projeto_visao/">
+        <img src="{{ 'assets/img/visao/olhoVisao.png' | relative_url }}" alt="visao" class="img-blur">
       </a>
     </div>
     <div class="project-entry">
-      O projeto visa introduzir o IEEE CIMATEC ao mundo das competições de robótica, tendo o foco de participar de um campeonato de futebol da RobôCup, a CBR, na categoria Very Small Soccer. Construiremos nossos próprios robôs jogadores, controlados por visão computacional e criaremos um time para jogar contra outros nos torneios!
-</div> 
+     Projeto do Embs que utiliza a visão computacional para cadastrar e mostrar dados de pacientes.  
+    </div> 
 </article>
 </div>
+
