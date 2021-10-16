@@ -29,7 +29,7 @@ share-img: /assets/img/inprog.jpg
       </a>
     </div>
     <div class="project-entry">
-     Bayieeemax, um robô responsável pela triagem médica dos pacientes nas alas hospitalares, aumentando a segurança, não só dos pacientes, mas também dos profissionais de saúde, coletando dados por meio de sensores, e permitindo um monitoramento remoto do paciente, assim, diminuindo os riscos de transmissão de doenças infectocontagiosas. 
+     Bayieeemax é um robô responsável pela triagem médica dos pacientes nas alas hospitalares, aumentando a segurança não só dos pacientes, mas também dos profissionais de saúde, coletando dados por meio de sensores, permitindo um monitoramento remoto do paciente, assim diminuindo os riscos de transmissão de doenças infectocontagiosas. 
     </div> 
 </article>
 </div>
