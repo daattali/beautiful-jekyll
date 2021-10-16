@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: ""
 #subtitle: Prótese para membros superiores
 cover-img: /assets/img/mao_espelhada/mirrored_hand.png
 ---
