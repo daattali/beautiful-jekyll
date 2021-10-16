@@ -63,7 +63,7 @@ share-img: /assets/img/inprog.jpg
 <!-- Projeto Mão-Espelhada -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
-    <a href="https://ieeecimatec.github.io/projeto-mao_espelhada/">
+    <a href="https://ieeecimatec.github.io/project-mao_espelhada/">
       <h2 class="project-title">Projeto Mão-Espelhada</h2>      
     </a>
     <p class="project-meta project-meta-left">
@@ -71,7 +71,7 @@ share-img: /assets/img/inprog.jpg
         Iniciado em junho de 2021
     </p>    
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto-mao_espelhada/">
+      <a href="https://ieeecimatec.github.io/project-mao_espelhada/">
         <img src="{{ 'assets/img/mao_espelhada/logo_mao_espelhada.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
@@ -89,7 +89,7 @@ share-img: /assets/img/inprog.jpg
 <!-- Projeto 4 -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-    <a href="https://ieeecimatec.github.io/projeto/">
+    <a href="https://ieeecimatec.github.io/project/">
       <h2 class="project-title">Projeto 4</h2>      
     </a>
     <p class="project-meta project-meta-right">
@@ -97,12 +97,12 @@ share-img: /assets/img/inprog.jpg
         <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
