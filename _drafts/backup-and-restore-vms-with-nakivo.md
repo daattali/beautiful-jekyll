@@ -13,6 +13,16 @@ In this blog we will go through the steps to get Nakivo Backup and Replication u
 
 [![](/img/2021-10-18_11h14_34.png)](https://www.nakivo.com/resources/download/trial-download/)
 
+### Nakivo Backup and Replication v10.4
+
+Nakivo recently released version 10.4 of their Backup and replication solution. This latest release includes important improvements such as:
+
+* **Immutable Local Repository:** Feature that allows you to make recovery points in a local Backup Repository immutable for a specified period of time. Immutable backups are protected from deletion, modification, and encryption by ransomware.
+* **Two-Factor Authentication:** Two-Factor Authentication for users accessing the product web interface. This update provides an additional layer of security against malicious access to backup data by requiring a verification code in addition to the username and password when logging in.
+* **File Recovery for Nutanix AHV VMs:** NAKIVO Backup & Replication now supports file recovery for Nutanix AHV VMs.
+
+The newer version 10.4.1 also includes support for vSphere 7.0.3. 
+
 ### Deploy Nakivo appliance
 
 First, let's start by downloading the appliance that we will deploy in our vSphere environment. Before deploying, consider reading the [Ransomware best practices ](https://www.nakivo.com/ransomware-protection/white-paper/best-practices-for-ransomware-protection-and-recovery/)to protect your backup infrastructure, which may become your last line of defense.
@@ -63,7 +73,7 @@ Now that the appliance is deployed in our environment, open a web browser to:
 
 ![](/img/2021-09-27_13h18_01.png)
 
-*  By default you get a local repository on the second virtual disk. We'll add an NFS repository here for the example. click **Add Backup Repository**.
+* By default you get a local repository on the second virtual disk. We'll add an NFS repository here for the example. click **Add Backup Repository**.
 
 ![](/img/2021-09-27_13h19_10.png)
 
