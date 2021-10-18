@@ -7,6 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
+* [How to Develop Cleaning and Tidying Routines in 4 Simple Steps +FREEBIE master cleaning task list](https://www.simplehomemom.com/how-to-develop-cleaning-and-tidying-routines-in-4-simple-steps/)
 * [Four Ideas to Go from Kitchen Explosions to Clear Counters](https://www.simplehomemom.com/four-ideas-to-go-from-kitchen-explosions-to-clear-counters/)
 
 ## Resources
