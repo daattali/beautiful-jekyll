@@ -61,6 +61,5 @@ pages:
 - _posts/2021-10-11-vembu-bdr-suite-v5.0-ga-release.md
 - _posts/2021-10-14-ansi-color-handling-characters-with-tanzu-cli-on-windows.md
 - _posts/backup-and-restore-vms-with-nakivo.md
-- _posts/getting-started-with-nakivo-backup-and-replication.md
 - _posts/nakivo-backup-and-replication-for-vmware-and-more.md
 - _posts/vmc-on-aws-network-connectivity-options.md
