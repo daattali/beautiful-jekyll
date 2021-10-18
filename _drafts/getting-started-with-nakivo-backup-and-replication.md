@@ -70,3 +70,27 @@ Now that the appliance is deployed in our environment, open a web browser to:
 * Select **NFS Share** and click **Next**. As you can see there are plenty of options to choose from when it comes to repositories.
 
 ![](/img/2021-09-27_13h20_20.png)
+
+* Give the share a **name**, a **transporter** and type in the **path to the share**. In my case it is an NFS export on a test Debian VM (192.168.1.49://export/volumes/nakivo)
+
+![](/img/2021-09-27_13h27_30.png)
+
+* Once created, the shared folder includes a few Nakivo files and folders.
+
+![](/img/2021-09-27_13h29_23.png)
+
+* Anyway, the NFS share should appear in the list, you can now click **Finish**.
+
+![](/img/2021-09-27_13h29_38.png)
+
+### Create a VMware VM backup job
+
+We will now create a basic backup job based on virtual machine tags. Prior to achieving this you will need to create a tag category in vCenter and assign a VM tag specific to the VMs you wish to include in this particular job.  Note that you can achieve the same result based on folders and other VM metadata.
+
+In our example below we are using a tag category named "**Backup - daily"** that we attached to 2 VMs.
+
+* Go to **Dashboard > + Create > VMware vSphere backup job**.
+
+![](/img/2021-09-27_13h30_13.png)
+
+* Set **View** to **Policy**, Search by **VM tags** and type the **tag specific to this job**. Note that you may need to refresh your vCenter source in Nakivo if you just added it. The tagged VMs should appear on the right. 
