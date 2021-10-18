@@ -93,4 +93,14 @@ In our example below we are using a tag category named "**Backup - daily"** that
 
 ![](/img/2021-09-27_13h30_13.png)
 
-* Set **View** to **Policy**, Search by **VM tags** and type the **tag specific to this job**. Note that you may need to refresh your vCenter source in Nakivo if you just added it. The tagged VMs should appear on the right. 
+* Set **View** to **Policy**, Search by **VM tags** and type the **tag specific to this job**. Note that you may need to refresh your vCenter source in Nakivo if you just added it. The tagged VMs should appear on the right. Click **Next**.
+
+![](/img/2021-09-27_13h36_52.png)
+
+* You then get to select a **repository**. You can choose from the onboard repo or the NFS one we created earlier. Click **Next**.
+
+![](/img/2021-09-27_13h37_32.png)
+
+* In **Destination**, configure the schedule that works for you. Just try to select a backup window that won't clash with any IO intensive operations such as crons and you usually want to avoid production hours.
+
+![](/img/2021-09-27_13h38_18.png)
