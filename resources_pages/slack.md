@@ -64,6 +64,6 @@ For short term retention of messages, you can click the save icon in the top rig
 
 All UBC MDS Slack messages (including your saved items) will be deleted at the end of each year (at least, all the messages in public channels, which are the ones we can control). If you see something on Slack that you would like to save for after the MDS program, it is your responsibility to make a copy of it and save it outside Slack. Keep in mind that, after you graduate, you will be given access to the MDS course materials through github.com.
 
-#### Privacy
+#### Data residency
 
-Note the following important information from UBC about your privacy: Slack is stored on servers outside Canada. When you access this site you are transferred to these servers. UBC cannot guarantee security of your private information on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns. Please feel free to contact LT.hub@ubc.ca if you have any questions about your privacy.
+Data for our our UBC-MDS Slack is stored on servers in Canada. 
