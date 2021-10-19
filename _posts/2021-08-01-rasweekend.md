@@ -24,7 +24,7 @@ O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a c
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/wk/logo_arduino.png' | relative_url }}" width="100" alt="arduino" class="img-fluid" /></center></th>
+            <th><center><img src="{{ 'assets/img/wk/logo_arduino.png' | relative_url }}" width="100" alt="Arduino" class="img-fluid" /></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/wk/logo_opencv.png' | relative_url }}" width="100" alt="OpenCV" class="img-fluid"/></center></th>
             <th></th>
@@ -32,7 +32,7 @@ O RASWeekends é um evento promovido pela RAS CIMATEC que tem como o intuito a c
             <th></th>
             <th><center><img src="{{ 'assets/img/wk/logo_github.png' | relative_url }}" width="100" alt="GitHub" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/wk/logo_ele.jpg' | relative_url }}" width="100" alt="GitHub" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/wk/logo_ele.jpg' | relative_url }}" width="100" alt="Eletronica" class="img-fluid rounded-circle"/></center></th>
           </tr>
         </thead>
         <tbody>
@@ -121,13 +121,12 @@ Está com dúvidas? Envie um email para
 
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-  <th><center><img src="{{ 'assets/img/rasweekends/wks/arduino.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+  <th><center><img src="{{ 'assets/img/rasweekends/wks/arduino.png' | relative_url }}" width="1000" alt="Arduino" class="img" /></center></th>
   <br>
     <div class="project-entry">
 
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-  Arduino
   <th><center><img src="{{ 'assets/img/rasweekends/wks/cad.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
   <br>
     <div class="project-entry">
@@ -135,23 +134,20 @@ Está com dúvidas? Envie um email para
 
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-  Arduino
-  <th><center><img src="{{ 'assets/img/rasweekends/wks/open.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+  <th><center><img src="{{ 'assets/img/rasweekends/wks/open.png' | relative_url }}" width="1000" alt="OpenCV" class="img" /></center></th>
   <br>
     <div class="project-entry">
 
 
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-  Arduino
-  <th><center><img src="{{ 'assets/img/rasweekends/wks/git.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+  <th><center><img src="{{ 'assets/img/rasweekends/wks/git.png' | relative_url }}" width="1000" alt="Github" class="img" /></center></th>
   <br>
     <div class="project-entry">
 
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-  Arduino
-  <th><center><img src="{{ 'assets/img/rasweekends/wks/eletro.png' | relative_url }}" width="1000" alt="Onshape" class="img" /></center></th>
+  <th><center><img src="{{ 'assets/img/rasweekends/wks/eletro.png' | relative_url }}" width="1000" alt="Eletronica" class="img" /></center></th>
   <br>
     <div class="project-entry">
 

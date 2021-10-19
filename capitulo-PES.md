@@ -25,11 +25,11 @@ A [**PES** (Power and Energy Society)](http://www.ieee-pes.org/) é a Sociedade 
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="kroetz" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/guilherme_kroetz.png' | relative_url }}" width="100" alt="kroetz" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="ygor" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/ygor_vieira.jpeg' | relative_url }}" width="100" alt="ygor" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="daniel" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/daniel_araujoo.jpeg' | relative_url }}" width="100" alt="daniel" class="img-fluid rounded-circle"/></center></th>
           </tr>
         </thead>
         <tbody>
@@ -48,9 +48,9 @@ A [**PES** (Power and Energy Society)](http://www.ieee-pes.org/) é a Sociedade 
             <td style="vertical-align: top"><small><center>Vice-Presidente</center></small></td>
           </tr>
           <tr style="text-align: center" >
-            <td style="vertical-align: top"><small><center>-</center></small></td>
+            <td style="vertical-align: top"><small><center>guilherme.kroetz@fieb.org.br</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>ygorvieira02@gmail.com</center></small></td>
+            <td style="vertical-align: top"><small><center>ygorvieira@ieee.org</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>dmaraujo.arq.urb@gmail.com</center></small></td>
           </tr>
@@ -66,14 +66,14 @@ A [**PES** (Power and Energy Society)](http://www.ieee-pes.org/) é a Sociedade 
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/ruan_utah.png' | relative_url }}" width="100" alt="ruan" class="img-fluid rounded-circle"/></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" width="100" alt="saulo" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/yan_valdez.png' | relative_url }}" width="100" alt="yan" class="img-fluid rounded-circle"/></center></th>
           </tr>
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
             <td width="20%"><center>Ruan Utah</center></td>
             <td></td>
-            <td width="20%"><center>Saulo Sergio</center></td>
+            <td width="20%"><center>Yan Valdez</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Secretario</center></small></td>
@@ -83,12 +83,12 @@ A [**PES** (Power and Energy Society)](http://www.ieee-pes.org/) é a Sociedade 
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>ruanutah@ieee.org</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>saulomota2@gmail.com</center></small></td>
+            <td style="vertical-align: top"><small><center>yanvaldez@gmail.com</center></small></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>(71) 9 8148-6272</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>(71) 9 9121-7310</center></small></td>
+            <td style="vertical-align: top"><small><center>(71) 9 9142-8042</center></small></td>
           </tr>
         </tbody>
       </table>
