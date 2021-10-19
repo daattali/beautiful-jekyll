@@ -156,3 +156,5 @@ Keep in mind that you don't want to recover a VM in the same subnet as the origi
 ![](/img/2021-10-18_13h55_28.png)
 
 ### Wrap up
+
+Virtual machine protection is paramount to every single organization. Even if your workloads run in stateless modern apps, there will be some aspect of data protection that you need to ensure is set up. 
