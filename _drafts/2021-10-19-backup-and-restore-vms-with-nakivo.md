@@ -15,7 +15,7 @@ In this blog we will go through the steps to get Nakivo Backup and Replication u
 
 ### Nakivo Backup and Replication v10.4
 
-Nakivo recently released version 10.4 of their Backup and replication solution. This latest release includes important improvements such as:
+Nakivo recently released [NBR v10.4](https://helpcenter.nakivo.com/display/RN/v10.4+Release+Notes) of their Backup and replication solution. This latest release includes important improvements such as:
 
 * **Immutable Local Repository:** Feature that allows you to make recovery points in a local Backup Repository immutable for a specified period of time. Immutable backups are protected from deletion, modification, and encryption by ransomware.
 * **Two-Factor Authentication:** Two-Factor Authentication for users accessing the product web interface. This update provides an additional layer of security against malicious access to backup data by requiring a verification code in addition to the username and password when logging in.
