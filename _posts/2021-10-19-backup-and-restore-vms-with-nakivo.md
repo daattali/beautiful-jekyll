@@ -21,7 +21,7 @@ Nakivo recently released [NBR v10.4](https://helpcenter.nakivo.com/display/RN/v1
 * **Two-Factor Authentication:** Two-Factor Authentication for users accessing the product web interface. This update provides an additional layer of security against malicious access to backup data by requiring a verification code in addition to the username and password when logging in.
 * **File Recovery for Nutanix AHV VMs:** NAKIVO Backup & Replication now supports file recovery for Nutanix AHV VMs.
 
-If you are running vSphere 7 Update 3 (7.0.3) in your environment, make sure to update to Nakivo Backup and Replication v10.4.1 which supports it.
+If you want to upgrade to vSphere 7 Update 3 (7.0.3) in your environment, make sure to update to Nakivo Backup and Replication v10.4.1 beforehand as it supports it.
 
 ### Deploy Nakivo appliance
 
