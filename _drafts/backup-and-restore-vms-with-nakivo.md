@@ -128,3 +128,23 @@ In our example below we are using a tag category named "**Backup - daily"** that
 ![](/img/2021-09-27_13h44_44.png)
 
 * At the end of the job, the **status** should be completed without errors. If it isn't, refer to the error messages and the logs if necessary.
+
+### Recovery of a virtual machine with Nakivo
+
+Nakivo Back and replication lets you recover individual files, objects for Exchange, SQL, AD and a number of other objects. You can obviously recover VMs traditionnaly or use "Flash VM boot" to start it quickly from the repo. In this demonstration we will recover a VM from backup.
+
+* Go to **Dashboard > Recover > VM recovery from backup**
+
+![](/img/2021-10-18_13h52_55.png)
+
+* Select the virtual machine you want to recover and click **Next**. Note that you also get to choose the recovery point.
+
+![](/img/2021-10-18_13h53_44.png)
+
+* Specify the characteristics for the destination where you want to restore it and click **Next**.
+
+![](/img/2021-10-18_13h54_07.png)
+
+* Like in the backup job, you can configure the settings of the recovery job such as the recovered VM characteristics. Once you are happy with your settings, you can choose to create the job to run it a later time or run it immediately. We will do the latter here with **Finish & Run**.
+
+![](/img/2021-10-18_13h54_30.png)
