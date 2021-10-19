@@ -2,7 +2,7 @@
 layout: page
 title: Projeto Visão
 subtitle: Cadastramento de Dados de paciente através da visão computacional
-cover-img: /assets/img/visao/visaoBanner.png
+cover-img: /assets/img/visao/banner-IA.png
 ---
 
 Imagine facilitar a vida de atendentes e recepcionistas de hospitais na hora de cadastrar ou verificar dados de um paciente. A visão está aqui por isso, contendo um objetivo de cadastrar ou visualizar dados de um pacientes a partir da visão computacional. Onde o sistema irá cadastrar a imagem do paciente no seu grande banco de dados, podendo assim quando este voltar a usar o sistema, só mostrar o seu rosto para o sistema e compará-lo com o banco de dados. Assim, mostrando os seus dados para médicos, atendentes e recepcionistas.

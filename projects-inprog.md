@@ -110,7 +110,7 @@ share-img: /assets/img/inprog.jpg
       </a>
     </div>
     <div class="project-entry">
-     Projeto do Embs que utiliza a visão computacional para cadastrar e mostrar dados de pacientes.  
+        O projeto visão é feito e produzido pelo capítulo EMBS CIMATEC, construindo um sistema WEB, onde nele utilizamos visão computacional para melhorar a pesquisa e o cadastramento de pacientes em hospitais, clínicas ou enfermarias em escolas. Com isso, melhorando mais a situação destes locais, que por sua vez, ainda não atingi o nível de atendimento necessário para a população 
     </div> 
 </article>
 </div>
