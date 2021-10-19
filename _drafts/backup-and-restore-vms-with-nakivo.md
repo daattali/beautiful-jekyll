@@ -133,6 +133,8 @@ In our example below we are using a tag category named "**Backup - daily"** that
 
 Nakivo Back and replication lets you recover individual files, objects for Exchange, SQL, AD and a number of other objects. You can obviously recover VMs traditionnaly or use "Flash VM boot" to start it quickly from the repo. In this demonstration we will recover a VM from backup.
 
+Keep in mind that you don't want to recover a VM in the same subnet as the original one if it is still running, otherwise you will encounter IP duplicates.
+
 * Go to **Dashboard > Recover > VM recovery from backup**
 
 ![](/img/2021-10-18_13h52_55.png)
@@ -148,3 +150,9 @@ Nakivo Back and replication lets you recover individual files, objects for Excha
 * Like in the backup job, you can configure the settings of the recovery job such as the recovered VM characteristics. Once you are happy with your settings, you can choose to create the job to run it a later time or run it immediately. We will do the latter here with **Finish & Run**.
 
 ![](/img/2021-10-18_13h54_30.png)
+
+* In the Dashboard, you should see your recovery job ran successfully and the recovered VM running in the destination.
+
+![](/img/2021-10-18_13h55_28.png)
+
+### Wrap up
