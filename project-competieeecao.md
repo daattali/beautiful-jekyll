@@ -31,7 +31,7 @@ Após o processamento das informações, a decisão do próximo movimento do jog
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/Heitor_Rivera.jpg' | relative_url }}" width="100" alt="leonardo" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/Fernando_Schettini.jpg' | relative_url }}" width="100" alt="fernando" class="img-fluid rounded-circle"/></center></th>
+            <th><a href="linkr.bio/kjlyr"><center><img src="{{ 'assets/img/voluntarios/Fernando_Schettini.jpg' | relative_url }}" width="100" alt="fernando" class="img-fluid rounded-circle"/></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/Gustavo_Pacheco.jpg' | relative_url }}" width="100" alt="gabriel" class="img-fluid rounded-circle" /></center></th>
           </tr>
