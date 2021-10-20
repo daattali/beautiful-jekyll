@@ -2,7 +2,7 @@
 layout: page
 title: CompetIEEEção
 subtitle: A equipe competitiva do IEEE CIMATEC
-cover-img: /assets/img/competieeecao/Coover_Comp.jpg
+cover-img: /assets/img/competieeecao/Comp_Banner.jpg
 ---
 
 ## Quem somos? 
