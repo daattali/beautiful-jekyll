@@ -129,8 +129,8 @@ Sand for letter writing tray
 An old phone as an MP3 player for audiobooks  
 A little drawing book
 
-\**_For our 10 year old son:  
-_**Cordless drill that goes backwards and forwards  
+**_For our 10 year old son:_**  
+Cordless drill that goes backwards and forwards  
 Digital watch  
 Hot glue sticks  
 Cookbook for kids  
