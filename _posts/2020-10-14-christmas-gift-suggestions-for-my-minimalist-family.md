@@ -29,7 +29,7 @@ _You can find many of the below suggestions in my Amazon shops (_[_US Amazon_](h
 
 Sharpener
 
-Origami paper 
+Origami paper
 
 Paintbrushes
 
@@ -127,16 +127,16 @@ _Blueberries for Sal_ by Robert McCloskey
 _The Story of Little Babaji_ by Helen Bannerman  
 Sand for letter writing tray  
 An old phone as an MP3 player for audiobooks  
-A little drawing book  
-  
-**_For our 10 year old son:  
+A little drawing book
+
+\**_For our 10 year old son:  
 _**Cordless drill that goes backwards and forwards  
 Digital watch  
 Hot glue sticks  
 Cookbook for kids  
 Money  
-A wall calendar  
-  
+A wall calendar
+
 **_For our 2 year old daughter:_**  
 _The Big Red Barn_ by Margaret Wise Brown (board book version)  
 _Who is Coming to Our House?_ board book  
