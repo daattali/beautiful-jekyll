@@ -7,8 +7,8 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
+* [Five Ideas to Create a Simpler Home+ FREEBIE: printable list of 20 routines to look at to save time in your home](https://www.simplehomemom.com/five-ideas-to-create-a-simpler-home/)
 * [FREE Morning Routine Templates for Moms](https://mailchi.mp/b5550b9a5b6c/kxmxwhppym)
-* [How to Develop Cleaning and Tidying Routines in 4 Simple Steps +FREEBIE master cleaning task list](https://www.simplehomemom.com/how-to-develop-cleaning-and-tidying-routines-in-4-simple-steps/)
 
 ## Resources
 
