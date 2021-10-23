@@ -17,4 +17,4 @@ The bot consists of a small backend server that was writtten in Python and is ho
 
 You can check out the git repo [here](https://github.com/eyalgolan/StartupNamesBot).
 
-![image](https://github.com/eyalgolan/StartupNamesBot/blob/master/bot_usage.jpg?waw=true)
+<img src="https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/startupnamesbot.jpg?raw=true" width="500" height="650">
