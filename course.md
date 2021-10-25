@@ -4,23 +4,25 @@ title: Course
 subtitle: ''
 
 ---
-#### HEY mama! Do you feel often overwhelemed at home and would like to simplify all the things, but don't know how to start? If so, you've come to the right place! The Simplify Your Home Life: a course for busy moms is a self-paced course that will help you alng your journey to simplifying.
+### Hey mama! Do you feel often overwhelemed at home and would like to simplify all the things, but don't know how to start? If so, you've come to the right place! The Simplify Your Home Life: a course for busy moms is a self-paced course that will help you alng your journey to simplifying. Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
 
 ![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
 
-#### _Ready to start simplifying?  Click_ [_HERE_](https://buy.stripe.com/cN202a5Ou0206MUeUX) _to get started!_
-
-## Course Description
+#### Course Description
 
 _The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits.
 
-## Overview of the units
+#### Overview of the units
 
 * **Setting the stage for simplifying:** discovering your priorities and values; habits
 * **Decluttering**: basic concepts and a few specific areas: clothing, kid's stuff, maintenance decluttering
 * **Planning**: finding extra time, productivity, simplifying your to do list, helpful planning strategies for home life
 * **Routines**: daily routines in general; cleaning and tidying routines
 * **Goal setting and mindset**
+
+### **Sound good? Ready to start simplifying? Click** [**HERE**](https://buy.stripe.com/cN202a5Ou0206MUeUX) **to get started!**
+
+But wait. I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back to this page to take the full course when and if you are ready!
 
 #### What you will find in this course:
 
@@ -37,7 +39,7 @@ $59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202
 
 **Please note:** _I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
-## Reviews
+### REVIEWS
 
 > Simplify Your Home Life: a course for busy moms was an amazing experience! I loved the units; each was something that I needed to dig into more as I work to simplify my life and home. The layout for this course was perfect, giving time and space to work on each subject before moving on. I love that I can go back and work through the ones that are more challenging for my household. Kelly’s support and encouragement to tackle things one small bit at a time was just what I needed! I will definitely recommend this course to my friends who are looking to make changes in their lives to simplify. - Deanna
 
