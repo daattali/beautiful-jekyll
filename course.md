@@ -12,6 +12,10 @@ subtitle: ''
 
 _The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits.
 
+### Sound good? Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
+
+But wait. I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back to this page to take the full course when and if you are ready!
+
 #### Overview of the units
 
 * **Setting the stage for simplifying:** discovering your priorities and values; habits
@@ -19,10 +23,6 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 * **Planning**: finding extra time, productivity, simplifying your to do list, helpful planning strategies for home life
 * **Routines**: daily routines in general; cleaning and tidying routines
 * **Goal setting and mindset**
-
-### **Sound good? Ready to start simplifying? Click** [**HERE**](https://buy.stripe.com/cN202a5Ou0206MUeUX) **to get started!**
-
-But wait. I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back to this page to take the full course when and if you are ready!
 
 #### What you will find in this course:
 
