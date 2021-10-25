@@ -124,3 +124,5 @@ In the YAML tab you can even display the manifest file ( -o yaml) and update it 
 * **Cluster Overview**: In this section you will find the non-namespaced resources (aka. _kubectl api-resources --namespaced=false_). For instance, you can see you few persistentVolumes I have in the cluster.
 
 ![](/img/octant13.png)
+
+* **Plugins**: I haven't tested the plugin section as I am not there yet. You can find more details about it in the [documentation]().
