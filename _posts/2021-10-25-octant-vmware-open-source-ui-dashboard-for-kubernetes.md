@@ -15,7 +15,7 @@ If you use Kubernetes, be it for learner or in production you are no stranger to
 
 There is a number of existing projects for Kubernetes Dashboards suchs as Web UI (Dashboard) which is probably the most popular. However, it runs in Kubernetes so it uses some resources. Because I run a mini-pc with k3s with limited resources (core-i3 with 4 HT vCPU and 8GB of ram), I want to reduce the overhead as much as possible to save the capacity for actual workloads. 
 
-This is where Octant shines, it is a simple app you run on you workstation that will connect to whatever kubernetes cluster is defined in your kubeconfig file. Meaning it uses the resources of your workstation instead of those of the cluster.
+This is where Kubernetes Octant shines, it is a simple app you run on you workstation that will connect to whatever kubernetes cluster is defined in your kubeconfig file. Meaning it uses the resources of your workstation instead of those of the cluster.
 
 And because it uses the kubeconfig file you don't need to worry about authentication or user accounts since your users most likely already have their own kubeconfig file with their own permissions on the kubernetes resources so that's taken care of.
 
@@ -126,3 +126,15 @@ In the YAML tab you can even display the manifest file ( -o yaml) and update it 
 ![](/img/octant13.png)
 
 * **Plugins**: I haven't tested the plugin section as I am not there yet. You can find more details about it in the [documentation]().
+
+### Preferences
+
+I had a quick poke around the preferences. Not much you can do there apart from changing to dark mode, get your kubeconfig file path and small things like that.
+
+![](/img/octant14.png)
+
+### Wrap up
+
+Anyway, I don't aim at showing every single feature since I'm still playing with it and you will too when you launch it. In my opinion, the great thing about Octant is that you can get started in 5 seconds and get a really slick dashboard from which you can do basic actions and get access to loads of details about your kubernetes environment.
+
+VMware Tanzu Octant, or VMware Octant (I'm not sure about the right terminology here) isn't an alternative to kubectl which will remain your tool of choice to manager kubernetes. However, it will give you a nice and slick UI.
