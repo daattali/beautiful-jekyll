@@ -13,7 +13,7 @@ If you use Kubernetes, be it for learner or in production you are no stranger to
 
 There is a number of existing projects for Kubernetes Dashboards suchs as Web UI (Dashboard) which is probably the most popular. However, it runs in Kubernetes so it uses some resources. Because I run a mini-pc with k3s with limited resources (core-i3 with 4 HT vCPU and 8GB of ram), I want to reduce the overhead as much as possible to save the capacity for actual workloads. 
 
-This is where Octant shines, it is a simple app you run on you workstation and it will run a small local web server on your machine on port 7777 and connect to whatever kubernetes cluster is defined in your kubeconfig file. Meaning it uses the resources of your workstation instead of those of the cluster.
+This is where Octant shines, it is a simple app you run on you workstation and it will run a small local web server on your machine on port 7777 and connect to whatever kubernetes cluster is defined in your kubeconfig file. You can also use the installable version. Meaning it uses the resources of your workstation instead of those of the cluster.
 
 And because it uses the kubeconfig file you don't need to worry about authentication or user accounts since your users most likely already have their own kubeconfig file with their own permissions on the kubernetes resources so that's taken care of.
 
@@ -60,3 +60,9 @@ I retrieved it from my kubernetes node and changed the IP for 127.0.0.1 to the n
 ### Download Octant
 
 First we need to download Octant. It is available on Linux, Windows and MacOS, both on 64bit as well as ARM and ARM64. I will download the Windows build in my case.
+
+* Head over to [https://octant.dev/](https://octant.dev/ "https://octant.dev/") and click **Download Octant** to be redirected to the latest version.
+
+![](/img/octant2.png)
+
+* 
