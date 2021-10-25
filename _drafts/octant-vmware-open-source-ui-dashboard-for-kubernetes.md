@@ -71,7 +71,7 @@ First we need to download Octant. It is available on Linux, Windows and MacOS, b
 
 * Whichever you choose you may need to bypass the windows warning about unknown signature. Then it is just a case of running the .exe file and it will open the dashboard. Again, your kubeconfig must be valid and your cluster running.
 
-### Octan dashboard UI
+### Octant dashboard UI
 
 You should end up on this dashboard in which you can visualize your environment. 
 
