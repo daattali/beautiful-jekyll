@@ -7,13 +7,14 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
+* [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 * [Five Ideas to Create a Simpler Home+ FREEBIE: printable list of 20 routines to look at to save time in your home](https://www.simplehomemom.com/five-ideas-to-create-a-simpler-home/)
 * [FREE Morning Routine Templates for Moms](https://mailchi.mp/b5550b9a5b6c/kxmxwhppym)
 
 ## Resources
 
 * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
-* [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
+* NEW: [My Simple Planner](https://buy.stripe.com/28o02a7WCeWUdbi3cg) (just a purchase page..I'm working on an official planner page soon!)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
