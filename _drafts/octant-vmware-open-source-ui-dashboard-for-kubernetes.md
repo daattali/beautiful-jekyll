@@ -65,4 +65,26 @@ First we need to download Octant. It is available on Linux, Windows and MacOS, b
 
 ![](/img/octant2.png)
 
-* Note that you get the choice to use the portable version (zip file) that will run a local web server on port 7777
+* Here you get the choice to use the **portable version** (zip file) that will run a local web server on port 7777 or the **installer** that will open the dashboard in the app itself.
+
+![](/img/octant3.png)
+
+* Whichever you choose you may need to bypass the windows warning about unknown signature. Then it is just a case of running the .exe file and it will open the dashboard. Again, your kubeconfig must be valid and your cluster running.
+
+### Octan dashboard UI
+
+You should end up on this dashboard in which you can visualize your environment. 
+
+![VMware Octant kubernetes UI dashboard](/img/octant6.png)
+
+In the top right corner you can:
+
+* Switch between **contexts** (if your kubeconfig file includes more than one).
+
+![](/img/octant4.png)
+
+* Switch between **namespaces**.
+
+![](/img/octant5.png)
+
+In my case, it defaults to the "tv-automation" namespace since it is how my kubeconfig file is configured.
