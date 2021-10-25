@@ -94,3 +94,33 @@ A few things you can do quickly from the top right corner include:
 * Apply YAML by typing it in or by feeding a file to it.
 
 ![](/img/octant7.png)
+
+#### Navigation pane
+
+The Octant navigation pane on the left lets you display several types of resources:
+
+* **Applications**: displays your pods and deployments by name with their resource usage.
+
+![](/img/octant8-1.png)
+
+If you click on it you will get details about the resource and interdependencies. In the screenshot below you can see the related service, ingress, persistentVolumeClaim, replicaSet and deployment. You can also then click on the resource on the right ahand side to quickly get access to it.
+
+![](/img/octant9.png)
+
+**Namespace Overview**: In this pane you will find all the namespaced resources (aka. _kubectl api-resources --namespaced=true_).
+
+![](/img/octant10.png)
+
+You can then browse through your namespaced resources and roam through relationships just like you would in the vSphere client to access the datastore related to a cluster for instance. 
+
+The great thing is that you can perform a few actions such as changing deployment's replicas number. In the example below I changed the replicas number from 3 to 1.
+
+![](/img/octant11.png)
+
+In the YAML tab you can even display the manifest file ( -o yaml) and update it on the fly.
+
+![](/img/octant12.png)
+
+* **Cluster Overview**: In this section you will find the non-namespaced resources (aka. _kubectl api-resources --namespaced=false_). For instance, you can see you few persistentVolumes I have in the cluster.
+
+![](/img/octant13.png)
