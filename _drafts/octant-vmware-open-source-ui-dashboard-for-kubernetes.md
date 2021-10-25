@@ -14,6 +14,17 @@ If you use Kubernetes, be it for learner or in production you are no stranger to
   
 There is a number of existing projects for Kubernetes Dashboards suchs as Web UI (Dashboard) which is probably the most popular. However, it runs in Kubernetes so it uses some resources. Because I run a mini-pc with k3s with limited resources (core-i3 with 4 HT vCPU and 8GB of ram), I want to reduce the overhead as much as possible to save the capacity for actual workloads. This is where Octant shines, it is a simple app you run on you workstation and it will connect to whatever kubernetes cluster is defined in your kubeconfig file.
 
+And because it uses the kubeconfig file you don't need to worry about authentication or user accounts since your users most likely already have their own kubeconfig file with their own permissions on the kubernetes resources so that's taken care of.
+
+![](/img/octant1.png)
+
+Before cracking on with Octant, make sure you can interact with you kubernetes cluster with kubectl on your workstation. 
+
+    PS> kubectl get node
+    
+    NAME      STATUS   ROLES                  AGE     VERSION
+    mini-01   Ready    control-plane,master   5d16h   v1.21.5+k3s2
+
 My kubeconfig file is located in %USERPROFILE%\\.kube\\config
 
     PS> $env:KUBECONFIG
@@ -45,4 +56,6 @@ I retrieved it from my kubernetes node and changed the IP for 127.0.0.1 to the n
         client-certificate-data: REDACTED
         client-key-data: REDACTED
 
-g
+### Download Octant
+
+First we need to download Octant.
