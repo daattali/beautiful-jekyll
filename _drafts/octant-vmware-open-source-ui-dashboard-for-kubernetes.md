@@ -79,14 +79,18 @@ You should end up on this dashboard in which you can visualize your environment.
 
 ![VMware Octant kubernetes UI dashboard](/img/octant6.png)
 
-In the top right corner you can:
+#### Top right corner
+
+A few things you can do quickly from the top right corner include:
 
 * Switch between **contexts** (if your kubeconfig file includes more than one).
 
 ![](/img/octant4.png)
 
-* Switch between **namespaces**.
+* Switch between **namespaces**. In my case, it defaults to the "tv-automation" namespace since it is how my kubeconfig file is configured.
 
 ![](/img/octant5.png)
 
-In my case, it defaults to the "tv-automation" namespace since it is how my kubeconfig file is configured.
+* Apply YAML by typing it in or by feeding a file to it.
+
+![](/img/octant7.png)
