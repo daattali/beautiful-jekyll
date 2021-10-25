@@ -59,4 +59,4 @@ I retrieved it from my kubernetes node and changed the IP for 127.0.0.1 to the n
 
 ### Download Octant
 
-First we need to download Octant.
+First we need to download Octant. It is available on Linux, Windows and MacOS, both on 64bit as well as ARM and ARM64. I will download the Windows build in my case.
