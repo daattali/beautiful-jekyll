@@ -4,17 +4,17 @@ title: Course
 subtitle: ''
 
 ---
-### Hey mama! Do you feel overwhelmed at home and would like to simplify, but don't know how to start? The Simplify Your Home Life: a course for busy moms is a self-paced course that will help you on your simplifying journey. Ready to start? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
+### Hey mama! Do you feel overwhelmed at home and would like to simplify, but don't know how to start? The Simplify Your Home Life: a course for busy moms is a self-paced course that will help you on your simplifying journey. 
 
 ![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
+
+### Sound good? Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
+
+I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back to this page to take the full course when you are ready!
 
 #### Course Description
 
 _The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits.
-
-### Sound good? Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
-
-But wait. I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back to this page to take the full course when and if you are ready!
 
 #### Overview of the units
 
@@ -28,7 +28,7 @@ But wait. I understand that sometimes it's hard to get started. So, I put togeth
 
 * A guidebook to go along with the course full of worksheets, journal prompts, resources, and more
 * Text, videos, and images for each unit
-* You’ll have access to this course forever as well as all of the future updates to the course
+* You’ll have access to this course forever
 * Support through the course - I'm an email or message away
 
 **Please note:** This course is not a one-time solution course as I believe that life is a lifelong process of learning and growing. I will promise you, however, that this course is packed with things you can learn and grow with today and going forward.  I'm not an expert, but I have life experience as a mom of four, and journeying along the road to simplifying. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_. I’m so happy you are checking this course out to see if it would be helpful for you!
