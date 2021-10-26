@@ -50,4 +50,4 @@ This one is true not only for NAKIVO Backup & Replication  but for every single 
 5. **Control Access to Backup Data (2FA)**: I shall reiterate here the importance of 2FA to connect to NAKIVO Backup & Replication with the role-based access control (RBAC) feature and the principle of least privilege (PoLP).
 6. **Verify Recoverability of Your Backups and Replicas**: Test your backups and replicas regularly and verify that they are valid with the instant verification capability of NAKIVO Backup & Replication and be alerted if something went wrong. That way you won't discover it when it's time to restore the VM.
 
-There are obviously a whole lot more actions you can take to fu
+There are obviously a whole lot more actions you can take to further harden your backup infrastructure by securing Active Directory, network aspects...
