@@ -35,6 +35,8 @@ NAKIVO Backup & Replication [v10.5 (currently in beta as of October 2021)](https
 
 You can simply deploy the NAKIVO Backup & Replication as a pre-configured virtual appliance powered by Ubuntu Server and protect your data from deletion and encryption by ransomware. Backups sent to a repository deployed as part of the VA can be made immutable for a specified period of time.
 
+### Two-Factor authentication (2FA)
+
 ### Best practices implementation
 
 This one is true not only for NAKIVO Backup & Replication  but for every single backup solution out there. Ensuring that you are following Backup best practices doesn't mean you will never get owned, however it will make it significantly harder for bad actors which will most likely move on to easier targets.
@@ -45,5 +47,5 @@ This one is true not only for NAKIVO Backup & Replication  but for every single 
 2. **Follow the 3-2-1-1 Rule**: You probably heard of the 3-2-1 rule, keep 3 copies of data on 2 different media types, 1 copy offsite. Well now you need to add 1 last line of defense; an immutable copy on S3, local Linux-based repository or on tape.
 3. **Create an Effective Retention Policy**: Regular backups are great but you also need to tune your retention policies. You can save up to 4,000 recovery points for each backup job with NAKIVO Backup & Replication and rotate them with the grandfather-father-son (GFS) retention scheme.
 4. **Set Up Automated Workflows**: With the Policy-Based Data Protection feature, NAKIVO Backup & Replication lets you create rules to automatically protect your VMs and EC2 instances which match certain criteria. That way no VM is left on the side of the road.
-5. **Control Access to Backup Data**: 
+5. **Control Access to Backup Data (2FA)**: I shall reiterate here the importance of 2FA to connect to NAKIVO Backup & Replication with the role-based access control (RBAC) feature and the principle of least privilege (PoLP).
 6. Verify Recoverability of Your Backups and Replicas: 
