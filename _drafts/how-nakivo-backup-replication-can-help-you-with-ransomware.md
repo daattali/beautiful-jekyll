@@ -39,7 +39,7 @@ You can simply deploy the NAKIVO Backup & Replication as a pre-configured virtua
 
 This one is true not only for NAKIVO Backup & Replication  but for every single backup solution out there. Ensuring that you are following Backup best practices doesn't mean you will never get owned, however it will make it significantly harder for bad actors which will most likely move on to easier targets.
 
-1. **Create Regular Backups**: You don't want to find yourself left with a 2 months old copy of your data when it is time to restore from backup.
+1. **Create Regular Backups**: You don't want to find yourself left with a 2 months old copy of your data when it is time to restore from backup. NAKIVO Backup & Replication  lets you set aggressive RPO and RTO to ensure minimal data loss and downtime.
 2. Follow the 3-2-1-1 Rule
 3. Create an Effective Retention Policy
 4. Set Up Automated Workflows
