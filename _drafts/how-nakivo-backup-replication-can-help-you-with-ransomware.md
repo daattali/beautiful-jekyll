@@ -31,6 +31,6 @@ When immutability is enabled, the recovery points are stored using the _write-on
 
 ### Hardened Virtual Appliance
 
-NAKIVO Backup & Replication v10.5 (currently in beta as of October 2021) offers the Hardened Virtual Appliance (VA). A simple way to deploy NAKIVO Backup & Replication and protect data against ransomware. 
+NAKIVO Backup & Replication [v10.5 (currently in beta as of October 2021)](https://www.nakivo.com/fr/resources/releases/10.5-beta/) offers the Hardened Virtual Appliance (VA). A simple way to deploy NAKIVO Backup & Replication and protect data against ransomware. 
 
 You can simply deploy the NAKIVO Backup & Replication as a pre-configured virtual appliance powered by Ubuntu Server and protect your data from deletion and encryption by ransomware. Backups sent to a repository deployed as part of the VA can be made immutable for a specified period of time.
