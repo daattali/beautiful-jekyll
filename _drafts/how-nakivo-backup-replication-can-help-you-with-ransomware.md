@@ -44,6 +44,6 @@ This one is true not only for NAKIVO Backup & Replication  but for every single 
 1. **Create Regular Backups**: You don't want to find yourself left with a 2 months old copy of your data when it is time to restore from backup. NAKIVO Backup & Replication  lets you set aggressive RPO and RTO to ensure minimal data loss and downtime.
 2. **Follow the 3-2-1-1 Rule**: You probably heard of the 3-2-1 rule, keep 3 copies of data on 2 different media types, 1 copy offsite. Well now you need to add 1 last line of defense; an immutable copy on S3, local Linux-based repository or on tape.
 3. **Create an Effective Retention Policy**: Regular backups are great but you also need to tune your retention policies. You can save up to 4,000 recovery points for each backup job with NAKIVO Backup & Replication and rotate them with the grandfather-father-son (GFS) retention scheme.
-4. Set Up Automated Workflows: 
+4. **Set Up Automated Workflows**: With the Policy-Based Data Protection feature, NAKIVO Backup & Replication lets you create rules to automatically protect your VMs and EC2 instances which match certain criteria. That way no VM is left on the side of the road.
 5. Control Access to Backup Data
 6. Verify Recoverability of Your Backups and Replicas
