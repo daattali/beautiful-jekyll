@@ -23,8 +23,14 @@ First off, implementing a solid backup infrastructure is paramount to ensure tha
 
 ### Immutable repository
 
-The other area to look out for is Backup Immutability. NAKIVO Backup & Replication allows you to make the recovery points in repositories immutable. 
+The other area to look out for is Backup Immutability. NAKIVO Backup & Replication allows you to make the recovery points in repositories immutable for local folders and S3 storage. 
 
 When immutability is enabled, the recovery points are stored using the _write-once-read-many_ (WORM) model. The result is that you make recovery points immutable for x days. The recovery points remain immutable for the specified number of days, effectively protecting them from ransomware attack targeting backup systems.
 
 ![](/img/nakivo-3-2.png)
+
+### Hardened Virtual Appliance
+
+NAKIVO Backup & Replication v10.5 (currently in beta as of October 2021) offers the Hardened Virtual Appliance (VA). A simple way to deploy NAKIVO Backup & Replication and protect data against ransomware. 
+
+You can simply deploy the NAKIVO Backup & Replication as a pre-configured virtual appliance powered by Ubuntu Server and protect your data from deletion and encryption by ransomware. Backups sent to a repository deployed as part of the VA can be made immutable for a specified period of time.
