@@ -20,3 +20,25 @@ First we need our NFS share. This part is fairly generic, there is nothing to it
 I allowed the whole subnet here because I access this share from multiple locations and it's just easier (already contradicting myself aren't I?). However, it is best to only allow the IPs that will access it if possible.
 
 ![](/img/synopv1.png)
+
+### persistentVolume manifest
+
+Now that the share exist, let's create the manifest for the persistentVolume. I always get confused with the capacity field. From what I understand it has no impact and is an organisational thing. The NAS itself is 1TB so I set the pv to 800Gi using the wet finger technique, if you have recommendations regarding this I'm all ears, please add it in the comments.
+
+Note that accessModes doesn't need to be ReadWriteMany since I only have one node but who knows if I decide to add one at some point, at least I won't have to figure out what's not working then.
+
+    apiVersion: v1
+    kind: PersistentVolume
+    metadata:
+      name: nas-video-pv
+      labels:
+        type: nas-video
+    spec:
+      storageClassName: ""
+      capacity:
+        storage: 800Gi
+      accessModes:
+        - ReadWriteMany
+      nfs:
+        server: 192.168.1.230
+        path: "/volume1/video"
