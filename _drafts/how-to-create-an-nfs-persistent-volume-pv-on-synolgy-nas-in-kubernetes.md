@@ -19,7 +19,9 @@ First we need our NFS share. This part is fairly generic, there is nothing to it
 
 I allowed the whole subnet here because I access this share from multiple locations and it's just easier (already contradicting myself aren't I?). However, it is best to only allow the IPs that will access it if possible.
 
-![](/img/synopv1.png)
+![](/img/synopv1-1.png)
+
+Take note of the Mount path as you'll need it for the persistentVolume.
 
 ### persistentVolume manifest
 
