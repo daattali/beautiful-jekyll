@@ -65,3 +65,9 @@ This one is true not only for NAKIVO Backup & Replication  but for every single 
 6. **Verify Recoverability of Your Backups and Replicas**: Test your backups and replicas regularly and verify that they are valid with the instant verification capability of NAKIVO Backup & Replication and be alerted if something went wrong. That way you won't discover it when it's time to restore the VM.
 
 There are obviously a whole lot more actions you can take to further harden your backup infrastructure by implementing secured Active Directory, network segmentation, Email and browser hygiene, antivirus software, least privelege access policy...
+
+### Wrap up
+
+Ransomware have been creeping around and ramping up in the last few years but they are not going anywhere anytime soon. For that reason it is recommended to educate your IT department and the users (arguably even more so) to the risks of cyber attacks. Most large ransomware attacks start with something silly like a phishing email that could be quickly debunked if the user knew what to look out for.
+
+Regardless, user education isn' the only vector of attacks so protecting your infrastructure at all the layers is paramount. And if, root forbid, you got your data encrypted by ransomware, your last line of defense would be your backups. In which case, the features from NAKIVO Backup & Replication we described above would help you ensure your backups don't get encrypted as well.
