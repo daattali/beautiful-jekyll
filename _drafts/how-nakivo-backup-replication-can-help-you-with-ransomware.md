@@ -17,7 +17,9 @@ Before getting stuck in, note that you can get an unrestricted 15-days free tria
 
 ### Air-Gapped Backups
 
-First off, implementing a solid backup infrastructure is paramount to ensure that you have access to backups in case of recovery post ransomware. However, ensuring that the backup infrastructure is secured and isolated from the rest of the network is even more important as it will be no use if your backups have been hit as well. This is what we call air-gapped backups. This can be achieved through network isolation or by using the backups to tape feature of NAKIVO Backup and replication.
+First off, implementing a solid backup infrastructure is paramount to ensure that you have access to backups in case of recovery post ransomware. However, ensuring that the backup infrastructure is secured and isolated from the rest of the network is even more important as it will be no use if your backups have been hit as well. 
+
+This is what is called air-gapped backups. It can be achieved through network isolation or by using the backups to tape feature of NAKIVO Backup and replication.
 
 ![](/img/nakivo-3-1.png)
 
