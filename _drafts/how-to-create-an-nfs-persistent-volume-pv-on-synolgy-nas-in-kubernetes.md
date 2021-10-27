@@ -7,8 +7,16 @@ metadescription: Learn how to create an NFS persistent volume on Synology NAS in
   in a few easy steps.
 
 ---
-I have been learning about Kubernetes over the past couple of months and I thought I would move some of home multimedia workloads to kubernetes as a use case. It is necessary to go through the basics and courses but I find that I learn much faster and better with actual use cases. Although it isn't production grade stuff, I try to follow best practices and the way it would be done in the real world, even if it's overkill in my environment.
+I have been learning about Kubernetes over the past couple of months and I thought I would move some of home multimedia workloads to kubernetes as a use case. It is necessary to go through the basics and courses but I find that I learn much faster and better with actual use cases. Although it isn't production grade stuff (HTPC...), I try to follow best practices and the way it would be done in the real world, even if it's overkill in my environment.
 
-I used to run a few services in Docker on my old Raspberry Pi 2 which I repurposed into a Wireguard VPN server with DDNS client. I run a single Kubernetes node with K3S on Ubuntu Server that is hosted on a second hand [Gygabite mini PC ](https://www.gigabyte.com/fr/Mini-PcBarebone/GB-BSi3-6100-rev-10#ov)equipped with a core-i3 and 8GB of RAM. 
+I used to run a few HTPC services in Docker on my old Raspberry Pi 2 which I repurposed into a Wireguard VPN server with DDNS client. I run a single Kubernetes node with K3S on Ubuntu Server that is hosted on a second hand [Gygabite mini PC ](https://www.gigabyte.com/fr/Mini-PcBarebone/GB-BSi3-6100-rev-10#ov)equipped with a core-i3 and 8GB of RAM. 
 
 Anyway, part of this whole ordeal included to map NFS shares to containers. In the past on the RPi I did it quick and dirty by mounting the shares on the host OS in fstab and then mapping the mount point to the container. In Kubernetes I decided to do it properly with use persistent volumes (PV) and persistent volume claims (pvc).
+
+### Synology NFS share
+
+First we need our NFS share. This part is fairly generic, there is nothing to it really. Just create your folder and add it to the shared folders, again, I try to follow best practices by only allowing what's needed.
+
+I allowed the whole subnet here because I access this share from multiple locations and it's just easier (already contradicting myself aren't I?). However, it is best to only allow the IPs that will access it if possible.
+
+![](/img/synopv1.png)
