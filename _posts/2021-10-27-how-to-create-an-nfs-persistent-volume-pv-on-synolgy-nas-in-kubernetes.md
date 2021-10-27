@@ -19,7 +19,7 @@ First we need our NFS share. This part is fairly generic, there is nothing to it
 
 I allowed the whole subnet here because I access this share from multiple locations and it's just easier (already contradicting myself aren't I?). However, it is best to only allow the IPs that will access it if possible.
 
-![](/img/synopv1-1.png)
+![Kubernetes persistent volume on synology nas](/img/synopv1-1.png)
 
 Take note of the Mount path as you'll need it for the persistentVolume.
 
@@ -109,4 +109,8 @@ You can also open a shell inside the pod to see if the volume is here and availa
 
     kubectl exec -it test-htpc-6b7f57565d-54jkw -- ls /video
 
-And there you have it. Now you can manage your persistentVolumes on synology and persistentVolumeClaims from kubernetes. If you delete them, the data won't be impacted. You can connect it to several pods when need for added flexibility... It's generally beneficial to work that way.
+And there you have it. Now you can manage your persistentVolumes on synology and persistentVolumeClaims from kubernetes. If you delete them, the data won't be impacted. You can connect it to several pods when need for added flexibility... It's generally beneficial to work that way. You can even see them in [Octant ](https://www.vxav.fr/2021-10-25-octant-vmware-open-source-ui-dashboard-for-kubernetes/)if you're interested in a Dashboard UI for Kubernetes.
+
+### Conclusion
+
+Thanks for following this blog. I am writing more content on Kubernetes these days but I won't leave vSphere on the side of the road just yet, especially with how things are going with Tanzu. Creating a Persistent Volume on Synology is a great way to get started with Kubernetes and get a grasp of what you can do with it in terms of storage persistency.
