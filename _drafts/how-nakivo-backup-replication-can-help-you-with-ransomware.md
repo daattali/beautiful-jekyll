@@ -23,6 +23,10 @@ This is what is called air-gapped backups. It can be achieved through network is
 
 ![](/img/nakivo-3-1.png)
 
+On top of this, you can schedule when the repository is attached to create an "air gap" between the attacker and your backups.
+
+![](/img/nakivo-3-4.png)
+
 ### Immutable repository
 
 The other area to look out for is Backup Immutability. NAKIVO Backup & Replication allows you to make the recovery points in repositories immutable for local folders and S3 storage.
