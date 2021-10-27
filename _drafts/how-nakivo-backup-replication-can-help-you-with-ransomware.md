@@ -17,7 +17,7 @@ Before getting stuck in, note that you can get an unrestricted 15-days free tria
 
 ### Air-Gapped Backups
 
-First off, implementing a solid backup infrastructure is paramount to ensure that you have access to backups in case of recovery post ransomware. However, ensuring that the backup infrastructure is secured and isolated from the rest of the network is even more important as it will be no use if your backups have been hit as well. 
+First off, implementing a solid backup infrastructure is paramount to ensure that you have access to backups in case of recovery post ransomware. However, ensuring that the backup infrastructure is secured and isolated from the rest of the network is even more important as it will be no use if your backups have been hit as well.
 
 This is what is called air-gapped backups. It can be achieved through network isolation or by using the backups to tape feature of NAKIVO Backup and replication.
 
@@ -47,9 +47,7 @@ Many [Ransomware attacks](https://www.nakivo.com/blog/10-recent-ransomware-attac
 
 With 2FA enabled, users need a code provided by the Google Authenticator mobile app or by email to access the solution and backups. Paired with the role-based access control (RBAC) feature in NAKIVO Backup & Replication, you also make that no one is able to perform unauthorized operation
 
-![](/img/nakivo-3-5.png)
-
-The Two-factor authentication checkbox is greyed out in the screenshot above because I haven't configured email notifications which is a condition for it to work obviously.
+![](/img/nakivo-3-5-1.png)
 
 ### Best practices implementation
 
