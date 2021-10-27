@@ -13,7 +13,7 @@ We already talked about vSphere environments in the Ransomware landscape in a [p
 
 Before getting stuck in, note that you can get an unrestricted 15-days free trial of Nakivo Backup and Replication. Check out [this blog ](https://www.vxav.fr/2021-10-19-backup-and-restore-vms-with-nakivo/)for guidance on how to get started with it.
 
-[![](/img/2021-10-18_11h14_34.png)](https://www.nakivo.com/resources/download/trial-download/)  
+[![](/img/2021-10-18_11h14_34.png)](https://www.nakivo.com/resources/download/trial-download/)
 
 ### Air-Gapped Backups
 
@@ -23,7 +23,7 @@ First off, implementing a solid backup infrastructure is paramount to ensure tha
 
 ### Immutable repository
 
-The other area to look out for is Backup Immutability. NAKIVO Backup & Replication allows you to make the recovery points in repositories immutable for local folders and S3 storage. 
+The other area to look out for is Backup Immutability. NAKIVO Backup & Replication allows you to make the recovery points in repositories immutable for local folders and S3 storage.
 
 When immutability is enabled, the recovery points are stored using the _write-once-read-many_ (WORM) model. The result is that you make recovery points immutable for x days. The recovery points remain immutable for the specified number of days, effectively protecting them from ransomware attack targeting backup systems.
 
@@ -31,13 +31,13 @@ When immutability is enabled, the recovery points are stored using the _write-on
 
 ### Hardened Virtual Appliance
 
-NAKIVO Backup & Replication [v10.5 (currently in beta as of October 2021)](https://www.nakivo.com/fr/resources/releases/10.5-beta/) offers the Hardened Virtual Appliance (VA). A simple way to deploy NAKIVO Backup & Replication and protect data against ransomware. 
+NAKIVO Backup & Replication [v10.5 (currently in beta as of October 2021)](https://www.nakivo.com/fr/resources/releases/10.5-beta/) offers the Hardened Virtual Appliance (VA). A simple way to deploy NAKIVO Backup & Replication and protect data against ransomware.
 
 You can simply deploy the NAKIVO Backup & Replication as a pre-configured virtual appliance powered by Ubuntu Server and protect your data from deletion and encryption by ransomware. Backups sent to a repository deployed as part of the VA can be made immutable for a specified period of time.
 
 ### Two-Factor authentication (2FA)
 
-Many [Ransomware attacks](https://www.nakivo.com/blog/10-recent-ransomware-attacks-facts-figures-and-lessons/) related by organizations that got hit involved compromised credentials, be it Active Directory or local authentication. By enabling two-factor you essentially add an extra layer of security to your backups. 
+Many [Ransomware attacks](https://www.nakivo.com/blog/10-recent-ransomware-attacks-facts-figures-and-lessons/) related by organizations that got hit involved compromised credentials, be it Active Directory or local authentication. By enabling two-factor you essentially add an extra layer of security to your backups.
 
 With 2FA enabled, users need a code provided by the Google Authenticator mobile app or by email to access the solution and backups. Paired with the role-based access control (RBAC) feature in NAKIVO Backup & Replication, you also make that no one is able to perform unauthorized operation
 
@@ -54,4 +54,4 @@ This one is true not only for NAKIVO Backup & Replication  but for every single 
 5. **Control Access to Backup Data (2FA)**: I shall reiterate here the importance of 2FA to connect to NAKIVO Backup & Replication with the role-based access control (RBAC) feature and the principle of least privilege (PoLP).
 6. **Verify Recoverability of Your Backups and Replicas**: Test your backups and replicas regularly and verify that they are valid with the instant verification capability of NAKIVO Backup & Replication and be alerted if something went wrong. That way you won't discover it when it's time to restore the VM.
 
-There are obviously a whole lot more actions you can take to further harden your backup infrastructure by securing Active Directory, network aspects...
+There are obviously a whole lot more actions you can take to further harden your backup infrastructure by implementing secured Active Directory, network segmentation, Email and browser hygiene, antivirus software, least privelege access policy...
