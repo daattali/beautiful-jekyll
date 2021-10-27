@@ -108,3 +108,5 @@ You can then see the pod running:
 You can also open a shell inside the pod to see if the volume is here and available (autocompletion is your friend here):
 
     kubectl exec -it test-htpc-6b7f57565d-54jkw -- ls /video
+
+And there you have it. Now you can manage your persistentVolumes on synology and persistentVolumeClaims from kubernetes. If you delete them, the data won't be impacted. You can connect it to several pods when need for added flexibility... It's generally beneficial to work that way.
