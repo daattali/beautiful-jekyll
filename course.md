@@ -9,6 +9,7 @@ subtitle: ''
 ![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
 
 ### Sound good? Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
+>>>
 
 I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back to this page to take the full course when you are ready!
 
