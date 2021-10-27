@@ -29,6 +29,8 @@ Now that the share exist, let's create the manifest for the persistentVolume. I 
 
 Note that accessModes doesn't need to be ReadWriteMany since I only have one node but who knows if I decide to add one at some point, at least I won't have to figure out what's not working then.
 
+In the nfs section, type in the mount path we highlighted in yellow earlier.
+
     apiVersion: v1
     kind: PersistentVolume
     metadata:
@@ -44,3 +46,65 @@ Note that accessModes doesn't need to be ReadWriteMany since I only have one nod
       nfs:
         server: 192.168.1.230
         path: "/volume1/video"
+
+The output should be:
+
+    kubectl apply -f pv.yaml
+    
+    persistentvolume/nas-video-pv created
+
+You can then see it with _kubectl get pv_ with _STATUS = Available_.
+
+![](/img/synopv2.png)
+
+### persistentVolumeClaim manifest
+
+Now that the persistentVolume is created, we need a persistentVolumeClaim to connect it to our pods. Remember that persistentVolumeClaims are namespaced while persistentVolumes are not namespaced.
+
+As you can see I tied the persistentVolumeClaim to the persistentVolume using the label selector _type: "nas-video"_.
+
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+      name: nas-video-pvc
+    spec:
+      storageClassName: ""
+      selector:
+        matchLabels:
+          type: "nas-video"
+      accessModes:
+        - ReadWriteMany
+      resources:
+        requests:
+          storage: 800Gi
+
+The output should be:
+
+    kubectl apply -f pvc.yaml
+    
+    persistentvolumeclaim/nas-video-pvc created
+
+You can then see it with _kubectl get pv/pvc_ with _STATUS = Bound_.
+
+![](/img/synopv3.png)
+
+### Pod/deployment volume manifest
+
+The last thing left to do is to create a pod and connect the pvc to it. This is not the actual manifest nor image that I use in my context but I went for something simpler for the sake of this blog.
+
+This output should be:
+
+    kubectl apply -f depl.yaml
+    
+    deployment.apps/test-htpc created
+
+You can then see the pod running:
+
+    kubectl get pod
+    
+    NAME                         READY   STATUS    RESTARTS   AGE
+    test-htpc-6b7f57565d-54jkw   1/1     Running   0          8s
+
+You can also open a shell inside the pod to see if the volume is here and available (autocompletion is your friend here):
+
+    kubectl exec -it test-htpc-6b7f57565d-54jkw -- ls /video
