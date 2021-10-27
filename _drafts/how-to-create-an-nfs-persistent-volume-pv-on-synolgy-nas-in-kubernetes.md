@@ -11,4 +11,4 @@ I have been learning about Kubernetes over the past couple of months and I thoug
 
 I used to run a few services in Docker on my old Raspberry Pi 2 which I repurposed into a Wireguard VPN server with DDNS client. I run a single Kubernetes node with K3S on Ubuntu Server that is hosted on a second hand [Gygabite mini PC ](https://www.gigabyte.com/fr/Mini-PcBarebone/GB-BSi3-6100-rev-10#ov)equipped with a core-i3 and 8GB of RAM. 
 
-Anyway, part of this whole ordeal included to map NFS shares to containers. In the past on the RPi I did it quick and dirty by mounting the shares on the host OS in fstab and then mapping the mount point to the container. In Kubernetes I decided to do it properly and use persistent volumes (PV) and persistent volume claims (pvc).
+Anyway, part of this whole ordeal included to map NFS shares to containers. In the past on the RPi I did it quick and dirty by mounting the shares on the host OS in fstab and then mapping the mount point to the container. In Kubernetes I decided to do it properly with use persistent volumes (PV) and persistent volume claims (pvc).
