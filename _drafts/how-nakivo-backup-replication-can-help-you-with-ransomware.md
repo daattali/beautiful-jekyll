@@ -47,6 +47,10 @@ Many [Ransomware attacks](https://www.nakivo.com/blog/10-recent-ransomware-attac
 
 With 2FA enabled, users need a code provided by the Google Authenticator mobile app or by email to access the solution and backups. Paired with the role-based access control (RBAC) feature in NAKIVO Backup & Replication, you also make that no one is able to perform unauthorized operation
 
+![](/img/nakivo-3-5.png)
+
+The Two-factor authentication checkbox is greyed out in the screenshot above because I haven't configured email notifications which is a condition for it to work obviously.
+
 ### Best practices implementation
 
 This one is true not only for NAKIVO Backup & Replication  but for every single backup solution out there. Ensuring that you are following Backup best practices doesn't mean you will never get owned, however it will make it significantly harder for bad actors which will most likely move on to easier targets.
