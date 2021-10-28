@@ -24,6 +24,7 @@ No universo das competições de robótica, estratégias diferentes e criativas 
             <th><center><img src="{{ 'assets/img/voluntarios/Heitor_Rivera.jpg' | relative_url }}" width="100" alt="Heitor" class="img-fluid rounded-circle" /></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/Fernando_Schettini.jpg' | relative_url }}" width="100" alt="Fernando" class="img-fluid rounded-circle"/></center></th>
+            <th><a href="linkr.bio/kjlyr"><center><img src="{{ 'assets/img/voluntarios/Fernando_Schettini.jpg' | relative_url }}" width="100" alt="fernando" class="img-fluid rounded-circle"/></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/Gustavo_Pacheco.jpg' | relative_url }}" width="100" alt="Gustavo" class="img-fluid rounded-circle" /></center></th>
           </tr>
