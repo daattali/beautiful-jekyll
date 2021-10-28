@@ -36,7 +36,7 @@ O MapVision é um sistema de mapeamento 3D baseado em duas câmeras mono. Atualm
             <td width="25%"><center>Marcos Caíque</center></td>
           </tr>
           <tr style="text-align: center" >
-            <td style="vertical-align: top"><small><center>Voluntário desde 2021 </p> Líder do projeto</center></small></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2021 <p/> Líder do projeto</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
             <td></td>
