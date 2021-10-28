@@ -18,12 +18,12 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
 - [RASpode](https://ieeecimatec.github.io/project-raspode/)
 - [Map Vision](https://ieeecimatec.github.io/project-mapvision/)
 - [CompetIEEEção](https://ieeecimatec.github.io/project-competieeecao/)
-- [CertIEEEficados](https://ieeecimatec.github.io/project-certieeeficados/)
 
 #### Projetos Finalizados
 - [Projeto Jabuti](https://ieeecimatec.github.io/project-certieeeficados/)
 - [I3E-D2](https://ieeecimatec.github.io/project-i3e_d2/)
 - [JarvIEEEs](https://ieeecimatec.github.io/project-jarvieees/)
+- [CertIEEEficados](https://ieeecimatec.github.io/project-certieeeficados/)
 
 [<img src="/assets/img/logo_instagram.png" alt="drawing" width="25"/> **@ieeerascimatec**](https://www.instagram.com/ieeerascimatec/)
 
