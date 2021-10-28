@@ -1,8 +1,8 @@
 ---
 layout: page
-title: RASpode
-subtitle: Um robô hexapode
-cover-img: /assets/img/raspode/raspode-cover.png
+#title: RASpode
+#subtitle: Um robô hexapode
+cover-img: /assets/img/raspode/raspode.png
 ---
 
 O projeto Raspode consiste na contrução de um robô hexapode capaz de se locomover em diferentes tipos de terreno, desviando de obstáculos e se adaptando a diferentes tipos de ambientes.

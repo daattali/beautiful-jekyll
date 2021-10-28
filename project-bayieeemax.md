@@ -1,8 +1,8 @@
 ---
 layout: page
-title: BayIEEEmax
-subtitle: Um robô para auxiliar em triagens
-cover-img: /assets/img//bayieeemax/baymax.jpg
+#title: 
+#subtitle: Um robô para auxiliar em triagens
+cover-img: /assets/img//bayieeemax/baymaxx.png
 ---
 
 O projeto consiste na construção de um robô autônomo capaz de auxiliar os agentes de saúde no processo de triagem por meio da medição de parâmetros do estado de saúde do paciente, tais como pressão sanguínea, oxigenação e temperatura e registrá-los nas respectivas fichas dos pacientes. O robô exibirá perguntas numa tela LCD e também as emitirá pela via sonora através de um alto-falante e receberá as respostas do paciente por meio de comandos de voz.

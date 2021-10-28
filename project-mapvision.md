@@ -2,7 +2,7 @@
 layout: page
 # title: MapVision
 # subtitle: Mapeamento 3D
-cover-img: /assets/img/mapvision/mapvision_wide.png
+cover-img: /assets/img/mapvision/map.png
 ---
 
 O MapVision é um sistema de mapeamento 3D baseado em duas câmeras mono. Atualmente tem como objetivo fazer reconhecimento de áreas remotas e com isso orientar a movimentação de robôs que desejam percorrer por elas, como é o caso do RASPode, assim como detectar vítimas de desabamentos nestes locais. Além disso, o Map será capaz de reconhecer pessoas cadastradas em seu banco de dados online, e poderá ser associado no futuro aos demais robôs do IEEE RAS CIMATEC.
