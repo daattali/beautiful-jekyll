@@ -29,35 +29,35 @@ And. _Are you looking for a community of other moms simplifying their home lives
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+\#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. _/
 </style>
 <div id="mc_embed_signup">
-<form action="https://eepurl.us4.list-manage.com/subscribe/post?u=581b5bf0ab44ab0870d2a00c0&amp;id=3026fc64c7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h2>GAIN ACCESS TO THE SIMPLE HOME MOM FREEBIE VAULT</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<form action="https://eepurl.us4.list-manage.com/subscribe/post?u=581b5bf0ab44ab0870d2a00c0&id=3026fc64c7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll">
+<h2>GAIN ACCESS TO THE SIMPLE HOME MOM FREEBIE VAULT</h2>
+<div class="indicates-required"><span class="asterisk">_</span> indicates required</div>
 <div class="mc-field-group">
-	<label for="mce-FNAME">Name  <span class="asterisk">*</span>
+<label for="mce-FNAME">Name  <span class="asterisk">_</span>
 </label>
-	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
 </div>
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Email  <span class="asterisk">*</span>
+<label for="mce-EMAIL">Email  <span class="asterisk">_</span>
 </label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_581b5bf0ab44ab0870d2a00c0_3026fc64c7" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_581b5bf0ab44ab0870d2a00c0_3026fc64c7" tabindex="-1" value=""></div>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</div>
 </form>
 </div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames\[1\]='FNAME';ftypes\[1\]='text';fnames\[0\]='EMAIL';ftypes\[0\]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 
 #### Course Description
@@ -87,15 +87,7 @@ $59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202
 
 **Please note:** _I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
-### REVIEWS
-
-> Simplify Your Home Life: a course for busy moms was an amazing experience! I loved the units; each was something that I needed to dig into more as I work to simplify my life and home. The layout for this course was perfect, giving time and space to work on each subject before moving on. I love that I can go back and work through the ones that are more challenging for my household. Kelly’s support and encouragement to tackle things one small bit at a time was just what I needed! I will definitely recommend this course to my friends who are looking to make changes in their lives to simplify. - Deanna
-
-> I have to say I love how simply laid out your course is! I love the units lay out and overall how great this has been . The printable sheets are so helpful I have my own little booklet of all of them now. - Terri
-
-> I really enjoyed Kelly’s course! I think it’s perfect for busy moms trying to find ways to organize their home, create systems and better routines! My favorite module was the time management lesson! But every module gives practical and easy to follow tools to better your home life! Such a great course! - Shelly
-
-> Kelly’s course is truly amazing and life changing. She teaches you how to simplify your busy mom life and I love that I can work at my own pace. It’s not rushed at all. You get to be part of a community of other moms on the same journey as you are and working on the same steps! If anyone could guide you to living slow Kelly is definitely it! She’s also the mama that has helped me so much in simplifying our homeschool too and I can’t thank her enough! - Jessica
+![](/uploads/reviews-for-blog-1.jpg)
 
 ### About me
 
