@@ -4,7 +4,7 @@ title: Course
 subtitle: ''
 
 ---
-### Hey mama! Do you feel overwhelmed at home and don't know how to start? Simplify Your Home Life: a course for busy moms is a self-paced course that will help you on your simplifying journey.
+### Hey mama! Do you feel overwhelmed and don't know how to start? Simplify Your Home Life: a course for busy moms is a self-paced course that will help you on your simplifying journey.
 
 ![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
 
@@ -83,16 +83,14 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 
 #### Pricing
 
-$59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX).
-
-**Please note:** _I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
+$59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX). **Please note:** I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
 
 ![](/uploads/reviews-for-blog-1.jpg)
 
 ### About me
 
-Hi, I'm Kelly! I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom eight years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a simpler lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, and stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by teaching flexible planning methods and skills. Listen more about my take on simplifying things at home on a podcast I was interviewed on [here](https://www.stitcher.com/show/make-joy-normal-cozy-homeschooling/episode/keeping-it-simple-an-interview-with-kelly-79787253). And a blog of mine you may like: [Four Ways to Create a Simpler Home](https://www.simplehomemom.com/four-ways-to-create-a-simpler-home/).
+_Hi, I'm Kelly! I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom eight years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a simpler lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, and stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by teaching flexible planning methods and skills. Listen more about my take on simplifying things at home on a podcast I was interviewed on_ [_here_](https://www.stitcher.com/show/make-joy-normal-cozy-homeschooling/episode/keeping-it-simple-an-interview-with-kelly-79787253)_. And a blog of mine you may like:_ [_Four Ways to Create a Simpler Home_](https://www.simplehomemom.com/four-ways-to-create-a-simpler-home/)_._
 
-Kelly 😊
+_Kelly_ 😊
 
-![](/uploads/headshot.jpg)
+![A headshot picture of me.](/uploads/headshot.jpg "Headshot SHM")
