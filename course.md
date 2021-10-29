@@ -74,12 +74,13 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 * **Goal setting and mindset**
 
 <br>
-#### What you will find in this course:
+#### What you will find in this course
 
 * A guidebook to go along with the course full of worksheets, journal prompts, resources, and more
 * Text, videos, and images for each unit
 * You’ll have access to this course forever
 * Support through the course - I'm an email or message away
+
 <br>
 ### Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
 
