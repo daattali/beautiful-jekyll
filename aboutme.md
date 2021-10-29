@@ -8,10 +8,9 @@ full-width: true
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=consolas&color=%234DF79A&height=30&lines=HI+there%2C+I'm+Raihan+Khan!)](https://git.io/typing-svg)
 
 Who am I?
-
+- A software Engineer at [Appscode Inc.](https://appscode.com)
 - A competitive programmer since 2016
 - Participated in many national level contests as well as NCPC and ICPC Dhaka Regionals
-- Judge and Problem Setter of [Intra CoU Programming Contest 2020](https://toph.co/c/intra-cou-2020)
 - Solved over 2000+ problems in various online judges
 - A forever learner of data structure and algorithms
 - Interested in new technologies
