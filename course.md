@@ -34,12 +34,12 @@ And. _Are you looking for a community of other moms simplifying their home lives
 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. _/
 </style>
 <div id="mc_embed_signup">
-<form action="https://eepurl.us4.list-manage.com/subscribe/post?u=581b5bf0ab44ab0870d2a00c0&id=3026fc64c7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="https://eepurl.us4.list-manage.com/subscribe/post?u=581b5bf0ab44ab0870d2a00c0&id=3026fc64c7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="blank" novalidate>
 <div id="mc_embed_signup_scroll">
 <h2>GAIN ACCESS TO THE SIMPLE HOME MOM FREEBIE VAULT</h2>
 <div class="indicates-required"><span class="asterisk">_</span> indicates required</div>
 <div class="mc-field-group">
-<label for="mce-FNAME">Name  <span class="asterisk">_</span>
+<label for="mce-FNAME">Name  <span class="asterisk"></span>
 </label>
 <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
 </div>
@@ -79,6 +79,8 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 * You’ll have access to this course forever
 * Support through the course - I'm an email or message away
 
+### Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
+
 **Please note:** This course is not a one-time solution as I believe that life is a process of learning and growing. However, I promise you that this course is packed with things you can grow with going forward. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_. I’m so happy you are checking this course out to see if it would be helpful for you!
 
 #### Pricing
@@ -86,6 +88,8 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 $59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX). **Please note:** I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
 
 ![](/uploads/reviews-for-blog-1.jpg)
+
+### Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
 
 ### About me
 
