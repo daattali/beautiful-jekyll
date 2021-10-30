@@ -98,17 +98,17 @@ In the manifest below, I specified a "_subPath"_ parameter in the volumeMount wi
     kind: Deployment
     metadata:
       labels:
-        app: test-viedo
-      name: test-viedo
+        app: test-video
+      name: test-video
     spec:
       replicas: 1
       selector:
         matchLabels:
-          app: test-viedo
+          app: test-video
       template:
         metadata:
           labels:
-            app: test-viedo
+            app: test-video
         spec:
           volumes:
             - name: nas-video
@@ -116,7 +116,7 @@ In the manifest below, I specified a "_subPath"_ parameter in the volumeMount wi
                 claimName: nas-video-pvc
           containers:
           - image: nginx  
-    		name: test-viedo
+    		name: test-video
             volumeMounts:
             - mountPath: /video
               name: nas-video
