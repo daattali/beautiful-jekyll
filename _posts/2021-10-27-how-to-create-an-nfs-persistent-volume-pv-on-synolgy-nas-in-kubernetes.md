@@ -9,7 +9,7 @@ metadescription: Learn how to create an NFS persistent volume on Synology NAS in
 ---
 I have been learning about Kubernetes over the past couple of months and I thought I would move some of home multimedia workloads to kubernetes as a use case. It is necessary to go through the basics and courses but I find that I learn much faster and better with actual use cases. Although it isn't production grade stuff (_unless HTPC stuff is part of your job in which case you're awesome!_), I try to follow best practices and the way it would be done in the real world, even if it's overkill in my environment.
 
-I used to run a few HTPC services in Docker on my old Raspberry Pi 2 which I repurposed into a Wireguard VPN server with DDNS client. I run a single Kubernetes node with K3S on Ubuntu Server that is hosted on a second hand [Gygabite mini PC ](https://www.gigabyte.com/fr/Mini-PcBarebone/GB-BSi3-6100-rev-10#ov)equipped with a core-i3 and 8GB of RAM. 
+I used to run a few HTPC services in Docker on my old Raspberry Pi 2 which I repurposed into a Wireguard VPN server with DDNS client. I run a single Kubernetes node with K3S on Ubuntu Server that is hosted on a second hand [Gygabite mini PC ](https://www.gigabyte.com/fr/Mini-PcBarebone/GB-BSi3-6100-rev-10#ov)equipped with a core-i3 and 8GB of RAM.
 
 Anyway, part of this whole ordeal included to map NFS shares to containers. In the past on the RPi I did it quick and dirty by mounting the shares on the host OS in fstab and then mapping the mount point to the container. In Kubernetes I decided to do it properly with use persistent volumes (PV) and persistent volume claims (pvc).
 
@@ -91,6 +91,36 @@ You can then see it with _kubectl get pv/pvc_ with _STATUS = Bound_.
 ### Pod/deployment volume manifest
 
 The last thing left to do is to create a pod and connect the pvc to it. This is not the actual manifest nor image that I use in my context but I went for something simpler for the sake of this blog.
+
+In the manifest below, I specified a "_subPath"_ parameter in the volumeMount with "_tutorials_" value, meaning the volume in the pod will be mapped to this folder in the NAS share. Note that you can remove this property if you want to map the volume to the root of the share.
+
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      labels:
+        app: test-viedo
+      name: test-viedo
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: test-viedo
+      template:
+        metadata:
+          labels:
+            app: test-viedo
+        spec:
+          volumes:
+            - name: nas-video
+              persistentVolumeClaim:
+                claimName: nas-video-pvc
+          containers:
+          - image: nginx  
+    		name: test-viedo
+            volumeMounts:
+            - mountPath: /video
+              name: nas-video
+              subPath: tutorials
 
 This output should be:
 
