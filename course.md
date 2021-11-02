@@ -61,9 +61,12 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 <!--End mc_embed_signup-->
 
 #### Course Description
+
 _The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits.
 <br>
+
 #### Overview of the units
+
 * **Setting the stage for simplifying:** discovering your priorities and values; habits
 * **Decluttering**: basic concepts and a few specific areas: clothing, kid's stuff, maintenance decluttering
 * **Planning**: finding extra time, productivity, simplifying your to do list, helpful planning strategies for home life
@@ -77,12 +80,12 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 * You’ll have access to this course forever
 * Support through the course - I'm an email or message away
 
-<br>
 ### Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
 
 **Please note:** This course is not a one-time solution as I believe that life is a process of learning and growing. However, I promise you that this course is packed with things you can grow with going forward. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_. I’m so happy you are checking this course out to see if it would be helpful for you!
 
 #### Pricing
+
 $59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX). **Please note:** I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
 
 ![](/uploads/reviews-for-blog-1.jpg)
