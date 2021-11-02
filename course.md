@@ -73,6 +73,8 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 * **Routines**: daily routines in general; cleaning and tidying routines
 * **Goal setting and mindset**
 
+<br>
+
 #### What you will find in this course
 
 * A guidebook to go along with the course full of worksheets, journal prompts, resources, and more
