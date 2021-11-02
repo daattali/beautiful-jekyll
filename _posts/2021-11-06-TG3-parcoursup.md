@@ -10,7 +10,6 @@ published: true
 # 1. Les modalités d'inscription
 
 Répondre aux questions suivantes : 
-
 - connaissez-vous les outils indispensables pour l’inscription sur parcoursup ?
 Si oui, précisez lesquels. 
 - Avez-vous connaissance de la période d'inscription sur parcoursup?
