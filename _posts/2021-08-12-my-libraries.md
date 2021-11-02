@@ -11,3 +11,4 @@ title: My Libraries
 - [Get Crypto Price](https://pypi.org/project/get-crypto-price/)
 - [RSI Calculator](https://pypi.org/project/rsi-calculator/)
 - [TD Sequential Calculator](https://pypi.org/project/td-sequential-calculator/)
+- [Haimgard](https://pypi.org/project/haimgard/) 
