@@ -80,6 +80,8 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 * You’ll have access to this course forever
 * Support through the course - I'm an email or message away
 
+  <br>
+
 ### READY TO START SIMPLIFYING? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
 
 **Please note:** This course is not a one-time solution as I believe that life is a process of learning and growing. However, I promise you that this course is packed with things you can grow with going forward. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_. I’m so happy you are checking this course out to see if it would be helpful for you!
