@@ -16,3 +16,4 @@ title: My Projects
 - [TD Sequential Calculator](https://github.com/onuratakan/td_sequential_calculator)
 - [Haimgard](https://github.com/onuratakan/Haimgard)
 - [Speed Calculator](https://github.com/onuratakan/speed_calculator)
+- [Blur Image](https://github.com/onuratakan/blur_image)
