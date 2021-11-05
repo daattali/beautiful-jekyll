@@ -7,6 +7,7 @@ subtitle: ''
 ## Quick links
 
 * [Newest blogs](https://www.simplehomemom.com)
+* [FREEBIE master cleaning task list+How to Develop Cleaning and Tidying Routines in 4 Simple Steps](https://www.simplehomemom.com/how-to-develop-cleaning-and-tidying-routines-in-4-simple-steps/)
 * [Simple Planning Blogs](https://www.simplehomemom.com/tags/#simple%20planning) + [My Simple Planner](https://buy.stripe.com/28o02a7WCeWUdbi3cg) (just a purchase page..I'm working on an official planner page soon!)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
