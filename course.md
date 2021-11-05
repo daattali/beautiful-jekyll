@@ -14,9 +14,9 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 
 ### Looking for more ways to simplify your home life?
 
-I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back here to take the full course when you are ready!
+I understand that sometimes it's hard to get started. So, I put together a FREE course for you: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back here to take the full course when you are ready!
 
-_Are you looking for a community of other moms simplifying their home lives?_ This is a small sample of the free resources you'll gain access to by being apart of my monthly mail list. Signup below or signup by grabbing one of the free resources below.
+_Are you looking for a community of other moms simplifying their home lives?_ This is a small sample of the free resources you'll gain access to by being on my monthly mail list. Signup below or by grabbing one of the free resources.
 
 * [Create Your Simple Laundry Routine Worksheet](https://mailchi.mp/a5efd04962e4/simplelaundry)
 * [Plan Your Zero Spend Month Worksheets](https://mailchi.mp/8264c25ebc2a/zerospend)
@@ -85,7 +85,7 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 
 <br>
 
-**Please note:** This course is not a one-time solution as I believe that life is a process of learning and growing. However, I promise you that this course is packed with things you can grow with going forward. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_. I’m so happy you are checking this course out to see if it would be helpful for you!
+**Please note:** This course is not a one-time solution as I believe that life is a process of learning and growing. However, I promise you that this course is packed with things you can grow with going forward. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_!
 
 ##### Pricing
 
