@@ -10,9 +10,9 @@ subtitle: ''
 
 ### Sound good? Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
 
-I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back to this page to take the full course when you are ready!
+I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back here to take the full course when you are ready!
 
-And. _Are you looking for a community of other moms simplifying their home lives?_ This is a small sample of the free resources you'll gain access to by being apart of my monthly mail list. Click on the link to gain access to any freebie you'd like! You'll also gain full access to all of my freebies the next time I mail out a newsletter.
+_Are you looking for a community of other moms simplifying their home lives?_ This is a small sample of the free resources you'll gain access to by being apart of my monthly mail list. Signup below or signup by grabbing one of the free resources below.
 
 * [Create Your Simple Laundry Routine Worksheet](https://mailchi.mp/a5efd04962e4/simplelaundry)
 * [Plan Your Zero Spend Month Worksheets](https://mailchi.mp/8264c25ebc2a/zerospend)
@@ -23,8 +23,6 @@ And. _Are you looking for a community of other moms simplifying their home lives
 * [Free Digital Declutter Challenge](https://mailchi.mp/2537e5ab8d0f/free-digital-declutter-challenge)
 * [Printable Daily Planner Sheet](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)
 * [The Master Cleaning Task List Printable](https://mailchi.mp/b99d58a9c22d/master-cleaning-task-list)
-
-..and so much more. I add to the freebie vault regularly!
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
