@@ -96,6 +96,13 @@ $59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202
 
 ### Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
 
+**Helpful blogs of mine you may enjoy:**
+
+* [Five Ideas to Create a Simpler Home](https://www.simplehomemom.com/five-ideas-to-create-a-simpler-home/)
+* [How Autopiloting Your Home Life Can be a Good Thing](https://www.simplehomemom.com/How-Autopiloting-Your-Home-Life-Can-be-a-Good-Thing/)
+* [5 Key Routines to Help Simplify your Home Life](https://www.simplehomemom.com/5-key-routines-to-help-simplify-your-home-life/)
+* [10 Simple Habits to Create a Simpler Home](https://www.simplehomemom.com/10-simple-habits-to-create-a-simpler-home/)
+
 _Hi, I'm Kelly! I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom eight years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a simpler lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, and stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by teaching flexible planning methods and skills. Listen more about my take on simplifying things at home on a podcast I was interviewed on_ [_here_](https://www.stitcher.com/show/make-joy-normal-cozy-homeschooling/episode/keeping-it-simple-an-interview-with-kelly-79787253)_. And a blog of mine you may like:_ [_Four Ways to Create a Simpler Home_](https://www.simplehomemom.com/four-ways-to-create-a-simpler-home/)_._
 
 _Kelly_ 😊
