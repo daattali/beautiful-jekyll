@@ -8,7 +8,11 @@ subtitle: ''
 
 ![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
 
-### Sound good? Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
+#### Course Description
+
+_The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits. Sound good? Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
+
+### Looking for more ways to simplify your home life?
 
 I understand that sometimes it's hard to get started. So, I put together a FREE course to get you started: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back here to take the full course when you are ready!
 
@@ -59,10 +63,6 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 <!--End mc_embed_signup-->
 
 <br>
-
-#### Course Description
-
-_The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits.
 
 #### Overview of the units
 
