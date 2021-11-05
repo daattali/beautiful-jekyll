@@ -15,3 +15,4 @@ title: My Projects
 - [RSI Calculator](https://github.com/onuratakan/rsi_calculator)
 - [TD Sequential Calculator](https://github.com/onuratakan/td_sequential_calculator)
 - [Haimgard](https://github.com/onuratakan/Haimgard)
+- [Speed Calculator](https://github.com/onuratakan/speed_calculator)
