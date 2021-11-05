@@ -13,3 +13,4 @@ title: My Libraries
 - [TD Sequential Calculator](https://pypi.org/project/td-sequential-calculator/)
 - [Haimgard](https://pypi.org/project/haimgard/) 
 - [Speed Calculator](https://pypi.org/project/speed-calculator/) 
+- [Blur Image](https://pypi.org/project/blur-image/) 
