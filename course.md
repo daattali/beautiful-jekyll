@@ -4,7 +4,7 @@ title: Course
 subtitle: ''
 
 ---
-### Hey mama! Do you feel overwhelmed and don't know how to start? Simplify Your Home Life: a course for busy moms is a self-paced course that will help you on your simplifying journey.
+### Hey mama! Do you feel overwhelmed with your home life and don't know how to start? If so, you've come to the right place. Read on!
 
 ![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
 
