@@ -7,8 +7,3 @@ css:
     - /assets/css/live_feed.css
 ---
 
-# Artists & Dealers
-
-<div class="live-feed-container"><div class="feed-box"><div class="video-feed"><div class="video-box">&nbsp;</div></div><div class="chat-feed">&nbsp;</div></div></div>
-
-&nbsp;
