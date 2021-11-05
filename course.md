@@ -79,12 +79,6 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 * You’ll have access to this course forever
 * Support through the course - I'm an email or message away
 
-<br>
-
-### READY TO START SIMPLIFYING? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
-
-<br>
-
 **Please note:** This course is not a one-time solution as I believe that life is a process of learning and growing. However, I promise you that this course is packed with things you can grow with going forward. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_!
 
 ##### Pricing
@@ -93,7 +87,9 @@ $59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202
 
 ![](/uploads/reviews-for-blog-1.jpg)
 
-### Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
+### READY TO START SIMPLIFYING? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
+
+<br>
 
 **Helpful blogs of mine you may enjoy:**
 
