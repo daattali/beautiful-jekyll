@@ -8,7 +8,7 @@ subtitle: Registration and benefits of Fur Squared
 
 ### &nbsp;
 
-To find out more about the Sponsorship bundle please use the following link:&nbsp;[https://fursquared.square.site/](https://fursquared.square.site/)&nbsp;to find out when more information is avalible&nbsp;
+To find out more about the Sponsorship bundle please use the following link:&nbsp;[https://fursquared.square.site/](https://fursquared.square.site/)&nbsp;more details coming soon.
 
 &nbsp;
 
