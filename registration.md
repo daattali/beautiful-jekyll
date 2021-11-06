@@ -10,16 +10,6 @@ subtitle: Registration and benefits of Fur Squared
 
 To find out more about the Sponsorship bundle please use the following link:&nbsp;[https://fursquared.square.site/](https://fursquared.square.site/)&nbsp;more details coming soon.
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
 Follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared){: target="_blank" rel="noopener"} to keep up to date on any updates that may come this way.
 
 Any questions or concerns? Email us at:&nbsp;[registration@fursquared.com](mailto:registration@fursquared.com)
