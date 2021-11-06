@@ -8,6 +8,8 @@ subtitle: Information about the Roaring 2.0s and convention game!
 
 Fur Squared 2022 Theming Coming Soon\!\!\!
 
+We aren't conspiring to keep you in the dark, but there is a Con-spiracy afoot\!
+
 &nbsp;
 
 # Play along\!
