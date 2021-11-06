@@ -8,7 +8,7 @@ subtitle: Registration and benefits of Fur Squared
 
 ### &nbsp;
 
-To find out more about the Sponsorship bundle as well as where to individually purchase the shirt, mug, or pin please use the following link:&nbsp;[https://fursquared.square.site/](https://fursquared.square.site/)
+To find out more about the Sponsorship bundle please use the following link:&nbsp;[https://fursquared.square.site/](https://fursquared.square.site/)&nbsp;to find out when more information is avalible&nbsp;
 
 &nbsp;
 
