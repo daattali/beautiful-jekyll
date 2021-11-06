@@ -62,15 +62,15 @@ First: navigate to this link:
 
 [https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20](https://invite.cam/U2FsdGVkX19/8Gosr/v+BGRTbVbSwUvsdWIOPISmdJ2b2FoojwvbC8GOB4ULbdaoUsZUTKqXazSAQ/xiwc9xe6cwB3TMw7lkI6bd3HHWjPMXNQ2EeG9L5TX39jleaW20){: target="_blank" rel="noopener"}
 
-You'll be asked to enter a display name. You’ll also get a request to allow your webcam.&nbsp; Click accept&nbsp; 
+You'll be asked to enter a display name. You’ll also get a request to allow your webcam.&nbsp; Click accept&nbsp;
 
 ![](assets/img/webcam-sel.png)
 
-You’ll have two options.&nbsp; Click “join room with camera” 
+You’ll have two options.&nbsp; Click “join room with camera”
 
 ![](assets/img/connect-with-webcam.png)
 
-Select “OBS camera” or “Streamlabs OBS”&nbsp; as your video source and no audio. 
+Select “OBS camera” or “Streamlabs OBS”&nbsp; as your video source and no audio.
 
 ![](assets/img/source-select.png)
 
