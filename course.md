@@ -4,17 +4,17 @@ title: Course
 subtitle: ''
 
 ---
-### Hey mama! Do you feel overwhelmed with your home life and don't know how to start? If so, you've come to the right place. Read on!
+### Hey mama! Do you feel overwhelmed with your home life and don't know how to start to create a simple home? If so, you've come to the right place!
 
 ![An image overview of the course.](/uploads/simplify-your-home-life-shm.jpg "Simplify Your Home Life SHM")
 
 #### Course Description
 
-_The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits. Sound good? Ready to start simplifying? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
+_The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits. Sound good? Ready to start simplifying and create a **simple home**? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
 
-### LOOKING FOR MORE WAYS TO SIMPLIFY YOUR HOME LIFE?
+### LOOKING FOR MORE WAYS TO SIMPLIFY YOUR HOME LIFE AND CREATE A SIMPLE HOME?
 
-I understand that sometimes it's hard to get started. So, I put together a FREE course for you: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back here to take the full course when you are ready!
+I understand that sometimes it's hard to get started. So, I put together a FREE course for you: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back here to take the full course when you are ready! Here's to creating a simple home!
 
 _Are you looking for a community of other moms simplifying their home lives?_ This is a small sample of the free resources you'll gain access to by being on my monthly mail list. Signup below or by grabbing one of the free resources.
 
@@ -79,7 +79,7 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 * You’ll have access to this course forever
 * Support through the course - I'm an email or message away
 
-**Please note:** This course is not a one-time solution as I believe that life is a process of learning and growing. However, I promise you that this course is packed with things you can grow with going forward. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_!
+**Please note:** This course is not a one-time solution as I believe that life is a process of learning and growing. However, I promise you that this course is packed with things you can grow with going forward. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_! Let's start creating our **simple home**!
 
 ##### Pricing
 
@@ -87,7 +87,7 @@ $59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202
 
 ![](/uploads/reviews-for-blog-1.jpg)
 
-### READY TO START SIMPLIFYING? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
+### READY TO START SIMPLIFYING AND CREATING A SIMPLE HOME? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
 
 <br>
 
@@ -98,7 +98,7 @@ $59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202
 * [5 Key Routines to Help Simplify your Home Life](https://www.simplehomemom.com/5-key-routines-to-help-simplify-your-home-life/)
 * [10 Simple Habits to Create a Simpler Home](https://www.simplehomemom.com/10-simple-habits-to-create-a-simpler-home/)
 
-_Hi, I'm Kelly! I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom eight years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a simpler lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, and stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by teaching flexible planning methods and skills. Listen more about my take on simplifying things at home on a podcast I was interviewed on_ [_here_](https://www.stitcher.com/show/make-joy-normal-cozy-homeschooling/episode/keeping-it-simple-an-interview-with-kelly-79787253)_. And a blog of mine you may like:_ [_Four Ways to Create a Simpler Home_](https://www.simplehomemom.com/four-ways-to-create-a-simpler-home/)_._
+_Hi, I'm Kelly! I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom eight years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a simpler lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, and stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by teaching flexible planning methods and skills. Listen more about my take on simplifying things at home/creating a simple home on a podcast I was interviewed on_ [_here_](https://www.stitcher.com/show/make-joy-normal-cozy-homeschooling/episode/keeping-it-simple-an-interview-with-kelly-79787253)_. And a blog of mine you may like:_ [_Four Ways to Create a Simpler Home_](https://www.simplehomemom.com/four-ways-to-create-a-simpler-home/)_._
 
 _Kelly_ 😊
 
