@@ -78,7 +78,7 @@ subtitle:
         <td><a href="https://openreview.net/forum?id=1GNV9SW95eJ">Learning Off-policy for Online Planning</a><br>
             <div class="pubauthor">Harshit Sikchi, Wenxuan Zhou, David Held<br>
             </div>
-            <div class="pubjournal">Conference on Robot Learning (CoRL), 2021 - <award>Oral presentation</award> (Selection rate 6.5%)</div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2021 - <award>Oral presentation</award> (Selection rate 6.5%); <award>Best Paper Finalist</award></div>
             <div id="div2021safetyenvelopes" class="pubInfo"></div>
             <br>
         </td>
