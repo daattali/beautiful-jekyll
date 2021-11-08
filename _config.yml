@@ -3,7 +3,7 @@ title: Simple Home Mom
 description: Helping moms simplify home life.
 author: Kelly Briggs
 navbar-links:
-  Popular: popular
+  Start here: popular
   Resources:
   - Freebies: "/freebies/"
   - The Simple Meal Planning Guide: "/the-simple-meal-planning-guide/"
