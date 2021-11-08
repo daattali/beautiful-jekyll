@@ -66,6 +66,8 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 
 ### SIMPLIFY YOUR HOME LIFE: A COURSE FOR BUSY MOMS:
 
+<br>
+
 #### Overview of the units
 
 * **Setting the stage for simplifying:** discovering your priorities and values; habits
