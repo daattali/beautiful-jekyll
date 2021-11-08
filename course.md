@@ -14,7 +14,7 @@ _The Simplify Your Home Life: a course for busy moms_ is a six week online cours
 
 ### LOOKING FOR MORE WAYS TO SIMPLIFY YOUR HOME LIFE AND CREATE A SIMPLE HOME?
 
-I understand that sometimes it's hard to get started. So, I put together a FREE course for you: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back here to take the full course when you are ready! Here's to creating a simple home!
+I understand that sometimes it's hard to get started. So, I put together a FREE course for you: **10 Questions to Help you Simplify Your Home Life** + an accompanying workbook. You can access that [HERE](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life) and then come back here to take the full course when you are ready! Here's to creating a **simple home**!
 
 _Are you looking for a community of other moms simplifying their home lives?_ This is a small sample of the free resources you'll gain access to by being on my monthly mail list. Signup below or by grabbing one of the free resources.
 
