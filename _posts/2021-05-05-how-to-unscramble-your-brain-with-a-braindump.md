@@ -28,7 +28,7 @@ Having too many ideas and not jotting them down somehere can lead to a scrambly 
 
 #### So what's a braindump?
 
-In my definition: A braindump is essentially writing your "brain down on paper". It’s writing down everything and anything (usually tasks or ideas) that comes to mind that keeps floating around in there. You can get fancier by categorizing or [prioritizing too](https://www.simplehomemom.com/how-a-priority-pyramid-can-change-your-life/). 
+In my definition: A braindump is essentially writing your "brain down on paper". It’s writing down everything and anything (usually tasks or ideas) that comes to mind that keeps floating around in there. You can get fancier by categorizing or [prioritizing too](https://www.simplehomemom.com/how-a-priority-pyramid-can-change-your-life/).
 
 **Other braindump descriptions:**
 
@@ -48,7 +48,7 @@ _Ok, now we all understand what a braindump specifically is now. Right? Does bra
 * Keep a notebook or digital notepad handy for those times you really need to write things down. I'm a big fan of [bullet journaling](https://www.tinyrayofsunshine.com/blog/bullet-journal-guide). So much so that after years of bullet journaling, I created my own simple planner that's based on the method, but has a twist that's uniquely mine. You can check out my planner called _My Simple Planner_ [HERE](https://checkout.stripe.com/pay/cs_live_a17VWxl5dPsNfr8rHt4B1l3kRSSPeSz6Ybx9I7EDIyaxRiYTWpVrH0RK0K#fidkdWxOYHwnPyd1blppbHNgWjA0T1FER31HQU9yUnJyMzJzUklDRGd3TEZHRlJVNGJJVUhvbm5haXdGN2BQdEJmRkprbnJCfWBHSjB1aWJxQ1w3S05tf0hUTVR0aE52PUlNYmYzYEo9T09ENTVBaExHUE5qbScpJ3VpbGtuQH11anZgYUxhJz8nNz1qNTdkMlJGYFJQYWdsNmZiJyknd2BjYHd3YHcnPydtcXF1dj8qKnJycit2bGh1aWBtamhgaGpoK2ZqaConeCUl).
 * Add to your braindump as you go throughout the day (because there's nothing more annoying than waking up at 3am remembering something lol! Been there).
 * Revisit your braindump when feeling less scrambled eggs and decide what to do with those things. Move, remove, or get done.
-* *Here are more tips on a blog [here](https://www.lifehack.org/articles/productivity/how-to-do-the-ultimate-brain-dump.html) on braindumping. 
+* *Here are more tips on a blog [here](https://www.lifehack.org/articles/productivity/how-to-do-the-ultimate-brain-dump.html) on braindumping.
 
 #### 4 signs that you need to do a braindump to unscramble your brain
 
@@ -56,11 +56,15 @@ _Ok, now we all understand what a braindump specifically is now. Right? Does bra
 
 Braindumping to unscramble your brain is a relatively simple concept and when put into practice, it can be so helpful. Make sure to have supplies on hand, braindump as needed, and enjoy!
 
-# FREE braindump printable planning page and FREE
+# FREE braindump printable planning page 
 
 ![A picture of the braindump printable planning pages.](/uploads/braindump-printable-planner-pages.jpg "How to Unscramble Your Brain with a Braindump Printables SHM")
 
-If braindumping is new to you or you just enjoy freebie planning pages, you may enjoy the braindumping printable planning page I put together. You can find that braindump printable [HERE](https://mailchi.mp/df5816e44b8d/braindump-planner-pages). _I also have a FREE class on beginner planning basics. You can gain access to that by being on my mail list. Signup below and you'll receive a link to the freebie vault where the class is housed in your confirmation email._
+If braindumping is new to you or you just enjoy freebie planning pages, you may enjoy the braindumping printable planning page I put together. You can find that braindump printable [HERE](https://mailchi.mp/df5816e44b8d/braindump-planner-pages). 
+
+# Want to get better at simple planning? FREE planning class
+
+_I also have a FREE class on beginner planning basics. You can gain access to that by being on my mail list. Signup below and you'll receive a link to the freebie vault where the class is housed in your confirmation email._
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -95,6 +99,8 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames\[1\]='FNAME';ftypes\[1\]='text';fnames\[0\]='EMAIL';ftypes\[0\]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
+
+
 **SAVE FOR FUTURE REFERENCE:**
 
 **Other blogs of mine you may enjoy:**
