@@ -47,6 +47,8 @@ _Ok, now we all understand what a braindump specifically is now. Right? Does bra
 
 # How to unscramble your brain with a braindump: tips for making braindumps
 
+<br>
+
 * Keep a notebook or digital notepad handy for those times you really need to write things down. I'm a big fan of [bullet journaling](https://www.tinyrayofsunshine.com/blog/bullet-journal-guide). So much so that after years of bullet journaling, I created my own simple planner that's based on the method, but has a twist that's uniquely mine. You can check out my planner called _My Simple Planner_ [HERE](https://checkout.stripe.com/pay/cs_live_a17VWxl5dPsNfr8rHt4B1l3kRSSPeSz6Ybx9I7EDIyaxRiYTWpVrH0RK0K#fidkdWxOYHwnPyd1blppbHNgWjA0T1FER31HQU9yUnJyMzJzUklDRGd3TEZHRlJVNGJJVUhvbm5haXdGN2BQdEJmRkprbnJCfWBHSjB1aWJxQ1w3S05tf0hUTVR0aE52PUlNYmYzYEo9T09ENTVBaExHUE5qbScpJ3VpbGtuQH11anZgYUxhJz8nNz1qNTdkMlJGYFJQYWdsNmZiJyknd2BjYHd3YHcnPydtcXF1dj8qKnJycit2bGh1aWBtamhgaGpoK2ZqaConeCUl).
 * Add to your braindump as you go throughout the day (because there's nothing more annoying than waking up at 3am remembering something lol! Been there).
 * Revisit your braindump when feeling less scrambled eggs and decide what to do with those things. Move, remove, or get done.
@@ -58,11 +60,11 @@ _Ok, now we all understand what a braindump specifically is now. Right? Does bra
 
 Braindumping to unscramble your brain is a relatively simple concept and when put into practice, it can be so helpful. Make sure to have supplies on hand, braindump as needed, and enjoy!
 
-# FREE braindump printable planning page 
+# FREE braindump printable planning page
 
 ![A picture of the braindump printable planning pages.](/uploads/braindump-printable-planner-pages.jpg "How to Unscramble Your Brain with a Braindump Printables SHM")
 
-If braindumping is new to you or you just enjoy freebie planning pages, you may enjoy the braindumping printable planning page I put together. You can find that braindump printable [HERE](https://mailchi.mp/df5816e44b8d/braindump-planner-pages). 
+If braindumping is new to you or you just enjoy freebie planning pages, you may enjoy the braindumping printable planning page I put together. You can find that braindump printable [HERE](https://mailchi.mp/df5816e44b8d/braindump-planner-pages).
 
 # Want to get better at simple planning? FREE planning class
 
@@ -101,7 +103,6 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames\[1\]='FNAME';ftypes\[1\]='text';fnames\[0\]='EMAIL';ftypes\[0\]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-
 
 **SAVE FOR FUTURE REFERENCE:**
 
