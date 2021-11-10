@@ -102,6 +102,8 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 
 **SAVE FOR FUTURE REFERENCE:**
 
+![Pen lying on a notebook with the title of the blog over top of it.](/uploads/how-to-unscramble-your-brain-with-a-braindump-shm-blog.png "How to Unscramble Your Brain with a Braindump SHM")
+
 **Other blogs of mine you may enjoy:**
 
 * [10 Ways to Simplify Your to do List](https://www.simplehomemom.com/10-ways-to-simplify-your-to-do-list/)
