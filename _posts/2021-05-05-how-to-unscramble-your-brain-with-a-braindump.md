@@ -20,7 +20,7 @@ share-img: ''
 redirect_from: []
 
 ---
-Scrambled eggs brain. Does that sound familiar sometimes? I know it does for me. We may feel scrambled when we have a lot on our brains – when we're thinking about all of the tasks and ideas that keep floating around. And then the next thing we know, we forget what they were. Sound familiar? Today on the blog, I'm sharing about _how to unscramble your brain with a braindump._
+Scrambled eggs brain. Does that sound familiar sometimes? I know it does for me. We may feel scrambled when we have a lot on our brains – when we're thinking about all of the tasks and ideas that keep floating around. And then the next thing we know, we forget what they were. We then need to unscramble those things we forget about. Sound familiar? Today on the blog, I'm sharing about **_how to unscramble your brain_** _with a braindump._
 
 > “Your mind is for having ideas, not holding them. There is no reason to ever have the same thought twice, unless you like having that thought.” - [David Allen](https://gettingthingsdone.com/), author of [_Getting Things Done_](https://fourminutebooks.com/getting-things-done-summary/#:\~:text=1%2DSentence%2DSummary%3A%20Getting,on%20the%20task%20at%20hand.)
 
