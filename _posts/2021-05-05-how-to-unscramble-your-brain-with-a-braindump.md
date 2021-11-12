@@ -62,7 +62,7 @@ If braindumping is new to you or you just enjoy freebie planning pages, you may 
 
 # Want to get better at simple planning? FREE planning class
 
-_I also have a FREE class on beginner planning basics. You can gain access to that by being on my mail list. Signup below and you'll receive a link to the freebie vault where the class is housed in your confirmation email._
+_I also have a FREE class on beginner planning basics in my freebie vault. You can gain access to that by being on my mail list. Signup below and you'll receive a link to the vault in your confirmation email._
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
