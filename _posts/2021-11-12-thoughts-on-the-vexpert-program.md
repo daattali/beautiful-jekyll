@@ -6,9 +6,9 @@ subtitle: ''
 metadescription: ''
 
 ---
-A couple days ago a received a call for content communication from the one and only Corey Romero around the vExpert program. While I try to keep my thoughts away from my blog to focus on technical content, I also acknowledge everything the vExpert program brought to me and it wouldn't be right to oblige and write a quick piece about it.
-
 ![](/img/vexpert-blog-pic1.png)
+
+A couple days ago a received a call for content communication from the one and only Corey Romero around the vExpert program. While I try to keep my thoughts away from my blog to focus on technical content, I also acknowledge everything the vExpert program brought to me and it wouldn't be right to oblige and write a quick piece about it.
 
 ### What is the vExpert program ?
 
