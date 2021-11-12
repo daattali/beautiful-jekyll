@@ -31,7 +31,7 @@ Now I also wanted to point out that getting the vExpert award does not necessari
 When I first got the award back in 2016, the vExpert program had already been around for several years (not sure when it started exactly). While it was a well oiled machine, Corey Romero and his team have been working hard over the years to get it off the ground and keep improving it. 
 
 * There is now a vExpert portal where you find all your licenses, product downloads, badges, access to the Slack channel, invitations to exclusive events such as webinars... A great location to consolidate all this stuff.
-* A vExpert directory has been put in place to legitimize your belonging to the community. [That's me](https://vexpert.vmware.com/directory/832).
+* A vExpert directory has been put in place to legitimize your belonging to the community. [Hey that's me](https://vexpert.vmware.com/directory/832).
 * Sub-programs have been created for those specializing in specific areas such as vSAN, NSX, EUC...
 * vExpert Pro, a network of vExperts around the world who are willing to identify and recruit new vExperts in their local communities and be mentors for these new vExperts.
 
