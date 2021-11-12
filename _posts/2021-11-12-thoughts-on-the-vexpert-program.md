@@ -8,6 +8,8 @@ metadescription: ''
 ---
 A couple days ago a received a call for content communication from the one and only Corey Romero around the vExpert program. While I try to keep my thoughts away from my blog to focus on technical content, I also acknowledge everything the vExpert program brought to me and it wouldn't be right to oblige and write a quick piece about it.
 
+![](/img/vexpert-blog-pic1.png)
+
 ### What is the vExpert program ?
 
 For those who don't know what the vExpert program is, it is a global evangelism and advocacy program that benefits both VMware and the vExperts, it is comparable to Microsoft's MVP program. You can become a vExpert if you participate in the community in a number of ways, it could be through blogs, talks, local community events, webinars, VMTN heroes, you name it.
