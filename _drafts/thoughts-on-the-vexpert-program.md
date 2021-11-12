@@ -26,6 +26,17 @@ The benefits that go along with it are great and all but I would say the sense o
 
 Now I also wanted to point out that getting the vExpert award does not necessarily mean that one is an "expert" per se although it is often the case. It means you are active in the community and going the extra mile. **Being a vExpert does not give bragging right**. in fact it is quite the opposite, it requires humility as you need to be 100% sure of whatever you say online (at least the technical stuff) since people will take your vExpert word for it.
 
+### The evolution of the program
+
+When I first got the award back in 2016, the vExpert program had already been around for several years (not sure when it started exactly). While it was a well oiled machine, Corey Romero and his team have been working hard over the years to get it off the ground and keep improving it. 
+
+* There is now a vExpert portal where you find all your licenses, product downloads, badges, access to the Slack channel, invitations to exclusive events such as webinars... A great location to consolidate all this stuff.
+* A vExpert directory has been put in place to legitimize your belonging to the community. [That's me](https://vexpert.vmware.com/directory/832).
+* Sub-programs have been created for those specializing in specific areas such as vSAN, NSX, EUC...
+* vExpert Pro, a network of vExperts around the world who are willing to identify and recruit new vExperts in their local communities and be mentors for these new vExperts.
+
+![](/img/vexpert-blog-pic2.png)
+
 ### Conclusion
 
 How would I go about wrapping up this piece now? I think the takeway of all this is that the vExpert program is a great initiative to grow the VMware community, improve product advocacy, help people starting or cruising through their virtualization journeys and overall meet great people and sometimes friends!
