@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'TG3 : PARCOURSUP'
+title: 'TG4 : PARCOURSUP'
 published: true
 ---
 
@@ -8,14 +8,12 @@ published: true
 
 
 # 1. Les modalités d'inscription
-
 Répondre aux questions suivantes : 
 - connaissez-vous les outils indispensables pour l’inscription sur parcoursup ?
 Si oui, précisez lesquels. 
 - Avez-vous connaissance de la période d'inscription sur parcoursup?
 
 # 2. La saisie des voeux
-
 - Suis-je dans l'obligation d'émettre un voeu lors de mon inscription?
 - Quand a lieu la confirmation de vos voeux?
 
