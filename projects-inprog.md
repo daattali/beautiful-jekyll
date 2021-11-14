@@ -110,7 +110,7 @@ share-img: /assets/img/inprog.jpg
       </a>
     </div>
     <div class="project-entry">
-        O projeto visão é feito e produzido pelo capítulo EMBS CIMATEC, construindo um sistema WEB, onde nele utilizamos visão computacional para melhorar a pesquisa e o cadastramento de pacientes em hospitais, clínicas ou enfermarias em escolas. Com isso, melhorando mais a situação destes locais, que por sua vez, ainda não atingi o nível de atendimento necessário para a população 
+        O projeto visão tem o intuito de construir um sistema WEB utilizando visão computacional para melhorar a pesquisa e o cadastramento de pacientes em hospitais, clínicas e enfermarias de escolas, tornando o sistema desses locais mais rápido e eficiente.
     </div> 
 </article>
 </div>

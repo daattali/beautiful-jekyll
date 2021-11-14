@@ -22,9 +22,9 @@ Imagine facilitar a vida de atendentes e recepcionistas de hospitais na hora de 
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="25%"><center>Pedro Barros</center></td>
+            <td width="50%"><center>Pedro Barros</center></td>
             <td></td>
-            <td width="25%"><center>Alexandre Magno</center></td>
+            <td width="50%"><center>Alexandre Magno</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Voluntário desde 2021 <p/> Líder do projeto</center></small></td>
