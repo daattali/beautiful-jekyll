@@ -37,18 +37,18 @@ Após o processamento das informações, a decisão do próximo movimento do jog
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="33%"><center>Heitor Rivera</center></td>
+            <td width="33.33%"><center>Heitor Rivera</center></td>
             <td></td>
-            <td width="33%"><center>Fernando Schettini</center></td>
+            <td width="33.33%"><center>Fernando Schettini</center></td>
             <td></td>
-            <td width="33%"><center>Gustavo Pacheco</center></td>
+            <td width="33.33%"><center>Gustavo Pacheco</center></td>
           </tr>
           <tr style="text-align: center" >
-            <td style="vertical-align: top"><small><center>Voluntário desde 2020 <p/> Líder do projeto</center></small></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2021 <p/> Líder do projeto</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2020<p/> Sub-Líder do projeto</center></small></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2021 <p/> Sub-Líder do projeto</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
+            <td style="vertical-align: top"><small><center>Voluntária desde 2021</center></small></td>
           </tr>
         </tbody>
       </table>
