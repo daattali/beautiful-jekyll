@@ -62,6 +62,59 @@ share-img: /assets/img/inprog.jpg
 </div>
 
 
+<!-- Projeto Raspode -->
+<div data-aos="fade-left" data-aos-offset="150"> 
+<article class="project-preview-left">
+    <a href="https://ieeecimatec.github.io/project-raspode/">
+      <h2 class="project-title">Projeto RASpode</h2>      
+    </a>
+    <p class="project-meta project-meta-left">
+        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em junho de 2021
+    </p>    
+    <div class="project-image project-image-small">
+      <a href="https://ieeecimatec.github.io/project-raspode/">
+        <img src="{{ 'assets/img/raspode/raspode_projetos_andamentos.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      </a>
+    </div>
+    <div class="project-image project-image-short">
+      <a href="https://ieeecimatec.github.io/project-raspode/">
+        <img src="{{ 'assets/img/raspode/raspode_projetos_andamentos.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      </a>
+    </div>
+    <div class="project-entry">
+      O projeto Raspode consiste na contrução de um robô hexapode capaz de se locomover em diferentes tipos de terreno, desviando de obstáculos e se adaptando a diferentes tipos de ambientes.
+    </div> 
+</article>
+</div>
+
+
+<!-- Projeto Map Vision -->
+<div data-aos="fade-right" data-aos-offset="150"> 
+<article class="project-preview-right">
+    <a href="https://ieeecimatec.github.io/project-mapvision/">
+      <h2 class="project-title">Projeto Map Vision</h2>      
+    </a>
+    <p class="project-meta project-meta-left">
+        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em junho de 2021
+    </p>    
+    <div class="project-image project-image-small">
+      <a href="https://ieeecimatec.github.io/project-mapvision/">
+        <img src="{{ 'assets/img/mapvision/map_projetos_andamento.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      </a>
+    </div>
+    <div class="project-image project-image-short">
+      <a href="https://ieeecimatec.github.io/project-mapvision/">
+        <img src="{{ 'assets/img/mapvision/map_projetos_andamento.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      </a>
+    </div>
+    <div class="project-entry">
+      O MapVision é um sistema de mapeamento 3D baseado em duas câmeras mono e tem como objetivo fazer reconhecimento de áreas remotas e com isso orientar a movimentação de robôs que desejam percorrer por elas.
+    </div> 
+</article>
+</div>
+
 <!-- Projeto Mão-Espelhada -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
@@ -88,7 +141,6 @@ share-img: /assets/img/inprog.jpg
 </article>
 </div>
 
-
 <!-- Projeto Visão -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
@@ -110,7 +162,7 @@ share-img: /assets/img/inprog.jpg
       </a>
     </div>
     <div class="project-entry">
-     Projeto do Embs que utiliza a visão computacional para cadastrar e mostrar dados de pacientes.  
+        O projeto visão tem o intuito de construir um sistema WEB utilizando visão computacional para melhorar a pesquisa e o cadastramento de pacientes em hospitais, clínicas e enfermarias de escolas, tornando o sistema desses locais mais rápido e eficiente.
     </div> 
 </article>
 </div>
@@ -142,3 +194,29 @@ share-img: /assets/img/inprog.jpg
 </article>
 </div>
 
+
+<!-- Projeto PetIEEE -->
+<div data-aos="fade-left" data-aos-offset="150"> 
+<article class="project-preview-left">
+    <a href="https://ieeecimatec.github.io/project-petieee/">
+      <h2 class="project-title">Projeto PetIEEE</h2>      
+    </a>
+    <p class="project-meta project-meta-left">
+        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em junho de 2021
+    </p>    
+    <div class="project-image project-image-small">
+      <a href="https://ieeecimatec.github.io/project-petieee/">
+        <img src="{{ 'assets/img/petieee/petieee_projetos_andamento.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      </a>
+    </div>
+    <div class="project-image project-image-short">
+      <a href="https://ieeecimatec.github.io/project-petieee/">
+        <img src="{{ 'assets/img/petieee/petieee_projetos_andamento.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      </a>
+    </div>
+    <div class="project-entry">
+     Um projeto de um robô auxiliar de idosos, principalmente se tratando da rotina deles, possuindo as funções de checagem do idoso via comandos de voz.
+    </div> 
+</article>
+</div>
