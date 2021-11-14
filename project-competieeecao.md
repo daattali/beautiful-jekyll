@@ -5,11 +5,11 @@ layout: page
 cover-img: /assets/img/competieeecao/competicao.png
 ---
 
-## Quem somos? 
-
 O projeto competIEEEção é uma iniciativa dentro do RAS e visa introduzir o IEEE – CIMATEC ao mundo das competições de robótica.
 
-E como a equipe competitiva do RAS, nosso objetivo é levar o IEEE em campeonatos de robótica de todos os tamanhos! Atualmente, temos como objetivo participar de um campeonato de futebol da RobôCup, a CBR, na categoria very small soccer. Construiremos nossos próprios robôs jogadores, controlados por visão computacional e criaremos um time para jogar contra outros nos torneios!
+## Quem somos? 
+
+Como a equipe competitiva do RAS, nosso objetivo é levar o IEEE em campeonatos de robótica de todos os tamanhos! Atualmente, temos como objetivo participar de um campeonato de futebol da RobôCup, a CBR, na categoria very small soccer. Construiremos nossos próprios robôs jogadores, controlados por visão computacional e criaremos um time para jogar contra outros nos torneios!
 
 
 ## Nosso Objetivo:
