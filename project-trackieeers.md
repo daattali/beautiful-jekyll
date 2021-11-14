@@ -19,7 +19,7 @@ O projeto inclui modelagem 3D no software SolidWorks, cálculos de ganhos de ger
           <tr>
             <th><center><img src="{{ 'assets/img/ieee_logo.png' | relative_url }}" width="100" alt="Arley" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/ieee_logo.png' | relative_url }}" width="100" alt="Felipe" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/ieee_logo.png' | relative_url }}" width="100" alt="Felipe Leão" class="img-fluid rounded-circle"/></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/ieee_logo.png' | relative_url }}" width="100" alt="João Gabriel" class="img-fluid rounded-circle"/></center></th>
             <th></th>
@@ -30,7 +30,7 @@ O projeto inclui modelagem 3D no software SolidWorks, cálculos de ganhos de ger
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
             <td width="25%"><center>Arley Matos</center></td>
             <td></td>
-            <td width="25%"><center>Felipe</center></td>
+            <td width="25%"><center>Felipe Leão</center></td>
             <td></td>
             <td width="25%"><center>João Gabriel</center></td>
             <td></td>

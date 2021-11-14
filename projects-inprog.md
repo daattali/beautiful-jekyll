@@ -35,7 +35,7 @@ share-img: /assets/img/projects-inprog.jpg
 </div>
 
 
-<!-- Projeto: CompetIEEEção -->
+<!-- CompetIEEEção -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
     <a href="https://ieeecimatec.github.io/project-competieeecao/">
@@ -62,11 +62,11 @@ share-img: /assets/img/projects-inprog.jpg
 </div>
 
 
-<!-- Projeto Raspode -->
+<!-- Raspode -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
     <a href="https://ieeecimatec.github.io/project-raspode/">
-      <h2 class="project-title">Projeto RASpode</h2>      
+      <h2 class="project-title">RASpode</h2>      
     </a>
     <p class="project-meta project-meta-left">
         <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
@@ -89,11 +89,11 @@ share-img: /assets/img/projects-inprog.jpg
 </div>
 
 
-<!-- Projeto Map Vision -->
+<!-- Map Vision -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
     <a href="https://ieeecimatec.github.io/project-mapvision/">
-      <h2 class="project-title">Projeto Map Vision</h2>      
+      <h2 class="project-title">Map Vision</h2>      
     </a>
     <p class="project-meta project-meta-left">
         Iniciado em junho de 2021
@@ -115,11 +115,11 @@ share-img: /assets/img/projects-inprog.jpg
 </article>
 </div>
 
-<!-- Projeto Mão-Espelhada -->
+<!-- Mão-Espelhada -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
     <a href="https://ieeecimatec.github.io/project-mao_espelhada/">
-      <h2 class="project-title">Projeto Mão-Espelhada</h2>      
+      <h2 class="project-title">Mão-Espelhada</h2>      
     </a>
     <p class="project-meta project-meta-left">
         <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
@@ -142,11 +142,11 @@ share-img: /assets/img/projects-inprog.jpg
 </div>
 
 
-<!-- Projeto PetIEEE -->
+<!-- PetIEEE -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
     <a href="https://ieeecimatec.github.io/project-petieee/">
-      <h2 class="project-title">Projeto PetIEEE</h2>      
+      <h2 class="project-title">PetIEEE</h2>      
     </a>
     <p class="project-meta project-meta-right">
         Iniciado em junho de 2021
@@ -196,23 +196,23 @@ share-img: /assets/img/projects-inprog.jpg
 </div>
 
 
-<!-- Projeto Trackieeers -->
+<!-- Trackieeers -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-    <a href="https://ieeecimatec.github.io/project-projeto_Trackieeers/">
-      <h2 class="project-title">Projeto Trackieeers</h2>      
+    <a href="https://ieeecimatec.github.io/project-trackieeers/">
+      <h2 class="project-title">Trackieeers</h2>      
     </a>
     <p class="project-meta project-meta-right">
         Iniciado em julho de 2021
         <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/project-projeto_Trackieeers/">
+      <a href="https://ieeecimatec.github.io/project-trackieeers/">
         <img src="{{ 'assets/img/logo-trackieeers.jpg' | relative_url }}" alt="trackieeers" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/project-projeto_Trackieeers/">
+      <a href="https://ieeecimatec.github.io/project-trackieeers/">
         <img src="{{ 'assets/img/logo-trackieeers.jpg' | relative_url }}" alt="logo trackieeers" class="img-blur">
       </a>
     </div>
