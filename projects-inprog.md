@@ -162,7 +162,7 @@ share-img: /assets/img/inprog.jpg
       </a>
     </div>
     <div class="project-entry">
-     Projeto do Embs que utiliza a visão computacional para cadastrar e mostrar dados de pacientes.  
+        O projeto visão tem o intuito de construir um sistema WEB utilizando visão computacional para melhorar a pesquisa e o cadastramento de pacientes em hospitais, clínicas e enfermarias de escolas, tornando o sistema desses locais mais rápido e eficiente.
     </div> 
 </article>
 </div>
