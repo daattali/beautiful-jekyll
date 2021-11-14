@@ -2,8 +2,8 @@
 layout: page
 title: Projetos em Andamento
 subtitle: Que tal conhecer um pouco nossos projetos?
-cover-img: /assets/img/inprog.jpg
-share-img: /assets/img/inprog.jpg
+cover-img: /assets/img/projects-inprog.jpg
+share-img: /assets/img/projects-inprog.jpg
 ---
 
 <!-- BayIEEEmax -->
@@ -96,8 +96,8 @@ share-img: /assets/img/inprog.jpg
       <h2 class="project-title">Projeto Map Vision</h2>      
     </a>
     <p class="project-meta project-meta-left">
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         Iniciado em junho de 2021
+        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>    
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-mapvision/">
@@ -141,15 +141,43 @@ share-img: /assets/img/inprog.jpg
 </article>
 </div>
 
-<!-- Projeto Visão -->
+
+<!-- Projeto PetIEEE -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
+    <a href="https://ieeecimatec.github.io/project-petieee/">
+      <h2 class="project-title">Projeto PetIEEE</h2>      
+    </a>
+    <p class="project-meta project-meta-right">
+        Iniciado em junho de 2021
+        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+    </p>    
+    <div class="project-image project-image-small">
+      <a href="https://ieeecimatec.github.io/project-petieee/">
+        <img src="{{ 'assets/img/petieee/petieee_projetos_andamento.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      </a>
+    </div>
+    <div class="project-image project-image-short">
+      <a href="https://ieeecimatec.github.io/project-petieee/">
+        <img src="{{ 'assets/img/petieee/petieee_projetos_andamento.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+      </a>
+    </div>
+    <div class="project-entry">
+      Um projeto de um robô acolhedor com emoções para auxiliar idosos, principalmente se tratando de sua rotina, possuindo as funções de checagem do idoso via comandos de voz, utilizando um bot do Telegram para as configurações.
+    </div> 
+</article>
+</div>
+
+
+<!-- Projeto Visão -->
+<div data-aos="fade-left" data-aos-offset="150"> 
+<article class="project-preview-left">
     <a href="https://ieeecimatec.github.io/project-projeto_visao/">
       <h2 class="project-title">Projeto Visão</h2>      
     </a>
-    <p class="project-meta project-meta-right">
-        Iniciado em julho de 2021
+    <p class="project-meta project-meta-left">
         <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em julho de 2021
     </p>
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-projeto_visao/">
@@ -189,34 +217,9 @@ share-img: /assets/img/inprog.jpg
       </a>
     </div>
     <div class="project-entry">
-     Elaborado pela PES, Trackieeers é um projeto que envolve a construção de um Tracker, seguidor solar, monitorado por um aplicativo.  
+      Elaborado pela PES, Trackieeers é um projeto que envolve a construção de um Tracker (seguidor solar), com o intuito de aumentar a eficiência de painéis solares durante os períodos do dia, sendo monitorado por um aplicativo. 
     </div> 
 </article>
 </div>
 
 
-<!-- Projeto PetIEEE -->
-<div data-aos="fade-left" data-aos-offset="150"> 
-<article class="project-preview-left">
-    <a href="https://ieeecimatec.github.io/project-petieee/">
-      <h2 class="project-title">Projeto PetIEEE</h2>      
-    </a>
-    <p class="project-meta project-meta-left">
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
-        Iniciado em junho de 2021
-    </p>    
-    <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/project-petieee/">
-        <img src="{{ 'assets/img/petieee/petieee_projetos_andamento.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
-    </div>
-    <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/project-petieee/">
-        <img src="{{ 'assets/img/petieee/petieee_projetos_andamento.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
-    </div>
-    <div class="project-entry">
-     Um projeto de um robô auxiliar de idosos, principalmente se tratando da rotina deles, possuindo as funções de checagem do idoso via comandos de voz.
-    </div> 
-</article>
-</div>
