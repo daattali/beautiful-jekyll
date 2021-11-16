@@ -223,3 +223,30 @@ share-img: /assets/img/projects-inprog.jpg
 </div>
 
 
+
+<!-- Smart Energy -->
+<div data-aos="fade-left" data-aos-offset="150"> 
+<article class="project-preview-left">
+    <a href="https://ieeecimatec.github.io/project-smart_energy/">
+      <h2 class="project-title">Smart Energy</h2>      
+    </a>
+    <p class="project-meta project-meta-left">
+        <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em julho de 2021
+    </p>
+    <div class="project-image project-image-small">
+      <a href="https://ieeecimatec.github.io/project-smart_energy/">
+        <img src="{{ 'assets/img/Smart_Energy_logo.png' | relative_url }}" alt="Smart Energy" class="img-blur">
+      </a>
+    </div>
+    <div class="project-image project-image-short">
+      <a href="https://ieeecimatec.github.io/project-smart_energy/">
+        <img src="{{ 'assets/img/Smart_Energy_logo.png' | relative_url }}" alt="Smart Energy" class="img-blur">
+      </a>
+    </div>
+    <div class="project-entry">
+     O projeto Smart Energy consiste no uso integrado do arduino e lâmpadas inteligentes a fim de controlar a luminosidade e, consequentemente, o consumo energético, possuindo como principal referência o ciclo circadiano. Além disso, o monitoramento dessas variáveis serão feitas por meio de análises gráficas do power BI.
+    </div> 
+</article>
+</div>
+

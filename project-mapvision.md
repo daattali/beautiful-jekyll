@@ -18,7 +18,7 @@ O MapVision é um sistema de mapeamento 3D baseado em duas câmeras mono. Atualm
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/joao_santos.png' | relative_url }}" width="100" alt="João" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/daniel_araujo.jpeg' | relative_url }}" width="100" alt="Daniel" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/daniel_andre.jpeg' | relative_url }}" width="100" alt="Daniel" class="img-fluid rounded-circle"/></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/vitor_mendes.png' | relative_url }}" width="100" alt="Vitor Mendes" class="img-fluid rounded-circle" /></center></th>
             <th></th>
