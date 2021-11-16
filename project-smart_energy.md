@@ -14,7 +14,7 @@ O projeto Smart Energy consiste no desenvolvimento de um sistema de automação 
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><center><img src="{{ 'assets/img/voluntarios/daniel_araujo.png' | relative_url }}" width="100" alt="daniel" class="img-fluid rounded-circle" /></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/daniel_araujo.jpeg' | relative_url }}" width="100" alt="daniel" class="img-fluid rounded-circle" /></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/guilherme_rodrigues.png' | relative_url }}" width="100" alt="guilherme" class="img-fluid rounded-circle"/></center></th>
             <th></th>
