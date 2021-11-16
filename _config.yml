@@ -15,15 +15,13 @@ author: Felipe Mohr
 
 navbar-links:
   Nossos Prêmios: 
-    - Concurso Fotos SAC BR 2021: "2021-06-24-concurso-fotos-sacbr-2021"
-    - Financiamento BayIEEEmax: "2021-07-01-bayieeemax-financiamento"
-    - Concurso Fotos IEEE DAY 2018:
-    - Núcleo de Capacitação em Arduino SAC BR 2018:
+    - Concurso Fotos SAC BR 2021: "concurso-fotos-sacbr-2021"
+    - Financiamento BayIEEEmax: "bayieeemax-financiamento"
+    - Concurso Fotos IEEE DAY 2018: "concurso-fotos-2018"
+    - Núcleo de Capacitação em Arduino SAC BR 2018: "nucleo-capacitacoes-arduino-2018"
   Projetos:
     - Em Andamento: "projects-inprog"
     - Finalizados: "projects-done"
-    - RASWEEKENDS: "rasweekend"
-    
   Capítulos:
     - EMBS: "capitulo-EMBS"
     - PES: "capitulo-PES"
@@ -41,7 +39,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+# title-img: "/assets/img/logo_branca_simples.png"
 
 
 # --- Footer social media links --- #
@@ -103,7 +101,7 @@ feed_show_tags: true
 post_search: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "IEEE CIMATEC,Ramo Estudantil,IEEE,CIMATEC"
 
 # --- Colours / background image --- #
 
@@ -163,7 +161,7 @@ footer-link-col: "#002855"
 # --- Comments --- #
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+disqus: "ieee-cimatec"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
@@ -206,7 +204,7 @@ date_format: "%-d de %B, %Y"
 timezone: "America/Bahia"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:title/
 paginate: 5
 
 kramdown:
@@ -227,6 +225,9 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+      comments: true  # add comments to all pages
+      social-share: true # add social media sharing buttons to all pages
+
 
 # Exclude these files from production site
 exclude:

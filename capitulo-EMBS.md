@@ -10,12 +10,12 @@ cover-img: /assets/img/embs_cover.jpg
 O [**EMBS** (Engineering in Medicine and Biology Society)](https://www.embs.org/) é o Capítulo Técnico do IEEE voltado à aplicações da Engenharia na Medicina e Biologia. Fundado em 15 de Março de 2018, somos um dos poucos Capítulos Estudantis EMBS do Brasil, e focamos na realização de projetos voltados à área da saúde, sobretudo que possam colaborar com os profissionais ou trazer praticidade às pessoas.
 
 #### Projetos em Andamento
-- PIM & PELOD
-- Projeto Visão
+- [PIM & PELOD](https://ieeecimatec.github.io/project-pim_pelod/)
+- [Projeto Visão](https://ieeecimatec.github.io/project-projeto_visao/)
 - [Órteses do Futuro](https://ieeecimatec.github.io/project-orteses/)
 - [BayIEEEmax](https://ieeecimatec.github.io/project-bayieeemax/)
 - [Health Chain](https://ieeecimatec.github.io/project-health_chain/)
-- BabyIOT
+- [BabyIOT](https://ieeecimatec.github.io/project-baby_iot/)
 
 [<img src="/assets/img/logo_instagram.png" alt="drawing" width="25"/> **@ieeeembscimatec**](https://www.instagram.com/ieeeembscimatec/)
 

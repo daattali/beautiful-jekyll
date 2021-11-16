@@ -2,9 +2,9 @@
 layout: post
 title: BayIEEEmax - Financiamento de $2.000,00
 subtitle: Um robô para auxiliar em processos de triagens
-cover-img: /assets/img/baymax.png
-thumbnail-img: /assets/img/baymax_thumb.jpeg
-share-img: /assets/img/baymax.png
+cover-img: /assets/img/bayieeemax/baymax.png
+thumbnail-img: /assets/img/bayieeemax/baymax_thumb.jpeg
+share-img: /assets/img/bayieeemax/baymax.png
 tags: [financiamento, projeto]
 ---
 
@@ -14,7 +14,7 @@ Este não é um financiamento voltado diretamente para projetos, porém, caso o 
 
 Após submetermos nosso projeto a esse edital, fomos selecionados pela **RAS Internacional** e conseguimos um financiamento de **$2.000 dólares**, o MÁXIMO valor ofertado &#128562;.
 
-![BayIEEEmax Financiamento](/assets/img/baymax_premio.png){: .mx-auto.d-block :}
+![BayIEEEmax Financiamento](/assets/img/bayieeemax/baymax_premio.png){: .mx-auto.d-block :}
 
 A ideia surgiu da nossa vontade em realizar um projeto entre nossos 3 capítulos - RAS, PES e EMBS, e, se você já assistiu a famosa animação [*Operação Big Hero*](https://www.adorocinema.com/filmes/filme-209529/), sabe que o **Baymax** é um **"robô enfermeiro"** que se carrega sozinho, através de uma **base de carregamento**. E aí, conseguiu ver a relação com cada um de nossos capítulos? &#128556;
 

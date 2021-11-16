@@ -8,7 +8,7 @@ share-img: /assets/img/fim_de_tardIEEE.jpg
 
 Somos o Ramo Estudantil do [**IEEE**](https://www.ieee.org/), a maior organização técnica profissional **DO MUNDO**, e estamos presentes no [**Centro Universitário SENAI CIMATEC**](http://www.senaicimatec.com.br/), uma das melhores instituições de ensino de engenharia do Norte e Nordeste. 
 
-![Logo IEEE](/assets/img/logo_azul_horizontal.png){: .mx-auto.d-block :}
+<p style="text-align: center;"> <img src="/assets/img/logo_azul_horizontal.png" alt="logo ieee cimatec" width="600"/> </p>
 
 Como Iniciativa Estudantil, focamos na realização de projetos técnicos e organização de eventos, visitas técnicas e workshops, trazendo experiências práticas aos estudantes de engenharia e arquitetura dentro do Cimatec.
 
