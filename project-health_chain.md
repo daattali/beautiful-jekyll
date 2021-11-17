@@ -2,7 +2,7 @@
 layout: page
 title: Health Chain
 subtitle: O melhor jeito de salvar seu histórico de saúde
-cover-img: /assets/img/hc_cover02.jpg
+cover-img: /assets/img/healthchain/hc-cover03.png
 ---
 
 O Health Chain surgiu em um momento que estávamos bastante antenados no mundo de criptomoedas e criptoativos. Com isso, percebemos que há diversas aplicações possíveis da tecnologia blockchain na sociedade. Diante disso, com o avanço da tecnologia de software atualmente, seria possível criar um aplicativo para armazenar todos os dados de um paciente proporcionando um melhor diagnóstico aos profissionais da saúde. 

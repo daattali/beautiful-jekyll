@@ -250,3 +250,28 @@ share-img: /assets/img/projects-inprog.jpg
 </article>
 </div>
 
+<!-- Projeto Healthchain -->
+<div data-aos="fade-right" data-aos-offset="150"> 
+<article class="project-preview-right">
+    <a href="https://ieeecimatec.github.io/project-health_chain/">
+      <h2 class="project-title">Projeto Healthchain</h2>      
+    </a>
+    <p class="project-meta project-meta-right">
+        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em julho de 2021
+    </p>
+    <div class="project-image project-image-small">
+      <a href="https://ieeecimatec.github.io/project-health_chain/">
+        <img src="{{ 'assets/img/healthchain/HealthchainLogopreta.png' | relative_url }}" alt="healthchain" class="img-blur">
+      </a>
+    </div>
+    <div class="project-image project-image-short">
+      <a href="https://ieeecimatec.github.io/project-health_chain/">
+        <img src="{{ 'assets/img/healthchain/HealthchainLogopreta.png' | relative_url }}" alt="healthchain" class="img-blur">
+      </a>
+    </div>
+    <div class="project-entry">
+        O projeto Healthchain objetiva desenvolver um sistema WEB utilizando a tecnologia Blockchain para construir um banco de dados capaz de armazenar todo o histórico de saúde de um paciente. Assim, melhorando a precisão de diagnósticos.
+    </div> 
+</article>
+</div>
