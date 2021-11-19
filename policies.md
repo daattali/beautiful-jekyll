@@ -84,7 +84,7 @@ For Block 2 onward of 2021-22, the following are also **NOT** permitted:
 
 - taking a quiz from a remote location without prior permission (see below on how to obtain permission)
 - leaving the quiz room early with your laptop
-- leaving and re-entering the quiz room (other than for purposes such as using the washroom)
+- leaving and re-entering the quiz room (unless approved by the instructor, please talk to the instructor before the quiz if you think you might have to leave the room during the quiz)
 
 Failing to observe the above expectations may result in a zero grade for the quiz in question.
 
