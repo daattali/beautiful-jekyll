@@ -40,6 +40,8 @@ There are a few things I want to touch on before starting with Cluster-API. The 
 
 * **Download and deploy a Kubernetes OVA**: This will be the template Cluster-API will use to deploy kubernetes nodes on vSphere. I used the [OVAs provided by VMware](https://customerconnect.vmware.com/downloads/get-download?downloadGroup=TCE-090) for Tanzu Community Edition where you can choose between ubuntu and photon. I downloaded ubuntu-2004-kube-v1.21.2+vmware.1-tkg.1-7832907791984498322.ova at the time of this writing. You then need to deploy the OVA to your vSphere environment and turn it into a template.
 * **Have a bootstrap machine**: Ensure you have a machine with [Docker ](https://docs.docker.com/engine/install/)and [kubectl ](https://kubernetes.io/docs/tasks/tools/)installed to make it more convenient. You can use a Linux VM for instance if you don't want to mess with your workstation. 
+* **DHCP Service**: Your vSphere environment should be configured with a DHCP service in the primary VM Network for your workload Kubernetes clusters.
+* **SSH public key**: You should have an SSH key to put in the config file since this is the only way to connect into the nodes that are deployed.
 
 #### Step 1 - Install Kind on a bootstrap VM
 
@@ -81,6 +83,8 @@ Clusterctl is the Cluster-API command line utility that will let you initialize 
 * Specify the settings of your vSphere environment following this format:
 
 These are case sensitive so pay attention to it. You will obviously have to adapt this file to your environment. Note that it is better to do it with a file since the password won't be in your bash history and you can remove it once done. These fields are specific to vSphere obviously and clusterctl will know about that in the next step when we specify the provider.
+
+Note that I chose 192.168.1.140 as the virtual IP (kube-vip) for my kubernetes cluster. More on that later.
 
     ## -- Controller settings -- ##
     VSPHERE_USERNAME: "xavier-adm@lab.priv"
@@ -141,4 +145,61 @@ Adjust the fields as necessary. In this example I am deploying a cluster named _
 
     nano cluster.yaml
 
-h
+* When you are happy with your manifest, apply it using kubectl and it will start the provisioning process. This step takes a bit of time so be patient here. However, if nothing is happening in vCenter and you don't see a VM being provisioned it means there probably is a misconfiguration somewhere in your clusterctl.yaml file, in which case you will want to double check it's content (case, typos...).
+
+    kubectl apply -f cluster.yaml
+
+The output should look something like this:
+
+    root@ubuntu:~# k apply -f cluster.yaml
+    cluster.cluster.x-k8s.io/capv-management created
+    vspherecluster.infrastructure.cluster.x-k8s.io/capv-management created
+    vspheremachinetemplate.infrastructure.cluster.x-k8s.io/capv-management created
+    kubeadmcontrolplane.controlplane.cluster.x-k8s.io/capv-management created
+    kubeadmconfigtemplate.bootstrap.cluster.x-k8s.io/capv-management-md-0 created
+    machinedeployment.cluster.x-k8s.io/capv-management-md-0 created
+    clusterresourceset.addons.cluster.x-k8s.io/capv-management-crs-0 created
+    secret/capv-management created
+    secret/vsphere-csi-controller created
+    configmap/vsphere-csi-controller-role created
+    configmap/vsphere-csi-controller-binding created
+    secret/csi-vsphere-config created
+    configmap/csi.vsphere.vmware.com created
+    configmap/vsphere-csi-node created
+    configmap/vsphere-csi-controller created
+    secret/cloud-controller-manager created
+    secret/cloud-provider-vsphere-credentials created
+    configmap/cpi-manifests created
+    
+
+* You can use kubectl get cluster to view your workload cluster. Note that cluster is a Custom Resource Definition (CRD) created by clusterctl during initialization. This command would not work in a regular Kubernetes environment.
+
+    kubectl get cluster
+
+The output should look like so. Wait a bit and it should say _provisioned_ at some point.
+
+![](/img/capv-3.png)
+
+* You can also track the provisioning process with clusterctl to see where it's at. You will notice that this is what the tanzu cli is based on, only rebranded.
+
+You will see the progress as you refresh this command and that it fits with what is going on in vSphere.
+
+    clusterctl describe cluster capv-management
+
+![](/img/capv-4.png)
+
+The tasks as they appear in vCenter.
+
+![](/img/capv-5.png)
+
+* Once the deployment is complete, the control plane VM should show whatever IP was assigned to it via DHCP and the virtual IP set by kube-vip that you specified in the config file.
+
+![](/img/capv-6.png)
+
+* And if you run the clusterctl command again you should get the following output.
+
+Note that the deployment isn't complete yet as we need to install a [CNI ](https://kubernetes.io/docs/concepts/cluster-administration/networking/)on our cluster 
+
+    clusterctl describe cluster capv-management
+
+![](/img/capv-7.png)
