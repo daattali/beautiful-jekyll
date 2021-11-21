@@ -11,6 +11,8 @@ I recently got into Kubernetes Cluster API Provider vSphere (CAPV) to understand
 
 So, the way Kubernetes provisions resources is declaratively through YAML manifest describing the state you want them to be in. By default these manifests cover "vanilla" Kubernetes objects such as deployments, pods, replicasets, services, ingress, you name it. You can get the list by running "_kubectl api-resources_". 
 
+### What is Cluster API Provider vSphere (CAPV)
+
 Projects like [cluter-api](https://cluster-api.sigs.k8s.io/) expand the capabilities of Kubernetes by offering the possibility to interface with [many cloud providers ](https://cluster-api.sigs.k8s.io/reference/providers.html)such as AWS, Azure, Sidero, etc to provision Kubernetes workload clusters. These extra capabilities are in the form of Custom Resource Definitions (CRD) and controllers that know how to "speak" (API) to these cloud providers to deploy the nodes as VMs and then create a cluster with kubeadm. The cluster-api resources are installed in what is referred to as a _kubernetes management cluster_ that remains and is used to provision Kubernetes clusters on a cloud provider.
 
 In our case we are interested in the vSphere provider called Cluster API Provider vSphere or CAPV. For instance, you can see pretty much the same steps when getting started with Tanzu Community Edition, except it is made a lot simpler through UI and automation. In this post we are doing essentially the same steps but manually, that way we can see what's going on behind the scenes.
