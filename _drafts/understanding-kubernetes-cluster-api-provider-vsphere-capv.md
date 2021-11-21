@@ -129,7 +129,7 @@ At this point we have a bootstrap management cluster. What we want to do next is
 
 * First we need to generate a YAML manifest to describe the workload cluster to deploy. This step does not deploy anything, we are using clusterctl to create a YAML file.
 
-Adjust the fields as necessary. In this example I am deploying a cluster named _capv-management_ with 1 control plane node and 1 worker node, in Kubernetes version 1.21.1 since it is the version of the OVA I deployed.
+Adjust the fields as necessary. In this example I am deploying a cluster named _capv-management_ with 1 control plane node and 1 worker node, in Kubernetes version 1.21.1 since it is the version of the OVA I deployed and I redirect the output to _cluster.yaml_.
 
     clusterctl generate cluster capv-management \
         --infrastructure vsphere \
