@@ -73,13 +73,37 @@ subtitle:
 
     <tr>
     <td class="pubimg" width="250" height="100" style="text-align:center">
-        <img src="../pics/corl_logo.png" img width="150">
+        <img src="../pics/loop_overview.jpeg" img width="250">
         </td>
-        <td><a href="https://openreview.net/forum?id=1GNV9SW95eJ">Learning Off-policy for Online Planning</a><br>
+        <td><a href="https://arxiv.org/abs/2008.10066">Learning Off-policy for Online Planning</a><br>
             <div class="pubauthor">Harshit Sikchi, Wenxuan Zhou, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2021 - <award>Oral presentation</award> (Selection rate 6.5%); <award>Best Paper Finalist</award></div>
-            <div id="div2021safetyenvelopes" class="pubInfo"></div>
+            <div id="sikchi2021learning" class="pubInfo"></div>
+            <div id="bibsikchi2021learning" style="display:none">
+                <blockquote>
+<pre>@inproceedings{sikchi2021learning,
+title={Learning Off-policy for Online Planning},
+author={Sikchi, Harshit and Zhou, Wenxuan and Held, David},
+booktitle={Conference on Robot Learning},
+year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="abssikchi2021learning" style="display:none">
+                <blockquote>
+                Reinforcement learning (RL) in low-data and risk-sensitive domains requires performant and flexible deployment policies that can readily incorporate constraints during deployment. One such class of policies are the semi-parametric H-step lookahead policies, which select actions using trajectory optimization over a dynamics model for a fixed horizon with a terminal value function. In this work, we investigate a novel instantiation of H-step lookahead with a learned model and a terminal value function learned by a model-free off-policy algorithm, named Learning Off-Policy with Online Planning (LOOP). We provide a theoretical analysis of this method, suggesting a tradeoff between model errors and value function errors and empirically demonstrate this tradeoff to be beneficial in deep reinforcement learning. Furthermore, we identify the "Actor Divergence" issue in this framework and propose Actor Regularized Control (ARC), a modified trajectory optimization procedure. We evaluate our method on a set of robotic tasks for Offline and Online RL and demonstrate improved performance. We also show the flexibility of LOOP to incorporate safety constraints during deployment with a set of navigation environments. We demonstrate that LOOP is a desirable framework for robotics applications based on its strong performance in various important RL settings.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://hari-sikchi.github.io/loop/">[Project Page]</a>
+                <a href="https://github.com/hari-sikchi/LOOP">[Code]</a>
+                <a href="javascript:copy(sikchi2021learning, bibsikchi2021learning)">[Bibtex]</a>
+                <a href="javascript:copy(sikchi2021learning, abssikchi2021learning)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2008.10066.pdf">[PDF]</a>
+                <a href="https://youtu.be/zYDwnj_ghZM">[Talk]</a>
+                <!--a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a-->
+            </div>
+
             <br>
         </td>
     </tr>
@@ -116,6 +140,7 @@ subtitle:
                 <a href="https://arxiv.org/pdf/2107.04000.pdf">[PDF]</a>
                 <a href="https://www.youtube.com/watch?v=1PUAjzcTz5g">[Talk]</a>
                 <a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a>
+                <a href="https://blog.ml.cmu.edu/2021/11/19/active-safety-envelopes-using-light-curtains-with-probabilistic-guarantees/">[Blog post]</a>
             </div>
             <div id="div2021safetyenvelopes" class="pubInfo"></div>
             </div>
@@ -197,7 +222,7 @@ subtitle:
         <td class="pubimg" width="250" height="100">
             <img src="../pics/peiyunff.gif" img width="250" height="100">
         </td>
-        <td><a href="https://www.cs.cmu.edu/~peiyunh/ff/paper.pdf">Safe Local Motion Planning with Self-Supervised Freespace Forecasting</a><br>
+        <td><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hu_Safe_Local_Motion_Planning_With_Self-Supervised_Freespace_Forecasting_CVPR_2021_paper.pdf">Safe Local Motion Planning with Self-Supervised Freespace Forecasting</a><br>
             <div class="pubauthor">Peiyun Hu, Aaron Huang, John Dolan, David Held, Deva Ramanan<br>
             </div>
             <div id="bib2021cvpr_safe" style="display:none">
@@ -216,10 +241,11 @@ subtitle:
             </div>
             <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2021
             <div style="font-size:small">
-                <a href="https://www.cs.cmu.edu/~peiyunh/ff/index.html">[Project Page]</a> 
-                <a href="https://www.cs.cmu.edu/~peiyunh/ff/poster.pdf">[Poster]</a> 
-                <a href="https://youtu.be/O_2MojWp7yk">[Talk]</a> 
-                <a href="https://github.com/peiyunh/ff">[Code]</a>
+            <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hu_Safe_Local_Motion_Planning_With_Self-Supervised_Freespace_Forecasting_CVPR_2021_paper.pdf">[Paper]</a> 
+                                  <a href="https://peiyunh.github.io/ff/index.html">[Project page]</a>
+                                  <a href="https://peiyunh.github.io/ff/poster.pdf">[Poster]</a> 
+                                  <a href="https://youtu.be/O_2MojWp7yk">[Talk]</a> 
+                                  <a href="https://github.com/peiyunh/ff">[Code]</a>
                 <a href="javascript:copy(div2021cvpr_safe, bib2021cvpr_safe)">[Bibtex]</a>
                 <a href="javascript:copy(div2021cvpr_safe, abs2021cvpr_safe)">[Abstract]</a>
                 <!-- <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a> -->
