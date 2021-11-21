@@ -28,4 +28,4 @@ The steps are as follows to get started with cluster-api:
 
 ### Getting started with Cluster API Provider vSphere (CAPV)
 
-Let's dig into it and see how we can get a Kubernetes cluster-API management cluster in vSphere in 6 steps. While this is more complicated than Tanzu Community Edition, it is still made easy for thanks to the efforts of the team behind the cluster-API project and kubeadm.
+Let's dig into it and see how we can get a Kubernetes cluster-API management cluster in vSphere in 6 steps. While this is more complicated than Tanzu Community Edition that offer a shiny web UI, it is still made easy for thanks to the efforts of the team behind the cluster-API project and kubeadm.
