@@ -62,11 +62,38 @@ subtitle:
     <td class="pubimg" width="250" height="100" style="text-align:center">
         <img src="../pics/corl_logo.png" img width="150">
         </td>
-        <td><a href="https://openreview.net/forum?id=TsqkJJMgHkk">FabricFlowNet: Bimanual Cloth Manipulation with a Flow-based Policy</a><br>
+        <td><a href="https://arxiv.org/abs/2111.05623">FabricFlowNet: Bimanual Cloth Manipulation with a Flow-based Policy</a><br>
             <div class="pubauthor">Thomas Weng, Sujay Bajracharya, Yufei Wang, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2021</div>
-            <div id="div2021safetyenvelopes" class="pubInfo"></div>
+            <div id="weng2021fabricflownet" class="pubInfo"></div>
+            <div id="bibweng2021fabricflownet" style="display:none">
+                <blockquote>
+<pre>
+@inproceedings{weng2021fabricflownet,
+ title={FabricFlowNet: Bimanual Cloth Manipulation 
+    with a Flow-based Policy},
+ author={Weng, Thomas and Bajracharya, Sujay and 
+    Wang, Yufei and Agrawal, Khush and Held, David},
+ booktitle={Conference on Robot Learning},
+ year={2021}
+}
+</pre>
+                </blockquote>
+            </div>
+            <div id="absweng2021fabricflownet" style="display:none">
+                <blockquote>
+We address the problem of goal-directed cloth manipulation, a challenging task due to the deformability of cloth. Our insight is that optical flow, a technique normally used for motion estimation in video, can also provide an effective representation for corresponding cloth poses across observation and goal images. We introduce FabricFlowNet (FFN), a cloth manipulation policy that leverages flow as both an input and as an action representation to improve performance. FabricFlowNet also elegantly switches between dual-arm and single-arm actions based on the desired goal. We show that FabricFlowNet significantly outperforms state-of-the-art model-free and model-based cloth manipulation policies. We also present real-world experiments on a bimanual system, demonstrating effective sim-to-real transfer.  Finally, we show that our method generalizes when trained on a single square cloth to other cloth shapes, such as T-shirts and rectangular cloths.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/fabricflownet">[Project Page]</a>
+                <!-- <a href="">[Code]</a> -->
+                <a href="javascript:copy(weng2021fabricflownet, bibweng2021fabricflownet)">[Bibtex]</a>
+                <a href="javascript:copy(weng2021fabricflownet, absweng2021fabricflownet)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2111.05623.pdf">[PDF]</a>
+                <a href="https://www.google.com/url?q=https%3A%2F%2Fopenreview.net%2Fattachment%3Fid%3DTsqkJJMgHkk%26name%3Dposter&sa=D&sntz=1&usg=AFQjCNH3PPtQ_vMMk00WEMRXG28cWK3ylQ">[Poster]</a>
+            </div>
             <br>
         </td>
     </tr>
