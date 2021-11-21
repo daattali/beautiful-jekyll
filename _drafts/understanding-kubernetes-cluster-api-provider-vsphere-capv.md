@@ -66,3 +66,42 @@ At this point you should already be able to query your kind cluster with kubectl
 #### Step 3 - Download clusterctl and initialize the temporary cluster with it
 
 Clusterctl is the Cluster-API command line utility that will let you initialize a management cluster. We need to download the utility, move it in our PATH and initialize (prepare) the cluster.
+
+* First let's download the utility, make it executable and move it to our PATH. This example uses clusterctl version 1.0.1 but check for the latest [clusterctl release here](https://github.com/kubernetes-sigs/cluster-api/releases).
+
+    curl -L https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.0.1/clusterctl-linux-amd64 -o clusterctl
+    chmod +x ./clusterctl
+    sudo mv ./clusterctl /usr/local/bin/clusterctl
+
+* Then create the YAML clusterctl configuration file.
+
+    mkdir ~/.cluster-api
+    nano ~/.cluster-api/clusterctl.yaml
+
+* Specify the settings of your vSphere environment following this format:
+
+These are case sensitive so pay attention to it. You will obviously have to adapt this file to your environment. Note that it is better to do it with a file since the password won't be in your bash history and you can remove it once done. These fields are specific to vSphere obviously and clusterctl will know about that in the next step when we specify the provider.
+
+    ## -- Controller settings -- ##
+    VSPHERE_USERNAME: "xavier-adm@lab.priv"
+    VSPHERE_PASSWORD: "Uh uh"
+    
+    ## -- Required workload cluster default settings -- ##
+    VSPHERE_SERVER: "192.168.1.102"
+    VSPHERE_DATACENTER: "LAB01-DC"
+    VSPHERE_DATASTORE: "LAB01-VSAN"
+    VSPHERE_NETWORK: "management"
+    VSPHERE_RESOURCE_POOL: "*/Resources" 
+    VSPHERE_FOLDER: "CAPV" 
+    VSPHERE_TEMPLATE: "ubuntu-2004-kube-v1.21.2+vmware.1"
+    CONTROL_PLANE_ENDPOINT_IP: "192.168.1.140" 
+    VSPHERE_TLS_THUMBPRINT: "D5:...:0E"
+    EXP_CLUSTER_RESOURCE_SET: "true" 
+    VSPHERE_SSH_AUTHORIZED_KEY: "ssh-rsa AAAAB3N...+G/Xpnc>
+    VSPHERE_STORAGE_POLICY: "" 
+
+* Then we want to initialize our kind kubernetes cluster as a management cluster with clusterctl. Note that vSphere is the provider here, you would change it to aws, azure, alibabacloud or whatever else should you deploy to some other cloud provider.
+
+    clusterctl init --infrastructure vsphere
+
+d
