@@ -140,7 +140,7 @@ year={2021}}</pre>
                 <a href="https://arxiv.org/pdf/2107.04000.pdf">[PDF]</a>
                 <a href="https://www.youtube.com/watch?v=1PUAjzcTz5g">[Talk]</a>
                 <a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a>
-                <a href="https://blog.ml.cmu.edu/2021/11/19/active-safety-envelopes-using-light-curtains-with-probabilistic-guarantees/">[Blog post]</a>
+                <a href="https://blog.ml.cmu.edu/2021/11/19/active-safety-envelopes-using-light-curtains-with-probabilistic-guarantees/">[Blog]</a>
             </div>
             <div id="div2021safetyenvelopes" class="pubInfo"></div>
             </div>

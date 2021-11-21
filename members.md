@@ -46,28 +46,28 @@ members:
         full: true
         list:
           - name: Mansi Agrawal (MSR)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/mansi.jpg
             web_url: https://mansiagarwal11.github.io/
           - name: Xiaochen Han (MSCV)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/xiaochen.jpg
             web_url:
           - name: Tanay Sharma (MSCV)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/tanay.jpg
             web_url:
           - name: Sarthak Shetty (MSME)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/sarthak.jpg
             web_url: https://sarthakjshetty.github.io/
           - name: Sashank Tirumala (MSR)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/sashank.jpg
             web_url: https://sashank-tirumala.github.io/
           - name: Carl Qi (MSML)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/carl.jpg
             web_url:
           - name: Fan Yang (MSR)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/fanyang.jpg
             web_url: https://sites.google.com/view/fanyang98/
           - name: Haolun (Harry) Zhang (MSR)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/harry.jpg
             web_url: https://harryzhangog.github.io/
           - name: Gaurav Pathak (MSR)
             photo_url: /img/members/Gaurav.jpg
@@ -83,7 +83,7 @@ members:
         full: true
         list:
           - name: Edward Li
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/edward.jpg
             web_url:
       #- name: Visiting Students
       #  full: false
