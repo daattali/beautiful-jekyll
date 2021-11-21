@@ -84,7 +84,9 @@ Clusterctl is the Cluster-API command line utility that will let you initialize 
 
 These are case sensitive so pay attention to it. You will obviously have to adapt this file to your environment. Note that it is better to do it with a file since the password won't be in your bash history and you can remove it once done. These fields are specific to vSphere obviously and clusterctl will know about that in the next step when we specify the provider.
 
-Note that I chose 192.168.1.140 as the virtual IP (kube-vip) for my kubernetes cluster. More on that later.
+> _Note that I chose 192.168.1.140 as the virtual IP (kube-vip) for my kubernetes cluster. More on that later._
+
+> _You need to make sure you put your SSH public key in this file or you won't have SSH access to your control plane._
 
     ## -- Controller settings -- ##
     VSPHERE_USERNAME: "xavier-adm@lab.priv"
@@ -198,8 +200,77 @@ The tasks as they appear in vCenter.
 
 * And if you run the clusterctl command again you should get the following output.
 
-Note that the deployment isn't complete yet as we need to install a [CNI ](https://kubernetes.io/docs/concepts/cluster-administration/networking/)on our cluster 
+Note that the deployment isn't complete yet as we need to install a [CNI ](https://kubernetes.io/docs/concepts/cluster-administration/networking/)on our cluster for the networking aspect.
 
     clusterctl describe cluster capv-management
 
 ![](/img/capv-7.png)
+
+* Retrieve the Kubeconfig file to connect to the deployed workload cluster. Change capv-management to the name of your cluster if you chose something else. The file generated is what we'll use with kubectl to connect to the cluster.
+
+    kubectl get secret capv-management-kubeconfig -o json | jq -r .data.value | base64 --decode > capv-management.kubeconfig
+
+* Check that it works by querying the hosts with the generated kubeconfig file. They will be in the _NotReady_ state because they don't have networking (CNI) yet. 
+
+    kubectl get nodes --kubeconfig=capv-management.kubeconfig
+
+![](/img/capv-8.png)
+
+* At this point we need to install a CNI in our cluster. I will install Calico which is a popular choice but you can choose something else, you just need the url to the vendor's current manifest.
+
+    kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml --kubeconfig=capv-management.kubeconfig
+
+The output of the Calico deployment looks like so:
+
+![](/img/capv-9.png)
+
+* The nodes should be _Ready_ after a couple minutes.
+
+    kubectl get nodes --kubeconfig=capv-management.kubeconfig
+
+![](/img/capv-10.png)
+
+* The output of the clusterctl command should show nothing but green.
+
+    clusterctl describe cluster capv-management
+
+![](/img/capv-11.png)
+
+At this point we have a Kubernetes workload cluster running in vSphere. You can interact with it with _kubectl xx yy --kubeconfig=capv-management.kubeconfig_
+
+#### Step 5 - Move the cluster-api components to the kubernetes cluster
+
+Now we want to turn this newly created cluster into our permanent cluster. Meaning we need to prepare it with clusterctl and move the cluater-API resources to it from the bootstrap temporary cluster.
+
+* First SSH to the server using your public key and user **capv**.
+* Copy capv-management.kubeconfig from the bootstrap cluster to .kube/config on the workload cluster.
+* Copy .cluster-api/clusterctl.yaml from the bootstrap cluster to .cluster-api/clusterctl.yaml on the workload cluster.
+* Initialize the cluster with clusterctl.
+
+    clusterctl init --infrastructure vsphere
+
+* Go back to the bootstrapping machine and move the components to the workload cluster with clusterctl and the kubeconfig file that targets out workload cluster.
+
+    clusterctl move --to-kubeconfig=capv-management.kubeconfig
+
+The output should look like the following:
+
+    Performing move...
+    Discovering Cluster API objects
+    Moving Cluster API objects Clusters=1
+    Creating objects in the target cluster
+    Deleting objects from the source cluster
+
+At this point, if the command finishes successfully you have turned the workload cluster into a permanent management cluster. If not, it's time to troubleshoot I'm afraid. Causes of failure may be that you haven't prepared the workload cluster with clusterctl.
+
+#### Step 6 - Decommission the bootstrap cluster
+
+The bootstrap kind cluster is now back to a regular cluster, so if you don't have a use for it you can freely destroy it.
+
+    kind delete cluster
+
+### Wrap up
+
+Here it is for Kubernetes Cluster API Provider vSphere (CAPV) and how to use it. We haven't covered the creation of a workload cluster but you already saw how to do it so it shouldn't be too much of a stretch to figure that one out.
+
+I shall get your attention on the fact that you want to sanitize your config files after use to avoid leaving password in clear text on a machine as a best practice.
