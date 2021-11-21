@@ -104,4 +104,37 @@ These are case sensitive so pay attention to it. You will obviously have to adap
 
     clusterctl init --infrastructure vsphere
 
-d
+The output should look something like this. As you can see clusterctl does the heavy lifting for us here.
+
+    root@ubuntu:~# clusterctl init --infrastructure vsphere
+    Fetching providers
+    Installing cert-manager Version="v1.5.3"
+    Waiting for cert-manager to be available...
+    Installing Provider="cluster-api" Version="v1.0.1" TargetNamespace="capi-system"
+    Installing Provider="bootstrap-kubeadm" Version="v1.0.1" TargetNamespace="capi-kubeadm-bootstrap-system"
+    Installing Provider="control-plane-kubeadm" Version="v1.0.1" TargetNamespace="capi-kubeadm-control-plane-system"
+    I1119 14:53:44.492746    6548 request.go:665] Waited for 1.043003371s due to client-side throttling, not priority and fairness, request: GET:https://127.0.0.1:46309/apis/clusterctl.cluster.x-k8s.io/v1alpha3?timeout=30s
+    Installing Provider="infrastructure-vsphere" Version="v1.0.1" TargetNamespace="capv-system"
+    
+    Your management cluster has been initialized successfully!
+    
+    You can now create your first workload cluster by running the following:
+    
+      clusterctl generate cluster [name] --kubernetes-version [version] | kubectl apply -f -
+    
+
+#### Step 4 - Provision the kubernetes cluster to the cloud provider
+
+At this point we have a bootstrap management cluster. What we want to do next is to provision a workload cluster to our vSphere environment (which will later on be our management cluster).
+
+* First we need to generate a YAML manifest to describe the workload cluster to deploy. This step does not deploy anything, we are using clusterctl to create a YAML file.
+
+Adjust the fields as necessary. In this example I am deploying a cluster named _capv-management_ with 1 control plane node and 1 worker node, in Kubernetes version 1.21.1 since it is the version of the OVA I deployed.
+
+    clusterctl generate cluster capv-management \
+        --infrastructure vsphere \
+        --kubernetes-version v1.21.1 \
+        --control-plane-machine-count 1 \
+        --worker-machine-count 1 > cluster.yaml
+
+fd
