@@ -47,26 +47,76 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
-            <img src="../pics/corl_logo.png" img width="150">
+            <img src="../pics/vcd.gif" img width="250">
         </td>
-        <td><a href="https://openreview.net/forum?id=n1hDe9iK6ms">Learning Visible Connectivity Dynamics for Cloth Smoothing</a><br>
+        <td><a href="https://arxiv.org/abs/2105.10389">Learning Visible Connectivity Dynamics for Cloth Smoothing</a><br>
             <div class="pubauthor">Xingyu Lin*, Yufei Wang*, Zixuan Huang, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2021</div>
-            <div id="div2021safetyenvelopes" class="pubInfo"></div>
-            <br>
+            <div id="div2021vcd" class="pubInfo"></div>
+            <div id="bibdiv2021vcd" style="display:none">
+                <blockquote>
+<pre>@inproceedings{lin2021VCD,
+title={Learning Visible Connectivity Dynamics for Cloth Smoothing},
+author={Lin, Xingyu and Wang, Yufei and Huang, Zixuan and Held, David},
+booktitle={Conference on Robot Learning},
+year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="absdiv2021vcd" style="display:none">
+                <blockquote>
+                Robotic manipulation of cloth remains challenging for robotics due to the complex dynamics of the cloth, lack of a low-dimensional state representation, and self-occlusions. In contrast to previous model-based approaches that learn a pixel-based dynamics model or a compressed latent vector dynamics, we propose to learn a particle-based dynamics model from a partial point cloud observation. To overcome the challenges of partial observability, we infer which visible points are connected on the underlying cloth mesh. We then learn a dynamics model over this visible connectivity graph. Compared to previous learning-based approaches, our model poses strong inductive bias with its particle based representation for learning the underlying cloth physics; it is invariant to visual features; and the predictions can be more easily visualized. We show that our method greatly outperforms previous state-of-the-art model-based and model-free reinforcement learning methods in simulation. Furthermore, we demonstrate zero-shot sim-to-real transfer where we deploy the model trained in simulation on a Franka arm and show that the model can successfully smooth different types of cloth from crumpled configurations. Videos can be found on our project website.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/vcd-cloth">[Project Page]</a>
+                <!--a href="https://github.com/hari-sikchi/LOOP">[Code]</a-->
+                <a href="javascript:copy(div2021vcd, bibdiv2021vcd)">[Bibtex]</a>
+                <a href="javascript:copy(div2021vcd, absdiv2021vcd)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2105.10389.pdf">[PDF]</a>
+                <!--a href="https://youtu.be/zYDwnj_ghZM">[Talk]</a-->
+                <!--a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a-->
+                <a href="https://openreview.net/forum?id=n1hDe9iK6ms">[OpenReview]</a>
+                <br>
+
+            </div>
         </td>
     </tr>
 
     <tr>
     <td class="pubimg" width="250" height="100" style="text-align:center">
-        <img src="../pics/corl_logo.png" img width="150">
+        <img src="../pics/ffn.gif" img width="250">
         </td>
-        <td><a href="https://openreview.net/forum?id=TsqkJJMgHkk">FabricFlowNet: Bimanual Cloth Manipulation with a Flow-based Policy</a><br>
+        <td><a href="https://arxiv.org/abs/2111.05623">FabricFlowNet: Bimanual Cloth Manipulation with a Flow-based Policy</a><br>
             <div class="pubauthor">Thomas Weng, Sujay Bajracharya, Yufei Wang, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2021</div>
-            <div id="div2021safetyenvelopes" class="pubInfo"></div>
+            <div id="div2021FFN" class="pubInfo"></div>
+            <div id="bibdiv2021FFN" style="display:none">
+                <blockquote>
+<pre>@inproceedings{weng2021FabricFlowNet,
+title={FabricFlowNet: Bimanual Cloth Manipulation with a Flow-based Policy},
+author={Weng, Thomas and Bajracharya, Sujay and Held, David},
+booktitle={Conference on Robot Learning},
+year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="absdiv2021FFN" style="display:none">
+                <blockquote>
+                We address the problem of goal-directed cloth manipulation, a challenging task due to the deformability of cloth. Our insight is that optical flow, a technique normally used for motion estimation in video, can also provide an effective representation for corresponding cloth poses across observation and goal images. We introduce FabricFlowNet (FFN), a cloth manipulation policy that leverages flow as both an input and as an action representation to improve performance. FabricFlowNet also elegantly switches between bimanual and single-arm actions based on the desired goal. We show that FabricFlowNet significantly outperforms state-of-the-art model-free and model-based cloth manipulation policies that take image input. We also present real-world experiments on a bimanual system, demonstrating effective sim-to-real transfer. Finally, we show that our method generalizes when trained on a single square cloth to other cloth shapes, such as T-shirts and rectangular cloths.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/fabricflownet">[Project Page]</a>
+                <!--a href="https://github.com/hari-sikchi/LOOP">[Code]</a-->
+                <a href="javascript:copy(div2021FFN, bibdiv2021FFN)">[Bibtex]</a>
+                <a href="javascript:copy(div2021FFN, absdiv2021FFN)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2111.05623.pdf">[PDF]</a>
+                <!--a href="https://youtu.be/zYDwnj_ghZM">[Talk]</a-->
+                <!--a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a-->
+                <a href="https://openreview.net/forum?id=TsqkJJMgHkk">[OpenReview]</a>
+
+            </div>
             <br>
         </td>
     </tr>
@@ -101,6 +151,7 @@ year={2021}}</pre>
                 <a href="javascript:copy(sikchi2021learning, abssikchi2021learning)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2008.10066.pdf">[PDF]</a>
                 <a href="https://youtu.be/zYDwnj_ghZM">[Talk]</a>
+                <a href="https://openreview.net/forum?id=1GNV9SW95eJ">[OpenReview]</a>
                 <!--a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a-->
             </div>
 
@@ -111,6 +162,8 @@ year={2021}}</pre>
     <tr>
         <td class="pubimg" width="250" height="100">
             <img src="../pics/rss2021lightcurtains.png" img width="250">
+            <!--img src="../pics/rss21.gif" img width="250"-->
+            <!--img src="../pics/rss21b.gif" img width="250"-->
         </td>
         <td><a href="https://arxiv.org/abs/2107.04000">Active Safety Envelopes using Light Curtains with Probabilistic Guarantees</a><br>
             <div class="pubauthor">Siddharth Ancha, Gaurav Pathak, Srinivasa Narasimhan, David Held<br>
@@ -332,10 +385,11 @@ year={2020}
     </tr>
 
     <tr>
-        <td class="pubimg" width="250" height="100">
-            <img src="../pics/corl2020_plas.png" img width="250">
+        <td class="pubimg" width="250" height="100" style="text-align: center">
+            <!--img src="../pics/corl2020_plas.png" img width="250"-->
+            <img src="../pics/cloth_sliding.gif" img height="100" style="text-align: center">
         </td>
-        <td><a href="https://arxiv.org/abs/2011.07213">Latent Action Space for Offline Reinforcement Learning</a><br>
+        <td><a href="https://arxiv.org/abs/2011.07213">PLAS: Latent Action Space for Offline Reinforcement Learning</a><br>
             <div class="pubauthor">
                 Wenxuan Zhou, Sujay Bajracharya, David Held<br>
             </div>
@@ -461,7 +515,8 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/iros2020_website_thumbnail.png" img width="250">
+            <!--img src="../pics/iros2020_website_thumbnail.png" img width="250"-->
+            <img src="../pics/cloth_grasping.gif" img width="250">
         </td>
         <td><a href="https://arxiv.org/abs/2008.05626">Cloth Region Segmentation for Robust Grasp Selection</a><br>
             <div class="pubauthor">
@@ -655,7 +710,8 @@ year = {2020}
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/t3_cropped.png" img width="250">
+            <!--img src="../pics/t3_cropped.png" img width="250"-->
+            <img src="../pics/transparent_grasping.gif" img width="250">
         </td>
         <td><a href="https://arxiv.org/abs/2006.00028">Multi-Modal Transfer Learning for Grasping Transparent and Specular Objects</a><br>
             <div class="pubauthor">
