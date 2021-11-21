@@ -21,13 +21,23 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="150" style="text-align:center">
-            <img src="" width="250">
+            <img src="../pics/rb2b.png" width="220">
         </td>
         <td><a href="https://openreview.net/forum?id=e82_BlJL43M">RB2: Robotic Manipulation Benchmarking with a Twist</a><br>
             <div class="pubauthor">Sudeep Dasari, Jianren Wang, Joyce Hong, Shikhar Bahl, Yixin Lin, Austin S Wang, Abitha Thankaraj, Karanbir Singh Chahal, Berk Calli, Saurabh Gupta, David Held, Lerrel Pinto, Deepak Pathak, Vikash Kumar, Abhinav Gupta<br>
             </div>
             <div class="pubjournal">NeurIPS 2021 Datasets and Benchmarks Track, 2021</div>
-            <div id="div2021-3dV" class="pubInfo"></div>
+            <div id="div2021rb2" class="pubInfo"></div>
+            <div id="absdiv2021rb2" style="display:none">
+                <blockquote>
+                Benchmarks offer a scientific way to compare algorithms using scientific performance metrics. Good benchmarks have two features: (a) wide audience appeal; (b) easily reproducible. In robotics, there is a tradeoff between reproducibility and broad accessibility. If the benchmark is kept restrictive (fixed hardware, objects), the numbers are reproducible but it becomes niche. On the other hand, benchmark could be just loose set of protocols but the underlying varying setups make it hard to reproduce the results. In this paper, we re-imagine robotics benchmarks – we define a robotics benchmark to be a set of experimental protocols and state of the art algorithmic implementations. These algorithm implementations will provide a way to recreate baseline numbers in a new local robotic setup in less than few hours and hence help provide credible relative rankings between different approaches. These credible local rankings are pooled from several locations to help establish global rankings and SOTA algorithms that work across majority of setups. We introduce RB2 — a benchmark inspired from human SHAP tests. Our benchmark was run across three different labs and reveals several surprising findings.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://rb2.info/">[Project Page]</a>
+                <!--a href="javascript:copy(div20213dV, bibdiv20213dV)">[Bibtex]</a-->
+                <a href="javascript:copy(div2021rb2, absdiv2021rb2)">[Abstract]</a>                
+            </div>
             <br>
         </td>
     </tr>
@@ -40,8 +50,26 @@ subtitle:
             <div class="pubauthor">Jianren Wang, Haiming Gang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
             </div>
             <div class="pubjournal">International Conference on 3D Vision (3DV), 2021</div>
-            <div id="div2021-3dV" class="pubInfo"></div>
-            <br>
+            <div id="div20213dV" class="pubInfo"></div>
+            <div id="bibdiv20213dV" style="display:none">
+                <blockquote>
+<pre>@article{wang2021sodtgnn,
+title={Semi-supervised 3D Object Detection via Temporal Graph Neural Networks},
+author={Wang, Jianren and Gang, Haiming and Ancha, Siddharth and Chen, Yi-ting and Held, David},
+journal={International Conference on 3D Vision},
+year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="absdiv20213dV" style="display:none">
+                <blockquote>
+                3D object detection plays an important role in autonomous driving and other robotics applications. However, these detectors usually require training on large amounts of annotated data that is expensive and time-consuming to collect. Instead, we propose leveraging large amounts of unlabeled point cloud videos by semi-supervised learning of 3D object detectors via temporal graph neural networks. Our insight is that temporal smoothing can create more accurate detection results on unlabeled data, and these smoothed detections can then be used to retrain the detector. We learn to perform this temporal reasoning with a graph neural network, where edges represent the relationship between candidate detections in different time frames.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://www.jianrenw.com/SOD-TGNN/">[Project Page]</a>
+                <a href="javascript:copy(div20213dV, bibdiv20213dV)">[Bibtex]</a>
+                <a href="javascript:copy(div20213dV, absdiv20213dV)">[Abstract]</a>
+            <br></div>
         </td>
     </tr>
 
