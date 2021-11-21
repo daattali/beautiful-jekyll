@@ -182,7 +182,7 @@ The output should look like so. Wait a bit and it should say _provisioned_ at so
 
 ![](/img/capv-3.png)
 
-* You can also track the provisioning process with clusterctl to see where it's at. You will notice that this is what the tanzu cli is based on, only rebranded.
+* You can also track the provisioning process with clusterctl to see where it's at. You will notice that this is what the [tanzu cli ](https://www.vxav.fr/2021-10-14-ansi-color-handling-characters-with-tanzu-cli-on-windows/)is based on, only slightly rebranded by VMware.
 
 You will see the progress as you refresh this command and that it fits with what is going on in vSphere.
 
@@ -274,3 +274,5 @@ The bootstrap kind cluster is now back to a regular cluster, so if you don't hav
 Here it is for Kubernetes Cluster API Provider vSphere (CAPV) and how to use it. We haven't covered the creation of a workload cluster but you already saw how to do it so it shouldn't be too much of a stretch to figure that one out.
 
 I shall get your attention on the fact that you want to sanitize your config files after use to avoid leaving password in clear text on a machine as a best practice.
+
+Cluster API is a great project that opened the door to many use cases for companies to build upon and distribute great products.
