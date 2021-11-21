@@ -25,3 +25,7 @@ The steps are as follows to get started with cluster-api:
 4. **Provision the kubernetes cluster to the cloud provider**: A YAML manifest has to be generated with clusterctl containing the details of the kubernetes cluster to deploy and then apply it.
 5. **Move the cluster-api components to the kubernetes cluster**: We then need to connect to the cluster i SSH, run step 3 against it and then move the components from the bootstrap cluster using clusterctl.
 6. **Decommission the bootstrap cluster**: The last step is to delete the bootstrap kind cluster if you have no more use for it.
+
+### Getting started with Cluster API Provider vSphere (CAPV)
+
+Let's dig into it and see how we can get a Kubernetes cluster-API management cluster in vSphere in 6 steps. While this is more complicated than Tanzu Community Edition, it is still made easy for thanks to the efforts of the team behind the cluster-API project and kubeadm.
