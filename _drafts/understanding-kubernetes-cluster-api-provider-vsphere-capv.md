@@ -137,4 +137,8 @@ Adjust the fields as necessary. In this example I am deploying a cluster named _
         --control-plane-machine-count 1 \
         --worker-machine-count 1 > cluster.yaml
 
-fd
+* _Optional: Now you can always open cluster.yaml and make changes to the configuration as you see fit._
+
+    nano cluster.yaml
+
+h
