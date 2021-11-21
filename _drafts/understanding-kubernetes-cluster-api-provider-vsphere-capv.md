@@ -19,7 +19,7 @@ The steps are as follows to get started with cluster-api:
 
 1. **Install Kind on a bootstrap VM**: We will use a debian VM to run a temporary cluster with Kind and delete it at the end. 
 2. **Create a bootstrap cluster with Kind**: You could turn an existing kubernetes cluster in a management cluster but the more common process is to use a temporary kind cluster to provision a kubernetes cluster on your cloud provider and then move the cluster-api components to it, rendering the temporary cluster obsolete.
-3. **Download clusterctl and prepare the temporary cluster with it**: 
-4. **Provision the kubernetes cluster to the cloud provider**: 
-5. **Move the cluster-api components to the kubernetes cluster**:
-6. **Decommission the bootstrap cluster**:
+3. **Download clusterctl and prepare the temporary cluster with it**: clusterctl is the command line tool for cluster-api. The cluster has to be prepared with a configuration file containing the details about the vSphere environment. That way the cluster knows how to speak with the vSphere infrastructure.
+4. **Provision the kubernetes cluster to the cloud provider**: A YAML manifest has to be generated with clusterctl containing the details of the kubernetes cluster to deploy and then apply it.
+5. **Move the cluster-api components to the kubernetes cluster**: We then need to connect to the cluster i SSH, run step 3 against it and then move the components from the bootstrap cluster using clusterctl.
+6. **Decommission the bootstrap cluster**: The last step is to delete the bootstrap kind cluster if you have no more use for it.
