@@ -22,3 +22,4 @@ The steps are as follows to get started with cluster-api:
 3. **Download clusterctl and prepare the temporary cluster with it**: 
 4. **Provision the kubernetes cluster to the cloud provider**: 
 5. **Move the cluster-api components to the kubernetes cluster**:
+6. **Decommission the bootstrap cluster**:
