@@ -11,6 +11,14 @@ I recently got into Kubernetes Cluster API Provider vSphere (CAPV) to understand
 
 So, the way Kubernetes provisions resources is declaratively through YAML manifest describing the state you want them to be in. By default these manifests cover "vanilla" Kubernetes objects such as deployments, pods, replicasets, services, ingress, you name it. You can get the list by running "_kubectl api-resources_". 
 
-Projects like [cluter-api](https://cluster-api.sigs.k8s.io/) expand the capabilities of Kubernetes by offering the possibility to interface with [many cloud providers ](https://cluster-api.sigs.k8s.io/reference/providers.html)such as AWS, Azure, Sidero, etc to provision Kubernetes workload clusters. These extra capabilities are in the form of Custom Resource Definitions (CRD) and controllers that know how to "speak" (API) to these cloud providers to deploy the nodes as VMs and then create a cluster with kubeadm. 
+Projects like [cluter-api](https://cluster-api.sigs.k8s.io/) expand the capabilities of Kubernetes by offering the possibility to interface with [many cloud providers ](https://cluster-api.sigs.k8s.io/reference/providers.html)such as AWS, Azure, Sidero, etc to provision Kubernetes workload clusters. These extra capabilities are in the form of Custom Resource Definitions (CRD) and controllers that know how to "speak" (API) to these cloud providers to deploy the nodes as VMs and then create a cluster with kubeadm. The cluster-api resources are installed in what is referred to as a _kubernetes management cluster_ that remains and is used to provision Kubernetes clusters on a cloud provider.
 
 In our case we are interested in the vSphere provider called Cluster API Provider vSphere or CAPV. For instance, you can see pretty much the same steps when getting started with Tanzu Community Edition, except it is made a lot simpler through UI and automation. In this post we are doing essentially the same steps but manually, that way we can see what's going on behind the scenes.
+
+The steps are as follows to get started with cluster-api:
+
+1. **Install Kind on a bootstrap VM**: We will use a debian VM to run a temporary cluster with Kind and delete it at the end. 
+2. **Create a bootstrap cluster with Kind**: You could turn an existing kubernetes cluster in a management cluster but the more common process is to use a temporary kind cluster to provision a kubernetes cluster on your cloud provider and then move the cluster-api components to it, rendering the temporary cluster obsolete.
+3. **Download clusterctl and prepare the temporary cluster with it**: 
+4. **Provision the kubernetes cluster to the cloud provider**: 
+5. **Move the cluster-api components to the kubernetes cluster**:
