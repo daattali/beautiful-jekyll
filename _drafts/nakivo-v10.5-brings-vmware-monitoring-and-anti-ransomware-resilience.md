@@ -71,3 +71,7 @@ A number of other enhancements are brought by Nakivo B&R v10.5:
 * Enhanced tracking of virtual machines in Microsoft Hyper-V clusters during job runs.
 * Data unpack is now skipped for new backup copy jobs. A mapping run is required to apply the improvement for existing backup copy jobs.
 * Support for Asustor ADM 4.0.
+
+### Wrap up
+
+With Nakivo Backup & Replication v10.5, the company focuses on aspects of the SDDC that concern all customers with VMware monitoring and imporved Anti-Ransomware resilience.
