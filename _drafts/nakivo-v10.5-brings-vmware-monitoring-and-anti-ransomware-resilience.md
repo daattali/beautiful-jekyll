@@ -36,9 +36,13 @@ NAKIVO B&R can back up and recover custom VM templates to and from vCenter Serve
 
 This update also brings a new, more intuitive user interface to the General tab settings.
 
+![](/img/nakivo105-6.png)
+
 ### Nakivo Virtual appliance update to v10.5
 
-If you already run a NAKIVO Backup & Replication virtual appliance you can obviously update your existing server. You can update with the notification telling you an update is available. Otherwise, the documentation explains how to update manualy. download the updater package [here](https://www.nakivo.com/resources/download/update/).
+If you already run a NAKIVO Backup & Replication virtual appliance you can obviously update your existing server. The documentation explains how to update manualy. 
+
+1. First download the updater package [here](https://www.nakivo.com/resources/download/update/).
 
 ![](/img/nakivo105-2.png)
 
