@@ -13,20 +13,22 @@ The landscape of VM backup solutions vendors has significantly evolved over the 
 
 Although the changelog isn't a long scroll down, you will find that a lot of work has gone into this release and it will certainely bring value to existing and new customers.
 
-The two flagship features of this release are:
+#### Flagship features
+
+The two main features driving NAKIVO Backup & Replication v10.5 are the following:
 
 * **VMware Monitoring**
 * **Hardened Virtual Appliance**
 
-Other new features that are worth mentioning include:
+#### Other new features
 
 * **Auto-Set API Permissions for Microsoft 365 Accounts**
 
-NAKIVO Backup & Replication can now automatically check and set the required API permissions for Microsoft 365 accounts before adding them to Inventory.
+NAKIVO Backup & Replication automatically checks and sets the required API permissions for Microsoft 365 accounts before adding them to the Inventory.
 
 * **Backup of VM Templates**
 
-NAKIVO Backup & Replication can now back up and recover custom VM templates to and from VMware vCenter or ESXi hosts.
+NAKIVO B&R can back up and recover custom VM templates to and from VMware vCenter or ESXi hosts.
 
 * **General Tab Facelift**
 
