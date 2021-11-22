@@ -68,7 +68,7 @@ While the crux of a ransomware attack is to encrypt the victim's data, attackers
 
 ![](/img/nakivo105-1.png)
 
-Nakivo Backup and Replication v10.5 improves the security of the [virtual appliance ](https://www.nakivo.com/resources/download/free-edition/download/)deployment with the **Hardened Virtual Appliance** which allows you to create immutable backups in Backup Repositories. The immutability cannot be unset by any user or process. This provides an additional level of security for your backups.
+Nakivo Backup and Replication v10.5 is working hard on improving security of [virtual appliance](https://www.nakivo.com/resources/download/free-edition/download/) deployments with the **Hardened Virtual Appliance** which allows you to create immutable backups in Backup Repositories. The immutability cannot be unset by any user or process. This provides an additional level of security for your backups.
 
 ### Additional improvements in Nakivo Backup & Replication v10.5
 
