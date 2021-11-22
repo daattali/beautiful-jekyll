@@ -66,6 +66,8 @@ This new [VMware monitoring feature ](https://helpcenter.nakivo.com/User-Guide/C
 
 _Do note that this is the first installment of this feature. A lot more metrics and capabilities will be added in the next release to make it a production tool that you can leverage to monitor your environment._
 
+![](/img/nakivo105-7.png)
+
 Let's have a look at the value brought by Nakivo VMware monitoring:
 
 * **Simpler VM Sprawl Control**
@@ -96,7 +98,7 @@ While the crux of a ransomware attack is to encrypt the victim's data, attackers
 
 ![](/img/nakivo105-1.png)
 
-Nakivo Backup and Replication v10.5 is working hard on improving security of [virtual appliance](https://www.nakivo.com/resources/download/free-edition/download/) deployments with the **Hardened Virtual Appliance** which allows you to create immutable backups in Backup Repositories. The immutability cannot be unset by any user or process. This provides an additional level of security for your backups.
+Nakivo Backup and Replication v10.5 is working hard on improving security of [virtual appliance](https://www.nakivo.com/resources/download/free-edition/download/) deployments with the **Hardened Virtual Appliance** with immutable repositories now baked into the applianceThe immutability cannot be unset by any user or process. This provides an additional level of security for your backups.
 
 ### Additional improvements in Nakivo Backup & Replication v10.5
 
@@ -114,4 +116,6 @@ A number of other enhancements are brought by Nakivo B&R v10.5:
 
 ### Wrap up
 
-With Nakivo Backup & Replication v10.5, the company focuses on aspects of the SDDC that concern all customers with VMware monitoring and imporved Anti-Ransomware resilience.
+With Nakivo Backup & Replication v10.5, the company focuses on aspects of the SDDC that concern all customers with VMware monitoring and imporved Anti-Ransomware resilience. The virtual appliance form factor is also appreciated as it simplifies the deployment, updates, backups when it comes to dealing with the backup server.
+
+Watch this space as the next version of Nakivo Backup and Replication should significantly improve the VMware monitoring feature!
