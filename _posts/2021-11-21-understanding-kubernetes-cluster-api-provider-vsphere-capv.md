@@ -230,7 +230,7 @@ The output of the Calico deployment looks like so:
 
 * The output of the clusterctl command should show nothing but green.
 
-    clusterctl describe cluster capv-management
+  clusterctl describe cluster capv-management
 
 ![](/img/capv-11.png)
 
@@ -249,7 +249,7 @@ Now we want to turn this newly created cluster into our permanent cluster. Meani
 
 * Go back to the bootstrapping machine and **move the components to the workload cluster** using clusterctl and the kubeconfig file that to target the workload cluster.
 
-    clusterctl move --to-kubeconfig=capv-management.kubeconfig
+  clusterctl move --to-kubeconfig=capv-management.kubeconfig
 
 The output should look like the following:
 
