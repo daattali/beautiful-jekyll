@@ -38,7 +38,7 @@ This update also brings a new, more intuitive user interface to the General tab 
 
 ### Nakivo Virtual appliance update to v10.5
 
-If you already run a NAKIVO Backup & Replication virtual appliance, download the updater package [here](https://www.nakivo.com/resources/download/update/).
+If you already run a NAKIVO Backup & Replication virtual appliance you can obviously update your existing server. You can update with the notification telling you an update is available. Otherwise, the documentation explains how to update manualy. download the updater package [here](https://www.nakivo.com/resources/download/update/).
 
 ![](/img/nakivo105-2.png)
 
@@ -48,7 +48,7 @@ Before updating your virtual appliance (VA), check that no jobs or repository ma
 
 ![](/img/nakivo105-3.png)
 
-2. In vCenter, open a virtual console on the Nakivo appliance and go to **Manage NAKIVO services** > **Software update** > Select the **Updater file** > Scroll down to the bottom and **type Y to start the update**.
+1. In vCenter, open a virtual console on the Nakivo appliance and go to **Manage NAKIVO services** > **Software update** > Select the **Updater file** > Scroll down to the bottom and **type Y to start the update**.
 
 ![](/img/nakivo105-4.png)
 
@@ -58,7 +58,7 @@ The appliance should now be running the latest version. You can check in **Setti
 
 ### VMware infrastructure monitoring
 
-This new VMware monitoring feature lets you track and monitor VMware vSphere hosts and VMs metrics such as CPU, memory, and disk load/usage as well as datastore disk usage. VMware Monitoring is available as part of the NAKIVO Backup & Replication [Free Trial](https://www.nakivo.com/resources/download/trial-download/) and the [Free Edition](https://www.nakivo.com/resources/download/free-edition/).
+This new [VMware monitoring feature ](https://helpcenter.nakivo.com/User-Guide/Content/Getting-Started/Monitoring/Managing-The-Monitored-Items.htm)lets you track and monitor VMware vSphere hosts and VMs metrics such as CPU, memory, and disk load/usage as well as datastore disk usage. VMware Monitoring is available as part of the NAKIVO Backup & Replication [Free Trial](https://www.nakivo.com/resources/download/trial-download/) and the [Free Edition](https://www.nakivo.com/resources/download/free-edition/).
 
 _Do note that this is the first installment of this feature. A lot more metrics and capabilities will be added in the next release to make it a production tool that you can leverage to monitor your environment._
 
