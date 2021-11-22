@@ -30,7 +30,7 @@ NAKIVO Backup & Replication can now back up and recover custom VM templates to a
 
 This update also brings a new, more intuitive user interface to the General tab in Settings.
 
-### VMware monitoring
+### VMware infrastructure monitoring
 
 This new VMware monitoring feature lets you track and monitor VMware vSphere hosts and VMs metrics such as CPU, memory, and disk load/usage as well as datastore disk usage. 
 
@@ -57,6 +57,12 @@ The centralized dashboard in Nakivo VMware monitoring offers a hollistic view of
 * **Precise Scalability Forecasting**
 
 One of the pain points of the VI admin role lies in the capacity planning. Anticipating the future resource needs can be incredibly tricky and complicated, a reason why Cloud got so popular since it solves this problem. However, on-premise environments still need to account for future growth and this is where Nakivo VMware monitoring can help with detailed real-time and historical data on the performance of your environment to anticipate virtual or physical resources needed.
+
+### Improved anti-ransomware resilience
+
+Ransomware have been a rising threat for IT professionals over the last few years with ever more sophisticated attacks. I already covered the topic lately with [vSphere environments in the Ransomware landscape](https://www.vxav.fr/2021-09-29-vsphere-environments-in-the-ransomware-landscape/) and [How NAKIVO Backup & Replication can help you with Ransomware](https://www.vxav.fr/2021-11-15-how-nakivo-backup-replication-can-help-you-with-ransomware/). 
+
+While the crux of a ransomware attack is to encrypt the victim's data, attackers are also targeting backup solutions since this is essentially the only way to recover from a Ransomware attack and avoid paying the ransom.
 
 ### Additional improvements in Nakivo Backup & Replication v10.5
 
