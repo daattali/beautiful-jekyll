@@ -36,9 +36,29 @@ NAKIVO B&R can back up and recover custom VM templates to and from vCenter Serve
 
 This update also brings a new, more intuitive user interface to the General tab settings.
 
+### Nakivo Virtual appliance update to v10.5
+
+If you already run a NAKIVO Backup & Replication virtual appliance, download the updater package [here](https://www.nakivo.com/resources/download/update/).
+
+![](/img/nakivo105-2.png)
+
+Before updating your virtual appliance (VA), check that no jobs or repository maintenance tasks are running and create a snapshot of the VA in case of a failure.
+
+1. Connect to the Nakivo appliance with WinSCP and copy the Updated file to /opt/nakivo.updates
+
+![](/img/nakivo105-3.png)
+
+2. In vCenter, open a virtual console on the Nakivo appliance and go to **Manage NAKIVO services** > **Software update** > Select the **Updater file** > Scroll down to the bottom and **type Y to start the update**.
+
+![](/img/nakivo105-4.png)
+
+The appliance should now be running the latest version. You can check in **Settings > General > Software Update**.
+
+![](/img/nakivo105-5.png)
+
 ### VMware infrastructure monitoring
 
-This new VMware monitoring feature lets you track and monitor VMware vSphere hosts and VMs metrics such as CPU, memory, and disk load/usage as well as datastore disk usage. VMware Monitoring is available as part of the NAKIVO Backup & Replication [Free Trial](https://www.nakivo.com/resources/download/trial-download/) and the [Free Edition](https://www.nakivo.com/resources/download/free-edition/). 
+This new VMware monitoring feature lets you track and monitor VMware vSphere hosts and VMs metrics such as CPU, memory, and disk load/usage as well as datastore disk usage. VMware Monitoring is available as part of the NAKIVO Backup & Replication [Free Trial](https://www.nakivo.com/resources/download/trial-download/) and the [Free Edition](https://www.nakivo.com/resources/download/free-edition/).
 
 _Do note that this is the first installment of this feature. A lot more metrics and capabilities will be added in the next release to make it a production tool that you can leverage to monitor your environment._
 
@@ -66,7 +86,7 @@ One of the pain points of the VI admin role lies in the capacity planning. Antic
 
 ### Improved anti-ransomware resilience
 
-Ransomware have been a rising threat for IT professionals over the last few years with ever more sophisticated attacks. I already covered the topic lately with [vSphere environments in the Ransomware landscape](https://www.vxav.fr/2021-09-29-vsphere-environments-in-the-ransomware-landscape/) and [How NAKIVO Backup & Replication can help you with Ransomware](https://www.vxav.fr/2021-11-15-how-nakivo-backup-replication-can-help-you-with-ransomware/). 
+Ransomware have been a rising threat for IT professionals over the last few years with ever more sophisticated attacks. I already covered the topic lately with [vSphere environments in the Ransomware landscape](https://www.vxav.fr/2021-09-29-vsphere-environments-in-the-ransomware-landscape/) and [How NAKIVO Backup & Replication can help you with Ransomware](https://www.vxav.fr/2021-11-15-how-nakivo-backup-replication-can-help-you-with-ransomware/).
 
 While the crux of a ransomware attack is to encrypt the victim's data, attackers are also targeting backup solutions since this is essentially the only way to recover from a Ransomware attack and avoid paying the ransom. In order to prevent the encryption of backups, Software vendors include repository immutability, meaning the data cannot be altered in any way.
 
