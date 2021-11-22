@@ -57,3 +57,17 @@ The centralized dashboard in Nakivo VMware monitoring offers a hollistic view of
 * **Precise Scalability Forecasting**
 
 One of the pain points of the VI admin role lies in the capacity planning. Anticipating the future resource needs can be incredibly tricky and complicated, a reason why Cloud got so popular since it solves this problem. However, on-premise environments still need to account for future growth and this is where Nakivo VMware monitoring can help with detailed real-time and historical data on the performance of your environment to anticipate virtual or physical resources needed.
+
+### Additional improvements in Nakivo Backup & Replication v10.5
+
+A number of other enhancements are brought by Nakivo B&R v10.5:
+
+* Now display full license information, including full licensing model breakdown and used/licensed workload details.
+* More consistent format for alarms and notifications.
+* Improved two-factor authentication for Active Directory users.
+* Improved tree UI component for easier management of large item sets.
+* Backup copy jobs now skip data unpack/pack if the source and target Backup Repository share the same type and compression.
+* The solution more easily identifies backups with corrupted recovery points.
+* Enhanced tracking of virtual machines in Microsoft Hyper-V clusters during job runs.
+* Data unpack is now skipped for new backup copy jobs. A mapping run is required to apply the improvement for existing backup copy jobs.
+* Support for Asustor ADM 4.0.
