@@ -69,13 +69,17 @@ At this point you should already be able to query your kind cluster with kubectl
 
 Clusterctl is the Cluster-API command line utility that will let you initialize a management cluster. We need to download the utility, move it in our PATH and initialize (prepare) the cluster.
 
-* **First let's download the utility, make it executable and move it to our PATH. This example uses clusterctl version 1.0.1 but check for the latest** [**clusterctl release here**](https://github.com/kubernetes-sigs/cluster-api/releases)**.**
+* **First let's download the utility, make it executable and move it to our PATH.** 
+
+This example uses clusterctl version 1.0.1 but check for the latest [clusterctl release here](https://github.com/kubernetes-sigs/cluster-api/releases).
 
     curl -L https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.0.1/clusterctl-linux-amd64 -o clusterctl
     chmod +x ./clusterctl
     sudo mv ./clusterctl /usr/local/bin/clusterctl
 
 * **Then create the YAML clusterctl configuration file.**
+
+  
 
     mkdir ~/.cluster-api
     nano ~/.cluster-api/clusterctl.yaml
@@ -106,7 +110,9 @@ These are case sensitive so pay attention to it. You will obviously have to adap
     VSPHERE_SSH_AUTHORIZED_KEY: "ssh-rsa AAAAB3N...+G/Xpnc>
     VSPHERE_STORAGE_POLICY: "" 
 
-* **Then we want to initialize our kind kubernetes cluster as a management cluster with clusterctl.** Note that vSphere is the provider here, you would change it to aws, azure, alibabacloud or whatever else should you deploy to some other cloud provider.
+* **Then we want to initialize our kind kubernetes cluster as a management cluster with clusterctl.** 
+
+Note that vSphere is the provider here, you would change it to aws, azure, alibabacloud or whatever else should you deploy to some other cloud provider.
 
     clusterctl init --infrastructure vsphere
 
@@ -144,9 +150,15 @@ Adjust the fields as necessary. In this example I am deploying a cluster named _
 
 * **_Optional_**_: Now you can always open cluster.yaml and make changes to the configuration as you see fit._
 
+    
+
     nano cluster.yaml
 
-* **When you are happy with your manifest, apply it using kubectl and it will start the provisioning process**. This step takes a bit of time so be patient here. However, if nothing is happening in vCenter and you don't see a VM being cloned, it means there probably is a misconfiguration somewhere in your _clusterctl.yaml_ file, in which case you will want to double check it's content (case, typos...).
+* **When you are happy with your manifest, apply it using kubectl and it will start the provisioning process**. 
+
+This step takes a bit of time so be patient here. However, if nothing is happening in vCenter and you don't see a VM being cloned, it means there probably is a misconfiguration somewhere in your _clusterctl.yaml_ file, in which case you will want to double check it's content (case, typos...).
+
+  
 
     kubectl apply -f cluster.yaml
 
@@ -172,7 +184,9 @@ The output should look something like this:
     secret/cloud-provider-vsphere-credentials created
     configmap/cpi-manifests created
 
-* You can use kubectl get cluster to view your workload cluster. Note that _cluster_ is a Custom Resource Definition (CRD) created by clusterctl during initialization. This command would not work in a regular Kubernetes environment.
+* You can use kubectl get cluster to view your workload cluster. 
+
+Note that _cluster_ is a Custom Resource Definition (CRD) created by clusterctl during initialization. This command would not work in a regular Kubernetes environment.
 
     kubectl get cluster
 
@@ -204,17 +218,23 @@ Note that the deployment isn't complete yet as we need to install a [CNI](https:
 
 ![](/img/capv-7.png)
 
-* **Retrieve the Kubeconfig file to connect to the deployed workload cluster**. Change _capv-management_ to the name of your cluster if you chose something else. The file generated is what we'll use with kubectl to connect to the cluster.
+* **Retrieve the Kubeconfig file to connect to the deployed workload cluster**. 
+
+Change _capv-management_ to the name of your cluster if you chose something else. The file generated is what we'll use with kubectl to connect to the cluster.
 
     kubectl get secret capv-management-kubeconfig -o json | jq -r .data.value | base64 --decode > capv-management.kubeconfig
 
-* **Check that it works by querying the hosts with the generated kubeconfig file**. They will be in the _NotReady_ state because they don't have networking yet (CNI).
+* **Check that it works by querying the hosts with the generated kubeconfig file**. 
+
+They will be in the _NotReady_ state because they don't have networking yet (CNI).
 
     kubectl get nodes --kubeconfig=capv-management.kubeconfig
 
 ![](/img/capv-8.png)
 
-* **At this point we need to install a CNI in our cluster. I will install Calico which is a popular choice but you can choose something else, you just need the url to the vendor's current manifest.**
+* **At this point we need to install a CNI in our cluster.** 
+
+I will install Calico which is a popular choice but you can choose something else, you just need the url to the vendor's current manifest.
 
     kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml --kubeconfig=capv-management.kubeconfig
 
@@ -223,6 +243,8 @@ The output of the Calico deployment looks like so:
 ![](/img/capv-9.png)
 
 * The nodes should be **_Ready _**after a couple minutes.
+
+  
 
     kubectl get nodes --kubeconfig=capv-management.kubeconfig
 
@@ -244,6 +266,8 @@ Now we want to turn this newly created cluster into our permanent cluster. Meani
 * **Copy _capv-management.kubeconfig_** from the bootstrap cluster to _.kube/config_ on the workload cluster.
 * **Copy _.cluster-api/clusterctl.yaml _**from the bootstrap cluster to _.cluster-api/clusterctl.yaml_ on the workload cluster.
 * **Initialize the cluster** with _clusterctl_.
+
+  
 
     clusterctl init --infrastructure vsphere
 
