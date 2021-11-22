@@ -43,3 +43,17 @@ Let's have a look at the value brought by Nakivo VMware monitoring:
 VM sprawl refers to a common challenge faced by most companies where the increasing number of virtual machines in an environment because too much for the vSphere administrator to effectively manage. With VMware Monitoring, you will gain complete visibility into hosts, VMs and datastores to help you contain virtual machine sprawl.
 
 * **Resource Management**
+
+One of the core duties of a VI admin is to ensure that all the workloads in the environment are getting the resources they need to run. The VMware performance monitoring dashboard offers real-time resource usage which allows you to keep an eye on used and available hardware resources at any time.
+
+* **Improved Load Distribution**
+
+While resources management will give you a state of the art on resources usage, you also want to ensure that your workloads are distributed efficiently. You don't want a host running a 95% CPU while the other five are cruising at 30% usage. vSphere DRS can help with that but there are license restrictions and Nakivo VMware monitoring offers capabilities in that space as well.
+
+* **Centralized VMware vSphere Infrastructure Monitoring**
+
+The centralized dashboard in Nakivo VMware monitoring offers a hollistic view of your environment and helps focus your attention on what matters.
+
+* **Precise Scalability Forecasting**
+
+One of the pain points of the VI admin role lies in the capacity planning. Anticipating the future resource needs can be incredibly tricky and complicated, a reason why Cloud got so popular since it solves this problem. However, on-premise environments still need to account for future growth and this is where Nakivo VMware monitoring can help with detailed real-time and historical data on the performance of your environment to anticipate virtual or physical resources needed.
