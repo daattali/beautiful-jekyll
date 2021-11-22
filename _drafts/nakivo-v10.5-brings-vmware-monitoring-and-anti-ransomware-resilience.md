@@ -13,10 +13,12 @@ The landscape of VM backup solutions vendors has significantly evolved over the 
 
 Although the changelog isn't a long scroll down, you will find that a lot of work has gone into this release and it will certainely bring value to existing and new customers.
 
+The two flagship features of this release are:
+
 * **VMware Monitoring**
 * **Hardened Virtual Appliance**
 
-This functionality allows you to create immutable backups in Backup Repositories deployed as part of a virtual appliance. The immutability cannot be unset by any user or process. This provides an additional level of security for your backups.
+Other new features that are worth mentioning include:
 
 * **Auto-Set API Permissions for Microsoft 365 Accounts**
 
@@ -32,7 +34,7 @@ This update also brings a new, more intuitive user interface to the General tab 
 
 ### VMware infrastructure monitoring
 
-This new VMware monitoring feature lets you track and monitor VMware vSphere hosts and VMs metrics such as CPU, memory, and disk load/usage as well as datastore disk usage. 
+This new VMware monitoring feature lets you track and monitor VMware vSphere hosts and VMs metrics such as CPU, memory, and disk load/usage as well as datastore disk usage. VMware Monitoring is available as part of the NAKIVO Backup & Replication [Free Trial](https://www.nakivo.com/resources/download/trial-download/) and the [Free Edition](https://www.nakivo.com/resources/download/free-edition/). 
 
 _Do note that this is the first installment of this feature. A lot more metrics and capabilities will be added in the next release to make it a production tool that you can leverage to monitor your environment._
 
@@ -52,9 +54,9 @@ While resources management will give you a state of the art on resources usage, 
 
 * **Centralized VMware vSphere Infrastructure Monitoring**
 
-The centralized dashboard in Nakivo VMware monitoring offers a hollistic view of your environment and helps focus your attention on what matters.
+The centralized dashboard in Nakivo VMware monitoring offers a hollistic view of your environment and helps focus your attention on what matters. You can monitor up to 1,000 VMs, 100 hosts, and 200 datastores from a single dashboard.
 
-* **Precise Scalability Forecasting**
+* **Capacity Planning and trends analyzis**
 
 One of the pain points of the VI admin role lies in the capacity planning. Anticipating the future resource needs can be incredibly tricky and complicated, a reason why Cloud got so popular since it solves this problem. However, on-premise environments still need to account for future growth and this is where Nakivo VMware monitoring can help with detailed real-time and historical data on the performance of your environment to anticipate virtual or physical resources needed.
 
@@ -62,7 +64,9 @@ One of the pain points of the VI admin role lies in the capacity planning. Antic
 
 Ransomware have been a rising threat for IT professionals over the last few years with ever more sophisticated attacks. I already covered the topic lately with [vSphere environments in the Ransomware landscape](https://www.vxav.fr/2021-09-29-vsphere-environments-in-the-ransomware-landscape/) and [How NAKIVO Backup & Replication can help you with Ransomware](https://www.vxav.fr/2021-11-15-how-nakivo-backup-replication-can-help-you-with-ransomware/). 
 
-While the crux of a ransomware attack is to encrypt the victim's data, attackers are also targeting backup solutions since this is essentially the only way to recover from a Ransomware attack and avoid paying the ransom.
+While the crux of a ransomware attack is to encrypt the victim's data, attackers are also targeting backup solutions since this is essentially the only way to recover from a Ransomware attack and avoid paying the ransom. In order to prevent the encryption of backups, Software vendors include repository immutability, meaning the data cannot be altered in any way.
+
+Nakivo Backup and Replication delivers the **Hardened Virtual Appliance** that allows you to create immutable backups in Backup Repositories deployed as part of a virtual appliance. The immutability cannot be unset by any user or process. This provides an additional level of security for your backups.
 
 ### Additional improvements in Nakivo Backup & Replication v10.5
 
