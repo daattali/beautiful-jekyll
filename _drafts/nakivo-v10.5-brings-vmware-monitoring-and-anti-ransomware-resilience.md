@@ -66,7 +66,9 @@ Ransomware have been a rising threat for IT professionals over the last few year
 
 While the crux of a ransomware attack is to encrypt the victim's data, attackers are also targeting backup solutions since this is essentially the only way to recover from a Ransomware attack and avoid paying the ransom. In order to prevent the encryption of backups, Software vendors include repository immutability, meaning the data cannot be altered in any way.
 
-Nakivo Backup and Replication delivers the **Hardened Virtual Appliance** that allows you to create immutable backups in Backup Repositories deployed as part of a virtual appliance. The immutability cannot be unset by any user or process. This provides an additional level of security for your backups.
+![](/img/nakivo105-1.png)
+
+Nakivo Backup and Replication v10.5 improves the security of the [virtual appliance ](https://www.nakivo.com/resources/download/free-edition/download/)deployment with the **Hardened Virtual Appliance** which allows you to create immutable backups in Backup Repositories. The immutability cannot be unset by any user or process. This provides an additional level of security for your backups.
 
 ### Additional improvements in Nakivo Backup & Replication v10.5
 
