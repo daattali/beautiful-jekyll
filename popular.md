@@ -6,6 +6,7 @@ subtitle: ''
 ---
 ## Quick links
 
+* [FREE Make Way for the Holidays Declutter Challenge](https://mailchi.mp/e7284a15e4a6/makewayfortheholidays)
 * Grab My Simple Daily Care Printables [HERE](https://mailchi.mp/d739479e4b35/mysimpledailycare)
 * [Newest blogs](https://www.simplehomemom.com)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
