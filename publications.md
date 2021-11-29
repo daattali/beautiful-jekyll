@@ -4,6 +4,8 @@ title: Publications
 subtitle: 
 ---
 
+Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qig6iu1pL7XMSm0XzmdhTXJysk8/edit#) to see our research highlights!
+
 <table cellpadding="10" width="100%">
 
     <tr>
