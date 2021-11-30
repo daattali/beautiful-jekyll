@@ -264,7 +264,7 @@ Now we want to turn this newly created cluster into our permanent cluster. Meani
 
 * First **SSH to the server** using your public key and user **capv**.
 * **Copy _capv-management.kubeconfig_** from the bootstrap cluster to _.kube/config_ on the workload cluster.
-* **Copy _.cluster-api/clusterctl.yaml _**from the bootstrap cluster to _.cluster-api/clusterctl.yaml_ on the workload cluster.
+* **Copy .cluster-api/clusterctl.yaml** from the bootstrap cluster to _.cluster-api/clusterctl.yaml_ on the workload cluster.
 * **Initialize the cluster** with "_clusterctl init --infrastructure vsphere_"
 * Go back to the bootstrapping machine and **move the components to the workload cluster** using clusterctl and the kubeconfig file that to target the workload cluster.
 
