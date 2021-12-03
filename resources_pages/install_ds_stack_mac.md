@@ -688,7 +688,7 @@ alias gt='git status'
 alias gm='git commit -m'
 alias gap='git add -p'
 # Move, remove, and copy show what was done and prompt before overwriting files.
-alias rm="rm -vI"
+alias rm="rm -vi"
 alias mv="mv -vi"
 alias cp="cp -vi"
 alias mkdir="mkdir -vp"
