@@ -14,6 +14,7 @@ author: xDSL project
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Home: "index"
   News: "news"  
   Developer Zone:
     - Application Developers: "appdev"
