@@ -16,10 +16,9 @@ author: xDSL project
 navbar-links:
   Home: "index"
   News: "news"  
-  Developer Zone:
-    - Overview: "overview"
+  Developer Zone:    
     - Application Developers: "appdev"
-    - DSL Developers: "dsldev"  
+    - DSL Developers: "dsldev"    
   About Project:
     - Partners: "partners"
     - ExCALIBUR: "excalibur"
