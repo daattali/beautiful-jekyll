@@ -3,12 +3,17 @@ layout: post
 title: Automatically install CNI in new kubernetes cluster with Cluster API
 DATE: 
 subtitle: ''
-metadescription: ''
+metadescription: Find out how to easily automate the CNI install in new kubernetes
+  clusters with Cluster API.
 
 ---
-In a [previous blog ](https://www.vxav.fr/2021-11-21-understanding-kubernetes-cluster-api-provider-vsphere-capv/)we discovered Cluster API and how it allows you to declaratively deploy Kubernetes cluster to your favourite cloud provider, ours being vSphere obviously! While this is great, one thing that may be frustrating. It is the fact that, once the cluster is deployed, you have to retrieve the kubeconfig file for the cluster and install a CNI in order for it to go in a **Ready** state. 
+In a [previous blog ](https://www.vxav.fr/2021-11-21-understanding-kubernetes-cluster-api-provider-vsphere-capv/)we discovered Cluster API and how it allows you to declaratively deploy Kubernetes cluster to your favourite cloud provider, ours being vSphere obviously! If you have no idea what Cluster API and CAPV are, I suggest you put this reading on pause and start with the blog aformentioned.
+
+While this is great, one thing that may be frustrating. It is the fact that, once the cluster is deployed, you have to retrieve the kubeconfig file for the cluster and install a CNI in order for it to go in a **Ready** state. Note that this blog is also valid for other Cluster API providers.
 
 Thankfully there is a way to automate it and this is what we will describe here. Spoiler alert, the solution to this is called a [**ClusterResourceSet**](https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20200220-cluster-resource-set.md).
+
+![Automatically install a CNI in your kubernetes clusters deployed with Cluster API](/img/cni-clusterresourceset-2.png)
 
 ### 1 - CNI ConfigMap
 
