@@ -2,7 +2,7 @@
 layout: post
 title: DSL keynote at IWOMP
 subtitle: xDSL's Paul Kelly gives keynote talk at IWOMP 2021
-thumbnail-img: /assets/img/xdsl_bof_sc21.jpeg
+thumbnail-img: /assets/img/iwomp_keynote.jpg
 tags: [keynote]
 comments: true
 ---
