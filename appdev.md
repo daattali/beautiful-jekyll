@@ -8,7 +8,9 @@ The developers of HPC applications have traditionally been forced to work in ser
 
 ## Devito
 
-We are looking to enhance the Devito DSL by building it upon our xDSL common ecosystem. This will unlock the benefits of MLIR and the LLVM toolchain to programmers. We will link to work and updates as these progress.
+We are enhancing the Devito DSL by porting it on top of the xDSL common ecosystem. Devito is a Python based DSL enabling programmers to design highly optimised finite difference kernels for use in inversion methods. This popular tool is especially common for seismology workloads, however can be applied to very many different applications. The Devito xDSL fork can be found [here](https://github.com/xdslproject/devito)
+
+https://github.com/xdslproject/devito
 
 ## PSyclone
 
