@@ -16,17 +16,21 @@ I'm not really going to get into what a configmap is, except to say it is a kube
 
 Note that the name of the configMap must match the name of the one specified in the clusterResourceSet. All the actions below are to perform in the bootstrap (management) cluster.
 
-* **First download the latest calico yaml manifest.** Note that it doesn't have to be Calico, it can be some other CNI if required.
+* **First download the latest calico yaml manifest.** 
+
+Note that it doesn't have to be Calico, it can be some other CNI if required.
 
     curl -L https://docs.projectcalico.org/manifests/calico.yaml -o calico.yaml
 
 * **Create a configMap from the Calico manifest file.**
 
-Note that if you wish to create a cluster in a specific namespace, you want to place the configMap in this same namespace.
+If you wish to create a cluster in a specific namespace, you want to place the configMap in this same namespace.
 
     kubectl create configmap calico-configmap --from-file=calico.yaml -o yaml --dry-run=client > calico-configmap.yaml
 
-* **Apply the Calico configMap to your bootstrap/management cluster.**
+* **Apply the Calico configMap.**
+
+Again, this is to be applied in the bootstrap/management cluster.
 
     kubectl apply -f calico-configmap.yaml
 
