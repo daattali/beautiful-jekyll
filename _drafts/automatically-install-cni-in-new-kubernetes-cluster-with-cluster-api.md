@@ -34,20 +34,23 @@ Again, this is to be applied in the bootstrap/management cluster.
 
     kubectl apply -f calico-configmap.yaml
 
-### ClusterResourceSet
+### 2 - ClusterResourceSet
 
 The [**ClusterResourceSet**](https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20200220-cluster-resource-set.md) is a feature of the Cluster API project that lets you automatically install a resource to a newly created cluster. The current use cases are mostly for CNI (network) and CSI (storage provider). 
 
 In our case, we apply the Calico CNI through a ConfigMap that contains the latest manifest. The ClusterResourceSet object is applied to a cluster through a **matchLabel**. Which is similar to how you tie pods to a service for instance except here we use a **ClusterSelector** tag.
 
-The clusterResourceSet takes the following form. the ConfigMap named calico-configmap is applied to all clusters with the label "cni: calico". Note that you want to pay attention to namespaces and try to keep all these resources together.
+the ConfigMap named calico-configmap is applied to all clusters with the label "cni: calico". Again, you need to pay attention to namespaces and want to keep all these resources together.
+
+* **Create a clusterResourceSet yaml manifest with this content (adjusted to your needs). You can name it calico-clusterResourceSet.yaml for instance.**
+
+You may want to double check the apiVersion with "kubectl api-resources" as these things change quite frequently.
 
     ---
     apiVersion: addons.cluster.x-k8s.io/v1alpha3
     kind: ClusterResourceSet
     metadata:
       name: calico
-      namespace: cluster-50
     spec:
       clusterSelector:
         matchLabels:
@@ -55,3 +58,36 @@ The clusterResourceSet takes the following form. the ConfigMap named calico-conf
       resources:
       - kind: ConfigMap
         name: calico-configmap
+
+* Apply the clusterResourceSet in your environment.
+
+  
+
+    kubectl apply -f calico-clusterResourceSet.yaml 
+
+### 3 - Cluster
+
+The next steps are very much the same as what we saw in the [previous blog](https://www.vxav.fr/2021-11-21-understanding-kubernetes-cluster-api-provider-vsphere-capv/) about CAPV. Except we need to add the "cni : calico" label to our cluster manifest once it is generated with `clusterctl generate cluster`. 
+
+You can either do it imperatively once the cluster is created:
+
+    kubectl label cluster cluster-50 cni=calico
+
+Or you can add the label tag in the cluster's manifest:
+
+    apiVersion: cluster.x-k8s.io/v1beta1
+    kind: Cluster
+    metadata:
+      name: cluster-50
+      labels:
+        cni: calico
+
+Now every time you provision a new cluster, all you have to do in order to install Calico on it is to apply the "cni:calico" label to it.
+
+### Wrap up
+
+Kubernetes is a rising technology which more and more organizations are getting their hands on. Many of them don't really want to fiddle with the nitty gritty of clusters, nodes and such. They want to focus on what matters to them, the applications running in these clusters. This is why other companies leverage projects like Cluster API to offer managed kubernetes environment and take this burden off the customer's hands.
+
+If you want to go a bit further, note that you can also normalize the labelling of your clusters with a kustomization file referrencing all the clusters and a [commonLabel tag](). And if you want to have one configmap and clusterResourceSet per cluster, you can add these to a Kustomization overlay per cluster and specify a namespace for them to avoid name/id duplicates.
+
+Now this can be improved even more for more flexibility by using Helm charts and a GitOps approach with FluxCD but this will be the topic of a further blog post.
