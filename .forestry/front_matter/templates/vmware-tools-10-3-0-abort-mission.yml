@@ -29,6 +29,11 @@ fields:
   config:
     required: false
   label: metadescription
+- name: image
+  type: text
+  config:
+    required: false
+  label: image
 pages:
 - _posts/2018-11-27-test.md
 - _posts/2018-12-03-canceling-hung-tools-upgrade-task.md
