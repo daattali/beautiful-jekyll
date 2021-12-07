@@ -40,11 +40,11 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
+  #rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  facebook: true
   github: epfl-ada/ada-2021-project-wasps
-  twitter: daattali
-  patreon: DeanAttali
+  twitter: true
+  patreon: true
   youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
