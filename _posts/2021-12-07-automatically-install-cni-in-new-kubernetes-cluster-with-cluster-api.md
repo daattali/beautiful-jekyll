@@ -5,6 +5,7 @@ DATE:
 subtitle: ''
 metadescription: Find out how to easily automate the CNI install in new kubernetes
   clusters with Cluster API.
+image: "/img/cni-clusterresourceset-2.png"
 
 ---
 In a [previous blog ](https://www.vxav.fr/2021-11-21-understanding-kubernetes-cluster-api-provider-vsphere-capv/)we discovered Cluster API and how it allows you to declaratively deploy Kubernetes cluster to your favourite cloud provider, ours being vSphere obviously! If you have no idea what Cluster API and CAPV are, I suggest you put this reading on pause and start with the blog aformentioned.
@@ -17,11 +18,11 @@ Thankfully there is a way to automate it and this is what we will describe here.
 
 ### 1 - CNI ConfigMap
 
-I'm not really going to get into what a configmap is, except to say it is a kubernetes resource that includes configuration settings to pass to another resource. In this case, the ConfigMap will contain the content of the Calico yaml manifest. 
+I'm not really going to get into what a configmap is, except to say it is a kubernetes resource that includes configuration settings to pass to another resource. In this case, the ConfigMap will contain the content of the Calico yaml manifest.
 
 Note that the name of the configMap must match the name of the one specified in the clusterResourceSet. All the actions below are to perform in the bootstrap (management) cluster.
 
-* **First download the latest calico yaml manifest.** 
+* **First download the latest calico yaml manifest.**
 
 Note that it doesn't have to be Calico, it can be some other CNI if required.
 
@@ -41,7 +42,7 @@ Again, this is to be applied in the bootstrap/management cluster.
 
 ### 2 - ClusterResourceSet
 
-The [**ClusterResourceSet**](https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20200220-cluster-resource-set.md) is a feature of the Cluster API project that lets you automatically install a resource to a newly created cluster. The current use cases are mostly for CNI (network) and CSI (storage provider). 
+The [**ClusterResourceSet**](https://github.com/kubernetes-sigs/cluster-api/blob/main/docs/proposals/20200220-cluster-resource-set.md) is a feature of the Cluster API project that lets you automatically install a resource to a newly created cluster. The current use cases are mostly for CNI (network) and CSI (storage provider).
 
 In our case, we apply the Calico CNI through a ConfigMap that contains the latest manifest. The ClusterResourceSet object is applied to a cluster through a **matchLabel**. Which is similar to how you tie pods to a service for instance except here we use a **ClusterSelector** tag.
 
@@ -66,13 +67,11 @@ You may want to double check the apiVersion with "kubectl api-resources" as thes
 
 * Apply the clusterResourceSet in your environment.
 
-  
-
-    kubectl apply -f calico-clusterResourceSet.yaml 
+  kubectl apply -f calico-clusterResourceSet.yaml
 
 ### 3 - Cluster
 
-The next steps are very much the same as what we saw in the [previous blog](https://www.vxav.fr/2021-11-21-understanding-kubernetes-cluster-api-provider-vsphere-capv/) about CAPV. Except we need to add the "cni : calico" label to our cluster manifest once it is generated with `clusterctl generate cluster`. 
+The next steps are very much the same as what we saw in the [previous blog](https://www.vxav.fr/2021-11-21-understanding-kubernetes-cluster-api-provider-vsphere-capv/) about CAPV. Except we need to add the "cni : calico" label to our cluster manifest once it is generated with `clusterctl generate cluster`.
 
 You can either do it imperatively once the cluster is created:
 
