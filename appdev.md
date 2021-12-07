@@ -8,9 +8,7 @@ The developers of HPC applications have traditionally been forced to work in ser
 
 ## Devito
 
-We are enhancing the Devito DSL by porting it on top of the xDSL common ecosystem. Devito is a Python based DSL enabling programmers to design highly optimised finite difference kernels for use in inversion methods. This popular tool is especially common for seismology workloads, however can be applied to very many different applications. The Devito xDSL fork can be found [here](https://github.com/xdslproject/devito)
-
-https://github.com/xdslproject/devito
+We are enhancing the Devito DSL by porting it on top of the xDSL common ecosystem. Devito is a Python based DSL enabling programmers to design highly optimised finite difference kernels for use in inversion methods. This popular tool is especially common for seismology workloads, however can be applied to very many different applications. The Devito xDSL fork is available [here](https://github.com/xdslproject/devito) and will be enhanced as the xDSL project progresses.
 
 ## PSyclone
 
