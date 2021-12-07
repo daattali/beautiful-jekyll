@@ -32,6 +32,6 @@ The clusterResourceSet takes the following form. the ConfigMap named calico-conf
 
 ### CNI ConfigMap
 
-I'm not really going to get into what a configmap is, except to say that it is a kubernetes resource that includes configuration settings to pass to another resource. In this case, the ConfigMap will contain the content of the Calico yaml manifest. 
+I'm not really going to get into what a configmap is, except to say it is a kubernetes resource that includes configuration settings to pass to another resource. In this case, the ConfigMap will contain the content of the Calico yaml manifest. 
 
 Note that the name of the configMap must match the name of the one specified in the clusterResourceSet.
