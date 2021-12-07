@@ -17,9 +17,10 @@ navbar-links:
   Home: "index"
   News: "news"  
   Developer Zone:
+    - Overview: "overview"
     - Application Developers: "appdev"
     - DSL Developers: "dsldev"  
-  About:
+  About Project:
     - Partners: "partners"
     - ExCALIBUR: "excalibur"
 
