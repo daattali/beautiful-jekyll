@@ -6,10 +6,10 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Detect profile of the speaker based on deep learning
 
 # Your name to show in the footer
-author: Some Person
+author: Wei Shi
 
 # --- List of links in the navigation bar --- #
 
@@ -41,10 +41,10 @@ round-avatar: true
 social-network-links:
   email: "someone@example.com"
   #rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: true
+  facebook: false
   github: epfl-ada/ada-2021-project-wasps
-  twitter: true
-  patreon: true
+  twitter: false
+  patreon: false
   youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
