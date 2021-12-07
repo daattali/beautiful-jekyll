@@ -22,6 +22,8 @@ Note that the name of the configMap must match the name of the one specified in 
 
 * **Create a configMap from the Calico manifest file.**
 
+Note that if you wish to create a cluster in a specific namespace, you want to place the configMap in this same namespace.
+
     kubectl create configmap calico-configmap --from-file=calico.yaml -o yaml --dry-run=client > calico-configmap.yaml
 
 * **Apply the Calico configMap to your bootstrap/management cluster.**
