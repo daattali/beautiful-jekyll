@@ -9,7 +9,7 @@
 title: DPQ & WASPS
 
 # Your name to show in the footer
-author: Wei Shi
+author: WASPS Team
 
 # --- List of links in the navigation bar --- #
 
@@ -39,13 +39,13 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "wei.shi@epfl.ch"
   #rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: false
   github: epfl-ada/ada-2021-project-wasps
   twitter: false
   patreon: false
-  youtube: c/daattali
+  youtube: false
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
