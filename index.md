@@ -4,7 +4,7 @@ title: xDSL
 subtitle: A common ecosystem for DSL development
 ---
 
-We are developing a common ecosystem for building Domain Specific Languages (DSLs). 
+We are developing a common ecosystem for building Domain Specific Languages (DSLs). This will significantly lower the barrier to entry in developing DSLs and aims to improve the end-user experience by affording a mature and well supported ecosystem based upon MLIR and LLVM.
 
 # The challenge
 
