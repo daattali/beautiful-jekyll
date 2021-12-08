@@ -18,12 +18,12 @@ navbar-links:
   Code of Conduct: "code-of-conduct"
   Registration: "registration"
   Programming: "programming"
-  Schedule: "schedule"
+  #Schedule: "schedule"
   Theme: "theme"
   Dealers & Artists: "dealers"
   #  Staff: "staff"
   #Volunteer: "volunteer"
-  Store: "https://fursquared.square.site/"
+  #Store: "https://fursquared.square.site/"
   Contact: "contact"
     #  Social Media:
     #    - Twitter: "https://twitter.com/fursquared"
@@ -115,7 +115,7 @@ footer-icon-fill-hover-col: "white"
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
-blog-img: "/assets/img/movie-card-title.png"
+blog-img: "/assets/img/f2-2022-card-coming-soon.jpg"
 
 # --- Web Statistics Section --- #
 
