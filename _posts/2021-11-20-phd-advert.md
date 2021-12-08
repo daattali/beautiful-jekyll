@@ -2,7 +2,7 @@
 layout: post
 title: PhD opportunity
 subtitle: Come to Edinburgh and work with us researching DSLs and compilers
-thumbnail-img: /assets/img/phd_advert.jpg
+thumbnail-img: /assets/img/2021_phdadvert.jpg
 tags: [PhD]
 ---
 
