@@ -6,7 +6,7 @@ subtitle: A team with a diverse skill-set looking to solve exciting challenges
 
 ## School of Informatics (University of Edinburgh)
 
-<img src="../assets/img/uoe_informatics.jpg" width="200" align=right>
+<img src="/assets/img/uoe_informatics.jpg" width="200" align=right>
 
 The School of Informatics leads this project, with Dr Tobias Grosser (the project PI) and Dr Michel Steuwer who are compiler, MLIR and LLVM experts. Being active collaborators to the MLIR and LLVM communities, they bring expertise around the development of appropriate MLIR dialects, the mechanism to connect Python based DSLs with MLIR, and integration with LLVM. Furthermore, their wide connections throughout the compiler communities means that the project is able to engage closely with that community and act as a bridge between people working in HPC and compilers.
 
@@ -22,6 +22,6 @@ Professor Paul Kelly and Dr Gerard Gorman provide DSL expertise to the project. 
 
 ## EPCC (University of Edinburgh)
 
-<img src="../assets/img/epcc-logo-cropped.png" width=400 align=left>
+<img src="/assets/img/epcc-logo-cropped.png" width=400 align=left>
 
 EPCC is the UK's leading supercomputing centre, with Dr Nick Brown and Dr Amrey Krause providing HPC expertise at both the technology and application level. This includes expertise with a number of the project's target applications that we will be using as vehicles to evaluate the developed eco-system. During the project we will be using many of EPCC's hosted HPC systems which range from large-scale production machines such as the ARCHER2 UK national supercomputer, to more experimental systems such as the Cerebras CS-1 which contains a highly innovative massive-core CPU. 
