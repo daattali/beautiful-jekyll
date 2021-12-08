@@ -7,3 +7,9 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
+
+# Azurite
+__azurite_db_blob__.json
+__azurite_db_blob_extent__.json
+
+__blobstorage__/
