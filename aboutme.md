@@ -9,9 +9,9 @@ subtitle: Why you'd want to go on a date with me
 I am currently a student at the University of Pennsylvania, where I am dual-enrolled as an undergraduate senior and first year master's student.  I am a candidate in the Robotics Master's Program, with a focus in Computer Vision and Machine Learning.  For my undergraduate degree, I study Mechanical Engineering and Applied Mechanics (MEAM), with minors in Computer Science and Mathematics.  Robotics and AI are my passions, and hopefully this website provides a platform for me to flex some my projects, as well as a creative outlet for my interests.
 
 <p align="middle">
-  <img src="assets/images/front-page-1.jpg" width="400" />
-  <img src="assets/images/img-1.jpeg" width="400" />
-  <img src="assets/images/img-2.jpg" width="400" />
+  <img src="assets/img/about-me-1.jpg" width="400" />
+  <img src="assets/img/about-me-2.jpeg" width="400" />
+  <img src="assets/img/about-me-3.jpg" width="400" />
 </p>
 
 ## About Me
