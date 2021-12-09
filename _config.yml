@@ -9,16 +9,17 @@
 title: atg
 
 # Your name to show in the footer
-author: Andrew Garrett
+author: andrew garrett
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   about me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://geande.github.io"
+  projects:
+    - Beautiful Jekyll: "https://geande.github.io"
+    - Learn markdown: "https://geande.github.io"
+  coursework: "https://geande.github.io"
+  gallery: "https://geande.github.io"
 
 # --- Logo --- #
 
@@ -48,12 +49,12 @@ social-network-links:
 #  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: andrewgarrett
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
+  instagram: atgarrett52
+  spotify: andrewgarrett52
 #  telephone: +14159998888
 #  steam: deanat78
 #  twitch: yourname
@@ -101,10 +102,10 @@ post_search: true
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
+navbar-col: "#C7F9DC"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
+page-col: "#FE7B7D"
 text-col: "#404040"
 link-col: "#008AFF"
 hover-col: "#0085A1"
