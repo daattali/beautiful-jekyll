@@ -8,7 +8,7 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="150" style="text-align:center">
-            <img src="" width="250">
+            <img src="../pics/bmvc2-2021.gif" width="300">
         </td>
         <td>Self-Supervised Point Cloud Completion via Inpainting<br>
             <div class="pubauthor">Himangi Mittal, Brian Okorn, Arpit Jangid, David Held<br>
