@@ -867,7 +867,7 @@ pre {
 }
 .highlight pre {
   border: none;
-  background: none;
+  background-color: #E6F1F8;
   margin: 0.1;
 }
 .highlight > pre {
@@ -885,7 +885,7 @@ pre {
 .highlight tr,
 .highlight td { /* to be removed after fixing table styles */
   border: none;
-  background: none;
+  background-color: #E6F1F8;
   padding: 0;
   margin: 0;
 }
