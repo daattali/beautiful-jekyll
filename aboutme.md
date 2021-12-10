@@ -9,57 +9,58 @@ title: about me
   <img src="/assets/img/front-page-2.PNG" width="600" />
 </p>
 
-
 <pre>
-class Andrew(object):
-    def __init__(self, *args, **kwargs):
-        self.birthday = {"month": "May",
-                         "day": 15,
-                         "year": 2000}
-        self.age = 21
-        self.location = "Philadelphia, PA"
-        self.school = "University of Pennsylvania"
-        self.major = {
-                        "undergraduate": "Mechanical Engineering",
-                        "masters": "Robotics (CV & ML)"
-                     }
-        self.interests = {
-                            "academic": ["computer vision", 
-                                         "machine learning", 
-                                         "research", 
-                                         "robotics", 
-                                         "autonomy"], 
-                            "personal": ["soccer", 
-                                         "tennis", 
-                                         "golf", 
-                                         "hiking", 
-                                         "meditation", 
-                                         "modern art"]
-                         }
-        
-        self.music = ["hyperpop", "alt rock", "hip hop", "literally anything on spotify"]
-        self.food = {
-                        "cooking": ["steak", ...
-                                    "squid", ...
-                                    "salmon", ...
-                                    "ricebowls"]
-                        "eating out": ["Sampan", ... # Great restaurant in Philadelphia (asian fusion)
-                                       "Amada", ... # Another great restaurant in Philadelphia (spanish)
-                                       "Morimoto" ... # Yet another great restaurant in Philadelphia (japanese)
-                                       "sushi", ...
-                                       "gnocchi", ...
-                                       "filet mignon"]
-                    }
-        self.pets = None
-        self.socials = {
-                          "instagram": <a href="https://www.instagram.com/atgarrett52/" title="Andrew's Instagram">my instagram</a>,
-                          "facebook": <a href="https://www.facebook.com/profile.php?id=100012119897300" title="Andrew's Facebook">my facebook</a>,
-                          "github": <a href="https://www.github.com/geande/" title="Andrew's Github">my github</a>,
-                          "weights and biases": <a href="https://wandb.ai/geande/" title="Andrew's WandB">my WandB</a>,
-                       }
-</pre>
+        class Andrew(object):
+              def __init__(self, *args, **kwargs):
 
-#### Sorry, in English:
+                    self.birthday = {"month": "May",
+                                     "day": 15,
+                                     "year": 2000}
+
+                    self.age = 21
+
+                    self.location = "Philadelphia, PA"
+                    self.school = "University of Pennsylvania"
+                    self.major = {
+                                    "undergraduate": "Mechanical Engineering",
+                                    "masters": "Robotics (CV & ML)"
+                                 }
+                    self.interests = {
+                                        "academic": ["computer vision", 
+                                                     "machine learning", 
+                                                     "research", 
+                                                     "robotics", 
+                                                     "autonomy"], 
+                                        "personal": ["soccer", 
+                                                     "tennis", 
+                                                     "golf", 
+                                                     "hiking", 
+                                                     "meditation", 
+                                                     "modern art"]
+                                     }
+
+                    self.music = ["hyperpop", "alt rock", "hip hop", "literally anything on spotify"]
+                    self.food = {
+                                    "cooking": ["steak", ...
+                                                "squid", ...
+                                                "salmon", ...
+                                                "ricebowls"]
+                                    "eating out": ["Sampan", ... # Great restaurant in Philadelphia (asian fusion)
+                                                   "Amada", ... # Another great restaurant in Philadelphia (spanish)
+                                                   "Morimoto" ... # Yet another great restaurant in Philadelphia (japanese)
+                                                   "sushi", ...
+                                                   "gnocchi", ...
+                                                   "filet mignon"]
+                                }
+                    self.pets = None
+                    self.socials = {
+                                      "instagram": <a href="https://www.instagram.com/atgarrett52/" title="Andrew's Instagram">my instagram</a>,
+                                      "facebook": <a href="https://www.facebook.com/profile.php?id=100012119897300" title="Andrew's Facebook">my facebook</a>,
+                                      "github": <a href="https://www.github.com/geande/" title="Andrew's Github">my github</a>,
+                                      "weights and biases": <a href="https://wandb.ai/geande/" title="Andrew's WandB">my WandB</a>,
+                                   }
+</pre>
+### Sorry, in English:
 
 I was born and raised in Philadelphia, and now I attend the University of Pennsylvania.  Although I've always felt at home in Philadelphia, I'm a pretty restless person.  As a way to explore the world, my own spirituality, and serve those in need, I went on several volunteer trips to Asia throughout high school.  I've travelled to the Himalayas of Central Asia and spent a summer teaching English and Math at a government primary school.  While there, I experienced some pretty crazy altitude sickness and got lost in some huge cities, but all in all, I consider this one of my favorite summers ever.  I've also travelled to Southeast Asia, where I kayaked in Ha Long Bay, tasted roasted tarantula in the Cambodian jungle, and watched the sun rise over Angkor Wat.  I also worked in a government primary school and helped build a sleeping quarters for orphaned students.
 
