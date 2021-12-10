@@ -1,7 +1,5 @@
 ---
 layout: default
 title: projects
+subtitle: Here is a Collection of some of my projects
 ---
-
-## Here is a Collection of some of my projects
-
