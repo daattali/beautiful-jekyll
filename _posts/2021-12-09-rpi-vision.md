@@ -13,7 +13,7 @@ In this project, students were given the opportunity to apply computer vision to
 
 ### Face Detection
 
-In the first part of this project, I used PCA on a large dataset of people's faces to determine the L2-distance between a sample face image projected in the PCA-space, and the so-called **eigen-faces** (eigen-vectors in the PCA-space).  By thresholding the distance between a sample projection and the eigen-vectors of the PCA-space, we can create a classifier for whether or not there is a face present in the picture.  A smaller L2-distance would mean that whatever pattern is in the image, is has features that resemble a human face, while a larger L2-distance would indicate that whatever is in the image does not have much similarity to a human face.  Shown below is a sample video of my detector deployed on a Raspberry Pi camera:
+In the first part of this project, I used PCA on a large dataset of people's faces to determine the L2-distance between a sample face image projected in the PCA-space, and the so-called **eigen-faces** \(eigen-vectors in the PCA-space\).  By thresholding the distance between a sample projection and the eigen-vectors of the PCA-space, we can create a classifier for whether or not there is a face present in the picture.  A smaller L2-distance would mean that whatever pattern is in the image, is has features that resemble a human face, while a larger L2-distance would indicate that whatever is in the image does not have much similarity to a human face.  Shown below is a sample video of my detector deployed on a Raspberry Pi camera:
 
 <video width="450" height="360" controls>
   <source type="video/mp4" src="/assets/img/facedetection.mp4">
@@ -21,7 +21,7 @@ In the first part of this project, I used PCA on a large dataset of people's fac
 
 The first step, as with any ML/CV project, was preprocessing.  The dataset prepared for students contained 2000 images of different human faces at various scales, all of which are 64x64 grayscaled images.  I vectorized all of the images in the dataset, and then computed the average for each pixel over all vectorized faces.  In order to make the data 0 centered, I subtract the average face vector from all samples.  Then, we can use our resultant data matrix to compute the covariance matrix using the following formula:
 
-\\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]
+[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} ]
 
 ### Mask Detection
 
