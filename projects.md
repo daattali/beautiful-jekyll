@@ -1,8 +1,5 @@
 ---
 layout: home
 title: projects
-subtitle: Here is a Collection of some of my projects.
+subtitle: Here is a collection of some of my projects.
 ---
-
-
-
