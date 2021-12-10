@@ -856,7 +856,7 @@ code {
 pre code {
   padding: 0.125rem 0.25rem;
   background-color: #E6F1F8;
-  border-radius: 0;
+  border-radius: 0.1;
 }
 
 pre {
@@ -868,7 +868,7 @@ pre {
 .highlight pre {
   border: none;
   background: none;
-  margin: 0;
+  margin: 0.1;
 }
 .highlight > pre {
   background-image: linear-gradient(
