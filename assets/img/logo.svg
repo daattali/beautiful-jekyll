@@ -13,8 +13,8 @@
    version="1.1"
    id="svg8"
    inkscape:export-filename="/home/grosser/Projects/xdslproject.github.io/assets/img/logo.png"
-   inkscape:export-xdpi="281.88"
-   inkscape:export-ydpi="281.88"
+   inkscape:export-xdpi="556.44"
+   inkscape:export-ydpi="556.44"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="logo.svg">
   <defs
@@ -67,7 +67,7 @@
        style="font-style:normal;font-weight:normal;font-size:21.1667px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect12);fill:#000000;fill-opacity:1;stroke:none;"><tspan
          x="48.505859"
          y="110.61429"><tspan
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.1667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#d50032;fill-opacity:1">x</tspan><tspan
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.1667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#041e42;fill-opacity:1">DSL</tspan></tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.1667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#d50032;fill-opacity:1">x</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.1667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#041e42;fill-opacity:1">DSL</tspan></tspan></text>
   </g>
 </svg>
