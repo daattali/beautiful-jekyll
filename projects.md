@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 title: projects
-subtitle: Here is a Collection of some of my projects
+subtitle: Here is a Collection of some of my projects.
 ---
 
-sosvbjsdbvosbvjls
+
+
