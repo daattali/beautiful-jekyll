@@ -94,19 +94,30 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#1e465f"
-navbar-text-col: "#b7a43a"
-navbar-border-col: "#b7a43a"
-page-col: "#0e1826"
-page-text-col: "#b7a43a"
-link-col: "#008AFF"
-hover-col: "#FFFFFF"
-footer-col: "#1e465f"
-footer-text-col: "#b7a43a"
-footer-link-col: "#b7a43a"
+navbar-col: "#2a194d"
+navbar-text-col: "#64CE70"
+navbar-logo-col: "#FFFFFF"
+navbar-border-col: "#FFFFFF"
+
+page-col: "#20133a"
+page-text-col: "#ffffff"
+header-col: "#64CE70"
+link-col: "#64CE70"
+hover-col: "#C5EDCA"
+selection-col: "#FFFFFF"
+selection-bg-col: "#64CE70"
+
+button-col: "#FFFFFF"
+button-bg-col: "#64CE70"
+button-hover-col: "#64CE70"
+button-bg-hover-col: "#FFFFFF"
+
+footer-col: "#2a194d"
+footer-text-col: "#64CE70"
+footer-link-col: "#64CE70"
 footer-icon-col: "white"
-footer-icon-fill-col: "#b7a43a"
-footer-icon-hover-col: "#1e465f"
+footer-icon-fill-col: "#64CE70"
+footer-icon-hover-col: "#64CE70"
 footer-icon-fill-hover-col: "white"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
