@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: projects
 subtitle: Here is a Collection of some of my projects.
 ---
