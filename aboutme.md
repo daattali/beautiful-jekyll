@@ -5,16 +5,6 @@ title: about me
 
 ## Hi, I'm Andrew
 
-I am currently a student at the University of Pennsylvania, where I am dual-enrolled as an undergraduate senior and first year master's student.  I am a candidate in the Robotics Master's Program, with a focus in Computer Vision and Machine Learning.  For my undergraduate degree, I study Mechanical Engineering and Applied Mechanics (MEAM), with minors in Computer Science and Mathematics.  Robotics and AI are my passions, and hopefully this website provides a platform for me to flex some my projects, as well as a creative outlet for my interests.
-
-<p align="middle">
-  <img src="/assets/img/about-me-1.jpg" width="350" />
-  <img src="/assets/img/about-me-2.jpeg" width="350" />
-  <img src="/assets/img/about-me-3.jpg" width="400" />
-</p>
-
-## About Me
-
 <pre>
 class Andrew(object):
     def __init__(self, *args, **kwargs):
@@ -24,6 +14,10 @@ class Andrew(object):
         self.age = 21
         self.location = "Philadelphia, PA"
         self.school = "University of Pennsylvania"
+        self.major = {
+                        "undergraduate": "Mechanical Engineering",
+                        "masters": "Robotics (CV & ML)"
+                     }
         self.interests = {
                             "academic": ["computer vision", 
                                          "machine learning", 
