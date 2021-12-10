@@ -5,7 +5,7 @@ subtitle: Project in CIS521
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/rpi-cv.png
 share-img: /assets/img/rpi-cv.jpg
-tags: [research, computer vision]
+tags: [raspberry pi, computer vision]
 ---
 
 
