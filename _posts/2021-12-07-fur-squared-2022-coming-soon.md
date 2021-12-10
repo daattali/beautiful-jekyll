@@ -3,7 +3,7 @@ layout: post
 title: Fur Squared 2022 Available Information
 subtitle: What we know and what will soon follow
 tags:
-  - news
+  - News
 ---
 
 

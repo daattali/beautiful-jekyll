@@ -6,8 +6,8 @@ cover-img: /assets/img/movie-card-blank.png
 thumbnail-img: /assets/img/buggy-thumb.jpg
 share-img: /assets/img/movie-card-title.png
 tags:
-  - news
-  - vr
+  - News
+  - VR
 ---
 
 
