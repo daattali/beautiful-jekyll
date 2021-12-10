@@ -12,15 +12,19 @@ tags: [raspberry pi, computer vision]
 In this project, students were given the opportunity to apply computer vision to both real-world and highly-relevant problems.  Face Recognition is a common technology in modern smartphones and laptops with webcams.  These systems extract visual keypoints on a person's face and match those features against an existing representation of the user's face.  In state of the art applications, these systems are driven by deep computer vision.  In this project, we tackled two related, but simpler vision problems and deployed our algorithms and networks on a Raspberry Pi with camera.
 <p/>
 
+<p>
 ### Face Detection
+<p/>
 
 <p>
 In the first part of this project, I used PCA on a large dataset of people's faces to determine the L2-distance between a sample face image projected in the PCA-space, and the so-called **eigen-faces**.  **Eigen-faces** are just eigen-vectors in the PCA-space.  By thresholding the distance between a sample projection and the eigen-vectors of the PCA-space, we can create a classifier for whether or not there is a face present in the picture.  A smaller L2-distance would mean that whatever pattern is in the image, is has features that resemble a human face, while a larger L2-distance would indicate that whatever is in the image does not have much similarity to a human face.  Shown below is a sample video of my detector deployed on a Raspberry Pi camera:
 <p/>
 
+<p>
 <video width="450" height="360" controls>
   <source type="video/mp4" src="/assets/img/facedetection.mp4">
 </video>
+<p/>
 
 <p>
 The first step, as with any ML/CV project, is preprocessing.  The dataset prepared for students contains 2000 images of different human faces at various scales, all of which are 64x64 grayscaled images.  I vectorize all of the images in the dataset, and then compute the average for each pixel over all vectorized faces (\mu).  In order to make the data 0 centered, I subtract the average face vector from all samples.  Then, we can use our 0-centered data matrix to compute the covariance matrix of our data, with the following formula:
@@ -59,8 +63,12 @@ Next comes the implementation on the Raspberry Pi.  After SSH-ing into the Raspb
 A video is all well and good when it looks nice, but there are definitely some caveats to this method.  The first limitation is that we can only really hope to accurately detect faces in a region that is about the size of our training images (eigenfaces).  The PCA face detector thus only works well when the face is about 5 feet away and centered in the frame.  Additionally, the background needs to provide contrast to whatever face is in the frame.  Training performace may not reflect generalization performance, esepecially when looking in the realm of real-time image processing and potentially noisy sensor data.  Furthermore, balancing real-time processing speed with quality of prediction is one of the cruxes of modern computer vision.  One way to approach the transition from performance vs. speed tradeoff of vision algorithms is to use neural networks with a low cost camera.  The use of a low-cost camera may introduce the problem of noisy sensor data, but one of the defining chaaracteristics of modern deep computer vision is to work well in the presence of noise by extracting features at multiple levelss, like what a CNN does.  In the next part, we take on the challenge of deploying such a CNN for a slightly different task.
 <p/>
 
+<p>
 ### Mask Detection
+<p/>
 
+<p>
 <video width="450" height="360" controls>
   <source type="video/mp4" src="/assets/img/maskdetection.mp4">
 </video>
+<p/>
