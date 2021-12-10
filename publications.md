@@ -4,6 +4,8 @@ title: Publications
 subtitle: 
 ---
 
+Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qig6iu1pL7XMSm0XzmdhTXJysk8/edit#) to see our research highlights!
+
 <table cellpadding="10" width="100%">
 
     <tr>
@@ -216,10 +218,10 @@ year={2021}}</pre>
                 To safely navigate unknown environments, robots must accurately perceive dynamic obstacles. Instead of directly measuring the scene depth with a LiDAR sensor, we explore the use of a much cheaper and higher resolution sensor: <b>programmable light curtains</b>. Light curtains are controllable depth sensors that sense only along a surface that a user selects.  We use light curtains to estimate the <b>safety envelope</b> of a scene: a hypothetical surface that separates the robot from all obstacles. We show that generating light curtains that sense <b>random</b> locations (from a particular distribution) can quickly discover the safety envelope for scenes with unknown objects. Importantly, we produce theoretical safety guarantees on the probability of detecting an obstacle using random curtains. We combine random curtains with a machine learning based model that forecasts and tracks the motion of the safety envelope efficiently. Our method accurately estimates safety envelopes while providing probabilistic safety guarantees that can be used to certify the efficacy of a robot perception system to detect and avoid dynamic obstacles. We evaluate our approach in a simulated urban driving environment and a real-world environment with moving pedestrians using a light curtain device and show that we can estimate safety envelopes efficiently and effectively.
                 </blockquote>
             </div>
-            <div class="pubjournal">Robotics: Science and Systems (RSS), 2021
+            <div class="pubjournal">Robotics: Science and Systems (RSS), 2021</div>
             <div style="font-size:small">
                 <a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees">[Project Page]</a>
-                <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
+                <a href="https://github.com/CMU-Light-Curtains/SafetyEnvelopes">[Code]</a>
                 <a href="javascript:copy(div2021safetyenvelopes, bib2021safetyenvelopes)">[Bibtex]</a>
                 <a href="javascript:copy(div2021safetyenvelopes, abs2021safetyenvelopes)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2107.04000.pdf">[PDF]</a>
@@ -228,7 +230,6 @@ year={2021}}</pre>
                 <a href="https://blog.ml.cmu.edu/2021/11/19/active-safety-envelopes-using-light-curtains-with-probabilistic-guarantees/">[Blog]</a>
             </div>
             <div id="div2021safetyenvelopes" class="pubInfo"></div>
-            </div>
             <br>
         </td>
     </tr>
@@ -277,11 +278,12 @@ year={2021}}</pre>
             </div>
             <div id="bib2021exploiting" style="display:none">
                 <blockquote>
-                    <pre>@inproceedings{cvpr2021raajexploiting,
-                    title={Exploiting & Refining Depth Distributions with Triangulation Light Curtains},
-                    author={Yaadhav Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan},
-                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-                    year={2021}}</pre>
+<pre>@inproceedings{cvpr2021raajexploiting,
+    title     = {Exploiting & Refining Depth Distributions with Triangulation Light Curtains},
+    author    = {Yaadhav Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2021}
+}</pre>
                 </blockquote>
             </div>
             <div id="abs2021exploiting" style="display:none">
@@ -289,16 +291,16 @@ year={2021}}</pre>
                 Active sensing through the use of Adaptive Depth Sensors is a nascent field, with potential in areas such as Advanced driver-assistance systems (ADAS). They do however require dynamically driving a laser / light-source to a specific location to capture information, with one such class of sensor being the Triangulation Light Curtains (LC). In this work, we introduce a novel approach that exploits prior depth distributions from RGB cameras to drive a Light Curtain's laser line to regions of uncertainty to get new measurements. These measurements are utilized such that depth uncertainty is reduced and errors get corrected recursively. We show real-world experiments that validate our approach in outdoor and driving settings, and demonstrate qualitative and quantitative improvements in depth RMSE when RGB cameras are used in tandem with a Light Curtain.
                 </blockquote>
             </div>
-            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2021
+            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2021</div>
             <div style="font-size:small">
-                <!-- <a href="https://bokorn.github.io/zephyr/">[Project Page]</a> -->
-                <!-- <a href="https://github.com/Xingyu-Lin/softgym">[Code]</a> -->
+                <a href="https://soulslicer.github.io/rgb-lc-fusion/">[Project Page]</a>
+                <a href="https://github.com/CMU-Light-Curtains/DepthEstimation">[Code]</a>
                 <a href="javascript:copy(div2021exploiting, bib2021exploiting)">[Bibtex]</a>
                 <a href="javascript:copy(div2021exploiting, abs2021exploiting)">[Abstract]</a>
-                <!-- <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a> -->
+                <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Raaj_Exploiting__Refining_Depth_Distributions_With_Triangulation_Light_Curtains_CVPR_2021_paper.pdf">[PDF]</a>
+                <a href="https://youtu.be/kIjn3U8luV0">[Talk]</a>
             </div>
             <div id="div2021exploiting" class="pubInfo"></div>
-            </div>
             <br>
         </td>
     </tr>
@@ -528,10 +530,10 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
                     Most real-world 3D sensors such as LiDARs perform fixed scans of the entire environment, while being decoupled from the recognition system that processes the sensor data. In this work, we propose a method for 3D object recognition using light curtains, a resource-efficient controllable sensor that measures depth at user-specified locations in the environment. Crucially, we propose using prediction uncertainty of a deep learning based 3D point cloud detector to guide active perception. Given a neural network’s uncertainty, we derive an optimization objective to place light curtains using the principle of maximizing information gain. Then, we develop a novel and efficient optimization algorithm to maximize this objective by encoding the physical constraints of the device into a constraint graph and optimizing with dynamic programming. We show how a 3D detector can be trained to detect objects in a scene by sequentially placing uncertainty-guided light curtains to successively improve detection accuracy.
                 </blockquote>
             </div>
-            <div class="pubjournal">European Conference on Computer Vision (ECCV), 2020 - <award>Spotlight presentation</award> (Selection rate 5.3%)
+            <div class="pubjournal">European Conference on Computer Vision (ECCV), 2020 - <award>Spotlight presentation</award> (Selection rate 5.3%)</div>
             <div style="font-size:small">
                 <a href="http://siddancha.github.io/projects/active-perception-light-curtains/">[Project Page]</a>
-                <a href="https://github.com/siddancha/active-perception-light-curtains">[Code]</a>
+                <a href="https://github.com/CMU-Light-Curtains/ObjectDetection">[Code]</a>
                 <a href="javascript:copy(div2020eccv, bib2020eccv)">[Bibtex]</a>
                 <a href="javascript:copy(div2020eccv, abs2020eccv)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2008.02191.pdf">[PDF]</a>
@@ -539,9 +541,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
                 <a href="https://www.youtube.com/watch?v=uRP63hHArU0">[Long Talk]</a>
                 <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
             </div>
-            <div id="div2020eccv" class="pubInfo"></div>
-            
-            </div>
+            <div id="div2020eccv" class="pubInfo"></div>            
             <br>
         </td>
     </tr>
