@@ -2,7 +2,7 @@
 layout: post
 title: Computer Vision with Raspberry Pi
 subtitle: Project in CIS521
-cover-img: /assets/img/rpi-cv.jpg
+cover-img: /assets/img/rpi-cv-2.jpeg
 thumbnail-img: /assets/img/rpi-cv.png
 share-img: /assets/img/rpi-cv.jpg
 tags: [raspberry pi, computer vision]
