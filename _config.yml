@@ -107,17 +107,17 @@ hover-col: "#C5EDCA"
 selection-col: "#FFFFFF"
 selection-bg-col: "#64CE70"
 
-button-col: "#FFFFFF"
+button-col: "#2a194d"
 button-bg-col: "#64CE70"
-button-hover-col: "#64CE70"
+button-hover-col: "#2a194d"
 button-bg-hover-col: "#FFFFFF"
 
 footer-col: "#2a194d"
 footer-text-col: "#64CE70"
 footer-link-col: "#64CE70"
-footer-icon-col: "white"
+footer-icon-col: "#2a194d"
 footer-icon-fill-col: "#64CE70"
-footer-icon-hover-col: "#64CE70"
+footer-icon-hover-col: "#2a194d"
 footer-icon-fill-hover-col: "white"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
