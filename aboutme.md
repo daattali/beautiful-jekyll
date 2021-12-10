@@ -3,7 +3,12 @@ layout: page
 title: about me
 ---
 
-## Hi, I'm Andrew
+## Hi, I'm Andrew (the guy on the left)
+
+<p align="middle">
+  <img src="/assets/img/front-page-2.PNG" width="600" />
+</p>
+
 
 <pre>
 class Andrew(object):
