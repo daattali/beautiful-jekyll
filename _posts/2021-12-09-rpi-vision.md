@@ -21,6 +21,8 @@ In the first part of this project, I used PCA on a large dataset of people's fac
 
 The first step, as with any ML/CV project, was preprocessing.  The dataset prepared for students contained 2000 images of different human faces at various scales, all of which are 64x64 grayscaled images.  I vectorized all of the images in the dataset, and then computed the average for each pixel over all vectorized faces.  In order to make the data 0 centered, I subtract the average face vector from all samples.  Then, we can use our resultant data matrix to compute the covariance matrix using the following formula:
 
+\\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]
+
 ### Mask Detection
 
 <video width="450" height="360" controls>
