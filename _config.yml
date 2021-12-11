@@ -235,6 +235,11 @@ defaults:
       ext-js: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
   -
     scope:
+      path: "photography"
+    values:
+      permalink: /:path/:basename:output_ext
+  -
+    scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
