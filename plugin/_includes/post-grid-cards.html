@@ -1,0 +1,10 @@
+<div class="album">
+  <img src="{{ site.url }}/images/photography/thumbnails/{{ post.image.thumbnail }}" alt="teaser" itemprop="image">
+
+  <h3 class="post-title" itemprop="name">
+    <span><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></span>
+    <br>
+    <span><time datetime="{{ post.date | date: "%Y-%m-%d"}}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span>
+  </h3>
+</div>
+
