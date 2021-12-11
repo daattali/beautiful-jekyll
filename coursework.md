@@ -77,8 +77,8 @@ subtitle: some highlights from my college courses
 - **PSYC549: A Neuroscience Perspective of Artificial Intelligence** \
   **Professor: Dr. Richard Di Rocco** \
   This is a fantastic seminar which posits that AI and Neuroscience are fundamentally tied.  We first build an understanding of the human brain and human behavior through discussion of famous papers and experiments.  With this, we examine modern Artifical Intelligence from the lens of human brain.  I found this seminar to be incredibly stimulating and provided an eye-opening perspective to a field that I am passionate about.  I wrote my final paper and presentation about Machine Learning and Neural Networks, relating these subjects back to course content.
-  - [Here is the final paper]()(yes, it's long)
-  - [Here is the final slidedeck](./static/PSYC549)(also long, but a lot fewer words)
+  - [Here is the final paper](549prez.html) (yes, it's long)
+  - [Here is the final slidedeck](./static/PSYC549 - NN_ML Presentation.pdf) (also long, but a lot fewer words)
 
 **Spring 2021 Courses**
   
