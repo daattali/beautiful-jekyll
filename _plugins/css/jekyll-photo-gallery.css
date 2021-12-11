@@ -1,0 +1,100 @@
+.centeredG {
+    height: 400px;
+    width: 400px;
+    background: #eee;
+    margin: 50px auto;
+}
+
+.photoCentre {
+    margin-top: 30px;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 70%;
+    float: left;
+    margin-right: 20px
+}
+
+.photoInfo-content-right {
+    margin-left: 20px;
+    float: right;
+}
+
+.photoInfoContainer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.photoInfo1 {
+    flex: 1;
+}
+
+.photoInfo2 {
+    margin-left: 30px;
+    width: 20%;
+    list-style-type: none;
+}
+
+div.photoInfo2 ul {
+    list-style-type: none;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+div.photoInfo2 li {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+div.photoInfo2 hr {
+    padding-bottom: 0px;
+    height: 0px;
+}
+
+.album {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.album img {
+    max-width: none;
+    max-height: 100%;
+}
+
+.album h3 {
+    position: absolute;
+    color: white;
+    top: 25px;
+    left: 0;
+    width: 100%;
+}
+
+.album a {
+    color: white;
+}
+
+.album h3 span {
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.photoStreamTitle{
+    clear:both;
+}
