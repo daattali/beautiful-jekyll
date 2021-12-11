@@ -71,7 +71,7 @@ subtitle: some highlights from my college courses
   - Neural Networks for Vision and Language
   - Reinforcement Learning (TD Learning, Q-Learning, DQN)
   
-  For my final project in this course, my group used the IBES Estimates dataset to classify stocks into **\{BUY, HOLD, SELL\}** based on prior year's Analyst Forecast Error.  We approached the project with more traditional methods of ML, making use of PCA, Random Forests, and XGBoost.  Look [here on my Github](https://github.com/geande/stonks) to see the gigant notebook we created our project in.
+  For my final project in this course, my group used the IBES Estimates dataset to classify stocks into **\{BUY, HOLD, SELL\}** based on prior year's Analyst Forecast Error.  We approached the project with more traditional methods of ML, making use of PCA, Random Forests, and XGBoost.  Look [here on my Github](https://github.com/geande/stonks) to see the gigantic notebook we created our project in.
   
 
 - **PSYC549: A Neuroscience Perspective of Artificial Intelligence** \
