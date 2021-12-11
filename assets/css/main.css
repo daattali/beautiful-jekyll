@@ -59,7 +59,7 @@ a:focus {
 }
 
 blockquote {
-  color: #808080;
+  color: #A6A6A6;
   font-style: italic;
 }
 
@@ -971,7 +971,7 @@ pre {
 }
 
 #full-tags-list .tag-entry .entry-date {
-  color: #808080;
+  color: #A6A6A6;
   font-style: italic;
   font-size: 1rem;
 }
