@@ -45,7 +45,7 @@ By computing the eigenvectors of the covariance matrix, we now have a set of bas
 <p/>
 
 <p>
-  $$ eigenfaces = ((X - \mu) \cdot eigenvectors)^T $$
+  $$ eigenfaces = ((X - \mu)^T \cdot eigenvectors)^T $$
   $$ \omega = eigenfaces \cdot (v - \mu)^T $$
   $$ p = \omega^T \cdot eigenfaces $$
 <p/>
@@ -55,7 +55,7 @@ where $v$ is the vectorized sample image, and $p$ is the vector projection of th
 <p/>
 
 <p>
-Next comes the implementation on the Raspberry Pi.  After SSH-ing into the Raspberry Pi and connecting to a server to stream camera data, we can process the frames using our above functions and OpenCV.  OpenCV comes in handy to read the streamed video frames from the rPi, but most of the processing is done by functions we wrote from above.  First, we constrain ourselves to detect within small rectangular region of the frame, shown visually by the square in the above video.  We also limit the number of eigenfaces used to compute the summed projection distance with the image in the rectangular region.  Tuning the number of eigenfaces to use for measurement, as well as the L2-distance threshold is left to students.  I found that using 20 eigenfaces and an L2-threshold of 47000 worked well, which is shown in the video above.
+Next comes the implementation on the Raspberry Pi.  After SSH-ing into the Raspberry Pi and connecting to a server to stream camera data, we can process the frames using our above functions and OpenCV.  OpenCV comes in handy to read the streamed video frames from the Raspberry Pi, but most of the processing is done by functions we wrote from above.  First, we constrain ourselves to detect within small rectangular region of the frame, shown visually by the square in the above video.  We also limit the number of eigenfaces used to compute the summed projection distance with the image in the rectangular region.  Tuning the number of eigenfaces to use for measurement, as well as the L2-distance threshold is left to students.  I found that using 20 eigenfaces and an L2-threshold of 47000 worked well, which is shown in the video above.
 <p/>
 
 <p>
