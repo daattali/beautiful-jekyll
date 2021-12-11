@@ -13,49 +13,61 @@ subtitle: Hi, I'm the one on the left in this picture.
               def __init__(self, *args, **kwargs):
 
                     self.birthday = {"month": "May",
-                                     "day": 15,
-                                     "year": 2000}
+                                     "day":   15,
+                                     "year":  2000}
 
                     self.age = 21
                     self.family = {
                                      "brothers": 1
-                                     "sisters": 1
-                                     "parents": 2
+                                     "sisters":  1
+                                     "parents":  2
                                   }
                                    
                     self.location = "Philadelphia, PA"
                     self.school = "University of Pennsylvania"
                     self.major = {
                                     "undergraduate": "Mechanical Engineering",
-                                    "masters": "Robotics (CV & ML)"
+                                    "masters":       "Robotics (CV & ML)"
                                  }
+                                 
                     self.interests = {
-                                        "academic": ["computer vision", 
-                                                     "machine learning", 
-                                                     "research", 
-                                                     "robotics", 
-                                                     "autonomy"], 
-                                        "personal": ["soccer", 
-                                                     "tennis", 
-                                                     "golf", 
-                                                     "hiking", 
-                                                     "meditation", 
+                                        "academic": ["computer vision", ...
+                                                     "machine learning", ...
+                                                     "research", ...
+                                                     "robotics", ...
+                                                     "autonomy"],
+                                        "personal": ["soccer", ...
+                                                     "tennis", ...
+                                                     "golf", ...
+                                                     "hiking", ...
+                                                     "sailing", ...
+                                                     "meditation", ... 
                                                      "modern art"]
                                      }
 
-                    self.music = ["hyperpop", "alt rock", "hip hop", "literally anything on spotify"]
+                    self.music = {
+                                    "play":   ["guitar", ...
+                                               "ukulele", ...
+                                               "percussion"],
+                                    "listen": ["hyperpop", ...
+                                               "alt rock", ...
+                                               "hip hop", ...
+                                               "literally anything on spotify"]
+                                 }
+                                 
                     self.food = {
-                                    "cooking": ["steak", ...
-                                                "squid", ...
-                                                "salmon", ...
-                                                "ricebowls"]
-                                    "eating out": ["Sampan", ... # Great restaurant in Philadelphia (asian fusion)
-                                                   "Amada", ... # Another great restaurant in Philadelphia (spanish)
-                                                   "Morimoto" ... # Yet another great restaurant in Philadelphia (japanese)
-                                                   "sushi", ...
-                                                   "gnocchi", ...
-                                                   "filet mignon"]
+                                   "cooking":    ["steak", ...
+                                                  "squid", ...
+                                                  "salmon", ...
+                                                  "ricebowls"]
+                                   "eating out": ["Sampan", ... # Great restaurant in Philadelphia (asian fusion)
+                                                  "Amada", ... # Another great restaurant in Philadelphia (spanish)
+                                                  "Morimoto" ... # Yet another great restaurant in Philadelphia (japanese)
+                                                  "sushi", ...
+                                                  "gnocchi", ...
+                                                  "filet mignon"]
                                 }
+                                
                     self.pets = None
                     self.socials = {
                                       "instagram": <a href="https://www.instagram.com/atgarrett52/" title="Andrew's Instagram">my instagram</a>,
