@@ -39,7 +39,7 @@ layout: page
       {% endcapture %}
       {% assign thumbnail=thumbnail | strip %}
       {% if thumbnail != "" %}
-      <div class="post-image">
+      <div class="post-image" role="presentation">
         <a href="{{ post.url | absolute_url }}">
           <img src="{{ thumbnail | absolute_url }}">
         </a>
