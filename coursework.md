@@ -21,10 +21,10 @@ subtitle: some highlights from my college courses
   - Gradient Descent, SGD, and Momentum-variants
   - Recurrent architectures
   - Some Reinforcement Learning, GANs, and more
- 
-  We ue Pytorch and Numpy for much of our development, and for a few of the homework assignments, I created Weights and Biases reports that I'm pretty proud of.  Here are two reports that I made:
-  - [Homework 2: Adversarial Attack of CNNs](https://wandb.ai/geande/ese546-homework2p4/reports/ESE546-Homework-2--VmlldzoxMDk0NTMz)<br/>
-  - [Homework 4: SGD, Momentum, Nesterov's Momentum](https://wandb.ai/geande/ese546-homework4p2/reports/ESE546-HW4-Report--VmlldzoxMjYzNTEy)<br/>
+  - We ue Pytorch and Numpy for much of our development, and for a few of the homework assignments, I created Weights and Biases reports that I'm pretty proud of.  Here are two reports that I made: <br/>
+        -  [Homework 2: Adversarial Attack of CNNs](https://wandb.ai/geande/ese546-homework2p4/reports/ESE546-Homework-2--VmlldzoxMDk0NTMz)<br/>
+        -  [Homework 4: SGD, Momentum, Nesterov's Momentum](https://wandb.ai/geande/ese546-homework4p2/reports/ESE546-HW4-Report--VmlldzoxMjYzNTEy)<br/>
+
 
 - **CIS521: Artificial Intelligence** \
   **Professor: Dr. Christopher Callison-Burch** \
