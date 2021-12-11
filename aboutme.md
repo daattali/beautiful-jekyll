@@ -1,9 +1,8 @@
 ---
 layout: page
 title: about me
+subtitle: Hi, I'm the one on the left in this picture.
 ---
-
-## Hi, I'm the one on the left in this picture.
 
 <p align="middle">
   <img src="/assets/img/front-page-2.PNG" width="600" />
