@@ -20,7 +20,8 @@ subtitle: some highlights from my college courses
   - Convolutional architectures
   - Gradient Descent, SGD, and Momentum-variants
   - Recurrent architectures
-  - Some Reinforcement Learning, GANs, and more \
+  - Some Reinforcement Learning, GANs, and more
+ 
   We ue Pytorch and Numpy for much of our development, and for a few of the homework assignments, I created Weights and Biases reports that I'm pretty proud of.  Here are two reports that I made:
   - [Homework 2: Adversarial Attack of CNNs](https://wandb.ai/geande/ese546-homework2p4/reports/ESE546-Homework-2--VmlldzoxMDk0NTMz)
   - [Homework 4: SGD, Momentum, Nesterov's Momentum](https://wandb.ai/geande/ese546-homework4p2/reports/ESE546-HW4-Report--VmlldzoxMjYzNTEy)
@@ -34,8 +35,9 @@ subtitle: some highlights from my college courses
   - Constraaint Satisfaction Problems (CSPs)
   - Markov Decision Processes (MDPs)
   - Reinforcement Learning (RL)
-  - Deep Learning in Vision and Language 
-  One of the highlights of this course is the project offerings which let students deploy algorithms and models on a Raspberry Pi and remote-controlled R2D2 robot.  Some of these projects are on display, like [this one](https://https://geande.github.io/2021-12-09-rpi-vision/).
+  - Deep Learning in Vision and Language
+
+  One of the highlights of this course is the project offerings which let students deploy algorithms and models on a Raspberry Pi and remote-controlled R2D2 robot.  Some of these projects are on display, like [this one](https://geande.github.io/2021-12-09-rpi-vision/).
 
 
 - **CIS625: Theory of Machine Learning** \
