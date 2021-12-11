@@ -81,14 +81,51 @@ subtitle: some highlights from my college courses
   - [Here is the final slidedeck](549prez.html) (also long, but a lot fewer words)
 
 
-**Spring 2021 Courses**
+- **MEAM348: Junior Mechanical Laboratory Course II** \
+  **Professors: Dr. Dustyn P. Roberts, Dr. Mark Yim**
   
   
-**Sophomore Year (2019-20)**
+- **MUSC007: Arabic Choral Music** \
+  **Professor: Dr. Hanna Khoury**
+
+
+**Fall 2020 Courses**
+  
+- **MEAM302: Fluid Mechanics** \
+  **Professor: Dr. George Park**
+  
+  
+- **MEAM354: Solid Body Mechanics** \
+  **Professor: Dr. Prashant Purohit**
+  
+  
+- **CIS121: Algorithms and Data Structures** \
+  **Professor: Dr. Kostas Daniliidis**
+  
+  
+- **ENM360: Introduction to Data-Driven Modeling** \
+  **Professor: Dr. Paris Perdikaris**
+  
+  
+- **MEAM347: Junior Mechanical Laboratory Course I** \
+  **Professors: Dr. Dustyn P. Roberts, Dr. Mark Yim**
+  
+
+## Sophomore Year (2019-20)
+
+**Spring 2020 Courses**
+
+**Fall 2019 Courses**
+
+
+
+## Freshman Year (2018-19)
+
+**Spring 2019 Courses**
+
+**Fall 2018 Courses**
 
   
-**Freshman Year (2018-19)**
-
   
 **High School (2014-2018)**
 
