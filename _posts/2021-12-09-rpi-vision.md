@@ -31,7 +31,7 @@ The first step, as with any ML/CV project, is preprocessing.  The dataset prepar
 <p/>
 
 <p>
-  $$ Cov(X,X) = E(X - \mu)E(X - \mu)^T $$
+  $$ Cov(X,X) = E[X - \mu]E[X - \mu]^T $$
 <p/>
 
 <p>
