@@ -171,13 +171,55 @@ subtitle: some highlights from my college courses
   **Professor: Dr. Maxim Troshkin**
 
 
+
 ## Freshman Year (2018-19)
+
+**Summer 2019 Courses**
+
+- **WRIT030: The Art Persuasion** \
+  **Professor: Lawrence Abbott**
+
 
 **Spring 2019 Courses**
 
+- **MEAM101: Introduction to Mechanical Design** \
+  **Professor: Dr. Paulo Arratia**
+  
+
+- **CIS110: Introduction to Computer Programming** \
+  **Professor: Dr. Paul McBurney**
+  
+  
+- **MATH240: Linear Algebra and Ordinary Differential Equations** \
+  **Professor: Dr. Peter McGrath**
+  
+  
+- **CHEM101 & CHEM053: General Chemistry I & Laboratory** \
+  **Professor: Dr. Karen Ila Goldberg**
+
+
 **Fall 2018 Courses**
 
+- **MEAM110: Introduction to Mechanics** \
+  **Professor: Dr. James Pikul**
+
+
+- **MEAM147: Freshman Mechanical Laboratory Course** \
+  **Professor: Dr. Michael Carchidi**
+
+
+- **MATH114: Multivariate Calculus** \
+  **Professor: Dr. Robert Ghrist**
+
+
+- **ENGR105: Introduction to Scientific Computing (MATLAB)** \
+  **Professor: Dr. Graham Wabiszewski**
   
+
+- **ECON001: Introduction to Microeconomics** \
+  **Professor: Dr. Anne Duchene**
+
+
   
 ## High School (2014-2018)
 
