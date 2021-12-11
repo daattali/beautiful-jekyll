@@ -104,7 +104,7 @@ page-text-col: "#ffffff"
 header-col: "#64CE70"
 link-col: "#64CE70"
 hover-col: "#C5EDCA"
-selection-col: "#FFFFFF"
+selection-col: "#20133a"
 selection-bg-col: "#64CE70"
 
 button-col: "#2a194d"
