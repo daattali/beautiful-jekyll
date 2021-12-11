@@ -52,7 +52,7 @@ subtitle: some highlights from my college courses
 **Spring 2021 Courses**
 
 - **MEAM321: Vibrations of Mechanical Systems** \
-  **Professor: Dr. Igor Bargatin** \
+  **Professor: Dr. Jordan Rainey** \
   This course is a mathematical dive into the dynamics of vibrations, which has widespread application to mechanical, electrical, and control systems.  The crux of this course and my interpretation of vibrations as a whole, is the mass-spring (and sometimes damper) systems.  We spend a great deal of time deriving and characterizing vibrations of simple systems like pendulums and single mass-sping systems using tools like differential equations and linear algebra.  Then, we generalize these principals to systems with many degrees of freedom, and eventually building up to modelling real-world scenarios like circuits, suspension systems, impulses, and mechanical structures.  There is a significant amount of math involved in this course, as well as some graphical and numerical solving in MATLAB.
 
 
@@ -113,10 +113,62 @@ subtitle: some highlights from my college courses
 
 ## Sophomore Year (2019-20)
 
+**Summer 2020 Courses**
+
+- **MEAM543: Performance, Stability, and Control of UAVs** \
+  **Professor: Dr. Bruce Kothmann**
+  
+  
+- **CIS262: Automata, Computation, and Complexity Theory** \
+  **Professor: Paul He**
+  
+
 **Spring 2020 Courses**
+
+- **MEAM203: Thermodynamics** \
+  **Professor: Dr. Igor Bargatin**
+  
+
+- **MEAM211: Dynamics** \
+  **Professor: Dr. Michael Posa**
+  
+
+- **MEAM248: Sophomore Mechanical Laboratory Course II** \
+  **Professor: Dr. Bruce Kothmann**
+  
+  
+- **CIS160: Foundations of Computer Science** \
+  **Professor: Dr. Clayton Greenberg**
+  
+  
+- **ENM251: Partial Differential Equations** \
+  **Professor: Dr. Michael Carchidi**
+  
+  
+- **EAS203: Engineering Ethics** \
+  **Professor: Dr. Brit Shields**
+  
 
 **Fall 2019 Courses**
 
+- **MEAM201: Machine Design and Manufacturing** \
+  **Professor: Dr. Graham Wabiszewski**
+  
+  
+- **MEAM210: Statics and Strength of Materials** \
+  **Professors: Dr. Dustyn P. Roberts, Dr. Kevin Turner**
+  
+  
+- **MEAM247: Sophomore Mechanical Laboratory Course I** \
+  **Professor: Dr. Bruce Kothmann**
+  
+  
+- **CIS120: Programming Fundamentals in Java and OCaml** \
+  **Professors: Dr. Swapneel Sheth, Dr. Steve Zdancewic**
+  
+  
+- **BEPP250: Managerial Economics** \
+  **Professor: Dr. Maxim Troshkin**
 
 
 ## Freshman Year (2018-19)
