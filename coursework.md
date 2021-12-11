@@ -4,7 +4,9 @@ title: coursework
 subtitle: some highlights from my college courses
 ---
 
-**Senior Year (2021-22)**
+## Senior Year (2021-2022)
+
+**Fall 2021 Courses**
 
 - **ESE450: Senior Design I** \
   **Professors: Dr. Sid Deliwala, Dr. Jan Van Der Spiegel** \
@@ -43,21 +45,42 @@ subtitle: some highlights from my college courses
   **Professor: Dr. Michael Kearns** \
   This course likely has the most difficult mathematical concepts I have ever approached.  This PhD seminar introduces the PAC Learning Framework and the rigorous proofs that go behind proving learnability.  The professor is a leading figure in the fields of differential privacy and fairness in ML.  We cover these topics after laying the groundwork with learnability, shattering, consistency, uniform convergence, the VC dimension, classification, and statistical query.  I'm currently working on my final paper for the course, where I am synthesizing from recent literature in Differential Privacy and Adversarial Robustness in the context of deep neural networks.  I'll try to add a link to the paper when I am finished writing it.
 
-**Junior Year (2020-21)**
 
-- **Joint speaker diarization and speech recognition based on region proposal networks**  
-  Zili Huang, Marc Delcroix, Leibny Paola Garcia, Shinji Watanabe, **Desh Raj**, Sanjeev Khudanpur  
-  *Computer, Speech, and Language, Vol. 72*  
-  [Paper](https://doi.org/10.1016/j.csl.2021.101316){: .btn}
 
-- **Reformulating DOVER-Lap label mapping as a graph partitioning problem**  
-  **Desh Raj**, Sanjeev Khudanpur  
-  *INTERSPEECH 2021*  
-  [Paper](https://www.isca-speech.org/archive/interspeech_2021/raj21b_interspeech.html){: .btn}
-  [Code](https://github.com/desh2608/dover-lap){: .btn}
-  [Report](/static/report/doverlap.pdf){: .btn}
-  [Slides](/static/ppt/interspeech21_doverlap.pdf){: .btn}
-  [Video](/static/video/interspeech21_doverlap_full.mp4){: .btn}
+## Junior Year (2020-2021)
+
+**Spring 2021 Courses**
+
+- **MEAM321: Vibrations of Mechanical Systems** \
+  **Professor: Dr. Igor Bargatin** \
+  This course is a mathematical dive into the dynamics of vibrations, which has widespread application to mechanical, electrical, and control systems.  The crux of this course and my interpretation of vibrations as a whole, is the mass-spring (and sometimes damper) systems.  We spend a great deal of time deriving and characterizing vibrations of simple systems like pendulums and single mass-sping systems using tools like differential equations and linear algebra.  Then, we generalize these principals to systems with many degrees of freedom, and eventually building up to modelling real-world scenarios like circuits, suspension systems, impulses, and mechanical structures.  There is a significant amount of math involved in this course, as well as some graphical and numerical solving in MATLAB.
+
+
+- **MEAM333: Heat and Mass Transfer** \
+  **Professor: Dr. Jennifer Lukes** \
+  Being honest, this was NOT my class.  I struggled with the material and really struggled to generate motivation and interest in the course.  I think that thermodynamics and fluid transfer are cool topics from a distance, but taking this course really just never latched onto me.  The fundamentals of this course are in mathematically characterizing the movement of thermal energy in various mechanical and electrical systems, like power generation plants.  These principals also hold up in fluid transfer.
+
+
+- **CIS519: Applied Machine Learning** \
+  **Professor: Dr. Dinesh Jayaraman** \
+  This course covers a fast paced and dense introduction to Machine Learning in practical settings.  This is a great course for people looking for little less formal mathematical derivation when attacking the foundations of Machine Learning.  We cover things like:
+  - Linear Classifiers (Logistic Regression, Decision Stumps)
+  - Non-linear Classifiers (Nearest Neighbors, Decision Trees, SVMs)
+  - Boosting, Stacking, and Ensembling (Random Forests, Adaboost, Bagging)
+  - Unsupervised Learning (Clustering, PCA)
+  - Neural Networks for Vision and Language
+  - Reinforcement Learning (TD Learning, Q-Learning, DQN)
+  
+  For my final project in this course, my group used the IBES Estimates dataset to classify stocks into **\{BUY, HOLD, SELL\}** based on prior year's Analyst Forecast Error.  We approached the project with more traditional methods of ML, making use of PCA, Random Forests, and XGBoost.  Look [here on my Github](https://github.com/geande/stonks) to see the gigant notebook we created our project in.
+  
+
+- **PSYC549: A Neuroscience Perspective of Artificial Intelligence** \
+  **Professor: Dr. Richard Di Rocco** \
+  This is a fantastic seminar which posits that AI and Neuroscience are fundamentally tied.  We first build an understanding of the human brain and human behavior through discussion of famous papers and experiments.  With this, we examine modern Artifical Intelligence from the lens of human brain.  I found this seminar to be incredibly stimulating and provided an eye-opening perspective to a field that I am passionate about.  I wrote my final paper and presentation about Machine Learning and Neural Networks, relating these subjects back to course content.
+  - [Here is the final paper]()(yes, it's long)
+  - [Here is the final slidedeck]()(also long, but a lot fewer words)
+
+**Spring 2021 Courses**
   
 **Sophomore Year (2019-20)**
 
