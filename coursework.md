@@ -179,5 +179,5 @@ subtitle: some highlights from my college courses
 
   
   
-**High School (2014-2018)**
+## High School (2014-2018)
 
