@@ -14,7 +14,9 @@ author: andrew garrett
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  about me: "aboutme"
+  about: 
+     - me: "aboutme"
+     - resume: "resume"
   projects: "projects"
 #     - Beautiful Jekyll: "https://geande.github.io"
 #     - Learn markdown: "https://geande.github.io"
