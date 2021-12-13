@@ -36,6 +36,29 @@ In that work, first we would need to generate labels for our quotations, which r
 | Ethic Group | 10 |
 | Date of Birth | 8 |
 | Religion | 10 |
+<table>
+<tr>
+        <td>Feature Name</td>
+        <td>Gender</td>
+        <td>Occupation</td>
+        <td>Nationality</td>
+        <td>Ethic Group</td>
+        <td>Date of Birth</td>
+        <td>Religion</td>
+    </tr>
+    <tr>
+        <td>Class Number</td>
+        <td>2</td>
+        <td>10</td>
+        <td>5</td>
+        <td>10</td>
+        <td>8</td>
+        <td>10</td>
+    </tr>
+————————————————
+版权声明：本文为CSDN博主「zhangyu4863」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/zhangyu4863/article/details/81702177
+</table>
 
 <!-- | Feature Name | :----- | Gender | occupation | nationality | ethic group | date of birth | religion |
 | Class Number| :----- | 2 | 10 | 5 | 10 | 8 | 10 | -->
