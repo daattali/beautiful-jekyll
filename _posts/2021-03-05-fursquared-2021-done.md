@@ -3,7 +3,7 @@ layout: post
 title: Fur Squared 2021 is complete!
 subtitle: With $11,770 donated to HAWS
 tags:
-  - news
+  - News
 ---
 
 # THANK YOU!

@@ -4,7 +4,7 @@ title: F2 2020 PCB Badges up for sale!
 subtitle: Link to store inside this post
 thumbnail-img: /uploads/badges.png
 tags:
-  - news
+  - News
   - Swag
 ---
 

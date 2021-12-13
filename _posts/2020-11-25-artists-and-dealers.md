@@ -5,7 +5,7 @@ subtitle: Want to be on our virtual art stream?
 cover-img: https://live.staticflickr.com/2660/3749662498_7c29433b82_b.jpg
 thumbnail-img: https://live.staticflickr.com/2660/3749662498_7c29433b82_b.jpg
 tags:
-  - news
+  - News
 ---
 
 

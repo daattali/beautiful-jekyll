@@ -3,7 +3,7 @@ layout: post
 title: Schedule of Events now available
 subtitle: Check out our four programming tracks!
 tags:
-  - news
+  - News
   - Programming
 ---
 

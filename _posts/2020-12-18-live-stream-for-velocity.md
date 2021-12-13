@@ -5,7 +5,7 @@ subtitle: Help a family in their time of need
 cover-img: /assets/img/upload/velocity-charity-banner.jpg
 thumbnail-img: /assets/img/upload/velocity-charity-banner.jpg
 tags:
-  - news
+  - News
 ---
 
 

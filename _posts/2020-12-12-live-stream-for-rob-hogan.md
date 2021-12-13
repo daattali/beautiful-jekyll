@@ -5,7 +5,7 @@ subtitle: We have four panels of entertainment for you
 cover-img: /assets/img/upload/rob-hogan.jpg
 thumbnail-img: /assets/img/upload/rob-hogan.jpg
 tags:
-  - news
+  - News
 ---
 
 

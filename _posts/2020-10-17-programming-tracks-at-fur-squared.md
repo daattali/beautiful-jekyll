@@ -5,7 +5,7 @@ subtitle: Panelling, art streams, and more!
 cover-img: https://live.staticflickr.com/7030/6812481635_ed463ae1fa_b.jpg
 thumbnail-img: https://live.staticflickr.com/7030/6812481635_ed463ae1fa_b.jpg
 tags:
-  - news
+  - News
 ---
 
 # Programming Tracks at Fur Squared

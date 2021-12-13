@@ -3,8 +3,8 @@ layout: post
 title: Discord Information
 subtitle: How to participate in Fur Squared on Discord
 tags:
-  - news
-  - vr
+  - News
+  - VR
   - Swag
 ---
 

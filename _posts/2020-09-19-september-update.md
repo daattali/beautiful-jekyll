@@ -5,7 +5,7 @@ subtitle: Gears are turning, especially behind the scenes
 cover-img: https://live.staticflickr.com/6146/5982549938_ebee95dff1_b.jpg
 thumbnail-img: https://live.staticflickr.com/6146/5982549938_ebee95dff1_b.jpg
 tags:
-  - news
+  - News
 ---
 
 # Website Updates

@@ -2,7 +2,7 @@
 layout: post
 title: "Fur Squared 2021: Going Virtual"
 subtitle: And keeping this site up to date
-tags: [news, vr]
+tags: [News, VR]
 ---
 
 # Under Construction!
