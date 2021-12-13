@@ -37,7 +37,7 @@ In that work, first we would need to generate labels for our quotations, which r
 | Date of Birth | 8 |
 | Religion | 10 | -->
 
-<table>
+<table style='margin-left: auto;margin-right:auto'>
 <tr>
         <td><b>Feature Name</b></td>
         <td>Gender</td>
