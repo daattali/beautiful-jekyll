@@ -2,8 +2,8 @@
 layout: page
 ---
 
-<!-- {{ content }} -->
-{% include header.html type="page" %}
+{{ content }}
+<!-- {% include header.html type="page" %}
 
 <div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
@@ -57,7 +57,7 @@ layout: page
       {% include comments.html %}
     </div>
   </div>
-</div>
+</div> -->
 
 {% assign posts = paginator.posts | default: site.posts %}
 
