@@ -20,4 +20,4 @@ xDSl is funded by ExCALIBUR, a large UK program to prepare key simulation codes 
 
 ## For more information
 
-Does this sound interesting, do you think you are a good match for working on the xDSL project? If so, then there are further details [here](https://elxw.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2586/) which also contains the link to apply for this role.
+Does this sound interesting, do you think you are a good match for working on the xDSL project? If so, then there are further details [here](https://elxw.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2586/). Applications must be recieved by 5pm on the 5th of January 2022 ,and the link also contains details about how to apply for this role.
