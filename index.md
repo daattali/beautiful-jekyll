@@ -3,6 +3,11 @@ layout: home
 title:  DescribeByQuote
 subtitle: Detect profile of the speaker with their quotations based on deep learning
 ---
+<style>
+table {
+margin: auto;
+}
+</style>
 
 
 ## Introduction
@@ -28,8 +33,8 @@ In that work, first we would need to generate labels for our quotations, which r
 | date of birth | 8 |
 | religion | 10 |
 
-| Feature Name | :----- | Gender | occupation | nationality | ethic group | date of birth | religion |
-| Class Number| :----- | 2 | 10 | 5 | 10 | 8 | 10 |
+<!-- | Feature Name | :----- | Gender | occupation | nationality | ethic group | date of birth | religion |
+| Class Number| :----- | 2 | 10 | 5 | 10 | 8 | 10 | -->
 
 With the data and labels, we trained several models and verified the functionalities, then predcted the features of the 
 quotatations that are not assigned speakers in Quotebank. Also, we did some analysis on the outcomes and explored the 
