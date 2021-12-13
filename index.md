@@ -3,6 +3,7 @@ layout: home
 title:  DescribeByQuote
 subtitle: Detect profile of the speaker with their quotations based on deep learning
 ---
+
 <style>
 table {
 margin: auto;
