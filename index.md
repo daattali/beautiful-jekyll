@@ -67,6 +67,8 @@ relationships between different features, as well as tried to understand the mec
 
 ## Methods 
 
+### Preliminary Research
+
 
 
 ### Data Preparation
