@@ -19,6 +19,8 @@ them. There are lots of famous quotations that we can instantly identify the spe
 number of quotations whose speakers are unidentifiable. We may never know their names, but is that possible to find 
 other more details about their profiles? 
 
+![Mr_unknown](assets/img/unknown_speaking.png)
+
 Our project, **DescribeByQuote**, aims to detect the profiles of the speakers from the quotations based on deep learning
 methods. While performing analysis of Quotebank data we found out that around **34%** of quotations don't have assigned 
 speakers to it (e.g., 1.8 million out of 5.2 million in file quotes-2020.json). Our goal is to answer the following question: if we cannot determine the exact author of a quotation, what other information can we get from it? We would like to achieve this by training the deep learning models that can help to classify with different features.
