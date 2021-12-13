@@ -21,14 +21,14 @@ achieve this by training the deep learning models that can help to classify with
 
 In that work, first we would need to generate labels for our quotations, which requires extra information. Therefore, we extracted those additional information about known authors of the quotations by parsing their information from Wikipedia. Through filtering and parsing, we successfully extracted six important features of the speakers as the labels for the data, including gender, occupation, nationality, ethic group, date of birth, and religion. 
 
-<!-- | Feature Name | Class Number| 
+| Feature Name | Class Number| 
 | :----- | :----- |
 | Gender | 2 |
 | occupation | 10 |
 | nationality | 5 |
 | ethic group | 10 |
 | date of birth | 8 |
-| religion | 10 | -->
+| religion | 10 |
 
 
 With the data and labels, we trained several models and verified the functionalities, then predcted the features of the 
