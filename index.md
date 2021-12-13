@@ -28,14 +28,15 @@ speakers to it (e.g., 1.8 million out of 5.2 million in file quotes-2020.json). 
 
 In that work, first we would need to generate labels for our quotations, which requires extra information. Therefore, we extracted those additional information about known authors of the quotations by parsing their information from **Wikipedia**. Through filtering and parsing, we successfully extracted six important features of the speakers as the labels for the data, including ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```. 
 
-| Feature Name | Class Number| 
+<!-- | Feature Name | Class Number| 
 | :----- | :----- |
 | Gender | 2 |
 | Occupation | 10 |
 | Nationality | 5 |
 | Ethic Group | 10 |
 | Date of Birth | 8 |
-| Religion | 10 |
+| Religion | 10 | -->
+
 <table>
 <tr>
         <td>Feature Name</td>
@@ -55,9 +56,6 @@ In that work, first we would need to generate labels for our quotations, which r
         <td>8</td>
         <td>10</td>
     </tr>
-————————————————
-版权声明：本文为CSDN博主「zhangyu4863」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/zhangyu4863/article/details/81702177
 </table>
 
 <!-- | Feature Name | :----- | Gender | occupation | nationality | ethic group | date of birth | religion |
