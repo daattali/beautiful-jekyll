@@ -39,7 +39,7 @@ In that work, first we would need to generate labels for our quotations, which r
 
 <table>
 <tr>
-        <td>Feature Name</td>
+        <td><b>Feature Name</b></td>
         <td>Gender</td>
         <td>Occupation</td>
         <td>Nationality</td>
@@ -48,7 +48,7 @@ In that work, first we would need to generate labels for our quotations, which r
         <td>Religion</td>
     </tr>
     <tr>
-        <td>Class Number</td>
+        <td><b>Class Number</b></td>
         <td>2</td>
         <td>10</td>
         <td>5</td>
