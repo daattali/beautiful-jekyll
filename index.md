@@ -36,7 +36,7 @@ In that work, first we would need to generate labels for our quotations, which r
 <!-- | Feature Name | :----- | Gender | occupation | nationality | ethic group | date of birth | religion |
 | Class Number| :----- | 2 | 10 | 5 | 10 | 8 | 10 | -->
 
-With the data and labels, we trained several models and verified the functionalities, then predcted the features of the 
+With the data and labels, we trained several models and verified the functionalities, then predicted the features of the 
 quotatations that are not assigned speakers in Quotebank. Also, we did some analysis on the outcomes and explored the 
 relationships between different features, as well as tried to understand the mechanism of the prediction.
 
