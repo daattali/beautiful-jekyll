@@ -19,7 +19,7 @@ them. There are lots of famous quotations that we can instantly identify the spe
 number of quotations whose speakers are unidentifiable. We may never know their names, but is that possible to find 
 other more details about their profiles? 
 
-![Mr_unknown](https://github.com/WeiSHI7/weishi7.github.io/blob/master/assets/img/unknown_speaking.png){: .mx-auto.d-block :}
+![Mr_unknown](https://github.com/WeiSHI7/weishi7.github.io/blob/7ba804a25d3aab88e6d00a7646293be28bf244bf/assets/img/mr_unknown.jpeg){: .mx-auto.d-block :}
 <!-- <img src="https://github.com/WeiSHI7/weishi7.github.io/blob/master/assets/img/unknown_speaking.png"> -->
 
 Our project, **DescribeByQuote**, aims to detect the profiles of the speakers from the quotations based on deep learning
