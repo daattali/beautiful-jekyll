@@ -19,16 +19,17 @@ speakers to it (1.8 million out of 5.2 million in file quotes-2020.json). Our go
 if we cannot determine the exact author of a quotation, what other information can we get from it? We would like to 
 achieve this by training the deep learning models that can help to classify with different features.
 
-In that work, first we would need to generate labels for our quotations, which requires extra information. Therefore, we 
-extracted those additional information about known authors of the quotations by parsing their information from Wikipedia. 
-Through filtering and parsing, we successfully extracted six important features of the speakers as the labels for the 
-data, including gender, occupation, nationality, ethic group, date of birth, and religion. 
+In that work, first we would need to generate labels for our quotations, which requires extra information. Therefore, we extracted those additional information about known authors of the quotations by parsing their information from Wikipedia. Through filtering and parsing, we successfully extracted six important features of the speakers as the labels for the data, including gender, occupation, nationality, ethic group, date of birth, and religion. 
+
+| Feature Name | :----- | Gender | |occupation| |nationality| |ethic group| |date of birth| |religion|
+|Class Number| :-----|2| |10| |5| |10| |8| |10|
+
 
 With the data and labels, we trained several models and verified the functionalities, then predcted the features of the 
 quotatations that are not assigned speakers in Quotebank. Also, we did some analysis on the outcomes and explored the 
 relationships between different features, as well as tried to understand the mechanism of the prediction.
 
-Methods 
+## Methods 
 
 ### Data Preparation
 
