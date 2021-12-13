@@ -27,11 +27,11 @@ In that work, first we would need to generate labels for our quotations, which r
 | Feature Name | Class Number| 
 | :----- | :----- |
 | Gender | 2 |
-| occupation | 10 |
-| nationality | 5 |
-| ethic group | 10 |
-| date of birth | 8 |
-| religion | 10 |
+| Occupation | 10 |
+| Nationality | 5 |
+| Ethic Group | 10 |
+| Date of Birth | 8 |
+| Religion | 10 |
 
 <!-- | Feature Name | :----- | Gender | occupation | nationality | ethic group | date of birth | religion |
 | Class Number| :----- | 2 | 10 | 5 | 10 | 8 | 10 | -->
