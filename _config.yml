@@ -93,7 +93,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # Add a search button to the navbar
-post_search: true
+post_search: false
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
@@ -118,7 +118,7 @@ footer-hover-col: "#0085A1"
 # instead of colour
 
 navbar-img: "/assets/img/wasps-nest.png"
-#footer-img: "/assets/img/bgimage.png"
+footer-img: "/assets/img/wasps-nest.png"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
