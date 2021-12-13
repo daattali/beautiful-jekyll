@@ -37,7 +37,7 @@ In that work, first we would need to generate labels for our quotations, which r
 | Date of Birth | 8 |
 | Religion | 10 | -->
 
-<table style='margin-left: auto;margin-right:auto'>
+<table style='margin-left:auto;margin-right:auto'>
 <tr>
         <td><b>Feature Name</b></td>
         <td>Gender</td>
@@ -58,14 +58,14 @@ In that work, first we would need to generate labels for our quotations, which r
     </tr>
 </table>
 
-<!-- | Feature Name | :----- | Gender | occupation | nationality | ethic group | date of birth | religion |
-| Class Number| :----- | 2 | 10 | 5 | 10 | 8 | 10 | -->
 
 With the data and labels, we trained several models and verified the functionalities, then predicted the features of the 
 quotatations that are not assigned speakers in Quotebank. Also, we did some analysis on the outcomes and explored the 
 relationships between different features, as well as tried to understand the mechanism of the prediction.
 
 ## Methods 
+
+
 
 ### Data Preparation
 
