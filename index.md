@@ -8,6 +8,9 @@ subtitle: Detect profile of the speaker with their quotations based on deep lear
 table {
 margin: auto;
 }
+.table td, .table th {
+        font-size: 10px;
+    }
 </style>
 
 
@@ -57,7 +60,6 @@ In that work, first we would need to generate labels for our quotations, which r
         <td>10</td>
     </tr>
 </table>
-
 
 With the data and labels, we trained several models and verified the functionalities, then predicted the features of the 
 quotatations that are not assigned speakers in Quotebank. Also, we did some analysis on the outcomes and explored the 
