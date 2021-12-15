@@ -17,7 +17,9 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Today I Learned: "https://dpdtydz.github.io/2021-06-03-TIL/"
-  Author's home: "http://gamema.shop/"
+    - Weekley I Learned: "http://dpdtydz.github.io/"
+    - My project: ""
+  Author's home: "http://www.tildp.shop/"
 
 # --- Logo --- #
 
