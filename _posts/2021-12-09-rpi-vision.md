@@ -19,7 +19,7 @@ In the first part of this project, I used PCA on a large dataset of people's fac
 <p/>
 
 <p>
-<video width="450" height="360" controls>
+<video width="600" controls autoplay>
   <source type="video/mp4" src="/assets/img/facedetection.mp4">
 </video>
 <p/>
@@ -77,7 +77,7 @@ A video is all well and good when it looks nice, but there are definitely some c
 <p/>
 
 <p>
-<video width="450" height="360" controls>
+<video width="600" controls autoplay>
   <source type="video/mp4" src="/assets/img/maskdetection.mp4">
 </video>
 <p/>
