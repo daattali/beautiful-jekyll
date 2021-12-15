@@ -93,4 +93,10 @@ For every feature as gender, occupation, etc. we selected quotes with New York T
 As a result for every feature we collected dataset with quotes topics.
 
 ### Data analysis
+#### Gender
+We found out that our model distinguishes both men and women with the same accuracy. For further analysis, we decided to draw a distribution of topics for each gender.
+<img src="plots/distribution_plots/gender/female.png" /> <img src="plots/distribution_plots/gender/male.png"/> 
+<span style="color:blue">Put here conclusion.</span>
 
+#### Occupation
+<img src="plots/distribution_plots/occupation/sportsman.png" /> <img src="plots/distribution_plots/occupation/not_sportsman.png"/> 
