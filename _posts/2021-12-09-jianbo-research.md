@@ -22,7 +22,7 @@ In my work with [Dr. Jianbo Shi](https://www.cis.upenn.edu/~jshi/) at the [Unive
 
 So I've framed the experimental question our group is exploring, but how do we even observe subjects in this environment?  Data collection procedures was a big focus of my work this summer, so hopefully I can convey our setup clearly.  In the same way that it is not ideal for humans to be missing one of their senses, we need to be able to record data from many different sources in order to build a complete picture of an experiment.  This all starts with using 3D scanning technology to develop an accurate model of the experimental setup before any subject has entered.  Using a [Matterport scanner and the Matterport API](https://matterport.com/), we are able to develop a highly detailed 3D model of the escape-room without visual occlusions.  Matterport scanners and the associated software are capable of high quality (99% dimensional accuracy) 3D reconstructions and 3D renderings.  The scanner uses LIDAR and high quality images to build the 3D reconstruction, but beyond this I can't say much because the SDK is proprietary.  Shown below is an example 3D model of a room in which I collected Matterport scans (don't get dizzy).
 
-<video width="680" height="360" controls autoplay loop>
+<video width="680" controls autoplay loop>
   <source type="video/mp4" src="/assets/img/matterport-env.mp4">
 </video>
 
@@ -32,7 +32,41 @@ Once we have scanned the environment, we record experimental subject data using 
    2. the orientation of the subject's head at their current global position (using the GoPro camera)
    3. the direction of the subject's current gaze given their current global position and orientation (Tobii Glasses)
 
-So that's a lot of data, as a single 5 minute recording from all cameras totals to about 15GB of data. 
+Synchronizing all of these cameras was challenging.  I was able to properly synchronize the Azure Kinect cameras in order to prevent interference from their depth sensors.  Once this was complete, it was simple to integrate and synchronize the GoPro camera using it's unofficial Python API.  Similarly for the Tobii glasses, the recording is started remotely from Tobii's command line, which is also integrated into our recording pipeline.  Unfortunately, I have yet to find a suitable API to control the Insta360 cameras.  As such, I have found that using the Insta360 iphone app to start recording wirelessly, but still manually.  In order to manage the problem of synchronizing the Insta360 with GoPro, Kinect, and Tobii glasses, we use a visual cue on a screen in the field of view of all cameras, which lets us to trim all videos to the same exact start frame.  This technique also gives an added layer of protection against asynchronicity that might have come from the pipeline I designed, though I haven't looked at this very deeply.
 
+## Post-processing
+
+So that's a lot of data, as a single 5 minute recording from all cameras totals to about 15GB of data.  We have video data from 4-6 cameras, all of which have been synchronized via the above trimming method.  For brevity, I will try to highlight some of the interesting post-processing techniques I explored.
+
+#### GoPro
+
+For recording, we used the wide angle recording setting, which resulted in some distortion in the image (Fisheye model).  As lame as it sounds, learning how to properly calibrate a camera using one or a variety of tools is crucial.  Thus, I spend a good deal of time attempting to calibrate find the camera intrinsics (including distortion coefficients).  I explored a variety of tools such as OpenCV, COLMAP, and MATLAB for this task, and I found that COLMAP yielded the best visual results, while MATLAB was by far the most intuitive.  That being said, OpenCV has the most functionality, meaning that instead of calibrating tediously by taking many images, we can take a short video of a calibration object, extract frames, find corners, estimate fisheye camera parameters, undistort the frames, and produce the same video without distortion.  Shown below is an example result from calibrating the GoPro using this method in OpenCV:
+
+<p align="middle">
+<video width="300" controls autoplay loop>
+  <source type="video/mp4" src="/assets/img/gopro-calibration-demo.mp4">
+</video>
+<video width="300" controls autoplay loop>
+  <source type="video/mp4" src="/assets/img/gopro-calibration-undistorted-demo.mp4">
+</video>
+</p>
+
+As you can see above, in the left video there is significant distortion of the checkerboard calibration pattern.  After estimating the camera intrinsic parameters using OpenCV, the resulting undistorted video shows significant improvement.  The resulting frame still retains some distortion close to the corners and edges of the frame, which can be the result of not giving enough variation to the views of the calibration pattern.  For another application of the GoPro data, I ran inference using a pre-trained hand-dectection model.  Shown below is the result of running the trained model on a sample video.
+
+<p align="middle">
+<video width="600" controls autoplay loop>
+  <source type="video/mp4" src="/assets/img/100-doh-demo.mp4">
+</video>
+</p>
+
+The model can correctly detect hands, denoting detections with a bounding box.  Red boxes indicate a right-hand class prediction, while blue boxes indicate a left-hand class prediction.  The model also attempts to detect an object in contact if there is one, and furthermore the second letter above each hand-box indicates the type of contact with an object if there is one detected.  One use of this model's output's might be to use them to detect and predict intention, ie predict how someone might interact with an object if it appears there is some intention of manipulating an object.  That being said, the contact detection and classification outputs of this model might be noisy in real-time motion.
+
+#### Azure Kinect
+
+The Azure Kinect has a much more extensive SDK than the GoPro API, in addition to being a more complex sensor device.  As a result, synchronizing multiple Azure Kinects was not too difficult, most of the work was reading through a pretty sizable chunk of the SDK documentation to understand the task of synchronization.  Honestly, using this camera is pretty fun; the software has great visualization options and all the controls are right there for you to tweak.  The one thing that's pretty annoying is that the file type is .mkv, so you'll need a special tool to extract the different 'tracks' (RGB, Depth, IR, Audio).  Because this device captures RGB-D data, it makes a good candidate for 3D reconstruction.  The depth and RGB data can be extracted into frames, which can be fused using an algorithm like [Kinect Fusion]().  Shown below is a reconstruction generated by TSDF Fusion, which is another common reconstruction algorithm, and is actually a subprocess of the Kinect Fusion algorithm.
+
+<p align="middle">
+  <img src="/assets/img/fusion.jpg" width="500" />
+</p>
 
 Not yet up to date!
