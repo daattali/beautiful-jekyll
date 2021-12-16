@@ -92,7 +92,7 @@ To simplify our tasks, and obtain better model predictions, in each feature we a
         <td>Gender</td>
         <td>Occupation</td>
         <td>Nationality</td>
-        <td>Ethic Group</td>
+        <td>Ethnic Group</td>
         <td>Date of Birth</td>
         <td>Religion</td>
     </tr>
@@ -149,7 +149,7 @@ After the experiment with the six datasets (i.e., quotations labelled with ```Ge
         <td>Gender</td>
         <td>Occupation</td>
         <td>Nationality</td>
-        <td>Ethic Group</td>
+        <td>Ethnic Group</td>
         <td>Date of Birth</td>
         <td>Religion</td>
     </tr>
@@ -173,7 +173,7 @@ After the experiment with the six datasets (i.e., quotations labelled with ```Ge
     </tr>
 </table>
 
-Below are the Confusion Matrix and ROC curves of testing with ```Ethic Group```:
+Below are the Confusion Matrix and ROC curves of testing with ```Ethnic Group```:
 
 ![all_ethnic](plots/all_ethnic.png){: .mx-auto.d-block :}
 
