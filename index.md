@@ -95,7 +95,7 @@ Also sofia section, but I don't know what to write here
 <!-- Wei describes our results and asking question about correletions in the confusion matrix and why some classes prediciting much more better then others.
 Here he will use confusion matrix plots and roc curves plots -->
 
-After the experiment with the six datasets (i.e., quotations labelled with ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```), we recorded the train & test accuracies, and also generated ROC curves and Confusion Matrixes for the further analysis. Below are the charts we generated:
+After the experiment with the six datasets (i.e., quotations labelled with ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```), we recorded the train & test accuracies, and also generated ROC curves and Confusion Matrixes for the further analysis. Below are the table of the accuracy of each features:
 
 <table style='margin-left:auto;margin-right:auto'>
 <tr>
