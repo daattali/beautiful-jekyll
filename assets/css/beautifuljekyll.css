@@ -704,7 +704,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   bottom: 0;
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .intro-header {
     margin-top: 8.125rem;
   }
