@@ -12,7 +12,7 @@ margin: auto;
 
 <style>
 td {
-  font-size: 15px;
+  font-size: 12px;
   margin: auto;
 }
 </style>
