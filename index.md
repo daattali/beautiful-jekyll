@@ -101,7 +101,7 @@ Here he will use confusion matrix plots and roc curves plots -->
 
 After the experiment with the six datasets (i.e., quotations labelled with ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```), we recorded the train & test accuracies, and also generated ROC curves and Confusion Matrixes for the further analysis. Below are the table of the accuracy of the features:
 
-<table style='margin:auto'>
+<table>
 <tr>
         <td><b>Feature Name</b></td>
         <td>Gender</td>
