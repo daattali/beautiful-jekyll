@@ -75,4 +75,5 @@ pages:
 - _posts/2021-12-07-automatically-install-cni-in-new-kubernetes-cluster-with-cluster-api.md
 - _posts/2021-12-09-nakivo-v10.5-brings-vmware-monitoring-and-anti-ransomware-resilience.md
 - _posts/gitops-with-kubernetes-vsphere-flux-helm-and-cluster-api.md
+- _posts/log4j-workaround-for-vcenter-automated-script-vmware.md
 - _posts/nakivo-backup-and-replication-for-vmware-and-more.md
