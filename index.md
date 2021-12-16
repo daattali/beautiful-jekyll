@@ -98,3 +98,6 @@ We found out that our model distinguishes both men and women with the same accur
 
 #### Occupation
 <img src="plots/distribution_plots/occupation/sportsman.png" /> <img src="plots/distribution_plots/occupation/not_sportsman.png"/> 
+
+## Conclusion
+All together write smth clever and about future work
