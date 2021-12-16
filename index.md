@@ -35,36 +35,6 @@ speakers to it (e.g., 1.8 million out of 5.2 million in file quotes-2020.json). 
 
 In that work, first we would need to generate labels for our quotations, which requires extra information. Therefore, we extracted those additional information about known authors of the quotations by parsing their information from **Wikipedia**. Through filtering and parsing, we successfully extracted six important features of the speakers as the labels for the data, including ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```. 
 
-<!-- | Feature Name | Class Number| 
-| :----- | :----- |
-| Gender | 2 |
-| Occupation | 10 |
-| Nationality | 5 |
-| Ethic Group | 10 |
-| Date of Birth | 8 |
-| Religion | 10 | -->
-
-<table style='margin:auto'>
-<tr>
-        <td><b>Feature Name</b></td>
-        <td>Gender</td>
-        <td>Occupation</td>
-        <td>Nationality</td>
-        <td>Ethic Group</td>
-        <td>Date of Birth</td>
-        <td>Religion</td>
-    </tr>
-    <tr>
-        <td><b>Class Num</b></td>
-        <td>2</td>
-        <td>10</td>
-        <td>5</td>
-        <td>10</td>
-        <td>8</td>
-        <td>10</td>
-    </tr>
-</table>
-
 With the data and labels, we trained several models and verified the functionalities, then predicted the features of the 
 quotations that are not assigned speakers in Quotebank. Also, we did some analysis on the outcomes and explored the 
 relationships between different features, as well as tried to understand the mechanism of the prediction.
@@ -115,7 +85,7 @@ For appling model to predict labels we wanted to choose only labels which might 
 
 To simplify our tasks, and obtain better model predictions, in each feature we are taking the few most popular classes as seen in the table below.
 
-<table style='margin-left:auto;margin-right:auto'>
+<table>
 <tr>
         <td><b>Feature Name</b></td>
         <td>Gender</td>
@@ -126,7 +96,7 @@ To simplify our tasks, and obtain better model predictions, in each feature we a
         <td>Religion</td>
     </tr>
     <tr>
-        <td><b>Class Number</b></td>
+        <td><b>Class Num</b></td>
         <td>2</td>
         <td>10</td>
         <td>5</td>
