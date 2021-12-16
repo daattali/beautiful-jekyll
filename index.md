@@ -75,7 +75,7 @@ Katya write about initial analisys, also we should mention that the classes was 
 Sofia section. Explain about our model
 
 ## Experiment
-
+Also sofia section, but I don't know what to write here
 
 ## Results and Analytics
 Wei describes our results and asking question about correletions in the confusion matrix and why some classes prediciting much more better then others.
