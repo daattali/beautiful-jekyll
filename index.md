@@ -8,9 +8,12 @@ subtitle: Detect profile of the speaker with their quotations based on deep lear
 table {
 margin: auto;
 }
-.table td, .table tr {
-        font-size: 8px;
-    }
+</style>
+
+<style>
+td {
+  font-size: 8px
+}
 </style>
 
 
