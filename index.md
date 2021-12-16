@@ -65,23 +65,21 @@ With the data and labels, we trained several models and verified the functionali
 quotatations that are not assigned speakers in Quotebank. Also, we did some analysis on the outcomes and explored the 
 relationships between different features, as well as tried to understand the mechanism of the prediction.
 
-## Methods 
+## Data Preparation
+Pawel write about data collection, why we choose these features, maybe smth else
 
-### Preliminary Research
+## Data analysis
+Katya write about initial analisys, also we should mention that the classes was so imbalance and that we balanced them for the training but no tfor the validation and test sets. Put 1 exapmle about men and women differences (2 diagrams in 1 line and explanations) and 1 example of balanced and imbalanced data for 1 feature (again 2 diagrams in 1 line with explanations)
 
-
-
-### Data Preparation
-
-### Data analysis
-
-### Deep Learning Metrics
+## Deep Learning Model
+Sofia section. Explain about our model
 
 ## Experiment
 
-### Set Up
 
-### Results and Analytics
+## Results and Analytics
+Wei describes our results and asking question about correletions in the confusion matrix and why some classes prediciting much more better then others.
+Here he will use confusion matrix plots and roc curves plots
 
 ## Data insights
 During evaluating our model we noticed that some classes detected better than others. This fact prompted us to delve deeper into the data research in search of some insiders who most likely help our models classify the desired class.
