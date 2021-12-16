@@ -134,6 +134,7 @@ After the experiment with the six datasets (i.e., quotations labelled with ```Ge
 
 And during the analysis, we found some very interesting phenomenons.
 
+
 ![all_ethnic](plots/all_ethnic.png){: .mx-auto.d-block :}
 
 
