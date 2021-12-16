@@ -72,7 +72,7 @@ Pawel write about data collection, why we choose these features, maybe smth else
 Pawel write about initial analisys, also we should mention that the classes was so imbalance and that we balanced them for the training but no tfor the validation and test sets. Put 1 exapmle about men and women differences (2 diagrams in 1 line and explanations) and 1 example of balanced and imbalanced data for 1 feature (again 2 diagrams in 1 line with explanations)
 
 ## Deep Learning Model
-<p align="center">
+<p align="right">
   <img src="assets/img/bertlogo.png" width="350">
 </p>
 <!-- ![bert](assets/img/bertlogo.png){: .mx-auto.d-block :} -->
