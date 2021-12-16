@@ -180,8 +180,8 @@ We found out that our model distinguishes both men and women with the same accur
 
 <div class="row align-items-center no-gutters  mb-4 mb-lg-5">
   <div class="col-sm">
-    <iframe src="plots/distribution_plots/gender/gender_female (4).html" height=350 width=350 frameborder="0" scrolling="yes"> </iframe>
-    <iframe src="plots/distribution_plots/gender/gender_male (2).html" height=350 width=350 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/gender/gender_female (4).html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/gender/gender_male (2).html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
   </div>
 </div>
 
