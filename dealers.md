@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dealers & Artists
+title: Dealers Den
 subtitle: More info and Dealer's Den signups coming soon!
 css:
     - /assets/css/dealer-list.css
