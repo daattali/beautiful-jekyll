@@ -45,18 +45,7 @@ relationships between different features, as well as tried to understand the mec
 
 Dataset provided to us is composed of six datafiles each one containg qutation data for one year from 2015 to 2020. In this dataset we had following fields: ``` quote ID, quotation text, most probable author of the quote, date of publishing quotation, ID of entry in other dataset provided by ADA's TAs, number of quotation occurances, probabilities of quotation authors, links to the quotation source ```
 
-Additionaly we were provided with parquet dataset, with data scrapped from Wikipedia, containing these encoded field:
-
-- date of birth
-- nationality
-- gender
-- ethnic_group
-- occupation
-- party
-- academic_degree
-- id
-- candidacy
-- religion
+Additionaly we were provided with parquet dataset, with data scrapped from Wikipedia, containing these encoded field: ``` date of birth, nationality, gender, ethnic_group, occupation, party, academic_degree, id, candidacy, religion ```
 
 And to decode fields we used dataset with key value. Value have field name and short description.
 
@@ -112,7 +101,7 @@ Pawel write about initial analisys, also we should mention that the classes was 
 
 ## Experiment
 
-We traned 6 models with the same architecture to predict 6 different features. For each feature we used a separate dataset which consisted of 3 columns: '''qouteID, quotation, feature_name'''. Each dataset was split into train, validation and test sets. The plots show the training history of model for '''date_of_birth''' prediction.
+We traned 6 models with the same architecture to predict 6 different features. For each feature we used a separate dataset which consisted of 3 columns: ``` qouteID, quotation, feature_name```. Each dataset was split into train, validation and test sets. The plots show the training history of model for ``` date_of_birth``` prediction.
 <img src="plots/loss_acc.jpg" /> 
 We can see that both train and test losses go down as well as accuracy goes up until the 7th epoch. It means that seven epochs is enough for the training process and after it network starts overfitting. 
 
