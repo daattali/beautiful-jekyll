@@ -73,6 +73,8 @@ Pawel write about initial analisys, also we should mention that the classes was 
 
 ## Deep Learning Model
 Sofia section. Explain about our model
+![bert](assets/img/bertlogo.png){: .mx-auto.d-block :}
+
 
 ## Experiment
 Also sofia section, but I don't know what to write here
