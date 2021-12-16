@@ -25,6 +25,7 @@ body {
   background-attachment: fixed;
   {% endif %}
   overflow-wrap: break-word;
+  full-width: true;
 }
 p {
   line-height: 1.5;
