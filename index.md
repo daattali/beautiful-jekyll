@@ -4,7 +4,6 @@ title:  DescribeByQuote
 subtitle: Detect profile of the speaker with their quotations based on deep learning
 ---
 
-p { word-break:break-all; }
 <!-- <style>
 table {
 margin: auto;
