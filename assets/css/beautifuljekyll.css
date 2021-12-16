@@ -801,7 +801,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   border-radius: 0;
   color: {{ site.text-col | default: "#404040" }};
 }
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .pagination .page-item .page-link {
     padding: 0.9375rem 1.5625rem;
   }
