@@ -96,6 +96,39 @@ Also sofia section, but I don't know what to write here
 Here he will use confusion matrix plots and roc curves plots -->
 
 After the experiment with the six datasets (i.e., quotations labelled with ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```), we recorded the train & test accuracies, and also generated ROC curves and Confusion Matrixes for the further analysis. Below are the charts we generated:
+
+<table style='margin-left:auto;margin-right:auto'>
+<tr>
+        <td><b>Feature Name</b></td>
+        <td>Gender</td>
+        <td>Occupation</td>
+        <td>Nationality</td>
+        <td>Ethic Group</td>
+        <td>Date of Birth</td>
+        <td>Religion</td>
+    </tr>
+    <tr>
+        <td><b>Class Number</b></td>
+        <td>2</td>
+        <td>10</td>
+        <td>5</td>
+        <td>10</td>
+        <td>8</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td><b>Accuracy</b></td>
+        <td>62.78%</td>
+        <td>30.97%</td>
+        <td>46.45%</td>
+        <td>33.33%</td>
+        <td>22.10%</td>
+        <td>22.52%</td>
+    </tr>
+</table>
+
+
+
 ![All_matrix](plots/matrix_group.png){: .mx-auto.d-block :}
 ![All_roc](plots/roc_group.png){: .mx-auto.d-block :}
 
