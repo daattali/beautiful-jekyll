@@ -204,6 +204,7 @@ We found out that our model distinguishes both men and women with the same accur
   <div class="col-sm">
     <iframe src="plots/distribution_plots/ethnic_group/ethnic_group_Gujarati people.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
     <iframe src="plots/distribution_plots/ethnic_group/ethnic_group_Italian Argentines.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/ethnic_group/ethnic_group_other.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
   </div>
 </div>
 
