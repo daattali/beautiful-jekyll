@@ -4,11 +4,11 @@ title:  DescribeByQuote
 subtitle: Detect profile of the speaker with their quotations based on deep learning
 ---
 
-<style>
+<!-- <style>
 table {
 margin: auto;
 }
-</style>
+</style> -->
 
 <style>
 td {
