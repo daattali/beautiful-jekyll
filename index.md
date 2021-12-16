@@ -45,29 +45,9 @@ relationships between different features, as well as tried to understand the mec
 
 ### Description
 
-Dataset provided to us is composed of six datafiles each one containg qutation data for one year from 2015 to 2020. In this dataset we had following fields:
+Dataset provided to us is composed of six datafiles each one containg qutation data for one year from 2015 to 2020. In this dataset we had following fields: ``` quote ID, quotation text, most probable author of the quote, date of publishing quotation, ID of entry in other dataset provided by ADA's TAs, number of quotation occurances, probabilities of quotation authors, links to the quotation source ```
 
-- quote ID
-- quotation text
-- most probable author of the quote
-- date of publishing quotation
-- ID of entry in other dataset provided by ADA's TAs
-- number of quotation occurances 
-- probabilities of quotation authors
-- links to the quotation source
-
-Additionaly we were provided with parquet dataset, with data scrapped from Wikipedia, containing these encoded field:
-
-- date of birth
-- nationality
-- gender
-- ethnic_group
-- occupation
-- party
-- academic_degree
-- id
-- candidacy
-- religion
+Additionaly we were provided with parquet dataset, with data scrapped from Wikipedia, containing these encoded field: ``` date of birth, nationality, gender, ethnic_group, occupation, party, academic_degree, id, candidacy, religion ```
 
 And to decode fields we used dataset with key value. Value have field name and short description.
 
@@ -120,9 +100,14 @@ Pawel write about initial analisys, also we should mention that the classes was 
 
 <img align="right" src="assets/img/bertlogo.png" /> 
   Our main goal is to predict features based on the quotations. For this purpose we needed to choose a language model that perform well for the classification problem and at the same time doesn't require a lot of computational resourses. Moreover, the task of classifying quotations is a quite complex task that requires a global understanding of the text from the model. Thus, we chose pretrained DistilBERT model for our predictions. BERT is an open source machine learning framework for natural language processing (NLP). It is designed to help computers understand the meaning of ambiguous language in text by using surrounding text to establish context. The BERT framework was pre-trained using text from Wikipedia and can be fine-tuned with question and answer datasets. DistilBERT is a small, fast, cheap and light Transformer model based on the BERT architecture. It has about half the total number of parameters of BERT base and retains 95% of BERT’s performances on the language understanding benchmark GLUE.
+  
+  To use DistilBERT model for the classification task we collected text embeddings from the 0 output and add a classification head. The output of the final model is a probability vector with the size equal to the amount of classes.
 
 ## Experiment
+
+We traned 6 models with the same architecture to predict 6 different features. For each feature we used a separate dataset which consisted of 3 columns: ``` qouteID, quotation, feature_name```. Each dataset was split into train, validation and test sets. The plots show the training history of model for ``` date_of_birth``` prediction.
 <img src="plots/loss_acc.jpg" /> 
+We can see that both train and test losses go down as well as accuracy goes up until the 7th epoch. It means that seven epochs is enough for the training process and after it network starts overfitting. 
 
 
 ## Results and Analytics
@@ -194,7 +179,13 @@ As a result for every feature we collected dataset with quotes topics.
 #### Gender
 
 We found out that our model distinguishes both men and women with the same accuracy. For further analysis, we decided to draw a distribution of topics for each gender.
-<iframe src="plots/distribution_plots/gender/gender_female.html" height=600 width=700 frameborder="0" scrolling="no"> </iframe>
+
+<div class="row align-items-center no-gutters  mb-4 mb-lg-5">
+  <div class="col-sm">
+    <iframe src="plots/distribution_plots/gender/gender_female.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/gender/gender_male.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+  </div>
+</div>
 
 #### Occupation
 
