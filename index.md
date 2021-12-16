@@ -98,6 +98,7 @@ Pawel write about initial analisys, also we should mention that the classes was 
 
 <img align="right" src="assets/img/bertlogo.png" /> 
   Our main goal is to predict features based on the quotations. For this purpose we needed to choose a language model that perform well for the classification problem and at the same time doesn't require a lot of computational resourses. Moreover, the task of classifying quotations is a quite complex task that requires a global understanding of the text from the model. Thus, we chose pretrained DistilBERT model for our predictions. BERT is an open source machine learning framework for natural language processing (NLP). It is designed to help computers understand the meaning of ambiguous language in text by using surrounding text to establish context. The BERT framework was pre-trained using text from Wikipedia and can be fine-tuned with question and answer datasets. DistilBERT is a small, fast, cheap and light Transformer model based on the BERT architecture. It has about half the total number of parameters of BERT base and retains 95% of BERT’s performances on the language understanding benchmark GLUE.
+  To use DistilBERT model for the classification task we collected text embeddings from the 0 output and add a classification head. The output of the final model is a probability vector with the size equal to the amount of classes.
 
 ## Experiment
 
@@ -178,7 +179,6 @@ We found out that our model distinguishes both men and women with the same accur
 <object data="plots/distribution_plots/gender/gender_female.svg" width="300" height="300"> </object>
 Second idea.
 <iframe src="plots/distribution_plots/gender/gender_female.svg" width="400px" height="400px"></iframe>
-
 <div class="row align-items-center no-gutters  mb-4 mb-lg-5">
   <div class="col-sm">
     <iframe src="plots/distribution_plots/gender/gender_female.html" height=600 width=700 frameborder="0" scrolling="no"> </iframe>
