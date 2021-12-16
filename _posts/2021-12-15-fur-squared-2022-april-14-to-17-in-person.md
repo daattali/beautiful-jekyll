@@ -13,6 +13,8 @@ tags:
 # Fur Squared 2022 taking place from April 14 - 17 at the Sheraton Milwaukee Brookfield Hotel
 That's right, we have dates!  Mark your calendars because here we go!
 
+#### As of right now Fur Squared 2022 will require proof of vaccination and properly wearing a mask at all times while indoors.
+
 Things that are about to happen:
 * The hotel room reservation link will be provided
 * Registration will open
@@ -22,3 +24,4 @@ Things that are about to happen:
 * Announcing our guests!
 
 We're moving as fast as we can, thank you all!
+
