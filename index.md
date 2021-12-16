@@ -80,8 +80,14 @@ Sofia section. Explain about our model
 Also sofia section, but I don't know what to write here
 
 ## Results and Analytics
-Wei describes our results and asking question about correletions in the confusion matrix and why some classes prediciting much more better then others.
-Here he will use confusion matrix plots and roc curves plots
+<!-- Wei describes our results and asking question about correletions in the confusion matrix and why some classes prediciting much more better then others.
+Here he will use confusion matrix plots and roc curves plots -->
+
+After the experiment with the six datasets (i.e., quotations labelled with ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```), we recorded the train & test accuracies, and also generated ROC curves and Confusion Matrixes for the further analysis. During the analysis, we found some very interesting phenomenons.
+
+
+
+
 
 ## Data insights
 During evaluating our model we noticed that some classes detected better than others. This fact prompted us to delve deeper into the data research in search of some insiders who most likely help our models classify the desired class.
