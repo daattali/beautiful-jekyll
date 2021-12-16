@@ -4,6 +4,7 @@ title: Fur Squared 2022 in person April 14 - 17
 subtitle: The CONspiracy is on!
 thumbnail-img: /assets/img/f2-2022-card-dates.jpg
 cover-img: /assets/img/conspiracy.jpg
+share-img: /assets/img/f2-2022-card-dates.jpg
 tags:
   - News
 ---
