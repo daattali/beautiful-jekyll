@@ -784,7 +784,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   margin-left: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .pagination.blog-pager {
     margin-top: 0.625rem;
   }
