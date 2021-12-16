@@ -9,7 +9,7 @@ layout: null
 html {
   font-size: 100%;
 }
-
+full-width: true;
 body {
   /* margin: 2rem 10rem 0rem 10rem; */
   /* max-width: 80%; */
