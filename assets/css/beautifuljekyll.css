@@ -8,7 +8,6 @@ layout: null
 
 html {
   font-size: 100%;
-  width: 100%;
 }
 
 body {
@@ -705,7 +704,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   bottom: 0;
   display: none;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
   .intro-header {
     margin-top: 8.125rem;
   }
