@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  margin: 30px;
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
