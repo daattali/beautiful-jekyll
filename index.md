@@ -43,16 +43,7 @@ relationships between different features, as well as tried to understand the mec
 
 ### Description
 
-Dataset provided to us is composed of six datafiles each one containg qutation data for one year from 2015 to 2020. In this dataset we had following fields:
-
-- quote ID
-- quotation text
-- most probable author of the quote
-- date of publishing quotation
-- ID of entry in other dataset provided by ADA's TAs
-- number of quotation occurances 
-- probabilities of quotation authors
-- links to the quotation source
+Dataset provided to us is composed of six datafiles each one containg qutation data for one year from 2015 to 2020. In this dataset we had following fields: ``` quote ID, quotation text, most probable author of the quote, date of publishing quotation, ID of entry in other dataset provided by ADA's TAs, number of quotation occurances, probabilities of quotation authors, links to the quotation source ```
 
 Additionaly we were provided with parquet dataset, with data scrapped from Wikipedia, containing these encoded field:
 
