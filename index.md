@@ -4,13 +4,17 @@ title:  DescribeByQuote
 subtitle: Detect profile of the speaker with their quotations based on deep learning
 ---
 
-<style>
+<!-- <style>
 table {
 margin: auto;
 }
-.table td, .table th {
-        font-size: 10px;
-    }
+</style> -->
+
+<style>
+td {
+  font-size: 15px;
+  margin: auto;
+}
 </style>
 
 
@@ -40,7 +44,7 @@ In that work, first we would need to generate labels for our quotations, which r
 | Date of Birth | 8 |
 | Religion | 10 | -->
 
-<table style='margin-left:auto;margin-right:auto'>
+<table style='margin:auto'>
 <tr>
         <td><b>Feature Name</b></td>
         <td>Gender</td>
@@ -51,7 +55,7 @@ In that work, first we would need to generate labels for our quotations, which r
         <td>Religion</td>
     </tr>
     <tr>
-        <td><b>Class Number</b></td>
+        <td><b>Class Num</b></td>
         <td>2</td>
         <td>10</td>
         <td>5</td>
@@ -142,8 +146,20 @@ Pawel write about initial analisys, also we should mention that the classes was 
 
 ## Deep Learning Model
 
-Sofia section. Explain about our model
-![bert](assets/img/bertlogo.png){: .mx-auto.d-block :}
+
+<!-- <style>  
+  img {  
+    width: 350px; 
+    float: rihgt; 
+    margin-left: auto; 
+  } 
+</style>  -->
+
+<img align="right" src="assets/img/bertlogo.png" /> 
+  Our main goal is to predict features based on the quotations. For this purpose we needed to choose a language model that perform well for the classification problem and at the same time doesn't require a lot of computational resourses. Moreover, the task of classifying quotations is a quite complex task that requires a global understanding of the text from the model. Thus, we chose pretrained DistilBERT model for our predictions. BERT is an open source machine learning framework for natural language processing (NLP). It is designed to help computers understand the meaning of ambiguous language in text by using surrounding text to establish context. The BERT framework was pre-trained using text from Wikipedia and can be fine-tuned with question and answer datasets. DistilBERT is a small, fast, cheap and light Transformer model based on the BERT architecture. It has about half the total number of parameters of BERT base and retains 95% of BERT’s performances on the language understanding benchmark GLUE.
+<!-- ![bert](assets/img/bertlogo.png){: .mx-auto.d-block :} -->
+<!-- Our main goal is to predict features based on the quotations. For this purpose we needed to choose a language model that perform well for the classification problem and at the same time doesn't require a lot of computational resourses. Moreover, the task of classifying quotations is a quite complex task that requires a global understanding of the text from the model. Thus, we chose pretrained DistilBERT model for our predictions. BERT is an open source machine learning framework for natural language processing (NLP). It is designed to help computers understand the meaning of ambiguous language in text by using surrounding text to establish context. The BERT framework was pre-trained using text from Wikipedia and can be fine-tuned with question and answer datasets. DistilBERT is a small, fast, cheap and light Transformer model based on the BERT architecture. It has about half the total number of parameters of BERT base and retains 95% of BERT’s performances on the language understanding benchmark GLUE. -->
+
 
 ## Experiment
 
@@ -151,8 +167,51 @@ Also sofia section, but I don't know what to write here
 
 ## Results and Analytics
 
-Wei describes our results and asking question about correletions in the confusion matrix and why some classes prediciting much more better then others.
-Here he will use confusion matrix plots and roc curves plots
+<!-- Wei describes our results and asking question about correletions in the confusion matrix and why some classes prediciting much more better then others.
+Here he will use confusion matrix plots and roc curves plots -->
+
+After the experiment with the six datasets (i.e., quotations labelled with ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```), we recorded the train & test accuracies, and also generated ROC curves and Confusion Matrixes for the further analysis. And during the analysis, we found some very interesting phenomenons. Below are the table of the accuracy of the features:
+
+<table>
+<tr>
+        <td><b>Feature Name</b></td>
+        <td>Gender</td>
+        <td>Occupation</td>
+        <td>Nationality</td>
+        <td>Ethic Group</td>
+        <td>Date of Birth</td>
+        <td>Religion</td>
+    </tr>
+    <tr>
+        <td><b>Class Num</b></td>
+        <td>2</td>
+        <td>10</td>
+        <td>5</td>
+        <td>10</td>
+        <td>8</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td><b>Accuracy</b></td>
+        <td>62.78%</td>
+        <td>30.97%</td>
+        <td>46.45%</td>
+        <td>33.33%</td>
+        <td>22.10%</td>
+        <td>22.52%</td>
+    </tr>
+</table>
+
+
+
+![all_ethnic](plots/all_ethnic.png){: .mx-auto.d-block :}
+
+
+
+
+
+
+
 
 ## Data insights
 
