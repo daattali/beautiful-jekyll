@@ -9,7 +9,7 @@ table {
 margin: auto;
 }
 .table td, .table th {
-        font-size: 10px;
+        font-size: 8px;
     }
 </style>
 
@@ -40,7 +40,7 @@ In that work, first we would need to generate labels for our quotations, which r
 | Date of Birth | 8 |
 | Religion | 10 | -->
 
-<table style='margin-left:auto;margin-right:auto'>
+<table style='margin:auto'>
 <tr>
         <td><b>Feature Name</b></td>
         <td>Gender</td>
@@ -97,7 +97,7 @@ Here he will use confusion matrix plots and roc curves plots -->
 
 After the experiment with the six datasets (i.e., quotations labelled with ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```), we recorded the train & test accuracies, and also generated ROC curves and Confusion Matrixes for the further analysis. Below are the table of the accuracy of the features:
 
-<table style='margin-left:auto;margin-right:auto'>
+<table style='margin:auto'>
 <tr>
         <td><b>Feature Name</b></td>
         <td>Gender</td>
