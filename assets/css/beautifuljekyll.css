@@ -12,12 +12,12 @@ html {
 
 body {
   /* margin: 2rem 10rem 0rem 10rem; */
-  min-width: 80%;
+  max-width: 80%;
   margin: 0rem -10rem 0rem -10rem;
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
-  position: relative;
+  position: relative;ß
   background-color: {{ site.page-col | default: "#FFFFFF" }};
   {% if site.page-img %}
   background-image: url({{ site.page-img | relative_url }});
