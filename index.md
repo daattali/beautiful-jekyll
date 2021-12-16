@@ -51,7 +51,7 @@ In that work, first we would need to generate labels for our quotations, which r
         <td>Religion</td>
     </tr>
     <tr>
-        <td><b>Class Number</b></td>
+        <td><b>Class Num</b></td>
         <td>2</td>
         <td>10</td>
         <td>5</td>
@@ -108,7 +108,7 @@ After the experiment with the six datasets (i.e., quotations labelled with ```Ge
         <td>Religion</td>
     </tr>
     <tr>
-        <td><b>Class Number</b></td>
+        <td><b>Class Num</b></td>
         <td>2</td>
         <td>10</td>
         <td>5</td>
