@@ -89,6 +89,7 @@ Here he will use confusion matrix plots and roc curves plots -->
 
 After the experiment with the six datasets (i.e., quotations labelled with ```Gender, Occupation, Nationality, Ethic group, Date of birth, and Religion```), we recorded the train & test accuracies, and also generated ROC curves and Confusion Matrixes for the further analysis. Below are the charts we generated:
 ![All_matrix](assets/img/matrix_group.png){: .mx-auto.d-block :}
+![All_roc](assets/img/roc_group.png){: .mx-auto.d-block :}
 
 
 
