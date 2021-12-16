@@ -131,9 +131,11 @@ After the experiment with the six datasets (i.e., quotations labelled with ```Ge
     </tr>
 </table>
 
-
+Below are the Confusion Matrix and ROC curves of testing with religion dataset:
 
 ![all_ethnic](plots/all_ethnic.png){: .mx-auto.d-block :}
+
+As we can see from the ROC curves, the 
 
 
 
