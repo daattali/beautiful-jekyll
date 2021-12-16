@@ -192,8 +192,7 @@ As a result for every feature we collected dataset with quotes topics.
 #### Gender
 
 We found out that our model distinguishes both men and women with the same accuracy. For further analysis, we decided to draw a distribution of topics for each gender.
-<img src="plots/distribution_plots/gender/gender_female.webp" /> <img src="plots/distribution_plots/gender/gender_male.webp"/> 
-<span style="color:blue">Put here conclusion.</span>
+<iframe src="plots/distribution_plots/gender/gender_female.html" height=600 width=700 frameborder="0" scrolling="no"> </iframe>
 
 #### Occupation
 
