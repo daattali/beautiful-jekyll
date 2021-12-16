@@ -72,8 +72,12 @@ Pawel write about data collection, why we choose these features, maybe smth else
 Pawel write about initial analisys, also we should mention that the classes was so imbalance and that we balanced them for the training but no tfor the validation and test sets. Put 1 exapmle about men and women differences (2 diagrams in 1 line and explanations) and 1 example of balanced and imbalanced data for 1 feature (again 2 diagrams in 1 line with explanations)
 
 ## Deep Learning Model
-Sofia section. Explain about our model
-![bert](assets/img/bertlogo.png){: .mx-auto.d-block :}
+<p align="right">
+  <img src="assets/img/bertlogo.png" width="350">
+</p>
+<!-- ![bert](assets/img/bertlogo.png){: .mx-auto.d-block :} -->
+Our main goal is to predict features based on the quotations. For this purpose we needed to choose a language model that perform well for the classification problem and at the same time doesn't require a lot of computational resourses. Moreover, the task of classifying quotations is a quite complex task that requires a global understanding of the text from the model. Thus, we chose pretrained DistilBERT model for our predictions. BERT is an open source machine learning framework for natural language processing (NLP). It is designed to help computers understand the meaning of ambiguous language in text by using surrounding text to establish context. The BERT framework was pre-trained using text from Wikipedia and can be fine-tuned with question and answer datasets. DistilBERT is a small, fast, cheap and light Transformer model based on the BERT architecture. It has about half the total number of parameters of BERT base and retains 95% of BERT’s performances on the language understanding benchmark GLUE.
+
 
 
 ## Experiment
@@ -89,6 +93,7 @@ After the experiment with the six datasets (i.e., quotations labelled with ```Ge
 
 
 And during the analysis, we found some very interesting phenomenons.
+
 
 
 
