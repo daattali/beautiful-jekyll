@@ -176,7 +176,8 @@ Below are the Confusion Matrix and ROC curves of testing with ```Ethnic Group```
 
 ![all_ethnic](plots/all_ethnic.png){: .mx-auto.d-block :}
 
-As we can see from the ROC curves, the 
+As we can see from the ROC curves and confusion matrix, the Gujarati people and Italian Argentines get the most high true positive rate and accuracy. However, the sample numbers of them are not as much as African Americans, why it is easier for the model to indentify them with less data for training?
+
 
 
 
