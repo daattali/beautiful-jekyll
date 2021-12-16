@@ -128,11 +128,6 @@ After the experiment with the six datasets (i.e., quotations labelled with ```Ge
 </table>
 
 
-
-![All_matrix](plots/matrix_group.png){: .mx-auto.d-block :}
-![All_roc](plots/roc_group.png){: .mx-auto.d-block :}
-
-
 And during the analysis, we found some very interesting phenomenons.
 
 
