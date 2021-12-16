@@ -191,6 +191,24 @@ We found out that our model distinguishes both men and women with the same accur
 
 <img src="plots/distribution_plots/occupation/sportsman.png" /> <img src="plots/distribution_plots/occupation/not_sportsman.png"/> 
 
+#### Date of birth
+<div class="row align-items-center no-gutters  mb-4 mb-lg-5">
+  <div class="col-sm">
+    <iframe src="plots/distribution_plots/years/date_of_birth_1990x.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/years/date_of_birth_other.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+  </div>
+</div>
+
+#### Ethnic group
+<div class="row align-items-center no-gutters  mb-4 mb-lg-5">
+  <div class="col-sm">
+    <iframe src="plots/distribution_plots/ethnic_group/ethnic_group_Gujarati people.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/ethnic_group/ethnic_group_Italian Argentines.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/ethnic_group/ethnic_group_other.html" height=400 width=700 frameborder="0" scrolling="yes"> </iframe>
+  </div>
+</div>
+
 ## Conclusion
+
 
 All together write smth clever and about future work
