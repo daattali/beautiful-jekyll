@@ -65,41 +65,118 @@ With the data and labels, we trained several models and verified the functionali
 quotations that are not assigned speakers in Quotebank. Also, we did some analysis on the outcomes and explored the 
 relationships between different features, as well as tried to understand the mechanism of the prediction.
 
-## Data Preparation
-Pawel write about data collection, why we choose these features, maybe smth else
+## Data
+
+### Description
+
+Dataset provided to us is composed of six datafiles each one containg qutation data for one year from 2015 to 2020. In this dataset we had following fields:
+
+- quote ID
+- quotation text
+- most probable author of the quote
+- date of publishing quotation
+- ID of entry in other dataset provided by ADA's TAs
+- number of quotation occurances 
+- probabilities of quotation authors
+- links to the quotation source
+
+Additionaly we were provided with parquet dataset, with data scrapped from Wikipedia, containing these encoded field:
+
+- date of birth
+- nationality
+- gender
+- ethnic_group
+- occupation
+- party
+- academic_degree
+- id
+- candidacy
+- religion
+
+And to decode fields we used dataset with key value. Value have field name and short description.
+
+### Preparation
+
+We decided to start our data preparation with parsing quotation dataset with additial data from Wikipedia and decode all fields to the full names. In data set there were also multiple information from people having the same name but multiple Wikipedia entries. We decided to "explode" this entries and save one row per Wikipedia entry.
+
+We saved data in parquet format having short read/write time, ability to read dataset consisting of data scattered through multiple files and reading cartain columns or only rows which will meet desired conditions. Also there is possiblity to in the feautre easly connect big data engins as for example Spark. 
+
+Therfore by parsing batch by batch we obtained new dataset containing 214 207 286 rows saved in parquet data folder.
 
 ## Data analysis
+
+Before appling model to predict labels we created for each label we created train, validation and test datasets. In these datasets are records that have known speakers and known label which we will predict int the feature.
+
+For appling model to predict labels we wanted to choose only labels which might be applicable to almost all people. In the result we choose date of birth, nationality, gendr, ethnic group, occupation and party. 
+
+To simplify our tasks, and obtain better model predictions, in each feature we are taking the few most popular classes as seen in the table below.
+
+<table style='margin-left:auto;margin-right:auto'>
+<tr>
+        <td><b>Feature Name</b></td>
+        <td>Gender</td>
+        <td>Occupation</td>
+        <td>Nationality</td>
+        <td>Ethic Group</td>
+        <td>Date of Birth</td>
+        <td>Religion</td>
+    </tr>
+    <tr>
+        <td><b>Class Number</b></td>
+        <td>2</td>
+        <td>10</td>
+        <td>5</td>
+        <td>10</td>
+        <td>8</td>
+        <td>10</td>
+    </tr>
+</table>
+
+The date of birth which is continous variable we descretize into new clases in dacade sized buckets from 1930s to 1990s and having one more class for others.
+
+### Dealing with class inbalance
+
+We see TODO (Katya) our features our classes are inbalanced which might lead to biased prediction towards the most popular class. As we have significant amount of data we randomly choose only subset on it obtaining more balanced dystibution.
+
 Pawel write about initial analisys, also we should mention that the classes was so imbalance and that we balanced them for the training but no tfor the validation and test sets. Put 1 exapmle about men and women differences (2 diagrams in 1 line and explanations) and 1 example of balanced and imbalanced data for 1 feature (again 2 diagrams in 1 line with explanations)
 
 ## Deep Learning Model
+
 Sofia section. Explain about our model
 ![bert](assets/img/bertlogo.png){: .mx-auto.d-block :}
 
-
 ## Experiment
+
 Also sofia section, but I don't know what to write here
 
 ## Results and Analytics
+
 Wei describes our results and asking question about correletions in the confusion matrix and why some classes prediciting much more better then others.
 Here he will use confusion matrix plots and roc curves plots
 
 ## Data insights
+
 During evaluating our model we noticed that some classes detected better than others. This fact prompted us to delve deeper into the data research in search of some insiders who most likely help our models classify the desired class.
 
 We assumed that perhaps the same groups of people prefer similar topics for conversation, which may encourage our model to classify quotes into the classes we need. But to test this hypothesis, we need to understand the context of the quote. We noticed that in 2019, the source of 83% of citations is the New York Times. In the remaining years, NY also occupies a leading position in the list of sources of quotations. The peculiarity of NY is that there is a topic in the link to the quote, to which NY equated this quote. This fact helped us to find out the context of most of the quotes.
 
 ### Data preparation
+
 For every feature as gender, occupation, etc. we selected quotes with New York Times source. For every such quote we extracted topic from  quotes link and (because sometimes links don't fit the format we expect ) we dropped all topics with total amount less than 400.
 As a result for every feature we collected dataset with quotes topics.
 
 ### Data analysis
+
 #### Gender
+
 We found out that our model distinguishes both men and women with the same accuracy. For further analysis, we decided to draw a distribution of topics for each gender.
 <img src="plots/distribution_plots/gender/female.png" /> <img src="plots/distribution_plots/gender/male.png"/> 
 <span style="color:blue">Put here conclusion.</span>
 
 #### Occupation
+
 <img src="plots/distribution_plots/occupation/sportsman.png" /> <img src="plots/distribution_plots/occupation/not_sportsman.png"/> 
 
 ## Conclusion
+
 All together write smth clever and about future work
