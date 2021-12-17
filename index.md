@@ -146,23 +146,21 @@ After the experiment with the six datasets (i.e., quotations labelled with ```Ge
     </tr>
 </table>
 
-Below are the Confusion Matrix and ROC curves of testing with ```Ethnic Group```:
+Below are the Confusion Matrix and ROC-AUC curves of testing with ```Ethnic Group```:
 
+The **color** of the right side colum represents the **number of samples**
 ![all_ethnic](plots/all_ethnic.png){: .mx-auto.d-block :}
 
-As we can see from the Confusion Matrix and ROC curves, the Gujarati people and Italian Argentines get the most high true positive rate and accuracy. However, the sample numbers of them are not as much as African Americans, why it is easier for the model to indentify them with less data for training?
+As we can see from the Confusion Matrix and ROC-AUC curves, the **Gujarati people** and **Italian Argentines** get the highest true positive rate and accuracy. However, the sample numbers of them are not as much as African Americans, why it is easier for the model to indentify **Gujarati people** and **Italian Argentines** with less samples for training?
 
 
 Below are the Confusion Matrix and ROC curves of testing with ```Date of Birth```:
 
 ![all_date](plots/all_date.png){: .mx-auto.d-block :}
 
+As we can see from ROC-AUC curves and Confusion Matrix, quotations of the people born in 1990s gets the highest true positive rate and accuracy. Also, as shown in the 7th rows of the Matrix, most of people born in 1980s are indentified as 1990s. Why our model more likely recognizes 1980s people's quotations as from people born in 1990s?
 
-
-
-
-
-
+As we keep analyzing the distribution of our data, we found some relations between different features. We believe these relations could answer the questions.
 
 
 ## Data insights
