@@ -53,7 +53,7 @@ Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4K
 >
 > Kelly has really covered everything in this helpful guide. As she says, "Everything that is done well is usually done with a good plan." Meal planning reduces decision fatigue and stress, and I'm grateful for Kelly for creating this resource! - Emily from [@simplebyemmy](https://www.instagram.com/simplebyemmy/)
 
-**Blogs of mine you may enjoy:**
+#### Blogs of mine you may enjoy:
 
 * [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
 * [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)
