@@ -14,7 +14,7 @@ body {
   /* margin: 2rem 10rem 0rem 10rem; */
   /* max-width: 80%; */
   /* margin: 0rem -10rem 0rem -10rem; */
-  /* width:80%; */
+  width:80%;
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
