@@ -10,6 +10,7 @@ margin: auto;
 }
 </style> -->
 
+
 <style>
 td {
   font-size: 15px;
@@ -145,20 +146,21 @@ After the experiment with the six datasets (i.e., quotations labelled with ```Ge
     </tr>
 </table>
 
-Below are the ROC curves of testing with ```Ethnic Group```:
+Below are the Confusion Matrix and ROC-AUC curves of testing with ```Ethnic Group```:
 
-![all_ethnic](plots/ethnic_group_roc_curve.png){: .mx-auto.d-block :}
+The **color** of the right side colum represents the **number of samples**
+![all_ethnic](plots/all_ethnic.png){: .mx-auto.d-block :}
 
-As we can see from the ROC curves, the Gujarati people and Italian Argentines get the most high true positive rate and accuracy. However, the sample numbers of them are not as much as African Americans, why it is easier for the model to indentify them with less data for training?
-
-
-
+As we can see from the Confusion Matrix and ROC-AUC curves, the **Gujarati people** and **Italian Argentines** get the highest true positive rate and accuracy. However, the sample numbers of them are not as much as African Americans, why it is easier for the model to indentify **Gujarati people** and **Italian Argentines** with less samples for training?
 
 
+Below are the Confusion Matrix and ROC curves of testing with ```Date of Birth```:
 
+![all_date](plots/all_date.png){: .mx-auto.d-block :}
 
+As we can see from ROC-AUC curves and Confusion Matrix, quotations of the people born in 1990s gets the highest true positive rate and accuracy. Also, as shown in the 7th rows of the Matrix, most of people born in 1980s are indentified as 1990s. Why our model more likely recognizes 1980s people's quotations as from people born in 1990s?
 
-
+As we keep analyzing the distribution of our data, we found some relations between different features. We believe these relations could answer the questions.
 
 
 ## Data insights
@@ -189,6 +191,24 @@ We found out that our model distinguishes both men and women with the same accur
 
 <img src="plots/distribution_plots/occupation/sportsman.png" /> <img src="plots/distribution_plots/occupation/not_sportsman.png"/> 
 
+#### Date of birth
+<div class="row align-items-center no-gutters  mb-4 mb-lg-5">
+  <div class="col-sm">
+    <iframe src="plots/distribution_plots/years/date_of_birth_1990x.html" height=400 width=450 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/years/date_of_birth_other.html" height=400 width=450 frameborder="0" scrolling="yes"> </iframe>
+  </div>
+</div>
+
+#### Ethnic group
+<div class="row align-items-center no-gutters  mb-4 mb-lg-5">
+  <div class="col-sm">
+    <iframe src="plots/distribution_plots/ethnic_group/ethnic_group_Gujarati people.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/ethnic_group/ethnic_group_Italian Argentines.html" height=400 width=350 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/ethnic_group/ethnic_group_other.html" height=400 width=700 frameborder="0" scrolling="yes"> </iframe>
+  </div>
+</div>
+
 ## Conclusion
+
 
 All together write smth clever and about future work

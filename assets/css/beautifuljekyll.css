@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  /* margin: 2rem 10rem 0rem 10rem; */
+  margin: 2rem 16rem 0rem 16rem; 
   /* max-width: 80%; */
   /* margin: 0rem -10rem 0rem -10rem; */
   /* width:80%; */
@@ -855,8 +855,9 @@ table tr td :last-child {
 
 code {
   padding: 0.125rem 0.25rem;
-  color: #c7254e;
-  background-color: #f9f2f4;
+  /* color: #c7254e; */
+  color: #000000;
+  background-color: #e4e4e4;
   border-radius: 0.25rem;
 }
 
