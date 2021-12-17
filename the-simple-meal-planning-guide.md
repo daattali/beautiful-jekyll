@@ -31,6 +31,8 @@ Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a go
 * Steps to help guide you through the process of meal planning from start to finish
 * Bonus resources and ideas for meal planning
 
+![A picture of the meal planning guide sheets.](/uploads/simple-meal-planning-guide.jpg "The Simple Meal Planning Guide Sneak Peek")
+
 #### I'm ready to take control of my meal planning!
 
 Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase.
