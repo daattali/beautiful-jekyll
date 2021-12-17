@@ -89,7 +89,7 @@ To simplify our tasks, and obtain better model predictions, in each feature we a
 
 The date of birth which is continous variable we descretize into new clases in dacade sized buckets from 1930s to 1990s and having one more class for others.
 
-### Dealing with class inbalance
+### Dealing with class imbalance
 
 We see TODO (Katya) our features our classes are inbalanced which might lead to biased prediction towards the most popular class. As we have significant amount of data we randomly choose only subset on it obtaining more balanced dystibution.
 
