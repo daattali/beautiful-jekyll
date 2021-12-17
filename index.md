@@ -187,15 +187,14 @@ We found out that our model distinguishes both men and women with the same accur
   </div>
 </div>
 
-#### Occupation
 
-<img src="plots/distribution_plots/occupation/sportsman.png" /> <img src="plots/distribution_plots/occupation/not_sportsman.png"/> 
+
 
 #### Date of birth
 <div class="row align-items-center no-gutters  mb-4 mb-lg-5">
   <div class="col-sm">
-    <iframe src="plots/distribution_plots/years/date_of_birth_1990x.html" height=400 width=300  frameborder="0" scrolling="yes"> </iframe>
-    <iframe src="plots/distribution_plots/years/date_of_birth_other.html" height=400 width=300 frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/years/date_of_birth_1990x.html" height=400 width=430  frameborder="0" scrolling="yes"> </iframe>
+    <iframe src="plots/distribution_plots/years/date_of_birth_other.html" height=400 width=430 frameborder="0" scrolling="yes"> </iframe>
   </div>
 </div>
 
