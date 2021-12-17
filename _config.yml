@@ -11,6 +11,9 @@ title: DBQ & WASPS
 # Your name to show in the footer
 author: WASPS Team
 
+full-width: true
+classes: wide
+
 # --- List of links in the navigation bar --- #
 
 navbar-links:
@@ -84,7 +87,7 @@ share-links-active:
 url-pretty: "https://weishi7.github.io/"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 100
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
@@ -237,6 +240,7 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+      full-width: true 
 
 # Exclude these files from production site
 exclude:
@@ -255,4 +259,5 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+full-width: true
 

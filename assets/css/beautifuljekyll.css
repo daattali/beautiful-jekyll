@@ -7,16 +7,18 @@ layout: null
 /* --- General --- */
 
 html {
-  font-size: 100%
+  font-size: 100%;
 }
 
 body {
-  /* margin: 2rem 10rem 0rem 10rem; */
-  margin: 0rem -10rem 0rem -10rem;
+  margin: 2rem 16rem 0rem 16rem; 
+  /* max-width: 80%; */
+  /* margin: 0rem -10rem 0rem -10rem; */
+  /* width:80%; */
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
-  position: relative;
+  position: relative;ß
   background-color: {{ site.page-col | default: "#FFFFFF" }};
   {% if site.page-img %}
   background-image: url({{ site.page-img | relative_url }});
@@ -784,7 +786,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   margin-left: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .pagination.blog-pager {
     margin-top: 0.625rem;
   }
@@ -801,7 +803,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   border-radius: 0;
   color: {{ site.text-col | default: "#404040" }};
 }
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .pagination .page-item .page-link {
     padding: 0.9375rem 1.5625rem;
   }
@@ -853,8 +855,9 @@ table tr td :last-child {
 
 code {
   padding: 0.125rem 0.25rem;
-  color: #c7254e;
-  background-color: #f9f2f4;
+  /* color: #c7254e; */
+  color: #000000;
+  background-color: #e4e4e4;
   border-radius: 0.25rem;
 }
 
