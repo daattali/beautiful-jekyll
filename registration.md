@@ -10,7 +10,22 @@ subtitle: Registration and benefits of Fur Squared
 
 ## **Important: Vaccine Statuses will be checked at the Convention in order to complete your Registration.**
 
-**What does that mean for you? Fur Squared will be doing Vaccine checks before allowing people to walk into Registration to receive their badge. You will only be allowed into convention space with a purchased attending badge no exceptions. Masks will also be required through convention space and people failing to do so will be invited to leave. Fur Squared takes the safety of their attendees very seriously and hopes to protect everyone the best it can.**
+**What does that mean for you? Fur Squared will be doing Vaccine checks before allowing people to walk into Registration to receive their badge. You will only be allowed into convention space with a purchased attending badge no exceptions. Masks will also be required through convention space and people failing to do so will be invited to leave. We are aware some people may think they are unable to get the Vaccine and we will respect that choice but Fur Squared will ask you not to attend as Fur Squared takes the safety of their attendees very seriously and hopes to protect everyone the best it can.**
+
+**Registration Pricing and benefits:**
+
+* **Attending: Pre Registration $50/ At the door Registration $60**
+
+* **Sponsor: Pre Registration $85 / At the door Registration $95**
+* **Super Sponsor: Pre Registration $150 / At the door Registration $160**
+
+#### Note: To get into the poster for Fur Squared 2022 this year there will be a Lottery for 50 slots. It does not require you to be a super sponsor to enter the lottery but if picked for a slot you will be required to upgrade to super sponsor if picked otherwise the slot will be withdrawn and someone else will be picked.
+
+&nbsp;
+
+#### Parents wishing to attend with a minor fear not we got you\!
+
+Parent in tow badges can be supplied&nbsp;
 
 Check back here and/or follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared) for any updates that may come this way.
 
