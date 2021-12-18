@@ -4,9 +4,9 @@ title: Registration
 subtitle: Registration and benefits of Fur Squared
 ---
 
-# You found Registration\!
-Information about registration soon to come!
+# Fursquared 2022 Registration\!
 
+![](/uploads/photo-2021-12-15-20-54-37.jpg){: width="1024" height="672"}
 
 Check back here and/or follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared) for any updates that may come this way.
 
