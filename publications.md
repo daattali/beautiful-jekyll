@@ -14,6 +14,10 @@ Multi-objective optimization for retinal photoisomerization models with respect 
 [*J. Chem. Phys.* **155**, 234109 (2021).](https://doi.org/10.1063/5.0060259)\
 R. A. Vargas-Hernández, C. Chuang, and P. Brumer
 
+Differentiable quantum computational chemistry with PennyLane.\
+[arXiv:2111.09967](https://arxiv.org/pdf/2111.09967.pdf)
+J. M. Arrazola *et al.*
+
 Extrapolating quantum observables with machine learning: inferring multiple phase transitions from properties of a single phase.\
 [*Phys. Rev. Lett.* **121**, 255702 (2018).](https://doi.org/10.1103/PhysRevLett.121.255702)\
 R. A. Vargas-Hernández, J. Sous, M. Bercui, and R. V. Krems
