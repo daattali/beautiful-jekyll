@@ -8,7 +8,7 @@ title: Publications
 
 Fully differentiable optimization protocols for non-equilibrium steady states.\
 [accepted in *New J. Phys.* (2021).](https://iopscience.iop.org/article/10.1088/1367-2630/ac395e)\
-R. A. Vargas-Hernández, R. T. Q. Chen2, K. A. Jung, and P. Brumer
+R. A. Vargas-Hernández, R. T. Q. Chen, K. A. Jung, and P. Brumer
 
 Multi-objective optimization for retinal photoisomerization models with respect to experimental observables.\
 [*J. Chem. Phys.* **155**, 234109 (2021).](https://doi.org/10.1063/5.0060259)\
