@@ -5,6 +5,15 @@ title: Publications
 ---
 
 ## Quantum Machine Learning
+
+Fully differentiable optimization protocols for non-equilibrium steady states.\
+[accepted in *New J. Phys.* (2021).](https://iopscience.iop.org/article/10.1088/1367-2630/ac395e)\
+R. A. Vargas-Hernández, R. T. Q. Chen2, K. A. Jung, and P. Brumer
+
+Multi-objective optimization for retinal photoisomerization models with respect to experimental observables.\
+[*J. Chem. Phys.* **155**, 234109 (2021).](https://doi.org/10.1063/5.0060259)\
+R. A. Vargas-Hernández, C. Chuang, and P. Brumer
+
 Extrapolating quantum observables with machine learning: inferring multiple phase transitions from properties of a single phase.\
 [*Phys. Rev. Lett.* **121**, 255702 (2018).](https://doi.org/10.1103/PhysRevLett.121.255702)\
 R. A. Vargas-Hernández, J. Sous, M. Bercui, and R. V. Krems
