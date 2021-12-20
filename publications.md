@@ -42,10 +42,6 @@ Bayesian Optimization for Calibrating and Selecting Hybrid-Density Functional Mo
 R. A.Vargas-Hernández\
 Published as part of J. Phys. Chem. virtual special issue "*Machine Learning in Physical Chemistry*".
 
-Physical Extrapolation of Quantum Observables by Generalization with Gaussian Processes.\
-In: Schütt K., Chmiela S., von Lilienfeld O., Tkatchenko A., Tsuda K., Müller KR. (eds) [Machine Learning Meets Quantum Physics. Lecture Notes in Physics, vol 968. Springer, Cham](ttps://doi.org/10.1007/978-3-030-40245-7_9)\
-R. A. Vargas-Hernández, and R. V. Krems
-
 Six-dimensional potential energy surface for NaK-NaK collisions: Gaussian Process representation with correct asymptotic form.  
 [*J. Chem. Phys.* **150**, 064106 (2019).](https://doi.org/10.1063/1.5082740)\
   A. Christianen, T. Karman,  R. A. Vargas-Hernández, G. C. Groenenboom, and Roman V. Krems
@@ -68,6 +64,12 @@ R. A. Vargas-Hernández, and R. V. Krems
 Engineering extended Hubbard models with Zeeman excitations of ultracold Dy atoms.\
 [*J.  Phys. B* **49**, 235501 (2016).](http://iopscience.iop.org/article/10.1088/0953-4075/49/23/235501/meta)\
 R. A. Vargas-Hernández, and R. V. Krems 
+
+## Book chapters
+
+Physical Extrapolation of Quantum Observables by Generalization with Gaussian Processes.\
+In: Schütt K., Chmiela S., von Lilienfeld O., Tkatchenko A., Tsuda K., Müller KR. (eds) [Machine Learning Meets Quantum Physics. Lecture Notes in Physics, vol 968. Springer, Cham](ttps://doi.org/10.1007/978-3-030-40245-7_9)\
+R. A. Vargas-Hernández, and R. V. Krems
 
 ## PhD Thesis
 *Applications of machine learning for solving complex quantum problems*.\
