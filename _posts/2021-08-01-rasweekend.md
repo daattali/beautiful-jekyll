@@ -101,7 +101,7 @@ Além disso, vale ressaltar que todos os workshops contaram com certificados.
 </table>
 
 
-## Inscrição
+<!-- ## Inscrição
 Para se inscrever acesse o link abaixo e preencha o formulário.
 As inscrições poderam ser feitas até o último dia do evento. Sendo que todo o conteúdo será gravado e ficará disponível para os assinantes.
 <p>
@@ -114,7 +114,7 @@ Está com dúvidas? Envie um email para
 <p>
 <a href="vitor.mendes@ieee.org"
    title="Email de Vitor."> vitor.mendes@ieee.org</a>.
-</p>
+</p> -->
 
 ## O Evento
 
