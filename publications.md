@@ -5,7 +5,7 @@ subtitle:
 ---
 
 Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qig6iu1pL7XMSm0XzmdhTXJysk8/edit#) to see our research highlights! <br>
-Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 20, 2021) on some of our work. 
+Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work. 
 
 <table cellpadding="10" width="100%">
 
