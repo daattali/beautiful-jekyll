@@ -6,7 +6,7 @@ subtitle: ''
 ---
 ## Quick links
 
-* [My UnResolutions for a New Year ](https://www.simplehomemom.com/why-new-year-s-resolutions-often-don-t-work-and-what-to-try-instead/)free worksheet 
+* [My UnResolutions for a New Year ](https://www.simplehomemom.com/why-new-year-s-resolutions-often-don-t-work-and-what-to-try-instead/)free worksheet attached
 * Grab My Simple Daily Care Printables [HERE](https://mailchi.mp/d739479e4b35/mysimpledailycare)
 * [Newest blogs](https://www.simplehomemom.com)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
