@@ -27,4 +27,8 @@ Please have the following information ready to complete your application:
 
 Please check back here later to apply for our annual dance competition\!
 
+### Contact Us
+
+Have any questions or concerns? Email us at [programming@fursquared.com](mailto:programming@fursquared.com).
+
 &nbsp;
