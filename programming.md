@@ -8,7 +8,7 @@ subtitle: Things to do at Fur Squared
 
 ### Programming Submissions
 
-Programming submissions for Fur Squared 2022 are now open\! If you would like to host an event at Fur Squared, please complete our application form here: [Programming submission form](https://forms.gle/LXqs2LHd78RtRA1E8){: target="_blank" rel="noopener"}. Never hosted an event before but want to try? Give it a shot\! We're always excited to host new and returning panelists alike.
+Programming submissions for Fur Squared 2022 are now open\! If you would like to host an event at Fur Squared, please complete our [application form here](https://forms.gle/LXqs2LHd78RtRA1E8){: target="_blank" rel="noopener"}. Never hosted an event before but want to try? Give it a shot\! We're always excited to host new and returning panelists alike.
 
 Please have the following information ready to complete your application:
 
