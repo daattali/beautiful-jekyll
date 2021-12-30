@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Programming
-subtitle: Things to do at Virtual Fur Squared
+subtitle: Things to do at Fur Squared
 ---
 
 &nbsp;
