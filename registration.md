@@ -45,7 +45,7 @@ subtitle: Registration and benefits of Fur Squared
 
 #### Parents wishing to attend with a minor fear not we got you\!
 
-Parent in tow badges can be supplied please inquire at the door to receive one. Any Questions on how that works please email us (INSERT EMAIL HERE)
+Parent in tow badges can be supplied please inquire at the door to receive one. Any Questions on how that works please email us [registration@fursquared.com](mailto:registration@fursquared.com)
 
 Check back here and/or follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared) for any updates that may come this way.
 
