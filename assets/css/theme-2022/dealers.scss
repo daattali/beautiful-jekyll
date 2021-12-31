@@ -1,0 +1,55 @@
+---
+---
+
+section {
+    margin-bottom: 30px;
+}
+
+.section-1 {
+    table {
+        margin: 1.875rem 0;
+    }
+}
+
+.section-2 {
+
+    .gothy-reminder {
+        float: right;
+        width: 100%;
+        max-width: 250px;
+        margin-left: 15px;
+
+        @media( max-width: 767px){
+            float: none;
+            margin: 0px auto;
+            display: block;
+        }
+    }
+}
+
+.section-3 {
+
+    .alik-top-secret {
+        float: left;
+        width: 100%;
+        max-width: 250px;
+        margin-right: 15px;
+
+        @media( max-width: 767px){
+            float: none;
+            margin: 0px auto;
+            display: block;
+        }
+    }
+}
+
+.section-5 {
+
+    .sign-up-box {
+       text-align: center;
+
+        .sign-up-btn {
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -67,6 +67,10 @@ blockquote p:first-child {
   margin-top: 0;
 }
 
+hr {
+  border-top: 1px solid {{ site.page-text-col | default: "#404040" }};
+}
+
 hr.small {
   max-width: 6.25rem;
   margin: 1rem auto;
@@ -93,11 +97,19 @@ hr.small {
 }
 
 .button {
+  display: inline-block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
   color: {{ site.button-col | default: "white" }};
   background-color: {{ site.button-bg-col | default: "black" }};
-  border: 1px solid {{ site.button-col | default: "white" }};
   text-decoration: none;
+  text-transform: uppercase;
   padding: 0.8em 1.8em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: none;
+  
 }
 
 @media (max-width: 767px) {
@@ -109,7 +121,7 @@ hr.small {
 .button:hover {
   color: {{ site.button-hover-col | default: "black" }};
   background-color: {{ site.button-bg-hover-col | default: "white" }};
-  border: 1px solid {{ site.button-hover-col | default: "black" }};
+  text-decoration: none;
 }
 
 .hideme {
