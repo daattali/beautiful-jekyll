@@ -25,14 +25,14 @@ subtitle: Registration and benefits of Fur Squared
 * **Sponsor: Pre Registration $85 &nbsp;**
 * **At the door Registration $95**
 
-**​​​​​​​Super Sponsor:(Insert what you get here\!)**
+**Super Sponsor:(Insert what you get here\!)**
 
 * **Super Sponsor: Pre Registration $150 &nbsp;**
 * **At the door Registration $160**
 
-#### Note: To get into the poster for Fur Squared 2022 this year there will be a Lottery for 50 slots. It does not require you to be a super sponsor to enter the lottery but if picked for a slot you will be required to upgrade to super sponsor if picked otherwise the slot will be withdrawn and someone else will be picked.
+**Poster:**
 
-&nbsp;
+* **Poster: Limited 50 slots, $200 if selected** [Read our Poster Lottery Terms Here](https://docs.google.com/document/d/12tHpDNoU2SuohTOvjQZ5xBsphKQx-0Uv0znRmtFzvTY/)
 
 #### Parents wishing to attend with a minor fear not we got you\!
 
