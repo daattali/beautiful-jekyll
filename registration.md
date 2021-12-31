@@ -14,29 +14,38 @@ subtitle: Registration and benefits of Fur Squared
 
 **Registration Pricing and benefits:**
 
-**Attending:(Insert what you get here\!)**
+**Attending:<br>Grants general access to the convention Friday, Saturday, and Sunday.**
 
 * **Attending: Pre Registration $50**
 
 * **At the door Registration $60**
 
-**Sponsor: (Insert what you get here\!)**
+**Sponsor:**<br>**Grants general access to the convention Friday, Saturday, and Sunday. In addition, you get:<br>Access to our con suite for the duration of the convention<br>Additional bonus goodies and swag\!**
 
 * **Sponsor: Pre Registration $85 &nbsp;**
 * **At the door Registration $95**
 
-**Super Sponsor:(Insert what you get here\!)**
+**Super Sponsor:**<br>**Grants general access to the convention Friday, Saturday, and Sunday. In addition, you get:**
+
+**All the perks of the Sponsor level<br>This year’s t-shirt<br>A special super sponsor item from our friends at Con Glomerate Megacorp<br>An invitation to our Guest of Honor dinner Saturday night.**
 
 * **Super Sponsor: Pre Registration $150 &nbsp;**
 * **At the door Registration $160**
 
 **Poster:**
 
-* **Poster: Limited 50 slots, $200 if selected** [Read our Poster Lottery Terms Here](https://docs.google.com/document/d/12tHpDNoU2SuohTOvjQZ5xBsphKQx-0Uv0znRmtFzvTY/)
+* **Poster: Limited 50 slots, $200 if selected please read the terms for our Poster Lottery below:**
+
+  Poster Lottery Terms
+
+  The Fur Squared poster is happening\!&nbsp; Here’s how you get in: When you register for Fur Squared 2022, there will be a checkbox and a link to this document.&nbsp; Read the entire document, and check the box to acknowledge your entry into the 2022 poster raffle.
+
+  Entry into the lottery will last until Sunday, January 9 at 11:59pm central.&nbsp; Assuming there are more than 50 people interested in the poster tier, 50 random people will be picked, and announced on Monday, January 10.&nbsp; On that date, emails with special registration upgrade links will be sent out.&nbsp; The price for the Poster tier is $200.&nbsp; Your cost will be the difference between that and what you paid for your existing badge.
+  If you do not complete your upgrade and payment by Sunday, January 16 at 11:59pm central, we will go to the next name in a randomized standby list, and will continue to do so until all poster slots are filled.If you miss your chance, we’re sorry, but that will be final\!
 
 #### Parents wishing to attend with a minor fear not we got you\!
 
-Parent in tow badges can be supplied please inquire at the door to receive one. Any Questions on how that works please email us (INSERT EMAIL HERE)
+Parent in tow badges can be supplied please inquire at the door to receive one. Any Questions on how that works please email us [registration@fursquared.com](mailto:registration@fursquared.com)
 
 Check back here and/or follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared) for any updates that may come this way.
 
