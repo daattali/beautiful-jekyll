@@ -47,7 +47,7 @@ Florencia has a teaching degree at the University the Buenos Aires. She has been
 
 
 
-#### Mike Gelbart, Co-Director and Associate Professor of Teaching
+#### Mike Gelbart, Associate Professor of Teaching (On Leave)
 
 <img src="../img/team/mike.jpg" align="left" width="34.5%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
@@ -80,7 +80,7 @@ Gittu George became a part of the MDS team in the spring of 2021. He graduated w
 
 
 
-#### Varada Kolhatkar, Assistant Professor of Teaching
+#### Varada Kolhatkar, Co-Director and Assistant Professor of Teaching
 
 
 <img src='../img/team/varada.jpeg'  align="left" width="32%" style="margin-right: 5px;"/>
