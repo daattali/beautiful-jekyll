@@ -12,8 +12,6 @@ css:
 
 ## Important Info
 
-**Vaccine Statuses will be checked at the Convention in order to complete your Registration.**
-
 **Vax records will be required & checked before Registration can be processed.**&nbsp;
 
 ## Registration Levels
