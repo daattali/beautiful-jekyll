@@ -10,9 +10,12 @@ css:
 
 ![](/uploads/photo-2021-12-15-20-54-37.jpg){: width="1024" height="672"}
 
-## Important Info
+## COVID-19 Information
 
-**Vax records will be required & checked before Registration can be processed.**&nbsp;
+**Vaccine records will be required & checked before you receive your badge.**
+**Masks worn properly will be required at all times in hotel and convention space.**
+
+Further details about this policy are actively being worked on, and will appear here when ready.
 
 ## Registration Levels
 
