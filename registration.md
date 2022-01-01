@@ -33,7 +33,11 @@ What does that mean for you? Fur Squared will be doing Vaccine checks before all
 
 ## Pricing
 
-|   | Pre Registration | Walk-in Registration | --- | --- | --- | Attendee | $50 | $60 | Sponsor | $85 | $95 | Super Sponsor | $150 | $160 |
+|   | Pre Registration | Walk-in Registration |
+| --- | --- | --- | 
+| Attendee | $50 | $60 |
+| Sponsor | $85 | $95 |
+| Super Sponsor | $150 | $160 |
 
 ## The Fursquared 2022 Poster\!
 
