@@ -14,7 +14,7 @@ css:
 
 **Vaccine Statuses will be checked at the Convention in order to complete your Registration.**
 
-What does that mean for you? Fur Squared will be doing Vaccine checks before allowing people to walk into Registration to receive their badge. You will only be allowed into convention space with a purchased attending badge no exceptions. Masks will also be required through convention space and people failing to do so will be invited to leave. We are aware some people may think they are unable to get the Vaccine and we will respect that choice but Fur Squared will ask you not to attend as Fur Squared takes the safety of their attendees very seriously and hopes to protect everyone the best it can.
+**Vax records will be required & checked before Registration can be processed.**&nbsp;
 
 ## Registration Levels
 
@@ -35,20 +35,20 @@ What does that mean for you? Fur Squared will be doing Vaccine checks before all
 
 ## Pricing
 
-|   | Pre Registration | Walk-in Registration |
-| --- | --- | --- | 
+| &nbsp; | Pre Registration | Walk-in Registration |
+| --- | --- | --- |
 | Attendee | $50 | $60 |
 | Sponsor | $85 | $95 |
 | Super Sponsor | $150 | $160 |
 
-|   | Pre Registration |
+| &nbsp; | Pre Registration |
 | --- | --- |
 | Attendee | $50 |
 | Sponsor | $85 |
 | Super Sponsor | $150 |
 
-|   | Walk-in Registration |
-| --- | --- | 
+| &nbsp; | Walk-in Registration |
+| --- | --- |
 | Attendee | $60 |
 | Sponsor | $95 |
 | Super Sponsor | $160 |
