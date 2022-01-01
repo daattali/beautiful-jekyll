@@ -2,6 +2,8 @@
 layout: page
 title: Fur Squared 2022 Registration!!
 subtitle: Registration and benefits of Fur Squared
+css:
+    - "/assets/css/theme-2022/registration.css"
 ---
 
 &nbsp;
@@ -14,7 +16,7 @@ subtitle: Registration and benefits of Fur Squared
 
 What does that mean for you? Fur Squared will be doing Vaccine checks before allowing people to walk into Registration to receive their badge. You will only be allowed into convention space with a purchased attending badge no exceptions. Masks will also be required through convention space and people failing to do so will be invited to leave. We are aware some people may think they are unable to get the Vaccine and we will respect that choice but Fur Squared will ask you not to attend as Fur Squared takes the safety of their attendees very seriously and hopes to protect everyone the best it can.
 
-## Registration Levels:
+## Registration Levels
 
 **Attendee:**<br>Grants general admission to the convention Friday, Saturday, and Sunday.
 
@@ -39,6 +41,18 @@ What does that mean for you? Fur Squared will be doing Vaccine checks before all
 | Sponsor | $85 | $95 |
 | Super Sponsor | $150 | $160 |
 
+|   | Pre Registration |
+| --- | --- |
+| Attendee | $50 |
+| Sponsor | $85 |
+| Super Sponsor | $150 |
+
+|   | Walk-in Registration |
+| --- | --- | 
+| Attendee | $60 |
+| Sponsor | $95 |
+| Super Sponsor | $160 |
+
 ## The Fursquared 2022 Poster\!
 
 **Poster: Limited 50 slots, $200 if selected please read the terms for our Poster Lottery below:**
@@ -51,7 +65,7 @@ Entry into the lottery will last until Sunday, January 9 at 11:59pm central.&nbs
 
 If you do not complete your upgrade and payment by Sunday, January 16 at 11:59pm central, we will go to the next name in a randomized standby list, and will continue to do so until all poster slots are filled.If you miss your chance, we’re sorry, but that will be final\!
 
-#### Parents wishing to attend with a minor fear not we got you\!
+## Parents wishing to attend with a minor fear not we got you\!
 
 Parent in tow badges can be supplied please inquire at the door to receive one. Any Questions on how that works please email us [registration@fursquared.com](mailto:registration@fursquared.com)
 
