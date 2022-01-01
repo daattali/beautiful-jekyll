@@ -6,7 +6,7 @@ subtitle: ''
 ---
 ## Quick links
 
-* [My UnResolutions for a New Year ](https://www.simplehomemom.com/why-new-year-s-resolutions-often-don-t-work-and-what-to-try-instead/)free worksheet attached
+* [How to Do a Zero Spend Month that Works For You **+ a plan your zero spend month freebie**](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
 * Grab My Simple Daily Care Printables [HERE](https://mailchi.mp/d739479e4b35/mysimpledailycare)
 * [Newest blogs](https://www.simplehomemom.com)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
