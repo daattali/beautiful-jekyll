@@ -5,14 +5,15 @@ published: true
 ---
 
 
-# Voici la vidéo de l'évaluation
+# À faire vous-même 1
+
+En vous aidant de la vidéo située à <a href="https://www.youtube.com/watch?v=gOiIQ0qGiCc" target="_blank">cette adresse</a>, expliquez la notion de "petit monde" (expérience de Milgram en 1967)
 
 
 
+# À faire vous-même 2
 
-<div class="centrer">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/fm5MSdPU8tY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
+L'expérience du "petit monde" de 1967 a souvent été critiquée, expliquez pourquoi (vous trouverez ces informations sur le Net).
 
 
 
