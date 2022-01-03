@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SNT : petit monde
+title: 'SNT : petit monde'
 published: true
 ---
 
