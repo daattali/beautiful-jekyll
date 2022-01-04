@@ -10,7 +10,7 @@ subtitle: ''
 
 **The Simple Meal Planning Guide** will help you never to become stumped with meal planning again when/if applied! You will never again question yourself, “_What's for dinner?_” if you follow through with creating a routine and a plan that works for you and your family.
 
-## This meal planning guide is for you if:
+### This meal planning guide is for you if:
 
 * you often dread mealtimes and feel overwhelmed with meal planning
 * you often google meal planning type ideas, but don’t know where to start
@@ -28,7 +28,7 @@ subtitle: ''
 
 ![A picture of the meal planning guide sheets.](/uploads/simple-meal-planning-guide.jpg "The Simple Meal Planning Guide Sneak Peek")
 
-#### READY TO START YOUR SIMPLE MEAL PLANNING?
+### READY TO START YOUR SIMPLE MEAL PLANNING?
 
 Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase.
 
