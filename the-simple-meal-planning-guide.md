@@ -4,11 +4,15 @@ title: The Simple Meal Planning Guide
 subtitle: ''
 
 ---
-#### Are you tired of playing the meal planning game - with planning taking hours (or no planning at all) and want to have something in place once and for all? Meet The Simple Meal Planning Guide. This meal planning guide will help you never to become stumped with meal planning again when/if applied.
+#### Are you tired of playing the meal planning game - with planning taking hours (or no planning at all) and want to have something in place once and for all? 
 
-> "If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource." - Crystin from [@delightfullyfeasting](www.instagram.com/delightfullyfeasting)
+#### Meet The Simple Meal Planning Guide!
+
+#### This meal planning guide will help you never to become stumped with meal planning again when/if applied.
 
 ![](/uploads/the-simple-meal-planning-guide-shm-2.jpg "The Simple Meal Planning Guide SHM")
+
+#### **_"If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource." - Crystin from_** [**_@delightfullyfeasting_**](www.instagram.com/delightfullyfeasting)
 
 ## This meal planning guide is for you if:
 
@@ -39,7 +43,7 @@ Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4K
 
 **_Please note:_** _I'll email you a copy of the Simple Meal Planning Guide within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
-### WHAT PEOPLE ARE SAYING ABOUT THE SIMPLE MEAL PLANNING GUIDE
+### EMILY'S REVIEW:
 
 > Kelly's Simple Meal Planning Guide is the comprehensive guide you need so you never have to ask the question, "What's for dinner?" (or lunch, or breakfast for that matter!)
 >
