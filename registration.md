@@ -75,3 +75,5 @@ Check back here and/or follow us on [https://twitter.com/fursquared](https://twi
 ## Questions or Concerns?
 
 Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<br>Fur Squared thanks you for your patience.
+# The Registration Link
+[https://reg.fursquared.com](https://reg.fursquared.com)
