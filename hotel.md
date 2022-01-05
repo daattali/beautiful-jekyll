@@ -15,4 +15,4 @@ Room rates start at $129.00 USD per night
 Unfortunately there won't be a daily free breakfast buffet, sorry!
 
 # Room Reservation Link
-[Fur Squared 2022 Room Block Resversation Link](https://www.marriott.com/event-reservations/reservation-link.mi?id=1639601306112&key=GRP&app=resvlink)
+[Fur Squared 2022 Room Block Reservation Link](https://www.marriott.com/event-reservations/reservation-link.mi?id=1639601306112&key=GRP&app=resvlink)
