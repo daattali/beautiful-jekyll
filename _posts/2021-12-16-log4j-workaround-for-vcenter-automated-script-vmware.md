@@ -16,11 +16,11 @@ If you don't know about the Log4j vulnerability yet (CVE score 10/10), it probab
 
 ## Nakivo Backup and Replication v10.5.1
 
-Following the tsunami of exploit attempts of Log4j across the globe, all software vendors leveraging it have been scrambling to roll out a patch in order to mitigate the vulnerability.
+Following the tsunami of exploit attempts of Log4j across the globe, all software vendors leveraging it have been scrambling to roll out a patch in order to mitigate the vulnerability. It is even significantly more critical when it comes to backups as there are already reports of [Ransomware ](https://www.vxav.fr/2021-11-15-how-nakivo-backup-replication-can-help-you-with-ransomware/)leveraging the vulnerability. In case of an encrypting attack, backups will be your last line of defense and if they are impacted by the ransomware, this will make the recovery very complicated if not impossible. 
 
-Nakivo was quick to react and distributed Nakivo Backup and Replication v10.5.1 for which the main purpose is to mitigate the Log4j vulnerability. However, a couple extra changes were included such as support for vSphere 7.0.3 and QTS 5.0 OS as well as other minor product usability issues.
+Nakivo was quick to react and distributed [Nakivo Backup and Replication v10.5.1 ](https://www.nakivo.com/resources/download/trial-download/)for which the main purpose is to mitigate the Log4j vulnerability. However, a couple extra changes were included such as support for vSphere 7.0.3 and QTS 5.0 OS as well as other minor product usability issues.
 
-You can either update your appliance from the Web Console or download the [updater component](https://www.nakivo.com/resources/download/update/), upload it to the appliance and apply it manually in command line.
+You can either update your appliance from the Web Console or download the [updater component](https://www.nakivo.com/resources/download/update/), upload it to the appliance and apply it manually in command line. Regardless of the update path you choose to go for, don't wait to update your Nakivo Servers and protect your backups now !
 
 ## VMware vCenter Server
 
