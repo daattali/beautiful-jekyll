@@ -4,11 +4,13 @@ title: The Simple Meal Planning Guide
 subtitle: ''
 
 ---
-## Are you overwhelmed with meal planning and you want to have it in place once and for all? If so, MEET THE SIMPLE MEAL PLANNING GUIDE!
+## Are you overwhelmed with meal planning and you want to have it in place once and for all?
 
-**The Simple Meal Planning Guide** will help you never to become stumped with meal planning again when/if applied! You will never again question yourself, “_What's for dinner?_” if you follow through with creating a routine and a plan that works for you and your family.
+**If so, The Simple Meal Planning Guide** will help you never again to question yourself, “_What's for dinner?_” if you follow through with creating a routine and a plan that works for you and your family.
 
-#### _"If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource." - Crystin from_ [_@delightfullyfeasting_](www.instagram.com/delightfullyfeasting)
+<br>
+
+### _"If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource." - Crystin from_ [_@delightfullyfeasting_](www.instagram.com/delightfullyfeasting)
 
 <br>
 
@@ -19,6 +21,8 @@ subtitle: ''
 * you often feel stumped and uninspired with meal planning
 * you can’t seem to find a system for meal planning that sticks and you would like a simple, streamlined process to meal plan that works for you in every season of life
 
+![A picture of the meal planning guide sheets.](/uploads/simple-meal-planning-guide.jpg "The Simple Meal Planning Guide Sneak Peek")
+
 ### What you'll find in the Simple Meal Planning Guide:
 
 * Helpful tips in the areas of planning and organizing
@@ -28,7 +32,7 @@ subtitle: ''
 * There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works
 * Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
 
-![A picture of the meal planning guide sheets.](/uploads/simple-meal-planning-guide.jpg "The Simple Meal Planning Guide Sneak Peek")
+<br>
 
 ### READY TO START YOUR SIMPLE MEAL PLANNING?
 
