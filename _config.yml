@@ -45,12 +45,12 @@ social-network-links:
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: rafayethossain13
   github: rafayethossain
-  twitter: rafayethossain13
-  patreon: rafayethossain
+  twitter: rafayethossain
+ # patreon: rafayethossain
   # youtube: -
   medium: rafayethossain
 #  reddit: yourname
-  linkedin: in/rafayet13
+  linkedin: rafayet13
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
