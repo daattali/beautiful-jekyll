@@ -17,7 +17,9 @@ You may have heard about Markdown, if you have it's a good thing.
 Markdown is a plain text formatting syntax designed so that it can optionally be converted to HTML.
 
 # Markdown Cheatsheet<a name="TOP"></a>
+
 _Qucik Link to Specific Topic:_
+
 - [Markdown Cheetsheat for Easy Note Taking](#markdown-cheetsheat-for-easy-note-taking)
 - [Markdown Cheatsheet<a name="TOP"></a>](#markdown-cheatsheet)
 - [Heading 1](#heading-1)
@@ -1254,8 +1256,8 @@ Preview:
 </div>
 ***
 
-
 ## Boxes
+
 You can add notification, warning and error boxes like this:
 
 ### Notification
@@ -1265,10 +1267,6 @@ You can add notification, warning and error boxes like this:
 
 {: .box-success}
 **Success:** This is a success box.
-
-{: .box-primary}
-**Primary:** This is a primary box.
-
 
 ### Warning
 
