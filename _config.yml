@@ -17,10 +17,10 @@ navbar-links:
   Blogs: " "
   About Me: "aboutme"
   Free Books: "books"
-  Resume: "https://rafayet13.github.io/Resume/"
   Archive:
     - Tag cloud: "tags"
-    - Search: "search"
+    - Resume: "https://rafayet13.github.io/Resume/"
+    # Search: "search"
   
 # --- Logo --- #
 
