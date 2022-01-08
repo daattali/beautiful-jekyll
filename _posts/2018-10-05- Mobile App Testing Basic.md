@@ -9,7 +9,9 @@ thumbnail-img: /assets/img/diary.png
 share-img: /img/diary.png
 ---
 
-Everywhere you look today, the tide of protectionist sentiment is flowing. Someone might be talking to his friends, someone might be looking at the weather forecast before leaving the house or sitting at home ordering food. Someone is scrolling through Facebook unnecessarily again. People are using mobile devices from waking up to sleeping. In the last few years, the development of mobile applications and mobile devices has led to the need for mobile testing. Currently, not all of these companies are developing mobile applications, and 84% of them are planning to enter mobile apps development in the near future.
+Everywhere you look today, the tide of protectionist sentiment is flowing. Someone might be talking to his friends, someone might be looking at the weather forecast before leaving the house or sitting at home ordering food. Someone is scrolling through Facebook unnecessarily again. People are using mobile devices from waking up to sleeping. 
+
+In the last few years, the development of mobile applications and mobile devices has led to the need for mobile testing. Currently, not all of these companies are developing mobile applications, and 84% of them are planning to enter mobile apps development in the near future.
 One study found that 50 percent of mobile applications are used only once after download, and if a user encounters a bug only once, more than 50 percent of users delete the application from the mobile device.
 
 _Qucik Link to Specific Topic:_
