@@ -60,7 +60,8 @@ BBoth verification and validation are part of the software testing process. Alth
 
 Remember that the reason behind testing software is to estimate---and if possible, reduce---the risk to stakeholders. Understanding the possible risks can itself help to reduce risk. After all, untested software which was never run could be perfect, or it could not work at all. Testing helps calculate where between those two extremes the software _actually_ is. It can help us figure out whether there are issues with the software which are trivial or problems that should stop the product from shipping because major functionality does not work. By helping to determine the level of risk, software testers allow the other stakeholders involved to make appropriate decisions.\*
 
+{: .box-success}
 Enjoy !!!
 **See Yaaa, Next.**
 
-![Rafayet Hossain](/img/avatar-icon.png "Selenium with Python")
+![Rafayet Hossain](/assets/img/avatar-icon.png "Rafayet Hossain")

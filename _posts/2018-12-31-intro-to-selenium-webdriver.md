@@ -3,9 +3,9 @@ layout: post
 title: Intro to Selenium with Python
 subtitle: Intorduction to Test Automation with Selenium & Python
 tags: [sqa, software testing, selenium, webdriver, python]
-image: /img/selenium-with-python.png
-bigimg: /img/back.gif
-share-img: /img/selenium-with-python.png
+image: /assets/img/selenium-with-python.png
+bigimg: /assets//img/back.gif
+share-img: /assets/img/selenium-with-python.png
 ---
 
 **Selenium WebDriver** is one of the most popular tools for Web UI Automation. And no better than Python can complement it to automate a broad range of web applications. Hence, we brought this Selenium Webdriver Python tutorial to ramp you up quickly on the task. So let’s start by understanding what all we have to do in UI automation testing.
@@ -36,9 +36,9 @@ _Let's know the course content what we are going to learn through out the journe
 - Small Projects
 - and So on
 
-So I'll see in the next guys.
 
-Enjoy !!!!!!!!!!!!!!!!!
-#See Yaaa, Next
+{: .box-success}
+Enjoy !!!
+See Yaaa, Next.
 
 ![Selenium with Python](/img/selenium-with-python.png "Selenium with Python")

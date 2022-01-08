@@ -3,9 +3,9 @@ layout: post
 title: How to Write a Bug Report
 subtitle: Write a bug report which makes developer happy
 tags: [sqa, software testing, testing, bug report, bug]
-image: /img/diary.png
-bigimg: /img/cover.jpg
-share-img: /img/diary.png
+image: /assets/img/diary.png
+bigimg: /assets/img/cover.jpg
+share-img: /assets/img/diary.png
 ---
 
 Someone may ask you how to write a good bug report that can make the developer happy. In fact, there is no such thing as a bug report, no matter how beautifully written it is, which can make a developer happy.
@@ -54,11 +54,12 @@ An image is worth a thousand words. Take the right screenshot or screencast and 
 Priority - It depends on the severity of the bug. The most serious bugs should be fixed first.
 Intensity - Show bug effects in software. There are 5 types of bug severity:
 
-Blocker: No more tests can be performed.
-Critical: Application crashes, data loss.
-Major: Big loss of function.
-Minor: Minor loss of work.
-Trivial: small, UI error.
+- [] Blocker: No more tests can be performed.
+- [] Critical: Application crashes, data loss.
+- [] Major: Big loss of function.
+- [] Minor: Minor loss of work.
+- [] Trivial: small, UI error.
 
-Enjoy !!!!!!!!!!!!!!!!!
-#See Yaaa, Next
+{: .box-success}
+Enjoy !!!
+See Yaaa, Next.

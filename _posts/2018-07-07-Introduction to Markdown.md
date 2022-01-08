@@ -3,9 +3,9 @@ layout: post
 title: Basic Markdown
 subtitle: Markdown Basic You Must Know
 tags: [git, github, markdown, md]
-image: /img/diary.png
-bigimg: /img/background.png
-share-img: /img/diary.png
+image: /assets/img/diary.png
+bigimg: /assets/img/background.png
+share-img: /assets/img/diary.png
 toc: true
 toc_float: true
 ---

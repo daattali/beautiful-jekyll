@@ -568,7 +568,8 @@ _Tcl_: _Tool Command Language_, a programming language used to control the **exp
 
 **Zombie**: A computer with software installed which allows unauthorized users access to it to perform unauthorized functionality. For example, a system might have a mailer program built in which will allow other users to send spam from your machine, so that the original users cannot be tracked.
 
-Enjoy !!!!!!!!!!!!!!!!!
+{: .box-success}
+Enjoy !!!
 #See Yaaa, Next
 
 

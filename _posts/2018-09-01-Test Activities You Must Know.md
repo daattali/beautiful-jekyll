@@ -3,9 +3,9 @@ layout: post
 title: Software Testing Process
 subtitle: An Introduction to Test Activities
 tags: [sqa, software testing, testing, test process, test activities]
-image: /img/diary.png
-bigimg: /img/cover.jpg
-share-img: /img/diary.png
+image: /assets/img/diary.png
+bigimg: /assets/img/cover.jpg
+share-img: /assets/img/diary.png
 ---
 
 Testing is not a single activity but a whole process. This process begins with test planning and ends with test case design, test execution, and evaluation. Therefore, we can divide the basic functions of the testing process into certain steps:
@@ -112,5 +112,6 @@ The tasks that need to be done in the test closure activity are:
 3. To transfer the test equipment to the maintenance organization. They will provide software support.
 4. To evaluate how the test is going and to learn lessons for future publications and projects.
 
-Enjoy !!!!!!!!!!!!!!!!!
+{: .box-success}
+Enjoy !!!
 #See Yaaa, Next

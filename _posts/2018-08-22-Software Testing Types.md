@@ -3,9 +3,9 @@ layout: post
 title: Types of Software Testing
 subtitle: Different Types of Testing
 tags: [sqa, software testing, testing, testing type]
-image: /img/diary.png
-bigimg: /img/cover.jpg
-share-img: /img/diary.png
+image: /assets/img/diary.png
+bigimg: /assets/img/cover.jpg
+share-img: /assets/img/diary.png
 ---
 
 Nowadays anyone can name hundreds of types in software testing. Of course, all of them have the right to survive and to work with. The various techniques and methods that you use to thoroughly verify software or application have a specific purpose behind each type of testing technique.
@@ -98,5 +98,6 @@ All types of tests can be further divided into two types. That is positive testi
 In a positive testing approach, only positive things are considered, that is, checking whether the system is doing what it is supposed to do.
 Negative testing works the opposite of what the system should not do.
 
-Enjoy !!!!!!!!!!!!!!!!!
-#See Yaaa, Next
+{: .box-success}
+Enjoy !!!
+See Yaaa, Next.

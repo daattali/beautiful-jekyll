@@ -3,12 +3,12 @@ layout: post
 title: Bug Life Cycle
 subtitle: How to Bug Life Cycle End
 tags: [sqa, software testing, testing, bug, bug life cycle]
-image: /img/diary.png
-bigimg: /img/cover.jpg
-share-img: /img/diary.png
+image: /assets/img/diary.png
+bigimg: /assets/img/cover.jpg
+share-img: /assets/img/diary.png
 ---
 
-Bug Life Cycle is also known as Defect Life Cycle. It is a journey of error that goes on at different stages in his life. Suppose the software is driven by a testing process and relies on testing tools. This cycle varies from organization to organization and from project to project.
+Bug Life Cycle is also known as Defect Life Cycle. It is a journey of Bug (Software Bug)) that goes on at different stages in his life. Suppose the software is driven by a testing process and relies on testing tools. This cycle varies from organization to organization and from project to project.
 
 _Qucik Link to Specific Topic:_
 
@@ -24,7 +24,7 @@ _Qucik Link to Specific Topic:_
 - [Closed:](#closed)
 - [Not a bug / Enhancement:](#not-a-bug--enhancement)
 
-Learn about the different stages of a bug's life cycle:
+Let's Learn about the different stages of a bug's life cycle:
 
 # New:
 
@@ -70,5 +70,6 @@ Once the bug is fixed it is checked by the tester. If the tester thinks that the
 
 If the functionality of the application does not change, it is given as "Not a bug / Enhancement". For example: if a customer wants to change the color of some text which is not a bug, just a slight change in the design of the application.
 
-Enjoy !!!!!!!!!!!!!!!!!
-#See Yaaa, Next
+{: .box-success}
+Enjoy !!!
+See Yaaa, Next.
