@@ -73,6 +73,7 @@ _Qucik Link to Specific Topic:_
     - [Notification](#notification)
     - [Warning](#warning)
     - [Error](#error)
+  - [Hello Again !](#hello-again-)
 
 ---
 
@@ -1278,6 +1279,9 @@ You can add notification, warning and error boxes like this:
 
 {: .box-error}
 **Error:** This is an error box.
+
+## Hello Again !
+{: .box-note}
 
 Enjoy !!!
 **See Yaaa, Next.**

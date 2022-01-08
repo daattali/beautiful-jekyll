@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Our First Scipt With Selenum Python Webdriver
+title: First Scipt With Selenum Python Webdriver
 subtitle: Software Test Automation with Selenium & Python
 tags: [python tutorial, selenium, python, webdriver, python selenium webdriver]
 image: /assets/img/selenium-with-python.png
@@ -9,8 +9,6 @@ thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
 ---
 
-## Hello Again !
-{: .box-note}
 
 Today we're going to run our first Selenium web testing with Selenium Python web bindings. 
 If you have already installed Selenium Python bindings, you can start Web Automation Testing  using your Python IDE.
@@ -111,7 +109,10 @@ The quit will exit entire browser whereas close` will close one tab, but if just
 driver.close()
 
 ```
-# See Yaaa, Next 
 
-![Selenium with Python](/img/selenium-with-python.png "Selenium with Python")
+{: .box-success}
+Enjoy !!!
+See Yaaa, Next.
+
+![Selenium with Python](/assets/img/selenium-with-python.png "Selenium with Python")
 
