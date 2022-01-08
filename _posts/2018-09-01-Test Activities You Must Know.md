@@ -5,6 +5,7 @@ subtitle: An Introduction to Test Activities
 tags: [sqa, software testing, testing, test process, test activities]
 image: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
+thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/diary.png
 ---
 

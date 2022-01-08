@@ -4,6 +4,7 @@ title: Basic Markdown
 subtitle: Markdown Basic You Must Know
 tags: [git, github, markdown, md]
 image: /assets/img/diary.png
+thumbnail-img: /assets/img/diary.png
 bigimg: /assets/img/background.png
 share-img: /assets/img/diary.png
 toc: true

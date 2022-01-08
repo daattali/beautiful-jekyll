@@ -4,6 +4,7 @@ title: How to Write a Bug Report
 subtitle: Write a bug report which makes developer happy
 tags: [sqa, software testing, testing, bug report, bug]
 image: /assets/img/diary.png
+thumbnail-img: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 share-img: /assets/img/diary.png
 ---

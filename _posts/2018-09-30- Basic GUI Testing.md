@@ -5,6 +5,7 @@ subtitle: GUI Testing Guidelines
 tags: [sqa, software testing, testing, GUI testing]
 image: /img/diary.png
 bigimg: /img/cover.jpg
+thumbnail-img: /assets/img/diary.png
 share-img: /img/diary.png
 ---
 

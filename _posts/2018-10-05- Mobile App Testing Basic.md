@@ -5,6 +5,7 @@ subtitle: A complete checklist to test a mobile application
 tags: [sqa, software testing, testing, mobile app testing]
 image: /img/diary.png
 bigimg: /img/cover.jpg
+thumbnail-img: /assets/img/diary.png
 share-img: /img/diary.png
 ---
 

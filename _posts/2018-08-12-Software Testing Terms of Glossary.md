@@ -3,9 +3,10 @@ layout: post
 title: Software Testing Glossary of Terms
 subtitle: Basic Terms and Definitions
 tags: [sqa, software testing, testing, terms of glossary]
-image: /img/diary.png
-bigimg: /img/cover.jpg
-share-img: /img/diary.png
+thumbnail-img: /assets/img/diary.png
+image: /assets/img/diary.png
+bigimg: /assets/img/cover.jpg
+share-img: /assets/img/diary.png
 ---
 
 Here is a list of common terms that used frequently in Software testing:

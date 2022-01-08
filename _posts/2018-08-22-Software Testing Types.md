@@ -4,6 +4,7 @@ title: Types of Software Testing
 subtitle: Different Types of Testing
 tags: [sqa, software testing, testing, testing type]
 image: /assets/img/diary.png
+thumbnail-img: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 share-img: /assets/img/diary.png
 ---

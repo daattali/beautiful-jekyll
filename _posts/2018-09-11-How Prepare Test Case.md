@@ -4,6 +4,7 @@ title: How to Prepare Test Case
 subtitle: Best Practices for Preparation of Test Case
 tags: [sqa, software testing, testing, test case]
 image: /assets/img/diary.png
+thumbnail-img: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 share-img: /assets/img/diary.png
 ---

@@ -4,6 +4,7 @@ title: A Intro to Software Testing
 subtitle: What Testing is and What it is not
 tags: [sqa, software testing, testing]
 image: /img/diary.png
+thumbnail-img: /assets/img/diary.png
 bigimg: /img/cover.jpg
 share-img: /img/diary.png
 ---

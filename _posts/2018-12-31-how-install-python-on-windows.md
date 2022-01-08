@@ -9,15 +9,23 @@ published: true
 share-img: /assets/img/selenium-with-python.png
 ---
 
-Python is widely considered one of the easiest programming languages for a beginner to learn. As a Software Testing Professional You Could choose it to automate your day to day tasks.
+Python is a general-purpose interpreted programming language used for web development, machine learning, and complex data analysis. Python is widely considered one of the easiest programming languages for a beginner to learn. As a Software Testing Professional You Could choose it to automate your day to day tasks.
 
-
+_Qucik Link to Specific Topic:_
+- [How to download python](#how-to-download-python)
+- [Install Python on Windows](#install-python-on-windows)
+- [Post Installation](#post-installation)
+- [Code Editor](#code-editor)
+- [Picking Up The Best Python IDE](#picking-up-the-best-python-ide)
+- [What should you look for in a code editor?](#what-should-you-look-for-in-a-code-editor)
+- [Which one should I pick?](#which-one-should-i-pick)
+  
 # How to download python
 To install Python, download Python 3.10 from [Python Official Site](https://www.python.org/downloads/).
 
 I recommend you to download Python latest (Python 3.10.1) installer for Windows. If you have a different OS, download binaries accordingly. You may choose an x86-64 installer if you have a 64-bit system. Choose an x86 installer if you have a 32-bit system. But you can also click on the download button in the page header.
 
-[] It Extremely important: when you install it, make sure to check "Add Python to PATH".
+[x] It Extremely important: when you install it, make sure to check "Add Python to PATH".
 
 # Install Python on Windows
 After download, double click on downloaded item (.exe) It installation will begin.
