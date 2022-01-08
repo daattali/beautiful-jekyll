@@ -3,13 +3,13 @@ layout: post
 title: Basic Git Commands
 subtitle: Basic Git commands for  non programmer
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/path.jpg
 tags: [git, github, gitlab, version controlling, git command]
 ---
 
-U# Git Commands You Should Know
-## Git is a tools for version controlling between local and remote (cloud) directory. 
+# Git Commands You Should Know
+### Git is a tools for version controlling between local and remote (cloud) directory. 
 
 # The Common steps are as follows:
 1. Workign Directory (mkdir/ Touch). 
@@ -52,5 +52,6 @@ U# Git Commands You Should Know
 
 
 
+{: .box-success}
 Enjoy !!! 
-**See Yaaa, Next.**
+See Yaaa, Next.
