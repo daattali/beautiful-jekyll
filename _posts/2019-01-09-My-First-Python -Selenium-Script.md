@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Our First Scipt With Selenum Python Webdriver - Day 09   
-subtitle: Software Test Automation with Selenium & Python - 30 Minutes A Day Challenge
-tags: [python tutorial, python tips, selenium, python, webdriver, python selenium webdriver]
-image: /img/selenium-with-python.png
-bigimg: /img/back.gif
-share-img: /img/selenium-with-python.png
+title: Our First Scipt With Selenum Python Webdriver
+subtitle: Software Test Automation with Selenium & Python
+tags: [python tutorial, selenium, python, webdriver, python selenium webdriver]
+image: /assets/img/selenium-with-python.png
+bigimg: /assets/img/back.gif
+thumbnail-img: /assets/img/selenium-with-python.png
+share-img: /assets/img/selenium-with-python.png
 ---
 
 ## Hello Again !

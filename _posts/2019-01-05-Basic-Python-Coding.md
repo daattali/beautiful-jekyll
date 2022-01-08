@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Python Basic Code for Newbie  - Day 05
+title: Python Basic Code for Newbie
 subtitle: Software Test Automation with Selenium & Python - 30 Minutes A Day Challenge
 tags: [python tutorial, python tips, python beginner, selenium, python, python]
-image: /img/diary.png
-bigimg: /img/back.gif
-share-img: /img/selenium-with-python.png
+image: /assets/img/diary.png
+bigimg: /assets/img/back.gif
+thumbnail-img: /assets/img/selenium-with-python.png
+share-img: /assets/img/selenium-with-python.png
 ---
 
 Welcome Again! I am going to share with you some python code for very basic level for the starter.
@@ -13,7 +14,7 @@ Welcome Again! I am going to share with you some python code for very basic leve
 _Qucik Link to Specific Topic:_
 
 - [Part 1- Variable declaration in Python.](#part-1--variable-declaration-in-python)
-  - [Some Variable Declaration rules:](#some-variable-declaration-rules)
+  - [Some Variable Declaration Rules:](#some-variable-declaration-rules)
 - [Part 2- Playing with Numbers.](#part-2--playing-with-numbers)
 - [Part 3- Get to know python Boolean .](#part-3--get-to-know-python-boolean-)
 - [Part 4- String in Python .](#part-4--string-in-python-)
@@ -42,7 +43,7 @@ print(c==d)
 print(d is c)
 ```
 
-## Some Variable Declaration rules:
+## Some Variable Declaration Rules:
 
 - Reserved word (keyword) can not be a variable
 - Start with letter or underscore
@@ -120,7 +121,7 @@ print(a)
 
 # Part 5- Sample Excercies with Code .
 
-![Python Hard Way](https://github.com/rafayethossain/Python-Hard-Way.git "Python Hard Way")
+[**Python Hard Way**](https://github.com/rafayethossain/Python-Hard-Way.git)
 
 **As this is a introductory series we will not discuss everything about python.**
 _please practice python by yourself for better understanding _

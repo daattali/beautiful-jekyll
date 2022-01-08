@@ -5,12 +5,13 @@ subtitle: How to Learn Python in a Right Way
 tags: [python tutorial, python tips, python]
 image: /img/selenium-with-python.png
 bigimg: /img/back.gif
-thumbnail-img: /assets/img/diary.png
+thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /img/selenium-with-python.png
 ---
 
 I am so excited that you have decided to embark on the journey of learning Automation with Python! In this very post we are going to learn the answer to the question of **What’s the best way to learn Python?**
 
+_Qucik Link to Specific Topic:_
 - [Why is knowing how to learn so important?](#why-is-knowing-how-to-learn-so-important)
 - [Tip 1: Code Everyday](#tip-1-code-everyday)
 - [Tip 2: Write It Out](#tip-2-write-it-out)

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: How To Install Selenum Python Webdriver - Day 08   
-subtitle: Software Test Automation with Selenium & Python - 30 Minutes A Day Challenge
+title: How To Install Selenum Python Webdriver   
+subtitle: Software Test Automation with Selenium & Python
 tags: [python tutorial, python tips, selenium, python, webdriver, python selenium webdriver]
 image: /img/selenium-with-python.png
 bigimg: /img/back.gif
+thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /img/selenium-with-python.png
 ---
 
