@@ -54,11 +54,11 @@ An image is worth a thousand words. Take the right screenshot or screencast and 
 Priority - It depends on the severity of the bug. The most serious bugs should be fixed first.
 Intensity - Show bug effects in software. There are 5 types of bug severity:
 
-- [] Blocker: No more tests can be performed.
-- [] Critical: Application crashes, data loss.
-- [] Major: Big loss of function.
-- [] Minor: Minor loss of work.
-- [] Trivial: small, UI error.
+- [ ] Blocker: No more tests can be performed.
+- [ ] Critical: Application crashes, data loss.
+- [ ] Major: Big loss of function.
+- [ ] Minor: Minor loss of work.
+- [ ] Trivial: small, UI error.
 
 {: .box-success}
 Enjoy !!!
