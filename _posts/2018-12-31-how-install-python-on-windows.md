@@ -6,6 +6,7 @@ tags: [sqa, software testing, test automation, python]
 image: /assets/img/selenium-with-python.png
 bigimg: /assets/img/back.gif
 published: true
+thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
 ---
 

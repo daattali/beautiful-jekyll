@@ -5,6 +5,7 @@ subtitle: Best Python Books for Beginner
 tags: [python tutorial, python, free book, book download, python books]
 image: /img/diary.png
 bigimg: /img/back.gif
+thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /img/selenium-with-python.png
 ---
 
@@ -22,7 +23,9 @@ This is a curated collection of free Python related eBooks available on the Inte
 
 If you want to contribute to this list, send a pull request. All contributors will be recognized and appreciated.
 
+{: .box-warning}
 **Disclaimer**: The contributor(s) cannot be held responsible for any misuse of the data.
+
 
 # List of Books
 
