@@ -9,7 +9,9 @@ thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /img/selenium-with-python.png
 ---
 
-Python is a general-purpose interpreted programming language used for web development, machine learning, and complex data analysis. Python is a perfect language for beginners as it is easy to learn and understand. As the popularity of the language is soaring, the opportunities in Python programming are amplifying. If you wish to learn Python programming, books can be a great source of learning. Books provide you with the ability to learn at your on time even if you are on the go and they go really in detail. Here I am going to share with some of best books written on python.
+Python is a general-purpose interpreted programming language used for web development, machine learning, and complex data analysis. Python is a perfect language for beginners as it is easy to learn and understand. As the popularity of the language is soaring, the opportunities in Python programming are amplifying.
+
+If you wish to learn Python programming, books can be a great source of learning. Books provide you with the ability to learn at your on time even if you are on the go and they go really in detail. Here I am going to share with some of best books written on python.
 **you can just download them directly clicking **download** for free.**
 
 _Qucik Link to Specific Topic:_
