@@ -69,10 +69,6 @@ If you need help installing the latest stable release of python 3 on your system
 
 ### bubble_sort
 
-<span style="color:grey">Author:-</span> [Shobhit Sachan](https://www.github.com/sachans)
-
-<span style="color:grey">Contributors:-</span> [Shobhit Sachan](https://www.github.com/sachans)
-
 Bubble_sort uses the technique of comparing and swapping
 
 ```py
@@ -98,10 +94,6 @@ print("sorted %s" %lst) # [17,20,26,31,44,54,55,77,91]
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### chunk
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 Chunks an list into smaller lists of a specified size.
 
@@ -129,10 +121,6 @@ chunk([1,2,3,4,5],2) # [[1,2],[3,4],5]
 
 ### compact
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
-
 Removes falsey values from a list.
 
 Use `filter()` to filter out falsey values (False, None, 0, and "").
@@ -153,10 +141,6 @@ compact([0, 1, False, 2, '', 3, 'a', 's', 34]) # [ 1, 2, 3, 'a', 's', 34 ]
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### count_by
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 :information_source: Already implemented via `collections.Counter`
 
@@ -187,10 +171,6 @@ count_by(['one', 'two', 'three'], len) # {3: 2, 5: 1}
 
 ### count_occurences
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin), [Hui Binyuan](https://www.github.com/huybery)
-
 :information_source: Already implemented via `list.count()`.
 
 Counts the occurrences of a value in an list.
@@ -213,10 +193,6 @@ count_occurrences([1, 1, 2, 1, 2, 3], 1) # 3
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### deep_flatten
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin), [Meet Zaveri](https://www.github.com/meetzaveri)
 
 Deep flattens a list.
 
@@ -252,10 +228,6 @@ deep_flatten([1, [2], [[3], 4], 5]) # [1,2,3,4,5]
 
 ### difference
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
-
 Returns the difference between two iterables.
 
 Use list comprehension to only keep values not contained in `b`
@@ -276,10 +248,6 @@ difference([1, 2, 3], [1, 2, 4]) # [3]
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### difference_by
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 Returns the difference between two list, after applying the provided function to each list element of both.
 
@@ -305,10 +273,6 @@ difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x']) # [ { x
 
 ### has_duplicates
 
-<span style="color:grey">Author:-</span> [Rob-Rychs](@Rob-Rychs)
-
-<span style="color:grey">Contributors:-</span> [Rob-Rychs](@Rob-Rychs)
-
 Checks a flat list for duplicate values. Returns True if duplicate values exist and False if values are all unique.
 
 This function compares the length of the list with length of the set() of the list. set() removes duplicate values from the list.
@@ -332,10 +296,6 @@ has_duplicates(y) # False
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### insertion_sort
-
-<span style="color:grey">Author:-</span> [Meet Zaveri](https://www.github.com/meetzaveri)
-
-<span style="color:grey">Contributors:-</span>[Meet Zaveri](https://www.github.com/meetzaveri), [Rohit Tanwar](https://www.github.com/kriadmin)
 
 On a very basic level, an insertion sort algorithm contains the logic of shifting around and inserting elements in order to sort an unordered list of any size. The way that it goes about inserting elements, however, is what makes insertion sort so very interesting!
 
@@ -364,10 +324,6 @@ print('Sorted %s'  %lst) # sorted [2, 3, 4, 6, 7, 9]
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### shuffle
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 :information_source: The same algorithm is already implemented via `random.shuffle`.
 
@@ -403,10 +359,6 @@ shuffle(foo) # [2,3,1] , foo = [1,2,3]
 
 ### spread
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
-
 Implements javascript's `[].concat(...arr)`. Flattens the list(non-deep) and returns an list.
 
 ```py
@@ -431,10 +383,6 @@ spread([1,2,3,[4,5,6],[7],8,9]) # [1,2,3,4,5,6,7,8,9]
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### zip
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 :information_source: Already implemented via `itertools.zip_longest()`
 
@@ -469,10 +417,6 @@ zip(['a'], [1, 2], [True, False], fill_value = '_') # [['a', 1, True], ['_', 2, 
 
 ### average
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin), [Hui Binyuan](https://www.github.com/huybery)
-
 :information_source: Already implemented via `statistics.mean`. `statistics.mean` takes an array as an argument whereas this function takes variadic arguments.
 
 Returns the average of two or more numbers.
@@ -497,10 +441,7 @@ average(1, 2, 3) # 2.0
 
 ### factorial
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
-
+<
 Calculates the factorial of a number.
 
 Use recursion. If `num` is less than or equal to `1`, return `1`. Otherwise, return the product of `num` and the factorial of `num - 1`. Throws an exception if `num` is a negative or a floating point number.
@@ -525,10 +466,7 @@ factorial(6) # 720
 
 ### gcd
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin), [cclauss](https://www.github.com/cclauss)
-
+<
 :information_source: `math.gcd` works with only two numbers
 
 Calculates the greatest common divisor between two or more numbers/lists.
@@ -572,10 +510,6 @@ gcd(8,36) # 4
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### lcm
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 Returns the least common multiple of two or more numbers.
 
@@ -623,10 +557,6 @@ lcm([1, 3, 4], 5) # 60
 
 ### max_n
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
-
 Returns the `n` maximum elements from the provided list. If `n` is greater than or equal to the provided list's length, then return the original list(sorted in descending order).
 
 Use `list.sort()` combined with the `deepcopy` function from the inbuilt `copy` module to create a shallow clone of the list and sort it in ascending order and then use `list.reverse()` reverse it to make it descending order. Use `[:n]` to get the specified number of elements. Omit the second argument, `n`, to get a one-element list
@@ -648,10 +578,6 @@ max_n([1, 2, 3], 2) # [3,2]
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### min_n
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 Returns the `n` minimum elements from the provided list. If `n` is greater than or equal to the provided list's length, then return the original list(sorted in ascending order).
 
@@ -682,10 +608,6 @@ min_n([1, 2, 3], 2) # [1,2]
 
 ### all_unique
 
-<span style="color:grey">Author:-</span> [Rob-Rychs](@Rob-Rychs)
-
-<span style="color:grey">Contributors:-</span> [Rob-Rychs](@Rob-Rychs)
-
 Checks a flat list for all unique values. Returns True if list values are all unique and False if list values aren't all unique.
 
 This function compares the length of the list with length of the set() of the list. set() removes duplicate values from the list.
@@ -709,10 +631,6 @@ all_unique(y) # False
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### keys_only
-
-<span style="color:grey">Author:-</span> [Rob-Rychs](@Rob-Rychs)
-
-<span style="color:grey">Contributors:-</span> [Rob-Rychs](@Rob-Rychs)
 
 Function which accepts a dictionary of key value pairs and returns a new flat list of only the keys.
 
@@ -742,10 +660,6 @@ keys_only(ages) # ['Peter', 'Isabel', 'Anna']
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### values_only
-
-<span style="color:grey">Author:-</span> [Rob-Rychs](@Rob-Rychs)
-
-<span style="color:grey">Contributors:-</span> [Rob-Rychs](@Rob-Rychs)
 
 Function which accepts a dictionary of key value pairs and returns a new flat list of only the values.
 
@@ -778,10 +692,6 @@ values_only(ages) # [10, 11, 9]
 
 ### byte_size
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
-
 Returns the length of a string in bytes.
 
 `utf-8` encodes a given string and find its length.
@@ -803,10 +713,6 @@ byte_size('Hello World') # 11
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### capitalize
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 Capitalizes the first letter of a string.
 
@@ -830,10 +736,6 @@ capitalize('fooBar', True) # 'Foobar'
 
 ### capitalize_every_word
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
-
 Capitalizes the first letter of every word in a string.
 
 Uses `str.title` to capitalize first letter of evry word in the string.
@@ -854,10 +756,6 @@ capitalize_every_word('hello world!') # 'Hello World!'
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### count_vowels
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 Retuns `number` of vowels in provided `string`.
 
@@ -884,10 +782,6 @@ count_vowels('gym') # 0
 
 ### decapitalize
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
-
 Decapitalizes the first letter of a string.
 
 Decapitalizes the fist letter of the sring and then adds it with rest of the string. Omit the `upper_rest` parameter to keep the rest of the string intact, or set it to `true` to convert to uppercase.
@@ -909,10 +803,6 @@ decapitalize('FooBar', True) # 'fOOBAR'
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### is_lower_case
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 Checks if a string is lower case.
 
@@ -937,10 +827,6 @@ is_lower_case('Ab4') # False
 
 ### is_upper_case
 
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
-
 Checks if a string is upper case.
 
 Convert the given string to upper case, using `str.upper()` method and compare it to the original.
@@ -963,10 +849,6 @@ is_upper_case('aB4') # False
 <br><a href = "#table-of-contents">:arrow_up: Back to top</a>
 
 ### palindrome
-
-<span style="color:grey">Author:-</span> [Rohit Tanwar](https://www.github.com/kriadmin)
-
-<span style="color:grey">Contributors:-</span>[Rohit Tanwar](https://www.github.com/kriadmin)
 
 Returns `True` if the given string is a palindrome, `False` otherwise.
 
