@@ -3,10 +3,10 @@ layout: post
 title: Mobile App Testing Basic
 subtitle: A complete checklist to test a mobile application
 tags: [sqa, software testing, testing, mobile app testing]
-image: /img/diary.png
-bigimg: /img/cover.jpg
+image: /assets/img/diary.png
+bigimg: /assets/img/cover.jpg
 thumbnail-img: /assets/img/diary.png
-share-img: /img/diary.png
+share-img: /assets/img/diary.png
 ---
 
 Everywhere you look today, the tide of protectionist sentiment is flowing. Someone might be talking to his friends, someone might be looking at the weather forecast before leaving the house or sitting at home ordering food. Someone is scrolling through Facebook unnecessarily again. People are using mobile devices from waking up to sleeping. 

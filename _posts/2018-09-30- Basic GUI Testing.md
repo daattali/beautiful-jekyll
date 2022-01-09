@@ -3,10 +3,10 @@ layout: post
 title: Basic of Front End Testing
 subtitle: GUI Testing Guidelines
 tags: [sqa, software testing, testing, GUI testing]
-image: /img/diary.png
-bigimg: /img/cover.jpg
+image: /assets/img/diary.png
+bigimg: /assets/img/cover.jpg
 thumbnail-img: /assets/img/diary.png
-share-img: /img/diary.png
+share-img: /assets/img/diary.png
 ---
 
 Previously, performance optimization meant only server-side optimization. Because most of the websites were static and their processes were done on the server side.
