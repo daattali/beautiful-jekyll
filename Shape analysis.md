@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Shape analysis
+show-avatar: True
 ---
 
 ## Geodesic regression of a healthy template brain from 26 to 38 gestational weeks
