@@ -1,6 +1,6 @@
-layout: page
-title: "Fetal MRI shape analysis"
-permalink: /Fetal MRI shape analysis/
+---
+title: "Shape analysis"
+---
 
 ## Geodesic regression of a healthy template brain from 26 to 38 gestational weeks
 
