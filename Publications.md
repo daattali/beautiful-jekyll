@@ -17,4 +17,9 @@ British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), p
 
 ### Talks
 
+### Awards
+
+MICCAI-PIPPI workshop 2021 Best Paper Award
+
+
 ### Code
