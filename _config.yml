@@ -45,12 +45,13 @@ social-network-links:
   email: "fleur.gaudfernau@etu.u-paris.fr"
   #rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: fleurgaudfernau
+  google-scholar: citations?user=EVipWLAAAAAJ
+  linkedin: fleur-gaudfernau-2477a51b7
   #twitter: daattali
   #patreon: DeanAttali
  # youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-linkedin: "fleur-gaudfernau-2477a51b7"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -65,7 +66,6 @@ linkedin: "fleur-gaudfernau-2477a51b7"
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
 #scholar_userid: EVipWLAAAAAJ&hl=en
-google-scholar: citations?user=EVipWLAAAAAJ
 #  discord: invite/invite_code or users/userid 
 
 # If you want your website to generate an RSS feed, provide a description
