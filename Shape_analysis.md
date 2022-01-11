@@ -3,6 +3,7 @@ layout: page
 permalink: /Shape_analysis/
 title: Shape analysis
 show-avatar: True
+avatar: /assets/img/1633105420273.jpeg
 ---
 
 Below are displayed movies of the shape analysis tools used in our [paper](https://hal.archives-ouvertes.fr/hal-03362573) presented at the PIPPI workshop 2021.
