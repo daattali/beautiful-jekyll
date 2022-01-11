@@ -18,9 +18,9 @@ navbar-links:
   #Author's home: "https://deanattali.com"
   Research: "Research"
   CV: "CV"
-  Shape Analysis: "Shape_analysis"
-  Multiscale image registration: "Multiscale_image_registration"
-  
+  Projects:
+    - Shape Analysis: "Shape_analysis"
+    - Multiscale image registration: "Multiscale_image_registration"
 
 # --- Logo --- #
 
