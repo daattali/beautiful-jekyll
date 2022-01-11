@@ -17,7 +17,8 @@ This shape analysis pipeline is specifically tailored to the challenges fetal MR
 
 This is the continuous trajectory of healthy brain growth used as reference.
 
-<font size="1"> [Source of the healthy template brains used to compute the trajectory](http://crl.med.harvard.edu/research/fetal_brain_atlas/)</font> 
+[Source of the healthy template brains used to compute the trajectory.] (http://crl.med.harvard.edu/research/fetal_brain_atlas/) 
+
 
 <img src="/assets/img/gif_regression_geodesique.gif" alt="drawing" width="500"/>
 
