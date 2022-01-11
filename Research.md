@@ -19,7 +19,7 @@ _________________
 
 ### Talks
 
-October 2021: talk at the **MICCAI-PIPPI workshop** (Perinatal, Preterm and Paedriatric Image Analysis). 
+October 2021: talk at the **MICCAI-PIPPI workshop** (Perinatal, Preterm and Paedriatric Image Analysis) 
 <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/>
 
 _________________
