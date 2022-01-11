@@ -5,6 +5,8 @@ title: Shape analysis
 show-avatar: True
 ---
 
+Below are displayed movies of the shape analysis tools used in our [paper](https://hal.archives-ouvertes.fr/hal-03362573) presented at the PIPPI workshop 2021.
+
 ### Shape analysis pipeline for fetal brain MRI
 
 <img src="/assets/img/shape_analysis_pipeline.gif" alt="drawing" width="700"/>
@@ -15,7 +17,7 @@ show-avatar: True
 
 <img src="/assets/img/gif_regression_geodesique.gif" alt="drawing" width="500"/>
 
-### Second mode of deformation obtained by a PCA on the initial vector fiels, between σ = 0 and σ = 4.
+### Second mode of deformation obtained by PCA on the initial vector fiels, between σ = 0 and σ = 4.
 
 <img src="/assets/img/ezgif.com-gif-maker(2).gif" alt="drawing" width="190"/><img src="/assets/img/ezgif.com-gif-maker(3).gif" alt="drawing" width="190"/><img src="/assets/img/ezgif.com-gif-maker(1).gif" alt="drawing" width="175"/>
 
