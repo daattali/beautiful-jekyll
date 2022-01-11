@@ -19,14 +19,15 @@ _________________
 
 ### Talks
 
-October 2021: talk MICCAI-PIPPI workshop.
+October 2021: talk at the MICCAI-PIPPI workshop (Perinatal, Preterm and Paedriatric Image Analysis). 
+<img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/>
 
 _________________
 
 ### Awards
 
  MICCAI-PIPPI workshop 2021 Best Paper Award 
-<img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> <img src="/assets/img/PIPPI2021_Best_Presentation.png" alt="drawing" width="100"/>
+ <img src="/assets/img/PIPPI2021_Best_Presentation.png" alt="drawing" width="100"/>
 
 _________________
 
