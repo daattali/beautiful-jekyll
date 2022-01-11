@@ -5,6 +5,8 @@ title: About
 subtitle: PhD student at Université de Paris, INSERM, INRIA 
 ---
 
+<img src="/assets/img/foetus.jpg" alt="drawing" width="300"/>
+
 I am a PhD candidate in Applied Mathematics, under the supervision of [Stéphanie Allassonnière](https://sites.google.com/site/stephanieallassonniere/) and [Erwan Le Pennec](http://www.cmap.polytechnique.fr/~lepennec/fr/). I am part of the [HeKA Team](https://team.inria.fr/heka/).
 
 I work at the interface between neuroscience and mathematics. More specifically, I focus on adapting shape analysis tools to the quantitative analysis of fetal brain MRI. My goal is to provide better depiction of healthy brain growth and neurodevelopmental anomalies, along with enhanced diagnosis and prenatal counselling.
