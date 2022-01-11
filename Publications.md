@@ -14,12 +14,18 @@ MICCAI 2021 – Perinatal, Preterm and Paediatric Image Analysis Workshop, Oct 2
 Blandine de Lauzon-Guillain, Fleur Gaudfernau, Aurore Camier, Camille Davisse-Paturet, Sandrine Lioret, Sophie Nicklaus, Marie-Aline Charles, Emmanuelle Kesse-Guyot\ 
 British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), pp.1215-1224. ⟨10.1017/S0007114520005097⟩
     
+_________________
 
 ### Talks
 
+_________________
+
 ### Awards
 
-MICCAI-PIPPI workshop 2021 Best Paper Award
+ MICCAI-PIPPI workshop 2021 Best Paper Award 
+<img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> <img src="/assets/img/PIPPI2021_Best_Presentation.png" alt="drawing" width="100"/>
+
+_________________
 
 
 ### Code
