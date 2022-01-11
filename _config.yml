@@ -14,7 +14,7 @@ author: Fleur Gaudfernau
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About: "about"
   #Author's home: "https://deanattali.com"
   Publications: "Publications"
   CV: "CV"
