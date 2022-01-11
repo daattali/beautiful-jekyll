@@ -11,11 +11,15 @@ I am a PhD candidate in Applied Mathematics, under the supervision of [Stéphani
 
 I work at the interface between neuroscience and mathematics. More specifically, I focus on adapting shape analysis tools to the quantitative analysis of fetal brain MRI. My goal is to provide better depiction of healthy brain growth and neurodevelopmental anomalies, along with enhanced diagnosis and prenatal counselling.
 
+_________________
+
 My research topics include:
 
 - **Riemanian Geometry**
 - **Image registration and atlas estimation**
 - **Fetal MRI processing.**
+
+_________________
 
 Past and present research projects:
 - **Multiscale image registration and atlas estimation**
