@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /Research/
 title: Research
 show-avatar: true
 ---
