@@ -6,7 +6,7 @@ show-avatar: True
 
 ### Geodesic regression of a healthy template brain from 26 to 38 gestational weeks
 
-Healthy template brain source: http://crl.med.harvard.edu/research/fetal_brain_atlas/
+[Healthy template brain source](http://crl.med.harvard.edu/research/fetal_brain_atlas/)
 
 ![This is an image](/assets/img/gif_regression_geodesique.gif)
 
