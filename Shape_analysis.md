@@ -21,7 +21,11 @@ This is the continuous trajectory of healthy brain growth used as reference.
 
 <img src="/assets/img/gif_regression_geodesique.gif" alt="drawing" width="500"/>
 
-### Second mode of deformation obtained by PCA on the initial vector fiels, between σ = 0 and σ = 4.
+____
+
+### An example of deformation mode obtained on a dataset of fetuses with Corpus Callosum Agenesis
+
+Second mode of deformation obtained by PCA on the initial vector fiels, between σ = 0 and σ = 4. This movie shows the deformation of an average healthy anatomy at 31 weeks of gestation towards the anatomy characterizing Corpus Callosum Agenesis. 
 
 <img src="/assets/img/ezgif.com-gif-maker(2).gif" alt="drawing" width="190"/><img src="/assets/img/ezgif.com-gif-maker(3).gif" alt="drawing" width="190"/><img src="/assets/img/ezgif.com-gif-maker(1).gif" alt="drawing" width="175"/>
 
