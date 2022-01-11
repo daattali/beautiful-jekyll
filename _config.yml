@@ -16,7 +16,7 @@ author: Fleur Gaudfernau
 navbar-links:
   About: "about"
   #Author's home: "https://deanattali.com"
-  Publications: "Publications"
+  Research: "Publications"
   CV: "CV"
   Shape Analysis: "Shape_analysis"
   Multiscale image registration: "Multiscale_image_registration"
