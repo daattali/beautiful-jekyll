@@ -62,7 +62,8 @@ linkedin: "/fleur-gaudfernau-2477a51b7"
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
-scholar_userid: EVipWLAAAAAJ&hl=en
+#scholar_userid: EVipWLAAAAAJ&hl=en
+google-scholar: citations?user=EVipWLAAAAAJ
 #  discord: invite/invite_code or users/userid 
 
 # If you want your website to generate an RSS feed, provide a description
