@@ -1,0 +1,15 @@
+---
+layout: page
+permalink: /about/
+title: Welcome!
+subtitle: PhD student at Université de Paris, INSERM, INRIA ([HeKA](https://team.inria.fr/heka/) Team)
+---
+
+Hello! I am a PhD candidate in Applied Mathematics, under the supervision of *[Stéphanie Allassonnière](https://sites.google.com/site/stephanieallassonniere/)* and *[Erwan Le Pennec](http://www.cmap.polytechnique.fr/~lepennec/fr/)*. 
+
+I work on applying shape analysis tools to fetal brain MRIs to characterize developmental anomalies during pregnancy.
+
+My research topics include:
+-**Riemanian Geometry;**
+- **Image registration**
+- **MRI processing**
