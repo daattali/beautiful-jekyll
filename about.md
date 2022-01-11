@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /about/
+#permalink: /about/
 title: About
 subtitle: PhD student at Université de Paris, INSERM, INRIA 
 ---
