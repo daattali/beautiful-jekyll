@@ -16,7 +16,7 @@ This shape analysis pipeline is specifically tailored to the specificities of fe
 
 This is the continuous trajectory of healthy brain growth used as reference.
 
-[Source of the healthy template brains used to compute the trajectory.] (http://crl.med.harvard.edu/research/fetal_brain_atlas/) 
+[Source of the healthy template brains used to compute the trajectory](http://crl.med.harvard.edu/research/fetal_brain_atlas/) 
 
 
 <img src="/assets/img/gif_regression_geodesique.gif" alt="drawing" width="500"/>
