@@ -4,8 +4,8 @@ permalink: /about/
 title: About
 subtitle: PhD student at Université de Paris, INSERM, INRIA 
 ---
-
-<img src="/assets/img/foetus.jpg" alt="drawing" width="300"/>
+<div align="center">
+<img src="/assets/img/fetus2.png" alt="drawing" width="200"/></div>
 
 I am a PhD candidate in Applied Mathematics, under the supervision of [Stéphanie Allassonnière](https://sites.google.com/site/stephanieallassonniere/) and [Erwan Le Pennec](http://www.cmap.polytechnique.fr/~lepennec/fr/). I am part of the [HeKA Team](https://team.inria.fr/heka/).
 
