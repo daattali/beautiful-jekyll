@@ -4,11 +4,15 @@ title: Shape analysis
 show-avatar: True
 ---
 
+### Shape analysis pipeline for fetal brain MRI
+
+<img src="/assets/img/shape_analysis_pipeline.gif" alt="drawing" width="700"/>
+
 ### Geodesic regression of a healthy template brain from 26 to 38 gestational weeks
 
 [Healthy template brain source](http://crl.med.harvard.edu/research/fetal_brain_atlas/)
 
-![This is an image](/assets/img/gif_regression_geodesique.gif)
+<img src="/assets/img/gif_regression_geodesique.gif" alt="drawing" width="500"/>
 
 ### Second mode of deformation obtained by a PCA on the initial vector fiels, between sigma = 0 and sigma = 4.
 
