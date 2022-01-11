@@ -18,6 +18,8 @@ _________________
 
 ### Talks
 
+October 2021: talk MICCAI-PIPPI workshop.
+
 _________________
 
 ### Awards
