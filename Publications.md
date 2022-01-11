@@ -1,6 +1,11 @@
 ---
 layout: page
-title: Publications
-subtitle: Here you'll find all the ways to get in touch with me
+title: Research
 show-avatar: true
 ---
+
+### Papers
+
+### Talks
+
+### Code
