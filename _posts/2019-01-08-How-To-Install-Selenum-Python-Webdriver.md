@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Install Selenum Python Webdriver
+title: How To Install Selenium Python Webdriver
 subtitle: Software Test Automation with Selenium & Python
 tags:
   [
