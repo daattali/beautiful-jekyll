@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /Shape_analysis/
 title: Shape analysis
 show-avatar: True
 ---
