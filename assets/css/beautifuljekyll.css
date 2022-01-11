@@ -310,8 +310,8 @@ img {
 
 .navbar-custom .avatar-container {
   position: absolute;
-  left: 25%;
-  width: 3.3rem;
+  left: 20%;
+  width: 3.5rem;
   bottom: -1.5rem;
   transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
