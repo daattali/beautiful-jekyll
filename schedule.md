@@ -34,7 +34,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 3-Jan		| Similarity        	| [popcorn1's AMC 8A](https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvYS9iLzAzYzNiZWU2NmY4ZmFjM2ZmNGE3MTk4Njk2MzIxMzY0YzMyNjRjLnBkZg==&rn=cG9wY29ybjFfMjAxOV9BTUNfOEFfdjEucGRm) |  |
 | 10-Jan	| Pascal's Triangle		| _No Coaching Session (Mathcounts School Round)_ |  |
 | 17-Jan	| _No school_			| _No Coaching Session (AMC 8)_ |  |
-| 24-Jan	| Sequences				| 2022 RMS Mathcounts School Round |  |
+| 24-Jan	| Sequences				| [2021-2022 Mathcounts School](/files/RMS%202122M%20Exam.pdf) |  |
 | 31-Jan	| Coordinate Geometry	| [popcorn1's AMC 8B](https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvYi9mLzBiOGRjNjkwNWQwZTViOWI2NTlkMTBiZTJjMDA3N2YyMGRmMzJiLnBkZg==&rn=cG9wY29ybjFfMjAxOV9BTUNfOEJfdjIucGRm) |  |
 | 14-Feb	| Travel    	        | [2020 MMT Gallop 1-8](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) | _No school_ |
 | 21-Feb	| _No school_			| [2020 MMT Mounting Mayhem](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) |  |
