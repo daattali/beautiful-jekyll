@@ -4,7 +4,7 @@ permalink: /Shape_analysis/
 title: Shape analysis
 show-avatar: True
 ---
-Below are displayed movies of the shape analysis tools used in our [paper](https://hal.archives-ouvertes.fr/hal-03362573) presented at the PIPPI workshop 2021.
+Below are displayed movies of the shape analysis tools described in our [paper](https://hal.archives-ouvertes.fr/hal-03362573) presented at the PIPPI workshop 2021.
 
 ### Shape analysis pipeline for fetal brain MRI
 
