@@ -22,7 +22,8 @@ My research topics include:
 _________________
 
 Past and present research projects:
-- **Multiscale image registration and atlas estimation**
-- **Characterizing fetal brains with Corpus Callosum Agenesis - collaboration with Hôpital Trousseau**
-- **Investigating healthy developmental trajectories of the fetal brain - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)**
-- **Characterizing fetal brains with Cytomegalovirus infection - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)**
+- **Multiscale registration and atlas estimation**
+- **Shape analysis pipeline for fetal brain MRIs**
+- **Characterization of fetal brains with Corpus Callosum Agenesis - collaboration with Hôpital Trousseau**
+- **Characterization of healthy developmental brain trajectories - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)**
+- **Characterization of fetal brains with Cytomegalovirus infection - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)**
