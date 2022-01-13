@@ -101,12 +101,13 @@ This step is required for
 
 Although these three are separate programs,
 we are including them in the same section here
-since they are packaged together in the same installer on Windows.
+since they are related and used together on Windows.
 Briefly, we will be using the Bash shell to interact with our computers via a command line interface,
 Git to keep a version history of our files and upload to/download from to GitHub,
 and Windows Terminal to run the both Bash and Git.
 
-Go to <https://git-scm.com/download/win> and download the windows version of git.
+Go to <https://git-scm.com/download/win> and download the windows version of git
+(this installer also includes Bash and we will refer to it as Git Bash).
 After the download has finished,
 run the installer and accept the default configuration for all pages except for the following:
 
