@@ -5,9 +5,8 @@ title: ""
 
 ### Peer-reviewed Publications
 
-[3] [Who's Afraid of Sunlight? Explaining Opposition to Transparency in Economic Development](assets/TJ_BAP_final.pdf) (with Nathan M. Jensen)<br>
-**_Business and Politics_**, 2021, 23(4): 471-494.
-<details><summary>Abstract</summary>
+<div>[3] <a href="assets/TJ_BAP_final.pdf">Who's Afraid of Sunlight? Explaining Opposition to Transparency in Economic Development</a> (with Nathan M. Jensen)<br>
+  <em><strong>Business and Politics</em></strong>, 2021, 23(4): 471-494.<details><summary>Abstract</summary>
 Firms and governments often negotiate economic development deals, such as tax abatements, with limited
 transparency, using exceptions to public records laws or other strategies for nondisclosure. In this article
 we explore the motivations of firms for keeping economic development deals out of the public eye. We
@@ -19,7 +18,7 @@ noncompliance by engaging in nonpublic renegotiations. These results provide evi
 as clawbacks (or incentive-recapture provisions) when such reforms aren’t coupled with robust transparency
 mechanisms. We speculate that the main motivation for these challenges is to limit scrutiny of these deals
 that could lead to backlashes against future economic development agreements.
-</details>
+</details></div>
 
 [2] [Public-Private Initiatives and Corporate Responses to Stakeholder Complaints](assets/Thrall_IO_2021_final.pdf)<br>
 **_International Organization_**, 2021, 75(3): 803-836.
@@ -176,3 +175,4 @@ Revolving Door Diplomats (with Matt Malis)
 The Fiscal Legacy of Colonialism (with Vincent Arel-Bundock and Martin Hearson)
 
 Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative (with Nathan M. Jensen)
+
