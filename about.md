@@ -29,7 +29,6 @@ Past and present research projects:
 
 <img src="https://img.shields.io/badge/2021-00a19e.svg">  **Multiscale registration and atlas estimation**
 
-<img src="https://img.shields.io/badge/2022-118ab2.svg">  **Characterization of fetal brains with Corpus Callosum Agenesis** - collaboration with Hôpital Trousseau
-**Characterization of healthy developmental brain trajectories** - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)
+<img src="https://img.shields.io/badge/2022-118ab2.svg">  **Characterization of healthy developmental brain trajectories** - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)
 
 <img src="https://img.shields.io/badge/2022-118ab2.svg">  **Characterization of fetal brains with Cytomegalovirus infection** - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)
