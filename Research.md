@@ -6,7 +6,7 @@ title: ""
 ### Peer-reviewed Publications
 
 <div>[3] <a href="assets/TJ_BAP_final.pdf">Who's Afraid of Sunlight? Explaining Opposition to Transparency in Economic Development</a> (with Nathan M. Jensen)<br>
-  <em><strong>Business and Politics</em></strong>, 2021, 23(4): 471-494.<details><summary>Abstract</summary>
+  <em><strong>Business and Politics</strong></em>, 2021, 23(4): 471-494.<details><summary>Abstract</summary>
 Firms and governments often negotiate economic development deals, such as tax abatements, with limited
 transparency, using exceptions to public records laws or other strategies for nondisclosure. In this article
 we explore the motivations of firms for keeping economic development deals out of the public eye. We
