@@ -1,6 +1,4 @@
 ---
-layout: page
-subtitle: 
 ---
 
 ### Bio
