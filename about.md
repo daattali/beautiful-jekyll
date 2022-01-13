@@ -23,14 +23,14 @@ _________________
 
 Past and present research projects:
 
-<img src="https://img.shields.io/badge/2020-02b57f.svg"> - **Analysis of EEG data to investigate cortico-cerebellar dynamics during social interaction in Autism Spectrum Disorder** (M2 internship supervised by [Guillaume Dumas](https://www.extrospection.eu/)
+<img src="https://img.shields.io/badge/2020-02b57f.svg"> Analysis of EEG data to investigate cortico-cerebellar dynamics during social interaction in Autism Spectrum Disorder - M2 internship supervised by [Guillaume Dumas](https://www.extrospection.eu/)
 
-<img src="https://img.shields.io/badge/2021-00a19e.svg">  **Shape analysis pipelines for fetal brain MRIs** - [Deformetrica](https://www.deformetrica.org/)
+<img src="https://img.shields.io/badge/2021-00a19e.svg">  Shape analysis pipelines for fetal brain MRIs - [Deformetrica](https://www.deformetrica.org/)
 
-<img src="https://img.shields.io/badge/2021-00a19e.svg">  **Characterization of fetal brains with Corpus Callosum Agenesis** - collaboration with Hôpital Trousseau
+<img src="https://img.shields.io/badge/2021-00a19e.svg">  Characterization of fetal brains with Corpus Callosum Agenesis - collaboration with Hôpital Trousseau
 
-<img src="https://img.shields.io/badge/2021-00a19e.svg">  **Multiscale registration and atlas estimation**
+<img src="https://img.shields.io/badge/2021-00a19e.svg">  Multiscale registration and atlas estimation
 
-<img src="https://img.shields.io/badge/2022-118ab2.svg">  **Characterization of healthy developmental brain trajectories** - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)
+<img src="https://img.shields.io/badge/2022-118ab2.svg">  Characterization of healthy developmental brain trajectories - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)
 
-<img src="https://img.shields.io/badge/2022-118ab2.svg">  **Characterization of fetal brains with Cytomegalovirus infection** - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)
+<img src="https://img.shields.io/badge/2022-118ab2.svg">  Characterization of fetal brains with Cytomegalovirus infection - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)
