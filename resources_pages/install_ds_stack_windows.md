@@ -270,6 +270,18 @@ And append the following line:
 if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
 ```
 
+### Setting Git Bash as the default VS Code terminal profile
+
+Finally,
+let's make sure the VS Code uses our newly installed Git Bash shell
+as its default terminal profile:
+
+1. Open Up VS Code and go to the general preferences / settings (shortcut `Ctrl` + `,`).
+2. Type in "Default terminal profile" and find the entry that reads `Terminal > Integrated > Default profile: Windows`.
+3. Select Git Bash from the drop down menu of this entry.
+
+Now Git Bash should be opened automatically each time you open a new terminal in side VS Code.
+
 ## Python, Conda, and JupyterLab
 
 ### Python and Conda
@@ -505,7 +517,7 @@ Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m
 
 ### Rtools
 
-Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. **Do not** follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
+Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version. After the download has finished, run the installer with the default configuration. **Do not** follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
 
 To test if you're installation was successful,
 open RStudio (restart it if you already have it open)
@@ -765,7 +777,7 @@ To test if the installation was successful open the `SQL Shell` app from the Sta
 
 You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one [here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
 
-After signing-up and signing into the Docker Store, go [here](https://store.docker.com/editions/community/docker-ce-desktop-windows) and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen to install the stable version.
+After signing-up and signing into the Docker Store, go [here](https://store.docker.com/editions/community/docker-ce-desktop-windows) and click on the "Get Docker Desktop" button on the right hand side of the screen. Then follow the installation instructions on that screen to install the stable version.
 
 > **Note:** If you see a warning saying that your WSL installation is incomplete, you can click the link to install the kernel update and then restart per the instructions in the warning message.
 
