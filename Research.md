@@ -6,8 +6,7 @@ show-avatar: true
 ---
 
 ### Papers
-
-**[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis](https://hal.archives-ouvertes.fr/hal-03362573)**\
+<img src="https://img.shields.io/badge/Conference Paper-f0aa54.svg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis](https://hal.archives-ouvertes.fr/hal-03362573)**\
 Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere\
 MICCAI 2021 – Perinatal, Preterm and Paediatric Image Analysis Workshop, Oct 2021, Strasbourg, France. ⟨10.1007/978-3-030-87735-4_26⟩
 
@@ -18,15 +17,14 @@ British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), p
 _________________
 
 ### Talks
-
-October 2021: talk at the **[MICCAI-PIPPI workshop](https://pippiworkshop.github.io/)** (Perinatal, Preterm and Paedriatric Image Analysis) 
+<img src="https://img.shields.io/badge/October 2021-00a19e.svg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talk at the **[MICCAI-PIPPI workshop](https://pippiworkshop.github.io/)** (Perinatal, Preterm and Paedriatric Image Analysis) 
 <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/>
 
 _________________
 
 ### Awards
 
-October 2021: MICCAI-PIPPI workshop **Best Paper Award** 
+<img src="https://img.shields.io/badge/October 2021-00a19e.svg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MICCAI-PIPPI workshop **Best Paper Award** 
  <img src="/assets/img/PIPPI2021_Best_Presentation.png" alt="drawing" width="100"/>
 
 _________________
