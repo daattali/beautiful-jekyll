@@ -4,9 +4,9 @@ title: The Simple Meal Planning Guide
 subtitle: ''
 
 ---
-## Are you overwhelmed with meal planning and you want to have it in place once and for all?
+## Are you overwhelmed with meal planning and want to have it in place once and for all?
 
-**If so, The Simple Meal Planning Guide** will help you never again to question yourself, “_What's for dinner?_” if you follow through with creating a routine and a plan that works for you and your family.
+**If so, The Simple Meal Planning Guide** will help you never again to question yourself, “_What's for dinner?_” if you follow through with creating a plan that works for you and your family.
 
 <br>
 
@@ -14,7 +14,7 @@ subtitle: ''
 
 <br>
 
-### This meal planning guide is for you if:
+### This Simple Meal Mlanning Guide is for you if:
 
 * you often dread mealtimes and feel overwhelmed with meal planning
 * you often google meal planning type ideas, but don’t know where to start
@@ -25,10 +25,10 @@ subtitle: ''
 
 ### What you'll find in the Simple Meal Planning Guide:
 
-* Helpful tips in the areas of planning and organizing
-* 8 helpful printables to help you meal plan
+* Helpful meal planning and meal organizing tips 
+* 8 helpful meal planning printables
 * Steps to help guide you through the process of meal planning from start to finish
-* Bonus resources and ideas for meal planning
+* Bonus meal planning resources and ideas 
 * There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works
 * Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
 
@@ -36,7 +36,7 @@ subtitle: ''
 
 ### READY TO START YOUR SIMPLE MEAL PLANNING?
 
-Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase.
+Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's get started!
 
 **_Please note:_** _I'll email you a copy of **the Simple Meal Planning Guide** within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
