@@ -29,7 +29,7 @@ Past and present research projects:
    <a href="https://www.extrospection.eu">Guillaume Dumas</a></dd>
    
   <dt><img src="https://img.shields.io/badge/2021-00a19e.svg"></dt>
-<dd> Shape analysis pipelines for fetal brain MRIs - <a href="https://www.deformetrica.org/">Deformetrica</a></dd>
+<dd> Shape analysis pipeline for fetal brain MRIs - <a href="https://www.deformetrica.org/">Deformetrica</a></dd>
    
    <dt><img src="https://img.shields.io/badge/2021-00a19e.svg"></dt>
 <dd> Characterization of fetal brains with Corpus Callosum Agenesis - collaboration with Hôpital Trousseau</dd>
