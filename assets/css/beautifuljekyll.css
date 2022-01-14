@@ -12,16 +12,16 @@ dl {
 }
 dt {
   float: left;
-  width: 20%;
+  width: 10%;
   /* adjust the width; make sure the total of both is 100% */
   padding: 0;
   margin: 0
 }
 dd {
   float: left;
-  width: 80%;
+  width: 90%;
   /* adjust the width; make sure the total of both is 100% */
-  padding: 5;
+  padding: 0;
   margin: 0
 }
 
