@@ -37,6 +37,6 @@ Past and present research projects:
 
 <dl>
 <dt><img src="https://img.shields.io/badge/2020-02b57f.svg"></dt>
-<dd> Analysis of EEG data to investigate cortico-cerebellar dynamics during social interaction in Autism Spectrum Disorder - M2 internship supervised by [Guillaume Dumas](https://www.extrospection.eu/)
-</dd>
+<dd> Analysis of EEG data to investigate cortico-cerebellar dynamics during social interaction in Autism Spectrum Disorder - M2 internship supervised by 
+   <a href="https://www.extrospection.eu">Guillaume Dumas</a></dd>
   </dl>
