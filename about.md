@@ -34,3 +34,9 @@ Past and present research projects:
 <img src="https://img.shields.io/badge/2022-118ab2.svg">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Characterization of healthy developmental brain trajectories - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)
 
 <img src="https://img.shields.io/badge/2022-118ab2.svg">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Characterization of fetal brains with Cytomegalovirus infection - collaboration with Hôpital Necker and [Institut Lumière](http://fondation-lumiere.org/)
+
+<dl>
+<dt><img src="https://img.shields.io/badge/2020-02b57f.svg"></dt>
+<dd> Analysis of EEG data to investigate cortico-cerebellar dynamics during social interaction in Autism Spectrum Disorder - M2 internship supervised by [Guillaume Dumas](https://www.extrospection.eu/)
+</dd>
+  </dl>
