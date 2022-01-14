@@ -21,7 +21,7 @@ dd {
   float: left;
   width: 80%;
   /* adjust the width; make sure the total of both is 100% */
-  padding: 60;
+  padding: 20;
   margin: 0
 }
 
