@@ -4,6 +4,11 @@ layout: null
 
 @import url("pygment_highlights.css");
 
+dl >dt, dl > dd {
+    margin: 6pt 0; /* was 20px */
+    padding-left: 60px;
+}
+
 /* --- General --- */
 
 html {
