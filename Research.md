@@ -26,8 +26,6 @@ _________________
 ### Awards
 
 <img style="float: left;" src="https://img.shields.io/badge/October 2021-00a19e.svg"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MICCAI-PIPPI workshop **Best Paper Award** 
- <img src="/assets/img/PIPPI2021_Best_Presentation.png" alt="drawing" width="100"/>*
- 
  <a href="/assets/img/PIPPI2021_Best_Presentation.png">
     <img src="/assets/img/PIPPI2021_Best_Presentation.png" 
         alt="PIPPI2021_Best_Presentation"
