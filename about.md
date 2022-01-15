@@ -7,6 +7,8 @@ subtitle: PhD student at Université de Paris / INSERM / INRIA / PR[AI]RIE
 
 <div align="center"><img src="/assets/img/fetus_gif.gif" alt="drawing" width="175"/></div>
 
+<div align="center"><img src="/assets/img/ezgif.com-gif-maker(27).gif" alt="drawing" width="175"/></div>
+
 I am a PhD candidate in Applied Mathematics since October 2020. I am supervised by [Stéphanie Allassonnière](https://sites.google.com/site/stephanieallassonniere/) and [Erwan Le Pennec](http://www.cmap.polytechnique.fr/~lepennec/fr/). I am part of the [HeKA Team](https://team.inria.fr/heka/), located in Paris, France. My PhD is funded by [PR[AI]RIE Institute](https://prairie-institute.fr/).
 
 I work at the interface between neuroscience and mathematics. More specifically, I focus on developing and adapting shape analysis tools to the quantitative analysis of fetal brain images. My goal is to provide precise depiction of healthy brain growth and neurodevelopmental anomalies in order to refine disease diagnosis, predict neurological impairments and improve patients follow-up.
