@@ -5,7 +5,7 @@ title: About
 subtitle: PhD student at Université de Paris / INSERM / INRIA / PR[AI]RIE
 ---
 
-<div align="center"><img src="/assets/img/output-onlinegiftools(11).gif" alt="drawing" width="200"/></div>
+<div align="center"><img src="/assets/img/output-onlinegiftools(13).gif" alt="drawing" width="200"/></div>
 
 I am a PhD candidate in Applied Mathematics since October 2020. I am supervised by [Stéphanie Allassonnière](https://sites.google.com/site/stephanieallassonniere/) and [Erwan Le Pennec](http://www.cmap.polytechnique.fr/~lepennec/fr/). I am part of the [HeKA Team](https://team.inria.fr/heka/), located in Paris, France. My PhD is funded by [PR[AI]RIE Institute](https://prairie-institute.fr/).
 
