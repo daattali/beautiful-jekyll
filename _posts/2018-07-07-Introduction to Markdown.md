@@ -13,9 +13,7 @@ toc_float: true
 
 # Markdown Cheetsheat for Easy Note Taking
 
-You may have heard about Markdown, if you have it's a good thing.
-
-Markdown is a plain text formatting syntax designed so that it can optionally be converted to HTML.
+You may have heard about Markdown, if you have it's a good thing. Markdown is a plain text formatting syntax designed so that it can optionally be converted to HTML.
 
 # Markdown Cheatsheet<a name="TOP"></a>
 

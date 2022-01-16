@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Basic Git Commands
-subtitle: Basic Git commands for  non programmer
+subtitle: Basic Git commands for  Non Programmer
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/path.jpg
 tags: [git, github, gitlab, version controlling, git command]
 ---
+Git is a tools for version controlling between local and remote (cloud) directory. It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
 
 # Git Commands You Should Know
-### Git is a tools for version controlling between local and remote (cloud) directory. 
 
 # The Common steps are as follows:
 1. Workign Directory (mkdir/ Touch). 
