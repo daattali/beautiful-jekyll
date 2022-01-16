@@ -38,7 +38,7 @@ You can find all the books listed below in [**book**](https://github.com/rafayet
 - Automate it! - Recipes to upskill your business [[Download]](https://github.com/rafayet13/Free-Python-Books/blob/master/book/Automate%20it%21%20-%20Recipes%20to%20upskill%20your%20business.pdf)
 - Automate the Boring Stuff with Python [[Download]](https://github.com/rafayet13/Free-Python-Books/blob/master/book/Automate%20the%20Boring%20Stuff%20with%20Python.epub)
 - Beginning Django CMS [[Download]](https://github.com/rafayet13/Free-Python-Books/blob/master/book/Beginning%20Django%20CMS.pdf)
-- Beginning Django E-Commerce [[Download]]((https://github.com/rafayet13/Free-Python-Books/blob/master/book/Beginning%20Django%20E-Commerce.pdf)
+- Beginning Django E-Commerce [[Download]](https://github.com/rafayet13/Free-Python-Books/blob/master/book/Beginning%20Django%20E-Commerce.pdf)
 - Beginning Game Development with Python and Pygame [[Download]](https://github.com/rafayet13/Free-Python-Books/blob/master/book/Beginning%20Game%20Development%20with%20Python%20and%20Pygame.pdf)
 - Beginning Programming with Python For Dummies - Second Edition [[Download]](https://github.com/rafayet13/Free-Python-Books/blob/master/book/Beginning%20Programming%20with%20Python%20For%20Dummies%20-%20Second%20Edition.epub)
 - Beginning Python - From Novice to Professional - Third Edition [[Download]](https://github.com/rafayet13/Free-Python-Books/blob/master/book/Beginning%20Python%20-%20From%20Novice%20to%20Professional%20-%20Third%20Edition.pdf)
