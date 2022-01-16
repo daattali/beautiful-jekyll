@@ -22,7 +22,8 @@ _Qucik Link to Specific Topic:_
   - [Python The Hard Way](#python-the-hard-way)
   - [Automate The Boring Staff with Python](#automate-the-boring-staff-with-python)
 - [Extras:](#extras)
-  - [Python The Hard Way](#python-the-hard-way-1)
+  - [Selenium Python](#selenium-python)
+  - [Selenium Python Crash Course](#selenium-python-crash-course)
 
 # Part 1- Variable declaration in Python.
 
@@ -134,8 +135,12 @@ print(a)
 
 
 # Extras: 
-## Python The Hard Way
-[**Selenium Python**](hhttps://github.com/rafayethossain/Basic-Python-Script/tree/master/03.%20Selenium-Python)
+## Selenium Python
+[**Selenium Python**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/03.%20Selenium-Python)
+
+## Selenium Python Crash Course
+[**Selenium Python Crash Course**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/04.%20Selenium%20Crash%20Course)
+
 
 
 
