@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bug Life Cycle
-subtitle: How to Bug Life Cycle End
+subtitle: A Introduction to Bug Life Cycle
 tags: [sqa, software testing, testing, bug, bug life cycle]
 image: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
