@@ -18,7 +18,11 @@ _Qucik Link to Specific Topic:_
 - [Part 2- Playing with Numbers.](#part-2--playing-with-numbers)
 - [Part 3- Get to know python Boolean .](#part-3--get-to-know-python-boolean-)
 - [Part 4- String in Python .](#part-4--string-in-python-)
-- [Part 5- Sample Excercies with Code .](#part-5--sample-excercies-with-code-)
+- [Part 5- Source Code from Books:](#part-5--source-code-from-books)
+  - [Python The Hard Way](#python-the-hard-way)
+  - [Automate The Boring Staff with Python](#automate-the-boring-staff-with-python)
+- [Extras:](#extras)
+  - [Python The Hard Way](#python-the-hard-way-1)
 
 # Part 1- Variable declaration in Python.
 
@@ -119,9 +123,21 @@ a = "This is a single\
 print(a)
 ```
 
-# Part 5- Sample Excercies with Code .
+# Part 5- Source Code from Books: 
 
-[**Python Hard Way**](https://github.com/rafayethossain/Python-Hard-Way.git)
+## Python The Hard Way
+[**Python The Hard Way**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/01.%20Python-The-Hard-Way)
+
+
+## Automate The Boring Staff with Python
+[**Automate The Boring Staff with Python**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/02.%20Automate-The-Boring-Stuff-With-Python)
+
+
+# Extras: 
+## Python The Hard Way
+[**Selenium Python**](hhttps://github.com/rafayethossain/Basic-Python-Script/tree/master/03.%20Selenium-Python)
+
+
 
 **As this is a introductory series we will not discuss everything about python.**
 _please practice python by yourself for better understanding _
