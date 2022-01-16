@@ -124,28 +124,28 @@ a = "This is a single\
 print(a)
 ```
 
-# Part 5- Source Code from Books: 
+**As this is a introductory series we will not discuss everything about python.**
+_But here sharing some source code for better practices_
+
+# Part 5- Source Code from Books:
 
 ## Python The Hard Way
+
 [**Python The Hard Way**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/01.%20Python-The-Hard-Way)
 
-
 ## Automate The Boring Staff with Python
+
 [**Automate The Boring Staff with Python**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/02.%20Automate-The-Boring-Stuff-With-Python)
 
+# Extras:
 
-# Extras: 
 ## Selenium Python
+
 [**Selenium Python**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/03.%20Selenium-Python)
 
 ## Selenium Python Crash Course
+
 [**Selenium Python Crash Course**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/04.%20Selenium%20Crash%20Course)
-
-
-
-
-**As this is a introductory series we will not discuss everything about python.**
-_please practice python by yourself for better understanding _
 
 {: .box-success}
 Enjoy !!!
