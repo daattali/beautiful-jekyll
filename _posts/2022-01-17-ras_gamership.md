@@ -13,7 +13,7 @@ Este evento surge com o intuito de ampliar as conexões do capítulo e arrecadar
 Para participar do torneio é necessário a inscrição de uma equipe(não é permitida a inscrição individual) utilizando o site oficial do evento. O valor de inscrição por equipe é de R\$50,00(cinquenta reais), sendo a equipe composta por 5 integrantes.
 
 ### Demonstre seu interesse em participar do evento
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeex5zU3ii5wqKjScrkRwY03XY6-2r3jjtxYIx8y45kmI8J7Q/viewform?embedded=true" width="640" height="1424" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeex5zU3ii5wqKjScrkRwY03XY6-2r3jjtxYIx8y45kmI8J7Q/viewform?embedded=true" width="720" height="1200" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
 
 ### Cronograma
 
