@@ -21,13 +21,10 @@ _________________
 <dl>
 <dt>
     <img src="https://img.shields.io/badge/Oct. 2021-00a19e.svg"></dt>
-<dd> Talk at the **[MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop](https://pippiworkshop.github.io/)** 
- - <a href="/assets/img/zoom_4.mp4"> Click here to watch my presentation! </a> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </dd>
-    /dl>
+<dd>  Talk at the MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop  
+ - <a href="/assets/img/zoom_4.mp4"> Click here to watch my presentation! </a> <a href="https://pippiworkshop.github.io/"> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </a>  </dd>
+    </dl>
     
-<img src="https://img.shields.io/badge/Oct. 2021-00a19e.svg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talk at the **[MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop](https://pippiworkshop.github.io/)** 
-<img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> - <a href="/assets/img/zoom_4.mp4"> Click here to watch my presentation! </a>
-
 _________________
 
 ### Awards
@@ -35,20 +32,13 @@ _________________
 <dl>
 <dt>
     <img  src="https://img.shields.io/badge/Oct. 2021-00a19e.svg"/></dt>
-<dd> MICCAI-PIPPI workshop **Best Paper Award** 
+<dd> MICCAI-PIPPI workshop Best Paper Award
  <a href="/assets/img/PIPPI2021_Best_Presentation.png">
     <img src="/assets/img/PIPPI2021_Best_Presentation.png" 
         alt="PIPPI2021_Best_Presentation"
         width="100">
 </a> </dd>
-    /dl>
-
-<img style="float: left;" src="https://img.shields.io/badge/Oct. 2021-00a19e.svg"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MICCAI-PIPPI workshop **Best Paper Award** 
- <a href="/assets/img/PIPPI2021_Best_Presentation.png">
-    <img src="/assets/img/PIPPI2021_Best_Presentation.png" 
-        alt="PIPPI2021_Best_Presentation"
-        width="100">
-</a>
+    </dl>
  
 _________________
 
