@@ -26,7 +26,10 @@ Past and present research projects:
 <dl>
 <dt><img src="https://img.shields.io/badge/2020-02b57f.svg"></dt>
 <dd> Analysis of EEG data to investigate cortico-cerebellar dynamics during social interaction in Autism Spectrum Disorder - M2 internship supervised by 
-   <a href="https://www.extrospection.eu">Guillaume Dumas</a></dd>
+   <a href="https://www.extrospection.eu">Guillaume Dumas</a>
+   
+   &nbsp;
+   </dd>
    
   <dt><img src="https://img.shields.io/badge/2021-00a19e.svg"></dt>
 <dd> Shape analysis pipeline for fetal brain MRIs - <a href="https://www.deformetrica.org/">Deformetrica</a></dd>
@@ -35,7 +38,10 @@ Past and present research projects:
 <dd> Characterization of fetal brains with Corpus Callosum Agenesis - collaboration with Hôpital Trousseau</dd>
    
    <dt><img src="https://img.shields.io/badge/2021-00a19e.svg"></dt>
-<dd> Multiscale registration and atlas estimation</dd>
+<dd> Multiscale registration and atlas estimation
+
+   &nbsp;
+   </dd>
    
    <dt><img src="https://img.shields.io/badge/2022-118ab2.svg"></dt>
 <dd> Characterization of healthy developmental brain trajectories - collaboration with Hôpital Necker and <a href="http://fondation-lumiere.org/">Institut Lumière</a></dd>
