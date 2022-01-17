@@ -18,10 +18,8 @@ British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), p
 _________________
 
 ### Talks
-<img src="https://img.shields.io/badge/October 2021-00a19e.svg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talk at the **[MICCAI-PIPPI workshop](https://pippiworkshop.github.io/)** (Perinatal, Preterm and Paedriatric Image Analysis) 
-<img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/>
-
-<a href="/assets/img/zoom_4.mp4"> <img src="/assets/img/zoom_4.mp4" width="200"> Click here </a>
+<img src="https://img.shields.io/badge/October 2021-00a19e.svg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talk at the **[MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop](https://pippiworkshop.github.io/)** 
+<img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> - <a href="/assets/img/zoom_4.mp4"> <img src="/assets/img/zoom_4.mp4" alt = "Click here to see my presentation!" width="200"> </a>
 
 
 <video src="/assets/img/zoom_4.mp4" type="video/mp4" width="300">
