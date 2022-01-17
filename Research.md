@@ -16,7 +16,7 @@ title: ""
 
 ### Other Publications
 
-[1] [Ownership and Trust in Banks: Evidence from the First Bank in an American Indian Nation](assets/ASSA_Draft_PP_7Jan2020_v2.pdf) (with Donna Feir and Rachel L. Wellhausen)<br>
+[1] [Ownership and Trust in Banks: Evidence from the First Bank in an American Indian Nation](assets/ASSA_Draft_PP_7Jan2020_v2.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
 **_American Economic Association: Papers and Proceedings_**, 2021, 111: 227-232.
 
 ### Working Papers
@@ -29,7 +29,7 @@ title: ""
 
 [Treaty Diplomacy and the Global Firm](assets/treaty_regimes_IPES.pdf)
 
-[The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with Donna Feir and Rachel L. Wellhausen)
+[The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)
 
 [Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/mtw_sep_2021.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
 Under Review.
