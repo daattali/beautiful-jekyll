@@ -21,6 +21,8 @@ _________________
 <img src="https://img.shields.io/badge/October 2021-00a19e.svg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talk at the **[MICCAI-PIPPI workshop](https://pippiworkshop.github.io/)** (Perinatal, Preterm and Paedriatric Image Analysis) 
 <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/>
 
+<video src="/assets/img/zoom_4.mp4" type="video/mp4">
+
 _________________
 
 ### Awards
