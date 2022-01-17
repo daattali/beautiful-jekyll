@@ -24,7 +24,7 @@ _________________
 <a href="/assets/img/zoom_4.mp4"> <img src="/assets/img/zoom_4.mp4"  alt="PIPPI2021_Presentation" width="200"> </a>
 
 
-<video src="/assets/img/zoom_4.mp4" type="video/mp4">
+<video src="/assets/img/zoom_4.mp4" type="video/mp4" width="300">
 
 _________________
 
