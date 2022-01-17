@@ -17,8 +17,8 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Today I Learned: "https://dpdtydz.github.io/2021-06-03-TIL/"
-    - Weekley I Learned: "http://dpdtydz.github.io/"
-    - My project: ""
+    - Weekley I Learned: "http://dpdtydz.github.io/WIL/list"
+    - My resume: "http://dpdtydz.github.io/Resume/result"
   Author's home: "https://www.tildp.shop/"
 
 # --- Logo --- #
@@ -48,7 +48,7 @@ social-network-links:
 #  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: dpdtydz
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -78,7 +78,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "http://gamema.shop/"
+url-pretty: "https://www.tildp.shop/"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
