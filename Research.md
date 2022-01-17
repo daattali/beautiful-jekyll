@@ -22,7 +22,7 @@ _________________
 <dt>
     <img src="https://img.shields.io/badge/Oct. 2021-00a19e.svg"></dt>
     
-<dd>  Talk at the MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop  <a href="https://pippiworkshop.github.io/"> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </a> <br> <a href="/assets/img/zoom_4.mp4"> <img src="https://img.shields.io/badge/Presentation video-a18aab.svg" width = 140/> </a> </dd>
+<dd>  Talk at the MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop  <a href="https://pippiworkshop.github.io/"> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </a> <br> <a href="/assets/img/zoom_4.mp4"> <img src="https://img.shields.io/badge/Link to my presentation-a18aab.svg" /> </a> </dd>
     </dl>
     
 _________________
