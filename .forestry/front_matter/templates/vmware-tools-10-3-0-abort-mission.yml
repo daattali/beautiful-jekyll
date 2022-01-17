@@ -74,5 +74,6 @@ pages:
 - _posts/2021-11-26-what-is-the-retreat-mode-for-vsphere-clusters.md
 - _posts/2021-12-07-automatically-install-cni-in-new-kubernetes-cluster-with-cluster-api.md
 - _posts/2021-12-09-nakivo-v10.5-brings-vmware-monitoring-and-anti-ransomware-resilience.md
+- _posts/esxi-not-booting-crc-error-on-decompression.md
 - _posts/gitops-with-kubernetes-vsphere-flux-helm-and-cluster-api.md
 - _posts/nakivo-backup-and-replication-for-vmware-and-more.md
