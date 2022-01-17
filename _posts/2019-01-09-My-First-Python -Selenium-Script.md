@@ -50,13 +50,14 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 ```
-Next, the instance of Firefox WebDriver is created.
+## Next, the instance of Firefox WebDriver is created.
 
 ```py
 driver = webdriver.Firefox()
 
 ```
 *You can change the browser from webdriver as you need*
+
 The driver.get method will navigate to a page given by the URL.
 WebDriver will wait until the page has fully loaded (that is, the “onload” event has fired) before returning control to your test or script.
 It’s worth noting that if your page uses a lot of AJAX on load then WebDriver may not know when it has completely loaded.:
@@ -66,7 +67,7 @@ driver.get("http://www.python.org")
 
 ```
 
-The next line is an assertion to confirm that title has “Python” word in it:
+## The next line is an assertion to confirm that title has “Python” word in it:
 
 ```py
 assert "Python" in driver.title
@@ -109,6 +110,14 @@ The quit will exit entire browser whereas close` will close one tab, but if just
 driver.close()
 
 ```
+**I am sharing with you the below link to github repository to get know better about selenium python**
+## Selenium Python
+
+[**Selenium Python**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/03.%20Selenium-Python)
+
+## Selenium Python Crash Course
+
+[**Selenium Python Crash Course**](https://github.com/rafayethossain/Basic-Python-Script/tree/master/04.%20Selenium%20Crash%20Course)
 
 {: .box-success}
 Enjoy !!!
