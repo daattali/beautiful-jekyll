@@ -30,7 +30,7 @@ Email: xilong.fan@whu.edu.cn
 
 # Bio
 
-Xilong Fan is a Professor in Physics at Wuhan University, an honorary research fellow of Glasgow University. He is a member of the LIGO Scientific Collaboration (LSC) Tsinghua group. He shared the 2016 special breakthrough prize in fundamental physics with LVC members for the observation of  gravitational waves.  He is the leader of the Kagra-Wuhan University working group.
+Xilong Fan is a Professor in Physics at Wuhan University, an honorary research fellow of Glasgow University. He was a member of the LIGO Scientific Collaboration (LSC) Tsinghua group. He shared the 2016 special breakthrough prize in fundamental physics with LVC members for the observation of  gravitational waves.  He is the leader of the Kagra-Wuhan University working group.
 
 He was a Newton Fellow of the Royal Society, and he is a grantee of the National Natural Science Fund for Excellent Young Scientists Fund and the Hubei province Natural Science Fund for Distinguished Young Scholars.
 
