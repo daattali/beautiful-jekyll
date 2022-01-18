@@ -17,8 +17,8 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Today I Learned: "https://dpdtydz.github.io/2021-06-03-TIL/"
-    - Weekley I Learned: "http://dpdtydz.github.io/WIL/list"
-    - My resume: "http://dpdtydz.github.io/Resume/result"
+    - Weekley I Learned: "http://dpdtydz.github.io/1999-01-01-TIL/"
+    - My resume: "http://dpdtydz.github.io/1999-01-02-TIL/"
   Author's home: "https://www.tildp.shop/"
 
 # --- Logo --- #
