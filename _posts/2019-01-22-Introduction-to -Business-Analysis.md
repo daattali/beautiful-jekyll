@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Everything You Need to Know About Business Analysis  
-subtitle: Introduction to Business Analysis
+title: Introduction to Business Analysis
+subtitle: Everything You Need to Know About Business Analysis
 tags: [business system analysis, system analysis, business analysis, ba]
-image: /assets/img/diary.png
-bigimg: /assets/img/baDiary: /assets/imgDiary: /assets/img/diary.png
+image: /assets/img/selenium-with-python.png
+bigimg: /assets/img/back.gif
+thumbnail-img: /assets/img/selenium-with-python.png
+share-img: /assets/img/selenium-with-python.png
 ---
+As per the reference fo IIBA, Business Analysis is a disciplined approach for introducing and managing change to organizations, whether they are for-profit businesses, governments, or non-profits.
 
 # Who is business analyst?
-
 Business Analyst is a change agent, they help organization to make the change. Generally, a Business Executives are visionary of an organization who set goal and the other hand, BA is a technician who enable those changes to make the goal happen. In business, change is constant and BA comes where changes is needed.
 
 # Business Analysis Role :
