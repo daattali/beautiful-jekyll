@@ -11,7 +11,7 @@ I am a PhD candidate in Applied Mathematics since October 2020. I am supervised 
 
 I work at the interface between neuroscience and mathematics. More specifically, I focus on developing and adapting shape analysis tools to the quantitative analysis of fetal brain images. My goal is to provide precise depiction of healthy brain growth and neurodevelopmental anomalies in order to refine disease diagnosis, predict neurological impairments and improve patients follow-up.
 
-_________________
+<hr style="border:1px solid #2b6777"/>
 
 My research topics include:
 
@@ -19,7 +19,7 @@ My research topics include:
 - **Image registration and atlas estimation**
 - **Fetal MRI processing.**
 
-_________________
+<hr style="border:1px solid #2b6777"/>
 
 Past and present research projects:
 
