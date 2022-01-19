@@ -5,7 +5,7 @@ title: Research
 show-avatar: true
 ---
 
-<div align="center"><img src="/assets/img/output-onlinegiftools(14).gif" width="200"/></div>
+<div align="center"><img src="/assets/img/output-onlinegiftools(14).gif" width="220"/></div>
 
 ### Papers
 **[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis](https://hal.archives-ouvertes.fr/hal-03362573)** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Conference Paper-DEAA88.svg">\
