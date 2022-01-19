@@ -18,7 +18,7 @@ Blandine de Lauzon-Guillain, Fleur Gaudfernau, Aurore Camier, Camille Davisse-Pa
 British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), pp.1215-1224.\
 [![DOI:10.1017/S0007114520005097](https://zenodo.org/badge/DOI/10.1017/S0007114520005097.svg)](https://doi.org/10.1017/S0007114520005097)
     
-<hr style="border:2px solid #2b6777"> </hr>
+<hr style="border:1px solid #2b6777"/>
 
 ### Talks
 <dl>
@@ -28,7 +28,7 @@ British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), p
 <dd>  Talk at the MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop  <a href="https://pippiworkshop.github.io/"> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </a> <br> <a href="/assets/img/zoom_4.mp4"> <img src="https://img.shields.io/badge/Link to my presentation-a18aab.svg" /> </a> </dd>
     </dl>
     
-_________________
+<hr style="border:1px solid #2b6777"/>
 
 ### Awards
     
@@ -43,8 +43,7 @@ _________________
 </a> </dd>
     </dl>
  
-_________________
-
+<hr style="border:1px solid #2b6777"/>
 
 ### Code
 
