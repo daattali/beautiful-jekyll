@@ -5,7 +5,8 @@ title: About
 subtitle: PhD student at Université de Paris / INSERM / INRIA / PR[AI]RIE
 ---
 
-<div align="center"><img src="/assets/img/output-onlinegiftools(13).gif" alt="drawing" width="200"/></div>
+<div align="center"><img src="/assets/img/output-onlinegiftools(13).gif" alt="drawing" width="200"/><br />
+ <a href="https://www.deformetrica.org/"> <font size="1"> Made with Deformetrica </font>  </a></div>
 
 I am a PhD candidate in Applied Mathematics since October 2020. I am supervised by [Stéphanie Allassonnière](https://sites.google.com/site/stephanieallassonniere/) and [Erwan Le Pennec](http://www.cmap.polytechnique.fr/~lepennec/fr/) and I work in the [HeKA Team](https://team.inria.fr/heka/). My PhD is funded by the [PR[AI]RIE Institute](https://prairie-institute.fr/).
 
