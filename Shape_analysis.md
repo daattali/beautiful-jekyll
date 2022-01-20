@@ -18,8 +18,6 @@ ____
 
 This is the geodesic trajectory of healthy brain growth used as reference to compute a distance from normality. Corresponds to the red curve.
 
-[Source of the healthy template brains used to compute the trajectory](http://crl.med.harvard.edu/research/fetal_brain_atlas/) 
-
  <a href="http://crl.med.harvard.edu/research/fetal_brain_atlas/"> <font size="1"> Source of the healthy template brains used to compute the trajectory </font>  </a>
 
 <img src="/assets/img/geodesic_regression.gif" alt="drawing" width="400"/>
