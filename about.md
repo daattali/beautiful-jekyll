@@ -33,7 +33,7 @@ Past and present research projects:
    </dd>
    
   <dt><img src="https://img.shields.io/badge/2021-00a19e.svg"></dt>
-<dd> Shape analysis pipeline for fetal brain MRIs - <a href="https://www.deformetrica.org/">Deformetrica</a></dd>
+<dd> Shape analysis pipeline for fetal brain MRIs </dd>
    
    <dt><img src="https://img.shields.io/badge/2021-00a19e.svg"></dt>
 <dd> Characterization of fetal brains with Corpus Callosum Agenesis - collaboration with Hôpital Trousseau</dd>
