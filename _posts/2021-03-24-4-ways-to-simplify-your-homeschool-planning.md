@@ -43,7 +43,7 @@ See my reel on what this looks like...
 
 ### [FREEBIE: 10 questions to help you simplify your homeschool life](https://mailchi.mp/63c04ffdad3a/simplify-your-homeschool-life-session-freebie)
 
-_If you are looking to simplify your homeschool life, you may enjoy the freebie I created for the Simplifying Your Homeschool Life session I gave for the Online Canadian Homeschool Conference (find the session_ [_here_](https://canadianhomeschoolconference.com/aff/42/) _). I’m happy to send you the “10 questions to help simplify your homeschool life” freebie to help you out too. Just click_ [_here_](https://mailchi.mp/63c04ffdad3a/simplify-your-homeschool-life-session-freebie) _and drop your email to access that. Enjoy!_
+_If you are looking to simplify your homeschool life, you may enjoy the freebie I created for the Simplifying Your Homeschool Life session I gave for the Online Canadian Homeschool Conference (find the session_ [_here_](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/) _). I’m happy to send you the “10 questions to help simplify your homeschool life” freebie to help you out too. Just click_ [_here_](https://mailchi.mp/63c04ffdad3a/simplify-your-homeschool-life-session-freebie) _and drop your email to access that. Enjoy!_
 
 ![A woman planning in her planner.](/uploads/2_20210324_053755_0001_compress9.jpg "4 Ways to Simplify Your Homeschool Planning")
 
