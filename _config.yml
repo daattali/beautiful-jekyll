@@ -23,9 +23,9 @@ navbar-links:
     - Em Andamento: "projects-inprog"
     - Finalizados: "projects-done"
   Capítulos:
-    - EMBS: "capitulo-EMBS"
-    - PES: "capitulo-PES"
-    - RAS: "capitulo-RAS"
+    - EMBS: "embscimatec"
+    - PES: "pescimatec"
+    - RAS: "rascimatec"
   Sobre Nós: "aboutme"
 
 # --- Logo --- #
