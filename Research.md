@@ -5,7 +5,7 @@ title: Research
 show-avatar: true
 ---
 
-<div align="center"><img src="/assets/img/output-onlinegiftools(14).gif" width="200"/><br /><a href="https://www.deformetrica.org/"> <font size="1"> Made with Deformetrica </font>  </a></div>
+<div align="center"><img src="/assets/img/output-onlinegiftools(14).gif" width="200"/><br /><a href="https://www.deformetrica.org/"> <font size="1"> Made with Deformetrica </font>  </a><img src="/assets/img/deformetrica.png" alt="drawing" width="30"/></div>
 
 ### Papers
 **[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis](https://hal.archives-ouvertes.fr/hal-03362573)**\
