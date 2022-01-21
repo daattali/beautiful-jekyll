@@ -10,7 +10,7 @@ Below are displayed movies of the shape analysis tools described in our [paper](
 
 This shape analysis pipeline is specifically tailored to the specificities of fetal MRI. Using diffeomorphic image registration, fetuses are compared to an age-machted template brain. Age differences between fetuses are corrected. Using PCA, a mean and variance analysis is performed on the subjects deformations to extract the modes of deformation that best characterize the anatomical variability of the dataset.
 
-<img src="/assets/img/output-onlinegiftools(22).gif" alt="drawing" width="700"/>
+<img src="/assets/img/output-onlinegiftools(22).gif" alt="drawing" width="800"/>
 
 ____
 
