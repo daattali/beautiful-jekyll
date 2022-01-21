@@ -14,13 +14,21 @@ This shape analysis pipeline is specifically tailored to the specificities of fe
 
 ____
 
-### Healthy brain growth (reference trajectory from 27 to 38 gestational weeks)
-
-This is the geodesic trajectory of healthy brain growth used as reference to compute a distance from normality. Corresponds to the red curve.
+<details>
+  <summary><font size="5" color="#FF0000">Click here to display the reference trajectory of healthy brain growth during gestation</font></summary>
+  
+This is the geodesic trajectory of healthy brain growth (from 27 to 38 gestational weeks) used as reference to compute a distance from normality. Corresponds to the red curve.
 
  <a href="http://crl.med.harvard.edu/research/fetal_brain_atlas/"> <font size="1"> Source of the healthy template brains used to compute the trajectory </font>  </a>
 
 <img src="/assets/img/geodesic_regression.gif" alt="drawing" width="400"/>
+
+</details>
+
+
+
+### Healthy brain growth (reference trajectory from 27 to 38 gestational weeks)
+
 
 ### Reference growth applied to a subject brain (age 34 weeks) from 27 to 38 gestational weeks
 
