@@ -25,7 +25,6 @@ This is the geodesic trajectory of healthy brain growth (from 27 to 38 gestation
 
 </details>
 
- <br />
 <details>
   <summary><font size="4" color="#00008B">Click here to display an example of parallel transport along the reference trajectory</font></summary>
 <br />
