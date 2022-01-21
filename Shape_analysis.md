@@ -15,7 +15,7 @@ This shape analysis pipeline is specifically tailored to the specificities of fe
 ____
 
 <details>
-  <summary><font size="5" color="#FF0000">Click here to display the reference trajectory of healthy brain growth during gestation</font></summary>
+  <summary><font size="4" color="#FF0000">Click here to display the reference trajectory of healthy brain growth during gestation</font></summary>
   
 This is the geodesic trajectory of healthy brain growth (from 27 to 38 gestational weeks) used as reference to compute a distance from normality. Corresponds to the red curve.
 
@@ -26,15 +26,14 @@ This is the geodesic trajectory of healthy brain growth (from 27 to 38 gestation
 </details>
 
 
-
-### Healthy brain growth (reference trajectory from 27 to 38 gestational weeks)
-
-
-### Reference growth applied to a subject brain (age 34 weeks) from 27 to 38 gestational weeks
-
-Registration computes the distance between the healthy template at age 34 weeks and the subject brain at age 34 weeks (green arrow). Parallel transport (blue arrows) transports the computed deformation to any time point along the red curve. Combined with geodesic shooting, we apply the reference growth dynamic to the subject's brain from 27 to 38 gestational weeks. The movie below illustrates how this brain, only observed at 34 weeks, would evolve between during gestation (under the hypothesis that his growth rate is comparable to that of the healthy template).
+<details>
+  <summary><font size="4" color="#FF0000">Click here to display an example of parallel transport along the reference trajectory</font></summary>
+  
+Registration computes the distance between the healthy template at age 34 weeks and a subject's brain at age 34 weeks (green arrow). Parallel transport (blue arrows) transports the computed deformation to any time point along the red curve. Combined with geodesic shooting, we apply the reference growth dynamic to the subject's brain from 27 to 38 gestational weeks. The movie below illustrates how this brain, only observed at 34 weeks, would evolve between during gestation (under the hypothesis that his growth rate is comparable to that of the healthy template).
 
 <img src="/assets/img/parallel_transport3.gif" alt="drawing" width="400"/>
+
+</details>
 
 ____
 
