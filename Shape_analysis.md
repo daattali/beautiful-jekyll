@@ -34,8 +34,8 @@ ____
 
 Second mode of deformation obtained by PCA on the initial vector fiels, between σ = 0 and σ = 4. This movie shows the deformation of an average healthy anatomy at 31 weeks of gestation towards the anatomy characterizing Corpus Callosum Agenesis. 
 
-<img src="/assets/img/output-onlinegiftools(18).gif" alt="drawing" width="190"/><img src="/assets/img/output-onlinegiftools(19).gif" alt="drawing" width="190"/><img src="/assets/img/output-onlinegiftools(17).gif" alt="drawing" width="175"/>
+<img src="/assets/img/output-onlinegiftools(18).gif" alt="drawing" width="160"/>&nbsp; &nbsp; &nbsp; &nbsp; <img src="/assets/img/output-onlinegiftools(19).gif" alt="drawing" width="160"/>&nbsp;&nbsp;  &nbsp; &nbsp; <img src="/assets/img/output-onlinegiftools(17).gif" alt="drawing" width="145"/>
 
-<img src="/assets/img/cor2.gif" alt="drawing" width="210"/><img src="/assets/img/sag2.gif" alt="drawing" width="210"/><img src="/assets/img/ax2.gif" alt="drawing" width="200"/>
+<img src="/assets/img/cor2.gif" alt="drawing" width="190"/><img src="/assets/img/sag2.gif" alt="drawing" width="190"/><img src="/assets/img/ax2.gif" alt="drawing" width="190"/>
 
 
