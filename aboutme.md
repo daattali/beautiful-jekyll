@@ -27,9 +27,9 @@ Tornar-se referência na Seção Nordeste Brasil em realizações de ênfase aca
 
 #### Nossos Capítulos Técnicos:
 Como maior organização profissional do mundo, o IEEE pode ser subdividido em **Sociedades Técnicas**, também chamados de Capítulos Técnicos, sendo um total de 37, cada um voltado a uma área do conhecimento. Dentro do IEEE CIMATEC, possuimos os seguintes Capítulos Técnicos:
-- [<img src="/assets/img/embs_logo.png" alt="drawing" width="50"/> **EMBS:**](https://ieeecimatec.github.io/capitulo-EMBS/) Engineering in Medicine and Biology Society 
-- [<img src="/assets/img/pes_logo.png" alt="drawing" width="50"/> **PES:**](https://ieeecimatec.github.io/capitulo-PES/) Power and Energy Society 
-- [<img src="/assets/img/ras_logo.png" alt="drawing" width="50"/> **RAS:**](https://ieeecimatec.github.io/capitulo-RAS/) Robotics and Automation Society
+- [<img src="/assets/img/embs_logo.png" alt="drawing" width="50"/> **EMBS:**](https://ieeecimatec.github.io/embscimatec/) Engineering in Medicine and Biology Society 
+- [<img src="/assets/img/pes_logo.png" alt="drawing" width="50"/> **PES:**](https://ieeecimatec.github.io/pescimatec/) Power and Energy Society 
+- [<img src="/assets/img/ras_logo.png" alt="drawing" width="50"/> **RAS:**](https://ieeecimatec.github.io/rascimatec/) Robotics and Automation Society
 
 [<img src="/assets/img/logo_instagram.png" alt="drawing" width="25"/> **@ieeecimatec**](https://www.instagram.com/ieeecimatec/)
 
