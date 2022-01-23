@@ -3,6 +3,9 @@ title: Commentary
 subtitle: Selection of media interviews
 ---
 
+MIT Energy Futures Magazine [New England renewables + Canadian hydropower: A pathway to clean electricity in 2050
+](https://energy.mit.edu/news/new-england-renewables-canadian-hydropower/) (Fall Issue, 2021)
+
 Energi Talks Podcast [Hydro's main value is not electricity generation, but storage for renewables](https://podcasts.apple.com/us/podcast/hydros-main-value-is-not-electricity-generation-but/id1534771882?i=1000524551245) (June 7, 2021)
 
 Solar Tribune: ["Combating Climate Change"](https://solartribune.com/climate-change/policy/economic-approaches/) (February 24, 2021)
