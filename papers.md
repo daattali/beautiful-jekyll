@@ -14,7 +14,7 @@ layout: page
 
 **Dimanchev, E.**, et al. 2022. Electric vehicle adoption dynamics on the road to deep decarbonization. Book chapter for "The 4Ds of Energy Transition: Decarbonization, Decreasing use, Decentralization, and Digitalization" (in production).
 
-## Selected working papers and reports
+## Working papers and reports
 
 **Dimanchev, E.**, and C. R. Knittel. 2020. [Trade-offs in Climate Policy: Combining Low- Carbon Standards with Modest Carbon Pricing](https://ceepr.mit.edu/workingpaper/trade-offs-in-climate-policy-combining-low-carbon-standards-with-modest-carbon-pricing/). MIT CEEPR Working Paper 2020-020. (Related: short [Research Brief](https://ceepr.mit.edu/wp-content/uploads/2021/09/2020-020-Brief.pdf)).
 
