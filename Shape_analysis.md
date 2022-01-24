@@ -26,7 +26,7 @@ This is the geodesic trajectory of healthy brain growth (from 27 to 38 gestation
 </details>
 
 <details>
-  <summary><font size="4" color="#00008B">Click here to display an example of parallel transport along the reference trajectory</font></summary>
+  <summary><font size="4" color="#00008B">Click here to display the parallel transport of Subject 2 along the reference trajectory</font></summary>
 <br />
 Registration computes the distance between the healthy template at age 34 weeks and a subject's brain at age 34 weeks (green arrow). Parallel transport (blue arrows) transports the computed deformation to any time point along the red curve. Combined with geodesic shooting, we apply the reference growth dynamic to the subject's brain from 27 to 38 gestational weeks. The movie below illustrates how this brain, only observed at 34 weeks, would evolve during gestation (under the hypothesis that his growth rate is comparable to that of the healthy template).
 <br />
