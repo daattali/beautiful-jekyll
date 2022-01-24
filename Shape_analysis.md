@@ -42,6 +42,7 @@ Registration computes the distance between the healthy template at age 34 weeks 
 
   <br />
 <img src="/assets/img/output-onlinegiftools(18).gif" alt="drawing" width="160"/>&nbsp; &nbsp; &nbsp; &nbsp; <img src="/assets/img/output-onlinegiftools(19).gif" alt="drawing" width="160"/>&nbsp;&nbsp;  &nbsp; &nbsp; <img src="/assets/img/output-onlinegiftools(17).gif" alt="drawing" width="145"/>
+  <br />
 
 <img src="/assets/img/cor2.gif" alt="drawing" width="190"/><img src="/assets/img/sag2.gif" alt="drawing" width="190"/><img src="/assets/img/ax2.gif" alt="drawing" width="190"/>
 
