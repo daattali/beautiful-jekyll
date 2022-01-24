@@ -14,7 +14,7 @@ layout: page
 
 **Dimanchev, E.**, et al. 2022. Electric vehicle adoption dynamics on the road to deep decarbonization. Book chapter for "The 4Ds of Energy Transition: Decarbonization, Decreasing use, Decentralization, and Digitalization" (in production).
 
-## Working papers and reports
+## Selected working papers and reports
 
 **Dimanchev, E.**, and C. R. Knittel. 2020. [Trade-offs in Climate Policy: Combining Low- Carbon Standards with Modest Carbon Pricing](https://ceepr.mit.edu/workingpaper/trade-offs-in-climate-policy-combining-low-carbon-standards-with-modest-carbon-pricing/). MIT CEEPR Working Paper 2020-020. (Related: short [Research Brief](https://ceepr.mit.edu/wp-content/uploads/2021/09/2020-020-Brief.pdf)).
 
@@ -24,8 +24,6 @@ Green et al. (**contributing author**) 2019. [Insights Into Future Mobility.](ht
 
 Mehling M. and **E. Dimanchev**. 2017. [Achieving the Mexican Mitigation Targets: Options for an Effective Carbon Pricing Policy Mix.](https://www.researchgate.net/publication/320885810_Achieving_the_Mexican_Mitigation_Targets_Options_for_an_Effective_Carbon_Pricing_Policy_Mix?_sg=5M98oFOZeyGxyUWhIMpSuFgzYsxM_JSBX0ci5zu8_yAat6tFxKt_iguNIYA_hVvL1xKVgEsCtOxnPtUI3VtCqS0gAzImeUvLyQff5qEV.Xk8nZ_xO9upQj9AQ1GG_Adsj0PXFdxuDqaxs9vxIJN4H40gGiVNxCtpte24IrKhLFxKXd0pNfSNG2KFhmSfP3A) Report for the German-Mexican Climate Alliance
 
-## Selected reports on the EU Emissions Trading System
-
 Thomson Reuters Point Carbon (**lead author**) 2014- [Look before you leap: analysis on the design of the Market Stability Reserve](https://www.researchgate.net/publication/320957545_Look_before_you_leap_analysis_on_the_design_of_the_Market_Stability_Reserve)
 
 Thomson Reuters Point Carbon (**lead author**) 2014 - [Winds of Reform: Examining the design parameters of the Market Stability Reserve](https://www.researchgate.net/publication/320889953_Winds_of_Reform_Examining_the_design_parameters_of_the_Market_Stability_Reserve)
@@ -33,8 +31,6 @@ Thomson Reuters Point Carbon (**lead author**) 2014 - [Winds of Reform: Examinin
 Thomson Reuters Point Carbon (**lead author**) 2016 - [EU Climate Ambition - Falling Short of Long-term Targets](https://www.researchgate.net/publication/320819261_EU_Climate_Ambition_Falling_Short_of_Long-term_Targets?_sg=5M98oFOZeyGxyUWhIMpSuFgzYsxM_JSBX0ci5zu8_yAat6tFxKt_iguNIYA_hVvL1xKVgEsCtOxnPtUI3VtCqS0gAzImeUvLyQff5qEV.Xk8nZ_xO9upQj9AQ1GG_Adsj0PXFdxuDqaxs9vxIJN4H40gGiVNxCtpte24IrKhLFxKXd0pNfSNG2KFhmSfP3A) 
 
 Thomson Reuters Point Carbon (**contributing author**) 2016 - [Animal Spirits versus the Big Picture: Why the outlook for the carbon price is still bullish](https://www.dropbox.com/s/p0xyd6stb8nx9cf/Animal%20Spirits%20versus%20the%20Big%20Picture%20-%20EU%20carbon%20price%20outlook.pdf?dl=0)
-
-## Other carbon pricing work at Thomson Reuters Point Carbon
 
 Thomson Reuters Point Carbon (**contributing author**) 2016 - [California Dreaming: Implications of an EU ETS Price Floor](https://www.dropbox.com/s/y78glqnwphhofl1/California%20Dreaming%20-%20Implications%20of%20an%20EU%20ETS%20price%20floor.pdf?dl=0)
 
