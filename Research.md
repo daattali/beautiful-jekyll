@@ -13,10 +13,9 @@ show-avatar: true
 <font size="3"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere</font><br>
 [![DOI:10.1007/978-3-030-87735-4_26](https://zenodo.org/badge/DOI/10.1007/978-3-319-76207-4_15.svg?colorB=7289da)](https://doi.org/10.1007/978-3-030-87735-4_26)   <img src="https://img.shields.io/badge/Preprint-DEAA88.svg">
 
-<b>Characteristics associated with feeding organic foods during complementary feeding: the nationwide Étude Longitudinale Française depuis l’Enfance (ELFE) birth cohort</b><br>
+<b>Characteristics associated with feeding organic foods during complementary feeding: the nationwide Étude Longitudinale Française depuis l’Enfance (ELFE) birth cohort<br></b>
 <font size="3"> Blandine de Lauzon-Guillain, Fleur Gaudfernau, Aurore Camier, Camille Davisse-Paturet, Sandrine Lioret, Sophie Nicklaus, Marie-Aline Charles, Emmanuelle Kesse-Guyot<br>
-British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), pp.1215-1224.</font><br>
-[![DOI:10.1017/S0007114520005097](https://zenodo.org/badge/DOI/10.1017/S0007114520005097.svg)](https://doi.org/10.1017/S0007114520005097)
+British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), pp.1215-1224.<br></font>[![DOI:10.1017/S0007114520005097](https://zenodo.org/badge/DOI/10.1017/S0007114520005097.svg)](https://doi.org/10.1017/S0007114520005097)
     
 <hr style="border:1px solid #2b6777"/>
 
