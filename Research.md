@@ -9,7 +9,7 @@ show-avatar: true
     <img src="https://img.shields.io/badge/Made with Deformetrica-656262.svg" width="110"/></a><img src="/assets/img/deformetrica.png" alt="drawing" width="30"/></div>
 
 ### Journal articles
-**[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis]()**\
+**[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis]()**
 <font size="3"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere</font>
 [![DOI:10.1007/978-3-030-87735-4_26](https://zenodo.org/badge/DOI/10.1007/978-3-319-76207-4_15.svg?colorB=7289da)](https://doi.org/10.1007/978-3-030-87735-4_26)   <img src="https://img.shields.io/badge/Preprint-6aa84f.svg">
 
@@ -23,7 +23,7 @@ British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), p
 ### Conference articles
 
 **[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis](https://hal.archives-ouvertes.fr/hal-03362573)**
-<font size="3"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere \
+<font size="3"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere <br>
 MICCAI 2021 – Perinatal, Preterm and Paediatric Image Analysis Workshop, Oct 2021, Strasbourg, France.</font>
 [![DOI:10.1007/978-3-030-87735-4_26](https://zenodo.org/badge/DOI/10.1007/978-3-319-76207-4_15.svg?colorB=7289da)](https://doi.org/10.1007/978-3-030-87735-4_26)   <img src="https://img.shields.io/badge/Conference Paper-DEAA88.svg">
 
