@@ -10,11 +10,11 @@ show-avatar: true
 
 ### Papers
 **[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis]()**\
-<font size="2"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere <br /></font>
+<font size="3"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere</font>
 [![DOI:10.1007/978-3-030-87735-4_26](https://zenodo.org/badge/DOI/10.1007/978-3-319-76207-4_15.svg?colorB=7289da)](https://doi.org/10.1007/978-3-030-87735-4_26)   <img src="https://img.shields.io/badge/Preprint-DEAA88.svg">
 
-**[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis](https://hal.archives-ouvertes.fr/hal-03362573)**\
-<font size="1"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere <br />
+**[Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis](https://hal.archives-ouvertes.fr/hal-03362573)**
+<font size="4"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere <br />
 MICCAI 2021 – Perinatal, Preterm and Paediatric Image Analysis Workshop, Oct 2021, Strasbourg, France.</font><br />
 [![DOI:10.1007/978-3-030-87735-4_26](https://zenodo.org/badge/DOI/10.1007/978-3-319-76207-4_15.svg?colorB=7289da)](https://doi.org/10.1007/978-3-030-87735-4_26)   <img src="https://img.shields.io/badge/Conference Paper-DEAA88.svg">
 
