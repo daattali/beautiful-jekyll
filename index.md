@@ -26,3 +26,5 @@ Previously, I worked as a Senior Research Associate at MIT CEEPR, and a Senior C
 I have testified before legislators on climate policy, served as a consultant to government officials on carbon pricing, and briefed senior staff at Fortune Global 500 companies. My work on the reform of the European Emissions Trading System was featured in the EU Parliament and the EU Commission, "contributing to a cool-headed debate" in the words of one policy maker. My research has also been quoted in the media including Bloomberg, the Wall Street Journal, Politico, BBC, and others.
 
 I hold a M.Sc. from MIT's Technology and Policy Program and a B.A. in mathematical economics from Colorado College.
+
+Aside from my work, I enjoy books, bouldering, and cross-country skiing.
