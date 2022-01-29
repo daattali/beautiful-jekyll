@@ -2,7 +2,14 @@
 layout: post
 title: Introduction to Business Analysis
 subtitle: Everything You Need to Know About Business Analysis
-tags: [business system analysis, system analysis, business analysis, business analyst, ba]
+tags:
+  [
+    business system analysis,
+    system analysis,
+    business analysis,
+    business analyst,
+    ba,
+  ]
 image: /assets/img/diary.png
 bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/diary.png
@@ -77,15 +84,16 @@ Business analysts play a role in aligning the designed and delivered solutions w
     • User Experience Analyst: Design the UI, UX, and interaction. Understand end-user's behavior.
 
 Other common job titles for people who perform business analysis include:
- • Business Architect
- • Business Systems Analyst,
- • Data Analyst,
- • Enterprise Analyst,
- • Management Consultant, 
- • Process Analyst,
- • Product Manager,
- • Product Owner,
- • Requirements Engineer
+
+    • Business Architect
+    • Business Systems Analyst,
+    • Data Analyst,
+    • Enterprise Analyst,
+    • Management Consultant,
+    • Process Analyst,
+    • Product Manager,
+    • Product Owner,
+    • Requirements Engineer
 
 {: .box-success}
 Enjoy !!!
