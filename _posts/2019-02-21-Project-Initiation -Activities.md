@@ -3,10 +3,10 @@ layout: post
 title: Project Initiation Activities
 subtitle: Business Analyst Task At the Beginning of Project 
 tags: [business system analysis, system analysis, business analysis, ba]
-image: /assets/img/selenium-with-python.png
+image: /assets/img/diary.png
 bigimg: /assets/img/back.gif
-thumbnail-img: /assets/img/selenium-with-python.png
-share-img: /assets/img/selenium-with-python.png
+thumbnail-img: /assets/img/diary.png
+share-img: /assets/img/diary.png
 ---
 
 Project initiation mainly involves eliciting requirements to understand the scope of a potential solution. Elicitation days are fun and many business analysts enjoy elicitation days the most. These days occur early in the project or possibly even before the project starts and involve meeting with stakeholders to understand what they want to achieve in a project. 
