@@ -198,30 +198,30 @@ It’s a good habit to assign responsibility right away. The way most people lik
 
 Critical tool to understand and align the responsibilities of stakeholders It’s a good thing to know who has what responsibility at the beginning of your project.
 
-- • Alleviates power struggles
-- • Reduces lack of ownership
-- • Sets clear expectations!
-- • No your roles
+-  Alleviates power struggles
+  Reduces lack of ownership
+- Sets clear expectations!
+- No your roles
 
 ### Responsibility:
 
-- • Who is/will be doing this task?
-- • Who is assigned to work on this task?
+- Who is/will be doing this task?
+- Who is assigned to work on this task?
 
 ### Accountable:
 
-- • Who’s head will roll if this goes wrong?
-- • Who has the authority to sign off the work?
+- Who’s head will roll if this goes wrong?
+- Who has the authority to sign off the work?
 
 ### Consulted:
 
-- • Who can tell me more about this task?
-- • Who are the Subject Matter Experts?
+- Who can tell me more about this task?
+- Who are the Subject Matter Experts?
 
 ### Informed:
 
-- • Who’s work depends on this task?
-- • Who has to be kept updated about the progress?
+- Who’s work depends on this task?
+- Who has to be kept updated about the progress?
 
 {: .box-success}
 Enjoy !!!
