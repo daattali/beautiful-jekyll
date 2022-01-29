@@ -77,15 +77,15 @@ Business analysts play a role in aligning the designed and delivered solutions w
     • User Experience Analyst: Design the UI, UX, and interaction. Understand end-user's behavior.
 
 Other common job titles for people who perform business analysis include:
-• business architect,
-• business systems analyst,
-• data analyst,
-• enterprise analyst,
-• management consultant,
-• process analyst,
-• product manager,
-• product owner,
-• requirements engineer
+ • Business Architect
+ • Business Systems Analyst,
+ • Data Analyst,
+ • Enterprise Analyst,
+ • Management Consultant, 
+ • Process Analyst,
+ • Product Manager,
+ • Product Owner,
+ • Requirements Engineer
 
 {: .box-success}
 Enjoy !!!
