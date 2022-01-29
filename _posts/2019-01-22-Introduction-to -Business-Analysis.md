@@ -8,14 +8,45 @@ bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
 ---
-As per the reference fo IIBA, Business Analysis is a disciplined approach for introducing and managing change to organizations, whether they are for-profit businesses, governments, or non-profits.
+
+Business analysis is not the type of career where you need to necessarily be prepared for anything, but expect the occasional surprise or unexpected situation. In most business analyst jobs, you’ll experience a fair amount of variety in your day-to-day work. And while this is not a role like IT support requiring near-constant interaction with others and real-time prioritization, priorities shift and a certain amount of flexibility and responsiveness is important. Of course, if your company experiences a catastrophe or uncovers a significant unexpected opportunity you will most likely be called in to help on short notice, but that’s the exception, not the rule.
+
+Most often your days will not hit you, instead, you’ll hit them. The best business analysts drive the
+requirements process. This means scheduling meetings, managing input, influencing stakeholders, and
+ensuring decisions are made. Great business analysts are proactive and seek out answers. If this is not a comfortable role for you, it might be possible to find positions where you can partner with a strong project manager. In general, however, you should be prepared for planning out your own work to meet deadlines (possibly set by yourself, possibly imposed) and facilitating input and occasionally follow-ups from a variety of people to achieve your end goals.
+
+_Qucik Link to Specific Topic:_
+
+- [What is Business Analysis?](#what-is-business-analysis)
+- [Who is business analyst?](#who-is-business-analyst)
+- [Business Analysis Role :](#business-analysis-role-)
+- [Responsibilities (Business):](#responsibilities-business)
+- [Responsibilities (IT):](#responsibilities-it)
+  - [Types of Business Analyst Role:](#types-of-business-analyst-role)
+
+# What is Business Analysis?
+
+Business Analysis is a disciplined approach for introducing and managing change to organizations, whether they are for-profit businesses, governments, or non-profits.
+
+Business analysis is the practice of enabling change in an enterprise by defining needs and recommending solutions that deliver value to stakeholders. Business analysis enables an enterprise to articulate needs and the rationale for change and to design and describe solutions that can deliver value.
+Business analysis is performed on a variety of initiatives within an enterprise. Initiatives may be strategic, tactical, or operational. Business analysis may be performed within the boundaries of a project or throughout enterprise evolution and continuous improvement. It can be used to understand the current state, define the future state, and determine the activities required to move from the current to the future state.
 
 # Who is business analyst?
+
 Business Analyst is a change agent, they help organization to make the change. Generally, a Business Executives are visionary of an organization who set goal and the other hand, BA is a technician who enable those changes to make the goal happen. In business, change is constant and BA comes where changes is needed.
+
+A business analyst is any person who performs business analysis tasks described in the BABOK® Guide, no matter their job title or organizational role. Business analysts are responsible for discovering, synthesizing, and analyzing information from a variety of sources within an enterprise, including tools, processes, documentation, and stakeholders. The business analyst is responsible for eliciting the actual needs of stakeholders—which frequently involves investigating and clarifying their expressed desires—in order to determine underlying issues and causes.
 
 # Business Analysis Role :
 
 Company usually have BA Linking towards the business or towards the IT
+Business analysts play a role in aligning the designed and delivered solutions with the needs of stakeholders. The activities that business analysts perform include:
+
+• understanding enterprise problems and goals,
+• analyzing needs and solutions,
+• devising strategies,
+• driving change, and
+• facilitating stakeholder collaboration.
 
 # Responsibilities (Business):
 
@@ -44,6 +75,17 @@ Company usually have BA Linking towards the business or towards the IT
     • Systems Analyst: Analyze documented requirements to create functional specification, work with tech team. Define how a system will do the what.
     • Data Analyst: Perform logical data modeling, identify patterns, design and create report.
     • User Experience Analyst: Design the UI, UX, and interaction. Understand end-user's behavior.
+
+Other common job titles for people who perform business analysis include:
+• business architect,
+• business systems analyst,
+• data analyst,
+• enterprise analyst,
+• management consultant,
+• process analyst,
+• product manager,
+• product owner,
+• requirements engineer
 
 {: .box-success}
 Enjoy !!!
