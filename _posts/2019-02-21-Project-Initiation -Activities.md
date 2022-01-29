@@ -9,56 +9,57 @@ thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
 ---
 
-Pre project activities
+Project initiation mainly involves eliciting requirements to understand the scope of a potential solution. Elicitation days are fun and many business analysts enjoy elicitation days the most. These days occur early in the project or possibly even before the project starts and involve meeting with stakeholders to understand what they want to achieve in a project. 
+
+**Pre-Project Activities**
 
 # Understanding Business Objective
 
-To identify the business goals, needs, requirements of the organization, project, or stakeholder.
-First project as a Business Analyst. And failed with Embarrassment. Because you developed a solution that does not meet Objective, Goal, and Purpose of the project.
-You may develop a great product but still failed this project cause it does not meet goal that set for the project. As a business analyst this is heart breaking.
+To identify the business goals, needs, requirements of the organization, project, or stakeholder. The first project as a Business Analyst. And failed with Embarrassment. Because you developed a solution that does not meet the Objective, Goal, and Purpose of the project. 
+You may develop a great product but still failed this project cause it does not meet the goal set for the project. As a business analyst, this is heartbreaking.
 
-Three (03) Questions to ask: 1. What is the purpose of the project --- Why approved this project, Why we are budgeting this project? 2. What is the goals and objectives of this project --- What is return on investment, What are the main critical pieces and components? 3. In the eyes of this project, what is success, and how will it be measured --- Measurement matrix?
+## Three (03) Questions to ask yourself 
+ 1. What is the purpose of the project --- Why approve this project, Why we are budgeting this project? 
+ 2. What are the goals and objectives of this project --- What is the return on investment, What are the main critical pieces and components? 
+ 3. In the eyes of this project, what is a success, and how will it be measured --- Measurement matrix?
 
-Once you have those details, as you start working through and eliciting requirements. Yeah, there is going to be a lot of other features, and other enhancement that they may want as part of the project, but your number one goal should be to solve the problem that the project is intended to solve for.
+Once you have those details, you start working through and eliciting requirements. Yeah, there is going to be a lot of other features, and other enhancement that they may want as part of the project, but your number one goal should be to solve the problem that the project is intended to solve.
 
-Creating the product that does not solve the project wastes tons of time and money and it, quite frankly, is extremely embarrassing, is just every business analyst gone through.
+Creating a product that does not solve the project wastes tons of time and money and it, quite frankly, is extremely embarrassing, is just what every business analyst has gone through.
 
-# Creating a Business Case
+## What is a Business Case?
 
-• What is a Business Case?
-• Why it is used?
-• When it is Used?
-• Who Creates it?
+A decision-making tool is used to determine the effects a particular decision will have on profitability.
 
-## Business Case:
+Ultimately, what that means is it's a document that's presented to decision-makers and it's giving them options and telling them 'OK, based on these certain actions, here's the cost-benefit ratio, here's the return on investment by making a decision one way or another.
 
-A decision-making tool used to determine the effects a particular decision will have on profitability.
-
-Ultimately, what that meaning is it's a document that's presented to decision makers and it's giving them options and telling them 'OK, based on these certain actions, here's the cost benefit ratio, here's the return on investment by making a decision one way or another'.
+## Why it is used?
 
 A business case is used to identify and highlight problems or opportunities that a business can take. And then the different options they have and the recommended solution by the person that's creating the business case.
-Ultimately, it's the driver of projects. Many companies will start projects solely from business cases that are written. So they make their employees write business cases and that gets put in front of a decision making committee, a person, a group where they're saying 'OK, here's all the business cases now, on what ones make sense.
+Ultimately, it's the driver of projects. Many companies will start projects solely from business cases that are written. So they make their employees write business cases and that gets put in front of a decision-making committee, a person, a group where they're saying 'OK, here's all the business cases now, on what ones make sense.
 
-Why is a business case used, is really used to convince decision makers of a certain course of action. So, a business case is done to identify the problem, lay out potential solutions and their cost and their benefits, but the big thing is the recommendation, right, that person is driving and saying 'here is what we should be doing and here's how we should be solving this problem and we should be taking action to do that, and here's why' so it's kind of almost a sales technique to sell the business and investing money into solving that particular problem or working towards achieving that particular opportunity.
+Why is a business case used, is really used to convince decision-makers of a certain course of action? So, a business case is done to identify the problem, layout potential solutions and their cost and their benefits, but the big thing is the recommendation, right, that person is driving and saying 'here is what we should be doing and here's how we should be solving this problem and we should be taking action to do that, and here's why so it's kind of almost a sales technique to sell the business and investing money into solving that particular problem or working towards achieving that particular opportunity.
 
-When Business Case is used, I want to make sure I covered two things here. Number one, a business case is really done and on almost all projects. The only difference is whether it is written or not. A business case is kind of how you work through if you are going to move forward on something, you work through that decision process.
+## When it is Used?
 
-First off 'OK, what are we trying to solve?'. OK. Next up,
-'what are the different solutions that we could potentially use to solve that problem?'
+When Business Case is used, I want to make sure I covered two things here. Number one, a business case is really done on almost all projects. The only difference is whether it is written or not. A business case is a kind of how you work through if you are going to move forward on something, you work through that decision process.
+
+First of all,  'OK, what are we trying to solve?'. OK. Next up,
+What are the different solutions that we could potentially use to solve that problem?'
 What's the return on investment?
 What's the cost?
 What's the benefit to be able to do that?
-And then, what's the recommended solution?
+And then, What's the recommended solution?
 
-And, so most of us do that in our head as we're working through and deciding if we should be moving forward on a course of action. But a business case is a formal document that's done because that document that's being created by a person that's not making the decision ultimately, so they're creating that document to sell the decision maker on you know moving forward, one, taking some action and then two, taking action in the recommended way they want.
-Second thing is this is kind of obvious and I've talked about it a little bit already is the business case is done prior to a project. So there's no point in doing a business case after you are working on the project because the business is already investing in that particular project, but it's done early on usually to get funding, to get budget, to move forward and actually kick off and square up a project to actually move forward and solve for that. So that's when it's done, that's when a business case is used.
+And, so most of us do that in our head as we're working through and deciding if we should be moving forward on a course of action. But a business case is a formal document that's done because that document that's being created by a person that's not making the decision ultimately, so they're creating that document to sell the decision-maker on you know moving forward, one, taking some action and then two, taking action in the recommended way they want.
+The second thing is this is kind of obvious and I've talked about it a little bit already is the business case is done prior to a project. So there's no point in doing a business case after you are working on the project because the business is already investing in that particular project, but it's done early on usually to get funding, to get budget, to move forward, and actually kick off and square up a project to actually move forward and solve for that. So that's when it's done, that's when a business case is used.
 
-So who creates a business case?
-Well, it's different per company and per industry and really per project sometimes and different companies will have certain departments or projects that need a business case, other times they don't. But in regards to who creates it, it can be a lot of different people. The most common people I see created are our business executives, so those are you know upper level management. This could be VPs, this could be directors so people that have managers or above reporting to them, then you have the business manager, so this is a person that leads a team.
-They can be creating the business case or it could be a business analyst and there's times, there's roles of business analyst where they're located more on the business side of things. And that's what they do. They're driving forward business cases to then, you know, sell the business and making the improvement or solving the problem and then that business analyst works that project through to completion.
-So the kind of who, in this case, for this particular lecture, we're going to assume that we're creating the business case or at least we're helping create the business case, so that we you understand writing
+## Who creates a business case?
+Well, it's different per company and per industry and really per project sometimes and different companies will have certain departments or projects that need a business case, other times they don't. But in regards to who creates it, it can be a lot of different people. The most common people I see created are our business executives, so those are you know upper-level management. This could be VPs, this could be directors so people that have managers or above reporting to them, then you have the business manager, so this is a person that leads a team.
+They can be creating the business case or it could be a business analyst and there are times, there are roles of business analyst where they're located more on the business side of things. And that's what they do. They're driving forward business cases to then, you know, sell the business and making the improvement or solving the problem, and then that business analyst works that project through to completion.
+So the kind of who, in this case, for this particular lecture, we're going to assume that we're creating the business case or at least we're helping create the business case, so that we understand writing.
 
-## 5 Phases of Creating an Effective Business Case
+# 5 Phases of Creating an Effective Business Case
 
 1.  Initial Analysis
 2.  Determining Potential Solution
