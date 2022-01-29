@@ -2,11 +2,11 @@
 layout: post
 title: Introduction to Business Analysis
 subtitle: Everything You Need to Know About Business Analysis
-tags: [business system analysis, system analysis, business analysis, ba]
-image: /assets/img/selenium-with-python.png
+tags: [business system analysis, system analysis, business analysis, business analyst, ba]
+image: /assets/img/diary.png
 bigimg: /assets/img/back.gif
-thumbnail-img: /assets/img/selenium-with-python.png
-share-img: /assets/img/selenium-with-python.png
+thumbnail-img: /assets/img/diary.png
+share-img: /assets/img/diary.png
 ---
 
 Business analysis is not the type of career where you need to necessarily be prepared for anything, but expect the occasional surprise or unexpected situation. In most business analyst jobs, you’ll experience a fair amount of variety in your day-to-day work. And while this is not a role like IT support requiring near-constant interaction with others and real-time prioritization, priorities shift and a certain amount of flexibility and responsiveness is important. Of course, if your company experiences a catastrophe or uncovers a significant unexpected opportunity you will most likely be called in to help on short notice, but that’s the exception, not the rule.
