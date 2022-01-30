@@ -21,6 +21,7 @@ Requirement Basic Quick Links to Topic
 	- [What Makes a Good Requirements?](#what-makes-a-good-requirements)
 - [SMART Requirement](#smart-requirement)
 - [Tips for producing valid requirement](#tips-for-producing-valid-requirement)
+- [Terms to Avoid:](#terms-to-avoid)
 - [Business Rules](#business-rules)
 	- [Business Rules Vs Business Requirement](#business-rules-vs-business-requirement)
 
@@ -185,10 +186,10 @@ What is a SMART Requirement?
     			□ Dependencies on other requirements
     			□ Importance
 
-
 # Tips for producing valid requirement
 
 Tips for Producing Valid Requirement:
+
 - Should use the word shall
 - Only one shall per requirement
 - Written in short, simple sentences
@@ -197,7 +198,7 @@ Tips for Producing Valid Requirement:
 - Accompanied by notes and comments to support and clarify
 - Stated imperatively
 - Don’t use will and should
-Tips for Producing Valid Requirement:
+  Tips for Producing Valid Requirement:
 - Or – Select one of the options
 - Can, should – Expresses desire or suggestion instead of requirement
 - Must – 100% reliability
@@ -206,7 +207,8 @@ Tips for Producing Valid Requirement:
 - But not limited to, etc. – Incomplete requirement/thought
 - Shall – dictates specification and functional capability
 
-Terms to Avoid:
+# Terms to Avoid:
+
 • Adequate • Approximately • Better than • Comparison • Easy • Maintainable • Maximize • Minimize • Normally • Optimize • Quality product • Quick • Rapid • Substantial • Sufficient • Timely
 Lecture: Phases of requirements Process
 
@@ -279,7 +281,6 @@ Business Rules Best Practices:
 {: .box-success}
 Enjoy !!!
 See Yaaa, Next.
-
 
 For Any Query or Task Contact Me @
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
