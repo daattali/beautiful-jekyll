@@ -10,8 +10,11 @@ thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
 ---
 
-Requirement Basic Quick Links to Topic
+Software requirement is a functional or non-functional need to be implemented in the system. Functional means providing particular service to the user. 
+For example, in context to banking application the functional requirement will be when customer selects "View Balance" they must be able to look at their latest account balance. 
+Software requirement can also be a non-functional; it can be a performance requirement. For example, a non-functional requirement is where every page of the system should be visible to the users within 5 seconds. 
 
+Quick Links to Topic
 - [Overview of Requirement](#overview-of-requirement)
 	- [What is Requirement?](#what-is-requirement)
 	- [Requirements Can be Categorized in the following:](#requirements-can-be-categorized-in-the-following)
@@ -210,14 +213,14 @@ Tips for Producing Valid Requirement:
 # Terms to Avoid:
 
 • Adequate • Approximately • Better than • Comparison • Easy • Maintainable • Maximize • Minimize • Normally • Optimize • Quality product • Quick • Rapid • Substantial • Sufficient • Timely
-Lecture: Phases of requirements Process
 
-Phase of the Requirements Process: 1. Requirement Elicitation 2. Requirement Analysis 3. Requirement Specification 4. Requirements Approval
+Phase of the Requirements Process: 
+1. Requirement Elicitation 
+2. Requirement Analysis 
+3. Requirement Specification
+4. Requirements Approval
 
 # Business Rules
-
-Phase of the Requirements Process: 1. Requirement Elicitation 2. Requirement Analysis 3. Requirement Specification 4. Requirements Approval
-
 - What are Business Rules?
 - Business Rules vs Business Requirements
 - Best Practices
