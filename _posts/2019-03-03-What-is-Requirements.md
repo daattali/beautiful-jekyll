@@ -10,8 +10,8 @@ thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
 ---
 
-Software requirement is a functional or non-functional need to be implemented in the system. Functional means providing particular service to the user. 
-For example, in context to banking application the functional requirement will be when customer selects "View Balance" they must be able to look at their latest account balance. 
+Software requirement is a functional or non-functional need to be implemented in the system. Functional means providing particular service to the user. For example, in context to banking application the functional requirement will be when customer selects "View Balance" they must be able to look at their latest account balance. 
+
 Software requirement can also be a non-functional; it can be a performance requirement. For example, a non-functional requirement is where every page of the system should be visible to the users within 5 seconds. 
 
 Quick Links to Topic
@@ -78,11 +78,11 @@ Functional Requirements Example:
     • Legal Requirements – conformance to applicable laws
 
 Non-Functional Requirements Example:
-• The product shall use the company colors and logos
-• The product shall be intuitive, even to first time users
-• The product shall only allow bakers and administrators to view recipes
-• The product shall be easily upgraded for future business needs
-• The product shall be scalable to multiple bakery locations
+- The product shall use the company colors and logos
+- The product shall be intuitive, even to first time users
+- The product shall only allow bakers and administrators to view recipes
+- The product shall be easily upgraded for future business needs
+- The product shall be scalable to multiple bakery locations
 
 ## Product Constraints:
 
@@ -91,23 +91,24 @@ Non-Functional Requirements Example:
     • Users of the Product – intended end-users and how they affect product usability
     • Requirements Constraints – limitations of the project and restrictions on design
     • Naming Conventions and Definitions – vocabulary of the product
-    Relevant Facts – outside influences that make a difference to this product
+    • Relevant Facts – outside influences that make a difference to this product
     • Assumptions – assumptions developers are making
 
 Product Constraint Example:
-• The product budget must not exceed $50,000
-• The product shall run on the company’s existing machines
-• Implementation of the product cannot interrupt daily business
-• The last 5 years of historical data needs to be made available in the product
+- The product budget must not exceed $50,000
+- The product shall run on the company’s existing machines
+- Implementation of the product cannot interrupt daily business
+- The last 5 years of historical data needs to be made available in the product
 
 ## What Makes a Good Requirements?
 
-A can make a long list of word like Accountable, Understandable, Attainable, Modifiable, Testable, Traceable, Measurable, Feasible, Allocable, Concise, Consistent, Complete, Correct, Feasible, Design Independent, Necessary, Organized, Unambiguous, Prioritized, and so on.
+A can make a long list of word like ☑ Accountable, ☑ Understandable, ☑ Attainable, ☑ Modifiable, ☑ Testable, ☑ Traceable, ☑ Measurable, ☑ Feasible, ☑ Allocable, ☑ Concise, ☑ Consistent, ☑ Complete, ☑ Correct, ☑ Feasible, ☑ Design Independent, ☑ Necessary, ☑ Organized, ☑ Unambiguous, ☑ Prioritized, and so on.
+
 But we will use SMART formula like setting goal.
 
 # SMART Requirement
 
-SMART = Specific, Measurable, Attainable, Reasonable, Traceable
+**SMART** = Specific, Measurable, Attainable, Reasonable, Traceable
 What is a SMART Requirement?
 
     1. Specific:
