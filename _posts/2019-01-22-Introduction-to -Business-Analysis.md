@@ -31,6 +31,7 @@ _Qucik Link to Specific Topic:_
 - [Responsibilities (IT):](#responsibilities-it)
   - [Types of Business Analyst Role:](#types-of-business-analyst-role)
 
+
 # What is Business Analysis?
 
 Business Analysis is a disciplined approach for introducing and managing change to organizations, whether they are for-profit businesses, governments, or non-profits.
@@ -98,5 +99,9 @@ Other common job titles for people who perform business analysis include:
 {: .box-success}
 Enjoy !!!
 See Yaaa, Next.
+
+For Any Query or Task Contact Me @
+[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
+[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:rafayet13@gmail.com)
 
 ![Diary](/assets/img/diary.png "Diary")

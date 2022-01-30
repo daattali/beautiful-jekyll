@@ -34,6 +34,8 @@ _Qucik Link to Specific Topic:_
     - [Accountable:](#accountable)
     - [Consulted:](#consulted)
     - [Informed:](#informed)
+- [Rafayet Hossain](#rafayet-hossain)
+  - [Business Analyst ☑ SQA ☑ Certified Lean Six Sigma Black Belt ☑ Writer (Open for Contract)](#business-analyst--sqa--certified-lean-six-sigma-black-belt--writer-open-for-contract)
 
 **Pre-Project Activities**
 
@@ -226,5 +228,11 @@ Critical tool to understand and align the responsibilities of stakeholders It’
 {: .box-success}
 Enjoy !!!
 See Yaaa, Next.
+
+# Rafayet Hossain
+## Business Analyst ☑ SQA ☑ Certified Lean Six Sigma Black Belt ☑ Writer (Open for Contract)
+For Any Query or Task Contact Me @
+[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
+[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:rafayet13@gmail.com)
 
 ![Diary](/assets/img/diary.png "Diary")
