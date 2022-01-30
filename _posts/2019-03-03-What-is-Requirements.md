@@ -189,22 +189,22 @@ What is a SMART Requirement?
 # Tips for producing valid requirement
 
 Tips for Producing Valid Requirement:
-• Should use the word shall
-• Only one shall per requirement
-• Written in short, simple sentences
-• Consistent terminology
-• Stated positively
-• Accompanied by notes and comments to support and clarify
-• Stated imperatively
-• Don’t use will and should
+- Should use the word shall
+- Only one shall per requirement
+- Written in short, simple sentences
+- Consistent terminology
+- Stated positively
+- Accompanied by notes and comments to support and clarify
+- Stated imperatively
+- Don’t use will and should
 Tips for Producing Valid Requirement:
-• Or – Select one of the options
-• Can, should – Expresses desire or suggestion instead of requirement
-• Must – 100% reliability
-• Are, is, will – Descriptive part to lead into the requirement
-• Support, and/or – Confusing
-• But not limited to, etc. – Incomplete requirement/thought
-• Shall – dictates specification and functional capability
+- Or – Select one of the options
+- Can, should – Expresses desire or suggestion instead of requirement
+- Must – 100% reliability
+- Are, is, will – Descriptive part to lead into the requirement
+- Support, and/or – Confusing
+- But not limited to, etc. – Incomplete requirement/thought
+- Shall – dictates specification and functional capability
 
 Terms to Avoid:
 • Adequate • Approximately • Better than • Comparison • Easy • Maintainable • Maximize • Minimize • Normally • Optimize • Quality product • Quick • Rapid • Substantial • Sufficient • Timely
