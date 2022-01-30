@@ -9,12 +9,14 @@ bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
 ---
+Requirement is a description of the service that software must offer. A requirement can range from the high-level abstract statement of the sender's necessity to detailed mathematical functional requirement specifications. 
 
-Software requirement is a functional or non-functional need to be implemented in the system. Functional means providing particular service to the user. For example, in context to banking application the functional requirement will be when customer selects "View Balance" they must be able to look at their latest account balance. 
+Software requirement is a functional or non-functional need to be implemented in the system. Functional means providing particular service to the user. For example, in context to banking application the functional requirement will be when customer selects "View Balance" they must be able to look at their latest account balance.
 
-Software requirement can also be a non-functional; it can be a performance requirement. For example, a non-functional requirement is where every page of the system should be visible to the users within 5 seconds. 
+Software requirement can also be a non-functional; it can be a performance requirement. For example, a non-functional requirement is where every page of the system should be visible to the users within 5 seconds.
 
-Quick Links to Topic
+_Quick Links to Topic:_
+
 - [Overview of Requirement](#overview-of-requirement)
 	- [What is Requirement?](#what-is-requirement)
 	- [Requirements Can be Categorized in the following:](#requirements-can-be-categorized-in-the-following)
@@ -31,10 +33,11 @@ Quick Links to Topic
 # Overview of Requirement
 
 Why Do I Need Requirements?
-• Guides the design of the eventual solution
-• Without correct requirements, you cannot design or build the correct product.
 
-60% of project failures originate with the requirements.
+- Guides the design of the eventual solution
+- Without correct requirements, you cannot design or build the correct product.
+
+Do you know 60% of project failures originate with the requirements.
 
 ## What is Requirement?
 
@@ -59,12 +62,13 @@ Something a product must do or a quality it must have.
     • Functional and Data Requirements – Things the product must do and data manipulated by the functions
 
 Functional Requirements Example:
-• The product must track recipes down the ingredient and quantity level
-• The recipes must be editable by an administrator
-• The product must display the orders that need to be completed
-• The product must display the recipes to make the orders
-• The product must track ingredients including their cost, vendors, and quantity in inventory
-• The product must interact with the current Point of Sale system
+
+- The product must track recipes down the ingredient and quantity level
+- The recipes must be editable by an administrator
+- The product must display the orders that need to be completed
+- The product must display the recipes to make the orders
+- The product must track ingredients including their cost, vendors, and quantity in inventory
+- The product must interact with the current Point of Sale system
 
 ## Non-Functional Requirements:
 
@@ -78,6 +82,7 @@ Functional Requirements Example:
     • Legal Requirements – conformance to applicable laws
 
 Non-Functional Requirements Example:
+
 - The product shall use the company colors and logos
 - The product shall be intuitive, even to first time users
 - The product shall only allow bakers and administrators to view recipes
@@ -95,6 +100,7 @@ Non-Functional Requirements Example:
     • Assumptions – assumptions developers are making
 
 Product Constraint Example:
+
 - The product budget must not exceed $50,000
 - The product shall run on the company’s existing machines
 - Implementation of the product cannot interrupt daily business
@@ -215,13 +221,15 @@ Tips for Producing Valid Requirement:
 
 • Adequate • Approximately • Better than • Comparison • Easy • Maintainable • Maximize • Minimize • Normally • Optimize • Quality product • Quick • Rapid • Substantial • Sufficient • Timely
 
-Phase of the Requirements Process: 
-1. Requirement Elicitation 
-2. Requirement Analysis 
+Phase of the Requirements Process:
+
+1. Requirement Elicitation
+2. Requirement Analysis
 3. Requirement Specification
 4. Requirements Approval
 
 # Business Rules
+
 - What are Business Rules?
 - Business Rules vs Business Requirements
 - Best Practices
