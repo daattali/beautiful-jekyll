@@ -10,7 +10,7 @@ subtitle: ''
 
 #### Course Description
 
-_The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits. Sound good? Ready to start simplifying and create a **simple home**? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started!
+_The Simplify Your Home Life: a course for busy moms_ is a six week online course (or go at your own pace) designed to help busy moms explore how to simplify home life in many key, practical areas such as daily routines, decluttering, and habits. Sound good? Ready to start simplifying and create a **simple home**? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX) to get started! **Now 50% off with the code: 50HOME**
 
 ### LOOKING FOR MORE WAYS TO SIMPLIFY YOUR HOME LIFE AND CREATE A SIMPLE HOME?
 
@@ -62,7 +62,11 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames\[1\]='FNAME';ftypes\[1\]='text';fnames\[0\]='EMAIL';ftypes\[0\]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 
+<br>
+
 ### SIMPLIFY YOUR HOME LIFE: A COURSE FOR BUSY MOMS:
+
+<br>
 
 #### Overview of the units
 
@@ -81,13 +85,15 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 
 **Please note:** This course is not a one-time solution as I believe that life is a process of learning and growing. However, I promise you that this course is packed with things you can grow with going forward. I’m just like you, wading through finding myself over the years at home. Welcome to _Simplify Your Home Life: a course for busy moms_! Let's start creating our **simple home**!
 
-##### Pricing
+#### Pricing
 
-$59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX). **Please note:** I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
+$59.99 CAD (about $48 USD). You can purchase [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX). **Now 50% off with the code: 50HOME** 
+
+**Please note:** I’ll email you a link to the course within 24 hours! Email me at simplehomemom@gmail.com or find me [@simplehomemom](https://www.instagram.com/simplehomemom) on Instagram if anything goes wonky with technology. Thanks! :)
 
 ![](/uploads/reviews-for-blog-1.jpg)
 
-### READY TO START SIMPLIFYING AND CREATING A SIMPLE HOME? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)!
+### READY TO START SIMPLIFYING AND CREATING A SIMPLE HOME? Click [HERE](https://buy.stripe.com/cN202a5Ou0206MUeUX)! Now 50% off with the code: 50HOME
 
 <br>
 

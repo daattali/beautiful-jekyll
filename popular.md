@@ -6,17 +6,17 @@ subtitle: ''
 ---
 ## Quick links
 
+* [How to Do a Zero Spend Month that Works For You **+ a plan your zero spend month freebie**](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
+* Grab My Simple Daily Care Printables [HERE](https://mailchi.mp/d739479e4b35/mysimpledailycare)
 * [Newest blogs](https://www.simplehomemom.com)
-* [FREEBIE master cleaning task list+How to Develop Cleaning and Tidying Routines in 4 Simple Steps](https://www.simplehomemom.com/how-to-develop-cleaning-and-tidying-routines-in-4-simple-steps/)
-* [Simple Planning Blogs](https://www.simplehomemom.com/tags/#simple%20planning) + [My Simple Planner](https://buy.stripe.com/28o02a7WCeWUdbi3cg) (just a purchase page..I'm working on an official planner page soon!)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
 ## Resources
 
 * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
-* NEW: [My Simple Planner](https://buy.stripe.com/28o02a7WCeWUdbi3cg) (just a purchase page..I'm working on an official planner page soon!)
+* [Simple Planning Blogs](https://www.simplehomemom.com/tags/#simple%20planning) + [My Simple Planner](https://buy.stripe.com/28o02a7WCeWUdbi3cg) (just a purchase page..I'm working on an official planner page soon!)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
-* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course)
+* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) (50% off with the code 50HOME)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 
 ## Podcasts
