@@ -16,7 +16,7 @@ subtitle: ''
 * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
 * [Simple Planning Blogs](https://www.simplehomemom.com/tags/#simple%20planning) + [My Simple Planner](https://buy.stripe.com/28o02a7WCeWUdbi3cg) (just a purchase page..I'm working on an official planner page soon!)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
-* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) (50% off!)
+* [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) (50% off with the code 50HOME)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 
 ## Podcasts
