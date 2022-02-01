@@ -26,7 +26,7 @@ This is the geodesic trajectory of healthy brain growth (from 27 to 38 gestation
 </details>
 
 <details>
-  <summary><font size="4" color="#37940f">Click here to display the transformation of the template brain towards Subject 2</font></summary>
+  <summary><font size="4" color="#40a115">Click here to display the transformation of the template brain towards Subject 2</font></summary>
 <br />
 Registration computes the transformation needed to map the healthy template at age 34 weeks towards the subject's brain, which has age 34 weeks (green arrow). The resulting transformation can be seen as a distance from normality.
 <br />
