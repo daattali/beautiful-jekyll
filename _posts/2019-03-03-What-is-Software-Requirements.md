@@ -297,7 +297,7 @@ See Yaaa, Next.
 
 <h3> About Me </h3>
 <h1> Rafayet Hossain <h1>
-<h3> ☑ Business Analyst ☑ SQA ☑ Certified Lean Six Sigma Black Belt </h3>
+<h3> ☑ Certified Lean Six Sigma Black Belt ☑ Business Analyst ☑ SQA </h3>
 
 For Any Query or Task Contact Me @
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
