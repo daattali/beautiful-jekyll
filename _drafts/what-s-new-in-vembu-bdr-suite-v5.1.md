@@ -18,7 +18,7 @@ As you know most backup solution often rely on local storage or some flavour of 
 
 **Backup Copy**
 
-The backup copy feature allows you to create a copy of your primary backup data and store it in a different backup repository. You can use the local storage mediums or object storage as a destination for the backup copy jobs. If the primary backup data is damaged, you can use the backup copy to recover the data. The backup copy supports all the recovery options as the primary backup.
+Like mentioned before, the 3-2-1 rule states that you should have 3 copies of your data, on 2 different mediums and 1 offsite copy. The Backup Copy feature in BDRSuite v5.1 will now allow you to create a copy of your primary backup data and store it in a different backup repository. Note that you can leverage Object Storage backup repos.
 
 **BDR Cluster Deployment**
 
