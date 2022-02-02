@@ -52,7 +52,7 @@ Then you just have to redeploy the cluster and the pod should initialize correct
 
 ![](/img/vcsicrashloopbackoff7.png)
 
-Alternatively if you want to fix a running cluster, you can also edit the **_csi-vsphere-config_** secret in the **_kube-system_** namespace (you’ll have to decode and encode with base64) and then delete the **_csi-controller _**pod to get it recreated with the updated secret.
+Alternatively if you want to fix a running cluster, you can also edit the **_csi-vsphere-config_** secret in the **_kube-system_** namespace (you’ll have to decode and encode with base64) and then delete the **_csi-controller_** pod to get it recreated with the updated secret.
 
 You can then start using the vSphere CSI driver to provision Cloud Native Storage in your environment but that will be the topic of another blog.
 
