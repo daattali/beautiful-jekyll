@@ -4,10 +4,10 @@ title: What is Software Requirements
 subtitle: Everything About Software Requirements
 tags:
   [business system analysis, system analysis, business analysis, requirement]
-image: /assets/img/selenium-with-python.png
+image: /assets/img/diary.png
 bigimg: /assets/img/back.gif
-thumbnail-img: /assets/img/selenium-with-python.png
-share-img: /assets/img/selenium-with-python.png
+thumbnail-img: /assets/img/diary.png
+share-img: /assets/img/diary.png
 ---
 Requirement is a description of the service that software must offer. A requirement can range from the high-level abstract statement of the sender's necessity to detailed mathematical functional requirement specifications. 
 
@@ -294,6 +294,9 @@ Business Rules Best Practices:
 Enjoy !!!
 See Yaaa, Next.
 
+<h3> About Me </h3>
+<h1> Rafayet Hossain <h1>
+<h3> ☑ Business Analyst ☑ SQA ☑ Certified Lean Six Sigma Black Belt </h3>
 For Any Query or Task Contact Me @
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:rafayet13@gmail.com)
