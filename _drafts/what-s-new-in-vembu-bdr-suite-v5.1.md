@@ -8,7 +8,9 @@ metadescription: Learn about the new features and improvements released with Vem
 image: ''
 
 ---
-The world of data protection has been in motion for the past several years with the rise of cloud services and SaaS in general. Vembu BDRSuite carved a place for the company among the leading backup software vendors for the SMB sector with a robust virtual machine backup and recovery solution. While the core components are still being improved to answer production problematics, BDRSuite brought extensive cloud integration features in the latest versions to maintain the products place on the podium.
+The world of data protection has been in motion for the past several years with the rise of cloud services and SaaS in general. Vembu BDRSuite carved a place for the company among the leading backup software vendors for the SMB sector with a robust virtual machine backup and recovery solution. 
+
+While the company keeps improving the core components to answer customer feedback, BDRSuite brought extensive cloud integration features in the latest versions to maintain the products place on the podium.
 
 Following a change to a more rapid product releases cycle, Vembu announced the release of BDRSuite v5.1 Only four months after the release of [BDRSuite v5.0](https://www.vxav.fr/2021-10-11-vembu-bdr-suite-v5.0-ga-release/). BDRSuite v5.1 brings, among other things, the long awaited Object Storage Backup Repository and Backup Copy capabilities. Let's dig into it and find out what's new in Vembu BDR Suite v5.1.
 
@@ -30,7 +32,11 @@ Like mentioned before, the 3-2-1 rule states that you should have 3 copies of yo
 
 #### BDR Cluster Deployment
 
-Many aspects of the datacenter often raise the question of wether to scale-up or scale-out. While scaling up may produce the same outcome, it induces some downtime while resizing the server and isn't particularly flexible. This is why BDRSuite v5.1 introduces BDR Cluster Deployment, a feature that lets you easily scale out your BDRSuite Backup Server by adding instances. You can then make them work together for load balancing and high availability
+Many aspects of the datacenter often raise the question of wether to scale-up or scale-out. While scaling up may produce the same outcome, it induces some downtime while resizing the server and isn't particularly flexible. This is why BDRSuite v5.1 introduces BDR Cluster Deployment, a feature that lets you easily scale out your BDRSuite Backup Server by adding instances. You can then make them work together for load balancing and high availability.
+
+Note that you can convert a standalone installation into a cluster setup as you can see on the screenshot of my server below.
+
+![](/img/vembu5-13.png)
 
 #### Additional product enhancements
 
@@ -51,3 +57,7 @@ A number of additional improvements are brought into BDRSuite v5.1 on top of the
 #### BDRSuite v5.1 update
 
 Updating your Vembu BDRSuite server is very easy. However, it is recommended to review the [Software Update Guide](https://www.vembu.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) to make sure your scenario is covered and the [Upgrade Checklist](https://www.vembu.com/pdf/release-notes/vembu-bdr-suite-v5-0-ga-pre-and-post-checklist.pdf) before upgrading to BDRSuite v5.1.
+
+#### Wrap up
+
+Product management and including customer feedback to the roadmap is important for any company to answer real world problematic and not only cover the angles of the industry standards. Vembu has been doing it brilliantly so far in Vembu BDRSuite v5.1 with a lot of improvements in a relatively short span of time. I will be sure to keep my eyes peeled in the next few months to find out what the next versions of the product will bring in terms of features and improvements.
