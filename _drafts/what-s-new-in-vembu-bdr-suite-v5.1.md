@@ -23,3 +23,23 @@ Like mentioned before, the 3-2-1 rule states that you should have 3 copies of yo
 #### BDR Cluster Deployment
 
 Many aspects of the datacenter often raise the question of wether to scale-up or scale-out. While scaling up may produce the same outcome, it induces some downtime while resizing the server and isn't particularly flexible. This is why BDRSuite v5.1 introduces BDR Cluster Deployment, a feature that lets you easily scale out your BDRSuite Backup Server by adding instances. You can then make them work together for load balancing and high availability 
+
+#### Additional product enhancements
+
+A number of additional improvements are brought into BDRSuite v5.1 on top of the features presented above. Among which we find:
+
+* Backup database optimized for better performance
+* Reconnection attempts for the backup replication to Offsite DR Server
+* Option to run the tape backup jobs immediately after saving it
+* Option to run the tape backup jobs on-demand from the BDR & ODR Server
+* The tree listing of the tape backup recovery page has been updated
+* Automatically backup the tape agent database daily for disaster recovery scenarios
+* Restore OneDrive/Group OneDrive files & folders to local storage drives
+* Download Microsoft 365 Calendar & Contact items directly from the BDRSuite Backup Server UI
+* Restore Google Drive files & folders to local storage drives
+* Download Google Workspace Calendar & Contact items directly from the BDRSuite Backup Server UI
+* AWS EC2 Instance level Recovery
+
+#### BDRSuite v5.1 update
+
+Updating your Vembu BDRSuite server is very easy. However, it is recommended to review the [Software Update Guide](https://www.vembu.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) to make sure your scenario is covered and the [Upgrade Checklist](https://www.vembu.com/pdf/release-notes/vembu-bdr-suite-v5-0-ga-pre-and-post-checklist.pdf) before upgrading to BDRSuite v5.1.
