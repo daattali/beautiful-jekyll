@@ -9,7 +9,8 @@ bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/diary.png
 ---
-Requirement is a description of the service that software must offer. A requirement can range from the high-level abstract statement of the sender's necessity to detailed mathematical functional requirement specifications. 
+
+Requirement is a description of the service that software must offer. A requirement can range from the high-level abstract statement of the sender's necessity to detailed mathematical functional requirement specifications.
 
 Software requirement is a functional or non-functional need to be implemented in the system. Functional means providing particular service to the user. For example, in context to banking application the functional requirement will be when customer selects "View Balance" they must be able to look at their latest account balance.
 
@@ -297,8 +298,11 @@ See Yaaa, Next.
 <h3> About Me </h3>
 <h1> Rafayet Hossain <h1>
 <h3> ☑ Business Analyst ☑ SQA ☑ Certified Lean Six Sigma Black Belt </h3>
+
 For Any Query or Task Contact Me @
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:rafayet13@gmail.com)
+
+
 
 ![Diary](/assets/img/diary.png "Diary")
