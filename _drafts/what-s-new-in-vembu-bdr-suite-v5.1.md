@@ -12,7 +12,7 @@ The world of data protection has been in motion for the past several years with 
 
 Following a change to a more rapid product releases cycle, Vembu announced the release of BDRSuite v5.1 Only four months after the release of [BDRSuite v5.0](https://www.vxav.fr/2021-10-11-vembu-bdr-suite-v5.0-ga-release/). BDRSuite v5.1 brings, among other things, the long awaited Object Storage Backup Repository and Backup Copy capabilities. Let's dig into it and find out what's new in Vembu BDR Suite v5.1.
 
-[![/img/vembu5-1.png](https://app.forestry.io/sites/idjk6k4p8losnq/body-media//img/vembu5-1.png)](https://www.vembu.com/vembu-bdr-suite-download/)
+[![](/img/vembu-download.png)](https://www.vembu.com/vembu-bdr-suite-download/#)
 
 Vembu BDR Suite is a Windows or Linux installer and you can use it unrestricted for free during a **30 days trial period**.
 
