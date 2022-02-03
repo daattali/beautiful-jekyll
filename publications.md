@@ -8,6 +8,42 @@ Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qi
 Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work. 
 
 <table cellpadding="10" width="100%">
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/ossid.jpg" img width="250" height="100">
+        </td>
+        <td><a href="https://arxiv.org/abs/2201.07309">OSSID: Online Self-Supervised Instance Detection by (and for) Pose Estimation</a><br>
+            <div class="pubauthor">
+                Qiao Gu, Brian Okorn, David Held<br>
+            </div>
+            <div id="bib2022ossid" style="display:none">
+                <blockquote>
+<pre>@inproceedings{icra2022ossid,
+    title={OSSID: Online Self-Supervised Instance Detection by (and for) Pose Estimation},
+    author={Qiao Gu, Brian Okorn, David Held},
+    booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+    year={2022}}
+</pre>
+                </blockquote>
+            </div>
+            <div id="abs2022ossid" style="display:none">
+                <blockquote>
+                    Real-time object pose estimation is necessary for many robot manipulation algorithms. However, state-of-the-art methods for object pose estimation are trained for a specific set of objects; these methods thus need to be retrained to estimate the pose of each new object, often requiring tens of GPU-days of training for optimal performance. In this paper, we propose the OSSID framework, leveraging a slow zero-shot pose estimator to self-supervise the training of a fast detection algorithm. This fast detector can then be used to filter the input to the pose estimator, drastically improving its inference speed. We show that this self-supervised training exceeds the performance of existing zero-shot detection methods on two widely used object pose estimation and detection datasets, without requiring any human annotations. Further, we show that the resulting method for pose estimation has a significantly faster inference speed, due to the ability to filter out large parts of the image. Thus, our method for self-supervised online learning of a detector (trained using pseudo-labels from a slow pose estimator) leads to accurate pose estimation at real-time speeds, without requiring human annotations.
+                </blockquote>
+            </div>
+            <div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference of Robotics and Automation (ICRA), 2022
+            <div style="font-size:small">
+                <a href="https://georgegu1997.github.io/OSSID/">[Project Page]</a>
+                <!-- <a href="https://github.com/r-pad/zephyr">[Code]</a> -->
+                <a href="javascript:copy(div2022ossid, bib2022ossid)">[Bibtex]</a>
+                <a href="javascript:copy(div2022ossid, abs2022ossid)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2201.07309.pdf">[PDF]</a>
+            </div>
+            <div id="div2022ossid" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
 
     <tr>
         <td class="pubimg" width="250" height="150" style="text-align:center">
