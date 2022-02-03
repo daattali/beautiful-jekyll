@@ -25,7 +25,8 @@ title: ""
 **_American Political Science Review_**, Revise and Resubmit.
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_postJMP.pdf) <br>
-**David A. Lake Award** for best paper presented at IPES 2020. Under Review.
+**_American Journal of Political Science_**, Revise and Resubmit.<br>
+David A. Lake Award for best paper presented at IPES 2020. 
 
 [Treaty Diplomacy and the Global Firm](assets/treaty_regimes_IPES.pdf)
 
@@ -34,13 +35,17 @@ title: ""
 [Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/mtw_sep_2021.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
 Under Review.
 
+[Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/TJ_NBER_2022.pdf) (with Nathan M. Jensen)
+
 ### Works in Progress
 
 _Firms, Diplomats, and Piecemeal Globalization: How Corporate Interests Shape International Institutions_ (Book Project)
 
 Revolving Door Diplomats (with Matt Malis)
 
+Transparency Shocks and Private Governance in Offshore Finance (with Daniel Berliner and Nikhil Kalyanpur)
+
 The Fiscal Legacy of Colonialism (with Vincent Arel-Bundock and Martin Hearson)
 
-Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative (with Nathan M. Jensen)
+
 
