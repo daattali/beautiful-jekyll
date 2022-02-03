@@ -49,10 +49,36 @@ Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec
         <td class="pubimg" width="250" height="150" style="text-align:center">
             <img src="../pics/bmvc2-2021.gif" width="300">
         </td>
-        <td>Self-Supervised Point Cloud Completion via Inpainting<br>
+        <td><a href="https://arxiv.org/abs/2111.10701">Self-Supervised Point Cloud Completion via Inpainting</a><br>
             <div class="pubauthor">Himangi Mittal, Brian Okorn, Arpit Jangid, David Held<br>
             </div>
+            <div id="bib2021bmvc" style="display:none">
+                    <blockquote>
+                        <pre>
+                        @article{mittal2021self,
+                          title={Self-Supervised Point Cloud Completion via Inpainting},
+                          author={Mittal, Himangi and Okorn, Brian and Jangid, Arpit and Held, David},
+                          journal={arXiv preprint arXiv:2111.10701},
+                          year={2021}
+                        }
+                        </pre>
+                </blockquote>
+            </div>
+            <div id="abs2021bmvc" style="display:none">
+                <blockquote>
+                     When navigating in urban environments, many of the objects that need to be tracked and avoided are heavily occluded. Planning and tracking using these partial scans can be challenging. The aim of this work is to learn to complete these partial point clouds, giving us a full understanding of the object's geometry using only partial observations. Previous methods achieve this with the help of complete, ground-truth annotations of the target objects, which are available only for simulated datasets. However, such ground truth is unavailable for real-world LiDAR data. In this work, we present a self-supervised point cloud completion algorithm, PointPnCNet, which is trained only on partial scans without assuming access to complete, ground-truth annotations. Our method achieves this via inpainting. We remove a portion of the input data and train the network to complete the missing region. As it is difficult to determine which regions were occluded in the initial cloud and which were synthetically removed, our network learns to complete the full cloud, including the missing regions in the initial partial cloud. We show that our method outperforms previous unsupervised and weakly-supervised methods on both the synthetic dataset, ShapeNet, and real-world LiDAR dataset, Semantic KITTI. 
+                </blockquote>
+            </div>
             <div class="pubjournal">British Machine Vision Conference (BMVC), 2021 - <award>Oral presentation</award> (Selection rate 3.3%)</div>
+            <div style="font-size:small">
+<!--                 <a href="https://just-go-with-the-flow.github.io/">[Project Page]</a> -->
+<!--                 <a href="https://github.com/HimangiM/Just-Go-with-the-Flow-Self-Supervised-Scene-Flow-Estimation">[Code]</a> -->
+                <a href="javascript:copy(div2021-BMVC, bib2021bmvc)">[Bibtex]</a>
+                <a href="javascript:copy(div2021-BMVC, abs2021bmvc)">[Abstract]</a>
+                <a href="https://arxiv.org/abs/2111.10701">[Arxiv]</a>
+                <a href="https://www.bmvc2021-virtualconference.com/assets/papers/0443.pdf">[PDF]</a>
+                <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
+            </div>
             <div id="div2021-BMVC" class="pubInfo"></div>
             <br>
         </td>
