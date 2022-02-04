@@ -73,13 +73,13 @@ Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec
             <div style="font-size:small">
 <!--                 <a href="https://just-go-with-the-flow.github.io/">[Project Page]</a> -->
 <!--                 <a href="https://github.com/HimangiM/Just-Go-with-the-Flow-Self-Supervised-Scene-Flow-Estimation">[Code]</a> -->
-                <a href="javascript:copy(div2021-BMVC, bib2021bmvc)">[Bibtex]</a>
-                <a href="javascript:copy(div2021-BMVC, abs2021bmvc)">[Abstract]</a>
-                <a href="https://arxiv.org/abs/2111.10701">[Arxiv]</a>
-                <a href="https://www.bmvc2021-virtualconference.com/assets/papers/0443.pdf">[PDF]</a>
+                <a href="javascript:copy(div2021BMVC, bib2021bmvc)">[Bibtex]</a>
+                <a href="javascript:copy(div2021BMVC, abs2021bmvc)">[Abstract]</a>
+                <!--a href="https://arxiv.org/abs/2111.10701">[Arxiv]</a-->
+                <a href="https://arxiv.org/pdf/2111.10701.pdf">[PDF]</a>
                 <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
             </div>
-            <div id="div2021-BMVC" class="pubInfo"></div>
+            <div id="div2021BMVC" class="pubInfo"></div>
             <br>
         </td>
     </tr>
