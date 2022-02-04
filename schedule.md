@@ -35,11 +35,11 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 10-Jan	| Pascal's Triangle		| _No Coaching Session (Mathcounts School Round)_ |  |
 | 17-Jan	| _No school_			| _No Coaching Session (AMC 8)_ |  |
 | 24-Jan	| Sequences				| [2021-2022 Mathcounts School](/files/RMS%202122M%20Exam.pdf) | _Cancelled_ |
-| 31-Jan	| Coordinate Geometry	| [2022 AMC 8](https://artofproblemsolving.com/wiki/index.php/2022_AMC_8_Problems) |  |
+| 31-Jan	| Coordinate Geometry	| _Cancelled_ |  |
 | 7-Feb	  | Ratios 	        | _No Coaching Session (Math Is Cool Regionals)_ |  |
-| 14-Feb	| Travel    	    | [2020 MMT Gallop 1-8](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) | _No school_ |
-| 21-Feb	| _No school_			| [2020 MMT Mounting Mayhem](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) |  |
-| 28-Feb	| Angles and Arcs	|  |  |
+| 14-Feb	| Travel    	    | [2022 AMC 8](https://artofproblemsolving.com/wiki/index.php/2022_AMC_8_Problems) | _No school_ |
+| 21-Feb	| _No school_			| [2020 MMT Gallop 1-8](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) |  |
+| 28-Feb	| Angles and Arcs	| [2020 MMT Mounting Mayhem](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) |  |
 | 7-Mar		| Expected Value  |  | _No school_ |
 | 14-Mar	| Mixture				  |  |  |
 | 21-Mar	| Surface Area & Volume |  |  |
