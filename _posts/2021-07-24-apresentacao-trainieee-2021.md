@@ -18,7 +18,7 @@ Cada Capítulo organizou o Processo TrainIEEE da sua maneira, com diferentes des
 - [<img src="/assets/img/pes_logo.png" alt="drawing" width="50"/> **PES:**](https://ieeecimatec.github.io/pescimatec/) A PES dividiu seu Processo TrainIEEE em 3 etapas, com desafios semanais voltados para 3 diferentes áreas, capacitando os trainIEEEs em: Energia Solar, Arduino e CAD 3D;
 - [<img src="/assets/img/ras_logo.png" alt="drawing" width="50"/> **RAS:**](https://ieeecimatec.github.io/rascimatec/) Assim como o Processo TrainIEEE do EMBS, a primeira etapa do processo da RAS consistiu-se em desafios semanais de Python, contemplando também o conteúdo de Orientação a Objetos. A segunda etapa consistiu-se em simulações no [CoppeliaSim](https://www.coppeliarobotics.com/), em que os voluntários deveriam programar o robô [Pioneer](https://www.generationrobots.com/en/402395-robot-mobile-pioneer-3-dx.html) para resolver um labirinto.
 
-### Desafios dos TrainIEEEs
+<!-- ### Desafios dos TrainIEEEs
 <div class="row">
   <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 mobile-side-scroller">
     <table class="table-borderless highlight">
@@ -29,7 +29,7 @@ Cada Capítulo organizou o Processo TrainIEEE da sua maneira, com diferentes des
         </tr>
     </table>
   </div>
-</div>
+</div> -->
 
 Após a apresentação dos TrainIEEEs, finalizando o nosso Processo Seletivo, entraram um total de 30 novos voluntários em nosso Ramo Estudantil. Confira a seguir a lista de aprovados, para cada um dos capítulos:
 
