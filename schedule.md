@@ -36,7 +36,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 17-Jan	| _No school_			| _No Coaching Session (AMC 8)_ |  |
 | 24-Jan	| Sequences				| [2021-2022 Mathcounts School](/files/RMS%202122M%20Exam.pdf) | _Cancelled_ |
 | 31-Jan	| Coordinate Geometry	| _Cancelled_ |  |
-| 7-Feb	  | Ratios 	        | _No Coaching Session (Math Is Cool Regionals)_ |  |
+| 7-Feb	  | _Cancelled_ 	  | _No Coaching Session (Math Is Cool Regionals)_ | _Cancelled_ |
 | 14-Feb	| Travel    	    | [2022 AMC 8](https://artofproblemsolving.com/wiki/index.php/2022_AMC_8_Problems) | _No school_ |
 | 21-Feb	| _No school_			| [2020 MMT Gallop 1-8](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) |  |
 | 28-Feb	| Angles and Arcs	| [2020 MMT Mounting Mayhem](https://drive.google.com/file/d/1U1yWkWG_3C939-TtqagEPsK02a_YCBX8/view) |  |
@@ -51,7 +51,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 2-May		| Functions				|  |  |
 | 9-May 	| Mass Point Geometry	|  |  |
 | 16-May	| Statistics		  |  |  |
-| 23-May	| Modular Arithmetic	|  | _No school_ |
+| 23-May	| Ratios	|  | _No school_ |
 
 [2020-2021 schedule](/schedule-2021.md)
 
