@@ -12,8 +12,7 @@ css:
 
 ## COVID-19 Information
 
-**Vaccine records will be required & checked before you receive your badge.**
-**Masks worn properly will be required at all times in hotel and convention space.**
+**Vaccine records will be required & checked before you receive your badge.** **Masks worn properly will be required at all times in hotel and convention space.**
 
 Further details about this policy are actively being worked on, and will appear here when ready.
 
@@ -33,6 +32,8 @@ Further details about this policy are actively being worked on, and will appear 
 * This year’s t-shirt.
 * A special super sponsor item from our friends at Con Glomerate Megacorp.
 * An invitation to our Guest of Honor dinner Saturday night.
+
+Please be aware that Pre-Registration prices will end March 1st, 2022 at 11:59 PM CST. Prices then will become Walk-in Prices. Online Registration will shut down March 31st at 11:59 PM CST.
 
 ## Pricing
 
@@ -75,5 +76,7 @@ Check back here and/or follow us on [https://twitter.com/fursquared](https://twi
 ## Questions or Concerns?
 
 Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<br>Fur Squared thanks you for your patience.
+
 # The Registration Link
+
 [https://reg.fursquared.com](https://reg.fursquared.com)
