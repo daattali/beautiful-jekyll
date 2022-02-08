@@ -300,10 +300,10 @@ See Yaaa, Next.
 <h1> Rafayet Hossain <h1>
 <h3> ☑ Certified Lean Six Sigma Black Belt ☑ Business Analyst ☑ SQA </h3>
 
+
+
 For Any Query or Task Contact Me @
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:rafayet13@gmail.com)
 
 
-
-![Diary](/assets/img/diary.png "Diary")
