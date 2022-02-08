@@ -91,7 +91,7 @@ Business analysts play a role in aligning the designed and delivered solutions w
 # Responsibilities (IT):
 
     • Software Project
-    • Define Business Requirement and Translate Business needs to technical documents that can acted upon by a development team
+    • Define Business Requirement and Translate Business needs to technical documents
     • Defining various system and hardware if needed
     • Modifying Processes
     • Identifying needs & opportunity of a business
