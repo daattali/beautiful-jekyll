@@ -7,6 +7,7 @@ image: /img/diary.png
 thumbnail-img: /assets/img/diary.png
 bigimg: /img/cover.jpg
 share-img: /img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Each one of us had a negative experience dealing with software. If you've used Facebook, WhatsApp, or Instagram you already face some issues. Even the best software in the world has defects. The software that does not work correctly can lead to many problems which include loss of money, time, or business reputation, and the most dangerous thing which is injury or death. That's why we needed software testing.

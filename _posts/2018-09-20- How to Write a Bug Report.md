@@ -7,6 +7,7 @@ image: /assets/img/diary.png
 thumbnail-img: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Someone may ask you how to write a good bug report that can make the developer happy. In fact, there is no such thing as a bug report, no matter how beautifully written it is, which can make a developer happy.

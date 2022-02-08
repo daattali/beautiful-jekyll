@@ -7,6 +7,8 @@ image: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
+
 ---
 
 Previously, performance optimization meant only server-side optimization. Because most of the websites were static and their processes were done on the server side.

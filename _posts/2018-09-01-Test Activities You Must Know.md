@@ -7,6 +7,7 @@ image: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Testing is not a single activity but a whole process. This process begins with test planning and ends with test case design, test execution, and evaluation. Therefore, we can divide the basic functions of the testing process into certain steps:

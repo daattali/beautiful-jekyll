@@ -7,6 +7,7 @@ thumbnail-img: /assets/img/diary.png
 image: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Here is a list of common terms that used frequently in Software testing:

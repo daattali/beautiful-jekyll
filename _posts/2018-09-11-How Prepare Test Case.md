@@ -7,6 +7,7 @@ image: /assets/img/diary.png
 thumbnail-img: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Consider any of your software systems under testing as Disneyland Park that you may want to explore. Of course, if you want, you can just buy tickets and visit the park as you wish. While this is fun to do, there is a good chance that you will miss out on interesting places.

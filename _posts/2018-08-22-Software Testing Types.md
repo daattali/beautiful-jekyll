@@ -7,6 +7,7 @@ image: /assets/img/diary.png
 thumbnail-img: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Nowadays anyone can name hundreds of types in software testing. Of course, all of them have the right to survive and to work with. The various techniques and methods that you use to thoroughly verify software or application have a specific purpose behind each type of testing technique.

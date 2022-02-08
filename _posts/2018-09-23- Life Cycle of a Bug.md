@@ -7,6 +7,7 @@ image: /assets/img/diary.png
 bigimg: /assets/img/cover.jpg
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Bug Life Cycle is also known as Defect Life Cycle. It is a journey of Bug (Software Bug)) that goes on at different stages in his life. Suppose the software is driven by a testing process and relies on testing tools. This cycle varies from organization to organization and from project to project.

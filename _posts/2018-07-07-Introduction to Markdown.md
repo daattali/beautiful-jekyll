@@ -7,6 +7,7 @@ image: /assets/img/diary.png
 thumbnail-img: /assets/img/diary.png
 bigimg: /assets/img/background.png
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 toc: true
 toc_float: true
 ---
