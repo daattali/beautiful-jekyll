@@ -7,6 +7,7 @@ image: /assets/img/selenium-with-python.png
 bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
+cover-img: /assets/img/cover.jpg
 ---
 
 

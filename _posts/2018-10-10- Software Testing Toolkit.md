@@ -7,6 +7,7 @@ image: /img/diary.png
 bigimg: /img/cover.jpg
 thumbnail-img: /assets/img/diary.png
 share-img: /img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 You already know the basics of a testing career as well as how testing is done in the industry. In this episode, we will discuss various documents used in testing. Although we have said before that test tools, document formats differ from organization to organization. However, most tools and documents are used for the same purpose.

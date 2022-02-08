@@ -15,6 +15,7 @@ image: /img/selenium-with-python.png
 bigimg: /img/back.gif
 thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /img/selenium-with-python.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Selenium Python bindings provides a simple API to write functional/acceptance tests using Selenium WebDriver. Most of the Python Selenium libraries are very similar to Selenium .Net or Java libraries.

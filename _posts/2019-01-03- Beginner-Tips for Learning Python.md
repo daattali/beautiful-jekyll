@@ -7,6 +7,7 @@ image: /img/selenium-with-python.png
 bigimg: /img/back.gif
 thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /img/selenium-with-python.png
+cover-img: /assets/img/cover.jpg
 ---
 
 I am so excited which you have decided to embark on the journey of gaining knowledge of Automation with Python! In this post we're going to learn the answer to question of

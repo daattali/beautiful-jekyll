@@ -13,6 +13,7 @@ image: /assets/img/diary.png
 bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Section: Requirement Approval

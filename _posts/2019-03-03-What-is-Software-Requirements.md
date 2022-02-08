@@ -8,6 +8,7 @@ image: /assets/img/diary.png
 bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Requirement is a description of the service that software must offer. A requirement can range from the high-level abstract statement of the sender's necessity to detailed mathematical functional requirement specifications.

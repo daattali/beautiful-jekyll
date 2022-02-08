@@ -8,6 +8,7 @@ bigimg: /assets/img/back.gif
 published: true
 thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Python is a general-purpose interpreted programming language used for web development, machine learning, and complex data analysis. Python is widely considered one of the easiest programming languages for a beginner to learn. As a Software Testing Professional You Could choose it to automate your day to day tasks.

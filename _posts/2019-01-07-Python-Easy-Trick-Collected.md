@@ -7,6 +7,7 @@ image: /assets/img/diary.png
 bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
+cover-img: /assets/img/cover.jpg
 ---
 
 This post contains plenty of useful snippets which can help beginners and newcomers quickly ramp-up on grasping python 3's syntax. A Python implementation of 30-seconds-of-code🐍!

@@ -7,6 +7,7 @@ image: /assets/img/diary.png
 bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /assets/img/selenium-with-python.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Welcome Again! I am going to share with you some python code for very basic level for the starter.

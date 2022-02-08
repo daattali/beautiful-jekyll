@@ -7,6 +7,7 @@ image: /img/diary.png
 bigimg: /img/back.gif
 thumbnail-img: /assets/img/selenium-with-python.png
 share-img: /img/selenium-with-python.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Python is a general-purpose interpreted programming language used for web development, machine learning, and complex data analysis. Python is a perfect language for beginners as it is easy to learn and understand. As the popularity of the language is soaring, the opportunities in Python programming are amplifying.

@@ -13,6 +13,7 @@ image: /assets/img/diary.png
 bigimg: /assets/img/back.gif
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/diary.png
+cover-img: /assets/img/cover.jpg
 ---
 
 Requirement elicitation phase consists of researching and discovering the requirements of a system from users, customers, and other stakeholders.
