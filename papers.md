@@ -6,9 +6,9 @@ layout: page
 
 ## Peer-reviewed papers
 
-**Dimanchev, E.**, J. Hodge, J. Parsons. 2021. [The role of hydropower reservoirs in deep decarbonization policy](https://www.sciencedirect.com/science/article/pii/S0301421521002391). *Energy Policy* 155. (Related: [Code and data](https://doi.org/10.5281/zenodo.3773861); [Public comment on NY state proceeding 15-01168](https://www.dropbox.com/s/7c14v6t9zxdotk3/NYDPS.pdf?dl=0)).
+**Dimanchev, E.**, J. Hodge, J. Parsons. 2021. [The role of hydropower reservoirs in deep decarbonization policy](https://www.sciencedirect.com/science/article/pii/S0301421521002391). *Energy Policy* 155. (Related: Code and data on [Zenodo](https://doi.org/10.5281/zenodo.3773861); Public comment on NY state proceeding [15-01168](https://www.dropbox.com/s/7c14v6t9zxdotk3/NYDPS.pdf?dl=0)).
 
-**Dimanchev, E.**, et al. 2019. [Health Co-Benefits of Sub-National Renewable Energy Policy in the U.S.](https://iopscience.iop.org/article/10.1088/1748-9326/ab31d9) *Environmental Research Letters* 14 085012. (Related: [Testimony](http://search-prod.lis.state.oh.us/cm_pub_api/api/unwrap/chamber/133rd_ga/ready_for_publication/committee_docs/cmte_s_energy_pu_1/testimony/cmte_s_energy_pu_1_2019-06-19-0800_742/testimonyemildimanchevmit.pdf) for the Ohio Senate; [Report](https://globalchange.mit.edu/publication/17278) including Ohio case study; [Code and data](https://doi.org/10.5281/zenodo.3605637)).
+**Dimanchev, E.**, et al. 2019. [Health Co-Benefits of Sub-National Renewable Energy Policy in the U.S.](https://iopscience.iop.org/article/10.1088/1748-9326/ab31d9) *Environmental Research Letters* 14 085012. (Related: [Testimony](http://search-prod.lis.state.oh.us/cm_pub_api/api/unwrap/chamber/133rd_ga/ready_for_publication/committee_docs/cmte_s_energy_pu_1/testimony/cmte_s_energy_pu_1_2019-06-19-0800_742/testimonyemildimanchevmit.pdf) for the Ohio Senate; [Report](https://globalchange.mit.edu/publication/17278) including Ohio case study; Code and data on [Zenodo](https://doi.org/10.5281/zenodo.3605637)).
 
 ## Upcoming publications
 
