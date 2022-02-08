@@ -101,7 +101,7 @@ The test summary report is a high-level document that summarizes the test activi
 
 Testing is very common and some of the documents used in testing are shared for everyone's convenience. If you wish, you can add and subtract any information for your own convenience
 
-To Download from [Google Drive](https://drive.google.com/drive/u/1/folders/1cklamhzSsInYoU-53bZ2x2kDMz_XUtcd/ "Click Here") Now.
+To Download from [Click Here](https://drive.google.com/drive/u/1/folders/1cklamhzSsInYoU-53bZ2x2kDMz_XUtcd/ "Link") Now.
 
 
 
