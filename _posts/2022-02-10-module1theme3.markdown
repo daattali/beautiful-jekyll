@@ -6,7 +6,7 @@ published: true
 
 
 
-Voici l'image dont vous aurez besoin pour cette séance
+Voici l'image dont vous aurez besoin pour cette séance....................
 
 
 
