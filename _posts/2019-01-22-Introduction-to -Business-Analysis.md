@@ -100,11 +100,11 @@ Business analysts play a role in aligning the designed and delivered solutions w
 
 ## Types of Business Analyst Role:
 
-    • **Business Process Analyst:** Business Process Model to identify problem, opportunity, GAP analysis between as-in and to-be process.
-    • **Requirement Analyst (IT):** Elicit, analyze, and document requirements.
-    • **Systems Analyst:** Analyze documented requirements to create functional specification, work with tech team. Define how a system will do the what.
-    • **Data Analyst:** Perform logical data modeling, identify patterns, design and create report.
-    • **User Experience Analyst:** Design the UI, UX, and interaction. Understand end-user's behavior.
+ - **Business Process Analyst** Business Process Model to identify problem, opportunity, GAP analysis between as-in and to-be process.
+ - **Requirement Analyst (IT):** Elicit, analyze, and document requirements.
+ - **Systems Analyst:** Analyze documented requirements to create functional specification, work with tech team. Define how a system will do the what.
+ - **Data Analyst:** Perform logical data modeling, identify patterns, design and create report.
+ - **User Experience Analyst:** Design the UI, UX, and interaction. Understand end-user's behavior.
 
 Other common job titles for people who perform business analysis include:
 
