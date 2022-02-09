@@ -58,14 +58,14 @@ Here are important reasons for using Business analysis methods:
 - It helps you to identify and articulate the need for change.
 - To maximize the value delivered by an organization to its stakeholders.
 
-# Steps involved in Business Analysis Process 
-1.	Enterprise analysis
-2.	Requirement planning and Management
-3.	Requirement Elicitation
-4.	Requirement analysis and Documentation
-5.	Requirement Communication
-6.	Solution Evolution and Validation
+# Steps involved in Business Analysis Process
 
+1. Enterprise analysis
+2. Requirement planning and Management
+3. Requirement Elicitation
+4. Requirement analysis and Documentation
+5. Requirement Communication
+6. Solution Evolution and Validation
 
 # Business Analysis Role :
 
@@ -100,11 +100,11 @@ Business analysts play a role in aligning the designed and delivered solutions w
 
 ## Types of Business Analyst Role:
 
-    • Business Process Analyst: Business Process Model to identify problem, opportunity, GAP analysis between as-in and to-be process.
-    • Requirement Analyst (IT): Elicit, analyze, and document requirements.
-    • Systems Analyst: Analyze documented requirements to create functional specification, work with tech team. Define how a system will do the what.
-    • Data Analyst: Perform logical data modeling, identify patterns, design and create report.
-    • User Experience Analyst: Design the UI, UX, and interaction. Understand end-user's behavior.
+    • **Business Process Analyst:** Business Process Model to identify problem, opportunity, GAP analysis between as-in and to-be process.
+    • **Requirement Analyst (IT):** Elicit, analyze, and document requirements.
+    • **Systems Analyst:** Analyze documented requirements to create functional specification, work with tech team. Define how a system will do the what.
+    • **Data Analyst:** Perform logical data modeling, identify patterns, design and create report.
+    • **User Experience Analyst:** Design the UI, UX, and interaction. Understand end-user's behavior.
 
 Other common job titles for people who perform business analysis include:
 
@@ -118,26 +118,21 @@ Other common job titles for people who perform business analysis include:
     • Product Owner,
     • Requirements Engineer
 
- # Skills of a Good Business Analyst
-Basically, a good business analyst is judged on these four attributes 
-- **Analytical skills:** An outstanding analytical skills will separate out a good business analyst. A good part of BA role includes analyzing data, workflow, user or stakeholders inputs, documents, etc. 
+# Skills of a Good Business Analyst
+
+Basically, a good business analyst is judged on these four attributes
+
+- **Analytical skills:** An outstanding analytical skills will separate out a good business analyst. A good part of BA role includes analyzing data, workflow, user or stakeholders inputs, documents, etc.
 - **Leadership skills:** directing team members, forecasting budget, helping team members with the problem, etc.
 - **Business process and planning:** Planning the project scope, understanding and implementing requirement of project, identifying resources required for the project and so on
 - **Technical Skill:** If a business analyst is in the IT sector, few technical aspect are expected to know like operating systems, hardware capabilities, database concepts, networking, SDLC methodology, etc.
-
-
-
-{: .box-success}
-Enjoy !!!
-See Yaaa, Next.
-
-
 
 For Any Query or Task Contact Me @
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:rafayet13@gmail.com)
 
-
-
+{: .box-success}
+Enjoy !!!
+See Yaaa, Next.
 
 ![Diary](/assets/img/diary.png "Diary")
