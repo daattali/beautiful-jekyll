@@ -13,9 +13,8 @@ cover-img: /assets/img/cover.jpg
 Project initiation mainly involves eliciting requirements to understand the scope of a potential solution. Elicitation days are fun and many business analysts enjoy elicitation days the most. These days occur early in the project or possibly even before the project starts and involve meeting with stakeholders to understand what they want to achieve in a project.
 
 _Qucik Link to Specific Topic:_
-
 - [Understanding Business Objective](#understanding-business-objective)
-  - [Three (03) Questions to ask yourself](#three-03-questions-to-ask-yourself)
+  - [Three (03) Questions to Ask Yourself](#three-03-questions-to-ask-yourself)
   - [What is a Business Case?](#what-is-a-business-case)
   - [Why it is used?](#why-it-is-used)
   - [When it is Used?](#when-it-is-used)
@@ -43,11 +42,17 @@ _Qucik Link to Specific Topic:_
 To identify the business goals, needs, requirements of the organization, project, or stakeholder. The first project as a Business Analyst. And failed with Embarrassment. Because you developed a solution that does not meet the Objective, Goal, and Purpose of the project.
 You may develop a great product but still failed this project cause it does not meet the goal set for the project. As a business analyst, this is heartbreaking.
 
-## Three (03) Questions to ask yourself
+## Three (03) Questions to Ask Yourself
 
-1.  What is the purpose of the project --- Why approve this project, Why we are budgeting this project?
-2.  What are the goals and objectives of this project --- What is the return on investment, What are the main critical pieces and components?
-3.  In the eyes of this project, what is a success, and how will it be measured --- Measurement matrix?
+1. What is the purpose of the project
+  - Why approve this project? 
+  - Why we are budgeting for this project?
+2. What are the goals and objectives of this project?
+  - What is the return on investment?
+  - What are the main critical pieces and components?
+3. In the eyes of this project, what is a success?
+   - How will it be measured?
+   - Have you preferred the Measurement matrix?
 
 Once you have those details, you start working through and eliciting requirements. Yeah, there is going to be a lot of other features, and other enhancement that they may want as part of the project, but your number one goal should be to solve the problem that the project is intended to solve.
 
@@ -61,10 +66,10 @@ Ultimately, what that means is it's a document that's presented to decision-make
 
 ## Why it is used?
 
-A business case is used to identify and highlight problems or opportunities that a business can take. And then the different options they have and the recommended solution by the person that's creating the business case.
-Ultimately, it's the driver of projects. Many companies will start projects solely from business cases that are written. So they make their employees write business cases and that gets put in front of a decision-making committee, a person, a group where they're saying 'OK, here's all the business cases now, on what ones make sense.
+A business case is used to identify and highlight **problems** or **opportunities** that a business can take. And then the different options they have and the recommended solution by the person that's creating the business case.
+Ultimately, it's the **driver** of projects. Many companies will start projects solely from business cases that are written. So they make their employees write business cases and that gets put in front of a decision-making committee, a person, a group where they're saying 'OK, here's all the business cases now, on what ones make sense.
 
-Why is a business case used, is really used to convince decision-makers of a certain course of action? So, a business case is done to identify the problem, layout potential solutions and their cost and their benefits, but the big thing is the recommendation, right, that person is driving and saying 'here is what we should be doing and here's how we should be solving this problem and we should be taking action to do that, and here's why so it's kind of almost a sales technique to sell the business and investing money into solving that particular problem or working towards achieving that particular opportunity.
+Business case is really used to **convince decision-makers** of a certain course of action. So, a business case is done to **identify the problem**, layout potential **solutions** and their **cost** and their **benefits**, but the big thing is the **recommendation**, right, that person is driving and saying 'here is what we should be doing and here's how we should be solving this problem and we should be taking action to do that, and here's why so it's kind of almost a sales technique to sell the business and investing money into solving that particular problem or working towards achieving that particular opportunity.
 
 ## When it is Used?
 
