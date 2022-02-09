@@ -4,9 +4,7 @@ subtitle: Selection of peer-reviewed papers and other publications
 layout: page
 ---
 
----
-Peer-reviewed papers
----
+## Peer-reviewed papers
 
 **Dimanchev, E.**, J. Hodge, J. Parsons. 2021. [The role of hydropower reservoirs in deep decarbonization policy](https://www.sciencedirect.com/science/article/pii/S0301421521002391). *Energy Policy* 155. 
   * Open access [pre-print](https://ceepr.mit.edu/workingpaper/two-way-trade-in-green-electrons-deep-decarbonization-of-the-northeastern-u-s-and-the-role-of-canadian-hydropower/) 
