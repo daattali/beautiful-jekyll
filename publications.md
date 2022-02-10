@@ -8,6 +8,44 @@ Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qi
 Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work. 
 
 <table cellpadding="10" width="100%">
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/2022_diffskill.gif" img width="250">
+        </td>
+        <td><a href="https://sites.google.com/view/iclr2022diffskill">DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools</a><br>
+            <div class="pubauthor">
+                Xingyu Lin, Zhiao Huang, Yunzhu Li, Joshua B. Tenenbaum, David Held, Chuang Gan<br>
+            </div>
+            <div id="bib2022diffskill" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{
+    lin2022diffskill,
+    title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
+    author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
+    booktitle={International Conference on Learning Representations},
+    year={2022},
+    url={https://openreview.net/forum?id=Kef8cKdHWpP}}
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="abs2022diffskill" style="display:none">
+                <blockquote>
+                    We consider the problem of sequential robotic manipulation of deformable objects using tools.
+Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. 
+                </blockquote>
+            </div>
+            <div class="pubjournal">International Conference on Learning Representations (ICLR), 2022
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/iclr2022diffskill">[Project Page]</a>
+                <a href="javascript:copy(div2022diffskill, bib2022diffskill)">[Bibtex]</a>
+                <a href="javascript:copy(div2022diffskill, abs2022diffskill)">[Abstract]</a>
+                <a href="https://openreview.net/pdf?id=Kef8cKdHWpP">[PDF]</a>
+            </div>
+            <div id="div2022diffskill" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
     
     <tr>
         <td class="pubimg" width="250" height="100">
