@@ -4,7 +4,7 @@ permalink: /Multiscale_image_registration/
 subtitle: Multiscale image registration
 ---
 
-This work supplement our paper on multiscale atlas estimation. Below are displayed the estimation of template images with varying number of control points. Templates are shown every 10 iterations. In all cases, atlas estimation was performed using a set of 20 images.
+This page supplements our paper on multiscale atlas estimation. Below are displayed the estimation of template images with varying number of control points. Templates are shown every 10 iterations. In all cases, atlas estimation was performed using a set of 20 images.
 
 ### Atlas estimation on images of the digit 2 from the MNIST handwritten digits database
 
