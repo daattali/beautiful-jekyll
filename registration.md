@@ -132,7 +132,8 @@ subtitle: Multiscale image registration
  
 </table>
 
-<a id="raw-url" href="assets/img/characters.zip" download>Click to download the dataset</a>
+
+<a id="raw-url" href="https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/raw/master/assets/img/characters.zip" download>Click to download the dataset</a>
 
  
 
