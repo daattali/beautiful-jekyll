@@ -4,9 +4,11 @@ permalink: /Multiscale_image_registration/
 subtitle: Multiscale image registration
 ---
 
-This page supplements our paper on multiscale atlas estimation. Below are displayed the estimation of template images with varying number of control points. Templates are shown every 10 iterations. In all cases, atlas estimation was performed using a set of 20 images.
+This page supplements our paper on multiscale atlas estimation. Below are displayed movies showing the estimation of template images using either the <a href="https://hal.inria.fr/hal-00817565 ">original algorithm</a>, either our coarse-to-fine strategy. In all cases, atlas estimation was performed using the same set of 20 images.
 
 ### Atlas estimation on images of the digit 2 from the MNIST handwritten digits database
+
+ <a href="http://yann.lecun.com/exdb/mnist/">Link to the MNIST database</a>
 
 <table>
 <tr>
@@ -71,6 +73,8 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 
  ### Atlas estimation on images of artificial characters
  
+ <a id="raw-url" href="https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/raw/master/assets/img/characters.zip" download>Click here to download the dataset</a>
+ 
 <table>
 <tr>
    <th> Number of control points </th>
@@ -132,7 +136,6 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 </table>
 
 
-<a id="raw-url" href="https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/raw/master/assets/img/characters.zip" download>Click to download the dataset</a>
 
  
 
