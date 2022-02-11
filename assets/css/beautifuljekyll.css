@@ -854,7 +854,7 @@ table tr th {
 table tr td {
   background-color: #f0e7ce;
   border: 0px solid;
-  text-align: left;
+  text-align: center;
   margin: 0;
   padding: 0.375rem 0.8125rem;
 }
