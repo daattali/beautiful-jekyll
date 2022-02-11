@@ -5,9 +5,9 @@ title: Multiscale image registration
 subtitle: Upcoming...
 ---
 
-<table style="color:blue">
+<table>
 <tr>
-   <th style="color:red"> Number of control points </th>
+   <th> Number of control points </th>
 
 <th>  <img width=100/> Original   <img width=100/></th>
 <th> <img width=100/>Coarse-to-fine  <img width=100/> </th>
