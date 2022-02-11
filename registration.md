@@ -9,8 +9,8 @@ subtitle: Upcoming...
 <tr>
    <th style="color:red"> Number of control points </th>
 
-<th>      Original      </th>
-<th>      Coarse-to-fine      </th>
+<th>     &nbsp; &nbsp; Original    &nbsp; &nbsp; </th>
+<th>     &nbsp; &nbsp; Coarse-to-fine  &nbsp; &nbsp;    </th>
 </tr>
    
    <tr>
