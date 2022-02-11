@@ -76,6 +76,19 @@ subtitle: Upcoming...
 <th>      Coarse-to-fine      </th>
 </tr>
    
+    <tr>
+   <td>36</td>
+ 
+<td>
+<img src="/assets/img/bonhommes_no_ctf_k5_fold_1.gif" alt="drawing" width="100"/>
+</td>
+<td>
+<img src="/assets/img/bonhommes_ctf_k5_fold_1.gif" alt="drawing" width="100"/>
+</td>
+ 
+</tr>
+
+   
    <tr>
 <td>49</td>
     
@@ -114,17 +127,6 @@ subtitle: Upcoming...
 </tr>
  
  
- <tr>
-   <td>361</td>
- 
-<td>
-<img src="/assets/img/bonhommes_no_ctf_k1.5_fold_1.gif" alt="drawing" width="100"/>
-</td>
-<td>
-<img src="/assets/img/bonhommes_ctf_k1.5_fold_1.gif" alt="drawing" width="100"/>
-</td>
- 
-</tr>
  <tr>
  
 </table>
