@@ -240,6 +240,18 @@ Critical tool to understand and align the responsibilities of stakeholders It’
 - Who’s work depends on this task?
 - Who has to be kept updated about the progress?
 
+An Example of RACI chart:
+
+|     RACI           | Project Manager  | Business Analyst | Developer | Executives |
+|:------------------:|:----------------:|:----------------:|:---------:|:-----------:|
+| Project Planning   | R, A             | R, A             |           | I         
+| Requirement Elicitation   | I             | R, A             |           | I|
+| Development   | I             | I, C             |           | R| I|
+
+
+
+
+
 {: .box-success}
 Enjoy !!!
 See Yaaa, Next.
