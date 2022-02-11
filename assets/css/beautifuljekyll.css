@@ -846,8 +846,8 @@ table tr:nth-child(2n) {
 table tr th {
   font-weight: bold;
   background-color: #f0e7ce;
-  border: 1px solid #f0e7ce;
-  text-align: left;
+  border: 0px solid #f0e7ce;
+  text-align: center;
   margin: 0;
   padding: 0.375rem 0.8125rem;
 }
@@ -860,7 +860,7 @@ table tr td {
 }
 table tr th :first-child,
 table tr td :first-child {
-  margin-top: 0;
+  margin-top: 1;
 }
 table tr th :last-child,
 table tr td :last-child {
