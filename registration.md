@@ -37,7 +37,7 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
  <td>100</td>
 
 <td>
-<center><img src="/assets/img/digit_no_ctf_cv_k3_fold_5.gif" alt="drawing" width="100"/></center>
+<center><img src="/assets/img/digit_no_ctf_k3_fold_5.gif" alt="drawing" width="100"/></center>
 </td>
 <td>
 <center><img src="/assets/img/digit_ctf_cv_k3_fold_5.gif" alt="drawing" width="100"/></center>
