@@ -73,8 +73,8 @@ subtitle: Multiscale image registration
 <tr>
    <th> Number of control points </th>
 
-<th>      Original      </th>
-<th>      Coarse-to-fine      </th>
+<th><img width=100/>Original <img width=100/> </th>
+<th><img width=100/>Coarse-to-fine <img width=100/> </th>
 </tr>
    
     <tr>
