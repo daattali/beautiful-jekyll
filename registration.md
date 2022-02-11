@@ -132,7 +132,7 @@ subtitle: Multiscale image registration
  
 </table>
 
-<a href="assets/img/characters.zip" download>Click to download the dataset</a>
+<a id="raw-url" href="assets/img/characters.zip" download>Click to download the dataset</a>
 
  
 
