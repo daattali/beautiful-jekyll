@@ -71,7 +71,7 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 </tr> 
 </table>
 
- ### Atlas estimation on images of artificial characters
+### Atlas estimation on images of artificial characters
  
  <a id="raw-url" href="https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/raw/master/assets/img/characters.zip" download>Click here to download the dataset</a>
  
@@ -95,7 +95,6 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
  
 </tr>
 
-   
    <tr>
 <td>49</td>
     
@@ -107,18 +106,15 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 </td>
  
 </tr>
- 
- 
+  
   <tr>
  <td>100</td>
-
 <td>
 <center><img src="/assets/img/bonhommes_no_ctf_k3_fold_1.gif" alt="drawing" width="100"/></center>
 </td>
 <td>
 <center><img src="/assets/img/bonhommes_ctf_k3_fold_1.gif" alt="drawing" width="100"/></center>
 </td>
- 
 </tr>
 
    <tr>
