@@ -62,9 +62,7 @@ subtitle: Multiscale image registration
 <center><img src="/assets/img/digit_ctf_cv_k1.5_fold_5.gif" alt="drawing" width="100"/></center>
 </td>
  
-</tr>
- <tr>
- 
+</tr> 
 </table>
 
  
@@ -126,10 +124,7 @@ subtitle: Multiscale image registration
 </td>
  
 </tr>
- 
- 
- <tr>
- 
+
 </table>
 
 
