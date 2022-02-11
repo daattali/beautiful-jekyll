@@ -7,11 +7,15 @@ subtitle: Upcoming...
 
 <table>
 <tr>
-<th> Good </th>
-<th> Bad </th>
+   <th> Number of control points </th>
+
+<th>      Original      </th>
+<th>      Coarse-to-fine      </th>
 </tr>
+   
    <tr>
- 
+<td> </td>
+    
 <td>
 <img src="/assets/img/digit_no_ctf_k4_fold_5.gif" alt="drawing" width="100"/>
 </td>
@@ -24,7 +28,8 @@ subtitle: Upcoming...
  
  
   <tr>
- 
+ <td>100</td>
+
 <td>
 <img src="/assets/img/digit_no_ctf_cv_k3_fold_5.gif" alt="drawing" width="100"/>
 </td>
@@ -34,7 +39,9 @@ subtitle: Upcoming...
 </td>
  
 </tr>
- 
+
+   <tr>
+      <td>196</td>
  
 <td>
 <img src="/assets/img/digit_no_ctf_k2_fold_5.gif" alt="drawing" width="100"/>
@@ -48,6 +55,8 @@ subtitle: Upcoming...
  
  
  <tr>
+   <td>361</td>
+
  
 <td>
 <img src="/assets/img/digit_no_ctf_k1.5_fold_5.gif" alt="drawing" width="100"/>
