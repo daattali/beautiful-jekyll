@@ -837,12 +837,10 @@ table {
 }
 table tr {
   border-top: 1px solid #cccccc;
-  background-color: #0000ffff;
   margin: 0;
   padding: 0;
 }
 table tr:nth-child(2n) {
-  background-color: #0000ffff;
 }
 table tr th {
   font-weight: bold;
@@ -852,7 +850,7 @@ table tr th {
   padding: 0.375rem 0.8125rem;
 }
 table tr td {
-  border: 1px solid #cccccc;
+  border: 0px solid;
   text-align: left;
   margin: 0;
   padding: 0.375rem 0.8125rem;
