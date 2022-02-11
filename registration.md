@@ -9,15 +9,17 @@ subtitle: Upcoming...
 <tr>
    <th style="color:red"> Number of control points </th>
 
-<th>     &nbsp; &nbsp; Original    &nbsp; &nbsp; </th>
-<th>     &nbsp; &nbsp; Coarse-to-fine  &nbsp; &nbsp;    </th>
+<th>  <img width=100/> Original   <img width=100/></th>
+<th> <img width=100/>Coarse-to-fine  <img width=100/> </th>
 </tr>
    
    <tr>
 <td>49</td>
     
 <td>
+   <center>
 <img src="/assets/img/digit_no_ctf_k4_fold_5.gif" alt="drawing" width="100"/>
+   </center>
 </td>
 <td>
 <img src="/assets/img/digit_ctf_cv_k4_fold_5.gif" alt="drawing" width="100"/>
