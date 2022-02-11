@@ -18,3 +18,18 @@ subtitle: Upcoming...
 <img src="/assets/img/digit_no_ctf_k4_fold_5.gif" alt="drawing" width="100"/>
 <img src="/assets/img/digit_ctf_cv_k4_fold_5.gif" alt="drawing" width="100"/>
 
+
+
+:::: {style="display: flex;"}
+
+::: {}
+Here is the **first** Div.
+
+:::
+
+::: {}
+And this block will be put on the right:
+
+:::
+
+::::
