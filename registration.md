@@ -80,7 +80,7 @@ subtitle: Upcoming...
 <td>49</td>
     
 <td>
-<img src="/assets/img/bonhommes_ctf_k4_fold_1.gif" alt="drawing" width="100"/>
+<img src="/assets/img/bonhommes_no_ctf_k4_fold_1.gif" alt="drawing" width="100"/>
 </td>
 <td>
 <img src="/assets/img/bonhommes_ctf_k4_fold_1.gif" alt="drawing" width="100"/>
@@ -93,7 +93,7 @@ subtitle: Upcoming...
  <td>100</td>
 
 <td>
-<img src="/assets/img/bonhommes_ctf_k3_fold_1.gif" alt="drawing" width="100"/>
+<img src="/assets/img/bonhommes_no_ctf_k3_fold_1.gif" alt="drawing" width="100"/>
 </td>
 <td>
 <img src="/assets/img/bonhommes_ctf_k3_fold_1.gif" alt="drawing" width="100"/>
@@ -118,7 +118,7 @@ subtitle: Upcoming...
    <td>361</td>
  
 <td>
-<img src="/assets/img/bonhommes_ctf_k1.5_fold_1.gif" alt="drawing" width="100"/>
+<img src="/assets/img/bonhommes_no_ctf_k1.5_fold_1.gif" alt="drawing" width="100"/>
 </td>
 <td>
 <img src="/assets/img/bonhommes_ctf_k1.5_fold_1.gif" alt="drawing" width="100"/>
