@@ -160,7 +160,7 @@ Obviously, correct any **grammatical** or **spelling** mistakes and then you wan
 
 ## Present the Business Case: Phase 05
 
-And then the fifth thing, the final step there is presenting that business case. The whole goal of the business case and presenting the business case is to get the business to say __'yes, we agree and we want to move forward with that recommendation or that project'.__
+And then the fifth thing, the final step there is presenting that business case. The whole goal of the business case and presenting the business case is to get the business to say *'yes, we agree and we want to move forward with that recommendation or that project'.*
 
 So the first thing you want to do is you want to remind yourself that they haven't seen this before so you might have sent the business case to them prior to the meeting as part of the invite which is a good habit to get into, at least they can review it if they have a little time, but you want to go in as if they've never seen this. They have no idea what the problem is, they have no idea what the possible solutions are. And if they're lost, there's no way that you're going to get their agreement for funding of moving the project forward.
 
@@ -171,7 +171,7 @@ Next thing is give your recommendation. You don't need to go through everything 
 You then, I like to then circle back and say 'here are the other options that were being looked at and here's the other solutions that we came up with and here are the reasons I ruled each of them out' or 'here are the reasons that I went with my recommended solution over that particular solution'. So it just helps people to kind of rule out the other ones. 
 The next thing is you want to touch on each risk. So if there's a risk. Touch on it. You don't want a deep dive and spend too much time on the risks that are there. You just want to make sure that they're aware that there's a risk. And if they have questions, It is guaranteed, they will stop and they will ask you to go deeper into that risk. You also to build your credibility, you want to mention your stakeholder backers. So those two people that you had reviewed ahead of time bring them up. So it's building on your credibility especially if you're having like subject matter experts or people that are kind of proponents within that business that help drive change, positive change, then you know, mentioning them will be very helpful because it's going to help those decision-makers say 'you know what, if Tom thinks it's the right thing to do then its kind of a good return on investment'. And then the last thing you want to do is you want to close the presentation summarizing the benefits and the return on investment for the recommendation and the action that you've kind of come up with.
 
-So you want to end with saying, you know, this is really important, this is going to help solve that problem that we've defined. And here are the benefits, here's when we get our return, you know, we get our return on investment within two months and then everything after that is profit, we think within the next, within the first year, it's going to equate to X amount of dollars and saved whatever, saved cost. And then five years here is kind of where it would be. And so you want to make sure that you're ending with those benefits and that return on investment. So really that's the overall thing about, you know, the basics of a business case and then the five phases that I've kind of come up with that you work through as you're writing and presenting a business case. I hope that makes sense. I hope that will help you as you move forward if you ever get pulled in to help or to write a business.
+So you want to end with saying, you know, this is really important, this is going to help solve that problem that we've defined. And here are the benefits, here's when we get our return, you know, we get our return on investment within two months and then everything after that is profit, we think within the next, within the first year, it's going to equate to X amount of dollars and saved whatever, saved cost. And then five years here is kind of where it would be. And so you want to make sure that you're ending with those benefits and that return on investment. So really that's the overall thing about, the basics of a business case.
 
 So those are the five phases that a business analyst shall utilize in creating an effective business case.
 
@@ -198,14 +198,14 @@ Project Stakeholders are the people that are affected by the project either dire
 
 ## How to Identify Stakeholders to a Project?
 
-- ○ Walkthrough anticipated scope/ process.
-- ○ Beneficiaries of the effort
-- ○ Direct involved with the beneficiaries of the effort
-- ○ Jobs that may be affected by project or results
-- ○ Government Officials
-- ○ Influencers
-- ○ Interest in Outcome
-- ○ Get Ideas from stakeholders as you identify them.
+- Walkthrough anticipated scope/ process.
+- Beneficiaries of the effort
+- Direct involved with the beneficiaries of the effort
+- Jobs that may be affected by project or results
+- Government Officials
+- Influencers
+- Interest in Outcome
+- Get Ideas from stakeholders as you identify them.
 
 ## Assigning Stakeholders Responsibility using RACI Matrix
 
@@ -218,7 +218,7 @@ Critical tool to understand and align the responsibilities of stakeholders It’
 -  Alleviates power struggles
   Reduces lack of ownership
 - Sets clear expectations!
-- No your roles
+- Know your roles
 
 ### Responsibility:
 
