@@ -2,15 +2,15 @@
 layout: member
 name: Serina Blessing
 position: Undergraduate Researcher
-image: /assets/img/members/serina-blessing.png
+image: /assets/img/members/serina-blessing.jpg
 current: true
 group: Undergrad
 ---
 
 **Education**: 
 
-  * *Penn State University - 4th year - BS Immunology and Infectious Disease
-  * *Penn State University - 4th year - BS Pharmacology and Toxicology
+  * Penn State University - 4th year - BS Immunology and Infectious Disease
+  * Penn State University - 4th year - BS Pharmacology and Toxicology
 
 
 **Project Interests**:
