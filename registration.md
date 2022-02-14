@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /Multiscale_image_registration/
-subtitle: Multiscale image registration
+permalink: /Multiscale_atlas_estimation/
+title: Multiscale atlas estimation
 ---
 
 This page supplements our paper on multiscale atlas estimation. Below are displayed movies showing the estimation of template images using either the <a href="https://hal.inria.fr/hal-00817565 ">original algorithm</a>, either our coarse-to-fine strategy, with varying numbers of control points. In all cases, atlas estimation was performed using the same set of 20 images.
