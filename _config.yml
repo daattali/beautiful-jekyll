@@ -15,12 +15,11 @@ author: Fleur Gaudfernau
 
 navbar-links:
   About: "/"
-  #Author's home: "https://deanattali.com"
   Research: "Research"
   CV: "CV"
   Projects  :
     - Shape Analysis: "Shape_analysis"
-    - Multiscale image registration: "Multiscale_image_registration"
+    - Multiscale atlas estimation: "Multiscale_atlas_estimation"
 
 # --- Logo --- #
 
