@@ -14,7 +14,7 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 <tr>
    <th> Number of control points </th>
 
-<th>  <img width=70/> Original algorithm   <img width=100/></th>
+<th>  <img width=30/> Original algorithm   <img width=100/></th>
 <th> <img width=20/>Coarse-to-fine algorithm  <img width=100/> </th>
 </tr>
    
@@ -79,8 +79,8 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 <tr>
    <th> Number of control points </th>
 
-<th><img width=70/>Original algorithm<img width=100/> </th>
-<th><img width=70/>Coarse-to-fine algorithm <img width=100/> </th>
+<th><img width=30/>Original algorithm<img width=100/> </th>
+<th><img width=20/>Coarse-to-fine algorithm <img width=100/> </th>
 </tr>
    
     <tr>
