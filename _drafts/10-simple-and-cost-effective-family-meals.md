@@ -28,9 +28,10 @@ Because life is busy and most of the time kids do better with simple rather than
 
 #### NACHOS
 
+![A plate of nachos.](/uploads/nachos-shm.jpg "10 Simple and Cost Effective Family Meals Nachos SHM")
+
 This is one of our "fun" meals that we have periodically, but it's always a hit and can have so many variations to it.
 
-  
 **Ingredients:**
 
 * Nachos
@@ -44,22 +45,21 @@ This is one of our "fun" meals that we have periodically, but it's always a hit 
 
 Serve the nachos on their own after broiling in the oven or with sour cream and/or salsa. If we're feeling like splurging a little, we buy Doritos and use those for the nachos. It's sooooo tasty!
 
->>>>PICTURE??? Link to homemade recipes??
+And because I love DIY: [DIY Nacho spice](https://www.allrecipes.com/recipe/46653/taco-seasoning-i/); [Easy Homemade Baked Pita Chips](https://www.joyfulhealthyeats.com/homemade-baked-pita-chips/); [Taco meat recipe](https://amindfullmom.com/3-ingredient-taco-meat-and-4-ways-to-use-it/)
 
 #### PICKY PLATES
 
-Picky plates or finger foods are what we do for most of our lunches. I put them in a round container with separated sections. I use my picky plate planner page from my Simple Meal Planning Guide to plan it out. I make sure to have a variety of foods from different food groups such as:  
-nuts  
-dairy  
-protein  
-fruits and vegetables
+Picky plates or finger foods are what we do for most of our lunches. I put them in a round container with separated sections. I use my picky plate planner page from [my Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/) to plan it out. I make sure to have a variety of foods from different food groups such as:
 
-You can find out more about picky plates in my Meal Planning Guide as well as on this blog here:  
-[https://www.simplehomemom.com/how-to-make-lunches-painless-and-quick-with-picky-plates/](https://www.simplehomemom.com/how-to-make-lunches-painless-and-quick-with-picky-plates/ "https://www.simplehomemom.com/how-to-make-lunches-painless-and-quick-with-picky-plates/")
+* nuts
+* dairy
+* protein
+* fruits and vegetables
+
+You can find out more about picky plates in [my Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/) as well as on this blog [here](https://www.simplehomemom.com/how-to-make-lunches-painless-and-quick-with-picky-plates/).
 
 #### TUNA WRAPS
 
-  
 I do variations of these often, so will share the most current version I've been making.  
 Ingredients:  
 Whole wheat wrap  
@@ -76,7 +76,6 @@ Sub for lettuce for gf option..I just eat without any bread or lettuce!
 
 #### TACO BOWLS (lentil with meat)
 
-  
 This one is always popular in our home. I keep a running list of ingredients of it on my phone for quick recall low brain power usage needed. ha!  
 Ingredients:  
 1/2 Hamburger or ground turkey and 1/2 lentils with choppedonion and sometimes shredded carrot and/or cabbage  
@@ -94,7 +93,6 @@ Any other veggies we have on hand that work!
 
 #### CHICKEN SHWARMA BOWLS
 
-  
 This is a favourite in our home!
 
 Chicken  
@@ -118,7 +116,6 @@ For our garlic sauce, we use plain yogurt, olive oil, and blended garlic.
 
 #### SIMPLE VEGETABLE SOUP
 
-  
 This one is SO tasty and is usually a hit with our crew. We try to have at least in one meatless supper a week, usually on Monday for a meatless Monday theme.
 
 Ingredients:  
@@ -131,7 +128,6 @@ Serve with biscuits!
 
 #### PANCAKES
 
-  
 We have pancakes for brunch on Sundays, usually served with a berry sauce (frozen berries with a dash of maple syrup).
 
 Our go to regular pancake recipe  
