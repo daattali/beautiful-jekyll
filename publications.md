@@ -186,9 +186,9 @@ Previous works have shown that differentiable physics simulators provide gradien
 
     <tr>
         <td class="pubimg" width="250" height="150" style="text-align:center">
-            <img src="../pics/3DV2021c.jpeg" width="250">
+            <img src="../pics/sod_tgnn.jpg" width="250">
         </td>
-        <td>Semi-supervised 3D Object Detection via Temporal Graph Neural Networks<br>
+        <td><a href="https://arxiv.org/pdf/2202.00182.pdf">Semi-supervised 3D Object Detection via Temporal Graph Neural Networks</a><br>
             <div class="pubauthor">Jianren Wang, Haiming Gang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
             </div>
             <div class="pubjournal">International Conference on 3D Vision (3DV), 2021</div>
@@ -209,8 +209,11 @@ year={2021}}</pre>
             </div>
             <div style="font-size:small">
                 <a href="https://www.jianrenw.com/SOD-TGNN/">[Project Page]</a>
+                <a href="https://github.com/jianrenw/SOD-TGNN">[Code]</a>
                 <a href="javascript:copy(div20213dV, bibdiv20213dV)">[Bibtex]</a>
                 <a href="javascript:copy(div20213dV, absdiv20213dV)">[Abstract]</a>
+                <a href="https://youtu.be/BhW7m3R_Yqo">[Video (Short)]</a>
+                <a href="https://youtu.be/L8X4LCEpCaE">[Video (Long)]</a>
             <br></div>
         </td>
     </tr>
