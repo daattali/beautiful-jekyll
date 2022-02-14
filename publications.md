@@ -5,6 +5,486 @@ subtitle:
 ---
 
 <table cellpadding="10" width="100%">
+<<<<<<< Updated upstream
+=======
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/2022_diffskill.gif" img width="250">
+        </td>
+        <td><a href="https://sites.google.com/view/iclr2022diffskill">DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools</a><br>
+            <div class="pubauthor">
+                Xingyu Lin, Zhiao Huang, Yunzhu Li, Joshua B. Tenenbaum, David Held, Chuang Gan<br>
+            </div>
+            <div id="bib2022diffskill" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{
+    lin2022diffskill,
+    title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
+    author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
+    booktitle={International Conference on Learning Representations},
+    year={2022},
+    url={https://openreview.net/forum?id=Kef8cKdHWpP}}
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="abs2022diffskill" style="display:none">
+                <blockquote>
+                    We consider the problem of sequential robotic manipulation of deformable objects using tools.
+Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. 
+                </blockquote>
+            </div>
+            <div class="pubjournal">International Conference on Learning Representations (ICLR), 2022
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/iclr2022diffskill">[Project Page]</a>
+                <a href="javascript:copy(div2022diffskill, bib2022diffskill)">[Bibtex]</a>
+                <a href="javascript:copy(div2022diffskill, abs2022diffskill)">[Abstract]</a>
+                <a href="https://openreview.net/pdf?id=Kef8cKdHWpP">[PDF]</a>
+            </div>
+            <div id="div2022diffskill" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/pouring_icra2022.jpg" img width="250" height="100">
+        </td>
+        <td><a href="https://sites.google.com/view/transparentliquidpouring">Transparent Liquid Segmentation for Robotic Pouring</a><br>
+            <div class="pubauthor">
+                Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held<br>
+            </div>
+            <div id="bib2022pouring" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{icra2022pouring,
+                        title={Transparent Liquid Segmentation for Robotic Pouring},
+                        author={Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
+                        booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+                        year={2022}}
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="abs2022pouring" style="display:none">
+                <blockquote>
+                    Liquid state estimation is important for robotics tasks such as pouring; however, estimating the state of transparent liquids is a challenging problem. We propose a novel segmentation pipeline that can segment transparent liquids such as water from a static, RGB image without requiring any manual annotations or heating of the liquid for training. Instead, we use a generative model that is capable of translating unpaired images of colored liquids into synthetically generated transparent liquid images. Segmentation labels of colored liquids are obtained automatically using background subtraction. We use paired samples of synthetically generated transparent liquid images and background subtraction for our segmentation pipeline. Our experiments show that we are able to accurately predict a segmentation mask for transparent liquids without requiring any manual annotations. We demonstrate the utility of transparent liquid segmentation in a robotic pouring task that controls pouring by perceiving liquid height in a transparent cup.
+                </blockquote>
+            </div>
+            <div class="pubjournal">International Conference of Robotics and Automation (ICRA), 2022
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/transparentliquidpouring">[Project Page]</a>
+                <!-- <a href="https://github.com/gauthamnarayan/transparent_liquid_segmentation_icra2022">[Code]</a> -->
+                <a href="javascript:copy(div2022pouring, bib2022pouring)">[Bibtex]</a>
+                <a href="javascript:copy(div2022pouring, abs2022pouring)">[Abstract]</a>
+                <a href="https://drive.google.com/file/d/1GJzgVR_H7bs-UE68SsfqKihXApxh4l3F/view">[PDF]</a>
+            </div>
+            <div id="div2022pouring" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+ 
+    
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/ossid.jpg" img width="250" height="100">
+        </td>
+        <td><a href="https://arxiv.org/abs/2201.07309">OSSID: Online Self-Supervised Instance Detection by (and for) Pose Estimation</a><br>
+            <div class="pubauthor">
+                Qiao Gu, Brian Okorn, David Held<br>
+            </div>
+            <div id="bib2022ossid" style="display:none">
+                <blockquote>
+<pre>@inproceedings{icra2022ossid,
+    title={OSSID: Online Self-Supervised Instance Detection by (and for) Pose Estimation},
+    author={Qiao Gu, Brian Okorn, David Held},
+    booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+    year={2022}}
+</pre>
+                </blockquote>
+            </div>
+            <div id="abs2022ossid" style="display:none">
+                <blockquote>
+                    Real-time object pose estimation is necessary for many robot manipulation algorithms. However, state-of-the-art methods for object pose estimation are trained for a specific set of objects; these methods thus need to be retrained to estimate the pose of each new object, often requiring tens of GPU-days of training for optimal performance. In this paper, we propose the OSSID framework, leveraging a slow zero-shot pose estimator to self-supervise the training of a fast detection algorithm. This fast detector can then be used to filter the input to the pose estimator, drastically improving its inference speed. We show that this self-supervised training exceeds the performance of existing zero-shot detection methods on two widely used object pose estimation and detection datasets, without requiring any human annotations. Further, we show that the resulting method for pose estimation has a significantly faster inference speed, due to the ability to filter out large parts of the image. Thus, our method for self-supervised online learning of a detector (trained using pseudo-labels from a slow pose estimator) leads to accurate pose estimation at real-time speeds, without requiring human annotations.
+                </blockquote>
+            </div>
+            <div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference of Robotics and Automation (ICRA), 2022
+            <div style="font-size:small">
+                <a href="https://georgegu1997.github.io/OSSID/">[Project Page]</a>
+                <!-- <a href="https://github.com/r-pad/zephyr">[Code]</a> -->
+                <a href="javascript:copy(div2022ossid, bib2022ossid)">[Bibtex]</a>
+                <a href="javascript:copy(div2022ossid, abs2022ossid)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2201.07309.pdf">[PDF]</a>
+            </div>
+            <div id="div2022ossid" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="150" style="text-align:center">
+            <img src="../pics/bmvc2-2021.gif" width="300">
+        </td>
+        <td><a href="https://arxiv.org/abs/2111.10701">Self-Supervised Point Cloud Completion via Inpainting</a><br>
+            <div class="pubauthor">Himangi Mittal, Brian Okorn, Arpit Jangid, David Held<br>
+            </div>
+            <div id="bib2021bmvc" style="display:none">
+                    <blockquote>
+                        <pre>
+                        @article{mittal2021self,
+                          title={Self-Supervised Point Cloud Completion via Inpainting},
+                          author={Mittal, Himangi and Okorn, Brian and Jangid, Arpit and Held, David},
+                          journal={arXiv preprint arXiv:2111.10701},
+                          year={2021}
+                        }
+                        </pre>
+                </blockquote>
+            </div>
+            <div id="abs2021bmvc" style="display:none">
+                <blockquote>
+                     When navigating in urban environments, many of the objects that need to be tracked and avoided are heavily occluded. Planning and tracking using these partial scans can be challenging. The aim of this work is to learn to complete these partial point clouds, giving us a full understanding of the object's geometry using only partial observations. Previous methods achieve this with the help of complete, ground-truth annotations of the target objects, which are available only for simulated datasets. However, such ground truth is unavailable for real-world LiDAR data. In this work, we present a self-supervised point cloud completion algorithm, PointPnCNet, which is trained only on partial scans without assuming access to complete, ground-truth annotations. Our method achieves this via inpainting. We remove a portion of the input data and train the network to complete the missing region. As it is difficult to determine which regions were occluded in the initial cloud and which were synthetically removed, our network learns to complete the full cloud, including the missing regions in the initial partial cloud. We show that our method outperforms previous unsupervised and weakly-supervised methods on both the synthetic dataset, ShapeNet, and real-world LiDAR dataset, Semantic KITTI. 
+                </blockquote>
+            </div>
+            <div class="pubjournal">British Machine Vision Conference (BMVC), 2021 - <award>Oral presentation</award> (Selection rate 3.3%)</div>
+            <div style="font-size:small">
+                <a href="https://self-supervised-completion-inpainting.github.io/">[Project Page]</a>
+<!--                 <a href="https://github.com/HimangiM/Just-Go-with-the-Flow-Self-Supervised-Scene-Flow-Estimation">[Code]</a> -->
+                <a href="javascript:copy(div2021BMVC, bib2021bmvc)">[Bibtex]</a>
+                <a href="javascript:copy(div2021BMVC, abs2021bmvc)">[Abstract]</a>
+                <!--a href="https://arxiv.org/abs/2111.10701">[Arxiv]</a-->
+                <a href="https://arxiv.org/pdf/2111.10701.pdf">[PDF]</a>
+                <a href="https://www.bmvc2021-virtualconference.com/conference/papers/paper_0443.html">[Video]</a>
+            </div>
+            <div id="div2021BMVC" class="pubInfo"></div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="150" style="text-align:center">
+            <img src="../pics/rb2b.png" width="220">
+        </td>
+        <td><a href="https://openreview.net/forum?id=e82_BlJL43M">RB2: Robotic Manipulation Benchmarking with a Twist</a><br>
+            <div class="pubauthor">Sudeep Dasari, Jianren Wang, Joyce Hong, Shikhar Bahl, Yixin Lin, Austin S Wang, Abitha Thankaraj, Karanbir Singh Chahal, Berk Calli, Saurabh Gupta, David Held, Lerrel Pinto, Deepak Pathak, Vikash Kumar, Abhinav Gupta<br>
+            </div>
+            <div class="pubjournal">NeurIPS 2021 Datasets and Benchmarks Track, 2021</div>
+            <div id="div2021rb2" class="pubInfo"></div>
+            <div id="absdiv2021rb2" style="display:none">
+                <blockquote>
+                Benchmarks offer a scientific way to compare algorithms using scientific performance metrics. Good benchmarks have two features: (a) wide audience appeal; (b) easily reproducible. In robotics, there is a tradeoff between reproducibility and broad accessibility. If the benchmark is kept restrictive (fixed hardware, objects), the numbers are reproducible but it becomes niche. On the other hand, benchmark could be just loose set of protocols but the underlying varying setups make it hard to reproduce the results. In this paper, we re-imagine robotics benchmarks – we define a robotics benchmark to be a set of experimental protocols and state of the art algorithmic implementations. These algorithm implementations will provide a way to recreate baseline numbers in a new local robotic setup in less than few hours and hence help provide credible relative rankings between different approaches. These credible local rankings are pooled from several locations to help establish global rankings and SOTA algorithms that work across majority of setups. We introduce RB2 — a benchmark inspired from human SHAP tests. Our benchmark was run across three different labs and reveals several surprising findings.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://rb2.info/">[Project Page]</a>
+                <!--a href="javascript:copy(div20213dV, bibdiv20213dV)">[Bibtex]</a-->
+                <a href="javascript:copy(div2021rb2, absdiv2021rb2)">[Abstract]</a>                
+            </div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="150" style="text-align:center">
+            <img src="../pics/sod_tgnn.gif" width="250">
+        </td>
+        <td><a href="https://arxiv.org/pdf/2202.00182.pdf">Semi-supervised 3D Object Detection via Temporal Graph Neural Networks</a><br>
+            <div class="pubauthor">Jianren Wang, Haiming Gang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
+            </div>
+            <div class="pubjournal">International Conference on 3D Vision (3DV), 2021</div>
+            <div id="div20213dV" class="pubInfo"></div>
+            <div id="bibdiv20213dV" style="display:none">
+                <blockquote>
+<pre>@article{wang2021sodtgnn,
+title={Semi-supervised 3D Object Detection via Temporal Graph Neural Networks},
+author={Wang, Jianren and Gang, Haiming and Ancha, Siddharth and Chen, Yi-ting and Held, David},
+journal={International Conference on 3D Vision},
+year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="absdiv20213dV" style="display:none">
+                <blockquote>
+                3D object detection plays an important role in autonomous driving and other robotics applications. However, these detectors usually require training on large amounts of annotated data that is expensive and time-consuming to collect. Instead, we propose leveraging large amounts of unlabeled point cloud videos by semi-supervised learning of 3D object detectors via temporal graph neural networks. Our insight is that temporal smoothing can create more accurate detection results on unlabeled data, and these smoothed detections can then be used to retrain the detector. We learn to perform this temporal reasoning with a graph neural network, where edges represent the relationship between candidate detections in different time frames.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://www.jianrenw.com/SOD-TGNN/">[Project Page]</a>
+                <a href="https://github.com/jianrenw/SOD-TGNN">[Code]</a>
+                <a href="javascript:copy(div20213dV, bibdiv20213dV)">[Bibtex]</a>
+                <a href="javascript:copy(div20213dV, absdiv20213dV)">[Abstract]</a>
+                <a href="https://youtu.be/BhW7m3R_Yqo">[Video (Short)]</a>
+                <a href="https://youtu.be/L8X4LCEpCaE">[Video (Long)]</a>
+            <br></div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/vcd.gif" img width="250">
+        </td>
+        <td><a href="https://arxiv.org/abs/2105.10389">Learning Visible Connectivity Dynamics for Cloth Smoothing</a><br>
+            <div class="pubauthor">Xingyu Lin*, Yufei Wang*, Zixuan Huang, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2021</div>
+            <div id="div2021vcd" class="pubInfo"></div>
+            <div id="bibdiv2021vcd" style="display:none">
+                <blockquote>
+<pre>@inproceedings{lin2021VCD,
+title={Learning Visible Connectivity Dynamics for Cloth Smoothing},
+author={Lin, Xingyu and Wang, Yufei and Huang, Zixuan and Held, David},
+booktitle={Conference on Robot Learning},
+year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="absdiv2021vcd" style="display:none">
+                <blockquote>
+                Robotic manipulation of cloth remains challenging for robotics due to the complex dynamics of the cloth, lack of a low-dimensional state representation, and self-occlusions. In contrast to previous model-based approaches that learn a pixel-based dynamics model or a compressed latent vector dynamics, we propose to learn a particle-based dynamics model from a partial point cloud observation. To overcome the challenges of partial observability, we infer which visible points are connected on the underlying cloth mesh. We then learn a dynamics model over this visible connectivity graph. Compared to previous learning-based approaches, our model poses strong inductive bias with its particle based representation for learning the underlying cloth physics; it is invariant to visual features; and the predictions can be more easily visualized. We show that our method greatly outperforms previous state-of-the-art model-based and model-free reinforcement learning methods in simulation. Furthermore, we demonstrate zero-shot sim-to-real transfer where we deploy the model trained in simulation on a Franka arm and show that the model can successfully smooth different types of cloth from crumpled configurations. Videos can be found on our project website.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/vcd-cloth">[Project Page]</a>
+                <!--a href="https://github.com/hari-sikchi/LOOP">[Code]</a-->
+                <a href="javascript:copy(div2021vcd, bibdiv2021vcd)">[Bibtex]</a>
+                <a href="javascript:copy(div2021vcd, absdiv2021vcd)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2105.10389.pdf">[PDF]</a>
+                <!--a href="https://youtu.be/zYDwnj_ghZM">[Talk]</a-->
+                <!--a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a-->
+                <a href="https://openreview.net/forum?id=n1hDe9iK6ms">[OpenReview]</a>
+                <br>
+
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+    <td class="pubimg" width="250" height="100" style="text-align:center">
+        <img src="../pics/ffn.gif" img width="250">
+        </td>
+        <td><a href="https://arxiv.org/abs/2111.05623">FabricFlowNet: Bimanual Cloth Manipulation with a Flow-based Policy</a><br>
+            <div class="pubauthor">Thomas Weng, Sujay Bajracharya, Yufei Wang, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2021</div>
+            <div id="weng2021fabricflownet" class="pubInfo"></div>
+            <div id="bibweng2021fabricflownet" style="display:none">
+                <blockquote>
+<pre>
+@inproceedings{weng2021fabricflownet,
+ title={FabricFlowNet: Bimanual Cloth Manipulation 
+    with a Flow-based Policy},
+ author={Weng, Thomas and Bajracharya, Sujay and 
+    Wang, Yufei and Agrawal, Khush and Held, David},
+ booktitle={Conference on Robot Learning},
+ year={2021}
+}
+</pre>
+                </blockquote>
+            </div>
+            <div id="absweng2021fabricflownet" style="display:none">
+                <blockquote>
+We address the problem of goal-directed cloth manipulation, a challenging task due to the deformability of cloth. Our insight is that optical flow, a technique normally used for motion estimation in video, can also provide an effective representation for corresponding cloth poses across observation and goal images. We introduce FabricFlowNet (FFN), a cloth manipulation policy that leverages flow as both an input and as an action representation to improve performance. FabricFlowNet also elegantly switches between dual-arm and single-arm actions based on the desired goal. We show that FabricFlowNet significantly outperforms state-of-the-art model-free and model-based cloth manipulation policies. We also present real-world experiments on a bimanual system, demonstrating effective sim-to-real transfer.  Finally, we show that our method generalizes when trained on a single square cloth to other cloth shapes, such as T-shirts and rectangular cloths.
+
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/fabricflownet">[Project Page]</a>
+                <!-- <a href="">[Code]</a> -->
+                <a href="javascript:copy(weng2021fabricflownet, bibweng2021fabricflownet)">[Bibtex]</a>
+                <a href="javascript:copy(weng2021fabricflownet, absweng2021fabricflownet)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2111.05623.pdf">[PDF]</a>
+                <a href="https://www.google.com/url?q=https%3A%2F%2Fopenreview.net%2Fattachment%3Fid%3DTsqkJJMgHkk%26name%3Dposter&sa=D&sntz=1&usg=AFQjCNH3PPtQ_vMMk00WEMRXG28cWK3ylQ">[Poster]</a>
+                <a href="https://openreview.net/forum?id=TsqkJJMgHkk">[OpenReview]</a>
+            </div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+    <td class="pubimg" width="250" height="100" style="text-align:center">
+        <img src="../pics/loop_overview.jpeg" img width="250">
+        </td>
+        <td><a href="https://arxiv.org/abs/2008.10066">Learning Off-policy for Online Planning</a><br>
+            <div class="pubauthor">Harshit Sikchi, Wenxuan Zhou, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2021 - <award>Oral presentation</award> (Selection rate 6.5%); <award>Best Paper Finalist</award></div>
+            <div id="sikchi2021learning" class="pubInfo"></div>
+            <div id="bibsikchi2021learning" style="display:none">
+                <blockquote>
+<pre>@inproceedings{sikchi2021learning,
+title={Learning Off-policy for Online Planning},
+author={Sikchi, Harshit and Zhou, Wenxuan and Held, David},
+booktitle={Conference on Robot Learning},
+year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="abssikchi2021learning" style="display:none">
+                <blockquote>
+                Reinforcement learning (RL) in low-data and risk-sensitive domains requires performant and flexible deployment policies that can readily incorporate constraints during deployment. One such class of policies are the semi-parametric H-step lookahead policies, which select actions using trajectory optimization over a dynamics model for a fixed horizon with a terminal value function. In this work, we investigate a novel instantiation of H-step lookahead with a learned model and a terminal value function learned by a model-free off-policy algorithm, named Learning Off-Policy with Online Planning (LOOP). We provide a theoretical analysis of this method, suggesting a tradeoff between model errors and value function errors and empirically demonstrate this tradeoff to be beneficial in deep reinforcement learning. Furthermore, we identify the "Actor Divergence" issue in this framework and propose Actor Regularized Control (ARC), a modified trajectory optimization procedure. We evaluate our method on a set of robotic tasks for Offline and Online RL and demonstrate improved performance. We also show the flexibility of LOOP to incorporate safety constraints during deployment with a set of navigation environments. We demonstrate that LOOP is a desirable framework for robotics applications based on its strong performance in various important RL settings.
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://hari-sikchi.github.io/loop/">[Project Page]</a>
+                <a href="https://github.com/hari-sikchi/LOOP">[Code]</a>
+                <a href="javascript:copy(sikchi2021learning, bibsikchi2021learning)">[Bibtex]</a>
+                <a href="javascript:copy(sikchi2021learning, abssikchi2021learning)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2008.10066.pdf">[PDF]</a>
+                <a href="https://youtu.be/zYDwnj_ghZM">[Talk]</a>
+                <a href="https://openreview.net/forum?id=1GNV9SW95eJ">[OpenReview]</a>
+                <!--a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a-->
+            </div>
+
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/rss2021lightcurtains.png" img width="250">
+            <!--img src="../pics/rss21.gif" img width="250"-->
+            <!--img src="../pics/rss21b.gif" img width="250"-->
+        </td>
+        <td><a href="https://arxiv.org/abs/2107.04000">Active Safety Envelopes using Light Curtains with Probabilistic Guarantees</a><br>
+            <div class="pubauthor">Siddharth Ancha, Gaurav Pathak, Srinivasa Narasimhan, David Held<br>
+            </div>
+            <div id="bib2021safetyenvelopes" style="display:none">
+                <blockquote>
+<pre>@INPROCEEDINGS{Ancha-RSS-21,
+    AUTHOR    = {Siddharth Ancha AND Gaurav Pathak AND Srinivasa G. Narasimhan AND David Held},
+    TITLE     = {Active Safety Envelopes using Light Curtains with Probabilistic Guarantees},
+    BOOKTITLE = {Proceedings of Robotics: Science and Systems},
+    YEAR      = {2021},
+    MONTH     = {July}
+}</pre>
+                </blockquote>
+            </div>
+            <div id="abs2021safetyenvelopes" style="display:none">
+                <blockquote>
+                To safely navigate unknown environments, robots must accurately perceive dynamic obstacles. Instead of directly measuring the scene depth with a LiDAR sensor, we explore the use of a much cheaper and higher resolution sensor: <b>programmable light curtains</b>. Light curtains are controllable depth sensors that sense only along a surface that a user selects.  We use light curtains to estimate the <b>safety envelope</b> of a scene: a hypothetical surface that separates the robot from all obstacles. We show that generating light curtains that sense <b>random</b> locations (from a particular distribution) can quickly discover the safety envelope for scenes with unknown objects. Importantly, we produce theoretical safety guarantees on the probability of detecting an obstacle using random curtains. We combine random curtains with a machine learning based model that forecasts and tracks the motion of the safety envelope efficiently. Our method accurately estimates safety envelopes while providing probabilistic safety guarantees that can be used to certify the efficacy of a robot perception system to detect and avoid dynamic obstacles. We evaluate our approach in a simulated urban driving environment and a real-world environment with moving pedestrians using a light curtain device and show that we can estimate safety envelopes efficiently and effectively.
+                </blockquote>
+            </div>
+            <div class="pubjournal">Robotics: Science and Systems (RSS), 2021</div>
+            <div style="font-size:small">
+                <a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees">[Project Page]</a>
+                <a href="https://github.com/CMU-Light-Curtains/SafetyEnvelopes">[Code]</a>
+                <a href="javascript:copy(div2021safetyenvelopes, bib2021safetyenvelopes)">[Bibtex]</a>
+                <a href="javascript:copy(div2021safetyenvelopes, abs2021safetyenvelopes)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2107.04000.pdf">[PDF]</a>
+                <a href="https://www.youtube.com/watch?v=1PUAjzcTz5g">[Talk]</a>
+                <a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a>
+                <a href="https://blog.ml.cmu.edu/2021/11/19/active-safety-envelopes-using-light-curtains-with-probabilistic-guarantees/">[Blog]</a>
+            </div>
+            <div id="div2021safetyenvelopes" class="pubInfo"></div>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/zephyr2.png" img width="250" height="150">
+        </td>
+        <td><a href="https://arxiv.org/abs/2104.13526">ZePHyR: Zero-shot Pose Hypothesis Rating</a><br>
+            <div class="pubauthor">
+                Brian Okorn*, Qiao Gu*, Martial Hebert, David Held<br>
+            </div>
+            <div id="bib2021zephyr" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{icra2021zephyr,
+                    title={ZePHyR: Zero-shot Pose Hypothesis Rating},
+                    author={Brian Okorn, Qiao Gu, Martial Hebert, David Held},
+                    booktitle={2021 International Conference on Robotics and Automation (ICRA)},
+                    year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="abs2021zephyr" style="display:none">
+                <blockquote>
+                    Pose estimation is a basic module in many robot manipulation pipelines. Estimating the pose of objects in the environment can be useful for grasping, motion planning, or manipulation. However, current state-of-the-art methods for pose estimation either rely on large annotated training sets or simulated data. Further, the long training times for these methods prohibit quick interaction with novel objects. To address these issues, we introduce a novel method for zero-shot object pose estimation in clutter. Our approach uses a hypothesis generation and scoring framework, with a focus on learning a scoring function that generalizes to objects not used for training. We achieve zero-shot generalization by rating hypotheses as a function of unordered point differences. We evaluate our method on challenging datasets with both textured and untextured objects in cluttered scenes and demonstrate that our method significantly outperforms previous methods on this task. We also demonstrate how our system can be used by quickly scanning and building a model of a novel object, which can immediately be used by our method for pose estimation. Our work allows users to estimate the pose of novel objects without requiring any retraining.
+                </blockquote>
+            </div>
+            <div class="pubjournal">International Conference of Robotics and Automation (ICRA), 2021
+            <div style="font-size:small">
+                <a href="https://bokorn.github.io/zephyr/">[Project Page]</a>
+                <a href="https://github.com/r-pad/zephyr">[Code]</a>
+                <a href="javascript:copy(div2021zephyr, bib2021zephyr)">[Bibtex]</a>
+                <a href="javascript:copy(div2021zephyr, abs2021zephyr)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2104.13526.pdf">[PDF]</a>
+            </div>
+            <div id="div2021zephyr" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/cvpr21.png" img width="250">
+        </td>
+        <td><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Raaj_Exploiting__Refining_Depth_Distributions_With_Triangulation_Light_Curtains_CVPR_2021_paper.pdf">Exploiting & Refining Depth Distributions with Triangulation Light Curtains</a><br>
+            <div class="pubauthor">Yaadhav Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan<br>
+            </div>
+            <div id="bib2021exploiting" style="display:none">
+                <blockquote>
+<pre>@inproceedings{cvpr2021raajexploiting,
+    title     = {Exploiting & Refining Depth Distributions with Triangulation Light Curtains},
+    author    = {Yaadhav Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2021}
+}</pre>
+                </blockquote>
+            </div>
+            <div id="abs2021exploiting" style="display:none">
+                <blockquote>
+                Active sensing through the use of Adaptive Depth Sensors is a nascent field, with potential in areas such as Advanced driver-assistance systems (ADAS). They do however require dynamically driving a laser / light-source to a specific location to capture information, with one such class of sensor being the Triangulation Light Curtains (LC). In this work, we introduce a novel approach that exploits prior depth distributions from RGB cameras to drive a Light Curtain's laser line to regions of uncertainty to get new measurements. These measurements are utilized such that depth uncertainty is reduced and errors get corrected recursively. We show real-world experiments that validate our approach in outdoor and driving settings, and demonstrate qualitative and quantitative improvements in depth RMSE when RGB cameras are used in tandem with a Light Curtain.
+                </blockquote>
+            </div>
+            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2021</div>
+            <div style="font-size:small">
+                <a href="https://soulslicer.github.io/rgb-lc-fusion/">[Project Page]</a>
+                <a href="https://github.com/CMU-Light-Curtains/DepthEstimation">[Code]</a>
+                <a href="javascript:copy(div2021exploiting, bib2021exploiting)">[Bibtex]</a>
+                <a href="javascript:copy(div2021exploiting, abs2021exploiting)">[Abstract]</a>
+                <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Raaj_Exploiting__Refining_Depth_Distributions_With_Triangulation_Light_Curtains_CVPR_2021_paper.pdf">[PDF]</a>
+                <a href="https://youtu.be/kIjn3U8luV0">[Talk]</a>
+            </div>
+            <div id="div2021exploiting" class="pubInfo"></div>
+            <br>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/peiyunff.gif" img width="250" height="100">
+        </td>
+        <td><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hu_Safe_Local_Motion_Planning_With_Self-Supervised_Freespace_Forecasting_CVPR_2021_paper.pdf">Safe Local Motion Planning with Self-Supervised Freespace Forecasting</a><br>
+            <div class="pubauthor">Peiyun Hu, Aaron Huang, John Dolan, David Held, Deva Ramanan<br>
+            </div>
+            <div id="bib2021cvpr_safe" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{cvpr2021husafe,
+                    title={Safe Local Motion Planning with Self-Supervised Freespace Forecasting},
+                    author={Peiyun Hu, Aaron Huang, John Dolan, David Held, Deva Ramanan},
+                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+                    year={2021}}</pre>
+                </blockquote>
+            </div>
+            <div id="abs2021cvpr_safe" style="display:none">
+                <blockquote>
+                Safe local motion planning for autonomous driving in dynamic environments requires forecasting how the scene evolves. Practical autonomy stacks adopt a semantic object-centric representation of a dynamic scene and build object detection, tracking, and prediction modules to solve forecasting. However, training these modules comes at an enormous human cost of manually annotated objects across frames. In this work, we explore future freespace as an alternative representation to support motion planning. Our key intuition is that it is important to avoid straying into occupied space regardless of what is occupying it. Importantly, computing ground-truth future freespace is annotation-free. First, we explore freespace forecasting as a self-supervised learning task. We then demonstrate how to use forecasted freespace to identify collision-prone plans from off-the-shelf motion planners. Finally, we propose future freespace as an additional source of annotation-free supervision. We demonstrate how to integrate such supervision into the learning process of learning-based planners. Experimental results on nuScenes and CARLA suggest both approaches lead to significant reduction in collision rates.
+                </blockquote>
+            </div>
+            <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2021
+            <div style="font-size:small">
+            <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hu_Safe_Local_Motion_Planning_With_Self-Supervised_Freespace_Forecasting_CVPR_2021_paper.pdf">[Paper]</a> 
+                                  <a href="https://peiyunh.github.io/ff/index.html">[Project page]</a>
+                                  <a href="https://peiyunh.github.io/ff/poster.pdf">[Poster]</a> 
+                                  <a href="https://youtu.be/O_2MojWp7yk">[Talk]</a> 
+                                  <a href="https://github.com/peiyunh/ff">[Code]</a>
+                <a href="javascript:copy(div2021cvpr_safe, bib2021cvpr_safe)">[Bibtex]</a>
+                <a href="javascript:copy(div2021cvpr_safe, abs2021cvpr_safe)">[Abstract]</a>
+                <!-- <a href="https://bokorn.github.io/zephyr/resources/ZePHyR_Zero-shot_Pose_Hypothesis_Rating.pdf">[PDF]</a> -->
+            </div>
+            <div id="div2021cvpr_safe" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+>>>>>>> Stashed changes
 
     <tr>
         <td class="pubimg" width="250" height="100">
