@@ -56,7 +56,9 @@ Picky plates or finger foods are what we do for most of our lunches. I put them 
 * protein
 * fruits and vegetables
 
-You can find out more about picky plates in [my Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/) as well as on this blog [here](https://www.simplehomemom.com/how-to-make-lunches-painless-and-quick-with-picky-plates/).
+You can find out more about picky plates in [my Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/) that includes printables and steps to make your own picky plates as well as on this blog [here](https://www.simplehomemom.com/how-to-make-lunches-painless-and-quick-with-picky-plates/) about picky plates.
+
+Finger food ideas: [20 Best Finger Food Ideas to Feed a Crowd](https://www.thepioneerwoman.com/food-cooking/meals-menus/g38403459/finger-food-ideas/); [19 Healthy and Easy Finger Foods For Kids](https://www.momjunction.com/articles/delicious-finger-foods-for-your-kids-party_0075814/); [Masterlist of Finger Foods for Toddlers, Babies, and Big Kids](https://www.yummytoddlerfood.com/finger-foods/)
 
 #### TUNA WRAPS
 
