@@ -6,7 +6,7 @@ subtitle: ''
 ---
 ## Quick links
 
-* Grab My Simple Daily Care Printables [HERE](https://mailchi.mp/d739479e4b35/mysimpledailycare)
+* Sign up for the **FREE** Simple Home Planning Binder Challenge [HERE](https://mailchi.mp/9e7cf5d96841/planningchallenge)! Starting March 1st.
 * [Newest blogs](https://www.simplehomemom.com)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
@@ -15,6 +15,7 @@ subtitle: ''
 * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
 * [Simple Planning Blogs](https://www.simplehomemom.com/tags/#simple%20planning) + [My Simple Planner](https://buy.stripe.com/28o02a7WCeWUdbi3cg)
 * [My Simple Homeschool Planner](https://buy.stripe.com/6oE8yGel06qoc7e4gm)
+* Grab My Simple Daily Care Printables [HERE](https://mailchi.mp/d739479e4b35/mysimpledailycare)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) (50% off with the code 50HOME)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
