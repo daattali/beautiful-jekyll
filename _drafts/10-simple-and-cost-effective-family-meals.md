@@ -62,34 +62,38 @@ Finger food ideas: [20 Best Finger Food Ideas to Feed a Crowd](https://www.thepi
 
 #### TUNA WRAPS
 
-I do variations of these often, so will share the most current version I've been making.  
-Ingredients:  
-Whole wheat wrap  
-Canned tuna  
-Touch of greek yogurt (or if you're into mayo, do that)  
-Spices: garlic, oregano, pepper..whatever strikes your fancy  
-Shredded cheese  
-Onion  
-Lentils. I cook in the insant pot and mix with the misture.  
-Chopped spinach  
-I'll sometimes serve with a side of mixed veggies too.
+I do variations of these often, so will share the most current version I've been making.
 
-Sub for lettuce for gf option..I just eat without any bread or lettuce!
+  
+**Ingredients:**
+
+* Whole wheat wrap - sub for lettuce for a gluten free option.
+* Canned tuna
+* Touch of greek yogurt (or if you're into mayo, do that)
+* Spices: garlic, oregano, pepper..whatever strikes your fancy
+* Shredded cheese
+* Onion
+* Lentils. I cook in the insant pot and mix with the tuna sometimes.
+* Chopped spinach
+* I'll sometimes serve with a side of mixed veggies too.
 
 #### TACO BOWLS (lentil with meat)
 
-This one is always popular in our home. I keep a running list of ingredients of it on my phone for quick recall low brain power usage needed. ha!  
-Ingredients:  
-1/2 Hamburger or ground turkey and 1/2 lentils with choppedonion and sometimes shredded carrot and/or cabbage  
-Refried beans or plain beans  
-Olives  
-Lettuce/spinach  
-Salsa  
-Sour cream  
-Avocado  
-Carrot  
-Cucumber  
-Any other veggies we have on hand that work!
+This one is always popular in our home. I keep a running list of ingredients of it on my phone for quick recall; low brain power usage needed. ha!
+
+**  
+Ingredients:**
+
+* 1/2 Hamburger or ground turkey and 1/2 lentils with chopped nion and sometimes shredded carrot and/or cabbage
+* Refried beans or plain beans
+* Olives
+* Lettuce/spinach
+* Salsa
+* Sour cream
+* Avocado
+* Carrot
+* Cucumber
+* Any other veggies we have on hand that work!
 
 ![A picture of prepped food ready for taco bowl night.](/uploads/taco-bowl-night-shm.png "10 Simple and Cost Effective Family Meals SHM")
 
@@ -97,64 +101,60 @@ Any other veggies we have on hand that work!
 
 This is a favourite in our home!
 
-Chicken  
-Onions  
-Tomato  
-Pickled turnip  
-Pickles  
-Lettuce/spinach  
-Herbs  
-Cucumber  
-Olives  
-Garlic sauce  
-Hummus  
-Wraps
+**Ingredients:**
 
-We use this recipe to make our chicken. We batch enough for four shawarma nights at once.
+* Chicken
+* Onions
+* Tomato
+* Pickled turnip
+* Pickles
+* Lettuce/spinach
+* Herbs
+* Cucumber
+* Olives
+* Garlic sauce
+* Hummus
+* Wraps
 
-[https://www.delish.com/cooking/recipe-ideas/a26092675/best-chicken-shawarma-recipe](https://www.delish.com/cooking/recipe-ideas/a26092675/best-chicken-shawarma-recipe "https://www.delish.com/cooking/recipe-ideas/a26092675/best-chicken-shawarma-recipe")
-
-For our garlic sauce, we use plain yogurt, olive oil, and blended garlic.
+We use[ this recipe](https://www.delish.com/cooking/recipe-ideas/a26092675/best-chicken-shawarma-recipe) to make our chicken. We batch enough for four shawarma nights at once. For our garlic sauce, we use plain yogurt, olive oil, and blended fresh garlic.
 
 #### SIMPLE VEGETABLE SOUP
 
-This one is SO tasty and is usually a hit with our crew. We try to have at least in one meatless supper a week, usually on Monday for a meatless Monday theme.
+This one is SO tasty and is usually a hit with our crew. We try to have at least one meatless supper a week, usually on Monday for a meatless Monday theme.
 
-Ingredients:  
-Broth. We make our own broth whenever we cook a chicken or turkey or use some store bought broth.  
-Rice, quinoa or rice noodles  
-Frozen mixed vegetables  
-Red lentils (they cook up so softly and you don't even notice them much in the soup)  
-Add chicken or turkey for a non vegetarian option  
-Serve with biscuits!
+**Ingredients:**
 
-#### PANCAKES
-
-We have pancakes for brunch on Sundays, usually served with a berry sauce (frozen berries with a dash of maple syrup).
-
-Our go to regular pancake recipe  
-Banana pancakes  
-Buckwheat gf pancakes
+* Broth. We make our own broth whenever we cook a chicken or turkey or use some store bought broth.
+* Rice, quinoa or rice noodles
+* Frozen mixed vegetables
+* Red lentils (they cook up so softly and you don't even notice them much in the soup)
+* Add chicken or turkey for a non vegetarian option
+* Serve with biscuits!
 
 #### EGG WRAPS
 
 These are always a hit here and so simple to put together.
 
-Ingredients:  
-Scrambled eggs  
-Spinach  
-Tomato  
-Cheese  
-Sauce  
-Whole wheat wraps  
-Veggies on the side (fresh or steamed)
+**Ingredients:**
 
-Broiled fish, veggies, quinoa/rice  
+* Scrambled eggs
+* Spinach
+* Tomato
+* Cheese
+* Sauce
+* Whole wheat wraps
+* Veggies on the side (fresh or steamed)
+
+#### SIMPLE FISH MEAL
+
+  
 Our favorite a simplest recipe is taking salmon or haddock with olive oil, salt, and pepper and frying it on our griddle.
 
 I make instant pot quinoa/rice. Find the recipe here. I add spices like cumin and oregano. I'll use broth instead of water if I have some too.
 
 Veggies is usually roast veggies or steamed veggies. Whatever we feel like or have to use up. Olive oil, salt, and pepper is out go to mix.
+
+Broiled fish, veggies, quinoa/rice
 
 #### BREAKFAST BAR
 
@@ -169,11 +169,16 @@ Frozen berries
 Yogurt  
 Peanut butter
 
-CTA meal guide
-
-Other blogs you may enjoy:
-
 FREE SOMETHING???
+
+**Helpful meal planning blogs of mine you may enjoy:**
+
+* [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
+* [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)
+* [Three tips to feed the hangry children fast](https://www.simplehomemom.com/three-tips-to-feed-the/)
+* [How to make lunches painless and quick with picky plates](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
+
+**MEAL GUIDEEEEE CTA**
 
 **SAVE FOR FUTURE REFERENCE:**
 
