@@ -14,7 +14,7 @@ subtitle: ''
 
 <br>
 
-### This Simple Meal Mlanning Guide is for you if:
+### This Simple Meal Planning Guide is for you if:
 
 * you often dread mealtimes and feel overwhelmed with meal planning
 * you often google meal planning type ideas, but don’t know where to start
@@ -25,10 +25,10 @@ subtitle: ''
 
 ### What you'll find in the Simple Meal Planning Guide:
 
-* Helpful meal planning and meal organizing tips 
+* Helpful meal planning and meal organizing tips
 * 8 helpful meal planning printables
 * Steps to help guide you through the process of meal planning from start to finish
-* Bonus meal planning resources and ideas 
+* Bonus meal planning resources and ideas
 * There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works
 * Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
 
