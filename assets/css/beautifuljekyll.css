@@ -259,6 +259,7 @@ img {
   white-space: normal;
   padding: 0.625rem;
   background-color: {{ site.navbar-col | default: "#EAEAEA" }};
+  color: {{ site.navbar-text-col | default: "#404040" }};
   text-decoration: none !important;
   border-width: 0 1px 1px 1px;
   font-weight: normal;
