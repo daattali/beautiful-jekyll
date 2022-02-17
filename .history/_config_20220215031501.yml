@@ -6,20 +6,20 @@
 # --- Required options --- #
 
 # Name of website
-title: Artes do Sul
+title: My website
 
 # Short description of your site
-description: Criando soluções e espalhando a mensagem do Único Mestre
+description: A virtual proof that I'm awesome
 
 # GitHub Actions
-repository: "araguaci/araguaci.github.io"
+repository: "VincentTam/beautiful-jekyll"
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # Your name to show in the footer
-author: Araguaci
+author: Some Person
 
 # --- List of links in the navigation bar --- #
 
@@ -34,7 +34,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/artesdosul.jpg"
+avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -49,19 +49,19 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "araguaci@gmail.com"
-  facebook: artesdosulweb
-  github: araguaci
-  twitter: araguaci
+  email: "someone@example.com"
+  facebook: deanattali
+  github: daattali
+  twitter: daattali
   patreon: DeanAttali
-  youtube: c/AraguaciCarlosdeAndrade
-  instagram: araguaciandrade
-  spotify: 31mo4ybia7vw423rv3i33klrx23u
+  youtube: c/daattali
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
+#  instagram: deanat78
+#  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
 #  twitch: yourname
@@ -74,7 +74,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: ✠ 🇧🇷 ✠ só sei que nada sei ✠ 🇧🇷 ✠
+rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
@@ -87,7 +87,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "artesdosul.com"
+url-pretty: "MyWebsite.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -119,7 +119,7 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-navbar-img: "/assets/img/bgimage.png"
+#navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
@@ -178,9 +178,9 @@ navbar-img: "/assets/img/bgimage.png"
 # instructions. For any support with staticman please direct questions to staticman and 
 # not to BeautifulJekyll.
 staticman:
-  repository : araguaci/araguaci.github.io # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  repository : vincenttam/beautiful-jekyll # GitHub username/repository eg. "daattali/beautiful-jekyll"
   branch     : gh-pages # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-  endpoint   : https://araguaci.github.io # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
+  endpoint   : https://secretman3.herokuapp.com/v3/entry/github/ # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
 #  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
 #    siteKey  : # You need to apply for a site key on Google
 #    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
@@ -196,7 +196,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Sao_Paulo"
+timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/

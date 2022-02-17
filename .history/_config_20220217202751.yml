@@ -74,7 +74,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: ✠ 🇧🇷 ✠ só sei que nada sei ✠ 🇧🇷 ✠
+rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
@@ -87,7 +87,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "artesdosul.com"
+url-pretty: "MyWebsite.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -119,7 +119,7 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-navbar-img: "/assets/img/bgimage.png"
+#navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
@@ -178,9 +178,9 @@ navbar-img: "/assets/img/bgimage.png"
 # instructions. For any support with staticman please direct questions to staticman and 
 # not to BeautifulJekyll.
 staticman:
-  repository : araguaci/araguaci.github.io # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  repository : vincenttam/beautiful-jekyll # GitHub username/repository eg. "daattali/beautiful-jekyll"
   branch     : gh-pages # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-  endpoint   : https://araguaci.github.io # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
+  endpoint   : https://secretman3.herokuapp.com/v3/entry/github/ # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
 #  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
 #    siteKey  : # You need to apply for a site key on Google
 #    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
@@ -196,7 +196,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Sao_Paulo"
+timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
