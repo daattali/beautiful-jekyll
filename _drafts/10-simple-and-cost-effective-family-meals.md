@@ -64,7 +64,6 @@ Finger food ideas: [20 Best Finger Food Ideas to Feed a Crowd](https://www.thepi
 
 I do variations of these often, so will share the most current version I've been making.
 
-  
 **Ingredients:**
 
 * Whole wheat wrap - sub for lettuce for a gluten free option.
@@ -81,7 +80,7 @@ I do variations of these often, so will share the most current version I've been
 
 This one is always popular in our home. I keep a running list of ingredients of it on my phone for quick recall; low brain power usage needed. ha!
 
-**  
+\**  
 Ingredients:**
 
 * 1/2 Hamburger or ground turkey and 1/2 lentils with chopped nion and sometimes shredded carrot and/or cabbage
@@ -147,27 +146,23 @@ These are always a hit here and so simple to put together.
 
 #### SIMPLE FISH MEAL
 
-  
-Our favorite a simplest recipe is taking salmon or haddock with olive oil, salt, and pepper and frying it on our griddle.
+Our favorite simplest recipe is taking salmon or haddock with olive oil, salt, and pepper and frying it on our griddle.
 
-I make instant pot quinoa/rice. Find the recipe here. I add spices like cumin and oregano. I'll use broth instead of water if I have some too.
+I make instant pot quinoa/rice. Find a good recipe [here](https://minimalistbaker.com/instant-pot-quinoa-fluffy-perfect-no-soaking/). I add spices like cumin and oregano. I'll use broth instead of water if I have some too.
 
-Veggies is usually roast veggies or steamed veggies. Whatever we feel like or have to use up. Olive oil, salt, and pepper is out go to mix.
-
-Broiled fish, veggies, quinoa/rice
+Veggies is usually roast veggies or steamed veggies. Whatever we feel like or have to use up. Olive oil, salt, and pepper is our go to mix.
 
 #### BREAKFAST BAR
 
-We use breakfast bars most days for breakfast. It consists of dry oatmeal with added milk or pot oatmeal. The kids choose their own combinations from the ingredients below.
+We use breakfast bars most days for breakfast. It consists of dry oatmeal with added milk or pot oatmeal. The kids choose their own combinations from the ingredients below:
 
-Ingredients:  
-Oatmeal  
-Milk  
-Dried fruit  
-Chia and flax seed  
-Frozen berries  
-Yogurt  
-Peanut butter
+* Oatmeal
+* Milk
+* Dried or fresh fruit
+* Chia and flaxseed
+* Frozen berries
+* Yogurt
+* Peanut butter
 
 FREE SOMETHING???
 
