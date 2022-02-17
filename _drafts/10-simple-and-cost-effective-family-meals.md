@@ -20,6 +20,8 @@ share-img: ''
 redirect_from: []
 
 ---
+FREE SOMETHING???
+
 I love getting meal inspiration from other families just like ours, so thought I'd write down all of our simple and cost effective family meals here for you. Hopefully you find something new to try. Tag me on instagram [@simplehomemom](www.instagram.com/simplehomemom) if you do! I bring you: 10 simple and cost effetive family meals.
 
 #### Why simple and cost effective family meals?
@@ -164,7 +166,9 @@ We use breakfast bars most days for breakfast. It consists of dry oatmeal with a
 * Yogurt
 * Peanut butter
 
-FREE SOMETHING???
+**SAVE FOR FUTURE REFERENCE:**
+
+![](/uploads/10-simple-and-cost-effective-family-meals-shm.jpg "10 Simple and Cost Effective Family Meals SHM")
 
 **Helpful meal planning blogs of mine you may enjoy:**
 
@@ -173,8 +177,19 @@ FREE SOMETHING???
 * [Three tips to feed the hangry children fast](https://www.simplehomemom.com/three-tips-to-feed-the/)
 * [How to make lunches painless and quick with picky plates](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
 
-**MEAL GUIDEEEEE CTA**
+### THE SIMPLE MEAL PLANNING GUIDE
 
-**SAVE FOR FUTURE REFERENCE:**
+And if you’re constantly finding meal planning a challenge, you may also love my Simple Meal Planning Guide!
 
-![](/uploads/10-simple-and-cost-effective-family-meals-shm.jpg "10 Simple and Cost Effective Family Meals SHM")
+_The Simple Meal planning Guide is for you if…_
+
+* you often feel stumped and uninspired with meal planning
+* you often dread meal times
+* you often feel overwhelmed and don’t know where to start with meal planning
+* you’d like a simple, streamlined process to meal plan that works for you in every season of life
+* you often are googling meal planning type ideas
+* you can’t seem to find a system for meal planning that sticks
+
+You can find more about it[ here](https://www.simplehomemom.com/the-simple-meal-planning-guide/).
+
+_“If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource.” - Crystin from_ [_@delightfullyfeasting_](https://www.simplehomemom.com/the-simple-meal-planning-guide/www.instagram.com/delightfullyfeasting)
