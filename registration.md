@@ -112,7 +112,7 @@ Below is displayed the estimation of the initial momenta that wrap the template 
  
 <table>
 <tr>
-   <th> Number of <br /> control points </th>
+   <th> Number<br /> of cp </th>
 
 <th><img width=30/>Original algorithm<img width=100/> </th>
 <th><img width=20/>Coarse-to-fine algorithm <img width=100/> </th>
