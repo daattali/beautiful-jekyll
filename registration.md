@@ -12,7 +12,7 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 
 <table>
 <tr>
-   <th> Number of control points </th>
+   <th> Number of cp </th>
 
 <th>  <img width=40/> Original algorithm   <img width=110/></th>
 <th> <img width=30/>Coarse-to-fine algorithm  <img width=110/> </th>
