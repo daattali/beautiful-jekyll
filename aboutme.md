@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: KODOISH, KODOISH, KODOISH ADONAI TSEBAYOTH
+subtitle: ✠ KODOISH, KODOISH, KODOISH ADONAI TSEBAYOTH ✠
 ---
 
 ### Career
@@ -37,17 +37,25 @@ Critical analysis, organization, discipline, teamwork, concern with responsibili
 ✠ May God keep you in the palm of his hand.
 ### Hobby Designer, Producer, Creator, Patreon and Hosting by Free Volunteering
 
-  - [FLORIPA SURF CLUB SURF SCHOOL – A escola que ensina a surfar na praia com ondas perfeitas para iniciantes](http://floripasurfclub.com.br/)
+  - [FLORIPA SURF CLUB SURF SCHOOL – The school that teaches you how to surf on the beach with perfect waves for beginners](http://floripasurfclub.com.br/)
   - [FLORIPA SUP CLUB - STAND UP PADDLE SURFCLUB](http://www.floripasupclub.com.br/)
   - [CENTRAL DE AVENTURAS](http://centraldeaventuras.com.br/)
   - [PROJETO SUP SOCIAL](https://supsocial.vercel.app/)
 
 ### F.E.C.E.E.S.S. ☆ A.C.E.S. SC
   
-  Unindo talentos e fortalecendo a educação e o esporte em Santa Catarina
+  Uniting talents and strengthening education and sport in Santa Catarina
 
   - [🌊 Federação Catarinense de Especialistas e Escolas de Surf e Stand Up Paddle](https://escolasdesurf.org.br/)
-  - A.C.E.S. SC-Associação Catarinense das Escolas de Surf SC
-  - Unindo talentos e fortalecendo a educação e o esporte em Santa Catarina
+  - A.C.E.S. SC - Santa Catarina Association of Surf Schools SC
     - [🏄 HOTSITE F.E.C.E.E.S.S. ☆ A.C.E.S. SC](http://feceess.escolasdesurf.org.br/)
-    - [🏄 Escolas de Surf Credenciadas](http://feceess.escolasdesurf.org.br/escolas/)
+    - [🏄 Accredited Surf Schools](http://feceess.escolasdesurf.org.br/escolas/)
+
+<p align="center">
+  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api?username=araguaci&show_icons=true&count_private=true&theme=blue&hide_border=true&hide=issues,contribs&bg_color=FFFFFF00">
+  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api/top-langs/?username=araguaci&layout=compact&hide_border=true&theme=blue&bg_color=FFFFFF00&langs_count=6&hide=jupyter%20notebook,tex,css,php">
+  <img src ="https://github-readme-streak-stats.herokuapp.com?user=araguaci&theme=blue&hide_border=true&background=FFFFFF00">
+</p>
+  <br>
+  <a href="https://www.buymeacoffee.com/araguaci"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" height="50" width="210" alt="araguaci" /></a>
+</p>
