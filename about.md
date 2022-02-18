@@ -19,7 +19,7 @@ My research topics include:
 
 - **Riemanian Geometry**
 - **Image registration and atlas estimation**
-- **Fetal MRI processing.**
+- **Fetal MRI analysis.**
 
 <hr style="border:1px solid #2b6777"/>
 
