@@ -25,10 +25,13 @@ author: Araguaci
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  SURF-SUP:
+    - Floripa Surf Club: "http://www.floripasurfclub.com.br/"
+    - CENTRAL DE AVENTURAS: "http://centraldeaventuras.com.br/"
+    - Projeto SUP SOCIAL: "https://supsocial.vercel.app/"
+    - FLORIPA SUP CLUB - Stand Up Paddle SURFCLUB: "http://www.floripasupclub.com.br/"    
+    - F.E.C.E.E.S.S.☆A.C.E.S. SC: "http://feceess.escolasdesurf.org.br/"
+  Website: "http://www.artesdosul.com/"
 
 # --- Logo --- #
 
@@ -53,7 +56,7 @@ social-network-links:
   facebook: artesdosulweb
   github: araguaci
   twitter: araguaci
-  patreon: DeanAttali
+  patreon: artesdosul
   youtube: c/AraguaciCarlosdeAndrade
   instagram: araguaciandrade
   spotify: 31mo4ybia7vw423rv3i33klrx23u
@@ -99,7 +102,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "surf,surfschool,surftrip,floripa"
 
 # --- Colours / background image --- #
 
@@ -119,7 +122,7 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-navbar-img: "/assets/img/bgimage.png"
+navbar-img: "/assets/img/br.jpg"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
