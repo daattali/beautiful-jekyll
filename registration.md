@@ -103,9 +103,6 @@ Template images estimation + initial vector field to wrap the template image to 
  
 </table>
 
-
-<img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="110"/>
-
 ### Atlas estimation on images of artificial characters
  
  <a id="raw-url" href="https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/raw/master/assets/img/characters.zip" download>Click here to download the dataset</a>
