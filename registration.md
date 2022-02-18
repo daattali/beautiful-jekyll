@@ -85,7 +85,7 @@ Template images estimation + initial vector field to wrap the template image to 
 <td>49</td>
     <td>
    <center>
-<img src="/assets/img/digit_no_ctf_k4_fold_5.gif" alt="drawing" width="100"/>
+<img src="/assets/img/16.png" alt="drawing" width="100"/>
    </center>
 </td>
     
