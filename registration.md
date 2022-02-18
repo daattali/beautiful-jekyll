@@ -91,11 +91,11 @@ Template images estimation + initial vector field to wrap the template image to 
     
 <td>
    <center>
-<img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="150"/>
+<img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="180"/>
    </center>
 </td>
 <td>   
-<center><img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="150"/></center>
+<center><img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="180"/></center>
 </td>
  
 </tr>
