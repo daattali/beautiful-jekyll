@@ -76,7 +76,7 @@ Template images estimation + initial vector field to wrap the template image to 
 <table>
 <tr>
    <th> Number of control points </th>
- <th> Image of the first subject </th>
+ <th> First subject image </th>
 <th> <center>Original algorithm </center>  </th>
 <th> <center>Coarse-to-fine algorithm  </center> </th>
 </tr>
