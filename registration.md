@@ -72,7 +72,9 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 </tr> 
 </table>
 
-Template images estimation + initial vector field to wrap the template image to the first subject (the magnitude of the momentum vectors was multiplied by 2 for visualization purposes).
+**Template image and initial vector field estimation**
+
+Below is displayed the estimation of the initial momenta that wrap the template image to the image of the first subject. The magnitude of the vectors was multiplied by 2 for visualization purposes.
 
 <table>
 <tr>
