@@ -77,8 +77,8 @@ Template images estimation + initial vector field to wrap the template image to 
 <tr>
    <th> Number of control points </th>
  <th> Image of the first subject </th>
-<th>  <img width=40/> Original algorithm   <img width=40/></th>
-<th> <img width=30/>Coarse-to-fine algorithm  <img width=40/> </th>
+<th> <center>Original algorithm </center>  </th>
+<th> <center>Coarse-to-fine algorithm  </center> </th>
 </tr>
    
    <tr>
@@ -91,11 +91,11 @@ Template images estimation + initial vector field to wrap the template image to 
     
 <td>
    <center>
-<img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="130"/>
+<img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="150"/>
    </center>
 </td>
 <td>   
-<center><img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="130"/></center>
+<center><img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="150"/></center>
 </td>
  
 </tr>
