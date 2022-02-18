@@ -13,7 +13,7 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 
 <table>
 <tr>
-   <th> Number of cp </th>
+   <th> Number <br /> of cp </th>
 
 <th>  <img width=40/> Original algorithm   <img width=110/></th>
 <th> <img width=30/>Coarse-to-fine algorithm  <img width=110/> </th>
@@ -110,7 +110,7 @@ Template images estimation + initial vector field to wrap the template image to 
  
 <table>
 <tr>
-   <th> Number of control points </th>
+   <th> Number of <br /> control points </th>
 
 <th><img width=30/>Original algorithm<img width=100/> </th>
 <th><img width=20/>Coarse-to-fine algorithm <img width=100/> </th>
