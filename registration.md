@@ -71,6 +71,39 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 </tr> 
 </table>
 
+Template images estimation + initial vector field to wrap the template image to the first subject
+
+<table>
+<tr>
+   <th> Number of control points </th>
+ <th> Image of the first subject </th>
+<th>  <img width=40/> Original algorithm   <img width=40/></th>
+<th> <img width=30/>Coarse-to-fine algorithm  <img width=40/> </th>
+</tr>
+   
+   <tr>
+<td>49</td>
+    <td>
+   <center>
+<img src="/assets/img/digit_no_ctf_k4_fold_5.gif" alt="drawing" width="100"/>
+   </center>
+</td>
+    
+<td>
+   <center>
+<img src="/assets/img/digit_no_ctf_k4_fold_5.gif" alt="drawing" width="100"/>
+   </center>
+</td>
+<td>   
+<center><img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="100"/></center>
+</td>
+ 
+</tr>
+ 
+ 
+</table>
+
+
 <img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="110"/>
 
 ### Atlas estimation on images of artificial characters
