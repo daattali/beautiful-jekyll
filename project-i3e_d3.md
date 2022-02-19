@@ -34,6 +34,8 @@ A ideia do projeto surgiu a partir do [I3E-D2](../project-i3e_d2/), um robô bas
 ![Navigation](../assets/img/i3ed3/navigation.png)
 
 <img width="30" src="{{ 'assets/img/github-logo.png' | relative_url }}" alt="logo github"/> **Repositório:** [rascimatec/i3e-d3](https://github.com/rascimatec/i3e-d3)
+<br>
+<img width="30" src="{{ 'assets/img/github-logo.png' | relative_url }}" alt="logo github"/> **Repositório:** [rascimatec/i3e-d3_bluepill](https://github.com/rascimatec/i3e-d3_bluepill)
 
 ### Eletrônica
 
@@ -72,6 +74,20 @@ Projeto finalizado! Demorou, mas conseguimos projetar um robô autônomo com um 
 Como todo projeto, existem pontos de melhoria e sugestões para trabalhos futuros, mas, por enquanto, estamos satisfeitos com o nosso mascote!
 
 <iframe width="720" height="420" src="https://www.youtube.com/embed/_L5760xKJU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Após serem feitas todas as implementações de robótica com o ROS, tornando o I3E-D3 um robô de fato autônomo, foi também feita uma implementação de teleoperação via bluetooth, de forma que qualquer pessoa possa, facilmente, ligar o robô, conectá-lo ao seu celular, e sair andando com ele facilmente, através de um aplicativo, não necessitando de nenhum conhecimento de robótica para isso. Pela facilidade e simplicidade, essa forma de operação do D3 acaba sendo até mais útil em algumas situações.
+
+<div class="row">
+  <div class="col-xl-auto offset-xl-0 col-lg-4 offset-lg-0 mobile-side-scroller">
+    <table class="table-borderless highlight">
+        <tr>
+          <th><center><iframe allow="fullscreen;" width="220" height="400" src="https://www.youtube.com/embed/8VktAXv2MXM"></iframe></center></th>
+          <th><center><iframe allow="fullscreen;" width="220" height="400" src="https://www.youtube.com/embed/lGDbEZ3oEbY"></iframe></center></th>
+          <th><center><iframe allow="fullscreen;" width="220" height="400" src="https://www.youtube.com/embed/yqGjRuyAqIo"></iframe></center></th>
+        </tr>
+    </table>
+  </div>
+</div>
 
 Após a finalização dos pacotes do I3E-D3, ele foi utilizado, assim como planejado, para que os voluntários da RAS CIMATEC (e até mesmo de outros capítulos) aprendam sobre robótica em uma plataforma completamente funcional, de forma prática. Um dos momentos em que isso foi possível foi durante o **[Grupo de Estudos de ROS](../grupo-ros/)**. Durante esse grupo de estudos, muitos dos desafios envolveram a utilização do I3E-D3, de forma que, além de aprender sobre o assunto, os voluntários pudessem ter um contato mais próximo com o nosso mascote, entendendo seu funcionamento.
 
