@@ -7,7 +7,7 @@ use-site-title: true
 
 ## About Me
 
-I am currently a Data Scientist working on the Ads Core ML team. I have an Economics PhD from New York University. My academic research focused on industrial organization, applied econometrics and behavioral economics. Outside of work, I like to code, play around with interesting datasets, climb and bike around the city.
+I am currently a Data Scientist at Meta working on the Ads Core ML team. I have an Economics PhD from New York University. My academic research focused on industrial organization, applied econometrics and behavioral economics. Outside of work, I like to code, play around with interesting datasets, climb and bike around the city.
 
 ## Some links
 
