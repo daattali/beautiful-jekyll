@@ -10,20 +10,20 @@ cover-img: /assets/img/ras_cover2.jpg
 A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Sociedade Técnica do IEEE voltada às áreas de Robótica e Automação. Fundado em 6 de dezembro de 2017, o nosso Capítulo Estudantil RAS CIMATEC realiza diversos projetos dessas áreas, bem como promove a organização de cursos e workshops sobre assuntos relacionados, como de Arduino, Linguagem de Programação, Visão Computacional e outros.
 
 #### Projetos em Andamento
-- [GamIEEEfication](project-gamieeefication/)
-- [BayIEEEmax](project-bayieeemax/)
-- [Mão Espelhada](project-mao_espelhada/)
-- [PetIEEE](project-petieee/)
-- [RASpode](project-raspode/)
-- [Map Vision](project-mapvision/)
-- [CompetIEEEção](project-competieeecao/)
+- [GamIEEEfication](../project-gamieeefication/)
+- [BayIEEEmax](../project-bayieeemax/)
+- [Mão Espelhada](../project-mao_espelhada/)
+- [PetIEEE](../project-petieee/)
+- [RASpode](../project-raspode/)
+- [Map Vision](../project-mapvision/)
+- [CompetIEEEção](../project-competieeecao/)
 
 #### Projetos Finalizados
-- [I3E-D3](project-i3e_d3/)
-- [Projeto Jabuti](project-certieeeficados/)
-- [I3E-D2](project-i3e_d2/)
-- [JarvIEEEs](project-jarvieees/)
-- [CertIEEEficados](project-certieeeficados/)
+- [I3E-D3](../project-i3e_d3/)
+- [Projeto Jabuti](../project-certieeeficados/)
+- [I3E-D2](../project-i3e_d2/)
+- [JarvIEEEs](../project-jarvieees/)
+- [CertIEEEficados](../project-certieeeficados/)
 
 [<img src="/assets/img/logo_instagram.png" alt="drawing" width="25"/> **@ieeerascimatec**](https://www.instagram.com/ieeerascimatec/)
 

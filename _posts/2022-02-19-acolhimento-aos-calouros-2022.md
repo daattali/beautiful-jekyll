@@ -15,7 +15,7 @@ A Exposição das Iniciativas Estudantis ocorreu no Foyer do Cimatec 3 (local em
 
 #### Fotos e vídeos do evento aqui
 
-E nós não pudemos deixar de levar nosso mascote, o [I3E-D3](project-i3e_d3), para conhecer e interagir com o pessoal! Ele fez sucesso com os calouros, e fez questão de tirar uma foto com cada Iniciativa Estudantil!
+E nós não pudemos deixar de levar nosso mascote, o [I3E-D3](../project-i3e_d3), para conhecer e interagir com o pessoal! Ele fez sucesso com os calouros, e fez questão de tirar uma foto com cada Iniciativa Estudantil!
 
 <!-- Fotos com as Iniciativas Estudantis -->
 <div class="row">

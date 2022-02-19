@@ -10,7 +10,7 @@ O I3E-D3 será o mascote do IEEE CIMATEC, um robô autônomo que servirá també
 Além disso, a ideia do projeto é que ele possa ser utilizado pelos voluntários da RAS para o aprendizado de robótica em uma plataforma física, implementando novas funcionalidades ao robô.
 
 #### Como surgiu?
-A ideia do projeto surgiu a partir do [I3E-D2](project-i3e_d2/), um robô bastante simples (inspirado no R2D2), construído por nós há alguns anos, e apresentado no IEEE DAY 2018. Então, ao fim de 2019, resolvemos projetar um robô mais complexo, autônomo e com mais funcionalidades.
+A ideia do projeto surgiu a partir do [I3E-D2](../project-i3e_d2/), um robô bastante simples (inspirado no R2D2), construído por nós há alguns anos, e apresentado no IEEE DAY 2018. Então, ao fim de 2019, resolvemos projetar um robô mais complexo, autônomo e com mais funcionalidades.
 
 #### Funcionalidades implementadas:
 - Teleoperação
