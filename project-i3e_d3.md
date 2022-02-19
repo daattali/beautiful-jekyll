@@ -33,6 +33,8 @@ A ideia do projeto surgiu a partir do [I3E-D2](../project-i3e_d2/), um robô bas
 
 ![Navigation](../assets/img/i3ed3/navigation.png)
 
+<img width="30" src="{{ 'assets/img/github-logo.png' | relative_url }}" alt="logo github"/> **Repositório:** [rascimatec/i3e-d3](https://github.com/rascimatec/i3e-d3)
+
 ### Eletrônica
 
 <table class="table-borderless">
@@ -49,6 +51,9 @@ A ideia do projeto surgiu a partir do [I3E-D2](../project-i3e_d2/), um robô bas
     </tbody>
 </table>
 
+<img width="30" src="{{ 'assets/img/github-logo.png' | relative_url }}" alt="logo github"/> **Repositório:** [rascimatec/i3e-d3_Electronics](https://github.com/rascimatec/i3e-d3_Electronics)
+
+
 ### CAD
 
 <article class="project-preview-right">
@@ -57,13 +62,20 @@ A ideia do projeto surgiu a partir do [I3E-D2](../project-i3e_d2/), um robô bas
     </div>
         O CAD do projeto foi responsável pela criação de todas as peças do robô - desde os braços e cabeça até as peças internas de fixação. Para modelagem das peças e montagem do robô, foi utilizado o <a href="https://www.solidworks.com/pt-br">SolidWorks</a> e o <a href="https://www.onshape.com/en/">OnShape</a>. Após modeladas, as peças foram impressas em 3D, e a partir do modelo 3D do robô, foi possível criar o <a href="http://wiki.ros.org/urdf">URDF</a> (a descrição do robô) para simulação.
 </article>
+<img width="30" src="{{ 'assets/img/github-logo.png' | relative_url }}" alt="logo github"/> **Repositório:** [rascimatec/i3e-d3_CAD](https://github.com/rascimatec/i3e-d3_CAD)
+
 
 
 ## Resultados obtidos
-<iframe width="720" height="480"
-src="https://www.youtube.com/embed/L5760xKJU8">
-</iframe>
 
+Projeto finalizado! Demorou, mas conseguimos projetar um robô autônomo com um visual bastante agradável.
+Como todo projeto, existem pontos de melhoria e sugestões para trabalhos futuros, mas, por enquanto, estamos satisfeitos com o nosso mascote!
+
+<iframe width="720" height="420" src="https://www.youtube.com/embed/_L5760xKJU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Após a finalização dos pacotes do I3E-D3, ele foi utilizado, assim como planejado, para que os voluntários da RAS CIMATEC (e até mesmo de outros capítulos) aprendam sobre robótica em uma plataforma completamente funcional, de forma prática. Um dos momentos em que isso foi possível foi durante o **[Grupo de Estudos de ROS](../grupo-ros/)**. Durante esse grupo de estudos, muitos dos desafios envolveram a utilização do I3E-D3, de forma que, além de aprender sobre o assunto, os voluntários pudessem ter um contato mais próximo com o nosso mascote, entendendo seu funcionamento.
+
+Além disso, o I3E-D3 teve uma participação mais do que especial no **[Acolhimento de Calouros 2022](../acolhimento-aos-calouros-2022/)**, conseguindo a atenção de muitos dos novos alunos do Cimatec, e também das outras Iniciativas Estudantis (confira nosso post!), cumprindo também seu papel de mascote do Ramo e ferramenta de Marketing!
 
 ## Equipe de desenvolvimento
 <div class="row">
@@ -93,3 +105,5 @@ src="https://www.youtube.com/embed/L5760xKJU8">
     </div>
   </div>
 </div>
+
+![The End?](../assets/img/i3ed3/the_end.gif)
