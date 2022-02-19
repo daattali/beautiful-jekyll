@@ -5,7 +5,7 @@ subtitle: Nosso assistente pessoal
 cover-img: /assets/img/jarvieees/jarvieees-cover.jpg
 ---
 
-A ideia do projeto surgiu do assistente pessoal do Homem de Ferro, o J.A.R.V.I.S. Nosso JarvIEEES tem como objetivo principal ser um assistente pessoal para nosso Ramo, podendo ser utilizado futuramente para uma automação em nossa Sede. A ideia é que ele também seja utilizado para controle de robôs através de voz, como por exemplo em nosso [I3E-D3](https://ieeecimatec.github.io/project-i3e_d3/)
+A ideia do projeto surgiu do assistente pessoal do Homem de Ferro, o J.A.R.V.I.S. Nosso JarvIEEES tem como objetivo principal ser um assistente pessoal para nosso Ramo, podendo ser utilizado futuramente para uma automação em nossa Sede. A ideia é que ele também seja utilizado para controle de robôs através de voz, como por exemplo em nosso [I3E-D3](project-i3e_d3/)
 
 
 ### Equipe de Desenvolvimento
