@@ -1281,9 +1281,9 @@ pre {
   height: 12rem;
   width: 12rem;
 }
-.project-preview-right .project-image {
+/* .project-preview-right .project-image {
   filter: grayscale(40%);
-}
+} */
 .project-preview-right .project-image:hover {
   filter: grayscale(0%);
 }
@@ -1405,9 +1405,9 @@ pre {
   height: 12rem;
   width: 12rem;
 }
-.project-preview-left .project-image {
+/* .project-preview-left .project-image {
   filter: grayscale(40%);
-}
+} */
 .project-preview-left .project-image:hover {
   filter: grayscale(0%);
 }
