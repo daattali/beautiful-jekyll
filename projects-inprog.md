@@ -223,7 +223,6 @@ share-img: /assets/img/projects-inprog.jpg
 </div>
 
 
-
 <!-- Smart Energy -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
@@ -250,6 +249,7 @@ share-img: /assets/img/projects-inprog.jpg
 </article>
 </div>
 
+
 <!-- Projeto Healthchain -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
@@ -272,6 +272,33 @@ share-img: /assets/img/projects-inprog.jpg
     </div>
     <div class="project-entry">
         O projeto Healthchain objetiva desenvolver um sistema WEB utilizando a tecnologia Blockchain para construir um banco de dados capaz de armazenar todo o histórico de saúde de um paciente. Assim, melhorando a precisão de diagnósticos.
+    </div> 
+</article>
+</div>
+
+
+<!-- Projeto Baby IoT -->
+<div data-aos="fade-left" data-aos-offset="150"> 
+<article class="project-preview-left">
+    <a href="https://ieeecimatec.github.io/project-baby_iot/">
+      <h2 class="project-title">Projeto Baby IoT</h2>      
+    </a>
+    <p class="project-meta project-meta-left">
+        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        Iniciado em julho de 2021
+    </p>
+    <div class="project-image project-image-small">
+      <a href="https://ieeecimatec.github.io/project-baby_iot/">
+        <img src="{{ 'assets/img/babyiot/logo_no_background.png' | relative_url }}" alt="babyiot" class="img-blur">
+      </a>
+    </div>
+    <div class="project-image project-image-short">
+      <a href="https://ieeecimatec.github.io/project-baby_iot/">
+        <img src="{{ 'assets/img/babyiot/logo_no_background.png' | relative_url }}" alt="babyiot" class="img-blur">
+      </a>
+    </div>
+    <div class="project-entry">
+        Baba eletrônica que oferece conexão entre o bebê, seu quarto e um aplicativo que irá integrar e monitorar tudo. O projeto deverá inicialmente promover a conexão entre os microcontroladores e o celular e englobará conhecimentos de programação de microcontroladores, sensores e desenvolvimento de aplicativo.
     </div> 
 </article>
 </div>
