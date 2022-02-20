@@ -73,7 +73,7 @@ A ideia do projeto surgiu a partir do [I3E-D2](../project-i3e_d2/), um robô bas
 Projeto finalizado! Demorou, mas conseguimos projetar um robô autônomo com um visual bastante agradável.
 Como todo projeto, existem pontos de melhoria e sugestões para trabalhos futuros, mas, por enquanto, estamos satisfeitos com o nosso mascote!
 
-<iframe width="720" height="420" src="https://www.youtube.com/embed/_L5760xKJU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="9%" src="https://www.youtube.com/embed/_L5760xKJU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Após serem feitas todas as implementações de robótica com o ROS, tornando o I3E-D3 um robô de fato autônomo, foi também feita uma implementação de teleoperação via bluetooth, de forma que qualquer pessoa possa, facilmente, ligar o robô, conectá-lo ao seu celular, e sair andando com ele facilmente, através de um aplicativo, não necessitando de nenhum conhecimento de robótica para isso. Pela facilidade e simplicidade, essa forma de operação do D3 acaba sendo até mais útil em algumas situações.
 
