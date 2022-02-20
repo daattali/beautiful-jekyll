@@ -23,6 +23,15 @@ Uma grande vantagem da simulação é que podem ser construídos ambientes virtu
 
 Atualmente estamos desenvolvendo a teleoperação, que será usada para fins de testes no robô após a sua montagem, a navegação autônoma e a integração com os sensores que serão usados durante a triagem.
 
+### Eletrônica
+
+KiCad é um *programa computacional* de *código aberto* para projeto eletrônico assistido por computador, com o objetivo de facilitar a concepção de layouts e suas conversões para placas de *circuito impresso*.
+
+O KiCad foi utilizado neste projeto como instrumento para a confecção do circuito impresso (PCB), o qual foi construído por meio da montagem do circuito propriamente dito, colocando componentes essenciais para o funcionamento do robô, e por ser Open Source, permite a utilização de modelos 3Ds e footprints, criados por sua empresa ou usuários desse Software.
+
+A utilização do KiCad permite ao usuário desenvolver um circuito prévio, construindo uma placa que será feita para o funcionamento desejado, com os componentes desejados, evitando gastos com risco de mal posicionamento ou falta de espaço entre componentes. Ademais, as possíveis falhas de conexões do circuito são identificadas durante a construção do mesmo, em que o próprio software alerta-te sobre os erros de ligações encontrados.
+
+Hodiernamente, está sendo desenvolvido a placa *Main board*, possuindo em seu circuito um MicroControlador chamado STM32F103C8T6, que irá se conectar com a *Placa Mãe*, cujo componente principal é a Raspberry PI 4 Model B, o qual irá monitorar esse Microcontrolador. Dessa maneira, permite o funcionamento dos motores, sensores, GPs e reconhecimento de voz que serão utilizados na triagem médica dos pacientes.
 
 ### Equipe de desenvolvimento
 #### Software
