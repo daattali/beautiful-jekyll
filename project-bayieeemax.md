@@ -17,6 +17,11 @@ A realização do projeto só foi possível graças ao financiamento de **$2.000
 
 ## Desenvolvimento
 
+### Definição dos Subsistemas
+
+Logo nas primeiras etapas do projeto foi construída uma PBS (quadro de estrutura do projeto) contendo todos os subsistemas essências e quais componentes fariam parte de cada um deles. A imagem abaixo mostra essa estrutura, dividida entre: Alimentação, Percepção, Processamento, Atuação e Monitoramento.
+
+<a href="https://ieeecimatec.github.io/bayieeemax-financiamento/"><img src="/assets/img/bayieeemax/baymax_pbl.jpeg" alt="PBS"></a>
 ### Simulação
 
 <p style="text-align: center;"> <img src="/assets/img/bayieeemax/baymax_ros.jpg" alt="ROS" width="150"/> </p>
@@ -28,6 +33,21 @@ O ROS foi adotado como ferramenta neste projeto para a realização das simulaç
 Uma grande vantagem da simulação é que podem ser construídos ambientes virtuais complexos semelhantes aos hospitais reais, que seriam de difícil acesso para todos os testes necessários ao longo do projeto. Além disso, falhas podem ser identificadas  e melhorias implementadas sem a necessidade de estar com o robô em mãos ou da construção de um campo de trainamento.
 
 Atualmente estamos desenvolvendo a teleoperação, que será usada para fins de testes no robô após a sua montagem, a navegação autônoma e a integração com os sensores que serão usados durante a triagem.
+
+<p style="text-align: center;"> <img src="/assets/img/bayieeemax/baymax_ros_gazebo.png" alt="Gazebo ROS"/> </p>
+
+A imagem acima mostra o ambiente de simulação Gazebo com o robô implementado por meio do ROS. *Note que foi utilizado um robô retangular genérico apenas para fins de desenvolvimento das funções e que **posteriormente será subistituído pelo CAD construído pela equipe***.
+
+O uso de rodas omnidirecionais foi adotado para permitir ao robô maior liberdade de movimento, possibilitando inclusive movimentos diagonais, sem a necessidade de rotação ao redor do próprio eixo. A imagem abaixo apresenta um esquema sobre a relação vetorial ligada à este movimento
+
+   <body>
+      Descrição da cinemática do movimento omnidirecional (Fonte: TAHERI, H.; QIAO, B.; GHAEMINEZHAD, N. 2015).<br>
+      <a>
+         <img alt="Qries" src="/assets/img/bayieeemax/baymax_ros_omni_kinematic.png">
+      </a>
+   </body>
+
+
 
 <img width="30" src="{{ 'assets/img/github-logo.png' | relative_url }}" alt="logo github"/> **Repositório:** [ieeecimatec/bayieeemax](https://github.com/ieeecimatec/bayieeemax)
 
@@ -43,9 +63,11 @@ A utilização do KiCad permite ao usuário desenvolver um circuito prévio, con
 
 Hodiernamente, está sendo desenvolvido a placa *Main board*, possuindo em seu circuito um MicroControlador chamado STM32F103C8T6, que irá se conectar com a *Placa Mãe*, cujo componente principal é a Raspberry PI 4 Model B, o qual irá monitorar esse Microcontrolador. Dessa maneira, permite o funcionamento dos motores, sensores, GPs e reconhecimento de voz que serão utilizados na triagem médica dos pacientes.
 
-A imagem abaixo apresenta estágio atual da *Main board*, com o modele tridimensional dos componentes utilizados e que serão interligados por meio da placa de circuito impresso.
-
 <p style="text-align: center;"> <img src="/assets/img/bayieeemax/baymax_componentes.jpeg" alt="compoentes eletrônicos"/> </p>
+
+A imagem acima apresenta estágio atual da *Main board*, com o modele tridimensional dos componentes utilizados e que serão interligados por meio da placa de circuito impresso. Na imagem abaixo é mostrado o esquemático de ligações do microntrolador *BluePill*.
+
+<p style="text-align: center;"> <img src="/assets/img/bayieeemax/baymax_esq_bluepill.png" alt="Esquemático do Blue Pill"/> </p>
 
 <img width="30" src="{{ 'assets/img/github-logo.png' | relative_url }}" alt="logo github"/> **Repositório:** [ieeecimatec/Baiyeeemax_eletronics](https://github.com/ieeecimatec/Baiyeeemax_eletronics)
 
