@@ -122,4 +122,4 @@ Além disso, o I3E-D3 teve uma participação mais do que especial no **[Acolhim
   </div>
 </div>
 
-![The End?](../assets/img/i3ed3/the_end.gif)
+<img src="https://i.imgur.com/SxQaFSf.gif" width="200" class="center">
