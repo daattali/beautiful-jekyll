@@ -65,7 +65,7 @@ Hodiernamente, está sendo desenvolvido a placa *Main board*, possuindo em seu c
 
 <p style="text-align: center;"> <img src="/assets/img/bayieeemax/baymax_componentes.jpeg" alt="compoentes eletrônicos"/> </p>
 
-A imagem acima apresenta estágio atual da *Main board*, com o modele tridimensional dos componentes utilizados e que serão interligados por meio da placa de circuito impresso. Na imagem abaixo é mostrado o esquemático de ligações do microntrolador *BluePill*.
+A imagem acima apresenta estágio atual da *Main board*, com o modelo tridimensional dos componentes utilizados e que serão interligados por meio da placa de circuito impresso. Na imagem abaixo é mostrado o esquemático de ligações do microntrolador *BluePill*.
 
 <p style="text-align: center;"> <img src="/assets/img/bayieeemax/baymax_esq_bluepill.png" alt="Esquemático do Blue Pill"/> </p>
 
