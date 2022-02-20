@@ -100,19 +100,25 @@ Além disso, o I3E-D3 teve uma participação mais do que especial no **[Acolhim
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><a href="https://www.linkedin.com/in/felipe-mohr-a9922a15a"><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url}}" width="100" alt="felipe" class="img-fluid rounded-circle blur-img" /></center></a></th>
+            <th><a href="https://www.linkedin.com/in/felipe-mohr-a9922a15a"><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url}}" width="100" alt="Felipe" class="img-fluid rounded-circle img-blur"/></center></a></th>
+            <th></th>
+            <th><a href="https://www.linkedin.com/in/marcella-santos-b20b42161/"><center><img src="{{ 'assets/img/voluntarios/marcella_giovanna.png' | relative_url }}" width="100" alt="Marcella" class="img-fluid rounded-circle img-blur"/></center></a></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/caio_oliva.png' | relative_url }}" width="100" alt="caio" class="img-fluid rounded-circle" /></center></th>
           </tr>
         </thead>
         <tbody>
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-            <td width="50%"><center>Felipe Mohr</center></td>
+            <td width="33%"><center>Felipe Mohr</center></td>
             <td></td>
-            <td width="50%"><center>Caio Oliva</center></td>
+            <td width="33%"><center>Marcella Giovanna</center></td>
+            <td></td>
+            <td width="33%"><center>Caio Oliva</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Voluntário desde 2018 <p/> Líder do projeto</center></small></td>
+            <td></td>
+            <td style="vertical-align: top"><small><center>Voluntária desde 2018</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>Voluntário desde 2019</center></small></td>
           </tr>
