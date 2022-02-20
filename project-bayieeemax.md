@@ -15,13 +15,21 @@ Durante a execução do projeto será construído um modelo em um software de mo
 
 ### Simulação
 
+<p style="text-align: center;"> <img src="/assets/img/bayieeemax/baymax_ros.jpg" alt="logo ieee cimatec" width="150"/> </p>
+
 O ROS é um *framework* que possui uma série de ferramentas úteis para o desenvolvimento de robôs. Por exemplo, ele é capaz de simplificar para o usuário o processo de comunicação dos diferentes componentes de um robô, tais como os motores, sensores, baterias e o *software* através de um sistema baseado em tópicos e mensagens. 
 
-O ROS foi adotado como ferramenta neste projeto para a realização das simulação e implementação da lógica do robô por ser um projeto *open-source*, que possui diversos pacotes já desenvolvidos e também por poder ser carregado diretamente em sistemas embarcados, tal como a Raspberry Pi 3, o controlador que funcionará como o "cérebro" do robô.
+O ROS foi adotado como ferramenta neste projeto para a realização das simulação e implementação da lógica do robô por ser um projeto *open-source*, que possui diversos pacotes já desenvolvidos, suporta de forma nativa as lingugens de programação C++ e Python e também por poder ser carregado diretamente em sistemas embarcados, tal como a Raspberry Pi 3, o controlador que funcionará como o "cérebro" do robô.
 
 Uma grande vantagem da simulação é que podem ser construídos ambientes virtuais complexos semelhantes aos hospitais reais, que seriam de difícil acesso para todos os testes necessários ao longo do projeto. Além disso, falhas podem ser identificadas  e melhorias implementadas sem a necessidade de estar com o robô em mãos ou da construção de um campo de trainamento.
 
 Atualmente estamos desenvolvendo a teleoperação, que será usada para fins de testes no robô após a sua montagem, a navegação autônoma e a integração com os sensores que serão usados durante a triagem.
+
+### Eletrônica
+
+### CAD
+
+<p style="text-align: center;"> <img src="/assets/img/bayieeemax/baymax_onshape.png" alt="logo ieee cimatec" width="200"/> </p>
 
 
 ### Equipe de desenvolvimento
@@ -34,9 +42,7 @@ Atualmente estamos desenvolvendo a teleoperação, que será usada para fins de 
           <tr>
             <th><center><img src="{{ 'assets/img/voluntarios/gabriel_calmon.png' | relative_url }}" width="100" alt="gabriel" class="img-fluid rounded-circle" /></center></th>
             <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/guilherme_martinho.png' | relative_url }}" width="100" alt="guilherme" class="img-fluid rounded-circle"/></center></th>
-            <th></th>
-            <th><center><img src="{{ 'assets/img/voluntarios/joao_guilherme.png' | relative_url }}" width="100" alt="joão" class="img-fluid rounded-circle"/></center></th>
+            <th><center><img src="{{ 'assets/img/voluntarios/victor_guerra.jpeg' | relative_url }}" width="100" alt="victor" class="img-fluid rounded-circle"/></center></th>
             <th></th>
             <th><center><img src="{{ 'assets/img/voluntarios/felipe_mohr.png' | relative_url }}" width="100" alt="felipe" class="img-fluid rounded-circle" /></center></th>
           </tr>
@@ -45,18 +51,14 @@ Atualmente estamos desenvolvendo a teleoperação, que será usada para fins de 
           <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
             <td width="25%"><center>Gabriel Calmon</center></td>
             <td></td>
-            <td width="25%"><center>Guilherme Martinho</center></td>
-            <td></td>
-            <td width="25%"><center>João Guilherme</center></td>
+            <td width="25%"><center>Victor Guerra</center></td>
             <td></td>
             <td width="25%"><center>Felipe Mohr</center></td>
           </tr>
           <tr style="text-align: center" >
             <td style="vertical-align: top"><small><center>Voluntário desde 2020 <p/> Líder do projeto</center></small></td>
             <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2020</center></small></td>
-            <td></td>
-            <td style="vertical-align: top"><small><center>Voluntário desde 2019</center></small></td>
+            <td style="vertical-align: top"><small><center>Voluntário desde 2021</center></small></td>
             <td></td>
             <td style="vertical-align: top"><small><center>Voluntário desde 2018</center></small></td>
           </tr>
