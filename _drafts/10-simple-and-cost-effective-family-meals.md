@@ -15,7 +15,7 @@ show-avatar: true
 title: '10 Simple and Cost Effective Family Meals '
 description: Simple and cost effective family meal ideas for people who find meal
   planning overwhelming.
-subtitle: "+ FREE"
+subtitle: "+ FREEBIE: my secrets to saving our family 2-$300/month"
 share-img: ''
 redirect_from: []
 
