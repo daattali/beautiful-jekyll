@@ -858,7 +858,7 @@ table tr td {
   border: 0px solid;
   text-align: center;
   margin: 0;
-  padding: 0rem 0.8125rem /*0.375rem 0.8125rem*/;
+  padding: 0.8rem 0.8125rem /*0.375rem 0.8125rem*/;
 }
 table tr th :first-child,
 table tr td :first-child {
