@@ -56,6 +56,6 @@ Critical analysis, organization, discipline, teamwork, concern with responsibili
   <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api/top-langs/?username=araguaci&layout=compact&hide_border=true&theme=blue&bg_color=FFFFFF00&langs_count=6&hide=jupyter%20notebook,tex,css,php">
   <img src ="https://github-readme-streak-stats.herokuapp.com?user=araguaci&theme=blue&hide_border=true&background=FFFFFF00">
 </p>
-  <br>
+<p align="center">
   <a href="https://www.buymeacoffee.com/araguaci"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" height="50" width="210" alt="araguaci" /></a>
 </p>
