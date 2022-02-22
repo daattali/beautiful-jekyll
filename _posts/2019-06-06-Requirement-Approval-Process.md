@@ -16,12 +16,10 @@ share-img: /assets/img/diary.png
 cover-img: /assets/img/cover.jpg
 ---
 
-Section: Requirement Approval
-
 So now that you've gone through, you've elicited your requirements, you've analyzed your requirements
 and you specified your requirements. The last and final stat is to get the official approval. And really there's three main steps to gaining approval: 1. Business Team Approval: Who gave the requirement 2. Technical Team Approval: Who will develop the system 3. Project Sponsor / Committee Approval: Who is writing the cheque.
 
-Lecture: Gaining Business Approval
+# Gaining Business Approval
 
 You've gone through and defined, redefined and redefined again and making sure that number one the requirements are accurate and meet their needs. And number two, there aren't any missing or on unsolicited requirements that need to be documented through. So this is a very important first step is to gaining the business approval and on the what, the requirements and how you will be able to move forward on this to meet their business objective and meet their need.
 
@@ -37,7 +35,7 @@ Business Approval: Conduct 1. Explain the purpose of the meeting and the agenda 
 
 \*If critical requirements are determined, reschedule the approval meeting
 
-Lecture: Technical Approval
+# Technical Approval
 
 So you gained the business approval and now you're working through to gain the technical approval. You want to make sure that your architects and your developers all agree with the requirements that agree that they're all feasible from a technical timeline and budget standpoint. So this is going to be very similar to the business approval.
 
@@ -54,7 +52,7 @@ Technical Approval: Conduct (Session 2) 1. Explain the purpose of the meeting an
 a. Make - Create high level design architecture
 b. Buy – Determine options (Competitive Comparison Matrix) 7. Update project estimated cost
 
-Lecture: Sponsor/ Committee Approval
+# Sponsor/ Committee Approval
 
 So now you've gained the business approval and you've gained a technical understanding of the architecture and design that would be used to accomplish this particular project. And now it's all about going and getting the sponsor or the committee's approval, basically the approval of the person that actually wrote the check to make this project happen.
 

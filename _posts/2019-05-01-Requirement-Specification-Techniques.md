@@ -16,9 +16,7 @@ share-img: /assets/img/diary.png
 cover-img: /assets/img/cover.jpg
 ---
 
-Section: Requirement Specifications
-
-In previous lectures and in previous sections we talk about requirements elicitation where we worked through and pulled out those requirements out of stakeholders and out of documentation and understood what the as-is process and the to-be process was to look like. We then went through and did requirement analysis where we took those requirements we wrote them in multiple ways so groups, whether there are technical groups or business groups, can understand them and we created visual models to help do that. Now this is a third stage, this is requirement specification.
+In the previous we learn about requirements elicitation where we worked through and pulled out those requirements out of stakeholders and out of documentation and understood what the as-is process and the to-be process was to look like. We then went through and did requirement analysis where we took those requirements we wrote them in multiple ways so groups, whether there are technical groups or business groups, can understand them and we created visual models to help do that. Now this is a third stage, this is requirement specification.
 
 And really what we're doing here is we're taking those requirements that we have and we're categorizing them, we're breaking them down. So if one requirements a little long or convoluted what may be driving them into multiple requirements so it's a little bit more easier to read in plain and simple. So we're categorizing, we're deriving those requirements and then we're prioritizing the requirements. And it's very important that you prioritize requirements, that you put a kind of a level of priority with them because as the project moves forward and you have your scheduled date that you're trying to hit for the implementation you don't want to be at the place where you're 90% through the project you realize you're not going to get every single requirement in and now trying to circle back to the business to find out what, you know, based on what you haven't done, what could you leave out.
 

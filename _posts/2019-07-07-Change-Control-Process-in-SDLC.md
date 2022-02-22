@@ -18,19 +18,24 @@ share-img: /assets/img/diary.png
 cover-img: /assets/img/cover.jpg
 ---
 
-What is Change Control?
+# What is Change Control?
+
 Change Control is the process that a company uses to document, identify and authorize changes to an IT environment. It reduces the chances of unauthorized alterations, disruption and errors in the system.
-Why Change Control?
+
+# Why Change Control?
+
 Whenever any new or different changes are requested for the system, especially by stakeholders, it is neither optional nor ignorable. It has to be implemented without affecting other components of the system. This is when the change control comes handy. It helps project teams to modify the scope of the project using specified controls and policies. Change Control is practiced whenever a project is not progressing as planned.
 It is mandatory that a formal document for change request is completed and reviewed in order to keep control of change requests.
-Number of question one might encounter while analyzing Change Control like
+
+Number of question one might encounter while analyzing Change Control like:
 • Who will approve the change?
 • Does it require to run through a change control board?
 • How much time will be required to research and implement the change?
 • What are the impacts of changes to other components of the system (schedules, cost, resources, etc.)?
 • Is there any threshold under which the project management can approve it?
 
-Different factors of Change Control process
+# Different factors of Change Control process
+
 There are various factors that a Change Control process should consider
 Steps in Change Control Process Action taken in Change Control
 • Change request initiation and Control • Request for changes should be standardized and subject to management review
@@ -45,7 +50,8 @@ Steps in Change Control Process Action taken in Change Control
 • Version Control • Control should be placed on production source code to make sure that only the latest version is updated
 • Emergency Changes • A verbal authorization should be obtained, and the change should be documented as soon as possible
 
-Process of Change Control
+# Process of Change Control
+
 Before we look into what is involved in Change Control process, we will get familiarize with what documents are used in Change Control. While carrying out Change Control, there are mainly two documents involved
 • Change Log: A change log is a document that list the details about all the Change Requests like project number, PCR (project change request) ID, priority, Owner details, Target date, status and status date, raised by, date when raised etc.
 
@@ -73,18 +79,23 @@ Steps for Change Control Action
 • Monitor progress of change request
 • Record the completion of change request
 • Close change request
+
 NOTE: The approval for Change Control may be done by Project Manager, Lead IT or Lead Developer, Stakeholder.
-Change Management Vs Change Control
+
+# Change Management Vs Change Control
+
 Change Management Change Control
 • It is responsible for managing and controlling change requests to effect changes to the IT infrastructure or any aspect of IT services to minimize the risk of disruption of services and promoting business benefit • Change control includes activities like submission, recording, analyzing and approval of change to improve the overall performance of the system or product
 
-Impact Analysis in Software Testing
+# Impact Analysis in Software Testing
+
 What is Impact Analysis?
 Impact Analysis is defined as analyzing the impact of changes in the deployed product or application. It gives the information about the areas of the system that may be affected due to the change in the particular section or features of the application.
 The impact is analyzed on Requirements, Design & Architecture, impact on Test and impact on schedule.
 With the incorporation of new features into application or product, it becomes imperative to check the influence of these new features or changes on the performance of the system. For this reason, Impact Analysis is done.
 
-Why is Change Impact Analysis is done?
+# Why is Change Impact Analysis is done?
+
 • It is done to understand the possible outcome of implementing the change. Inducing too much functionality into a product can reduce the overall performance of the product.
 • To identify all the files, documents and models that might have to be modified if a team decides to implement the change in product
 • To estimate the effort needed behind implementing the change
@@ -129,7 +140,8 @@ The above table explains the impact of the implemented changes
 • Features mentioned vertically resembles those features that are changed while horizontally those features are mentioned which performed changes can influence. For example, in above example the change in feature 1 influence the feature3
 • For a larger project where features and functionalities are more then above table may not be of any use. In such case, another approach is adopted, where developer straightaway marks the level of influence due to the changes in main features. As shown below where the impact of the Main feature is marked for respective sub-features.
 
-Sample Questions to be addressed for performing Impact Analysis
+# Sample Questions to be addressed for performing Impact Analysis
+
 • What are the adverse side effects or risks of making the proposed change?
 • Does any tool be acquired in order to implement and test the change?
 • If the change is accepted how much effort will be lost that is already been invested?
