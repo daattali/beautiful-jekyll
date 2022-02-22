@@ -49,7 +49,7 @@ Previous works have shown that differentiable physics simulators provide gradien
     
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/pouring_icra2022.jpg" img width="250" height="100">
+            <img src="../pics/pouring.gif" img width="250" height="100">
         </td>
         <td><a href="https://sites.google.com/view/transparentliquidpouring">Transparent Liquid Segmentation for Robotic Pouring</a><br>
             <div class="pubauthor">
