@@ -18,6 +18,18 @@ cover-img: /assets/img/cover.jpg
 
 As a Business Analyst, requirement analysis is the most important part of your Job. It will help you determining the actual needs of stakeholders.
 
+_Quick Links to Topic:_
+- [What is Visual Modeling?](#what-is-visual-modeling)
+  - [What's get modeled?](#whats-get-modeled)
+- [Business Models](#business-models)
+  - [Organizational Chart :](#organizational-chart-)
+  - [Competitive Comparison Matrix :](#competitive-comparison-matrix-)
+  - [Stakeholder Map :](#stakeholder-map-)
+  - [Use Case Diagram :](#use-case-diagram-)
+  - [Process Flow Diagram :](#process-flow-diagram-)
+  - [Technical Models](#technical-models)
+  - [BPMN Vs UML](#bpmn-vs-uml)
+
 Requirement Analysis Introduction
 Analysis for three things
  1. You want all stakeholder to understand the requirement 
@@ -77,15 +89,20 @@ Mostly used by IT Business Analyst who is a Technical person. 1. System Context 
 
 ## BPMN Vs UML
 
-BPMN stands for Business Process Modeling Notation. It is a graphical notation style; In other word, a visual language. BPMN is a flow chart based modeling language.
-It describes processes as flow of activities, or actions, arranged in swimming lanes, representing activity performers
+BPMN stands for Business Process Modeling Notation. It is a graphical notation style; In other word, a visual language. BPMN is a flow chart based modeling language.	It describes processes as flow of activities, or actions, arranged in swimming lanes, representing activity performers.
+	
 
+
+ 
 Basic Components: 
-1. Swimming Lane 
-2. Event: Mark start and end of a process. 
-3. Gateway: Control process flow, Can test a decision. 
-4. Activity: Process or Sub process. Naming convention should use verb and noun
-5. Sequence Flow: A solid arrow that connects Event, Activity, and Gateway
+	1. Swimming Lane: Independent Process (Divider between processes)
+	2. Lane:  Functionality or Activity within a Swimming Lane
+	3. Event:  Mark start and end of a process. 
+	4. Gateway: Control process flow, Can test a decision.
+	5. Activity: Process or Sub process. Naming convention should use verb and noun
+	6. Sequence Flow: A solid arrow that connects Event, Activity, and Gateway
+
+
 
 {: .box-success}
 Enjoy !!!
