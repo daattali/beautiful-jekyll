@@ -23,11 +23,11 @@ _Quick Links to Topic:_
 - [Requirement Elicitation Basic](#requirement-elicitation-basic)
 - [Requirement Elicitation VS Requirement Gathering](#requirement-elicitation-vs-requirement-gathering)
 - [Elicitation Technique: Brainstorming](#elicitation-technique-brainstorming)
-- [Elicitation Technique: Requirement Workshop](#elicitation-technique-requirement-workshop)
-- [Elicitation Technique: Interviewing](#elicitation-technique-interviewing)
-- [Elicitation Technique: Surveys](#elicitation-technique-surveys)
-- [Elicitation Technique: Document Review](#elicitation-technique-document-review)
-- [Elicitation Technique: Interface Analysis](#elicitation-technique-interface-analysis)
+- [Requirement Workshop: Elicitation Technique](#requirement-workshop-elicitation-technique)
+- [Interviewing: Elicitation Technique](#interviewing-elicitation-technique)
+- [Surveys: Elicitation Technique](#surveys-elicitation-technique)
+- [Document Review: Elicitation Technique](#document-review-elicitation-technique)
+- [Interface Analysis: Elicitation Technique](#interface-analysis-elicitation-technique)
 
 # Requirement Elicitation Basic
 
@@ -94,7 +94,7 @@ Best Practices:
 - Prioritize final ideas to plan further analysis
 - Allow votes for top ideas
 
-# Elicitation Technique: Requirement Workshop
+# Requirement Workshop: Elicitation Technique
 
 The first thing is, what is a requirement workshop?
 Ultimately, it's a structured meeting that involves multiple different groups and users. So it involves the end users, your subject matter experts, both that could be from the business, it also could be from the technology side the IT side. Any type of business people that are going to be making decisions
@@ -127,7 +127,7 @@ So what are some best practices? And these are best practices that I've come up 
 Number one thing is, you need to determine the type of workshop ahead of time. In addition, as always when you're getting a group of people together you want to be very clear on what the objective of that meeting is and be very clear on what that session will deliver in the end. What are the end deliverables? How will it help? And what problems are you ultimately solving? Why did you bring all these people together to have this discussion?
 It's really important for everybody to understand what everybody else is talking about and the best way and you've heard it a probably a million times, as a visual or a picture is worth a thousand words, and that really rings true here. Writing requirement in word, you can definitely do that in a smart way. But writing that in a way that everybody can understand within a meeting can be a little bit difficult, so it's nice to use some type of visual models, whether it's the post-it notes to identify that process or whether you're creating some quick models, a Venn diagram or maybe just a quick view of kind of a visualization of that requirement how that could be solved. The next thing I kind of alluded to this, the facilitator should be experienced, you shouldn't be throwing a junior. The next thing is don't invite everybody. You need to make sure grabbing one or two people out of those key areas and pull them into the room. Target between 8 to 12 people. The last thing is you need to remember you're an analyst, not a facilitator, so you're not there to take the order. You need to be bringing your experience and expertise to the table and kind of working through and massaging these requirements. If there's requirements that are conflicting with other requirements, call that out in this meeting, this is the perfect time to address those conflicting requirements and to come up with a solution for it.
 
-# Elicitation Technique: Interviewing
+# Interviewing: Elicitation Technique
 
 What is interviewing?
 It is like job interview but here you will be interviewing your stakeholders through a structured question to identify and elicit requirement.
@@ -216,7 +216,7 @@ Sample Interviewing Question:
 - What didn’t I ask that I should have?
 - If we could only change one thing in the process, what should it be
 
-# Elicitation Technique: Surveys
+# Surveys: Elicitation Technique
 
 What is Survey?
 
@@ -264,7 +264,7 @@ What are some best Practices?
 - Create the survey with inexpensive online tools
 - Notify the participants when the survey is available and continue to remind them to participate
 
-# Elicitation Technique: Document Review
+# Document Review: Elicitation Technique
 
 What is Document Review?
 
@@ -292,7 +292,7 @@ What are some best practices?
 - Set self-imposed time limits
 - Create a glossary of terms from former project documentation
 
-# Elicitation Technique: Interface Analysis
+# Interface Analysis: Elicitation Technique
 
 What is Interface Analysis?
 
