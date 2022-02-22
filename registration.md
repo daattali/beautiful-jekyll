@@ -80,7 +80,7 @@ Below is displayed the estimation of the initial momenta that wrap the template 
 <tr>
    <th> Number <br /> of cp </th>
  <th> First subject image </th>
-<th> <center>Original algorithm </center>  </th>
+<th> <center>Original algorithm (TO DO)</center>  </th>
 <th> <center>Coarse-to-fine algorithm  </center> </th>
 </tr>
    
