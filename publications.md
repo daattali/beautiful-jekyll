@@ -9,6 +9,83 @@ Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec
 
 <table cellpadding="10" width="100%">
     <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/2022_diffskill.gif" img width="250">
+        </td>
+        <td><a href="https://sites.google.com/view/iclr2022diffskill">DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools</a><br>
+            <div class="pubauthor">
+                Xingyu Lin, Zhiao Huang, Yunzhu Li, Joshua B. Tenenbaum, David Held, Chuang Gan<br>
+            </div>
+            <div id="bib2022diffskill" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{
+    lin2022diffskill,
+    title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
+    author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
+    booktitle={International Conference on Learning Representations},
+    year={2022},
+    url={https://openreview.net/forum?id=Kef8cKdHWpP}}
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="abs2022diffskill" style="display:none">
+                <blockquote>
+                    We consider the problem of sequential robotic manipulation of deformable objects using tools.
+Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. 
+                </blockquote>
+            </div>
+            <div class="pubjournal">International Conference on Learning Representations (ICLR), 2022
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/iclr2022diffskill">[Project Page]</a>
+                <a href="javascript:copy(div2022diffskill, bib2022diffskill)">[Bibtex]</a>
+                <a href="javascript:copy(div2022diffskill, abs2022diffskill)">[Abstract]</a>
+                <a href="https://openreview.net/pdf?id=Kef8cKdHWpP">[PDF]</a>
+            </div>
+            <div id="div2022diffskill" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/pouring_icra2022.jpg" img width="250" height="100">
+        </td>
+        <td><a href="https://sites.google.com/view/transparentliquidpouring">Transparent Liquid Segmentation for Robotic Pouring</a><br>
+            <div class="pubauthor">
+                Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held<br>
+            </div>
+            <div id="bib2022pouring" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{icra2022pouring,
+                        title={Transparent Liquid Segmentation for Robotic Pouring},
+                        author={Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
+                        booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+                        year={2022}}
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="abs2022pouring" style="display:none">
+                <blockquote>
+                    Liquid state estimation is important for robotics tasks such as pouring; however, estimating the state of transparent liquids is a challenging problem. We propose a novel segmentation pipeline that can segment transparent liquids such as water from a static, RGB image without requiring any manual annotations or heating of the liquid for training. Instead, we use a generative model that is capable of translating unpaired images of colored liquids into synthetically generated transparent liquid images. Segmentation labels of colored liquids are obtained automatically using background subtraction. We use paired samples of synthetically generated transparent liquid images and background subtraction for our segmentation pipeline. Our experiments show that we are able to accurately predict a segmentation mask for transparent liquids without requiring any manual annotations. We demonstrate the utility of transparent liquid segmentation in a robotic pouring task that controls pouring by perceiving liquid height in a transparent cup.
+                </blockquote>
+            </div>
+            <div class="pubjournal">International Conference of Robotics and Automation (ICRA), 2022
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/transparentliquidpouring">[Project Page]</a>
+                <!-- <a href="https://github.com/gauthamnarayan/transparent_liquid_segmentation_icra2022">[Code]</a> -->
+                <a href="javascript:copy(div2022pouring, bib2022pouring)">[Bibtex]</a>
+                <a href="javascript:copy(div2022pouring, abs2022pouring)">[Abstract]</a>
+                <a href="https://drive.google.com/file/d/1GJzgVR_H7bs-UE68SsfqKihXApxh4l3F/view">[PDF]</a>
+            </div>
+            <div id="div2022pouring" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+ 
+    
+    <tr>
         <td class="pubimg" width="250" height="100">
             <img src="../pics/ossid.jpg" img width="250" height="100">
         </td>
@@ -71,13 +148,13 @@ Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec
             </div>
             <div class="pubjournal">British Machine Vision Conference (BMVC), 2021 - <award>Oral presentation</award> (Selection rate 3.3%)</div>
             <div style="font-size:small">
-<!--                 <a href="https://just-go-with-the-flow.github.io/">[Project Page]</a> -->
+                <a href="https://self-supervised-completion-inpainting.github.io/">[Project Page]</a>
 <!--                 <a href="https://github.com/HimangiM/Just-Go-with-the-Flow-Self-Supervised-Scene-Flow-Estimation">[Code]</a> -->
                 <a href="javascript:copy(div2021BMVC, bib2021bmvc)">[Bibtex]</a>
                 <a href="javascript:copy(div2021BMVC, abs2021bmvc)">[Abstract]</a>
                 <!--a href="https://arxiv.org/abs/2111.10701">[Arxiv]</a-->
                 <a href="https://arxiv.org/pdf/2111.10701.pdf">[PDF]</a>
-                <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
+                <a href="https://www.bmvc2021-virtualconference.com/conference/papers/paper_0443.html">[Video]</a>
             </div>
             <div id="div2021BMVC" class="pubInfo"></div>
             <br>
@@ -109,9 +186,9 @@ Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec
 
     <tr>
         <td class="pubimg" width="250" height="150" style="text-align:center">
-            <img src="../pics/3DV2021c.jpeg" width="250">
+            <img src="../pics/sod_tgnn.jpg" width="250">
         </td>
-        <td>Semi-supervised 3D Object Detection via Temporal Graph Neural Networks<br>
+        <td><a href="https://arxiv.org/pdf/2202.00182.pdf">Semi-supervised 3D Object Detection via Temporal Graph Neural Networks</a><br>
             <div class="pubauthor">Jianren Wang, Haiming Gang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
             </div>
             <div class="pubjournal">International Conference on 3D Vision (3DV), 2021</div>
@@ -132,8 +209,11 @@ year={2021}}</pre>
             </div>
             <div style="font-size:small">
                 <a href="https://www.jianrenw.com/SOD-TGNN/">[Project Page]</a>
+                <a href="https://github.com/jianrenw/SOD-TGNN">[Code]</a>
                 <a href="javascript:copy(div20213dV, bibdiv20213dV)">[Bibtex]</a>
                 <a href="javascript:copy(div20213dV, absdiv20213dV)">[Abstract]</a>
+                <a href="https://youtu.be/BhW7m3R_Yqo">[Video (Short)]</a>
+                <a href="https://youtu.be/L8X4LCEpCaE">[Video (Long)]</a>
             <br></div>
         </td>
     </tr>
