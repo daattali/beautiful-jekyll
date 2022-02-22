@@ -36,14 +36,14 @@ _Quick Links to Topic:_
 
 Why Do I Need Requirements?
 
-- Guides the design of the eventual solution
+- Guides the design of the eventual solution.
 - Without correct requirements, you cannot design or build the correct product.
 
 Do you know 60% of project failures originate with the requirements.
 
 ## What is Requirement?
 
-Something a product must do or a quality it must have.
+Something a product must do or a quality it must have. Software requirement is a functional or non-functional need to be implemented in the system.
 
 ## Requirements Can be Categorized in the following:
 
@@ -60,8 +60,8 @@ Something a product must do or a quality it must have.
 
 ## Functional Requirements:
 
-    • Scope of the Product – defines the boundaries and connections to other products
-    • Functional and Data Requirements – Things the product must do and data manipulated by the functions
+- Scope of the Product – defines the boundaries and connections to other products
+- Functional and Data Requirements – Things the product must do and data manipulated by the functions
 
 Functional Requirements Example:
 
@@ -262,21 +262,21 @@ Possible Requirements:
 - Alert agent when the email doesn’t appear to be valid
 - Allow for correction of email if invalid email format is entered
 
-Rule: Each course must have at least one instructor
+**Rule:** Each course must have at least one instructor
 
 Possible Requirements:
 
 - Capability for Dean to assign instructor to course
 - Course registration cannot be opened until an instructor is assigned
 
-Rule: Customers must have a valid driver’s license to rent a vehicle
+**Rule:** Customers must have a valid driver’s license to rent a vehicle
 
 Possible Requirements:
 
 - Employee to inspect driver’s license
 - Ability for employee to validate driver’s license
 
-Rule: A quote must be completed prior to an invoice being generated
+**Rule:** A quote must be completed prior to an invoice being generated
 
 Possible Requirements:
 
@@ -296,14 +296,6 @@ Business Rules Best Practices:
 Enjoy !!!
 See Yaaa, Next.
 
-<h3> About Me </h3>
-<h1> Rafayet Hossain <h1>
-<h3> ☑ Certified Lean Six Sigma Black Belt ☑ Business Analyst ☑ SQA </h3>
-
-
-
 For Any Query or Task Contact Me @
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:rafayet13@gmail.com)
-
-
