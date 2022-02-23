@@ -1,16 +1,18 @@
 ---
 layout: page
 title: About me
-subtitle: Evil cannot create it can only corrupt - J.R.R Tolkien
+subtitle: Time and tide wait for no man - Lilly Roth
 ---
 
-My name is Roland Urbano. I have the following qualities:
+My name is Roland Urbano.
 
-- I write Go
-- I automate things
+- I write Go.
+- I automate things.
+- I have a strong opinion.
+- I love video games.
 
-What else do you need?
+What else do you need to know?
 
 ### My story
 
-To be told one day.
+One day, I'll take the time to tell my story. Please be patient.
