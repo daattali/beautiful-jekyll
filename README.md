@@ -2,4 +2,4 @@
 
 # Personal Github Page
 
-This repository contains my personal for of Beautifuljekyll
+This repository contains the source code for my personal [blog](https://X4mp.github.io)
