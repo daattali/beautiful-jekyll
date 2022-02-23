@@ -2,7 +2,7 @@
 layout: post
 title: Coming soon
 subtitle: What to expect to come soon here
-gh-repo: daattali/beautiful-jekyll
+gh-repo: X4mp/X4mp.github.io
 gh-badge: [star, fork, follow]
 tags: [blog]
 comments: true
