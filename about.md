@@ -1,6 +1,8 @@
 ---
 layout: page
 title: About
+redirect_from:
+- /contact/
 subtitle:
 ---
 
