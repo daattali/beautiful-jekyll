@@ -2,4 +2,4 @@
 
 # Personal Github Page
 
-This repository contains the source code for my personal blog [](https://X4mp.github.io)
+This repository contains the source code for my personal [blog](https://X4mp.github.io)
