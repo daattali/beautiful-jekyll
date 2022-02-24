@@ -88,7 +88,7 @@ function renderSocialNetworks() {
 	xml += `<li>
 	<i class="fas fa-download contact-icon"></i>
 	<span class="label">Download My CV:&nbsp;&nbsp;</span>
-	<a href="https://www.topcv.vn/xem-cv/VVJaVFMFB1UBAgwCBFFRAldXCQJQU1ZSAVNUBg5be6" class="link content">Link</a>
+	<a href="https://www.topcv.vn/xem-cv/VVJaVFMFB1UBAgwCBFFRAldXCQJQU1ZSAVNUBg5be6" class="link content" target="_blank">Link</a>
 </li>`;
 
 	$('#contactSocialNetwork').html(xml);
