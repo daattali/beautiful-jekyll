@@ -1,0 +1,89 @@
+#mobileNav {
+  box-shadow: var(--box-shadow);
+  padding-bottom: 8.4rem;
+  position: relative;
+}
+#mobileNav .nav-link {
+  font-size: 2rem;
+  margin: 0 1.2rem;
+  cursor: pointer;
+}
+#mobileNav .nav-link i {
+  transition: all 0.3s ease;
+  color: var(--text-color-sec);
+}
+#mobileNav .nav-link i:hover, #mobileNav .nav-link i:active {
+  color: var(--primary-color);
+}
+#mobileNav .nav-link:last-child {
+  margin-right: 0;
+}
+#mobileNav .nav-link.active i {
+  color: var(--primary-color);
+}
+#mobileNav .avatar {
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+}
+#mobileNav .nav-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8.4rem;
+  background-color: var(--bg-color-sec);
+  width: 100%;
+  z-index: 9999;
+  width: 100%;
+  padding: 0 12px;
+}
+
+#nav {
+  display: none;
+  height: 100vh;
+  width: 42rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--bg-color-sec);
+  border-right: solid 1px var(--border-color);
+  padding: 0 8rem;
+}
+#nav * {
+  text-align: left;
+}
+#nav .nav-name,
+#nav .nav-fullname,
+#nav .nav-menu {
+  width: 100%;
+  text-align: left;
+}
+#nav .nav-name {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: var(--text-color);
+  letter-spacing: 1.5px;
+}
+#nav .nav-fullname {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+#nav .nav-menu {
+  margin-top: 2.4rem;
+}
+#nav .nav-link {
+  padding: 1.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-color-sec);
+  transition: all 0.3s ease;
+}
+#nav .nav-link.active, #nav .nav-link:hover, #nav .nav-link:active {
+  letter-spacing: 2px;
+  color: var(--text-color);
+}
+
+/*# sourceMappingURL=navigation.css.map */

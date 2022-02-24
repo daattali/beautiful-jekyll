@@ -1,0 +1,7 @@
+$nav-height: 8.4rem;
+$nav-width: 42rem;
+$theme-size: 28px;
+$max-width: 820px;
+@mixin transition {
+  transition: all 0.3s ease;
+}

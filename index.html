@@ -1,72 +1,148 @@
----
-layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
-use-site-title: true
----
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hoài Nam - Portfolio</title>
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | relative_url }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet" />
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
+		<!-- font awesome -->
+		<script src="https://kit.fontawesome.com/7534282567.js" crossorigin="anonymous"></script>
 
-    <p class="post-meta">
-      Posted on {{ post.date | date: site.date_format }}
-    </p>
+		<!-- favicon -->
+		<link rel="icon" type="image/png" href="./assets/img/favicon.png" />
 
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.image | relative_url }}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
-      </div>
-    </div>
+		<!-- global css -->
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/atomic.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/animation.css" />
+		<link rel="stylesheet" href="./assets/css/navigation.css" />
+		<link rel="stylesheet" href="./assets/css/theme-button.css" />
+		<link rel="stylesheet" href="./assets/css/dialog.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
+		<!-- script -->
+		<script refer src="./assets/vendor/jquery.min.js"></script>
+		<script refer src="./assets/scripts/navigation.js"></script>
+		<script refer src="./assets/scripts/theme.js"></script>
+		<script refer src="./assets/scripts/home.js"></script>
+		<script refer src="./assets/scripts/about.js"></script>
+		<script refer src="./assets/scripts/portfolio.js"></script>
+		<script refer src="./assets/scripts/contact.js"></script>
+	</head>
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
+	<body>
+		<!-- mobile navigation -->
+		<nav id="mobileNav">
+			<div class="nav-wrap flex-center-between">
+				<!-- avatar -->
+				<a href="/">
+					<img class="avatar" src="./assets/img/avt.jpg" alt="Avatar" />
+				</a>
+				<!-- navigation icons -->
+				<ul id="mobileNavLinks" class="flex-center--ver"></ul>
+			</div>
+		</nav>
 
-   </article>
-  {% endfor %}
-</div>
+		<!-- desktop navigation -->
+		<nav id="nav" class="flex-center flex-dir-col">
+			<h1 class="nav-name"></h1>
+			<h2 class="nav-fullname">Le Hoai Nam</h2>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+			<ul id="desktopNavLinks" class="nav-menu"></ul>
+		</nav>
+
+		<!-- main content -->
+		<div class="content-wrap flex-center">
+			<!-- Home -->
+			<section id="home">
+				<div class="d-flex home">
+					<div class="home-avt">
+						<div class="home-avt-bg ani-avt-shape"></div>
+					</div>
+					<div class="home-content d-flex flex-dir-col">
+						<h1 class="home-name">LE HOAI NAM</h1>
+						<p class="home-intro">I'm learning to become a Front-end Web Developer. Familiar with HTML, CSS, JavaScript, ReactJS</p>
+						<ul id="socialNetwork" class="home-social d-flex"></ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- About me -->
+			<section id="about">
+				<div class="about">
+					<div class="about-img-wrap">
+						<img class="about-img" src="./assets/img/intro-img.jpg" alt="Avatar Photo" />
+					</div>
+					<div class="about-content">
+						<ul id="aboutIntro" class="about-intro"></ul>
+						<ul id="aboutSkill" class="about-skill"></ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Portfolio -->
+			<section id="portfolio">
+				<div class="portfolio">
+					<div class="portfolio-label">portfolio</div>
+					<div class="portfolio-header d-flex">
+						<h1 id="portfolioMenuLabel" class="label">All Projects</h1>
+						<ul id="portfolioMenu" class="portfolio-menu d-flex"></ul>
+					</div>
+					<ul id="portfolioList" class="portfolio-list"></ul>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact">
+				<div class="contact">
+					<div class="contact-avt">
+						<img src="./assets/img/avt.jpg" alt="Avatar" />
+					</div>
+					<ul id="contactInfo" class="contact-info"></ul>
+
+					<ul id="contactSocialNetwork" class="contact-social-network"></ul>
+				</div>
+			</section>
+		</div>
+
+		<!-- theme btn -->
+		<div id="theme" class="theme-btn-wrap cur-pointer flex-center-between">
+			<div id="themeBtn"></div>
+			<i id="themeIcon" class="fas fa-sun theme-icon"></i>
+		</div>
+
+		<!-- bubble animation -->
+		<div id="bubbleWrap">
+			<div class="bubble x1"></div>
+			<div class="bubble x2"></div>
+			<div class="bubble x3"></div>
+			<div class="bubble x4"></div>
+			<div class="bubble x5"></div>
+			<div class="bubble x6"></div>
+			<div class="bubble x7"></div>
+			<div class="bubble x8"></div>
+			<div class="bubble x9"></div>
+			<div class="bubble x10"></div>
+		</div>
+
+		<!-- overlay -->
+		<div id="overlay"></div>
+
+		<!-- project detail modal -->
+		<div id="projectDialog" class="dialog">
+			<div class="flex-center-between dialog-header">
+				<h2 id="projectDiaglogTitle" class="dialog-title">Dynonary</h2>
+				<i id="closeDialogBtn" class="fas fa-times cur-pointer"></i>
+			</div>
+			<ul id="projectDialogContent" class="dialog-content"></ul>
+		</div>
+	</body>
+
+	<!-- Reference: Template http://tokyovue.ibthemespro.com/ -->
+</html>

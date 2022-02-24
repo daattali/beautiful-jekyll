@@ -1,0 +1,39 @@
+@import './variable.scss';
+
+// ----------- theme button -------------
+.theme-btn-wrap {
+  z-index: 999;
+  width: $theme-size * 2.2;
+  height: $theme-size;
+
+  position: fixed;
+  left: $theme-size;
+  bottom: $theme-size;
+
+  border-radius: 25px;
+  border: solid 1px var(--border-color);
+  box-shadow: 0px 3px 8px 0px rgba(#000, 0.1);
+  background-color: var(--bg-color-main);
+
+  overflow: hidden;
+  transition: all 0.45s ease-in-out;
+}
+
+#themeBtn {
+  width: $theme-size - 2px;
+  height: $theme-size - 2px;
+  border-radius: 50%;
+  background-color: var(--text-color-sec);
+  @include transition;
+
+  &:hover,
+  &:active {
+    background-color: var(--text-color);
+  }
+}
+
+.theme-icon {
+  font-size: $theme-size / 1.8;
+  color: var(--primary-color);
+  padding: 0 6px;
+}

@@ -1,0 +1,33 @@
+.theme-btn-wrap {
+  z-index: 999;
+  width: 61.6px;
+  height: 28px;
+  position: fixed;
+  left: 28px;
+  bottom: 28px;
+  border-radius: 25px;
+  border: solid 1px var(--border-color);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color-main);
+  overflow: hidden;
+  transition: all 0.45s ease-in-out;
+}
+
+#themeBtn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--text-color-sec);
+  transition: all 0.3s ease;
+}
+#themeBtn:hover, #themeBtn:active {
+  background-color: var(--text-color);
+}
+
+.theme-icon {
+  font-size: 15.5555555556px;
+  color: var(--primary-color);
+  padding: 0 6px;
+}
+
+/*# sourceMappingURL=theme-button.css.map */

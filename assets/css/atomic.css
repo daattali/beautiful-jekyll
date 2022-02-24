@@ -1,0 +1,63 @@
+.cur-pointer {
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center--ver {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.link {
+  transition: all 0.35s;
+  position: relative;
+}
+
+.link::after {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-color-sec);
+  transform: scale(0);
+  transition: all 0.45s;
+}
+
+.link:hover,
+.link:active {
+  letter-spacing: 1px;
+}
+
+.link:hover::after,
+.link:active::after {
+  transform: scale(1);
+}

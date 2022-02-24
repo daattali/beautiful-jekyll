@@ -1,0 +1,111 @@
+@import './variable.scss';
+
+// ----------- mobile navigation -------------
+#mobileNav {
+  box-shadow: var(--box-shadow);
+  padding-bottom: $nav-height;
+  position: relative;
+
+  .nav-link {
+    font-size: 2rem;
+    margin: 0 1.2rem;
+    cursor: pointer;
+
+    & i {
+      @include transition();
+      color: var(--text-color-sec);
+      &:hover,
+      &:active {
+        color: var(--primary-color);
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      i {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .avatar {
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+  }
+
+  .nav-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: $nav-height;
+    background-color: var(--bg-color-sec);
+    width: 100%;
+    z-index: 9999;
+    width: 100%;
+    padding: 0 12px;
+  }
+}
+
+// ----------- nav -------------
+#nav {
+  display: none;
+  height: 100vh;
+  width: $nav-width;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background-color: var(--bg-color-sec);
+  border-right: solid 1px var(--border-color);
+  padding: 0 8rem;
+
+  & * {
+    text-align: left;
+  }
+
+  .nav-name,
+  .nav-fullname,
+  .nav-menu {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-name {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1.8;
+    text-transform: uppercase;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+  }
+
+  .nav-fullname {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+  }
+
+  .nav-menu {
+    margin-top: 2.4rem;
+  }
+
+  .nav-link {
+    padding: 1.2rem 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--text-color-sec);
+    @include transition();
+
+    &.active,
+    &:hover,
+    &:active {
+      letter-spacing: 2px;
+      color: var(--text-color);
+    }
+  }
+}
