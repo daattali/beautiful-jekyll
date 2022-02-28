@@ -13,7 +13,7 @@ Download: [pdf](../resume/sean_gleason_resume.pdf) [docx](../resume/sean_gleason
 St. Louis, MO\
 Mobile: 636-577-1601\
 [sean at gleason.tech](mailto:sean@gleason.tech)\
-[github](https://github.com/gleasonsean) [linkedin](https://www.linkedin.com/in/sean-gleason-29441167)
+[@gleasonasean](https://twitter.com/gleasonasean) [github](https://github.com/gleasonsean) [linkedin](https://www.linkedin.com/in/sean-gleason-29441167)
 
 
 ### Skills
