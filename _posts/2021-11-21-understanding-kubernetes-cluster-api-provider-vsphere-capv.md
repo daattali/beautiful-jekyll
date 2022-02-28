@@ -5,6 +5,7 @@ DATE:
 subtitle: ''
 metadescription: Find out about declarative Kubernetes cluster creation with Kubernetes
   Cluster API Provider vSphere (CAPV)
+image: ''
 
 ---
 I recently got into Kubernetes Cluster API Provider vSphere (CAPV) to understand what it is, what it does and where it fits in the Kubernetes and VMware ecosystem. The answer is a lot simpler than it seems and it is already used by several companies such as VMware (Tanzu Kubernetes Grid) or Giant Swarm to only name a couple. If you're wondering, the three "kubernetes turtles" in the picture below is the Cluster-API logo.
@@ -221,6 +222,14 @@ Note that the deployment isn't complete yet as we need to install a [CNI](https:
 Change _capv-management_ to the name of your cluster if you chose something else. The file generated is what we'll use with kubectl to connect to the cluster.
 
     kubectl get secret capv-management-kubeconfig -o json | jq -r .data.value | base64 --decode > capv-management.kubeconfig
+
+You can also retrieve it more easily with clusterctl with the following command:
+
+     clusterctl get kubeconfig capv-management > capv-management.kubeconfig
+
+And if you want the following commands to run against this cluster without having to specify the kubeconfig file each time, set you KUBECONFIG environment variable accordingly.
+
+    export KUBECONFIG=~/capv-management.kubeconfig
 
 * **Check that it works by querying the hosts with the generated kubeconfig file**.
 
