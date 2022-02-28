@@ -30,6 +30,7 @@ subtitle: ''
 * Steps to help guide you through the process of meal planning from start to finish
 * Bonus meal planning resources and ideas
 * There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works
+* Ideas for weekly meal themes
 * Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
 
 <br>
@@ -42,9 +43,21 @@ Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4K
 
 ![A picture of a review of the simple meal planning guide.](/uploads/simple-meal-planning-guide-review-shm.jpg "Simple Meal Planning Guide Review SHM")
 
+#### 3 MONEY SAVING TIPS FOR MEAL PLANNING
+
+1. **Meal plan.** The best way to save money on meal planning is to actually make a meal plan! This is one of the reasons why I create a simple meal planning guide - to encourage us all to meal plan.
+2. **Batch cook.** Batch cooking is going to help you save time and money in the kitchen.
+3. **Seasonal meal planning.** Learning how to cook around the seasons will help you save money long term. Use produce when it's ready to go in your area and turn more towards root vegetables and frozen during off seasons.
+
 #### Helpful meal planning blogs of mine you may enjoy:
 
 * [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
 * [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)
 * [Three tips to feed the hangry children fast](https://www.simplehomemom.com/three-tips-to-feed-the/)
 * [How to make lunches painless and quick with picky plates]()
+
+_Hi, I’m Kelly! I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom eight years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a simpler lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, and stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by teaching flexible planning methods and skills. Listen more about my take on simplifying things at home/creating a simple home on a podcast I was interviewed on_ [_here_](https://www.stitcher.com/show/make-joy-normal-cozy-homeschooling/episode/keeping-it-simple-an-interview-with-kelly-79787253)_. And a blog of mine you may like:_ [_Four Ways to Create a Simpler Home_](https://www.simplehomemom.com/four-ways-to-create-a-simpler-home/)_._
+
+_Kelly_ 😊
+
+![A headshot picture of me.](https://www.simplehomemom.com/uploads/headshot.jpg "Headshot SHM")
