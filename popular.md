@@ -6,7 +6,7 @@ subtitle: ''
 ---
 ## Quick links
 
-* Sign up for the **FREE** Simple Home Planning Binder Challenge [HERE](https://mailchi.mp/9e7cf5d96841/planningchallenge)! Starting March 1st.
+* Sign up for the **FREE** Simple Home Planning Binder Challenge [HERE](https://mailchi.mp/9e7cf5d96841/planningchallenge). You'll receive the FREE Ultimate Home Planning Binder Checklist on signup.
 * [Newest blogs](https://www.simplehomemom.com)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
