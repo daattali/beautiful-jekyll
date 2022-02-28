@@ -111,7 +111,7 @@ Previous works have shown that differentiable physics simulators provide gradien
             <div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference of Robotics and Automation (ICRA), 2022
             <div style="font-size:small">
                 <a href="https://georgegu1997.github.io/OSSID/">[Project Page]</a>
-                <!-- <a href="https://github.com/r-pad/zephyr">[Code]</a> -->
+                <a href="https://github.com/r-pad/OSSID_code">[Code]</a>
                 <a href="javascript:copy(div2022ossid, bib2022ossid)">[Bibtex]</a>
                 <a href="javascript:copy(div2022ossid, abs2022ossid)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2201.07309.pdf">[PDF]</a>
