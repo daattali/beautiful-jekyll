@@ -35,11 +35,10 @@ _Quick Links to Topic:_
 # Overview of Requirement
 
 Why Do I Need Requirements?
-
 - Guides the design of the eventual solution.
 - Without correct requirements, you cannot design or build the correct product.
 
-Do you know 60% of project failures originate with the requirements.
+**About 60% of project failures originate with the requirements.**
 
 ## What is Requirement?
 
@@ -63,8 +62,7 @@ Something a product must do or a quality it must have. Software requirement is a
 - Scope of the Product – defines the boundaries and connections to other products
 - Functional and Data Requirements – Things the product must do and data manipulated by the functions
 
-Functional Requirements Example:
-
+**Functional Requirements Example:**
 - The product must track recipes down the ingredient and quantity level
 - The recipes must be editable by an administrator
 - The product must display the orders that need to be completed
@@ -83,7 +81,7 @@ Functional Requirements Example:
     • Cultural and Political Requirements – human factors
     • Legal Requirements – conformance to applicable laws
 
-Non-Functional Requirements Example:
+**Non-Functional Requirements Example:**
 
 - The product shall use the company colors and logos
 - The product shall be intuitive, even to first time users
@@ -101,7 +99,7 @@ Non-Functional Requirements Example:
     • Relevant Facts – outside influences that make a difference to this product
     • Assumptions – assumptions developers are making
 
-Product Constraint Example:
+**Product Constraint Example:**
 
 - The product budget must not exceed $50,000
 - The product shall run on the company’s existing machines
@@ -110,7 +108,8 @@ Product Constraint Example:
 
 ## What Makes a Good Requirements?
 
-A can make a long list of word like ☑ Accountable, ☑ Understandable, ☑ Attainable, ☑ Modifiable, ☑ Testable, ☑ Traceable, ☑ Measurable, ☑ Feasible, ☑ Allocable, ☑ Concise, ☑ Consistent, ☑ Complete, ☑ Correct, ☑ Feasible, ☑ Design Independent, ☑ Necessary, ☑ Organized, ☑ Unambiguous, ☑ Prioritized, and so on.
+A can make a long list of word like:
+☑ Accountable, ☑ Understandable, ☑ Attainable, ☑ Modifiable, ☑ Testable, ☑ Traceable, ☑ Measurable, ☑ Feasible, ☑ Allocable, ☑ Concise, ☑ Consistent, ☑ Complete, ☑ Correct, ☑ Feasible, ☑ Design Independent, ☑ Necessary, ☑ Organized, ☑ Unambiguous, ☑ Prioritized, and so on.
 
 But we will use SMART formula like setting goal.
 
@@ -201,7 +200,6 @@ What is a SMART Requirement?
 # Tips for producing valid requirement
 
 Tips for Producing Valid Requirement:
-
 - Should use the word shall
 - Only one shall per requirement
 - Written in short, simple sentences
@@ -220,18 +218,16 @@ Tips for Producing Valid Requirement:
 - Shall – dictates specification and functional capability
 
 # Terms to Avoid:
-
 • Adequate • Approximately • Better than • Comparison • Easy • Maintainable • Maximize • Minimize • Normally • Optimize • Quality product • Quick • Rapid • Substantial • Sufficient • Timely
 
-Phase of the Requirements Process:
-
+**Phase of the Requirements Process:**
 1. Requirement Elicitation
 2. Requirement Analysis
 3. Requirement Specification
 4. Requirements Approval
 
-# Business Rules
 
+# Business Rules
 - What are Business Rules?
 - Business Rules vs Business Requirements
 - Best Practices
@@ -241,7 +237,6 @@ Business Rules Explained
 **Definition:** A business rule is a rule that defines or constrains some aspect of business and always resolves to either true or false. Rules is like the system must do this or must not do this. It is always either black or white. Yes or No. Not the both.
 
 **Example:**
-
 - You must be home by curfew.
 - Entered email addresses must appear valid (contain @ and .)
 - Each class must have at least one instructor
@@ -256,36 +251,31 @@ Then business requirement will help you to fulfill that rule. Like Wearing a wat
 
 **Rule:** Entered email addresses must appear valid (contain @, then later .)
 
-Possible Requirements:
-
+**Possible Requirements:**
 - Capability to enter email address
 - Alert agent when the email doesn’t appear to be valid
 - Allow for correction of email if invalid email format is entered
 
 **Rule:** Each course must have at least one instructor
 
-Possible Requirements:
-
+**Possible Requirements:**
 - Capability for Dean to assign instructor to course
 - Course registration cannot be opened until an instructor is assigned
 
 **Rule:** Customers must have a valid driver’s license to rent a vehicle
 
-Possible Requirements:
-
+**Possible Requirements:**
 - Employee to inspect driver’s license
 - Ability for employee to validate driver’s license
 
 **Rule:** A quote must be completed prior to an invoice being generated
 
-Possible Requirements:
-
+**Possible Requirements:**
 - Capability to enter a quote
 - Details from quote must automatically flow to the invoice
 - Ability to tie the quote and invoices together for reporting
 
-Business Rules Best Practices:
-
+**Business Rules Best Practices:**
 - When documenting business rules, keep it simple.
 - Business requirements are used to comply with business rules. Keep them both in same document
 - Each business rule may need multiple requirements
