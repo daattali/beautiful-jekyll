@@ -149,12 +149,12 @@ share-img: /assets/img/done.jpeg
     </p>
     <div class="project-image project-image-small">
       <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+        <img src="{{ 'assets/img/d2.jpeg' | relative_url }}" alt="project thumbnail" class="rounded-circle">
       <!-- </a> -->
     </div>
     <div class="project-image project-image-short">
       <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+        <img src="{{ 'assets/img/d2.jpeg' | relative_url }}" alt="project thumbnail" class="rounded-circle">
       <!-- </a> -->
     </div>
     <div class="project-entry">
@@ -175,12 +175,12 @@ share-img: /assets/img/done.jpeg
     </p>    
     <div class="project-image project-image-small">
       <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+        <img src="{{ 'assets/img/jabuti.jpeg' | relative_url }}" alt="project thumbnail" class="rounded-circle">
       <!-- </a> -->
     </div>
     <div class="project-image project-image-short">
       <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+        <img src="{{ 'assets/img/jabuti.jpeg' | relative_url }}" alt="project thumbnail" class="rounded-circle">
       <!-- </a> -->
     </div>
     <div class="project-entry">
@@ -196,17 +196,17 @@ share-img: /assets/img/done.jpeg
       <h2 class="project-title">FlIEEEperama</h2>      
     <!-- </a> -->
     <p class="project-meta project-meta-right">
-        Finalizado em outubro de 2018
+        Finalizado em março de 2018
         <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
       <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+        <img src="{{ 'assets/img/fliperama.jpeg' | relative_url }}" alt="project thumbnail" class="rounded-circle">
       <!-- </a> -->
     </div>
     <div class="project-image project-image-short">
       <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+        <img src="{{ 'assets/img/fliperama.jpeg' | relative_url }}" alt="project thumbnail" class="rounded-circle">
       <!-- </a> -->
     </div>
     <div class="project-entry">
