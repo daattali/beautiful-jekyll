@@ -37,7 +37,7 @@ subtitle: ''
 
 ### READY TO START YOUR SIMPLE MEAL PLANNING?
 
-Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's get started!
+Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's get started!
 
 **_Please note:_** _I'll email you a copy of **the Simple Meal Planning Guide** within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
@@ -48,6 +48,8 @@ Pricing: $14.99 CAD (about $12 US) click [HERE](https://buy.stripe.com/4gwcOWa4K
 1. **Meal plan.** The best way to save money on meal planning is to actually make a meal plan! This is one of the reasons why I create a simple meal planning guide - to encourage us all to meal plan.
 2. **Batch cook.** Batch cooking is going to help you save time and money in the kitchen.
 3. **Seasonal meal planning.** Learning how to cook around the seasons will help you save money long term. Use produce when it's ready to go in your area and turn more towards root vegetables and frozen during off seasons.
+
+### Want to start meal planning AND save some money? Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase **the Simple Meal Planning Guide** and let's get started!
 
 #### Helpful meal planning blogs of mine you may enjoy:
 
