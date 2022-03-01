@@ -132,7 +132,7 @@ share-img: /assets/img/done.jpeg
       </a>
     </div>
     <div class="project-entry">
-      Este projeto tem como objetivo produzir órteses impressas em 3D, de baixo custo utilizando materiais biodegradáveis. Diminuindo o impacto ambiental causado pelo descarte do gesso e possibilitando que hospitais filantrópicos tenham acesso a tecnologias assistivas.    
+      Este projeto objetiva produzir órteses impressas em 3D, de baixo custo utilizando materiais biodegradáveis diminuindo o impacto ambiental causado pelo descarte do gesso e permitindo que hospitais tenham acesso a tecnologias assistivas.    
     </div> 
 </article>
 </div>
