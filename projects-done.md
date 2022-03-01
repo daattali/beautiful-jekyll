@@ -158,8 +158,8 @@ share-img: /assets/img/done.jpeg
       <!-- </a> -->
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
-</div> 
+        O I3E-D2 é o projeto de um robô mascote para a RAS CIMATEC, inspirado no R2-D2 (de Star Wars), e apresentado durante o IEEE DAY 2018. Ele é controlado via bluetooth com um aplicativo de celular, e foi bastante utilizado na divulgação do evento. Graças a ele, conseguimos o terceiro lugar no Concurso MUNDIAL de fotos do IEEE DAY 2018.
+    </div>
 </article>
 </div>
 
@@ -171,7 +171,7 @@ share-img: /assets/img/done.jpeg
     <!-- </a> -->
     <p class="project-meta project-meta-left">
         <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
-        Finalizado em mes de ano
+        Finalizado em outubro de 2018
     </p>    
     <div class="project-image project-image-small">
       <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
@@ -184,7 +184,7 @@ share-img: /assets/img/done.jpeg
       <!-- </a> -->
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
+      O Projeto Jabuti foi um projeto para capacitação e recrutamento de novos voluntários para a RAS, em 2018. O projeto foi dividido em duas equipes, uma sendo responsável por desenvolver um robô seguidor de linha, e a outra um seguidor de parede. Ambos os projetos foram desenvolvidos com Arduino, e foram exibidos no IEEE DAY 2018.
     </div> 
 </article>
 </div>
@@ -210,7 +210,7 @@ share-img: /assets/img/done.jpeg
       <!-- </a> -->
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
-</div> 
+      Como o nome sugere, o projeto consistiu-se na construção de um Fliperama, com joysticks e botões bem estilo retrô, com jogos de Super Nintendo, Nintendo 64, SEGA, e outros. Para o emulador foi utilizada uma Raspberry Pi 3 com o RetroPie instalado, e esse projeto nos rende até hoje muita diversão.
+    </div> 
 </article>
 </div>
