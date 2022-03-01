@@ -9,25 +9,25 @@ share-img: /assets/img/done.jpeg
 <!-- I3E-D3 -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
-    <a href="https://ieeecimatec.github.io/projeto/">
+    <a href="https://ieeecimatec.github.io/project-i3e_d3/">
       <h2 class="project-title">I3E-D3</h2>      
     </a>
     <p class="project-meta project-meta-left">
         <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
-        Finalizado em feverero de 2022
+        Finalizado em fevereiro de 2022
     </p>    
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-i3e_d3/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-i3e_d3/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
+        O I3E-D3 é um robô que surgiu inspirado em seu antecessor I3E-D2, com o intuito de ser o mascote para o nosso IEEE, sendo um robô mais complexo com funções autônomas. Seu objetivo é servir também como ferramenta de Marketing, sendo utilizado pelos voluntários do IEEE para o aprendizado de robótica.
     </div> 
 </article>
 </div>
@@ -35,7 +35,7 @@ share-img: /assets/img/done.jpeg
 <!-- CertIEEEficados -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-    <a href="https://ieeecimatec.github.io/projeto/">
+    <a href="https://ieeecimatec.github.io/project-certieeeficados/">
       <h2 class="project-title">CertIEEEficados</h2>      
     </a>
     <p class="project-meta project-meta-right">
@@ -43,17 +43,17 @@ share-img: /assets/img/done.jpeg
         <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-certieeeficados/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-certieeeficados/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
+      Este é um projeto de automação, que visa facilitar e agilizar o preenchimento e envio de certificados de atividades, workshops, cursos e outros, frequentemente realizados por Ramos e Capítulos do IEEE. Com uma lista de participantes e os modelos de certificado, o programa é capaz de gerar e organizar todos eles por atividade.
     </div> 
 </article>
 </div>
@@ -61,20 +61,20 @@ share-img: /assets/img/done.jpeg
 <!-- JarvIEEEs -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
-    <a href="https://ieeecimatec.github.io/projeto/">
+    <a href="https://ieeecimatec.github.io/project-jarvieees/">
       <h2 class="project-title">JarvIEEEs</h2>      
     </a>
     <p class="project-meta project-meta-left">
         <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
-        Finalizado em mes de ano
+        Finalizado em fevereiro de 2021
     </p>    
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-jarvieees/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-jarvieees/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
@@ -96,14 +96,14 @@ share-img: /assets/img/done.jpeg
         <a href="https://ieeecimatec.github.io/embscimatec/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
+      <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
+        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+      <!-- </a> -->
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
+      <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
+        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+      <!-- </a> -->
     </div>
     <div class="project-entry">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
@@ -114,20 +114,20 @@ share-img: /assets/img/done.jpeg
 <!-- Órteses do Futuro -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
-    <a href="https://ieeecimatec.github.io/projeto/">
+    <a href="https://ieeecimatec.github.io/project-orteses/">
       <h2 class="project-title">Órteses do Futuro</h2>      
     </a>
     <p class="project-meta project-meta-left">
         <a href="https://ieeecimatec.github.io/embscimatec/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
-        Finalizado em mes de ano
+        Finalizado em julho de 2021
     </p>    
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-orteses/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
+      <a href="https://ieeecimatec.github.io/project-orteses/">
         <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
@@ -140,22 +140,22 @@ share-img: /assets/img/done.jpeg
 <!-- I3E-D2 -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-    <a href="https://ieeecimatec.github.io/projeto/">
+    <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
       <h2 class="project-title">I3E-D2</h2>      
-    </a>
+    <!-- </a> -->
     <p class="project-meta project-meta-right">
         Finalizado em outubro de 2018
         <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
+      <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
+        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+      <!-- </a> -->
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
+      <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
+        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+      <!-- </a> -->
     </div>
     <div class="project-entry">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
@@ -166,22 +166,22 @@ share-img: /assets/img/done.jpeg
 <!-- Jabuti -->
 <div data-aos="fade-left" data-aos-offset="150"> 
 <article class="project-preview-left">
-    <a href="https://ieeecimatec.github.io/projeto/">
+    <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
       <h2 class="project-title">Jabuti</h2>      
-    </a>
+    <!-- </a> -->
     <p class="project-meta project-meta-left">
         <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         Finalizado em mes de ano
     </p>    
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
+      <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
+        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+      <!-- </a> -->
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
+      <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
+        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+      <!-- </a> -->
     </div>
     <div class="project-entry">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
@@ -192,22 +192,22 @@ share-img: /assets/img/done.jpeg
 <!-- FlIEEEperama -->
 <div data-aos="fade-right" data-aos-offset="150"> 
 <article class="project-preview-right">
-    <a href="https://ieeecimatec.github.io/projeto/">
+    <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
       <h2 class="project-title">FlIEEEperama</h2>      
-    </a>
+    <!-- </a> -->
     <p class="project-meta project-meta-right">
         Finalizado em outubro de 2018
         <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
+      <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
+        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+      <!-- </a> -->
     </div>
     <div class="project-image project-image-short">
-      <a href="https://ieeecimatec.github.io/projeto/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
-      </a>
+      <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
+        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+      <!-- </a> -->
     </div>
     <div class="project-entry">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    

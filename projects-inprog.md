@@ -13,9 +13,9 @@ share-img: /assets/img/projects-inprog.jpg
       <h2 class="project-title">BayIEEEmax</h2>      
     </a>
     <p class="project-meta project-meta-left">
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
-        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
-        <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/embscimatec/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/pescimatec/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         Iniciado em julho de 2021
     </p>    
     <div class="project-image project-image-small">
@@ -43,7 +43,7 @@ share-img: /assets/img/projects-inprog.jpg
     </a>
     <p class="project-meta project-meta-right">
         Iniciado em julho de 2021
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-competieeecao/">
@@ -69,7 +69,7 @@ share-img: /assets/img/projects-inprog.jpg
       <h2 class="project-title">RASpode</h2>      
     </a>
     <p class="project-meta project-meta-left">
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         Iniciado em junho de 2021
     </p>    
     <div class="project-image project-image-small">
@@ -97,7 +97,7 @@ share-img: /assets/img/projects-inprog.jpg
     </a>
     <p class="project-meta project-meta-left">
         Iniciado em junho de 2021
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>    
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-mapvision/">
@@ -122,7 +122,7 @@ share-img: /assets/img/projects-inprog.jpg
       <h2 class="project-title">Mão-Espelhada</h2>      
     </a>
     <p class="project-meta project-meta-left">
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         Iniciado em junho de 2021
     </p>    
     <div class="project-image project-image-small">
@@ -150,7 +150,7 @@ share-img: /assets/img/projects-inprog.jpg
     </a>
     <p class="project-meta project-meta-right">
         Iniciado em junho de 2021
-        <a href="https://ieeecimatec.github.io/capitulo-RAS/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/rascimatec/"><img src="{{ 'assets/img/ras_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>    
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-petieee/">
@@ -176,7 +176,7 @@ share-img: /assets/img/projects-inprog.jpg
       <h2 class="project-title">Projeto Visão</h2>      
     </a>
     <p class="project-meta project-meta-left">
-        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/embscimatec/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         Iniciado em julho de 2021
     </p>
     <div class="project-image project-image-small">
@@ -204,7 +204,7 @@ share-img: /assets/img/projects-inprog.jpg
     </a>
     <p class="project-meta project-meta-right">
         Iniciado em julho de 2021
-        <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/pescimatec/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-trackieeers/">
@@ -230,7 +230,7 @@ share-img: /assets/img/projects-inprog.jpg
       <h2 class="project-title">Smart Energy</h2>      
     </a>
     <p class="project-meta project-meta-left">
-        <a href="https://ieeecimatec.github.io/capitulo-PES/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/pescimatec/"><img src="{{ 'assets/img/pes_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         Iniciado em julho de 2021
     </p>
     <div class="project-image project-image-small">
@@ -257,7 +257,7 @@ share-img: /assets/img/projects-inprog.jpg
       <h2 class="project-title">Projeto Healthchain</h2>      
     </a>
     <p class="project-meta project-meta-right">
-        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/embscimatec/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         Iniciado em julho de 2021
     </p>
     <div class="project-image project-image-small">
@@ -284,7 +284,7 @@ share-img: /assets/img/projects-inprog.jpg
       <h2 class="project-title">Projeto Baby IoT</h2>      
     </a>
     <p class="project-meta project-meta-left">
-        <a href="https://ieeecimatec.github.io/capitulo-EMBS/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
+        <a href="https://ieeecimatec.github.io/embscimatec/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
         Iniciado em julho de 2021
     </p>
     <div class="project-image project-image-small">

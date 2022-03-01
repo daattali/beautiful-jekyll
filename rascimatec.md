@@ -19,6 +19,7 @@ A [**RAS** (Robotics and Automation Society)](http://www.ieee-ras.org/) é a Soc
 - [CompetIEEEção](https://ieeecimatec.github.io/project-competieeecao/)
 
 #### Projetos Finalizados
+- [FlIEEEperama](https://ieeecimatec.github.io/project-flieeeperama/)
 - [Projeto Jabuti](https://ieeecimatec.github.io/project-certieeeficados/)
 - [I3E-D2](https://ieeecimatec.github.io/project-i3e_d2/)
 - [JarvIEEEs](https://ieeecimatec.github.io/project-jarvieees/)
