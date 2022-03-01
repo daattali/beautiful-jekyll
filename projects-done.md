@@ -18,12 +18,12 @@ share-img: /assets/img/done.jpeg
     </p>    
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-i3e_d3/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/i3ed3/d3_project.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
       </a>
     </div>
     <div class="project-image project-image-short">
       <a href="https://ieeecimatec.github.io/project-i3e_d3/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/i3ed3/d3_project.jpeg' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
       </a>
     </div>
     <div class="project-entry">
@@ -44,12 +44,12 @@ share-img: /assets/img/done.jpeg
     </p>
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-certieeeficados/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/certieeeficados/certificado_png.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-image project-image-short">
       <a href="https://ieeecimatec.github.io/project-certieeeficados/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/certieeeficados/certificado_png.png' | relative_url }}" alt="project thumbnail" class="img-blur">
       </a>
     </div>
     <div class="project-entry">
@@ -70,12 +70,12 @@ share-img: /assets/img/done.jpeg
     </p>    
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-jarvieees/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/jarvieees/project.png' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
       </a>
     </div>
     <div class="project-image project-image-short">
       <a href="https://ieeecimatec.github.io/project-jarvieees/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/jarvieees/project.png' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
       </a>
     </div>
     <div class="project-entry">
@@ -97,12 +97,12 @@ share-img: /assets/img/done.jpeg
     </p>
     <div class="project-image project-image-small">
       <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+        <img src="{{ 'assets/img/pim_pelod/pimpelod.jpeg' | relative_url }}" alt="project thumbnail" class="">
       <!-- </a> -->
     </div>
     <div class="project-image project-image-short">
       <!-- <a href="https://ieeecimatec.github.io/projeto/"> -->
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="">
+        <img src="{{ 'assets/img/pim_pelod/pimpelod.jpeg' | relative_url }}" alt="project thumbnail" class="">
       <!-- </a> -->
     </div>
     <div class="project-entry">
@@ -123,12 +123,12 @@ share-img: /assets/img/done.jpeg
     </p>    
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-orteses/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/orteses/Órtesepulso_quadrado.png' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
       </a>
     </div>
     <div class="project-image project-image-short">
       <a href="https://ieeecimatec.github.io/project-orteses/">
-        <img src="{{ 'assets/img/voluntarios/semfoto.png' | relative_url }}" alt="project thumbnail" class="img-blur">
+        <img src="{{ 'assets/img/orteses/Órtesepulso_quadrado.png' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
       </a>
     </div>
     <div class="project-entry">
