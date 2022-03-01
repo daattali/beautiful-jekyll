@@ -92,7 +92,7 @@ share-img: /assets/img/done.jpeg
       <h2 class="project-title">PIM&PELOD</h2>      
     </a>
     <p class="project-meta project-meta-right">
-        Finalizado em mes de ano
+        Finalizado em Setembro de 2021
         <a href="https://ieeecimatec.github.io/embscimatec/"><img src="{{ 'assets/img/embs_logo.png' | relative_url }}" width="30" hspace="5" class="img-zoom25"></a>
     </p>
     <div class="project-image project-image-small">
@@ -106,7 +106,7 @@ share-img: /assets/img/done.jpeg
       <!-- </a> -->
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
+      Aplicativo que realiza os cálculos PIM, Pediatric Index of Mortality ou Índice de Mortalidade Pediátrica, e PELOD, Pediatric Logistic Organ Dysfunction ou Disfunção Orgânica Logística Pediátrica;    
 </div> 
 </article>
 </div>
@@ -123,16 +123,16 @@ share-img: /assets/img/done.jpeg
     </p>    
     <div class="project-image project-image-small">
       <a href="https://ieeecimatec.github.io/project-orteses/">
-        <img src="{{ 'assets/img/orteses/Órtesepulso_quadrado.png' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
+        <img src="{{ 'assets/img/orteses/cover-orteses.jpg' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
       </a>
     </div>
     <div class="project-image project-image-short">
       <a href="https://ieeecimatec.github.io/project-orteses/">
-        <img src="{{ 'assets/img/orteses/Órtesepulso_quadrado.png' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
+        <img src="{{ 'assets/img/orteses/orteses-done.png' | relative_url }}" alt="project thumbnail" class="img-blur rounded-circle">
       </a>
     </div>
     <div class="project-entry">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac sem eleifend, convallis nibh id, dignissim nunc. Cras eu dolor ultrices, vestibulum est eu, rhoncus lorem. Ut ac nisi eget nulla lacinia pellentesque vitae eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce.    
+      Este projeto tem como objetivo produzir órteses impressas em 3D, de baixo custo utilizando materiais biodegradáveis. Diminuindo o impacto ambiental causado pelo descarte do gesso e possibilitando que hospitais filantrópicos tenham acesso a tecnologias assistivas.    
     </div> 
 </article>
 </div>
