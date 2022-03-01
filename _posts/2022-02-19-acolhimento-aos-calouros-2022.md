@@ -2,7 +2,7 @@
 layout: post
 title: Acolhimento aos Calouros 2022
 subtitle: 
-cover-img: /assets/img/acolhimento2022/mesa.jpg
+cover-img: /assets/img/acolhimento2022/mesa_qualidade.jpg
 thumbnail-img: /assets/img/acolhimento2022/stand_thumb.jpg
 share-img: /assets/img/acolhimento2022/stand.jpg
 ---
