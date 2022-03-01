@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Órteses do Futuro
-subtitle: Órteses flexíveis impressas em impressoras 3D
+subtitle: Órteses flexíveis impressas em 3D
 cover-img: /assets/img/orteses/cover-orteses.jpg
 ---
 #### O que é?
@@ -9,8 +9,21 @@ O projeto órteses tem como objetivo a pesquisa e o desenvolvimento de órteses 
 
 #### Modelagem
 O projeto da órtese se inicia com a modelagem 3D que permite obter digitalmente modelos de órteses reais da parte do corpo fraturado, onde a órtese seria criada com as medidas exatas do paciente. Visando uma maior comodidade, a órtese conterá orifícios em sua construção auxiliando na limpeza do membro do paciente e proporcionando uma maior ventilação no mesmo. Haverá também a utilização de velcros para um melhor ajuste e facilitando o encaixe. O software a ser utilizado será o Blender 2.8, onde é possível modelar órteses em 3D de acordo com sua forma e textura, sendo possível ao final converter para o formato de arquivo STL, o qual faz-se necessário para impressão 3D. O Blender 2.8 é um aplicativo gratuito muito utilizado por animadores e que possui todos os recursos para concluir este projeto.
-<p style="text-align: center;"> <img src="/assets/img/orteses/Órteseperna.png" alt="ortesesperna" width="300"/> </p>
-<p style="text-align: center;"> <img src="/assets/img/orteses/Órtesepulso.png" alt="ortesespulso" width="500"/> </p>
+
+<div class="row">
+  <div class=" col-xl-auto offset-xl-0 col-lg-4 offset-lg-0">
+    <div class="mobile-side-scroller">
+      <table class="table-borderless highlight">
+        <thead>
+          <tr>
+            <th><center><img src="{{ '/assets/img/orteses/Órteseperna.png' | relative_url }}" width="300" alt="ortesesperna" class="img-fluid"/></center></th>
+            <th><center><img src="{{ '/assets/img/orteses/Órtesepulso.png' | relative_url }}" width="500" alt="ortesespulso" class="img-fluid"/></center></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+</div>
 
 ### Equipe de Desenvolvimento
 <div class="row">

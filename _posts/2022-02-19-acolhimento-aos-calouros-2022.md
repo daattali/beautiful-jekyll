@@ -35,8 +35,8 @@ E nós não pudemos deixar de levar nosso mascote, o [I3E-D3](../project-i3e_d3)
       <table class="table-borderless highlight">
         <thead>
           <tr>
-            <th><a href="https://www.instagram.com/cimatecjr/"><center><img src="{{ 'assets/img/../../../assets/img/acolhimento2022/cimatecjr.jpg' | relative_url }}" width="1000" alt="CimatecJr" class="img-fluid img-blur"/></center></a></th>
-            <th><a href="https://www.instagram.com/aichecimatec/"><center><img src="{{ 'assets/img/../../../assets/img/acolhimento2022/aiche.jpg' | relative_url }}" width="1050" alt="AIChE" class="img-fluid img-blur"/></center></a></th>
+            <th><a href="https://www.instagram.com/cimatecjr/"><center><img src="{{ 'assets/img/acolhimento2022/cimatecjr.jpg' | relative_url }}" width="1000" alt="CimatecJr" class="img-fluid img-blur"/></center></a></th>
+            <th><a href="https://www.instagram.com/aichecimatec/"><center><img src="{{ 'assets/img/acolhimento2022/aiche.jpg' | relative_url }}" width="1050" alt="AIChE" class="img-fluid img-blur"/></center></a></th>
           </tr>
         </thead>
       </table>
@@ -50,11 +50,11 @@ E nós não pudemos deixar de levar nosso mascote, o [I3E-D3](../project-i3e_d3)
         <thead>
           <tr>
             <th>
-                <a href="https://www.instagram.com/creajrbassa/"><center><img src="{{ 'assets/img/../../../assets/img/acolhimento2022/creajr.jpg' | relative_url }}" width="1150" alt="Crea Jr" class="img-fluid img-blur"/></center></a>
+                <a href="https://www.instagram.com/creajrbassa/"><center><img src="{{ 'assets/img/acolhimento2022/creajr.jpg' | relative_url }}" width="1150" alt="Crea Jr" class="img-fluid img-blur"/></center></a>
                 <br/>
-                <a href="https://www.instagram.com/ieeecimatec/"><center><img src="{{ 'assets/img/../../../assets/img/acolhimento2022/mesa.jpg' | relative_url }}" width="1150" alt="IEEE" class="img-fluid img-blur"/></center></a>
+                <a href="https://www.instagram.com/ieeecimatec/"><center><img src="{{ 'assets/img/acolhimento2022/mesa.jpg' | relative_url }}" width="1150" alt="IEEE" class="img-fluid img-blur"/></center></a>
             </th>
-            <th><a href="https://www.instagram.com/atcfalcons/"><center><img src="{{ 'assets/img/../../../assets/img/acolhimento2022/atcfalcons.jpg' | relative_url }}" width="1000" alt="Atlética Falcons" class="img-fluid img-blur"/></center></a></th>
+            <th><a href="https://www.instagram.com/atcfalcons/"><center><img src="{{ 'assets/img/acolhimento2022/atcfalcons.jpg' | relative_url }}" width="1000" alt="Atlética Falcons" class="img-fluid img-blur"/></center></a></th>
           </tr>
         </thead>
       </table>
