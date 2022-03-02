@@ -269,13 +269,13 @@ At this point we have a Kubernetes workload cluster running in vSphere. You can 
 
 #### Step 5 - Move the cluster-api components to the kubernetes cluster
 
-Now we want to turn this newly created cluster into our permanent cluster. Meaning we need to prepare it with clusterctl and move the cluster-API components from the temporary bootstrap cluster to it .
+Now we want to turn this newly created cluster into our permanent cluster. Meaning we need to prepare it with clusterctl and move the cluster-API components from the temporary bootstrap cluster to it. We will use the same init command but this time against the kubeconfig file of the new cluster.
 
-* First **SSH to the server** using your public key and user **capv**.
-* **Copy _capv-management.kubeconfig_** from the bootstrap cluster to _.kube/config_ on the workload cluster.
-* **Copy .cluster-api/clusterctl.yaml** from the bootstrap cluster to _.cluster-api/clusterctl.yaml_ on the workload cluster.
+* Make sure your **current kubeconfig file is the new cluster** with "_kubectl config current-context"_
 * **Initialize the cluster** with "_clusterctl init --infrastructure vsphere_"
-* Go back to the bootstrapping machine and **move the components to the workload cluster** using clusterctl and the kubeconfig file that to target the workload cluster.
+* Set your context back to the bootstrap cluster with "_export KUBECONFIG=\~/.kube/config_" 
+
+Now we will **move the components from the bootstrap to the workload cluster** using clusterctl and the kubeconfig file of the workload cluster.
 
 This step won't work if you haven't initialized the destination cluster beforehand.
 
