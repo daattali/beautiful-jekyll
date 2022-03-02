@@ -181,6 +181,18 @@ Tiffany joined the founding team who developed the Master’s of Data Science pr
 
 
 
+#### Betty Zhao, Course Coordinator
 
+
+<img src='../img/team/betty.jpeg'  align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Betty Zhao joined the MDS program in January 2022 as a course coordinator. She was born in Johannesburg but grew up in Shanghai. She has also lived in Gaborone for six years before coming to Vancouver. She pursued her undergraduate degree in combined major Business and Computer Science at the University of British Columbia. When Betty is not working, you can find her exploring new food, watching anime, or playing games.  <br>
+<br>
+
+<i>In the last 6 months, Betty has learned the basics of working out and cooking without blowing up the kitchen.  </i> <br>
+
+<a href="https://www.linkedin.com/in/mengxinzhao/" target="_blank">Learn more about Betty here.</a>
+
+</p>
 
 
