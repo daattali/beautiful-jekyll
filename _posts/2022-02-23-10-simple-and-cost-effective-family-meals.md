@@ -43,6 +43,8 @@ Serve the nachos on their own after broiling in the oven or with sour cream and/
 
 And because I love DIY: [DIY Nacho spice](https://www.allrecipes.com/recipe/46653/taco-seasoning-i/); [Easy Homemade Baked Pita Chips](https://www.joyfulhealthyeats.com/homemade-baked-pita-chips/); [Taco meat recipe](https://amindfullmom.com/3-ingredient-taco-meat-and-4-ways-to-use-it/)
 
+<br>
+
 #### 2. PICKY PLATES
 
 Picky plates or finger foods are what we do for most of our lunches. I put them in a round container with separated sections. I use my picky plate planner page from [my Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/) to plan it out. I make sure to have a variety of foods from different food groups such as:
@@ -73,6 +75,8 @@ I do variations of these often, so will share the most current version I've been
 * Lentils. I cook in the insant pot and mix with the tuna sometimes.
 * Chopped spinach
 * I'll sometimes serve with a side of mixed veggies too.
+
+<br>
 
 #### 4. TACO BOWLS (lentil with meat)
 
