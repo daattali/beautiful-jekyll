@@ -194,7 +194,6 @@ img {
   padding-bottom: 0.625rem;
   font-size: 1.125rem;
   text-decoration: none;
-  filter: invert(82%) sepia(9%) saturate(2302%) hue-rotate(71deg) brightness(87%) contrast(91%);
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -259,6 +258,10 @@ img {
 .navbar-custom .navbar-toggler:focus,
 .navbar-custom .navbar-toggler:hover {
   background-color: initial;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(82%) sepia(9%) saturate(2302%) hue-rotate(71deg) brightness(87%) contrast(91%);
 }
 
 .navbar-custom .navbar-toggler[aria-expanded="true"] {
