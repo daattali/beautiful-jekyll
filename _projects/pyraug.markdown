@@ -1,16 +1,11 @@
 ---
 layout: page
-title: Pyraug
-description: A python library to perform data augmentation with VAEs
+title: Multiscale Deformetrica
+description: A coarse-to-fine strategy to perform multiscale registration/atlas estimation
 img: assets/img/16.png
-github: https://github.com/clementchadebec/pyraug
-documentation: https://pyraug.readthedocs.io/en/latest/
-licence: https://opensource.org/licenses/Apache-2.0
-stars: https://github.com/clementchadebec/pyraug/stargazers
-pypi_package: https://pypi.org/project/pyraug/
-arxiv: https://arxiv.org/abs/2105.00026
+github: https://github.com/fleurgaudfernau/Deformetrica_multiscale
+documentation: https://gitlab.com/icm-institute/aramislab/deformetrica/-/wikis/home
+licence: https://github.com/fleurgaudfernau/Deformetrica_multiscale/blob/master/LICENSE.txt
 importance: 1
 category: work
 ---
-
-## bloubou
