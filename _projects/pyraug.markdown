@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: Pyraug
@@ -12,6 +11,6 @@ pypi_package: https://pypi.org/project/pyraug/
 arxiv: https://arxiv.org/abs/2105.00026
 importance: 1
 category: work
-
 ---
+
 ## bloubou
