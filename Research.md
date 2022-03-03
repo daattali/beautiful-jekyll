@@ -28,12 +28,12 @@ title: ""
 **_American Journal of Political Science_**, Revise and Resubmit.<br>
 David A. Lake Award for best paper presented at IPES 2020. 
 
+[Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/mtw_sep_2021.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
+**_International Studies Quarterly_**, Revise and Resubmit.
+
 [Treaty Diplomacy and the Global Firm](assets/treaty_regimes_IPES.pdf)
 
 [The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)
-
-[Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/mtw_sep_2021.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
-Under Review.
 
 [Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/TJ_NBER_2022.pdf) (with Nathan M. Jensen)
 
@@ -42,6 +42,8 @@ Under Review.
 _Firms, Diplomats, and Piecemeal Globalization: How Corporate Interests Shape International Institutions_ (Book Project)
 
 Revolving Door Diplomats (with Matt Malis)
+
+Informational Lobbying and the Content of Diplomacy
 
 Transparency Shocks and Private Governance in Offshore Finance (with Daniel Berliner and Nikhil Kalyanpur)
 
