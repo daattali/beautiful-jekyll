@@ -74,12 +74,12 @@ This page supplements our paper on multiscale atlas estimation. Below are displa
 
 **Template image and initial vector field estimation**
 
-Below is displayed the estimation of the initial momenta that wrap the template image to the image of the first subject. The magnitude of the vectors was multiplied by 2 for visualization purposes.
+Below is displayed the estimation of the initial momenta that wrap the template image to the image of a subject. The magnitude of the vectors was multiplied by 2 for visualization purposes.
 
 <table>
 <tr>
    <th> Number <br /> of cp </th>
- <th> First subject image </th>
+ <th> Subject image </th>
 <th> <center>Original algorithm</center>  </th>
 <th> <center>Coarse-to-fine algorithm  </center> </th>
 </tr>
