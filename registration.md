@@ -94,7 +94,7 @@ Below is displayed the estimation of the initial momenta that wrap the template 
     
 <td>
    <center>
-<img src="/assets/img/momenta_digits_ctf_k3.gif" alt="drawing" width="180"/>
+<img src="/assets/img/momenta_digits_no_ctf_k4_s2.gif" alt="drawing" width="180"/>
    </center>
 </td>
 <td>   
