@@ -16,7 +16,7 @@ author: Fleur Gaudfernau
 navbar-links:
   About: "/"
   Research: "Research"
-  CV: "CV"
+  Projects: "Projects"
   Projects  :
     - Shape Analysis: "Shape_analysis"
     - Multiscale atlas estimation: "Multiscale_atlas_estimation"
