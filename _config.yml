@@ -21,6 +21,15 @@ navbar-links:
     - Shape Analysis: "Shape_analysis"
     - Multiscale atlas estimation: "Multiscale_atlas_estimation"
 
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
