@@ -28,7 +28,7 @@ navbar-links:
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /Projects/:path/
 
 # --- Logo --- #
 
