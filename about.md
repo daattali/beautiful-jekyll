@@ -48,8 +48,7 @@ Past and present research projects:
    <dt><img src="https://img.shields.io/badge/2022-118ab2.svg"></dt>
 <dd> Characterization of healthy developmental brain trajectories - collaboration with Hôpital Necker and <a href="http://fondation-lumiere.org/">Institut Lumière</a></dd>
   <dt><img src="https://img.shields.io/badge/2022-118ab2.svg"></dt>
-<dd> Characterization of fetal brains with Cytomegalovirus infection - collaboration with Hôpital Necker and <a href="http://fondation-lumiere.org/">Institut Lumière</a>
-   </dd>
+
    
    
 </dl>
