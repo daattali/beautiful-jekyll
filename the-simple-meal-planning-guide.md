@@ -43,6 +43,8 @@ Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's g
 
 ![A picture of a review of the simple meal planning guide.](/uploads/simple-meal-planning-guide-review-shm.jpg "Simple Meal Planning Guide Review SHM")
 
+<br>
+
 #### 3 MONEY SAVING TIPS FOR MEAL PLANNING
 
 1. **Meal plan.** The best way to save money on meal planning is to actually make a meal plan! This is one of the reasons why I create a simple meal planning guide - to encourage us all to meal plan.
