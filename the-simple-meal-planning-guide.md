@@ -16,8 +16,6 @@ subtitle: ''
 
 ### This Simple Meal Planning Guide is for you if:
 
-<br>
-
 * you often dread mealtimes and feel overwhelmed with meal planning
 * you often google meal planning type ideas, but don’t know where to start
 * you often feel stumped and uninspired with meal planning
@@ -26,8 +24,6 @@ subtitle: ''
 ![A picture of the meal planning guide sheets.](/uploads/simple-meal-planning-guide.jpg "The Simple Meal Planning Guide Sneak Peek")
 
 ### What you'll find in the Simple Meal Planning Guide:
-
-<br>
 
 * Helpful meal planning and meal organizing tips
 * 8 helpful meal planning printables
@@ -49,8 +45,6 @@ Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's g
 
 #### 3 MONEY SAVING TIPS FOR MEAL PLANNING
 
-<br>
-
 1. **Meal plan.** The best way to save money on meal planning is to actually make a meal plan! This is one of the reasons why I create a simple meal planning guide - to encourage us all to meal plan.
 2. **Batch cook.** Batch cooking is going to help you save time and money in the kitchen.
 3. **Seasonal meal planning.** Learning how to cook around the seasons will help you save money long term. Use produce when it's ready to go in your area and turn more towards root vegetables and frozen during off seasons.
@@ -70,8 +64,6 @@ Are you looking for more resources to simplify your life at home with children? 
 <br>
 
 #### Helpful meal planning blogs of mine you may enjoy:
-
-<br>
 
 * [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
 * [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)
