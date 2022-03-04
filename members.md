@@ -109,7 +109,7 @@ members:
             web_url: https://himangim.github.io/
           - name: Junyu (Jenny) Nan (MSR) -> CMU PhD
             web_url: https://www.ri.cmu.edu/ri-people/junyu-nan/
-          - name: Gautham Narayan Narasimhan (MSME)
+          - name: Gautham Narayan Narasimhan (MSME) -> CV / ML Engineer at Path Robotics
             web_url: https://gauthamnarayan.com/
           - name: Jianing (Aurora) Qian (MSR) -> U Penn PhD
             web_url: https://www.ri.cmu.edu/ri-people/jianing-qian/
