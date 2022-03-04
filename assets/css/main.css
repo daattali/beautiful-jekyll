@@ -260,6 +260,10 @@ img {
   background-color: initial;
 }
 
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(82%) sepia(9%) saturate(2302%) hue-rotate(71deg) brightness(87%) contrast(91%);
+}
+
 .navbar-custom .navbar-toggler[aria-expanded="true"] {
   background-color: rgba(0, 0, 0, 0.2);
 }
