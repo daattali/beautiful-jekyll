@@ -12,6 +12,6 @@ Voici l'image dont vous aurez besoin ce jour.
 
 
 <center>
-	      <img class="avatar-img" src="/Photo.jpg" />
+	      <img class="avatar-img" src="/photo.JPG" />
 </center>
 
