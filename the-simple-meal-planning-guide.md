@@ -47,7 +47,7 @@ Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's g
 
 <br>
 
-## Want to start meal planning AND save some money? Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase **the Simple Meal Planning Guide** and let's get started!
+## Want to start meal planning AND save some money? Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase the Simple Meal Planning Guide and let's get started!
 
 <br>
 
