@@ -4,7 +4,7 @@ title: Codes
 permalink: /Codes/
 nav: true
 display_categories: [work]
-horizontal: false
+horizontal: True
 ---
 
 <!-- pages/projects.md -->
