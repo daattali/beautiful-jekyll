@@ -1,8 +1,8 @@
 <div class="card" style="width: 18rem;">
   {% if project.redirect %}
-  <a href="{{ project.redirect }}" target="_blank">
+  <a href="{{ project.redirect }}" target="_blank"></a>
   {% else %}
-  <a href="{{ project.url | relative_url }}">
+  <a href="{{ project.url | relative_url }}"></a>
   {% endif %}
     {% if project.img %}
        <img class="card-img-top" src="{{ project.img | relative_url }}" alt="project thumbnail" "width: 7rem;">  
