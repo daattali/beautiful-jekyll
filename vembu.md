@@ -9,7 +9,7 @@ BDRSuite caters to backup & disaster recovery of diverse IT environments such as
 
 Have a glimpse of the BDRSuite of Products categorized based on different IT environments.
 
-**For Virtual Environments (VMware & Hyper-V)**
+### For Virtual Environments (VMware & Hyper-V)
 
 [**Backup & Replication for VMware**](https://www.vembu.com/vmware-backup/)
 
@@ -21,27 +21,18 @@ Ensure complete data protection for Hyper-V VMs running on a standalone host, Hy
 
 **Features of VMware and Hyper-V backups**
 
-● Agentless backup & replication of VMware & Hyper-V VMs
+* Agentless backup & replication of VMware & Hyper-V VMs
+* Incremental backup using Changed Block Tracking(CBT)
+* Application-aware backups with log truncation
+* Parallel VM/Disk processing
+* Optimized backup with where-it-left-off
+* Instant VM recovery to ensure business continuity
+* Live migration of Instantly booted VMs
+* Granular file & application object-level recovery
+* Cross-platform & Cross hypervisor migration
+* Automatic backup verification
 
-● Incremental backup using Changed Block Tracking(CBT)
-
-● Application-aware backups with log truncation
-
-● Parallel VM/Disk processing
-
-● Optimized backup with where-it-left-off
-
-● Instant VM recovery to ensure business continuity
-
-● Live migration of Instantly booted VMs
-
-● Granular file & application object-level recovery
-
-● Cross-platform & Cross hypervisor migration
-
-● Automatic backup verification
-
-**For Physical Environments (Windows, Linux, Mac)**
+### For Physical Environments (Windows, Linux, Mac)
 
 [**Backup for Microsoft Windows**](https://www.vembu.com/windows-image-backup/)
 
@@ -61,23 +52,16 @@ Backup data across Windows & Mac endpoints to ensure the data is protected from 
 
 **Features of Windows, Linux, and Mac backups**
 
-● Backup the entire disk or selected volumes of Windows Servers and Workstations
+* Backup the entire disk or selected volumes of Windows Servers and Workstations
+* Backup files/folders of Windows and Linux Servers
+* Backup endpoints like Windows workstations and Mac
+* Application-level backup for Microsoft applications and MySQL
+* Proprietary CBT driver for faster incremental backups
+* Bare-Metal Recovery (BMR) of entire machine to same or new hardware
+* Flexibility to migrate Windows machines from a physical to a virtual platform
+* Secondary copy of the backup data to an offsite data center or Cloud
 
-● Backup files/folders of Windows and Linux Servers
-
-● Backup endpoints like Windows workstations and Mac
-
-● Application-level backup for Microsoft applications and MySQL
-
-● Proprietary CBT driver for faster incremental backups
-
-● Bare-Metal Recovery (BMR) of entire machine to same or new hardware
-
-● Flexibility to migrate Windows machines from a physical to a virtual platform
-
-● Secondary copy of the backup data to an offsite data center or Cloud
-
-**For Cloud Workloads (AWS)**
+### For Cloud Workloads (AWS)
 
 [**Backup for AWS**](https://www.vembu.com/aws-backup/)
 
@@ -85,23 +69,16 @@ Simple, secure, and cloud-native backup solution for your AWS EC2 instances. You
 
 **Features of AWS backups**
 
-● Agentless & Cloud-Native Backup for EC2 instances
+* Agentless & Cloud-Native Backup for EC2 instances
+* Near Continuous Data Protection
+* Automatic backup scheduling
+* Application-aware backup processing
+* Instantly recover the instances by registering a new AMI Image
+* Recover only the required volumes by attaching them to target instances
+* Retain multiple snapshots for every backup job for use during recovery
+* Run custom scripts automatically before and after every backup job
 
-● Near Continuous Data Protection
-
-● Automatic backup scheduling
-
-● Application-aware backup processing
-
-● Instantly recover the instances by registering a new AMI Image
-
-● Recover only the required volumes by attaching them to target instances
-
-● Retain multiple snapshots for every backup job for use during recovery
-
-● Run custom scripts automatically before and after every backup job
-
-**For SaaS Applications (Microsoft 365 & Google Workspace)**
+### For SaaS Applications (Microsoft 365 & Google Workspace)
 
 [**Backup for Microsoft 365**](https://www.vembu.com/office-365-backup/)
 
@@ -113,21 +90,14 @@ Ensure protection of your emails, contacts, calendar, and google drives by direc
 
 **Features of Microsoft 365 & Google Workspace backups**
 
-● Backup Exchange, OneDrive, SharePoint, and Teams of Microsoft 365
-
-● Backup Gmail and Google Drive of Google Workspace
-
-● Backup entire domain or only selected user data as required
-
-● Retain backup data for a specified number of days
-
-● Restore data to the same or different user account
-
-● Restore entire user mailbox or individual mails
-
-● Granularly restore individual files or the entire folder of the drive
-
-● Export to multiple formats like .PST, .EML, .VCF, .ICF and much more
+* Backup Exchange, OneDrive, SharePoint, and Teams of Microsoft 365
+* Backup Gmail and Google Drive of Google Workspace
+* Backup entire domain or only selected user data as required
+* Retain backup data for a specified number of days
+* Restore data to the same or different user account
+* Restore entire user mailbox or individual mails
+* Granularly restore individual files or the entire folder of the drive
+* Export to multiple formats like .PST, .EML, .VCF, .ICF and much more
 
 Download BDRSuite [**Whitepapers**](https://www.vembu.com/white-papers/) for Free:
 
