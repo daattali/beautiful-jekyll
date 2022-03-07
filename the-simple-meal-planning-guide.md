@@ -8,11 +8,11 @@ subtitle: ''
 
 <br>
 
-### _"If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource." - Crystin from_ [_@delightfullyfeasting_](www.instagram.com/delightfullyfeasting)
+**_"If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource."_** - Crystin from [@delightfullyfeasting](www.instagram.com/delightfullyfeasting)
 
 <br>
 
-### This Simple Meal Planning Guide is for you if:
+### THE SIMPLE MEAL PLANNING GUIDE IS FOR YOU IF:
 
 * you often dread mealtimes and feel overwhelmed with meal planning
 * you often google meal planning type ideas, but don’t know where to start
@@ -21,7 +21,7 @@ subtitle: ''
 
 ![A picture of the meal planning guide sheets.](/uploads/simple-meal-planning-guide.jpg "The Simple Meal Planning Guide Sneak Peek")
 
-### What you'll find in the Simple Meal Planning Guide:
+### WHAT'S IN THE SIMPLE MEAL PLANNING GUIDE:
 
 * Helpful simple meal planning and meal organizing tips
 * 8 helpful meal planning printables
@@ -49,11 +49,13 @@ Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's g
 
 <br>
 
-### Want to start meal planning AND save some money? Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase **the Simple Meal Planning Guide** and let's get started!
+## Want to start meal planning AND save some money? Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase **the Simple Meal Planning Guide** and let's get started!
 
 <br>
 
-#### FREEBIE: Picky plate template to make your lunches much simpler
+#### FREEBIE TEMPLATE: SIMPLIFY YOUR LUNCHES WITH PICKY PLATES
+
+![](/uploads/meal-plan-shm.jpg)
 
 Are you looking for more resources to simplify your life at home with children? You may love being on my newsletter list. You'll get access to the freebie vault, full of helpful guides and tips to help you simplify even more. One of them being my much sought after - picky plate template. It's what we use most days for our lunch so that we're no more wondering what to eat for lunch.
 
@@ -63,7 +65,7 @@ Are you looking for more resources to simplify your life at home with children? 
 
 <br>
 
-#### Helpful meal planning blogs of mine you may enjoy:
+#### MEAL PLANNING BLOGS OF MINE YOU MAY ENJOY:
 
 * [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
 * [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)
