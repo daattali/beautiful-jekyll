@@ -10,9 +10,9 @@
     <h4 class="card-title">{{ project.title }}</h4>
     <p class="card-text">{{ project.description }}</p>
    {% if project.github %}
-              <div class="github-icon" style="width:150%">
+              <div class="github-icon">
                 <div class="icon" data-toggle="tooltip" title="Code Repository">
-                  <a href="{{ project.github }}" target="_blank"><i class="fab fa-github fa-5x"></i></a>
+                  <a href="{{ project.github }}" target="_blank"><i class="fab fa-github fa-pull-right fa-5x"></i></a>
                 </div>
                </div>
      {% endif %}
