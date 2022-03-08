@@ -4,9 +4,7 @@
   {% else %}
   <a href="{{ project.url | relative_url }}"></a>
   {% endif %}
-    {% if project.img %}
-       <img class="card-img-top" src="{{ project.img | relative_url }}" alt="project thumbnail" width="150">  
-    {% endif %}
+    
   
   <div class="card-body">
     <h4 class="card-title">{{ project.title }}</h4>
@@ -19,4 +17,7 @@
                </div>
      {% endif %}
        </div>
+  {% if project.img %}
+       <img class="card-img-bottom" src="{{ project.img | relative_url }}" alt="project thumbnail" style="width:70%">  
+    {% endif %}
     </div>
