@@ -17,12 +17,13 @@ navbar:
   - text: About
     icon: fa-home
     href: about.md
-  - Research: "Research"
-  - Codes: "Codes"
-  - Projects  :
-    - Shape Analysis: "Shape_analysis"
-    - Multiscale atlas estimation: "Multiscale_atlas_estimation"
 #navbar-links
+#  - Research: "Research"
+#  - Codes: "Codes"
+#  - Projects  :
+#    - Shape Analysis: "Shape_analysis"
+#    - Multiscale atlas estimation: "Multiscale_atlas_estimation"
+
 # About: "/"
 # -----------------------------------------------------------------------------
 # Collections
