@@ -4,7 +4,7 @@ title: The Simple Meal Planning Guide
 subtitle: ''
 
 ---
-**ARE YOU OVERHWHELMED WITH MEAL PLANNING AND WANT TO HAVE IT IN PLACE ONCE AND FOR ALL?** 
+**ARE YOU OVERWHELMED WITH MEAL PLANNING AND WANT TO HAVE IT IN PLACE ONCE AND FOR ALL?**
 
 If so, **The Simple Meal Planning Guide** will help you never again to question yourself, “_What's for dinner?_” if you follow through with creating a plan that works for you and your family.
 
@@ -30,7 +30,7 @@ If so, **The Simple Meal Planning Guide** will help you never again to question 
   * Where to find meal ideas
   * Open ended meal ideas such as breakfast bars and picky plates
   * Summer meal ideas
-  * Saving money on groceries 
+  * Saving money on groceries
   * Tips for feeding hangry children faster
   * Meal planning with theme nights
 * **8 helpful meal planning printables**
