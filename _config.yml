@@ -13,7 +13,7 @@ author: Fleur Gaudfernau
 
 # --- List of links in the navigation bar --- #
 
-navbar:
+navbar-links:
   - text: About
     icon: fa-home
     href: about.md
