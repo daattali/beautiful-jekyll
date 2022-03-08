@@ -23,13 +23,23 @@ If so, **The Simple Meal Planning Guide** will help you never again to question 
 
 ### WHAT'S IN THE SIMPLE MEAL PLANNING GUIDE:
 
-* Helpful simple meal planning and meal organizing tips
-* 8 helpful meal planning printables
+* **Helpful simple meal planning and meal organizing tips:**
+  * How to organize your meal planning
+  * Planning strategies and methods for meal planning
+  * Meal planning routine template
+  * Where to find meal ideas
+  * Open ended meal ideas such as breakfast bars and picky plates
+  * Summer meal ideas
+  * Saving money on groceries 
+  * Tips for feeding hangry children faster
+  * Meal planning with theme nights
+* **8 helpful meal planning printables**
+  * Picky plate planner, buddha bowl planner, weekly meal plan - 2 variations, bi-weekly meal plan, monthly meal plan, food inventory masterlist, brainstorming, grocery list, recipe card
 * Steps to help guide you through the process of meal planning from start to finish
 * Bonus meal planning resources and ideas
 * There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works
 * Ideas for weekly meal themes
-* Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
+* Lastly, this Simple Meal Planning Guide is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
 
 <br>
 
