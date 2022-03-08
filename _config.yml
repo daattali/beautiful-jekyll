@@ -13,7 +13,7 @@ author: Fleur Gaudfernau
 
 # --- List of links in the navigation bar --- #
 
-navbar-links:
+navbar:
   - text: About
     icon: fa-home
     href: about.md
@@ -22,7 +22,7 @@ navbar-links:
   - Projects  :
     - Shape Analysis: "Shape_analysis"
     - Multiscale atlas estimation: "Multiscale_atlas_estimation"
-
+#navbar-links
 # About: "/"
 # -----------------------------------------------------------------------------
 # Collections
