@@ -7,15 +7,17 @@
     
   
   <div class="card-body">
-    <h4 class="card-title">{{ project.title }}</h4>
-    <p class="card-text">{{ project.description }}</p>
-   {% if project.github %}
+    {% if project.github %}
               <div class="github-icon">
                 <div class="icon" data-toggle="tooltip" title="Code Repository">
-                  <a href="{{ project.github }}" target="_blank"><i class="fab fa-github fa-pull-right fa-5x"></i></a>
+                  <a href="{{ project.github }}" target="_blank"><i class="fab fa-github fa-pull-right fa-4x"></i></a>
+                <h4 class="card-title">{{ project.title }}</h4>
                 </div>
                </div>
      {% endif %}
+    <h4 class="card-title">{{ project.title }}</h4>
+    <p class="card-text">{{ project.description }}</p>
+   
        </div>
   {% if project.img %}
        <center><img class="card-img-bottom" src="{{ project.img | relative_url }}" alt="project thumbnail" style="width:70%"></center>  
