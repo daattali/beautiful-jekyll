@@ -14,7 +14,7 @@ author: Fleur Gaudfernau
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  - text: About
+  - text: "About"
     icon: fa-home
     href: about.md
 #navbar-links
