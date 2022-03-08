@@ -167,7 +167,7 @@
 
 ## :rocket: Como contribuir
 Deseja contribuir com este repositório?
-- 1 - Faça o fork do projeto
+- 1 - Faça o [fork do projeto](https://github.com/Lorenalgm/hackathon-dicas)
 - 2 - Atualize o readme com novas dicas ou novos hackathons que vão acontecer durante o ano
 - 3 - Envie sua pull request
    
