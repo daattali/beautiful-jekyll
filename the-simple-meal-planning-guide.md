@@ -41,7 +41,7 @@ Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's g
 
 <br>
 
-#### 3 MONEY SAVING TIPS FOR MEAL PLANNING
+### 3 MONEY SAVING TIPS FOR MEAL PLANNING
 
 1. **Meal plan.** The best way to save money on meal planning is to actually make a meal plan! This is one of the reasons why I create a simple meal planning guide - to encourage us all to meal plan.
 2. **Batch cook.** Batch cooking is going to help you save time and money in the kitchen.
@@ -53,7 +53,7 @@ Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's g
 
 <br>
 
-#### FREEBIE TEMPLATE: SIMPLIFY YOUR LUNCHES WITH PICKY PLATES
+### FREEBIE TEMPLATE: SIMPLIFY YOUR LUNCHES WITH PICKY PLATES
 
 ![](/uploads/meal-plan-shm.jpg)
 
