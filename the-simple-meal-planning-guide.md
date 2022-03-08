@@ -4,7 +4,9 @@ title: The Simple Meal Planning Guide
 subtitle: ''
 
 ---
-**Are you overwhelmed with meal planning and want to have it in place once and for all?** If so, **The Simple Meal Planning Guide** will help you never again to question yourself, “_What's for dinner?_” if you follow through with creating a plan that works for you and your family.
+**ARE YOU OVERHWHELMED WITH MEAL PLANNING AND WANT TO HAVE IT IN PLACE ONCE AND FOR ALL?** 
+
+If so, **The Simple Meal Planning Guide** will help you never again to question yourself, “_What's for dinner?_” if you follow through with creating a plan that works for you and your family.
 
 **_"If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource."_** - Crystin from [@delightfullyfeasting](www.instagram.com/delightfullyfeasting)
 
