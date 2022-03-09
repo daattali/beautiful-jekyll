@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col-lg-3">
+        <img width="200" style="margin-bottom: 10px" src="/img{{page.permalink}}.png" data-action="zoom">
+        <div class="row">
+            {% if page.office %}
+            <i class="fa fa-building"></i>&nbsp;&nbsp;{{page.office}} <br>
+            {% endif %}
+            {% if page.eml %}
+            <i class="fa fa-envelope-o"></i> <a href="mailto:{{page.eml}}">&nbsp;{{page.eml}}</a>  <br>
+            {% endif %}
+            {% if page.website %}
+            <i class="fa fa-globe"></i> <a href="{{page.website}}">&nbsp;&nbsp;Website</a> <br>
+            {% endif %}
+            {% if page.cv %}
+            <i class="fa fa-file"></i><a href="{{page.cv}}">&nbsp;&nbsp;CV</a> <br>
+            {% endif %}
+            {% if page.google_scholar %}
+            <i class="fa fa-graduation-cap"></i><a href="{{page.google_scholar}}">&nbsp;Google Scholar</a> <br>
+            {% endif %}
+            {% if page.github %}
+            <i class="fa fa-github"></i><a href="{{page.github}}">&nbsp;&nbsp;GitHub</a> <br>
+            {% endif %}
+            {% if page.linkedin %}
+            <i class="fa fa-linkedin-square"></i><a href="{{page.linkedin}}">&nbsp;&nbsp;LinkedIn</a> <br>
+            {% endif %}
+            {% if page.twitter %}
+            <i class="fa fa-twitter-square"></i><a href="{{page.twitter}}">&nbsp;&nbsp;Twitter</a> <br>
+            {% endif %}
+            {% if page.facebook %}
+            <i class="fa fa-facebook-square"></i><a href="{{page.facebook}}">&nbsp;&nbsp;&nbsp;Facebook</a> <br>
+            {% endif %}
+            {% if page.instagram %}
+            <i class="fa fa-instagram"></i><a href="{{page.instagram}}">&nbsp;&nbsp;Instagram</a> <br>
+            {% endif %}
+        </div>
+    </div>
+    <div class="col-lg-9">
+        <!--<h3>Bio</h3>-->
+        <h3>{{page.pname}}</h3>
+        <p>{{page.desp}}</p>
+    </div>
+</div>
+
+<hr>
+
+<!--<h3>Research Interests</h3>-->
+<!--<p>{{page.research}}</p>-->
+
+{{content}}

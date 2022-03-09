@@ -1,0 +1,97 @@
+---
+layout: default
+title: People
+subtitle: People in Liu Lab
+permalink: /people
+---
+<h1>People</h1>
+<h3>Current lab members</h3>
+
+    <h4>Principle Investigator</h4>
+        <ul>
+            <li><a href="/people/shirley_liu">X Shirley Liu, PhD</a>&nbsp;(Principle Investigator)</li>
+        </ul>
+
+    <h4>Staff</h4>
+        <ul>
+            {% for people in site.people %}
+            {% if people.status == "Staff" %}
+            <li><a href="{{people.permalink}}">{{people.pname}}</a>&nbsp;({{people.position}})</li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+    <h4>Experimental Postdocs</h4>
+        <ul>
+            {% for people in site.people %}
+            {% if people.status == "Experimental Postdoc" %}
+            <li><a href="{{people.permalink}}">{{people.pname}}</a>&nbsp;({{people.position}})</li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+    <h4>Computational Postdocs</h4>
+        <ul>
+            {% for people in site.people %}
+            {% if people.status == "Computational Postdoc" %}
+            <li><a href="{{people.permalink}}">{{people.pname}}</a>&nbsp;({{people.position}})</li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+    <h4>Students</h4>
+        <ul>
+            {% for people in site.people %}
+            {% if people.status == "Student" %}
+            <li><a href="{{people.permalink}}">{{people.pname}}</a>&nbsp;({{people.position}})</li>
+            {% endif %}
+            {% endfor %}
+            <li>Kelsey Luu (Harvard MS student)  </li>
+            <li>Yijia Jiang (Harvard MS student)  </li>
+            <li>Jiaya Chen (Harvard MS student)  </li>
+    </ul>
+    <h4>Visiting scholars</h4>
+        <ul>
+    <li>Wubing Zhang, PhD Candidate, Tongji University, Shanghai, China.</li>
+    </ul>
+
+<h3>Alumni</h3>
+<h4>Postdoc Fellows and Current Status</h4>
+<ul>
+    <li>Xiaoqing Wang, PhD (2019-2021) Investigator and Professor of Cardiology, Shanghai Jiao Tong University, Affiliated Sixth People Hospital, Shanghai, China</li>
+    <li><a href="https://www.linkedin.com/in/boningzhang/">Boning Zhang, PhD</a> (2019-2021) Scientist, Intellia Therapeutics, Cambridge, MA</li>    
+    <li><a href="https://wanglabtongji.github.io/">Chenfei Wang, PhD</a> (2018-2020) Professor, Department of Bioinformatics, Tongji University, Shanghai, China</li>
+    <li><a href="https://www.linkedin.com/in/qin-tang-13416034/">Qin Tang, PhD</a>（2017-2019）Scientist, Foundation Medicine, San Diego, CA</li>
+    <li><a href="https://ccr.cancer.gov/cancer-data-science-laboratory/peng-jiang">Peng Jiang, PhD</a> (2013-2019) NIH Stadtman Investigator, National Cancer Institute, Bethesda, MD</li>
+    <li><a href="https://www.linkedin.com/in/jingyu-amy-peng-aa3b915b">Jingyu Amy Peng, PhD</a> (2016-2019) Senior Scientist at Intellia, Cambridge, MA</li>
+    <li><a href="https://huxihao.github.io/">Xihao (Sherlock) Hu, PhD</a> (2016-2019) Chief Scientist at GV20 Therapeutics LLC, Boston, MA</li>
+    <li><a href="https://weililab.org/%22">Wei Li, PhD</a> (2012-2018) Assistant Professor at Children’s National Medical Center, Washington, DC</li>
+    <li><a href="http://profiles.utsouthwestern.edu/profile/175573/bo-li.html">Bo Li, PhD</a> (2014-2017) Assistant Professor at UT Southwestern, Dallas, TX</li>
+    <li><a href="http://bioxbh.com/sites/">Tengfei Xiao, PhD</a> (2013-2017) Chief Technology Officer at XBH Biotechnology, Shanghai, China</li>
+    <li><a href="https://www.gusmaolab.org/blog">Eduardo G. Gusmao, PhD</a> (2016-2017) Research Fellow, University of Cologne, Dr. Argyris Papantonis Lab, Cologne, Germany</li>
+    <li><a href="http://202.118.1.237/feiteng/index.html">Teng Fei, PhD</a> (2011-2017) Professor, College of Life and Health Sciences, Northeastern University, Shengyang, China</li>
+    <li><a href="http://faculty.virginia.edu/zang/">Chongzhi Zang, PhD</a> (2010-2016) Assistant Professor, Center for Public Health Genomics, University of Virginia School of Medicine, Charlottesville, VA</li>
+    <li><a href="https://johanneskoester.bitbucket.io/">Johannes Koster, PhD</a> (2015-2016) Group Leader, Institute of Human Genetics, University of Duisburg-Essen, Germany</li>
+    <li><a href="https://www.linkedin.com/in/eric-severson-md-phd">Eric Severson, MD</a> (2014-2016) Medical Director at Foundation Medicine</li>
+    <li><a href="http://mcvicker.salk.edu/">Graham McVicker, PhD</a> (2013-2015) Assistant Professor, Salk Institute, La Jolla, CA</li>
+    <li><a href="http://faculty.mdanderson.org/Han_Xu/Default.asp?SNID=0">Han Xu, PhD</a> (2010-2015) Assistant Professor, UT MD Anderson Cancer Center, Houston, TX</li>
+    <li><a href="https://faculty.mdanderson.org/profiles/yiwen_chen.html">Yiwen Chen, PhD</a> (2009-2014) Assistant Professor, UT MD Anderson Cancer Center, Houston, TX</li>
+    <li><a href="https://www.hansenhelab.org/">H. Hansen He, PhD</a> (2008-2013) Associate Professor, at the University of Toronto, Canada</li>
+    <li><a href="http://lab.biomisc.org/">Tao Liu, PhD</a> (2007-2012) Assistant Professor of Oncology, Roswell Park Comprehensive Cancer Center, Buffalo, NY</li>
+    <li><a href="https://www.linkedin.com/in/jeremywubio">Zhenhua Jeremy Wu, PhD</a> (2008-2012) Bioinformatics Scientist, H3 Biomedicine, Cambridge, MA</li>
+    <li><a href="http://english.ibp.cas.cn/faculty/index_18316.html?json=http://www.ibp.cas.cn/sourcedb_ibp_cas/cn/ibpexport/EN_xsszmH_K/202005/t20200519_5583009.json">Shunmin He, PhD</a> (2010-2011) Principal Investigator, Institute of Biophysics, Chinese Academy of Sciences, Beijing, China</li>
+    <li><a href="https://www.linkedin.com/in/hyunjin-gene-shin-6456253">Hyunjin Gene Shin, PhD</a> (2007-2011) Scientist, Millennium Pharmaceuticals: The Takeda Oncology Company, Cambridge, MA</li>
+    <li><a href="http://blogs.worldbank.org/team/utz-pape">Utz Pape, PhD</a> (2009-2010) Statistician, Department of Public Health, Imperial College, London, England</li>
+    <li><a href="http://ibreeding.org/index.html">Xiangfeng Wang, PhD</a> (2008-2010) Professor at the Department of Crop Genomics and Bioinformatics at Chinese Agricultural University, Beijing, China</li>
+    <li><a href="https://zhanglab.tongji.edu.cn/">Yong Zhang, PhD</a> (2006-2009) Professor, Department of Bioinformatics, Tongji University, Shanghai, China</li>
+    <li><a href="http://song.igb.illinois.edu/">Jun Song, PhD</a> (2005-2007) Professor, Institute for Genomic Biology, University of Illinois at Urbana-Champaign, Champaign, IL</li>
+    <li><a href="https://sites.uci.edu/weililab/">Wei Li, PhD</a> (2004-2007) Endowed Chair & Professor of Bioinformatics, Department of Biological Chemistry, School of Medicine, University of California, Irvine</li>
+
+</ul>
+<h4>PhD Students and current status</h4>
+<ul>
+    <li><a href="https://www.linkedin.com/in/chen-hao-chen-1993095a">Chen-hao Chen, PhD</a> (2012-2020) Senior Computational Statistician, WuXi NextCODE, Cambridge, MA</li>
+    <li><a href="http://www.bumc.bu.edu/compbiomed/people/faculty/w-evan-johnson/">Evan Johnson, PhD</a> (2004-2007) Associate Professor, Department of Medicine, Boston University, Boston, MA</li>
+    <li><a href="http://www.coastalradiationoncology.com/radiation-oncology/radiation-oncologists/kaveh-maghsoudi-m-d-phd">Kaveh Maghsoudi, MD / PhD</a> (2005-2008) Radiologist at Coastal Radiation Oncology, Ventura, CA</li>
+</ul>
+
