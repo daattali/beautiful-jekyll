@@ -59,8 +59,8 @@ Previous works have shown that differentiable physics simulators provide gradien
                 <blockquote>
                     <pre>@inproceedings{icra2022pouring,
                         title={Self-supervised Transparent Liquid Segmentation for Robotic Pouring},
-                        author={Gautham Narayan Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
-                        booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+                        author={Gautham Narayan, Narasimhan and Kai, Zhang and Ben, Eisner and Xingyu, Lin and David, Held},
+                        booktitle={International Conference on Robotics and Automation (ICRA)},
                         year={2022}}
                     </pre>
                 </blockquote>
