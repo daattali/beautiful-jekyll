@@ -127,7 +127,7 @@ Below is displayed the estimation of the initial momenta that wrap the template 
 
 ### Atlas estimation on images of artificial characters
  
- <a id="raw-url" href="https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/raw/master/assets/img/characters.zip" download>Click here to download the dataset</a>
+ <a id="raw-url" href="https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/raw/master/assets/img/characters.zip" download>Download the dataset</a>
  
 <table>
 <tr>
