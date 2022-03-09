@@ -23,7 +23,7 @@ If so, **The Simple Meal Planning Guide** will help you never again to question 
 
 ### WHAT'S IN THE SIMPLE MEAL PLANNING GUIDE:
 
-* **Helpful simple meal planning and meal organizing tips:**
+* **_Helpful simple meal planning and meal organizing tips:_**
   * How to organize your meal planning
   * Planning strategies and methods for meal planning
   * Meal planning routine template
@@ -33,8 +33,16 @@ If so, **The Simple Meal Planning Guide** will help you never again to question 
   * Saving money on groceries
   * Tips for feeding hangry children faster
   * Meal planning with theme nights
-* **8 helpful meal planning printables**
-  * Picky plate planner, buddha bowl planner, weekly meal plan - 2 variations, bi-weekly meal plan, monthly meal plan, food inventory masterlist, brainstorming, grocery list, recipe card
+* **_Helpful meal planning printables:_**
+  * Picky plate planner
+  * Buddha bowl planner
+  * Weekly meal plan - 2 variations
+  * Bi-weekly meal plan
+  * Monthly meal plan
+  * Food inventory masterlist
+  * Brainstorming
+  * Grocery list
+  * Recipe card
 * Steps to help guide you through the process of meal planning from start to finish
 * Bonus meal planning resources and ideas
 * There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works
@@ -53,9 +61,9 @@ Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's g
 
 ### 3 MONEY SAVING TIPS FOR MEAL PLANNING
 
-1. **Meal plan.** The best way to save money on meal planning is to actually make a meal plan! This is one of the reasons why I create a simple meal planning guide - to encourage us all to meal plan.
-2. **Batch cook.** Batch cooking is going to help you save time and money in the kitchen.
-3. **Seasonal meal planning.** Learning how to cook around the seasons will help you save money long term. Use produce when it's ready to go in your area and turn more towards root vegetables and frozen during off seasons.
+1. **_Meal plan._** The best way to save money on meal planning is to actually make a meal plan! This is one of the reasons why I create a simple meal planning guide - to encourage us all to meal plan.
+2. **_Batch cook._** Batch cooking is going to help you save time and money in the kitchen.
+3. **_Seasonal meal planning._** Learning how to cook around the seasons will help you save money long term. Use produce when it's ready to go in your area and turn more towards root vegetables and frozen during off seasons.
 
 <br>
 
