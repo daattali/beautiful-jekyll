@@ -1,9 +1,9 @@
 ---
-title: holly_bartel
+title: pingping_jiang
 layout: people
-permalink: /people/holly_bartel
+permalink: /people/pingping_jiang
 status: Staff
-pname: Holly Bartel
+pname: Pingping Jiang
 position: Project Coordinator
 office: 
 eml: 
