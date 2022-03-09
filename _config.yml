@@ -27,7 +27,7 @@ navbar-links:
   Publications: "publication"
 #  Teaching: "teaching"
   Careers: "careers"
-  Contact: "contact"
+#  Contact: "contact"
 #  About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
