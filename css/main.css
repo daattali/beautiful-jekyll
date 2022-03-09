@@ -56,7 +56,9 @@ hr.small {
     padding-top: 130px;
   }
 }
-
+.jumbotron {
+  margin-bottom: 0px;
+}
 .main-explain-area {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 15px inherit;
