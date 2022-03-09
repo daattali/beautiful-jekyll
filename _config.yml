@@ -14,17 +14,17 @@ author: Fleur Gaudfernau
 # --- List of links in the navigation bar --- #
 
 
-navbar-links:
-  About: "/"
-  Research: "Research"
-  Codes: "Codes"
-  Projects  :
-    - Shape Analysis: "Shape_analysis"
-    - Multiscale atlas estimation: "Multiscale_atlas_estimation"
 #navbar-links:
-#  - text: "About"
-#    icon: fa-home
-#    href: about.md
+#  About: "/"
+#  Research: "Research"
+#  Codes: "Codes"
+#  Projects  :
+#    - Shape Analysis: "Shape_analysis"
+#    - Multiscale atlas estimation: "Multiscale_atlas_estimation"
+navbar:
+  right:
+  - text: "About"
+    href: about.md
 
 
 # About: "/"
