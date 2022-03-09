@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Liu Lab
+title: Zeng Lab
 
 # Short description of your site
-description: Xiaole Shirley Liu Lab in DFCI
+description: Zexian Zeng Lab at Peking University
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -21,9 +21,9 @@ description: Xiaole Shirley Liu Lab in DFCI
 # List of links in the navigation bar
 navbar-links:
   Home: "/"
+  People: "people"
   Software: "software"
   News & Events: "news"
-  People: "people"
   Publications: "publication"
   Teaching: "teaching"
   Careers: "careers"
