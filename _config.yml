@@ -15,10 +15,10 @@ author: Fleur Gaudfernau
 
 
 navbar-links:
-  - About: "/"
-  - Research: "Research"
-  - Codes: "Codes"
-  - Projects  :
+  About: "/"
+  Research: "Research"
+  Codes: "Codes"
+  Projects  :
     - Shape Analysis: "Shape_analysis"
     - Multiscale atlas estimation: "Multiscale_atlas_estimation"
 #navbar-links:
