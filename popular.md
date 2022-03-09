@@ -6,8 +6,8 @@ subtitle: ''
 ---
 ## Quick links
 
-* Sign up for the **FREE** [Simple Home Planning Binder Challenge](https://mailchi.mp/9e7cf5d96841/planningchallenge) You'll receive the Free Ultimate Home Planning Binder Checklist on signup
-* [My Simple Home Planning Binder Printable Pack](https://buy.stripe.com/fZeaGO0ua164dbidQY)
+* Sign up for the **FREE** >> [Simple Home Planning Binder Challenge](https://mailchi.mp/9e7cf5d96841/planningchallenge) << You'll receive the Free Ultimate Home Planning Binder Checklist on signup!
+* [My Simple Home Planning Binder Printable Pack](https://buy.stripe.com/fZeaGO0ua164dbidQY) 50+ printables for you to use in your Home Planning Binder
 * [Newest blogs](https://www.simplehomemom.com)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
@@ -28,6 +28,8 @@ subtitle: ''
 * [Simplify Your Laundry Routine with Kelly Briggs](https://podcasts.apple.com/ca/podcast/ep155-simplify-your-laundry-routine-with-kelly-briggs/id1159498258?i=1000505748717)
 * [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
 * [Quiet time](https://podcasts.apple.com/us/podcast/ep-23-quiet-time-and-homeschooling-with-kelly-briggs/id1527253695?i=1000533420517)
+* [How to Encourage and Teach our Children to be Involved in Chores, and Develop Habits and Routines](https://podcasts.apple.com/us/podcast/ep-30-how-to-encourage-and-teach-our-children-to-be/id1580396488?i=1000552448526)
+* [Home Management 101]() (Instagram interview)
 
 ## Homeschooling
 
