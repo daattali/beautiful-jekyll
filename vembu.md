@@ -15,7 +15,7 @@ Have a glimpse of the BDRSuite of Products categorized based on different IT env
 
 Agentless & application-aware backup & replication for VMware VMs with instant recovery at VM, file, and application level.
 
-[**Backup & Replication for**](https://www.vembu.com/vmware-backup/) [**Hyper-V**](https://www.vembu.com/hyper-v-backup/)
+[**Backup & Replication for**](https://www.vembu.com/hyper-v-backup/) [**Hyper-V**](https://www.vembu.com/hyper-v-backup/)
 
 Ensure complete data protection for Hyper-V VMs running on a standalone host, Hyper-V cluster, SMB & CSV.
 
@@ -38,15 +38,15 @@ Ensure complete data protection for Hyper-V VMs running on a standalone host, Hy
 
 Enhance the data protection of your Windows Servers and Workstations by backing up the entire disk or individual volumes.
 
-**Backup for File Servers**
+[**Backup for File Servers**](https://www.vembu.com/vembu-backup-for-file-servers/)
 
 Protect your data across file servers & NAS with enterprise-level functionality.
 
-**Backup for Applications**
+[**Backup for Applications**]()
 
 Protect your application & application data such as Microsoft Exchange, Microsoft SQL, Microsoft SharePoint, Microsoft Outlook & MySQL.
 
-[**Backup for Endpoints**](https://www.vembu.com/file-application-backup/)
+[**Backup for Endpoints**](https://www.vembu.com/vembu-backup-for-endpoints/)
 
 Backup data across Windows & Mac endpoints to ensure the data is protected from an accident delete or system crash.
 
@@ -84,7 +84,7 @@ Simple, secure, and cloud-native backup solution for your AWS EC2 instances. You
 
 Protect emails, contacts, calendars, and drives of Office 365 by directly backing up to your data center.
 
-[**Backup for Google Workspace**](https://www.vembu.com/g-suite-backup-on-premise/)
+[**Backup for Google Workspace**](https://www.vembu.com/google-workspace-backup/)
 
 Ensure protection of your emails, contacts, calendar, and google drives by directly backing up to Vembu Cloud.
 
