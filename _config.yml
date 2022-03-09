@@ -21,7 +21,7 @@ author: Fleur Gaudfernau
 #  Projects  :
 #    - Shape Analysis: "Shape_analysis"
 #    - Multiscale atlas estimation: "Multiscale_atlas_estimation"
-navbar-links:
+navbar:
   right:
   - text: "About"
     href: about.md
