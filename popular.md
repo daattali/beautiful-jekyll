@@ -33,8 +33,10 @@ subtitle: ''
 
 ## Homeschooling
 
-* [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/) + homeschooling blogs
+* [My homeschooling blogs](https://www.simplehomemom.com/tags/#homeschool%20planning)
 * [My Simple Homeschool Planner](https://buy.stripe.com/6oE8yGel06qoc7e4gm)
+* [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/) 
+* [The Homeschooler's Playbook to Simple Homemaking](https://canadianhomeschoolconference.com/aff/42) (online Canadian Homeschool Conference, affiliate link). 35ish mins + resource notes + a freebie
 
 ## Other
 
