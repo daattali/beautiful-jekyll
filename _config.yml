@@ -22,10 +22,10 @@ description: Zexian Zeng Lab at Peking University
 navbar-links:
   Home: "/"
   People: "people"
-  Software: "software"
+#  Software: "software"
   News & Events: "news"
   Publications: "publication"
-  Teaching: "teaching"
+#  Teaching: "teaching"
   Careers: "careers"
   Contact: "contact"
 #  About Me: "aboutme"
