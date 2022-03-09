@@ -5,7 +5,7 @@
 
 ## [Clique aqui](https://github.com/Lorenalgm/hackathon-dicas/blob/master/hackatons.md) para saber dos próximos hackas
 
-## :checkered_flag: Índice
+## 🏁 Índice
 
 - [Fique por dentro dos próximos hackathons](#fique-por-dentro-dos-próximos-hackathons)
 - [Ícones e imagens](#camera-ícones-e-imagens)
@@ -23,7 +23,7 @@
 - [Livros](#books-livros)
 - [Como contribuir](#rocket-como-contribuir)
 
-## :camera: Ícones e imagens
+## 📷 Ícones e imagens
  
  - [Unsplash](https://unsplash.com/)
  - [Undraw](https://undraw.co/)
@@ -42,7 +42,7 @@
  - [Lottieflow](https://www.lottieflow.com/)
  - [Ape Tools - Gerador de icons e splashscreens](https://apetools.webprofusion.com/#/)
 
-## :abc: Fontes
+## 🔤 Fontes
  - [Font Squirrel](https://www.fontsquirrel.com/)
  - [Google fontes](https://fonts.google.com/)
  - [Beautiful Web Type](https://beautifulwebtype.com) 
@@ -54,14 +54,14 @@
  - [Canva Font Combinations (Type Genius)](https://www.canva.com/font-combinations/) 
  - [Font Meme](https://fontmeme.com/)
 
-## :art: Cores
+## 🎨 Cores
  - [Web Gradients](https://webgradients.com/)
  - [Pigment](https://pigment.shapefactory.co/)
  - [Color Hunt](https://colorhunt.co/)
  - [Flat ui colors](https://flatuicolors.com/)
  - [Coolors](https://coolors.co/)
 
-## :file_folder: Gerenciamento de atividades e colaboração
+## 📁 Gerenciamento de atividades e colaboração
  - [Trello](https://trello.com/pt-BR)
  - [Asana](https://asana.com/pt)
  - [Miro](https://miro.com/)
@@ -77,7 +77,7 @@
  - [Jira](https://www.atlassian.com/software/jira)
 
 
-## :iphone: Design e prototipação
+## 📱 Design e prototipação
 - [Figma](https://www.figma.com/)
 - [Adobe XD](https://www.adobe.com/br/products/xd.html) 
 - [Marvel App](https://marvelapp.com/)
@@ -97,7 +97,7 @@
 - [QuantUX](https://www.quant-ux.com/#/)
 - [Storybook](https://storybook.js.org/)
 
-## :computer: APIS
+## 💻 APIS
 - [Public APIs](https://github.com/public-apis/public-apis)
 - [Api List](https://apilist.fun/)
 - [Rapidapi](https://rapidapi.com/)
@@ -105,7 +105,7 @@
 - [mockAPI](https://mockapi.io/)
 - [JSON Server](https://github.com/typicode/json-server)
 
-## :bulb: Modelagem de negócio
+## 💡 Modelagem de negócio
  - [Sebrae Canvas](https://sebraecanvas.com/)
  - [Lean Canvas](https://goo.gl/3kL7si)
  - [Value Proposition Canvas](https://goo.gl/uGxHoX)
@@ -116,30 +116,30 @@
  - [ProductHunt](https://www.producthunt.com/)
 
 
-## :movie_camera: Gravar tela 
+## 🎥 Gravar tela 
  - [Loom](https://www.loom.com/)
  - [Rawshorts](https://www.rawshorts.com/)
  - [Obs](https://obsproject.com/pt-br/download)
  - [Peek](https://github.com/phw/peek)
  - [Vidyard](https://www.vidyard.com/)
  
-## :clapper: Edicao de video
+## 🎬 Edicao de video
  - [Adobe After Effects](https://www.adobe.com/br/products/aftereffects.html)
  - [Adobe Premiere](www.adobe.com/br/products/premiere.html)
  - [Sony Vegas Pro](https://www.vegascreativesoftware.com/br/vegas-pro/)
  - [DaVinci resolve](https://www.blackmagicdesign.com/br/products/davinciresolve/)
 
-## :pencil2: Animação
+## ✏️ Animação
  - [Powtoon](https://www.powtoon.com/)
 
 
-## :bar_chart: Dashboards
+## 📊 Dashboards
  - [Google Data Studio](https://datastudio.google.com/u/0/)
  - [Metabase](https://www.metabase.com/)
  - [Microsoft Power BI](https://powerbi.microsoft.com/pt-br/desktop/)
  
  
-## :woman_technologist: Devs
+## 👩‍💻 Devs
  - [4Devs - Ferramentas Online](https://www.4devs.com.br/)
  - [Regex101 - Depurador de expressão regular](https://regex101.com/)
  - [Beekeeper Studio](https://www.beekeeperstudio.io/)
@@ -161,11 +161,11 @@
  - [Vercel](https://vercel.com/)
  - [Netlify](https://www.netlify.com/)
 
-## :books: Livros
+## 📚 Livros
  - O Pitch (quase) Perfeito
  - Hackathons Unboxed: A Field Guide to Ideating, Leading and Winning
 
-## :rocket: Como contribuir
+## 🚀 Como contribuir
 Deseja contribuir com este repositório?
 - 1 - Faça o [fork do projeto](https://github.com/Lorenalgm/hackathon-dicas)
 - 2 - Atualize o readme com novas dicas ou novos hackathons que vão acontecer durante o ano
