@@ -50,6 +50,20 @@ round-avatar: true
 # then specify the following parameter
 #title-img: /path/to/image
 
+# Analytics
+analytics:
+  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+
+
+# Site Author
+author:
+  name             : "Fleur Gaudfernau"
+  #avatar           : "profile.jpg"
+  #logo             : "logo.png"
+  bio              : "PhD student in Applied Mathematics"
+  location         : "Paris, France"
 
 # --- Footer social media links --- #
 
