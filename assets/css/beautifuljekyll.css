@@ -196,9 +196,8 @@ img {
   height: 2.5rem;
 }
 
-.navbar-custom .navbar-nav .nav-item {
+.navbar-custom .navbar-nav .nav-item { 
   text-transform: uppercase;
-  font-size: 1.25rem;
   letter-spacing: 0.0625rem;
 }
 
@@ -214,7 +213,6 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
-  font-size: 1.1rem; #fg
   color: {{ site.navbar-text-col | default: "#404040" }};
 }
 
