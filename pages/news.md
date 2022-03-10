@@ -6,10 +6,8 @@ permalink: /news
 
 # News and Events
 
-## 22
+## 2022
 
 ## Mar
-- Zexian gave a talk in the Peking University First Hospital. 
-
-## Feb
-- Zenglab welcomes new project coodinator PingPing Jiang.
+- Zexian gave a talk in Peking University First Hospital. 
+- Zenglab welcomes new project coodinator Pingping Jiang.
