@@ -208,11 +208,13 @@ img {
   line-height: 1.25rem;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem;
+  font-size: 2rem; #fg
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
+  font-size: 1.5rem; #fg
   color: {{ site.navbar-text-col | default: "#404040" }};
 }
 
