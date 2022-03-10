@@ -214,7 +214,7 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
-  font-size: 1.5rem; #fg
+  font-size: 1.1rem; #fg
   color: {{ site.navbar-text-col | default: "#404040" }};
 }
 
