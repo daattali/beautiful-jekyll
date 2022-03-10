@@ -16,7 +16,7 @@ author: Fleur Gaudfernau
 
 navbar-links:
   🏠 Home: "/"
-  Research: "Research"
+  🖊️ Research: "Research"
   Codes: "Codes"
   🗂️ Projects  :
     - Shape Analysis: "Shape_analysis"
