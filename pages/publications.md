@@ -14,7 +14,7 @@ You can visit [Google Scholar](https://scholar.google.com/citations?user=McA-3Zg
 - Zhou L#, **Zeng Z**#, Egloff AM, Guo F, Campbell KM\*, Du P, Fu J, Zolkind P, Ma X, Zhang Z, Zhang Y, Wang X, Gu S, Riley R, Nakahori Y, Keegan J, Haddad R\*, Schoenfeld JD, Griffith O, Manguso RT, Lederer JA, Liu XS, Uppaluri R\*. 2022. Checkpoint blockade-induced CD+ Tcell differentiation in head and neck cancer responders. J Immunother Cancer. Epub ahead of print.<br>
 [[Abstract]](https://www.ncbi.nlm.nih.gov/pubmed/35058328)
 [[Full Paper]](/resources/publications/Zhou_JITC_2022.pdf)
-- **Zeng Z**#\*, Wong C#, Yang L#, Ouardaoui N, Li D, Zhang W, Gu SS, Zhang Y, Liu Y, Wang Z, Fu J, Zhou L, Zhang B, Kim S, Yates KB, Brown M, Freeman GJ, Uppaluri R, Manguso, Liu XS. 2021. TISMO: syngeneic mouse tumor database to model tumor immunity and immunotherapy response. Nucleic acids research. 2022 Jan 7;50(D1):D1391-7.<br>
+- **Zeng Z**#\*, Wong C#, Yang L#, Ouardaoui N, Li D, Zhang W, Gu SS, Zhang Y, Liu Y, Wang Z, Fu J, Zhou L, Zhang B, Kim S, Yates KB, Brown M, Freeman GJ, Uppaluri R, Manguso, Liu XS\*. 2021. TISMO: syngeneic mouse tumor database to model tumor immunity and immunotherapy response. Nucleic acids research. 2022 Jan 7;50(D1):D1391-7.<br>
 [[Abstract]](https://www.ncbi.nlm.nih.gov/pubmed/34534350)
 [[Full Paper]](/resources/publications/NucAcidRes_1_2021.pdf)
 
