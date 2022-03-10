@@ -48,3 +48,60 @@ Now you want to find the "_ServiceExternalIP"_ records, uncomment them and set t
       antrea-controller.conf: |
         featureGates:
           ServiceExternalIP: true
+
+Next prepare a manifest to deploy an _ExternalIPPool_, I named mine _antrea-externalIPpool.yaml_. This is an Antrea CRD that the loadbalancer service can pick from to assign. In my example I only allowed 3 IP addresses from my node network.  
+
+Note that I manually applied the _antrea-lb=true_ to all my worker nodes beforehand which is what will make them participate.
+
+    apiVersion: crd.antrea.io/v1alpha2
+    kind: ExternalIPPool
+    metadata:
+      name: service-external-ip-pool
+    spec:
+      ipRanges:
+      - start: 10.10.222.240
+        end: 10.10.222.242
+      - cidr: 10.10.222.0/24
+      nodeSelector:
+        matchLabels:
+          antrea-lb: true
+
+Now apply the manifest:
+
+    k apply -f antrea-externalIPpool.yaml
+
+### Create load balancer service types
+
+We can now start with load balancer service types. In order for them to work with Antrea however, you need to apply the _service.antrea.io/external-ip-pool: "service-external-ip-pool"_ annotation to them.  
+
+Let's first create a small deployment with an image that displays information about the pod.
+
+    k create deployment whoami --image=containous/whoami --replicas=3
+
+![](/img/antrealb3.png)
+
+Then expose the deployment with a service type load balancer.
+
+    kubectl expose deployment whoami --port=8080 --target-port=80 --name=whoami-lb --type=LoadBalancer
+
+You will find that it is still in _Pending_ state because we haven't set the annotation yet.
+
+    NAME         TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
+    whoami-lb    LoadBalancer   10.96.43.248   <pending>     8080:31882/TCP   6m16s
+
+Let's do that by editing the service:
+
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: whoami-lb
+      annotations:
+        service.antrea.io/external-ip-pool: "whoami-lb"
+     ...
+
+The service should now get an IP address like so:
+
+    NAME        TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)          AGE
+    whoami-lb   LoadBalancer   10.97.177.72   10.10.222.240   8080:30402/TCP   23m
+
+Now you can try to curl the external IP address several times to witness the load balancing between the pods.
