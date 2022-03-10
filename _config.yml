@@ -24,15 +24,16 @@ author: Araguaci
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Personality: "personality"
-  SURF-SUP:
+  about me: "aboutme"
+  personality: "personality"
+  website: "https://araguaci.github.io/tags/#website"
+  projects:
     - Floripa Surf Club: "http://www.floripasurfclub.com.br/"
     - CENTRAL DE AVENTURAS: "http://centraldeaventuras.com.br/"
     - Projeto SUP SOCIAL: "https://supsocial.vercel.app/"
     - FLORIPA SUP CLUB - Stand Up Paddle SURFCLUB: "http://www.floripasupclub.com.br/"    
     - F.E.C.E.E.S.S.☆A.C.E.S. SC: "http://feceess.escolasdesurf.org.br/"
-  Website: "http://www.artesdosul.com/"
+  artesdosul: "http://www.artesdosul.com/"
 
 # --- Logo --- #
 
@@ -103,7 +104,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "artesdosul,araguaci,surf,surfschool,surftrip,floripa"
+keywords: "artesdosul,araguaci,surf,surfschool,surftrip,floripa,patriamadabrasil"
 
 # --- Colours / background image --- #
 
