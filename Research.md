@@ -54,7 +54,3 @@ display_categories: [work]
     </dl>
  
 <hr style="border:1px solid #2b6777"/>
-
-### Code
-
-Upcoming.
