@@ -53,4 +53,3 @@ display_categories: [work]
 </a> </dd>
     </dl>
  
-<hr style="border:1px solid #2b6777"/>
