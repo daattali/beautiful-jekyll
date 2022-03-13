@@ -97,7 +97,7 @@ You will find that it is still in _Pending_ state because we haven't set the ann
     NAME         TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
     whoami-lb    LoadBalancer   10.96.43.248   <pending>     8080:31882/TCP   6m16s
 
-Let's do that by editing the service:
+Let's do that by editing the service with "_kubectl edit svc whoami-lb_" and add the _service.antrea.io/external-ip-pool: "whoami-lb"_ annotation in the metadata section.
 
     apiVersion: v1
     kind: Service
