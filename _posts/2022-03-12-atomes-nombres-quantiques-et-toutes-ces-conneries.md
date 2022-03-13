@@ -12,7 +12,7 @@ tags: [someone was wrong, sciences, physique, chimie, tableau périodique]
 > **PYM :** Mmmmh oui aucun prob… \
 > **Z. :** C'était un bail à base de quatre nombres quantiques et de sous-couches électroniques de chépaquoi. »
 
-![](https://acegif.com/wp-content/gif/terrified-67.gif)
+![](https://acegif.com/wp-content/gif/terrified-67.gif){: width="100%" }
 
 Nan mais faut prévenir avant de balancer de la physique quantique au nez des gens comme ça ! Mais bon vous allez voie ça passe très bien quand on y va pas-à-pas.
 
@@ -26,7 +26,7 @@ En vrai c'est juste une histoire de rangement… Z.… Z. ? <trouve Z. recroquev
 
 C'est juste une histoire de rangement, disais-je donc 🙄 : on cherche à voir comment ranger les électrons d'un atome… Un "truc de physicien psychorigide", me dit-elle ? En fait non… même pas des masses un truc de physicien. C'est plutôt un problème de chimiste.
 
-En gros fin XIX^ème^ début XX^éme^ on sait quoi sur les atomes ? Bon déjà on est vaguement d'accord sur le fait qu'ils existes (oui on en est encore là…) et au XX^ème^ on sait même comment c'est fait (merci monsieur Rutherford[^sciencerugby]) :
+En gros fin XIXème début XXéme on sait quoi sur les atomes ? Bon déjà on est vaguement d'accord sur le fait qu'ils existes (oui on en est encore là…) et au XXème on sait même comment c'est fait (merci monsieur Rutherford[^sciencerugby]) :
 
 - un noyau positif (maintenant on sait qu'il est constitué de neutron neutre et de proton positifs)
 - plein d'électrons autour
@@ -55,7 +55,7 @@ Ils ont essayé.\
 Ils ont arrêté de rire.
 
 [^bordelique]: Il est possible que Z. soit notoirement bordélique. Mais elle a un alibi parfait « Nan mais si on peut pas être bordélique quand on est ado, sérieux ?! ». Inattaquable.
-[^sciencerugby]: On imagine toujours les scientifique du XIX^ème^, début XX^ème^ comme des mec tout maigres et très sérieux qui passe leur vie dans des bibliothèques ou à faire des expériences bizarres. Rutherford lui c'était un pilier de rugby qui était _aussi_ un super scientifique. Donc faut imaginer un ~~british~~ Néo-Zélandais bien stock avec un cou de taureau mais qui vous défonce en arithmétique d'une seule main… un mec bien. D'ailleurs c'est lui qui a dit « _La science est soit de la physique, soit de la philatélie._ ».
+[^sciencerugby]: On imagine toujours les scientifique du XIXème, début XXème comme des mec tout maigres et très sérieux qui passe leur vie dans des bibliothèques ou à faire des expériences bizarres. Rutherford lui c'était un pilier de rugby qui était _aussi_ un super scientifique. Donc faut imaginer un ~~british~~ Néo-Zélandais bien stock avec un cou de taureau mais qui vous défonce en arithmétique d'une seule main… un mec bien. D'ailleurs c'est lui qui a dit « _La science est soit de la physique, soit de la philatélie._ ».
 
 C'est quoi l'idée ? Et c'est quoi de problème ?
 
@@ -134,14 +134,14 @@ Donc en terme de théorie pour expliquer et prévoir c'est zéro
 
 ## Essai 3 : On va en remettre une couche
 
-> « Bon bah on a qu'à dire qu'il y a des "p'tits niveaux" à l'intérieur des gros niveau…\
-> - Mais bordel ça résoud aucun des pb !? mec ! Tu t'en rend compte ou bien ?? et en plus c'est plus compliqué et ça explique rien de plus !\
-> - 👉👈 bah oui mais ça décrit mieux les petite sous-raie qu'on a vraiment observé en plus des grosses raies…\
-> - MAIS J'EN AI MÊME PAS PARLÉ !\
-> - 👉👈 Bahouimécémoinpire\
-> - RIEN DU TOUT ! ET D'OÙ TU SORS TON IDÉE DE SOUS-NIVEAU LÀ ?\
-> - 😮… Mais yen a en vrai des planètes comme ça dans le système solaire ?\
-> - 👉👈 Euh non monsieur… »
+> « Bon bah on a qu'à dire qu'il y a des "p'tits niveaux" à l'intérieur des gros niveau… \
+> -- Mais bordel ça résoud aucun des pb !? mec ! Tu t'en rend compte ou bien ?? et en plus c'est plus compliqué et ça explique rien de plus ! \
+> -- 👉👈 bah oui mais ça décrit mieux les petite sous-raie qu'on a vraiment observé en plus des grosses raies…\
+> -- MAIS J'EN AI MÊME PAS PARLÉ !\
+> -- 👉👈 Bahouimécémoinpire\
+> -- RIEN DU TOUT ! ET D'OÙ TU SORS TON IDÉE DE SOUS-NIVEAU LÀ ?\
+> -- 😮… Mais yen a en vrai des planètes comme ça dans le système solaire ?\
+> -- 👉👈 Euh non monsieur… »
 
 ![](https://c.tenor.com/lDo3IeNB5zsAAAAC/facepalm-dismay.gif)
 
@@ -267,6 +267,6 @@ Alors comment on fait pour représenter un **merdier** pareil 😳 ?
 
 On va pas se mentir c'est pas facile de représenter un machin gazeux intangible... le mieux qu'on puisse faire c'est représenter la forme de la zone où il est **TRÈS PROBABLE** que l'électron se trouve (et comme il se déplace très vite là dedans on sait qu'en fait ça va être là qu'il se trouve "en gros").
 
-![Et voilà à quoi ressemble un électron pour $n=1$](/assets/img/oa-1s.png)
+![](/a-pym-s-life/assets/img/oa-1s.png)
 
-👆 
+👆 Et voilà à quoi ressemble un électron pour $n=1$
