@@ -57,7 +57,7 @@ You won't need to do this if you deploy everything correctly from the get go but
 
     kubectl delete pod -l app=antrea -n kube-system
 
-Next prepare a manifest to deploy an _ExternalIPPool_, I named mine _antrea-externalIPpool.yaml_. This is an Antrea CRD that the loadbalancer service can pick from to assign. In my example I only allowed 3 IP addresses from my node network.  
+Next prepare a manifest to deploy an _ExternalIPPool_, I named mine _antrea-externalIPpool.yaml_. This is an Antrea CRD that the loadbalancer service can pick from to assign. In my example I only allowed 3 IP addresses from my node network. _Don't forget the " " if your label isn't a string (mine is a boolean), otherwise the Antrea Controller will log errors and it won't work._
 
 Note that I manually applied the _antrea-lb=true_ to all my worker nodes beforehand which is what will make them participate.
 
@@ -80,9 +80,9 @@ Now apply the manifest:
 
 ### Create load balancer service types
 
-We can now start with load balancer service types. In order for them to work with Antrea however, you need to apply the _service.antrea.io/external-ip-pool: "service-external-ip-pool"_ annotation to them.  
+We can now start with load balancer service types. In order for them to work with Antrea however, you need to apply the _service.antrea.io/external-ip-pool: "service-external-ip-pool"_ annotation to them.
 
-Let's first create a small deployment with an image that displays information about the pod. 
+Let's first create a small deployment with an image that displays information about the pod.
 
     k create deployment whoami --image=containous/whoami --replicas=3
 
@@ -118,7 +118,7 @@ Now you can try to curl the external IP address several times to witness the loa
 
 ### Wrap up
 
-I very much enjoyed playing with the load balancer capability of Antrea as I think it is great to have an alternative to external load balancers, especially in lab environments or for learning purpose if you want to get up and running quickly. 
+I very much enjoyed playing with the load balancer capability of Antrea as I think it is great to have an alternative to external load balancers, especially in lab environments or for learning purpose if you want to get up and running quickly.
 
 I should point out that we did a bunch of stuff imperatively and edited configs on the fly which is not best practice in an actual environment. To do correctly you want to get all your manifests in order prior to deploying them.
 
