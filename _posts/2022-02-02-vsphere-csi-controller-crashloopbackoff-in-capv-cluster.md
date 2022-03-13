@@ -14,7 +14,7 @@ As a bit of background, I recently wrote about the [Cluster API vSphere provider
 
 Anyways, in the [blog ](https://www.vxav.fr/2021-11-21-understanding-kubernetes-cluster-api-provider-vsphere-capv/)about CAPV, I show you how to deploy a kubernetes cluster to vSphere which works quite well. In short, what I didn’t show is that one of the [vSphere CSI ](https://github.com/kubernetes-sigs/vsphere-csi-driver)controller pod’s containers wouldn’t reach the ready state because it didn’t trust the vCenter certificate thumbprint, even though it is in the cluster definition manifest (that you originally set in _clusterctl.yaml_).
 
-In order to fix this issue, I was helped by a [colleague](https://github.com/ericgraf) who is highly knowledgeable in Kubernetes and it was a great learning experience so I thought I’d go through the steps here as I enjoyed the process.
+In order to fix this issue, I was helped by a colleague who is highly knowledgeable in Kubernetes and it was a great learning experience so I thought I’d go through the steps here as I enjoyed the process.
 
 **First, here is the pod not initializing, as you can see, 1 container out of 5 is not running.**
 
