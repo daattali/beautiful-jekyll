@@ -3,7 +3,7 @@ title: Atomes, nombres quantiques et toutes ces conneries
 subtitle: "ou comment se la péter en soirée en disant « Moi j'ai compris la physique quantique ! » (et avoir tord… mais c'est pas grave… il y a les cocktails pour oublier ça)"
 author: PYM
 cover-img:
-   - /assets/img/climate.jpg : "Photo by Markus Spiske on Unsplash"
+   - /assets/img/Hydrogen_Density_Plots.png : "Wave functions of the electron in a hydrogen atom at different energy levels."
 thumbnail-img: /assets/img/climate-thumb.jpg
 layout: post
 tags: [someone was wrong, sciences, physique, chimie, tableau périodique]
@@ -22,7 +22,7 @@ Nan mais faut prévenir avant de balancer de la physique quantique au nez des ge
 
 Alors de quoi on parle là exactement ? Pourquoi on veut faire mumuse avec des "niveaux d'énergie", des "couches" et autres absurdités machins chelous merveilles de la physique ?
 
-En vrai c'est juste une histoire de rangement… Z.… Z. ? <trouve Z. recroquevillée et à moitié en PLS par terre> [^bordelique]
+En vrai c'est juste une histoire de rangement… Z.… Z. ? \<trouve Z. recroquevillée[^bordelique] et à moitié en PLS par terre> 
 
 C'est juste une histoire de rangement, disais-je donc 🙄 : on cherche à voir comment ranger les électrons d'un atome… Un "truc de physicien psychorigide", me dit-elle ? En fait non… même pas des masses un truc de physicien. C'est plutôt un problème de chimiste.
 
@@ -46,7 +46,7 @@ Bref les chimistes avaient plein d'infos sur les éléments mais vraiment obtenu
 
 Ouais sauf que… ben il a changé 40 fois le machin vu selon comment on faisait et refaisait les expériences et à la moindre découverte d'un élément c'était la guerre pour le faire rentrer dedans. Mendeleïev était célèbre pour ça : son tableau changeait un peu au gré du vent… Donc les physiciens se foutaient un peu de leur gueule aux chimistes
 
-![](https://acegif.com/wp-content/uploads/2021/4fh5wi/troll-face-42.gif){: width="100%" }
+![](https://acegif.com/wp-content/uploads/2021/4fh5wi/troll-face-42.gif){: width="50%" }
 
 Et les chimistes leur répondaient « **Au lieu de faire les cons essayez de trouver pourquoi les éléments, qui sont tous des atomes, réagissent comme ci ou comme ça !** ». Genre histoire qu'on puisse prévoir et comprendre ce qu'on fait, quoi.
 
@@ -82,7 +82,7 @@ Au début les physiciens étaient assez confiants : ils avaient percé le secret
 Alors attention maintenant commence le défilé des fails…
 
 ## Essai 1 : Planétologie de maternelle
-> « _Bah on met les électrons qui tourne autour un peu en vrac chacun avec une orbite qui lui est propre._ »
+« _Bah on met les électrons qui tourne autour un peu en vrac chacun avec une orbite qui lui est propre._ »
 
 ![](https://c.tenor.com/K4JNKWRlCkAAAAAC/short-dunk-fail.gif){: width="100%" }
 
@@ -126,8 +126,7 @@ Sauf que… ben statistiquement ça devraient arriver que des fois un électron 
 
 Mais nan. C'est comme si nos électrons se téléportaient !
 
-En plus on a ZÉRO explication pour l'existence de ces couches ! On dirait du boulot de chimiste : quand tu voit un truc, tu le mesure, tu lui donne un nom ("couche électronique" ici) et tu dis que tu as tout compris et tout expliqué.
-#chimisteBashing
+En plus on a ZÉRO explication pour l'existence de ces couches ! On dirait du boulot de chimiste : quand tu voit un truc, tu le mesure, tu lui donne un nom ("couche électronique" ici) et tu dis que tu as tout compris et tout expliqué. #chimisteBashing
 
 Donc en terme de théorie pour expliquer et prévoir c'est zéro
 
@@ -135,14 +134,14 @@ Donc en terme de théorie pour expliquer et prévoir c'est zéro
 
 ## Essai 3 : On va en remettre une couche
 
-> « Bon bah on a qu'à dire qu'il y a des "p'tits niveaux" à l'intérieur des gros niveau… \
-> -- Mais bordel ça résoud aucun des pb !? mec ! Tu t'en rend compte ou bien ?? et en plus c'est plus compliqué et ça explique rien de plus ! \
-> -- 👉👈 bah oui mais ça décrit mieux les petite sous-raie qu'on a vraiment observé en plus des grosses raies…\
-> -- MAIS J'EN AI MÊME PAS PARLÉ !\
-> -- 👉👈 Bahouimécémoinpire\
-> -- RIEN DU TOUT ! ET D'OÙ TU SORS TON IDÉE DE SOUS-NIVEAU LÀ ?\
-> -- 😮… Mais yen a en vrai des planètes comme ça dans le système solaire ?\
-> -- 👉👈 Euh non monsieur… »
+« _Bon bah on a qu'à dire qu'il y a des "p'tits niveaux" à l'intérieur des gros niveau… \
+-- Mais bordel ça résoud aucun des pb !? mec ! Tu t'en rend compte ou bien ?? et en plus c'est plus compliqué et ça explique rien de plus ! \
+-- 👉👈 bah oui mais ça décrit mieux les petite sous-raie qu'on a vraiment observé en plus des grosses raies…\
+-- MAIS J'EN AI MÊME PAS PARLÉ !\
+-- 👉👈 Bahouimécémoinpire\
+-- RIEN DU TOUT ! ET D'OÙ TU SORS TON IDÉE DE SOUS-NIVEAU LÀ ?\
+-- 😮… Mais yen a en vrai des planètes comme ça dans le système solaire ?\
+-- 👉👈 Euh non monsieur…_ »
 
 ![](https://c.tenor.com/lDo3IeNB5zsAAAAC/facepalm-dismay.gif){: width="100%" }
 
@@ -320,7 +319,7 @@ Bah déjà ton électron est plus loin du noyau (c'est le principe des couches).
 Et donc c'est une plus grosse bouboule #épicétou \
 … \
 … \
-… \
+…
 
 ![](https://c.tenor.com/2xPdaVOIAikAAAAC/umm-well.gif){: width="100%" }
 
@@ -465,15 +464,16 @@ Après je pourrait continuer à te faire le niveau 3 puis 4... mais ça servirai
 
 Et si tu te demande à quoi ça ressemble les orbitales d'après... attention bienvenue dans le monde des gros ballons de forme zarbi. Je vous présente donc 3px, 3py et 3pz :
 
-![3px](/a-pym-s-life/assets/img/3px.jpg){: width="33%" } ![3py](/a-pym-s-life/assets/img/3py.jpg){: width="33%" } ![3pz](/a-pym-s-life/assets/img/3pz.jpg){: width="33%" }
+![3px](/a-pym-s-life/assets/img/3px.jpg){: width="30%" } ![3py](/a-pym-s-life/assets/img/3py.jpg){: width="30%" } ![3pz](/a-pym-s-life/assets/img/3pz.jpg){: width="30%" }
 
 Et maintenant 3dz², 3dxz, 3dyz, 3dxy, 3dx²-y² 👈 oui même les nom deviennent bizarres…
 
-![3dz²](/a-pym-s-life/assets/img/3dz2.jpg){: width="20%" }
-![3dxz](/a-pym-s-life/assets/img/3dxz.jpg){: width="20%" }
-![3dyz](/a-pym-s-life/assets/img/3dyz.jpg){: width="20%" }
-![3dxy](/a-pym-s-life/assets/img/3dxy.jpg){: width="20%" }
-![3dx²-y²](/a-pym-s-life/assets/img/3dx2-y2.jpg){: width="20%" }
+![3dz²](/a-pym-s-life/assets/img/3dz2.jpg){: width="18%" }
+![3dxz](/a-pym-s-life/assets/img/3dxz.jpg){: width="18%" }
+![3dyz](/a-pym-s-life/assets/img/3dyz.jpg){: width="18%" }
+![3dxy](/a-pym-s-life/assets/img/3dxy.jpg){: width="18%" }
+![3dx²-y²](/a-pym-s-life/assets/img/3dx2-y2.jpg){: width="18%" }
+
 Vous vous demandez peut-être pourquoi depuis le début on a des couleurs rouge et bleue sur les orbitales... en fait tant qu'on a qu'un seul atome ça change pas grand chose... mais quand tu forme des molécule avec 2 atomes, là ça change tout : le rouge ne se combine qu'avec le rouge et le bleu qu'avec le bleu alors que bleu + rouge = du vide (c'est à dire pas de liaison du tout). Bref on s'en fout un peu ici…
 
 Vous manquez encore de notations à la con ? Bon les chimistes vont encore ajouter des notation à la con... nos couche 1, 2, 3, etc... ils leur avaient aussi déjà donné des noms avant…
