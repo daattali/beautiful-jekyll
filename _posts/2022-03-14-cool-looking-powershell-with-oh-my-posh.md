@@ -18,7 +18,7 @@ I work mostly in Windows Terminal and so far I'm using [Starship](https://starsh
 
     <!-- I hate markdown -->
 
-    Install-Module oh-my-posh -Scope CurrentUser
+        Install-Module oh-my-posh -Scope CurrentUser
 
 4. **Import the module** in your PowerShell profile ($PROFILE)
 
