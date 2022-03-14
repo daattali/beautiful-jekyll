@@ -14,11 +14,11 @@ author: Sarlaac
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "/pages/aboutme"
-  Resources:
+  
+  Pages:
+    - About Me: "/pages/aboutme"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  # Author's home: "https://deanattali.com"
+  Hugo: "https://hugo.sarlaac.ca"
 
 # --- Logo --- #
 
