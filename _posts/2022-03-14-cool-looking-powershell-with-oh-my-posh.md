@@ -12,7 +12,7 @@ I spent a lot less time in PowerCLI these days which means my profile hasn't cha
 
 I work mostly in Windows Terminal and so far I'm using [Starship](https://starship.rs/) to customize WSL after being recommended by a colleague so I thought I'd try something else to refresh my PowerShell profile. I went for[ Oh My Posh](https://ohmyposh.dev/), a pretty similar shell customization tool and very easy to set up.
 
-1. **Install** [**Windows Terminal **](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701#activetab=pivot:overviewtab)if you don't already have it. (It doesn't have to be Windows Terminal).
+1. **Install** [**Windows Terminal**](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701#activetab=pivot:overviewtab) if you don't already have it. (It doesn't have to be Windows Terminal).
 2. **Install a** [**Nerd font**](https://www.nerdfonts.com/) to get icons support and set Windows Terminal to use it.
 3. **Install** [**Oh My Posh**](https://ohmyposh.dev/docs/windows) in PowerShell.
 
