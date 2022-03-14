@@ -16,19 +16,19 @@ I work mostly in Windows Terminal and so far I'm using [Starship](https://starsh
 2. **Install a** [**Nerd font**](https://www.nerdfonts.com/) to get icons support and set Windows Terminal to use it.
 3. **Install** [**Oh My Posh**](https://ohmyposh.dev/docs/windows) in PowerShell.
 
-<b></b>
+<!-- I hate markdown -->
 
     Install-Module oh-my-posh -Scope CurrentUser
 
 1. **Import the module** in your PowerShell profile ($PROFILE)
 
-<b></b>
+<!-- I hate markdown -->
 
     Import-Module oh-my-posh
 
 4. **Set it up to use a** [**theme**]() of your choosing, Agnoster for instance. Add this to your PowerShell profile ($PROFILE).
 
-<b></b>
+<!-- I hate markdown -->
 
     Set-PoshPrompt -Theme agnoster
 
@@ -38,13 +38,13 @@ The prompt already looks cool but I want it to display which vCenter I am connec
 
 5. **Export the current profile to a file**.
 
-<b></b>
+<!-- I hate markdown -->
 
     Export-PoshTheme -FilePath "~/.mytheme.omp.json" -Format json
 
 6. **Edit the json file** and use the [TEXT](https://ohmyposh.dev/docs/text) feature to add a vCenter record next to the username. We will place the following fragment after the "sessions" section. This will check for an environment variable named ConnectedVCenter that we'll manage in the powershell profile.
 
-<b></b>
+<!-- I hate markdown -->
 
     {
     "background": "#cce9aa",
@@ -59,7 +59,7 @@ The prompt already looks cool but I want it to display which vCenter I am connec
 
 7. Now **edit your PowerShell profile** ($PROFILE). Remove or comment out the "Set-PoshPrompt" command and add the following fragment. This will populate an env variable when a vCenter is connected.
 
-<b></b>
+<!-- I hate markdown -->
 
     #Set-PoshPrompt -Theme agnoster
     
