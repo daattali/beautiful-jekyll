@@ -20,13 +20,13 @@ I work mostly in Windows Terminal and so far I'm using [Starship](https://starsh
 
     Install-Module oh-my-posh -Scope CurrentUser
 
-1. **Import the module** in your PowerShell profile ($PROFILE)
+4. **Import the module** in your PowerShell profile ($PROFILE)
 
 <!-- I hate markdown -->
 
     Import-Module oh-my-posh
 
-4. **Set it up to use a** [**theme**]() of your choosing, Agnoster for instance. Add this to your PowerShell profile ($PROFILE).
+5. **Set it up to use a** [**theme**]() of your choosing, Agnoster for instance. Add this to your PowerShell profile ($PROFILE).
 
 <!-- I hate markdown -->
 
@@ -36,13 +36,13 @@ I work mostly in Windows Terminal and so far I'm using [Starship](https://starsh
 
 The prompt already looks cool but I want it to display which vCenter I am connected to. Something I used a lot in my previous profile. There is currently no support for this so we have to make our own.
 
-5. **Export the current profile to a file**.
+6. **Export the current profile to a file**.
 
 <!-- I hate markdown -->
 
     Export-PoshTheme -FilePath "~/.mytheme.omp.json" -Format json
 
-6. **Edit the json file** and use the [TEXT](https://ohmyposh.dev/docs/text) feature to add a vCenter record next to the username. We will place the following fragment after the "sessions" section. This will check for an environment variable named ConnectedVCenter that we'll manage in the powershell profile.
+7. **Edit the json file** and use the [TEXT](https://ohmyposh.dev/docs/text) feature to add a vCenter record next to the username. We will place the following fragment after the "sessions" section. This will check for an environment variable named ConnectedVCenter that we'll manage in the powershell profile.
 
 <!-- I hate markdown -->
 
@@ -57,7 +57,7 @@ The prompt already looks cool but I want it to display which vCenter I am connec
     "type": "text"
     },
 
-7. Now **edit your PowerShell profile** ($PROFILE). Remove or comment out the "Set-PoshPrompt" command and add the following fragment. This will populate an env variable when a vCenter is connected.
+8. Now **edit your PowerShell profile** ($PROFILE). Remove or comment out the "Set-PoshPrompt" command and add the following fragment. This will populate an env variable when a vCenter is connected.
 
 <!-- I hate markdown -->
 
