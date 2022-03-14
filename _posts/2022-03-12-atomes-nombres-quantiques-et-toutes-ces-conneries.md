@@ -534,7 +534,7 @@ Alors un monsieur avec un nom atroce à écrire à trouvé une règle simple pou
 
 et ensuite vous allez remplir en faisant des diagonales bas-gauche :
 
-![Diagnolale bas-gauche svp !](/a-pym-s-life/assets/img/regle-klechkowski.jpg){: width="100%" }
+![Diagnolale bas-gauche svp !](/a-pym-s-life/assets/img/regle-klechkowski.jpg){: width="50%" }
 
 Et ça correspond bien à la mesure des chimistes : 4s se remplit avant 3d 🥳
 
@@ -591,6 +591,4 @@ Donc la physique quantique avec ses électrons gazeux qui se téléportent, qui 
 -  l'ordre de remplissage avec la **règle Klechlowsk**i (les diagonale bas-gauche)
 -  tout ça a été obtenu grâce au boulot de _chimistes absolument géniaux_ qui ont bossé des années pour essayer de trouver un théorie qui explique des situation à priori incompréhensibles…
 
-Ah j'oubliais... il y a un taré qui a réussi à vraiment représenter en 3D ce que sont exactement les orbitales atomiques... c'est putain super dur car il faut représenter les probabilités, le mouvement et tout (et même les 1s en fait c'est assez complexe car la probabilité toutes simple que je t'ai montré c'est celle du 1s... le 2s ça forme comme des bouboule concentrique :
-
-https://youtu.be/W2Xb2GFK2yc
+Ah j'oubliais... il y a un taré qui a réussi à vraiment représenter en 3D ce que sont exactement les orbitales atomiques... c'est putain super dur car il faut représenter les probabilités, le mouvement et tout (et même les 1s en fait c'est assez complexe car la probabilité toutes simple que je t'ai montré c'est celle du 1s... le 2s ça forme comme des bouboule concentrique : [A Better Way To Picture Atoms](https://youtu.be/W2Xb2GFK2yc)
