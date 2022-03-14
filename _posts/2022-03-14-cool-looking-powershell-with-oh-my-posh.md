@@ -16,7 +16,7 @@ I work mostly in Windows Terminal and so far I'm using [Starship](https://starsh
 2. **Install a** [**Nerd font**](https://www.nerdfonts.com/) to get icons support and set Windows Terminal to use it.
 3. **Install** [**Oh My Posh**](https://ohmyposh.dev/docs/windows) in PowerShell.
 
-<!-- I hate markdown -->
+    <!-- I hate markdown -->
 
     Install-Module oh-my-posh -Scope CurrentUser
 
