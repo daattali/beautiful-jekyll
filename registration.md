@@ -33,7 +33,7 @@ Further details about this policy are actively being worked on, and will appear 
 * A special super sponsor item from our friends at Con Glomerate Megacorp.
 * An invitation to our Guest of Honor dinner Saturday night.
 
-Please be aware that Pre-Registration prices will end March 1st, 2022 at 11:59 PM CST. Prices then will become Walk-in Prices. Online Registration will shut down March 31st at 11:59 PM CST.
+Please be aware that Pre-Registration prices will end March 31st, 2022 at 11:59 PM CST. Prices then will become Walk-in Prices. Online Registration will shut down March 31st at 11:59 PM CST.
 
 ## Pricing
 
