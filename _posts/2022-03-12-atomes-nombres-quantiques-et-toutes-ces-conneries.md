@@ -3,8 +3,8 @@ title: Atomes, nombres quantiques et toutes ces conneries
 subtitle: "ou comment se la péter en soirée en disant « Moi j'ai compris la physique quantique ! » (et avoir tord… mais c'est pas grave… il y a les cocktails pour oublier ça)"
 author: PYM
 cover-img:
-   - /assets/img/Hydrogen_Density_Plots.png : "Wave functions of the electron in a hydrogen atom at different energy levels."
-thumbnail-img: /assets/img/climate-thumb.jpg
+   - /assets/img/solvay.jpg : "Wave functions of the electron in a hydrogen atom at different energy levels."
+thumbnail-img: /assets/img/solvay-thumb.jpg
 layout: post
 tags: [someone was wrong, sciences, physique, chimie, tableau périodique]
 ...
@@ -189,7 +189,7 @@ Il a eu son Prix Nobel absolument pas pour sa théorie de la relativité… nan 
 
 C'est un phénomène assez proche de celui qui permet aux électrons quand ils se désexcitent de perdre de l'énergie en émettant un photon… là c'est quand on arrive à arracher des électrons à un matériau ou un atome juste en envoyant de la lumière dessus.
 
-Je vais pas expliquer ça (l'effet photo-électrique pas le nougat !), car ça n'a ici pas des masses d'intérêt. Par contre ça a permis une confirmation : la lumière est quantique.
+Je vais pas expliquer ça, car ça n'a ici pas des masses d'intérêt. Par contre ça a permis une confirmation : la lumière est quantique.
 
 Au sens littéral : elle est quantifiée on peut pas envoyer "un tout petit peu de lumière"… il y a un minimum une "quantité minimum" on dit un quanta. Ça correspond au faite que la lumière est constitués de "grains" qui transportent exactement un quanta d'énergie lumineuse.
 
@@ -454,13 +454,15 @@ Ou pour un atome à 10 électrons (le néon) :
 
 ![](https://c.tenor.com/xolIxjMRcUsAAAAC/voila-kick.gif){: width="100%" }
 
-# Règles à retenir
+## Règles à retenir
 
 Après je pourrait continuer à te faire le niveau 3 puis 4... mais ça servirait pas à grand chose… Je vais juste te donner les règles sur les valeur de n l et ml (car pour s on a déjà vu c'est toujours +½ ou -½
 
 - n lui va augmenter de 1 à chaque niveau
--  ℓ va avoir de plus en plus de valeur différentes plus n sera grand (donc la géométrie des orbitale va être de plus en plus complexe : `0 ≤ ℓ ≤ n - 1`
--   mℓ va avoir encore plus de valeur pour coller à tous les cas possible d'orientation des géométrie chelou venant de ℓ : `-ℓ ≤ mℓ ≤ +ℓ`
+- ℓ va avoir de plus en plus de valeur différentes plus n sera grand (donc la géométrie des orbitale va être de plus en plus complexe : `0 ≤ ℓ ≤ n - 1`
+- mℓ va avoir encore plus de valeur pour coller à tous les cas possible d'orientation des géométrie chelou venant de ℓ : `-ℓ ≤ mℓ ≤ +ℓ`
+
+## Expo de sculptures de ballons
 
 Et si tu te demande à quoi ça ressemble les orbitales d'après... attention bienvenue dans le monde des gros ballons de forme zarbi. Je vous présente donc 3px, 3py et 3pz :
 
@@ -488,3 +490,107 @@ donc K L M N O P Q… et cette notation est encore utilisée…
 ...et pourquoi on commence à la lettre K au fait ? Alors là c'est vraiment débile. Au début de la spectroscopie on a surtout vu des raies correspondant à des sauts d'électrons dans des gros atome (donc avec plein de couches) excités. Donc des électron qui redescende vers leur état de base genre vers la couche n=2 ou n=3. On a voulu nommer les couches avec des lettre de l'alphabet mais on savait qu'en vrai il devait y avoir des couches plus basse... mais on savait pas combien 😅 alors on a commencé au milieu de l'alphabet : L.
 
 Un peu après on s'est rendu compte qu'on avait eu raison : on a découvert des saut jusqu'à une couche plus profonde qu'on a donc appelé K... sauf qu'on en a jamais trouvé de plus profonde. Et pour cause : couche K 👉 n=1 c'est la première couche !
+
+# Range ta chambre
+## Feng shui d'électron
+
+Bon voilà maintenant on sait comment sont faites les "_étagères à électrons_" donc on sait les ranger des électrons !
+
+![](https://c.tenor.com/2xPdaVOIAikAAAAC/umm-well.gif){: width="100%" }
+
+![](https://c.tenor.com/OlLGd7QUohsAAAAC/friends-joey.gif){: width="100%" }
+
+(encore elle)
+
+Alors certes on a de belles étagères... mais, comme en atteste ~~ma chambre~~ **une chambre d'ado**, il y a clairement plusieurs méthode pour utiliser une étagère :
+
+![Je suis sûr qu'il y a une étagère quelque part](/a-pym-s-life/assets/img/chambre_ado.jpg){: width="100%" }
+
+👆 Là techniquement IL Y A un placard et une étagère... quelque part…
+
+Alors les chimistes ont une technique assez simple pour ranger les électrons façon feng shui : on les range de la plus basse énergie à la plus haute... en gros on remplit en premier là où ça coûte le moins cher !
+
+Euh mais alors c'est facile ! On remplit dans l'ordre `1s 2s 2p 3s 3p 3d 4s` etc !!!
+
+Nan. Car en fait les énergie des différentes sous-couche des fois il empiète un peu sur le niveau d'au-dessus et ça fout un peu le bordel.
+
+![Voilà ce qui se passe quand tu laisse un crayon à un chimiste, il dessine des niveau d'énergie !](/a-pym-s-life/assets/img/niveaux_d_energie.jpg){: width="100%" }
+
+Les chimistes ils ont fait un joli schéma vu qu'ils ont passé 50 ans à mesure toutes leur fucking raies dans tous les sens ! On y voit par exemple que si on veut aller par énergie croissante au début ça marche bien : `1s 2s 2p 3s 3p`... et là c'est le drame 😱 `4s` avant `3d` 😱😱😱
+
+Bon avec le graph des énergies sous le nez on arrive à remplir les niveau dans l'ordre mais c'est un peu casse ~~couilles~~ gonades. L'autre solution c'est de se taper les calculs exact du niveau d'énergie à chaque fois… bon OK, c'est VRAIMENT pas plus simple !
+
+Alors un monsieur avec un nom atroce à écrire à trouvé une règle simple pour savoir comment on range les électrons : la règle de ~~Kieslowsky~~ ~~Klieshlow~~... rhaaaaaa bordel **Klechkowski** ! Sa règle c'est que vous devez écrire les orbitales niveau par niveau :
+
+```
+1s
+2s 2p
+3s 3p 3d
+4s 4p 4d 4f
+5s 5p 5d 5f 5g
+```
+
+(oui après f on continue avec l'alphabet sauf le j qui ressemble trop à un i)
+
+et ensuite vous allez remplir en faisant des diagonales bas-gauche :
+
+![Diagnolale bas-gauche svp !](/a-pym-s-life/assets/img/regle-klechkowski.jpg){: width="100%" }
+
+Et ça correspond bien à la mesure des chimistes : 4s se remplit avant 3d 🥳
+
+![](https://c.tenor.com/nutTDR5ui6kAAAAC/victory-sweet.gif){: width="100%" }
+
+## Marie Kondo, vient ranger mes éléments !
+
+Bon bah voilà on sait ranger les électrons ! Mais est-ce que ça permettrait pas aussi de ranger les éléments eux même ???
+
+![](https://c.tenor.com/1l6cDDl4sN8AAAAC/salon-line-todecacho.gif){: width="100%" }
+
+La seule couche qui compte vraiment pour la chimie, c'est celle qui réagit... c'est à dire celle qui est en surface donc la plus haute. 🤔 Bon déjà on va ranger ensemble tous les éléments qui ont pour dernière orbitale remplie les orbitale s et on va les ranger par n croissant (donc du plus léger au plus lourd puisque pour avoir un n grand il faut plus d'électrons donc plus de proton dans le noyaux donc des atome plus lourd). 
+
+Ça donnerait quoi ?
+
+Ceux qui sont à demi rempli (un seul électron dans la couche s) de n=1 à n=7:
+
+```
+H Li Na K Rb Cs Fr
+```
+Ceux qui sont complétement remplis (2 électron dans la couche s) de n=1 à n=7 :
+
+```
+He Be Mg Ca Sr Ba Ra
+```
+
+Bon on pourrait continuer pareil pour les orbitale p... (il n'y en aurait pas pour n=1 par contre car les orbitales p ça commence à n=2) et idem pour les orbitales d et puis même f. Et genre on mettrait ça dans un tableau : une colonne pour les s, 3 colonnes pour les p (qui ont 3 orbitales) 5 colonnes pour les d (car 5 orbitales) et 7 colonnes pour les f (car 7 orbitales)…
+
+![Feng shui ta mère des éléments !](/a-pym-s-life/assets/img/tableau-orbitales.jpg){: width="100%" }
+
+👆 Feng shui ta mère des éléments ! C'est comme ça qu'il faudrait ranger ! Bon chaque case correspond à 2 éléments en vrai car on a 2 électrons par orbitale…
+
+Et si on met les noms des élément là dedans ça donne quoi ? 
+
+![Mais… mais… mais...](/a-pym-s-life/assets/img/tableau-elements.jpg){: width="100%" }
+
+![](https://c.tenor.com/W7-hNE-P_iUAAAAd/afraid-cat.gif){: width="100%" }
+
+...c'est la fucking table de Mendeleïev !!!!! Le tableau périodique des éléments !!!!!!!!!!!!!!!!!!!!!!!
+
+Note : pour des raisons chimiques on a juste déplacé l'hélium au dessus de la dernière colonne car il se comporte exactement comme ceux qui ont la totalité de leur couche pleine (normal lui aussi a la totalité de sa couche pleine... c'est juste qu'il a que 2 électrons 😅)
+
+Il avait fallut des années pour le faire expérimentalement... des années... et il y a toujours eu plein de trou dedans (car on avait pas découvert l'élément à tel ou tel endroit) et pour le faire il avait fallut regarder comment chaque élément réagissait avec plein de truc pour le mettre dans la bonne colonne (dans une colonne tous les éléments doivent réagir pareil).
+
+Et là paf ! Juste avec la théorie de orbitales atomiques et leur nombre quantiques chelous... tu le construit en one shot !!!! Et ce genre de truc... c'est ce qui fait que malgré les comportements apparemment absurdes qu'elle implique et les calculs infâmes qu'il faut faire... la physique quantique est un outil de ouf !
+
+Donc la physique quantique avec ses électrons gazeux qui se téléportent, qui se comportent comme des fantômes et qui tels des instagrameuses posent pour la photo dès qu'on les regarde et ses atomes entouré de grosse bouboule, altères et autre morceau de ballon venu des enfers... et ben c'est la meilleure description qu'on ait de la réalité (pour les machins très petit) !
+
+# À retenir
+
+- le principe de décrire les électron avec 4 nombre quantique qui ont des valeur ultra limitées : **n ℓ mℓ** et **s**
+- le nom des familles d'orbitales : **s p d f** (_**s**phérique_, _**p**olaires_, _**d**iagonales_, _**f**outraque_ pour s'en souvenir)
+-  on peut mettre **2 électrons par orbitale**
+-  l'ordre de remplissage avec la **règle Klechlowsk**i (les diagonale bas-gauche)
+-  tout ça a été obtenu grâce au boulot de _chimistes absolument géniaux_ qui ont bossé des années pour essayer de trouver un théorie qui explique des situation à priori incompréhensibles…
+
+Ah j'oubliais... il y a un taré qui a réussi à vraiment représenter en 3D ce que sont exactement les orbitales atomiques... c'est putain super dur car il faut représenter les probabilités, le mouvement et tout (et même les 1s en fait c'est assez complexe car la probabilité toutes simple que je t'ai montré c'est celle du 1s... le 2s ça forme comme des bouboule concentrique :
+
+https://youtu.be/W2Xb2GFK2yc
