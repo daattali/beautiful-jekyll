@@ -62,4 +62,4 @@ Now the PowerShell prompt should show the connected vCenter(s). Pretty cool righ
 
 ![](/img/ohmyposh2.png)
 
-Anyway, I played a bit with it so I thought I write a short piece about it. A longer version of this blog with a lot more details will come out on the Altaro blog at some point so watch this space.
+Anyway, I played a bit with it so I thought I'd write a super short piece about it. A longer version of this article with a lot more details will come out on the Altaro blog at some point so watch this space.
