@@ -36,7 +36,8 @@ The prompt already looks cool but I want it to display which vCenter I am connec
 
 7. **Edit the json file** and use the [TEXT](https://ohmyposh.dev/docs/text) feature to add a vCenter record next to the username. We will place the following fragment after the "sessions" section. This will check for an environment variable named ConnectedVCenter that we'll manage in the powershell profile.
 
-            {
+    
+    {
               "background": "#cce9aa",
               "foreground": "#100e23",
               "powerline_symbol": "\ue0b0",
@@ -46,9 +47,11 @@ The prompt already looks cool but I want it to display which vCenter I am connec
               "style": "powerline",
               "type": "text"
             },
+            
 
 8. Now **edit your PowerShell profile** ($PROFILE). Remove or comment out the "Set-PoshPrompt" command and add the following fragment. This will populate an env variable when a vCenter is connected.
 
+    
     # Set-PoshPrompt -Theme agnoster
     
     oh-my-posh prompt init pwsh --config "~/.mytheme.omp.json" | Invoke-Expression
@@ -57,6 +60,7 @@ The prompt already looks cool but I want it to display which vCenter I am connec
         $env:ConnectedVCenter = ($global:DefaultVIServers | where isconnected -eq $true).name
     }
     New-Alias -Name 'Set-PoshContext' -Value 'Set-EnvVar' -Scope Global -Force
+    
 
 Now the PowerShell prompt should show the connected vCenter(s). Pretty cool right?
 
