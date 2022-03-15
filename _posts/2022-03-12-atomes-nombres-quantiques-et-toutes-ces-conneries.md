@@ -14,7 +14,7 @@ tags: [someone was wrong, sciences, physique, chimie, tableau périodique]
 
 ![](https://acegif.com/wp-content/gif/terrified-67.gif){: width="100%" }
 
-Nan mais faut prévenir avant de balancer de la physique quantique au nez des gens comme ça ! Mais bon vous allez voie ça passe très bien quand on y va pas-à-pas.
+Nan mais faut prévenir avant de balancer de la physique quantique au nez des gens comme ça ! Mais bon vous allez voir ça passe très bien quand on y va pas-à-pas.
 
 \<PYM va chercher un tube d'aspirine de la taille d'un baobab moyen>
 
@@ -104,7 +104,7 @@ En quoi c'est lié à nos électrons ? En fait c'est eux qui émettent la lumiè
 
 C'est le yoyo des électrons excité !
 
-[^prisme]: En vrai on utilise pas un prisme (qui a plein de défaut qu'on appelle aberrations chromatiques) mais un réseau, c'est-à-dire une plaque avec plein de petite fentes kro kro fines. Pourquoi ça marche comme un prisme ? Euh là ça vaudrait un post complet juste pour expliquer ça… un post assez cool d'ailleurs…
+[^prisme]: En vrai on utilise pas un prisme (qui a plein de défaut qu'on appelle aberrations chromatiques) mais un réseau, c'est-à-dire une plaque avec plein de petite fentes kro kro fines. Pourquoi ça marche comme un prisme ? Euh là ça vaudrait un post complet juste pour expliquer ça… un post assez cool d'ailleurs… mais les prismes ça fait des jolies pochettes d'album me dit-on dans l'oreillette.
 
 ### Back to business : Pourquoi ça fail le modèle des "électrons en vrac" ?
 Et ben si on pouvait mettre des électron en vrac alors ils pourraient sauter à n'importe qu'elle hauteur quand on les excite… et donc on aurait un beau spectre continu avec plein de couleur comme un caca de licorne… sauf que nan on voit 3~4 raies…
