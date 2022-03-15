@@ -6,7 +6,14 @@ published: true
 
 
 
-Voici les image dont vous aurez besoin pour cette évaluation
+Voici les images dont vous aurez besoin pour cette évaluation : 
+
+# Drapeau du Japon
+
+<center>
+	      <img class="avatar-img" src="/japan.jpg" />
+</center>
+
 
 
 
