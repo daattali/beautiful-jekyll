@@ -22,7 +22,7 @@ Nan mais faut prévenir avant de balancer de la physique quantique au nez des ge
 
 Alors de quoi on parle là exactement ? Pourquoi on veut faire mumuse avec des "niveaux d'énergie", des "couches" et autres absurdités machins chelous merveilles de la physique ?
 
-En vrai c'est juste une histoire de rangement… Z.… Z. ? \\&lt;trouve Z. recroquevillée\[^bordelique\] et à moitié en PLS par terre&gt;
+En vrai c'est juste une histoire de rangement… Z.… Z. ? \<trouve Z. recroquevillée\[^bordelique\] et à moitié en PLS par terre >
 
 C'est juste une histoire de rangement, disais-je donc 🙄 : on cherche à voir comment ranger les électrons d'un atome… Un "truc de physicien psychorigide", me dit-elle ? En fait non… même pas des masses un truc de physicien. C'est plutôt un problème de chimiste.
 
