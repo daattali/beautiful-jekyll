@@ -26,7 +26,7 @@ En vrai c'est juste une histoire de rangement… Z.… Z. ? \\&lt;trouve Z. recr
 
 C'est juste une histoire de rangement, disais-je donc 🙄 : on cherche à voir comment ranger les électrons d'un atome… Un "truc de physicien psychorigide", me dit-elle ? En fait non… même pas des masses un truc de physicien. C'est plutôt un problème de chimiste.
 
-En gros fin XIXème début XXéme on sait quoi sur les atomes ? Bon déjà on est vaguement d'accord sur le fait qu'ils existent (oui on en est encore là…) et au XXème on sait même comment c'est fait (merci monsieur Rutherford\[^sciencerugby\]) :
+En gros fin XIXème début XXéme on sait quoi sur les atomes ? Bon déjà on est vaguement d'accord sur le fait qu'ils existent (oui on en est encore là…) et au XXème on sait même comment c'est fait (merci monsieur \[^sciencerugby\]) :
 
 - un noyau positif (maintenant on sait qu'il est constitué de neutron neutre et de proton positifs)
 - plein d'électrons autour
@@ -56,7 +56,7 @@ Ils ont arrêté de rire.
 
 [^bordelique]: Il est possible que Z. soit notoirement bordélique. Mais elle a un alibi parfait « Nan mais si on peut pas être bordélique quand on est ado, sérieux ?! ». Inattaquable.
 
-[^sciencerugby]: On imagine toujours les scientifique du XIXème, début XXème comme des mec tout maigres et très sérieux qui passe leur vie dans des bibliothèques ou à faire des expériences bizarres. Rutherford lui c'était un pilier de rugby qui était _aussi_ un super scientifique. Donc faut imaginer un ~~british~~ Néo-Zélandais bien stock avec un cou de taureau mais qui vous défonce en arithmétique d'une seule main… un mec bien. D'ailleurs c'est lui qui a dit « _La science est soit de la physique, soit de la philatélie._ ».
+[^sciencerugby]: On imagine toujours les scientifique du XIXème, début XXème comme des mec tout maigres et très sérieux qui passe leur vie dans des bibliothèques ou à faire des expériences bizarres.  lui c'était un pilier de rugby qui était _aussi_ un super scientifique. Donc faut imaginer un ~~british~~ Néo-Zélandais bien stock avec un cou de taureau mais qui vous défonce en arithmétique d'une seule main… un mec bien. D'ailleurs c'est lui qui a dit « _La science est soit de la physique, soit de la philatélie._ ».
 
 C'est quoi l'idée ? Et c'est quoi de problème ?
 
@@ -77,7 +77,7 @@ Et voilà on se retrouve à essayer de comprendre comment on range les électron
 ![](https://c.tenor.com/T41eJjy1CU4AAAAC/harley-quinn-chaos.gif){: width="100%" }
 
 # La quête de la Sainte Structure Atomique
-Au début les physiciens étaient assez confiants : ils avaient percé le secret de la structure des atomes (un petit noyau positif et des électrons négatifs autour) et ça ressemblait pas mal au système solaire (un gros soleil au milieu et des planètes autour).
+Au début les physiciens étaient assez confiants : ils avaient percé le secret de la structure des atomes (un petit noyau positif et des électrons négatifs autour) et ça ressemblait pas mal au système solaire (un gros soleil au milieu et des s autour).
 
 Alors attention maintenant commence le défilé des fails…
 
@@ -140,7 +140,7 @@ Donc en termes de théorie pour expliquer et prévoir c'est zéro
 -- MAIS J'EN AI MÊME PAS PARLÉ !\
 -- 👉👈 Bahouimécémoinpire\
 -- RIEN DU TOUT ! ET D'OÙ TU SORS TON IDÉE DE SOUS-NIVEAU LÀ ?\
--- 😮… Mais yen a en vrai des planètes comme ça dans le système solaire ?\
+-- 😮… Mais yen a en vrai des s comme ça dans le système solaire ?\
 -- 👉👈 Euh non monsieur…_ »
 
 ![](https://c.tenor.com/lDo3IeNB5zsAAAAC/facepalm-dismay.gif){: width="100%" }
@@ -151,7 +151,7 @@ Je vous passe tous les essais bizarres, compliqués et passablement foireux de l
 
 Bon donc on a besoin d'une nouvelle bonne idée !
 
-[^foiritude]: Vous remarquerez qu'on s'est rendu compte de la foiritude de décrire les atomes comme des mini systèmes solaires (modèle dit de Rutherford… oui ce mec a fait du bon comme du moins bon) dès le début du XXème siècle. Et que pourtant même maintenant au XXIème siècle on continue à l'enseigner comme ça et tout le monde à cette idée foireuse en tête à cause de ça 🙄
+[^foiritude]:  qu'on s'est rendu compte de la foiritude de décrire les atomes comme des mini systèmes solaires (modèle dit de Bohr… de monsieur Niels Bohr, un bon coquin : ce sont deux thésards à lui qui ont interprété son expérience à laquelle il ne comprenait rien...) dès le début du XXème siècle. Et que pourtant même maintenant au XXIème siècle on continue à l'enseigner comme ça et tout le monde à cette idée foireuse en tête à cause de ça 🙄
 
 ## Essai 3877 : Here comes a new challenger!
 
@@ -215,13 +215,13 @@ Bon mais ça veut juste dire qu'on a donné des numéros aux orbites de nos éle
 
 ![](https://c.tenor.com/DVDeIOwIfyAAAAAC/youre-wrong-there.gif){: width="100%" }
 
-Et bah nan… en fait ça n'a rien à voir. Car en fait depuis le début on essaye de faire tourner des électrons autour de notre noyau comme des p'tites planètes… mais est-ce que c'est vraiment le cas ?
+Et bah nan… en fait ça n'a rien à voir. Car en fait depuis le début on essaye de faire tourner des électrons autour de notre noyau comme des p'tites s… mais est-ce que c'est vraiment le cas ?
 
 [^calcul]: En vrai il y a des calculs littéralement imbitables qui ont permis de vérifier que ce résultat avait vraiment du sens physiquement en prenant en compte les vraies interactions électromagnétiques entre noyau et électrons.
 
 # Dessine-moi un ~~mouton~~ nuage électronique
 
-Déjà il y avait un indice comme quoi c'était foireux : dans le système solaire toutes les planètes sont grosso modo dans le même plan… or ça c'est pas possible pour les atomes car sinon ils auraient un "sens" privilégié… ils seraient pas ronds quoi ! Or les atomes plats… nan ça fait longtemps qu'on sait qu'ils sont globalement "ronds".
+Déjà il y avait un indice comme quoi c'était foireux : dans le système solaire toutes les s sont grosso modo dans le même plan… or ça c'est pas possible pour les atomes car sinon ils auraient un "sens" privilégié… ils seraient pas ronds quoi ! Or les atomes plats… nan ça fait longtemps qu'on sait qu'ils sont globalement "ronds".
 
 Donc on a commencé à faire des joli calculs pour voir ce que ça donnait des électrons quantiques autour d'un noyau… eh ben on a pas été déçu parce que… bah c'est chelou…
 
@@ -271,7 +271,7 @@ On va pas se mentir c'est pas facile de représenter un machin gazeux intangible
 
 👆 **À droite** la forme en 3d autour du noyau et **à gauche** une représentation de la probabilité de présence de l'électron : on voit qu'en fait l'électron est plus probable proche du noyau (les points sont plus denses)
 
-Donc c'est tout ? On a juste des électrons gazeux qui se comportent comme des fantômes et qui flippent qu'on les voit ? Bon bah ça va... au lieu de penser à des orbites plate comme les planètes on va penser à des bouboules et puis ça sera bon...
+Donc c'est tout ? On a juste des électrons gazeux qui se comportent comme des fantômes et qui flippent qu'on les voit ? Bon bah ça va... au lieu de penser à des orbites plate comme les s on va penser à des bouboules et puis ça sera bon...
 
 ![](https://c.tenor.com/2xPdaVOIAikAAAAC/umm-well.gif){: width="100%" }
 
