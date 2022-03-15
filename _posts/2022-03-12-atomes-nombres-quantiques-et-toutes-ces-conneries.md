@@ -594,3 +594,7 @@ Donc la physique quantique avec ses électrons gazeux qui se téléportent, qui 
 -  tout ça a été obtenu grâce au boulot de _chimistes absolument géniaux_ qui ont bossé des années pour essayer de trouver une théorie qui explique des situations à priori incompréhensibles…
 
 Ah j'oubliais... il y a un taré qui a réussi à vraiment représenter en 3D ce que sont exactement les orbitales atomiques... c'est putain super dur, car il faut représenter les probabilités, le mouvement et tout (et même les 1s en fait c'est assez complexe, car la probabilité toutes simple que je t'ai montré c'est celle du 1s... le 2s ça forme comme des bouboules concentriques : [A Better Way To Picture Atoms](https://youtu.be/W2Xb2GFK2yc)
+
+# Remerciements
+
+Je tiens à remercier Cécile, Ophélie, Gui² et bien sûr Z. pour leurs questions, relectures, corrections, discussions et tout. Parce que, il faut bien avouer, cet article a été particulièrement velu, un genre de 😸Maine Coon😸 de la physique ! 
