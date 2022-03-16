@@ -14,12 +14,12 @@ author: JongLae Park
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Me: "aboutme"
-  Resources:
+  나: "aboutme"
+  링크:
     - 지식나라 좋은글 : "https://www.youtube.com/playlist?list=PLSSHYP2bNYaPVxnE46ichD-VBoDUDqRp9"
     - GotoPark : "https://gotopark.blogspot.com/"
     - Ggedori : "https://ggedori.blogspot.com/"
-  Author's home: ""
+  home: "없다 누루지 마라"
 
 # --- Logo --- #
 
