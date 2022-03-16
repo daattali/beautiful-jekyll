@@ -8,7 +8,7 @@ share-img: /assets/img/path.jpg
 tags: [엔키의 고백, 아눈나키]
 ---
 
-[Link Text]({% https://youtu.be/4XiPMHViGT0 %})
+[오디오북 엔키의 고백]({% https://youtu.be/4XiPMHViGT0 %})
 
 
 엔키의 고백
