@@ -2,7 +2,7 @@
 layout: post
 title: 제목 장사 하는 언론
 subtitle: 언론 개혁 부터 해야 이재명이 대통령 될 수 있다.
-gh-repo: daattali/beautiful-jekyll
+gh-repo: https://github.com/jonglae
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
@@ -53,13 +53,14 @@ And here is the same code with syntax highlighting:
 ```
 
 And here is the same code yet again but with line numbers:
-
+~~~
 {% highlight javascript linenos %}
 var foo = function(x) {
   return(x + 5);
 }
 foo(3)
 {% endhighlight %}
+~~~
 
 ## Boxes
 You can add notification, warning and error boxes like this:
