@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample blog post
+title: 제목 장사 하는 언론
 subtitle: 제목 테스트
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
