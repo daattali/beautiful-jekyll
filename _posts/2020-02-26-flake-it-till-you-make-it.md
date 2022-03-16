@@ -8,7 +8,8 @@ share-img: /assets/img/path.jpg
 tags: [엔키의 고백, 아눈나키]
 ---
 
-https://youtu.be/4XiPMHViGT0
+[Link Text]({% https://youtu.be/4XiPMHViGT0 %})
+
 
 엔키의 고백
 
