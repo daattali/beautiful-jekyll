@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Sample blog post
-subtitle: Each post also has a subtitle
+subtitle: 제목 테스트
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+July 4, 2018 - 저같은 경우는 레포에서 임의로 브랜치를 하나 따서, 해당 브랜치를 push하는 식으로 인증이 필요한 상황을 만들었습니다. 즉, 다음의 순서를 따르게 된 것입니다. git checkout -b "newBranch" touch newFile git
+
 
 **Here is some bold text**
 
