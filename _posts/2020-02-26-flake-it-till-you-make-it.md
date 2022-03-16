@@ -5,11 +5,8 @@ subtitle: 아눈나키 엔키의 고백
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: 엔키의고백, 아눈나키
+tags: [엔키의고백, 아눈나키]
 ---
-
-[오디오북 엔키의 고백]({% https://youtu.be/4XiPMHViGT0 %})
-
 
 엔키의 고백
 
