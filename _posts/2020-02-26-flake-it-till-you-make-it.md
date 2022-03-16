@@ -7,7 +7,8 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [엔키의 고백, 아눈나키]
 ---
-{% https://youtu.be/4XiPMHViGT0 %}
+
+https://youtu.be/4XiPMHViGT0
 
 엔키의 고백
 
