@@ -4,10 +4,10 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My nick name bitbitwave is  I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- 20대 대선은 묻고 떠불로가자 4+4 = 8 
+- 디지털 노마드가 되 돈에 구애 받지 않고 창작 하며 살고 싶다.
 
 What else do you need?
 
