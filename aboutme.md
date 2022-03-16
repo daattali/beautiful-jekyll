@@ -19,7 +19,7 @@ subtitle: 방향성만 서면 그쪽으로 쭉 밀고 나갈텐데!
 - Google is always monitoring you,
 - so try to reduce Google service as soon as possible.
 
-What else do you need?
+여기까지 들어온 당신은 정말 취향이 독특 하시군요 잘 둘러 보시고 가세요
 
 ### My story
 
