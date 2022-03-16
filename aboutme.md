@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: 디지털 노마드 (통장으로 많이 들어온다)
+subtitle: 방향성만 서면 그쪽으로 쭉 밀고 나갈텐데!
 ---
 
 My nick name bitbitwave is  I have the following qualities:
@@ -23,4 +23,4 @@ What else do you need?
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+아 40후반 이다 이제는 잘 풀릴때도 된거 같은데 뭐가 이렇게 안풀리냐 하나만 떠저라~~
