@@ -46,7 +46,7 @@ social-network-links:
   github: jonglae
   twitter: data114
   patreon: false
-  youtube: c/지식나라
+  youtube: https://www.youtube.com/channel/UCtOE8RHyw3M67y0E8Bdsegg
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -64,7 +64,7 @@ social-network-links:
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid 
+  discord: https://discord.gg/XsPK9NuE
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
@@ -84,7 +84,7 @@ share-links-active:
 url-pretty: "MyWebsite.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 30
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
