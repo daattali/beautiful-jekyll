@@ -5,7 +5,7 @@ subtitle: 아눈나키 엔키의 고백
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [엔키의고백, 아눈나키]
+tags: [엔키의고백, 아눈나키,엔키의 서,마르독,엔닐,아누]
 ---
 [엔키 의 서 오디오북](https://www.youtube.com/watch?v=G5yDdFerxnY&t=9s)
 
