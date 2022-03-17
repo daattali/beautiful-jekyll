@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SNT : évaluation SNT du jour'
-published: false
+published: true
 ---
 
 
