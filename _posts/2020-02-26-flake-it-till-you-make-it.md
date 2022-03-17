@@ -7,6 +7,8 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [엔키의고백, 아눈나키]
 ---
+[엔키 의 서 오디오북](https://www.youtube.com/watch?v=G5yDdFerxnY&t=9s)
+
 [엔키 의 독백 오디오북](https://www.youtube.com/watch?v=4XiPMHViGT0&t=3320s)
 
 
