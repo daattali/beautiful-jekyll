@@ -5,7 +5,7 @@ subtitle: 아눈나키 엔키의 고백
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [엔키의고백, 아눈나키,엔키의 서,마르독,엔닐,아누]
+tags: [엔키의고백, 아눈나키,엔키의 서,마르독,엔닐,아누,아눈나키 외계인,아눈나키 성경,엘로힘,니비루,네피림,아눈나키 수명,성경,대홍수]
 ---
 [엔키 의 서 오디오북](https://www.youtube.com/watch?v=G5yDdFerxnY&t=9s)
 
