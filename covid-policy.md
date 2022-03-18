@@ -1,5 +1,4 @@
 ---
-layout:
 title: 'Covid Policy '
 subtitle: These are FurSquared’s COVID policies for the April 2022 convention.
 ---
