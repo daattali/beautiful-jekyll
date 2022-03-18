@@ -76,7 +76,7 @@ Every state has differences both in law and in custom. If you are concerned abou
 
 ### **Where can I see COVID-19 statistics for Brookfield WI (Waukesha County)?**
 
-Please see the [COVID-19 Wisconsin Summary Data](https://www.dhs.wisconsin.gov/covid-19/data.htm) dashboard. Waukesha County is directly west of Milwaukee, which is in the south-west portion of the state.
+Please see the [COVID-19 Wisconsin Summary Data](https://www.dhs.wisconsin.gov/covid-19/data.htm) dashboard. Waukesha County is directly west of Milwaukee, which is in the south-east portion of the state.
 
 ### **Will there be unvaccinated people outside of con space?**
 
