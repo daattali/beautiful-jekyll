@@ -26,17 +26,10 @@ You have completed the primary vaccine series and have received a booster per CD
 
 You have completed an initial vaccine series by the timeframe listed below.
 
-**Pfizer or Moderna (mRNA)**
-
-**Johnson & Johnson / Janssen**
-
-Last vaccine dose by
-
-March 31st, 2022
-
-Vaccine received by
-
-March 31st, 2022
+| Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
+| --- | --- |
+| Last vaccine dose by | Vaccine received by |
+| March 31st, 2022 | March 31st, 2022 |
 
 Proof of vaccination will be required at registration to purchase or pick up a badge.
 
