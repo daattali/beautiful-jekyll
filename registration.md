@@ -73,6 +73,12 @@ Parent in tow badges can be supplied please inquire at the door to receive one. 
 
 Check back here and/or follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared) for any updates that may come this way.
 
+## Parental Consent
+
+The file located below is for a Notary consent form for minors between the ages of 14-17 to attend the convention without an adult. Reminder: all Minors in this age group that are eligible to receive a vaccine must show proof of vaccination before a registration can be completed. Without proof of vaccination a registration WILL NOT be given.
+
+[Get the parental consent form](/uploads/F2-2022-Parental-Consent.docx){: target="_blank" rel="noopener"}
+
 ## Questions or Concerns?
 
 Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<br>Fur Squared thanks you for your patience.
