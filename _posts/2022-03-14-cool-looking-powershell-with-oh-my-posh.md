@@ -20,7 +20,7 @@ I work mostly in Windows Terminal and so far I'm using [Starship](https://starsh
 
 * **Install** [**Oh My Posh**](https://ohmyposh.dev/docs/windows) in PowerShell.
 
-<!-- I hate markdown -->
+<!-- I hate markdown a lot -->
 
     Install-Module oh-my-posh -Scope CurrentUser
 
