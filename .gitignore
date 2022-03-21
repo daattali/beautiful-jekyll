@@ -7,3 +7,12 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+frontmatter.json
