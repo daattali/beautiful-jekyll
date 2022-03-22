@@ -80,7 +80,7 @@ k delete secret argocd-initial-admin-secret
 
 If you want ArgoCD to manage remote clusters you will need to register them manually.
 
-![List argocd apps](//img/2022-03-22-09-21-43.png)
+![List argocd apps](/img/2022-03-22-09-21-43.png)
 
 ## Connect a GitHub repository
 
