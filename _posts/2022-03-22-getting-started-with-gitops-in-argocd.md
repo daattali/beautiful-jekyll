@@ -14,7 +14,7 @@ Enters GitOps, a way to manage the desired state of your resources in a Git repo
 
 ![argocd architecture](/img/2022-03-22-12-50-25.png)
 
-Instead of manually applying manifest with “`kubectl apply -f`”, you will simply push the manifest to the Git repository. Once ArgoCD notices the difference it will apply it to the cluster. That is if ArgoCD is configured for automatic synchronization but you can very well leave this step as manual. We are only skimming the surface in here but I wanted to keep as high level as possible for now because 1) I’m nowhere near an expert at this and 2) my VMware reader base is probably also fairly new to these concepts. I hope I don’t alienate you guys too much by the way 😉.
+Instead of manually applying manifest with `kubectl apply -f`, you will simply push the manifest to the Git repository. Once ArgoCD notices the difference it will apply it to the cluster. That is if ArgoCD is configured for automatic synchronization but you can very well leave this step as manual. We are only skimming the surface in here but I wanted to keep as high level as possible for now because 1) I’m nowhere near an expert at this and 2) my VMware reader base is probably also fairly new to these concepts. I hope I don’t alienate you guys too much by the way 😉.
 
 ## Requirements
 
@@ -142,7 +142,6 @@ We now have ArgoCD watching our GitHub repository and our Kubernetes cluster. I 
 
 Nothing would happen as is as the desired state in the repo would match the current state in the cluster. However, I deleted the resources in my cluster to demonstrate the reconciliation but any further changes made in the repo will be reconciled by ArgoCD.
 
-
 * **First copy the manifests in a folder in your GitHub repo. Mine is called “tv-automation” (don’t ask).**
 
 ![add files to github repo](/img/2022-03-22-12-19-22.png)
@@ -159,22 +158,22 @@ As you can see, my home automation resources aren’t deployed in the cluster.
 
 * **Configure the settings of the application you are deploying.**
 
-**Application Name**: I use the name of the folder in the repo.
-**Project**: Default.
-**Sync policy**: Automatic or manual synchronization of resources. [Prune resources](https://argo-cd.readthedocs.io/en/stable/user-guide/auto_sync/#automatic-pruning) will delete resources that are no longer in the Git repo and [Self heal](https://argo-cd.readthedocs.io/en/stable/user-guide/auto_sync/#automatic-self-healing) will reconcile when changes are made in the cluster and deviates from the Git repo.
+**Application Name**: I use the name of the folder in the repo.  
+**Project**: Default.  
+**Sync policy**: Automatic or manual synchronization of resources. [Prune resources](https://argo-cd.readthedocs.io/en/stable/user-guide/auto_sync/#automatic-pruning) will delete resources that are no longer in the Git repo and [Self heal](https://argo-cd.readthedocs.io/en/stable/user-guide/auto_sync/#automatic-self-healing) will reconcile when changes are made in the cluster and deviates from the Git repo.  
 
 ![create argocd app](/img/2022-03-22-12-21-59.png)
 
-**Source**: The Git repository we configured earlier.
-**Revision**: You can change the default refence to watch and you can watch a specific.
-**branch** as well.
-**Path**: Folder in which our manifests are stored in the repo.
+**Source**: The Git repository we configured earlier.  
+**Revision**: You can change the default refence to watch and you can watch a specific.  
+**branch** as well.  
+**Path**: Folder in which our manifests are stored in the repo.  
 
 ![create argocd app](/img/2022-03-22-12-23-18.png)
 
-**Cluster URL**: URL of the kubernetes cluster to watch. By default it is the local cluster where ArgoCD is installed.
-**Namespace**: The namespace where the resources are provisioned.
-**Directory recurse**: Enable so ArgoCD looks for manifests in subfolders.
+**Cluster URL**: URL of the kubernetes cluster to watch. By default it is the local cluster where ArgoCD is installed.  
+**Namespace**: The namespace where the resources are provisioned.  
+**Directory recurse**: Enable so ArgoCD looks for manifests in subfolders.  
 
 ![create argocd app](/img/2022-03-22-12-23-38.png)
 
