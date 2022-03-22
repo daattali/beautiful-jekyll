@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Covid Policy '
+title: 'Covid Policy'
 subtitle: These are FurSquared’s COVID policies for the April 2022 convention.
 ---
 
@@ -20,7 +20,14 @@ subtitle: These are FurSquared’s COVID policies for the April 2022 convention.
 
 #### **Option 1 - Vaccinated & Boosted**
 
-You have completed the primary vaccine series and have received a booster per CDC guidelines linked here: [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html) . The CDC considers boosters to be effective immediately, so there is no additional date restriction.
+You have completed the primary vaccine series and have received a booster per CDC guidelines linked here: [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html). The CDC considers boosters to be effective immediately, so there is no additional date restriction.
+
+We require booster shots if your last vaccine series was on or before the following dates
+
+| Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
+| --- | --- |
+| Last vaccine dose by | Vaccine received by |
+| November 14th, 2021 | February 14th, 2022 |
 
 #### **Option 2 - Recently Vaccinated**
 
