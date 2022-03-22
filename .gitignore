@@ -16,3 +16,4 @@ ehthumbs.db
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 frontmatter.json
+.frontmatter
