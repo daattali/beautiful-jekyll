@@ -12,8 +12,6 @@ subtitle: These are FurSquared’s COVID policies for the April 2022 convention.
 * Masks are required under fursuit heads
 * Fursuit lounges will be open
 
-&nbsp;
-
 ## **Vaccination**
 
 ### **To attend FurSquared 2022, one of the following two situations MUST be true:**
@@ -22,12 +20,14 @@ subtitle: These are FurSquared’s COVID policies for the April 2022 convention.
 
 You have completed the primary vaccine series and have received a booster per CDC guidelines linked here: [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html). The CDC considers boosters to be effective immediately, so there is no additional date restriction.
 
-We require booster shots if your last vaccine series was on or before the following dates
+##### We require booster shots if your last vaccine series was on or before the following dates
 
 | Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
 | --- | --- |
 | Last vaccine dose by | Vaccine received by |
 | November 14th, 2021 | February 14th, 2022 |
+
+&nbsp;
 
 #### **Option 2 - Recently Vaccinated**
 
@@ -91,7 +91,7 @@ Yes. Please remember the rest of the hotel, elevators, hallways, restaurant, and
 
 ### **Will there be unmasked people outside of con space?**
 
-Yes. The Sheraton Milwaukee Brookfield has ended their masking policy. The FurSquared mask policy will apply within convention space.&nbsp;
+Yes. The Sheraton Milwaukee Brookfield has ended their masking policy. The FurSquared mask policy will apply within convention space.
 
 We encourage all attendees to wear masks outside of the convention area.
 
@@ -110,5 +110,3 @@ They will be ejected from the convention, and we will contact law enforcement.
 ## **Questions**
 
 If you have questions about vaccine requirements, testing requirements, or exemptions, please contact us at [covid@fursquared.com](mailto:covid@fursquared.com).
-
-&nbsp;
