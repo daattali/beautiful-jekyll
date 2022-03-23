@@ -14,13 +14,12 @@ permalink: /covid-policy/
   * Masks are required under fursuit heads
 * Fursuit lounges will be open
 
-
 <br />
 
 ## Cheat Sheet
 
 | Condition | Date | Result |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | Pfizer or Moderna (Both shots), NO Booster | On or Before: November 14, 2021 | Must get Booster by/before April 14, 2022 |
 | Johnson & Johnson/Janssen, NO Booster | On or Before: February 14, 2022 | Must get Booster by/before April 14, 2022 |
 | Pfizer or Moderna (Both shots), NO Booster | Between: November 15, 2021 and March 31, 2022 (inclusive) | You can attend F2 without Booster |
