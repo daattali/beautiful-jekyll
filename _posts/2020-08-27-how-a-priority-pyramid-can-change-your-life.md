@@ -1,30 +1,37 @@
 ---
 layout: post
 title: How a Priority Pyramid can Change Your Life
-description: ""
-subtitle: ""
+description: A priority pyramid is a simple tool that can help when feeling overwhelmed
+  with your day in being able to better prioritize your day.
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200826_203743_0001_compress41.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-  - priorities
-  - values
-  - priority pyramid
-  - how to discover your priorities
-  - what matters most
+- priorities
+- values
+- priority pyramid
+- how to discover your priorities
+- what matters most
 redirect_from:
-  - 2020-08-27-how-a-priority-pyramid-can-change-your-life
----
+- 2020-08-27-how-a-priority-pyramid-can-change-your-life
 
-We know what priorities are and what they mean, but how do we really know what comes first? Today on the blog I'm going to share with you a visual way to structure and organize your priorities using a priority pyramid.
+---
+We know what priorities are and what they mean, but how do we really know what comes first? Today on the blog I'm going to share with you a visual way to structure and organize your priorities using a priority pyramid. When we're struggling with the day to day and trying to figure out what to do first and so on, this strategy may be helpful!
 
 ## Brainstorm your important areas of life
 
-Take some time and write down all of the things that are important to you. Organize them into groups from least to most important. It’s important to do this step because in the heat of the moment in your day, you can refer to the pyramid to know which is the most important to focus on first. I originally found this idea from [House Unseen](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts/www.instagram.com/houseunseen) on Instagram and it really helped me going forward when I felt burnt out or overwhelmed. It helped me to see clearly what I needed to prioritize.
+Take some time and write down all of the things that are important to you. Organize them into groups from least to most important. It’s important to do this step because in the heat of the moment in your day, you can refer to the pyramid to know which is the most important to focus on first. I originally found this idea from [House Unseen](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts/www.instagram.com/houseunseen) on Instagram and it really helped me going forward when I felt burnt out or overwhelmed. It helped me to see clearly what I needed to prioritize. When we become overwhelmed throughout the day, it can become really hard to move forward because our brains can become frozen with indecision.
 
-Example of an ordered priority pyramid – it’ll look different for everyone:
+#### An example of an ordered priority pyramid – keep in mind that it’ll look different for everyone:
 
 ![A picture of my ordered priorities.](/uploads/spiritual-life.jpg "pyramid")
+
+#### THREE OTHER EXAMPLES OF PRIORITY PYRAMID CATEGORIES
+
+1. **_Connection_** - with friends, others
+2. **_Study_** - your personal study time or school time
+3. **_Planning_** - planning for any area of your life such as meal planning or goal setting
 
 ## Put Your Priority Pyramid into Practice
 
