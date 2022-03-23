@@ -72,7 +72,7 @@ Proof of vaccination will be required at registration to purchase or pick up a b
   * Vaccine Brand
   * Vaccination Dates
 
-For Wisconsin Residents a valid Vaccine Record can be obtained from WIR at [https://www.dhfswir.org/PR/clientSearch.do?language=en](https://www.dhfswir.org/PR/clientSearch.do?language=en) if an attendee loses their vaccine card.
+For Wisconsin Residents that have lost their CDC card a valid Vaccine Record can be obtained from WIR at [https://www.dhfswir.org/PR/clientSearch.do?language=en](https://www.dhfswir.org/PR/clientSearch.do?language=en).
 
 Please note that we will **not** accept QR codes as proof of vaccination. You must be able to display the information listed above in plain text on your device.
 
