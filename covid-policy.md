@@ -72,6 +72,8 @@ Proof of vaccination will be required at registration to purchase or pick up a b
   * Vaccine Brand
   * Vaccination Dates
 
+For Wisconsin Residents a valid Vaccine Record can be obtained from WIR at [https://www.dhfswir.org/PR/clientSearch.do?language=en](https://www.dhfswir.org/PR/clientSearch.do?language=en) if an attendee loses their vaccine card.
+
 Please note that we will **not** accept QR codes as proof of vaccination. You must be able to display the information listed above in plain text on your device.
 
 **For international attendees**, please bring the document your country uses to record proof of vaccination, or a picture or copy of that document.
@@ -129,4 +131,4 @@ They will be ejected from the convention, and we will contact law enforcement.
 
 ## Questions
 
-If you have questions about vaccine requirements, testing requirements, or documentation requirements, please contact us at [covid@fursquared.com](mailto:covid@fursquared.com).
+If you have questions about vaccine requirements, documentation requirements, or other COVID related questions, please contact us at [covid@fursquared.com](mailto:covid@fursquared.com).
