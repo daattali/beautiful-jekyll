@@ -3,6 +3,7 @@ layout: post
 title: Getting started with GitOps in ArgoCD
 date: 2022-03-22T07:50:19.142Z
 description: Learn how to manage your Kubernetes resources in a Gitops fashion with ArgoCD
+fb-img: /img/2022-03-22-12-31-04.png
 ---
 In this article we are going to talk about GitOps and deliver it to my home automation setup using ArgoCD. It doesn’t have a VMware twist to it but it will be useful as a prerequisite for a future article. My blog somehow took a very kubernetes’esque turn over the past few months as I very much enjoyed learning about it and only beginning. I am essentially reporting on my learning process in these blogs. Referring to my setup as home automation may be a bit presumptuous as I only use a Gygabite mini-PC on K3S to run a few deployments with ingress to access them and [persistent volumes (PV) provisioned on NFS volumes on my Synology NAS](https://www.vxav.fr/2021-10-27-how-to-create-an-nfs-persistent-volume-pv-on-synolgy-nas-in-kubernetes/).
 
