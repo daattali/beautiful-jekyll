@@ -94,7 +94,7 @@ In the interest of transparency, we want to advise our attendees that this polic
 
 Look to our website for the latest up-to-date information.
 
----
+<br />
 
 ## FAQ
 
