@@ -1,4 +1,8 @@
 {
     "css.validate": false,
     "scss.validate": false,
+    "cSpell.ignoreWords": [
+        "Janssen",
+        "Moderna"
+    ],
 }

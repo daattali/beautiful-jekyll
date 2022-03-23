@@ -35,6 +35,8 @@ permalink: /covid-policy/
 
 You have completed the primary vaccine series and have received a booster per CDC guidelines linked here: [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html). The CDC considers boosters to be effective immediately, so there is no additional date restriction.
 
+Additionally, if you are moderately or severely immunocompromised and over the age of 11 the CDC recommends a 4th shot (mRNA) or 3rd shot Johnson & Johnson/Janssen, FurSquared does not require this additional shot, but strongly suggests that eligible attendees do.
+
 We require booster shots if your last vaccine series was on or before the following dates:
 
 | Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
@@ -46,7 +48,7 @@ We require booster shots if your last vaccine series was on or before the follow
 
 ### Option 2 - Recently Vaccinated
 
-You have completed an initial vaccine series by the timeframe listed below. This section only applies if you have received your last vaccine dose too recently (after the above dates) to be eligible for the booster before Fur Squared.
+You have completed an initial vaccine series by the time frame listed below. This section only applies if you have received your last vaccine dose too recently (after the above dates) to be eligible for the booster before Fur Squared.
 
 | Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
 | :---: | :---: |
@@ -69,7 +71,7 @@ Proof of vaccination will be required at registration to purchase or pick up a b
   * Vaccine Brand
   * Vaccination Dates
 
-> Please note that we will **not** accept QR codes as proof of vaccination. You must be able to display the information listed above in plain text on your device.
+Please note that we will **not** accept QR codes as proof of vaccination. You must be able to display the information listed above in plain text on your device.
 
 **For international attendees**, please bring the document your country uses to record proof of vaccination, or a picture or copy of that document.
 
