@@ -72,7 +72,7 @@ Proof of vaccination will be required at registration to purchase or pick up a b
   * Vaccine Brand
   * Vaccination Dates
 
-Attendees that have lost their CDC card can use the below resources to locate records.
+Attendees that have lost their CDC card can use the below resources to locate records:
 
 Wisconsin Residents can access WIR [https://www.dhfswir.org/PR/clientSearch.do](https://www.dhfswir.org/PR/clientSearch.do)
 
