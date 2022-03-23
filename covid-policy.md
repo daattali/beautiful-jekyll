@@ -43,13 +43,13 @@ We require booster shots if your last vaccine series was on or before the follow
 | Last vaccine dose by | Vaccine received by |
 | November 14th, 2021 | February 14th, 2022 |
 
-Additionally, if you are **moderately or severely immunocompromised** and over the **age of 11** the CDC recommends a **4th shot (mRNA) or 3rd shot Johnson & Johnson/Janssen** [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html). FurSquared does **not** require this additional shot, but strongly suggests that eligible attendees do.
+Additionally, if you are moderately or severely **immunocompromised** and **over the age of 11** the CDC recommends a **4th shot (mRNA) or 3rd shot Johnson & Johnson/Janssen** [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html). FurSquared does **not** require this additional shot, but **strongly encourages** eligible attendees to do so.
 
 <br />
 
 ### Option 2 - Recently Vaccinated
 
-You have completed an initial vaccine series by the time frame listed below. This section only applies if you have received your last vaccine dose too recently (after the above dates) to be eligible for the booster before Fur Squared.
+You have completed an initial vaccine series by the time frame listed below. This section **only** applies if you have received your last vaccine dose **too recently** (after the above dates) to be eligible for the booster before Fur Squared.
 
 | Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
 | :---: | :---: |
