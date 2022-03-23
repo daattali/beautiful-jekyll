@@ -129,4 +129,4 @@ They will be ejected from the convention, and we will contact law enforcement.
 
 ## Questions
 
-If you have questions about vaccine requirements, testing requirements, or exemptions, please contact us at [covid@fursquared.com](mailto:covid@fursquared.com).
+If you have questions about vaccine requirements, testing requirements, or documentation requirements, please contact us at [covid@fursquared.com](mailto:covid@fursquared.com).
