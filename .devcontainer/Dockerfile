@@ -2,9 +2,20 @@
 ARG VARIANT=2-bullseye
 FROM mcr.microsoft.com/vscode/devcontainers/ruby:0-${VARIANT}
 
+ENV GITHUB_CLI_VERSION 2.6.0
+
+RUN set -ex; \
+    curl -L "https://github.com/cli/cli/releases/download/v${GITHUB_CLI_VERSION}/gh_${GITHUB_CLI_VERSION}_checksums.txt" -o checksums.txt; \
+    curl -OL "https://github.com/cli/cli/releases/download/v${GITHUB_CLI_VERSION}/gh_${GITHUB_CLI_VERSION}_linux_amd64.deb"; \
+    shasum --ignore-missing -a 512 -c checksums.txt; \
+	dpkg -i "gh_${GITHUB_CLI_VERSION}_linux_amd64.deb"; \
+	rm -rf "gh_${GITHUB_CLI_VERSION}_linux_amd64.deb"; \
+    # verify gh binary works
+    gh --version;
+
 # [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
-ARG NODE_VERSION="none"
-RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
+#ARG NODE_VERSION="none"
+#RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
