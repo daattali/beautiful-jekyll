@@ -1,4 +1,14 @@
 {
     "css.validate": false,
     "scss.validate": false,
+    "cSpell.ignoreWords": [
+        "Janssen",
+        "Moderna",
+        "fursuit"
+    ],
+    "cSpell.words": [
+        "Brookfield",
+        "MIIC",
+        "Waukesha"
+    ],
 }
