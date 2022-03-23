@@ -74,7 +74,7 @@ Proof of vaccination will be required at registration to purchase or pick up a b
 
 Attendees that have lost their CDC card can use the below resources to locate records.
 
-Wisconsin Residents can access WIR [https://www.dhfswir.org/PR/clientSearch.do?language=en](https://www.dhfswir.org/PR/clientSearch.do?language=en).
+Wisconsin Residents can access WIR [https://www.dhfswir.org/PR/clientSearch.do](https://www.dhfswir.org/PR/clientSearch.do).
 
 Illinois Residents can access Vax Verify [https://dph.illinois.gov/vaxverify.html](https://dph.illinois.gov/vaxverify.html).
 
