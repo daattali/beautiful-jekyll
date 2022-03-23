@@ -9,9 +9,11 @@ permalink: /covid-policy/
 
 * Vaccinations are required
 * Boosters are required (unless recently vaccinated, see below)
-* Masks are required in all public hotel spaces
-* Masks are required under fursuit heads
+* If your Badge is on, your Mask is on
+  * Masks are required in all public hotel spaces
+  * Masks are required under fursuit heads
 * Fursuit lounges will be open
+
 
 <br />
 
