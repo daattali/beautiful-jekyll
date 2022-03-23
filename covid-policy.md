@@ -72,7 +72,13 @@ Proof of vaccination will be required at registration to purchase or pick up a b
   * Vaccine Brand
   * Vaccination Dates
 
-For Wisconsin Residents that have lost their CDC card a valid Vaccine Record can be obtained from WIR at [https://www.dhfswir.org/PR/clientSearch.do?language=en](https://www.dhfswir.org/PR/clientSearch.do?language=en).
+Attendees that have lost their CDC card can use the below resources to locate records.
+
+Wisconsin Residents can access WIR [https://www.dhfswir.org/PR/clientSearch.do?language=en](https://www.dhfswir.org/PR/clientSearch.do?language=en).
+
+Illinois Residents can access Vax Verify [https://dph.illinois.gov/vaxverify.html](https://dph.illinois.gov/vaxverify.html).
+
+Minnesota Residents can access MIIC [https://www.health.state.mn.us/people/immunize/miic/records.html](https://www.health.state.mn.us/people/immunize/miic/records.html).
 
 Please note that we will **not** accept QR codes as proof of vaccination. You must be able to display the information listed above in plain text on your device.
 
