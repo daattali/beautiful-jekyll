@@ -13,7 +13,19 @@ permalink: /covid-policy/
 * Masks are required under fursuit heads
 * Fursuit lounges will be open
 
----
+<br />
+
+## Cheat Sheet
+
+| Condition | Date | Result |
+| :---: | :---: | :---: |
+| Pfizer or Moderna, NO Booster | November 14, 2021 | Must get Booster by/before April 14, 2022 |
+| Johnson & Johnson/Janssen, NO Booster | February 14, 2022 | Must get Booster by/before April 14, 2022 |
+| Pfizer or Moderna, NO Booster | March 31, 2022 | You can attend F2 without Booster |
+| Johnson & Johnson/Janssen NO Booster | March 31, 2022 | You can attend F2 without Booster |
+| Any vaccine series AND Booster | April 14, 2022 | You can attend F2! |
+
+<br />
 
 ## Vaccination
 
@@ -23,7 +35,7 @@ permalink: /covid-policy/
 
 You have completed the primary vaccine series and have received a booster per CDC guidelines linked here: [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html). The CDC considers boosters to be effective immediately, so there is no additional date restriction.
 
-We require booster shots if your last vaccine series was on or before the following dates
+We require booster shots if your last vaccine series was on or before the following dates:
 
 | Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
 | :---: | :---: |
@@ -34,7 +46,7 @@ We require booster shots if your last vaccine series was on or before the follow
 
 ### Option 2 - Recently Vaccinated
 
-You have completed an initial vaccine series by the timeframe listed below.
+You have completed an initial vaccine series by the timeframe listed below. This section only applies if you have received your last vaccine dose too recently (after the above dates) to be eligible for the booster before Fur Squared.
 
 | Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
 | :---: | :---: |
