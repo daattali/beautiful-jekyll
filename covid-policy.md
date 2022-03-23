@@ -74,11 +74,11 @@ Proof of vaccination will be required at registration to purchase or pick up a b
 
 Attendees that have lost their CDC card can use the below resources to locate records.
 
-Wisconsin Residents can access WIR [https://www.dhfswir.org/PR/clientSearch.do](https://www.dhfswir.org/PR/clientSearch.do).
+Wisconsin Residents can access WIR [https://www.dhfswir.org/PR/clientSearch.do](https://www.dhfswir.org/PR/clientSearch.do)
 
-Illinois Residents can access Vax Verify [https://dph.illinois.gov/vaxverify.html](https://dph.illinois.gov/vaxverify.html).
+Illinois Residents can access Vax Verify [https://dph.illinois.gov/vaxverify.html](https://dph.illinois.gov/vaxverify.html)
 
-Minnesota Residents can access MIIC [https://www.health.state.mn.us/people/immunize/miic/records.html](https://www.health.state.mn.us/people/immunize/miic/records.html).
+Minnesota Residents can access MIIC [https://www.health.state.mn.us/people/immunize/miic/records.html](https://www.health.state.mn.us/people/immunize/miic/records.html)
 
 Please note that we will **not** accept QR codes as proof of vaccination. You must be able to display the information listed above in plain text on your device.
 
@@ -129,7 +129,7 @@ We encourage all attendees to wear masks outside of the convention area.
 
 Creating fraudulent CDC vaccination cards is a federal crime.
 
-To report suspicious activity involving fake vaccination record cards, please contact the appropriate government agency in your state or jurisdiction, HHS-OIG (1-800-HHS-TIPS or [www.oig.hhs.gov](https://www.oig.hhs.gov/)), or the Internet Crime Complaint Center ([www.ic3.gov](https://www.ic3.gov/)).
+To report suspicious activity involving fake vaccination record cards, please contact the appropriate government agency in your state or jurisdiction, HHS-OIG (1-800-HHS-TIPS or [www.oig.hhs.gov](https://www.oig.hhs.gov/)), or the Internet Crime Complaint Center ([www.ic3.gov](https://www.ic3.gov/))
 
 ### What happens if someone presents a fraudulent proof of vaccination at the convention?
 
@@ -137,4 +137,4 @@ They will be ejected from the convention, and we will contact law enforcement.
 
 ## Questions
 
-If you have questions about vaccine requirements, documentation requirements, or other COVID related questions, please contact us at [covid@fursquared.com](mailto:covid@fursquared.com).
+If you have questions about vaccine requirements, documentation requirements, or other COVID related questions, please contact us at [covid@fursquared.com](mailto:covid@fursquared.com)
