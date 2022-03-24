@@ -1,5 +1,5 @@
 ---
-title: Media interviews
+title: Media
 subtitle: Selection of media appearances
 ---
 
