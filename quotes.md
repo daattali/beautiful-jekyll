@@ -1,6 +1,6 @@
 ---
-title: Media
-subtitle: Selection of media interviews
+title: Media interviews
+subtitle: Selection of media appearances
 ---
 
 MIT Energy Futures Magazine [New England renewables + Canadian hydropower: A pathway to clean electricity in 2050
