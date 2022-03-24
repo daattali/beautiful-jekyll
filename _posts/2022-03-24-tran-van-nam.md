@@ -9,5 +9,5 @@ tags: [books, test]
 ---
 # e
 # 8
-![](2022-03-23-22-00-11.png)
+![](https://github.com/Namtv2312/Namtv2312.github.io/raw/master/_posts/2022-03-23-22-00-11.png)
 ![image](https://user-images.githubusercontent.com/60953789/159830278-1ca13a84-c516-4f8b-877a-def51f74240c.png)
