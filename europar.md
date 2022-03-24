@@ -28,7 +28,7 @@ Topics of interest include, but are not limited to:
 - Programmer productivity studies  
 
 ### Submission instructions
-We invite you to submit research papers detailing original work. All submissions must be in PDF format and follow the [Springer LNCS style](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines). Papers should not exceed 12 pages (including references) and can be submitted via the Euro-Par 2022 workshops Easychair [here](https://easychair.org/conferences/?conf=europar2022) (ensure you select the correct workshop when creating the submission).
+We invite you to submit research papers detailing original work. All submissions must be in PDF format and follow the [Springer LNCS style](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines). Papers should not exceed 12 pages (including references) and can be submitted via the Euro-Par 2022 workshops Easychair [here](https://easychair.org/conferences/?conf=europar2022) (ensure you select the correct track to submit to which is _EuroPar Workshop on Domain Specific Languages for High Performance Computing 2022_).
 
 All submitted research papers will be peer-reviewed and accepted papers will be included in the workshop post-proceedings published by Springer. Please note that for a paper to be published it must be between 10 and 12 pages long.
 
