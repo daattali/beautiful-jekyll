@@ -6,24 +6,17 @@ subtitle: Things to do at Fur Squared
 
 &nbsp;
 
-## Programming Submissions
+## Programming Schedule
 
-Programming submissions for Fur Squared 2022 are now open\! If you would like to host an event at Fur Squared, please complete our [application form here](https://forms.gle/LXqs2LHd78RtRA1E8){: target="_blank" rel="noopener"}. Never hosted an event before but want to try? Give it a shot\! We're always excited to host new and returning panelists alike.
+This year's digital schedule is available [here](https://fursquared.zohobackstage.com/2022){: target="_blank" rel="noopener"}\!
 
-**The deadline to submit your application is February 18th, 2022.**
+We encourage you to make an optional free Zoho account to bookmark events you'd like to attend, and **download a custom itinerary for offline access**. Additionally, attendees with smartphones may wish to download the free "Zoho Backstage for Attendees" app from their app store of choice.
 
-Please have the following information ready to complete your application:
+Note that our event will not initially appear in the app's search results when downloaded. To access our schedule via the Zoho Backstage app, first download the app on your smart device then click the link to the schedule at the top of this page. The schedule should then open in the Zoho Backstage app, and be available for the remainder of the event.
 
-* Email address
-* Fandom and Legal Names
-* Event Title and Description
-* Names of any co-hosts
-* Age Restriction (All ages, 18+, or 21+)
-* Event Duration
-* Set Up and Tear Down time desired, if any
-* Preferred Days and Times
-* Equipment Requests (microphone and speakers, projector, etc.)
-* Will you need volunteers?
+### Is there a fursuit parade this year?
+
+In an effort to protect our attendees and prevent the spread of Covid-19, we will unfortunately not be having a fursuit parade this year. Instead, we will be having an expanded series of fursuit photoshoots with our staff photographers\! Further details on times and locations will be added to the schedule soon.
 
 ## Fursuit Dance Competition
 
