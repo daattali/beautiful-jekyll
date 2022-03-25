@@ -18,6 +18,8 @@ display_categories: [work]
      <font size="3"> Fleur Gaudfernau, Eléonore Blondiaux, Stéphanie Allassonniere</font><br>
       <a href="https://hal.archives-ouvertes.fr/hal-03546165v1/"> <img src="https://img.shields.io/badge/Read on HAL-ff5e3b.svg" /> </a>
 
+<hr style="border:1px solid #2b6777"/>
+
 ### Journal articles
 <b>Characteristics associated with feeding organic foods during complementary feeding: the nationwide Étude Longitudinale Française depuis l’Enfance (ELFE) birth cohort<br></b>
      <font size="3"> Blandine de Lauzon-Guillain, Fleur Gaudfernau, Aurore Camier, Camille Davisse-Paturet, Sandrine Lioret, Sophie Nicklaus, Marie-Aline Charles, Emmanuelle Kesse-Guyot<br>
