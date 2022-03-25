@@ -8,12 +8,17 @@ display_categories: [work]
 
 <div align="center"><img src="/assets/img/output-onlinegiftools(14).gif" width="200"/><br /><a href="https://www.deformetrica.org/"> 
     <img src="https://img.shields.io/badge/Made with Deformetrica-656262.svg" width="110"/></a><img src="/assets/img/deformetrica.png" alt="drawing" width="30"/></div>
+    
+### Preprints
+<b>Wavelet-Based Multiscale Initial Flow For Improved Atlas Estimation in the Large Diffeomorphic Deformation Model Framework</b><br>
+     <font size="3"> Fleur Gaudfernau, Eléonore Blondiaux, Stéphanie Allassonniere, Erwan Le Pennec</font><br>
+      <a href="https://hal.archives-ouvertes.fr/hal-03546165v1/"> <img src="https://img.shields.io/badge/Read on HAL-ff5e3b.svg" /> </a> 
+
+<b>Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis</b><br>
+     <font size="3"> Fleur Gaudfernau, Eléonore Blondiaux, Stéphanie Allassonniere</font><br>
+      <a href="https://hal.archives-ouvertes.fr/hal-03546165v1/"> <img src="https://img.shields.io/badge/Read on HAL-ff5e3b.svg" /> </a>
 
 ### Journal articles
-<b>Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis</b><br>
-     <font size="3"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere</font><br>
-      <a href="https://hal.archives-ouvertes.fr/hal-03546165v1/"> <img src="https://img.shields.io/badge/Read on HAL-ff5e3b.svg" /> </a> <img src="https://img.shields.io/badge/Preprint-F4BB44.svg" width="60" height="20"> 
-
 <b>Characteristics associated with feeding organic foods during complementary feeding: the nationwide Étude Longitudinale Française depuis l’Enfance (ELFE) birth cohort<br></b>
      <font size="3"> Blandine de Lauzon-Guillain, Fleur Gaudfernau, Aurore Camier, Camille Davisse-Paturet, Sandrine Lioret, Sophie Nicklaus, Marie-Aline Charles, Emmanuelle Kesse-Guyot<br>
      British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), pp.1215-1224.</font><br>
