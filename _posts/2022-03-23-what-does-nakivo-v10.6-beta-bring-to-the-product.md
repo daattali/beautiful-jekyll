@@ -32,7 +32,7 @@ While this feature will not be useful to everyone, those Nimble Storage customer
 
 ## Claim your $20 Amazon Gift card
 
-![Nakivo $20 amazon gift card beta 10.6](/img/2022-03-24-20-05-14.png) 
+![Nakivo $20 amazon gift card beta 10.6](/img/2022-03-24-20-05-14.png)
 
 Claim a $20 Amazon eGift card by downloading and testing [Nakivo v10.6 beta](https://www.nakivo.com/resources/releases/10.6-beta/). Follow these steps to get yours:
 
