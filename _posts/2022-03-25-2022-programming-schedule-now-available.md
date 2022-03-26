@@ -15,3 +15,7 @@ Note that our event will not initially appear in the app's search results when d
 Operating hours for convention departments (Operations, Registration, Artists' Alley, Dealers' Den, etc.) will be added as they are finalized.
 
 We look forward to seeing you all in a few weeks at Fur Squared 2022 - CONspiracy\!
+
+### Fursuit Parade Addendum
+
+We've received a lot of questions about the fursuit parade missing from the schedule. In an effort to protect our attendees and prevent the spread of Covid-19, we will unfortunately not be having a fursuit parade this year. Instead, we will be having an expanded series of fursuit photoshoots with our staff photographers\! Further details on times and locations will be added to the schedule soon.
