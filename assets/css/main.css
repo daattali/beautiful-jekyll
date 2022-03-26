@@ -875,6 +875,10 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
+table.fixed-table {
+  table-layout: fixed;
+}
+
 /* --- Code blocks --- */
 
 pre {
