@@ -24,7 +24,8 @@ permalink: /covid-policy/
 | Johnson & Johnson/Janssen, NO Booster | On or Before: February 14, 2022 | Must get Booster by/before April 14, 2022 |
 | Pfizer or Moderna (Both shots), NO Booster | Between: November 15, 2021 and March 31, 2022 (inclusive) | You can attend F2 without Booster |
 | Johnson & Johnson/Janssen NO Booster | Between: February 14, 2022 and March 31, 2022 (inclusive) | You can attend F2 without Booster |
-| Any vaccine series (all dose(s)) AND 1 Booster | On or Before: April 14, 2022 | You can attend F2! |{: .fixed-table }
+| Any vaccine series (all dose(s)) AND 1 Booster | On or Before: April 14, 2022 | You can attend F2! |
+{: .fixed-table }
 
 <br />
 
