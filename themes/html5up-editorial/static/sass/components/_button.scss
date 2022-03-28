@@ -1,0 +1,85 @@
+///
+/// Editorial by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		@include vendor('appearance', 'none');
+		@include vendor('transition', (
+			'background-color #{_duration(transition)} ease-in-out',
+			'color #{_duration(transition)} ease-in-out'
+		));
+		background-color: transparent;
+		border-radius: _size(border-radius);
+		border: 0;
+		box-shadow: inset 0 0 0 2px _palette(accent);
+		color: _palette(accent) !important;
+		cursor: pointer;
+		display: inline-block;
+		font-family: _font(family-heading);
+		font-size: 0.8em;
+		font-weight: _font(weight-heading);
+		height: 3.5em;
+		letter-spacing: _font(kerning-heading);
+		line-height: 3.5em;
+		padding: 0 2.25em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+
+		&:hover {
+			background-color: transparentize(_palette(accent), 0.95);
+		}
+
+		&:active {
+			background-color: transparentize(_palette(accent), 0.85);
+		}
+
+		&.icon {
+			&:before {
+				margin-right: 0.5em;
+			}
+		}
+
+		&.fit {
+			width: 100%;
+		}
+
+		&.small {
+			font-size: 0.6em;
+		}
+
+		&.large {
+			font-size: 1em;
+			height: 3.65em;
+			line-height: 3.65em;
+		}
+
+		&.primary {
+			background-color: _palette(accent);
+			box-shadow: none;
+			color: _palette(bg) !important;
+
+			&:hover {
+				background-color: lighten(_palette(accent), 3);
+			}
+
+			&:active {
+				background-color: darken(_palette(accent), 3);
+			}
+		}
+
+		&.disabled,
+		&:disabled {
+			@include vendor('pointer-events', 'none');
+			opacity: 0.25;
+		}
+	}

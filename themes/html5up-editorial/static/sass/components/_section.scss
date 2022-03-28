@@ -1,0 +1,39 @@
+///
+/// Editorial by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Section/Article */
+
+	section, article {
+		&.special {
+			text-align: center;
+		}
+	}
+
+	header {
+		p {
+			font-family: _font(family-heading);
+			font-size: 1em;
+			font-weight: _font(weight-heading-alt);
+			letter-spacing: _font(kerning-heading);
+			margin-top: -0.5em;
+			text-transform: uppercase;
+		}
+
+		&.major {
+			> :last-child {
+				border-bottom: solid 3px _palette(accent);
+				display: inline-block;
+				margin: 0 0 _size(element-margin) 0;
+			 	padding: 0 0.75em 0.5em 0;
+			}
+		}
+
+		&.main {
+			> :last-child {
+				margin: 0 0 (_size(element-margin) * 0.5) 0;
+			}
+		}
+	}

@@ -1,0 +1,179 @@
+///
+/// Editorial by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Posts */
+
+	.posts {
+		$gutter: (_size(gutter) * 2);
+
+		@include vendor('display', 'flex');
+		@include vendor('flex-wrap', 'wrap');
+		margin: 0 0 _size(element-margin) ($gutter * -1);
+		width: calc(100% + #{$gutter});
+
+		article {
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '1');
+			margin: 0 0 $gutter $gutter;
+			position: relative;
+			width: calc(#{(100% / 3)} - #{$gutter});
+
+			&:before {
+				background: _palette(border);
+				content: '';
+				display: block;
+				height: calc(100% + #{$gutter});
+				left: ($gutter * -0.5);
+				position: absolute;
+				top: 0;
+				width: 1px;
+			}
+
+			&:after {
+				background: _palette(border);
+				bottom: ($gutter * -0.5);
+				content: '';
+				display: block;
+				height: 1px;
+				position: absolute;
+				right: 0;
+				width: calc(100% + #{$gutter});
+			}
+
+			> :last-child {
+				margin-bottom: 0;
+			}
+
+			.image {
+				display: block;
+				margin: 0 0 _size(element-margin) 0;
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+
+		@include breakpoint('xlarge-to-max') {
+			article {
+				&:nth-child(3n + 1) {
+					&:before {
+						display: none;
+					}
+
+					&:after {
+						width: 100%;
+					}
+				}
+
+				&:nth-last-child(1),
+				&:nth-last-child(2),
+				&:nth-last-child(3) {
+					margin-bottom: 0;
+
+					&:before {
+						height: 100%;
+					}
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=xlarge') {
+			article {
+				width: calc(50% - #{$gutter});
+
+				&:nth-last-child(3) {
+					margin-bottom: $gutter;
+				}
+			}
+		}
+
+		@include breakpoint('small-to-xlarge') {
+			article {
+				&:nth-child(2n + 1) {
+					&:before {
+						display: none;
+					}
+
+					&:after {
+						width: 100%;
+					}
+				}
+
+				&:nth-last-child(1),
+				&:nth-last-child(2) {
+					margin-bottom: 0;
+
+					&:before {
+						height: 100%;
+					}
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			$gutter: _size(gutter) * 1.5;
+
+			margin: 0 0 _size(element-margin) ($gutter * -1);
+			width: calc(100% + #{$gutter});
+
+			article {
+				margin: 0 0 $gutter $gutter;
+				width: calc(50% - #{$gutter});
+
+				&:before {
+					height: calc(100% + #{$gutter});
+					left: ($gutter * -0.5);
+				}
+
+				&:after {
+					bottom: ($gutter * -0.5);
+					width: calc(100% + #{$gutter});
+				}
+
+				&:nth-last-child(3) {
+					margin-bottom: $gutter;
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			$gutter: _size(gutter) * 1.5;
+
+			margin: 0 0 _size(element-margin) 0;
+			width: 100%;
+
+			article {
+				margin: 0 0 $gutter 0;
+				width: 100%;
+
+				&:before {
+					display: none;
+				}
+
+				&:after {
+					width: 100%;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}

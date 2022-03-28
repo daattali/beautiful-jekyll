@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "a-pym-s-life"
+version = "2.0.0"
+description = "A blog about a really weird life"
+authors = ["Pierre-Yves Martin <pym.aldebaran@gmail.com>"]
+license = "CC-BY-SA 4.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pelican = {extras = ["markdown"], version = "^4.7.2"}
+typogrify = "^2.0.7"
+pelican-frontmark = "^1.2.1"
+pelican-neighbors = "^1.2.0"
+pelican-pandoc-reader = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

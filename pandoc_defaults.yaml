@@ -1,0 +1,5 @@
+reader: markdown+strikeout+superscript+subscript+tex_math_dollars
+writer: html5
+html-math-method:
+    method: mathjax
+    url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"

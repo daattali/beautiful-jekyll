@@ -1,0 +1,75 @@
+///
+/// Editorial by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Banner */
+
+	#banner {
+		@include padding(6em, 0);
+		@include vendor('display', 'flex');
+
+		h1 {
+			margin-top: -0.125em;
+		}
+
+		.content {
+			@include vendor('flex-grow', '1');
+			@include vendor('flex-shrink', '1');
+			width: 50%;
+		}
+
+		.image {
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '0');
+			display: block;
+			margin: 0 0 _size(element-margin) (_size(element-margin) * 2);
+			width: 50%;
+
+			img {
+				height: 100%;
+				-moz-object-fit: cover;
+				-webkit-object-fit: cover;
+				-ms-object-fit: cover;
+				object-fit: cover;
+				-moz-object-position: center;
+				-webkit-object-position: center;
+				-ms-object-position: center;
+				object-position: center;
+				width: 100%;
+			}
+		}
+
+		@include orientation(portrait) {
+			@include vendor('flex-direction', 'column-reverse');
+
+			h1 {
+				br {
+					display: none;
+				}
+			}
+
+			.content {
+				@include vendor('flex-grow', '0');
+				@include vendor('flex-shrink', '0');
+				width: 100%;
+			}
+
+			.image {
+				@include vendor('flex-grow', '0');
+				@include vendor('flex-shrink', '0');
+				margin: 0 0 (_size(element-margin) * 2) 0;
+				height: 25em;
+				max-height: 50vh;
+				min-height: 18em;
+				width: 100%;
+			}
+
+			@include breakpoint('<=xsmall') {
+				.image {
+					max-height: 35vh;
+				}
+			}
+		}
+	}

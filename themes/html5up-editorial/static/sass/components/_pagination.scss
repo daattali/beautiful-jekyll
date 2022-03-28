@@ -1,0 +1,70 @@
+///
+/// Editorial by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Pagination */
+
+	ul.pagination {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			display: inline-block;
+			padding-left: 0;
+			vertical-align: middle;
+
+			> .page {
+				@include vendor('transition', (
+					'background-color #{_duration(transition)} ease-in-out',
+					'color #{_duration(transition)} ease-in-out'
+				));
+				border-bottom: 0;
+				border-radius: _size(border-radius);
+				display: inline-block;
+				font-size: 0.8em;
+				font-weight: _font(weight-bold);
+				height: 2em;
+				line-height: 2em;
+				margin: 0 0.125em;
+				min-width: 2em;
+				padding: 0 0.5em;
+				text-align: center;
+
+				&.active {
+					background-color: _palette(accent);
+					color: _palette(bg) !important;
+
+					&:hover {
+						background-color: lighten(_palette(accent), 3);
+					}
+
+					&:active {
+						background-color: darken(_palette(accent), 3);
+					}
+				}
+			}
+
+			&:first-child {
+				padding-right: 0.75em;
+			}
+
+			&:last-child {
+				padding-left: 0.75em;
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			li {
+				&:nth-child(n+2):nth-last-child(n+2) {
+					display: none;
+				}
+
+				&:first-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
