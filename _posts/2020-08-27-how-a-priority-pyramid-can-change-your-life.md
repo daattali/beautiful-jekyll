@@ -35,7 +35,12 @@ Take some time and write down all of the things that are important to you. Organ
 
 ## Put Your Priority Pyramid into Practice
 
-A priority pyramid is meant to be a tool, something to help you out when needed. Refer to it often when you are faced with overwhelm in your day to help you move forward. It may help refocus you on what matters most! Keep it in a place where you may see it often if that’s helpful, too. 
+A priority pyramid is meant to be a tool, something to help you out when needed. Refer to it often when you are faced with overwhelm in your day to help you move forward. It may help refocus you on what matters most! Keep it in a place where you may see it often if that’s helpful, too.
+
+**Related:**
+
+* [A Simple Practice to Improve Your Daily to do List and Routines](https://www.simplehomemom.com/a-simple-practice-to-improve-your-daily-to-do-list-and-routines/)
+* [10 Ways to Simplify Your to do List](https://www.simplehomemom.com/10-ways-to-simplify-your-to-do-list/)
 
 ### DOWNLOAD YOUR FREE PRINTABLE DAILY PLANNER SHEET: a gift for you!
 
