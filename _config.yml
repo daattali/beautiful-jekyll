@@ -161,7 +161,21 @@ footer-hover-col: "#0085A1"
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
 
-# commentbox: "" # Project ID, e.g. "5694267682979840-proj"
+# To use CommentBox, sign up for a Project ID on https://commentbox.io
+#commentbox: "" # Project ID, e.g. "5694267682979840-proj"
+
+# To Use Telegram DiscussBot, sign up on https://comments.app with your Telegram Account
+# You cannot delete a website after adding one, but you can disconnect
+discussbot:
+  siteid: wy3Q89tS # Site ID
+  comments: 5 # Comments Shown, default 5
+  height: auto # Height of comment section. Default Auto
+  color: 319BE6 # Accent color. Default not set
+  dislikes: false # Show dislikes. False = no dislikes
+  outline: false # Outlined like and dislike icons. False = filled
+  colorful: false # Different colors for different users. False = same color
+  darktheme: false # Use dark theme for comment section? False = light theme
+
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,
