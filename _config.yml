@@ -165,16 +165,16 @@ footer-hover-col: "#0085A1"
 #commentbox: "" # Project ID, e.g. "5694267682979840-proj"
 
 # To Use Telegram DiscussBot, sign up on https://comments.app with your Telegram Account
-# You cannot delete a website after adding one, but you can disconnect
+# Note: You cannot delete websites after adding it to comments.app, only changing addresses
 #discussbot:
 #  siteid: # Site ID
 #  comments: 5 # Comments Shown, default 5
-#  height: auto # Height of comment section. Default Auto
-#  color: 319BE6 # Accent color. Default not set
-#  dislikes: false # Show dislikes. False = no dislikes
-#  outline: false # Outlined like and dislike icons. False = filled
-#  colorful: false # Different colors for different users. False = same color
-#  darktheme: false # Use dark theme for comment section? False = light theme
+#  height: auto # Height of comment section. By default auto
+#  color: 319BE6 # Accent color. Use 319BE6 for default colors
+#  dislikes: false # Show dislikes. false = no dislikes
+#  outline: false # Outlined like and dislike icons. false = filled
+#  colorful: false # Different colors for different users. false = same color
+#  darktheme: false # Use dark theme for comment section? false = light theme
 
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
