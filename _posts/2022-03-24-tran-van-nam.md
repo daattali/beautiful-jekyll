@@ -15,5 +15,5 @@ tags: [books, test]
 
 ![](2022-03-30-17-22-28.png)
 ![](f:/Namtv2312.github.io/_posts/undefined/assets/2022-03-30-17-24-32.png)
-![](../2022-03-30-17-28-12.png)
-![](../2022-03-30-17-29-20.png)
+![](/undefined/assets/2022-03-30-17-24-32.png)
+![](/assets/2022-03-30-17-22-28.png)
