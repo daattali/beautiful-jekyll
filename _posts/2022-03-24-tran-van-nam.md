@@ -23,3 +23,8 @@ tags: [books, test]
 
 
 ![](/_posts/undefined/assets/2022-03-30-17-24-32.png)
+![](../undefined/2022-03-30-18-03-53.png)
+![](undefined/assets/${currentFileNamewithoutExt}/2022-03-30-18-09-54.png)
+![](/undefined/assets/${currentFileNamewithoutExt}/2022-03-30-18-11-28.png)
+![](/../assets/${currentFileNamewithoutExt}/2022-03-30-18-14-04.png)
+![](/../assets/2022-03-24-tran-van-nam/2022-03-30-18-15-52.png)
