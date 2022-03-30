@@ -1,5 +1,0 @@
-{% if site.discussbot %}
-
-    <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="{{ site.discussbot.siteid }}" data-limit="{{ site.discussbot.comments }}" {% if site.discussbot.height != auto %}data-height="{{ site.discussbot.height }}"{% endif %} {% if site.discussbot.color != 319BE6 %}}data-color="{{ site.discussbot.color }}"{% endif %} {% if site.discussbot.dislikes == true %}data-dislikes="1"{% endif %} {% if site.discussbot.outline == true %}data-outlined="1"{% endif %} {% if site.discussbot.colorful == true %}data-colorful="1"{% endif %} {% if site.discussbot.darktheme == true %}data-dark="1"{% endif %}></script>
-
-{% endif %}

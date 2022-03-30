@@ -164,19 +164,6 @@ footer-hover-col: "#0085A1"
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
 #commentbox: "" # Project ID, e.g. "5694267682979840-proj"
 
-# To Use Telegram DiscussBot, sign up on https://comments.app with your Telegram Account
-# Note: You cannot delete websites after adding it to comments.app, only changing addresses
-#discussbot:
-#  siteid: # Site ID
-#  comments: 5 # Comments Shown, default 5
-#  height: auto # Height of comment section. By default auto
-#  color: 319BE6 # Accent color. Use 319BE6 for default colors
-#  dislikes: false # Show dislikes. false = no dislikes
-#  outline: false # Outlined like and dislike icons. false = filled
-#  colorful: false # Different colors for different users. false = same color
-#  darktheme: false # Use dark theme for comment section? false = light theme
-
-
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,
 # (3) Install the Utterances app in your repository https://github.com/apps/utterances
