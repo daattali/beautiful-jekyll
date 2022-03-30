@@ -14,20 +14,20 @@ permalink: /covid-policy/
   * Masks are required under fursuit heads
 * Fursuit lounges will be open
 
-<br />
+&nbsp;
 
 ## Cheat Sheet
 
 | Condition | Date | Result |
-| :---: | :---: | :---: |
+| --- | --- | --- |
 | Pfizer or Moderna (Both shots), NO Booster | On or Before: November 14, 2021 | Must get Booster by/before April 14, 2022 |
 | Johnson & Johnson/Janssen, NO Booster | On or Before: February 14, 2022 | Must get Booster by/before April 14, 2022 |
 | Pfizer or Moderna (Both shots), NO Booster | Between: November 15, 2021 and March 31, 2022 (inclusive) | You can attend F2 without Booster |
 | Johnson & Johnson/Janssen NO Booster | Between: February 14, 2022 and March 31, 2022 (inclusive) | You can attend F2 without Booster |
-| Any vaccine series (all dose(s)) AND 1 Booster | On or Before: April 14, 2022 | You can attend F2! |
-{: .fixed-table }
+| Any vaccine series (all dose(s)) AND 1 Booster | On or Before: April 14, 2022 | You can attend F2\! |
+{: .fixed-table}
 
-<br />
+&nbsp;
 
 ## Vaccination
 
@@ -40,26 +40,26 @@ You have completed the primary vaccine series and have received a booster per CD
 We require booster shots if your last vaccine series was on or before the following dates:
 
 | Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
-| :---: | :---: |
+| --- | --- |
 | Last vaccine dose by | Vaccine received by |
 | November 14th, 2021 | February 14th, 2022 |
 
 Additionally, if you are moderately or severely **immunocompromised** and **over the age of 11** the CDC recommends a **4th shot (mRNA) or 3rd shot Johnson & Johnson/Janssen** [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html). FurSquared does **not** require this additional shot, but **strongly encourages** eligible attendees to do so.
 
-<br />
+&nbsp;
 
 ### Option 2 - Recently Vaccinated
 
 You have completed an initial vaccine series by the time frame listed below. This section **only** applies if you have received your last vaccine dose **too recently** (after the above dates) to be eligible for the booster before Fur Squared.
 
 | Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
-| :---: | :---: |
+| --- | --- |
 | Last vaccine dose by | Vaccine received by |
 | March 31st, 2022 | March 31st, 2022 |
 
 Proof of vaccination will be required at registration to purchase or pick up a badge.
 
-<br />
+&nbsp;
 
 ## Proof of Vaccination
 
@@ -91,6 +91,8 @@ Any COVID-19 vaccine governmentally approved for use in your home country will b
 
 Masks are required at all times in convention spaces, including while in a fursuit.
 
+Masks may be temporarily removed while eating (such​​​​ as in the dining & bar are of the hotel, or at the sponsor dinner), but must put them back on immediately when finished eating.
+
 Balaclavas, items made of thin & stretchy materials, and single-layer cloth masks alone are not acceptable masks, they must be combined with another type of face covering.
 
 ## Policy Changes
@@ -104,7 +106,7 @@ In the interest of transparency, we want to advise our attendees that this polic
 
 Look to our website for the latest up-to-date information.
 
-<br />
+&nbsp;
 
 ## FAQ
 
