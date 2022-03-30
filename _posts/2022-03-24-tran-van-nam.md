@@ -13,18 +13,7 @@ tags: [books, test]
 ![image](https://user-images.githubusercontent.com/60953789/159830278-1ca13a84-c516-4f8b-877a-def51f74240c.png)
 ![](/assets/img/path.jpg)
 
-![](/assets/assets/2022-03-30-17-22-28.png)
-![](/assets/assets/2022-03-17-22-28.png)
-
-![](2022-03-30-17-22-28.png)
-![](f:/Namtv2312.github.io/_posts/undefined/assets/2022-03-30-17-24-32.png)
-![](./undefined/assets/2022-03-30-17-24-32.png)
-![](./assets/2022-03-30-17-22-28.png)
-
-
-![](/_posts/undefined/assets/2022-03-30-17-24-32.png)
-![](../undefined/2022-03-30-18-03-53.png)
-![](undefined/assets/${currentFileNamewithoutExt}/2022-03-30-18-09-54.png)
-![](/undefined/assets/${currentFileNamewithoutExt}/2022-03-30-18-11-28.png)
-![](/../assets/${currentFileNamewithoutExt}/2022-03-30-18-14-04.png)
-![](/../assets/2022-03-24-tran-van-nam/2022-03-30-18-15-52.png)
+# new test
+![](/assets../assets/2022-03-24-tran-van-nam/2022-03-30-18-35-49.png)
+# ok
+![](../assets/2022-03-24-tran-van-nam/2022-03-30-18-36-57.png)
