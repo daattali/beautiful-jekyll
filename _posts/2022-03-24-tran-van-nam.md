@@ -24,3 +24,7 @@ tags: [books, test]
  ## testn
 
  ![](/assets/2022-03-24-tran-van-nam/2022-03-30-19-15-41.png)
+ 1
+ ![](/assets/img/2022-03-24-tran-van-nam/2022-03-30-19-17-47.png)
+ 3
+ ![](/assets/img/2022-03-24-tran-van-nam/2022-03-30-19-18-48.png)
