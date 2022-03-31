@@ -15,4 +15,6 @@ For 2022, Fur Squared is celebrating the fandom contributions of Rafferty and Si
 
 &nbsp;
 
-![](/uploads/sin-image.jpg){: width="1024" height="512"}**SIN** is a creator of big buff monsters, writes stories that goes along with them, sticker designer and graphic designer. Their current work is working on a sci-fi Visual Novel called MELT. Summon them when you need a tentacle fix. Sin can be found online at: [Twitter](https://twitter.com/SINGrinz){: target="_blank" rel="noopener"}.
+![](/uploads/sin-image.jpg){: width="1024" height="512"}
+
+**SIN** is a creator of big buff monsters, writes stories that goes along with them, sticker designer and graphic designer. Their current work is working on a sci-fi Visual Novel called MELT. Summon them when you need a tentacle fix. Sin can be found online at: [Twitter](https://twitter.com/SINGrinz){: target="_blank" rel="noopener"}.
