@@ -388,11 +388,14 @@ year={2021}}</pre>
             </div>
             <div id="bib2021zephyr" style="display:none">
                 <blockquote>
-                    <pre>@inproceedings{icra2021zephyr,
-                    title={ZePHyR: Zero-shot Pose Hypothesis Rating},
-                    author={Brian Okorn, Qiao Gu, Martial Hebert, David Held},
-                    booktitle={2021 International Conference on Robotics and Automation (ICRA)},
-                    year={2021}}</pre>
+                    <pre>@inproceedings{okorn2021zephyr,
+                    title={Zephyr: Zero-shot pose hypothesis rating},
+                    author={Okorn, Brian and Gu, Qiao and Hebert, Martial and Held, David},
+                    booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+                    pages={14141--14148},
+                    year={2021},
+                    organization={IEEE}
+                  }</pre>
                 </blockquote>
             </div>
             <div id="abs2021zephyr" style="display:none">
