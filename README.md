@@ -34,7 +34,7 @@ __Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lat
 - **Flexible usage**: Use Beautiful Jekyll directly on GitHub or via a Ruby gem - choose the best [development method](#build-your-website-in-3-steps) for you.
 - **Battle-tested**: By using Beautiful Jekyll, you'll be joining 50,000+ users enjoying this theme since 2015.
 - **SEO and social media support**: Customize how your site looks on Google and when shared on social media.
-- **Comments support**: Add comments to any page using either [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), [Staticman](https://staticman.net), or [giscus](https://giscus.app).
+- **Comments support**: Add comments to any page using either [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), [Staticman](https://staticman.net), [giscus](https://giscus.app), or [CommentBox](https://commentbox.io/).
 - **Tags**: Any blog post can be tagged with keywords, and an index page is automatically generated.
 - **Analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
 - **Search**: Let users easily find any page using a Search button in the navigation bar.
