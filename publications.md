@@ -137,7 +137,7 @@ Previous works have shown that differentiable physics simulators provide gradien
                         @article{mittal2021self,
                           title={Self-Supervised Point Cloud Completion via Inpainting},
                           author={Mittal, Himangi and Okorn, Brian and Jangid, Arpit and Held, David},
-                          journal={arXiv preprint arXiv:2111.10701},
+                          journal={British Machine Vision Conference (BMVC), 2021},
                           year={2021}
                         }
                         </pre>
