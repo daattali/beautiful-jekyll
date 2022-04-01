@@ -59,12 +59,11 @@ Previous works have shown that differentiable physics simulators provide gradien
             </div>
             <div id="bib2022pouring" style="display:none">
                 <blockquote>
-                    <pre>@inproceedings{icra2022pouring,
-                        title={Transparent Liquid Segmentation for Robotic Pouring},
-                        author={Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
-                        booktitle={2022 International Conference on Robotics and Automation (ICRA)},
-                        year={2022}}
-                    </pre>
+<pre>@inproceedings{icra2022pouring,
+title={Transparent Liquid Segmentation for Robotic Pouring},
+author={Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
+booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+year={2022}}</pre>
                 </blockquote>
             </div>
             <div id="abs2022pouring" style="display:none">
@@ -133,14 +132,12 @@ Previous works have shown that differentiable physics simulators provide gradien
             </div>
             <div id="bib2021bmvc" style="display:none">
                     <blockquote>
-                        <pre>
-                        @article{mittal2021self,
-                          title={Self-Supervised Point Cloud Completion via Inpainting},
-                          author={Mittal, Himangi and Okorn, Brian and Jangid, Arpit and Held, David},
-                          journal={British Machine Vision Conference (BMVC), 2021},
-                          year={2021}
-                        }
-                        </pre>
+<pre>@article{mittal2021self,
+  title={Self-Supervised Point Cloud Completion via Inpainting},
+  author={Mittal, Himangi and Okorn, Brian and Jangid, Arpit and Held, David},
+  journal={British Machine Vision Conference (BMVC), 2021},
+  year={2021}
+}</pre>
                 </blockquote>
             </div>
             <div id="abs2021bmvc" style="display:none">
@@ -186,25 +183,26 @@ Previous works have shown that differentiable physics simulators provide gradien
         </td>
     </tr>
 
+
     <tr>
-        <td class="pubimg" width="250" height="150" style="text-align:center">
-            <img src="../pics/sod_tgnn.jpg" width="250">
-        </td>
-        <td><a href="https://arxiv.org/pdf/2202.00182.pdf">Semi-supervised 3D Object Detection via Temporal Graph Neural Networks</a><br>
-            <div class="pubauthor">Jianren Wang, Haiming Gang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
-            </div>
-            <div class="pubjournal">International Conference on 3D Vision (3DV), 2021</div>
-            <div id="div20213dV" class="pubInfo"></div>
-            <div id="bibdiv20213dV" style="display:none">
-                <blockquote>
+    <td class="pubimg" width="250" height="100" style="text-align:center">
+        <img src="../pics/sod_tgnn.jpg" img width="250">
+    </td>
+    <td><a href="https://arxiv.org/pdf/2202.00182.pdf">Semi-supervised 3D Object Detection via Temporal Graph Neural Networks</a><br>
+        <div class="pubauthor">Jianren Wang, Haiming Gang, Siddharth Ancha, Yi-ting Chen, and David Held<br>
+        </div>
+        <div class="pubjournal">International Conference on 3D Vision (3DV), 2021</div>
+        <div id="div20213dV" class="pubInfo"></div>
+        <div id="bibdiv20213dV" style="display:none">
+            <blockquote>
 <pre>@article{wang2021sodtgnn,
 title={Semi-supervised 3D Object Detection via Temporal Graph Neural Networks},
 author={Wang, Jianren and Gang, Haiming and Ancha, Siddharth and Chen, Yi-ting and Held, David},
-journal={International Conference on 3D Vision},
+journal={International Conference on 3D Vision (3DV)},
 year={2021}}</pre>
                 </blockquote>
             </div>
-            <div id="absdiv20213dV" style="display:none">
+    <div id="absdiv20213dV" style="display:none">
                 <blockquote>
                 3D object detection plays an important role in autonomous driving and other robotics applications. However, these detectors usually require training on large amounts of annotated data that is expensive and time-consuming to collect. Instead, we propose leveraging large amounts of unlabeled point cloud videos by semi-supervised learning of 3D object detectors via temporal graph neural networks. Our insight is that temporal smoothing can create more accurate detection results on unlabeled data, and these smoothed detections can then be used to retrain the detector. We learn to perform this temporal reasoning with a graph neural network, where edges represent the relationship between candidate detections in different time frames.
                 </blockquote>
@@ -216,7 +214,8 @@ year={2021}}</pre>
                 <a href="javascript:copy(div20213dV, absdiv20213dV)">[Abstract]</a>
                 <a href="https://youtu.be/BhW7m3R_Yqo">[Video (Short)]</a>
                 <a href="https://youtu.be/L8X4LCEpCaE">[Video (Long)]</a>
-            <br></div>
+            </div>
+            <br>
         </td>
     </tr>
 
@@ -252,9 +251,8 @@ year={2021}}</pre>
                 <!--a href="https://youtu.be/zYDwnj_ghZM">[Talk]</a-->
                 <!--a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a-->
                 <a href="https://openreview.net/forum?id=n1hDe9iK6ms">[OpenReview]</a>
-                <br>
-
             </div>
+            <br>
         </td>
     </tr>
 
