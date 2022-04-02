@@ -7,7 +7,7 @@ css:
 
 &nbsp;
 
-**Enter the Seat Lotto for Friday via Telegram\!<br>Available Thursday night only, and only over the Artist Alley Telegram Channel -**[https://t.me/artistalleyf2updates](https://t.me/artistalleyf2updates){: target="_blank" rel="noopener"}
+**Enter the Seat Lotto for Friday via Telegram\!**<br>Available Thursday night only, and only over the Artist Alley Telegram Channel -[https://t.me/artistalleyf2updates](https://t.me/artistalleyf2updates){: target="_blank" rel="noopener"}
 
 | &nbsp; | Friday | Saturday | Sunday |
 | --- | --- | --- | --- |
