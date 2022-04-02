@@ -8,18 +8,21 @@ SITEURL = ''
 SITESUBTITLE = "Quand l'improbable est juste le quotidien"
 LICENCE = 'CC-BY-SA 4.0'
 
+# Where to find content
 PATH = 'content'
+
+# metadata extraction from filename and path
+USE_FOLDER_AS_CATEGORY = False
+PATH_METADATA = '(?P<basepath>.*)/(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)/(?P<shortname>.*)\..*' # the name of the file itself doesn't matter
+
 ARTICLE_PATHS = ['blog']
-ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{slug}.html'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}/post.html'
+ARTICLE_URL = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}/post.html'
 STATIC_PATHS = []
 
 TIMEZONE = 'Europe/Rome'
 
 DEFAULT_LANG = 'fr'
-
-USE_FOLDER_AS_CATEGORY = False
-FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 
 # Theme stuffs
 THEME = "themes/html5up-editorial"
