@@ -65,14 +65,14 @@
 										{% endif %}
 										</p>
 										<ul class="actions">
-											<li><a href="#" class="button big">Lire la suite…</a></li>
+											<li><a href="{{ last_article.url }}" class="button big">Lire la suite…</a></li>
 										</ul>
 										{# TODO make this part smaller #}
 										<p>
 											Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
 												{{ last_article.date | strftime('%-d %b %Y') }}
 											</time>
-											par <a href="#" class="author">
+											par <a href="{{ last_article.author.url }}" class="author">
 												<span class="name">{{ last_article.author }}</span>
 												<img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
 											</a>
@@ -80,11 +80,11 @@
 										{# TODO add tags here #}
 									</div>
 									<span class="image object">
-										<img src="{{ SITEURL}}/theme/images/pic10.jpg" alt="" />
+										<a href="{{ last_article.url }}"><img src="{{ SITEURL}}/theme/images/pic10.jpg" alt=""></a>
 									</span>
 								</section>
 
-							<!-- Section with other articles -->
+							<!-- Section with all articles -->
 								<section>
 									<header class="major">
 										<h2>Tous les articles</h2>
@@ -92,7 +92,7 @@
 									<div class="posts">
 									{% for article in articles_page.object_list %}
 										<article>
-											<a href="#" class="image"><img src="{{ SITEURL}}/theme/images/pic01.jpg" alt="" /></a>
+											<a href="{{ article.url }}" class="image"><img src="{{ SITEURL}}/theme/images/pic01.jpg" alt="" /></a>
 											<h3>{{ article.title }}</h3>
 											<p>
 											{% if article.summary is defined %}
@@ -102,14 +102,14 @@
 											{% endif %}
 											</p>
 											<ul class="actions">
-												<li><a href="#" class="button">Plus…</a></li>
+												<li><a href="{{ article.url }}" class="button">Plus…</a></li>
 											</ul>
 											{# TODO make this part smaller #}
 											<p>
 												Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
 													{{ last_article.date | strftime('%-d %b %Y') }}
 												</time>
-												par <a href="#" class="author">
+												par <a href="{{ last_article.author.url }}" class="author">
 													<span class="name">{{ last_article.author }}</span>
 													<img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
 												</a>
@@ -184,8 +184,8 @@
 									</ul>
 								</nav>
 
-							<!-- Section -->
-								<section>
+							<!-- Section mini post -->
+								{# <section>
 									<header class="major">
 										<h2>Ante interdum</h2>
 									</header>
@@ -206,9 +206,9 @@
 									<ul class="actions">
 										<li><a href="#" class="button">More</a></li>
 									</ul>
-								</section>
+								</section> #}
 
-							<!-- Section -->
+							<!-- Section contact -->
 								<section>
 									<header class="major">
 										<h2>Get in touch</h2>
