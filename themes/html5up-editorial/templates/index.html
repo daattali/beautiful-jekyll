@@ -1,3 +1,4 @@
+{% set SUMMARY_LENGTH = 100 %}
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -50,7 +51,7 @@
 								</header>
 
 							<!-- Banner with last article -->
-								{% set last_article = articles|sort(attribute=date)|last %}
+								{% set last_article = articles|sort(attribute=date)|first %}
 								<section id="banner">
 									<div class="content">
 										<header>
@@ -61,13 +62,14 @@
 										{% if last_article.summary is defined %}
 											{{ last_article.summary }}
 										{% else %}
-											{{ last_article.content|truncate(255) }}
+											{{ last_article.content|truncate(SUMMARY_LENGTH) }}
 										{% endif %}
 										</p>
 										<ul class="actions">
 											<li><a href="#" class="button big">Lire la suite…</a></li>
 										</ul>
-										<small>
+										{# TODO make this part smaller #}
+										<p>
 											Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
 												{{ last_article.date | strftime('%-d %b %Y') }}
 											</time>
@@ -75,7 +77,8 @@
 												<span class="name">{{ last_article.author }}</span>
 												<img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
 											</a>
-										</small>
+										</p>
+										{# TODO add tags here #}
 									</div>
 									<span class="image object">
 										<img src="{{ SITEURL}}/theme/images/pic10.jpg" alt="" />
@@ -88,7 +91,7 @@
 										<h2>Articles plus anciens</h2>
 									</header>
 									<div class="posts">
-									{% for article in articles %}
+									{% for article in articles[1:] %}
 										<article>
 											<a href="#" class="image"><img src="{{ SITEURL}}/theme/images/pic01.jpg" alt="" /></a>
 											<h3>{{ article.title }}</h3>
@@ -96,12 +99,23 @@
 											{% if article.summary is defined %}
 												{{ article.summary }}
 											{% else %}
-												{{ article.content|striptags|truncate(255) }}
+												{{ article.content|striptags|truncate(SUMMARY_LENGTH) }}
 											{% endif %}
 											</p>
 											<ul class="actions">
 												<li><a href="#" class="button">Plus…</a></li>
 											</ul>
+											{# TODO make this part smaller #}
+											<p>
+												Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
+													{{ last_article.date | strftime('%-d %b %Y') }}
+												</time>
+												par <a href="#" class="author">
+													<span class="name">{{ last_article.author }}</span>
+													<img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
+												</a>
+											</p>
+											{# TODO add tags here #}
 										</article>
 									{% endfor %}
 									</div>
