@@ -1,0 +1,10 @@
+---
+version: '0.2'
+language: fr,en
+ignorePaths: []
+dictionaryDefinitions: []
+dictionaries: []
+words:
+- pymfactor
+ignoreWords: []
+import: []

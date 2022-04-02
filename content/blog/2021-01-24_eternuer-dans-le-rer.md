@@ -1,18 +1,19 @@
 ---
 title: Éternuer dans le RER
+subtitle: À vos souhait mademoiselle…
 category: pymfactor
+cover_image: girl-in-subway-thumb.jpg
 tags: [pas de bol, transports]
-summary: À vos souhait mademoiselle…
 status: published
 ...
 
-~~test~~ test $E \eq mc^2$ c'est simple
+<!-- ~~test~~ test $E \neq mc^2$ c'est simple
 
 $$\text{determinant} = \frac{-b-\sqrt{\delta}}{2a}$$
 
 hop
 
-![cover image](/assets/img/girl-in-subway-thumb.jpg){: width="100%" }
+![cover image](/assets/img/girl-in-subway-thumb.jpg){: width="100%" } -->
 
 Un jour d’été dans le RER j’allais sortir et une nana se lève, éternue [^covid] mais ne peut mettre sa main devant sa bouche, car elle a son ordi dans une main et l’autre bras avec un genre d’atèle…
 
