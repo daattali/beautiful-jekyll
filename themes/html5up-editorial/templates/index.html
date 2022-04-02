@@ -41,13 +41,12 @@
 										<strong>{{ SITENAME }}</strong>
 										<small>{{ SITESUBTITLE }}</small>
 									</a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
+									<!-- Social media links -->
+										<ul class="icons">
+										{% for name, icon, link in CONTACTS %}
+											<li><a href="{{ link }}" class="icon brands fa-{{ icon }}"><span class="label">{{ name }}</span></a></li>
+										{% endfor %}
+										</ul>
 								</header>
 
 							<!-- Banner with last article -->

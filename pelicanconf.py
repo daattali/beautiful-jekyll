@@ -42,6 +42,13 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
+CONTACTS = [
+    ("Telegram", "telegram", "https://t.me/pymaldebaran"),
+    ("Twitter", "twitter", "https://twitter.com/pymaldebaran"),
+    ("Facebook", "facebook-f", "https://www.facebook.com/pym.aldebaran"),
+    ("Instagram", "instagram", "https://www.instagram.com/pym.aldebaran/"),
+]
+
 DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
