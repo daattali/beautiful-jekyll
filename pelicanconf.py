@@ -6,7 +6,7 @@ SITEURL = ''
 
 # Theme specific
 SITESUBTITLE = "Quand l'improbable est juste le quotidien"
-LICENCE = 'CC-BY-SA 4.0' # 
+LICENCE = 'CC-BY-SA 4.0'
 
 PATH = 'content'
 ARTICLE_PATHS = ['blog']
@@ -47,9 +47,11 @@ CONTACTS = [
     ("Twitter", "twitter", "https://twitter.com/pymaldebaran"),
     ("Facebook", "facebook-f", "https://www.facebook.com/pym.aldebaran"),
     ("Instagram", "instagram", "https://www.instagram.com/pym.aldebaran/"),
+    ("Github", "github", "https://github.com/pymaldebaran"),
 ]
 
-DEFAULT_PAGINATION = 5
+# Number of object per index page
+DEFAULT_PAGINATION = 6
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

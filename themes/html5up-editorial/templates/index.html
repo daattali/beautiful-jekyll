@@ -87,10 +87,10 @@
 							<!-- Section with other articles -->
 								<section>
 									<header class="major">
-										<h2>Articles plus anciens</h2>
+										<h2>Tous les articles</h2>
 									</header>
 									<div class="posts">
-									{% for article in articles[1:] %}
+									{% for article in articles_page.object_list %}
 										<article>
 											<a href="#" class="image"><img src="{{ SITEURL}}/theme/images/pic01.jpg" alt="" /></a>
 											<h3>{{ article.title }}</h3>
@@ -118,6 +118,21 @@
 										</article>
 									{% endfor %}
 									</div>
+									<footer>
+										<ul class="pagination">
+										{% if dates_page.has_previous() %}
+											<li><a href="/{{ dates_previous_page.url }}" class="button">Plus récents</a></li>
+										{% else %}
+											<li><a href="" class="button disabled">Plus récents</a></li>
+										{% endif %}
+
+										{% if articles_page.has_next() %}
+											<li><a href="/{{ dates_next_page.url }}" class="button">Plus anciens</a></li>
+										{% else %}
+											<li><a href="" class="button disabled">Plus anciens</a></li>
+										{% endif %}
+										</ul>
+									</footer>
 								</section>
 
 						</div>
