@@ -311,5 +311,17 @@
    </a>
   </li>
 {%- endif -%}
+  
+{%- if site.social-network-links.kaggle -%}
+  <li class="list-inline-item">
+    <a href="https://www.kaggle.com/{{ site.social-network-links.kaggle }}" title="Kaggle">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-kaggle fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Kaggle</span>
+   </a>
+  </li>
+{%- endif -%}
 
 </ul>
