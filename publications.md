@@ -115,6 +115,7 @@ Previous works have shown that differentiable physics simulators provide gradien
                 <a href="javascript:copy(div2022ossid, bib2022ossid)">[Bibtex]</a>
                 <a href="javascript:copy(div2022ossid, abs2022ossid)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2201.07309.pdf">[PDF]</a>
+                <a href="https://www.youtube.com/watch?v=S_pU2FbMN8k">[Video]</a>
             </div>
             <div id="div2022ossid" class="pubInfo"></div>
             </div>
