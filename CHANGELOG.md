@@ -14,12 +14,11 @@
 - Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
 - Added support for Cloudflare Analytics (#797)
 - Added Reddit in share options of posts (#815)
-- Added support for giscus comments (#886)
+- Added support for giscus comments (#886) and CommentBox (#960)
 - Fixed bug where staticman didn't work jQuery slim version is used (#766)
 - Fixed very long strings to wrap around the next line rather than go off-screen (#787)
 - Added `footer-hover-col` config setting to customize the hover colour of links in the footer (#848)
-- Added social network link for Discord (#907)
-- Added CommentBox as comment option (#960)
+- Added social network links for Discord (#907) and Kaggle (#961)
 
 ## v5.0.0 (2020-09-15)
 
