@@ -4,7 +4,7 @@ layout: people
 permalink: /people/ce_luo
 status: Students
 pname: Ce (Steve) Luo
-position: Rotation Phd students
+position: Rotation Phd student
 office: 
 eml: 
 website:
