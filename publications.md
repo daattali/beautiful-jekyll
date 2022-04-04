@@ -5,7 +5,9 @@ subtitle:
 ---
 
 Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qig6iu1pL7XMSm0XzmdhTXJysk8/edit#) to see our research highlights! <br>
-Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work. 
+Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 2022) on some of our work.
+
+<!--Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work.--> 
 
 <table cellpadding="10" width="100%">
     <tr>
@@ -59,7 +61,7 @@ Previous works have shown that differentiable physics simulators provide gradien
                 <blockquote>
                     <pre>@inproceedings{icra2022pouring,
                         title={Self-supervised Transparent Liquid Segmentation for Robotic Pouring},
-                        author={Gautham Narayan, Narasimhan and Kai, Zhang and Ben, Eisner and Xingyu, Lin and David, Held},
+                        author={Gautham Narayan Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
                         booktitle={International Conference on Robotics and Automation (ICRA)},
                         year={2022}}
                     </pre>
@@ -95,11 +97,15 @@ Previous works have shown that differentiable physics simulators provide gradien
             </div>
             <div id="bib2022ossid" style="display:none">
                 <blockquote>
-<pre>@inproceedings{icra2022ossid,
-    title={OSSID: Online Self-Supervised Instance Detection by (and for) Pose Estimation},
-    author={Qiao Gu, Brian Okorn, David Held},
-    booktitle={2022 International Conference on Robotics and Automation (ICRA)},
-    year={2022}}
+<pre>@ARTICLE{ral2022ossid,
+  author={Gu, Qiao and Okorn, Brian and Held, David},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={OSSID: Online Self-Supervised Instance Detection by (And For) Pose Estimation}, 
+  year={2022},
+  volume={7},
+  number={2},
+  pages={3022-3029},
+  doi={10.1109/LRA.2022.3145488}}
 </pre>
                 </blockquote>
             </div>
@@ -111,10 +117,11 @@ Previous works have shown that differentiable physics simulators provide gradien
             <div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference of Robotics and Automation (ICRA), 2022
             <div style="font-size:small">
                 <a href="https://georgegu1997.github.io/OSSID/">[Project Page]</a>
-                <!-- <a href="https://github.com/r-pad/zephyr">[Code]</a> -->
+                <a href="https://github.com/r-pad/OSSID_code">[Code]</a>
                 <a href="javascript:copy(div2022ossid, bib2022ossid)">[Bibtex]</a>
                 <a href="javascript:copy(div2022ossid, abs2022ossid)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2201.07309.pdf">[PDF]</a>
+                <a href="https://www.youtube.com/watch?v=S_pU2FbMN8k">[Video]</a>
             </div>
             <div id="div2022ossid" class="pubInfo"></div>
             </div>
@@ -131,14 +138,12 @@ Previous works have shown that differentiable physics simulators provide gradien
             </div>
             <div id="bib2021bmvc" style="display:none">
                     <blockquote>
-                        <pre>
-                        @article{mittal2021self,
-                          title={Self-Supervised Point Cloud Completion via Inpainting},
-                          author={Mittal, Himangi and Okorn, Brian and Jangid, Arpit and Held, David},
-                          journal={arXiv preprint arXiv:2111.10701},
-                          year={2021}
-                        }
-                        </pre>
+<pre>@article{mittal2021self,
+  title={Self-Supervised Point Cloud Completion via Inpainting},
+  author={Mittal, Himangi and Okorn, Brian and Jangid, Arpit and Held, David},
+  journal={British Machine Vision Conference (BMVC), 2021},
+  year={2021}
+}</pre>
                 </blockquote>
             </div>
             <div id="abs2021bmvc" style="display:none">
@@ -184,25 +189,26 @@ Previous works have shown that differentiable physics simulators provide gradien
         </td>
     </tr>
 
+
     <tr>
-        <td class="pubimg" width="250" height="150" style="text-align:center">
-            <img src="../pics/sod_tgnn.jpg" width="250">
-        </td>
-        <td><a href="https://arxiv.org/pdf/2202.00182.pdf">Semi-supervised 3D Object Detection via Temporal Graph Neural Networks</a><br>
-            <div class="pubauthor">Jianren Wang, Haiming Gang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
-            </div>
-            <div class="pubjournal">International Conference on 3D Vision (3DV), 2021</div>
-            <div id="div20213dV" class="pubInfo"></div>
-            <div id="bibdiv20213dV" style="display:none">
-                <blockquote>
+    <td class="pubimg" width="250" height="100" style="text-align:center">
+        <img src="../pics/sod_tgnn.jpg" img width="250">
+    </td>
+    <td><a href="https://arxiv.org/pdf/2202.00182.pdf">Semi-supervised 3D Object Detection via Temporal Graph Neural Networks</a><br>
+        <div class="pubauthor">Jianren Wang, Haiming Gang, Siddharth Ancha, Yi-ting Chen, and David Held<br>
+        </div>
+        <div class="pubjournal">International Conference on 3D Vision (3DV), 2021</div>
+        <div id="div20213dV" class="pubInfo"></div>
+        <div id="bibdiv20213dV" style="display:none">
+            <blockquote>
 <pre>@article{wang2021sodtgnn,
 title={Semi-supervised 3D Object Detection via Temporal Graph Neural Networks},
 author={Wang, Jianren and Gang, Haiming and Ancha, Siddharth and Chen, Yi-ting and Held, David},
-journal={International Conference on 3D Vision},
+journal={International Conference on 3D Vision (3DV)},
 year={2021}}</pre>
                 </blockquote>
             </div>
-            <div id="absdiv20213dV" style="display:none">
+    <div id="absdiv20213dV" style="display:none">
                 <blockquote>
                 3D object detection plays an important role in autonomous driving and other robotics applications. However, these detectors usually require training on large amounts of annotated data that is expensive and time-consuming to collect. Instead, we propose leveraging large amounts of unlabeled point cloud videos by semi-supervised learning of 3D object detectors via temporal graph neural networks. Our insight is that temporal smoothing can create more accurate detection results on unlabeled data, and these smoothed detections can then be used to retrain the detector. We learn to perform this temporal reasoning with a graph neural network, where edges represent the relationship between candidate detections in different time frames.
                 </blockquote>
@@ -214,7 +220,8 @@ year={2021}}</pre>
                 <a href="javascript:copy(div20213dV, absdiv20213dV)">[Abstract]</a>
                 <a href="https://youtu.be/BhW7m3R_Yqo">[Video (Short)]</a>
                 <a href="https://youtu.be/L8X4LCEpCaE">[Video (Long)]</a>
-            <br></div>
+            </div>
+            <br>
         </td>
     </tr>
 
@@ -250,9 +257,8 @@ year={2021}}</pre>
                 <!--a href="https://youtu.be/zYDwnj_ghZM">[Talk]</a-->
                 <!--a href="https://siddancha.github.io/projects/active-safety-envelopes-with-guarantees/docs/poster.png">[Poster]</a-->
                 <a href="https://openreview.net/forum?id=n1hDe9iK6ms">[OpenReview]</a>
-                <br>
-
             </div>
+            <br>
         </td>
     </tr>
 
@@ -386,11 +392,14 @@ year={2021}}</pre>
             </div>
             <div id="bib2021zephyr" style="display:none">
                 <blockquote>
-                    <pre>@inproceedings{icra2021zephyr,
-                    title={ZePHyR: Zero-shot Pose Hypothesis Rating},
-                    author={Brian Okorn, Qiao Gu, Martial Hebert, David Held},
-                    booktitle={2021 International Conference on Robotics and Automation (ICRA)},
-                    year={2021}}</pre>
+                    <pre>@inproceedings{okorn2021zephyr,
+                    title={Zephyr: Zero-shot pose hypothesis rating},
+                    author={Okorn, Brian and Gu, Qiao and Hebert, Martial and Held, David},
+                    booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+                    pages={14141--14148},
+                    year={2021},
+                    organization={IEEE}
+                  }</pre>
                 </blockquote>
             </div>
             <div id="abs2021zephyr" style="display:none">
