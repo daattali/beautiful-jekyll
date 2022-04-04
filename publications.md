@@ -116,10 +116,11 @@ year={2022}}</pre>
             <div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference of Robotics and Automation (ICRA), 2022
             <div style="font-size:small">
                 <a href="https://georgegu1997.github.io/OSSID/">[Project Page]</a>
-                <!-- <a href="https://github.com/r-pad/zephyr">[Code]</a> -->
+                <a href="https://github.com/r-pad/OSSID_code">[Code]</a>
                 <a href="javascript:copy(div2022ossid, bib2022ossid)">[Bibtex]</a>
                 <a href="javascript:copy(div2022ossid, abs2022ossid)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2201.07309.pdf">[PDF]</a>
+                <a href="https://www.youtube.com/watch?v=S_pU2FbMN8k">[Video]</a>
             </div>
             <div id="div2022ossid" class="pubInfo"></div>
             </div>
