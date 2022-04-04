@@ -96,11 +96,15 @@ year={2022}}</pre>
             </div>
             <div id="bib2022ossid" style="display:none">
                 <blockquote>
-<pre>@inproceedings{icra2022ossid,
-    title={OSSID: Online Self-Supervised Instance Detection by (and for) Pose Estimation},
-    author={Qiao Gu, Brian Okorn, David Held},
-    booktitle={2022 International Conference on Robotics and Automation (ICRA)},
-    year={2022}}
+<pre>@ARTICLE{ral2022ossid,
+  author={Gu, Qiao and Okorn, Brian and Held, David},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={OSSID: Online Self-Supervised Instance Detection by (And For) Pose Estimation}, 
+  year={2022},
+  volume={7},
+  number={2},
+  pages={3022-3029},
+  doi={10.1109/LRA.2022.3145488}}
 </pre>
                 </blockquote>
             </div>
