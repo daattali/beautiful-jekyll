@@ -53,31 +53,32 @@ Previous works have shown that differentiable physics simulators provide gradien
         <td class="pubimg" width="250" height="100">
             <img src="../pics/pouring.gif" img width="250" height="100">
         </td>
-        <td><a href="https://sites.google.com/view/transparentliquidpouring">Transparent Liquid Segmentation for Robotic Pouring</a><br>
+        <td><a href="https://sites.google.com/view/transparentliquidpouring">Self-supervised Transparent Liquid Segmentation for Robotic Pouring</a><br>
             <div class="pubauthor">
-                Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held<br>
+                Gautham Narayan Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held<br>
             </div>
             <div id="bib2022pouring" style="display:none">
                 <blockquote>
-<pre>@inproceedings{icra2022pouring,
-title={Transparent Liquid Segmentation for Robotic Pouring},
-author={Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
-booktitle={2022 International Conference on Robotics and Automation (ICRA)},
-year={2022}}</pre>
+                    <pre>@inproceedings{icra2022pouring,
+                        title={Self-supervised Transparent Liquid Segmentation for Robotic Pouring},
+                        author={Gautham Narayan Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
+                        booktitle={International Conference on Robotics and Automation (ICRA)},
+                        year={2022}}
+                    </pre>
                 </blockquote>
             </div>
             <div id="abs2022pouring" style="display:none">
                 <blockquote>
-                    Liquid state estimation is important for robotics tasks such as pouring; however, estimating the state of transparent liquids is a challenging problem. We propose a novel segmentation pipeline that can segment transparent liquids such as water from a static, RGB image without requiring any manual annotations or heating of the liquid for training. Instead, we use a generative model that is capable of translating unpaired images of colored liquids into synthetically generated transparent liquid images. Segmentation labels of colored liquids are obtained automatically using background subtraction. We use paired samples of synthetically generated transparent liquid images and background subtraction for our segmentation pipeline. Our experiments show that we are able to accurately predict a segmentation mask for transparent liquids without requiring any manual annotations. We demonstrate the utility of transparent liquid segmentation in a robotic pouring task that controls pouring by perceiving liquid height in a transparent cup.
+                    Liquid state estimation is important for robotics tasks such as pouring; however, estimating the state of transparent liquids is a challenging problem. We propose a novel segmentation pipeline that can segment transparent liquids such as water from a static, RGB image without requiring any manual annotations or heating of the liquid for training. Instead, we use a generative model that is capable of translating images of colored liquids into synthetically generated transparent liquid images, trained only on an unpaired dataset of colored and transparent liquid images. Segmentation labels of colored liquids are obtained automatically using background subtraction. Our experiments show that we are able to accurately predict a segmentation mask for transparent liquids without requiring any manual annotations. We demonstrate the utility of transparent liquid segmentation in a robotic pouring task that controls pouring by perceiving the liquid height in a transparent cup. Accompanying video and supplementary materials can be found on our project page.
                 </blockquote>
             </div>
             <div class="pubjournal">International Conference of Robotics and Automation (ICRA), 2022
             <div style="font-size:small">
                 <a href="https://sites.google.com/view/transparentliquidpouring">[Project Page]</a>
-                <!-- <a href="https://github.com/gauthamnarayan/transparent_liquid_segmentation_icra2022">[Code]</a> -->
+                <!-- <a href="https://github.com/gauthamnarayan/transparent-liquid-segmentation">[Code]</a> -->
                 <a href="javascript:copy(div2022pouring, bib2022pouring)">[Bibtex]</a>
                 <a href="javascript:copy(div2022pouring, abs2022pouring)">[Abstract]</a>
-                <a href="https://drive.google.com/file/d/1GJzgVR_H7bs-UE68SsfqKihXApxh4l3F/view">[PDF]</a>
+                <a href="https://arxiv.org/pdf/2203.01538.pdf">[PDF]</a>
             </div>
             <div id="div2022pouring" class="pubInfo"></div>
             </div>
