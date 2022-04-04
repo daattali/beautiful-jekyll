@@ -11,18 +11,21 @@ You can visit [Google Scholar](https://scholar.google.com/citations?user=McA-3Zg
 \# Co-first authors; \* Co-corresponding authors
 
 ## 2022
-- Zhou L#, **Zeng Z**#, Egloff AM, Guo F, Campbell KM\*, Du P, Fu J, Zolkind P, Ma X, Zhang Z, Zhang Y, Wang X, Gu S, Riley R, Nakahori Y, Keegan J, Haddad R\*, Schoenfeld JD, Griffith O, Manguso RT, Lederer JA, Liu XS, Uppaluri R\*. 2022. Checkpoint blockade-induced CD+ Tcell differentiation in head and neck cancer responders. J Immunother Cancer. Epub ahead of print.<br>
+- **Zeng Z**#, Li Y#, Li Yi#, Luo Y\*. Statistical and machine learning methods for spatially resolved transcriptomics data analysis . Genome Biology. 2022. 10.02653 <br>
+[[Abstract]](https://www.ncbi.nlm.nih.gov/pubmed/35337374)
+[[Full Paper]](/resources/publications/Zeng2022_Article_StatisticalAndMachineLearningM.pdf)
+- Zhou L#, **Zeng Z**#, Egloff AM, Guo F, Campbell KM\*, Du P, Fu J, Zolkind P, Ma X, Zhang Z, Zhang Y, Wang X, Gu S, Riley R, Nakahori Y, Keegan J, Haddad R\*, Schoenfeld JD, Griffith O, Manguso RT, Lederer JA, Liu XS, Uppaluri R\*. Checkpoint blockade-induced CD+ Tcell differentiation in head and neck cancer responders. J Immunother Cancer. 2022. 10(1), e004034.<br>
 [[Abstract]](https://www.ncbi.nlm.nih.gov/pubmed/35058328)
 [[Full Paper]](/resources/publications/Zhou_JITC_2022.pdf)
-- **Zeng Z**#\*, Wong C#, Yang L#, Ouardaoui N, Li D, Zhang W, Gu SS, Zhang Y, Liu Y, Wang Z, Fu J, Zhou L, Zhang B, Kim S, Yates KB, Brown M, Freeman GJ, Uppaluri R, Manguso, Liu XS\*. 2021. TISMO: syngeneic mouse tumor database to model tumor immunity and immunotherapy response. Nucleic acids research. 2022 Jan 7;50(D1):D1391-7.<br>
+- **Zeng Z**#\*, Wong C#, Yang L#, Ouardaoui N, Li D, Zhang W, Gu SS, Zhang Y, Liu Y, Wang Z, Fu J, Zhou L, Zhang B, Kim S, Yates KB, Brown M, Freeman GJ, Uppaluri R, Manguso, Liu XS*. 2021. TISMO: syngeneic mouse tumor database to model tumor immunity and immunotherapy response. Nucleic acids research. 2022 Jan 7;50(D1):D1391-7.<br>
 [[Abstract]](https://www.ncbi.nlm.nih.gov/pubmed/34534350)
 [[Full Paper]](/resources/publications/NucAcidRes_1_2021.pdf)
 
 ## 2021
-- Wang X#, Tokheim C, Gu SS, Wang B, Tang Q, Li Y, Traugh N, **Zeng Z**, Zhang Y, Li Z, Shang B, Fu J, Xiao T, Li W, Meyer CA, Chu J, Jiang P, Cejas P, Lim K, Long H, Brown M\*, Liu XS\*. 2021. In vivo CRISPR screens identify the E3 ligase Cop1 as a modulator of macrophage infiltration and cancer immunotherapy target. Cell 184(21):5357-5374.<br>
+- Wang X#, Tokheim C, Gu SS, Wang B, Tang Q, Li Y, Traugh N, **Zeng Z**, Zhang Y, Li Z, Shang B, Fu J, Xiao T, Li W, Meyer CA, Chu J, Jiang P, Cejas P, Lim K, Long H, Brown M\*, Liu XS\*.In vivo CRISPR screens identify the E3 ligase Cop1 as a modulator of macrophage infiltration and cancer immunotherapy target. 2021. Cell 184(21):5357-5374.<br>
 [[Abstract]](https://www.ncbi.nlm.nih.gov/pubmed/34582788) 
 [[Full Paper]](/resources/publications/Cell184_5357.pdf)
-- Kumar S#, **Zeng Z**#, Bagati A, Tay RE, Sanz LA, Hartono SR, Ito Y, Abderazzaq F, Hatchi E, Jiang P, Cartwright ANR, Olawoyin O, Mathewson ND, Pyrdol JW, Li MZ, Doench JG, Booker MA, Tolstorukov MY, Elledge SJ, Chedin F, Liu XS\*, Wucherpfennig KW*. 2021. CARM1 inhibition enables immunotherapy of resistant tumors by dual action on tumor cells and T cells. Cancer Discov 11:2051-71.<br>
+- Kumar S#, **Zeng Z**#, Bagati A, Tay RE, Sanz LA, Hartono SR, Ito Y, Abderazzaq F, Hatchi E, Jiang P, Cartwright ANR, Olawoyin O, Mathewson ND, Pyrdol JW, Li MZ, Doench JG, Booker MA, Tolstorukov MY, Elledge SJ, Chedin F, Liu XS\*, Wucherpfennig KW*. CARM1 inhibition enables immunotherapy of resistant tumors by dual action on tumor cells and T cells. Cancer Discovery. 2021. 11:2051-71.<br>
 [[Abstract]](https://www.ncbi.nlm.nih.gov/pubmed/33707234)
 [[Full Paper]](/resources/publications/CancerDiscov_2051_Kumar.pdf)
 - **Zeng Z**#, Fu J#, Cibulskis C, Jhivari A, Gumbs C, Das B, Sanchez-Espiridion B, Janssens S, Taing L#, Wang J, Lindsay J, Vilimas T, Zhang J, Tokheim C, Sahu AD, Jiang P, Yan C, Y. Duose D, Cerami E, Chen L, Cohen D, Chen QR, Enos RA, Huang X, Lee JJ, Liu Y, Neuberg DS, Nguyen C, Patterson C, Sarkar S, Shukla SA, Tang M, Tsuji J, Uduman M, Wang X, Jason L Weirather, Jijun Yu, Joyce Yu, Zhang J, Zhang J, Meerzaman D, Thurin M, Futreal PA, Karlovich C, Gabriel SB, Wistuba II*, Liu XS\*, Wu C*. 2020. Cross-site concordance evaluation of tumor DNA and RNA sequencing platforms for the CIMAC-CIDC network. Clin Cancer Res. Epub ahead of print.<br>
