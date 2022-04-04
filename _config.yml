@@ -27,7 +27,8 @@ navbar-links:
   Publications: "publication"
 #  Teaching: "teaching"
   Careers: "careers"
-  中文: "Chinese"
+  Chinese: 
+    - : "http://www.markdowntutorial.com/"
 
 #  Contact: "contact"
 #  About Me: "aboutme"
