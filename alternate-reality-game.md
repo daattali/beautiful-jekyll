@@ -7,7 +7,7 @@ subtitle:
 Welcome to this year's Alternate Reality Game (aka ARG) for FurSquared\! &nbsp;Our theme for the year is CONspiracy and as such, what better way to celebrate that than with a fantastic game of trying to discover who is trying to summon an eldritch horror this weekend? &nbsp;Over the course of the weekend, the players will be searching high and low all over the convention space to find clues to help them eliminate suspects from their list sheets, that they can grab from Registration\! &nbsp;These sheets will not only be useful for keeping track of all of the eliminations you find from various clues, but they will also count as your final answer slips that you will then turn in to Tabletop Gaming at the end of the weekend on Sunday. The sheet will cover several different types of suspects for the weekend's terrible ritual:
 
 * The beings that might be performing the ritual
-* The horrible items or ritual that could potentially be used for the [summoning](https://dev.fursquared.com/assets/img/theme-2022/clue_not-arcane-projector.jpg){: target="_blank" rel="noopener"}
+* The horrible items or ritual that could potentially be used for the [summoning](/assets/img/theme-2022/clue_not-arcane-projector.jpg){: target="_blank" rel="noopener"}
 * The location in which the ritual may possibly take place
 * The eldritch horror that the ritual may call forth if not stopped
 
