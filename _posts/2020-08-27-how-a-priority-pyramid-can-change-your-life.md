@@ -17,7 +17,7 @@ redirect_from:
 - 2020-08-27-how-a-priority-pyramid-can-change-your-life
 
 ---
-We know what priorities are and what they mean, but how do we really know what comes first in our day to day? Today on the blog I'm going to share with you a visual way to structure and organize your priorities using a priority pyramid. When we're struggling with the day to day and trying to figure out what to do first and so on, this strategy may be helpful for you!
+We know [what priorities are](https://www.berkeleywellbeing.com/priorities.html) and what they mean, but how do we really know what comes first in our day to day? Today on the blog I'm going to share with you a visual way to structure and organize your priorities using a priority pyramid. When we're struggling with the day to day and trying to figure out what to do first and so on, this strategy may be helpful for you!
 
 ## Brainstorm your important areas of life
 
@@ -47,3 +47,10 @@ A priority pyramid is meant to be a tool, something to help you out when needed.
 _PS if you’d like to get started on daily planning with a priority pyramid or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_. You can put your priority pyramid in the "notes" section._
 
 ![A picture of the free daily plan printable.](https://www.simplehomemom.com/uploads/planner-sheet.png "The first simple planning step to take as a beginner planner SHM.")
+
+**Other blogs of mine you may enjoy:**
+
+* [The Myth of Balance and One Thing to Focus on Instead](https://www.simplehomemom.com/the-myth-of-balance-and-one-thing-to-focus-on-instead/)
+* [How to Find Extra Time Even with Living a Busy Mom Life](https://www.simplehomemom.com/how-to-find-extra-time-even-with-living-a-busy-mom-life/)
+* [How to Unscramble Your Brain with a Braindump](https://www.simplehomemom.com/how-to-unscramble-your-brain-with-a-braindump/)
+* [How to Start Planning for Beginners](https://www.simplehomemom.com/how-to-start-planning-for-beginners/)
