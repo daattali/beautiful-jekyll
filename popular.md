@@ -18,6 +18,7 @@ subtitle: ''
 * [My Simple Homeschool Planner](https://buy.stripe.com/6oE8yGel06qoc7e4gm)
 * Grab My Simple Daily Care Printables [HERE](https://mailchi.mp/d739479e4b35/mysimpledailycare)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
+* FREE MINI COURSE: [Planning Basics Class](https://drive.google.com/drive/u/0/folders/1C_cQVPWmBMP8I6bP60KBzm-DLZCSdb2N)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) (50% off with the code 50HOME)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 
@@ -35,7 +36,7 @@ subtitle: ''
 
 * [My homeschooling blogs](https://www.simplehomemom.com/tags/#homeschool%20planning)
 * [My Simple Homeschool Planner](https://buy.stripe.com/6oE8yGel06qoc7e4gm)
-* [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/) 
+* [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/)
 * [The Homeschooler's Playbook to Simple Homemaking](https://canadianhomeschoolconference.com/aff/42) (online Canadian Homeschool Conference, affiliate link). 35ish mins + resource notes + a freebie
 
 ## Other
