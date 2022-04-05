@@ -52,6 +52,8 @@ You can visit [Google Scholar](https://scholar.google.com/citations?user=McA-3Zg
 - Gu S#, Wang X#, Hu X#, Jiang P, Li Z, Traugh N, Bu X, Tang Q, Wang C, **Zeng Z**, Fu J, Meyer CA, Zhang Y, Cejas P, Lim K, Wang J, Zhang W, Tokheim C, Sahu A,, Xing X, Kroger B, Ouyang Z, Long H, Freeman G\*, Brown M\*, **Liu XS**\*. 2020. Clonal tracing reveals diverse patters of response to immune checkpoint blockade. Genome biology. 2020 Dec;21(1):1-28.<br>
 [[Abstract]](https://www.ncbi.nlm.nih.gov/pubmed/33059736)
 [[Full Paper]](/resources/publications/GenomeBiol21_263.pdf)
+- **Zeng Z**, Fan Z, Xie X, Swartz C, DePriest P, Li J: A two-level iteration approach for modeling and analysis of rapid response process with multiple deteriorating patients. Flexible Service and Manufacturing. (2020). 1-37<br>
+[[Full Paper]](/resources/publications/Zeng2020_Article_ATwo-levelIterationApproachFor.pdf)
 - Lee O, Sullivan ME, Xu Y, Rogers C, Muzzio M, Helenowski I, Shidfar A,  **Zeng Z**, Singhal H, Jovanovic B, Hansen N. Selective progesterone receptor modulators in early-stage breast cancer: a randomized, placebo-controlled Phase II window-of-opportunity trial using telapristone acetate. Clinical Cancer Research. 2020 Jan 1;26(1):25-34.<br>
 [[Abstract]](https://pubmed.ncbi.nlm.nih.gov/31570566/)
 [[Full Paper]](/resources/publications/2020_CCR_progesterone.pdf)
