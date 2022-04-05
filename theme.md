@@ -8,7 +8,7 @@ Salutations\! For FurSquared 2022, the theme is "CONspiracy" and anyone can enjo
 
 As mentioned before, the con-wide ARG will be running all weekend\! Feel free to stop by Registration or the Tabletop Gaming room at any time to pick up a sheet so that you can begin collecting clues to try and solve the mystery before the end of the convention\!
 
-For more info on how the ARG is played.<br>[Join The Game\!](/alternate-reality-game/){: .button}
+For more info on how the ARG is played:<br>[Join The Game\!](/alternate-reality-game/){: .button}
 
 Although we all love to have a good laugh about things, it's important to keep in mind that we're all friends here, so please make sure that your thematic participation focuses on "Punching Up" or "Sticking it to the man\!" instead of being bigoted towards others in cruel or offensive ways. If you think that your idea has the potential hurt somebody's feelings, then it's better to be safe than sorry, and go for something else\!
 
