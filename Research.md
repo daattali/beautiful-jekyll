@@ -24,7 +24,7 @@ title: ""
 [Exporting Capital, Importing Law](assets/kalyanpur_thrall_v2.pdf) (with Nikhil Kalyanpur)<br>
 **_American Political Science Review_**, Revise and Resubmit.
 
-[Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_postJMP.pdf) <br>
+[Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_AJPS_revised.pdf) <br>
 **_American Journal of Political Science_**, Revise and Resubmit.<br>
 David A. Lake Award for best paper presented at IPES 2020. 
 
@@ -33,7 +33,8 @@ David A. Lake Award for best paper presented at IPES 2020.
 
 [Treaty Diplomacy and the Global Firm](assets/treaty_regimes_IPES.pdf)
 
-[The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)
+[The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
+Under Review.
 
 [Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/TJ_NBER_2022.pdf) (with Nathan M. Jensen)
 
