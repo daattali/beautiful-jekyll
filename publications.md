@@ -36,7 +36,7 @@ Previous works have shown that differentiable physics simulators provide gradien
             </div>
             <div class="pubjournal">International Conference on Learning Representations (ICLR), 2022
             <div style="font-size:small">
-                <a href="https://sites.google.com/view/iclr2022diffskill">[Project Page]</a>
+                <a href="https://xingyu-lin.github.io/diffskill/">[Project Page]</a>
                 <a href="javascript:copy(div2022diffskill, bib2022diffskill)">[Bibtex]</a>
                 <a href="javascript:copy(div2022diffskill, abs2022diffskill)">[Abstract]</a>
                 <a href="https://openreview.net/pdf?id=Kef8cKdHWpP">[PDF]</a>
