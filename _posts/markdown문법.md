@@ -1,12 +1,12 @@
 
 
-1. 이탤릭체 표현: _content_
+## 1. 이탤릭체 표현: _content_
 
-2. 강조 표현: **content**
+## 2. 강조 표현: **content**
 
-3. 이탤릭, 강조 표현 : **_content_**
+## 3. 이탤릭, 강조 표현 : **_content_**
 
-4. header 표현 :
+## 4. header 표현 :
 
 # Header one    
 ## Header two
@@ -15,7 +15,7 @@
 ##### Header five
 ###### Header six
 
-5. 링크
+## 5. 링크
 마크다운에는 두 가지 링크 유형이 있지만, 두 링크 유형 모두 정확히 같은 방식으로 렌더링됨. 
 #### 첫번째 링크 스타일: 인라인 링크
 링크할 텍스트를 대괄호( [ ] )로 싼 다음, 링크할 주소를 소괄호로( ( ) )로 감싸면 됨.
@@ -33,6 +33,57 @@ Well, do I have [the website for you][another fun place]!
 [a fun place]: www.zombo.com
 [another fun place]: www.stumbleupon.com
 
+## 6. 이미지
+이미지 정의 방법은 링크와 비슷하나, 단지 앞에 !를 쓰는 게 다르다.
+
+#### 인라인 방식
+!([대체_텍스트])(링크) 형태로 쓰면 된다.    
+![A pretty tiger](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
+
+#### 참조 방식
+참조링크 방식에 !만 추가하면 된다.
+![Black cat][Black]
+[Black]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg
+
+## 7. 인용문
+인용문 앞에 >만 붙여주면 된다.   
+> 인용문
+
+만약 여러 줄을 인용문으로 쓰고 싶으면, 줄 앞에 >를 붙여주면 된다.
+> 인용문 시작
+>
+> 끝
+
+## 8. 리스트
+리스트에는 두 가지 종류가 있다.
+
+#### unordered-list
+앞에 *를 붙여주면 된다.
+* 바나나
+* 당근
+* 사과
+
+
+#### ordered-list
+앞에 숫자를 붙여주면 된다.
+1. 첫번째
+2. 두번째
+3. 세번째
+
+#### 리스트 겹치기
+리스트 수준을 한 단계 낮출 경우, 이전 단계보다  앞에 공백을 한칸씩 추가하면 된다.
+* 언어
+ * 영어
+ * 중국어
+ * 한국어
+ * 일본어
+
+### 리스트 단락 나누기
+리스트 번호를 유지하면서, 단락을 나누고 싶을 경우, 들여쓰기가 필요하다.
+
+## 단락
+개행을 강제로 넣는 문단 나눔(hard breaks)의 경우 형식이 깨지게 된다.  
+만약 단순히 줄 나눔(soft breaks)을 하려면, 각 줄의 끝에 2번의 공백을 넣음으로 나눌 수 있다.  
 
 
 
