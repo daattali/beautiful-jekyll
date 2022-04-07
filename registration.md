@@ -56,6 +56,7 @@ Please be aware that Pre-Registration prices will end March 31st, 2022 at 11:59 
 | Super Sponsor | $160 |
 
 | &nbsp; | Daily Badges | 
+| --- | --- |
 | Friday | $30 |
 | Satuday | $30 |
 | Sunday | $20 |
