@@ -1,0 +1,54 @@
+﻿SEAN GLEASON
+Saint Louis, Missouri • (636) 577-1601 • gleason.tech • sean@gleason.tech
+
+SKILLS
+* Java - Spring Boot/Cloud
+* REST API Web Services
+* Apache Kafka
+* Elasticsearch
+* Angular UI
+* BDD Testing with Karate
+* VMWare Tanzu Application Services
+* Kubernetes
+* Google Cloud Platform (GCP)
+* Amazon Web Services (AWS)
+* Mongo Database
+* Oracle Database
+* Cassandra Database
+* Jenkins CI/CD Pipelines
+* Bamboo CI/CD Pipelines
+
+PROFESSIONAL EXPERIENCE
+
+NISC - Lake Saint Louis, MO        March 2021– Present
+Senior Software Engineer - Cloud Platform and Infrastructure Development
+* Work on setting development standards company wide for Spring Boot Microservices.
+* Regularly present in development meetings showcasing new tools available in Spring.
+* Engineered search APIs using Elasticsearch, consuming change data captures with Kafka.
+* Scripted deployment of Elasticsearch/Kibana helm-charts to Kubernetes and AWS.
+* Developed walkthrough for upgrading Spring Boot Microservices from 2.x -> 2.6.x.
+* Wrote upgrade guide for transitioning from Spring Cloud OAuth to Spring Security.
+* Architected upgrade patterns for the Angular UI stack using Angular Bootstrap.
+* Designed Behavioral Driven Testing CI/CD pipeline running on Bamboo using Docker.
+
+Perficient Inc. - Saint Louis, MO        April 2019 – March 2021
+Lead Technical Consultant
+* Lead multiple teams for a major Pharmaceutical Distributor developing Spring Boot Microservice APIs on Pivotal Cloud Foundry using Kafka Stream Messaging for intercommunication between services.  
+* Created company specific Spring Boot Starter services that reduced the complexity to build an application all the way up to production.
+* Upgraded several Spring Boot applications to the latest version to allow for newer features.
+* Architected several Kafka Messaging designs that aided in rapid development.
+
+Graybar Electric - Maryland Heights, MO        June 2015 - April 2019
+Lead Software Engineer (2018 – 2019) 
+* Lead a team building Spring Cloud Dataflow pipelines using GCP PubSub to transfer data between an On-Premise and Off-premise Cloud Foundry installation.
+* Constructed a multi-cloud agnostic Jenkins pipeline using Spring Cloud Pipelines that allowed for deployment to two separate Cloud Foundry Foundations.
+
+Web Developer (2015 – 2018)
+* Developed Spring Boot microservice APIs on Pivotal Cloud Foundry in an effort to deconstruct the monolithic E-Commerce website
+* Designed and implemented the Punchout integration framework into the IBM E-Commerce website that produces a large majority of online order revenue
+* Built the E-Commerce checkout flow and developed SEO frameworks during the B2C/B2B website re-launch.
+
+EDUCATION
+
+Lindenwood University - St. Charles, MO        2013
+BS Computer Science

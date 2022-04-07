@@ -6,7 +6,7 @@ redirect_from:
 subtitle:
 ---
 
-Download: [pdf](../resume/sean_gleason_resume.pdf) [docx](../resume/sean_gleason_resume.docx)
+Download: [pdf](../resume/sean_gleason_resume.pdf) [docx](../resume/sean_gleason_resume.docx) [txt](../resume/sean_gleason_resume.txt)
 
 # Sean Gleason
 
@@ -17,23 +17,29 @@ Mobile: 636-577-1601\
 
 
 ### Skills
-- Java (Spring Boot, Hibernate, JPA, Maven, JavaEE, IBM Ecommerce)
-- Cloud technologies (Spring Cloud, Apache Kafka, Pivotal Cloud Foundry, Google Cloud Platform)
-- Deployment pipeline development (Jenkins, Spring Cloud Pipelines)
+- Java technologies (Spring Boot, JPA, Maven, Gradle)
+- Web tech (Javascript, Angular, Web Services)
+- Cloud platforms (VMWare Tanzu Application Service, Kubernetes, GCP, AWS) 
+- NoSQL (Cassandra, MongoDB)
+- Database design & implementation
+- CI/CD pipeline design
 - Large scalable distributed systems
-- NoSQL and SQL databases
-- Working in scrum teams
+- Working in cross-functional teams
+- Unit and integration testing
 - Team leadership
-- Teaching junior developers
-- Unit, integration, and behavior-driven testing
 - Full product life cycle
 - Functional requirements
-- Business documentation
+- Mentoring junior co-workers
 
 ### Professional Experience
 
+SENIOR SOFTWARE ENGINEER – NISC, St. Louis MO
+March 2021 – present
+- Work on setting standards for developing Microservices using Spring Boot, Cassandra, 
+and Elasticsearch hosted on Kubernetes and AWS.
+
 LEAD TECHNICAL CONSULTANT – Perficient, St. Louis MO
-April 2019 – present
+  April 2019 – March 2021
 - Lead IT Developer at Express Scripts (Java, Spring Cloud, MongoDB, Kafka)
 
 LEAD SOFTWARE ENGINEER – Graybar, St. Louis MO
