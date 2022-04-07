@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Fur Squared 2022 Registration!!
+title: Registration
 subtitle: Registration and benefits of Fur Squared
 css:
-    - "/assets/css/theme-2022/registration.css"
+    - /assets/css/theme-2022/registration.css
 ---
 
 &nbsp;
@@ -37,25 +37,13 @@ Please be aware that Pre-Registration prices will end March 31st, 2022 at 11:59 
 
 ## Pricing
 
-| &nbsp; | Pre Registration | Walk-in Registration |
-| --- | --- | --- |
-| Attendee | $50 | $60 |
-| Sponsor | $85 | $95 |
-| Super Sponsor | $150 | $160 |
-
-| &nbsp; | Pre Registration |
-| --- | --- |
-| Attendee | $50 |
-| Sponsor | $85 |
-| Super Sponsor | $150 |
-
-| &nbsp; | Walk-in Registration |
+| &nbsp; | Online/ At The Door Price |
 | --- | --- |
 | Attendee | $60 |
 | Sponsor | $95 |
 | Super Sponsor | $160 |
 
-| &nbsp; | Daily Badges | 
+| &nbsp; | Daily Badges |
 | --- | --- |
 | Friday | $30 |
 | Satuday | $30 |
