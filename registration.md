@@ -60,7 +60,7 @@ Please be aware that Pre-Registration prices will end March 31st, 2022 at 11:59 
 | Satuday | $30 |
 | Sunday | $20 |
 
-Badge Reprints: $15 ( Reprint refunded if original badge is found and shown to Registration ) Only one allowed before new Full Registration required.
+Badge Reprints $15 ( Reprint refunded if original badge is found and shown to Registration ) Only one allowed before new Full Registration required.
 
 ## The Fursquared 2022 Poster\!
 
