@@ -55,6 +55,16 @@ Please be aware that Pre-Registration prices will end March 31st, 2022 at 11:59 
 | Sponsor | $95 |
 | Super Sponsor | $160 |
 
+| &nbsp; | Daily Badges | 
+| --- | --- |
+| Friday | $30 |
+| Satuday | $30 |
+| Sunday | $20 |
+
+Badge Reprints $15 ( Reprint refunded if original badge is found and shown to Registration ) Only one allowed before new Full Registration required.
+
+Upgrades can be offered through Link: TBA
+
 ## The Fursquared 2022 Poster\!
 
 **Poster: Limited 50 slots, $200 if selected please read the terms for our Poster Lottery below:**
