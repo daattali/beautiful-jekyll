@@ -1,0 +1,17 @@
+---
+layout: post
+title: Life, death, ghosts, xkcd, d3, and flowing data
+date: '2015-09-23T21:52:00.000+02:00'
+author: Morten
+tags:
+- JavaScript
+- Programming
+- D3
+- hack
+- visualization
+modified_time: '2017-05-18T09:13:37.987+02:00'
+blogger_id: tag:blogger.com,1999:blog-6967032375013519080.post-9116445630377094148
+blogger_orig_url: https://m635j520.blogspot.com/2015/09/life-death-ghosts-xkcd-d3-and-flowing.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://imgs.xkcd.com/comics/travel_ghosts.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="" border="0" src="https://imgs.xkcd.com/comics/travel_ghosts.png" title="And a different ghost has replaced me in the bedroom."></a></div><br />This morning I came across this <a href="https://xkcd.com/1580/" target="_blank">XKCD strip</a>. (I hope someone actually makes that app... Although with enough parallel ghosts chances are that you will lose more than you win, of course.)<br /><br />Later in the day Flowing Data published this <a href="http://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/" target="_blank">fascinating visualisation</a> of, well, when you might die. (Based on US life tables, mind you...) Each ball is a potential future self. (Like the ghosts in <a href="https://xkcd.com/about/" target="_blank">Randal Munroe</a>'s strip.) Travelling along the life table line 'till they... die. Fascinating. And then I wondered what would happen if we somehow mapped causes of death to that? And voila, based on <a href="http://www.cdc.gov/nchs/data/databriefs/db99.htm" target="_blank">data from CDC</a>, I added this colour coded death causes (along with some other minor changes) to <a href="http://flowingdata.com/about-nathan" target="_blank">Nathan Yau</a>'s excellent <a href="http://d3js.org/" target="_blank">D3.js</a> work:<br /><br /><br /><iframe height="800" scrolling="no" src="https://rawgit.com/mortenjohs/deaths/master/index_small.html" style="border: 0; height: 700px;" width="800"></iframe> (Click <a href="http://rawgit.com/mortenjohs/deaths/master/index.html" target="_blank">here</a> for a full frame viz.)<br /><br />Scary.<br /><br />What could be next?<br /><br /><ul><li>Bar chart reflects the colour coding of causes?</li><li>More detailed causes of death could lead to a better... narrative?</li><li>Life tables and causes of death probabilities from other countries? Maybe comparisons?</li><li>More accurate causes if we break it down also by sex? (The causes of death distribution is now assumed to be the same for men and women, which is, basically, wrong.)</li><li>Risk factors that influence the life line/causes of death? (Smoking, obesity, etc. (Thanks Graham.))</li></ul> Update 2017-05-18: Code moved to GitHub, since Google no longer accepts serving html from Google Drive. (Available here: https://github.com/mortenjohs/deaths)

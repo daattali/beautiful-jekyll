@@ -1,0 +1,18 @@
+---
+layout: post
+title: Add overall lesson timing to video listings on Coursera
+date: '2013-10-20T23:06:00.002+02:00'
+author: Morten
+tags:
+- JavaScript
+- hack
+- gist
+- source code
+- Coursera
+modified_time: '2013-10-21T10:31:12.027+02:00'
+thumbnail: http://3.bp.blogspot.com/-MHqWbSs7cEg/UmTkXvsLZ2I/AAAAAAABS3k/FXm_XjRKVXg/s72-c/promo.png
+blogger_id: tag:blogger.com,1999:blog-6967032375013519080.post-8289795135582584761
+blogger_orig_url: https://m635j520.blogspot.com/2013/10/add-overall-lesson-timing-to-video.html
+---
+
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://www.flickr.com/photos/mortenjohs/5947812782/" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;" title="Marché de La Rochelle HDR  by mortenjohs, on Flickr"><img alt="Marché de La Rochelle HDR " height="369" src="http://farm7.staticflickr.com/6007/5947812782_c82268ed1f.jpg" width="500" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Marché de La Rochelle HDR&nbsp;</td></tr></tbody></table>Probably about two years ago - when taking Andrew Ng's excellent "Machine Learning" MOOC, Johannes sent me a piece of JavaScript that populated the video lists with overall time per lesson just by pasting it into the URL-thingy in Chrome. Magic. Today when I sat down to start the course on "General Game Playing" that I have signed up for, but, alas, not (yet) found much time for, I thought of that piece of code and wondered if I, with my new knowledge of JavaScript, could whip up something like that. (Also I couldn't find Johannes' original one.)<br /><br /><a href="http://3.bp.blogspot.com/-MHqWbSs7cEg/UmTkXvsLZ2I/AAAAAAABS3k/FXm_XjRKVXg/s1600/promo.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="250" src="http://3.bp.blogspot.com/-MHqWbSs7cEg/UmTkXvsLZ2I/AAAAAAABS3k/FXm_XjRKVXg/s400/promo.png" width="400" /></a>I quickly hacked together something this afternoon over a flat white in a hipster cafe here in Lyon. And lo and behold it worked. Then I extended the functionality to also show minutes and seconds of unwatched video - as well as total overall counters for the entire course. Now each lesson heading reads "Lesson N - Name [time remaining/total time]" instead of just "Lesson N - Name". (The <a href="https://gist.github.com/mortenjohs/7075320" target="_blank">gist</a> of it.)<br /><br />Having done that I wondered how difficult it would be to make it into a Chrome extension that would just automagically run this script on all my, and maybe other's, Coursera video listings. That (seems to have gone|went) fairly well and the extension can be installed from here:&nbsp;<a href="https://chrome.google.com/webstore/detail/coursera-video-time-summa/gncpkgpieinlhlcemphffhkleahblekl">https://chrome.google.com/webstore/detail/coursera-video-time-summa/gncpkgpieinlhlcemphffhkleahblekl</a><br /><br />Now back to the General Game Playing...

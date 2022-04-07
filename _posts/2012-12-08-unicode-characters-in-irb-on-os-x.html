@@ -1,0 +1,18 @@
+---
+layout: post
+title: Unicode characters in irb on OS X
+date: '2012-12-08T21:45:00.001+01:00'
+author: Morten
+tags:
+- Programming
+- Mountain Lion
+- Mac
+- fix
+- OS X
+- Ruby
+modified_time: '2020-04-25T17:41:22.662+02:00'
+blogger_id: tag:blogger.com,1999:blog-6967032375013519080.post-3225025415627094217
+blogger_orig_url: https://m635j520.blogspot.com/2012/12/unicode-characters-in-irb-on-os-x.html
+---
+
+<a href="http://www.flickr.com/photos/mortenjohs/8234198079/" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;" title="Leirvik by Night by mortenjohs, on Flickr"><img alt="Leirvik by Night" height="300" src="https://farm9.staticflickr.com/8204/8234198079_4f0f30f905.jpg" width="400"></a>I noticed that my RVM-handled irb in OS X (Mountain Lion) didn't like Norwegian characters today. So instead of an <span style="font-family: Courier New, Courier, monospace;">'ø'</span>, I got <span style="font-family: Courier New, Courier, monospace;">'\U+FFC3\U+FFB8'</span> during entry, and nothing afterwards. Like so:  <br /><script src="https://gist.github.com/mortenjohs/4241780.js"></script><br />Not really satisfactory. After googling: <a href="https://www.google.fr/search?q=os+x+irb+unicode+characters+rvm" target="_blank">"os x irb unicode characters rvm"</a> I found the answer on <a href="http://stackoverflow.com/questions/11116230/unicode-characters-in-ruby-1-9-3-irb-with-rvm" target="_blank">stackoverflow</a>.<br /><br />Almost.<br /><br />My adapted solution was this: <br /><script src="https://gist.github.com/mortenjohs/4241804.js"></script><br />So now I can do:<br /><script src="https://gist.github.com/mortenjohs/4241813.js"></script><br />Better.<br /><br />(Not quite sure why the '--verify-downloads 1' part is needed, but it did the trick.)<br />

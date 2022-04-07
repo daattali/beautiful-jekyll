@@ -1,0 +1,18 @@
+---
+layout: post
+title: Kjært barn har mange navn - or, the story of how I discovered Ruby's each_cons
+date: '2012-11-22T13:54:00.000+01:00'
+author: Morten
+tags:
+- Programming
+- Euler
+- functional
+- Scala
+- source code
+- Ruby
+modified_time: '2020-04-25T17:36:03.442+02:00'
+blogger_id: tag:blogger.com,1999:blog-6967032375013519080.post-3481765963676689525
+blogger_orig_url: https://m635j520.blogspot.com/2012/11/kjrt-barn-har-mange-navn-or-story-of.html
+---
+
+<a href="http://www.flickr.com/photos/mortenjohs/1458350997/" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;" title="Soft Light by mortenjohs, on Flickr"><img alt="Soft Light" height="335" src="https://farm2.staticflickr.com/1125/1458350997_bad369edb6.jpg" width="500"></a>Reading the <a href="http://pragprog.com/magazines/2012-03" target="_blank">Pragmatic Programmer's PragPub from March</a> (I must admit I don't have/take the time to read them regularly enough) I stumbled upon Scala's <span style="font-family: Courier New, Courier, monospace;">sliding</span> function on Arrays. This creates a sliding window of consecutive sub arrays of an array. So an&nbsp;<span style="font-family: Courier New, Courier, monospace;">Array(1,2,3,4).sliding(2)</span> would produce an iterator of arrays (1,2), (2,3), and (3,4). Useful! While googling around to see if Ruby has something similar I stumbled across the <span style="font-family: Courier New, Courier, monospace;">windowed</span> function in F# that pretty much works the same way, before finding Ruby's <span style="font-family: Courier New, Courier, monospace;">each_cons</span>. The first thing I did to test this was to revisit an old (fairly obvious, brute force) seven line Ruby solution (from back in the day when I had just discovered the language) to an <a href="http://projecteuler.net/" target="_blank">Euler problem</a>, and replaced it with the following (admittedly still brute force) one liner&nbsp;(where 'number' is a 1000 character long string containing only numbers):<br /><script src="https://gist.github.com/mortenjohs/4129962.js"></script>Unlike Scala where you would have the function <span style="font-family: Courier New, Courier, monospace;">sliding</span> on string objects, we need to call <span style="font-family: Courier New, Courier, monospace;">chars</span> on the string to get an array of the characters. What happens next is that I map the function&nbsp;<span style="font-family: Courier New, Courier, monospace;">to_i</span>(nteger) on the resulting array to get an array of integers. And then <span style="font-family: Courier New, Courier, monospace;">each_cons</span> enters! (The argument here is obviously the window size.) I then map the resulting enumerator (I could also have sent&nbsp;it to a block) to a simple anonymous function that&nbsp;multiplies all the elements together before returning the max value of this new array.<br />Voila, we have&nbsp;the largest product of five consecutive numbers within a 1000 digit number.&nbsp;Functional and concise. (I won't give you the number of the Euler problem, as that would probably break some (un)written rule...)<br />BTW: The article mentioned above&nbsp;is on the <a href="http://pragprog.com/magazines/2012-03/comparing-java-and-scalas-expressiveness">expressiveness of Java vs Scala</a>&nbsp;and starts off on a reflection from the author on how he took a project from 2500 lines of Java code to 250 lines of Scala code after having programmed in Scala only 6 months.<br />

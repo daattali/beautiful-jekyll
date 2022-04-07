@@ -1,0 +1,17 @@
+---
+layout: post
+title: Parenthesis (and dots) (in Scala (as compared to Ruby))
+date: '2012-11-04T13:49:00.000+01:00'
+author: Morten
+tags:
+- Programming
+- Scala
+- Progfun
+- Coursera
+- Ruby
+modified_time: '2012-11-04T14:25:58.528+01:00'
+blogger_id: tag:blogger.com,1999:blog-6967032375013519080.post-1360800009681686732
+blogger_orig_url: https://m635j520.blogspot.com/2012/11/parenthesis-and-dots-in-scala-as.html
+---
+
+<a href="http://www.flickr.com/photos/mortenjohs/8119923208/" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" title="The light... by mortenjohs, on Flickr"><img alt="The light..." height="375" src="http://farm9.staticflickr.com/8051/8119923208_a5dff11ac4.jpg" width="500" /></a>I must say that I quite like what I encounter of the <a href="http://www.scala-lang.org/" target="_blank">Scala</a> language in Martin Odersky's online "<a href="https://www.coursera.org/course/progfun" target="_blank">Functional Programming in Scala</a>" course at EPFL (as well as the course itself!). It is almost as expressive as my favourite language these days, <a href="http://www.ruby-lang.org/" target="_blank">Ruby</a>. (Of course it will never <i>really</i> be able to match it on expressiveness, I'd say (the latter being duck typed, and the former being strictly typed (even with a most excellent type inference)).)<br /><br />One detail that I like about both languages is that parenthesis are (most of the times) optional. (By "(most of the time)" I mean that you (obviously) can't really skip them if it leads to problems with operator precedence.) This (can) really lead(s) to more readable code. Scala, however, (seemingly) has some inconsistencies when it comes to <i>when</i>&nbsp;they are needed. Most notably the <span style="font-family: Courier New, Courier, monospace;">println</span>&nbsp;(and similar?) function(s). ((Quite possibly inspired by scripting languages) you have a quick way to display text at the user with <span style="font-family: Courier New, Courier, monospace;">println</span>&nbsp;instead of Java's ghastly <span style="font-family: Courier New, Courier, monospace;">System.out.println()</span>. Thats nice.) But arguments for this function, <i>requires</i> for some reason to be encapsulated in parenthesis. (In Ruby it &nbsp;would simply be a matter of <span style="font-family: Courier New, Courier, monospace;">puts</span>'ing - with or without parenthesis.) The same seems to apply for higher order functions as arguments to functions...<br /><br />Am I missing something?<br /><br />(To Scala's defence it also allows skipping .s in function calls, which can also potentially lead to more readable code.)

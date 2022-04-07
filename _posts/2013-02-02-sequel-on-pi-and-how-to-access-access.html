@@ -1,0 +1,19 @@
+---
+layout: post
+title: Sequel on the Pi - and how to access Access DBs from Ruby (in parenthesis)
+date: '2013-02-02T21:14:00.002+01:00'
+author: Morten
+tags:
+- Programming
+- Linux
+- Pi
+- Windows
+- gem
+- Ruby
+- Databases
+modified_time: '2013-02-02T22:53:08.712+01:00'
+blogger_id: tag:blogger.com,1999:blog-6967032375013519080.post-5082977612939389719
+blogger_orig_url: https://m635j520.blogspot.com/2013/02/sequel-on-pi-and-how-to-access-access.html
+---
+
+<a href="http://www.flickr.com/photos/mortenjohs/425788532/" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;" title="Monotony -1 by mortenjohs, on Flickr"><img alt="Monotony -1" height="500" src="http://farm1.staticflickr.com/168/425788532_abcea4da14.jpg" width="334" /></a><br />Recently I had to liberate some data from an old MS Access DB, so I discovered a gem of a Ruby gem called "<a href="http://sequel.rubyforge.org/" target="_blank">sequel</a>"&nbsp;that generalizes database access (for many different databases) - ORM style. Most excellent, so I figured I wanted to run it on my raspberry pi to access various sqlite databases I have lying around. Assuming you already have ruby (1.9) installed, you can simply do (in any Debian flavored Linux, for that matter):<br /><br /><span style="font-family: Courier New, Courier, monospace;">sudo apt-get install sqlite3 libsqlite3-dev</span><br /><span style="font-family: inherit;"><br /></span><span style="font-family: inherit;">and</span><br /><span style="font-family: inherit;"><br /></span><span style="font-family: Courier New, Courier, monospace;">sudo gem install sequel sqlite3</span><br /><br />So now one can fire up irb and do things like:<br /><br /><div><span style="font-family: Courier New, Courier, monospace;">require 'sequel'</span></div><div><span style="font-family: Courier New, Courier, monospace;">db = Sequel.sqlite('some_db.db')</span></div><div><br /></div><div><a href="http://sequel.rubyforge.org/rdoc/files/doc/cheat_sheet_rdoc.html" target="_blank">Etc</a>.<br /><br />(This will, of course, not let you access MS Access DBs on your pi, as they rely on the "win32ole" gem - only available on windows, and the "<a href="http://www.microsoft.com/en-us/download/details.aspx?id=13255" target="_blank">Microsoft Access Database Engine</a>" - also only available on windows. More info on how to connect to those kinds of database can be found <a href="http://sequel.rubyforge.org/rdoc/files/doc/opening_databases_rdoc.html" target="_blank">here</a>&nbsp;- under 'ado'.)</div>

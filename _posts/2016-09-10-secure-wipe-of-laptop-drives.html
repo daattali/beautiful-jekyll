@@ -1,0 +1,19 @@
+---
+layout: post
+title: Secure Wipe of Laptop Drives
+date: '2016-09-10T18:23:00.000+02:00'
+author: Morten
+tags:
+- howto
+- security
+- Hardware
+- hack
+- OSs
+- Upgrade
+modified_time: '2016-09-10T18:36:40.072+02:00'
+thumbnail: https://3.bp.blogspot.com/-SvxGz-oHz7M/V9QzIJxof4I/AAAAAAACWI8/mvSRMMmREWsu3Bl4-dLVzvwdpbMLwf1wgCKgB/s72-c/DSC_0008.JPG
+blogger_id: tag:blogger.com,1999:blog-6967032375013519080.post-6056588470829737551
+blogger_orig_url: https://m635j520.blogspot.com/2016/09/secure-wipe-of-laptop-drives.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a data-flickr-embed="true" href="https://www.flickr.com/photos/mortenjohs/11313805105/in/datetaken/" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" title="CD-hage"><img alt="CD-hage" height="212" src="https://c2.staticflickr.com/6/5509/11313805105_4c25e8591d.jpg" width="320" /></a></div><script async="" charset="utf-8" src="//embedr.flickr.com/assets/client-code.js"></script>We have a couple of laptops that are still technically working, but we have moved on to greener pastures so we no longer need them. Around the corner there's a charity that reworks old tech, so the laptops are heading there. Prior to that I figured it would be a good idea to securely wipe their hard-drives -- by basically writing random garbage to them several times over. Luckily there are quite some tools made for that. After some trial and error here's what I ended up doing:<br /><br />1) Found an old USB disk, fittingly sporting a Batman logo.<br />2) Formatted it as a FAT (MS-DOS) drive.<br />3) Downloaded the free ISO of Darik's "boot and nuke" data wiping tool (DBAN) from&nbsp;<a href="http://www.dban.org/">http://www.dban.org/</a><br />4) Dowloaded Unetbootin from&nbsp;<a href="https://unetbootin.github.io/">https://unetbootin.github.io/</a> and launched it.<br />5) Used this to turn the Batman disk into a bootable disk based on the DBAN ISO.<br />6) Due to a bug somewhere in this pipeline (Possibly Unetbootin? Or DBAN itself?), I needed to edit the "<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">syslinux.cfg</span>" file in the root folder of the USB disk. This entailed replacing all mentions of "<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">ubninit</span>" with "<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">ISOLINUX.BIN</span>" (and one mention of "<span style="font-size: 17px; line-height: 18.7px;"><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">ubnkern</span></span><span style="font-family: &quot;crimson text&quot; , serif; font-size: 17px; line-height: 18.7px;">" with&nbsp;</span>"<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">DBAN.BZI</span>"). Attention, case-sensitivity going on here. (<a href="http://alexpounds.com/blog/2012/07/18/workarounds-for-unetbootin-bugs" target="_blank">This handy guide</a>&nbsp;helped me to figure this out. It also points out that it is a good idea to remove the "<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">--autonuke</span>" flag in this config file since that leads to a potentially very dangerous auto-nuking USB stick...)<br /><a href="https://3.bp.blogspot.com/-SvxGz-oHz7M/V9QzIJxof4I/AAAAAAACWI8/mvSRMMmREWsu3Bl4-dLVzvwdpbMLwf1wgCKgB/s1600/DSC_0008.JPG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="180" src="https://3.bp.blogspot.com/-SvxGz-oHz7M/V9QzIJxof4I/AAAAAAACWI8/mvSRMMmREWsu3Bl4-dLVzvwdpbMLwf1wgCKgB/s320/DSC_0008.JPG" width="320" /></a>7) Set the BIOS of the target laptops to prioritise booting from USB drives.<br />8) Plugged Batman into the laptops and them started up - choosing the aptly named "Default" as wipe option.
