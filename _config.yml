@@ -6,19 +6,19 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: M635J520
 
 # Your name to show in the footer
-author: Some Person
+author: mortenjohs
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+#  About Me: "aboutme"
+  Soundcloud:
+    - mortenjohs: "https://soundcloud.com/mortenjohs"
+    - 1bisHill: "https://soundcloud.com/1bishill"
+#  Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
@@ -41,18 +41,18 @@ round-avatar: true
 social-network-links:
   email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+#  facebook: deanattali
+  github: mortenjohs
+  twitter: mortenjohs
+#  patreon: DeanAttali
+#  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: do_meeples_dream
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
@@ -68,7 +68,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: A series of notes to myself...
 
 # --- General options --- #
 
@@ -259,3 +259,5 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
+url: https://ervik.hopto.org
+baseurl: /blog
