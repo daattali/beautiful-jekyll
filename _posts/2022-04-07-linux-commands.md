@@ -1,4 +1,4 @@
-HA – Z Linux Commands – Overview with Examples
+# A – Z Linux Commands – Overview with Examples
 
 ## On this page
 
@@ -146,6 +146,10 @@ In this article, we will introduce you a list of most frequently used Linux comm
 
 $ man command-name
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## adduser/addgroup
 
 The **adduser** and **addgroup** commands are used to add a user and group to the system respectively according to the default configuration specified in **/etc/adduser.conf** file.
@@ -154,11 +158,19 @@ $ sudo adduser tecmint
 
 For more **adduser** and **addgroup** commands: [15 Practical Examples on adduser Command in Linux](https://www.tecmint.com/add-users-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## agetty
 
 **agetty** is a program which manages physical or virtual terminals and is invoked by **init**. Once it detects a connection, it opens a tty port, asks for a user’s login name and calls up the **/bin/login** command. **Agetty** is a substitute of Linux **getty**:
 
 $ agetty -L 9600 ttyS1 vt100
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## alias
 
@@ -168,6 +180,10 @@ $ alias home='cd /home/tecmint/public\_html'
 
 The above command will create an alias called **home** for **/home/tecmint/public\_html** directory, so whenever you type **home** in the terminal prompt, it will put you in the **/home/tecmint/public\_html** directory.
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## anacron
 
 [anacron](https://www.tecmint.com/cron-vs-anacron-schedule-jobs-using-anacron-on-linux/) is a Linux facility used to run commands periodically with a frequency defined in days, weeks and months.
@@ -176,11 +192,19 @@ Unlike its sister [cron](https://www.tecmint.com/11-cron-scheduling-task-example
 
 For more information about **anacron** and **cron** read: [Cron Vs Anacron: How to Schedule Jobs Using Anacron on Linux](https://www.tecmint.com/cron-vs-anacron-schedule-jobs-using-anacron-on-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## apropos
 
 **apropos** command is used to [search and display a short man page description](https://www.tecmint.com/find-linux-command-description-and-location/) of a command/program as follows.
 
 $ apropos adduser
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## apt
 
@@ -190,6 +214,10 @@ $ sudo apt update
 
 For more apt usage read: [15 Useful Examples on APT Command](https://www.tecmint.com/apt-advanced-package-command-examples-in-ubuntu/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## apt-get
 
 [apt-get](https://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/) is a powerful and free front-end package manager for Debian/Ubuntu systems. It is used to install new software packages, remove available software packages, upgrade existing software packages as well as upgrade entire operating system.
@@ -197,6 +225,10 @@ For more apt usage read: [15 Useful Examples on APT Command](https://www.tecmint
 $ sudo apt-get update
 
 For more apt-get usage, read: [25 Useful Commands of APT-GET for Package Management](https://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/)
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## aptitude
 
@@ -206,11 +238,19 @@ $ sudo aptitude update
 
 For more usage on aptitude, read: [Learn Debian Package Management with Aptitude Command](https://www.tecmint.com/linux-package-management/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## arch
 
 **arch** is a simple command for displaying machine architecture or hardware name (similar to **uname -m**):
 
 $ arch 
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## arp
 
@@ -220,6 +260,10 @@ You can use it as below to find all alive hosts on a network:
 
 $ sudo arp-scan --interface=enp2s0 --localnet  
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## at
 
 [at command](https://www.tecmint.com/linux-cron-alternative-at-command-to-schedule-tasks/) is used to schedule tasks to run in a future time. It’s an alternative to **cron** and **anacron**, however, it runs a task once at a given future time without editing any config files:
@@ -228,11 +272,19 @@ For example, to shutdown the system at 23:55 today, run:
 
 $ sudo echo "shutdown -h now" | at -m 23:55
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## atq
 
 **atq** command is used to view jobs in **at command** queue:
 
 $ atq
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## atrm
 
@@ -242,6 +294,10 @@ $ atrm 2
 
 For more usage about **at** command, read: [How to Use ‘at’ Command to Schedule a Task in Linux](https://www.tecmint.com/linux-cron-alternative-at-command-to-schedule-tasks/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## awk
 
 [Awk](https://www.tecmint.com/category/awk-command/) is a powerful programming language created for text processing and generally used as a data extraction and reporting tool.
@@ -250,9 +306,17 @@ $ awk '//{print}'/etc/hosts
 
 For more Awk concepts (basic and advance) with simple and easy-to-understand, we’ve created a book that contains 13 chapters with a total of 41 pages, which covers all Awk basic and advance usage with practical examples: [Awk Getting Started Guide for Beginners](https://www.tecmint.com/linux-awk-command-book-for-beginners/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## batch
 
 **batch** is also used to schedule tasks to run a future time, similar to the [at command](https://www.tecmint.com/linux-cron-alternative-at-command-to-schedule-tasks/).
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## basename
 
@@ -260,11 +324,19 @@ For more Awk concepts (basic and advance) with simple and easy-to-understand, we
 
 $ basename bin/findhosts.sh
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## bc
 
 **bc** is a simple yet powerful and arbitrary precision CLI calculator language which can be used like this:
 
 $ echo 20.05 + 15.00 | bc
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## bg
 
@@ -276,6 +348,10 @@ $ jobs
 
 To learn more about bg command, read: [Start Linux Command in Background and Detach Process in Terminal](https://www.tecmint.com/run-linux-command-process-in-background-detach-process/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## bzip2
 
 [bzip2](https://www.tecmint.com/linux-compress-decompress-bz2-files-using-bzip2/) command is used to compress or decompress file(s).
@@ -285,11 +361,19 @@ $ bzip2 -d filename.bz2  #Decompress
 
 To learn more examples on bzip2, read: [How to Compress and Decompress a .bz2 File in Linux](https://www.tecmint.com/linux-compress-decompress-bz2-files-using-bzip2/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## cal
 
 The **cal** command print a calendar on the standard output.
 
 $ cal
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## cat
 
@@ -299,17 +383,29 @@ $ cat file.txt
 
 To learn more about cat command, read: [13 Useful Cat Command Examples on Linux](https://www.tecmint.com/13-basic-cat-command-examples-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## chgrp
 
 **chgrp** command is used to change the group ownership of a file. Provide the new group name as its first argument and the name of file as the second argument like this:
 
 $ chgrp tecmint users.txt
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## chmod
 
 **chmod** command is used to change/update file access permissions like this.
 
 $ chmod +x sysinfo.sh
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## chown
 
@@ -319,11 +415,19 @@ $ chmod -R www-data:www-data /var/www/html
 
 To learn more about chgrp, chmod and chwon commands, read: [Managing Users & Groups, File Permissions & Attributes in Linux](https://www.tecmint.com/manage-users-and-groups-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## cksum
 
 **cksum** command is used to display the CRC checksum and byte count of an input file.
 
 $ cksum README.txt
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## clear
 
@@ -331,17 +435,29 @@ $ cksum README.txt
 
 $ clear
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## cmp
 
 **cmp** performs a byte-by-byte comparison of two files like this.
 
 $ cmp file1 file2
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## comm
 
 **comm** command is used to compare two sorted files line-by-line as shown below.
 
 $ comm file1 file2
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## cp
 
@@ -355,6 +471,10 @@ For more information on how to copy files in Linux, read:
 2.  [Advanced Copy Command – Shows Progress Bar While Copying Large Files/Folders in Linux](https://www.tecmint.com/advanced-copy-command-shows-progress-bar-while-copying-files/)
 3.  [Progress – A Tiny Tool to Monitor Progress for (cp, mv, dd, tar, etc.) Commands in Linux](https://www.tecmint.com/progress-monitor-check-progress-of-linux-commands/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## date
 
 **date** command displays/sets the system date and time like this.
@@ -364,6 +484,10 @@ $ date --set="8 JUN 2017 13:00:00"
 
 To learn more about how to set date in Linux, read: [How to Set System Date in Linux](https://www.tecmint.com/set-time-timezone-and-synchronize-time-using-timedatectl-command/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## dd
 
 **dd** command is used for copying files, converting and formatting according to flags provided on the command line. It can strip headers, extracting parts of binary files and so on.
@@ -371,6 +495,10 @@ To learn more about how to set date in Linux, read: [How to Set System Date in L
 The example below shows creating a boot-able USB device:
 
 $ dd if=/home/tecmint/kali-linux-1.0.4-i386.iso of=/dev/sdc1 bs=512M; sync
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## df
 
@@ -380,6 +508,10 @@ $ df -h
 
 For more usage on df command, read: [12 Useful ‘df’ Command Examples to Check Disk Space](https://www.tecmint.com/how-to-check-disk-space-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## diff
 
 [diff command](https://www.tecmint.com/compare-find-difference-between-two-directories-in-linux/) is used to compare two files line by line. It can also be used to [find the difference between two directories](https://www.tecmint.com/best-linux-file-diff-tools-comparison/) in Linux like this:
@@ -388,11 +520,19 @@ $ diff file1 file2
 
 Some useful diff tools for Linux: [8 Best File Comparison and Difference (Diff) Tools for Linux](https://www.tecmint.com/best-linux-file-diff-tools-comparison/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## dir
 
 [dir command](https://www.tecmint.com/linux-dir-command-usage-with-examples/) works like Linux [ls command](https://www.tecmint.com/tag/linux-ls-command/), it lists the contents of a directory.
 
 $ dir
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## dmidecode
 
@@ -404,17 +544,29 @@ $ sudo dmidecode --type system
 
 Some useful tools to find out Linux system hardware info: [10 Useful Commands to Get Linux Hardware Information](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## du
 
 [du command](https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/) is used to show disk space usage of files present in a directory as well as its sub-directories as follows.
 
 $ du /home/aaronkilik
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## echo
 
 [echo command](https://www.tecmint.com/echo-command-in-linux/) prints a text of line provided to it.
 
 $ echo “This is TecMint - Linux How Tos”
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## eject
 
@@ -424,6 +576,10 @@ $ eject /dev/cdrom
 $ eject /mnt/cdrom/
 $ eject /dev/sda
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## env
 
 **env command** lists all the current environment variables and used to set them as well.
@@ -432,11 +588,19 @@ $ env
 
 Learn more on [How to Set and Unset Environment Variables in Linux](https://www.tecmint.com/set-unset-environment-variables-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## exit
 
 **exit command** is used to exit a shell like so.
 
 $ exit
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## expr
 
@@ -444,11 +608,19 @@ $ exit
 
 $ expr 20 + 30
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## factor
 
 **factor command** is used to show the prime factors of a number.
 
 $ factor 10
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## find
 
@@ -464,6 +636,10 @@ Learn more on how to find files in Linux:
 4.  [How to Find and Sort Files Based on Modified Date and Time](https://www.tecmint.com/find-and-sort-files-modification-date-and-time-in-linux/)
 5.  [How to Find Top Directories and Files (Disk Space) in Linux](https://www.tecmint.com/find-top-large-directories-and-files-sizes-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## free
 
 [free command](https://www.tecmint.com/check-memory-usage-in-linux/) shows the system memory usage (free, used, swapped, cached, etc.) in the system including swap space. Use the `-h` option to display output in human friendly format.
@@ -475,6 +651,10 @@ Learn more on how to find memory usage in Linux.
 1.  [Find Top Running Processes by Highest Memory and CPU Usage in Linux](https://www.tecmint.com/find-linux-processes-memory-ram-cpu-usage/)
 2.  [Smem – Reports Memory Consumption Per-Process and Per-User Basis in Linux](https://www.tecmint.com/smem-linux-memory-usage-per-process-per-user/)
 3.  [How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## grep
 
@@ -488,12 +668,20 @@ Learn more about grep command usage in Linux.
 2.  [12 Basic Linux ‘Grep’ Command Examples in Linux](https://www.tecmint.com/12-practical-examples-of-linux-grep-command/)
 3.  [11 Advanced Linux ‘Grep’ Commands in Linux](https://www.tecmint.com/linux-grep-commands-character-classes-bracket-expressions/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## groups
 
 **groups command** displays all the names of groups a user is a part of like this.
 
 $ groups
 $ groups tecmint
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## gzip
 
@@ -502,17 +690,29 @@ $ groups tecmint
 $ gzip passwds.txt
 $ cat file1 file2 | gzip > foo.gz
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## gunzip
 
 **gunzip** expands or restores files compressed with **gzip** command like this.
 
 $ gunzip foo.gz
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## head
 
 [head command](https://www.tecmint.com/view-contents-of-file-in-linux/) is used to show first lines (10 lines by default) of the specified file or stdin to the screen:
 
 \# ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head 
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## history
 
@@ -526,12 +726,20 @@ Learn more about Linux history command.
 2.  [Set Date and Time for Each Command You Execute in Bash History](https://www.tecmint.com/display-linux-command-history-with-date-and-time/)
 3.  [How to Use ‘Yum History’ to Find Out Installed/Removed Packages Info](https://www.tecmint.com/view-yum-history-to-find-packages-info/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## hostname
 
 [hostname command](https://www.tecmint.com/set-hostname-permanently-in-linux/) is used to print or set system hostname in Linux.
 
 $ hostname
 $ hostname NEW\_HOSTNAME
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## hostnamectl
 
@@ -540,12 +748,20 @@ $ hostname NEW\_HOSTNAME
 $ hostnamectl
 $ sudo hostnamectl set-hostname NEW\_HOSTNAME
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## hwclock
 
 **hwclock** is a tool for managing the system hardware clock; read or set the hardware clock (RTC).
 
 $ sudo hwclock
 $ sudo hwclock --set --date 8/06/2017
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## hwinfo
 
@@ -558,11 +774,19 @@ Learn more about how to get Linux hardware info.
 1.  [I-Nex – An Advanced Tool to Collect System/Hardware Information in Linux](https://www.tecmint.com/collect-linux-system-hardware-information/)
 2.  [9 Useful Tools to Get System Information in Linux](https://www.tecmint.com/check-linux-cpu-information/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## id
 
 **id command** shows user and group information for the current user or specified username as shown below.
 
 $ id tecmint
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## ifconfig
 
@@ -572,6 +796,10 @@ $ ifconfig
 $ sudo ifconfig eth0 up
 $ sudo ifconfig eth0 down
 $ sudo ifconfig eth0 172.16.25.125
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## ionice
 
@@ -583,11 +811,19 @@ $ ionice -c 3 rm /var/logs/syslog
 
 To understand how it works, read this article: [How to Delete HUGE (100-200GB) Files in Linux](https://www.tecmint.com/delete-huge-files-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## iostat
 
 [iostat](https://www.tecmint.com/linux-performance-monitoring-with-vmstat-and-iostat-commands/) is used to show CPU and input/output statistics for devices and partitions. It produces useful reports for updating system configurations to help balance the input/output load between physical disks.
 
 $ iostat 
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## ip
 
@@ -596,6 +832,10 @@ $ iostat
 This command will assign an IP address to a specific interface (eth1 in this case).
 
 $ sudo ip addr add 192.168.56.10 dev eth1
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## iptables
 
@@ -611,11 +851,19 @@ Learn more about iptables firewall in Linux.
 2.  [Basic Guide on IPTables (Linux Firewall) Tips / Commands](https://www.tecmint.com/basic-guide-on-iptables-linux-firewall-tips-commands/)
 3.  [Nishita Agarwal Shares Her Interview Experience on Linux ‘iptables’ Firewall](https://www.tecmint.com/linux-firewall-iptables-interview-questions-and-answers/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## iw
 
 **iw command** is used to manage wireless devices and their configuration.
 
 $ iw list 
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## iwlist
 
@@ -623,12 +871,20 @@ $ iw list
 
 $ iwlist wlp1s0 scanning
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## kill
 
 [kill command](https://www.tecmint.com/how-to-kill-a-process-in-linux/) is used to kill a process using its PID by sending a signal to it (default signal for kill is TERM).
 
 $ kill -p 2300
 $ kill -SIGTERM -p 2300
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## killall
 
@@ -642,11 +898,19 @@ Learn more about kill and killall command in Linux.
 2.  [A Guide to Kill, Pkill and Killall Commands to Terminate a Process](https://www.tecmint.com/how-to-kill-a-process-in-linux/)
 3.  [How to Kill Processes/Unresponsive Applications Using ‘xkill’ Command](https://www.tecmint.com/kill-processes-unresponsive-programs-in-ubuntu/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## kmod
 
 **kmod command** is used to manage Linux kernel modules. To list all currently loaded modules, type.
 
 $ kmod list
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## last
 
@@ -654,11 +918,19 @@ $ kmod list
 
 $ last 
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## ln
 
 **ln command** is used to create a soft link between files using the `-s` flag like this.
 
 $ ln -s /usr/bin/lscpu cpuinfo
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## locate
 
@@ -668,11 +940,19 @@ The command below will search for a file by its exact name (not \*name\*):
 
 $ locate -b '\\domain-list.txt'
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## login
 
 **login command** is used to create a new session with the system. You’ll be asked to provide a username and a password to login as below.
 
 $ sudo login
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## ls
 
@@ -690,17 +970,29 @@ To know more about ls command, read our guides.
 4.  [15 Interview Questions on Linux “ls” Command – Part 1](https://www.tecmint.com/ls-command-interview-questions/)
 5.  [10 Useful ‘ls’ Command Interview Questions – Part 2](https://www.tecmint.com/ls-interview-questions/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## lshw
 
 [lshw command](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/) is a minimal tool to get detailed information on the hardware configuration of the machine, invoke it with superuser privileges to get a comprehensive information.
 
 $ sudo lshw  
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## lscpu
 
 [lscpu command](https://www.tecmint.com/check-linux-cpu-information/) displays system’s CPU architecture information (such as number of CPUs, threads, cores, sockets, and more).
 
 $ lscpu
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## lsof
 
@@ -710,11 +1002,19 @@ To view files opened by a specific user’s processes, type the command below.
 
 $ lsof -u tecmint
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## lsusb
 
 [lsusb command](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/) shows information about USB buses in the system and the devices connected to them like this.
 
 $ lsusb 
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## man
 
@@ -723,11 +1023,19 @@ $ lsusb
 $ man du
 $ man df
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## md5sum
 
 [md5sum command](https://www.tecmint.com/check-verify-md5sum-packages-files-in-linux/) is used to [compute and print the MD5 message digest of a file](https://www.tecmint.com/generate-verify-check-files-md5-checksum-linux/). If run without arguments, debsums checks every file on your system against the stock md5sum files:
 
 $ sudo debsums
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## mkdir
 
@@ -737,6 +1045,10 @@ $ mkdir tecmint-files
 OR 
 $ mkdir -p tecmint-files
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## more
 
 [more command](https://www.tecmint.com/linux-more-command-and-less-command-examples/) enables you to view through relatively lengthy text files one screenful at a time.
@@ -745,11 +1057,19 @@ $ more file.txt
 
 Check difference between **more** and **less** command and [Learn Why ‘less’ is Faster Than ‘more’ Command](https://www.tecmint.com/linux-more-command-and-less-command-examples/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## mv
 
 **mv command** is used to [rename files or directories](https://www.tecmint.com/rename-multiple-files-in-linux/). It also moves a file or directory to another location in the directory structure.
 
 $ mv test.sh sysinfo.sh 
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## nano
 
@@ -758,6 +1078,10 @@ $ mv test.sh sysinfo.sh
 To open a file using nano, type:
 
 $ nano file.txt
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## nc/netcat
 
@@ -772,6 +1096,10 @@ Learn more examples and usage on **nc command**.
 1.  [How to Check Remote Ports are Reachable Using ‘nc’ Command](https://www.tecmint.com/check-remote-port-in-linux/)
 2.  [How to Transfer Files Between Computers Using ‘nc’ Command](https://www.tecmint.com/transfer-files-between-two-linux-machines/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## netstat
 
 [netstat command](https://www.tecmint.com/20-netstat-commands-for-linux-network-management/) displays useful information concerning the Linux networking subsystem (network connections, routing tables, interface statistics, masquerade connections, and multicast memberships).
@@ -779,6 +1107,10 @@ Learn more examples and usage on **nc command**.
 This command will display all open ports on the local system:
 
 $ netstat -a | more
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## nice
 
@@ -788,6 +1120,10 @@ The following command starts the process “[tar command](https://www.tecmint.co
 
 $ nice -12 tar -czf backup.tar.bz2 /home/\*
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## nmap
 
 [nmap](https://www.tecmint.com/nmap-command-examples/) is a popular and powerful open source tool for network scanning and security auditing. It was intended to quickly scan large networks, but it also works fine against single hosts.
@@ -796,11 +1132,19 @@ The command below will probe open ports on all live hosts on the specified netwo
 
 $ nmap -sV 192.168.56.0/24
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## nproc
 
 **nproc command** shows the number of processing units present to the current process. It’s output may be less than the number of online processors on a system.
 
 $ nproc  
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## openssl
 
@@ -808,11 +1152,19 @@ The **openssl** is a command line tool for using the different cryptography oper
 
 $ tar -czf - \* | openssl enc -e -aes256 -out backup.tar.gz
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## passwd
 
 **passwd command** is used to create/update passwords for user accounts, it can also change the account or associated password validity period. Note that normal system users may only change the password of their own account, while root may modify the password for any account.
 
 $ passwd tecmint
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## pidof
 
@@ -821,11 +1173,19 @@ $ passwd tecmint
 $ pidof init
 $ pidof cinnamon
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## ping
 
 **ping command** is used to determine connectivity between hosts on a network (or the Internet):
 
 $ ping google.com
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## ps
 
@@ -833,17 +1193,29 @@ ps shows useful information about [active processes running on a system](https:/
 
 \# ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## pstree
 
 **pstree** displays running processes as a tree which is rooted at either PID or init if PID is omitted.
 
 $ pstree
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## pwd
 
 [pwd command](https://www.tecmint.com/pwd-command-examples/) displays the name of current/working directory as below.
 
 $ pwd
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## rdiff-backup
 
@@ -853,17 +1225,29 @@ Note that for remote backups, you must install the same version of rdiff-backup 
 
 $ sudo rdiff-backup /etc /media/tecmint/Backup/server\_etc.backup
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## reboot
 
 **reboot command** may be used to [halt, power-off or reboot a system](https://www.tecmint.com/shutdown-poweroff-halt-and-reboot-commands-in-linux/) as follows.
 
 $ reboot
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## rename
 
 [rename command](https://www.tecmint.com/rename-multiple-files-in-linux/) is used to rename many files at once. If you’ve a collection of files with “**.html**” extension and you want to rename all of them with “**.php**” extension, you can type the command below.
 
 $ rename 's/\\.html$/\\.php/' \*.html
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## rm command
 
@@ -872,17 +1256,29 @@ $ rename 's/\\.html$/\\.php/' \*.html
 $ rm file1
 $ rm -rf my-files
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## rmdir
 
 **rmdir command** helps to delete/remove empty directories as follows.
 
 $ rmdir /backup/all
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## scp
 
 [scp command](https://www.tecmint.com/scp-commands-examples/) enables you to securely copy files between hosts on a network, for example.
 
 $ scp ~/names.txt root@192.168.56.10:/root/names.txt
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## shutdown
 
@@ -892,11 +1288,19 @@ $ shutdown --poweroff
 
 Learn how to show a [Custom Message to Users Before Linux Server Shutdown](https://www.tecmint.com/show-linux-server-shutdown-message/).
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## sleep
 
 **sleep command** is used to delay or pause (specifically execution of a command) for a specified amount of time.
 
 $ check.sh; sleep 5; sudo apt update
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## sort
 
@@ -910,11 +1314,19 @@ Learn more examples of sort command in Linux.
 2.  [How to Sort Output of ‘ls’ Command By Last Modified Date and Time](https://www.tecmint.com/sort-ls-output-by-last-modified-date-and-time/)
 3.  [How to Find and Sort Files Based on Modification Date and Time](https://www.tecmint.com/find-and-sort-files-modification-date-and-time-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## split
 
 [split](https://www.tecmint.com/split-large-tar-into-multiple-files-of-certain-size/) as the name suggests, is used to split a large file into small parts.
 
 $ tar -cvjf backup.tar.bz2 /home/tecmint/Documents/\* 
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## ssh
 
@@ -929,11 +1341,19 @@ Learn more about ssh command and how to use it on Linux.
 3.  [SSH Passwordless Login Using SSH Keygen in 5 Easy Steps](https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/)
 4.  [Restrict SSH User Access to Certain Directory Using Chrooted Jail](https://www.tecmint.com/restrict-ssh-user-to-directory-using-chrooted-jail/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## stat
 
 stat is used to show a file or file system status like this (`-f` is used to specify a filesystem).
 
 $ stat file1
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## su
 
@@ -941,6 +1361,10 @@ $ stat file1
 
 $ su 
 $ su tecmint
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## sudo
 
@@ -958,17 +1382,29 @@ Learn more about sudo command and how to use it on Linux.
 2.  [How to Run ‘sudo’ Command Without Entering a Password in Linux](https://www.tecmint.com/run-sudo-command-without-password-linux/)
 3.  [How to Keep ‘sudo’ Password Timeout Session Longer in Linux](https://www.tecmint.com/set-sudo-password-timeout-session-longer-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## sum
 
 **sum command** is used to show the checksum and block counts for each each specified file on the command line.
 
 $ sum output file.txt 
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## tac
 
 [tac command](https://www.tecmint.com/learn-linux-cat-command-and-tac-command/) concatenates and displays files in reverse. It simply prints each file to standard output, showing last line first.
 
 $tac file.txt
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## tail
 
@@ -980,6 +1416,10 @@ $ tail long-file
 OR
 $ tail -n 15 long-file
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## talk
 
 **talk command** is used to talk to another system/network user. To talk to a user on the same machine, use their login name, however, to talk to a user on another machine use ‘user@host’.
@@ -987,6 +1427,10 @@ $ tail -n 15 long-file
 $ talk person \[ttyname\]
 OR
 $ talk‘user@host’ \[ttyname\]
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## tar
 
@@ -1000,11 +1444,19 @@ Learn more about tar command and its usage on Linux.
 2.  [How to Split Large ‘tar’ Archive into Multiple Files of Certain Size](https://www.tecmint.com/split-large-tar-into-multiple-files-of-certain-size/)
 3.  [How to Extract Tar Files to Specific or Different Directory in Linux](https://www.tecmint.com/extract-tar-files-to-specific-or-different-directory-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## tee
 
 **tee command** is used to read from standard input and prints to standard output and files as shown below.
 
 $ echo "Testing how tee command works" | tee file1 
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## tree
 
@@ -1012,11 +1464,19 @@ The [tree command](https://www.tecmint.com/linux-tree-command-examples/) is a ti
 
 $ tree
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## time
 
 **time command** runs programs and summarizes system resource usage.
 
 $ time wc /etc/hosts
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## top
 
@@ -1024,17 +1484,29 @@ $ time wc /etc/hosts
 
 $ top
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## touch
 
 [touch command](https://www.tecmint.com/8-pratical-examples-of-linux-touch-command/) changes file timestamps, it can also be used to create a file as follows.
 
 $ touch file.txt
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## tr
 
 **tr command** is a useful utility used to translate (change) or delete characters from stdin, and write the result to stdout or send to a file as follows.
 
 $ cat domain-list.txt | tr \[:lower:\] \[:upper:\]
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## uname
 
@@ -1044,11 +1516,19 @@ Use the `-a` option to show all the system information:
 
 $ uname 
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## uniq
 
 **uniq command** displays or omits repeated lines from input (or standard input). To indicate the number of occurrences of a line, use the `-c` option.
 
 $ cat domain-list.txt
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## uptime
 
@@ -1056,11 +1536,19 @@ $ cat domain-list.txt
 
 $ uptime
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## users
 
 **users command** shows the user names of users currently logged in to the current host like this.
 
 $ users
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## vim/vi
 
@@ -1077,11 +1565,19 @@ Learn how to use vi/vim editor in Linux along with some tips and tricks.
 5.  [Learn Useful ‘Vi/Vim’ Editor Tips and Tricks to Enhance Your Skills](https://www.tecmint.com/learn-vi-and-vim-editor-tips-and-tricks-in-linux/)
 6.  [8 Interesting ‘Vi/Vim’ Editor Tips and Tricks for Every Linux Administrator](https://www.tecmint.com/how-to-use-vi-and-vim-editor-in-linux/)
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## w
 
 **w command** displays system uptime, load averages and information about the users currently on the machine, and what they are doing (their processes) like this.
 
 $ w
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## wall
 
@@ -1089,11 +1585,19 @@ $ w
 
 $ wall “This is TecMint – Linux How Tos”
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## watch
 
 [watch command](https://www.tecmint.com/run-repeat-linux-command-every-x-seconds/) runs a program repeatedly while displaying its output on fullscreen. It can also be used to watch changes to a file/directory. The example below shows how to watch the contents of a directory change.
 
 $ watch -d ls -l
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## wc
 
@@ -1101,11 +1605,19 @@ $ watch -d ls -l
 
 $ wc filename
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## wget
 
 [wget command](https://www.tecmint.com/10-wget-command-examples-in-linux/) is a simple utility used to download files from the Web in a non-interactive (can work in the background) way.
 
 $ wget -c http://ftp.gnu.org/gnu/wget/wget-1.5.3.tar.gz
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## whatis
 
@@ -1113,11 +1625,19 @@ $ wget -c http://ftp.gnu.org/gnu/wget/wget-1.5.3.tar.gz
 
 $ whatis wget
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## which
 
 **which command** displays the absolute path (pathnames) of the files (or possibly links) which would be executed in the current environment.
 
 $ which who
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## who
 
@@ -1125,11 +1645,19 @@ $ which who
 
 $ who
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## whereis
 
 [whereis command](https://www.tecmint.com/find-linux-command-description-and-location/) helps us locate the binary, source and manual files for commands.
 
 $ whereis cat
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## xargs
 
@@ -1139,11 +1667,19 @@ The example below show xargs being used to [copy a file to multiple directories 
 
 $ echo /home/aaronkilik/test/ /home/aaronkilik/tmp | xargs -n 1 cp -v /home/aaronkilik/bin/sys\_info.sh
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## yes
 
 **yes command** is used to display a string repeatedly until when terminated or killed using \[`Ctrl + C`\] as follows.
 
 $ yes "This is TecMint - Linux HowTos"
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## youtube-dl
 
@@ -1153,12 +1689,20 @@ The command below will list available formats for the video in the provided link
 
 $ youtube-dl --list-formats https://www.youtube.com/watch?v=iR
 
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
+
 ## zcmp/zdiff
 
 **zcmp** and **zdiff** minimal utilities used to compare compressed files as shown in the examples below.
 
 $ zcmp domain-list.txt.zip basic\_passwords.txt.zip
 $ zdiff domain-list.txt.zip basic\_passwords.txt.zip 
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## zip
 
@@ -1167,6 +1711,11 @@ $ zdiff domain-list.txt.zip basic\_passwords.txt.zip
 $ tar cf - . | zip | dd of=/dev/nrst0 obs=16k
 $ zip inarchive.zip foo.c bar.c --out outarchive.zip
 $ tar cf - .| zip backup -
+
+
+<div align="right">
+  <b><a href="#index">↥ Back To Top</a></b>
+</div>
 
 ## zz
 
