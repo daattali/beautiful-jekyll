@@ -1,6 +1,6 @@
 # A – Z Linux Commands – Overview with Examples
 
-## On this page
+## Index
 
 1.  [adduser/addgroup](#adduser/addgroup)
 2.  [agetty](#agetty)
