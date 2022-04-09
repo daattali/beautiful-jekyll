@@ -4,5 +4,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "kramdown-parser-gfm"
-gem "jekyll-cloudcannon-schedule"
+gem 'jekyll'
+gem 'kramdown-parser-gfm'
+gem 'jekyll-cloudcannon-schedule'
+gem 'webrick'
