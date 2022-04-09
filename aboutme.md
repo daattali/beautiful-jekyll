@@ -34,6 +34,6 @@ I also offer technical writing services in which the content is a lot more polis
 
 You can find most of my freelance work on the <a href="https://www.altaro.com/dojo/author/xavier/">Altaro VMware Dojo</a> and <a href="https://www.vembu.com/blog/author/xavier/">Vembu's VMware blog</a>.
 
-Feel free to reach out if you seek technical writing or guest blogging services.
+Feel free to reach out if you seek technical writing or guest blogging services...
 
 ***
