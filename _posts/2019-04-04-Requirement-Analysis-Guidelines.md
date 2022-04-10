@@ -19,6 +19,7 @@ cover-img: /assets/img/cover.jpg
 As a Business Analyst, requirement analysis is the most important part of your Job. It will help you determining the actual needs of stakeholders.
 
 _Quick Links to Topic:_
+
 - [What is Visual Modeling?](#what-is-visual-modeling)
   - [What's get modeled?](#whats-get-modeled)
 - [Business Models](#business-models)
@@ -32,15 +33,17 @@ _Quick Links to Topic:_
 
 Requirement Analysis Introduction
 Analysis for three (9)03) things:
- 1. You want all stakeholder to understand the requirement 
- 2. You want customer be able to understand need, function, to prioritize the requirement  
- 3. You want your designer, developer, team to design and develop a solution that meet requirement
+
+1.  You want all stakeholder to understand the requirement
+2.  You want customer be able to understand need, function, to prioritize the requirement
+3.  You want your designer, developer, team to design and develop a solution that meet requirement
 
 Taking your requirement and visual model to understand requirement by various levels of stakeholder.
 
 Visual Modeling Concept
 
 # What is Visual Modeling?
+
 Visual Modeling is Graphical representation using a modeling language that takes something **complex** and makes it **easier to understand**.
 
 Let's break it down further. So, the first thing is visual modeling is a graphical representation. Pictures are a lot easier to understand than a block of text. IT could be a picture, process flow or a excel sheet. **Graphical representation is a way to be able display it rather than just displaying text.** There are different graphical representations can use different modeling languages and what it does is it takes something complex and makes it easier to understand.
@@ -50,34 +53,43 @@ For example, what a visual model is, is an organizational chart. Just what every
 Think that you had to explain that in text to say, you know, so and so is the president. And so and so is the vice president reporting up to the president and other vice presidents of these. It would take a long time to try to explain that in text, but a model of an organizational chart shows that very easily and it's very intuitive as to what it shows. That's what the model is.
 
 So what are the benefits of visual modeling? We've talked about a few of them already, you can easily understand complex information.
-  -  Easily understand complex information
-  -  Gets all stakeholders involved
-  -  Receive requirements efficiently
-  -  Identify the underlying problem
-  -  Analyze ‘what if’ scenarios
-  -  Allows remove of irrelevant information
+
+- Easily understand complex information
+- Gets all stakeholders involved
+- Receive requirements efficiently
+- Identify the underlying problem
+- Analyze ‘what if’ scenarios
+- Allows remove of irrelevant information
 
 ## What's get modeled?
- 1. Current state: “as-is” 
- 2. Future state: “to-be”
- - Requirements to fill the gaps
+
+1.  Current state: “as-is”
+2.  Future state: “to-be”
+
+- Requirements to fill the gaps
 
 # Business Models
+
 ## Organizational Chart :
+
 This model will allow you to understand who is in charge, who reports to whom. No user very often in BA job.
 
 ## Competitive Comparison Matrix :
+
 To Find out what service or product meet your need the most, a under used model. Used early on the project.
 
 ## Stakeholder Map :
+
 To Category your stakeholder and where they fit.
 
 ## Use Case Diagram :
+
 To identify who is going to use your system.
 
 ## Process Flow Diagram :
+
 Commonly used model to showing you a process from start to finish. A unit level (extremely high level) view of a process.
-    A) Unit Level:
+A) Unit Level:
 
     B) Task Level:
 
@@ -85,40 +97,38 @@ User Interface and Wireframe :
 Design or mock up of a system.
 
 ## Technical Models
+
 Mostly used by IT Business Analyst who is a Technical person.
- 1. System Context Diagram 
- 2. Data Flow Diagram (DFD) 
- 3. CRUD Matrix 
- 4. State Diagram
- 5. Entity Relationship Diagram (ERD)
+
+1.  System Context Diagram
+2.  Data Flow Diagram (DFD)
+3.  CRUD Matrix
+4.  State Diagram
+5.  Entity Relationship Diagram (ERD)
 
 ## BPMN Vs UML
 
-BPMN stands for Business Process Modeling Notation. It is a graphical notation style; In other word, a visual language. BPMN is a flow chart based modeling language.	It describes processes as flow of activities, or actions, arranged in swimming lanes, representing activity performers.
-	
+BPMN stands for Business Process Modeling Notation. It is a graphical notation style; In other word, a visual language. BPMN is a flow chart based modeling language. It describes processes as flow of activities, or actions, arranged in swimming lanes, representing activity performers.
 
+Basic Components:
 
- 
-Basic Components: 
-   	1. Swimming Lane: Independent Process (Divider between processes)
-   	2. Lane:  Functionality or Activity within a Swimming Lane
-   	3. Event:  Mark start and end of a process. 
-   	4. Gateway: Control process flow, Can test a decision.
-   	5. Activity: Process or Sub process. Naming convention should use verb and noun
-   	6. Sequence Flow: A solid arrow that connects Event, Activity, and Gateway
-
-
+1. Swimming Lane: Independent Process (Divider between processes)
+2. Lane: Functionality or Activity within a Swimming Lane
+3. Event: Mark start and end of a process.
+4. Gateway: Control process flow, Can test a decision.
+5. Activity: Process or Sub process. Naming convention should use verb and noun
+6. Sequence Flow: A solid arrow that connects Event, Activity, and Gateway
 
 {: .box-success}
 Enjoy !!!
 See Yaaa, Next.
 
 Rafayet Hossain
+
 ☑ Business Analyst ☑ SQA ☑ Certified Lean Six Sigma Black Belt ☑ Writer
 
 For Any Query or Task Contact Me @
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:rafayet13@gmail.com)
-
 
 ![Diary](/assets/img/diary.png "Diary")
