@@ -31,7 +31,7 @@ _Quick Links to Topic:_
   - [BPMN Vs UML](#bpmn-vs-uml)
 
 Requirement Analysis Introduction
-Analysis for three things
+Analysis for three (9)03) things:
  1. You want all stakeholder to understand the requirement 
  2. You want customer be able to understand need, function, to prioritize the requirement  
  3. You want your designer, developer, team to design and develop a solution that meet requirement
@@ -41,26 +41,26 @@ Taking your requirement and visual model to understand requirement by various le
 Visual Modeling Concept
 
 # What is Visual Modeling?
-Visual Modeling is Graphical representation using a modeling language that takes something complex and makes it easier to understand.
+Visual Modeling is Graphical representation using a modeling language that takes something **complex** and makes it **easier to understand**.
 
-Let's break it down further. So the first thing is visual modeling is a graphical representation. Pictures are a lot easier to understand than a block of text. IT could be a picture, process flow or a excel sheet. Graphical representation is a way to be able display it rather than just displaying text. There are different graphical representations can use different modeling languages and what it does is it takes something complex and makes it easier to understand.
+Let's break it down further. So, the first thing is visual modeling is a graphical representation. Pictures are a lot easier to understand than a block of text. IT could be a picture, process flow or a excel sheet. **Graphical representation is a way to be able display it rather than just displaying text.** There are different graphical representations can use different modeling languages and what it does is it takes something complex and makes it easier to understand.
 
-For example, what a visual model is, is an organizational chart. Just what everybody's seen in org. chart which shows that the different levels and hierarchy of who reports to whom. Well, think about that org chart for a big corporation where it's got all these different layers and all these different departments and who all rolls up where. Well now think about that or chart in a text form.
+For example, what a visual model is, is an organizational chart. Just what everybody's seen in organizational chart which shows that the different levels and hierarchy of who reports to whom. Well, think about that org chart for a big corporation where it's got all these different layers and all these different departments and who all rolls up where. Well now think about that or chart in a text form.
 
-Think that you had to explain that in text to say, you know, so and so is the president and so and so is the vice president reporting up to the president and other vice presidents of these. It would take a long time to try to explain that in text, but a model of an organizational chart shows that very easily and it's very intuitive as to what it shows. That's what the model is.
+Think that you had to explain that in text to say, you know, so and so is the president. And so and so is the vice president reporting up to the president and other vice presidents of these. It would take a long time to try to explain that in text, but a model of an organizational chart shows that very easily and it's very intuitive as to what it shows. That's what the model is.
 
 So what are the benefits of visual modeling? We've talked about a few of them already, you can easily understand complex information.
--  Easily understand complex information
--  Gets all stakeholders involved
--  Receive requirements efficiently
--  Identify the underlying problem
--  Analyze ‘what if’ scenarios
--  Allows remove of irrelevant information
+  -  Easily understand complex information
+  -  Gets all stakeholders involved
+  -  Receive requirements efficiently
+  -  Identify the underlying problem
+  -  Analyze ‘what if’ scenarios
+  -  Allows remove of irrelevant information
 
 ## What's get modeled?
- 1. Current state, “as-is” 
- 2. Future state, “to-be”
- - Requirements fill the gap
+ 1. Current state: “as-is” 
+ 2. Future state: “to-be”
+ - Requirements to fill the gaps
 
 # Business Models
 ## Organizational Chart :
@@ -77,15 +77,20 @@ To identify who is going to use your system.
 
 ## Process Flow Diagram :
 Commonly used model to showing you a process from start to finish. A unit level (extremely high level) view of a process.
-A) Unit Level:
+    A) Unit Level:
 
-B) Task Level:
+    B) Task Level:
 
-User Interface Wireframe :
+User Interface and Wireframe :
 Design or mock up of a system.
 
 ## Technical Models
-Mostly used by IT Business Analyst who is a Technical person. 1. System Context Diagram 2. Data Flow Diagram (DFD) 3. Crud Matrix 4. State Diagram 5. Entity Relationship Diagram (ERD)
+Mostly used by IT Business Analyst who is a Technical person.
+ 1. System Context Diagram 
+ 2. Data Flow Diagram (DFD) 
+ 3. CRUD Matrix 
+ 4. State Diagram
+ 5. Entity Relationship Diagram (ERD)
 
 ## BPMN Vs UML
 
@@ -95,17 +100,25 @@ BPMN stands for Business Process Modeling Notation. It is a graphical notation s
 
  
 Basic Components: 
-	1. Swimming Lane: Independent Process (Divider between processes)
-	2. Lane:  Functionality or Activity within a Swimming Lane
-	3. Event:  Mark start and end of a process. 
-	4. Gateway: Control process flow, Can test a decision.
-	5. Activity: Process or Sub process. Naming convention should use verb and noun
-	6. Sequence Flow: A solid arrow that connects Event, Activity, and Gateway
+   	1. Swimming Lane: Independent Process (Divider between processes)
+   	2. Lane:  Functionality or Activity within a Swimming Lane
+   	3. Event:  Mark start and end of a process. 
+   	4. Gateway: Control process flow, Can test a decision.
+   	5. Activity: Process or Sub process. Naming convention should use verb and noun
+   	6. Sequence Flow: A solid arrow that connects Event, Activity, and Gateway
 
 
 
 {: .box-success}
 Enjoy !!!
 See Yaaa, Next.
+
+Rafayet Hossain
+☑ Business Analyst ☑ SQA ☑ Certified Lean Six Sigma Black Belt ☑ Writer
+
+For Any Query or Task Contact Me @
+[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafayet13/)
+[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:rafayet13@gmail.com)
+
 
 ![Diary](/assets/img/diary.png "Diary")
