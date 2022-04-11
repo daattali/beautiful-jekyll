@@ -45,13 +45,13 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 21-Mar	| Surface Area & Volume | _Cancelled_ |  |
 | 28-Mar	| Bases					  | [2021 Spring AMC 10B](https://artofproblemsolving.com/wiki/index.php/2021_AMC_10B_Problems) |  |
 | 4-Apr		| _No school_			| _No school_ | _No school_ |
-| 11-Apr	| Measurement			| [2020 AMC 10A](https://artofproblemsolving.com/wiki/index.php/2020_AMC_10A_Problems) |  |
-| 18-Apr	| Clocks          | [2020 AMC 10B](https://artofproblemsolving.com/wiki/index.php/2020_AMC_10B_Problems) |  |
-| 25-Apr	| Venn Diagrams		| _No Coaching Session (Math Is Cool Masters)_ |  |
-| 2-May		| Functions				| [2021 Spring AMC 10A](https://artofproblemsolving.com/wiki/index.php/2021_AMC_10A_Problems) |  |
-| 9-May 	| Mass Point Geometry	|  |  |
-| 16-May	| Statistics		  |  |  |
-| 23-May	| Ratios	|  | _No school_ |
+| 11-Apr	| _Cancelled_			| _Cancelled_ | _Cancelled_ |
+| 18-Apr	| Clocks          | _Cancelled_ | _Cancelled_ |
+| 25-Apr	| Venn Diagrams		| _No Coaching Session (Math Is Cool Masters)_ | _Cancelled_ |
+| 2-May		| Functions				| _Cancelled_ | _Cancelled_ |
+| 9-May 	| Mass Point Geometry	| _Cancelled_ | _Cancelled_ |
+| 16-May	| Statistics		  | _Cancelled_ | _Cancelled_ |
+| 23-May	| Ratios	| _Cancelled_ | _No school_ |
 
 [2020-2021 schedule](/schedule-2021.md)
 
