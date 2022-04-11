@@ -6,7 +6,8 @@ subtitle: ''
 ---
 ## Quick links
 
-* Sign up for the **FREE** >> [Simple Home Planning Binder Challenge](https://mailchi.mp/9e7cf5d96841/planningchallenge) << You'll receive the Free Ultimate Home Planning Binder Checklist on signup!
+* [The First Simple Planning Step to Take as a Beginner Planner + a free beginner daily plan printable](https://www.simplehomemom.com/the-first-simple-planning-step-to-take-as-a-beginner-planner/)
+* **FREE** >> [Simple Home Planning Binder Checklist](https://mailchi.mp/9710466fe4ba/binderchecklist)
 * [My Simple Home Planning Binder Printable Pack](https://buy.stripe.com/fZeaGO0ua164dbidQY) 50+ printables for you to use in your Home Planning Binder
 * [Newest blogs](https://www.simplehomemom.com)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
