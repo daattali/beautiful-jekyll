@@ -19,7 +19,7 @@ THE DETAILS:
 
 **Who's My Simple Planner for?** My Simple Planner is perfect for you if you are a beginner planner, but also have some experience with making to do lists (and losing them). It's for you if you want to get better at planning, but don't know where to start and also get overwhelmed at all of the planning choices out there.
 
-**Why My Simple Planner over another planner?** 
+**Why My Simple Planner over another planner?**
 
 **The benefits of using My Simple Planner:**
 
@@ -27,7 +27,7 @@ THE DETAILS:
 
 ....PREVIEW IMAGE
 
-**Pages included: 5 cover page options, weekly dashboard, daily planning, notes, braindump,** 
+**Pages included: 5 cover page options, weekly dashboard, daily planning, notes, braindump,**
 
 **Details:**
 
@@ -70,3 +70,27 @@ _I also have a FREE class on beginner planning basics in my freebie vault. You c
 PREVIEW IMAGES
 
 REVIEWS
+
+from amazon:
+
+Looking for **a** **simple**, **no fuss planner** that helps you stay on track without feeling overwhelmed? Enter My Simple Planner. My Simple Planner was designed with _simplicity in mind_.  
+  
+ABOUT this item:
+
+* undated 3 month planner
+* monthly overview pages and notes with lots of writing space
+* daily planning pages that include open ended boxes and to do list lines that you can use for tasks, notes, or appointments
+* weekly dashboard that includes a spot for a meal plan, habit tracking, appointments, to do lists
+* braindump pages
+* running to do list pages
+* routine pages
+* extra note pages
+* tip page on using this planner
+* printed on
+* page sizes: 8.5 x 11 inches (21.59 cm x 27.94 cm)
+* printed on
+* 80 pages
+
+LAYOUT of the planner:  
+  
+The beginning of My Simple Planner gives you your monthly overviews, followed by your weekly dashboards, and daily planning pages. At the end of the planner, you will find routine pages, running to do list pages, braindump pages, and note pages.
