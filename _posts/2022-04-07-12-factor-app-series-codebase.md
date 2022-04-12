@@ -3,6 +3,7 @@ layout: post
 title: 12 Factor App Series - Codebase
 subtitle: One Codebase to Rule the App!
 comments: true
+share-img: /assets/img/12-factor/codebase-deploys.png
 ---
 
 Although simple, this is a very powerful and core concept in developing SaaS. Before I jump right in, I wanted to define
