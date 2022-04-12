@@ -2,6 +2,8 @@
 layout: page
 title: Dealer's Den
 subtitle:
+css:
+    - "/assets/css/dealer-list.css"
 ---
 
 {% assign dealers = site.data.dealers %}
