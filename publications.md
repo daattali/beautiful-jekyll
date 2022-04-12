@@ -10,6 +10,89 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
 <!--Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work.--> 
 
 <table cellpadding="10" width="100%">
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/rss2022logo.png" img width="250">
+        </td>
+        <td><a href="">FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects</a><br>
+            <div class="pubauthor">
+            Ben Eisner*, Harry Zhang*, David Held<br>
+            </div>
+            <div id="bib2022diffskill" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{
+        lin2022diffskill,
+        title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
+        author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
+        booktitle={International Conference on Learning Representations},
+        year={2022},
+        url={https://openreview.net/forum?id=Kef8cKdHWpP}}
+
+                </pre>
+            </blockquote>
+        </div>
+        <div id="abs2022diffskill" style="display:none">
+            <blockquote>
+                We consider the problem of sequential robotic manipulation of deformable objects using tools.
+    Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. 
+            
+            </blockquote>
+        </div>
+        <div class="pubjournal">Robotics: Science and Systems (RSS), 2022
+        <div style="font-size:small">
+            <!--a href="https://sites.google.com/view/iclr2022diffskill">[Project Page]</a>
+            <a href="javascript:copy(div2022diffskill, bib2022diffskill)">[Bibtex]</a>
+            <a href="javascript:copy(div2022diffskill, abs2022diffskill)">[Abstract]</a>
+            <a href="https://openreview.net/pdf?id=Kef8cKdHWpP">[PDF]</a-->
+        </div>
+        <div id="div2022diffskill" class="pubInfo"></div>
+        </div>
+        <br>
+        </td>
+        </tr>
+
+        <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/rss2022logo.png" img width="250">
+        </td>
+        <td><a href="">Mesh-based Dynamics with Occlusion Reasoning for Cloth Manipulation</a><br>
+            <div class="pubauthor">
+                Zixuan Huang, Xingyu Lin, David Held<br>
+            </div>
+            <div id="bib2022diffskill" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{
+    lin2022diffskill,
+    title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
+    author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
+    booktitle={International Conference on Learning Representations},
+    year={2022},
+    url={https://openreview.net/forum?id=Kef8cKdHWpP}}
+
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="abs2022diffskill" style="display:none">
+                <blockquote>
+                    We consider the problem of sequential robotic manipulation of deformable objects using tools.
+    Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. 
+                
+                </blockquote>
+            </div>
+            <div class="pubjournal">Robotics: Science and Systems (RSS), 2022
+            <div style="font-size:small">
+                <!--a href="https://sites.google.com/view/iclr2022diffskill">[Project Page]</a>
+                <a href="javascript:copy(div2022diffskill, bib2022diffskill)">[Bibtex]</a>
+                <a href="javascript:copy(div2022diffskill, abs2022diffskill)">[Abstract]</a>
+                <a href="https://openreview.net/pdf?id=Kef8cKdHWpP">[PDF]</a-->
+            </div>
+            <div id="div2022diffskill" class="pubInfo"></div>
+            </div>
+            <br>
+        </td>
+    </tr>
+
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
             <img src="../pics/2022_diffskill.gif" img width="250">
@@ -21,12 +104,13 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
             <div id="bib2022diffskill" style="display:none">
                 <blockquote>
                     <pre>@inproceedings{
-    lin2022diffskill,
-    title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
-    author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
-    booktitle={International Conference on Learning Representations},
-    year={2022},
-    url={https://openreview.net/forum?id=Kef8cKdHWpP}}
+lin2022diffskill,
+title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
+author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=Kef8cKdHWpP}}
+
                     </pre>
                 </blockquote>
             </div>
@@ -34,6 +118,7 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
                 <blockquote>
                     We consider the problem of sequential robotic manipulation of deformable objects using tools.
 Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. 
+                
                 </blockquote>
             </div>
             <div class="pubjournal">International Conference on Learning Representations (ICLR), 2022
@@ -58,12 +143,13 @@ Previous works have shown that differentiable physics simulators provide gradien
                 Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held<br>
             </div>
             <div id="bib2022pouring" style="display:none">
-                <blockquote>
-<pre>@inproceedings{icra2022pouring,
+                <blockquote><pre>@inproceedings{
+icra2022pouring,
 title={Transparent Liquid Segmentation for Robotic Pouring},
 author={Gautham Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
 booktitle={2022 International Conference on Robotics and Automation (ICRA)},
 year={2022}}</pre>
+
                 </blockquote>
             </div>
             <div id="abs2022pouring" style="display:none">
@@ -97,10 +183,10 @@ year={2022}}</pre>
             <div id="bib2022ossid" style="display:none">
                 <blockquote>
 <pre>@inproceedings{icra2022ossid,
-    title={OSSID: Online Self-Supervised Instance Detection by (and for) Pose Estimation},
-    author={Qiao Gu, Brian Okorn, David Held},
-    booktitle={2022 International Conference on Robotics and Automation (ICRA)},
-    year={2022}}
+title={OSSID: Online Self-Supervised Instance Detection by (and for) Pose Estimation},
+author={Qiao Gu, Brian Okorn, David Held},
+booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+year={2022}}
 </pre>
                 </blockquote>
             </div>
