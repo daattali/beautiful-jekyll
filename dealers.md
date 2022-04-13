@@ -16,7 +16,7 @@ css:
 | Closed | 7:00 PM | 7:00 PM | 4:00 PM |
 | Break | 2-2:30 PM | 2-2:30 PM | No Break |
 
-![](/assets/img/2022/f2-tables-official-sans-electric.png){: width="9021" height="9000"}
+![](/assets/img/2022/f2-tables-official-sans-electric.png)
 
 {% assign dealers = site.data.dealers %} {% assign alphabetical_dealers = dealers | sort: 'display_name' %}
 
