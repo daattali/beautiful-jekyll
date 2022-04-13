@@ -9,7 +9,7 @@ Are you often writing down mega to do lists and get frozen with overwhelm and in
 
 ***
 
-GRAPHIC HERE.
+![Promo My Simple Planner](/uploads/my-simple-planner-shm.jpg "My Simple Planner SHM")
 
 ## MY SIMPLE PLANNER
 
@@ -73,8 +73,8 @@ REVIEWS
 
 from amazon:
 
-Looking for **a** **simple**, **no fuss planner** that helps you stay on track without feeling overwhelmed? Enter My Simple Planner. My Simple Planner was designed with _simplicity in mind_.  
-  
+Looking for **a** **simple**, **no fuss planner** that helps you stay on track without feeling overwhelmed? Enter My Simple Planner. My Simple Planner was designed with _simplicity in mind_.
+
 ABOUT this item:
 
 * undated 3 month planner
@@ -91,6 +91,6 @@ ABOUT this item:
 * printed on
 * 80 pages
 
-LAYOUT of the planner:  
-  
+LAYOUT of the planner:
+
 The beginning of My Simple Planner gives you your monthly overviews, followed by your weekly dashboards, and daily planning pages. At the end of the planner, you will find routine pages, running to do list pages, braindump pages, and note pages.
