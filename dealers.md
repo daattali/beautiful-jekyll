@@ -4,7 +4,7 @@ title: Dealer's Den
 subtitle:
 css:
     - "/assets/css/dealer-list.css"
-    - "/assets/css/2022/dealers.scss"
+    - "/assets/css/theme-2022/dealers.scss"
 ---
 
 ## Dealer’s Den Schedule
