@@ -10,9 +10,7 @@
 
 <div class="dealer-card">
     {% if dealer["image_name"] %}
-    <div class="image-container">
-      <img class="dealer-banner" src="/assets/img/2022/dealers_images/{{ dealer_image }}" alt="{{ dealer["display_name"] }}" />    
-    </div>
+    <img class="dealer-banner" src="/assets/img/dealers/{{ dealer_image }}" alt="{{ dealer["display_name"] }}" />    
     {% endif %}
 
     <div class="dealer-card-content">
@@ -26,14 +24,8 @@
             {{ dealer["website_link"] }}
         </div>
     </div>
-    
-    {% if dealer["nsfw"] == "yes" %}
-      {% assign nsfw_text = " (nsfw)" %}
-    {% else %}
-      {% assign nsfw_text = "" %}
-    {% endif %}
-    
+
     {% if dealer["website_link"] %}
-    <p>They can be reached <a class="dealer-card-link" href="{{ dealer["website_link"] }}" target="_blank">here{{nsfw_text}}</a></p>
+    <a class="dealer-card-link" href="{{ dealer["website_link"] }}" target="_blank"></a>
     {% endif %}
 </div>
