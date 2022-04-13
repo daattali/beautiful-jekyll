@@ -45,6 +45,37 @@ Florencia has a teaching degree at the University the Buenos Aires. She has been
 </p>
 
 
+#### Daniel Chen, Postdoctoral Research and Teaching Fellow
+
+
+<img src='../img/team/daniel.jpeg' align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Daniel Chen joined the MDS program in March 2022.
+They were born and raised in New York City where they also got their
+BA in Psychology and Behaioral Neuroscience (Macaulay Honors College at CUNY Hunter College),
+and a MPH in Epidemiology (Columbia University).
+They left the city life for rural Southwest Virginia to do their
+PhD in data science education in the biomedical sciences (Virginia Tech).
+Vancouver hopes to combine the bustling life of a city with the peacefulness of the great outdoors.
+
+Daniel hopes to bring his experiences with
+communities of practice (The Carpentries) and
+industry (Consulting and RStudio) to
+teach and inspire the next generation of data scientists make the world a better place.
+
+When Daniel is not teaching you can find him
+in the tranquil world of underwater caves,
+on top of the world with a snowboard, or
+at a computer learing how to CAD design something to print on his 3D printer.
+<br>
+
+<i>In the last 6 months, Daniel learned how to use a lathe and mill to make a lightsaber!</i>
+
+<i>Daniel's favorite data science topic are reproduciable and collaboratice workflows.</i>
+
+<a href="https://daniel.rbind.io/" target="_blank">Learn more about Daniel here.</a>
+
+</p>
 
 
 #### Mike Gelbart, Associate Professor of Teaching (On Leave)
