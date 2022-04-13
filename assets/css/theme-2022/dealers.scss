@@ -5,3 +5,7 @@ table {
   table-layout: fixed;
   max-width: 600px;
 }
+
+table tr td:first-child {
+    background-color: #2a194d;
+}
