@@ -17,6 +17,7 @@ css:
 | Closed | 7:00 PM | 7:00 PM | 4:00 PM |
 | Break | 2-2:30 PM | 2-2:30 PM | No Break |
 
+
 ## Our Den
 
 ![](/assets/img/2022/f2-tables-official-sans-electric.png)
