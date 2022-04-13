@@ -22,6 +22,7 @@ css:
 
 ![](/assets/img/2022/f2-tables-official-sans-electric.png)
 
+<br>
 ## Our Dealers
 
 {% assign dealers = site.data.dealers %} {% assign alphabetical_dealers = dealers | sort: 'display_name' %}
