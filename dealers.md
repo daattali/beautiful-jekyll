@@ -16,7 +16,7 @@ css:
 | Open | 12:00 PM | 11:00 AM | 11:00 AM |
 | Closed | 7:00 PM | 7:00 PM | 4:00 PM |
 | Break | 2-2:30 PM | 2-2:30 PM | No Break |
-
+<br>
 
 ## Our Den
 
