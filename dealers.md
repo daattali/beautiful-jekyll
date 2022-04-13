@@ -18,7 +18,6 @@ css:
 | Break | 2-2:30 PM | 2-2:30 PM | No Break
 
 <br>
-
 ## Our Den
 
 ![](/assets/img/2022/f2-tables-official-sans-electric.png)
