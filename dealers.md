@@ -18,6 +18,8 @@ css:
 
 ![](/assets/img/2022/f2-tables-official-sans-electric.png)
 
+## Our Dealers
+
 {% assign dealers = site.data.dealers %} {% assign alphabetical_dealers = dealers | sort: 'display_name' %}
 
 <div class="dealer-list-container">{% for dealer in alphabetical_dealers %}<div class="dealer-card-container">{% include dealer-card.html dealer=dealer %}</div> {% endfor %}</div>
