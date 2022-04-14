@@ -7,6 +7,7 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [paper-review]
 ---
+
 # Paper Title
 Using an EfficientNet-LSTM for the recognition of single Cow’s motion
 behaviors in a complicated environment
@@ -39,7 +40,7 @@ behavior recognition, Livestock, EffecientNet, BiFPN, LSTM
 - 현재 고려하고 있는 제안서 작업에는 keypoint를 model input으로 사용할 것인데, 논문에서 제안한 모델 뒷단의 LSTM+Attension parts를 응용해 새로운 모델을 제안할 수 있을 것 같다.   
 
 
-### what other references do you want to follow?
+### what other references do you want to follow?</br>
 - 주어진 key points에 대해 behavior recogn을 한 논문들을 더 찾아봐야 겠다.  
 - 이 논문은 single cow에 대해서만 결과를 냈으며, 만약 video에 다른 객체가 추가된다면
   유사 도메인에서 attension 모듈을 사용한 예시를 확인할 필요가 있다.
@@ -47,7 +48,7 @@ behavior recognition, Livestock, EffecientNet, BiFPN, LSTM
 
 
 ## methods
-### data description (input, output)
+### data description (input, output)</br>
 1009x 90sec(average)의 video clips으로 구성되며, fps는 25임.
 ![image](https://user-images.githubusercontent.com/33012030/163295371-0ec238b1-b292-4992-b7ce-93bbc360b630.png)
 input은 16 frame의 video clips이며 1 frame은 512 x 512의 RGB 영상. </br>
