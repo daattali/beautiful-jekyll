@@ -38,11 +38,11 @@ behavior recognition, Livestock, EffecientNet, BiFPN, LSTM
 3. 2까지에서 추출된 behavior information은 BiLSTM으로 보내지고, 이후 subnet인 attension layers를 거쳐 time-series에 대해 축적된 information을 바탕으로
 빠르고 정확하게 행동 인식을 한다.   
 
-### what can you use yourself?     </br>
+### what can you use yourself? 
 - 현재 고려하고 있는 제안서 작업에는 keypoint를 model input으로 사용할 것인데, 논문에서 제안한 모델 뒷단의 LSTM+Attension parts를 응용해 새로운 모델을 제안할 수 있을 것 같다.   
 
 
-### what other references do you want to follow?</br>
+### what other references do you want to follow?
 - 주어진 key points에 대해 behavior recogn을 한 논문들을 더 찾아봐야 겠다.  
 - 이 논문은 single cow에 대해서만 결과를 냈으며, 만약 video에 다른 객체가 추가된다면
   유사 도메인에서 attension 모듈을 사용한 예시를 확인할 필요가 있다.
@@ -78,7 +78,7 @@ BiFPN에 대해 부가적인 설명을 하자면, FPN(Feature Pyramid Network)�
 7 layer (4x4x64)는 w방향으로 x4 upsampling, .. 3 layer (64x64x64)는 x1/4 downsampling된 후 concat되어 16x80x64의 fusion feature가 완성된다.     
 ![image](https://user-images.githubusercontent.com/33012030/163310305-00208133-42aa-411e-a087-2bf9e706ad63.png)
 
-</b
+
 
 **Subnet으로 활용된 Attention-BiLSTM 구조**    
 NLPDPTJ 일반적으로 사용되는 Attention-biLSTM 구조. 이미 BiFPN에서 정제된 feature가 나오는데 왜 embedding 층이 나오있는지 모르겠다.. 예시 이미지인가?
