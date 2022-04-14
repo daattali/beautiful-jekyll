@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [behaviour recongition] livestock 행동 인식
+title: behaviour recongition - livestock 행동 인식
 subtitle: EfficientNet-biLSTM+attention 사용한 paper 리뷰
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
@@ -43,7 +43,7 @@ Behaviour recognition, Livestock, EffecientNet, BiFPN, LSTM
 ### what other references do you want to follow?
 - 주어진 key points에 대해 behavior recogn을 한 논문들을 더 찾아봐야 겠다.  
 - 이 논문은 single cow에 대해서만 결과를 냈으며, 만약 video에 다른 객체가 추가된다면
-- 유사 도메인에서 attension 모듈을 사용한 예시를 확인할 필요가 있다.
+  유사 도메인에서 attension 모듈을 사용한 예시를 확인할 필요가 있다.
 
 
 
