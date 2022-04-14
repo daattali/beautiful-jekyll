@@ -9,12 +9,14 @@ tags: [paper-review]
 ---
 
 # Paper Title
+---
 Using an EfficientNet-LSTM for the recognition of single Cow’s motion
 behaviors in a complicated environment
 
 
 
 ## Keyword
+---
 behavior recognition, Livestock, EffecientNet, BiFPN, LSTM
 
 
