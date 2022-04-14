@@ -1,7 +1,7 @@
 ---
 layout: post
-title: behavior
-subtitle: EfficientNet-biLSTM+attention
+title: behavior 예측 논문 리뷰 1 (feat. EfficientNet-biLSTM)
+subtitle: Using an EfficientNet-LSTM for the recognition of single Cow’s motion
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
@@ -48,10 +48,10 @@ behavior recognition, Livestock, EffecientNet, BiFPN, LSTM
 
 
 ## methods
-### data description (input, output)</br>
+### data description (input, output)    
 1009x 90sec(average)의 video clips으로 구성되며, fps는 25임.
 ![image](https://user-images.githubusercontent.com/33012030/163295371-0ec238b1-b292-4992-b7ce-93bbc360b630.png)
-input은 16 frame의 video clips이며 1 frame은 512 x 512의 RGB 영상. </br>
+input은 16 frame의 video clips이며 1 frame은 512 x 512의 RGB 영상.    
 (undivided behavior video test의 경우 60 frame에 30 frame을 step으로 줌)
 output은 haviour classes, [feeding, lying, standing, walking, drinking]에 대한 softmax 출력값(확률)이 나옴.
 
@@ -76,21 +76,20 @@ BiFPN에 대해 부가적인 설명을 하자면, FPN(Feature Pyramid Network)�
 7 layer (4x4x64)는 w방향으로 x4 upsampling, .. 3 layer (64x64x64)는 x1/4 downsampling된 후 concat되어 16x80x64의 fusion feature가 완성된다.     
 ![image](https://user-images.githubusercontent.com/33012030/163310305-00208133-42aa-411e-a087-2bf9e706ad63.png)
 
+</b
 
-
-**Subnet으로 활용된 Attention-BiLSTM 구조**</br>
+**Subnet으로 활용된 Attention-BiLSTM 구조**    
 NLPDPTJ 일반적으로 사용되는 Attention-biLSTM 구조. 이미 BiFPN에서 정제된 feature가 나오는데 왜 embedding 층이 나오있는지 모르겠다.. 예시 이미지인가?
 ![image](https://user-images.githubusercontent.com/33012030/163295476-481ef742-12e8-4a9b-abb5-32af673b2420.png)
 
 
-**undivided videos 분석 시 방법**</br>
-긴 영상의 경우 60frame씩 30 step frame을 input으로 넣어 연속으로 behavior 예측. </br>
-![image](https://user-images.githubusercontent.com/33012030/163326154-2bb114c2-ab7d-4482-8355-bb2a117c61b0.png)
-
+**undivided videos 분석 시 방법**    
+긴 영상의 경우 60frame씩 30 step frame을 input으로 넣어 연속으로 behavior 예측.     
+![image](https://user-images.githubusercontent.com/33012030/163329083-079af4b4-82cb-4bb1-ad28-937384036865.png)
 
 ### result (with eval-indicators)
-정확도는 97.87%로 높게 나온 편.</br>
-![image](https://user-images.githubusercontent.com/33012030/163311622-6c9b4f5f-fb82-4ff7-be86-afc7f6ab964b.png) </br>
+정확도는 97.87%로 높게 나온 편.     
+![image](https://user-images.githubusercontent.com/33012030/163311622-6c9b4f5f-fb82-4ff7-be86-afc7f6ab964b.png)
 그리고 아래와 같이 다른 backbone보다 더 적은 파라미터와 계산량을 가진다.
 ![image](https://user-images.githubusercontent.com/33012030/163311651-94ee634c-237c-4ab1-b1dc-0be599d21161.png)
 
@@ -101,7 +100,7 @@ NLPDPTJ 일반적으로 사용되는 Attention-biLSTM 구조. 이미 BiFPN에서
 
 
 ## After review
-
+- NLP에서 많이 사용되는 biLSTM-attention net을 사용해 성능을 끌어올렸는데, 실제로 저 성능이 나오는지는 적용해봐야 알 듯하다.
 
 
 
