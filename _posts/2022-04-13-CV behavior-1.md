@@ -1,7 +1,7 @@
 ---
 layout: post
-title: behaviour recongition - livestock 행동 인식
-subtitle: EfficientNet-biLSTM+attention 사용한 paper 리뷰
+title: behaviour
+subtitle: EfficientNet-biLSTM+attention
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
