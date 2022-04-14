@@ -7,7 +7,6 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [paper-review]
 ---
-
 # Paper Title
 Using an EfficientNet-LSTM for the recognition of single Cow’s motion
 behaviors in a complicated environment
