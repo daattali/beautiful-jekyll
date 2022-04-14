@@ -1,6 +1,6 @@
 ---
 layout: post
-title: behaviour
+title: behavior
 subtitle: EfficientNet-biLSTM+attention
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
@@ -10,12 +10,12 @@ tags: [paper-review]
 
 # Paper Title
 Using an EfficientNet-LSTM for the recognition of single Cow’s motion
-behaviours in a complicated environment
+behaviors in a complicated environment
 
 
 
 ## Keyword
-Behaviour recognition, Livestock, EffecientNet, BiFPN, LSTM
+behavior recognition, Livestock, EffecientNet, BiFPN, LSTM
 
 
 
@@ -26,7 +26,7 @@ Behaviour recognition, Livestock, EffecientNet, BiFPN, LSTM
 
 
 ### what did authors try to accomplish?
-가축(소)의 behaviour classes, [feeding, lying, standing, walking, drinking]를 예측 시, 기존 C3D, LSTM 기반 모델보다 더 나은 예측 성능(Accuracy)을
+가축(소)의 behavior classes, [feeding, lying, standing, walking, drinking]를 예측 시, 기존 C3D, LSTM 기반 모델보다 더 나은 예측 성능(Accuracy)을
 위해 모델 구조 변경.   
 
  
@@ -52,7 +52,7 @@ Behaviour recognition, Livestock, EffecientNet, BiFPN, LSTM
 1009x 90sec(average)의 video clips으로 구성되며, fps는 25임.
 ![image](https://user-images.githubusercontent.com/33012030/163295371-0ec238b1-b292-4992-b7ce-93bbc360b630.png)
 input은 16 frame의 video clips이며 1 frame은 512 x 512의 RGB 영상. </br>
-(undivided behaviour video test의 경우 60 frame에 30 frame을 step으로 줌)
+(undivided behavior video test의 경우 60 frame에 30 frame을 step으로 줌)
 output은 haviour classes, [feeding, lying, standing, walking, drinking]에 대한 softmax 출력값(확률)이 나옴.
 
 
@@ -84,7 +84,7 @@ NLPDPTJ 일반적으로 사용되는 Attention-biLSTM 구조. 이미 BiFPN에서
 
 
 **undivided videos 분석 시 방법**</br>
-긴 영상의 경우 60frame씩 30 step frame을 input으로 넣어 연속으로 behaviour 예측. </br>
+긴 영상의 경우 60frame씩 30 step frame을 input으로 넣어 연속으로 behavior 예측. </br>
 ![image](https://user-images.githubusercontent.com/33012030/163326154-2bb114c2-ab7d-4482-8355-bb2a117c61b0.png)
 
 
