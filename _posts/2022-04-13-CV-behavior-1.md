@@ -35,9 +35,9 @@ Behaviour recognition, Livestock, EffecientNet, BiFPN, LSTM
 3. 2까지에서 추출된 behavior information은 BiLSTM으로 보내지고, 이후 subnet인 attension layers를 거쳐 time-series에 대해 축적된 information을 바탕으로
 빠르고 정확하게 행동 인식을 한다.   
 
-### what can you use yourself? 
+### what can you use yourself? </br>
 - 현재 고려하고 있는 제안서 작업에는 keypoint를 model input으로 사용할 것인데, 논문에서 제안한 모델 뒷단의 LSTM+Attension parts를 응용해 새로운 모델을 제안할 수 있을 것 같다.   
--
+
 
 ### what other references do you want to follow?
 - 주어진 key points에 대해 behavior recogn을 한 논문들을 더 찾아봐야 겠다.  
