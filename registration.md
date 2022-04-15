@@ -40,7 +40,7 @@ Please be aware that Pre-Registration prices will end March 31st, 2022 at 11:59 
 | &nbsp; | Online/ At The Door Price |
 | --- | --- |
 | Attendee | $60 |
-| Sponsor | $95 |
+| Sponsor | $100 |
 | Super Sponsor | $160 |
 
 | &nbsp; | Daily Badges |
