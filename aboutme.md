@@ -1,16 +1,23 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A little about my mission on this planet
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Diego Alejandro Angulo Ramirez, 2nd year student of Applied Mathematics and Computer Science in [MIPT](https://mipt.ru/english/).<br>
+Born in Bolivia, raised for some years in Argentina. Both in my heart.<br>
+Ex-competitor of [IOI](https://ioinformatics.org/) and [OBI](https://www.facebook.com/olimpiadainformatica/), now i help to select the National Team that represents Bolivia in IOI.<br>
+_Agustino de corazón_.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+<img src="/assets/img/WayToIran.jpg" width="450" height="300" class="center"/>
 
-What else do you need?
+### Random stuff about me
 
-### My story
+- I love making friends, i just don't love any person as my friend...
+- I really enjoy sharing thoughts and perspectives of life, without the need of starting a discussion about who is right.
+- I have a serious addiction to popcorn.
+- Sometimes i get lost inside of my mind, it looks kinda like i'm ignoring everyone. Sorry about that, not my intension to disrespect.
+- Although i did a lot of interesting things during my life, i believe i haven't reached my prime yet.
+- The best fried chicken in the world: KFC in Terminal F, Miami Int Airport.
+- Music from [The Chainsmokers](https://www.youtube.com/watch?v=eACohWVwTOc_) helped me to go trough 2017 and 2018, i owe them a part of my life.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
