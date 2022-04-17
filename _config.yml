@@ -10,6 +10,7 @@ navbar-links:
   About Me: "aboutme"
   What's in here?:
     - Favorite song: "https://www.youtube.com/watch?v=47dtFZ8CFo8"
+    - Something new?: "something"
 
 
 # --- Logo --- #
