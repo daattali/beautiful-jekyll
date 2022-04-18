@@ -23,7 +23,7 @@ C'est donc complétement speed qu'elle commence à me demander ce qui ne va pas.
 
 Clairement elle n'était pas prête.
 
-![](https://i.imgur.com/miezzfz.gif){: width="100%" }
+![](https://i.imgur.com/miezzfz.gif){ width="100%" }
 
 Alors il doit y avoir un truc pendant les études de médecine où on traumatise les futurs médecins avec le concept d'antécédents médicaux. Donc j'étais bon pour un interrogatoire complet, un prélèvement de peau, de sang, de larme… ce que vous voulez pourvu que la pauvre arrête de dévorer son crayon comme un castor affamé !
 
@@ -33,13 +33,13 @@ Et là elle a vu que j'avais une cicatrice à l'œil. Elle tenait enfin un truc 
 
 Clairement elle n'était pas prête.
 
-![](https://c.tenor.com/Xx2zB4IKSLQAAAAC/oprah-suspicious.gif){: width="100%" }
+![](https://c.tenor.com/Xx2zB4IKSLQAAAAC/oprah-suspicious.gif){ width="100%" }
 
 « Avez-vous déjà eu des blessures ou des points de suture ? \\
 — oui 36 à la tête. \\
 — qu'est-ce que... what ? »
 
-![](https://c.tenor.com/Kw-XzSZu8q4AAAAC/wtf-britney-spears.gif){: width="100%" }
+![](https://c.tenor.com/Kw-XzSZu8q4AAAAC/wtf-britney-spears.gif){ width="100%" }
 
 J'ai commencé assez jeune, avec une tentative plus ou moins volontaire de briser un bloc de béton avec la tête (le béton a gagné… je pense que c'est un complot de Bouygues !).
 
@@ -60,11 +60,11 @@ Je me suis fracturé une cervicale en sautant devant ma propre planche à voile 
 
 Petit écureuil demande si je n'ai pas eu de séquelle. « Nan pas particulièrement, mais mon coup fait un peu "cloc cloc" depuis. »
 
-![](https://c.tenor.com/78IzlUEem6gAAAAd/alrighty-then-ugh.gif){: width="100%" }
+![](https://c.tenor.com/78IzlUEem6gAAAAd/alrighty-then-ugh.gif){ width="100%" }
 
 Pour la colonne là c'est un virage en roller négocié "imparfaitement" qui a eu raison de moi. Il y a eu un lampadaire d'impliqué, mais je ne l'ai absolument pas touché : arrivant un peu vite en bas de descente, j'ai tourné vers une petite place où j'aurais l'opportunité de freiner comme il faut. Une fois encore l'idée était bonne mais la réalisation a laissé à désirer : ma trajectoire s'est trouvée fortement perturbée par la présence inopinée d'un lampadaire. Vous savez les vieux modèles parisiens bien large et recouvert de cette peinture un peu vert sale mais surtout qui semble contenir plus de sable que de pigment… ça donne cette jolie texture "papier de verre industriel". En termes de partenaire de collision ça se situe entre la ponceuse et le semi-remorque. J'ai donc eu la présence d'esprit d'éviter l'obstacle. C'est juste mon choix de stratégie qui peut laisser à désirer : j'ai sauté. C'est con car le lampadaire faisait bien 6~8 mètres de haut. Me rendant compte de mon erreur d'approche j'ai immédiatement mis en place les contre-mesures adéquates : j'ai décidé d'enrouler mon corps autour du machin histoire de ne pas le toucher. Je me suis dit « en l'air ça doit passer ». Eh ben vous savez quoi ? Ça a marché !
 
-![](https://c.tenor.com/j_ijiBkU2a8AAAAd/title-victory.gif){: width="100%" }
+![](https://c.tenor.com/j_ijiBkU2a8AAAAd/title-victory.gif){ width="100%" }
 
 …bon par contre j'avais été un peu enthousiaste au moment de sauter : me voilà donc "enroulé autour d'un lampadaire" à l'horizontale (et sans toucher le lampadaire !) mais à en gros 1m20 du sol. La loi de la gravitation universelle, tout comme le trottoir, est dure. Je suis tombé bien à plat sur le dos. Crac.
 
@@ -80,7 +80,7 @@ Elle n'était pas prête…
 — Ah oui… \\
 — et des fois on joue avec des bâtons et c'est là qu'il m'arrive de me fracturer un doigt ou deux. »
 
-![](https://c.tenor.com/qVUdZ1fkYwMAAAAd/stick-fight-gina-rodriguez.gif){: width="100%" }
+![](https://c.tenor.com/qVUdZ1fkYwMAAAAd/stick-fight-gina-rodriguez.gif){ width="100%" }
 
 Bon là j'ai senti que je devais la rassurer, car elle commençait à me regarder comme un genre de zombie. Mais je pense que je n'ai pas trouvé les bons mots :
 
@@ -88,7 +88,7 @@ Bon là j'ai senti que je devais la rassurer, car elle commençait à me regarde
 
 Elle m'a répondu : « Vous êtes conscient que le problème ne semble pas être les sports mais plutôt vous ? »
 
-![](https://c.tenor.com/eaX_h3phFG0AAAAC/jim-carrey-ohcome-on.gif){: width="100%" }
+![](https://c.tenor.com/eaX_h3phFG0AAAAC/jim-carrey-ohcome-on.gif){ width="100%" }
 
 Petit écureuil : « Vous semblez avoir assez peu de respect pour votre propre intégrité physique… » \\
 Moi : «…je préfère le terme d'aventurier… mais je vous laisse le formuler comme vous voulez.»

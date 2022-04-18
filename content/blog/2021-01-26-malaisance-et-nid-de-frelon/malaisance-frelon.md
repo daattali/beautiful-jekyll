@@ -23,7 +23,7 @@ La nana va s’assoir sur un banc de la grange sauf que… il y avait un nid de 
 
 Et quand je parle de frelon, je vaux dire frelon asiatique gros comme aigle.
 
-![](https://media.giphy.com/media/ULSkhG8VfnUt2/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/ULSkhG8VfnUt2/giphy.gif){ width="100%" }
 
 Ai-je pensé à dire que la grange est super loin du festoche ? Mais pas trop loin de là mon groupe travaille, une cuisine annexe près des écuries. Sauf que mon groupe c’est ma copine (partie se coucher pour pas butter les autres), un pote défoncé qui dort dans un tas de fumier et une pote, un peu chargée à la bière et au pétou… Et moi qui, étonnement, n’avait encore rien bu, car je bossais sur mon ordi pour taper le taf du groupe de toute la journée…
 
@@ -43,7 +43,7 @@ Et où tu te fais piquer quand tu t’assoies ? Hein ? **Je vous le demande ?**
 
 Eh bien sa réponse a été : « _Je suis contente d’avoir pensé à m’épiler hier… ça sera moins gênant._ »
 
-![](https://media.giphy.com/media/Nm8ZPAGOwZUQM/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/Nm8ZPAGOwZUQM/giphy.gif){ width="100%" }
 
 Donc à, en gros, 2 cm de ~~sa teuch~~ sa culotte… évidemment à l’intérieur de la cuisse sinon ce n’est pas drôle.
 
@@ -51,7 +51,7 @@ Donc à, en gros, 2 cm de ~~sa teuch~~ sa culotte… évidemment à l’intérie
 
 Ma pote défoncée revient et me rassure vachement avec « _les secouristes sont pas dispos du tout et ils sont pas au poste de secours_ » (il y avait eu un blessé sur le festoche…). « _Ah et j’ai essayé d’appeler les pompiers mais avec l’orage ils sont débordés… ils sont pas là avant 1h…_ ».
 
-![](https://media.giphy.com/media/u49Tc69a9dWy7zJtuI/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/u49Tc69a9dWy7zJtuI/giphy.gif){ width="100%" }
 
 Ah oui j’oubliais un détail… la nana était vraiment un très très petit gabarit… 1 m 65 pour… même pas 50 kg.
 
@@ -61,7 +61,7 @@ Et je suis le seul pas bourré mais heureusement avec une formation aux premiers
 
 « Montre-moi la piqû… » Oh putain j’avais oublié le détail de l’emplacement !
 
-![](https://media.giphy.com/media/l3q2PZSVUUEsajBIY/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/l3q2PZSVUUEsajBIY/giphy.gif){ width="100%" }
 
 **OK c’est sur la fucking couture du short !!!!**
 
@@ -91,7 +91,7 @@ Donc là elle est basiquement en culotte/brassière sur un banc dans une cuisine
 
 J’avais l’impression d’être John MacLane… rien n’allait bien
 
-![](https://media.giphy.com/media/CxwvAGYoBTGYU/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/CxwvAGYoBTGYU/giphy.gif){ width="100%" }
 
 Bon bah là, je me jette sur elle, car elle tombait, littéralement, dans les pommes :point_right: je la rattrape, la prend un peu dans mes bras et lui tapote la joue pour qu’elle reste réveillée…
 
@@ -124,7 +124,7 @@ Mais la situation le mettait pas à l’aise, n’écoutant que son courage à d
 
 « _Me laisser pas tout seul putain :sob:_ »
 
-![](https://media.giphy.com/media/c5Y9iCOE8VEBO/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/c5Y9iCOE8VEBO/giphy.gif){ width="100%" }
 
 ## Le grand final maintenant…
 
@@ -144,7 +144,7 @@ Maintenant\\
 
 Alors par contre rien de ce que tu peux dire ne peux vraiment t’éviter une claque. En tout cas rien de ce que j’ai pu trouver.
 
-![](https://media.giphy.com/media/vxvNnIYFcYqEE/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/vxvNnIYFcYqEE/giphy.gif){ width="100%" }
 
 Mais apparemment après la deuxième claque et au vu de mon air assez sérieux/calme elle s’est dit que quelque chose allait pas.
 
@@ -166,7 +166,7 @@ Le pire c’est que mon cerveau ne peut pas s’arrêter de tourner… donc je p
 
 Déjà qu’au moment de checker d’état de sa piqure je devais me retrouver à « pousser le bord de la culotte » pour palper et voir si c’était douloureux… sérieux je savais plus ou me mettre…
 
-![](https://media.giphy.com/media/w89ak63KNl0nJl80ig/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/w89ak63KNl0nJl80ig/giphy.gif){ width="100%" }
 
 Quand les pompiers ont fini par arriver (1h après l’incident), en fait ils ont eu hyper peur car vu son poids elle risquait vraiment l’arrêt cardiaque… (ce que je savais très bien… d’où ma volonté de la protéger au max… même j’étais pas « à l’aise » avec la situation).
 

@@ -16,7 +16,7 @@ Voilà ce qu'on m'a posé comme question et bon bah comme d'hab' je vais essayer
 
 Bon une grande partie de la géo au collège c'est apprendre où sont les trucs (continents, océans, pays…), mais aussi voir le climat des différentes régions du monde.
 
-![](https://c.tenor.com/_aIAA5G35OcAAAAC/drunk-alcohol.gif){: width="100%" }
+![](https://c.tenor.com/_aIAA5G35OcAAAAC/drunk-alcohol.gif){ width="100%" }
 
 Alors autant la position et le nom des pays, des mers et le découpage en continent, c'est vraiment arbitraire (avoir un Pakistan et un Afghanistan qui ont une frontière qui coupe littéralement le peuple pachtoune, ça n'a aucune logique autre que "ça arrangeait bien les Anglais, les Perses et les Russes au XIXᵉ siècle"). Autant les climats, ça c'est logique… il y a plein de machin à prendre en compte, mais il y a une logique derrière !
 
@@ -32,7 +32,7 @@ Alors pour ça comme pour la suite, on va partir d'un modèle un poil simplifié
 
 Modèle "un poil" simplifié de la Terre…?
 
-![](https://c.tenor.com/BdcwU6gstRoAAAAC/pooh-think.gif){: width="100%" }
+![](https://c.tenor.com/BdcwU6gstRoAAAAC/pooh-think.gif){ width="100%" }
 
 OK, on va dire que la Terre est sphérique (_c'est pas tout à fait vrai elle est aplatie aux pôles_), on va dire aussi que son axe de rotation n'est pas incliné (_alors qu'il l'est de 23,45°, c'est pas rien !_), bon et on va même carrément négliger totalement la rotation de la terre pour commencer (_pour être exact on va la moyenner et voir ce qui se passe sur le long terme uniquement_).
 
@@ -50,19 +50,19 @@ Alors quoi ? Bah le soleil bébé ! #SeaSexAndSun…
 
 ah bah nan… notre modèle est un peu trop simple pour "sea, sex and sun" 👉 on va oublier la ~~sea~~ et le ~~sex~~ (sorry) et on va garder juste le **sun**.
 
-![](https://c.tenor.com/G1CpZxGWnmQAAAAC/perrie-edwards-sighs.gif){: width="100%" }
+![](https://c.tenor.com/G1CpZxGWnmQAAAAC/perrie-edwards-sighs.gif){ width="100%" }
 
 Le soleil chauffe la Terre par rayonnement, comme une lampe qui te chauffe la main quand tu la mets devant. Donc, en gros, la face de la Terre qui est face au soleil devrait être uniformément chaude, nan ?
 
 Ben nan pas du tout : aviez-vous déjà remarqué que le matin et le soir il fait vachement moins chaud qu'à midi ?[^ete] Mais pourquoi donc ? Ah ah ! C'est l'heure du premier schéma !
 
-![Inclinaison des rayons solaires](/assets/img/inclinaison-des-rayons-solaires.png){: width="100%" }
+![Inclinaison des rayons solaires](/assets/img/inclinaison-des-rayons-solaires.png){ width="100%" }
 
 Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses rayons sont parallèles. Si on prend un "tube" de rayon solaire (disons d'1m² de diamètre), il apporte une certaine quantité d'énergie (donc de chaleur). Si on prend un tube qui tape à l'équateur, bah voilà il tape bien à la verticale, youpi 🥵 ! Mais s’il tape plus près d'un pôle… il arrive sur un sol tout incliné ! Résultat, l'énergie est "étalée" sur une surface bien plus grande et comme c'est la même quantité d'énergie sur une surface plus grande ça fait moins d'énergie au mètre carré 🥶 donc il fait tout plein plus froid vu que le chauffage solaire est moins fort.#cqfd
 
 À l'équateur, il faut donc plus chaud et au pôle plus froid.
 
-![](https://c.tenor.com/G1HwNUeNNrcAAAAC/no-stop.gif){: width="100%" }
+![](https://c.tenor.com/G1HwNUeNNrcAAAAC/no-stop.gif){ width="100%" }
 
 …ah un peu de contradiction, c'est bien ça la contradiction ! Oui mon bon Donald que veux-tu ?
 
@@ -102,7 +102,7 @@ Et ?
 
 Eh ben pfffffft !
 
-![](https://c.tenor.com/ZkBrMi_7MlsAAAAC/ariel-little-mermaid.gif){: width="100%" }
+![](https://c.tenor.com/ZkBrMi_7MlsAAAAC/ariel-little-mermaid.gif){ width="100%" }
 
 Bah oui : pfffffffffffffffffffffffff… Du vent quoi !
 
@@ -110,7 +110,7 @@ Quand tu a un gaz sous pression d'un côté et un gaz à basse pression de l'aut
 
 En gros, tu as un ballon de baudruche (haute pression vu que tu as fait rentrer de force de l'air dedans en soufflant comme un ouf) et une pièce à pression normale (basse par rapport au ballon). Et là, tu ouvres l'embouchure du ballon[^pfff] :
 
-![](https://c.tenor.com/p_tny-9Xgq0AAAAC/blow-blowing.gif){: width="100%" }
+![](https://c.tenor.com/p_tny-9Xgq0AAAAC/blow-blowing.gif){ width="100%" }
 
 Oui voilà… du vent dans ta gueule ! Simple !
 
@@ -126,7 +126,7 @@ Ah, on m'informe dans l'oreillette que nan c'est pas le cas : il n'y a pas un ve
 
 Bah faut dire que mon raisonnement avait un gros défaut : si on suit mon raisonnement très rapidement, il n'y a plus d'air à l'équateur ! Tout serait aspiré vers les pôles ! Alors quoi ? Eh ben on a réfléchi en 2D alors que la vraie vie c'est en 3D : l'atmosphère ça a de la hauteur ma bonne dame !Ça change quoi ? Bah déjà l'air chaud comme ça se dilate… c'est plus léger que l'air froid (car moins dense) donc il a tendance à monter et l'air froid à descendre #frèreMontgolfier
 
-![Si tu enfermes ton air chaud dans un gros drap tu obtiens un ballon à air chaud cad une montgolfière](https://c.tenor.com/IEP7uGsgkwIAAAAC/gemab-mab.gif){: width="100%" }
+![Si tu enfermes ton air chaud dans un gros drap tu obtiens un ballon à air chaud cad une montgolfière](https://c.tenor.com/IEP7uGsgkwIAAAAC/gemab-mab.gif){ width="100%" }
 
 Donc, ça fait juste que notre air chaud de l'équateur monte et se décale vers le pôle. Et parallèlement l'air froid au pôle lui descend…
 
@@ -136,11 +136,11 @@ Et bah oui : Il y a en permanence un vent que se rapproche de l'équateur : les 
 
 Vous vous êtes jamais demandé pourquoi tous les explorateurs polaires ont systématiquement le vent dans la gueule ? Eh ben parce qu'il veut aller **VERS LE PÔLE** et que le vent polaire, lui, il veut pas !
 
-![](https://c.tenor.com/rg2xhwUVLpYAAAAC/frozen-disney.gif){: width="100%" }
+![](https://c.tenor.com/rg2xhwUVLpYAAAAC/frozen-disney.gif){ width="100%" }
 
 👆Ah nan pas elle… je vais encore avoir une chanson dans la tête[^toolate]
 
-![Con de vent…](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
+![Con de vent…](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){ width="100%" }
 
 Au final, on a un vent d'altitude de l'équateur vers le pôle et un vent au sol du pôle vers l'équateur ? Nan… évidemment ça serait trop simple : il y a beaucoup trop de chemin de l'un à l'autre… résultat l'air chaud de l'équateur une fois en altitude, il finit par se refroidir (vu qu'il n'est plus à l'équateur) et retomber comme une merde 💩
 
@@ -172,7 +172,7 @@ D'un côté, on a le front polaire avec son air "chaud" (c'est relatif, il est "
 
 Allez hop petit schéma de tout ça :
 
-![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
+![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){ width="100%" }
 
 Ces 3 cellules dans chaque hémisphère expliquent qu'on ait 4 climats bien marqué et nettement séparé :
 
@@ -199,7 +199,7 @@ Bon bah OK elle tourne… euh ça a pas l'air de changer grand-chose à notre ra
 
 Mais, en fait si, ça change un truc… seulement comme on n'a pas l'habitude de se déplacer sur un truc qui tourne (bon à part la Terre…) on n'est pas habitué à la physique "dans un référentiel en rotation uniforme". Utilisons donc la vraie arme de tous les physiciens, climatologues et autres géographes : les souvenirs d'enfance !
 
-![vous voyez bien, quand on était gamin on kiffait les référentiels en rotation uniforme ! Et vous avez vu comment je portais bien la robe de princesse ?](https://c.tenor.com/LnVVa9CicNIAAAAC/flower-girl-girls.gif){: width="100%" }
+![vous voyez bien, quand on était gamin on kiffait les référentiels en rotation uniforme ! Et vous avez vu comment je portais bien la robe de princesse ?](https://c.tenor.com/LnVVa9CicNIAAAAC/flower-girl-girls.gif){ width="100%" }
 
 [^pfff]: Je te conseille de faire l'expérience en mettant ta petite gueule devant l'embouchure du ballon… si si…
 [^toolate]: Trop tard ! Libérééééééééeeeee, Délivréééééééeeeee… et vous aussi maintenant. Ça vous apprendra à lire mes notes de bas de page débiles.
@@ -220,7 +220,7 @@ En fait, c'est juste que quand le tourniquet commence à tourner… ben vous bou
 
 C'est le principe de la fronde : on fait tourner un truc au bout d'une ficelle et quand on lâche, il part tout droit (perpendiculairement à la ficelle… ça surprend tous les novices qui se retrouvent à éborgner leurs potes à côté plutôt que les cons en face)
 
-![David il était balèze à la fronde ! Goliath lui était plutôt balèze en pierre dans la gueule…](https://c.tenor.com/InanccWZ7rcAAAAd/david-goliath.gif){: width="100%" }
+![David il était balèze à la fronde ! Goliath lui était plutôt balèze en pierre dans la gueule…](https://c.tenor.com/InanccWZ7rcAAAAd/david-goliath.gif){ width="100%" }
 
 Donc la force centrifuge, c'est juste ton corps qui a envie de continuer tout droit… mais comme tu vois le tourniquet fixe (bordel, arrête d'agiter la tête dans tous les sens, ça foire mon explication !), tu as l'impression qu'on te tire vers l'arrière.
 
@@ -228,7 +228,7 @@ Voilà 4 ans, et on a déjà expérimenté une pseudo-force !
 
 Bon, par contre, pas de bol, celle-là n'a quasi aucun effet sur le climat 😅 à part aux pôles où elle contribue à rendre les vents polaires au sol encore pire : elle éloigne l'air du pôle donc pile poil le sens des vents polaires !
 
-![…je le remets pour le plaisir, j'adore le voir galérer <rire dément de méchant de James Bond>](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
+![…je le remets pour le plaisir, j'adore le voir galérer <rire dément de méchant de James Bond>](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){ width="100%" }
 
 Allons donc voir ailleurs si la pseudo-force qui nous manque y est !
 
@@ -246,11 +246,11 @@ Mais pourquoi donc, mon cruel ?!
 
 J'avais pourtant passé des semaines, si ce n'est des mois entiers à maîtriser le tourniquet et sa force centrifuge : je sais que je vais subir une force cheloue qui cherche à m'expulser du manège ! Mais là, c'est pas pareil, certes il y a la force centrifuge, mais ça je maîtrise, mais en plus j'ai l'impression de marcher comme un vieil alcoolo après un soir de match !
 
-![Ça va aller madame…](https://c.tenor.com/MW4184ju7VcAAAAC/stumbling-drunk.gif){: width="100%" }
+![Ça va aller madame…](https://c.tenor.com/MW4184ju7VcAAAAC/stumbling-drunk.gif){ width="100%" }
 
 Je pars du **cheval A**, je vise le **hérisson clignotant B**, je compense la force centrifuge en forçant un peu vers l'extérieur proportionnellement à la vitesse angulaire et au rayon (oui, petit déjà, j'avais une approche assez analytique du monde). Mais nan ! Peau de zigounette ! Je me retrouve à faire une espèce de courbe merdasse et je finis sur la **luciole rose C** !
 
-![Pourquoi !? ](https://c.tenor.com/PSGySzyYf_YAAAAC/but-why-why.gif){: width="100%" }
+![Pourquoi !? ](https://c.tenor.com/PSGySzyYf_YAAAAC/but-why-why.gif){ width="100%" }
 
 En fait c'est encore une pseudo-force très très cheloue puissance 10 : la **force de Coriolis** !
 
@@ -260,7 +260,7 @@ Et elle t'empêche de marcher droit en te poussant toujours vers la droite (ou l
 
 Ah notre ami platiste est de retour[^platiste]… pas de bol pour lui : même si la Terre était plate (ce qu'elle n'est pas !) pourvu qu'elle tourne, il y aurait une force de Coriolis… allez « _Coucher panier le platiste !_ »
 
-![Quelle plaie…](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif){: width="100%" }
+![Quelle plaie…](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif){ width="100%" }
 
 Maintenant qu'on sait qu'il y a une force en plus… essayons de la comprendre un peu. Et pour ça utilisons encore un souvenir de ~~votre~~ **mon** ~~enfance~~ **adulescence** !
 
@@ -282,7 +282,7 @@ Et là bordel : la balle tourne toute seule !!!!
 
 Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… mais si on avait une caméra à l'extérieur du manège, eh ben là on verrait… une belle ligne droite 😱 Ce qui nous donne l'impression que la balle "tourne" c'est qu'elle va tout droit et que NOUS, on tourne !
 
-![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif){: width="100%" }
+![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif){ width="100%" }
 👆 En haut, la balle vue de l'extérieur immobile \\
 En bas, la même balle vue depuis le disque qui tourne
 
@@ -308,7 +308,7 @@ Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effe
 
 « _Ah mais en fait je connais ! C'est ça qui fait que le tourbillon qui se forme quand je vide ma baignoire tourne dans le sens des aiguilles d'une montre ! Et même quand tu passes l'équateur ça change de sens ! Je l'ai vu sur Facebook !!!_ »
 
-![Tiens ça faisait longtemps…](https://c.tenor.com/WQkVAtajaR4AAAAC/vampire-diaries-eye-roll.gif){: width="100%" }
+![Tiens ça faisait longtemps…](https://c.tenor.com/WQkVAtajaR4AAAAC/vampire-diaries-eye-roll.gif){ width="100%" }
 
 Bon déjà [on ne prend pas ses infos scientifiques sur Facebook](https://www.lesnumeriques.com/vie-du-net/facebook-terrain-fertile-a-la-propagation-des-fake-news-selon-une-etude-n153589.html)… ensuite, tu peux essayer : tourne avec ton doigt dans le sens inverse avant de vider ta baignoire et pouf le tourbillon sera dans le sens inverse ! Pour que ça marche il faudrait un bassin circulaire de plusieurs kilomètres ! Et même là, l'effet serait minime. Nan ce qui joue le plus c'est la forme de ta baignoire et l'agitation de l'eau avant de la vider.
 
@@ -332,7 +332,7 @@ Et pourquoi seuls les tourbillons des dépressions font de la merde ? Bah la bas
 
 Re-voyons notre schéma de tout à l'heure, il va maintenant prendre tout son sens :
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){ width="100%" }
 👆Oh les vent sont tous orientés comme il faut !!! \\
 👆Et je vois même les zones où il y a des anticyclones (A) et des dépressions (D)
 
@@ -360,7 +360,7 @@ Ah oui, jusqu'ici, on a supposé notre planète uniformément constituée de… 
 
 Je vais pas expliquer pourquoi il y a des continents et pourquoi ils sont là. C'est pifométrique, ça dépend des fragilités de la croûte terrestre, des points chauds du manteau magmatique, de là où des astéroïdes géants nous sont tombés dessus il y a des milliards d'années… et en plus les continents, ça n'arrête pas de se déplacer (tectonique des plaques, tout ça…). Nan, on va admettre qu'ils ont là où ils sont et puis c'est tout. Ils seraient ailleurs ça serait pareil juste les phénomènes qu'on va décrire seraient décalés ailleurs aussi… mais ça serait les mêmes.
 
-![Deal with it](https://c.tenor.com/KTuATLNVSnYAAAAC/elmo-shrug.gif){: width="100%" }
+![Deal with it](https://c.tenor.com/KTuATLNVSnYAAAAC/elmo-shrug.gif){ width="100%" }
 
 Mais au fait ça change quoi d'avoir des océans et des continents au juste ?
 
@@ -368,7 +368,7 @@ Bah déjà de manière totalement anthropocentrée, on a décidé de ne définir
 
 Ensuite les océans c'est de l'eau !
 
-![De rien](https://c.tenor.com/FQZUnqVzEeUAAAAC/captain-obvious-thank-you.gif){: width="100%" }
+![De rien](https://c.tenor.com/FQZUnqVzEeUAAAAC/captain-obvious-thank-you.gif){ width="100%" }
 
 Et l'eau c'est un machin un peu bizarre physico-chimiquement. Mais une seule de ses particularités nous intéresse ici. Voyons donc les particularités de l'eau :
 
@@ -390,7 +390,7 @@ Bon, donc, on vient de trouver pourquoi on a de la glace aux pôles. Mais c'est 
 
 « _On comprend pas ce que tu dis !_ »
 
-![Nan, mais il fallait me dire que Perceval était dans la salle !](https://c.tenor.com/wS9l25RT9gAAAAAC/cest-pas-faux.gif){: width="100%" }
+![Nan, mais il fallait me dire que Perceval était dans la salle !](https://c.tenor.com/wS9l25RT9gAAAAAC/cest-pas-faux.gif){ width="100%" }
 
 Ah… oui… bon. Expliquons un peu le machin.
 
@@ -406,7 +406,7 @@ Pour info : on mesure l'inertie thermique d'un truc grâce à un chiffre : la ca
 
 Et c'est utile pour le climat ça (l'inertie thermique de l'eau, pas le fait qu'elle se mesure en `J/K/kg`) ? Oui, énormément !
 
-![Du calme dans la salle !](https://c.tenor.com/Drz_x_HhZXkAAAAC/yeah-baby-oh-yeah-baby.gif){: width="100%" }
+![Du calme dans la salle !](https://c.tenor.com/Drz_x_HhZXkAAAAC/yeah-baby-oh-yeah-baby.gif){ width="100%" }
 
 Mais, il nous manque un truc pour comprendre pourquoi : les saisons !
 
@@ -437,7 +437,7 @@ C'est pour ça qu'à Berlin ou pire a Moscou, l'hiver, on se les pèle grave et 
 
 4️⃣ **Enfin ultime point important : l'eau, ça mouille !**
 
-![Gna gna gna !](https://c.tenor.com/aCsuRpVsQxgAAAAd/radicord-good-joke.gif){: width="100%" }
+![Gna gna gna !](https://c.tenor.com/aCsuRpVsQxgAAAAd/radicord-good-joke.gif){ width="100%" }
 
 Nan mais c'est vrai quoi ! L'eau, ça mouille : à proximité d'un océan, les dépressions peuvent facilement se charger d'humidité et donc il pleut plus (☔️Brest☔️ on pense à toi).
 
@@ -454,7 +454,7 @@ Et voilà avec tout ça vous avez 90% des climats du globe !
 
 Après des fois, il faut prendre en compte les montagnes qui bloquent les vents et empêchent les dépressions chargées de pluie de passer. Or, comme les vents vont toujours dans le même sens à grande échelle (Coriolis tout ça… voir le schéma des cellules), les grosses montagnes ont toujours un côté humide et un côté tout sec : au Chili, les montagnes sont couvertes de forêts humides d'un côté et un véritable désert de l'autre.
 
-![Normalement maintenant vous pouvez sans problème prédire ou comprendre les différents climats sur une carte](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Map_world_climate_zones_%28simplified_to_10%29-fr.svg/1024px-Map_world_climate_zones_%28simplified_to_10%29-fr.svg.png){: width="100%" }
+![Normalement maintenant vous pouvez sans problème prédire ou comprendre les différents climats sur une carte](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Map_world_climate_zones_%28simplified_to_10%29-fr.svg/1024px-Map_world_climate_zones_%28simplified_to_10%29-fr.svg.png){ width="100%" }
 
 Il vous manque :
 
@@ -468,7 +468,7 @@ Au niveau des développements humains, c'est démentiellement important : les ci
 - Chinois avec leur climat tempéré mais ultra humide (proximité des zones de mousson).
 - Européens avec leur climat sans extrême (et qui donc ne doivent pas investir 50% de leurs ressources pour survivre à l'hiver ou à l'été)
 - Égyptiens avec le Nil qui a fait que c'était les seuls de leur région tropicale sèche à avoir de l'eau et donc des cultures !
-  ![Aller c'était déjà assez long on arrête là](https://c.tenor.com/9ZrEoj1OeKoAAAAC/thats-allfolks.gif){: width="100%" }
+  ![Aller c'était déjà assez long on arrête là](https://c.tenor.com/9ZrEoj1OeKoAAAAC/thats-allfolks.gif){ width="100%" }
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer n'est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
 

@@ -27,7 +27,7 @@ peut-être même traverser une partie de la couche terrestre sous marine_ »
 
 ## Someone was wrong…
 
-![](https://imgs.xkcd.com/comics/duty_calls.png){: width="100%" }
+![](https://imgs.xkcd.com/comics/duty_calls.png){ width="100%" }
 _[Dessin de Randall Munroe](https://xkcd.com/386/) sous [licence CC BY-NC 2.5](http://creativecommons.org/licenses/by-nc/2.5/)_{: .small }
 
 #someoneIsWrongOnTheInternet et j’ai voulu expliquer pourquoi… accrochez-vous au
@@ -102,7 +102,7 @@ rentable que sa masse/taille. Mais comme la vitesse est limitée ça redevient
 intéressant d’augmenter la masse à partir de 5 664 400 tonnes… ouais ça fait
 une grosse goutte !
 
-![](https://media1.tenor.com/images/5401b166e336c58f25badd7351b97d3b/tenor.gif?itemid=18775092){: width="100%" }
+![](https://media1.tenor.com/images/5401b166e336c58f25badd7351b97d3b/tenor.gif?itemid=18775092){ width="100%" }
 
 ## LAST MINUTE EDIT
 
@@ -139,7 +139,7 @@ téléfilms catastrophes et les documentaires…
 
 ## Round 2… Fight !
 
-![](https://media.giphy.com/media/cjbaK5f7vvwyQpImOf/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/cjbaK5f7vvwyQpImOf/giphy.gif){ width="100%" }
 
 Pour répondre à ta question sur le vrai effet d’une goutte d’eau à, disons, 99 %
 de la vitesse de la lumière c’est déjà plus compliqué.
@@ -217,7 +217,7 @@ machin pour se rendre compte : 491 520 000 tn…
 
 **491 méga-tonnes de TNT**{: style="font-size: 3em" }
 
-![](https://media.giphy.com/media/aijty3bkVmxR6/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/aijty3bkVmxR6/giphy.gif){ width="100%" }
 
 Je viens de gagner le plus concours #kikikalaplugrosse du monde !
 
@@ -226,4 +226,4 @@ Bomba qui faisait 57 Mtn moi ma bouboule elle fait plus de 4 Tsar Bomba.
 
 #gnagnagna #bouboule #desole #profdephysique
 
-![](https://media.giphy.com/media/U23rlgyL8QmQn7xrqt/giphy.gif){: width="100%" }
+![](https://media.giphy.com/media/U23rlgyL8QmQn7xrqt/giphy.gif){ width="100%" }
