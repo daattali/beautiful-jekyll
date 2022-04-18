@@ -2,11 +2,9 @@
 title: Malaisance et nid de frelons
 subtitle: Un festival, une grange, un nid de frelons… what could possibly go wrong ?
 category: pymfactor
-cover_image:
-  - /assets/img/frelon-verre.jpg : "Roger le frelon avant le drame"
-  - /assets/img/festafrik-night.jpg : "Nuit à Festafrik Photo by Thierry et Jérôme for StartingBlock"
-  - /assets/img/La-grange-inside.jpg : "Le lieu du crime Photo by Thierry et Jérôme for StartingBlock"
-  - /assets/img/sous-la-tente.png : "Sous la (grande) tente Photo by Thierry et Jérôme for StartingBlock"
+cover:
+  img: frelon-verre.jpg
+  comment: Roger, le frelon, avant le drame
 tags: [pas de bol, festival, insecte, malaisance]
 status: published
 ---
@@ -43,7 +41,7 @@ Mon regard se porte sur ses jambes… ses jambes nue… car elle était en short
 
 Et où tu te fais piquer quand tu t’assoies ? Hein ? **Je vous le demande ?**
 
-Eh bien sa réponse a été : « *Je suis contente d’avoir pensé à m’épiler hier… ça sera moins gênant.* »
+Eh bien sa réponse a été : « _Je suis contente d’avoir pensé à m’épiler hier… ça sera moins gênant._ »
 
 ![](https://media.giphy.com/media/Nm8ZPAGOwZUQM/giphy.gif){: width="100%" }
 
@@ -51,7 +49,7 @@ Donc à, en gros, 2 cm de ~~sa teuch~~ sa culotte… évidemment à l’intérie
 
 ## Et là tout s’accélère encore
 
-Ma pote défoncée revient et me rassure vachement avec « *les secouristes sont pas dispos du tout et ils sont pas au poste de secours* » (il y avait eu un blessé sur le festoche…). « *Ah et j’ai essayé d’appeler les pompiers mais avec l’orage ils sont débordés… ils sont pas là avant 1h…* ».
+Ma pote défoncée revient et me rassure vachement avec « _les secouristes sont pas dispos du tout et ils sont pas au poste de secours_ » (il y avait eu un blessé sur le festoche…). « _Ah et j’ai essayé d’appeler les pompiers mais avec l’orage ils sont débordés… ils sont pas là avant 1h…_ ».
 
 ![](https://media.giphy.com/media/u49Tc69a9dWy7zJtuI/giphy.gif){: width="100%" }
 
@@ -118,13 +116,13 @@ J’ai donc opté pour le purement factuel :
 
 … la pince à sucre, c’était pour attraper le frelon car en fait la bestiole était quasi entière attachée à sa jambe…
 
-Et malaise vagal c’est ce qui se passe quand une grosse quantité de venin passe dans le cœur d’un coup :point_right: chute ultra brutale de pression :point_right: malaise  (youpi :tada:)
+Et malaise vagal c’est ce qui se passe quand une grosse quantité de venin passe dans le cœur d’un coup :point_right: chute ultra brutale de pression :point_right: malaise (youpi :tada:)
 
-Le mec a bien évalué la situation, il m’a passé la pince en voyant la bestiole… il a aussi checké le pouls de la nana et essayé de lui demander comment ça allait. Elle a dit « *PYM est là, ça va aller* » :point_left: Bordel mais d’où venait cette assurance :disappointed_relieved: ???
+Le mec a bien évalué la situation, il m’a passé la pince en voyant la bestiole… il a aussi checké le pouls de la nana et essayé de lui demander comment ça allait. Elle a dit « _PYM est là, ça va aller_ » :point_left: Bordel mais d’où venait cette assurance :disappointed_relieved: ???
 
 Mais la situation le mettait pas à l’aise, n’écoutant que son courage à deux mains, il a donc décidé… d’aller chercher les secours !
 
-« *Me laisser pas tout seul putain :sob:* »
+« _Me laisser pas tout seul putain :sob:_ »
 
 ![](https://media.giphy.com/media/c5Y9iCOE8VEBO/giphy.gif){: width="100%" }
 
@@ -162,7 +160,7 @@ Et j’avoue que j’ai adoré sa réponse :
 
 **By the way l’aspivenin n’a jamais fonctionné…** Et d’un commun accord on s’est dit que l’option « almost-cunni » était off the table. Elle commençait à aller mieux et ça m’allait très bien. Je commençais à la connaître déjà beeeeaaaaaauuuuucoup pour une première soirée. #ApplonsÇaLePlanZ
 
-Je me souviens bien de la discussion : « *l’aspivenin fonctionne pas, franchement moi je trouve que tu vas beaucoup mieux, je préfère surveiller ton pouls… que quoi ? Ah oui… nan, mais tu as raison, on va appeler ça le plan « dernier recours ». Parfait.* ».
+Je me souviens bien de la discussion : « _l’aspivenin fonctionne pas, franchement moi je trouve que tu vas beaucoup mieux, je préfère surveiller ton pouls… que quoi ? Ah oui… nan, mais tu as raison, on va appeler ça le plan « dernier recours ». Parfait._ ».
 
 Le pire c’est que mon cerveau ne peut pas s’arrêter de tourner… donc je partais dans plein de scénars terribles. Pour moi le pire c’était : Plan Z + elle re-tombe dans les pommes + quelqu’un rentre sans contexte
 
@@ -188,3 +186,11 @@ J’imagine la tête du mec :
 \#wtf
 
 **My life is a movie with no director.**
+
+Quelques photos du fameux festival :
+
+![Nuit à Festafrik Photo by Thierry et Jérôme for StartingBlock](festafrik-night.jpg)
+
+![Le lieu du crime Photo by Thierry et Jérôme for StartingBlock](La-grange-inside.jpg)
+
+![Sous la (grande) tente Photo by Thierry et Jérôme for StartingBlock](sous-la-tente.png)

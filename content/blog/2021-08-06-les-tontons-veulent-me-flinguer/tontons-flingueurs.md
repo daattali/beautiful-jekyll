@@ -2,9 +2,9 @@
 title: Les tontons veulent me flinguer
 subtitle: AEGIS - Agitateur Étudiant Gauchiste Improbable et Subversif
 category: pymfactor
-cover_image:
-  - /assets/img/tontons.jpg : "Mais dis-donc, on est tout de même pas venus pour beurrer les sandwichs!"
-  - /assets/img/crs_old.jpg : "La psychologie, y'en a qu'une : Défourailler le premier. C'est un peu sommaire, mais ça peut être efficace"
+cover:
+  img: crs_old.jpg
+  comment: La psychologie, y'en a qu'une... défourailler le premier. C'est un peu sommaire, mais ça peut être efficace
 tags: [pas de bol, manifestation, étudiant, fruit]
 status: published
 ---
@@ -82,7 +82,7 @@ Petite note : j'ai fait plein de manif et avec ma veine forcément je me suis fa
 
 « _Z'avez des revendications ?_ » </br>
 « _Vous êtes avec qui ?_ » </br>
-« _Avant de vous fouiller, avez vous des objets dangereux dans vos poches ? Couteaux ? Poinçon ? Ou des substance illicites ?_ » 
+« _Avant de vous fouiller, avez vous des objets dangereux dans vos poches ? Couteaux ? Poinçon ? Ou des substance illicites ?_ »
 
 Bon ok la dernière question m'a un peu rassurée celle-là je l'ai eu mille fois ! Ça tient à peu de chose la confiance en soi !
 
@@ -118,3 +118,4 @@ La tension est retombée. Les gars ont quand même fini leur fouille corpo (ça 
 
 Une bande de CRS dont le chef sont venu me demander un selfie juste après pour leur famille "Parce que sinon on les croirait pas" j'ai dit oui. Je suis parti. Évidemment j'aurais pu demander le selfie... évidemment j'ai oublié.
 
+![Mais dis-donc, on est tout de même pas venus pour beurrer les sandwichs!](tontons.jpg){: width="100%" }

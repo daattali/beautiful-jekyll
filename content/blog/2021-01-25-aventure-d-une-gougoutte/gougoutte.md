@@ -2,33 +2,33 @@
 title: Aventure d'une gougoutte
 subtitle: De la dangerosité des fuites d'eau relativistes
 category: sciences
-cover_image:
-  - /assets/img/chalk-board-physics.jpg : "Photo by athree23 de Pixabay"
-  - /assets/img/splash-glass.jpg : "Photo by Dawid Zawiła on Unsplash"
+cover:
+  img: crushed_earth.jpg
+  comment: Photo by 愚木混株 cdd20 on Unsplash
 tags: [someone was wrong, sciences, physique]
 status: published
 ---
 
-« *Une goutte d’eau a-t-elle le pouvoir de changer le courant d’un océan ?* »\
+« _Une goutte d’eau a-t-elle le pouvoir de changer le courant d’un océan ?_ »\
 **-- Thibault M**
 
 Voilà sur quoi je suis tombé dans mon fil FB hier… pour déconner j’ai juste
-répondu « *Bah ça dépend de la taille de la goutte…* » et là ça a commencé à
-partir en cacahouète parce que je me suis senti obligé de rajouter « *Note pour
-moi-même : ça dépend aussi de la vitesse de la goutte !* ».
+répondu « _Bah ça dépend de la taille de la goutte…_ » et là ça a commencé à
+partir en cacahouète parce que je me suis senti obligé de rajouter « _Note pour
+moi-même : ça dépend aussi de la vitesse de la goutte !_ ».
 
 C’est alors que quelqu’un[^phil] a
-fait la remarque, pas con du tout, que « *ça dépend de la vitesse de la goutte
+fait la remarque, pas con du tout, que « _ça dépend de la vitesse de la goutte
 d’eau, disons qu’une goutte d’eau d’une taille de 2 mm sur 4 tomber à une
 vitesse proche de celle de la lumière, ça pourrait même créer un tsunami, et
-peut-être même traverser une partie de la couche terrestre sous marine* »
+peut-être même traverser une partie de la couche terrestre sous marine_ »
 
 [^phil]: Phil pour ceux qui veulent tout savoir…
 
 ## Someone was wrong…
 
 ![](https://imgs.xkcd.com/comics/duty_calls.png){: width="100%" }
-*[Dessin de Randall Munroe](https://xkcd.com/386/) sous [licence CC BY-NC 2.5](http://creativecommons.org/licenses/by-nc/2.5/)*{: .small }
+_[Dessin de Randall Munroe](https://xkcd.com/386/) sous [licence CC BY-NC 2.5](http://creativecommons.org/licenses/by-nc/2.5/)_{: .small }
 
 #someoneIsWrongOnTheInternet et j’ai voulu expliquer pourquoi… accrochez-vous au
 pinceau, j’enlève l’échelle. Et je vous préviens hier j’étais très, très, très
@@ -118,15 +118,15 @@ bouboule de 4,5 km de diamètre si je me plante pas (il est tard).
 …
 
 … sérieux vous croyez que c’est fini ? Nan car Phil Marchand a su me relancer
-habilement, il a vu la faille : « *Mais imagine juste, que peu importe les
+habilement, il a vu la faille : « _Mais imagine juste, que peu importe les
 manières, une goutte d’eau simple, puisse être expulsée, (attraction terrestre
 ou lancée, depuis un domaine de l’orbital ou hors orbital) à une vitesse proche
-de la lumière \[…\] quel effet cela donnerait-il ?* » et de continuer « *la
+de la lumière \[…\] quel effet cela donnerait-il ?_ » et de continuer « _la
 puissance (je pense exprimable en Joules) serait si puissante qu’elle pourrait
 littéralement vider l’espace de trente minutes un océan entier, et envoyer toute
 la masse d’eau à part sur les autres continents ou îles avec une tel force que
 les plus grandes montagnes terrestres seraient submergées, et l’eau prendrait
-des années a s’évacuer de toutes parts, (peu être une dizaine d’années minimum)*
+des années a s’évacuer de toutes parts, (peu être une dizaine d’années minimum)_
 »
 
 …\\

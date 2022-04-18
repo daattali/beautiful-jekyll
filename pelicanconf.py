@@ -16,9 +16,9 @@ USE_FOLDER_AS_CATEGORY = False
 PATH_METADATA = '(?P<basepath>.*)/(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)/(?P<shortname>.*)\..*' # the name of the file itself doesn't matter
 
 ARTICLE_PATHS = ['blog']
-ARTICLE_SAVE_AS = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}/post.html'
-ARTICLE_URL = 'posts/{date:%Y}-{date:%m}-{date:%d}-{slug}/post.html'
-STATIC_PATHS = []
+ARTICLE_URL = 'blog/{date:%Y}-{date:%m}-{date:%d}-{slug}/'
+ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
+STATIC_PATHS = ['blog']  # in order to have images in the same place as articles
 
 TIMEZONE = 'Europe/Rome'
 

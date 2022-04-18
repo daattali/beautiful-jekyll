@@ -2,21 +2,23 @@
 title: C'est vendredi c'est climatologie
 subtitle: Filez moi une planète il faut que j'essaye des trucs...
 category: sciences
-cover_image:
-   - /assets/img/climate.jpg : "Photo by Markus Spiske on Unsplash"
+cover:
+  img: climate.jpg
+  comment: Photo by Markus Spiske on Unsplash
 tags: [someone was wrong, sciences, physique, geographie, climat]
 status: published
 ---
-« *Comment ça fonctionne le climat des régions du monde ?* »\
+
+« _Comment ça fonctionne le climat des régions du monde ?_ »\
 **-- Z.**
 
-Voilà ce qu'on m'a posé comme question et bon bah comme d'hab' je vais essayer d'y répon… quoi ?! On me l'a pas vraiment demandé ?Bon OK, techniquement ce qu'on m'a dit c'est « *Le programme de géo au collège c'est chiant* », il est possible qu'après j'ai sur-interprété la requête de mon interlocutrice…
+Voilà ce qu'on m'a posé comme question et bon bah comme d'hab' je vais essayer d'y répon… quoi ?! On me l'a pas vraiment demandé ?Bon OK, techniquement ce qu'on m'a dit c'est « _Le programme de géo au collège c'est chiant_ », il est possible qu'après j'ai sur-interprété la requête de mon interlocutrice…
 
 Bon une grande partie de la géo au collège c'est apprendre où sont les trucs (continents, océans, pays…), mais aussi voir le climat des différentes régions du monde.
 
 ![](https://c.tenor.com/_aIAA5G35OcAAAAC/drunk-alcohol.gif){: width="100%" }
 
-Alors autant la position et le nom des pays, des mers et le découpage en continent, c'est vraiment arbitraire (avoir un Pakistan et un Afghanistan qui ont une frontière qui coupe littéralement le peuple pachtoune,  ça n'a aucune logique autre que "ça arrangeait bien les Anglais, les Perses et les Russes au XIXᵉ siècle"). Autant les climats, ça c'est logique… il y a plein de machin à prendre en compte, mais il y a une logique derrière !
+Alors autant la position et le nom des pays, des mers et le découpage en continent, c'est vraiment arbitraire (avoir un Pakistan et un Afghanistan qui ont une frontière qui coupe littéralement le peuple pachtoune, ça n'a aucune logique autre que "ça arrangeait bien les Anglais, les Perses et les Russes au XIXᵉ siècle"). Autant les climats, ça c'est logique… il y a plein de machin à prendre en compte, mais il y a une logique derrière !
 
 Et s’il y a de la logique derrière, PYM peut pondre un pavé dessus ! [^theorem][^theorem]: Ça pourrait être un théorème !
 
@@ -32,13 +34,13 @@ Modèle "un poil" simplifié de la Terre…?
 
 ![](https://c.tenor.com/BdcwU6gstRoAAAAC/pooh-think.gif){: width="100%" }
 
-OK, on va dire que la Terre est sphérique (*c'est pas tout à fait vrai elle est aplatie aux pôles*), on va dire aussi que son axe de rotation n'est pas incliné (*alors qu'il l'est de 23,45°, c'est pas rien !*), bon et on va même carrément négliger totalement la rotation de la terre pour commencer (*pour être exact on va la moyenner et voir ce qui se passe sur le long terme uniquement*).
+OK, on va dire que la Terre est sphérique (_c'est pas tout à fait vrai elle est aplatie aux pôles_), on va dire aussi que son axe de rotation n'est pas incliné (_alors qu'il l'est de 23,45°, c'est pas rien !_), bon et on va même carrément négliger totalement la rotation de la terre pour commencer (_pour être exact on va la moyenner et voir ce qui se passe sur le long terme uniquement_).
 
-« *Quoi encore ?* \\
-— *Ça serait encore plus simple si la Terre était plate…?!* \\
-— *Dehors le platiste ! Tu sors !* \\
-— *…* \\
-— *Nan, ça serait pas plus simple. En physique, on aime bien les trucs ronds… ça a tout pleins de symétries qui facilitent tous les calculs… et ça permet de se la péter avec des sinus et des cosinus partout !* #trigoÉlitisme »
+« _Quoi encore ?_ \\
+— _Ça serait encore plus simple si la Terre était plate…?!_ \\
+— _Dehors le platiste ! Tu sors !_ \\
+— _…_ \\
+— _Nan, ça serait pas plus simple. En physique, on aime bien les trucs ronds… ça a tout pleins de symétries qui facilitent tous les calculs… et ça permet de se la péter avec des sinus et des cosinus partout !_ #trigoÉlitisme »
 
 Donc, notre planète ronde qui tourne pas elle se chauffe comment ?
 
@@ -56,7 +58,7 @@ Ben nan pas du tout : aviez-vous déjà remarqué que le matin et le soir il fai
 
 ![Inclinaison des rayons solaires](/assets/img/inclinaison-des-rayons-solaires.png){: width="100%" }
 
-Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses rayons sont parallèles. Si on prend un "tube"  de rayon solaire (disons d'1m² de diamètre), il apporte une certaine quantité d'énergie (donc de chaleur). Si on prend un tube qui tape à l'équateur, bah voilà il tape bien à la verticale, youpi 🥵 ! Mais s’il tape plus près d'un pôle… il arrive sur un sol tout incliné ! Résultat, l'énergie est "étalée" sur une surface bien plus grande et comme c'est la même quantité d'énergie sur une surface plus grande ça fait moins d'énergie au mètre carré 🥶 donc il fait tout plein plus froid vu que le chauffage solaire est moins fort.#cqfd
+Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses rayons sont parallèles. Si on prend un "tube" de rayon solaire (disons d'1m² de diamètre), il apporte une certaine quantité d'énergie (donc de chaleur). Si on prend un tube qui tape à l'équateur, bah voilà il tape bien à la verticale, youpi 🥵 ! Mais s’il tape plus près d'un pôle… il arrive sur un sol tout incliné ! Résultat, l'énergie est "étalée" sur une surface bien plus grande et comme c'est la même quantité d'énergie sur une surface plus grande ça fait moins d'énergie au mètre carré 🥶 donc il fait tout plein plus froid vu que le chauffage solaire est moins fort.#cqfd
 
 À l'équateur, il faut donc plus chaud et au pôle plus froid.
 
@@ -64,16 +66,16 @@ Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses
 
 …ah un peu de contradiction, c'est bien ça la contradiction ! Oui mon bon Donald que veux-tu ?
 
-« *STOP ! Moi, je pense qu'on se prend la tête : s’il fait plus froid au pôle, c'est juste parce qu'il est plus loin du soleil que l'équateur du soleil !* \\
-— *Ah oui…* \\ 
-— *Et quand je teste avec la lampe, je vois bien que, plus je suis loin, moins ma main est chaude !* \\
-— *Certes mon cher palmipède… certes…* \\
-— *Ah ah ! Je le savais !* \\
-— *Sauf que nan… déjà ta lampe elle est toute petite et proche donc ses rayons s'écartent les uns des autres (ils ne sont pas parallèles) donc à la place d'un tube tu as un cône et ça fait que l'énergie "s'étale avec la distance" (en `R²` si tu veux tout savoir).* \\
-— *Et c'est pas le cas avec le Soleil peut-être ?!* \\
-— *Si mais sur des distances démentiellement grandes… genre de l'ordre de la distance entre l'orbite de la Terre et l'orbite de Mars : 78 millions de km… et la différence entre l'équateur et le pôle en termes de distance parcourue par la lumière du soleil c'est le rayon de la Terre : 6 371 km c'est-à-dire en gros 10 000 fois moins. Si la différence équateur/pôle était dû à ça, elle serait elle aussi ridicule en termes de température.* \\
-— *Ah merde… ça semblait facile avec la lampe…* \\
-— *Sorry Donald.* »
+« _STOP ! Moi, je pense qu'on se prend la tête : s’il fait plus froid au pôle, c'est juste parce qu'il est plus loin du soleil que l'équateur du soleil !_ \\
+— _Ah oui…_ \\
+— _Et quand je teste avec la lampe, je vois bien que, plus je suis loin, moins ma main est chaude !_ \\
+— _Certes mon cher palmipède… certes…_ \\
+— _Ah ah ! Je le savais !_ \\
+— _Sauf que nan… déjà ta lampe elle est toute petite et proche donc ses rayons s'écartent les uns des autres (ils ne sont pas parallèles) donc à la place d'un tube tu as un cône et ça fait que l'énergie "s'étale avec la distance" (en `R²` si tu veux tout savoir)._ \\
+— _Et c'est pas le cas avec le Soleil peut-être ?!_ \\
+— _Si mais sur des distances démentiellement grandes… genre de l'ordre de la distance entre l'orbite de la Terre et l'orbite de Mars : 78 millions de km… et la différence entre l'équateur et le pôle en termes de distance parcourue par la lumière du soleil c'est le rayon de la Terre : 6 371 km c'est-à-dire en gros 10 000 fois moins. Si la différence équateur/pôle était dû à ça, elle serait elle aussi ridicule en termes de température._ \\
+— _Ah merde… ça semblait facile avec la lampe…_ \\
+— _Sorry Donald._ »
 
 C'est bien l'inclinaison qui fait la différence de température épicétou !
 
@@ -113,6 +115,7 @@ En gros, tu as un ballon de baudruche (haute pression vu que tu as fait rentrer 
 Oui voilà… du vent dans ta gueule ! Simple !
 
 Sur Terre c'est pareil :
+
 - équateur 👉 chaud 👉 surpression
 - pôle 👉 froid 👉 sous-pression
 
@@ -171,7 +174,8 @@ Allez hop petit schéma de tout ça :
 
 ![Voilà nos 3 cellules qui s'emboîtent bien comme des engrenages](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){: width="100%" }
 
-Ces 3 cellules dans chaque hémisphère expliquent qu'on ait 4 climats bien marqué et nettement séparé : 
+Ces 3 cellules dans chaque hémisphère expliquent qu'on ait 4 climats bien marqué et nettement séparé :
+
 - climat polaire 🥶
 - climat tempéré 😎
 - climat subtropical 🥵
@@ -224,7 +228,7 @@ Voilà 4 ans, et on a déjà expérimenté une pseudo-force !
 
 Bon, par contre, pas de bol, celle-là n'a quasi aucun effet sur le climat 😅 à part aux pôles où elle contribue à rendre les vents polaires au sol encore pire : elle éloigne l'air du pôle donc pile poil le sens des vents polaires !
 
-![…je le remets pour le plaisir, j'adore le voir galérer \<rire dément de méchant de James Bond\>](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
+![…je le remets pour le plaisir, j'adore le voir galérer <rire dément de méchant de James Bond>](https://c.tenor.com/H28Qg_6XK5IAAAAC/bob-seger-seger.gif){: width="100%" }
 
 Allons donc voir ailleurs si la pseudo-force qui nous manque y est !
 
@@ -252,9 +256,9 @@ En fait c'est encore une pseudo-force très très cheloue puissance 10 : la **fo
 
 Et elle t'empêche de marcher droit en te poussant toujours vers la droite (ou la gauche ça dépend du sens de rotation de ton manège…).
 
-« *Je n'y crois pas ! Je suis platiste, vous mentez !* »
+« _Je n'y crois pas ! Je suis platiste, vous mentez !_ »
 
-Ah notre ami platiste est de retour[^platiste]… pas de bol pour lui : même si la Terre était plate (ce qu'elle n'est pas !) pourvu qu'elle tourne, il y aurait une force de Coriolis… allez « *Coucher panier le platiste !* »
+Ah notre ami platiste est de retour[^platiste]… pas de bol pour lui : même si la Terre était plate (ce qu'elle n'est pas !) pourvu qu'elle tourne, il y aurait une force de Coriolis… allez « _Coucher panier le platiste !_ »
 
 ![Quelle plaie…](https://c.tenor.com/jIBAZnwaM4EAAAAC/ill-be-back-sunglasses.gif){: width="100%" }
 
@@ -282,10 +286,10 @@ Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… m
 👆 En haut, la balle vue de l'extérieur immobile \\
 En bas, la même balle vue depuis le disque qui tourne
 
-« *Bordel, c'est magique !* \\
-— *Non, c'est scientifique !* \\
-— *Pardon* \\
-— *Y'a pas de mal* »
+« _Bordel, c'est magique !_ \\
+— _Non, c'est scientifique !_ \\
+— _Pardon_ \\
+— _Y'a pas de mal_ »
 
 Donc dès qu'on est sur un truc qui tourne (et où qu'on soit dessus), il faut ajouter une force de Coriolis !
 
@@ -302,7 +306,7 @@ Mais… on est tous sur Terre ! On devrait le sentir tout le temps !!! On devrai
 
 Bah Coriolis c'est une force ridiculement petite… elle arrive à avoir un effet notable si tu bouges pas trop vite, sur de longues distances et que tu résistes pas trop… les vents et les courants marins, ça marche. À la rigueur, si tu es tireur d'élite et que tu tires à plus d'1km de distance, tu commences à devoir bien te faire chier car ta balle se décale avec la force de Coriolis [^kyudo][^punk]…
 
-« *Ah mais en fait je connais ! C'est ça qui fait que le tourbillon qui se forme quand je vide ma baignoire tourne dans le sens des aiguilles d'une montre ! Et même quand tu passes l'équateur ça change de sens ! Je l'ai vu sur Facebook !!!* »
+« _Ah mais en fait je connais ! C'est ça qui fait que le tourbillon qui se forme quand je vide ma baignoire tourne dans le sens des aiguilles d'une montre ! Et même quand tu passes l'équateur ça change de sens ! Je l'ai vu sur Facebook !!!_ »
 
 ![Tiens ça faisait longtemps…](https://c.tenor.com/WQkVAtajaR4AAAAC/vampire-diaries-eye-roll.gif){: width="100%" }
 
@@ -322,7 +326,7 @@ Oui mais là aussi Coriolis : le vent va aller vers le centre de la basse pressi
 
 À l'opposé, s’il y a une surpression, le vent devrait rayonner depuis cette surpression sauf que Coriolis ta mère : ça tourne à droite 👉 tourbillon mais dans le sens inverse des aiguilles d'une montre ! En météo (pour des raisons historiques), on appelle ça un anticyclone. Idem vous en voyez tous les jours à la météo.
 
-« *Mais pourquoi anticyclone ?* » Rhaaaaa, j'aurais dû m'y attendre… bah c'est simple, une dépression qui tourne mal (beaucoup de vents, très humide et chaude) ça donne un cyclone, pas cool… et assez vite, on a remarqué qu'avant un cyclone, il y avait une baisse de pression (vu que c'est une dépression) mais que si la pression restait haute bah, jamais cyclone 👉 haute pression = anti-cyclone
+« _Mais pourquoi anticyclone ?_ » Rhaaaaa, j'aurais dû m'y attendre… bah c'est simple, une dépression qui tourne mal (beaucoup de vents, très humide et chaude) ça donne un cyclone, pas cool… et assez vite, on a remarqué qu'avant un cyclone, il y avait une baisse de pression (vu que c'est une dépression) mais que si la pression restait haute bah, jamais cyclone 👉 haute pression = anti-cyclone
 
 Et pourquoi seuls les tourbillons des dépressions font de la merde ? Bah la basse pression, donc ça crée un effet d'aspiration au niveau de sol… ou de la mer et donc ça "pompe" de l'humidité en permanence. Les anticyclones eux avec leurs hautes pressions plaquent l'humidité au sol. #cqfd
 
@@ -338,7 +342,7 @@ Or on vient de voir que les anticyclones sont plutôt secs et les dépressions h
 - **latitude des chevaux 👉 anticyclone 👉 sec** (ah bah oui là par exemple on a le Sahara… )
 - **équateur 👉 dépression 👉 humide** (d'où les forêts équatoriales humides où il flotte tous les jours)
 
-J'ajouterai (alors que ça figure pas sur le schéma) : 
+J'ajouterai (alors que ça figure pas sur le schéma) :
 
 - **les pôles 👉 anticyclone** (on a une forte pression, car l'air froid retombe là) **👉 sec** (eh oui aux pôles contrairement à une croyance populaire, il ne neige quasiment jamais, c'est tout sec… les seuls morceaux de glace qu'on prend dans la gueule, c'est ceux arrachés au sol par les vents de ouf des pôles)
 
@@ -384,7 +388,7 @@ Bon, donc, on vient de trouver pourquoi on a de la glace aux pôles. Mais c'est 
 
 3️⃣ **l'eau a une capacité calorifique thermique super élevée**…
 
-« *On comprend pas ce que tu dis !* »
+« _On comprend pas ce que tu dis !_ »
 
 ![Nan, mais il fallait me dire que Perceval était dans la salle !](https://c.tenor.com/wS9l25RT9gAAAAAC/cest-pas-faux.gif){: width="100%" }
 
@@ -400,7 +404,7 @@ On retrouve le même comportement pour certains matériaux solides : la brique o
 
 Pour info : on mesure l'inertie thermique d'un truc grâce à un chiffre : la capacité thermique massique. Ça se mesure en Joule par Kelvin par kilogramme. Voilà.
 
-Et c'est utile pour le climat ça (l'inertie thermique de l'eau, pas le fait qu'elle se mesure en `J/K/kg`) ? Oui, énormément ! 
+Et c'est utile pour le climat ça (l'inertie thermique de l'eau, pas le fait qu'elle se mesure en `J/K/kg`) ? Oui, énormément !
 
 ![Du calme dans la salle !](https://c.tenor.com/Drz_x_HhZXkAAAAC/yeah-baby-oh-yeah-baby.gif){: width="100%" }
 
@@ -464,9 +468,10 @@ Au niveau des développements humains, c'est démentiellement important : les ci
 - Chinois avec leur climat tempéré mais ultra humide (proximité des zones de mousson).
 - Européens avec leur climat sans extrême (et qui donc ne doivent pas investir 50% de leurs ressources pour survivre à l'hiver ou à l'été)
 - Égyptiens avec le Nil qui a fait que c'était les seuls de leur région tropicale sèche à avoir de l'eau et donc des cultures !
- ![Aller c'était déjà assez long on arrête là](https://c.tenor.com/9ZrEoj1OeKoAAAAC/thats-allfolks.gif){: width="100%" }
+  ![Aller c'était déjà assez long on arrête là](https://c.tenor.com/9ZrEoj1OeKoAAAAC/thats-allfolks.gif){: width="100%" }
 
 [^mediterranee]: La méditerranée est une très grande mer… ou si tu préfères un très petit océan. Elle va donc avoir le même effet "adoucissant" qu'un océan (hiver doux et été pas trop chaud) mais en moins efficace. On voit bien la différence dans le nord de l'Espagne : c'est un climat océanique encore moins chaud l'été et l'hiver est encore moins froid. Autre point important pour le climat méditerranéen : la Méditerranée est très au sud, à la limite du climat tropical sec (Sahara) donc il y fait plus chaud que dans les climats tempérés. Donc on a un climat "entre deux" : globalement chaud (comme tropical aride), 4 saisons (comme océanique/continental), mais moins atténué qu'un océanique (car la mer n'est pas aussi grosse qu'un océan). C'est le seul endroit au monde où tu as tous ces facteurs contradictoires ensemble, d'où un climat très particulier (et important en occident car berceau de la culture dominante historique : grecs puis romain puis chrétien et orthodoxe)
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTE2Mzc5Nzg5OCwtNDcxNzg2NzY5LC0xMz
 g4ODk5MDk5LDIwMDg5Mjc1MzUsLTEzNDM4OTcwODksLTEzNDY4

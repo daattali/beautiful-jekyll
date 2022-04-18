@@ -1,19 +1,28 @@
 ---
 title: Éternuer dans le RER
 subtitle: À vos souhait mademoiselle…
+summary: Un jour d’été dans le RER j’allais sortir et une nana se lève, éternue [^covid] mais ne peut mettre sa main devant sa bouche, car elle a son ordi dans une main et l’autre bras avec un genre d’atèle…
+cover:
+  img: girl-in-subway.jpg
+  comment: Photo by Sandy Ching on Unsplash
 category: pymfactor
-cover_image: girl-in-subway-thumb.jpg
 tags: [pas de bol, transports]
 status: published
 ...
 
-<!-- ~~test~~ test $E \neq mc^2$ c'est simple
+Zone de test
+
+![cover image](solvay.jpg){: width="100%" }
+
+~~test~~ test $E \neq mc^2$ c'est simple
 
 $$\text{determinant} = \frac{-b-\sqrt{\delta}}{2a}$$
 
 hop
 
-![cover image](/assets/img/girl-in-subway-thumb.jpg){: width="100%" } -->
+![cover image](/assets/img/girl-in-subway-thumb.jpg){: width="100%" }
+
+Fin de zone de test
 
 Un jour d’été dans le RER j’allais sortir et une nana se lève, éternue [^covid] mais ne peut mettre sa main devant sa bouche, car elle a son ordi dans une main et l’autre bras avec un genre d’atèle…
 
@@ -35,7 +44,7 @@ Non… tu penses à quelle est la fucking phrase d’accroche quand tu viens de 
 
 Surtout quand tu te rends compte que peut-être de **SON** point de vue tu viens juste de lui dégrafer son soutif…[^lea]
 
-[^lea]: Ma pote Léa, à qui je raconte souvent ces histoires qui m’arrivent, m’a demandé « *Mais comment elle a réagi ?* » Assez simplement : « *Putain ! Merci mec !* ». 
+[^lea]: Ma pote Léa, à qui je raconte souvent ces histoires qui m’arrivent, m’a demandé « _Mais comment elle a réagi ?_ » Assez simplement : « _Putain ! Merci mec !_ ».
 
 Heureusement elle avait senti le truc craquer PUIS ma main attraper les deux machins… (par les deux machins je veux dire les 2 morceaux d’attache !)
 

@@ -2,15 +2,17 @@
 title: Atomes, nombres quantiques et toutes ces conneries
 subtitle: "ou comment se la péter en soirée en disant « Moi j'ai compris la physique quantique ! » (et avoir tord… mais c'est pas grave… il y a les cocktails pour oublier ça)"
 summary: >
-    « **Z. :** Pyyym j'peux me plaindre deux minutes de mon cours de chimie ? Pasque j'ai pas tout tout compris…<br>
-    **PYM :** Mmmmh oui aucun prob…<br>
-    **Z. :** C'était un bail à base de quatre nombres quantiques et de sous-couches électroniques de chépaquoi. »
+  « **Z. :** Pyyym j'peux me plaindre deux minutes de mon cours de chimie ? Pasque j'ai pas tout tout compris…<br>
+  **PYM :** Mmmmh oui aucun prob…<br>
+  **Z. :** C'était un bail à base de quatre nombres quantiques et de sous-couches électroniques de chépaquoi. »
+cover:
+  img: solvay.jpg
+  comment: La réunion de Solvay... THE place to be in 1927
 category: pymfactor
-cover_image:
-   - /assets/img/solvay.jpg : "Wave functions of the electron in a hydrogen atom at different energy levels."
 tags: [someone was wrong, sciences, physique, chimie, tableau périodique]
 status: published
 ...
+
 « **Z. :** Pyyym j'peux me plaindre deux minutes de mon cours de chimie ? Pasque j'ai pas tout tout compris… \
 **PYM :** Mmmmh oui aucun prob… \
 **Z. :** C'était un bail à base de quatre nombres quantiques et de sous-couches électroniques de chépaquoi. »
@@ -41,7 +43,7 @@ En gros fin XIXème début XXéme on sait quoi sur les atomes ? Bon déjà on es
 - ils peuvent former des ions positifs (cations) ou négatifs (anions) mais ça a l'air différent pour chaque élément
 - ils réagissent entre eux… mais pas tous avec tout le monde
 
-Ils appellent d'ailleurs les différents types d'atome des "éléments chimiques" : hydrogène, oxygène, carbone… tout ça… 
+Ils appellent d'ailleurs les différents types d'atome des "éléments chimiques" : hydrogène, oxygène, carbone… tout ça…
 
 Et comment ils savent tout ça les loulous ? Bah dès qu'ils trouvent un nouvel élément ils font tout plein de tests chimique en essayant de les faire réagir avec tout et n'importe quoi. Autant te dire que l'histoire de la chimie est jonchée d'erreur, l'élément qui n'existe pas, de truc découvert deux, trois ou quatre fois. Et quand, comme Mme Curie, tu bosses sur un élément rare… c'est chaud patate de le faire réagir avec plein de trucs vu que tu as déjà pas des masses de ton super nouvel élément…
 
@@ -58,12 +60,11 @@ Ils ont essayé.\
 Ils ont arrêté de rire.
 
 [^bordelique]: Il est possible que Z. soit notoirement bordélique. Mais elle a un alibi parfait « Nan mais si on peut pas être bordélique quand on est ado, sérieux ?! ». Inattaquable.
-
-[^sciencerugby]: On imagine toujours les scientifique du XIXème, début XXème comme des mec tout maigres et très sérieux qui passe leur vie dans des bibliothèques ou à faire des expériences bizarres.  lui c'était un pilier de rugby qui était _aussi_ un super scientifique. Donc faut imaginer un ~~british~~ Néo-Zélandais bien stock avec un cou de taureau mais qui vous défonce en arithmétique d'une seule main… un mec bien. D'ailleurs c'est lui qui a dit « _La science est soit de la physique, soit de la philatélie._ ».
+[^sciencerugby]: On imagine toujours les scientifique du XIXème, début XXème comme des mec tout maigres et très sérieux qui passe leur vie dans des bibliothèques ou à faire des expériences bizarres. lui c'était un pilier de rugby qui était _aussi_ un super scientifique. Donc faut imaginer un ~~british~~ Néo-Zélandais bien stock avec un cou de taureau mais qui vous défonce en arithmétique d'une seule main… un mec bien. D'ailleurs c'est lui qui a dit « *La science est soit de la physique, soit de la philatélie.* ».
 
 C'est quoi l'idée ? Et c'est quoi de problème ?
 
-Depuis un bon moment on avait compris que les propriétés chimiques des atomes viennent de leurs électrons : 
+Depuis un bon moment on avait compris que les propriétés chimiques des atomes viennent de leurs électrons :
 
 - ils s'assemblent pour former des molécules en partageant des électrons
 - ils perdent ou gagnent des électrons pour former des ions
@@ -80,11 +81,13 @@ Et voilà on se retrouve à essayer de comprendre comment on range les électron
 ![](https://c.tenor.com/T41eJjy1CU4AAAAC/harley-quinn-chaos.gif){: width="100%" }
 
 # La quête de la Sainte Structure Atomique
+
 Au début les physiciens étaient assez confiants : ils avaient percé le secret de la structure des atomes (un petit noyau positif et des électrons négatifs autour) et ça ressemblait pas mal au système solaire (un gros soleil au milieu et des s autour).
 
 Alors attention maintenant commence le défilé des fails…
 
 ## Essai 1 : Planétologie de maternelle
+
 « _Bah on met les électrons qui tourne autour un peu en vrac chacun avec une orbite qui lui est propre._ »
 
 ![](https://c.tenor.com/K4JNKWRlCkAAAAAC/short-dunk-fail.gif){: width="100%" }
@@ -110,11 +113,13 @@ C'est le yoyo des électrons excité !
 [^prisme]: En vrai on utilise pas un prisme (qui a plein de défaut qu'on appelle aberrations chromatiques) mais un réseau, c'est-à-dire une plaque avec plein de petite fentes kro kro fines. Pourquoi ça marche comme un prisme ? Euh là ça vaudrait un post complet juste pour expliquer ça… un post assez cool d'ailleurs… mais les prismes ça fait des jolies pochettes d'album me dit-on dans l'oreillette.
 
 ### Back to business : Pourquoi ça fail le modèle des "électrons en vrac" ?
+
 Et ben si on pouvait mettre des électron en vrac alors ils pourraient sauter à n'importe qu'elle hauteur quand on les excite… et donc on aurait un beau spectre continu avec plein de couleur comme un caca de licorne… sauf que nan on voit 3~4 raies…
 
 ![](https://c.tenor.com/vVTjvCz_OsEAAAAC/next-snl.gif){: width="100%" }
 
 ## Essai 2 : On empile les couches
+
 Bon si ils sont pas en vrac… on va faire des genres de couches où les électrons pourraient s'entasser… c'est mieux ?
 
 Oui.
@@ -154,7 +159,7 @@ Je vous passe tous les essais bizarres, compliqués et passablement foireux de l
 
 Bon donc on a besoin d'une nouvelle bonne idée !
 
-[^foiritude]:  qu'on s'est rendu compte de la foiritude de décrire les atomes comme des mini systèmes solaires (modèle dit de Bohr… de monsieur Niels Bohr, un bon coquin : ce sont deux thésards à lui qui ont interprété son expérience à laquelle il ne comprenait rien...) dès le début du XXème siècle. Et que pourtant même maintenant au XXIème siècle on continue à l'enseigner comme ça et tout le monde à cette idée foireuse en tête à cause de ça 🙄
+[^foiritude]: qu'on s'est rendu compte de la foiritude de décrire les atomes comme des mini systèmes solaires (modèle dit de Bohr… de monsieur Niels Bohr, un bon coquin : ce sont deux thésards à lui qui ont interprété son expérience à laquelle il ne comprenait rien...) dès le début du XXème siècle. Et que pourtant même maintenant au XXIème siècle on continue à l'enseigner comme ça et tout le monde à cette idée foireuse en tête à cause de ça 🙄
 
 ## Essai 3877 : Here comes a new challenger!
 
@@ -309,7 +314,7 @@ $$
 
 Et ça colle bien avec les observations des chimistes : l'hélium qui a 2 électrons a bien une seule raie 2 fois plus brillante que celle de l'hydrogène qui a un seul électron (car il a 2 électrons pour émettre cette raie).
 
-Et cette "règle du spin" sera toujours vraie : toutes les "orbitales" (nom qu'on a trouvé pour généraliser la vieille notion d'orbite... oui c'est un peu un nom pourri quand on sait que c'est pour remplacer le mot "orbite")...  toutes les orbitales donc peuvent contenir 2 électrons un up↑ et un down↓
+Et cette "règle du spin" sera toujours vraie : toutes les "orbitales" (nom qu'on a trouvé pour généraliser la vieille notion d'orbite... oui c'est un peu un nom pourri quand on sait que c'est pour remplacer le mot "orbite")... toutes les orbitales donc peuvent contenir 2 électrons un up↑ et un down↓
 
 C'est pour ça qu'on va voir plein de schémas où on représente des électrons par des flèches ↑ et ↓ !
 
@@ -344,7 +349,7 @@ Bah on a qu'à les mettre les unes par-dessus les autres... genres des bouboules
 
 Nan. Car alors on aurait des grosses différences d'énergie puisque les bouboules seraient de plus en plus loin du centre. Là tout nos électrons sont au niveau n=2 qui a globalement la même énergie pour ses 8 électrons a qq micro différences près...[^tellnoone]
 
-[^tellnoone]: C'est désespérant de se rendre compte que le travail des chimistes en spectroscopie, en fait, c'est vraiment utile... c'est peut-être pas autant des branquignoles que je veux bien l'admettre #tellNoOne  
+[^tellnoone]: C'est désespérant de se rendre compte que le travail des chimistes en spectroscopie, en fait, c'est vraiment utile... c'est peut-être pas autant des branquignoles que je veux bien l'admettre #tellNoOne
 
 Et c'est là qu'on va commencer à faire les foufous avec les nombres quantiques !
 
@@ -497,6 +502,7 @@ donc K L M N O P Q… et cette notation est encore utilisée…
 Un peu après on s'est rendu compte qu'on avait eu raison : on a découvert des sauts jusqu'à une couche plus profonde qu'on a donc appelé K... sauf qu'on en a jamais trouvé de plus profonde. Et pour cause : couche K 👉 n=1 c'est la première couche !
 
 # Range ta chambre
+
 ## Feng shui d'électron
 
 Bon voilà maintenant on sait comment sont faites les "_étagères à électrons_" donc on sait les ranger des électrons !
@@ -551,7 +557,7 @@ Bon bah voilà on sait ranger les électrons ! Mais est-ce que ça permettrait p
 
 ![](https://c.tenor.com/1l6cDDl4sN8AAAAC/salon-line-todecacho.gif){: width="100%" }
 
-La seule couche qui compte vraiment pour la chimie, c'est celle qui réagit... c'est à dire celle qui est en surface donc la plus haute. 🤔 Bon déjà on va ranger ensemble tous les éléments qui ont pour dernière orbitale remplie les orbitales s et on va les ranger par n croissant (donc du plus léger au plus lourd puisque pour avoir un n grand il faut plus d'électrons donc plus de proton dans le noyau donc des atomes plus lourd). 
+La seule couche qui compte vraiment pour la chimie, c'est celle qui réagit... c'est à dire celle qui est en surface donc la plus haute. 🤔 Bon déjà on va ranger ensemble tous les éléments qui ont pour dernière orbitale remplie les orbitales s et on va les ranger par n croissant (donc du plus léger au plus lourd puisque pour avoir un n grand il faut plus d'électrons donc plus de proton dans le noyau donc des atomes plus lourd).
 
 Ça donnerait quoi ?
 
@@ -560,6 +566,7 @@ Ceux qui sont à demi remplis (un seul électron dans la couche s) de n=1 à n=7
 ```
 H Li Na K Rb Cs Fr
 ```
+
 Ceux qui sont complètement remplis (2 électrons dans la couche s) de n=1 à n=7 :
 
 ```
@@ -572,7 +579,7 @@ Bon on pourrait continuer pareil pour les orbitales p... (il n'y en aurait pas p
 
 👆 Feng shui ta mère des éléments ! C'est comme ça qu'il faudrait ranger ! Bon chaque case correspond à 2 éléments en vrai car on a 2 électrons par orbitale…
 
-Et si on met les noms des éléments là-dedans ça donne quoi ? 
+Et si on met les noms des éléments là-dedans ça donne quoi ?
 
 ![Mais… mais… mais...](/a-pym-s-life/assets/img/tableau-elements.jpg){: width="100%" }
 
@@ -592,12 +599,12 @@ Donc la physique quantique avec ses électrons gazeux qui se téléportent, qui 
 
 - le principe de décrire les électrons avec 4 nombre quantique qui ont des valeurs ultra limitées : **n ℓ mℓ** et **s**
 - le nom des familles d'orbitales : **s p d f** (_**s**phérique_, _**p**olaires_, _**d**iagonales_, _**f**outraque_ pour s'en souvenir)
--  on peut mettre **2 électrons par orbitale**
--  l'ordre de remplissage avec la **règle Klechlowsk**i (les diagonale bas-gauche)
--  tout ça a été obtenu grâce au boulot de _chimistes absolument géniaux_ qui ont bossé des années pour essayer de trouver une théorie qui explique des situations à priori incompréhensibles…
+- on peut mettre **2 électrons par orbitale**
+- l'ordre de remplissage avec la **règle Klechlowsk**i (les diagonale bas-gauche)
+- tout ça a été obtenu grâce au boulot de _chimistes absolument géniaux_ qui ont bossé des années pour essayer de trouver une théorie qui explique des situations à priori incompréhensibles…
 
 Ah j'oubliais... il y a un taré qui a réussi à vraiment représenter en 3D ce que sont exactement les orbitales atomiques... c'est putain super dur, car il faut représenter les probabilités, le mouvement et tout (et même les 1s en fait c'est assez complexe, car la probabilité toutes simple que je t'ai montré c'est celle du 1s... le 2s ça forme comme des bouboules concentriques : [A Better Way To Picture Atoms](https://youtu.be/W2Xb2GFK2yc)
 
 # Remerciements
 
-Je tiens à remercier Cécile, Ophélie, Gui² et bien sûr Z. pour leurs questions, relectures, corrections, discussions et tout. Parce que, il faut bien avouer, cet article a été particulièrement velu, un genre de 😸Maine Coon😸 de la physique ! 
+Je tiens à remercier Cécile, Ophélie, Gui² et bien sûr Z. pour leurs questions, relectures, corrections, discussions et tout. Parce que, il faut bien avouer, cet article a été particulièrement velu, un genre de 😸Maine Coon😸 de la physique !

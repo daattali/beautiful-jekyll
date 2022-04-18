@@ -2,8 +2,9 @@
 title: Aventurier contre tout guerrier
 subtitle: Pour quelqu'un comme moi qui a facilement tendance à la malchance, mon cher médecin, c'est très important c'que vous faites
 category: pymfactor
-cover_image: 
-  - /assets/img/un_peu_de_velo.jpg : "J'ai été faire du vélo avec des potes - photo by Alexander Schimmeck on unsplash"
+cover:
+  img: un_peu_de_velo.jpg
+  comment: J'ai été faire du vélo avec des potes - photo by Alexander Schimmeck on unsplash
 tags: [medecin, blessure, sport]
 status: published
 ---
@@ -26,7 +27,7 @@ Clairement elle n'était pas prête.
 
 Alors il doit y avoir un truc pendant les études de médecine où on traumatise les futurs médecins avec le concept d'antécédents médicaux. Donc j'étais bon pour un interrogatoire complet, un prélèvement de peau, de sang, de larme… ce que vous voulez pourvu que la pauvre arrête de dévorer son crayon comme un castor affamé !
 
-Après quelques questions de routine, elle commence à regarder mes yeux avec la lumière, vous savez le machin pour vérifier si nos pupilles réagissent. Et là elle me fait « *Ah c'est étrange vos pupilles réagissent AVANT que je mette la lumière !* ». Et moi je lui réponds juste « *Bah oui je savais que vous alliez me mettre la lumière dans l'œil alors j'ai contracté ma pupille avant histoire de pas en prendre plein la gueule.* » Apparemment les pupilles c'est juste des machins réflexes, on est pas censé les contrôler "volontairement"[^oeil]. Ce genre de réponse c'est pas bon pour la pression artérielle, en tout cas pas pour notre médecin écureuil accro à la caféine.
+Après quelques questions de routine, elle commence à regarder mes yeux avec la lumière, vous savez le machin pour vérifier si nos pupilles réagissent. Et là elle me fait « _Ah c'est étrange vos pupilles réagissent AVANT que je mette la lumière !_ ». Et moi je lui réponds juste « _Bah oui je savais que vous alliez me mettre la lumière dans l'œil alors j'ai contracté ma pupille avant histoire de pas en prendre plein la gueule._ » Apparemment les pupilles c'est juste des machins réflexes, on est pas censé les contrôler "volontairement"[^oeil]. Ce genre de réponse c'est pas bon pour la pression artérielle, en tout cas pas pour notre médecin écureuil accro à la caféine.
 
 Et là elle a vu que j'avais une cicatrice à l'œil. Elle tenait enfin un truc simple à me demander…
 
@@ -103,5 +104,3 @@ Bon depuis, dans mon dossier il y a marqué que je suis un "aventurier". Ça m'a
 [^oeil]: C'est ce jour-là que j'ai appris que les autres gens ne pouvaient pas dilater ou contracter leurs pupilles à volonté. Ou en tout cas c'est très rare. On en apprend des choses quand même des fois…
 [^boomerang]: On ne se rend pas compte comme c'est dur de rattraper un de ces merdiers volant avec les dents. Ça implique pas mal d'échecs avant d'y arriver… alors j'ai beaucoup bossé les échecs…
 [^fille]: Techniquement on jouait au frisbee, elle a voulu attraper le frisbee avant moi. Ça aurait été une meilleure idée si elle avait eu une bonne évaluation des distances. Elle a sauté trop haut et trop tôt, moi bah, moins haut et au bon moment. Brillant ? Non. J'avais négligé sa trajectoire à elle dans mon calcul balistique de haute volée. J'ai donc eu le frisbee et les incisives d'une jeune fille de 16 ans. Le premier dans la main les secondes dans l'arcade sourcilière. Saviez-vous que l'arcade sourcilière saigne beaucoup ? Moi oui. Elle non. Elle a choisi de fêter cette découverte en tombant dans les pommes.
-
-
