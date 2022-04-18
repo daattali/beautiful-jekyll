@@ -1,241 +1,94 @@
-{% set SUMMARY_LENGTH = 100 %}
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+{% extends "base.html" %}
 
-	Template created following the tutorial here:
-	https://www.thedigitalcatonline.com/blog/2021/03/25/how-to-write-a-pelican-theme-for-your-static-website/
--->
-<html>
-	<head>
-		<title>{{ SITENAME }}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+{% block content %}
+<!-- Banner with last article -->
+{% set last_article = articles|sort(attribute=date)|first %}
+<section id="banner">
+  <div class="content">
+    <header>
+      <h1>{{ last_article.title }}</h1>
+      <p>{{ last_article.subtitle }}</p>
+    </header>
+    <p>
+    {% if last_article.summary is defined %}
+      {{ last_article.summary }}
+    {% else %}
+      {{ last_article.content|truncate(SUMMARY_LENGTH) }}
+    {% endif %}
+    </p>
+    <ul class="actions">
+      <li><a href="{{ last_article.url }}" class="button big">Lire la suite…</a></li>
+    </ul>
+    {# TODO make this part smaller #}
+    <p>
+      Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
+        {{ last_article.date | strftime('%-d %b %Y') }}
+      </time>
+      par <a href="{{ last_article.author.url }}" class="author">
+        <span class="name">{{ last_article.author }}</span>
+        <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
+      </a>
+    </p>
+    {# TODO add tags here #}
+  </div>
 
-		{# template specific js and css #}
-		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
-		<script defer src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
-		<script defer src="{{ SITEURL }}/theme/js/browser.min.js"></script>
-		<script defer src="{{ SITEURL }}/theme/js/breakpoints.min.js"></script>
-		<script defer src="{{ SITEURL }}/theme/js/util.js"></script>
-		<script defer src="{{ SITEURL }}/theme/js/main.js"></script>
+  <!-- Cover image -->
+  <span class="image object">
+    <a href="{{ last_article.url }}"><img src="{{ last_article.url }}{{ last_article.cover.img }}" alt="{{ last_article.cover.comment }}"></a>
+  </span>
+</section>
 
-		{# mathjax specific js. See: https://www.mathjax.org/#gettingstarted #}
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-	</head>
-	<body class="is-preload">
+<!-- Section with all articles -->
+<section>
+  <header class="major">
+    <h2>Tous les articles</h2>
+  </header>
+  <div class="posts">
+  {% for article in articles_page.object_list %}
+    <article>
+      <!-- Cover image -->
+      <a href="{{ article.url }}" class="image"><img src="{{ article.url }}{{ article.cover.img }}" alt="{{ article.cover.comment }}" /></a>
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+      <h3>{{ article.title }}</h3>
+      <p>
+      {% if article.summary is defined %}
+        {{ article.summary }}
+      {% else %}
+        {{ article.content|striptags|truncate(SUMMARY_LENGTH) }}
+      {% endif %}
+      </p>
+      <ul class="actions">
+        <li><a href="{{ article.url }}" class="button">Plus…</a></li>
+      </ul>
+      {# TODO make this part smaller #}
+      <p>
+        Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
+          {{ last_article.date | strftime('%-d %b %Y') }}
+        </time>
+        par <a href="{{ last_article.author.url }}" class="author">
+          <span class="name">{{ last_article.author }}</span>
+          {# TODO use gravatar here #}
+          <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
+        </a>
+      </p>
+      {# TODO add tags here #}
+    </article>
+  {% endfor %}
+  </div>
+  <footer>
+    <ul class="pagination">
+    {% if dates_page.has_previous() %}
+      <li><a href="/{{ dates_previous_page.url }}" class="button">Plus récents</a></li>
+    {% else %}
+      <li><a href="" class="button disabled">Plus récents</a></li>
+    {% endif %}
 
-			<!-- Main -->
-				<div id="main">
-					<div class="inner">
-
-						<!-- Header -->
-							<header id="header">
-								<a href="index.html" class="logo">
-									<strong>{{ SITENAME }}</strong>
-									<small>{{ SITESUBTITLE }}</small>
-								</a>
-								<!-- Social media links -->
-									<ul class="icons">
-									{% for name, icon, link in CONTACTS %}
-										<li><a href="{{ link }}" class="icon brands fa-{{ icon }}"><span class="label">{{ name }}</span></a></li>
-									{% endfor %}
-									</ul>
-							</header>
-
-						<!-- Banner with last article -->
-							{% set last_article = articles|sort(attribute=date)|first %}
-							<section id="banner">
-								<div class="content">
-									<header>
-										<h1>{{ last_article.title }}</h1>
-										<p>{{ last_article.subtitle }}</p>
-									</header>
-									<p>
-									{% if last_article.summary is defined %}
-										{{ last_article.summary }}
-									{% else %}
-										{{ last_article.content|truncate(SUMMARY_LENGTH) }}
-									{% endif %}
-									</p>
-									<ul class="actions">
-										<li><a href="{{ last_article.url }}" class="button big">Lire la suite…</a></li>
-									</ul>
-									{# TODO make this part smaller #}
-									<p>
-										Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
-											{{ last_article.date | strftime('%-d %b %Y') }}
-										</time>
-										par <a href="{{ last_article.author.url }}" class="author">
-											<span class="name">{{ last_article.author }}</span>
-											<img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
-										</a>
-									</p>
-									{# TODO add tags here #}
-								</div>
-
-								<!-- Cover image -->
-								<span class="image object">
-									<a href="{{ last_article.url }}"><img src="{{ last_article.url }}{{ last_article.cover.img }}" alt="{{ last_article.cover.comment }}"></a>
-								</span>
-							</section>
-
-						<!-- Section with all articles -->
-							<section>
-								<header class="major">
-									<h2>Tous les articles</h2>
-								</header>
-								<div class="posts">
-								{% for article in articles_page.object_list %}
-									<article>
-										<!-- Cover image -->
-										<a href="{{ article.url }}" class="image"><img src="{{ article.url }}{{ article.cover.img }}" alt="{{ article.cover.comment }}" /></a>
-
-										<h3>{{ article.title }}</h3>
-										<p>
-										{% if article.summary is defined %}
-											{{ article.summary }}
-										{% else %}
-											{{ article.content|striptags|truncate(SUMMARY_LENGTH) }}
-										{% endif %}
-										</p>
-										<ul class="actions">
-											<li><a href="{{ article.url }}" class="button">Plus…</a></li>
-										</ul>
-										{# TODO make this part smaller #}
-										<p>
-											Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
-												{{ last_article.date | strftime('%-d %b %Y') }}
-											</time>
-											par <a href="{{ last_article.author.url }}" class="author">
-												<span class="name">{{ last_article.author }}</span>
-												{# TODO use gravatar here #}
-												<img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
-											</a>
-										</p>
-										{# TODO add tags here #}
-									</article>
-								{% endfor %}
-								</div>
-								<footer>
-									<ul class="pagination">
-									{% if dates_page.has_previous() %}
-										<li><a href="/{{ dates_previous_page.url }}" class="button">Plus récents</a></li>
-									{% else %}
-										<li><a href="" class="button disabled">Plus récents</a></li>
-									{% endif %}
-
-									{% if articles_page.has_next() %}
-										<li><a href="/{{ dates_next_page.url }}" class="button">Plus anciens</a></li>
-									{% else %}
-										<li><a href="" class="button disabled">Plus anciens</a></li>
-									{% endif %}
-									</ul>
-								</footer>
-							</section>
-
-					</div>
-				</div>
-
-			<!-- Sidebar -->
-				<div id="sidebar">
-					<div class="inner">
-
-						<!-- Search -->
-							<section id="search" class="alt">
-								<form method="post" action="#">
-									<input type="text" name="query" id="query" placeholder="Search" />
-								</form>
-							</section>
-
-						<!-- Menu -->
-							<nav id="menu">
-								<header class="major">
-									<h2>Menu</h2>
-								</header>
-								<ul>
-									<li><a href="index.html">Homepage</a></li>
-									<li><a href="generic.html">Generic</a></li>
-									<li><a href="elements.html">Elements</a></li>
-									<li>
-										<span class="opener">Submenu</span>
-										<ul>
-											<li><a href="#">Lorem Dolor</a></li>
-											<li><a href="#">Ipsum Adipiscing</a></li>
-											<li><a href="#">Tempus Magna</a></li>
-											<li><a href="#">Feugiat Veroeros</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Etiam Dolore</a></li>
-									<li><a href="#">Adipiscing</a></li>
-									<li>
-										<span class="opener">Another Submenu</span>
-										<ul>
-											<li><a href="#">Lorem Dolor</a></li>
-											<li><a href="#">Ipsum Adipiscing</a></li>
-											<li><a href="#">Tempus Magna</a></li>
-											<li><a href="#">Feugiat Veroeros</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Maximus Erat</a></li>
-									<li><a href="#">Sapien Mauris</a></li>
-									<li><a href="#">Amet Lacinia</a></li>
-								</ul>
-							</nav>
-
-						<!-- Section mini post -->
-							{# <section>
-								<header class="major">
-									<h2>Ante interdum</h2>
-								</header>
-								<div class="mini-posts">
-									<article>
-										<a href="#" class="image"><img src="{{ SITEURL}}/theme/images/pic07.jpg" alt="" /></a>
-										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-									</article>
-									<article>
-										<a href="#" class="image"><img src="{{ SITEURL}}/theme/images/pic08.jpg" alt="" /></a>
-										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-									</article>
-									<article>
-										<a href="#" class="image"><img src="{{ SITEURL}}/theme/images/pic09.jpg" alt="" /></a>
-										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-									</article>
-								</div>
-								<ul class="actions">
-									<li><a href="#" class="button">More</a></li>
-								</ul>
-							</section> #}
-
-						<!-- Section contact -->
-							<section>
-								<header class="major">
-									<h2>Get in touch</h2>
-								</header>
-								<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-								<ul class="contact">
-									<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-									<li class="icon solid fa-phone">(000) 000-0000</li>
-									<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-									Nashville, TN 00000-0000</li>
-								</ul>
-							</section>
-
-						<!-- Footer -->
-							<footer id="footer">
-								<p class="copyright">Tout le contenu est sous {{ LICENCE  }}. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-							</footer>
-
-					</div>
-				</div>
-
-		</div>
-
-	</body>
-</html>
+    {% if articles_page.has_next() %}
+      <li><a href="/{{ dates_next_page.url }}" class="button">Plus anciens</a></li>
+    {% else %}
+      <li><a href="" class="button disabled">Plus anciens</a></li>
+    {% endif %}
+    </ul>
+  </footer>
+</section>
+{% endblock %}

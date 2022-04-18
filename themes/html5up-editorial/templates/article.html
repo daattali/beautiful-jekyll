@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block content %}
+<section>
+  <header class="main">
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.subtitle }}</p>
+  </header>
+
+  <span class="image main">
+    <img src="{{ article.cover.img }}" alt="{{ article.cover.comment }}" />
+  </span>
+
+  <p>
+    Publié le
+    <time
+      class="published"
+      datetime="{{ article.date | strftime('%Y-%m-%d') }}"
+    >
+      {{ article.date | strftime('%-d %b %Y') }}
+    </time>
+    par
+    <a href="{{ article.author.url }}" class="author">
+      <span class="name">{{ article.author }}</span>
+      <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
+    </a>
+  </p>
+
+  {{ article.content }}
+</section>
+
+{% endblock %}
