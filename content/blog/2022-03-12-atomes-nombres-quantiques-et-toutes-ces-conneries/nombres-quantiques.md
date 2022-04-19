@@ -275,7 +275,7 @@ Alors comment on fait pour représenter un **merdier** pareil 😳 ?
 
 On va pas se mentir c'est pas facile de représenter un machin gazeux intangible... le mieux qu'on puisse faire c'est représenter la forme de la zone où il est **TRÈS PROBABLE** que l'électron se trouve (et comme il se déplace très vite là-dedans on sait qu'en fait ça va être là qu'il se trouve "en gros").
 
-![Et voilà à quoi ressemble un électron pour n=1 ](/a-pym-s-life/assets/img/oa-1s.png "Et voilà à quoi ressemble un électron pour n=1 "){ width="100%" }
+![Et voilà à quoi ressemble un électron pour n=1 ](oa-1s.png "Et voilà à quoi ressemble un électron pour n=1 "){ width="100%" }
 
 👆 **À droite** la forme en 3d autour du noyau et **à gauche** une représentation de la probabilité de présence de l'électron : on voit qu'en fait l'électron est plus probable proche du noyau (les points sont plus denses)
 
@@ -407,13 +407,13 @@ Certes mais le physicien aime bien quand les paramètres ont un sens physique...
 
 Le cylindre est un exemple de truc avec une direction privilégiée... mais la nature (enfin la résolution exacte des équations) a donné un résultat plus... original ! Jugez par vous-même. Behold the wonderful n=2, ℓ=1 :
 
-![Et voilà à quoi ressemble un électron pour n=1 ](/a-pym-s-life/assets/img/oa-2p.png "Et voilà à quoi ressemble un électron pour n=2 l=1 "){ width="100%" }
+![Et voilà à quoi ressemble un électron pour n=1 ](oa-2p.png "Et voilà à quoi ressemble un électron pour n=2 l=1 "){ width="100%" }
 
 On appelle ça une "altère"... c'est un genre de 8 en 3d. Et comme vous pouvez le voir sur le schéma de gauche : la probabilité est nulle au centre et assez élevée au milieu des 2 lobes.
 
 Et il est toujours horizontal comme ça ? Justement non... on a dit qu'il devait y avoir un axe privilégié (ici horizontal) mais en fait il y a 3 cas possibles :
 
-![Les 3 possibilités pour n=2 l=1](/a-pym-s-life/assets/img/oa-all-2p.png "Les 3 possibilités pour n=2 l=1"){ width="100%" }
+![Les 3 possibilités pour n=2 l=1](oa-all-2p.png "Les 3 possibilités pour n=2 l=1"){ width="100%" }
 
 Soit l'altère est alignée sur l'axe vertical (z) soit sur l'axe de profondeur (y) soit on est aligné sur l'axe de largeur (x). Eh... mais donc on a 3 orbitales différentes... en plus de la bouboule... soit 4 orbitales en tout. Et à deux électrons par orbitales ça fait 8 places 😱😱😱 Ça colle pile-poil aux observations des chimistes !!!!!!
 
@@ -451,7 +451,7 @@ Et pour montrer où sont nos électrons, on a deux façons de les représenter f
 
 1️⃣ on fait des petites cases dans lesquelles on met les électrons sous forme de flèches :
 
-![Exemple pour un atome avec 4 électrons : le béryllium](/a-pym-s-life/assets/img/berylium_couches.jpg "Exemple pour un atome avec 4 électrons : le béryllium")
+![Exemple pour un atome avec 4 électrons : le béryllium](berylium_couches.jpg "Exemple pour un atome avec 4 électrons : le béryllium")
 Mais bon c'est un peu long de noter comme ça…
 
 2️⃣ on se contente de noter le nombre d'électron sur chaque orbitale (en regroupant les orbitales de même mℓ... donc sans séparer 2px 2py et 2pz). Ce qui donne pour le béryllium vu au-dessus :
@@ -476,15 +476,15 @@ Après je pourrais continuer à te faire le niveau 3 puis 4... mais ça servirai
 
 Et si tu te demandes à quoi ça ressemble les orbitales d'après... attention bienvenue dans le monde des gros ballons de forme zarbi. Je vous présente donc 3px, 3py et 3pz :
 
-![3px](/a-pym-s-life/assets/img/3px.jpg){ width="30%" } ![3py](/a-pym-s-life/assets/img/3py.jpg){ width="30%" } ![3pz](/a-pym-s-life/assets/img/3pz.jpg){ width="30%" }
+![3px](3px.jpg){ width="30%" } ![3py](3py.jpg){ width="30%" } ![3pz](3pz.jpg){ width="30%" }
 
 Et maintenant 3dz², 3dxz, 3dyz, 3dxy, 3dx²-y² 👈 oui même les nom deviennent bizarres…
 
-![3dz²](/a-pym-s-life/assets/img/3dz2.jpg){ width="18%" }
-![3dxz](/a-pym-s-life/assets/img/3dxz.jpg){ width="18%" }
-![3dyz](/a-pym-s-life/assets/img/3dyz.jpg){ width="18%" }
-![3dxy](/a-pym-s-life/assets/img/3dxy.jpg){ width="18%" }
-![3dx²-y²](/a-pym-s-life/assets/img/3dx2-y2.jpg){ width="18%" }
+![3dz²](3dz2.jpg){ width="18%" }
+![3dxz](3dxz.jpg){ width="18%" }
+![3dyz](3dyz.jpg){ width="18%" }
+![3dxy](3dxy.jpg){ width="18%" }
+![3dx²-y²](3dx2-y2.jpg){ width="18%" }
 
 Vous vous demandez peut-être pourquoi depuis le début on a des couleurs rouge et bleue sur les orbitales... en fait tant qu'on a qu'un seul atome ça change pas grand-chose... mais quand tu formes des molécules avec 2 atomes, là ça change tout : le rouge ne se combine qu'avec le rouge et le bleu qu'avec le bleu alors que bleu + rouge = du vide (c'est à dire pas de liaison du tout). Bref on s'en fout un peu ici…
 
@@ -515,7 +515,7 @@ Bon voilà maintenant on sait comment sont faites les "_étagères à électrons
 
 Alors certes on a de belles étagères... mais, comme en atteste ~~ma chambre~~ **une chambre d'ado**, il y a clairement plusieurs méthodes pour utiliser une étagère :
 
-![Je suis sûr qu'il y a une étagère quelque part](/a-pym-s-life/assets/img/chambre_ado.jpg){ width="100%" }
+![Je suis sûr qu'il y a une étagère quelque part](chambre_ado.jpg){ width="100%" }
 
 👆 Là techniquement IL Y A un placard et une étagère... quelque part…
 
@@ -525,7 +525,7 @@ Euh mais alors c'est facile ! On remplit dans l'ordre `1s 2s 2p 3s 3p 3d 4s` etc
 
 Nan. Car en fait les énergies des différentes sous-couche des fois il empiète un peu sur le niveau d'au-dessus et ça fout un peu le bordel.
 
-![Voilà ce qui se passe quand tu laisse un crayon à un chimiste, il dessine des niveau d'énergie !](/a-pym-s-life/assets/img/niveaux_d_energie.jpg){ width="100%" }
+![Voilà ce qui se passe quand tu laisse un crayon à un chimiste, il dessine des niveau d'énergie !](niveaux_d_energie.jpg){ width="100%" }
 
 Les chimistes ils ont fait un joli schéma vu qu'ils ont passé 50 ans à mesure toutes leur fucking raies dans tous les sens ! On y voit par exemple que si on veut aller par énergie croissante au début ça marche bien : `1s 2s 2p 3s 3p`... et là c'est le drame 😱 `4s` avant `3d` 😱😱😱
 
@@ -545,7 +545,7 @@ Alors un monsieur - avec un nom atroce à écrire - a trouvé une règle simple 
 
 et ensuite vous allez remplir en faisant des diagonales bas-gauche :
 
-![Diagnolale bas-gauche svp !](/a-pym-s-life/assets/img/regle-klechkowski.jpg){ width="50%" }
+![Diagnolale bas-gauche svp !](regle-klechkowski.jpg){ width="50%" }
 
 Et ça correspond bien à la mesure des chimistes : 4s se remplit avant 3d 🥳
 
@@ -575,13 +575,13 @@ He Be Mg Ca Sr Ba Ra
 
 Bon on pourrait continuer pareil pour les orbitales p... (il n'y en aurait pas pour n=1 par contre car les orbitales p ça commence à n=2) et idem pour les orbitales d et puis même f. Et genre on mettrait ça dans un tableau : une colonne pour les s, 3 colonnes pour les p (qui ont 3 orbitales) 5 colonnes pour les d (car 5 orbitales) et 7 colonnes pour les f (car 7 orbitales)…
 
-![Feng shui ta mère des éléments !](/a-pym-s-life/assets/img/tableau-orbitales.jpg){ width="100%" }
+![Feng shui ta mère des éléments !](tableau-orbitales.jpg){ width="100%" }
 
 👆 Feng shui ta mère des éléments ! C'est comme ça qu'il faudrait ranger ! Bon chaque case correspond à 2 éléments en vrai car on a 2 électrons par orbitale…
 
 Et si on met les noms des éléments là-dedans ça donne quoi ?
 
-![Mais… mais… mais...](/a-pym-s-life/assets/img/tableau-elements.jpg){ width="100%" }
+![Mais… mais… mais...](tableau-elements.jpg){ width="100%" }
 
 ![](https://c.tenor.com/W7-hNE-P_iUAAAAd/afraid-cat.gif){ width="100%" }
 
