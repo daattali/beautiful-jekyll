@@ -1,4 +1,4 @@
-reader: markdown+strikeout+superscript+subscript+tex_math_dollars+link_attributes
+reader: markdown+strikeout+superscript+subscript+tex_math_dollars+link_attributes+bracketed_spans
 writer: html5
 html-math-method:
   method: mathjax

@@ -111,12 +111,10 @@ hydrogène) soit Mach 23.5.
 
 Donc notre goutte pourrait pitet aller plus vite que prévu… donc la masse de «
 rentabilité à être plus gros » (nom pourris) est de 64 000 000 de tonne soit une
-bouboule de 4,5 km de diamètre si je me plante pas (il est tard).
-
-…\\
-…\\
-…
-
+bouboule de 4,5 km de diamètre si je me plante pas (il est tard).\
+…\
+…\
+…\
 … sérieux vous croyez que c’est fini ? Nan car Phil Marchand a su me relancer
 habilement, il a vu la faille : « _Mais imagine juste, que peu importe les
 manières, une goutte d’eau simple, puisse être expulsée, (attraction terrestre
@@ -127,11 +125,9 @@ littéralement vider l’espace de trente minutes un océan entier, et envoyer t
 la masse d’eau à part sur les autres continents ou îles avec une tel force que
 les plus grandes montagnes terrestres seraient submergées, et l’eau prendrait
 des années a s’évacuer de toutes parts, (peu être une dizaine d’années minimum)_
-»
-
-…\\
-…
-
+»\
+…\
+…\
 Me lancer moi sur un scénario d’apocalypse ? Mon rêve ! J’ai dû mater sur #TMC
 et #NRJ12 tous les documentaire alarmistes et tous les téléfilms ricains et
 allemands sur le sujet. J’y peux rien, y en a, c’est la coke, moi c’est les
@@ -150,8 +146,11 @@ supposer qu’elle garde sa forme de goutte…
 Masse d’une goutte typique (2 mm de diamètre) ~4 g.
 
 OK. Bon maintenant mettons qu’elle soit à 99 % de la vitesse la lumière soit
-296 794 533 m/s son énergie cinétique semble donc être $$\frac{1}{2}mv^2$$ ce qui
-donnerait naïvement 1,761739896×10¹⁴ J euh pas super facile de voir comme ça à
+296 794 533 m/s son énergie cinétique semble donc être :
+
+$$E_c = \frac{1}{2}mv^2$$
+
+ce qui donnerait naïvement 1,761739896×10¹⁴ J euh pas super facile de voir comme ça à
 vue de nez si je peux faire cuire un œuf ou foutre une montagne qui me bouche la
 vue sur la mer avec ça… convertissons le machin dans une unité plus parlante !
 Si quelqu’un dit “calorie” je lui refais la gueule au Karcher supraluminique
@@ -187,7 +186,11 @@ DÉJÀ atteint notre vitesse !
 
 C’est bien vous suivez… mais pas assez ! Car qui dit augmentation de la masse
 dit augmentation de l’énergie cinétique. Bon OK alors c’est quoi notre nouvelle
-masse ? $$m = \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}} = 201\ g$$ soit 50x plus qu’avant. Mazette !
+masse ?
+
+$$m = \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}} = 201\ g$$
+
+soit 50x plus qu’avant. Mazette !
 
 Donc là on a une vraie évaluation de notre Énergie finale : 2 124 620 tn soit
 2.1 Mtn.
@@ -212,10 +215,14 @@ peut faire un concours de qui c’est qui a le plus gros kiki avec notre gougout
 supraluminique ? Calculons, là c’est facile il n’y a pas de variation de masse…
 enfin mathématiquement si mais totalement négligeable… aller faisons le calcul :
 1 millionième de gramme. OK on peut légitimement négliger. L’énergie cinétique
-c’est toujours pareil : $$\frac{1}{2}mv^2$$ donc ici 2,048×10¹⁸ J. Militarisons le
-machin pour se rendre compte : 491 520 000 tn…
+c’est toujours pareil :
 
-**491 méga-tonnes de TNT**{: style="font-size: 3em" }
+$$E_c = \frac{1}{2}mv^2$$
+
+donc ici $2,048\times10^{18}$ J. Militarisons le machin pour se rendre compte :
+491 520 000 tn…
+
+[**491 méga-tonnes de TNT**]{ style="font-size: 3em" }
 
 ![](https://media.giphy.com/media/aijty3bkVmxR6/giphy.gif){ width="100%" }
 
