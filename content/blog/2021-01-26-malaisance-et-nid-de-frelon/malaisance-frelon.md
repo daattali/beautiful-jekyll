@@ -33,8 +33,8 @@ Elle s’était bien bien fait piquée… et on était les seules personnes à p
 
 Donc j’envoie la pote un peu défoncée chercher l’équipe de secouriste du festoche et moi je me retrouve avec la nana…
 
-« Tu t’es fait piquer ou ?\\
-— Euh…\\
+« Tu t’es fait piquer ou ?\
+— Euh…\
 — Comment ça “euh” ? Tu t’es fait… piquée… ou… ou… ? »
 
 Mon regard se porte sur ses jambes… ses jambes nue… car elle était en short… un très très court short. Appelons ça un poom poom short quoi ! Techniquement une poom poom salopette d’ailleurs. Mais passons…
@@ -55,7 +55,7 @@ Ma pote défoncée revient et me rassure vachement avec « _les secouristes sont
 
 Ah oui j’oubliais un détail… la nana était vraiment un très très petit gabarit… 1 m 65 pour… même pas 50 kg.
 
-Frelon asiatique + nana de moins de 50 kg = :anguished: :anguished: :anguished:
+Frelon asiatique + nana de moins de 50 kg = 😧 😧 😧
 
 Et je suis le seul pas bourré mais heureusement avec une formation aux premiers secours… tout va bien se passer…
 
@@ -73,27 +73,27 @@ Normalement dans un cas comme ça tu dois :
 2. la mettre en sécurité en retirant le dard si possible et mettre un coup d’aspivenin
 3. maintenir la personne éveillée et surveiller son rythme cardiaque
 
-Le :one: après l’annonce de pas de secouristes et pas de pompier avait du plomb dans l’aile… mais je peux être assez rassurant quand je veux donc j’ai géré.
+Le 1️⃣ après l’annonce de pas de secouristes et pas de pompier avait du plomb dans l’aile… mais je peux être assez rassurant quand je veux donc j’ai géré.
 
-Le :two: partait plutôt pas mal : j’avais un aspivenin… mais l’accès à la piqure était, disons, ultra « mal placée »…
+Le 2️⃣ partait plutôt pas mal : j’avais un aspivenin… mais l’accès à la piqure était, disons, ultra « mal placée »…
 
-« Il va falloir que tu enlèves ton short :point_left: basiquement je connaissais cette nana depuis… 10 min j’avais même pas trop parlé avec elle dans la semaine #malaisanceBonjour\\
-— Euh c’est une salopette en fait.\\
-— Oui et aloooooo… ? Oh putain… :flushed: »
+« Il va falloir que tu enlèves ton short 👈 basiquement je connaissais cette nana depuis… 10 min j’avais même pas trop parlé avec elle dans la semaine #malaisanceBonjour\
+— Euh c’est une salopette en fait.\
+— Oui et aloooooo… ? Oh putain… 😳 »
 
 #malaisanceLeRetourDeLaVengeance
 
 « Il va falloir que tu ~~enlèves ton short~~ te foute à poil basiquement. »
 
-Elle commence donc à enlever sa salopette-short (Merci seigneur elle avait au moins une brassière :pray:).
+Elle commence donc à enlever sa salopette-short (Merci seigneur elle avait au moins une brassière 🙏).
 
-Donc là elle est basiquement en culotte/brassière sur un banc dans une cuisine avec personne qu’elle connait pas bien… et elle souffre le martyre à cause d’une piqûre de frelon… mais dites-moi, c’est pas un peu stressant comme situation ??? Ben si… donc tu peux maintenant oublier le :one: :point_right: elle flippe et le venin commence à se répandre. Et quand elle finit d’enlever son short… elle tombe dans les fucking pommes #misère
+Donc là elle est basiquement en culotte/brassière sur un banc dans une cuisine avec personne qu’elle connait pas bien… et elle souffre le martyre à cause d’une piqûre de frelon… mais dites-moi, c’est pas un peu stressant comme situation ??? Ben si… donc tu peux maintenant oublier le 1️⃣ 👉 elle flippe et le venin commence à se répandre. Et quand elle finit d’enlever son short… elle tombe dans les fucking pommes #misère
 
 J’avais l’impression d’être John MacLane… rien n’allait bien
 
 ![](https://media.giphy.com/media/CxwvAGYoBTGYU/giphy.gif){ width="100%" }
 
-Bon bah là, je me jette sur elle, car elle tombait, littéralement, dans les pommes :point_right: je la rattrape, la prend un peu dans mes bras et lui tapote la joue pour qu’elle reste réveillée…
+Bon bah là, je me jette sur elle, car elle tombait, littéralement, dans les pommes 👉 je la rattrape, la prend un peu dans mes bras et lui tapote la joue pour qu’elle reste réveillée…
 
 Et là l’orga du festival rentre dans la pièce… au courant de rien… il venait chercher du matos élec' stocké ici. Visualisons la scène : un mec qui tient une nana dans les pommes en culotte bien à l’écart du festival…
 
@@ -105,24 +105,24 @@ Voilà
 
 (détail : j’avais envoyé les filles, Cécile et ma pote, chercher des secours et accessoirement le manuel de l’aspivenin)
 
-~~« C’est pas ce que vous croyez ! »~~ :point_left: je suis pas con j’ai vu assez de série américaine pour savoir que cette phrase est l’équivalent verbal d’une 2CV dans Fast and Furious !
+~~« C’est pas ce que vous croyez ! »~~ 👈 je suis pas con j’ai vu assez de série américaine pour savoir que cette phrase est l’équivalent verbal d’une 2CV dans Fast and Furious !
 
 J’ai donc opté pour le purement factuel :
 
-— Piqûre de frelon là :point_right: je pointe :bikini:\\
-— Z'avez vu son gabarit ?\\
-— Elle est en train de faire un malaise vagal\\
+— Piqûre de frelon là 👉 je pointe 👙\
+— Z'avez vu son gabarit ?\
+— Elle est en train de faire un malaise vagal\
 — Filez-moi la pince à sucre et vite !
 
 … la pince à sucre, c’était pour attraper le frelon car en fait la bestiole était quasi entière attachée à sa jambe…
 
-Et malaise vagal c’est ce qui se passe quand une grosse quantité de venin passe dans le cœur d’un coup :point_right: chute ultra brutale de pression :point_right: malaise (youpi :tada:)
+Et malaise vagal c’est ce qui se passe quand une grosse quantité de venin passe dans le cœur d’un coup 👉 chute ultra brutale de pression 👉 malaise (youpi 🎉)
 
-Le mec a bien évalué la situation, il m’a passé la pince en voyant la bestiole… il a aussi checké le pouls de la nana et essayé de lui demander comment ça allait. Elle a dit « _PYM est là, ça va aller_ » :point_left: Bordel mais d’où venait cette assurance :disappointed_relieved: ???
+Le mec a bien évalué la situation, il m’a passé la pince en voyant la bestiole… il a aussi checké le pouls de la nana et essayé de lui demander comment ça allait. Elle a dit « _PYM est là, ça va aller_ » 👈 Bordel mais d’où venait cette assurance 😥 ???
 
 Mais la situation le mettait pas à l’aise, n’écoutant que son courage à deux mains, il a donc décidé… d’aller chercher les secours !
 
-« _Me laisser pas tout seul putain :sob:_ »
+« _Me laisser pas tout seul putain 😭_ »
 
 ![](https://media.giphy.com/media/c5Y9iCOE8VEBO/giphy.gif){ width="100%" }
 
@@ -130,14 +130,14 @@ Mais la situation le mettait pas à l’aise, n’écoutant que son courage à d
 
 Je ne pouvais pas l’allonger (piqure en bas ça aurait fait remonter le venin au cœur) donc je l’ai laissé assise en la tenant d’une main (en essayant de ne pas l’attraper par les boobs… ce qui était plus complexe que prévu) et de l’autre je devais essayer de vérifier si le dard était parti avec le reste du frelon et voir comment mettre un aspivenin premier prix dans une des zones les moins accessibles du corps humain
 
-Donc je lui lève la cuisse, j’ai une main au-dessus de sa brassière pour pas qu’elle tombe et j’ai la main en train d’écarter la peau du pli intérieure de sa cuisse…\\
-…\\
-…\\
-… et bordel comme Dieu ne m’aime pas…\\
-…\\
-Là\\
-Maintenant\\
-…\\
+Donc je lui lève la cuisse, j’ai une main au-dessus de sa brassière pour pas qu’elle tombe et j’ai la main en train d’écarter la peau du pli intérieure de sa cuisse…\
+…\
+…\
+… et bordel comme Dieu ne m’aime pas…\
+…\
+Là\
+Maintenant\
+…\
 **ELLE SE RÉVEILLE !!**
 
 … et évidemment quand tu sors d’un malaise tu sais trop bien ce qui t’est arrivé… et tu es trop clair dans ta tête… oh wait…
@@ -148,13 +148,13 @@ Alors par contre rien de ce que tu peux dire ne peux vraiment t’éviter une cl
 
 Mais apparemment après la deuxième claque et au vu de mon air assez sérieux/calme elle s’est dit que quelque chose allait pas.
 
-« Tu t’es fait piquer par un frelon… là :point_right: :peach: »
+« Tu t’es fait piquer par un frelon… là 👉 🍑 »
 
 Et j’avoue que j’ai adoré sa réponse :
 
 « OK alors je suis méga méga désolé… vu là où on en est, il est peut-être temps qu’on se présente vraiment : moi c’est Mathilde, toi c’est… PYM ? c’est ça ? »
 
-\#itsmylife \#pymFactor
+#itsmylife #pymFactor
 
 ## Réflexions et digressions after the facts
 
@@ -170,20 +170,20 @@ Déjà qu’au moment de checker d’état de sa piqure je devais me retrouver �
 
 Quand les pompiers ont fini par arriver (1h après l’incident), en fait ils ont eu hyper peur car vu son poids elle risquait vraiment l’arrêt cardiaque… (ce que je savais très bien… d’où ma volonté de la protéger au max… même j’étais pas « à l’aise » avec la situation).
 
-Ah mais en plus elle est ultra timide et réservée. Bon, au moins, elle a profité de l’expérience… le lendemain à la soirée elle a trouvé le courage d’embrasser un mec pour la première fois… ce qu’elle m’a dit… en me remerciant de lui avoir donné du courage… #waitWhat :point_left: oui forcément après elle me parlait de tout…
+Ah mais en plus elle est ultra timide et réservée. Bon, au moins, elle a profité de l’expérience… le lendemain à la soirée elle a trouvé le courage d’embrasser un mec pour la première fois… ce qu’elle m’a dit… en me remerciant de lui avoir donné du courage… #waitWhat 👈 oui forcément après elle me parlait de tout…
 
 Rétrospectivement je me suis dit « Rhoo nan mais en plus la nana n’avait littéralement pas d’expérience “intime” avant la scène mais… mais… mais what the fuck ?! ». J’ai imaginé son niveau de gêne à elle et je me dis franchement que moi c’était rien
 
-Apparemment elle m’a dit que ça avait pas été traumatisant, car j’avais été calme et sympa et pas ambigu du tout :point_left: mais qui voudrait être ambigu pendant un truc comme ça ???! Mais d’un coup les 2 baffes me semblaient plus rien du tout.
+Apparemment elle m’a dit que ça avait pas été traumatisant, car j’avais été calme et sympa et pas ambigu du tout 👈 mais qui voudrait être ambigu pendant un truc comme ça ???! Mais d’un coup les 2 baffes me semblaient plus rien du tout.
 
-Et aussi elle a gardé une petite cicatrice… et elle m’a dit une fois qu’elle pouvait pas s’empêcher de raconter l’histoire quand un mec remarquait cette cicatrice :point_left: ce jour-là j’ai donc appris qu’une bonne partie des mecs avec qui elle avait couché avait entendu parler de moi… C’est hyper bizarre comme sensation.
+Et aussi elle a gardé une petite cicatrice… et elle m’a dit une fois qu’elle pouvait pas s’empêcher de raconter l’histoire quand un mec remarquait cette cicatrice 👈 ce jour-là j’ai donc appris qu’une bonne partie des mecs avec qui elle avait couché avait entendu parler de moi… C’est hyper bizarre comme sensation.
 
 J’imagine la tête du mec :
 
-« oh chérie… tu as une petite cicatrice là… hum…\\
+« oh chérie… tu as une petite cicatrice là… hum…\
 — Ah ouais, remonte d’un étage, il faut que je te raconte ! »
 
-\#wtf
+#wtf
 
 **My life is a movie with no director.**
 
