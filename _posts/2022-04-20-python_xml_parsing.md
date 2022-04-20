@@ -1,7 +1,7 @@
 ---
 layout: post
-title: xml
-subtitle: python library-xml
+title: python library : xml.etree.ElementTree
+subtitle: XML 파싱 및 수정을 위한 파이썬 내장 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
@@ -143,9 +143,13 @@ https://sjh836.tistory.com/118?category=687142
 #### *XML 구성요소
 (1) XML element   
 element는 아래처럼 시작과 종료 태그로 한쌍이 되어야 함.  
+
+
 <태그명>요소내용</태그명>    
 요소내용은 PCDATA(Parsed Character DATA)라고 함.   
 데이터가 비어있는 경우 <태그명/>으로 사용가능   
+
+
 (2) XML Attribute   
 태그 내에 인라인으로 정보나 데이터를 표현하는 것.  
 <!-- 태그 표현 --> <product> <id>50</id> <name>samsung</name> <category>computer</category> <price>1500000</price> </product> <!-- 속성 표현 --> <product id="50" name="samsung" category="computer" price="1500000"> </product>

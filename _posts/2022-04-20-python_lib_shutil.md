@@ -1,12 +1,14 @@
 ---
 layout: post
-title: shutil
-subtitle: python library-shutil
+title: python library : shutil
+subtitle: 파일에 대한 고수준 연산을 지원하는 내장 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [python library, shutil]
 ---
+shutil 라이브러리는 파일 및 파일들에 대한 고수준 연산(이동,삭제,복사 등)을 지원한다.
+
 ## 1.모듈 설치
 ```
 import shutil
