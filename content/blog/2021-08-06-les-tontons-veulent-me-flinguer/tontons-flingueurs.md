@@ -41,7 +41,7 @@ Je décide donc de prendre la grande avenue de France à pied vu que les transpo
 
 Je m'attendais bien à voir deux ou trois mecs se balader avec une 86 dans une main et l'autre occuper à attraper leur entrejambe en gueulant "mort aux flics" (oui je reste dans les classiques). Mais nan. Rien. La rue est vide comme celle d'un western spaghetti avant un duel.
 
-**Personne normale** : hmmm c'est louche... </br>
+**Personne normale** : hmmm c'est louche...\
 **Moi** : Ah cool je serai rentré plus tôt
 
 j'ai toute l'avenue à traverser, il n'y a personne, pas de bagnole rien alors je marche au milieu tranquillou... et là, je vois les nuages de lacrymo (poétiques, je le rappelle) se lever devant moi... et là je remarque qu'ils cachaient en fait une compagnie entière de CRS qui barraient entièrement l'avenue.
@@ -50,15 +50,9 @@ J'ajouterais bien qu'ils avaient l'air patibulaire... mais apparemment en "armur
 
 ![](https://c.tenor.com/XthPyuhvGD0AAAAC/everything-proceeding.gif){ width="100%" }
 
-Moi je suis assez simple je #stickToThePlan quelque soit les circonstances.
+Moi je suis assez simple, je #stickToThePlan quelque soit les circonstances. J'aurais fait un excellent lemming. Je continue donc à m'approcher et j'entends « _Merde ya un leader qui s'approche_ ».
 
-J'aurais fait un excellent lemming
-
-Je continue à m'approcher et j'entends "Merde ya un leader qui s'approche"
-
-???
-
-What the...
+??? 😶 What the...
 
 Là un gradé sort du rend et s'adresse à moi avec un megaphone, outil profondément inutile vu la distance... j'avais réussi à entendre les loulous discuter entre eux : « _Reculer ou approchez vous les mains sur la tête_ »
 
@@ -80,8 +74,8 @@ Et là tout s'emballe très très vite. Déjà les gars m'encercle... enfin pas 
 
 Petite note : j'ai fait plein de manif et avec ma veine forcément je me suis fait arrêter, taper (par les force de l'ordre, des extrémiste d'un bord ou l'autre) et fouiller plein de fois... littéralement je n'est jamais vu le truc se passer comme ça. Généralement on te fout par terre, on te fouille rarement tout de suite et on pose pas des masses de questions... là j'étais tout décontenancé.
 
-« _Z'avez des revendications ?_ » </br>
-« _Vous êtes avec qui ?_ » </br>
+« _Z'avez des revendications ?_ »\
+« _Vous êtes avec qui ?_ »\
 « _Avant de vous fouiller, avez vous des objets dangereux dans vos poches ? Couteaux ? Poinçon ? Ou des substance illicites ?_ »
 
 Bon ok la dernière question m'a un peu rassurée celle-là je l'ai eu mille fois ! Ça tient à peu de chose la confiance en soi !
@@ -104,7 +98,7 @@ Quand on t'appelle "monsieur" et ben tu obéis. Quand on point une vingtaine de 
 
 \<La scène qui suit est authentique et restera la plus débile référence cinématographique de l'histoire\>
 
-La réponse du flic : « _Mais c'est quoi ça ?_ »</br>
+La réponse du flic : « _Mais c'est quoi ça ?_ »\
 Moi : « _Je vous préviens qu'on a la puissance de feu d'un croiseur, et des flingues de concours._ »
 Le chef des CRS (le gars du megaphone) : « _Si ces messieurs veulent bien me les confier..._ »
 
@@ -112,7 +106,7 @@ Le chef des CRS (le gars du megaphone) : « _Si ces messieurs veulent bien me le
 
 C'est à ce moment précis qu'une bonne vingtaine de CRS a littéralement éclaté de rire (et les flics derrière en pouvaient plus).
 
-La tension est retombée. Les gars ont quand même fini leur fouille corpo (ça doit être le réglement je suppose). Et pendant ce temps ils ont reçu l'ordre de rentrer. Donc le temps que mon affaire ce termine ils était en train de remballer.
+La tension est retombée. Les gars ont quand même fini leur fouille corpo (ça doit être le réglement je suppose). Et pendant ce temps ils ont reçu l'ordre de rentrer. Donc le temps que mon affaire ce termine ils étaient en train de remballer.
 
 ## Épilogue
 
