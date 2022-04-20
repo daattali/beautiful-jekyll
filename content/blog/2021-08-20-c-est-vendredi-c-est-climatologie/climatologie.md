@@ -36,10 +36,10 @@ Modèle "un poil" simplifié de la Terre…?
 
 OK, on va dire que la Terre est sphérique (_c'est pas tout à fait vrai elle est aplatie aux pôles_), on va dire aussi que son axe de rotation n'est pas incliné (_alors qu'il l'est de 23,45°, c'est pas rien !_), bon et on va même carrément négliger totalement la rotation de la terre pour commencer (_pour être exact on va la moyenner et voir ce qui se passe sur le long terme uniquement_).
 
-« _Quoi encore ?_ \\
-— _Ça serait encore plus simple si la Terre était plate…?!_ \\
-— _Dehors le platiste ! Tu sors !_ \\
-— _…_ \\
+« _Quoi encore ?_ \
+— _Ça serait encore plus simple si la Terre était plate…?!_ \
+— _Dehors le platiste ! Tu sors !_ \
+— _…_ \
 — _Nan, ça serait pas plus simple. En physique, on aime bien les trucs ronds… ça a tout pleins de symétries qui facilitent tous les calculs… et ça permet de se la péter avec des sinus et des cosinus partout !_ #trigoÉlitisme »
 
 Donc, notre planète ronde qui tourne pas elle se chauffe comment ?
@@ -66,22 +66,22 @@ Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses
 
 …ah un peu de contradiction, c'est bien ça la contradiction ! Oui mon bon Donald que veux-tu ?
 
-« _STOP ! Moi, je pense qu'on se prend la tête : s’il fait plus froid au pôle, c'est juste parce qu'il est plus loin du soleil que l'équateur du soleil !_ \\
-— _Ah oui…_ \\
-— _Et quand je teste avec la lampe, je vois bien que, plus je suis loin, moins ma main est chaude !_ \\
-— _Certes mon cher palmipède… certes…_ \\
-— _Ah ah ! Je le savais !_ \\
-— _Sauf que nan… déjà ta lampe elle est toute petite et proche donc ses rayons s'écartent les uns des autres (ils ne sont pas parallèles) donc à la place d'un tube tu as un cône et ça fait que l'énergie "s'étale avec la distance" (en `R²` si tu veux tout savoir)._ \\
-— _Et c'est pas le cas avec le Soleil peut-être ?!_ \\
-— _Si mais sur des distances démentiellement grandes… genre de l'ordre de la distance entre l'orbite de la Terre et l'orbite de Mars : 78 millions de km… et la différence entre l'équateur et le pôle en termes de distance parcourue par la lumière du soleil c'est le rayon de la Terre : 6 371 km c'est-à-dire en gros 10 000 fois moins. Si la différence équateur/pôle était dû à ça, elle serait elle aussi ridicule en termes de température._ \\
-— _Ah merde… ça semblait facile avec la lampe…_ \\
+« _STOP ! Moi, je pense qu'on se prend la tête : s’il fait plus froid au pôle, c'est juste parce qu'il est plus loin du soleil que l'équateur du soleil !_ \
+— _Ah oui…_ \
+— _Et quand je teste avec la lampe, je vois bien que, plus je suis loin, moins ma main est chaude !_ \
+— _Certes mon cher palmipède… certes…_ \
+— _Ah ah ! Je le savais !_ \
+— _Sauf que nan… déjà ta lampe elle est toute petite et proche donc ses rayons s'écartent les uns des autres (ils ne sont pas parallèles) donc à la place d'un tube tu as un cône et ça fait que l'énergie "s'étale avec la distance" (en `R²` si tu veux tout savoir)._ \
+— _Et c'est pas le cas avec le Soleil peut-être ?!_ \
+— _Si mais sur des distances démentiellement grandes… genre de l'ordre de la distance entre l'orbite de la Terre et l'orbite de Mars : 78 millions de km… et la différence entre l'équateur et le pôle en termes de distance parcourue par la lumière du soleil c'est le rayon de la Terre : 6 371 km c'est-à-dire en gros 10 000 fois moins. Si la différence équateur/pôle était dû à ça, elle serait elle aussi ridicule en termes de température._ \
+— _Ah merde… ça semblait facile avec la lampe…_ \
 — _Sorry Donald._ »
 
 C'est bien l'inclinaison qui fait la différence de température épicétou !
 
-Alors si la Terre ne tournait pas sur son axe, ça serait vraiment la merde car on aurait une face cramée et une face congelée (comme c'est le cas sur Mercure). Heureusement, nous, on a une planète qui tourne bien comme il faut comme un bon kebab : le rayonnement solaire se répartit tout bien sur tout le tour. Donc tout l'équateur est chaud et tout le tour des pôles est bien froid (entre les deux c'est ni glacé ni brûlant). \\
-… \\
-… \\
+Alors si la Terre ne tournait pas sur son axe, ça serait vraiment la merde car on aurait une face cramée et une face congelée (comme c'est le cas sur Mercure). Heureusement, nous, on a une planète qui tourne bien comme il faut comme un bon kebab : le rayonnement solaire se répartit tout bien sur tout le tour. Donc tout l'équateur est chaud et tout le tour des pôles est bien froid (entre les deux c'est ni glacé ni brûlant). \
+… \
+… \
 Bon bah voilà le climat c'est facile : il fait chaud autour et froid aux pôles !
 
 Alors si on n'avait pas d'atmosphère ça serait vrai…[^ete]: Ça se remarque bien l'été… enfin quand on a pas [un été tout pourri… ☔️](https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/pourquoi-l-ete-2021-est-il-si-pourri-3-minutes-pour-comprendre-2203537.html)
@@ -119,9 +119,9 @@ Sur Terre c'est pareil :
 - équateur 👉 chaud 👉 surpression
 - pôle 👉 froid 👉 sous-pression
 
-Conclusion : il y a du vent de l'équateur vers les pôles ! Tout le temps. \\
-…\\
-…\\
+Conclusion : il y a du vent de l'équateur vers les pôles ! Tout le temps. \
+…\
+…\
 Ah, on m'informe dans l'oreillette que nan c'est pas le cas : il n'y a pas un vent permanent sud-nord dans l'hémisphère nord et pas de vent permanent nord-sud dans l'hémisphère sud… Damned !
 
 Bah faut dire que mon raisonnement avait un gros défaut : si on suit mon raisonnement très rapidement, il n'y a plus d'air à l'équateur ! Tout serait aspiré vers les pôles ! Alors quoi ? Eh ben on a réfléchi en 2D alors que la vraie vie c'est en 3D : l'atmosphère ça a de la hauteur ma bonne dame !Ça change quoi ? Bah déjà l'air chaud comme ça se dilate… c'est plus léger que l'air froid (car moins dense) donc il a tendance à monter et l'air froid à descendre #frèreMontgolfier
@@ -154,17 +154,17 @@ Exactement de manière similaire, le vent au sol issu des pôles ne continue pas
 
 L'air (chaud en surpression) remonte et repart vers le pôle (froid en sous-pression).
 
-Ça forme donc ce qu'on appelle une "cellule" 🔁 : un vent qui tourne en continu : \\
-⬇️ descend au pôle \\
-➡️ va vers l'équateur au raz du sol \\
-⬆️ monte au niveau du front polaire \\
+Ça forme donc ce qu'on appelle une "cellule" 🔁 : un vent qui tourne en continu : \
+⬇️ descend au pôle \
+➡️ va vers l'équateur au raz du sol \
+⬆️ monte au niveau du front polaire \
 ⬅️ retourne vers le pôle en altitude
 
-On a aussi une cellule 🔁 de chaque côté de l'équateur : \\
-⬆️ monte au niveau de l'équateur \\
-⬅️ va vers le pôle en altitude \\
-⬇️ descend à la latitude des chevaux 🐎 \\
-➡️ retourne vers l'équateur au raz du sol \\
+On a aussi une cellule 🔁 de chaque côté de l'équateur : \
+⬆️ monte au niveau de l'équateur \
+⬅️ va vers le pôle en altitude \
+⬇️ descend à la latitude des chevaux 🐎 \
+➡️ retourne vers l'équateur au raz du sol \
 
 Mais entre les deux cellules, il se passe quoi ? Ça correspond à la région tempérée du globe… c'est un peu important !
 
@@ -283,12 +283,12 @@ Et là bordel : la balle tourne toute seule !!!!
 Remarquez que la caméra est dans le manège, elle bouge avec tout le monde… mais si on avait une caméra à l'extérieur du manège, eh ben là on verrait… une belle ligne droite 😱 Ce qui nous donne l'impression que la balle "tourne" c'est qu'elle va tout droit et que NOUS, on tourne !
 
 ![This file is licensed under the Creative CommonsAttribution-Share Alike 3.0 Unported license.](https://upload.wikimedia.org/wikipedia/commons/b/b6/Corioliskraftanimation.gif){ width="100%" }
-👆 En haut, la balle vue de l'extérieur immobile \\
+👆 En haut, la balle vue de l'extérieur immobile \
 En bas, la même balle vue depuis le disque qui tourne
 
-« _Bordel, c'est magique !_ \\
-— _Non, c'est scientifique !_ \\
-— _Pardon_ \\
+« _Bordel, c'est magique !_ \
+— _Non, c'est scientifique !_ \
+— _Pardon_ \
 — _Y'a pas de mal_ »
 
 Donc dès qu'on est sur un truc qui tourne (et où qu'on soit dessus), il faut ajouter une force de Coriolis !
@@ -333,7 +333,7 @@ Et pourquoi seuls les tourbillons des dépressions font de la merde ? Bah la bas
 Re-voyons notre schéma de tout à l'heure, il va maintenant prendre tout son sens :
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Atmospheric_circulation-fr.svg/1024px-Atmospheric_circulation-fr.svg.png){ width="100%" }
-👆Oh les vent sont tous orientés comme il faut !!! \\
+👆Oh les vent sont tous orientés comme il faut !!! \
 👆Et je vois même les zones où il y a des anticyclones (A) et des dépressions (D)
 
 Or on vient de voir que les anticyclones sont plutôt secs et les dépressions humides (par effet "aspirateur à humidité"). Donc, on peut en déduire : où il va pleuvoir et où il va faire sec :
@@ -372,7 +372,7 @@ Ensuite les océans c'est de l'eau !
 
 Et l'eau c'est un machin un peu bizarre physico-chimiquement. Mais une seule de ses particularités nous intéresse ici. Voyons donc les particularités de l'eau :
 
-1️⃣ **L'eau est un excellent solvant polaire** (elle dissout bien tout ce qui a une charge électrique, on appelle ça les composés ioniques) : le sel par exemple de formule `NaCl` va se dissoudre en ions `Na+` et `Cl-` et dans l'eau ça restera très stable. Essayez juste une fois de dissoudre du sel dans l'huile ça sera la fête du fail.
+1️⃣ **L'eau est un excellent solvant polaire** (elle dissout bien tout ce qui a une charge électrique, on appelle ça les composés ioniques) : le sel par exemple de formule $NaCl$ va se dissoudre en ions $Na^+$ et $Cl^-$ et dans l'eau ça restera très stable. Essayez juste une fois de dissoudre du sel dans l'huile ça sera la fête du fail.
 
 Mais bon pour le climat on s'en tamponne. Ça fait juste que les océans sont salés…
 
@@ -404,7 +404,7 @@ On retrouve le même comportement pour certains matériaux solides : la brique o
 
 Pour info : on mesure l'inertie thermique d'un truc grâce à un chiffre : la capacité thermique massique. Ça se mesure en Joule par Kelvin par kilogramme. Voilà.
 
-Et c'est utile pour le climat ça (l'inertie thermique de l'eau, pas le fait qu'elle se mesure en `J/K/kg`) ? Oui, énormément !
+Et c'est utile pour le climat ça (l'inertie thermique de l'eau, pas le fait qu'elle se mesure en $J.K^{-1}.kg^{-1}$) ? Oui, énormément !
 
 ![Du calme dans la salle !](https://c.tenor.com/Drz_x_HhZXkAAAAC/yeah-baby-oh-yeah-baby.gif){ width="100%" }
 
@@ -428,8 +428,8 @@ Et c'est quoi le rapport avec les océans ???
 
 Eh ben, sans océans, on aurait des saisons bien marquées, propres et tout. Mais quand on est près d'une grosse masse d'eau (l'océan Atlantique par exemple)… eh ben l'eau avec son inertie thermique, elle va tout adoucir :
 
-- **l'été arrive**, il devrait faire méga chaud sa race… ah mais nan l'océan lui est encore froid car il met du temps à changer de température donc l'été est chaud mais pas trop
-- **l'hiver arrive**, on devrait se prendre tes tonnes de neige dans la gueule… sauf que nan, l'océan lui est resté chaud et il va adoucir l'hiver qui se retrouvera souvent à même pas être assez froid pour avoir de la neige
+- **l'été arrive**, il devrait faire méga chaud sa race… ah mais nan, l'océan, lui, est encore froid car il met du temps à changer de température donc l'été est chaud mais pas trop.
+- **l'hiver arrive**, on devrait se prendre tes tonnes de neige dans la gueule… sauf que nan, l'océan, lui, est resté chaud et il va adoucir l'hiver qui se retrouvera rarement assez froid pour avoir de la neige.
 
 On appelle ça un climat océanique (proche d'un océan) par opposition à un climat continental (loin d'un océan).
 
@@ -441,7 +441,7 @@ C'est pour ça qu'à Berlin ou pire a Moscou, l'hiver, on se les pèle grave et 
 
 Nan mais c'est vrai quoi ! L'eau, ça mouille : à proximité d'un océan, les dépressions peuvent facilement se charger d'humidité et donc il pleut plus (☔️Brest☔️ on pense à toi).
 
-C'est ultra vrai au niveau des tropiques (juste aussi de la latitude des chevaux et ses anticyclones) il y fait très chaud et donc des dépressions peuvent s'y former.
+C'est ultra vrai au niveau des tropiques (juste au-dessus de la latitude des chevaux et ses anticyclones) il y fait très chaud et donc des dépressions peuvent s'y former.
 
 Si c'est au-dessus d'un désert… ben on s'en tamponne… mais au-dessus d'un océan alors là c'est la merde : ça va siphonner des milliers de tonnes d'eau et former des cyclones (appelé ouragan dans l'Atlantique et typhon dans le Pacifique parce que… ben les géographes font chier !).
 
