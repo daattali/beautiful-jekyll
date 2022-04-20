@@ -1,6 +1,6 @@
 ---
 layout: post
-title: behavior 예측 논문 리뷰 1 (feat. EfficientNet-biLSTM)
+title: behavior 예측 논문 리뷰 1 (fEfficientNet-biLSTM)
 subtitle: Using an EfficientNet-LSTM for the recognition of single Cow’s motion
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

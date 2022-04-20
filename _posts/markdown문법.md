@@ -85,6 +85,12 @@ Well, do I have [the website for you][another fun place]!
 개행을 강제로 넣는 문단 나눔(hard breaks)의 경우 형식이 깨지게 된다.  
 만약 단순히 줄 나눔(soft breaks)을 하려면, 각 줄의 끝에 2번의 공백을 넣음으로 나눌 수 있다.  
 
+## 코드 블록 사용
+```(사용언어)
+여기에 코드 넣기
+```
+
+사용언어에 python, java, json 등 사용이 가능함.
 
 
 ###### [포스트출처](https://www.markdowntutorial.com/)
