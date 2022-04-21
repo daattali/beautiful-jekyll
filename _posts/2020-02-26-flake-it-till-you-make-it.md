@@ -9,15 +9,10 @@ tags: [books, test]
 ---
 <html xmlns:mml>
 <!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<!DOCTYPE html>
-<html>
    <head>
       <title>HTML img Tag</title>
    </head>
-
    <body>
-      <img src="https://user-images.githubusercontent.com/74241318/164460784-f8ed1796-5dd1-4400-8b64-792c97925b90.png" alt="Simply Easy Learning" width="200" height="80">
+      <img src="https://user-images.githubusercontent.com/74241318/164460784-f8ed1796-5dd1-4400-8b64-792c97925b90.png" alt="Simply Easy Learning" >
    </body>
-</html>
 </html>
