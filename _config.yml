@@ -15,10 +15,7 @@ author: Panteleimon Angelidis
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://panteleimon-a.github.io/"
 
 # --- Logo --- #
 
@@ -42,27 +39,10 @@ social-network-links:
   email: "panteleimon.angelidis@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: panteleimon-a
-  twitter: aggelidis pantelis
-  patreon: Angelidisp
-#  medium: yourname
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid 
-#  kaggle: yourname
+  twitter: Angelidisp
+  academia: PANTELEIMON ANGELIDIS
+  discord: invite/invite_code or users/userid 
+
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
