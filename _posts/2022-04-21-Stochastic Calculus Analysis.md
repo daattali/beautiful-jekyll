@@ -2,7 +2,7 @@
 layout: post
 title: Stochastic Modelling Analysis
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: https://th.bing.com/th/id/R.9f0de54fb94139925e693e2f3e42eeef?rik=rM%2fIzkkxlRVNJA&pid=ImgRaw&r=0
 share-img: /assets/img/path.jpg
 tags: [books, test]
 ---
