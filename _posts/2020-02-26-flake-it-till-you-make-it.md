@@ -42,6 +42,11 @@ table td {border-color: black}
 <!-- Enable MathML rendering by MathPlayer in Internet Explorer -->
 <object id="mathplayer" classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987"></object>
 <?import namespace="mml" implementation="#mathplayer"?>
+<object data="https://drive.google.com/file/d/1ukS8L6aDZQbPhvRAUKopW3vNLynj9UuN/view?usp=sharing" type="application/pdf" width="700px" height="700px">
+    <embed src="https://drive.google.com/file/d/1ukS8L6aDZQbPhvRAUKopW3vNLynj9UuN/view?usp=sharing">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 <link href="1.Modelling.css" rel="stylesheet" type="text/css"/>
 <meta name="CREATED" content="Friday, February 11, 2022 01:31:03"/>
