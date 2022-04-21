@@ -7,6 +7,17 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [books, test]
 ---
+    Να υπολογιστεί το ολοκλήρωμα Itô:
+    ∫₀^{T}B_{t}²dB_{t}
+    Λύση:
+    Με το θεμελιώδες θεώρημα του ολοκληρωτικού λογισμού έχουμε:
+    ∫₀^{T}B_{t}²dB_{t}=[((B_{t}³)/3)]₀^{T}=(T/3)
+    Έστω f(b,t)=(1/3)b³
+    Τότε ∂_{b}f=b² και ∂_{b}²=2b
+    Επομένως
+    
+    ∫₀^{T}B_{t}²dB_{t}=∫₀^{T}B_{t}²((dB_{t})/(dt))dt=(1/3)∫₀^{T}[(d/(dt))B_{t}³]dt=(1/3)B_{t}³
+    
 (d(\frac{1}{3}B_{t}^{3})=B_{t}^{2}dB+\frac{1}{2}2B_{t}\frac{1}{3}%
 (dB_{t}^{2})=B_{t}^{2}dB+B_{t}\frac{2}{3}t\)
 
