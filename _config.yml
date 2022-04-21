@@ -6,10 +6,10 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: My Portfolio
 
 # Your name to show in the footer
-author: Some Person
+author: Panteleimon Angelidis
 
 # --- List of links in the navigation bar --- #
 
@@ -39,13 +39,11 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "panteleimon.angelidis@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  github: panteleimon-a
+  twitter: aggelidis pantelis
+  patreon: Angelidisp
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -75,7 +73,6 @@ rss-description: This website is a virtual proof that I'm awesome
 # Select which social network share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
   linkedin: true
   vk: false
 
