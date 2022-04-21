@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Stochastic Modelling Analysis
-cover-img: /assets/img/path.jpg
+cover-img: https://th.bing.com/th/id/R.4ca5d556ac542aca4ef34656bfc4f9fa?rik=nMZX8bxOCOMiyw&pid=ImgRaw&r=0
 thumbnail-img: https://th.bing.com/th/id/R.9f0de54fb94139925e693e2f3e42eeef?rik=rM%2fIzkkxlRVNJA&pid=ImgRaw&r=0
 share-img: /assets/img/path.jpg
-tags: [books, test]
+tags: [Stochastic Calculus, Ito Calculus, Stochastic Modelling]
 ---
 <html>
   <head>
