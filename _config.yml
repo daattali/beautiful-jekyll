@@ -30,7 +30,7 @@ navbar-links:
   #  - Learn markdown: "http://www.markdowntutorial.com/"
     - Curriculum Lattes: "http://lattes.cnpq.br/0845486662407480"
     - GitHub Repos: "https://github.com/nmlemus/"
-  Author's home: "https://www.linkedin.com/in/nmlemus/"
+    - Author's home: "https://www.linkedin.com/in/nmlemus/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
