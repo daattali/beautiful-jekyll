@@ -8,7 +8,7 @@ tags: [books, test]
 ---
 <html>
   <head>
-    <title>Title of the document</title>
+    <title>Stochastic Modelling Analysis</title>
   </head>
   <body>
     <h1 style="text-align:center;">Analytical Stochastic Modelling</h1>
