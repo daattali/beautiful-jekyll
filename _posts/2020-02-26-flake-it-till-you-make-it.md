@@ -9,19 +9,8 @@ tags: [books, test]
 ---
 \documentclass{article}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%TCIDATA{OutputFilter=LATEX.DLL}
-%TCIDATA{Version=5.50.0.2953}
-%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
-%TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{Created=Friday, February 11, 2022 01:31:03}
-%TCIDATA{LastRevised=Sunday, February 13, 2022 22:51:57}
-%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
-%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
-%TCIDATA{CSTFile=40 LaTeX article.cst}
-%TCIDATA{ComputeDefs=
-%\(d(\frac{1}{3}B_{t}^{3})=B_{t}^{2}dB+\frac{1}{2}2B_{t}\frac{1}{3}%
-%(dB_{t}^{2})=B_{t}^{2}dB+B_{t}\frac{2}{3}t\)
-%}
+(d(\frac{1}{3}B_{t}^{3})=B_{t}^{2}dB+\frac{1}{2}2B_{t}\frac{1}{3}%
+(dB_{t}^{2})=B_{t}^{2}dB+B_{t}\frac{2}{3}t\)
 
 
 \newtheorem{theorem}{Theorem}
