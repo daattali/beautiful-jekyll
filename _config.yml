@@ -221,6 +221,7 @@ paginate: 5
 
 kramdown:
   input: GFM
+  math_engine: mathjax # you can also set this field to 'katex'
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
