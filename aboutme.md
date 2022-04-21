@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Academic/working experience & interests
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Panteleimon Angelidis. During my high school years, I was an active student, a professor organized creative activities in the school, and since I excelled his courses, I found myself involved in various activities, such as volunteerism, competitions and theatre. I always felt an inclination in Mathematics, participating in competitions and excelling in the class exams. When I started the preparation for the university entrance exams, this inclination became more intense. In 2018 I passed the standardized exams with merit and became a student of Finance and Accounting at the University of Macedonia, with the distinction of the 4th highest grade of the year. In my experience as student, I participated in business organizations, sport competitions and did personal research. In the second year of my studies, I joined a valuations company as an Assistant Corporate Researcher and contributed to 2 valuation papers, consolidating a Machine Learning model which analyzes financial statements in a VBA Excel environment and does the projections itself in Matlab. In these valuation projects we analyzed a conglomerate-financial institution and for this reason I learned how to perform complex analysis in immense financial statements. After an internship as a Macroeconomic Researcher, where I met high standards in terms of time management and results presentation, I was convinced that I was not into traditional Finance and that my orientation is mainly based in the Applied part of it, the fintech, i.e., Applied Mathematics, Financial Engineering, Operational Research and Data Science. Reading articles and watching documentaries about High Frequency Trading and reading papers on Risk Management, I realized that this is what I wanted to do. The classes “Derivatives” and “Informatics application in Finance” did really inspire me of understanding my orientation. Therefore, I took courses on Applied Finance, Mathematics and Programming. I represented the University in a Valuation Analysis Competition twice and evolved my skillset in financial analysis and leadership. What followed was that I joined a Laboratory in the Computer Science Department of Aristotle University of Thessaloniki, in charge of which is an IEEE fellow, and was assigned to research on a Timeseries Analysis project in Cuda, Pytorch, Python, a project strictly based on probabilistic models, which is still ongoing and we are on the testing phase. In 2021 I represented the University of Macedonia in a Consulting Competition, the Capgemini Invent, where I cooperated with students from UCL and learned many things about the market. I, also, take extra courses in the Electrical and Computer Engineering Department of Aristotle University of Thessaloniki and in Coursera and was assigned a Research project in Applied Finance. Right now, I conduct an internship in NBG Securities, in order to get acquainted with the financial market and especially the derivatives market and learn more about the corporate environment and how the market interacts with the market makers. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
 
-### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
