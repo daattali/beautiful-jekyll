@@ -16,7 +16,7 @@ I am not a fun of traditional approaches of Finance, rather excited about the fi
 
 As a part of the CVML Laboratory of Aristotle University of Thessaloniki, my experience extends to various Python libraries, such as Pytorch running in Cuda and Sklearn. 
 
-(There is nothing divine about morality; it is a purely human affair.)
+(There    is    nothing    divine    about    morality;    it    is    a    purely    human    affair.)
 
 
 
