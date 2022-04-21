@@ -3,6 +3,10 @@ layout: page
 title: About me
 subtitle: Academic/working experience & interests
 ---
+<div align="center">
+ _Excited about the future of engineering_
+</div>
+
 
 My name is Panteleimon Angelidis. During my high school years, I was an active student finding myself involved in various activities, such as volunteerism, competitions and theatre. I always felt an inclination in Mathematics, participating in competitions and excelling in the class exams. 
 
@@ -12,7 +16,7 @@ I am not a fun of traditional approaches of Finance, rather excited about the fi
 
 As a part of the CVML Laboratory of Aristotle University of Thessaloniki, my experience extends to various Python libraries, such as Pytorch (running in Cuda) and Sklearn. 
 
-~Excited about the future of engineering~
+
 
 
 
