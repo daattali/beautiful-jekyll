@@ -4,7 +4,7 @@ title: About me
 subtitle: Academic/working experience & interests
 ---
 <div align="center">
- _Excited about the future of engineering_
+ *Excited about the future of engineering*
 </div>
 
 
