@@ -12,6 +12,13 @@ tags: [books, test]
 "http://www.w3.org/TR/html4/loose.dtd">
 <head>
 <!-- The next lines of text are copied from the file htmlout.cfg, and can be modified there -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js">
+      MathJax.Hub.Config({
+      MathML: {
+      extensions: ["content-mathml.js"]
+      }
+      });
+ </script>
 <style type="text/css">
 .displayed {text-align: center}
 .displayed { display: block !
