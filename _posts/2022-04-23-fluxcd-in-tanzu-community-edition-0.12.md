@@ -3,7 +3,7 @@ layout: post
 title: FluxCD in Tanzu Community Edition v0.12
 metadescription: null
 date: 2022-04-23T14:15:41.114Z
-fb-img: null
+fb-img: /img/2022-04-23-16-39-48.png
 ---
 
 With Tanzu Community Edition v0.11, the contributors brought FluxCD in the app manager that comes with TCE (kapp). Mind you it was only the Flux Source controller which is the one that keeps track of the changes made in a Git repository and pulls the resources. Deployed by itself it isn't much use as there is nothing in the cluster to bring the resources defined in the git repo into the cluster. Sure you can install flux yourself in a jiffy but the point here is to use the TCEapp catalog. In version 0.12 (rc1 as I write these lines), the kustomize controller was added into the mix, making the whole thing a lot more interesting. [I recently wrote about GitOps](https://www.vxav.fr/2022-03-22-getting-started-with-gitops-in-argocd/) when I moved my home automation stuff to a private GitHub repo that is reconciled by ArgoCD. The most obvious difference is that FluxCD doesn't have a nice UI like ArgoCD so it is not as intuitive and visually appealing as ArgoCD but it is efficient and has other strong points. You can find the differences between the two products in this [blog](https://thenewstack.io/gitops-on-kubernetes-deciding-between-argo-cd-and-flux/).
