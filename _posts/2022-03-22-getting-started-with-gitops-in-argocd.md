@@ -32,7 +32,7 @@ First make sure the current context is set to the cluster where you want to depl
 
 * **Create a namespace for ArgoCD and deploy the components using the public manifest. This will install a bunch of custom resources in the cluster along with other built-in resources.**
 
-```
+``` go
 kubectl create namespace argocd
 
 kubectl apply -n argocd -f <https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml>
@@ -68,7 +68,7 @@ I used brew in WSL but you can [download the tool manually](https://github.com/a
 
 * **Change the admin password with the argocd command. Once done you can delete the argocd-initial-admin-secret resource.**
 
-```
+``` go
 argocd account update-password
 
 k delete secret argocd-initial-admin-secret
