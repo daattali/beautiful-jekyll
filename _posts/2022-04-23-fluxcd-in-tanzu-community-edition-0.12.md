@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FluxCD in Tanzu Community Edition v0.12
-metadescription: null
+metadescription: Installing FluxCD in Tanzu Community Edition with the apps manager to manage Kubernetes resources in a GitOps fashion.
 date: 2022-04-23T14:15:41.114Z
 fb-img: /img/2022-04-23-16-39-48.png
 ---
