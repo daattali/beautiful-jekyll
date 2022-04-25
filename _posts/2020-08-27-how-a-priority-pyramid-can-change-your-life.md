@@ -19,7 +19,7 @@ redirect_from:
 ---
 We know [what priorities are](https://www.berkeleywellbeing.com/priorities.html) and what they mean, but how do we really know what comes first in our day to day? Today on the blog I'm going to share with you a visual way to structure and organize your priorities using a priority pyramid. When we're struggling with the day to day and trying to figure out what to do first and so on, this strategy may be helpful for you!
 
-## Brainstorm your important areas of life
+## Brainstorm your important life priorities
 
 Take some time and write down all of the things that are important to you. Organize them into groups from least to most important. It’s important to do this step because in the heat of the moment in your day, you can refer to the pyramid to know which is the most important to focus on first. I originally found this idea from [House Unseen](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts/www.instagram.com/houseunseen) on Instagram and it really helped me going forward when I felt burnt out or overwhelmed. It helped me to see clearly what I needed to prioritize. When we become overwhelmed throughout the day, it can become really hard to move forward because our brains can become frozen with indecision. I know that happens to me often enough.
 
