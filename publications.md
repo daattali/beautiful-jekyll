@@ -136,7 +136,7 @@ Previous works have shown that differentiable physics simulators provide gradien
     
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/pouring.gif" img width="250" height="100">
+            <img src="../pics/pouring.gif" img width="250" height="125">
         </td>
         <td><a href="https://sites.google.com/view/transparentliquidpouring">Self-supervised Transparent Liquid Segmentation for Robotic Pouring</a><br>
             <div class="pubauthor">
@@ -161,6 +161,7 @@ year={2022}}
             <div class="pubjournal">International Conference of Robotics and Automation (ICRA), 2022
             <div style="font-size:small">
                 <a href="https://sites.google.com/view/transparentliquidpouring">[Project Page]</a>
+                <a href="https://github.com/gauthamnarayan/transparent-liquid-segmentation">[Code]</a>
                 <!-- <a href="https://github.com/gauthamnarayan/transparent-liquid-segmentation">[Code]</a> -->
                 <a href="javascript:copy(div2022pouring, bib2022pouring)">[Bibtex]</a>
                 <a href="javascript:copy(div2022pouring, abs2022pouring)">[Abstract]</a>
