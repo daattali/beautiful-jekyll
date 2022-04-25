@@ -5,7 +5,12 @@ subtitle: ''
 published: false
 
 ---
-Are you often writing down mega to do lists and get frozen with overwhelm and indecision? This was me too! I remember standing in my kitchen stressed out, looking at my giant to do list and had no clue how to start. **Enter simple planning**. I knew something had to change, so I committed to learning a [simple planning method](The First Simple Planning Step to Take as a Beginner Planner). Now, after years of learning how to simple plan, I bring you: **MY SIMPLE PLANNERS**!
+Are you often writing down mega to do lists and get frozen with overwhelm and indecision? This was me too! I remember standing in my kitchen stressed out, looking at my giant to do list and had no clue how to start. **Enter simple planning**. I knew something had to change, so I committed to learning a [simple planning method](The First Simple Planning Step to Take as a Beginner Planner). Now, after years of learning how to simple plan, I bring you: **MY SIMPLE PLANNERS**! Looking for **a** **simple**, **no fuss planner** that helps you stay on track without feeling overwhelmed? **My Simple Planner** was designed with _simplicity in mind_.
+
+**Jump to:**
+
+* My Simple Planner (letter size, printable)
+* My Simple Homeschool Planner (letter size, printable)
 
 ***
 
@@ -17,7 +22,7 @@ My Simple Planner is developed based upon my own planning method, inspired by th
 
 THE DETAILS:
 
-**Who's My Simple Planner for?** My Simple Planner is perfect for you if you are a beginner planner, but also have some experience with making to do lists (and losing them). It's for you if you want to get better at planning, but don't know where to start and also get overwhelmed at all of the planning choices out there.
+**Who's My Simple Planner for?** _My Simple Planner is perfect for you if you are a beginner planner, but also have some experience with making to do lists (and losing them). It's for you if you want to get better at planning, but don't know where to start and also get overwhelmed at all of the planning choices out there._
 
 **Why My Simple Planner over another planner?**
 
@@ -27,12 +32,27 @@ THE DETAILS:
 
 ....PREVIEW IMAGE
 
-**Pages included: 5 cover page options, weekly dashboard, daily planning, notes, braindump,**
+**Pages included: 5 cover page options, weekly dashboard, daily planning, note pages, and braindump**
 
-**Details:**
+**ABOUT My Simple Planner:**
 
-* 80 pages: grab description from Amazon!!!
-* Letter size, printable in black & white
+* undated 3 month planner
+* monthly overview pages and notes with lots of writing space
+* daily planning pages that include open ended boxes and to do list lines that you can use for tasks, notes, or appointments
+* weekly dashboard that includes a spot for a meal plan, habit tracking, appointments, to do lists
+* braindump pages
+* running to do list pages
+* routine pages
+* extra note pages
+* tip page on using this planner
+* printed on
+* page sizes: 8.5 x 11 inches (21.59 cm x 27.94 cm)
+* fully printable
+* 80 pages
+
+**LAYOUT of the planner:**
+
+The beginning of My Simple Planner gives you your monthly overviews, followed by your weekly dashboards, and daily planning pages. At the end of the planner, you will find routine pages, running to do list pages, braindump pages, and note pages.
 
 ### MY SIMPLE HOMESCHOOL PLANNER
 
@@ -61,36 +81,8 @@ _If you’d like to get started on daily planning or step up your planning game,
 
 ![A picture of my daily planner sheet.](https://www.simplehomemom.com/uploads/planner-sheet.png "How to Start Planning for Beginners SHM")
 
-Free course!
+**FREE SIMPLE PLANNING BASICS COURSE!**
 
-Want to get better at simple planning? FREE planning class
+Want to get better at simple planning? I created this course a while back when I was teaching about the simple planning method I learned and tweaked throughout the years. My Simple Planners are based from this method.
 
-_I also have a FREE class on beginner planning basics in my freebie vault. You can gain access to that by being on my mail list. Signup below and you’ll receive a link to the vault in your confirmation email._
-
-PREVIEW IMAGES
-
-REVIEWS
-
-from amazon:
-
-Looking for **a** **simple**, **no fuss planner** that helps you stay on track without feeling overwhelmed? Enter My Simple Planner. My Simple Planner was designed with _simplicity in mind_.
-
-ABOUT this item:
-
-* undated 3 month planner
-* monthly overview pages and notes with lots of writing space
-* daily planning pages that include open ended boxes and to do list lines that you can use for tasks, notes, or appointments
-* weekly dashboard that includes a spot for a meal plan, habit tracking, appointments, to do lists
-* braindump pages
-* running to do list pages
-* routine pages
-* extra note pages
-* tip page on using this planner
-* printed on
-* page sizes: 8.5 x 11 inches (21.59 cm x 27.94 cm)
-* printed on
-* 80 pages
-
-LAYOUT of the planner:
-
-The beginning of My Simple Planner gives you your monthly overviews, followed by your weekly dashboards, and daily planning pages. At the end of the planner, you will find routine pages, running to do list pages, braindump pages, and note pages.
+_You can gain access to the free course by being on my mail list. Signup below and you’ll receive a link to the vault in your confirmation email!_
