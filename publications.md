@@ -162,10 +162,12 @@ year={2022}}
             <div style="font-size:small">
                 <a href="https://sites.google.com/view/transparentliquidpouring">[Project Page]</a>
                 <a href="https://github.com/gauthamnarayan/transparent-liquid-segmentation">[Code]</a>
-                <!-- <a href="https://github.com/gauthamnarayan/transparent-liquid-segmentation">[Code]</a> -->
                 <a href="javascript:copy(div2022pouring, bib2022pouring)">[Bibtex]</a>
                 <a href="javascript:copy(div2022pouring, abs2022pouring)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2203.01538.pdf">[PDF]</a>
+                <a href="https://drive.google.com/file/d/1cG9ZDGekFVLKLqSS4ZSlS445Lcxwm08h/view?usp=sharing">[Slides]</a>
+                <a href="https://www.youtube.com/watch?v=uXGCSd3KVd8">[Video]</a>
+                <a href="https://docs.google.com/presentation/d/1kOdSIgoGPlg1CmRILjsdwIpTJIMpfgjY/edit?usp=sharing&ouid=115079833191742902358&rtpof=true&sd=true">[Poster]</a>
             </div>
             <div id="div2022pouring" class="pubInfo"></div>
             </div>
