@@ -9,8 +9,9 @@ Are you often writing down mega to do lists and get frozen with overwhelm and in
 
 **Jump to:**
 
-* My Simple Planner (letter size, printable)
-* My Simple Homeschool Planner (letter size, printable)
+* My Simple Planner (letter size)
+* My Simple Planner Mini (Foldable - half letter size)
+* My Simple Homeschool Planner (letter size)
 
 ***
 
@@ -18,13 +19,13 @@ Are you often writing down mega to do lists and get frozen with overwhelm and in
 
 ## MY SIMPLE PLANNER
 
-My Simple Planner is developed based upon my own planning method, inspired by the [bullet journaling method](www.bulletjournal.com). Ready to simple plan already? You can purchase YOUR simple planner [HERE](https://checkout.stripe.com/pay/cs_live_a1V8z7jEcwDOTYn2NeGPRdmZpxSRLM51CHXucp3TNQPw1qC9VuP8aS3z9D#fidkdWxOYHwnPyd1blppbHNgWjA0T1FER31HQU9yUnJyMzJzUklDRGd3TEZHRlJVNGJJVUhvbm5haXdGN2BQdEJmRkprbnJCfWBHSjB1aWJxQ1w3S05tf0hUTVR0aE52PUlNYmYzYEo9T09ENTVBaExHUE5qbScpJ3VpbGtuQH11anZgYUxhJz8nNz1qNTdkMlJGYFJQYWdsNmZiJyknd2BjYHd3YHcnPydtcXF1dj8qKnJycit2bGh1aWBtamhgaGpoK2ZqaConeCUl).
+My Simple Planner is developed based upon my own planning method, inspired by the [bullet journaling method](www.bulletjournal.com). Ready to simple plan already? You can purchase YOUR simple planner [HERE](https://checkout.stripe.com/pay/cs_live_a1V8z7jEcwDOTYn2NeGPRdmZpxSRLM51CHXucp3TNQPw1qC9VuP8aS3z9D#fidkdWxOYHwnPyd1blppbHNgWjA0T1FER31HQU9yUnJyMzJzUklDRGd3TEZHRlJVNGJJVUhvbm5haXdGN2BQdEJmRkprbnJCfWBHSjB1aWJxQ1w3S05tf0hUTVR0aE52PUlNYmYzYEo9T09ENTVBaExHUE5qbScpJ3VpbGtuQH11anZgYUxhJz8nNz1qNTdkMlJGYFJQYWdsNmZiJyknd2BjYHd3YHcnPydtcXF1dj8qKnJycit2bGh1aWBtamhgaGpoK2ZqaConeCUl). You can also purchase it in a foldable mini size HERE. Keep in mind that you will be creating little booklets for each section of your planner - weekly dashboard, daily planning, and monthly planner.
 
 THE DETAILS:
 
 **Who's My Simple Planner for?** _My Simple Planner is perfect for you if you are a beginner planner, but also have some experience with making to do lists (and losing them). It's for you if you want to get better at planning, but don't know where to start and also get overwhelmed at all of the planning choices out there._
 
-**Why My Simple Planner over another planner?**
+**Why My Simple Planner over another planner?** _I can't tell you my planner is better than the rest because we all have different preferences, but I can tell you that my planner is based on my own planning methods that have been both simple and effective for me with unscrambling my mom brain! I've create My Simple Planners to be visually appealing, yet minimalistic._
 
 **The benefits of using My Simple Planner:**
 
