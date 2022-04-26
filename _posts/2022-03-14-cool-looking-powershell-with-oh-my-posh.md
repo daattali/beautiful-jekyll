@@ -6,7 +6,7 @@ subtitle: ""
 metadescription: Install Oh-My-Posh to customize and make your PowerShell prompt look better
   with system specific information
 image: ""
-preview: /img/ohmyposh2.png
+fb-img: /img/ohmyposh2.png
 date: 2022-03-14T22:38:01.000Z
 ---
 I spent a lot less time in PowerCLI these days which means my profile hasn't changed much and my prompt was still the same as when I customized it several years ago. Because I use Linux in WSL, I have to get up to speed with it and customizing your prompt and profile is just part of the journey.
