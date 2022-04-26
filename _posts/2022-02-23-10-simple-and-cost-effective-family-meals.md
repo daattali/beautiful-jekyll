@@ -128,7 +128,7 @@ If you’re stumped with meal planning and grocery planning, you may enjoy the m
 
 #### 6. SIMPLE VEGETABLE SOUP
 
-This one is SO tasty and is usually a hit with our crew. We try to have at least one meatless supper a week, usually on Monday for a meatless Monday theme.
+This one is SO tasty and is usually a hit with our crew. We try to have at least one meatless supper a week, usually on Monday for a meatless Monday theme. Meal planning with theme nights is a hit here! It simplifies meal planning so much for us.
 
 **Ingredients:**
 
