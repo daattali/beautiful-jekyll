@@ -21,7 +21,6 @@ navbar-links:
   Resources:
     - LinkedIn: "https://www.linkedin.com/in/irfanhabib/"
     - GitHub: "https://github.com/irfanhabib"
-  Author's home: "http://irfanhabib.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -50,7 +49,7 @@ author:
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   rss: true
-  email: "irfan+site@irfanhabib.com"
+  email: "site@irfanhabib.com"
   facebook: irfanhabib
   github: irfanhabib
   twitter: irfanhabib
