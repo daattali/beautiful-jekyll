@@ -29,6 +29,9 @@ avatar: "/assets/img/tgoliveira11.jpg"
 # favicon (https://github.com/daattali/beautiful-jekyll/issues/312)
 favicon: "/favicon.ico"
 
+# url (https://medium.com/@xiang_zhou/how-to-add-custom-domain-to-your-jekyll-blog-provided-that-you-built-your-site-using-github-6e1c8bf20afe)
+baseurl: "https://tgoliveira11.tech"
+
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
