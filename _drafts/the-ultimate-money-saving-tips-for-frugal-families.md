@@ -1,14 +1,19 @@
 ---
 post: post
-tags: []
+tags:
+- frugal living
+- saving money
+- frugal families
+- frugal tips
 thumbnail-img: "/uploads/headshot.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
 show-avatar: true
 title: The Ultimate Money Saving Tips for Frugal Families
-description: sddsd
-subtitle: ''
+description: Practical tips and suggestions of money saving tips to help families
+  save money.
+subtitle: "+ FREE Simple Monthly Budget Printable"
 share-img: ''
 redirect_from: []
 
