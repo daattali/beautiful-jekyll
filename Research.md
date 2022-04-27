@@ -25,7 +25,6 @@ title: ""
 **_American Political Science Review_**, Revise and Resubmit.
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_AJPS_revised.pdf) <br>
-**_American Journal of Political Science_**, Revise and Resubmit.<br>
 David A. Lake Award for best paper presented at IPES 2020. 
 
 [Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/mtw_sep_2021.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
