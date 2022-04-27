@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git Ignore
-subtitle: The correct use of git ignore in Visual Studio
+subtitle: The correct use of .gitignore file in Visual Studio
 gh-repo: tgoliveira11/gitignore
 gh-badge: [star, fork, follow]
 tags: [gitignore, git ignore, visual studio, minified, template, tfs]
