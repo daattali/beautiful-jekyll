@@ -27,16 +27,13 @@ THE DETAILS:
 
 **Why My Simple Planner over another planner?** _I can't tell you my planner is better than the rest because we all have different preferences, but I can tell you that my planner is based on my own planning methods that have been both simple and effective for me with unscrambling my mom brain! I've create My Simple Planners to be visually appealing, yet minimalistic._
 
-**The benefits of using My Simple Planner:**
+***
 
-**What the planner will help you with:**
-
-....PREVIEW IMAGE
-
-**Pages included: 5 cover page options, weekly dashboard, daily planning, note pages, and braindump**
+\**....PREVIEW IMAGE
 
 **ABOUT My Simple Planner:**
 
+* 5 cover page options
 * undated 3 month planner
 * monthly overview pages and notes with lots of writing space
 * daily planning pages that include open ended boxes and to do list lines that you can use for tasks, notes, or appointments
@@ -61,7 +58,28 @@ Need a simple homeschooling planner for your homeschool planning needs too? My S
 
 ie daily planning checklists...for individual checklists or daily planning for the family.
 
-**BLOGS**
+**ABOUT My Simple Planner:**
+
+* 5 cover page options
+* undated 3 month planner
+* monthly overview pages and notes with lots of writing space
+* daily planning pages that include open ended boxes and to do list lines that you can use for tasks, notes, or appointments
+* weekly dashboard that includes a spot for a meal plan, habit tracking, appointments, to do lists
+* braindump pages
+* running to do list pages
+* routine pages
+* extra note pages
+* tip page on using this planner
+* printed on
+* page sizes: 8.5 x 11 inches (21.59 cm x 27.94 cm)
+* fully printable
+* 80 pages
+
+**LAYOUT of the planner:**
+
+The beginning of My Simple Planner gives you your monthly overviews, followed by your weekly dashboards, and daily planning pages. At the end of the planner, you will find routine pages, running to do list pages, braindump pages, and note pages.
+
+### BLOGS TO HELP YOU WITH SIMPLE PLANNING
 
 Not ready to commit yet to My Simple Planners? Here are some great blogs to get you started learning about simple planning:
 
