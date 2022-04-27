@@ -21,11 +21,11 @@ share-img: ''
 redirect_from: []
 
 ---
-Does house cleaning stress you out and you never seem to stay on top of it? If so, you've come to the right place. This could easily describe me too in the past. I used to stress out if the whole house wasn't put in order by the end of the day. I'm talking about..._every dish was put away_ or _no dust bunnies were to be found_ hiding under my bed. And then came a point (I think it was while I was pregnant with my third boy) that I hit my "breaking point" and I knew something had to change. After decluttering my home in full with [the KonMari method](https://www.goodhousekeeping.com/home/organizing/a25846191/what-is-the-konmari-method/) (the lite version of her method as I didn't go [full folding](https://www.youtube.com/watch?v=IjkmqbJTLBM) or thanking my items that leave by donating or trashing them), I started to work on other areas of our home to simplify, like [cleaning routines](https://www.simplehomemom.com/how-to-design-a-simple-cleaning-routine/). Today on the blog, I'm sharing about how to throw out the cleaning routine and try this instead: **a master cleaning task list**. Read on to learn about how I use it.
+Does cleaning the house stress you out and you never seem to stay on top of it? If so, you've come to the right place. This could easily describe me too in the past. I used to stress out if the whole house wasn't put in order by the end of the day. I'm talking about..._every dish was put away_ or _no dust bunnies were to be found_ hiding under my bed. And then came a point (I think it was while I was pregnant with my third boy) that I hit my "breaking point" and I knew something had to change. After decluttering my home in full with [the KonMari method](https://www.goodhousekeeping.com/home/organizing/a25846191/what-is-the-konmari-method/) (the lite version of her method as I didn't go [full folding](https://www.youtube.com/watch?v=IjkmqbJTLBM) or thanking my items that leave by donating or trashing them), I started to work on other areas of our home to simplify, like [cleaning routines](https://www.simplehomemom.com/how-to-design-a-simple-cleaning-routine/). Today on the blog, I'm sharing about how to throw out the cleaning routine and try this instead: **a master cleaning task list**. Read on to learn about how I use it.
 
 ![Someone sweeping on a wooden floor.](/uploads/sweeping-shm.jpg "Throw Out the Cleaning Routine and Try This Instead SHM")
 
-## Going from overwhelmed to calm towards cleaning the house
+## Throw out the cleaning routine to go from overwhelmed to calm towards cleaning the house
 
 _So how did I get on top of my housework and reduce stress?_
 
@@ -34,13 +34,13 @@ _So how did I get on top of my housework and reduce stress?_
 
 ##### Throw out the cleaning routine and try prioritizing instead:
 
-Priorities can be applied to cleaning too, which brings me to the current method I'm using for cleaning our home. To be fair, I jump around different methods depending on what's going on with our family or season of life like [this method](https://www.simplehomemom.com/how-to-design-a-simple-cleaning-routine/) in the past and I also tried out [the Organised mom's method](https://www.theorganisedmum.blog/tomm/), but this is working really well for me right now – which is throwing out the cleaning routine (ha)! PS - We have four kids and three adults here and full time homeschool just for reference.
+Priorities can be applied to cleaning too, which brings me to the current method I'm using for cleaning our home. To be fair, I jump around different methods depending on what's going on with our family or season of life like [this method](https://www.simplehomemom.com/how-to-design-a-simple-cleaning-routine/) in the past and I also tried out [the Organised mom's method](https://www.theorganisedmum.blog/tomm/), but this is working really well for me right now – which is throwing out the cleaning routine (ha)! PS - We have four kids and three adults here and full time homeschool just for reference. 
 
 ## Throw Out the Cleaning Routine and Try This Instead
 
-**THE MASTER TASK CLEANING LIST:**
+**THE MASTER CLEANING TASK  LIST:**
 
-**What is the master task cleaning list?** It's exactly as described. I started with a page in my [bullet journal](https://www.oprahmag.com/life/work-money/a32155559/how-to-start-a-bullet-journal/) that has all of the cleaning tasks you can think of and categorized, even things I don't think of often like cleaning the oven. I then moved onto a nice printable I created and popped it into our home management binder. Scroll down to grab your own printable of the master cleaning task list too!
+**What is the master task cleaning list?** A master cleaning task list is exactly as described. I started with a page in my [bullet journal](https://www.oprahmag.com/life/work-money/a32155559/how-to-start-a-bullet-journal/) that has all of the cleaning tasks you can think of and categorized, even things I don't think of often like cleaning the oven. I then moved onto a nice printable I created and popped it into our home management binder. Scroll down to grab your own printable of the master cleaning task list too!
 
 **How do I use the master task cleaning list?** I plan my days the night before for the next day usually (see my blog [here](https://www.simplehomemom.com/a-simple-daily-planning-method/) on my daily planning method), and focus on my top priorities - usually three in every category. Under the home category, I pick usually three priorities to focus on and will pull from the master task cleaning list. Sometimes I throw in a decluttering or organizing task, but for the most part it's cleaning since we just do [maintenance decluttering](https://www.simplehomemom.com/three-key-steps-to-maintaining-decluttering-sanity-with-kids/) periodically right now.
 
@@ -81,4 +81,4 @@ _If you like the sounds of a master cleaning task list and want to try it out fo
 * Style Simpler| [Blog](http://www.stylesimpler.com/) | [Instagram](http://www.instagram.com/stylesimpler)
 * Alex Is A Mom | [Blog](http://alexisamom.com/) | [Instagram](http://instagram.com/alexisamomdotcom)
 
-(updated Sept. 6/2021)
+(updated Apr. 2022)
