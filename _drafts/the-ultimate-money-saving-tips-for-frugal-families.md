@@ -23,4 +23,14 @@ Meal plan. Meal planning.
 
 Don't look at extra things in stores. Go in for what you came for!
 
-Do a pantry challenge
+Do a pantry challenge. Use up food that's sitting there in your freezer, fridge, pantry
+
+Make meals that are lower cost ie soups...Replace meats with lentils, beans. Simple meal plan for more focused grocery orders and less buying whatever
+
+Do homemade vs takeout or storebought where possible
+
+Replace disposable vs reusable as much as possible ie cleaning cloths
+
+Cloth dipaers, safety razor, laundry powder
+
+Frozen pizza vs takeout
