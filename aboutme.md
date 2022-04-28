@@ -14,9 +14,9 @@ Since 2018 I've been studying Finance and Accounting majoring Finance at the Uni
 
 I am not a fun of traditional approaches of Finance, rather excited about the fintech future.
 
-As a part of the CVML Laboratory of Aristotle University of Thessaloniki, my experience extends to various Python libraries, such as Pytorch running in Cuda and Sklearn. 
+As a part of the CVML Laboratory of Aristotle University of Thessaloniki, my experience extends to various Python libraries, such as Pytorch running in Cuda. 
 
-(There    is    nothing    divine    about    morality;    it    is    a    purely    human    affair.)
+(There &nbsp; is &nbsp; nothing &nbsp; divine &nbsp; about &nbsp; morality; &nbsp; it &nbsp; is &nbsp; a &nbsp; purely &nbsp; human &nbsp; affair.)
 
 
 
