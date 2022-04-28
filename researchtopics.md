@@ -13,6 +13,5 @@ subtitle: My fieldwork
   Timeseries Analysis for Computer Vision, Python <br>
   Image Processing, Python <br>
   Equity Research with ML methods, Matlab and VBA integrations <br>
-  
-  </i>
+
 </div>
