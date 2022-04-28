@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "&nbsp;"
-subtitle: Research Topics
+**subtitle: Research Topics**
 ---
 <div align="left">
   <i><b> Bitcoin Price Prediction using Google's TFT   </b></i> <br>
