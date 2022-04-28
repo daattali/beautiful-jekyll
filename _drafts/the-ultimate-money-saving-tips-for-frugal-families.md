@@ -39,3 +39,23 @@ Replace disposable vs reusable as much as possible ie cleaning cloths
 Cloth dipaers, safety razor, laundry powder
 
 Frozen pizza vs takeout
+
+If you have to go on errands, tack on as many as you can to save on gas
+
+When looking for a vet, call around for best prices!
+
+Buy offbrand of things that make sense. It saves a bunch! ie store brand mac and cheese vs KD
+
+Shop second hand marketplace. thrift stores
+
+Use leftovers a part of your meal plan
+
+Make water the main thing you drink. Drinks all add up $!
+
+Make coffee at home
+
+Tracking grocery prices to save money
+
+America's cheapest family book
+
+Pause subscriptiojns
