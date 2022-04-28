@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research Topics
-subtitle: My contribution
+subtitle: My fieldwork
 ---
 <div align="left">
   <i><b> Bitcoin Price Prediction using Google's TFT   </b></i> <br>
