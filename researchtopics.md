@@ -9,10 +9,10 @@ subtitle: My involvement
   <i><b> Dynamic Optimal Capital Structure </b></i><br>
     Supervised by prof. Efstratios Livanis, PhD. University of Macedonia, Greece <br>
    <span> Dynamic Portfolio Optimization with Deep Learning Methods, Python</span> <br>
-  Risk Management and CVaR(Matlab) <br>
-  Timeseries Analysis for Computer Vision(Python) <br>
-  Image Processing(Python) <br>
-  Equity Research with ML methods(Matlab & VBA for Excel integrations) <br>
+  Risk Management and CVaR, Matlab <br>
+  Timeseries Analysis for Computer Vision, Python <br>
+  Image Processing, Python <br>
+  Equity Research with ML methods, Matlab and VBA integrations <br>
   
   </i>
 </div>
