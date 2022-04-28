@@ -5,7 +5,7 @@ subtitle: My fieldwork
 ---
 <div align="left">
   <i><b> Bitcoin Price Prediction using Google's TFT   </b></i> <br>
-    <span>  Supervisor PhD candidate mr. Mygdalis Vasilios, AIIA Lab, Aristotle University of Thessaloniki &#40; <link> https://aiia.csd.auth.gr/gr/ </link> &#41; </span> <br>
+    <span>  Supervisor PhD candidate mr. Mygdalis Vasilios, AIIA Lab, Aristotle University of Thessaloniki [https://aiia.csd.auth.gr/gr/] </span> <br>
   <i><b> Dynamic Optimal Capital Structure </b></i><br>
     Supervised by prof. Efstratios Livanis, PhD. University of Macedonia, Greece <br>
    <span> Dynamic Portfolio Optimization with Deep Learning Methods, Python</span> <br>
