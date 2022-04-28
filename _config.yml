@@ -16,6 +16,8 @@ author: Panteleimon Angelidis
 navbar-links:
   About Me: "aboutme"
   Author's home: "https://panteleimon-a.github.io/"
+  My certifications: "https://panteleimon-a.github.io/certifications/"
+  Research: "https://panteleimon-a.github.io/researchtopics/"
 
 # --- Logo --- #
 
@@ -24,11 +26,11 @@ navbar-links:
 avatar: "https://www.gurobi.com/wp-content/uploads/2020/09/shutterstock_678583375-4-768x512.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: /assets/img/avatar-icon.png
 
 
 # --- Footer social media links --- #
@@ -40,12 +42,11 @@ social-network-links:
   github: panteleimon-a
   twitter: Angelidisp
   academia: PANTELEIMON ANGELIDIS
-  discord: d3ll#7530
 
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+#rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
