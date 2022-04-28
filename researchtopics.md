@@ -5,7 +5,7 @@ subtitle: Research Topics
 ---
 <div align="left">
   <i><b> Bitcoin Price Prediction using Google's TFT   </b></i> <br>
-    Supervisor PhD candidate mr. Mygdalis Vasilios, Aristotle University of Thessaloniki, <a href="<https://aiia.csd.auth.gr/>" title="AIIA Lab">AIIA Lab</a> <br>
+    Supervisor PhD candidate mr. Mygdalis Vasilios, Aristotle University of Thessaloniki, Greece <a href="<https://aiia.csd.auth.gr/>" title="AIIA Lab">AIIA Lab</a> <br>
   <i><b> Dynamic Optimal Capital Structure </b></i><br>
     Supervised by prof. <a href="<http://sites.uom.gr/slivanis/>" title="Efstratios Livanis">Efstratios Livanis</a>, PhD. University of Macedonia, Greece <br>
     <i><b> Dynamic Portfolio Optimization with Deep Learning Methods, Python </b></i> <br>
