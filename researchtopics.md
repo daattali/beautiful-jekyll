@@ -5,7 +5,7 @@ subtitle: My involvement
 ---
 <div align="left">
   <i><b> Bitcoin Price Prediction using Google's TFT </b> <br>
-    <span> &#40; Supervisor PhD candidate mr. Mygdalis Vasilios, AIIA Lab ((https://aiia.csd.auth.gr/gr/)) 	&#41;</span> <br>
+    <span>  Supervisor PhD candidate mr. Mygdalis Vasilios, &#40; AIIA Lab https://aiia.csd.auth.gr/gr/ &#41;</span> <br>
   <b> Dynamic Optimal Capital Structure(supervisor prof. Efstratios Livanis, PhD ) </b> <br>
   Dynamic Portfolio Optimization with Deep Learning Methods(Python) <br>
   Risk Management and CVaR(Matlab) <br>
