@@ -34,7 +34,7 @@ _So how did I get on top of my housework and reduce stress?_
 
 ##### Throw out the cleaning routine and try prioritizing instead:
 
-Priorities can be applied to cleaning too, which brings me to the current method I'm using for cleaning our home. To be fair, I jump around different methods depending on what's going on with our family or season of life like [this method](https://www.simplehomemom.com/how-to-design-a-simple-cleaning-routine/) in the past and I also tried out [the Organised mom's method](https://www.theorganisedmum.blog/tomm/), but this is working really well for me right now – which is throwing out the cleaning routine (ha)! PS - We have four kids and three adults here and full time homeschool just for reference. 
+Priorities can be applied to cleaning too, which brings me to the current method I'm using for cleaning our home. To be fair, I jump around different methods depending on what's going on with our family or season of life like [this method](https://www.simplehomemom.com/how-to-design-a-simple-cleaning-routine/) in the past and I also tried out [the Organised mom's method](https://www.theorganisedmum.blog/tomm/), but this is working really well for me right now – which is throwing out the cleaning routine (ha)! PS - We have four kids and three adults here and full time homeschool just for reference.
 
 ## Throw Out the Cleaning Routine and Try This Instead
 
@@ -58,7 +58,7 @@ And, that's it! We do have some daily essential cleaning like dishes and laundry
 
 ### Try throwing out the cleaning routine and see how it feels
 
-So maybe throwing out the cleaning routine would work for you too. It's worth a shot, right? I personally like having a few methods up my sleeve to use during those different seasons or days that require different things. So in the end? Do what works for you and your family. And maybe try throwing out the cleaning routine and try a master task list instead, using your top priorities every day. I use three, but you can do what works for you. Happy cleaning!
+So maybe throwing out the cleaning routine would work for you too. It's worth a shot, right? I personally like having a few methods up my sleeve to use during those different seasons or days that require different things. So in the end? Do what works for you and your family. And maybe try throwing out the cleaning routine and try a master task list instead, using your top priorities every day. I use three, but you can do what works for you. Finding a good cleaning routine for your family will help you to have a simple home and that's the best goal. Happy cleaning!
 
 # Create your own master cleaning task list with a free printable
 
