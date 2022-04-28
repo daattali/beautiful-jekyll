@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css"
   ],
-  "SelectedNode": "\\C:\\Users\\tgoli\\Source\\Repos\\tgoliveira11.github.io",
+  "SelectedNode": "\\assets\\css\\beautifuljekyll.css",
   "PreviewInSolutionExplorer": false
 }
