@@ -19,9 +19,9 @@ Follow my latest work on [Twitter](https://twitter.com/EmilDimanchev).
 
 ## Bio
 
-I am currently a PhD Candidate in electric power engineering at the Norwegian University of Science and Technology ([NTNU](https://www.ntnu.edu/iel/groups/emesp#/view/about)), a Research Affiliate at the MIT [Center for Energy and Environmental Policy Research](https://ceepr.mit.edu/people/dimanchev-emil/), and a Superforecaster at [Good Judgment](https://goodjudgment.com).
+I am currently a PhD Candidate in electric power engineering at the Norwegian University of Science and Technology ([NTNU](https://www.ntnu.edu/iel/groups/emesp#/view/about)), a Research Affiliate at the MIT [Center for Energy and Environmental Policy Research](https://ceepr.mit.edu/people/dimanchev-emil/), and a Superforecaster at [Good Judgment](https://goodjudgment.com). 
 
-Previously, I worked as a Senior Research Associate at MIT CEEPR, and a Senior Carbon Market Analyst at Thomson Reuters Point Carbon.
+In previous roles, I was a Senior Research Associate at MIT CEEPR, and prior to that I worked as a Senior Carbon Market Analyst at Thomson Reuters Point Carbon.
 
 I have testified before legislators on climate policy, served as a consultant to government officials on carbon pricing, and briefed senior staff at Fortune Global 500 companies. My work on the reform of the European Emissions Trading System was featured in the EU Parliament and the EU Commission, "contributing to a cool-headed debate" in the words of one policy maker. My research has also been quoted in the media including Bloomberg, the Wall Street Journal, Politico, BBC, and others.
 
