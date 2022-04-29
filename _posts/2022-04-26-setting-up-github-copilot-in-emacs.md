@@ -56,6 +56,26 @@ And since, I use `evil` in Doom Emacs, you want completions only to trigger in i
 (customize-set-variable 'copilot-enable-predicates '(evil-insert-state-p))
 ```
 
+To accept completions, you can bind the TAB key and chain it with say `company`:
+
+```lisp
+; complete by copilot first, then company-mode
+(defun my-tab ()
+  (interactive)
+  (or (copilot-accept-completion)
+      (company-indent-or-complete-common nil)))
+
+; modify company-mode behaviors
+(with-eval-after-load 'company
+  ; disable inline previews
+  (delq 'company-preview-if-just-one-frontend company-frontends)
+  ; enable tab completion
+  (define-key company-mode-map (kbd "<tab>") 'my-tab)
+  (define-key company-mode-map (kbd "TAB") 'my-tab)
+  (define-key company-active-map (kbd "<tab>") 'my-tab)
+  (define-key company-active-map (kbd "TAB") 'my-tab))
+```
+
 Putting it all together:
 
 ```lisp
@@ -84,6 +104,21 @@ Putting it all together:
 ;; enable completion in insert mode
 (customize-set-variable 'copilot-enable-predicates '(evil-insert-state-p))
 
+; complete by copilot first, then company-mode
+(defun my-tab ()
+  (interactive)
+  (or (copilot-accept-completion)
+      (company-indent-or-complete-common nil)))
+
+; modify company-mode behaviors
+(with-eval-after-load 'company
+  ; disable inline previews
+  (delq 'company-preview-if-just-one-frontend company-frontends)
+  ; enable tab completion
+  (define-key company-mode-map (kbd "<tab>") 'my-tab)
+  (define-key company-mode-map (kbd "TAB") 'my-tab)
+  (define-key company-active-map (kbd "<tab>") 'my-tab)
+  (define-key company-active-map (kbd "TAB") 'my-tab))
 ```
 
 After first setting up, login to GitHub, by `SPC :` (in `evil` mode, `C-:` otherwise) then `copilot-login`. This will paste a one time password into your clipboard and open the browser where you need to login with you account and paste the code.
