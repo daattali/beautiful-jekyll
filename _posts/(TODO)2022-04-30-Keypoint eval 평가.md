@@ -7,6 +7,6 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [paper-review]
 ---
-
+# PCK (acc), AP, AR에 대해 정의
 ## @ 출처
 https://glee1228.tistory.com/7
