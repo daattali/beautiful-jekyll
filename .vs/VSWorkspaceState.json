@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\assets\\css"
+    "\\_posts"
   ],
-  "SelectedNode": "\\assets\\css\\beautifuljekyll.css",
+  "SelectedNode": "\\_config.yml",
   "PreviewInSolutionExplorer": false
 }
