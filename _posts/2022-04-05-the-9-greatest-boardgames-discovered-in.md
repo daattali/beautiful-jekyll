@@ -159,6 +159,8 @@ The Castles of Tuscany, The Search for Planet X, Under Falling Skies, Praga Capu
 
 * [ ] Crystal Palace
 
+Also, for reference, here's [my list from 2020](../2021-01-31-the-9-greatest-boardgames-discovered-in/).
+
 All new-to-me games played 2021
 -------------------------------
 

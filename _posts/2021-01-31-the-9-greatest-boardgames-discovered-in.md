@@ -148,8 +148,6 @@ Crystal Palace, Pipeline, Hadara, Watergate, Parks, Cooper Island, Isle of Cats,
 * [ ] Bios: Origins
 * [x] The Gallerist
 
-### 
-
 Also, for reference, here's [my list from 2019](../2020-02-08-the-9-bestish-games-discovered-in-2019/).
 
 (Photos from my [@do\_meeples\_dream](https://www.instagram.com/do_meeples_dream/) Instagram account.)
