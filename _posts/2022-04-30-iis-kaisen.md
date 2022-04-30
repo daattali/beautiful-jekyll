@@ -18,4 +18,4 @@ Today, after work, I decided to research and I think I manage to found a very si
 
 ![Iis Config One](../assets/img/posts/iis-config-one.png)
 
-I´m using IIS 10, but I believe these configuration should work starting on ISS 7. Here the link to the material I found most of the resolution to this problem. (https://weblogs.asp.net/owscott/why-is-the-iis-default-app-pool-recycle-set-to-1740-minutes). By the way, I believe it's worth reading Scott Forsyth's blog where he tells the history behind the default 29 hours value for the app pool recycling setting.
+I´m using IIS 10, but I believe these configuration should work starting on ISS 7. Here the link to the material I found most of the resolution to this problem. [Scott Forsyth's blog](https://weblogs.asp.net/owscott/why-is-the-iis-default-app-pool-recycle-set-to-1740-minutes). By the way, I believe it's worth reading Scott Forsyth's blog where he tells the history behind the default 29 hours value for the app pool recycling setting.
