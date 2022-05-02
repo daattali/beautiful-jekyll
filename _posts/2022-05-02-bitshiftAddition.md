@@ -60,7 +60,7 @@ What we see is that in position 0, the remainder step gives us the digit in the 
 
 We can memoize the remainder and carryover steps, by defining lookup arrays: **Remainder** and **Carryover**. **Remainder** looks like the following  
 
-<center> <b> Remainder </b> 
+<b> Remainder </b> 
 
 | . | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |  
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -91,7 +91,6 @@ We can memoize the remainder and carryover steps, by defining lookup arrays: **R
 | 8 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | 9 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 
-</center>
 
 ### Python Function
 
