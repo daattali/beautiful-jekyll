@@ -13,9 +13,9 @@ tags: [someone was wrong, sciences, physique, chimie, tableau périodique]
 status: published
 ...
 
-« **Z. :** Pyyym j'peux me plaindre deux minutes de mon cours de chimie ? Pasque j'ai pas tout tout compris… \
-**PYM :** Mmmmh oui aucun prob… \
-**Z. :** C'était un bail à base de quatre nombres quantiques et de sous-couches électroniques de chépaquoi. »
+| « **Z. :** Pyyym j'peux me plaindre deux minutes de mon cours de chimie ? Pasque j'ai pas tout tout compris…
+| **PYM :** Mmmmh oui aucun prob…
+| **Z. :** C'était un bail à base de quatre nombres quantiques et de sous-couches électroniques de chépaquoi. »
 
 ![](social-distance-scared.gif)
 
