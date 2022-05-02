@@ -17,7 +17,7 @@ status: published
 **PYM :** Mmmmh oui aucun prob… \
 **Z. :** C'était un bail à base de quatre nombres quantiques et de sous-couches électroniques de chépaquoi. »
 
-![](https://acegif.com/wp-content/gif/terrified-67.gif){ width="100%" }
+![](social-distance-scared.gif)
 
 Nan mais faut prévenir avant de balancer de la physique quantique au nez des gens comme ça ! Mais bon vous allez voir ça passe très bien quand on y va pas-à-pas.
 
@@ -51,7 +51,7 @@ Bref les chimistes avaient plein d'infos sur les éléments mais vraiment obtenu
 
 Ouais sauf que… ben il a changé 40 fois le machin vu selon comment on faisait et refaisait les expériences et à la moindre découverte d'un élément c'était la guerre pour le faire rentrer dedans. Mendeleïev était célèbre pour ça : son tableau changeait un peu au gré du vent… Donc les physiciens se foutaient un peu de leur gueule aux chimistes
 
-![](https://acegif.com/wp-content/uploads/2021/4fh5wi/troll-face-42.gif){ width="50%" }
+![](troll-face-steamboat-willie.gif)
 
 Et les chimistes leur répondaient « **Au lieu de faire les cons essayez de trouver pourquoi les éléments, qui sont tous des atomes, réagissent comme ci ou comme ça !** ». Genre histoire qu'on puisse prévoir et comprendre ce qu'on fait, quoi.
 
@@ -78,7 +78,7 @@ Les physiciens ont donc dû essayer de comprendre "comment c'est fait un atome *
 
 Et voilà on se retrouve à essayer de comprendre comment on range les électrons dans un atome… et rapidement on se rend compte qu'on aurait mieux fait d'essayer de comprendre le rangement d'une chambre d'ado, ça aurait été plus simple.
 
-![](https://c.tenor.com/T41eJjy1CU4AAAAC/harley-quinn-chaos.gif){ width="100%" }
+![](harley-quinn-chaos.gif)
 
 # La quête de la Sainte Structure Atomique
 
@@ -90,7 +90,9 @@ Alors attention maintenant commence le défilé des fails…
 
 « _Bah on met les électrons qui tourne autour un peu en vrac chacun avec une orbite qui lui est propre._ »
 
-![](https://c.tenor.com/K4JNKWRlCkAAAAAC/short-dunk-fail.gif){ width="100%" }
+Non. Juste non.
+
+![](short-dunk-fail.gif)
 
 ### Aparté : comment on a su que c'était pas ça ?
 
@@ -104,7 +106,7 @@ En quoi c'est lié à nos électrons ? En fait c'est eux qui émettent la lumiè
 
 1. ils sont tranquillous autour de leurs noyaux
 2. on les excite comme des petits fou avec du champ électrique et/ou de la température
-3. ils ont tout gorgé d'énergie et sont plus trop stable alors il "saute" sur une orbite plus haute (si tu leur file trop d'énergie il arrive même à s'arracher totalement de l'atome qui devient un ion)
+3. ils ont tout gorgé d'énergie et sont plus trop stable alors il "saute" sur une orbite plus haute (si tu leur files trop d'énergie il arrive même à s'arracher totalement de l'atome qui devient un ion)
 4. bon ils perdent assez vite le goût des hautes énergie les petits électrons alors ils finissent par redescendre sauf que…
 5. …ils ont un surplus d'énergie (celle qui les avait fait monter !) alors ils s'en débarrassent en émettant un photon (grain de lumière) de pile poil cette énergie (à chaque énergie correspond une couleur du spectre)
 
@@ -116,7 +118,7 @@ C'est le yoyo des électrons excité !
 
 Et ben si on pouvait mettre des électron en vrac alors ils pourraient sauter à n'importe qu'elle hauteur quand on les excite… et donc on aurait un beau spectre continu avec plein de couleur comme un caca de licorne… sauf que nan on voit 3~4 raies…
 
-![](https://c.tenor.com/vVTjvCz_OsEAAAAC/next-snl.gif){ width="100%" }
+![](next-snl.gif)
 
 ## Essai 2 : On empile les couches
 
@@ -126,7 +128,7 @@ Oui.
 
 Mais non.
 
-![](https://c.tenor.com/ow0Jq7iW_tgAAAAC/why-are-you-still-here-colleen.gif){ width="100%" }
+![](why-are-you-still-here-colleen.gif)
 
 Bon avec l'idée des couches ça marche mieux : les électrons passent d'une couche à l'autre et les énergies (c'est à dire les raies) observées semblent correspondre…
 
@@ -134,11 +136,11 @@ Sauf que… ben statistiquement ça devraient arriver que des fois un électron 
 
 Mais nan. C'est comme si nos électrons se téléportaient !
 
-En plus on a ZÉRO explication pour l'existence de ces couches ! On dirait du boulot de chimiste : quand tu voit un truc, tu le mesures, tu lui donnes un nom ("couche électronique" ici) et tu dis que tu as tout compris et tout expliqué. #chimisteBashing
+En plus on a ZÉRO explication pour l'existence de ces couches ! On dirait du boulot de chimiste : quand tu vois un truc, tu le mesures, tu lui donnes un nom ("couche électronique" ici) et tu dis que tu as tout compris et tout expliqué. #chimisteBashing
 
 Donc en termes de théorie pour expliquer et prévoir c'est zéro
 
-![](https://c.tenor.com/vVTjvCz_OsEAAAAC/next-snl.gif){ width="100%" }
+![](next-snl.gif)
 
 ## Essai 3 : On va en remettre une couche
 
@@ -151,7 +153,7 @@ Donc en termes de théorie pour expliquer et prévoir c'est zéro
 -- 😮… Mais yen a en vrai des s comme ça dans le système solaire ?\
 -- 👉👈 Euh non monsieur…_ »
 
-![](https://c.tenor.com/lDo3IeNB5zsAAAAC/facepalm-dismay.gif){ width="100%" }
+![](facepalm-dismay.gif)
 
 Bref tout ça a commencé à mettre un peu sur la piste de « et si un atome c'était pas un système solaire ma bonne dame ?! hein ! ». Hypothèse, dite, de Roger-le-vieux-papy-du-PMU.
 
@@ -165,7 +167,7 @@ Bon donc on a besoin d'une nouvelle bonne idée !
 
 Hep Jeffrey ! Envoie nous une théorie s'il-te-plait ! 🥂🍾
 
-![](https://c.tenor.com/JR4uWmilDU4AAAAC/fresh-prince-of-bel-air-butler.gif){ width="100%" }
+![](fresh-prince-of-bel-air-butler.gif)
 
 Et la solution est venue, non pas de Jeffrey le majordome du Prince de Bel Air… mais d'un petit physicien inconnu et détesté de ses profs…
 
@@ -180,7 +182,7 @@ Et la solution est venue, non pas de Jeffrey le majordome du Prince de Bel Air�
 …\
 …
 
-![](https://c.tenor.com/1uLcX8z7gn0AAAAC/gifgari-classic-gifgari.gif){ width="100%" }
+![](einstein.gif)
 
 #motherFuckingAlbertEinstein
 
@@ -198,7 +200,7 @@ Il est donc absolument impossible d'envoyer 1.5 quanta d'énergie lumineuse… c
 
 Ainsi était né la "physique quantique"… une physique ou on a des quantités entières fondamentalement impossible à séparer ! [^quantique]
 
-![](https://c.tenor.com/zgx5d2_HKoIAAAAC/ta-da-izzy-moonbow.gif){ width="100%" }
+![](ta-da-izzy-moonbow.gif)
 
 [^quantique]: Oui, maintenant, vous savez d'où vient le mot quantique : ça veut dire quantifiée aka "qui a une quantité entière".
 
@@ -212,7 +214,7 @@ Bordel mais oui ! Avec un électron quantique ça expliquerait ce bail de télé
 
 Bon mais ça veut juste dire qu'on a donné des numéros aux orbites de nos électrons autour du noyau… OK les orbites sont numérotées par des nombres entiers. C'est pas très révolutionnaire…
 
-![](https://c.tenor.com/DVDeIOwIfyAAAAAC/youre-wrong-there.gif){ width="100%" }
+![](youre-wrong-there.gif)
 
 Et bah nan… en fait ça n'a rien à voir. Car en fait depuis le début on essaye de faire tourner des électrons autour de notre noyau comme des p'tites s… mais est-ce que c'est vraiment le cas ?
 
@@ -230,19 +232,15 @@ Donc on a commencé à faire des joli calculs pour voir ce que ça donnait des �
 
 Par exemple la couche 1 c'est… une boule… pas un disque ou même une sphère creuse… nan une grosse bouboule.
 
-![](https://c.tenor.com/PWlEA0iew_8AAAAd/kids-falling-over-beach-ball.gif){ width="100%" }
+![👆électron de couche n=1 attaquant un enfant](kids-falling-over-beach-ball.gif)
 
-👆électron de couche n=1 attaquant un enfant
-
-![](https://c.tenor.com/E5xM8bxFnOgAAAAC/bounce-back.gif){ width="100%" }
-
-👆électron de couche n=2 attaquant 2 enfants…
+![👆électron de couche n=2 attaquant 2 enfants…](bounce-back.gif)
 
 #stopViolence #stopElectron
 
 Mais alors l'électron il tourne dans la boule ?
 
-![](https://c.tenor.com/2xPdaVOIAikAAAAC/umm-well.gif){ width="100%" }
+![](umm-well.gif)
 
 Alors les électrons (comme tous les machins quantiques) il faut plus les voir comme un truc gazeux… l'électron est "flou" il est pas à un endroit particulier…
 
@@ -254,7 +252,7 @@ Et là vous croyez que c'est bizarre ? Non non non mon petite chérie ! Maintena
 
 Si jamais vous essayez de regarder votre électron (par exemple en mesurant sa position avec un appareil de mesure) là il va faire son timide et arrêter de faire mumuse à être un gaz chelou : il va apparaître comme une belle particule avec une belle position bien précise.
 
-![](https://c.tenor.com/3OtNMUR8P4sAAAAd/obama-que-dices.gif){ width="100%" }
+![](obama-wtf.gif)
 
 Genre il "sait qu'on le regarde" ? Disons qu'il réagit au fait qu'on le regarde…
 
@@ -266,13 +264,13 @@ Alors comment on fait pour représenter un **merdier** pareil 😳 ?
 
 On va pas se mentir c'est pas facile de représenter un machin gazeux intangible… le mieux qu'on puisse faire c'est représenter la forme de la zone où il est **TRÈS PROBABLE** que l'électron se trouve (et comme il se déplace très vite là-dedans on sait qu'en fait ça va être là qu'il se trouve "en gros").
 
-![Et voilà à quoi ressemble un électron pour n=1 ](oa-1s.png "Et voilà à quoi ressemble un électron pour n=1 "){ width="100%" }
+![Et voilà à quoi ressemble un électron pour n=1](oa-1s.png "Et voilà à quoi ressemble un électron pour n=1")
 
 👆 **À droite** la forme en 3d autour du noyau et **à gauche** une représentation de la probabilité de présence de l'électron : on voit qu'en fait l'électron est plus probable proche du noyau (les points sont plus denses)
 
 Donc c'est tout ? On a juste des électrons gazeux qui se comportent comme des fantômes et qui flippent qu'on les voit ? Bon bah ça va… au lieu de penser à des orbites plate comme les s on va penser à des bouboules et puis ça sera bon…
 
-![](https://c.tenor.com/2xPdaVOIAikAAAAC/umm-well.gif){ width="100%" }
+![](umm-well.gif)
 
 C'est à dire que là on a vu la couche 1… qui est une bouboule… dès que n = 2 ça devient funky…
 
@@ -280,7 +278,7 @@ Bon déjà combien on peut mettre d'électron dans la couche 1 avant de passer a
 
 2 électrons ! Pourquoi ?
 
-![](https://c.tenor.com/2xPdaVOIAikAAAAC/umm-well.gif){ width="100%" }
+![](umm-well.gif)
 
 En théorie il est impossible en physique quantique d'avoir 2 particules de matière exactement au même endroit (genre on ne peut pas mettre Z. et sa sœur M. exactement au même endroit… l'espace est occupé par l'une ou par l'autre) c'est un peu ce qui défini le concept même de matière : on ne peut pas être au même endroit !
 
@@ -315,16 +313,14 @@ Ok 2 électrons dans la couche 1… maintenant j'en ajoute un 3ème il n'y a plu
 
 Bah déjà ton électron est plus loin du noyau (c'est le principe des couches).
 
-![](https://c.tenor.com/Pwfuidn1ZOMAAAAC/friends-i-knew-it.gif){ width="100%" }
+![](friends-I-knew-it.gif)
 
 Et donc c'est une plus grosse bouboule #épicétou \
 … \
 … \
 …
 
-![](https://c.tenor.com/2xPdaVOIAikAAAAC/umm-well.gif){ width="100%" }
-
-_(on commence à la détester cette dame)_
+![_(on commence à la détester cette dame)_](umm-well.gif)
 
 Alors en partie oui : on a bien une orbitale bouboule plus grosse pour n=2… mais elle est pas toute seule 😅
 
@@ -392,29 +388,29 @@ Certes mais le physicien aime bien quand les paramètres ont un sens physique…
 
 …donc pour ℓ=1 on a pas une bouboule on a un cylindre ?
 
-![](https://c.tenor.com/2xPdaVOIAikAAAAC/umm-well.gif){ width="100%" }
+![](umm-well.gif)
 
 😡🤯🤯
 
 Le cylindre est un exemple de truc avec une direction privilégiée… mais la nature (enfin la résolution exacte des équations) a donné un résultat plus… original ! Jugez par vous-même. Behold the wonderful n=2, ℓ=1 :
 
-![Et voilà à quoi ressemble un électron pour n=1 ](oa-2p.png "Et voilà à quoi ressemble un électron pour n=2 l=1 "){ width="100%" }
+![Et voilà à quoi ressemble un électron pour n=1 ](oa-2p.png "Et voilà à quoi ressemble un électron pour n=2 l=1 ")
 
 On appelle ça une "altère"… c'est un genre de 8 en 3d. Et comme vous pouvez le voir sur le schéma de gauche : la probabilité est nulle au centre et assez élevée au milieu des 2 lobes.
 
 Et il est toujours horizontal comme ça ? Justement non… on a dit qu'il devait y avoir un axe privilégié (ici horizontal) mais en fait il y a 3 cas possibles :
 
-![Les 3 possibilités pour n=2 l=1](oa-all-2p.png "Les 3 possibilités pour n=2 l=1"){ width="100%" }
+![Les 3 possibilités pour n=2 l=1](oa-all-2p.png "Les 3 possibilités pour n=2 l=1")
 
 Soit l'altère est alignée sur l'axe vertical (z) soit sur l'axe de profondeur (y) soit on est aligné sur l'axe de largeur (x). Eh… mais donc on a 3 orbitales différentes… en plus de la bouboule… soit 4 orbitales en tout. Et à deux électrons par orbitales ça fait 8 places 😱😱😱 Ça colle pile-poil aux observations des chimistes !!!!!!
 
-![](https://c.tenor.com/xJ_mJ01nxmUAAAAC/yay-yes-yes-yes.gif){ width="100%" }
+![](yay-yes-yes-yes.gif)
 
 Sauf que oui mais non : ça résout pas notre problème… on a 6 électrons dans l'état n=2 ℓ=1 or on a droit à maximum 2 électrons dans cet état-là !!! Certes… mais on va résoudre ça facilement : il suffit de dire qu'on a un nombre quantique de plus qui dit quel axe on privilégie !
 
 on va l'appeler mℓ ou "**nombre quantique magnétique**" et il aura 3 valeurs possibles : -1, 0 et +1 #magie
 
-![](https://c.tenor.com/VC-fg8LcaaAAAAAd/passando-mesmo-oh-brother.gif){ width="100%" }
+![](baby-disapointed.gif)
 
 **ON NE PEUT PAS S'AMUSER À CRÉER DES NOMBRES QUANTIQUES JUSTE PARCE QU'ON EN A BESOIN** (on est pas des chimistes !!!)
 
@@ -442,7 +438,8 @@ Et pour montrer où sont nos électrons, on a deux façons de les représenter f
 
 1️⃣ on fait des petites cases dans lesquelles on met les électrons sous forme de flèches :
 
-![Exemple pour un atome avec 4 électrons : le béryllium](berylium_couches.jpg "Exemple pour un atome avec 4 électrons : le béryllium")
+![Exemple pour un atome avec 4 électrons : le béryllium](berylium_couches.jpg){ width="50%" }
+
 Mais bon c'est un peu long de noter comme ça…
 
 2️⃣ on se contente de noter le nombre d'électron sur chaque orbitale (en regroupant les orbitales de même mℓ… donc sans séparer 2px 2py et 2pz). Ce qui donne pour le béryllium vu au-dessus :
@@ -453,7 +450,7 @@ Ou pour un atome à 10 électrons (le néon) :
 
 `Ne : 1s² 2s² 2p⁶`
 
-![](https://c.tenor.com/xolIxjMRcUsAAAAC/voila-kick.gif){ width="100%" }
+![](voila-kick.gif)
 
 ## Règles à retenir
 
@@ -465,17 +462,19 @@ Après je pourrais continuer à te faire le niveau 3 puis 4… mais ça servirai
 
 ## Expo de sculptures de ballons
 
-Et si tu te demandes à quoi ça ressemble les orbitales d'après… attention bienvenue dans le monde des gros ballons de forme zarbi. Je vous présente donc 3px, 3py et 3pz :
+Et si vous vous demandez à quoi ça ressemble les orbitales d'après… attention bienvenue dans le monde des gros ballons de forme zarbi. Je vous présente donc 3px, 3py et 3pz :
 
-![3px](3px.jpg){ width="30%" } ![3py](3py.jpg){ width="30%" } ![3pz](3pz.jpg){ width="30%" }
+![3px](3px.jpg "3px"){ width="30%" .inline }
+![3py](3py.jpg "3py"){ width="30%" .inline }
+![3pz](3pz.jpg "3pz"){ width="30%" .inline }
 
 Et maintenant 3dz², 3dxz, 3dyz, 3dxy, 3dx²-y² 👈 oui même les nom deviennent bizarres…
 
-![3dz²](3dz2.jpg){ width="18%" }
-![3dxz](3dxz.jpg){ width="18%" }
-![3dyz](3dyz.jpg){ width="18%" }
-![3dxy](3dxy.jpg){ width="18%" }
-![3dx²-y²](3dx2-y2.jpg){ width="18%" }
+![3dz²](3dz2.jpg "3dz²"){ width="18%" .inline }
+![3dxz](3dxz.jpg "3dxz"){ width="18%" .inline }
+![3dyz](3dyz.jpg "3dyz"){ width="18%" .inline }
+![3dxy](3dxy.jpg "3dxy"){ width="18%" .inline }
+![3dx²-y²](3dx2-y2.jpg "3dx²-y²"){ width="18%" .inline }
 
 Vous vous demandez peut-être pourquoi depuis le début on a des couleurs rouge et bleue sur les orbitales… en fait tant qu'on a qu'un seul atome ça change pas grand-chose… mais quand tu formes des molécules avec 2 atomes, là ça change tout : le rouge ne se combine qu'avec le rouge et le bleu qu'avec le bleu alors que bleu + rouge = du vide (c'est à dire pas de liaison du tout). Bref on s'en fout un peu ici…
 
@@ -498,15 +497,15 @@ Un peu après on s'est rendu compte qu'on avait eu raison : on a découvert des 
 
 Bon voilà maintenant on sait comment sont faites les "_étagères à électrons_" donc on sait les ranger des électrons !
 
-![](https://c.tenor.com/2xPdaVOIAikAAAAC/umm-well.gif){ width="100%" }
+![](umm-well.gif)
 
-![](https://c.tenor.com/OlLGd7QUohsAAAAC/friends-joey.gif){ width="100%" }
+![](friends-joey-scared.gif)
 
 (encore elle)
 
 Alors certes on a de belles étagères… mais, comme en atteste ~~ma chambre~~ **une chambre d'ado**, il y a clairement plusieurs méthodes pour utiliser une étagère :
 
-![Je suis sûr qu'il y a une étagère quelque part](chambre_ado.jpg){ width="100%" }
+![Je suis sûr qu'il y a une étagère quelque part](chambre_ado.jpg)
 
 👆 Là techniquement IL Y A un placard et une étagère… quelque part…
 
@@ -516,7 +515,7 @@ Euh mais alors c'est facile ! On remplit dans l'ordre `1s 2s 2p 3s 3p 3d 4s` etc
 
 Nan. Car en fait les énergies des différentes sous-couche des fois il empiète un peu sur le niveau d'au-dessus et ça fout un peu le bordel.
 
-![Voilà ce qui se passe quand tu laisse un crayon à un chimiste, il dessine des niveau d'énergie !](niveaux_d_energie.jpg){ width="100%" }
+![Voilà ce qui se passe quand tu laisses un crayon à un chimiste, il dessine des niveau d'énergie !](niveaux_d_energie.jpg)
 
 Les chimistes ils ont fait un joli schéma vu qu'ils ont passé 50 ans à mesure toutes leur fucking raies dans tous les sens ! On y voit par exemple que si on veut aller par énergie croissante au début ça marche bien : `1s 2s 2p 3s 3p`… et là c'est le drame 😱 `4s` avant `3d` 😱😱😱
 
@@ -540,13 +539,13 @@ et ensuite vous allez remplir en faisant des diagonales bas-gauche :
 
 Et ça correspond bien à la mesure des chimistes : 4s se remplit avant 3d 🥳
 
-![](https://c.tenor.com/nutTDR5ui6kAAAAC/victory-sweet.gif){ width="100%" }
+![](tastes-like-victory-victory.gif)
 
 ## Marie Kondo, vient ranger mes éléments !
 
 Bon bah voilà on sait ranger les électrons ! Mais est-ce que ça permettrait pas aussi de ranger les éléments eux même ???
 
-![](https://c.tenor.com/1l6cDDl4sN8AAAAC/salon-line-todecacho.gif){ width="100%" }
+![](salon-line-we-can-do-it.gif)
 
 La seule couche qui compte vraiment pour la chimie, c'est celle qui réagit… c'est à dire celle qui est en surface donc la plus haute. 🤔 Bon déjà on va ranger ensemble tous les éléments qui ont pour dernière orbitale remplie les orbitales s et on va les ranger par n croissant (donc du plus léger au plus lourd puisque pour avoir un n grand il faut plus d'électrons donc plus de proton dans le noyau donc des atomes plus lourd).
 
@@ -566,15 +565,15 @@ He Be Mg Ca Sr Ba Ra
 
 Bon on pourrait continuer pareil pour les orbitales p… (il n'y en aurait pas pour n=1 par contre car les orbitales p ça commence à n=2) et idem pour les orbitales d et puis même f. Et genre on mettrait ça dans un tableau : une colonne pour les s, 3 colonnes pour les p (qui ont 3 orbitales) 5 colonnes pour les d (car 5 orbitales) et 7 colonnes pour les f (car 7 orbitales)…
 
-![Feng shui ta mère des éléments !](tableau-orbitales.jpg){ width="100%" }
+![Feng shui ta mère des éléments !](tableau-orbitales.jpg)
 
 👆 Feng shui ta mère des éléments ! C'est comme ça qu'il faudrait ranger ! Bon chaque case correspond à 2 éléments en vrai car on a 2 électrons par orbitale…
 
 Et si on met les noms des éléments là-dedans ça donne quoi ?
 
-![Mais… mais… mais…](tableau-elements.jpg){ width="100%" }
+![Mais… mais… mais…](tableau-elements.jpg)
 
-![](https://c.tenor.com/W7-hNE-P_iUAAAAd/afraid-cat.gif){ width="100%" }
+![](afraid-cat.gif)
 
 …c'est la fucking table de Mendeleïev !!!!! Le tableau périodique des éléments !!!!!!!!!!!!!!!!!!!!!!!
 
@@ -594,7 +593,9 @@ Donc la physique quantique avec ses électrons gazeux qui se téléportent, qui 
 - l'ordre de remplissage avec la **règle Klechlowsk**i (les diagonale bas-gauche)
 - tout ça a été obtenu grâce au boulot de _chimistes absolument géniaux_ qui ont bossé des années pour essayer de trouver une théorie qui explique des situations à priori incompréhensibles…
 
-Ah j'oubliais… il y a un taré qui a réussi à vraiment représenter en 3D ce que sont exactement les orbitales atomiques… c'est putain super dur, car il faut représenter les probabilités, le mouvement et tout (et même les 1s en fait c'est assez complexe, car la probabilité toutes simple que je t'ai montré c'est celle du 1s… le 2s ça forme comme des bouboules concentriques : [A Better Way To Picture Atoms](https://youtu.be/W2Xb2GFK2yc)
+Ah j'oubliais… il y a un taré qui a réussi à vraiment représenter en 3D ce que sont exactement les orbitales atomiques… c'est putain super dur, car il faut représenter les probabilités, le mouvement et tout (et même les 1s en fait c'est assez complexe, car la probabilité toutes simple que je t'ai montré c'est celle du 1s… le 2s ça forme comme des bouboules concentriques :
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/W2Xb2GFK2yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Remerciements
 

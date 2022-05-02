@@ -1,0 +1,71 @@
+/*
+Customisation made by PYM to the Editorial by HTML5 UP template
+*/
+
+/**************************************************************************************/
+/********************************width of content**************************************/
+/* Centered text 75 characters wide is optimal for reading content if view port is    */
+/* enough. */
+
+#main section.content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 75ch) {
+  #main section.content {
+    width: 75ch;
+  }
+}
+
+/**************************************************************************************/
+/*****************************images and inline images*********************************/
+
+#main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#main img.inline {
+  display: inline;
+}
+
+/**************************************************************************************/
+/****************************figure and figure caption*********************************/
+
+#main figure {
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+#main figure figcaption {
+  font-size: smaller;
+  text-align: center;
+}
+
+/**************************************************************************************/
+/**********************************width of gifs***************************************/
+
+#main img[src$=".gif"] {
+  width: 60%;
+}
+
+@media screen and (max-width: 1680px) {
+  #main img[src$=".gif"] {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main img[src$=".gif"] {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 736px) {
+  #main img[src$=".gif"] {
+    width: 100%;
+  }
+}
