@@ -42,20 +42,25 @@ We discuss what they mean in this example.
 * Start with two terms: (3,8)
 * Remainder Step: remainder(3,8) = 1 -- beacause 3+8 = 11 mod 10 = 1
 * Carryover Step: carryover(3,8) = 1 -- because 3+8 > 9
+* Output Array: [1]
 
 **Position 1**
 * Start with two terms: (2, 4)
 * Bring forward remainder term from prior step: (2+1, 4)
-* Remainder Step: remainder(3,8) = 1 -- beacause 3+8 = 11 mod 10 = 1
-* Carryover Step: carryover(3,8) = 1 -- because 3+8 > 9
+* Remainder Step: remainder(3,4) = 7 
+* Carryover Step: carryover(3,4) = 0
+* Output Array: [7, 1]
 
-What we see is that in position 0, the remainder step gives us the digit in the output, whereas the carry over step will increment the digits in the next position. 
+**Final Step**
+* Once each array is exhausted, then simply concatenate and return output array: 71
+
+What we see is that in position 0, the remainder step gives us the digit in the output, whereas the carry over step will increment the digits in the next position. We repeat this process, appending an output array using the remainder step until we have exhausted both arrays.
 
 ### Speeding up performance using memoization
 
 We can memoize the remainder and carryover steps, by defining lookup arrays: **Remainder** and **Carryover**. **Remainder** looks like the following  
 
-<center> <b> Remainder </b> </center>
+<center> <b> Remainder </b> 
 
 | . | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |  
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -69,6 +74,7 @@ We can memoize the remainder and carryover steps, by defining lookup arrays: **R
 | 7 | 7 | 8 | 9 | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
 | 8 | 8 | 9 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | 9 | 9 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+    
 
 **Carryover**
 
@@ -84,6 +90,8 @@ We can memoize the remainder and carryover steps, by defining lookup arrays: **R
 | 7 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | 8 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | 9 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+
+</center>
 
 ### Python Function
 
