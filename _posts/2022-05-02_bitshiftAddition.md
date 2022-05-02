@@ -3,8 +3,6 @@ layout : post
 title : Bitshifting to improved performance
 ---
 
-# Addition Performance, or Why Bit Shifts are Your Friend?
-
 ## TLDR    
 I walk through an algorithm to do addition using Python. Using bitshifting and bitmasking and C++ extension modules results in nearly on-par performance with base python addtion.
 
