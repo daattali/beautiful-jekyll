@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Bitshifting to improved performance
+title : How to do addition fast, or bitshifting to improve performance
 ---
 
 ## TLDR    
