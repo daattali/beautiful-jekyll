@@ -54,7 +54,7 @@ The beginning of My Simple Planner gives you your monthly overviews, followed by
 
 ### MY SIMPLE HOMESCHOOL PLANNER
 
-Need a simple homeschooling planner for your homeschool planning needs too? My Simple Homeschool Planner is designed with simplicity in mind. Many of the pages can be multipurposed. For instance, you can use the daily planning checklist sheet for individual checklists or for daily planning for the family.
+Need a simple homeschooling planner for your homeschool planning needs too? **My Simple Homeschool Planner** is designed with simplicity in mind. Many of the pages can be multipurposed. For instance, you can use the daily planning checklist sheet for individual checklists or for daily planning for the family.
 
 **ABOUT My Simple Homeschool Planner:**
 
