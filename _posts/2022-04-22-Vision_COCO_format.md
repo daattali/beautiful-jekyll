@@ -1,13 +1,13 @@
 ---
 layout: post
 title: COCO format
-subtitle: 파일 이름이 숫자일 시 "naturally"하게 정렬하는 라이브러리
+subtitle: Microsoft's Common Objects in Context dataset(COCO)
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [data format, COCO]
 ---
-Microsoft's Common Objects in Context dataset(COCO)
+
 
 annotations(bounding boxes, object classes, etc)과 image metadata(height, width)를 
 JSON 형식으로 정의하였다.   
