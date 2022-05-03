@@ -19,7 +19,7 @@ from pathlib import Path
 1. 서브 디렉터리 나열:
 ```commandline
 p = Path('')
-[x for x in p.iterdir() if x.isdir()]
+[x for x in p.iterdir() if x.is_dir()]
 ```
 iterdir()는 경로가 디렉터리를 가리킬 때, 디렉터리 내용의 경로 객체를 산출한다.
 2. 폴더 트리에 있는 파이썬 소스 파일 나열:
