@@ -59,3 +59,29 @@ Tracking grocery prices to save money
 America's cheapest family book
 
 Pause subscriptiojns
+
+Comparing food unit prices
+
+Buyingin the bulk for things that make sense
+
+Make own bread
+
+Flyer shop and meal plan based on what's on sale
+
+Try not to waste food
+
+Buy meat on sale and freeze
+
+Only shop 1X a week and never shop hungry
+
+Same base grocery list, meal rotation, order online and pickup
+
+Soups and stews very afforable
+
+eating lessmeat and replacingwith alternatives
+
+some frozen and canned veggies, fish cheaper than fresh
+
+make vs buy snacks
+
+simplify: make bread vs buy rolls, wraps, bread, crust etc
