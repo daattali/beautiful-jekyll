@@ -85,3 +85,25 @@ some frozen and canned veggies, fish cheaper than fresh
 make vs buy snacks
 
 simplify: make bread vs buy rolls, wraps, bread, crust etc
+
+Wait on purchases as much as possible...make do or find secondhand 
+
+ask: do we really need this?
+
+bring your own snacks vs buying on the road
+
+watch your food waste and try to prevent for the future
+
+leave in in your cart - for 1 week! before purchasing
+
+Unsubscirbe from store emails
+
+avoid restaurants and takeout
+
+Find a way to do it yourselves as much as possible ie haricuts
+
+buy offbrand where possible
+
+reduce takeout or treat days
+
+hang onto your vehicle for as long as you can...buy second hand when you need a new one
