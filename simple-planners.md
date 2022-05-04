@@ -59,6 +59,18 @@ Need a simple homeschooling planner for your homeschool planning needs too? **My
 **ABOUT My Simple Homeschool Planner:**
 
 * 5 cover page options
+* Yearly planning blocks
+* Monthly overviews
+* Daily planning sheets that can also double as weekly and/or checklists
+* Category planning blocks
+* Routine sheet
+* Checklist page
+* Block plan page
+* Loop plan page
+* Running to do list
+* Book list
+* Braindump blocks
+* Notes pages
 
 **LAYOUT of the planner:**
 
