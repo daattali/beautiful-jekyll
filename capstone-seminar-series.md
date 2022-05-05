@@ -12,7 +12,7 @@ during the DSCI 591 Capstone Project course. Talks will be held from 2-3pm in DM
 |Date|Speaker|Seminar Title|
 |:---|:---:|:---:|
 | 2022/05/13 | Scott Mackie, Amazon | TBD |
-| 2022/05/20 | [Zaid Haddad](#zaid-haddad), Slalom | TBD |
+| 2022/05/20 | [Zaid Haddad](#zaid-haddad), Slalom | [Slalom’s MLOps Framework](#slaloms-mlops-framework) |
 | 2022/05/27 | Carrie Cheung, NuData Security, A Mastercard Company | TBD |
 | 2022/06/03 | Adina Williams, Meta | TBD |
 | 2022/06/10 | [Christo Kirov](#christo-kirov), Google | [Low-Resource Multilingual NLP at Google](#low-resource-multilingual-nlp-at-google) |
