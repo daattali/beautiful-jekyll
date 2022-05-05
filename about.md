@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /
-title: About
+title: Fleur Gaudfernau
 subtitle: PhD student at Université de Paris / INSERM / INRIA / PR[AI]RIE
 ---
 
