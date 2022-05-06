@@ -100,3 +100,11 @@ Customisation made by PYM to the Editorial by HTML5 UP template
   content: "";
   margin-top: 0.8em;
 }
+
+/**************************************************************************************/
+/************************************big centered text*********************************/
+
+#main .big-centered {
+  text-align: center;
+  font-size: 3em;
+}

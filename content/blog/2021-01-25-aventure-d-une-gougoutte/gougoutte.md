@@ -27,8 +27,7 @@ peut-être même traverser une partie de la couche terrestre sous marine_ »
 
 ## Someone was wrong…
 
-![](https://imgs.xkcd.com/comics/duty_calls.png){ width="100%" }
-_[Dessin de Randall Munroe](https://xkcd.com/386/) sous [licence CC BY-NC 2.5](http://creativecommons.org/licenses/by-nc/2.5/)_{: .small }
+![[Dessin de Randall Munroe](https://xkcd.com/386/) sous [licence CC BY-NC 2.5](http://creativecommons.org/licenses/by-nc/2.5/)](duty_calls.png)
 
 #someoneIsWrongOnTheInternet et j’ai voulu expliquer pourquoi… accrochez-vous au
 pinceau, j’enlève l’échelle. Et je vous préviens hier j’étais très, très, très
@@ -102,7 +101,7 @@ rentable que sa masse/taille. Mais comme la vitesse est limitée ça redevient
 intéressant d’augmenter la masse à partir de 5 664 400 tonnes… ouais ça fait
 une grosse goutte !
 
-![](https://media1.tenor.com/images/5401b166e336c58f25badd7351b97d3b/tenor.gif?itemid=18775092){ width="100%" }
+![The gougoutte](droplet.gif)
 
 ## LAST MINUTE EDIT
 
@@ -135,9 +134,9 @@ téléfilms catastrophes et les documentaires…
 
 ## Round 2… Fight !
 
-![](https://media.giphy.com/media/cjbaK5f7vvwyQpImOf/giphy.gif){ width="100%" }
+![Accrochez-vous à vos équations, c'est reparti !](round-two.gif)
 
-Pour répondre à ta question sur le vrai effet d’une goutte d’eau à, disons, 99 %
+Pour répondre à ta question sur le vrai effet d’une goutte d’eau à, disons, 99%
 de la vitesse de la lumière c’est déjà plus compliqué.
 
 En gros on oublie le moyen pour lui faire atteindre cette vitesse et on va
@@ -222,9 +221,11 @@ $$E_c = \frac{1}{2}mv^2$$
 donc ici $2,048\times10^{18}$ J. Militarisons le machin pour se rendre compte :
 491 520 000 tn…
 
-[**491 méga-tonnes de TNT**]{ style="font-size: 3em" }
+:::{.big-centered}
+**491 méga-tonnes de TNT**
+:::
 
-![](https://media.giphy.com/media/aijty3bkVmxR6/giphy.gif){ width="100%" }
+![Say whaaaaaaaaaat?!](wtf-say-what.gif)
 
 Je viens de gagner le plus concours #kikikalaplugrosse du monde !
 
@@ -233,4 +234,4 @@ Bomba qui faisait 57 Mtn moi ma bouboule elle fait plus de 4 Tsar Bomba.
 
 #gnagnagna #bouboule #desole #profdephysique
 
-![](https://media.giphy.com/media/U23rlgyL8QmQn7xrqt/giphy.gif){ width="100%" }
+![BOOM](mic-drop-boom.gif)
