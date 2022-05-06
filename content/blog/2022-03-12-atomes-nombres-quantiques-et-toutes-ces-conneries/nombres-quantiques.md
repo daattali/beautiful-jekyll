@@ -17,7 +17,7 @@ status: published
 | **PYM :** Mmmmh oui aucun prob…
 | **Z. :** C'était un bail à base de quatre nombres quantiques et de sous-couches électroniques de chépaquoi. »
 
-![](social-distance-scared.gif)
+![Rhaaaaa de la quantique !!!!!!](social-distance-scared.gif)
 
 Nan mais faut prévenir avant de balancer de la physique quantique au nez des gens comme ça ! Mais bon vous allez voir ça passe très bien quand on y va pas-à-pas.
 
@@ -51,7 +51,7 @@ Bref les chimistes avaient plein d'infos sur les éléments mais vraiment obtenu
 
 Ouais sauf que… ben il a changé 40 fois le machin vu selon comment on faisait et refaisait les expériences et à la moindre découverte d'un élément c'était la guerre pour le faire rentrer dedans. Mendeleïev était célèbre pour ça : son tableau changeait un peu au gré du vent… Donc les physiciens se foutaient un peu de leur gueule aux chimistes
 
-![](troll-face-steamboat-willie.gif)
+![Il est possible que je sois physicien](troll-face-steamboat-willie.gif)
 
 Et les chimistes leur répondaient « **Au lieu de faire les cons essayez de trouver pourquoi les éléments, qui sont tous des atomes, réagissent comme ci ou comme ça !** ». Genre histoire qu'on puisse prévoir et comprendre ce qu'on fait, quoi.
 
@@ -78,7 +78,7 @@ Les physiciens ont donc dû essayer de comprendre "comment c'est fait un atome *
 
 Et voilà on se retrouve à essayer de comprendre comment on range les électrons dans un atome… et rapidement on se rend compte qu'on aurait mieux fait d'essayer de comprendre le rangement d'une chambre d'ado, ça aurait été plus simple.
 
-![](harley-quinn-chaos.gif)
+![Mathématicienne étudiant la théorie du chaos](harley-quinn-chaos.gif)
 
 # La quête de la Sainte Structure Atomique
 
@@ -88,11 +88,11 @@ Alors attention maintenant commence le défilé des fails…
 
 ## Essai 1 : Planétologie de maternelle
 
+:::{.dialog}
 « _Bah on met les électrons qui tourne autour un peu en vrac chacun avec une orbite qui lui est propre._ »
+:::
 
-Non. Juste non.
-
-![](short-dunk-fail.gif)
+![Non. Juste non.](short-dunk-fail.gif)
 
 ### Aparté : comment on a su que c'était pas ça ?
 
@@ -118,7 +118,7 @@ C'est le yoyo des électrons excité !
 
 Et ben si on pouvait mettre des électron en vrac alors ils pourraient sauter à n'importe qu'elle hauteur quand on les excite… et donc on aurait un beau spectre continu avec plein de couleur comme un caca de licorne… sauf que nan on voit 3~4 raies…
 
-![](next-snl.gif)
+![Si c'est pas malheureux](next-snl.gif)
 
 ## Essai 2 : On empile les couches
 
@@ -128,7 +128,7 @@ Oui.
 
 Mais non.
 
-![](why-are-you-still-here-colleen.gif)
+![Bon faut que je reprenne de l'aspirine moi…](why-are-you-still-here-colleen.gif)
 
 Bon avec l'idée des couches ça marche mieux : les électrons passent d'une couche à l'autre et les énergies (c'est à dire les raies) observées semblent correspondre…
 
@@ -140,22 +140,24 @@ En plus on a ZÉRO explication pour l'existence de ces couches ! On dirait du bo
 
 Donc en termes de théorie pour expliquer et prévoir c'est zéro
 
-![](next-snl.gif)
+![Zéro, on vous dit !](next-snl.gif)
 
 ## Essai 3 : On va en remettre une couche
 
-« _Bon bah on a qu'à dire qu'il y a des "p'tits niveaux" à l'intérieur des gros niveau… \
--- Mais bordel ça résout aucun des problèmes !? mec ! Tu t'en rends compte ou bien ?? et en plus c'est plus compliqué et ça explique rien de plus ! \
--- 👉👈 bah oui mais ça décrit mieux les petite sous-raies qu'on a vraiment observé en plus des grosses raies…\
--- MAIS J'EN AI MÊME PAS PARLÉ !\
--- 👉👈 Bahouimécémoinpire\
--- RIEN DU TOUT ! ET D'OÙ TU SORS TON IDÉE DE SOUS-NIVEAU LÀ ?\
--- 😮… Mais yen a en vrai des s comme ça dans le système solaire ?\
--- 👉👈 Euh non monsieur…_ »
+:::{.dialog}
+| « Bon bah on a qu'à dire qu'il y a des "p'tits niveaux" à l'intérieur des gros niveau…
+| — Mais bordel ça résout aucun des problèmes !? mec ! Tu t'en rends compte ou bien ?? et en plus c'est plus compliqué et ça explique rien de plus !
+|  — 👉👈 bah oui mais ça décrit mieux les petite sous-raies qu'on a vraiment observé en plus des grosses raies…\
+|  — MAIS J'EN AI MÊME PAS PARLÉ !
+|  — 👉👈 Bahouimécémoinpire
+|  — RIEN DU TOUT ! ET D'OÙ TU SORS TON IDÉE DE SOUS-NIVEAU LÀ ?
+|  — 😮… Mais yen a en vrai des s comme ça dans le système solaire ?
+|  — 👉👈 Euh non monsieur… »
+:::
 
-![](facepalm-dismay.gif)
+![Nan mais je sais plus quoi dire…](facepalm-dismay.gif)
 
-Bref tout ça a commencé à mettre un peu sur la piste de « et si un atome c'était pas un système solaire ma bonne dame ?! hein ! ». Hypothèse, dite, de Roger-le-vieux-papy-du-PMU.
+Bref tout ça a commencé à mettre un peu sur la piste de « _et si un atome c'était pas un système solaire ma bonne dame ?! hein !_ ». Hypothèse, dite, de Roger-le-vieux-papy-du-PMU.
 
 Je vous passe tous les essais bizarres, compliqués et passablement foireux de l'époque. Nan il fallait se rendre à l'évidence un atome ça fonctionne pas comme un système solaire avec des jolis petits électrons qui tournent autour d'un gros noyau… [^foiritude]
 
@@ -167,24 +169,22 @@ Bon donc on a besoin d'une nouvelle bonne idée !
 
 Hep Jeffrey ! Envoie nous une théorie s'il-te-plait ! 🥂🍾
 
-![](fresh-prince-of-bel-air-butler.gif)
+![Aller [Jeffrey](https://youtu.be/DrQfZ96rX18) danse à la Carlton](fresh-prince-of-bel-air-butler.gif)
 
 Et la solution est venue, non pas de Jeffrey le majordome du Prince de Bel Air… mais d'un petit physicien inconnu et détesté de ses profs…
 
-…un mec banal…\
-…dont personne n'a retenu le blaze…\
-…un illustre inconnu…\
-…vraiment…\
-…\
-…\
-…mal coiffé en plus !\
-…\
-…\
-…
+| …un mec banal…
+| …dont personne n'a retenu le blaze…
+| …un illustre inconnu…
+| …vraiment…
+| …
+| …
+| …mal coiffé en plus !
+| …
+| …
+| …
 
-![](einstein.gif)
-
-[#motherFuckingAlbertEinstein](https://xkcd.com/1233/){.hashtag}
+![[#motherFuckingAlbertEinstein](https://xkcd.com/1233/){.hashtag}](einstein.gif)
 
 Il a eu son Prix Nobel absolument pas pour sa théorie de la relativité… nan mais sur un truc tout moisi : l'effet photo-électrique.
 
@@ -200,7 +200,7 @@ Il est donc absolument impossible d'envoyer 1.5 quanta d'énergie lumineuse… c
 
 Ainsi était né la "physique quantique"… une physique ou on a des quantités entières fondamentalement impossible à séparer ! [^quantique]
 
-![](ta-da-izzy-moonbow.gif)
+![On parlait justement de caca de licorne tout à l'heure](ta-da-izzy-moonbow.gif)
 
 [^quantique]: Oui, maintenant, vous savez d'où vient le mot quantique : ça veut dire quantifiée aka "qui a une quantité entière".
 
@@ -214,7 +214,7 @@ Bordel mais oui ! Avec un électron quantique ça expliquerait ce bail de télé
 
 Bon mais ça veut juste dire qu'on a donné des numéros aux orbites de nos électrons autour du noyau… OK les orbites sont numérotées par des nombres entiers. C'est pas très révolutionnaire…
 
-![](youre-wrong-there.gif)
+![Paf !](youre-wrong-there.gif)
 
 Et bah nan… en fait ça n'a rien à voir. Car en fait depuis le début on essaye de faire tourner des électrons autour de notre noyau comme des p'tites s… mais est-ce que c'est vraiment le cas ?
 
@@ -241,7 +241,7 @@ Par exemple la couche 1 c'est… une boule… pas un disque ou même une sphère
 
 Mais alors l'électron il tourne dans la boule ?
 
-![](umm-well.gif)
+![Pas tout à fait…](umm-well.gif)
 
 Alors les électrons (comme tous les machins quantiques) il faut plus les voir comme un truc gazeux… l'électron est "flou" il est pas à un endroit particulier…
 
@@ -253,7 +253,7 @@ Et là vous croyez que c'est bizarre ? Non non non mon petite chérie ! Maintena
 
 Si jamais vous essayez de regarder votre électron (par exemple en mesurant sa position avec un appareil de mesure) là il va faire son timide et arrêter de faire mumuse à être un gaz chelou : il va apparaître comme une belle particule avec une belle position bien précise.
 
-![](obama-wtf.gif)
+![What the presidential fuck ?!](obama-wtf.gif)
 
 Genre il "sait qu'on le regarde" ? Disons qu'il réagit au fait qu'on le regarde…
 
@@ -269,9 +269,9 @@ On va pas se mentir c'est pas facile de représenter un machin gazeux intangible
 
 👆 **À droite** la forme en 3d autour du noyau et **à gauche** une représentation de la probabilité de présence de l'électron : on voit qu'en fait l'électron est plus probable proche du noyau (les points sont plus denses)
 
-Donc c'est tout ? On a juste des électrons gazeux qui se comportent comme des fantômes et qui flippent qu'on les voit ? Bon bah ça va… au lieu de penser à des orbites plate comme les s on va penser à des bouboules et puis ça sera bon…
+Donc c'est tout ? On a juste des électrons gazeux qui se comportent comme des fantômes et qui flippent qu'on les voit ? Bon bah ça va… au lieu de penser à des orbites plate comme celle des planètes on va penser à des bouboules et puis ça sera bon…
 
-![](umm-well.gif)
+![Pas tout à fait…](umm-well.gif)
 
 C'est à dire que là on a vu la couche 1… qui est une bouboule… dès que n = 2 ça devient funky…
 
@@ -279,9 +279,9 @@ Bon déjà combien on peut mettre d'électron dans la couche 1 avant de passer a
 
 2 électrons ! Pourquoi ?
 
-![](umm-well.gif)
+![C'est quoi la dose max de doliprane par heure ?](its-a-bit-more-complicated-freecodecamp.gif)
 
-En théorie il est impossible en physique quantique d'avoir 2 particules de matière exactement au même endroit (genre on ne peut pas mettre Z. et sa sœur M. exactement au même endroit… l'espace est occupé par l'une ou par l'autre) c'est un peu ce qui défini le concept même de matière : on ne peut pas être au même endroit !
+En théorie il est impossible en physique quantique d'avoir 2 particules de matière exactement au même endroit (genre on ne peut pas mettre Mlle Z. et sa sœur M. exactement au même endroit… l'espace est occupé par l'une ou par l'autre) c'est un peu ce qui défini le concept même de matière : on ne peut pas être au même endroit !
 
 Et quand il s'agit de particules quantiques c'est encore plus général : il est impossible qu'elles aient les même état quantique…
 
@@ -314,7 +314,7 @@ Ok 2 électrons dans la couche 1… maintenant j'en ajoute un 3ème il n'y a plu
 
 Bah déjà ton électron est plus loin du noyau (c'est le principe des couches).
 
-![](friends-I-knew-it.gif)
+![Physicien prenant sur le fait un chimiste avec un livre physique entre les mains](friends-I-knew-it.gif)
 
 Et donc c'est une plus grosse bouboule [#épicétou](https://youtu.be/N8MbznzLpqw){.hashtag} \
 … \
@@ -390,9 +390,7 @@ Certes mais le physicien aime bien quand les paramètres ont un sens physique…
 
 …donc pour ℓ=1 on a pas une bouboule on a un cylindre ?
 
-![](umm-well.gif)
-
-😡🤯🤯
+![😡🤯🤯](umm-well.gif)
 
 Le cylindre est un exemple de truc avec une direction privilégiée… mais la nature (enfin la résolution exacte des équations) a donné un résultat plus… original ! Jugez par vous-même. Behold the wonderful n=2, ℓ=1 :
 
@@ -406,13 +404,13 @@ Et il est toujours horizontal comme ça ? Justement non… on a dit qu'il devait
 
 Soit l'altère est alignée sur l'axe vertical (z) soit sur l'axe de profondeur (y) soit on est aligné sur l'axe de largeur (x). Eh… mais donc on a 3 orbitales différentes… en plus de la bouboule… soit 4 orbitales en tout. Et à deux électrons par orbitales ça fait 8 places 😱😱😱 Ça colle pile-poil aux observations des chimistes !!!!!!
 
-![](yay-yes-yes-yes.gif)
+![Vous voyez bien que vous pouvez servir à quelque chose les gars !](yay-yes-yes-yes.gif)
 
 Sauf que oui mais non : ça résout pas notre problème… on a 6 électrons dans l'état n=2 ℓ=1 or on a droit à maximum 2 électrons dans cet état-là !!! Certes… mais on va résoudre ça facilement : il suffit de dire qu'on a un nombre quantique de plus qui dit quel axe on privilégie !
 
 on va l'appeler mℓ ou "**nombre quantique magnétique**" et il aura 3 valeurs possibles : -1, 0 et +1 [#magie](https://melscience.com/US-en/articles/chemical-magic-tricks/){.hashtag}
 
-![](baby-disapointed.gif)
+![Nan mais là on progressait…](baby-disapointed.gif)
 
 **ON NE PEUT PAS S'AMUSER À CRÉER DES NOMBRES QUANTIQUES JUSTE PARCE QU'ON EN A BESOIN** (on est pas des chimistes !!!)
 
@@ -452,7 +450,7 @@ Ou pour un atome à 10 électrons (le néon) :
 
 `Ne : 1s² 2s² 2p⁶`
 
-![](voila-kick.gif)
+![Boo-ya](voila-kick.gif)
 
 ## Règles à retenir
 
@@ -499,11 +497,9 @@ Un peu après on s'est rendu compte qu'on avait eu raison : on a découvert des 
 
 Bon voilà maintenant on sait comment sont faites les "_étagères à électrons_" donc on sait les ranger des électrons !
 
-![](umm-well.gif)
+![(encore elle)](umm-well.gif)
 
-![](friends-joey-scared.gif)
-
-(encore elle)
+![Nooooooon](friends-joey-scared.gif)
 
 Alors certes on a de belles étagères… mais, comme en atteste ~~ma chambre~~ **une chambre d'ado**, il y a clairement plusieurs méthodes pour utiliser une étagère :
 
@@ -541,13 +537,13 @@ et ensuite vous allez remplir en faisant des diagonales bas-gauche :
 
 Et ça correspond bien à la mesure des chimistes : 4s se remplit avant 3d 🥳
 
-![](tastes-like-victory-victory.gif)
+![Est-ce qu'on serait-y pas en train de comprendre là ?!](tastes-like-victory-victory.gif)
 
 ## Marie Kondo, vient ranger mes éléments !
 
 Bon bah voilà on sait ranger les électrons ! Mais est-ce que ça permettrait pas aussi de ranger les éléments eux même ???
 
-![](salon-line-we-can-do-it.gif)
+![Marie Kondo version afro](salon-line-we-can-do-it.gif)
 
 La seule couche qui compte vraiment pour la chimie, c'est celle qui réagit… c'est à dire celle qui est en surface donc la plus haute. 🤔 Bon déjà on va ranger ensemble tous les éléments qui ont pour dernière orbitale remplie les orbitales s et on va les ranger par n croissant (donc du plus léger au plus lourd puisque pour avoir un n grand il faut plus d'électrons donc plus de proton dans le noyau donc des atomes plus lourd).
 
@@ -575,7 +571,7 @@ Et si on met les noms des éléments là-dedans ça donne quoi ?
 
 ![Mais… mais… mais…](tableau-elements.jpg)
 
-![](afraid-cat.gif)
+![Oh My Holly Fucking God of Everything !!!!!!!](afraid-cat.gif)
 
 …c'est la fucking table de Mendeleïev !!!!! Le tableau périodique des éléments !!!!!!!!!!!!!!!!!!!!!!!
 
