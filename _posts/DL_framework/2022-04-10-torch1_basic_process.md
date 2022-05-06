@@ -17,6 +17,7 @@ tags: [pytorch]
 7. 테스트 함수 정의 (학습된 모델 사용, test dataloader 사용)
 8. 학습 및 테스트
    
+  
 ## 데이터 작업
 파이토치에는 데이터 작업을 위한 기본 요소로 torch.utils.data.DataLoader와 torch.utils.data.Dataset이 있다.
 - Dataset은 샘플과 정답을 저장하고, DataLoader는 Dataset을 순회 가능한 객체(iterable)로 감싼다.
@@ -51,7 +52,7 @@ test_data = datasets.FashionMNIST(
     transform=ToTensor(),
 )
 ``` 
-   
+##     
 ## 데이터 로딩
 - 데이터로더를 이용해 dataset을 iterable 객체로 감싸고, 학습 시 데이터를 batch 단위로 불러올 수 있도록 한다.
 - 데이터로더를 통해 자동화된 배치, 샘플링, 섞기, 및 다중 프로세스로 데이터 불러오기를 지원한다.
