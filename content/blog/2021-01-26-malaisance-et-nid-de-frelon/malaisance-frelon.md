@@ -75,7 +75,7 @@ $$
 
 Elle était pas juste sur le haut de la cuisse, nooooon, elle était à la fucking couture d'entre-jambe du short 😭
 
-#rienNePeutSePasserSimplement
+[#rienNePeutSePasserSimplement](https://xkcd.com/974/){.hashtag}
 
 Normalement dans un cas comme ça tu dois :
 
@@ -88,12 +88,12 @@ Le 1️⃣ après l’annonce de pas de secouristes et pas de pompier avait du p
 Le 2️⃣ partait plutôt pas mal : j’avais un aspivenin… mais l’accès à la piqure était, disons, ultra « mal placée »…
 
 :::{.dialog}
-| « Il va falloir que tu enlèves ton short 👈 basiquement je connaissais cette nana depuis… 10 min j’avais même pas trop parlé avec elle dans la semaine #malaisanceBonjour
+| « Il va falloir que tu enlèves ton short 👈 basiquement je connaissais cette nana depuis… 10 min j’avais même pas trop parlé avec elle dans la semaine [#malaisanceBonjour](https://play.acast.com/s/anouk-perry-podcast/awkward-cacacross){.hashtag}
 | — Euh c’est une salopette en fait.
 | — Oui et aloooooo… ? Oh putain… 😳 »
 :::
 
-#malaisanceLeRetourDeLaVengeance
+[#malaisanceLeRetourDeLaVengeance](https://play.acast.com/s/anouk-perry-podcast/ca-capote-awkward){.hashtag}
 
 :::{.dialog}
 « Il va falloir que tu ~~enlèves ton short~~ te foute à poil, basiquement. »
@@ -101,7 +101,7 @@ Le 2️⃣ partait plutôt pas mal : j’avais un aspivenin… mais l’accès �
 
 Elle commence donc à enlever sa salopette-short (Merci Seigneur elle avait au moins une brassière 🙏).
 
-Donc là elle est basiquement en culotte/brassière sur un banc dans une cuisine avec personne qu’elle connait pas bien… et elle souffre le martyre à cause d’une piqûre de frelon… mais dites-moi, c’est pas un peu stressant comme situation ??? Ben si… donc tu peux maintenant oublier le 1️⃣ 👉 elle flippe et le venin commence à se répandre. Et quand elle finit d’enlever son short… elle tombe dans les fucking pommes. #misère
+Donc là elle est basiquement en culotte/brassière sur un banc dans une cuisine avec personne qu’elle connait pas bien… et elle souffre le martyre à cause d’une piqûre de frelon… mais dites-moi, c’est pas un peu stressant comme situation ??? Ben si… donc tu peux maintenant oublier le 1️⃣ 👉 elle flippe et le venin commence à se répandre. Et quand elle finit d’enlever son short… elle tombe dans les fucking pommes. [#misère](https://youtu.be/eQ5gsMvGWns){.hashtag}
 
 J’avais l’impression d’être John MacLane…
 
@@ -119,7 +119,7 @@ Voilà
 **QUELLE EST LA PHRASE MAGIQUE QUI TE SORT D’UNE SITUATION COMME ÇA ?**
 :::
 
-[^seul]: Ah bah oui, j’avais envoyé la pote défoncée et ma copine, chercher des secours - et accessoirement le manuel de l’aspivenin. J'était donc totalement seule avec la donzelle #cringe
+[^seul]: Ah bah oui, j’avais envoyé la pote défoncée et ma copine, chercher des secours - et accessoirement le manuel de l’aspivenin. J'était donc totalement seule avec la donzelle [#cringe](https://youtu.be/G4Mk_vfJYd4){.hashtag}
 
 ~~« C’est pas ce que vous croyez ! »~~ 👈 je suis pas con j’ai vu assez de série américaine pour savoir que cette phrase est l’équivalent verbal d’une 2CV dans Fast and Furious !
 
@@ -175,13 +175,14 @@ Et j’avoue que j’ai adoré sa réponse :
 « OK alors je suis méga méga désolé… vu là où on en est, il est peut-être temps qu’on se présente vraiment : moi c’est Mathilde, toi c’est… PYM ? c’est ça ? »
 :::
 
-#itsmylife #pymFactor
+[#itsmylife](https://youtu.be/vx2u5uUu3DE){.hashtag}
+[#pymFactor](https://youtu.be/QVxISeAyAG0){.hashtag}
 
 ---
 
 ## Réflexions et digressions after the facts
 
-By the way **ce putain d’aspivenin n’a jamais fonctionné…** Et d’un commun accord on s’est dit que l’option « almost-cunni » était off the table. Elle commençait à aller mieux et ça m’allait très bien. Je commençais à la connaitre déjà beeeeaaaaaauuuuucoup pour une première soirée. #ApplonsÇaLePlanZ
+By the way **ce putain d’aspivenin n’a jamais fonctionné…** Et d’un commun accord on s’est dit que l’option « almost-cunni » était off the table. Elle commençait à aller mieux et ça m’allait très bien. Je commençais à la connaitre déjà beeeeaaaaaauuuuucoup pour une première soirée. [#ApplonsÇaLePlanZ](https://fr.wikipedia.org/wiki/Plan_Z_(Allemagne)){.hashtag}
 
 Je me souviens bien de la discussion :
 
@@ -203,7 +204,7 @@ Déjà qu’au moment de checker d’état de sa piqure je devais me retrouver �
 
 Quand les pompiers ont fini par arriver (1h après l’incident), en fait ils ont eu hyper peur car vu son poids elle risquait vraiment l’arrêt cardiaque… (ce que je savais très bien… d’où ma volonté de la protéger au max… même j’étais pas « à l’aise » avec la situation).
 
-Ah mais en plus elle est ultra timide et réservée. Bon, au moins, elle a profité de l’expérience… le lendemain à la soirée elle a trouvé le courage d’embrasser un mec pour la première fois… ce qu’elle m’a dit… en me remerciant de lui avoir donné du courage… #waitWhat 👈 oui forcément après elle me parlait de tout…
+Ah mais en plus elle est ultra timide et réservée. Bon, au moins, elle a profité de l’expérience… le lendemain à la soirée elle a trouvé le courage d’embrasser un mec pour la première fois… ce qu’elle m’a dit… en me remerciant de lui avoir donné du courage… [#waitWhat](https://tenor.com/view/what-what-gif-9016436){.hashtag} 👈 oui forcément après elle me parlait de tout…
 
 Rétrospectivement je me suis dit « Rhoo nan mais en plus la nana n’avait littéralement pas d’expérience “intime” avant la scène mais… mais… mais what the fuck ?! ». J’ai imaginé son niveau de gêne à elle et je me dis franchement que moi c’était rien.
 
@@ -218,9 +219,11 @@ J’imagine la tête du mec :
 | — Ah ouais, remonte d’un étage, il faut que je te raconte : j'étais à un festival… »
 :::
 
-#wtf
+[#wtf](https://fr.wikipedia.org/wiki/WTFPL){.hashtag}
 
 **My life is a movie with no director.**
+
+---
 
 Quelques photos du fameux festival :
 

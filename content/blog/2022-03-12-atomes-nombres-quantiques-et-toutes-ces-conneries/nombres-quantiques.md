@@ -136,7 +136,7 @@ Sauf que… ben statistiquement ça devraient arriver que des fois un électron 
 
 Mais nan. C'est comme si nos électrons se téléportaient !
 
-En plus on a ZÉRO explication pour l'existence de ces couches ! On dirait du boulot de chimiste : quand tu vois un truc, tu le mesures, tu lui donnes un nom ("couche électronique" ici) et tu dis que tu as tout compris et tout expliqué. #chimisteBashing
+En plus on a ZÉRO explication pour l'existence de ces couches ! On dirait du boulot de chimiste : quand tu vois un truc, tu le mesures, tu lui donnes un nom ("couche électronique" ici) et tu dis que tu as tout compris et tout expliqué. [#chimisteBashing](https://www.radleys.com/blog/whats-the-worst-lab-mistake-youve-made/){.hashtag}
 
 Donc en termes de théorie pour expliquer et prévoir c'est zéro
 
@@ -184,7 +184,7 @@ Et la solution est venue, non pas de Jeffrey le majordome du Prince de Bel Air�
 
 ![](einstein.gif)
 
-#motherFuckingAlbertEinstein
+[#motherFuckingAlbertEinstein](https://xkcd.com/1233/){.hashtag}
 
 Il a eu son Prix Nobel absolument pas pour sa théorie de la relativité… nan mais sur un truc tout moisi : l'effet photo-électrique.
 
@@ -236,7 +236,8 @@ Par exemple la couche 1 c'est… une boule… pas un disque ou même une sphère
 
 ![👆électron de couche n=2 attaquant 2 enfants…](bounce-back.gif)
 
-#stopViolence #stopElectron
+[#stopViolence](https://xkcd.com/538/){.hashtag}
+[#stopElectron](https://physics.stackexchange.com/a/524308){.hashtag}
 
 Mais alors l'électron il tourne dans la boule ?
 
@@ -315,7 +316,7 @@ Bah déjà ton électron est plus loin du noyau (c'est le principe des couches).
 
 ![](friends-I-knew-it.gif)
 
-Et donc c'est une plus grosse bouboule #épicétou \
+Et donc c'est une plus grosse bouboule [#épicétou](https://youtu.be/N8MbznzLpqw){.hashtag} \
 … \
 … \
 …
@@ -326,7 +327,8 @@ Alors en partie oui : on a bien une orbitale bouboule plus grosse pour n=2… ma
 
 Les chimistes nous l'avaient dit en même temps : pour la deuxième couche ils avaient vu plusieurs petites sous-raies toutes serrées. C'est à cause de ça qu'ils avaient tenté leur modèle de "_sous-couches_" électroniques en mode « _On met plein d'électrons sur la même couche mais euh enfin tu vois c'est pas tout à fait la même couche_ ».
 
-#pathétiques #lesChimistes
+[#pathétiques](https://www.science.org/content/blog-post/biology-maybe-right-chemistry-ridiculously-wrong){.hashtag}
+[#lesChimistes](https://www.chemistryworld.com/news/chemistry-department-evacuated-after-student-accidentally-makes-explosive-/2500369.article){.hashtag}
 
 Donc les gugusses nous disent que cette couche 2 devaient contenir normalement **8 électrons au max**. Comme on a le droit de mettre 2 électrons par orbitales on devrait avoir donc 4 bouboules pour n=2 nan ?
 
@@ -336,7 +338,7 @@ Bah on a qu'à les mettre les unes par-dessus les autres… genres des bouboules
 
 Nan. Car alors on aurait des grosses différences d'énergie puisque les bouboules seraient de plus en plus loin du centre. Là tout nos électrons sont au niveau n=2 qui a globalement la même énergie pour ses 8 électrons a qq micro différences près…[^tellnoone]
 
-[^tellnoone]: C'est désespérant de se rendre compte que le travail des chimistes en spectroscopie, en fait, c'est vraiment utile… c'est peut-être pas autant des branquignoles que je veux bien l'admettre #tellNoOne
+[^tellnoone]: C'est désespérant de se rendre compte que le travail des chimistes en spectroscopie, en fait, c'est vraiment utile… c'est peut-être pas autant des branquignoles que je veux bien l'admettre [#tellNoOne](https://en.wikipedia.org/wiki/Tell_No_One_(novel)){.hashtag}
 
 Et c'est là qu'on va commencer à faire les foufous avec les nombres quantiques !
 
@@ -408,7 +410,7 @@ Soit l'altère est alignée sur l'axe vertical (z) soit sur l'axe de profondeur 
 
 Sauf que oui mais non : ça résout pas notre problème… on a 6 électrons dans l'état n=2 ℓ=1 or on a droit à maximum 2 électrons dans cet état-là !!! Certes… mais on va résoudre ça facilement : il suffit de dire qu'on a un nombre quantique de plus qui dit quel axe on privilégie !
 
-on va l'appeler mℓ ou "**nombre quantique magnétique**" et il aura 3 valeurs possibles : -1, 0 et +1 #magie
+on va l'appeler mℓ ou "**nombre quantique magnétique**" et il aura 3 valeurs possibles : -1, 0 et +1 [#magie](https://melscience.com/US-en/articles/chemical-magic-tricks/){.hashtag}
 
 ![](baby-disapointed.gif)
 

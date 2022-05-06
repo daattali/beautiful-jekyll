@@ -41,14 +41,14 @@ OK, on va dire que la Terre est sphérique (_c'est pas tout à fait vrai elle es
 | — Ça serait encore plus simple si la Terre était plate…?!
 | — Dehors le platiste ! Tu sors !
 | — …
-| — Nan, ça serait pas plus simple. En physique, on aime bien les trucs ronds… ça a tout pleins de symétries qui facilitent tous les calculs… et ça permet de se la péter avec des sinus et des cosinus partout ! #trigoÉlitisme »
+| — Nan, ça serait pas plus simple. En physique, on aime bien les trucs ronds… ça a tout pleins de symétries qui facilitent tous les calculs… et ça permet de se la péter avec des sinus et des cosinus partout ! [#trigoÉlitisme](https://short-edition.com/fr/oeuvre/poetik/trigonometrie-damour-1){.hashtag} »
 :::
 
 Donc, notre planète ronde qui tourne pas elle se chauffe comment ?
 
 Chaleur interne ? 🤔 le noyau interne chauffe (à cause de réaction nucléaire et de frottement du magma qui bouge) effectivement la surface… par contre, il chauffe uniformément toute la surface… et vraiment pas des masses…
 
-Alors quoi ? Bah le soleil bébé ! #SeaSexAndSun…
+Alors quoi ? Bah le soleil bébé ! [#SeaSexAndSun](https://fr.wikipedia.org/wiki/Sea,_Sex_and_Sun){.hashtag}…
 
 ah bah nan… notre modèle est un peu trop simple pour "sea, sex and sun" 👉 on va oublier la ~~sea~~ et le ~~sex~~ (sorry) et on va garder juste le **sun**.
 
@@ -60,7 +60,7 @@ Ben nan pas du tout : aviez-vous déjà remarqué que le matin et le soir il fai
 
 ![Les rayons solaire ça tape un peu à plat sur les bords !](inclinaison-des-rayons-solaires.png)
 
-Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses rayons sont parallèles. Si on prend un "tube" de rayon solaire (disons d'1m² de diamètre), il apporte une certaine quantité d'énergie (donc de chaleur). Si on prend un tube qui tape à l'équateur, bah voilà il tape bien à la verticale, youpi 🥵 ! Mais s’il tape plus près d'un pôle… il arrive sur un sol tout incliné ! Résultat, l'énergie est "étalée" sur une surface bien plus grande et comme c'est la même quantité d'énergie sur une surface plus grande ça fait moins d'énergie au mètre carré 🥶 donc il fait tout plein plus froid vu que le chauffage solaire est moins fort.#cqfd
+Quand on prend la lumière du soleil, il est tellement loin et gros que tous ses rayons sont parallèles. Si on prend un "tube" de rayon solaire (disons d'1m² de diamètre), il apporte une certaine quantité d'énergie (donc de chaleur). Si on prend un tube qui tape à l'équateur, bah voilà il tape bien à la verticale, youpi 🥵 ! Mais s’il tape plus près d'un pôle… il arrive sur un sol tout incliné ! Résultat, l'énergie est "étalée" sur une surface bien plus grande et comme c'est la même quantité d'énergie sur une surface plus grande ça fait moins d'énergie au mètre carré 🥶 donc il fait tout plein plus froid vu que le chauffage solaire est moins fort.[#cqfd](https://fr.wikipedia.org/wiki/Ce_qu'il_faut_dire){.hashtag}
 
 À l'équateur, il faut donc plus chaud et au pôle plus froid.
 
@@ -128,7 +128,7 @@ Conclusion : il y a du vent de l'équateur vers les pôles ! Tout le temps. \
 …\
 Ah, on m'informe dans l'oreillette que nan c'est pas le cas : il n'y a pas un vent permanent sud-nord dans l'hémisphère nord et pas de vent permanent nord-sud dans l'hémisphère sud… Damned !
 
-Bah faut dire que mon raisonnement avait un gros défaut : si on suit mon raisonnement très rapidement, il n'y a plus d'air à l'équateur ! Tout serait aspiré vers les pôles ! Alors quoi ? Eh ben on a réfléchi en 2D alors que la vraie vie c'est en 3D : l'atmosphère ça a de la hauteur ma bonne dame !Ça change quoi ? Bah déjà l'air chaud comme ça se dilate… c'est plus léger que l'air froid (car moins dense) donc il a tendance à monter et l'air froid à descendre #frèreMontgolfier
+Bah faut dire que mon raisonnement avait un gros défaut : si on suit mon raisonnement très rapidement, il n'y a plus d'air à l'équateur ! Tout serait aspiré vers les pôles ! Alors quoi ? Eh ben on a réfléchi en 2D alors que la vraie vie c'est en 3D : l'atmosphère ça a de la hauteur ma bonne dame !Ça change quoi ? Bah déjà l'air chaud comme ça se dilate… c'est plus léger que l'air froid (car moins dense) donc il a tendance à monter et l'air froid à descendre [#frèreMontgolfier](https://www.huffingtonpost.fr/2013/05/10/montgolfiere-skywhale-patricia-piccinini_n_3251825.html){.hashtag}
 
 ![Si tu enfermes ton air chaud dans un gros drap tu obtiens un ballon à air chaud cad une montgolfière](hot-balloons.gif)
 
@@ -334,7 +334,7 @@ Oui mais là aussi Coriolis : le vent va aller vers le centre de la basse pressi
 
 « _Mais pourquoi anticyclone ?_ » Rhaaaaa, j'aurais dû m'y attendre… bah c'est simple, une dépression qui tourne mal (beaucoup de vents, très humide et chaude) ça donne un cyclone, pas cool… et assez vite, on a remarqué qu'avant un cyclone, il y avait une baisse de pression (vu que c'est une dépression) mais que si la pression restait haute bah, jamais cyclone 👉 haute pression = anti-cyclone
 
-Et pourquoi seuls les tourbillons des dépressions font de la merde ? Bah la basse pression, donc ça crée un effet d'aspiration au niveau de sol… ou de la mer et donc ça "pompe" de l'humidité en permanence. Les anticyclones eux avec leurs hautes pressions plaquent l'humidité au sol. #cqfd
+Et pourquoi seuls les tourbillons des dépressions font de la merde ? Bah la basse pression, donc ça crée un effet d'aspiration au niveau de sol… ou de la mer et donc ça "pompe" de l'humidité en permanence. Les anticyclones eux avec leurs hautes pressions plaquent l'humidité au sol. [#cqfd](https://fr.wikipedia.org/wiki/CQFD_(math%C3%A9matiques)){.hashtag}
 
 Re-voyons notre schéma de tout à l'heure, il va maintenant prendre tout son sens :
 
@@ -359,7 +359,7 @@ C'est déjà assez énorme : on a retrouvé les principaux climats de la planèt
 Bon il y a encore des petits soucis : les tropiques c'est pas toujours sec… des fois c'est humide… et on n'a pas parlé de climat continental[^continental] (alors qu'on nous rabat les oreilles avec ça au collège !).
 
 [^kyudo]: Les archers japonais qui pratiquaient le Kyudo (art martial du tir à l'arc) pouvaient toucher une cible à plus de 800m voir plus… là aussi il devait compenser la force de Coriolis… généralement sans avoir la moindre idée de son existence !!! Costauds les loulous !
-[^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait #punkNotDead
+[^punk]: Au palais de la découverte le manège tourne assez vite pour que tout soit affecté… donc si vous vous déplacez pour aller vous asseoir au siège d'en face (ce qui est interdit) vous aller tituber comme jamais. Je le sais je l'ai fait [#punkNotDead](https://crowdagger.fr/punk-is-undead/){.hashtag}
 [^continental]: Il est vrai que Berlin et Nantes c'est pas vraiment le même climat…
 
 ## Chapitre 4 : et si on mettait des océans et des continents ?
@@ -476,7 +476,7 @@ Mousson/Aride
   ~ Autre nom de tropical humide et sec (selon s’il y a de l'océan pour charger les dépressions)
 
 Chinois
-  ~ Pour faire plaisir au chinois #troll c'est du continental mais avec du tropical à côté donc "continental mais c'est souvent la merde"
+  ~ Pour faire plaisir au chinois [#troll](https://linux-attitude.fr/post/comment-reussir-un-troll){.hashtag} c'est du continental mais avec du tropical à côté donc "continental mais c'est souvent la merde"
 
 Au niveau des développements humains, c'est démentiellement important : les civilisations puissantes sont toujours issues de zones "avantagées" climatiquement :
 

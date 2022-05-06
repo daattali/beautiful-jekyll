@@ -29,7 +29,8 @@ peut-être même traverser une partie de la couche terrestre sous marine_ »
 
 ![[Dessin de Randall Munroe](https://xkcd.com/386/) sous [licence CC BY-NC 2.5](http://creativecommons.org/licenses/by-nc/2.5/)](duty_calls.png)
 
-#someoneIsWrongOnTheInternet et j’ai voulu expliquer pourquoi… accrochez-vous au
+[#someoneIsWrongOnTheInternet](https://www.explainxkcd.com/wiki/index.php/386:_Duty_Calls){.hashtag}
+et j’ai voulu expliquer pourquoi… accrochez-vous au
 pinceau, j’enlève l’échelle. Et je vous préviens hier j’étais très, très, très
 en forme. Suzanne F., tu te souviens de mes posts vaccin ou éducation, ben
 là je crois que comme c’était vraiment mon domaine je suis parti en freefly
@@ -127,10 +128,12 @@ des années a s’évacuer de toutes parts, (peu être une dizaine d’années m
 »\
 …\
 …\
-Me lancer moi sur un scénario d’apocalypse ? Mon rêve ! J’ai dû mater sur #TMC
-et #NRJ12 tous les documentaire alarmistes et tous les téléfilms ricains et
-allemands sur le sujet. J’y peux rien, y en a, c’est la coke, moi c’est les
-téléfilms catastrophes et les documentaires…
+Me lancer moi sur un scénario d’apocalypse ? Mon rêve ! J’ai dû mater sur
+[#TMC](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_du_moment_cin%C3%A9tique){.hashtag}
+et [#NRJ12](https://fr.wikipedia.org/wiki/%C3%89nergie_(physique)){.hashtag} tous les 
+documentaire alarmistes et tous les téléfilms ricains et allemands sur le sujet. J’y
+peux rien, y en a, c’est la coke, moi c’est les téléfilms catastrophes et les
+documentaires…
 
 ## Round 2… Fight !
 
@@ -227,11 +230,14 @@ donc ici $2,048\times10^{18}$ J. Militarisons le machin pour se rendre compte :
 
 ![Say whaaaaaaaaaat?!](wtf-say-what.gif)
 
-Je viens de gagner le plus concours #kikikalaplugrosse du monde !
+Je viens de gagner le plus concours [#kikikalaplugrosse](https://fr.wikipedia.org/wiki/Liste_des_plus_gros_canons_par_calibre){.hashtag} du monde !
 
 Par comparaison la plus grosse bombe jamais utilisée (et créée) c’est la Tsar
 Bomba qui faisait 57 Mtn moi ma bouboule elle fait plus de 4 Tsar Bomba.
 
-#gnagnagna #bouboule #desole #profdephysique
+[#gnagnagna](https://fr.wiktionary.org/wiki/gnagnagna){.hashtag}
+[#bouboule](https://www.afrik-foot.com/afrique-du-sud-record-pour-le-plus-grand-ballon-du-monde){.hashtag}
+[#desole](https://hal.archives-ouvertes.fr/hal-00657397/file/Pages_61_A_67_-_Dumez_H._-_2011_-_Penser_l_action_par_les_excuses._-_Libellio_vol._7_nA_2.pdf){.hashtag}
+[#profdephysique](https://www.udppc.asso.fr){.hashtag}
 
 ![BOOM](mic-drop-boom.gif)

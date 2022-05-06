@@ -108,3 +108,12 @@ Customisation made by PYM to the Editorial by HTML5 UP template
   text-align: center;
   font-size: 3em;
 }
+
+/**************************************************************************************/
+/********************************hashtag link decoration*******************************/
+
+#main .hashtag {
+  text-decoration: none;
+  border-bottom: 0;
+  color: black;
+}

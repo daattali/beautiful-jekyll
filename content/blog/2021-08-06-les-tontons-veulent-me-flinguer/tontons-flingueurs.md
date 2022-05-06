@@ -52,7 +52,7 @@ J'ajouterais bien qu'ils avaient l'air patibulaire... mais apparemment, en "armu
 
 ![Nan mais c'est bon tout va bien se passer](everything-proceeding.gif)
 
-Moi je suis assez simple, je #stickToThePlan quelque soit les circonstances. J'aurais fait un excellent lemming. Je continue donc à m'approcher et j'entends « _Merde ya un leader qui s'approche_ ».
+Moi je suis assez simple, je [#stickToThePlan](https://movie-sounds.org/ghetto-movie-sound-clips/quotes-with-sound-clips-from-set-it-off-1996/we-gotta-stick-to-the-plan-all-right-all-right){.hashtag} quelque soit les circonstances. J'aurais fait un excellent lemming. Je continue donc à m'approcher et j'entends « _Merde ya un leader qui s'approche_ ».
 
 ??? 😶 What the...
 

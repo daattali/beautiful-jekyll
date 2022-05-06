@@ -5,7 +5,7 @@ category: pymfactor
 cover:
   img: un_peu_de_velo.jpg
   comment: J'ai été faire du vélo avec des potes - photo by Alexander Schimmeck on unsplash
-tags: [medecin, blessure, sport]
+tags: [medecin, blessure, sport, thuglife]
 status: published
 ---
 
@@ -114,7 +114,11 @@ Un passant a dit « À la piscine un plat comme ça, pffff ça fait hyper mal ! 
 
 Bon là j'ai senti que je devais la rassurer, car elle commençait à me regarder comme un genre de zombie. Mais je pense que je n'ai pas trouvé les bons mots :
 
-« _J'ai arrêté le boomerang (10 points de suture)[^boomerang], l'ultimate frisbee (8 points de suture), le roller et de me faire mordre par des filles trop grandes et avec un appareil dentaire (5 point de suture)[^fille] #thugslife_ »
+:::{.dialog}
+« J'ai arrêté le boomerang (10 points de suture)[^boomerang], l'ultimate frisbee (8 points de suture), le roller et de me faire mordre par des filles trop grandes et avec un appareil dentaire (5 point de suture)[^fille] »
+:::
+
+[#thuglife](https://www.urbandictionary.com/define.php?term=Thug%20Life){.hashtag}
 
 Elle m'a répondu : « Vous êtes conscient que le problème ne semble pas être les sports mais plutôt vous ? »
 
