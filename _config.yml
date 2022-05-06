@@ -201,7 +201,7 @@ paginate: 5
 
 kramdown:
   input: GFM
-  hard_wrap: true # added LSG 220506
+
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
