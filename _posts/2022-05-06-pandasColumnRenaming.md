@@ -69,6 +69,10 @@ Method 2 is already optimized, however, there are two key parameters in the `ren
 
 We will show performance of Method 1 toggling on and off these parameters, and compare that to Method 1. The results can be seen in the graph below. What is clear is the Method 2 changing the attribute directly is the fastest, whereas non-inplace copying is the slowest.
 
+<center>
+    <img src="../posts_images/2022-05-06-pandasColumnRenaming/pandasColumns.png" class="center">
+</center>
+
 ### Why is performance slow?
 
 It is obvious that copying dataframes will slow down performance, so it makes sense why `copy=True` is slow, but why is turning off copying still slow, `copy=False`?
