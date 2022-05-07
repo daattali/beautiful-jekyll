@@ -12,11 +12,11 @@ author: 移民小舟
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
+  关于邦赢: "aboutme"
+  资源:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+ # Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
@@ -39,6 +39,7 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "someone@example.com"
+  小红书: xiaohongshu
   facebook: deanattali
   github: daattali
   twitter: daattali
