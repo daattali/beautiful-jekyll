@@ -12,8 +12,8 @@ author: 移民小舟
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  关于邦赢: "jieshao"
-  资源:
+  About Me: jieshao
+  Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
  # Author's home: "https://deanattali.com"
