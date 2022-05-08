@@ -117,3 +117,7 @@ Customisation made by PYM to the Editorial by HTML5 UP template
   border-bottom: 0;
   color: black;
 }
+
+#main .small {
+  font-size: smaller;
+}

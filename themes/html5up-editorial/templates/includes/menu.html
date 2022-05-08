@@ -7,7 +7,7 @@
 
   <ul>
     <!-- Home page -->
-    <li><a href="index.html">Accueil</a></li>
+    <li><a href="/index.html">Accueil</a></li>
 
     <!-- All categories -->
     <li>
@@ -16,26 +16,9 @@
         {% for category, _ in categories|sort %}
         {# TODO create a category template page #}
         <li>
-          <a href="{{ category.url }}">
+          <a href="{{ SITEURL }}/{{ category.url }}">
             <i class="icon fa-solid fa-folder"></i>
             {{ category.name }}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </li>
-
-    <!-- All series of articles -->
-    {# TODO add series support #}
-    <li>
-      <span class="opener">Séries</span>
-      <ul>
-        {% for serie, _ in series|sort %}
-        {# TODO create a serie template page #}
-        <li>
-          <a href="{{ serie.url }}">
-            <i class="icon fa-solid fa-list"></i>
-            {{ serie.name }}
           </a>
         </li>
         {% endfor %}
@@ -49,7 +32,7 @@
         {% for tag, _ in tags|sort %}
         {# TODO create a tag template page #}
         <li>
-          <a href="{{ tag.url }}">
+          <a href="{{ SITEURL }}/{{ tag.url }}">
             {# BUG for a strange reason tag icon refuse to show up #}
             <i class="icon fa-solid fa-lightbulb"></i>
             {{ tag.name }}
@@ -66,7 +49,7 @@
         {% for author, _ in authors|sort %}
         {# TODO create an author template page #}
         <li>
-          <a href="{{ author.url }}">
+          <a href="{{ SITEURL }}/{{ author.url }}">
             <i class="icon fa-solid fa-user"></i>
             {{ author.name }}
           </a>

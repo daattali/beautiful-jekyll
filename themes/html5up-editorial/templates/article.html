@@ -11,7 +11,7 @@
     <img src="{{ article.cover.img }}" alt="{{ article.cover.comment }}" />
   </span>
 
-  <p>
+  <p class="small">
     Publié le
     <time
       class="published"
@@ -20,13 +20,49 @@
       {{ article.date | strftime('%-d %b %Y') }}
     </time>
     par
-    <a href="{{ article.author.url }}" class="author">
+    <a href="{{ SITEURL }}/{{ article.author.url }}" class="author">
       <span class="name">{{ article.author }}</span>
       <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
     </a>
+
+    {% if article.series %}
+    Épisode {{ article.series.index }} dans la série <strong>{{ article.series.name }}</strong>
+    {% endif %}
   </p>
 
   {{ article.content }}
+
+</section>
+
+<!-- Section with all related article -->
+<section>
+  {% if article.series is defined %}
+    <header class="major">
+      <h2>Tous les articles de la série "{{ article.series.name }}" :</h2>
+    </header>
+
+    <div class="posts">
+    {% for article in article.series.all %}
+      <article>
+        <!-- Cover image -->
+        <a href="{{ SITEURL }}/{{ article.url }}" class="image"><img src="{{ SITEURL }}/{{ article.url }}{{ article.cover.img }}" alt="{{ article.cover.comment }}" /></a>
+
+        <h3>{{ article.title }} ({{ loop.index }})</h3>
+        <p>
+        {% if article.summary is defined %}
+          {{ article.summary }}
+        {% else %}
+          {{ article.content|striptags|truncate(SUMMARY_LENGTH) }}
+        {% endif %}
+        </p>
+        <ul class="actions">
+          <li><a href="{{ SITEURL }}/{{ article.url }}" class="button">Plus…</a></li>
+        </ul>
+      </article>
+    {% endfor %}
+    </div>
+
+  {% endif %}
 </section>
 
 {% endblock %}

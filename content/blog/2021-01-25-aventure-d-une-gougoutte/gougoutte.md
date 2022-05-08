@@ -1,7 +1,8 @@
 ---
 title: Aventure d'une gougoutte
-subtitle: De la dangerosité des fuites d'eau relativistes
+subtitle: Chargez la goutte d'eau et faites feu !
 category: sciences
+series: Aventure d'une gougoutte
 cover:
   img: crushed_earth.jpg
   comment: Photo by 愚木混株 cdd20 on Unsplash
@@ -51,7 +52,7 @@ du métro (c’est pas une raison pour essayer !).
 
 Donc une goutte c’est dans l’air… naturellement cette goutte à une vitesse
 maximum dans l’air : la vitesse terminale ou vitesse de sédimentation selon à
-quel scientifique tu demandes. C’est dû au frottement… de l’air sur la goutte.
+quel scientifique tu demandes. C’est dû au frottement de l’air sur la goutte.
 
 ## Oui, mais on peut faire pire, nan ?
 
@@ -86,158 +87,56 @@ saturent aussi à Mach 7 avec des obus en tungstène…
 
 Donc notre goutte d’eau la plus rapide du monde ça serait une goutte d’eau qui
 va à 8 658 km/h pendant quelques millisecondes. Loin très loin de la vitesse
-de la lumière (dans le vide vu que dans un cristal bien fichu on peut la baisser
-à quelques cm/s).
+de la lumière qui est de 300 000 km/s (dans le vide vu que la vitesse de la lumière
+dans un cristal bien fichu
+[on peut la baisser à quelques cm/s](https://en.wikipedia.org/wiki/Slow_light)).
 
-## Conclusion
+## Size does matter
 
-Ou je voulais en venir avec tout ça ? Beh en fait j’en sais rien… ça m’a
-traversé l’esprit avec le coup de la goutte d’eau à la vitesse de la lumière.
-
-Aller je vais quand même trouver une conclusion : on veut changer un courant
+Ou je voulais en venir avec tout ça ? Ah oui : on veut changer un courant
 avec une goutte, il nous faut donc une goutte avec beaucoup d’énergie. Or
-l’énergie cinétique (de mouvement) d’une goutte est proportionnelle à sa masse
-et au carré de sa vitesse… donc ouais faut augmenter sa vitesse c’est plus
-rentable que sa masse/taille. Mais comme la vitesse est limitée ça redevient
-intéressant d’augmenter la masse à partir de 5 664 400 tonnes… ouais ça fait
-une grosse goutte !
+l’énergie cinétique (de mouvement) d’une goutte c'est :
+
+$$
+E_c = \frac{1}{2}m v^2
+$$
+
+Donc cette énergie est proportionnelle à sa masse et au carré de la vitesse de la
+goutte… donc ouais faut augmenter sa vitesse - c’est clairement plus rentable
+que sa masse.
+
+Mais la vitesse est, comme on l'a vu, limitée... pour avoir un vrai effet
+cataclysmique il va nous falloir une très très grosse gougoutte. Grosse comment ?
+
+Bah on voulais une goutte de 2mm de diamètre qui va à la vitesse de la lumière. Son
+énergie cinétique aurait été de $1.8805 \times 10^{12}$ Joules. C'est titanesque. Vous en
+voulez la preuve ? Voyons donc quelle taille devrait faire notre goutte à nous - celle
+qu'on arrive péniblement à lancer à 8 658 km/h - pour qu'elle est la même énergie.
+
+Pour obtenir nos $1.8805 \times 10^{12}$ Joules en étant seulement à 8 658 km/h il nous
+faudrait une goutte de $6.5 \times 10^5$ kg d'eau soit 6500 tonnes d'eau. C'est-à-dire
+une gougoutte de 23.16 m de diamètre 😳.
+
+À Mach 7, je le rappelle !
 
 ![The gougoutte](droplet.gif)
 
-## LAST MINUTE EDIT
+## Changer les courants avec ça ?
 
-Big news : un labo à réussi à balancer un machin à 28 800 km/h (canon à
-hydrogène) soit Mach 23.5.
+On a donc une mega gougoutte de la mort... mais est-ce qu'on peut changer les courants
+marin avec ? Prenons le [Gulf Stream](https://fr.wikipedia.org/wiki/Gulf_Stream) par
+exemple qui passe dans l'Atlantique Nord. Il transport en moyenne 20 millions de m³
+d'eau par seconde et s'écoule à environ 9 km/h. Avec ça on devrait pouvoir calculer
+l'énergie cinétique du machin !
 
-Donc notre goutte pourrait pitet aller plus vite que prévu… donc la masse de «
-rentabilité à être plus gros » (nom pourris) est de 64 000 000 de tonne soit une
-bouboule de 4,5 km de diamètre si je me plante pas (il est tard).\
-…\
-…\
-…\
-… sérieux vous croyez que c’est fini ? Nan car Phil Marchand a su me relancer
-habilement, il a vu la faille : « _Mais imagine juste, que peu importe les
-manières, une goutte d’eau simple, puisse être expulsée, (attraction terrestre
-ou lancée, depuis un domaine de l’orbital ou hors orbital) à une vitesse proche
-de la lumière \[…\] quel effet cela donnerait-il ?_ » et de continuer « _la
-puissance (je pense exprimable en Joules) serait si puissante qu’elle pourrait
-littéralement vider l’espace de trente minutes un océan entier, et envoyer toute
-la masse d’eau à part sur les autres continents ou îles avec une tel force que
-les plus grandes montagnes terrestres seraient submergées, et l’eau prendrait
-des années a s’évacuer de toutes parts, (peu être une dizaine d’années minimum)_
-»\
-…\
-…\
-Me lancer moi sur un scénario d’apocalypse ? Mon rêve ! J’ai dû mater sur
-[#TMC](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_du_moment_cin%C3%A9tique){.hashtag}
-et [#NRJ12](https://fr.wikipedia.org/wiki/%C3%89nergie_(physique)){.hashtag} tous les 
-documentaire alarmistes et tous les téléfilms ricains et allemands sur le sujet. J’y
-peux rien, y en a, c’est la coke, moi c’est les téléfilms catastrophes et les
-documentaires…
+Bon 20 millions de m³ d'eau ça fait $2 \times 10^{10}$ kg d'eau qui se déplace à 9 km/h
+soit 2.5 m/s. Ce qui nous donne une énergie de... $1.25 \times 10^{11}$ Joule chaque
+seconde. C'est un peu moins que la puissance dégagée par notre chère bouboule de 23 m
+de diamètre !!!
 
-## Round 2… Fight !
-
-![Accrochez-vous à vos équations, c'est reparti !](round-two.gif)
-
-Pour répondre à ta question sur le vrai effet d’une goutte d’eau à, disons, 99%
-de la vitesse de la lumière c’est déjà plus compliqué.
-
-En gros on oublie le moyen pour lui faire atteindre cette vitesse et on va
-supposer qu’elle garde sa forme de goutte…
-
-Masse d’une goutte typique (2 mm de diamètre) ~4 g.
-
-OK. Bon maintenant mettons qu’elle soit à 99 % de la vitesse la lumière soit
-296 794 533 m/s son énergie cinétique semble donc être :
-
-$$E_c = \frac{1}{2}mv^2$$
-
-ce qui donnerait naïvement 1,761739896×10¹⁴ J euh pas super facile de voir comme ça à
-vue de nez si je peux faire cuire un œuf ou foutre une montagne qui me bouche la
-vue sur la mer avec ça… convertissons le machin dans une unité plus parlante !
-Si quelqu’un dit “calorie” je lui refais la gueule au Karcher supraluminique
-(puisque j’en ai apparemment un sous la main !).
-
-Convertissons ça dans une unité pratique… le méga électron-volt ? À moins que
-vous bossiez avec des accélérateurs de particules ça va pas être plus utile.
-Ayant éliminé les unités des diététiciens et celle des chercheurs passons à des
-gens vraiment utiles et constructif : les militaires… ouais bon… mais au moins
-ils ont des unités pratiques : le Kilogramme de TNT ! :point_right: zou 42 281 tn à oui
-la tonne de TNT ça se note tn… donc 42 ktn (kilo tonne… suivez un peu!)
-
-Wait… whaaaaaaaaat ? 42 kilos tonne de TNT ? Mais c’est que dalle ! Enfin pas si
-énorme que ça devrais-je dire. C’est plus que Little Boy et Fat Man (les 2
-bombes que les Japonnais se sont pris sur la gueule en 45) mais pour les «
-standards militaires » actuels c’est l’équivalent d’un simple coup de semonce :
-c’est la puissance d’un missile tout con de base. Ça correspond au rendement
-d’une bombe avec ~100 kg de matière fissile (cf [Puissance des armes
-nucléaires](https://fr.wikipedia.org/wiki/Puissance_des_armes_nucl%C3
-%A9aires#/media/File: US_nuclear_weapons_yield-to-weight_comparison-fr.svg)…).
-Bon OK ça déclenche une guerre… ça rase une ville… mais ça déplace pas des
-montagnes…
-
-Mais si vous avez bien lu j’ai dit que le calcul était naïf… pourquoi ? Car là
-on parle de fraction de la vitesse de la lumière. Donc on est pas dans la
-mécanique classique. Et la mécanique relativiste (celle qui s’applique à haute
-vitesse) c’est un machin chelou. Effet le plus direct qui va foutre le boxon
-dans mon calcul : plus on s’approche de la lumière plus notre masse augmente !
-D’où la difficulté à accélérer à ces vitesses-là… pas besoin de frottement : on
-a l’obésité automatique pour nous foutre nos performances en l’air ! Mais nous
-on s’en fout mec (imaginez cette phrase avec la voix d’Eddy Murphy), nous on A
-DÉJÀ atteint notre vitesse !
-
-C’est bien vous suivez… mais pas assez ! Car qui dit augmentation de la masse
-dit augmentation de l’énergie cinétique. Bon OK alors c’est quoi notre nouvelle
-masse ?
-
-$$m = \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}} = 201\ g$$
-
-soit 50x plus qu’avant. Mazette !
-
-Donc là on a une vraie évaluation de notre Énergie finale : 2 124 620 tn soit
-2.1 Mtn.
-
-Nom de Zeus ! 2 méga-tonnes de TNT génial ! Alors je la défonce ma montagne ? Du
-calme doc ! Tu te rends compte que c’est moins que la première bombe H (bombe à
-fusion nucléaire un poil plus burnées que les bombes A qui sont bêtement à
-fission)… tu sais le machin fabriqué dans les années 50… à bah ouais on prend
-une claque là. Bon les Russes ont effectivement rasé des montagnes avec des
-bombes H. Mais bon faut bien viser et que la montagne soit ni trop solide ni
-trop grosse. Et pis en plus après elle est radioactive. (ils ont aussi fait des
-canaux pour faire passer de l’eau… je vous laisse trouver pourquoi c’est SUPER
-SUPER CON).
-
-Donc même à la vitesse de la lumière ou presque ben nan on déracine pas les
-montagnes avec une goutte d’eau. Bon par contre, effectivement, tu pètes le Gulf
-Stream easy ride… pas pour longtemps vu qu’il se reformera très vite (il dépend
-de structure à bien plus grande échelle que ça).
-
-Et ma bouboule géante et seulement hyper sonique de mon post plus haut… elle
-peut faire un concours de qui c’est qui a le plus gros kiki avec notre gougoutte
-supraluminique ? Calculons, là c’est facile il n’y a pas de variation de masse…
-enfin mathématiquement si mais totalement négligeable… aller faisons le calcul :
-1 millionième de gramme. OK on peut légitimement négliger. L’énergie cinétique
-c’est toujours pareil :
-
-$$E_c = \frac{1}{2}mv^2$$
-
-donc ici $2,048\times10^{18}$ J. Militarisons le machin pour se rendre compte :
-491 520 000 tn…
+Donc oui notre bouboulle peut arrêter un courant marin... pendant un poil plus d'une
+seconde 😭
 
 :::{.big-centered}
-**491 méga-tonnes de TNT**
+To be continued…
 :::
-
-![Say whaaaaaaaaaat?!](wtf-say-what.gif)
-
-Je viens de gagner le plus concours [#kikikalaplugrosse](https://fr.wikipedia.org/wiki/Liste_des_plus_gros_canons_par_calibre){.hashtag} du monde !
-
-Par comparaison la plus grosse bombe jamais utilisée (et créée) c’est la Tsar
-Bomba qui faisait 57 Mtn moi ma bouboule elle fait plus de 4 Tsar Bomba.
-
-[#gnagnagna](https://fr.wiktionary.org/wiki/gnagnagna){.hashtag}
-[#bouboule](https://www.afrik-foot.com/afrique-du-sud-record-pour-le-plus-grand-ballon-du-monde){.hashtag}
-[#desole](https://hal.archives-ouvertes.fr/hal-00657397/file/Pages_61_A_67_-_Dumez_H._-_2011_-_Penser_l_action_par_les_excuses._-_Libellio_vol._7_nA_2.pdf){.hashtag}
-[#profdephysique](https://www.udppc.asso.fr){.hashtag}
-
-![BOOM](mic-drop-boom.gif)

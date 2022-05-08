@@ -17,14 +17,14 @@
     {% endif %}
     </p>
     <ul class="actions">
-      <li><a href="{{ last_article.url }}" class="button big">Lire la suite…</a></li>
+      <li><a href="{{ SITEURL }}/{{ last_article.url }}" class="button big">Lire la suite…</a></li>
     </ul>
     {# TODO make this part smaller #}
     <p>
       Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
         {{ last_article.date | strftime('%-d %b %Y') }}
       </time>
-      par <a href="{{ last_article.author.url }}" class="author">
+      par <a href="{{ SITEURL }}/{{ last_article.author.url }}" class="author">
         <span class="name">{{ last_article.author }}</span>
         <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
       </a>
@@ -34,7 +34,7 @@
 
   <!-- Cover image -->
   <span class="image object">
-    <a href="{{ last_article.url }}"><img src="{{ last_article.url }}{{ last_article.cover.img }}" alt="{{ last_article.cover.comment }}"></a>
+    <a href="{{ SITEURL }}/{{ last_article.url }}"><img src="{{ SITEURL }}/{{ last_article.url }}{{ last_article.cover.img }}" alt="{{ last_article.cover.comment }}"></a>
   </span>
 </section>
 
@@ -47,7 +47,7 @@
   {% for article in articles_page.object_list %}
     <article>
       <!-- Cover image -->
-      <a href="{{ article.url }}" class="image"><img src="{{ article.url }}{{ article.cover.img }}" alt="{{ article.cover.comment }}" /></a>
+      <a href="{{ SITEURL }}/{{ article.url }}" class="image"><img src="{{ SITEURL }}/{{ article.url }}{{ article.cover.img }}" alt="{{ article.cover.comment }}" /></a>
 
       <h3>{{ article.title }}</h3>
       <p>
@@ -58,15 +58,15 @@
       {% endif %}
       </p>
       <ul class="actions">
-        <li><a href="{{ article.url }}" class="button">Plus…</a></li>
+        <li><a href="{{ SITEURL }}/{{ article.url }}" class="button">Plus…</a></li>
       </ul>
       {# TODO make this part smaller #}
       <p>
-        Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
-          {{ last_article.date | strftime('%-d %b %Y') }}
+        Publié le <time class="published" datetime="{{ article.date | strftime('%Y-%m-%d') }}">
+          {{ article.date | strftime('%-d %b %Y') }}
         </time>
-        par <a href="{{ last_article.author.url }}" class="author">
-          <span class="name">{{ last_article.author }}</span>
+        par <a href="{{ SITEURL }}/{{ article.author.url }}" class="author">
+          <span class="name">{{ article.author }}</span>
           {# TODO use gravatar here #}
           <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
         </a>
@@ -78,13 +78,13 @@
   <footer>
     <ul class="pagination">
     {% if dates_page.has_previous() %}
-      <li><a href="/{{ dates_previous_page.url }}" class="button">Plus récents</a></li>
+      <li><a href="{{ SITEURL }}/{{ dates_previous_page.url }}" class="button">Plus récents</a></li>
     {% else %}
       <li><a href="" class="button disabled">Plus récents</a></li>
     {% endif %}
 
     {% if articles_page.has_next() %}
-      <li><a href="/{{ dates_next_page.url }}" class="button">Plus anciens</a></li>
+      <li><a href="{{ SITEURL }}/{{ dates_next_page.url }}" class="button">Plus anciens</a></li>
     {% else %}
       <li><a href="" class="button disabled">Plus anciens</a></li>
     {% endif %}
