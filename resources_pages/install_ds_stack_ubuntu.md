@@ -210,14 +210,11 @@ Next, type the following to ask for the version of Python:
 ```
 python --version
 ```
-which should return Python 3.9.0 or greater:
+which should return Python 3.10.0 or greater:
 
 ```
-Python 3.9.5
+Python 3.10.0
 ```
-
-> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.9**.
-
 
 ## Installing Python packages
 
@@ -741,7 +738,7 @@ Kernel:           Linux 5.11.0-7620-generic
 MISSING   psql 13.*
 OK        rstudio 1.4.1725
 OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-OK        python 3.9.1
+OK        python 3.10.0
 OK        conda 4.10.3
 OK        bash 5.1.4(1)-release (x86_64-pc-linux-gnu)
 OK        git 2.32.0

@@ -296,13 +296,11 @@ After installation, open the Start Menu and search for the program called "Anaco
 python --version
 ```
 
-which should return Python 3.9.0 or greater:
+which should return Python 3.10.0 or greater:
 
 ```
-Python 3.9.5
+Python 3.10.0
 ```
-
-> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.9**.
 
 ### Integrating Python with the Git Bash terminal
 
@@ -971,7 +969,7 @@ Microsoft Windows 10 Education
 MISSING   psql 13.*
 OK        rstudio 1.4.1725
 OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-OK        python 3.9.1
+OK        python 3.10.0
 OK        conda 4.10.3
 OK        bash 4.4.23(1)-release (x86_64-pc-msys)
 OK        git 2.32.0.windows.2
