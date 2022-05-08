@@ -596,7 +596,6 @@ To install an extension, you simply search for it in the search bar, click the e
 - Docker (easily use Docker from VS Code)
 - (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
 - (Optional) Material Icon Theme (great-looking custom file icons!)
-- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
 
 [This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
