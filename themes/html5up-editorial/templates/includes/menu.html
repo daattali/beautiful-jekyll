@@ -1,0 +1,88 @@
+<!-- Lateral navigation menu -->
+<nav id="menu">
+
+  <header class="major">
+    <h2>Menu</h2>
+  </header>
+
+  <ul>
+    <!-- Home page -->
+    <li><a href="index.html">Accueil</a></li>
+
+    <!-- All categories -->
+    <li>
+      <span class="opener">Catégories</span>
+      <ul>
+        {% for category, _ in categories|sort %}
+        {# TODO create a category template page #}
+        <li>
+          <a href="{{ category.url }}">
+            <i class="icon fa-solid fa-folder"></i>
+            {{ category.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+
+    <!-- All series of articles -->
+    {# TODO add series support #}
+    <li>
+      <span class="opener">Séries</span>
+      <ul>
+        {% for serie, _ in series|sort %}
+        {# TODO create a serie template page #}
+        <li>
+          <a href="{{ serie.url }}">
+            <i class="icon fa-solid fa-list"></i>
+            {{ serie.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+
+    <!-- All tags -->
+    <li>
+      <span class="opener">Tags</span>
+      <ul>
+        {% for tag, _ in tags|sort %}
+        {# TODO create a tag template page #}
+        <li>
+          <a href="{{ tag.url }}">
+            {# BUG for a strange reason tag icon refuse to show up #}
+            <i class="icon fa-solid fa-lightbulb"></i>
+            {{ tag.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+
+    <!-- All authors -->
+    <li>
+      <span class="opener">Auteur⋅e⋅s</span>
+      <ul>
+        {% for author, _ in authors|sort %}
+        {# TODO create an author template page #}
+        <li>
+          <a href="{{ author.url }}">
+            <i class="icon fa-solid fa-user"></i>
+            {{ author.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+
+    <!-- Archives -->
+    {# TODO create a real archives page #}
+    <li><a href="#">Archives</a></li>
+
+    <!-- About page -->
+    {# TODO create a real à propos page #}
+    <li><a href="#">À propos</a></li>
+
+  </ul>
+
+</nav>
