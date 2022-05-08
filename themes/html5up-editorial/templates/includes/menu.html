@@ -1,20 +1,19 @@
 <!-- Lateral navigation menu -->
 <nav id="menu">
-
   <header class="major">
     <h2>Menu</h2>
   </header>
 
   <ul>
     <!-- Home page -->
-    <li><a href="/index.html">Accueil</a></li>
+    <li><a href="{{ SITEURL }}//index.html">Accueil</a></li>
 
     <!-- All categories -->
     <li>
       <span class="opener">Catégories</span>
       <ul>
-        {% for category, _ in categories|sort %}
-        {# TODO create a category template page #}
+        {% for category, _ in categories|sort %} {# TODO create a category
+        template page #}
         <li>
           <a href="{{ SITEURL }}/{{ category.url }}">
             <i class="icon fa-solid fa-folder"></i>
@@ -29,8 +28,7 @@
     <li>
       <span class="opener">Tags</span>
       <ul>
-        {% for tag, _ in tags|sort %}
-        {# TODO create a tag template page #}
+        {% for tag, _ in tags|sort %} {# TODO create a tag template page #}
         <li>
           <a href="{{ SITEURL }}/{{ tag.url }}">
             {# BUG for a strange reason tag icon refuse to show up #}
@@ -46,8 +44,8 @@
     <li>
       <span class="opener">Auteur⋅e⋅s</span>
       <ul>
-        {% for author, _ in authors|sort %}
-        {# TODO create an author template page #}
+        {% for author, _ in authors|sort %} {# TODO create an author template
+        page #}
         <li>
           <a href="{{ SITEURL }}/{{ author.url }}">
             <i class="icon fa-solid fa-user"></i>
@@ -65,7 +63,5 @@
     <!-- About page -->
     {# TODO create a real à propos page #}
     <li><a href="#">À propos</a></li>
-
   </ul>
-
 </nav>
