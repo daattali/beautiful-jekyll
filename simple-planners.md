@@ -27,9 +27,7 @@ My Simple Planner is developed based upon my own planning method, inspired by th
 
 **Why My Simple Planner over another planner?** _I can't tell you my planner is better than the rest because we all have different preferences, but I can tell you that my planner is based on my own planning methods that have been both simple and effective for me with unscrambling my mom brain! I've create My Simple Planners to be visually appealing, yet minimalistic._
 
-***
-
-\**....PREVIEW IMAGE
+![Preview of the planner.](/uploads/planner-preview.png "MY SIMPLE PLANNER PREVIEW SHM")
 
 **ABOUT My Simple Planner:**
 
