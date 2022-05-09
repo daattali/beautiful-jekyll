@@ -8,7 +8,7 @@ summary: >
 cover:
   img: messy-room.jpg
   comment: Électron, va falloir ranger ta chambre fissa !
-category: science
+category: sciences
 series: C'est quoi les nombres quantiques
 tags: [someone was wrong, sciences, physique, chimie, tableau périodique]
 status: published
