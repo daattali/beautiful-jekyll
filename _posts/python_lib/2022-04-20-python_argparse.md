@@ -41,24 +41,28 @@ argparse는 깃허브에서 ML/DL 모델을 테스트할 때 하이퍼파라미�
 : 인자를 추가한다. name or flags에는 인자의 이름 또는 string list가 포함 되는데, foo 또는 -f, --foo 이런 식.  
 type으로 입력되어야 하는 인자의 형식을 지정할 수 있고, dest로 실제 attribute에 저장되는 값, default로 기본값을 정할 수 있다.
 
+name or flags 인자에서   
+- 인자는 positional 인자와 optional 인자가 있으며, 인자의 이름 앞에 -가 붙어 있으면 optional, 아니면 positional 인자로서 필수로 지정해야 한다.
+- 인자의 이름에는 -와 _을 쓸 수 있으나, python 기본 문법은 변수명에 -를 허용하지 않기 때문에, 인자의 이름에 -가 들어갔다면 args.인자로 접근하려면 -를 _로 바꿔 주어야 한다.
+
 action 인자에서는 커맨드라인에서 args 입력 시, 어떤 행동을 할지 정한다.   
 
 
-**store** : 기본값으로 지정된 action이며, 설정한 인자를 단순히 저장한다.
+- **store** : 기본값으로 지정된 action이며, 설정한 인자를 단순히 저장한다.
 ```
 >>> parser = argparse.ArgumentParser()
 >>> parser.add_argument('--foo')
 >>> parser.parse_args('--foo 1'.split())
 Namespace(foo='1')
 ```
-**store_const** : const 인자에 의해 지정된 값을 저장한다.
+- **store_const** : const 인자에 의해 지정된 값을 저장한다.
 ```
 >>> parser = argparse.ArgumentParser()
 >>> parser.add_argument('--foo', action='store_const', const=42)
 >>> parser.parse_args(['--foo'])
 Namespace(foo=42)
 ```
-store_true : 인자를 설정하면 true값을 반환한다. store_false로 false값을 지정할 수도 있다.
+- store_true : 인자를 설정하면 true값을 반환한다. store_false로 false값을 지정할 수도 있다.
 ```commandline
 >>> parser = argparse.ArgumentParser()
 >>> parser.add_argument('--foo', action='store_true')

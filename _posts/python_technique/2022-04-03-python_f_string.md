@@ -33,6 +33,6 @@ Dcab       ==>       7678
 
 
 ## @ 참고
-https://peps.python.org/pep-0498/
-7.1.1 포맷 문자열 리터럴 :   https://docs.python.org/ko/3/tutorial/inputoutput.html
-포맷 문자열의 명세 방법 :     https://docs.python.org/ko/3/library/string.html#formatspec
+[PEP 문서](https://peps.python.org/pep-0498/)  
+[7.1.1 포맷 문자열 리터럴](https://docs.python.org/ko/3/tutorial/inputoutput.html)   
+[포맷 문자열의 명세 방법](https://docs.python.org/ko/3/library/string.html#formatspec)

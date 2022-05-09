@@ -5,7 +5,7 @@ subtitle: 파일에 대한 고수준 연산을 지원하는 내장 라이브러�
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [python library, shutil]
+tags: [python library, shutil, 파일이동, 파일복사, 이름변경]
 ---
 shutil 라이브러리는 파일 및 파일들에 대한 고수준 연산(이동,삭제,복사 등)을 지원한다.
 
@@ -15,12 +15,14 @@ import shutil
 ```
 
 ## 2.기능
-### 1 파일이동 : shutil.move(src, dst, copy_function=copy2)
+### 1 파일이동, 이름변경 : shutil.move(src, dst, copy_function=copy2)
 src 파일 또는 폴더를 dst 폴더로 이동한다. dst 폴더가 없는 경우 새로 폴더를 생성한다.   
 ex)   
-shutil.move('test.csv','test_folder')   
-
-
+shutil.move('test.csv','test_folder')      
+   
+이름을 변경할 수도 있다.
+ex)
+shutil.move('test.csv','test2.txt')
 ### 2 파일복사 : shutil.copy(src, dst, *, follow_symlinks=True)
 **파일** src를 파일이나 디렉터리 dst에 복사한다. src와 dst는 path 객체나 문자열이어야 한다.
 ex)   

@@ -40,6 +40,5 @@ q.exist()
 q.is_dir()
 ```
 
-
 ## @참고
 https://docs.python.org/ko/3/library/pathlib.html
