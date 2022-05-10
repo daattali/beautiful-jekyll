@@ -31,7 +31,7 @@ My Simple Planner is developed based upon my own planning method, inspired by th
 
 **ABOUT My Simple Planner:**
 
-* 5 cover page options
+* 2 cover page options
 * undated 3 month planner
 * monthly overview pages and notes with lots of writing space
 * daily planning pages that include open ended boxes and to do list lines that you can use for tasks, notes, or appointments
