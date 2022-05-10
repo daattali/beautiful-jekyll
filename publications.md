@@ -13,42 +13,41 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
-            <img src="../pics/rss2022logo.png" img width="250">
+            <img src="../pics/montage.gif" img width="250">
         </td>
-        <td><a href="">FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects</a><br>
+        <td><a href="https://sites.google.com/view/articulated-flowbot-3d/home#h.xrrj1zv4o44a">FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects</a><br>
             <div class="pubauthor">
-            Ben Eisner*, Harry Zhang*, David Held<br>
+                Ben Eisner*, Harry Zhang*, David Held<br>
             </div>
             <div id="bib2022flowbot3D" style="display:none">
                 <blockquote>
-                    <pre>@inproceedings{
-        lin2022diffskill,
-        title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
-        author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
-        booktitle={International Conference on Learning Representations},
-        year={2022},
-        url={https://openreview.net/forum?id=Kef8cKdHWpP}}
+                    <pre>@inproceedings{EisnerZhang2022FLOW,
+            title={FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects},
+            author={Eisner*, Ben and Zhang*, Harry and Held,David},
+            booktitle={Robotics: Science and Systems (RSS)},
+            year={2022}
+       }
 
-                </pre>
-            </blockquote>
-        </div>
-        <div id="abs2022flowbot3D" style="display:none">
-            <blockquote>
-                We consider the problem of sequential robotic manipulation of deformable objects using tools.
-    Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. 
-            
-            </blockquote>
-        </div>
-        <div class="pubjournal">Robotics: Science and Systems (RSS), 2022
-        <div style="font-size:small">
-            <!--a href="https://sites.google.com/view/iclr2022flowbot3D">[Project Page]</a>
-            <a href="javascript:copy(div2022flowbot3D, bib2022flowbot3D)">[Bibtex]</a>
-            <a href="javascript:copy(div2022flowbot3D, abs2022flowbot3D)">[Abstract]</a>
-            <a href="https://openreview.net/pdf?id=Kef8cKdHWpP">[PDF]</a-->
-        </div>
-        <div id="div2022flowbot3D" class="pubInfo"></div>
-        </div>
-        <br>
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="abs2022flowbot3D" style="display:none">
+                <blockquote>
+                    We consider the problem of sequential robotic manipulation of deformable objects using tools.
+Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable the robot to articulate unseen classes of objects. We propose a vision-based system that learns to predict the potential motions of the parts of a variety of articulated objects to guide downstream motion planning  of the system to  articulate the objects. To predict the object motions, we train a network to output a dense vector field representing the point-wise motion direction of the points in the point cloud under articulation. The system then will deploy an analytical motion planning policy based on this vector field to achieve a grasp that yields maximum articulation. We train the vision system in simulation.  We then demonstrate the capability of our system to generalize to  unseen object instances and novel categories by testing our network in both simulation and real world, deployed on a Sawyer robot without retraining.
+                
+                </blockquote>
+            </div>
+            <div class="pubjournal">Robotics: Science and Systems (RSS), 2022
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/articulated-flowbot-3d/home#h.xrrj1zv4o44a">[Project Page]</a>
+                <a href="javascript:copy(div2022flowbot3D, bib2022flowbot3D)">[Bibtex]</a>
+                <a href="javascript:copy(div2022flowbot3D, abs2022flowbot3D)">[Abstract]</a>
+                <a href="https://arxiv.org/pdf/2205.04382.pdf">[PDF]</a>
+            </div>
+            <div id="div2022flowbot3D" class="pubInfo"></div>
+            </div>
+            <br>
         </td>
     </tr>
 
