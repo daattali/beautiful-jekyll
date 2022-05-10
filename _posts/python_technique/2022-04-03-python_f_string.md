@@ -18,7 +18,8 @@ print(f"Pi is approximately {pi:.3f}.")
 table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678}
 ```
 
-: 열을 맞출 때, f-string 표현식 뒤에 정수를 전달하면 필드의 최소 문자 폭을 맞출 수 있다.
+: 열을 맞출 때, f-string 표현식 뒤에 정수를 전달하면 필드의 최소 문자 폭을 맞출 수 있다.  
+그런데 0을 앞에 원하는 만큼 채우는 경우에는 str.zfill을 사용한다.
 ```python
 for name, phone in table.items():
     print(f'{name:10} ==> {phone:10d}')

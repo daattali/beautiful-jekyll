@@ -8,7 +8,11 @@ share-img: /assets/img/path.jpg
 tags: [python library, natsort]
 ---
 ## 1.모듈 설치
-import natsort   
+natsorted 함수만 거의 사용됨.   
+```python
+from natsort import natsorted
+```
+   
 소스 : https://github.com/SethMMorton/natsort    
 
 ## 2.모둘 사용해 정렬
@@ -27,7 +31,7 @@ natsort provides a function natsorted that helps sort lists "naturally" ("natura
 ```
 >>> from natsort import natsorted
 >>> a = ['2 ft 7 in', '1 ft 5 in', '10 ft 2 in', '2 ft 11 in', '7 ft 6 in']
->>> natsorted(a)ㄴ
+>>> natsorted(a)
 ['1 ft 5 in', '2 ft 7 in', '2 ft 11 in', '7 ft 6 in', '10 ft 2 in']
 ```
 natsorted identifies numbers anywhere in a string and sorts them naturally. Below are some other things you can do with natsort (also see the examples for a quick start guide, or the api for complete details).

@@ -36,4 +36,7 @@ shutil.copy2('test.csv','test_folder')
 ex)   
 shutil.copytree('test','test2')
 
-## 3.특이사항
+다만 폴더를 복사하려는 데, 상위 폴더가 만들어 있지 않을 경우, os.makedirs를 사용하면 없는 폴더까지 만들어준다.
+
+## @참고
+[shutil](https://docs.python.org/ko/3/library/shutil.html)
