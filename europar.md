@@ -34,7 +34,7 @@ All submitted research papers will be peer-reviewed and accepted papers will be 
 
 ### Important dates
 
-**Paper submission deadline:** May 6th, 2022 AoE<br/>
+**Paper submission deadline:** <strike>May 6th, 2022 AoE</strike> Extended to May 20th, 2022 AoE<br/>
 **Author notification:** July 1st, 2022<br/>
 **Workshop:** August 22nd or 23rd, 2022
 
