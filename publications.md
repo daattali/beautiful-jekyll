@@ -381,7 +381,7 @@ We address the problem of goal-directed cloth manipulation, a challenging task d
             </div>
             <div style="font-size:small">
                 <a href="https://sites.google.com/view/fabricflownet">[Project Page]</a>
-                <!-- <a href="">[Code]</a> -->
+                <a href="https://github.com/thomasweng15/FabricFlowNet">[Code]</a>
                 <a href="javascript:copy(weng2021fabricflownet, bibweng2021fabricflownet)">[Bibtex]</a>
                 <a href="javascript:copy(weng2021fabricflownet, absweng2021fabricflownet)">[Abstract]</a>
                 <a href="https://arxiv.org/pdf/2111.05623.pdf">[PDF]</a>
