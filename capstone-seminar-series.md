@@ -34,7 +34,16 @@ by Zaid Haddad
 
 This worked on my workstation! MLOps is a framework that aims to deploy & maintain machine learning models in production reliability & efficiently. Often, models are developed in isolated systems. MLOps frameworks help transition models developed from ad-hoc solutions & isolated systems to a ML lifecycle management. This talk will walk you through Slalom’s MLOps framework.
 
+#### Title TBD
+by Carrie Cheung
+
+Capstone can be both an exciting and scary time for MDS students as they approach the end of the program and the prospect of working professionally in the industry. As a graduate of the MDS program, Carrie understands this feeling and will share with students her journey from MDS to working as a Data Scientist at NuData Security. 
+ 
+NuData Security, a Mastercard company, helps businesses everyday to combat online fraud through a multi-layered approach leveraging behavioral analytics, behavioral biometrics, and device intelligence. Carrie will talk about NuData's solutions for fighting fraud, her work as a Data Scientist at NuData and what a typical workday for her looks like. She will also touch upon areas where student expectations can often differ significantly from reality in industry, and tips for how students can make the transition from school to industry just a little bit easier.
+
 #### Low-Resource Multilingual NLP at Google
 by Christo Kirov, Google
 
 As more and more users around the world access the Internet, especially on their smartphones, it becomes imperative to enable seamless interaction in their native language (see nextbillionusers.google). Unfortunately, support still lags behind for many languages outside of English. I'll discuss some of the challenges of building NLP models for these smaller languages for tasks such as language identification, translation, transliteration, and language modeling. In many cases, the development of new datasets (including open source efforts like UniMorph, Universal Dependencies, and Google's own Dakshina Dataset) plays a critical role in making progress.
+
+
