@@ -50,6 +50,12 @@ My Simple Planner is developed based upon my own planning method, inspired by th
 
 The beginning of My Simple Planner gives you your monthly overviews, followed by your weekly dashboards, and daily planning pages. At the end of the planner, you will find routine pages, running to do list pages, braindump pages, and note pages.
 
+#### You're going to want to see the whole planner, with previews of each page HERE in my Etsy Shop!
+
+**<button>Buy My Simple Planner**</button>
+
+<br>
+
 ### MY SIMPLE HOMESCHOOL PLANNER
 
 Need a simple homeschooling planner for your homeschool planning needs too? **My Simple Homeschool Planner** is designed with simplicity in mind. Many of the pages can be multipurposed. For instance, you can use the daily planning checklist sheet for individual checklists or for daily planning for the family.
