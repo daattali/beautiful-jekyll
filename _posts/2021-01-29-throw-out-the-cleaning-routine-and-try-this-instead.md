@@ -62,7 +62,7 @@ So maybe throwing out the cleaning routine would work for you too. It's worth a 
 
 # Create your own master cleaning task list with a free printable
 
-_If you like the sounds of a master cleaning task list and want to try it out for yourself, I created a simple blank master cleaning task list printable for you to fill in. You can download it_ [_here_](https://mailchi.mp/b99d58a9c22d/master-cleaning-task-list)_. And if you'd like to simplify your home even more, my course - Simplify Your Home Life: a course for busy moms is open. You can take a look at that_ [_here_](www.simplehomemom.com/course)_._
+_If you like the sounds of a master cleaning task list and want to try it out for yourself, I created a simple blank master cleaning task list printable for you to fill in. You can download it_ [_here_](https://mailchi.mp/b99d58a9c22d/master-cleaning-task-list)_. And if you'd like to simplify your home even more, my course - Simplify Your Home Life: a course for busy moms is open and is 50% off! You can take a look at that_ [_here_](www.simplehomemom.com/course)_._
 
 ![Cleaning supplies on a table with gloves.](/uploads/throw-out-the-cleaning-routine-and-try-this-instead.jpg "Throw Out The Cleaning Routine and Try This Instead SHM")
 
