@@ -33,45 +33,49 @@ _I saved every tip that I could that was shared from my January_ [_Zero Spend Ch
  5. Don't look at extra things in stores. Go in for what you came for!
  6. Do a pantry challenge. Use up food that's sitting there in your freezer, fridge, or pantry.
  7. Make meals that are lower cost i.e. soups...Replace meats with lentils and beans. Simple meal plan for more focused grocery orders and less buying whatever kinds of foods.
- 8. Do homemade vs. takeout or storebought where possible. 
+ 8. Do homemade vs. takeout or storebought where possible.
  9. Replace disposable with reusable as much as possible i.e. cleaning cloths, cloth diapers, safety razor. **Related:** [20 Product Switches that Will Save Money](https://www.simplehomemom.com/20-product-switches-that-will-save-money/)
 10. Go for frozen pizza vs. takeout to save a significant amount of money.
-11. If you have to go on errands, tack on as many as you can to save on gas
-12. When looking for a vet, call around for best prices!
-13. Buy offbrand of things that make sense. It saves a bunch! ie store brand mac and cheese vs KD
-14. Shop second hand marketplace. thrift stores
-15. Use leftovers a part of your meal plan
-16. Make water the main thing you drink. Drinks all add up $!
-17. Make coffee at home
-18. Tracking grocery prices to save money
-19. America's cheapest family book
-20. Pause subscriptiojns
-21. Comparing food unit prices
-22. Buyingin the bulk for things that make sense
-23. Make own bread
-24. Flyer shop and meal plan based on what's on sale
-25. Try not to waste food
-26. Buy meat on sale and freeze
-27. Only shop 1X a week and never shop hungry
-28. Same base grocery list, meal rotation, order online and pickup
-29. Soups and stews very afforable
-30. eating lessmeat and replacingwith alternatives
-31. some frozen and canned veggies, fish cheaper than fresh
-32. make vs buy snacks
-33. simplify: make bread vs buy rolls, wraps, bread, crust etc
-34. Wait on purchases as much as possible...make do or find secondhand
-35. ask: do we really need this?
-36. bring your own snacks vs buying on the road
-37. watch your food waste and try to prevent for the future
-38. leave in in your cart - for 1 week! before purchasing
-39. Unsubscirbe from store emails
-40. avoid restaurants and takeout
-41. Find a way to do it yourselves as much as possible ie haricuts
-42. buy offbrand where possible
-43. reduce takeout or treat days
-44. hang onto your vehicle for as long as you can...buy second hand when you need a new one
+11. If you have to go on errands, tack on as many as you can to save on gas.
+12. When looking for a vet, call around for best prices! We saved $200 just for 30 minutes of work.
+13. Buy offbrand of things that make sense. It saves a bunch! i.e. store brand mac and cheese vs. brand name.
+14. Shop second hand marketplace and thrift stores before buying new where possible.
+15. Use leftovers as a part of your meal plan.
+16. Make water the main thing you drink. Drinks all add up quickly $$!
+17. Make coffee at home.
+18. Track grocery prices at different stores to save money.
+19. Pause subscriptions that may not be needed i.e. Amazon Prime, magazine subscriptions.
+20. Compare food unit prices when shopping.
+21. Buy in bulk for food that make sense for your family.
+22. Make your own bread.
+23. Flyer shop and meal plan based on what's on sale.
+24. Try not to waste food.
+25. Buy meat on sale and freeze.
+26. Only shop 1X a week and never shop hungry.
+27. Have the same base grocery list, meal rotation and then order online and pickup.
+28. Soups and stews are very affordable meals for families. **Related:** [10 Simple and Cost Effective Family Meals](https://www.simplehomemom.com/10-simple-and-cost-effective-family-meals/)
+29. Eat less meat and replace with alternatives such as beans and lentils.
+30. Use some frozen and canned veggies vs. fresh as in most cases it's just as nutrient dense, but more cost effective. 
+31. Make vs. buy snacks.
+32. Simplify: make bread vs. buy rolls, wraps, bread, crust etc.
+33. Wait on purchases as much as possible...make do or find secondhand.
+34. Ask: do we really need this?
+35. Bring your own snacks vs. buying on the road.
+36. Watch your food waste and try to prevent for the future...such as using vegetable scraps to make veggie broth.
+37. Leave that item in in your cart - for 1 week! before purchasing.
+38. Unsubscirbe from store emails.
+39. Avoid restaurants and takeout.
+40. Find a way to do it yourselves as much as possible i.e. haricuts.
+41. Buy offbrand where possible.
+42. Rduce takeout or treat days.
+43. Hang onto your vehicle for as long as you can...buy second hand when you need a new one.
+44. Hang to dry as much as possible to save on electricity.
 
 ### Money Saving Grocery Freebie!
+
+If you’re stumped with meal planning and grocery planning, you may enjoy the method I use for our monthly grocery planning. Since I started applying this method, I started saving our family $200-$300/month consistently. It’s also helped our meal planning situation as well. You can snatch that freebie [HERE.](https://mailchi.mp/82b428a1e609/our-grocery-planning-method) I also read a fantastic book with all of the tips and tricks you can imagine called _Cut Your Grocery Bill in Half._ You can find that book in my Amazon shops: [US shop](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/www.amazon.com/shop/simplehomemom) and [Canadian shop](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/www.amazon.ca/shop/simplehomemom).
+
+**Save for future reference:**
 
 **Blogs of mine you may like:**
 
