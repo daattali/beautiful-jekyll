@@ -11,9 +11,9 @@ during the DSCI 591 Capstone Project course. Talks will be held from 2-3pm in DM
 
 |Date|Speaker|Seminar Title|
 |:---|:---:|:---:|
-| 2022/05/13 | Scott Mackie, Amazon | TBD |
+| 2022/05/13 | [Scott Mackie](#scott-mackie), Amazon | Building language models for voice assistants |
 | 2022/05/20 | [Zaid Haddad](#zaid-haddad), Slalom | [Slalom’s MLOps Framework](#slaloms-mlops-framework) |
-| 2022/05/27 | Carrie Cheung, NuData Security, A Mastercard Company | TBD |
+| 2022/05/27 | [Carrie Cheung](carrie-cheung), NuData Security, A Mastercard Company | [Life of a Data Scientist: Beyond the Classroom](life-of-a-data-scientist-beyond-the-classroom) |
 | 2022/06/03 | Adina Williams, Meta | TBD |
 | 2022/06/10 | [Christo Kirov](#christo-kirov), Google | [Low-Resource Multilingual NLP at Google](#low-resource-multilingual-nlp-at-google) |
 | 2022/06/17 | Capstone Presentations (no seminar series talk this week)| |
@@ -21,8 +21,14 @@ during the DSCI 591 Capstone Project course. Talks will be held from 2-3pm in DM
 
 ## Speaker Bio's
 
+#### Scott Mackie
+Dr. Scott Mackie is a Senior Language Engineer at Amazon Alexa, where he has worked since 2018. Scott graduated with a PhD from UBC Linguistics in 2016.
+
 #### Zaid Haddad
 Zaid is a Data Scientist Leader at Slalom. Prior to Slalom, Zaid was a data scientist at Aurora Cannabis where he developed several end-to-end machine learning models & enterprise data science solutions. Also, he designed, developed & led various machine learning projects in personalized healthcare for start-ups and regulated environments. He has supported several organizations in the development and implementation of data science road maps from conception to deployment & advised local start-ups on machine learning & AI strategy.  
+
+#### Carrie Cheung 
+Carrie graduated from the UBC MDS program in 2019. Prior to MDS, she double majored in Computer Science and Psychology at UBC, an admittedly odd combination that hinted at an affinity for opportunities which blend the technical with the non-technical. One of these opportunities led her to data science and the rest is history.
 
 #### Christo Kirov
 I'm currently a research software engineer at Google Research, working out of the NYC office. I'm interested in low-resource (both in terms of data and computational power) NLP in multilingual settings. I'm coming from a broad academic background - my undergraduate degree is in Computer Science and Linguistics, and I received my PhD in Cognitive Science from JHU. Afterwards, I worked as a PostDoc teaching NLP at the Georgetown Linguistics Department. Before moving to Google, I spent several years as a PostDoc at the JHU Center for Language and Speech Processing, working under a grant program called LORELEI (low-resource Languages for Emergent Incidents). A major focus was the development of resources for morphological processing, particularly UniMorph (<https://unimorph.github.io/>).
@@ -34,7 +40,7 @@ by Zaid Haddad
 
 This worked on my workstation! MLOps is a framework that aims to deploy & maintain machine learning models in production reliability & efficiently. Often, models are developed in isolated systems. MLOps frameworks help transition models developed from ad-hoc solutions & isolated systems to a ML lifecycle management. This talk will walk you through Slalom’s MLOps framework.
 
-#### Title TBD
+#### Life of a Data Scientist: Beyond the Classroom
 by Carrie Cheung
 
 Capstone can be both an exciting and scary time for MDS students as they approach the end of the program and the prospect of working professionally in the industry. As a graduate of the MDS program, Carrie understands this feeling and will share with students her journey from MDS to working as a Data Scientist at NuData Security. 
