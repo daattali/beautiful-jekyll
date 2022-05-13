@@ -4,9 +4,6 @@ description: Helping moms simplify home life.
 author: Kelly Briggs
 navbar-links:
   Start here: popular
-  Resources:
-  - Freebies: "/freebies/"
-  - The Simple Meal Planning Guide: "/the-simple-meal-planning-guide/"
   Connect:
   - About me: https://kellymbriggs.github.io/aboutme/
   - Contact: https://kellymbriggs.github.io/contact/
