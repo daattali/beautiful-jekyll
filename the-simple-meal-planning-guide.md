@@ -4,17 +4,15 @@ title: The Simple Meal Planning Guide
 subtitle: ''
 
 ---
-## Are you overwhelmed with meal planning and want to have it in place once and for all?
+**ARE YOU OVERWHELMED WITH MEAL PLANNING AND WANT TO HAVE IT IN PLACE ONCE AND FOR ALL?**
 
-**If so, The Simple Meal Planning Guide** will help you never again to question yourself, “_What's for dinner?_” if you follow through with creating a plan that works for you and your family.
+If so, **The Simple Meal Planning Guide** will help you never again to question yourself, “_What's for dinner?_” if you follow through with creating a plan that works for you and your family.
 
-<br>
-
-### _"If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource." - Crystin from_ [_@delightfullyfeasting_](www.instagram.com/delightfullyfeasting)
+**_"If you struggle with meal planning at all (or just need fresh ideas and inspiration), you would love this simple, thorough, accessible resource."_** - Crystin from [@delightfullyfeasting](www.instagram.com/delightfullyfeasting)
 
 <br>
 
-### This Simple Meal Planning Guide is for you if:
+### THE SIMPLE MEAL PLANNING GUIDE IS FOR YOU IF:
 
 * you often dread mealtimes and feel overwhelmed with meal planning
 * you often google meal planning type ideas, but don’t know where to start
@@ -23,35 +21,59 @@ subtitle: ''
 
 ![A picture of the meal planning guide sheets.](/uploads/simple-meal-planning-guide.jpg "The Simple Meal Planning Guide Sneak Peek")
 
-### What you'll find in the Simple Meal Planning Guide:
+### WHAT'S IN THE SIMPLE MEAL PLANNING GUIDE:
 
-* Helpful meal planning and meal organizing tips
-* 8 helpful meal planning printables
+* **_Helpful simple meal planning and meal organizing tips:_**
+  * How to organize your meal planning
+  * Planning strategies and methods for meal planning
+  * Meal planning routine template
+  * Where to find meal ideas
+  * Open ended meal ideas such as breakfast bars and picky plates
+  * Summer meal ideas
+  * Saving money on groceries
+  * Tips for feeding hangry children faster
+  * Meal planning with theme nights
+* **_Helpful meal planning printables:_**
+  * Picky plate planner
+  * Buddha bowl planner
+  * Weekly meal plan - 2 variations
+  * Bi-weekly meal plan
+  * Monthly meal plan
+  * Food inventory masterlist
+  * Brainstorming
+  * Grocery list
+  * Recipe card
 * Steps to help guide you through the process of meal planning from start to finish
 * Bonus meal planning resources and ideas
 * There will be a variety of suggestions and strategies so that during different seasons or days you can find one that works
 * Ideas for weekly meal themes
-* Lastly, this **Simple Meal Planning Guide** is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
+* Lastly, this Simple Meal Planning Guide is about planning firstly. With a good plan, comes a good routine, and then no more scrambling to get food on the table. I cannot wait for you to dive in!
 
 <br>
 
-### READY TO START YOUR SIMPLE MEAL PLANNING?
+## READY TO START YOUR SIMPLE MEAL PLANNING?
 
-Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's get started!
-
-**_Please note:_** _I'll email you a copy of **the Simple Meal Planning Guide** within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
+Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's get started! **_Please note:_** _I'll email you a copy of **the Simple Meal Planning Guide** within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
 ![A picture of a review of the simple meal planning guide.](/uploads/simple-meal-planning-guide-review-shm.jpg "Simple Meal Planning Guide Review SHM")
 
-#### 3 MONEY SAVING TIPS FOR MEAL PLANNING
+<br>
 
-1. **Meal plan.** The best way to save money on meal planning is to actually make a meal plan! This is one of the reasons why I create a simple meal planning guide - to encourage us all to meal plan.
-2. **Batch cook.** Batch cooking is going to help you save time and money in the kitchen.
-3. **Seasonal meal planning.** Learning how to cook around the seasons will help you save money long term. Use produce when it's ready to go in your area and turn more towards root vegetables and frozen during off seasons.
+### 3 MONEY SAVING TIPS FOR MEAL PLANNING
 
-### Want to start meal planning AND save some money? Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase **the Simple Meal Planning Guide** and let's get started!
+1. **_Meal plan._** The best way to save money on meal planning is to actually make a meal plan! This is one of the reasons why I create a simple meal planning guide - to encourage us all to meal plan.
+2. **_Batch cook._** Batch cooking is going to help you save time and money in the kitchen.
+3. **_Seasonal meal planning._** Learning how to cook around the seasons will help you save money long term. Use produce when it's ready to go in your area and turn more towards root vegetables and frozen during off seasons.
 
-#### FREEBIE: Picky plate template to make your lunches much simpler!
+<br>
+
+## Want to start meal planning AND save some money? Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase the Simple Meal Planning Guide and let's get started!
+
+<br>
+
+### FREEBIE TEMPLATE: SIMPLIFY YOUR LUNCHES WITH PICKY PLATES
+
+![](/uploads/meal-plan-shm.jpg)
 
 Are you looking for more resources to simplify your life at home with children? You may love being on my newsletter list. You'll get access to the freebie vault, full of helpful guides and tips to help you simplify even more. One of them being my much sought after - picky plate template. It's what we use most days for our lunch so that we're no more wondering what to eat for lunch.
 
@@ -59,7 +81,9 @@ Are you looking for more resources to simplify your life at home with children? 
 
 <!--End mc_embed_signup-->
 
-#### Helpful meal planning blogs of mine you may enjoy:
+<br>
+
+#### MEAL PLANNING BLOGS OF MINE YOU MAY ENJOY:
 
 * [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
 * [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)

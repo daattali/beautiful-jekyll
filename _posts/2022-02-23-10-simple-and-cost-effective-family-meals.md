@@ -20,11 +20,11 @@ share-img: ''
 redirect_from: []
 
 ---
-I love getting meal inspiration from other families just like ours, so thought I'd write down all of our simple and cost effective family meals here for you. Hopefully you find something new to try. Tag me on instagram [@simplehomemom](www.instagram.com/simplehomemom) if you do! I bring you: 10 simple and cost effetive family meals.
+I love getting meal inspiration from other families just like ours, so thought I'd write down all of our simple and cost effective family meals here for you. Hopefully you find something new to try. Tag me on instagram [@simplehomemom](www.instagram.com/simplehomemom) if you do! Today on the blog, I bring you: **10 simple and cost effetive family meals**.
 
 #### Why simple and cost effective family meals?
 
-Because life is busy and most of the time kids do better with simple rather than elaborate meals..and plus it means less prep time for us. It's the ideal situation, right? I'm a fan of quick, simple, healthy meals that get repeated often. I'll be sharing our most popular meals in my blog for you today. They are in no particular order. I'd also love to hear what your favourites are; feel free to leave a comment!
+Simple and cost effective family meals are a must these days because life is busy and most of the time kids do better with simple rather than elaborate meals..and plus it means less prep time for us. The other benefit is the obvious - saving money, which is what most of strive to do. It's the ideal situation, right? I'm a fan of [quick, simple, healthy meals](https://www.eatingwell.com/gallery/13723/20-healthy-meals-you-can-make-in-20-minutes/) that get repeated often. I'll be sharing our most popular meals in my blog for you today. They are in no particular order. I'd also love to hear what your favourites are; feel free to leave a comment!
 
 #### 1. NACHOS
 
@@ -42,6 +42,8 @@ This is one of our "fun" meals that we have periodically, but it's always a hit 
 Serve the nachos on their own after broiling in the oven or with sour cream and/or salsa. If we're feeling like splurging a little, we buy Doritos and use those for the nachos. It's sooooo tasty!
 
 And because I love DIY: [DIY Nacho spice](https://www.allrecipes.com/recipe/46653/taco-seasoning-i/); [Easy Homemade Baked Pita Chips](https://www.joyfulhealthyeats.com/homemade-baked-pita-chips/); [Taco meat recipe](https://amindfullmom.com/3-ingredient-taco-meat-and-4-ways-to-use-it/)
+
+<br>
 
 #### 2. PICKY PLATES
 
@@ -73,6 +75,8 @@ I do variations of these often, so will share the most current version I've been
 * Lentils. I cook in the insant pot and mix with the tuna sometimes.
 * Chopped spinach
 * I'll sometimes serve with a side of mixed veggies too.
+
+<br>
 
 #### 4. TACO BOWLS (lentil with meat)
 
@@ -124,7 +128,7 @@ If you’re stumped with meal planning and grocery planning, you may enjoy the m
 
 #### 6. SIMPLE VEGETABLE SOUP
 
-This one is SO tasty and is usually a hit with our crew. We try to have at least one meatless supper a week, usually on Monday for a meatless Monday theme.
+This one is SO tasty and is usually a hit with our crew. We try to have at least one meatless supper a week, usually on Monday for a meatless Monday theme. Meal planning with theme nights is a hit here! It simplifies meal planning so much for us.
 
 **Ingredients:**
 
@@ -134,6 +138,10 @@ This one is SO tasty and is usually a hit with our crew. We try to have at least
 * Red lentils (they cook up so softly and you don't even notice them much in the soup)
 * Add chicken or turkey for a non vegetarian option
 * Serve with biscuits!
+
+**Related:**
+
+* [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
 
 <br>
 
@@ -199,10 +207,14 @@ Serve with biscuits if you'd like!
 
 **Helpful meal planning blogs of mine you may enjoy:**
 
-* [Simple Meal Planning with Theme Nights](https://www.simplehomemom.com/simple-meal-planning-with-theme-nights/)
 * [9 Ideas for Making Meal Planning Simpler](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/)
 * [Three tips to feed the hangry children fast](https://www.simplehomemom.com/three-tips-to-feed-the/)
-* [How to make lunches painless and quick with picky plates](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
+
+**Other help blogs I found with simple and cost effective family meals:**
+
+* [Healthy Dinners in 40 Minutes or Less](https://www.foodnetwork.com/healthy/packages/healthy-every-week/quick-and-simple/healthy-dinners-in-40-minutes-or-less)
+* [65 Easy Healthy Dinner Ideas](https://www.delish.com/cooking/recipe-ideas/g3733/healthy-dinner-recipes/)
+* [60 healthy dinners you can cook in 30 minutes](https://www.delicious.com.au/recipes/collections/gallery/60-healthy-dinners-you-can-cook-in-30-minutes/1vo4q819)
 
 <br>
 

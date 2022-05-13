@@ -6,7 +6,9 @@ subtitle: ''
 ---
 ## Quick links
 
-* Sign up for the **FREE** Simple Home Planning Binder Challenge [HERE](https://mailchi.mp/9e7cf5d96841/planningchallenge). You'll receive the FREE Ultimate Home Planning Binder Checklist on signup.
+* [The First Simple Planning Step to Take as a Beginner Planner + a free beginner daily plan printable](https://www.simplehomemom.com/the-first-simple-planning-step-to-take-as-a-beginner-planner/)
+* **FREE** >> [Simple Home Planning Binder Checklist](https://mailchi.mp/9710466fe4ba/binderchecklist)
+* [My Simple Home Planning Binder Printable Pack](https://buy.stripe.com/fZeaGO0ua164dbidQY) 50+ printables for you to use in your Home Planning Binder
 * [Newest blogs](https://www.simplehomemom.com)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
@@ -17,6 +19,7 @@ subtitle: ''
 * [My Simple Homeschool Planner](https://buy.stripe.com/6oE8yGel06qoc7e4gm)
 * Grab My Simple Daily Care Printables [HERE](https://mailchi.mp/d739479e4b35/mysimpledailycare)
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
+* FREE MINI COURSE: [Planning Basics Class](https://drive.google.com/drive/u/0/folders/1C_cQVPWmBMP8I6bP60KBzm-DLZCSdb2N)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) (50% off with the code 50HOME)
 * [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 
@@ -27,11 +30,15 @@ subtitle: ''
 * [Simplify Your Laundry Routine with Kelly Briggs](https://podcasts.apple.com/ca/podcast/ep155-simplify-your-laundry-routine-with-kelly-briggs/id1159498258?i=1000505748717)
 * [How to Simplify Your Homeschool Life](https://capturingthecharmedlife.com/2021/03/15/how-to-simplify-your-homeschool-life/)
 * [Quiet time](https://podcasts.apple.com/us/podcast/ep-23-quiet-time-and-homeschooling-with-kelly-briggs/id1527253695?i=1000533420517)
+* [How to Encourage and Teach our Children to be Involved in Chores, and Develop Habits and Routines](https://podcasts.apple.com/us/podcast/ep-30-how-to-encourage-and-teach-our-children-to-be/id1580396488?i=1000552448526)
+* [Home Management 101]() (Instagram interview)
 
 ## Homeschooling
 
-* [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/) + homeschooling blogs
+* [My homeschooling blogs](https://www.simplehomemom.com/tags/#homeschool%20planning)
 * [My Simple Homeschool Planner](https://buy.stripe.com/6oE8yGel06qoc7e4gm)
+* [Simplify Your Homeschool Life Workshop](https://www.simplehomemom.com/simplify-your-homeschool-life-workshop/)
+* [The Homeschooler's Playbook to Simple Homemaking](https://canadianhomeschoolconference.com/aff/42) (online Canadian Homeschool Conference, affiliate link). 35ish mins + resource notes + a freebie
 
 ## Other
 
