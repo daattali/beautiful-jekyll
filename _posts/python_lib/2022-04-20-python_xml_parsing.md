@@ -83,7 +83,6 @@ country {'name': 'Liechtenstein'}
 country {'name': 'Singapore'}
 country {'name': 'Panama'}
 ```
-
 엘리먼트를 찾기 위해 여러 방법을 사용할 수 있다.   
 
 - 아래있는 모든 서브 트리를 재귀적으로 이터레이트하여 특정 태그를 서치할 경우 : Element.iter()   
