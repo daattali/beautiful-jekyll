@@ -1,20 +1,20 @@
 ---
 layout: post
 title: How to Survive the Early Years of Parenting
-description: ""
-subtitle: ""
+description: Tips for how to survie the early years of parenting for new parents.
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ""
+thumbnail-img: ''
 share-img: "/assets/img/path.jpg"
 tags:
-  - toddler years
-  - baby years
-  - early parenting
-  - surviving parenting
+- toddler years
+- baby years
+- early parenting
+- surviving parenting
 redirect_from:
-  - 2020-08-27-how-to-survive-the-early-years-of-parenting
----
+- 2020-08-27-how-to-survive-the-early-years-of-parenting
 
+---
 It's no secret that the early years of parenting can be tough, especially with all of the kids under the age of five. A friend of mine termed this the "trench years". So how do you survive those early years without feeling completely burnt out? Today on the blog I'm sharing with you how to look at your days, shifting your mindset, and designing your days to help you to reduce overwhelm and get you through these years. We want to avoid burnout as much as possible.
 
 ## Lower your expectations
