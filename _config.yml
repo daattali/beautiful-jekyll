@@ -24,7 +24,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: ![KakaoTalk_20211006_140246921](https://user-images.githubusercontent.com/86946575/169213961-86aae2a4-3ae8-4434-b6cd-b4168ddf4cc8.jpg)
+avatar: "![KakaoTalk_20211006_140246921](https://user-images.githubusercontent.com/86946575/169213961-86aae2a4-3ae8-4434-b6cd-b4168ddf4cc8.jpg)"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
