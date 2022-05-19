@@ -8,12 +8,24 @@
 
 .lab-photo {
   background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%),
-    url("/DavidHeld_files/rpad group pic - Aug 2020 - fix.png") no-repeat center center;
-  background-size: contain;
+    url("/img/lab.jpg") no-repeat center center;
+    /* url("/DavidHeld_files/rpad group pic - Aug 2020 - fix.png") no-repeat center center; */
+  background-size: cover;
   background-color: black;
   min-height: 550px;
   /* padding-top: 8%; */
   position: relative;
+}
+@media only screen and (max-width: 900px) {
+  .lab-photo {
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .lab-photo {
+    background-size: contain;
+    min-height: 300px;
+  }
 }
 
 .main-news {
