@@ -1,0 +1,16 @@
+- id: prev_page
+  translation: "पिछला पृष्ठ"
+
+- id: next_page
+  translation: "अगला पृष्ठ"
+
+- id: read_time
+  translation:
+    one : "एक मिनट"
+    other: "{{ .Count }} मिनट"
+
+- id: toc
+  translation: "विषय - सूची"
+
+- id: translations
+  translation: "अनुवाद"

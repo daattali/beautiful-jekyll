@@ -1,0 +1,28 @@
+- id: prev_page
+  translation: "صفحه قبلی"
+
+- id: next_page
+  translation: "صفحه بعدی"
+
+- id: read_time
+  translation:
+    one: "۱ دقیقه"
+    other: "{{ .Count }} دقیقه"
+
+- id: toc
+  translation: "فهرست مطالب"
+
+- id: translations
+  translation: "ترجمه ها"
+
+- id: home
+  translation: "خانه"
+
+- id: edit_post
+  translation: "ویرایش"
+
+- id: code_copy
+  translation: "کپی"
+
+- id: code_copied
+  translation: "کپی شد!"

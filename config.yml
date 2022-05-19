@@ -1,0 +1,16 @@
+baseURL: https://urvahshabbir.com/
+languageCode: en-us
+title: Urvah Shabbir
+theme: "PaperMod"
+params:
+  defaultTheme: auto
+  homeInfoParams:
+    Title: Data Engineering Next Door
+    Content: The learnings and unlearnings of a data being
+  socialIcons:
+    - name: "Linkedin"
+      url: "linkedin.com/in/urvahshabbir/"
+    - name: "Github"
+      url: "https://github.com/urwa"
+    - name: "StackOverflow"
+      url: "https://stackoverflow.com/users/2296728/urvah-shabbir"
