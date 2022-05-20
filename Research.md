@@ -46,7 +46,7 @@ display_categories: [work]
 <dl>
     <dt>
     <img src="https://img.shields.io/badge/May 2022-00a19e.svg"></dt>
-<dd>  Talk at the Decision and Bayesian Computation lab, Pasteur </dd>
+<dd>  Talk at the Decision and Bayesian Computation lab (Institut Pasteur) </dd>
 
 </dl>
     
