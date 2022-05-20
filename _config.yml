@@ -18,6 +18,7 @@ navbar-links:
   TEST:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
+    - trs:"https://erosbryant.github.io/test1/"
 
 
 # --- Logo --- #
