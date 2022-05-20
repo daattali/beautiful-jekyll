@@ -75,10 +75,10 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
+ # twitter: true
   facebook: true
   linkedin: true
-  vk: false
+  vk: false   
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -97,7 +97,7 @@ feed_show_tags: true
 post_search: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "my,list,of,keywords"
 
 # --- Colours / background image --- #
 
