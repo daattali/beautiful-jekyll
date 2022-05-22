@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cross Cross AI – Part 1
+title: Criss Cross AI – Part 1
 subtitle: Scoring
 date: '2022-05-22T21:42:00.007+02:00'
 author: Morten
