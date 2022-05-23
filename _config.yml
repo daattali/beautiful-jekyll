@@ -9,17 +9,14 @@
 title: Erosbryant
 
 # Your name to show in the footer
-author: Some Person
+author: ErosBryant
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Tesh: "test1"
   About Me: "aboutme"
   TEST:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-    - trs: "test1"
+    - DataBase: " "
 
 
 # --- Logo --- #
