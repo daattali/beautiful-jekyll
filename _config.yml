@@ -17,7 +17,7 @@ navbar-links:
   About Me: "aboutme"
   Subject:
     - DataBase: " "
-    - Network: "/_posts/2022-05-23-네트워크기본.md"
+    - Network: "https://erosbryant.github.io/2022-05-23-네트워크기본"
 
 
 # --- Logo --- #
