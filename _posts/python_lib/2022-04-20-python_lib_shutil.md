@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python library : shutil
+title: python library (shutil)
 subtitle: 파일에 대한 고수준 연산을 지원하는 내장 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

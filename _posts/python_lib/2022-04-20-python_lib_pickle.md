@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python library : pickle
+title: python library (pickle)
 subtitle: 파이썬 객체를 그대로 저장할 수 있는 pickle 내장 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

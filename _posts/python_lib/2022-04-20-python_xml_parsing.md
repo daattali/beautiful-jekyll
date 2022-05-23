@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python library : xml.etree.ElementTree
+title: python library (xml.etree.ElementTree)
 subtitle: XML 파싱 및 수정을 위한 파이썬 내장 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python library : tarfile
+title: python library (tarfile)
 subtitle: 파일 압축풀기를 위한 파이썬 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

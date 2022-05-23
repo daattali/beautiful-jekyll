@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python library : pathlib
+title: python library (pathlib)
 subtitle: 파일 접근을 위한 내장 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

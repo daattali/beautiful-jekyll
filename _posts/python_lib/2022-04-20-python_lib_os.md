@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python library : os
+title: python library (os)
 subtitle: 운영체제 인터페이스를 지원하는 파이썬 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

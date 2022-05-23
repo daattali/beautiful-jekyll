@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python library : natsort
+title: python library (natsort)
 subtitle: 파일 이름이 숫자일 시 "naturally"하게 정렬하는 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

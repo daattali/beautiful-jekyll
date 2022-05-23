@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python library : argparse
+title: python library (argparse)
 subtitle: 커맨드라인 인자 파싱을 위한 파이썬 표준 라이브러리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
