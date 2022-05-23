@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python technique : Shell, Shell Script 문법
+title: Shell, Shell Script 문법
 subtitle: .sh 파일에 사용되는 문법 및 예제
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
@@ -105,7 +105,7 @@ python -m torch.distributed.launch --nnodes=$NNODES --node_rank=$NODE_RANK --mas
 # Any arguments from the third one are captured by ${@:3}
 
 ```
-## 이나 변수
+
 ## @ 참고
 [zetawiki](https://zetawiki.com/wiki/Bash_%EC%89%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_%EC%83%81%EB%8C%80%EA%B2%BD%EB%A1%9C_%EC%96%BB%EA%B8%B0)
 [Shell script tutorial](https://www.shellscript.sh/quickref.html)
