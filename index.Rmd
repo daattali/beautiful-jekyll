@@ -16,11 +16,23 @@ output:
 
 ## Bio
 
-Kynon J Benjamin is a computational geneticist with 9 years of expertise in
-bioinformatics, machine learning, and molecular biology. Authored and/or 
-contributed to 6 publications and 21 presentations, receiving 6 awards. 
-Experience in streamlining processes and efficient with resolving technical 
-issues with extensive leadership experience.
+Born and raised in a large extended family from Indianapolis, Indiana, Kynon Jade Benjamin is proud to be the first doctor in his family.
+Dr. Benjamin earned his GED with the support of his family before moving on to Indiana University–Purdue University Indianapolis (IUPUI).
+At IUPUI, Dr. Benjamin completed his work study at a neuroscience research laboratory, which started his scientific research journey.
+In his predoctoral studies, Dr. Benjamin designed and implemented drug delivery and drug development assays as well as developed
+bioinformatic pipelines for differential expression analysis for Angelman syndrome - a neurodevelopmental disorder. In his subsequent
+postdoctoral fellowship at the Lieber Institute for Brain Development and Johns Hopkins University School of Medicine, he developed
+computational pipelines for large-scale transcriptional (bulk and single-cell), genetic, and functional associations analyses in
+postmortem brain and brain (cerebral and striatal) organoids.
+
+The **primary goal** of Dr. Benjamin's research is to improve therapeutics for under-research communities (i.e., personalized medicine)
+via investigating ancestry differences for neurological disorders in relevant tissues. To this end, he *uses and develops computational*
+*tools* to examine the role of ancestry in the brain. In addition to this, Dr. Benjamin has established collaborations to use
+computational tools to address hypthesize driven question with publically available single-cell and bulk tissues.
+
+Throughout his research career, Dr. Benjamin's experiences have reinforced the **critical need for diversity and creating inclusive**
+**spaces**. As such, he has worked to provide mentorship and representation as well as advocate for opportunities for other
+underrepresented minorities.
 
 ## Education
 
@@ -36,12 +48,14 @@ Ph.D. in Genetics | August 2012 - August 2017
 
 B.S. in Biomedical Engineering | August 2010 - May 2012
 
-**Indiana University, Purdue University, Indianapolis** | Indianapolis, INcluding
+**Indiana University, Purdue University, Indianapolis** | Indianapolis, IN
 
 Biomedical Engineering | August 2008 - May 2010
 
-## Experience
+## Computational Experience
 
-**Google Brain** | Principal Investigator | January 2018 - Present
+**Johns Hopkins University School of Medicine** | Postdoctoral Fellow | January 2018 - Present
 
-**Netflix** | Research Scientist | June 2014 - December 2017
+**Lieber Institute for Brain Development** | Postdoctoral Fellow | October 2017 - Present
+
+## Publications
