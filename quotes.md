@@ -3,6 +3,8 @@ title: Media
 subtitle: Selection of appearances
 ---
 
+Euractiv [Trust in carbon market ‘undermined’ by EU’s Russia plans, analysts warn](https://www.euractiv.com/section/emissions-trading-scheme/news/trust-in-carbon-market-undermined-by-eus-russia-plans-analysts-warn/) (May 19, 2022)
+
 MIT Energy Futures Magazine [New England renewables + Canadian hydropower: A pathway to clean electricity in 2050
 ](https://energy.mit.edu/news/new-england-renewables-canadian-hydropower/) (Fall Issue, 2021)
 
