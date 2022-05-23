@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python technique : first class function, closure, decorator
+title: python technique (first class function, closure, decorator)
 subtitle: 데코레이터 사전 개념과 데코레이터 활용
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

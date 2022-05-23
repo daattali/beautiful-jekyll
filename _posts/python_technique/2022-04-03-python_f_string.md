@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python technique : f-string
+title: python technique (f-string)
 subtitle: Literal String Interpolation
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

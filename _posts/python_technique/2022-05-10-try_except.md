@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python technique : try-except
+title: python technique (try-except)
 subtitle: try-except 예외처리
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
