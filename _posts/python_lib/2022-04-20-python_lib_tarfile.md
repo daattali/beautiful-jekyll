@@ -36,6 +36,18 @@ tar.extractall()
 tar.close()
 ```
 
+TarFile.extractall(path='.', members=None, *, numeric_owner=False)¶
+아카이브의 모든 멤버(members)를 현재 작업 디렉터리나 디렉터리 path로 추출한다.
+소유자, 수정 시간 및 권한과 같은 디렉터리 정보는 모든 멤버가 추출된 후에 설정된다. 
+또한 디렉터리의 권한이 쓰기를 허용하지 않으면, 파일 추출은 실패한다.
+
+
+TarFile.extract(member, path='', set_attrs=True, *, numeric_owner=False)
+아카이브에서 현재 작업 디렉터리로 멤버(member)를 추출한다.  
+member는 파일명이나 TarInfo 객체일 수 있다.   
+path를 사용하여 다른 디렉터리를 지정할 수 있으며, path는 경로류 객체일 수 있다.    
+set_attrs가 거짓이 아닌 한 파일 어트리뷰트(소유자, 수정 시간, 모드)가 설정된다.
+
 ### 리스트 대신 제너레이터 함수를 사용해 TarFile.extractall()로 tar 아카이브의 부분집합을 추출
 ```python
 import os
@@ -46,7 +58,7 @@ def py_files(members):
         if os.path.splitext(tarinfo.name0)[1] == ".py":
             yield tarinfo
 
-tar = tarfile.open("sample.tar.gz")
+tar = tarfile.open("sample.tar", "r")
 tar.extractall(members=py_files(tar))
 tar.close()
 ```

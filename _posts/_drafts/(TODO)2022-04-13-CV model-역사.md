@@ -10,7 +10,7 @@ tags: [paper-review]
 # detection
 ## R-CNN  
 ![img.png](img.png)
-[blog](https://yeomko.tistory.com/13?category=888201)
+
 
 ### 과정
 1. Region Proposal:
@@ -57,5 +57,6 @@ SPP는 CNN layer를 통해 얻은 feature map을 정해진 grid(논문에서는 
 2. 여전히 최종 클래시피케이션은 binary SVM, Region Proposal은 Selective Search를 이용한다.
 3.  fine tuning 시에 SPP를 거치기 이전의 Conv 레이어들을 학습 시키지 못한다. 단지 그 뒤에 Fully Connnected Layer만 학습시킨다.
 
-
+[blog](https://yeomko.tistory.com/13?category=888201)
+https://herbwood.tistory.com/24 
 

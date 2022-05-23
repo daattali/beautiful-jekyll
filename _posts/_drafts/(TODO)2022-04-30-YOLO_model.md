@@ -32,4 +32,5 @@ tags: [paper-review]
  
 ## After review
 
+https://analyticsindiamag.com/yolov5/
 

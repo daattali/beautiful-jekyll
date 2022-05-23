@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python technique : Shell Script 문법
+title: python technique : Shell, Shell Script 문법
 subtitle: .sh 파일에 사용되는 문법 및 예제
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
@@ -9,6 +9,21 @@ tags: [sh, shell script]
 ---
 셸은 커널에 명령을 전달하기 위한 사용자 인터페이스 역할을 하며,
 셸 스크립트는 쉘에게 명령할 스크립트를 의미한다. sh 확장자 파일이 셸 스크립트 파일이다.
+# 셸
+## 리눅스에서 셸의 위치
+HW - Kernel - **Shell** - 사용자 or 응용프로그램   
+  
+## 사용가능한 Shell 보기
+cat /etc/shells  
+  
+## 현재 사용중인 Shell 보기
+echo $SHELL
+
+bash Shell은 실행 후 /etc/profile과 /etc/bashrc를 참조함.
+
+
+# 셸 스크립트
+
 ## #!/bin/bash
  보통의 sh파일 맨 윗줄에 선언되는데, #!는 SheBang 이라는 기호로, 
  **스크립트를 실행할 인터프리터의 절대경로**를 지정하는 역할을 한다.    
