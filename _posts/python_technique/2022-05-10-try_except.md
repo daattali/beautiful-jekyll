@@ -7,6 +7,7 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [try-except]
 ---
+
 try-except는 파이썬 예외 처리 시 사용할 수 있다.    
 ## 문법
 ```python

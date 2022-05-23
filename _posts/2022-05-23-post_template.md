@@ -5,7 +5,7 @@ subtitle: template subtitle
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/docker.png
 share-img: /assets/img/path.jpg
-tags: [pytorch, tensor]
+tags: [docker]
 ---
 템플릿 예제
 

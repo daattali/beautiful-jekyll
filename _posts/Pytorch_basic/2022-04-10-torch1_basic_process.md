@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [pytorch]
 ---
-요약하면 다음과 같다.
+요약하면 다음과 같다.   
 1. 학습을 위한 필요 모듈 임포트
 2. 데이터 전처리 (이미 전처리된 torchvision.datasets 등을 이용할 수 있음)
 3. 데이터 로더 생성 (DataLoader로 datasets을 batch 단위의 iterable 객체로 만듦.)
