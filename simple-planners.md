@@ -56,6 +56,8 @@ The beginning of My Simple Planner gives you your monthly overviews, followed by
 
 <br>
 
+Too lage of a size for you? Check out my foldable half size simple home planner!
+
 ### MY SIMPLE HOMESCHOOL PLANNER
 
 Need a simple homeschooling planner for your homeschool planning needs too? **My Simple Homeschool Planner** is designed with simplicity in mind. Many of the pages can be multipurposed. For instance, you can use the daily planning checklist sheet for individual checklists or for daily planning for the family.
