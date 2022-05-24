@@ -1,15 +1,29 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+# subtitle:
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+#### My name is 
+- ㊚ **赵光勋**
+- ㈍ **이용운**
+- ㋐ **夏目春樹**
+- ⓐ **Eros Bryant**
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+#### I have the following qualities:
+- My interest is to learn the languages of various countries.
+- 我是个程序员
+－日本の文化とアニメがだいすきです
+  ⠀⢰⠒⠒⠒⢲⠆⠀⠀⢀⠤⢤⡀⠀⡴⠀⠀⢀⣀⣀⣰⣀⣀⡀⠀⠀⠀⠀⠀
+⠀ ⣎⣀⣀⣀⡜⠀⠀⢰⠃⠀⢠⠇⢰⠓⠂⠀⢀⠔⠒⠒⠲⡄⠀⠀⠀⠀⠀⠀
+⠤⠤⠤⣤⠤⠤⠤⠄⠀⣇⠀⢀⠞⢀⡯⠤⠀⠀⠹⠤⡤⠤⠞⠁⠀⢠⠔⢤⣀⠆
+⠀⠀ ⢀⡏⠀⠀⠀⠀⠀⠈⠉⠁⠀⡸⠀⠀⠠⠤⠤⠴⠧⠤⠤⠄⠀⠀⠀⠀⠀
 
-What else do you need?
+-📂 음악
+---└📁 Any-POP
+------└📁 별로인 음악
+---------└⚠️ 이 폴더는 비어있습니다.
+
 
 ### My story
 
