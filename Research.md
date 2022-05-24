@@ -45,7 +45,11 @@ display_categories: [work]
 <dd>  Talk at the MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop  <a href="https://pippiworkshop.github.io/"> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </a> <br> <a href="/assets/img/zoom_4.mp4"> <img src="https://img.shields.io/badge/Link to my presentation-a18aab.svg" /> </a> </dd>
 </dl>
 
-    
+<dt>
+    <img src="https://img.shields.io/badge/June 2022-00a19e.svg"></dt>
+<dd>  Talk at the Decision and Bayesian Computation Lab (Institut Pasteur) </dd>
+</dl>
+ 
 <hr style="border:1px solid #2b6777"/>
 
 ### Awards
