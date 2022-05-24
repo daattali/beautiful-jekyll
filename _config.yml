@@ -15,11 +15,13 @@ author: ErosBryant
 
 navbar-links:
   About Me: "aboutme"
-  Subject:
-    - DataBase: " "
-    - Network: "https://erosbryant.github.io/2022-05-23-네트워크기본"
-    - Network: "/posts/2022-05-23-네트워크기본"
-    - test : "_posts"
+  Network:
+      - Basic: "https://erosbryant.github.io/2022-05-23-네트워크기본"
+      - application layer: "https://erosbryant.github.io/2022-05-24-app-layer"
+  DataBase:
+
+
+
 
 
 # --- Logo --- #
