@@ -21,11 +21,11 @@ title: ""
 
 ### Working Papers
 
-[Exporting Capital, Importing Law](assets/kalyanpur_thrall_v2.pdf) (with Nikhil Kalyanpur)<br>
+[Exporting Capital, Importing Law](assets/kalyanpur_thrall_v3.pdf) (with Nikhil Kalyanpur)<br>
 **_American Political Science Review_**, Revise and Resubmit.
 
-[Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_AJPS_revised.pdf) <br>
-David A. Lake Award for best paper presented at IPES 2020. 
+[Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
+David A. Lake Award for best paper presented at IPES 2020. Under Review.
 
 [Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/mtw_sep_2021.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
 **_International Studies Quarterly_**, Revise and Resubmit.
@@ -35,7 +35,8 @@ David A. Lake Award for best paper presented at IPES 2020.
 [The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
 Under Review.
 
-[Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/TJ_NBER_2022.pdf) (with Nathan M. Jensen)
+[Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/GASB_anon.pdf) (with Nathan M. Jensen)<br>
+Under Review.
 
 ### Works in Progress
 
