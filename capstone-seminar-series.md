@@ -13,7 +13,7 @@ during the DSCI 591 Capstone Project course. Talks will be held from 2-3pm in DM
 |:---|:---:|:---:|
 | 2022/05/13 | [Scott Mackie](#scott-mackie), Amazon | Building language models for voice assistants |
 | 2022/05/20 | [Zaid Haddad](#zaid-haddad), Slalom | [Slalom’s MLOps Framework](#slaloms-mlops-framework) |
-| 2022/05/27 | [Carrie Cheung](carrie-cheung), NuData Security, A Mastercard Company | [Life of a Data Scientist: Beyond the Classroom](life-of-a-data-scientist-beyond-the-classroom) |
+| 2022/05/27 | [Carrie Cheung](#carrie-cheung), NuData Security, A Mastercard Company | [Life of a Data Scientist: Beyond the Classroom](#life-of-a-data-scientist-beyond-the-classroom) |
 | 2022/06/03 | Adina Williams, Meta | TBD |
 | 2022/06/10 | [Christo Kirov](#christo-kirov), Google | [Low-Resource Multilingual NLP at Google](#low-resource-multilingual-nlp-at-google) |
 | 2022/06/17 | Capstone Presentations (no seminar series talk this week)| |
