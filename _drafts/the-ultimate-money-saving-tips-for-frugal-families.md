@@ -13,7 +13,7 @@ comments: true
 show-avatar: true
 title: The Ultimate Money Saving Tips for Frugal Families
 description: Practical tips and suggestions of money saving tips to help families
-subtitle: "+ FREE Monthly savinbg grocery freebie"
+subtitle: "+ FREE Monthly saving grocery freebie"
 share-img: ''
 redirect_from: []
 
@@ -80,7 +80,7 @@ _I saved every tip that I could that was shared from my_ [_January Zero Spend Ch
 
 27\. **Have the same base grocery list**, meal rotation and then order online and pickup.
 
-28\. **Soups and stews are very affordable meals for families.** **Related:** \[10 Simple and Cost Effective Family Meals\]([https://www.simplehomemom.com/10-simple-and-cost-effective-family-meals/](https://www.simplehomemom.com/10-simple-and-cost-effective-family-meals/ "https://www.simplehomemom.com/10-simple-and-cost-effective-family-meals/"))
+28\. **Soups and stews are very affordable meals for families.** **Related:** [10 Simple and Cost Effective Family Meals]( https://www.simplehomemom.com/10-simple-and-cost-effective-family-meals/)
 
 29\. **Eat less meat and replace with alternatives** such as beans and lentils.
 
@@ -116,14 +116,12 @@ _I saved every tip that I could that was shared from my_ [_January Zero Spend Ch
 
 ### Money Saving Grocery Freebie!
 
-If you’re stumped with meal planning and grocery planning, you may enjoy the method I use for our monthly grocery planning. Since I started applying this method, I started saving our family $200-$300/month consistently. It’s also helped our meal planning situation as well. You can snatch that freebie \[HERE.\]([https://mailchi.mp/82b428a1e609/our-grocery-planning-method](https://mailchi.mp/82b428a1e609/our-grocery-planning-method "https://mailchi.mp/82b428a1e609/our-grocery-planning-method")) I also read a fantastic book with all of the tips and tricks you can imagine called **Cut Your Grocery Bill in Half.** You can find that book in my Amazon shops: \[US shop\]([https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/www.amazon.com/shop/simplehomemom](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/www.amazon.com/shop/simplehomemom "https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/www.amazon.com/shop/simplehomemom")) and \[Canadian shop\]([https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/www.amazon.ca/shop/simplehomemom](https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/www.amazon.ca/shop/simplehomemom "https://www.simplehomemom.com/9-ideas-for-making-meal-planning-simpler/www.amazon.ca/shop/simplehomemom")).
+If you’re stumped with meal planning and grocery planning, you may enjoy the method I use for our monthly grocery planning. Since I started applying this method, I started saving our family $200-$300/month consistently. It’s also helped our meal planning situation as well. You can snatch that freebie [HERE](https://mailchi.mp/82b428a1e609/our-grocery-planning-method ). I also read a fantastic book with all of the tips and tricks you can imagine called **Cut Your Grocery Bill in Half.** You can find that book in my Amazon shops: [US shop](www.amazon.com/shop/simplehomemom)  and [Canadian shop](www.amazon.ca/shop/simplehomemom).
 
 **Save for future reference:**
 
 **Blogs of mine you may like:**
 
-Other money saving blogs: IUG people??
-
-**AND ALSO PUT RELATED..**
+**Other money saving blogs: IG people??**
 
 **ANY INSTA LINKS??**
