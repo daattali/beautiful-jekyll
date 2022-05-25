@@ -120,7 +120,15 @@ If you’re stumped with meal planning and grocery planning, you may enjoy the m
 
 **Save for future reference:**
 
+![A blog graphic overview with three tips showing a hand holding money.](/uploads/www-simplehomemom-com.jpg "The Ultimate Money Saving Tips for Frugal Families 2")
+
 **Blogs of mine you may like:**
+
+* [Five Tips to Have a Successful Zero Spend Month](https://www.simplehomemom.com/five-tips-to-have-a-successful-zero-spend-month/)
+* [How to Do a Zero Spend Month that Works for You](https://www.simplehomemom.com/how-to-do-a-zero-spend-month-that-works-for-you/)
+* [Simple Budgeting Tips for People Who Don’t Like Budgeting](https://www.simplehomemom.com/simple-budgeting-tips-for-people-who-don-t-like-budgeting/)
+* [2 Simple Tips to Start Sinking Funds for Beginners](https://www.simplehomemom.com/2-simple-tips-to-start-sinking-funds-for-beginners/)
+* [3 Surprising Things a Zero Spend Month Will Tell You About Yourself](https://www.simplehomemom.com/3-surprising-things-a-zero-spend-month-will-tell-you-about-yourself/)
 
 **Other money saving blogs: IG people??**
 
