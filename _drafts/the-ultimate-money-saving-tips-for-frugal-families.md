@@ -80,7 +80,7 @@ _I saved every tip that I could that was shared from my_ [_January Zero Spend Ch
 
 27\. **Have the same base grocery list**, meal rotation and then order online and pickup.
 
-28\. **Soups and stews are very affordable meals for families.** **Related:** [10 Simple and Cost Effective Family Meals]( https://www.simplehomemom.com/10-simple-and-cost-effective-family-meals/)
+28\. **Soups and stews are very affordable meals for families.** **Related:** [10 Simple and Cost Effective Family Meals](https://www.simplehomemom.com/10-simple-and-cost-effective-family-meals/)
 
 29\. **Eat less meat and replace with alternatives** such as beans and lentils.
 
@@ -130,6 +130,9 @@ If you’re stumped with meal planning and grocery planning, you may enjoy the m
 * [2 Simple Tips to Start Sinking Funds for Beginners](https://www.simplehomemom.com/2-simple-tips-to-start-sinking-funds-for-beginners/)
 * [3 Surprising Things a Zero Spend Month Will Tell You About Yourself](https://www.simplehomemom.com/3-surprising-things-a-zero-spend-month-will-tell-you-about-yourself/)
 
-**Other money saving blogs: IG people??**
+**Other money saving blogs:**
 
-**ANY INSTA LINKS??**
+* [A FRUGAL MOM’S 25 FAVORITE EASY WAYS TO SAVE MONEY](https://www.thriftyfrugalmom.com/easy-ways-to-save-money/)
+* [35 Frugal Living Tips To Save A Ton Of Money](https://www.clevergirlfinance.com/blog/frugal-living/)
+* [Frugal Family Home](https://frugalfamilyhome.com/save-money)
+* [How a Simpler Lifestyle & Decluttering Can Save You Money](https://simplelionheartlife.com/simpler-lifestyle/)
