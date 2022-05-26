@@ -40,10 +40,15 @@ resolve는 경로 객체의 절대경로를 구하며, 새로운 경로 객체�
 q.exist()
 q.is_dir()
 ```
-5 파일 이름:
+5 파일 이름/확장자: 
+파일 이름은 name 속성을 참조한다. **주의할 점은 name 속성은 확장자까지 포함**한다는 것이다.   
+만약 확장자를 포함하지 않으려면 stem 속성을 참조한다.
 ```python
->>> PurePosixPath('my/library/setup.py').name
-'setup.py'
+PurePosixPath('my/library/setup.py').name
+#'setup.py'
+PurePosixPath('my/library/setup.py').stem
+#'setup'
+
 ```
 
 6. with_name, with_suffix를 이용한 파일 이름, 확장자 변경:  
@@ -72,6 +77,19 @@ parts를 사용한다.
 8. joinpath()를 이용한 경로 결합
 ```python
 Path.home().joinpath('python', 'scripts', 'test.py')
+```
+
+9. 기타 프로퍼티
+parents : 경로의 조상 들에 대한 접근을 제공하는 시퀀스. parent라고 하면 바로 윗단계 부모를 의미한다. 
+```python
+>>> p = PureWindowsPath('c:/foo/bar/setup.py')
+>>> p.parents[0]  #parent와 동일
+PureWindowsPath('c:/foo/bar')
+>>> p.parents[1]
+PureWindowsPath('c:/foo')
+>>> p.parents[2]
+PureWindowsPath('c:/')
+
 ```
 ## @참고
 https://docs.python.org/ko/3/library/pathlib.html
