@@ -38,7 +38,7 @@ Previous works have shown that differentiable physics simulators provide gradien
                 
                 </blockquote>
             </div>
-            <div class="pubjournal">Robotics: Science and Systems (RSS), 2022 - <award>Long talk</award>
+            <div class="pubjournal">Robotics: Science and Systems (RSS), 2022 - <award>Long talk, Best Paper Finalist</award>
             <div style="font-size:small">
                 <a href="https://sites.google.com/view/articulated-flowbot-3d/home#h.xrrj1zv4o44a">[Project Page]</a>
                 <a href="javascript:copy(div2022flowbot3D, bib2022flowbot3D)">[Bibtex]</a>
