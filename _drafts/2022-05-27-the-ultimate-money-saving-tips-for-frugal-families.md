@@ -8,7 +8,7 @@ tags:
 - meal planning
 - zero spend
 - frugal family
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/briggs-271.jpg"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 readtime: true
 comments: true
