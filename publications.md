@@ -12,6 +12,7 @@ The collection of my research work that I have done till date. Profile [Research
 *Research motivation - **Desire to face the challenge in solving the unsolved problems**.*
 
 ---
+
 ### MediNET: A Deep Learning Approach to Recognize Bangladeshi Ordinary Medicinal Plants using CNN
 - **Conference:** Third International Conference on Computing & Communication(IC3)
 - **Publisher:** Springer (AISC) Series 
@@ -33,16 +34,7 @@ The collection of my research work that I have done till date. Profile [Research
 - **Link:** [Click here](https://ieeexplore.ieee.org/document/9225384)
 <details>
   <summary>Abstract</summary>
-  <p>Computer vision learning pay a high attention due to global pandemic COVID-19 to enhance public health service. During the fatality, tiny object detection is a more challenging task of computer vision, as it recruits the pair of classification and detection beneath of video illustration. Compared to other
-object detection deep neural networks demonstrated a helpful object detection with a superior achievement that is Face mask
-detection. However, accession with YOLOv3 covered by an exclusive topic which through certainly happening natural disease
-people get advantage. Added with face mask detection performed well by the YOLOv3 where it measures real time performance
-regarding a powerful GPU. whereas computation power with low memory YOLO darknet command sufficient for real time
-manner. Regarding the paper section below we have attained that people who wear face masks or not, its trained by the face
-mask image and non face mask image. Under the experimental conditions, real time video data that finalized over detection,
-localization and recognition. Experimental results that show average loss 0.0713 and 0.0676 after training 4000 epochs. After
-training 4000 epochs mAP score is 0.96. This unique approach of face mask visualization system attained noticeable output which
-has 96% classification and detection accuracy.
+  <p>Computer vision learning pay a high attention due to global pandemic COVID-19 to enhance public health service. During the fatality, tiny object detection is a more challenging task of computer vision, as it recruits the pair of classification and detection beneath of video illustration. Compared to other object detection deep neural networks demonstrated a helpful object detection with a superior achievement that is Face mask detection. However, accession with YOLOv3 covered by an exclusive topic which through certainly happening natural disease people get advantage. Added with face mask detection performed well by the YOLOv3 where it measures real time performance regarding a powerful GPU. whereas computation power with low memory YOLO darknet command sufficient for real time manner. Regarding the paper section below we have attained that people who wear face masks or not, its trained by the face mask image and non face mask image. Under the experimental conditions, real time video data that finalized over detection, localization and recognition. Experimental results that show average loss 0.0713 and 0.0676 after training 4000 epochs. After training 4000 epochs mAP score is 0.96. This unique approach of face mask visualization system attained noticeable output which has 96% classification and detection accuracy.
   </p>
 </details>
 
@@ -96,7 +88,7 @@ has 96% classification and detection accuracy.
 <details>
   <summary>Abstract</summary>
   <p>More than 130 million people in Bangladesh depends on riceas  their  main  food.  Half  of  the  employment  of  the  rural  area  and  theagricultural GDP of Bangladesh depends on rice production. Nearly morethan 10 million farmer families cultivate rice in Bangladesh. Almost 10% of rice cultivation is depreciated by different types of rice plant diseasescaused by pests This is the reason why we worked on detecting rice plant(Oryza sativa)disease  by  visual  observation(images). 3265  images  ofrice plant disease have been collected for this study which belongs to 4classes: Hispa, Brown Spot, Leaf Blast and the healthy ones. The imagesof diseased leaf are collected from rice fields. We have used a pre-trainedmodel for classification and extracting features.By using this model wegot a incentive results with the accuracy rate of 93.21%. </p>
-  </details>
+</details>
 
 ***
 
