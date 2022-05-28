@@ -4,7 +4,9 @@ title: About me
 subtitle: What do I do
 ---
 
-Hi there ! I'm Md. Rafiuzzaman Bhuiyan Afridi. Core member in DIU NLP & ML research lab. Currently focus on building stae-of-art Bangla Question-asnwering system. Also done several research works. Some of them accepeted in International Conference. Passoinate lover of new tecnology . Learn new things is like a hobby. A Python lover . Also try to learn Machine Learning,Computer vision. 
+Hi there ! I'm Md. Rafiuzzaman Bhuiyan Afridi. Currently working as a Front End developer in Aiva Labs Inc.
+
+Core member in DIU NLP & ML research lab. Focus on building stae-of-art Bangla Question-asnwering system. Also done several research works. Some of them accepeted in International Conference. Passoinate lover of new tecnology. Learn new things is like a hobby. A Python lover. Also try to learn Machine Learning,Computer vision. 
 
 ## Teacher Assistant / Daffodil International University
 Serve as TA for CSE department in Database Management System course. 
