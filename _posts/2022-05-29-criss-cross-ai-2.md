@@ -207,4 +207,4 @@ And lo and behold, the mean went up from 30.5 to 31.5!
 
 ## Summary
 
-Not _too_ bad, but still, not human level, as our analog winning scores were hovering around 40... (Again, this is using 'Florent's variant' rules as [outlined above](#anecdote), and is not comparable to scores in the **real** game.) Next up: recursion!
+Not _too_ bad, but still, not human level, as our analog winning scores were hovering around 40... (Again, this is using 'Florent's variant' rules as [outlined above](#anecdote), and is not comparable to scores in the **real** game.) Next up: [recursion](/2022-05-22-criss-cross-ai-1/)!
