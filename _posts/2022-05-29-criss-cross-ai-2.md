@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Criss Cross AI – Part 2
-subtitle: Game State
+subtitle: Game State, Monte Carlo, and more
 author: Morten
 tags:
 - Programming
@@ -190,11 +190,11 @@ for temp_score in scores_arr:
         best_score = score
 ```
 
-As you might see, I decided to weigh the 'local' score a bit higher (2/3) than the simulated score (1/3) -- one bird in the hand is better than ten on the roof, as we say... 
+As you might see, I decided to weigh the 'local' score a bit higher (2/3) than the simulated score (1/3) -- [one bird in the hand is better than ten on the roof](https://www.babla.no/norsk-engelsk/én-fugl-i-hånden-er-bedre-enn-ti-på-taket), as we say... 
 
 And lo and behold, the mean went up from 30.5 to 31.5!
 
-| stat  |                | 
+| stat  |               | 
 |-------|--------------:|
 | count |     100.00000 |
 | mean  |      31.53000 |
@@ -205,8 +205,6 @@ And lo and behold, the mean went up from 30.5 to 31.5!
 | 75%   |      37.00000 |
 | max   |      50.00000 |
 
-(Again, this is using 'Florent's variant' rules as outllined above, and is not comparable to scores in the real game.)
-
 ## Summary
 
-Not _too_ bad, but still, not human level, as our analog winning scores were hovering around 40... Next up: a new apporach -- with the official rules!
+Not _too_ bad, but still, not human level, as our analog winning scores were hovering around 40... (Again, this is using 'Florent's variant' rules as [outlined above](#anecdote), and is not comparable to scores in the **real** game.) Next up: recursion!
