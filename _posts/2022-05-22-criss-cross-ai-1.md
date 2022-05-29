@@ -16,6 +16,7 @@ thumbnail: /assets/img/posts/detrak/detrak.jpeg
 cover-img: /assets/img/posts/detrak/detrak.jpeg
 thumbnail-img: /assets/img/posts/detrak/detrak.jpeg
 share-img: /assets/img/posts/detrak/detrak.jpeg
+modified_time: '2022-05-29T18:42:00.000+02:00'
 ---
 
 Some weeks ago, to end an evening of board gaming, I was introduced to the Knizia roll and write called [Criss Cross](https://boardgamegeek.com/boardgame/220988/criss-cross) (or [Détrak](https://www.gigamic.com/jeu/detrak) here in France). A fascinating two dimensional dice placement game with very simple rules. As we left my friends place we discussed that it should be feasible to implement a simple AI for the game. So, when I got home, I started the process...
@@ -144,4 +145,4 @@ The mean ends up at about -5.0. (Not so much higher, and likely mainly driven by
 
 ## Summary
 
-We've started our random walk towards singularity... Or, at least potential human-level AI for Criss Cross... Next up: the game state.
+We've started our random walk towards singularity... Or, at least potential human-level AI for Criss Cross... Next up: [the game state and first approaches](/2022-05-29-criss-cross-ai-2/).
