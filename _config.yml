@@ -97,7 +97,7 @@ feed_show_tags: true
 post_search: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "boardgames,python,programming,ruby"
+keywords: "boardgames,python,programming,ruby,simulation"
 
 # --- Colours / background image --- #
 
