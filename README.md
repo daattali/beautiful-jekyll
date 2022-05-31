@@ -1,222 +1,274 @@
-[![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
+# [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
-# Beautiful Jekyll
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
+[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
+[![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
+[![Donate to this project using Buy Me A Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/mmistakes)
 
-[![xscode](https://img.shields.io/badge/Available%20on-xs%3Acode-blue?style=?style=plastic&logo=appveyor&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////////VXz1bAAAAAJ0Uk5T/wDltzBKAAAAlUlEQVR42uzXSwqAMAwE0Mn9L+3Ggtgkk35QwcnSJo9S+yGwM9DCooCbgn4YrJ4CIPUcQF7/XSBbx2TEz4sAZ2q1RAECBAiYBlCtvwN+KiYAlG7UDGj59MViT9hOwEqAhYCtAsUZvL6I6W8c2wcbd+LIWSCHSTeSAAECngN4xxIDSK9f4B9t377Wd7H5Nt7/Xz8eAgwAvesLRjYYPuUAAAAASUVORK5CYII=)](https://xscode.com/daattali/beautiful-jekyll)
-[![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
+Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
-> By [Dean Attali](https://deanattali.com) &middot; [Demo](https://beautifuljekyll.com/)
+:sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
 
-**Beautiful Jekyll** is a ready-to-use template to help you create a beautiful website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](https://beautifuljekyll.com) of what you'll get after just two minutes.  You can also look at [my personal website](https://deanattali.com) or [my consulting website](https://attalitech.com) to see it in use, or see [examples of websites](http://beautifuljekyll.com/examples) other people created using this theme.
+**If you enjoy this theme, please consider sponsoring:**
 
-**If you enjoy Beautiful Jekyll, please consider [supporting me](https://github.com/sponsors/daattali) for over 5 years of development (and to unlock rewards!) ❤**
+[!["Buy Me A Coffee"](https://user-images.githubusercontent.com/1376749/120938564-50c59780-c6e1-11eb-814f-22a0399623c5.png)](https://www.buymeacoffee.com/mmistakes)
+ [![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 
-## Table of contents
+**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
 
-- [Features](#features)
-- [Sponsors 🏆](#sponsors)
-- [**Build your website in 3 steps**](#build-your-website-in-3-steps)
-- [Plans](#plans)
-- [Add your own content](#add-your-own-content)
-- [Customizing parameters for each page](#customizing-parameters-for-each-page)
-- [Supported parameters](#supported-parameters)
-- [Featured users (success stories!)](#featured-users-success-stories)
-- [FAQ and support](#faq-and-support)
-- [Credits and contributions](#credits)
+[![Minimal Mistakes live preview][2]][1]
 
-# Features
+[1]: https://mmistakes.github.io/minimal-mistakes/
+[2]: screenshot.png (live preview)
 
-__Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the latest features.__
+![layout examples](screenshot-layouts.png)
 
-- **SIMPLE**: The primary goal of Beautiful Jekyll is to allow literally *anyone* to create a website in a few minutes.
-- **Modern**: Uses the latest best practices and technologies to achieve nearly perfect scores on Google Chrome's Audit.
-- **Mobile-first**: Designed to look great on both large-screen and small-screen (mobile) devices.
-- **Highly customizable**: Many personalization settings such as changing the background colour/image, adding a logo.
-- **Flexible usage**: Use Beautiful Jekyll directly on GitHub or via a Ruby gem - choose the best [development method](#build-your-website-in-3-steps) for you.
-- **Battle-tested**: By using Beautiful Jekyll, you'll be joining 50,000+ users enjoying this theme since 2015.
-- **SEO and social media support**: Customize how your site looks on Google and when shared on social media.
-- **Comments support**: Add comments to any page using either [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), or [Staticman](https://staticman.net).
-- **Tags**: Any blog post can be tagged with keywords, and an index page is automatically generated.
-- **Analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
-- **Search**: Let users easily find any page using a Search button in the navigation bar.
-- **Photos support**: Any page can have a full-width cover photo and thumbnail.
-- **RSS**: An RSS feed is automatically created, so you can even host a podcast easily with Beautiful Jekyll.
+## Notable features
 
-<h2 id="sponsors">Sponsors 🏆</h2>
+- Bundled as a "theme gem" for easier installation/upgrading.
+- Compatible with GitHub Pages.
+- Support for Jekyll's built-in Sass/SCSS preprocessor.
+- Nine different skins (color variations).
+- Several responsive layout options (single, archive index, search, splash, and paginated home page).
+- Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data.
+- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
+- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), [utterances](https://utteranc.es/), and [giscus](https://giscus.app/)).
+- [Google Analytics](https://www.google.com/analytics/) support.
+- UI localized text in English (default), Arabic (عربي), Brazilian Portuguese (Português brasileiro), Catalan, Chinese, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hebrew, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Korean, Malayalam, Myanmar (Burmese), Nepali (Nepalese), Norwegian (Norsk), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), and Vietnamese.
 
-Developing and maintaining Beautiful Jekyll takes a lot of time and effort - thank you to anyone who helps fund this effort!
+## Skins (color variations)
 
-- [Matt Artist](https://mja00.dev/)
-- [\_hyp3ri0n](https://hyperiongray.com)
+This theme comes in nine different skins (in addition to the default one).
 
-[Become a sponsor for Beautiful Jekyll and unlock special rewards\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)
+| `air` | `contrast` | `dark` |
+| --- | --- | --- |
+| [![air skin](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive-large.png) | [![contrast skin](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive-large.png) | [![dark skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive-large.png) |
 
-# Build your website in 3 steps
+| `dirt` | `mint` | `sunrise` |
+| --- | --- | --- |
+| [![dirt skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive-large.png) | [![mint skin](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive-large.png) | [![sunrise skin](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive-large.png) |
 
-There's a very easy way to use this theme, and there's a hard way. For most people (including myself!), the easy route is recommended. If you're an advanced user and want to tinker with the hard way (using ruby gems), then [skip the easy way](https://github.com/daattali/beautiful-jekyll#the-hard-way-using-ruby-gems) if you know what you're doing.
+| `aqua` | `neon` | `plum` |
+| --- | --- | --- |
+| [![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive-large.png) | [![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive-large.png) | [![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive-large.png) |
 
-## The easy way (recommended!)
+## Demo pages
 
-Getting started is *literally* as easy as 1-2-3 :smile:
+| Name                                        | Description                                           |
+| ------------------------------------------- | ----------------------------------------------------- |
+| [Post with Header Image][header-image-post] | A post with a large header image. |
+| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
+| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
+| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
+| [Sample Collection Page][sample-collection] | Single page from a collection. |
+| [Categories Archive][categories-archive] | Posts grouped by category. |
+| [Tags Archive][tags-archive] | Posts grouped by tag. |
 
-Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com/join), you'll need to sign up.
+Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
 
-![Installation steps](assets/img/install-steps.gif)
+[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
+[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
+[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
+[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
+[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
+[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
+[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
+[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
-### 1. Fork this project
+## Installation
 
-Fork this project by clicking the __*Fork*__ button at the top right corner of this page. Forking means that you now copied this entire project and all the files into your account.
+There are three ways to install: as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible), or forking/directly copying all of the theme files into your project.
 
-### 2. Rename the project to `<yourusername>.github.io`
+### Gem-based method
 
-Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*Repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes (check out the [FAQ](https://beautifuljekyll.com/faq/#custom-domain) if you want to use a different project name). If after a few minutes your website is still not ready, try making any edit to any file, just to force GitHub to re-build your site.
+With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
 
-### 3. Customize your website settings
+This allows for easier installation and updating as you don't have to manage any of the theme files. To install:
 
-Edit the `_config.yml` file to change any settings you want. To edit the file, click on it to view the file and then click on the pencil icon to edit it (watch the video tutorial above if you're confused).  The settings in the file are self-explanatory and there are comments inside the file to help you understand what each setting does. Any line that begins with a hashtag (`#`) is a comment, and the other lines are actual settings.
+1. Add the following to your `Gemfile`:
 
-Note that in the video above only one setting in the `_config.yml` file is edited. **You should actually go through the rest of the settings as well. Don't be lazy, go through all the settings!**
+   ```ruby
+   gem "minimal-mistakes-jekyll"
+   ```
 
-### 4. Congratulations! You have a website!
+2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
 
-After you save your changes to the `_config.yml` file (by clicking on *Commit changes* as the video tutorial shows), your website should be ready in a minute or two at `https://<yourusername>.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so. Your website will be initialized with several sample blog posts and a couple other pages.
+   ```bash
+   bundle
+   ```
 
-Note that this was the easy way to *create* your website, but it does come at a cost: when Beautiful Jekyll gains new features in the future, *updating* your website to include all the latest features is cumbersome. See the [FAQ](https://beautifuljekyll.com/faq/#updating) for help with upgrading in the future.
+3. Set the `theme` in your project's Jekyll `_config.yml` file:
 
-## The hard way (using ruby gems)
+   ```yaml
+   theme: minimal-mistakes-jekyll
+   ```
 
-If you followed the easy method above, then you already have your site and you can skip this section! If you want to use Beautiful Jekyll as a ruby gem instead, follow the [advanced installation instructions](https://beautifuljekyll.com/getstarted/#install-steps-hard). This is harder to set up initially, but it makes it super easy to keep your site up to date with Beautiful Jekyll when more features are added in the future.
+To update the theme run `bundle update`.
 
-# Plans
+### Remote theme method
 
-Beautiful Jekyll is, and always will be, free. But if you want to remove the Beautiful Jekyll ad from your website, use a Dark Mode skin, unlock other special rewards, or simply support the development efforts, [check out the different plans](https://beautifuljekyll.com/plans).
+Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
 
-# Add your own content
+To install:
 
-To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file. It's much easier to write markdown than HTML, so that's the recommended approach ([here's a great tutorial](https://markdowntutorial.com/) if you need to learn markdown in 5 minutes).
+1. Create/replace the contents of your `Gemfile` with the following:
 
-To see an example of a markdown file, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On that page you can see some nicely formatted text (there's a word in bold, a link, a few bullet points), and if you click on the pencil icon to edit the file, you'll see the markdown code that generated the pretty text. Very easy!
+   ```ruby
+   source "https://rubygems.org"
 
-In contrast, look at [`tags.html`](./tags.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
+   gem "github-pages", group: :jekyll_plugins
+   gem "jekyll-include-cache", group: :jekyll_plugins
+   ```
 
-Any markdown or HTML file that you create will be available on your website under `https://<yourusername>.github.io/<pagename>`. For example, if you create a file `about.md` (or `about.html`) then it'll exist at `https://<yourusername>.github.io/about`.
+2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
 
-Files you create inside the [`_posts`](./_posts) directory will be treated as blog entries. You can look at the existing files there to get an idea of how to write blog posts. Note the format of the blog post files - they must follow the naming convention of `YEAR-MONTH-DAY-title.md`. After you successfully add your own post, you can delete the existing files inside [`_posts`](./_posts) to remove the sample posts, as those are just demo posts to help you learn.
+3. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
 
-# Customizing parameters for each page
+   ```bash
+   bundle
+   ```
 
-**One last important thing**: In order to have your new pages use this template and not just be plain HTML pages, **you must add [YAML front matter](https://jekyllrb.com/docs/front-matter/) to the top of each page**:
+4. Add `remote_theme: "mmistakes/minimal-mistakes@4.24.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
+**Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
 
-```
+## Usage
+
+For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+
 ---
+
+## Contributing
+
+Found a typo in the documentation or interested in [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
+
+For help with using the theme or general Jekyll support questions, please use the [Jekyll Talk forums](https://talk.jekyllrb.com/).
+
+### Pull Requests
+
+When submitting a pull request:
+
+1. Clone the repo.
+2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`).
+3. Open a pull request on GitHub and describe the feature or fix.
+
+Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
+
 ---
-```
 
-This is where you'll be able to give each page some extra parameters (such as a title, a subtitle, an image, etc - [below is a list of all parameters](#supported-parameters)). Add any parameters you want between these two dashed lines, for example:
+## Credits
 
-```
+### Creator
+
+**Michael Rose**
+
+- <https://mademistakes.com>
+- <https://twitter.com/mmistakes>
+- <https://github.com/mmistakes>
+
+### Icons + Demo Images:
+
+- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
+- [Font Awesome](http://fontawesome.io/)
+- [Unsplash](https://unsplash.com/)
+
+### Other:
+
+- [Jekyll](http://jekyllrb.com/)
+- [jQuery](http://jquery.com/)
+- [Susy](http://susy.oddbird.net/)
+- [Breakpoint](http://breakpoint-sass.com/)
+- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
+- [FitVids.JS](http://fitvidsjs.com/)
+- [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav)
+- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+- [Gumshoe](https://github.com/cferdinandi/gumshoe)
+- [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
+- [Lunr](http://lunrjs.com)
+
 ---
-title: Contact me
-subtitle: Here you'll find all the ways to get in touch with me
----
-```
 
-If you don't want to use any parameters on a page, you still need to use the two dashed lines. If you don't, then your file will be shown as-is without the Beautiful Jekyll template.
+## License
 
-You can look at the top of [`aboutme.md`](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/aboutme.md) as an example.
+The MIT License (MIT)
 
-**Important takeaway: ALWAYS add the YAML front matter, which is two lines of three dashes, to EVERY page. If you have any parameters, they go between the two lines.**
+Copyright (c) 2013-2020 Michael Rose and contributors
 
-# Supported parameters
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Below is a list of the parameters that Beautiful Jekyll supports (any of these can be added to the YAML front matter of any page). Remember to also look in the `_config.yml` file to see additional site-wide settings.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Main parameters
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-These are the basic YAML parameters that you are most likely to use on most pages.
+Minimal Mistakes incorporates icons from [The Noun Project](https://thenounproject.com/) 
+creators Garrett Knoll, Arthur Shlain, and tracy tam.
+Icons are distributed under Creative Commons Attribution 3.0 United States (CC BY 3.0 US).
 
-Parameter   | Description
------------ | -----------
-title       | Page or blog post title
-subtitle    | Short description of page or blog post that goes under the title
-tags        | List of tags to categorize the post. Separate the tags with commas and place them inside square brackets. Example: `[personal, analysis, finance]`
-cover-img   | Include a large full-width image at the top of the page. You can either provide the path to a single image (eg. `"/path/to/img"`) , or a list of images to cycle through (eg. `["/path/img1", "/path/img2"]`). If you want to add a caption to an image, then you must use the list notation (use `[]` even if you have only one image), and each image should be provided as `"/path/to/img" : "Caption of image"`.
-thumbnail-img | For blog posts, if you want to add a thumbnail that will show up in the feed, use `thumbnail-img: /path/to/image`. If no thumbnail is provided, then `cover-img` will be used as the thumbnail. You can use `thumbnail-img: ""` to disable a thumbnail.
-comments    | If you want do add comments to a specific page, use `comments: true`. Comments only work if you enable one of the comments providers (Facebook, disqus, staticman, utterances) in `_config.yml` file. Comments are automatically enabled on blog posts but not on other pages; to turn comments off for a specific post, use `comments: false`.
+Minimal Mistakes incorporates [Font Awesome](http://fontawesome.io/),
+Copyright (c) 2017 Dave Gandy.
+Font Awesome is distributed under the terms of the [SIL OFL 1.1](http://scripts.sil.org/OFL) 
+and [MIT License](http://opensource.org/licenses/MIT).
 
-## Parameters for SEO and social media sharing
+Minimal Mistakes incorporates photographs from [Unsplash](https://unsplash.com).
 
-These parameters let you control what information shows up when a page is shown in a search engine (such as Google) or gets shared on social media (such as Twitter/Facebook).
+Minimal Mistakes incorporates [Susy](http://susy.oddbird.net/),
+Copyright (c) 2017, Miriam Eric Suzanne.
+Susy is distributed under the terms of the [BSD 3-clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause).
 
-Parameter   | Description
------------ | -----------
-share-title | A title for the page. If not provided, then `title` will be used, and if that's missing then the site title (from `_config.yml`) is used.
-share-description | A brief description of the page. If not provided, then `subtitle` will be used, and if that's missing then an excerpt from the page content is used.
-share-img   | The image to show. If not provided, then `cover-img` or `thumbnail-img` will be used if one of them is provided.
+Minimal Mistakes incorporates [Breakpoint](http://breakpoint-sass.com/).
+Breakpoint is distributed under the terms of the [MIT/GPL Licenses](http://opensource.org/licenses/MIT).
 
-## Less commonly used parameters
+Minimal Mistakes incorporates [FitVids.js](https://github.com/davatron5000/FitVids.js/),
+Copyright (c) 2013 Dave Rubert and Chris Coyier.
+FitVids is distributed under the terms of the [WTFPL License](http://www.wtfpl.net/).
 
-These are parameters that you may not use often, but can come in handy sometimes.
+Minimal Mistakes incorporates [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/),
+Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com.
+Magnific Popup is distributed under the terms of the MIT License.
 
-Parameter   | Description
------------ | -----------
-readtime    | If you want a post to show how many minutes it will take to read it, use `readtime: true`.
-show-avatar | If you have an avatar configured in the `_config.yml` but you want to turn it off on a specific page, use `show-avatar: false`.
-social-share | By default, every blog post has buttons to share the page on social media. If you want to turn this feature off, use `social-share: false`.
-nav-short   | By default, the navigation bar gets shorter after scrolling down the page. If you want the navigation bar to always be short on a certain page, use `nav-short: true`
-gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
-gh-badge  | Select which GitHub buttons to display. Available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
-last-updated | If you want to show that a blog post was updated after it was originally released, you can specify an "Updated on" date.
-layout      | What type of page this is (default is `post` for blog posts and `page` for other pages). See _Page types_ section below for more information.
+Minimal Mistakes incorporates [Smooth Scroll](http://github.com/cferdinandi/smooth-scroll),
+Copyright (c) 2019 Chris Ferdinandi.
+Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-## Advanced parameters
+Minimal Mistakes incorporates [Gumshoejs](http://github.com/cferdinandi/gumshoe),
+Copyright (c) 2019 Chris Ferdinandi.
+Gumshoejs is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-These are advanced parameters that are only useful for people who need very fine control over their website.
+Minimal Mistakes incorporates [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/),
+Copyright (c) 2010 "Cowboy" Ben Alman.
+jQuery throttle / debounce is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-Parameter   | Description
------------ | -----------
-footer-extra | If you want to include extra content below the social media icons in the footer, create an HTML file in the `_includes/` folder (for example `_includes/myinfo.html`) and set `footer-extra` to the name of the file (for example `footer-extra: myinfo.html`). Accepts a single file or a list of files.
-before-content | Similar to `footer-extra`, but used for including HTML before the main content of the page (below the title).
-after-content | Similar to `footer-extra`, but used for including HTML after the main content of the page (above the footer).
-head-extra   | Similar to `footer-extra`, but used if you have any HTML code that needs to be included in the `<head>` tag of the page.
-language    | HTML language code to be set on the page's &lt;html&gt; element.
-full-width  | By default, page content is constrained to a standard width. Use `full-width: true` to allow the content to span the entire width of the window.
-js          | List of local JavaScript files to include in the page (eg. `/assets/js/mypage.js`)
-ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`). External JavaScript files that support [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) can be specified using the `href` and `sri` parameters eg.<br/>`href: "//code.jquery.com/jquery-3.1.1.min.js"`<br/>`sri: "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="`
-css         | List of local CSS files to include in the page
-ext-css      | List of external CSS files to include in the page. External CSS files using SRI (see `ext-js` parameter) are also supported.
+Minimal Mistakes incorporates [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav),
+Copyright (c) 2015 Luke Jackson.
+GreedyNav.js is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-## Page types
+Minimal Mistakes incorporates [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array),
+Copyright (c) 2015 Max White <mushishi78@gmail.com>.
+Jekyll Group-By-Array is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-- **post** - To write a blog post, add a markdown or HTML file in the `_posts` folder. As long as you give it YAML front matter (the two lines of three dashes), it will automatically be rendered like a blog post. Look at the existing blog post files to see examples of how to use YAML parameters in blog posts.
-- **page** - Any page outside the `_posts` folder that uses YAML front matter will have a very similar style to blog posts.
-- **home** - The home layout is meant to act as the homepage of your blog posts - it will display all your blog posts, sorted from newest to oldest. A file using the `home` layout must be named `index.html` (not `index.md` or anything else!).
-- **minimal** - If you want to create a page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal` to the YAML front matter.
-- If you want to completely bypass the template engine and just write your own HTML page, simply omit the YAML front matter. Only do this if you know how to write HTML!
+Minimal Mistakes incorporates [@allejo's Pure Liquid Jekyll Table of Contents](https://allejo.io/blog/a-jekyll-toc-in-liquid-only/),
+Copyright (c) 2017 Vladimir Jimenez.
+Pure Liquid Jekyll Table of Contents is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-# Featured users (success stories!)
-
-Visit the [Official website](http://beautifuljekyll.com/examples) to see sample websites using Beautiful Jekyll.
-
-If you'd like to showcase yourself and join this list, [upgrading to the Individual plan](https://github.com/sponsors/daattali/sponsorships?&tier_id=7362) will give you that publicity plus some other rewards!
-
-# FAQ and support
-
-Visit the [official FAQ page](https://beautifuljekyll.com/faq) for answers to commonly asked questions.
-
-Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web skills, so it's impossible to answer all the questions that may arise. For any question that's not specifically related to Beautiful Jekyll and is more about Jekyll or web development in general, the answer can often be found on Google, in the [Jekyll documentation](https://jekyllrb.com/), or on the [Jekyll support forum](https://talk.jekyllrb.com/).
-
-To receive support, select one of the [different plans](https://beautifuljekyll.com/plans) Beautiful Jekyll offers. You can also use the [Discussions](https://github.com/daattali/beautiful-jekyll/discussions) area to try to get help from the community.
-
-# Contributions
-
-Thank you to [all past contributors](https://github.com/daattali/beautiful-jekyll/graphs/contributors). If you find any problems or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.
-
-You can also contribute by becoming an [official sponsor](https://github.com/sponsors/daattali/sponsorships?tier_id=39856) to help keep Beautiful Jekyll well-maintained.
-
-# Credits
-
-This template was not made *entirely* from scratch. I'd like to give special thanks to [Jekyll Now](https://github.com/barryclark/jekyll-now) and [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from whom I've taken several ideas initially.
-
-I'd also like to thank [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
+Minimal Mistakes incorporates [Lunr](http://lunrjs.com),
+Copyright (c) 2018 Oliver Nightingale.
+Lunr is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
