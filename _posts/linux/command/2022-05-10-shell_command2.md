@@ -13,7 +13,10 @@ tags: [shell, cat, echo, which, export]
 ```commandline
 kill -9 {PID} 
 ```
-
+## 방화벽 해제
+```commandline
+ufw disable
+```
 
 
 ## @ 참고

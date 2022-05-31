@@ -20,6 +20,13 @@ jupyter notebook github issue 사항에 있는 아래 답변을 참고한다.
 {'PATH': '/home/sglee/anaconda3/envs/yolo_v4/bin:/home/sglee/anaconda3/condabin:/usr/local/cuda-11.1/bin:/home/sglee/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
 ```
 
+## 주피터 모듈 autoreload
+외부에서 import한 모듈 수정 사항이 발생해도, reload하지 않으면 반영이 되지 않음.
+```commandline
+%load_ext autoreload
+%autoreload 2
+from mycode import my_func
+```
 
 
 ## @참고
