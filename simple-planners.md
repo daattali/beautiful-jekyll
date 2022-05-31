@@ -7,19 +7,13 @@ published: false
 ---
 Are you often writing down mega to do lists and get frozen with overwhelm and indecision? This was me too! I remember standing in my kitchen stressed out, looking at my giant to do list and had no clue how to start. **Enter simple planning**. I knew something had to change, so I committed to learning a [simple planning method](The First Simple Planning Step to Take as a Beginner Planner). Now, after years of learning how to simple plan, I bring you: **MY SIMPLE PLANNERS**! Looking for **a** **simple**, **no fuss planner** that helps you stay on track without feeling overwhelmed? **My Simple Planner** was designed with _simplicity in mind_.
 
-**Jump to:**
-
-* My Simple Planner (letter size)
-* My Simple Planner Mini (Foldable - half letter size)
-* My Simple Homeschool Planner (letter size)
-
 ***
 
 ![Promo My Simple Planner](/uploads/my-simple-planner-shm.jpg "My Simple Planner SHM")
 
 ## MY SIMPLE PLANNER
 
-My Simple Planner is developed based upon my own planning method, inspired by the [bullet journaling method](www.bulletjournal.com). Ready to simple plan already? You can purchase YOUR simple planner [HERE](https://checkout.stripe.com/pay/cs_live_a1V8z7jEcwDOTYn2NeGPRdmZpxSRLM51CHXucp3TNQPw1qC9VuP8aS3z9D#fidkdWxOYHwnPyd1blppbHNgWjA0T1FER31HQU9yUnJyMzJzUklDRGd3TEZHRlJVNGJJVUhvbm5haXdGN2BQdEJmRkprbnJCfWBHSjB1aWJxQ1w3S05tf0hUTVR0aE52PUlNYmYzYEo9T09ENTVBaExHUE5qbScpJ3VpbGtuQH11anZgYUxhJz8nNz1qNTdkMlJGYFJQYWdsNmZiJyknd2BjYHd3YHcnPydtcXF1dj8qKnJycit2bGh1aWBtamhgaGpoK2ZqaConeCUl). You can also purchase it in a foldable mini size HERE. Keep in mind that you will be creating little booklets for each section of your planner - weekly dashboard, daily planning, and monthly planner.
+My Simple Planner is developed based upon my own planning method, inspired by the [bullet journaling method](www.bulletjournal.com). Ready to simple plan already? You can purchase YOUR simple planner [HERE](https://checkout.stripe.com/pay/cs_live_a1V8z7jEcwDOTYn2NeGPRdmZpxSRLM51CHXucp3TNQPw1qC9VuP8aS3z9D#fidkdWxOYHwnPyd1blppbHNgWjA0T1FER31HQU9yUnJyMzJzUklDRGd3TEZHRlJVNGJJVUhvbm5haXdGN2BQdEJmRkprbnJCfWBHSjB1aWJxQ1w3S05tf0hUTVR0aE52PUlNYmYzYEo9T09ENTVBaExHUE5qbScpJ3VpbGtuQH11anZgYUxhJz8nNz1qNTdkMlJGYFJQYWdsNmZiJyknd2BjYHd3YHcnPydtcXF1dj8qKnJycit2bGh1aWBtamhgaGpoK2ZqaConeCUl). You can also purchase it in a foldable mini size HERE. Keep in mind that you will be creating little booklets for each section of your planner - weekly dashboard, daily planning, and monthly planner. You can find My Simple Planner in [my Etsy Shop](https://www.etsy.com/shop/simplehomemomshop).
 
 ##### THE DETAILS:
 
@@ -50,13 +44,7 @@ My Simple Planner is developed based upon my own planning method, inspired by th
 
 The beginning of My Simple Planner gives you your monthly overviews, followed by your weekly dashboards, and daily planning pages. At the end of the planner, you will find routine pages, running to do list pages, braindump pages, and note pages.
 
-#### You're going to want to see the whole planner, with previews of each page HERE in my Etsy Shop!
-
-**<button>Buy My Simple Planner**</button>
-
-<br>
-
-Too lage of a size for you? Check out my foldable half size simple home planner!
+**_You're going to want to see the whole planner, plus other sizes (such as my favorite - the half size foldable simple home planner)_** [**_HERE_**](https://www.etsy.com/shop/simplehomemomshop) **_in my Etsy Shop!_**
 
 ### MY SIMPLE HOMESCHOOL PLANNER
 
@@ -78,9 +66,7 @@ Need a simple homeschooling planner for your homeschool planning needs too? **My
 * Braindump blocks
 * Notes pages
 
-**LAYOUT of the planner:**
-
-The beginning of My Simple Homeschool Planner gives you your
+**_Find My Simple Homeschool Planner and all of my planners in my Etsy Shop_** [**_HERE_**](https://www.etsy.com/shop/simplehomemomshop)**_._**
 
 ### BLOGS TO HELP YOU WITH SIMPLE PLANNING
 
@@ -107,4 +93,4 @@ _If you’d like to get started on daily planning or step up your planning game,
 
 Want to get better at simple planning? I created this course a while back when I was teaching about the simple planning method I learned and tweaked throughout the years. My Simple Planners are based from this method.
 
-_You can gain access to the free course by being on my mail list. Signup below and you’ll receive a link to the vault in your confirmation email!_
+_You can gain access to the free course by being on my mail list. Signup for my mail list_ [_HERE_](https://www.simplehomemom.com/freebies)_._
