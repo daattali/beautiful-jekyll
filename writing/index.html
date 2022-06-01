@@ -34,7 +34,11 @@ show-avatar : true
     </div>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}{% if post.modified-date %}. Updated {{ post.modified-date}}.{% endif %}
+      {% if post.modified-date %}
+          {{ post.modified-date}}
+        {% else %}
+          {{ post.date | date: "%B %-d, %Y" }}
+        {% endif %}
     </p>
 
     {% if post.tags.size > 0 %}

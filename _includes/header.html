@@ -60,9 +60,11 @@
 		  {% endif %}
 
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Drafted {{ page.date | date: "%B %-d, %Y" }}.
+		  <span class="post-meta">
         {% if page.modified-date %}
-          Updated {{ page.modified-date}}.
+          {{ page.modified-date}}
+        {% else %}
+          {{ page.date | date: "%B %-d, %Y" }}
         {% endif %}
       </span>
 		  {% endif %}
