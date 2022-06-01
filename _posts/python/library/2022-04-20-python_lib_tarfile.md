@@ -1,12 +1,10 @@
 ---
-layout: post
-title: python library (tarfile)
-subtitle: 파일 압축풀기를 위한 파이썬 라이브러리
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+layout: single
+title: 파일 압축풀기를 위한 파이썬 라이브러리 (tarfile)
 tags: [python library, tarfile, 파일 압축, 압축 해제, tar]
+categories: python_lib
 ---
+
 ##  CLI로 작업
 ### 새 tar 아카이브 만들기 : -c
 tarfile을 실행하고 -c 뒤에 아카이브 이름을 지정하고 포함해야 하는 파일 또는 디렉터리를 나열.

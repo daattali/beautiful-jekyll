@@ -1,12 +1,10 @@
 ---
-layout: post
-title: python library (natsort)
-subtitle: 파일 이름이 숫자일 시 "naturally"하게 정렬하는 라이브러리
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+layout: single
+title: 숫자를 포함한 파일이름을 naturally하게 정렬하는 라이브러리 (natsort)
 tags: [python library, natsort]
+categories: python_lib
 ---
+
 ## 1.모듈 설치
 natsorted 함수만 거의 사용됨.   
 ```python

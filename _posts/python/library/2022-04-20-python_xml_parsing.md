@@ -1,16 +1,9 @@
 ---
-layout: post
-title: python library (xml.etree.ElementTree)
-subtitle: XML 파싱 및 수정을 위한 파이썬 내장 라이브러리
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+layout: single
+title: XML 파싱 및 수정을 위한 파이썬 내장 라이브러리 (xml)
 tags: [python library, xml]
+categories: python_lib
 ---
-
-
-
-
 
 XML은 hierachical 데이터 형식이고 이를 나타내는 방법은 일반적으로 트리가 있다.  
 elementTree는 이 목적을 달성하기 위해 두 가지 클래스를 가진다.   

@@ -1,12 +1,10 @@
 ---
-layout: post
-title: python library (pickle)
-subtitle: 파이썬 객체를 그대로 저장할 수 있는 pickle 내장 라이브러리
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+layout: single
+title: 객체를 저장하는 라이브러리 (pickle)
 tags: [python library, pickle]
+categories: python_lib
 ---
+
 파이썬에 있는 모든 객체는 pickle로 저장이 가능하다. pickle은 바이너리 파일로 저장이 된다.
 
 ## 1.모듈 설치

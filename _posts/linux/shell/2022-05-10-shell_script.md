@@ -1,12 +1,10 @@
 ---
-layout: post
-title: Shell, Shell Script 문법
-subtitle: .sh 파일에 사용되는 문법 및 예제
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/linux.png
-share-img: /assets/img/path.jpg
+layout: single
+title: Shell Script 문법
 tags: [sh, shell script]
+categories: linux
 ---
+
 셸 스크립트는 쉘에게 명령할 일련의 스크립트를 적은 sh 확장자 파일을 의미한다.
 
 ## #!/bin/bash

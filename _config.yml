@@ -269,3 +269,7 @@ defaults:
       share: true
       related: true
       sidebar_main: true
+      toc: true
+      toc_sticky: true
+      toc_label: "목차"
+      toc_icon: "cog"

@@ -1,11 +1,8 @@
 ---
-layout: post
-title: python library (shutil)
-subtitle: 파일에 대한 고수준 연산을 지원하는 내장 라이브러리
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+layout: single
+title: 파일에 대한 고수준 연산을 지원하는 파이썬 라이브러리 (shutil)
 tags: [python library, shutil, 파일이동, 파일복사, 이름변경]
+categories: python_lib
 ---
 shutil 라이브러리는 파일 및 파일들에 대한 고수준 연산(이동,삭제,복사 등)을 지원한다.
 

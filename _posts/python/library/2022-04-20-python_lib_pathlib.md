@@ -1,11 +1,8 @@
 ---
-layout: post
-title: python library (pathlib)
-subtitle: 파일 접근을 위한 내장 라이브러리
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+layout: single
+title: 파일 접근을 위한 파이썬 라이브러리 (pathlib)
 tags: [python library, pathlib]
+categories: python_lib
 ---
 기존에는 폴더에 있는 파일들을 접근하려면 os 라이브러리를 사용했다. 하지만, os는 문자열로
 파일 및 폴더를 접근하기 때문에 객체로 좀 더 편리하게 접근하기 위해서는 pathlib를 사용해야 한다.

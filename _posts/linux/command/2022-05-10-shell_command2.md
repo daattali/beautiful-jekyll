@@ -1,12 +1,10 @@
 ---
-layout: post
-title: Shell 기초 및 명령어
-subtitle: shell 명령어 모음
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/linux.png
-share-img: /assets/img/path.jpg
-tags: [shell, cat, echo, which, export]
+layout: single
+title: Bash Shell 명령어
+tags: [bash, shell, cat, echo, which, export]
+categories: linux
 ---
+자주 사용할 명령어 위주로 정리한다.
 
 ## kill
 강제종료
