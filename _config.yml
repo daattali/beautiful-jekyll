@@ -268,5 +268,4 @@ defaults:
       comments: true
       share: true
       related: true
-      sidebar:
-          nav: "main_side"
+      sidebar_main: true
