@@ -26,3 +26,6 @@ https://velog.io/@eona1301/Github-Blog-Jekyll-minimal-mistakes
 
 하이퍼링크 제거, 사이드바 공간 크기 변경 등
 https://eona1301.github.io/github_blog/GithubBlog-Content-Width/
+
+공식사이트
+https://mmistakes.github.io/minimal-mistakes/docs/layouts/
