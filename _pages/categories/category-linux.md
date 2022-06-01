@@ -1,10 +1,10 @@
 ---
-title: "Pycharm"
+title: "Linux"
 layout: archive
-permalink: categories/pycharm
+permalink: categories/linux
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories['pycharm'] %}
+{% assign posts = site.categories['linux'] %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
