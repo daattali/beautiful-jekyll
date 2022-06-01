@@ -9,7 +9,7 @@ author_profile: true
 sidebar:
   nav: "main" 
 tags: 
- - dockers
+ - docker
 categories: 
  - docker
 ---
