@@ -29,3 +29,6 @@ https://eona1301.github.io/github_blog/GithubBlog-Content-Width/
 
 공식사이트
 https://mmistakes.github.io/minimal-mistakes/docs/layouts/
+
+패딩 사이즈 조절 등
+https://scribnote5.github.io/posts/GithubPage1/
