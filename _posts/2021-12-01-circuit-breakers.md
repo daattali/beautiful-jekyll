@@ -9,13 +9,16 @@ permalink: circuit-breakers
 # TODO Update file name once after updating / debug jekyll dependencies
 ---
 
-This article compiles resources on how Slack implemented circuit breakers in internal tooling. I hoped to share references and links for folk to get started in this space!
+
+🎉🍿 **Here from Craft Conference? <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=I%27m%20listening%20to%20@frankc%20talk%20about%20Slack%27s%20internal%20tooling%20circuit%20breakers.%20🔥%20They%20went%20from%20many%20to%20zero%20cascading%20incidents%20in%20CI/CD%21%0AMore%3A%20https%3A//bit.ly/slack-circuit-breakers%0A@craftconf"
+  data-size="large">Tweet</a> and say hi!**
+
+This article accompanies the talk and shares a preview of the Slack engineering blog article on how Slack implemented circuit breakers in internal tooling.
 
 **💡 Abstract**
 
 After months of similar cascading incidents, Frank Chen shares how Slack engineers increased developer productivity by implementing circuit breakers throughout internal tooling. Engineers across Developer Productivity teams at Slack applied friction or shed to requests in Checkpoint, a Continuous Integration (CI) / Continuous Delivery (CD) orchestration service. This methodology increased service availability, overall throughput and decreased bad developer experiences with circuit breakers on Checkpoint’s scheduler. These circuit breakers on the interface between systems in CI were levers to minimize cascading failures and provided high leverage for programmatic metric queries for multiple services instead of individual client or service based approaches.
-
-
 
 **🔗 References**
 
