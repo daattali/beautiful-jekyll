@@ -17,7 +17,7 @@ open함수는 아래와 같다.
 open(file, mode='r', buffering=- 1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
 ```
 mode에는 아래와 같은 옵션을 줄 수 있다.
-![img.png](../img.png)
+![img.png](../../img.png)
   
 encoding에서는 여러 옵션을 줄 수 있고, cp949를 줄 수도 있다.
 ```python

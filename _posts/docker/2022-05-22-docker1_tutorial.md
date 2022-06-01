@@ -2,9 +2,6 @@
 layout: archive
 title: docker(1) tutorial
 subtitle: docker 사용법 기초
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/docker.png
-share-img: /assets/img/path.jpg
 author_profile: true
 sidebar:
   nav: "main" 

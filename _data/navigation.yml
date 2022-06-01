@@ -1,12 +1,31 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Linux"
+    url: "/_post/linux/"
+  - title: "Python"
+    url: "/_post/python/"
+    children:
+      - title: "Basic"
+        url: "/_post/python/basic"
+      - title: "Library"
+        url: "/_post/python/library"
+      - title: "anaconda"
+        url: "/_post/python/anaconda"
+      - title: "Effective & clean"
+        url: "/_post/python/effective_clean"
+  - title: "Deep learning"
+    url: "/_post/deep_learning/"
+    children:
+      - title: "Paper"
+        url: "/_post/deep_learning/paper"
+      - title: "pytorch_basic"
+        url: "/_post/deep_learning/pytorch"
+  - title: "SW engineering tools"
+    url: "/_post/sw_tools/"
+    children:
+      - title: "Docker"
+        url: "/_post/sw_tools/docker"
+      - title: "pycharm"
+        url: "/_post/sw_tools/pycharm"
+      - title: "Make"
+        url: "/_post/sw_tools/make"

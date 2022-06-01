@@ -21,4 +21,4 @@ https://eona1301.github.io/a_to_z/GithubBlog/
 https://namhoon.kim/2017/03/27/jekyll/023/index.html
 
 블로그 기본 구조
-https://ansohxxn.github.io/blog/jekyll-directory-structure/
+https://seungwubaek.github.io/blog/first_post/#page-title
