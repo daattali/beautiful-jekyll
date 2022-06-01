@@ -7,7 +7,7 @@ categories: python_lib
 
 
 
-## 1.모듈 설치
+## 1.모듈 임포트
 ```
 import argparse
 ```

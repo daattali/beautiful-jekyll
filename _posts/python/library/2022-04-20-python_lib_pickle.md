@@ -7,7 +7,7 @@ categories: python_lib
 
 파이썬에 있는 모든 객체는 pickle로 저장이 가능하다. pickle은 바이너리 파일로 저장이 된다.
 
-## 1.모듈 설치
+## 1.모듈 임포트
 내장 라이브러리라 import만 하면 된다.
 ```
 import pickle

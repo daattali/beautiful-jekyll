@@ -5,7 +5,7 @@ tags: [python library, natsort]
 categories: python_lib
 ---
 
-## 1.모듈 설치
+## 1.모듈 임포트
 natsorted 함수만 거의 사용됨.   
 ```python
 from natsort import natsorted

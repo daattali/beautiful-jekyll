@@ -14,7 +14,7 @@ elementTree는 이 목적을 달성하기 위해 두 가지 클래스를 가진�
 
 
 
-## 1.모듈 설치
+## 1.모듈 임포트
 ```
 from xml.etree.ElementTree import Element, SubElement, ElementTree
 ```
