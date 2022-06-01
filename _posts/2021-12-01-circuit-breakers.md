@@ -8,11 +8,12 @@ image-width: 192px
 permalink: circuit-breakers
 # TODO Update file name once after updating / debug jekyll dependencies
 ---
+[circuit-breaker-diagram]: /img-posts/circuit-breakers-diagram.png
+[circuit-breaker-meme]: /img-posts/circuit-breakers-meme-friends-do-not-send.png
 
 This article accompanies the talk and shares a preview of references for the Slack engineering blog article on how Slack implemented circuit breakers in internal tooling.
 
-<h2><strong>🎉🍿 Here from Craft Conference? <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%27m%20listening%20to%20@frankc%20talk%20about%20Slack%27s%20internal%20tooling%20circuit%20breakers.%20🔥%20They%20went%20from%20many%20to%20zero%20cascading%20incidents%20in%20CI/CD%21%0AMore%3A%20https%3A//bit.ly/slack-circuit-breakers%0A@craftconf"
-  data-size="large">Tweet</a> and say hi!</strong></h2>
+<h2><strong>🎉🍿 Here from Craft Conference? <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%27m%20listening%20to%20@frankc%20talk%20about%20Slack%27s%20internal%20tooling%20circuit%20breakers.%20🔥%20They%20went%20from%20many%20to%20zero%20cascading%20incidents%20in%20CI/CD%21%0AMore%3A%20https%3A//bit.ly/slack-circuit-breakers%0A@craftconf" data-size="large">Tweet</a> and say hi!</strong></h2>
 
 [![Circuit Breakers Diagram][circuit-breaker-diagram]](/img-posts/circuit-breakers-diagram.png)
 
@@ -39,7 +40,8 @@ After months of similar cascading incidents, Frank Chen shares how Slack enginee
 - [On the Diverse And Fantastical Shapes of Testing](https://martinfowler.com/articles/2021-test-shapes.html). "Pyramids, honeycombs, trophies, and the meaning of unit testing"
 - [What is incident analysis and why should we do it?](https://www.jeli.io/blog/what-is-incident-analysis-and-why-should-we-do-it/). Laura Macguire's article on performing incident analysis. "Service outages are a common part of modern software operations, especially if you’re moving fast or operating at scale! Many companies have realized this and have begun to invest in incident analysis in order to learn from their incidents. To introduce our Incident Analysis 101 series, let’s first talk about what exactly incident analysis is, and what benefits your teams can realize from it."
 - [Are we getting better yet? Progress toward safer operations](https://bit.ly/safer-operations) Alex Elman's talk at SRECon. Key points: "Deeper understanding leads to better fixes and enduring prevention. Reliability is reported using SLOs (and error budgets) not incident metrics. Nobody has control over how an incident unfolds. Incidents are an opportunity to improve the accuracy of mental models. At least half of incident analysis should focus on human factors. Comparative storytelling enhances learning"
-
+- [Piper (ACM)](https://dl.acm.org/doi/fullHtml/10.1145/2854146) "Google's monolithic software repository, which is used by 95% of its software developers worldwide, meets the definition of an ultra-large-scale system, providing evidence the single-source repository model can be scaled successfully. The Google codebase includes approximately one billion files and has a history of approximately 35 million commits spanning Google's entire 18-year existence. The repository contains 86TB of data, including approximately two billion lines of code in nine million unique source files. The total number of files also includes source files copied into release branches, files that are deleted at the latest revision, configuration files, documentation, and supporting data files"
+- [Monorepo maintenance (Github)](https://github.blog/2021-04-29-scaling-monorepo-maintenance/) "At GitHub, we serve some of the largest Git repositories on the planet. We also serve some of the fastest-growing repositories. Each day, the largest repositories we host become even larger. About a year ago, we noticed that the job we use to repack Git repositories began hitting our self-imposed timeouts on larger repositories. Even when expanding these timeouts, failing maintenance on these repositories has generally been the cause of degraded performance that is hard to mitigate."
 
 
 ## Conference talks
@@ -50,8 +52,4 @@ After months of similar cascading incidents, Frank Chen shares how Slack enginee
 
 ## Accompanying Article
 
-Coming soon to slack.engineering!
-
-
-[circuit-breaker-diagram]: /img-posts/circuit-breakers-diagram.png
-[circuit-breaker-meme]: /img-posts/circuit-breakers-meme-friends-do-not-send.png
+- **slack.engineering** article coming soon!
