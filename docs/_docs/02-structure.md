@@ -25,7 +25,7 @@ minimal-mistakes
 |  ├── feature_row             # feature row helper
 |  ├── gallery                 # image gallery helper
 |  ├── group-by-array          # group by array helper for archives
-|  ├── nav_list_main                # navigation list helper
+|  ├── nav_list                # navigation list helper
 |  ├── toc                     # table of contents helper
 |  └── ...
 ├── _layouts
