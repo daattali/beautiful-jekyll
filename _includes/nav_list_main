@@ -8,7 +8,35 @@
             📄 total {{sum}} post
       </li>
       <li>
-
+        <span class="nav__sub-title">ML/DL</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "pytorch" %}
+                        <li><a href="/categories/pytorch" class="">Pytorch({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "dataset" %}
+                        <li><a href="/categories/dataset" class="">Dataset({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "paper" %}
+                        <li><a href="/categories/paper" class="">Paper({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "open-mmlab" %}
+                        <li><a href="/categories/open-mmlab" class="">Open-mmlab({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">SW engineering tools</span>
             <ul>
                 {% for category in site.categories %}
@@ -70,35 +98,8 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">ML/DL</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "pytorch" %}
-                        <li><a href="/categories/pytorch" class="">Pytorch({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "dataset" %}
-                        <li><a href="/categories/dataset" class="">Dataset({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "paper" %}
-                        <li><a href="/categories/paper" class="">Paper({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "open-mmlab" %}
-                        <li><a href="/categories/open-mmlab" class="">Open-mmlab({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+
+
       </li>
       <li>
             <br>
