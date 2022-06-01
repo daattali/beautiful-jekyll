@@ -23,3 +23,6 @@ https://namhoon.kim/2017/03/27/jekyll/023/index.html
 https://seungwubaek.github.io/blog/first_post/#page-title
 jekyll tutorial : http://jekyllrb-ko.github.io/docs/step-by-step/01-setup/
 https://velog.io/@eona1301/Github-Blog-Jekyll-minimal-mistakes
+
+하이퍼링크 제거, 사이드바 공간 크기 변경 등
+https://eona1301.github.io/github_blog/GithubBlog-Content-Width/

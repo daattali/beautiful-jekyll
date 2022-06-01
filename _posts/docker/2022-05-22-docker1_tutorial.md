@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: docker(1) tutorial
 subtitle: docker 사용법 기초
 tags: [docker]
