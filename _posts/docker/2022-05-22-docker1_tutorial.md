@@ -2,8 +2,9 @@
 layout: archive
 title: docker(1) tutorial
 subtitle: docker 사용법 기초
-tags: docker
+tags: [docker]
 categories: docker
+toc: true
 ---
 도커는 컨테이너 기반의 가상화 오픈플랫폼이다. 리눅스용으로 만들어졌지만, 윈도우에서도 사용이 가능은 하다.     
 컨테이너는 도커 플랫폼에서 구성할 수 있는 독립적인 환경으로, 구동하려는 어플리케이션에 필요한 것들을 모두 포함한다.  
