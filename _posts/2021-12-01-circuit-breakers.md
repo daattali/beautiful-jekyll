@@ -9,7 +9,7 @@ permalink: circuit-breakers
 # TODO Update file name once after updating / debug jekyll dependencies
 ---
 
-This article accompanies the talk and shares a preview of the Slack engineering blog article on how Slack implemented circuit breakers in internal tooling.
+This article accompanies the talk and shares a preview of references for the Slack engineering blog article on how Slack implemented circuit breakers in internal tooling.
 
 <h2><strong>🎉🍿 Here from Craft Conference? <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%27m%20listening%20to%20@frankc%20talk%20about%20Slack%27s%20internal%20tooling%20circuit%20breakers.%20🔥%20They%20went%20from%20many%20to%20zero%20cascading%20incidents%20in%20CI/CD%21%0AMore%3A%20https%3A//bit.ly/slack-circuit-breakers%0A@craftconf"
   data-size="large">Tweet</a> and say hi!</strong></h2>
