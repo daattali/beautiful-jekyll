@@ -16,9 +16,9 @@ tags: [docker]
 https://jekyllrb-ko.github.io/
 https://eona1301.github.io/a_to_z/GithubBlog/
 
-페이지매기기
 
 https://namhoon.kim/2017/03/27/jekyll/023/index.html
 
 블로그 기본 구조
 https://seungwubaek.github.io/blog/first_post/#page-title
+jekyll tutorial : http://jekyllrb-ko.github.io/docs/step-by-step/01-setup/

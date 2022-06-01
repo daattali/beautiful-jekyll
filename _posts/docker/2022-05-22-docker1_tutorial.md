@@ -2,9 +2,6 @@
 layout: archive
 title: docker(1) tutorial
 subtitle: docker 사용법 기초
-author_profile: true
-sidebar:
-  nav: "main" 
 tags: 
  - docker
 categories: 
