@@ -1,5 +1,5 @@
 # main links
-main:
+main_side:
   - title: "Linux"
     url: "/_post/linux/"
   - title: "Python"
