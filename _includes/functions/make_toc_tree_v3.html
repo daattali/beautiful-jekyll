@@ -1,0 +1,35 @@
+{%- assign depth = include.depth | default: 0 -%}
+<ul class="wholetoc__category-list" depth="{{ depth }}">
+{%- for c in include.arr -%}
+  <li class="wholetoc__category" depth="{{ depth }}">
+    <div class="wholetoc__category-title" depth="{{ depth }}">
+      <i class="fas fa-folder-open fa-fw wholetoc__category-title-icon" depth="{{ depth }}" onclick="tocToggleFolder(this);"></i>
+      <a href="{{ c.url }}">{{ c.title }}</a>
+    </div>
+    {%- capture url_components -%}{%- include functions/remove_starting_trailing_sep.html target=c.url sep='/' -%}{%- endcapture -%}
+    {%- assign url_components = url_components | split: '/' -%}
+    {%- assign str_arr_of_cats = '' | split: '' -%}
+    {%- for comp in url_components -%}
+    {%- capture str_comp -%}{%- include functions/add_starting_trailing_sep.html target=comp sep='"' -%}{%- endcapture -%}
+    {%- assign str_arr_of_cats = str_arr_of_cats | push: str_comp -%}
+    {%- endfor -%}
+    {%- assign str_arr_of_cats = str_arr_of_cats | join: ', ' | prepend: '[' | append: ']' -%}
+    {%- assign cur_category_posts =  include.grouped_posts | where: 'name', str_arr_of_cats -%}
+    {%- if cur_category_posts.size > 0 -%}
+      <ul class="wholetoc__post-list view-style__list" depth="{{ depth }}">
+        {%- assign items = cur_category_posts[0].items | sort: 'post-order' -%}
+        {%- for item in items -%}
+        <li class="wholetoc__post view-style__list" depth="{{ depth }}">
+          <div class="wholetoc__post-wrapper view-style__list"><a href="{{ item.url }}#page-title">{{ item.title }}</a></div>
+        </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+    {%- if c.children -%}
+      {%- assign depth = depth | plus: 1 -%}
+      {%- include functions/make_toc_tree_v3.html arr=c.children grouped_posts=include.grouped_posts depth=depth -%}
+      {%- assign depth = depth | minus: 1 -%}
+    {%- endif -%}
+  </li>
+{%- endfor -%}
+</ul>

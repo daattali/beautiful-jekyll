@@ -1,0 +1,108 @@
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <li>
+            📄 total {{sum}} post
+      </li>
+      <li>
+        <span class="nav__sub-title">ML/DL</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "pytorch" %}
+                        <li><a href="/categories/pytorch" class="">Pytorch({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "dataset" %}
+                        <li><a href="/categories/dataset" class="">Dataset({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "paper" %}
+                        <li><a href="/categories/paper" class="">Paper({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "open-mmlab" %}
+                        <li><a href="/categories/open-mmlab" class="">Open-mmlab({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">SW engineering tools</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "anaconda" %}
+                        <li><a href="/categories/anaconda" class="">Anaconda({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "docker" %}
+                        <li><a href="/categories/docker" class="">Docker({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "pycharm" %}
+                        <li><a href="/categories/pycharm" class="">Pycharm({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "sw_tools" %}
+                        <li><a href="/categories/sw_tools" class="">Other sw tools({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Linux</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "linux" %}
+                        <li><a href="/categories/linux" class="">Linux({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Python</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "python" %}
+                        <li><a href="/categories/python" class="">Python basic({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "python_lib" %}
+                        <li><a href="/categories/python_lib" class="">Python library({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "python_clean" %}
+                        <li><a href="/categories/python_clean" class="">Clean code({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+
+      </li>
+      <li>
+            <br>
+      </li>
+  </ul>
+</nav>

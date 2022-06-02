@@ -1,11 +1,8 @@
 ---
-layout: post
+layout: single
 title: Shell 기초 및 명령어
-subtitle: shell 명령어 모음
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/linux.png
-share-img: /assets/img/path.jpg
-tags: [shell, cat, echo, which, export]
+tags: [shell, cat, export]
+categories: linux
 ---
 셸은 커널에 명령을 전달하기 위한 사용자 인터페이스 역할을 한다. 셸 명령어는 실제로 커널에 실행할 내용을 의미한다.
 # 셸
