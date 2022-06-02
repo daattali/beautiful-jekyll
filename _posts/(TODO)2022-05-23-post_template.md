@@ -1,15 +1,17 @@
 ---
-layout: post
-title: template 
-subtitle: template subtitle
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/docker.png
-share-img: /assets/img/path.jpg
-tags: [docker]
+layout: single
+title: template
+tags: [template]
+categories: template
+work: 0
 ---
-템플릿 예제
+# Prerequisite 
 
-## 텐서 속성 확인.
+# Introduction
 
+# Main content
 
-## @ 참고
+# Discussion
+
+# Reference 
+[파이썬 공식문서](https://docs.python.org/ko/3/library/abc.html)  

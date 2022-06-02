@@ -9,6 +9,14 @@ tags: [docker]
 ---
 템플릿 예제
 
+## work 단계
+0 : memo
+1 : draft
+2 : open
+3 : revised
+
+
+
 ## 텐서 속성 확인.
 
 

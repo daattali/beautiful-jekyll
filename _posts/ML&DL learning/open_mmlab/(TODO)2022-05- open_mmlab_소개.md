@@ -2,33 +2,16 @@
 layout: single
 title: open-mmlab 소개
 tags: [open-mmlab]
-categories: open-mmlab
+categories: template
+work: 0
 ---
-# Paper Title
+# Prerequisite 
 
+# Introduction
 
-## Keyword
+# Main content
 
+# Discussion
 
-## Summary   
-### what did authors try to accomplish?
-
- 
-### what were the key elements of the approach?
-
-
-### what can you use yourself? 
-
-
-### what other references do you want to follow?
-
-
-## New knowledge
-
-
-
-## After review
-
-
-## @참고
-https://hoya012.github.io/blog/anomaly-detection-overview-1/
+# Reference 
+[파이썬 공식문서](https://docs.python.org/ko/3/library/abc.html)  
