@@ -4,6 +4,7 @@ title: Backup best practices for SMBs
 description: Like in any company size, SMBs are recommended to follow a few best practices for their Backup environment
 date: 2022-05-30T04:56:56.806Z
 fb-img: null
+nobanner: yes
 ---
 
 Setting up a backup environment is among the most important aspects of an SDDC and this is a valid statement whether you are a 5 people startup or a 40.000 employees corporation. Backups can make or break businesses. There has been several occurences of businesses going under following a data loss event because they didn't have a proper backup strategy and weren't able to recover critical data. Best practices offer solid guidelines for SMBs to follow in order to protect their data with Nakivo Backup and Replication.
