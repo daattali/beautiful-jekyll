@@ -4,6 +4,7 @@ title: What does Nakivo v10.6 Beta bring to the product
 metadescription: null
 date: 2022-03-23T14:35:01.438Z
 fb-img: null
+nobanner: "yes"
 ---
 
 Nakivo has been rolling out releases at an impressive rate with 4 minor versions in 2021. The company starts 2022 with the latest Beta v10.6 that brings several interesting features to stay at the tip of the spear. With great processing power comes great attackability (if that is even a word), companies are consuming ever more cloud services and software attacks are increasing in number and sophistication. For that reason, every software vendor needs to step up and offer secure environments to their customers. Nakivo is doing just that with this new Beta v10.6 release which includes, among other things, security hardening and cloud services backup support, two areas that are being heavily invested in in recent years.

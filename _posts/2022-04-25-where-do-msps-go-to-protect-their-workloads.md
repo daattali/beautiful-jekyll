@@ -4,6 +4,7 @@ title: Where do MSPs go to protect their workloads?
 description: Learn about how Nakivo helps MSP protect their most critical workloads
 date: 2022-04-25T17:00:55.694Z
 fb-img: null
+nobanner: "yes"
 ---
 
 The last few years have been ruthless in terms of cybersecurity attacks, in particular ransomware becoming more and more widespread across the board. While any company can be the target of such attacks, MSP are often a prime choice for bad actors. The fact that multiple small and medium sized companies rely on them to handle the bulk of their IT operations makes attacking an MSP an "x birds one stone" type of thing. If we get past the dark cloud of ransomware hovering over us, MSPs also need solid backup solutions in order to offer their customers reliable data protection.

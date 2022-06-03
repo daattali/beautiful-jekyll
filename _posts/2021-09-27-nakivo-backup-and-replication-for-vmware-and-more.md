@@ -3,9 +3,8 @@ layout: post
 title: Nakivo Backup and Replication for VMware and more
 DATE: 
 subtitle: ''
-metadescription: Nakivo Backup and Replication for VMware, Hyper-V, physical servers
-  and cloud integration.
-
+metadescription: Nakivo Backup and Replication for VMware, Hyper-V, physical servers and cloud integration.
+nobanner: "yes"
 ---
 Today we are going to have a look at Nakivo Backup and Replication, an all-in-one product that will let you backup, restore and replicate virtual machines in your VMware environment. The product supports a variety of environments to backup such as vSphere, Hyper-V, M365, Nutanix, Oracle...
 
