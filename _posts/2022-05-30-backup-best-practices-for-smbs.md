@@ -8,6 +8,10 @@ fb-img: null
 
 Setting up a backup environment is among the most important aspects of an SDDC and this is a valid statement whether you are a 5 people startup or a 40.000 employees corporation. Backups can make or break businesses. There has been several occurences of businesses going under following a data loss event because they didn't have a proper backup strategy and weren't able to recover critical data. Best practices offer solid guidelines for SMBs to follow in order to protect their data with Nakivo Backup and Replication.
 
+Before getting stuck in, note that you can get an unrestricted 15-days free trial of **Nakivo Backup and Replication**. Check out [this blog ](https://www.vxav.fr/2021-10-19-backup-and-restore-vms-with-nakivo/)for guidance on how to get started with it.
+
+[![](/img/2021-10-18_11h14_34.png)](https://www.nakivo.com/resources/download/trial-download/)
+
 ## 1 - Define RTOs and RPOs
 
 Before starting, it is important for SMBs to discuss the data protection strategy and business needs as these will rule how the backup environment and the jobs will be configured. While most departments in an organization relies on data and needs to ensure that it is safe, establishing an order of importance will allow you to define recovery time objectives (RTO) and recovery point objectives (RPO) for each category.
