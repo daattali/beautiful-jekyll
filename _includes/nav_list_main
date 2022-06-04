@@ -93,8 +93,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "python_clean" %}
-                        <li><a href="/categories/python_clean" class="">Clean code({{category[1].size}})</a></li>
+                    {% if category[0] == "effective_python" %}
+                        <li><a href="/categories/effective_python" class="">Effective python({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
