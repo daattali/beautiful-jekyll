@@ -4,7 +4,7 @@ layout: page
 title: Yong Yuan
 subtitle: PhD Student
 permalink: "yongyuan"
-excerpt: "Joined during Fall 2021."
+excerpt: "Joined in [...]"
 #image: "/img/image/ps-journey.jpg" # 
 show-avatar: true
 bigimg:	# /path/to/img - or multiple entries <- "Path": "Description">
