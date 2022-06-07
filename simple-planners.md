@@ -2,7 +2,6 @@
 layout: page
 title: Simple Planners
 subtitle: ''
-published: false
 
 ---
 Are you often writing down mega to do lists and get frozen with overwhelm and indecision? This was me too! I remember standing in my kitchen stressed out, looking at my giant to do list and had no clue how to start. **Enter simple planning**. I knew something had to change, so I committed to learning a [simple planning method](The First Simple Planning Step to Take as a Beginner Planner). Now, after years of learning how to simple plan, I bring you: **MY SIMPLE PLANNERS**! Looking for **a** **simple**, **no fuss planner** that helps you stay on track without feeling overwhelmed? **My Simple Planner** was designed with _simplicity in mind_.
