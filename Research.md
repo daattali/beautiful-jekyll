@@ -38,17 +38,31 @@ display_categories: [work]
 <hr style="border:1px solid #2b6777"/>
 
 #### Talks
+
 <dl>
 <dt>
     <img src="https://img.shields.io/badge/Oct. 2021-00a19e.svg"></dt>
     
-<dd>  Talk at the MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop  <a href="https://pippiworkshop.github.io/"> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </a> <br> <a href="/assets/img/zoom_4.mp4"> <img src="https://img.shields.io/badge/Link to my presentation-a18aab.svg" /> </a> </dd>
+<dd>  Talk at the MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop  <a href="https://pippiworkshop.github.io/"> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </a> <br> <a href="/assets/img/zoom_4.mp4"> Video of the presentation </a> </dd>
 
 <dt><img src="https://img.shields.io/badge/June 2022-00a19e.svg"></dt>
 <dd>  Talk at the Decision and Bayesian Computation Lab (Institut Pasteur) </dd>
 </dl>
  
 <hr style="border:1px solid #2b6777"/>
+
+#### Posters
+
+<dl>
+<dt>
+    <img src="https://img.shields.io/badge/Sept. 2022-00a19e.svg"></dt>
+    
+<dd>  Poster presentation at <a href="https://fitng.org/"> FIT'NG 2022</a> "A spatio-temporal atlas of the foetal brain with agenesis of the corpus callosum" </dd>
+
+</dl>
+ 
+<hr style="border:1px solid #2b6777"/>
+
 
 ### Awards
     
