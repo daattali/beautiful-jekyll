@@ -20,7 +20,7 @@ use-site-title: true
 
 `Website:` [leoqueiroz.com](http://leoqueiroz.com)<br>
 
-### Download the PDF [here!](assets/doc/resume.pdf)
+### Download the PDF [here!](assets/doc/resume_pdf.pdf)
 
 <br><br>
 
