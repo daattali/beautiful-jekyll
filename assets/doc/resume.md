@@ -4,7 +4,7 @@ use-site-title: true
 ---
 
 <!--<p style="font-size:35px; color:darkcyan; text-align: center;"><b>LEONARDO QUEIROZ</b></p>
-<img src="assets/img/Leo.JPEG" width="300" style="float:left; margin-right: 30px"/>
+<img src="assets/img/leo.jpeg" width="300" style="float:left; margin-right: 30px"/>
 
 ## `Data Scientist / Machine Learning Engineer`
 
