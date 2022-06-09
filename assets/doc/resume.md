@@ -3,7 +3,7 @@ layout: page
 use-site-title: true
 ---
 
-<!--<p style="font-size:35px; color:darkcyan; text-align: center;"><b>LEONARDO QUEIROZ</b></p>
+<p style="font-size:35px; color:darkcyan; text-align: center;"><b>LEONARDO QUEIROZ</b></p>
 <img src="assets/img/leo.jpeg" width="300" style="float:left; margin-right: 30px"/>
 
 ## `Data Scientist / Machine Learning Engineer`
@@ -151,4 +151,4 @@ Books:
     seminars to peers, general public, engineering students and members of academia. Worked as a
     programming language professor at the Federal University of Ceara, Brazil.
 - **Languages:** Portuguese (native), English (fluent), Spanish (comprehend talking)
-- **Interests:** Piano, acoustic guitar, books, hiking, biking, movies. -->
+- **Interests:** Piano, acoustic guitar, books, hiking, biking, movies.
