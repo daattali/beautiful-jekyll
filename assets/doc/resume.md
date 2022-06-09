@@ -3,14 +3,11 @@ layout: page
 use-site-title: true
 ---
 
-<p style="font-size:35px; color:darkcyan; text-align: center;"><b>LEONARDO QUEIROZ</b></p>
+<p style="font-size:40px; color:darkcyan; text-align: center;"><b>LEONARDO QUEIROZ</b></p>
+<p style="font-size:30px; color:#990000; text-align: center;"><b>Data Scientist / Machine Learning Engineer</b></p>
 <img src="/assets/img/leo.jpeg" width="300" style="float:left; margin-right: 30px"/>
 
-## `Data Scientist / Machine Learning Engineer`
-
-<br>
-
-`Calgary/AB, Canada`<br><br>
+`Calgary/AB, Canada`
 
 `(C):` [+1 587-585-8132](tel:15875858132)<br>
 `Email:` [leopqrz@gmail.com](mailto:leopqrz@gmail.com)<br>
@@ -36,7 +33,7 @@ Brazil 2014/ 2010/ 2004
 - Title of Technician – Telecommunications - N/A
 
 
-<p style="font-size:15px; color:red;">The GPAs at the Brazilian institution were evaluated by the World Education Services (WES)
+<p style="font-size:15px; color:#990000;">The GPAs at the Brazilian institution were evaluated by the World Education Services (WES)
 </p>
 
 <p style="font-size:25px; color:darkcyan;"><b>RELEVANT WORK EXPERIENCE</b></p>
