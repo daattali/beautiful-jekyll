@@ -4,10 +4,9 @@ description: Helping moms simplify home life.
 author: Kelly Briggs
 navbar-links:
   Start here: popular
-  Planners: https://kellymbriggs.github.io/simple-planners/
+  Shop: https://www.etsy.com/shop/simplehomemomshop/ 
   Connect:
   - About me: https://kellymbriggs.github.io/aboutme/
-  - Shop: https://www.etsy.com/shop/simplehomemomshop/ 
   - Contact: https://kellymbriggs.github.io/contact/
 avatar: "/assets/img/Headshot.jpg"
 round-avatar: true
