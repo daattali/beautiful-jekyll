@@ -4,7 +4,7 @@ use-site-title: true
 ---
 
 <p style="font-size:35px; color:darkcyan; text-align: center;"><b>LEONARDO QUEIROZ</b></p>
-<img src="assets/img/leo.jpeg" width="300" style="float:left; margin-right: 30px"/>
+<img src="/assets/img/leo.jpeg" width="300" style="float:left; margin-right: 30px"/>
 
 ## `Data Scientist / Machine Learning Engineer`
 
@@ -13,11 +13,8 @@ use-site-title: true
 `Calgary/AB, Canada`<br><br>
 
 `(C):` [+1 587-585-8132](tel:15875858132)<br>
-
 `Email:` [leopqrz@gmail.com](mailto:leopqrz@gmail.com)<br>
-
 `LinkedIn:` [linkedin.com/in/leopqrz](http://linkedin.com/in/leopqrz)<br>
-
 `Website:` [leoqueiroz.com](http://leoqueiroz.com)<br>
 
 ### Download the PDF [here!](assets/doc/resume_pdf.pdf)
@@ -26,15 +23,17 @@ use-site-title: true
 
 <p style="font-size:25px; color:darkcyan;"><b>EDUCATION</b></p>
 
-**University of Calgary** (UofC), Canada 2022
+**University of Calgary (UofC)**<br>
+Canada 2022
 
-- **Master of Science – Biomedical Engineering, Specialized in Machine Learning** _(GPA: 4.00 / 4.00)_
+- MSc. Biomedical Engineering, Specialized in Machine Learning - **GPA: 4.00 / 4.00**
 
-**Federal Institute of Education, Science and Technology of Ceara** (IFCE), Brazil 2014, 2010, 2004
+**Federal Institute of Education, Science and Technology of Ceara (IFCE)**<br>
+Brazil 2014/ 2010/ 2004
 
-- **Bachelor's Degree – Mechatronics Engineering** *_(GPA: 3.01 / 4.00)_
-- Title of Technologist – Industrial Mechatronics *_(GPA: 3.44 / 4.00)_
-- Title of Technician – Telecommunications _N/A_
+- Bachelor's Degree – Mechatronics Engineering - GPA: 3.01 / 4.00
+- Title of Technologist – Industrial Mechatronics - GPA: 3.44 / 4.00
+- Title of Technician – Telecommunications - N/A
 
 
 <p style="font-size:15px; color:red;">The GPAs at the Brazilian institution were evaluated by the World Education Services (WES)
@@ -42,7 +41,8 @@ use-site-title: true
 
 <p style="font-size:25px; color:darkcyan;"><b>RELEVANT WORK EXPERIENCE</b></p>
 
-**Research Associate** – University of Calgary, Calgary/AB, Canada May 2019 – Jan 2022
+**Research Associate:** – May 2019 – Jan 2022<br>
+University of Calgary
 
 - Developed and validated a Cascade R-CNN deep learning model to detect masks and estimate respiration rate based on mask colour variation in thermal videos, achieving an accuracy of 91.95%.
 - Developed and validated a synthetic dataset with thermal images, where masks are superimposed on unmasked faces. It was applied deep learning algorithms such as RetinaFace and HRNet to a large-scale multimodal dataset (>4 million images).
@@ -60,7 +60,8 @@ use-site-title: true
 **Between December 2016 and May 2019 I was learning English and working as a machine operator in the foam
 and oil and gas pipeline construction industries.**
 
-**Electrical Maintenance Technologist** , Petrobras, Brazil Jan 2016 – Dec 2016
+**Electrical Maintenance Technologist:** Jan 2016 – Dec 2016<br>
+Petrobras S/A
 
 - Performed corrective, preventive and predictive maintenance in Offshore Automation and
     Instrumentation Systems observing the availability of material, tools and the maintenance history through
@@ -72,17 +73,18 @@ and oil and gas pipeline construction industries.**
     instructions, drawings, standards and legislation at all times with safety regulations and follow the
     business processes.
 
-**Adjunct Professor** , Federal University of Ceara (UFC), Brazil Jan 2015 – Aug 2015
+**Adjunct Professor:** Jan 2015 – Aug 2015<br>
+Federal University of Ceara (UFC)
 
-**-** Taught courses in Mathematics and Civil/Chemical/Electrical Engineering curriculums
-**-** Graduate course taught: Fundamentals of Computer Programming and Programming for Engineering,
+- Taught courses in Mathematics and Civil/Chemical/Electrical Engineering curriculums
+- Graduate course taught: Fundamentals of Computer Programming and Programming for Engineering,
     using "C" language.
-**-** Developed curriculum, teaching materials and lesson plan for the courses
-**-** Supervised independent and group projects, laboratory work and hands-on training
+- Developed curriculum, teaching materials and lesson plan for the courses
+- Supervised independent and group projects, laboratory work and hands-on training
 
 <p style="font-size:25px; color:darkcyan;"><b>LEADERSHIP & EXTRACURRICULAR EXPERIENCE</b></p>
 
-**High School Mentorship** Jul 2021 – Aug 2021
+**High School Mentorship:** Jul 2021 – Aug 2021<br>
 2021 Alberta Innovates Highschool Youth Researcher Summer (HYRS) Program (2021)
 
 - Program Mentorship Package – University of Calgary
@@ -92,7 +94,7 @@ and oil and gas pipeline construction industries.**
 - Facilitated discussions about the ability to ask appropriate questions in an academic and/or research
     environment
 
-**Project Manager / Academic Advisor** Aug 2020 – Apr 2021
+**Project Manager / Academic Advisor:** Aug 2020 – Apr 2021<br>
 Computer, Electrical, and Software Engineering Team Design Course (ENEL 500) – University of Calgary
 
 - Capstone Project – Development of a Stroke Unit Monitoring Control System
@@ -100,7 +102,7 @@ Computer, Electrical, and Software Engineering Team Design Course (ENEL 500) –
     at the University of Calgary. It was developed a system for remote monitoring of stroke patients using IP
     cameras, tablet and raspberry PI hardware, applying engineering knowledge to solve a real-life problem.
 
-**Summer Student Mentorship** Jun – Aug (2019 – 2021)
+**Summer Student Mentorship:** Jun – Aug (2019 – 2021)<br>
 Schulich School of Engineering – University of Calgary
 
 - Supervised a team of High School and undergraduate students over the summer of 2019-2021 to create a
@@ -110,7 +112,7 @@ Schulich School of Engineering – University of Calgary
     spectrums, image/video processing, application of algorithms for object detection, object segmentation,
     subject tracking, classification, among others
 
-**Community Outreach Talks** Aug 2020 / Aug 2021
+**Community Outreach Talks:** Aug 2020 - Aug 2021
 
 - Lecture on Thermal Imaging for Software Engineering students – University of Calgary (Canada) – August
     23th, 2020 – Overview on Thermal imaging explaning the fundamentals of infrared (IR) thermal imaging,
@@ -122,18 +124,19 @@ Schulich School of Engineering – University of Calgary
 
 **Volunteer**
 
-- Studio Bell Jun 2017 – Aug 2017
+- Studio Bell: Jun 2017 – Aug 2017
     o Welcoming, accompanying and assisting visitors to the music museum, in addition to
        participating in special events during the summer.
-- First Evangelical Free Church Jan 2018 – Dec 2019
+- First Evangelical Free Church: Jan 2018 – Dec 2019
     o Play, rehearse and assist in creating musical arrangements with keyboard, bass and guitar.
 
-<p style="font-size:25px; color:darkcyan;"><b>LEADERSHIP & EXTRACURRICULAR EXPERIENCE</b></p>
+<p style="font-size:25px; color:darkcyan;"><b>ADDITIONAL TRAINING AND EDUCATION</b></p>
 
 Courses:
 
 - Neural Networks and Deep Learning (August 2020) – Coursera ( 25 hours)
     - Topics included: Deep learning, Artificial Neural Networks, Backpropagation, Python Programming, Neural Network Architecture
+
 Books:
 
 - Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow by Aurélien Géron (In progress)
