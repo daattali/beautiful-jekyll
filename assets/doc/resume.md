@@ -14,7 +14,7 @@ use-site-title: true
 `LinkedIn:` [linkedin.com/in/leopqrz](http://linkedin.com/in/leopqrz)<br>
 `Website:` [leoqueiroz.com](http://leoqueiroz.com)<br>
 
-### Download the PDF [here!](assets/doc/resume_pdf.pdf)
+### Download the PDF version [here!](assets/doc/resume_pdf.pdf)
 
 <br><br>
 
@@ -54,8 +54,7 @@ University of Calgary
 - Supervised three summer students on a software/hardware project while maintaining git version control.
 - Completed thesis based Masters at U of C, publishing two IEEE conference papers and one poster during my tenure.
 
-**Between December 2016 and May 2019 I was learning English and working as a machine operator in the foam
-and oil and gas pipeline construction industries.**
+<p style="font-size:15px; color:#990000;">Between December 2016 and May 2019 I was learning English and working as a machine operator in the foam and oil and gas pipeline construction industries.</p>
 
 **Electrical Maintenance Technologist:** Jan 2016 – Dec 2016<br>
 Petrobras S/A
@@ -136,19 +135,20 @@ Courses:
 
 Books:
 
-- Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow by Aurélien Géron (In progress)
-- Deep Learning with Python by François Chollet (In progress)
+- Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow by Aurélien Géron (2nd Edition).
+- Deep Learning with Python by François Chollet (2nd Edition).
+- Pratical Statistics for Data Scientists by Peter Bruce, Andrew Bruce & Peter Gedeck (2nd Edition).
 
 <p style="font-size:25px; color:darkcyan;"><b>SKILLS & INTERESTS</b></p>
 
 - **Technical Skills:** Proficient in Python, MATLAB and Object oriented programming, Basic proficiency in C,
-    JavaScript, VBA, AutoCAD, SolidWorks and data pipeline.
+    JavaScript, VBA, AutoCAD and data pipeline.
 - **Interpersonal skills:** Ability to work in diverse background groups as a leader and team player. Passionate
     about technology, transitioning to the field of Data science/Machine Learning with the desire to drive
     progress and technological advances that bring effective changes to society. Never stop learning, resilient,
-    adapt well to changes and like challenges that explore my full potential.
+    adapt well to changes and I like challenges that explore my full potential.
 - **Communication:** Public speaking experience to diverse audiences, which includes lectures, courses and
     seminars to peers, general public, engineering students and members of academia. Worked as a
-    programming language professor at the Federal University of Ceara, Brazil.
-- **Languages:** Portuguese (native), English (fluent), Spanish (comprehend talking)
-- **Interests:** Piano, acoustic guitar, books, hiking, biking, movies.
+    programming language professor at the Federal University of Ceara, Brazil and Teacher Assistant at the University of Calgary.
+- **Languages:** Portuguese (native), English (fluent), Spanish (Listening/Reading)
+- **Hobbies:** Piano, acoustic guitar, books, hiking, biking, movies.
