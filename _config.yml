@@ -16,7 +16,7 @@ author: Leonardo Queiroz
 navbar-links:
   About Me: "aboutme"
   Resume: "/assets/doc/resume"
-  # Portfolio: "/"
+  Portfolio: "/"
   Resources: "/assets/doc/resources"
 
 # --- Logo --- #
