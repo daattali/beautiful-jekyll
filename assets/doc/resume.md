@@ -12,7 +12,7 @@ use-site-title: true
 `(C):` [+1 587-585-8132](tel:15875858132)<br>
 `Email:` [leopqrz@gmail.com](mailto:leopqrz@gmail.com){:target="_blank"}<br>
 `LinkedIn:` [leopqrz](https://linkedin.com/in/leopqrz/){:target="_blank"}<br>
-`GitHub:` [leopqrz](https://github.com/leopqrz/){:target="_blank"}:<br>
+`GitHub:` [leopqrz](https://github.com/leopqrz/){:target="_blank"}<br>
 `Website:` [leoqueiroz.com](http://leoqueiroz.com)<br>
 
 ### Download the PDF version [here!](assets/doc/resume_pdf.pdf)
