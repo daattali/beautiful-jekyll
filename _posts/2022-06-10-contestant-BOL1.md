@@ -82,8 +82,8 @@ A lot of things happened during that competition and during that trip, and of co
 
 _Yes, we looked like criminals in our official team photography_.
 
-Thanks for reading, I hope to see you around soon.
-BTW, do i have many grammar mistake? I hope not...
+Thanks for reading, I hope to see you around soon.<br>
+BTW, do I have many grammar mistake? I hope not...
 
 
 <br><br>

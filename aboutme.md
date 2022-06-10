@@ -17,6 +17,7 @@ _Agustino de corazón_.
 - I love making friends, I just don't love any person as my friend...
 - I really enjoy sharing thoughts and perspectives of life, without the need of starting a discussion about who is right.
 - I have a serious addiction to popcorn.
+- Liverpool FC and FC Barcelona fan.
 - Sometimes I get lost inside of my mind, it looks kinda like I'm ignoring everyone. Sorry about that, not my intention to disrespect.
 - Although I did a lot of interesting things during my life, I believe I haven't reached my prime yet.
 - The best fried chicken in the world: KFC in Terminal F, Miami Int Airport.
