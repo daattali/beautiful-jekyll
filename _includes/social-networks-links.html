@@ -2,7 +2,7 @@
 
 {%- if site.social-network-links.rss and site.rss-description -%}
   <li class="list-inline-item">
-    <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
+    <a href="{{ '/feed.xml' | relative_url }}" target="_blank" title="RSS">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
@@ -14,7 +14,7 @@
 
 {%- if site.social-network-links.email -%}
   <li class="list-inline-item">
-    <a href="mailto:{{ site.social-network-links.email }}" title="Email me">
+    <a href="mailto:{{ site.social-network-links.email }}" target="_blank" title="Email me">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -26,7 +26,7 @@
 
 {%- if site.social-network-links.calendly -%}
   <li class="list-inline-item">
-    <a href="https://calendly.com/{{ site.social-network-links.calendly }}" title="Schedule a meeting with me">
+    <a href="https://calendly.com/{{ site.social-network-links.calendly }}" target="_blank" title="Schedule a meeting with me">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-calendar-check fa-stack-1x fa-inverse"></i>
@@ -38,7 +38,7 @@
 
 {%- if site.social-network-links.facebook -%}
   <li class="list-inline-item">
-    <a href="https://www.facebook.com/{{ site.social-network-links.facebook }}" title="Facebook">
+    <a href="https://www.facebook.com/{{ site.social-network-links.facebook }}" target="_blank" title="Facebook">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
@@ -50,7 +50,7 @@
 
 {%- if site.social-network-links.telegram -%}
   <li class="list-inline-item">
-    <a href="https://t.me/{{ site.social-network-links.telegram }}" title="Telegram">
+    <a href="https://t.me/{{ site.social-network-links.telegram }}" target="_blank" title="Telegram">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-telegram-plane fa-stack-1x fa-inverse"></i>
@@ -62,7 +62,7 @@
 
 {%- if site.social-network-links.github -%}
   <li class="list-inline-item">
-    <a href="https://github.com/{{ site.social-network-links.github }}" title="GitHub">
+    <a href="https://github.com/{{ site.social-network-links.github }}" target="_blank" title="GitHub">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -74,7 +74,7 @@
 
 {%- if site.social-network-links.twitter -%}
   <li class="list-inline-item">
-    <a href="https://twitter.com/{{ site.social-network-links.twitter }}" title="Twitter">
+    <a href="https://twitter.com/{{ site.social-network-links.twitter }}" target="_blank" title="Twitter">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -86,7 +86,7 @@
 
 {%- if site.social-network-links.reddit -%}
   <li class="list-inline-item">
-    <a href="https://reddit.com/u/{{ site.social-network-links.reddit }}" title="Reddit">
+    <a href="https://reddit.com/u/{{ site.social-network-links.reddit }}" target="_blank" title="Reddit">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
@@ -98,7 +98,7 @@
 
 {%- if site.social-network-links.linkedin -%}
   <li class="list-inline-item">
-    <a href="https://linkedin.com/in/{{ site.social-network-links.linkedin }}" title="LinkedIn">
+    <a href="https://linkedin.com/in/{{ site.social-network-links.linkedin }}" target="_blank" title="LinkedIn">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -110,7 +110,7 @@
 
 {%- if site.social-network-links.xing -%}
   <li class="list-inline-item">
-    <a href="https://www.xing.com/profile/{{ site.social-network-links.xing }}" title="Xing">
+    <a href="https://www.xing.com/profile/{{ site.social-network-links.xing }}" target="_blank" title="Xing">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-xing fa-stack-1x fa-inverse"></i>
@@ -122,7 +122,7 @@
 
 {%- if site.social-network-links.stackoverflow -%}
   <li class="list-inline-item">
-    <a href="https://stackoverflow.com/users/{{ site.social-network-links.stackoverflow }}" title="StackOverflow">
+    <a href="https://stackoverflow.com/users/{{ site.social-network-links.stackoverflow }}" target="_blank" title="StackOverflow">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
@@ -134,7 +134,7 @@
 
 {%- if site.social-network-links.snapchat -%}
   <li class="list-inline-item">
-    <a href="https://www.snapchat.com/add/{{ site.social-network-links.snapchat }}" title="Snapchat">
+    <a href="https://www.snapchat.com/add/{{ site.social-network-links.snapchat }}" target="_blank" title="Snapchat">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
@@ -146,7 +146,7 @@
 
 {%- if site.social-network-links.instagram -%}
   <li class="list-inline-item">
-    <a href="https://www.instagram.com/{{ site.social-network-links.instagram }}" title="Instagram">
+    <a href="https://www.instagram.com/{{ site.social-network-links.instagram }}" target="_blank" title="Instagram">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
@@ -158,7 +158,7 @@
 
 {%- if site.social-network-links.youtube -%}
   <li class="list-inline-item">
-    <a href="https://www.youtube.com/{{ site.social-network-links.youtube }}" title="YouTube">
+    <a href="https://www.youtube.com/{{ site.social-network-links.youtube }}" target="_blank" title="YouTube">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
@@ -170,7 +170,7 @@
 
 {%- if site.social-network-links.spotify -%}
   <li class="list-inline-item">
-    <a href="https://open.spotify.com/user/{{ site.social-network-links.spotify }}" title="Spotify">
+    <a href="https://open.spotify.com/user/{{ site.social-network-links.spotify }}" target="_blank" title="Spotify">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-spotify fa-stack-1x fa-inverse"></i>
@@ -182,7 +182,7 @@
 
 {%- if site.social-network-links.telephone -%}
   <li class="list-inline-item">
-    <a href="tel:{{ site.social-network-links.telephone }}" title="Phone">
+    <a href="tel:{{ site.social-network-links.telephone }}" target="_blank" title="Phone">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
@@ -194,7 +194,7 @@
 
 {%- if site.social-network-links.steam -%}
   <li class="list-inline-item">
-    <a href="https://steamcommunity.com/id/{{ site.social-network-links.steam }}" title="Steam">
+    <a href="https://steamcommunity.com/id/{{ site.social-network-links.steam }}" target="_blank" title="Steam">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
@@ -206,7 +206,7 @@
 
 {%- if site.social-network-links.twitch -%}
   <li class="list-inline-item">
-    <a href="https://www.twitch.tv/{{ site.social-network-links.twitch }}" title="Twitch">
+    <a href="https://www.twitch.tv/{{ site.social-network-links.twitch }}" target="_blank" title="Twitch">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
@@ -218,7 +218,7 @@
 
 {%- if site.social-network-links.yelp -%}
   <li class="list-inline-item">
-    <a href="https://{{ site.social-network-links.yelp }}.yelp.com" title="Yelp">
+    <a href="https://{{ site.social-network-links.yelp }}.yelp.com" target="_blank" title="Yelp">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-yelp fa-stack-1x fa-inverse"></i>
@@ -230,7 +230,7 @@
 
 {%- if site.social-network-links.mastodon -%}
   <li class="list-inline-item">
-    <a rel="me" href="https://{{ site.social-network-links.mastodon }}" title="Mastodon">
+    <a rel="me" href="https://{{ site.social-network-links.mastodon }}" target="_blank" title="Mastodon">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
@@ -242,7 +242,7 @@
 
 {%- if site.social-network-links.ORCID -%}
  <li class="list-inline-item">
-   <a href="https://orcid.org/{{ site.social-network-links.ORCID }}" title="ORCID">
+   <a href="https://orcid.org/{{ site.social-network-links.ORCID }}" target="_blank" title="ORCID">
      <span class="fa-stack fa-lg" aria-hidden="true">
        <i class="fas fa-circle fa-stack-2x"></i>
        <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
@@ -254,7 +254,7 @@
 
 {%- if site.social-network-links.google-scholar -%}
   <li class="list-inline-item">
-    <a href="https://scholar.google.com/{{ site.social-network-links.google-scholar }}" title="Google Scholar">
+    <a href="https://scholar.google.com/{{ site.social-network-links.google-scholar }}" target="_blank" title="Google Scholar">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
@@ -266,7 +266,7 @@
 
 {%- if site.social-network-links.patreon -%}
   <li class="list-inline-item">
-    <a href="https://patreon.com/{{ site.social-network-links.patreon }}" title="Patreon">
+    <a href="https://patreon.com/{{ site.social-network-links.patreon }}" target="_blank" title="Patreon">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
@@ -278,7 +278,7 @@
   
 {%- if site.social-network-links.medium -%}
   <li class="list-inline-item">
-    <a href="https://medium.com/@{{ site.social-network-links.medium }}" title="Medium">
+    <a href="https://medium.com/@{{ site.social-network-links.medium }}" target="_blank" title="Medium">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
@@ -290,7 +290,7 @@
 
 {%- if site.social-network-links.itchio -%}
   <li class="list-inline-item">
-    <a href="https://{{ site.social-network-links.itchio }}.itch.io/" title="Itchio">
+    <a href="https://{{ site.social-network-links.itchio }}.itch.io/" target="_blank" title="Itchio">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
@@ -302,7 +302,7 @@
   
 {%- if site.social-network-links.discord -%}
   <li class="list-inline-item">
-    <a href="https://discord.com/{{ site.social-network-links.discord }}" title="Discord">
+    <a href="https://discord.com/{{ site.social-network-links.discord }}" target="_blank" title="Discord">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
@@ -314,7 +314,7 @@
   
 {%- if site.social-network-links.kaggle -%}
   <li class="list-inline-item">
-    <a href="https://www.kaggle.com/{{ site.social-network-links.kaggle }}" title="Kaggle">
+    <a href="https://www.kaggle.com/{{ site.social-network-links.kaggle }}" target="_blank" title="Kaggle">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-kaggle fa-stack-1x fa-inverse"></i>
@@ -326,7 +326,7 @@
 
 {%- if site.social-network-links.hackerrank -%}
   <li class="list-inline-item">
-    <a href="https://www.hackerrank.com/{{ site.social-network-links.hackerrank }}" title="Hackerrank">
+    <a href="https://www.hackerrank.com/{{ site.social-network-links.hackerrank }}" target="_blank" title="Hackerrank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-hackerrank fa-stack-1x fa-inverse"></i>
