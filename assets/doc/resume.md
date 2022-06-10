@@ -15,7 +15,7 @@ use-site-title: true
 `GitHub:` [leopqrz](https://github.com/leopqrz/){:target="_blank"}<br>
 `Website:` [leoqueiroz.com](http://leoqueiroz.com)<br>
 
-### Download the PDF version [here!](assets/doc/resume_pdf.pdf)
+Download the PDF version [here!](assets/doc/resume_pdf.pdf){:target="_blank"}
 
 <br><br>
 
