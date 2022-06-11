@@ -16,7 +16,7 @@ author: J. Roll
 navbar-links:
   About Me: "aboutme"
   Mobile Apps:
-    - Grapes: "https://jellroll.github.io"
+    - Grapes: "grapes"
     - Learn markdown: "https://www.markdowntutorial.com/"
   # Author's home: "https://deanattali.com"
 
