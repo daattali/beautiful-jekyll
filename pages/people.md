@@ -280,6 +280,18 @@ edit: "04-08-2020"
       </a>
     </div>
   </div>
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_blank" href="qiliu" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <img class="roundrect" src="assets/img/people/liuqi.png"> 
+        </span>
+        <p class="text-muted">Qi Liu</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
 </div>
 
 ## Staff
