@@ -10,14 +10,14 @@ display_categories: [work]
     <img src="https://img.shields.io/badge/Made with Deformetrica-656262.svg" width="110"/></a><img src="/assets/img/deformetrica.png" alt="drawing" width="30"/></div>
     
 ### Preprints
-<b>Wavelet-Based Multiscale Initial Flow For Improved Atlas Estimation in the Large Diffeomorphic Deformation Model Framework</b><br>
+    
+<b><a href="https://hal.archives-ouvertes.fr/hal-03620367v1"> <img src="https://img.shields.io/badge/Read on HAL-542d24.svg" /> </a> Wavelet-Based Multiscale Initial Flow For Improved Atlas Estimation in the Large Diffeomorphic Deformation Model Framework</b><br>
      <font size="3"> Fleur Gaudfernau, Eléonore Blondiaux, Stéphanie Allassonniere, Erwan Le Pennec</font><br>
-      <a href="https://hal.archives-ouvertes.fr/hal-03620367v1" class="btn btn-dark-sm"   role="button" target="_blank">Read on HAL</a>
-      <a href="https://hal.archives-ouvertes.fr/hal-03620367v1"> <img src="https://img.shields.io/badge/Read on HAL-542d24.svg" /> </a> 
+      <a href="https://hal.archives-ouvertes.fr/hal-03620367v1"> <img src="https://img.shields.io/badge/Read on HAL-636a77.svg" /> </a> 
 
 <b>Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis</b><br>
      <font size="3"> Fleur Gaudfernau, Eléonore Blondiaux, Stéphanie Allassonniere</font><br>
-      <a href="https://hal.archives-ouvertes.fr/hal-03546165v1/"> <img src="https://img.shields.io/badge/Read on HAL-542d24.svg" /> </a>
+      <a href="https://hal.archives-ouvertes.fr/hal-03546165v1/"> <img src="https://img.shields.io/badge/Read on HAL-636a77.svg" /> </a>
 
 <hr style="border:1px solid #2b6777"/>
 
