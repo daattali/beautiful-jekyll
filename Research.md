@@ -11,7 +11,7 @@ display_categories: [work]
     
 ### Preprints
     
-<b><a href="https://hal.archives-ouvertes.fr/hal-03620367v1"> <img src="https://img.shields.io/badge/Read on HAL-542d24.svg" /> </a> Wavelet-Based Multiscale Initial Flow For Improved Atlas Estimation in the Large Diffeomorphic Deformation Model Framework</b><br>
+<b>Wavelet-Based Multiscale Initial Flow For Improved Atlas Estimation in the Large Diffeomorphic Deformation Model Framework</b><br>
      <font size="3"> Fleur Gaudfernau, Eléonore Blondiaux, Stéphanie Allassonniere, Erwan Le Pennec</font><br>
       <a href="https://hal.archives-ouvertes.fr/hal-03620367v1"> <img src="https://img.shields.io/badge/Read on HAL-636a77.svg" /> </a> 
 
