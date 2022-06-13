@@ -44,10 +44,10 @@ display_categories: [work]
 <dt>
     <img src="https://img.shields.io/badge/Oct. 2021-00a19e.svg"></dt>
     
-<dd>  Talk at the MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop: "Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis" <a href="https://pippiworkshop.github.io/"> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </a> <br> <a href="/assets/img/zoom_4.mp4"> Video of the presentation </a> </dd>
+<dd>  Talk at the MICCAI-PIPPI (Perinatal, Preterm and Paedriatric Image Analysis) workshop: <b>Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis</b> <a href="https://pippiworkshop.github.io/"> <img src="/assets/img/PIPPI-Logo2021.png" alt="drawing" width="110"/> </a> <br> <a href="/assets/img/zoom_4.mp4"> Video of the presentation </a> </dd>
 
 <dt><img src="https://img.shields.io/badge/June 2022-118ab2.svg"></dt>
-<dd>  Presentation at the Decision and Bayesian Computation Lab meeting (Institut Pasteur): "Wavelet-based multiscale atlas estimation" </dd>
+<dd>  Presentation at the Decision and Bayesian Computation Lab meeting (Institut Pasteur): <b>Wavelet-based multiscale atlas estimation</b> </dd>
 </dl>
  
 <hr style="border:1px solid #2b6777"/>
@@ -58,7 +58,7 @@ display_categories: [work]
 <dt>
     <img src="https://img.shields.io/badge/Sept. 2022-118ab2.svg"></dt>
     
-<dd>  Poster presentation at <a href="https://fitng.org/"> FIT'NG 2022</a> "A spatio-temporal atlas of the foetal brain with agenesis of the corpus callosum" </dd>
+<dd>  Poster presentation at <a href="https://fitng.org/"> FIT'NG 2022</a>: <b>A spatio-temporal atlas of the foetal brain with agenesis of the corpus callosum</b> </dd>
 
 </dl>
  
