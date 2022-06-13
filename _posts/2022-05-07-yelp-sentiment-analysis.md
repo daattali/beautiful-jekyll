@@ -1,4 +1,14 @@
 ---
+layout: post
+title: Yelp Sentiment Analysis
+subtitle: Supervised Learning - Classification
+gh-repo: leopqrz/leopqrz.github.io
+gh-badge: [star, fork, follow]
+tags: [NLP, Classification, Sentiment Analysis, Supervised Learning]
+comments: false
+---
+
+---
 
 <center> <h2> <span style='color:#DF7F00'> Yelp Sentiment Analysis </span> </h2> </center>
 
