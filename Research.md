@@ -55,6 +55,11 @@ display_categories: [work]
 ### Posters
 
 <dl>
+    <dt>
+    <img src="https://img.shields.io/badge/July. 2022-118ab2.svg"></dt>
+    
+<dd>  Poster presentation at <a href="https://fitng.org/"> PRAIRIE</a>: <b>Wavelet-based multiscale atlas estimation</b> </dd>
+
 <dt>
     <img src="https://img.shields.io/badge/Sept. 2022-118ab2.svg"></dt>
     
