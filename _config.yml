@@ -62,7 +62,7 @@ feed_show_tags: true
 post_search: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "diego,angulo,ramirez,ioi,obi,competitor,mipt,student,programmer,math,bolivia,cochabamba"
 
 # --- Colours / background image --- #
 
@@ -215,7 +215,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - screenshot.png
   - docs/
 
 plugins:
