@@ -73,15 +73,18 @@ Call me crazy, but that mail was the thing that broke me.<br/>
 After that mail I couldn't code, it was impossible for me to concentrate, or to even try and learn algorithms.<br/>
 ___I was completely broken.___
  
+# 2016
+
 I asked the national coordinator to take me out of the international team, as I didn't feel like competing again, I just wanted to rest for a while.
  
 ___I didn't participate in CIIC that year___, I watched one of my best friends doing some amazing work in IOI 2016, really something amazing.
  
-My programming teacher in my school asked me if I was going to compete again that year, and I wasn't sure, maybe to travel with my friends to the nationals.
+My programming teacher in my school asked me if I was going to compete again that year, and I wasn't sure, maybe I could compete only to travel with my friends to the nationals...
  
 That will be the final part of this story, which will obviously come out, in about a week.
  
-Thanks for reading, and I really hope you learnt something from my failures. Have a great week, drink some tea and maybe listen to [Airbag](https://youtu.be/-5O2-s32IQk), they are really something else!
+Thanks for reading, and I really hope you learnt something from my failures. <br/>
+Have a great week, drink some tea and maybe listen to [Airbag](https://youtu.be/-5O2-s32IQk), they are really something else!
  
 ___Sin dedicatoria esta semana, o que se yo, a Mafalda, por no comerse la sopa!___
 
