@@ -17,7 +17,7 @@ during the DSCI 591 Capstone Project course. Talks will be held from 2-3pm in DM
 | 2022/06/03 | Adina Williams, Meta | TBD |
 | 2022/06/10 | [Christo Kirov](#christo-kirov), Google | [Low-Resource Multilingual NLP at Google](#low-resource-multilingual-nlp-at-google) |
 | 2022/06/17 | Capstone Presentations (no seminar series talk this week)| |
-| 2022/06/24 | Maysam Emadi, Microsoft | TBD |
+| 2022/06/24 | [Maysam Emadi](#maysam-ehmadi), Microsoft | [Recommender Systems in Industry](#recommender-systems-in-industry) |
 
 ## Speaker Bio's
 
@@ -32,6 +32,9 @@ Carrie graduated from the UBC MDS program in 2019. Prior to MDS, she double majo
 
 #### Christo Kirov
 I'm currently a research software engineer at Google Research, working out of the NYC office. I'm interested in low-resource (both in terms of data and computational power) NLP in multilingual settings. I'm coming from a broad academic background - my undergraduate degree is in Computer Science and Linguistics, and I received my PhD in Cognitive Science from JHU. Afterwards, I worked as a PostDoc teaching NLP at the Georgetown Linguistics Department. Before moving to Google, I spent several years as a PostDoc at the JHU Center for Language and Speech Processing, working under a grant program called LORELEI (low-resource Languages for Emergent Incidents). A major focus was the development of resources for morphological processing, particularly UniMorph (<https://unimorph.github.io/>).
+
+#### Maysam Ehmadi
+Maysam Emadi is a senior data & applied scientist within the News & Feeds team at Microsoft Vancouver. Before starting his career in data science, he obtained his PhD in theoretical particle physics from Simon Fraser University. Maysam’s experience in building recommender systems goes back to his time at Plenty of Fish where he worked on matching algorithms for the popular online dating platform.
 
 ## Abstracts
 
@@ -52,4 +55,7 @@ by Christo Kirov, Google
 
 As more and more users around the world access the Internet, especially on their smartphones, it becomes imperative to enable seamless interaction in their native language (see nextbillionusers.google). Unfortunately, support still lags behind for many languages outside of English. I'll discuss some of the challenges of building NLP models for these smaller languages for tasks such as language identification, translation, transliteration, and language modeling. In many cases, the development of new datasets (including open source efforts like UniMorph, Universal Dependencies, and Google's own Dakshina Dataset) plays a critical role in making progress.
 
+#### Recommender Systems in Industry
+by Maysam Emadi
 
+Recommender Systems have become increasingly ubiquitous in recent decades with billions of people interacting with them daily. This talk begins with a brief introduction to RecSys and some of the commonly used methods for building them. The focus will be on aspects that are different from the standard ML problems you are familiar with, particularly on nuances of evaluating RecSys. We then highlight some of the practical challenges of going beyond recommender models and towards deploying large scale recommender systems such as Microsoft Start. We finish with an example of using deep learning to build user representations for content recommendation.
