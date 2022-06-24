@@ -17,14 +17,14 @@ thumbnail: /assets/img/posts/detrak/detrak.jpeg
 cover-img: /assets/img/posts/detrak/detrak.jpeg
 thumbnail-img: /assets/img/posts/detrak/detrak.jpeg
 share-img: /assets/img/posts/detrak/detrak.jpeg
-last-updated: '2022-05-29T18:42:00.000+02:00'
+last-updated: '2022-06-24T18:42:00.000+02:00'
 ---
 
 Some weeks ago, to end an evening of board gaming, I was introduced to the Knizia roll and write called [Criss Cross](https://boardgamegeek.com/boardgame/220988/criss-cross) (or [Détrak](https://www.gigamic.com/jeu/detrak) here in France). A fascinating two dimensional dice placement game with very simple rules. As we left my friends place we discussed that it should be feasible to implement a simple AI for the game. So, when I got home, I started the process...
 
 ## Basic overview
 
-The game is played on a grid of 5 by 5 squares, each round two dice are rolled and all players copies them on the grid according to some placement rules (that I will get back to). At the end of the game, after 12 rolls, each line scores points according to similar dice next to each other along the vertical and horizontal lines. (12 times 2 is, of course, 24, not 25, but each player start with a random die face inscribed in the upper left corner of their grid.) One of the most interesting design decisions here is the points table. For a sequence of 2 equal dice, you score 2, for 3 you score 3, for 4 it's 8 and for 5 it's 10. We played with the "advanced" rules that say that one of the diagonals (the one without the pre-inscribed dice) also counts (twice!) and if you have no scoring combos on any line you lose -5 points.
+The game is played on a grid of 5 by 5 squares, each round two dice are rolled and all players copies them onto their own grid according to some placement rules (that I will get back to). At the end of the game, after 12 rolls, each line scores points according to equal dice next to each other along the vertical and horizontal lines. (12 times 2 is, of course, 24, not 25, but each player start with a random die face inscribed in the upper left corner of their grid.) One of the most interesting design decisions here is the points table. For a sequence of 2 equal dice, you score 2, for 3 you score 3, for 4 it's 8 and for 5 it's 10. We played with the "advanced" rules that say that one of the diagonals (the one without the pre-inscribed dice) also counts (twice!) and if you have no scoring combos on any line you lose -5 points.
 
 ## Scoring
 
@@ -101,7 +101,7 @@ The night I implemented this I added a bug to my code that did the scoring... co
 And it checks out:  
 
 $$ 
-2 * 5 * \frac{\sum_{k=1}^6 k}{6} + \frac{12}{10} * (-6.3) \approx 27 
+2 * 5 * \frac{\sum_{k=1}^6 k}{6} + \frac{12}{10} * (-6.3) \approx 27
 $$
 
 ## Other experiments
