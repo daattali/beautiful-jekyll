@@ -21,6 +21,11 @@ common-js:
 
 <!DOCTYPE html>
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
+{% if page.use_math %}
+<script type="text/javascript" async
+ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+{% endif %}
 <!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
 {% include head.html %}
 

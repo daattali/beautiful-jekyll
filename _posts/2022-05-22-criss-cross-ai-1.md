@@ -4,6 +4,7 @@ title: Criss Cross AI – Part 1
 subtitle: Scoring
 date: '2022-05-22T21:42:00.007+02:00'
 author: Morten
+use_math: true
 tags:
 - Programming
 - source code
@@ -97,11 +98,11 @@ And, we can (mat)plot(lib) it like so:
 
 The night I implemented this I added a bug to my code that did the scoring... completely wrong... I ended up with a mean score of about 27(!) for these random grids -- instead of negative 6.3. I was too tired to realise that that was _way_ too high, but not too tired to fire off an email to the player that scored 20 -- twice! [Monkeys and Shakespear](https://en.wikipedia.org/wiki/Infinite_monkey_theorem) and everything! The scores were even a nice Gaussian -- with hardly any noise at all... When revisiting it another day I realised that I had forgotten the **score_line()** part of my scoring function for the diagonal... That meant that, basically the whole score was driven by the _sum_ of the dice on the diagonal. D'Oh!
 
-And it checks out:
+And it checks out:  
 
-```python
-(2 * np.mean(range(1,7)) * 5 + (-6.3/10) * 12) =~ 27
-```
+$$ 
+\frac{\sum_{k=1}^6 k}{6}*5*2 + \left( \frac{-6.3}{10} \right) * 12 \approx 27 
+$$
 
 ## Other experiments
 
