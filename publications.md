@@ -53,38 +53,37 @@ Previous works have shown that differentiable physics simulators provide gradien
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
-            <img src="../pics/rss2022logo.png" img width="250">
+            <img src="../pics/rss2022medor.gif" img width="250">
         </td>
-        <td><a href="">Mesh-based Dynamics with Occlusion Reasoning for Cloth Manipulation</a><br>
+        <td><a href="https://sites.google.com/view/occlusion-reason/home">Mesh-based Dynamics with Occlusion Reasoning for Cloth Manipulation</a><br>
             <div class="pubauthor">
                 Zixuan Huang, Xingyu Lin, David Held<br>
             </div>
             <div id="bib2022occnet" style="display:none">
                 <blockquote>
-                    <pre>@inproceedings{
-    lin2022diffskill,
-    title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
-    author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
-    booktitle={International Conference on Learning Representations},
-    year={2022},
-    url={https://openreview.net/forum?id=Kef8cKdHWpP}}
+                    <pre>@inproceedings{huang2022medor,
+            title={Mesh-based Dynamics Model with Occlusion Reasoning for Cloth Manipulation},
+            author={Huang, Zixuan and Lin, Xingyu and Held,David},
+            booktitle={Robotics: Science and Systems (RSS)},
+            year={2022}
+       }
 
                     </pre>
                 </blockquote>
             </div>
             <div id="abs2022occnet" style="display:none">
                 <blockquote>
-                    We consider the problem of sequential robotic manipulation of deformable objects using tools.
-    Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. 
+                   Self-occlusion is challenging for cloth manipulation, as it makes it difficult to estimate the full state of the cloth. Ideally, a robot trying to unfold a crumpled or folded cloth should be able to reason about the cloth's occluded regions.
+We leverage recent advances in pose estimation for cloth to build a system that uses explicit occlusion reasoning to unfold a crumpled cloth. Specifically, we first learn a model to reconstruct the mesh of the cloth. However, the model will likely have errors due to the complexities of the cloth configurations and due to ambiguities from occlusions.  Our main insight is that we can further refine the predicted reconstruction by performing test-time finetuning with self-supervised losses. The obtained reconstructed mesh allows us to use a mesh-based dynamics model for planning while reasoning about occlusions. We evaluate our system both on cloth flattening as well as on  cloth canonicalization, in which the objective is to manipulate the cloth into a canonical pose. Our experiments show that our method significantly outperforms prior methods that do not explicitly account for occlusions or perform test-time optimization.
                 
                 </blockquote>
             </div>
             <div class="pubjournal">Robotics: Science and Systems (RSS), 2022
             <div style="font-size:small">
-                <!--a href="https://sites.google.com/view/iclr2022occnet">[Project Page]</a>
+                <a href="https://sites.google.com/view/occlusion-reason/home">[Project Page]</a>
                 <a href="javascript:copy(div2022occnet, bib2022occnet)">[Bibtex]</a>
                 <a href="javascript:copy(div2022occnet, abs2022occnet)">[Abstract]</a>
-                <a href="https://openreview.net/pdf?id=Kef8cKdHWpP">[PDF]</a-->
+                <a href="https://arxiv.org/abs/2206.02881">[PDF]</a>
             </div>
             <div id="div2022occnet" class="pubInfo"></div>
             </div>
