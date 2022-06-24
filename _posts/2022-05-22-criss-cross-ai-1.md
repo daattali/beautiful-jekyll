@@ -101,7 +101,7 @@ The night I implemented this I added a bug to my code that did the scoring... co
 And it checks out:  
 
 $$ 
-\frac{\sum_{k=1}^6 k}{6}*5*2 + \left( \frac{-6.3}{10} \right) * 12 \approx 27 
+2 * 5 * \frac{\sum_{k=1}^6 k}{6} + \frac{12}{10} * (-6.3) \approx 27 
 $$
 
 ## Other experiments
