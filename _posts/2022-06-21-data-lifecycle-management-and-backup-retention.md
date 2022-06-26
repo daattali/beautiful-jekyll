@@ -25,7 +25,7 @@ Data management lifecycle links to the concept of the CIA triad, and I don't mea
 
 ## What is Backup Retention?
 
-Now that we have a better idea about data lifecycle management, let's look at Backup retention. This should be familiar to more readers as backup vendors such as Nakivo have offered backup retention settings for years in their products. By backup retention we really mean "backup retention policy". Except in very specific use cases that don't require storing backups such as [blockchain](https://insidebitcoins.com/) implementations, a backup retention policy helps the organization to be ready in case of data loss or ransomware attack by enforcing techniques such as:
+Now that we have a better idea about data lifecycle management, let's look at Backup retention. This should be familiar to more readers as backup vendors such as Nakivo have offered backup retention settings for years in their products. By backup retention we really mean "backup retention policy". Except in very specific use cases that don't require storing backups such as blockchain implementations, a backup retention policy helps the organization to be ready in case of data loss or ransomware attack by enforcing techniques such as:
 
 * **GFS Retention Policy**: The [Grandfather-Father-Son](https://www.nakivo.com/blog/gfs-retention-policy-explained/) retention policy is a rotation of daily backups as 'sons', weekly as 'fathers', and monthly as 'grandfathers'. The point of it is that, the more up to date the data, the more granularity you get for recovery purpose while saving storage space.
 
