@@ -8,85 +8,35 @@
 
 facebook:
   name: "Facebook"
-  baseURL: "https://www.facebook.com/"
+  baseURL: "https://www.facebook.com/0.mash.100"
   icon: "fa-facebook"
 
 github:
   name: "GitHub"
-  baseURL: "https://github.com/"
+  baseURL: "https://github.com/shafi-"
   icon: "fa-github"
 
 twitter:
   name: "Twitter"
-  baseURL: "https://twitter.com/"
+  baseURL: "https://twitter.com/bd_shafi"
   icon: "fa-twitter"
-
-reddit:
-  name: "Reddit"
-  baseURL: "https://reddit.com/u/"
-  icon: "fa-reddit"
 
 email:
   name: "Email me"
-  baseURL: "mailto:"
+  baseURL: "mailto:shafi.cse.buet@gmail.com"
   icon: "fa-envelope"
 
 linkedin:
   name: "LinkedIn"
-  baseURL: "https://linkedin.com/in/"
+  baseURL: "https://linkedin.com/in/md-abdullahil-shafi"
   icon: "fa-linkedin"
-
-xing:
-  name: "Xing"
-  baseURL: "https://www.xing.com/profile/"
-  icon: "fa-xing"
 
 stackoverflow:
   name: "StackOverflow"
-  baseURL: "https://stackoverflow.com/users/"
+  baseURL: "https://stackoverflow.com/users/2442877/shafi"
   icon: "fa-stack-overflow"
-
-snapchat:
-  name: "Snapchat"
-  baseURL: "https://www.snapchat.com/add/"
-  icon: "fa-snapchat-ghost"
-
-instagram:
-  name: "Instagram"
-  baseURL: "https://www.instagram.com/"
-  icon: "fa-instagram"
-
-youtube:
-  name: "YouTube"
-  baseURL: "https://www.youtube.com/"
-  icon: "fa-youtube"
-
-spotify:
-  name: "Spotify"
-  baseURL: "https://open.spotify.com/user/"
-  icon: "fa-spotify"
 
 telephone:
   name: "Phone"
   baseURL: "tel:"
   icon: "fa-phone"
-
-rss:
-  name: "RSS"
-  baseURL: "{{ '/feed.xml' | relative_url }}"
-  icon: "fa-rss"
-
-steam:
-  name: "Steam"
-  baseURL: "https://steamcommunity.com/id/"
-  icon: "fa-steam"
-
-twitch:
-  name: "Twitch"
-  baseURL: "https://www.twitch.tv/"
-  icon: "fa-twitch"
-
-yelp:
-  name: "Yelp"
-  baseURL: "https://{{ site.author.yelp }}.yelp.com"
-  icon: "fa-yelp"
