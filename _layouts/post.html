@@ -4,9 +4,9 @@ layout: base
 
 {% include header.html type="post" %}
 
-<div class="container">
+<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
 
       {% if page.gh-repo %}
         {% assign gh_split =  page.gh-repo | split:'/'  %}
@@ -31,20 +31,32 @@ layout: base
         </div>
       {% endif %}
 
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
       <article role="main" class="blog-post">
         {{ content }}
       </article>
 
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
-          Tags:
-          {% if site.link-tags %}
+          <span>Tags:</span>
           {% for tag in page.tags %}
             <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
           {% endfor %}
-          {% else %}
-            {{ page.tags | join: ", " }}
-          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
         </div>
       {% endif %}
 
@@ -52,31 +64,19 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
-      <ul class="pager blog-pager">
+      <ul class="pagination blog-pager">
         {% if page.previous.url %}
-        <li class="previous">
-          <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+        <li class="page-item previous">
+          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">&larr; Previous Post</a>
         </li>
         {% endif %}
         {% if page.next.url %}
-        <li class="next">
-          <a href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+        <li class="page-item next">
+          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">Next Post &rarr;</a>
         </li>
         {% endif %}
       </ul>
-
-      {% if page.comments %}
-        <div class="disqus-comments">
-          {% include disqus.html %}
-        </div>
-          {% include fb-comment.html %}
-        <div class="staticman-comments">
-          {% include staticman-comments.html %}
-        </div>
-        <div class="justcomments-comments">
-          {% include just_comments.html %}
-        </div>
-      {% endif %}
+      {% include comments.html %}
     </div>
   </div>
 </div>
