@@ -11,15 +11,18 @@ Passionate about building technology based solutions, automate things.
 Loves to help others grow through mentoring.
 
 Has working expertise in
+  - Requirement Analysis | System architecture | Solution architecture
   - Typescript | Javascript | PHP | Python | C++
-  - NodeJS
+  - NodeJS |
   - Laravel | ExpressJS | NestJS | MeteorJS
   - Mongodb | MySQL | PostgreSQL
   - AWS | GCP | Azure
-  - Redis
-  - ElasticSearch
+  - Serverless
+  - Redis |
+  - ElasticSearch |
   - VueJS | ReactJS | NuxtJS | NestJS | AngularJS
-  - Android app development
+  - Android app development |
+  - Git
 
 ## Brief Job history
 
@@ -44,20 +47,21 @@ Has working expertise in
 
   Durbin Labs Limited is a Dhaka-based promising product-based start up working in software solutions for education, healthtech. Through the past years, it gained significant expertise in edutech and healttech.
 
-- Junior Software Engineer at [Durbin Labs Ltd](durbinlabs.com) | Mar'17 ~ July'17
-  
+- Junior Software Engineer at [Durbin Labs Ltd](durbinlabs.com) | Mar'17 ~ July'17 | Part time
+
   Durbin Labs Limited is a Dhaka-based promising product-based start up working in software solutions for education, healthtech. Through the past years, it gained significant expertise in edutech and healttech.
 
-- Android developer Intern at [Optimus Soft]()
+- Android developer Intern at [Optimus Soft]() | 2 months | Part time
 
   Optimus Soft was a Dhaka-based startup that worked in different sectors.
 
   I was involved in developing an Android app for the company.
 
-- Backend developer at [rOngin](rongin.com)
-
+- Backend developer at [rOngin](rongin.com) | Voluntary |
   rOngin is a volunteery organization working for betterment of the street-people specially the street-children.
   rOngin is a bengali word meaning *colorful* works to make the life colorful for those who are leading a *colorless* life.
   Also rOngin started a book sharing web application for everyone to share and borrow books. Along with other parts, I was involved in developing the backend of the web application.
 
-**all** your questions.
+### **all** your questions
+
+mailto:shafi.cse.buet@gmail.com
