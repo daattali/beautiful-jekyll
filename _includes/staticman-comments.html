@@ -1,4 +1,5 @@
 {% if site.staticman.repository and site.staticman.branch %}
+<div class="staticman-comments">
   <div class="page__comments">
     <!-- Start static comments -->
     <div class="js-comments">
@@ -24,7 +25,7 @@
         <div class="form-group">
           <label for="comment-form-message">{{ site.data.ui-text[site.locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label><br>
           <textarea type="text" rows="12" cols="36" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
-          <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
+          <div class="small form-text"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
         </div>
         <div class="form-group">
           <label for="comment-form-name">{{ site.data.ui-text[site.locale].comment_form_name_label | default: "Name" }} <small class="required">*</small></label>
@@ -38,7 +39,7 @@
           <label for="comment-form-url">{{ site.data.ui-text[site.locale].comment_form_website_label | default: "Website (optional)" }}</label>
           <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
         </div>
-        <div class="form-group hidden" style="display: none;">
+        <div class="form-group d-none" style="display: none;">
           <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
           <input type="hidden" name="options[slug]" value="{{ page.slug }}">
           <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
@@ -47,9 +48,9 @@
           {% if site.staticman.reCaptcha.secret %}<input type="hidden" name="options[reCaptcha][secret]" value="{{ site.staticman.reCaptcha.secret }}">{% endif %}
         </div>
         <!-- Start comment form alert messaging -->
-        <p class="hidden js-notice">
-          <strong class="js-notice-text-success hidden">{{ site.data.ui-text[site.locale].comment_success_msg | default: "Thanks for your comment! It will show on the site once it has been approved." }}</strong>
-          <strong class="js-notice-text-failure hidden">{{ site.data.ui-text[site.locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}</strong>
+        <p class="d-none js-notice alert">
+          <strong class="js-notice-text-success d-none">{{ site.data.ui-text[site.locale].comment_success_msg | default: "Thanks for your comment! It will show on the site once it has been approved." }}</strong>
+          <strong class="js-notice-text-failure d-none">{{ site.data.ui-text[site.locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}</strong>
         </p>
         <!-- End comment form alert messaging -->
         {% if site.staticman.reCaptcha.siteKey %}
@@ -58,8 +59,8 @@
           </div>
         {% endif %}
         <div class="form-group">
-          <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
-          <button type="submit" id="comment-form-submitted" tabindex="5" class="btn btn--primary btn--large hidden" disabled>{{ site.data.ui-text[site.locale].comment_btn_submitted | default: "Submitted" }}</button>
+          <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn-primary btn-lg">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
+          <button type="submit" id="comment-form-submitted" tabindex="5" class="btn btn-primary btn-lg d-none" disabled>{{ site.data.ui-text[site.locale].comment_btn_submitted | default: "Submitted" }}</button>
         </div>
       </form>
     </div>
@@ -74,8 +75,9 @@
   <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
   <script>
     if (typeof jQuery == 'undefined') {
-      document.write('<script src="{{ "/js/jquery-1.11.2.min.js" | relative_url }}"></scr' + 'ipt>');
+      document.write('<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></scr' + 'ipt>');
     }
   </script>
-  <script src="{{ "/js/staticman.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/staticman.js" | relative_url }}"></script>
+</div>
 {% endif %}

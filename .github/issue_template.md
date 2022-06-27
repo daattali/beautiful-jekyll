@@ -1,3 +1,3 @@
-Thank you for submitting an issue!
+Please only submit feature suggestions or bug reports if you believe something is broken.
 
-Please only submit bug reports or feature suggestions. Please do not submit support requests and general help questions in this forum.
+If you need help, or if you enjoy Beautiful Jekyll and want to support it, please upgrade to one of our plans: https://beautifuljekyll.com/plans/
