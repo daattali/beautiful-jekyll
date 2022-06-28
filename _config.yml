@@ -23,6 +23,7 @@ navbar-links:
   Home: "/"
   Members: "members"
   Publications: "publications"
+  Demos: "demos"
   # About Me: "aboutme"
   # Resources:
     # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
@@ -195,6 +196,7 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+  - vendor
 
 # prose.io config
 prose:
