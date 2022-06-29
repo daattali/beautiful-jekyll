@@ -21,8 +21,7 @@ title: ""
 
 ### Working Papers
 
-[Exporting Capital, Importing Law](assets/kalyanpur_thrall_v3.pdf) (with Nikhil Kalyanpur)<br>
-**_American Political Science Review_**, Revise and Resubmit.
+[Exporting Capital, Importing Law](assets/kalyanpur_thrall_v3.pdf) (with Nikhil Kalyanpur)
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
 David A. Lake Award for best paper presented at IPES 2020. Under Review.
