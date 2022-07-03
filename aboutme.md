@@ -8,5 +8,5 @@ Fawaz Ghali is a Developer Advocate at Hazelcast with 20+ years’ experience in
 
 ### Fun fact
 
-I enjoy taking up challanges, no matter how small or big the challanges are, I took up running in 2018 (I've never run in my life before), and a year later, in 2019 I ran **30 Marathons in 30 Days** to support Alzheimer’s Research UK.
+I enjoy taking up challanges, no matter how big or small. I took up running in 2018 (I've never run in my life before), and a year later, in 2019 I ran **30 Marathons in 30 Days** to support Alzheimer’s Research UK.
 
