@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Fawaz Ghali
-subtitle: Real-Time Intelligent Applications
+subtitle: Mastering Real-Time Intelligent Applications
 ---
 ![Fawaz Ghali](/assets/img/fawaz_ghali.jpg "Fawaz Ghali")
 
