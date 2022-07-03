@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Fawaz Ghali
-cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
 subtitle: Real-Time Intelligent Applications
 ---
 
