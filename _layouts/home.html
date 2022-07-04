@@ -9,8 +9,8 @@ layout: page
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
   {% for post in posts %}
-  <li>
-    <article class="post-preview">
+  <li class="post-preview">
+    <article>
 
       {%- capture thumbnail -%}
         {% if post.thumbnail-img %}
