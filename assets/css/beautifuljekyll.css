@@ -432,6 +432,10 @@ footer .footer-custom-content {
 
 /* --- Post preview (feed) --- */
 
+.posts-list {
+    margin: 0;
+}
+
 .post-preview {
   padding: 1.25rem 0;
   border-bottom: 1px solid #eee;
@@ -560,6 +564,10 @@ footer .footer-custom-content {
 .blog-tags span {
   color: {{ site.text-col | default: "#404040" }};
   opacity: 0.8;
+}
+
+.blog-tags .list-inline-item {
+  margin-right: 0;
 }
 
 .blog-tags a {
