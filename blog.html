@@ -30,16 +30,16 @@ tr:nth-child(even) {
 
 <table>
   <tr>
-    <th WIDTH="60%">Title</th>
-    <th WIDTH="20%">Location</th>
-    <th WIDTH="20%">Date</th>
+    <th style="width:70%">Title</th>
+    <th style="width:15%">Location</th>
+    <th style="width:15%">Date</th>
   </tr>
 
   {% for post in site.posts %}
    <tr>
-    <td WIDTH="60%"> <a href="{{ post.url }}">{{ post.title }}</a></td>
-    <td WIDTH="20%">{{ post.location}} </td>
-    <td WIDTH="20%">{{ post.date | date_to_long_string }}</td>
+    <td style="width:70%"> <a href="{{ post.url }}">{{ post.title }}</a></td>
+    <td style="width:15%">{{ post.location}} </td>
+    <td style="width:15%">{{ post.date | date_to_long_string }}</td>
   </tr>  
   {% endfor %}
   
