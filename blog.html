@@ -2,12 +2,53 @@
 layout: default
 title: Blog
 ---
-<p>Here are my blog posts in reverse chronological order:</p>
 
-<ul>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Location</th>
+    <th>Date</th>
+  </tr>
+
   {% for post in site.posts %}
-    <li class="spaced">
-      <a href="{{ post.url }}">{{ post.title }}</a> {{ post.location}} || {{ post.date | date_to_long_string }}
-    </li>
+   <tr>
+    <td> <a href="{{ post.url }}">{{ post.title }}</a></td>
+    <td>{{ post.location}} </td>
+    <td>{{ post.date | date_to_long_string }}</td>
+  </tr>  
   {% endfor %}
-</ul>
+  
+</table>
+
+</body>
+</html>
+
+
+
+
+
