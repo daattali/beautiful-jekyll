@@ -57,7 +57,7 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
         </td>
         <td>Learning to Singulate Layers of Cloth based on Tactile Feedback<br>
             <div class="pubauthor">
-            Sashank Tirumala, Thomas Weng, Daniel Seita, Oliver Kroemer, Zeynep Temel, David Held<br>
+            Sashank Tirumala*, Thomas Weng*, Daniel Seita*, Oliver Kroemer, Zeynep Temel, David Held<br>
             </div>
             <div id="bib2022flowbot3D" style="display:none">
                 <blockquote>
