@@ -14,6 +14,45 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/ECCV-logo3.png" img width="250">
+        </td>
+        <td>Differentiable Raycasting for Self-supervised Occupancy Forecasting<br>
+            <div class="pubauthor">
+            Tarasha Khurana*, Peiyun Hu*, Achal Dave, Jason Ziglar, David Held, Deva Ramanan<br>
+            </div>
+            <div id="bib2022flowbot3D" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{EisnerZhang2022FLOW,
+            title={FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects},
+            author={Eisner*, Ben and Zhang*, Harry and Held,David},
+            booktitle={Robotics: Science and Systems (RSS)},
+            year={2022}
+       }
+
+            </pre>
+        </blockquote>
+    </div>
+    <div id="abs2022flowbot3D" style="display:none">
+        <blockquote>
+            We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable a robot to articulate unseen classes of objects. We propose a vision-based system that learns to predict the potential motions of the parts of a variety of articulated objects to guide downstream motion planning of the system to articulate the objects. To predict the object motions, we train a neural network to output a dense vector field representing the point-wise motion direction of the points in the point cloud under articulation. We then deploy an analytical motion planner based on this vector field to achieve a policy that yields maximum articulation. We train the vision system entirely in simulation, and we demonstrate the capability of our system to generalize to unseen object instances and novel categories in both simulation and the real world, deploying our policy on a Sawyer robot with no finetuning. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments.
+
+        </blockquote>
+    </div>
+    <div class="pubjournal">European Conference on Computer Vision (ECCV), 2022
+    <!--div style="font-size:small">
+        <a href="https://sites.google.com/view/articulated-flowbot-3d/home#h.xrrj1zv4o44a">[Project Page]</a>
+        <a href="javascript:copy(div2022flowbot3D, bib2022flowbot3D)">[Bibtex]</a>
+        <a href="javascript:copy(div2022flowbot3D, abs2022flowbot3D)">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2205.04382.pdf">[PDF]</a>
+    </div-->
+    <div id="div2022flowbot3D" class="pubInfo"></div>
+    </div>
+    <br>
+</td>
+</tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
             <img src="../pics/iros2022_logo.png" img width="250">
         </td>
         <td>Learning to Singulate Layers of Cloth based on Tactile Feedback<br>
