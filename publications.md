@@ -1,15 +1,172 @@
 ---
 layout: page
 title: Publications
-subtitle: 
+subtitle:
 ---
 
 Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qig6iu1pL7XMSm0XzmdhTXJysk8/edit#) to see our research highlights! <br>
 Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 2022) on some of our work.
 
-<!--Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work.--> 
+<!--Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work.-->
 
 <table cellpadding="10" width="100%">
+
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/ECCV-logo3.png" img width="250">
+        </td>
+        <td>Differentiable Raycasting for Self-supervised Occupancy Forecasting<br>
+            <div class="pubauthor">
+            Tarasha Khurana*, Peiyun Hu*, Achal Dave, Jason Ziglar, David Held, Deva Ramanan<br>
+            </div>
+            <div id="bib2022flowbot3D" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{EisnerZhang2022FLOW,
+            title={FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects},
+            author={Eisner*, Ben and Zhang*, Harry and Held,David},
+            booktitle={Robotics: Science and Systems (RSS)},
+            year={2022}
+       }
+
+            </pre>
+        </blockquote>
+    </div>
+    <div id="abs2022flowbot3D" style="display:none">
+        <blockquote>
+            We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable a robot to articulate unseen classes of objects. We propose a vision-based system that learns to predict the potential motions of the parts of a variety of articulated objects to guide downstream motion planning of the system to articulate the objects. To predict the object motions, we train a neural network to output a dense vector field representing the point-wise motion direction of the points in the point cloud under articulation. We then deploy an analytical motion planner based on this vector field to achieve a policy that yields maximum articulation. We train the vision system entirely in simulation, and we demonstrate the capability of our system to generalize to unseen object instances and novel categories in both simulation and the real world, deploying our policy on a Sawyer robot with no finetuning. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments.
+
+        </blockquote>
+    </div>
+    <div class="pubjournal">European Conference on Computer Vision (ECCV), 2022
+    <!--div style="font-size:small">
+        <a href="https://sites.google.com/view/articulated-flowbot-3d/home#h.xrrj1zv4o44a">[Project Page]</a>
+        <a href="javascript:copy(div2022flowbot3D, bib2022flowbot3D)">[Bibtex]</a>
+        <a href="javascript:copy(div2022flowbot3D, abs2022flowbot3D)">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2205.04382.pdf">[PDF]</a>
+    </div-->
+    <div id="div2022flowbot3D" class="pubInfo"></div>
+    </div>
+    <br>
+</td>
+</tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/iros2022-singulating-layers-fabric-reskin-400x210.gif" img width="250">
+        </td>
+        <td>Learning to Singulate Layers of Cloth based on Tactile Feedback<br>
+            <div class="pubauthor">
+            Sashank Tirumala*, Thomas Weng*, Daniel Seita*, Oliver Kroemer, Zeynep Temel, David Held<br>
+            </div>
+            <div id="bib2022reskinfabric" style="display:none">
+                <blockquote>
+                    <pre>
+@inproceedings{tirumala2022,
+title={Learning to Singulate Layers of Cloth based on Tactile Feedback},
+author={Sashank Tirumala and Thomas Weng and Daniel Seita and Oliver Kroemer and Zeynep Temel and David Held},
+booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+year={2022},
+}
+                </pre>
+            </blockquote>
+        </div>
+        <div id="abs2022reskinfabric" style="display:none">
+            <blockquote>
+	Robotic manipulation of cloth has applications ranging from fabrics manufacturing to handling blankets and laundry. Cloth manipulation is challenging for robots largely due to their high degrees of freedom, complex dynamics, and severe self-occlusions when in folded or crumpled configurations. Prior work on robotic manipulation of cloth relies primarily on vision sensors alone, which may pose challenges for fine-grained manipulation tasks such as grasping a desired number of cloth layers from a stack of cloth. In this paper, we propose to use tactile sensing for cloth manipulation; we attach a tactile sensor (ReSkin) to one of the two fingertips of a Franka robot and train a classifier to determine whether the robot is grasping a specific number of cloth layers. During test-time experiments, the robot uses this classifier as part of its policy to grasp one or two cloth layers using tactile feedback to determine suitable grasping points. Experimental results over 180 physical trials suggest that the proposed method outperforms baselines that do not use tactile feedback and has a better generalization to unseen fabrics compared to methods that use image classifiers. 
+            </blockquote>
+        </div>
+        <div class="pubjournal">International Conference on Intelligent Robots and Systems (IROS), 2022
+        <div style="font-size:small">
+            <a href="https://sites.google.com/view/reskin-cloth/home">[Project Page]</a>
+            <a href="javascript:copy(div2022reskinfabric, bib2022reskinfabric)">[Bibtex]</a>
+            <a href="javascript:copy(div2022reskinfabric, abs2022reskinfabric)">[Abstract]</a>
+            [arXiv]
+        </div>
+        <div id="div2022reskinfabric" class="pubInfo"></div>
+        </div>
+        <br>
+    </td>
+    </tr>
+    
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/iros2022_logo.png" img width="250">
+        </td>
+        <td>Learning Closed-loop Dough Manipulation using a Differentiable Reset Module<br>
+            <div class="pubauthor">
+            Carl Qi, Xingyu Lin, David Held<br>
+            </div>
+            <div id="bib2022flowbot3D" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{EisnerZhang2022FLOW,
+            title={FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects},
+            author={Eisner*, Ben and Zhang*, Harry and Held,David},
+            booktitle={Robotics: Science and Systems (RSS)},
+            year={2022}
+       }
+
+            </pre>
+        </blockquote>
+    </div>
+    <div id="abs2022flowbot3D" style="display:none">
+        <blockquote>
+            We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable a robot to articulate unseen classes of objects. We propose a vision-based system that learns to predict the potential motions of the parts of a variety of articulated objects to guide downstream motion planning of the system to articulate the objects. To predict the object motions, we train a neural network to output a dense vector field representing the point-wise motion direction of the points in the point cloud under articulation. We then deploy an analytical motion planner based on this vector field to achieve a policy that yields maximum articulation. We train the vision system entirely in simulation, and we demonstrate the capability of our system to generalize to unseen object instances and novel categories in both simulation and the real world, deploying our policy on a Sawyer robot with no finetuning. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments.
+
+        </blockquote>
+    </div>
+    <div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference on Intelligent Robots and Systems (IROS), 2022
+    <!--div style="font-size:small">
+        <a href="https://sites.google.com/view/articulated-flowbot-3d/home#h.xrrj1zv4o44a">[Project Page]</a>
+        <a href="javascript:copy(div2022flowbot3D, bib2022flowbot3D)">[Bibtex]</a>
+        <a href="javascript:copy(div2022flowbot3D, abs2022flowbot3D)">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2205.04382.pdf">[PDF]</a>
+    </div-->
+    <div id="div2022flowbot3D" class="pubInfo"></div>
+    </div>
+    <br>
+    </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/iros2022_logo.png" img width="250">
+        </td>
+        <td>Visual Haptic Reasoning: Estimating Contact Forces by Observing Deformable Object Interactions<br>
+            <div class="pubauthor">
+            Yufei Wang, David Held, Zackory Erickson<br>
+            </div>
+            <div id="bib2022flowbot3D" style="display:none">
+                <blockquote>
+                    <pre>@inproceedings{EisnerZhang2022FLOW,
+            title={FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects},
+            author={Eisner*, Ben and Zhang*, Harry and Held,David},
+            booktitle={Robotics: Science and Systems (RSS)},
+            year={2022}
+       }
+
+            </pre>
+        </blockquote>
+    </div>
+    <div id="abs2022flowbot3D" style="display:none">
+        <blockquote>
+            We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable a robot to articulate unseen classes of objects. We propose a vision-based system that learns to predict the potential motions of the parts of a variety of articulated objects to guide downstream motion planning of the system to articulate the objects. To predict the object motions, we train a neural network to output a dense vector field representing the point-wise motion direction of the points in the point cloud under articulation. We then deploy an analytical motion planner based on this vector field to achieve a policy that yields maximum articulation. We train the vision system entirely in simulation, and we demonstrate the capability of our system to generalize to unseen object instances and novel categories in both simulation and the real world, deploying our policy on a Sawyer robot with no finetuning. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments.
+
+        </blockquote>
+    </div>
+    <div class="pubjournal">International Conference on Intelligent Robots and Systems (IROS), 2022
+    <!--div style="font-size:small">
+        <a href="https://sites.google.com/view/articulated-flowbot-3d/home#h.xrrj1zv4o44a">[Project Page]</a>
+        <a href="javascript:copy(div2022flowbot3D, bib2022flowbot3D)">[Bibtex]</a>
+        <a href="javascript:copy(div2022flowbot3D, abs2022flowbot3D)">[Abstract]</a>
+        <a href="https://arxiv.org/pdf/2205.04382.pdf">[PDF]</a>
+    </div-->
+    <div id="div2022flowbot3D" class="pubInfo"></div>
+    </div>
+    <br>
+    </td>
+    </tr>
+
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
@@ -33,9 +190,8 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
             </div>
             <div id="abs2022flowbot3D" style="display:none">
                 <blockquote>
-                    We consider the problem of sequential robotic manipulation of deformable objects using tools.
-Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable the robot to articulate unseen classes of objects. We propose a vision-based system that learns to predict the potential motions of the parts of a variety of articulated objects to guide downstream motion planning  of the system to  articulate the objects. To predict the object motions, we train a network to output a dense vector field representing the point-wise motion direction of the points in the point cloud under articulation. The system then will deploy an analytical motion planning policy based on this vector field to achieve a grasp that yields maximum articulation. We train the vision system in simulation.  We then demonstrate the capability of our system to generalize to  unseen object instances and novel categories by testing our network in both simulation and real world, deployed on a Sawyer robot without retraining.
-                
+                    We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable a robot to articulate unseen classes of objects. We propose a vision-based system that learns to predict the potential motions of the parts of a variety of articulated objects to guide downstream motion planning of the system to articulate the objects. To predict the object motions, we train a neural network to output a dense vector field representing the point-wise motion direction of the points in the point cloud under articulation. We then deploy an analytical motion planner based on this vector field to achieve a policy that yields maximum articulation. We train the vision system entirely in simulation, and we demonstrate the capability of our system to generalize to unseen object instances and novel categories in both simulation and the real world, deploying our policy on a Sawyer robot with no finetuning. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments.
+
                 </blockquote>
             </div>
             <div class="pubjournal">Robotics: Science and Systems (RSS), 2022 - <award>Best Paper Finalist</award>
@@ -76,6 +232,7 @@ Previous works have shown that differentiable physics simulators provide gradien
                    Self-occlusion is challenging for cloth manipulation, as it makes it difficult to estimate the full state of the cloth. Ideally, a robot trying to unfold a crumpled or folded cloth should be able to reason about the cloth's occluded regions.
                     We leverage recent advances in pose estimation for cloth to build a system that uses explicit occlusion reasoning to unfold a crumpled cloth. Specifically, we first learn a model to reconstruct the mesh of the cloth. However, the model will likely have errors due to the complexities of the cloth configurations and due to ambiguities from occlusions.  Our main insight is that we can further refine the predicted reconstruction by performing test-time finetuning with self-supervised losses. The obtained reconstructed mesh allows us to use a mesh-based dynamics model for planning while reasoning about occlusions. We evaluate our system both on cloth flattening as well as on  cloth canonicalization, in which the objective is to manipulate the cloth into a canonical pose. Our experiments show that our method significantly outperforms prior methods that do not explicitly account for occlusions or perform test-time optimization.
                 
+
                 </blockquote>
             </div>
             <div class="pubjournal">Robotics: Science and Systems (RSS), 2022
@@ -102,6 +259,7 @@ Previous works have shown that differentiable physics simulators provide gradien
             <div id="bib2022diffskill" style="display:none">
                 <blockquote>
                     <pre>@inproceedings{
+
 lin2022diffskill,
 title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
 author={Xingyu Lin and Zhiao Huang and Yunzhu Li and David Held and Joshua B. Tenenbaum and Chuang Gan},
@@ -115,8 +273,9 @@ url={https://openreview.net/forum?id=Kef8cKdHWpP}}
             <div id="abs2022diffskill" style="display:none">
                 <blockquote>
                     We consider the problem of sequential robotic manipulation of deformable objects using tools.
-Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer. 
-                
+
+Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulations. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills for using each individual tool from a gradient-based optimizer and then learn a neural skill abstractor from the demonstration videos; Finally, we plan over the skills to solve the long-horizon task. We show the advantages of our method in a new set of sequential deformable object manipulation tasks over previous reinforcement learning algorithms and the trajectory optimizer.
+
                 </blockquote>
             </div>
             <div class="pubjournal">International Conference on Learning Representations (ICLR), 2022
@@ -131,7 +290,7 @@ Previous works have shown that differentiable physics simulators provide gradien
             <br>
         </td>
     </tr>
-    
+
     <tr>
         <td class="pubimg" width="250" height="100">
             <img src="../pics/pouring.gif" img width="250" height="125">
@@ -143,10 +302,12 @@ Previous works have shown that differentiable physics simulators provide gradien
             <div id="bib2022pouring" style="display:none">
                 <blockquote>
                     <pre>@inproceedings{icra2022pouring,
+
 title={Self-supervised Transparent Liquid Segmentation for Robotic Pouring},
 author={Gautham Narayan Narasimhan, Kai Zhang, Ben Eisner, Xingyu Lin, David Held},
 booktitle={International Conference on Robotics and Automation (ICRA)},
 year={2022}}
+
 </pre>
 
                 </blockquote>
@@ -172,8 +333,8 @@ year={2022}}
             <br>
         </td>
     </tr>
- 
-    
+
+
     <tr>
         <td class="pubimg" width="250" height="100">
             <img src="../pics/ossid.jpg" img width="250" height="100">
@@ -184,6 +345,7 @@ year={2022}}
             </div>
             <div id="bib2022ossid" style="display:none">
                 <blockquote>
+
 <pre>@ARTICLE{ral2022ossid,
   author={Gu, Qiao and Okorn, Brian and Held, David},
   journal={IEEE Robotics and Automation Letters}, 
@@ -194,6 +356,7 @@ year={2022}}
   pages={3022-3029},
   doi={10.1109/LRA.2022.3145488}}
 </pre>
+
                 </blockquote>
             </div>
             <div id="abs2022ossid" style="display:none">
@@ -225,23 +388,27 @@ year={2022}}
             </div>
             <div id="bib2021bmvc" style="display:none">
                     <blockquote>
+
 <pre>@article{mittal2021self,
   title={Self-Supervised Point Cloud Completion via Inpainting},
   author={Mittal, Himangi and Okorn, Brian and Jangid, Arpit and Held, David},
   journal={British Machine Vision Conference (BMVC), 2021},
   year={2021}
 }</pre>
+
                 </blockquote>
             </div>
             <div id="abs2021bmvc" style="display:none">
                 <blockquote>
-                     When navigating in urban environments, many of the objects that need to be tracked and avoided are heavily occluded. Planning and tracking using these partial scans can be challenging. The aim of this work is to learn to complete these partial point clouds, giving us a full understanding of the object's geometry using only partial observations. Previous methods achieve this with the help of complete, ground-truth annotations of the target objects, which are available only for simulated datasets. However, such ground truth is unavailable for real-world LiDAR data. In this work, we present a self-supervised point cloud completion algorithm, PointPnCNet, which is trained only on partial scans without assuming access to complete, ground-truth annotations. Our method achieves this via inpainting. We remove a portion of the input data and train the network to complete the missing region. As it is difficult to determine which regions were occluded in the initial cloud and which were synthetically removed, our network learns to complete the full cloud, including the missing regions in the initial partial cloud. We show that our method outperforms previous unsupervised and weakly-supervised methods on both the synthetic dataset, ShapeNet, and real-world LiDAR dataset, Semantic KITTI. 
+                     When navigating in urban environments, many of the objects that need to be tracked and avoided are heavily occluded. Planning and tracking using these partial scans can be challenging. The aim of this work is to learn to complete these partial point clouds, giving us a full understanding of the object's geometry using only partial observations. Previous methods achieve this with the help of complete, ground-truth annotations of the target objects, which are available only for simulated datasets. However, such ground truth is unavailable for real-world LiDAR data. In this work, we present a self-supervised point cloud completion algorithm, PointPnCNet, which is trained only on partial scans without assuming access to complete, ground-truth annotations. Our method achieves this via inpainting. We remove a portion of the input data and train the network to complete the missing region. As it is difficult to determine which regions were occluded in the initial cloud and which were synthetically removed, our network learns to complete the full cloud, including the missing regions in the initial partial cloud. We show that our method outperforms previous unsupervised and weakly-supervised methods on both the synthetic dataset, ShapeNet, and real-world LiDAR dataset, Semantic KITTI.
                 </blockquote>
             </div>
             <div class="pubjournal">British Machine Vision Conference (BMVC), 2021 - <award>Oral presentation</award> (Selection rate 3.3%)</div>
             <div style="font-size:small">
                 <a href="https://self-supervised-completion-inpainting.github.io/">[Project Page]</a>
+
 <!--                 <a href="https://github.com/HimangiM/Just-Go-with-the-Flow-Self-Supervised-Scene-Flow-Estimation">[Code]</a> -->
+
                 <a href="javascript:copy(div2021BMVC, bib2021bmvc)">[Bibtex]</a>
                 <a href="javascript:copy(div2021BMVC, abs2021bmvc)">[Abstract]</a>
                 <!--a href="https://arxiv.org/abs/2111.10701">[Arxiv]</a-->
@@ -270,7 +437,7 @@ year={2022}}
             <div style="font-size:small">
                 <a href="https://rb2.info/">[Project Page]</a>
                 <!--a href="javascript:copy(div20213dV, bibdiv20213dV)">[Bibtex]</a-->
-                <a href="javascript:copy(div2021rb2, absdiv2021rb2)">[Abstract]</a>                
+                <a href="javascript:copy(div2021rb2, absdiv2021rb2)">[Abstract]</a>
             </div>
             <br>
         </td>
@@ -288,11 +455,13 @@ year={2022}}
         <div id="div20213dV" class="pubInfo"></div>
         <div id="bibdiv20213dV" style="display:none">
             <blockquote>
+
 <pre>@article{wang2021sodtgnn,
 title={Semi-supervised 3D Object Detection via Temporal Graph Neural Networks},
 author={Wang, Jianren and Gang, Haiming and Ancha, Siddharth and Chen, Yi-ting and Held, David},
 journal={International Conference on 3D Vision (3DV)},
 year={2021}}</pre>
+
                 </blockquote>
             </div>
     <div id="absdiv20213dV" style="display:none">
@@ -323,11 +492,13 @@ year={2021}}</pre>
             <div id="div2021vcd" class="pubInfo"></div>
             <div id="bibdiv2021vcd" style="display:none">
                 <blockquote>
+
 <pre>@inproceedings{lin2021VCD,
 title={Learning Visible Connectivity Dynamics for Cloth Smoothing},
 author={Lin, Xingyu and Wang, Yufei and Huang, Zixuan and Held, David},
 booktitle={Conference on Robot Learning},
 year={2021}}</pre>
+
                 </blockquote>
             </div>
             <div id="absdiv2021vcd" style="display:none">
@@ -360,6 +531,7 @@ year={2021}}</pre>
             <div id="weng2021fabricflownet" class="pubInfo"></div>
             <div id="bibweng2021fabricflownet" style="display:none">
                 <blockquote>
+
 <pre>
 @inproceedings{weng2021fabricflownet,
  title={FabricFlowNet: Bimanual Cloth Manipulation 
@@ -370,11 +542,13 @@ year={2021}}</pre>
  year={2021}
 }
 </pre>
+
                 </blockquote>
             </div>
             <div id="absweng2021fabricflownet" style="display:none">
                 <blockquote>
-We address the problem of goal-directed cloth manipulation, a challenging task due to the deformability of cloth. Our insight is that optical flow, a technique normally used for motion estimation in video, can also provide an effective representation for corresponding cloth poses across observation and goal images. We introduce FabricFlowNet (FFN), a cloth manipulation policy that leverages flow as both an input and as an action representation to improve performance. FabricFlowNet also elegantly switches between dual-arm and single-arm actions based on the desired goal. We show that FabricFlowNet significantly outperforms state-of-the-art model-free and model-based cloth manipulation policies. We also present real-world experiments on a bimanual system, demonstrating effective sim-to-real transfer.  Finally, we show that our method generalizes when trained on a single square cloth to other cloth shapes, such as T-shirts and rectangular cloths.
+
+We address the problem of goal-directed cloth manipulation, a challenging task due to the deformability of cloth. Our insight is that optical flow, a technique normally used for motion estimation in video, can also provide an effective representation for corresponding cloth poses across observation and goal images. We introduce FabricFlowNet (FFN), a cloth manipulation policy that leverages flow as both an input and as an action representation to improve performance. FabricFlowNet also elegantly switches between dual-arm and single-arm actions based on the desired goal. We show that FabricFlowNet significantly outperforms state-of-the-art model-free and model-based cloth manipulation policies. We also present real-world experiments on a bimanual system, demonstrating effective sim-to-real transfer. Finally, we show that our method generalizes when trained on a single square cloth to other cloth shapes, such as T-shirts and rectangular cloths.
 
                 </blockquote>
             </div>
@@ -402,11 +576,13 @@ We address the problem of goal-directed cloth manipulation, a challenging task d
             <div id="sikchi2021learning" class="pubInfo"></div>
             <div id="bibsikchi2021learning" style="display:none">
                 <blockquote>
+
 <pre>@inproceedings{sikchi2021learning,
 title={Learning Off-policy for Online Planning},
 author={Sikchi, Harshit and Zhou, Wenxuan and Held, David},
 booktitle={Conference on Robot Learning},
 year={2021}}</pre>
+
                 </blockquote>
             </div>
             <div id="abssikchi2021learning" style="display:none">
@@ -440,6 +616,7 @@ year={2021}}</pre>
             </div>
             <div id="bib2021safetyenvelopes" style="display:none">
                 <blockquote>
+
 <pre>@INPROCEEDINGS{Ancha-RSS-21,
     AUTHOR    = {Siddharth Ancha AND Gaurav Pathak AND Srinivasa G. Narasimhan AND David Held},
     TITLE     = {Active Safety Envelopes using Light Curtains with Probabilistic Guarantees},
@@ -447,6 +624,7 @@ year={2021}}</pre>
     YEAR      = {2021},
     MONTH     = {July}
 }</pre>
+
                 </blockquote>
             </div>
             <div id="abs2021safetyenvelopes" style="display:none">
@@ -507,7 +685,7 @@ year={2021}}</pre>
             <br>
         </td>
     </tr>
-    
+
     <tr>
         <td class="pubimg" width="250" height="100">
             <img src="../pics/cvpr21.png" img width="250">
@@ -517,12 +695,14 @@ year={2021}}</pre>
             </div>
             <div id="bib2021exploiting" style="display:none">
                 <blockquote>
+
 <pre>@inproceedings{cvpr2021raajexploiting,
     title     = {Exploiting & Refining Depth Distributions with Triangulation Light Curtains},
     author    = {Yaadhav Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     year      = {2021}
 }</pre>
+
                 </blockquote>
             </div>
             <div id="abs2021exploiting" style="display:none">
@@ -543,7 +723,7 @@ year={2021}}</pre>
             <br>
         </td>
     </tr>
-    
+
     <tr>
         <td class="pubimg" width="250" height="100">
             <img src="../pics/peiyunff.gif" img width="250" height="100">
@@ -567,10 +747,10 @@ year={2021}}</pre>
             </div>
             <div class="pubjournal">Conference on Computer Vision and Pattern Recognition (CVPR), 2021
             <div style="font-size:small">
-            <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hu_Safe_Local_Motion_Planning_With_Self-Supervised_Freespace_Forecasting_CVPR_2021_paper.pdf">[Paper]</a> 
+            <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hu_Safe_Local_Motion_Planning_With_Self-Supervised_Freespace_Forecasting_CVPR_2021_paper.pdf">[Paper]</a>
                                   <a href="https://peiyunh.github.io/ff/index.html">[Project page]</a>
-                                  <a href="https://peiyunh.github.io/ff/poster.pdf">[Poster]</a> 
-                                  <a href="https://youtu.be/O_2MojWp7yk">[Talk]</a> 
+                                  <a href="https://peiyunh.github.io/ff/poster.pdf">[Poster]</a>
+                                  <a href="https://youtu.be/O_2MojWp7yk">[Talk]</a>
                                   <a href="https://github.com/peiyunh/ff">[Code]</a>
                 <a href="javascript:copy(div2021cvpr_safe, bib2021cvpr_safe)">[Bibtex]</a>
                 <a href="javascript:copy(div2021cvpr_safe, abs2021cvpr_safe)">[Abstract]</a>
@@ -592,11 +772,13 @@ year={2021}}</pre>
             </div>
             <div id="bib2020softgym" style="display:none">
                 <blockquote>
+
 <pre>@inproceedings{corl2020softgym,
 title={SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation},
 author={Lin, Xingyu and Wang, Yufei and Olkin, Jake and Held, David},
 booktitle={Conference on Robot Learning},
 year={2020}}</pre>
+
                 </blockquote>
             </div>
             <div id="abs2020softgym" style="display:none">
@@ -628,12 +810,14 @@ year={2020}}</pre>
             </div>
             <div id="bib2020roll" style="display:none">
                     <blockquote>
+
 <pre>@inproceedings{corl2020roll,
 title={ROLL: Visual Self-Supervised Reinforcement Learning with Object Reasoning},
 author={Wang, Yufei and Narasimhan Gautham and Lin, Xingyu and Okorn, Brian and Held, David},
 booktitle={Conference on Robot Learning},
 year={2020}
 }</pre>
+
                 </blockquote>
             </div>
             <div id="abs2020roll" style="display:none">
@@ -670,29 +854,30 @@ year={2020}
              <div id="bib2020corl" style="display:none">
                 <blockquote>
                     <pre>@inproceedings{PLAS_corl2020,
- title={PLAS: Latent Action Space for Offline Reinforcement Learning},
- author={Zhou, Wenxuan and Bajracharya, Sujay and Held, David},
- booktitle={Conference on Robot Learning},
- year={2020}
- }</pre>
-                </blockquote>
-            </div>
-            <div id="abs2020corl" style="display:none">
-                <blockquote>
-The goal of offline reinforcement learning is to learn a policy from a fixed dataset, without further interactions with the environment.  This setting will be an increasingly more important paradigm for real-world applications of reinforcement learning such as robotics, in which data collection is slow and potentially dangerous. Existing off-policy algorithms have limited performance on static datasets due to extrapolation errors from out-of-distribution actions. This leads to the challenge of constraining the policy to select actions within the support of the dataset during training. We propose to simply learn the Policy in the Latent Action Space (PLAS) such that this requirement is naturally satisfied. We evaluate our method on continuous control benchmarks in simulation and a deformable object manipulation task with a physical robot. We demonstrate that our method provides competitive performance consistently across various continuous control tasks and different types of datasets, outperforming existing offline reinforcement learning methods with explicit constraints.                </blockquote>
-            </div>
-            <div style="font-size:small">
-                <a href="https://sites.google.com/view/latent-policy">[Project Page]</a>
-                <a href="https://github.com/Wenxuan-Zhou/PLAS">[Code]</a>
-                <a href="javascript:copy(div2020corl, bib2020corl)">[Bibtex]</a>
-                <a href="javascript:copy(div2020corl, abs2020corl)">[Abstract]</a>
-                <a href="https://arxiv.org/pdf/2011.07213.pdf">[PDF]</a>
-            </div>
-            <div id="div2020corl" class="pubInfo"></div>
-            </div>
-            <br>
-        </td>
-    </tr>
+
+title={PLAS: Latent Action Space for Offline Reinforcement Learning},
+author={Zhou, Wenxuan and Bajracharya, Sujay and Held, David},
+booktitle={Conference on Robot Learning},
+year={2020}
+}</pre>
+</blockquote>
+</div>
+<div id="abs2020corl" style="display:none">
+<blockquote>
+The goal of offline reinforcement learning is to learn a policy from a fixed dataset, without further interactions with the environment. This setting will be an increasingly more important paradigm for real-world applications of reinforcement learning such as robotics, in which data collection is slow and potentially dangerous. Existing off-policy algorithms have limited performance on static datasets due to extrapolation errors from out-of-distribution actions. This leads to the challenge of constraining the policy to select actions within the support of the dataset during training. We propose to simply learn the Policy in the Latent Action Space (PLAS) such that this requirement is naturally satisfied. We evaluate our method on continuous control benchmarks in simulation and a deformable object manipulation task with a physical robot. We demonstrate that our method provides competitive performance consistently across various continuous control tasks and different types of datasets, outperforming existing offline reinforcement learning methods with explicit constraints. </blockquote>
+</div>
+<div style="font-size:small">
+<a href="https://sites.google.com/view/latent-policy">[Project Page]</a>
+<a href="https://github.com/Wenxuan-Zhou/PLAS">[Code]</a>
+<a href="javascript:copy(div2020corl, bib2020corl)">[Bibtex]</a>
+<a href="javascript:copy(div2020corl, abs2020corl)">[Abstract]</a>
+<a href="https://arxiv.org/pdf/2011.07213.pdf">[PDF]</a>
+</div>
+<div id="div2020corl" class="pubInfo"></div>
+</div>
+<br>
+</td>
+</tr>
 
     <tr>
         <td class="pubimg" width="250" height="100">
@@ -704,6 +889,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
             </div>
             <div id="bib20203dv" style="display:none">
                     <blockquote>
+
 <pre>@inproceedings{xia20panonet3d,
     author = "Chen, Xia 
     and Wang, Jianren 
@@ -713,6 +899,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
     booktitle = "3DV",
     year = "2020"
 }</pre>
+
                     </blockquote>
             </div>
             <div id="abs20203dv" style="display:none">
@@ -744,6 +931,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
             </div>
             <div id="bib2020eccv" style="display:none">
                     <blockquote>
+
 <pre>@InProceedings{Ancha_2020_ECCV,
   author="Ancha, Siddharth
   and Raaj, Yaadhav
@@ -762,6 +950,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
   pages="751--766",
   isbn="978-3-030-58558-7"
 }</pre>
+
                 </blockquote>
             </div>
             <div id="abs2020eccv" style="display:none">
@@ -780,7 +969,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
                 <a href="https://www.youtube.com/watch?v=uRP63hHArU0">[Long Talk]</a>
                 <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
             </div>
-            <div id="div2020eccv" class="pubInfo"></div>            
+            <div id="div2020eccv" class="pubInfo"></div>
             <br>
         </td>
     </tr>
@@ -798,45 +987,47 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
             <div id="bibqian2020iros" style="display:none">
                 <blockquote>
                     <pre>
+
 @InProceedings{Qian_2020_IROS,
-    author="Qian, Jianing
-    and Weng, Thomas
-    and Zhang, Luxin
-    and Okorn, Brian
-    and Held, David",
-    title="Cloth Region Segmentation for Robust Grasp Selection",
-    booktitle="International Conference on Intelligent Robots and Systems",
-    year="2020",
-    publisher="IEEE"}
-                    </pre>
-                </blockquote>
-            </div>
-            <div id="absqian2020iros" style="display:none">
-                <blockquote>
-                    Cloth detection and manipulation is a common task in domestic and industrial settings, yet such tasks remain a challenge for robots due to cloth deformability. Furthermore, in many cloth-related tasks like laundry folding and bed making, it is crucial to manipulate specific regions like edges and corners, as opposed to folds. In this work, we focus on the problem of segmenting and grasping these key regions. Our approach trains a network to segment the edges and corners of a cloth from a depth image, distinguishing such regions from wrinkles or folds. We also provide a novel algorithm for estimating the grasp location, direction, and directional uncertainty from the segmentation. We demonstrate our method on a real robot system and show that it outperforms baseline methods on grasping success. Video and other supplementary materials are available at: <a href="https://sites.google.com/view/cloth-segmentation">this https URL</a>.
-                </blockquote>
-            </div>
-            <div style="font-size:small">
-                <a href="https://sites.google.com/view/cloth-segmentation">[Project Page]</a>
-                <!-- <a href="">[Code]</a> -->
-                <a href="javascript:copy(divqian2020iros, bibqian2020iros)">[Bibtex]</a>
-                <a href="javascript:copy(divqian2020iros, absqian2020iros)">[Abstract]</a>
-                <a href="https://arxiv.org/pdf/2008.05626.pdf">[PDF]</a>
-            </div>
-            <div id="divqian2020iros" class="pubInfo"></div>
-            <br>
-        </td>
-    </tr>
-    <tr>
-        <td class="pubimg" width="250" height="100">
-            <img src="../pics/jianreniros2020.jpg" img width="250">
-        </td>
-        <td><a href="https://arxiv.org/abs/2008.08173">Uncertainty-aware Self-supervised 3D Data Association</a><br>
-            <div class="pubauthor">
-                Jianren Wang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
-            </div>
-            <div id="bibjianren2020iros" style="display:none">
-                    <blockquote>
+author="Qian, Jianing
+and Weng, Thomas
+and Zhang, Luxin
+and Okorn, Brian
+and Held, David",
+title="Cloth Region Segmentation for Robust Grasp Selection",
+booktitle="International Conference on Intelligent Robots and Systems",
+year="2020",
+publisher="IEEE"}
+</pre>
+</blockquote>
+</div>
+<div id="absqian2020iros" style="display:none">
+<blockquote>
+Cloth detection and manipulation is a common task in domestic and industrial settings, yet such tasks remain a challenge for robots due to cloth deformability. Furthermore, in many cloth-related tasks like laundry folding and bed making, it is crucial to manipulate specific regions like edges and corners, as opposed to folds. In this work, we focus on the problem of segmenting and grasping these key regions. Our approach trains a network to segment the edges and corners of a cloth from a depth image, distinguishing such regions from wrinkles or folds. We also provide a novel algorithm for estimating the grasp location, direction, and directional uncertainty from the segmentation. We demonstrate our method on a real robot system and show that it outperforms baseline methods on grasping success. Video and other supplementary materials are available at: <a href="https://sites.google.com/view/cloth-segmentation">this https URL</a>.
+</blockquote>
+</div>
+<div style="font-size:small">
+<a href="https://sites.google.com/view/cloth-segmentation">[Project Page]</a>
+<!-- <a href="">[Code]</a> -->
+<a href="javascript:copy(divqian2020iros, bibqian2020iros)">[Bibtex]</a>
+<a href="javascript:copy(divqian2020iros, absqian2020iros)">[Abstract]</a>
+<a href="https://arxiv.org/pdf/2008.05626.pdf">[PDF]</a>
+</div>
+<div id="divqian2020iros" class="pubInfo"></div>
+<br>
+</td>
+</tr>
+<tr>
+<td class="pubimg" width="250" height="100">
+<img src="../pics/jianreniros2020.jpg" img width="250">
+</td>
+<td><a href="https://arxiv.org/abs/2008.08173">Uncertainty-aware Self-supervised 3D Data Association</a><br>
+<div class="pubauthor">
+Jianren Wang, Siddharth Ancha, Yi-Ting Chen, David Held<br>
+</div>
+<div id="bibjianren2020iros" style="display:none">
+<blockquote>
+
 <pre>@inproceedings{jianren20s3da,
     author = "Wang, Jianren 
     and Ancha, Siddharth 
@@ -846,6 +1037,7 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
     booktitle = "IROS",
     year = "2020"
 }</pre>
+
                     </blockquote>
             </div>
             <div id="absjianren2020iros" style="display:none">
@@ -893,12 +1085,14 @@ The goal of offline reinforcement learning is to learn a policy from a fixed dat
             </div>
             <div id="bibxinshuo2020iros" style="display:none">
                     <blockquote>
+
 <pre>@article{Weng2020_AB3DMOT, 
 author = {Weng, Xinshuo and Wang, Jianren and Held, David and Kitani, Kris}, 
 journal = {IROS}, 
 title = {3D Multi-Object Tracking: A Baseline and New Evaluation Metrics}, 
 year = {2020} 
 }</pre>
+
                     </blockquote>
             </div>
             <div id="absxinshuo2020iros" style="display:none">
@@ -929,6 +1123,7 @@ year = {2020}
             </div>
             <div id="bib2020cvprflow" style="display:none">
                     <blockquote>
+
 <pre>
 @InProceedings{Mittal_2020_CVPR,
 author = {Mittal, Himangi and Okorn, Brian and Held, David},
@@ -938,6 +1133,7 @@ month = {June},
 year = {2020}
 } 
 </pre>
+
                 </blockquote>
             </div>
             <div id="abs2020cvprflow" style="display:none">
@@ -992,60 +1188,62 @@ year = {2020}
             <div id="bibweng2020ral" style="display:none">
                 <blockquote>
                     <pre>
+
 @ARTICLE{9001238,
-    author={Thomas Weng and Amith Pallankize and Yimin Tang and Oliver Kroemer and David Held},
-    journal={IEEE Robotics and Automation Letters}, 
-    title={Multi-Modal Transfer Learning for Grasping Transparent and Specular Objects}, 
-    year={2020},
-    volume={5},
-    number={3},
-    pages={3791-3798},
-    doi={10.1109/LRA.2020.2974686}}
-                    </pre>
-                </blockquote>
-            </div>
-            <div id="absweng2020ral" style="display:none">
-                <blockquote>
-                    State-of-the-art object grasping methods rely on depth sensing to plan robust grasps, but commercially available depth sensors fail to detect transparent and specular objects. To improve grasping performance on such objects, we introduce a method for learning a multi-modal perception model by bootstrapping from an existing uni-modal model. This transfer learning approach requires only a pre-existing uni-modal grasping model and paired multi-modal image data for training, foregoing the need for ground-truth grasp success labels nor real grasp attempts. Our experiments demonstrate that our approach is able to reliably grasp transparent and reflective objects. Video and supplementary material are available at <a href="https://sites.google.com/view/transparent-specular-grasping">https://sites.google.com/view/transparent-specular-grasping</a>.
-                </blockquote>
-            </div>
-            <div style="font-size:small">
-                <a href="https://sites.google.com/view/transparent-specular-grasping">[Project Page]</a>
-                <!-- <a href="">[Code]</a> -->
-                <a href="javascript:copy(divweng2020ral, bibweng2020ral)">[Bibtex]</a>
-                <a href="javascript:copy(divweng2020ral, absweng2020ral)">[Abstract]</a>
-                <a href="https://arxiv.org/pdf/2006.00028.pdf">[PDF]</a>
-            </div>
-            <div id="divweng2020ral" class="pubInfo"></div>
-            <br>
-        </td>
-    </tr>
-    <tr>
-        <td class="pubimg" width="250" height="100">
-            <img src="../pics/peiyunral2020/output.jpg" img width="250">
-        </td>
-        <td><a href="https://arxiv.org/abs/1912.04976">Learning to Optimally Segment Point Clouds</a><br>
-            <div class="pubauthor">
-                Peiyun Hu, David Held*, Deva Ramanan*<br>
-            </div>
-            <div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference of Robotics and Automation (ICRA), 2020</div>
-            <!--div style="font-size:small">
+author={Thomas Weng and Amith Pallankize and Yimin Tang and Oliver Kroemer and David Held},
+journal={IEEE Robotics and Automation Letters},
+title={Multi-Modal Transfer Learning for Grasping Transparent and Specular Objects},
+year={2020},
+volume={5},
+number={3},
+pages={3791-3798},
+doi={10.1109/LRA.2020.2974686}}
+</pre>
+</blockquote>
+</div>
+<div id="absweng2020ral" style="display:none">
+<blockquote>
+State-of-the-art object grasping methods rely on depth sensing to plan robust grasps, but commercially available depth sensors fail to detect transparent and specular objects. To improve grasping performance on such objects, we introduce a method for learning a multi-modal perception model by bootstrapping from an existing uni-modal model. This transfer learning approach requires only a pre-existing uni-modal grasping model and paired multi-modal image data for training, foregoing the need for ground-truth grasp success labels nor real grasp attempts. Our experiments demonstrate that our approach is able to reliably grasp transparent and reflective objects. Video and supplementary material are available at <a href="https://sites.google.com/view/transparent-specular-grasping">https://sites.google.com/view/transparent-specular-grasping</a>.
+</blockquote>
+</div>
+<div style="font-size:small">
+<a href="https://sites.google.com/view/transparent-specular-grasping">[Project Page]</a>
+<!-- <a href="">[Code]</a> -->
+<a href="javascript:copy(divweng2020ral, bibweng2020ral)">[Bibtex]</a>
+<a href="javascript:copy(divweng2020ral, absweng2020ral)">[Abstract]</a>
+<a href="https://arxiv.org/pdf/2006.00028.pdf">[PDF]</a>
+</div>
+<div id="divweng2020ral" class="pubInfo"></div>
+<br>
+</td>
+</tr>
+<tr>
+<td class="pubimg" width="250" height="100">
+<img src="../pics/peiyunral2020/output.jpg" img width="250">
+</td>
+<td><a href="https://arxiv.org/abs/1912.04976">Learning to Optimally Segment Point Clouds</a><br>
+<div class="pubauthor">
+Peiyun Hu, David Held*, Deva Ramanan*<br>
+</div>
+<div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference of Robotics and Automation (ICRA), 2020</div>
+<!--div style="font-size:small">
                 <a href="GOTURN/GOTURN.html">[Project Page]</a>
                 <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
                 <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
-            <br>
-        </td>
-    </tr>
-    <!-- <tr class="year"><td><li class="year">2019</li></td></tr> -->
-    <tr>
-        <td class="pubimg">
-            <img src="../pics/CoRL2019.png" width="250">
-        </td>
-        <td><a href="https://arxiv.org/abs/1912.12270">Combining Deep Learning and Verification for Precise Object Instance Detection</a><br>
-            <div class="pubauthor">
-                Siddharth Ancha*, Junyu Nan*, David Held</div>
-            <div id="bib2019corl" style="display:none">
-                    <blockquote>
+<br>
+</td>
+</tr>
+<!-- <tr class="year"><td><li class="year">2019</li></td></tr> -->
+<tr>
+<td class="pubimg">
+<img src="../pics/CoRL2019.png" width="250">
+</td>
+<td><a href="https://arxiv.org/abs/1912.12270">Combining Deep Learning and Verification for Precise Object Instance Detection</a><br>
+<div class="pubauthor">
+Siddharth Ancha*, Junyu Nan*, David Held</div>
+<div id="bib2019corl" style="display:none">
+<blockquote>
+
 <pre>@inproceedings{FlowVerify2019CoRL,
   author    = {Siddharth Ancha and
                Junyu Nan and
@@ -1067,6 +1265,7 @@ year = {2020}
   biburl    = {https://dblp.org/rec/conf/corl/AnchaNH19.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }</pre>
+
                 </blockquote>
             </div>
             <div id="abs2019corl" style="display:none">
@@ -1084,7 +1283,7 @@ year = {2020}
                 <!-- <a href="GOTURN/supplement.pdf">[Supplement]</a> -->
             </div>
             <div id="div2019corl" class="pubInfo"></div>
-            
+
             </div>
             <br>
         </td>
@@ -1711,6 +1910,7 @@ year = {2020}
         </td>
     </tr>
     </table>
+
 <!-- </div> -->
 <!-- ------------------------------------------------------------------------
     YEAR
@@ -1751,7 +1951,7 @@ year = {2020}
 
 
 <table cellpadding="10" width="100%">
-    
+
 </table-->
 <!-- Add this to a new tab later
 <div class="heading"> Advice </div>
@@ -1759,11 +1959,11 @@ year = {2020}
 
 
     table cellpadding="10" width="100%">
-    
+
     <tr>
         <td>
             I gave a talk on <a href="https://www.youtube.com/watch?v=CDXZXljc2Ic">"Demystifying the Post-doc - Why, Where, and How?"</a>  If you are considering doing a post-doc, the advice in this talk might be helpful.
-            
+
             In this talk, I describe the ins and outs of getting a job as a post-doctoral researcher ("doing a post-doc").  I first describe a number of reasons why one might want to do a post-doc, as well as a few reasons not to do one.  I next describe how to choose where one should apply for a post-doc.  Next, I describe the process of how to get a job in a dream post-doc position.  I also describe how to choose among multiple post-doc offers.  Last, I will describe how to be "successful" as a post-doc, i.e. how to make the most of your time as a post-doc and prepare for your future career.  You can watch this video
         </td>
     </tr>
@@ -1772,7 +1972,6 @@ year = {2020}
 <!-- <div style="clear: both;"></div> -->
 <!-- </div> -->
 <!-- Preprints -->
-
 
 <div class="heading"> Preprints </div>
 <div>
