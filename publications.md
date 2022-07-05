@@ -53,38 +53,37 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
-            <img src="../pics/iros2022_logo.png" img width="250">
+            <img src="../pics/iros2022-singulating-layers-fabric-reskin-400x210.gif" img width="250">
         </td>
         <td>Learning to Singulate Layers of Cloth based on Tactile Feedback<br>
             <div class="pubauthor">
             Sashank Tirumala*, Thomas Weng*, Daniel Seita*, Oliver Kroemer, Zeynep Temel, David Held<br>
             </div>
-            <div id="bib2022flowbot3D" style="display:none">
+            <div id="bib2022reskinfabric" style="display:none">
                 <blockquote>
-                    <pre>@inproceedings{EisnerZhang2022FLOW,
-            title={FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects},
-            author={Eisner*, Ben and Zhang*, Harry and Held,David},
-            booktitle={Robotics: Science and Systems (RSS)},
-            year={2022}
-       }
-
+                    <pre>
+@inproceedings{tirumala2022,
+title={Learning to Singulate Layers of Cloth based on Tactile Feedback},
+author={Sashank Tirumala and Thomas Weng and Daniel Seita and Oliver Kroemer and Zeynep Temel and David Held},
+booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+year={2022},
+}
                 </pre>
             </blockquote>
         </div>
-        <div id="abs2022flowbot3D" style="display:none">
+        <div id="abs2022reskinfabric" style="display:none">
             <blockquote>
-                We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable a robot to articulate unseen classes of objects. We propose a vision-based system that learns to predict the potential motions of the parts of a variety of articulated objects to guide downstream motion planning of the system to articulate the objects. To predict the object motions, we train a neural network to output a dense vector field representing the point-wise motion direction of the points in the point cloud under articulation. We then deploy an analytical motion planner based on this vector field to achieve a policy that yields maximum articulation. We train the vision system entirely in simulation, and we demonstrate the capability of our system to generalize to unseen object instances and novel categories in both simulation and the real world, deploying our policy on a Sawyer robot with no finetuning. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments.
-
+	Robotic manipulation of cloth has applications ranging from fabrics manufacturing to handling blankets and laundry. Cloth manipulation is challenging for robots largely due to their high degrees of freedom, complex dynamics, and severe self-occlusions when in folded or crumpled configurations. Prior work on robotic manipulation of cloth relies primarily on vision sensors alone, which may pose challenges for fine-grained manipulation tasks such as grasping a desired number of cloth layers from a stack of cloth. In this paper, we propose to use tactile sensing for cloth manipulation; we attach a tactile sensor (ReSkin) to one of the two fingertips of a Franka robot and train a classifier to determine whether the robot is grasping a specific number of cloth layers. During test-time experiments, the robot uses this classifier as part of its policy to grasp one or two cloth layers using tactile feedback to determine suitable grasping points. Experimental results over 180 physical trials suggest that the proposed method outperforms baselines that do not use tactile feedback and has a better generalization to unseen fabrics compared to methods that use image classifiers. 
             </blockquote>
         </div>
         <div class="pubjournal">International Conference on Intelligent Robots and Systems (IROS), 2022
-        <!--div style="font-size:small">
-            <a href="https://sites.google.com/view/articulated-flowbot-3d/home#h.xrrj1zv4o44a">[Project Page]</a>
-            <a href="javascript:copy(div2022flowbot3D, bib2022flowbot3D)">[Bibtex]</a>
-            <a href="javascript:copy(div2022flowbot3D, abs2022flowbot3D)">[Abstract]</a>
-            <a href="https://arxiv.org/pdf/2205.04382.pdf">[PDF]</a>
-        </div-->
-        <div id="div2022flowbot3D" class="pubInfo"></div>
+        <div style="font-size:small">
+            <a href="https://sites.google.com/view/reskin-cloth/home">[Project Page]</a>
+            <a href="javascript:copy(div2022reskinfabric, bib2022reskinfabric)">[Bibtex]</a>
+            <a href="javascript:copy(div2022reskinfabric, abs2022reskinfabric)">[Abstract]</a>
+            [arXiv]
+        </div>
+        <div id="div2022reskinfabric" class="pubInfo"></div>
         </div>
         <br>
     </td>
