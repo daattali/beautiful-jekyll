@@ -58,7 +58,7 @@ display_categories: [work]
     <dt>
     <img src="https://img.shields.io/badge/July. 2022-118ab2.svg"></dt>
     
-<dd>  Poster presentation at <a href="https://prairie-institute.fr/"> PRAIRIE</a> event: <b>Wavelet-based multiscale atlas estimation</b> </dd> <a href="/assets/img/Poster_multiscale_atlas_estimation.pdf"> Download poster </a>
+<dd>  Poster presentation at <a href="https://prairie-institute.fr/"> PRAIRIE</a> event: <b>Wavelet-based multiscale atlas estimation</b> <a href="/assets/img/Poster_multiscale_atlas_estimation.pdf"> Download poster </a> </dd> 
 
 <dt>
     <img src="https://img.shields.io/badge/Sept. 2022-118ab2.svg"></dt>
