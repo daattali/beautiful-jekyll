@@ -241,6 +241,8 @@ year={2022},
                 <a href="javascript:copy(div2022occnet, bib2022occnet)">[Bibtex]</a>
                 <a href="javascript:copy(div2022occnet, abs2022occnet)">[Abstract]</a>
                 <a href="https://arxiv.org/abs/2206.02881">[PDF]</a>
+                <a href="https://youtu.be/0s9PA6EgiqE">[Video]</a>
+                <a href="https://drive.google.com/file/d/1xdMVN7moNcdIeAPuPP0tpdvtjIfeFWdZ/view?usp=sharing">[Poster]</a>
             </div>
             <div id="div2022occnet" class="pubInfo"></div>
             </div>
