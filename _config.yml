@@ -96,6 +96,9 @@ feed_show_tags: true
 # Add a search button to the navbar
 post_search: true
 
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
+
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
 
