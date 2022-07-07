@@ -36,7 +36,7 @@ tr:nth-child(even) {
     <th style="width:15%">Date</th>
   </tr>
 
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
    <tr>
     <td> <a href="{{ post.url }}">{{ post.title }}</a></td>
     <td>{{ post.location}} </td>
