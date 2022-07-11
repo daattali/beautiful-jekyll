@@ -11,11 +11,17 @@ Hi there, I am Emil Dimanchev and I am a climate policy researcher specializing 
 
 The purpose of my work is to enable evidence-based decision making. I research sustainable energy systems, the effects of alternative policy choices, and how to design climate policy that best meets societal goals. 
 
-My research is interdisciplinary, leveraging diverse methods matched to the problem at hand. I specialize in operations research, and integrate tools and insights from other disciplines including economics, data science, and political science. 
-
-My PhD work is on strategies and policies for simultaneous electricity decarbonization and transport electrification. I am working on methods for electricity system planning to address questions related to charging infrastructure investments, generation planning, and the role of electric vehicles in decarbonized power systems. 
+My research is interdisciplinary, leveraging diverse methods matched to the problem at hand. I specialize in operations research, and integrate tools and ideas from other fields including economics, data science, and political science. 
 
 Follow my latest work on [Twitter](https://twitter.com/EmilDimanchev).
+
+## PhD project
+
+My PhD focuses on the impact of investor uncertainty and risk aversion on clean energy deployment, and on how de-risking climate policies may accelerate decarbonization. For this purpose I am developing stochastic optimization models that address these questions in the contexts of power system planning and EV charging station investments. 
+
+Broadly, this work aimes to explore the question of *how* might governments drive decarbonization and how decarbonization could be *sped up*. Previous work has shown that, to meet climate goals, governments must accelerate the deployment of renewables. The first publication of my PhD shows that the same is true in the case of electric vehicles (EVs). We synthesize estimates from decarbonization pathways to understand the role EVs play in future vehicle fleets under given climate targets - finding that decarbonization generally entails that most vehicles are EVs by 2050. We combine this with a fleet turnover model to explore the implications this has for how quickly EV diffusion must take place.
+
+My current work focuses on the problem of investor uncertainty and risk aversion as barriers to clean energy investments. In my second research project, I am using Stochastic Dynamic Programming to model investments in EV charging stations and the potential for de-risking policies to speed up investments. In my later work, I am leveraging stochastic optimization and complementarity methods to develop a power system model that addresses these questions in the context of renewable investments.
 
 ## Bio
 
