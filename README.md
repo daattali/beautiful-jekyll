@@ -2,7 +2,6 @@
 
 # Beautiful Jekyll
 
-[![xscode](https://img.shields.io/badge/Available%20on-xs%3Acode-blue?style=?style=plastic&logo=appveyor&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////////VXz1bAAAAAJ0Uk5T/wDltzBKAAAAlUlEQVR42uzXSwqAMAwE0Mn9L+3Ggtgkk35QwcnSJo9S+yGwM9DCooCbgn4YrJ4CIPUcQF7/XSBbx2TEz4sAZ2q1RAECBAiYBlCtvwN+KiYAlG7UDGj59MViT9hOwEqAhYCtAsUZvL6I6W8c2wcbd+LIWSCHSTeSAAECngN4xxIDSK9f4B9t377Wd7H5Nt7/Xz8eAgwAvesLRjYYPuUAAAAASUVORK5CYII=)](https://xscode.com/daattali/beautiful-jekyll)
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
 
 > By [Dean Attali](https://deanattali.com) &middot; [Demo](https://beautifuljekyll.com/)
@@ -26,7 +25,7 @@
 
 # Features
 
-Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the latest features.
+__Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the latest features!__
 
 - **SIMPLE**: The primary goal of Beautiful Jekyll is to allow literally *anyone* to create a website in a few minutes.
 - **Modern**: Uses the latest best practices and technologies to achieve nearly perfect scores on Google Chrome's Audit.
@@ -35,9 +34,10 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 - **Flexible usage**: Use Beautiful Jekyll directly on GitHub or via a Ruby gem - choose the best [development method](#build-your-website-in-3-steps) for you.
 - **Battle-tested**: By using Beautiful Jekyll, you'll be joining 50,000+ users enjoying this theme since 2015.
 - **SEO and social media support**: Customize how your site looks on Google and when shared on social media.
-- **Comments support**: Add comments to any page using either [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), or [Staticman](https://staticman.net).
-- **Tags**: Any blog post can be tagged with keywords, and an index page showing all the tags is automatically generated.
+- **Comments support**: Add comments to any page using either [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), [Staticman](https://staticman.net), [giscus](https://giscus.app), or [CommentBox](https://commentbox.io/).
+- **Tags**: Any blog post can be tagged with keywords, and an index page is automatically generated.
 - **Analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
+- **Search**: Let users easily find any page using a Search button in the navigation bar.
 - **Photos support**: Any page can have a full-width cover photo and thumbnail.
 - **RSS**: An RSS feed is automatically created, so you can even host a podcast easily with Beautiful Jekyll.
 
@@ -45,10 +45,11 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 
 Developing and maintaining Beautiful Jekyll takes a lot of time and effort - thank you to anyone who helps fund this effort!
 
-- [Matt Artist](https://mja00.dev/)
+- [LoadView-Testing](https://www.loadview-testing.com/products/jmeter-load-testing/)
+- [DoFollow](https://dofollow.co.uk/)
 - [\_hyp3ri0n](https://hyperiongray.com)
 
-[Become a sponsor for Beautiful Jekyll and unlock special rewards\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)
+**[Become a sponsor for Beautiful Jekyll and unlock special rewards\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)**
 
 # Build your website in 3 steps
 
@@ -57,6 +58,8 @@ There's a very easy way to use this theme, and there's a hard way. For most peop
 ## The easy way (recommended!)
 
 Getting started is *literally* as easy as 1-2-3 :smile:
+
+> A reminder for *advanced users only*: you can follow the instructions for [building locally](https://beautifuljekyll.com/getstarted/#install-steps-hard) if you want more control but higher difficulty
 
 Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com/join), you'll need to sign up.
 
@@ -84,7 +87,9 @@ Note that this was the easy way to *create* your website, but it does come at a 
 
 ## The hard way (using ruby gems)
 
-If you followed the easy method above, then you already have your site and you can skip this section! If you want to use Beautiful Jekyll as a ruby gem instead, follow the [advanced installation instructions](https://beautifuljekyll.com/getstarted/#install-steps-hard). This is harder to set up initially, but it makes it super easy to keep your site up to date with Beautiful Jekyll when more features are added in the future.
+If you followed the easy method above, then you already have your site and you can skip this section!
+
+If you want to use Beautiful Jekyll as a ruby gem instead, follow the [advanced installation instructions](https://beautifuljekyll.com/getstarted/#install-steps-hard). This is harder to set up initially, but it makes it super easy to keep your site up to date with Beautiful Jekyll when more features are added in the future.
 
 # Plans
 
@@ -142,7 +147,7 @@ subtitle    | Short description of page or blog post that goes under the title
 tags        | List of tags to categorize the post. Separate the tags with commas and place them inside square brackets. Example: `[personal, analysis, finance]`
 cover-img   | Include a large full-width image at the top of the page. You can either provide the path to a single image (eg. `"/path/to/img"`) , or a list of images to cycle through (eg. `["/path/img1", "/path/img2"]`). If you want to add a caption to an image, then you must use the list notation (use `[]` even if you have only one image), and each image should be provided as `"/path/to/img" : "Caption of image"`.
 thumbnail-img | For blog posts, if you want to add a thumbnail that will show up in the feed, use `thumbnail-img: /path/to/image`. If no thumbnail is provided, then `cover-img` will be used as the thumbnail. You can use `thumbnail-img: ""` to disable a thumbnail.
-comments    | If you want do add comments to a specific page, use `comments: true`. Comments only work if you enable one of the comments providers (Facebook, disqus, staticman, utterances) in `_config.yml` file. Comments are automatically enabled on blog posts but not on other pages; to turn comments off for a specific post, use `comments: false`.
+comments    | If you want do add comments to a specific page, use `comments: true`. Comments only work if you enable one of the comments providers (Facebook, disqus, staticman, utterances, giscus, CommentBox) in `_config.yml` file. Comments are automatically enabled on blog posts but not on other pages; to turn comments off for a specific post, use `comments: false`.
 
 ## Parameters for SEO and social media sharing
 
