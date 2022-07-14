@@ -35,7 +35,7 @@
         &nbsp;&bull;&nbsp;
         {% if page.path == '404.html' %}
           <script>
-            var fullurl = '{{ site.github.repository_url }}/new/{{ site.github.source.branch }}?filename='+window.location.pathname;
+            var fullurl = '{{ site.github.repository_url }}/new/{{ site.github.source.branch }}?filename='+window.location.pathname+'.md';
             document.write('<a title="Create this page on GitHub" href="' + fullurl + '" class="text_muted">New page</a>');
           </script>
         {% else %}
