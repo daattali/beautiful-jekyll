@@ -81,7 +81,7 @@ ___I didn't participate in CIIC that year___, I watched one of my best friends d
  
 My programming teacher in my school asked me if I was going to compete again that year, and I wasn't sure, maybe I could compete only to travel with my friends to the nationals...
  
-That will be the final part of this story, which will obviously come out, in about a week.
+That will be the final part of this story, which will obviously come out, soon.
  
 Thanks for reading, and I really hope you learnt something from my failures. <br/>
 Have a great week, drink some tea and maybe listen to [Airbag](https://youtu.be/-5O2-s32IQk), they are really something else!
