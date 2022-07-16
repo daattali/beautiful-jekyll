@@ -42,7 +42,7 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "shafi.cse.buet@gmail.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  rss: false  # remove this line if you don't want to show an RSS link at the bottom
   facebook: 0.mash.000
   github: shafi-
   twitter: bd_shafi
@@ -71,7 +71,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I exist
+# rss-description: This website is a virtual proof that I exist
 
 # --- General options --- #
 
