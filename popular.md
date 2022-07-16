@@ -7,21 +7,17 @@ subtitle: ''
 ## Quick links
 
 * **JUST OPENED! ETSY**: [Simple Home Mom Shop](https://www.etsy.com/shop/simplehomemomshop)
-* [ ](https://www.simplehomemom.com/the-first-simple-planning-step-to-take-as-a-beginner-planner/)**FREE** >> [Simple Home Planning Binder Checklist](https://mailchi.mp/9710466fe4ba/binderchecklist)
-* [My Simple Home Planning Binder Printable Pack](https://buy.stripe.com/fZeaGO0ua164dbidQY) 
-* [Newest blogs](https://www.simplehomemom.com)
+* [ ](https://www.simplehomemom.com/the-first-simple-planning-step-to-take-as-a-beginner-planner/)[Newest blogs](https://www.simplehomemom.com)
 * [Join the weekly newsletter +get access to the freebie vault](https://www.simplehomemom.com/freebies)
 
 ## Resources
 
 * [The Simple Meal Planning Guide](https://www.simplehomemom.com/the-simple-meal-planning-guide/)
-* [Simple Planning Blogs](https://www.simplehomemom.com/tags/#simple%20planning) + [My Simple Planner](https://www.etsy.com/ca/listing/1240323193/my-simple-planner-weekly-daily-monthly?click_key=bfb0a546b0f16a682dd7bf2542d8e33faa94d2c0%3A1240323193&click_sum=10869fc1&ref=shop_home_active_1)
-* [My Simple Homeschool Planner](https://buy.stripe.com/6oE8yGel06qoc7e4gm)
-* My Simple Daily Care Printables [HERE](https://mailchi.mp/d739479e4b35/mysimpledailycare)
+* [Simple Planning Blogs](https://www.simplehomemom.com/tags/#simple%20planning) 
 * [FREE CLASS: 10 Questions to Simplify Your Home Life + accompanying workbook](https://mailchi.mp/b9ced2aa71e3/10-questions-to-help-you-simplify-your-home-life)
 * FREE MINI COURSE: [Planning Basics Class](https://drive.google.com/drive/u/0/folders/1C_cQVPWmBMP8I6bP60KBzm-DLZCSdb2N)
 * [Simplify Your Home Life: a course for busy moms](https://www.simplehomemom.com/course) (50% off with the code 50HOME)
-* [The Simple Capsule Wardrobe Guide ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
+* [The Simple Capsule Wardrobe ](https://www.simplehomemom.com/simple-capsule-wardrobe-guide)
 
 ## Podcasts
 
