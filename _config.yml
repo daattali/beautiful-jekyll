@@ -20,7 +20,7 @@ navbar-links:
   About Me: "aboutme"
   Projects: "projects"
   Job History: "jobhistory"
-  Author's home: "/"
+  Homepage: "/"
 
 # --- Logo --- #
 
