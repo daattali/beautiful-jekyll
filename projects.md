@@ -1,6 +1,9 @@
 # Projects
 
-## Projects at Job
+- [Projects at Job](#projects-at-job)
+- [Fun & Freelancing Projects](#personal--freelance-projects)
+
+### Projects at Job
 - [TestReach](testreach.com)
 
   One of the leading assessment platform in the present world. Working on it as a senior software engineer
@@ -60,12 +63,16 @@
   A end-to-end solution for wholesale including ingredient purchase planning, inventory management to home delivery. Offered by Durbin Labs Ltd.
   Lead developer, architect, cloud maintainer.
 
-## Personal & Freelance Projects
+### Fun & Freelance Projects
 
-- [InfoMap](infomap.netlify.app)
+- [InfoMap](https://infotree.netlify.app)
 
   A way to organize and present information in a beautiful tree structure.
 
-- [Nest Starter](www.github.com/shafi-/nest-starter)
+- [Nest Starter](https://www.github.com/shafi-/nest-starter)
 
   A boilerplate to start implementing your awesome idea with a easy to use nestjs project. It comse with authentication, swagger integrated out of the box.
+
+- [BD Relief Work]()
+  
+  *[Work In Progress]* Aggregator of relief works by numerous volunteer organizations to help organization plan and target right people to support
