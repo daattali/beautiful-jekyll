@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Back to basic on DR, BC and HA
-description: In this blog I go back to the basics of what are Disaster Recovery (DR), Business Continuity (BC) and High Availability (HA).
-date: 2022-07-18T11:35:21.285Z
+title: Back to basic about DR, BC and HA
+description: null
+date: 2022-07-18T10:31:46.695Z
 fb-img: null
 ---
 
