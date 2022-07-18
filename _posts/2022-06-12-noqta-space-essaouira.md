@@ -1,6 +1,6 @@
 ---
 layout: post
-title: noqta space, essaouira
+title: noqta space
 cover-img: /assets/img/2022-06-12-noqta-space-essaouira-img01.jpg
 share-img: /assets/img/2022-06-12-noqta-space-essaouira-img01.jpg
 tags: [essaouira, morocco, coliving, coworking]
