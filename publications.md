@@ -90,7 +90,7 @@ year={2022},
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
-            <img src="../pics/iros2022_logo.png" img width="250">
+            <img src="../pics/carl-22-website.gif" img width="250">
         </td>
         <td><a href="https://sites.google.com/view/dough-manipulation">Learning Closed-loop Dough Manipulation using a Differentiable Reset Module</a><br>
             <div class="pubauthor">
