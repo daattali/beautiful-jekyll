@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: The Nomad Work 
+title: the nomad work 
 
 # Your name to show in the footer
 author: nomads all over the world
@@ -220,7 +220,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Germany/Berlin"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
