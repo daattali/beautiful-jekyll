@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+
+    }
+
+.flex-item {
+    flex: auto;
+    align-self: auto;
+    height: 80px;
+    text-decoration: none;
+    color: #404040;
+    font-size: 1.875rem;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+    }
