@@ -247,16 +247,12 @@ img {
 }
 
 .navbar-custom .nav-item.dropdown .dropdown-menu {
-  min-width: 0;
   margin-top: 0;
   font-size: 1em;
-  border: 0;
   padding: 0;
-  width: 100%;
-  word-break: break-word;
 }
+
 .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
-  white-space: normal;
   padding: 0.625rem;
   background-color: {{ site.navbar-col | default: "#EAEAEA" }};
   text-decoration: none !important;
