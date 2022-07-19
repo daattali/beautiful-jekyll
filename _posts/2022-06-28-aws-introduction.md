@@ -4,7 +4,7 @@ title: AWS Introduction
 subtitle: This is a simple introduction on AWS - most common services what you can connect with without prior experience in cloud services 
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [AWS, Cloud]
 comments: true
 ---
 
