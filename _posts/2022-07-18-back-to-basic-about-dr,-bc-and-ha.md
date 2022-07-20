@@ -3,6 +3,7 @@ layout: post
 title: Back to basic about DR, BC and HA
 description: null
 date: 2022-07-18T10:31:46.695Z
+nobanner: "yes"
 fb-img: null
 ---
 
