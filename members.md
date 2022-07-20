@@ -48,12 +48,6 @@ members:
           - name: Mansi Agrawal (MSR)
             photo_url: /img/members/mansi.jpg
             web_url: https://mansiagarwal11.github.io/
-          - name: Xiaochen Han (MSCV)
-            photo_url: /img/members/xiaochen.jpg
-            web_url:
-          - name: Tanay Sharma (MSCV)
-            photo_url: /img/members/tanay.jpg
-            web_url:
           - name: Sarthak Shetty (MSME)
             photo_url: /img/members/sarthak.jpg
             web_url: https://sarthakjshetty.github.io/
@@ -128,6 +122,10 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/ji-liu/
           - name: Zhenli Zhang (MSCV) -> Nuro
             web_url: https://www.linkedin.com/in/zhenli-zhang-a36912126
+          - name: Xiaochen Han (MSCV)
+            web_url:
+          - name: Tanay Sharma (MSCV)
+            web_url:
       - name: Undergraduate students
         full: False
         list:
