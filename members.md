@@ -90,23 +90,15 @@ members:
        # list:
   - name: Alumni
     list:
-      - name: Master's students
+      - name: Master's students (Reseach Master's)
         full: False
         list:
-          - name: Edward Ahn (MSR) -> AI / ML Engineer at Apple
-            web_url: https://www.ri.cmu.edu/ri-people/edward-ahn/
+          - name: Yufei Wang (MSCS) -> CMU PhD
+            web_url: https://yufeiwang63.github.io/
           - name: Sujay Bajrachaya (MSR) -> Software Engineer at Epic Systems
             web_url: https://sujaybajracharya.me/
           - name: Qiao Gu (MSR) -> U Toronto PhD
             web_url: https://georgegu1997.github.io/
-          - name: Yi Gu (MRSD)
-            web_url: https://www.ri.cmu.edu/ri-people/yi-gu/
-          - name: Arpit Jangid (MSCV)
-            web_url: https://www.ri.cmu.edu/ri-people/arpit-jangid/
-          - name: Ji Liu (MSCV)
-            web_url: https://www.ri.cmu.edu/ri-people/ji-liu/
-          - name: Himangi Mittal -> CMU MSR
-            web_url: https://himangim.github.io/
           - name: Junyu (Jenny) Nan (MSR) -> CMU PhD
             web_url: https://www.ri.cmu.edu/ri-people/junyu-nan/
           - name: Gautham Narayan Narasimhan (MSME) -> CV / ML Engineer at Path Robotics
@@ -115,10 +107,25 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/jianing-qian/
           - name: Harshit Sikchi (MSCS) -> UT Austin PhD
             web_url: https://hari-sikchi.github.io/
-          - name: Yufei Wang (MSCS) -> CMU PhD
-            web_url: https://yufeiwang63.github.io/
           - name: Mengyun (Olivia) Xu (MSCS) -> Amazon Robotics
             web_url: https://www.linkedin.com/in/mengyun-olivia-xu-36a7ab126
+          - name: Edward Ahn (MSR) -> AI / ML Engineer at Apple
+            web_url: https://www.ri.cmu.edu/ri-people/edward-ahn/
+      - name: Visiting Reseachers
+        full: False
+        list:
+            - name: Himangi Mittal -> CMU MSR
+              web_url: https://himangim.github.io/
+            - name: Jianren Wang -> CMU PhD
+      - name: Master's students (Capstone Project)
+        full: False
+        list:
+          - name: Yi Gu (MRSD)
+            web_url: https://www.ri.cmu.edu/ri-people/yi-gu/
+          - name: Arpit Jangid (MSCV)
+            web_url: https://www.ri.cmu.edu/ri-people/arpit-jangid/
+          - name: Ji Liu (MSCV)
+            web_url: https://www.ri.cmu.edu/ri-people/ji-liu/
           - name: Zhenli Zhang (MSCV) -> Nuro
             web_url: https://www.linkedin.com/in/zhenli-zhang-a36912126
       - name: Undergraduate students
@@ -127,25 +134,24 @@ members:
           - name: Rashmi Anil
           - name: Patrick Liu
           - name: Jake Olkin
-      - name: Visiting students
+      - name: Interns
         full: False
         list:
-          - name: Khush Agrawal (RISS)
-          - name: Jianren Wang
-          - name: Pengsheng Guo
-          - name: Wen-Hsuan Chu
-          - name: Akshay Dharmavaram
-          - name: Yifan Qiao
-          - name: Tiancheng Jin
-          - name: Stephanie Milani
-          - name: Shubham Sahoo
-          - name: Rohan Chacko
-          - name: Khush Agrawal (RISS)
-          - name: Yimin Tang (RISS)
-          - name: Ziwen (Leo) Zhuang (RISS)
-          - name: Zhaoyuan (Andy) Fang
-          - name: Yujie Lu
-          - name: Amith Pallankize
+                   - name: Khush Agrawal (RISS)
+                   - name: Pengsheng Guo
+                   - name: Wen-Hsuan Chu
+                   - name: Akshay Dharmavaram
+                   - name: Yifan Qiao
+                   - name: Tiancheng Jin
+                   - name: Stephanie Milani
+                   - name: Shubham Sahoo
+                   - name: Rohan Chacko
+                   - name: Khush Agrawal (RISS)
+                   - name: Yimin Tang (RISS)
+                   - name: Ziwen (Leo) Zhuang (RISS)
+                   - name: Zhaoyuan (Andy) Fang
+                   - name: Yujie Lu
+                   - name: Amith Pallankize
 
 ---
 
