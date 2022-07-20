@@ -1,9 +1,13 @@
-# Welcome to Beautiful Jekyll!
-# This config file is meant for settings that affect your entire website. When you first
-# set up your website you should go through all these settings and edit them, but after
-# the initial set up you won't need to come back to this file often.
+###########################################################
+### Welcome to Beautiful Jekyll!
+### This config file is meant for settings that affect your entire website. When you first
+### set up your website you should go through all these settings and edit them, but after
+### the initial set up you won't need to come back to this file often.
+###########################################################
 
+############################
 # --- Required options --- #
+############################
 
 # Name of website
 title: My Website
@@ -11,7 +15,9 @@ title: My Website
 # Your name to show in the footer
 author: Some Person
 
+###############################################
 # --- List of links in the navigation bar --- #
+###############################################
 
 navbar-links:
   About Me: "aboutme"
@@ -20,7 +26,9 @@ navbar-links:
     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
 
+################
 # --- Logo --- #
+################
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
@@ -34,7 +42,9 @@ round-avatar: true
 #title-img: /path/to/image
 
 
+#####################################
 # --- Footer social media links --- #
+#####################################
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
@@ -71,7 +81,9 @@ social-network-links:
 # The URL for the feed will be https://<your_website>/feed.xml
 rss-description: This website is a virtual proof that I'm awesome
 
+###########################
 # --- General options --- #
+###########################
 
 # Select which social network share links to show in posts
 share-links-active:
@@ -102,7 +114,9 @@ edit_page_button: true
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
 
+######################################
 # --- Colours / background image --- #
+######################################
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
@@ -136,7 +150,9 @@ footer-hover-col: "#0085A1"
 #site-js:
 #  - "/assets/js/custom-script.js"
 
+#################################
 # --- Web Analytics Section --- #
+#################################
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
 #gtag: ""
@@ -158,7 +174,9 @@ footer-hover-col: "#0085A1"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
+####################
 # --- Comments --- #
+####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
@@ -209,7 +227,9 @@ footer-hover-col: "#0085A1"
 #  emit-metadata: 0
 #  theme: light
 
+################
 # --- Misc --- #
+################
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
@@ -217,7 +237,9 @@ date_format: "%B %-d, %Y"
 # Facebook App ID
 #fb_app_id: ""
 
+#################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #
+#################################################################################
 
 # Output options (more information on Jekyll's site)
 timezone: "America/Toronto"
