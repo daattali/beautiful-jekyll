@@ -7,7 +7,11 @@ nobanner: no
 fb-img: null
 ---
 
-What used to be the wild west several years ago is now a pretty stable and settled landscape of Backup software vendors, Vembu being one of them with BDRSuite v5.3 that was released recently. The company adopted a more aggressive release cycle with BDRSuite 5 to address clients feature requests and security fixes more actively. That new version follows this cycle as it is distributed only 3 months after [./2022-04-26-bdrsuite-v5.2-brings-more-cloud-capabilities.md](BDRSuite v5.2) and brings a number of improvements to the product that may benefit all new and existing customers.
+What used to be the wild west several years ago is now a pretty stable and settled landscape of Backup software vendors, Vembu being one of them with BDRSuite v5.3 that was released recently. The company adopted a more aggressive release cycle with BDRSuite 5 to address clients feature requests and security fixes more actively. That new version follows this cycle as it is distributed only 3 months after [BDRSuite v5.2](https://www.vxav.fr/2022-04-26-bdrsuite-v5.2-brings-more-cloud-capabilities/) and brings a number of improvements to the product that may benefit all new and existing customers.
+
+[![bdr suite download](/img/vembu-download.png)](https://www.vembu.com/vembu-bdr-suite-download/?utm_source=vxav&utm_medium=blog&utm_campaign=download)
+
+BDRSuite v5.3 is a Windows or Linux installer and you can use it unrestricted for free during a **30 days trial period**.
 
 ## File Server & Endpoints backup integrated into BDRSuite Backup Server UI
 
@@ -57,3 +61,7 @@ The release notes document a number of smaller changes brought in BDRSuite v5.3:
 * Enhanced backup progress window for Google Workspace backup
 * Tree view for Google Drive data restore
 * Enhanced report for Google Workspace backups
+
+## BDRSuite v5.3 update
+
+Updating your BDRSuite server is pretty straightforward as usual. However, it is recommended to review the [Software Update Guide](https://www.vembu.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) to make sure your scenario is covered and the [Upgrade Checklist](https://www.vembu.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) before upgrading to BDRSuite v5.3.
