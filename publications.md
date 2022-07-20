@@ -14,7 +14,7 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
-            <img src="../pics/ECCV-logo3.png" img width="250">
+            <img src="../pics/new_splash.png" img width="250">
         </td>
         <td>Differentiable Raycasting for Self-supervised Occupancy Forecasting<br>
             <div class="pubauthor">
