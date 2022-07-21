@@ -4,7 +4,7 @@ title: Publications
 subtitle:
 ---
 
-Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qig6iu1pL7XMSm0XzmdhTXJysk8/edit#) to see our research highlights! <br>
+Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qig6iu1pL7XMSm0XzmdhTXJysk8/edit#) to see our research highlights, and [this document](../Research_Statement.pdf) which contains a research statement summarizing some recent (and future) directions for the lab! <br>
 Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 2022) on some of our work.
 
 <!--Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work.-->
@@ -14,7 +14,7 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
-            <img src="../pics/new_splash.png" img width="250">
+            <img src="../pics/new_splash.png" img width="250" height="120">
         </td>
         <td>Differentiable Raycasting for Self-supervised Occupancy Forecasting<br>
             <div class="pubauthor">
