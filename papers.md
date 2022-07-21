@@ -8,17 +8,18 @@ layout: page
 
 **Dimanchev, E.**, D. Qorbani, M. Korpas. 2022. [Electric vehicle adoption dynamics on the road to deep decarbonization](https://www.researchgate.net/publication/362025983_Electric_Vehicle_Adoption_Dynamics_on_the_Road_to_Deep_Decarbonization). Book chapter in "The 4Ds of Energy Transition: Decarbonization, Decreasing use, Decentralization, and Digitalization". Wiley. 
 * Access: (contact for a copy)
+* Model [link](https://zenodo.org/record/6191882#.YtkZVS8RrT8)
 
 **Dimanchev, E.**, J. Hodge, J. Parsons. 2021. [The role of hydropower reservoirs in deep decarbonization policy](https://www.sciencedirect.com/science/article/pii/S0301421521002391). *Energy Policy* 155. 
   * Open access [pre-print](https://ceepr.mit.edu/workingpaper/two-way-trade-in-green-electrons-deep-decarbonization-of-the-northeastern-u-s-and-the-role-of-canadian-hydropower/) 
   * Public comment on NY state proceeding [15-01168](https://www.dropbox.com/s/7c14v6t9zxdotk3/NYDPS.pdf?dl=0)
-  * Code and data on [Zenodo](https://doi.org/10.5281/zenodo.3773861)
+  * Code and data [link](https://doi.org/10.5281/zenodo.3773861)
   
 **Dimanchev, E.**, et al. 2019. [Health Co-Benefits of Sub-National Renewable Energy Policy in the U.S.](https://iopscience.iop.org/article/10.1088/1748-9326/ab31d9) *Environmental Research Letters* 14 085012.
   * [Open access](https://iopscience.iop.org/article/10.1088/1748-9326/ab31d9)
   * [Testimony](http://search-prod.lis.state.oh.us/cm_pub_api/api/unwrap/chamber/133rd_ga/ready_for_publication/committee_docs/cmte_s_energy_pu_1/testimony/cmte_s_energy_pu_1_2019-06-19-0800_742/testimonyemildimanchevmit.pdf) for the Ohio Senate
   * [Report](https://globalchange.mit.edu/publication/17278) including Ohio case study
-  * Code and data on [Zenodo](https://doi.org/10.5281/zenodo.3605637)
+  * Code and data [link](https://doi.org/10.5281/zenodo.3605637)
 
 ## Working papers, and reports (open access)
 
