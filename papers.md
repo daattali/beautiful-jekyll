@@ -11,7 +11,7 @@ layout: page
 * Model [link](https://zenodo.org/record/6191882#.YtkZVS8RrT8)
 
 **Dimanchev, E.**, J. Hodge, J. Parsons. 2021. [The role of hydropower reservoirs in deep decarbonization policy](https://www.sciencedirect.com/science/article/pii/S0301421521002391). *Energy Policy* 155. 
-  * Open access [pre-print](https://ceepr.mit.edu/workingpaper/two-way-trade-in-green-electrons-deep-decarbonization-of-the-northeastern-u-s-and-the-role-of-canadian-hydropower/) 
+  * Open access [pre-print](https://ceepr.mit.edu/workingpaper/two-way-trade-in-green-electrons-deep-decarbonization-of-the-northeastern-u-s-and-the-role-of-canadian-hydropower/) or get in touch
   * Public comment on NY state proceeding [15-01168](https://www.dropbox.com/s/7c14v6t9zxdotk3/NYDPS.pdf?dl=0)
   * Code and data [link](https://doi.org/10.5281/zenodo.3773861)
   
