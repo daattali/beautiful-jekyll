@@ -250,8 +250,14 @@ img {
   margin-top: 0;
   font-size: 1em;
   border: 0;
-  min-width: 100%;
   padding: 0;
+  {% if site.navbar-var-length %}
+  min-width: 100%;
+  {% else %}
+  min-width: 0;
+  width: 100%;
+  word-break: break-word;
+  {% endif %}
 }
 
 .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
@@ -260,6 +266,9 @@ img {
   text-decoration: none !important;
   font-weight: normal;
   color: {{ site.navbar-text-col | default: "#404040" }};
+  {% unless site.navbar-var-length %}
+  white-space: normal;
+  {% endunless %}
 }
 
 @media (min-width: 1200px) {
