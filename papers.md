@@ -6,7 +6,7 @@ layout: page
 
 ## Peer-reviewed research
 
-**Dimanchev, E.**, D. Qorbani, M. Korpas. 2022. [Electric vehicle adoption dynamics on the road to deep decarbonization](https://www.researchgate.net/publication/362025983_Electric_Vehicle_Adoption_Dynamics_on_the_Road_to_Deep_Decarbonization). Book chapter in "The 4Ds of Energy Transition: Decarbonization, Decreasing use, Decentralization, and Digitalization". Wiley. 
+**Dimanchev, E.**, D. Qorbani, M. Korpas. 2022. [Electric vehicle adoption dynamics on the road to deep decarbonization](https://onlinelibrary.wiley.com/doi/10.1002/9783527831425.ch8). Book chapter in "The 4Ds of Energy Transition: Decarbonization, Decreasing use, Decentralization, and Digitalization". Wiley. 
 * Access: (contact for a copy)
 * Model [link](https://zenodo.org/record/6191882#.YtkZVS8RrT8)
 
