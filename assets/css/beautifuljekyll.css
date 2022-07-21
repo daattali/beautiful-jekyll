@@ -268,7 +268,7 @@ img {
   color: {{ site.navbar-text-col | default: "#404040" }};
   {% unless site.navbar-var-length %}
   white-space: normal;
-  {% endif %}
+  {% endunless %}
 }
 
 @media (min-width: 1200px) {
