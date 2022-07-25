@@ -55,7 +55,7 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
             <a href="https://sites.google.com/view/reskin-cloth/home">[Project Page]</a>
             <a href="javascript:copy(div2022reskinfabric, bib2022reskinfabric)">[Bibtex]</a>
             <a href="javascript:copy(div2022reskinfabric, abs2022reskinfabric)">[Abstract]</a>
-            [arXiv]
+	    <a href="https://arxiv.org/abs/2207.11196">[arXiv]</a>
         </div>
         <div id="div2022reskinfabric" class="pubInfo"></div>
         <br>
