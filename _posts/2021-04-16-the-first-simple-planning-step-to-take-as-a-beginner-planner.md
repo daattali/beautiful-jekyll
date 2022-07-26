@@ -53,6 +53,6 @@ The first simple planning step to take as a beginner planner need not be complic
 
 ## DOWNLOAD YOUR FREE PRINTABLE DAILY PLANNER SHEET: a gift for you!
 
-_PS if you’d like to get started on daily planning or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_._
+_PS if you’d like to get started on daily planning or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_. You can also find all of my printable planners in my shop_ [_HERE_](https://www.etsy.com/shop/simplehomemomshop)_._
 
 ![A picture of the free daily plan printable.](/uploads/planner-sheet.png "The first simple planning step to take as a beginner planner SHM.")
