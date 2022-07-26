@@ -67,6 +67,4 @@ I hope you enjoyed my blog on how to start planning for beginners. Take it slow,
 
 ## DOWNLOAD YOUR FREE PRINTABLE DAILY PLANNER SHEET: a gift for you!
 
-_If you'd like to get started on daily planning or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_. I also have an upcoming class on beginner planning basics. If you'd like to be the first to know when that launches, shoot me a quick email at simplehomemom@gmail.com_ 
-
-![A picture of my daily planner sheet.](/uploads/planner-sheet.png "How to Start Planning for Beginners SHM")
+_PS if you’d like to get started on daily planning or step up your planning game, I created a free printable daily planner sheet for you that you can use. You can find it_ [_here_](https://mailchi.mp/367852d64614/free-printable-daily-planner-sheet)_. You can also find all of my printable planners in my shop_ [_HERE_](https://www.etsy.com/shop/simplehomemomshop)_._![A picture of my daily planner sheet.](/uploads/planner-sheet.png "How to Start Planning for Beginners SHM")
