@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SNT : évaluation SNT du jour'
+title: 'SNT : évaluation SNT du jouros'
 published: true
 ---
 
