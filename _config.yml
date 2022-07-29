@@ -11,6 +11,7 @@ future: true
 navbar-links:
   Home: "https://fawazghali.com"
   Talks: "talks"
+  Photos: "photos"
   About: "aboutme"
   
 # --- Logo --- #
