@@ -11,7 +11,7 @@ We do not collect any personally identifiable information from users. Account cr
 We may share anonymous, aggregate statistics with outside parties, such as how many people use the application. We may disclose your information in response to subpoenas, court orders, or other legal requirements; to exercise our legal rights or defend against legal claims; to investigate, prevent, or take action regarding illegal activities, suspected fraud or abuse, violations of our policies; or to protect our rights and property. In the future, we may sell to, buy, merge with, or partner with other businesses. In such transactions, user information may be among the transferred assets.
 
 #### Ad companies collect anonymous data.
-Ad companies may use and collect anonymous data about your interests to customize content and advertising. This data is not linked to your identity. Please review the Privacy Policy for each individual ad company.
+Ad companies may use and collect anonymous data about your interests to customize content and advertising. This data is not linked to your identity.
 
 ##### AdMob (Google)
 AdMob provides a way for Google to help app developers earn money from their apps. To improve the performance of AdMob, the Google Mobile Ads SDK may collect certain information from apps, including:
