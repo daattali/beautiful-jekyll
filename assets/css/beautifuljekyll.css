@@ -103,6 +103,11 @@ img {
   max-width: 100%;
 }
 
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
+
 .linked-section {
   padding-top: 3.75rem;
   margin-top: -1.5625rem;
