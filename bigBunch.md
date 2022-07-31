@@ -1,18 +1,16 @@
 ---
 layout: page
-title: Grapes 
+title: Big Bunch
 subtitle: Find a bunch of words.
 ---
 
-The Grapes mobile application is a word game with pleasant sounds.
+##What is Big Bunch?
 
-Eventually you can download it here.
+Big Bunch is a 24 hour daily word game that begins and ends at midnight Eastern Standard Time.
 
-Until then, hold your horses.
+## How is the daily winner determined?</summary>
 
-- I like grapes
-- I really like grapes
+The first player to reach the day's highest score wins.
 
-### Available for iPad and iOS
 
-Learn about [my favorite fruit](https://en.wikipedia.org/wiki/Grape).
+### Available for iPad and iOS 15.0 and above
