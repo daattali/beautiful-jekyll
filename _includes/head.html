@@ -57,14 +57,14 @@
   {% if layout.common-css %}
     {% for css in layout.common-css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
-      <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+      <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
     {% endfor %}
   {% endif %}
 
   {% if site.site-css %}
     {% for css in site.site-css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
-      <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+      <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
     {% endfor %}
   {% endif %}
 
@@ -77,7 +77,7 @@
   {% if page.css %}
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
-      <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+      <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
     {% endfor %}
   {% endif %}
 
@@ -144,7 +144,7 @@
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
-  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
   {% endif %}
 
   {% if page.head-extra %}
