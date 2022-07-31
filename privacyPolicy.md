@@ -16,7 +16,7 @@ Ad companies may use and collect anonymous data about your interests to customiz
 ##### AdMob (Google)
 AdMob provides a way for Google to help app developers earn money from their apps. The ads are created and paid for by advertisers who want to promote their products.
 
-[Google Privacy Policy](https://policies.google.com/privacy).
+[Google Privacy Policy](https://policies.google.com/privacy)
 
 #### We implement reasonable security measures to help keep your information secure.
 We implement security measures such as Basic Authorization to access the API. In addition, all communication with the API requires a secure, encrypted HTTPS connection.
