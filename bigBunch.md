@@ -12,6 +12,6 @@ Big Bunch is a 24 hour daily word game that begins and ends at midnight Eastern 
 
 The first player to reach the day's highest score wins.
 
-![](/assets/img/bigBunch_win_white_bg.PNG#center){:width="50%"}
+![](/assets/img/bigBunch_win_white_bg.JPG#center){:width="50%"}
 
 #### Available for iPad and iOS 15.0 and above
