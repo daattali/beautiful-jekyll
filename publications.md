@@ -127,7 +127,7 @@ doi={10.1109/LRA.2022.3191239}}
     Robotic manipulation of highly deformable cloth presents a promising opportunity to assist people with several daily tasks, such as washing dishes; folding laundry; or dressing, bathing, and hygiene assistance for individuals with severe motor impairments. In this work, we introduce a formulation that enables a collaborative robot to perform visual haptic reasoning with cloth -- the act of inferring the location and magnitude of applied forces during physical interaction. We present two distinct model representations, trained in physics simulation, that enable haptic reasoning using only visual and robot kinematic observations. We conducted quantitative evaluations of these models in simulation for robot-assisted dressing, bathing, and dish washing tasks, and demonstrate that the trained models can generalize across different tasks with varying interactions, human body sizes, and object shapes.  We also present results with a real-world mobile manipulator, which used our simulation-trained models to estimate applied contact forces while performing physically assistive tasks with cloth.
             </blockquote>
         </div>
-        <div class="pubjournal">International Conference on Intelligent Robots and Systems (IROS), 2022</div>
+        <div class="pubjournal">Robotics and Automation Letters (RA-L) with presentation at the International Conference on Intelligent Robots and Systems (IROS), 2022</div>
         <div style="font-size:small">
             <a href="https://sites.google.com/view/visualhapticreasoning/home">[Project Page]</a>
             <a href="javascript:copy(div2022vhr, bib2022vhr)">[Bibtex]</a>
