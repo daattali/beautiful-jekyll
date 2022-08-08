@@ -57,12 +57,12 @@ social-network-links:
 #  patreon: 
 #  youtube: c/SamErde
 #  medium: SamErde
-  reddit: SturdyErde
+#  reddit: SturdyErde
   linkedin: SamErde
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  instagram: 
-  spotify: SamErde
+#  spotify: SamErde
 #  telephone: +1
 #  steam: SturdyErde
 #  twitch: yourname
@@ -92,8 +92,8 @@ share-links-active:
   vk: false
 
 # How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "SamErde.github.io"
+# Remove this if jyou don't want a link in the footer
+#url-pretty: "SamErde.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
