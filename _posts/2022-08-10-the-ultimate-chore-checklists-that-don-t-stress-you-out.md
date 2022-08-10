@@ -28,7 +28,7 @@ _I am going to be sharing with you my valuable chore routines that I share on my
 
 ### DAILY CHORE CHECKLIST + LOOP CHORE CHECKLIST
 
-**But, first download your chore routine printables** [**HERE**](https://www.dropbox.com/s/o9dm86wv0ve6l0o/Chore%20Checklists%20SHM%20.pdf?dl=0) **because you'll need them for learning about loop planning through the rest of the blog!**
+**But, first download your chore routine printables** [**HERE**](https://mailchi.mp/1962b2e44326/chore-checklists) **because you'll need them for learning about loop planning through the rest of the blog!**
 
 These checklists go hand in hand to help you get your chores done and the magic is the loop chore checklist because it helps you tackle those "extra" chores at your own pace. Low/no stress! Woop! But, first. I can hear you asking: "But what does loop planning mean?" Read on to see how loop planning works with my daily chore checklists below.
 
