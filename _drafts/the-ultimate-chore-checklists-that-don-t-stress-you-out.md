@@ -17,7 +17,7 @@ show-avatar: true
 title: The Ultimate Daily Chore Checklists that Don't Stress You Out
 description: This chore checklist encompasses daily chores and those extra chores
   to work through at your own pace.
-subtitle: ''
+subtitle: "+ free daily chore checklist printables"
 share-img: ''
 redirect_from: []
 
@@ -40,7 +40,7 @@ These checklists go hand in hand to help you get your chores done and the magic 
 
 Loop planning is a fantastic strategy to use with home planning if you want to be consistent, but also don’t want to burn out. And. There are endless uses for loop planning with managing your home. My personal favourite is using a loop planning strategy for those "extra chores".
 
-##### So what’s loop planning? 
+##### So what’s loop planning?
 
 Well, a loop plan is essentially a list of things or tasks that you loop through, with no regard to time. That way you never feel behind or ahead, you know?
 
@@ -51,9 +51,13 @@ Well, a loop plan is essentially a list of things or tasks that you loop through
 * Currently I go through the loop on Monday-Thursday.
 * I decide what I want to do when I'm working on an area and then move on when I'm done (whenever that happens to be). I worked on the master bedroom windows and decluttering a couple things this week in my closet! Sometimes I'm just focusing on cleaning or just decluttering. I decide what to do each day in my loop chore area. Right now I'm doing it all because the house really needs it all (organizing, maintenance decluttering, cleaning).
 
-You can also do loop chores by ACTIVITY such as with: mopping, vacuuming, dusting or with cleaning toilets, cleaning the tub, cleaning the windows, mopping the floor (repeat). The options are completely endless with loop planning, but I love using my area method because it's easy to keep track of and I can prioritize what needs to be done each time. I can go through quickly or slowly depending on what mood or season of life I'm in. 
+You can also do loop chores by ACTIVITY such as with: mopping, vacuuming, dusting or with cleaning toilets, cleaning the tub, cleaning the windows, mopping the floor (repeat). The options are completely endless with loop planning, but I love using my area method because it's easy to keep track of and I can prioritize what needs to be done each time. I can go through quickly or slowly depending on what mood or season of life I'm in.
 
-**I promise you that loop planning becomes easier with practice too!**
+_I promise you that loop planning becomes easier with practice too!_
+
+**Save for future reference:**
+
+![Blog graphic](/uploads/the-ultimate-daily-chore-checklists-that-don-t-stress-you-out.png "The Ultimate Daily Chore Checklists that Don't Stress You Out SHM")
 
 ##### MORE LOOP PLANNING:
 
