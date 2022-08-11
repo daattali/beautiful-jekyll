@@ -4,7 +4,7 @@ title: Dev
 subtitle: A lot of lines...
 ---
 
-## Smart Contracts
+## Smart Contracts 📑
 
 
 | Language    | Env     | Library      |
@@ -14,15 +14,15 @@ subtitle: A lot of lines...
 | Js          | Linux   | Ethers       |
 
 
-### Altair Index Fund for Nali Project (Solidity-Web3)
+### ✔️ Nali Project
 
-- [Altair - Nali Project](https://app.nali.finance/altair-funds)
+- [Altair Funds](https://app.nali.finance/altair-funds)
 
 
 ---
 
 
-## MACHINE LEARNING
+## MACHINE LEARNING 🤖
 
 
 | Language  | Env         | Library    |
@@ -33,7 +33,6 @@ subtitle: A lot of lines...
 
 
 ### Training ML models on Numer.ai (Python-Colab-ML)
-
 
 - [Model 1](https://numer.ai/scobruone)
 - [Model 2](https://numer.ai/scobrutwo)
