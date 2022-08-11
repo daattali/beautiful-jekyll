@@ -4,7 +4,7 @@ title: Dev
 subtitle: A lot of lines...
 ---
 
-## Smart Contracts 📑
+## 📑 Smart Contracts 
 
 
 | Language    | Env     | Library      |
@@ -22,7 +22,7 @@ subtitle: A lot of lines...
 ---
 
 
-## MACHINE LEARNING 🤖
+## 🤖 MACHINE LEARNING 
 
 
 | Language  | Env         | Library    |
@@ -32,7 +32,7 @@ subtitle: A lot of lines...
 |           |             | keras      |
 
 
-### Training ML models on Numer.ai (Python-Colab-ML)
+### 📈 Training ML models on Numer.ai (Python-Colab-ML)
 
 - [Model 1](https://numer.ai/scobruone)
 - [Model 2](https://numer.ai/scobrutwo)
