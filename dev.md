@@ -4,7 +4,7 @@ title: Dev
 subtitle: A lot of lines...
 ---
 
-## Smart Contracts
+## SMART CONTRACTS
 || solidity || nodeJS || hardhat || typescript ||
 
 ### Altair Index Fund for Nali Project (Solidity-Web3) 
@@ -13,7 +13,7 @@ subtitle: A lot of lines...
 
 ---
 
-## Machine Learning
+## MACHINE LEARNING
 || python || google colab || sklearn || tensorflow ||
 
 ### Training ML models on Numer.ai (Python-Colab-ML)
