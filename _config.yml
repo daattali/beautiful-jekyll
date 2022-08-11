@@ -23,7 +23,7 @@ navbar-links:
   About Me : "aboutme"
   Music    : "music"
   Dev      : "dev""
-  Blog     : https://medium.com/@scobru
+  Blog     : "https://medium.com/@scobru"
   
 ################
 # --- Logo --- #
