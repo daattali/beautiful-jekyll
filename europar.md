@@ -17,12 +17,12 @@ The workshop will be held in the Hugh Fraser room and running between 9:00am and
 | Time          | Title | Presenter |
 | ------------- | ------------- | ------------- |
 | 9:00 - 9:05  | Session welcome and aims  | Nick Brown |
-| 9:05 - 9:40  | Keynote: Evolutionary Re-Engineering of an Industrial HPC application with OP2 [Abstract](https://www.xdsl.dev/euro-par-abstracts/#gihan-mudalige)  | Gihan Mudalige |
-| 9:40 - 10:05 | Research paper: Performance of the Vipera framework for DSLs on micro-core architectures [Abstract](https://www.xdsl.dev/euro-par-abstracts/#maurice-jamieson) | Maurice Jamieson |
-| 10:05 - 10:30 | Research paper: FFTc: An MLIR Dialect for Developing HPC Fast Fourier Transform Libraries [Abstract](https://www.xdsl.dev/euro-par-abstracts/#yifei-he)| Yifei He |
+| 9:05 - 9:40  | Keynote: Evolutionary Re-Engineering of an Industrial HPC application with OP2 _([Abstract](https://www.xdsl.dev/euro-par-abstracts/#gihan-mudalige))_  | Gihan Mudalige |
+| 9:40 - 10:05 | Research paper: Performance of the Vipera framework for DSLs on micro-core architectures _([Abstract](https://www.xdsl.dev/euro-par-abstracts/#maurice-jamieson))_ | Maurice Jamieson |
+| 10:05 - 10:30 | Research paper: FFTc: An MLIR Dialect for Developing HPC Fast Fourier Transform Libraries _([Abstract](https://www.xdsl.dev/euro-par-abstracts/#yifei-he))_ | Yifei He |
 | 10:30 - 11:00 | Morning coffee break | |
-| 11:00 - 11:25 | Invited talk: xDSL an ecosystem for DSL development [Abstract](https://www.xdsl.dev/euro-par-abstracts/#tobias-grosser) | Tobias Grosser
-| 11:25 - 11:50 | Research paper: TensorFlow as a DSL for stencil-based computation on the Cerebras Wafer Scale Engine [Abstract](https://www.xdsl.dev/euro-par-abstracts/#nick-brown)| Nick Brown |
+| 11:00 - 11:25 | Invited talk: xDSL an ecosystem for DSL development _([Abstract](https://www.xdsl.dev/euro-par-abstracts/#tobias-grosser))_ | Tobias Grosser
+| 11:25 - 11:50 | Research paper: TensorFlow as a DSL for stencil-based computation on the Cerebras Wafer Scale Engine _([Abstract](https://www.xdsl.dev/euro-par-abstracts/#nick-brown))_ | Nick Brown |
 | 11:50 - 12:25 | Panel session | |
 | 12:25 - 12:30 | Conclusions and next steps | Nick Brown |
 
