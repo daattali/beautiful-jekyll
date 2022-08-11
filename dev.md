@@ -18,15 +18,15 @@ subtitle: A lot of lines...
 
 ### Training ML models on Numer.ai (Python-Colab-ML)
 
-- https://numer.ai/scobruone
-- https://numer.ai/scobrutwo
-- https://numer.ai/scobrufive
-- https://numer.ai/scobruseven
-- https://numer.ai/scobrunine
+- [model 1](https://numer.ai/scobruone)
+- [model 2](https://numer.ai/scobrutwo)
+- [model 5](https://numer.ai/scobrufive)
+- [model 7](https://numer.ai/scobruseven)
+- [model 9](https://numer.ai/scobrunine)
 
 
 ### Buy Models on Numerbay.ai.
 
-- https://numerbay.ai/product/numerai-predictions/scobrufive
-- https://numerbay.ai/product/numerai-predictions/scobrutwo
+- [buy model 5](https://numerbay.ai/product/numerai-predictions/scobrufive)
+- [buy model 2](https://numerbay.ai/product/numerai-predictions/scobrutwo)
 
