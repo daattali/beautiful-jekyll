@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dev 
-subtitle: a lot of lines...
+subtitle: A lot of lines...
 ---
 
 ## Smart Contracts
