@@ -22,7 +22,8 @@ author: Francesco Bruno
 navbar-links:
   About Me: "aboutme"
   Music: "music"
-  Dev: "dev"
+  Dev: "dev""
+  Blog: "https://medium.com/@scobru"
   
 ################
 # --- Logo --- #
@@ -55,9 +56,9 @@ social-network-links:
   twitter: scobru1988
 #  patreon: DeanAttali
   youtube: c/scobru88
-#  medium: yourname
+  medium: scobru
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: francesco-bruno-me
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
