@@ -74,11 +74,11 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
                     <pre>@ARTICLE{qi2022dough, 
 author={Qi, Carl and Lin, Xingyu and Held, David},
 journal={IEEE Robotics and Automation Letters}, 
-title={Learning Closed-loop Dough Manipulation Using a Differentiable Reset Module}, 
+title={Learning Closed-Loop Dough Manipulation Using a Differentiable Reset Module}, 
 year={2022},
-volume={},
-number={},
-pages={1-8},
+volume={7},
+number={4},
+pages={9857-9864},
 doi={10.1109/LRA.2022.3191239}}
                     </pre>
                 </blockquote>
