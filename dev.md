@@ -6,13 +6,10 @@ subtitle: A lot of lines...
 
 ## SMART CONTRACTS
 
-| Language    | 
-| ----------- | 
-| Solidity    | 
-| web3        |
-| hardhat     |
-| nodejs      !
-
+| Language    | Env     | Library      |
+| ----------- | ------- | ------------ |
+| Solidity    | hardhat | openZeppelin |
+| web3        | nodejs  |              |
 
 ### Altair Index Fund for Nali Project (Solidity-Web3) 
 
@@ -21,7 +18,13 @@ subtitle: A lot of lines...
 ---
 
 ## MACHINE LEARNING
-|| python || google colab || sklearn || tensorflow ||
+
+| Language  | Env         | Library    |
+| ----------| ----------- | ---------- |
+| Python    | Goole Colab | sklearn    !
+|           | Conda       | tensorflow |
+|           !             ! keras      |
+
 
 ### Training ML models on Numer.ai (Python-Colab-ML)
 
@@ -35,4 +38,6 @@ subtitle: A lot of lines...
 
 - [Buy model 5](https://numerbay.ai/product/numerai-predictions/scobrufive)
 - [Buy model 2](https://numerbay.ai/product/numerai-predictions/scobrutwo)
+
+
 
