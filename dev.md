@@ -41,7 +41,7 @@ subtitle: A lot of lines...
 - [Model 9](https://numer.ai/scobrunine)
 
 
-### Buy Models on Numerbay
+### 💲 Buy Models on Numerbay
 
 
 - [Buy model 5](https://numerbay.ai/product/numerai-predictions/scobrufive)
