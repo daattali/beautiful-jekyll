@@ -7,7 +7,9 @@ subtitle: a lot of lines...
 ## Smart Contracts
 || solidity || nodeJS || hardhat || typescript ||
 
-- Smart Contract Developer for Nali Project (Solidity-Web3)
+### Altair Index Fund for Nali Project (Solidity-Web3) 
+
+- https://app.nali.finance/altair-funds
 
 ---
 
@@ -22,7 +24,10 @@ subtitle: a lot of lines...
 - https://numer.ai/scobruseven
 - https://numer.ai/scobrunine
 
+
 ### Buy Models on Numerbay.ai.
 
 - https://numerbay.ai/product/numerai-predictions/scobrufive
 - https://numerbay.ai/product/numerai-predictions/scobrutwo
+
+
