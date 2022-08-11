@@ -4,21 +4,19 @@ title: Dev
 subtitle: A lot of lines...
 ---
 
-## SMART CONTRACTS
+## Smart Contracts
 
 
 | Language    | Env     | Library      |
 | ----------- | ------- | ------------ |
 | Solidity    | Hardhat | OpenZeppelin |
-|             | Nodejs  | Web3js       |
-|             |         | Ethers       |
+| TypeScript  | Nodejs  | Web3js       |
+| Js          | Linux   | Ethers       |
 
 
 ### Altair Index Fund for Nali Project (Solidity-Web3)
 
-
 - [Altair - Nali Project](https://app.nali.finance/altair-funds)
-
 
 
 ---
