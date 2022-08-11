@@ -36,7 +36,7 @@ subtitle: A lot of lines...
 
 ---
 
-### 📈 Training ML models on Numer.ai (Python-Colab-ML)
+### 📈 Training ML models on Numerai(https://numer.ai)
 
 - [Model 1](https://numer.ai/scobruone)
 - [Model 2](https://numer.ai/scobrutwo)
