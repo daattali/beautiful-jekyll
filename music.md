@@ -4,34 +4,34 @@ title: Music
 subtitle: Make your transition
 ---
 
-## MUSIC PROJECT 🎵
+## 🎵 MUSIC PROJECT 
 
-### Fade 🪐
+### 🪐 Fade 
 
 - [Listen on Spotify](https://open.spotify.com/artist/2sIv256joXS6VZVqH3t67N?si=2v2GAhQjQBCBdyzYNxvvVw)
 - [Buy on Bandcamp](https://fademusik.bandcamp.com)
 
-### Zima Blue 🔵 
+### 🔵 Zima Blue  
 
 - [Listen on Spotify](https://open.spotify.com/artist/3Gb9a8UTU2xYRskhvLfkWz?si=WPaVg_NfR6qw_JQmoW713A)
 - [Buy on Bandcamp](https://zimablue.bandcamp.com)
 
-### Homologo ✍️
+### ✍️ Homologo 
 
 - [Listen on Spotify](https://open.spotify.com/artist/10WDitiwNCQp8bHO4guJvj?si=Xf_YVMkNSRKZdu4pDkzklA)
 - [Buy on Bandcamp](https://homologomusic.bandcamp.com)
 
-### Adam's Apple 🎆
+### 🎆 Adam's Apple 
 
 - [Listen on Spotify](https://open.spotify.com/album/6MKcdicYMFIJh3sW7AjNTS?si=_ZYpJ_frSwGTvz_fwPz1TQ)
 
-## ADV and COMMERCIALS 🛍️
+## 🛍️ ADV and COMMERCIALS 
 
 - [Commercial and Fashion ADV on YouTube](https://www.youtube.com/scobru88)
 
 ---
 
-## RELEASES ⏺️
+## ⏺️ RELEASES 
 
 - [Fade - Infinite EP](https://www.discogs.com/it/release/6701300-Fade-Infinite-EP)
 - [Fade - Dissolve EP](https://www.discogs.com/it/release/6701280-Fade-20-Ds-Manasi-Dissolve)
