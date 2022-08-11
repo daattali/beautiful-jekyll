@@ -39,4 +39,6 @@ subtitle: Make your transition
 - [Fade - Why Us](https://www.discogs.com/it/release/9175660-Fade-Why-Us)
 - [Fade - Manifest](https://www.discogs.com/it/release/19097467-Fade-Manifest-EP)
 
+#### 🎹 [My music on Audius](https://audius.co/francescobruno)
+
 
