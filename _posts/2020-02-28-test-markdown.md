@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
+title: Hello World
+subtitle: lorem ipsum dolor
 tags: [things]
 comments: true
 ---
 
-Welcome!
+Hi, welcome to my webpage!
