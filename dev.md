@@ -5,20 +5,18 @@ subtitle: A lot of lines...
 ---
 
 ## 📑 Smart Contracts 
-
-
+<br />
 | Language    | Env     | Library      |
 | ----------- | ------- | ------------ |
 | Solidity    | Hardhat | OpenZeppelin |
 | TypeScript  | Nodejs  | Web3js       |
 | Js          | Linux   | Ethers       |
-
-
+ <br />
 ### ✔️ Nali Project
-
+ <br />
 - [Altair Funds](https://app.nali.finance/altair-funds)
 
-
+ <br />
 ---
 
 
