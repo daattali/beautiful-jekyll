@@ -8,8 +8,9 @@ subtitle: A lot of lines...
 
 | Language    | Env     | Library      |
 | ----------- | ------- | ------------ |
-| Solidity    | hardhat | openZeppelin |
-| web3        | nodejs  |              |
+| Solidity    | Hardhat | OpenZeppelin |
+|             | Nodejs  | Web3js       |
+|             |         | Ethers       |
 
 ### Altair Index Fund for Nali Project (Solidity-Web3) 
 
@@ -21,9 +22,9 @@ subtitle: A lot of lines...
 
 | Language  | Env         | Library    |
 | ----------| ----------- | ---------- |
-| Python    | Goole Colab | sklearn    !
-|           | Conda       | tensorflow |
-|           !             ! keras      |
+| Python    | Goole Colab | Sklearn    |
+|           | Conda       | Tensorflow |
+|           |             | keras      |
 
 
 ### Training ML models on Numer.ai (Python-Colab-ML)
