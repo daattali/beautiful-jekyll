@@ -9,7 +9,7 @@ subtitle: a lot of lines...
 
 ### Altair Index Fund for Nali Project (Solidity-Web3) 
 
-- https://app.nali.finance/altair-funds
+- [Altair](https://app.nali.finance/altair-funds)
 
 ---
 
