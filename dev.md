@@ -6,6 +6,7 @@ subtitle: A lot of lines...
 
 ## 📑 Smart Contracts 
 
+---
 
 | Language    | Env     | Library      |
 | ----------- | ------- | ------------ |
@@ -13,6 +14,7 @@ subtitle: A lot of lines...
 | TypeScript  | Nodejs  | Web3js       |
 | Js          | Linux   | Ethers       |
 
+---
 
 ### ✔️ Nali Project
 
@@ -32,6 +34,7 @@ subtitle: A lot of lines...
 |           | Conda       | Tensorflow |
 |           |             | keras      |
 
+---
 
 ### 📈 Training ML models on Numer.ai (Python-Colab-ML)
 
@@ -41,10 +44,13 @@ subtitle: A lot of lines...
 - [Model 7](https://numer.ai/scobruseven)
 - [Model 9](https://numer.ai/scobrunine)
 
+---
 
 ### 💲 Buy Models on Numerbay
 
 
 - [Buy model 5](https://numerbay.ai/product/numerai-predictions/scobrufive)
 - [Buy model 2](https://numerbay.ai/product/numerai-predictions/scobrutwo)
+
+***
 
