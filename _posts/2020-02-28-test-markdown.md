@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Hello World
-subtitle: lorem ipsum dolor
+title: Initial Commit
+subtitle: Hi, welcome!!
 tags: [things]
 comments: true
 ---
 
-Hi, welcome to my webpage!
+![Buzz](https://media.makeameme.org/created/codes-codes.jpg)
