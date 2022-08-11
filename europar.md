@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Euro-Par Workshop
-subtitle: 22nd or 23rd August 2022, Glasgow Scotland
+subtitle: Morning of 22nd August 2022, Glasgow Scotland
 ---
 
 Domain Specific Languages (DSLs) have the potential to revolutionize the development of scientific high-performance software by providing scientists with abstractions that are tailored for their specific problem. By encoding rich domain knowledge by the programmer, the compilation tool-chain is then able to make effective choices around parallelism. Furthermore, if designed correctly, then the programmer is able to express their workload in an architecture-independent fashion, thus making portability across architectures possible, with the compilation tool-chain doing much of the heavy lifting.
@@ -10,31 +10,20 @@ This is especially important in HPC as even effectively exploiting today's super
 
 The term "language" in DSLs can be a bit of a misnomer, as the name of the game here is raising the abstraction level, and consequently technologies such as abstractions embedded inside existing languages, frameworks and libraries are also highly topical. Many believe that DSLs have the potential to get us closer to achieving the three P’s; productivity, performance, and performance portability. Whilst historically this objective has been often seen as somewhat of a chimera, there is wide acceptance in the HPC community that we need to solve the programming challenges associated with future exascale machines. Furthermore, there is a growing consensus that the benefits that DSLs can deliver are paramount and could be critical in unlocking the full potential of future supercomputers.
 
-## Call for papers
+## Schedule 
 
-There are numerous hurdles that must be overcome if DSLs are to be widely accepted, and this workshop aims to explore these different facets and enable a conversation between different parts of the community to help promote DSL adoption. 
+The workshop will be held in the Hugh Fraser room and running between 9:00am and 12:30pm on Monday 22nd of August.
 
-Topics of interest include, but are not limited to:
+| Time          | Title | Presenter |
+| ------------- | ------------- | ------------- |
+| 9:00 - 9:05  | Session welcome and aims  | Nick Brown |
+| 9:05 - 9:40  | Keynote: Evolutionary Re-Engineering of an Industrial HPC application with OP2  | Gihan Mudalige |
+| 9:40 - 10:05 | Research paper: Performance of the Vipera framework for DSLs on micro-core architectures | Maurice Jamieson |
+| 10:05 - 10:30 | Research paper: FFTc: An MLIR Dialect for Developing HPC Fast Fourier Transform Libraries | Yifei He |
+| 10:30 - 11:00 | Morning coffee break | |
+| 11:00 - 11:25 | Invited talk: xDSL and ecosystem for DSL development | Tobias Grosser
+| 11:25 - 11:50 | Research paper: TensorFlow as a DSL for stencil-based computation on the Cerebras Wafer Scale Engine | Nick Brown |
+| 11:50 - 12:25 | Panel session | |
+| 12:25 - 12:30 | Conclusions and next steps | Nick Brown |
 
-- Compiler technologies supporting DSL development
-- Appropriate DSL technologies and techniques for targeting HPC and parallelism
-- Novel domain specific abstractions
-- Success stories in porting codes to use a DSL
-- Mixing DSLs with other technologies
-- Consolidation of underlying DSL software stacks
-- Programming heterogeneous architectures using DSLs
-- Frameworks and libraries for raising the abstraction level
-- Best practice for developing DSLs
-- Programmer productivity studies  
-
-### Submission instructions
-We invite you to submit research papers detailing original work. All submissions must be in PDF format and follow the [Springer LNCS style](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines). Papers should not exceed 12 pages (including references) and can be submitted via the Euro-Par 2022 workshops Easychair [here](https://easychair.org/conferences/?conf=europar2022) (ensure you select the correct track to submit to which is _EuroPar Workshop on Domain Specific Languages for High Performance Computing 2022_).
-
-All submitted research papers will be peer-reviewed and accepted papers will be included in the workshop post-proceedings published by Springer. Please note that for a paper to be published it must be between 10 and 12 pages long.
-
-### Important dates
-
-**Paper submission deadline:** <strike>May 6th, 2022 AoE</strike> Extended to May 20th, 2022 AoE<br/>
-**Author notification:** July 1st, 2022<br/>
-**Workshop:** August 22nd or 23rd, 2022
 
