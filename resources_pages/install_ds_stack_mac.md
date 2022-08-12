@@ -25,6 +25,7 @@ subtitle: MDS software stack install instructions for macOS 2022/3
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
+- [Quarto](#quarto){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -352,17 +353,12 @@ by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```R
-install.packages(c('tidyverse', 'blogdown', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
-### Quarto
-
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio or the terminal. 
-
-Install the [last version of Quarto](https://quarto.org/docs/get-started/) for macOs.
 
 ### IRkernel
 
@@ -592,6 +588,12 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
+
+### Quarto
+
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio or the terminal. 
+
+Install the [last version of Quarto](https://quarto.org/docs/get-started/) for macOs.
 
 ## VS Code extensions
 
