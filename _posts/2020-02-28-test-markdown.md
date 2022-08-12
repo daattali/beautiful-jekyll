@@ -2,7 +2,7 @@
 layout: post
 title: Create your digital identity
 subtitle: with some tech knoledge...
-tags: [things]
+tags: [things,blockchain,ipfs]
 comments: true
 ---
 
