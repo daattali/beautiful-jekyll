@@ -10,9 +10,7 @@ subtitle: A lot of lines...
 
 | Language    | Env     | Library      |
 | ----------- | ------- | ------------ |
-| Solidity    | Hardhat | OpenZeppelin |
-| TypeScript  | Nodejs  | Web3js       |
-| Js          | Linux   | Ethers       |
+| Solidity <br><br> TypeScript <br><br> Js | Hardhat <br><br> Nodejs <br><br> Linux |  OpenZeppelin <br><br> Web3js <br><br> Ethers|
 
 ---
 
@@ -33,11 +31,9 @@ subtitle: A lot of lines...
 
 ---
 
-| Language  | Env         | Library    |
-| ----------| ----------- | ---------- |
-| Python    | Goole Colab | Sklearn    |
-|           | Conda       | Tensorflow |
-|           |             | keras      |
+| Language  | Env                        | Library    |
+| ----------| -----------                | ---------- |
+| Python    | Goole Colab <br><br> Conda | Sklearn <br><br> Tensorflow <br><br> keras |
 
 ---
 
