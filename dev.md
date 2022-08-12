@@ -21,9 +21,13 @@ subtitle: A lot of lines...
 
 - [Altair Funds](https://app.nali.finance/altair-funds)
 
-
 ---
 
+### ✔️ Fulmens 
+
+- [Web3 & Blockchain Consultant](https://fulmensrls.it)
+
+---
 
 ## 🤖 AI/ML 
 
