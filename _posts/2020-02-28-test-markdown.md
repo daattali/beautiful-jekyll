@@ -37,6 +37,6 @@ customizzabile per le vostre esigenze.
 **⚠️:** Assicurati di avere un account Github prima di continuare.
 
 Date un occhiata a: [Beaufiul jekyll](https://beautifuljekyll.com/)
-Potete forkare la repository e avere far girare il vostro sito web sul vostro dominio: ==githubuser.github.io==
+Potete forkare la repository e avere far girare il vostro sito web sul vostro dominio: <mark>githubuser.github.io</mark>
 
 
