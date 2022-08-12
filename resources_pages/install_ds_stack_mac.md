@@ -90,9 +90,9 @@ code --version
 you should see something like this if you were successful:
 
 ```
-1.45.1
+1.70.1
 5763d909d5f12fe19f215cbfdd29a91c0fa9208a
-x64
+arm64
 ```
 
 > **Note:** If you get an error message such as `-bash: code: command not found`, but you can see the VS Code application has been installed, then something went wrong with setting up the launch from the command line. Try following [these instructions](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) again, in particular you might want to try the described manual method of adding VS Code to your path.
@@ -213,10 +213,16 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.10.3
+conda 4.12.0
 ```
 
 > **Note:** If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
+
+As the new version of Python downloaded with miniconda is still not updated, we are going to install it again:
+
+```
+conda install python=3.10
+```
 
 Next, type the following to ask for the version of Python:
 
@@ -264,12 +270,11 @@ We will be using `JupyterLab` as our main coding environment
 and `pandas` is one of the key data analyses packages in MDS.
 The Jupytext Python package and the JupyterLab git extension facilitates
 using notebooks in JupyterLab together with Git & GitHub.
-The spellchecker helps us correcting typos in our writing
-and the LSP packages fill the same function for our code.
+The spellchecker helps us correcting typos in our writing.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
+conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext  
 ```
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
@@ -594,6 +599,7 @@ To install an extension, you simply search for it in the search bar, click the e
 - GitLens - Git supercharged (powerful extension that extends VS Code's native git capabilities)
 - Git History (intutive view of your git history)
 - Docker (easily use Docker from VS Code)
+
 - (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
 - (Optional) Material Icon Theme (great-looking custom file icons!)
 
