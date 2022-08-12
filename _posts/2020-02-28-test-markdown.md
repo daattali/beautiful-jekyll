@@ -14,7 +14,8 @@ Creiamo la nostra Identità digitale utilizzando alcuni degli strumenti online a
 Utiliziamo **[LinkTree](https://linktr.ee/)** per creare una single page dove aggregare in maniera semplice 
 tutti i nosti social network e link in cui vogliamo indirizzare i nostri followers.
 
-:memo: **Note:** Il servizio è gratuito e di base consente gia molte possiblità nella sua funzione gratuita.
+:::note
+Il servizio è gratuito e di base consente gia molte possiblità nella sua funzione gratuita.
 
 Nello specifico nel mio caso sono un musicista e programmatore per cui la mia pagina risulta essere cosi:
 [francescobruno](https://linktr.ee/francescobruno).
