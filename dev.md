@@ -27,6 +27,7 @@ subtitle: A lot of lines...
 
 ## 🤖 MACHINE LEARNING 
 
+---
 
 | Language  | Env         | Library    |
 | ----------| ----------- | ---------- |
@@ -36,7 +37,7 @@ subtitle: A lot of lines...
 
 ---
 
-### 📈 Training ML models on Numerai(https://numer.ai)
+### 📈 Training ML models on [Numerai](https://numer.ai)
 
 - [Model 1](https://numer.ai/scobruone)
 - [Model 2](https://numer.ai/scobrutwo)
