@@ -15,8 +15,6 @@ Utiliziamo **[LinkTree](https://linktr.ee/)** per creare una single page dove ag
 tutti i nosti social network e link in cui vogliamo indirizzare i nostri followers.
 
 
-## Boxes
-### Notification
 
 {: .box-note}
 **Note:** Il servizio è gratuito e di base consente gia molte possiblità nella sua funzione gratuita.
@@ -25,9 +23,8 @@ tutti i nosti social network e link in cui vogliamo indirizzare i nostri followe
 Nello specifico nel mio caso sono un musicista e programmatore per cui la mia pagina risulta essere cosi:
 [francescobruno](https://linktr.ee/francescobruno).
 
-## Boxes
-### Success
-Ora hai la tua single page con tutti i tuoi social linkati.
+{: .box-note}
+**Success:** Ora hai la tua single page con tutti i tuoi social linkati.
 
 ## Github
 
