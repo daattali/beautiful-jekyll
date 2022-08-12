@@ -23,7 +23,7 @@ tutti i nosti social network e link in cui vogliamo indirizzare i nostri followe
 Nello specifico nel mio caso sono un musicista e programmatore per cui la mia pagina risulta essere cosi:
 [francescobruno](https://linktr.ee/francescobruno).
 
-{: .box-note}
+{: .box-success}
 **Success:** Ora hai la tua single page con tutti i tuoi social linkati.
 
 ## Github
