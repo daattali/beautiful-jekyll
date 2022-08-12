@@ -203,7 +203,13 @@ if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
 
 ### Python and Conda
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), which [Miniconda MacOSX 64-bit pkg install for Python **3.x** can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html). 
+
+Select the appropiate link:
+
+**Intel Mac**:  [Miniconda MacOS Intel 64-bit pkg install can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
+
+**Mac M1 or higher**: [Miniconda MacOS Apple M1 64-bit pkg install for Python **3.x** can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg)
 
 After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 
@@ -219,7 +225,7 @@ conda 4.12.0
 
 > **Note:** If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
 
-As the new version of Python downloaded with miniconda is still not updated, we are going to install it again:
+In general, installing Miniconda will install the last version of Python. As the new version of Miniconda with Python 3.10 has not been released yet, as an exception we are going to re-install Python 3.10 separately:
 
 ```
 conda install python=3.10
