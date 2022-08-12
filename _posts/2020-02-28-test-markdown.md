@@ -14,8 +14,6 @@ Creiamo la nostra Identità digitale utilizzando alcuni degli strumenti online a
 Utiliziamo **[LinkTree](https://linktr.ee/)** per creare una single page dove aggregare in maniera semplice 
 tutti i nosti social network e link in cui vogliamo indirizzare i nostri followers.
 
-
-
 {: .box-note}
 **👏:** Il servizio è gratuito e di base consente gia molte possiblità nella sua funzione gratuita.
 
@@ -37,6 +35,32 @@ customizzabile per le vostre esigenze.
 **⚠️:** Assicurati di avere un account Github prima di continuare.
 
 Date un occhiata a: [Beaufiul jekyll](https://beautifuljekyll.com/)
-Potete forkare la repository e avere far girare il vostro sito web sul vostro dominio: <mark>githubuser.github.io</mark>
+Potete forkare la repository e avere far girare il vostro sito web sul vostro dominio: <mark>GithubUsername.github.io</mark>
+
+Nella documentazione troverete una guida dettagliata per customizzare le pagine e i contenuti del vostro sitoweb.
+
+{: .box-idea}
+**💡:** Collega il tua webpage con linktree, per avere in un unica pagina il collegamento ai tuoi social network e al tuo sito internet personale. 
+
+## Unstoppable Domains
+
+Come centra il mondo della blockchain e della decentralizzazione con la mia identità digitale?
+Come avrai notato i servizi utilizzati fin adesso sono piattaforme proprietarie che "gentilmente" ci permettono di usufruire 
+gratuitamente di cio che hanno costruito.
+
+Ti invito a leggere questo approfondimento su [Unstoppable Domains](https://www.criptonauti.it/recensione-unstoppable-domains-come-funzionano-i-crypto-domini/#:~:text=Cos'%C3%A8%20Unstoppable%20Domains%3F,scambio%20di%20criptovalute%20tra%20utenti) per capire il suo utilizzo.
+
+Acquistato il mio domionio su U.D francescobruno.crypto, mi è bastato creare un index.html (tutte le instruzioni sono sul sito di U.D) che fa un redirect alla mia pagina web creata precedentemente su github.
+
+Visualizzare il mio sito decentralizzato è semplice:
+Installa [Brave](https://brave.com/) ed abilita "IPFS compainon" nelle impostazioni.
+
+Quindi se hai installato IPFS sul tuo computer accedi pure a [francescobruno.crypto](https://francescobruno.crypto) e ci rivedremo nuovamente qui ma prendendo un'altra strada piu' moderna è sicura 😁
+
+
+Alla Prossima.
+
+
+
 
 
