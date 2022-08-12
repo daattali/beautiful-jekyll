@@ -82,9 +82,9 @@ members:
       - name: Master's students (Reseach Master's)
         full: False
         list:
-          - name: Gaurav Pathak (MSR)
+          - name: Gaurav Pathak (MSR) -> Adobe
             web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
-          - name: Zixuan Huang (MSR)
+          - name: Zixuan Huang (MSR) -> Michigan PhD
             web_url: https://www.ri.cmu.edu/ri-people/zixuan-huang/
           - name: Yufei Wang (MSCS) -> CMU PhD
             web_url: https://yufeiwang63.github.io/
