@@ -14,6 +14,8 @@ Creiamo la nostra Identità digitale utilizzando alcuni degli strumenti online a
 Utiliziamo **[LinkTree](https://linktr.ee/)** per creare una single page dove aggregare in maniera semplice 
 tutti i nosti social network e link in cui vogliamo indirizzare i nostri followers.
 
+
+## Boxes
 ### Notification
 
 {: .box-note}
@@ -23,7 +25,8 @@ tutti i nosti social network e link in cui vogliamo indirizzare i nostri followe
 Nello specifico nel mio caso sono un musicista e programmatore per cui la mia pagina risulta essere cosi:
 [francescobruno](https://linktr.ee/francescobruno).
 
-## Success
+## Boxes
+### Success
 Ora hai la tua single page con tutti i tuoi social linkati.
 
 ## Github
