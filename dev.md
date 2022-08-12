@@ -25,7 +25,7 @@ subtitle: A lot of lines...
 ---
 
 
-## 🤖 MACHINE LEARNING 
+## 🤖 AI/ML 
 
 ---
 
