@@ -133,7 +133,7 @@ git --version
 you should see something like this (does not have to be the exact same version) if you were successful:
 
 ```
-git version 2.24.2 (Apple Git-127)
+git version 2.32.1 (Apple Git-133)
 ```
 
 > **Note:** If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
