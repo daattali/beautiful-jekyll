@@ -126,7 +126,7 @@ keywords: "solidity,blockchain,numerai,ai,machine learning, music, electronic mu
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#FFFFFF"
+navbar-col: "#ffffff"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
 page-col: "#e0f6ff"
