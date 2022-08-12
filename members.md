@@ -88,18 +88,18 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/zixuan-huang/
           - name: Yufei Wang (MSCS) -> CMU PhD
             web_url: https://yufeiwang63.github.io/
+          - name: Harshit Sikchi (MSCS) -> UT Austin PhD
+            web_url: https://hari-sikchi.github.io/
           - name: Sujay Bajrachaya (MSR) -> Software Engineer at Epic Systems
             web_url: https://sujaybajracharya.me/
           - name: Qiao Gu (MSR) -> U Toronto PhD
             web_url: https://georgegu1997.github.io/
-          - name: Junyu (Jenny) Nan (MSR) -> CMU PhD
-            web_url: https://www.ri.cmu.edu/ri-people/junyu-nan/
           - name: Gautham Narayan Narasimhan (MSME) -> CV / ML Engineer at Path Robotics
             web_url: https://gauthamnarayan.com/
           - name: Jianing (Aurora) Qian (MSR) -> U Penn PhD
             web_url: https://www.ri.cmu.edu/ri-people/jianing-qian/
-          - name: Harshit Sikchi (MSCS) -> UT Austin PhD
-            web_url: https://hari-sikchi.github.io/
+          - name: Junyu (Jenny) Nan (MSR) -> CMU PhD
+            web_url: https://www.ri.cmu.edu/ri-people/junyu-nan/
           - name: Mengyun (Olivia) Xu (MSCS) -> Amazon Robotics
             web_url: https://www.linkedin.com/in/mengyun-olivia-xu-36a7ab126
           - name: Edward Ahn (MSR) -> AI / ML Engineer at Apple
@@ -119,7 +119,7 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/arpit-jangid/
           - name: Ji Liu (MSCV)
             web_url: https://www.ri.cmu.edu/ri-people/ji-liu/
-          - name: Zhenli Zhang (MSCV) -> Nuro
+          - name: Zhenli Zhang (MSCV)
             web_url: https://www.linkedin.com/in/zhenli-zhang-a36912126
           - name: Xiaochen Han (MSCV)
             web_url:
