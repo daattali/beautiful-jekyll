@@ -213,6 +213,12 @@ which should return something like this:
 conda 4.12.0
 ```
 
+In general, installing Miniconda will install the last version of Python. As the new version of Miniconda with Python 3.10 has not been released yet, as an exception we are going to install Python 3.10 separately:
+
+```
+conda install python=3.10
+```
+
 Next, type the following to ask for the version of Python:
 ```
 python --version
