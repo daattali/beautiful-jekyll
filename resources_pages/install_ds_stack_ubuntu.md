@@ -355,10 +355,10 @@ Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m
 
 ### Installing R packages
 
-The `tidyverse` R package (and some others) have external dependencies on Ubuntu outside of R. We need to install these first before we install such R packages:
+Some R packages (e.g. `tidyverse` and `devtools`) have external dependencies on Ubuntu outside of R. We need to install these first before we install such R packages:
 
 ```
-sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev
+sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libtiff5-dev
 ```
 
 Next, install the key R packages needed for the start of MDS program,
