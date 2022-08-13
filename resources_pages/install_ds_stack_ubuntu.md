@@ -263,12 +263,11 @@ We will be using `JupyterLab` as our main coding environment
 and `pandas` is one of the key data analyses packages in MDS.
 The Jupytext Python package and the JupyterLab git extension facilitates
 using notebooks in JupyterLab together with Git & GitHub.
-The spellchecker helps us correcting typos in our writing
-and the LSP packages fill the same function for our code.
+The spellchecker helps us correcting typos in our writing.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
+conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext
 ```
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
