@@ -267,7 +267,7 @@ echo "## R packages" >> check-setup-mds.log
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' to check R package versions." >> check-setup-mds.log
 else
-    r_pkgs=(tidyverse=1 renv=0 IRkernel=1 tinytex=0 janitor=2 gapminder=0 readxl=1 ottr=1 canlang=0)
+    r_pkgs=(tidyverse=1 markdown=1 rmarkdown=2 renv=0 IRkernel=1 tinytex=0 janitor=2 gapminder=0 readxl=1 ottr=1 canlang=0)
     installed_r_pkgs=$(R -q -e "print(format(as.data.frame(installed.packages()[,c('Package', 'Version')]), justify='left'), row.names=FALSE)" | grep -v "^>" | tail -n +2 | sed 's/^ //;s/ *$//' | tr -s ' ' '=')
     for r_pkg in ${r_pkgs[@]}; do
         if ! $(grep -iq "$r_pkg" <<< $installed_r_pkgs); then
