@@ -469,19 +469,11 @@ install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
-The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add the TinyTex executables to our `PATH` and install several more packages (`PATH` is a collection of directories which contain the available executable programs on your computer).
-
-To append the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `~/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code ~/.bashrc`) and save the file:
-
-```
-# Append TinyTex executables to the path
-export PATH="$PATH:~/bin"
-```
-
-When you launch a new terminal instance, this directory will have been added to your path
-(you can check this by running `echo $PATH` in the terminal).
-Now you can check that the latex installation is working
-by opening a terminal and asking for the version of latex:
+As recommended at the end of the installation,
+it is important to **log out and in again for TinyTex to work properly**
+(restarting the computer also works).
+Once you log back in,
+try running the following in a terminal:
 
 ```
 latex --version
@@ -504,8 +496,9 @@ Compiled with zlib 1.2.11; using zlib 1.2.11
 Compiled with xpdf version 4.02
 ```
 
-Next, install the additional LaTeX packages needed for Jupyter
-by pasting the following into the new terminal instance and press enter:
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to install several more packages.
+To install the additional LaTeX packages needed for Jupyter
+paste the following into the new terminal instance and press enter:
 
 ```
 tlmgr install eurosym \
