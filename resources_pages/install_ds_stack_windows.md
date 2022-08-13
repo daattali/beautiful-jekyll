@@ -25,6 +25,7 @@ subtitle: MDS software stack install instructions for Windows 2022/3
 - [Make](#make){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
+- [Quarto](#quarto){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -813,7 +814,11 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
+### Quarto
 
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio or the terminal. 
+
+Install the [last version of Quarto](https://quarto.org/docs/get-started/) for Windows.
 ## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
@@ -827,6 +832,8 @@ To install an extension, you simply search for it in the search bar, click the e
 - GitLens (powerful extension that extends VS Code's native git capabilities)
 - Git History (intutive view of your git history)
 - Docker (easily use Docker from VS Code)
+- Quarto (integrated render and preview for Quarto documents and [more](https://quarto.org/docs/tools/vscode.html))
+
 - (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
 - (Optional) Material Icon Theme (great-looking custom file icons!)
 

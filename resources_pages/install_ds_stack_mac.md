@@ -30,6 +30,10 @@ subtitle: MDS software stack install instructions for macOS 2022/3
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
 
+
+> Note that there are differences in some parts of the installation for Mac computers with the Intel chip and the Mac M1 / Mac M2.
+
+
 ## Installation notes
 
 If you have already installed Git, Latex, or any of the R or Python related packages
