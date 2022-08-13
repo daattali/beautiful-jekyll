@@ -85,11 +85,11 @@ You can test that VS code is installed and can be opened from Terminal by restar
 code --version
 ```
 
-you should see something like this if you were successful:
+you should see something like this if you were successful (does not have to be the exact same version):
 
 ```
-1.59.0
-d5e9aa0227e057a60c82568bf31c04730dc15dcd
+1.70.1
+6d9b74a70ca9c7733b29f0456fd8195364076dda
 x64
 ```
 
@@ -126,6 +126,11 @@ You can check your git version with the following command:
 git --version
 ```
 
+you should see something like this if you were successful:
+
+```
+git version 2.34.1
+
 ### Configuring Git user info
 
 Next, we need to configure Git by telling it your name and email. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email (the same you used on GitHub), respectively):
@@ -149,7 +154,7 @@ code ~/.bashrc
 > related to a previous Python or R installation,
 > please remove these.
 
-Append the following lines:
+Append the following lines to the file:
 
 ```
 # Set the default editor for programs launch from terminal
@@ -178,6 +183,7 @@ git config --global core.editor "code --wait"
 We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.x 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
 
 Once the download is finished, open Terminal and execute the following commands:
+
 ```
 bash path/to/file
 ```
@@ -193,17 +199,18 @@ The instructions for the installation will then appear:
 1. Press Enter.
 2. Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
 3. Type `yes` and press enter to accept the licence agreement.
-4. Press enter to accept the default installation location.
+4. Press enter to accept the default installation location, and wait a few seconds for Conda to install to that location.
 5. Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
 
-After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+After installation, restart the terminal. If the installation was successful, you will see `(base)` prepended to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+
 ```
 conda --version
 ```
 which should return something like this:
 
 ```
-conda 4.10.3
+conda 4.12.0
 ```
 
 Next, type the following to ask for the version of Python:
@@ -307,8 +314,8 @@ R --version
 You should see something like this if you were successful:
 
 ```
-R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-Copyright (C) 2021 The R Foundation for Statistical Computing
+R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -512,7 +519,7 @@ tlmgr install eurosym \
   oberdiek
 ```
 
-To test that your latex installation is working with jupyter notebooks,
+To test that your latex installation is working with Jupyter notebooks,
 launch `jupyter lab` from the terminal where you confirmed that latex works
 and open either a new notebook
 or the same one you used to test IRkernel above.
