@@ -291,7 +291,7 @@ or go to the terminal from which you launched JupyterLab and hold `Ctrl` while p
 
 R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
-#### R
+### R
 
 The version of R available in the default Ubuntu repositories is older than the one we use in MDS. To obtain the latest R packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
 
@@ -407,13 +407,17 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
-and paste the following in the rightmost panel that says `User Preferences`
-(replacing the `{}`):
+Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+You will see two panels,
+the right-most panel allows you to perform advanced modification
+of keyboards shortcuts in JupyterLab
+and it already contains quite a few shortcuts.
+We're going to add two more shortcuts,
+by pasting a text snippet just before the first existing shortcut.
+Go ahead and create a new line just after the line that says `"shortcuts": [`
+and paste the following:
 
 ```json
-{
-    "shortcuts": [
         {
             "command": "apputils:run-first-enabled",
             "selector": "body",
@@ -439,9 +443,7 @@ and paste the following in the rightmost panel that says `User Preferences`
                 ],
                 "args": {"text": "|> "}
             }
-        }
-    ]
-}
+        },
 ```
 
 After you have pasted this text,
