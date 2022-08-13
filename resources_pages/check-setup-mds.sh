@@ -37,9 +37,9 @@ if [[ "$(uname)" == 'Linux' ]]; then
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
     file_browser="open"
-    if ! $(sw_vers | grep -iq "11.[4|5]"); then
+    if ! $(sw_vers | grep -iq "12.\|11.[4|5|6]"); then
         echo '' >> check-setup-mds.log
-        echo "MISSING You need macOS Big Sur (11.4.x or 11.5.x)." >> check-setup-mds.log
+        echo "MISSING You need macOS Big Sur or greater (>=11.4)." >> check-setup-mds.log
     fi
 elif [[ "$OSTYPE" == 'msys' ]]; then
     # wmic use some non-ASCII characters that we need grep (or sort or similar) to convert,
