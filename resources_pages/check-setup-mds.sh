@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 # Checks that the correct version of all system programs and R & Python packages
 # which are needed for the start of the MDS program are correctly installed.
+# The version number represents <Year>.<Patch>
+# since we usually iterate on the script once per year just before the semester starts.
 
 # 0. Help message and OS info
 echo ''
-echo "# MDS setup check 1.1.1" | tee check-setup-mds.log
+echo "# MDS setup check 2022.1" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
 echo 'this means that you are missing the required version of that program or package.'
