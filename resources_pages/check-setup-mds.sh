@@ -32,9 +32,9 @@ if [[ "$(uname)" == 'Linux' ]]; then
     grep "Architecture" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:    /' >> check-setup-mds.log
     grep "Kernel" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:          /' >> check-setup-mds.log
     file_browser="xdg-open"
-    if ! $(grep -iq "20.04" <<< $os_version); then
+    if ! $(grep -iq "22.04" <<< $os_version); then
         echo '' >> check-setup-mds.log
-        echo "MISSING You need Ubuntu 20.04." >> check-setup-mds.log
+        echo "MISSING You are recommended to use Ubuntu 22.04." >> check-setup-mds.log
     fi
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
