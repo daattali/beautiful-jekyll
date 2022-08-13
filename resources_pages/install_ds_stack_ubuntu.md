@@ -25,6 +25,7 @@ subtitle: MDS software stack install instructions for Ubuntu
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
+- [Quarto](#quarto){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -594,6 +595,12 @@ After signing-up, you also need to install Docker **CE** for Ubuntu. Install the
 Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`
 (only the subheading "Managing docker as a non-root user").
 Confirm that docker is working by following the verification instructions on that same page.
+
+## Quarto
+
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio or the terminal.
+
+Install the [last version of Quarto](https://quarto.org/docs/get-started/) for Linux.
 
 ## VS Code extensions
 
