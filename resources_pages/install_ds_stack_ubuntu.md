@@ -549,11 +549,17 @@ Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF
 ## PostgreSQL
 
 We will be using PostgreSQL as our database management system.
-The Ubuntu repositories contain PostgreSQL 12.x,
-in MDS we will be using PostgreSQL 13.x,
-so you need to follow the instructions in the PostgreSQL documentation
-to [first add the their repository
-and then install the latest version](https://www.postgresql.org/download/linux/ubuntu/).
+Install it via the following command:
+
+```
+sudo apt install postgresql-14
+```
+
+> Note: Older version of Ubuntu might not have version 14 of PostgreSQL in the repos.
+> If this is the case for your version
+> you need to follow the instructions in the PostgreSQL documentation
+> to [first add the their repository
+> and then install the latest version](https://www.postgresql.org/download/linux/ubuntu/).
 
 By default, this installation creates a new user called `postgres`,
 which is the only one with permission to open the databases.
@@ -565,10 +571,10 @@ sudo su -c psql postgres
 ```
 
 The above should yield the prompt to change to what is shown below
-(the exact minor version does not matter as the major version is 13):
+(the exact minor version does not matter as the major version is 14):
 
 ```
-psql (13.3 (Ubuntu 13.3-1))
+psql (14.4 (Ubuntu 14.4-0ubuntu0.22.04.1))
 Type "help" for help.
 
 postgres=#
