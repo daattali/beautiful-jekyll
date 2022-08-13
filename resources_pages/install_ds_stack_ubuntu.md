@@ -540,11 +540,12 @@ This requires the `pyppeteer` package,
 which we can install as follows.
 
 ```bash
-conda install pyppeteer=0.2.2
+conda install pyppeteer
 pyppeteer-install
 ```
 
 Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
+This may take a long time
 
 ## PostgreSQL
 
