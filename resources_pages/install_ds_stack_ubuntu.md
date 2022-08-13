@@ -400,6 +400,11 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
+> **Note:** It might take a long time to open JupyterLab
+> when there is an R kernel notebook open
+> since the previous session.
+> Be patient and wait several seconds for JupyterLab to start the R kernel.
+
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
 Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
