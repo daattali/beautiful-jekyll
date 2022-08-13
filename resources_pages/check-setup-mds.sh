@@ -76,10 +76,10 @@ echo "## System programs" >> check-setup-mds.log
 # so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
-    if ! [ -x "$(command -v /Library/PostgreSQL/13/bin/psql)" ]; then
-        echo "MISSING   postgreSQL 13.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v /Library/PostgreSQL/14/bin/psql)" ]; then
+        echo "MISSING   postgreSQL 14.*" >> check-setup-mds.log
     else
-        echo "OK        "$(/Library/PostgreSQL/13/bin/psql --version) >> check-setup-mds.log
+        echo "OK        "$(/Library/PostgreSQL/14/bin/psql --version) >> check-setup-mds.log
     fi
 
     # rstudio is installed as an .app
@@ -97,10 +97,10 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     sys_progs=(R=4.* python=3.* conda=4.* bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
-    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/13/bin/psql')" ]; then
-        echo "MISSING   psql 13.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/14/bin/psql')" ]; then
+        echo "MISSING   psql 14.*" >> check-setup-mds.log
     else
-        echo "OK        "$('/c/Program Files/PostgreSQL/13/bin/psql' --version) >> check-setup-mds.log
+        echo "OK        "$('/c/Program Files/PostgreSQL/14/bin/psql' --version) >> check-setup-mds.log
     fi
     # Rstudio on windows does not accept the --version flag when run interactively
     # so this section can only be troubleshot from the script
@@ -119,7 +119,7 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* make=4.* latex=3.* docker=20.* code=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=13.* rstudio=2022\.07.* R=4.* python=3.* conda=4.* bash=5.* \
+    sys_progs=(psql=14.* rstudio=2022\.07.* R=4.* python=3.* conda=4.* bash=5.* \
         git=2.* make=4.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
