@@ -363,10 +363,11 @@ sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev libfontconfig1-dev 
 
 Next, install the key R packages needed for the start of MDS program,
 by opening up RStudio and
-typing the following into the R console inside RStudio:
+typing the following into the R console inside RStudio
+(the first line might take a long time to run):
 
 ```R
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+install.packages(c('tidyverse', 'markdown', 'rmarkdown', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
 ```
