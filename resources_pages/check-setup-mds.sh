@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 # Checks that the correct version of all system programs and R & Python packages
 # which are needed for the start of the MDS program are correctly installed.
+# The version number represents <Year>.<Patch>
+# since we usually iterate on the script once per year just before the semester starts.
 
 # 0. Help message and OS info
 echo ''
-echo "# MDS setup check 1.1.1" | tee check-setup-mds.log
+echo "# MDS setup check 2022.1" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
 echo 'this means that you are missing the required version of that program or package.'
@@ -30,16 +32,16 @@ if [[ "$(uname)" == 'Linux' ]]; then
     grep "Architecture" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:    /' >> check-setup-mds.log
     grep "Kernel" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:          /' >> check-setup-mds.log
     file_browser="xdg-open"
-    if ! $(grep -iq "20.04" <<< $os_version); then
+    if ! $(grep -iq "22.04" <<< $os_version); then
         echo '' >> check-setup-mds.log
-        echo "MISSING You need Ubuntu 20.04." >> check-setup-mds.log
+        echo "MISSING You are recommended to use Ubuntu 22.04." >> check-setup-mds.log
     fi
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
     file_browser="open"
-    if ! $(sw_vers | grep -iq "11.[4|5]"); then
+    if ! $(sw_vers | grep -iq "12.\|11.[4|5|6]"); then
         echo '' >> check-setup-mds.log
-        echo "MISSING You need macOS Big Sur (11.4.x or 11.5.x)." >> check-setup-mds.log
+        echo "MISSING You need macOS Big Sur or greater (>=11.4)." >> check-setup-mds.log
     fi
 elif [[ "$OSTYPE" == 'msys' ]]; then
     # wmic use some non-ASCII characters that we need grep (or sort or similar) to convert,
@@ -74,18 +76,18 @@ echo "## System programs" >> check-setup-mds.log
 # so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
-    if ! [ -x "$(command -v /Library/PostgreSQL/13/bin/psql)" ]; then
-        echo "MISSING   postgreSQL 13.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v /Library/PostgreSQL/14/bin/psql)" ]; then
+        echo "MISSING   postgreSQL 14.*" >> check-setup-mds.log
     else
-        echo "OK        "$(/Library/PostgreSQL/13/bin/psql --version) >> check-setup-mds.log
+        echo "OK        "$(/Library/PostgreSQL/14/bin/psql --version) >> check-setup-mds.log
     fi
 
     # rstudio is installed as an .app
-    if ! $(grep -iq "= \"2021\.09.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
-        echo "MISSING   rstudio 2021.09.*" >> check-setup-mds.log
+    if ! $(grep -iq "= \"2022\.07.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
+        echo "MISSING   rstudio 2022.07.*" >> check-setup-mds.log
     else
         # This is what is needed instead of --version
-        installed_version_tmp=$(grep -io "= \"2021\.09.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
+        installed_version_tmp=$(grep -io "= \"2022\.07.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
         # Tidy strangely formatted version number
         installed_version=$(sed "s/= //;s/\"//g" <<< "$installed_version_tmp")
         echo "OK        "rstudio $installed_version >> check-setup-mds.log
@@ -95,15 +97,15 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     sys_progs=(R=4.* python=3.* conda=4.* bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
-    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/13/bin/psql')" ]; then
-        echo "MISSING   psql 13.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/14/bin/psql')" ]; then
+        echo "MISSING   psql 14.*" >> check-setup-mds.log
     else
-        echo "OK        "$('/c/Program Files/PostgreSQL/13/bin/psql' --version) >> check-setup-mds.log
+        echo "OK        "$('/c/Program Files/PostgreSQL/14/bin/psql' --version) >> check-setup-mds.log
     fi
     # Rstudio on windows does not accept the --version flag when run interactively
     # so this section can only be troubleshot from the script
-    if ! $(grep -iq "2021\.09.*" <<< "$('/c//Program Files/RStudio/bin/rstudio' --version)"); then
-        echo "MISSING   rstudio 2021.09*" >> check-setup-mds.log
+    if ! $(grep -iq "2022\.07.*" <<< "$('/c//Program Files/RStudio/bin/rstudio' --version)"); then
+        echo "MISSING   rstudio 2022.07*" >> check-setup-mds.log
     else
         echo "OK        rstudio "$('/c//Program Files/RStudio/bin/rstudio' --version) >> check-setup-mds.log
     fi
@@ -117,7 +119,7 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* make=4.* latex=3.* docker=20.* code=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=13.* rstudio=2021\.09.* R=4.* python=3.* conda=4.* bash=5.* \
+    sys_progs=(psql=14.* rstudio=2022\.07.* R=4.* python=3.* conda=4.* bash=5.* \
         git=2.* make=4.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
@@ -166,7 +168,7 @@ if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executa
     echo "In order to do this after the installation process," >> check-setup-mds.log
     echo "first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
 else
-    py_pkgs=(pandas=1 pyppeteer=0 nbconvert=6 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyterlab-spellchecker=0)
+    py_pkgs=(pandas=1 pyppeteer=1 nbconvert=6 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyterlab-spellchecker=0)
     # installed_py_pkgs=$(pip freeze)
     installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
@@ -265,7 +267,7 @@ echo "## R packages" >> check-setup-mds.log
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' to check R package versions." >> check-setup-mds.log
 else
-    r_pkgs=(tidyverse=1 blogdown=1 xaringan=0 renv=0 IRkernel=1 tinytex=0 janitor=2 gapminder=0 readxl=1 ottr=1 canlang=0)
+    r_pkgs=(tidyverse=1 markdown=1 rmarkdown=2 renv=0 IRkernel=1 tinytex=0 janitor=2 gapminder=0 readxl=1 ottr=1 canlang=0)
     installed_r_pkgs=$(R -q -e "print(format(as.data.frame(installed.packages()[,c('Package', 'Version')]), justify='left'), row.names=FALSE)" | grep -v "^>" | tail -n +2 | sed 's/^ //;s/ *$//' | tr -s ' ' '=')
     for r_pkg in ${r_pkgs[@]}; do
         if ! $(grep -iq "$r_pkg" <<< $installed_r_pkgs); then
