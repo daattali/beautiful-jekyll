@@ -321,7 +321,7 @@ python --version
 you should now see the same output as above:
 
 ```
-Python 3.9.5
+Python 3.10.0
 ```
 
 Let's also check the version of the `conda` package manager. If you type
@@ -333,7 +333,7 @@ conda --version
 you should see something like this
 
 ```
-conda 4.10.3
+conda 4.13.0
 ```
 
 > **Optional:** One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
@@ -349,7 +349,7 @@ conda 4.10.3
 > ```
 >
 > While we are in this file,
-> let's also remove the line that says `PS1="$PS1"'$MSYSTEM '          # show MSYSTEM` (line 17),
+> let's also remove the line that says `PS1="$PS1"'$MSYSTEM '          # show MSYSTEM` (now should be line 16),
 > to remove some clutter from the terminal.
 >
 > Click to save the file,
@@ -401,7 +401,7 @@ and the LSP packages fill the same function for our code.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
+conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext
 ```
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
@@ -454,8 +454,8 @@ R --version
 which should return something like:
 
 ```
-R version 4.1.1 (2021-05-18) -- "Camp Pontanezen"
-Copyright (C) 2021 The R Foundation for Statistical Computing
+R version 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
