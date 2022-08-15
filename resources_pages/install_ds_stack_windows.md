@@ -536,7 +536,7 @@ by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```R
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+install.packages(c('tidyverse', 'rmarkdown', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
 ```
@@ -545,7 +545,7 @@ devtools::install_github("ttimbers/canlang")
 
 ### IRkernel
 
-The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from the Windows Terminal** (not R Studio) and run the setup via the following two commands:
+The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from the Windows Terminal (write `R` in the console and press enter)** (not R Studio) and run the setup via the following two commands:
 
 ```
 install.packages('IRkernel')
@@ -553,6 +553,8 @@ IRkernel::installspec()
 ```
 
 When asked to select a mirror, pick one at a location close to where you live for faster downloads.
+
+When you finish you can close R typing `q()`.
 
 > **Note:** You cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
 
@@ -649,9 +651,9 @@ latex --version
 You should see something like this if you were successful:
 
 ```
-pdfTeX 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX)
-kpathsea version 6.3.3
-Copyright 2021 Han The Thanh (pdfTeX) et al.
+pdfTeX 3.141592653-2.6-1.40.24 (TeX Live 2022)
+kpathsea version 6.3.4
+Copyright 2022 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
 covered by the terms of both the pdfTeX copyright and
 the Lesser GNU General Public License.
@@ -708,7 +710,7 @@ This requires the `pyppeteer` package,
 which we can install by typing the following into Windows Terminal.
 
 ```bash
-conda install pyppeteer=0.2.2
+conda install pyppeteer
 pyppeteer-install
 ```
 
@@ -767,7 +769,7 @@ There is NO WARRANTY, to the extent permitted by law.
 
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can [download PostgreSQL 13.x from here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
+We will be using PostgreSQL as our database management system. You can [download PostgreSQL 14.x from here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
 
 To test if the installation was successful open the `SQL Shell` app from the Start menu. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:
 
@@ -815,11 +817,26 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
-### Quarto
+### Quarto CLI
 
 Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio or the terminal. 
 
-Install the [last version of Quarto](https://quarto.org/docs/get-started/) for Windows.
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equiped with the last version of Quarto. You can check this opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. You can download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Windows.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```
+quarto.cmd --version
+```
+If the installation was succesful you will read the output:
+
+```
+1.0.38
+```
+
+> **Note:** Pay attention that due to the Windows settings suggested in this installation you will always have to write  `quarto.cmd` instead of `quarto` to run Quarto commands. Read more [here](https://community.rstudio.com/t/bash-quarto-command-not-found/144187/3).
 ## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
