@@ -469,7 +469,7 @@ https://www.gnu.org/licenses/.
 
 ### RStudio
 
-Download the Windows preview version of RStudio Desktop (not Pro) from <https://www.rstudio.com/products/rstudio/download/preview>. Open the file and follow the installer instructions.
+Download the Windows preview version of RStudio Desktop  from <https://www.rstudio.com/products/rstudio/download/#download>. Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
@@ -496,7 +496,8 @@ Click "OK" on all of the three windows we opened above and you're done! If you o
 both applications should return the same values, and the first one should be a path inside your user directory e.g.
 
 ```
-"C:/Users/florencia/R/win-library/4.1" "C:/Program Files/R/R-4.1.0/library"
+[1] "C:/Users/Florencia/AppData/Local/R/win-library/4.2"
+[2] "C:/Program Files/R/R-4.2.1/library"
 ```
 
 If they don't return the same paths, please try to setting up your environmental variable again
@@ -504,12 +505,15 @@ and making sure that it is pointing to the correct folder.
 
 **Do not continue unless both R from terminal and R from RStudio return the same paths here or later parts of the installation will fail.**
 
-Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
-Go to `Tools > Global Options > Code > Editing` and tick the following option:
+
+
+Now we are going to check that RStudio’s *Insert Pipe* shortcut inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
+
+Press `Shift` + `Ctrl` + `m` in RStudio's console. If it is returned the following operator `%>%` instead of `|>`, go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
 
-Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
+Once the change is made you can try again in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
 
 ### Rtools
 
