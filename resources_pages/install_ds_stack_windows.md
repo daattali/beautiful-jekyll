@@ -170,8 +170,8 @@ bash --version
 The output should look similar to this:
 
 ```
-GNU bash, version 4.4.23(1)-release (x86_64-pc-sys)
-Copyright (C) 2019 Free Software Foundation, Inc.
+GNU bash, version 5.1.16(1)-release (x86_64-pc-msys)
+Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
 This is free software; you are free to change and redistribute it.
@@ -193,21 +193,18 @@ git --version
 ```
 
 ```
-git version 2.32.0.windows.2
+git version 2.37.2.windows.2
 ```
 
-> **Note:** Some of the Git commands we will use are only available since Git 2.23,
-so make sure your if your Git is at least this version.
-
-You can launch many windows programs from the terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
+> **Note:**  You can launch many windows programs from the terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
 
 ```
 code --version
 ```
 
 ```
-1.59.0
-c3f126316369cd610563c75b1b1725e0679adfb3
+1.70.1
+6d9b74a70ca9c7733b29f0456fd8195364076dda
 x64
 ```
 
