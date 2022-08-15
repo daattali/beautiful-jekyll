@@ -70,7 +70,7 @@ members:
       #- name: Visiting Students
       #  full: false
        # list:
-  - name: Alumni
+  - name: <a name="alumni"></a>Alumni
     list:
       - name: PhD alumni
         full: False
