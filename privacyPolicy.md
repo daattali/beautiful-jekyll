@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
-#subtitle: Find a bunch of words.
+#subtitle: Last updated: August 16, 2022
 ---
 
 #### We only collect anonymous information.
@@ -54,4 +54,6 @@ If you have any questions or concerns about our privacy policies, please contact
 jellroll.dev@gmail.com
 
 #### You can review more privacy-related information.
-This privacy policy was last updated on July 30, 2022. Our privacy policy may change from time to time. If we make any material changes to our policies, we will place a prominent notice on our website or application.
+Our privacy policy may change from time to time. If we make any material changes to our policies, we will place a prominent notice on our website or application.
+
+_Last updated: August 16, 2022_
