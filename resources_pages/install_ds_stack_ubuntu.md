@@ -598,9 +598,23 @@ Confirm that docker is working by following the verification instructions on tha
 
 ## Quarto
 
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio or the terminal.
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
 
-Install the [last version of Quarto](https://quarto.org/docs/get-started/) for Linux.
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Linux.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto --version
+```
+
+If the installation was successful you will read the output:
+
+```bash
+1.0.38
+```
 
 ## VS Code extensions
 
