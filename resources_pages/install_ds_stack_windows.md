@@ -513,7 +513,7 @@ Press `Shift` + `Ctrl` + `m` in RStudio's console. If it is returned the followi
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
 
-Once the change is made you can try again in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
+Once the change is made you can try again in the RStudio console `Ctrl` + `Shift` + `m` verify that it functions. 
 
 ### Rtools
 
@@ -574,9 +574,16 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
-and paste the following in the rightmost panel that says `User Preferences`
-(replacing the `{}`):
+Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+You will see two panels,
+the right-most panel allows you to perform advanced modification
+of keyboards shortcuts in JupyterLab
+and it already contains quite a few shortcuts.
+We're going to add two more shortcuts,
+by pasting a text snippet just before the first existing shortcut.
+Go ahead and create a new line just after the line that says `"shortcuts": [`
+and paste the following:
+ 
 
 ```json
 {
@@ -817,24 +824,23 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
-### Quarto CLI
+## Quarto CLI
 
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio or the terminal. 
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
 
-The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equiped with the last version of Quarto. You can check this opening a new document in `File -> New File -> Quarto Document`.
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
 
-Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. You can download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Windows.
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Windows.
 
 After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
 
+```bash
+quarto --version
 ```
-quarto.cmd --version
-```
-If the installation was succesful you will read the output:
+If the installation was successful you will read the output:
 
-```
+```bash
 1.0.38
-```
 
 > **Note:** Pay attention that due to the Windows settings suggested in this installation you will always have to write  `quarto.cmd` instead of `quarto` to run Quarto commands. Read more [here](https://community.rstudio.com/t/bash-quarto-command-not-found/144187/3).
 ## VS Code extensions
@@ -985,46 +991,56 @@ R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
 Checking program and package versions...
 
 ## Operating system
-Microsoft Windows 10 Education
+Microsoft Windows 11 Education
 64-bit
-10.0.19044
+10.0.22000
 
 ## System programs
-MISSING   psql 13.*
-OK        rstudio 1.4.1725
-OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+OK        psql (PostgreSQL) 14.5
+OK        rstudio 2022.07.1+554
+OK        tlmgr revision 63068 (2022-04-18 07:58:07 +0200)
+OK        R 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
 OK        python 3.10.0
-OK        conda 4.10.3
-OK        bash 4.4.23(1)-release (x86_64-pc-msys)
-OK        git 2.32.0.windows.2
+OK        conda 4.13.0
+OK        bash 4-pc-msys)
+OK        git 2.37.2.windows.2
 OK        make 4.3
-OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX)
-OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
-OK        docker 20.10.7, build f0df350
-OK        code 1.58.2
+OK        latex 3.141592653-2.6-1.40.24 (TeX Live 2022)
+OK        docker 20.10.17, build 100c701
+OK        code 1.70.1
 
 ## Python packages
-MISSING   jupyterlab=3.*
-OK        pandas=1.3.0
-OK        flake8=3.9.2
-MISSING   black=21.*
-MISSING   nodejs=15.*
-OK        jupytext=1.11.4
-OK        jupyterlab-git=0.30.1
+OK        pandas=1.4.3
+OK        pyppeteer=1.0.2
+OK        nbconvert=6.5.3
+OK        jupyterlab=3.4.5
+OK        jupyterlab-git=0.38.0
+OK        jupytext=1.14.0
+OK        jupyterlab-spellchecker=0.7.2
 OK        jupyterlab PDF-generation was successful.
+OK        jupyterlab WebPDF-generation was successful.
+OK        jupyterlab HTML-generation was successful.
 
 ## R packages
-OK        tidyverse=1.3.1
-OK        blogdown=1.3
-OK        xaringan=0.22
-OK        renv=0.13.2
-OK        IRkernel=1.2
-OK        tinytex=0.32
+OK        tidyverse=1.3.2
+OK        markdown=1.1
+OK        rmarkdown=2.14
+OK        renv=0.15.5
+OK        IRkernel=1.3
+OK        tinytex=0.40
+OK        janitor=2.1.0
+OK        gapminder=0.3.0
+OK        readxl=1.4.0
+OK        ottr=1.1.3
+OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
+OK        rmarkdown HTML-generation was successful.
 
-This output and additional configuration details have been saved to the file /c/Users/joel/check-setup-mds.log.
+The above output has been saved to the file /c/Users/Florencia/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
+
+
 ````
 
 As you can see at the end of the output,

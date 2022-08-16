@@ -47,6 +47,15 @@ In all the sections below,
 if you are presented with the choice to download either a 64-bit (also called x64)
 or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
 
+
+> **Important**
+> Mac computers are transitioning from
+> Intel processors to [Apple silicon](https://support.apple.com/en-us/HT211814). 
+> If you have a new laptop (Mac M1 or Mac M2)
+> for some software you would like to install
+> you will have to use a different installer
+> than Macs with Intel processors.
+
 Once you have completed these installation instructions,
 make sure to follow the post-installation notes at the end
 to check that all software is setup correctly.
@@ -83,7 +92,11 @@ You will have to quit all instances of open Terminals and then restart the Termi
 
 ### Installing
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). 
+
+Pay attention here if you have to download the "Intel Chip" or "Apple silicon" installer.
+
+Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
 In addition to reading the [getting started instructions](https://code.visualstudio.com/docs/setup/mac), **be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.**
 
 You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
@@ -402,9 +415,16 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
-and paste the following in the rightmost panel that says `User Preferences`
-(replacing the `{}`):
+Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+You will see two panels,
+the right-most panel allows you to perform advanced modification
+of keyboards shortcuts in JupyterLab
+and it already contains quite a few shortcuts.
+We're going to add two more shortcuts,
+by pasting a text snippet just before the first existing shortcut.
+Go ahead and create a new line just after the line that says `"shortcuts": [`
+and paste the following:
+ 
 
 ```json
 {
@@ -449,7 +469,7 @@ Here is a screenshot of what it looks like with the settings saved:
 To check that the extension is working,
 open JupyterLab,
 launch an R notebook,
-and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Cmd` + `m`, respectively.
+and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m`, respectively.
 You could add any arbitrary text insertion command the same way,
 but this is all that is required for MDS.
 
@@ -542,11 +562,34 @@ This requires the `pyppeteer` package,
 which we can install as follows.
 
 ```bash
-conda install pyppeteer=0.2.2
+conda install pyppeteer
 pyppeteer-install
 ```
 
 Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
+
+## Pandoc
+
+Install Pandoc for MacOs from the following link [Pandoc](https://pandoc.org/installing.html).
+
+Try in the command line
+
+```bash
+pandoc --version
+```
+You sould get this output:
+
+```bash
+pandoc 2.19
+Compiled with pandoc-types 1.22.2, texmath 0.12.5.2, skylighting 0.13,
+citeproc 0.8.0.1, ipynb 0.2, hslua 2.2.1
+Scripting engine: Lua 5.4
+User data directory: /Users/florenciadandrea/.local/share/pandoc
+Copyright (C) 2006-2022 John MacFarlane. Web:  https://pandoc.org
+This is free software; see the source for copying conditions. There is no
+warranty, not even for merchantability or fitness for a particular purpose.
+```
+
 
 ## PostgreSQL
 
@@ -605,11 +648,24 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-### Quarto
+## Quarto CLI
 
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio or the terminal. 
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
 
-Install the [last version of Quarto](https://quarto.org/docs/get-started/) for macOs.
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for MacOs.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto --version
+```
+If the installation was successful you will read the output:
+
+```bash
+1.0.38
+```
 
 ## VS Code extensions
 
@@ -754,7 +810,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 The output from running the script will look something like this:
 
 ````
-# MDS setup check 1.1.0
+# MDS setup check 2022.1
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
@@ -764,56 +820,60 @@ e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc
 
 You can run the following commands to find out which version
 of a program or package is installed (if any):
-```
+
 name_of_program --version  # For system programs
 conda list  # For Python packages
-R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
-```
+R -q -e "installed.packages()[,c(Package, Version)]"  # For R package
 
 Checking program and package versions...
 
 ## Operating system
 ProductName:	macOS
-ProductVersion:	11.4
-BuildVersion:	20F71
+ProductVersion:	12.5
+BuildVersion:	21G72
 
 ## System programs
-MISSING   psql 13.*
-OK        rstudio 1.4.1725
-OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-OK        python 3.10.0
-OK        conda 4.10.3
-OK        bash 3.2.57(1)-release (x86_64-apple-darwin20)
-OK        git 2.32.0
-OK        make 4.3
-OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021)
-OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
-OK        docker 20.10.7, build f0df350
-OK        code 1.58.2
+OK        psql (PostgreSQL) 14.5
+OK        rstudio 2022.07.1+554
+OK        R 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+OK        python 3.10.5
+OK        conda 4.13.0
+OK        bash 3.2.57(1)-release (arm64-apple-darwin21)
+OK        git 2.32.1 (Apple Git-133)
+OK        make 3.81
+OK        latex 3.141592653-2.6-1.40.24 (TeX Live 2022)
+OK        tlmgr 58:07 +0200)
+OK        docker 20.10.17, build 100c701
+OK        code 1.70.1
 
 ## Python packages
-MISSING   jupyterlab=3.*
-OK        pandas=1.3.0
-OK        flake8=3.9.2
-MISSING   black=21.*
-MISSING   nodejs=15.*
-OK        jupytext=1.11.4
-OK        jupyterlab-git=0.30.1
+OK        pandas=1.4.3
+OK        pyppeteer=1.0.2
+OK        nbconvert=6.4.4
+OK        jupyterlab=3.4.5
+OK        jupyterlab-git=0.38.0
+OK        jupytext=1.14.0
+OK        jupyterlab-spellchecker=0.7.2
 OK        jupyterlab PDF-generation was successful.
 OK        jupyterlab WebPDF-generation was successful.
 OK        jupyterlab HTML-generation was successful.
 
 ## R packages
-OK        tidyverse=1.3.1
-OK        blogdown=1.3
-OK        xaringan=0.22
-OK        renv=0.13.2
-OK        IRkernel=1.2
-OK        tinytex=0.32
+OK        tidyverse=1.3.2
+OK        markdown=1.1
+OK        rmarkdown=2.14
+OK        renv=0.15.5
+OK        IRkernel=1.3
+OK        tinytex=0.40
+OK        janitor=2.1.0
+OK        gapminder=0.3.0
+OK        readxl=1.4.0
+OK        ottr=1.1.3
+OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
 OK        rmarkdown HTML-generation was successful.
 
-The above output has been saved to the file /home/joel/check-setup-mds.log
+The above output has been saved to the file /Users/florenciadandrea/Documents/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `open .` (without the surrounding backticks).
 ````
