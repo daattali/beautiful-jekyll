@@ -835,7 +835,7 @@ Quarto can be used outside RStudio as well, this is why we are going to install 
 After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
 
 ```bash
-quarto --version
+quarto.cmd --version
 ```
 If the installation was successful you will read the output:
 
