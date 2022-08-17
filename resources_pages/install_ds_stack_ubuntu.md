@@ -25,6 +25,7 @@ subtitle: MDS software stack install instructions for Ubuntu 2022/23
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
+- [Quarto](#quarto){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -85,11 +86,11 @@ You can test that VS code is installed and can be opened from Terminal by restar
 code --version
 ```
 
-you should see something like this if you were successful:
+you should see something like this if you were successful (does not have to be the exact same version):
 
 ```
-1.59.0
-d5e9aa0227e057a60c82568bf31c04730dc15dcd
+1.70.1
+6d9b74a70ca9c7733b29f0456fd8195364076dda
 x64
 ```
 
@@ -126,6 +127,11 @@ You can check your git version with the following command:
 git --version
 ```
 
+you should see something like this if you were successful:
+
+```
+git version 2.34.1
+
 ### Configuring Git user info
 
 Next, we need to configure Git by telling it your name and email. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email (the same you used on GitHub), respectively):
@@ -149,7 +155,7 @@ code ~/.bashrc
 > related to a previous Python or R installation,
 > please remove these.
 
-Append the following lines:
+Append the following lines to the file:
 
 ```
 # Set the default editor for programs launch from terminal
@@ -178,6 +184,7 @@ git config --global core.editor "code --wait"
 We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.x 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
 
 Once the download is finished, open Terminal and execute the following commands:
+
 ```
 bash path/to/file
 ```
@@ -193,17 +200,24 @@ The instructions for the installation will then appear:
 1. Press Enter.
 2. Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
 3. Type `yes` and press enter to accept the licence agreement.
-4. Press enter to accept the default installation location.
+4. Press enter to accept the default installation location, and wait a few seconds for Conda to install to that location.
 5. Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
 
-After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+After installation, restart the terminal. If the installation was successful, you will see `(base)` prepended to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+
 ```
 conda --version
 ```
 which should return something like this:
 
 ```
-conda 4.10.3
+conda 4.12.0
+```
+
+In general, installing Miniconda will install the last version of Python. As the new version of Miniconda with Python 3.10 has not been released yet, as an exception we are going to install Python 3.10 separately:
+
+```
+conda install python=3.10
 ```
 
 Next, type the following to ask for the version of Python:
@@ -250,12 +264,11 @@ We will be using `JupyterLab` as our main coding environment
 and `pandas` is one of the key data analyses packages in MDS.
 The Jupytext Python package and the JupyterLab git extension facilitates
 using notebooks in JupyterLab together with Git & GitHub.
-The spellchecker helps us correcting typos in our writing
-and the LSP packages fill the same function for our code.
+The spellchecker helps us correcting typos in our writing.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
+conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext
 ```
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
@@ -279,7 +292,7 @@ or go to the terminal from which you launched JupyterLab and hold `Ctrl` while p
 
 R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
-#### R
+### R
 
 The version of R available in the default Ubuntu repositories is older than the one we use in MDS. To obtain the latest R packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
 
@@ -307,8 +320,8 @@ R --version
 You should see something like this if you were successful:
 
 ```
-R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-Copyright (C) 2021 The R Foundation for Statistical Computing
+R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -318,15 +331,15 @@ For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
 
-> **Note:** [See this page for additoinal instructions if you run into troubles while installing R](https://cloud.r-project.org/bin/linux/ubuntu/).
+> **Note:** [See this page for additional instructions if you run into troubles while installing R](https://cloud.r-project.org/bin/linux/ubuntu/).
 
 > **Note:** Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
 
 ### RStudio
 
-Download the Ubuntu 18/Debian 10 Desktop version (not Pro) of RStudio Preview from [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions.
+Download the Ubuntu 22 Desktop version (not Pro) of RStudio Preview from [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions.
 
-> **Note:** There is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
+> **Note:** If you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
 To see if you were successful, try opening RStudio by clicking on its icon or typing `rstudio` in a terminal. It should open and look something like this picture below:
 
@@ -343,18 +356,19 @@ Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m
 
 ### Installing R packages
 
-The `tidyverse` R package (and some others) have external dependencies on Ubuntu outside of R. We need to install these first before we install such R packages:
+Some R packages (e.g. `tidyverse` and `devtools`) have external dependencies on Ubuntu outside of R. We need to install these first before we install such R packages:
 
 ```
-sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev
+sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libtiff5-dev
 ```
 
 Next, install the key R packages needed for the start of MDS program,
 by opening up RStudio and
-typing the following into the R console inside RStudio:
+typing the following into the R console inside RStudio
+(the first line might take a long time to run):
 
 ```R
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+install.packages(c('tidyverse', 'markdown', 'rmarkdown', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
 ```
@@ -387,15 +401,24 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
+> **Note:** It might take a long time to open JupyterLab
+> when there is an R kernel notebook open
+> since the previous session.
+> Be patient and wait several seconds for JupyterLab to start the R kernel.
+
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
-and paste the following in the rightmost panel that says `User Preferences`
-(replacing the `{}`):
+Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+You will see two panels,
+the right-most panel allows you to perform advanced modification
+of keyboards shortcuts in JupyterLab
+and it already contains quite a few shortcuts.
+We're going to add two more shortcuts,
+by pasting a text snippet just before the first existing shortcut.
+Go ahead and create a new line just after the line that says `"shortcuts": [`
+and paste the following:
 
 ```json
-{
-    "shortcuts": [
         {
             "command": "apputils:run-first-enabled",
             "selector": "body",
@@ -421,9 +444,7 @@ and paste the following in the rightmost panel that says `User Preferences`
                 ],
                 "args": {"text": "|> "}
             }
-        }
-    ]
-}
+        },
 ```
 
 After you have pasted this text,
@@ -451,19 +472,11 @@ install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
-The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add the TinyTex executables to our `PATH` and install several more packages (`PATH` is a collection of directories which contain the available executable programs on your computer).
-
-To append the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `~/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code ~/.bashrc`) and save the file:
-
-```
-# Append TinyTex executables to the path
-export PATH="$PATH:~/bin"
-```
-
-When you launch a new terminal instance, this directory will have been added to your path
-(you can check this by running `echo $PATH` in the terminal).
-Now you can check that the latex installation is working
-by opening a terminal and asking for the version of latex:
+As recommended at the end of the installation,
+it is important to **log out and in again for TinyTex to work properly**
+(restarting the computer also works).
+Once you log back in,
+try running the following in a terminal:
 
 ```
 latex --version
@@ -486,8 +499,9 @@ Compiled with zlib 1.2.11; using zlib 1.2.11
 Compiled with xpdf version 4.02
 ```
 
-Next, install the additional LaTeX packages needed for Jupyter
-by pasting the following into the new terminal instance and press enter:
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to install several more packages.
+To install the additional LaTeX packages needed for Jupyter
+paste the following into the new terminal instance and press enter:
 
 ```
 tlmgr install eurosym \
@@ -512,7 +526,7 @@ tlmgr install eurosym \
   oberdiek
 ```
 
-To test that your latex installation is working with jupyter notebooks,
+To test that your latex installation is working with Jupyter notebooks,
 launch `jupyter lab` from the terminal where you confirmed that latex works
 and open either a new notebook
 or the same one you used to test IRkernel above.
@@ -529,20 +543,27 @@ This requires the `pyppeteer` package,
 which we can install as follows.
 
 ```bash
-conda install pyppeteer=0.2.2
+conda install pyppeteer
 pyppeteer-install
 ```
 
 Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
+This may take a long time
 
 ## PostgreSQL
 
 We will be using PostgreSQL as our database management system.
-The Ubuntu repositories contain PostgreSQL 12.x,
-in MDS we will be using PostgreSQL 13.x,
-so you need to follow the instructions in the PostgreSQL documentation
-to [first add the their repository
-and then install the latest version](https://www.postgresql.org/download/linux/ubuntu/).
+Install it via the following command:
+
+```
+sudo apt install postgresql-14
+```
+
+> Note: Older version of Ubuntu might not have version 14 of PostgreSQL in the repos.
+> If this is the case for your version
+> you need to follow the instructions in the PostgreSQL documentation
+> to [first add the their repository
+> and then install the latest version](https://www.postgresql.org/download/linux/ubuntu/).
 
 By default, this installation creates a new user called `postgres`,
 which is the only one with permission to open the databases.
@@ -554,10 +575,10 @@ sudo su -c psql postgres
 ```
 
 The above should yield the prompt to change to what is shown below
-(the exact minor version does not matter as the major version is 13):
+(the exact minor version does not matter as the major version is 14):
 
 ```
-psql (13.3 (Ubuntu 13.3-1))
+psql (14.4 (Ubuntu 14.4-0ubuntu0.22.04.1))
 Type "help" for help.
 
 postgres=#
@@ -574,6 +595,26 @@ After signing-up, you also need to install Docker **CE** for Ubuntu. Install the
 Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`
 (only the subheading "Managing docker as a non-root user").
 Confirm that docker is working by following the verification instructions on that same page.
+
+## Quarto
+
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
+
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Linux.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto --version
+```
+
+If the installation was successful you will read the output:
+
+```bash
+1.0.38
+```
 
 ## VS Code extensions
 
