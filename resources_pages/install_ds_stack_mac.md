@@ -1,7 +1,7 @@
 ---
 layout: page
 title: macOS
-subtitle: MDS software stack install instructions for macOS 2022/3
+subtitle: MDS software stack install instructions for macOS 2022/23
 ---
 
 <!-- Open links in a new tab unless they have the `{:target="_self"}` attribute -->
