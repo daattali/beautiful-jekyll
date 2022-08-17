@@ -1036,7 +1036,7 @@ OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
 OK        rmarkdown HTML-generation was successful.
 
-The above output has been saved to the file /c/Users/Florencia/check-setup-mds.log
+This output and additional configuration details have been saved to the file /c/Users/Florencia/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
 
