@@ -841,6 +841,7 @@ If the installation was successful you will read the output:
 
 ```bash
 1.0.38
+```
 
 > **Note:** Pay attention that due to the Windows settings suggested in this installation you will always have to write  `quarto.cmd` instead of `quarto` to run Quarto commands. Read more [here](https://community.rstudio.com/t/bash-quarto-command-not-found/144187/3).
 ## VS Code extensions
@@ -971,7 +972,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 
 The output from running the script will look something like this:
 
-````
+```
 # MDS setup check 1.1.0
 
 If a program or package is marked as MISSING,
@@ -982,11 +983,11 @@ e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc
 
 You can run the following commands to find out which version
 of a program or package is installed (if any):
-```
+
 name_of_program --version  # For system programs
 conda list  # For Python packages
 R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
-```
+
 
 Checking program and package versions...
 
@@ -1041,7 +1042,7 @@ together with system configuration details and any detailed error messages about
 You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
 
 
-````
+```
 
 As you can see at the end of the output,
 a log file is saved in your current directory.
