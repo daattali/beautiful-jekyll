@@ -286,12 +286,12 @@ if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable prog
 else
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
-    if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
+    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/bin/rstudio/bin/quarto/bin/tools', 'C:/Program Files/RStudio/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
         echo "MISSING   rmarkdown PDF-generation failed. Check that latex and rmarkdown are marked OK above." >> check-setup-mds.log
     else
         echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
     fi
-    if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
+    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/bin/rstudio/bin/quarto/bin/tools', 'C:/Program Files/RStudio/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
         echo "MISSING   rmarkdown HTML-generation failed. Check that rmarkdown is marked OK above." >> check-setup-mds.log
     else
         echo 'OK        rmarkdown HTML-generation was successful.' >> check-setup-mds.log
