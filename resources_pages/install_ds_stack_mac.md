@@ -1,7 +1,7 @@
 ---
 layout: page
 title: macOS
-subtitle: MDS software stack install instructions for macOS
+subtitle: MDS software stack install instructions for macOS 2022/23
 ---
 
 <!-- Open links in a new tab unless they have the `{:target="_self"}` attribute -->
@@ -25,9 +25,14 @@ subtitle: MDS software stack install instructions for macOS
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
+- [Quarto](#quarto){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
+
+
+> Note that there are differences in some parts of the installation for Mac computers with the Intel chip and the Mac M1 / Mac M2.
+
 
 ## Installation notes
 
@@ -41,6 +46,15 @@ we require all students to install the software stack the same way.
 In all the sections below,
 if you are presented with the choice to download either a 64-bit (also called x64)
 or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
+
+
+> **Important**
+> Mac computers are transitioning from
+> Intel processors to [Apple silicon](https://support.apple.com/en-us/HT211814). 
+> If you have a new laptop (Mac M1 or Mac M2)
+> for some software you would like to install
+> you will have to use a different installer
+> than Macs with Intel processors.
 
 Once you have completed these installation instructions,
 make sure to follow the post-installation notes at the end
@@ -78,7 +92,11 @@ You will have to quit all instances of open Terminals and then restart the Termi
 
 ### Installing
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). 
+
+Pay attention here if you have to download the "Intel Chip" or "Apple silicon" installer.
+
+Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
 In addition to reading the [getting started instructions](https://code.visualstudio.com/docs/setup/mac), **be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.**
 
 You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
@@ -90,9 +108,9 @@ code --version
 you should see something like this if you were successful:
 
 ```
-1.45.1
+1.70.1
 5763d909d5f12fe19f215cbfdd29a91c0fa9208a
-x64
+arm64
 ```
 
 > **Note:** If you get an error message such as `-bash: code: command not found`, but you can see the VS Code application has been installed, then something went wrong with setting up the launch from the command line. Try following [these instructions](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) again, in particular you might want to try the described manual method of adding VS Code to your path.
@@ -133,7 +151,7 @@ git --version
 you should see something like this (does not have to be the exact same version) if you were successful:
 
 ```
-git version 2.24.2 (Apple Git-127)
+git version 2.32.1 (Apple Git-133)
 ```
 
 > **Note:** If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
@@ -202,7 +220,13 @@ if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
 
 ### Python and Conda
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), which [Miniconda MacOSX 64-bit pkg install for Python **3.x** can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html). 
+
+Select the appropiate link:
+
+**Intel Mac**:  [Miniconda MacOS Intel 64-bit pkg install can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
+
+**Mac M1 or higher**: [Miniconda MacOS Apple M1 64-bit pkg install for Python **3.x** can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg)
 
 After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 
@@ -213,10 +237,16 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.10.3
+conda 4.12.0
 ```
 
 > **Note:** If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
+
+In general, installing Miniconda will install the last version of Python. As the new version of Miniconda with Python 3.10 has not been released yet, as an exception we are going to re-install Python 3.10 separately:
+
+```
+conda install python=3.10
+```
 
 Next, type the following to ask for the version of Python:
 
@@ -264,12 +294,11 @@ We will be using `JupyterLab` as our main coding environment
 and `pandas` is one of the key data analyses packages in MDS.
 The Jupytext Python package and the JupyterLab git extension facilitates
 using notebooks in JupyterLab together with Git & GitHub.
-The spellchecker helps us correcting typos in our writing
-and the LSP packages fill the same function for our code.
+The spellchecker helps us correcting typos in our writing.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
+conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext  
 ```
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
@@ -295,7 +324,7 @@ R is another programming language that we will be using a lot in the MDS program
 
 ### R
 
-Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac. Open the file and follow the installer instructions.
+Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac. Open the file and follow the installer instructions. Pay attention that you will have to install `R-4.2.1-arm64.pkg` if you are working with a Mac M1 or higher and `R-4.2.1.pkg` if you are working in a Intel Mac.
 
 After installation, open a new terminal window and type the following:
 
@@ -306,9 +335,9 @@ R --version
 You should see something like this if you were successful:
 
 ```
-R version 4.0.0 (2020-04-24) -- "Arbor Day"
-Copyright (C) 2020 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin17.0 (64-bit)
+R version 4.2.1 (2022-06-23) -- "Funny Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under the terms of the
@@ -325,7 +354,9 @@ Some R packages rely on the dependency XQuartz which no longer ships with the Ma
 
 ### RStudio
 
-Download the macOS Desktop version (not Pro) of RStudio Preview from [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions.
+Download the macOS Desktop version (not Pro) of RStudio  [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions. 
+
+If you are using a Mac M1 or higher the installer is going to ask you automatically to install first a program called Rosetta. Native support for apple silicon is on development and may be released soon.
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and look something like this picture below:
 
@@ -345,7 +376,7 @@ by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```R
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'markdown', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
 ```
@@ -384,9 +415,16 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
-and paste the following in the rightmost panel that says `User Preferences`
-(replacing the `{}`):
+Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+You will see two panels,
+the right-most panel allows you to perform advanced modification
+of keyboards shortcuts in JupyterLab
+and it already contains quite a few shortcuts.
+We're going to add two more shortcuts,
+by pasting a text snippet just before the first existing shortcut.
+Go ahead and create a new line just after the line that says `"shortcuts": [`
+and paste the following:
+ 
 
 ```json
 {
@@ -431,7 +469,7 @@ Here is a screenshot of what it looks like with the settings saved:
 To check that the extension is working,
 open JupyterLab,
 launch an R notebook,
-and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Cmd` + `m`, respectively.
+and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m`, respectively.
 You could add any arbitrary text insertion command the same way,
 but this is all that is required for MDS.
 
@@ -509,6 +547,12 @@ Go to `File -> Export notebook as... -> Export Notebook to PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
 
+> **Notes installation 2022/23:** Try to export the notebook as HTML (`File -> Export notebook as... -> Export Notebook to PDF`). If you get [an error](www.github.com/microsoft/vscode-jupyter/issues/9468), downgrade the package `jinja` to the version 3.0.3:
+
+```bash
+pip install jinja2==3.0.3
+```
+
 ### WebPDF export
 
 Jupyter recently added another way to export notebooks to PDF
@@ -518,15 +562,38 @@ This requires the `pyppeteer` package,
 which we can install as follows.
 
 ```bash
-conda install pyppeteer=0.2.2
+conda install pyppeteer
 pyppeteer-install
 ```
 
 Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
 
+## Pandoc
+
+Install Pandoc for MacOs from the following link [Pandoc](https://pandoc.org/installing.html).
+
+Try in the command line
+
+```bash
+pandoc --version
+```
+You sould get this output:
+
+```bash
+pandoc 2.19
+Compiled with pandoc-types 1.22.2, texmath 0.12.5.2, skylighting 0.13,
+citeproc 0.8.0.1, ipynb 0.2, hslua 2.2.1
+Scripting engine: Lua 5.4
+User data directory: /Users/florenciadandrea/.local/share/pandoc
+Copyright (C) 2006-2022 John MacFarlane. Web:  https://pandoc.org
+This is free software; see the source for copying conditions. There is no
+warranty, not even for merchantability or fitness for a particular purpose.
+```
+
+
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can [download PostgreSQL 13.x from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
+We will be using PostgreSQL as our database management system. You can [download PostgreSQL 14.x from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
 
 To test if the installation was successful open the `SQL Shell` app from the LaunchPad or applications directory. You will be asked to setup your configuration:
 
@@ -536,13 +603,13 @@ To test if the installation was successful open the `SQL Shell` app from the Lau
 
 It should look like this if it is working correctly:
 
-![](/resources_pages/imgs/psql-mac.png)
+![](/resources_pages/imgs/psql-mac-2022-23.png)
 
 ## Docker
 
 You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can [sign up for a free one here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
 
-After signing-up and signing into the Docker Store, go here: [https://store.docker.com/editions/community/docker-ce-desktop-mac](https://store.docker.com/editions/community/docker-ce-desktop-mac) and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen to install the stable version.
+After signing-up and signing into the Docker Store, go here: [https://store.docker.com/editions/community/docker-ce-desktop-mac](https://store.docker.com/editions/community/docker-ce-desktop-mac) and click on the button "Mac with Intel chip" or "Mac with Apple chip". Then follow the installation instructions on that screen to install the stable version.
 
 To test if Docker is working, after installation open the Docker app by clicking on its icon (from Finder, Applications or Launchpad). Next open Terminal and type the following:
 
@@ -581,19 +648,40 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
+## Quarto CLI
+
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
+
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for MacOs.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto --version
+```
+If the installation was successful you will read the output:
+
+```bash
+1.0.38
+```
+
 ## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
 ![](/resources_pages/imgs/vscode.png)
 
-To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
+To install an extension, go to `View -> Extensions` or click in the icon as you can see in the image above. Then, search for the names of the ones you are interested in the search bar, click the extension you want, and click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
 
 - Python (everything Python: notebooks, debugging, linting, formatting, etc.)
 - markdownlint (markdown linting and style checking extension)
 - GitLens - Git supercharged (powerful extension that extends VS Code's native git capabilities)
 - Git History (intutive view of your git history)
 - Docker (easily use Docker from VS Code)
+- Quarto (integrated render and preview for Quarto documents and [more](https://quarto.org/docs/tools/vscode.html))
+
 - (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
 - (Optional) Material Icon Theme (great-looking custom file icons!)
 
@@ -722,7 +810,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 The output from running the script will look something like this:
 
 ````
-# MDS setup check 1.1.0
+# MDS setup check 2022.1
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
@@ -732,56 +820,60 @@ e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc
 
 You can run the following commands to find out which version
 of a program or package is installed (if any):
-```
+
 name_of_program --version  # For system programs
 conda list  # For Python packages
-R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
-```
+R -q -e "installed.packages()[,c(Package, Version)]"  # For R package
 
 Checking program and package versions...
 
 ## Operating system
 ProductName:	macOS
-ProductVersion:	11.4
-BuildVersion:	20F71
+ProductVersion:	12.5
+BuildVersion:	21G72
 
 ## System programs
-MISSING   psql 13.*
-OK        rstudio 1.4.1725
-OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-OK        python 3.10.0
-OK        conda 4.10.3
-OK        bash 3.2.57(1)-release (x86_64-apple-darwin20)
-OK        git 2.32.0
-OK        make 4.3
-OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021)
-OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
-OK        docker 20.10.7, build f0df350
-OK        code 1.58.2
+OK        psql (PostgreSQL) 14.5
+OK        rstudio 2022.07.1+554
+OK        R 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+OK        python 3.10.5
+OK        conda 4.13.0
+OK        bash 3.2.57(1)-release (arm64-apple-darwin21)
+OK        git 2.32.1 (Apple Git-133)
+OK        make 3.81
+OK        latex 3.141592653-2.6-1.40.24 (TeX Live 2022)
+OK        tlmgr 58:07 +0200)
+OK        docker 20.10.17, build 100c701
+OK        code 1.70.1
 
 ## Python packages
-MISSING   jupyterlab=3.*
-OK        pandas=1.3.0
-OK        flake8=3.9.2
-MISSING   black=21.*
-MISSING   nodejs=15.*
-OK        jupytext=1.11.4
-OK        jupyterlab-git=0.30.1
+OK        pandas=1.4.3
+OK        pyppeteer=1.0.2
+OK        nbconvert=6.4.4
+OK        jupyterlab=3.4.5
+OK        jupyterlab-git=0.38.0
+OK        jupytext=1.14.0
+OK        jupyterlab-spellchecker=0.7.2
 OK        jupyterlab PDF-generation was successful.
 OK        jupyterlab WebPDF-generation was successful.
 OK        jupyterlab HTML-generation was successful.
 
 ## R packages
-OK        tidyverse=1.3.1
-OK        blogdown=1.3
-OK        xaringan=0.22
-OK        renv=0.13.2
-OK        IRkernel=1.2
-OK        tinytex=0.32
+OK        tidyverse=1.3.2
+OK        markdown=1.1
+OK        rmarkdown=2.14
+OK        renv=0.15.5
+OK        IRkernel=1.3
+OK        tinytex=0.40
+OK        janitor=2.1.0
+OK        gapminder=0.3.0
+OK        readxl=1.4.0
+OK        ottr=1.1.3
+OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
 OK        rmarkdown HTML-generation was successful.
 
-The above output has been saved to the file /home/joel/check-setup-mds.log
+The above output has been saved to the file /Users/florenciadandrea/Documents/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `open .` (without the surrounding backticks).
 ````

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Windows
-subtitle: MDS software stack install instructions for Windows
+subtitle: MDS software stack install instructions for Windows 2022/23
 ---
 
 <!-- Open links in a new tab unless they have the `{:target="_self"}` attribute -->
@@ -25,6 +25,7 @@ subtitle: MDS software stack install instructions for Windows
 - [Make](#make){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
+- [Quarto](#quarto){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -169,8 +170,8 @@ bash --version
 The output should look similar to this:
 
 ```
-GNU bash, version 4.4.23(1)-release (x86_64-pc-sys)
-Copyright (C) 2019 Free Software Foundation, Inc.
+GNU bash, version 5.1.16(1)-release (x86_64-pc-msys)
+Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
 This is free software; you are free to change and redistribute it.
@@ -192,21 +193,18 @@ git --version
 ```
 
 ```
-git version 2.32.0.windows.2
+git version 2.37.2.windows.2
 ```
 
-> **Note:** Some of the Git commands we will use are only available since Git 2.23,
-so make sure your if your Git is at least this version.
-
-You can launch many windows programs from the terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
+> **Note:**  You can launch many windows programs from the terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
 
 ```
 code --version
 ```
 
 ```
-1.59.0
-c3f126316369cd610563c75b1b1725e0679adfb3
+1.70.1
+6d9b74a70ca9c7733b29f0456fd8195364076dda
 x64
 ```
 
@@ -323,7 +321,7 @@ python --version
 you should now see the same output as above:
 
 ```
-Python 3.9.5
+Python 3.10.0
 ```
 
 Let's also check the version of the `conda` package manager. If you type
@@ -335,7 +333,7 @@ conda --version
 you should see something like this
 
 ```
-conda 4.10.3
+conda 4.13.0
 ```
 
 > **Optional:** One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
@@ -351,7 +349,7 @@ conda 4.10.3
 > ```
 >
 > While we are in this file,
-> let's also remove the line that says `PS1="$PS1"'$MSYSTEM '          # show MSYSTEM` (line 17),
+> let's also remove the line that says `PS1="$PS1"'$MSYSTEM '          # show MSYSTEM` (now should be line 16),
 > to remove some clutter from the terminal.
 >
 > Click to save the file,
@@ -403,7 +401,7 @@ and the LSP packages fill the same function for our code.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
+conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext
 ```
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
@@ -456,8 +454,8 @@ R --version
 which should return something like:
 
 ```
-R version 4.1.1 (2021-05-18) -- "Camp Pontanezen"
-Copyright (C) 2021 The R Foundation for Statistical Computing
+R version 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -471,7 +469,7 @@ https://www.gnu.org/licenses/.
 
 ### RStudio
 
-Download the Windows preview version of RStudio Desktop (not Pro) from <https://www.rstudio.com/products/rstudio/download/preview>. Open the file and follow the installer instructions.
+Download the Windows preview version of RStudio Desktop  from <https://www.rstudio.com/products/rstudio/download/#download>. Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
@@ -498,7 +496,8 @@ Click "OK" on all of the three windows we opened above and you're done! If you o
 both applications should return the same values, and the first one should be a path inside your user directory e.g.
 
 ```
-"C:/Users/florencia/R/win-library/4.1" "C:/Program Files/R/R-4.1.0/library"
+[1] "C:/Users/Florencia/AppData/Local/R/win-library/4.2"
+[2] "C:/Program Files/R/R-4.2.1/library"
 ```
 
 If they don't return the same paths, please try to setting up your environmental variable again
@@ -506,12 +505,15 @@ and making sure that it is pointing to the correct folder.
 
 **Do not continue unless both R from terminal and R from RStudio return the same paths here or later parts of the installation will fail.**
 
-Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
-Go to `Tools > Global Options > Code > Editing` and tick the following option:
+
+
+Now we are going to check that RStudio’s *Insert Pipe* shortcut inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
+
+Press `Shift` + `Ctrl` + `m` in RStudio's console. If it is returned the following operator `%>%` instead of `|>`, go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
 
-Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
+Once the change is made you can try again in the RStudio console `Ctrl` + `Shift` + `m` verify that it functions. 
 
 ### Rtools
 
@@ -534,7 +536,7 @@ by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```R
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+install.packages(c('tidyverse', 'rmarkdown', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
 ```
@@ -543,7 +545,7 @@ devtools::install_github("ttimbers/canlang")
 
 ### IRkernel
 
-The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from the Windows Terminal** (not R Studio) and run the setup via the following two commands:
+The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from the Windows Terminal (write `R` in the console and press enter)** (not R Studio) and run the setup via the following two commands:
 
 ```
 install.packages('IRkernel')
@@ -551,6 +553,8 @@ IRkernel::installspec()
 ```
 
 When asked to select a mirror, pick one at a location close to where you live for faster downloads.
+
+When you finish you can close R typing `q()`.
 
 > **Note:** You cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
 
@@ -570,9 +574,16 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
-and paste the following in the rightmost panel that says `User Preferences`
-(replacing the `{}`):
+Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+You will see two panels,
+the right-most panel allows you to perform advanced modification
+of keyboards shortcuts in JupyterLab
+and it already contains quite a few shortcuts.
+We're going to add two more shortcuts,
+by pasting a text snippet just before the first existing shortcut.
+Go ahead and create a new line just after the line that says `"shortcuts": [`
+and paste the following:
+ 
 
 ```json
 {
@@ -647,9 +658,9 @@ latex --version
 You should see something like this if you were successful:
 
 ```
-pdfTeX 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX)
-kpathsea version 6.3.3
-Copyright 2021 Han The Thanh (pdfTeX) et al.
+pdfTeX 3.141592653-2.6-1.40.24 (TeX Live 2022)
+kpathsea version 6.3.4
+Copyright 2022 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
 covered by the terms of both the pdfTeX copyright and
 the Lesser GNU General Public License.
@@ -706,7 +717,7 @@ This requires the `pyppeteer` package,
 which we can install by typing the following into Windows Terminal.
 
 ```bash
-conda install pyppeteer=0.2.2
+conda install pyppeteer
 pyppeteer-install
 ```
 
@@ -765,7 +776,7 @@ There is NO WARRANTY, to the extent permitted by law.
 
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can [download PostgreSQL 13.x from here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
+We will be using PostgreSQL as our database management system. You can [download PostgreSQL 14.x from here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
 
 To test if the installation was successful open the `SQL Shell` app from the Start menu. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:
 
@@ -813,7 +824,25 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
+## Quarto CLI
 
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
+
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Windows.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto.cmd --version
+```
+If the installation was successful you will read the output:
+
+```bash
+1.0.38
+
+> **Note:** Pay attention that due to the Windows settings suggested in this installation you will always have to write  `quarto.cmd` instead of `quarto` to run Quarto commands. Read more [here](https://community.rstudio.com/t/bash-quarto-command-not-found/144187/3).
 ## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
@@ -827,6 +856,8 @@ To install an extension, you simply search for it in the search bar, click the e
 - GitLens (powerful extension that extends VS Code's native git capabilities)
 - Git History (intutive view of your git history)
 - Docker (easily use Docker from VS Code)
+- Quarto (integrated render and preview for Quarto documents and [more](https://quarto.org/docs/tools/vscode.html))
+
 - (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
 - (Optional) Material Icon Theme (great-looking custom file icons!)
 
@@ -960,46 +991,56 @@ R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
 Checking program and package versions...
 
 ## Operating system
-Microsoft Windows 10 Education
+Microsoft Windows 11 Education
 64-bit
-10.0.19044
+10.0.22000
 
 ## System programs
-MISSING   psql 13.*
-OK        rstudio 1.4.1725
-OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+OK        psql (PostgreSQL) 14.5
+OK        rstudio 2022.07.1+554
+OK        tlmgr revision 63068 (2022-04-18 07:58:07 +0200)
+OK        R 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
 OK        python 3.10.0
-OK        conda 4.10.3
-OK        bash 4.4.23(1)-release (x86_64-pc-msys)
-OK        git 2.32.0.windows.2
+OK        conda 4.13.0
+OK        bash 4-pc-msys)
+OK        git 2.37.2.windows.2
 OK        make 4.3
-OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX)
-OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
-OK        docker 20.10.7, build f0df350
-OK        code 1.58.2
+OK        latex 3.141592653-2.6-1.40.24 (TeX Live 2022)
+OK        docker 20.10.17, build 100c701
+OK        code 1.70.1
 
 ## Python packages
-MISSING   jupyterlab=3.*
-OK        pandas=1.3.0
-OK        flake8=3.9.2
-MISSING   black=21.*
-MISSING   nodejs=15.*
-OK        jupytext=1.11.4
-OK        jupyterlab-git=0.30.1
+OK        pandas=1.4.3
+OK        pyppeteer=1.0.2
+OK        nbconvert=6.5.3
+OK        jupyterlab=3.4.5
+OK        jupyterlab-git=0.38.0
+OK        jupytext=1.14.0
+OK        jupyterlab-spellchecker=0.7.2
 OK        jupyterlab PDF-generation was successful.
+OK        jupyterlab WebPDF-generation was successful.
+OK        jupyterlab HTML-generation was successful.
 
 ## R packages
-OK        tidyverse=1.3.1
-OK        blogdown=1.3
-OK        xaringan=0.22
-OK        renv=0.13.2
-OK        IRkernel=1.2
-OK        tinytex=0.32
+OK        tidyverse=1.3.2
+OK        markdown=1.1
+OK        rmarkdown=2.14
+OK        renv=0.15.5
+OK        IRkernel=1.3
+OK        tinytex=0.40
+OK        janitor=2.1.0
+OK        gapminder=0.3.0
+OK        readxl=1.4.0
+OK        ottr=1.1.3
+OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
+OK        rmarkdown HTML-generation was successful.
 
-This output and additional configuration details have been saved to the file /c/Users/joel/check-setup-mds.log.
+This output and additional configuration details have been saved to the file /c/Users/Florencia/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
+
+
 ````
 
 As you can see at the end of the output,
