@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Language learning (2)
+title: My language learning journey (2)
 subtitle: Chinese learning
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
