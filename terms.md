@@ -6,55 +6,51 @@ title: Terms of Use
 
 Please read these terms of use before using Our Service.
 
-##### Interpretation and Definitions
+##### Definitions
 
-#### Interpretation
-
-The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
-
-#### Definitions
-
-The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+The words of which the initial letter is capitalized have meanings defined below. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
 
 For the purposes of these Terms of Use:
-- <strong>Application</strong> means the software program provided by the Company downloaded by You on any electronic device.</p>
+- <strong>Application</strong> means the software program provided by the Company downloaded by You on any electronic device.
 - <strong>Application Store</strong> means the digital distribution service operated and developed by Apple Inc. (Apple App Store) or Google Inc. (Google Play Store) in which the Application has been downloaded.
 - <strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 - <strong>Country</strong> refers to the United States.
-- <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to creator of this Application.
+- <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to the creator of this Application.
 - <strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - <strong>Service</strong> refers to the Application.
 - <strong>Terms of Use</strong> (also referred as "Terms") mean these Terms and Use that form the entire agreement between You and the Company regarding the use of the Service.
 - <strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
-- <strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+- <strong>Website</strong> refers to the web site where We maintain content related to the Application, Privacy Policy, and Terms of Use.
+- <strong>You (or "Your")</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
 ##### Acknowledgment
 These are the Terms of Use governing the use of this Service and the agreement that operates between You and the Company. These Terms of Use set out the rights and obligations of all users regarding the use of the Service.
 
 Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms of Use. These Terms of Use apply to all visitors, users and others who access or use the Service.
 
-By accessing or using the Service You agree to be bound by these Terms of Use. If You disagree with any part of these Terms of Use then You may not access the Service.
+By accessing or using the Service You agree to be bound by these Terms of Use. If You disagree with any part of these Terms of Use then You may not access or use the Service.
 
-Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
+Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You access or use the Application and tells You about Your privacy rights and how the law may protect You. Please read Our Privacy Policy carefully before accessing or using Our Service.
 
 ##### Links to Other Websites
 
 Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
 
-The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
+The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You acknowledge that we are not responsible for examining or evaluating the content or accuracy and we do not warrant and will not have any liability or responsibility for any of any third-party web sites or services, or for any other products, or services of third-parties. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
 
 We strongly advise You to read the terms of use and privacy policies of any third-party web sites or services that You visit.
 
 ##### Termination
 
-We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms of Use.
+We may terminate or suspend Your access to or use of the Application or Services immediately, without prior notice or liability, for any reason whatsoever, including without limitation Your breach of these Terms.
 
-Upon termination, Your right to use the Service will cease immediately.
+Upon termination, any right You may have to access or use the Service will cease immediately.
 
 ##### Limitation of Liability
-Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 1 USD if You haven't purchased anything through the Service.
 
-To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
+You expressly agree that your use of, or inability to use, the service is at your sole risk. To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
+
+Notwithstanding any claim made by You with respect to the Services, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the lesser of the amount actually paid by You through the Service and 1 USD.
 
 Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.
 
@@ -66,12 +62,12 @@ Without limiting the foregoing, neither the Company nor any of the company's pro
 
 Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
 
-##### Governing Law
+##### Governing Law and Jurisdiction
 
-The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
+The laws of the State of New York, USA, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. You irrevocably agree that any legal action, suit or proceeding arising out of or related to these Terms must be brought solely and exclusively in, and will be subject to the service of process and other applicable procedural rules of, the State or Federal court in New York, New York, USA, and You agree to submit to the sole and exclusive personal jurisdiction of the courts in New York, NY, USA, generally and unconditionally, with respect to any action, suit or proceeding brought by You or against You by Us. Your use of the Application may also be subject to other local, state, national, or international laws.
 
 ##### Disputes Resolution
-If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
+If You have any concern or dispute about the Service, You agree to resolve the dispute by consulting and negotiating with Us, and attempt to reach a solution satisfactory to both You and Us.
 
 ##### For European Union (EU) Users
 If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.
@@ -87,7 +83,7 @@ If any provision of these Terms is held to be unenforceable or invalid, such pro
 
 #### Waiver
 
-Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall not effect a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
+Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall have no effect on a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
 
 ##### Translation Interpretation
 These Terms of Use may have been translated if We have made them available to You on our Service.
@@ -96,9 +92,9 @@ You agree that the original English text shall prevail in the case of a dispute.
 
 ##### Changes to These Terms of Use
 
-We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
+We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days’ notice prior to any new terms taking effect; provided, however, Our failure to provide such notice shall not affect the validity or legality of these Terms. What constitutes a material change will be determined at Our sole discretion.
 
-By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
+By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop accessing or using the Website and the Service.
 
 ##### Contact Us
 If you have any questions about these Terms of Use, You can contact us by email at jellroll.dev@gmail.com

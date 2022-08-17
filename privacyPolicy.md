@@ -5,10 +5,10 @@ title: Privacy Policy
 ---
 
 #### We only collect anonymous information.
-We do not collect any personally identifiable information from users. Account creation is not required to use our mobile application. The following data may be collected but is not linked to your personal identity: Identifiers, Usage Data, and Diagnostics.
+We do not collect any personally identifiable information from users. Account creation is not required to use our mobile application. The following data may be collected but is not linked to your personal identity: identifiers, usage data, and diagnostics.
 
 #### We do not share user information with outside parties except to the extent necessary to accomplish the mobile application's functionality.
-We may share anonymous, aggregate statistics with outside parties, such as how many people use the application. We may disclose your information in response to subpoenas, court orders, or other legal requirements; to exercise our legal rights or defend against legal claims; to investigate, prevent, or take action regarding illegal activities, suspected fraud or abuse, violations of our policies; or to protect our rights and property. In the future, we may sell to, buy, merge with, or partner with other businesses. In such transactions, user information may be among the transferred assets.
+We may share anonymous, aggregate statistics with outside parties, such as how many people use the application, with outside parties. We may disclose your information in response to subpoenas, court orders, or other legal requirements; to exercise our legal rights or defend against legal claims; to investigate, prevent, or take action regarding illegal activities, suspected fraud or abuse, violations of our policies; or to protect our rights and property. In the future, we may sell to, buy, merge with, or partner with other businesses. In such transactions, user information may be among the transferred assets.
 
 #### Ad companies collect anonymous data.
 Ad companies may use and collect anonymous data about your interests to customize content and advertising. This data is not linked to your identity.
@@ -19,7 +19,7 @@ AdMob provides a way for Google to help app developers earn money from their app
 - IP address, which may be used to estimate the general location of a device.
 - Non-user related crash logs, which may be used to diagnose problems and improve the SDK. Diagnostic information may also be used for advertising and analytics purposes.
 - User-associated performance data such as app launch time, hang rate, or energy usage, which may be used to evaluate user behavior, understand the effectiveness of existing product features, and plan new features. Performance data may also be used for displaying ads, including sharing with other entities that display ads.
-- A Device ID such as the device's advertising identifier or other app-bounded device identifiers, which may be used for the purpose of third-party advertising and analytics.
+- A device identifier such as the device's advertising identifier or other app-bounded device identifiers, which may be used for the purpose of third-party advertising and analytics.
 - Advertising data, such as advertisements the user has seen, may be used to power analytics and advertising features.
 - Other user product interactions like app launch taps, and interaction information, like video views, may be used to improve advertising performance.
 
@@ -32,7 +32,7 @@ We implement security measures such as Basic Authorization to access the API. In
 We may delete your user data for reasons such as technical needs, legal concerns, abuse prevention, or any other reason.
 
 #### We display links and content from third-party sites.
-Our mobile application displays links and content from third-party sites. These sites have their own independent privacy policies, and we have no responsibility or liability for their content or activities.
+Our mobile application displays links and content from third-party sites. These sites have their own independent privacy policies, and we have no responsibility or liability for their respective content or activities.
 
 #### California Online Privacy Protection Act Compliance
 We comply with the California Online Privacy Protection Act. We therefore will not distribute your personal information to outside parties without your consent.
