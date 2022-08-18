@@ -19,7 +19,7 @@ For the purposes of these Terms of Use:
 - <strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - <strong>Service</strong> refers to the Application.
 - <strong>Terms of Use</strong> (also referred as "Terms") mean these Terms and Use that form the entire agreement between You and the Company regarding the use of the Service.
-- <strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+- <strong>Third-party Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
 - <strong>Website</strong> refers to the web site where We maintain content related to the Application, Privacy Policy, and Terms of Use.
 - <strong>You (or "Your")</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
