@@ -76,6 +76,20 @@ A password manager is an efficient and convenient measure to protect your online
 
 For MDS program announcements, course forums, and correspondence we use the communication tool Slack. Slack can be accessed via the web browser, but we recommend using the Slack app, which can be installed via the [Snap store/Ubuntu Software app through this link](https://snapcraft.io/slack) or via the downloadable deb-file from the slack website [https://slack.com/intl/en-ca/downloads/linux](https://slack.com/intl/en-ca/downloads/linux).
 
+## UBC cloud computing resources
+
+If you at any point during the MDS program are having an issue with your computer,
+such as not being able to install all the software before the start of the program,
+it is useful to know UBC offers a free online computing environment
+that you can use as a backup to follow along in most of the MDS courses.
+This is called Jupyter Open
+and you can access it by logging into https://open.jupyter.ubc.ca/
+with your UBC CWL.
+Jupyter Open allow you to work with JupyterLab, R, Python, and Bash,
+and you can install packages via the `conda` and `pip` package managers
+(these are all explained further down in the installation instructions
+and during the program).
+
 ## Visual Studio Code
 
 The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can install VS Code either via the [Snap store/Ubuntu software app through this link](https://snapcraft.io/code) or via the downloadable deb-file from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb).
