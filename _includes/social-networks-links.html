@@ -1,6 +1,6 @@
 <ul class="list-inline text-center footer-links">
 
-{%- if site.rss-description -%}
+{%- if site.social-network-links.rss and site.rss-description -%}
   <li class="list-inline-item">
     <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
       <span class="fa-stack fa-lg" aria-hidden="true">
@@ -230,7 +230,7 @@
 
 {%- if site.social-network-links.mastodon -%}
   <li class="list-inline-item">
-    <a href="https://{{ site.social-network-links.mastodon }}" title="Mastodon">
+    <a rel="me" href="https://{{ site.social-network-links.mastodon }}" title="Mastodon">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
@@ -273,6 +273,66 @@
       </span>
       <span class="sr-only">Patreon</span>
     </a>
+  </li>
+{%- endif -%}
+  
+{%- if site.social-network-links.medium -%}
+  <li class="list-inline-item">
+    <a href="https://medium.com/@{{ site.social-network-links.medium }}" title="Medium">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Medium</span>
+    </a>
+  </li>
+{%- endif -%}
+
+{%- if site.social-network-links.itchio -%}
+  <li class="list-inline-item">
+    <a href="https://{{ site.social-network-links.itchio }}.itch.io/" title="Itchio">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Itchio</span>
+   </a>
+  </li>
+{%- endif -%}
+  
+{%- if site.social-network-links.discord -%}
+  <li class="list-inline-item">
+    <a href="https://discord.com/{{ site.social-network-links.discord }}" title="Discord">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Discord</span>
+   </a>
+  </li>
+{%- endif -%}
+  
+{%- if site.social-network-links.kaggle -%}
+  <li class="list-inline-item">
+    <a href="https://www.kaggle.com/{{ site.social-network-links.kaggle }}" title="Kaggle">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-kaggle fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Kaggle</span>
+   </a>
+  </li>
+{%- endif -%}
+
+{%- if site.social-network-links.hackerrank -%}
+  <li class="list-inline-item">
+    <a href="https://www.hackerrank.com/{{ site.social-network-links.hackerrank }}" title="Hackerrank">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-hackerrank fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Hackerrank</span>
+   </a>
   </li>
 {%- endif -%}
 
