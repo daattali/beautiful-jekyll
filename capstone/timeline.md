@@ -37,11 +37,13 @@ Proposals received *before November 1st* will be reviewed by the MDS teams and f
 The MDS leadership team will select proposals based primarily on student interest, and will invite the successful organizations to be a capstone partner.
 
 ## Partners submit video presentations
-Capstone partners should submit video presentations to provide information additional to the proposals.
+Capstone partners should submit video presentations (5-10 minutes) to provide information additional to the proposals. This will help students review your project(s) before attending the capstone fair.
 
 ## Capstone fair
 
-Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. Detailed information will be emailed to each capstone partner. An example of a Capstone fair slide deck can be found [here](/capstone/Sauder2019CapstoneFair.pdf).
+Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. Detailed information will be emailed to each capstone partner. 
+
+<!-- An example of a Capstone fair slide deck can be found [here](/capstone/Sauder2019CapstoneFair.pdf).-->
 
 ## Students rate the projects
 
