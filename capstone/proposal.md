@@ -40,9 +40,11 @@ Just a brief description of the problem. If you'd like, you can suggest data sci
 Describe the data that you will make available to the students:
 
 - How much data is there? 
+- Are the data clearly labeled? Do you have an existing data dictionary/data schema?
 - What type of features are available? 
 - How clean is the data?
 - In what form will the data be available to the students?
+- Does your organization provide any computational resources (e.g., cloud computing, virtual machines) to handle large scale data analysis?
 
 ### Data Product
 
