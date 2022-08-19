@@ -41,7 +41,7 @@ Capstone partners should submit video presentations (5-10 minutes) to provide in
 
 ## Capstone fair
 
-Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. Detailed information will be emailed to each capstone partner. 
+Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. For remote capstone partners, we will organize a virtual fair. Detailed information will be emailed to each capstone partner. 
 
 <!-- An example of a Capstone fair slide deck can be found [here](/capstone/Sauder2019CapstoneFair.pdf).-->
 
