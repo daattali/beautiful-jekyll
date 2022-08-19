@@ -25,7 +25,7 @@ subtitle: MDS software stack install instructions for Ubuntu 2022/23
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
-- [Quarto](#quarto){:target="_self"}
+- [Quarto CLI](#quarto-cli){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -596,7 +596,7 @@ Next, [follow the Linux post installation steps here](https://docs.docker.com/en
 (only the subheading "Managing docker as a non-root user").
 Confirm that docker is working by following the verification instructions on that same page.
 
-## Quarto
+## Quarto CLI
 
 Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
 

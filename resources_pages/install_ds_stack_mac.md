@@ -25,7 +25,7 @@ subtitle: MDS software stack install instructions for macOS 2022/23
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
-- [Quarto](#quarto){:target="_self"}
+- [Quarto CLI](#quarto-cli){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -567,29 +567,6 @@ pyppeteer-install
 ```
 
 Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
-
-## Pandoc
-
-Install Pandoc for MacOs from the following link [Pandoc](https://pandoc.org/installing.html).
-
-Try in the command line
-
-```bash
-pandoc --version
-```
-You sould get this output:
-
-```bash
-pandoc 2.19
-Compiled with pandoc-types 1.22.2, texmath 0.12.5.2, skylighting 0.13,
-citeproc 0.8.0.1, ipynb 0.2, hslua 2.2.1
-Scripting engine: Lua 5.4
-User data directory: /Users/florenciadandrea/.local/share/pandoc
-Copyright (C) 2006-2022 John MacFarlane. Web:  https://pandoc.org
-This is free software; see the source for copying conditions. There is no
-warranty, not even for merchantability or fitness for a particular purpose.
-```
-
 
 ## PostgreSQL
 

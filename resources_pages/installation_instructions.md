@@ -8,8 +8,8 @@ These instructions will walk you through how to install the required Data Scienc
 
 ## Laptop requirements
 
- - Runs one of the following operating systems: Ubuntu 22.04 (any version >=20.04 will likely work), macOS Big Sur (version 11.4.x or 11.5.x), Windows 10 Professional, Enterprise or Education (version 2004, 20H2, or 21H1).
-    - **Windows 10 Home is not sufficient** as not all the software required for the program can be installed on that OS. [Click here to download Windows 10 Education for free from UBC.](https://it.ubc.ca/software-downloads)
+ - Runs one of the following operating systems: Ubuntu 22.04 (any version >=20.04 will likely work), macOS Big Sur (version 11.4.x or 11.5.x), Windows 11 Professional, Enterprise or Education (version 2004, 20H2, or 21H1).
+    - **Windows 10 Home is not sufficient** as not all the software required for the program can be installed on that OS. [Click here to download Windows 11 Education for free from UBC.](https://it.ubc.ca/software-downloads) (if it is not available you can download Windows 10 Education and update it to Windows 11)
     - When installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.
 - Can connect to networks via a wireless connection for on campus work
 - Has access to an internet connection that is fast and stable enough for video calling and conducting online quizzes

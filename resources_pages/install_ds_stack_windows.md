@@ -25,7 +25,7 @@ subtitle: MDS software stack install instructions for Windows 2022/23
 - [Make](#make){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
-- [Quarto](#quarto){:target="_self"}
+- [Quarto CLI](#quarto-cli){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -580,9 +580,7 @@ the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
 and it already contains quite a few shortcuts.
 We're going to add two more shortcuts,
-by pasting a text snippet just before the first existing shortcut.
-Go ahead and create a new line just after the line that says `"shortcuts": [`
-and paste the following:
+by pasting the following:
  
 
 ```json
