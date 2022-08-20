@@ -78,6 +78,20 @@ A password manager is an efficient and convenient measure to protect your online
 
 For our MDS courses and program announcements, correspondence and course forums we use the communication tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack App. The Slack app can be installed from the Mac App Store, or from the Slack website. Installation instructions from the Slack website install method are here: [https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac](https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac)
 
+## UBC cloud computing resources
+
+If you at any point during the MDS program are having an issue with your computer,
+such as not being able to install all the software before the start of the program,
+it is useful to know UBC offers a free online computing environment
+that you can use as a backup to follow along in most of the MDS courses.
+This is called Jupyter Open
+and you can access it by logging into https://open.jupyter.ubc.ca/
+with your UBC CWL.
+Jupyter Open allow you to work with JupyterLab, R, Python, and Bash,
+and you can install packages via the `conda` and `pip` package managers
+(these are all explained further down in the installation instructions
+and during the program).
+
 ## Bash shell
 
 Apple recently changed the Mac default shell in the Terminal to Zsh, however, we aim to teach with the same shell across all three operating systems we support, which is the Bash shell. Thus, we ask that you change the default shell in your Terminal to Bash by opening the Terminal ([how to video](https://youtu.be/5AJbWEWwnbY)) and typing:
