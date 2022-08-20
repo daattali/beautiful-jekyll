@@ -7,7 +7,7 @@ layout: page
 ## Peer-reviewed research
 
 **Dimanchev, E.**, D. Qorbani, M. Korpas. 2022. [Electric vehicle adoption dynamics on the road to deep decarbonization](https://onlinelibrary.wiley.com/doi/10.1002/9783527831425.ch8). Book chapter in "The 4Ds of Energy Transition: Decarbonization, Decreasing use, Decentralization, and Digitalization". Wiley. 
-* Access: (contact for a copy)
+* Access: Get in touch
 * Model [link](https://zenodo.org/record/6191882#.YtkZVS8RrT8)
 
 **Dimanchev, E.**, J. Hodge, J. Parsons. 2021. [The role of hydropower reservoirs in deep decarbonization policy](https://www.sciencedirect.com/science/article/pii/S0301421521002391). *Energy Policy* 155. 
@@ -21,7 +21,7 @@ layout: page
   * [Report](https://globalchange.mit.edu/publication/17278) including Ohio case study
   * Code and data [link](https://doi.org/10.5281/zenodo.3605637)
 
-## Working papers, and reports (open access)
+## Working papers and reports
 
 **Dimanchev, E.**, and C. R. Knittel. 2020. [Trade-offs in Climate Policy: Combining Low- Carbon Standards with Modest Carbon Pricing](https://ceepr.mit.edu/workingpaper/trade-offs-in-climate-policy-combining-low-carbon-standards-with-modest-carbon-pricing/). MIT CEEPR Working Paper 2020-020. (Related: short [Research Brief](https://ceepr.mit.edu/wp-content/uploads/2021/09/2020-020-Brief.pdf)).
 
