@@ -52,7 +52,7 @@ or a 32-bit (also called x86) version of the application **always** choose the 6
 > Mac computers are transitioning from
 > Intel processors to [Apple silicon](https://support.apple.com/en-us/HT211814). 
 > If you have a new laptop (Mac M1 or Mac M2)
-> for some software you would like to install
+> for some software 
 > you will have to use a different installer
 > than Macs with Intel processors.
 
