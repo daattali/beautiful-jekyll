@@ -21,10 +21,10 @@ author: Varnez
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+#  Resources:
+#    - Beautiful Jekyll: "https://beautifuljekyll.com"
+#    - Learn markdown: "https://www.markdowntutorial.com/"
+#  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -58,7 +58,7 @@ social-network-links:
 #  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: Varnez
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -73,8 +73,8 @@ social-network-links:
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid 
-#  kaggle: yourname
+  discord: Varnez#4752
+  kaggle: Varnez
 #  hackerrank: yourname
 
 # If you want your website to generate an RSS feed, provide a description
