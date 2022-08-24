@@ -19,10 +19,6 @@ share-img: ''
 redirect_from: []
 
 ---
-how to create a simple chore routine with loop planning 85/60
-
-how loop planning can save your sanity and time with chores 84/58
-
 Have you felt extremely stressed out by trying to keep up with all things in your home? There are so many things, no matter what size your home or family is, so [loop planning](https://pambarnhill.com/loop-scheduling/#:\~:text=Loop%20scheduling%20doesn't%20assign,the%20list%20and%20start%20there.) is one strategy that help you keep track of it all in a way that can be very low stress, too. Today on the blog, I'm sharing with you **how to make chores simple with loop planning**.
 
 ## So what's loop planning?
