@@ -69,3 +69,7 @@ These checklists go hand in hand to help you get your chores done and the magic 
 **Related:** [How to Develop Cleaning and Tidying Routines in 4 Simple Steps +FREEBIE master cleaning task list](https://www.simplehomemom.com/how-to-develop-cleaning-and-tidying-routines-in-4-simple-steps/)
 
 ![A picture of chore checklist printables on a table next to a plant.](https://www.simplehomemom.com/uploads/untitled-design.png "The Ultimate Daily Chore Checklists that Don't Stress You Out")
+
+**Save for future reference:**
+
+![Blog title graphic showing cleaning bucket supplies in the background.](/uploads/1make-chores-simple-with-loop-planning-shm.jpg "Make Chores Simple with Loop Planning SHM")
