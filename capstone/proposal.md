@@ -12,7 +12,7 @@ Partners may choose to submit a capstone project(s) to the [MDS Vancouver](https
 
 Proposal forms can be found here:
 - [MDS Vancouver proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_6sxEtn0cuyOZAFM).
-- [MDS Computational Linguistics proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_5AsaQzU8OD5EGUK).
+- [MDS Computational Linguistics proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_08T2eD8evkdG5X8).
 - [An example proposal](/capstone/sample_proposal).
 
 *Due to COVID-19, it is unclear whether 2022 Capstone Projects will be conducted in-person or remotely. However, after a very successful "remote Capstone" in 2020 and 2021, MDS is committed to facilitating Capstone Projects again in 2022.*
