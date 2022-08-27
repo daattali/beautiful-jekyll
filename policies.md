@@ -10,13 +10,13 @@ The Master of Data Science Policies and Regulations are part of the campus-wide 
 
 ## Attendance
 
-Attendance in lectures and lab sessions is not required.
+Attendance in lectures and lab sessions is not mandatory but highly recommended. You will get the most out of the program if you show up in person. 
 
 **If you are feeling unwell, are experiencing any flu-like symptoms, or have reason to believe you may have Covid-19, please do not come to any in-person meetings including lectures, labs, office hours, or quizzes**. For quizzes specifically, see the information on "Remote quiz requests" below.
 
 ## Academic concession policy
 
-Students who miss an assignment or quiz can request an academic concession. From the UBC Senate [policy on academic concession](https://senate.ubc.ca/sites/senate.ubc.ca/files/downloads/20190515_V_135_Academic_Concession-Approved.pdf), grounds for academic concession can be illness, conflicting responsibilities, or compassionate grounds. Examples of compassionate grounds, from the above policy, include "a traumatic event experienced by the student, a family member, or a close friend; an act of sexual assault or other sexual misconduct experienced by the student, a family member, or a close friend; a death in the family or of a close friend."
+Students who miss an assignment or quiz for a legitimate reason can request an academic concession. From the UBC Senate [policy on academic concession](https://senate.ubc.ca/sites/senate.ubc.ca/files/downloads/20190515_V_135_Academic_Concession-Approved.pdf), grounds for academic concession can be illness, conflicting responsibilities, or compassionate grounds. Examples of compassionate grounds, from the above policy, include "a traumatic event experienced by the student, a family member, or a close friend; an act of sexual assault or other sexual misconduct experienced by the student, a family member, or a close friend; a death in the family or of a close friend."
 
 To request an academic concession, students should immediately email a completed and signed [academic concession form](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/Template%20-%20In-Term%20Academic%20Concessions%20Self%20Declaration.pdf?raw=1) to the course's Lab Instructor. Upon receiving the form, the Lab Instructor and/or MDS Co-Directors will make a decision about how to proceed. Failure to present valid documentation may result in a failing grade. 
 
@@ -49,7 +49,7 @@ With a few exceptions (which will be communicated to students at the start of a 
 
 ### Late Submissions
 
-A late submission is defined as any work submitted after the deadline. For a late submission, the student will receive a 75% scaling of their grade for the first four occurrences, 50% scaling of their grade for the fifth to ninth occurrences, and will receive a grade of 0 for subsequent occurrences.
+A late submission is defined as any work submitted after the deadline. For a late submission, the student will receive a 75% scaling of their grade for the first occurrence, 50% scaling of their grade for the second to fifth occurrences, and will receive a grade of 0 for subsequent occurrences. 
 
 ### Re-grading
  
@@ -64,6 +64,7 @@ If you have a question about the way your work was graded, please contact the re
 When we receive a regrade request we may re-grade the entire submission; thus, your lab/quiz grade may go up or down as a result of re-grading.
 
 #### Grading concerns: time limit
+
 If you perceive a problem with a grade, you have **one week** to raise a concern from the time that your grade was released. After that, your grade is final.
 
 #### Reasonable grading concerns
@@ -80,7 +81,7 @@ the internet, software documentation, etc.
 
 **However, it is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums, during a quiz.**
 
-For Block 2 onward of 2021-22, the following are also **NOT** permitted:
+The following are also **NOT** permitted:
 
 - taking a quiz from a remote location without prior permission (see below on how to obtain permission)
 - leaving the quiz room early with your laptop
@@ -92,7 +93,7 @@ Failing to observe the above expectations may result in a zero grade for the qui
 
 In some cases you may be able to take a quiz but not able to do so from UBC campus (for example, due to mild illness). 
 In this case, you must fill out an MDS remote quiz request form explaining
-why you are unable to be physically present for the quiz. We understand that in some cases (e.g. you wake up and are contacted by the health authority
+why you are unable to be physically present for the quiz **at least 2 hours before the quiz**. We understand that in some cases (e.g. you wake up and are contacted by the health authority
 and asked to self-isolate) you may only be able to make this determination at the last-minute. We simply ask that if you need to request a remote
 quiz, you do so as early as possible.
 
