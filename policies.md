@@ -93,9 +93,7 @@ Failing to observe the above expectations may result in a zero grade for the qui
 
 In some cases you may be able to take a quiz but not able to do so from UBC campus (for example, due to mild illness). 
 In this case, you must fill out an MDS remote quiz request form explaining
-why you are unable to be physically present for the quiz **at least 2 hours before the quiz**. We understand that in some cases (e.g. you wake up and are contacted by the health authority
-and asked to self-isolate) you may only be able to make this determination at the last-minute. We simply ask that if you need to request a remote
-quiz, you do so as early as possible.
+why you are unable to be physically present for the quiz **at least 2 hours before the quiz**. We understand that in some cases (e.g. you wake up and you realize that you are sick) you may only be able to make this determination at the last-minute. We ask that if you need to request a remote quiz, you do so as early as possible and provide appropriate documentation. 
 
 There are two forms, one for courses that start with the DSCI course code and one for courses that start with the COLX course code. Please fill out the appropriate form based on which course you are submitting the request for:
 

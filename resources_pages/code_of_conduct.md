@@ -69,7 +69,7 @@ Participants who are asked to stop any inappropriate behavior are expected to co
 
 ### Incident Reporting Guidelines
 
-If someone violates the Code of Conduct during a MDS event or in an online space outside of organised events, we ask that you report it to one of the MDS Co-Directors. The current MDS Co-Directors are Mike Gelbart and Tiffany Timbers. An email to mgelbart@cs.ubc.ca will be seen by Mike Gelbart, and an email to tiffany.timbers@stat.ubc.ca will be seen by Tiffany Timbers. To report a MDS code of conduct violation that will not be seen by Mike Gelbart or Tiffany Timbers, an alternative contact person is Milad Maymay, MDS Director, Program Operations & Student Management. His email is maymay@science.ubc.ca .
+If someone violates the Code of Conduct during a MDS event or in an online space outside of organised events, we ask that you report it to one of the MDS Co-Directors. The current MDS Co-Directors are Varada Kolhatkar and Rodolfo Lourenzutti. An email to kvarada@cs.ubc.ca will be seen by Varada Kolhatkar, and an email to lourenzutti@stat.ubc.ca will be seen by Rodolfo Lourenzutti. To report a MDS code of conduct violation that will not be seen by Varada Kolhatkar or Rodolfo Lourenzutti, an alternative contact person is Milad Maymay, MDS Director, Program Operations & Student Management. His email is maymay@science.ubc.ca .
 
 ## Have Fun
 
