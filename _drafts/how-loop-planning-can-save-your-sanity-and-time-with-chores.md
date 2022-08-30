@@ -19,15 +19,22 @@ share-img: ''
 redirect_from: []
 
 ---
-Have you felt extremely stressed out by trying to keep up with all things in your home? There are so many things, no matter what size your home or family is, so [loop planning](https://pambarnhill.com/loop-scheduling/#:\~:text=Loop%20scheduling%20doesn't%20assign,the%20list%20and%20start%20there.) is one strategy that help you keep track of it all in a way that can be very low stress, too. Today on the blog, I'm sharing with you **how to make chores simple with loop planning**.
+Have you felt extremely stressed out by trying to keep up with all things in your home? There are so many things to do, no matter what size your home or family is, so [loop planning](https://pambarnhill.com/loop-scheduling/#:\~:text=Loop%20scheduling%20doesn't%20assign,the%20list%20and%20start%20there.) is one strategy that help you keep track of it all in a way that can be very low stress, too. Today on the blog, I'm sharing with you **how to make chores simple with loop planning**.
 
 ## So what's loop planning?
 
-**A loop plan is essentially a list of things or tasks that you loop through, with no regard to time.** That way you never feel behind or ahead, you know?
+**A loop plan is essentially a list of things or tasks that you loop through, with no regard to time.** That way you never feel behind or ahead, you know? Read on to see what loop planning looks like in actuality. I was totally confused when I first read about it, so examples are a must to learn about it!
 
 ### Why loop planning?
 
 Loop planning is a fantastic strategy to use with home planning if you want to be consistent, but also don’t want to burn out. There are endless uses for loop planning with managing your home. I originally heard about [loop planning](https://pambarnhill.com/loop-scheduling/#:\~:text=Loop%20scheduling%20doesn't%20assign,the%20list%20and%20start%20there.) in the homeschooling world. My personal favourite is using a loop planning strategy for those "extra chores". I share about my loop chore routine [in my Instagram stories](www.instagram.com/simplehomemom) as well as you can grab my free chore routine printables, including my loop plan in the related blog below.
+
+#### Ways to use loop planning
+
+1. Loop plan your extra chores
+2. Loop plan your homeschooling subjects
+3. Loop plan your work time. I often do this when I have a few projects on the go! I set a timer and work through one at a time or a bit of each some days.
+4. Loop plan your meals, such as by using a list of 30 meals. You start at the beginning and loop back around again when you get to the end.
 
 **Related:** [The Ultimate Daily Chore Checklists that Don't Stress You Out](https://www.simplehomemom.com/the-ultimate-chore-checklists-that-don-t-stress-you-out/)
 
@@ -37,14 +44,14 @@ _Here is one example of a loop plan that is focused on cleaning zones:_
 
 ![An example of loop planning.](/uploads/20200406_111435_0000.png "How Loop Planning Can Save Your Sanity and Time with Chores SHM")
 
-**How I organize my chore loop plan for those extra chores:**
+**HOW I ORGANIZE MY CHORE LOOP PLAN FOR THOSE EXTRA CHORES:**
 
 * I have a list of areas that I want to work on
 * I created a master task list to refer to whenever I'm in each area (such as laundry room - wipe windows, vacuum behind washer and so on).
 * Currently I go through the loop on Monday-Thursday.
 * I decide what I want to do when I'm working on an area and then move on when I'm done (whenever that happens to be). I worked on the master bedroom windows and decluttering a couple things this week in my closet! Sometimes I'm just focusing on cleaning or just decluttering. I decide what to do each day in my loop chore area. Right now I'm doing it all because the house really needs it all (organizing, maintenance decluttering, cleaning).
 
-### Other loop planning ideas: chores
+### Other loop planning ideas for chores
 
 You can also do loop chores by ACTIVITY such as with: mopping, vacuuming, dusting or with cleaning toilets, cleaning the tub, cleaning the windows, mopping the floor (repeat). The options are completely endless with loop planning, but I love using my area method because it's easy to keep track of and I can prioritize what needs to be done each time. I can go through quickly or slowly depending on what mood or season of life I'm in.
 
@@ -58,18 +65,16 @@ _I promise you that loop planning becomes easier with practice too!_
 * Post: [3 reasons why you need to use loop planning](https://www.instagram.com/p/CeElgpKJrsk/)
 * Blog: [The Ultimate Stress Free Planning Method Anyone Can Use](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/)
 
-EDIT THIS....
+#### FREE DAILY CHORE CHECKLIST + LOOP CHORE CHECKLIST
 
-DAILY CHORE CHECKLIST + LOOP CHORE CHECKLIST
-
-**But, first download your chore routine printables** [**HERE**](https://mailchi.mp/1962b2e44326/chore-checklists) **because you’ll need them for learning about loop planning through the rest of the blog!**
-
-These checklists go hand in hand to help you get your chores done and the magic is the loop chore checklist because it helps you tackle those “extra” chores at your own pace. Low/no stress! Woop! But, first. I can hear you asking: “But what does loop planning mean?” Read on to see how loop planning works with my daily chore checklists below.
-
-**Related:** [How to Develop Cleaning and Tidying Routines in 4 Simple Steps +FREEBIE master cleaning task list](https://www.simplehomemom.com/how-to-develop-cleaning-and-tidying-routines-in-4-simple-steps/)
+**Intriguied about loop planning after reading all that? I LOVE to use loop planning in my chore routines. You can download your free chore routine printables** [**HERE**](https://mailchi.mp/1962b2e44326/chore-checklists) **if you'd like to apply my chore method in your home. Be sure to refer back to this post about loop planning when you are starting the method out.**
 
 ![A picture of chore checklist printables on a table next to a plant.](https://www.simplehomemom.com/uploads/untitled-design.png "The Ultimate Daily Chore Checklists that Don't Stress You Out")
 
+These checklists go hand in hand to help you make your chores simple and the magic is the loop chore checklist because it helps you tackle those “extra” chores at your own pace. Low/no stress! Woop! 
+
+**Related:**  [How to Develop Cleaning and Tidying Routines in 4 Simple Steps +FREEBIE master cleaning task list](https://www.simplehomemom.com/how-to-develop-cleaning-and-tidying-routines-in-4-simple-steps/)
+
 **Save for future reference:**
 
-![Blog title graphic showing cleaning bucket supplies in the background.](/uploads/1make-chores-simple-with-loop-planning-shm.jpg "Make Chores Simple with Loop Planning SHM")
+![A picture of cleaning supplies and the blog title graphic.](/uploads/shm-make-chores-simple-with-loop-planning.jpg "SHM Make Chores Simple with Loop Planning")
