@@ -168,7 +168,7 @@ if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executa
     echo "In order to do this after the installation process," >> check-setup-mds.log
     echo "first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
 else
-    py_pkgs=(pandas=1 pyppeteer=1 nbconvert=6 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyterlab-spellchecker=0)
+    py_pkgs=(pandas=1 pyppeteer=1 nbconvert=7 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyterlab-spellchecker=0)
     # installed_py_pkgs=$(pip freeze)
     installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
