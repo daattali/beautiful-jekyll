@@ -37,7 +37,7 @@ Proposals received *before November 1st* will be reviewed by the MDS teams and f
 The MDS leadership team will select proposals based primarily on student interest, and will invite the successful organizations to be a capstone partner.
 
 ## Partners submit video presentations
-Capstone partners should submit video presentations (5-10 minutes) to provide information additional to the proposals. This will help students review your project(s) before attending the capstone fair.
+Capstone partners should submit video presentations (5-10 minutes) to provide information additional to the proposals. We are not expecting production quality videos and we do not want you to spend too much time on this. The main purpose here is helping our students review your project(s) before attending the capstone fair so that they are ready to ask you meaningful questions.
 
 ## Capstone fair
 
