@@ -51,7 +51,7 @@ round-avatar: true
 social-network-links:
   email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
+  #facebook: deanattali
   github: daattali
   twitter: daattali
   patreon: DeanAttali
@@ -65,7 +65,7 @@ social-network-links:
 #  instagram: deanat78
 #  spotify: yourname
 #  telephone: +14159998888
-   steam: deanat78
+#  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
 #  telegram: yourname
