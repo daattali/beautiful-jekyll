@@ -77,6 +77,8 @@ at a computer learing how to CAD design something to print on his 3D printer.
 
 </p>
 
+<br>
+<br>
 
 #### Mike Gelbart, Associate Professor of Teaching (On Leave)
 
@@ -127,6 +129,16 @@ Varada Kolhatkar joined the MDS program in October 2018 as a teaching and resear
 
 </p>
 
+
+#### Rodolfo Lourenzutti, Co-Director and Assistant Professor of Teaching
+
+
+<img src='../img/team/rodolfo.jpeg'  align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Originally from Vila Velha, a coastal town in Brazil, Rodolfo Lourenzutti has a long-standing passion for data analysis, which drove him to pursuit a B.Sc and M.Sc in Statistics at the Federal University of Espírito Santo, and Federal University of Minas Gerais, respectively. For his PhD, Rodolfo switched fields to computer science, in which he obtained a PhD from the Federal University of Espírito Santo. Rodolfo has a diverse experience in Brazil as well as Canada. During his Ph.D., he spent 10 months working at the department of Electrical and Computer Engineering at University of Alberta. After completing his doctorate, he worked as Postdoctoral Fellow at University of Alberta in the Department of Civil & Environmental Engineering for 18 months. Rodolfo has taught in MDS for two years, and joined UBC’s STAT department in 2020.  <br>
+<br>
+
+</p>
 
 #### Quan Nguyen, Postdoctoral Research and Teaching Fellow
 
@@ -193,7 +205,7 @@ Arman Seyed-Ahmadi joined The MDS program in July 2021. He obtained his undergra
 
 
 
-#### Tiffany Timbers, Co-Director and Assistant Professor of Teaching
+#### Tiffany Timbers, Co-Director and Assistant Professor of Teaching (On Leave)
 
 <img src='../img/team/tiffany.png'  align="left" width="33%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
