@@ -14,7 +14,7 @@ show-avatar: true
 title: Make Chores Simple With Loop Planning
 description: Loop planning is a simple, yet effective strategy that busy stay at home
   moms can use to have better time management with their home management.
-subtitle: "+ freebie"
+subtitle: "+ free loop chore checklist"
 share-img: ''
 redirect_from: []
 
