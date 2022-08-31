@@ -62,14 +62,15 @@ You can also do loop chores by ACTIVITY such as with: mopping, vacuuming, dustin
 * Videos on loop planning I've done [HERE](https://www.instagram.com/p/CTzLnadj5OS/) and [HERE](https://www.instagram.com/p/CeElgpKJrsk/)
 * Post: [3 reasons why you need to use loop planning](https://www.instagram.com/p/CeElgpKJrsk/)
 * Blog: [The Ultimate Stress Free Planning Method Anyone Can Use](https://www.simplehomemom.com/the-ultimate-stress-free-planning-method-anyone-can-use/)
+* Shop: [Fillable daily chore checklist and loop chore checklist](https://www.etsy.com/ca/listing/1262897334/fillable-daily-chore-checklists?click_key=0b15131e5812821903aaf91b393d29b948301c86%3A1262897334&click_sum=388b8820&ref=shop_home_active_3)
 
 #### FREE DAILY CHORE CHECKLIST + LOOP CHORE CHECKLIST
 
-Intriguied about loop planning after reading all that? I LOVE to use loop planning in my chore routines. You can download your free chore routine printables [HERE](https://mailchi.mp/1962b2e44326/chore-checklists) if you'd like to apply my chore method in your home. Be sure to refer back to this post about loop planning when you are starting the method out.
+Intriguied about loop planning after reading all that? I LOVE to use loop planning in my chore routines. You can download your free chore routine printables [HERE](https://mailchi.mp/1962b2e44326/chore-checklists) if you'd like to apply my chore method in your home. Be sure to refer back to this post about loop planning when you are starting the method out. You can also find fillable daily and loop chore checklists in my shop [HERE](https://www.etsy.com/ca/listing/1262897334/fillable-daily-chore-checklists?click_key=0b15131e5812821903aaf91b393d29b948301c86%3A1262897334&click_sum=388b8820&ref=shop_home_active_3).
 
 ![A picture of chore checklist printables on a table next to a plant.](https://www.simplehomemom.com/uploads/untitled-design.png "The Ultimate Daily Chore Checklists that Don't Stress You Out")
 
-These checklists go hand in hand to help you make your chores simple and the magic is the loop chore checklist because it helps you tackle those “extra” chores at your own pace. Low/no stress! Woop! 
+These checklists go hand in hand to help you make your chores simple and the magic is the loop chore checklist because it helps you tackle those “extra” chores at your own pace. Low/no stress! Woop!
 
 **Related:**  [How to Develop Cleaning and Tidying Routines in 4 Simple Steps +FREEBIE master cleaning task list](https://www.simplehomemom.com/how-to-develop-cleaning-and-tidying-routines-in-4-simple-steps/)
 
