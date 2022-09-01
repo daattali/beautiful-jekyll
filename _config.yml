@@ -52,9 +52,9 @@ social-network-links:
   email: "1694181697@qq.com"
   rss: false  # remove this line if you don't want to show an RSS link at the bottom
   #facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
+  github: https://github.com/liusxs
+#  twitter: daattali
+#  patreon: DeanAttali
 #  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
