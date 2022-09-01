@@ -21,10 +21,10 @@ author: Some Person
 
 navbar-links:
   关于我: "aboutme"
-  资源:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
+  友情链接:
+    - JDSA Ling: "https://www.jdsalingzx.top"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  我的团队: ""
 
 ################
 # --- Logo --- #
