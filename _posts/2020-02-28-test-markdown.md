@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
+title: 示例博客文章
+subtitle: 每个帖子还有一个副标题
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+标签: [测试]
 comments: true
 ---
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+这是一篇演示文章，向您展示如何使用markdown撰写博客文章。我强烈建议您花5分钟学习如何用markdown书写 - 它将教您如何将常规文本转换为粗体/斜体/标题/表格/等。
 
 **Here is some bold text**
 
