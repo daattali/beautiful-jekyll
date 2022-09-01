@@ -1,16 +1,16 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: 关于我
+subtitle: 啊哈，你居然到这里了
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+我的名字是柳柳，我有以下的品质：
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- 我喜欢吃好吃的
+- 我喜欢吃我喜欢吃的
 
-What else do you need?
+我想你应该也是吧~
 
-### My story
+### 我的故事
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+说实话，我现在很难记住，所以你自己去忙吧！
