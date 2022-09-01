@@ -10,30 +10,29 @@ comments: true
 
 这是一篇演示文章，向您展示如何使用markdown撰写博客文章。我强烈建议您花5分钟学习如何用markdown书写 - 它将教您如何将常规文本转换为粗体/斜体/标题/表格/等。
 
-**Here is some bold text**
+**这是一些粗体文本**
 
-## Here is a secondary heading
+## 这是一个次要标题
 
-Here's a useless table:
+这是一个无用的表：
 
-| Number | Next number | Previous number |
+| 数字 | 下一个数字 | 上一个数字 |
 | :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+| 5 | 6 | 4 |
+| 10 | 11 | 9 |
+| 7 | 8 | 6 |
+| 2 | 3 | 1 |
 
 
-How about a yummy crepe?
+美味的薄饼怎么样？
 
 ![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
 
-It can also be centered!
+它也可以居中！
 
 ![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
 
-Here's a code chunk:
-
+下面是一个代码块：
 ~~~
 var foo = function(x) {
   return(x + 5);
@@ -41,7 +40,7 @@ var foo = function(x) {
 foo(3)
 ~~~
 
-And here is the same code with syntax highlighting:
+下面是具有语法突出显示的相同代码：
 
 ```javascript
 var foo = function(x) {
@@ -50,7 +49,7 @@ var foo = function(x) {
 foo(3)
 ```
 
-And here is the same code yet again but with line numbers:
+这里又是相同的代码，但带有行号：
 
 {% highlight javascript linenos %}
 var foo = function(x) {
@@ -59,20 +58,20 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-## Boxes
-You can add notification, warning and error boxes like this:
+## 盒子
+您可以添加通知，警告和错误框，如下所示：
 
-### Notification
+### 通知
 
 {: .box-note}
-**Note:** This is a notification box.
+**注意：** 这是一个通知框。
 
-### Warning
+### 警告
 
 {: .box-warning}
-**Warning:** This is a warning box.
+**警告:**  这是一个警告框。
 
-### Error
+### 错误
 
 {: .box-error}
-**Error:** This is an error box.
+**错误:**  这是一个错误框。
