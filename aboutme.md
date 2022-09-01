@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 关于我
-subtitle: 啊哈，你居然到这里了
+subtitle: 啊哈，你居然看到这里了
 ---
 
 我的名字是柳柳，我有以下的品质：
