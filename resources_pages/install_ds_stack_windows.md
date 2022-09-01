@@ -687,7 +687,6 @@ The above is all we need to have LaTeX work with R Markdown documents, however f
 
 When you sign back in,
 install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
-by pasting the following:
 
 ```
 tlmgr.bat install eurosym \
