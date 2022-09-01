@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 示例博客文章
+title: 示例文章
 subtitle: 每个帖子还有一个副标题
 # gh-repo: daattali/beautiful-jekyll
 # gh-badge: [star, fork, follow]
