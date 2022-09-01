@@ -20,6 +20,6 @@ function siteTime() {
   var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
   var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
   var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
-  document.getElementById("sitetime").innerHTML = "柳柳的宝藏已经运行了：" + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+  document.getElementById("sitetime").innerHTML = "该网页已经运行：" + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
 }
 siteTime();
