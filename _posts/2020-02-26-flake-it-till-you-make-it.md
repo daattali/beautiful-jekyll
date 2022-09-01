@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+subtitle: 摘自Jeff Brown的Soulshaping。
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [books, test]
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+在什么情况下我们应该走一条路？我们什么时候必须完成我们开始的事情？如果我买了一袋花生，并有过敏反应，如果我把它扔掉，没有人会责怪我。如果我和一个打我的女人结束了一段恋情，没有人会说我有承诺问题。但是，如果我因为灵魂有其他想法而离开一条看似安全的路线，我就是一片薄片？
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+事实是，没有其他人可以确切地知道我们在这里要走的路。倾听是很诱人的——我们中的许多人都渴望无所不能的他人——但除非他们是真正的通灵直觉，否则他们无法知道。所有其他人都能知道的是他们自己的真理，如果他们真的做了挖掘它的工作，他们就会有很好的感觉，知道他们不能真正了解别人的真理。只有灵魂知道它在这里要走的路。既然你是唯一一个住在你圣殿里的人，只有你能知道它的经文和解释结构。
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
+斗争的核心是两种截然不同的成功观念——生存驱动和灵魂驱动。对于生存主义者来说，成功是安全，实用主义，对他人的权力。成功是没有物质的痛苦，是灵魂的滋养被诅咒。一件奇怪而具有讽刺意味的事情是，我们这个世界的大部分物质力量往往掌握在年轻灵魂的手中。他们仍然在自我和物质领域工作，他们喜欢权力的感觉，并将大部分精力集中在积累上。年长的灵魂往往没有那么物质的驱动力。他们在前世已经玩过世俗的游戏，他们在前世寻找更微妙的意义——认证而不是积累。他们经常被整个文化所忽视，尽管他们确实是最真实的战士。
 
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+一个深情的成功概念取决于我们与生俱来的形象的实现。成功只是完成一个灵魂步骤，无论它多么难看。我们已经完成了吸取教训后开始的工作。基于恐惧的文化称之为绝佳的机会，对灵魂来说可能是徒劳的，也是被误导的。保持无激情的关系可能会满足我们对安慰的需求，但可能会扼杀灵魂。只有当灵魂要求成为一名著名的律师时，才有价值。如果你这次被呼召成为一名修道士，这是一个本质上的失败。如果你需要探索和放弃十种职业，以便将你的灵魂延伸到它与生俱来的形象，那就这样吧。把它剥成薄片，直到你把它弄出来。
