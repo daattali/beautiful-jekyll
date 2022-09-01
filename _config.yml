@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Liuliu
+title: 柳柳
 
 # Your name to show in the footer
 author: Some Person
@@ -21,7 +21,7 @@ author: Some Person
 
 navbar-links:
   关于我: "aboutme"
-  Resources:
+  资源:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
