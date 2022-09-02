@@ -549,7 +549,7 @@ by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```R
-install.packages(c('tidyverse', 'rmarkdown', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+install.packages(c('tidyverse', 'markdown', 'rmarkdown', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
 ```
