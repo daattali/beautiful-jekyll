@@ -561,8 +561,15 @@ conda install pyppeteer
 pyppeteer-install
 ```
 
-Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
-This may take a long time
+Due to [a current bug in pyppeteer](https://github.com/jupyter/nbconvert/issues/1834)
+we also need to disable sandbox mode
+by running the following single line from the terminal:
+
+```
+echo 'c.WebPDFExporter.disable_sandbox = True' > ~/.jupyter/jupyter_nbconvert_config.py && touch ~/.jupyter/jupyter_lab_config.py && echo 'c.WebPDFExporter.disable_sandbox = True' >> ~/.jupyter/jupyter_lab_config.py
+```
+
+Now you can try exporting by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
 
 ## PostgreSQL
 
