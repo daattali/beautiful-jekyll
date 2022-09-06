@@ -21,6 +21,9 @@ navbar-links:
   🗂️ Projects  :
     - Shape Analysis: "Shape_analysis"
     - Multiscale atlas estimation: "Multiscale_atlas_estimation"
+    Useful Resources :
+      - Fetal MRI processing tools: "Fetal_MRI"
+  
 #navbar:
 #  right:
 #  - text: "About"
