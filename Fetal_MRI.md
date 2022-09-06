@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /Useful_resources/
-title: Useful Resources
+permalink: /Fetal_MRI/
+title: Fetal MRI Processing Tools
 show-avatar: true
 display_categories: [work]
 ---
