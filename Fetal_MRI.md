@@ -18,21 +18,21 @@ display_categories: [work]
    
    
    <td>Baby Brain Toolkit (BTK)</td>    
-<td>Super-resolution brain volume reconstruction</td>
+<td>Super-resolution brain volume reconstruction, brain reorientation</td>
 <td>Fetal MRI</td>
      <td>   <a href="https://www.nitrc.org/projects/btk/">https://www.nitrc.org/projects/btk/</a></td>
 </tr>
    
    <tr>
 <td>NiftyMIC</td>    
-<td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard anatomical planes</td>
+<td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard radiological anatomical planes</td>
 <td>Fetal MRI</td>
      <td>   <a href="https://github.com/gift-surg/NiftyMIC">https://github.com/gift-surg/NiftyMIC</a></td>
 </tr>
   
   <tr>
 <td>MIAL SRTK</td>    
-<td>Super-resolution brain volume reconstruction</td>
+<td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard radiological anatomical planes</td>
 <td>Fetal MRI</td>
      <td>   <a href="https://mialsrtk.readthedocs.io/en/latest/">https://mialsrtk.readthedocs.io/en/latest/</a></td>
 </tr>
