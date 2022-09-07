@@ -13,7 +13,7 @@ From most recent to oldest:
 <table>
    
 <tr> <th>  Software/Tool name   </th>
-  <th>   Task  </th>
+  <th>  <img width=40/>  Tasks <img width=40/>  </th>
 <th> Data type  </th>
   <th> Link   </th>
 </tr>
