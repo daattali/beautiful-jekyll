@@ -12,10 +12,10 @@ display_categories: [work]
 <tr>
    
 
-<th>  <img width=40/> Software/Tool name   <img width=110/></th>
-  <th>  <img width=40/> Task <img width=110/> </th>
-<th> <img width=30/>Data type  <img width=110/> </th>
-  <th> <img width=30/>Link  <img width=110/> </th>
+<th>  Software/Tool name   </th>
+  <th>   Task  </th>
+<th> Data type  </th>
+  <th> Link   </th>
 </tr>
    
    <tr>
