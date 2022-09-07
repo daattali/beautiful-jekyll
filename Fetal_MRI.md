@@ -43,6 +43,14 @@ display_categories: [work]
    <td>   <a href="https://pubmed.ncbi.nlm.nih.gov/31704293/">https://pubmed.ncbi.nlm.nih.gov/31704293/</a></td>
 </tr>
    
+     <tr>
+<td>Infant FreeSurfer</td>    
+<td>Segmentation and surface extraction</td>
+<td>T1 infant MRI</td>
+     <td>   <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/infantFS">https://surfer.nmr.mgh.harvard.edu/fswiki/infantFS</a></td>
+   <td>   <a href="https://pubmed.ncbi.nlm.nih.gov/31704293/">https://pubmed.ncbi.nlm.nih.gov/31704293/</a></td>
+</tr>
+   
   
   
  </table>
