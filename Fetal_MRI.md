@@ -16,6 +16,7 @@ display_categories: [work]
   <th>   Task  </th>
 <th> Data type  </th>
   <th> Link   </th>
+    <th> Related Paper(s)   </th>
 </tr>
    
    <tr>
@@ -23,6 +24,7 @@ display_categories: [work]
 <td>Fetal MRI volume reconstruction</td>
 <td>Fetal MRI</td>
      <td>   <a href="https://github.com/gift-surg/NiftyMIC">https://github.com/gift-surg/NiftyMIC</a></td>
+<td>   <a href="https://pubmed.ncbi.nlm.nih.gov/31704293/">https://pubmed.ncbi.nlm.nih.gov/31704293/</a></td>
 </tr>
   
   <tr>
@@ -30,7 +32,9 @@ display_categories: [work]
 <td>Fetal MRI volume reconstruction</td>
 <td>Fetal MRI</td>
      <td>   <a href="https://github.com/gift-surg/NiftyMIC">https://github.com/gift-surg/NiftyMIC</a></td>
+   <td>   <a href="https://pubmed.ncbi.nlm.nih.gov/31704293/">https://pubmed.ncbi.nlm.nih.gov/31704293/</a></td>
 </tr>
+   
   
   
  </table>
