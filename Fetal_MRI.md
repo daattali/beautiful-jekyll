@@ -28,10 +28,10 @@ display_categories: [work]
 </tr>
   
   <tr>
-<td>NiftyMIC</td>    
+<td>MIAL SRTK</td>    
 <td>Fetal MRI volume reconstruction</td>
 <td>Fetal MRI</td>
-     <td>   <a href="https://github.com/gift-surg/NiftyMIC">https://github.com/gift-surg/NiftyMIC</a></td>
+     <td>   <a href="https://mialsrtk.readthedocs.io/en/latest/">https://mialsrtk.readthedocs.io/en/latest/</a></td>
    <td>   <a href="https://pubmed.ncbi.nlm.nih.gov/31704293/">https://pubmed.ncbi.nlm.nih.gov/31704293/</a></td>
 </tr>
    
