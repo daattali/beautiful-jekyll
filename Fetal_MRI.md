@@ -21,24 +21,24 @@ display_categories: [work]
    
    <tr>
 <td>NiftyMIC</td>    
-<td>Super-resolution volume reconstruction</td>
-<td>Fetal brain MRI</td>
+<td>Super-resolution brain volume reconstruction</td>
+<td>Fetal MRI</td>
      <td>   <a href="https://github.com/gift-surg/NiftyMIC">https://github.com/gift-surg/NiftyMIC</a></td>
 <td>   <a href="https://pubmed.ncbi.nlm.nih.gov/31704293/">https://pubmed.ncbi.nlm.nih.gov/31704293/</a></td>
 </tr>
   
   <tr>
 <td>MIAL SRTK</td>    
-<td>Super-resolution volume reconstruction</td>
-<td>Fetal brain MRI</td>
+<td>Super-resolution brain volume reconstruction</td>
+<td>Fetal MRI</td>
      <td>   <a href="https://mialsrtk.readthedocs.io/en/latest/">https://mialsrtk.readthedocs.io/en/latest/</a></td>
    <td>   <a href="https://pubmed.ncbi.nlm.nih.gov/31704293/">https://pubmed.ncbi.nlm.nih.gov/31704293/</a></td>
 </tr>
    
      <tr>
 <td>SVRTK</td>    
-<td>Super-resolution volume reconstruction</td>
-<td>Fetal brain MRI</td>
+<td>Super-resolution volume reconstruction (including brain, body, heart, and placenta) </td>
+<td>Fetal MRI</td>
      <td>   <a href="https://github.com/SVRTK/SVRTK">https://github.com/SVRTK/SVRTK</a></td>
    <td>   <a href="https://pubmed.ncbi.nlm.nih.gov/31704293/">https://pubmed.ncbi.nlm.nih.gov/31704293/</a></td>
 </tr>
