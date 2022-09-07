@@ -21,7 +21,7 @@ From most recent to oldest:
 
    
    <tr>
-<td>NiftyMIC</td>    
+<td>[NiftyMIC](https://github.com/gift-surg/NiftyMIC)</td>    
 <td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard radiological anatomical planes</td>
 <td>Fetal MRI</td>
      <td>   <a href="https://github.com/gift-surg/NiftyMIC">https://github.com/gift-surg/NiftyMIC</a></td>
