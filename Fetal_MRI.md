@@ -36,7 +36,7 @@ display_categories: [work]
 </tr>
 
 <tr>
-   <td>BTK</td>    
+<td>BTK</td>    
 <td>Super-resolution brain volume reconstruction, brain reorientation</td>
 <td>Fetal MRI</td>
 <td> <a href="https://www.nitrc.org/projects/btk"> <i class="fas fa-link"></i></a>   </td>
@@ -46,27 +46,24 @@ display_categories: [work]
 <td>PVR</td>    
 <td>Super-resolution brain volume reconstruction</td>
 <td>Fetal MRI</td>
-     <td> <a href="https://github.com/bkainz/fetalReconstruction"> <i class="fas fa-link"></i></a>   </td>
+<td> <a href="https://github.com/bkainz/fetalReconstruction"> <i class="fas fa-link"></i></a>   </td>
 </tr>
 
-
-    <tr>
-<td style="border:1px solid red;">dHCP structural pipeline</td>    
+<tr>
+<td style="border-top:2px solid;">dHCP structural pipeline</td>    
 <td>Structural analysis including segmentation and cortical surface extraction</td>
 <td>Neonatal brain MRI (T1 & T2)</td>
      <td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
-    <tr>
+<tr>
 <td>Perinatal pipeline</td>    
 <td>Built on the dHCP pipeline. Super-resolution reconstruction, tissue segmentation </td>
 <td>Fetal and neonatal brain MRI (T1 & T2)</td>
      <td> <a href="https://github.com/urrand/perinatal-pipeline"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
-   
-      
-    <tr>
+<tr>
 <td>M-CRIBS pipeline</td>    
 <td>Freesurfer-like pipeline for tissue segmentation and cortical surface extraction</td>
 <td>Neonatal brain MRI (T1 & T2)</td>
