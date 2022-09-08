@@ -5,7 +5,13 @@ subtitle: Keep up to date with our latest news and content.
 use-site-title: true
 ---
 
-## Welcome to the 2021-2022 season!
+## Welcome to the 2022-2023 season!
+
+Information about this year's math club will be available by early October. Please subscribe to the
+[RMS PTSA Bear Tracks newsletter](http://tinyurl.com/GetBearTracks)
+to be notified when registration becomes available.
+
+### Materials from 2021-2022 (subject to change this year)
 
 1. New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
 
