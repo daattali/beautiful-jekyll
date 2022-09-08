@@ -59,7 +59,7 @@ display_categories: [work]
    
     <tr>
 <td>Perinatal pipeline</td>    
-<td>Built on the dHCP pipeline. Super-resolution volume reconstruction, tissue segmentation </td>
+<td>Built on the dHCP pipeline. Super-resolution reconstruction, tissue segmentation </td>
 <td>Fetal and neonatal brain MRI (T1 & T2)</td>
      <td> <a href="https://github.com/urrand/perinatal-pipeline"> <i class="fas fa-link"></i></a>  </td>
 </tr>
