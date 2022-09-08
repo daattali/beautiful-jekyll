@@ -22,7 +22,7 @@ display_categories: [work]
     <tr>
 <td>2010</td>
       <td>Habas et al.</td>
-      <td>Fetal brain spatiotemporal atlas</td>
+      <td> <p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
        <td>Volume-reconstructed T2 MRI</td>
        <td>Intensity and tissue probability templates between 20 – 24 GW</td>
        <td><a href="http://depts.washington.edu/bicg/research/fba.php"> <i class="fas fa-link"></i></a>
@@ -35,7 +35,7 @@ display_categories: [work]
       <td>Neonatal brain spatiotemporal atlas</td>
        <td>T1 and T2 MRI</td>
        <td>Intensity and tissue probability templates between</td>
-       <td>https://​brain-​devel​opment.​org/​</td>
+       <td>https://brain-development.org/</td>
       </tr>
   
   <tr><td>2012</td>
