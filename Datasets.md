@@ -11,9 +11,9 @@ display_categories: [work]
    
 <tr> <th>  Year   </th>
   <th> Authors  </th>
-<th> <img width=80/> Dataset type <img width=80/>  </th>
+<th>  Dataset type   </th>
   <th> Data Type   </th>
-  <th> Specificies   </th>
+  <th><img width=80/> Specificies <img width=80/>  </th>
   <th> Download link   </th>
    </tr>
   
@@ -32,9 +32,9 @@ display_categories: [work]
 <td>2011</td>
       <td>Kuklisova-Murgasova et al.</td>
       <td>Neonatal brain spatiotemporal atlas</td>
-       <td>T1 and T2 MRI</td>
-       <td>Intensity and tissue probability templates between</td>
-       <td><a href="https://brain-development.org/"> <i class="fas fa-link"></i></a></td>
+       <td>T2 MRI</td>
+       <td>Intensity and tissue probability templates between 29-44 weeks</td>
+       <td><a href="https://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-murgasova/"> <i class="fas fa-link"></i></a></td>
       </tr>
   
   <tr><td>2012</td>
