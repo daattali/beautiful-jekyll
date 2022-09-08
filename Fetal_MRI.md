@@ -68,7 +68,7 @@ display_categories: [work]
       
     <tr>
 <td>M-CRIBS pipeline</td>    
-<td>Freesurfer-like pipeline to perform tissue segmentation and cortical surface extraction</td>
+<td>Freesurfer-like pipeline for tissue segmentation and cortical surface extraction</td>
 <td>Neonatal brain MRI (T1 & T2)</td>
      <td> <a href="https://github.com/DevelopmentalImagingMCRI/MCRIBS"> <i class="fas fa-link"></i></a>  </td>
 </tr>
