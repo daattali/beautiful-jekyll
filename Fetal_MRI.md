@@ -50,7 +50,8 @@ display_categories: [work]
 </tr>
 
    <tr border="3"></tr>
-    <tr border="5">
+   
+    <tr border=5>
 <td>dHCP structural pipeline</td>    
 <td>Structural analysis including segmentation and cortical surface extraction</td>
 <td>Neonatal brain MRI (T1 & T2)</td>
