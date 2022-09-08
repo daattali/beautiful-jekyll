@@ -36,7 +36,23 @@ display_categories: [work]
        <td>Intensity and tissue probability templates between 29-44 weeks</td>
        <td><a href="https://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-murgasova/"> <i class="fas fa-link"></i></a></td>
       </tr>
+   
+   <tr><td>2012</td>
+      <td>Serag et al.</td>
+      <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
+       <td>T2 MRI</td>
+       <td>Intensity and tissue probability templates between 23–37 GW</td>
+       <td><a href="https://brain-development.org/brain-atlases/fetal-brain-atlases/fetal-brain-atlas-serag/"> <i class="fas fa-link"></i></a></td></tr>
   
+   
+  <tr><td>2012</td>
+      <td>Serag et al.</td>
+      <td>Neonatal brain spatiotemporal atlas</td>
+       <td>T1 and T2 MRI</td>
+       <td>Intensity and tissue probability templates between 28–44 GW</td>
+       <td><a href="https://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-serag/"> <i class="fas fa-link"></i></a></td></tr>
+   
+   
   <tr><td>2012</td>
       <td>Gousias et al.</td>
       <td>Neonatal brain MRIs</td>
