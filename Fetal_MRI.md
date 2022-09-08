@@ -57,11 +57,18 @@ display_categories: [work]
      <td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
-   scripts to perform cortical surface extraction, surface registration and atlas-based cortical parcellation. A customised Freesurfer-like pipeline is provided to perform cortical parcellation on the surfaces with M-CRIB compatible labelling schemes
+    <tr>
+<td>Perinatal pipeline</td>    
+<td>Built on the dHCP pipeline. Super-resolution volume reconstruction, tissue segmentation </td>
+<td>Fetal and neonatal brain MRI (T1 & T2)</td>
+     <td> <a href="https://github.com/urrand/perinatal-pipeline"> <i class="fas fa-link"></i></a>  </td>
+</tr>
    
+   
+      
     <tr>
 <td>M-CRIBS pipeline</td>    
-<td>Freesurfer-like pipeline to perform cortical surface extraction, surface registration and atlas-based cortical parcellation</td>
+<td>Freesurfer-like pipeline to perform tissue segmentation and cortical surface extraction</td>
 <td>Neonatal brain MRI (T1 & T2)</td>
      <td> <a href="https://github.com/DevelopmentalImagingMCRI/MCRIBS"> <i class="fas fa-link"></i></a>  </td>
 </tr>
