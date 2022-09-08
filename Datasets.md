@@ -55,9 +55,9 @@ display_categories: [work]
    <tr><td>2016</td>
       <td>Makropoulos et al.</td>
       <td>Neonatal brain spatiotemporal atlas</td>
-       <td></td>
-       <td>82 cortical and subcortical structures between 27-45 GW</td>
-       <td><a href="https://brain-development.org/"> <i class="fas fa-link"></i></a></td></tr>
+       <td>T2 MRI</td>
+       <td>Tissue probability templates between 27-45 GW</td>
+       <td><a href="https://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-makropoulos/"> <i class="fas fa-link"></i></a></td></tr>
    
    <tr><td>2017</td>
       <td>Gholipour et al.</td>
@@ -80,7 +80,7 @@ display_categories: [work]
       <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
        <td>T2 MRI</td>
        <td>Intensity and tissue probability templates between 21-37 GW</td>
-       <td><a href="http://crl.med.harvard.edu/research/fetal_brain_atlas/"> <i class="fas fa-link"></i></a>
+       <td><a href="https://github.com/DeepBMI/FBA-Chinese"> <i class="fas fa-link"></i></a>
           </td></tr>
    
       <tr><td>2021</td>
@@ -91,6 +91,12 @@ display_categories: [work]
        <td><a href="https://github.com/LucasFidon/spina-bifida-MRI-atlas"> <i class="fas fa-link"></i></a>
           </td></tr>
    
-      
+   <tr><td>2022</td>
+      <td>Urru et al.</td>
+      <td><p style="color:#CD5C5C">Fetal and neonatal brain spatiotemporal atlas</p></td>
+       <td>T2 MRI</td>
+       <td>Intensity and tissue probability  templates between 28 – 44 weeks</td>
+       <td><a href="https://github.com/urrand/perinatal-pipeline"> <i class="fas fa-link"></i></a>
+          </td></tr>
   
 </table>
