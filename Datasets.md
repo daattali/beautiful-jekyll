@@ -1,7 +1,6 @@
 ---
 layout: page
 permalink: /Datasets/
-title: Fetal MRI Processing Tools
 show-avatar: true
 display_categories: [work]
 ---
@@ -23,7 +22,7 @@ display_categories: [work]
 <td>2010</td>
       <td>Habas et al.</td>
       <td> <p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
-       <td>Volume-reconstructed T2 MRI</td>
+       <td>T2 MRI</td>
        <td>Intensity and tissue probability templates between 20 – 24 GW</td>
        <td><a href="http://depts.washington.edu/bicg/research/fba.php"> <i class="fas fa-link"></i></a>
         </td>
@@ -63,10 +62,35 @@ display_categories: [work]
    <tr><td>2017</td>
       <td>Gholipour et al.</td>
       <td>Fetal brain spatiotemporal atlas</td>
-       <td>Volume-reconstructed T2 MRI</td>
+       <td>T2 MRI</td>
        <td>Intensity and tissue probability templates between 21-36 GW</td>
        <td><a href="http://crl.med.harvard.edu/research/fetal_brain_atlas/"> <i class="fas fa-link"></i></a>
           </td></tr>
+   
+      <tr><td>2018</td>
+      <td>Schuh et al.</td>
+      <td>Neonatal brain spatiotemporal atlas</td>
+       <td>T1 and T2 MRI</td>
+       <td>Intensity and tissue probability templates between 26-44 weeks</td>
+       <td><a href="/"> <i class="fas fa-link"></i></a>
+          </td></tr>
+   
+    <tr><td>2021</td>
+      <td>Wu et al.</td>
+      <td>Fetal brain spatiotemporal atlas</td>
+       <td>T2 MRI</td>
+       <td>Intensity and tissue probability templates between 21-37 GW</td>
+       <td><a href="http://crl.med.harvard.edu/research/fetal_brain_atlas/"> <i class="fas fa-link"></i></a>
+          </td></tr>
+   
+      <tr><td>2021</td>
+      <td>Fidon et al.</td>
+      <td>Spatiotemporal atlas of the fetal brain with spina bifida</td>
+       <td>T2 MRI</td>
+       <td>Intensity and tissue probability templates between 21-34 GW</td>
+       <td><a href="https://github.com/LucasFidon/spina-bifida-MRI-atlas"> <i class="fas fa-link"></i></a>
+          </td></tr>
+   
       
   
 </table>
