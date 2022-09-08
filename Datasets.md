@@ -119,7 +119,7 @@ display_categories: [work]
    
    <tr><td>2022</td>
       <td>Urru et al.</td>
-      <td><p style="color:#CD5C5C">Fetal and neonatal brain spatiotemporal atlas</p></td>
+      <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
        <td>T2 MRI</td>
        <td>Intensity and tissue probability  templates between 28 – 44 weeks</td>
        <td><a href="https://github.com/urrand/perinatal-pipeline"> <i class="fas fa-link"></i></a>
