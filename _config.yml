@@ -36,6 +36,7 @@ navbar-links:
   Capstone:
     - About: "capstone/about"
     - Partner info: "capstone/partner_info"
+    - Student info: "capstone/student_info"
     - Proposals: "capstone/proposal"
     - Timeline: "capstone/timeline"
     - Legal: "capstone/guide-to-mutual-nda-ip"
