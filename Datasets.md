@@ -75,6 +75,16 @@ display_categories: [work]
        <td><a href="/"> <i class="fas fa-link"></i></a>
           </td></tr>
    
+    <tr><td>2021 & 2022</td>
+      <td>FeTa challenge</td>
+      <td>Dataset of fetal brain MRIs</td>
+       <td>T2 MRI</td>
+       <td>120 fetal brain MRIs (volume reconstructed) and their parcellations</td>
+       <td><a href="https://feta.grand-challenge.org/"> <i class="fas fa-link"></i></a>
+          </td></tr>
+   
+   
+   
     <tr><td>2021</td>
       <td>Wu et al.</td>
       <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
