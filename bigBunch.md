@@ -6,11 +6,7 @@ subtitle: Find a bunch of words.
 
 ### What is Big Bunch?
 
-Big Bunch is a 24 hour daily word game that begins and ends at midnight Eastern Standard Time.
-
-### How is the daily winner determined?
-
-The first player to reach the day's highest score wins.
+Big Bunch is a fun and engaging daily word game played in real time with other players around the world. Tap and slide your way to grapeness as you make your way up the leaderboard.
 
 ![](/assets/img/bigBunch_win_white_bg.JPG#center){:width="50%"}
 
