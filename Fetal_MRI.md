@@ -14,35 +14,35 @@ display_categories: [work]
   <th> Link   </th>
 </tr>
    
-   <tr>
+<tr>
 <td>NiftyMIC</td>    
 <td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard radiological anatomical planes</td>
 <td>Fetal MRI</td>
      <td>  <a href="https://github.com/gift-surg/NiftyMIC"> <i class="fas fa-link"></i></a> </td>
 </tr>
    
-  <tr>
+<tr>
 <td>MIAL SRTK</td>    
 <td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard radiological anatomical planes</td>
 <td>Fetal MRI</td>
      <td> <a href="https://mialsrtk.readthedocs.io/en/latest"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
-   <tr>
+<tr>
 <td> SVRTK</td>    
 <td>Super-resolution volume reconstruction (including brain, body, heart, and placenta) </td>
 <td>Fetal MRI</td>
      <td> <a href="https://github.com/SVRTK/SVRTK"> <i class="fas fa-link"></i></a>  </td>
 </tr>
 
-   <tr>
+<tr>
    <td>BTK</td>    
 <td>Super-resolution brain volume reconstruction, brain reorientation</td>
 <td>Fetal MRI</td>
-     <td> <a href="https://www.nitrc.org/projects/btk"> <i class="fas fa-link"></i></a>   </td>
+<td> <a href="https://www.nitrc.org/projects/btk"> <i class="fas fa-link"></i></a>   </td>
 </tr>
    
-  <tr>
+<tr>
 <td>PVR</td>    
 <td>Super-resolution brain volume reconstruction</td>
 <td>Fetal MRI</td>
