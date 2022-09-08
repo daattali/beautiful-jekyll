@@ -13,7 +13,7 @@ display_categories: [work]
   <th> Authors  </th>
 <th>  Dataset type   </th>
   <th> Data Type   </th>
-  <th><img width=80/> Specificies <img width=80/>  </th>
+  <th><img width=80/>Specificies<img width=80/>  </th>
   <th> Download link   </th>
    </tr>
   
@@ -23,7 +23,7 @@ display_categories: [work]
       <td>Habas et al.</td>
       <td> <p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
        <td>T2 MRI</td>
-       <td>Intensity and tissue probability templates between 20 – 24 GW</td>
+       <td>Intensity and tissue probability templates between 20–24 GW</td>
        <td><a href="http://depts.washington.edu/bicg/research/fba.php"> <i class="fas fa-link"></i></a>
         </td>
       </tr>
@@ -41,14 +41,14 @@ display_categories: [work]
       <td>Gousias et al.</td>
       <td>Neonatal brain templates</td>
        <td>T1 and T2 MRI</td>
-       <td>20 brain intensity and parcellation atlases of term-born and preterm infants (36 to 44 weeks)</td>
+       <td>20 brain intensity and parcellation templates of term-born and preterm infants (36-44 weeks)</td>
        <td><a href="http://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-gousias/"> <i class="fas fa-link"></i></a></td></tr>
    
    <tr><td>2013</td>
       <td>Zhang et al.</td>
       <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
        <td>T2 MRI</td>
-       <td>Intensity and cortical surface templates between 15-22 GW (constructed from post-mortem fetuses)</td>
+       <td>Intensity and cortical surface templates between 15-22 GW (from post-mortem fetuses)</td>
        <td><a href="http://www.loni.ucla.edu/Atlases/Atlas_Detail.jsp?atlas_id=22"> <i class="fas fa-link"></i></a>
           </td></tr>
    
@@ -77,7 +77,7 @@ display_categories: [work]
    
     <tr><td>2021 & 2022</td>
       <td>FeTa challenge</td>
-      <td>Dataset of fetal brain MRIs</td>
+      <td>Multicenter dataset of fetal brain MRIs</td>
        <td>T2 MRI</td>
        <td>120 fetal brain MRIs (volume reconstructed) and their parcellations</td>
        <td><a href="https://feta.grand-challenge.org/"> <i class="fas fa-link"></i></a>
