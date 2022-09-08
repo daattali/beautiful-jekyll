@@ -49,10 +49,9 @@ display_categories: [work]
      <td> <a href="https://github.com/bkainz/fetalReconstruction"> <i class="fas fa-link"></i></a>   </td>
 </tr>
 
-   <tr border="3"></tr>
-   
-    <tr border=5>
-<td>dHCP structural pipeline</td>    
+
+    <tr>
+<td style="border:1px solid red;">dHCP structural pipeline</td>    
 <td>Structural analysis including segmentation and cortical surface extraction</td>
 <td>Neonatal brain MRI (T1 & T2)</td>
      <td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
