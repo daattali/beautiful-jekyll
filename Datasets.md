@@ -35,7 +35,7 @@ display_categories: [work]
       <td>Neonatal brain spatiotemporal atlas</td>
        <td>T1 and T2 MRI</td>
        <td>Intensity and tissue probability templates between</td>
-       <td>https://brain-development.org/</td>
+       <td><a href="https://brain-development.org/"> <i class="fas fa-link"></i></a></td>
       </tr>
   
   <tr><td>2012</td>
@@ -43,28 +43,30 @@ display_categories: [work]
       <td>Neonatal brain templates</td>
        <td>T1 and T2 MRI</td>
        <td>20 brain intensity and parcellation atlases of term-born and preterm infants (36 to 44 weeks)</td>
-       <td>http://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-gousias/</td></tr>
+       <td><a href="http://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-gousias/"> <i class="fas fa-link"></i></a></td></tr>
    
    <tr><td>2013</td>
       <td>Zhang et al.</td>
       <td>Fetal brain spatiotemporal atlas</td>
        <td>T2 MRI</td>
        <td>Intensity and cortical surface templates between 15-22 GW (constructed from post-mortem fetuses)</td>
-       <td>http://www.loni.ucla.edu/Atlases/Atlas_Detail.jsp?atlas_id=22</td></tr>
+       <td><a href="http://www.loni.ucla.edu/Atlases/Atlas_Detail.jsp?atlas_id=22"> <i class="fas fa-link"></i></a>
+          </td></tr>
    
    <tr><td>2016</td>
       <td>Makropoulos et al.</td>
       <td>Neonatal brain spatiotemporal atlas</td>
        <td></td>
        <td>82 cortical and subcortical structures between 27-45 GW</td>
-       <td>http://brain-development.org/</td></tr>
+       <td><a href="https://brain-development.org/"> <i class="fas fa-link"></i></a></td></tr>
    
    <tr><td>2017</td>
       <td>Gholipour et al.</td>
       <td>Fetal brain spatiotemporal atlas</td>
        <td>Volume-reconstructed T2 MRI</td>
        <td>Intensity and tissue probability templates between 21-36 GW</td>
-       <td>http://crl.med.harvard.edu/research/fetal_brain_atlas/</td></tr>
+       <td><a href="http://crl.med.harvard.edu/research/fetal_brain_atlas/"> <i class="fas fa-link"></i></a>
+          </td></tr>
       
   
 </table>
