@@ -18,8 +18,6 @@ From most recent to oldest:
   <th> Link   </th>
 </tr>
    
-
-   
    <tr>
 <td>NiftyMIC</td>    
 <td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard radiological anatomical planes</td>
@@ -27,8 +25,6 @@ From most recent to oldest:
      <td>  <a href="https://github.com/gift-surg/NiftyMIC"> <i class="fas fa-link"></i></a> </td>
 </tr>
    
-    
-  
   <tr>
 <td>MIAL SRTK</td>    
 <td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard radiological anatomical planes</td>
@@ -58,7 +54,21 @@ From most recent to oldest:
 </tr>
 
    
-    
+    <tr>
+<td>dHCP structural pipeline</td>    
+<td>Structural analysis including segmentation and cortical surface extraction</td>
+<td>Neonatal brain MRI (T1 & T2)</td>
+     <td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
+</tr>
+   
+   scripts to perform cortical surface extraction, surface registration and atlas-based cortical parcellation. A customised Freesurfer-like pipeline is provided to perform cortical parcellation on the surfaces with M-CRIB compatible labelling schemes
+   
+    <tr>
+<td>M-CRIBS pipeline</td>    
+<td>Freesurfer-like pipeline to perform cortical surface extraction, surface registration and atlas-based cortical parcellation</td>
+<td>Neonatal brain MRI (T1 & T2)</td>
+     <td> <a href="https://github.com/DevelopmentalImagingMCRI/MCRIBS"> <i class="fas fa-link"></i></a>  </td>
+</tr>
    
      <tr>
 <td>Infant FreeSurfer</td>    
