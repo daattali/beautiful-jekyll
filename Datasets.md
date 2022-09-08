@@ -77,7 +77,7 @@ display_categories: [work]
    
     <tr><td>2021 & 2022</td>
       <td>FeTa challenge</td>
-      <td>Multicenter dataset of fetal brain MRIs</td>
+      <td><b>Multicentric dataset of fetal brain MRIs</b></td>
        <td>T2 MRI</td>
        <td>120 fetal brain MRIs (volume reconstructed and parcellated)</td>
        <td><a href="https://feta.grand-challenge.org/"> <i class="fas fa-link"></i></a>
