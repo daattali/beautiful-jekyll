@@ -4,15 +4,15 @@ title: Proposals
 subtitle: For MDS Capstone Projects
 ---
 
-**Capstone Project Proposals for Spring 2022 are now open! You can access the applications at the links below.**
+**Capstone Project Proposals for Spring 2023 are now open! You can access the applications at the links below.**
 
-**The soft deadline for UBC Capstone proposals is Nov 19th. And the hard deadline is Dec 15th.** Proposals sent in by Nov 19th will receive feedback (that will hopefully increase their chances of being selected).
+**The soft deadline for UBC Capstone proposals is Nov 1st. And the hard deadline is Nov 30th.** Proposals sent in by Nov 1st will receive feedback (that will hopefully increase their chances of being selected).
 
 Partners may choose to submit a capstone project(s) to the [MDS Vancouver](https://ubc-mds.github.io/about/) program (general data science) and/or the [MDS Computational Linguistics](https://ubc-mds-cl.github.io/about) program (language-related data science). If you're unsure about which program to submit your project to, read more [here](#should-i-submit-my-proposal-to-mds-vancouver-or-mds-computational-linguistics).
 
 Proposal forms can be found here:
-- [MDS Vancouver proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_8bIhhzVHrbE6zCC).
-- [MDS Computational Linguistics proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_5AsaQzU8OD5EGUK).
+- [MDS Vancouver proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_6sxEtn0cuyOZAFM).
+- [MDS Computational Linguistics proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_08T2eD8evkdG5X8).
 - [An example proposal](/capstone/sample_proposal).
 
 *Due to COVID-19, it is unclear whether 2022 Capstone Projects will be conducted in-person or remotely. However, after a very successful "remote Capstone" in 2020 and 2021, MDS is committed to facilitating Capstone Projects again in 2022.*
@@ -40,9 +40,11 @@ Just a brief description of the problem. If you'd like, you can suggest data sci
 Describe the data that you will make available to the students:
 
 - How much data is there? 
+- Do you have an existing data dictionary/data schema?
 - What type of features are available? 
 - How clean is the data?
 - In what form will the data be available to the students?
+- Does your organization provide any computational resources (e.g., cloud computing, virtual machines) to handle large scale data analysis?
 
 ### Data Product
 
