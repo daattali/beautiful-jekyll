@@ -14,6 +14,10 @@ display_categories: [work]
   <th> Link   </th>
 </tr>
    
+    <tr style="border-top:2px solid #2b6777; border-bottom:2px solid #2b6777;">
+<td></td>    <td>MRI visualization</td> <td><td> <td>  </td>
+</tr>
+   
    <tr>
 <td>ITK Snap</td>    
 <td>MRI visualization</td>
