@@ -29,7 +29,7 @@ display_categories: [work]
    
 <tr>
 <td>Freeview</td>    
-<td>MRI and surface visualisation</td>
+<td>(Included in Freesurfer) MRI and surface visualisation</td>
 <td> b</td>
 <td> <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/OutputData_freeview"> <i class="fas fa-link"></i></a>  </td>
 </tr>
