@@ -14,7 +14,28 @@ display_categories: [work]
   <th> Link   </th>
 </tr>
    
-<tr>
+   <tr>
+<td>ITK Snap</td>    
+<td>MRI visualization</td>
+<td><td>
+     <td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
+</tr>
+   
+   <tr>
+<td>MRICron</td>    
+<td>MRI visualization & DICOM to Nifti conversion</td>
+<td><td>
+     <td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
+</tr>
+   
+   <tr>
+<td>Convert 3D</td>    
+<td>DICOM to Nifti conversion</td>
+<td><td>
+<td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
+</tr>
+   
+<tr style="border-top:2px solid #2b6777;">
 <td>NiftyMIC</td>    
 <td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard radiological anatomical planes</td>
 <td>Fetal MRI</td>
