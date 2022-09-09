@@ -7,32 +7,31 @@ display_categories: [work]
 ---
 
 <table>
-   
 <tr> <th>  Software/Tool name   </th>
 <th>  <img width=80/>  Tasks <img width=80/>  </th>
 <th> Data type  </th>
 <th> Link   </th>
 </tr>
       
- <tr>
+<tr>
 <td>ITK Snap</td>    
 <td>MRI visualization</td>
-<td><td>
-<td> <a href="http://www.itksnap.org/pmwiki/pmwiki.php"> <i class="fas fa-link"></i></a>  </td>
+<td>Multiple formats, e.g. nifti, DICOM... </td>
+<td> <a href="http://www.itksnap.org/pmwiki/pmwiki.php"> <i class="fas fa-link"></i></a> </td>
 </tr>
    
- <tr>
+<tr>
 <td>MRICron</td>    
 <td>MRI visualization & DICOM to Nifti conversion</td>
-<td><td>
+<td>Multiple formats, e.g. nifti, DICOM...</td>
 <td> <a href="https://www.nitrc.org/projects/mricron"> <i class="fas fa-link"></i></a></td>
 </tr>
    
 <tr>
-<td>Convert 3D</td>    
-<td>DICOM to Nifti conversion</td>
-<td><td>
-<td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
+<td>Freeview</td>    
+<td>MRI and surface visualisation</td>
+<td> b</td>
+<td> <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/OutputData_freeview"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
 <tr style="border-top:2px solid #2b6777;">
