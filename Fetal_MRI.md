@@ -13,23 +13,19 @@ display_categories: [work]
 <th> Data type  </th>
   <th> Link   </th>
 </tr>
-   
-<tr style="border-top:2px solid #2b6777; border-bottom:2px solid #2b6777;">
-<td></td>    <td>MRI visualization</td> <td> </td> <td>  </td>
-</tr>
-   
+      
    <tr>
 <td>ITK Snap</td>    
 <td>MRI visualization</td>
 <td><td>
-<td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
+<td> <a href="http://www.itksnap.org/pmwiki/pmwiki.php"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
    <tr>
 <td>MRICron</td>    
 <td>MRI visualization & DICOM to Nifti conversion</td>
 <td><td>
-<td> <a href="https://github.com/BioMedIA/dhcp-structural-pipeline"> <i class="fas fa-link"></i></a>  </td>
+<td> <a href="https://www.nitrc.org/projects/mricron"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
    <tr>
