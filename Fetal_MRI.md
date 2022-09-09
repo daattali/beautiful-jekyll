@@ -9,26 +9,26 @@ display_categories: [work]
 <table>
    
 <tr> <th>  Software/Tool name   </th>
-  <th>  <img width=80/>  Tasks <img width=80/>  </th>
+<th>  <img width=80/>  Tasks <img width=80/>  </th>
 <th> Data type  </th>
-  <th> Link   </th>
+<th> Link   </th>
 </tr>
       
-   <tr>
+ <tr>
 <td>ITK Snap</td>    
 <td>MRI visualization</td>
 <td><td>
 <td> <a href="http://www.itksnap.org/pmwiki/pmwiki.php"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
-   <tr>
+ <tr>
 <td>MRICron</td>    
 <td>MRI visualization & DICOM to Nifti conversion</td>
 <td><td>
-<td> <a href="https://www.nitrc.org/projects/mricron"> <i class="fas fa-link"></i></a>  </td>
+<td> <a href="https://www.nitrc.org/projects/mricron"> <i class="fas fa-link"></i></a></td>
 </tr>
    
-   <tr>
+<tr>
 <td>Convert 3D</td>    
 <td>DICOM to Nifti conversion</td>
 <td><td>
@@ -91,7 +91,7 @@ display_categories: [work]
 <td> <a href="https://github.com/DevelopmentalImagingMCRI/MCRIBS"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
-     <tr>
+<tr>
 <td>Infant FreeSurfer</td>    
 <td>Segmentation and surface extraction</td>
 <td>T1 infant MRI</td>
