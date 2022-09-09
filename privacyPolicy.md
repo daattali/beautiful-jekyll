@@ -50,8 +50,7 @@ Information may be processed, stored, and used outside of the country in which y
 By using our site or apps, you consent to our privacy policy.
 
 #### You can ask privacy questions.
-If you have any questions or concerns about our privacy policies, please contact us:
-jellroll.dev@gmail.com
+If you have any questions or concerns about our privacy policies, please email [jellroll.dev@gmail.com](mailto:jellroll.dev@gmail.com).
 
 #### You can review more privacy-related information.
 Our privacy policy may change from time to time. If we make any material changes to our policies, we will place a prominent notice on our website or application.
