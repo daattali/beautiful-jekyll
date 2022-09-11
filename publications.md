@@ -14,6 +14,71 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/cropped-CoRL2022-1.png" img width="250">
+        </td>
+        <td>Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity<br>
+            <div class="pubauthor">
+            Wenxuan Zhou, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2022 - <award>Oral Presentation</award>
+            <br></div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/cropped-CoRL2022-1.png" img width="250">
+        </td>
+        <td>TAX-Pose: Task-Specific Cross-Pose Estimation for Robot Manipulation<br>
+            <div class="pubauthor">
+            Chuer Pan*, Brian Okorn*, Harry Zhang*, Ben Eisner*, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2022
+            <br></div>
+        </td>
+    </tr>
+
+    <tr>
+            <td class="pubimg" width="250" height="100" style="text-align:center">
+                <img src="../pics/cropped-CoRL2022-1.png" img width="250">
+            </td>
+            <td>ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from Point Clouds<br>
+                <div class="pubauthor">
+                Daniel Seita, Yufei Wang, Sarthak J Shetty, Edward Yao Li, Zackory Erickson, David Held<br>
+                </div>
+                <div class="pubjournal">Conference on Robot Learning (CoRL), 2022
+                <br></div>
+            </td>
+        </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/cropped-CoRL2022-1.png" img width="250">
+        </td>
+        <td>Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation<br>
+            <div class="pubauthor">
+            Xingyu Lin*, Carl Qi*, Yunchu Zhang, Yunzhu Li, Zhiao Huang, Katerina Fragkiadaki, Chuang Gan, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2022
+            <br></div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
+            <img src="../pics/cropped-CoRL2022-1.png" img width="250">
+        </td>
+        <td>Deep Projective Rotation Estimation through Relative Supervision<br>
+            <div class="pubauthor">
+            Brian Okorn*, Chuer Pan*, Martial Hebert, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2022
+            <br></div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100" style="text-align:center">
             <img src="../pics/new_splash.png" img width="250" height="120">
         </td>
         <td>Differentiable Raycasting for Self-supervised Occupancy Forecasting<br>
