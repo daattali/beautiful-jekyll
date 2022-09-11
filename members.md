@@ -60,7 +60,9 @@ members:
           - name: Chuer Pan (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/08/pan_chu-er_2020.jpg
             web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
-
+          - name: Gunjan Sethi (MRSD)
+            photo_url: /img/members/gunjans.JPEG
+            web_url: https://www.ri.cmu.edu/ri-people/gunjan-sethi/            
       - name: Undergraduate Students
         full: true
         list:
