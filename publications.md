@@ -20,7 +20,7 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
             <div class="pubauthor">
             Wenxuan Zhou, David Held<br>
             </div>
-            <div class="pubjournal">Conference on Robot Learning (CoRL), 2022 - <award>Oral Presentation</award>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2022 - <award>Oral Presentation</award>  (Selection rate 6.5%)
             <br></div>
         </td>
     </tr>
