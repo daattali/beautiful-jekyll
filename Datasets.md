@@ -48,7 +48,7 @@ display_categories: [work]
   <tr><td>2012</td>
       <td>Serag et al.</td>
       <td>Neonatal brain spatiotemporal atlas</td>
-       <td>T1 and T2 MRI</td>
+       <td>T1/ T2 MRI</td>
        <td>Intensity and tissue probability templates between 28–44 GW</td>
        <td><a href="https://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-serag/"> <i class="fas fa-link"></i></a></td></tr>
    
@@ -56,7 +56,7 @@ display_categories: [work]
   <tr><td>2012</td>
       <td>Gousias et al.</td>
       <td>Neonatal brain MRIs</td>
-       <td>T1 and T2 MRI</td>
+       <td>T1/ T2 MRI</td>
        <td>20 brain intensity and parcellation templates from infants between 36-44 weeks</td>
        <td><a href="http://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-gousias/"> <i class="fas fa-link"></i></a></td></tr>
    
