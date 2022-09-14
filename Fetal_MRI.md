@@ -30,8 +30,15 @@ display_categories: [work]
 <tr>
 <td>Freeview</td>    
 <td>(Included in Freesurfer) MRI and surface visualisation</td>
-<td> b</td>
+<td>Multiple formats</td>
 <td> <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/OutputData_freeview"> <i class="fas fa-link"></i></a>  </td>
+</tr>
+      
+<tr>
+<td>Paraview</td>    
+<td>Surface visualisation</td>
+<td>.vtk</td>
+<td> <a href="https://www.paraview.org/"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
 <tr style="border-top:2px solid #2b6777;">
