@@ -9,12 +9,12 @@ display_categories: [work]
 
 <table>
    
-<tr> <th>  Year   </th>
-  <th> Authors  </th>
-<th>  Dataset type   </th>
-  <th> Data Type   </th>
-  <th><img width=80/>Specificies<img width=80/>  </th>
-  <th> Download link   </th>
+<tr> <th>Year</th>
+ <th>Authors</th>
+<th>Dataset type </th>
+ <th>Data Type </th>
+  <th><img width=100/>Specificities<img width=100/>  </th>
+  <th> Link</th>
    </tr>
   
   
