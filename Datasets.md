@@ -86,7 +86,7 @@ display_categories: [work]
       <tr><td>2018</td>
       <td>Schuh et al.</td>
       <td>Neonatal brain spatiotemporal atlas</td>
-       <td>T1 and T2 MRI</td>
+       <td>T1/ T2 MRI</td>
        <td>Intensity and tissue probability templates between 26-44 weeks</td>
        <td><a href="/"> <i class="fas fa-link"></i></a>
           </td></tr>
