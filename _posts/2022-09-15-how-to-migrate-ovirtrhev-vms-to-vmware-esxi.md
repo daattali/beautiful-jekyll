@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Migrate oVirt/RHEV VMs to VMware ESXiSelect
+title: How to Migrate oVirt/RHEV VMs to VMware ESXi
 description: Learn how to migrate VMs from oVirt/RHEV to VMware ESXi using Vinchin Backup and Recovery
 date: 2022-09-15T09:36:11.686Z
 nobanner: "yes"
