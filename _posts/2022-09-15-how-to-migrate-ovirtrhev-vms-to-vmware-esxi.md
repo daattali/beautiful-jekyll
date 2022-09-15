@@ -3,7 +3,7 @@ layout: post
 title: How to Migrate oVirt/RHEV VMs to VMware ESXiSelect
 description: Learn how to migrate VMs from oVirt/RHEV to VMware ESXi using Vinchin Backup and Recovery
 date: 2022-09-15T09:36:11.686Z
-nobanner: yes
+nobanner: "yes"
 fb-img: null
 ---
 V2V (Virtual-to-Virtual) is a common occurence for IT users anymore, especially for those working in big organizations. Since virtualization technology grows in the cloud computing era, many prefer to build a multi-hypervisor environment to better handle massive projects with different system requirements. Or, just simply migrate from one platform to another for a more satisfying operation experience. These all require V2V.
