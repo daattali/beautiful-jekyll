@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    
+    
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://cdn.glitch.global/8e290942-ccf2-418c-b431-6bb5bbf5e6d6/HERESY-SKULL.ico?v=1663355796118" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your new 11ty blog" />
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <title>Next Steps - Hello Eleventy!</title>
+
+<meta name="description" content="A simple Eleventy blog, built with Glitch. Remix it to get your own.">
+<meta name="robots" content="index,follow">
+<meta name="author" content="undefined">
+
+<link rel="canonical" href="https://spiral-unexpected-top.glitch.me/posts/next-steps/">
+
+<meta property="og:title" content="Next Steps - Hello Eleventy!">
+<meta property="og:type" content="article">
+
+<meta property="og:url" content="https://spiral-unexpected-top.glitch.me/posts/next-steps/">
+<meta property="og:description" content="A simple Eleventy blog, built with Glitch. Remix it to get your own.">
+<meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-eleventy-social.png?v=1616712747908">
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:url" content="https://spiral-unexpected-top.glitch.me/posts/next-steps/">
+<meta name="twitter:title" content="Next Steps - Hello Eleventy!">
+<meta name="twitter:description" content="A simple Eleventy blog, built with Glitch. Remix it to get your own.">
+<meta name="twitter:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-eleventy-social.png?v=1616712747908">
+
+
+  </head>
+  <body>
+  <main>
+    
+    
+  
+    
+
+
+<div class="wrapper post">
+  <div>
+    
+    <h1 class='postTitle'>Next Steps</h1>
+
+    
+    
+    
+    <p>Earlier you added a new post and it appeared at the end of the list–if you're keeping a blog you probably want newer posts to appear first! Let's tweak the Eleventy config and use this to learn how you can customize your site build.</p>
+<h3>Change the order of posts</h3>
+<p>Open any of the blog posts in <code>/posts</code>. In the front matter, each one has a <code>date</code> property we can use to specify the order posts appear in the site.</p>
+<p>Take a look in <code>.eleventy.js</code>–there's some config in there that determines how your site builds and functions. Scroll down to the section that starts <code>eleventyConfig.addCollection</code>. This is where the site builds the collection of blog posts your users will be able to navigate and read.</p>
+<p>The first line inside the function creates the collection of posts by filtering on the &quot;posts&quot; tag included in each one:</p>
+<pre><code>const coll = collection
+      .getFilteredByTag(&quot;posts&quot;);
+</code></pre>
+<p>Alter this line to sort the posts using the <code>date</code> property in the front matter (find the comment that includes <code>EDIT HERE</code>):</p>
+<pre><code>const coll = collection
+      .getFilteredByTag(&quot;posts&quot;)
+      .sort((a, b) =&gt; b.data.date - a.data.date);
+</code></pre>
+<p>The rest of the code in the function sets the posts up to point to each other so that the reader can progress through them.</p>
+<p>Take a look at the Home or Posts page in the preview!</p>
+
+    <div class="controls">
+    
+    
+      <p>
+        <strong>Previous post</strong>: 
+        <a class="previous" href="/posts/taking-site-to-next-level/">Taking your site to the next level</a>
+      </p>
+    
+    
+      <p>
+        <strong>Next post</strong>: 
+        <a class="next" href="/posts/first-post/">Imagine Not NEEDING To Spend Money</a>
+      </p>
+    
+    </div>
+  </div>
+</div>
+
+      <footer class="footer">
+        <div class="links">
+          <a href="/">Home</a>
+          <span class="divider">|</span>
+          <a href="/posts">Posts</a>
+          <span class="divider">|</span>
+          <a href="/about">About</a>
+        </div>
+        
+      </footer>
+    
+  </main>
+   
+  </body>
+</html>
