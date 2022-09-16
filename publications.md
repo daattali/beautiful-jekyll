@@ -44,7 +44,7 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
             </td>
             <td>ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from Point Clouds<br>
                 <div class="pubauthor">
-                Daniel Seita, Yufei Wang, Sarthak J Shetty, Edward Yao Li, Zackory Erickson, David Held<br>
+                Daniel Seita, Yufei Wang&dagger;, Sarthak J Shetty&dagger;, Edward Yao Li&dagger;, Zackory Erickson, David Held<br>
                 </div>
                 <div class="pubjournal">Conference on Robot Learning (CoRL), 2022
                 <br></div>
@@ -57,7 +57,7 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
         </td>
         <td>Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation<br>
             <div class="pubauthor">
-            Xingyu Lin*, Carl Qi*, Yunchu Zhang, Yunzhu Li, Zhiao Huang, Katerina Fragkiadaki, Chuang Gan, David Held<br>
+            Xingyu Lin*, Carl Qi*, Yunchu Zhang, Zhiao Huang, Katerina Fragkiadaki, Yunzhu Li, Chuang Gan, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2022
             <br></div>
