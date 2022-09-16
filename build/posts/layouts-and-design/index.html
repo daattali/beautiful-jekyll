@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    
+    
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://cdn.glitch.global/8e290942-ccf2-418c-b431-6bb5bbf5e6d6/HERESY-SKULL.ico?v=1663355796118" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your new 11ty blog" />
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <title>Layouts &amp; Design - Hello Eleventy!</title>
+
+<meta name="description" content="A simple Eleventy blog, built with Glitch. Remix it to get your own.">
+<meta name="robots" content="index,follow">
+<meta name="author" content="undefined">
+
+<link rel="canonical" href="https://spiral-unexpected-top.glitch.me/posts/layouts-and-design/">
+
+<meta property="og:title" content="Layouts &amp; Design - Hello Eleventy!">
+<meta property="og:type" content="article">
+
+<meta property="og:url" content="https://spiral-unexpected-top.glitch.me/posts/layouts-and-design/">
+<meta property="og:description" content="A simple Eleventy blog, built with Glitch. Remix it to get your own.">
+<meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-eleventy-social.png?v=1616712747908">
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:url" content="https://spiral-unexpected-top.glitch.me/posts/layouts-and-design/">
+<meta name="twitter:title" content="Layouts &amp; Design - Hello Eleventy!">
+<meta name="twitter:description" content="A simple Eleventy blog, built with Glitch. Remix it to get your own.">
+<meta name="twitter:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-eleventy-social.png?v=1616712747908">
+
+
+  </head>
+  <body>
+  <main>
+    
+    
+  
+    
+
+
+<div class="wrapper post">
+  <div>
+    
+    <h1 class='postTitle'>Layouts &amp; Design</h1>
+
+    
+    
+    
+    <p>We've included a few helpful templates to get you started, which you can find nested in the <code>src/_includes/layouts</code> folder. By default eleventy uses a templating language called <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a>, with files ending in <code>.njk</code>.</p>
+<p>You can use front matter to pass data about the content of your pages and posts into the template, which builds it into the page.</p>
+<ul>
+<li>Your default template is <code>base.njk</code>–the other templates extend this</li>
+<li>The <code>home.njk</code> template includes an intro section then lists the posts</li>
+<li>Your About page uses <code>page.njk</code>–you can add more pages and use this or another template</li>
+<li>Each individual post uses <code>post.njk</code></li>
+<li>The Posts page uses <code>posts.njk</code> to list all posts</li>
+</ul>
+<p>Check out the code in <code>home.njk</code>–it lists posts using the Eleventy <code>collections</code> object, pulling in data about each one, including some from the front matter (the <code>post.data</code> properties):</p>
+<pre><code>
+{%- for post in collections.posts -%}
+&lt;li{% if page.url == post.url %} aria-current=&quot;page&quot;{% endif %}&gt;
+{{ post.data.page.date | htmlDateString }} — 
+&lt;a href='{{ post.url }}'&gt;{{ post.data.title }}&lt;/a&gt;&lt;/li&gt;
+{%- endfor -%}
+
+</code></pre>
+<p>This loops through all of your posts and displays a link to each. As you add more posts you might want to optimize this to only include a limited number!</p>
+<p>To add new pages, you can use the existing templates or create your own new ones. Reference the template you want at the top of a page in its front matter:</p>
+<pre><code>---
+layout: layouts/page.njk
+---
+</code></pre>
+
+    <div class="controls">
+    
+    
+      <p>
+        <strong>Previous post</strong>: 
+        <a class="previous" href="/posts/creating-posts/">It&#39;s time to write some posts</a>
+      </p>
+    
+    
+      <p>
+        <strong>Next post</strong>: 
+        <a class="next" href="/posts/taking-site-to-next-level/">Taking your site to the next level</a>
+      </p>
+    
+    </div>
+  </div>
+</div>
+
+      <footer class="footer">
+        <div class="links">
+          <a href="/">Home</a>
+          <span class="divider">|</span>
+          <a href="/posts">Posts</a>
+          <span class="divider">|</span>
+          <a href="/about">About</a>
+        </div>
+        
+      </footer>
+    
+  </main>
+   
+  </body>
+</html>
