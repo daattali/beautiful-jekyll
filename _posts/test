@@ -1,3 +1,10 @@
+---
+layout: post
+title: Test
+gh-badge: [star, fork, follow]
+tags: [Ubuntu, Linux, Image resize, Imagemagick]
+---
+
 ```python
 import pandas as pd
 
