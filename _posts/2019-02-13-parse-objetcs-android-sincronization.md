@@ -9,7 +9,7 @@ When we use a [Parse-Android-SDK](https://docs.parseplatform.org/android/guide/)
 
 ## From server to local datastore
 
-```Java
+```java
 ParseQuery<ParseObject> query = ParseQuery.getQuery("Profile");
 query.orderByDescending("score");
 
