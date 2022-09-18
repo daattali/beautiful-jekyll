@@ -16,6 +16,18 @@ Any development project, including test automation, benefits from version contro
 Mastering Git takes time, however in this post you'll discover key commands that are used more regularly.
 
 
+To Install **Git** on your local computer download this from official site git:
+
+- [x]  [**Git Download link**](https://git-scm.com/downloads)
+
+
+or 
+
+You Can simply download github desktop version GUI Operation 
+
+- [x]  [**Github GUI Download link**](https://desktop.github.com/)
+
+
 # The Common steps are as follows:
 1. Workign Directory (mkdir/ Touch). 
 2. Stage (Add).
@@ -24,9 +36,11 @@ Mastering Git takes time, however in this post you'll discover key commands that
 
 
 
+
+
 # Git Commands You Should Know
 
- <h2> 1. git config:</h2>
+ <h2> 1. git config</h2>
 
 Tell git who you are. In the beginning, you must configure the author name and email address which shall be used for committing your changes in the git directory.
 
@@ -39,7 +53,7 @@ git config --global user.email jhondoe@example.com
  ```
 
 
- <h2> 2. git init:</h2>
+ <h2> 2. git init</h2>
 
 This command is used to create a new repository on your local device
 - You shall provide your new repository name as well. 
@@ -52,7 +66,7 @@ git init
  ```
 
 
- <h2> 3. git clone:</h2>
+ <h2> 3. git clone</h2>
 
 With this command, the most recent version of a remote project is downloaded and copied to the specified place on the local computer. 
 - If you want to download any repository to your local computer use this command.
@@ -63,29 +77,108 @@ With this command, the most recent version of a remote project is downloaded and
 git clone https://github.com/rafayethossain/rafayethossain.github.io.git
  ```
 
+<h2>4. git status</h2>
+
+This command lists all the files that have changed and those you still need to add or commit to your remote repository. 
 
 
 
+```
+git status
+ ```
+
+<h2>5. git add</h2>
+
+- To stage changes of your current directory.
+```
+git add.
+ ```
+- To changes all the files except the deleted one.
+
+```
+git add \
+```
+- To stage changes of all the files of specific extension.
+
+```
+git add \*.extension
+
+```
+
+- To stage changes of all the files of specific extension.
+
+```
+git add \*.extension
+
+```
+- To stage your root folder.
+
+```
+git add -all 
+
+```
+or
+```
+git add -A 
+
+```
+
+- To stage changes of all the files of specific extension.
+
+```
+git add \*.extension
+
+```
+- To stage changes of all the files of specific extension.
+
+```
+git add \*.extension
+
+```
+- To stage changes of all the files of specific extension.
+
+```
+git add \*.extension
+
+```
+
+
+ 
+
+<h2>6. git commit</h2>
+
+This command permanently stores a snapshot of the file in the version history. Commit does mean that changes are hosted to the remote repository
+
+```
+git commit -m "<commit message>"
+ ```
+ 
+
+<h2>8. git push</h2>
+
+The next step is to send your changes to the remote server after committing your changes. Your commits are uploaded to the remote repository using git push.
 
 
 
+```
+git push
+ ```
 
 
-# CMD Command for Windoes Terminal 
-- **touch filename.extension**: to create a file.
-- **mkdir foldername**: to create a folder.
-- **cd foldername**: to enter a folder.
-- **pwd**: to check the directory currently you are working on.
-# Git Basics:
-- **git init**: to initiate git in your working directory (local).
-- **git clone URL**: to pull (copy) a repository from the cloud.
-- **git status**: to check the changes/ status in your directory.
+<h2>9. git pull</h2>
 
-- **git add -all**: to stage your root folder.
-- or **git add -A**: to stage your root folder.
-- **git add .**: to stage changes of your current directory.
-- **git add \***: to stage changes all the files except the deleted one.
-- **git add \*.extension**: to stage changes of all the files of specific extension.
+The remote repository's updates are downloaded using the git pull command. This command combines git fetch and git merge, so when we use git pull, it downloads the most recent updates from a remote repository (git fetch) and quickly applies them to your local repository (git merge).
+
+
+
+```
+git pull
+ ```
+
+
+<h2>10. More helpful git command</h2>
+
+
 - **git reset**: to unstage your changes in your files.
 - **git commit -m"write something here"**: to commit your staged Changes.
 - **git reset HEAD~**: to unstage your committed changes.
@@ -105,6 +198,12 @@ git clone https://github.com/rafayethossain/rafayethossain.github.io.git
 - **git pull**: to clone all files to local directory from cloud. 
 
 
+
+# CMD Command for Windoes Terminal 
+- **touch filename.extension**: to create a file.
+- **mkdir foldername**: to create a folder.
+- **cd foldername**: to enter a folder.
+- **pwd**: to check the directory currently you are working on.
 
 {: .box-success}
 Enjoy !!! 
