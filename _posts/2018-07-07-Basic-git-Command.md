@@ -7,15 +7,69 @@ thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/path.jpg
 tags: [git, github, gitlab, version controlling, git command]
 ---
-Git is a tools for version controlling between local and remote (cloud) directory. It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
 
-# Git Commands You Should Know
+Git is a tools for managing versions of directories between local and remote (cloud) locations. It is a version control system that can efficiently manage small to very large projects and is free and open-source. Git is a tool used to log source code changes, allowing several engineers to collaborate on non-linear development.
+
+
+Any development project, including test automation, benefits from version control, often known as source control. It is the process of keeping track of and granting control over alterations made to source code. Let's learn about some of the most often used Git commands since Git is one of the most widely used version control solutions.
+
+Mastering Git takes time, however in this post you'll discover key commands that are used more regularly.
+
 
 # The Common steps are as follows:
 1. Workign Directory (mkdir/ Touch). 
 2. Stage (Add).
 3. Repository (Commit).
 4. Remote (Push/ Pull).
+
+
+
+# Git Commands You Should Know
+
+ <h2> 1. git config:</h2>
+
+Tell git who you are. In the beginning, you must configure the author name and email address which shall be used for committing your changes in the git directory.
+
+- The **user.name** and **user.email** are initially set up using the git config command. This details the login and email address that will be utilized from a local repository.
+- When the —global flag is used with git config, the settings are written to all of the computer's repositories.
+
+```
+git config --global user.name "Jhon Doe"
+git config --global user.email jhondoe@example.com
+ ```
+
+
+ <h2> 2. git init:</h2>
+
+This command is used to create a new repository on your local device
+- You shall provide your new repository name as well. 
+
+git init repositoryName
+
+
+```
+git init
+ ```
+
+
+ <h2> 3. git clone:</h2>
+
+With this command, the most recent version of a remote project is downloaded and copied to the specified place on the local computer. 
+- If you want to download any repository to your local computer use this command.
+ 
+
+
+```
+git clone https://github.com/rafayethossain/rafayethossain.github.io.git
+ ```
+
+
+
+
+
+
+
+
 
 # CMD Command for Windoes Terminal 
 - **touch filename.extension**: to create a file.
