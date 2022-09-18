@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Basic Git Commands
-subtitle: Basic Git commands for  Non Programmer
-cover-img: /assets/img/path.jpg
+subtitle: All Git Command You Will Ever Need as a Programmer
+cover-img: /assets/img/cover.jpg
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/path.jpg
 tags: [git, github, gitlab, version controlling, git command]
