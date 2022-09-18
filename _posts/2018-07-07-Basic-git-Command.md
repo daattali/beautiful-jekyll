@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Git Commands
-subtitle: All Git Command You Will Ever Need as a Programmer
+subtitle: Git Command You Will Ever Need as a Programmer
 cover-img: /assets/img/cover.jpg
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/path.jpg

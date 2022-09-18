@@ -56,7 +56,7 @@ social-network-links:
 #  snapchat: deanat78
 #  instagram: deanat78
 #  spotify: yourname
-  telephone: +88 01710493613
+ mobile: +88 01710493613
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -85,7 +85,7 @@ share-links-active:
 url-pretty: "Rafayet Hossain"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 70
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
