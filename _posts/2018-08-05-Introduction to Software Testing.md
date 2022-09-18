@@ -83,8 +83,8 @@ Click on any of the desire link to direclty access the content.
 - [x]  [**Free Resource for Python Learning**](https://rafayethossain.github.io/2019-01-04-Python-Resource-Books-and-Recipe/)
 - [x]  [**Python Basic Coding for Newbie**](https://rafayethossain.github.io/2019-01-05-Basic-Python-Coding/)
 - [x]  [**Python 30 Secondes Recipe**](https://rafayethossain.github.io/2019-01-07-Python-Easy-Trick-Collected/)
-- [x]  [**Python 30 Secondes Recipe**](https://rafayethossain.github.io/2019-01-08-How-To-Install-Selenum-Python-Webdriver/)
-- [x]  [**Python 30 Secondes Recipe**](https://rafayethossain.github.io/2019-01-09-My-First-Python-Selenium-Script/)
+- [x]  [**How to Install Selenium with Python**](https://rafayethossain.github.io/2019-01-08-How-To-Install-Selenum-Python-Webdriver/)
+- [x]  [**First Selenium Python Script**](https://rafayethossain.github.io/2019-01-09-My-First-Python-Selenium-Script/)
 
 
 
