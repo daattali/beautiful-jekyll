@@ -34,7 +34,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 23-Jan	| Circles				|  |  |
 | 30-Jan	| Similarity			|  |  |
 | 6-Feb		| Pascal's Triangle		|  |  |
-| 13-Feb	| Logic					|  | _No Coaching Session (Math Is Cool Regionals)_ |
+| 13-Feb	| Logic					| _No Coaching Session (Math Is Cool Regionals)_ |  |
 | 20-Feb	| _No school_ 			|  |  |
 | 27-Feb	| Sequences				|  |  |
 | 6-Mar	    | Systems of Equations	|  | _No school_ |
