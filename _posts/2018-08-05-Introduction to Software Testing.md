@@ -93,4 +93,4 @@ Click on any of the desired links to directly access the information.
 Enjoy !!!
 **See Yaaa, Next.**
 
-![Rafayet Hossain]([/assets/img/avatar-icon.png](https://miro.medium.com/max/700/1*rBivpGTqac2vsedsW4PwZg.jpeg) "Rafayet Hossain")
+![Rafayet Hossain](https://drive.google.com/file/d/1XJdVb2r0GRHwsghwufo1GC2DeqrCiRqz/view?usp=sharing "Rafayet Hossain")
