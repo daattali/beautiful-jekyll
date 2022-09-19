@@ -39,7 +39,7 @@ ParseObject has three hashmaps, serverData, estimateData and operationSetQueue:
 
 As the description indicate those hashmaps are populated as needed by the [Parse-Android-SDK](https://docs.parseplatform.org/android/guide/).  To ilustrate how it work suppose that we have a Profile ParseObject with a displayName and sex parameters.
 
-```Java
+```java
 ParseObject profile = new ParseObject("Profile");
 profile.put("displayName", "nmlemus");
 profile.put("sex", "Male");
@@ -47,7 +47,7 @@ profile.saveInBackground();
 ```
 To retrieve the object from the network we use this code:
 
-```Java
+```java
 ParseQuery<ParseObject> query = ParseQuery.getQuery("Profile");
 query.getInBackground("xWMyZ4YEGZ", new GetCallback<ParseObject>() {
   public void done(ParseObject profile, ParseException e) {
