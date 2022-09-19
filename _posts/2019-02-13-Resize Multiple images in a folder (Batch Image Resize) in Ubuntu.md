@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Resize Multiple images in a folder (Batch Image Resize) in Ubuntu
+subtitle: Excerpt from Soulshaping by Jeff Brown
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
 gh-badge: [star, fork, follow]
 tags: [Ubuntu, Linux, Image resize, Imagemagick]
 ---
