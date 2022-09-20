@@ -1,8 +1,13 @@
 ---
 layout: post
 title: Basic Git Commands
+<<<<<<< HEAD
 subtitle: Git Command You Will Ever Need as a Programmer
 cover-img: /assets/img/cover.jpg
+=======
+subtitle: Basic Git commands for  Non Programmer
+cover-img: /assets/img/path.jpg
+>>>>>>> parent of 282aaef (git command info updated)
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/path.jpg
 tags: [git, github, gitlab, version controlling, git command]
