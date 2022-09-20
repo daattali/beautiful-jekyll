@@ -69,7 +69,7 @@ Click on any of the desired links to directly access the information.
 
 - [x]  [**Introduction to Software Testing**](https://rafayethossain.github.io/2018-08-05-Introduction-to-Software-Testing/)
 - [x]  [**Software Testing Glossary**](https://rafayethossain.github.io/2018-08-12-Software-Testing-Terms-of-Glossary/)
-- [x]  [**Software Testing Types**](hhttps://rafayethossain.github.io/2018-08-22-Software-Testing-Types/)
+- [x]  [**Software Testing Types**](https://rafayethossain.github.io/2018-08-22-Software-Testing-Types/)
 - [x]  [**Activities in Software Testing**](https://rafayethossain.github.io/2018-09-01-Test-Activities-You-Must-Know/)
 - [x]  [**How to Prepare Test Case**](https://rafayethossain.github.io/2018-09-11-How-Prepare-Test-Case/)
 - [x]  [**Introduction to Software Testing**](https://rafayethossain.github.io/2018-08-05-Introduction-to-Software-Testing/)
@@ -93,4 +93,4 @@ Click on any of the desired links to directly access the information.
 Enjoy !!!
 **See Yaaa, Next.**
 
-![Rafayet Hossain](https://drive.google.com/file/d/1XJdVb2r0GRHwsghwufo1GC2DeqrCiRqz/view?usp=sharing "Rafayet Hossain")
+![Rafayet Hossain](/assets/img/cover.jpg "Rafayet Hossain")
