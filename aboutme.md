@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Rafayet Hossain
-subtitle: ☑ Business Analyst ☑ SQA ☑ Certified Lean Six Sigma Black Belt ☑ Writer (Open to Work)
+subtitle: ☑ Business Analyst ☑ SQA ☑ Writer ☑ Certified Lean Six Sigma Black Belt (Open to Work)
 ---
 
 Do You Know? About 60% of Project Failures Originate with The Requirements. You May Develop a Great Product but Still, Fail the Project Because It Does Not Meet the Goal Set. For A Successful Project, One Requires to Define the Needs, Recommend the Solutions, Design, Test the Developed Solution, And Deliver the Value.

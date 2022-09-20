@@ -6,7 +6,7 @@ subtitle: ☑ Free Books Download for All
 
 # Free Books For All
 
-## This is a collected open source resouce found in the internet.
+## This is a collected open source resouce found on the internet.
 
 - !! Spoiler Alert !!
   Some of the download link might not work but you should not worry as there are plenty of good link for downloading book than you need.

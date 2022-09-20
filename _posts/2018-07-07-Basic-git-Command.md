@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Git Commands
-subtitle: All Git Command You Will Ever Need as a Programmer
+subtitle: Git Command You Will Ever Need as a Programmer
 cover-img: /assets/img/cover.jpg
 thumbnail-img: /assets/img/diary.png
 share-img: /assets/img/path.jpg
@@ -15,17 +15,20 @@ Any development project, including test automation, benefits from version contro
 
 Mastering Git takes time, however in this post you'll discover key commands that are used more regularly.
 
+- [The Common steps are as follows:](#the-common-steps-are-as-follows)
+- [Git Commands You Should Know](#git-commands-you-should-know)
+- [CMD Command for Windows PC Terminal](#cmd-command-for-windows-pc-terminal)
 
 To Install **Git** on your local computer download this from official site git:
 
-- [x]  [**Git Download link**](https://git-scm.com/downloads)
+[x]  [**Git Download link**](https://git-scm.com/downloads)
 
 
 or 
 
 You Can simply download github desktop version GUI Operation 
 
-- [x]  [**Github GUI Download link**](https://desktop.github.com/)
+[x]  [**Github GUI Download link**](https://desktop.github.com/)
 
 
 # The Common steps are as follows:
@@ -199,7 +202,7 @@ git pull
 
 
 
-# CMD Command for Windoes Terminal 
+# CMD Command for Windows PC Terminal 
 - **touch filename.extension**: to create a file.
 - **mkdir foldername**: to create a folder.
 - **cd foldername**: to enter a folder.
