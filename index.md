@@ -7,17 +7,11 @@ use-site-title: true
 
 ## Welcome to the 2022-2023 season!
 
-Information about this year's math club will be available by early October. Please subscribe to the
-[RMS PTSA Bear Tracks newsletter](http://tinyurl.com/GetBearTracks)
-to be notified when registration becomes available.
-
-### Materials from 2021-2022 (subject to change this year)
-
 1. New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
 
 1. Learn about this year's coaching and competition plans at our [virtual parent night](https://youtu.be/Ztd_4idiWrI).
 
-1. **(Required)** Register for the [2021-2022 math club](http://rmsptsa.org/Packet/MathClubReg).
+1. **(Required)** Register for the [2022-2023 math club](http://rmsptsa.org/Packet/MathClubReg).
 
 1. Your parent and student emails will be added as guests to the RMS PTSA Math Club group so you can access the PTSA Office 365 portal. If you do not receive a notification email within 48 hours of registering, please [contact the chair](mailto:mathclubchair@rmsptsa.org). This is a manual process, so please be patient.
 
