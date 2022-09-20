@@ -9,7 +9,7 @@ use-site-title: true
 
 1. New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
 
-1. Learn about this year's coaching and competition plans at our [virtual parent night](https://youtu.be/Ztd_4idiWrI).
+1. Learn about this year's coaching and competition plans at our [virtual parent night](https://youtu.be/oAYHsTi_Vp4).
 
 1. **(Required)** Register for the [2022-2023 math club](http://rmsptsa.org/Packet/MathClubReg).
 
