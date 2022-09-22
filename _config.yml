@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Easton's Website
+title: Easton's Neat Website
 
 # Your name to show in the footer
 author: Easton Eberwein
@@ -20,19 +20,17 @@ author: Easton Eberwein
 ###############################################
 
 navbar-links:
+  Author's Home: "/"
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
-
+  Easton's GitHub: "https://github.com/easton-eberwein"
+  
 ################
 # --- Logo --- #
 ################
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/Headshot.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -50,7 +48,6 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "easton.eberwein1@marist.edu"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: Easton Eberwein
   github: easton-eberwein
   twitter: easton_eberwein

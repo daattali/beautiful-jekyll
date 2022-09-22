@@ -1,16 +1,20 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Easton
+subtitle: What my girlfriend likes about me
 ---
 
-My name is Easton Eberwein. I have the following qualities:
+I have the following qualities:
 
 - I can run fast
 - I like dogs
+- I have a cute face
+- I buy her stuff
+- I am strong
+- I have blue eyes
 
 What else do you need?
 
 ### My story
 
-Just a college kid taking a cool class and running fast
+My name is Easton. I'm 20 years old and I'm a junior at Marist College. I am a captain of the men's track & field team. I'm from a small town in Massachusetts called Dalton. 
