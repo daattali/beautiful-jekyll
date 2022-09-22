@@ -62,7 +62,10 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
           - name: Gunjan Sethi (MRSD)
             photo_url: /img/members/gunjans.JPEG
-            web_url: https://www.ri.cmu.edu/ri-people/gunjan-sethi/            
+            web_url: https://www.ri.cmu.edu/ri-people/gunjan-sethi/
+          - name: Bowen Jiang (MSR)
+            photo_url: /img/members/bowenjiang.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/bowen-jiang-2/    
       - name: Undergraduate Students
         full: true
         list:
