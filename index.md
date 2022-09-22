@@ -7,6 +7,8 @@ use-site-title: true
 
 ## Welcome to the 2022-2023 season!
 
+**Registration is [open now](http://rmsptsa.org/Packet/MathClubReg)! Expect a kickoff email the week of October 17 and [sessions to begin October 31](/schedule).**
+
 1. New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
 
 1. Learn about this year's coaching and competition plans at our [virtual parent night](https://youtu.be/oAYHsTi_Vp4).
