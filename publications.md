@@ -53,14 +53,53 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
 
     <tr>
         <td class="pubimg" width="250" height="100" style="text-align:center">
-            <img src="../pics/cropped-CoRL2022-1.png" img width="250">
+            <img src="../pics/2022_pasta.gif" img width="250">
         </td>
-        <td>Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation<br>
+        <td><a href="https://sites.google.com/view/pasta-plan">Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation</a><br>
             <div class="pubauthor">
             Xingyu Lin*, Carl Qi*, Yunchu Zhang, Zhiao Huang, Katerina Fragkiadaki, Yunzhu Li, Chuang Gan, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2022
-            <br></div>
+            <div id="bib2022corlpasta" style="display:none">
+                <blockquote>
+                    <pre> @inproceedings{
+                        lin2022planning,
+                        title={Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation},
+                        author={Xingyu Lin and Carl Qi and Yunchu Zhang and Yunzhu Li and Zhiao Huang and Katerina Fragkiadaki and Chuang Gan and David Held},
+                        booktitle={6th Annual Conference on Robot Learning},
+                        year={2022},
+                        url={https://openreview.net/forum?id=tyxyBj2w4vw}
+                        }
+                    </pre>
+                </blockquote>
+            </div>
+            <div id="abs2022corlpasta" style="display:none">
+                <blockquote>
+                    Effective planning of long-horizon deformable object manipulation requires suitable 
+                    abstractions at both the spatial and temporal levels. 
+                    Previous methods typically either focus on short-horizon tasks or make 
+                    strong assumptions that full-state information is available, which prevents 
+                    their use on deformable objects. In this paper, we propose PlAnning with 
+                    Spatial-Temporal Abstraction (PASTA), which incorporates both spatial abstraction 
+                    (reasoning about objects and their relations to each other) and temporal 
+                    abstraction (reasoning over skills instead of low-level actions). Our framework 
+                    maps high-dimension 3D observations such as point clouds into a set of latent 
+                    vectors and plans over skill sequences on top of the latent set representation. 
+                    We show that our method can effectively perform  challenging sequential deformable 
+                    object manipulation tasks in the real world, which require combining multiple 
+                    tool-use skills such as cutting with a knife, pushing with a pusher, and spreading 
+                    dough with a roller. 
+                </blockquote>
+            </div>
+            <div style="font-size:small">
+                <a href="https://sites.google.com/view/pasta-plan">[Project Page]</a>
+                <a href="javascript:copy(div2022corlpasta, bib2022corlpasta)">[Bibtex]</a>
+                <a href="javascript:copy(div2022corlpasta, abs2022corlpasta)">[Abstract]</a>
+                <a href="https://openreview.net/forum?id=tyxyBj2w4vw">[PDF]</a>
+            </div>
+            <div id="div2022corlpasta" class="pubInfo"></div>
+            <br>
+            </div>
         </td>
     </tr>
 
