@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is Farigh and Bored>
+title: Flake it till you make it
 subtitle: The deep insight history of this club
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
