@@ -1,10 +1,10 @@
 ---
 layout: post
-title: What is Farigh and Bored>
-subtitle: The deep insight history of this club
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+title: Flake it till you make it
+subtitle: Excerpt from Soulshaping by Jeff Brown
+cover-img: /assets/img/admins_comic.png
+thumbnail-img: /assets/img/coffee_mug.png
+share-img: /assets/img/admins_comic.jpg
 tags: [books, test]
 ---
 
