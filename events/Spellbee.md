@@ -1,5 +1,5 @@
 ---
 title: Spellbee
 subtitle: This an spellbee event page
-thumbnail-img:  "/assets/img/SPELLBEE.png"
+thumbnail-img:  /assets/img/SPELLBEE.png
 ---
