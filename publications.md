@@ -4,19 +4,29 @@ title: Publications
 # subtitle: List of all my publications 
 ---
 
-## Quantum Machine Learning
+## Differentiable Physics
 
 Fully differentiable optimization protocols for non-equilibrium steady states.\
 [accepted in *New J. Phys.* (2021).](https://iopscience.iop.org/article/10.1088/1367-2630/ac395e)\
 R. A. Vargas-Hernández, R. T. Q. Chen, K. A. Jung, and P. Brumer
 
-Multi-objective optimization for retinal photoisomerization models with respect to experimental observables.\
-[*J. Chem. Phys.* **155**, 234109 (2021).](https://doi.org/10.1063/5.0060259)\
-R. A. Vargas-Hernández, C. Chuang, and P. Brumer
-
 Differentiable quantum computational chemistry with PennyLane.\
 [arXiv:2111.09967](https://arxiv.org/pdf/2111.09967.pdf)
 J. M. Arrazola *et al.*
+
+Inverse design of dissipative quantum steady-states with implicit differentiation
+[arXiv:2011.12808](https://arxiv.org/pdf/2011.12808)
+R. A. Vargas-Hernández, R. T. Q. Chen, K. A. Jung, and P. Brumer
+
+## Quantum Machine Learning
+
+(book) Modern applications of machine learning in quantum sciences
+[arXiv:2204.04198](https://arxiv.org/ftp/arxiv/papers/2204/2204.04198.pdf)
+A Dawid, *et al.*
+
+Multi-objective optimization for retinal photoisomerization models with respect to experimental observables.\
+[*J. Chem. Phys.* **155**, 234109 (2021).](https://doi.org/10.1063/5.0060259)\
+R. A. Vargas-Hernández, C. Chuang, and P. Brumer
 
 Extrapolating quantum observables with machine learning: inferring multiple phase transitions from properties of a single phase.\
 [*Phys. Rev. Lett.* **121**, 255702 (2018).](https://doi.org/10.1103/PhysRevLett.121.255702)\
