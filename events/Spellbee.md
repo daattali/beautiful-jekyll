@@ -1,4 +1,4 @@
 ---
 title: Spellbee
-subtitle:
+subtitle: This an spellbee event page
 ---

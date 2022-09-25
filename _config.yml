@@ -22,7 +22,7 @@ author: jay24004
 navbar-links:
   About Coin: "aboutme"
   Events:
-    - SPELL BEE: "https://google.com"
+    - SPELL BEE: "events/Spellbee"
     - BRAIN HACK: "events/brain_hack"
     - KNOW YOUR CIRCUIT(KYC): "https://google.com"
     - Mαth∫etΣs: "https://google.com"
