@@ -22,7 +22,7 @@ author: Easton Eberwein
 navbar-links:
   Author's Home: "/"
   About Me: "aboutme"
-  Easton's GitHub: "https://github.com/easton-eberwein"
+  Resume: "resume"
   
 ################
 # --- Logo --- #
@@ -92,7 +92,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "EastonEberwein.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -245,7 +245,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
