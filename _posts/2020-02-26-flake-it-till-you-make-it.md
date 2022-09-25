@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: SPELLBEE
+subtitle: Show your skill in english
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/SPELLBEE.png
 share-img: /assets/img/path.jpg
 tags: [books, test]
 ---
