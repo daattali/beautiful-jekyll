@@ -3,6 +3,8 @@ layout: page
 title: About me
 subtitle: Rodrigo Alejandro Vargas Hernández
 ---
+**I am** an Assistant professor at McMaster University in the 
+
 
 **I am** a postdoctoral researcher at the University of Toronto in professor [Alan Aspuru-Guzik's group](https://www.matter.toronto.edu/). I am also an associate postdoctoral researcher at the [Vector Institute](https://vectorinstitute.ai/about/).
 I did my PhD in professor [R. Krems' group](https://groups.chem.ubc.ca/krems/) at the University of British Columbia, and I was a postdoctoral researcher from 2019 to 2021 in professor [P. Brumer's group](https://www.chemistry.utoronto.ca/people/directories/all-faculty/paul-brumer). The main topic of my research has been the application of machine learning to simulate many-body physics.
