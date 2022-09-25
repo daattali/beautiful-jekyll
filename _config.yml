@@ -23,7 +23,7 @@ navbar-links:
   About Coin: "aboutme"
   Events:
     - SPELL BEE: "https://google.com"
-    - BRAIN HACK: "events/spellbee.md"
+    - BRAIN HACK: "_post/brain_hack"
     - KNOW YOUR CIRCUIT(KYC): "https://google.com"
     - Mαth∫etΣs: "https://google.com"
     - Strategic Marketing: "https://google.com"
