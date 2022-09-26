@@ -4,6 +4,8 @@ title: Publications
 # subtitle: List of all my publications 
 ---
 
+## Differentiable quantum physics
+
 ## Quantum Machine Learning
 
 Fully differentiable optimization protocols for non-equilibrium steady states.\
