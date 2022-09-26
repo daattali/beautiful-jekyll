@@ -12,16 +12,29 @@
 
 ## Table of contents
 
+- [Beautiful Jekyll](#beautiful-jekyll)
+  - [Table of contents](#table-of-contents)
 - [Features](#features)
-- [Sponsors 🏆](#sponsors)
-- [**Build your website in 3 steps**](#build-your-website-in-3-steps)
+- [Build your website in 3 steps](#build-your-website-in-3-steps)
+  - [The easy way (recommended!)](#the-easy-way-recommended)
+    - [1. Fork this project](#1-fork-this-project)
+    - [2. Rename the project to `<yourusername>.github.io`](#2-rename-the-project-to-yourusernamegithubio)
+    - [3. Customize your website settings](#3-customize-your-website-settings)
+    - [4. Congratulations! You have a website!](#4-congratulations-you-have-a-website)
+  - [The hard way (using ruby gems)](#the-hard-way-using-ruby-gems)
 - [Plans](#plans)
 - [Add your own content](#add-your-own-content)
 - [Customizing parameters for each page](#customizing-parameters-for-each-page)
 - [Supported parameters](#supported-parameters)
+  - [Main parameters](#main-parameters)
+  - [Parameters for SEO and social media sharing](#parameters-for-seo-and-social-media-sharing)
+  - [Less commonly used parameters](#less-commonly-used-parameters)
+  - [Advanced parameters](#advanced-parameters)
+  - [Page types](#page-types)
 - [Featured users (success stories!)](#featured-users-success-stories)
 - [FAQ and support](#faq-and-support)
-- [Credits and contributions](#credits)
+- [Contributions](#contributions)
+- [Credits](#credits)
 
 # Features
 
