@@ -4,13 +4,8 @@ title: Publications
 # subtitle: List of all my publications 
 ---
 
-<<<<<<< HEAD
-## Differentiable quantum physics
-
-## Quantum Machine Learning
 =======
-## Differentiable Physics
->>>>>>> mcmaster
+## Differentiable Quantum Physics
 
 Fully differentiable optimization protocols for non-equilibrium steady states.\
 [accepted in *New J. Phys.* (2021).](https://iopscience.iop.org/article/10.1088/1367-2630/ac395e)\
