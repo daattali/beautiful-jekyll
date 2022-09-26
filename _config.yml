@@ -22,14 +22,13 @@ author: jay24004
 navbar-links:
   About Coin: "aboutme"
   Events:
-    - SPELL BEE: "events/Spellbee"
     - BRAIN HACK: "events/brain_hack"
     - KNOW YOUR CIRCUIT(KYC): "events/know_your_circuit"
     - Mαth∫etΣs: "events/maths"
     - Strategic Marketing: "events/SM"
     - SHERLOCK HOLMES: "events/sherlock_homes"
     - MAC RODIES: "events/mac_roodies"
-    - Mock Placement: "events/mock_placemnets"
+    - Mock Placement: "events/mock_placement"
 
 ################
 # --- Logo --- #
