@@ -29,6 +29,7 @@ navbar-links:
     - SHERLOCK HOLMES: "events/sherlock_homes"
     - MAC RODIES: "events/mac_roodies"
     - Mock Placement: "events/mock_placement"
+   Schedule: "schedule"
 
 ################
 # --- Logo --- #
