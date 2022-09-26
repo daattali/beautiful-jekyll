@@ -1,16 +1,14 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Coin
+subtitle: KSHITIJ- ANANT GYAN KI TALASH MEIN
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Instrumentation and control department presents
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+With great enthusiasm along with lots of fun, under the banner of  KSHITIJ- ANANT GYAN KI TALASH MEIN at Sarvajanik College of Engineering and Technology, Surat held on 30th September and 1st October 2022
 
-What else do you need?
 
-### My story
+So we are here to invite all of you to participate in this event as it brings the great opportunity to show your skills and also your knowledge💡
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+So brush up your skills and join us.........🤩💃
