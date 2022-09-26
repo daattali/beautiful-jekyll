@@ -11,4 +11,4 @@ All mathematics share.
                   -Martin gardner
 
 
-[Register Now](https://docs.google.com/forms/d/1HP2TcpOEyMipjZfVlmn5xNMxWHA7mOBUC_2rT1pnAH0/edit){
+[Register Now](https://docs.google.com/forms/d/1HP2TcpOEyMipjZfVlmn5xNMxWHA7mOBUC_2rT1pnAH0/edit)
