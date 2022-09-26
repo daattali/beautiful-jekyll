@@ -5,7 +5,7 @@
 # To encrypt strings use the following endpoint:
 # https://{STATICMAN API INSTANCE}/v3/encrypt/{TEXT TO BE ENCRYPTED}
 # {STATICMAN API INSTANCE} should match the `endpoint` in the theme config
-# file. It defaults to "staticman3.herokuapp.com".
+# file.
 
 comments:
   # (*) REQUIRED
@@ -25,7 +25,7 @@ comments:
   #
   # Name of the branch being used. Must match the `branch` in the theme config
   # file.
-  branch: "master"   #  use "master" for user page or "gh-pages" for project pages
+  branch: "mcmaster"   #  use "master" for user page or "gh-pages" for project pages
 
   commitMessage: "New comment by {fields.name}"
 
