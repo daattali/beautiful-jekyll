@@ -5,7 +5,7 @@
 # To encrypt strings use the following endpoint:
 # https://{STATICMAN API INSTANCE}/v3/encrypt/{TEXT TO BE ENCRYPTED}
 # {STATICMAN API INSTANCE} should match the `endpoint` in the theme config
-# file. It defaults to "staticman3.herokuapp.com".
+# file.
 
 comments:
   # (*) REQUIRED
