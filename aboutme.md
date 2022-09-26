@@ -12,3 +12,17 @@ With great enthusiasm along with lots of fun, under the banner of  KSHITIJ- ANAN
 So we are here to invite all of you to participate in this event as it brings the great opportunity to show your skills and also your knowledge💡
 
 So brush up your skills and join us.........🤩💃
+
+### Event List
+### **Technical Events**
+      -Abhivyakti
+      -KYC
+      -Aavishkar
+      -Mathletes
+      -85/51 ALP (Assembly Language Programming)
+      -Brain Hack
+      
+### **Non-Technical events**
+      -Sherlock Holmes
+      -Mock Placement
+      -Strategic Marketing    
