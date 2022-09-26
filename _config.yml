@@ -24,12 +24,12 @@ navbar-links:
   Events:
     - SPELL BEE: "events/Spellbee"
     - BRAIN HACK: "events/brain_hack"
-    - KNOW YOUR CIRCUIT(KYC): "https://google.com"
-    - Mαth∫etΣs: "https://google.com"
-    - Strategic Marketing: "https://google.com"
-    - SHERLOCK HOLMES: "https://google.com"
-    - MAC RODIES: "https://google.com"
-    - Mock Placement: "https://google.com"
+    - KNOW YOUR CIRCUIT(KYC): "events/know_your_circuit"
+    - Mαth∫etΣs: "events/maths"
+    - Strategic Marketing: "events/SM"
+    - SHERLOCK HOLMES: "events/sherlock_homes"
+    - MAC RODIES: "events/mac_roodies"
+    - Mock Placement: "events/mock_placemnets"
 
 ################
 # --- Logo --- #
