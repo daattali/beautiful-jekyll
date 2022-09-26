@@ -14,24 +14,23 @@ So we are here to invite all of you to participate in this event as it brings th
 So brush up your skills and join us.........🤩💃
 
 ### Event List
-### **Technical Events**
-      -Abhivyakti
-      -KYC
-      -Aavishkar
-      -Mathletes
-      -85/51 ALP (Assembly Language Programming)
-      -Brain Hack
+**Technical Events**
+> Abhivyakti
+
+> KYC
+
+> Aavishkar
+
+> Mathletes
+
+> 85/51 ALP (Assembly Language Programming)
+
+>Brain Hack
       
-### **Non-Technical events**
-      -Sherlock Holmes
-      -Mock Placement
-      -Strategic Marketing
-      
-| Technical Events  | Non-Technical events |
-|---|---|
-| Abhivyakti  | Sherlock Holmes  |
-| KYC  | Mock Placement  |
-| Aavishkar  | Mock Placement  |
-| Mathletes  | Strategic Marketing  |
-| 85/51 ALP  ||
-| Brain Hack  ||
+**Non-Technical events**
+
+> Sherlock Holmes
+
+> Mock Placement
+
+> Strategic Marketing
