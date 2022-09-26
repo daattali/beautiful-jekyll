@@ -26,3 +26,12 @@ So brush up your skills and join us.........🤩💃
       -Sherlock Holmes
       -Mock Placement
       -Strategic Marketing
+      
+| Technical Events  | Non-Technical events |
+|---|---|
+| Abhivyakti  | Sherlock Holmes  |
+| KYC  | Mock Placement  |
+| Aavishkar  | Mock Placement  |
+| Mathletes  | Strategic Marketing  |
+| 85/51 ALP  ||
+| Brain Hack  ||
