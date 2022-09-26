@@ -18,7 +18,7 @@ So brush up your skills and join us...🤩💃
 
 ● Abhivyakti
 
-● KYC
+● KYC (Know Your Circuit)
 
 ● Aavishkar
 
@@ -34,4 +34,7 @@ So brush up your skills and join us...🤩💃
 
 ● Mock Placement
 
-● Strategic Marketing
+● Kal Ka Ambani...
+
+● Spell Bee
+
