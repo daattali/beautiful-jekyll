@@ -20,7 +20,7 @@ author: jay24004
 ###############################################
 
 navbar-links:
-  About Coin: "about coin"
+  About Coin: "aboutme"
   Events:
     - SPELL BEE: "events/Spellbee"
     - BRAIN HACK: "events/brain_hack"

@@ -25,4 +25,4 @@ So brush up your skills and join us.........🤩💃
 ### **Non-Technical events**
       -Sherlock Holmes
       -Mock Placement
-      -Strategic Marketing    
+      -Strategic Marketing
