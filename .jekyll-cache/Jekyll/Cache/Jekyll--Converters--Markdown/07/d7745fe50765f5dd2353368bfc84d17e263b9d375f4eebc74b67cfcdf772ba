@@ -1,0 +1,42 @@
+I"<p>In lesson 1 we learned about Git and GitHub.</p>
+
+<p>Git is a control system that allows us to take snapshots and track changes in a set of files. Git is generally used for coordinating work among a group of programmers and is easy to use in a collaborative setting when developing code. Git is installed and maintained on your local system, rather than in the cloud.</p>
+
+<p>GitHub is a website that allows Git’s history to be centralized in one place. This makes it easy to share code with remote developers and makes working with Git overall much easier. GitHub was designed as a Git repository hosting service and is exclusively cloud-based.</p>
+
+<p>Coming into this class, I had worked with Git and GitHub a little bit, but nothing was taught to me. I had previous classes that utilized Git and GitHub, but my professors didn’t exactly explain how they worked or why we were using them. Because of that, I developed some bad practices. Now, after learning more in-depth and having a chance to really work with Git and GitHub, I see how great of a tool it is and why it has become an industry standard.</p>
+
+<p>In past classes, I had never used the terminal when using Git and GitHub. I made my changes by manually pushing and pulling, which was a real hassle. The terminal scared me at first, but I’ve become much more confident with each assignment.</p>
+
+<h2 id="pushing-code-to-git">Pushing Code to Git</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Command</td>
+      <td>What it does</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Five</td>
+      <td>Six</td>
+    </tr>
+    <tr>
+      <td>Ten</td>
+      <td>Eleven</td>
+    </tr>
+    <tr>
+      <td>Seven</td>
+      <td>Eight</td>
+    </tr>
+    <tr>
+      <td>Two</td>
+      <td>Three</td>
+    </tr>
+  </tbody>
+</table>
+:ET
