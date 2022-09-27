@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Easton's Neat Website
+title: Easton's Website
 
 # Your name to show in the footer
 author: Easton Eberwein
@@ -20,7 +20,7 @@ author: Easton Eberwein
 ###############################################
 
 navbar-links:
-  Author's Home: "/"
+  Blogs: "/"
   About Me: "aboutme"
   Resume: "resume"
   

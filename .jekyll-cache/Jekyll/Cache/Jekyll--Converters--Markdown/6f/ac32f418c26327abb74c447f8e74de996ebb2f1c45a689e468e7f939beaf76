@@ -1,4 +1,6 @@
-I"Á<p>In lesson 2, we learned about IDEs, Terminals, different Workflows, and gained more in-depth knowledge about Git.</p>
+I"ô<p>In lesson 2, we learned about IDEs, Terminals, different Workflows, and gained more in-depth knowledge about Git.</p>
+
+<p class="box-warning"><strong>Warning:</strong> Important Information Below</p>
 
 <p>An IDE is an integrated development environment. IDEs allow us to edit code, build automation, and debug. Visual Studio Code, also known as VS Code, is an IDE that can support multiple languages. VS Code was made by Microsoft and supports debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. VS Code is a widely used IDE and the one that I have used most.</p>
 
@@ -6,5 +8,13 @@
 
 <p>Workflows allow for organization and overall manage production. Workflows can span all stages of production, including planning, developing, testing, and deployment and iteration. Workflows can be created in VS Code, Shell, and Git.</p>
 
+<figure>
+    <img src="/assets/img/workflowpic.jpg" alt="Albuquerque, New Mexico" />
+    <figcaption>This picture shows a simplified version of a Git workflow.</figcaption>
+</figure>
+
 <p>We also learned about branches in Git. This ties into workflows, as when you create a workflow, different branches are created for organization purposes. Branches also allow different people to work on code without overlapping someone else and creating a mess.</p>
+
+<p>Coming into this lesson, I had briefly used the terminal. I had worked in VS Code before and I had used Git a little as well. I enjoyed working in the terminal and realized it wasnâ€™t as scary as I had initially thought. My VS Code and Git skills were enhances from this lesson as well.</p>
+
 :ET
