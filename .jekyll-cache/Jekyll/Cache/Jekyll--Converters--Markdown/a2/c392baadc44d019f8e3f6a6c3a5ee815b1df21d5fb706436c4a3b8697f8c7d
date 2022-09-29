@@ -1,0 +1,27 @@
+I"A<p>In lesson 3 we learned about frameworks.</p>
+
+<p>Frameworks are prewritten code that provides the end user with a standard to build their own custom application. Frameworks can be a great tool for both web development and for server-side code.</p>
+
+<p>Web frameworks provide the bones of a site that allows you to quickly build out a website. Some popular frameworks include Bootstrap, Flask, Django, and Jekyll. Bootstrap and Jekyll were the two frameworks that we worked with in lesson 3.</p>
+
+<p>Click on the image below to see a video about frameworks.</p>
+
+<p><a href="https://www.youtube.com/watch?v=1a5VKUc0AUc&amp;t=537s&amp;ab_channel=Bitfumes"><img src="\Users\jakee\eastoneberwein.github.io\assets\img\frameworkvideo.jpg" alt="Framework YouTube Video" /></a></p>
+
+<p>Bootstrap is a free and open-source CSS framework used for the creation of websites and web apps. It was designed to enable responsive development of mobile-first websites and provides a collection of syntax for template designs.</p>
+
+<p>Jekyll is also a free and open-source site generator. Text written in various languages are used with their layouts to create a static website.</p>
+
+<p>Static websites are sites that have no dynamic content. There are probably HTML pages and other files that don’t have any dynamic content such as a comment section or authentication.</p>
+
+<p>Using Jekyll was foreign to me coming into this lesson. I had worked with Bootstrap briefly before, but not in-depth. I feel more confident in my abilities now and think it’s incredible the way people create themes and site layouts for others to use. It makes it much easier to create a website.</p>
+
+<h2 id="lesson-3-checklist">Lesson 3 Checklist</h2>
+
+<ul>
+  <li><del>Frameworks</del></li>
+  <li><del>Bootstrap</del></li>
+  <li><del>Jekyll</del></li>
+  <li><del>Blog Post</del></li>
+</ul>
+:ET
