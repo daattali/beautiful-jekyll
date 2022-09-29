@@ -21,7 +21,7 @@ My name is Easton. I'm 20 years old and I'm a junior at Marist College. I am a c
 
 <figure>
     <figcaption>This is a picture of Charli and I.</figcaption>
-    <img src="./assets/img/charlipic.jpg" alt="Charli" width="500">
+    <img src="https://github.com/easton-eberwein/eastoneberwein.github.io/blob/master/assets/img/charlipic.jpg?raw=true" alt="Charli" width="500">
     <figcaption>She is a pitbull-lab mix and is about 3-years old. We got her right before Covid. She is undoubtedly my dad's favorite child.</figcaption>
 </figure>
 
