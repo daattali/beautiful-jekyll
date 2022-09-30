@@ -136,16 +136,16 @@ Honourable mentions (sorted alphabetically)
 The games I look forward the most to play in 2022
 -------------------------------------------------
 
-* [ ]  Darwin’s Voyage – I have Kickstarted this (a long, long time ago) – let’s hope it lives up to the hype… and that it arrives this year…
+* [ ] Darwin’s Voyage – I have Kickstarted this (a long, long time ago) – let’s hope it lives up to the hype… and that it arrives this year…
 * [x] Terraforming Mars: Ares Expedition – A streamlined mashup of Terraforming Mars and Race for the Galaxy? Count me in!
-* [ ] Dune: Imperium – Arnak in space with spice?
+* [x] Dune: Imperium – Arnak in space with spice?
 * [x] Ark Nova – Zoo Tycoon: The (medium-heavy euro) Boardgame?
 * [x] Fjords – Philip Walker Harding revisiting the modern classic from the late Franz-Benno Delonge. (Kickstarted)
 * [ ] The Nano9Games: Railways, City Planner, and Empire – I _do_ like my nano games… (Kickstarted)
 * [ ] My Island – Knizia’s follow up to My City. Can this be a competitive legacy game that works?
 *   Expansions to:
     * [ ] Viscounts of the West Kingdom
-    * [ ] Architects of the West Kingdom
+    * [x] Architects of the West Kingdom
     * [ ] Railways of the World
     * [ ] On Mars
     * [x] Lost Ruins of Arnak
