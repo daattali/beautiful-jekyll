@@ -21,9 +21,6 @@ members:
       - name: PhD students
         full: true
         list:
-          - name: Brian Okorn<br>(co-advised with Martial Hebert)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2016/12/okorn_brian_2019.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/brian-e-okorn/
           - name: Thomas Weng
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/04/weng_thomas_2018.jpg
             web_url: https://www.thomasweng.com
@@ -64,7 +61,7 @@ members:
             photo_url: /img/members/gunjans.JPEG
             web_url: https://www.ri.cmu.edu/ri-people/gunjan-sethi/
           - name: Bowen Jiang (MSR)
-            photo_url: /img/members/bowenjiang.jpg
+            photo_url: /img/members/bowenjiang.png
             web_url: https://www.ri.cmu.edu/ri-people/bowen-jiang-2/    
           - name: Zhanyi Sun (MSR)
             photo_url: /img/members/zhanyi.png
@@ -75,7 +72,7 @@ members:
           - name: Edward Li
             photo_url: /img/members/edward.jpg
             web_url:
-      #- name: Visiting Students
+      # - name: Visiting Students
       #  full: false
        # list:
   - name: <a name="alumni"></a>Alumni
@@ -87,6 +84,8 @@ members:
             web_url: https://siddancha.github.io/
           - name: Xingyu Lin -> Post-doc with Pieter Abbeel at UC Berkeley
             web_url: https://xingyu-lin.github.io/
+          - name: Brian Okorn (co-advised with Martial Hebert)
+            web_url: https://www.ri.cmu.edu/ri-people/brian-e-okorn/
       - name: Master's students (Reseach Master's)
         full: False
         list:
