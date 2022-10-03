@@ -1,0 +1,410 @@
+---
+layout: page
+title: Publications
+subtitle:
+---
+
+Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qig6iu1pL7XMSm0XzmdhTXJysk8/edit#) to see our research highlights! <br>
+Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 2022) on some of our work.
+
+<!--Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work.-->
+
+<table cellpadding="10" width="100%">
+        
+    <!-- {% assign sorted = site.data.pubs_gen | sort: 'date' | reverse %} -->
+    {% for pub in site.data.pubs_gen %}
+        <tr>
+            {% if pub.img %}
+                <td class='pubimg' width="250" height="100" style="text-align:center">
+                    <img src="{{pub.img}}" img width="250" />
+                </td>
+            {% endif %}
+            <td>
+                {% if pub.site %}
+                    <a href="{{pub.site}}">
+                        {{pub.title}}
+                    </a>
+                {% else %}
+                    {{pub.title}}
+                {% endif %}
+                <br>
+                <div class="pubauthor">
+                    {{pub.authors}}
+                </div>
+                <div id="bib{{pub.short_id}}" style="display:none">
+                    <blockquote>
+                        <pre>
+                            {{pub.bib}}
+                        </pre>
+                    </blockquote>
+                </div>
+                <div id="abs{{pub.short_id}}" style="display:none">
+                    <blockquote>
+                        {{pub.abs}}
+                    </blockquote>
+                </div>
+                <div class="pubjournal">
+                    {% if pub.award %}
+                        {{pub.venue}} - {{pub.award}}
+                    {% else %}
+                        {{pub.venue}}
+                    {% endif %} 
+                    <br>
+                </div>
+                <div style="font-size:small">
+                    {% if pub.site != null %}
+                        <a href="{{pub.site}}">[Project Page]</a>
+                    {% endif %}
+                    {% if pub.bib != null %}
+                        <a href="javascript:copy(div{{pub.short_id}}, bib{{pub.short_id}})">[Bibtex]</a>
+                    {% endif %}
+                    {% if pub.abs != null %}
+                        <a href="javascript:copy(div{{pub.short_id}}, abs{{pub.short_id}})">[Abstract]</a>
+                    {% endif %}
+                    {% for link in pub.links %}
+                        <a href="{{link[1]}}">{{link[0]}}</a>
+                    {% endfor %}
+                </div>
+                <div id="div{{pub.short_id}}" class="pubInfo"></div>
+                <br>
+            </td>
+        </tr>
+    {% endfor %}
+
+
+    <tr>
+        <td>
+            <li class="year"> Older Work </li>
+        </td>
+    </tr>
+    <!--
+        2012 Octopus (ICRA)
+        -->
+    <tr>
+        <td class="pubimg">
+            <img src="../DavidHeld_files/armforce.png" width="180">
+        </td>
+        <td class="pubitem">
+            <div class="pubitem">
+                <a class="pubtitle" href="papers/ICRA12_1385_FI.pdf">Characterizing Stiffness of Multi-Segment Flexible Arm Movements</a>
+                <!-- Official link: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6225070 -->
+                <div>
+                    <a class="pubauthor" href="http://stanford.edu/~davheld">David Held</a>,
+                    Yoram Yekutieli,
+                    <a class="pubauthor" href="http://www.wisdom.weizmann.ac.il/~tamar/">Tamar Flash</a>
+                </div>
+                <div class="pubjournal">
+                    International Conference on Robotics and Automation
+                    (ICRA), 2012
+                </div>
+                <div id="abs2012octopus" style="display:none">
+                    <blockquote>
+                        A number of robotic studies have recently turned to biological inspiration in designing control schemes for flexible robots. Examples of such robots include continuous manipulators inspired by the octopus arm. However, the control strategies used by an octopus in moving its arms are still not fully understood. Starting from a dynamic model of an octopus arm and a given set of muscle activations, we develop a simulation technique to characterize the stiffness throughout a motion and at multiple points along the arm. By applying this technique to reaching and bending motions, we gain a number of insights that can help a control engineer design a biologically inspired impedance control scheme for a flexible robot arm. The framework developed is a general one that can be applied to any motion for any dynamic model. We also propose a theoretical analysis to efficiently estimate the stiffness analytically given a set of muscle activations. This analysis can be used to quickly evaluate the stiffness for new static configurations and dynamic movements.
+                    </blockquote>
+                </div>
+                <div id="bib2010octopus" style="display:none">
+                    <blockquote>
+                        <pre>@INPROCEEDINGS{6225070,
+                            author={Held, D. and Yekutieli, Y. and Flash, T.},
+                            booktitle={Robotics and Automation (ICRA), 2012 IEEE International Conference on}, title={Characterizing the stiffness of a multi-segment flexible arm during motion},
+                            year={2012},
+                            month={may},
+                            volume={},
+                            number={},
+                            pages={3825 -3832},
+                            keywords={Computational modeling;Force;Motion segmentation;Muscles;Shape;Trajectory;control system synthesis;dexterous manipulators;elasticity;flexible manipulators;manipulator dynamics;motion control;muscle;bending motion control;biologically inspired impedance control;control scheme design;dynamic movement;multisegment flexible robot arm;muscle activation;octopus arm;robot dynamic model;stiffness;},
+                            doi={10.1109/ICRA.2012.6225070},
+                            ISSN={1050-4729}
+                            }</pre>
+                    </blockquote>
+                </div>
+                <div class="pubspan">
+                    [<a href="javascript:copy(div2012octopus, abs2012octopus)">abstract</a>]
+                    [<a href="javascript:copy(div2012octopus, bib2010octopus)">bibtex</a>]
+                    [<a href="papers/ICRA12_1385_FI.pdf">Full Paper</a>]
+                </div>
+                <div id="div2012octopus" class="pubInfo"></div>
+            </div>
+        </td>
+    </tr>
+    <!-- ------------------------------------------------------------------------
+        2011
+        --------------------------------------------------------------------- -->
+    <!--li class="year"> 2011 </li-->
+    <!--
+        2011 Driving
+        -->
+    <tr>
+        <td class="pubimg">
+            <img src="../DavidHeld_files/Junior.png" width="180">
+        </td>
+        <td class="pubitem">
+            <div class="pubitem">
+                <a class="pubtitle" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5940562">Towards fully autonomous driving: Systems and algorithms</a>
+                <div>
+                    Jesse Levinson, Jake Askeland, Jan Becker, Jennifer Dolson, <a class="pubauthor" href="http://stanford.edu/~davheld">David Held</a>, Soeren Kammel,
+                    J. Zico Kolter, Dirk Langer, Oliver Pink, Vaughan Pratt, Michael Sokolsky,
+                    Ganymed Stanek, David Stavens, Alex Teichman, Moritz Werling, and Sebastian Thrun
+                </div>
+                <div class="pubjournal">
+                    Intelligent Vehicles Symposium (IV), 2011.
+                </div>
+                <div id="abs2011IV" style="display:none">
+                    <blockquote>
+                        In order to achieve autonomous operation of a vehicle in urban situations with unpredictable traffic, several realtime systems must interoperate, including environment perception, localization, planning, and control. In addition, a robust vehicle platform with appropriate sensors, computational hardware, networking, and software infrastructure is essential. We previously published an overview of Junior, Stanford's entry in the 2007 DARPA Urban Challenge. This race was a closed-course competition which, while historic and inciting much progress in the field, was not fully representative of the situations that exist in the real world. In this paper, we present a summary of our recent research towards the goal of enabling safe and robust autonomous operation in more realistic situations. First, a trio of unsupervised algorithms automatically calibrates our 64-beam rotating LIDAR with accuracy superior to tedious hand measurements. We then generate high-resolution maps of the environment which are subsequently used for online localization with centimeter accuracy. Improved perception and recognition algorithms now enable Junior to track and classify obstacles as cyclists, pedestrians, and vehicles; traffic lights are detected as well. A new planning system uses this incoming data to generate thousands of candidate trajectories per second, choosing the optimal path dynamically. The improved controller continuously selects throttle, brake, and steering actuations that maximize comfort and minimize trajectory error. All of these algorithms work in sun or rain and during the day or night. With these systems operating together, Junior has successfully logged hundreds of miles of autonomous operation in a variety of real-life conditions.
+                    </blockquote>
+                </div>
+                <div id="bib2011IV" style="display:none">
+                    <blockquote>
+                        <pre>@INPROCEEDINGS{5940562,
+                            author={Levinson, J. and Askeland, J. and Becker, J. and Dolson, J. and Held, D. and Kammel, S. and Kolter, J.Z. and Langer, D. and Pink, O. and Pratt, V. and Sokolsky, M. and Stanek, G. and Stavens, D. and Teichman, A. and Werling, M. and Thrun, S.},
+                            booktitle={Intelligent Vehicles Symposium (IV), 2011 IEEE}, title={Towards fully autonomous driving: Systems and algorithms},
+                            year={2011},
+                            month={june},
+                            volume={},
+                            number={},
+                            pages={163 -168},
+                            keywords={Calibration;Laser beams;Planning;Software;Trajectory;Vehicle dynamics;Vehicles;computer vision;mobile robots;remotely operated vehicles;DARPA urban challenge;LIDAR;autonomous driving;closed-course competition;environment perception;obstacle classification;obstacle tracking;online localization;planning system;realtime system;recognition algorithm;robust autonomous operation;robust vehicle platform;software infrastructure;unpredictable traffic;},
+                            doi={10.1109/IVS.2011.5940562},
+                            ISSN={1931-0587}}</pre>
+                    </blockquote>
+                </div>
+                <div class="pubspan">
+                    [<a href="javascript:copy(div2011IV, abs2011IV)">abstract</a>]
+                    [<a href="javascript:copy(div2011IV, bib2011IV)">bibtex</a>]
+                </div>
+                <div id="div2011IV" class="pubInfo"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="pubimg">
+            <img src="../DavidHeld_files/hovercraft.png" width="180">
+        </td>
+        <td class="pubitem">
+            <div class="pubitem">
+                <a class="pubtitle" href="papers/jin+04-acc.pdf">MVWT-II: The Second Generation Caltech Multi-Vehicle Wireless Testbed</a>
+                <!-- Official link: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1384698 -->
+                <div class="pubauthor">
+                    Zhipu Jinh,  Stephen Waydo,  Elisabeth B. Wildanger,  Michael Lammers,
+                    Hans Scholze, Peter Foley,
+                    <a class="pubauthor" href="http://stanford.edu/~davheld">David Held</a>,
+                    Richard M. Murray
+                </div>
+                <div class="pubjournal">
+                    American Control Conference (ACC), 2004
+                </div>
+                <div id="abs2004acc" style="display:none">
+                    <blockquote>
+                        The Caltech Multi-Vehicle Wireless Testbed is an experimental platform for validating theoretical advances in multiple-vehicle coordination and cooperation, real-time networked control system, and distributed computation. This paper describes the design and development of an additional fleet of 12 second-generation vehicles. These vehicles are hovercrafts and designed to have lower mass and friction as well as smaller size than the first generation vehicles. These hovercrafts combined with the outdoor wireless testbed provide a perfect hardware platform for RoboFlag competition.
+                    </blockquote>
+                </div>
+                <div id="bib2004acc" style="display:none">
+                    <blockquote>
+                        <pre>@INPROCEEDINGS{1384698,
+                            author={Jin, Z. and Waydo, S. and Wildanger, E.B. and Lammers, M. and Scholze, H. and Foley, P. and Held, D. and Murray, R.M.},
+                            booktitle={American Control Conference, 2004. Proceedings of the 2004}, title={MVWT-II: the second generation Caltech Multi-Vehicle Wireless Testbed},
+                            year={2004},
+                            month={30 2004-july 2},
+                            volume={6},
+                            number={},
+                            pages={5321 -5326 vol.6},
+                            keywords={design engineering;games of skill;hovercraft;mobile robots;multi-robot systems;real-time systems;Caltech MultiVehicle Wireless Testbed;RoboFlag competition;distributed computation;hardware platform;hovercraft design;multivehicle cooperation;multivehicle coordination;outdoor wireless testbed;real time networked control system;second generation vehicles;},
+                            doi={},
+                            ISSN={0743-1619}}</pre>
+                    </blockquote>
+                </div>
+                <div class="pubspan">
+                    [<a href="javascript:copy(div2004acc, abs2004acc)">abstract</a>]
+                    [<a href="javascript:copy(div2004acc, bib2004acc)">bibtex</a>]
+                </div>
+                <div id="div2004acc" class="pubInfo"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="pubimg">
+            <img src="../DavidHeld_files/tactors.png" width="180">
+                <!--img src="DavidHeld_files/tactors.png" width="180"-->
+                </td>
+        <td class="pubitem">
+            <div class="pubitem">
+                <a class="pubtitle" href="papers/78658.pdf">Surface waves and spatial localization in vibrotactile displays</a>
+                <!-- Official link: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5444673 -->
+                <div>
+                    <a class="pubauthor" href="http://meche.mit.edu/people/index.html?id=128">Lynette Jones</a>,
+                    <a class="pubauthor" href="http://stanford.edu/~davheld">David Held</a>,
+                    <a class="pubauthor" href="http://meche.mit.edu/people/index.html?id=46">Ian Hunter</a>
+                </div>
+                <div class="pubjournal">
+                    Haptics Symposium, 2010
+                </div>
+                <div id="abs2010vibrations" style="display:none">
+                    <blockquote>
+                        The locus of vibrotactile stimulation is often used as an encoding cue in tactile displays developed for spatial orientation and navigation. However, the ability to localize the site of stimulation varies as a function of the number and configuration of the vibrating motors (tactors) in the display. As the inter-tactor distance decreases it has been found that the ability to localize a point of stimulation diminishes. One factor that may limit tactile localization is the surface wave elicited by vibration that propagates across the skin at a velocity that depends on the frequency of vibration and the viscoelastic properties of the skin. A material that simulates the stress-strain characteristics of human skin was used to measure the characteristics of surface waves during vibrotactile stimulation. Accelerometers glued to the simulated skin at fixed distances from the activated tactors were used to measure the amplitude of the acceleration as a function of distance as well as the propagation velocity. It was determined that at a distance of 60 mm from the site of activation, the surface wave was on average attenuated to less than 1 m/s^2. This suggests that for this type of tactor an inter-tactor distance of at least 60 mm would be optimal for a display in which the locus of stimulation is used as an encoding variable. It seems that much of the difficulty encountered in identifying the locus of a vibrotactile stimulus in multi-tactor displays may result from small intertactor distances.
+                    </blockquote>
+                </div>
+                <div id="bib2010vibrations" style="display:none">
+                    <blockquote>
+                        <pre>@INPROCEEDINGS{5444673,
+                            author={Jones, L.A. and Held, D. and Hunter, I.},
+                            booktitle={Haptics Symposium, 2010 IEEE}, title={Surface waves and spatial localization in vibrotactile displays},
+                            year={2010},
+                            month={march},
+                            volume={},
+                            number={},
+                            pages={91 -94},
+                            keywords={Accelerometers;Displays;Elasticity;Encoding;Frequency;Humans;Navigation;Skin;Surface waves;Viscosity;accelerometers;haptic interfaces;accelerometers;distance 60 mm;inter-tactor distance;spatial localization;stimulation locus;stress-strain characteristics;surface waves;vibrating motors;vibrotactile displays;vibrotactile stimulation;localization;tactile display;tactons;torso;touch;},
+                            doi={10.1109/HAPTIC.2010.5444673},
+                            ISSN={}}</pre>
+                    </blockquote>
+                </div>
+                <div class="pubspan">
+                    [<a href="javascript:copy(div2010vibrations, abs2010vibrations)">abstract</a>]
+                    [<a href="javascript:copy(div2010vibrations, bib2010vibrations)">bibtex</a>]
+                </div>
+                <div id="div2010vibrations" class="pubInfo"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="pubimg">
+            <img src="../DavidHeld_files/tactors1.png" width="180">
+            <!--img src="DavidHeld_files/tactors1.png" width="180"-->
+        </td>
+        <td class="pubitem">
+            <div class="pubitem">
+                <a class="pubtitle" href="http://computingengineering.asmedigitalcollection.asme.org/article.aspx?articleid=1401367">Characterization of Tactors Used in Vibrotactile Displays</a>
+                <div>
+                    <a class="pubauthor" href="http://meche.mit.edu/people/index.html?id=128">Lynette Jones</a>,
+                    <a class="pubauthor" href="http://stanford.edu/~davheld">David Held</a>
+                </div>
+                <div class="pubjournal">
+                    Journal of Computing and Information Science in Engineering, 2008
+                </div>
+                <div id="abs2008jcis" style="display:none">
+                    <blockquote>
+                        A series of experiments was conducted to evaluate the operating characteristics of small DC motors that are often in tactile displays. The results indicated that these motors are reliable in terms of their frequency and amplitude of oscillation, but that the frequency varies across motors. A simulated skin material was developed to provide a substrate for evaluating the performance of the motors. There was a marked attenuation in frequency when the tactors were on this material and the surface waves could be detected 60 mm from the site of activation. These findings suggest that the spacing between tactors should be at least 60-80 mm if tactile cues are used to locate events in the environment.
+                    </blockquote>
+                </div>
+                <div id="bib2008jcis" style="display:none">
+                    <blockquote>
+                        <pre>@article{jones_held:044501,
+                            author = {Lynette A. Jones and David A. Held},
+                            collaboration = {},
+                            title = {Characterization of Tactors Used in Vibrotactile Displays},
+                            publisher = {ASME},
+                            year = {2008},
+                            journal = {Journal of Computing and Information Science in Engineering},
+                            volume = {8},
+                            number = {4},
+                            eid = {044501},
+                            numpages = {5},
+                            pages = {044501},
+                            keywords = {DC motors; display devices; haptic interfaces},
+                            url = {http://link.aip.org/link/?CIS/8/044501/1},
+                            doi = {10.1115/1.2988384}
+                            }</pre>
+                    </blockquote>
+                </div>
+                <div class="pubspan">
+                    [<a href="javascript:copy(div2008jcis, abs2008jcis)">abstract</a>]
+                    [<a href="javascript:copy(div2008jcis, bib2008jcis)">bibtex</a>]
+                </div>
+                <div id="div2008jcis" class="pubInfo"></div>
+            </div>
+        </td>
+    </tr>
+    </table>
+
+<!-- </div> -->
+<!-- ------------------------------------------------------------------------
+    YEAR
+    --------------------------------------------------------------------- -->
+<!--li class="year"> YEAR </li-->
+<!--
+    ENTRY NAME
+    -->
+<!--li class="pubitem">
+    <a class="pubtitle" href="">TITLE</a>
+    <div>
+    <a class="pubauthor" href="http://stanford.edu/~davheld">David Held</a>,
+    OTHER AUTHORS
+    </div>
+    <div class="pubjournal">
+    CONFERENCE NAME (ABBREVIATION). YEAR
+    </div>
+    <div id="absNEW" style="display:none">
+    <blockquote>
+    ABSTRACT
+    </blockquote>
+    </div>
+    <div id="bibNEW" style="display:none">
+    <blockquote>
+    <pre> BIBTEX</pre>
+    </blockquote>
+    </div>
+    <div class="pubspan">
+    [<a href="javascript:copy(divNEW, absNEW)">abstract</a>]
+    [<a href="javascript:copy(divNEW, bibNEW)">bibtex</a>]
+    </div>
+    <div id="divNEW" class="pubInfo"></div>
+    </li-->
+<!--/ul-->
+<!--/tr-->
+
+<!--div class="heading"> Pre-Prints </div>
+
+
+<table cellpadding="10" width="100%">
+
+</table-->
+<!-- Add this to a new tab later
+<div class="heading"> Advice </div>
+
+
+
+    table cellpadding="10" width="100%">
+
+    <tr>
+        <td>
+            I gave a talk on <a href="https://www.youtube.com/watch?v=CDXZXljc2Ic">"Demystifying the Post-doc - Why, Where, and How?"</a>  If you are considering doing a post-doc, the advice in this talk might be helpful.
+
+            In this talk, I describe the ins and outs of getting a job as a post-doctoral researcher ("doing a post-doc").  I first describe a number of reasons why one might want to do a post-doc, as well as a few reasons not to do one.  I next describe how to choose where one should apply for a post-doc.  Next, I describe the process of how to get a job in a dream post-doc position.  I also describe how to choose among multiple post-doc offers.  Last, I will describe how to be "successful" as a post-doc, i.e. how to make the most of your time as a post-doc and prepare for your future career.  You can watch this video
+        </td>
+    </tr>
+</table> -->
+<!--END CONTENT-->
+<!-- <div style="clear: both;"></div> -->
+<!-- </div> -->
+<!-- Preprints -->
+
+<div class="heading"> Preprints </div>
+<div>
+    <table cellpadding="10" text-align="left" width="100%">
+        <!-- <tr><td><li class="year"> 2017</li></td></tr> -->
+        <tr>
+            <td class="pubimg" width="250" height="100">
+                <img src="../DavidHeld_files/indicator2019.png" img width="250">
+            </td>
+            <td><a href="https://arxiv.org/abs/1905.07866">Reinforcement Learning without Ground-Truth State</a><br>
+                <div class="pubauthor">
+                    Xingyu Lin, Harjatin Singh Baweja, David Held<br>
+                </div>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td class="pubimg" width="250" height="100">
+                <img src="../DavidHeld_files/itn2018.png" width="250" height="100">
+            </td>
+            <td><a href="https://arxiv.org/abs/1811.11209">Iterative Transformer Network for 3D Point Cloud</a><br>
+                <div class="pubauthor">
+                    Wentao Yuan, David Held, Christoph Mertz, Martial Hebert<br>
+                </div>
+                <br>
+            </td>
+        </tr>
+    </table>
+</div>
+<p></p>
