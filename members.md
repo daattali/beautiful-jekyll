@@ -50,7 +50,7 @@ members:
             web_url: https://sashank-tirumala.github.io/
           - name: Carl Qi (MSML)
             photo_url: /img/members/carl.jpg
-            web_url:
+            web_url: https://carl-qi.github.io/
           - name: Fan Yang (MSR)
             photo_url: /img/members/fanyang.jpg
             web_url: https://sites.google.com/view/fanyang98/
