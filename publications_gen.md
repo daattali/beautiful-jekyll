@@ -66,7 +66,6 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
                     {% endfor %}
                 </div>
                 <div id="div{{pub.short_id}}" class="pubInfo"></div>
-                <br>
             </td>
         </tr>
     {% endfor %}
