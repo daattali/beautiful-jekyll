@@ -1,45 +1,64 @@
-- name: Parade Float Building
-  date: 2019-11-09
-  time: TBD
-  location: Waukesha YMCA
+- name: Boy's Fall Camp
+  date: 2022-10-07 to 2022-10-09
+  time: 6:00pm Friday through Noon on Sunday
+  location: Camp Edwards YMCA Camp, East Troy, WI
 
-- name: Waukesha Christmas Parade
-  date: 2019-11-24
-  time: 4:00pm - 8:00pm
+- name: Girl's Fall Camp
+  date: 2022-10-14 to 2022-10-16
+  time: 6:00pm Friday through Noon on Sunday
+  location: Camp Edwards YMCA Camp, East Troy, WI
+
+- name: Y-Guides Pumpkin Hunt
+  date: 2022-10-23
+  time: 3:30pm
+  location: River Valley Park, 3107 Fox Ridge Drive, Waukesha, WI 53189 (NEW location this year!!)
+
+- name: Y-Guides at the Waukesha Christmas Parade
+  date: 2022-12-04
+  time: Parade Starts at 4:00pm
   location: Downtown Waukesha
 
 - name: Bell Ringing
-  date: 2019-12-07
+  date: TBD
   time: TBD
-  location: Bob and Kurt's Sentry
-
-- name: Boy's Winter Camp
-  date: 2020-01-11
-  time: All Day
-  location: Lutherdale
+  location: TBD
 
 - name: Girls's Winter Camp
-  date: 2020-01-25 
+  date: 2023-1-28 to 2022-1-29
   time: All Day
-  location: Lutherdale
+  location: Lutherdale Camp, Elkhorn, WI
 
-- name: Father Daughter Dance
-  date: 2020-02-08
-  time: 8:00pm
+- name: Boy's Winter Camp
+  date: 2023-2-4 to 2023-2-5
+  time: All Day 
+  location: Lutherdale Camp, Elkhorn, WI
+
+- name: Sweetheart Dance (Dad-Daughter, Mom-Son)
+  date: TBD
+  time: TBD
   location: Waukesha YMCA
 
+- name: Ice Fishing
+  date: TBD0
+  time: TBD
+  location: Phantom Lake
+
 - name: Y-Night
-  date: 2020-02-28
+  date: TBD
   time: 5:00pm - 8:00pm  
   location: Waukesha YMCA
 
-- name: Mother/Son Dance
-  date: 2020-03-14
-  time: 5:00pm - 8:00pm
-  location: Waukesha YMCA
+- name: Y-Guides Bowling Bash 
+  date: TBD
+  time: TBD
+  location: TBD
 
 - name: Pinewood Derby
-  date: 2020-04-18
+  date: TBD
   time: TBD
   location: Waukesha YMCA
 
+- name: Earth Day Cleanup 
+  date: 2023-4-23
+  time: TBD
+  location: TBD
