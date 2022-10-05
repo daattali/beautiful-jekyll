@@ -7,9 +7,6 @@ subtitle: National competition series
 Our math club directly manages participation in this competition series. Learn more about
 the competition itself on their [official web site](https://www.maa.org/math-competitions).
 
-**Note: the RMS math club is ONLY supporting the AMC 8 this year. Please engage a 3rd party testing center
-to arrange for participation in the AMC 10 and beyond if you are interested.**
-
 # AMC 8
 
 The AMC 8 competition is designed for middle school students (up through 8th grade). We administer the
@@ -29,3 +26,5 @@ this very challenging round.
 The AIME is an invitation-only exam available to the top performers of the AMC 10 exams. The bulk of
 competitors skews towards 12th grade, so it is extremely challenging for middle school students. Top
 performers from the AIME are invited to continue on to the USA Junior Math Olympiad.
+
+**Our club does not run AIME exams.** You will need to find another provider.
