@@ -33,6 +33,9 @@ members:
           - name: Yufei Wang<br>(co-advised with Zackory Erickson)
             photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
             web_url: https://yufeiwang63.github.io/
+          - name: Jenny Wang
+            photo_url: https://www.ri.cmu.edu/app/uploads/2021/07/Wang_Jenny-scaled.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
       - name: Masters students
         full: true
         list:
