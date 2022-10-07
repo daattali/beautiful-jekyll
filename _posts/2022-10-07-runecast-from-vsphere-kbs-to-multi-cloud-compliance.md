@@ -2,7 +2,7 @@
 layout: post
 title: Runecast - From vSphere KBs to multi-cloud compliance
 description: null
-date: 2022-10-07T14:37:51.966Z
+date: 2022-10-07T14:17:51.966Z
 nobanner: "yes"
 fb-img: null
 ---
