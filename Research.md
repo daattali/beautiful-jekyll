@@ -5,6 +5,9 @@ title: ""
 
 ### Peer-reviewed Publications
 
+[4] [Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/mtw_sep_2021.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
+**_International Studies Quarterly_**, Forthcoming.
+
 [3] [Who's Afraid of Sunlight? Explaining Opposition to Transparency in Economic Development](assets/TJ_BAP_final.pdf) (with Nathan M. Jensen)<br>
   **_Business and Politics_**, 2021, 23(4): 471-494.
 
@@ -26,9 +29,6 @@ Under Review. Previously titled "Exporting Capital, Importing Law"
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
 David A. Lake Award for best paper presented at IPES 2020. Under Review.
-
-[Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/mtw_sep_2021.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
-**_International Studies Quarterly_**, Revise and Resubmit.
 
 [Treaty Diplomacy and the Global Firm](assets/treaty_regimes_IPES.pdf)
 
