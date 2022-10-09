@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: So, who the heck is this guy?
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hello there!
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I'm a ML engineer deeply in love with the platonic idea of someday getting to work with Generalistic Artificial Intelligence.
 
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+This is a site I'm investing my time on in order to, both, get me going on the matter and also share interesting material I might find in the matter. : )
