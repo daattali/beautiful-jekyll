@@ -65,7 +65,10 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/bowen-jiang-2/    
           - name: Zhanyi Sun (MSR)
             photo_url: /img/members/zhanyi.png
-            web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/   
+            web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/
+          - name: Pranay Gupta (MSR)
+            photo_url: /img/members/pranaygupta.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/pranay-gupta/
       - name: Undergraduate Students
         full: true
         list:
