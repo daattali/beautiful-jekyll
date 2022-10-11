@@ -94,7 +94,7 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     fi
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda=4.* bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
     if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/14/bin/psql')" ]; then
@@ -116,10 +116,10 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         echo "OK        "$(tlmgr.bat --version | head -1) >> check-setup-mds.log
     fi
     # Remove rstudio from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* make=4.* latex=3.* docker=20.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="22\|4.*" bash=4.* git=2.* make=4.* latex=3.* docker=20.* code=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=14.* rstudio=2022\.07.* R=4.* python=3.* conda=22.* bash=5.* \
+    sys_progs=(psql=14.* rstudio=2022\.07.* R=4.* python=3.* conda="22\|4.*" bash=5.* \
         git=2.* make=4.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
