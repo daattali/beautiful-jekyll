@@ -82,7 +82,7 @@
   title: <a href="https://sites.google.com/view/pasta-plan">Planning with Spatial-Temporal
     Abstraction from Point Clouds for Deformable Object Manipulation</a>
   venue: Conference on Robot Learning (CoRL), 2022
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPV_bMeszWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: null
   authors: Brian Okorn*, Chuer Pan*, Martial Hebert, David Held
   award: null
@@ -167,7 +167,7 @@
     Dough Manipulation using a Differentiable Reset Module</a>
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference on Intelligent Robots and Systems (IROS), 2022
-  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/b1qKmgmei2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/o6Dx6ZLYo44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: Robotic manipulation of highly deformable cloth presents a promising opportunity
     to assist people with several daily tasks, such as washing dishes; folding laundry;
     or dressing, bathing, and hygiene assistance for individuals with severe motor
