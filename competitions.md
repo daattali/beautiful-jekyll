@@ -14,7 +14,6 @@ subtitle: Our competition calendar
 |February, 2023         | [Mathcounts Chapter Round](/mathcounts) | TBD | By invitation | --
 |March, 2023            | [Mathcounts State Round](/mathcounts)  | TBD | By invitation | --
 |April, 2023			| [Math Is Cool Masters](http://www.academicsarecool.com) | TBD | TBD | TBD
-|May, 2023				| [Mustang Math Tournament](https://www.mustangmath.com) | TBD | TBD | TBD
 
 All competitions are **optional**.
 
