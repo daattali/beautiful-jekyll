@@ -103,7 +103,7 @@ param(
 
 $access_token = Invoke-RestMethod -Method Post -Uri "$VCDEndpointurl/oauth/tenant/$Tenant/token" -Body @{"grant_type"="refresh_token";"refresh_token"=$ApiToken} -Headers @{"Accept"="application/json";"Content-Type"="application/x-www-form-urlencoded";"Content-Length"=71}
 
-$env:Headers = @{"Authorization"="Bearer $($access_token.access_token)";"Accept"="application/*+xml;version=36.1"}
+$global:Headers = @{"Authorization"="Bearer $($access_token.access_token)";"Accept"="application/*+xml;version=36.1"}
 
 }
 ```
