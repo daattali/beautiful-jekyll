@@ -2,7 +2,9 @@ LOAD_CONTENT_CACHE = False
 
 AUTHOR = 'PYM'
 SITENAME = "A PYM's life"
-SITEURL = ''
+SITEURL = 'http://pym.pam.poum.free.fr/blog'
+# For local serve use the command :
+# make html serve PELICANOPTS="-e SITEURL='\"http://localhost:8000\"'"
 
 # Theme specific
 SITESUBTITLE = "Quand l'improbable est juste le quotidien"
