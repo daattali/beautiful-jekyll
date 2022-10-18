@@ -13,19 +13,25 @@
 
   <p class="small">
     Publié le
-    <time
-      class="published"
-      datetime="{{ article.date | strftime('%Y-%m-%d') }}"
-    >
+    <time class="published" datetime="{{ article.date | strftime('%Y-%m-%d') }}">
       {{ article.date | strftime('%-d %b %Y') }}
     </time>
     par
+    {% if article.authors is defined %}
+    {% for author in article.authors %}
+    <a href="{{ SITEURL }}/{{ author.url }}" class="author">
+      <span class="name">{{ author }}</span>
+    </a>
+    {% if not loop.last %} et {% endif %}
+    {% endfor %}
+    {% else %}
     <a href="{{ SITEURL }}/{{ article.author.url }}" class="author">
       <span class="name">{{ article.author }}</span>
-      <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
+      {# <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" /> #}
     </a>
+    {% endif %}
 
-    {% if article.series %}
+    {% if article.series is defined %}
     Épisode {{ article.series.index }} dans la série <strong>{{ article.series.name }}</strong>
     {% endif %}
   </p>
@@ -37,30 +43,31 @@
 <!-- Section with all related article -->
 <section>
   {% if article.series is defined %}
-    <header class="major">
-      <h2>Tous les articles de la série "{{ article.series.name }}" :</h2>
-    </header>
+  <header class="major">
+    <h2>Tous les articles de la série "{{ article.series.name }}" :</h2>
+  </header>
 
-    <div class="posts">
+  <div class="posts">
     {% for article in article.series.all %}
-      <article>
-        <!-- Cover image -->
-        <a href="{{ SITEURL }}/{{ article.url }}" class="image"><img src="{{ SITEURL }}/{{ article.url }}{{ article.cover.img }}" alt="{{ article.cover.comment }}" /></a>
+    <article>
+      <!-- Cover image -->
+      <a href="{{ SITEURL }}/{{ article.url }}" class="image"><img
+          src="{{ SITEURL }}/{{ article.url }}{{ article.cover.img }}" alt="{{ article.cover.comment }}" /></a>
 
-        <h3>{{ article.title }} ({{ loop.index }})</h3>
-        <p>
+      <h3>{{ article.title }} ({{ loop.index }})</h3>
+      <p>
         {% if article.summary is defined %}
-          {{ article.summary }}
+        {{ article.summary }}
         {% else %}
-          {{ article.content|striptags|truncate(SUMMARY_LENGTH) }}
+        {{ article.content|striptags|truncate(SUMMARY_LENGTH) }}
         {% endif %}
-        </p>
-        <ul class="actions">
-          <li><a href="{{ SITEURL }}/{{ article.url }}" class="button">Plus…</a></li>
-        </ul>
-      </article>
+      </p>
+      <ul class="actions">
+        <li><a href="{{ SITEURL }}/{{ article.url }}" class="button">Plus…</a></li>
+      </ul>
+    </article>
     {% endfor %}
-    </div>
+  </div>
 
   {% endif %}
 </section>

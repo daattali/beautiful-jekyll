@@ -121,3 +121,55 @@ Customisation made by PYM to the Editorial by HTML5 UP template
 #main .small {
   font-size: smaller;
 }
+
+/**************************************************************************************/
+/**************************************song formating**********************************/
+
+#main .song {
+  width: 60ch;
+  font-style: italic;
+  border-left: thick solid rgba(139, 0, 0, 35%);
+  padding-left: 1em;
+  padding-right: 4em;
+  margin: 0 0 2em 0; /* same as any paragraph */
+  position: relative;
+}
+
+#main .song h2 {
+  text-align: center;
+  font-variant-caps: small-caps;
+}
+
+@media screen and (min-width: 1040px) {
+  #main .song h2 {
+    break-before: column;
+  }
+}
+
+#main .song.lang-fr h2::after {
+  content: " 🇫🇷";
+}
+
+#main .song.lang-br h2::after {
+  content: " 🇧🇷";
+}
+
+#main .song.lang-en h2::after {
+  content: " 🇬🇧";
+}
+
+/**************************************************************************************/
+/*******************************multi-column translation*******************************/
+
+@media screen and (min-width: 1040px) {
+  #main .translation {
+    column-count: 2;
+    margin-left: -30ch;
+    margin-right: -30ch;
+  }
+}
+@media screen and (max-width: 1040px) {
+  #main .translation {
+    column-count: 1;
+  }
+}

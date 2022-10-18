@@ -10,11 +10,11 @@
       <p>{{ last_article.subtitle }}</p>
     </header>
     <p>
-    {% if last_article.summary is defined %}
+      {% if last_article.summary is defined %}
       {{ last_article.summary }}
-    {% else %}
+      {% else %}
       {{ last_article.content|truncate(SUMMARY_LENGTH) }}
-    {% endif %}
+      {% endif %}
     </p>
     <ul class="actions">
       <li><a href="{{ SITEURL }}/{{ last_article.url }}" class="button big">Lire la suite…</a></li>
@@ -24,17 +24,29 @@
       Publié le <time class="published" datetime="{{ last_article.date | strftime('%Y-%m-%d') }}">
         {{ last_article.date | strftime('%-d %b %Y') }}
       </time>
-      par <a href="{{ SITEURL }}/{{ last_article.author.url }}" class="author">
-        <span class="name">{{ last_article.author }}</span>
-        <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" />
+      par
+      {% if last_article.authors is defined %}
+      {% for author in last_article.authors %}
+      <a href="{{ SITEURL }}/{{ author.url }}" class="author">
+        <span class="name">{{ author }}</span>
       </a>
+      {% if not loop.last %} et {% endif %}
+      {% endfor %}
+      {% else %}
+      <a href="{{ SITEURL }}/{{ last_article.author.url }}" class="author">
+        <span class="name">{{ last_article.author }}</span>
+        {# <img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" /> #}
+      </a>
+      {% endif %}
     </p>
     {# TODO add tags here #}
   </div>
 
   <!-- Cover image -->
   <span class="image object">
-    <a href="{{ SITEURL }}/{{ last_article.url }}"><img src="{{ SITEURL }}/{{ last_article.url }}{{ last_article.cover.img }}" alt="{{ last_article.cover.comment }}"></a>
+    <a href="{{ SITEURL }}/{{ last_article.url }}"><img
+        src="{{ SITEURL }}/{{ last_article.url }}{{ last_article.cover.img }}"
+        alt="{{ last_article.cover.comment }}"></a>
   </span>
 </section>
 
@@ -44,18 +56,19 @@
     <h2>Tous les articles</h2>
   </header>
   <div class="posts">
-  {% for article in articles_page.object_list %}
+    {% for article in articles_page.object_list %}
     <article>
       <!-- Cover image -->
-      <a href="{{ SITEURL }}/{{ article.url }}" class="image"><img src="{{ SITEURL }}/{{ article.url }}{{ article.cover.img }}" alt="{{ article.cover.comment }}" /></a>
+      <a href="{{ SITEURL }}/{{ article.url }}" class="image"><img
+          src="{{ SITEURL }}/{{ article.url }}{{ article.cover.img }}" alt="{{ article.cover.comment }}" /></a>
 
       <h3>{{ article.title }}</h3>
       <p>
-      {% if article.summary is defined %}
+        {% if article.summary is defined %}
         {{ article.summary }}
-      {% else %}
+        {% else %}
         {{ article.content|striptags|truncate(SUMMARY_LENGTH) }}
-      {% endif %}
+        {% endif %}
       </p>
       <ul class="actions">
         <li><a href="{{ SITEURL }}/{{ article.url }}" class="button">Plus…</a></li>
@@ -73,21 +86,21 @@
       </p>
       {# TODO add tags here #}
     </article>
-  {% endfor %}
+    {% endfor %}
   </div>
   <footer>
     <ul class="pagination">
-    {% if dates_page.has_previous() %}
+      {% if dates_page.has_previous() %}
       <li><a href="{{ SITEURL }}/{{ dates_previous_page.url }}" class="button">Plus récents</a></li>
-    {% else %}
+      {% else %}
       <li><a href="" class="button disabled">Plus récents</a></li>
-    {% endif %}
+      {% endif %}
 
-    {% if articles_page.has_next() %}
+      {% if articles_page.has_next() %}
       <li><a href="{{ SITEURL }}/{{ dates_next_page.url }}" class="button">Plus anciens</a></li>
-    {% else %}
+      {% else %}
       <li><a href="" class="button disabled">Plus anciens</a></li>
-    {% endif %}
+      {% endif %}
     </ul>
   </footer>
 </section>
