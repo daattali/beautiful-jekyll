@@ -13,3 +13,6 @@ ehthumbs.db
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
+
+# Local Netlify folder
+.netlify

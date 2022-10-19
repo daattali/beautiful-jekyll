@@ -13,6 +13,7 @@ pelican-frontmark = "^1.2.1"
 pelican-neighbors = "^1.2.0"
 pelican-pandoc-reader = "^1.1.0"
 pelican-series = "^2.1.0"
+pre-commit = "^2.20.0"
 
 [tool.poetry.dev-dependencies]
 

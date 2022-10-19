@@ -2,7 +2,7 @@ LOAD_CONTENT_CACHE = False
 
 AUTHOR = 'PYM'
 SITENAME = "A PYM's life"
-SITEURL = 'http://pym.pam.poum.free.fr/blog'
+SITEURL = 'http://localhost:8000'
 # For local serve use the command :
 # make html serve PELICANOPTS="-e SITEURL='\"http://localhost:8000\"'"
 
@@ -59,7 +59,7 @@ CONTACTS = [
 DEFAULT_PAGINATION = 6
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 
 PANDOC_DEFAULT_FILES = [
