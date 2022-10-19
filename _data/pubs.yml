@@ -32,7 +32,7 @@
   site: null
   title: 'TAX-Pose: Task-Specific Cross-Pose Estimation for Robot Manipulation'
   venue: Conference on Robot Learning (CoRL), 2022
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://youtu.be/1GTEXuk1TEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: null
   authors: "Daniel Seita, Yufei Wang\u2020, Sarthak J Shetty\u2020, Edward Yao Li\u2020\
     , Zackory Erickson, David Held"
@@ -224,7 +224,7 @@
   title: '<a href="https://sites.google.com/view/articulated-flowbot-3d/home#h.xrrj1zv4o44a">FlowBot3D:
     Learning 3D Articulation Flow to Manipulate Articulated Objects</a>'
   venue: 'Robotics: Science and Systems (RSS), 2022'
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://youtu.be/ZxRS8WfZOMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: "Self-occlusion is challenging for cloth manipulation, as it makes it difficult\
     \ to estimate the full state of the cloth. Ideally, a robot trying to unfold a\
     \ crumpled or folded cloth should be able to reason about the cloth's occluded\
