@@ -19,30 +19,30 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 
 | Week Of	| Homework (Mon)		| Club (Wed)  | Varsity (Fri) |
 | ----------|-------------			| ----------- | ----------- |
-| 31-Oct	| Factorials			|  |  |
-| 7-Nov 	| Right Triangles		|  | _No school_ |
+| 31-Oct	| Factorials			| [2010 AMC 8](https://artofproblemsolving.com/wiki/index.php/2010_AMC_8_Problems) |  |
+| 7-Nov 	| Right Triangles		| [2013 AMC 8](https://artofproblemsolving.com/wiki/index.php/2013_AMC_8_Problems) | _No School_ |
 | 14-Nov	| Probability			| _No Coaching Session (AMC 10B)_ |  |
-| 21-Nov	| Fractions				| _No school_ | _No school_ |
-| 28-Nov	| Area					|  |  |
-| 5-Dec		| Patterns				|  |  |
-| 12-Dec	| Work					|  |  |
-| 19-Dec	| _No school_    		| _No school_ | _No school_ |
-| 26-Dec	| _No school_			| _No school_ | _No school_ |
-| 2-Jan		| _No school_ 			|  |  |
+| 21-Nov	| Fractions				| _No School_ | _No School_ |
+| 28-Nov	| Area					| _No Coaching Session (Mathcrafters)_ |  |
+| 5-Dec		| Patterns				| [2016 AMC 8](https://artofproblemsolving.com/wiki/index.php/2016_AMC_8_Problems) |  |
+| 12-Dec	| Work					| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems) |  |
+| 19-Dec	| _No School_    		| _No School_ | _No School_ |
+| 26-Dec	| _No School_			| _No School_ | _No School_ |
+| 2-Jan		| _No School_ 			| [19-20 Mathcounts School Round](/files/RMS%201920M%20Exam.pdf) |  |
 | 9-Jan		| Counting				| _No Coaching Session (Mathcounts School Round)_ |  |
-| 16-Jan	| _No school_			| _No Coaching Session (AMC 8)_ |  |
+| 16-Jan	| _No School_			| _No Coaching Session (AMC 8)_ |  |
 | 23-Jan	| Circles				|  |  |
 | 30-Jan	| Similarity			|  |  |
 | 6-Feb		| Pascal's Triangle		|  |  |
 | 13-Feb	| Logic					| _No Coaching Session (Math Is Cool Regionals)_ |  |
-| 20-Feb	| _No school_ 			|  |  |
+| 20-Feb	| _No School_ 			|  |  |
 | 27-Feb	| Sequences				|  |  |
-| 6-Mar	    | Systems of Equations	|  | _No school_ |
+| 6-Mar	    | Systems of Equations	|  | _No School_ |
 | 13-Mar	| Travel    			|  |  |
-| 20-Mar	| _No school_			|  |  |
+| 20-Mar	| _No School_			|  |  |
 | 27-Mar	| Angles and Arcs		|  |  |
 | 3-Apr		| Expected Value		|  |  |
-| 10-Apr	| _No school_			|  _No school_ | _No school_ |
+| 10-Apr	| _No School_			|  _No School_ | _No School_ |
 | 17-Apr	| Surface Area & Volume |  |  |
 | 24-Apr	| Bases					|  |  |
 
