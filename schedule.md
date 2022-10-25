@@ -10,7 +10,8 @@ from 3:30PM on the days scheduled below. Proctors must arrive 15 minutes ahead t
 [PTSA portal](https://rmsptsa.sharepoint.com/sites/MathClub) at least once before you'll be able to access the Teams channel for the first time.
 
 The homework packet may be downloaded [here](/files/Homework%20Packet.pdf). The 10-question assignment for each Homework
-sessions come from this packet. It is expected that all members will attempt to complete the assignment 
+session comes from this packet. For example, when the _Factorials_ stretch is being covered, you only need to complete the 10-question
+section under the _Factorials_ header in the packet. It is expected that all members will attempt to complete the assignment 
 for the week. It will be covered completely in the Homework session.
 
 The Mathcounts Toolkit can be downloaded [here](/files/Mathcounts%20Toolkit.pdf).
