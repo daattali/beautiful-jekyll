@@ -284,7 +284,3 @@ Your connections are now secure on both vCenter AND the hosts.
 Note that the certificate won't be valid on ESXi if you connect with the IP or the short name as these are not put in the subject alternative name by VMCA. 
 
 It will be ok on vCenter unless you skipped the IP and hostname fields in certificate-manager.
-
----
-
-If you are looking for options on how to protect your endpoint workloads, [Vembu Backup for Endpoints](https://www.vembu.com/vembu-backup-for-endpoints/) offers capabilities to ensure data protection measures for free for up to 10 endpoints of Windows and Mac against disaster, and system failures.

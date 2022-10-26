@@ -99,7 +99,3 @@ Function Prompt {
 }
 
 ```
-
----
-
-If you are looking for options on how to protect your endpoint workloads, [Vembu Backup for Endpoints](https://www.vembu.com/vembu-backup-for-endpoints/) offers capabilities to ensure data protection measures for free for up to 10 endpoints of Windows and Mac against disaster, and system failures.
