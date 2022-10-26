@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My Website
+title: Cloud Babble
 
 # Your name to show in the footer
 author: Jamie Thompson
@@ -58,7 +58,7 @@ social-network-links:
   youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: https://www.linkedin.com/in/jamiethompson85/
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
