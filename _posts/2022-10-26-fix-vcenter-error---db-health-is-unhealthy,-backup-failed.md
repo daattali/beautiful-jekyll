@@ -33,4 +33,6 @@ The output should look like so if it is successful.
 
 ---
 
-This blog is only focused on the backup of the vCenter Server appliance itself. If you are looking for options on how to protect your vSphere and VMware Cloud Director workloads, [Nakivo Backup & Replication](https://www.nakivo.com/) offers capabilities to back up vSphere VMs and VCD objects such as vApps, individual VMs and vApp metadata and ensure that remote workloads can be recovered in case of a data loss event. Not a lot of vendors out there support VCD so kuddos to that.
+This blog is only focused on the backup of the vCenter Server appliance itself. If you are looking for options on how to **protect your vSphere and VMware Cloud Director** workloads, [Nakivo Backup & Replication](https://www.nakivo.com/) offers capabilities to back up vSphere VMs and VCD objects such as vApps, individual VMs and vApp metadata and ensure that remote workloads can be recovered in case of a data loss event. Not a lot of vendors out there support VCD so kuddos to that!
+
+[![nakivo backup](/img/2022-10-26-13-45-41.png)](https://www.nakivo.com)
