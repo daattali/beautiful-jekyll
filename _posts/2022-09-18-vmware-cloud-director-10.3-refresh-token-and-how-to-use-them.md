@@ -116,4 +116,6 @@ To use it, you simply run the function with parameters for the VCD endpoint uri,
 
 API tokens are a great addition to the product since VMware Cloud Director 10.3.1. I'm actually a little surprised this wasn't released before but better late than never I guess. Tasks automation against the VCD API will be facilitated and more secure.
 
-Again, check out Nakivo Backup and Replication to protect VMware Cloud Director workloads. You can try it out with the [free trial](https://www.nakivo.com/resources/download/trial-download/).
+Again, check out **Nakivo Backup and Replication** to protect VMware Cloud Director workloads. You can try it out with the [free trial](https://www.nakivo.com/resources/download/trial-download/).
+
+[![nakivo backup](/img/2022-10-26-13-45-41.png)](https://www.nakivo.com)
