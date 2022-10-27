@@ -137,7 +137,7 @@
   site: https://sites.google.com/view/reskin-cloth/home
   title: Learning to Singulate Layers of Cloth based on Tactile Feedback
   venue: International Conference on Intelligent Robots and Systems (IROS), 2022
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/FTGbx1XDjJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: Deformable object manipulation has many applications such as cooking and laundry
     folding in our daily lives. Manipulating elastoplastic objects such as dough is
     particularly challenging because dough lacks a compact state representation and
