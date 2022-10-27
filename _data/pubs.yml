@@ -343,7 +343,7 @@
   title: <a href="https://sites.google.com/view/transparentliquidpouring">Self-supervised
     Transparent Liquid Segmentation for Robotic Pouring</a>
   venue: International Conference of Robotics and Automation (ICRA), 2022
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/BkAxNCvYmM0" title="Robotic pouring from empty to 75% of the cup height." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: Real-time object pose estimation is necessary for many robot manipulation algorithms.
     However, state-of-the-art methods for object pose estimation are trained for a
     specific set of objects; these methods thus need to be retrained to estimate the
