@@ -17,6 +17,7 @@ I'm Jamie Thompson, a Senior Cloud Architect specializing in Google Cloud at Ato
 - Networks
 
 During this time I have worked across a diverse range of industries including public sector, nuclear, defence, FS&I, utilities, education, health, and an assortment of SMB’s with both large global systems integrators and smaller IT organisations. I’ve spent a lot of time working in heavily regulated, secure industries, designing cloud platforms and migrating 100’s of applications comprising of rehost, replatform and rearchitect migrations,
+
 I started working with Google Cloud in 2019 and embarked upon various certifications (and recertifications!) along the way including:
 
 - Google Cloud Professional Data Engineer
