@@ -31,7 +31,7 @@ I started working with Google Cloud in 2019 and embarked upon various certificat
 
 In addition to my role as a Cloud Architect, I also co-host our GCP Coaching Hub at Atos. This is a global community of Atos employees focussed on Google Cloud with the aim of supporting members with training, gaining certification, provide opportunities to gain hands on experience and benefit from other peoples knowledge and experience via regular webinars and events.
 
-I’ve decided to create this blog to help share my knowledge and experience with Google Cloud, document best practices and hopefully help others who are studying towards GCP certifications or looking for some guidance on GCP products and services.
+I’ve decided to create this blog to help share my knowledge and experience with Google Cloud, document best practices, technical tutorials and hopefully help others who are studying towards GCP certifications or looking for some guidance on GCP products and services.
 
 Feel free to subscribe and follow me on my [LinkedIn profile](https://linkedin.com/in/jamiethompson85).
 
