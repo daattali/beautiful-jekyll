@@ -811,7 +811,7 @@
   title: '<a href="https://arxiv.org/abs/2011.07213">PLAS: Latent Action Space for
     Offline Reinforcement Learning</a>'
   venue: Conference on Robot Learning (CoRL), 2020
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/d0ykqAxbklA" title="Cloth Sliding with PLAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: 'Visual data in autonomous driving perception, such as camera image and LiDAR
     point cloud, can be interpreted as a mixture of two aspects: semantic feature
     and geometric structure. Semantics come from the appearance and context of objects
