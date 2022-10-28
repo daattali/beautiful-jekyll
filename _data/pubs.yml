@@ -160,7 +160,8 @@
     number={4},\npages={9857-9864},\ndoi={10.1109/LRA.2022.3191239}}"
   img: ../pics/carl-22-website.gif
   links:
-    '[PDF]': https://arxiv.org/pdf/2207.04638.pdf
+    '[Talk]': https://drive.google.com/file/d/1ai4tJeHNoZKD8wavViWj3auMPZdblZRR/view?usp=sharing
+    '[PDF]': https://arxiv.org/pdf/2207.04638.pdf 
   short_id: 2022raldough
   site: https://sites.google.com/view/dough-manipulation
   title: <a href="https://sites.google.com/view/dough-manipulation">Learning Closed-loop
