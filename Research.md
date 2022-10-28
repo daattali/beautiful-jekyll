@@ -53,15 +53,14 @@ display_categories: [work]
 ### Posters
 
 <dl>
-    <dt>
-    <img src="https://img.shields.io/badge/July. 2022-118ab2.svg"></dt>
-    
+ <dt>
+ <img src="https://img.shields.io/badge/July. 2022-118ab2.svg"></dt>   
 <dd>  Poster presentation at <a href="https://prairie-institute.fr/"> PRAIRIE</a> event: <b><a href="/assets/img/Poster_multiscale_atlas_estimation.pdf"> Wavelet-based multiscale atlas estimation </a> </b> </dd> 
 
 <dt>
-    <img src="https://img.shields.io/badge/Sept. 2022-118ab2.svg"></dt>
+<img src="https://img.shields.io/badge/Sept. 2022-118ab2.svg"> </dt>
     
-<dd>  Poster presentation at <a href="https://fitng.org/"> FIT'NG 2022</a>: <b>A spatio-temporal atlas of the foetal brain with agenesis of the corpus callosum</b> </dd>
+<dd>  Poster presentation at <a href="https://fitng.org/"> FIT'NG 2022</a>: <b>A spatio-temporal atlas of the foetal brain with agenesis of the corpus callosum </b> </dd>
 
 </dl>
  
