@@ -46,9 +46,11 @@ display_categories: [work]
 
 <dt><img src="https://img.shields.io/badge/June 2022-118ab2.svg"></dt>
 <dd>  Presentation at the Decision and Bayesian Computation Lab meeting (Institut Pasteur): <b>Wavelet-based multiscale atlas estimation</b> </dd>
+</dl>
 
-<dt><img src="https://img.shields.io/badge/Feb. 2023-1138b2.svg"></dt>
+ <dl>  <dt><img src="https://img.shields.io/badge/Feb. 2023-1138b2.svg"></dt>
 <dd>  Presentation at SPIE Medical Imaging 2023: <b>A multiscale algorithm for computing realistic image transformations in the LDDMM framework – application to the modelling of fetal brain growth </b> </dd>
+
 </dl>
 
  
