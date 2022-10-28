@@ -190,14 +190,16 @@
     \ David Held, and Zackory Erickson},\n    booktitle={IEEE/RSJ International Conference\
     \ on Intelligent Robots and Systems (IROS)},\n    year={2022},\n    }"
   img: ../pics/visual-haptic-reasoning-IROS.gif
-  links: {}
+  links: 
+    '[PDF]': https://arxiv.org/pdf/2208.05632.pdf 
+    '[Talk]': https://www.youtube.com/watch?v=Qgjdt7vAHCQ
   short_id: 2022vhr
   site: https://sites.google.com/view/visualhapticreasoning/home
   title: 'Visual Haptic Reasoning: Estimating Contact Forces by Observing Deformable
     Object Interactions'
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference on Intelligent Robots and Systems (IROS), 2022
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/hXAgi1HYDuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: We explore a novel method to perceive and manipulate 3D articulated objects
     that generalizes to enable a robot to articulate unseen classes of objects. We
     propose a vision-based system that learns to predict the potential motions of
@@ -508,7 +510,7 @@
   title: <a href="https://arxiv.org/abs/2105.10389">Learning Visible Connectivity
     Dynamics for Cloth Smoothing</a>
   venue: Conference on Robot Learning (CoRL), 2021
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/S5RsQTdr5d8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: We address the problem of goal-directed cloth manipulation, a challenging task
     due to the deformability of cloth. Our insight is that optical flow, a technique
     normally used for motion estimation in video, can also provide an effective representation
