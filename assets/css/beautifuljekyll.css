@@ -15,9 +15,10 @@ body {
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
-  background-color: {{ site.page-col | default: "#8b9dc3" }};
+  background-color: {{ site.page-col | default: "#404040" }};
+#  background-color: {{ site.page-col | default: "#8b9dc3" }};
   {% if site.page-img %}
-  background-image: url({{ site.page-img | relative_url }});8b9dc3
+  background-image: url({{ site.page-img | relative_url }});#404040
   background-attachment: fixed;
   {% endif %}
   overflow-wrap: break-word;
@@ -86,16 +87,20 @@ hr.small {
   background-color: {{ site.hover-col | default: "#0085A1" }};
 }
 ::selection {
-  color: #fff;
+  # color: #fff;
+  color: #a61616;
   text-shadow: none;
-  background-color: {{ site.hover-col | default: "#0085A1" }};
+  # background-color: {{ site.hover-col | default: "#0085A1" }};
+  background-color: {{ site.hover-col | default: "#a61616" }};
 }
 img::selection {
-  color: #fff;
+# color: #fff;
+  color: #a61616;
   background: transparent;
 }
 img::-moz-selection {
-  color: #fff;
+  # color: #fff;
+  color: #a61616;
   background: transparent;
 }
 
