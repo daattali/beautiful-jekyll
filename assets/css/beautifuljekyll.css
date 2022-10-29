@@ -15,9 +15,9 @@ body {
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
-  background-color: {{ site.page-col | default: "#FFFFFF" }};
+  background-color: {{ site.page-col | default: "#8b9dc3" }};
   {% if site.page-img %}
-  background-image: url({{ site.page-img | relative_url }});
+  background-image: url({{ site.page-img | relative_url }});8b9dc3
   background-attachment: fixed;
   {% endif %}
   overflow-wrap: break-word;
