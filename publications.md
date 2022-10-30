@@ -474,7 +474,7 @@ year={2022}}
                 </blockquote>
             </div>
             <div style="font-size:small">
-                <a href="https://rb2.info/">[Project Page]</a>
+                <a href="https://agi-labs.github.io/rb2/">[Project Page]</a>
                 <!--a href="javascript:copy(div20213dV, bibdiv20213dV)">[Bibtex]</a-->
                 <a href="javascript:copy(div2021rb2, absdiv2021rb2)">[Abstract]</a>
             </div>
