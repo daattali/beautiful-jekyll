@@ -21,9 +21,6 @@ members:
       - name: PhD students
         full: true
         list:
-          - name: Brian Okorn<br>(co-advised with Martial Hebert)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2016/12/okorn_brian_2019.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/brian-e-okorn/
           - name: Thomas Weng
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/04/weng_thomas_2018.jpg
             web_url: https://www.thomasweng.com
@@ -36,6 +33,9 @@ members:
           - name: Yufei Wang<br>(co-advised with Zackory Erickson)
             photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
             web_url: https://yufeiwang63.github.io/
+          - name: Jenny Wang
+            photo_url: https://www.ri.cmu.edu/app/uploads/2021/07/Wang_Jenny-scaled.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
       - name: Masters students
         full: true
         list:
@@ -50,26 +50,32 @@ members:
             web_url: https://sashank-tirumala.github.io/
           - name: Carl Qi (MSML)
             photo_url: /img/members/carl.jpg
-            web_url:
+            web_url: https://carl-qi.github.io/
           - name: Fan Yang (MSR)
             photo_url: /img/members/fanyang.jpg
             web_url: https://sites.google.com/view/fanyang98/
           - name: Haolun (Harry) Zhang (MSR)
             photo_url: /img/members/harry.jpg
             web_url: https://harryzhangog.github.io/
-          - name: Chuer Pan (MSR)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/08/pan_chu-er_2020.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
           - name: Gunjan Sethi (MRSD)
             photo_url: /img/members/gunjans.JPEG
-            web_url: https://www.ri.cmu.edu/ri-people/gunjan-sethi/            
+            web_url: https://www.ri.cmu.edu/ri-people/gunjan-sethi/
+          - name: Bowen Jiang (MSR)
+            photo_url: /img/members/bowenjiang.png
+            web_url: https://www.ri.cmu.edu/ri-people/bowen-jiang-2/    
+          - name: Zhanyi Sun (MSR)
+            photo_url: /img/members/zhanyi.png
+            web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/
+          - name: Pranay Gupta (MSR)
+            photo_url: /img/members/pranaygupta.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/pranay-gupta/
       - name: Undergraduate Students
         full: true
         list:
           - name: Edward Li
             photo_url: /img/members/edward.jpg
             web_url:
-      #- name: Visiting Students
+      # - name: Visiting Students
       #  full: false
        # list:
   - name: <a name="alumni"></a>Alumni
@@ -81,9 +87,13 @@ members:
             web_url: https://siddancha.github.io/
           - name: Xingyu Lin -> Post-doc with Pieter Abbeel at UC Berkeley
             web_url: https://xingyu-lin.github.io/
+          - name: Brian Okorn (co-advised with Martial Hebert)
+            web_url: https://www.ri.cmu.edu/ri-people/brian-e-okorn/
       - name: Master's students (Reseach Master's)
         full: False
         list:
+          - name: Chuer Pan (MSR)
+            web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
           - name: Gaurav Pathak (MSR) -> Adobe
             web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
           - name: Zixuan Huang (MSR) -> Michigan PhD
