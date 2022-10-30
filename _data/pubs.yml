@@ -436,7 +436,7 @@
   img: ../pics/rb2b.png
   links: {}
   short_id: div2021rb2
-  site: https://rb2.info/
+  site: https://agi-labs.github.io/rb2/
   title: '<a href="https://openreview.net/forum?id=e82_BlJL43M">RB2: Robotic Manipulation
     Benchmarking with a Twist</a>'
   venue: NeurIPS 2021 Datasets and Benchmarks Track, 2021
