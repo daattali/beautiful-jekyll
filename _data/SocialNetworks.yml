@@ -21,6 +21,11 @@ twitter:
   baseURL: "https://twitter.com/"
   icon: "fa-twitter"
 
+mastodon:
+  name: "Mastodon"
+  baseURL: "https://mastodon.online/"
+  icon: "fa-brands fa-mastodon"
+
 reddit:
   name: "Reddit"
   baseURL: "https://reddit.com/u/"
