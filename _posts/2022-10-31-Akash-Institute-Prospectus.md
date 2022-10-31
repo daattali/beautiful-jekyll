@@ -1,34 +1,38 @@
 ---
 layout: post
-title: Akash Institute Prospectus
-subtitle: Includes Faculties, Fee Structure, Facilities, About Us.
+quote> बच्चों के छोटे हाथों को चाँद सितारे छूने दो !
+subtitle: निदा फाजली 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 ---
-AKASH INSTITUTE was established in Bettiah as a premier education institute 
-to foster a keen, concept based learning environment for CBSE & state board 
-examinations by bringing the best of Bettiah’s teaching methodology, study 
-material and experienced faculty. 
+प्रिय पाठको ,
+        यथोचित अभिवादन !
+आशा करता हूँ कि आप सभी स्वस्थ एवं सानंद होंगे। मैने
+अपने जीवन के इन 22 वसंतो में पाया है कि जीवन के शुरू
+वाले जो 10 से 12 वसंत थे, वे अब शायद इस जीवन में नहीं
+आने वाले।मुझे इसका कारण सामाजिक दूरियाँ और अंधी
+प्रति स्पर्धात्मक दौड़ लगती है।
 
-Based on modern pedagogy, AKASH INSTITUTE brings qualified and 
-experienced faculty with the chief effort to get the best out of every student 
-from class NC to XII. We believe that at this age, a student needs additional 
-attention, consistent guidance and motivation, along with a concerned 
-atmosphere for them to excel and improve their success rate in competitive 
-exams. Apart from improving excellence in academics we ensure the 
-students at Southern KOTA are provided with all round Personality 
-development, which includes Moral Education, Enhance communication & 
-presentation skills in English, Yoga & Meditation for physical, mental & 
-spiritual fitness. We are capable to groom both average and brilliant students 
-and we leave no stone unturned to render the best out of them.
+मेरे यहाँ के सारे बच्चों ने डॉक्टर, इंजीनियर, आईएएस
+और न जाने क्या-क्या बनने के सपने सजा लिए हैं और उसी
+राह पर निकल भी पड़े हैं। कोई स्वेच्छा से निकला है तो किसी
+को जबरदस्ती ठेला जा रहा है|
 
-We believe in optimal & balanced IQ-EQ development to equip students to 
-ace not just the competitive examinations, but all stages of preparation to 
-excel in their academic career. Our mentoring, counselling & motivational 
-sessions hone their minds and build strength and endurance to take on the 
-competitive examinations. Additionally, we provide regular mentorship from 
-experts on test-taking, time management and stress management skills.
+इस सकारात्मकता और नकारात्मकता के बीच के द्वंद्व में बच्चें
+ही नहीं उनके माता-पिता भी पिस रहे हैं।
+
+बस सकारा त्मकता को और सुदृढ़ करने, नकारा त्मकता को दूर
+भगाने, साथ ही साथ बच्चों में उनकी अपनी असली प्रतिभा
+को ढूंढने में मदद करने वाली 'आओ उड़ चलें' पत्रिका को
+बनाने का एक छोटा सा प्रयास किया गया है।
+इसमें आपके हर एक प्रकार के सपने को ध्यान में रखकर उस
+विषय-वस्तु पर अनेकानेक सामग्रियों को उपलब्ध कराया
+गया है, जो कि आपके लिए भविष्य में बहुत ही उपयोगी
+साबित होंगी ।
+आपकी प्रतिक्रियाओं के बिना हमारा यह प्रयास अधूरा-सा
+रहेगा । अतः कृपया आप सभी अपनी प्रतिक्रिया अवश्य दें ।
+धन्यवाद...!
 
 This is our institute's prospectus. It includes all the necessary information like Faculties, Fee structure and Facilities.
 <object data="/assets/img/AKASH%20INSTITUTE%20PROSPECTUS.pdf" type="application/pdf" width="700px" height="1400px">
