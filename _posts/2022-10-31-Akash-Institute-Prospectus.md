@@ -1,13 +1,15 @@
 ---
 layout: post
-quote> बच्चों के छोटे हाथों को चाँद सितारे छूने दो !
+title: बच्चों के छोटे हाथों को चाँद सितारे छूने दो !
 subtitle: निदा फाजली 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 ---
 प्रिय पाठको ,
+
         यथोचित अभिवादन !
+        
 आशा करता हूँ कि आप सभी स्वस्थ एवं सानंद होंगे। मैने
 अपने जीवन के इन 22 वसंतो में पाया है कि जीवन के शुरू
 वाले जो 10 से 12 वसंत थे, वे अब शायद इस जीवन में नहीं
@@ -30,8 +32,10 @@ share-img: /assets/img/path.jpg
 विषय-वस्तु पर अनेकानेक सामग्रियों को उपलब्ध कराया
 गया है, जो कि आपके लिए भविष्य में बहुत ही उपयोगी
 साबित होंगी ।
+
 आपकी प्रतिक्रियाओं के बिना हमारा यह प्रयास अधूरा-सा
 रहेगा । अतः कृपया आप सभी अपनी प्रतिक्रिया अवश्य दें ।
+
 धन्यवाद...!
 
 This is our institute's prospectus. It includes all the necessary information like Faculties, Fee structure and Facilities.
