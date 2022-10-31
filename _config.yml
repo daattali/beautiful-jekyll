@@ -20,10 +20,6 @@ author: Akash Srivastva
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -48,22 +44,18 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  email: "aaoudchalen@yahoo.com"
+  facebook: https://www.facebook.com/profile.php?id=100087239560563
+  youtube: https://youtube.com/channel/UCu6mKHtCwDb0tckQpRdU6xQ
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: https://www.instagram.com/aaoudchalen/
 #  spotify: yourname
-#  telephone: +14159998888
+  telephone: +917563892752
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -93,10 +85,10 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "udchalein.in"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 40
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
