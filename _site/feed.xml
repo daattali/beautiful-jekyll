@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>Easton&apos;s Website</title>
+    
+    
+    <description>This website is a virtual proof that I&apos;m awesome</description>
+    
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Lesson 3 Blog</title>
+        <description>
+          Frameworks - 
+          In lesson 3 we learned about frameworks. Frameworks are prewritten code that provides the end user with a standard to build their own custom application. Frameworks can be a great tool for both web development and for server-side code. Web frameworks provide the bones of a site that allows you...
+        </description>
+        <pubDate>Tue, 27 Sep 2022 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2022-09-27-Lesson-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-09-27-Lesson-3/</guid>
+      </item>
+    
+      <item>
+        <title>Lesson 2 Blog</title>
+        <description>
+          IDEs, Terminals, Workflows, and Git - 
+          In lesson 2, we learned about IDEs, Terminals, different Workflows, and gained more in-depth knowledge about Git. Warning: Important Information Below An IDE is an integrated development environment. IDEs allow us to edit code, build automation, and debug. Visual Studio Code, also known as VS Code, is an IDE that...
+        </description>
+        <pubDate>Tue, 27 Sep 2022 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2022-09-27-Lesson-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-09-27-Lesson-2/</guid>
+      </item>
+    
+      <item>
+        <title>Lesson 1 Blog</title>
+        <description>
+          Git and GitHub - 
+          In lesson 1 we learned about Git and GitHub. Git is a control system that allows us to take snapshots and track changes in a set of files. Git is generally used for coordinating work among a group of programmers and is easy to use in a collaborative setting when...
+        </description>
+        <pubDate>Sun, 25 Sep 2022 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2022-09-25-Lesson-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-09-25-Lesson-1/</guid>
+      </item>
+    
+  </channel>
+</rss>
