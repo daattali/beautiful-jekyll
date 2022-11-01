@@ -19,8 +19,8 @@ author: Akash Srivastva
 ###############################################
 
 navbar-links:
-  About Me: "AKASH-INSTITUTE-BETTIAH"
-  About Me: "Editors"
+  About Me: "aboutme"
+  
 ################
 # --- Logo --- #
 ################
@@ -120,7 +120,7 @@ navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
-text-col: "#404040"
+text-col: "#E13C18"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#EAEAEA"
