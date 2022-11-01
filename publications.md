@@ -32,9 +32,7 @@ Also, here is a [recent video](https://youtu.be/AZjzndMv9dU?t=54) (February 14, 
                 </div>
                 <div id="bib{{pub.short_id}}" style="display:none">
                     <blockquote>
-                        <pre>
-                            {{pub.bib}}
-                        </pre>
+                        <pre>{{pub.bib}}</pre>
                     </blockquote>
                 </div>
                 <div id="abs{{pub.short_id}}" style="display:none">

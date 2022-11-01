@@ -891,28 +891,19 @@
     success. Video and other supplementary materials are available at:'
   authors: Jianing Qian*, Thomas Weng*, Luxin Zhang, Brian Okorn, David Held
   award: null
-  bib: '@InProceedings{Qian_2020_IROS,
-
-    author="Qian, Jianing
-
-    and Weng, Thomas
-
-    and Zhang, Luxin
-
-    and Okorn, Brian
-
-    and Held, David",
-
-    title="Cloth Region Segmentation for Robust Grasp Selection",
-
-    booktitle="International Conference on Intelligent Robots and Systems",
-
-    year="2020",
-
-    publisher="IEEE"}'
+  bib: "@InProceedings{Qian_2020_IROS,\n
+    author={Qian, Jianing and Weng, Thomas and Zhang, Luxin and Okorn, Brian and Held, David},
+    booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+    title={Cloth Region Segmentation for Robust Grasp Selection}, 
+    year={2020},
+    volume={},
+    number={},
+    pages={9553-9560},
+    doi={10.1109/IROS45743.2020.9341121}}"
   img: ../pics/cloth_grasping.gif
   links:
     '[PDF]': https://arxiv.org/pdf/2008.05626.pdf
+    '[Code]': https://github.com/thomasweng15/cloth-segmentation
   short_id: qian2020iros
   site: https://sites.google.com/view/cloth-segmentation
   title: <a href="https://arxiv.org/abs/2008.05626">Cloth Region Segmentation for
