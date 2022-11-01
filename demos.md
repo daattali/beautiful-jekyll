@@ -39,10 +39,6 @@ subtitle:
           {% if pub.abs != null %}
               <a href="javascript:copy(div{{pub.short_id}}, abs{{pub.short_id}})">[Abstract]</a>
           {% endif %}
-          <!-- <a href="{{ pub.site }}">[Project Page]</a>
-          <a href="javascript:copy(div{{ pub.short_id }}, bib{{ pub.short_id }})">[Bibtex]</a>
-          <a href="javascript:copy(div{{ pub.short_id }}, abs{{ pub.short_id}})">[Abstract]</a>
-          <a href="{{ pub.pdf }}">[PDF]</a> -->
         </div>
         <div id="div{{ pub.short_id }}" class="pubInfo"></div>
         <div class='video_embed'>

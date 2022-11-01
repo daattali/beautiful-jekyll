@@ -63,3 +63,7 @@
   height: auto;
   width: auto;
 }
+
+.video_embed {
+  margin-top: 5px;
+}
