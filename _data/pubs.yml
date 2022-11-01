@@ -909,7 +909,7 @@
   title: <a href="https://arxiv.org/abs/2008.05626">Cloth Region Segmentation for
     Robust Grasp Selection</a>
   venue: International Conference on Intelligent Robots and Systems (IROS), 2020
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/iLgSz1PfVm0?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: 3D object trackers usually require training on large amounts of annotated data
     that is expensive and time-consuming to collect. Instead, we propose leveraging
     vast unlabeled datasets by self-supervised metric learning of 3D object trackers,
