@@ -8,7 +8,7 @@ share-img: /assets/img/path.jpg
 ---
 प्रिय पाठको ,
 
-        यथोचित अभिवादन !
+      यथोचित अभिवादन !
         
 आशा करता हूँ कि आप सभी स्वस्थ एवं सानंद होंगे। मैने
 अपने जीवन के इन 22 वसंतो में पाया है कि जीवन के शुरू
@@ -24,7 +24,7 @@ share-img: /assets/img/path.jpg
 इस सकारात्मकता और नकारात्मकता के बीच के द्वंद्व में बच्चें
 ही नहीं उनके माता-पिता भी पिस रहे हैं।
 
-बस सकारा त्मकता को और सुदृढ़ करने, नकारा त्मकता को दूर
+बस सकारात्मकता को और सुदृढ़ करने, नकारात्मकता को दूर
 भगाने, साथ ही साथ बच्चों में उनकी अपनी असली प्रतिभा
 को ढूंढने में मदद करने वाली 'आओ उड़ चलें' पत्रिका को
 बनाने का एक छोटा सा प्रयास किया गया है।
@@ -38,8 +38,3 @@ share-img: /assets/img/path.jpg
 
 धन्यवाद...!
 
-This is our institute's prospectus. It includes all the necessary information like Faculties, Fee structure and Facilities.
-<object data="/assets/img/AKASH%20INSTITUTE%20PROSPECTUS.pdf" type="application/pdf" width="700px" height="1400px">
-    <embed src="/assets/img/AKASH%20INSTITUTE%20PROSPECTUS.pdf">
-        <a href="/assets/img/AKASH%20INSTITUTE%20PROSPECTUS.pdf">Download PDF</a>
-</object>
