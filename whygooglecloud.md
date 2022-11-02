@@ -26,7 +26,7 @@ Then there is Google’s global network- the largest private network in the worl
 
 Routing traffic across Google’s private network reduces latency, leading to faster response times, and avoids the additional complexities and challenges of securing and maintaining traffic routing over the internet to components within another region. Google’s network currently spans datacenters across 35 regions (plus another 12 planned coming soon!).
 
-![Google Cloud Network Edge Points of Presence](assets/img/networkedgepointofpresence.png "Google Cloud Network Points of Presence")
+![Google Cloud Network Edge Points of Presence](/assets/img/networkedgepointofpresence.png "Google Cloud Network Points of Presence")
 *Google Cloud Network Points of Presence*
 
 ### Encryption
