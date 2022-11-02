@@ -505,6 +505,7 @@
   links:
     '[OpenReview]': https://openreview.net/forum?id=n1hDe9iK6ms
     '[PDF]': https://arxiv.org/pdf/2105.10389.pdf
+    '[Code]': https://github.com/Xingyu-Lin/VCD
   short_id: div2021vcd
   site: https://sites.google.com/view/vcd-cloth
   title: <a href="https://arxiv.org/abs/2105.10389">Learning Visible Connectivity
