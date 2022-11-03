@@ -6,7 +6,7 @@ subtitle: Docuseries providing an inside view of cyber security at Google
 thumbnail-img: /assets/img/Hacking-google-series.png
 share-img: /assets/img/Hacking-google-series.png
 readtime: true
-tags: [security, network, encryption]
+tags: [security, aurora]
 ---
 
 
