@@ -65,4 +65,4 @@ There are a myriad of addtional Google Cloud products and services available tha
 
 If you've made it this far, thanks for taking the time to read Cloud Babble's first blog! I hope you have enjoyed it. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
 
-Do reach out if you would like me to cover any particular areas of Google Cloud products, concepts or certifications.
+Do reach out if you would like me to cover any particular areas of Google Cloud products, concepts or certifications in future posts.
