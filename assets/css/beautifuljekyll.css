@@ -33,7 +33,8 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1.1;
 }
 h1 {
-  font-size: 2.25rem;
+  #font-size: 2.25rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 1.875rem;
@@ -177,7 +178,8 @@ img {
 .navbar-custom .navbar-brand-logo img,
 .navbar-custom.top-nav-short .navbar-brand-logo img,
 .navbar-custom.top-nav-short-permanent .navbar-brand-logo img {
-  height: 2.5rem;
+  #height: 2.5rem;
+  height: 4rem;
 }
 
 .navbar-custom .navbar-nav .nav-item {
@@ -748,7 +750,8 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .header-section.has-img .no-img {
   margin-top: 0;
   background-color: #FCFCFC;
-  margin: 0 0 2.5rem;
+  #margin: 0 0 2.5rem;
+  margin: 0 0 4rem;
   padding: 1.25rem 0;
   box-shadow: 0 0 0.3125rem #AAA;
 }
