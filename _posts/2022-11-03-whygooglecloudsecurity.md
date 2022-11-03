@@ -6,7 +6,7 @@ subtitle: "Part 1: Security"
 #thumbnail-img: /assets/img/thumb.png
 #share-img: /assets/img/path.jpg
 readtime: true
-tags: [security, network, encryption]
+tags: [security, network, encryption, GFE]
 ---
 
 In today’s world with the ever increasing volume and sophistication of cyber-attacks, when migrating your data and applications to the public cloud, you need to ensure you can trust your service provider to offer adequate security and strong protection for your data and systems. One of the great things about Google Cloud is their approach to security. Google have designed Google Cloud with protection of customers data at the forefront. In fact, many of the products and services offered by Google Cloud, are the same products and services Google have developed internally and used for many years to protect and run their own data and applications, used by billions of users globally for the likes of Google Search, Gmail, YouTube etc. With Google Cloud, security is baked into the platform from the ground up, rather than something that has been bolted on as an afterthought.
