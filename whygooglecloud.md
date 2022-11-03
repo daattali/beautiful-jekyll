@@ -21,13 +21,13 @@ Google takes defence in depth to the next level, from designing physical securit
 
 Then there is Google’s global network- the largest private network in the world, enabling customers to privately route traffic, globally without having to traverse the public internet. This network enables a single VPC to span multiple regions and can deliver more than 1Pbps total bisection bandwidth! 
 
-![Google Cloud Global Network Regions](/assets/img/regions.png "Google Cloud Global Regions")
-*Google Cloud Global Network Regions*
+![Google Cloud Network Edge Points of Presence](/assets/img/networkedgepointofpresence.png "Google Cloud Network Points of Presence")
+*Google Cloud Network Points of Presence*
 
 Routing traffic across Google’s private network reduces latency, leading to faster response times, and avoids the additional complexities and challenges of securing and maintaining traffic routing over the internet to components within another region. Google’s network currently spans datacenters across 35 regions (plus another 12 planned coming soon!).
 
-![Google Cloud Network Edge Points of Presence](/assets/img/networkedgepointofpresence.png "Google Cloud Network Points of Presence")
-*Google Cloud Network Points of Presence*
+![Google Cloud Global Network Regions](/assets/img/regions.png "Google Cloud Global Regions")
+*Google Cloud Global Network Regions*
 
 ### Encryption
 
