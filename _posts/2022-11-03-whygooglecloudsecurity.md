@@ -6,6 +6,9 @@ subtitle: "Part 1: Security"
 #thumbnail-img: /assets/img/thumb.png
 #share-img: /assets/img/path.jpg
 readtime: true
+#share-title:
+#share-description: share-description
+#share-img: /assets/img/path.jpg
 tags: [security, network, encryption, GFE]
 ---
 
