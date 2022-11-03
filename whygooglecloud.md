@@ -51,5 +51,5 @@ In June 2022, Google defended against the world’s largest known layer 7 HTTPS 
 
 ### Security Team
 
-Google Cloud’s security team engages in various security research across both Google Cloud and the wider community including various open source projects. They run Project Zero, which is a team of security researchers dedicated to researching zero-day vulnerabilities. This team discovered threats including the Spectre exploit, the Meltdown exploit, the POODLE SSL 3.0 exploit and cipher suite weaknesses. The team that protects Google’s own infrastructure, is the same team that protects every organisation on Google Cloud.
+Google’s security team engages in various security research across both Google and the wider community including various open source projects. They run Project Zero, which is a team of security researchers dedicated to researching zero-day vulnerabilities. This team discovered threats including the Spectre exploit, the Meltdown exploit, the POODLE SSL 3.0 exploit and cipher suite weaknesses. The team that protects Google’s own infrastructure, is the same team that protects every organisation on Google Cloud.
 
