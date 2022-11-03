@@ -33,8 +33,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1.1;
 }
 h1 {
-  #font-size: 2.25rem;
-  font-size: 4rem;
+  font-size: 2.25rem;
 }
 h2 {
   font-size: 1.875rem;
@@ -46,8 +45,7 @@ h4 {
   font-size: 1.125rem;
 }
 h1, h2, h3, h4 {
-  margin-top: 2.5rem;
-  #margin-top: 1.25rem;
+  margin-top: 1.25rem;
 }
 a {
   color: {{ site.link-col | default: "#008AFF" }};
@@ -179,8 +177,7 @@ img {
 .navbar-custom .navbar-brand-logo img,
 .navbar-custom.top-nav-short .navbar-brand-logo img,
 .navbar-custom.top-nav-short-permanent .navbar-brand-logo img {
-  #height: 2.5rem;
-  height: 40rem;
+  height: 2.5rem;
 }
 
 .navbar-custom .navbar-nav .nav-item {
@@ -232,7 +229,8 @@ img {
   }
 
   .navbar-custom .navbar-brand-logo img {
-    height: 3.125rem;
+    height: 10.125rem;
+    #height: 3.125rem;
   }
 
   .navbar-expand-xl .navbar-nav .nav-link {
