@@ -3,12 +3,12 @@ layout: post
 title: Why Google Cloud?
 subtitle: "Part 1: Security"
 #cover-img: /assets/img/path.jpg
-#thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
 #share-img: /assets/img/path.jpg
 readtime: true
 #share-title:
 #share-description: share-description
-#share-img: /assets/img/path.jpg
+share-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
 tags: [security, network, encryption, GFE]
 ---
 
