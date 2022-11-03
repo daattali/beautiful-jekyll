@@ -2,9 +2,9 @@
 layout: post
 title: Hacking Google
 subtitle: Docuseries providing an inside view of cyber security at Google
-#cover-img: /assets/img/path.jpg
-#thumbnail-img: /assets/img/thumb.png
-#share-img: /assets/img/path.jpg
+cover-img: /assets/img/hacking-google-series.png
+thumbnail-img: /assets/img/hacking-google-series.png
+share-img: /assets/img/hacking-google-series.png
 readtime: true
 tags: [security, network, encryption]
 ---
