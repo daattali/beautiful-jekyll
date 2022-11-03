@@ -51,5 +51,16 @@ In June 2022, Google defended against the world’s largest known layer 7 HTTPS 
 
 ### Security Team
 
-Google’s security team engages in various security research across both Google and the wider community including various open source projects. They run Project Zero, which is a team of security researchers dedicated to researching zero-day vulnerabilities. This team discovered threats including the Spectre exploit, the Meltdown exploit, the POODLE SSL 3.0 exploit and cipher suite weaknesses. The team that protects Google’s own infrastructure, is the same team that protects every organisation on Google Cloud.
+Google has various cyber security teams, each with their owm role and responsibility ranging from detection and response, to a dedicated red team who attack Google's infrastructure to test defences in the manner a real attacker would, through to a Project Zero team who are dedicated to researching zero-day vulnerabilities. 
 
+Google's security teams engage in various security research across both Google and the wider community including various open source projects. The Project Zero team is the team of security researchers dedicated to researching zero-day vulnerabilities. This team discovered threats including the Spectre exploit, the Meltdown exploit, the POODLE SSL 3.0 exploit and cipher suite weaknesses. 
+
+The good news is these cyber security teams that protect Google’s own infrastructure, are the same teams that protect every organisation on Google Cloud.
+
+### Conclusion
+
+I've focussed on some of the core, foundational security features of Google Cloud in this blog post as part of my 'Why Google Cloud' blog series. Security is one of several reasons I have for why Google Cloud- I'll be highlighting my other reasons 'Why Google Cloud' in coming blogs. 
+
+There are a myriad of addtional Google Cloud products and services available that provide further protection ranging from Identity and Access Management, Google Cloud Resource Hierarchy, VPC Networks, VPC Service controls, Google Cloud Operations i.e. elements that form the Landing Zone. Then there are other offerings like Security Command Center, Google's Zero Trust implementation with BeyondCorp Enterprise, Chronicle, Virus Total, Secret Manager, Identity Aware Proxy, Data Loss Protection API, Container Analysis, Binary Authorisation, Assured Open Source Software... I'll focus on some of these products in subsequent blogs in greater detail.
+
+If you've made it this far, thanks for taking the time to read my first blog! I hope you have enjoyed it. Please feel free to share, [subscribe]("https://www.cloudbabble.co.uk/subscribe") to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! Reach out if you would like me to cover any particular areas of Google Cloud products, concepts or certifications.
