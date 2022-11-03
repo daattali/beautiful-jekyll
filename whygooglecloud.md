@@ -59,7 +59,7 @@ The good news is these cyber security teams that protect Google’s own infrastr
 
 ### Conclusion
 
-I've focussed on some of the core, foundational security features of Google Cloud in this blog post as part of my 'Why Google Cloud' blog series. Security is one of several reasons I have for why Google Cloud- I'll be highlighting my other reasons 'Why Google Cloud' in coming blogs. 
+I've focussed on some of the core, foundational security features of Google Cloud in this blog post as part of my 'Why Google Cloud' blog series. Security is one of several reasons I have for 'Why Google Cloud'- I'll be highlighting my other reasons in coming blogs.
 
 There are a myriad of addtional Google Cloud products and services available that provide further protection ranging from Identity and Access Management, Google Cloud Resource Hierarchy, VPC Networks, VPC Service controls, Google Cloud Operations i.e. elements that form the Landing Zone. Then there are other offerings like Security Command Center, Google's Zero Trust implementation with BeyondCorp Enterprise, Chronicle, Virus Total, Secret Manager, Identity Aware Proxy, Data Loss Protection API, Container Analysis, Binary Authorisation, Assured Open Source Software... I'll focus on some of these products in subsequent blogs in greater detail.
 
