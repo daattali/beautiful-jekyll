@@ -66,17 +66,18 @@
   authors: Xingyu Lin*, Carl Qi*, Yunchu Zhang, Zhiao Huang, Katerina Fragkiadaki,
     Yunzhu Li, Chuang Gan, David Held
   award: null
-  bib: "@inproceedings{\n                        lin2022planning,\n              \
-    \          title={Planning with Spatial-Temporal Abstraction from Point Clouds\
-    \ for Deformable Object Manipulation},\n                        author={Xingyu\
-    \ Lin and Carl Qi and Yunchu Zhang and Yunzhu Li and Zhiao Huang and Katerina\
-    \ Fragkiadaki and Chuang Gan and David Held},\n                        booktitle={6th\
-    \ Annual Conference on Robot Learning},\n                        year={2022},\n\
-    \                        url={https://openreview.net/forum?id=tyxyBj2w4vw}\n \
-    \                       }"
+  bib: "@inproceedings{\n
+    \ lin2022planning,\n
+    \ title={Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation},\n 
+    \ author={Xingyu Lin and Carl Qi and Yunchu Zhang and Yunzhu Li and Zhiao Huang and Katerina Fragkiadaki and Chuang Gan and David Held},\n                        
+    \ booktitle={6th Annual Conference on Robot Learning},\n 
+    \ year={2022},\n
+    \ url={https://openreview.net/forum?id=tyxyBj2w4vw}\n
+    \ }"
   img: ../pics/2022_pasta.gif
   links:
-    '[PDF]': https://openreview.net/forum?id=tyxyBj2w4vw
+    '[OpenReview]': https://openreview.net/forum?id=tyxyBj2w4vw
+    '[PDF]': https://arxiv.org/pdf/2210.15751.pdf
   short_id: 2022corlpasta
   site: https://sites.google.com/view/pasta-plan
   title: <a href="https://sites.google.com/view/pasta-plan">Planning with Spatial-Temporal
