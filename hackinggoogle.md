@@ -1,4 +1,14 @@
-### Hacking Google
+---
+layout: post
+title: Hacking Google
+subtitle: Docuseries providing an inside view of cyber security at Google
+#cover-img: /assets/img/path.jpg
+#thumbnail-img: /assets/img/thumb.png
+#share-img: /assets/img/path.jpg
+readtime: true
+tags: [security, network, encryption]
+---
+
 
 Earlier this year, Google released a series on YouTube titled ‘Hacking Google’. A mini docuseries of 6 episodes going behind the scenes and providing an inside look at security at Google, including the Aurora attack in 2009 on Google’s network, how Google responded, the lessons learned, the different cybersecurity teams they have including Threat Analysis Group (TAG), the Red Team who attempt to hack into Google and give an example of how they targeted Google Glass, Bug Hunters and the Project Zero team I touched on above. 
 
