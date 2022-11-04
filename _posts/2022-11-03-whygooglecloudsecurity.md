@@ -6,8 +6,8 @@ subtitle: "Part 1: Security"
 thumbnail-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
 #share-img: /assets/img/path.jpg
 readtime: true
-#share-title:
-#share-description: share-description
+share-title: Why Google Cloud?
+share-description: My first blog post summarising why I choose Google Cloud, starting with Security.
 share-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
 tags: [security, network, encryption, GFE]
 ---
