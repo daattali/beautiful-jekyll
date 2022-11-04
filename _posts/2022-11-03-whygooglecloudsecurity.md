@@ -65,7 +65,7 @@ More info on this attack is available here on Google’s blog: [How Google Cloud
 
 ### Security Team
 
-Google has various cyber security teams, each with their owm role and responsibility ranging from detection and response, to a dedicated red team who attack Google's infrastructure to test defences in the manner a real attacker would, through to a Project Zero team who are dedicated to researching zero-day vulnerabilities. 
+Google has various cyber security teams, each with their owm role and responsibility ranging from detection and response, to a dedicated red team who attack Google's infrastructure to test defences in the same manner a real attacker would, through to a Project Zero team who are dedicated to researching zero-day vulnerabilities. 
 
 Google's security teams engage in various security research across both Google and the wider community including various open source projects. The Project Zero team discovered threats including the Spectre exploit, the Meltdown exploit, the POODLE SSL 3.0 exploit and cipher suite weaknesses. 
 
