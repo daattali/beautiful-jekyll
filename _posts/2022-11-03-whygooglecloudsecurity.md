@@ -58,7 +58,7 @@ The Google Front End (GFE) protects traffic destined for services within Google 
 
 In June 2022, Google defended against the world’s largest known layer 7 HTTPS DDoS attack which peaked at 46million requests per second. Google’s DDoS detection was so quick, it stopped the attack at Google’s edge avoiding customer impact. By configuring Adaptive Protection within their Cloud Armor security policy, the customer was alerted to the threat and Cloud Armor proposed a rule that could be deployed to quickly block the traffic before the attack ramped up and had chance to impact the application. 
 
-![Google Cloud DDoS 46m RPS Peak](/assets/img/DDoS_Attack_Graphic.jpeg "Google Cloud DDoS Attack Peak")
+![Google Cloud DDoS 46m RPS Peak](/assets/img/DDoS_Attack_Graphic.jpg "Google Cloud DDoS Attack Peak")
 *Google Cloud DDoS Attack Peak at 46million RPS*
 
 More info on this attack is available here on Google’s blog: [How Google Cloud blocked largest layer 7 DDoS attack at 46 million rps](https://cloud.google.com/blog/products/identity-security/how-google-cloud-blocked-largest-layer-7-ddos-attack-at-46-million-rps).
