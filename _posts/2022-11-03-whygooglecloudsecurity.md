@@ -20,6 +20,9 @@ A properly designed Google Cloud architecture can deliver better security than m
 
 Google takes defence in depth to the next level, from designing physical security across their global datacentres to custom building their own servers and hardware security chips. The Titan security chips are used for authentication at the hardware layer, serving as hardware roots of trust. All servers securely boot, with cryptographic signatures for baseboard management controllers, BIOS, bootloader, kernel and base operating system images. I can’t remember the exact position (within the top 5 I believe), but there is an interesting fact that Google is one of the largest server manufacturers globally despite not selling a single server which shows the scale of their infrastructure!
 
+![Google Cloud Titan Chip](/assets/img/titan-chip.png "Google Cloud Titan Chip")
+*Google Cloud Titan Security Chip*
+
 ### Global Network
 
 Then there is Google’s global network- the largest private network in the world, enabling customers to privately route traffic, globally without having to traverse the public internet. This network enables a single VPC to span multiple regions and can deliver more than 1Pbps total bisection bandwidth! 
