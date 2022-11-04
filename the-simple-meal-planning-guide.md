@@ -53,7 +53,7 @@ If so, **The Simple Meal Planning Guide** will help you never again to question 
 
 ## READY TO START YOUR SIMPLE MEAL PLANNING?
 
-Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's get started! **_Please note:_** _I'll email you a copy of **the Simple Meal Planning Guide** within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
+Click [HERE](https://www.etsy.com/ca/listing/1297532274/the-ultimate-simple-meal-planning-step?click_key=0130ee04abaee872fb0a176a3e097757406b02a6%3A1297532274&click_sum=dede6dab&ref=shop_home_active_12) to purchase! And let's get started! **_Please note:_** _I'll email you a copy of **the Simple Meal Planning Guide** within 24 hours! Email me at simplehomemom@gmail.com or find me_ [_@simplehomemom_](https://www.instagram.com/simplehomemom) _on Instagram if anything goes wonky with technology. Thanks! :)_
 
 ![A picture of a review of the simple meal planning guide.](/uploads/simple-meal-planning-guide-review-shm.jpg "Simple Meal Planning Guide Review SHM")
 
@@ -67,7 +67,9 @@ Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase! And let's g
 
 <br>
 
-## Want to start meal planning AND save some money? Click [HERE](https://buy.stripe.com/4gwcOWa4KcOM3AI000) to purchase the Simple Meal Planning Guide and let's get started!
+## Want to start meal planning AND save some money? 
+
+Click [HERE](https://www.etsy.com/ca/listing/1297532274/the-ultimate-simple-meal-planning-step?click_key=0130ee04abaee872fb0a176a3e097757406b02a6%3A1297532274&click_sum=dede6dab&ref=shop_home_active_12) to purchase the Simple Meal Planning Guide and let's get started!
 
 <br>
 
