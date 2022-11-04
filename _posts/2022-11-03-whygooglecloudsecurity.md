@@ -56,7 +56,12 @@ I’ll be covering more on encryption and certificate services in a deep dive te
 
 The Google Front End (GFE) protects traffic destined for services within Google Cloud from the internet with Cloud Armor. Before traffic reaches a customer’s VPC network, it must route via the GFE (unless a customer has exposed a service directly to the internet with a public IP/not using a Google Cloud load balancer). Here the GFE ensures that all TLS connections are terminated with correct certificates and following best practices such as supporting perfect forward secrecy, in addition to protecting customers from DDoS attacks. As traffic routes through load balancers in the GFE, incoming traffic information is sent to a central DoS service. When the DoS service detects an attack, it can configure the load balancers to throttle or drop the attack traffic. The scale of Google’s infrastructure means it can absorb virtually any size DoS attack before it impacts the customers application.
 
-In June 2022, Google defended against the world’s largest known layer 7 HTTPS DDoS attack which peaked at 46million requests per second. Google’s DDoS detection was so quick, it stopped the attack at Google’s edge avoiding customer impact. By configuring Adaptive Protection within their Cloud Armor security policy, the customer was alerted to the threat and Cloud Armor proposed a rule that could be deployed to quickly block the traffic before the attack ramped up and had chance to impact the application. More info on this attack is available here on Google’s blog: [How Google Cloud blocked largest layer 7 DDoS attack at 46 million rps](https://cloud.google.com/blog/products/identity-security/how-google-cloud-blocked-largest-layer-7-ddos-attack-at-46-million-rps).
+In June 2022, Google defended against the world’s largest known layer 7 HTTPS DDoS attack which peaked at 46million requests per second. Google’s DDoS detection was so quick, it stopped the attack at Google’s edge avoiding customer impact. By configuring Adaptive Protection within their Cloud Armor security policy, the customer was alerted to the threat and Cloud Armor proposed a rule that could be deployed to quickly block the traffic before the attack ramped up and had chance to impact the application. 
+
+![Google Cloud DDoS 46m RPS Peak](/assets/img/DDoS_Attack_Graphic.jpeg Google Cloud DDoS Attack Peak")
+*Google Cloud DDoS Attack Peak at 46million RPS*
+
+More info on this attack is available here on Google’s blog: [How Google Cloud blocked largest layer 7 DDoS attack at 46 million rps](https://cloud.google.com/blog/products/identity-security/how-google-cloud-blocked-largest-layer-7-ddos-attack-at-46-million-rps).
 
 ### Security Team
 
