@@ -43,6 +43,9 @@ Google Cloud also provides hardware security modules to protect your keys and Cl
 
 All traffic between the user and the Google Front End is secured using TLS. This encryption in transit protects your data if communications are intercepted, by encrypting the data before transmission, authenticating the endpoints, and decrypting and verifying that the data was not modified on arrival.
 
+![Google Cloud Default Encryption at Rest](/assets/img/Encryption-at-rest-default-google-cloud.png "Google Cloud Default Encryption at Rest")
+*Google Cloud Defaut Encryption at Rest*
+
 Google also developed the Application Layer Transport Security (ALTS) protocol for securing RPC communications within Google’s infrastructure. This is similar to mutual TLS (mTLS) but optimized to meet the needs of Google’s datacentre environments.
 
 Confidential Computing provides encryption in use protection- data in memory is protected from compromise or exfiltration by encrypting the data whilst being processed. Confidential Computing enables customers to achieve encryption in use without needing to make any application code changes or compromise performance.
