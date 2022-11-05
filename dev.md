@@ -51,9 +51,15 @@ subtitle: A lot of lines...
 
 - [Model 1](https://numer.ai/scobruone)
 - [Model 2](https://numer.ai/scobrutwo)
+- [Model 3](https://numer.ai/scobruthree)
+- [Model 4](https://numer.ai/scobrufour)
 - [Model 5](https://numer.ai/scobrufive)
+- [Model 6](https://numer.ai/scobrusix)
 - [Model 7](https://numer.ai/scobruseven)
+- [Model 8](https://numer.ai/scobrueight)
 - [Model 9](https://numer.ai/scobrunine)
+- [Model 10](https://numer.ai/scobruten)
+
 
 ---
 
