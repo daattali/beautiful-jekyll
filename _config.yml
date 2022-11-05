@@ -149,8 +149,8 @@ footer-hover-col: "#0085A1"
 mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-- "/assets/css/staticman.css"
+site-css:
+  - "/assets/css/staticman.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
