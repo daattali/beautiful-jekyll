@@ -14,6 +14,14 @@ subtitle: A lot of lines...
 
 ---
 
+### ✔️ Testing
+
+- [Dharma Initiative](https://dharmainitiative.netlify.com)
+- [Formulae](https://formulae-nft.netlify.com)
+- [Dharmandala](https://dharmandala.netlify.com)
+
+---
+
 ### ✔️ Nali Project
 
 
