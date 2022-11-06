@@ -8,12 +8,21 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {{ content }}
-	    {% if page.comments %}
+      {% if page.comments %}
         <div class="disqus-comments">
-	        {% include disqus.html %}
+          {% include disqus.html %}
         </div>
-	        {% include fb-comment.html %}
-	    {% endif %}
+          {% include fb-comment.html %}
+      {% endif %}
+      {% if include.type == "post" %}
+        <span class="post-meta">
+          {% if page.modified-date %}
+            {{ page.modified-date}}
+          {% else %}
+            {{ page.date | date: "%B %-d, %Y" }}
+          {% endif %}
+        </span>
+      {% endif %}
     </div>
   </div>
 </div>
