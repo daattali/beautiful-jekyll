@@ -33,19 +33,38 @@
   title: 'TAX-Pose: Task-Specific Cross-Pose Estimation for Robot Manipulation'
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1GTEXuk1TEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-- abs: null
+- abs: "Point clouds are a widely available and canonical data modality which
+      \ conveys the 3D geometry of a scene. Despite significant progress in classifica-
+      \ tion and segmentation from point clouds, policy learning from such a modality
+      \ remains challenging, and most prior works in imitation learning focus on learn-
+      \ ing policies from images or state information. In this paper, we propose a novel
+      \ framework for learning policies from point clouds for robotic manipulation with
+      \ tools. We use a novel neural network, ToolFlowNet, which predicts dense per-
+      \ point flow on the tool that the robot controls, and then uses the flow to derive the
+      \ transformation that the robot should execute. We apply this framework to imita-
+      \ tion learning of challenging deformable object manipulation tasks with continuous
+      \ movement of tools, including scooping and pouring, and demonstrate significantly
+      \ improved performance over baselines which do not use flow. We perform 50 phys-
+      \ ical scooping experiments with ToolFlowNet and attain 82% scooping success.
+      \ See https://tinyurl.com/toolflownet for supplementary material."
   authors: "Daniel Seita, Yufei Wang\u2020, Sarthak J Shetty\u2020, Edward Yao Li\u2020\
     , Zackory Erickson, David Held"
   award: null
-  bib: null
-  img: ../pics/cropped-CoRL2022-1.png
-  links: {}
-  short_id: null
-  site: null
+  bib: "@inproceedings{Seita2022toolflownet,\n
+    \ title={{ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from Point Clouds}},\n
+    \ author={Seita, Daniel and Wang, Yufei and Shetty, Sarthak, and Li, Edward and Erickson, Zackory and Held, David},\n
+    \ booktitle={Conference on Robot Learning (CoRL)},\n
+    \ year={2022}\n
+    \ }"
+  img: ../pics/toolflownet.gif
+  links: 
+      '[OpenReview]': https://openreview.net/forum?id=2gfB_kMVFvP
+  short_id: 2022corltoolflownet
+  site: https://sites.google.com/view/point-cloud-policy
   title: 'ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from
     Point Clouds'
   venue: Conference on Robot Learning (CoRL), 2022
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://youtu.be/cJbtqOAGyI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: "Effective planning of long-horizon deformable object manipulation requires\
     \ suitable \n                    abstractions at both the spatial and temporal\
     \ levels. \n                    Previous methods typically either focus on short-horizon\
