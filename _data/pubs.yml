@@ -64,7 +64,7 @@
   title: 'ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from
     Point Clouds'
   venue: Conference on Robot Learning (CoRL), 2022
-  video_embed: <iframe width="560" height="315" src="https://youtu.be/cJbtqOAGyI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cJbtqOAGyI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: "Effective planning of long-horizon deformable object manipulation requires\
     \ suitable \n                    abstractions at both the spatial and temporal\
     \ levels. \n                    Previous methods typically either focus on short-horizon\
