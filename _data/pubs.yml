@@ -11,17 +11,40 @@
 #   title: null
 #   venue: null
 #   video_embed: null
-- abs: null
+- abs: A simple gripper can solve more complex manipulation tasks if it can utilize 
+    the external environment such as pushing the object against the table or a vertical 
+    wall, known as "Extrinsic Dexterity." Previous work in extrinsic dexterity usually 
+    has careful assumptions about contacts which impose restrictions on robot design, 
+    robot motions, and the variations of the physical parameters. In this work, we 
+    develop a system based on reinforcement learning (RL) to address these limitations. 
+    We study the task of “Occluded Grasping” which aims to grasp the object in 
+    configurations that are initially occluded; the robot needs to move the object into 
+    a configuration from which these grasps can be achieved. We present a system with 
+    model-free RL that successfully achieves this task using a simple gripper with 
+    extrinsic dexterity. The policy learns emergent behaviors of pushing the object 
+    against the wall to rotate and then grasp it without additional reward terms on 
+    extrinsic dexterity. We discuss important components of the system including the 
+    design of the RL problem, multi-grasp training and selection, and policy 
+    generalization with automatic curriculum. Most importantly, the policy trained in 
+    simulation is zero-shot transferred to a physical robot. It demonstrates dynamic 
+    and contact-rich motions with a simple gripper that generalizes across objects 
+    with various size, density, surface friction, and shape with a 78% success rate.
   authors: Wenxuan Zhou, David Held
   award: <award>Oral Presentation</award>  (Selection rate 6.5%)
-  bib: null
-  img: ../pics/cropped-CoRL2022-1.png
-  links: {}
+  bib: "@inproceedings{zhou2022ungraspable,\n
+    \ title={{Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity}},\n
+    \ author={Zhou, Wenxuan and Held, David},\n
+    \ booktitle={Conference on Robot Learning (CoRL)},\n
+    \ year={2022}\n
+    \ }"
+  img: ../pics/ungraspable.gif
+  links:
+    '[arXiv]': https://arxiv.org/abs/2211.01500
   short_id: null
-  site: null
+  site: https://sites.google.com/view/grasp-ungraspable
   title: Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity
   venue: Conference on Robot Learning (CoRL), 2022
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZEPiwF18mA" title="Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: null
   authors: Chuer Pan*, Brian Okorn*, Harry Zhang*, Ben Eisner*, David Held
   award: null
