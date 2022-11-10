@@ -3,12 +3,11 @@ layout: page
 title: About
 subtitle: What is Fur Squared all about?
 ---
-
 Fur Squared is a furry convention typically held in Brookfield, WI\!
 
-### Q: Will there be a Fur Squared in 2022?
+### Q: Will there be a Fur Squared in 2023?
 
-Yes on April 14 - 17, 2022 at the Sheraton Milwaukee Brookfield Hotel, where we've always been\!
+Yes\!&nbsp; We're almost probably very likely going to be Easter weekend 2023 at the Sheraton Milwaukee Brookfield Hotel, where we've always been\!
 
 ### Q: What is your COVID-19 policy?
 
