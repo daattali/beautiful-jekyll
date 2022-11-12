@@ -39,6 +39,11 @@ Google have also set ambitious targets to achieve by 2030 including:
 - Enable 5 gigawatts of new carbon-free energy through investments in Google's key manufacturing regions.
 - Help more than 500 cities and local governments reduce an aggregate of 1 gigaton of carbon emissions annually.
 
+![Google's Energy Journey]("/assets/img/Googles-energy-journey.jpg" "Google's Energy Journey")
+
+***Google's Energy Journey*** 
+[Image Source: Google](https://sustainability.google/progress/energy/)
+
 ## Efficient Data Centers
   - On average, Google Datacenters are 2x as energy efficient as a typical enterprise data center.
   - Compared to 5 years ago, Google now generates around 6 times as much computing power with the same amount of electrical power.
