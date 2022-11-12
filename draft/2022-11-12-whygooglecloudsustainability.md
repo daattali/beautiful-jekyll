@@ -39,7 +39,7 @@ Google have also set ambitious targets to achieve by 2030 including:
 - Enable 5 gigawatts of new carbon-free energy through investments in Google's key manufacturing regions.
 - Help more than 500 cities and local governments reduce an aggregate of 1 gigaton of carbon emissions annually.
 
-![Google's Energy Journey]("/assets/img/Googles-energy-journey.jpg" "Google's Energy Journey")
+![Google's Energy Journey](/assets/img/Googles-energy-journey.jpg "Google's Energy Journey")
 
 ***Google's Energy Journey*** 
 [Image Source: Google](https://sustainability.google/progress/energy/)
