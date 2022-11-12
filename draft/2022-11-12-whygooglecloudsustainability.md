@@ -76,7 +76,7 @@ Alternatively, within the Google Cloud console, a green leaf icon and 'low CO2' 
 
 ## 9 Recommendedations To Minimise Carbon Emissions 
 
-Below are eight approaches I recommend as part of a migration/deployment to Google Cloud to minimise carbon emissions associated with your workloads.
+Below are nine approaches I recommend as part of a migration/deployment to Google Cloud to minimise carbon emissions associated with your workloads.
 
 1. Deploy application workloads to regions with higher CFE ratings to reduce their carbon footprint.
 2. Run batch jobs in regions with the highest CFE ratings to reduce their carbon footprint. Bathc jobs have the benefit of running on a schedule and can therefore be planned to run in the lowest carbon emitting regions, maximising carbon emission savings.
