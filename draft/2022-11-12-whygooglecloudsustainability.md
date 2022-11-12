@@ -3,12 +3,12 @@ layout: post
 title: Why Google Cloud?
 subtitle: "Part 2: Sustainability"
 #cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
-#share-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/Green-Google-Logo.jpg
+share-img: /assets/img/Green-Google-Logo.jpg
 readtime: true
 share-title: Why Google Cloud?
 share-description: Sustainability- In this blog I list 9 ways to reduce your carbon emissions when migrating to Google Cloud and highlight the success Google has had to date contributing towards achieving net-zero. Google has been a leader in sustainability for a long time. They're striving for net-zero carbon emissions, and creating technologies to help other organisations reduce their carbon footprint too.
-share-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
+share-img: /assets/img/Green-Google-Logo.jpg
 tags: [sustainability, carbon emmissions, energy, cfe%]
 ---
 Hello, welcome to my blog series on ‘Why Google Cloud?’ This is my second blog in the series, focusing on sustainability. If you have missed the first blog on Security it is available to read here [Why Google Cloud Part 1: Security](https://www.cloudbabble.co.uk/2022-11-03-whygooglecloudsecurity).
