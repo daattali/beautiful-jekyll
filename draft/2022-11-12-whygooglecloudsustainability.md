@@ -50,8 +50,8 @@ Google have also set ambitious targets to achieve by 2030 including:
   - In 2020 the average annual PUE for Google was 1.10 compared with industry average of 1.59 meaning that Google data centers use about six times less overhead energy.
   - Through applying Machine Learning, Google have been able to reduce the cooling energy required for their data centers by 40%.
   
-### Green House Gas
-  - 0 operational GHG emissions. Whether someone is using Google at home or as part of an organization running Google Cloud or Google Workspace, all products in Google Cloud are carbon neutral, meaning that the operational GHG emissions associated with running workloads on Google's infrastructure have been reduced through procurement of renewable energy and any residual emissions have been compensated for with high-quality carbon credits.
+### Green House Gas (GHG)
+  - Zero operational GHG emissions: Whether someone is using Google at home or as part of an organization running Google Cloud or Google Workspace, all products in Google Cloud are carbon neutral, meaning that the operational GHG emissions associated with running workloads on Google's infrastructure have been reduced through procurement of renewable energy and any residual emissions have been compensated for with high-quality carbon credits.
 
 ### Waste
   - 78% of waste from global data center operations is diverted away from landfill.
