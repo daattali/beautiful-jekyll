@@ -62,13 +62,17 @@ Google Cloud publishes Carbon Free Energy percentage (CFE%) metrics for all regi
 - [On Github](https://github.com/GoogleCloudPlatform/region-carbon-info)
 - [On BigQuery as a public dataset](https://console.cloud.google.com/marketplace/product/bigquery-public-datasets/regional-cfe?_ga=2.120231425.845394051.1668196466-99251301.1630672239)
 
+![Google Cloud Carbon Free Energy Percentage Global Map](/assets/img/Carbon-free-energy-map.jpg "Carbon Free Energy Global Map")
+
+***Google Cloud Carbon Free Energy Percentage (CFE%) Global Map*** 
+[Image Source: Google](https://sustainability.google/progress/energy/)
+
 Alternatively, within the Google Cloud console, a green leaf icon and 'low CO2' next to a region indicates a region with a CFE% of at leeast 75% (8 regions currently have CFE% greater than 75%). Selecting a Google CLoud Region with a higher CFE% rating can help further reduce carbon emissions than deploying infrastructure in a region with a lower CFE%.
 
 ![Google Cloud Carbon Free Energy Percentage CFE%](/assets/img/Cloud_Run_region_selector.max-700x700.jpg "Carbon Free Energy Green Leaf")
 
 ***Google Cloud Carbon Free Energy Percentage (CFE%)*** 
-
-[Source https://cloud.google.com/blog/topics/sustainability/pick-the-google-cloud-region-with-the-lowest-co2](https://cloud.google.com/blog/topics/sustainability/pick-the-google-cloud-region-with-the-lowest-co2)
+[Image Source: Google](https://cloud.google.com/blog/topics/sustainability/pick-the-google-cloud-region-with-the-lowest-co2)
 
 ## 9 Recommendedations To Minimise Carbon Emissions 
 
