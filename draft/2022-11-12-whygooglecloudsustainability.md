@@ -25,7 +25,7 @@ Google were the first major company to become carbon neutral in 2007. Organisati
 ## Matched Energy Usage with Renewable Energy 2017
 10 years later in 2017, Google became the first major company to match their energy use with 100% renewable energy, and have continued to do so for 5 consecutive years.
 
-## $5.75 billion Sustainability Bonds 2020
+## $5.75 Billion Sustainability Bonds 2020
 In 2020 Google issued $5.75 billion in sustainability bonds- the largest sustainability issuance by any company in history. Sustainability, or green bonds are issued where proceeds are used to finance or re-finance a combintion of green and social projects. 
 
 ## Carbon Neutral Legacy Footprint 2020
@@ -100,7 +100,7 @@ In 2021, Google analysed the aggregate data from all customers across Google Clo
 
 To help organisations tidy up unused projects, Google's AIOps has created Active Assist which uses data, intelligence and machine learning to identify unused projects and alert organisations to help achieve sustainability targets and reduce carbon footprints of the unused workloads. This comes with the added bonus of reducing unnecssary costs!
 
-## Investing in innovators to tackle climate change
+## Investing In Innovators To Tackle Climate Change
 
 Beyond Google's own tools and programs, Google also invests in promising initiatives that aim to create scalable, high-impact climate solutions. Google.org, Google's charitable arm, is providing catalytic funding to innovative projects around the world including:
 
