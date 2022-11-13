@@ -554,7 +554,7 @@
   title: <a href="https://arxiv.org/abs/2105.10389">Learning Visible Connectivity
     Dynamics for Cloth Smoothing</a>
   venue: Conference on Robot Learning (CoRL), 2021
-  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/S5RsQTdr5d8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/QgRrHeKylhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: We address the problem of goal-directed cloth manipulation, a challenging task
     due to the deformability of cloth. Our insight is that optical flow, a technique
     normally used for motion estimation in video, can also provide an effective representation
