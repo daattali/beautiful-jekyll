@@ -4,33 +4,16 @@
 title: Fur Squared
 
 # Short description of your site
-description: "Fur Squared 2021: February 26 - 28"
+description: "Fur Squared 2023: Coming Soon!"
 
 # Your name to show in the footer
 author: Fur Squared
 
-url: "https://fursquared.com"
+url: "https://fursquared.ovhan.net"
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About: "about"
-  Code of Conduct: "code-of-conduct"
-  Covid Policy: "covid-policy"
-  Hotel: "hotel"
-  Registration: "registration"
-  Programming: "programming"
-  #Schedule: "schedule"
-  Theme: "theme"
-  #Dealers & Artists: "dealers"
-  Dealers: "dealers"
-  Artists: "artist-alley"
-  #  Staff: "staff"
-  Volunteer: "volunteer"
-  #Store: "https://fursquared.square.site/"
-  Contact: "contact"
-    #  Social Media:
-    #    - Twitter: "https://twitter.com/fursquared"
 
 # --- Logo --- #
 
@@ -103,11 +86,11 @@ navbar-text-col: "#64CE70"
 navbar-logo-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
 
-page-col: "#20133a"
-page-text-col: "#ffffff"
+page-col: "#F8E780"
+page-text-col: "#417F5E"
 header-col: "#64CE70"
-link-col: "#64CE70"
-hover-col: "#C5EDCA"
+link-col: "#F05123"
+hover-col: "#f37a58"
 selection-col: "#20133a"
 selection-bg-col: "#64CE70"
 
@@ -116,12 +99,12 @@ button-bg-col: "#64CE70"
 button-hover-col: "#2a194d"
 button-bg-hover-col: "#FFFFFF"
 
-footer-col: "#2a194d"
-footer-text-col: "#64CE70"
-footer-link-col: "#64CE70"
-footer-icon-col: "#2a194d"
-footer-icon-fill-col: "#64CE70"
-footer-icon-hover-col: "#2a194d"
+footer-col: "#F8E780"
+footer-text-col: "#417F5E"
+footer-link-col: "#F05123"
+footer-icon-col: "#FFFFFF"
+footer-icon-fill-col: "#417F5E"
+footer-icon-hover-col: "#417F5E"
 footer-icon-fill-hover-col: "white"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
@@ -130,7 +113,7 @@ footer-icon-fill-hover-col: "white"
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
-blog-img: "/assets/img/f2-2022-card-dates.jpg"
+blog-img: "/assets/img/furassic-park-logo-colored-min.png"
 
 # --- Web Statistics Section --- #
 
