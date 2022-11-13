@@ -61,7 +61,7 @@ Google have also set ambitious targets to achieve by 2030 including:
 # How Can Google Cloud Help Improve My Carbon Footprint
 Organisations migrating to Google Cloud benefit from all of the above when it comes to measuring carbon emissions. As a result, simply migrating applicaitons to Google Cloud can result in significant reductions in the workloads carbon emissions. However, there are various actions organisations can take during migration to Google Cloud that can result in further lowering the carbon footprint of workloads.
 
-Google Cloud publishes Carbon Free Energy percentage (CFE%) metrics for all regions. This metric shows how often a region is supplied with carbon free energy on an hourly basis. This values are published:
+Google Cloud publishes Carbon Free Energy percentage (CFE%) metrics for all regions. This metric shows how often a region is supplied with carbon free energy on an hourly basis. These values are published:
 
 - [On Google Docs](https://cloud.google.com/sustainability/region-carbon)
 - [On Github](https://github.com/GoogleCloudPlatform/region-carbon-info)
@@ -79,7 +79,7 @@ Alternatively, within the Google Cloud console, a green leaf icon and 'low CO2' 
 ***Google Cloud Carbon Free Energy Percentage (CFE%)*** 
 [Image Source: Google](https://cloud.google.com/blog/topics/sustainability/pick-the-google-cloud-region-with-the-lowest-co2)
 
-## 9 Recommendedations To Minimise Carbon Emissions 
+## 9 Recommendations To Minimise Carbon Emissions 
 
 Below are nine approaches I recommend as part of a migration/deployment to Google Cloud to minimise carbon emissions associated with your workloads.
 
