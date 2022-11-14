@@ -35,7 +35,7 @@ In 2020 Google also compensated their legacy carbon footprint, making Google the
 Google have also set ambitious targets to achieve by 2030 including:
 
 - To run on carbon free energy 24/7, across all data centers and campuses worldwide.
-- Achieve net-zero emissions across all their operations and value chaing.
+- Achieve net-zero emissions across all their operations and value chain.
 - Enable 5 gigawatts of new carbon-free energy through investments in Google's key manufacturing regions.
 - Help more than 500 cities and local governments reduce an aggregate of 1 gigaton of carbon emissions annually.
 
@@ -45,7 +45,7 @@ Google have also set ambitious targets to achieve by 2030 including:
 [Image Source: Google](https://sustainability.google/progress/energy/)
 
 ## Efficient Data Centers
-  - On average, Google Datacenters are 2x as energy efficient as a typical enterprise data center.
+  - On average, Google data centers are 2x as energy efficient as a typical enterprise data center.
   - Compared to 5 years ago, Google now generates around 6 times as much computing power with the same amount of electrical power.
   - In 2020 the average annual PUE for Google was 1.10 compared with industry average of 1.59 meaning that Google data centers use about six times less overhead energy.
   - Through applying Machine Learning, Google have been able to reduce the cooling energy required for their data centers by 40%.
@@ -59,7 +59,7 @@ Google have also set ambitious targets to achieve by 2030 including:
   - 8.2 million components were wiped clean and resold into the secondary market for reuse by other organisations in 2020.
 
 # How Can Google Cloud Help Improve My Carbon Footprint
-Organisations migrating to Google Cloud benefit from all of the above when it comes to measuring carbon emissions. As a result, simply migrating applicaitons to Google Cloud can result in significant reductions in the workloads carbon emissions. However, there are various actions organisations can take during migration to Google Cloud that can result in further lowering the carbon footprint of workloads.
+Organisations migrating to Google Cloud benefit from all of the above when it comes to measuring carbon emissions. As a result, simply migrating applicaitons to Google Cloud can result in a significant reduction in the workloads carbon emissions. However, there are various actions organisations can take during migration to Google Cloud that can result in further lowering the carbon footprint of workloads.
 
 Google Cloud publishes Carbon Free Energy percentage (CFE%) metrics for all regions. This metric shows how often a region is supplied with carbon free energy on an hourly basis. These values are published:
 
