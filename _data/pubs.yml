@@ -40,7 +40,7 @@
   img: ../pics/ungraspable.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2211.01500
-  short_id: null
+  short_id: 2022corlungraspable
   site: https://sites.google.com/view/grasp-ungraspable
   title: Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity
   venue: Conference on Robot Learning (CoRL), 2022
