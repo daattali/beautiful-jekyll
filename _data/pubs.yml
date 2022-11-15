@@ -228,10 +228,16 @@
     physically assistive tasks with cloth.
   authors: Yufei Wang, David Held, Zackory Erickson
   award: null
-  bib: "@inproceedings{wang2022,\n    title={Visual Haptic Reasoning: Estimating Contact\
-    \ Forces by Observing Deformable Object Interactions},\n    author={Yufei Wang,\
-    \ David Held, and Zackory Erickson},\n    booktitle={IEEE/RSJ International Conference\
-    \ on Intelligent Robots and Systems (IROS)},\n    year={2022},\n    }"
+  bib: "@article{wang2022visual, \n
+  \ title={Visual Haptic Reasoning: Estimating Contact Forces by Observing Deformable Object Interactions}, \n
+  \ author={Wang, Yufei and Held, David and Erickson, Zackory}, \n
+  \ journal={IEEE Robotics and Automation Letters}, \n
+  \ volume={7}, \n
+  \ number={4}, \n
+  \ pages={11426--11433}, \n
+  \ year={2022}, \n
+  \ publisher={IEEE} \n
+  \ }"
   img: ../pics/visual-haptic-reasoning-IROS.gif
   links: 
     '[PDF]': https://arxiv.org/pdf/2208.05632.pdf 
