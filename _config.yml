@@ -5,6 +5,16 @@
 ### the initial set up you won't need to come back to this file often.
 ###########################################################
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7JWE81MG83"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7JWE81MG83');
+</script>
+
 ############################
 # --- Required options --- #
 ############################
