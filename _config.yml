@@ -10,21 +10,27 @@
 ############################
 
 # Name of website
-title: My Website
+title: My Tech Blog
 
 # Your name to show in the footer
-author: Some Person
+author: Dahee Lee
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  TIL: "Frontend"
+  Frontend:
+    - React.js: "Frontend"
+    - Vue.js: "https://beautifuljekyll.com"
+  Spring:
+    - 스프링 입문: "https://beautifuljekyll.com"
+    - 스프링 핵심 원리: "https://www.markdowntutorial.com/"
+    - 전문가를 위한 스프링5: "https://www.markdowntutorial.com/"
+  Side Project: "https://deanattali.com"
+  
+  
 
 ################
 # --- Logo --- #
@@ -49,13 +55,13 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "daheewa128@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+#  facebook: deanattali
+  github: dhlee128
+#  twitter: daattali
+#  patreon: DeanAttali
+#  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -87,14 +93,14 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
+  twitter: false
+  facebook: false
+  linkedin: false
   vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "https://dhlee128.github.io/"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
