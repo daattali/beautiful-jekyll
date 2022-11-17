@@ -23,6 +23,8 @@ layout: page
 
 ## Working papers and reports
 
+Martin, J., **E. Dimanchev**, and A. Neumann. 2022. [Carbon Abatement Costs for Hydrogen Fuels in Hard-to-Abate Transport Sectors and Potential Climate Policy Mixes](https://ceepr.mit.edu/carbon-abatement-costs-for-hydrogen-fuels-in-hard-to-abate-transport-sectors-and-potential-climate-policy-mixes/). MIT CEEPR Working Paper 2022-017.
+
 **Dimanchev, E.**, and C. R. Knittel. 2020. [Trade-offs in Climate Policy: Combining Low- Carbon Standards with Modest Carbon Pricing](https://ceepr.mit.edu/workingpaper/trade-offs-in-climate-policy-combining-low-carbon-standards-with-modest-carbon-pricing/). MIT CEEPR Working Paper 2020-020. (Related: short [Research Brief](https://ceepr.mit.edu/wp-content/uploads/2021/09/2020-020-Brief.pdf)).
 
 **Dimanchev, E.**, J. Hodge, J. Parsons. 2020. [Two-Way Trade in Green Electrons: Deep Decarbonization of the Northeastern U.S. and the Role of Canadian Hydropower](https://ceepr.mit.edu/workingpaper/two-way-trade-in-green-electrons-deep-decarbonization-of-the-northeastern-u-s-and-the-role-of-canadian-hydropower/). MIT CEEPR Working Paper 2020-003. (Related: Presentation [recording](https://youtu.be/RI13YmaVvmk); short [Research Brief](https://ceepr.mit.edu/wp-content/uploads/2021/09/2020-003-Brief.pdf)).
