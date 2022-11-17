@@ -4,8 +4,6 @@ title: Robot Demos
 subtitle:
 ---
 
-<div style='margin-bottom: 10px'>This page is under construction, more video demos will be added shortly.</div>
-
 <table>
 {% for pub in site.data.pubs %}
   {% if pub.video_embed %}
