@@ -23,7 +23,7 @@ navbar-links:
   Home: "/"
   Members: "members"
   Publications: "publications"
-  Demos: "demos"
+  Robot Demos: "demos"
   # About Me: "aboutme"
   # Resources:
     # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
