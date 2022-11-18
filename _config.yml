@@ -142,7 +142,7 @@ navbar-col: "#3d494d" #former:2b6777
 navbar-text-col: "ffffff" # former F1F1E7
 navbar-border-col: "ffffff" #"#DDDDDD"
 page-col: "#f0e7ce"
-text-col: "#404040"
+text-col: "#000000"
 link-col: "#2b6777"
 hover-col: "#0085A1"
 footer-col: "#3d494d"
