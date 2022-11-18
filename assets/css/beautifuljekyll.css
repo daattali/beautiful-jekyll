@@ -213,7 +213,7 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
-  color: {{ site.navbar-text-col | default: "#404040" }};
+  color: {{ site.navbar-text-col | default: "#ffffff" }};
 }
 
 .navbar-toggler {
@@ -284,7 +284,7 @@ img {
   text-decoration: none !important;
   border-width: 0 1px 1px 1px;
   font-weight: normal;
-  color: {{ site.navbar-text-col | default: "#404040" }};
+  color: "#ffffff";/*{{ site.navbar-text-col | default: "#404040" }};
 }
 
 @media (min-width: 1200px) {
