@@ -1,82 +1,96 @@
 ---
 layout: post
 title: Why Google Cloud?
-subtitle: "Part 1: Security"
+subtitle: "Part 3: Open Source Offerings, Innovation, Support, Contributions, Kubernetes, and Anthos Multicloud"
 #cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
 #share-img: /assets/img/path.jpg
 readtime: true
-share-title: Why Google Cloud?
-share-description: My first blog post summarising why I choose Google Cloud, starting with Security.
+share-title: "Why Google Cloud? Part 3: Open Source: Offerings, Innovation, Support, Contributions, Kubernetes, and Anthos Multicloud"
+share-description: "Read how Google releases to open source innovative products, and how open source helps organisations reduce the risk of vendor lock-in and helps make multicloud a little less complex"
 share-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
-tags: [security, network, encryption, GFE]
+tags: [open source, kubernetes, GKE, Istio, Anthos, multicloud, vendor lock-in]
 ---
 
-In today’s world with the ever increasing threat, volume and sophistication of cyber-attacks, when migrating your data and applications to the public cloud, you need to ensure you can trust your service provider to offer adequate security and strong protection for your data and systems. One of the great things about Google Cloud is their approach to security. Google have designed Google Cloud with protection of customers data at the forefront. In fact, many of the products and services offered by Google Cloud, are the same products and services Google have developed internally and used for many years to protect and run their own data and applications, used by billions of users globally for the likes of Google Search, Gmail, YouTube etc. With Google Cloud, security is baked into the platform from the ground up, rather than something that has been bolted on as an afterthought.
+Welcome to my third blog in the series 'Why Google Cloud' where I discuss my reasons why I advocate Google Cloud. The first two blogs in the series focussed on security and sustainability. If you missed them, you can read them here:
 
-A properly designed Google Cloud architecture can deliver better security than many on-premise approaches thanks to Google’s scale, range of product offerings and continuous investments in security. In this blog, I highlight some of the core security features of Google Cloud and its infrastructure that help protect your data and applications.
+- [Why Google Cloud? Part 1: Security](https://www.cloudbabble.co.uk/2022-11-03-whygooglecloudsecurity/)
+- [Why Google Cloud? Part 2: Sustainability](https://www.cloudbabble.co.uk/2022-11-12-whygooglecloudsustainability/). 
 
-### Custom Hardware
+This blog focuses on Google's support and contributions to open source, Kubernetes, and how open source can help organisations avoid vendor lock-in and make multicloud a little less complex.
 
-Google takes defence in depth to the next level, from designing physical security across their global datacentres to custom building their own servers and hardware security chips. The Titan security chips are used for authentication at the hardware layer, serving as hardware roots of trust. All servers securely boot, with cryptographic signatures for baseboard management controllers, BIOS, bootloader, kernel and base operating system images. I can’t remember the exact position (within the top 5 I believe), but there is an interesting fact that Google is one of the largest server manufacturers globally despite not selling a single server which shows the scale of their infrastructure!
+Before specialising in Google Cloud, my career as an architect was more of a traditional infrastructure based role and centred around secure private clouds typically based on vSphere for large enterprises and multi-tenant platforms. I had also spent many years working with Windows Server and Microsoft products, so other than RHEL and a few database offerings, I had very little involvement with open source products!
 
-![Google Cloud Titan Chip](/assets/img/titan-chip.png "Google Cloud Titan Chip")
-*Google Cloud Titan Security Chip*
+Fast forward to my role now as a Google Cloud Architect and that has nearly rotated 360 degrees. One of the first considerations when assessing application migrations to Google Cloud I make is whether the application is benefiting from proprietary licensed software, or whether it can benefit from modernisation and migration to an open source offering to provide savings or offer opportunities for further innovation. There is a significant trend in organisations adopting more of the open source ecosystem. The Worldwide Open Source Services Industry is Expected to Reach $50 Billion by 2026 [(ResearchAndMarkets.com)](https://www.marketsandmarkets.com/Market-Reports/open-source-services-market-27852275.html).
 
-### Global Network
+I recently worked as a Lead Architect migrating applications for a leading global financial services organisation to GCP, and a lot of the applications had databases running on a legacy Oracle Exadata platform. Whilst not all databases could be migrated for various reasons, a significant number were designed to migrate to PostgreSQL on Google Cloud SQL for their target architecture. Those applications with databases that looked suitable would be assessed using migVisor. migVisor would generate a report for the database, detailing the complexity migrating to Cloud SQL and highlighting any challenges that may be faced for features/scripts etc. that may not be supported. Ora2PG would then be used to perform the migration... Before veering down the road of database migration too far, I best stop and get back to the purpose of this post... Why Google Cloud? 
 
-Then there is Google’s global network- the largest private network in the world, enabling customers to privately route traffic, globally without having to traverse the public internet. This network enables a single VPC to span multiple regions and can deliver more than 1Pbps total bisection bandwidth! 
+Google's ongoing and historic support and contributions to a wide range of open source projects and its history of developing application code internally and releasing them to the open source communities for general consumption and further innovation is my second reason why I advocate Google Cloud.
 
-![Google Cloud Network Edge Points of Presence](/assets/img/networkedgepointofpresence.png "Google Cloud Network Points of Presence")
-*Google Cloud Network Points of Presence*
+## Kubernetes
 
-Routing traffic across Google’s private network reduces latency, leading to faster response times, and avoids the additional complexities and challenges of securing and maintaining traffic routing over the internet to components within another region. Google’s network currently spans datacenters across 35 regions (plus another 12 planned coming soon!).
+Application modernisation and containerisation has benefited significantly from Google's innovation with Kubernetes born via this process. Google developed the containerisation orchestration tool which they had used for running their own container workloads for many years before releasing it as open source in 2014. Since then it has become the de facto containerisation orchestration platform with each of the hyperscalers offering their own managed services. In 2021, the CNCF Annual Survey revealed that 96% of organisations are using or evaluating Kubernetes!
 
-![Google Cloud Global Network Regions](/assets/img/regions.png "Google Cloud Global Regions")
-*Google Cloud Global Network Regions*
+![Kubernetes](/assets/img/whygcpopensource/kubernetes-horizontal-color.png "Kubernetes")
 
-### Encryption
+*Kubernetes Container Orchestration and Management Platform*
 
-All data stored within Google is encrypted by default at the storage layer with AES256 encryption. Google manages the default encryption keys, but also facilitates customers managing encryption keys themselves with envelope encryption and Cloud Key Management Service. For customers requiring even greater control, they can opt to use their own customer supplied encryption keys. 
+Kubernetes is not the only project Google has released. There are many more Google product offerings including Tensorflow as a machine learning platform, Istio as a service mesh offering helping simplify security and observability for microservices, chromium as a web browser, and Android as an operating system. In fact, Google has so many open source projects they maintain a website specifically for them: [Google Open Source](https://opensource.google/).
 
-Google Cloud also provides hardware security modules to protect your keys and Cloud External Key Manager for integration with venders like Thales, Fortanix, Futurex and Virtru. Customers can also deploy their own certificate authority within Google Cloud with Certificate Authority Service offering, further protecting applications within Google Cloud.
+![Google Open Source](/assets/img/whygcpopensource/google-opensource-logomark.png "Google Open Source Logo")
 
-All traffic between the user and the Google Front End is secured using TLS. This encryption in transit protects your data if communications are intercepted, by encrypting the data before transmission, authenticating the endpoints, and decrypting and verifying that the data was not modified on arrival.
+*Google releases open source to share innovation*
 
-![Google Cloud Default Encryption at Rest](/assets/img/Encryption-at-rest-default-google-cloud.png "Google Cloud Default Encryption at Rest")
-*Google Cloud Defaut Encryption at Rest*
+Google Cloud offers a managed Kubernetes platform in two modes- Google Kubernetes Engine (GKE) Standard Mode, and GKE Autopilot Mode. Whilst both provide a fully managed control plane, with GKE Autopilot, Google also fully manages the Kubernetes cluster and infrastructure including node autoscaling. There is no configuration or monitoring required by yourself. Autopilot configures the cluster according to GKE best practices for cluster, workload and security configuration. With Autopilot, you only pay for the pod resources you consume, avoiding the overhead associated with system components and unused node capacity etc. However, if more flexibility is required regarding node pool configuration, the GKE Standard Mode enables you to manage the clusters underlying infrastructure, node specification, quantity etc.
 
-Google also developed the Application Layer Transport Security (ALTS) protocol for securing RPC communications within Google’s infrastructure. This is similar to mutual TLS (mTLS) but optimized to meet the needs of Google’s datacentre environments.
+![Google Kubernetes Engine](/assets/img/whygcpopensource/gke-icon.png "Google Kubernetes Engine Logo")
 
-Confidential Computing provides encryption in use protection- data in memory is protected from compromise or exfiltration by encrypting the data whilst being processed. Confidential Computing enables customers to achieve encryption in use without needing to make any application code changes or compromise performance.
+*Google Kubernetes Engine is Google Cloud's fully managed Kubernetes offering available in Standard or Autopilot mode*
 
-I’ll be covering more on encryption and certificate services in a deep dive technical blog at a later date.
+Despite donating Kubernetes to CNCF, Google continues to innovate, regularly contributing and updating the project. Google is the number one contributor to Kubernetes project by a significant margin (generally at least twice the volume of the next top contributor!).
 
-### Google Front End
+## Lock-In and Knative
 
-The Google Front End (GFE) protects traffic destined for services within Google Cloud from the internet with Cloud Armor. Before traffic reaches a customer’s VPC network, it must route via the GFE (unless a customer has exposed a service directly to the internet with a public IP/not using a Google Cloud load balancer). Here the GFE ensures that all TLS connections are terminated with correct certificates and following best practices such as supporting perfect forward secrecy, in addition to protecting customers from DDoS attacks. As traffic routes through load balancers in the GFE, incoming traffic information is sent to a central DoS service. When the DoS service detects an attack, it can configure the load balancers to throttle or drop the attack traffic. The scale of Google’s infrastructure means it can absorb virtually any size DoS attack before it impacts the customers application.
+One major concern of organisations migrating to public cloud is the risk of vendor lock-in. They are concerned how difficult it is to migrate from one cloud platform to another, if it is too complex and expensive their application may become 'locked in' to a particular platform and require significant financial, time or technical investment to move at a later date. By choosing open source offerings, organisations can remove (or lessen) concerns about vendor lock-in.... Helping to address this concern, Google created the Knative project, which has grown to have contributions from a variety of companies including IBM, RedHat, VMware and SAP, but ultimately ensures organisations can run serverless workloads anywhere they want, be that on a fully managed GKE cluster, serverless Cloud Run, Cloud run for Anthos, Kubernetes on premise, or on another hyperscaler platform or OpenShift platform. 
 
-In June 2022, Google defended against the world’s largest known layer 7 HTTPS DDoS attack which peaked at 46million requests per second. Google’s DDoS detection was so quick, it stopped the attack at Google’s edge avoiding customer impact. By configuring Adaptive Protection within their Cloud Armor security policy, the customer was alerted to the threat and Cloud Armor proposed a rule that could be deployed to quickly block the traffic before the attack ramped up and had chance to impact the application. 
+![Knative](/assets/img/whygcpopensource/knative.png "Knative Logo")
 
-![Google Cloud DDoS 46m RPS Peak](/assets/img/DDoS_Attack_Graphic.jpg "Google Cloud DDoS Attack Peak")
-*Google Cloud DDoS Attack Peak at 46million RPS*
+*Knative is an Open-Source Enterprise-level solution to build Serverless and Event Driven Applications.*
 
-More info on this attack is available here on Google’s blog: [How Google Cloud blocked largest layer 7 DDoS attack at 46 million rps](https://cloud.google.com/blog/products/identity-security/how-google-cloud-blocked-largest-layer-7-ddos-attack-at-46-million-rps).
+Whilst the Knative serverless components need to be installed on top of GKE clusters, for Google Cloud Run, Knative is built in. Knative is a platform agnostic solution for running serverless. With Knatives open API and runtime environment, concerns of vendor lock-in from a serverless container perspective are alleviated. 
 
-### Security Team
+Without Knative, developers have to undertake a steep learning curve to become experts in Kubernetes, configuring GKE cluster settings, configuring autoscaling, defining various YAML files for the deployment etc. With Knative, developers no longer need this level of expertise in Kubernetes. The Knative Serving and Eventing components work together taking care of this complexity and enabling developers to use Kubernetes in a serverless manner, focussing more on their code rather than the Kubernetes infrastructure, resources and manifest files.
 
-Google has various cyber security teams, each with their owm role and responsibility ranging from detection and response, to a dedicated red team who attack Google's infrastructure to test defences in the same manner a real attacker would, through to a Project Zero team who are dedicated to researching zero-day vulnerabilities. 
+Knative was accepted on CNCF earlier this year in March and is at the incubating project maturity level- both graduated and incubating projects are considered stable and used in production environments. More information on Knative is available here [Knative](https://knative.dev/docs/). 
 
-Google's security teams engage in various security research across both Google and the wider community including various open source projects. The Project Zero team discovered threats including the Spectre exploit, the Meltdown exploit, the POODLE SSL 3.0 exploit and cipher suite weaknesses. 
+## Serverless vs Fully Managed
 
-The good news is these cyber security teams that protect Google’s own infrastructure, are the same teams that protect every organisation on Google Cloud.
+Google Cloud offers a range of open source products as fully managed services, supported by Google and their partner ecosystem. This includes database offerings on Cloud SQL for MySQL, PostgreSQL, Dataflow as a managed Apache Beam offering, Dataproc as a fully managed Apache Hadoop offering, Cloud Composer as a fully managed Apache Airflow offering, MongoAtlas database offerings and many others. Some of these offerings are serverless, others are classed as fully managed services. Serverless offerings remove any control and configuration of what machines are being used to run your services- with serverless, you only need to focus on your code, Google takes care of all the configuration of clusters, HA, DR settings etc. Additionally you typically only pay for the resources you use. 
 
-### Conclusion
+Fully Managed services provide more control- with fully managed you typically define the machines that run the services, whether the service is highly available, autoscales etc. However, the machines are fully managed- you don't need to install, configure or maintain them, this is done as part of the offering. 
 
-I've focussed on some of the core, foundational security features of Google Cloud in this blog post as part of my 'Why Google Cloud' blog series. Security is one of several reasons I have for 'Why Google Cloud'- I'll be highlighting my other reasons in coming blogs.
+## Multicloud
+By opting to run your applications on open source software, organisations can more easily embrace multicloud. According to Gartner, more than 80% of organisations are using two or more public cloud providers. Whilst a multicloud strategy inevitably introduces more complexity to your public cloud architecture and governance, enterprises are opting for a multicloud strategy for a variety of reasons including:
 
-There are a myriad of addtional Google Cloud products and services available that provide further protection ranging from Identity and Access Management, Google Cloud Resource Hierarchy, VPC Networks, VPC Service controls, Google Cloud Operations i.e. elements that form the Landing Zone. Then there are other offerings like Security Command Center, Google's Zero Trust implementation with BeyondCorp Enterprise, Chronicle, Virus Total, Secret Manager, Identity Aware Proxy, Data Loss Protection API, Container Analysis, Binary Authorisation, Assured Open Source Software... The list goes on. I'll be focussing on some of these products in subsequent blogs in greater detail.
+- Avoiding vendor lock-in- developers can deploy their code on multiple clouds by consuming open source software.
+- Disaster Recovery- some organisations look to use a second cloud provider for DR purposes. Equally organisations may view multicloud as providing increased resilience and availability. This is particularly true for organisations who have regulatory, or sovereignty requirements limiting the region upon which an environment can be deployed. Multicloud architectures can provide more regions within the constraints the organisation has to work within.
+- Best of breed capabilities- some organisations may opt to consume select services from one public cloud provider for areas they are seen as a leader in e.g. opting for Google Cloud for Data and AI, and consuming other services with another CSP.
+- Accidental multicloud- some organisations may find that different areas of the business are already consuming services from multiple public cloud providers. Others may inherit multicloud architectures following mergers and acquisitions. 
 
-If you've made it this far, thanks for taking the time to read Cloud Babble's first blog! I hope you have enjoyed it. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
+## Anthos
+
+Whatever the reason, defining a strategy to manage and govern these multicloud environments is key. Organisations need to ensure they have a way of gaining centralised visibility and management of resources, wherever they are deployed- on GCP, on premise, at the edge or in other public clouds. Anthos aims to address this- it provides a single pane of glass view across all platforms, providing infrastructure management, container management, service management, policy enforcement and observability. Collectively this simplifies the challenges organisations face managing and maintaining containerised workloads across multicloud environments. Instead of having to define and configure each public cloud Kubernetes cluster, containers, services, policy enforcement, monitoring, logging, SLO's, troubleshooting tools and application maintenance, this can all be done once within Anthos and deployed across your Kubernetes clusters regardless of whether they are running upon GKE, on premise or in another public cloud.
+
+![Anthos multicloud](/assets/img/whygcpopensource/anthos.png "Anthos multicloud management")
+
+*Anthos multicloud management*
+
+## Assured Open Source
+The Solarwinds attack in 2020 highlighted the risk of supply chain attacks. With open source software, there is a risk the software may contain hidden vulnerabilities or malicious code. To help mitigate this threat, Google has a new product currently in preview called Assured Open Source Software (Assured OSS). Assured OSS provides access to open source software packages that have been curated and vetted by Google. This enables customers to deploy the same OSS Packages Google uses themselves, which have been regularly scanned, analysed and tested for vulnerabilities. The packages are built with verifiable SLSA compliance, signed by Google and are distributed from a Google secured Artifact Registry.
+
+## Conclusion
+With open source, organisations help avoid vendor lock-in, lower costs (maybe not so much with some Enterprise OSS!), benefit from faster development, innovation, and bug fixes. Google's rich history of innovation, developing, releasing OSS, contributing to OSS projects and creating an array of fully managed OSS product offerings is my third reason 'Why Google Cloud'. With innovative products like Kubernetes available as part of Google Kubernetes Engine Standard and Autopilot modes, or a Knative serverless deployment running on Cloud Run, Google Cloud is the perfect platform to run your containerised workloads. Equally, for organisations with hybrid or multicloud architectures, Google Cloud's Anthos offering simplifies the management of multiple Kubernetes clusters on premise and in public clouds.
+
+Thanks for taking the time to read this blog. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
 
 Do reach out if you would like me to cover any particular areas of Google Cloud products, concepts or certifications in future posts.
