@@ -35,7 +35,7 @@ Application modernisation and containerisation has benefited significantly from 
 
 *Kubernetes Container Orchestration and Management Platform*
 
-Kubernetes is not the only project Google has released. There are many more Google product offerings including Tensorflow as a machine learning platform, Istio as a service mesh offering helping simplify security and observability for microservices, chromium as a web browser, and Android as an operating system. In fact, Google has so many open source projects they maintain a website specifically for them: https://opensource.google/.
+Kubernetes is not the only project Google has released. There are many more Google product offerings including Tensorflow as a machine learning platform, Istio as a service mesh offering helping simplify security and observability for microservices, chromium as a web browser, and Android as an operating system. In fact, Google has so many open source projects they maintain a website specifically for them: [Google Open Source](https://opensource.google/).
 
 ![Google Open Source](/assets/img/whygcpopensource/google-opensource-logomark.png "Google Open Source Logo")
 
