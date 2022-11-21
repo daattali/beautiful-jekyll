@@ -33,19 +33,13 @@ Application modernisation and containerisation has benefited significantly from 
 
 ![Kubernetes](/assets/img/whygcpopensource/kubernetes-horizontal-color.png "Kubernetes")
 
-*Kubernetes*
-
 Kubernetes is not the only project Google has released. There are many more Google product offerings including Tensorflow as a machine learning platform, Istio as a service mesh offering helping simplify security and observability for microservices, chromium as a web browser, and Android as an operating system. In fact, Google has so many open source projects they maintain a website specifically for them: https://opensource.google/.
 
 ![Google Open Source](/assets/img/whygcpopensource/google-opensource-logomark.png "Google Open Source Logo")
 
-*Google Open Source*
-
 Google Cloud offers a managed Kubernetes platform in two modes- Google Kubernetes Engine (GKE) Standard Mode, and GKE Autopilot Mode. Whilst both provide a fully managed control plane, with GKE Autopilot, Google also fully manages the Kubernetes cluster and infrastructure including node autoscaling. There is no configuration or monitoring required by yourself. Autopilot configures the cluster according to GKE best practices for cluster, workload and security configuration. With Autopilot, you only pay for the pod resources you consume, avoiding the overhead associated with system components and unused node capacity etc. However, if more flexibility is required regarding node pool configuration, the GKE Standard Mode enables you to manage the clusters underlying infrastructure, node specification, quantity etc.
 
 ![Google Kubernetes Engine](/assets/img/whygcpopensource/gke-icon.png "Google Kubernetes Engine Logo")
-
-*Google Kubernetes Engine*
 
 Despite donating Kubernetes to CNCF, Google continues to innovate, regularly contributing and updating the project. Google is the number one contributor to Kubernetes project by a significant margin (generally at least twice the volume of the next top contributor!).
 
@@ -54,8 +48,6 @@ Despite donating Kubernetes to CNCF, Google continues to innovate, regularly con
 One major concern of organisations migrating to public cloud is the risk of vendor lock-in. They are concerned how difficult it is to migrate from one cloud platform to another, if it is too complex and expensive their application may become 'locked in' to a particular platform and require significant financial, time or technical investment to move at a later date. By choosing open source offerings, organisations can remove (or lessen) concerns about vendor lock-in.... Helping to address this concern, Google created the Knative project, which has grown to have contributions from a variety of companies including IBM, RedHat, VMware and SAP, but ultimately ensures organisations can run serverless workloads anywhere they want, be that on a fully managed GKE cluster, serverless Cloud Run, Cloud run for Anthos, Kubernetes on premise, or on another hyperscaler platform or OpenShift platform. 
 
 ![Knative](/assets/img/whygcpopensource/knative.png "Knative Logo")
-
-*Knative*
 
 Whilst the Knative serverless components need to be installed on top of GKE clusters, for Google Cloud Run, Knative is built in. Knative is a platform agnostic solution for running serverless. With Knatives open API and runtime environment, concerns of vendor lock-in from a serverless container perspective are alleviated. 
 
