@@ -12,7 +12,7 @@ subtitle: Senior Cloud Architect specialising in Google Cloud at Atos
 
 ### Welcome to Cloud Babble- a personal blog site focussing on Google Cloud! 
 
-I'm Jamie Thompson, a Senior Cloud Architect specializing in Google Cloud at Atos, with 20 years experience in a variety of roles including operations, project delivery, design, governance, migration and leadership across:
+I'm Jamie Thompson, a Senior Cloud Architect specialising in Google Cloud at Atos, with 20 years experience in a variety of roles including operations, project delivery, design, governance, migration and leadership across:
 
 - Public Cloud- GCP
 - Private Cloud- VMware vSphere
@@ -35,10 +35,11 @@ I started working with Google Cloud in 2019 and embarked upon various certificat
 - Google Cloud Associate Cloud Engineer
 - Google Cloud Cloud Digital Leader
 
-In addition to my role as a Cloud Architect, I also co-host our GCP Coaching Hub at Atos. This is a global community of Atos employees focussed on Google Cloud with the aim of supporting members with training, gaining certification, provide opportunities to gain hands on experience and benefit from other peoples knowledge and experience via regular webinars and events.
+In addition to my role as a Cloud Architect, I also co-host our GCP Coaching Hub at Atos. This is a global community of Atos employees focussed on Google Cloud with the aim of supporting members with training, gaining certification, providing opportunities to gain hands-on experience and benefit from other people's knowledge and experience via regular webinars and events.
 
 I’ve decided to create this blog to help share my knowledge and experience with Google Cloud, document best practices, technical tutorials, advocate Google Cloud and hopefully help others who are studying towards GCP certifications or looking for some guidance on GCP products and services.
 
 Feel free to subscribe and follow me on my [LinkedIn profile](https://linkedin.com/in/jamiethompson85).
 
 All views are my own, and in no way reflective of my employer. 
+
