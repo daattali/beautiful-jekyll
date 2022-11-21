@@ -45,7 +45,7 @@ Google Cloud offers a managed Kubernetes platform in two modes- Google Kubernete
 
 ![Google Kubernetes Engine](/assets/img/whygcpopensource/gke-icon.png "Google Kubernetes Engine Logo")
 
-*Google Kubernetes Engine is Google Cloud's fully managed Kubernetes offering availble in Standard or Autopilot mode*
+*Google Kubernetes Engine is Google Cloud's fully managed Kubernetes offering available in Standard or Autopilot mode*
 
 Despite donating Kubernetes to CNCF, Google continues to innovate, regularly contributing and updating the project. Google is the number one contributor to Kubernetes project by a significant margin (generally at least twice the volume of the next top contributor!).
 
@@ -94,3 +94,4 @@ With open source, organisations help avoid vendor lock-in, lower costs (maybe no
 Thanks for taking the time to read this blog. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
 
 Do reach out if you would like me to cover any particular areas of Google Cloud products, concepts or certifications in future posts.
+
