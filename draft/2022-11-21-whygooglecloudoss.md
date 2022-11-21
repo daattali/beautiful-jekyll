@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent
 #share-img: /assets/img/path.jpg
 readtime: true
 share-title: "Why Google Cloud? Part 3: Open Source: Offerings, Innovation, Support, Contributions, Kubernetes, and Anthos Multicloud"
-#share-description: My first blog post summarising why I choose Google Cloud, starting with Security.
+share-description: "Read how Google releases to open source innovative products, and how open source helps organisations reduce the risk of vendor lock-in and helps make multicloud a little less complex"
 share-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
 tags: [open source, kubernetes, GKE, Istio, Anthos, multicloud]
 ---
