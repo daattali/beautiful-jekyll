@@ -91,6 +91,6 @@ The Solarwinds attack in 2020 highlighted the risk of supply chain attacks. With
 ## Conclusion
 With open source, organisations help avoid vendor lock-in, lower costs (maybe not so much with some Enterprise OSS!), benefit from faster development, innovation, and bug fixes. Google's rich history of innovation, developing, releasing OSS, contributing to OSS projects and creating an array of fully managed OSS product offerings is my third reason 'Why Google Cloud'. With innovative products like Kubernetes available as part of Google Kubernetes Engine Standard and Autopilot modes, or a Knative serverless deployment running on Cloud Run, Google Cloud is the perfect platform to run your containerised workloads. Equally, for organisations with hybrid or multicloud architectures, Google Cloud's Anthos offering simplifies the management of multiple Kubernetes clusters on premise and in public clouds.
 
-Please feel free to share, subscribe to be alerted to future posts, follow me on LinkedIn, and react/comment below!
+Thanks for taking the time to read this blog. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
 
 Do reach out if you would like me to cover any particular areas of Google Cloud products, concepts or certifications in future posts.
