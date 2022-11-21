@@ -29,11 +29,11 @@ Google's ongoing and historic support and contributions to a wide range of open 
 
 ## Kubernetes
 
+Application modernisation and containerisation has benefited significantly from Google's innovation with Kubernetes born via this process. Google developed the containerisation orchestration tool which they had used for running their own container workloads for many years before releasing it as open source in 2014. Since then it has become the de facto containerisation orchestration platform with each of the hyperscalers offering their own managed services. In 2021, the CNCF Annual Survey revealed that 96% of organisations are using or evaluating Kubernetes!
+
 ![Kubernetes](/assets/img/whygcpopensource/kubernetes-horizontal-color.png "Kubernetes")
 
 *Kubernetes*
-
-Application modernisation and containerisation has benefited significantly from Google's innovation with Kubernetes born via this process. Google developed the containerisation orchestration tool which they had used for running their own container workloads for many years before releasing it as open source in 2014. Since then it has become the de facto containerisation orchestration platform with each of the hyperscalers offering their own managed services. In 2021, the CNCF Annual Survey revealed that 96% of organisations are using or evaluating Kubernetes!
 
 Kubernetes is not the only project Google has released. There are many more Google product offerings including Tensorflow as a machine learning platform, Istio as a service mesh offering helping simplify security and observability for microservices, chromium as a web browser, and Android as an operating system. In fact, Google has so many open source projects they maintain a website specifically for them: https://opensource.google/.
 
