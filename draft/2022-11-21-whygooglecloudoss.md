@@ -9,7 +9,7 @@ readtime: true
 share-title: "Why Google Cloud? Part 3: Open Source: Offerings, Innovation, Support, Contributions, Kubernetes, and Anthos Multicloud"
 share-description: "Read how Google releases to open source innovative products, and how open source helps organisations reduce the risk of vendor lock-in and helps make multicloud a little less complex"
 share-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
-tags: [open source, kubernetes, GKE, Istio, Anthos, multicloud]
+tags: [open source, kubernetes, GKE, Istio, Anthos, multicloud, vendor lock-in]
 ---
 
 Welcome to my third blog in the series 'Why Google Cloud' where I discuss my reasons why I advocate Google Cloud. The first two blogs in the series focussed on security and sustainability. If you missed them, you can read them here:
