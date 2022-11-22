@@ -2,6 +2,7 @@
 layout: post
 title: Why Google Cloud?
 subtitle: "Part 3: Open Source Offerings, Innovation, Support, Contributions, Kubernetes, and Anthos Multicloud"
+description: "Read how Google releases to open source innovative products, and how open source helps organisations reduce the risk of vendor lock-in and helps make multicloud a little less complex"
 #cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/cloud-babble-low-resolution-logo-color-on-transparent-background (1).png
 #share-img: /assets/img/path.jpg
