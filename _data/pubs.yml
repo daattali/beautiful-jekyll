@@ -45,14 +45,20 @@
   title: Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZEPiwF18mA" title="Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-- abs: null
+- abs: How do we imbue robots with the ability to efficiently manipulate unseen objects and transfer relevant skills based on demonstrations? End-to-end learning methods often fail to generalize to novel objects or unseen configurations. Instead, we focus on the task-specific pose relationship between relevant parts of interacting objects. We conjecture that this relationship is a generalizable notion of a manipulation task that can transfer to new objects in the same category; examples include the relationship between the pose of a pan relative to an oven or the pose of a mug relative to a mug rack. We call this task-specific pose relationship “cross-pose” and provide a mathematical definition of this concept. We propose a vision-based system that learns to estimate the cross-pose between two objects for a given manipulation task using learned cross-object correspondences. The estimated cross-pose is then used to guide a downstream motion planner to manipulate the objects into the desired pose relationship (placing a pan into the oven or the mug onto the mug rack). We demonstrate our method’s capability to generalize to unseen objects, in some cases after training on only 10 demonstrations in the real world. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments across a number of tasks.
   authors: Chuer Pan*, Brian Okorn*, Harry Zhang*, Ben Eisner*, David Held
   award: null
-  bib: null
-  img: ../pics/cropped-CoRL2022-1.png
-  links: {}
-  short_id: null
-  site: null
+  bib: "@article{pan2022tax,\n
+   \ title={{TAX-Pose: Task-Specific Cross-Pose Estimation for Robot Manipulation}},\n
+   \ author={Pan, Chuer and Okorn, Brian and Zhang, Harry and Eisner, Ben and Held, David},\n
+   \ journal={arXiv preprint arXiv:2211.09325},\n
+   \ year={2022}\n
+   \ }"
+  img: ../pics/taxpose-web.gif
+  links: 
+    '[PDF]': https://arxiv.org/pdf/2211.09325.pdf
+  short_id: 2022corltaxpose
+  site: https://sites.google.com/view/tax-pose/home
   title: 'TAX-Pose: Task-Specific Cross-Pose Estimation for Robot Manipulation'
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1GTEXuk1TEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -263,7 +269,7 @@
     our policy on a Sawyer robot with no finetuning. Results show that our system
     achieves state-of-the-art performance in both simulated and real-world experiments.
   authors: Ben Eisner*, Harry Zhang*, David Held
-  award: <award>Best Paper Finalist</award>
+  award: <award>Best Paper Finalist (Selection Rate 1.5%)</award>
   bib: "@inproceedings{EisnerZhang2022FLOW,\n            title={FlowBot3D: Learning\
     \ 3D Articulation Flow to Manipulate Articulated Objects},\n            author={Eisner*,\
     \ Ben and Zhang*, Harry and Held,David},\n            booktitle={Robotics: Science\
