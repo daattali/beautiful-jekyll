@@ -151,7 +151,7 @@
       \ booktitle={Conference on Robot Learning (CoRL)}\n
       \ year={2022},\n
       \ }"
-  img: ../pics/corl2022_mrp.gif
+  img: ../pics/mrp_website_text.png
   links: 
     '[arXiv]': https://arxiv.org/pdf/2211.11182.pdf
   short_id: 2022corlmrp
