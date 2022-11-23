@@ -88,6 +88,8 @@
   img: ../pics/toolflownet.gif
   links: 
       '[OpenReview]': https://openreview.net/forum?id=2gfB_kMVFvP
+      '[arXiv]': https://arxiv.org/abs/2211.09006
+      '[Twitter]': https://twitter.com/daniel_t_seita/status/1595269818474692609
   short_id: 2022corltoolflownet
   site: https://sites.google.com/view/point-cloud-policy
   title: 'ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from
