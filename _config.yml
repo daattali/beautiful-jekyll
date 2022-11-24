@@ -26,7 +26,7 @@ navbar-links:
   Home: "https://BastienDussap.github.io"
   Research: "pages/research"
   Teaching: "pages/teaching"
-  Bastien Dussap:
+  About me:
     - CV: "/assets/files/Moderncv_Classic.pdf"
     - Adresse: "pages/adresse"
   #Liens:
