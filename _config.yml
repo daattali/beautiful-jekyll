@@ -17,14 +17,22 @@ author: Bastien Dussap
 
 ###############################################
 # --- List of links in the navigation bar --- #
+# Contact
+# Blog one day ?
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://BastienDussap.github.io"
+  Home: "https://BastienDussap.github.io"
+  Publication: "pages/publication"
+  Teaching: "pages/teaching"
+  Bastien Dussap:
+    - CV: "/assets/files/Moderncv_Classic.pdf"
+    - Contact: "pages/aboutme"
+  Liens:
+    - Laboratoire de Mathématiques d'Orsay: "https://www.imo.universite-paris-saclay.fr/fr/"
+    - Datashape: "https://www.inria.fr/fr/datashape/"
+    - Metafora: "https://www.metafora-biosystems.com/"
+  
 
 ################
 # --- Logo --- #
@@ -58,7 +66,7 @@ social-network-links:
 #  patreon: DeanAttali
 #  youtube: c/daattali
 #  medium: yourname
-  reddit: BastienDussap
+#  reddit: BastienDussap
   linkedin: bastien-dussap
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
