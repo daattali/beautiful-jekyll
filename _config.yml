@@ -19,6 +19,7 @@ author: Bastien Dussap
 # --- List of links in the navigation bar --- #
 # Contact
 # Blog one day ?
+# Enlever les liens
 ###############################################
 
 navbar-links:
@@ -27,7 +28,7 @@ navbar-links:
   Teaching: "pages/teaching"
   Bastien Dussap:
     - CV: "/assets/files/Moderncv_Classic.pdf"
-    - Contact: "pages/aboutme"
+    - Contact: "pages/contact"
   Liens:
     - Laboratoire de Mathématiques d'Orsay: "https://www.imo.universite-paris-saclay.fr/fr/"
     - Datashape: "https://www.inria.fr/fr/datashape/"
@@ -67,7 +68,7 @@ social-network-links:
 #  youtube: c/daattali
 #  medium: yourname
 #  reddit: BastienDussap
-  linkedin: bastien-dussap
+  linkedin: bastien-dussap-4191281b8
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
