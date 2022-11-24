@@ -28,11 +28,10 @@ navbar-links:
   Teaching: "pages/teaching"
   Bastien Dussap:
     - CV: "/assets/files/Moderncv_Classic.pdf"
-    - Contact: "pages/contact"
-  Liens:
-    - Laboratoire de Mathématiques d'Orsay: "https://www.imo.universite-paris-saclay.fr/fr/"
-    - Datashape: "https://www.inria.fr/fr/datashape/"
-    - Metafora: "https://www.metafora-biosystems.com/"
+    - Adresse: "pages/adresse"
+  #Liens:
+  #  - Datashape: "https://www.inria.fr/fr/datashape/"
+  #  - Metafora: "https://www.metafora-biosystems.com/"
   
 
 ################
