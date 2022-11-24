@@ -24,7 +24,7 @@ author: Bastien Dussap
 
 navbar-links:
   Home: "https://BastienDussap.github.io"
-  Publication: "pages/research"
+  Research: "pages/research"
   Teaching: "pages/teaching"
   Bastien Dussap:
     - CV: "/assets/files/Moderncv_Classic.pdf"
