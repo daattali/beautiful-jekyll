@@ -36,11 +36,13 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "info@fursquared.com"
-    #facebook: deanattali
+    
   github: fursquared
   twitter: fursquared
+  mastodon: mastodon.furrycon.social/@fursquared
   telegram: fursquaredchat
   rss: true
+#  facebook: deanattali
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -54,7 +56,6 @@ social-network-links:
 #  twitch: yourname
 #  yelp: yourname
 #  calendly: yourname
-#  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 
