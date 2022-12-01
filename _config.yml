@@ -1,9 +1,13 @@
-# Welcome to Beautiful Jekyll!
-# This config file is meant for settings that affect your entire website. When you first
-# set up your website you should go through all these settings and edit them, but after
-# the initial set up you won't need to come back to this file often.
+###########################################################
+### Welcome to Beautiful Jekyll!
+### This config file is meant for settings that affect your entire website. When you first
+### set up your website you should go through all these settings and edit them, but after
+### the initial set up you won't need to come back to this file often.
+###########################################################
 
+############################
 # --- Required options --- #
+############################
 
 # Name of website
 title: M635J520
@@ -11,7 +15,9 @@ title: M635J520
 # Your name to show in the footer
 author: mortenjohs
 
+###############################################
 # --- List of links in the navigation bar --- #
+###############################################
 
 navbar-links:
 #  About Me: "aboutme"
@@ -20,7 +26,9 @@ navbar-links:
     - 1bisHill: "https://soundcloud.com/1bishill"
 #  Author's home: "https://deanattali.com"
 
+################
 # --- Logo --- #
+################
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
@@ -34,7 +42,9 @@ round-avatar: true
 #title-img: /path/to/image
 
 
+#####################################
 # --- Footer social media links --- #
+#####################################
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
@@ -60,7 +70,7 @@ social-network-links:
 #  yelp: yourname
 #  telegram: yourname
 #  calendly: yourname
-#  mastodon: instance.url/@username
+  mastodon: mastodon.social/@mortenjohs
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 #  discord: invite/invite_code or users/userid 
@@ -71,7 +81,9 @@ social-network-links:
 # The URL for the feed will be https://<your_website>/feed.xml
 rss-description: A series of notes to myself...
 
+###########################
 # --- General options --- #
+###########################
 
 # Select which social network share links to show in posts
 share-links-active:
@@ -96,10 +108,20 @@ feed_show_tags: true
 # Add a search button to the navbar
 post_search: true
 
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
+
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: false
+
 # The keywords to associate with your website, for SEO purposes
 keywords: "boardgames,python,programming,ruby,simulation"
 
+######################################
 # --- Colours / background image --- #
+######################################
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
@@ -133,7 +155,9 @@ footer-hover-col: "#0085A1"
 #site-js:
 #  - "/assets/js/custom-script.js"
 
+#################################
 # --- Web Analytics Section --- #
+#################################
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
 #gtag: ""
@@ -155,7 +179,9 @@ footer-hover-col: "#0085A1"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
+####################
 # --- Comments --- #
+####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
@@ -206,7 +232,9 @@ utterances:
 #  emit-metadata: 0
 #  theme: light
 
+################
 # --- Misc --- #
+################
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
@@ -214,7 +242,9 @@ date_format: "%B %-d, %Y"
 # Facebook App ID
 #fb_app_id: ""
 
+#################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #
+#################################################################################
 
 # Output options (more information on Jekyll's site)
 timezone: "Europe/Paris"

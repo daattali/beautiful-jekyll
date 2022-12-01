@@ -69,7 +69,7 @@ _Favourite mechanism_: I like the fact that the authors have spun 8 different ga
 Gateway+ games
 --------------
 
-The first of the two Gateway+ games on my list, _[Expedition to Newdale](https://boardgamegeek.com/boardgame/272682)_, is a board game adaptation of [Oh My Goods!](https://boardgamegeek.com/boardgame/183840/oh-my-goods) by Alexander Pfister. [I’ve been a fan](http://m635j520.blogspot.com/2018/01/the-9-ish-best-board-games-of-2017.html) of the “original”, especially with the [Longsdale in Revolt](https://boardgamegeek.com/boardgameexpansion/209323/oh-my-goods-longsdale-revolt) story expansion and especially as a solo game, for some time, and it keeps coming back to my table. It is a perfect travel game since it is basically just a deck of cards – or two. The bigger box brother is less portable, and continues the story element from its predecessor, but also adds a new decision space with, for example, maps.
+The first of the two Gateway+ games on my list, _[Expedition to Newdale](https://boardgamegeek.com/boardgame/272682)_, is a board game adaptation of [Oh My Goods!](https://boardgamegeek.com/boardgame/183840/oh-my-goods) by Alexander Pfister. [I’ve been a fan](../2018-02-21-the-9-ish-best-board-games-of-2017/) of the “original”, especially with the [Longsdale in Revolt](https://boardgamegeek.com/boardgameexpansion/209323/oh-my-goods-longsdale-revolt) story expansion and especially as a solo game, for some time, and it keeps coming back to my table. It is a perfect travel game since it is basically just a deck of cards – or two. The bigger box brother is less portable, and continues the story element from its predecessor, but also adds a new decision space with, for example, maps.
 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHZ2xa456OwxGu2ysuGEFr6MGJsduqEy0M-h_os-7q6lTdZNQXXR0U2sCCnBE83dHHppobHW2NN2ZkiPL2a2i7k_pix-PjGjFA9lVRDo0LLeLi2wZ5o-c7uB5yVz4d25ekFd9lFKYcjUnuXx_qRprECFBGMxiYhbgNWhRkNEExi7YmF875z86k5TY/s320/IMG_5490.HEIC.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHZ2xa456OwxGu2ysuGEFr6MGJsduqEy0M-h_os-7q6lTdZNQXXR0U2sCCnBE83dHHppobHW2NN2ZkiPL2a2i7k_pix-PjGjFA9lVRDo0LLeLi2wZ5o-c7uB5yVz4d25ekFd9lFKYcjUnuXx_qRprECFBGMxiYhbgNWhRkNEExi7YmF875z86k5TY/s4032/IMG_5490.HEIC.jpg)
 
@@ -136,16 +136,16 @@ Honourable mentions (sorted alphabetically)
 The games I look forward the most to play in 2022
 -------------------------------------------------
 
-* [ ]  Darwin’s Voyage – I have Kickstarted this (a long, long time ago) – let’s hope it lives up to the hype… and that it arrives this year…
+* [ ] Darwin’s Voyage – I have Kickstarted this (a long, long time ago) – let’s hope it lives up to the hype… and that it arrives this year…
 * [x] Terraforming Mars: Ares Expedition – A streamlined mashup of Terraforming Mars and Race for the Galaxy? Count me in!
-* [ ] Dune: Imperium – Arnak in space with spice?
+* [x] Dune: Imperium – Arnak in space with spice?
 * [x] Ark Nova – Zoo Tycoon: The (medium-heavy euro) Boardgame?
 * [x] Fjords – Philip Walker Harding revisiting the modern classic from the late Franz-Benno Delonge. (Kickstarted)
 * [ ] The Nano9Games: Railways, City Planner, and Empire – I _do_ like my nano games… (Kickstarted)
 * [ ] My Island – Knizia’s follow up to My City. Can this be a competitive legacy game that works?
 *   Expansions to:
     * [ ] Viscounts of the West Kingdom
-    * [ ] Architects of the West Kingdom
+    * [x] Architects of the West Kingdom
     * [ ] Railways of the World
     * [ ] On Mars
     * [x] Lost Ruins of Arnak
