@@ -25,7 +25,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 14-Nov	| Probability			| _No Coaching Session (AMC 10B)_ |  |
 | 21-Nov	| Fractions				| _No School_ | _No School_ |
 | 28-Nov	| Area					| _No Coaching Session (Mathcrafters)_ |  |
-| 5-Dec		| Patterns				| [2016 AMC 8](https://artofproblemsolving.com/wiki/index.php/2016_AMC_8_Problems) |  |
+| 5-Dec		| Patterns				| _No Coaching Session (Mathcrafters New Date)_ |  |
 | 12-Dec	| Work					| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems) |  |
 | 19-Dec	| _No School_    		| _No School_ | _No School_ |
 | 26-Dec	| _No School_			| _No School_ | _No School_ |
