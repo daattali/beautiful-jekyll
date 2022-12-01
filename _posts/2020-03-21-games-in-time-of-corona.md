@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Games in the time of Corona
+title: Games in the Time of Corona
 date: '2020-03-21T13:23:00.006+01:00'
 author: Morten
 tags:

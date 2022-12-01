@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crafting an artificial opponent for Fjordar
+title: Crafting an Artificial Opponent for Fjordar
 date: '2021-05-04T22:42:00.005+02:00'
 author: Morten
 tags:

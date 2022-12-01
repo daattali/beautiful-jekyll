@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The 9 greatest boardgames discovered in 2021
+title: The 9 Greatest Boardgames Discovered in 2021
 date: '2022-04-05T18:07:00.003+02:00'
 author: Morten
 tags:
