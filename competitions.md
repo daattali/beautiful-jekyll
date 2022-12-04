@@ -15,6 +15,7 @@ subtitle: Our competition calendar
 |February 11, 2023      | [Math Is Cool Regionals](/mathiscool) | 9:30-3:00 [Liberty High School](https://www.google.com/maps/dir//Liberty+High+School,+16655+SE+136th+St,+Renton,+WA+98059) | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B571B3375-9DF4-42A2-B345-8313C7182EEF%7D&file=Competitions%20%26%20Teams.xlsx&action=default&mobileredirect=true) | November 11, 2022
 |March, 2023            | [Mathcounts State Round](/mathcounts)  | TBD | By invitation | --
 |April, 2023			| [Math Is Cool Masters](/mathiscool) | TBD | TBD | TBD
+|April 29, 2023			| [Mustang Math Tournament](https://mustangmath.com/competitions/mmt-2023) | TBD | TBD | TBD
 
 All competitions are **optional**.
 
