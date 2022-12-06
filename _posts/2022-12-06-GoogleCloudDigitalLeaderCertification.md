@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acheiving Google Cloud Digital Leader Certification
+title: Achieving Google Cloud Digital Leader Certification
 subtitle: In this blog I cover Google Cloud’s entry level certification Cloud Digital Leader, and my approach to achieving Google Cloud’s entry level certification CDL.
 description: ""
 #cover-img: /assets/img/path.jpg
