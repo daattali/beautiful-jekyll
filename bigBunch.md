@@ -12,4 +12,4 @@ Big Bunch is a fun and engaging daily word game played in real time with other p
 
 ![](/assets/img/bigBunch_win_white_bg.JPG#center){:width="50%"}
 
-#### Available for iPad and iOS 15.0 and above
+#### Available for iPad and iOS 15.6 and above
