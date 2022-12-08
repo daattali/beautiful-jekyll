@@ -47,12 +47,12 @@ The Google Cloud Digital Leader exam is one of the newer certifications availabl
 
 Below are my recommendations on how best to prepare for the CDL exam based on my experiences with this and other GCP certifications.
 
-## Read and become familiar with the exam guide
+# Read and become familiar with the exam guide
 {:.no_toc}
 
 My first piece of advice is to review the [Google Cloud Digital Leader exam guide](https://cloud.google.com/certification/guides/cloud-digital-leader) to get an understanding of the topics in scope of the exam. Hopefully you’ll find you already have a level of familiarity for some of the areas. If not, don’t be alarmed as there are various study materials and courses available (most of which are available free of charge at the time of writing!) that will bring you up to speed that I cover below. 
 
-## Recommended training material and courses for Google Cloud Digital Leader certification including practice exam question sources.
+# Recommended training material and courses for Google Cloud Digital Leader certification including practice exam question sources.
 
 Google Cloud Digital Leader Study Guide
 Google Cloud Skills Boost learning path for Google Cloud Digital Leader
@@ -61,11 +61,11 @@ Priyanka Vergadia aka The Cloud Girl
 Coursera Google Cloud Digital Leader training
 ACloudGuru Google Cloud Digital Leader training
 
-### Google Cloud Digital Leader Study Guide
+## Google Cloud Digital Leader Study Guide
 
 Google Cloud has produced a [Google Cloud Digital Leader Study Guide](https://services.google.com/fh/files/misc/cdl_study_guide_november_2021.pdf) that provides further detail about the Cloud Digital Leader exam. This offers additional information above what is covered in the exam guide, provides introductions into each of the courses covered in the learning paths, provides links to additional reading resources, explains key terms, and highlights focus areas for the exam. 
 
-### Google Cloud Skills Boost Learning Path: Cloud Digital Leader
+## Google Cloud Skills Boost Learning Path: Cloud Digital Leader
 
 [Google Cloud Skills Boost Cloud Digital Leader Learning Path](https://www.cloudskillsboost.google/paths/9) is an online self paced course covering each of the four areas of the exam. The content is presented in a series of four courses aligning with the four areas detailed above from the exam guide. Each course has several modules consisting of a series of videos- each 2-10 minutes in length, and an end of module quiz to assess your understanding of the content covered. 
 
@@ -73,7 +73,7 @@ I’d estimate the overall learning path video content can be completed in ~9 ho
 
 The learning path covers enough depth on each of the areas to prepare you for the exam- however if there are some areas or concepts that still don’t make sense, I recommend doing some further research on these areas until you feel comfortable with the material covered. Simply performing a Google search usually returns a plethora of youTube videos or articles covering the topics in greater detail. Whilst this learning path was all I used for preparation myself, I’ve also documented some other resources below that I have found useful in preparing for other Google Cloud certifications that may help you on your quest to Cloud Digital Leader certification.
 
-### YouTube videos
+## YouTube videos
 
 Google Cloud has produced several YouTube videos available on the following [playlist](https://youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu) providing overviews of the certification and an exam readiness webinar.
 
@@ -81,7 +81,7 @@ Google Cloud has produced several YouTube videos available on the following [pla
 
 *Google Cloud Digital Leader Learning Map*
 
-### Priyanka Vergadia aka The Cloud Girl
+## Priyanka Vergadia aka The Cloud Girl
 
 For those who benefit more from visual learning- Priyanka Vergadia aka The Cloud Girl has created an excellent collection of [sketchnotes](https://thecloudgirl.dev/sketchnote.html) covering a wide range of Google Cloud products, services and concepts in an easy to digest format.
 
@@ -93,11 +93,11 @@ The sketchnotes have been released as a book titled [Visualising Google Cloud](h
 
 Priyanka regularly posts videos on her social media channels including various [Cloud Bytes](https://youtube.com/playlist?list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip)  videos covering Google Cloud products in under a minute, and has her own blogs on [Medium](https://pvergadia.medium.com).
 
-### Coursera Google Cloud Digital Leader training
+## Coursera Google Cloud Digital Leader training
 
 The Coursera platform offers a training course tailored to the Google Cloud Digital Leader certification. Whilst I've not used this course myself, I have used Coursera for other Google training courses in the past and Google regularly makes some of their training materials free on the platform so it is worth checking out. [Coursera](https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training)
 
-### ACloudGuru Google Cloud Digital Leader training
+## ACloudGuru Google Cloud Digital Leader training
 
 The ACloudGuru platform also offers a [Google Cloud Digital Leader online training course](https://acloudguru.com/course/google-cloud-certified-cloud-digital-leader). Again I haven't completed this course myself, but I have completed many other ACloudGuru training courses in the past and highly recommend them for their quality of content, depth of coverage, opportunities for hands-on practice labs and providing a wide range of practice test questions.
 
@@ -105,11 +105,12 @@ The ACloudGuru platform also offers a [Google Cloud Digital Leader online traini
 
 *[ACloudGuru Google Cloud Digital Leader Course](https://acloudguru.com/course/google-cloud-certified-cloud-digital-leader)*
 
-### Review the exam guide (yes, again!)
+## Review the exam guide (yes, again!)
+{:.no_toc}
 
 Once you have completed all the training materials, review the exam guide again. This time you should feel more confident in your level of knowledge for each  topic. If there are still topics in the guide you don't feel comfortable with, spend more time focussing on these, revisiting the content in the training courses or researching the content in Google docs, and YouTube videos etc.
 
-## Take the Google Cloud Digital Leader practice exam
+# Take the Google Cloud Digital Leader practice exam
 
 Once you are feeling confident you understand all the concepts covered in the exam guide, it's time to do a practice test. Google provides a [free practice test](https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform) consisting of 15 questions to mimic the type of question you may see on the exam. 
 
@@ -119,7 +120,7 @@ At the end of the practice exam, review all the questions including those you ha
 
 Unfortunately the Google Cloud practice exams only consist of 15 questions. ACloudGuru training courses usually have a good question bank for each certification, so it’s worthwhile going through these in a similar manner to measure your performance and assess readiness for the certification.
 
-## Google Cloud Digital Leader Exam Strategy and Tips
+# Google Cloud Digital Leader Exam Strategy and Tips
 
 Perform the first iteration of the exam quickly, answering the questions you are confident you know the answer for. If you don’t know the answer to a question, mark it for review at the end and try to rule out any incorrect answers from those available. Typically there are a couple of answers that may be correct, however a subtle word within the question usually makes one of the answers a better fit than the others.
 
@@ -127,13 +128,13 @@ Once you complete your first iteration, review your marked questions and spend m
 
 Upon completion of the  exam, a provisional pass or fail is displayed on the screen. Look out for it, if it’s your first Google Cloud certification you can quite easily miss it as for whatever reason, it's not highlighted particularly well! Google subsequently confirms the pass/failure within 10 days time.
 
-## Free Google Cloud training for Google Cloud Digital Leader certification
+# Free Google Cloud training for Google Cloud Digital Leader certification
 
 Google regularly provides free training opportunities throughout the year and Google Cloud Digital Leader is frequently one of the available courses. At the time of writing, the Cloud Skills Boost Learning Path for Cloud Digital Leader was available for free [here](https://www.cloudskillsboost.google/paths/9). 
 
 There is also a 30 minute webinar for preparing for the exam: [Getting started with Google Cloud Digital Leader training and certification](cloudonair.withgoogle.com)
 
-## How to book the Google Cloud Digital Leader exam
+# How to book the Google Cloud Digital Leader exam
 
 The Google Cloud Digital Leader exam can be booked via Kryterion test centers on the [webassessor website](https://www.webassessor.com/googlecloud/). The exam can be taken in a test center, or via a remote proctored exam monitored via a web camera and microphone.
 
