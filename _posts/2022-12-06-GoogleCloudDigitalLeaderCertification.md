@@ -48,6 +48,7 @@ The Google Cloud Digital Leader exam is one of the newer certifications availabl
 Below are my recommendations on how best to prepare for the CDL exam based on my experiences with this and other GCP certifications.
 
 ## Read and become familiar with the exam guide
+{:.no_toc}
 
 My first piece of advice is to review the [Google Cloud Digital Leader exam guide](https://cloud.google.com/certification/guides/cloud-digital-leader) to get an understanding of the topics in scope of the exam. Hopefully you’ll find you already have a level of familiarity for some of the areas. If not, don’t be alarmed as there are various study materials and courses available (most of which are available free of charge at the time of writing!) that will bring you up to speed that I cover below. 
 
