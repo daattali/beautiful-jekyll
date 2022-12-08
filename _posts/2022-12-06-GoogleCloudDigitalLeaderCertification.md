@@ -111,6 +111,7 @@ The ACloudGuru platform also offers a [Google Cloud Digital Leader online traini
 Once you have completed all the training materials, review the exam guide again. This time you should feel more confident in your level of knowledge for each  topic. If there are still topics in the guide you don't feel comfortable with, spend more time focussing on these, revisiting the content in the training courses or researching the content in Google docs, and YouTube videos etc.
 
 # Take the Google Cloud Digital Leader practice exam
+{:.no_toc}
 
 Once you are feeling confident you understand all the concepts covered in the exam guide, it's time to do a practice test. Google provides a [free practice test](https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform) consisting of 15 questions to mimic the type of question you may see on the exam. 
 
@@ -135,6 +136,7 @@ Google regularly provides free training opportunities throughout the year and Go
 There is also a 30 minute webinar for preparing for the exam: [Getting started with Google Cloud Digital Leader training and certification](cloudonair.withgoogle.com)
 
 # How to book the Google Cloud Digital Leader exam
+{:.no_toc}
 
 The Google Cloud Digital Leader exam can be booked via Kryterion test centers on the [webassessor website](https://www.webassessor.com/googlecloud/). The exam can be taken in a test center, or via a remote proctored exam monitored via a web camera and microphone.
 
@@ -151,14 +153,17 @@ Once they are happy the room is secure, your exam is started. The proctor monito
 It is best to book your exam ahead of time, as this gives you a date to work towards completing study and revision, and also helps ensure you get to choose a date/time that suits you best. If you leave booking the exam until after you finish your studying, you may find there aren’t as many convenient times available as you would like. That being said, if you find yourself in this position, check back regularly as I've seen a lot of times that were not available when checking the previous day, become available a day or two later. Provided you give at least 24 hours notice, you are free to reschedule your exam to another time if for any reason you are not ready.
 
 # How long is the Google Cloud Digital Leader exam?
+{:.no_toc}
 
 The CDL exam is a 90 minute exam during which you will need to answer 50-60 multiple choice and multiple select questions. There are no case studies or excessively long questions in this exam, so the allotted 90 minutes should be plenty of time.
 
 # How long is the Google Cloud Digital Leader certification valid?
+{:.no_toc}
 
 The CDL certification is valid for 3 years. You can recertify 60 days prior to certification expiration.
 
 # How much does the Google Cloud Digital Leader exam cost?
+{:.no_toc}
 
 The Cloud Digital Leader exam costs $99 USD.
 
