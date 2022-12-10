@@ -19,7 +19,7 @@ author: Akash Srivastva
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "EDITORS"
   
 ################
 # --- Logo --- #
@@ -119,7 +119,7 @@ navbar-var-length: false
 navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
+page-col: "#FFA500"
 text-col: "#E13C18"
 link-col: "#008AFF"
 hover-col: "#0085A1"
