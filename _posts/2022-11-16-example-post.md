@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: home
 title: आओ उड़ चलें (बाल पत्रिका)
 subtitle: नवम्बर 2022 (अंक-01)
 cover-img: /assets/WhatsApp Image 2022-11-14 at 08.45.41.jpeg
