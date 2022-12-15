@@ -26,7 +26,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 21-Nov	| Fractions				| _No School_ | _No School_ |
 | 28-Nov	| Area					| _No Coaching Session (Mathcrafters)_ |  |
 | 5-Dec		| Patterns				| _No Coaching Session (Mathcrafters New Date)_ |  |
-| 12-Dec	| Work					| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems) |  |
+| 12-Dec	| Work					| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems) | _Cancelled (No Proctor)_ |
 | 19-Dec	| _No School_    		| _No School_ | _No School_ |
 | 26-Dec	| _No School_			| _No School_ | _No School_ |
 | 2-Jan		| _No School_ 			| [19-20 Mathcounts School Round](/files/RMS%201920M%20Exam.pdf) |  |
