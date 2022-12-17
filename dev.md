@@ -18,9 +18,16 @@ subtitle: A lot of lines...
 ### ✔️ Open Source
 
 - [Buiidl Portfolio](https://buidlguidl.com/builders/0xb542E27732a390f509fD1FF6844a8386fe320f7f)
-- [Dharma Initiative](https://dharmainitiative.netlify.com)
-- [Formulae](https://formulae-nft.netlify.com)
-- [Dharmandala](https://dharmandala.netlify.com)
+
+### On Goerli Testnet
+- [Dharma Initiative](https://dharmainitiative.surge.sh/)
+- [Dharma Collection](https://dharmacollection.vercel.app/)
+- [Dharma Dao](https://dharmadao.surge.sh/)
+- [Formulae](https://formulae.surge.sh/)
+- [Dharmandala](https://dharmandala.surge.sh/)
+
+### On Polygon Mainnet
+- [Beefy MultiFarm Optimizer](https://beefyoptimizer.vercel.app/)
 
 ---
 
