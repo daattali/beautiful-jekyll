@@ -11,12 +11,12 @@ tags:
 - algorithm
 - visualization
 modified_time: '2021-11-07T22:06:30.809+01:00'
-thumbnail: https://lh3.googleusercontent.com/-cGqLzCiO7I0/YYg-_ciBDpI/AAAAAAADxEk/JB0bz86yNFoompU1v0PLaLDzhGewUoLRwCLcBGAsYHQ/s72-c/out_512x512_5681102.gif
+thumbnail: /assets/img/posts/metaballs/out_512x512_5681102.gif
 blogger_id: tag:blogger.com,1999:blog-6967032375013519080.post-4842752155096363061
 blogger_orig_url: https://m635j520.blogspot.com/2021/11/metaballs-revisited.html
-cover-img: https://lh3.googleusercontent.com/-cGqLzCiO7I0/YYg-_ciBDpI/AAAAAAADxEk/JB0bz86yNFoompU1v0PLaLDzhGewUoLRwCLcBGAsYHQ/s16000/out_512x512_5681102.gif
-thumbnail-img: https://lh3.googleusercontent.com/-cGqLzCiO7I0/YYg-_ciBDpI/AAAAAAADxEk/JB0bz86yNFoompU1v0PLaLDzhGewUoLRwCLcBGAsYHQ/s16000/out_512x512_5681102.gif
-share-img: https://lh3.googleusercontent.com/-cGqLzCiO7I0/YYg-_ciBDpI/AAAAAAADxEk/JB0bz86yNFoompU1v0PLaLDzhGewUoLRwCLcBGAsYHQ/s16000/out_512x512_5681102.gif
+cover-img: /assets/img/posts/metaballs/out_512x512_5681102.gif
+thumbnail-img: /assets/img/posts/metaballs/out_512x512_5681102.gif
+share-img: /assets/img/posts/metaballs/out_512x512_5681102.gif
 ---
 
 The new visual identity of my work place (and the re-ignition of an old lava lamp) made me think of the good old metaballs from the Amiga demo-scene of yonder and how it has been a while since I have implemented them from scratch. This time I wanted to play around with Python and numpy to see what that could bring.
@@ -25,7 +25,7 @@ But first, what are metaballs?
 
 It's, for example, this:  
 
-[![](https://lh3.googleusercontent.com/-cGqLzCiO7I0/YYg-_ciBDpI/AAAAAAADxEk/JB0bz86yNFoompU1v0PLaLDzhGewUoLRwCLcBGAsYHQ/s16000/out_512x512_5681102.gif)](https://lh3.googleusercontent.com/-cGqLzCiO7I0/YYg-_ciBDpI/AAAAAAADxEk/JB0bz86yNFoompU1v0PLaLDzhGewUoLRwCLcBGAsYHQ/out_512x512_5681102.gif)
+[![](/assets/img/posts/metaballs/out_512x512_5681102.gif)](/assets/img/posts/metaballs/out_512x512_5681102.gif)
 
 Wikipedia defines them as:
 
@@ -92,7 +92,7 @@ Where update_balls is simply a updating the position of the metaballs given thei
 
 And lo and behold there were metaballs.
 
-[![](https://lh3.googleusercontent.com/-bH2ZZtFDB0Q/YYg0nBBJ4dI/AAAAAAADxEU/hMMZV3BgLUwutW_y7apecvySKHpqUum0ACLcBGAsYHQ/s16000/out_5.gif)](https://lh3.googleusercontent.com/-bH2ZZtFDB0Q/YYg0nBBJ4dI/AAAAAAADxEU/hMMZV3BgLUwutW_y7apecvySKHpqUum0ACLcBGAsYHQ/out_5.gif)
+[![](/assets/img/posts/metaballs/out_5.gif)](/assets/img/posts/metaballs/out_5.gif)
 
 However, as expected, this was rather slow. 100 frames of 128 by 128 clocking in at 46.5s on my macbook air from 2013.
 
@@ -173,7 +173,7 @@ And lo and behold it was fast! A thousand fold increase over the best approach s
 
 Admittedly it consumes more memory, but hey, memory is cheap, time is money. 
 
-[![](https://lh3.googleusercontent.com/-_OrqY4hIsvQ/YYgzfBaLcuI/AAAAAAADxEE/2cuihG7ZR3gSrCw5QI4_O4lfjFiaruIkACLcBGAsYHQ/s16000/out_512x512_5681315.gif)](https://lh3.googleusercontent.com/-_OrqY4hIsvQ/YYgzfBaLcuI/AAAAAAADxEE/2cuihG7ZR3gSrCw5QI4_O4lfjFiaruIkACLcBGAsYHQ/out_512x512_5681315.gif)
+[![](/assets/img/posts/metaballs/out_512x512_5681315.gif)](/assets/img/posts/metaballs/out_512x512_5681315.gif)
 
 Some caveats:
 
@@ -183,4 +183,4 @@ More importantly, like this I can implement a real time version of this at some 
 
 Ah, yes, I promised membranes, here’s a gif:
 
-[![](https://lh3.googleusercontent.com/-4sNaFfAPlSE/YYg0GRZEVPI/AAAAAAADxEM/xH6JjRsbhuQT7mK4aP6OAXWDap62couXgCLcBGAsYHQ/s16000/out_128x128_5680169.gif)](https://lh3.googleusercontent.com/-4sNaFfAPlSE/YYg0GRZEVPI/AAAAAAADxEM/xH6JjRsbhuQT7mK4aP6OAXWDap62couXgCLcBGAsYHQ/out_128x128_5680169.gif)
+[![](/assets/img/posts/metaballs/out_128x128_5680169.gif)](/assets/img/posts/metaballs/out_128x128_5680169.gif)
