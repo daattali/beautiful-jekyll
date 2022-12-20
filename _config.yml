@@ -75,6 +75,9 @@ url-pretty: "FurSquared.com"
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
 
+# Include these files/folders that are excluded by default
+include: [ "/.well-known" ]
+
 # Excerpt Word Length - Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
 
