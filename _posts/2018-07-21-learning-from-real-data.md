@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learning from real data
-subtitle: An MDS capstone project reflection
+subtitle: by Alexander Kleefeldt
 ---
 
 For the past three months, I was on a team of UBC [Master of Data Science](https://ubc-mds.github.io/) (MDS) students working on our MDS capstone project. Our team developed a data science product to help the course creators on the [Thinkific](thinkific.com) e-learning platform to improve their online courses. Unsurprisingly, working on the improvement of online learning was a great learning experience for ourselves. Therefore, to share some of my experiences, and as a reminder to my future self, in this post I will summarize the six most important lessons I learned during the project. But first, to give some context, I'll quickly describe the client and the project.

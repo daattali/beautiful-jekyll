@@ -10,7 +10,7 @@ We will be using [Slack](https://slack.com/) as our primary means of electronic 
 
 #### Channels
 
-Our Slack workspace, UBC-MDS, contains many _channels_ for conversation. We will enrol you in the channels for the 25 MDS courses, as well as [#data-science-careers](https://ubc-mds.slack.com/messages/data-science-careers/details/), [#git-general](https://ubc-mds.slack.com/messages/git-general/details/), [#python-general](https://ubc-mds.slack.com/messages/python-general/details/) and [#r-general](https://ubc-mds.slack.com/messages/r-general/details/). You should be automatically enrolled in the [#general](https://ubc-mds.slack.com/messages/general/details/) and [#random](https://ubc-mds.slack.com/messages/random/details/) channels when you join Slack.
+Our Slack workspace, UBC-MDS, contains many _channels_ for conversation. We will enrol you in the channels for the 25 MDS courses, as well as several other useful channels. 
 
 These channels are all public. You can create private channels as well. For example, each year the students
 typically create a private channel for students only. At some point we will also invite you to the UBC MDS Alumni Slack workspace, which is completely disconnected from the main UBC MDS Slack workspace you use as a student.
@@ -58,6 +58,12 @@ On the subject of notifications, one nice feature of Slack is the reactions. Any
 
 If you want to change something you wrote in Slack, you can always edit the message afterwards. You can also delete messages, for example if you wrote something by accident. 
 
-#### Privacy
+#### Message retention
 
-Slack is not hosted on Canadian servers, and thus we recommend keeping the discussions and private messages on Slack to those related to course content, organization, etc. For personal and sensitive issues, communication between MDS students and instructional staff should be carried out using UBC email.
+For short term retention of messages, you can click the save icon in the top right corner of a message. Your saved messages will be accessible from the "Saved items" section in the left sidebar (above the "Channels" section). You can also click the three dots in the top right corner of a message to schedule a reminder about that message, so that you remember to read it later.
+
+All UBC MDS Slack messages (including your saved items) will be deleted at the end of each year (at least, all the messages in public channels, which are the ones we can control). If you see something on Slack that you would like to save for after the MDS program, it is your responsibility to make a copy of it and save it outside Slack. Keep in mind that, after you graduate, you will be given access to the MDS course materials through github.com.
+
+#### Data residency
+
+Data for our our UBC-MDS Slack is stored on servers in Canada. 

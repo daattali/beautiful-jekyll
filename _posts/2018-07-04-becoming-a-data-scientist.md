@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Becoming a data scientist
-subtitle: My year-long hiatus from medical school
+title: "Becoming a data scientist: My year-long hiatus from medical school"
+subtitle: by Daniel Raff
 ---
 
 In my second year of medical school, I decided to open an unfamiliar email entitled "UBC Centennial Symposium on Health Informatics". What was Health Informatics? I had no idea, but I intended to find out. The symposium featured the UK's National Health Service (NHS) and showcased their use of [large population datasets](https://www.genomicsengland.co.uk/). I was impressed with how the NHS uses data to improve care. I went into medicine because of a personal desire to help people one-on-one; applying data science to healthcare seemed to provide the opportunity to positively impact millions at a time, *in addition* to one at a time.

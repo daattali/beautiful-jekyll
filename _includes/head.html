@@ -18,42 +18,42 @@
   {% include google_analytics.html %}
 
   {% if layout.common-ext-css %}
-    {% for css in layout.common-ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
+  {% for css in layout.common-ext-css %}
+  {% include ext-css.html css=css %}
+  {% endfor %}
   {% endif %}
 
   {% if layout.common-css %}
-    {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
-    {% endfor %}
+  {% for css in layout.common-css %}
+  <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+  {% endfor %}
   {% endif %}
 
   {% if layout.common-googlefonts %}
-    {% for font in layout.common-googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
-    {% endfor %}
+  {% for font in layout.common-googlefonts %}
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+  {% endfor %}
   {% endif %}
 
   {% if page.ext-css %}
-    {% for css in page.ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
+  {% for css in page.ext-css %}
+  {% include ext-css.html css=css %}
+  {% endfor %}
   {% endif %}
 
   {% if page.css %}
-    {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
-    {% endfor %}
+  {% for css in page.css %}
+  <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+  {% endfor %}
   {% endif %}
 
   {% if page.googlefonts %}
-    {% for font in page.googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
-    {% endfor %}
+  {% for font in page.googlefonts %}
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+  {% endfor %}
   {% endif %}
 
-    <!-- Facebook OpenGraph tags -->
+  <!-- Facebook OpenGraph tags -->
   {% if site.fb_app_id %}
   <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
   {% endif %}
@@ -66,7 +66,7 @@
   <meta property="og:title" content="{{ site.title }}" />
   {% endif %}
 
-   {% if page.meta-description %}
+  {% if page.meta-description %}
   <meta property="og:description" content="{{ page.meta-description }}">
   {% elsif page.subtitle %}
   <meta property="og:description" content="{{ page.subtitle }}">
@@ -117,6 +117,8 @@
   <meta name="twitter:image" content="{{ page.share-img }}" />
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.url }}{{ site.blog-photo-default }}" />
+  {% else %}
+  <meta name="twitter:image" content="{{ site.url }}/img/mdslogopad.png" />
   {% endif %}
 
   {% if site.matomo %}

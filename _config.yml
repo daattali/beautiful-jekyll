@@ -24,18 +24,22 @@ description: internal website for the UBC Master of Data Science
 # List of links in the navigation bar
 navbar-links:
   Program:
-    - Overview: "about"
+    - About : "about"
+    - Our vision: "vision"
+    - Our team: "team"
     - At a glance: "img/schedule.pdf"
     - Course Descriptions: "descriptions"
-    - Course materials: "https://github.com/UBC-MDS/public"
+    - Course Materials: "https://github.com/UBC-MDS/public"
     - Calendar: "calendar"
     - Policies and Regulations: "policies"
     - Jobs: "jobs"
   Capstone:
     - About: "capstone/about"
     - Partner info: "capstone/partner_info"
+    - Student info: "capstone/student_info"
     - Proposals: "capstone/proposal"
     - Timeline: "capstone/timeline"
+    - Legal: "capstone/guide-to-mutual-nda-ip"
     - Past projects: "capstone/past_projects"
   Resources: "resources"
   Official website: "http://masterdatascience.ubc.ca/"

@@ -63,6 +63,14 @@ is deemed necessary and appropriate to the circumstances. We are
 obligated to maintain confidentiality with regard to the reporter of an incident.
 Further details of specific enforcement policies may be posted separately.
 
+## Consequences of Unacceptable Behavior
+
+Participants who are asked to stop any inappropriate behavior are expected to comply immediately. This applies to any MDS events and platforms, either online or in-person. If a participant engages in behavior that violates this code of conduct, the teaching team may warn the offender and/or engage the MDS Co-Directors to investigate the Code of Conduct violation and impose appropriate sanctions.
+
+### Incident Reporting Guidelines
+
+If someone violates the Code of Conduct during a MDS event or in an online space outside of organised events, we ask that you report it to one of the MDS Co-Directors. The current MDS Co-Directors are Varada Kolhatkar and Rodolfo Lourenzutti. An email to kvarada@cs.ubc.ca will be seen by Varada Kolhatkar, and an email to lourenzutti@stat.ubc.ca will be seen by Rodolfo Lourenzutti. To report a MDS code of conduct violation that will not be seen by Varada Kolhatkar or Rodolfo Lourenzutti, an alternative contact person is Milad Maymay, MDS Director, Program Operations & Student Management. His email is maymay@science.ubc.ca .
+
 ## Have Fun
 
 You're embarking on a learning-centered adventure with MDS. You will experience
@@ -74,7 +82,7 @@ journey. Keep this in mind and have fun!
 ## Attribution
 
 This Code of Conduct is modified from the Contributor Covenant [homepage](https://www.contributor-covenant.org), version 1.4,
-available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html.
+available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html as well as the [Carpentries Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html).
 
 The idea behind the "Personal Pronoun and Name Preference" and "Have Fun" sections come 
 from the University of Texas at Austin's 

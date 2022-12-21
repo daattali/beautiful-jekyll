@@ -5,6 +5,81 @@ subtitle: For the MDS Capstone course
 
 ---
 
+2021:
+
+- [Analytika](http://www.analytika.ca/): _Transforming Customer Experiences_
+- [BC Centre on Substance Use](https://www.bccsu.ca/): _Using data science to identify and visualize novel compounds in illicit drug checking samples_
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Understanding voting method choices in the 2020 BC General Election_
+- [British Columbia Investment Management Corporation (BCI)](https://www.bci.ca/): _What Can SEC 10-K Textual Disclosures Tell Us About a Firm’s Earnings Quality and Future Stock Returns?_
+- Canada Web Analytics Team: _Determining the Use Cases Across Data Science Sub-Fields for the Government of Canada's Web Analytics Operations_
+- [Cenovus](https://www.cenovus.com/): _Using Time Series Temperature Data to Determine Well Productivity_
+- [Collaboration for Outcomes Research and Evaluation (CORE)](https://core.ubc.ca/): _Data science and health outcomes research_
+- [Dialpad](https://www.dialpad.com/): _Detecting Emerging Topics, Trends and Anomalies from Call Center Transcripts_
+- [Dialpad](https://www.dialpad.com/): _Understanding & Predicting Customer Satisfaction Using Vocal Features_
+- [Gerontology and Diabetes Research Laboratory (GDRL)](https://www.vchri.ca/): _Machine Learning Approaches to: 1. Diagnosing Lipohypertrophy at the bedside, and 2. Falls Prediction in Long Term Care_
+- [Glentel](https://www.glentel.com/home): _People Analytics_
+- [GoldSpot](https://goldspot.ca/): _Automated drill core logging through the lens of Machine learning and Deep learning_
+- [Hootsuite](https://www.hootsuite.com/): _Customer Segmentation using Hootsuite Product Usage Data_
+- [Newsly](https://www.newsly.me/): _Audio listening preferences_
+- [Orbis Investments](https://www.orbis.com/ca/institutional/home): _Earning Calls Deception Analysis_
+- [PayByPhone](https://www.paybyphone.com/): _Anomaly Detection_
+- [Properly Inc](https://www.properly.ca/): _Image Processing: Quantifying The Home Condition From Property Images_
+- [Realtor.com](https://www.realtor.com/): _Identifying real estate investment opportunities using Machine Learning_
+- [Realtor.com](https://www.realtor.com/): _Will they or won't they? Return user prediction_
+- [Sensing in Biomechanical Processes Lab (SimPL)](http://simpl.mech.ubc.ca/): _Extracting and visualizing the human brain state using EEG data_
+- UBC Cybersecurity Group: _Defend UBC_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Football Fortune Telling: Predicting MLS Performance_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Match Fit – Using Optical Tracking Data to Evaluate MLS Players’ Power, Fitness & Fatigue_
+- [aDolus Inc](https://www.adolus.com/): _Software File Clustering (What is this file?)_
+
+
+2020:
+
+- [aDolus](https://www.adolus.com/): _Unearthing Hidden Vulnerabilities in Mission Critical Software_
+- [Analytika](http://www.analytika.ca/): _Smart Agriculture_
+- [Analytika](http://www.analytika.ca/): _Wells Timelines_
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Text Analytics: Quantifying the Responses to Open-Ended Survey Questions_
+- [BGC Engineering](https://bgcengineering.ca/): _Automated Tailings Dam Detection from Satellite Data_
+- [BGC Engineering](https://bgcengineering.ca/): _Data Driven Flood Forecasting_
+- [Biba Ventures](https://www.playbiba.com/): _Using Machine Learning to Predict Playground Usage Across the Continent_
+- [The Deetken Group](https://deetken.com/): _Forecasting the Evolution of Vancouver's Business Landscape_ 
+- [E-Comm 911](https://www.ecomm911.ca/): _Natural language processing to help save lives and protect property_
+- [Glentel](http://www.glentel.com/home): _Making sense of people data_
+- [GoldSpot Discoveries](https://goldspot.ca/): _Core Photo Analysis_
+- [MDA](https://mdacorporation.com/): _Image Captioning of Overhead Earth Observation Imagery_
+- [Merchant Growth](https://www.merchantgrowth.com/): _Merchant Score: Intelligent Credit Decisioning For Risk Management_
+- [PayByPhone](https://www.paybyphone.com/): _Crowdsourced parking locations_
+- [Realtor.com](https://www.realtor.com/): _Photo-realistic Neighborhood Image Synthesis_
+- [Riversol Skincare Solutions](https://www.riversol.com/): _E-commerce domination in highly competitive markets driven by data science_
+- Seahorse Strategies: _Seahorse Momentum Indicator_
+- [TransLink](https://www.translink.ca/): _Vision over Transit Incidents & Claims_
+- [TransLink](https://www.translink.ca/): _Understanding Bus Delay in Metro Vancouver_
+- [TransLink](https://www.translink.ca/): _Optimizing Transit Stops_
+- [UrbanLogiq](https://www.urbanlogiq.com/): _Analysis of Connected Vehicle Driving Behaviour as a Predictor of Accidents_
+- [UrbanLogiq](https://www.urbanlogiq.com/): _Contextual analysis of amenity gaps in at-risk communities_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Modelling the Physical Performances of the Vancouver Whitecaps_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Understanding Players' Offensive and Defensive Performance in Major League Soccer_
+
+2019:
+
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Quantifying the Responses to Open-Ended Survey Questions_
+- [BGC Engineering](https://bgcengineering.ca/): _Automated Landslide Detection and Delineation from Digital Terrain Data_               
+- [British Columbia Maritime Employers Association](http://www.bcmea.com/): _Improving Labour Forecasting to Promote the Competitiveness of BC Ports_
+- [E-Comm 911](https://www.ecomm911.ca/): _Predictive Staffing Model to Help Save Life and Protect Property_
+- [Fresh Prep](https://www.freshprep.ca/): _Forecasting Meal Kit Orders_
+- [Management Information Systems Group, UBC Sauder School of Business](https://www.sauder.ubc.ca/Faculty/Divisions/Management_Information_Systems_Division): _Extracting a Corporate Social Network from SEC Filings_
+- [Minerai de fer Québec / Quebec Iron Ore](https://mineraiferquebec.com/?lang=en): _Image recognition of rock types for identification of rock formations_
+- [Minerai de fer Québec / Quebec Iron Ore](https://mineraiferquebec.com/?lang=en): _Predicting geological properties from drill metrics to predict rock composition_
+- [Providence Health Care](http://www.providencehealthcare.org/): _Forecasting of Staffing Needs_
+- [QxMD](https://qxmd.com/): _Generate cross-product recommendations to help get medical research adopted in clinical practice_
+- [QxMD](https://qxmd.com/): _Match real-time news stories with medical research literature_
+- [RStudio](https://www.rstudio.com/): _What the Git Is Going On Here!?_
+- [Realtor.com](https://www.realtor.com/): _Estimate the Value of Key Local attributes used in buying decisions_
+- Seahorse Strategies: _Predicting the Stock Market_
+- [TRIUMF](https://www.triumf.ca/): _π-e-μ AI_
+- [TeejLab](https://teejlab.com/): _Technical Legal Risk Assessment for Data Services_
+- [Tetrad](http://www.tetrad.com/): _Understanding Restaurant Sales_
+- [UrbanLogiq](https://www.urbanlogiq.com/): _Indicators of Crash Severity_
 
 2018:
 

@@ -5,95 +5,67 @@ subtitle: For MDS Capstone Projects
 
 ---
 
-This year's capstone course will run __April 22, 2019 - June 27, 2019__ (10 weeks).
+This year's capstone course will run __May - June, 2023__ (~8 weeks).
 
-The **approximate** timeline is below, followed by additional detail on each event.
+**The soft deadline for UBC Capstone proposals is Nov 1st. And the hard deadline is Nov 30th.** Proposals sent in by Nov 1st will receive feedback (that will hopefully increase their chances of being selected).
 
-| Event | Deadline/Period |
-| ----- | ---- |
-| Suggested initial submission of proposal | November 15, 2018 |
-| [Proposal deadline](#proposal-revision-process) | December 31, 2018  |
-| [Students rate proposals](#students-rate-proposals) | January 10, 2019  |
-| [Selection of proposals](#selection-of-proposals) | January 15, 2019   |
-| [Partners accept invitations](#partners-accept-invitations) | January 30, 2019  |
-| [Capstone fair](#capstone-fair)       | March 1, 2019 |
-| [Students rate the projects](#students-rate-the-projects)  | early March, 2019 |
-| [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 15, 2019  |
-| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 15, 2019 |
-| [Students are assigned to projects](#students-are-assigned-to-projects) | March 15, 2019  |
-| [Kickoff meetings](#kickoff-meetings)    | April 1 - April 15, 2019 |
-| [Phase 1: student proposals](#student-proposals) |  May 5, 2019 |
-| [Phase 2: project development](#project-development-stage) | May 5 - June 20, 2019   |
-| [Student presentations](#project-presentations) | June 15 - June 25, 2019 |
+| Event                                                                                          | Deadline/Period       |
+|------------------------------------------------------------------------------------------------|-----------------------|
+| [Call for Capstone proposals opens](https://ubc-mds.github.io/capstone/proposal/)              | September 1, 2022     |
+| [Suggested initial submission of proposal](#proposal-revision-process)                         | November 1, 2022      |
+| [Proposal deadline](#proposal-revision-process)                                                | November 30, 2022     |
+| [Selection of proposals](#selection-of-proposals)                                              | December 15, 2022     |
+| [Partners submit video presentations](#partners-submit-video-presentations)                    | January 11, 2023      |
+| [Capstone fair](#capstone-fair)                                                                | January 20 2023       |
+| [Students rate the projects](#students-rate-the-projects)                                      | End-January, 2023     |
+| [Partners demonstrate readiness of data and sign legal docs](#partners-demonstrate-readiness-of-data-and-sign-legal-docs)                                    | February 1, 2023      |
+| Students are assigned to projects                                                              | Feb - March, 2023     |
+| [Kickoff meetings](#kickoff-meetings)                                                          | April, 2023           |
+| [Project](#project)                                                                            | May 1 - June 29, 2023 |
+| [Kickoff hackathon](#hackathon)                                                                | May 1 - May 3, 2023   |
 
-#### Proposal revision process
+<br>
 
-Members of an organization interested in participating as a capstone partner should submit a project [proposal](https://ubc-mds.github.io/capstone/partner_info/#proposals).
+## Proposal revision process
 
-Members of the MDS leadership team will review the proposal, and work with the potential partner to establish a finalized proposal. Potential partners should feel free to ask us for our opinion on any aspect of this step ahead of time, such as whether the main idea of the proposal is appropriate.
+Members of an organization interested in participating as a capstone partner should submit a project [proposal](https://ubc-mds.github.io/capstone/proposal/).
 
-We recommend your first submission of the proposal to be well before the December 31st deadline, so that we can offer suggestions in case it needs revision.
+Proposals received *before November 1st* will be reviewed by the MDS teams and feedback/suggestions for revisions will be provided to the partner, who can then revise and re-submit their proposal. This revision process aims to maximize the chance of a proposal being selected by students. Proposals received *after November 1st* will not be provided with feedback.
 
-#### Students rate proposals
-
-A list of finalized proposals, along with one-sentence summaries, will be posted on a "project board" viewable by the students. The students will then rate their interest in the proposals.
-
-#### Selection of proposals
+## Selection of proposals
 
 The MDS leadership team will select proposals based primarily on student interest, and will invite the successful organizations to be a capstone partner.
 
-#### Partners accept invitations
+## Partners submit video presentations
+Capstone partners should submit video presentations (5-10 minutes) to provide information additional to the proposals. We are not expecting production-quality videos and we do not want you to spend too much time on this. The main purpose here is to help our students better understand your project(s) before attending the capstone fair so that they are ready to ask you meaningful questions.
 
-The successful capstone partners accept the offers, and confirm their attendance at the capstone fair.
+## Capstone fair
 
-#### Capstone fair
+Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. For remote capstone partners, we will organize a virtual fair. Detailed information will be emailed to each capstone partner. 
 
-Capstone partners must attend the Capstone Fair, to be held in February 2019 (date TBD), to meet with the students and answer any questions they may have. Detailed information will be emailed to each capstone partner.
+<!-- An example of a Capstone fair slide deck can be found [here](/capstone/Sauder2019CapstoneFair.pdf).-->
 
-
-#### Students rate the projects
+## Students rate the projects
 
 After the capstone fair, the students assign a final rating to the projects.
 
+## Partners are notified of our decisions
 
-#### Partners provide legal documents and declare conflicts of interest
+Based on student interest, the MDS leadership team decides which projects will move forward. Student groups are assigned to the projects at the same time.
 
-Before students rate the projects, they should have access to any legal documents they would need to sign in order to work on the project. Thus, partners must provide these documents before the rating stage. Furthermore, students should be aware of any potential conflicts of interest before rating the project, so partners are asked to declare these as well.
-
-
-#### Partners provide data
+## Partners demonstrate readiness of data and sign legal docs
 
 Before a project is accepted, the partner must provide MDS with a demonstration or written (email) declaration that the data has already been collected and prepared, and exists in its entirety (in the form specified in the proposal), and is ready to be shared with the students.
+Partners should feel free to ask us for our standard agreement and sign the relevant legal documents before moving forward.
 
-Partners should feel free to ask us for our standard agreement at any point in the selection procedure.
+## Kickoff meetings
 
-#### Students are assigned to projects
+The students will arrange a date and time with their capstone partner and teaching fellow mentor to have an initial meeting to discuss the project. It is common that students sign any required legal documents at this meeting, which means the students should be sent the documents for review well in advance.
 
-Based on student interest, the MDS leadership team assigns student groups to the projects. In the unlikely scenario that there is insufficient interest in a project, no student group will be assigned to that project.
+## Project
 
-#### Kickoff meetings
+The project itself. At the end, partners can expect the students to present at the partner organizations. Partners will also be invited to an end-of-program celebration at UBC.
 
-The students will arrange a date and time with their capstone partner and teaching fellow mentor to have an initial meeting to discuss the project.
+## Hackathon
 
-#### Student proposal stage
-
-Students propose the data product and approach.
-
-  1. The student team works with each other, colleagues, and teaching fellows to develop an approach in a 2-day hackathon.
-  2. Students present the proposal at UBC, to solicit ideas and feedback.
-  3. Students write the proposal. This will be passed to the capstone partner to check that the proposed product is indeed in line with the capstone partner's needs.
-
-#### Project development stage
-
-Students develop the data product. This involves:
-
-  - Regular meetings with the teaching fellow mentor.
-  - Regular meetings with the capstone partner.
-
-#### Project presentations
-
-Towards the end of June, students present their project in the following settings:
-
-  - To their classmates at UBC (graded by the project mentors).
-  - At their partner organization.
-  - At an end-of-program celebration at UBC.
+The Capstone project typically starts with a 3-day hackathon at the UBC main Point Grey campus. Capstone partners are strongly encouraged to attend the afternoon of the 2nd day of the hackathon. In the past, students have found this very valuable, as they were able to ask questions about their dataset and clarify other data science issues with the partner.

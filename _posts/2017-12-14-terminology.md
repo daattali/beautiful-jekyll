@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Statistics-ML dictionary
+subtitle: by Mike Gelbart
 ---
 
 One of the most rewarding aspects of working on the [UBC Master of Data Science](https://masterdatascience.science.ubc.ca/) program has been the close collaboration between my home department, 

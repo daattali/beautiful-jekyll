@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bringing data science to new industries
-subtitle: An MDS capstone project reflection
+subtitle: by Ted Haley
 ---
 
 Before starting the [Master of Data Science](https://masterdatascience.science.ubc.ca/) (MDS) program at UBC, I had been working as a civil engineer for a consulting firm in Vancouver. I soon realized that despite producing vast amounts of data, the civil engineering and construction industries have felt little influence from advancements in data science and machine learning. Having seen the capabilities of data science and machine learning implemented in other industries, it became apparent that the civil engineering and construction industries could benefit greatly through the implementation of these technologies. 

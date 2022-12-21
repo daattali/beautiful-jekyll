@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Communication in data science
-subtitle: More than just the final report
+title: "Communication in data science: more than just the final report"
+subtitle: by David Laing
 ---
 
 When people stress the importance of good communication in data science, they are usually saying something like what Hadley Wickham says in his book [R for Data Science](http://r4ds.had.co.nz/communicate-intro.html): "[It] doesn’t matter how great your analysis is unless you can explain it to others: you need to communicate your results." In other words, good communication is crucial to data science because it is the final step, without which all prior work would be wasted.

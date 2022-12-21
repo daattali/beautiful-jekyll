@@ -7,3 +7,5 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
+.Rproj.user
+UBC-MDS.github.io.Rproj

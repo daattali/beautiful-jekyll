@@ -1,0 +1,1 @@
+bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/master/resources_pages/check-setup-mds.sh) | grep "You need \|You are recommended\|  python\|  conda\|  bash\|  git\|  code\|pandas=\|pyppeteer=\|nbconvert=\|jupyterlab=\|jupyterlab-git=\|jupyterlab-spellchecker=\|jupyter-book=\|jupyterlab WebPDF\|jupyterlab HTML" 

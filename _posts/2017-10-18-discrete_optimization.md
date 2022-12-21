@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Algorithms and optimization
+subtitle: by Mike Gelbart
 ---
 
 Over the years I've struggled with the disconnect between "algorithms" — as a student might see
 in a standard algorithms and data structures class — and optimization. Several of the algorithms taught in such courses
 are in fact instances of (discrete) optimization: for example, dynamic programming (DP), or Dijkstra's algorithm for finding the shortest path in a graph (related to DP), or greedy algorithms for solving the traveling salesman problem. I like the example of dynamic programming in particular because it can often form a conceptual island in students' minds, without apparent connection to any of their other knowledge (for example, in the famous [CLRS algorithms book](https://en.wikipedia.org/wiki/Introduction_to_Algorithms), DP is listed under the miscellaneous heading "Advanced Design and Analysis Techniques").
 In this post I'll do a deep dive into one of our MDS assignments (or "labs" as we call them — but they're really assignments) that attempts to connect these concepts using a single application.
-The lab is [available here](https://github.com/UBC-MDS/public/blob/master/courses/512_alg-data-struct/labs/lab4/lab4.ipynb), as part of our [publicly available teaching materials](https://github.com/UBC-MDS/public).
+The lab is [available here](https://github.com/UBC-MDS/DSCI_512_alg-data-struct/blob/master/labs/lab4/lab4.ipynb), as part of our [publicly available teaching materials](https://github.com/UBC-MDS/public).
 
 In the lab,
 the students apply several approaches to [seam carving](https://en.wikipedia.org/wiki/Seam_carving), which is a clever way of resizing images. Seam carving works by assigning an energy value to each pixel (based on, say, changes in brightness) and then iteratively removing the seam (a connected path across the image) that includes the least total energy. The problem of selecting the best seam is often used as an example application for DP.
