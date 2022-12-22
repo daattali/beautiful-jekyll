@@ -93,11 +93,13 @@ def dice_pair_generator(d=6, arr=[]):
 ### Anecdote
 
 > "And so, to celebrate the beginning of holidays, I have an offer for you. Take the rules of your favourite game and read it very, very carefully, one paragraph a time. There’s a chance that you find a detail or a few proving irrefutably, that you’ve been playing it the wrong way."
+
 - [Ignazy Trzewiczek](https://boardgamesthattellstories.wordpress.com/2013/01/08/a-new-expansion-for-free/)
 
-The reason for the "\_orig" part of the function names above, is because, when my friend had tought us the rules to the game he had, well, interpreted them wrongly. His interpretation was that we could only place the new dice next to already existing dice in our grid, but they didn't have to be next to each other. Whereas it is the complete oposite – one can place the dice _anywhere_ in the grid, but they have to be ortogonally next to each other. The game actually works both ways, but I think Knizia made the correct choice in the official rules... 
+The reason for the "\_orig" part of the function names above, is because, when my friend had thought us the rules to the game he had, well, interpreted them wrongly. His interpretation was that we could only place the new dice next to already existing dice in our grid, but they didn't have to be next to each other. Whereas it is the complete opposite – one can place the dice _anywhere_ in the grid, but they have to be orthogonally next to each other. The game actually works both ways, but I think Knizia made the correct choice in the official rules... 
 
 > "Do play it according to the genuine rules. Experience the taste of freshness, discover new possibilities in your beloved board game, and name the new rules “Trzewiczek’s expansion”. It applies to any game. And you get it from me for free."
+
 - [Ignazy Trzewiczek](https://boardgamesthattellstories.wordpress.com/2013/01/08/a-new-expansion-for-free/)
 
 So, "Florent's variant", then.
@@ -154,16 +156,16 @@ for move in vm:
 
 And lo and behold, the mean went up from 17 to 30.5!
 
-| stat  |                | 
-|-------|---------------:|
-| count |   10000.000000 |
-| mean  |      30.491000 |
-| std   |       9.092777 |
-| min   |      -8.000000 |
-| 25%   |      25.000000 |
-| 50%   |      31.000000 |
-| 75%   |      37.000000 |
-| max   |      60.000000 |
+| stat  |              |
+| ----- | ------------:|
+| count | 10000.000000 |
+| mean  | 30.491000    |
+| std   | 9.092777     |
+| min   | -8.000000    |
+| 25%   | 25.000000    |
+| 50%   | 31.000000    |
+| 75%   | 37.000000    |
+| max   | 60.000000    |
 
 !['Local'](/assets/img/posts/detrak/local.png)
 
@@ -194,17 +196,17 @@ As you might see, I decided to weigh the 'local' score a bit higher (2/3) than t
 
 And lo and behold, the mean went up from 30.5 to 31.5!
 
-| stat  |               | 
-|-------|--------------:|
-| count |     100.00000 |
-| mean  |      31.53000 |
-| std   |       7.97275 |
-| min   |      10.00000 |
-| 25%   |      27.75000 |
-| 50%   |      32.00000 |
-| 75%   |      37.00000 |
-| max   |      50.00000 |
+| stat  |           |
+| ----- | ---------:|
+| count | 100.00000 |
+| mean  | 31.53000  |
+| std   | 7.97275   |
+| min   | 10.00000  |
+| 25%   | 27.75000  |
+| 50%   | 32.00000  |
+| 75%   | 37.00000  |
+| max   | 50.00000  |
 
 ## Summary
 
-Not _too_ bad, but still, not human level, as our analog winning scores were hovering around 40... (Again, this is using 'Florent's variant' rules as [outlined above](#anecdote), and is not comparable to scores in the **real** game.) Next up: [recursion](/2022-05-22-criss-cross-ai-1/)!
+Not _too_ bad, but still, not human level, as our analogue winning scores were hovering around 40... (Again, this is using 'Florent's variant' rules as [outlined above](#anecdote), and is not comparable to scores in the **real** game.) Next up: [recursion](/2022-05-22-criss-cross-ai-1/)!

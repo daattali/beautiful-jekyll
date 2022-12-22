@@ -77,18 +77,19 @@ for _ in range(0,10000):
     g = np.random.randint(low = 1, high = 6, size = (5,5))
     scores.append(score_grid(g))
 ```
+
 A quick df.describe we get this:
 
-| stat  |                | 
-|-------|---------------:|
-| count |	10000.000000 |
-| mean  |	   -6.262300 |
-| std   |      14.376354 |
-| min   |     -53.000000 |
-| 25%   |     -16.000000 |
-| 50%   |      -7.000000 |
-| 75%   |       4.000000 |
-| max   |      54.000000 |
+| stat  |              |
+| ----- | ------------:|
+| count | 10000.000000 |
+| mean  | -6.262300    |
+| std   | 14.376354    |
+| min   | -53.000000   |
+| 25%   | -16.000000   |
+| 50%   | -7.000000    |
+| 75%   | 4.000000     |
+| max   | 54.000000    |
 
 And, we can (mat)plot(lib) it like so:
 
