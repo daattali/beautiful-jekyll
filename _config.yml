@@ -29,6 +29,8 @@ navbar-links:
 #    - restful: "https://restfulapi.cn/"
   Life Resources:
     - 健身: "https://musclewiki.cn/"
+  fun:
+    - 神奇海螺: "https://lab.magiconch.com/"
 
 ################
 # --- Logo --- #
