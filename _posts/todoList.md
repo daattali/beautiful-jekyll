@@ -8,9 +8,17 @@ tags: [test]
 comments: true
 ---
 
-
 ### 待办事项
 
+| 待办                               | 当前进度                                                     | 重要程度 |
+| :--------------------------------- | :----------------------------------------------------------- | :------- |
+| 算法                               | https://github.com/trekhleb/javascript-algorithms            | 4        |
+| spring文档                         | https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#spring-core | 4        |
+| 计算机网络                         |                                                              | 4        |
+| elasticsearch-APM日志，meteric日志 |                                                              | 5        |
+| 优雅关闭                           |                                                              | 5        |
+| k8s                                |                                                              | 6        |
+| mybatis                            |                                                              | 5        |
 | 待办                               | 文档地址                                                     | 描述           | 重要程度 |
 | :--------------------------------- | :----------------------------------------------------------- | -------------- | :------- |
 | 算法                               | https://github.com/trekhleb/javascript-algorithms            | 看算法         | 4        |
@@ -21,4 +29,3 @@ comments: true
 | 优雅关闭                           |                                                              |                | 6        |
 | k8s                                |                                                              |                | 6        |
 | mybatis                            |                                                              |                | 6        |
-
