@@ -20,7 +20,6 @@ author: Wurara - Giddens Ko
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
   Developer Resources:
     - 算法动画: "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
     - leetcode刷题: "https://leetcode.com/explore/"
@@ -29,8 +28,9 @@ navbar-links:
 #    - restful: "https://restfulapi.cn/"
   Life Resources:
     - 健身: "https://musclewiki.cn/"
-  fun:
+  entertainment:
     - 神奇海螺: "https://lab.magiconch.com/"
+  About Me: "aboutme"
 
 ################
 # --- Logo --- #
