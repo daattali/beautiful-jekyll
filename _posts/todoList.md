@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 待办事项
-subtitle: 要学习的东西
+title: Todoist
+subtitle: learn thing
 gh-repo: wurara/wurara.github.io
 gh-badge: [star, fork, follow]
 tags: [test]
@@ -9,7 +9,7 @@ comments: true
 ---
 
 
-### 代办事项
+### 待办事项
 
 | 待办                               | 当前进度                                                     | 重要程度 |
 | :--------------------------------- | :----------------------------------------------------------- | :------- |
