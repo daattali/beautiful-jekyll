@@ -22,14 +22,13 @@ author: Wurara - Giddens Ko
 navbar-links:
   About Me: "aboutme"
   Developer Resources:
-    - algorithm cartoon: "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
-    - leetcode: "https://leetcode.com/explore/"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-    - developer search: "https://beta.sayhello.so/"
-    - restful guildline: "http://restful.p2hp.com/"
+    - 算法动画: "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
+    - leetcode刷题: "https://leetcode.com/explore/"
+    - markdown教程: "https://commonmark.org/help/tutorial/"
+    - 开发搜索: "https://beta.sayhello.so/"
+#    - restful: "https://restfulapi.cn/"
   Life Resources:
-    - musale: "https://musclewiki.cn/"
-  Wurara: "https://github.com/wurara"
+    - 健身: "https://musclewiki.cn/"
 
 ################
 # --- Logo --- #
