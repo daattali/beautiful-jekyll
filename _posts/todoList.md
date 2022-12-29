@@ -2,7 +2,7 @@
 layout: post
 title: Todoist
 subtitle: learn thing
-gh-repo: wurara/wurara.github.io
+gh-repo: https://github.com/wurara/wurara.github.io/edit/master/_posts/todoList.md
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
@@ -22,4 +22,3 @@ comments: true
 | k8s                                |                                                              |                | 6        |
 | mybatis                            |                                                              |                | 6        |
 
-[editPage](https://github.com/wurara/wurara.github.io/edit/master/_posts/todoList.md)
