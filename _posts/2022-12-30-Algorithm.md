@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Todoist
-subtitle: learn thing
+title: 算法笔记
+subtitle: [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-30-Algorithm.md)
 gh-repo: wurara/wurara.github.io
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [Algorithm]
 comments: true
 ---
 
 - 贪心算法
 
   每个子问题取最优解，问题就是最优解。
-  - [背包算法](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/sets/knapsack-problem)
+  - [最简理解背包算法](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/sets/knapsack-problem)
 - 动态规划
 
   每个子问题结果存缓存，下次碰到这个子问题就从缓存中获得结果。
@@ -20,10 +20,10 @@ comments: true
   
   第一次计算结果为6，后续计算不需要从头遍历求每一次加法的解，只需要将缓存的6取出再次+1即可求解。
   
-  - [CSDN](https://blog.csdn.net/u013309870/article/details/75193592)
-    - 自顶向下：在求算过程中缓存子问题结果并缓存
+  - [好文章CSDN](https://blog.csdn.net/u013309870/article/details/75193592)
+    - 自顶向下：在求算过程中缓存子问题结果（合并的子问题结果如1+1+1=3的结果）并缓存
     - 自底向上：在求算前算出每个子问题的结果并缓存
  
 - 分治法
 
-  
+  [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-30-Algorithm.md)
