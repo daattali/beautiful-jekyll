@@ -30,7 +30,8 @@ navbar-links:
     - 健身: "https://musclewiki.cn/"
   entertainment:
     - 神奇海螺: "https://lab.magiconch.com/"
-  About Me: "aboutme"
+  project: "https://github.com/wurara/wurara.github.io"
+#  About Me: "aboutme"
 
 ################
 # --- Logo --- #
