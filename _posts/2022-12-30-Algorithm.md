@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 算法笔记
-subtitle: [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-30-Algorithm.md)
+subtitle: https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-30-Algorithm.md
 gh-repo: wurara/wurara.github.io
 gh-badge: [star, fork, follow]
 tags: [Algorithm]
