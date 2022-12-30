@@ -1,0 +1,13 @@
+{
+    "headers": [
+      {
+        "match": "/.well-known/webfinger",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      }
+    ]
+  }
