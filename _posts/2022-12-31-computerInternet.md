@@ -38,6 +38,8 @@ comments: true
     - SDU：发送的数据
     - 源信息:IP+TCP(UDP)端口
     - 目标信息:对方的IP+TCP(UDP)端口
+
+
    {: .box-note}
    Socket是一个整数(相当于一个key)，应用层将这个整数传给**本地的传输层**，传输层通过Socket值查询获得TCP的四元组(源IP、源端口、目标IP、目标端口)或UDP的二元组(本机IP、本机端口)。所以TCP协议需要给传输层传输Socket值和SDU(传输数据)
  
