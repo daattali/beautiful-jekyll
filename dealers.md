@@ -17,27 +17,29 @@ css:
 | Feb. 12 - Feb. 26 | Table Payment Window |
 | February 27, 2023 | Unpaid/Abandoned spaces released to Waiting List |
 
-Thank you for your interest in dealing in our Night Market!
+/PICTURE of Draggor
 
-/PICTURE of  Adult Dealer’s Dino
+Vendors get ready!
 
-This is our first year trying this out so we would love some enthusiastic and flexible participants who are willing to work with us and give feedback so we can grow and learn together.
+We’re looking forward to another exciting year for Fur Squared and another year of exciting offerings in our Dealer’s Den!
 
-If you have been to Fur Squared before, the Night Market will occupy the same space as the Artist Alley, during the evenings when the Artist Alley is closed. Thus there will be a nightly set-up and tear-down. The Night Market will run Friday and Saturday night, specific times TBD but we are anticipating a 3 or 4 hour window during which the Night Market will be open to attendees for purchases, with one hour of set-up and tear-down time each. You will be able to tear-down early if you want to.
+Big things are coming to Fur Squared! This year, in addition to the regular Dealer’s Den, we will also be taking applications to our brand new after dark dealer’s den, the NIGHT MARKET!! This will be an 18+ adult only space for our dealers to take advantage of. This will be by application only, and will have a daily set-up/nightly take-down.
 
-Art depicting illegal content will not be allowed. We recommend that anything considered “extreme” or otherwise potentially dangerously triggering, be kept in a binder (or otherwise out of plain sight) with content warnings (for example: extreme gore, non-consent, etc.). However, the entire room itself will be 18+, so in general your wares do not need to be hidden from plain view.
+If you sell mostly or solely NSFW/18+ type art or merchandise, please click here for more information and the Dealer application for the Night Market: (link to “Night Market” web page).
 
-/PICTURE of Allikuja
+Thank you once again for making the Dealer’s Den an amazing part of Fur Squared.
 
- \
-To vend in the state of Wisconsin, you are required to have a valid Wisconsin Tax ID. If you do not have one already, you can get one <span style="text-decoration:underline;">here</span> ([https://tap.revenue.wi.gov/mta/_/#0](https://tap.revenue.wi.gov/mta/_/#0)), and click <span style="text-decoration:underline;">Register A Business</span> to start. \
- \
-Click the “Night Market Application” link below to apply to be a vendor in Fur Squared’s Night Market. You will need your personal information as well as links to your website/social media in order to show us your wares. \
- \
-Please note that the Dealer’s Den Table (or tables) is/are purchased **SEPARATELY** from convention attendance. **<span style="text-decoration:underline;">The cost of a Night Market table at Fur Squared 2023 is $30</span>**.
+/PICTURE of MLW
 
-To complete your Night Market application you will need the following information:
+To vend in the state of Wisconsin, you are required to have a valid Wisconsin Tax ID. If you do not have one already, you can get one ([here](https://tap.revenue.wi.gov/mta/_/#0)), and click Register A Business to start.
 
+Click the “Dealer Application” link below to apply to be a vendor in Fur Squared’s Dealer’s Den. You will need your personal information as well as links to your website/social media in order to show us your wares.
+
+Please note that the Dealer’s Den Table (or tables) is/are purchased SEPARATELY from convention attendance. The cost of a Dealer’s Den table at Fur Squared 2023 is $75. We have extremely limited two-table spots. Two-table booths will be considered but single-table booths will be prioritized so that we can get as many vendors as possible in our limited Dealer’s Den space. Please note in the application if you can work within a consolidated space.
+
+Important note for Returning Dealers: Because we have a sizable volume of “Regulars”, Dealers who sell at Fur Squared every year, we have decided to implement a 4-on/1-off system to allow new Dealers a larger opportunity to sell at Fur Squared. Basically, for every four years in a row that you sell at Fur Squared, you will be given one year off, so that we have more spaces available to new Dealers. That said, we will be using a random draw to determine when your “1-off” year is because many of you have already been selling at Fur Squared for over four years and we don’t want to have all of you sit out the same year. We love having all of our Dealers, but because Dealer space is so limited we wanted to create more opportunities for more people to sell in Fur Squared’s Dealer’s Den.  ((NOTE TO WEBTEAM: INDENT THIS PARAGRAPH ON BOTH SIDES))
+
+To complete your Dealer application you will need the following information:
 * Email
 * Do you **need** electricity for your table?
 * [Wisconsin Tax ID](https://tap.revenue.wi.gov/mta/_/#0) (see above)
@@ -45,6 +47,6 @@ To complete your Night Market application you will need the following informatio
 * What do you sell?
 * Your Branding/Website/etc.
 
-Night Market Application
+Dealer Application
 
-(Link to the Night Market google form)
+(Link to Dealer’s Den google form)
