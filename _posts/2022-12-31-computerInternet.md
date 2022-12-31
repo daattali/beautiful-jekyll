@@ -24,6 +24,7 @@ comments: true
 交换机只有链路层和物理层，路由器有网络层、链路层、物理层  
 {: .box-note}
 tcp/ip协议没有表示层和会话层，ISO/OSI有标识层和会话层  
+{: .box-note}
 一   
 ## 网络架构
 - C/S
