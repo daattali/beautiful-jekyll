@@ -14,6 +14,23 @@ url: "https://fursquared.com"
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  About: "about"
+  Code of Conduct: "code-of-conduct"
+  Covid Policy: "covid-policy"
+  Hotel: "hotel"
+  Registration: "registration"
+  Programming: "programming"
+  #Schedule: "schedule"
+  Theme: "theme"
+  #Dealers & Artists: "dealers"
+  Dealers: "dealers"
+  Artists: "artist-alley"
+  #  Staff: "staff"
+  Volunteer: "volunteer"
+  #Store: "https://fursquared.square.site/"
+  Contact: "contact"
+  #  Social Media:
+  #    - Twitter: "https://twitter.com/fursquared"
 
 # --- Logo --- #
 

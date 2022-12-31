@@ -1,0 +1,13 @@
+---
+layout: null
+---
+
+.t22 {
+    &.redacted {
+        background-color: {{ site.page-text-col | default: "#404040" }};
+        display: inline;
+        margin: 0px;
+        padding: 0px;
+        white-space: pre;
+    }   
+}

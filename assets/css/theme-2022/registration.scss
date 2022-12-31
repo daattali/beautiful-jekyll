@@ -1,0 +1,17 @@
+---
+layout: null
+---
+
+table {
+    table-layout: fixed;
+    max-width: 500px;
+    margin: 1.875rem 0;
+
+    tr {
+
+        td:first-child {
+            background-color: {{ site.navbar-col }};
+
+        }
+    }
+}
