@@ -18,12 +18,14 @@ comments: true
   - 网络层：从源主机到目标主机（多个相邻网络节点）传输**分组（packet）或数据报(datagram)**
   - 链路层：在相邻网络节点上传输数据**帧(frame)**
   - 物理层：在线路上传输**比特(bit)**
-
- ![Alt](https://github.com/wurara/wurara.github.io/tree/master/assets/img/computerInternet)
  
  tips:
  - 链路层和物理层一般在网卡中
  - tcp/ip协议没有表示层和会话层，ISO/OSI有标识层和会话层
  - 交换机只有链路层和物理层，路由器有网络层、链路层、物理层
+
+- 网络架构
+  - C/S
+  - P2P
  
 [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-13-31-computerInternet.md)
