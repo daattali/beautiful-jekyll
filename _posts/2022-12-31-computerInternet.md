@@ -28,4 +28,5 @@ comments: true
   - C/S
   - P2P
  
-[edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-13-31-computerInternet.md)
+[edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-31-computerInternet.md)
+       
