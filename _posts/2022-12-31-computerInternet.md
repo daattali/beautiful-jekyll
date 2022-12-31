@@ -9,7 +9,7 @@ comments: true
 ---
 
 [中科大郑烇、杨坚全套《计算机网络（自顶向下方法 第7版，James F.Kurose，Keith W.Ross）》课程](https://www.bilibili.com/video/BV1JV411t7ow)
-
+一   
 ## internet协议栈
 - 应用层：源用户和源应用到目标用户或目标应用之间传输**报文(message)**
 - 表示层：
@@ -24,13 +24,11 @@ comments: true
 交换机只有链路层和物理层，路由器有网络层、链路层、物理层  
 {: .box-note}
 tcp/ip协议没有表示层和会话层，ISO/OSI有标识层和会话层  
-
--
-
+一   
 ## 网络架构
 - C/S
 - P2P
-  
+一   
 ## 分层通信的问题点：
 ### 进程标示和寻址
 - ip
