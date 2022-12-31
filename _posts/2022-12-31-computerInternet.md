@@ -19,10 +19,10 @@ comments: true
   - 链路层：在相邻网络节点上传输数据**帧(frame)**
   - 物理层：在线路上传输**比特(bit)**
  
- tips:
- - 链路层和物理层一般在网卡中
- - tcp/ip协议没有表示层和会话层，ISO/OSI有标识层和会话层
- - 交换机只有链路层和物理层，路由器有网络层、链路层、物理层
+ 
+ {: .box-note} 链路层和物理层一般在网卡中
+ {: .box-note} tcp/ip协议没有表示层和会话层，ISO/OSI有标识层和会话层
+ {: .box-note} 交换机只有链路层和物理层，路由器有网络层、链路层、物理层
 
 - 网络架构
   - C/S
@@ -34,12 +34,10 @@ comments: true
     - tcp、udp
     - 端口
   - 应用层传给传输层的信息(标识进程地址)
-
-    Socket是一个整数(相当于一个key)，应用层将这个整数传给**本地的传输层**，传输层通过Socket值查询获得TCP的四元组(源IP、源端口、目标IP、目标端口)或UTP的二元组
-
     - SDU：发送的数据
     - 源信息:IP+TCP(UDP)端口
     - 目标信息:对方的IP+TCP(UDP)端口
+   tips:     Socket是一个整数(相当于一个key)，应用层将这个整数传给**本地的传输层**，传输层通过Socket值查询获得TCP的四元组(源IP、源端口、目标IP、目标端口)或UDP的二元组(源IP、源端口)
   - 
  
 [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-31-computerInternet.md)
