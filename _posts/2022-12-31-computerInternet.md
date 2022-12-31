@@ -41,9 +41,11 @@ tcp/ip协议没有表示层和会话层，ISO/OSI有标识层和会话层
     - SDU：发送的数据
     - 源信息:IP+TCP(UDP)端口
     - 目标信息:对方的IP+TCP(UDP)端口
-
-{: .box-note}
-Socket(套接字)是一个整数(相当于一个key)，应用层将这个整数传给**本地的传输层**，传输层通过Socket值查询获得TCP的四元组(源IP、源端口、目标IP、目标端口)或UDP的二元组(本机IP、本机端口)。所以TCP协议需要给传输层传输Socket值和SDU(传输数据)，UDP协议需要给传输层Socket值、SDU、目标ip和目标端口
+    每次都发数据过于冗余，所以有了Socket。
+    
+    Socket(套接字)是一个整数(相当于一个key)，应用层将这个整数传给传输层，传输层通过Socket值查询获得TCP的四元组(源IP、源端口、目标IP、目标端口)或UDP的二元组(本机IP、本机端口)。所以TCP协议需要给传输层传输Socket值和SDU(传输数据)，UDP协议需要给传输层Socket值、SDU、目标ip和目标端口
+{: .box-note} 
+Socket只有本地有效。应用层将socket值传给传输层后本地传输层使用这个值从本地的表中查询数据。目标主机获取到源主机的ip和端口后查询对应的Socket在将数据传给对应的进程(应用层)
  
  
 [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-31-computerInternet.md)
