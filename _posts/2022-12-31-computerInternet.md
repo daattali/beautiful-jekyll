@@ -31,8 +31,8 @@ tcp/ip协议没有表示层和会话层，ISO/OSI有标识层和会话层
 一   
 ## 分层通信的问题点：
 ### 进程标示和寻址
-- ip
-- tcp、udp
+- IP
+- TCP、UDP
 - 端口
 ### 应用层传给传输层的信息(标识进程地址)
 - SDU：发送的数据
@@ -58,7 +58,10 @@ Socket只有本地有效。
   - 吞吐
   - 安全性
 
- 
+## Web and Http
+url ==> 协议名://用户:密码@主机名/资源路径:端口
+
+http：超文本传输协议
  
 [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-31-computerInternet.md)
        
