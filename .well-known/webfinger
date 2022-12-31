@@ -1,0 +1,23 @@
+{
+    "subject": "acct:fursquared@furrycon.social",
+    "aliases": [
+      "https://mastodon.furrycon.social/@fursquared",
+      "https://mastodon.furrycon.social/users/fursquared"
+    ],
+    "links": [
+      {
+        "rel": "http://webfinger.net/rel/profile-page",
+        "type": "text/html",
+        "href": "https://mastodon.furrycon.social/@fursquared"
+      },
+      {
+        "rel": "self",
+        "type": "application/activity+json",
+        "href": "https://mastodon.furrycon.social/users/fursquared"
+      },
+      {
+        "rel": "http://ostatus.org/schema/1.0/subscribe",
+        "template": "https://mastodon.furrycon.social/authorize_interaction?uri={uri}"
+      }
+    ]
+  }

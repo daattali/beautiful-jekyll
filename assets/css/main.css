@@ -998,6 +998,7 @@ pre {
 
 .home-container {
   display: flex;
+}
 
 .home-container .posts-list {
   flex: 60%;
@@ -1005,4 +1006,52 @@ pre {
 
 .home-container .tweets {
   flex: 40%;
+}
+
+/* Coming Soon */
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+main.coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.coming-soon .main-logo {
+  height: calc( (100vh - 234px) * 0.6 );
+  object-fit: contain;
+  margin-bottom: 2vmin;
+}
+
+main.coming-soon p {
+  line-height: 1.1em;
+  margin: 0px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2vmax;
+  text-align: center;
+  margin: 0px 0px 2vh;
+}
+
+main.coming-soon p.header {
+  font-size: 3vmax;
+  text-transform: uppercase;
+}
+
+footer {
+  margin-top: 0px;
+  flex-shrink: 0;
+  border: none;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
