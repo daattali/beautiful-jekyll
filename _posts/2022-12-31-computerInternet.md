@@ -27,6 +27,17 @@ comments: true
 - 网络架构
   - C/S
   - P2P
+  
+- 分层通信的问题点：
+  - 进程标示和寻址
+    - ip
+    - tcp、udp
+    - 端口
+  - 应用层传给传输层的信息
+    - SDU：发送的数据
+    - 源信息:IP+TCP(UDP)端口
+    - 目标信息:对方的IP+TCP(UDP)端口
+  - 
  
 [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-31-computerInternet.md)
        
