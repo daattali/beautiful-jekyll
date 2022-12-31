@@ -43,6 +43,7 @@ tcp/ip协议没有表示层和会话层，ISO/OSI有标识层和会话层
 Socket(套接字)是一个整数(相当于一个key)，应用层将这个整数传给传输层。传输层通过Socket值查询表获得TCP的四元组(源IP、源端口、目标IP、目标端口)或UDP的二元组(本机IP、本机端口)。  
 TCP协议需要给传输层传输Socket值和SDU(传输数据)  
 UDP协议需要给传输层Socket值、SDU、目标ip和目标端口  
+
 {: .box-note}
 Socket只有本地有效。
 
@@ -59,9 +60,18 @@ Socket只有本地有效。
   - 安全性
 
 ## Web and Http
-url ==> 协议名://用户:密码@主机名/资源路径:端口
+url ==> 协议名://用户:密码@主机名/资源路径:端口  
+Waiting Socket：等待请求的Socket。请求来后新建Socket，Waiting Socket任然等待。  
 
-http：超文本传输协议
+- HTTP1.0非持久HTTP：发送完数据后关闭TCP连接
+- HTTP1.1持久HTTP：发送完数据后连接不去除,后续不再进行TCP连接。
+  - pipeline（流水线方式）：并行
+  - 非pipeline：串行
+ 
+ 
+
+## 术语：
+ - RTT(round trip time)：往返时间
  
 [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-31-computerInternet.md)
        
