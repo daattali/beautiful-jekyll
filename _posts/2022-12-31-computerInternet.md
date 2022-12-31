@@ -17,7 +17,7 @@ comments: true
   - 传输层：源进程到目标进程间传输**报文段(segment)**
   - 网络层：从源主机到目标主机（多个相邻网络节点）传输**数据报(datagram)**
   - 链路层：在相邻网络节点上传输数据**帧(frame)**
-  - 物理层：在线路上传输bit
+  - 物理层：在线路上传输**比特(bit)**
 
  ![Alt](https://github.com/wurara/wurara.github.io/tree/master/assets/img/computerInternet)
  
