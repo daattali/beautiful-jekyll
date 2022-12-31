@@ -67,6 +67,11 @@ Waiting Socket：等待请求的Socket。请求来后新建Socket，Waiting Sock
 - HTTP1.1持久HTTP：发送完数据后连接不去除,后续不再进行TCP连接。
   - pipeline（流水线方式）：并行
   - 非pipeline：串行
+
+web缓存
+  - 条件get：is-modified-since：
+ 
+ 
  
  
 
