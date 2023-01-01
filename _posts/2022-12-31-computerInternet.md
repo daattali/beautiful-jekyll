@@ -94,7 +94,7 @@ web缓存
 - 若干子域
  
  {: .box-note}   
- 如：.edu.cn是中国教育网，cn是顶级域名，edu是cn域管理下的教育域
+ 如：.edu.cn是中国教育网，cn是顶级域名，edu是cn域管理下的教育域   
  {: .box-note}   
 
 ## 术语：
