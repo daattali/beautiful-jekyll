@@ -96,6 +96,20 @@ web缓存
  {: .box-note}   
  如：.edu.cn是中国教育网，cn是顶级域名，edu是cn域管理下的教育域   
  {: .box-note}   
+ 
+ 顶级域(TLD)服务器维护对应子域的命名服务器资源  
+ 资源(resource records)信息：
+ - Domain Name:域名
+ - TTL：存活时间（权威为长期，缓存为2天）
+ - Class：对于Internet,值为IN
+ - Value：数字、域名或ASCII串
+ - Type
+   - A：name为主机、value为IP地址
+   - CNAME：Name为规范名字的别名（如规范名字 www.ibm.com 的规范名字为servereast.back2.ibm.com）
+   - NS：name为域名，Value为域名的权威服务器的域名
+   - MX：value为对应邮件服务器的名字
+
+
 
 ## 术语：
  - RTT(round trip time)：往返时间
