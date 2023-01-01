@@ -109,7 +109,7 @@ web缓存
    - NS：name为域名，Value为域名的权威服务器的域名
    - MX：value为对应邮件服务器的名字
 
-
+## CDN
 
 ## 术语：
  - RTT(round trip time)：往返时间
