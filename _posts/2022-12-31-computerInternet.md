@@ -71,11 +71,31 @@ Waiting Socket：等待请求的Socket。请求来后新建Socket，Waiting Sock
   - 非pipeline：串行
 
 web缓存
-  - 条件get：is-modified-since：
+  - 条件get：is-modified-since：在这个时间段后更新则返回全部信息，否则返回304
  
  
+## DNS系统
+
+###总体思路
+- 分层命名
+- 分布式数据库
+- 运行在UDP的53端口
+- 有13个根名字服务器
+
+### 目的
+- 实现IP和域名的转换
+- 主机别名（域名）到规范名字（某个数据中心某个机柜某个刀片服务器）的转换
+- 负载均衡
+
+### DNS命名空间
+- 顶级域
+ - 通用generic(.com,.edu)
+ - 国家countries(.cn,.us)
+- 若干子域
  
- 
+ {: .box-note}   
+ 如：.edu.cn是中国教育网，cn是顶级域名，edu是cn域管理下的教育域
+ {: .box-note}   
 
 ## 术语：
  - RTT(round trip time)：往返时间
