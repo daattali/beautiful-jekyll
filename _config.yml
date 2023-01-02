@@ -16,17 +16,17 @@ url: "https://fursquared.com"
 navbar-links:
   About: "about"
   Code of Conduct: "code-of-conduct"
-  Covid Policy: "covid-policy"
+  #Covid Policy: "covid-policy"
   Hotel: "hotel"
-  Registration: "registration"
-  Programming: "programming"
+  #Registration: "registration"
+  #Programming: "programming"
   #Schedule: "schedule"
-  Theme: "theme"
-  #Dealers & Artists: "dealers"
+  #Theme: "theme"
   Dealers: "dealers"
-  Artists: "artist-alley"
+  #Night Market: "night-market"
+  #Artists: "artist-alley"
   #  Staff: "staff"
-  Volunteer: "volunteer"
+  #Volunteer: "volunteer"
   #Store: "https://fursquared.square.site/"
   Contact: "contact"
   #  Social Media:
@@ -53,7 +53,7 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "info@fursquared.com"
-    
+
   github: fursquared
   twitter: fursquared
   mastodon: mastodon.furrycon.social/@fursquared
@@ -102,18 +102,18 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#2a194d"
-navbar-text-col: "#64CE70"
+navbar-col: "#417f5e"
+navbar-text-col: "#f8e780"
 navbar-logo-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
 
 page-col: "#F8E780"
 page-text-col: "#417F5E"
-header-col: "#64CE70"
+header-col: "#417f5e"
 link-col: "#F05123"
 hover-col: "#f37a58"
-selection-col: "#20133a"
-selection-bg-col: "#64CE70"
+selection-col: "#f05123"
+selection-bg-col: "#FFFFFF"
 
 button-col: "#2a194d"
 button-bg-col: "#64CE70"
@@ -182,7 +182,7 @@ google_analytics: "UA-175189175-1"
 #staticman:
 #  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance) 
+#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
 #  reCaptcha:
 #    siteKey  : # Use your own site key, you need to apply for one on Google
 #    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
