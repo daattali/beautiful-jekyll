@@ -3,7 +3,7 @@ layout: page
 title: Night Market
 subtitle:
 css:
-    - /assets/css/dealer-list.css
+    # - /assets/css/dealer-list.css
     - /assets/css/theme-2022/dealers.css
 ---
 
@@ -11,7 +11,7 @@ css:
 
 | Date | Milestone |
 | --- | --- |
-| January 1, 2023 | Dealer Registration Opens |
+| January 2, 2023 | Dealer Registration Opens |
 | January 29, 2023 | Dealer Registration Closes |
 | February 12, 2023 | Dealer Notifications Sent |
 | Feb. 12 - Feb. 26 | Table Payment Window |
@@ -19,7 +19,7 @@ css:
 
 Thank you for your interest in dealing in our Night Market!
 
-![](/assets/img/theme-2023/adult_dealers_dino.png)
+![](/assets/img/theme-2023/adult_dealers_dino.png){:width="30%"}
 
 This is our first year trying this out so we would love some enthusiastic and flexible participants who are willing to work with us and give feedback so we can grow and learn together.
 
@@ -27,7 +27,7 @@ If you have been to Fur Squared before, the Night Market will occupy the same sp
 
 Art depicting illegal content will not be allowed. We recommend that anything considered “extreme” or otherwise potentially dangerously triggering, be kept in a binder (or otherwise out of plain sight) with content warnings (for example: extreme gore, non-consent, etc.). However, the entire room itself will be 18+, so in general your wares do not need to be hidden from plain view.
 
-![](/assets/img/theme-2023/allikuja.png)
+![](/assets/img/theme-2023/allikuja.png){:width="30%"}
 
 To vend in the state of Wisconsin, you are required to have a valid Wisconsin Tax ID. If you do not have one already, you can get one ([here](https://tap.revenue.wi.gov/mta/_/#0)), and click Register A Business to start.
 
@@ -43,6 +43,4 @@ To complete your Dealer application you will need the following information:
 * What do you sell?
 * Your Branding/Website/etc.
 
-Night Market Application
-
-(Link to the Night Market google form)
+[Night Market Application](https://docs.google.com/forms/d/e/1FAIpQLScppqrms2LoMKsoRDMJz216qS08fOQm_Anm2c2FyjBY2CCZbw/viewform)
