@@ -15,7 +15,7 @@ url: "https://fursquared.com"
 
 navbar-links:
   About: "about"
-  Code of Conduct: "code-of-conduct"
+  CoC: "code-of-conduct"
   #Covid Policy: "covid-policy"
   Hotel: "hotel"
   #Registration: "registration"
