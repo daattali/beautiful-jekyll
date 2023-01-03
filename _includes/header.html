@@ -36,7 +36,7 @@
       <h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
       {% endif %}
       {% endif %}
-      
+
       {% if include.type == "post" %}
           <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
           {% if page.readtime %}
@@ -52,7 +52,7 @@
 {% endif %}
 <div class="intro-header no-img">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row no-gutters">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="{{ include.type }}-heading">
           <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
@@ -64,7 +64,7 @@
       <h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
       {% endif %}
       {% endif %}
-      
+
       {% if include.type == "post" %}
           <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
           {% if page.readtime %}

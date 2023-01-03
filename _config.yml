@@ -23,7 +23,8 @@ navbar-links:
   #Schedule: "schedule"
   #Theme: "theme"
   Dealers: "dealers"
-  #Night Market: "night-market"
+  Night Market: "night-market"
+  Photos: "https://fursquared.smugmug.com/"
   #Artists: "artist-alley"
   #  Staff: "staff"
   #Volunteer: "volunteer"
@@ -87,7 +88,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "FurSquared.com"
+url-pretty: "fursquared.com"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -102,6 +103,12 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
+#417f5e dark green
+#f8e780 yellow
+#f05123 orange
+#ccce92 tan green
+#c2ce9d light green?
+
 navbar-col: "#417f5e"
 navbar-text-col: "#f8e780"
 navbar-logo-col: "#FFFFFF"
@@ -115,10 +122,10 @@ hover-col: "#f37a58"
 selection-col: "#f05123"
 selection-bg-col: "#FFFFFF"
 
-button-col: "#2a194d"
-button-bg-col: "#64CE70"
-button-hover-col: "#2a194d"
-button-bg-hover-col: "#FFFFFF"
+button-col: "#FFFFFF"
+button-bg-col: "#417f5e"
+button-hover-col: "#417f5e"
+button-bg-hover-col: "#417f5e"
 
 footer-col: "#F8E780"
 footer-text-col: "#417F5E"

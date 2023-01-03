@@ -24,6 +24,7 @@ body {
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
+  margin: 0.75em 0 1.5rem 0;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -80,7 +81,7 @@ hr.small {
 }
 
 /* fix in-page anchors to not be behind fixed header */
-:target:before { 
+:target:before {
   content: "";
   display: block;
   height: 3.125rem; /* navbar height */
@@ -109,7 +110,7 @@ hr.small {
   letter-spacing: 1px;
   border-radius: 0;
   border: none;
-  
+
 }
 
 @media (max-width: 767px) {
@@ -542,7 +543,7 @@ footer .footer-custom-content {
 
 .post-preview .post-meta,
 .post-heading .post-meta {
-  color: #A6A6A6;
+  color: #F0512;
   font-size: 1.125rem;
   font-style: italic;
   margin: 0 0 0.625rem;
@@ -587,7 +588,7 @@ footer .footer-custom-content {
 
 .blog-tags {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #999;
+  color: #F0512;
   font-size: 0.9375rem;
   margin-bottom: 1.875rem;
 }
@@ -805,7 +806,7 @@ footer .footer-custom-content {
     display: block;
   }
 }
-.reader-time .middot { 
+.reader-time .middot {
   margin: 0 0.625rem;
 }
 
@@ -853,11 +854,18 @@ table thead tr th {
   margin: 0;
   padding: 0.375rem 0.8125rem;
 }
+
+/* #417f5e dark green
+#f8e780 yellow
+#f05123 orange
+#ccce92 tan green
+#c2ce9d light green? */
+
 table tbody tr:nth-child(even) {
-  background-color: #313c47;
+  background-color: #ccce92;
 }
 table tbody tr:nth-child(odd) {
-  background-color: #202224;
+  background-color: #c2ce9d;
 }
 table tbody tr td {
   border: 1px solid {{ site.navbar-border-col | default: "#cccccc" }};
@@ -1015,6 +1023,7 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  max-width: 100%;
 }
 
 main.coming-soon {
