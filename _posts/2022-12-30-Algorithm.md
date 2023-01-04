@@ -25,5 +25,6 @@ comments: true
     - 自底向上：在求算前算出每个子问题的结果并缓存
  
 - 分治法
+  [最简理解求次方](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/fast-powering)
 
   [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-30-Algorithm.md)
