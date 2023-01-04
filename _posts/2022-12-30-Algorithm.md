@@ -12,6 +12,7 @@ comments: true
 
   每个子问题取最优解，问题就是最优解。
   - [最简理解背包算法](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/sets/knapsack-problem)
+  
 - 动态规划
 
   每个子问题结果存缓存，下次碰到这个子问题就从缓存中获得结果。
@@ -24,7 +25,12 @@ comments: true
     - 自顶向下：在求算过程中缓存子问题结果（合并的子问题结果如1+1+1=3的结果）并缓存
     - 自底向上：在求算前算出每个子问题的结果并缓存
  
+ {: .box-note} 
+ 动态规划是优化的分治法，将子问题的结果缓存，不需要再求已经求过的问题的解。
+ {: .box-note} 
+ 
 - 分治法
+  如果在求次方的过程中将每个小的次方缓存，则这个算法演变成动态规划。
   [最简理解求次方](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/fast-powering)
 
   [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-30-Algorithm.md)
