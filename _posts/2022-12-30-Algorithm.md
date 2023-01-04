@@ -33,5 +33,6 @@ comments: true
   如果在求次方的过程中将每个小的次方缓存，则这个算法演变成动态规划。
   [最简理解求次方](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/fast-powering)
 - 回溯法
-类似于 BF 算法 试图产生所有可能的解决方案，但每次生成解决方案测试如果它满足所有条件，那么只有继续生成后续解决方案。否则回溯并继续寻找不同路径的解决方案。(差不多穷举了)
+类似于 BF 算法 试图产生所有可能的解决方案，但每次生成解决方案测试如果它满足所有条件，那么只有继续生成后续解决方案。否则回溯并继续寻找不同路径的解决方案。(差不多穷举了)  
+
   [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-30-Algorithm.md)
