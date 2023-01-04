@@ -31,5 +31,11 @@ comments: true
   [最简理解求次方](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/fast-powering)
 ### 回溯法  
 类似于 BF 算法 试图产生所有可能的解决方案，但每次生成解决方案测试如果它满足所有条件，那么只有继续生成后续解决方案。否则回溯并继续寻找不同路径的解决方案。(差不多穷举了)  
-[最简理解回溯法](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/sets/combination-sum)
+[最简理解回溯法](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/sets/combination-sum)  
+
+
+
+
+
+
   [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-30-Algorithm.md)
