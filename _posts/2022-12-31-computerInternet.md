@@ -109,10 +109,29 @@ web缓存
    - NS：name为域名，Value为域名的权威服务器的域名
    - MX：value为对应邮件服务器的名字
 
+
 ## CDN
+
+CDN解决互联网杀手级应用（视频）
+
+### 部署策略
+- Enter Deep  
+在遍及全球的ISP中部署服务器集群来深入到ISP接入网中。目标是靠近端用户，通过减少端用户到CDN集群之间的链路长度和路由器数量，从而改善用户请求时延。但管理、维护这一堆集群的成本很高。
+- Bring Home  
+这种方式被许多CDN公司采用。通过在少量关键位置建造大型集群来邀请周边ISP访问。不是将集群放在ISP中，通常放在IXP中（因特网交换点）。这种设计维护和管理开销更低，但牺牲了部分端用户的体验。
+
+ {: .box-note}   
+ - 获取到manifest中的ip后按策略从最近的CDN服务器获取数据
+ - 域名解析的重定向
+ {: .box-note}   
+
+## socket套接字编程
 
 ## 术语：
  - RTT(round trip time)：往返时间
- 
+ - 互联网角色：
+  - ISP：网络服务提供商
+  - ICP：应用服务提供商
+  - CDN：网络内容加速提供商
 [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2022-12-31-computerInternet.md)
        
