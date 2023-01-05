@@ -131,6 +131,7 @@ CDN解决互联网杀手级应用（视频）
 - UDP：不可靠服务  
 
 ### TCP套接字编程
+#### 过程：
 1. 服务器运行
 2. 创建socket
 3. socket绑定到本地的ip，端口（welcome socket）
@@ -149,17 +150,34 @@ CDN解决互联网杀手级应用（视频）
 11. 服务端：通过socket的read读取回写数据
 12. 服务端close：socket close，服务器回到3
 
- sockaddr_in(sad):
-- sin_family: 地址簇
-- sin_port: 端口簇
-- sin_addr: ip地址
-- sin_zero: 对齐
+#### 数据对象
+- sockaddr_in(sad):
+  - sin_family: 地址簇
+  - sin_port: 端口簇
+  - sin_addr: ip地址
+  - sin_zero: 对齐
 
- host_ent
- - *h_name: 主机域名
- - **h_alias: 域名别名
- - h_length: 长度
- - **h_address: ip地址
+- host_ent
+  - *h_name: 主机域名
+  - **h_alias: 域名别名
+  - h_length: 长度
+  - **h_address: ip地址
+
+### UDP socket 编程
+#### 过程
+1. 服务端建立server socket：
+2. 服务器bind：将server socket 绑定本地的ip和端口
+3. 服务器recvfrom：阻塞等待客户端发送信息（socket，内容，来源）
+4. 客户端建立client socket：
+5. 客户端bind：将socket绑定本地ip和端口
+6. 客户端sendto
+7. 服务器解除阻塞，处理数据，在sendto（发送给来源）
+8. 客户端在read
+9. 服务端直接close server socket
+
+ {: .box-note}   
+ UDP不用握手，也没有welcome socket和connection socket之分
+ - {: .box-note}   
   
 ## 术语：
  - RTT(round trip time)：往返时间
