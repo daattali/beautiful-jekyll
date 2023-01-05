@@ -147,7 +147,7 @@ CDN解决互联网杀手级应用（视频）
 9. 服务端read：通过socket读取报文段
 10. 服务端write：通过socket回写数据
 11. 服务端：通过socket的read读取回写数据
-12. 服务端close：socket
+12. 服务端close：socket close，服务器回到3
 
  sockaddr_in(sad):
 - sin_family: 地址簇
