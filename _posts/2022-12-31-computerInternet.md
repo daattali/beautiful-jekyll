@@ -122,7 +122,7 @@ CDN解决互联网杀手级应用（视频）
 
  {: .box-note}   
  获取到manifest中的ip后按策略从最近的CDN服务器获取数据
- - {: .box-note}   
+ {: .box-note}   
 
 ## socket套接字编程
 
