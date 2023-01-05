@@ -121,12 +121,46 @@ CDN解决互联网杀手级应用（视频）
 这种方式被许多CDN公司采用。通过在少量关键位置建造大型集群来邀请周边ISP访问。不是将集群放在ISP中，通常放在IXP中（因特网交换点）。这种设计维护和管理开销更低，但牺牲了部分端用户的体验。
 
  {: .box-note}   
- - 获取到manifest中的ip后按策略从最近的CDN服务器获取数据
- - 域名解析的重定向
- {: .box-note}   
+ 获取到manifest中的ip后按策略从最近的CDN服务器获取数据
+ - {: .box-note}   
 
 ## socket套接字编程
 
+### Socket类型
+- TCP：可靠字节流服务  
+- UDP：不可靠服务  
+
+### TCP套接字编程
+1. 服务器运行
+2. 创建socket
+3. socket绑定到本地的ip，端口（welcome socket）
+4. connection socket（阻塞等待）接受其他主机的连接（本地ip、端口，目标ip、端口）
+
+1. 服务器创建welcome socket
+2. 服务器bind：建立将wlecome socket和sad绑定
+3. 服务器创建connect socket（等于welcome socket，并阻塞等待来自客户端的请求）
+4. 客户端创建client socket
+5. 客户端：bind（操作系统自动捆绑client socket和sad）
+6. 客户端：connect（阻塞等待服务器端响应sad）
+7. 服务器中阻塞的connect socket（第3步）绑定客户端的ip和端口后，响应数据给客户端
+8. 客户端write:通过client socket发送数据给服务器
+9. 服务端read：通过socket读取报文段
+10. 服务端write：通过socket回写数据
+11. 服务端：通过socket的read读取回写数据
+12. 服务端close：socket
+
+ sockaddr_in(sad):
+- sin_family: 地址簇
+- sin_port: 端口簇
+- sin_addr: ip地址
+- sin_zero: 对齐
+
+ host_ent
+ - *h_name: 主机域名
+ - **h_alias: 域名别名
+ - h_length: 长度
+ - **h_address: ip地址
+  
 ## 术语：
  - RTT(round trip time)：往返时间
  - 互联网角色：
