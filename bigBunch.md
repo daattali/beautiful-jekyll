@@ -6,9 +6,17 @@ subtitle: Find a bunch of words.
 
 <center><a href="https://apps.apple.com/us/app/big-bunch/id1620207662" style="width: 170px; height: 170px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;"><img src="/assets/img/black.svg" alt="Big Bunch" style="width: 170px; height: 170px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;"></a></center>
 
-### What is Big Bunch?
+Play this daily word game in real time with other players around the world. Exercise your brain while learning new vocabulary as you make your way up the leaderboard.
 
-Big Bunch is a fun and engaging daily word game played in real time with other players around the world. Tap and slide your way to grapeness as you make your way up the leaderboard.
+* Tap grapes to spell out words for 1 point per grape.
+* Slide over contiguous grapes for double points.
+* Earn hints to help you get unstuck.
+
+Every bunch contains at least one word that uses ALL grapes contiguously. Slide over it to get the Big Bunch!
+
+Game restarts with a new bunch at midnight Eastern Standard Time every day.
+
+**No account creation required. Just start playing and have fun!**
 
 ![](/assets/img/bigBunch_win_white_bg.JPG#center){:width="50%"}
 
