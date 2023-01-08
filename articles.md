@@ -4,7 +4,7 @@ subtitle: Invited op-eds and other articles
 layout: page
 ---
 
-[Carbon Abatement Costs for Hydrogen Fuels in Hard-to-Abate Transport Sectors and Potential Climate Policy Mixes](https://climate.mit.edu/posts/carbon-abatement-costs-hydrogen-fuels-hard-abate-transport-sectors-and-potential-climate) - MIT Climate (November 29, 2022). [Twitter thread[(https://twitter.com/EmilDimanchev/status/1598317921616412675?s=20&t=bfyALecbkDOHInU4ExRzZA)
+[Carbon Abatement Costs for Hydrogen Fuels in Hard-to-Abate Transport Sectors and Potential Climate Policy Mixes](https://climate.mit.edu/posts/carbon-abatement-costs-hydrogen-fuels-hard-abate-transport-sectors-and-potential-climate) - MIT Climate (November 29, 2022). [Twitter thread](https://twitter.com/EmilDimanchev/status/1598317921616412675?s=20&t=bfyALecbkDOHInU4ExRzZA)
 
 [A wake-up call theory of climate change](https://medium.com/@EmilDimanchev/a-wake-up-call-theory-of-climate-change-fc5d3077a22b) - Medium (October 9, 2020). [Twitter thread](https://twitter.com/EmilDimanchev/status/1315619195904720898?s=20)
 
