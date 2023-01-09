@@ -33,18 +33,18 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 9-Jan		| Counting				| _No Coaching Session (Mathcounts School Round)_ |  |
 | 16-Jan	| _No School_			| _No Coaching Session (AMC 8)_ |  |
 | 23-Jan	| Circles				| [2022-2023 Mathcounts School](/files/RMS%202223M%20Exam.pdf) |  |
-| 30-Jan	| Similarity			|  |  |
-| 6-Feb		| Pascal's Triangle		|  |  |
+| 30-Jan	| Similarity			| [2021-2022 MIC Regionals Individual](http://www.academicsarecool.com/assets/samples/MIC_78_2021-2022.pdf) |  |
+| 6-Feb		| Pascal's Triangle		| [2021-2022 MIC Masters Individual](http://www.academicsarecool.com/assets/samples/2021-2022_8th_Masters_tests.pdf) |  |
 | 13-Feb	| Logic					| _No Coaching Session (Math Is Cool Regionals)_ |  |
-| 20-Feb	| _No School_ 			|  |  |
-| 27-Feb	| Sequences				|  |  |
-| 6-Mar	    | Systems of Equations	|  | _No School_ |
-| 13-Mar	| Travel    			|  |  |
-| 20-Mar	| _No School_			|  |  |
-| 27-Mar	| Angles and Arcs		|  |  |
-| 3-Apr		| Expected Value		|  |  |
+| 20-Feb	| _No School_ 			| 2022 MMT Pressure [Round 1](https://mustangmath.com/archive/2022/Pressure1Problems.pdf) and [Round 2](https://mustangmath.com/archive/2022/Pressure2Problems.pdf) |  |
+| 27-Feb	| Sequences				| [2021 MMT Mounting Mayhem](https://mustangmath.com/archive/2021/MountingMayhem.pdf) |  |
+| 6-Mar	    | Systems of Equations	| [2021 MMT Bucking Bingo](https://mustangmath.com/archive/2021/BuckingBingo.pdf) | _No School_ |
+| 13-Mar	| Travel    			| [2021 MMT Relay Rodeo](https://mustangmath.com/archive/2021/RelayRodeo.pdf) |  |
+| 20-Mar	| _No School_			| 2021 MMT Gallop [Round 1](https://mustangmath.com/archive/2021/Gallop%20Set%201.pdf), [Round 2](https://mustangmath.com/archive/2021/Gallop%20Set%202.pdf), [Round 3](https://mustangmath.com/archive/2021/Gallop%20Set%203.pdf), and [Round 4](https://mustangmath.com/archive/2021/Gallop%20Set%204.pdf) |  |
+| 27-Mar	| Angles and Arcs		| 2021 MMT Gallop [Round 5](https://mustangmath.com/archive/2021/Gallop%20Set%205.pdf), [Round 6](https://mustangmath.com/archive/2021/Gallop%20Set%206.pdf), [Round 7](https://mustangmath.com/archive/2021/Gallop%20Set%207.pdf), and [Round 8](https://mustangmath.com/archive/2021/Gallop%20Set%208.pdf) |  |
+| 3-Apr		| Expected Value		| [2022 MMT Bucking Bingo](https://mustangmath.com/archive/2022/BuckingBingoProblems.pdf) |  |
 | 10-Apr	| _No School_			|  _No School_ | _No School_ |
-| 17-Apr	| Surface Area & Volume |  |  |
+| 17-Apr	| Surface Area & Volume | [2022 MMT Gallop](https://mustangmath.com/archive/2022/GallopProblems.pdf) |  |
 | 24-Apr	| Bases					|  |  |
 
 [2021-2022 schedule](/schedule-2122.md)
