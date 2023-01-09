@@ -40,6 +40,9 @@
   img: ../pics/ungraspable.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2211.01500
+    '[Code]': https://github.com/Wenxuan-Zhou/ungraspable
+    '[Poster]': https://drive.google.com/file/d/1O1mKGiqHc17ain8Ne4PuQK5Ji165-0F_/view
+    '[Talk]': https://drive.google.com/file/d/1iHdgwRWlRIiEF75-KBhnMZqo-DZ9MkKs/view?usp=sharing
   short_id: 2022corlungraspable
   site: https://sites.google.com/view/grasp-ungraspable
   title: Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity
