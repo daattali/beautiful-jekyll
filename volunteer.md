@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Volunteers
+title: Volunteer
 subtitle: Looking to help out Fur Squared?
 ---
 Are you Interested in making a difference with our growing convention? Fur Squared is staffed entirely by volunteers. Won't you help us out by volunteering? It's easy, fun and there are some great benefits to pitching in. There are plenty of opportunities available for all of our attendees.
