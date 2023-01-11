@@ -16,6 +16,7 @@ author: xDSL project
 navbar-links:
   Home: "index"
   News: "news"
+  Team: "team"
   Community:
     - EuroPar Workshop: "europar"
   Developer Zone:    
