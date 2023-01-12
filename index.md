@@ -169,5 +169,3 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(20,33,61,1) 0%, rgba(2
   <iframe style="border: 0px; position: relative; left: -70px; top: -160px" scrolling="no" height="51100px" width="100%" src="https://nbviewer.org/github/xdslproject/xdsl/blob/main/docs/irdl.ipynb">
   </div>
   </div>
-
-
