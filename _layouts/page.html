@@ -4,7 +4,7 @@ layout: base
 
 {% include header.html type="page" %}
 
-<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
+<div class="{% if page.full-width %} container-fluid p-0 {% else %} container-md {% endif %}" role="main">
   <div class="row">
     <div class="{% if page.full-width %} col {% else %} col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 {% endif %}">
       {% if page.before-content %}
