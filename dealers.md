@@ -29,7 +29,7 @@ If you sell mostly or solely NSFW/18+ type art or merchandise, please click here
 
 Thank you once again for making the Dealer’s Den an amazing part of Fur Squared.
 
----
+&nbsp;
 
 ![](/assets/img/theme-2023/mlw.png){:.img-right}
 

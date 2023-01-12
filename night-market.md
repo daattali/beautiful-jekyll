@@ -27,7 +27,7 @@ If you have been to Fur Squared before, the Night Market will occupy the same sp
 
 Art depicting illegal content will not be allowed. We recommend that anything considered “extreme” or otherwise potentially dangerously triggering, be kept in a binder (or otherwise out of plain sight) with content warnings (for example: extreme gore, non-consent, etc.). However, the entire room itself will be 18+, so in general your wares do not need to be hidden from plain view.
 
----
+&nbsp;
 
 ![](/assets/img/theme-2023/allikuja.png){:.img-right}
 

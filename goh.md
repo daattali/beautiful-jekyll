@@ -3,7 +3,7 @@ layout: page
 title: GOH
 subtitle: make it pretty, plz ♥
 ---
-![](/uploads/gohbio-chise.png){: width="1658" height="1658"}
+![](/uploads/gohbio-chise.png){:.img-left}
 
 Chise is a Senior Scientist in Vaccine Research and Development and has been in the field for a little over 10 years.
 
@@ -19,7 +19,7 @@ As a member of both communities, she also utilizes her platform as an activist f
 
 &nbsp;
 
-![](/uploads/gohbio-rhubarbkey.png){: width="1659" height="1659"}
+![](/uploads/gohbio-rhubarbkey.png){:.img-right}
 
 Meet Keyotter and Rhubarb - furry musicians known for their covers of video game music\! Key, the otter/yoshi, is a pianist, accordionist, and music teacher. Rhubarb is a Nidorino and a jazz violinist. The two of them have been playing music with each other for their entire lives - because they are twin brothers\! Originally from Urbana, IL, they grew up together with a love of music, video games, and nerd culture - the perfect ingredients for becoming video game music enthusiasts (and furries\!). Now they combine those passions by bringing concerts and jam sessions to furry conventions.
 
