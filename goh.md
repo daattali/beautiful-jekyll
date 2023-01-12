@@ -1,7 +1,6 @@
 ---
 layout: page
-title: GOH
-subtitle: make it pretty, plz ♥
+title: Our Guests of Honor
 ---
 ![](/uploads/gohbio-chise.png){:.img-left}
 
