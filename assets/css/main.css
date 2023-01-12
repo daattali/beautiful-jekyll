@@ -1076,3 +1076,11 @@ footer {
   margin-right: 1em;
   width: 25%;
 }
+
+table {
+  table-layout: fixed;
+  max-width: 600px;
+}
+table thead tr th {
+     color: #ccce92;
+}
