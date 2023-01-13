@@ -145,6 +145,7 @@ you should see something like this if you were successful:
 
 ```
 git version 2.34.1
+```
 
 ### Configuring Git user info
 
