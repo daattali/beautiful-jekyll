@@ -5,6 +5,10 @@ subtitle: These are FurSquared’s COVID policies for the April 2022 convention.
 permalink: /covid-policy/
 ---
 
+## Notice
+
+This policy is accurate and up-to-date as of January 14, 2023.
+
 ## TL;DR
 
 * Vaccinations are required
@@ -18,13 +22,13 @@ permalink: /covid-policy/
 
 ## Cheat Sheet
 
-| Condition | Date | Result |
+| AGE | PRIMARY VACCINE | REQUIREMENTS |
 | --- | --- | --- |
-| Pfizer or Moderna (Both shots), NO Booster | On or Before: November 14, 2021 | Must get Booster by/before April 14, 2022 |
-| Johnson & Johnson/Janssen, NO Booster | On or Before: February 14, 2022 | Must get Booster by/before April 14, 2022 |
-| Pfizer or Moderna (Both shots), NO Booster | Between: November 15, 2021 and March 31, 2022 (inclusive) | You can attend F2 without Booster |
-| Johnson & Johnson/Janssen NO Booster | Between: February 14, 2022 and March 31, 2022 (inclusive) | You can attend F2 without Booster |
-| Any vaccine series (all dose(s)) AND 1 Booster | On or Before: April 14, 2022 | You can attend F2\! |
+| **6 months - 11 years** | Moderna | All two doses by March. 23 |
+| **6 months - 4 years** | Pfizer-BioNTech | All three doses by March. 23 |
+| **5 - 11 years** | Pfizer-BioNTech | One Pfizer booster (3rd dose) by time of attendance unless the last dose of the primary series was given between Oct 31 - March. 23 |
+| **12 - 17 years** | Pfizer-BioNTech Moderna Novavax | One booster (3rd dose) by time of attendance unless the last dose of the primary series was given between Oct. 31 - March. 23 |
+| **18+ years** | Pfizer-BioNTech Moderna Novavax J&J's Janssen | One booster by time of attendance unless last dose of the primary series: | 2nd shot for Pfizer, Moderna, and Novavax, *or* 1st shot for J&J was given between Oct. 31 - March. 23 ||
 {: .fixed-table}
 
 &nbsp;
@@ -35,14 +39,7 @@ permalink: /covid-policy/
 
 ### Option 1 - Vaccinated & Boosted
 
-You have completed the primary vaccine series and have received a booster per CDC guidelines linked here: [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html). The CDC considers boosters to be effective immediately, so there is no additional date restriction.
-
-We require booster shots if your last vaccine series was on or before the following dates:
-
-| Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
-| --- | --- |
-| Last vaccine dose by | Vaccine received by |
-| November 14th, 2021 | February 14th, 2022 |
+You have completed the primary vaccine series and have received a booster (bivalent or monovalent) per CDC guidelines linked here: [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html). The CDC considers boosters to be effective immediately, so there is no additional date restriction.
 
 Additionally, if you are moderately or severely **immunocompromised** and **over the age of 11** the CDC recommends a **4th shot (mRNA) or 3rd shot Johnson & Johnson/Janssen** [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html). FurSquared does **not** require this additional shot, but **strongly encourages** eligible attendees to do so.
 
@@ -50,12 +47,7 @@ Additionally, if you are moderately or severely **immunocompromised** and **over
 
 ### Option 2 - Recently Vaccinated
 
-You have completed an initial vaccine series by the time frame listed below. This section **only** applies if you have received your last vaccine dose **too recently** (after the above dates) to be eligible for the booster before Fur Squared.
-
-| Pfizer or Moderna (mRNA) | Johnson & Johnson / Janssen |
-| --- | --- |
-| Last vaccine dose by | Vaccine received by |
-| March 31st, 2022 | March 31st, 2022 |
+You have completed an initial vaccine series by the time frame listed below. This section **only** applies if you have received your last vaccine dose **too recently** to be eligible for the booster before Fur Squared.
 
 Proof of vaccination will be required at registration to purchase or pick up a badge.
 
@@ -89,11 +81,15 @@ Any COVID-19 vaccine governmentally approved for use in your home country will b
 
 ## Masking
 
-Masks are required at all times in convention spaces, including while in a fursuit.
+All attendees and staff are required to properly wear a [CDC-approved](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/types-of-masks.html) face mask (a N95, KN95, surgical, or 2+ layer cloth mask made of tight knit fabric) in public spaces of the convention, including while in fursuit. CDC-approved masks are required in the Fursuit Lounges as well, even when fursuit heads are removed.
 
-Masks may be temporarily removed while eating (such​​​​ as in the dining & bar are of the hotel, or at the sponsor dinner), but must put them back on immediately when finished eating.
+All masks must cover the wearer's nostrils and mouth snugly without excessive gaps and remain fastened in place without the use of hands or other external measures other than ear loops, Velcro, loop extenders, or buttons, etc.
 
 Balaclavas, items made of thin & stretchy materials, and single-layer cloth masks alone are not acceptable masks, they must be combined with another type of face covering.
+
+Masks may be temporarily removed while eating (such​​​​ as in the dining & bar area of the hotel, or at the sponsor dinner), but must put back on immediately when finished eating.
+
+***Please note:* **Woodwind, brass, and other breath powered instruments may not be played in any convention space (other than as a scheduled performance), as masking such instruments is impractical.
 
 ## Policy Changes
 
@@ -109,6 +105,10 @@ Look to our website for the latest up-to-date information.
 &nbsp;
 
 ## FAQ
+
+## What happens if someone refuses to wear a mask?
+
+Refusal to comply with the masking requirement within public spaces may result in revocation of FurSquared membership for 2023, with consideration given to revocation of membership for future FurSquared events.
 
 ### Are the COVID precautions in Milwaukee the same as in my state?
 
@@ -128,15 +128,9 @@ Yes. The Sheraton Milwaukee Brookfield has ended their masking policy. The FurSq
 
 We encourage all attendees to wear masks outside of the convention area.
 
-### I believe someone is creating fraudulent vaccine cards for themselves or others. What can I do?
+## What if somebody fakes their proof of vaccination?
 
-Creating fraudulent CDC vaccination cards is a federal crime.
-
-To report suspicious activity involving fake vaccination record cards, please contact the appropriate government agency in your state or jurisdiction, HHS-OIG (1-800-HHS-TIPS or [www.oig.hhs.gov](https://www.oig.hhs.gov/)), or the Internet Crime Complaint Center ([www.ic3.gov](https://www.ic3.gov/))
-
-### What happens if someone presents a fraudulent proof of vaccination at the convention?
-
-They will be ejected from the convention, and we will contact law enforcement.
+Any FurSquared attendee reasonably believed to have forged vaccine status credentials will be ejected from the event and will have their membership privileges revoked for all future FurSquared events.
 
 ## Questions
 
