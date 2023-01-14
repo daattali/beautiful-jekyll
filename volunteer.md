@@ -41,7 +41,7 @@ First off, you'll have the thanks of our entire staff and all our attendees, as 
 | --- | --- |
 | Any | A ribbon identifying you as being part of our group of convention volunteers |
 | 2 Hours | Small Sponsor Gift (our dice bag and a glow necklace from our 2nd year) |
-| 6 Hours | T-shirt with exclusive artwork designed by one of our guests of honor |
+| 6 Hours | T-shirt with exclusive artwork |
 | 10 Hours | Sponsor Stuff Bag (rest of the sponsor swag) |
 | 12 Hours | Free Registration for Fur Squared 2023 |
 

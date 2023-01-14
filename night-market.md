@@ -19,7 +19,7 @@ css:
 
 Thank you for your interest in dealing in our Night Market!
 
-![](/assets/img/theme-2023/adult_dealers_dino.png){:width="30%"}
+![](/assets/img/theme-2023/adult_dealers_dino.png){:.img-left}
 
 This is our first year trying this out so we would love some enthusiastic and flexible participants who are willing to work with us and give feedback so we can grow and learn together.
 
@@ -27,7 +27,9 @@ If you have been to Fur Squared before, the Night Market will occupy the same sp
 
 Art depicting illegal content will not be allowed. We recommend that anything considered “extreme” or otherwise potentially dangerously triggering, be kept in a binder (or otherwise out of plain sight) with content warnings (for example: extreme gore, non-consent, etc.). However, the entire room itself will be 18+, so in general your wares do not need to be hidden from plain view.
 
-![](/assets/img/theme-2023/allikuja.png){:width="30%"}
+&nbsp;
+
+![](/assets/img/theme-2023/allikuja.png){:.img-right}
 
 To vend in the state of Wisconsin, you are required to have a valid Wisconsin Tax ID. If you do not have one already, you can get one ([here](https://tap.revenue.wi.gov/mta/_/#0)), and click Register A Business to start.
 

@@ -1064,3 +1064,23 @@ footer {
   border: none;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.img-left {
+  float: left;
+  margin-right: 1em;
+  width: 25%;
+}
+
+.img-right {
+  float: right;
+  margin-right: 1em;
+  width: 25%;
+}
+
+table {
+  table-layout: fixed;
+  max-width: 600px;
+}
+table thead tr th {
+     color: #ccce92;
+}
