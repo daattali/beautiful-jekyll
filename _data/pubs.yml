@@ -11,6 +11,12 @@
 #   title: null
 #   venue: null
 #   video_embed: null
+#   tags: 
+#     - null
+
+# Current tags for research areas, see the research areas page for more details:
+# deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+
 - abs: A simple gripper can solve more complex manipulation tasks if it can utilize 
     the external environment such as pushing the object against the table or a vertical 
     wall, known as "Extrinsic Dexterity." Previous work in extrinsic dexterity usually 
@@ -1143,6 +1149,8 @@
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference of Robotics and Automation (ICRA), 2020
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/rYRPWe0xLVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - multimodal
 - abs: null
   authors: Peiyun Hu, David Held*, Deva Ramanan*
   award: null

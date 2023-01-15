@@ -22,6 +22,7 @@ description: Robots Perceiving and Doing
 navbar-links:
   Home: "/"
   Members: "members"
+  Research Areas: "areas"
   Publications: "publications"
   Robot Demos: "demos"
   # About Me: "aboutme"
