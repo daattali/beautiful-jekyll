@@ -15,7 +15,6 @@ This policy is accurate and up-to-date as of January 15, 2023.
   * One booster is required unless your primary series was recently completed
   * Fursquared strongly recommends a 4th Monovalent or Bivalent booster
 * If your Badge is on, your Mask is on
-  * Masks are required in all public hotel spaces
   * Masks are required under fursuit heads
 * Fursuit lounges will be open
 
