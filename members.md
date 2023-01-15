@@ -8,7 +8,7 @@ members:
       - full: true
         list:
           - name: David Held
-            photo_url: /img/members/daveheld.jpg
+            photo_url: https://davheld.github.io/DavidHeld_files/DavidHeld.jpg
             web_url: https://davheld.github.io
   - name: Current members
     list:
