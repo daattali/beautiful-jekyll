@@ -7,12 +7,13 @@ permalink: /covid-policy/
 
 ## Notice
 
-This policy is accurate and up-to-date as of January 14, 2023.
+This policy is accurate and up-to-date as of January 15, 2023.
 
 ## TL;DR
 
 * Vaccinations are required
-* Boosters are required (unless recently vaccinated, see below)
+  * One booster is required unless your primary series was recently completed
+  * Fursquared strongly recommends a 4th Monovalent or Bivalent shot
 * If your Badge is on, your Mask is on
   * Masks are required in all public hotel spaces
   * Masks are required under fursuit heads
@@ -41,7 +42,7 @@ This policy is accurate and up-to-date as of January 14, 2023.
 
 You have completed the primary vaccine series and have received a booster (bivalent or monovalent) per CDC guidelines linked here: [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html). The CDC considers boosters to be effective immediately, so there is no additional date restriction.
 
-Additionally, if you are moderately or severely **immunocompromised** and **over the age of 11** the CDC recommends a **4th shot (mRNA) or 3rd shot Johnson & Johnson/Janssen** [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html). FurSquared does **not** require this additional shot, but **strongly encourages** eligible attendees to do so.
+Additionally, if you are moderately or severely **immunocompromised** and **over the age of 11** the CDC recommends a **5th shot (Pfizer or Moderna)** [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html). FurSquared does **not** require this additional shot, but **strongly encourages** eligible attendees to do so.
 
 &nbsp;
 
@@ -81,15 +82,15 @@ Any COVID-19 vaccine governmentally approved for use in your home country will b
 
 ## Masking
 
-All attendees and staff are required to properly wear a [CDC-approved](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/types-of-masks.html) face mask (a N95, KN95, surgical, or 2+ layer cloth mask made of tight knit fabric) in public spaces of the convention, including while in fursuit. CDC-approved masks are required in the Fursuit Lounges as well, even when fursuit heads are removed.
+All attendees and staff are required to properly wear a [CDC-approved](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/types-of-masks.html) face mask a N95, KN95, surgical, or 2+ layer cloth mask made of tight knit fabric in public spaces of the convention, including while in fursuit. CDC-approved masks are required in the Fursuit Lounges as well, even when fursuit heads are removed.
 
 All masks must cover the wearer's nostrils and mouth snugly without excessive gaps and remain fastened in place without the use of hands or other external measures other than ear loops, Velcro, loop extenders, or buttons, etc.
 
 Balaclavas, items made of thin & stretchy materials, and single-layer cloth masks alone are not acceptable masks, they must be combined with another type of face covering.
 
-Masks may be temporarily removed while eating (such​​​​ as in the dining & bar area of the hotel, or at the sponsor dinner), but must put back on immediately when finished eating.
+Masks may be temporarily removed while eating such​​​​ as in the dining & bar area of the hotel, or at the sponsor dinner, but must put back on immediately when finished eating.
 
-***Please note:* **Woodwind, brass, and other breath powered instruments may not be played in any convention space (other than as a scheduled performance), as masking such instruments is impractical.
+Woodwind, brass, and other breath powered instruments may not be played in any convention space other than as a scheduled performance, as masking such instruments is impractical.
 
 ## Policy Changes
 
