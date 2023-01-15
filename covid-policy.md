@@ -22,13 +22,13 @@ This policy is accurate and up-to-date as of January 14, 2023.
 
 ## Cheat Sheet
 
-| AGE | PRIMARY VACCINE | REQUIREMENTS |
+| AGE | PRIMARY VACCINE | DATES |
 | --- | --- | --- |
 | **6 months - 11 years** | Moderna | All two doses by March. 23 |
 | **6 months - 4 years** | Pfizer-BioNTech | All three doses by March. 23 |
 | **5 - 11 years** | Pfizer-BioNTech | One Pfizer booster (3rd dose) by time of attendance unless the last dose of the primary series was given between Oct 31 - March. 23 |
 | **12 - 17 years** | Pfizer-BioNTech Moderna Novavax | One booster (3rd dose) by time of attendance unless the last dose of the primary series was given between Oct. 31 - March. 23 |
-| **18+ years** | Pfizer-BioNTech Moderna Novavax J&J's Janssen | One booster by time of attendance unless last dose of the primary series: | 2nd shot for Pfizer, Moderna, and Novavax, *or* 1st shot for J&J was given between Oct. 31 - March. 23 ||
+| **18+ years** | Pfizer-BioNTech Moderna Novavax J&J's Janssen | One booster by time of attendance unless last dose of the primary series: 2nd shot for Pfizer, Moderna, and Novavax, *or* 1st shot for J&J was given between Oct. 31 - March. 23 |
 {: .fixed-table}
 
 &nbsp;
