@@ -16,6 +16,8 @@ css:
 | Feb. 12 - Feb. 26 | Table Payment Window |
 | February 27, 2023 | Unpaid/Abandoned spaces released to Waiting List |
 
+&nbsp;
+
 [![Draggor in a lab coat illustration by GotherineFoxx](/assets/img/theme-2023/draggor.png){: .img-left}](/assets/img/theme-2023/draggor.png)
 
 Vendors get ready!
