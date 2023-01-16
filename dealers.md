@@ -3,7 +3,6 @@ layout: page
 title: Dealer's Den
 subtitle:
 css:
-    # - /assets/css/dealer-list.css
     - /assets/css/theme-2022/dealers.css
 ---
 
@@ -17,7 +16,9 @@ css:
 | Feb. 12 - Feb. 26 | Table Payment Window |
 | February 27, 2023 | Unpaid/Abandoned spaces released to Waiting List |
 
-![](/assets/img/theme-2023/draggor.png){:.img-left}
+&nbsp;
+
+[![Draggor in a lab coat illustration by GotherineFoxx](/assets/img/theme-2023/draggor.png){: .img-left}](/assets/img/theme-2023/draggor.png)
 
 Vendors get ready!
 
@@ -31,7 +32,7 @@ Thank you once again for making the Dealer’s Den an amazing part of Fur Square
 
 &nbsp;
 
-![](/assets/img/theme-2023/mlw.png){:.img-right}
+[![MLW illustration by GotherineFoxx](/assets/img/theme-2023/mlw.png){: .img-right}](/assets/img/theme-2023/mlw.png)
 
 To vend in the state of Wisconsin, you are required to have a valid Wisconsin Tax ID. If you do not have one already, you can get one ([here](https://tap.revenue.wi.gov/mta/_/#0)), and click Register A Business to start.
 
