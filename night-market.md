@@ -3,7 +3,6 @@ layout: page
 title: Night Market
 subtitle:
 css:
-    # - /assets/css/dealer-list.css
     - /assets/css/theme-2022/dealers.css
 ---
 
@@ -19,7 +18,7 @@ css:
 
 Thank you for your interest in dealing in our Night Market!
 
-![](/assets/img/theme-2023/adult_dealers_dino.png){:.img-left}
+[![Adult Dealers Mascot by GotherineFoxx](/assets/img/theme-2023/adult_dealers_dino.png){: .img-left}](/assets/img/theme-2023/adult_dealers_dino.png)
 
 This is our first year trying this out so we would love some enthusiastic and flexible participants who are willing to work with us and give feedback so we can grow and learn together.
 
@@ -29,7 +28,7 @@ Art depicting illegal content will not be allowed. We recommend that anything co
 
 &nbsp;
 
-![](/assets/img/theme-2023/allikuja.png){:.img-right}
+[![Allikuja dinosaur illustration by GotherineFoxx](/assets/img/theme-2023/allikuja.png){: .img-right}](/assets/img/theme-2023/allikuja.png)
 
 To vend in the state of Wisconsin, you are required to have a valid Wisconsin Tax ID. If you do not have one already, you can get one ([here](https://tap.revenue.wi.gov/mta/_/#0)), and click Register A Business to start.
 
