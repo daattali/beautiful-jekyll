@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Coursera-algorithm
-subtitle: Coursera上的algorithm课程
+subtitle: 雪豹-国家一级保护动物雪豹是大型猫科食肉动物，属于世界级濒危物种
 thumbnail-img: /assets/img/xuebao.png
 share-img: /assets/img/path.jpg
 tags: [algorithm, ]
