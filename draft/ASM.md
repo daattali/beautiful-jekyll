@@ -4,7 +4,7 @@ title: Anthos Service Mesh Overview
 subtitle: 
 description: "tbd"
 #cover-img: /assets/img/path.jpg
-thumbnail-img: 
+thumbnail-img: /assets/img/anthos/anthoslogo.png
 The #share-img: /assets/img/path.jpg
 readtime: true
 share-title: 
@@ -13,7 +13,11 @@ share-img:
 tags: [Anthos, kubernetes, containers, istio, service mesh, app modernisation]
 ---
 
-# Some L1 Title
+
+* toc
+{:toc}
+
+# Application Modernisation- Securing Microservice Communication
 Monolithic applications with multiple functions have no issues communicating internally, but when these applications are modernised and migrate to a mircoservices architecture, these functions now need to communicate with each other over a network. 
 
 <diagram showing monolithic app functions vs microservice functions communicating>
@@ -24,8 +28,10 @@ With traditional enterprise networks being secured at the perimeter and providin
 
 Building authentication and encryption into each function is a complex and time consuming process. Similarly developers need to consider APM and telemetry for each function, again consuming developer time that could be spent adding business value and improving application business logic. This is where Anthos Service Mesh (ASM) helps. 
 
-<ASM logo>
+ ![Anthos Logo](/assets/img/anthos/anthoslogo.png "Anthos Logo")
+*Anthos Logo*
 
+# Anthos Service Mesh
 The service mesh acts as a layer of infrastructure above the application, managing the network functions and security. It decouples these from the application, running the network functions in a second container within the same pod, as a sidecar envoy proxy (deployed using a sidecar pattern). This enables the application function to communicate with the proxy container as if it was on the same machine. The application has no awareness of this, and becomes truly portable.
 
 <diagram showing proxy side car and traffic flows>
@@ -34,7 +40,7 @@ Anthos Service Mesh addresses network security, observability and advanced traff
 
 <Diagram showing ASM across multiple clusters>
 
-## Network Security
+# Network Security
 Anthos Service Mesh can enforce services to authenticate each other using SSL certificates via mutual TLS (mTLS). With mTLS both the initiating service, and the receiving server authenticate each other, verifying the services are who they claim to be against a certificate issued from a trusted CA. 
 
 mTLS also ensures data in transit is encrypted between services.
@@ -50,7 +56,7 @@ Anthos Service mesh records the identify of the mTLS client and it’s IP addres
 
 <Diagram of mTLS)
 
-## Observability
+# Observability
 Anthos Service Mesh provides proactive and reactive observability of services within the mesh. By default, these are integrated with Google Cloud, enabling a centralised single pane of glass dashboard of all Kubernetes clusters within the Google Cloud Console. There are several preconfigured service dashboards in the Google Cloud console so you don't have to manually set up dashboards and charts to observe service behaviour, troubleshoot or optmise your applications.
 
 <insert dashboard console view>
@@ -71,14 +77,16 @@ The console displays all services within the mesh in a services topology graph, 
 
 <insert diagram showing service traffic flows and encryption).
 
-## Advanced Traffic Management
- ASM pcontrols the flow of traffic in and out of the service mesh, and between services within the mesh. In addition to this, it provide various traffic management functions including:
+# Advanced Traffic Management
 
-Configuring load balancing of traffic between services.
-Creating and managing canary or blue/green deployments.
-Creating staged rollouts with percentage based traffic splits.
-Defining circuit breakers, timeouts, retry settings and fault injections.
-Redirecting traffic based on routing rules matching HTTP field attributes.
+ASM controls the flow of traffic in and out of the service mesh, and between services within the mesh. In addition to this, it provide various traffic management functions including:
+
+- Configuring load balancing of traffic between services.
+- Creating and managing canary or blue/green deployments.
+- Creating staged rollouts with percentage based traffic splits.
+- Defining circuit breakers, timeouts, retry settings and fault injections.
+- Redirecting traffic based on routing rules matching HTTP field attributes.
+
 # Anthos Service Mesh Offerings
 
 ASM is available as part of a suite of products under the Anthos platform or individually as a single product offering for teams only requiring the service mesh functionality. ASM is a fully managed service mesh based on the open source Istio project. 
