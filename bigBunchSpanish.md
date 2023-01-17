@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Uvas
+title: Big Bunch - Spanish Vocabulary Edition
 subtitle: Find a bunch of Spanish words.
 ---
 
@@ -14,6 +14,6 @@ Expand your Spanish vocabulary as you make your way up the leaderboard.
 
 **No account creation required. Just start playing and have fun!**
 
-![](/assets/img/uvas_ganar_white_bg.jpg#center){:width="50%"}
+![](/assets/img/big_bunch_spanish.jpg#center){:width="50%"}
 
 #### Coming soon for iPad and iOS 16.0 and above
