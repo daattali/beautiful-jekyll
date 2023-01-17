@@ -3,7 +3,7 @@ layout: page
 title: Contributing to the MDS blog
 ---
 
-To contribute to the [MDS blog](https://ubc-mds.github.io/), follow these steps to work with the blog's Editor, which is currently [Mike Gelbart](https://github.com/mgelbart):
+To contribute to the [MDS blog](https://ubc-mds.github.io/), follow these steps to work with the blog's Editor, which is currently Varada Kolhatkar (`@kvarada`):
 
 1. Contact the Editor and agree on the basic outline of the post. 
 2. Fork [the repo that houses this site](https://github.com/ubc-mds/ubc-mds.github.io) and give the Editor write access to the fork.
