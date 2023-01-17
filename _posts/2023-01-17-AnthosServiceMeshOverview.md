@@ -4,7 +4,7 @@ title: Anthos Service Mesh Overview
 subtitle: "Coming soon"
 description: "Anthos Service Mesh Overview coming soon"
 #cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/anthoslogo.png
+thumbnail-img: /assets/img/anthos/anthoslogo.png
 #share-img: /assets/img/path.jpg
 readtime: true
 share-title: 
