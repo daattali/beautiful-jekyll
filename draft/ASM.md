@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Anthos Service Mesh Overview
-subtitle: 
-description: "tbd"
+title: “Anthos Service Mesh Overview”
+subtitle: “In this blog I provide an overview of the Anthos Service Mesh product offering and architecture, describing how a service mesh helps secure and simplify microservice architectures.”
+description: ""
 #cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/anthos/anthoslogo.png
-The #share-img: /assets/img/path.jpg
 readtime: true
-share-title: 
-share-description: 
-share-img: 
-tags: [Anthos, kubernetes, containers, istio, service mesh, app modernisation]
+share-title: “Anthos Service Mesh Overview”
+share-description: “In this blog I provide an overview of the Anthos Service Mesh product offering and architecture, describing how a service mesh helps secure and simplify microservice architectures.”
+share-img: /assets/img/anthos/anthoslogo.png
+tags: [Anthos Service Mesh, Microservices Architecture, containers, istio, service mesh, app modernisation]
 ---
 
 
@@ -66,7 +65,7 @@ Anthos Service Mesh provides proactive and reactive observability of services wi
 
 The sidecar proxy intercepts all inbound and outbound HTTP traffic flows and reports them to ASM providing observability into the health and performance of your workloads. With this feature, developers no longer need to instrument their code to collect telemetry data. The telemetry data is automatically loaded into the ASM telemetry pages via the Google Cloud Logging and Monitoring API’s.
 
-Out of the box ASM provides 3 of Google’s 4 golden signals for monitoring as per Google’s SRE practice. These include:
+Out of the box ASM provides 3 of Google’s 4 golden signals for monitoring as per [Google’s Site Reliability Engineering (SRE) practice](https://sre.google/). These include:
 
 Latency: The time it takes to service a request e.g. ms response time of a web page.
 Traffic: A measure of how much demand is being placed on your service e.g. requests per second for a service.
@@ -94,7 +93,7 @@ ASM controls the flow of traffic in and out of the service mesh, and between ser
 
 # Anthos Service Mesh Offerings
 
-ASM is a fully managed service mesh based on the open source Istio project. It is available as part of a suite of products under the Anthos platform or individually as a single product offering for teams only requiring the service mesh functionality. 
+ASM is a fully managed service mesh based on the open source [Istio project](https://istio.io/). It is available as part of a suite of products under the Anthos platform or individually as a single product offering for teams only requiring the service mesh functionality. 
 
 # How It Works / Architecture?
 ASM has two main components: the data plane and the control plane. 
