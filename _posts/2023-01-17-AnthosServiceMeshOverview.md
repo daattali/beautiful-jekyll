@@ -46,7 +46,7 @@ Anthos Service Mesh addresses network security, observability and advanced traff
  
 Anthos Service Mesh is a fully managed service mesh based on the open source [Istio project](https://istio.io/). It is available as part of a suite of products under the Anthos platform or individually as a single product offering for teams only requiring the service mesh functionality. 
  
-## Anthos Service Mesh Deployment Options
+# Anthos Service Mesh Deployment Options
  
 Anthos Service Mesh has two deployment options- the first is an in cluster control plane deployment. With this control plane, you install a Google supported distribution of Istio but you are responsible for managing version upgrades, security patches etc. As alluded to in the name of the deployment, the control plane runs within your own cluster.
  
