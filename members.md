@@ -75,6 +75,9 @@ members:
           - name: Edward Li
             photo_url: /img/members/edward.jpg
             web_url:
+          - name: Wen Hui Leng
+            photo_url: /img/nophoto_faceboard_white.jpg
+            web_url: 
       # - name: Visiting Students
       #  full: false
        # list:
