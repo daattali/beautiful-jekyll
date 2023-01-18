@@ -67,9 +67,9 @@ The sidecar proxy intercepts all inbound and outbound HTTP traffic flows and rep
 
 Out of the box ASM provides 3 of Google’s 4 golden signals for monitoring as per [Google’s Site Reliability Engineering (SRE) practice](https://sre.google/). These include:
 
-Latency: The time it takes to service a request e.g. ms response time of a web page.
-Traffic: A measure of how much demand is being placed on your service e.g. requests per second for a service.
-Errors: The rate of requests that fail e.g. HTTP response 5xx errors.
+- Latency: The time it takes to service a request e.g. ms response time of a web page.
+- Traffic: A measure of how much demand is being placed on your service e.g. requests per second for a service.
+- Errors: The rate of requests that fail e.g. HTTP response 5xx errors.
 
 The 4th golden signal is saturation which needs to be manually defined based upon the individual workload and business requirements.
 
@@ -127,3 +127,8 @@ Random points to consider
 Istio architecture from https://istio.io/latest/docs/ops/deployment/architecture/
 
 Anthos Service Mesh lets you adopt a defense-in-depth posture that is consistent with Zero Trust security principles. It lets you achieve this posture through declarative policies and without modifying any application code.
+
+
+
+
+
