@@ -11,6 +11,31 @@
 #   title: null
 #   venue: null
 #   video_embed: null
+- abs: We formulate grasp learning as a neural field and present Neural Grasp Distance Fields (NGDF). 
+    Here, the input is a 6D pose of a robot end effector and output is a distance to a continuous manifold of 
+    valid grasps for an object. In contrast to current approaches that predict a set of discrete candidate grasps, 
+    the distance-based NGDF representation is easily interpreted as a cost, and minimizing this cost produces a 
+    successful grasp pose. This grasp distance cost can be incorporated directly into a trajectory optimizer for 
+    joint optimization with other costs such as trajectory smoothness and collision avoidance. During optimization, 
+    as the various costs are balanced and minimized, the grasp target is allowed to smoothly vary, as the learned 
+    grasp field is continuous. In simulation benchmarks with a Franka arm, we find that joint grasping and planning 
+    with NGDF outperforms baselines by 63% execution success while generalizing to unseen query poses and unseen object shapes.
+  authors: Thomas Weng, David Held, Franziska Meier, Mustafa Mukadam
+  award: null
+  bib: "@article{weng2022ngdf,\n
+  \  title={Neural Grasp Distance Fields for Robot Manipulation},\n
+  \  author={Weng, Thomas and Held, David and Meier, Franziska and Mukadam, Mustafa},\n
+  \  journal={arXiv preprint arXiv:2211.02647},\n
+  \  year={2022}\n}"
+  img: ../pics/icra2023_logo.png
+  links:
+    '[arXiv]': https://arxiv.org/abs/2211.02647
+    '[Code]': https://github.com/facebookresearch/NGDF/
+  short_id: 2022ngdf
+  site: https://sites.google.com/view/neural-grasp-distance-fields
+  title: Neural Grasp Distance Fields for Robot Manipulation
+  venue: International Conference on Robotics and Automation (ICRA), 2023
+  video_embed: null
 - abs: A simple gripper can solve more complex manipulation tasks if it can utilize 
     the external environment such as pushing the object against the table or a vertical 
     wall, known as "Extrinsic Dexterity." Previous work in extrinsic dexterity usually 
