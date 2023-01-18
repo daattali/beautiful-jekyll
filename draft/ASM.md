@@ -16,7 +16,7 @@ tags: [Anthos Service Mesh, Microservices Architecture, containers, istio, servi
 * toc
 {:toc}
 
-# Anthos Service Mesh Overview
+# Securing Microservices
 
 Monolithic applications with multiple functions have no issues communicating internally, but when these applications are modernised and migrate to a mircoservices architecture, these functions now need to communicate with each other over a network. 
 
@@ -29,7 +29,9 @@ With traditional enterprise networks being secured at the perimeter and providin
 Building authentication and encryption into each function is a complex and time consuming process. Similarly developers need to consider application performance monitoring (APM) and telemetry for each function, again consuming developer time that could be spent adding business value and improving application business logic. This is where Anthos Service Mesh (ASM) helps. 
 
  ![Anthos Logo](/assets/img/anthos/anthoslogo.png "Anthos Logo")
-*Anthos Logo*
+
+*Anthos Logo (source: [Google Cloud](https://console.cloud.google.com/marketplace/product/google/anthos.googleapis.com
+))*
 
 # Anthos Service Mesh
 The service mesh acts as a layer of infrastructure above the application, managing the network functions and security. It decouples these from the application, running the network functions in a second container within the same pod, as a sidecar envoy proxy (deployed using a sidecar pattern). This enables the application function to communicate with the proxy container as if it was on the same machine. The application has no awareness of this, and becomes truly portable.
@@ -41,6 +43,38 @@ The service mesh acts as a layer of infrastructure above the application, managi
 Anthos Service Mesh addresses network security, observability and advanced traffic management requirements. Not only does it manage this within a single Kubernetes cluster, the service mesh can run across multiple Kubernetes clusters on the same cloud, across multiple public clouds and even extending to on premise clusters. It enables secure and reliable communication between workloads that may be running on islands of clusters potentially spread around the world.
 
 <Diagram showing ASM across multiple clusters>
+
+# Anthos Service Mesh Offerings
+
+ASM is a fully managed service mesh based on the open source [Istio project](https://istio.io/). It is available as part of a suite of products under the Anthos platform or individually as a single product offering for teams only requiring the service mesh functionality. 
+
+# Architecture
+ASM has two main components: the data plane and the control plane. 
+
+## The Control Plane
+The control plane is responsible for managing and configuring the proxies so they are able to route traffic accordingly. The control plane consists of three components.
+
+Traffic director: Google Cloud’s fully managed traffic control plane, which is responsible for keeping the proxies up to date with all the service mesh endpoints and directing service mesh ingress and egress traffic.
+
+Managed CA: this is the certificate authority responsible for issuing SSL certificates to all the distributed proxies for the purpose of authentication and encryption .
+
+Google Cloud Operations: The ingestion point for telemetry, providing monitoring, tracing and logging data for each of the proxies. This tooling also powers the ASM observability dashboards.
+
+## The Data Plane
+The data plane refers to the envoy proxy sidecar containers that run alongside the application workloads. It is at the data plane that all traffic flows for the workloads are encrypted and authenticated with mutual TLS via the envoy proxies. The proxy manages the traffic flows, as defined and configured and deployed by the control plane.The proxies also collect and report telemetry for mesh traffic.
+
+The envoy proxy can be deployed automatically to all workloads within a configured namespace. Any workloads that were running prior to configuring auto deployment of the proxy, will need to be restarted before the sidecar proxy is deployed. 
+
+
+## ASM Deployment Options
+ASM has two deployment options- the first is an in cluster control plane. With this control plane, you install a Google supported distribution of Istio but you are responsible for managing version upgrades, security patches etc.
+
+The second option is a fully managed control plane. With this control plane, you get a fully managed Istio deployment managed and maintained by Google. 
+
+![Anthos Service Mesh Fully Managed Cluster Architecture](/assets/img/anthos/anthosservicemeshmanagedarchitecture.png "Anthos Service Mesh Fully Managed Cluster Architecture")
+
+*Anthos Service Mesh Fully Managed Cluster Architecture (source [Google Cloud](https://cloud.google.com/service-mesh/docs/overview#managed_anthos_service_mesh
+))*
 
 # Network Security
 Anthos Service Mesh can enforce services to authenticate each other using SSL certificates via mutual TLS (mTLS). With mTLS both the source and destination service authenticate each other, verifying the services are who they claim to be against a certificate issued from a trusted CA. 
@@ -90,33 +124,6 @@ ASM controls the flow of traffic in and out of the service mesh, and between ser
 - Creating staged rollouts with percentage based traffic splits.
 - Defining circuit breakers, timeouts, retry settings and fault injections.
 - Redirecting traffic based on routing rules matching HTTP field attributes.
-
-# Anthos Service Mesh Offerings
-
-ASM is a fully managed service mesh based on the open source [Istio project](https://istio.io/). It is available as part of a suite of products under the Anthos platform or individually as a single product offering for teams only requiring the service mesh functionality. 
-
-# How It Works / Architecture?
-ASM has two main components: the data plane and the control plane. 
-
-## The Control Plane
-The control plane is responsible for managing and configuring the proxies so they are able to route traffic accordingly. The control plane consists of three components.
-
-Traffic director: Google Clouds fully managed traffic control plane, which is responsible for keeping the proxies up to date with all the service mesh endpoints and directing service mesh ingress and egress traffic.
-
-Managed CA: this is the certificate authority responsible for issuing SSL certificates to all the distributed proxies for the purpose of authentication and encryption .
-
-Google Cloud Operations: The ingestion point for telemetry, providing monitoring, tracing and logging data for each of the proxies. This tooling also powers the ASM observability dashboards.
-
-## The Data Plane
-The data plane refers to the envoy proxy sidecar containers that run alongside the application workloads. It is at the data plane that all traffic flows for the workloads are encrypted and authenticated with mutual TLS via the envoy proxies. The proxy manages the traffic flows, as defined and configured and deployed by the control plane.The proxies also collect and report telemetry for mesh traffic.
-
-The envoy proxy can be deployed automatically to all workloads within a configured namespace. Any workloads that were running prior to configuring auto deployment of the proxy, will need to be restarted before the sidecar proxy is deployed. 
-
-
-## ASM Deployment Options
-ASM has two deployment options- the first is an in cluster control plane. With this control plane, you install a Google supported distribution of Istio but you are responsible for managing version upgrades, security patches etc.
-
-The second option is a fully managed control plane. With this control plane, you get a fully managed Istio deployment managed and maintained by Google. 
 
 
 
