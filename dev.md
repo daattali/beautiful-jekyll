@@ -29,7 +29,7 @@ subtitle: A lot of lines...
 - [Dharmandala](https://dharmandala.surge.sh/)
 
 ### On Polygon Mainnet
-- [MultiFarm Optimizer](https://universedapp.vercel.app/)
+- [MultiFarm Optimizer](https://universeapp.vercel.app/)
 
 ---
 
