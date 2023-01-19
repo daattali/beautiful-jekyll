@@ -2,7 +2,6 @@
 layout: page
 title: Our Guests of Honor
 ---
-
 [![Chise the Pine Marten illustration by TheRougeCat](/uploads/gohbio-chise.png){: .img-left}](/uploads/gohbio-chise.png)
 
 Chise is a Senior Scientist in Vaccine Research and Development and has been in the field for a little over 10 years.
@@ -17,10 +16,8 @@ When she is not at work and conducting research, Chise utilizes her fursona and 
 
 As a member of both communities, she also utilizes her platform as an activist for BIPOC and LGBTQ+ members in the fandom.
 
-&nbsp;
-
 [![Rhubarb the Nidorino, and KeyOtter illustration by TheRougeCat](/uploads/gohbio-rhubarbkey.png){: .img-right}](/uploads/gohbio-rhubarbkey.png)
 
-Meet Keyotter and Rhubarb - furry musicians known for their covers of video game music\! Key, the otter/yoshi, is a pianist, accordionist, and music teacher. Rhubarb is a Nidorino and a jazz violinist. The two of them have been playing music with each other for their entire lives - because they are twin brothers\! Originally from Urbana, IL, they grew up together with a love of music, video games, and nerd culture - the perfect ingredients for becoming video game music enthusiasts (and furries\!). Now they combine those passions by bringing concerts and jam sessions to furry conventions.
+Meet Keyotter and Rhubarb - furry musicians known for their covers of video game music! Key, the otter/yoshi, is a pianist, accordionist, and music teacher. Rhubarb is a Nidorino and a jazz violinist. The two of them have been playing music with each other for their entire lives - because they are twin brothers! Originally from Urbana, IL, they grew up together with a love of music, video games, and nerd culture - the perfect ingredients for becoming video game music enthusiasts (and furries!). Now they combine those passions by bringing concerts and jam sessions to furry conventions.
 
-Key got his start peforming for the fandom with a live streamed set at virtual FurSquared in 2021. When cons opened back up, Key teamed up with Rhubarb to form Otter Chaos\!, a collective of furry performers and arrangers of video game music. Both as a duo and as part of Otter Chaos\!, Key and Rhubarb have traveled the Midwest, bringing energetic live performances to cons such as Midwest FurFest, Indy Fur Con, Anthrocon, and of course, FurSquared. They are excited and honored to bring their unique musical flair to FurSquared 2023\!
+Key got his start peforming for the fandom with a live streamed set at virtual FurSquared in 2021. When cons opened back up, Key teamed up with Rhubarb to form Otter Chaos!, a collective of furry performers and arrangers of video game music. Both as a duo and as part of Otter Chaos!, Key and Rhubarb have traveled the Midwest, bringing energetic live performances to cons such as Midwest FurFest, Indy Fur Con, Anthrocon, and of course, FurSquared. They are excited and honored to bring their unique musical flair to FurSquared 2023!
