@@ -226,6 +226,7 @@
   img: ../pics/iros2022-singulating-layers-fabric-reskin-400x210.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2207.11196
+    '[Code]': https://github.com/DanielTakeshi/cloth_reskin
   short_id: 2022reskinfabric
   site: https://sites.google.com/view/reskin-cloth/home
   title: Learning to Singulate Layers of Cloth based on Tactile Feedback
