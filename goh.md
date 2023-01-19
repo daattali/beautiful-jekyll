@@ -16,6 +16,8 @@ When she is not at work and conducting research, Chise utilizes her fursona and 
 
 As a member of both communities, she also utilizes her platform as an activist for BIPOC and LGBTQ+ members in the fandom.
 
+<br>Find Chise on Twitter: [@sailorrooscout](https://twitter.com/sailorrooscout){: target="_blank" rel="noopener"}
+
 [![Rhubarb the Nidorino, and KeyOtter illustration by TheRougeCat](/uploads/gohbio-rhubarbkey.png){: .img-right}](/uploads/gohbio-rhubarbkey.png)
 
 Meet Keyotter and Rhubarb - furry musicians known for their covers of video game music! Key, the otter/yoshi, is a pianist, accordionist, and music teacher. Rhubarb is a Nidorino and a jazz violinist. The two of them have been playing music with each other for their entire lives - because they are twin brothers! Originally from Urbana, IL, they grew up together with a love of music, video games, and nerd culture - the perfect ingredients for becoming video game music enthusiasts (and furries!). Now they combine those passions by bringing concerts and jam sessions to furry conventions.
