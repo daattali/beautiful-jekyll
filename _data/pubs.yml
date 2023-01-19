@@ -217,12 +217,15 @@
   authors: Sashank Tirumala*, Thomas Weng*, Daniel Seita*, Oliver Kroemer, Zeynep
     Temel, David Held
   award: <award>Best Paper at <a href="https://romado-workshop.github.io/ROMADO2022/">ROMADO-SI</a></award>
-  bib: "@inproceedings{tirumala2022,\n                    title={Learning to Singulate\
-    \ Layers of Cloth based on Tactile Feedback},\n                    author={Sashank\
-    \ Tirumala and Thomas Weng and Daniel Seita and Oliver Kroemer and Zeynep Temel\
-    \ and   David Held},\n                    booktitle={IEEE/RSJ International Conference\
-    \ on Intelligent Robots and Systems (IROS)},\n                    year={2022},\n\
-    \                    }"
+  bib: "@INPROCEEDINGS{tirumala2022reskin,\n
+  \ author={Tirumala, Sashank and Weng, Thomas and Seita, Daniel and Kroemer, Oliver and Temel, Zeynep and Held, David},\n
+  \ booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n
+  \ title={Learning to Singulate Layers of Cloth using Tactile Feedback},\n
+  \ year={2022},\n
+  \ volume={},\n
+  \ number={},\n
+  \ pages={7773-7780},\n
+  \ doi={10.1109/IROS47612.2022.9981341}\n}"
   img: ../pics/iros2022-singulating-layers-fabric-reskin-400x210.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2207.11196
