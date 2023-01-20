@@ -829,7 +829,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 /* --- Tables --- */
 
 table {
-  padding: 10;
+  padding: 10px;
 }
 table tr {
   border-top: 1px solid #cccccc;
