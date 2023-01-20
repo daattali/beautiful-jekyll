@@ -9,7 +9,7 @@ layout: null
 html {
   font-size: 100%
 }
-@media (min-width: 1200px) body {
+@media (min-width: 1500px) body {
   width: 1200;
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
