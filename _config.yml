@@ -39,10 +39,9 @@ author: Zheniya Mogilevski
 ###############################################
 
 navbar-links:
-  Home: "https://zhenev.github.io"
+  Home: "aboutme"
   Scrapbook: ""
   Projects: "bootcampportfolio"
-  About Me: "aboutme"
 
 ################
 # --- Logo --- #
@@ -71,19 +70,19 @@ social-network-links:
 #   rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #   facebook: deanattali
   github: zhenev
-#   twitter: daattali
-#   patreon: DeanAttali
-#   youtube: c/daattali
+#   twitter: yourname
+#   patreon: yourname
+#   youtube: yourname
 #  medium: yourname
 #  reddit: yourname
   linkedin: evgeniya-mogilevskaya
 #  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
+#  stackoverflow: yourname"
+#  snapchat: yourname
+#  instagram: yourname
 #  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
+#  telephone: yourname
+#  steam: yourname
 #  twitch: yourname
 #  yelp: yourname
 #  telegram: yourname
