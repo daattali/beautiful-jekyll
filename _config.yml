@@ -39,7 +39,7 @@ author: Zheniya Mogilevski
 ###############################################
 
 navbar-links:
-  Home: "aboutme"
+  Home: "https://zhenev.github.io"
   Scrapbook: ""
   Projects: "bootcampportfolio"
 
