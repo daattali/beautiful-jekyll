@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Practicum Bootcamp
+title: Bootcamp
 subtitle: The following are the projects which I implemented as part of my ramp-up on DS best practices in 2021-2022. 
 ---
 
