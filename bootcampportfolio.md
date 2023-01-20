@@ -1,6 +1,6 @@
 ---
 layout: page
-subtitle: The following are projects which I implemented as part of my ramp-up on DS best practices in 2021-2022. 
+title: The following are the projects which I implemented as part of my ramp-up on DS best practices in 2021-2022. 
 ---
 
 | # | Topic                |Source         | Idea | Libraries/Tools used|
