@@ -50,7 +50,6 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "aaronthakoordeen@gmail.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: AaronTi30
 #  medium: yourname
 #  reddit: yourname
@@ -69,9 +68,9 @@ social-network-links:
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid 
+  discord: Jonathan Green#7360 
 #  kaggle: yourname
-#  hackerrank: yourname
+  hackerrank: infamajay
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
@@ -121,17 +120,17 @@ keywords: "Aaron T, Aaron Thakoordeen, AaronThakoordeen"
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+navbar-col: "#FBEAEB"
+navbar-text-col: "2F3C7E"
+navbar-border-col: "#FBEAEB"
+page-col: "#FBEAEB"
+text-col: "2F3C7E"
+link-col: "2F3C7E"
+hover-col: "2F3C7E"
+footer-col: "#FBEAEB"
+footer-text-col: "2F3C7E"
+footer-link-col: "2F3C7E"
+footer-hover-col: "#2F3C7E"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
