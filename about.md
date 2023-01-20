@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hi 👋, I'm Zheniya.
-subtitle: I build tools to help chemical manufacturers to use the accumulated sensor data, drill down into batches and process steps, and to monitor and perform diagnostics of GHG emissions for every ton of every product.
+subtitle: I build tools to help chemical manufacturers to use the sensor data from automated metering systems to track carbon footprint of concrete batches and concrete ton of every product.
 ---
 
 - 🔭 I’m passionate about **revealing interdependencies and the ways they can be employed to make a meaningful impact.**
