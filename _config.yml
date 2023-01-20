@@ -120,17 +120,17 @@ keywords: "Aaron T, Aaron Thakoordeen, AaronThakoordeen"
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#FBEAEB"
-navbar-text-col: "#8AAAE5"
-navbar-border-col: "#FBEAEB"
+navbar-col: "#F3BEC7"
+navbar-text-col: "#2F3C7E"
+navbar-border-col: "#F3BEC7"
 page-col: "#FBEAEB"
-text-col: "#8AAAE5"
-link-col: "#8AAAE5"
-hover-col: "#8AAAE5"
+text-col: "#2F3C7E"
+link-col: "#2F3C7E"
+hover-col: "#2F3C7E"
 footer-col: "#FBEAEB"
-footer-text-col: "#8AAAE5"
-footer-link-col: "#8AAAE5"
-footer-hover-col: "#8AAAE5"
+footer-text-col: "#2F3C7E"
+footer-link-col: "#2F3C7E"
+footer-hover-col: "#2F3C7E"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
