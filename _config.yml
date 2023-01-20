@@ -32,6 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
+avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -120,16 +121,16 @@ keywords: "Aaron T, Aaron Thakoordeen, AaronThakoordeen"
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#FBEAEB"
-navbar-text-col: "2F3C7E"
+navbar-text-col: "#8AAAE5"
 navbar-border-col: "#FBEAEB"
 page-col: "#FBEAEB"
-text-col: "2F3C7E"
-link-col: "2F3C7E"
-hover-col: "2F3C7E"
+text-col: "#8AAAE5"
+link-col: "#8AAAE5"
+hover-col: "#8AAAE5"
 footer-col: "#FBEAEB"
-footer-text-col: "2F3C7E"
-footer-link-col: "2F3C7E"
-footer-hover-col: "#2F3C7E"
+footer-text-col: "#8AAAE5"
+footer-link-col: "#8AAAE5"
+footer-hover-col: "#8AAAE5"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
