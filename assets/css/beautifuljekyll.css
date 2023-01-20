@@ -9,8 +9,8 @@ layout: null
 html {
   font-size: 100%
 }
-
-body {
+@media (min-width: 1200px) body {
+  width: 1200;
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
