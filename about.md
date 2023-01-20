@@ -6,7 +6,7 @@ subtitle: I build tools to help chemical manufacturers to finally use the accumu
 
 - 🔭 I’m passionate about **revealing interdependencies and the ways they can be employed to make a meaningful impact.**
 
-- 🌱 I’m currently learning **Bayesian inference and development on cloud services (AWS).**
+- 🌱 I’m currently learning **Bayesian inference and development on cloud services.**
 
 - 👯 I’m looking to collaborate on **industrial process analysis and diagnostics.**
 
