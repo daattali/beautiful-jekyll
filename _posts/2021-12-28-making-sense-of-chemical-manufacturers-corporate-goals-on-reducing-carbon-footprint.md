@@ -2,6 +2,8 @@
 layout: post
 title: Making Sense of Chemical Manufacturers Corporate Goals on Reducing Carbon Footprint
 subtitle: Rethinking the role of process flow analysis in identifying carbon reduction opportunities in chemical manufacturing
+thumbnail-img: /assets/img/2021-12-28-thumb.jpg
+tags: [industry]
 comments: true
 ---
 
