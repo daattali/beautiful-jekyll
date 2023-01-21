@@ -10,8 +10,8 @@ html {
   font-size: 100%
 }
 @media (min-width: 1500px) body {
-  width: 1200;
-  font-family: 'Lora', 'Times New Roman', serif;
+  width: 1500;
+  font-family: 'Lora', Helvetica, Arial, serif;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
@@ -487,9 +487,9 @@ footer .footer-custom-content {
 .post-heading .post-meta {
   color: #808080;
   font-size: 1.125rem;
-  font-style: italic;
+/*   font-style: italic; */
   margin: 0 0 0.625rem;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Lora', 'Helvetica', serif;
 }
 .post-heading .post-meta {
   display: inline-block;
@@ -626,7 +626,7 @@ footer .footer-custom-content {
 
 #full-tags-list .tag-entry .entry-date {
   color: #808080;
-  font-style: italic;
+/*   font-style: italic; */
   font-size: 1rem;
 }
 
@@ -987,7 +987,7 @@ pre {
   text-align: center;
   font-size: 0.875rem;
   padding: 0.625rem;
-  font-style: italic;
+/*   font-style: italic; */
   color: #777;
   margin: 0;
   display: block;
