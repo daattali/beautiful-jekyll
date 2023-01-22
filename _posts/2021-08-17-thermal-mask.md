@@ -8,7 +8,7 @@ tags: [biometrics, breathing rate, bounding box regression, thermal facial mask,
 comments: false
 ---
 
-**Abstract:** This project demonstrates the usability of thermal video for facial mask detection and the breathing rate measurement. Due to the lack of available thermal masked face images, I developed a dataset based on the SpeakingFaces set, by generating masks for the unmasked thermal images of faces.
+**Abstract:** This project demonstrates the usability of thermal video for facial mask detection and breathing rate measurement. Due to the lack of available thermal masked face images, I developed a synthetic dataset based on the SpeakingFaces dataset, by generating masks for the unmasked thermal images of faces.
 
 I utilize the Cascade R-CNN as the thermal facial mask detector, identifying masked and unmasked faces, and whether the mask color indicates a inhale or exhale state. With that information I calculated the breathing rate. The proposed Cascade R-CNN is a multi-stage object detection architecture composed of detectors trained with increasing Intersection-of-Unions thresholds.
 
@@ -26,8 +26,16 @@ _Dataset :_ I used the [SpeakingFaces dataset](https://github.com/IS2AI/Speaking
 
 4. Object detection with Cascade R-CNN
 
-   
+### Final Results
 
+Before reading the whole text, please check the video below showing the final results of this project.
+<br><br>
+<video width="320" height="240" controls>
+  <source src="/assets/img/thermal_BR.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<br>
 ### Introduction
 
 This project proposes to apply deep learning techniques to thermal videos in order to assess whether the subjects are wearing masks, as well as estimate the respiration rate by analyzing the thermal image intensity rate over time.
