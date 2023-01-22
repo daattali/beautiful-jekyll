@@ -15,15 +15,15 @@ JimmysClassList is an auto-timetabling application. Now you may say "But sevenem
 {: .box-note}
 **This is my desired output:**
 
-|------------------------------------------|
-|               PE Timetable               |
-|     Mon Tue  Wed   Thu  Fri              |
-|AM     Y1    Y2   Y3   Y4   Y5            |
-|                                          |
-|PM     Y6   S     S    S    Y7            |
-|                                          |
-|                                          |
-|-------------------------------------------
+\|------------------------------------------\|
+\|               PE Timetable               \|
+\|     Mon Tue  Wed   Thu  Fri              \|
+\|AM     Y1    Y2   Y3   Y4   Y5            \|
+\|                                          \|
+\|PM     Y6   S     S    S    Y7            \|
+\|                                          \|
+\|                                          \|
+\|------------------------------------------\|
 
 The user interface should be as simplistic as possible without compromising customisation. The user must enter:
 
