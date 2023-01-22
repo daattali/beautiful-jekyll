@@ -14,6 +14,7 @@ JimmysClassList is an auto-timetabling application. Now you may say "But sevenem
 
 {: .box-note}
 **This is my desired output:**
+
 ![Timetable produced](/assets/img/jimmy01.jpg)
 
 The user interface should be as simplistic as possible without compromising customisation. The user must enter:
