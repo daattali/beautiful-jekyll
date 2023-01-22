@@ -1,8 +1,12 @@
 ---
 layout: page
 title: Hi 👋, I'm Zheniya.
-subtitle: I build tools to help chemical manufacturers to use the sensor data from automated metering systems to track carbon footprint of specific batches and specific ton of every product.
+subtitle: I build data-driven applications, including service design, prototyping, back-end development, and integration. 
 ---
+
+- 📐 My specialization: **sensor data, time series.**
+
+- 💎 My favorite project: **Building a module helping chemical manufacturers to use the sensor data from automated metering systems to track carbon footprint of specific batches and specific ton of every product.** 
 
 - 🔭 I’m passionate about **revealing interdependencies and the ways they can be employed to make a meaningful impact.**
 
