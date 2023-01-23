@@ -93,11 +93,11 @@ def truncated_normal_vector_clip(
 ) -> np.array:
     """Generates a vector of random values with a truncated normal distribution.
     
-    Version 1: Uses random.normal function to generate random values with a normal distribution,
-    and the .clip() method to truncate values outside the specified bounds.
+    Version 1: Uses random.normal function to generate random values with a normal
+    distribution, and the .clip() method to truncate values outside the specified bounds.
 	
-    Version 2: Uses truncnorm function to generate random values directly from a truncated normal
-    distribution.
+    Version 2: Uses truncnorm function to generate random values directly from a
+    truncated normal distribution.
 
     :param mean: the mean of the normal distribution.
     :param std_dev: the standard deviation of the normal distribution.
@@ -125,7 +125,7 @@ When we run the unit test, the generated vectors meet the desired criteria for b
 ============================= test session starts =============================
 collecting ... collected 1 item
 
-truncated_normal_vector.py::TestTruncatedNormalVector::test_truncated_normal_vector PASSED  [100%]
+trunc_norm_vector.py::TestTruncatedNormalVector::test_truncated_normal_vector PASSED  [100%]
 
 ============================== 1 passed in 0.49s ==============================
 
@@ -161,14 +161,12 @@ random_values_v1 = truncated_normal_vector(
 truncated_normal_vector_viz(random_values_v1)
 
 ```
-![Version 1](/assets/img/2022-11-12-graph_1_2.jpg)
-
-<div id="myDiv"></div>
+<div id="myDiv_v1"></div>
 <script>
   fetch('/assets/data/2022-11-12-version_1.json')
     .then(response => response.json())
     .then(data => {
-      Plotly.newPlot('myDiv', data);
+      Plotly.newPlot('myDiv_v1', data);
     });
 </script>
 
@@ -181,7 +179,14 @@ random_values_v2 = truncated_normal_vector(
 truncated_normal_vector_viz(random_values_v2)
 
 ```
-![Version 2](/assets/img/2022-11-12-graph_2_1.jpg)
+<div id="myDiv_v2"></div>
+<script>
+  fetch('/assets/data/2022-11-12-version_2.json')
+    .then(response => response.json())
+    .then(data => {
+      Plotly.newPlot('myDiv_v2', data);
+    });
+</script>
 
 One can observe that, altough the basic statistics of the two distributions are similar and both functions pass the unit test, a visual examination reveals that there is a slight difference in the shape of the distributions. We can even test these two distributions for statistical difference.
 
