@@ -11,7 +11,7 @@ When building workflows while runnig multiple projects in one repository, it is 
 This is our implementation of the filter itself:
 
 ```yaml
-if: ${{contains(github.event.pull_request.labels.*.name, 'your_project_name')}}
+contains(github.event.pull_request.labels.*.name, 'your_project_name')
 ```
 
 And below is that filter within a workflow which publishes a Python package:
@@ -51,7 +51,7 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN_FOR_YOUR_PROJECT }}
+        password: \${{ secrets.PYPI_API_TOKEN_FOR_YOUR_PROJECT }}
         packages_dir: ./your_project_name/dist
 ```
 
