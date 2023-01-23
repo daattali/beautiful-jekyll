@@ -36,6 +36,37 @@
   title: Neural Grasp Distance Fields for Robot Manipulation
   venue: International Conference on Robotics and Automation (ICRA), 2023
   video_embed: null
+- abs: Thin plastic bags are ubiquitous in retail stores, healthcare, food
+    handling, recycling, homes, and school lunchrooms. They are challenging
+    both for perception (due to specularities and occlusions) and for
+    manipulation (due to the dynamics of their 3D deformable structure). We
+    formulate the task of manipulating common plastic shopping bags with two
+    handles from an unstructured initial state to a state where solid objects can
+    be inserted into the bag for transport. We propose a self-supervised learning
+    framework where a dual-arm robot learns to recognize the handles and rim of
+    plastic bags using UV-fluorescent markings; at execution time, the robot does
+    not use UV markings or UV light. We propose Autonomous Bagging (AutoBag), where
+    the robot uses the learned perception model to open plastic bags through
+    iterative manipulation.  We present novel metrics to evaluate the quality of a
+    bag state and new motion primitives for reorienting and opening bags from
+    visual observations. In physical experiments, a YuMi robot using AutoBag is
+    able to open bags and achieve a success rate of 16/30 for inserting at least
+    one item across a variety of initial bag configurations
+  authors: Lawrence Yunliang Chen, Baiyu Shi, Daniel Seita, Richard Cheng, Thomas Kollar, David Held, Ken Goldberg
+  award: null
+  bib: "@article{autobag2023,\n
+  \  title={{AutoBag: Learning to Open Plastic Bags and Insert Objects}},\n
+  \  author={Lawrence Yunliang Chen and Baiyu Shi and Daniel Seita and Richard Cheng and Thomas Kollar and David Held and Ken Goldberg},\n
+  \  journal={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
+  \  year={2023}\n}"
+  img: ../pics/icra2023_logo.png
+  links:
+    '[arXiv]': https://arxiv.org/abs/2210.17217
+  short_id: 2023autobag
+  site: https://sites.google.com/view/autobag
+  title: AutoBag: Learning to Open Plastic Bags and Insert Objects
+  venue: International Conference on Robotics and Automation (ICRA), 2023
+  video_embed: null
 - abs: A simple gripper can solve more complex manipulation tasks if it can utilize 
     the external environment such as pushing the object against the table or a vertical 
     wall, known as "Extrinsic Dexterity." Previous work in extrinsic dexterity usually 
@@ -116,6 +147,8 @@
   img: ../pics/toolflownet.gif
   links: 
     '[arXiv]': https://arxiv.org/abs/2211.09006
+    '[Poster]': https://docs.google.com/presentation/d/1CqSfyEfcakvNYrZblt4KmScOub06qmN6jRar8YlPHNM/edit?usp=sharing
+    '[Talk]': https://docs.google.com/presentation/d/1IAFnXzlVvSO3GXlX7NfAwVPhl77YgbBnGpkdN6WjIPk/edit?usp=sharing
   short_id: 2022corltoolflownet
   site: https://sites.google.com/view/point-cloud-policy
   title: 'ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from
