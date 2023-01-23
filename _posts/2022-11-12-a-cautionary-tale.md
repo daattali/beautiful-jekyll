@@ -228,7 +228,7 @@ The two distributions are different (reject H0)
 
 This example highlights the importance of being aware and careful about the methods chosen to generate data, as even small differences in the methods used can result in significant differences in the resulting distributions. It may be important to not only rely on basic statistics, but also make a visual check and even use statistical tests to confirm the difference in distributions. In our example, the ultimate reason for the observed deference is one peculiarity of the [`.clip()`](https://numpy.org/doc/stable/reference/generated/numpy.clip.html) method: any value in the array that is less than `lower_bound` will be set to `lower_bound`, and any value that is greater than `upper_bound` will be set to `upper_bound`.
 
-<sup>1</sup> The generated vectors from this case study can be found [here]('../assets/data/2022-11-12-vectors.csv'):
+<sup>1</sup> The generated vectors from this case study can be found [here](r'../assets/data/2022-11-12-vectors.csv'):
 
 ```python
 df = pd.DataFrame([random_values_v1,random_values_v2], ['clip', 'trunc']).T
