@@ -31,7 +31,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    if: ${{contains(github.event.pull_request.labels.*.name, 'your_project_name') && github.event.pull_request.merged == true}}
+    if: contains(github.event.pull_request.labels.*.name, 'your_project_name') && github.event.pull_request.merged == true
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
@@ -51,7 +51,7 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
-        password: \${{ secrets.PYPI_API_TOKEN_FOR_YOUR_PROJECT }}
+        password: YOUR_PYPI_API_TOKEN_FOR_YOUR_PROJECT
         packages_dir: ./your_project_name/dist
 ```
 
