@@ -232,7 +232,7 @@ This example highlights the importance of being aware and careful about the meth
 
 ```python
 df = pd.DataFrame([random_values_v1,random_values_v2], ['clip', 'trunc']).T
-df.to_csv("2022-11-12-vectors.csv")
+df.to_csv('2022-11-12-vectors.csv', index=False)
 ```
 
 Copyright © 2021 Zheniya Mogilevski
