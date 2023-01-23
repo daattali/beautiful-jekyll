@@ -56,6 +56,6 @@ jobs:
         password: YOUR_PYPI_API_TOKEN_FOR_YOUR_PROJECT
         packages_dir: ./your_project_name/dist
 ```
-Note: the password should be replaced with the actual secret value when the workflow runs in GitHub Actions, e.g. `${{secrets.PYPI_API_TOKEN_FOR_YOUR_PROJECT}}`.
+Note: 'YOUR_PYPI_API_TOKEN_FOR_YOUR_PROJECT' should be replaced with the actual expression used to access a secret stored in GitHub Actions.
 
 Copyright © 2021 Zheniya Mogilevski
