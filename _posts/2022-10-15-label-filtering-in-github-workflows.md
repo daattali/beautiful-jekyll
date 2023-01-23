@@ -31,7 +31,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    if: contains(github.event.pull_request.labels.*.name, 'your_project_name') && github.event.pull_request.merged == true
+    if: contains(github.event.pull_request.labels.*.name, 'your_project_name') &&
+    github.event.pull_request.merged == true
+    
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
@@ -54,5 +56,6 @@ jobs:
         password: YOUR_PYPI_API_TOKEN_FOR_YOUR_PROJECT
         packages_dir: ./your_project_name/dist
 ```
+Note: the password should be replaced with the actual secret value when the workflow runs in GitHub Actions, e.g. `${{secrets.PYPI_API_TOKEN_FOR_YOUR_PROJECT}}`.
 
 Copyright © 2021 Zheniya Mogilevski
