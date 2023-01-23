@@ -56,6 +56,6 @@ jobs:
         password: YOUR_PYPI_API_TOKEN_FOR_YOUR_PROJECT
         packages_dir: ./your_project_name/dist
 ```
-Note: 'YOUR_PYPI_API_TOKEN_FOR_YOUR_PROJECT' should be replaced with the actual expression used to access a secret stored in GitHub Actions.
+Note: `YOUR_PYPI_API_TOKEN_FOR_YOUR_PROJECT` should be replaced with the actual expression used to access a secret stored in GitHub Actions.
 
 Copyright © 2021 Zheniya Mogilevski
