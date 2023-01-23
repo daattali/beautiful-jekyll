@@ -11,6 +11,22 @@
 #   title: null
 #   venue: null
 #   video_embed: null
+- abs: State estimation is one of the greatest challenges for cloth manipulation due to cloth's high dimensionality and self-occlusion. Prior works propose to identify the full state of crumpled clothes by training a mesh reconstruction model in simulation. However, such models are prone to suffer from a sim-to-real gap due to differences between cloth simulation and the real world. In this work, we propose a self-supervised method to finetune a mesh reconstruction model in the real world. Since the full mesh of crumpled cloth is difficult to obtain in the real world, we design a special data collection scheme and an action-conditioned model-based cloth tracking method to generate pseudo-labels for self-supervised learning. By finetuning the pretrained mesh reconstruction model on this pseudo-labeled dataset, we show that we can improve the quality of the reconstructed mesh without requiring human annotations, and improve the performance of downstream manipulation task.
+  authors: Zixuan Huang, Xingyu Lin, David Held
+  award: null
+  bib: "@inproceedings{huang2023act,\n
+    \ title={Self-supervised Cloth Reconstruction via Action-conditioned Cloth Tracking},\n
+    \ author={Huang, Zixuan and Lin, Xingyu and Held, David},\n
+    \ booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
+    \ year={2023}\n
+    \ }"
+  img: ../pics/2023act.gif
+  links: {}
+  short_id: 2023act
+  site: "https://sites.google.com/view/ss-mesh-recon/"
+  title: Self-supervised Cloth Reconstruction via Action-conditioned Cloth Tracking
+  venue: International Conference on Robotics and Automation (ICRA), 2023
+  video_embed: null
 - abs: We formulate grasp learning as a neural field and present Neural Grasp Distance Fields (NGDF).
     Here, the input is a 6D pose of a robot end effector and output is a distance to a continuous manifold of
     valid grasps for an object. In contrast to current approaches that predict a set of discrete candidate grasps,
