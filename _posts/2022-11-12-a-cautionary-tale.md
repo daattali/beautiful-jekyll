@@ -62,8 +62,8 @@ def truncated_normal_vector(
 ) -> np.array:
     """Generates a vector of random values with a truncated normal distribution.
 
-    Version 1: Uses random.normal function to generate random values with a normal distribution,
-    and the .clip() method to truncate values outside the specified bounds.
+    Version 1: Uses random.normal function to generate random values with a normal
+    distribution, and the .clip() method to truncate values outside the specified bounds.
 
     :param mean: the mean of the normal distribution.
     :param std_dev: the standard deviation of the normal distribution.
@@ -125,7 +125,7 @@ When we run the unit test, the generated vectors meet the desired criteria for b
 ============================= test session starts =============================
 collecting ... collected 1 item
 
-trunc_norm_vector.py::TestTruncatedNormalVector::test_truncated_normal_vector PASSED  [100%]
+trunc_norm_vec.py::TestTruncatedNormalVector::test_truncated_normal_vector PASSED  [100%]
 
 ============================== 1 passed in 0.49s ==============================
 
@@ -217,15 +217,22 @@ else:
     print('The two distributions are the same (fail to reject H0)')
 ```
 
-The output of the test states the following:
+The output of the test<sup>1</sup> states the following:
 
 ```
-KS-statistic: 0.083, p-value: 0.002
+KS-statistic: 0.066, p-value: 0.026
 The two distributions are different (reject H0)
 ```
 
 ## Conclusion
 
 This example highlights the importance of being aware and careful about the methods chosen to generate data, as even small differences in the methods used can result in significant differences in the resulting distributions. It may be important to not only rely on basic statistics, but also make a visual check and even use statistical tests to confirm the difference in distributions. In our example, the ultimate reason for the observed deference is one peculiarity of the [`.clip()`](https://numpy.org/doc/stable/reference/generated/numpy.clip.html) method: any value in the array that is less than `lower_bound` will be set to `lower_bound`, and any value that is greater than `upper_bound` will be set to `upper_bound`.
+
+<sup>1</sup> The generated vectors from this case study can be found [here]('/assets/data/2022-11-12-vectors.csv'):
+
+```python
+df = pd.DataFrame([random_values_v1,random_values_v2], ['clip', 'trunc']).T
+df.to_csv("2022-11-12-vectors.csv")
+```
 
 Copyright © 2021 Zheniya Mogilevski
