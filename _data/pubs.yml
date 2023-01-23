@@ -1,5 +1,5 @@
-# When making a new entry, copy the commented out entry, paste it, uncomment, and fill out the fields. 
-# If any of the fields are confusing look at previous examples for guidance. 
+# When making a new entry, copy the commented out entry, paste it, uncomment, and fill out the fields.
+# If any of the fields are confusing look at previous examples for guidance.
 # - abs: null
 #   authors: null
 #   award: null
@@ -11,14 +11,14 @@
 #   title: null
 #   venue: null
 #   video_embed: null
-- abs: We formulate grasp learning as a neural field and present Neural Grasp Distance Fields (NGDF). 
-    Here, the input is a 6D pose of a robot end effector and output is a distance to a continuous manifold of 
-    valid grasps for an object. In contrast to current approaches that predict a set of discrete candidate grasps, 
-    the distance-based NGDF representation is easily interpreted as a cost, and minimizing this cost produces a 
-    successful grasp pose. This grasp distance cost can be incorporated directly into a trajectory optimizer for 
-    joint optimization with other costs such as trajectory smoothness and collision avoidance. During optimization, 
-    as the various costs are balanced and minimized, the grasp target is allowed to smoothly vary, as the learned 
-    grasp field is continuous. In simulation benchmarks with a Franka arm, we find that joint grasping and planning 
+- abs: We formulate grasp learning as a neural field and present Neural Grasp Distance Fields (NGDF).
+    Here, the input is a 6D pose of a robot end effector and output is a distance to a continuous manifold of
+    valid grasps for an object. In contrast to current approaches that predict a set of discrete candidate grasps,
+    the distance-based NGDF representation is easily interpreted as a cost, and minimizing this cost produces a
+    successful grasp pose. This grasp distance cost can be incorporated directly into a trajectory optimizer for
+    joint optimization with other costs such as trajectory smoothness and collision avoidance. During optimization,
+    as the various costs are balanced and minimized, the grasp target is allowed to smoothly vary, as the learned
+    grasp field is continuous. In simulation benchmarks with a Franka arm, we find that joint grasping and planning
     with NGDF outperforms baselines by 63% execution success while generalizing to unseen query poses and unseen object shapes.
   authors: Thomas Weng, David Held, Franziska Meier, Mustafa Mukadam
   award: null
@@ -54,36 +54,36 @@
     one item across a variety of initial bag configurations
   authors: Lawrence Yunliang Chen, Baiyu Shi, Daniel Seita, Richard Cheng, Thomas Kollar, David Held, Ken Goldberg
   award: null
-  bib: "@article{autobag2023,\n
+  bib: "@inproceedings{autobag2023,\n
   \  title={{AutoBag: Learning to Open Plastic Bags and Insert Objects}},\n
   \  author={Lawrence Yunliang Chen and Baiyu Shi and Daniel Seita and Richard Cheng and Thomas Kollar and David Held and Ken Goldberg},\n
-  \  journal={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
+  \  booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
   \  year={2023}\n}"
   img: ../pics/icra2023_logo.png
   links:
     '[arXiv]': https://arxiv.org/abs/2210.17217
   short_id: 2023autobag
   site: https://sites.google.com/view/autobag
-  title: AutoBag: Learning to Open Plastic Bags and Insert Objects
+  title: "AutoBag: Learning to Open Plastic Bags and Insert Objects"
   venue: International Conference on Robotics and Automation (ICRA), 2023
   video_embed: null
-- abs: A simple gripper can solve more complex manipulation tasks if it can utilize 
-    the external environment such as pushing the object against the table or a vertical 
-    wall, known as "Extrinsic Dexterity." Previous work in extrinsic dexterity usually 
-    has careful assumptions about contacts which impose restrictions on robot design, 
-    robot motions, and the variations of the physical parameters. In this work, we 
-    develop a system based on reinforcement learning (RL) to address these limitations. 
-    We study the task of “Occluded Grasping” which aims to grasp the object in 
-    configurations that are initially occluded; the robot needs to move the object into 
-    a configuration from which these grasps can be achieved. We present a system with 
-    model-free RL that successfully achieves this task using a simple gripper with 
-    extrinsic dexterity. The policy learns emergent behaviors of pushing the object 
-    against the wall to rotate and then grasp it without additional reward terms on 
-    extrinsic dexterity. We discuss important components of the system including the 
-    design of the RL problem, multi-grasp training and selection, and policy 
-    generalization with automatic curriculum. Most importantly, the policy trained in 
-    simulation is zero-shot transferred to a physical robot. It demonstrates dynamic 
-    and contact-rich motions with a simple gripper that generalizes across objects 
+- abs: A simple gripper can solve more complex manipulation tasks if it can utilize
+    the external environment such as pushing the object against the table or a vertical
+    wall, known as "Extrinsic Dexterity." Previous work in extrinsic dexterity usually
+    has careful assumptions about contacts which impose restrictions on robot design,
+    robot motions, and the variations of the physical parameters. In this work, we
+    develop a system based on reinforcement learning (RL) to address these limitations.
+    We study the task of “Occluded Grasping” which aims to grasp the object in
+    configurations that are initially occluded; the robot needs to move the object into
+    a configuration from which these grasps can be achieved. We present a system with
+    model-free RL that successfully achieves this task using a simple gripper with
+    extrinsic dexterity. The policy learns emergent behaviors of pushing the object
+    against the wall to rotate and then grasp it without additional reward terms on
+    extrinsic dexterity. We discuss important components of the system including the
+    design of the RL problem, multi-grasp training and selection, and policy
+    generalization with automatic curriculum. Most importantly, the policy trained in
+    simulation is zero-shot transferred to a physical robot. It demonstrates dynamic
+    and contact-rich motions with a simple gripper that generalizes across objects
     with various size, density, surface friction, and shape with a 78% success rate.
   authors: Wenxuan Zhou, David Held
   award: <award>Oral Presentation</award>  (Selection rate 6.5%)
@@ -114,7 +114,7 @@
     \ year={2022}\n
     \ }"
   img: ../pics/taxpose-web.gif
-  links: 
+  links:
     '[PDF]': https://arxiv.org/pdf/2211.09325.pdf
   short_id: 2022corltaxpose
   site: https://sites.google.com/view/tax-pose/home
@@ -145,7 +145,7 @@
     \ year={2022}\n
     \ }"
   img: ../pics/toolflownet.gif
-  links: 
+  links:
     '[arXiv]': https://arxiv.org/abs/2211.09006
     '[Poster]': https://docs.google.com/presentation/d/1CqSfyEfcakvNYrZblt4KmScOub06qmN6jRar8YlPHNM/edit?usp=sharing
     '[Talk]': https://docs.google.com/presentation/d/1IAFnXzlVvSO3GXlX7NfAwVPhl77YgbBnGpkdN6WjIPk/edit?usp=sharing
@@ -177,9 +177,9 @@
   award: null
   bib: "@inproceedings{\n
     \ lin2022planning,\n
-    \ title={Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation},\n 
-    \ author={Xingyu Lin and Carl Qi and Yunchu Zhang and Yunzhu Li and Zhiao Huang and Katerina Fragkiadaki and Chuang Gan and David Held},\n                        
-    \ booktitle={6th Annual Conference on Robot Learning},\n 
+    \ title={Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation},\n
+    \ author={Xingyu Lin and Carl Qi and Yunchu Zhang and Yunzhu Li and Zhiao Huang and Katerina Fragkiadaki and Chuang Gan and David Held},\n
+    \ booktitle={6th Annual Conference on Robot Learning},\n
     \ year={2022},\n
     \ url={https://openreview.net/forum?id=tyxyBj2w4vw}\n
     \ }"
@@ -194,15 +194,15 @@
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPV_bMeszWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - abs: "Orientation estimation is the core to a variety of vision and robotics tasks such as camera and object pose estimation. Deep learning has offered a way
-    \ to develop image-based orientation estimators; however, such estimators often require training on a large labeled dataset, which can be time-intensive 
-    \ to collect. In this work, we explore whether self-supervised learning from unlabeled data can be used to alleviate this issue. Specifically, we assume 
-    \ access to estimates of the relative orientation between neighboring poses, such that can be obtained via a local alignment method. While self-supervised 
+    \ to develop image-based orientation estimators; however, such estimators often require training on a large labeled dataset, which can be time-intensive
+    \ to collect. In this work, we explore whether self-supervised learning from unlabeled data can be used to alleviate this issue. Specifically, we assume
+    \ access to estimates of the relative orientation between neighboring poses, such that can be obtained via a local alignment method. While self-supervised
     \ learning has been used successfully for translational object keypoints, in this work, we show that naively applying relative supervision to the rotational
-    \ group SO(3) will often fail to converge due to the non-convexity of the rotational space. To tackle this challenge, we propose a new algorithm for 
+    \ group SO(3) will often fail to converge due to the non-convexity of the rotational space. To tackle this challenge, we propose a new algorithm for
     \ self-supervised orientation estimation which utilizes Modified Rodrigues Parameters to stereographically project the closed manifold of SO(3)
     \ to the open manifold of R3, allowing the optimization to be done in an open Euclidean space. We empirically validate the benefits of the proposed algorithm
-    \ for rotational averaging problem in two settings: (1) direct optimization on rotation parameters, and (2) optimization of parameters of a convolutional 
-    \ neural network that predicts object orientations from images. In both settings, we demonstrate that our proposed algorithm is able to converge to a 
+    \ for rotational averaging problem in two settings: (1) direct optimization on rotation parameters, and (2) optimization of parameters of a convolutional
+    \ neural network that predicts object orientations from images. In both settings, we demonstrate that our proposed algorithm is able to converge to a
     \ consistent relative orientation frame much faster than algorithms that purely operate in the SO(3) space."
   authors: Brian Okorn*, Chuer Pan*, Martial Hebert, David Held
   award: null
@@ -213,7 +213,7 @@
       \ year={2022},\n
       \ }"
   img: ../pics/mrp_website_text.png
-  links: 
+  links:
     '[arXiv]': https://arxiv.org/pdf/2211.11182.pdf
   short_id: 2022corlmrp
   site: https://sites.google.com/view/deep-projective-rotation/home
@@ -291,7 +291,7 @@
   img: ../pics/carl-22-website.gif
   links:
     '[Talk]': https://drive.google.com/file/d/1ai4tJeHNoZKD8wavViWj3auMPZdblZRR/view?usp=sharing
-    '[PDF]': https://arxiv.org/pdf/2207.04638.pdf 
+    '[PDF]': https://arxiv.org/pdf/2207.04638.pdf
   short_id: 2022raldough
   site: https://sites.google.com/view/dough-manipulation
   title: <a href="https://sites.google.com/view/dough-manipulation">Learning Closed-loop
@@ -326,8 +326,8 @@
   \ publisher={IEEE} \n
   \ }"
   img: ../pics/visual-haptic-reasoning-IROS.gif
-  links: 
-    '[PDF]': https://arxiv.org/pdf/2208.05632.pdf 
+  links:
+    '[PDF]': https://arxiv.org/pdf/2208.05632.pdf
     '[Talk]': https://www.youtube.com/watch?v=Qgjdt7vAHCQ
   short_id: 2022vhr
   site: https://sites.google.com/view/visualhapticreasoning/home
@@ -1030,8 +1030,8 @@
   award: null
   bib: "@InProceedings{Qian_2020_IROS,\n
     author={Qian, Jianing and Weng, Thomas and Zhang, Luxin and Okorn, Brian and Held, David},
-    booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
-    title={Cloth Region Segmentation for Robust Grasp Selection}, 
+    booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+    title={Cloth Region Segmentation for Robust Grasp Selection},
     year={2020},
     volume={},
     number={},
@@ -1220,7 +1220,7 @@
     Point Clouds</a>
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference of Robotics and Automation (ICRA), 2020
-  video_embed: null 
+  video_embed: null
 - abs: Deep learning object detectors often return false positives with very high
     confidence. Although they optimize generic detection performance, such as mean
     average precision (mAP), they are not designed for reliability. For a reliable
