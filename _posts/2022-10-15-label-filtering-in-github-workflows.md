@@ -10,13 +10,13 @@ When building workflows while runnig multiple projects in one repository, it is 
 
 This is our implementation of the filter itself:
 
-```yaml {numberLines: true}
+```yaml
 if: ${{contains(github.event.pull_request.labels.*.name, 'your_project_name')}}
 ```
 
 And below is that filter within a workflow which publishes a Python package:
 
-```yaml {numberLines: true}
+```yaml
 name: Upload your_project_name package
 
 on:
@@ -54,3 +54,5 @@ jobs:
         password: ${{ secrets.PYPI_API_TOKEN_FOR_YOUR_PROJECT }}
         packages_dir: ./your_project_name/dist
 ```
+
+Copyright © 2021 Zheniya Mogilevski
