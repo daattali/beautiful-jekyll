@@ -14,7 +14,7 @@ This is our implementation of the filter itself:
 contains(github.event.pull_request.labels.*.name, 'your_project_name')
 ```
 
-And below is that filter within a workflow which publishes a Python package:
+And below is that filter within a workflow which publishes a Python package to PYPI:
 
 ```yaml
 name: Upload your_project_name package
