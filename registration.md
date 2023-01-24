@@ -6,15 +6,10 @@ css:
     - /assets/css/theme-2022/registration.css
 ---
 
-&nbsp;
-
-![](/uploads/photo-2021-12-15-20-54-37.jpg){: width="1024" height="672"}
-
 ## COVID-19 Information
 
-**Vaccine records will be required & checked before you receive your badge.** **Masks worn properly will be required at all times in hotel and convention space.**
+See our dedicated [covid policy page](/covid-policy)
 
-Further details about this policy are actively being worked on, and will appear here when ready.
 
 ## Registration Levels
 
@@ -30,10 +25,10 @@ Further details about this policy are actively being worked on, and will appear 
 * Access to our con suite for the duration of the convention.
 * Additional bonus goodies and swag.
 * This year’s t-shirt.
-* A special super sponsor item from our friends at Con Glomerate Megacorp.
+* A special super sponsor item.
 * An invitation to our Guest of Honor dinner Saturday night.
 
-Please be aware that Pre-Registration prices will end March 31st, 2022 at 11:59 PM CST. Prices then will become Walk-in Prices. Online Registration will shut down March 31st at 11:59 PM CST.
+Please be aware that Pre-Registration prices will end March 22nd, 2022 at 11:59 PM CST. Prices then will become Walk-in Prices. Online Registration will shut down March 22nd at 11:59 PM CST.
 
 ## Pricing
 
@@ -49,9 +44,7 @@ Please be aware that Pre-Registration prices will end March 31st, 2022 at 11:59 
 | Satuday | $30 |
 | Sunday | $20 |
 
-Badge Reprints $15 ( Reprint refunded if original badge is found and shown to Registration ) Only one allowed before new Full Registration required.
-
-Upgrades can be offered through Link: TBA
+Badge Reprints $60 ( Reprint refunded if original badge is found and shown to Registration ) Only one allowed before new Full Registration required.
 
 ## The Fursquared 2022 Poster\!
 
@@ -59,9 +52,9 @@ Upgrades can be offered through Link: TBA
 
 Poster Lottery Terms
 
-The Fur Squared poster is happening\!&nbsp; Here’s how you get in: When you register for Fur Squared 2022, there will be a checkbox and a link to this document.&nbsp; Read the entire document, and check the box to acknowledge your entry into the 2022 poster raffle.
+The Fur Squared poster is happening\!&nbsp; Here’s how you get in: When you register for Fur Squared 2023, there will be a checkbox and a link to this document.&nbsp; Read the entire document, and check the box to acknowledge your entry into the 2023 poster raffle.
 
-Entry into the lottery will last until Sunday, January 9 at 11:59pm central.&nbsp; Assuming there are more than 50 people interested in the poster tier, 50 random people will be picked, and announced on Monday, January 10.&nbsp; On that date, emails with special registration upgrade links will be sent out.&nbsp; The price for the Poster tier is $200.&nbsp; Your cost will be the difference between that and what you paid for your existing badge.
+Entry into the lottery will last until Sunday, February 11 at 11:59pm central.&nbsp; Assuming there are more than 50 people interested in the poster tier, 50 random people will be picked, and announced on Monday, February 13.&nbsp; On that date, emails with special registration upgrade links will be sent out.&nbsp; The price for the Poster tier is $200.&nbsp; Your cost will be the difference between that and what you paid for your existing badge.
 
 If you do not complete your upgrade and payment by Sunday, January 16 at 11:59pm central, we will go to the next name in a randomized standby list, and will continue to do so until all poster slots are filled.If you miss your chance, we’re sorry, but that will be final\!
 
@@ -73,9 +66,10 @@ Check back here and/or follow us on [https://twitter.com/fursquared](https://twi
 
 ## Parental Consent
 
-The file located below is for a Notary consent form for minors between the ages of 14-17 to attend the convention without an adult. Reminder: all Minors in this age group that are eligible to receive a vaccine must show proof of vaccination before a registration can be completed. Without proof of vaccination a registration WILL NOT be given.
+The file located below is for a Notary consent form for minors between the ages of 14-17 to attend the convention without an adult. Reminder: all Minors must have a vaccine card and be boosted before a registration can be completed. Without proof of vaccination and booster a registration WILL NOT be given.
 
-[Get the parental consent form](/uploads/F2-2022-Parental-Consent.docx){: target="_blank" rel="noopener"}
+[Get the parental consent form](https://docs.google.com/document/d/1BDVSTUA_VEBAOYD_VgRfCxz_o4K1o3Xg5ZRDSsEmp4c/edit
+){: target="_blank" rel="noopener"}
 
 ## Questions or Concerns?
 

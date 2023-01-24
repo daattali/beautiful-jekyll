@@ -21,7 +21,7 @@ For example, for April 6-10
 
 ![an image showing the booking site for the Sheraton Milwaukee Brookfield website](/uploads/booking2023.png)
 
-[Fur Squared 2023 Room Block Reservation Link](https://www.marriott.com/events/start.mi?id=1673555252247&key=GRP)
+[Click here to reserve a room](https://www.marriott.com/events/start.mi?id=1673555252247&key=GRP)
 
 ## Room Rates
 Room rates are $129 for King rooms and $152 for queen rooms after tax.
