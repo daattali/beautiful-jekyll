@@ -24,7 +24,7 @@ For example, for April 6-10
 [Fur Squared 2023 Room Block Reservation Link](https://www.marriott.com/events/start.mi?id=1673555252247&key=GRP)
 
 ## Room Rates
-Room rates start at $132.00 USD per night.
+Room rates are $129 for King rooms and $152 for queen rooms after tax.
 
 ## No Breakfast Buffet
 Unfortunately there won't be a daily free breakfast buffet, sorry!
