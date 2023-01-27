@@ -42,10 +42,9 @@ SQlite日期操作函数的实现，正则运算，和全文搜索排序算法�
 >$ python setup.py build_sqlite_ext -i
 
 {: .box-info}
-
 在一些系统上，你可能需要运行下面的命令来安装peewee
 >$ sudo python setup.py install 。
-{% endnote %}
+
 <!-- endtab -->
 {% endtabs %}
 
@@ -63,7 +62,7 @@ SQlite日期操作函数的实现，正则运算，和全文搜索排序算法�
 
 {: .box-info}
 为使用peewee，你不需要任何额外的标准库，因为大部分的python发布版本都支持SQLite的编译。你可以通过在python控制台执行命令`import sqlite3`来测试。如果你想使用其他的数据库，有许多`DB-API 2.0-compatible`驱动，比如MySQL的`pymysql`和postgres的`psycopg2`。
-{% endnote %}
+
 
 * [Cypthon](http://cython.org/): 用于在使用SQLite时公开其他功能，并以高效的方式实现诸如搜索结果排名之类的功能。由于生成的C文件包含在软件包分发中，因此不再需要Cython使用C扩展名
 * [apsw](https://github.com/rogerbinns/apsw): 可选的绑定SQLite第三方库，比标准库pysqlite具有更高的性能和更多更加清晰的语义，与`APSWDatabase`配合使用。

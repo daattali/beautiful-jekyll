@@ -14,7 +14,7 @@ categories:
 
 {: .box-info}
 使用`@Getter`和/或`@Setter`注解任何字段（类属性），让lombok自动生成默认的get方法 / set方法。
-{% endnote %}
+
 
 ## Getter
 
@@ -189,4 +189,4 @@ lombok v1.12.0中的新功能: 现在将字段上的javadoc复制到生成的get
 {: .box-info}
 time: 2020-10-01 18:37
 不好意思，这个功能目前还尚未搞明白，等彻底搞清楚再来更新。
-{% endnote %}
+

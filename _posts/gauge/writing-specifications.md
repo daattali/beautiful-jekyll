@@ -23,7 +23,7 @@ spec 是业务层测试用例，描述了被测应用程序的特定特征。Gau
 {: .box-info}
 `specs`目录的路径和名字可以通过修改项目中`default.properties`文件的键值对来修改。
 
-{% endnote %}
+
 
 ### 示例
 
@@ -308,7 +308,7 @@ example.cpt
 
 {: .box-info}
 [value]可以是相对或者绝对路径。相对路径相对于 [GAUGE_PROJECT_ROOT](https://docs.getgauge.io/using.html#gauge-project-root) 来解析。
-{% endnote %}
+
 
 示例:
 
@@ -326,7 +326,7 @@ example.cpt
 
 {: .box-info}
 [value]可以是相对或者绝对路径。相对路径相对于 [GAUGE_PROJECT_ROOT](https://docs.getgauge.io/using.html#gauge-project-root) 来解析。
-{% endnote %}
+
 
 示例
 
@@ -747,7 +747,7 @@ end
 
 {: .box-info}
 该功能仅仅支持`Java`
-{% endnote %}
+
 
 可以将`Enum`数据类型的常量值用作步骤中的参数。但是，参数的类型应与步骤实现代码中的 Enum 名称匹配。
 
@@ -1138,7 +1138,7 @@ end
 
 {: .box-info}
 Tags 不可以通过 `@BeforeSuite` 和 `@AfterSuite`钩子来指定
-{% endnote %}
+
 
 {% tabs language %}
 
@@ -1436,7 +1436,7 @@ element_id = suite_store.get("element-id");
 
 {: .box-info}
 如果在类路径中发现多个自定义截取屏幕实现，那么 gauge 将`随机`选择一个来截屏。这是因为 gauge 选择它找到的第一个截屏代码实现，而这又取决于库的扫描顺序。
-{% endnote %}
+
 
 {% tabs language %}
 

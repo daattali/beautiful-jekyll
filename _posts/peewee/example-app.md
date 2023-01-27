@@ -92,10 +92,9 @@ class Message(BaseModel):
 ```
 
 {: .box-info}
-
 我们创建一个简单地定义将要使用的数据库的BaseModel类。所有其他继承这个类的Models都将使用这个正确的数据库连接。
 
-{% endnote %}
+
 
 Peewee支持许多不同的字段类型，它们对应数据库引擎普遍支持的不同列类型。  
 在python类型与数据库用使用的类型之间的转换是透明的，允许你在你的应用里使用下列类型：
@@ -123,9 +122,10 @@ def create_table():
 >$ create_tables()
 
 
+
 {: .box-info} 
 如果你遇到ImportError，表示你flask和peewee都没有安装或者安装不正确。点击 [ 安装与测试 ](https://www.nothinghere.cn/peewee/installation/)
-{% endnote %}
+
 
 
 每一个Model都有一个create_table()类方法，它在数据库里运行 create
@@ -141,7 +141,7 @@ Peewee提供了一个有用的方法Databse.creata_tables(),它解决了model之
 
 你也可以使用database.create_tables([User, …], True)，这样peewee就会在你创建表之前先检查表是否已存在。
 
-{% endnote %}
+
 
 ### 建立数据库连接
 
@@ -172,7 +172,7 @@ def after_request(response):
 
 Peewee使用线程本地存储来管理连接状态，所以该模式可以与多线程WSGI服务器一起使用。
 
-{% endnote %}
+
 
 ### 进行查询
 
@@ -314,4 +314,4 @@ def get_object_or_404(model, *expressions):
 
 喜欢这些代码片段，还想看更多吗？检出[flask-peewee](https://github.com/coleifer/flask-peewee)，一个flask插件，为你的peewee模型提供类似django管理员的接口，RESTfull api，身份验证或者更多。
 
-{% endnote %}
+

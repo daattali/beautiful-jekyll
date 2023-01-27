@@ -20,7 +20,6 @@ categories:
 - 延迟：`分组(Packet)`从信息源发送到目的地所需的时间
 - 带宽：逻辑或物理通信路径的最大的吞吐量
 
-{: .box-info}
 在osi七层模型中，不同层传输数据包格式：
 
 | 层次       | 数据包格式                         |
@@ -34,7 +33,7 @@ categories:
 | 物理层     | bits 比特                          |
 
 详情可见[OSI Model](https://www.researchgate.net/figure/Open-Systems-Interconnection-OSI-reference-model_fig1_30850107)
-{% endnote %}
+
 
 #### 1.2 延迟的构成
 
@@ -47,14 +46,14 @@ categories:
 - 处理延迟：处理分组首部，检查位错误以及确定分组目标所需要的时间
 - 排队延迟：到来的分组排队等待的时间
 
-{: .box-info}
+
 形象点理解：
 
 - 传播延迟：车辆在高速公路上行驶的时间
 - 传输延迟：车辆把要发送的货物装满花费的时间
 - 处理延迟：车辆经过高速收费站需要的时间，涉及目的地确认，检查货物是否安全等
 - 排队延迟：高速收费站车辆太多，车辆排队的时间
-{% endnote %}
+
 
 #### 1.3 光速与传播延迟
 
@@ -64,9 +63,8 @@ categories:
 
 两点之间直线最短，但是一般情况下，从发送端到接收端之间是不存在完美的直线传输路径的。而且消息的传输一般都是`发`和`收`两个过程，也就是一个往返（RTT）。
 
-{: .box-info}
-CDN（Content Delivery Network，内容分发网络）服务最重要的就是通过把内容部署在全球各地，让用户从最近的服务器加载内容，大幅降低传播分组的时间。
-{% endnote %}
+{: .box-info} CDN（Content Delivery Network，内容分发网络）服务最重要的就是通过把内容部署在全球各地，让用户从最近的服务器加载内容，大幅降低传播分组的时间。
+
 
 #### 1.4 延迟时间的最后一公里
 
@@ -76,10 +74,8 @@ CDN（Content Delivery Network，内容分发网络）服务最重要的就是�
 
 最后一公里的延迟与提供商、部署方法、网络拓扑，甚至一天中的哪个时段都有很大关系。作为最终用户，如果你想提高自己上网的速度，那选择延迟最短的 ISP 是最关键的。
 
-{: .box-info}
-'traceroute'测量延迟
-traceroute 是一个简单的网络诊断工具，可以列出分组经过的路由节点，以及它在 IP 网络中每一跳的延迟。unix平台：使用traceroute，而windows平台使用tracert。
-{% endnote %}
+{: .box-note} 'traceroute'测量延迟，traceroute 是一个简单的网络诊断工具，可以列出分组经过的路由节点，以及它在 IP 网络中每一跳的延迟。unix平台：使用traceroute，而windows平台使用tracert。
+
 
 #### 1.5 网络核心的带宽
 
@@ -134,10 +130,9 @@ HTTP 标准` 并未 `规定 TCP 就是唯一的传输协议。还可以通过UDP
 
 该启动通信过程适用所有TCP连接，因此对所有适用TCP的应用具有` 非常大的性能影响 `。三次握手带来的延迟适用每次创建新的TCP连接都要付出很大代价。这也决定提高TCP应用性能的关键，在于想办法重用连接。
 
-{: .box-info}
-TCP 快速打开
+{: .box-info} TCP 快速打开
 TFO（TCP Fast Open，TCP 快速打开），致力于减少新建 TCP 连接带来的性能损失。谷歌研究人员发现 TFO 平均可以降低 HTTP 事务网络延迟15%、整个页面加载时间10% 以上。在某些延迟很长的情况下，降低幅度甚至可达40%。
-{% endnote %}
+
 
 #### 2.2 拥塞预防和控制
 
@@ -265,7 +260,7 @@ TCP 的最佳实践以及影响其性能的底层算法一直在与时俱进，�
 
 {: .box-info}
 注：本书写的Linux版本是3.2，截止2020/10/26，Linux最新内核版本是：Kernel: 5.9.1（2020年10月17日，​9天前）
-{% endnote %}
+
 
 ### 第三章 UDP的构成
 
@@ -275,7 +270,7 @@ UDP（User Datagram Protocol，用户数据报协议） 的主要功能和亮点
 数据报：一个完整、独立的数据实体，携带着从源节点到目的地节点的足够信息，对这些节点间之前的数据交换和传输网络没有任何依赖
 
 分组：用来指代`任何格式化`的数据块，而`数据报`则通常只用来描述那些通过不可靠的服务传输的分组，既不保证送达，也不发送失败通知
-{% endnote %}
+
 
 UDP最广为人知的应用便是 ` DNS `: Domain Name System，域名系统。
 
@@ -313,7 +308,7 @@ TCP 超时和NAT
 从技术角度讲，NAT 设备不需要额外的TCP 超时机制。TCP 协议就遵循一个设计严密的握手与终止过程，通过这个过程就可以确定何时需要添加或删除转换记录。
 
 遗憾的是，实际应用中的NAT 设备给TCP 和UDP 会话应用了类似的超时逻辑。这样就导致TCP 连接有时候也需要双向keep-alive 分组。如果你的TCP 连接突然断开，那很有可能就是中间NAT 超时造成的。
-{% endnote %}
+
 
 ##### 3.2.2 NAT穿透
 
@@ -322,7 +317,7 @@ NAT穿透，原文是：NAT traversal。最初看到这个中文名词的时候�
 
 1. NAT遍历：实际上NAT维护一张映射表，只有遍历这张表成功的分组才能通过NAT，否则会被删掉。
 2. NAT穿越/穿过：直白的理解就是分组的数据可以成功穿过NAT设备。
-{% endnote %}
+
 
 从上小节，我们已经知道：UDP没有连接状态，这也为NET设备带来了严重的问题。然而更严重的是：很多应用程序根本就无法建立UDP连接。
 
@@ -365,7 +360,7 @@ SSL 协议在直接位于TCP 上一层的应用层被实现。SSL 不会影响�
 
 {: .box-info}
 IETF（Internet Engineering Task Force，互联网工程任务组）后来在标准化 SSL 协议时， 将其改名为Transport Layer Security（TLS，传输层安全）。很多人会混用TLS 和SSL，但严格来讲它们并不相同，因为它们指代的协议版本不同。
-{% endnote %}
+
 
 #### 4.1 加密，身份验证和完整性
 
@@ -377,7 +372,7 @@ TLS协议规定一套严密的握手程序用于交换信息，握手机制使�
 
 {: .box-info}
 公开密钥密码学（英语：Public-key cryptography）也称非对称式密码学（英语：Asymmetric cryptography）是密码学的一种算法，它需要两个密钥，一个是公开密钥，另一个是私有密钥；公钥用作加密，私钥则用作解密。使用公钥把明文加密后所得的密文，只能用相对应的私钥才能解密并得到原本的明文，最初用来加密的公钥不能用作解密。由于加密和解密需要两个不同的密钥，故被称为非对称加密。
-{% endnote %}
+
 
 #### 4.2 TLS握手
 
@@ -405,7 +400,7 @@ TLS协议规定一套严密的握手程序用于交换信息，握手机制使�
 {: .box-info}
 TLS、HTTP 及专用IP
 TLS+SNI 机制与HTTP 中发送 Host 首部是相同的，只不过后者是客户端要在请求中包含站点的主机名。总之，都是相同的IP 地址服务于不同的域名，而区分不同域名的手段就是SNI 或Host。
-{% endnote %}
+
 
 #### 4.3 TLS会话恢复
 
@@ -478,7 +473,7 @@ OCSP 查询也带了一些问题：
 
 {: .box-info}
 实践中，CRL 和OCSP 机制是互补存在的，大多数证书既提供指令也支持查询
-{% endnote %}
+
 
 #### 4.6 TLS记录协议
 
@@ -682,7 +677,7 @@ $$ C = BW × log_2(1 + \frac SN) $$
 多个路由器的情况：
 
 - 路由器A与路由器B放置到常用的区域，比如A放置在卧室，B放置在客厅，两者设置相同SSID，相同密码，则（理想情况下）设备在卧室会自动连接到路由器A，而在客厅时设备又会切换到路由器B。
-{% endnote %}
+
 
 #### 6.3 测量和优化Wi-Fi性能
 
@@ -902,7 +897,7 @@ HTTP（HyperText Transfer Protocol，超文本传输协议）是互联网上最�
 类似地，Aberdeen 一项覆盖 160 多家组织的研究表明，页面加载时间增加` 1 `秒，会导致转化率损失`7%`，页面浏览量减少`11%`，客户满意度降低` 16% `！
 
 网络越快，PV 越多，黏性越强，转化率越高。
-{% endnote %}
+
 
 ##### 10.2.2　分析资源瀑布
 
@@ -910,7 +905,7 @@ HTTP（HyperText Transfer Protocol，超文本传输协议）是互联网上最�
 
 {: .box-warning}
 原书测试采用的网址是 `yahoo.com`，由于yahoo的测试结果太长，下面的内容除了第一张图，其余采用的是 `google.com` 的测试结果。
-{% endnote %}
+
 
 ![HTTP请求的构成（WebPageTest）](https://cdn.jsdelivr.net/gh/amosnothing/cdn/image/reading-notes-for-high-performance-browser-networking/HTTP请求的构成（WebPageTest）.png)
 <center>图：HTTP请求的构成（WebPageTest）</center>
@@ -1384,7 +1379,7 @@ Also, because both sides can initiate new streams,the stream counters are offset
 {% endquote %}
 
 所以，这里的内容我们不取原书的内容，按照`RFC 7540`的内容来。
-{% endnote %}
+
 
 
 ##### 12.4.2 发送应用数据
@@ -1550,7 +1545,7 @@ Also, because both sides can initiate new streams,the stream counters are offset
 
 1. 认证的会话可以在多个标签页或者浏览器窗口间共享
 2. 反之，用户在某个标签页退出，则其他所有打开的窗口中的会话都将失效
-{% endnote %}
+
 
 #### 14.4 应用API与协议
 
@@ -2080,7 +2075,7 @@ WebSocket 通信协议包含两个高层组件：
 
 {: .box-info}
 请区分文中的`帧`与数据传输层的`帧`：文中的帧是消息的最小通信单位，而数据传输层的帧是数据包格式，实际由上往下（应用层 -> 物理层）传输的过程，数据包会层层封装带上对应层协议的Header，也就是说数据传输层的`帧`比文中WebSocket应用层的帧的容量要大。
-{% endnote %}
+
 
 WebSocket把每个应用消息分成一个或者多个帧，发送到目的地后再组装起来，等待接收到完整的消息后再通知接收端
 
