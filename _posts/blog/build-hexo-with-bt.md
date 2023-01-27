@@ -19,10 +19,10 @@ categories:
 `假设`你已经登录进了云服务器，如果不懂如何操作，请google一下。
 
 ## 安装
-{% note info %} 
+{: .box-info} 
 之所以使用宝塔，因为它可以帮你节省很多不必要的麻烦，并且有很多一键式操作。
 {% endnote %}
-{% note default %} 
+{: .box-default} 
 宝塔Linux面板系统兼容性：
 Centos8.x > Centos7.x > Ubuntu18.04 > Debian10 > Ubuntu 20.04 > 其它系统
 {% endnote %}

@@ -16,7 +16,7 @@ copyright: true
   * Storing data - 数据存储 
   * Retrieving Data - 数据检索 
 
-{% note info %}
+{: .box-info}
 如果你想要一个更形象的例子，那么有一个更详细的教程，使用peewee和flask框架创建一个“twitter”风格的网络应用程序。
 {% endnote %}
 
@@ -48,7 +48,7 @@ class Person(Model):
         database = db #  这个模型使用 "people.db"数据库
 ```
 
-{% note info %}
+{: .box-info}
 
 请注意我们命名我们的模型为Person而不是People。这个惯例你应该遵守：虽然这张表包含许多people，我们总是使用单数形式命名该类。
 
@@ -84,7 +84,7 @@ animal_type = CharField()
 
 1
 
-{% note info %}
+{: .box-info}
 
 当我们执行call()时，被修改行的数量会返回。
 
@@ -116,7 +116,7 @@ animal_type = CharField()
     
 1
 
-{% note info %}
+{: .box-info}
 
 delete_instance()返回值是数据库删除的行数
 

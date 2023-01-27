@@ -57,6 +57,6 @@ url按此写法可以生成成功，如有其他方式欢迎留言
 
 特别注意 
 
-{% note danger %}
+{: .box-danger}
 项目的配置文件夹名为 `resources`（IDEA创建java项目时默认都是这个名字），但是配置项里面的是`resource`，不要写错了！
 {% endnote %}

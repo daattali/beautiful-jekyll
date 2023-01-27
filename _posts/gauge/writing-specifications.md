@@ -20,7 +20,7 @@ spec 是业务层测试用例，描述了被测应用程序的特定特征。Gau
 
 在 Guage 项目被创建和初始化之后，会在项目根目录下自动新增一个名为`specs`的文件夹，以及包含名为`example.spec`的文件。这个样例文件帮助你理解怎么来编写`spec`。
 
-{% note info %}
+{: .box-info}
 `specs`目录的路径和名字可以通过修改项目中`default.properties`文件的键值对来修改。
 
 {% endnote %}
@@ -306,7 +306,7 @@ example.cpt
 这是通过读取文件然后将文件内容作为字符串参数传给底层步骤。  
 **语法** ： \<file:[value]\> [value]是指文件的路径
 
-{% note info %}
+{: .box-info}
 [value]可以是相对或者绝对路径。相对路径相对于 [GAUGE_PROJECT_ROOT](https://docs.getgauge.io/using.html#gauge-project-root) 来解析。
 {% endnote %}
 
@@ -324,7 +324,7 @@ example.cpt
 表格通常用于从外部 csv 文件读取再传递表格值给步骤。步骤中的参数文本包含前缀表和 csv 文件的路径。  
 **语法** ： \<table:[value]> [value]是指 csv 文件的路径。
 
-{% note info %}
+{: .box-info}
 [value]可以是相对或者绝对路径。相对路径相对于 [GAUGE_PROJECT_ROOT](https://docs.getgauge.io/using.html#gauge-project-root) 来解析。
 {% endnote %}
 
@@ -745,7 +745,7 @@ end
 
 ### 枚举做为参数
 
-{% note info %}
+{: .box-info}
 该功能仅仅支持`Java`
 {% endnote %}
 
@@ -1136,7 +1136,7 @@ end
 
 你可以指定执行钩子可以运行的标签。这样可以确保钩子仅在具有指定标签的场景和 spec 上运行。
 
-{% note info %}
+{: .box-info}
 Tags 不可以通过 `@BeforeSuite` 和 `@AfterSuite`钩子来指定
 {% endnote %}
 
@@ -1434,7 +1434,7 @@ element_id = suite_store.get("element-id");
 
 当 Gauge 截屏时，默认会捕捉屏幕上显示的任何内容。如果你想定制此行为并使 Gauge 能够截取你选择的屏幕快照(例如，你可能想要只截取浏览器页面的屏幕快照)，那么你可以在创建 Gauge 项目时使用，在对应语言的步骤实现中使用适当的驱动程序 api。
 
-{% note info %}
+{: .box-info}
 如果在类路径中发现多个自定义截取屏幕实现，那么 gauge 将`随机`选择一个来截屏。这是因为 gauge 选择它找到的第一个截屏代码实现，而这又取决于库的扫描顺序。
 {% endnote %}
 
