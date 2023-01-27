@@ -20,11 +20,11 @@ author: 陈俊
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  关于我: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://www.nothinghere.com"
+    - 主题: "https://beautifuljekyll.com"
+    - markdown: "https://www.markdowntutorial.com/"
+  # Author's home: "https://www.nothinghere.com"
 
 ################
 # --- Logo --- #
