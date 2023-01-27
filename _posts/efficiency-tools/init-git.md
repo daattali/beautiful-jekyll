@@ -1,0 +1,51 @@
+---
+title: 【GIT】初始化git项目命令
+date: 2019-03-08 11:54:03
+tags: ['git','github', 'gitee', 'gitlab']
+categories:
+ - 效率工具 
+ - GIT
+---
+
+
+## 创建新repository
+
+新`repository`是指你当前文件夹下没有`.git`文件夹的情况:
+
+将当前文件夹下的所有文件一起提交到git仓库，记得将地址改为您的`仓库地址`
+
+{% tabs new %}
+<!-- tab ssh -->
+
+>$ git init
+$ git add -A 
+$ git commit -m "项目初始化"
+$ git branch -M master
+$ git remote add origin git@github.com:your_username/repository.git
+$ git push -u origin master
+<!-- endtab -->
+<!-- tab htpps -->
+
+>$ git init
+$ git add -A 
+$ git commit -m "项目初始化"
+$ git branch -M master
+$ git remote add origin https://github.com/your_username/repository.git
+$ git push -u origin master
+<!-- endtab -->
+{% endtabs %}
+
+## 推到已有repository
+
+{% tabs exist %}
+<!-- tab ssh -->
+>$ git remote add origin git@github.com:your_username/repository.git
+$ git branch -M master
+$ git push -u origin master
+<!-- endtab -->
+<!-- tab htpps -->
+>$ git remote add origin https://github.com/your_username/repository.git
+$ git branch -M master
+$ git push -u origin master
+<!-- endtab -->
+{% endtabs %}
