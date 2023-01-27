@@ -140,5 +140,3 @@ var BeautifulJekyllJS = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
-document.querySelector('#main-navbar > ul > li.nav-item.dropdown').innerHTML='';
-document.querySelector('#main-navbar > ul > li:nth-child(3) > a').innerHTML='';
