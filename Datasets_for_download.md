@@ -1,6 +1,5 @@
-
 ---
-layout: page
+layout: page 
 permalink: /Datasets_to_download/
 title: Some home-made toy datasets to download
 ---
