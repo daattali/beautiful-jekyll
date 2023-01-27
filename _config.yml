@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: 个人博客
+title: 随笔
 
 # Your name to show in the footer
 author: 陈俊
@@ -21,9 +21,9 @@ author: 陈俊
 
 navbar-links:
   关于我: "aboutme"
-  Resources:
-    - 主题: "https://beautifuljekyll.com"
-    - markdown: "https://www.markdowntutorial.com/"
+  # Resources:
+    # - 主题: "https://beautifuljekyll.com"
+    # - markdown: "https://www.markdowntutorial.com/"
   # Author's home: "https://www.nothinghere.com"
 
 ################
@@ -95,10 +95,10 @@ url-pretty: "个人网站"
 excerpt_length: 60
 
 # Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
+feed_show_excerpt: false
 
 # Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
+feed_show_tags: false
 
 # Add a search button to the navbar
 post_search: false
@@ -281,7 +281,3 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
-
