@@ -1,5 +1,5 @@
 ---
-title: sql where 1=1和 0=1 的作用
+title: sql where 1=1 和 0=1 的作用
 date: 2017-09-21 12:08:03
 tags: ['sql','where1-1','where0-1']
 categories: 
@@ -7,13 +7,13 @@ categories:
  - MySQL
 ---
 
-where 1=1; 这个条件始终为True，在不定数量查询条件情况下，1=1可以很方便的规范语句。
+> where 1=1; 这个条件始终为True，在不定数量查询条件情况下，1=1 可以很方便的规范语句。
 
-# 不用where  1=1  在多条件查询中的困扰
+## 不用where  1=1  在多条件查询中的困扰
 
 举个例子，如果您做查询页面，并且，可查询的选项有多个，同时，还让用户自行选择并输入查询关键词，那么，按平时的查询语句的动态构造，代码大体如下：
 
-```
+```Java
 string MySqlStr=”select * from table where”；
 
 if(Age.Text.Lenght>0)
@@ -26,30 +26,30 @@ if(Address.Text.Lenght>0)
 　　MySqlStr=MySqlStr+“and Address=“+“'Address.Text'“；
 }
 ```
-　　①种假设
 
-　　如果上述的两个IF判断语句，均为True，即用户都输入了查询词，那么，最终的MySqlStr动态构造语句变为：
+- ①种假设
 
-　　MySqlStr=”select * from table where Age='18'  and Address='云南省文山州广南县小波吗村'”
+如果上述的两个IF判断语句，均为True，即用户都输入了查询词，那么，最终的MySqlStr动态构造语句变为：
 
+　　MySqlStr=”select * from table where Age='18' and Address='云南省文山州广南县小波吗村'”
 
-　　可以看得出来，这是一条完整的正确的SQL查询语句，能够正确的被执行，并根据数据库是否存在记录，返回数据。
+可以看得出来，这是一条完整的正确的SQL查询语句，能够正确的被执行，并根据数据库是否存在记录，返回数据。
 
-　　②种假设
+- ②种假设
 
-　　如果上述的两个IF判断语句不成立，那么，最终的MySqlStr动态构造语句变为：
+如果上述的两个IF判断语句不成立，那么，最终的MySqlStr动态构造语句变为：
 
 　　MySqlStr=”select * from table where“
 
-　　现在，我们来看一下这条语句，由于where关键词后面需要使用条件，但是这条语句根本就不存在条件，所以，该语句就是一条错误的语句，肯定不能被执行，不仅报错，同时还不会查询到任何数据。
+现在，我们来看一下这条语句，由于where关键词后面需要使用条件，但是这条语句根本就不存在条件，所以，该语句就是一条错误的语句，肯定不能被执行，不仅报错，同时还不会查询到任何数据。
 
-　　上述的两种假设，代表了现实的应用，说明，语句的构造存在问题，不足以应付灵活多变的查询条件。
+上述的两种假设，代表了现实的应用，说明，语句的构造存在问题，不足以应付灵活多变的查询条件。
 
-# 使用 where  1=1  的好处
+## 使用 where  1=1  的好处
 
+假如我们将上述的语句改为：
 
-　　假如我们将上述的语句改为：
-```
+```Java
 　　string MySqlStr=”select * from table where  1=1 ”；
 
 

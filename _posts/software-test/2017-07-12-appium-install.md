@@ -7,14 +7,14 @@ categories:
  - 测试工具
 ---
 
-#JDK安装
+# JDK安装
 
  1. 下载JDK，[地址](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
  2. 下载完成，一步一步点击完成安装（路径可以自行更改）
- 3.  右键计算机 - 属性 - 高级系统设置 - 高级 - 环境变量
- 4.  系统变量：新建JAVA_HOME，输入变量值JDK的安装目录（我的是C:\Program Files\Java\jdk1.8.0_66）
- 5. 系统变量：找到Path，点击编辑，在最后加上%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;（注意：原来Path的变量值末尾有没有;号，如果没有，先输入；号再输入上面的代码）
- 6. 系统变量：新建CLASSPATH变量，变量值填写 .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar（注意最前面有一点）
+ 3. 右键计算机 - 属性 - 高级系统设置 - 高级 - 环境变量
+ 4. 系统变量：新建JAVA_HOME，输入变量值JDK的安装目录（我的是 `C:\Program Files\Java\jdk1.8.0_66`）
+ 5. 系统变量：找到Path，点击编辑，在最后加上`%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin`;（注意：原来Path的变量值末尾有没有;号，如果没有，先输入；号再输入上面的代码）
+ 6. 系统变量：新建CLASSPATH变量，变量值填写 `.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar`（注意最前面有一点）
  7. 检查是否安装成功：打开cmd面板，输入java -version，如果有显示java版本等信息则表示成功，如果提示java不是内部或者外部命令，则需要再检查一遍安装过程。
 
 # Android SDK安装
