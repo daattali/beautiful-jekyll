@@ -41,11 +41,11 @@ def after_request_handler():
     database.close()
 ```
 
-{% note info %}
+
 有关配置多个流程web框架的连接钩子的示例，请参阅添加请求钩子部分。
 
 有关高级连接管理技术，请参阅高级连接管理部分。
-{% endnote %}  
+  
 
 为了将此数据库同您的模型一起使用，在内部Meta类设置database属性：
 
@@ -75,9 +75,9 @@ class Tweet(BaseModel):
     # etc, etc
 ```
 
-{% note info %} 
+ 
 请记得在你的模型类里指定数据库，否则peewee将会使用默认名为’peewee.db’的数据库
-{% endnote %}
+
 
 ### Vendor-specific参数
 

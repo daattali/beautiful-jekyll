@@ -16,9 +16,9 @@ copyright: true
   * Storing data - 数据存储 
   * Retrieving Data - 数据检索 
 
-{% note info %}
+
 如果你想要一个更形象的例子，那么有一个更详细的教程，使用peewee和flask框架创建一个“twitter”风格的网络应用程序。
-{% endnote %}
+
 
 我强烈建议您打开一个交互式shell会话并运行代码，这样你会对输入查询更有感觉。
 
@@ -48,11 +48,11 @@ class Person(Model):
         database = db #  这个模型使用 "people.db"数据库
 ```
 
-{% note info %}
+
 
 请注意我们命名我们的模型为Person而不是People。这个惯例你应该遵守：虽然这张表包含许多people，我们总是使用单数形式命名该类。
 
-{% endnote %}
+
 
 有许多字段类型适合储存各种数据类型。peewee处理pythonic值与数据库值之间的转换，所以你可以在您的代码里放心使用python类。这会变得更加有趣，当你用外键建立两个模型之间的关系时。这在peewee很容易做到：
 
@@ -84,11 +84,11 @@ animal_type = CharField()
 
 1
 
-{% note info %}
+
 
 当我们执行call()时，被修改行的数量会返回。
 
-{% endnote %}
+
 
 有也可以通过调用create()方法来添加一个人，它会返回一个类实例：
 
@@ -116,11 +116,11 @@ animal_type = CharField()
     
 1
 
-{% note info %}
+
 
 delete_instance()返回值是数据库删除的行数
 
-{% endnote %}
+
 
 Bob叔叔发现太多的动物死在了Herb家，所以他领养了Fido：
 

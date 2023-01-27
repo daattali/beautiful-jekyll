@@ -24,14 +24,14 @@ categories:
 
 ![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTgwMTI2MTk1MDE0ODQy)
 
-{% note info %}
+
 下载哪一个呢?
 
 - cp后接python版本， 请与你的python版本对应
 - win32，标识32位架构，适用于32位系统
 - 后接`_amd64`指64位架构，适用于64位系统
 
-{% endnote %}
+
 
 ### step2. 执行pip install xxx
 

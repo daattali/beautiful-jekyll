@@ -12,11 +12,11 @@ categories:
 
 ## 概述
 
-{% note info %}
+
 说到`NullPointerException`，可能会是所有Java搬砖工的噩梦吧？
 
 现在有了` @NonNull ` , 让我们不再害怕NPE!!!
-{% endnote %}
+
 
 你可以在方法或构造函数的参数上使用`@NonNull`注解让lombok为你生成`null-check`(空值检查，下同)语句。
 
