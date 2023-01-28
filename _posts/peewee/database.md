@@ -42,6 +42,7 @@ def after_request_handler():
 ```
 
 {: .box-info}
+
 有关配置多个流程web框架的连接钩子的示例，请参阅添加请求钩子部分。
 
 有关高级连接管理技术，请参阅高级连接管理部分。
@@ -75,7 +76,8 @@ class Tweet(BaseModel):
     # etc, etc
 ```
 
-{: .box-info} 
+{: .box-info}
+ 
 请记得在你的模型类里指定数据库，否则peewee将会使用默认名为’peewee.db’的数据库
 
 

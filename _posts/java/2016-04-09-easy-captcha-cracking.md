@@ -8,7 +8,8 @@ categories:
  - Java
 ---
 
-{: .box-warning} 功能仅限验证码规则的图片，有噪音或者文字倾斜均不实用
+{: .box-warning}
+ 功能仅限验证码规则的图片，有噪音或者文字倾斜均不实用
 
 ```java
 package image;

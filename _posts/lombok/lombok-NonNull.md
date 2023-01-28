@@ -13,6 +13,7 @@ categories:
 ## 概述
 
 {: .box-info}
+
 说到`NullPointerException`，可能会是所有Java搬砖工的噩梦吧？
 
 现在有了` @NonNull ` , 让我们不再害怕NPE!!!

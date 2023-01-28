@@ -84,7 +84,8 @@ Date: Mon, 16 Sep 2013 12:03:00 GMT
 Content-Type: application/json
 Content-Length: 0
 
-{: .box-info} 
+{: .box-info}
+ 
 备注：您必须指定`application/json`作为mime类型；
 备注：在上传的json对象中不需要对象的名称，因为它被包含在URIs里。作为虚拟主机除了名字无其他属性，这意味着您完全不需要指定请求body。
 
@@ -124,7 +125,8 @@ Content-Type: application/json
 Content-Length: 0
 
 # 参考
-{: .box-info} 
+{: .box-info}
+ 
 译者注：路径列标红的字段表示需要传入对应的数据
 
 

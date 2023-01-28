@@ -92,6 +92,7 @@ class Message(BaseModel):
 ```
 
 {: .box-info}
+
 我们创建一个简单地定义将要使用的数据库的BaseModel类。所有其他继承这个类的Models都将使用这个正确的数据库连接。
 
 
@@ -123,7 +124,8 @@ def create_table():
 
 
 
-{: .box-info} 
+{: .box-info}
+ 
 如果你遇到ImportError，表示你flask和peewee都没有安装或者安装不正确。点击 [ 安装与测试 ](https://www.nothinghere.cn/peewee/installation/)
 
 
@@ -135,6 +137,7 @@ Peewee提供了一个有用的方法Databse.creata_tables(),它解决了model之
 
 
 {: .box-info}
+
 
 创建表后添加字段将要求你删除表并重新创建表，或者使用ALTER TABLE查询手动添加列。  
 或者，你可以通过python使用schema migrations（参考章节schema migrations）扩展来修改你的数据库模式。
@@ -169,6 +172,7 @@ def after_request(response):
 ```
 
 {: .box-info}
+
 
 Peewee使用线程本地存储来管理连接状态，所以该模式可以与多线程WSGI服务器一起使用。
 
@@ -311,6 +315,7 @@ def get_object_or_404(model, *expressions):
 * web服务分析工具（有点象精简版的Google Analytics），请查看随附的 [ 博文 ](http://charlesleifer.com/blog/saturday-morning-hacks-building-an-analytics-app-with-flask/) 。
 
 {: .box-info}
+
 
 喜欢这些代码片段，还想看更多吗？检出[flask-peewee](https://github.com/coleifer/flask-peewee)，一个flask插件，为你的peewee模型提供类似django管理员的接口，RESTfull api，身份验证或者更多。
 

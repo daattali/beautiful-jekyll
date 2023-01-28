@@ -25,6 +25,7 @@ categories:
 ![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTgwMTI2MTk1MDE0ODQy)
 
 {: .box-info}
+
 下载哪一个呢?
 
 - cp后接python版本， 请与你的python版本对应

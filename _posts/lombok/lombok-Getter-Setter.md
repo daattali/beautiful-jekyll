@@ -13,6 +13,7 @@ categories:
 ## 概述
 
 {: .box-info}
+
 使用`@Getter`和/或`@Setter`注解任何字段（类属性），让lombok自动生成默认的get方法 / set方法。
 
 
@@ -187,6 +188,7 @@ public class GetterSetterExample {
 lombok v1.12.0中的新功能: 现在将字段上的javadoc复制到生成的getter和setter。通常所有注释文本都被复制，@return被移动到getter方法上，而@param行被移动到setter方法。移动的意思是指：从字段的javadoc中删除，也会为每个getter/setter定义唯一的文本。因此你可以创建名为GETTER和/或SETTER的“section”，section是javadoc中包含2个或更多短划线的行，然后是文本’GETTER’或’SETTER’，后跟2个或更多破折号，行上没有其他内容。如果使用sections，则不再执行@return和@param剥离该section（将@return或@param行移动到该节中）。
 
 {: .box-info}
+
 time: 2020-10-01 18:37
 不好意思，这个功能目前还尚未搞明白，等彻底搞清楚再来更新。
 

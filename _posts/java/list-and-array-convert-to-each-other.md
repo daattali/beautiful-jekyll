@@ -54,6 +54,7 @@ In older Java versions using pre-sized array was recommended, as the reflection 
 This inspection allows to follow the uniform style: either using an empty array (which is recommended in modern Java) or using a pre-sized array (which might be faster in older Java versions or non-HotSpot based JVMs).
 
 {: .box-info}
+
 检查信息：有两种样式可以将集合转换为数组：使用预先调整大小的数组（如c.toArray（new string[c.size()]）或使用空数组（如c.toArray(new string[0])。
 在使用更大尺寸的数组的Java版本中，建议创建一个适当大小的数组所需的反射调用是相当慢的。然而，由于OpenJDK6的更新较晚，这一调用被内部化，使得空数组版本的性能与预调整大小的版本相同，有时甚至更好。另外，传递预先确定大小的数组对于并发或同步的集合也很危险，因为在大小和ToArray调用之间可能会发生数据争用，如果在操作期间集合同时收缩，则可能会导致数组末尾出现额外的空值。
 这种检查允许遵循统一的风格：要么使用空数组（在现代Java中推荐），要么使用预先大小的数组（在旧的Java版本或基于非`HotSpot JVM`中可能更快）。
