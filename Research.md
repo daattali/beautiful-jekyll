@@ -24,26 +24,26 @@ title: ""
 
 ### Working Papers
 
+[Informational Lobbying and Commercial Diplomacy](assets/amcham_adst_0.5.0.pdf)
+
 [The Oligarch's Offshore Dilemma](assets/oligarchs_ajps.pdf) (with Nikhil Kalyanpur)<br>
-Under Review. Previously titled "Exporting Capital, Importing Law"
+Previously titled "Exporting Capital, Importing Law"
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
 David A. Lake Award for best paper presented at IPES 2020. Under Review.
 
-[Treaty Diplomacy and the Global Firm](assets/treaty_regimes_IPES.pdf)
-
-[The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)
-
-[Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/GASB_anon.pdf) (with Nathan M. Jensen)<br>
+[The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
 Under Review.
+
+[Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/GASB_anon.pdf) (with Nathan M. Jensen)
 
 ### Works in Progress
 
 _Firms, Diplomats, and Piecemeal Globalization: How Corporate Interests Shape International Institutions_ (Book Project)
 
-Revolving Door Diplomats (with Matt Malis)
+Revolving Door Diplomats (with David Lindsey and Matt Malis)
 
-Informational Lobbying and the Content of Diplomacy
+[Treaty Diplomacy and the Global Firm](assets/treaty_regimes_IPES.pdf)
 
 Transparency Shocks and Private Governance in Offshore Finance (with Daniel Berliner and Nikhil Kalyanpur)
 
