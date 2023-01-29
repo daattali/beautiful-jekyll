@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dealer's Den
-subtitle:
+subtitle: Come see our dealers at FurSquared!
 css:
     - /assets/css/theme-2022/dealers.css
 ---
