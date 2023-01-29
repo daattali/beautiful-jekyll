@@ -14,6 +14,8 @@ css:
 | Feb 9, 2023 | Poster Lottery upgrades end |
 | Mar 24, 2023 | Pre-reg closes |
 
+&nbsp;
+
 ## COVID-19 Information
 
 **Vaccine records will be required & checked before you receive your badge.** **Masks worn properly will be required at all times in hotel and convention space.**
@@ -42,31 +44,21 @@ Please be aware that Pre-Registration prices will end March 23rd, 2022 at 11:59 
 
 ## Pricing
 
-| &nbsp; | Pre Registration | Walk-in Registration |
+| Level | Pre Registration | Walk-in Registration |
 | --- | --- | --- |
 | Attendee | $50 | $60 |
 | Sponsor | $85 | $95 |
 | Super Sponsor | $150 | $160 |
 
-| &nbsp; | Daily Badges |
+&nbsp;
+
+| Day | Daily Badges |
 | --- | --- |
 | Friday | $30 |
 | Satuday | $30 |
 | Sunday | $20 |
 
-Badge Reprints $60 ( Reprint refunded if original badge is found and shown to Registration ) Only one allowed before new Full Registration required.
-
-## The Fursquared 2022 Poster\!
-
-**Poster: Limited 50 slots, $200 if selected please read the terms for our Poster Lottery below:**
-
-Poster Lottery Terms
-
-The Fur Squared poster is happening\!&nbsp; Here’s how you get in: When you register for Fur Squared 2023, there will be a checkbox and a link to this document.&nbsp; Read the entire document, and check the box to acknowledge your entry into the 2023 poster raffle.
-
-Entry into the lottery will last until Sunday, February 11 at 11:59pm central.&nbsp; Assuming there are more than 50 people interested in the poster tier, 50 random people will be picked, and announced on Monday, February 13.&nbsp; On that date, emails with special registration upgrade links will be sent out.&nbsp; The price for the Poster tier is $200.&nbsp; Your cost will be the difference between that and what you paid for your existing badge.
-
-If you do not complete your upgrade and payment by Sunday, January 16 at 11:59pm central, we will go to the next name in a randomized standby list, and will continue to do so until all poster slots are filled.If you miss your chance, we’re sorry, but that will be final\!
+Badge Reprints $60 ( Reprint refunded if original badge is found and shown to Registration )
 
 ## Parents wishing to attend with a minor fear not we got you\!
 
