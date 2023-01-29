@@ -287,6 +287,9 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - draft/
+
+url: "https://www.cloudbabble.co.uk"
 
 plugins:
   - jekyll-paginate
