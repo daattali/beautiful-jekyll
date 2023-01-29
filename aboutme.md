@@ -8,8 +8,6 @@ subtitle: Senior Cloud Architect specialising in Google Cloud at Atos
 #share-description:
 #before-content: certs.html
 ---
-[](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/61038839)
-
 ### Welcome to Cloud Babble- a personal blog site focussing on Google Cloud! 
 
 I'm Jamie Thompson, a Senior Cloud Architect specialising in Google Cloud at Atos, with 20 years experience in a variety of roles including operations, project delivery, design, governance, migration and leadership across:
