@@ -1,13 +1,13 @@
 ---
 layout: post
-title: “Anthos Service Mesh Overview”
-subtitle: “In this blog I provide an overview of the Anthos Service Mesh product offering and architecture, describing how a service mesh helps secure and simplify microservice architectures.”
-description: 
+title: Anthos Service Mesh Overview
+subtitle: In this blog I provide an overview of the Anthos Service Mesh product offering and architecture, describing how a service mesh helps secure and simplify microservice architectures.
+#description: 
 #cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/anthos/anthoslogo.png
 readtime: true
-share-title: “Anthos Service Mesh Overview”
-share-description: “In this blog I provide an overview of the Anthos Service Mesh product offering and architecture, describing how a service mesh helps secure and simplify microservice architectures.”
+share-title: Anthos Service Mesh Overview
+share-description: In this blog I provide an overview of the Anthos Service Mesh product offering and architecture, describing how a service mesh helps secure and simplify microservice architectures.
 share-img: /assets/img/anthos/anthoslogo.png
 tags: [Anthos Service Mesh, Microservices Architecture, containers, istio, service mesh, app modernisation]
 ---
