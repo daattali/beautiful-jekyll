@@ -48,18 +48,6 @@ Please be aware that Pre-Registration prices will end March 23rd, 2022 at 11:59 
 | Sponsor | $85 | $95 |
 | Super Sponsor | $150 | $160 |
 
-| &nbsp; | Pre Registration |
-| --- | --- |
-| Attendee | $50 |
-| Sponsor | $85 |
-| Super Sponsor | $150 |
-
-| &nbsp; | Walk-in Registration |
-| --- | --- |
-| Attendee | $60 |
-| Sponsor | $95 |
-| Super Sponsor | $160 |
-
 | &nbsp; | Daily Badges |
 | --- | --- |
 | Friday | $30 |
