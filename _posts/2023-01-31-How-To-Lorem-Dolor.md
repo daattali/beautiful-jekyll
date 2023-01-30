@@ -1,10 +1,9 @@
 ---
 layout: post
-title: How To Lorem Lorem Dolor
-subtitle: This is a test page. 
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
-tags: [books, test]
+title: How To Lorem Dolor
+description: I created this beautiful looking Jekyll blog using default Jekyll template. You can also do this or fork a theme to make it yours. Jekyll is a simple blog generator. The community is growing and the number of plugins is also growing. Learn how to create Jekyll blog.
+tags: Jekyll Web-Design
+permalink: /how-to-lorel-dolor/
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
