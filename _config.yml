@@ -24,14 +24,14 @@ author: Bastien Dussap
 
 navbar-links:
   Home: "https://BastienDussap.github.io"
-  Research: "pages/research"
-  Teaching: "pages/teaching"
+  #Publication: "pages/research"
   About me:
-    - CV: "/assets/files/Moderncv_Classic.pdf"
+    - CV: "/assets/files/CV-DussapBastien.pdf"
     - Adresse: "pages/adresse"
-  #Liens:
-  #  - Datashape: "https://www.inria.fr/fr/datashape/"
-  #  - Metafora: "https://www.metafora-biosystems.com/"
+  Links:
+    - IMO: "https://www.imo.universite-paris-saclay.fr/fr/"
+    - Datashape: "https://www.inria.fr/fr/datashape/"
+    - Metafora: "https://www.metafora-biosystems.com/"
   
 
 ################
