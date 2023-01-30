@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fur Squared 2022 Registration!!
+title: Fur Squared 2023 Registration!!
 subtitle: Registration and benefits of Fur Squared
 css:
 #    - "/assets/css/theme-2022/registration.css"
