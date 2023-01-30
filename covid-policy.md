@@ -1,10 +1,9 @@
 ---
 layout: page
-title: 'Covid Policy'
-subtitle: These are FurSquared’s COVID policies for the April 2022 convention.
+title: Covid Policy
+subtitle: These are FurSquared’s COVID policies for the April 2023 convention.
 permalink: /covid-policy/
 ---
-
 ## Notice
 
 This policy is accurate and up-to-date as of January 15, 2023.
@@ -18,8 +17,6 @@ This policy is accurate and up-to-date as of January 15, 2023.
   * Masks are required under fursuit heads
 * Fursuit lounges will be open
 
-&nbsp;
-
 ## Cheat Sheet
 
 | AGE | PRIMARY VACCINE | DATES |
@@ -30,11 +27,9 @@ This policy is accurate and up-to-date as of January 15, 2023.
 | **12 - 17 years** | Pfizer-BioNTech Moderna Novavax | One booster (3rd dose) by time of attendance unless the last dose of the primary series was given between Oct. 31 - March. 23 |
 | **18+ years** | Pfizer-BioNTech Moderna Novavax J&J's Janssen | One booster by time of attendance unless last dose of the primary series: 2nd shot for Pfizer, Moderna, and Novavax, *or* 1st shot for J&J was given between Oct. 31 - March. 23 |
 
-&nbsp;
-
 ## Vaccination
 
-**To attend FurSquared 2022, one of the following two situations MUST be true:**
+**To attend FurSquared 2023, one of the following two situations MUST be true:**
 
 ### Option 1 - Vaccinated & Boosted
 
@@ -42,15 +37,11 @@ You have completed the primary vaccine series and have received a booster (bival
 
 Additionally, if you are moderately or severely **immunocompromised** and **over the age of 11** the CDC recommends a **5th shot (Pfizer or Moderna)** [https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html). FurSquared does **not** require this additional shot, but **strongly encourages** eligible attendees to do so.
 
-&nbsp;
-
 ### Option 2 - Recently Vaccinated
 
 You have completed an initial vaccine series by the time frame listed below. This section **only** applies if you have received your last vaccine dose **too recently** to be eligible for the booster before Fur Squared.
 
 Proof of vaccination will be required at registration to purchase or pick up a badge.
-
-&nbsp;
 
 ## Proof of Vaccination
 
@@ -100,8 +91,6 @@ In the interest of transparency, we want to advise our attendees that this polic
 * Ability of volunteer staff to enforce policy
 
 Look to our website for the latest up-to-date information.
-
-&nbsp;
 
 ## FAQ
 
