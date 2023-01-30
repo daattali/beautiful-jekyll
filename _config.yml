@@ -14,26 +14,21 @@ url: "https://fursquared.com"
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About: "about"
-  CoC: "code-of-conduct"
-  #Covid Policy: "covid-policy"
-  Hotel: "hotel"
-  GOH: "goh"
-  Registration: "registration"
-  #Programming: "programming"
-  #Schedule: "schedule"
-  #Theme: "theme"
-  Dealers: "dealers"
-  #Night Market: "night-market"
-  Photos: "https://fursquared.smugmug.com/"
-  #Artists: "artist-alley"
-  #  Staff: "staff"
-  Video Games: "video-games"
-  Volunteer: "volunteer"
-  #Store: "https://fursquared.square.site/"
-  Contact: "contact"
-  #  Social Media:
-  #    - Twitter: "https://twitter.com/fursquared"
+  Convention:
+    - Registration: "registration"
+    - Dealer's Den: "dealers"
+    - Video Games: "video-games"
+    - Code of Conduct: "code-of-conduct"
+    - Covid Policy: "covid-policy"
+  Info:
+    - About: "about"
+    - Hotel: "hotel"
+    - Guest of Honor: "goh"
+  Join The Fun:
+    - Volunteer: "volunteer"
+    - Dealer's Registration: "dealers"
+  Contact Us: "contact"
+  
 
 # --- Logo --- #
 
@@ -112,9 +107,15 @@ excerpt_length: 50
 #c2ce9d light green?
 
 navbar-col: "#417f5e"
+navbar-hover-bg-col: "#34664b"
 navbar-text-col: "#f8e780"
+navbar-text-hover-col: "#f37a58"
 navbar-logo-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
+navbar-toggler-bg-col: "#f8e780"
+navbar-toggler-open-bg-col: "#f37a58"
+navbar-toggler-icon-filter: "none"
+navbar-toggler-icon-open-filter: "none"
 
 page-col: "#F8E780"
 page-text-col: "#417F5E"
