@@ -7,3 +7,6 @@ share-img: /assets/img/path.jpg
 tags: [java , ]
 ---
 
+[articals](https://github.com/ZhongFuCheng3y/athena)
+
+[edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2023-01-30-learnFormjava3Y.md)
