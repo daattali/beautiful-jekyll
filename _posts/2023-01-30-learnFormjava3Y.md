@@ -78,8 +78,21 @@ public class InterImpl<T> implements Inter<T> {
 ```
 
 
+### 注解
+#### 基础注解
+- 重写注解：@Override
+- 过时注解：@Deprecated 
+- 抑制编译器警告注解：@SuppressWarnings
+- “堆污染”警告：@SafeVarargs
+- 函数式接口：@FunctionalInterface  
 
 
+{: .box-note} 
+函数式接口是一个接口只有一个方法
+消费型接口
+供给型接口
+断言型接口
+{: .box-note} 
 
 
 [articals](https://github.com/ZhongFuCheng3y/athena)
