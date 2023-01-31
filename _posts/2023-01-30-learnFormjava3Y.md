@@ -9,4 +9,6 @@ tags: [java , ]
 
 [articals](https://github.com/ZhongFuCheng3y/athena)
 
+[words](https://github.com/wurara/wurara.github.io/tree/master/assets/words)
+
 [edit](https://github.com/wurara/wurara.github.io/edit/master/_posts/2023-01-30-learnFormjava3Y.md)
