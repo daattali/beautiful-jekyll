@@ -3,7 +3,7 @@ layout: page
 title: Volunteer
 subtitle: Looking to help out Fur Squared?
 ---
-Are you Interested in making a difference with our growing convention? Fur Squared is staffed entirely by volunteers. Won't you help us out by volunteering? It's easy, fun and there are some great benefits to pitching in. There are plenty of opportunities available for all of our attendees.
+Are you interested in making a difference with our growing convention? Fur Squared is staffed entirely by volunteers. Won't you help us out by volunteering? It's easy, fun and there are some great benefits to pitching in. There are plenty of opportunities available for all of our attendees.
 
 ## Crowd Control
 
@@ -52,7 +52,7 @@ First off, you'll have the thanks of our entire staff and all our attendees, as 
 there are a couple of ways of signing up:
 
 * Fill out the volunteer application form [F2 2023 Volunteers Application](https://docs.google.com/forms/d/1o_SrBQnAzMfTpXp7B99gYvccm80BVg_YUDaygr9EhiI/){: target="_blank" rel="noopener"}
-* Contact us ahead of time at [volunteers@fursquared.com](volunteers@fursquared.com). In the email, let us know your availability, special skills and desired position.
+* Contact us ahead of time at [volunteers@fursquared.com](mailto:volunteers@fursquared.com). In the email, let us know your availability, special skills and desired position.
 * Sign up at the door when you arrive at the convention. We'll have gopher log sheets and documentation available at the Volunteers Desk (Wisconsin 7 Room) as soon as the convention starts.
 
-If you have any questions, or need information, you can email us at [volunteers@fursquared.com](volunteers@fursquared.com)
+If you have any questions, or need information, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com)
