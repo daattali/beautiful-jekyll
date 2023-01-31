@@ -88,10 +88,10 @@ public class InterImpl<T> implements Inter<T> {
 
 
 {: .box-note} 
-函数式接口是一个接口只有一个方法
-消费型接口
-供给型接口
-断言型接口
+函数式接口是一个接口只有一个方法  
+消费型接口  
+供给型接口  
+断言型接口  
 {: .box-note} 
 
 
