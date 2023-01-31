@@ -21,7 +21,7 @@ author: Jamie Thompson
 
 navbar-links:
   About Me: "aboutme/"
-  Blog List: "https://www.cloudbabble.co.uk/"
+  Blog List: "https://www.cloudbabble.co.uk"
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     #- Learn markdown: "https://www.markdowntutorial.com/"
