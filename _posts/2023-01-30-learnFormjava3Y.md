@@ -9,14 +9,15 @@ tags: [java , ]
 
 ### 泛型  
 
-- 泛型方法
+- 泛型方法  
+
 ```
 public <T> void show(T t) {
     System.out.println(t);
 
 }
 ```  
-- 泛型类
+- 泛型类  
 
 ```
 /*
@@ -34,8 +35,7 @@ public class ObjectTool<T> {
     }
 }
 ```
-
-- 泛型接口
+- 泛型接口  
 
 ```
 /*
