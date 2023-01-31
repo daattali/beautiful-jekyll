@@ -189,6 +189,7 @@ Also, for reference, here's [my list from 2019](../2020-02-08-the-9-bestish-game
 |[Viscounts of the West Kingdom](https://boardgamegeek.com/boardgame/296151)|2020|474|8.17948|3.5203|
 |[Welcome to New Las Vegas](https://boardgamegeek.com/boardgame/281075)|2020|2431|7.14075|2.913|
 |[Zombie Kidz Evolution](https://boardgamegeek.com/boardgame/256952)|2018|738|7.90925|1.4429|
+{:.sortable}
 
 ### Expansions
 
@@ -202,3 +203,4 @@ Also, for reference, here's [my list from 2019](../2020-02-08-the-9-bestish-game
 |[Terraforming Mars: Turmoil](https://boardgamegeek.com/boardgame/273473)|2019|None|7.68849|3.7273|
 |[Terraforming Mars: Turmoil Promos](https://boardgamegeek.com/boardgame/279345)|2019|None|8.14362|3.6667|
 |[Welcome To...: Easter Egg Hunt & Doomsday Thematic Neighborhoods](https://boardgamegeek.com/boardgame/271874)|2019|None|7.38627|1.9|
+{:.sortable}

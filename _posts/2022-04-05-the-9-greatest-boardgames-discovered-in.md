@@ -209,7 +209,7 @@ All new-to-me games played 2021
 |[Valeria: Card Kingdoms](https://boardgamegeek.com/boardgame/170561)|2016|530|7.45476|1.9914|
 |[Welcome to the Moon](https://boardgamegeek.com/boardgame/339789)|2021|2640|8.18974|2.4|
 |[Zombie Teenz Evolution](https://boardgamegeek.com/boardgame/310448)|2020|1815|7.96496|1.3889|
-
+{:.sortable}
 
 ### Expansions
 
@@ -228,3 +228,4 @@ All new-to-me games played 2021
 |[Star Realms: Crisis – Heroes](https://boardgamegeek.com/boardgame/166708)|2014|None|7.04605|1.975|
 |[Star Realms: United – Heroes](https://boardgamegeek.com/boardgame/202247)|2016|None|7.31989|1.8333|
 |[Star Wars: X-Wing (Second Edition) – Servants of Strife Squadron Pack](https://boardgamegeek.com/boardgame/265504)|2018|None|8.27333|0.0|
+{:.sortable}
