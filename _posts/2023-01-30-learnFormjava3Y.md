@@ -7,6 +7,7 @@ share-img: /assets/img/path.jpg
 tags: [java , ]
 ---
 
+## java 基础
 ### 泛型  
 
 - 泛型方法  
