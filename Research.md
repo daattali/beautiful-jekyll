@@ -30,7 +30,7 @@ display_categories: [work]
 ### Conference articles
 
 <b>A multiscale algorithm for computing realistic image transformations – Application to the modelling of fetal brain growth</b><br>
- <font size="3"> Fleur Gaudfernau, Stéphanie Allassonniere, Erwan Le Pennec <br>
+<font size="3"> Fleur Gaudfernau, Stéphanie Allassonniere, Erwan Le Pennec.
  SPIE Medical Imaging 2023  </font><br>
 
 <b>Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis</b><br>
