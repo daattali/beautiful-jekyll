@@ -106,7 +106,6 @@ public class InterImpl<T> implements Inter<T> {
     3. 缓冲区操作
         - flip：重置读取位置上限和位置，即更新Limit和Position
         - clear：清空缓冲区（实际是重置核心变量，数据未处理）
-    5. 1
 - channel
     1. FileChannel
         - open：打开一个channel
@@ -115,7 +114,7 @@ public class InterImpl<T> implements Inter<T> {
         - write：讲缓冲块写入channel中
         - transfer：直接发送到另一个channel  
         - register：将通道注册到selector中
-        - configureBlocking：是否阻塞（配置selector必须是false）
+        - configureBlocking：是否阻塞（配置selector必须是false）  
 
 {: .box-note} 
 一般是操作直接缓冲区，操作系统和用户程序直接操作一个文件映像。直接操作速度快，但是创建慢。
