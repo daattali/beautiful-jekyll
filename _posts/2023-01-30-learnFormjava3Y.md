@@ -95,8 +95,9 @@ public class InterImpl<T> implements Inter<T> {
 
 - buffer
     1. 数据操作
-        - put() 写入数据
-        - get() 获取数据
+        - allocate：创建缓冲区
+        - put：写入数据
+        - get：获取数据
     2. 核心变量
         - Capacity：最大容量
         - Limit：有数据的位置上限
@@ -113,12 +114,20 @@ public class InterImpl<T> implements Inter<T> {
         - map：将缓冲区映射到buffer中
         - write：讲缓冲块写入channel中
         - transfer：直接发送到另一个channel  
+        - register：将通道注册到selector中
+        - configureBlocking：是否阻塞（配置selector必须是false）
 
 {: .box-note} 
 一般是操作直接缓冲区，操作系统和用户程序直接操作一个文件映像。直接操作速度快，但是创建慢。
 {: .box-note} 
     
 - selector
+    - selectedKeys().iterator()：获得selector的key集合
+    - SelectionKey
+        - isAcceptable：接受事件就绪
+        - isReadable：读取事件就绪
+        - channel：获取监听的channel
+        - remove：删除监听的通道
 
 
 [articals](https://github.com/ZhongFuCheng3y/athena)
