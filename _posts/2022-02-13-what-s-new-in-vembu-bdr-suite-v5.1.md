@@ -3,8 +3,8 @@ layout: post
 title: What's new in BDRSuite v5.1
 DATE: 
 subtitle: ''
-metadescription: Learn about the new features and improvements released with Vembu
-  BDR Suite v5.1.
+metadescription: Learn about the new features and improvements released with BDRSuite
+  BDRSuite v5.1.
 image: ''
 
 ---
@@ -12,9 +12,9 @@ The world of data protection has been in motion for the past several years with 
 
 While the company keeps improving the core components to answer customer feedback, BDRSuite brought extensive cloud integration features in the latest versions to maintain the products place on the podium.
 
-Following a change to a more rapid product releases cycle, Vembu announced the release of BDRSuite v5.1 Only four months after the release of [BDRSuite v5.0](https://www.vxav.fr/2021-10-11-vembu-bdr-suite-v5.0-ga-release/). BDRSuite v5.1 brings, among other things, the long awaited Object Storage Backup Repository and Backup Copy capabilities. Let's dig into it and find out what's new in Vembu BDR Suite v5.1.
+Following a change to a more rapid product releases cycle, BDRSuite announced the release of BDRSuite v5.1 Only four months after the release of [BDRSuite v5.0](https://www.vxav.fr/2021-10-11-vembu-bdr-suite-v5.0-ga-release/). BDRSuite v5.1 brings, among other things, the long awaited Object Storage Backup Repository and Backup Copy capabilities. Let's dig into it and find out what's new in BDRSuite v5.1.
 
-[![](/img/vembu-download.png)](https://www.vembu.com/vembu-bdr-suite-download/#)
+[![](/img/vembu-download.png)](https://www.bdrsuite.com/vembu-bdr-suite-download/#)
 
 BDRSuite v5.1 is a Windows or Linux installer and you can use it unrestricted for free during a **30 days trial period**.
 
@@ -56,8 +56,8 @@ A number of additional improvements are brought into BDRSuite v5.1 on top of the
 
 #### BDRSuite v5.1 update
 
-Updating your BDRSuite server is very easy. However, it is recommended to review the [Software Update Guide](https://www.vembu.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) to make sure your scenario is covered and the [Upgrade Checklist](https://www.vembu.com/pdf/release-notes/vembu-bdr-suite-v5-0-ga-pre-and-post-checklist.pdf) before upgrading to BDRSuite v5.1.
+Updating your BDRSuite server is very easy. However, it is recommended to review the [Software Update Guide](https://www.bdrsuite.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) to make sure your scenario is covered and the [Upgrade Checklist](https://www.bdrsuite.com/pdf/release-notes/vembu-bdr-suite-v5-0-ga-pre-and-post-checklist.pdf) before upgrading to BDRSuite v5.1.
 
 #### Wrap up
 
-Product management and including customer feedback to the roadmap is important for any company to answer real world problematic and not only cover the angles of the industry standards. Vembu has been doing it brilliantly so far in Vembu BDRSuite v5.1 with a lot of improvements in a relatively short span of time. I will be sure to keep my eyes peeled in the next few months to find out what the next versions of the product will bring in terms of features and improvements.
+Product management and including customer feedback to the roadmap is important for any company to answer real world problematic and not only cover the angles of the industry standards. BDRSuite has been doing it brilliantly so far in BDRSuite v5.1 with a lot of improvements in a relatively short span of time. I will be sure to keep my eyes peeled in the next few months to find out what the next versions of the product will bring in terms of features and improvements.
