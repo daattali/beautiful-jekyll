@@ -33,7 +33,7 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 9-Jan		| Counting				| _No Coaching Session (Mathcounts School Round)_ |  |
 | 16-Jan	| _No School_			| _No Coaching Session (AMC 8)_ |  |
 | 23-Jan	| Circles				| [2022-2023 Mathcounts School](/files/RMS%202223M%20Exam.pdf) |  |
-| 30-Jan	| Similarity			| [2021-2022 MIC Regionals Individual](http://www.academicsarecool.com/assets/samples/MIC_78_2021-2022.pdf) |  |
+| 30-Jan	| Similarity			| _Cancelled_ |  |
 | 6-Feb		| Pascal's Triangle		| [2021-2022 MIC Masters Individual](http://www.academicsarecool.com/assets/samples/2021-2022_8th_Masters_tests.pdf) |  |
 | 13-Feb	| Logic					| _No Coaching Session (Math Is Cool Regionals)_ |  |
 | 20-Feb	| _No School_ 			| 2022 MMT Pressure [Round 1](https://mustangmath.com/archive/2022/Pressure1Problems.pdf) and [Round 2](https://mustangmath.com/archive/2022/Pressure2Problems.pdf) |  |
