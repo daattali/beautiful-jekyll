@@ -91,6 +91,35 @@ public class InterImpl<T> implements Inter<T> {
 函数式接口是一个接口只有一个方法  
 {: .box-note} 
 
+### NIO
+
+- buffer
+    1. 数据操作
+        - put() 写入数据
+        - get() 获取数据
+    2. 核心变量
+        - Capacity：最大容量
+        - Limit：有数据的位置上限
+        - Position：位置
+        - Mark：标识
+    3. 缓冲区操作
+        - flip：重置读取位置上限和位置，即更新Limit和Position
+        - clear：清空缓冲区（实际是重置核心变量，数据未处理）
+    5. 1
+- channel
+    1. FileChannel
+        - open：打开一个channel
+        - read：从channel中读取一个缓冲块
+        - map：将缓冲区映射到buffer中
+        - write：讲缓冲块写入channel中
+        - transfer：直接发送到另一个channel  
+
+{: .box-note} 
+一般是操作直接缓冲区，操作系统和用户程序直接操作一个文件映像。直接操作速度快，但是创建慢。
+{: .box-note} 
+    
+- selector
+
 
 [articals](https://github.com/ZhongFuCheng3y/athena)
 
