@@ -5,9 +5,9 @@ date: 2022-11-27T09:58:04.234Z
 nobanner: no
 fb-img: null
 ---
-Vembu BDR Suite is a complete Backup and disaster recovery solution tailored to protect workloads across Virtual, Physical, on-premises, Cloud services, and SaaS applications. The world of data protection kept gaining traction in the past decade with the rise of cloud services and then the threat of Ransomware. BDRSuite carved a place for the company among the leading backup software vendors for the SMB sector with a robust virtual machine backup and recovery solution.
+BDRSuite is a complete Backup and disaster recovery solution tailored to protect workloads across Virtual, Physical, on-premises, Cloud services, and SaaS applications. The world of data protection kept gaining traction in the past decade with the rise of cloud services and then the threat of Ransomware. BDRSuite carved a place for the company among the leading backup software vendors for the SMB sector with a robust virtual machine backup and recovery solution.
 
-[![bdr suite download](/img/vembu-download.png)](https://www.vembu.com/vembu-bdr-suite-download/?utm_source=vxav&utm_medium=blog&utm_campaign=download)
+[![BDRSuite download](/img/vembu-download.png)](https://www.bdrsuite.com/vembu-bdr-suite-download/?utm_source=vxav&utm_medium=blog&utm_campaign=download)
 
 BDRSuite v5.5 is a Windows or Linux installer and you can use it unrestricted for free during a **30 days trial period**.
 
@@ -29,7 +29,7 @@ ConnectWise helps MSPs manage their assets and customers. BDRSuite now supports 
 
 ## Google Cloud as Backup Repository
 
-I recently wrote a [blog about Google Cloud Storage](https://www.vembu.com/blog/data-protection-with-google-cloud-object-storage/) for Vembu in preparation of this announcement. Google Cloud Storage (Object Storage) is now supported in BDRSuite v5.5 to store backup data, backup copy and offsite copy data. Note that it already supported other cloud storage providers like Amazon S3, Azure Blog, S3 Compatible storages such as Wasabi, MinIO, etc.
+I recently wrote a [blog about Google Cloud Storage](https://www.bdrsuite.com/blog/data-protection-with-google-cloud-object-storage/) for BDRSuite in preparation of this announcement. Google Cloud Storage (Object Storage) is now supported in BDRSuite v5.5 to store backup data, backup copy and offsite copy data. Note that it already supported other cloud storage providers like Amazon S3, Azure Blog, S3 Compatible storages such as Wasabi, MinIO, etc.
 
 ![Google Cloud as Backup Repository](/img/2022-11-27-11-23-34.png)
 
@@ -37,7 +37,7 @@ I recently wrote a [blog about Google Cloud Storage](https://www.vembu.com/blog/
 
 * Google Workspace Shared Drive: BDRSuite v5.5 supports backup and recovery of Shared Drives in Google Workspace Organization for MailBackup, Calendar Backup, Contacts/ Peoples Backup, Google Drive Backup.
 
-* [Microsoft 365 Archive Mailbox](https://www.vembu.com/blog/bdrsuite-v5-5-new-feature-update-how-to-restore-microsoft-365-user-mailbox-to-different-organization/): BDRSuite v5.5 supports backup and recovery of user mails in the Archive Mailbox (In-place Archive) of Microsoft 365.
+* [Microsoft 365 Archive Mailbox](https://www.bdrsuite.com/blog/bdrsuite-v5-5-new-feature-update-how-to-restore-microsoft-365-user-mailbox-to-different-organization/): BDRSuite v5.5 supports backup and recovery of user mails in the Archive Mailbox (In-place Archive) of Microsoft 365.
 
 ![BDRSuite Microsoft 365 Archive Mailbox](/img/2022-11-27-11-16-51.png)
 
@@ -60,4 +60,4 @@ A number of other important improvements have been added to BDRSuite v5.5 such a
 
 ## BDRSuite v5.5 update
 
-Updating your BDRSuite server is pretty straightforward as usual. However, it is recommended to review the [Software Update Guide](https://www.vembu.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) to make sure your scenario is covered and the [Upgrade Checklist](https://www.vembu.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) before upgrading to BDRSuite v5.5. Note that the BDRSuite installations below v5.0 should upgrade to v5.0 first before upgrading to v5.5.0 GA.
+Updating your BDRSuite server is pretty straightforward as usual. However, it is recommended to review the [Software Update Guide](https://www.bdrsuite.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) to make sure your scenario is covered and the [Upgrade Checklist](https://www.bdrsuite.com/pdf/release-notes/vembu-bdr-automatic-software-update.pdf) before upgrading to BDRSuite v5.5. Note that the BDRSuite installations below v5.0 should upgrade to v5.0 first before upgrading to v5.5.0 GA.
