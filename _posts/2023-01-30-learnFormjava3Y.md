@@ -128,38 +128,42 @@ public class InterImpl<T> implements Inter<T> {
         - channel：获取监听的channel
         - remove：删除监听的通道
 
-### 反射
+### 反射  
 
 想要使用反射，我先要得到class文件对象，其实也就是得到Class类的对象
-Class类主要API：
-        成员变量  - Field
-        成员方法  - Constructor
-        构造方法  - Method
-获取class文件对象的方式：
-        1：Object类的getClass()方法
-        2：数据类型的静态属性class
-        3：Class类中的静态方法：public static Class ForName(String className)
---------------------------------  
-获取成员变量并使用
-        1: 获取Class对象
-        2：通过Class对象获取Constructor对象
-        3：Object obj = Constructor.newInstance()创建对象
-        4：Field field = Class.getField("指定变量名")获取单个成员变量对象
-        5：field.set(obj,"") 为obj对象的field字段赋值
-如果需要访问私有或者默认修饰的成员变量
-        1:Class.getDeclaredField()获取该成员变量对象
-        2:setAccessible() 暴力访问  
----------------------------------          
-通过反射调用成员方法
-        1：获取Class对象
-        2：通过Class对象获取Constructor对象
-        3：Constructor.newInstance()创建对象
-        4：通过Class对象获取Method对象  ------getMethod("方法名");
-        5: Method对象调用invoke方法实现功能
-如果调用的是私有方法那么需要暴力访问
-        1: getDeclaredMethod()
-        2: setAccessiable();     
 
+1. 获取class文件对象的方式：
+    1. Object类的getClass()方法
+    2. 数据类型的静态属性class
+    3. Class类中的静态方法：public static Class ForName(String className)
+
+2. 获取成员变量并使用
+    1. 获取Class对象
+    2. 通过Class对象获取Constructor对象
+    3. Object obj = Constructor.newInstance()创建对象
+    4. Field field = Class.getField("指定变量名")获取单个成员变量对象
+    5. field.set(obj,"") 为obj对象的field字段赋值  
+
+{: .box-note} 
+    如果需要访问私有或者默认修饰的成员变量  
+    1. Class.getDeclaredField()获取该成员变量对象
+    2. setAccessible() 暴力访问    
+{: .box-note} 
+    
+
+3. 通过反射调用成员方法
+    1. 获取Class对象
+    2. 通过Class对象获取Constructor对象
+    3. Constructor.newInstance()创建对象
+    4. 通过Class对象获取Method对象, getMethod("方法名");
+    5. Method对象调用invoke方法实现功能    
+
+
+{: .box-note} 
+    如果调用的是私有方法那么需要暴力访问
+    1. getDeclaredMethod()
+    2. setAccessiable();     
+{: .box-note} 
 
 [articals](https://github.com/ZhongFuCheng3y/athena)
 
