@@ -144,10 +144,11 @@ public class InterImpl<T> implements Inter<T> {
     4. Field field = Class.getField("指定变量名")获取单个成员变量对象
     5. field.set(obj,"") 为obj对象的field字段赋值  
 
-{: .box-note} 
-    如果需要访问私有或者默认修饰的成员变量  
-    1. Class.getDeclaredField()获取该成员变量对象
-    2. setAccessible() 暴力访问    
+{: .box-note}  
+如果需要访问私有或者默认修饰的成员变量  
+1. Class.getDeclaredField()获取该成员变量对象
+2. setAccessible() 暴力访问  
+
 {: .box-note} 
     
 
@@ -159,10 +160,11 @@ public class InterImpl<T> implements Inter<T> {
     5. Method对象调用invoke方法实现功能    
 
 
-{: .box-note} 
-    如果调用的是私有方法那么需要暴力访问
-    1. getDeclaredMethod()
-    2. setAccessiable();     
+{: .box-note}  
+如果调用的是私有方法那么需要暴力访问
+1. getDeclaredMethod()
+2. setAccessiable();  
+
 {: .box-note} 
 
 [articals](https://github.com/ZhongFuCheng3y/athena)
