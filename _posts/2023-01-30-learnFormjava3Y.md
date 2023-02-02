@@ -154,8 +154,8 @@ public class InterImpl<T> implements Inter<T> {
 {: .box-note}  
 如果需要访问私有或者默认修饰的成员变量  
 setAccessible() 暴力访问  
+{: .box-note}  
 
-{: .box-note} 
 
 [articals](https://github.com/ZhongFuCheng3y/athena)
 
