@@ -144,8 +144,6 @@ public class InterImpl<T> implements Inter<T> {
     4. Field field = Class.getField("指定变量名")获取单个成员变量对象
     5. field.set(obj,"") 为obj对象的field字段赋值  
 
-
-
 3. 通过反射调用成员方法
     1. 获取Class对象
     2. 通过Class对象获取Constructor对象
