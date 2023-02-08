@@ -456,7 +456,7 @@ When it comes to equipment failures, the sensor signal should either go off (in 
 generate_truncated_normal_vector(1, 0.9, 1, 0, 100)[0]
 ```
 
-We will apply the resulted random number as a multiplier, while generating regular current values instead the missing values; this version of the `generate_current_data` function will look as follows:
+We will apply the resulted random number as a multiplier, while generating regular current values instead of the missing values in the last version of the `generate_current_data` function:
 
 ```python
 def generate_current_data(
@@ -475,7 +475,7 @@ def generate_current_data(
     :param window_size: time period between batches
     :param lower_bound: lower threshold value for the current data
     :param upper_bound: range for the current data values
-    :param irregularity_rate: rate of data omissions (between 0 and 1)
+    :param irregularity_rate: rate of irregularity occurrence (between 0 and 1)
     :param irregularity_length: time period of irregularity, in minutes
 
     :return: a time series dataframe, where values represent the current value
