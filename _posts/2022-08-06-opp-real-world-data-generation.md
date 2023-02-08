@@ -23,7 +23,7 @@ The class will have several methods that generate different chunks of the overal
 
 The `current_time` variable is defined as part of the `__init__` method and is modified by each of the methods to combine the chunks of data into the final time series. The generated time series will be stored in the `generated_time_series` variable. We will add a visualization function as a class method as well.
 
-Let's take a look at the implementation:
+Let's take a look at the implementation<sup>1</sup>:
 
 ```python
 class FlowSensorDataGenerator:
@@ -232,7 +232,7 @@ dg = FlowSensorDataGenerator(
     datetime.strptime(datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M')
 )
 ```
-Let's generate the data and visualize it<sup>1</sup>:
+Let's generate the data and visualize it<sup>2</sup>:
 
 ```python
 dg.generate_data(pattern)
@@ -253,6 +253,8 @@ dg.visualize_data()
 
 The class introduced in this blog post, provides a convenient and flexible way to generate realistic demo data for the development of manufacturing analytics software for batch production. The generated time series simulate the complexities and irregularities of real-world data and can be fed into machine learning models and statistical analysis. The implementation of OOP principles, such as encapsulating methods into the class, makes the code more readable and reusable, while the class objects can be tailored to suit the specific needs of different manufacturing processes.
 
-<sup>1</sup> The generated time series from this case study can be found [here](/assets/data/2022-08-06-generated-data.csv).
+<sup>1</sup> We highly recommend getting acquainted with the content of the [initial blog post](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/) before proceeding with the code.
+
+<sup>2</sup> The generated time series from this case study can be found [here](/assets/data/2022-08-06-generated-data.csv).
 
 Copyright © 2022 Zheniya Mogilevski
