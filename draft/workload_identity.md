@@ -24,9 +24,9 @@ There are several ways this can be achieved, however the recommended approach is
 
 The main issues with exporting service account keys and storing them in a secure vault like Google Cloud’s Secret Manager are:
 
-- Service account keys don’t expire. Once the key has been created, it remains the same indefinitely unless it is manually updated.
-- Manually updating service account keys constitutes toil, it doesn’t scale well and is likely to be forgotten or not performed frequently enough.
-- Attackers who gain access to the service account key may go undetected for a significant period of time, during which they will be able to successfully authenticate as the service account, potentially expanding the scope of the security breach.
+1. Service account keys don’t expire. Once the key has been created, it remains the same indefinitely unless it is manually updated.
+1. Manually updating service account keys constitutes toil, it doesn’t scale well and is likely to be forgotten or not performed frequently enough.
+1. Attackers who gain access to the service account key may go undetected for a significant period of time, during which they will be able to successfully authenticate as the service account, potentially expanding the scope of the security breach.
 
 # Using Compute Engine Service Account
 
@@ -75,7 +75,7 @@ The following IAM roles are required to enable Workload Identity:
 
 Workload Identity must be enabled at the cluster level before you can enable Workload Identity on node pools. The cluster can be enabled during provisioning, or updated at a later date.
 
-## Create Cluster with Workload Identity Enabled
+## Create A Google Kubernetes Engine (GKE) Cluster with Workload Identity Enabled
 
 The following gcloud command creates a new cluster with Workload Identity enabled:
 
@@ -90,9 +90,9 @@ Replace the following:
 - COMPUTE_REGION: the Compute Engine region of your cluster. For zonal clusters, use --zone=COMPUTE_ZONE.
 - PROJECT_ID: your Google Cloud project ID.
 
-When using the Terraform Google Kubernetes-Engine module (https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/latest?tab=inputs) to create a new cluster, Workload Identify is enabled by default.
+When using the [Terraform Google Kubernetes-Engine module](https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/latest?tab=inputs) to create a new cluster, Workload Identify is enabled by default.
 
-Alternatively, if you’re creating your cluster and defining your resources under the google_container_cluster resource, including the following code will enable Workload Identity on your cluster:
+Alternatively, if you’re creating your cluster and defining your resources under the [google_container_cluster resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster), including the following code will enable Workload Identity on your cluster:
 
 ```
 workload_identity_config {
@@ -100,9 +100,9 @@ workload_identity_config {
   }
 ```
 
-## Enable Workload Identity On An Existing Standard Cluster
+## Enable Workload Identity On An Existing Google Kubernetes Engine (GKE) Standard Cluster
 
-The following gcloud command updates an existing cluster to use Workload Identity. 
+The following gcloud command updates an existing Google Kubernetes Engine cluster to use Workload Identity. 
 
 ```
 gcloud container clusters update CLUSTER_NAME \
@@ -116,7 +116,7 @@ Replace the following:
 - COMPUTE_REGION: the Compute Engine region of your cluster. For zonal clusters, use --zone=COMPUTE_ZONE.
 - PROJECT_ID: your Google Cloud project ID.
 
-The following Terraform code will also enable Workload Identity on an existing cluster as part of the google_container_cluster resource:
+The following Terraform code will also enable Workload Identity on an existing Google Kubernetes Engine cluster as part of the [google_container_cluster resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster):
 
 ```
 workload_identity_config {
@@ -128,11 +128,11 @@ Existing node pools are unaffected, but any new node pools in the cluster will b
 
 # Configuring Application Workloads To Use Workload Identity
 
-After enabling Workload Identity at the cluster level, the application workload must be configured to use Workload Identity. A Kubernetes service account must be assigned to each application which is then configured to impersonate an IAM service account. The following steps detail how to enable Workload Identity authentication for an application workload using gcloud commands, and terraform code.
+After enabling Workload Identity at the Google Kubernetes Engine cluster level, the application workload must be configured to use Workload Identity. A Kubernetes service account must be assigned to each application which is then configured to impersonate an IAM service account. The following steps detail how to enable Workload Identity authentication for an application workload using gcloud commands, and terraform code.
 
-## GCloud Command Application Workload Configuration
+## GCloud Command: Application Workload Configuration
 
-Get credentials for your cluster:
+1. The first step is to get credentials for your cluster:
 
 ```
 gcloud container clusters get-credentials CLUSTER_NAME \
@@ -144,13 +144,13 @@ Replace the following:
 - CLUSTER_NAME: the name of your cluster that has Workload Identity enabled.
 - COMPUTE_REGION: the Compute Engine region of your cluster.
 
-Create a namespace to use for the Kubernetes service account. You can also use the default namespace or any existing namespace.
+2. Create a namespace to use for the Kubernetes service account. You can also use the default namespace or any existing namespace.
 
 ```
 kubectl create namespace NAMESPACE
 ```
 
-Create a Kubernetes service account for your application to use. You can also use the default Kubernetes service account in the default or any existing namespace.
+3. Create a Kubernetes service account for your application to use. You can also use the default Kubernetes service account in the default or any existing namespace.
 
 ```
 kubectl create serviceaccount KSA_NAME \
@@ -162,32 +162,41 @@ Replace the following:
 - KSA_NAME: the name of your new Kubernetes service account.
 - NAMESPACE: the name of the Kubernetes namespace for the service account.
 
-Create an IAM service account for your application or use an existing IAM service account instead. You can use any IAM service account in any project in your organization. For Config Connector, apply the IAMServiceAccount object for your selected service account.
+4. Create an IAM service account for your application or use an existing IAM service account instead. You can use any IAM service account in any project in your organization. For Config Connector, apply the IAMServiceAccount object for your selected service account.
+
 ```
 gcloud iam service-accounts create GSA_NAME \
     --project=GSA_PROJECT
 ```
 Replace the following:
-GSA_NAME: the name of the new IAM service account.
-GSA_PROJECT: the project ID of the Google Cloud project for your IAM service account.
-Ensure that your IAM service account has the roles you need. You can grant additional roles using the following command:
+
+- GSA_NAME: the name of the new IAM service account.
+- GSA_PROJECT: the project ID of the Google Cloud project for your IAM service account.
+
+5. Ensure that your IAM service account has the roles you need. You can grant additional roles using the following command:
+
 ```
 gcloud projects add-iam-policy-binding PROJECT_ID \
     --member "serviceAccount:GSA_NAME@GSA_PROJECT.iam.gserviceaccount.com" \
     --role "ROLE_NAME"
 ```
+
 Replace the following:
-PROJECT_ID: your Google Cloud project ID.
-GSA_NAME: the name of your IAM service account.
-GSA_PROJECT: the project ID of the Google Cloud project of your IAM service account.
-ROLE_NAME: the IAM role to assign to your service account, like roles/spanner.viewer.
-Allow the Kubernetes service account to impersonate the IAM service account by adding an IAM policy binding between the two service accounts. This binding allows the Kubernetes service account to act as the IAM service account.
+- PROJECT_ID: your Google Cloud project ID.
+- GSA_NAME: the name of your IAM service account.
+- GSA_PROJECT: the project ID of the Google Cloud project of your IAM service account.
+- ROLE_NAME: the IAM role to assign to your service account, like roles/spanner.viewer.
+
+6. Allow the Kubernetes service account to impersonate the IAM service account by adding an IAM policy binding between the two service accounts. This binding allows the Kubernetes service account to act as the IAM service account.
+
 ```
 gcloud iam service-accounts add-iam-policy-binding GSA_NAME@GSA_PROJECT.iam.gserviceaccount.com \
     --role roles/iam.workloadIdentityUser \
     --member "serviceAccount:PROJECT_ID.svc.id.goog[NAMESPACE/KSA_NAME]"
 ```
-Annotate the Kubernetes service account with the email address of the IAM service account.
+
+7. Annotate the Kubernetes service account with the email address of the IAM service account.
+
 ```
 YAML: apiVersion: v1
 kind: ServiceAccount
@@ -197,23 +206,27 @@ metadata:
   name: KSA_NAME
   namespace: NAMESPACE
 ```
+
 Note: This annotation by itself does not grant access to impersonate the IAM service account. If the IAM binding does not exist, the Pod will not be able to use the IAM service account.
-Update your Pod spec to schedule the workloads on nodes that use Workload Identity and to use the annotated Kubernetes service account.
+
+8. Update your Pod spec to schedule the workloads on nodes that use Workload Identity and to use the annotated Kubernetes service account.
 Note: Omit spec.serviceAccountName if you annotate the default Kubernetes service account. For Autopilot clusters, omit the nodeSelector field. Autopilot rejects this nodeSelector because all nodes use Workload Identity.
+
 ```
 spec:
   serviceAccountName: KSA_NAME
   nodeSelector:
     iam.gke.io/gke-metadata-server-enabled: "true"
 ```
-Apply the updated configuration to your cluster:
+
+9. Apply the updated configuration to your cluster:
+
 ```
 kubectl apply -f DEPLOYMENT_FILE
 ```
+
 Replace DEPLOYMENT_FILE with the path to the updated Pod spec.
 VERIFY?
-
-
 
 ## Terraform Code Application Workload Configuration
 
@@ -221,7 +234,7 @@ GKE Workload Identity Terraform module is a submodule of the google_kubernetes_e
 
 The following steps guide you through enabling the application workload to use Workload Identity using Terraform.
 
-‘’’
+```
 module "cloud-babble-demo-app-workload-identity" {
   source     = "terraform-google-modules/kubernetes-engine/google//modules/workload-identity"
   name       = "cloud-babble-demo-app"
@@ -238,6 +251,7 @@ This will create:
 - IAM Binding (roles/iam.workloadIdentityUser) between the service accounts
 
 Usage from a Kubernetes deployment:
+
 ```
 metadata:
   namespace: default
@@ -252,6 +266,7 @@ spec:
 ### Using an existing Google Service Account
 
 An existing Google service account can optionally be used.
+
 ```
 resource "google_service_account" "preexisting" {
   account_id   = "preexisting-sa"
@@ -288,4 +303,5 @@ module "my-app-workload-identity" {
   project_id          = var.project_id
 }
 ```
+
 If annotation is disabled (via annotate_k8s_sa = false), the existing Kubernetes service account must already bear the "iam.gke.io/gcp-service-account" annotation.
