@@ -42,7 +42,7 @@ There is a predefined IAM role for GKE node service accounts that has the minimu
 
 # Workload Identity
 
-Workload Identity is the recommended method to access Google Cloud API’s from a GKE hosted application workload. With Workload Identity, your workload is able to impersonate a predefined IAM service account to gain access to the required resources. Pods that use the configured Kubernetes service account, impersonate the IAM service account when they access the GCP API’s. This enables you to define distinct, fine-grained identities and authorisation for each application in your cluster.
+Workload Identity is the recommended method to access Google Cloud API’s from a Google Kubernetes Engine (GKE) hosted application workload. With Workload Identity, your workload is able to impersonate a predefined Google Cloud IAM service account to gain access to the required resources. Pods that use the configured Kubernetes service account, impersonate the IAM service account when they access the GCP API’s. This enables you to define distinct, fine-grained identities and authorisation for each application in your cluster.
 
 Each GKE cluster with Workload identity enabled is assigned a workload identity pool name in the format: PROJECT_ID.svc.id.goog. IAM uses this naming format to trust the Kubernetes service account credentials. This is made possible due to all Google Cloud Project ID’s being globally unique, across all organisations.
 
@@ -128,7 +128,7 @@ Existing node pools are unaffected, but any new node pools in the cluster will b
 
 # Configuring Application Workloads To Use Workload Identity
 
-After enabling Workload Identity at the Google Kubernetes Engine cluster level, the application workload must be configured to use Workload Identity. A Kubernetes service account must be assigned to each application which is then configured to impersonate an IAM service account. The following steps detail how to enable Workload Identity authentication for an application workload using gcloud commands, and terraform code.
+After enabling Workload Identity at the Google Kubernetes Engine cluster level, the application workload must be configured to use Workload Identity. A Kubernetes service account must be assigned to each application which is then configured to impersonate an IAM service account. The following steps detail how to enable Workload Identity authentication for an application workload using gcloud commands.
 
 ## GCloud Command: Application Workload Configuration
 
