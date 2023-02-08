@@ -534,14 +534,13 @@ Now, the `irregularity_rate` parameter controls the frequency with which the dat
  
 ## Conclusion
 
-In this blog post, we examined the three most common irregularities in real-world sensor data for chemical manufacturing batches. These include variations in batch duration, missing chunks of data, and equipment malfunctions. The actual time series can be a combination of these irregularities, including varying batch durations and the presence or absence of missing data and equipment malfunctions in different proportions. To further improve the code, we can:
+In this blog post, we examined the three most common irregularities in real-world sensor data for chemical manufacturing batches. These include variations in batch duration, missing chunks of data, and equipment malfunctions. The actual time series can be a combination of these irregularities, including varying batch durations and the presence or absence of missing data and equipment malfunctions in different proportions.
+
+As far as the data quality is concerned, variability should be introduced to the time window between the batches and to the length of irregularity periods. One additional feature to consider can be simulating load patterns within batches. This can help to replicate real-world scenarios where there may be varying levels of equipment utilization during specific process steps.
+
+To further improve the code, we can:
 - merge the three versions of the `generate_current_data` function into a single method;
-- build a dedicated class;
-- add variability to the time window between the batches;
-- add variability to the length of irregularity periods;
-- introduce load patterns to batches;
-- turn the `generate_truncated_normal_vector` function into internal method of the class;
-- add additional methods as needed;
+- build a dedicated class and add additional methods as needed (the `generate_truncated_normal_vector` function should be one of them);
 - improve test coverage to cover all the irregularity cases discussed above.
 
 Copyright © 2022 Zheniya Mogilevski
