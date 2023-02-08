@@ -538,6 +538,7 @@ In this blog post, we examined the three most common irregularities in real-worl
 - merge the three versions of the `generate_current_data` function into a single method;
 - build a dedicated class;
 - add variability to the time window between the batches;
+- add variability to the length of irregularity periods;
 - turn the `generate_truncated_normal_vector` function into internal method of the class;
 - add additional methods as needed;
 - improve test coverage to cover all the irregularity cases discussed above.
