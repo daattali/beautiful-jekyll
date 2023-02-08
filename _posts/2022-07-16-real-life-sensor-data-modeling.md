@@ -2,7 +2,7 @@
 layout: post
 title: Generating Realistic Testing Data for Manufacturing Analytics Software
 subtitle: Modeling Real-Life Data Imperfections
-tags: [generated data, sensor data, time series, unit testing, tdd]
+tags: [generated data, sensor data, time series, unit testing, tdd, data visualization]
 comments: true
 ---
 
