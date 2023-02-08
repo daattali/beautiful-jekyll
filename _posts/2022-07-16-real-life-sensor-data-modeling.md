@@ -26,14 +26,23 @@ class TestGenerateCurrentData(unittest.TestCase):
         self.lower_bound = 10
         self.upper_bound = 11
         self.tested_data = generate_current_data(
-            self.num_batches, self.duration, self.window_size, self.lower_bound, self.upper_bound
+            self.num_batches,
+            self.duration,
+            self.window_size,
+            self.lower_bound,
+            self.upper_bound
         )
 
     def test_shape(self):
-        self.assertEqual(len(self.tested_data), (self.num_batches*(self.duration + self.window_size)))
+        self.assertEqual(
+            len(self.tested_data),
+            (self.num_batches*(self.duration + self.window_size))
+        )
 
     def test_value_range(self):
-        self.assertTrue(np.all(self.tested_data >= 0) and np.all(self.tested_data <= self.upper_bound))
+        self.assertTrue(
+            np.all(self.tested_data >= 0) and np.all(self.tested_data <= self.upper_bound)
+        )
     
     def test_generate_current_data_batch_stats(self):
         batch_num, batch_avg_dur, avg_window = self.__slice_into_batches(self.tested_data)
@@ -49,15 +58,21 @@ class TestGenerateCurrentData(unittest.TestCase):
         df['current_off'] = df['current'].apply(lambda x: True if x == 0 else False)
         # Add a column indicating if the current state changed from the previous row
         df['state_changed'] = df['current_on'].ne(df['current_on'].shift())
-        df['state_changed_to_on'] = np.where(df['current']* df['state_changed'], True, False)
+        df['state_changed_to_on'] = np.where(
+            df['current']* df['state_changed'], True, False
+        )
         # Add a column indicating the batch number
         df['batch_number'] = df['state_changed_to_on'].cumsum()
         # number of batches
         batch_count = df['batch_number'].max()
         # average duration
-        mean_duration = pd.pivot_table(df, index='batch_number', values='current_on', aggfunc='sum').mean()[0]
+        mean_duration = pd.pivot_table(
+            df, index='batch_number', values='current_on', aggfunc='sum'
+        ).mean()[0]
         # average window size between batches
-        mean_window = pd.pivot_table(df, index='batch_number', values='current_off', aggfunc='sum').mean()[0]
+        mean_window = pd.pivot_table(
+            df, index='batch_number', values='current_off', aggfunc='sum'
+        ).mean()[0]
         return batch_count, mean_duration, mean_window
 
 if __name__ == '__main__':
@@ -72,7 +87,11 @@ The first version of our current data generating function will represent an "ide
 ```python
 
 def generate_current_data(
-        num_batches: int, duration: int, window_size: int, lower_bound: float, upper_bound: float
+        num_batches: int,
+        duration: int,
+        window_size: int,
+        lower_bound: float,
+        upper_bound: float
     ) -> pd.DataFrame:
     """Generate electricity current data for a given number of batches.
 
@@ -85,10 +104,15 @@ def generate_current_data(
     :return: a time series dataframe, where values represent the current value
     """
     current_data = []
-    start_time = datetime.strptime(datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M')
+    start_time = datetime.strptime(
+        datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M'
+    )
     for i in range(num_batches):
         for j in range(duration):
-            current_data.append((start_time + timedelta(minutes=j), random.uniform(lower_bound, upper_bound)))
+            current_data.append((
+                start_time + timedelta(minutes=j),
+                random.uniform(lower_bound, upper_bound)
+            ))
         for j in range(window_size):
             current_data.append((start_time + timedelta(minutes=duration + j), 0))
         start_time = start_time + timedelta(minutes=duration + window_size)
@@ -129,9 +153,9 @@ When we run the unit test, the generated dataframe meets the desired criteria:
 ============================= test session starts =============================
 collecting ... collected 3 item
 
-current_data.py::TestGenerateCurrentData::test_generate_current_data_batch_stats PASSED  [100%]
-current_data.py::TestGenerateCurrentData::test_shape PASSED  [100%]
-current_data.py::TestGenerateCurrentData::test_value_range PASSED  [100%]
+current.py::TestGenerateCurrentData::test_generate_current_data_batch_stats PASSED  [100%]
+current.py::TestGenerateCurrentData::test_shape PASSED  [100%]
+current.py::TestGenerateCurrentData::test_value_range PASSED  [100%]
 
 ============================== 1 passed in 0.039s ==============================
 
@@ -142,7 +166,13 @@ Let's generate a time series with the `generate_current_data` function and plot 
 
 ```python
 # Generate current data
-current_data = generate_current_data(num_batches=5, duration=30, window_size=5, lower_bound=10, upper_bound=11).reset_index()
+current_data = generate_current_data(
+    num_batches=5,
+    duration=30,
+    window_size=5,
+    lower_bound=10,
+    upper_bound=11
+).reset_index()
 # Visualize
 visualize_current_data(current_data)
 ```
@@ -177,7 +207,12 @@ Now, we need to take into acount that multiple reasons can lead to missing value
 
 ```python
 def generate_current_data(
-        num_batches: int, duration: int, window_size: int, lower_bound: float, upper_bound: float, irregularity_rate: float
+        num_batches: int,
+        duration: int,
+        window_size: int,
+        lower_bound: float,
+        upper_bound: float,
+        irregularity_rate: float
     ) -> pd.DataFrame:
     """Generate electricity current data for a given number of batches.
 
@@ -195,14 +230,19 @@ def generate_current_data(
     for i in range(num_batches):
         for j in range(duration):
             if random.random() > irregularity_rate:
-                current_data.append((start_time + timedelta(minutes=j), random.uniform(lower_bound, upper_bound)))
+                current_data.append((
+                    start_time + timedelta(minutes=j),
+                    random.uniform(lower_bound, upper_bound)
+                ))
             else:
                 current_data.append((start_time + timedelta(minutes=j), None))
         for j in range(window_size):
             current_data.append((start_time + timedelta(minutes=duration + j), 0))
         start_time = start_time + timedelta(minutes=duration + window_size)
     current_data = pd.DataFrame(current_data)
-    current_data = current_data.rename(columns = {0: 'time', 1: 'current'}).set_index('time')
+    current_data = current_data.rename(
+        columns = {0: 'time', 1: 'current'}
+    ).set_index('time')
     return current_data
 ```
 
@@ -250,7 +290,9 @@ def generate_current_data(
     while i < num_batches:
         while j < duration:
             if random.random() > irregularity_rate:
-                current_data.append((current_time, random.uniform(lower_bound, upper_bound)))
+                current_data.append((
+                    current_time, random.uniform(lower_bound, upper_bound)
+                ))
                 current_time += timedelta(minutes=1)
                 j += 1
             else:
@@ -268,7 +310,9 @@ def generate_current_data(
             i = i + 1 + j//(duration + window_size)
             j = j - (duration + window_size) * j // (duration + window_size)
     current_data = pd.DataFrame(current_data)
-    current_data = current_data.rename(columns = {0: 'time', 1: 'current'}).set_index('time')
+    current_data = current_data.rename(
+        columns = {0: 'time', 1: 'current'}
+    ).set_index('time')
     return current_data
 
 ```
@@ -290,7 +334,13 @@ Now that we have seen how to generate test data for ideal batch sequences and in
 
 ```python
 
-def generate_truncated_normal_vector(mean: float, std_dev: float, size: int, lower_bound: float, upper_bound: float) -> np.array:
+def generate_truncated_normal_vector(
+    mean: float,
+    std_dev: float,
+    size: int,
+    lower_bound: float,
+    upper_bound: float
+) -> np.array:
     """Generates a vector of random values with a truncated normal distribution.
 
     Uses scipy.stats.truncnorm function to truncate values outside the specified bounds.
@@ -303,7 +353,12 @@ def generate_truncated_normal_vector(mean: float, std_dev: float, size: int, low
     :return: a numpy vector.
     
     """
-    return truncnorm((lower_bound - mean) / std_dev, (upper_bound - mean) / std_dev, loc=mean, scale=std_dev).rvs(size)
+    return truncnorm(
+        (lower_bound - mean) / std_dev,
+        (upper_bound - mean) / std_dev,
+        loc=mean,
+        scale=std_dev
+    ).rvs(size)
 ```
 
 To adjust the `duration` parameter value, we can generate a 1-dimensional array from a distribution with the following parameter values:
@@ -346,10 +401,12 @@ def generate_current_data(
     i = 0
     j = 0
     while i < num_batches:
-        duration = int(mean_duration*generate_truncated_normal_vector(1, 0.2, 1, 0, 2, version=2)[0])
+        duration = int(mean_duration*generate_truncated_normal_vector(1, 0.2, 1, 0, 2)[0])
         while j < duration:
             if random.random() > irregularity_rate:
-                current_data.append((current_time, random.uniform(lower_bound, upper_bound)))
+                current_data.append((
+                    current_time, random.uniform(lower_bound, upper_bound)
+                ))
                 current_time += timedelta(minutes=1)
                 j += 1
             else:
@@ -367,7 +424,9 @@ def generate_current_data(
             i = i + 1 + j//(duration + window_size)
             j = j - (duration + window_size) * j // (duration + window_size)
     current_data = pd.DataFrame(current_data)
-    current_data = current_data.rename(columns = {0: 'time', 1: 'current'}).set_index('time')
+    current_data = current_data.rename(
+        columns = {0: 'time', 1: 'current'}
+    ).set_index('time')
     return current_data
 
 ```
@@ -424,14 +483,18 @@ def generate_current_data(
         duration = int(mean_duration*generate_truncated_normal_vector(1, 0.2, 1, 0, 2)[0])
         while j < duration:
             if random.random() > irregularity_rate:
-                current_data.append((current_time, random.uniform(lower_bound, upper_bound)))
+                current_data.append((
+                    current_time, random.uniform(lower_bound, upper_bound)
+                ))
                 current_time += timedelta(minutes=1)
                 j += 1
             else:
                 for m in range(irregularity_length):
+                    irregularity_coef = generate_truncated_normal_vector(1, 0.9, 1, 0, 100)[0]
                     current_data.append((
                         current_time + timedelta(minutes=m),
-                        random.uniform(lower_bound, upper_bound)*generate_truncated_normal_vector(1, 0.9, 1, 0, 100)[0]))
+                        random.uniform(lower_bound, upper_bound)*irregularity_coef
+                    ))
                 current_time += timedelta(minutes=irregularity_length)
                 j += irregularity_length
         if j < duration + window_size:
@@ -444,7 +507,9 @@ def generate_current_data(
             i = i + 1 + j//(duration + window_size)
             j = j - (duration + window_size) * j // (duration + window_size)
     current_data = pd.DataFrame(current_data)
-    current_data = current_data.rename(columns = {0: 'time', 1: 'current'}).set_index('time')
+    current_data = current_data.rename(
+        columns = {0: 'time', 1: 'current'}
+    ).set_index('time')
     return current_data
 ```
 
