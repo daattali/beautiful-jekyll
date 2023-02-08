@@ -18,7 +18,7 @@ tags: [GKE, Workload Identity, containers, security, best practices, kubernetes,
 
 Application workloads running on Google Kubernetes Engine frequently need to access Google Cloud resources and API’s. For this to work, the workload needs to authenticate with Google Cloud’s IAM service to verify they are authorised to access the desired resource.
 
-There are several ways this can be achieved, however the recommended approach is via Workload Identity. Before going into detail on Workload Identity let’s highlight some of the risks associated with accessing these resources without using Workload Identity for non-recommended approaches.
+There are several ways this can be achieved, however the recommended approach is via Workload Identity. Before going into detail on Workload Identity, I would like to highlight some of the risks associated with accessing these resources without using Workload Identity with non-recommended approaches including exporting service account keys, and using Compute Engine service accounts.
 
 # Exporting Service Account Keys
 
@@ -38,7 +38,7 @@ In the event the Compute Engine service account becomes compromised and you need
 
 It’s also worthwhile calling out at this stage your Google Kubernete Engine/GKE cluster nodes should not be running under the default Compute Engine service account for the same reasons regarding principle of least privilege. The default Compute Engine service account has significantly more permissions than a GKE node service account requires. For this reason, run your GKE nodes under a dedicated GKE Node service account.
 
-There is a predefined IAM role for GKE node service accounts that has the minimum required permissions under roles/container.nodeServiceAccount ( https://cloud.google.com/iam/docs/understanding-roles#container.nodeServiceAccount).
+There is a predefined IAM role for GKE node service accounts that has the minimum required permissions under [roles/container.nodeServiceAccount]( https://cloud.google.com/iam/docs/understanding-roles#container.nodeServiceAccount).
 
 # Workload Identity
 
@@ -48,7 +48,7 @@ Each GKE cluster with Workload identity enabled is assigned a workload identity 
 
 When you configure a Kubernetes service account in a namespace to use Workload Identity, IAM authenticates the credentials using the following member name:
 
-serviceAccount:PROJECT_ID.svc.id.goog[KUBERNETES_NAMESPACE/KUBERNETES_SERVICE_ACCOUNT]
+> *serviceAccount:PROJECT_ID.svc.id.goog[KUBERNETES_NAMESPACE/KUBERNETES_SERVICE_ACCOUNT]*
 
 This member name has an IAM policy binding to the corresponding IAM Service Account, granting the workload access to the resources it requires. By creating dedicated service accounts per workload, and corresponding IAM service accounts, you can limit access to GCP API’s to only those required by said workload.
 
@@ -233,9 +233,9 @@ module "cloud-babble-demo-app-workload-identity" {
 
 This will create:
 
-Google Service Account named: my-application-name@my-gcp-project-name.iam.gserviceaccount.com
-Kubernetes Service Account named: my-application-name in the default namespace
-IAM Binding (roles/iam.workloadIdentityUser) between the service accounts
+- Google Service Account named: my-application-name@my-gcp-project-name.iam.gserviceaccount.com
+- Kubernetes Service Account named: my-application-name in the default namespace
+- IAM Binding (roles/iam.workloadIdentityUser) between the service accounts
 
 Usage from a Kubernetes deployment:
 ```
