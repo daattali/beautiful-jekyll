@@ -534,6 +534,12 @@ Now, the `irregularity_rate` parameter controls the frequency with which the dat
  
 ## Conclusion
 
-In this blog post, we examined the three most common irregularities in real-world sensor data for chemical manufacturing batches. These include variations in batch duration, missing chunks of data, and equipment malfunctions. The actual time series can be a combination of these irregularities, including varying batch durations and the presence or absence of missing data and equipment malfunctions in different proportions. To further improve the code, we can merge the three versions of the `generate_current_data` function into a single method and incorporate it into a dedicated class. The `generate_truncated_normal_vector` function could then become an internal method of this class, and additional methods could be added as needed. Of course, the test coverage can be improved to cover all the irregularity cases discussed above.
+In this blog post, we examined the three most common irregularities in real-world sensor data for chemical manufacturing batches. These include variations in batch duration, missing chunks of data, and equipment malfunctions. The actual time series can be a combination of these irregularities, including varying batch durations and the presence or absence of missing data and equipment malfunctions in different proportions. To further improve the code, we can:
+- merge the three versions of the `generate_current_data` function into a single method;
+- build a dedicated class;
+- add variability to the time window between the batches;
+- turn the `generate_truncated_normal_vector` function into internal method of the class;
+- add additional methods as needed;
+- improve test coverage to cover all the irregularity cases discussed above.
 
 Copyright © 2022 Zheniya Mogilevski
