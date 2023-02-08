@@ -270,7 +270,7 @@ def generate_current_data(
         lower_bound: float,
         upper_bound: float,
         irregularity_rate: float,
-        irregularity_length
+        irregularity_length: int
     ) -> pd.DataFrame:
     """Generate electricity current data for a given number of batches.
 
@@ -385,7 +385,7 @@ def generate_current_data(
         lower_bound: float,
         upper_bound: float,
         irregularity_rate: float,
-        irregularity_length
+        irregularity_length: int
     ) -> pd.DataFrame:
     """Generate electricity current data for a given number of batches.
 
@@ -395,7 +395,7 @@ def generate_current_data(
     :param lower_bound: lower threshold value for the current data
     :param upper_bound: range for the current data values
     :param irregularity_rate: rate of data omissions (between 0 and 1)
-    :param irregularity_length: the length of the time priod to omit data for, in minutes
+    :param irregularity_length: the length of the time period to omit data for, in minutes
 
     :return: a time series dataframe, where values represent the current value
     """
@@ -466,7 +466,7 @@ def generate_current_data(
         lower_bound: float,
         upper_bound: float,
         irregularity_rate: float,
-        irregularity_length
+        irregularity_length: int
     ) -> pd.DataFrame:
     """Generate electricity current data for a given number of batches.
 
@@ -476,7 +476,7 @@ def generate_current_data(
     :param lower_bound: lower threshold value for the current data
     :param upper_bound: range for the current data values
     :param irregularity_rate: rate of data omissions (between 0 and 1)
-    :param irregularity_length: the length of the time priod to omit data for in minutes
+    :param irregularity_length: the length of the time period to omit data for in minutes
 
     :return: a time series dataframe, where values represent the current value
     """
