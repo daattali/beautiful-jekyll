@@ -6,7 +6,7 @@ tags: [generated data, sensor data, time series, software development, oop]
 comments: true
 ---
 
-In this blog, we will explore how to move away from procedure-based code and increase code usability by following object-oriented programming principles. To this end, we will refactor the code from one of our previous blog posts, namely [Generating Realistic Testing Data for Manufacturing Analytics Software](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/). By streamlining our code and incorporating OPP techniques, we aim to make the data generation process mentioned there more efficient, scalable, and easy to maintain for future development. Let's dive into the details and see how we can achieve this goal.
+In this blog post, we will explore how to move away from procedure-based code and increase code usability by following object-oriented programming principles. To this end, we will refactor the code from one of our previous blog posts, namely [Generating Realistic Testing Data for Manufacturing Analytics Software](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/). By streamlining our code and incorporating OPP techniques, we aim to make the data generation process mentioned there more efficient, scalable, and easy to maintain for future development. Let's dive into the details and see how we can achieve this goal.
 
 
 Our class will be called `FlowSensorDataGenerator`. Its goal is to generate realistic minute-wise demo data for a sensor such as electrical current sensors or flow meters in a batch manufacturing process. The data generation will consist of three steps:
@@ -23,7 +23,7 @@ The class will have several methods that generate different chunks of the overal
 
 The `current_time` variable is defined as part of the `__init__` method and is modified by each of the methods to combine the chunks of data into the final time series. The generated time series will be stored in the `generated_time_series` variable. We will add a visualization function as a class method as well.
 
-Let's see the implementation:
+Let's take a look at the implementation:
 
 ```python
 class FlowSensorDataGenerator:
@@ -94,7 +94,9 @@ class FlowSensorDataGenerator:
             while j < duration:
                 if random.random() > irregularity_rate:
                     current_data.append((
-                        self.current_time, random.uniform(self.lower_bound, self.upper_bound)
+                        self.current_time, random.uniform(
+                            self.lower_bound, self.upper_bound
+                        )
                     ))
                     self.current_time += timedelta(minutes=1)
                     j += 1
@@ -225,9 +227,12 @@ Note, that in the `generate_data` function, we utilize the `regular` patern twic
 As mentioned before, to initialize our data generator, we need to define the lower and the uppre limit of the values, average batch duration, average time window between batches, and the start time:
 
 ```python
-dg = FlowSensorDataGenerator(10, 11, 120, 30, datetime.strptime(datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M'))
+dg = FlowSensorDataGenerator(
+    10, 11, 120, 30,
+    datetime.strptime(datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M')
+)
 ```
-Let's generate the data and visualize it:
+Let's generate the data and visualize it<sup>1</sup>:
 
 ```python
 dg.generate_data(pattern)
@@ -247,5 +252,7 @@ dg.visualize_data()
 ## Conclusion
 
 The class introduced in this blog post, provides a convenient and flexible way to generate realistic demo data for the development of manufacturing analytics software for batch production. The generated time series simulate the complexities and irregularities of real-world data and can be fed into machine learning models and statistical analysis. The implementation of OOP principles, such as encapsulating methods into the class, makes the code more readable and reusable, while the class objects can be tailored to suit the specific needs of different manufacturing processes.
+
+<sup>1</sup> The generated vectors from this case study can be found [here](/assets/data/2022-08-06-generated-data.csv).
 
 Copyright © 2022 Zheniya Mogilevski
