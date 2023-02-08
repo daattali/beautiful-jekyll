@@ -235,4 +235,4 @@ df = pd.DataFrame([random_values_v1,random_values_v2], ['clip', 'trunc']).T
 df.to_csv('2022-11-12-vectors.csv', index=False)
 ```
 
-Copyright © 2021 Zheniya Mogilevski
+Copyright © 2022 Zheniya Mogilevski
