@@ -58,4 +58,4 @@ jobs:
 ```
 Note: `YOUR_PYPI_API_TOKEN_FOR_YOUR_PROJECT` should be replaced with the actual expression used to access a secret stored in GitHub Actions.
 
-Copyright © 2021 Zheniya Mogilevski
+Copyright © 2022 Zheniya Mogilevski
