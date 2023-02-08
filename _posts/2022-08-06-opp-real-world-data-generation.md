@@ -27,13 +27,21 @@ Let's see the implementation:
 
 ```python
 class FlowSensorDataGenerator:
-    """A class which generates batch-level minute-wise demo data for a sensor of a flow type,
-    e.g. electrical current sensor or flow meter.
+    """A class which generates batch-level minute-wise demo data for a sensor of a flow
+    type, e.g. electrical current sensor or flow meter.
     
-    The class takes in basic parameters: the lower and the upper limits of the flow / current,
-    average duration of batches and average time window between the batches, as well as time series start time."""
+    The class takes in basic parameters: the lower and the upper limits of the flow / 
+    current, average duration of batches and average time window between the batches,
+    as well as time series start time."""
     
-    def __init__(self, lower_bound: float, upper_bound: float, mean_duration: int, mean_window_size: int, start_time: datetime):
+    def __init__(
+        self,
+        lower_bound: float,
+        upper_bound: float,
+        mean_duration: int,
+        mean_window_size: int,
+        start_time: datetime
+    ):
         """
         :param mean_duration: average duration of each batch in minutes
         :param mean_duration: average time period between batches
@@ -57,13 +65,13 @@ class FlowSensorDataGenerator:
         mean_irregularity_length: int = 0,
         irregularity_type: str = None,
     ) -> pd.DataFrame:
-        """Generates data for a given number of batches, with pre-defined rate of irregularity occurrence,
-        its type and average length.
+        """Generates data for a given number of batches, with pre-defined rate of
+        irregularity occurrence, its type and average length.
 
         :param num_batches: number of batches to generate data for
-        :param irregularity_rate: rate of irregularity occurrence (between 0 and 1), defaults to zero
-        :param mean_irregularity_length: average time period of irregularity, in minutes, defaults to zero
-        :param irregularity_type: one of the two types, 'omission' or 'malfunction', defaults to None
+        :param irregularity_rate: rate of irregularity occurrence (between 0 and 1)
+        :param mean_irregularity_length: average time period of irregularity, in minutes
+        :param irregularity_type: one of the two types, 'omission' or 'malfunction'
 
         :return: a time series dataframe, where values represent the current value
         """
@@ -73,8 +81,16 @@ class FlowSensorDataGenerator:
         i = 0
         j = 0
         while i < num_batches:
-            duration = int(self.mean_duration*self.__generate_truncated_normal_vector(1, 0.1, 1, 0, 2)[0])
-            window_size = int(self.mean_window_size*self.__generate_truncated_normal_vector(1, 0.1, 1, 0, 3)[0])
+            duration = int(
+                self.mean_duration*self.__generate_truncated_normal_vector(
+                    1, 0.1, 1, 0, 2
+                )[0]
+            )
+            window_size = int(
+                self.mean_window_size*self.__generate_truncated_normal_vector(
+                    1, 0.1, 1, 0, 3
+                )[0]
+            )
             while j < duration:
                 if random.random() > irregularity_rate:
                     current_data.append((
@@ -84,15 +100,23 @@ class FlowSensorDataGenerator:
                     j += 1
                 else:
                     irregularity_length = int(
-                        mean_irregularity_length*self.__generate_truncated_normal_vector(1, 0.4, 1, 0, 2)[0]
+                        mean_irregularity_length*self.__generate_truncated_normal_vector(
+                            1, 0.4, 1, 0, 2
+                        )[0]
                     )
                     for m in range(irregularity_length):
-                        irreg_coef = self.__generate_truncated_normal_vector(1, 0.9, 1, 0, 100)[0]
+                        irreg_coef = self.__generate_truncated_normal_vector(
+                            1, 0.9, 1, 0, 100
+                        )[0]
                         if irregularity_type == 'malfunction':
-                            value = random.uniform(self.lower_bound, self.upper_bound)*irreg_coef
+                            value = random.uniform(
+                                self.lower_bound, self.upper_bound
+                            )*irreg_coef
                         elif irregularity_type == 'omission':
                             value = np.NaN
-                        current_data.append((self.current_time + timedelta(minutes=m), value))  
+                        current_data.append((
+                            self.current_time + timedelta(minutes=m), value
+                        ))  
                     self.current_time += timedelta(minutes=irregularity_length)
                     j += irregularity_length
             if j < duration + window_size:
@@ -119,7 +143,9 @@ class FlowSensorDataGenerator:
             self.current_time += timedelta(minutes=1)
             j += 1
         current_data = pd.DataFrame(current_data)
-        current_data = current_data.rename(columns = {0: 'time', 1: 'current'}).set_index('time')
+        current_data = current_data.rename(
+            columns = {0: 'time', 1: 'current'}
+        ).set_index('time')
         return current_data
     
     def generate_data(self, pattern: dict) -> pd.DataFrame:
@@ -184,7 +210,7 @@ class FlowSensorDataGenerator:
             ).rvs(size)
 ```
 
-Now, we can chose and apply a pattern to generate a fully functional time series; we will generate regular batches in chunks of 30, as well as the batches with omissions; to simulate equipment malfunctioning we will generate a short sequence of batches, e.g. of three, then we can add a chunk of zeroes to imitate equipment going off:
+Now, we can chose and apply a pattern to generate a fully functional time series; we will generate regular batches, as well as the batches with omissions, in chunks of 30; to simulate equipment malfunctioning we will generate a short sequence of batches, e.g. of three, then we can add a chunk of zeroes to imitate equipment going off:
 
 ```python
 pattern = {
@@ -194,6 +220,7 @@ pattern = {
     'off': (600)
 }
 ```
+Note, that in the `generate_data` function, we utilize the `regular` patern twice, before and after generating the `omission` chunk.
 
 As mentioned before, to initialize our data generator, we need to define the lower and the uppre limit of the values, average batch duration, average time window between batches, and the start time:
 
