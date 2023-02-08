@@ -97,7 +97,7 @@ def generate_current_data(
 
     :param num_batches: number of batches to generate data for
     :param duration: duration of each batch in minutes
-    :param window_size: size of the window used to represent the time period between batches
+    :param window_size: time period between batches
     :param lower_bound: lower threshold value for the current data
     :param upper_bound: range for the current data values
 
@@ -218,7 +218,7 @@ def generate_current_data(
 
     :param num_batches: number of batches to generate data for
     :param duration: duration of each batch in minutes
-    :param window_size: size of the window used to represent the time period between batches
+    :param window_size: time period between batches
     :param lower_bound: lower threshold value for the current data
     :param upper_bound: range for the current data values
     :param irregularity_rate: rate of data omissions (between 0 and 1)
@@ -274,7 +274,7 @@ def generate_current_data(
 
     :param num_batches: number of batches to generate data for
     :param duration: duration of each batch in minutes
-    :param window_size: size of the window used to represent the time period between batches
+    :param window_size: time period between batches
     :param lower_bound: lower threshold value for the current data
     :param upper_bound: range for the current data values
     :param irregularity_rate: rate of data omissions (between 0 and 1)
@@ -387,7 +387,7 @@ def generate_current_data(
 
     :param num_batches: number of batches to generate data for
     :param mean_duration: average duration of batches in minutes
-    :param window_size: size of the window used to represent the time period between batches
+    :param window_size: time period between batches
     :param lower_bound: lower threshold value for the current data
     :param upper_bound: range for the current data values
     :param irregularity_rate: rate of data omissions (between 0 and 1)
@@ -466,7 +466,7 @@ def generate_current_data(
 
     :param num_batches: number of batches to generate data for
     :param duration: duration of each batch in minutes
-    :param window_size: size of the window used to represent the time period between batches
+    :param window_size: time period between batches
     :param lower_bound: lower threshold value for the current data
     :param upper_bound: range for the current data values
     :param irregularity_rate: rate of data omissions (between 0 and 1)
@@ -490,10 +490,10 @@ def generate_current_data(
                 j += 1
             else:
                 for m in range(irregularity_length):
-                    irregularity_coef = generate_truncated_normal_vector(1, 0.9, 1, 0, 100)[0]
+                    irreg_coef = generate_truncated_normal_vector(1, 0.9, 1, 0, 100)[0]
                     current_data.append((
                         current_time + timedelta(minutes=m),
-                        random.uniform(lower_bound, upper_bound)*irregularity_coef
+                        random.uniform(lower_bound, upper_bound)*irreg_coef
                     ))
                 current_time += timedelta(minutes=irregularity_length)
                 j += irregularity_length
