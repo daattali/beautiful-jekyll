@@ -476,7 +476,7 @@ def generate_current_data(
     :param lower_bound: lower threshold value for the current data
     :param upper_bound: range for the current data values
     :param irregularity_rate: rate of data omissions (between 0 and 1)
-    :param irregularity_length: the length of the time period to omit data for in minutes
+    :param irregularity_length: time period of irregularity, in minutes
 
     :return: a time series dataframe, where values represent the current value
     """
