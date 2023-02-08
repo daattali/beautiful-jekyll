@@ -194,7 +194,7 @@ class FlowSensorDataGenerator:
     ) -> np.array:
         """Generates a vector of random values with a truncated normal distribution.
 
-        Uses scipy.stats.truncnorm function to truncate values outside the specified bounds.
+        Uses scipy.stats.truncnorm function to fit values into the specified bounds.
 
         :param mean: the mean of the normal distribution.
         :param std_dev: the standard deviation of the normal distribution.
@@ -253,6 +253,6 @@ dg.visualize_data()
 
 The class introduced in this blog post, provides a convenient and flexible way to generate realistic demo data for the development of manufacturing analytics software for batch production. The generated time series simulate the complexities and irregularities of real-world data and can be fed into machine learning models and statistical analysis. The implementation of OOP principles, such as encapsulating methods into the class, makes the code more readable and reusable, while the class objects can be tailored to suit the specific needs of different manufacturing processes.
 
-<sup>1</sup> The generated vectors from this case study can be found [here](/assets/data/2022-08-06-generated-data.csv).
+<sup>1</sup> The generated time series from this case study can be found [here](/assets/data/2022-08-06-generated-data.csv).
 
 Copyright © 2022 Zheniya Mogilevski
