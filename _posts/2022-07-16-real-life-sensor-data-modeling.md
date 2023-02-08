@@ -226,7 +226,9 @@ def generate_current_data(
     :return: a time series dataframe, where values represent the current value
     """
     current_data = []
-    start_time = datetime(2022, 7, 16, 0, 15)
+    start_time = datetime.strptime(
+        datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M'
+    )
     for i in range(num_batches):
         for j in range(duration):
             if random.random() > irregularity_rate:
@@ -284,7 +286,9 @@ def generate_current_data(
     """
     current_data = []
     irregularity_rate /= irregularity_length
-    current_time = datetime.now()
+    current_time = datetime.strptime(
+        datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M'
+    )
     i = 0
     j = 0
     while i < num_batches:
@@ -397,7 +401,9 @@ def generate_current_data(
     """
     current_data = []
     irregularity_rate /= irregularity_length
-    current_time = datetime.now()
+    current_time = datetime.strptime(
+        datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M'
+    )
     i = 0
     j = 0
     while i < num_batches:
@@ -476,7 +482,9 @@ def generate_current_data(
     """
     current_data = []
     irregularity_rate /= irregularity_length
-    current_time = datetime.now()
+    current_time = datetime.strptime(
+        datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M'
+    )
     i = 0
     j = 0
     while i < num_batches:
