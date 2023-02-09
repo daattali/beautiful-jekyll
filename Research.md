@@ -5,8 +5,8 @@ title: ""
 
 ### Peer-reviewed Publications
 
-[4] [Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/mtw_sep_2021.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
-**_International Studies Quarterly_**, Forthcoming.
+[4] [Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/sqad007.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
+**_International Studies Quarterly_**, 2023, 67(1).
 
 [3] [Who's Afraid of Sunlight? Explaining Opposition to Transparency in Economic Development](assets/TJ_BAP_final.pdf) (with Nathan M. Jensen)<br>
   **_Business and Politics_**, 2021, 23(4): 471-494.
