@@ -161,7 +161,15 @@ setAccessible() 暴力访问
 cow-copy on write：当有数据写入时才复制一份，用于节约内存空间，加快访问速度。  
 原理：在子进程读取数据时使用指针指向父进程数据，当任何一方写入时才真正复制一份数据做写入操作（如redis是fork出一个子进程来拷贝数据到磁盘，linux的文件系统在修改时会先拷贝一份出来，写完后再覆盖原文件）。
 
+### Thread
 
+#### 实现方法
+1. 创建一个类，继承Thread，重写run方法
+2. 实现Runnable接口，重写run方法
+
+{: .box-note}  
+strat启动线程，run只是方法调用。
+{: .box-note}  
 [articals](https://github.com/ZhongFuCheng3y/athena)
 
 [words](https://github.com/wurara/wurara.github.io/tree/master/assets/words)
