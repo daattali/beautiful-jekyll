@@ -11,6 +11,41 @@
 #   title: null
 #   venue: null
 #   video_embed: null
+- abs: "Physical interaction with textiles, such as assistive dressing, relies on advanced dextreous capabilities. The underlying complexity in textile behavior when being pulled and stretched, is due to both the yarn material properties and the textile construction technique. Today, there are no commonly adopted and annotated datasets on which the various interaction or property identification methods are assessed. One important property that affects the interaction is material elasticity that results from both the yarn material and construction technique: these two are intertwined and, if not known a-priori, almost impossible to identify through sensing commonly available on robotic platforms. We introduce Elastic Context (EC), a concept that integrates various properties that affect elastic behavior, to enable a more effective physical interaction with textiles. The definition of EC relies on stress/strain curves commonly used in textile engineering, which we reformulated for robotic applications. We employ EC using Graph Neural Network (GNN) to learn generalized elastic behaviors of textiles. Furthermore, we explore the effect the dimension of the EC has on accurate force modeling of non-linear real-world elastic behaviors, highlighting the challenges of current robotic setups to sense textile properties."
+  authors: Alberta Longhini, Marco Moletta, Alfredo Reichlin, Michael C. Welle, Alexander Kravberg, Yufei Wang, David Held, Zackory Erickson, Danica Kragic
+  award: null
+  bib: "@inproceedings{Longhini2023elastic,\n
+    \ title={Elastic Context: Encoding Elasticity for Data-driven Models of Textiles },\n
+    \ author={Longhini, Alberta and Moletta, Marco  and  Reichlin, Alfredo and Welle, Michael C.  and  Kravberg, Alexander and Wang, Yufei and Held, David and Erickson, Zackory  and Kragic, Danica },\n
+    \ booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
+    \ year={2023}\n
+    \ }"
+  img: ../pics/icra2023_logo.png
+  links:
+    '[arXiv]': https://arxiv.org/abs/2209.05428
+  short_id: Longhini2023elastic
+  site: https://arxiv.org/abs/2209.05428
+  title: "Elastic Context: Encoding Elasticity for Data-driven Models of Textiles"
+  venue: International Conference on Robotics and Automation (ICRA), 2023
+  video_embed: null
+- abs: "We study the problem of learning graph dynamics of deformable objects which generalize to unknown physical properties. In particular, we leverage a latent representation of elastic physical properties of cloth-like deformable objects which we explore through a pulling interaction. We propose EDO-Net (Elastic Deformable Object - Net), a model trained in a self-supervised fashion on a large variety of samples with different elastic properties. EDO-Net jointly learns an adaptation module, responsible for extracting a latent representation of the physical properties of the object and a forward-dynamics module, which leverages the latent representation to predict future states of cloth-like objects, represented as graphs. We evaluate EDO-Net both in simulation and real world, assessing its capabilities of: 1) generalizing to unknown physical properties of cloth-like deformable objects, 2) transferring the learned representation to new downstream tasks."
+  authors: Alberta Longhini, Marco Moletta*, Alfredo Reichlin, Michael C. Welle, David Held, Zackory Erickson, Danica Kragic
+  award: null
+  bib: "@inproceedings{Longhini2023EDO,\n
+    \ title={EDO-Net: Learning Elastic Properties of Deformable Objects from Graph Dynamics
+},\n
+    \ author={Longhini, Alberta and Moletta, Marco and  Reichlin, Alfredo and Welle, Michael C. and Held, David  and Erickson, Zackory  and Kragic, Danica },\n
+    \ booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
+    \ year={2023}\n
+    \ }"
+  img: ../pics/icra2023_logo.png
+  links:
+    '[arXiv]': https://arxiv.org/abs/2209.08996
+  short_id: Longhini2023EDO
+  site: https://arxiv.org/abs/2209.08996
+  title: "EDO-Net: Learning Elastic Properties of Deformable Objects from Graph Dynamics"
+  venue: International Conference on Robotics and Automation (ICRA), 2023
+  video_embed: null
 - abs: State estimation is one of the greatest challenges for cloth manipulation due to cloth's high dimensionality and self-occlusion. Prior works propose to identify the full state of crumpled clothes by training a mesh reconstruction model in simulation. However, such models are prone to suffer from a sim-to-real gap due to differences between cloth simulation and the real world. In this work, we propose a self-supervised method to finetune a mesh reconstruction model in the real world. Since the full mesh of crumpled cloth is difficult to obtain in the real world, we design a special data collection scheme and an action-conditioned model-based cloth tracking method to generate pseudo-labels for self-supervised learning. By finetuning the pretrained mesh reconstruction model on this pseudo-labeled dataset, we show that we can improve the quality of the reconstructed mesh without requiring human annotations, and improve the performance of downstream manipulation task.
   authors: Zixuan Huang, Xingyu Lin, David Held
   award: null
