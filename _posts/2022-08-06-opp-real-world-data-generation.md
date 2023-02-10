@@ -155,7 +155,10 @@ class FlowSensorDataGenerator:
         and 'irregular' data chunks"""
         df = pd.DataFrame()
         for item in data_sequence:
-            df = pd.concat([df, self.__generate_partial_data(*data_map[item])])        
+            if item != 'off':
+                df = pd.concat([df, self.__generate_partial_data(*data_map[item])])
+            else:
+                df = pd.concat([df, self.__generate_zero_data(*data_map[item])])
         self.generated_time_series = df.copy()
         
     def visualize_data(self):
@@ -213,12 +216,11 @@ Now, we can chose and apply a pattern to generate a fully functional time series
 
 ```python
 data_map = {
-    'regular': (30, 0, 0),
+    'regular': (30,),
     'omission': (30, 0.1, 200, 'omission'),
     'malfunction': (3, 0.3, 20, 'malfunction'),
-    'off': (600)
+    'off': (600,)
 }
-
 data_sequence = ['regular', 'omission', 'regular', 'malfunction', 'off']
 ```
 Note, that in the `generate_data` function, we utilize the `regular` patern twice, before and after generating the `omission` chunk.
