@@ -23,7 +23,7 @@ The class will have several methods that generate different chunks of the overal
 
 The `current_time` variable is defined as part of the `__init__` method and is modified by each of the methods to combine the chunks of data into the final time series. The generated time series will be stored in the `generated_time_series` variable. We will add a visualization function as a class method as well.
 
-Let's take a look at the implementation<sup>1</sup>:
+Let's take a look at the following implementation<sup>1</sup>:
 
 ```python
 class FlowSensorDataGenerator:
@@ -150,15 +150,12 @@ class FlowSensorDataGenerator:
         ).set_index('time')
         return current_data
     
-    def generate_data(self, pattern: dict) -> pd.DataFrame:
-        """Generates a fully functional time series based on the pre-defined pattern"""
+    def generate_data(self, data_map: dict, data_sequence: list[str]) -> pd.DataFrame:
+        """Generates a fully functional time series based on the pre-defined sequence of 'regular'
+        and 'irregular' data chunks"""
         df = pd.DataFrame()
-        df = pd.concat([df, self.__generate_partial_data(*pattern['regular'])])
-        df = pd.concat([df, self.__generate_partial_data(*pattern['omission'])])
-        df = pd.concat([df, self.__generate_partial_data(*pattern['regular'])])
-        df = pd.concat([df, self.__generate_partial_data(*pattern['malfunction'])])
-        df = pd.concat([df, self.__generate_zero_data(pattern['off'])])
-        
+        for item in data_sequence:
+            df = pd.concat([df, self.__generate_partial_data(*data_map[item])])        
         self.generated_time_series = df.copy()
         
     def visualize_data(self):
@@ -215,12 +212,14 @@ class FlowSensorDataGenerator:
 Now, we can chose and apply a pattern to generate a fully functional time series; we will generate regular batches, as well as the batches with omissions, in chunks of 30; to simulate equipment malfunctioning we will generate a short sequence of batches, e.g. of three, then we can add a chunk of zeroes to imitate equipment going off:
 
 ```python
-pattern = {
+data_map = {
     'regular': (30, 0, 0),
     'omission': (30, 0.1, 200, 'omission'),
     'malfunction': (3, 0.3, 20, 'malfunction'),
     'off': (600)
 }
+
+data_sequence = ['regular', 'omission', 'regular', 'malfunction', 'off']
 ```
 Note, that in the `generate_data` function, we utilize the `regular` patern twice, before and after generating the `omission` chunk.
 
@@ -235,7 +234,7 @@ dg = FlowSensorDataGenerator(
 Let's generate the data and visualize it<sup>2</sup>:
 
 ```python
-dg.generate_data(pattern)
+dg.generate_data(data_map, data_sequence)
 dg.visualize_data()
 ```
 
