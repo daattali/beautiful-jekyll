@@ -103,12 +103,18 @@ class FlowSensorDataGenerator:
                 else:
                     irregularity_length = int(
                         mean_irregularity_length*self.__generate_truncated_normal_vector(
-                            1, 0.4, 1, 0, 2
+                            1, 0.5, 1, 0, 2
                         )[0]
                     )
+                    if irregularity_type == 'malfunction':
+                        duration = duration + int(
+                            irregularity_length*self.__generate_truncated_normal_vector(
+                            1, 0.5, 1, 0, 2
+                            )[0]
+                        )
                     for m in range(irregularity_length):
                         irreg_coef = self.__generate_truncated_normal_vector(
-                            1, 0.9, 1, 0, 100
+                            1, 1, 1, 0, 100
                         )[0]
                         if irregularity_type == 'malfunction':
                             value = random.uniform(
