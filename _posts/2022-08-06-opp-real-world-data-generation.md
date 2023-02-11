@@ -12,18 +12,18 @@ In this blog post, we will explore how to move away from procedure-based code an
 Our class will be called `FlowSensorDataGenerator`. Its goal is to generate realistic minute-wise demo data for a sensor such as electrical current sensors or flow meters in a batch manufacturing process. The data generation will consist of three steps:
 1. Initializing a class object by providing basic parameters such as the lower and upper limits of the flow/current, the average duration of batches, the average time window between batches, and the start time of the time series.
 2. Defining a mapping of parameters for four data generating patterns: regular, with omissions, with malfunctions, and zero time series.
-3. Generating a combined time series.
+3. Generating a combined time series by means of pre-defined sequence of the four types of data generating patterns.
 
 The class will have several methods that generate different chunks of the overall time series, including:
 
-- An internal method, `__generate_partial_data`, for generating regular data, data with omissions, or with malfunctions, based on a given number of batches and a pre-defined rate of irregularity occurrence, irregularity type, and its average length.
+- An internal method, `__generate_partial_data`, for generating regular data, data with omissions, or with malfunctions, based on a given number of batches and a pre-defined rate of irregularity occurrence, irregularity type, and its average length<sup>1</sup>.
 - An internal method, `__generate_zero_data`, for generating a zero time series to simulate the chunks of data when the equipment is off.
 - The main method, `generate_data`, which takes a pre-defined mapping to combine different chunks of data from these four types mentioned above.
 - A static internal method, `__generate_truncated_normal_vector`, which is used to add variability to the main process paramaters, such as batch duration.
 
 The `current_time` variable is defined as part of the `__init__` method and is modified by each of the methods to combine the chunks of data into the final time series. The generated time series will be stored in the `generated_time_series` variable. We will add a visualization function as a class method as well.
 
-Let's take a look at the following implementation<sup>1</sup>:
+Let's take a look at the following implementation<sup>2</sup>:
 
 ```python
 class FlowSensorDataGenerator:
@@ -233,7 +233,7 @@ dg = FlowSensorDataGenerator(
     datetime.strptime(datetime.now().isoformat(timespec='minutes'), '%Y-%m-%dT%H:%M')
 )
 ```
-Let's generate the data and visualize it<sup>2</sup>:
+Let's generate the data and visualize it<sup>3</sup>:
 
 ```python
 dg.generate_data(data_map, data_sequence)
@@ -254,8 +254,10 @@ dg.visualize_data()
 
 The class introduced in this blog post, provides a convenient and flexible way to generate realistic demo data for the development of manufacturing analytics software for batch production. The generated time series simulate the complexities and irregularities of real-world data and can be fed into machine learning models and statistical analysis. The implementation of OOP principles, such as encapsulating methods into the class, makes the code more readable and reusable, while the class objects can be tailored to suit the specific needs of different manufacturing processes.
 
-<sup>1</sup> We highly recommend getting acquainted with the content of the [initial blog post](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/) before proceeding with the code.
+<sup>1</sup> In case of equipment malfunction synthesis, the batch duration is updated as a function of the occured irregularity length.
 
-<sup>2</sup> The generated time series from this case study can be found [here](/assets/data/2022-08-06-generated-data.csv).
+<sup>2</sup> We highly recommend getting acquainted with the content of the [initial blog post](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/) before proceeding with the code.
+
+<sup>3</sup> The generated time series from this case study can be found [here](/assets/data/2022-08-06-generated-data.csv).
 
 Copyright © 2022 Zheniya Mogilevski
