@@ -114,7 +114,9 @@ class FlowSensorDataGenerator:
                         )
                     for m in range(irregularity_length):
                         if irregularity_type == 'malfunction':
-                            irreg_coef = self.__generate_truncated_normal_vector(1, 1, 1, 0.0, 100)[0]
+                            irreg_coef = self.__generate_truncated_normal_vector(
+                                1, 1, 1, 0.0, 100
+                            )[0]
                             value = random.uniform(self.lower_bound, self.upper_bound)
                             value = 0 if irreg_coef < 0.1 else value*irreg_coef
                         elif irregularity_type == 'omission':
@@ -154,8 +156,8 @@ class FlowSensorDataGenerator:
         return current_data
     
     def generate_data(self, data_map: dict, data_sequence: list[str]) -> pd.DataFrame:
-        """Generates a fully functional time series based on the pre-defined sequence of 'regular'
-        and 'irregular' data chunks"""
+        """Generates a fully functional time series based on the pre-defined sequence
+        of 'regular' and 'irregular' data chunks"""
         df = pd.DataFrame()
         for item in data_sequence:
             if item != 'off':
