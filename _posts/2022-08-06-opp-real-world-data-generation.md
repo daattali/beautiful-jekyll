@@ -113,13 +113,10 @@ class FlowSensorDataGenerator:
                             )[0]
                         )
                     for m in range(irregularity_length):
-                        irreg_coef = self.__generate_truncated_normal_vector(
-                            1, 1, 1, 0, 100
-                        )[0]
                         if irregularity_type == 'malfunction':
-                            value = random.uniform(
-                                self.lower_bound, self.upper_bound
-                            )*irreg_coef
+                            irreg_coef = self.__generate_truncated_normal_vector(1, 1, 1, 0.0, 100)[0]
+                            value = random.uniform(self.lower_bound, self.upper_bound)
+                            value = 0 if irreg_coef < 0.1 else value*irreg_coef
                         elif irregularity_type == 'omission':
                             value = np.NaN
                         current_data.append((
