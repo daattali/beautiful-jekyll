@@ -5,7 +5,6 @@ subtitle: Come see our dealers at FurSquared!
 css:
     - /assets/css/theme-2022/dealers.css
 ---
-
 ## 2023 Dealer’s Den/Night Market - Important Dates
 
 | Date | Milestone |
@@ -18,8 +17,14 @@ css:
 
 &nbsp;
 
-# Dealer’s Den and Night Market Applications are now closed.
+## Dealer's Den and Night Market Emails Have Been Sent!
 
-Please keep an eye on your email and don’t forget to check your spam folder. As indicated above, Notification Emails will be sent February 12, 2023 and you then have until February 26 to pay for your table. Unpaid/abandoned spaces will be released to the Waitlist on February 27, 2023.
+At this time, we have completed accepting Dealer applications. Please keep an eye on the email you provided in your application, including your SPAM folder.
 
-[![GotherineFoxx illustration by GotherineFoxx](/assets/img/theme-2023/gotherine.png){: .img-left}](/assets/img/theme-2023/gotherine.png)
+As indicated above, Dealer Notifications are sent out on February 12, 2023 and you will have two weeks to complete your registration and payment so that you can sell at Fur Squared.
+
+As of February 27, 2022 any dealers that have not completed their registration/payment will be passed over for wait-listed applicants. IF YOU ARE HAVING ANY ISSUES please email [dealers@fursquared.com](mailto:dealers@fursquared.com) so we may assist.We hope everyone will enjoy Fur Squared 2022!!
+
+Allikuja (they/them) & GotherineFoxx (they/them)
+
+Co-Heads of Dealer’s Den
