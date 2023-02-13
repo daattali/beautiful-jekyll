@@ -15,6 +15,8 @@ css:
 | Feb. 12 - Feb. 26 | Table Payment Window |
 | February 27, 2023 | Unpaid/Abandoned spaces released to Waiting List |
 
+&nbsp;
+
 ## Dealer's Den and Night Market Emails Have Been Sent!
 
 At this time, we have completed accepting Dealer applications. Please keep an eye on the email you provided in your application, including your SPAM folder.
