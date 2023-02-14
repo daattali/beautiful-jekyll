@@ -118,7 +118,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "solidity,blockchain,numerai,ai,machine learning, music, electronic music, ableton live, maxmsp, logicpro, protools, javascript, typescript, hardhat,smart contracts"
+keywords: "solidity,blockchain,numerai,ai,machine learning, music, electronic music, ableton live, maxmsp, logicpro, protools, javascript, typescript, hardhat, francesco bruno, smart contracts"
 
 ######################################
 # --- Colours / background image --- #
@@ -126,8 +126,8 @@ keywords: "solidity,blockchain,numerai,ai,machine learning, music, electronic mu
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#ffffff"
-navbar-text-col: "#404040"
+navbar-col: "#000000"
+navbar-text-col: "#ffffff"
 navbar-border-col: "#DDDDDD"
 page-col: "#e0f6ff"
 text-col: "#404040"
