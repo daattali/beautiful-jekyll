@@ -3,60 +3,53 @@ layout: page
 title: Dev 
 subtitle: A lot of lines...
 ---
+## ✔️ Web3 Portfolio
 
-## 📑 Smart Contracts 
+- ### [Buiidl Portfolio](https://buidlguidl.com/builders/0xb542E27732a390f509fD1FF6844a8386fe320f7f)
 
----
+## ✔️ Open Source Projects
 
-| Language    | Env     | Library      |
-| ----------- | ------- | ------------ |
-| Solidity <br><br> TypeScript <br><br> Js | Hardhat <br><br> Nodejs <br><br> Linux |  OpenZeppelin <br><br> Web3js <br><br> Ethers|
+> Production 🚀
 
----
+- ### [Lines](https://linesapp.vercel.app/) - web3 app to share your thoughts in a decentralized and censorship resistant way
 
+- ### [Universe](https://universeapp.vercel.app/) - collections of tools to optimize your yield farming strategies
 
-### ✔️ Open Source
+>Development 🛠️
 
-- [Buiidl Portfolio](https://buidlguidl.com/builders/0xb542E27732a390f509fD1FF6844a8386fe320f7f)
+- ### [Dharma Initiative](https://dharmainitiative.surge.sh/) - (Protocol based on a collection of useful tools for the web3 ecosystem)
 
-### On Goerli Testnet
-- [Dharma Initiative](https://dharmainitiative.surge.sh/)
-- [Dharma Collection](https://dharmacollection.vercel.app/)
-- [Dharma Dao](https://dharmadao.surge.sh/)
-- [rToken Protocol](https://rtoken.surge.sh/)
-- [rToken Protocol Explorer](https://rtokenscan.surge.sh/)
-- [Formulae](https://formulae.surge.sh/)
-- [Dharmandala](https://dharmandala.surge.sh/)
+- ### [Dharma Dao](https://dharmadao.surge.sh/) - (DAO creation protocol)
 
-### On Polygon Mainnet
-- [MultiFarm Optimizer](https://universeapp.vercel.app/)
+- ### [rToken Protocol](https://rtoken.surge.sh/) - (Protocol to earn interest from wrappped tokens)
 
----
+- ### [rToken Protocol Explorer](https://rtokenscan.surge.sh/) - (rToken Protocol Explorer)
 
-### ✔️ Nali Project
+## ✔️ Web3 Projects
 
+Production
 
-- [Altair Funds](https://app.nali.finance/altair-funds)
+- ### [Altair](https://app.nali.finance/altair-funds) - altair is a decentralized fund manager that allows you to crate and manage your own funds with a few clicks
 
----
+## ✔️ NFTs
 
-### ✔️ Fulmens 
+Development
 
-- [Web3 & Blockchain Consultant](https://fulmensrls.it)
+- ### [Formulae](https://formulae.surge.sh/) - (NFTs collectable game)
 
----
+- ### [Dharmandala](https://dharmandala.surge.sh/) - (on Chain generated NFTs)
 
-## 🤖 AI/ML 
+- ### [Dharma Collection](https://dharmacollection.vercel.app/) - (simple music NFT marketplace)
+
+## ✔️ Consulting
+
+- ### [Fulmen](https://fulmensrls.it)
 
 ---
 
-| Language  | Env                        | Library    |
-| ----------| -----------                | ---------- |
-| Python    | Goole Colab <br><br> Conda | Sklearn <br><br> Tensorflow <br><br> keras |
+## ✔️ **AI/ML**
 
----
-
-### 📈 Training ML models on [Numerai](https://numer.ai)
+### My models on [Numerai](https://numer.ai) - (Partecipating to the numerai tournament since 2020-09-07)
 
 - [Model 1](https://numer.ai/scobruone)
 - [Model 2](https://numer.ai/scobrutwo)
@@ -69,14 +62,18 @@ subtitle: A lot of lines...
 - [Model 9](https://numer.ai/scobrunine)
 - [Model 10](https://numer.ai/scobruten)
 
-
----
-
-### 💲 Buy Models on Numerbay
-
+<!-- ## 💲 Buy Models on Numerbay
 
 - [Buy model 5](https://numerbay.ai/product/numerai-predictions/scobrufive)
-- [Buy model 2](https://numerbay.ai/product/numerai-predictions/scobrutwo)
+- [Buy model 2](https://numerbay.ai/product/numerai-predictions/scobrutwo) -->
 
-***
+## ✔️ Skills
 
+**Language**
+: solidity, javascript, python, typescript, bash, html, css.
+
+**Framework**
+: react, nextjs, nodejs, express, hardhat, truffle, web3js, ethersjs,tailwindcss, antd, daisiUI,
+
+**Tools**
+: git, github, gitlab, vscode, vim, docker, docker-compose, linux, macos, windows, netlify, vercel, surge, npm, yarn, pip, pipenv, pipx, np, colab notebook, jupyter notebook, google colab.
