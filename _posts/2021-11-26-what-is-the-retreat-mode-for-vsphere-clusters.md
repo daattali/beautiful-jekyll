@@ -33,7 +33,7 @@ However, you may still need to evict these VMs manually for a span of time, in w
 
     | Name                                       | Value  |
     | ------------------------------------------ | ------ |
-    | config.vcls.clusters.domain-c16011.enabled | True   |
+    | config.vcls.clusters.domain-c16011.enabled | False  |
 
 ![](/img/retreatmode3.png)
 
