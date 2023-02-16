@@ -23,6 +23,8 @@ layout: page
 
 ## Working papers and reports
 
+**Dimanchev, E.**, et al. 2022. [Accelerating Electric Vehicle Charging Investments: A Real Options Approach to Policy Design](https://ceepr.mit.edu/workingpaper/accelerating-electric-vehicle-charging-investments-a-real-options-approach-to-policy-design/). MIT CEEPR Working Paper 2023-03.
+
 Martin, J., **E. Dimanchev**, and A. Neumann. 2022. [Carbon Abatement Costs for Hydrogen Fuels in Hard-to-Abate Transport Sectors and Potential Climate Policy Mixes](https://ceepr.mit.edu/workingpaper/carbon-abatement-costs-for-hydrogen-fuels-in-hard-to-abate-transport-sectors-and-potential-climate-policy-mixes/). MIT CEEPR Working Paper 2022-017.
 
 **Dimanchev, E.**, and C. R. Knittel. 2020. [Trade-offs in Climate Policy: Combining Low- Carbon Standards with Modest Carbon Pricing](https://ceepr.mit.edu/workingpaper/trade-offs-in-climate-policy-combining-low-carbon-standards-with-modest-carbon-pricing/). MIT CEEPR Working Paper 2020-020. (Related: short [Research Brief](https://ceepr.mit.edu/wp-content/uploads/2021/09/2020-020-Brief.pdf)).
