@@ -21,7 +21,7 @@ layout: page
   * [Report](https://globalchange.mit.edu/publication/17278) including Ohio case study
   * Code and data [link](https://doi.org/10.5281/zenodo.3605637)
 
-## Working papers and reports
+## Working papers and reports 
 
 **Dimanchev, E.**, et al. 2023. [Accelerating Electric Vehicle Charging Investments: A Real Options Approach to Policy Design](https://ceepr.mit.edu/workingpaper/accelerating-electric-vehicle-charging-investments-a-real-options-approach-to-policy-design/). MIT CEEPR Working Paper 2023-03.
 
