@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Kubernetes Engine (GKE) Workload Identity
-subtitle: In this blog I provide an overview of how to securely access Google Cloud resources from your containerised workloads running on Google Kubernetes Engine (GKE) with Workload Identity, why this approach is the recommended method, how to configure Workload Identity with both gcloud and Terraform commands and call out some of the risks associated with the alternate methods accessing Google Cloud resources.
+subtitle: In this blog I provide an overview of how to securely access Google Cloud resources from your containerised workloads running on Google Kubernetes Engine (GKE) with Workload Identity, why this approach is the recommended method, how to configure Workload Identity with both gcloud commands and Terraform code, and call out some of the risks associated with the alternate methods accessing Google Cloud resources.
 #cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/common/gke-icon.png
 readtime: true
@@ -148,13 +148,13 @@ Replace the following:
 - CLUSTER_NAME: the name of your cluster that has Workload Identity enabled.
 - COMPUTE_REGION: the Compute Engine region of your cluster.
 
-2. Create a namespace to use for the Kubernetes service account. You can also use the default namespace or any existing namespace.
+1. Create a namespace to use for the Kubernetes service account. You can also use the default namespace or any existing namespace.
 
 ```
 kubectl create namespace NAMESPACE
 ```
 
-3. Create a Kubernetes service account for your application to use. You can also use the default Kubernetes service account in the default or any existing namespace.
+1. Create a Kubernetes service account for your application to use. You can also use the default Kubernetes service account in the default or any existing namespace.
 
 ```
 kubectl create serviceaccount KSA_NAME \
