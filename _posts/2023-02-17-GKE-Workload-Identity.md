@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Google Kubernetes Engine (GKE) Workload Identity
-subtitle: In this blog I provide an overview of why Google Kubernetes Engine (GKE) Workload Identity is the recommended method for accessing Google Cloud resources from a GKE cluster, how to configure Workload Identity with both gcloud and Terraform, and call out some of the risks associated with alternate methods accessing Google Cloud resources.
+subtitle: In this blog I provide an overview of how to securely access Google Cloud resources from your containerised workloads running on Google Kubernetes Engine (GKE) with Workload Identity, why this approach is the recommended method, how to configure Workload Identity with both gcloud and Terraform commands and call out some of the risks associated with the alternate methods accessing Google Cloud resources.
 #cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/common/gke-icon.png
 readtime: true
 share-title: Google Kubernetes Engine (GKE) Workload Identity
 share-description: Learn about Google Kubernetes Engine (GKE) Workload Identity and how to secure access to Google Cloud resources from your containerised workloads, how to configure Workload Identity with gcloud and Terraform commands, and the risks associated with alternate methods of accessing Google Cloud resources from GKE.
 share-img: /assets/img/common/gke-icon.png
-tags: [GKE, Workload Identity, containers, security, best practices, kubernetes, google kubernetes engine]
+tags: [GKE, Workload Identity, containers, security, best practices, Kubernetes, Google Kubernetes Engine]
 ---
 
 * toc
@@ -18,7 +18,7 @@ tags: [GKE, Workload Identity, containers, security, best practices, kubernetes,
 
 Application workloads running on Google Kubernetes Engine frequently need to access Google Cloud resources and API’s. For this to work, the workload needs to authenticate with Google Cloud’s IAM service to verify they are authorised to access the desired resource.
 
-There are several ways this can be achieved, however the recommended approach is via Workload Identity. Before going into detail on Workload Identity, I would like to highlight some of the risks associated with accessing these resources without using Workload Identity with non-recommended approaches including exporting service account keys, and using Compute Engine service accounts.
+There are several ways this can be achieved, however the recommended approach is via Workload Identity. Before going into detail on Workload Identity, I would like to highlight some of the risks associated with accessing these resources without using Workload Identity with non-recommended approaches including exporting service account keys and using Compute Engine service accounts.
 
 # Exporting Service Account Keys
 
@@ -34,15 +34,15 @@ The main issue with using the Compute Engine service account of your nodes is vi
 
 Furthermore, if each application workload is using the Compute Engine service account, it complicates auditing and visibility of what workloads used the service account to make the API calls.
 
-In the event the Compute Engine service account becomes compromised and you need to revoke it, you are no longer revoking just the service account for a single application, you are revoking the service account for all application workloads, introducing more toil and an outage to multiple applications.
+In the event the Compute Engine service account becomes compromised, and you need to revoke it, you are no longer revoking just the service account for a single application, you are revoking the service account for all application workloads, introducing more toil and an outage to multiple applications.
 
-It’s also worthwhile calling out at this stage your Google Kubernete Engine/GKE cluster nodes should not be running under the default Compute Engine service account for the same reasons regarding principle of least privilege. The default Compute Engine service account has significantly more permissions than a GKE node service account requires. For this reason, run your GKE nodes under a dedicated GKE Node service account.
+It’s also worthwhile calling out at this stage your Google Kubernetes Engine/GKE cluster nodes should not be running under the default Compute Engine service account for the same reasons regarding principle of least privilege. The default Compute Engine service account has significantly more permissions than a GKE node service account requires. For this reason, run your GKE nodes under a dedicated GKE Node service account.
 
 There is a predefined IAM role for GKE node service accounts that has the minimum required permissions under [roles/container.nodeServiceAccount]( https://cloud.google.com/iam/docs/understanding-roles#container.nodeServiceAccount).
 
 # Workload Identity
 
-Workload Identity is the recommended method to access Google Cloud API’s from a Google Kubernetes Engine (GKE) hosted application workload. With Workload Identity, your workload is able to impersonate a predefined Google Cloud IAM service account to gain access to the required resources. Pods that use the configured Kubernetes service account, impersonate the IAM service account when they access the GCP API’s. This enables you to define distinct, fine-grained identities and authorisation for each application in your cluster.
+Workload Identity is the recommended method to access Google Cloud APIs from a Google Kubernetes Engine (GKE) hosted application workload. With Workload Identity, your workload can impersonate a predefined Google Cloud IAM service account to gain access to the required resources. Pods that use the configured Kubernetes service account, impersonate the IAM service account when they access the GCP API’s. This enables you to define distinct, fine-grained identities and authorisation for each application in your cluster.
 
 Each GKE cluster with Workload identity enabled is assigned a workload identity pool name in the format: PROJECT_ID.svc.id.goog. IAM uses this naming format to trust the Kubernetes service account credentials. This is made possible due to all Google Cloud Project ID’s being globally unique, across all organisations.
 
@@ -64,11 +64,11 @@ The workload identity pool is derived from the GCP project ID, and therefore if 
 
 # Google Kubernetes Engine Metadata Server
 
-Node pools provisioned with Workload Identity enabled, deploy a GKE metadata server pod as part of a DaemonSet. This ensures one instance of the metadata server runs on each GKE Node within the pool. Every node within the pool stores its metadata on the metadata server. The metadata server provides a subset of the default compute engine metadata service endpoints required for Kuberenetes workloads. The GKE metadata server intercepts HTTP requests to http://metadata.google.internal (169.254.169.254:80) ensuring traffic destined to the metadata server never leaves the VM instance that hosts the Pod. As a result, Pods can no longer access the Compute Engine metadata server when running on a Node Pool with Workload Identity enabled.
+Node pools provisioned with Workload Identity enabled, deploy a GKE metadata server pod as part of a DaemonSet. This ensures one instance of the metadata server runs on each GKE Node within the pool. Every node within the pool stores its metadata on the metadata server. The metadata server provides a subset of the default compute engine metadata service endpoints required for Kubernetes workloads. The GKE metadata server intercepts HTTP requests to http://metadata.google.internal (169.254.169.254:80) ensuring traffic destined to the metadata server never leaves the VM instance that hosts the Pod. As a result, Pods can no longer access the Compute Engine metadata server when running on a Node Pool with Workload Identity enabled.
 
 # Using Workload Identity
 
-Configuring Workload Identity is a two stage process, the first stage is to enable Workload Identity on the GKE cluster. The second stage is to configure application workloads to use Workload Identity.
+Configuring Workload Identity is a two-stage process, the first stage is to enable Workload Identity on the GKE cluster. The second stage is to configure application workloads to use Workload Identity.
 
 # Enabling Workload Identity
 
@@ -77,7 +77,7 @@ The following IAM roles are required to enable Workload Identity:
 - roles/container.admin
 - roles/iam.serviceAccountAdmin
 
-Workload Identity must be enabled at the cluster level before you can enable Workload Identity on node pools. The cluster can be enabled during provisioning, or updated at a later date.
+Workload Identity must be enabled at the cluster level before you can enable Workload Identity on node pools. The cluster can be enabled during provisioning or updated at a later date.
 
 ## Create A Google Kubernetes Engine (GKE) Cluster with Workload Identity Enabled
 
@@ -270,7 +270,7 @@ spec:
 
 ### Using an existing Google Service Account
 
-An existing Google service account can optionally be used, defining the account as a preexisting Google service account resource, and setting the use_existing_gcp_sa value to true as follows.
+An existing Google service account can optionally be used, defining the account as a pre-existing Google service account resource, and setting the use_existing_gcp_sa value to true as follows.
 
 ```
 resource "google_service_account" "preexisting" {
@@ -283,7 +283,7 @@ module "my-app-workload-identity" {
   name                = google_service_account.preexisting.account_id
   project_id          = var.project_id
 
-  # wait for the custom GSA to be created to force module data source read during apply
+  # Wait for the custom GSA to be created to force module data source read during apply
   # https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/issues/1059
   depends_on = [google_service_account.preexisting]
 }
