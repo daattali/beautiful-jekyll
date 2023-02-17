@@ -124,7 +124,7 @@ workload_identity_config {
   }
 ```
 
-*Existing node pools are unaffected, but any new node pools in the cluster will be configured to use Workload Identity.*
+**Existing node pools are unaffected, but any new node pools in the cluster will be configured to use Workload Identity.**
 
 # Configuring Application Workloads To Use Workload Identity
 
