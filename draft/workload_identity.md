@@ -313,7 +313,7 @@ If annotation is disabled (via annotate_k8s_sa = false), the existing Kubernetes
 
 # Disabling Workload Identity
 
-To selectively disable Workload Identity on an existing Node Pool, specify GCE_METADATA for the for --workload-metadata value instead of GKE_METADATA.
+To selectively disable Workload Identity on an existing Node Pool, specify GCE_METADATA for the --workload-metadata value instead of GKE_METADATA.
 
 ```
 gcloud container node-pools update NODEPOOL_NAME \
