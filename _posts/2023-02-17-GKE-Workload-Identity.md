@@ -137,17 +137,17 @@ After enabling Workload Identity at the Google Kubernetes Engine cluster level, 
 ## GCloud Command: Application Workload Configuration
 
 1. The first step is to get credentials for your cluster:
-
-```
-gcloud container clusters get-credentials CLUSTER_NAME \
-    --region=COMPUTE_REGION
-```
-
-Replace the following:
-
-- CLUSTER_NAME: the name of your cluster that has Workload Identity enabled.
-- COMPUTE_REGION: the Compute Engine region of your cluster.
-
+ 
+ ```
+ gcloud container clusters get-credentials CLUSTER_NAME \
+     --region=COMPUTE_REGION
+ ```
+ 
+ Replace the following:
+ 
+ - CLUSTER_NAME: the name of your cluster that has Workload Identity enabled.
+ - COMPUTE_REGION: the Compute Engine region of your cluster.
+ 
 1. Create a namespace to use for the Kubernetes service account. You can also use the default namespace or any existing namespace.
 
 ```
