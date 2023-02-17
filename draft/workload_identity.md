@@ -3,11 +3,11 @@ layout: post
 title: Google Kubernetes Engine (GKE) Workload Identity
 subtitle: In this blog I provide an overview of why Google Kubernetes Engine (GKE) Workload Identity is the recommended method for accessing Google Cloud resources from a GKE cluster, how to configure Workload Identity with both gcloud and Terraform, and call out some of the risks associated with alternate methods accessing Google Cloud resources.
 #cover-img: /assets/img/path.jpg
-#thumbnail-img: /assets/img/anthos/anthoslogo.png
+thumbnail-img: /assets/img/common/gke-icon.png
 readtime: true
 share-title: Google Kubernetes Engine (GKE) Workload Identity
 share-description: Learn about Google Kubernetes Engine (GKE) Workload Identity and how to secure access to Google Cloud resources from your containerised workloads, how to configure Workload Identity with gcloud and Terraform commands, and the risks associated with alternate methods of accessing Google Cloud resources from GKE.
-#share-img: /assets/img/anthos/anthoslogo.png
+share-img: /assets/img/common/gke-icon.png
 tags: [GKE, Workload Identity, containers, security, best practices, kubernetes, google kubernetes engine]
 ---
 
