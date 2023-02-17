@@ -289,7 +289,7 @@ module "my-app-workload-identity" {
 ```
 
 ### Using an existing Kubernetes Service Account
-An existing Kubernetes service account can optionally be used, defining the account as a preexisting Kubernetes service account resource, and setting the use_existing_k8s_sa value to true as follows.
+An existing Kubernetes service account can optionally be used, defining the account as a pre-existing Kubernetes service account resource, and setting the use_existing_k8s_sa value to true as follows.
 
 ```
 resource "kubernetes_service_account" "preexisting" {
@@ -312,7 +312,7 @@ If annotation is disabled (via annotate_k8s_sa = false), the existing Kubernetes
 
 # Disabling Workload Identity
 
-To selectively disable Workload Identity on an existing Node Pool, specify GCE_METADATA for the --workload-metadata value instead of GKE_METADATA.
+To selectively disable Workload Identity on an existing Node Pool, specify GCE_METADATA for the - -workload-metadata value instead of GKE_METADATA.
 
 ```
 gcloud container node-pools update NODEPOOL_NAME \
