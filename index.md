@@ -4,8 +4,6 @@ title: Bastien Dussap
 subtitle: Researcher in applied mathematics at Paris Saclay University.
 ---
 
-I am a PhD student at Université Paris-Saclay and Inria (DataShape), working with Gilles Blanch and Bertrand Michel. 
-
 # Research
 
 I'am a PhD student in Statistic / Machine Learning at [University Paris-Saclay](https://www.universite-paris-saclay.fr/en) in the team [Probability and statistic](https://www.imo.universite-paris-saclay.fr/fr/la-recherche/probabilites-et-statistiques/) under the supervision of [Gilles Blanchard](https://www.imo.universite-paris-saclay.fr/~gilles.blanchard/) and Marc Glisse. I'm also part of the [Datashape](https://team.inria.fr/datashape/) team (INRIA).  

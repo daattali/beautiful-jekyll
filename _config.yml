@@ -27,7 +27,7 @@ navbar-links:
   #Publication: "pages/research"
   About me:
     - CV: "/assets/files/CV-DussapBastien.pdf"
-    - Adresse: "pages/adresse"
+    - Address: "pages/address"
   Links:
     - IMO: "https://www.imo.universite-paris-saclay.fr/fr/"
     - Datashape: "https://www.inria.fr/fr/datashape/"
@@ -135,17 +135,29 @@ navbar-var-length: false
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 # I have to check that !!
 
-navbar-col: "#975C8D"
-navbar-text-col: "#FFFFFF"
+# navbar-col: "#975C8D"
+# navbar-text-col: "#FFFFFF"
+# navbar-border-col: "#DDDDDD"
+# page-col: "#FFFFFF"
+# text-col: "#404040"
+# link-col: "#008AFF"
+# hover-col: "#404040"
+# footer-col: "#975C8D"
+# footer-text-col: "#FFFFFF"
+# footer-link-col: "#D989B5"
+# footer-hover-col: "#3b3b3b"
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
 link-col: "#008AFF"
-hover-col: "#404040"
-footer-col: "#975C8D"
-footer-text-col: "#FFFFFF"
-footer-link-col: "#D989B5"
-footer-hover-col: "#3b3b3b"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
