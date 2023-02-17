@@ -18,8 +18,8 @@ My thesis deals with the comparison of cytometric datasets. Metafora has develop
     <li>Kernel Mean Embedding and kernel methods in general.</li>
     <li>Wasserstein metrics and optimal transport.</li>
 </ul>
-<!-- 
-## Talks
+
+<!-- ## Talks
 
 Invited talks
 <ul>
