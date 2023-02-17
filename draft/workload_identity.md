@@ -162,7 +162,7 @@ Replace the following:
 - KSA_NAME: the name of your new Kubernetes service account.
 - NAMESPACE: the name of the Kubernetes namespace for the service account.
 
-4. Create an IAM service account for your application or use an existing IAM service account instead. You can use any IAM service account in any project in your organization. For Config Connector, apply the IAMServiceAccount object for your selected service account.
+4. Create an IAM service account for your application or use an existing IAM service account instead. You can use any IAM service account in any project in your organization.
 
 ```
 gcloud iam service-accounts create GSA_NAME \
@@ -207,9 +207,10 @@ metadata:
   namespace: NAMESPACE
 ```
 
-Note: This annotation by itself does not grant access to impersonate the IAM service account. If the IAM binding does not exist, the Pod will not be able to use the IAM service account.
+**Note: This annotation by itself does not grant access to impersonate the IAM service account. If the IAM binding does not exist, the Pod will not be able to use the IAM service account.**
 
 8. Update your Pod spec to schedule the workloads on nodes that use Workload Identity and to use the annotated Kubernetes service account.
+
 Note: Omit spec.serviceAccountName if you annotate the default Kubernetes service account. For Autopilot clusters, omit the nodeSelector field. Autopilot rejects this nodeSelector because all nodes use Workload Identity.
 
 ```
@@ -230,7 +231,7 @@ VERIFY?
 
 ## Terraform Code Application Workload Configuration
 
-GKE Workload Identity Terraform module is a submodule of the google_kubernetes_engine module and is available here: https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/latest/submodules/workload-identity
+The Google Kubernetes Engine Workload Identity Terraform module is a submodule of the google_kubernetes_engine module and is available here: https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/latest/submodules/workload-identity
 
 The following steps guide you through enabling the application workload to use Workload Identity using Terraform.
 
@@ -238,7 +239,7 @@ The following steps guide you through enabling the application workload to use W
 module "cloud-babble-demo-app-workload-identity" {
   source     = "terraform-google-modules/kubernetes-engine/google//modules/workload-identity"
   name       = "cloud-babble-demo-app"
-  namespace  = "demonamespace"
+  namespace  = "demo-namespace"
   project_id = var.project
   roles      = ["roles/storage.admin", "roles/compute.admin"]
 }
@@ -246,8 +247,8 @@ module "cloud-babble-demo-app-workload-identity" {
 
 This will create:
 
-- Google Service Account named: my-application-name@my-gcp-project-name.iam.gserviceaccount.com
-- Kubernetes Service Account named: my-application-name in the default namespace
+- Google Service Account named: cloud-babble-demo-app@my-gcp-project-name.iam.gserviceaccount.com
+- Kubernetes Service Account named: cloud-babble-demo-app in the demo-namespace namespace
 - IAM Binding (roles/iam.workloadIdentityUser) between the service accounts
 
 Usage from a Kubernetes deployment:
@@ -260,16 +261,16 @@ spec:
   # ...
   template:
     spec:
-      serviceAccountName: my-application-name
+      serviceAccountName: cloud-babble-demo-app
 ```
 
 ### Using an existing Google Service Account
 
-An existing Google service account can optionally be used.
+An existing Google service account can optionally be used, defining the account as a preexisting Google service account resource, and setting the use_existing_gcp_sa value to true as follows.
 
 ```
 resource "google_service_account" "preexisting" {
-  account_id   = "preexisting-sa"
+  account_id   = "cloudbabble-g-sa"
 }
 
 module "my-app-workload-identity" {
@@ -285,13 +286,13 @@ module "my-app-workload-identity" {
 ```
 
 ### Using an existing Kubernetes Service Account
-An existing Kubernetes service account can optionally be used.
+An existing Kubernetes service account can optionally be used, defining the account as a preexisting Kubernetes service account resource, and setting the use_existing_k8s_sa value to true as follows.
 
 ```
 resource "kubernetes_service_account" "preexisting" {
   metadata {
-    name      = "preexisting-sa"
-    namespace = "prod"
+    name      = "cloudbabble-k8s-sa"
+    namespace = "demo-nampspace"
   }
 }
 
