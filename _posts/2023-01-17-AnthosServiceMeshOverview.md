@@ -11,8 +11,7 @@ share-description: In this blog I provide an overview of the Anthos Service Mesh
 share-img: /assets/img/anthos/anthoslogo.png
 tags: [Anthos Service Mesh, Microservices Architecture, containers, istio, service mesh, app modernisation]
 ---
- 
- 
+  
 * toc
 {:toc}
  
