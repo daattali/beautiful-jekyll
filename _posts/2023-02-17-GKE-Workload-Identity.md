@@ -234,7 +234,7 @@ After enabling Workload Identity at the Google Kubernetes Engine cluster level, 
     
 ## Terraform Code Application Workload Configuration
 
-The Google Kubernetes Engine Workload Identity Terraform module is a submodule of the google_kubernetes_engine module and is available here: https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/latest/submodules/workload-identity
+The Google Kubernetes Engine Workload Identity Terraform module is a submodule of the google_kubernetes_engine module and is available on [Terraform registry](https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/latest/submodules/workload-identity).
 
 The following steps guide you through enabling the application workload to use Workload Identity using Terraform.
 
