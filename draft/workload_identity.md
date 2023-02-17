@@ -62,6 +62,10 @@ The workload identity pool is derived from the GCP project ID, and therefore if 
  
 *Workload Identity Sameness Across Clusters (source: [Google Cloud](https://cloud.google.com/kubernetes-engine/docs/concepts/workload-identity#identity_sameness))*
 
+# Google Kubernetes Engine Metadata Server
+
+Node pools provisioned with Workload Identity enabled, deploy a GKE metadata server pod as part of a DaemonSet. This ensures one instance of the metadata server runs on each GKE Node within the pool. Every node within the pool stores its metadata on the metadata server. The metadata server provides a subset of the default compute engine metadata service endpoints required for Kuberenetes workloads. The GKE metadata server intercepts HTTP requests to http://metadata.google.internal (169.254.169.254:80) ensuring traffic destined to the metadata server never leaves the VM instance that hosts the Pod. As a result, Pods can no longer access the Compute Engine metadata server when running on a Node Pool with Workload Identity enabled.
+
 # Using Workload Identity
 
 Configuring Workload Identity is a two stage process, the first stage is to enable Workload Identity on the GKE cluster. The second stage is to configure application workloads to use Workload Identity.
@@ -306,3 +310,14 @@ module "my-app-workload-identity" {
 ```
 
 If annotation is disabled (via annotate_k8s_sa = false), the existing Kubernetes service account must already bear the "iam.gke.io/gcp-service-account" annotation.
+
+# Disabling Workload Identity
+
+To selectively disable Workload Identity on an existing Node Pool, specify GCE_METADATA for the for --workload-metadata value instead of GKE_METADATA.
+
+'''
+gcloud container node-pools update NODEPOOL_NAME \
+    --cluster=CLUSTER_NAME \
+    --region=COMPUTE_REGION \
+    --workload-metadata=GCE_METADATA
+'''
