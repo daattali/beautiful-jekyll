@@ -42,15 +42,57 @@ TIME_STEPS = 150
 
 class AnomalyDetector:
     
-    def __init__(self, training_data: pd.DataFrame, testing_data: pd.DataFrame, time_steps_number: int):
+    def __init__(
+        self,
+        training_data: pd.DataFrame,
+        testing_data: pd.DataFrame,
+        time_steps_number: int
+    ):
         """
-        :param training_df: a pandas minutely time series dataframe with 'time' as index and 'current'
-        as sensor values, used for training
-        :param testing_df: a pandas minutely time series dataframe with 'time' as index and 'current'
-        as sensor values, used for testing
+        :param training_df: a pandas minutely time series dataframe with 'time' as index
+        and 'current' as sensor values, used for training
+        :param testing_df: a pandas minutely time series dataframe with 'time' as index
+        and 'current' as sensor values, used for testing
         :param time_steps_number: sequences length
         """
         self.training_df = training_data
         self.testing_df = testing_data
         self.time_steps_number = time_steps_number
+```
+
+## Data preparation
+
+To prepare the data for sequence generation, we first are extracting the data values from the time series and then normalizing them. We are using training mean and standard deviation to normalize the testing timeseries. Then we are constructing training and testing sequences.
+
+```python
+    def normalize_data(self):
+        self.training_mean = self.training_df.mean()
+        self.training_std = self.training_df.std()
+        self.normalized_training_df = (
+            self.training_df - self.training_mean
+        ) / self.training_std
+        self.normalized_testing_df = (
+            self.testing_df - self.training_mean
+        ) / self.training_std
+        print(f"Number of training samples: {len(self.normalized_training_df)}")
+        print(f"Number of testing samples: {len(self.normalized_testing_df)}")
+    
+    def __generate_sequences(self, values: np.array):
+        # Generated training sequences for use in the model.
+        output = []
+        for i in range(len(values) - self.time_steps_number + 1):
+            output.append(values[i : (i + self.time_steps_number)])
+        return np.stack(output)
+        
+    def generate_training_sequences(self):      
+        self.training_sequences = self.__generate_sequences(
+            self.normalized_training_df.values
+        )
+        print(f"Training input shape: {self.training_sequences.shape}")
+        
+    def generate_testing_sequences(self):
+        self.testing_sequences = self.__generate_sequences(
+            self.normalized_testing_df.values
+        )
+        print(f"Testing input shape: {self.testing_sequences.shape}")
 ```
