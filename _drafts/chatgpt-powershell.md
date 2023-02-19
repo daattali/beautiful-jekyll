@@ -64,9 +64,17 @@ Before cracking on, I should mention that you may encounter an error saying that
 "type": "insufficient_quota",
 ```
 
-It seems that OpenAI changed the policy and made the API available to paid accounts only. I was able to use the web UI fine but I would get this message when using my API key. I couldm't find the $18 trial credit in my account so I just added a payment method in my account and set a spending limit to $5 just to make sure.
+It seems that OpenAI changed the policy and made the API available to paid accounts only. I was able to use the web UI fine but I would get this message when using my API key. I just added a payment method in my account and it worked fine.
+
+![set up paid account chatgpt](/img/SCR-20230219-jkv.png)
+
+I couldn't find the $18 trial credit in my account so I just set a spending limit of $5 just to make sure it won't drain my hard-earned monies.
 
 ![max billing chatgpt](/img/SCR-20230219-jkv.png)
+
+Before you freak out about surprise big invoices like it happens to some folks in AWS, note that it remains very cheap if you use it sparingly. As you can see, I only did 15 requests but quite a few of them had lenghthy responses and I have only been charged $0.01.
+
+![chatgpt monies](/img/SCR-20230219-lay.png)
 
 ## Using ChatGPT in Powershell
 
