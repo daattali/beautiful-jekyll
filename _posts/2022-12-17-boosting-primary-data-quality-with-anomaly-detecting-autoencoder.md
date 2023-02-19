@@ -477,14 +477,119 @@ ad_filled.visualize_anomalies(-3000,-1)
 ```
 ![full_anomaly](/assets/data/2022-12-17-part-2-anomaly-viz.png)
 
-Finally, let's see the estimated time series data quality for the testing subset:
+Finally, let's print out an example of the labeled timeseries and see the estimated time series data quality for the testing subset:
 ```python
+ad.testing_df_labeled[190:195]
+
+                    current	anomaly
+time		
+2022-08-09 21:10:00	10.730894	False
+2022-08-09 21:11:00	10.897367	False
+2022-08-09 21:12:00	10.083670	False
+2022-08-09 21:13:00	34.825259	True
+2022-08-09 21:14:00	34.825259	True
+
 print(f"{ad.time_series_dqr = :.1f}%")
 ad.time_series_dqr = 96.7%
 ```
 
 We have successfully detected all the anomalies in the data, both thw malfunctioning equipment and what seems to be issues within the data collection infrastructure. An interesting observation is that, when considering each data point of the time series on its own, less than 4% of the dataset can be considered as failed. In the last section, we are implementing a simple batch data analyzer and demonstrating how the detected anomalies actually impact the quality of the batch data.
 
+## Batch Analyzer
+
+We introduce another class, called `BatchAnalyzer`, which includes methods for generating raw data on batches and extracting timings, like batch duration and time window duration between batches, and a method to calculate the resulting batch data quality rating. In addition to the labeled timeseries, it takes two parameters:
+
+```python
+ERP_BATCH_NUM = 241
+BATCH_SPEC_DURATION = 120  # BATCH_SPEC_DURATION = TIME_STEPS - WINDOW_SPEC_DURATION
+
+class BatchAnalyzer:
+    
+    def __init__(
+        self,
+        input_df: pd.DataFrame,
+        batch_spec_duration: int,
+        batch_number_in_erp: int
+    ):
+        """
+        :param input_df: a pandas minutely time series dataframe with 'time'
+        as index and 'current' and 'anomaly' columns.
+        """
+        self.input_df = input_df.copy()
+        self.batch_spec_duration = batch_spec_duration
+        self.batch_number_in_erp = batch_number_in_erp
+        
+    def __check_input_df(self):
+        column_names = self.input_df.columns.to_list() == ['current', 'anomaly']
+        time_index = self.input_df.index.name == 'time'
+        if column_names and time_index:
+            return True
+
+    def generate_raw_batch_data(self):
+        df = self.input_df.copy()
+        if self.__check_input_df():
+            # Add a column indicating if the current is non-zero
+            df['current_on'] = df['current'].apply(lambda x: False if x == 0 else True)
+            # Add a column indicating if the current is zero
+            df['current_off'] = df['current'].apply(lambda x: True if x == 0 else False)
+            # Add a column indicating if the current state changed from the previous row
+            df['state_changed'] = df['current_on'].ne(df['current_on'].shift())
+            df['state_changed_to_on'] = np.where(
+                df['current']* df['state_changed'],
+                True,
+                False
+            )
+            # Add a column indicating the batch number
+            df['batch_number'] = df['state_changed_to_on'].cumsum()
+        
+            self.raw_batch_data = df
+        else:
+            print(f"Unacceptable dataframe, proper dataframe has `time` index, \
+            and `current` and `anomaly` columns.")
+        
+    def extract_raw_batch_timings(self):
+        df = self.raw_batch_data.copy().reset_index()
+        # create a dataframe with batch numbers, their start time and end time
+        batch_df = pd.pivot_table(
+            df, values = ['time', 'anomaly'],
+            columns = 'current_on',
+            index = 'batch_number',
+            aggfunc = {'time': ['min', 'max'], 'anomaly': ['max']}
+        )
+        batch_df.columns = [
+            'window_anomaly',
+            'batch_anomaly',
+            'window_end_time',
+            'batch_end_time',
+            'window_start_time',
+            'batch_start_time'
+        ]
+        batch_df = batch_df[[
+            'batch_start_time',
+            'batch_end_time',
+            'window_start_time',
+            'window_end_time',
+            'batch_anomaly',
+            'window_anomaly'
+        ]]
+        batch_df['batch_duration'] = (
+            batch_df.batch_end_time - batch_df.batch_start_time
+        ).astype('timedelta64[m]')
+        batch_df['window_duration'] = (
+            batch_df.window_end_time - batch_df.window_start_time
+        ).astype('timedelta64[m]')
+          
+        self.raw_batch_timing_data = batch_df
+        
+    def calculate_batch_data_quality_rating(self):
+        self.batch_dqr = (self.raw_batch_timing_data.query(
+            'batch_duration > 90 & batch_duration < 180'
+        ).batch_duration.sum()/self.batch_number_in_erp/self.batch_spec_duration)*100
+        print(f"{self.batch_dqr = :.1f}%")
+```
+
+`raw_batch_data` includes the initial labeled timeseries with additional columns indicating the status changes and attributed batch numbers
+`raw_batch_timing_data` is a pivot table presenting 'batch_start_time', 'batch_end_time', 'window_start_time', 'window_end_time', 'batch_anomaly', 'window_anomaly', 'batch_duration', and 'window_duration' values for each extracted batch.
 
 <sup>1</sup> In what follows, we apply a sequence-based model. It learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequences, which are constructed from a given timeseries. The sequence generation is performed using a sliding window approach. The initial timeseries is divided into overlapping windows of a specified length, and each window is treated as a sequence of data points. The length of the window, defined by the `TIME_STEPS` parameter, determines the length of the sequence (150 data points in our case), and the amount of overlap between adjacent windows can also be specified (we use one data point). By sliding the window along the time axis of the data, multiple sequences are generated from a single time series. These sequences are then fed into the convolutional reconstruction autoencoder model for training and the following for anomaly detection.
 
