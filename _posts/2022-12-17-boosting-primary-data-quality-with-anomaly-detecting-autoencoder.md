@@ -581,15 +581,16 @@ class BatchAnalyzer:
         
     def calculate_batch_data_quality_rating(self):
         self.batch_dqr = (self.raw_batch_timing_data.query(
-            'batch_duration > 90 & batch_duration < 150'
+            'batch_duration > @self.batch_spec_duration*.75 \
+            & batch_duration < @self.batch_spec_duration*1.25'
         ).batch_duration.sum()/self.batch_number_in_erp/self.batch_spec_duration)*100
 ```
 
-`raw_batch_data` includes the initial labeled timeseries with additional columns indicating the current status changes and attributed batch numbers, e.g.:
+The `raw_batch_data` dataframe includes the initial labeled timeseries with additional columns indicating the current status changes and attributed batch numbers, e.g.:
 
 ![batch_data](/assets/data/2022-12-17-raw-batch-data.png){: width="800" }
 
-`raw_batch_timing_data` is a pivot table presenting 'batch_start_time', 'batch_end_time', 'window_start_time', 'window_end_time', 'batch_anomaly', 'window_anomaly', 'batch_duration', and 'window_duration' values for each extracted batch, e.g.:
+The `raw_batch_timing_data` dataframe is a pivot table presenting `batch_start_time`, `batch_end_time`, `window_start_time`, `window_end_time`, `batch_anomaly`, `window_anomaly`, `batch_duration`, and `window_duration` values for each extracted batch, e.g.:
 
 ![batch_timings](/assets/data/2022-12-17-raw-batch-timings.png){: width="800" }
 
