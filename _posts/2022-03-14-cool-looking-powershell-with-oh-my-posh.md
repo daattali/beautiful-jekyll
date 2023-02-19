@@ -49,6 +49,7 @@ The prompt already looks cool but I want it to display which vCenter I am connec
 
 <!-- I hate markdown -->
 
+    ``` json
     {
     "background": "#cce9aa",
     "foreground": "#100e23",
@@ -59,6 +60,7 @@ The prompt already looks cool but I want it to display which vCenter I am connec
     "style": "powerline",
     "type": "text"
     },
+    ```
 
 * Now **edit your PowerShell profile** ($PROFILE). Remove or comment out the "Set-PoshPrompt" command and add the following fragment. This will populate an env variable when a vCenter is connected.
 
