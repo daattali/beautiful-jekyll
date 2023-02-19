@@ -445,13 +445,13 @@ Epoch 30/30
 37/37 [==============================] - 2s 49ms/step
 - loss: 0.0021 - val_loss: 9.7198e-04
 ```
-![losses](/assets/data/2022-12-17-losses.png)
+![losses](/assets/data/2022-12-17-losses.png){: width="250" }
 
-![train_mae](/assets/data/2022-12-17-train-mae.png)
+![train_mae](/assets/data/2022-12-17-train-mae.png){: width="250" }
 ```python
 Reconstruction error threshold: 0.03448834298971466
 ```
-![test_mae](/assets/data/2022-12-17-test-mae.png)
+![test_mae](/assets/data/2022-12-17-test-mae.png){: width="250" }
 ```python
 Number of anomaly samples: 2853
 Indices of anomaly samples: [   44    45    46 ... 39556 39557 39558]
