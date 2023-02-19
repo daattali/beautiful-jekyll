@@ -9,7 +9,7 @@ Hi there, I am Emil Dimanchev and I am a climate policy researcher. Follow my la
 
 ## Research
 
-My research investigates the effects of climate policies, the behavior of macro-energy systems, and how to design climate policies that best meet societal goals. My approach is interdisciplinary, with a focus on operations research, economics, and engineering.  
+My research investigates the effects of climate policies, the behavior of energy systems, and how to design climate policies that best meet societal goals. My approach is interdisciplinary, with a focus on operations research, economics, and engineering.  
 
 ## PhD project
 
