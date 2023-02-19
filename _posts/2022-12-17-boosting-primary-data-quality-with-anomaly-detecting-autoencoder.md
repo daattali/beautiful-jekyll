@@ -97,7 +97,7 @@ To prepare the data for sequence generation, we first are extracting the data va
         print(f"Testing input shape: {self.testing_sequences.shape}")
 ```
 
-## Build model
+## Building the model
 
 ### Convolutional reconstruction autoencoder
 
@@ -111,7 +111,7 @@ To detect anomalies in batch process manufacturing data, we will employ a convol
 
 The convolutional architecture is thought to be particularly suited to data, where local features and relationships between adjacent data points are important. The classical architecture of a convolutional reconstruction autoencoder model consists of an encoder and a decoder, where the encoder consists of one or more convolutional layers followed by one or more pooling layers, which reduce the spatial dimensions of the input, and the decoder consists of one or more transposed convolutional layers followed by one or more upsampling layers, which reconstruct the original input from the low-dimensional representation created by the encoder. The "bottleneck" layer is typically a fully connected or dense layer that connects the encoder and decoder. The goal is to learn a compressed representation of the input data in the bottleneck layer, which can be used for anomaly detection or other downstream tasks. We are limiting our architecture to the basic one implemented in the `create_model` method below:
 
-- After the `Input` layer, the model includes two convolutional layers and two `Conv1DTranspose` layers, with one Dropput layer between them;
+- After the `Input` layer, the model includes two 1D convolutional layers and two `Conv1DTranspose` layers, with one Droput layer between them;
 - The use of Dropout layers helps to prevent overfitting of the model to the training data;
 - Finally, the output layer is a `Conv1DTranspose` layer with the filter parameter value of one to produce final one-dimensionsl output.
 
@@ -122,13 +122,19 @@ The model is taking two parameters, `sequence_length, num_features`. In our case
         # define the model
         model = Sequential()
         # add layers to model
-        model.add(Input(shape=(self.training_sequences.shape[1], self.training_sequences.shape[2])))
+        model.add(Input(shape=(
+            self.training_sequences.shape[1], self.training_sequences.shape[2]
+        )))
         model.add(Conv1D(filters=30, kernel_size=7, padding="same", activation="relu"))
         model.add(Dropout(rate=0.2))
         model.add(Conv1D(filters=15, kernel_size=7, padding="same", activation="relu"))
-        model.add(Conv1DTranspose(filters=15, kernel_size=7, padding="same", activation="relu"))
+        model.add(Conv1DTranspose(
+            filters=15, kernel_size=7, padding="same", activation="relu"
+        ))
         model.add(Dropout(rate=0.2))
-        model.add(Conv1DTranspose(filters=30, kernel_size=7, padding="same", activation="relu"))
+        model.add(Conv1DTranspose(
+            filters=30, kernel_size=7, padding="same", activation="relu"
+        ))
         model.add(Conv1DTranspose(filters=1, kernel_size=7, padding="same"))
         # add compiler
         optimizer = Adam(learning_rate=0.001)
@@ -136,13 +142,36 @@ The model is taking two parameters, `sequence_length, num_features`. In our case
         self.model = model
         print(self.model.summary())
 ```
-
-
 Using `padding="same"` parameter in the convolutional layers ensures that the output feature maps have the same length as the input time series by padding zeros to the edges of the input sequence if necessary. This is important for preserving the temporal structure of the data and allowing the model to learn meaningful patterns across the entire sequence. Without padding, the convolutional layers would reduce the length of the sequence, which could result in loss of information and reduced model performance.
 
 Using the rectified linear unit (ReLU) activation function, which besides preventing the vanishing gradient problem during training, helps to ensure that output values are always non-negative (since we are working with non-negative values).
 
 We are leveraging the MSE loss function for our time series autoencoder as a straightforward choice, more computationally efficient for gradient-based optimization methods, like `Adam`, and putting a higher weight on larger errors.
 
+## Training the model
+
+When training the model, we are using batches of 128 samples in 30 epochs and set aside 10% of the data for validation. Then we are plotting the resulting training and validation loss to see how the training went.
+
+```python
+    def train_model(self, epochs=30, batch_size=128, validation_split=0.1):
+        # fit model
+        history = self.model.fit(
+            self.training_sequences,
+            self.training_sequences,
+            epochs=epochs,
+            batch_size=batch_size,
+            validation_split=validation_split,
+        )
+        self.history = history
+        # plot losses
+        plt.plot(self.history.history["loss"], label="Training Loss")
+        plt.plot(self.history.history["val_loss"], label="Validation Loss")
+        plt.legend()
+        plt.show()
+```
+
 
 <sup>1</sup> In what follows, we apply a sequence-based model. It learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequences, which are constructed from a given timeseries. The sequence generation is performed using a sliding window approach. The initial timeseries is divided into overlapping windows of a specified length, and each window is treated as a sequence of data points. The length of the window, defined by the `TIME_STEPS` parameter, determines the length of the sequence (150 data points in our case), and the amount of overlap between adjacent windows can also be specified (we use one data point). By sliding the window along the time axis of the data, multiple sequences are generated from a single time series. These sequences are then fed into the convolutional reconstruction autoencoder model for training and the following for anomaly detection.
+
+Copyright © 2022 Zheniya Mogilevski
+
