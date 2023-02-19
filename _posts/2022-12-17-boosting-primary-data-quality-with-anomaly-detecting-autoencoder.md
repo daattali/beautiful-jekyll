@@ -20,3 +20,14 @@ We will use synthesised data of electric current for an engine working in a batc
       Plotly.newPlot('myDiv_v1', data);
     });
 </script>
+
+We are using the part of the data before the `CUT_POINT` for training and the rest of the data for testing to see if the sudden jump ups in the data is detected as an anomaly:
+
+```python
+CUT_POINT = '2022-08-09 18:00:00'
+training_df = generated_time_series.loc[:CUT_POINT].copy()
+testing_df = generated_time_series.loc[CUT_POINT:].copy()
+
+```
+
+Note: as we want the missing data points be also detected as anomalous, we will fill them in with the maximum of observed electric current values when feeding them into the autoencoder.
