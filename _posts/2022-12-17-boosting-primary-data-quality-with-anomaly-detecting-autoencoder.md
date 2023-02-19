@@ -586,9 +586,13 @@ class BatchAnalyzer:
 ```
 
 `raw_batch_data` includes the initial labeled timeseries with additional columns indicating the current status changes and attributed batch numbers, e.g.:
-![batch_data](/assets/data/2022-12-17-raw-batch-data.png){: width="400" }
+
+![batch_data](/assets/data/2022-12-17-raw-batch-data.png){: width="800" }
+
 `raw_batch_timing_data` is a pivot table presenting 'batch_start_time', 'batch_end_time', 'window_start_time', 'window_end_time', 'batch_anomaly', 'window_anomaly', 'batch_duration', and 'window_duration' values for each extracted batch, e.g.:
-![batch_timings](/assets/data/2022-12-17-raw-batch-timings.png){: width="400" }
+
+![batch_timings](/assets/data/2022-12-17-raw-batch-timings.png){: width="800" }
+
 
 We use the following script to run the batch analyzer:
 ```python
