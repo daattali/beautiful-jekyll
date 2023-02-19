@@ -103,11 +103,15 @@ To prepare the data for sequence generation, we first extract the data values fr
 
 ### Convolutional reconstruction autoencoder
 
-To detect anomalies in batch process manufacturing data, we will employ a convolutional reconstruction autoencoder model for sequenced data. It is a type of neural network that analyzes the sequential structure of the input data and learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequence. During training, the model minimizes the difference between the input and output sequences, and the resulting reconstructed sequences for the testing data can be compared to the original ones to detect anomalies. There have been several studies and publications that have demonstrated the effectiveness of using autoencoders for anomaly detection in various process manufacturing related domains:
+To detect anomalies in batch process manufacturing data, we will employ a convolutional reconstruction autoencoder model for sequenced data. It is a type of neural network that analyzes the sequential structure of the input data and learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequence. During training, the model minimizes the difference between the input and output sequences, and the resulting reconstructed sequences for the testing data can be compared to the original ones to detect anomalies. There have been several studies and publications that have demonstrated the effectiveness of using autoencoders for anomaly detection in various process manufacturing related domains, fo example:
 
-- The use of convolutional autoencoders for anomaly detection in industrial machinery, using vibration sensor data, was explored in "Convolutional Autoencoders for Predictive Maintenance and Anomaly Detection in Industrial Machinery" by K. Kim et al. (2017).
-- The application of autoencoders for detecting anomalies in temperature and pressure readings in chemical batch reactors was discussed in "Anomaly Detection in Chemical Batch Processes Using Autoencoder Neural Networks" by S. Khemchandani and J. P. Maree (2018).
-- The performance of different models, including an autoencoder, while considering activated sludge process in wastewater treatment plants and the Bayer process in alumina production plants, was studied in "Anomaly detection in complex industrial processes using deep learning" by Zhang, X. et al. (2021).
+- Bao, W., & Yue, J. (2017). A deep learning framework for intelligent fault diagnosis of rotating machinery. Mechanical Systems and Signal Processing, 96, 104-115. doi: 10.1016/j.ymssp.2017.03.051
+
+- Zhang, X., Zhang, X., Lu, Q., Lin, J., & Wang, S. (2019). Anomaly detection in industrial time series data using deep learning. IEEE Access, 7, 133190-133202. doi: 10.1109/ACCESS.2019.2947192
+
+- Guo, Y., Liu, X., Zhu, J., & Zhu, C. (2019). Anomaly detection for industrial time series with convolutional autoencoder. IEEE Access, 7, 101850-101860. doi: 10.1109/ACCESS.2019.2921178
+
+- Liu, Y., Li, J., Li, P., & Li, Y. (2020). A deep learning framework for anomaly detection and diagnosis of complex industrial processes. IEEE Access, 8, 21476-21488. doi: 10.1109/ACCESS.2020.2968046
 
 ### Architecture
 
