@@ -457,6 +457,35 @@ Number of anomaly samples: 2853
 Indices of anomaly samples: [   44    45    46 ... 39556 39557 39558]
 ```
 
+## Reviewing the results
+
+Now, we can visualize the detected anomalous data points.
+
+```python
+ad_filled.visualize_anomalies(0,-1)
+```
+![full_anomaly](/assets/data/2022-12-17-full-anomaly-viz.png)
+
+In more details:
+
+```python
+ad_filled.visualize_anomalies(0,10000)
+```
+![full_anomaly](/assets/data/2022-12-17-part-1-anomaly-viz.png)
+```python
+ad_filled.visualize_anomalies(-3000,-1)
+```
+![full_anomaly](/assets/data/2022-12-17-part-2-anomaly-viz.png)
+
+Finally, let's see the estimated time series data quality for the testing subset:
+```python
+print(f"{ad.time_series_dqr = :.1f}%")
+ad.time_series_dqr = 96.7%
+```
+
+We have successfully detected all the anomalies in the data, both thw malfunctioning equipment and what seems to be issues within the data collection infrastructure. An interesting observation is that, when considering each data point of the time series on its own, less than 4% of the dataset can be considered as failed. In the last section, we are implementing a simple batch data analyzer and demonstrating how the detected anomalies actually impact the quality of the batch data.
+
+
 <sup>1</sup> In what follows, we apply a sequence-based model. It learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequences, which are constructed from a given timeseries. The sequence generation is performed using a sliding window approach. The initial timeseries is divided into overlapping windows of a specified length, and each window is treated as a sequence of data points. The length of the window, defined by the `TIME_STEPS` parameter, determines the length of the sequence (150 data points in our case), and the amount of overlap between adjacent windows can also be specified (we use one data point). By sliding the window along the time axis of the data, multiple sequences are generated from a single time series. These sequences are then fed into the convolutional reconstruction autoencoder model for training and the following for anomaly detection.
 
 Copyright © 2022 Zheniya Mogilevski
