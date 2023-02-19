@@ -5,23 +5,19 @@ subtitle: Climate and Energy Policy Research
 #image: "/img/Profile Mt. Madison.jpg"
 ---
 
-Hi there, I am Emil Dimanchev and I am a climate policy researcher specializing in energy systems, policy design, and techno-economic modeling.
+Hi there, I am Emil Dimanchev and I am a climate policy researcher. Follow my latest work on [Twitter](https://twitter.com/EmilDimanchev).
 
 ## Research
 
-The purpose of my work is to enable evidence-based decision making. I research sustainable energy systems, the effects of alternative policy choices, and how to design climate policy that best meets societal goals. 
-
-My research is interdisciplinary, leveraging diverse methods matched to the problem at hand. I specialize in operations research, and integrate tools and ideas from other fields including economics, data science, and political science. 
-
-Follow my latest work on [Twitter](https://twitter.com/EmilDimanchev).
+My research investigates the effects of climate policies, the behavior of macro-energy systems, and how to design climate policies that best meet societal goals. My approach is interdisciplinary, with a focus on opeerations research, economics, and engineering.  
 
 ## PhD project
 
-My PhD focuses on the impact of investor uncertainty and risk aversion on clean energy deployment, and how de-risking climate policies may accelerate decarbonization. I am developing stochastic optimization models that address these questions in the contexts of power system planning and EV charging station investments. 
+My PhD focuses on the impact of investor uncertainty and risk aversion on the clean energy transition and on how climate policies should account for investment risk. I am developing stochastic optimization models that address these questions in the contexts of power system planning and EV charging station investments. 
 
-Broadly, this work is motivated by the question of *how* governments could *accelerate* decarbonization. There is currently a misalignment between climate tagets and the speed of clean energy investments. The first [publication]([url](https://onlinelibrary.wiley.com/doi/10.1002/9783527831425.ch8)) of my PhD shows this in the case of electric vehicles (EVs). We synthesize estimates from decarbonization pathways to understand the role EVs play in future vehicle fleets under given climate targets - finding that most vehicles must be EVs by 2050 to meet climate targets. We combine this with a fleet turnover model to explore what this means for EV sales and policy in the near term.
+The pace of the clean energy transition is out of line with governments' climate change goals. The first [publication]([url](https://onlinelibrary.wiley.com/doi/10.1002/9783527831425.ch8)) of my PhD investigates the extent to which passenger vehicles must be electrified for nations to reach 2C and 1.5C climate targets. Based on a meta-analysis of decarbonization pathways, we find that most vehicles must be zero-emission by 2050. Using fleet turnover modeling, we show that this requires an acceleration of electric vehicle sales and of the retirement of internal combustion engine vehicles. 
 
-My ongoing work focuses on how the speed of clean energy deployment may be affected by investor uncertainty and risk aversion. In my second research project, I am modeling investments in EV charging stations and the potential for de-risking policies to speed up investments, using Real Options and Stochastic Dynamic Programming. In my third project, I am exploring how power system decarbonization is impacted by investor uncertainty and risk aversion. For this I am developing new stochastic optimization and complementarity methods.
+The second [publication](https://ceepr.mit.edu/workingpaper/accelerating-electric-vehicle-charging-investments-a-real-options-approach-to-policy-design/) of my PhD investigates how policy can accelerate investment in EV charging stations by accounting for the risks faced by private-sector investors using real options modeling. In my third project, I am exploring how power system decarbonization is impacted by investor uncertainty, risk aversion, and the incompletenes of risk markets. For this purpose I am developing new stochastic optimization and game theoretic equilibrium methods for modeling power system expansion under uncertainty.
 
 ## Bio
 
