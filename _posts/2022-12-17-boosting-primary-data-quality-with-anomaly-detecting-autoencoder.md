@@ -33,3 +33,24 @@ testing_df = generated_time_series.loc[CUT_POINT:].copy()
 ```
 
 Note: as we want the missing data points be also detected as anomalous, we will fill them in with the maximum of observed electric current values when feeding them into the autoencoder.
+
+To implement the task, we introduce a custom class called `AnomalyDetector`, which includes methods for sequence generation, model building, training, and others. The `__init__` method of the class takes the training and the testing datasets and the number of data points for generating sequences as parameters. Note: our data has its inner structure and periodicity of approximately 150 timestamps (the nominal batch duration plus thetime window between batches according to our hypothetical production process specification), thus, to create sequences, we can combine `TIME_STEPS=150` contiguous data values.
+
+```python
+
+TIME_STEPS = 150
+
+class AnomalyDetector:
+    
+    def __init__(self, training_data: pd.DataFrame, testing_data: pd.DataFrame, time_steps_number: int):
+        """
+        :param training_df: a pandas minutely time series dataframe with 'time' as index and 'current'
+        as sensor values, used for training
+        :param testing_df: a pandas minutely time series dataframe with 'time' as index and 'current'
+        as sensor values, used for testing
+        :param time_steps_number: sequences length
+        """
+        self.training_df = training_data
+        self.testing_df = testing_data
+        self.time_steps_number = time_steps_number
+```
