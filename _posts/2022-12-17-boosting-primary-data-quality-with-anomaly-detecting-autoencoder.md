@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Boosting Primary Data Quality through Machine Learning Techniques
-subtitle: Anomaly Detection in Batch Process Manufacturing Data using an Autoencoder
+subtitle: Anomaly Detection in Batch Process Manufacturing Data Using an Autoencoder
 tags: [sensor data, time series, anomaly detection, neural networks, autoencoder, primary data, data quality rating, product carbon footprint, pcf, ocf]
 comments: true
 ---
@@ -34,7 +34,7 @@ testing_df = generated_time_series.loc[CUT_POINT:].copy()
 
 Note: as we want the missing data points be also detected as anomalous, we will fill them in with the maximum of observed electric current values when feeding them into the autoencoder.
 
-To implement the task, we introduce a custom class called `AnomalyDetector`, which includes methods for sequence generation<sup>1</sup>, model building, training, and others. The `__init__` method of the class takes the training and the testing datasets and the number of data points for generating sequences as parameters. Note: our data has its inner structure and periodicity of approximately 150 timestamps (the nominal batch duration plus thetime window between batches according to our hypothetical production process specification), thus, to create sequences, we can combine `TIME_STEPS=150` contiguous data values.
+To implement the task, we introduce a custom class called `AnomalyDetector`, which includes methods for sequence generation<sup>1</sup>, model building, training, and others. The `__init__` method of the class takes the training and the testing datasets and the number of data points for generating sequences as parameters. Note: our data has its inner structure and periodicity of approximately 150 timestamps (the nominal batch duration plus the time window between batches according to our hypothetical production process specification), thus, to create sequences, we can combine `TIME_STEPS=150` contiguous data values.
 
 ```python
 
@@ -62,7 +62,7 @@ class AnomalyDetector:
 
 ## Data preparation
 
-To prepare the data for sequence generation, we first are extracting the data values from the time series and then normalizing them. We are using training mean and standard deviation to normalize the testing timeseries. Then we are constructing training and testing sequences.
+To prepare the data for sequence generation, we first extract the data values from the time series and then normalize them. We use the training mean and standard deviation to normalize the validation and test timeseries. Then we construct training and testing sequences.
 
 ```python
     def normalize_data(self):
@@ -109,13 +109,13 @@ To detect anomalies in batch process manufacturing data, we will employ a convol
 
 ### Architecture
 
-The convolutional architecture is thought to be particularly suited to data, where local features and relationships between adjacent data points are important. The classical architecture of a convolutional reconstruction autoencoder model consists of an encoder and a decoder, where the encoder consists of one or more convolutional layers followed by one or more pooling layers, which reduce the spatial dimensions of the input, and the decoder consists of one or more transposed convolutional layers followed by one or more upsampling layers, which reconstruct the original input from the low-dimensional representation created by the encoder. The "bottleneck" layer is typically a fully connected or dense layer that connects the encoder and decoder. The goal is to learn a compressed representation of the input data in the bottleneck layer, which can be used for anomaly detection or other downstream tasks. We are limiting our architecture to the basic one implemented in the `create_model` method below:
+The convolutional architecture is thought to be particularly suited to data, where local features and relationships between adjacent data points are important. The classical architecture of a convolutional reconstruction autoencoder model consists of an encoder and a decoder, where the encoder includes of one or more convolutional layers followed by one or more pooling layers, which reduce the spatial dimensions of the input, and the decoder includes of one or more transposed convolutional layers followed by one or more upsampling layers, which reconstruct the original input from the low-dimensional representation created by the encoder. The "bottleneck" layer is typically a fully connected or dense layer that connects the encoder and decoder. The goal is to learn a compressed representation of the input data in the bottleneck layer, which can be used for anomaly detection or other downstream tasks. We are limiting our architecture to the basic one implemented in the `create_model` method below:
 
 - After the `Input` layer, the model includes two 1D convolutional layers and two `Conv1DTranspose` layers, with one Droput layer between them;
 - The use of Dropout layers helps to prevent overfitting of the model to the training data;
 - Finally, the output layer is a `Conv1DTranspose` layer with the filter parameter value of one to produce final one-dimensionsl output.
 
-The model is taking two parameters, `sequence_length` and `num_features`. In our case, `sequence_length` equals `TIME_STEPS` and `num_features` takes the value of one (the electric current values); both parameters are stored in the `shape` instance of the sequence tensor.
+The model takes two parameters, `sequence_length` and `num_features`. In our case, `sequence_length` equals `TIME_STEPS` and `num_features` takes the value of one (the electric current values); both parameters are stored in the `shape` instance of the sequence tensor.
 
 ```python
     def create_model(self):
@@ -146,11 +146,11 @@ Using `padding="same"` parameter in the convolutional layers ensures that the ou
 
 Using the rectified linear unit (ReLU) activation function, which besides preventing the vanishing gradient problem during training, helps to ensure that output values are always non-negative (since we are working with non-negative values).
 
-We are leveraging the MSE loss function for our time series autoencoder as a straightforward choice, more computationally efficient for gradient-based optimization methods, like `Adam`, and putting a higher weight on larger errors.
+We are leveraging the `MSE` loss function for our time series autoencoder as a straightforward choice: as a more computationally efficient one for gradient-based optimization methods like Adam, and for putting a higher weight on larger errors.
 
 ## Training the model
 
-When training the model, we are using batches of 128 samples in 30 epochs and set aside 10% of the data for validation. Then we are plotting the resulting training and validation loss to see how the training went.
+When training the model, we use batches of 128 samples in 30 epochs and set aside 10% of the data for validation. Then we plot the resulting training and validation loss to see how the training went.
 
 ```python
     def train_model(self, epochs=30, batch_size=128, validation_split=0.1):
@@ -172,7 +172,7 @@ When training the model, we are using batches of 128 samples in 30 epochs and se
 
 ## Anomaly detection
 
-We are detecting anomalies by determining how well our model can reconstruct the input data. To this end we:
+We detect anomalies by determining how well our model can reconstruct the input data. To this end we:
 
 - Get reconstruction error threshold;
 - Compare recontruction;
@@ -251,7 +251,7 @@ Anomalies are defined as testing samples with testing MAE loss above the reconst
 
 ### Find anomalous data points in the original testing data
 
-To determined the anomalous data points, we check each data point on being presented in anomalous sequences: data point `i` is an anomaly if samples `[(i - timesteps + 1) to (i)]` are anomalies.
+To determine the anomalous data points, we check each data point on being presented in anomalous sequences: data point `i` is an anomaly if samples `[(i - timesteps + 1) to (i)]` are anomalies.
 
 ```python
     def mark_anomalous_data_points(self):
@@ -267,7 +267,7 @@ To determined the anomalous data points, we check each data point on being prese
 
 ### Plot anomalies
 
-We are adding two methods, to plot one of the testing reconstructed sequences and to overlay the anomalies on the original test data plot.
+We introduce two methods, to plot one of the testing reconstructed sequences and to overlay the anomalies on the original test data plot.
 
 ```python
     def plot_one_reconstructed_testing_sequence(self, sequence_num: int):
@@ -291,7 +291,7 @@ We are adding two methods, to plot one of the testing reconstructed sequences an
 
 ### Construct labeled testing dataset
 
-Finally, after fetching the anamalous data point indices, we are adding labels to the testing dataset.
+Finally, after fetching the anamalous data point indices, we add labels to the testing dataset.
 
 ```python
     def construct_labeled_testing_time_series(self):
@@ -300,11 +300,14 @@ Finally, after fetching the anamalous data point indices, we are adding labels t
         df['anomaly'] = False
         df.loc[self.anomalous_data_indices, 'anomaly'] = True
         self.testing_df_labeled = df.set_index('time')
+        self.time_series_dqr = (
+            1 - self.testing_df_labeled.anomaly.sum()/len(self.testing_df_labeled)
+        )*100
 ```
 
 ## Running the model
 
-To demonstrate how the anomaly detector works, we are explicitely running each method of the class. As it has been already mentioned, we want the missing data points to be detected as anomalous as well; to this end, we are filling them in with the maximum of the current values.
+To demonstrate how the anomaly detector works, we explicitly run each method of the class. As previously mentioned, we want to detect missing data points as anomalous as well, so we fill them in with the maximum value of the current data.
 
 ```python
 ad = AnomalyDetector(
@@ -481,7 +484,7 @@ Finally, let's print out an example of the labeled timeseries and see the estima
 ```python
 ad.testing_df_labeled[190:195]
 
-                    current	anomaly
+                        current	        anomaly
 time		
 2022-08-09 21:10:00	10.730894	False
 2022-08-09 21:11:00	10.897367	False
@@ -493,16 +496,13 @@ print(f"{ad.time_series_dqr = :.1f}%")
 ad.time_series_dqr = 96.7%
 ```
 
-We have successfully detected all the anomalies in the data, both thw malfunctioning equipment and what seems to be issues within the data collection infrastructure. An interesting observation is that, when considering each data point of the time series on its own, less than 4% of the dataset can be considered as failed. In the last section, we are implementing a simple batch data analyzer and demonstrating how the detected anomalies actually impact the quality of the batch data.
+We have successfully detected all the anomalies in the data, both the malfunctioning equipment and what seems to be issues within the data collection infrastructure. An interesting observation is that, when considering each data point of the timeseries on its own, less than 4% of the dataset can be considered as failed. In the last section, we are implementing a simple batch data analyzer and demonstrating how the detected anomalies actually impact the quality of the batch data.
 
 ## Batch Analyzer
 
-We introduce another class, called `BatchAnalyzer`, which includes methods for generating raw data on batches and extracting timings, like batch duration and time window duration between batches, and a method to calculate the resulting batch data quality rating. In addition to the labeled timeseries, it takes two parameters:
+We introduce another class, called `BatchAnalyzer`, which includes methods for generating raw data on batches and for extracting timings, like batch duration and time window duration between batches, and a method to calculate the resulting batch data quality rating. In addition to the labeled timeseries, it takes two parameters: nominal expected batch duration (in minutes) and the number of batches produced within the given period, as documented in the ERP system.
 
 ```python
-ERP_BATCH_NUM = 241
-BATCH_SPEC_DURATION = 120  # BATCH_SPEC_DURATION = TIME_STEPS - WINDOW_SPEC_DURATION
-
 class BatchAnalyzer:
     
     def __init__(
@@ -583,13 +583,37 @@ class BatchAnalyzer:
         
     def calculate_batch_data_quality_rating(self):
         self.batch_dqr = (self.raw_batch_timing_data.query(
-            'batch_duration > 90 & batch_duration < 180'
+            'batch_duration > 90 & batch_duration < 150'
         ).batch_duration.sum()/self.batch_number_in_erp/self.batch_spec_duration)*100
-        print(f"{self.batch_dqr = :.1f}%")
 ```
 
-`raw_batch_data` includes the initial labeled timeseries with additional columns indicating the status changes and attributed batch numbers
-`raw_batch_timing_data` is a pivot table presenting 'batch_start_time', 'batch_end_time', 'window_start_time', 'window_end_time', 'batch_anomaly', 'window_anomaly', 'batch_duration', and 'window_duration' values for each extracted batch.
+`raw_batch_data` includes the initial labeled timeseries with additional columns indicating the current status changes and attributed batch numbers, e.g.:
+![batch_data](/assets/data/2022-12-17-raw-batch-data.png){: width="400" }
+`raw_batch_timing_data` is a pivot table presenting 'batch_start_time', 'batch_end_time', 'window_start_time', 'window_end_time', 'batch_anomaly', 'window_anomaly', 'batch_duration', and 'window_duration' values for each extracted batch, e.g.:
+![batch_timings](/assets/data/2022-12-17-raw-batch-timings.png){: width="400" }
+
+We use the following script to run the batch analyzer:
+```python
+ERP_BATCH_NUM = 241
+BATCH_SPEC_DURATION = 120  # BATCH_SPEC_DURATION = TIME_STEPS - WINDOW_SPEC_DURATION
+
+bc = BatchAnalyzer(ad_filled.testing_df_labeled, BATCH_SPEC_DURATION, ERP_BATCH_NUM)
+bc.generate_raw_batch_data()
+bc.extract_raw_batch_timings()
+bc.calculate_batch_data_quality_rating()
+```
+
+Let's check the resulting batch data quality rating:
+```python
+print(f"{bc.batch_dqr = :.1f}%")
+bc.batch_dqr = 90.0%
+```
+
+It turns out that less than 4% of anomalous data points can result in 10% of batches being with inaccurately detected.
+
+## Conclusions
+
+In this blog post, we have demonstrated a successful implementation of a sequence-based convolutional autoencoder to detect anomalies in timeseries data, specifically focusing on identifying production equipment malfunctions and data collection issues. Even with a simple model, we were able to achieve accurate anomaly detection. We have also showed how the detected anomalies in the raw timeseries can be used in labeling the batch data and how they impact the overall quality rating of the batch data. Our work highlights the potential of using advanced machine learning techniques to enhance the primary data fed into downstream calculations, such as product carbon footprint.
 
 <sup>1</sup> In what follows, we apply a sequence-based model. It learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequences, which are constructed from a given timeseries. The sequence generation is performed using a sliding window approach. The initial timeseries is divided into overlapping windows of a specified length, and each window is treated as a sequence of data points. The length of the window, defined by the `TIME_STEPS` parameter, determines the length of the sequence (150 data points in our case), and the amount of overlap between adjacent windows can also be specified (we use one data point). By sliding the window along the time axis of the data, multiple sequences are generated from a single time series. These sequences are then fed into the convolutional reconstruction autoencoder model for training and the following for anomaly detection.
 
