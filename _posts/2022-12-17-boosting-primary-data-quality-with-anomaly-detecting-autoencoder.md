@@ -498,7 +498,7 @@ We have successfully detected all the anomalies in the data, both the malfunctio
 
 ## Batch Analyzer
 
-We introduce another class, called `BatchAnalyzer`, which includes methods for generating raw data on batches and for extracting timings, like batch duration and time window duration between batches, and a method to calculate the resulting batch data quality rating. In addition to the labeled timeseries, it takes two parameters: nominal expected batch duration (in minutes) and the number of batches produced within the given period, as documented in the ERP system.
+We introduce another class, called `BatchAnalyzer`, which includes methods for generating raw data on batches and for extracting timings, like batch duration and time window duration between batches, and a method to calculate the resulting batch data quality rating<sup>3</sup>. In addition to the labeled timeseries, it takes two parameters: nominal expected batch duration (in minutes) and the number of batches produced within the given period, as documented in the ERP system.
 
 ```python
 class BatchAnalyzer:
@@ -622,6 +622,8 @@ In this blog post, we have demonstrated a successful implementation of a sequenc
 
 <sup>2</sup> See, for example: [Autoencoders for Anomaly Detection in an Industrial Multivariate Time Series Dataset. Tziolas et al. Eng. Proc. 2022, 18(1), 23](https://doi.org/10.3390/engproc2022018023); [Anomaly Detection in Univariate Time-Series: a Surbey on the State-of-the-Art. Braei and Wagner. 2020](https://arxiv.org/pdf/2004.00433.pdf); [A Deep Neural Network for Unsupervised Anomaly Detection and Diagnosis in
 Multivariate Time Series Data. Zhang et al. 2018](https://arxiv.org/pdf/1811.08055v1.pdf).
+
+<sup>3</sup> Only for demonstrational purposes, we calculate the batch quality rating as the proportion of batches which length was within +-25% of the spec duration.
 
 Copyright © 2022 Zheniya Mogilevski
 
