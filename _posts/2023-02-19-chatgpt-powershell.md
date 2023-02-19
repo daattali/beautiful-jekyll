@@ -1,3 +1,11 @@
+---
+layout: post
+title: Ask questions to ChatGPT in PowerShell
+date: 2023-02-19T15:57:20.305Z
+nobanner: "yes"
+fb-img: /img/powershell-chatgpt.png
+---
+
 ## Create an OpenAI API token
 
 * First we need to create an API key. For that, go to your account profile and click on **View API keys**
