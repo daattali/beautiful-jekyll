@@ -328,7 +328,7 @@ Number of training samples: 5311
 Number of testing samples: 41409
 Training input shape: (5162, 150, 1)
 Testing input shape: (41260, 150, 1)
-Model: "sequential_21"
+Model: "sequential_1"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
