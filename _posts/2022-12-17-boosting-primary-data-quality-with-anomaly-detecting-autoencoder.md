@@ -103,15 +103,7 @@ To prepare the data for sequence generation, we first extract the data values fr
 
 ### Convolutional reconstruction autoencoder
 
-To detect anomalies in batch process manufacturing data, we will employ a convolutional reconstruction autoencoder model for sequenced data. It is a type of neural network that analyzes the sequential structure of the input data and learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequence. During training, the model minimizes the difference between the input and output sequences, and the resulting reconstructed sequences for the testing data can be compared to the original ones to detect anomalies. There have been several studies and publications that have demonstrated the effectiveness of using autoencoders for anomaly detection in various process manufacturing related domains, fo example:
-
-- Bao, W., & Yue, J. (2017). A deep learning framework for intelligent fault diagnosis of rotating machinery. Mechanical Systems and Signal Processing, 96, 104-115. doi: 10.1016/j.ymssp.2017.03.051
-
-- Zhang, X., Zhang, X., Lu, Q., Lin, J., & Wang, S. (2019). Anomaly detection in industrial time series data using deep learning. IEEE Access, 7, 133190-133202. doi: 10.1109/ACCESS.2019.2947192
-
-- Guo, Y., Liu, X., Zhu, J., & Zhu, C. (2019). Anomaly detection for industrial time series with convolutional autoencoder. IEEE Access, 7, 101850-101860. doi: 10.1109/ACCESS.2019.2921178
-
-- Liu, Y., Li, J., Li, P., & Li, Y. (2020). A deep learning framework for anomaly detection and diagnosis of complex industrial processes. IEEE Access, 8, 21476-21488. doi: 10.1109/ACCESS.2020.2968046
+To detect anomalies in batch process manufacturing data, we will employ a convolutional reconstruction autoencoder model for sequenced data. It is a type of neural network that analyzes the sequential structure of the input data and learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequence. During training, the model minimizes the difference between the input and output sequences, and the resulting reconstructed sequences for the testing data can be compared to the original ones to detect anomalies. There have been several studies and publications that have demonstrated the effectiveness of using autoencoders for anomaly detection in various process manufacturing related domains.
 
 ### Architecture
 
