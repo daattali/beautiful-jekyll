@@ -6,7 +6,7 @@ tags: [sensor data, time series, anomaly detection, neural networks, autoencoder
 comments: true
 ---
 
-In this blog post, we demonstrate how to apply machine learning to detect quality issues of sensor data. Specifically, we consider a reconstruction convolutional autoencoder model as a tool to detect anomalies in timeseries data.
+In this blog post, we demonstrate how to apply machine learning to detect quality issues of sensor data. Specifically, we consider a reconstruction convolutional [autoencoder](https://www.tensorflow.org/tutorials/generative/autoencoder) model as a tool to detect anomalies in timeseries data.
 
 Historically, the objective of detecting anomalies and identifying patterns of abnormal behavior in metering data was to quickly identify when production equipment is not functioning as intended. This can help the manufacturers to prevent downtime, reduce the time and cost of maintenance and repair, and minimize the impact on the production line, thus improving the overall quality of the final product and the overall equipment efficiency. However, the focus of this blog post is accurate measuring of energy use in production processes: sensors and meters are sources of the primary data on the energy consumption of production equipment; thus, if the production equipment is experiencing anomalies or the data collection infrastructure is not functioning correctly, the data collected will not accurately reflect its actual energy consumption. This can result in inaccurate calculations of energy use and can affect the accuracy of any calculations based on this data, such as organizational carbon footprint and product carbon footprint. By detecting and flagging anomalous data points, it is possible to adjust the calculations for the corresponding time window, resulting in a more precise measurement of energy use.
 
@@ -34,7 +34,7 @@ testing_df = generated_time_series.loc[CUT_POINT:].copy()
 
 Note: as we want the missing data points be also detected as anomalous, we will fill them in with the maximum of observed electric current values when feeding them into the autoencoder.
 
-To implement the task, we introduce a custom class called `AnomalyDetector`, which includes methods for sequence generation, model building, training, and others. The `__init__` method of the class takes the training and the testing datasets and the number of data points for generating sequences as parameters. Note: our data has its inner structure and periodicity of approximately 150 timestamps (the nominal batch duration plus thetime window between batches according to our hypothetical production process specification), thus, to create sequences, we can combine `TIME_STEPS=150` contiguous data values.
+To implement the task, we introduce a custom class called `AnomalyDetector`, which includes methods for sequence generation<sup>1</sup>, model building, training, and others. The `__init__` method of the class takes the training and the testing datasets and the number of data points for generating sequences as parameters. Note: our data has its inner structure and periodicity of approximately 150 timestamps (the nominal batch duration plus thetime window between batches according to our hypothetical production process specification), thus, to create sequences, we can combine `TIME_STEPS=150` contiguous data values.
 
 ```python
 
@@ -96,3 +96,53 @@ To prepare the data for sequence generation, we first are extracting the data va
         )
         print(f"Testing input shape: {self.testing_sequences.shape}")
 ```
+
+## Build model
+
+### Convolutional reconstruction autoencoder
+
+To detect anomalies in batch process manufacturing data, we will employ a convolutional reconstruction autoencoder model for sequenced data. It is a type of neural network that analyzes the sequential structure of the input data and learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequence. During training, the model minimizes the difference between the input and output sequences, and the resulting reconstructed sequences for the testing data can be compared to the original ones to detect anomalies. There have been several studies and publications that have demonstrated the effectiveness of using autoencoders for anomaly detection in various process manufacturing related domains:
+
+- The use of convolutional autoencoders for anomaly detection in industrial machinery, using vibration sensor data, was explored in "Convolutional Autoencoders for Predictive Maintenance and Anomaly Detection in Industrial Machinery" by K. Kim et al. (2017).
+- The application of autoencoders for detecting anomalies in temperature and pressure readings in chemical batch reactors was discussed in "Anomaly Detection in Chemical Batch Processes Using Autoencoder Neural Networks" by S. Khemchandani and J. P. Maree (2018).
+- The performance of different models, including an autoencoder, while considering activated sludge process in wastewater treatment plants and the Bayer process in alumina production plants, was studied in "Anomaly detection in complex industrial processes using deep learning" by Zhang, X. et al. (2021).
+
+### Architecture
+
+The convolutional architecture is thought to be particularly suited to data, where local features and relationships between adjacent data points are important. The classical architecture of a convolutional reconstruction autoencoder model consists of an encoder and a decoder, where the encoder consists of one or more convolutional layers followed by one or more pooling layers, which reduce the spatial dimensions of the input, and the decoder consists of one or more transposed convolutional layers followed by one or more upsampling layers, which reconstruct the original input from the low-dimensional representation created by the encoder. The "bottleneck" layer is typically a fully connected or dense layer that connects the encoder and decoder. The goal is to learn a compressed representation of the input data in the bottleneck layer, which can be used for anomaly detection or other downstream tasks. We are limiting our architecture to the basic one implemented in the `create_model` method below:
+
+- After the `Input` layer, the model includes two convolutional layers and two `Conv1DTranspose` layers, with one Dropput layer between them;
+- The use of Dropout layers helps to prevent overfitting of the model to the training data;
+- Finally, the output layer is a `Conv1DTranspose` layer with the filter parameter value of one to produce final one-dimensionsl output.
+
+The model is taking two parameters, `sequence_length, num_features`. In our case, `sequence_length` equals `TIME_STEPS` and `num_features` takes the value of one (the electric current values); both parameters are stored in the `shape` instance of the sequence tensor.
+
+```python
+    def create_model(self):
+        # define the model
+        model = Sequential()
+        # add layers to model
+        model.add(Input(shape=(self.training_sequences.shape[1], self.training_sequences.shape[2])))
+        model.add(Conv1D(filters=30, kernel_size=7, padding="same", activation="relu"))
+        model.add(Dropout(rate=0.2))
+        model.add(Conv1D(filters=15, kernel_size=7, padding="same", activation="relu"))
+        model.add(Conv1DTranspose(filters=15, kernel_size=7, padding="same", activation="relu"))
+        model.add(Dropout(rate=0.2))
+        model.add(Conv1DTranspose(filters=30, kernel_size=7, padding="same", activation="relu"))
+        model.add(Conv1DTranspose(filters=1, kernel_size=7, padding="same"))
+        # add compiler
+        optimizer = Adam(learning_rate=0.001)
+        model.compile(optimizer=optimizer, loss='mse')
+        self.model = model
+        print(self.model.summary())
+```
+
+
+Using `padding="same"` parameter in the convolutional layers ensures that the output feature maps have the same length as the input time series by padding zeros to the edges of the input sequence if necessary. This is important for preserving the temporal structure of the data and allowing the model to learn meaningful patterns across the entire sequence. Without padding, the convolutional layers would reduce the length of the sequence, which could result in loss of information and reduced model performance.
+
+Using the rectified linear unit (ReLU) activation function, which besides preventing the vanishing gradient problem during training, helps to ensure that output values are always non-negative (since we are working with non-negative values).
+
+We are leveraging the MSE loss function for our time series autoencoder as a straightforward choice, more computationally efficient for gradient-based optimization methods, like `Adam`, and putting a higher weight on larger errors.
+
+
+<sup>1</sup> In what follows, we apply a sequence-based model. It learns to encode and decode sequential data by extracting and reconstructing relevant features from the input sequences, which are constructed from a given timeseries. The sequence generation is performed using a sliding window approach. The initial timeseries is divided into overlapping windows of a specified length, and each window is treated as a sequence of data points. The length of the window, defined by the `TIME_STEPS` parameter, determines the length of the sequence (150 data points in our case), and the amount of overlap between adjacent windows can also be specified (we use one data point). By sliding the window along the time axis of the data, multiple sequences are generated from a single time series. These sequences are then fed into the convolutional reconstruction autoencoder model for training and the following for anomaly detection.
