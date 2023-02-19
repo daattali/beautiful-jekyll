@@ -257,7 +257,7 @@ dg.visualize_data()
  
 ## Conclusion
 
-The class introduced in this blog post, provides a convenient and flexible way to generate realistic demo data for the development of manufacturing analytics software for batch production. The generated time series simulate the complexities and irregularities of real-world data and can be fed into machine learning models and statistical analysis. The implementation of OOP principles, such as encapsulating methods into the class, makes the code more readable and reusable, while the class objects can be tailored to suit the specific needs of different manufacturing processes.
+The class introduced in this blog post, provides a convenient and flexible way to generate realistic demo data for the development of manufacturing analytics software for batch production. The generated time series simulate the complexities and irregularities of real-world data and can be fed into machine learning models and statistical analysis (see one of our next posts, for example, [Boosting Primary Data Quality through Machine Learning Techniques](https://zhenev.github.io/2022-12-17-boosting-primary-data-quality-with-anomaly-detecting-autoencoder/)). The implementation of OOP principles, such as encapsulating methods into the class, makes the code more readable and reusable, while the class objects can be tailored to suit the specific needs of different manufacturing processes.
 
 <sup>1</sup> In case of equipment malfunction synthesis, the batch duration is updated as a function of the occured irregularity length.
 
