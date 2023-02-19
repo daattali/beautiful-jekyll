@@ -32,4 +32,4 @@ Let me come to the point now. So, why did I (re)start my personal blog here? Am 
 
 ***Relevant Ideas***
 
-* [Getting .np Domain for Free for Nepalese](https://www.bhavana.com.np/get-a-free-dot-np-domain/)
+* [Getting .np Domain for Free for Nepalese](https://www.bhavana.com.np/get-a-free-dot-np-domain/){:target="_blank"}
