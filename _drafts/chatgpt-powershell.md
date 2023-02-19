@@ -8,7 +8,7 @@
 
 ![create openai api key](/img/2023-01-25-13-37-17.png)
 
-* Copy the key in the clipboard, you won't be able to display it again. If you close without copy9ng, you'll have to create a new one.
+* Copy the key in the clipboard, you won't be able to display it again. If you close without copying, you'll have to create a new one.
 
 ![copy api key](/img/2023-01-25-13-38-05.png)
 
@@ -70,9 +70,9 @@ It seems that OpenAI changed the policy and made the API available to paid accou
 
 I couldn't find the $18 trial credit in my account so I just set a spending limit of $5 just to make sure it won't drain my hard-earned monies.
 
-![max billing chatgpt](/img/SCR-20230219-jkv.png)
+![chatgpt spending limit](/img/2023-02-19-15-31-20.png)
 
-Before you freak out about surprise big invoices like it happens to some folks in AWS, note that it remains very cheap if you use it sparingly. As you can see, I only did 15 requests but quite a few of them had lenghthy responses and I have only been charged $0.01.
+Before you freak out about expecting a big invoice like you heard it happen to folks playing in AWS, note that it remains very cheap if you use it sparingly. As you can see, I only did 15 requests but quite a few of them had lenghthy responses and I have only used $0.01.
 
 ![chatgpt monies](/img/SCR-20230219-lay.png)
 
