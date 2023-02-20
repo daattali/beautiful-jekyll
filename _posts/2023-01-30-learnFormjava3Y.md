@@ -166,6 +166,7 @@ cow-copy on write：当有数据写入时才复制一份，用于节约内存空
 #### 实现方法
 1. 创建一个类，继承Thread，重写run方法
 2. 实现Runnable接口，重写run方法
+3. 实现callable接口，重写call方法，有方法返回值
 
 {: .box-note}  
 strat启动线程，run只是方法调用。
