@@ -13,7 +13,7 @@ Note that our event will not initially appear in the app's search results when d
 
 ### Is there a fursuit parade this year?
 
-In an effort to protect our attendees and prevent the spread of Covid-19, we will not be having a fursuit parade this year. Instead, please work with our staff photographers to arrange a photoshoot. Further details on times and locations will be added to the schedule soon.
+In an effort to protect our attendees and prevent the spread of Covid-19, we will not be having a fursuit parade this year. Instead, please work with our staff photographers to arrange a photo-shoot. Further details on times and locations will be added to the schedule soon.
 
 ### Convention Map
 
@@ -33,4 +33,4 @@ In the case of a true emergency, please contact 911. Additionally, Fur Squared S
 
 ## Contact Us
 
-Have any questions or concerns? Email us at [programming@fursquared.com](mailto:programming@fursquared.com).
+Have any programming-related questions or concerns? Email us at [programming@fursquared.com](mailto:programming@fursquared.com).
