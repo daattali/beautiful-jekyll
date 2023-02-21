@@ -12,7 +12,7 @@ This is a demo post to show you how to write blog posts with markdown.  I strong
 
 **Here is some bold text**
 
-## Here is a secondary heading
+## Here is a secondary heading test
 
 Here's a useless table:
 
