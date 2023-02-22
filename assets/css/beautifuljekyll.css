@@ -508,9 +508,9 @@ footer .footer-custom-content {
 }
 .post-preview .post-image {
   float: left;
-  margin-left: 0.625rem;
-  height: 12rem;
-  width: 12rem;
+  margin-right: 0.625rem;
+  height: 13rem;
+  width: 13rem;
 }
 .post-preview .post-image {
   filter: grayscale(40%);
