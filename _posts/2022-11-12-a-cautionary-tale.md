@@ -2,6 +2,7 @@
 layout: post
 title: Comparing Distribution Differences of Generated Vectors - A Cautionary Tale
 subtitle: Examining the impact of different methods on generated data
+thumbnail-img: /assets/img/2022-11-12-thumb.png
 tags: [generated data, vectors, distributions, data visualization, statistical testing, nonparametric test, unit testing, tdd]
 comments: true
 ---
