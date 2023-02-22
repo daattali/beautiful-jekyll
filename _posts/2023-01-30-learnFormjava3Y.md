@@ -176,9 +176,12 @@ cow-copy on write：当有数据写入时才复制一份，用于节约内存空
 - TIMED_WAITING
 - TERMINATED
 
+待续：https://blog.csdn.net/panweiwei1994/article/details/78483167
 {: .box-note}  
 strat启动线程，run只是方法调用。
 {: .box-note}  
+
+
 [articals](https://github.com/ZhongFuCheng3y/athena)
 
 [words](https://github.com/wurara/wurara.github.io/tree/master/assets/words)
