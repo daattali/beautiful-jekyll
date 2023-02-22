@@ -7,7 +7,7 @@ tags: [sensor data, time series, anomaly detection, neural networks, autoencoder
 comments: true
 ---
 
-In this blog post, we demonstrate how to apply machine learning to detect quality issues of sensor data. Specifically, we consider a reconstruction convolutional [autoencoder](https://www.tensorflow.org/tutorials/generative/autoencoder) model as a tool to detect anomalous data in timeseries data. We also show that a small percentage of anomalous data points can result in a disproportionately large percentage of downstream calculations being inaccurate.
+In this blog post, we demonstrate how to apply a reconstruction convolutional [autoencoder](https://www.tensorflow.org/tutorials/generative/autoencoder) model to detecting quality issues of sensor data. We also show that a small percentage of anomalous data points can result in a disproportionately large percentage of downstream calculations being inaccurate.
 
 ## Introduction
 
