@@ -7,13 +7,13 @@ tags: [generated data, vectors, distributions, data visualization, statistical t
 comments: true
 ---
 
-This time, we will be implementing a function that generates vectors with a truncated normal distribution. We will be comparing two different versions of the function and examining the impact of the different methods used on the resulting distributions. 
+This time, we implement a function that generates vectors with a truncated normal distribution. We compare two different versions of the function and examine the impact of the different methods used on the resulting distributions. 
 
 ## Unit test
 
-Before diving into the two implementations of the function, it is important to establish a unit test to ensure that our generated vectors meet the desired criteria. In this case, we will be testing for the mean of the vector values, for the standard deviation, and the vector values being within a specified bound. It is important to note that the results of the random number generation are different each time we run the test; therefore, the test should check that the function is working correctly and that the statistical parameters of the generated samples are close to the expected values within certain tolerance. To this end, the test employes `.assertAlmostEqual()`, `.assertTrue()`, and `.all()` methods.
+Before diving into the two implementations of the function, it is important to establish a unit test to ensure that our generated vectors meet the desired criteria. In this case, we test for the mean of the vector values, for the standard deviation, and the vector values being within a specified bound. It is important to note that the results of the random number generation are different each time we run the test; therefore, the test should check that the function is working correctly and that the statistical parameters of the generated samples are close to the expected values within certain tolerance. To this end, the test employes `.assertAlmostEqual()`, `.assertTrue()`, and `.all()` methods.
 
-We will be setting the parameters of the distribution as global variables:
+We set the parameters of the distribution as global variables:
 
 ```python
 MEAN = 0.5
@@ -137,7 +137,7 @@ On the surface, it may seem that the two versions of the function have produced 
 
 ## Plotting the results
 
-We will be using the plotly library to create histograms of the generated vectors for both versions of the function.
+We use the plotly library to create histograms of the generated vectors for both versions of the function.
 
 ``` python
 import plotly.graph_objects as go
