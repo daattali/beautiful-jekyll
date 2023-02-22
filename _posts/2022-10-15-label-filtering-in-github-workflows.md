@@ -2,6 +2,7 @@
 layout: post
 title: Implementing Label Filtering in a GitHub Workflow
 subtitle: Python package automated publishing example
+thumbnail-img: /assets/img/2022-10-15-thumb.png
 tags: [devops, github actions, package publishing, filtering]
 comments: true
 ---
