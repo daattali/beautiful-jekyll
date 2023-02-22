@@ -2,11 +2,12 @@
 layout: post
 title: Applying OPP Principles to Manufacturing Analytics Testing Data Generation
 subtitle: From Separate Methods to a Unified Class
+thumbnail-img: /assets/img/2022-08-06-thumb.png
 tags: [generated data, sensor data, time series, software development, oop, data visualization]
 comments: true
 ---
 
-In this blog post, we will explore how to move away from procedure-based code and increase code usability by following object-oriented programming principles. To this end, we will refactor the code from one of our previous blog posts, namely [Generating Realistic Testing Data for Manufacturing Analytics Software](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/). By streamlining our code and incorporating OPP techniques, we aim to make the data generation process mentioned there more efficient, scalable, and easy to maintain for future development. Let's dive into the details and see how we can achieve this goal.
+In this blog post, we explore how to move away from procedure-based code and increase code usability by following object-oriented programming principles. To this end, we refactor the code from one of our previous blog posts, namely [Generating Realistic Testing Data for Manufacturing Analytics Software](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/). By streamlining our code and incorporating OPP techniques, we aim to make the data generation process mentioned there more efficient, scalable, and easy to maintain for future development. Let's dive into the details and see how we can achieve this goal.
 
 
 Our class will be called `FlowSensorDataGenerator`. Its goal is to generate realistic minute-wise demo data for a sensor such as electrical current sensors or flow meters in a batch manufacturing process. The data generation will consist of three steps:
