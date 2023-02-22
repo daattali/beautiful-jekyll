@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dance Competitions
+title: Dance Events
 subtitle:
 ---
 ## Fursuit Dance Competition:&nbsp;
