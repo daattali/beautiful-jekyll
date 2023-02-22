@@ -507,7 +507,7 @@ footer .footer-custom-content {
   width: 100%;
 }
 .post-preview .post-image {
-  float: right;
+  float: left;
   margin-left: 0.625rem;
   height: 12rem;
   width: 12rem;
