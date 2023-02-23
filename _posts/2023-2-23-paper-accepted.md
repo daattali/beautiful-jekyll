@@ -12,6 +12,6 @@ To fill this gap, we propose a novel Bayesian zero-inflated DM model for multiva
 We then extend our approach to regression settings and embed sparsity-inducing priors to perform variable selection for high-dimensional covariate 
 spaces. Throughout, modeling decisions are made to boost scalability without sacrificing interpretability or imposing limiting assumptions.
 Extensive simulations and an application to a human gut microbiome data set are presented to compare the performance of the proposed method to 
-existing approaches. We provide an accompanying \texttt{R} package with a user-friendly vignette to apply our method to other data sets.
+existing approaches. We provide an accompanying R package with a user-friendly vignette to apply our method to other data sets.
 
 Here's a link to the [pdf](https://mkoslovsky.github.io/ZeroInflated.pdf).
