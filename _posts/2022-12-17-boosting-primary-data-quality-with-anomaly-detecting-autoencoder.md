@@ -35,7 +35,18 @@ testing_df = generated_time_series.loc[CUT_POINT:].copy()
 
 ```
 
-Note: as I want the missing data points be also detected as anomalous, I fill them in with the maximum of observed electric current values before feeding them into the autoencoder.
+Note: as I want the missing data points be also detected as anomalous, I will fill them in with the maximum of observed electric current values before feeding them into the autoencoder.
+
+Let's import the required libraries:
+```python
+import numpy as np
+import pandas as pd
+import plotly.graph_objs as go
+from matplotlib import pyplot as plt
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Input, Conv1D, Dropout, Conv1DTranspose
+from tensorflow.keras.optimizers import Adam
+```
 
 ## Anomaly Detector
 
