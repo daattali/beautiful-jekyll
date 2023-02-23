@@ -56,7 +56,8 @@
     \ year={2023}\n
     \ }"
   img: ../pics/2023act.gif
-  links: {}
+  links: 
+    '[arXiv]': https://arxiv.org/abs/2302.09502
   short_id: 2023act
   site: "https://sites.google.com/view/ss-mesh-recon/"
   title: Self-supervised Cloth Reconstruction via Action-conditioned Cloth Tracking
