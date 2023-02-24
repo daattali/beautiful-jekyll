@@ -7,7 +7,7 @@ tags: [sensor data, time series, anomaly detection, neural networks, autoencoder
 comments: true
 ---
 
-In this blog post, I will demonstrate how I applied a reconstruction convolutional [autoencoder](https://www.tensorflow.org/tutorials/generative/autoencoder) model to detect quality issues of sensor data. I also found that a small percentage of anomalous data points can result in a disproportionately large percentage of downstream calculations being inaccurate.
+In this blog post, I will demonstrate how I applied a reconstruction convolutional [autoencoder](https://www.tensorflow.org/tutorials/generative/autoencoder) model to detect quality issues of sensor data. I also show that a small percentage of anomalous data points can result in a disproportionately large percentage of downstream calculations being inaccurate.
 
 ## Introduction
 
