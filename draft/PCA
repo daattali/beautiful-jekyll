@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to prepare for the Google Cloud Professional Cloud Architect certification
+title: How to prepare for the Google Cloud Professional Cloud Architect (PCA) certification
 subtitle: In this blog I cover Google Cloud’s Professional Cloud Architect certification, how you can  access free training and offer my advice and guidance on preparing to become Google Cloud Professional Cloud Architect certified.
 #description: ""
 #cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/googlecloudprofessionalcloudarchitectbadge.png
 share-img: /assets/img/googlecloudprofessionalcloudarchitectbadge.png
 readtime: true
-share-title: "How to prepare for the Google Cloud Professional Cloud Arhitect certificaiton"
+share-title: "How to prepare for the Google Cloud Professional Cloud Architect certificaiton"
 share-description: "In this blog I cover Google Cloud’s Professional Cloud Architect certification, how you can  access free training and offer my advice and guidance on preparing to become Google Cloud Professional Cloud Architect certified."
 share-img: /assets/img/googlecloudprofessionalcloudarchitectbadge.png
 tags: [Google Cloud Professional Cloud Architect, certification, professional, PCA]
@@ -18,20 +18,24 @@ tags: [Google Cloud Professional Cloud Architect, certification, professional, P
 
 # What is the Google Cloud Professional Cloud Architect certification?
 
-Google Cloud Digital Leader (CDL) is Google Cloud’s entry level certification. It demonstrates knowledge of cloud computing basics and an understanding of Google Cloud’s products and services and how they can be used to achieve an organisation’s digital transformation goals.
+Google Cloud's Professional Cloud Architect (PCA) is Google's most popular professional certification. Google Cloud's Professional certifications are role based certifications to measure an individuals proficiency at performing a specific role using Google Cloud technology. As per [Google's definition](https://cloud.google.com/certification/cloud-architect) Professional Cloud Architects enable organizations to leverage Google Cloud technologies. With a thorough understanding of cloud architecture and Google Cloud, they design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions to drive business objectives.
 
-The Cloud Digital Leader exam assesses knowledge in the following areas:
+The Professional Cloud Architect exam assesses an individuals ability to:
 
-- Digital transformation with Google Cloud (~10% of exam content)
-- Infrastructure and application modernisation (~30% of exam content)
-- Innovating with data and Google Cloud (~30% of exam content)
-- Google Cloud security and operations (~30% of exam content)
+- Design and plan a cloud solution architecture
+- Manage and provision the cloud solution infrastructure
+- Design for security and compliance
+- Analyze and optimize technical and business processes
+- Manage implementations of cloud architecture
+- Ensure solution and operations reliability
 
-![Google Cloud Digital Leader Badge](/assets/img/googleclouddigitalleaderbadge.png "Google Cloud Digital Leader Badge")
+![Google Cloud Professional Cloud Architect Badge](/assets/img/googlecloudpcabadge.png "Google Cloud Professional Cloud Architect Badge")
 
-*Google Cloud Digital Leader Badge*
+*Google Cloud Professional Cloud Architect Badge*
 
-# Who is the Google Cloud Digital Leader certification aimed at?
+For people new to Google Cloud, i recommend they initially pass the Google Cloud Digitial Leader certification, then progress to the Google Cloud Associate Engineer certification before proceeding with the Google Cloud Professional Architect certification. I also suggest planning ACE and PCA in close succession as there is significant overlap in the content of each so it can save study time whilst the content of ACE is fresh in memory and you're preparing for PCA.
+
+# Who is the Google Cloud Professional Cloud Architect certification aimed at?
 
 Don’t be put off by the titles of the areas covered above, this isn’t a particularly technical exam. It is targeted at all personas within an organisation with an interest in Google Cloud and doesn’t require any hands-on experience. It acts as a good baseline for cloud computing, and a steppingstone to progress to the more challenging Associate and Professional level Google Cloud certifications. For organisations embarking on a journey to Google Cloud, it is recommended technical, commercial, and managerial roles within the company embark upon Cloud Digital Leader certification to help everyone understand the features of cloud computing, and the associated benefits from cloud adoption and Google Cloud’s offerings.
 
