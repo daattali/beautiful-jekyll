@@ -1,0 +1,12 @@
+---
+layout: post
+title:  ".Net Core on Linux"
+date:   2019-05-07 10:27:00 AM
+categories: .Net Core
+---
+
+I personally believe that .Net Core is the future of .Net. Learning .Net Core is imperative and very useful for the future.
+I am playing around with .Net core and want to write some of my findings on linux. Creating .net core apps is so easy from the command line
+and works great. 
+
+
