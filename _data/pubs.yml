@@ -239,6 +239,7 @@
   links:
     '[OpenReview]': https://openreview.net/forum?id=tyxyBj2w4vw
     '[PDF]': https://arxiv.org/pdf/2210.15751.pdf
+    '[Code]': https://github.com/Xingyu-Lin/PASTA
   short_id: 2022corlpasta
   site: https://sites.google.com/view/pasta-plan
   title: <a href="https://sites.google.com/view/pasta-plan">Planning with Spatial-Temporal
