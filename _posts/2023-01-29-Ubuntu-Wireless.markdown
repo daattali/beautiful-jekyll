@@ -2,7 +2,7 @@
 layout: post
 title:  "Ubuntu Wireless Card"
 date:   2023-01-29 18:55:00 PM
-categories: Ubuntu
+categories: [Ubuntu]
 ---
 
 I installed ubuntu on my MacBook Air a while ago and I was running into wireless connection issues. At that time when I did some digging around and found that lot of people were facing the issue with getting the wireless card setup correctly. So without much thought I came to conclusion that it was a general issue.
