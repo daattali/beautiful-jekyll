@@ -2,7 +2,7 @@
 layout: post
 title:  "Fun with Python and Azure Devops"
 date:   2023-01-28 19:00:00 PM
-categories: Python, Azure
+categories: [Python, Azure]
 ---
 
 Recently at work we were running into an issue with Azure DevOps build. Azure Devops by default allows 10GB of space for running the build pipelines, however due to some issue we were constantly going over the 10GB limit and our builds were failing quite often.
