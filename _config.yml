@@ -23,7 +23,7 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Linux: "https://linux.com"
-    - Python: "https://python.com/"
+    - Python: "https://www.python.org/"
   Author's home: "https://loneshark99.github.io/"
 
 ################
