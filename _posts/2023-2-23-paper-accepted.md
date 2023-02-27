@@ -14,4 +14,4 @@ spaces. Throughout, modeling decisions are made to boost scalability without sac
 Extensive simulations and an application to a human gut microbiome data set are presented to compare the performance of the proposed method to 
 existing approaches. We provide an accompanying R package with a user-friendly vignette to apply our method to other data sets.
 
-Here's a link to the [pdf](https://mkoslovsky.github.io/ZeroInflated.pdf).
+Here's a link to the [pdf](https://mkoslovsky.github.io/ZeroInflated.pdf), and find it on [arXiv](http://arxiv.org/abs/2302.12283).
