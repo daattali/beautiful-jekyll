@@ -2,7 +2,7 @@
 layout: post
 title:  "Code Analysis Rules to watch out for while coding"
 date:   2023-02-25 11:57:21 AM
-categories: CodeAnalyzers
+categories: [CodeAnalyzers]
 ---
 
 Recently I had to fix a bunch of Code Analysis warning in the code base. I started to wonder these are some of the common mistakes in the code that are made and would be just better to keep in mind before we start coding.
