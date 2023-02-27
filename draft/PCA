@@ -45,16 +45,33 @@ Google Cloud has 3 levels of certifications starting at the entry level with Clo
 
 Compared to AWS Cloud Foundations and Azure Fundamentals certifications, the Google Cloud Digital Leader certification is considered to be more difficult to pass. Whilst I haven’t sat either AWS or Azure certification, this is a comment I have heard from several people who have done CDL and AWS/Azure foundational certs.
 
-# How to prepare for and pass the Google Cloud Digital Leader exam
+# How to prepare for and pass the Google Cloud Professional Cloud Architect exam
 
-The Google Cloud Digital Leader exam is one of the newer certifications available and was released in 2021. When I sat the exam, I had the benefit of already having achieved 6x GCP certifications and had hands-on experience working with Google Cloud, so I wasn’t the typical entry level candidate for the certification. However, I was curious to see how difficult the exam was and how it compared to the Associate Cloud Engineer certification.
+The Google Cloud Professional Cloud Architect exam is the first Google Cloud certification I passed back in 2019 and recertified in 2021. Im due to recertify again in October 2023...
 
-Below are my recommendations on how best to prepare for the CDL exam based on my experiences with this and other GCP certifications.
+Google recommends candidates have 1+ years real experience working with Google Cloud before taking this certification. The first time i sat the certification i had done some work with GCP but it wasnt my core role, and the work i had done didnt cover half the Google products within the exam. That being said, I passed the PCA certification first time based on lab experience via Coursera and my own free Google trial!
+
+When recertification came round 2 years later, having had a lot more experience working with Google Cloud definitely helped... i had also certified in other professional certifications including Security and Network Engineer specialties by this point, and the Associate Cloud Engineer so i was much more familiar with the majority of Google Cloud's produxts and the certification process.
+
+so whilst Google recommends 1 or more year's experience, the certification is still achievable without the experience if you're prepared to out in your own effort. But If you're working with GCP day in, day out it definitely helps!
+
+Below are my recommendations on how best to prepare for the Professional Cloud Architext exam based on my experiences with this and other GCP certifications.
 
 # Read and become familiar with the exam guide
 {:.no_toc}
 
-My first piece of advice is to review the [Google Cloud Digital Leader exam guide](https://cloud.google.com/certification/guides/cloud-digital-leader) to get an understanding of the topics in scope of the exam. Hopefully you’ll find you already have a level of familiarity for some of the areas. If not, don’t be alarmed as there are various study materials and courses available (most of which are available free of charge at the time of writing!) that will bring you up to speed that I cover below. 
+My first piece of advice is to review the [Google Cloud Professional Cloud Architect exam guide](https://cloud.google.com/certification/guides/professional-cloud-architect) to get an understanding of the topics in scope of the exam and the associated case studies. 
+
+The professional Cloud Architect certification has 4 case studies (these had been updated between ny first exam and recertification exam 2 years later with nee case studies). The exam consists of 50-60 multiple choice questions, maybe 20% are focussed around the case studies (I think usually on 2 of 4 case studies) and the rest can be on anything else within scope of the exam guide.
+
+#Case Studies
+It's key to have a good understanding of each case study before going into the exam. You dont want to be wasting time reading the case studies for each question. 
+
+When you're studying the case studies also look to identify what products match the requirements of each, and what constraints you have to work within. 
+
+I found drafting high level architecture diagrams and noting why certain products are better suited over others helped identifying the correct answers for some questions, or narrowing down the scope of possible answers to one or two.
+
+Hopefully you’ll find you already have a level of familiarity for some of the areas. If not, don’t be alarmed as there are various study materials and courses available (most of which are available free of charge at the time of writing!) that will bring you up to speed that I cover below. 
 
 # Recommended training material and courses for Google Cloud Digital Leader certification including practice exam question sources.
 
@@ -170,6 +187,8 @@ The CDL certification is valid for 3 years. You can recertify 60 days prior to c
 {:.no_toc}
 
 The Cloud Digital Leader exam costs $99 USD.
+
+# Do I need to be able to code or script to pass the Professional Cloud Architect Exam?
 
 Thanks for taking the time to read this blog, I hope you find it useful in preparing for the Google Cloud Digital Leader certification. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
 
