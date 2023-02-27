@@ -2,7 +2,7 @@
 layout: post
 title:  "MSBuild's cool feature - Directory.Build.props and Directory.Build.targets"
 date:   2023-02-25 11:23:21 AM
-categories: Build, MsBuild
+categories: [Build, MsBuild]
 ---
 
 Recently I had to work on enabling the Code Analysis on a project we recently started. We should have ideally done it from the very start but better late than never.
