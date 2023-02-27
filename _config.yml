@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - Linux: "https://linux.com"
     - Python: "https://www.python.org/"
-  Author's home: "https://loneshark99.github.io/"
+  Home: "https://loneshark99.github.io/"
 
 ################
 # --- Logo --- #
