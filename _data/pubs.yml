@@ -11,6 +11,23 @@
 #   title: null
 #   venue: null
 #   video_embed: null
+- abs: "Predicting how the world can evolve in the future is crucial for motion planning in autonomous systems. Classical methods are limited because they rely on costly human annotations in the form of semantic class labels, bounding boxes, and tracks or HD maps of cities to plan their motion — and thus are difficult to scale to large unlabeled datasets. One promising self-supervised task is 3D point cloud forecasting from unannotated LiDAR sequences. We show that this task requires algorithms to implicitly capture (1) sensor extrinsics (i.e., the egomotion of the autonomous vehicle), (2) sensor intrinsics (i.e., the sampling pattern specific to the particular LiDAR sensor), and (3) the shape and motion of other objects in the scene. But autonomous systems should make predictions about the world and not their sensors! To this end, we factor out (1) and (2) by recasting the task as one of spacetime (4D) occupancy forecasting. But because it is expensive to obtain ground-truth 4D occupancy, we “render” point cloud data from 4D occupancy predictions given sensor extrinsics and intrinsics, allowing one to train and test occupancy algorithms with unannotated LiDAR sequences. This also allows one to evaluate and compare point cloud forecasting algorithms across diverse datasets, sensors, and vehicles."
+  authors: Tarasha Khurana, Peiyun Hu, David Held, Deva Ramanan
+  award: null
+  bib: "@inproceedings{Khurana2023point,\n
+    \ title={Point Cloud Forecasting as a Proxy for 4D Occupancy Forecasting},\n
+    \ author={Khurana, Tarasha and Hu, Peiyun and Held, David and Ramanan, Deva},\n
+    \ booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and\
+    \ Pattern Recognition (CVPR)},\n
+    \ year={2023}\n
+    \ }"
+  img: ../pics/cvpr2023_logo.png
+  links:
+  short_id: Khurana2023point
+  site:
+  title: "Point Cloud Forecasting as a Proxy for 4D Occupancy Forecasting"
+  venue: Conference on Computer Vision and Pattern Recognition (CVPR), 2023
+  video_embed: null
 - abs: "Physical interaction with textiles, such as assistive dressing, relies on advanced dextreous capabilities. The underlying complexity in textile behavior when being pulled and stretched, is due to both the yarn material properties and the textile construction technique. Today, there are no commonly adopted and annotated datasets on which the various interaction or property identification methods are assessed. One important property that affects the interaction is material elasticity that results from both the yarn material and construction technique: these two are intertwined and, if not known a-priori, almost impossible to identify through sensing commonly available on robotic platforms. We introduce Elastic Context (EC), a concept that integrates various properties that affect elastic behavior, to enable a more effective physical interaction with textiles. The definition of EC relies on stress/strain curves commonly used in textile engineering, which we reformulated for robotic applications. We employ EC using Graph Neural Network (GNN) to learn generalized elastic behaviors of textiles. Furthermore, we explore the effect the dimension of the EC has on accurate force modeling of non-linear real-world elastic behaviors, highlighting the challenges of current robotic setups to sense textile properties."
   authors: Alberta Longhini, Marco Moletta, Alfredo Reichlin, Michael C. Welle, Alexander Kravberg, Yufei Wang, David Held, Zackory Erickson, Danica Kragic
   award: null
