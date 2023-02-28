@@ -5,7 +5,7 @@ subtitle: Things to do at Fur Squared
 ---
 ## Programming Schedule
 
-This year's digital schedule is available \[here\]!
+This year's digital schedule is coming soon!
 
 We encourage you to make an optional free Zoho account to bookmark events you'd like to attend, and **download a custom itinerary for offline access**. Additionally, attendees with smartphones may wish to download the free "Zoho Backstage for Attendees" app from their app store of choice.
 
