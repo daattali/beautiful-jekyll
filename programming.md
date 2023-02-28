@@ -5,7 +5,7 @@ subtitle: Things to do at Fur Squared
 ---
 ## Programming Schedule
 
-This year's digital schedule is available [here](https://fursquared.zohobackstage.com/2022){: target="_blank" rel="noopener"}!
+This year's digital schedule is available \[here\]!
 
 We encourage you to make an optional free Zoho account to bookmark events you'd like to attend, and **download a custom itinerary for offline access**. Additionally, attendees with smartphones may wish to download the free "Zoho Backstage for Attendees" app from their app store of choice.
 
@@ -19,7 +19,7 @@ In an effort to protect our attendees and prevent the spread of Covid-19, we wil
 
 \[picture of the map once I get the higher quality version from RenaCat\]
 
-Main Stage: Milwaukee 1 & 2<br>Secondary Stage: Brookfield 3<br>Fursuit Headless Lounge: Brookfield 1<br>Dealer's Den: Brookfield 4 & 5<br>Artist Alley/Night Market: Brookfield 2<br>Tabletop Gaming: Moorland...?<br>Video Gaming: Moorland ?<br>Registration: Wisconsin 3 & 4?<br>Ops/Lost & Found: Wisconsin 7?<br>Security: Wisconsin 6?<br>HIV Testing: Moorland 6?
+Main Stage: Milwaukee 1<br>Secondary Stage: Brookfield 3<br>Fursuit Headless Lounge: Brookfield 1<br>Dealer's Den: Brookfield 4 & 5<br>Artist Alley/Night Market: Brookfield 2<br>Tabletop Gaming: Moorland 7<br>Video Gaming: Moorland 3<br>Registration: Wisconsin 3 & 4<br>Ops/Lost & Found: Wisconsin 7<br>Security: Wisconsin 6<br>HIV Testing: Moorland 6
 
 ## At Con and Need Help?
 
