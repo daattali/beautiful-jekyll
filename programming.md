@@ -17,7 +17,7 @@ In an effort to protect our attendees and prevent the spread of Covid-19, we wil
 
 ### Convention Map
 
-[![F2 hotel map by TheRougeCat](/uploads/gohbio-chise.png){: .img-left}](/uploads/f2-map-2023.png)
+[![F2 hotel map by TheRougeCat](/uploads/f2-map-2023.png){: .img-left}]
 
 Main Stage: Milwaukee 1<br>Secondary Stage: Brookfield 3<br>Fursuit Headless Lounge: Brookfield 1<br>Dealer's Den: Brookfield 4 & 5<br>Artist Alley/Night Market: Brookfield 2<br>Tabletop Gaming: Moorland 7<br>Video Gaming: Moorland 3<br>Registration: Wisconsin 3 & 4<br>Ops/Lost & Found: Wisconsin 7<br>Security: Wisconsin 6<br>HIV Testing: Moorland 6
 
