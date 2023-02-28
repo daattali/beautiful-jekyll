@@ -187,7 +187,7 @@ The Google Cloud Professional Cloud Architect exam costs $200 USD.
 # Do I need to be able to code or script to pass the Professional Cloud Architect Exam?
 {:.no_toc}
 
-There is no requirement to code or script to pass the Google Cloud Professional Cloud Architect exam, however I recommend you are familiar with the names of the Google Cloud command line tools available as part of the SDK including gcloud, gsutil, bq etc. and the associated products they are used to configure etc.
+There is no requirement to code or script to pass the Google Cloud Professional Cloud Architect exam, however I recommend you are familiar with the names of the Google Cloud command line tools available as part of the SDK including gcloud, gsutil, bq, kubectl etc. and the associated products they are used to configure etc.
 
 Thanks for taking the time to read this blog, I hope you find it useful in preparing for the Google Cloud Professional Cloud Architect certification. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
 
