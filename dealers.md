@@ -14,8 +14,11 @@ css:
 | February 12, 2023 | Dealer Notifications Sent |
 | Feb. 12 - Feb. 26 | Table Payment Window |
 | February 27, 2023 | Unpaid/Abandoned spaces released to Waiting List |
+| Feb. 27 - Mar. 11 | Table Payment Window |
+| March 12, 2023 | Unpaid/Abandoned spaces released to Waiting List |
+| Mar 12. - Mar. 26 | Table Payment Window |
 
-&nbsp;
+##
 
 ## Dealer's Den and Night Market Emails Have Been Sent!
 
