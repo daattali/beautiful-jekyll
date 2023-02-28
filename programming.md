@@ -17,7 +17,7 @@ In an effort to protect our attendees and prevent the spread of Covid-19, we wil
 
 ### Convention Map
 
-![F2 hotel map by TheRougeCat, click to expand](/uploads/f2-map-2023.png){: .img-left}
+![F2 hotel map by TheRougeCat, click to expand](/uploads/f2-map-2023.png){: .img-smol}
 &nbsp;
 Click to expand the image
 
