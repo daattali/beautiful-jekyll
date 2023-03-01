@@ -10,7 +10,7 @@ readtime: true
 share-title: "How to prepare for the Google Cloud Professional Cloud Architect certificaiton"
 share-description: "In this blog I cover Google Cloud’s Professional Cloud Architect certification and offer my advice and guidance on preparing to become a certified Google Cloud Professional Cloud Architect."
 share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
-tags: [Google Cloud Professional Cloud Architect, certification, professional, PCA]
+tags: [Google Cloud Professional Cloud Architect, PCA, Certification, Exam]
 ---
 
 * toc
@@ -70,10 +70,15 @@ Below are my recommendations on how best to prepare for the Professional Cloud A
 
 My first piece of advice is to review the [Google Cloud Professional Cloud Architect exam guide](https://cloud.google.com/certification/guides/professional-cloud-architect) to get an understanding of the topics in scope of the exam and the associated case studies. 
 
-The Professional Cloud Architect certification has 4 case studies (these had been updated between ny first exam and recertification exam 2 years later with new case studies). The exam consists of 50-60 multiple choice questions, ~30% are focussed around the case studies (usually on 2 of 4 case studies) and the rest can be on anything else within scope of the exam guide.
+The Professional Cloud Architect certification has [4 case studies](https://cloud.google.com/certification/guides/professional-cloud-architect) (these had been updated between ny first exam and recertification exam 2 years later with new case studies). The exam consists of 50-60 multiple choice questions, ~30% are focussed around the case studies (usually on 2 of 4 case studies) and the rest can be on anything else within scope of the exam guide.
 
 # Case Studies
 {:.no_toc}
+
+- [EHR Healthcare](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)
+- [Helicopter Racing League](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)
+- [Mountkirk Games] (https://services.google.com/fh/files/blogs/master_case_study_mountkirk_games.pdf)
+- [TerramEarth](https://services.google.com/fh/files/blogs/master_case_study_terramearth.pdf)
 
 It's key to have a good understanding of each case study before going into the exam. You don't want to be wasting time reading the case studies for each question.
 
