@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to prepare for the Google Cloud Professional Cloud Architect (PCA) certification
+title: Preparing for the Google Cloud Professional Cloud Architect (PCA) certification
 subtitle: In this blog I cover Google Cloud’s Professional Cloud Architect certification and offer my advice and guidance on preparing to become a certified Google Cloud Professional Cloud Architect.
 #description: ""
 #cover-img: /assets/img/path.jpg
