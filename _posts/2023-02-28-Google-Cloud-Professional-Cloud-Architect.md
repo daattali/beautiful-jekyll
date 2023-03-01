@@ -114,10 +114,10 @@ I have completed many ACloudGuru training courses in the past and highly recomme
 
 *[ACloudGuru Google Professional Cloud Architect Course](https://acloudguru.com/course/google-certified-professional-cloud-architect-Z6XMJ)*
 
-# Google Cloud Documentation
+## Google Cloud Documentation
 I'm a big fan of [Google Cloud Documentation](https://cloud.google.com/docs). There are documentation pages for each Google product, providing overviews, getting started guides, code samples, and the Cloud Architecture Framework and Cloud Architecture Center for further guidance and best practices. Reading the associated product documentation pages after completing training courses helps to further embed your knowledge and clarify any points you may still be struggling with.
 
-# Google Cloud Solutions
+## Google Cloud Solutions
 [Google Cloud Solutions](https://cloud.google.com/docs/tutorials) provides a vast range of quickstarts and tutorials to guide you through, and provide hands on experience with Google Cloud's products and services. These tutorials prove invaluable providing additional experience working with some of the services you may be less familiar with.
 
 ## Priyanka Vergadia aka The Cloud Girl
