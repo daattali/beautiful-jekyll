@@ -18,7 +18,9 @@ tags: [Google Cloud Professional Cloud Architect, certification, professional, P
 
 # What is the Google Cloud Professional Cloud Architect certification?
 
-Google Cloud's Professional Cloud Architect (PCA) is one of Google's most popular professional certifications. Google Cloud's Professional certifications are role based certifications to measure an individuals proficiency at performing a specific role using Google Cloud technology. As per [Google's definition](https://cloud.google.com/certification/cloud-architect) Professional Cloud Architects enable organizations to leverage Google Cloud technologies. With a thorough understanding of cloud architecture and Google Cloud, they design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions to drive business objectives.
+Google Cloud's Professional Cloud Architect (PCA) is one of Google's most popular professional certifications. Google Cloud's Professional certifications are role based certifications to measure an individuals proficiency at performing a specific role using Google Cloud technology. As per [Google's definition:](https://cloud.google.com/certification/cloud-architect) 
+
+> Professional Cloud Architects enable organizations to leverage Google Cloud technologies. With a thorough understanding of cloud architecture and Google Cloud, they design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions to drive business objectives.
 
 The Professional Cloud Architect exam assesses an individuals ability to:
 
@@ -71,6 +73,8 @@ My first piece of advice is to review the [Google Cloud Professional Cloud Archi
 The Professional Cloud Architect certification has 4 case studies (these had been updated between ny first exam and recertification exam 2 years later with new case studies). The exam consists of 50-60 multiple choice questions, ~30% are focussed around the case studies (usually on 2 of 4 case studies) and the rest can be on anything else within scope of the exam guide.
 
 # Case Studies
+{:.no_toc}
+
 It's key to have a good understanding of each case study before going into the exam. You don't want to be wasting time reading the case studies for each question.
 
 When you're studying the case studies start to identify what products match the requirements of each, and what constraints you have to work within. 
@@ -106,7 +110,7 @@ It's worthwhile frequently checking these platforms as they often have promotion
 
 The ACloudGuru platform also offers a [Google Cloud Professional Cloud Architect online training course](https://acloudguru.com/course/google-certified-professional-cloud-architect-Z6XMJ). 
 
-*Caution: ensure you use the updated course I've linked to above as ACloudGuru also has a legacy Professional Cloud Architect certification from 2020 that is no longer relevant.* 
+***Caution: ensure you use the updated course I've linked to above as ACloudGuru also has a legacy Professional Cloud Architect certification from 2020 that is no longer relevant.*** 
 
 I have completed many ACloudGuru training courses in the past and highly recommend them for their quality of content, depth of coverage, opportunities for hands-on practice labs and providing a wide range of practice test questions. For the Professional Cloud Architect, there is 23 hours of content, 14 hands on labs, 9 course quizzes and 3 practice exams for you to assess your prepardness for the exam. Furthermore, ACloudGuru also offer Cloud Playground/Sandboxes providing you with acces to a GCP project for ~4 hours to gain real hands on experience on Google Cloud Platform without the constraints associated with the lab environments covered in training courses.
 
