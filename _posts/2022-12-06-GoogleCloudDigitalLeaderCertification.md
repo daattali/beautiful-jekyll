@@ -54,12 +54,12 @@ My first piece of advice is to review the [Google Cloud Digital Leader exam guid
 
 # Recommended training material and courses for Google Cloud Digital Leader certification including practice exam question sources.
 
-Google Cloud Digital Leader Study Guide
-Google Cloud Skills Boost learning path for Google Cloud Digital Leader
-YouTube videos
-Priyanka Vergadia aka The Cloud Girl
-Coursera Google Cloud Digital Leader training
-ACloudGuru Google Cloud Digital Leader training
+- Google Cloud Digital Leader Study Guide
+- Google Cloud Skills Boost learning path for Google Cloud Digital Leader
+- YouTube videos
+- Priyanka Vergadia aka The Cloud Girl
+- Coursera Google Cloud Digital Leader training
+- ACloudGuru Google Cloud Digital Leader training
 
 ## Google Cloud Digital Leader Study Guide
 
