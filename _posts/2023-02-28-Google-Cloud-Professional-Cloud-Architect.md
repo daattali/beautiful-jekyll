@@ -77,7 +77,7 @@ The Professional Cloud Architect certification has [4 case studies](https://clou
 
 - [EHR Healthcare](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)
 - [Helicopter Racing League](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)
-- [Mountkirk Games] (https://services.google.com/fh/files/blogs/master_case_study_mountkirk_games.pdf)
+- [Mountkirk Games](https://services.google.com/fh/files/blogs/master_case_study_mountkirk_games.pdf)
 - [TerramEarth](https://services.google.com/fh/files/blogs/master_case_study_terramearth.pdf)
 
 It's key to have a good understanding of each case study before going into the exam. You don't want to be wasting time reading the case studies for each question.
