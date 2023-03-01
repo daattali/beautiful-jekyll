@@ -7,7 +7,7 @@ subtitle: In this blog I cover Google Cloud’s Professional Cloud Architect cer
 thumbnail-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
 share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
 readtime: true
-share-title: "How to prepare for the Google Cloud Professional Cloud Architect certificaiton"
+share-title: "How to prepare for the Google Cloud Professional Cloud Architect certification"
 share-description: "In this blog I cover Google Cloud’s Professional Cloud Architect certification and offer my advice and guidance on preparing to become a certified Google Cloud Professional Cloud Architect."
 share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
 tags: [Google Cloud Professional Cloud Architect, PCA, Certification, Exam]
@@ -18,7 +18,7 @@ tags: [Google Cloud Professional Cloud Architect, PCA, Certification, Exam]
 
 # What is the Google Cloud Professional Cloud Architect certification?
 
-Google Cloud's Professional Cloud Architect (PCA) is one of Google's most popular professional certifications. Google Cloud's Professional certifications are role based certifications to measure an individuals proficiency at performing a specific role using Google Cloud technology. As per [Google's definition:](https://cloud.google.com/certification/cloud-architect) 
+Google Cloud's Professional Cloud Architect (PCA) is one of Google's most popular professional certifications. Google Cloud's Professional certifications are role based certifications to measure an individual’s proficiency at performing a specific role using Google Cloud technology. As per [Google's definition:](https://cloud.google.com/certification/cloud-architect) 
 
 > Professional Cloud Architects enable organizations to leverage Google Cloud technologies. With a thorough understanding of cloud architecture and Google Cloud, they design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions to drive business objectives.
 
@@ -27,7 +27,7 @@ The Professional Cloud Architect exam assesses an individuals ability to:
 - Design and plan a cloud solution architecture
 - Manage and provision the cloud solution infrastructure
 - Design for security and compliance
-- Analyze and optimize technical and business processes
+- Analyse and optimize technical and business processes
 - Manage implementations of cloud architecture
 - Ensure solution and operations reliability
 
@@ -37,13 +37,13 @@ The Professional Cloud Architect exam assesses an individuals ability to:
 
 # Who is the Google Cloud Professional Cloud Architect certification aimed at?
 
-The Google Cloud Professional Cloud Architect certification is aimed at Cloud Architects and Solutions Architects, who are responsible for assesssing business requirements and designing Google Cloud environments. Architects need to have a thorough understanding of all Google Cloud's products including Compute, Storage, Networks, Data, Development and Security. They need to be able to assess busineses requirements, identifying both functional and non functional requirements and then design a secure, resilient, scalable architecture selecting the most appropriate Google Cloud services.
+The Google Cloud Professional Cloud Architect certification is aimed at Cloud Architects and Solutions Architects, who are responsible for assessing business requirements and designing Google Cloud environments. Architects need to have a thorough understanding of all Google Cloud's products including Compute, Storage, Networks, Data, Development and Security. They need to be able to assess business requirements, identifying both functional and non functional requirements and then design a secure, resilient, scalable architecture selecting the most appropriate Google Cloud services.
 
-Whilst the primary roles targetted by this certification are architects, there are many certified people without an architecture background. Before the intoduction of the Google Cloud Digital Leader certification, people looking to demonstrate their Google Cloud expertise had to choose between PCA and ACE. ACE has a more hands on delivery focus as a Cloud Engineer versus PCA.
+Whilst the primary roles targeted by this certification are architects, there are many certified people without an architecture background. Before the introduction of the Google Cloud Digital Leader certification, people looking to demonstrate their Google Cloud expertise had to choose between PCA and ACE. ACE has a more hands on delivery focus as a Cloud Engineer versus PCA.
 
-For people new to Google Cloud, I recommend they initially pass the Google Cloud Digitial Leader certification, then progress to the Google Cloud Associate Engineer certification before proceeding with the Google Cloud Professional Architect certification. I also suggest planning ACE and PCA in close succession as there is significant overlap in the content of each so it can save study time whilst the content of ACE is fresh in memory and you're preparing for PCA.
+For people new to Google Cloud, I recommend they initially pass the Google Cloud Digital Leader certification, then progress to the Google Cloud Associate Engineer certification before proceeding with the Google Cloud Professional Architect certification. I also suggest planning ACE and PCA in close succession as there is significant overlap in the content of each so it can save study time whilst the content of ACE is fresh in memory and you're preparing for PCA.
 
-# How difficult is the Google Cloud Professinal Cloud Architect certification?
+# How difficult is the Google Cloud Professional Cloud Architect certification?
 
 Google Cloud has 3 levels of certifications starting at the entry level with Cloud Digital Leader, Associate Cloud Engineer, and a range of Professional level specialist certifications. 
 
@@ -57,20 +57,20 @@ Comparing the PCA certification with Azure and AWS certification offerings, PCA 
 
 The Google Cloud Professional Cloud Architect exam is the first Google Cloud certification I passed back in 2019 and recertified in 2021. I'm due to recertify again in October 2023...
 
-Google recommends candidates have 1+ years real experience working with Google Cloud before taking this certification. The first time I sat the certification i had done some work with GCP but it wasn't my core role, and the work I had done didn't cover half the Google products within the exam. That being said, I passed the PCA certification first time based on lab experience via Coursera and my own free Google Cloud trial! I also had many years experience working as a Cloud Architect which provided a good foundation for this exam.
+Google recommends candidates have 1+ years real experience working with Google Cloud before taking this certification. The first time I sat the certification I had done some work with GCP but it wasn't my core role, and the work I had done didn't cover half the Google products within the exam. That being said, I passed the PCA certification first time based on lab experience via Coursera and my own free Google Cloud trial! I also had many years experience working as a Cloud Architect which provided a good foundation for this exam.
 
 When recertification came round 2 years later, having had a lot more experience working with Google Cloud definitely helped... I had also certified in the Associate Cloud Engineer and other professional certifications including Security and Network Engineer specialties by this point, so i was much more familiar with the majority of Google Cloud's products and the certification process.
 
-So whilst Google recommends 1 or more year's experience, the certification is still achievable without the experience if you're prepared to put in your own effort. But if you're working with GCP day in, day out it definitely helps!
+So, whilst Google recommends 1 or more years’ experience, the certification is still achievable without the experience if you're prepared to put in your own effort. But if you're working with GCP day in, day out it definitely helps!
 
-Below are my recommendations on how best to prepare for the Professional Cloud Architext exam based on my experiences with this and other GCP certifications.
+Below are my recommendations on how best to prepare for the Professional Cloud Architect exam based on my experiences with this and other GCP certifications.
 
 # Read and become familiar with the exam guide
 {:.no_toc}
 
 My first piece of advice is to review the [Google Cloud Professional Cloud Architect exam guide](https://cloud.google.com/certification/guides/professional-cloud-architect) to get an understanding of the topics in scope of the exam and the associated case studies. 
 
-The Professional Cloud Architect certification has [4 case studies](https://cloud.google.com/certification/guides/professional-cloud-architect) (these had been updated between ny first exam and recertification exam 2 years later with new case studies). The exam consists of 50-60 multiple choice questions, ~30% are focussed around the case studies (usually on 2 of 4 case studies) and the rest can be on anything else within scope of the exam guide.
+The Professional Cloud Architect certification has [4 case studies](https://cloud.google.com/certification/guides/professional-cloud-architect) (these had been updated between my first exam and recertification exam 2 years later with new case studies). The exam consists of 50-60 multiple choice questions, ~25% are focussed on the case studies (usually on 2 of 4 case studies) and the rest can be on anything else within scope of the exam guide.
 
 # Case Studies
 {:.no_toc}
@@ -84,7 +84,7 @@ It's key to have a good understanding of each case study before going into the e
 
 When you're studying the case studies start to identify what products match the requirements of each, and what constraints you have to work within. 
 
-I found drafting high level architecture diagrams and noting why certain products are better suited over others helped identifying the correct answers for some questions, or narrowing down the scope of possible answers to one or two. Whilst you can't take any study notes with you for the exam, having already thought out various architectures helps you recall them and identify correct answers more efficiently.
+I found drafting high level architecture diagrams and noting why certain products are better suited over others helped identifying the correct answers for some questions, or narrowing down the scope of possible answers to one or two. Whilst you can't take any study notes with you for the exam, having already thought-out various architectures helps you recall them and identify correct answers more efficiently.
 
 # Recommended training material and courses for Google Cloud Professional Cloud Architect certification including practice exam question sources.
 
@@ -117,7 +117,7 @@ The ACloudGuru platform also offers a [Google Cloud Professional Cloud Architect
 
 ***Caution: ensure you use the updated course I've linked to above as ACloudGuru also has a legacy Professional Cloud Architect certification from 2020 that is no longer relevant.*** 
 
-I have completed many ACloudGuru training courses in the past and highly recommend them for their quality of content, depth of coverage, opportunities for hands-on practice labs and providing a wide range of practice test questions. For the Professional Cloud Architect, there is 23 hours of content, 14 hands on labs, 9 course quizzes and 3 practice exams for you to assess your prepardness for the exam. Furthermore, ACloudGuru also offer Cloud Playground/Sandboxes providing you with acces to a GCP project for ~4 hours to gain real hands on experience on Google Cloud Platform without the constraints associated with the lab environments covered in training courses.
+I have completed many ACloudGuru training courses in the past and highly recommend them for their quality of content, depth of coverage, opportunities for hands-on practice labs and providing a wide range of practice test questions. For the Professional Cloud Architect, there is 23 hours of content, 14 hands on labs, 9 course quizzes and 3 practice exams for you to assess your preparedness for the exam. Furthermore, ACloudGuru also offer Cloud Playground/Sandboxes providing you with access to a GCP project for ~4 hours to gain real hands-on experience on Google Cloud Platform without the constraints associated with the lab environments covered in training courses.
 
 ![ACloudGuru logo](/assets/img/cdl/acloudgurulogo.png "ACloudGuru logo")
 
@@ -127,7 +127,7 @@ I have completed many ACloudGuru training courses in the past and highly recomme
 I'm a big fan of [Google Cloud Documentation](https://cloud.google.com/docs). There are documentation pages for each Google product, providing overviews, getting started guides, code samples, and the Cloud Architecture Framework and Cloud Architecture Center for further guidance and best practices. Reading the associated product documentation pages after completing training courses helps to further embed your knowledge and clarify any points you may still be struggling with.
 
 ## Google Cloud Solutions
-[Google Cloud Solutions](https://cloud.google.com/docs/tutorials) provides a vast range of quickstarts and tutorials to guide you through, and provide hands on experience with Google Cloud's products and services. These tutorials prove invaluable providing additional experience working with some of the services you may be less familiar with.
+[Google Cloud Solutions](https://cloud.google.com/docs/tutorials) provides a vast range of QuickStart’s and tutorials to guide you through, and provide hands on experience with Google Cloud's products and services. These tutorials prove invaluable providing additional experience working with some of the services you may be less familiar with.
 
 ## Priyanka Vergadia aka The Cloud Girl
 
@@ -137,14 +137,14 @@ For those who benefit more from visual learning- Priyanka Vergadia aka The Cloud
 
 *Example sketchnote for Google Cloud Compute Options from [Priyanka Vergadia](https://thecloudgirl.dev/gcpcompute.html)* 
 
-The sketchnotes have been released as a book titled [Visualising Google Cloud](https://thecloudgirl.dev) which is a handy reference for getting to grips with Google Cloud's products and concepts for the Professional Cloud Architect and subsequent associate and professional exams. It is also a handy reference to have for day to day use as you are learning more about Google Cloud’s offerings.
+The sketchnotes have been released as a book titled [Visualising Google Cloud](https://thecloudgirl.dev) which is a handy reference for getting to grips with Google Cloud's products and concepts for the Professional Cloud Architect and subsequent associate and professional exams. It is also a handy reference to have for day-to-day use as you are learning more about Google Cloud’s offerings.
 
 Priyanka regularly posts videos on her social media channels including various [Cloud Bytes](https://youtube.com/playlist?list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip)  videos covering Google Cloud products in under a minute, and has her own blogs on [Medium](https://pvergadia.medium.com).
 
 ## Review the exam guide (yes, again!)
 {:.no_toc}
 
-Once you have completed all the training materials, review the exam guide again. This time you should feel more confident in your level of knowledge for each  topic. If there are still topics in the guide you don't feel comfortable with, spend more time focussing on these, revisiting the content in the training courses, or researching the content in Google docs, and YouTube videos etc.
+Once you have completed all the training materials, review the exam guide again. This time you should feel more confident in your level of knowledge for each topic. If there are still topics in the guide you don't feel comfortable with, spend more time focussing on these, revisiting the content in the training courses, or researching the content in Google docs, and YouTube videos etc.
 
 # Take the Google Cloud Professional Cloud Architect practice exam
 {:.no_toc}
@@ -163,7 +163,7 @@ Perform the first iteration of the exam quickly, answering the questions you are
 
 Once you complete your first iteration, review your marked questions, and spend more time on them accordingly. By taking this approach you can determine how long you can spend your remaining time on these tougher questions as you know how many you marked for review. You may also get lucky and find a later question on the exam helps you to identify the answer to a previous question you were unsure on either directly or indirectly by triggering a memory of some detail that earlier escaped you!
 
-Upon completion of the  exam, a provisional pass or fail is displayed on the screen. Look out for it, if it’s your first Google Cloud certification you can quite easily miss it as for whatever reason, it's not highlighted particularly well! Google subsequently confirms the pass/failure within 7-10 days' time (although it's often sooner!).
+Upon completion of the exam, a provisional pass or fail is displayed on the screen. Look out for it, if it’s your first Google Cloud certification you can quite easily miss it as for whatever reason, it's not highlighted particularly well! Google subsequently confirms the pass/failure within 7-10 days' time (although it's often sooner!).
 
 # How to book the Google Cloud Professional Cloud Architect exam
 {:.no_toc}
@@ -180,7 +180,7 @@ Kryterion requires you to enrol in biometrics and create a biometrics profile wh
 
 Once they are happy the room is secure, your exam is started. The proctor monitors you via the webcam and microphone and will pause the exam if there are any issues and contact you via the secure browser chat functionality. This has happened to me once when the proctor advised my video stream had stopped working mid-exam. The exam was paused whilst my laptop restarted, and the proctor verified the stream was working again. 
 
-On a second occassion, the proctor advised my video stream wasn't working before the exam had started- a reboot failed to resolve the issue and I was advised to contact Kryterion support. This wasn't the greatest start to the exam, as I was now past my scheduled start time, however support were able to reschedule the exam to begin as soon a i had finished troubleshooting the issue with them, or I could book it for another day if it was no longer convenient.
+On a second occasion, the proctor advised my video stream wasn't working before the exam had started- a reboot failed to resolve the issue and I was advised to contact Kryterion support. This wasn't the greatest start to the exam, as I was now past my scheduled start time, however support were able to reschedule the exam to begin as soon a i had finished troubleshooting the issue with them, or I could book it for another day if it was no longer convenient.
 
 It is best to book your exam ahead of time, as this gives you a date to work towards completing study and revision and helps ensure you get to choose a date/time that suits you best. If you leave booking the exam until after you finish your studying, you may find there aren’t as many convenient times available as you would like. If you find yourself in this position, check back regularly as I've seen a lot of times that were not available when checking the previous day, become available a day or two later. Provided you give at least 24 hours' notice, you are free to reschedule your exam to another time if for any reason you are not ready.
 
@@ -189,7 +189,7 @@ It is best to book your exam ahead of time, as this gives you a date to work tow
 
 The PCA exam is a two hour exam during which you will need to answer 50-60 multiple choice and multiple select questions. There are also four case studies included in the exam- typically two case studies are included within your questions. I find I typically go through the exam in just over an hour, before revisiting each question and those I have marked for review in the remaining 50 minutes or so. For this reason, it is beneficial to be familiar with the case studies and what products are best suited prior to sitting the exam to maximise the time you have answering questions vs reading and understanding long case studies.
 
-# How long is the Google Cloud Professional Cloud Architct certification valid?
+# How long is the Google Cloud Professional Cloud Architect certification valid?
 {:.no_toc}
 
 The PCA certification is valid for 2 years. You can recertify 60 days prior to certification expiration.
@@ -207,3 +207,5 @@ There is no requirement to code or script to pass the Google Cloud Professional 
 Thanks for taking the time to read this blog, I hope you find it useful in preparing for the Google Cloud Professional Cloud Architect certification. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
 
 Do reach out if you would like me to cover any particular areas of Google Cloud products, concepts or certifications in future posts.
+
+
