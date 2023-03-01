@@ -4,12 +4,12 @@ title: How to prepare for the Google Cloud Professional Cloud Architect (PCA) ce
 subtitle: In this blog I cover Google Cloud’s Professional Cloud Architect certification and offer my advice and guidance on preparing to become a certified Google Cloud Professional Cloud Architect.
 #description: ""
 #cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/googlecloudprofessionalcloudarchitectbadge.png
-share-img: /assets/img/googlecloudprofessionalcloudarchitectbadge.png
+thumbnail-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
+share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
 readtime: true
 share-title: "How to prepare for the Google Cloud Professional Cloud Architect certificaiton"
 share-description: "In this blog I cover Google Cloud’s Professional Cloud Architect certification and offer my advice and guidance on preparing to become a certified Google Cloud Professional Cloud Architect."
-share-img: /assets/img/googlecloudprofessionalcloudarchitectbadge.png
+share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
 tags: [Google Cloud Professional Cloud Architect, certification, professional, PCA]
 ---
 
@@ -29,7 +29,7 @@ The Professional Cloud Architect exam assesses an individuals ability to:
 - Manage implementations of cloud architecture
 - Ensure solution and operations reliability
 
-![Google Cloud Professional Cloud Architect Badge](/assets/img/googlecloudprofessionalcloudarchitectbadge.png "Google Cloud Professional Cloud Architect Badge")
+![Google Cloud Professional Cloud Architect Badge](/assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png "Google Cloud Professional Cloud Architect Badge")
 
 *Google Cloud Professional Cloud Architect Badge*
 
