@@ -1,0 +1,53 @@
+<tr>
+    {% if pub.img %}
+        <td class='pubimg' width="250" height="100" style="text-align:center">
+            <img src="{{pub.img}}" img width="250" />
+        </td>
+    {% endif %}
+    <td>
+        {% if pub.site %}
+            <a href="{{pub.site}}">
+                {{pub.title}}
+            </a>
+        {% else %}
+            {{pub.title}}
+        {% endif %}
+        <br>
+        <div class="pubauthor">
+            {{pub.authors}}
+        </div>
+        <div id="bib{{pub.short_id}}" style="display:none">
+            <blockquote>
+                <pre>{{pub.bib}}</pre>
+            </blockquote>
+        </div>
+        <div id="abs{{pub.short_id}}" style="display:none">
+            <blockquote>
+                {{pub.abs}}
+            </blockquote>
+        </div>
+        <div class="pubjournal">
+            {% if pub.award %}
+                {{pub.venue}} - {{pub.award}}
+            {% else %}
+                {{pub.venue}}
+            {% endif %} 
+            <br>
+        </div>
+        <div style="font-size:small">
+            {% if pub.site != null %}
+                <a href="{{pub.site}}">[Project Page]</a>
+            {% endif %}
+            {% if pub.bib != null %}
+                <a href="javascript:copy(div{{pub.short_id}}, bib{{pub.short_id}})">[Bibtex]</a>
+            {% endif %}
+            {% if pub.abs != null %}
+                <a href="javascript:copy(div{{pub.short_id}}, abs{{pub.short_id}})">[Abstract]</a>
+            {% endif %}
+            {% for link in pub.links %}
+                <a href="{{link[1]}}">{{link[0]}}</a>
+            {% endfor %}
+        </div>
+        <div id="div{{pub.short_id}}" class="pubInfo"></div>
+    </td>
+</tr>

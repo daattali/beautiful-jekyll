@@ -11,6 +11,9 @@
 #   title: null
 #   venue: null
 #   video_embed: null
+# Current tags for research areas, see the research areas page for more details:
+# deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+
 - abs: "Predicting how the world can evolve in the future is crucial for motion planning in autonomous systems. Classical methods are limited because they rely on costly human annotations in the form of semantic class labels, bounding boxes, and tracks or HD maps of cities to plan their motion — and thus are difficult to scale to large unlabeled datasets. One promising self-supervised task is 3D point cloud forecasting from unannotated LiDAR sequences. We show that this task requires algorithms to implicitly capture (1) sensor extrinsics (i.e., the egomotion of the autonomous vehicle), (2) sensor intrinsics (i.e., the sampling pattern specific to the particular LiDAR sensor), and (3) the shape and motion of other objects in the scene. But autonomous systems should make predictions about the world and not their sensors! To this end, we factor out (1) and (2) by recasting the task as one of spacetime (4D) occupancy forecasting. But because it is expensive to obtain ground-truth 4D occupancy, we “render” point cloud data from 4D occupancy predictions given sensor extrinsics and intrinsics, allowing one to train and test occupancy algorithms with unannotated LiDAR sequences. This also allows one to evaluate and compare point cloud forecasting algorithms across diverse datasets, sensors, and vehicles."
   authors: Tarasha Khurana, Peiyun Hu, David Held, Deva Ramanan
   award: null
@@ -173,6 +176,9 @@
   title: Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZEPiwF18mA" title="Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+   - rl
+   - self-supervised
 - abs: How do we imbue robots with the ability to efficiently manipulate unseen objects and transfer relevant skills based on demonstrations? End-to-end learning methods often fail to generalize to novel objects or unseen configurations. Instead, we focus on the task-specific pose relationship between relevant parts of interacting objects. We conjecture that this relationship is a generalizable notion of a manipulation task that can transfer to new objects in the same category; examples include the relationship between the pose of a pan relative to an oven or the pose of a mug relative to a mug rack. We call this task-specific pose relationship “cross-pose” and provide a mathematical definition of this concept. We propose a vision-based system that learns to estimate the cross-pose between two objects for a given manipulation task using learned cross-object correspondences. The estimated cross-pose is then used to guide a downstream motion planner to manipulate the objects into the desired pose relationship (placing a pan into the oven or the mug onto the mug rack). We demonstrate our method’s capability to generalize to unseen objects, in some cases after training on only 10 demonstrations in the real world. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments across a number of tasks.
   authors: Chuer Pan*, Brian Okorn*, Harry Zhang*, Ben Eisner*, David Held
   award: null
@@ -190,6 +196,8 @@
   title: 'TAX-Pose: Task-Specific Cross-Pose Estimation for Robot Manipulation'
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1GTEXuk1TEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - affordance
 - abs: "Point clouds are a widely available and canonical data modality which
       \ conveys the 3D geometry of a scene. Despite significant progress in classifica-
       \ tion and segmentation from point clouds, policy learning from such a modality
@@ -224,6 +232,9 @@
     Point Clouds'
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cJbtqOAGyI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+   - deformable
+   - affordance
 - abs: "Effective planning of long-horizon deformable object manipulation requires\
     \ suitable \n                    abstractions at both the spatial and temporal\
     \ levels. \n                    Previous methods typically either focus on short-horizon\
@@ -263,6 +274,9 @@
     Abstraction from Point Clouds for Deformable Object Manipulation</a>
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPV_bMeszWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - affordance
+    - deformable
 - abs: "Orientation estimation is the core to a variety of vision and robotics tasks such as camera and object pose estimation. Deep learning has offered a way
     \ to develop image-based orientation estimators; however, such estimators often require training on a large labeled dataset, which can be time-intensive
     \ to collect. In this work, we explore whether self-supervised learning from unlabeled data can be used to alleviate this issue. Specifically, we assume
@@ -302,6 +316,8 @@
   title: Differentiable Raycasting for Self-supervised Occupancy Forecasting
   venue: European Conference on Computer Vision (ECCV), 2022
   video_embed: null
+  tags:
+    - autonomous-driving
 - abs: Robotic manipulation of cloth has applications ranging from fabrics manufacturing
     to handling blankets and laundry. Cloth manipulation is challenging for robots
     largely due to their high degrees of freedom, complex dynamics, and severe self-occlusions
@@ -812,6 +828,9 @@
     Light Curtains with Probabilistic Guarantees</a>
   venue: 'Robotics: Science and Systems (RSS), 2021'
   video_embed: null
+  tags:
+    - autonomous-driving
+    - active-perception
 - abs: Pose estimation is a basic module in many robot manipulation pipelines. Estimating
     the pose of objects in the environment can be useful for grasping, motion planning,
     or manipulation. However, current state-of-the-art methods for pose estimation
@@ -947,6 +966,8 @@
     Learning for Deformable Object Manipulation</a>'
   venue: Conference on Robot Learning (CoRL), 2020
   video_embed: null
+  tags:
+   - deformable
 - abs: "Current image-based reinforcement learning (RL) algorithms typically operate\
     \ on the whole image without performing object-level reasoning.  This leads to\
     \ inefficient goal sampling and ineffective reward functions. In this paper, we\
@@ -1189,6 +1210,9 @@
     and New Evaluation Metrics</a>'
   venue: International Conference on Intelligent Robots and Systems (IROS), 2020
   video_embed: null
+  tags:
+    - autonomous-driving
+    - object-tracking
 - abs: When interacting with highly dynamic environments, scene flow allows autonomous
     systems to reason about the non-rigid motion of multiple independent objects.
     This is of particular interest in the field of autonomous driving, in which many
@@ -1278,6 +1302,8 @@
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference of Robotics and Automation (ICRA), 2020
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/rYRPWe0xLVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    multimodal
 - abs: null
   authors: Peiyun Hu, David Held*, Deva Ramanan*
   award: null
@@ -1328,6 +1354,8 @@
     for Precise Object Instance Detection</a>
   venue: Conference on Robot Learning (CoRL), 2019
   video_embed: null
+  tags:
+    - active-perception
 - abs: null
   authors: Xingyu Lin*, Harjatin Baweja*, George Kantor, David Held
   award: null
