@@ -8,7 +8,7 @@ members:
       - full: true
         list:
           - name: David Held
-            photo_url: /img/members/daveheld.jpg
+            photo_url: https://davheld.github.io/DavidHeld_files/DavidHeld.jpg
             web_url: https://davheld.github.io
   - name: Current members
     list:
@@ -75,6 +75,9 @@ members:
           - name: Edward Li
             photo_url: /img/members/edward.jpg
             web_url:
+          - name: Wen Hui Leng
+            photo_url: /img/nophoto_faceboard_white.jpg
+            web_url: 
       # - name: Visiting Students
       #  full: false
        # list:

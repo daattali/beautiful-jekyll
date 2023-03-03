@@ -11,11 +11,9 @@
 #   title: null
 #   venue: null
 #   video_embed: null
-#   tags: 
-#     - null
-
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+
 - abs: "Predicting how the world can evolve in the future is crucial for motion planning in autonomous systems. Classical methods are limited because they rely on costly human annotations in the form of semantic class labels, bounding boxes, and tracks or HD maps of cities to plan their motion — and thus are difficult to scale to large unlabeled datasets. One promising self-supervised task is 3D point cloud forecasting from unannotated LiDAR sequences. We show that this task requires algorithms to implicitly capture (1) sensor extrinsics (i.e., the egomotion of the autonomous vehicle), (2) sensor intrinsics (i.e., the sampling pattern specific to the particular LiDAR sensor), and (3) the shape and motion of other objects in the scene. But autonomous systems should make predictions about the world and not their sensors! To this end, we factor out (1) and (2) by recasting the task as one of spacetime (4D) occupancy forecasting. But because it is expensive to obtain ground-truth 4D occupancy, we “render” point cloud data from 4D occupancy predictions given sensor extrinsics and intrinsics, allowing one to train and test occupancy algorithms with unannotated LiDAR sequences. This also allows one to evaluate and compare point cloud forecasting algorithms across diverse datasets, sensors, and vehicles."
   authors: Tarasha Khurana, Peiyun Hu, David Held, Deva Ramanan
   award: null
@@ -191,7 +189,7 @@
     \ year={2022}\n
     \ }"
   img: ../pics/taxpose-web.gif
-  links: 
+  links:
     '[PDF]': https://arxiv.org/pdf/2211.09325.pdf
   short_id: 2022corltaxpose
   site: https://sites.google.com/view/tax-pose/home
@@ -224,7 +222,7 @@
     \ year={2022}\n
     \ }"
   img: ../pics/toolflownet.gif
-  links: 
+  links:
     '[arXiv]': https://arxiv.org/abs/2211.09006
     '[Poster]': https://docs.google.com/presentation/d/1CqSfyEfcakvNYrZblt4KmScOub06qmN6jRar8YlPHNM/edit?usp=sharing
     '[Talk]': https://docs.google.com/presentation/d/1IAFnXzlVvSO3GXlX7NfAwVPhl77YgbBnGpkdN6WjIPk/edit?usp=sharing
@@ -259,9 +257,9 @@
   award: null
   bib: "@inproceedings{\n
     \ lin2022planning,\n
-    \ title={Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation},\n 
-    \ author={Xingyu Lin and Carl Qi and Yunchu Zhang and Yunzhu Li and Zhiao Huang and Katerina Fragkiadaki and Chuang Gan and David Held},\n                        
-    \ booktitle={6th Annual Conference on Robot Learning},\n 
+    \ title={Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation},\n
+    \ author={Xingyu Lin and Carl Qi and Yunchu Zhang and Yunzhu Li and Zhiao Huang and Katerina Fragkiadaki and Chuang Gan and David Held},\n
+    \ booktitle={6th Annual Conference on Robot Learning},\n
     \ year={2022},\n
     \ url={https://openreview.net/forum?id=tyxyBj2w4vw}\n
     \ }"
@@ -299,7 +297,7 @@
       \ year={2022},\n
       \ }"
   img: ../pics/mrp_website_text.png
-  links: 
+  links:
     '[arXiv]': https://arxiv.org/pdf/2211.11182.pdf
   short_id: 2022corlmrp
   site: https://sites.google.com/view/deep-projective-rotation/home
@@ -379,7 +377,7 @@
   img: ../pics/carl-22-website.gif
   links:
     '[Talk]': https://drive.google.com/file/d/1ai4tJeHNoZKD8wavViWj3auMPZdblZRR/view?usp=sharing
-    '[PDF]': https://arxiv.org/pdf/2207.04638.pdf 
+    '[PDF]': https://arxiv.org/pdf/2207.04638.pdf
   short_id: 2022raldough
   site: https://sites.google.com/view/dough-manipulation
   title: <a href="https://sites.google.com/view/dough-manipulation">Learning Closed-loop
@@ -414,8 +412,8 @@
   \ publisher={IEEE} \n
   \ }"
   img: ../pics/visual-haptic-reasoning-IROS.gif
-  links: 
-    '[PDF]': https://arxiv.org/pdf/2208.05632.pdf 
+  links:
+    '[PDF]': https://arxiv.org/pdf/2208.05632.pdf
     '[Talk]': https://www.youtube.com/watch?v=Qgjdt7vAHCQ
   short_id: 2022vhr
   site: https://sites.google.com/view/visualhapticreasoning/home
@@ -1123,8 +1121,8 @@
   award: null
   bib: "@InProceedings{Qian_2020_IROS,\n
     author={Qian, Jianing and Weng, Thomas and Zhang, Luxin and Okorn, Brian and Held, David},
-    booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
-    title={Cloth Region Segmentation for Robust Grasp Selection}, 
+    booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+    title={Cloth Region Segmentation for Robust Grasp Selection},
     year={2020},
     volume={},
     number={},
@@ -1318,7 +1316,7 @@
     Point Clouds</a>
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference of Robotics and Automation (ICRA), 2020
-  video_embed: null 
+  video_embed: null
 - abs: Deep learning object detectors often return false positives with very high
     confidence. Although they optimize generic detection performance, such as mean
     average precision (mAP), they are not designed for reliability. For a reliable
