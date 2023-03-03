@@ -1,0 +1,2 @@
+Following on from my previous blog on GKE Workload Identity, this blog covers how to securely store sensitive data outside of your GKE cluster, in Google Cloud Secret Manager, accessing them with Workload Identity. By storing the sensitive data outside of your cluster, in the event of an attack you reduce the risk of exposing the sensitive data.
+
