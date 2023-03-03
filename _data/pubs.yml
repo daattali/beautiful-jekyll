@@ -49,7 +49,7 @@
   venue: International Conference on Robotics and Automation (ICRA), 2023
   video_embed: null
 - abs: "We study the problem of learning graph dynamics of deformable objects which generalize to unknown physical properties. In particular, we leverage a latent representation of elastic physical properties of cloth-like deformable objects which we explore through a pulling interaction. We propose EDO-Net (Elastic Deformable Object - Net), a model trained in a self-supervised fashion on a large variety of samples with different elastic properties. EDO-Net jointly learns an adaptation module, responsible for extracting a latent representation of the physical properties of the object and a forward-dynamics module, which leverages the latent representation to predict future states of cloth-like objects, represented as graphs. We evaluate EDO-Net both in simulation and real world, assessing its capabilities of: 1) generalizing to unknown physical properties of cloth-like deformable objects, 2) transferring the learned representation to new downstream tasks."
-  authors: Alberta Longhini, Marco Moletta*, Alfredo Reichlin, Michael C. Welle, David Held, Zackory Erickson, Danica Kragic
+  authors: Alberta Longhini*, Marco Moletta*, Alfredo Reichlin, Michael C. Welle, David Held, Zackory Erickson, Danica Kragic
   award: null
   bib: "@inproceedings{Longhini2023EDO,\n
     \ title={EDO-Net: Learning Elastic Properties of Deformable Objects from Graph Dynamics
