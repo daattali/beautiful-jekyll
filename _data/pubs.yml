@@ -1,5 +1,5 @@
-# When making a new entry, copy the commented out entry, paste it, uncomment, and fill out the fields. 
-# If any of the fields are confusing look at previous examples for guidance. 
+# When making a new entry, copy the commented out entry, paste it, uncomment, and fill out the fields.
+# If any of the fields are confusing look at previous examples for guidance.
 # - abs: null
 #   authors: null
 #   award: null
@@ -141,23 +141,23 @@
   title: "AutoBag: Learning to Open Plastic Bags and Insert Objects"
   venue: International Conference on Robotics and Automation (ICRA), 2023
   video_embed: null
-- abs: A simple gripper can solve more complex manipulation tasks if it can utilize 
-    the external environment such as pushing the object against the table or a vertical 
-    wall, known as "Extrinsic Dexterity." Previous work in extrinsic dexterity usually 
-    has careful assumptions about contacts which impose restrictions on robot design, 
-    robot motions, and the variations of the physical parameters. In this work, we 
-    develop a system based on reinforcement learning (RL) to address these limitations. 
-    We study the task of “Occluded Grasping” which aims to grasp the object in 
-    configurations that are initially occluded; the robot needs to move the object into 
-    a configuration from which these grasps can be achieved. We present a system with 
-    model-free RL that successfully achieves this task using a simple gripper with 
-    extrinsic dexterity. The policy learns emergent behaviors of pushing the object 
-    against the wall to rotate and then grasp it without additional reward terms on 
-    extrinsic dexterity. We discuss important components of the system including the 
-    design of the RL problem, multi-grasp training and selection, and policy 
-    generalization with automatic curriculum. Most importantly, the policy trained in 
-    simulation is zero-shot transferred to a physical robot. It demonstrates dynamic 
-    and contact-rich motions with a simple gripper that generalizes across objects 
+- abs: A simple gripper can solve more complex manipulation tasks if it can utilize
+    the external environment such as pushing the object against the table or a vertical
+    wall, known as "Extrinsic Dexterity." Previous work in extrinsic dexterity usually
+    has careful assumptions about contacts which impose restrictions on robot design,
+    robot motions, and the variations of the physical parameters. In this work, we
+    develop a system based on reinforcement learning (RL) to address these limitations.
+    We study the task of “Occluded Grasping” which aims to grasp the object in
+    configurations that are initially occluded; the robot needs to move the object into
+    a configuration from which these grasps can be achieved. We present a system with
+    model-free RL that successfully achieves this task using a simple gripper with
+    extrinsic dexterity. The policy learns emergent behaviors of pushing the object
+    against the wall to rotate and then grasp it without additional reward terms on
+    extrinsic dexterity. We discuss important components of the system including the
+    design of the RL problem, multi-grasp training and selection, and policy
+    generalization with automatic curriculum. Most importantly, the policy trained in
+    simulation is zero-shot transferred to a physical robot. It demonstrates dynamic
+    and contact-rich motions with a simple gripper that generalizes across objects
     with various size, density, surface friction, and shape with a 78% success rate.
   authors: Wenxuan Zhou, David Held
   award: <award>Oral Presentation</award>  (Selection rate 6.5%)
@@ -170,6 +170,9 @@
   img: ../pics/ungraspable.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2211.01500
+    '[Code]': https://github.com/Wenxuan-Zhou/ungraspable
+    '[Poster]': https://drive.google.com/file/d/1O1mKGiqHc17ain8Ne4PuQK5Ji165-0F_/view
+    '[Talk]': https://drive.google.com/file/d/1iHdgwRWlRIiEF75-KBhnMZqo-DZ9MkKs/view?usp=sharing
   short_id: 2022corlungraspable
   site: https://sites.google.com/view/grasp-ungraspable
   title: Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity
@@ -223,6 +226,8 @@
   img: ../pics/toolflownet.gif
   links: 
     '[arXiv]': https://arxiv.org/abs/2211.09006
+    '[Poster]': https://docs.google.com/presentation/d/1CqSfyEfcakvNYrZblt4KmScOub06qmN6jRar8YlPHNM/edit?usp=sharing
+    '[Talk]': https://docs.google.com/presentation/d/1IAFnXzlVvSO3GXlX7NfAwVPhl77YgbBnGpkdN6WjIPk/edit?usp=sharing
   short_id: 2022corltoolflownet
   site: https://sites.google.com/view/point-cloud-policy
   title: 'ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from
@@ -264,6 +269,7 @@
   links:
     '[OpenReview]': https://openreview.net/forum?id=tyxyBj2w4vw
     '[PDF]': https://arxiv.org/pdf/2210.15751.pdf
+    '[Code]': https://github.com/Xingyu-Lin/PASTA
   short_id: 2022corlpasta
   site: https://sites.google.com/view/pasta-plan
   title: <a href="https://sites.google.com/view/pasta-plan">Planning with Spatial-Temporal
@@ -274,15 +280,15 @@
     - affordance
     - deformable
 - abs: "Orientation estimation is the core to a variety of vision and robotics tasks such as camera and object pose estimation. Deep learning has offered a way
-    \ to develop image-based orientation estimators; however, such estimators often require training on a large labeled dataset, which can be time-intensive 
-    \ to collect. In this work, we explore whether self-supervised learning from unlabeled data can be used to alleviate this issue. Specifically, we assume 
-    \ access to estimates of the relative orientation between neighboring poses, such that can be obtained via a local alignment method. While self-supervised 
+    \ to develop image-based orientation estimators; however, such estimators often require training on a large labeled dataset, which can be time-intensive
+    \ to collect. In this work, we explore whether self-supervised learning from unlabeled data can be used to alleviate this issue. Specifically, we assume
+    \ access to estimates of the relative orientation between neighboring poses, such that can be obtained via a local alignment method. While self-supervised
     \ learning has been used successfully for translational object keypoints, in this work, we show that naively applying relative supervision to the rotational
-    \ group SO(3) will often fail to converge due to the non-convexity of the rotational space. To tackle this challenge, we propose a new algorithm for 
+    \ group SO(3) will often fail to converge due to the non-convexity of the rotational space. To tackle this challenge, we propose a new algorithm for
     \ self-supervised orientation estimation which utilizes Modified Rodrigues Parameters to stereographically project the closed manifold of SO(3)
     \ to the open manifold of R3, allowing the optimization to be done in an open Euclidean space. We empirically validate the benefits of the proposed algorithm
-    \ for rotational averaging problem in two settings: (1) direct optimization on rotation parameters, and (2) optimization of parameters of a convolutional 
-    \ neural network that predicts object orientations from images. In both settings, we demonstrate that our proposed algorithm is able to converge to a 
+    \ for rotational averaging problem in two settings: (1) direct optimization on rotation parameters, and (2) optimization of parameters of a convolutional
+    \ neural network that predicts object orientations from images. In both settings, we demonstrate that our proposed algorithm is able to converge to a
     \ consistent relative orientation frame much faster than algorithms that purely operate in the SO(3) space."
   authors: Brian Okorn*, Chuer Pan*, Martial Hebert, David Held
   award: null
@@ -332,15 +338,19 @@
   authors: Sashank Tirumala*, Thomas Weng*, Daniel Seita*, Oliver Kroemer, Zeynep
     Temel, David Held
   award: <award>Best Paper at <a href="https://romado-workshop.github.io/ROMADO2022/">ROMADO-SI</a></award>
-  bib: "@inproceedings{tirumala2022,\n                    title={Learning to Singulate\
-    \ Layers of Cloth based on Tactile Feedback},\n                    author={Sashank\
-    \ Tirumala and Thomas Weng and Daniel Seita and Oliver Kroemer and Zeynep Temel\
-    \ and   David Held},\n                    booktitle={IEEE/RSJ International Conference\
-    \ on Intelligent Robots and Systems (IROS)},\n                    year={2022},\n\
-    \                    }"
+  bib: "@INPROCEEDINGS{tirumala2022reskin,\n
+  \ author={Tirumala, Sashank and Weng, Thomas and Seita, Daniel and Kroemer, Oliver and Temel, Zeynep and Held, David},\n
+  \ booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n
+  \ title={Learning to Singulate Layers of Cloth using Tactile Feedback},\n
+  \ year={2022},\n
+  \ volume={},\n
+  \ number={},\n
+  \ pages={7773-7780},\n
+  \ doi={10.1109/IROS47612.2022.9981341}\n}"
   img: ../pics/iros2022-singulating-layers-fabric-reskin-400x210.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2207.11196
+    '[Code]': https://github.com/DanielTakeshi/cloth_reskin
   short_id: 2022reskinfabric
   site: https://sites.google.com/view/reskin-cloth/home
   title: Learning to Singulate Layers of Cloth based on Tactile Feedback
