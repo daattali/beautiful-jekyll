@@ -20,7 +20,7 @@ author: Computer Engineering
 ###############################################
 
 navbar-links:
-  About Me: "Information"
+  About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
