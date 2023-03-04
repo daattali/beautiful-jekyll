@@ -50,7 +50,6 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "yejin.moon59@gamil.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
   instagram: moon9__005
   github: yejin0509
 #  twitter: daattali
