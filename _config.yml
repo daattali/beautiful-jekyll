@@ -4,6 +4,9 @@
 ### set up your website you should go through all these settings and edit them, but after
 ### the initial set up you won't need to come back to this file often.
 ###########################################################
+#theme: beautiful-jekyll
+#remoie_theme: daattali/beautiful-jekyll
+
 
 ############################
 # --- Required options --- #
@@ -287,7 +290,4 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
-#theme: beautiful-jekyll
-#remoie_theme: daattali/beautiful-jekyll
 
