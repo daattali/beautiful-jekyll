@@ -288,6 +288,6 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
-#theme :
-#remoie_theme :
+#theme: beautiful-jekyll
+#remoie_theme: daattali/beautiful-jekyll
 
