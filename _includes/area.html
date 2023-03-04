@@ -1,0 +1,15 @@
+<div class="area">
+    <h1>{{ area.title }}</h1>
+    <p class="area-blurb">{{ area.blurb }}</p>
+    <details>
+        <summary style="display: list-item;"><b>Relevant Publications</b></summary>
+        <div>
+            <table cellpadding="10" width="100%">
+                {% assign pubs = site.data.pubs | where: 'tags', area.tag %}
+                {% for pub in pubs %}
+                    {% include pub.html %}
+                {% endfor %}
+            </table>
+        </div>
+    </details>
+</div>
