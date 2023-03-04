@@ -4,16 +4,18 @@
 ### set up your website you should go through all these settings and edit them, but after
 ### the initial set up you won't need to come back to this file often.
 ###########################################################
+#theme: beautiful-jekyll
+#remote_theme: daattali/beautiful-jekyll
+
 
 ############################
 # --- Required options --- #
 ############################
-
 # Name of website
-title: My Website
+title: Smart_Device
 
 # Your name to show in the footer
-author: Some Person
+author: Computer Engineering
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -32,10 +34,10 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "https://github.com/yejin0509/yejin0509.github.io/issues/1#issue-1609791247"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+ round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
@@ -49,20 +51,19 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  email: "yejin.moon59@gmail.com"
+  instagram: moon9__005
+  github: yejin0509
+#  twitter: daattali
+#  patreon: DeanAttali
+#  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+#  facebook: deanattali
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
