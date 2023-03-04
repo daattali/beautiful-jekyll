@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "https://news.kbs.co.kr/data/news/2016/11/15/3377687_hgv.png"
+avatar: "https://www.notion.so/test-image-de31bd1a0a574c11920901482da6948f?pvs=4#2f497e8fbf184d27888981ca1c968932"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
