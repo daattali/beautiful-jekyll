@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Smart_Device_
+title: Smart_Device
 
 # Your name to show in the footer
 author: Some Person
@@ -22,9 +22,9 @@ url: "https://yejin0509.github.io/"
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - NAVER.blog: "https://m.blog.naver.com/0509moon"
+    - Instagram: "https://instagram.com/moon9__005"
+  GitHub home: "https://github.com/yejin0509"
 
 ################
 # --- Logo --- #
@@ -62,7 +62,7 @@ round-avatar: true
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: deanat78
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
