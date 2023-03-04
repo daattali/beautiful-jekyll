@@ -49,7 +49,7 @@ avatar: "/assets/img/avatar-icon.png"
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "yejin.moon59@gamil.com"
+  email: "yejin.moon59@gmail.com"
   instagram: moon9__005
   github: yejin0509
 #  twitter: daattali
@@ -62,7 +62,6 @@ social-network-links:
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
 #  facebook: deanattali
-  
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
