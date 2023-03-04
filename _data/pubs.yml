@@ -108,6 +108,8 @@
   title: Neural Grasp Distance Fields for Robot Manipulation
   venue: International Conference on Robotics and Automation (ICRA), 2023
   video_embed: null
+  tags:
+    - affordance
 - abs: Thin plastic bags are ubiquitous in retail stores, healthcare, food
     handling, recycling, homes, and school lunchrooms. They are challenging
     both for perception (due to specularities and occlusions) and for
@@ -354,6 +356,9 @@
   title: Learning to Singulate Layers of Cloth based on Tactile Feedback
   venue: International Conference on Intelligent Robots and Systems (IROS), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/FTGbx1XDjJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags: 
+    - deformable
+    - multimodal
 - abs: Deformable object manipulation has many applications such as cooking and laundry
     folding in our daily lives. Manipulating elastoplastic objects such as dough is
     particularly challenging because dough lacks a compact state representation and
@@ -764,6 +769,8 @@
     Manipulation with a Flow-based Policy</a>'
   venue: Conference on Robot Learning (CoRL), 2021
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/r68EEzzj_Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - deformable
 - abs: Reinforcement learning (RL) in low-data and risk-sensitive domains requires
     performant and flexible deployment policies that can readily incorporate constraints
     during deployment. One such class of policies are the semi-parametric H-step lookahead
@@ -1138,6 +1145,8 @@
     Robust Grasp Selection</a>
   venue: International Conference on Intelligent Robots and Systems (IROS), 2020
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/iLgSz1PfVm0?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - deformable
 - abs: 3D object trackers usually require training on large amounts of annotated data
     that is expensive and time-consuming to collect. Instead, we propose leveraging
     vast unlabeled datasets by self-supervised metric learning of 3D object trackers,
