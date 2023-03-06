@@ -394,6 +394,14 @@ footer .theme-by {
   margin-bottom: 30px;
 }
 
+.area-blurb {
+  margin-bottom: 10px;
+}
+
+.area-pubs{
+  margin-bottom: 30px;
+}
+
 .blog-tags a {
   color: {{ site.link-col }};
   text-decoration: none;
