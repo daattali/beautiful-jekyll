@@ -9,13 +9,13 @@ comments: true
 
 When building workflows while runnig multiple projects in one repository, it is crucial to filter PRs based on specific labels, given that each PR can receive labels of different projects. The documentation did not cover our case specifically; thus, it took some trial and error to figure out the proper syntax. 
 
-This is our implementation of the filter itself:
+This is the final implementation of the filter itself:
 
 ```yaml
 contains(github.event.pull_request.labels.*.name, 'your_project_name')
 ```
 
-And below is that filter within a workflow which publishes a Python package to PYPI:
+And below is that filter as part of a workflow which publishes a Python package to PYPI:
 
 ```yaml
 name: Upload your_project_name package
