@@ -7,10 +7,10 @@ tags: [generated data, sensor data, time series, software development, oop, data
 comments: true
 ---
 
-In this blog post, we explore how to move away from procedure-based code and increase code usability by following object-oriented programming principles. To this end, we refactor the code from one of our previous blog posts, namely [Generating Realistic Testing Data for Manufacturing Analytics Software](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/). By streamlining our code and incorporating OPP techniques, we aim to make the data generation process mentioned there more efficient, scalable, and easy to maintain for future development. Let's dive into the details and see how we can achieve this goal.
+In this blog post, I explore how to move away from procedure-based code and increase code usability by following object-oriented programming principles. To this end, I refactor the code from one of the previous blog posts, namely [Generating Realistic Testing Data for Manufacturing Analytics Software](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/). By streamlining the code and incorporating OPP techniques, I aim to make the data generation process mentioned there more efficient, scalable, and easy to maintain for future development. Let's dive into the details and see how we can achieve this goal.
 
 
-Our class will be called `FlowSensorDataGenerator`. Its goal is to generate realistic minute-wise demo data for a sensor such as electrical current sensors or flow meters in a batch manufacturing process. The data generation will consist of three steps:
+I introduce class called `FlowSensorDataGenerator`. Its goal is to generate realistic minute-wise demo data for a sensor such as electrical current sensors or flow meters in a batch manufacturing process. The data generation will consist of three steps:
 1. Initializing a class object by providing basic parameters such as the lower and upper limits of the flow/current, the average duration of batches, the average time window between batches, and the start time of the time series.
 2. Defining a mapping of parameters for four data generating patterns: regular, with omissions, with malfunctions, and zero time series.
 3. Generating a combined time series by means of pre-defined sequence of the four types of data generating patterns.
@@ -22,7 +22,7 @@ The class will have several methods that generate different chunks of the overal
 - The main method, `generate_data`, which takes a pre-defined mapping to combine different chunks of data from these four types mentioned above.
 - A static internal method, `__generate_truncated_normal_vector`, which is used to add variability to the main process paramaters, such as batch duration.
 
-The `current_time` variable is defined as part of the `__init__` method and is modified by each of the methods to combine the chunks of data into the final time series. The generated time series will be stored in the `generated_time_series` variable. We will add a visualization function as a class method as well.
+The `current_time` variable is defined as part of the `__init__` method and is modified by each of the methods to combine the chunks of data into the final time series. The generated time series will be stored in the `generated_time_series` variable. I added a visualization function as a class method as well.
 
 Let's take a look at the following implementation<sup>2</sup>:
 
@@ -218,7 +218,7 @@ class FlowSensorDataGenerator:
             ).rvs(size)
 ```
 
-Now, we can chose and apply a pattern to generate a fully functional time series; we will generate regular batches, as well as the batches with omissions, in chunks of 30; to simulate equipment malfunctioning we will generate a short sequence of batches, e.g. of three, then we can add a chunk of zeroes to imitate equipment going off:
+Now, I can chose and apply a pattern to generate a fully functional time series; I want to generate regular batches, as well as batches with omissions, in chunks of 30; to simulate equipment malfunctioning I generate a short sequence of batches, e.g. of three, then I add a chunk of zeroes to imitate equipment going off:
 
 ```python
 data_map = {
@@ -231,7 +231,7 @@ data_sequence = ['regular', 'omission', 'regular', 'malfunction', 'off']
 ```
 Note, that in the `generate_data` function, we utilize the `regular` patern twice, before and after generating the `omission` chunk.
 
-As mentioned before, to initialize our data generator, we need to define the lower and the uppre limit of the values, average batch duration, average time window between batches, and the start time:
+As mentioned before, to initialize our data generator, I need to define the lower and the uppre limit of the values, average batch duration, average time window between batches, and the start time:
 
 ```python
 dg = FlowSensorDataGenerator(
@@ -262,7 +262,7 @@ The class introduced in this blog post, provides a convenient and flexible way t
 
 <sup>1</sup> In case of equipment malfunction synthesis, the batch duration is updated as a function of the occured irregularity length.
 
-<sup>2</sup> We highly recommend getting acquainted with the content of the [initial blog post](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/) before proceeding with the code.
+<sup>2</sup> I highly recommend getting acquainted with the content of the [initial blog post](https://zhenev.github.io/2022-07-16-real-life-sensor-data-modeling/) before proceeding with the code.
 
 <sup>3</sup> The generated time series from this case study can be found [here](/assets/data/2022-08-06-generated-data.csv).
 
