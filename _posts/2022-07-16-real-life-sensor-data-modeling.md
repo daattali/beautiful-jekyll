@@ -7,11 +7,11 @@ tags: [generated data, sensor data, time series, unit testing, tdd, data visuali
 comments: true
 ---
 
-In the development of a software that includes data tools for providing analytics on batches in chemical manufacturing, the use of realistic testing data is critical to ensure accurate and reliable results. In this blog, we will exemplify how such testing data can be generated, starting with a basic example of "ideal batches" and then incorporating some deviations such as data outages, variability in process step implementation, and equipment malfunctioning. By using the resulting close-to-real data testing time series, one can ensure that even early versions of the software are able to handle real-world scenarios.
+In the development of a software that includes data tools for providing analytics on batches in chemical manufacturing, the use of realistic testing data is critical to ensure accurate and reliable results. In this blog, I exemplify how such testing data can be generated, starting with a basic example of "ideal batches" and then incorporating some deviations such as data outages, variability in process step implementation, and equipment malfunctioning. By using the resulting close-to-real data testing time series, one can ensure that even early versions of the software are able to handle real-world scenarios.
 
 ## Unit test
 
-Before diving into the two implementations of the any data generating function, we will establish a unit test to ensure that the generated data meets the desired criteria. Our basic scenario will include generating electrical current data; we want to be able to choose the number of batches to generate data for, the approximate duration of each batch in minutes, the approximate time of transition between batches ("window size"), a `lower_bound`, which is the lower value for the current data, and the `upper_bound`, which defines the upper limit for the current data. Thus, in terms of a unit test, we would like to check if the function outputs the expected number of batches, with the correct duration, window size, and current values. It is important to note that if the test should check statistical parameters of randomly generated samples, it should employ `.assertAlmostEqual()`, `.assertTrue()`, and `.all()` methods.
+Before diving into the two implementations of the any data generating function, I introduce a unit test to ensure that the generated data meets the desired criteria. Our basic scenario will include generating electrical current data; I want to be able to choose the number of batches to generate data for, the approximate duration of each batch in minutes, the approximate time of transition between batches ("window size"), a `lower_bound`, which is the lower value for the current data, and the `upper_bound`, which defines the upper limit for the current data. Thus, in terms of a unit test, I would like to check if the function outputs the expected number of batches, with the correct duration, window size, and current values. It is important to note that if the test should check statistical parameters of randomly generated samples, it should employ `.assertAlmostEqual()`, `.assertTrue()`, and `.all()` methods.
 
 
 The next test class verifies the basic functionality of the future `generate_current_data` function, i.e. that: the number of batches returned is as expected, the duration of each batch is as expected, and the window size and current parameters affect the generated data as expected. The setup of the parameters is done in the `setUp` method which is automatically called before each test.
@@ -149,7 +149,7 @@ def visualize_current_data(df: pd.DataFrame):
     fig.show()
 ```
 
-When we run the unit test, the generated dataframe meets the desired criteria:
+The generated dataframe meets the desired criteria:
 ```
 ============================= test session starts =============================
 collecting ... collected 3 item
@@ -187,7 +187,7 @@ visualize_current_data(current_data)
     });
 </script>
 
-In this example, we are using the `generate_current_data` function to generate current data with `5` batches, each with a duration of `30` minutes, a window size of `5` minutes, and values between `10` and `11`. With more batches it can look as follows:
+In this example, I use the `generate_current_data` function to generate current data with `5` batches, each with a duration of `30` minutes, a window size of `5` minutes, and values between `10` and `11`. With more batches it can look as follows:
 
 ```python
 visualize_current_data(generate_current_data(25, 120, 20, 10, 11))
@@ -204,7 +204,7 @@ visualize_current_data(generate_current_data(25, 120, 20, 10, 11))
 
 ## Introducing Data Omissions
 
-Now, we need to take into acount that multiple reasons can lead to missing values appearing in the raw data. Let's take a look on how data omissions can be introduced into the `generate_current_data` function result:
+Now, I need to take into acount that multiple reasons can lead to missing values appearing in the raw data. Let's take a look on how data omissions can be introduced into the `generate_current_data` function result:
 
 ```python
 def generate_current_data(
@@ -249,7 +249,7 @@ def generate_current_data(
     return current_data
 ```
 
-In this example, we added a parameter called `irregularity_rate` to the `generate_current_data` function and a check before appending each data point to the `current_data` list. This check works as follows: using the `random.random()` function which returns a random float between 0 and 1, we generate a random number; if this number is greater than the `irregularity_rate` passed to the function, we append the current data point to the `current_data` list; otherwise we are appending `None` to the list instead, indicating an omitted data point. The `irregularity_rate` parameter takes value between 0 and 1, which allows controlling the rate of data omissions in the generated data. To illustrate this version of the `generate_current_data` function, we passed a value of 0.3 to this parameter:
+In this example, I add a parameter called `irregularity_rate` to the `generate_current_data` function and a check before appending each data point to the `current_data` list. This check works as follows: using the `random.random()` function which returns a random float between 0 and 1, I generate a random number; if this number is greater than the `irregularity_rate` passed to the function, we append the current data point to the `current_data` list; otherwise we are appending `None` to the list instead, indicating an omitted data point. The `irregularity_rate` parameter takes value between 0 and 1, which allows controlling the rate of data omissions in the generated data. To illustrate this version of the `generate_current_data` function, I pass a value of 0.3 to this parameter:
 
 <div id="myDiv_v3"></div>
 <script>
@@ -261,7 +261,7 @@ In this example, we added a parameter called `irregularity_rate` to the `generat
 </script>
 
 
-However, actually, the data omissions rarely take place randomly; thus, we should account for omissions of sequences of data points instead (or in addition to) of random data point omissions:
+However, actually, the data omissions rarely take place randomly; thus, I want to account for omissions of sequences of data points instead (or in addition to) of random data point omissions:
 
 ```python
 def generate_current_data(
@@ -322,7 +322,7 @@ def generate_current_data(
 
 ```
 
-In this example, in addition to the `irregularity_rate` parameter, we are using a parameter called `irregularity_length` in the `generate_current_data` function. We are still checking the former before appending each data point to the `current_data` list; however, whenever the generated random number is lower than the `irregularity_rate` passed to the function, we are appending `irregularity_length` number of missing data points to the list instead, thus, leaving out a chunk of data. We then have to check whether the current batch is already over and account for the number of batches possibly skipped, to appropriately restart the regular data generation. To handel the grown complexity of the condition check and uncertain loop length, we swith to `while` loops. The `irregularity_rate` parameter still takes value between 0 and 1; it is normalized by the length of the period to be omitted at the very start of the function. To illustrate this version of the `generate_current_data` function, we passed a value of 0.1 to this parameter and the value of 200 to the `irregularity_length` parameter:
+In this example, in addition to the `irregularity_rate` parameter, I usr a parameter called `irregularity_length` in the `generate_current_data` function. I still check the former before appending each data point to the `current_data` list; however, whenever the generated random number is lower than the `irregularity_rate` passed to the function, I append `irregularity_length` number of missing data points to the list instead, thus, leaving out a chunk of data. I then have to check whether the current batch is already over and account for the number of batches possibly skipped, to appropriately restart the regular data generation. To handel the grown complexity of the condition check and uncertain loop length, I swithed to `while` loops. The `irregularity_rate` parameter still takes value between 0 and 1; it is normalized by the length of the period to be omitted at the very start of the function. To illustrate this version of the `generate_current_data` function, I pass a value of 0.1 to this parameter and the value of 200 to the `irregularity_length` parameter:
 
 <div id="myDiv_v4"></div>
 <script>
@@ -335,7 +335,7 @@ In this example, in addition to the `irregularity_rate` parameter, we are using 
 
 ## Variability in Process Step Duration
 
-Now that we have seen how to generate test data for ideal batch sequences and incorporate omissions in it, it is important to acknowledge that it is hard to consider the chemical manufacturing process as a perfectly timed operation. There can be deviations in the timing of each process step, which can impact the overall accuracy of batch data analysis. To accurately reflect real-world conditions in our testing data, it is necessary to incorporate these delays into our generated test time series. To this end, we will first generate a random number from a truncated normal distribution to add variability to the `duration` parameter value:
+Now that I can generate test data for ideal batch sequences and incorporate omissions in it, it is important to acknowledge that consider the chemical manufacturing process as a perfectly timed operation is pretty unreasonable. There can be deviations in the timing of each process step, which can impact the overall accuracy of batch data analysis. To accurately reflect real-world conditions in our testing data, it is necessary to incorporate these delays into our generated test time series. To this end, I use a random number from a truncated normal distribution to add variability to the `duration` parameter value:
 
 ```python
 
@@ -366,7 +366,7 @@ def generate_truncated_normal_vector(
     ).rvs(size)
 ```
 
-To adjust the `duration` parameter value, we can generate a 1-dimensional array from a distribution with the following parameter values:
+To adjust the `duration` parameter value, I can generate a 1-dimensional array from a distribution with the following parameter values:
 - `mean=1`,
 - `std_ved=0.2`,
 - `lower_bound=0`,
@@ -438,7 +438,7 @@ def generate_current_data(
 
 ```
 
-We have refactored the `duration` parameter into `mean_duration` to correctly reflect its role of the batch average duration. Let's illustrate the difference in the generated time series:
+I have refactored the `duration` parameter into `mean_duration` to correctly reflect its role of the batch average duration. Let's illustrate the difference in the generated time series:
 
 <div id="myDiv_v5"></div>
 <script>
@@ -451,13 +451,13 @@ We have refactored the `duration` parameter into `mean_duration` to correctly re
 
 ## Equipment Failures
 
-When it comes to equipment failures, the sensor signal should either go off (in which case we are dealing with missing data again) or experience some major irregularities. We can use the same `generate_truncated_normal_vector` function to model signal irregularities of this kind, with more "extreme" values, e.g.:
+When it comes to equipment failures, the sensor signal should either go off (in which case we are dealing with missing data again) or experience some major irregularities. I can use the same `generate_truncated_normal_vector` function to model signal irregularities of this kind, with more "extreme" values, e.g.:
 
 ```python
 generate_truncated_normal_vector(1, 0.9, 1, 0, 100)[0]
 ```
 
-We will apply the resulted random number as a multiplier, while generating regular current values instead of the missing values in the last version of the `generate_current_data` function:
+I apply the resulted random number as a multiplier, while generating regular current values instead of the missing values in the last version of the `generate_current_data` function:
 
 ```python
 def generate_current_data(
@@ -522,7 +522,7 @@ def generate_current_data(
     return current_data
 ```
 
-Now, the `irregularity_rate` parameter controls the frequency with which the data exhibit equipment malfunctioning behaviour. By using different combination of the parameters we can change the resulting irregularity pattern:
+Now, the `irregularity_rate` parameter controls the frequency with which the data exhibits equipment malfunctioning behaviour. By using different combination of the parameters I can change the resulting irregularity pattern:
 
 <div id="myDiv_v6"></div>
 <script>
@@ -535,11 +535,11 @@ Now, the `irregularity_rate` parameter controls the frequency with which the dat
  
 ## Conclusion
 
-In this blog post, we examined the three most common irregularities in real-world sensor data for chemical manufacturing batches. These include variations in batch duration, missing chunks of data, and equipment malfunctions. The actual time series can be a combination of these irregularities, including varying batch durations and the presence or absence of missing data and equipment malfunctions in different proportions.
+In this blog post, I modeled real-world electric sensor data from a process manufacturing equipment unit, while focusing on the three most common irregularities which can be observed, forexample, in chemical manufacturing production lines. These include variations in batch duration, missing chunks of data, and equipment malfunctions. The actual time series can be a combination of these irregularities, including varying batch durations and the presence or absence of missing data and equipment malfunctions in different proportions.
 
-As far as the data quality is concerned, variability should be introduced to the time window between the batches and to the length of irregularity periods. One additional feature to consider can be simulating load patterns within batches. This can help to replicate real-world scenarios where there may be varying levels of equipment utilization during specific process steps.
+As far as further improvement of the data model, variability should be introduced to the time window between the batches and to the length of irregularity periods. One additional feature to consider can be simulating load patterns within batches. This can help to replicate real-world scenarios where there may be varying levels of equipment utilization during specific process steps.
 
-To further improve the code, we can:
+Following steps would improve further the code:
 - merge the three versions of the `generate_current_data` function into a single method;
 - build a dedicated class and add additional methods as needed (the `generate_truncated_normal_vector` function should be one of them);
 - improve test coverage to cover all the irregularity cases discussed above.
