@@ -402,6 +402,17 @@ footer .theme-by {
   margin-bottom: 30px;
 }
 
+.area-images-container{
+  text-align: center;
+}
+
+
+.area-images{
+  width: auto;
+  height: 200px;
+  max-width: 400px;
+}
+
 .blog-tags a {
   color: {{ site.link-col }};
   text-decoration: none;
