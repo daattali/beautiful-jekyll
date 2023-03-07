@@ -121,7 +121,7 @@ To detect anomalies in batch process manufacturing data, I employed a convolutio
 
 ### Architecture
 
-The convolutional architecture is thought to be particularly suited to data, where local features and relationships between adjacent data points are important. The classical architecture of a convolutional reconstruction autoencoder model consists of an encoder and a decoder, where the encoder includes of one or more convolutional layers followed by one or more pooling layers, which reduce the spatial dimensions of the input, and the decoder includes of one or more transposed convolutional layers followed by one or more upsampling layers, which reconstruct the original input from the low-dimensional representation created by the encoder. The "bottleneck" layer is typically a fully connected or dense layer that connects the encoder and decoder. The goal is to learn a compressed representation of the input data in the bottleneck layer, which can be used for anomaly detection or other downstream tasks. I've ended up experimenting with removing the central layer of the classical CNN model and found that the model still performed well without it, so I implemented the following basic architecture (see the `create_model` method below):
+The convolutional architecture is thought to be particularly suited to data, where local features and relationships between adjacent data points are important. The classical architecture of a convolutional reconstruction autoencoder model consists of an encoder and a decoder, where the encoder includes of one or more convolutional layers followed by one or more pooling layers, which reduce the spatial dimensions of the input, and the decoder includes of one or more transposed convolutional layers followed by one or more upsampling layers, which reconstruct the original input from the low-dimensional representation created by the encoder. The "bottleneck" layer is typically a fully connected or dense layer that connects the encoder and decoder. The goal is to learn a compressed representation of the input data in the bottleneck layer, which can be used for anomaly detection or other downstream tasks. I've ended up experimenting with removing the central layer of the classical CNN model and found that the model still performed well without it<sup>3</sup>, so I implemented the following basic architecture (see the `create_model` method below):
 
 - After the `Input` layer, the model includes two 1D convolutional layers and two `Conv1DTranspose` layers, with one Droput layer between them;
 - The use of Dropout layers helps to prevent overfitting of the model to the training data;
@@ -512,7 +512,7 @@ Thus, I have successfully detected all the anomalies in the data, both the malfu
 
 ## Batch Analyzer
 
-I introduced another class, called `BatchAnalyzer`, which includes methods for generating raw data on batches and for extracting timings, like batch duration and time window duration between batches, and a method to calculate the resulting batch data quality rating<sup>3</sup>. In addition to the labeled timeseries, it takes two parameters: nominal expected batch duration (in minutes) and the number of batches produced within the given period, as documented in the ERP system.
+I introduced another class, called `BatchAnalyzer`, which includes methods for generating raw data on batches and for extracting timings, like batch duration and time window duration between batches, and a method to calculate the resulting batch data quality rating<sup>4</sup>. In addition to the labeled timeseries, it takes two parameters: nominal expected batch duration (in minutes) and the number of batches produced within the given period, as documented in the ERP system.
 
 ```python
 class BatchAnalyzer:
@@ -637,7 +637,11 @@ In this blog post, I demonstrated a successful implementation of a sequence-base
 <sup>2</sup> See, for example: [Autoencoders for Anomaly Detection in an Industrial Multivariate Time Series Dataset. Tziolas et al. Eng. Proc. 2022, 18(1), 23](https://doi.org/10.3390/engproc2022018023); [Anomaly Detection in Univariate Time-Series: a Surbey on the State-of-the-Art. Braei and Wagner. 2020](https://arxiv.org/pdf/2004.00433.pdf); [A Deep Neural Network for Unsupervised Anomaly Detection and Diagnosis in
 Multivariate Time Series Data. Zhang et al. 2018](https://arxiv.org/pdf/1811.08055v1.pdf).
 
-<sup>3</sup> Only for demonstrational purposes, we calculate the batch quality rating as the proportion of batches which length was within +-25% of the spec duration.
+NOTE: In this case study, the signal has constant statistical properties, such as a constant mean and variance over time, and the underlying process generating the signal is stable, i.e., it can be considered a stationary time series, in which case a reconstruction convolutional autoencoder may be well-suited for modeling the signal and detecting anomalies or predicting future values. However, if the signal has time-varying statistical properties, such as cyclical or seasonal variations, trend changes, and other time-dependent effects, or the underlying production process generating the signal is changing, then it cannot be considered a stationary time series and other time series models, either statistical (such as statistical process control or wavelet analysis) or ML/AI (such as SVM or LSTM), may be applied to capture the complexity of the signal.
+
+<sup>3</sup> Removing the bottleneck layer is considered to be useful for some applications where the goal is not to reduce the dimensionality of the input data, but rather to reconstruct the original input with minimal distortion (see the [link](https://arxiv.org/pdf/2202.12637v1.pdf) for deeper discussion of the needs and possible implementations).
+
+<sup>4</sup> Only for demonstrational purposes, we calculate the batch quality rating as the proportion of batches which length was within +-25% of the spec duration.
 
 Copyright © 2022 Zheniya Mogilevski
 
