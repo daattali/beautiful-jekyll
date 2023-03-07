@@ -181,6 +181,16 @@ cow-copy on write：当有数据写入时才复制一份，用于节约内存空
 strat启动线程，run只是方法调用。
 {: .box-note}  
 
+### JVM
+#### 编译过程
+1. 分析和输入到符号表
+2. 注解处理
+3. 语义分析和生成class文件  
+
+{: .box-note}  
+语法糖：泛型擦除，在编译时期将对应类型替换泛型。
+{: .box-note}  
+
 
 [articals](https://github.com/ZhongFuCheng3y/athena)
 
