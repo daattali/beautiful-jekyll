@@ -1,0 +1,26 @@
+{
+    "files.exclude": {
+        "**/_data": true,
+        "**/_includes": true,
+        "**/_layouts": true,
+
+        "**/.github": true,
+
+        // "**/assets/css": true,
+        "**/assets/js": true,
+
+        "**/docs": true,
+
+        "**/.gitattributes": true,
+        "**/.gitignore": true,
+        "**/Gemfile": true,
+        "**/*.gemspec": true,
+
+        "**/feed.xml": true,
+        "**/staticman.yml": true,
+
+        "**/tags.html": true,
+        "**/404.html": true,
+
+    },
+}
