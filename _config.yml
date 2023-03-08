@@ -27,23 +27,24 @@ navbar-links:
     - 历史沿革: "/intro/hist"
     - 联系我们: "/intro/cont"
   研究队伍: 
-    - 团队概况: "/team/index"
-    - 实验室1: "/team/1"
-    - 实验室2: "/team/2"
+    - 队伍概况: "/team/index"
+    - 特聘教授: "/team/1"
+    - 国家级人才: "/team/2"
+    - 核心成员: "/team/3"
+  科学研究:
+    - 防伪功能材料与结构: "/resesearch/1"
+    - "???": "/resesearch/prog" 
   研究成果:
     - 获得奖项: "/cont/prize"
     - 标准: "/cont/standard"
     - 专利: "/cont/patent"
     - 论文: "/cont/paper"
-  代表性工业化成果:
+  工业化成果应用:
     - 全息防伪与综合集成: "/industry/index"
     - 防伪功能材料与结构: "/industry/1"
     - 防伪检测与智能鉴伪-金融票据: "/industry/2"
     - 防伪检测与智能鉴伪-证照: "/industry/3"
   新闻动态: "/news/index"
-  研究成果:
-    - 防伪功能材料与结构: "/resesearch/1"
-    - "???": "/resesearch/prog" 
   对外合作:
     - 合作服务单位: "/corp/index"
     - 国际平台: "/corp/platform"
