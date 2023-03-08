@@ -7,7 +7,7 @@ subtitle: 中心目标与定位
  * @Author: Conghao Wong
  * @Date: 2023-03-08 19:13:03
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2023-03-08 21:23:25
+ * @LastEditTime: 2023-03-08 21:39:23
  * @Description: file content
  * @Github: https://cocoon2wong.github.io
  * Copyright 2023 Conghao Wong, All Rights Reserved.
@@ -15,7 +15,6 @@ subtitle: 中心目标与定位
 
 <link rel="stylesheet" type="text/css" href="/assets/css/user.css">
 
-国家防伪工程技术研究中心于2005年3月由国家科技部批准依托华中科技大学组建，是专门从事核心防伪技术及其工程化的国家级研究开发机构和产业化基地。是我国安全防伪技术创新的源头和产业化示范基地，承担着提升我国安全防伪技术及其产品水平的重任。是中国防伪产学研联盟秘书长单位；中国防伪行业协会副理事长单位；中国防伪标准化委员会委员单位。在防伪领域，国家防伪工程技术研究中心代表国家竞争力，具备国际竞争力。
 
 <!-- ppt118-119 -->
 ## 中心总体建设目标
