@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My Website
+title: 国家防伪工程技术研究中心
 
 # Your name to show in the footer
 author: Some Person
@@ -20,11 +20,33 @@ author: Some Person
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  首页: "/index"
+  中心概况:
+    - 中心目标与定位: "/intro/index"
+    - 组织架构: "/intro/org"
+    - 历史沿革: "/intro/hist"
+    - 联系我们: "/intro/cont"
+  研究队伍: 
+    - 团队概况: "/team/index"
+    - 实验室1: "/team/1"
+    - 实验室2: "/team/2"
+  研究成果:
+    - 获得奖项: "/cont/prize"
+    - 标准: "/cont/standard"
+    - 专利: "/cont/patent"
+    - 论文: "/cont/paper"
+  代表性工业化成果:
+    - 全息防伪与综合集成: "/industry/index"
+    - 防伪功能材料与结构: "/industry/1"
+    - 防伪检测与智能鉴伪-金融票据: "/industry/2"
+    - 防伪检测与智能鉴伪-证照: "/industry/3"
+  新闻动态: "/news/index"
+  研究成果:
+    - 防伪功能材料与结构: "/resesearch/1"
+    - "???": "/resesearch/prog" 
+  对外合作:
+    - 合作服务单位: "/corp/index"
+    - 国际平台: "/corp/platform"
 
 ################
 # --- Logo --- #
@@ -32,7 +54,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+# avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
