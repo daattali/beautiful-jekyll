@@ -7,10 +7,6 @@ subtitle: Things to do at Fur Squared
 
 This year's digital schedule is coming soon!
 
-We encourage you to make an optional free Zoho account to bookmark events you'd like to attend, and **download a custom itinerary for offline access**. Additionally, attendees with smartphones may wish to download the free "Zoho Backstage for Attendees" app from their app store of choice.
-
-Note that our event will not initially appear in the app's search results when downloaded. To access our schedule via the Zoho Backstage app, first download the app on your smart device then click the link to the schedule at the top of this page. The schedule should then open in the Zoho Backstage app, and be available for the remainder of the event.
-
 ### Is there a fursuit parade this year?
 
 In an effort to protect our attendees and prevent the spread of Covid-19, we will not be having a fursuit parade this year. Instead, please work with our staff photographers to arrange a photo-shoot. Further details on times and locations will be added to the schedule soon.
@@ -21,7 +17,7 @@ In an effort to protect our attendees and prevent the spread of Covid-19, we wil
 
 <br>Click to expand the image
 
-Main Stage: Milwaukee 1<br>Secondary Stage: Brookfield 3<br>Fursuit Headless Lounge: Brookfield 1<br>Dealer's Den: Brookfield 4 & 5<br>Artist Alley/Night Market: Brookfield 2<br>Tabletop Gaming: Moorland 7<br>Video Gaming: Moorland 3<br>Registration: Wisconsin 3 & 4<br>Ops/Lost & Found: Wisconsin 7<br>Security: Wisconsin 6<br>HIV Testing: Moorland 6
+Main Stage: Milwaukee 1<br>Secondary Stage: Brookfield 3<br>Fursuit Headless Lounge: Brookfield 1<br>Dealer's Den: Brookfield 4 & 5<br>Artist Alley/Night Market: Brookfield 2<br>Tabletop Gaming: Moorland 7<br>Video Gaming: Moorland 3<br>Registration: Wisconsin 3 & 4<br>Ops/Lost & Found: Wisconsin 6<br>Security: Wisconsin 7<br>HIV Testing: Moorland 6
 
 ## At Con and Need Help?
 
