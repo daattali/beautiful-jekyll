@@ -17,7 +17,7 @@ In an effort to protect our attendees and prevent the spread of Covid-19, we wil
 
 <br>Click to expand the image
 
-Main Stage: Milwaukee 1<br>Secondary Stage: Brookfield 3<br>Fursuit Headless Lounge: Brookfield 1<br>Dealer's Den: Brookfield 4 & 5<br>Artist Alley/Night Market: Brookfield 2<br>Tabletop Gaming: Moorland 7<br>Video Gaming: Moorland 3<br>Registration: Wisconsin 3 & 4<br>Ops/Lost & Found: Wisconsin 6<br>Security: Wisconsin 7<br>HIV Testing: Moorland 6
+Main Stage: Milwaukee 1<br>Secondary Stage: Brookfield 3<br>Fursuit Headless Lounge: Brookfield 1<br>Dealer's Den: Brookfield 4 & 5<br>Artist Alley/Night Market: Brookfield 2<br>Tabletop Gaming: Moorland 7<br>Video Gaming: Moorland 3<br>Registration: Wisconsin 3 & 4<br>Operations ("Ops"): Wisconsin 6<br>Security/Lost & Found: Wisconsin 7<br>HIV Testing: Moorland 6
 
 ## At Con and Need Help?
 
@@ -27,7 +27,7 @@ The Fur Squared Warm & Fuzzies are our friendly convention staffers that can hel
 
 ##### Having an emergency?
 
-In the case of a true emergency, please contact 911. Additionally, Fur Squared Staff/Security are not permitted to administer medical aide. However if your situation does not require 911, you can always find someone in Ops or Security, located in Wisconsin (6 & 7?).
+In the case of a true emergency, please contact 911. Additionally, Fur Squared Staff/Security are not permitted to administer medical aid. However if your situation does not require 911, you can always find someone in Ops or Security, located in Wisconsin (6 & 7).
 
 ## Contact Us
 
