@@ -44,8 +44,8 @@ _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then
 | 27-Mar	| Angles and Arcs		| 2021 MMT Gallop [Round 5](https://mustangmath.com/archive/2021/Gallop%20Set%205.pdf), [Round 6](https://mustangmath.com/archive/2021/Gallop%20Set%206.pdf), [Round 7](https://mustangmath.com/archive/2021/Gallop%20Set%207.pdf), and [Round 8](https://mustangmath.com/archive/2021/Gallop%20Set%208.pdf) | _Cancelled_ |
 | 3-Apr		| Expected Value		| [2022 MMT Bucking Bingo](https://mustangmath.com/archive/2022/BuckingBingoProblems.pdf) | _Cancelled_ |
 | 10-Apr	| _No School_			|  _No School_ | _No School_ |
-| 17-Apr	| Surface Area & Volume |  | _Cancelled_ |
-| 24-Apr	| Bases					|  | _Cancelled_ |
+| 17-Apr	| Surface Area & Volume | [2023 AMC 8](https://artofproblemsolving.com/wiki/index.php/2023_AMC_8_Problems) | _Cancelled_ |
+| 24-Apr	| Bases					| [2022 AMC 8](https://artofproblemsolving.com/wiki/index.php/2022_AMC_8_Problems) | _Cancelled_ |
 
 [2021-2022 schedule](/schedule-2122.md)
 
