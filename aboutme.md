@@ -11,7 +11,7 @@ subtitle: Some details about my background
 - I work for ChainSafe System, a leading **Crypto and Blockchain** research and development firm, I manage the consulting and R&D practice.
 - I am specialized in program management from inception to delivery. 
 
-- I combine more than 15 years of experience in start-up sales development, program management and **executive consulting service**s in multiple industries from Investment Banking to Hospitality with a focus on Blockchain cross-functional teams and global operations.
+- I combine more than 15 years of experience in start-up sales development, program management and **executive consulting services** in multiple industries from Investment Banking to Hospitality with a focus on Blockchain cross-functional teams and global operations.
 
 ## Blockchain Journey
 - In 2019, I fell into Blockchain via the Blockchain for Social Impact Coalition in NYC.
