@@ -1092,6 +1092,10 @@ footer {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.img-smol {
+  width: 60%;
+}
+
 .img-left {
   float: left;
   margin-right: 1em;
