@@ -15,6 +15,8 @@ title: dang7rickroll website
 # Your name to show in the footer
 author: Dang Nguyen Dinh Hai
 
+baseurl: dang7rickroll.github.io
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
