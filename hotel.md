@@ -22,7 +22,7 @@ The Hilton Garden Inn (Overflow)
 
 ## Room Rates
 
-Queen rooms are&nbsp; $185/night after tax at Hilton Garden Inn.
+Queen rooms are $185/night after tax at Hilton Garden Inn.
 
 ## No Breakfast Buffet
 
