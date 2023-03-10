@@ -20,7 +20,7 @@ author: David Martins
 ###############################################
 
 navbar-links:
-  Organization Notes: "organizationnotes"
+  About: "organizationnotes"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"

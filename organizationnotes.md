@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: Organization Notes
 subtitle: a Zendesk Support appliction
 ---
