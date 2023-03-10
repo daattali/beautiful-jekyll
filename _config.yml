@@ -20,11 +20,12 @@ author: David Martins
 ###############################################
 
 navbar-links:
-  News: "posts"
+  News: "news"
+  ZD Marketplace: "TODO"
+  Report issues: "https://github.com/djmartins88/zd_handy_notes/issues"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+
 
 ################
 # --- Logo --- #
