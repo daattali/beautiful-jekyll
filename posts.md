@@ -1,7 +1,7 @@
 ---
 layout: my_posts_page
-title: Organization Notes
-subtitle: a Zendesk Support appliction
+title: News
+subtitle: release notes, etc
 ---
 
 Organization Notes is a Zendesk Support application, which aims at improving your agents efficiency when dealing with tickets.

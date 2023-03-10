@@ -20,7 +20,7 @@ author: David Martins
 ###############################################
 
 navbar-links:
-  Posts: "posts"
+  News: "posts"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
