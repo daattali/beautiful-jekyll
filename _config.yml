@@ -40,7 +40,7 @@ navbar-links:
     - 标准: "/contributions/standard"
     - 专利: "/contributions/patent"
     - 论文: "/contributions/paper"
-  工业化成果应用:
+  代表性工业化成果:
     - 全息防伪与综合集成: "/industry/index"
     - 防伪功能材料与结构: "/industry/1"
     - 防伪检测与智能鉴伪-金融票据: "/industry/2"
@@ -63,7 +63,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: /assets/img/avatar-icon.png
+title-img: /assets/img/logo.png
 
 
 #####################################
