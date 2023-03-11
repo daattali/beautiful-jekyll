@@ -34,9 +34,9 @@ subtitle: 科研项目
 </script>
 
 <div class="t_grid">
-    <a class="btn btn-info btn-lg get-started-btn btn_dark" href="/resesearch/programs_index">国家级科研项目</a>
-    <a class="btn btn-info btn-lg get-started-btn btn_dark" href="/resesearch/programs_1">省部级科研项目</a>
-    <a class="btn btn-info btn-lg get-started-btn btn_selected" href="/resesearch/programs_2">其他科研项目</a>
+    <a class="btn btn-info btn-lg get-started-btn btn_dark" href="/researchs/programs_index">国家级科研项目</a>
+    <a class="btn btn-info btn-lg get-started-btn btn_dark" href="/researchs/programs_1">省部级科研项目</a>
+    <a class="btn btn-info btn-lg get-started-btn btn_selected" href="/researchs/programs_2">其他科研项目</a>
 </div>
 
 ### 其他科研项目
