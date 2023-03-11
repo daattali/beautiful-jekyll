@@ -36,10 +36,10 @@ navbar-links:
     - 科研项目: "/researchs/programs_index"
     - 研究方向: "/researchs/researchs_index"
   研究成果:
-    - 获得奖项: "/cont/prize"
-    - 标准: "/cont/standard"
-    - 专利: "/cont/patent"
-    - 论文: "/cont/paper"
+    - 获得奖项: "/contributions/prize"
+    - 标准: "/contributions/standard"
+    - 专利: "/contributions/patent"
+    - 论文: "/contributions/paper"
   工业化成果应用:
     - 全息防伪与综合集成: "/industry/index"
     - 防伪功能材料与结构: "/industry/1"
