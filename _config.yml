@@ -33,8 +33,8 @@ navbar-links:
     - 特聘教授: "/team/distinguishedProfessors"
     - 实验室、测试中心: "/team/labs"
   科学研究:
+    - 科研项目: "/resesearch/programs_index"
     - 防伪功能材料与结构: "/resesearch/1"
-    - "???": "/resesearch/prog" 
   研究成果:
     - 获得奖项: "/cont/prize"
     - 标准: "/cont/standard"
