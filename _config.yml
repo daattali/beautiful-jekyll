@@ -29,7 +29,7 @@ navbar-links:
     - 联系我们: "/intro/cont"
   研究队伍: 
     - 队伍概况: "/team/index"
-    - 特聘教授: "/team/1"
+    - 特聘教授: "/team/distinguishedProfessors"
     - 国家级人才: "/team/2"
     - 核心成员: "/team/3"
   科学研究:
