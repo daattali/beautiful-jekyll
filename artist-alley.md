@@ -4,7 +4,7 @@ title: Artist Alley
 css:
     - /assets/css/theme-2022/artist-alley.css
 ---
-*The Artist Alley runs on a lottery system where new participants are chosen daily. You can enter the lottery****in-person*** *at the Artist Alley Info Desk or****via Telegram****.*
+*The Artist Alley runs on a lottery system where new participants are chosen daily. You can enter the lottery&nbsp;****in-person*** *at the Artist Alley Info Desk or&nbsp;****via Telegram****.*
 
 Sign up early via the Artist Alley Telegram Channel: *\[Link will be available Wednesday 4/5 \]*
 
@@ -40,11 +40,7 @@ Sign up early via the Artist Alley Telegram Channel: *\[Link will be available W
 
 ## **Info we’ll need from you:**
 
-\- Badge Name
-
-\- Badge Number
-
-\- Telegram @ or Phone Number
+\- Badge Name<br>\- Badge Number<br>\- Telegram @ or Phone Number
 
 ## **Rules and Other Info**
 
@@ -70,9 +66,9 @@ Sign up early via the Artist Alley Telegram Channel: *\[Link will be available W
 
 \- Please keep “merch” \[clothing, fursuit parts/props, bags, pillows, etc\] to a minimum.
 
-*The general guideline is that you should be able to work on what you’re selling at your table \[generally, drawings\]. Small, supplemental items \[stickers, keychains, etc.\] are allowed, but should not be the main focus. There are of course exceptions to the rule \[i.e. if you’re drawing on t-shirts at your table and finishing them at the con, then selling clothing would be allowed\].**If you have questions about whether or not your items fall in the guidelines, please email art@fursquared.com before the con or find****SIN, RenaCat, or other Artist Alley Staff*** *in-person by the****Artist Alley Info Desk****.*
+*The general guideline is that you should be able to work on what you’re selling at your table \[generally, drawings\]. Small, supplemental items \[stickers, keychains, etc.\] are allowed, but should not be the main focus. There are of course exceptions to the rule \[i.e. if you’re drawing on t-shirts at your table and finishing them at the con, then selling clothing would be allowed\].&nbsp;**If you have questions about whether or not your items fall in the guidelines, please email art@fursquared.com before the con or find&nbsp;****SIN, RenaCat, or other Artist Alley Staff*** *in-person by the&nbsp;****Artist Alley Info Desk****.*
 
-**This year, most of our at-con announcements will be made through telegram! Go to***\[ Link will be available Wednesday 4/5 \]***to keep yourself updated!**
+**This year, most of our at-con announcements will be made through telegram! Go to&nbsp;***\[ Link will be available Wednesday 4/5 \]&nbsp;***to keep yourself updated!**
 
 **Be Kind. Have Fun. Make Bank.**
 
