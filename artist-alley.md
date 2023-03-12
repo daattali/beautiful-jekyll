@@ -48,7 +48,7 @@ Sign up early via the Artist Alley Telegram Channel: *\[Link will be available W
 
 ## **Rules and Other Info**
 
-\- Please clean your area for the next person when you check out.
+\- Please clean your area for the next person when you check out.![](/uploads/artist-alley-2023-min-shrunk.jpg){: width="300" height="875"}
 
 \- Each person gets ½ of a table
 
