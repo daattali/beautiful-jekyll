@@ -10,10 +10,10 @@ Sign up early via the Artist Alley Telegram Channel: *\[Link will be available W
 
 |  | Friday | Saturday | Sunday |
 | --- | --- | --- | --- |
-| **Sign Up** | 12:00 PM | 10:00 AM | 10:00 AM |
-| **Lotto/Setup** | 12:30 PM | 10:30 AM | 10:30 AM |
+| **Sign Up** | 10:30 AM | 9:30 AM | 9:30 AM |
+| **Lotto/Setup** | 12:00 PM | 10:00 AM | 10:00 AM |
 | **Open to Public** | 1:00 PM | 11:00 AM | 11:00 AM |
-| **Close** | 5:00 PM | 6:00 PM | 3:00 PM |
+| **Close** | 6:00 PM | 5:00 PM | 4:00 PM |
 
 ***\*\*Please remember to check out at the info desk when you leave the alley for the day!\*\****
 
