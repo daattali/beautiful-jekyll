@@ -16,6 +16,7 @@ url: "https://fursquared.com"
 navbar-links:
   Convention:
     - Registration: "registration"
+    - Programming: 'programming'
     - Dealer's Den: "dealers"
     - Video Games: "video-games"
     - Code of Conduct: "code-of-conduct"
