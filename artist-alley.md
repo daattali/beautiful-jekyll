@@ -8,7 +8,7 @@ css:
 
 Sign up early via the Artist Alley Telegram Channel: *\[Link will be available Wednesday 4/5 \]*
 
-|  | Friday | Saturday | Sunday |
+| Hours | Friday | Saturday | Sunday |
 | --- | --- | --- | --- |
 | **Sign Up** | 10:30 AM | 9:30 AM | 9:30 AM |
 | **Lotto/Setup** | 12:00 PM | 10:00 AM | 10:00 AM |
