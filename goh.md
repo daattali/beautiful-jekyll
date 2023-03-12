@@ -2,7 +2,7 @@
 layout: page
 title: Our Guests of Honor
 ---
-[![Chise the Pine Marten illustration by TheRougeCat](/uploads/gohbio-chise.png){: .img-left}](/uploads/gohbio-chise.png)
+[![Chise the Pine Marten illustration by TheRougeCat](/uploads/gohbio-chise-shrunk-min.png){: .img-left width="300" height="300"}](/uploads/gohbio-chise.png)
 
 Chise is a Senior Scientist in Vaccine Research and Development and has been in the field for a little over 10 years.
 
@@ -18,7 +18,7 @@ As a member of both communities, she also utilizes her platform as an activist f
 
 <br>Find Chise on Twitter: [@sailorrooscout](https://twitter.com/sailorrooscout){: target="_blank" rel="noopener"}
 
-[![Rhubarb the Nidorino, and KeyOtter illustration by TheRougeCat](/uploads/gohbio-rhubarbkey.png){: .img-right}](/uploads/gohbio-rhubarbkey.png)
+[![Rhubarb the Nidorino, and KeyOtter illustration by TheRougeCat](/uploads/gohbio-rhubarbkey-shrunk-min.png){: .img-right width="300" height="300"}](/uploads/gohbio-rhubarbkey.png)
 
 Meet Keyotter and Rhubarb - furry musicians known for their covers of video game music! Key, the otter/yoshi, is a pianist, accordionist, and music teacher. Rhubarb is a Nidorino and a jazz violinist. The two of them have been playing music with each other for their entire lives - because they are twin brothers! Originally from Urbana, IL, they grew up together with a love of music, video games, and nerd culture - the perfect ingredients for becoming video game music enthusiasts (and furries!). Now they combine those passions by bringing concerts and jam sessions to furry conventions.
 
