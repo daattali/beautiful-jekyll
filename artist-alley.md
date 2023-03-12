@@ -8,12 +8,42 @@ css:
 
 Sign up early via the Artist Alley Telegram Channel: *\[Link will be available Wednesday 4/5 \]*
 
-| Hours | Friday | Saturday | Sunday |
-| --- | --- | --- | --- |
-| **Sign Up** | 10:30 AM | 9:30 AM | 9:30 AM |
-| **Lotto/Setup** | 12:00 PM | 10:00 AM | 10:00 AM |
-| **Open to Public** | 1:00 PM | 11:00 AM | 11:00 AM |
-| **Close** | 6:00 PM | 5:00 PM | 4:00 PM |
+<table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Sign Up</th>
+      <td>12:00 PM</td>
+      <td>10:00 AM</td>
+      <td>10:00 AM</td>
+    </tr>
+    <tr>
+      <th>Lotto/Setup</th>
+      <td>12:30 PM</td>
+      <td>10:30 AM</td>
+      <td>10:30 AM</td>
+    </tr>
+    <tr>
+      <th>Open to Public</th>
+      <td>1:00 PM</td>
+      <td>11:00 AM</td>
+      <td>11:00 AM</td>
+    </tr>
+    <tr>
+      <th>Close</th>
+      <td>5:00 PM</td>
+      <td>6:00 PM</td>
+      <td>3:00 PM</td>
+    </tr>
+  </tbody>
+</table>
 
 ***\*\*Please remember to check out at the info desk when you leave the alley for the day!\*\****
 
