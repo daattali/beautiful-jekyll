@@ -9,7 +9,7 @@ This year's digital schedule is coming soon!
 
 ### Is there a fursuit parade this year?
 
-In an effort to protect our attendees and prevent the spread of Covid-19, we will not be having a fursuit parade this year. Instead, please work with our staff photographers to arrange a photo-shoot. Further details on times and locations will be added to the schedule soon.
+In an effort to protect our attendees and prevent the spread of Covid-19, we will not be having a fursuit parade this year. Instead, our staff photographers are available for photoshoots near the headless lounge (entrance to the photography area is inside the headless lounge). You can also ask questions directly to our staff photographers should you spot them around the convention.<br><br>Open photoshoot hours are be:<br>Friday: 1 p.m. to 6 p.m.<br>Saturday: 10 a.m. to 3 p.m.<br>Sunday: 10 a.m. to 4 p.m.
 
 ### Convention Map
 
