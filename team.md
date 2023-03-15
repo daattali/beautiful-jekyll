@@ -157,7 +157,7 @@ Quan Nguyen began his teaching role in the MDS program at UBC in the summer of 2
 
 
 
-#### Joel Östblom, Postdoctoral Research and Teaching Fellow
+#### Joel Östblom, Assistant Professor of Teaching
 
 <img src='../img/team/joel.jpeg' align="left" width="32%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
@@ -185,22 +185,6 @@ Alexi commenced his current role at MDS in January 2021. He completed his PhD in
 
 <a href="https://alexrod.netlify.app/" target="_blank">Learn more about Alexi here.</a>
 
-</p>
-
-
-
-#### Arman Seyed-Ahmadi, Postdoctoral Research and Teaching Fellow
-
-<img src='../img/team/arman.jpeg'   align="left" width="33%" style="margin-right: 5px;"/>
-<p style="font-size:12px">
-Arman Seyed-Ahmadi joined The MDS program in July 2021. He obtained his undergraduate degree from Urmia University of Technology in Mechanical Engineering and a Master's degree in Computational Fluid Dynamics from the University of Tabriz. Arman dove deeper into computational physics and continue his studies in the field by completing a doctorate from UBC. His research involves large-scale numerical simulations of particle-laden flows based on first principles, which he utilizes in developing physics-informed data-driven models. When Arman is not working, he is either reading, playing the violin or biking. <br>
-<br>
-
-<i>In the last 6 months, Arman has learned the importance of ethics in data science and some basics of AWS.</i> <br>
-
-<i>Arman's favourite data science topics include physics-informed machine learning and statistics. </i> <br>
-
-<a href="https://www.linkedin.com/in/arman-s-ahmadi-38983864/" target="_blank">Learn more about Arman here.</a>
 </p>
 
 

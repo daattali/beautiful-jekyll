@@ -81,6 +81,8 @@ the internet, software documentation, etc.
 
 **However, it is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums, during a quiz.**
 
+**Use of AI tools (e.g., ChatGPT) is also strictly prohibited and can lead to serious consequences.**
+
 The following are also **NOT** permitted:
 
 - taking a quiz from a remote location without prior permission (see below on how to obtain permission)
