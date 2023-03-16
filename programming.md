@@ -5,7 +5,7 @@ subtitle: Things to do at Fur Squared
 ---
 ## Programming Schedule
 
-Our schedule is available at [https://schedule.fursquared.com](https://schedule.fursquared.com)
+Our schedule is available at [https://schedule.fursquared.com](https:// schedule.fursquared.com)
 
 ### Is there a fursuit parade this year?
 
