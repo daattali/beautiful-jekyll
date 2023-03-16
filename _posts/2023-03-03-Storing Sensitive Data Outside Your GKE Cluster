@@ -1,2 +1,24 @@
-Following on from my previous blog on GKE Workload Identity, this blog covers how to securely store sensitive data outside of your GKE cluster, in Google Cloud Secret Manager, accessing them with Workload Identity. By storing the sensitive data outside of your cluster, in the event of an attack you reduce the risk of exposing the sensitive data.
+---
+layout: post
+title: Storing and accessing sensitive outside of your GKE cluster.
+subtitle: In this blog I cover how to securely store sensitive data outside of your GKE cluster, to mitigate the risk of exposure in the event of an attack and how to securely access the data from GKE using Workload Identity.
+#description: ""
+#cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
+share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
+readtime: true
+share-title: "How to prepare for the Google Cloud Professional Cloud Architect certification"
+share-description: "In this blog I cover Google Cloud’s Professional Cloud Architect certification and offer my advice and guidance on preparing to become a certified Google Cloud Professional Cloud Architect."
+share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
+tags: [Google Cloud Professional Cloud Architect, PCA, Certification, Exam]
+---
+
+* toc
+{:toc}
+
+# What is the Google Cloud Professional Cloud Architect certification?
+
+Following on from my previous blog on [GKE Workload Identity](www.cloudbabble.co.uk/2023-02-17-GKE-Workload-Identity), this blog covers how to securely store sensitive data outside of your GKE cluster, in Google Cloud Secret Manager, accessing them with Workload Identity. By storing the sensitive data outside of your cluster, in the event of an attack against the cluster, you reduce the risk of exposing the sensitive data.
+
+
 
