@@ -8,7 +8,7 @@ fb-img: /img/powershell-chatgpt.png
 
 ## Create an OpenAI API token
 
-* First we need to create an API key. For that, go to your account profile and click on **View API keys**
+* First we need to create an API key. For that, go to your [account profile](https://platform.openai.com/account/billing/overview) and click on **View API keys**
 
 ![openai profile](/img/2023-01-25-13-36-46.png)
 
