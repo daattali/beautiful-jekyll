@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 我是阳光开朗大男孩
 ---
 
-My name is Jconvey. I have the following qualities:
+我是Jconvey，打怪升级二十多年，在这里记录一些学到的知识。
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+目前自己拥有的一些人生技能：
 
-What else do you need?
+- Python、C用来实现想法&面试写算法题
+- 一些基本的计算机知识用来修电脑
+- 很快查到自己想要的信息（lzj也很擅长）
+- 睡觉吃饭用来恢复体力
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+🍌个朋友吧！
