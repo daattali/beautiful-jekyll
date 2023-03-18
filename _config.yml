@@ -1,10 +1,3 @@
-###########################################################
-### Welcome to Beautiful Jekyll!
-### This config file is meant for settings that affect your entire website. When you first
-### set up your website you should go through all these settings and edit them, but after
-### the initial set up you won't need to come back to this file often.
-###########################################################
-
 ############################
 # --- Required options --- #
 ############################
@@ -37,44 +30,14 @@ round-avatar: true
 # then specify the following parameter
 #title-img: /path/to/image
 
-#####################################
-# --- Footer social media links --- #
-#####################################
-
-# Select the social network links that you want to show in the footer.
-# Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "vanduong0504@gmail.com"
-  rss: false # remove this line if you don't want to show an RSS link at the bottom
   facebook: vanduong0504
   github: vanduong0504
-  # twitter: daattali
-  # patreon: DeanAttali
-  # youtube: c/daattali
-#  medium: yourname
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid
+  instagram: ko5ko4
+  spotify: Trọng Văn
 #  kaggle: yourname
 #  hackerrank: yourname
-
-# If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
 # --- General options --- #
@@ -242,7 +205,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Asia/Ho_Chi_Minh"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -279,6 +242,4 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
 
