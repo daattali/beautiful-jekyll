@@ -218,7 +218,7 @@ class FlowSensorDataGenerator:
             ).rvs(size)
 ```
 
-Now, I can chose and apply a pattern to generate a fully functional time series; I want to generate regular batches, as well as batches with omissions, in chunks of 30; to simulate equipment malfunctioning I generate a short sequence of batches, e.g. of three, then I add a chunk of zeroes to imitate equipment going off:
+Now, I can choose and apply a pattern to generate a fully functional time series; I want to generate regular batches, as well as batches with omissions, in chunks of 30; to simulate equipment malfunctioning I generate a short sequence of batches, e.g. of three, then I add a chunk of zeroes to imitate equipment going off:
 
 ```python
 data_map = {
