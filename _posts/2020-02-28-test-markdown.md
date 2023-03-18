@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
-comments: true
+title: Some course exciting and save for watching later 
+subtitle: Some course exciting and save for watching later
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [watch later]
 ---
-
 
 MIT 6.824: Distributed Systems
 1. [Video](https://www.youtube.com/@6.824)
