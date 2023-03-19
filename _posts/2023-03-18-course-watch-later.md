@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: post
 title: Course for learning
 subtitle: Some exciting courses
@@ -15,4 +15,4 @@ MIT 6.824: Distributed Systems
 UC Berkeley CS186 (Intro to DB Systems)
 1. [Video](https://www.youtube.com/playlist?list=PLYp4IGUhNFmw8USiYMJvCUjZe79fvyYge)
 2. [Home](https://cs186berkeley.net/)
-3. [Project](https://cs186.gitbook.io/project/) -->
+3. [Project](https://cs186.gitbook.io/project/)
