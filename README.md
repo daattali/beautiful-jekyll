@@ -75,7 +75,7 @@ Click on __*Settings*__ at the top (the cog icon) and on that page you'll have a
 
 Next you need to enable Github pages. From the sidebar menu click __*Pages*__. Under the *Build and deployment* section change the *branch* option to *Master* and hit save.
 
-within a couple minutes (check out the [FAQ](https://beautifuljekyll.com/faq/#custom-domain) if you want to use a different project name). If after a few minutes your website is still not ready, try making any edit to any file, just to force GitHub to re-build your site.
+Within a couple minutes (check out the [FAQ](https://beautifuljekyll.com/faq/#custom-domain) if you want to use a different project name). If after a few minutes your website is still not ready, try making any edit to any file, just to force GitHub to re-build your site.
 
 ### 3. Customize your website settings
 
