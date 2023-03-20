@@ -4,7 +4,7 @@
 
   {% capture title %}
     {%- if page.share-title -%}
-      {{ page.share-title | strip_html | xml_escape }}
+      {{ page.share-title | xml_escape }}
     {%- elsif page.title -%}
       {{ page.title | strip_html | xml_escape  }}
     {%- else -%}
@@ -14,7 +14,7 @@
 
   {% capture description %}
     {%- if page.share-description -%}
-      {{ page.share-description | strip_html | xml_escape }}
+      {{ page.share-description | xml_escape }}
     {%- elsif page.subtitle -%}
       {{ page.subtitle | strip_html | xml_escape }}
     {%- else -%}
