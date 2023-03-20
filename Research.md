@@ -33,7 +33,7 @@ Previously titled "Exporting Capital, Importing Law"
 David A. Lake Award for best paper presented at IPES 2020. Under Review.
 
 [The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
-Under Review.
+R&R, *Business and Politics*.
 
 [Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/GASB_anon.pdf) (with Nathan M. Jensen)
 
