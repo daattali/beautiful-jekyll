@@ -43,7 +43,7 @@ First off, you'll have the thanks of our entire staff and all our attendees, as 
 | 2 Hours | Small Sponsor Gift (our dice bag and a glow necklace from our 2nd year) |
 | 6 Hours | T-shirt with exclusive artwork |
 | 10 Hours | Sponsor Stuff Bag (rest of the sponsor swag) |
-| 12 Hours | Free Registration for Fur Squared 2023 |
+| 12 Hours | Free Registration for Fur Squared 2024 |
 
 **Note:** Any hours logged before opening ceremonies or after closing ceremonies will count as **double hours** toward your total hours of logged service.
 
