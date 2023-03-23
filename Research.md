@@ -26,8 +26,8 @@ title: ""
 
 [Informational Lobbying and Commercial Diplomacy](assets/amcham_adst_0.5.0.pdf)
 
-[The Oligarch's Offshore Dilemma](assets/oligarchs_ajps.pdf) (with Nikhil Kalyanpur)<br>
-Previously titled "Exporting Capital, Importing Law"
+[Exporting Capital, Importing Law](assets/kalyanpur_thrall_march_2023.pdf) (with Nikhil Kalyanpur)<br>
+Previously (briefly) titled "The Oligarch's Offshore Dilemma."
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
 David A. Lake Award for best paper presented at IPES 2020. Under Review.
