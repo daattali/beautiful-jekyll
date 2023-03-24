@@ -158,6 +158,8 @@ Using `padding="same"` parameter in the convolutional layers ensures that the ou
 
 Using the rectified linear unit (ReLU) activation function, which besides preventing the vanishing gradient problem during training, helps to ensure that output values are always non-negative (since we are working with non-negative values).
 
+30 filters with a width of 7 time steps (minutes) are applied to the input sequences. This configuration can be, of course, modified, e.g., with the help of automated hyper-parameter tuning, which I leave beyond the scope of this blog post.<sup>4</sup>
+
 I wanted to leverage the `MSE` loss function for our time series autoencoder as a straightforward choice: as a more computationally efficient one for gradient-based optimization methods like Adam, and for putting a higher weight on larger errors.
 
 ## Training the model
@@ -512,7 +514,7 @@ Thus, I have successfully detected all the anomalies in the data, both the malfu
 
 ## Batch Analyzer
 
-I introduced another class, called `BatchAnalyzer`, which includes methods for generating raw data on batches and for extracting timings, like batch duration and time window duration between batches, and a method to calculate the resulting batch data quality rating<sup>4</sup>. In addition to the labeled timeseries, it takes two parameters: nominal expected batch duration (in minutes) and the number of batches produced within the given period, as documented in the ERP system.
+I introduced another class, called `BatchAnalyzer`, which includes methods for generating raw data on batches and for extracting timings, like batch duration and time window duration between batches, and a method to calculate the resulting batch data quality rating<sup>5</sup>. In addition to the labeled timeseries, it takes two parameters: nominal expected batch duration (in minutes) and the number of batches produced within the given period, as documented in the ERP system.
 
 ```python
 class BatchAnalyzer:
@@ -641,7 +643,9 @@ NOTE: In this case study, the signal has constant statistical properties, such a
 
 <sup>3</sup> Removing the bottleneck layer is considered to be useful for some applications where the goal is not to reduce the dimensionality of the input data, but rather to reconstruct the original input with minimal distortion (see the [link](https://arxiv.org/pdf/2202.12637v1.pdf) for deeper discussion of the needs and possible implementations).
 
-<sup>4</sup> Only for demonstrational purposes, we calculate the batch quality rating as the proportion of batches which length was within +-25% of the spec duration.
+<sup>4</sup> The optimal number of filters and their width depends on various factors, such as the complexity of the input data, the desired level of abstraction, the available computational resources, and the specific task the model is being trained for. In general, one can start with a smaller number of filters and narrower filter widths and gradually increase their size and number based on the model's performance and the complexity of the problem. In our case, the choice of filter size and the number of filters is based on my prior knowledge of the problem. In practice, hyperparameter tuning is an important step to determine the optimal configuration for a given problem.
+
+<sup>5</sup> Only for demonstrational purposes, we calculate the batch quality rating as the proportion of batches which length was within +-25% of the spec duration.
 
 Copyright © 2022 Zheniya Mogilevski
 
