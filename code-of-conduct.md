@@ -25,7 +25,7 @@ All convention areas are considered to be "PG" at all times, with the exception 
 ### **Discord and Telegram Chat Decorum:**
 
 * Please be polite and respectful.
-* No vulgar or abusive language, including when it is masked with symbols, characters or otherwise, will not be tolerated. This also includes usernames or Discord handles.
+* No vulgar or abusive language, including when it is masked with symbols, characters or otherwise, will be tolerated. This also includes usernames or Discord handles.
 * No harassment (see Harassment section below).
 * No illegal content (links, images, etc.).
 * No harmful links (links to malicious websites, viruses, etc.).
