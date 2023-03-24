@@ -9,6 +9,8 @@
 # --- Required options --- #
 ############################
 
+theme: beautiful-jekyll
+
 # Name of website
 title: dang7rickroll website
 
