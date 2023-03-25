@@ -175,6 +175,7 @@ Also, for reference here's [my list from 2017](../2018-02-21-the-9-ish-best-boar
 |[Welcome Back to the Dungeon](https://boardgamegeek.com/boardgame/195043)|2016|1300|6.79471|1.3696|
 |[Welcome To...](https://boardgamegeek.com/boardgame/233867)|2018|124|7.61677|1.8045|
 |[Who Did It?](https://boardgamegeek.com/boardgame/241491)|2018|3710|6.48775|1.0|
+{:.sortable}
 
 #### And expansions
 
@@ -190,3 +191,4 @@ Also, for reference here's [my list from 2017](../2018-02-21-the-9-ish-best-boar
 |[Imperial Settlers: Why Can't We Be Friends](https://boardgamegeek.com/boardgame/169075)|2014|None|7.59427|2.6|
 |[Port Royal: The Adventure Begins...](https://boardgamegeek.com/boardgame/219265)|2017|None|7.17727|3.0|
 |[Terraforming Mars: Prelude](https://boardgamegeek.com/boardgame/247030)|2018|None|8.82213|2.5176|
+{:.sortable}
