@@ -164,68 +164,69 @@ Also, for reference, here's [my list from 2020](../2021-01-31-the-9-greatest-boa
 All new-to-me games played 2021
 -------------------------------
 
-|name|year|rank|rating_avg|weight|
-|----|----|----|----------|------|
-|[15 Days](https://boardgamegeek.com/boardgame/298619)|2020|5978|6.75048|1.8462|
-|[A Feast for Odin](https://boardgamegeek.com/boardgame/177736)|2016|22|8.20398|3.8537|
-|[A Fistful of Daisies](https://boardgamegeek.com/boardgame/316623)|2020|None|6.8|0.0|
-|[Agropolis](https://boardgamegeek.com/boardgame/314088)|2021|1778|7.63565|1.8571|
-|[Air, Land & Sea](https://boardgamegeek.com/boardgame/247367)|2018|565|7.53428|1.8095|
-|[Anno 1800](https://boardgamegeek.com/boardgame/311193)|2020|511|7.87994|3.1441|
-|[Apocalypse au Zoo de Carson City](https://boardgamegeek.com/boardgame/234834)|2017|12867|5.91202|1.1667|
-|[Biblios: Quill and Parchment](https://boardgamegeek.com/boardgame/300523)|2021|5119|7.13033|2.0|
-|[Circle the Wagons: Lone Cowboy](https://boardgamegeek.com/boardgame/232835)|2017|None|6.74885|2.0|
-|[Cities: Skylines – The Board Game](https://boardgamegeek.com/boardgame/267370)|2019|2787|6.70844|2.359|
-|[Codex Naturalis](https://boardgamegeek.com/boardgame/314503)|2021|1712|7.23839|1.8|
-|[Cube Duel](https://boardgamegeek.com/boardgame/301444)|2020|None|6.6|0.0|
-|[Downforce](https://boardgamegeek.com/boardgame/215311)|2017|371|7.34326|1.734|
-|[Dragomino](https://boardgamegeek.com/boardgame/300010)|2020|2679|7.17992|1.129|
-|[Eiyo](https://boardgamegeek.com/boardgame/299946)|2020|5734|6.90127|1.9333|
-|[Expedition to Newdale](https://boardgamegeek.com/boardgame/272682)|2019|1364|7.50173|2.9778|
-|[Exploding Kittens](https://boardgamegeek.com/boardgame/172225)|2015|3388|6.04169|1.0803|
-|[Food Chain Island](https://boardgamegeek.com/boardgame/309110)|2020|2105|7.30818|1.3333|
-|[Golems](https://boardgamegeek.com/boardgame/303734)|2020|7475|6.4991|1.7|
-|[Hellapagos](https://boardgamegeek.com/boardgame/224272)|2017|2331|6.63635|1.2791|
-|[It's a Wonderful Kingdom](https://boardgamegeek.com/boardgame/327711)|2022|3787|7.90609|2.55|
-|[Lost Ruins of Arnak](https://boardgamegeek.com/boardgame/312484)|2020|35|8.11034|2.8528|
-|[Mariposas](https://boardgamegeek.com/boardgame/297978)|2020|1179|7.01248|2.1707|
-|[MicroMacro: Crime City](https://boardgamegeek.com/boardgame/318977)|2020|227|7.74448|1.1214|
-|[Mysterium Park](https://boardgamegeek.com/boardgame/301767)|2020|1203|7.33121|1.5517|
-|[Railroad Ink Challenge: Shining Yellow Edition](https://boardgamegeek.com/boardgame/306882)|2021|2256|7.78789|2.125|
-|[Regicide](https://boardgamegeek.com/boardgame/307002)|2020|1569|7.60007|2.1379|
-|[Skulls of Sedlec](https://boardgamegeek.com/boardgame/303553)|2020|2188|7.54927|1.4615|
-|[Star Wars: Destiny](https://boardgamegeek.com/boardgame/205359)|2016|520|7.501|2.2785|
-|[Star Wars: X-Wing (Second Edition)](https://boardgamegeek.com/boardgame/252328)|2018|527|8.22409|3.0435|
-|[The Crew: Mission Deep Sea](https://boardgamegeek.com/boardgame/324856)|2021|193|8.45513|2.0196|
-|[The Gallerist](https://boardgamegeek.com/boardgame/125153)|2015|57|8.05874|4.2584|
-|[The Isle of Cats](https://boardgamegeek.com/boardgame/281259)|2019|96|7.925|2.2986|
-|[Tiny Epic Pirates: Kickstarter Deluxe Edition](https://boardgamegeek.com/boardgame/310203)|2021|None|7.33652|2.6667|
-|[Tokyo Highway (4 player)](https://boardgamegeek.com/boardgame/261901)|2018|None|6.96153|1.4167|
-|[Trek 12: Amazonia](https://boardgamegeek.com/boardgame/344415)|2021|9641|7.63774|1.3333|
-|[Troyes Dice](https://boardgamegeek.com/boardgame/284584)|2020|1674|7.18434|2.3488|
-|[Underwater Cities](https://boardgamegeek.com/boardgame/247763)|2018|45|8.10332|3.6057|
-|[Unlock!: Kids](https://boardgamegeek.com/boardgame/327056)|2021|10792|7.70684|1.5|
-|[Unpublished Prototype](https://boardgamegeek.com/boardgame/18291)|0|3004|6.90202|2.5325|
-|[Valeria: Card Kingdoms](https://boardgamegeek.com/boardgame/170561)|2016|530|7.45476|1.9914|
-|[Welcome to the Moon](https://boardgamegeek.com/boardgame/339789)|2021|2640|8.18974|2.4|
-|[Zombie Teenz Evolution](https://boardgamegeek.com/boardgame/310448)|2020|1815|7.96496|1.3889|
+|Name|Year|Rank|Average|Weight|Age|🕐|👥|
+|----|----|----|-------|------|---|-|-|
+|[15 Days](https://boardgamegeek.com/boardgame/298619)|2020|6044|6.67788|1.8667|14|20|1-4|
+|[A Feast for Odin](https://boardgamegeek.com/boardgame/177736)|2016|22|8.18608|3.855|12|120|1-4|
+|[A Fistful of Daisies](https://boardgamegeek.com/boardgame/316623)|2020|Not Ranked|6.66667|0|6|20|2-4|
+|[Agropolis](https://boardgamegeek.com/boardgame/314088)|2021|1343|7.44581|1.8|8|20|1-4|
+|[Air, Land, & Sea](https://boardgamegeek.com/boardgame/247367)|2019|512|7.48107|1.7284|14|30|2-2|
+|[Anno 1800](https://boardgamegeek.com/boardgame/311193)|2020|295|7.77435|3.1658|12|120|2-4|
+|[Apocalypse au Zoo de Carson City](https://boardgamegeek.com/boardgame/234834)|2017|15657|5.79842|1.1429|12|15|2-4|
+|[Biblios: Quill and Parchment](https://boardgamegeek.com/boardgame/300523)|2021|4579|7.01977|2.1667|14|40|1-4|
+|[Circle the Wagons](https://boardgamegeek.com/boardgame/213266)|2017|1141|7.10507|1.625|8|15|2-2|
+|[Cities: Skylines – The Board Game](https://boardgamegeek.com/boardgame/267370)|2019|3041|6.63023|2.3265|10|70|1-4|
+|[Codex Naturalis](https://boardgamegeek.com/boardgame/314503)|2021|1153|7.24014|1.7887|7|30|1-4|
+|[Cube Duel](https://boardgamegeek.com/boardgame/301444)|2020|Not Ranked|6.87222|0|10|0|1-2|
+|[Downforce](https://boardgamegeek.com/boardgame/215311)|2017|371|7.32951|1.7371|10|40|2-6|
+|[Dragomino](https://boardgamegeek.com/boardgame/300010)|2020|2044|7.09645|1.0816|5|15|2-4|
+|[Eiyo](https://boardgamegeek.com/boardgame/299946)|2020|5683|6.85281|2|14|20|1-2|
+|[Expedition to Newdale](https://boardgamegeek.com/boardgame/272682)|2019|1396|7.42756|3|12|90|1-4|
+|[Exploding Kittens](https://boardgamegeek.com/boardgame/172225)|2015|3572|6.04689|1.0923|7|15|2-5|
+|[Food Chain Island](https://boardgamegeek.com/boardgame/309110)|2020|1550|7.25957|1.3548|8|15|1-1|
+|[Golems](https://boardgamegeek.com/boardgame/303734)|2020|7752|6.42213|1.75|14|20|1-2|
+|[Hellapagos](https://boardgamegeek.com/boardgame/224272)|2017|2339|6.62607|1.2727|8|20|3-12|
+|[It's a Wonderful Kingdom](https://boardgamegeek.com/boardgame/327711)|2021|1327|7.45543|2.6|14|60|1-2|
+|[Lost Ruins of Arnak](https://boardgamegeek.com/boardgame/312484)|2020|29|8.09232|2.8913|12|120|1-4|
+|[Mariposas](https://boardgamegeek.com/boardgame/297978)|2020|1279|6.89048|2.187|14|75|2-5|
+|[MicroMacro: Crime City](https://boardgamegeek.com/boardgame/318977)|2020|214|7.58886|1.1148|12|45|1-4|
+|[Mysterium Park](https://boardgamegeek.com/boardgame/301767)|2020|1158|7.14416|1.4815|10|45|2-6|
+|[Railroad Ink Challenge: Shining Yellow Edition](https://boardgamegeek.com/boardgame/306882)|2021|1649|7.63316|2.0625|8|30|1-4|
+|[Regicide](https://boardgamegeek.com/boardgame/307002)|2020|774|7.51721|1.9506|10|30|1-4|
+|[Skulls of Sedlec](https://boardgamegeek.com/boardgame/303553)|2020|1409|7.46915|1.3214|8|20|1-4|
+|[Star Wars: Destiny](https://boardgamegeek.com/boardgame/205359)|2016|578|7.46926|2.2907|10|30|2-2|
+|[Star Wars: X-Wing (Second Edition)](https://boardgamegeek.com/boardgame/252328)|2018|523|8.10374|3.0877|14|45|2-2|
+|[The Crew: Mission Deep Sea](https://boardgamegeek.com/boardgame/324856)|2021|36|8.28265|2.046|10|20|2-5|
+|[The Gallerist](https://boardgamegeek.com/boardgame/125153)|2015|64|8.04135|4.2629|13|150|1-4|
+|[The Isle of Cats](https://boardgamegeek.com/boardgame/281259)|2019|112|7.78882|2.3477|8|90|1-4|
+|[Tiny Epic Pirates: Deluxe Edition](https://boardgamegeek.com/boardgame/310203)|2021|Not Ranked|7.20955|2.7143|14|60|1-4|
+|[Tokyo Highway](https://boardgamegeek.com/boardgame/261901)|2018|Not Ranked|6.90387|1.3871|8|50|2-4|
+|[Trek 12: Amazonia](https://boardgamegeek.com/boardgame/344415)|2021|5880|7.63453|1.3333|8|15|1-50|
+|[Troyes Dice](https://boardgamegeek.com/boardgame/284584)|2020|1635|7.07183|2.2963|12|30|1-10|
+|[Underwater Cities](https://boardgamegeek.com/boardgame/247763)|2018|43|8.08115|3.6145|12|150|1-4|
+|[Unlock! Kids: Detective Stories](https://boardgamegeek.com/boardgame/327056)|2021|3104|7.86693|1.75|6|60|1-4|
+|[Unpublished Prototype](https://boardgamegeek.com/boardgame/18291)|0|3267|6.91795|2.5325|0|0|0-0|
+|[Valeria: Card Kingdoms](https://boardgamegeek.com/boardgame/170561)|2016|540|7.45766|1.9844|13|45|1-5|
+|[Welcome to the Moon](https://boardgamegeek.com/boardgame/339789)|2021|303|8.06926|2.4268|10|30|1-6|
+|[Zombie Teenz Evolution](https://boardgamegeek.com/boardgame/310448)|2020|1344|7.79286|1.4615|8|25|2-4|
 {:.sortable}
 
 ### Expansions
 
-|name|year|rank|rating_avg|weight|
-|----|----|----|----------|------|
-|[Carcassonne: Expansion 2 – Traders & Builders](https://boardgamegeek.com/boardgame/5405)|2003|None|7.61023|2.0659|
-|[Race for the Galaxy: Rebel vs Imperium](https://boardgamegeek.com/boardgame/40210)|2009|None|7.93213|3.0737|
-|[Skulls of Sedlec: Monstrance](https://boardgamegeek.com/boardgame/316252)|2020|None|7.75769|1.6667|
-|[Star Realms: Command Deck – The Alignment](https://boardgamegeek.com/boardgame/231376)|2018|None|7.59257|1.6667|
-|[Star Realms: Command Deck – The Alliance](https://boardgamegeek.com/boardgame/231369)|2018|None|7.65346|2.0|
-|[Star Realms: Command Deck – The Coalition](https://boardgamegeek.com/boardgame/231370)|2018|None|7.67029|1.6667|
-|[Star Realms: Command Deck – The Pact](https://boardgamegeek.com/boardgame/231371)|2018|None|7.71843|1.6667|
-|[Star Realms: Command Deck – The Union](https://boardgamegeek.com/boardgame/231372)|2018|None|7.67838|1.6667|
-|[Star Realms: Command Deck – The Unity](https://boardgamegeek.com/boardgame/231373)|2018|None|7.6998|2.3333|
-|[Star Realms: Crisis – Fleets & Fortresses](https://boardgamegeek.com/boardgame/166704)|2014|None|7.72623|2.0|
-|[Star Realms: Crisis – Heroes](https://boardgamegeek.com/boardgame/166708)|2014|None|7.04605|1.975|
-|[Star Realms: United – Heroes](https://boardgamegeek.com/boardgame/202247)|2016|None|7.31989|1.8333|
-|[Star Wars: X-Wing (Second Edition) – Servants of Strife Squadron Pack](https://boardgamegeek.com/boardgame/265504)|2018|None|8.27333|0.0|
+|Name|Year|Rank|Average|Weight|Age|🕐|👥|
+|----|----|----|-------|------|---|-|-|
+|[Carcassonne: Expansion 2 – Traders & Builders](https://boardgamegeek.com/boardgame/5405)|2003|Not Ranked|7.61243|2.0641|13|60|2-6|
+|[Circle the Wagons: Lone Cowboy](https://boardgamegeek.com/boardgame/232835)|2017|Not Ranked|6.70648|2|8|15|1-1|
+|[It's a Wonderful Kingdom: Promo Pack](https://boardgamegeek.com/boardgame/359366)|2022|Not Ranked|7.06667|0|14|60|1-2|
+|[Race for the Galaxy: Rebel vs Imperium](https://boardgamegeek.com/boardgame/40210)|2009|Not Ranked|7.92914|3.0732|12|60|1-6|
+|[Skulls of Sedlec: Monstrance](https://boardgamegeek.com/boardgame/316252)|2020|Not Ranked|7.6868|1.75|8|20|1-1|
+|[Star Realms: Command Deck – The Alignment](https://boardgamegeek.com/boardgame/231376)|2018|Not Ranked|7.62864|1.6667|12|0|2-4|
+|[Star Realms: Command Deck – The Alliance](https://boardgamegeek.com/boardgame/231369)|2018|Not Ranked|7.68909|2|12|0|2-4|
+|[Star Realms: Command Deck – The Coalition](https://boardgamegeek.com/boardgame/231370)|2018|Not Ranked|7.68339|1.6667|12|0|2-4|
+|[Star Realms: Command Deck – The Pact](https://boardgamegeek.com/boardgame/231371)|2018|Not Ranked|7.74509|1.6667|12|0|2-4|
+|[Star Realms: Command Deck – The Union](https://boardgamegeek.com/boardgame/231372)|2018|Not Ranked|7.6933|1.6667|12|0|2-4|
+|[Star Realms: Command Deck – The Unity](https://boardgamegeek.com/boardgame/231373)|2018|Not Ranked|7.73112|2|12|0|2-4|
+|[Star Realms: Crisis – Heroes](https://boardgamegeek.com/boardgame/166708)|2014|Not Ranked|7.04662|1.9535|12|0|2-6|
+|[Star Realms: United – Heroes](https://boardgamegeek.com/boardgame/202247)|2016|Not Ranked|7.31975|1.8333|12|0|2-2|
+|[Star Wars: X-Wing (Second Edition) – Servants of Strife Squadron Pack](https://boardgamegeek.com/boardgame/265504)|2018|Not Ranked|8.23018|0|14|45|2-2|
 {:.sortable}

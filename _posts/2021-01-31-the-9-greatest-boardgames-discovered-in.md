@@ -154,53 +154,53 @@ Also, for reference, here's [my list from 2019](../2020-02-08-the-9-bestish-game
 
 ## All new-to-me games played 2020
 
-|name|year|rank|rating_avg|weight|
-|----|----|----|----------|------|
-|[Agricola: All Creatures Big and Small](https://boardgamegeek.com/boardgame/119890)|2012|269|7.38483|2.3504|
-|[Boomerang: Europe](https://boardgamegeek.com/boardgame/300367)|2020|9800|7.181|2.0|
-|[Calico](https://boardgamegeek.com/boardgame/283155)|2020|487|8.01936|2.1299|
-|[Chakra](https://boardgamegeek.com/boardgame/267378)|2019|2459|6.94643|1.6667|
-|[Coffee Roaster](https://boardgamegeek.com/boardgame/196526)|2015|1022|7.58812|2.1273|
-|[Colors of Paris](https://boardgamegeek.com/boardgame/269160)|2019|2583|7.09881|2.3182|
-|[Draftosaurus](https://boardgamegeek.com/boardgame/264055)|2019|721|7.20356|1.2045|
-|[Dream Catcher](https://boardgamegeek.com/boardgame/299028)|2020|None|6.72222|1.0|
-|[Ecos: First Continent](https://boardgamegeek.com/boardgame/279254)|2019|1029|7.20973|2.6324|
-|[Ghost Adventure](https://boardgamegeek.com/boardgame/275032)|2020|None|7.72|1.0|
-|[Hokkaido](https://boardgamegeek.com/boardgame/260332)|2018|2676|7.09854|2.0952|
-|[Isidore](https://boardgamegeek.com/boardgame/246317)|2018|17326|5.4|1.4|
-|[La Isla](https://boardgamegeek.com/boardgame/154246)|2014|934|6.89085|2.25|
-|[Maracaibo](https://boardgamegeek.com/boardgame/276025)|2019|41|8.306|3.8782|
-|[Mini Express](https://boardgamegeek.com/boardgame/300751)|2020|6638|7.7029|2.1|
-|[Nine Tiles Panic](https://boardgamegeek.com/boardgame/279869)|2019|2478|7.05442|1.1818|
-|[Oceans](https://boardgamegeek.com/boardgame/232414)|2020|600|7.71095|2.7912|
-|[On Mars](https://boardgamegeek.com/boardgame/184267)|2020|74|8.30514|4.6256|
-|[On Tour](https://boardgamegeek.com/boardgame/251412)|2019|1080|7.08037|1.4808|
-|[Oriflamme](https://boardgamegeek.com/boardgame/287084)|2019|2339|7.34603|1.5652|
-|[Paladins of the West Kingdom](https://boardgamegeek.com/boardgame/266810)|2019|75|8.0767|3.653|
-|[Point Salad](https://boardgamegeek.com/boardgame/274960)|2019|388|7.33886|1.1592|
-|[Q.E.](https://boardgamegeek.com/boardgame/266830)|2019|909|7.52748|1.7586|
-|[Similo](https://boardgamegeek.com/boardgame/268620)|2019|2012|6.99174|1.0833|
-|[The Crew: The Quest for Planet Nine](https://boardgamegeek.com/boardgame/284083)|2019|45|8.03382|2.0|
-|[The Quiet Year](https://boardgamegeek.com/boardgame/161880)|2013|4156|7.79129|1.4|
-|[Thumbs Up!](https://boardgamegeek.com/boardgame/172035)|2015|16041|5.57843|1.0|
-|[Tiny Towns](https://boardgamegeek.com/boardgame/265736)|2019|316|7.37681|2.0924|
-|[Trek 12](https://boardgamegeek.com/boardgame/303672)|2020|5234|8.14339|1.8|
-|[Vintage](https://boardgamegeek.com/boardgame/296667)|2020|None|6.46|1.0|
-|[Viscounts of the West Kingdom](https://boardgamegeek.com/boardgame/296151)|2020|474|8.17948|3.5203|
-|[Welcome to New Las Vegas](https://boardgamegeek.com/boardgame/281075)|2020|2431|7.14075|2.913|
-|[Zombie Kidz Evolution](https://boardgamegeek.com/boardgame/256952)|2018|738|7.90925|1.4429|
+|Name|Year|Rank|Average|Weight|Age|🕐|👥|
+|----|----|----|-------|------|---|-|-|
+|[Agricola: All Creatures Big and Small](https://boardgamegeek.com/boardgame/119890)|2012|343|7.35174|2.3504|13|30|2-2|
+|[Boomerang: Europe](https://boardgamegeek.com/boardgame/300367)|2020|3876|6.91342|1.7692|10|30|2-4|
+|[Calico](https://boardgamegeek.com/boardgame/283155)|2020|192|7.61919|2.1765|10|45|1-4|
+|[Chakra](https://boardgamegeek.com/boardgame/267378)|2019|1913|6.91129|1.7143|8|30|2-4|
+|[Coffee Roaster](https://boardgamegeek.com/boardgame/196526)|2015|894|7.3953|2.1122|12|30|1-1|
+|[Colors of Paris](https://boardgamegeek.com/boardgame/269160)|2019|2523|6.95327|2.1591|10|60|2-4|
+|[Draftosaurus](https://boardgamegeek.com/boardgame/264055)|2019|579|7.12815|1.2605|8|15|2-5|
+|[Dream Catcher](https://boardgamegeek.com/boardgame/299028)|2020|13451|6.30543|1|4|15|2-4|
+|[Ecos: First Continent](https://boardgamegeek.com/boardgame/279254)|2019|1006|7.15497|2.5957|14|75|2-6|
+|[Ghost Adventure](https://boardgamegeek.com/boardgame/275032)|2020|6126|7.04785|1|8|30|1-4|
+|[Hokkaido](https://boardgamegeek.com/boardgame/260332)|2018|3043|6.91265|2.1034|8|40|2-5|
+|[Isidore](https://boardgamegeek.com/boardgame/246317)|2018|21600|5.26561|1.4|6|30|2-4|
+|[La Isla](https://boardgamegeek.com/boardgame/154246)|2014|1128|6.87159|2.2538|10|60|2-4|
+|[Maracaibo](https://boardgamegeek.com/boardgame/276025)|2019|50|8.09706|3.901|12|120|1-4|
+|[Mini Express](https://boardgamegeek.com/boardgame/300751)|2021|2470|7.30792|2.3611|8|45|1-5|
+|[Nine Tiles Panic](https://boardgamegeek.com/boardgame/279869)|2019|2319|6.94972|1.25|7|20|2-5|
+|[Oceans](https://boardgamegeek.com/boardgame/232414)|2020|474|7.51655|2.8722|12|90|2-4|
+|[On Mars](https://boardgamegeek.com/boardgame/184267)|2020|49|8.22685|4.6687|14|150|1-4|
+|[On Tour](https://boardgamegeek.com/boardgame/251412)|2019|1127|6.97482|1.4714|7|20|1-8|
+|[Oriflamme](https://boardgamegeek.com/boardgame/287084)|2019|1121|7.14544|1.6559|10|30|3-5|
+|[Paladins of the West Kingdom](https://boardgamegeek.com/boardgame/266810)|2019|65|8.00752|3.6977|12|120|1-4|
+|[Point Salad](https://boardgamegeek.com/boardgame/274960)|2019|433|7.20138|1.1629|8|30|2-6|
+|[QE](https://boardgamegeek.com/boardgame/266830)|2019|617|7.41776|1.5676|8|45|3-5|
+|[Similo](https://boardgamegeek.com/boardgame/268620)|2019|1369|6.83218|1.0361|7|15|2-8|
+|[The Crew: The Quest for Planet Nine](https://boardgamegeek.com/boardgame/284083)|2019|53|7.87742|1.9752|10|20|2-5|
+|[The Quiet Year](https://boardgamegeek.com/boardgame/161880)|2013|4158|7.74056|1.4545|0|180|2-4|
+|[Thumbs Up!](https://boardgamegeek.com/boardgame/172035)|2015|18613|5.72045|1|6|10|2-6|
+|[Tiny Towns](https://boardgamegeek.com/boardgame/265736)|2019|375|7.27133|2.0502|14|60|1-6|
+|[Trek 12: Himalaya](https://boardgamegeek.com/boardgame/303672)|2020|1959|6.90469|1.44|8|30|1-50|
+|[Unpublished Prototype](https://boardgamegeek.com/boardgame/18291)|0|3267|6.91795|2.5325|0|0|0-0|
+|[Vintage](https://boardgamegeek.com/boardgame/296667)|2020|13018|6.31385|1|8|20|3-6|
+|[Viscounts of the West Kingdom](https://boardgamegeek.com/boardgame/296151)|2020|152|7.90356|3.4353|12|90|1-4|
+|[Welcome to New Las Vegas](https://boardgamegeek.com/boardgame/281075)|2020|2190|6.82145|2.8889|10|35|1-50|
+|[Zombie Kidz Evolution](https://boardgamegeek.com/boardgame/256952)|2018|487|7.69609|1.3717|7|15|2-4|
 {:.sortable}
 
 ### Expansions
 
-|name|year|rank|rating_avg|weight|
-|----|----|----|----------|------|
-|[Architects of the West Kingdom: Age of Artisans](https://boardgamegeek.com/boardgame/285235)|2020|None|8.23629|2.8889|
-|[Escape: The Curse of the Temple – Expansion 1: Illusions](https://boardgamegeek.com/boardgame/128236)|2012|None|7.4099|1.6222|
-|[It's a Wonderful World: Corruption & Ascension](https://boardgamegeek.com/boardgame/298851)|2020|None|8.29278|2.3333|
-|[It's a Wonderful World: War or Peace](https://boardgamegeek.com/boardgame/298752)|2020|None|8.00615|2.0|
-|[Star Realms: Scenarios](https://boardgamegeek.com/boardgame/224182)|2018|None|7.75701|2.0|
-|[Terraforming Mars: Turmoil](https://boardgamegeek.com/boardgame/273473)|2019|None|7.68849|3.7273|
-|[Terraforming Mars: Turmoil Promos](https://boardgamegeek.com/boardgame/279345)|2019|None|8.14362|3.6667|
-|[Welcome To...: Easter Egg Hunt & Doomsday Thematic Neighborhoods](https://boardgamegeek.com/boardgame/271874)|2019|None|7.38627|1.9|
+|Name|Year|Rank|Average|Weight|Age|🕐|👥|
+|----|----|----|-------|------|---|-|-|
+|[Architects of the West Kingdom: Age of Artisans](https://boardgamegeek.com/boardgame/285235)|2020|Not Ranked|8.11714|2.8627|12|80|1-6|
+|[It's a Wonderful World: Corruption & Ascension](https://boardgamegeek.com/boardgame/298851)|2020|Not Ranked|8.16596|2.625|14|45|1-7|
+|[It's a Wonderful World: War or Peace](https://boardgamegeek.com/boardgame/298752)|2020|Not Ranked|7.8582|2.1818|14|60|1-5|
+|[Star Realms: Scenarios](https://boardgamegeek.com/boardgame/224182)|2018|Not Ranked|7.72217|1.6667|12|0|2-4|
+|[Terraforming Mars: Turmoil](https://boardgamegeek.com/boardgame/273473)|2019|Not Ranked|7.54517|3.75|12|150|1-5|
+|[Terraforming Mars: Turmoil Promos](https://boardgamegeek.com/boardgame/279345)|2019|Not Ranked|8.14666|3.5|12|120|1-5|
+|[Welcome To...: Easter Egg Hunt & Doomsday Thematic Neighborhoods](https://boardgamegeek.com/boardgame/271874)|2019|Not Ranked|7.31895|1.9167|10|25|1-50|
 {:.sortable}
