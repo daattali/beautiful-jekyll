@@ -11,6 +11,7 @@ subtitle:
 * **Sat:** 10 AM to Midnight
   * **[Smash Tournament](https://challonge.com/FurSquared2023Smash){: target="_blank" rel="noopener"}\:** 2 PM to 5 PM
 * **Sun:** 10 AM to 5 PM
+  * **Celeste Speedrun\:** 1 PM to 2 PM
 
 # Speedruns
 
