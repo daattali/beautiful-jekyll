@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: Mark's Blog
 
 # Your name to show in the footer
-author: Some Person
+author: Mark (Hao) Chen
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+# avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -49,13 +49,10 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  email: "a77069752@gmail.com"
+  rss: true 
+  github: hmarkc
+  linkedin: www.linkedin.com/in/mark-hao-chen/
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -109,7 +106,7 @@ feed_show_tags: true
 post_search: true
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
-edit_page_button: true
+edit_page_button: false
 
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
