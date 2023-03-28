@@ -9,7 +9,11 @@ Chen, F., & Stevens, R. (2016). Applying lessons from behavioral economics to in
 
 ### Working Papers
 
+Bondi, T., Rossi, M. & Stevens, R. (2022). The Good, the Bad and the Picky: Consumer Heterogeneity and the Reversal of Movie Ratings. [[PDF]](https://www.tommasobondi.com/_files/ugd/31323e_f4a9ab67cbf84808938c191ef5739560.pdf) [R&R at Management Science]
+
+### Non-Active Working Papers 
+
 Sorokin, D., & Stevens, R. (2020). The Impact of Online Reviews on Product Sales: Evidence from Video Games. [[PDF]](https://www.dropbox.com/s/w5r9afqykvc82md/DescriptivePaper.pdf?dl=0)
 
-Bondi, T., & Stevens, R. (2019). The Good, the Bad and the Picky: Consumer Heterogeneity and the Reversal of Movie Ratings. [[PDF]](https://docs.wixstatic.com/ugd/31323e_df485b50699e488981d2e866713fc1ed.pdf)
+
 
