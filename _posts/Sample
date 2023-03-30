@@ -1,0 +1,10 @@
+---
+layout: post
+title: title
+subtitle: Each post also has a subtitle
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+bigimg: /img/path.jpg
+tags: [books, shakespeare, test]
+comments: true
+---
