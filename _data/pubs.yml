@@ -31,6 +31,9 @@
   title: "Point Cloud Forecasting as a Proxy for 4D Occupancy Forecasting"
   venue: Conference on Computer Vision and Pattern Recognition (CVPR), 2023
   video_embed: null
+  tags:
+    - autonomous-driving
+    - self-supervised
 - abs: "Physical interaction with textiles, such as assistive dressing, relies on advanced dextreous capabilities. The underlying complexity in textile behavior when being pulled and stretched, is due to both the yarn material properties and the textile construction technique. Today, there are no commonly adopted and annotated datasets on which the various interaction or property identification methods are assessed. One important property that affects the interaction is material elasticity that results from both the yarn material and construction technique: these two are intertwined and, if not known a-priori, almost impossible to identify through sensing commonly available on robotic platforms. We introduce Elastic Context (EC), a concept that integrates various properties that affect elastic behavior, to enable a more effective physical interaction with textiles. The definition of EC relies on stress/strain curves commonly used in textile engineering, which we reformulated for robotic applications. We employ EC using Graph Neural Network (GNN) to learn generalized elastic behaviors of textiles. Furthermore, we explore the effect the dimension of the EC has on accurate force modeling of non-linear real-world elastic behaviors, highlighting the challenges of current robotic setups to sense textile properties."
   authors: Alberta Longhini, Marco Moletta, Alfredo Reichlin, Michael C. Welle, Alexander Kravberg, Yufei Wang, David Held, Zackory Erickson, Danica Kragic
   award: null
@@ -83,6 +86,10 @@
   title: Self-supervised Cloth Reconstruction via Action-conditioned Cloth Tracking
   venue: International Conference on Robotics and Automation (ICRA), 2023
   video_embed: null
+  tags:
+    - deformable
+    - self-supervised
+    - tracking
 - abs: We formulate grasp learning as a neural field and present Neural Grasp Distance Fields (NGDF).
     Here, the input is a 6D pose of a robot end effector and output is a distance to a continuous manifold of
     valid grasps for an object. In contrast to current approaches that predict a set of discrete candidate grasps,
@@ -179,8 +186,7 @@
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZEPiwF18mA" title="Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   tags:
-   - rl
-   - self-supervised
+    - rl
 - abs: How do we imbue robots with the ability to efficiently manipulate unseen objects and transfer relevant skills based on demonstrations? End-to-end learning methods often fail to generalize to novel objects or unseen configurations. Instead, we focus on the task-specific pose relationship between relevant parts of interacting objects. We conjecture that this relationship is a generalizable notion of a manipulation task that can transfer to new objects in the same category; examples include the relationship between the pose of a pan relative to an oven or the pose of a mug relative to a mug rack. We call this task-specific pose relationship “cross-pose” and provide a mathematical definition of this concept. We propose a vision-based system that learns to estimate the cross-pose between two objects for a given manipulation task using learned cross-object correspondences. The estimated cross-pose is then used to guide a downstream motion planner to manipulate the objects into the desired pose relationship (placing a pan into the oven or the mug onto the mug rack). We demonstrate our method’s capability to generalize to unseen objects, in some cases after training on only 10 demonstrations in the real world. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments across a number of tasks.
   authors: Chuer Pan*, Brian Okorn*, Harry Zhang*, Ben Eisner*, David Held
   award: null
@@ -235,8 +241,7 @@
   venue: Conference on Robot Learning (CoRL), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cJbtqOAGyI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   tags:
-   - deformable
-   - affordance
+    - deformable
 - abs: "Effective planning of long-horizon deformable object manipulation requires\
     \ suitable \n                    abstractions at both the spatial and temporal\
     \ levels. \n                    Previous methods typically either focus on short-horizon\
@@ -320,6 +325,7 @@
   video_embed: null
   tags:
     - autonomous-driving
+    - self-supervised
 - abs: Robotic manipulation of cloth has applications ranging from fabrics manufacturing
     to handling blankets and laundry. Cloth manipulation is challenging for robots
     largely due to their high degrees of freedom, complex dynamics, and severe self-occlusions
@@ -390,6 +396,8 @@
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference on Intelligent Robots and Systems (IROS), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/o6Dx6ZLYo44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - deformable
 - abs: Robotic manipulation of highly deformable cloth presents a promising opportunity
     to assist people with several daily tasks, such as washing dishes; folding laundry;
     or dressing, bathing, and hygiene assistance for individuals with severe motor
@@ -427,6 +435,9 @@
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference on Intelligent Robots and Systems (IROS), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/hXAgi1HYDuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - deformable
+    - affordance
 - abs: We explore a novel method to perceive and manipulate 3D articulated objects
     that generalizes to enable a robot to articulate unseen classes of objects. We
     propose a vision-based system that learns to predict the potential motions of
@@ -455,6 +466,8 @@
     Learning 3D Articulation Flow to Manipulate Articulated Objects</a>'
   venue: 'Robotics: Science and Systems (RSS), 2022'
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxRS8WfZOMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - affordance
 - abs: "Self-occlusion is challenging for cloth manipulation, as it makes it difficult\
     \ to estimate the full state of the cloth. Ideally, a robot trying to unfold a\
     \ crumpled or folded cloth should be able to reason about the cloth's occluded\
@@ -488,6 +501,8 @@
     Dynamics with Occlusion Reasoning for Cloth Manipulation</a>
   venue: 'Robotics: Science and Systems (RSS), 2022'
   video_embed: null
+  tags:
+    - deformable
 - abs: 'We consider the problem of sequential robotic manipulation of deformable objects
     using tools.
 
@@ -535,6 +550,8 @@
     Tools</a>'
   venue: International Conference on Learning Representations (ICLR), 2022
   video_embed: null
+  tags:
+    - deformable
 - abs: Liquid state estimation is important for robotics tasks such as pouring; however,
     estimating the state of transparent liquids is a challenging problem. We propose
     a novel segmentation pipeline that can segment transparent liquids such as water
@@ -574,6 +591,9 @@
     Transparent Liquid Segmentation for Robotic Pouring</a>
   venue: International Conference of Robotics and Automation (ICRA), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/BkAxNCvYmM0" title="Robotic pouring from empty to 75% of the cup height." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - deformable
+    - self-supervised
 - abs: Real-time object pose estimation is necessary for many robot manipulation algorithms.
     However, state-of-the-art methods for object pose estimation are trained for a
     specific set of objects; these methods thus need to be retrained to estimate the
@@ -607,6 +627,8 @@
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference of Robotics and Automation (ICRA), 2022
   video_embed: null
+  tags:
+    - self-supervised
 - abs: When navigating in urban environments, many of the objects that need to be
     tracked and avoided are heavily occluded. Planning and tracking using these partial
     scans can be challenging. The aim of this work is to learn to complete these partial
@@ -639,6 +661,8 @@
     via Inpainting</a>
   venue: British Machine Vision Conference (BMVC), 2021
   video_embed: null
+  tags: 
+    - self-supervised
 - abs: "Benchmarks offer a scientific way to compare algorithms using scientific performance\
     \ metrics. Good benchmarks have two features: (a) wide audience appeal; (b) easily\
     \ reproducible. In robotics, there is a tradeoff between reproducibility and broad\
@@ -701,6 +725,8 @@
     Detection via Temporal Graph Neural Networks</a>
   venue: International Conference on 3D Vision (3DV), 2021
   video_embed: null
+  tags:
+    - autonomous-driving
 - abs: Robotic manipulation of cloth remains challenging for robotics due to the complex
     dynamics of the cloth, lack of a low-dimensional state representation, and self-occlusions.
     In contrast to previous model-based approaches that learn a pixel-based dynamics
@@ -739,6 +765,9 @@
     Dynamics for Cloth Smoothing</a>
   venue: Conference on Robot Learning (CoRL), 2021
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/QgRrHeKylhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - deformable
+    - affordance
 - abs: We address the problem of goal-directed cloth manipulation, a challenging task
     due to the deformability of cloth. Our insight is that optical flow, a technique
     normally used for motion estimation in video, can also provide an effective representation
@@ -812,6 +841,8 @@
     Planning</a>
   venue: Conference on Robot Learning (CoRL), 2021
   video_embed: null
+  tags:
+    - rl
 - abs: 'To safely navigate unknown environments, robots must accurately perceive dynamic
     obstacles. Instead of directly measuring the scene depth with a LiDAR sensor,
     we explore the use of a much cheaper and higher resolution sensor:'
@@ -901,6 +932,8 @@
     &amp; Refining Depth Distributions with Triangulation Light Curtains</a>
   venue: Conference on Computer Vision and Pattern Recognition (CVPR), 2021
   video_embed: null
+  tags:
+    - active-perception
 - abs: Safe local motion planning for autonomous driving in dynamic environments requires
     forecasting how the scene evolves. Practical autonomy stacks adopt a semantic
     object-centric representation of a dynamic scene and build object detection, tracking,
@@ -935,6 +968,9 @@
     Local Motion Planning with Self-Supervised Freespace Forecasting</a>
   venue: Conference on Computer Vision and Pattern Recognition (CVPR), 2021
   video_embed: null
+  tags:
+    - autonomous-driving
+    - self-supervised
 - abs: Manipulating deformable objects has long been a challenge in robotics due to
     its high dimensional state representation and complex dynamics. Recent success
     in deep reinforcement learning provides a promising direction for learning to
@@ -974,7 +1010,7 @@
   venue: Conference on Robot Learning (CoRL), 2020
   video_embed: null
   tags:
-   - deformable
+    - deformable
 - abs: "Current image-based reinforcement learning (RL) algorithms typically operate\
     \ on the whole image without performing object-level reasoning.  This leads to\
     \ inefficient goal sampling and ineffective reward functions. In this paper, we\
@@ -1012,6 +1048,8 @@
     Learning with Object Reasoning</a>
   venue: Conference on Robot Learning (CoRL), 2020
   video_embed: null
+  tags:
+    - self-supervised
 - abs: The goal of offline reinforcement learning is to learn a policy from a fixed
     dataset, without further interactions with the environment. This setting will
     be an increasingly more important paradigm for real-world applications of reinforcement
@@ -1050,6 +1088,10 @@
     Offline Reinforcement Learning</a>'
   venue: Conference on Robot Learning (CoRL), 2020
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/d0ykqAxbklA" title="Cloth Sliding with PLAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+    - deformable
+    - multimodal
+    - rl
 - abs: 'Visual data in autonomous driving perception, such as camera image and LiDAR
     point cloud, can be interpreted as a mixture of two aspects: semantic feature
     and geometric structure. Semantics come from the appearance and context of objects
@@ -1113,6 +1155,9 @@
     Curtains for Autonomous Driving</a>
   venue: European Conference on Computer Vision (ECCV), 2020
   video_embed: null
+  tags:
+    - autonomous-driving
+    - active-perception
 - abs: 'Cloth detection and manipulation is a common task in domestic and industrial
     settings, yet such tasks remain a challenge for robots due to cloth deformability.
     Furthermore, in many cloth-related tasks like laundry folding and bed making,
@@ -1147,6 +1192,7 @@
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/iLgSz1PfVm0?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   tags:
     - deformable
+    - multimodal
 - abs: 3D object trackers usually require training on large amounts of annotated data
     that is expensive and time-consuming to collect. Instead, we propose leveraging
     vast unlabeled datasets by self-supervised metric learning of 3D object trackers,
@@ -1175,6 +1221,9 @@
     3D Data Association</a>
   venue: International Conference on Intelligent Robots and Systems (IROS), 2020
   video_embed: null
+  tags:
+    - autonomous-driving
+    - self-supervised
 - abs: null
   authors: Brian Okorn, Mengyun Xu, Martial Hebert, David Held
   award: null
@@ -1221,7 +1270,7 @@
   video_embed: null
   tags:
     - autonomous-driving
-    - object-tracking
+    - tracking
 - abs: When interacting with highly dynamic environments, scene flow allows autonomous
     systems to reason about the non-rigid motion of multiple independent objects.
     This is of particular interest in the field of autonomous driving, in which many
@@ -1260,6 +1309,10 @@
     Scene Flow Estimation</a>'
   venue: Conference on Computer Vision and Pattern Recognition (CVPR), 2020
   video_embed: null
+  tags:
+    - autonomous-driving
+    - self-supervised
+    - tracking
 - abs: null
   authors: Peiyun Hu, Jason Ziglar, David Held, Deva Ramanan
   award: <award>Oral presentation</award> (Selection rate 5.7%)
@@ -1272,6 +1325,8 @@
     Exploiting Visibility for 3D Object Detection</a>'
   venue: Conference on Computer Vision and Pattern Recognition (CVPR), 2020
   video_embed: null
+  tags:
+    - autonomous-driving
 - abs: State-of-the-art object grasping methods rely on depth sensing to plan robust
     grasps, but commercially available depth sensors fail to detect transparent and
     specular objects. To improve grasping performance on such objects, we introduce
@@ -1312,7 +1367,7 @@
     Conference of Robotics and Automation (ICRA), 2020
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/rYRPWe0xLVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   tags:
-    multimodal
+    - multimodal
 - abs: null
   authors: Peiyun Hu, David Held*, Deva Ramanan*
   award: null
@@ -1326,6 +1381,8 @@
   venue: Robotics and Automation Letters (RAL) with presentation at the International
     Conference of Robotics and Automation (ICRA), 2020
   video_embed: null
+  tags:
+    - autonomous-driving
 - abs: Deep learning object detectors often return false positives with very high
     confidence. Although they optimize generic detection performance, such as mean
     average precision (mAP), they are not designed for reliability. For a reliable
@@ -1363,8 +1420,6 @@
     for Precise Object Instance Detection</a>
   venue: Conference on Robot Learning (CoRL), 2019
   video_embed: null
-  tags:
-    - active-perception
 - abs: null
   authors: Xingyu Lin*, Harjatin Baweja*, George Kantor, David Held
   award: null
@@ -1377,6 +1432,8 @@
     Auxiliary Task Weighting for Reinforcement Learning</a>
   venue: Neural Information Processing Systems (NeurIPS), 2019
   video_embed: null
+  tags:
+    - rl
 - abs: null
   authors: Xingyu Lin, Pengsheng Guo, Carlos Florensa, David Held
   award: null
@@ -1401,6 +1458,9 @@
     - <award>Best Paper Honorable Mention</award></a>'
   venue: International Conference on 3D Vision (3DV), 2018
   video_embed: null
+  tags:
+    - rl
+    - autonomous-driving
 - abs: null
   authors: Carlos Florensa*, David Held*, Xinyang Geng*, Pieter Abbeel
   award: null
@@ -1413,6 +1473,8 @@
     Reinforcement Learning Agents</a>
   venue: International Conference on Machine Learning (ICML), 2018
   video_embed: null
+  tags:
+    - rl
 - abs: null
   authors: Sandy Han Huang, David Held, Pieter Abbeel, Anca D. Dragan
   award: null
@@ -1436,6 +1498,8 @@
     for Reinforcement Learning</a>
   venue: Conference on Robot Learning (CoRL), 2017
   video_embed: null
+  tags:
+    - rl
 - abs: null
   authors: Ignasi Clavera*, David Held*, Pieter Abbeel
   award: null
@@ -1458,6 +1522,8 @@
   title: <a href="https://arxiv.org/abs/1705.10528">Constrained Policy Optimization</a>
   venue: International Conference on Machine Learning (ICML), 2017
   video_embed: null
+  tags:
+    - rl
 - abs: null
   authors: Sandy H. Huang, David Held, Pieter Abbeel, Anca D. Dragan
   award: null
@@ -1508,6 +1574,9 @@
     Real-time 3D Segmentation using Spatial, Temporal, and Semantic Cues</a>
   venue: 'Robotics: Science and Systems (RSS), 2016'
   video_embed: null
+  tags:
+    - autonomous-driving
+    - tracking
 - abs: null
   authors: David Held, Sebastian Thrun, Silvio Savarese
   award: null
