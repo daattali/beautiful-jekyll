@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Waikikibros209 Front Yard Cuts
+title: WaikikiBros209 Front Yard Cuts
 
 # Your name to show in the footer
 author: Brenden
@@ -21,9 +21,9 @@ author: Brenden
 
 navbar-links:
   About Me: "aboutme"
-  Contact:
-    - Cell 209-604-7011:
-    - Email waikikibros209@gmail.com:
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
 
 ################
