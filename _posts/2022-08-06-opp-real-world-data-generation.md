@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Applying OPP Principles to Manufacturing Analytics Testing Data Generation
-subtitle: From Separate Methods to a Unified Class
+subtitle: From separate methods to a unified class
 thumbnail-img: /assets/img/2022-08-06-thumb.png
 tags: [generated data, sensor data, time series, software development, oop, data visualization]
 comments: true
