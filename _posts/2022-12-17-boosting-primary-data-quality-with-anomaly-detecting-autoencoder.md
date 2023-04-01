@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Boosting Primary Data Quality through Machine Learning Techniques
-subtitle: Anomaly Detection in Batch Process Manufacturing Data Using an Autoencoder
+subtitle: Anomaly detection in batch process manufacturing data using an autoencoder
 thumbnail-img: /assets/img/2022-12-17-thumb.png
 tags: [sensor data, time series, anomaly detection, neural networks, autoencoder, primary data, data quality rating, product carbon footprint, pcf, ocf]
 comments: true
