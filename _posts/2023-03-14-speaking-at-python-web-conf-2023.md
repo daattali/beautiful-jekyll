@@ -7,7 +7,7 @@ tags: [speaking, conferences]
 comments: true
 ---
 
-On March 14, 2023 I found myself giving my first public conference talk ever. At my first-ever Python conference! This post is to mark the event and to reflect on how quickly things fell into place.
+On March 14, 2023, I found myself giving my first public conference talk ever. At my first-ever Python conference! This post is to mark the event and to reflect on how quickly things fell into place.
 
 ## Seamless experience
 
