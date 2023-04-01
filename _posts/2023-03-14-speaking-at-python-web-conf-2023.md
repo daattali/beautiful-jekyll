@@ -23,6 +23,8 @@ In the morning, I managed to put together several slides to create a storyline, 
 
 I am immensely grateful to [Calvin Hendryx-Parker](https://www.linkedin.com/in/ACoAAAA6RfEBXH_gmmVFFE95S9wfMhaZHJws2oI), [Darcy Lee](https://www.linkedin.com/in/ACoAAADTff8BCK7UDKKvOYDK6k2KRbixfPpyLSE), [Laura Stephens](https://www.linkedin.com/in/ACoAAAGJdwABlZup6ZolmXh02z-T8JzlqjJree4), [Chris May](https://www.linkedin.com/in/ACoAAAAtj0EBa4iX7CT8V13tKUc_wSOZ6L5t3hI), [James Spadafora](https://www.linkedin.com/in/ACoAAAVjehgBXfpyx32NpIULxKSRGF5VvvvRH9k), [Mario Munoz](https://www.linkedin.com/in/ACoAAAU78sEBQANIeKIGKmXc--m31TVE5V6grjI) for the inspiration and support! 🙌
 
+[![pwc2023](/assets/img/2023_pythonwebconf_logo.png){: .mx-auto.d-block :}](https://2023.pythonwebconf.com)
+
 [Slides](/assets/data/230314 - 5-min talk - be brave.pdf)
 
 Copyright © 2022 Zheniya Mogilevski
