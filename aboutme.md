@@ -1,16 +1,36 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Sobre mim
+subtitle: Por que você deveria ir a um encontro comigo
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Meu nome é Leo e eu tenho as seguintes qualidades:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Sou uma ótima companhia para dançar um forró
+- Topo qualquer tipo de rolê
 
-What else do you need?
+O que mais você precisa? 
 
-### My story
+Para ir mais a fundo eu sou um aspirante a pesquisador tenho me interessado em assuntos da industria 4.0 e gosto de falar sobre educação, cinema, musica e tecnologia. 
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+<div id="contactme-section">
+<h1 id="contact">Me mande uma mensagem &#9996;</h1>
+  
+  <form action="https://formspree.io/f/mzbyqnlw" method="POST" class="form" id="contact-form">
+  <p>Você pode rapidamente entrar em contato comigo usando o formulário abaixo:</p>
+  <div class="row">
+    <div class="col-6">
+      <input type="email" name="_replyto" required="required" class="form-control form-control-lg" placeholder="Email" title="Email">
+    </div>
+    <div class="col-6">
+      <input type="text" name="nome" class="form-control form-control-lg" placeholder="Nome" title="Nome">
+    </div>
+  </div>
+  <input type="hidden" name="_subject" value="Novo envio do cantinho do leo">
+  <textarea type="text" name="content" class="form-control form-control-lg" placeholder="Mensagem" title="Mensagem" required="required" rows="3"></textarea>
+  <input type="text" name="_gotcha" style="display:none">
+  <input type="hidden" name="_next" value="?message=Sua mensagem foi enviada com sucesso, obrigado! &#128512" />
+    
+    <button type="submit" class="btn btn-lg btn-primary">Enviar</button>
+</form>
