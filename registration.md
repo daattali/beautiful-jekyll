@@ -54,6 +54,8 @@ Please be aware that Pre-Registration prices will end March 23rd, 2023 at 11:59 
 
 Should you lose your badge and require a reprint, you will have to pay a $20 reprint fee. If you find your original badge, you can return your reprint and receive a refund.
 
+Super sponsors will not be eligible for refunds after March 6th. If you registered for a super sponsor and cannot make it to the convention, you may request a rollover for next year.
+
 ## Parents wishing to attend with a minor: fear not, we got you!
 
 Parent in tow badges can be supplied please inquire at the door to receive one. Any Questions on how that works please email us [registration@fursquared.com](mailto:registration@fursquared.com)
@@ -100,7 +102,7 @@ Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<b
 
 ## Help! I’ve lost my badge at the convention! What should I do?!?!
 
-* You will be required to head back to registration and purchase another attending level badge at full cost, as no refunds will be issued if you lose your first original badge. However, if you should find your badge after you have purchased a replacement, you can bring back the reprinted badge to registration and receive a refund of the second badge. The reprinted badge will be destroyed before you receive the refund.
+* You will be required to head back to registration and purchase a reprint. Please clearly state that you require a reprint to staff when you arrive. A reprint will result in a $20 fee. However, if you should find your badge after you have purchased a reprint, you may bring back the reprinted badge to registration and receive a refund of the reprinted badge. It will be destroyed and then you will receive the refund.
 
 # The Registration Link
 
