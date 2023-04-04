@@ -52,7 +52,7 @@ Please be aware that Pre-Registration prices will end March 23rd, 2023 at 11:59 
 | Satuday | $30 |
 | Sunday | $20 |
 
-Badge Reprints $60 (Reprint refunded if original badge is found and shown to Registration)
+Should you lose your badge and require a reprint, you will have to pay a $20 reprint fee. If you find your original badge, you can return your reprint and receive a refund.
 
 ## Parents wishing to attend with a minor: fear not, we got you!
 
