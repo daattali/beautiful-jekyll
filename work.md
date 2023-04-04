@@ -16,9 +16,9 @@ be enough carbon sequestered to offset all the carbon released into the atmosphe
 For detailed information about my education, conferences, talks, teaching, etc. please refer to my CV:
 <center>
 <div class="get-started-wrap">
-  <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/crypdick/Decal-LaTeX-CV/blob/master/Richard-Decal-resume.pdf">Download AI Resume (pdf)</a>
+  <a class="btn btn-success btn-lg get-started-btn" href="https://raw.githubusercontent.com/crypdick/Decal-LaTeX-CV/master/Richard-Decal-resume.pdf">Download ML Resume (pdf)</a>
 
-    <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/crypdick/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf">Download Academic CV (pdf)</a>
+    <a class="btn btn-success btn-lg get-started-btn" href="https://raw.githubusercontent.com/crypdick/Decal-LaTeX-CV/master/RDecal-ML-CV.pdf">Download ML CV (pdf)</a>
 
 </div>
 </center>
