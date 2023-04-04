@@ -1,7 +1,7 @@
 ---
 layout: my_home
 title: Organization Notes
-subtitle: a Zendesk Support appliction
+subtitle: a Zendesk Support application
 ---
 
 
