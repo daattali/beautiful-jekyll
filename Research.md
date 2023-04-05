@@ -27,13 +27,13 @@ title: ""
 [Informational Lobbying and Commercial Diplomacy](assets/amcham_adst_1.0.0.pdf)
 
 [Exporting Capital, Importing Law](assets/kalyanpur_thrall_march_2023.pdf) (with Nikhil Kalyanpur)<br>
-Previously (briefly) titled "The Oligarch's Offshore Dilemma."
+Previously (briefly) titled "The Oligarch's Offshore Dilemma." Under Review.
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
 David A. Lake Award for best paper presented at IPES 2020. Under Review.
 
 [The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
-R&R, *Business and Politics*.
+R&R, **_Business and Politics_**.
 
 [Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/GASB_anon.pdf) (with Nathan M. Jensen)
 
