@@ -7,12 +7,9 @@ css:
 ---
 ## Night Market Schedule
 
-| Day | Hours |
-| Friday | 9 PM to 1 AM |
-| Saturday | 9 PM to 1 AM |
-| --- | --- |
+**Open Friday and Saturday from 9 PM to 1 AM!**
 
-## Night Market Map
+Night Market Map
 
 ![](/uploads/nightmarket.png){: width="916" height="521"}
 
