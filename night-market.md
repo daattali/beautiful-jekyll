@@ -9,9 +9,9 @@ css:
 
 **Open Friday and Saturday from 9 PM to 1 AM!**
 
-Night Market Map
+## Night Market Map
 
-![](/uploads/nightmarket.png){: width="916" height="521"}
+## ![](/uploads/nightmarket.png){: width="916" height="521"}
 
 ## 2023 Dealer’s Den/Night Market - Important Dates
 
