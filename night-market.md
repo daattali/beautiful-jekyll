@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Night Market
-subtitle: Come see our dealers at FurSquared!
+subtitle: Come and see dealers offering their spiciest work! (18+ only)
 css:
     - /assets/css/theme-2022/dealers.css
 ---
