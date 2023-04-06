@@ -14,7 +14,7 @@ subtitle: Some details about my background
 - I combine more than 15 years of experience in start-up sales development, program management and **executive consulting services** in multiple industries from Investment Banking to Hospitality with a focus on Blockchain cross-functional teams and global operations.
 
 ## Blockchain Journey
-- In 2019, I fell into Blockchain via the Blockchain for Social Impact Coalition in NYC.
+- In 2019, I fell in love with Blockchain during the NYC Blockchain for Social Impact Coalition conference.
 - In 2020, the team I built won the 1st place at the Blockchain for Social Impact Incubator with Lease On The Block.
 - In 2021, I joined ChainSafe where he manages the consulting team and delivery for clients such as Filecoin, Ethereum Foundation, The Graph, in highly technical areas from Web3 Gaming to DeFi to Protocol R&D. 
 
