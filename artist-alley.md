@@ -68,7 +68,7 @@ Sign up early via the [Artist Alley Telegram Channel](http://t.me/F2AA2023){: ta
 
 *The general guideline is that you should be able to work on what you’re selling at your table \[generally, drawings\]. Small, supplemental items \[stickers, keychains, etc.\] are allowed, but should not be the main focus. There are of course exceptions to the rule \[i.e. if you’re drawing on t-shirts at your table and finishing them at the con, then selling clothing would be allowed\].&nbsp;**If you have questions about whether or not your items fall in the guidelines, please email art@fursquared.com before the con or find&nbsp;****SIN, RenaCat, or other Artist Alley Staff*** *in-person by the&nbsp;****Artist Alley Info Desk****.*
 
-**This year, most of our at-con announcements will be made through telegram! Go to [our Telegram channel](http://t.me/F2AA2023){: target="_blank" rel="noopener"}**[*&nbsp;*](__notset__)**to keep yourself updated!**
+**This year, most of our at-con announcements will be made through telegram! Go to our&nbsp;[Artist Alley Telegram Channel](http://t.me/F2AA2023){: target="_blank" rel="noopener"}**[*&nbsp;*](__notset__)**to keep yourself updated!**
 
 **Be Kind. Have Fun. Make Bank.**
 
