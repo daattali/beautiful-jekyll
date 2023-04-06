@@ -5,6 +5,16 @@ subtitle: Come see our dealers at FurSquared!
 css:
     - /assets/css/theme-2022/dealers.css
 ---
+## Dealer's Den Schedule
+
+* Friday 10 AM to 5 PM, Closed for Break from 12 PM to 1&nbsp; PM
+* Saturday 10 AM to 5 PM, Closed for Break from 12 PM to 1&nbsp; PM
+* Sunday 11 AM to 4 PM, No Break
+
+## Dealer's Den Map
+
+![](/uploads/dealers.png){: width="1112" height="741"}
+
 ## 2023 Dealer’s Den/Night Market - Important Dates
 
 | Date | Milestone |
@@ -17,8 +27,6 @@ css:
 | Feb. 27 - Mar. 11 | Table Payment Window |
 | March 12, 2023 | Unpaid/Abandoned spaces released to Waiting List |
 | Mar 12. - Mar. 26 | Table Payment Window |
-
-##
 
 ## Dealer's Den and Night Market Emails Have Been Sent!
 
