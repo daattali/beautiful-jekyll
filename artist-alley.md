@@ -6,7 +6,7 @@ css:
 ---
 *The Artist Alley runs on a lottery system where new participants are chosen daily. You can enter the lottery&nbsp;****in-person*** *at the Artist Alley Info Desk or&nbsp;****via Telegram****.*
 
-Sign up early via the Artist Alley Telegram Channel: *\[Link available soon\]*
+Sign up early via the [Artist Alley Telegram Channel](http://t.me/F2AA2023){: target="_blank" rel="noopener"}.
 
 <table><thead><tr><th> </th><th>Friday</th><th>Saturday</th><th>Sunday</th></tr></thead><tbody><tr><th>Sign Up</th><td>10:30 AM</td><td>9:30 AM</td><td>9:30 AM</td></tr><tr><th>Lotto/Setup</th><td>12:00 PM</td><td>10:00 AM</td><td>10:00 AM</td></tr><tr><th>Open to Public</th><td>1:00 PM</td><td>11:00 AM</td><td>11:00 AM</td></tr><tr><th>Close</th><td>6:00 PM</td><td>5:00 PM</td><td>4:00 PM</td></tr></tbody></table>
 
@@ -28,7 +28,7 @@ Sign up early via the Artist Alley Telegram Channel: *\[Link available soon\]*
 
 ### **Option 2: Telegram Lotto Signups**
 
-\- Go to the Artist Alley Telegram Announcement Channel *\[Link available soon\]*
+\- Go to the [Artist Alley Telegram Announcement Channel](http://t.me/F2AA2023){: target="_blank" rel="noopener"}
 
 \- Find the pinned message titled “LOTTO SIGN UP”
 
@@ -68,7 +68,7 @@ Sign up early via the Artist Alley Telegram Channel: *\[Link available soon\]*
 
 *The general guideline is that you should be able to work on what you’re selling at your table \[generally, drawings\]. Small, supplemental items \[stickers, keychains, etc.\] are allowed, but should not be the main focus. There are of course exceptions to the rule \[i.e. if you’re drawing on t-shirts at your table and finishing them at the con, then selling clothing would be allowed\].&nbsp;**If you have questions about whether or not your items fall in the guidelines, please email art@fursquared.com before the con or find&nbsp;****SIN, RenaCat, or other Artist Alley Staff*** *in-person by the&nbsp;****Artist Alley Info Desk****.*
 
-**This year, most of our at-con announcements will be made through telegram! Go to&nbsp;***\[Link available soon\]&nbsp;***to keep yourself updated!**
+**This year, most of our at-con announcements will be made through telegram! Go to our&nbsp;[Artist Alley Telegram Channel](http://t.me/F2AA2023){: target="_blank" rel="noopener"}**[*&nbsp;*](__notset__)**to keep yourself updated!**
 
 **Be Kind. Have Fun. Make Bank.**
 
