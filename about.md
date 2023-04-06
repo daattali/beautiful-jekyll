@@ -16,7 +16,7 @@ These conventions are held in hotels or convention centers. Furry conventions us
 
 There is no minimum level of "furriness" needed to attend. You do not need a fursuit, fursona, or interests in certain topics to attend - even those just curious about the fandom are welcome!
 
-### Q: What is a furry convention?
+### Q: Which charity does FurSquared support?
 
 FurSquared has been delighted to partner with [Humane Animal Welfare Society (HAWS) of Waukesha County](https://hawspets.org/) since the convention’s inception. We are pleased to welcome them back in 2023 and encourage our attendees to support them in any way they are able. Whether it is a few dollars contributed through the wide variety of charity-based paneling and events, sharing their mission with others via word of mouth, every contribution matters.
 
