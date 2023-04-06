@@ -18,6 +18,7 @@ navbar-links:
     - Registration: "registration"
     - Programming: 'programming'
     - Dealer's Den: "dealers"
+    - Night Market: "night-market"
     - Video Games: "video-games"
   Info:
     - About: "about"
@@ -28,8 +29,8 @@ navbar-links:
   Join The Fun:
     - Volunteer: "volunteer"
     - Dealers Den: "dealers"
-    - Night Market: "night-market"
     - Dance Events: "dance-events"
+    - Night Market: "night-market"
     - Artist Alley: "artist-alley"
   Contact Us: "contact"
 
