@@ -17,7 +17,9 @@ tags: [GCPDiag, Troubleshooting, Best Practice, Misconfiguration, Security]
 {:toc}
 
 # What is the GCPDiag tool?
-GCPDiag is an opensource tool that can detect configuration issues within your Google Cloud Project. It is a command line tool that runs a series oF automated checks against Google Cloud API's to identify a range of issues including errors (ERR) for things that are very likely misconfigured, warnings (WAR) things that are possibly wrong, best practices (BP) opionionated recommendations and potential security (SEC) issues. You run GCPDiag against your project to detect issues against the a series of rules and generate a corresponding report. The report highlights where the project deviates from the list of expected conditions.
+GCPDiag is an opensource tool that can detect configuration issues within your Google Cloud Project. It is a command line tool that runs a series of automated checks against Google Cloud API's to identify a range of issues including errors (ERR) for things that are very likely misconfigured, warnings (WAR) things that are possibly wrong, best practices/opionionated recommendations (BP) and potential security (SEC) issues. 
+
+You run GCPDiag against your project to detect issues against a series of rules and generate a corresponding report. The report highlights where the project deviates from the list of expected conditions.
 
 The tool can be targetted to run against all, or a selection of the following services:
 
