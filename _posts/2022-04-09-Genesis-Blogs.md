@@ -20,7 +20,7 @@ Hi there, fellow readers! This is the first blogspot which I'm putting out for t
 - I will definetely going to talk a lot about mental health and its impact on my daily life.
 - I do read a lot of books too. So, Here and there I try to write about book reviews. Which would be interesting as I've done that before. 
 
-So, Here is mostly what I will talk about in my blog spot. I'll try to keep mostly to top two points but who knows considering my mind is cursed with multiple interests. 
+So, stick around and join me on this exciting journey. Let's see where the future takes us!
 
 Signing off.
 
