@@ -27,4 +27,4 @@ I am immensely grateful to [Calvin Hendryx-Parker](https://www.linkedin.com/in/A
 
 [Slides](/assets/data/230314 - 5-min talk - be brave.pdf)
 
-Copyright © 2022 Zheniya Mogilevski
+Copyright © 2023 Zheniya Mogilevski
