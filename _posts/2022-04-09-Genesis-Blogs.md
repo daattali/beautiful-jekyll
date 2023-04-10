@@ -6,7 +6,7 @@ tags: [test, personal]
 comments: false
 ---
 
-Hi Everyone, This is the first blogspot which I'm writing for this new website. It's being low due from side for the process of my progress in achieving what more I do do with my career. I've been working at certain company from last few years and its been great in terms of learning but now I think its time to move forward in my career. So, To flow and track my progress this blog will play a key roles. 
+Hi there, fellow readers! This is the first blogspot which I'm putting out for this new website. It's being low due from my side.  Lately, I've been a bit quiet on the career front, but fear not! I've been working behind the scenes to chart my course towards even greater heights.After spending the past few years learning and growing at my current company, I feel it's time to take my career to the next level. And what better way to keep track of my progress than with this very blog?
 
 ## Here's what I plan to do with my blog 
 - Most important of all to track my progress in learning about digital payments. i.e., ISO20022
