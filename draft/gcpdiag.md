@@ -44,13 +44,13 @@ The tool can be targetted to run against all, or a selection of the following se
 
 The tool is maintained by the Google Cloud Support team, based on their troubleshooting experience for Google Cloud customers with contributions from the open source community.
 
-# What IAM Permissions are required?
+# What IAM Permissions does GCPDiag require?
 The credentials used to run GCPDiag need to have the following minimum roles on the inspected project:
 
 - Viewer on the inspected project
 - Service Usage Consumer on the project used for billing/quota enforcement, which is per default the project being inspected, but can be explicitely set using the --billing-project option
 
-# Required API's
+# What API's does GCPDiag require?
 GCPDiag requires the following API's to be enabled on the GCP project you are checking:
 
 - cloudresourcemanager.googleapis.com (Cloud Resource Manager API)
@@ -68,7 +68,7 @@ gcloud --project=MYPROJECT services enable \
     serviceusage.googleapis.com
 ```
 
-# Authenticating GCPDiag
+# How to authenticate GCPDiag
 GCPDiag supports three methods of authenticaiton:
 
 1.  OAuth user consent flow
