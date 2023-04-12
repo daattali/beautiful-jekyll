@@ -88,7 +88,11 @@ You can also use the --auth-key parameter to specify the private key of a servic
 
 
 
-GCPDiag only checks configurations, it doesn't make any changes to resources even when detecting misconfigurations. The tool is preinstsalled to the Google Cloud Shell and can be run with the following command:
+GCPDiag only checks configurations, it doesn't make any changes to resources even when detecting misconfigurations. 
+
+
+# Hwo to install GCPDiag
+The tool is preinstsalled to the Google Cloud Shell and can be run with the following command:
 
 ```
 gcpdiag lint --project=MYPROJECT
