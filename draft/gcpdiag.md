@@ -92,7 +92,7 @@ GCPDiag only checks configurations, it doesn't make any changes to resources eve
 
 
 # How to install GCPDiag
-The tool is preinstsalled to the Google Cloud Shell and can be run with the following command:
+The tool is preinstsalled to the Google Cloud Shell and can be run with the following command replacing MYPROJECT with the Google Cloud Project ID:
 
 ```
 gcpdiag lint --project=MYPROJECT
@@ -109,7 +109,13 @@ chmod +x gcpdiag
 
 # How do i use the GCPDiag tool?
 
+Once you have enabled the relevant API's as per [What API's does GCPDiag require?](/What API's does GCPDiag require?), To run GCPDiag in its default form, simply run the following command from the Google Cloud Shell:
 
+```
+gcpdiag lint --project=MYPROJECT
+```
+
+By default this will ru
 
 ![GCPDiag Open Source Tool](/assets/img/gcpdiag/gcpdiag-stethoscope.png "GCPDiag Open Source Tool")
  
