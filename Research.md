@@ -24,7 +24,8 @@ title: ""
 
 ### Working Papers
 
-[Informational Lobbying and Commercial Diplomacy](assets/amcham_adst_1.0.0.pdf)
+[Informational Lobbying and Commercial Diplomacy](assets/amcham_adst_1.0.0.pdf)<br>
+Under Review.
 
 [Exporting Capital, Importing Law](assets/kalyanpur_thrall_march_2023.pdf) (with Nikhil Kalyanpur)<br>
 Previously (briefly) titled "The Oligarch's Offshore Dilemma." Under Review.
