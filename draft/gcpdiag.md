@@ -109,7 +109,7 @@ chmod +x gcpdiag
 
 # How do i use the GCPDiag tool?
 
-Once you have enabled the relevant API's as per [What API's does GCPDiag require?](/gcpdiag.md#what-apis-does-gcpdiag-require) to run GCPDiag in its default form, simply run the following command from the Google Cloud Shell:
+Once you have enabled the relevant API's as per [What API's does GCPDiag require?](/what-apis-does-gcpdiag-require) to run GCPDiag in its default form, simply run the following command from the Google Cloud Shell:
 
 ```
 gcpdiag lint --project=MYPROJECT
