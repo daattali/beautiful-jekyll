@@ -29,8 +29,6 @@ display_categories: [work]
 
 ### Conference articles
 
-https://doi.org/10.1117/12.2654259
-
 <b>A multiscale algorithm for computing realistic image transformations – Application to the modelling of fetal brain growth</b><br>
      <font size="3"> Fleur Gaudfernau, Stéphanie Allassonniere, Erwan Le Pennec.<br>
      SPIE Medical Imaging 2023  </font><br>
