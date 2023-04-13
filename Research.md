@@ -56,9 +56,12 @@ https://doi.org/10.1117/12.2654259
 </dl>
 
  <dl>  <dt><img src="https://img.shields.io/badge/Feb. 2023-1138b2.svg"></dt>
-<dd> Presentation at<a href="https://spie.org/conferences-and-exhibitions/medical-imaging/program/browse-program ">  SPIE Medical Imaging 2023:</a> <b>A multiscale algorithm for computing realistic image transformations in the LDDMM framework – application to the modelling of fetal brain growth </b> </dd>
+<dd> Presentation at<a href="https://spie.org/conferences-and-exhibitions/medical-imaging/program/browse-program ">  SPIE Medical Imaging 2023:</a> <b>A multiscale algorithm for computing realistic image transformations in the LDDMM framework – application to the modelling of fetal brain growth </b> 
+     <a href="[/assets/img/zoom_4.mp4](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12464/2654259/A-multiscale-algorithm-for-computing-realistic-image-transformation--application/10.1117/12.2654259.short?SSO=1)"> Link to the presentation </a> 
+    </dd>
 
 </dl>
+
 
  
 <hr style="border:1px solid #2b6777"/>
