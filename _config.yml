@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My Website
+title: https://Tehen1.github.io
 
 # Your name to show in the footer
 author: Tehen
@@ -22,9 +22,9 @@ author: Tehen
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://tehen.com"
-    - Learn markdown: "https://tehen.com"
-  Author's home: "https://tehen.com"
+    - Beautiful Jekyll: "hhttps://Tehen1.github.io"
+    - Learn markdown: "https://Tehen1.github.io"
+  Author's home: "https://Tehen1.github.io"
 
 ################
 # --- Logo --- #
