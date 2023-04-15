@@ -13,7 +13,13 @@ tags: [Stochastic Calculus, Ito Calculus, Stochastic Modelling]
   <body>
     <h1 style="text-align:center;">Analytical Stochastic Modelling</h1>
     <h1 style="text-align:center;">Topics of the Analysis</h1>
-    <center><img src="https://user-images.githubusercontent.com/74241318/164460784-f8ed1796-5dd1-4400-8b64-792c97925b90.png" alt="Topics of the analysis" ></center>
+    <br>
+    <ol type="1">
+   <li>Robust solution to the below stochastic differential equation </li>
+   <center><img src="https://github.com/panteleimon-a/panteleimon-a.github.io/blob/36f4bb9062bec1cdba2338c1bb6c6378d1268477/assets/img/Screenshot%202023-04-15%20at%2021.11.45.png)" alt="Topic 1" ></center>
+   <li>Item in list…</li>
+   <li>Item in list…</li>
+    </ol>
     <p style="text-align:center;"><big><sub>Analytical solution in Greek</sub></big></p>
     <center><img src="https://user-images.githubusercontent.com/74241318/164460944-06cedfb3-ac74-4889-94d8-51490b5cd80b.png" alt="1st Solution" ></center>
     <p style="text-align:center;"><big><sub>Analytical solution in Greek</sub></big></p>
