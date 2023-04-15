@@ -14,6 +14,10 @@ I am a graduate of Finance at the University of Macedonia, with the distinction 
 
 As a part of CVM Laboratory of Aristotle University of Thessaloniki, I worked in modeling Cryptocurrency Asset prices. Such a task has been demanding, since those assets are characterized with volatility. Deep learning techniques had to be used to face the problem. Google's TFT has been one of the main models that proved optimized results for such timeseries.
 
+My valued partners and I came up with the idea of factual with the vision of developing NLP solutions for a fact-driven world.
+
+factual's Chrome extension aims to utilise SOTA NLP techniques and LLMs to detect fake content on Tweets. factual's algorithm evaluates the credibility in accordance with predefined standards, conformes with professional fact-checking standards. The factors it considers include the news source and its credibility, the language and grammar of the content analyzed, the subjectivity, the origin of sources, and the likelihood of false/manufactured content, images and/or videos. Tweets are analysed based on fact checking standards and then scored for their credibility.
+
 (There &nbsp; is &nbsp; nothing &nbsp; divine &nbsp; about &nbsp; morality; &nbsp; it &nbsp; is &nbsp; a &nbsp; purely &nbsp; human &nbsp; affair.)
 
 
