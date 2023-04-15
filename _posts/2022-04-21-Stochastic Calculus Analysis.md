@@ -16,7 +16,7 @@ tags: [Stochastic Calculus, Ito Calculus, Stochastic Modelling]
     <br>
     <ol type="1">
    <li>Robust solution to the below stochastic differential equation </li>
-   <center><img src="https://github.com/panteleimon-a/panteleimon-a.github.io/blob/36f4bb9062bec1cdba2338c1bb6c6378d1268477/assets/img/Screenshot%202023-04-15%20at%2021.11.45.png)" alt="Topic 1" ></center>
+   <center><img src="https://github.com/panteleimon-a/panteleimon-a.github.io/blob/36f4bb9062bec1cdba2338c1bb6c6378d1268477/assets/img/Screenshot%202023-04-15%20at%2021.11.45.png" alt="Topic 1" ></center>
    <li>Item in list…</li>
    <li>Item in list…</li>
     </ol>
