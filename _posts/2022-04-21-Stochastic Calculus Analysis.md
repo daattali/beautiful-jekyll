@@ -16,7 +16,7 @@ tags: [Stochastic Calculus, Ito Calculus, Stochastic Modelling]
     <br>
     <ol type="1">
       <li>Robust solution to the below stochastic differential equation </li>
-   <center><img src="https://user-images.githubusercontent.com/74241318/232247807-426442d5-4ab9-4d12-bba0-f5a7e57158b2.png" alt="Topic 1" style="width: 100px;"></center>
+   <center><img src="https://user-images.githubusercontent.com/74241318/232247807-426442d5-4ab9-4d12-bba0-f5a7e57158b2.png" alt="Topic 1" style="width: 500px;"></center>
       <li>Calculate the Ito integral</li>
    <center><img src="https://user-images.githubusercontent.com/74241318/232248016-280bb5ab-eca5-4028-8b04-9402aca18902.png" alt="Topic 2" style="width: 40px;"></center>
       <li>Calculation of Lebesgue integral of sinx in Q (group of rational numbers) and x squared in [0,1].</li>
