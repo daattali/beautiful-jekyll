@@ -23,15 +23,15 @@ tags: [Stochastic Calculus, Ito Calculus, Stochastic Modelling]
       <li>Proof of every numbered group of real numbers having external Lebegsue measure of zero.</li>
       <li>Proof of random X's σ-algebra coinciding with σ-algebra of Ax+b.</li>
     </ol>
-    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></p></center>
+    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></center></p>
     <center><img src="https://user-images.githubusercontent.com/74241318/164460944-06cedfb3-ac74-4889-94d8-51490b5cd80b.png" alt="1st Solution" ></center>
-    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></p></center>
+    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></center></p>
     <center><img src="https://user-images.githubusercontent.com/74241318/164469372-ea398f0d-f25c-428e-a3fb-23a033b31023.png" alt="2st Solution" ></center>
-    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></p></center>
+    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></center></p>
     <center><img src="https://user-images.githubusercontent.com/74241318/164469426-2915907d-d743-412c-8a94-282b535f686a.png" alt="3st Solution" ></center>
-    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></p></center>
+    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></center></p>
     <center><img src="https://user-images.githubusercontent.com/74241318/164469468-f596e390-69e7-4833-90da-faaf0e5075a4.png" alt="4st Solution" ></center>
-    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></p></center>
+    <p style="text-align:center;"><center><big><sub>Analytical solution in Greek</sub></big></center></p>
     <center><img src="https://user-images.githubusercontent.com/74241318/164469540-5f914107-6b87-44bd-a002-11aedf4a25e7.png" alt="5st Solution" ></center>
   </body>
 </html>
