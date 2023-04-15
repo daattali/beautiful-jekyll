@@ -8,13 +8,11 @@ subtitle: Academic/working experience & interests
 </div>
 
 
-My name is Panteleimon Angelidis. During my high school years, I was an active student finding myself involved in various activities, such as volunteerism, competitions and theatre. I always felt an inclination in Mathematics, participating in competitions and excelling in the class exams. 
+My name is Panteleimon Angelidis. I am one of the Co-Founders of *factual*, a startup building NLP software solutions for validated information and I work as a Data Engineer Consultant @Deloitte.
 
-Since 2018 I've been studying Finance and Accounting majoring Finance at the University of Macedonia, with the distinction of the 4th highest grade in the entrance year. In my experience as student, I participated in business organizations, sport competitions and did personal research. I've been a part of a valuations company as an Assistant Equity Researcher and contributed to 2 valuation papers, analyzing a conglomerate-financial institution.
+I am a graduate of Finance at the University of Macedonia, with the distinction of the 4th highest grade in the acceptance list. In my experience as a student, I participated in business organizations, sport competitions and I've been a Research fellow in a couple of academic projects. I've been a Research fellow in the private sector, in the industry of Corporate Valuation, where I had the opportunity to mathematically model valuations of financial institutions.
 
-I am not a fun of traditional approaches of Finance, rather excited about the fintech future.
-
-As a part of the CVML Laboratory of Aristotle University of Thessaloniki, my experience extends to various Python libraries, such as Pytorch running in Cuda. 
+As a part of CVM Laboratory of Aristotle University of Thessaloniki, I worked in modeling Cryptocurrency Asset prices. Such a task has been demanding, since those assets are characterized with volatility. Deep learning techniques had to be used to face the problem. Google's TFT has been one of the main models that proved optimized results for such timeseries.
 
 (There &nbsp; is &nbsp; nothing &nbsp; divine &nbsp; about &nbsp; morality; &nbsp; it &nbsp; is &nbsp; a &nbsp; purely &nbsp; human &nbsp; affair.)
 
