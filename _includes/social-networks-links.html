@@ -23,6 +23,19 @@
    </a>
   </li>
 {%- endif -%}
+  
+  {%- if site.social-network-links.linkedin -%}
+  <li class="list-inline-item">
+    <a href="mailto:{{ site.social-network-links.linkedin }}" title="Find me on LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Find me on LinkedIn</span>
+   </a>
+  </li>
+{%- endif -%}
+  
 
   {%- if site.social-network-links.academia -%}
   <li class="list-inline-item">
