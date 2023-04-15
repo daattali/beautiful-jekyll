@@ -18,7 +18,7 @@ tags: [Stochastic Calculus, Ito Calculus, Stochastic Modelling]
    <li>Robust solution to the below stochastic differential equation </li>
    <center><img src="https://user-images.githubusercontent.com/74241318/232247807-426442d5-4ab9-4d12-bba0-f5a7e57158b2.png" alt="Topic 1" ></center>
    <li>Calculate the Ito integral</li>
-         <center><img src="https://user-images.githubusercontent.com/74241318/232247807-426442d5-4ab9-4d12-bba0-f5a7e57158b2.png" alt="Topic 2" ></center>
+         <center><img src="https://user-images.githubusercontent.com/74241318/232247781-af237068-120d-4391-b17d-c067809864ce.png" alt="Topic 2" ></center>
 
    <li>Item in list…</li>
     </ol>
