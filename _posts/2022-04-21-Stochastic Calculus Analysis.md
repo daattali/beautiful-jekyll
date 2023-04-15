@@ -16,7 +16,7 @@ tags: [Stochastic Calculus, Ito Calculus, Stochastic Modelling]
     <br>
     <ol type="1">
    <li>Robust solution to the below stochastic differential equation </li>
-      !(/panteleimon-a.github.io/assets/img/Screenshot-2023-04-15-at-21.11.45.png)
+   <center><img src="https://github.com/panteleimon-a/panteleimon-a.github.io/blob/36f4bb9062bec1cdba2338c1bb6c6378d1268477/assets/img/Screenshot%202023-04-15%20at%2021.11.45.png" alt="Topic 1" ></center>
    <li>Calculate the Ito integral</li>
          <center><img src="https://github.com/panteleimon-a/panteleimon-a.github.io/blob/c5f575b2197a1eb8408806c712443dfd4cd3f2c6/assets/img/Screenshot%202023-04-15%20at%2021.26.09.png" alt="Topic 2" ></center>
 
