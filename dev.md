@@ -9,37 +9,13 @@ subtitle: A lot of lines...
 
 ## ✔️ Open Source Projects
 
-> Production 🚀
-
 - ### [Lines](https://linesapp.vercel.app/) - web3 app to share your thoughts in a decentralized and censorship resistant way
 
 - ### [Universe](https://universeapp.vercel.app/) - collections of tools to optimize your yield farming strategies
 
->Development 🛠️
-
-- ### [Dharma Initiative](https://dharmainitiative.surge.sh/) - (Protocol based on a collection of useful tools for the web3 ecosystem)
-
-- ### [Dharma Dao](https://dharmadao.surge.sh/) - (DAO creation protocol)
-
-- ### [rToken Protocol](https://rtoken.surge.sh/) - (Protocol to earn interest from wrappped tokens)
-
-- ### [rToken Protocol Explorer](https://rtokenscan.surge.sh/) - (rToken Protocol Explorer)
-
 ## ✔️ Web3 Projects
 
-Production
-
 - ### [Altair](https://app.nali.finance/altair-funds) - altair is a decentralized fund manager that allows you to crate and manage your own funds with a few clicks
-
-## ✔️ NFTs
-
-Development
-
-- ### [Formulae](https://formulae.surge.sh/) - (NFTs collectable game)
-
-- ### [Dharmandala](https://dharmandala.surge.sh/) - (on Chain generated NFTs)
-
-- ### [Dharma Collection](https://dharmacollection.vercel.app/) - (simple music NFT marketplace)
 
 ## ✔️ Consulting
 
