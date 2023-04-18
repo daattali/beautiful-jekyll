@@ -2,7 +2,7 @@
 layout: post
 title: SOLID Principles in C#: A Guide to Writing Robust and Maintainable Code
 subtitle: Learn How to Write High-Quality Code with SOLID Principles in C#: Examples Included
-tags: [SOLID, SOLID principles, C#, CSharp, examples, SRP, OCP, LSP, ISP, DIP]
+tags: [solid, solid principles, c#, csharp, examples, srp, ocp, lsp, isp, dip]
 comments: true
 ---
 
