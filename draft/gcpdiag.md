@@ -119,7 +119,7 @@ This will run all the default checks (Error, Warning, Best Practice...) against 
 
 ```
 gcpdiag lint --help
-'''
+```
 
 --help returns all the configurable options availabe to customise the checks the tool performs. This can be configured to only check select GCP products and services e.g. GKE only, to only check certain rule sets e.g. Best Practices only, and to filter what information is returned for checks that pass. Similarily you can define whether the results are presented in the terminal window, JSON or CSV format.
 
