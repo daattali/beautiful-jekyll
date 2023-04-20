@@ -109,13 +109,21 @@ chmod +x gcpdiag
 
 # How do i use the GCPDiag tool?
 
-Once you have enabled the relevant API's as per [What API's does GCPDiag require?](/gcpdiag#what-apis-does-gcpdiag-require) to run GCPDiag in its default form, simply run the following command from the Google Cloud Shell:
+Once you have enabled the relevant API's as per '[What API's does GCPDiag require?](/gcpdiag#what-apis-does-gcpdiag-require)' to run GCPDiag in its default form, simply run the following command from the Google Cloud Shell replacing MYPROJECT with your GCP project's ID:
 
 ```
 gcpdiag lint --project=MYPROJECT
 ```
 
-By default this will ru
+This will run all the default checks (Error, Warning, Best Practice...) against all services within the targetted project, generating a summary of the tests performed including total skipped rules, ok rules and failed rules within the terminal window. Scrolling back through the terminal output enables you to identify what checks failed and provides guidance on how to align with the recommended best practices. GCPdiag doesn't provide the functionality to remediate detected issues, it only highlights them.
+
+```
+gcpdiag lint --help
+'''
+
+--help returns all the configurable options availabe to customise the checks the tool performs. This can be configured to only check select GCP products and services e.g. GKE only, to only check certain rule sets e.g. Best Practices only, and to filter what information is returned for checks that pass. Similarily you can define whether the results are presented in the terminal window, JSON or CSV format.
+
+The default settings for GCPdiag runs Auth-ADC for authentication, searches logs from the last 3 days, and outputs the results within the terminal.
 
 ![GCPDiag Open Source Tool](/assets/img/gcpdiag/gcpdiag-stethoscope.png "GCPDiag Open Source Tool")
  
