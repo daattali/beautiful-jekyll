@@ -67,7 +67,7 @@ gcloud --project=MYPROJECT services enable \
     logging.googleapis.com \
     serviceusage.googleapis.com
 ```
-***Enabling GCPdiag's required API's***
+***Code Example: Enabling GCPdiag's required API's***
 
 # How to authenticate GCPDiag
 GCPDiag supports three methods of authenticaiton:
@@ -98,7 +98,7 @@ The tool is preinstsalled to the Google Cloud Shell and can be run with the foll
 ```
 gcpdiag lint --project=MYPROJECT
 ```
-***Running GCPdiag lint***
+***Code Example: Running GCPdiag lint***
 
 Alternatively, you can run gcpdiag using a shell wrapper that starts gcpdiag in a Docker container with the following code:
 
@@ -107,7 +107,7 @@ curl https://gcpdiag.dev/gcpdiag.sh >gcpdiag
 chmod +x gcpdiag
 ./gcpdiag lint --project=MYPROJECT
 ```
-***Example shell wrapper for starting GCPdiag within a docker container***
+***Code Example: Example shell wrapper for starting GCPdiag within a docker container***
 
 # How do i use the GCPDiag tool?
 
@@ -116,14 +116,14 @@ Once you have enabled the relevant API's as per '[What API's does GCPDiag requir
 ```
 gcpdiag lint --project=MYPROJECT
 ```
-***Running GCPDiag***
+***Code Example: Running GCPDiag***
 
 This will run all the default checks (Error, Warning, Best Practice...) against all services within the targetted project, generating a summary of the tests performed including total skipped rules, ok rules and failed rules within the terminal window. Scrolling back through the terminal output enables you to identify what checks failed and provides guidance on how to align with the recommended best practices. GCPdiag doesn't provide the functionality to remediate detected issues, it only highlights them.
 
 ```
 gcpdiag lint --help
 ```
-***GCPdiag lint help command***
+***Code Example: GCPdiag lint help command***
 
 --help returns all the configurable options availabe to customise the checks the tool performs. This can be configured to only check select GCP products and services e.g. GKE only, to only check certain rule sets e.g. Best Practices only, and to filter what information is returned for checks that pass. Similarily you can define whether the results are presented in the terminal window, JSON or CSV format.
 
