@@ -67,6 +67,7 @@ gcloud --project=MYPROJECT services enable \
     logging.googleapis.com \
     serviceusage.googleapis.com
 ```
+##Enabling GCPdiag's required API's
 
 # How to authenticate GCPDiag
 GCPDiag supports three methods of authenticaiton:
