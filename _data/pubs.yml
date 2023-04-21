@@ -43,7 +43,7 @@
     \ booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
     \ year={2023}\n
     \ }"
-  img: ../pics/icra2023_logo.png
+  img: ../pics/ICRA23-ElasticContext.png
   links:
     '[arXiv]': https://arxiv.org/abs/2209.05428
   short_id: Longhini2023elastic
@@ -61,7 +61,7 @@
     \ booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
     \ year={2023}\n
     \ }"
-  img: ../pics/icra2023_logo.png
+  img: ../pics/EDONet.png
   links:
     '[arXiv]': https://arxiv.org/abs/2209.08996
   short_id: Longhini2023EDO
