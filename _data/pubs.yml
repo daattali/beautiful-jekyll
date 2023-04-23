@@ -1,19 +1,45 @@
 # When making a new entry, copy the commented out entry, paste it, uncomment, and fill out the fields.
 # If any of the fields are confusing look at previous examples for guidance.
-# - abs: null
-#   authors: null
-#   award: null
-#   bib: null
-#   img: null
-#   links: {}
-#   short_id: null
-#   site: null
-#   title: null
-#   venue: null
-#   video_embed: null
+#- abs: null
+#  authors: null
+#  award: null
+#  bib: null
+#  img: null
+#  links: {}
+#  short_id: null
+#  site: null
+#  title: null
+#  venue: null
+#  video_embed: null
+#  tags: null
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
-
+- abs: 'Robot-assisted dressing could benefit the lives of many people such as older adults and individuals with disabilities. Despite such potential, robot-assisted dressing remains a challenging task for robotics as it involves complex manipulation of deformable cloth in 3D space. Many prior works aim to solve the robot-assisted dressing task, but they make certain assumptions such as a fixed garment and a fixed arm pose that limit their ability to generalize. In this work, we develop a robot-assisted dressing system that is able to dress different garments on people with diverse poses from partial point cloud observations, based on a learned policy. We show that with proper design of the policy architecture and Q function, reinforcement learning (RL) can be used to learn effective policies with partial point cloud observations that work well for dressing diverse garments. We further leverage policy distillation to combine multiple policies trained on different ranges of human arm poses into a single policy that works over a wide range of different arm poses. We conduct comprehensive real-world evaluations of our system with 510 dressing trials in a human study with 17 participants with different arm poses and dressed garments. Our system is able to dress 86\% of the length of the participants arms on average. Videos can be found on the anonymized project webpage: https://sites.google.com/view/one-policy-dress.'
+  authors: Yufei Wang, Zhanyi Sun, Zackory Erickson, David Held
+  award: null
+  bib: "@inproceedings{Wang2023One,\n            title={One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments},\n            author={Wang, Yufei and Sun, Zhanyi and Erickson, Zackory and Held, David},\n            booktitle={Robotics: Science\
+    \ and Systems (RSS)},\n            year={2023}\n       }"
+  img: ../pics/rss2023-black.png
+  links: {}
+  short_id: Wang2023One
+  site: https://sites.google.com/view/one-policy-dress
+  title: 'One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments'
+  venue: 'Robotics: Science and Systems (RSS), 2023'
+  video_embed: null
+  tags: deform_obj_manip, 3D_afford_obj_manip
+- abs: "To navigate in an environment safely and autonomously, robots must accurately estimate where obstacles are and how they move. Instead of using expensive traditional 3D sensors, we explore the use of a much cheaper, faster, and higher resolution alternative: programmable light curtains. Light curtains are a controllable depth sensor that sense only along a surface that the user selects. We adapt a probabilistic method based on particle filters and occupancy grids to explicitly estimate the position and velocity of 3D points in the scene using partial measurements made by light curtains. The central challenge is to decide where to place the light curtain to accurately perform this task. We propose multiple curtain placement strategies guided by maximizing information gain and verifying predicted object locations. Then, we combine these strategies using an online learning framework. We propose a novel self-supervised reward function that evaluates the accuracy of current velocity estimates using future light curtain placements. We use a multi-armed bandit framework to intelligently switch between placement policies in real time, outperforming fixed policies. We develop a full-stack navigation system that uses position and velocity estimates from light curtains for downstream tasks such as localization, mapping, path-planning, and obstacle avoidance. This work paves the way for controllable light curtains to accurately, efficiently, and purposefully perceive and navigate complex and dynamic environments."
+  authors: Siddharth Ancha, Gaurav Pathak, Ji Zhang, Srinivasa Narasimhan, David Held
+  award: null
+  bib: "@inproceedings{Ancha2023Active,\n            title={Active Velocity Estimation using Light Curtains via Self-Supervised Multi-Armed Bandits},\n            author={Ancha, Siddharth and Pathak, Gaurav and Zhang, Ji and Narasimhan, Srinivasa and Held, David},\n            booktitle={Robotics: Science\
+    \ and Systems (RSS)},\n            year={2023}\n       }"
+  img: ../pics/rss2023-black.png
+  links: {}
+  short_id: Ancha2023Active
+  site: https://rss23.d1njdpg6jia6z4.amplifyapp.com/
+  title: Active Velocity Estimation using Light Curtains via Self-Supervised Multi-Armed Bandits
+  venue: 'Robotics: Science and Systems (RSS), 2023'
+  video_embed: null
+  tags: active_perception
 - abs: "Predicting how the world can evolve in the future is crucial for motion planning in autonomous systems. Classical methods are limited because they rely on costly human annotations in the form of semantic class labels, bounding boxes, and tracks or HD maps of cities to plan their motion — and thus are difficult to scale to large unlabeled datasets. One promising self-supervised task is 3D point cloud forecasting from unannotated LiDAR sequences. We show that this task requires algorithms to implicitly capture (1) sensor extrinsics (i.e., the egomotion of the autonomous vehicle), (2) sensor intrinsics (i.e., the sampling pattern specific to the particular LiDAR sensor), and (3) the shape and motion of other objects in the scene. But autonomous systems should make predictions about the world and not their sensors! To this end, we factor out (1) and (2) by recasting the task as one of spacetime (4D) occupancy forecasting. But because it is expensive to obtain ground-truth 4D occupancy, we “render” point cloud data from 4D occupancy predictions given sensor extrinsics and intrinsics, allowing one to train and test occupancy algorithms with unannotated LiDAR sequences. This also allows one to evaluate and compare point cloud forecasting algorithms across diverse datasets, sensors, and vehicles."
   authors: Tarasha Khurana, Peiyun Hu, David Held, Deva Ramanan
   award: null
