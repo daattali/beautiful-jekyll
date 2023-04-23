@@ -17,9 +17,9 @@ tags: [GCPDiag, Troubleshooting, Best Practice, Misconfiguration, Security]
 {:toc}
 
 # What is the GCPDiag tool?
-GCPDiag is an opensource tool that can detect configuration issues within your Google Cloud Project. It is a command line tool that runs a series of automated checks against Google Cloud API's to identify a range of issues including errors (ERR) for things that are very likely misconfigured, warnings (WAR) things that are possibly wrong, best practices/opinionated recommendations (BP) and potential security (SEC) issues. 
+GCPDiag is an opensource tool that can detect configuration issues within Google Cloud Projects. It is a command line tool that runs a series of automated checks against Google Cloud API's to identify a range of issues including errors (ERR) for things that are very likely misconfigured, warnings (WAR) things that are possibly wrong, best practices/opinionated recommendations (BP) and potential security (SEC) issues. 
 
-GCPDiag is run against your project to detect issues against a series of rules and generate a corresponding report. The report highlights where the project deviates from the list of expected conditions.
+GCPDiag runs against a GCP project detecting issues against a series of rules, and generating a corresponding report that highlights any deviations from the list of expected conditions.
 
 The tool can be targetted to run against all, or a selection of the following services:
 
@@ -42,7 +42,7 @@ The tool can be targetted to run against all, or a selection of the following se
 - TPU
 - VPC
 
-The tool is maintained by the Google Cloud Support team, based on their troubleshooting experience for Google Cloud customers with contributions from the open source community.
+GCPdiag is maintained by the Google Cloud Support team, based on their troubleshooting experience for Google Cloud customers, with contributions from the open source community.
 
 # What IAM Permissions does GCPDiag require?
 The credentials used to run GCPDiag need to have the following minimum roles on the inspected project:
@@ -51,14 +51,14 @@ The credentials used to run GCPDiag need to have the following minimum roles on 
 - Service Usage Consumer on the project used for billing/quota enforcement, which is per default the project being inspected, but can be explicitely set using the --billing-project option
 
 # What API's does GCPDiag require?
-GCPDiag requires the following API's to be enabled on the GCP project you are checking:
+GCPDiag requires the following API's to be enabled on the GCP project to query:
 
 - cloudresourcemanager.googleapis.com (Cloud Resource Manager API)
 - iam.googleapis.com (Identity and Access Management API)
 - logging.googleapis.com (Cloud Logging API)
 - serviceusage.googleapis.com (Service Usage API)
 
-You can enable these APIs using Cloud Console or via command-line:
+These APIs can be enabled using Cloud Console or via the following gcloud command-line:
 
 ```
 gcloud --project=MYPROJECT services enable \
@@ -67,7 +67,7 @@ gcloud --project=MYPROJECT services enable \
     logging.googleapis.com \
     serviceusage.googleapis.com
 ```
-***Code Example: Enabling GCPdiag's required API's***
+***Code Example: Enabling GCPdiag's required API's with gcloud command line***
 
 # How to authenticate GCPDiag
 GCPDiag supports three methods of authentication:
