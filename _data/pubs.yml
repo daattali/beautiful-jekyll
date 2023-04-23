@@ -30,16 +30,26 @@
 - abs: "To navigate in an environment safely and autonomously, robots must accurately estimate where obstacles are and how they move. Instead of using expensive traditional 3D sensors, we explore the use of a much cheaper, faster, and higher resolution alternative: programmable light curtains. Light curtains are a controllable depth sensor that sense only along a surface that the user selects. We adapt a probabilistic method based on particle filters and occupancy grids to explicitly estimate the position and velocity of 3D points in the scene using partial measurements made by light curtains. The central challenge is to decide where to place the light curtain to accurately perform this task. We propose multiple curtain placement strategies guided by maximizing information gain and verifying predicted object locations. Then, we combine these strategies using an online learning framework. We propose a novel self-supervised reward function that evaluates the accuracy of current velocity estimates using future light curtain placements. We use a multi-armed bandit framework to intelligently switch between placement policies in real time, outperforming fixed policies. We develop a full-stack navigation system that uses position and velocity estimates from light curtains for downstream tasks such as localization, mapping, path-planning, and obstacle avoidance. This work paves the way for controllable light curtains to accurately, efficiently, and purposefully perceive and navigate complex and dynamic environments."
   authors: Siddharth Ancha, Gaurav Pathak, Ji Zhang, Srinivasa Narasimhan, David Held
   award: null
-  bib: "@inproceedings{Ancha2023Active,\n            title={Active Velocity Estimation using Light Curtains via Self-Supervised Multi-Armed Bandits},\n            author={Ancha, Siddharth and Pathak, Gaurav and Zhang, Ji and Narasimhan, Srinivasa and Held, David},\n            booktitle={Robotics: Science\
-    \ and Systems (RSS)},\n            year={2023}\n       }"
-  img: ../pics/rss2023-black.png
-  links: {}
+  bib: "@inproceedings{ancha2023rss,\n
+    \ title     = {Active Velocity Estimation using Light Curtains via Self-Supervised Multi-Armed Bandits},\n
+    \ author    = {Siddharth Ancha AND Gaurav Pathak AND Ji Zhang AND Srinivasa Narasimhan AND David Held},\n
+    \ booktitle = {Proceedings of Robotics: Science and Systems},\n
+    \ year      = {2023},\n
+    \ address   = {Daegu, Republic of Korea},\n
+    \ month     = {July},\n
+  }"
+  img: ../pics/rss2023lightcurtains.png
+  links:
+    '[arXiv]': https://arxiv.org/abs/2302.12597
+    '[Talk]': https://youtu.be/szUpgr36T9c
   short_id: Ancha2023Active
-  site: https://rss23.d1njdpg6jia6z4.amplifyapp.com/
+  site: https://siddancha.github.io/projects/active-velocity-estimation/
   title: Active Velocity Estimation using Light Curtains via Self-Supervised Multi-Armed Bandits
   venue: 'Robotics: Science and Systems (RSS), 2023'
   video_embed: null
-  tags: active_perception
+  tags:
+    - active_perception
+    - self-supervised
 - abs: "Predicting how the world can evolve in the future is crucial for motion planning in autonomous systems. Classical methods are limited because they rely on costly human annotations in the form of semantic class labels, bounding boxes, and tracks or HD maps of cities to plan their motion — and thus are difficult to scale to large unlabeled datasets. One promising self-supervised task is 3D point cloud forecasting from unannotated LiDAR sequences. We show that this task requires algorithms to implicitly capture (1) sensor extrinsics (i.e., the egomotion of the autonomous vehicle), (2) sensor intrinsics (i.e., the sampling pattern specific to the particular LiDAR sensor), and (3) the shape and motion of other objects in the scene. But autonomous systems should make predictions about the world and not their sensors! To this end, we factor out (1) and (2) by recasting the task as one of spacetime (4D) occupancy forecasting. But because it is expensive to obtain ground-truth 4D occupancy, we “render” point cloud data from 4D occupancy predictions given sensor extrinsics and intrinsics, allowing one to train and test occupancy algorithms with unannotated LiDAR sequences. This also allows one to evaluate and compare point cloud forecasting algorithms across diverse datasets, sensors, and vehicles."
   authors: Tarasha Khurana, Peiyun Hu, David Held, Deva Ramanan
   award: null
