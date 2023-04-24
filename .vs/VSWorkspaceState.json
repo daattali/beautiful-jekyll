@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\assets\\img",
+    "\\assets\\img\\posts",
     "\\_posts"
   ],
+  "SelectedNode": "\\assets\\img\\posts\\sast-dast-title.png",
   "PreviewInSolutionExplorer": false
 }

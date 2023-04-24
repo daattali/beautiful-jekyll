@@ -6,6 +6,8 @@ tags: [solid, solid principles, csharp, c#, examples, srp, ocp, lsp, isp, dip]
 comments: true
 ---
 
+![SOLID Principles in C# - A Guide to Writing Robust and Maintainable Code](../assets/img/posts/solid.png){:class="img-responsive"}
+
 The SOLID principle is a set of guidelines that helps software developers build code that's simple to maintain, understand, and expand. It's an acronym for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles. In this article, we'll delve into each of these principles in detail and showcase how to put them into practice using C# programming language.
 
 **[S] - Single Responsibility Principle (SRP)**
