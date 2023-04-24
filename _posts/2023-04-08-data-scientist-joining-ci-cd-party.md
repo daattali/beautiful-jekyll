@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Data Scientist Joining CI/CD party - Part 1
+title: Data Scientist Joining CI/CD party, Part 1
 subtitle: From prototype to production - a data scientist's journey in CI/CD
 tags: [devops, github actions, CI/CD, software development, workflows, version control, automated testing]
 comments: true
 ---
+This blog post is the first in a series discussing the closely related notions of version control, dependency management, and continuous integration/continuous deployment practices. In this series, I draw on the benefits of introducing good software development practices in the data scientists' workflow. In the first part, I walk the reader through the basics of collaborative work, including version control and dependency management. 
 
 ## Introduction
 
