@@ -134,7 +134,7 @@ So, there you have it. My “Ludoteca Ideale” of my 2022 discoveries… I can�
 
 ## The games I look forward the most to play in 2023
 
-* [ ] Darwin’s Voyage – I have Kickstarted this (a long, long, **long** time ago) – let’s hope it lives up to the hype… and that it arrives _this_ year… (Spoiler: It has arrived!)
+* [X] Darwin’s Voyage – I have Kickstarted this (a long, long, **long** time ago) – let’s hope it lives up to the hype… and that it arrives _this_ year… (Spoiler: It has arrived!)
 * [ ] Through Ice and Snow - Another kickstarter with a theme I couldn't resist (I was heavily into the story around the discovery of the Northwest passage some years ago with, among other things,  *The Terror* (both the book and the TV-series are *great*!)) that *should* arrive in 2023…
 * [ ] Revive - Post-apocalyptic multi use cards and tech trees!
 * [ ] Tiletum - Seemingly everyone's favourite T-game...
