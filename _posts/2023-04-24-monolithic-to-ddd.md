@@ -39,7 +39,7 @@ Azure Functions and Azure App Service are cloud-based services provided by Micro
 
 One way to use Azure Functions in an on-premises environment is to use Azure Functions Runtime, which is an open-source, cross-platform runtime that enables you to run Azure Functions on-premises or in other non-Azure environments. With Azure Functions Runtime, you can develop, test, and run Azure Functions locally, and then deploy them to an on-premises environment.
 
-Another way to use Azure App Service in an on-premises environment is to use Azure App Service on Azure Stack, which is an extension of Azure App Service that enables you to run App Service on your own hardware, in your own datacenter. With Azure App Service on Azure Stack, you can develop and deploy web and mobile apps on your own infrastructure, while still taking advantage of the features and benefits of Azure App Service.
+One way to use Azure App Service in an on-premises environment is to use Azure App Service on Azure Stack, which is an extension of Azure App Service that enables you to run App Service on your own hardware, in your own datacenter. With Azure App Service on Azure Stack, you can develop and deploy web and mobile apps on your own infrastructure, while still taking advantage of the features and benefits of Azure App Service.
 
 In addition to these options, you can also use other Azure services, such as Azure DevOps and Azure Virtual Machines, to build and deploy applications in an on-premises environment that integrate with Azure Functions and Azure App Service.
 
@@ -50,15 +50,15 @@ Overall, while Azure Functions and Azure App Service are primarily designed to r
 
 When it comes to coding for the cloud, there are several best practices that developers should follow to ensure that their code is scalable, reliable, and secure. Here are some key best practices for coding with C# for the cloud:
 
-Use asynchronous programming: Asynchronous programming is a technique that allows multiple operations to be executed concurrently without blocking the main thread. This can greatly improve the performance of cloud-based applications, as it allows multiple requests to be processed at the same time.
+**Use asynchronous programming**: Asynchronous programming is a technique that allows multiple operations to be executed concurrently without blocking the main thread. This can greatly improve the performance of cloud-based applications, as it allows multiple requests to be processed at the same time.
 
-Implement caching: Caching is a technique that can be used to store frequently accessed data in memory, reducing the number of requests that need to be made to the database or other external resources. Caching can be implemented using tools provided by the language you are codding (such as the MemoryCache class in C#) or a distributed caching solution such as Redis.
+**Implement caching**: Caching is a technique that can be used to store frequently accessed data in memory, reducing the number of requests that need to be made to the database or other external resources. Caching can be implemented using tools provided by the language you are codding (such as the MemoryCache class in C#) or a distributed caching solution such as Redis.
 
-Use dependency injection: Dependency injection is a technique that allows components to be loosely coupled, making it easier to maintain and test code. Dependency injection can be implemented using frameworks such as Microsoft's built-in Dependency Injection container or third-party solutions such as Autofac.
+**Use dependency injection**: Dependency injection is a technique that allows components to be loosely coupled, making it easier to maintain and test code. Dependency injection can be implemented using frameworks such as Microsoft's built-in Dependency Injection container or third-party solutions such as Autofac.
 
-Implement logging: Logging is a crucial part of any cloud-based application, as it allows developers to diagnose and troubleshoot issues. Logging can be implemented using tools such as the built-in logging framework or third-party solutions such as Serilog.
+**Implement logging**: Logging is a crucial part of any cloud-based application, as it allows developers to diagnose and troubleshoot issues. Logging can be implemented using tools such as the built-in logging framework or third-party solutions such as Serilog.
 
-Secure data: Cloud-based applications are often more vulnerable to security threats than on-premise applications, so it's important to implement security best practices such as encrypting sensitive data and using secure authentication mechanisms. Security can be implemented using tools such as the built-in Identity framework or third-party solutions such as IdentityServer.
+**Secure data**: Cloud-based applications are often more vulnerable to security threats than on-premise applications, so it's important to implement security best practices such as encrypting sensitive data and using secure authentication mechanisms. Security can be implemented using tools such as the built-in Identity framework or third-party solutions such as IdentityServer.
 
 Overall, following these best practices when coding for the cloud can help developers create applications that are scalable, reliable, and secure, ensuring that they can meet the demands of modern cloud-based environments.
 
