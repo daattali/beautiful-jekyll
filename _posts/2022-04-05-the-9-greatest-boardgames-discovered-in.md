@@ -136,7 +136,7 @@ Honourable mentions (sorted alphabetically)
 The games I look forward the most to play in 2022
 -------------------------------------------------
 
-* [ ] Darwin’s Voyage – I have Kickstarted this (a long, long time ago) – let’s hope it lives up to the hype… and that it arrives this year…
+* [x] Darwin’s Voyage – I have Kickstarted this (a long, long time ago) – let’s hope it lives up to the hype… and that it arrives this year…
 * [x] Terraforming Mars: Ares Expedition – A streamlined mashup of Terraforming Mars and Race for the Galaxy? Count me in!
 * [x] Dune: Imperium – Arnak in space with spice?
 * [x] Ark Nova – Zoo Tycoon: The (medium-heavy euro) Boardgame?
