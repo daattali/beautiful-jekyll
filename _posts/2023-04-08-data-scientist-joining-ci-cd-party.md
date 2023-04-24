@@ -52,7 +52,7 @@ I choose the name, mark `Add a README file` field (optional), select license (op
 
 ![repo-2](/assets/data/2023-04-08-repository-2.png){: .mx-auto.d-block :}
 
-The `README` file is automatically shown on the front page of the repository and is a great place to describe it in more details, so I update it with nore details.
+The `README` file is automatically shown on the front page of the repository, so the repository can be described it in more details:
 
 ![repo-3](/assets/data/2023-04-08-repository-3.png){: .mx-auto.d-block :}
 
