@@ -2,6 +2,7 @@
 layout: post
 title: Data Scientist Joining CI/CD party, Part 1
 subtitle: From prototype to production - a data scientist's journey in CI/CD
+thumbnail-img: /assets/img/2023-04-08-thumb.png
 tags: [devops, github actions, CI/CD, software development, workflows, version control, automated testing]
 comments: true
 ---
