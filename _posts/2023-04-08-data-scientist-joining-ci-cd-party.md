@@ -46,15 +46,15 @@ A popular platform for hosting code repositories is GitHub. [At the heart of Git
 
 Let's see how to create a repository in the Web browser. When you are signed in, there is a plus sign with a drop-down menu in the upper-right corner of any page, where you can select the `New repository` option. Alternatively, you can use the green button named `New` in the repository tab of your profile:
 
-![repo-1](/assets/img/2023-04-08-repository-1.png){: .mx-auto.d-block :}
+![repo-1](/assets/data/2023-04-08-repository-1.png){: .mx-auto.d-block :}
 
 I choose the name, mark `Add a README file` field (optional), select license (optional), and push `Create repository`.
 
-![repo-2](/assets/img/2023-04-08-repository-2.png){: .mx-auto.d-block :}
+![repo-2](/assets/data/2023-04-08-repository-2.png){: .mx-auto.d-block :}
 
 The `README` file is automatically shown on the front page of the repository and is a great place to describe it in more details, so I update it with nore details.
 
-![repo-3](/assets/img/2023-04-08-repository-3.png){: .mx-auto.d-block :}
+![repo-3](/assets/data/2023-04-08-repository-3.png){: .mx-auto.d-block :}
 
 
 ### Set Up the Scene for Version Control and Dependency Management
@@ -74,11 +74,11 @@ The basic structure of `pyproject.toml` file includes:
 - `[tool.poetry.dev-dependencies]` section: this section is used to specify the project's development dependencies, such as testing frameworks or linters.
 - `[build-system]` section: this section is used to specify the system requirements and configuration to package the code and any necessary dependencies into a distributable format; includies the build backend, which can be set to `poetry.masonry.api`.
 
-![vc-dm-1](/assets/img/2023-04-08-vc-dm-1.png){: .mx-auto.d-block :}
+![vc-dm-1](/assets/data/2023-04-08-vc-dm-1.png){: .mx-auto.d-block :}
 
 This is how out project folder looks at the moment:
 
-![vc-dm-2](/assets/img/2023-04-08-vc-dm-2.png){: .mx-auto.d-block :}
+![vc-dm-2](/assets/data/2023-04-08-vc-dm-2.png){: .mx-auto.d-block :}
 
 Now, I am ready to run the `fuzz_buzz` project locally.
 
@@ -94,25 +94,25 @@ git clone https://github.com/Zhenev/better-python-with-ci-cd
 Then, I need to set up the interpreter. In what follows, I walk through this process as it can be done using `PyCharm`:
 
 1. Open the `Settings` menu:
-![vc-dm-3](/assets/img/2023-04-08-vc-dm-3.png){: .mx-auto.d-block :}
+![vc-dm-3](/assets/data/2023-04-08-vc-dm-3.png){: .mx-auto.d-block :}
 2. Look for the `Python Interpreter` menu:
-![vc-dm-4](/assets/img/2023-04-08-vc-dm-4.png){: .mx-auto.d-block :}
+![vc-dm-4](/assets/data/2023-04-08-vc-dm-4.png){: .mx-auto.d-block :}
 3. Open the drop-down menu...
-![vc-dm-5](/assets/img/2023-04-08-vc-dm-5.png){: .mx-auto.d-block :}
+![vc-dm-5](/assets/data/2023-04-08-vc-dm-5.png){: .mx-auto.d-block :}
 4. ...and choose the `Show all` option to open the `Python Interpreters` window:
-![vc-dm-6](/assets/img/2023-04-08-vc-dm-6.png){: .mx-auto.d-block :}
+![vc-dm-6](/assets/data/2023-04-08-vc-dm-6.png){: .mx-auto.d-block :}
 5. Choose the `+` sign in the top-left corner of the `Python Interpreters` window to add new interpreter:
-![vc-dm-7](/assets/img/2023-04-08-vc-dm-7.png){: .mx-auto.d-block :}
+![vc-dm-7](/assets/data/2023-04-08-vc-dm-7.png){: .mx-auto.d-block :}
 6. In the `Add Python Interpreter` window, choose the `Poetry Environment` option:
-![vc-dm-8](/assets/img/2023-04-08-vc-dm-8.png){: .mx-auto.d-block :}
+![vc-dm-8](/assets/data/2023-04-08-vc-dm-8.png){: .mx-auto.d-block :}
 7. You can change the base interpreter:
-![vc-dm-9](/assets/img/2023-04-08-vc-dm-9.png){: .mx-auto.d-block :}
+![vc-dm-9](/assets/data/2023-04-08-vc-dm-9.png){: .mx-auto.d-block :}
 8. When you push `OK`, the environment starts to be set up:
-![vc-dm-10](/assets/img/2023-04-08-vc-dm-10.png){: .mx-auto.d-block :}
+![vc-dm-10](/assets/data/2023-04-08-vc-dm-10.png){: .mx-auto.d-block :}
 9. When the set up is finalized, the name of the new environment appears in the `Python Interpreters` list, choose it and confirm:
-![vc-dm-11](/assets/img/2023-04-08-vc-dm-11.png){: .mx-auto.d-block :}
+![vc-dm-11](/assets/data/2023-04-08-vc-dm-11.png){: .mx-auto.d-block :}
 10. Track which environment you are working in at the moment (in Pycharm, its name is displayed in bottom-right corner)
-![vc-dm-12](/assets/img/2023-04-08-vc-dm-12.png){: .mx-auto.d-block :}
+![vc-dm-12](/assets/data/2023-04-08-vc-dm-12.png){: .mx-auto.d-block :}
 
 Finally, we can apply the dependencies listed in the `pyproject.toml` file. To this end, we move into the project folder...
 ```python
@@ -120,7 +120,7 @@ cd .\fizz_buzz\
 ```
 
 ...where we run the `poetry update` command:
-![vc-dm-13](/assets/img/vc-dm-13.png){: .mx-auto.d-block :}
+![vc-dm-13](/assets/data/vc-dm-13.png){: .mx-auto.d-block :}
 
 
 When being run for the first time, a new `pyproject.toml` file is created within the same folder.
