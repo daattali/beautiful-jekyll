@@ -93,43 +93,43 @@ git clone https://github.com/Zhenev/better-python-with-ci-cd
 
 Then, I need to set up the interpreter. In what follows, I walk through this process as it can be done using `PyCharm`:
 
-1. Open the `Settings` menu:
+- Open the `Settings` menu:
 
 ![vc-dm-3](/assets/data/2023-04-08-vc-dm-3.png){: .mx-auto.d-block :}
 
-2. Look for the `Python Interpreter` menu:
+- Look for the `Python Interpreter` menu:
  
 ![vc-dm-4](/assets/data/2023-04-08-vc-dm-4.png){: .mx-auto.d-block :}
 
-3. Open the drop-down menu...
+- Open the drop-down menu...
  
 ![vc-dm-5](/assets/data/2023-04-08-vc-dm-5.png){: .mx-auto.d-block :}
 
-4. ...and choose the `Show all` option to open the `Python Interpreters` window:
+- ...and choose the `Show all` option to open the `Python Interpreters` window:
  
 ![vc-dm-6](/assets/data/2023-04-08-vc-dm-6.png){: .mx-auto.d-block :}
 
-5. Choose the `+` sign in the top-left corner of the `Python Interpreters` window to add new interpreter:
+- Choose the `+` sign in the top-left corner of the `Python Interpreters` window to add new interpreter:
  
 ![vc-dm-7](/assets/data/2023-04-08-vc-dm-7.png){: .mx-auto.d-block :}
 
-6. In the `Add Python Interpreter` window, choose the `Poetry Environment` option:
+- In the `Add Python Interpreter` window, choose the `Poetry Environment` option:
  
 ![vc-dm-8](/assets/data/2023-04-08-vc-dm-8.png){: .mx-auto.d-block :}
 
-7. You can change the base interpreter:
+- You can change the base interpreter:
  
 ![vc-dm-9](/assets/data/2023-04-08-vc-dm-9.png){: .mx-auto.d-block :}
 
-8. When you push `OK`, the environment starts to be set up:
+- When you push `OK`, the environment starts to be set up:
  
 ![vc-dm-10](/assets/data/2023-04-08-vc-dm-10.png){: .mx-auto.d-block :}
 
-9. When the set up is finalized, the name of the new environment appears in the `Python Interpreters` list, choose it and confirm:
+- When the set up is finalized, the name of the new environment appears in the `Python Interpreters` list, choose it and confirm:
  
 ![vc-dm-11](/assets/data/2023-04-08-vc-dm-11.png){: .mx-auto.d-block :}
 
-10. Track which environment you are working in at the moment (in Pycharm, its name is displayed in bottom-right corner)
+- Track which environment you are working in at the moment (in Pycharm, its name is displayed in bottom-right corner)
  
 ![vc-dm-12](/assets/data/2023-04-08-vc-dm-12.png){: .mx-auto.d-block :}
 
@@ -139,6 +139,7 @@ cd .\fizz_buzz\
 ```
 
 ...where we run the `poetry update` command:
+
 ![vc-dm-13](/assets/data/2023-04-08-vc-dm-13.png){: .mx-auto.d-block :}
 
 
