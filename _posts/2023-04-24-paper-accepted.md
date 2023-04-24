@@ -17,4 +17,4 @@ and parameter estimation performance of our approach and compare its performance
 We then apply our method to functional data collected in a novel, smartphone-based smoking cessation intervention study to investigate 
 individual-level dynamic relations between smoking behaviors and potential risk factors.
 
-Here's a link to the [pdf](Liang Functional EPA BA 2023.pdf).
+Here's a link to the [pdf](https://mkoslovsky.github.io/Liang Functional EPA BA 2023.pdf).
