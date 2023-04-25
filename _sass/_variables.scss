@@ -1,0 +1,24 @@
+/**
+ * Set up here the general appearance of the theme.
+ */
+
+$themeColor: map-get($theme, themeColor) !default;
+$primaryDark: map-get($theme, primaryDark) !default;
+$accentDark: map-get($theme, accentDark) !default;
+$lightGray: map-get($theme, lightGray) !default;
+$texts: map-get($theme, texts) !default;
+
+// Breakpoints
+$breakpoints: (
+  sm: 37.5rem
+);
+
+// Margins
+$rowMargin: 10px;
+$itemMargin: 15px;
+
+// Sizes
+$itemMinWidth: 300px;
+
+// Settings
+$maxItemsPerRow: 3;

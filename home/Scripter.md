@@ -1,4 +1,0 @@
----
-layout: Scripter
-title: Scripter
----

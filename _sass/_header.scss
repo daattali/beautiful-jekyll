@@ -1,0 +1,150 @@
+html,
+body {
+  height: 100%;
+}
+
+.bar-header {
+  background-color: $primaryDark;
+  padding: rem(10px) rem(15px);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.5s, left 0.3s ease, background-color 0.5s, box-shadow 0.5s;
+  
+  @include media(">=sm") {
+    padding: rem(15px) rem(0px);
+  }
+
+  .logo {
+    display: inline-block;
+    margin: 0;
+    height: rem(32px);
+    line-height: rem(32px);
+
+    a {
+      display: block;
+      color: $accentDark;
+      text-decoration: none;
+      font-size: rem(32px);
+      position: relative;
+      outline: 0;
+    }
+
+    svg {
+      width: rem(120px);
+      height: rem(30px);
+      transition: all .4s;
+  
+      @include media(">=sm") {
+        width: rem(205px);
+      }
+    }
+  }
+
+  .version {
+    color: $accentDark;
+    font-size: rem(10px);
+    font-weight: normal;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    transform: translateX(110%);
+    opacity: 0.3;
+  }
+
+  .icon-menu {
+    float: left;
+    cursor: pointer;
+    margin: rem(5px) rem(20px) rem(5px) 0;
+    width: rem(20px);
+    height: rem(20px);
+    fill: $accentDark;
+
+    @include media(">=sm") {
+      margin: rem(5px) rem(20px) rem(5px) rem(25px);
+    }
+  }
+
+  .dosearch {
+    float: right;
+    width: rem(30px);
+    height: rem(30px);
+    cursor: pointer;
+    margin: 0;
+    @include media(">=sm") {
+      margin: 0 rem(20px) 0 0;
+    }
+  }
+
+  .icon-search {
+    width: rem(20px);
+    height: rem(20px);
+    fill: $accentDark;
+    margin: rem(5px);
+  }
+
+  .get-theme {
+    display: none;
+    font-size: rem(13px);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: $themeColor;
+    color: $accentDark;
+    padding: rem(5px) rem(10px);
+    border-radius: rem(5px);
+    float: right;
+    margin: rem(5px) rem(15px) rem(5px) rem(5px);
+
+    @include media(">=sm") {
+      display: inline-block;
+    }
+  }
+}
+
+body.main-page {
+  background-color: #141414;
+
+  .bar-header {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+}
+
+body.light:not(.main-page) {
+  .bar-header {
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.95);
+
+    .icon-search,
+    .icon-menu {
+      fill: $primaryDark;
+    }
+
+    .logo a,
+    .version {
+      color: $primaryDark;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 17;
+  opacity: 0;
+  transition: all 0.3s;
+
+  &.show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+}

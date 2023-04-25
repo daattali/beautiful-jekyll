@@ -1,0 +1,31 @@
+<svg width="50" height="50" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" class="loader">
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="a">
+            <stop stop-color="currentColor" stop-opacity="0" offset="0%"/>
+            <stop stop-color="currentColor" stop-opacity=".631" offset="63.146%"/>
+            <stop stop-color="currentColor" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1 1)">
+            <path d="M0,18.0000525 C0,27.9411416 8.05885836,36 18.0000525,36 C27.9411416,36 36,27.9411416 36,18.0000525" id="Oval-2" stroke="url(#a)" stroke-width="2">
+                <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="360 18 18"
+                    to="0 18 18"
+                    dur="1.9s"
+                    repeatCount="indefinite" />
+            </path>
+            <circle fill="currentColor" cx="36" cy="18" r="1">
+                <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="360 18 18"
+                    to="0 18 18"
+                    dur="1.9s"
+                    repeatCount="indefinite" />
+            </circle>
+        </g>
+    </g>
+</svg>

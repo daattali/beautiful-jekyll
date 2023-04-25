@@ -1,0 +1,90 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body.has-push-menu,
+body.has-push-menu aside,
+body.has-push-menu .progress-bar {
+  transition: all 0.3s ease;
+}
+
+body.has-push-menu {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+
+  &.push-menu-to-right {
+    left: rem(240px);
+
+    .progress-bar {
+      left: rem(240px);
+    }
+
+    .bar-header {
+      left: rem(240px);
+    }
+  }
+}
+
+aside.sidebar {
+  position: fixed;
+  width: rem(240px);
+  height: 100%;
+  top: 0;
+  left: rem(-240px);
+  background-color: $accentDark;
+  z-index: 20;
+
+  @include media(">=sm") {
+    padding: rem(10px) 0 0;
+  }
+
+  &.open {
+    left: 0;
+  }
+
+  h2 {
+    margin: 0 rem(20px) 0;
+    @include mainFont(400);
+    font-size: rem(18px);
+    color: $primaryDark;
+    border-bottom: 1px solid $primaryDark;
+    line-height: 50px;
+
+    @include media(">=sm") {
+      font-size: rem(20px);
+    }
+  }
+
+  nav {
+    ul {
+      padding: 0;
+      margin: rem(5px) 0;
+
+      @include media(">=sm") {
+        margin: rem(10px) 0;
+      }
+
+      li {
+        margin: 0;
+        list-style-type: none;
+
+        a {
+          width: 100%;
+          display: block;
+          padding: rem(15px) rem(20px);
+          text-decoration: none;
+          @include mainFont(300);
+          color: $primaryDark;
+
+          &:hover {
+            color: $accentDark;
+            background: $themeColor;
+          }
+        }
+      }
+    }
+  }
+}

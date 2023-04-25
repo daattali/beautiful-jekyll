@@ -1,0 +1,8 @@
+{% if paginator.total_pages > 1 %}
+    <div class="progress-bar {% if include.finished %}finished{% endif %}">
+        {% for i in (1..paginator.total_pages) %}
+            <div class="bar {% if i <= paginator.page %}completed{% endif %}"></div>
+        {% endfor %}
+        <svg class="star"><use xlink:href="#icon-star"></use></svg>
+    </div>
+{% endif %}

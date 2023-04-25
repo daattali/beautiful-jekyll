@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+
+  +#grid {
+    margin-top: rem(-80px);
+  }
+
+  .gradient,
+  .pixels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pixels {
+    opacity: 0.8;
+    background-image: url(../../assets/img/pixels.png);
+  }
+
+  .gradient {
+    background-image: linear-gradient(0deg, rgba(20, 20, 20, 1) 5%, rgba(0, 0, 0, 0) 30%);
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    @include media(">=sm") {
+      width: 100%;
+    }
+
+    .date {
+      font-size: rem(16px);
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .title {
+      font-size: rem(40px);
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      margin: rem(10px) 0;
+
+      @include media(">=sm") {
+        font-size: rem(50px);
+      }
+    }
+
+    .description {
+      font-size: rem(24px);
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      margin: 0;
+
+      @include media(">=sm") {
+        font-size: rem(26px);
+      }
+    }
+
+    .buttons {
+      margin-top: rem(50px);
+    }
+
+    .button {
+      display: inline-block;
+      font-size: rem(18px);
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: rem(5px);
+      padding: rem(10px) rem(15px);
+      transition: all 0.3s;
+
+      @include media(">=sm") {
+        font-size: rem(18px);
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      svg {
+        width: rem(25px);
+        height: rem(25px);
+        margin-right: rem(10px);
+        vertical-align: middle;
+        color: $themeColor;
+      }
+
+      span {
+        vertical-align: middle;
+      }
+    }
+  }
+}

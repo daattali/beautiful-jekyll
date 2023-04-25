@@ -1,0 +1,310 @@
+@import "include-media";
+@import "normalize";
+@import "theme";
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "typo";
+@import "highlight";
+
+body {
+  overflow-x: auto;
+
+  @include media(">=sm") {
+    padding: rem(50px) rem(30px);
+  }
+
+  img {
+    max-width: 100%;
+    margin: 0 auto rem(20px);
+    display: block;
+    padding: 10px 0;
+
+    @include media(">=sm") {
+      margin: 0 auto rem(29px);
+    }
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  figcaption,
+  img + em {
+    display: block;
+    color: darken($lightGray, 30%);
+    text-align: center;
+    @include mainFont(300);
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  iframe,
+  div[class^="css"] {
+    @include center(rem(800px));
+    @include mainFont(400);
+    font-size: rem(17px);
+    line-height: rem(30px);
+    letter-spacing: 0.05rem;
+    padding: 0 rem(20px);
+    margin: 0 auto rem(20px);
+
+    @include media(">=sm") {
+      font-size: rem(20px);
+      line-height: rem(40px);
+      margin: 0 auto rem(29px);
+      padding: 0;
+    }
+  }
+
+  h1.post-title {
+    margin: 0 auto;
+    line-height: rem(40px);
+    @include media(">=sm") {
+      line-height: rem(60px);
+      margin: 0 auto rem(10px);
+    }
+  }
+
+  p.post-subtitle {
+    color: darken($lightGray, 30%);
+    font-size: rem(17px);
+    margin: 0 auto rem(10px);
+    line-height: rem(30px);
+
+    @include media(">=sm") {
+      font-size: rem(20px);
+      line-height: rem(40px);
+    }
+  }
+
+  img.post-cover {
+    margin-bottom: rem(20px);
+    @include media(">=sm") {
+      margin-bottom: rem(29px);
+    }
+  }
+
+  p.post-info {
+    @include mainFont(300);
+    font-size: rem(13px);
+    letter-spacing: 0;
+    color: darken($lightGray, 30%);
+    margin: 0 auto;
+
+    @include media(">=sm") {
+      font-size: rem(16px);
+    }
+
+    span,
+    time {
+      vertical-align: middle;
+    }
+
+    time {
+      margin-right: rem(10px);
+
+      @include media(">=sm") {
+        margin-right: rem(30px);
+      }
+    }
+
+    svg {
+      width: rem(15px);
+      height: rem(15px);
+      fill: darken($lightGray, 30%);
+      vertical-align: middle;
+      margin-right: rem(5px);
+    }
+  }
+
+  li {
+    padding: rem(10px) 0;
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  p,
+  li {
+    color: $texts;
+    code {
+      font-size: rem(15px);
+      color: #bf616a;
+      word-wrap: break-word;
+      background: $lightGray;
+      padding: rem(3px) rem(5px);
+      border-radius: 3px;
+      @include media(">=sm") {
+        font-size: rem(17px);
+      }
+    }
+  }
+
+  a {
+    color: #0000ee;
+    text-decoration: none;
+  }
+
+  iframe {
+    margin-top: rem(30px);
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include mainFont(700);
+  }
+
+  h1 {
+    font-size: rem(32px);
+    line-height: 1.4;
+
+    @include media(">=sm") {
+      font-size: rem(47px);
+    }
+  }
+
+  h2 {
+    font-size: rem(24px);
+    line-height: 1.4;
+    @include media(">=sm") {
+      font-size: rem(37px);
+    }
+  }
+
+  h3 {
+    font-size: rem(20px);
+    line-height: 1.4;
+    @include media(">=sm") {
+      font-size: rem(27px);
+    }
+  }
+
+  ul,
+  ol {
+    padding-left: rem(40px);
+  }
+
+  ul.post-list {
+    padding: 0;
+
+    @include media("<sm") {
+      padding: 0 rem(20px);
+    }
+  }
+
+  blockquote {
+    @include center(rem(730px));
+    border-left: rem(5px) solid $texts;
+    padding: 0 rem(10px);
+    margin: rem(30px) auto;
+    width: 90%;
+
+    @include media(">=sm") {
+      width: 100%;
+      margin: rem(50px) auto;
+      padding: 0 rem(30px);
+    }
+
+    p {
+      font-size: rem(17px);
+      color: rgba(0, 0, 0, 0.6);
+      margin: 0;
+      
+      @include media(">=sm") {
+        font-size: rem(20px);
+      }
+    }
+  }
+
+  hr {
+    @include center(rem(760px));
+    border: 1px solid $lightGray;
+    margin: 50px auto;
+  }
+
+  hr.page-divider {
+    @include center(rem(760px));
+    border: 0;
+    margin: 50px auto;
+    position: relative;
+    height: rem(54px);
+
+    &:after {
+      display: block;
+      content: "Page divider";
+      padding: rem(5px) rem(10px);
+      border: 2px solid $themeColor;
+      border-radius: rem(5px);
+      font-size: rem(14px);
+      font-weight: bold;
+      color: $themeColor;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  pre {
+    overflow-x: auto;
+    position: relative;
+
+    &:before {
+      display: inline-block;
+      content: "In the website, the code will be highlighted.";
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 rem(15px);
+      @include mainFont(400);
+      font-size: rem(14px);
+      background-color: $themeColor;
+      color: #fff;
+    }
+  }
+
+  table {
+    @include mainFont(400);
+    font-size: rem(17px);
+    line-height: rem(35px);
+    letter-spacing: 0.05rem;
+    margin: rem(50px) auto;
+
+    @include media(">=sm") {
+      font-size: rem(20px);
+    }
+
+    th,
+    td {
+      border: rem(1px) solid #ccc;
+      padding: rem(5px) rem(10px);
+
+      @include media(">=sm") {
+        border: rem(2px) solid #ccc;
+        padding: rem(10px) rem(20px);
+      }
+    }
+  }
+
+  td > pre {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// Helpers
+
+.img-rounded {
+  border-radius: 50%;
+}

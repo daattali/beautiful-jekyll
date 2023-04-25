@@ -1,0 +1,15 @@
+---
+---
+[
+  {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
+  {% assign date_format = site.date_format | default: "%m/%d/%Y" %}
+  {% for post in posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "tags"     : "{{ post.tags | array_to_sentence_string }}",
+      "categories" : "{{ post.category }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | date: date_format }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

@@ -1,0 +1,34 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for page in site.pages %}
+        <url>
+            <loc>{{ page.url | prepend: site.baseurl | prepend: site.url }}</loc>
+            {% if page.layout == 'main' %}
+                <changefreq>weekly</changefreq>
+                <priority>1</priority>
+                <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+            {% else %}
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            {% endif %}
+        </url>
+    {% endfor %}
+    {% for post in site.posts %}
+        <url>
+            <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+        </url>
+    {% endfor %}
+    {% for author in site.authors %}
+        <url>
+            <loc>{{ author.url | prepend: site.baseurl | prepend: site.url }}</loc>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+    {% endfor %}
+</urlset>

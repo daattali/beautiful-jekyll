@@ -1,0 +1,9 @@
+{% assign words = content | number_of_words %}
+
+{% if words < 360 %}
+  {% assign totalMinutes = 1 %}
+{% else %}
+  {% assign totalMinutes = words | divided_by:180 %}
+{% endif %}
+
+{% assign minutesText = totalMinutes | append: ' min to read' %}

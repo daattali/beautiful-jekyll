@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<style type="text/css" media="screen">
+  .container {
+    margin: 0px auto;
+    max-width: 600px;
+    text-align: center;
+    padding-top: 60px;
+  }
+</style>
+
+<div class="container">
+  <img src="/assets/img/404.gif" width="100%" alt="{{ site.translations.error_404.image_alt | default: '404 - Page not found' }}">
+  <p><strong>{{ site.translations.error_404.title | default: "Page not found :(" }}</strong></p>
+  <p>{{ site.translations.error_404.message | default: "I'm sorry. We couldn't find the page you are looking for." }}</p>
+</div>

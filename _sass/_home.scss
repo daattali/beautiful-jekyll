@@ -1,0 +1,221 @@
+.home {
+  @include mainFont(400);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: rem(80px);
+
+  @include media(">=sm") {
+    padding-top: rem(100px);
+  }
+
+  &.no-padding {
+    padding-top: 0;
+  }
+}
+
+.row {
+  @include center(100%);
+  margin: 0px rem($rowMargin);
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.title-category {
+  font-size: rem(32px);
+  margin: 0 0 rem(40px);
+  padding: 0 rem(23px);
+  text-transform: lowercase;
+  color: #fff;
+}
+
+.box-item {
+  flex: 1 0 $itemMinWidth;
+  margin: 0 0 rem(30px);
+  display: inline-block;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+
+  @include media(">=sm") {
+    margin: 0 rem($itemMargin) rem(30px);
+  }
+
+  // Note 1: This complex calc right here is what makes the leftover box items
+  // have the same width than their siblings.
+  
+  @for $n from 2 through $maxItemsPerRow {
+    $resolution: (2 * $rowMargin) + ($n * $itemMinWidth);
+    @include media(">=#{$resolution}") {
+      max-width: calc(100%/#{$n} - #{$itemMargin * 2});
+    }
+  }
+
+  // Note 2: This sets the maximum number of box items per row.
+  @include media(">=#{(2 * $rowMargin) + ($maxItemsPerRow * $itemMinWidth)}") {
+    flex: 1 0 calc(100%/#{$maxItemsPerRow} - #{$itemMargin * 2});
+  }
+
+  &:hover {
+    z-index: 2;
+    transform: scale(1.1);
+
+    img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transform: scale(1.05);
+    }
+
+    .box-body {
+      time,
+      p {
+        color: $accentDark;
+      }
+
+      .cover {
+        .new-post-tag {
+          background-color: #000;
+        }
+
+        .read-icon {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+  }
+
+  .category {
+    display: block;
+    height: rem(36px);
+    line-height: rem(36px);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: rem(18px);
+    padding: 0 rem(15px);
+
+    a {
+      color: $accentDark;
+    }
+  }
+
+  .box-body {
+    img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      transition: all 0.2s ease-in-out;
+    }
+
+    time {
+      font-weight: 300;
+      font-size: rem(16px);
+      color: darken($lightGray, 50%);
+      pointer-events: none;
+    }
+
+    h2 {
+      margin: rem(10px) 0;
+      font-size: rem(24px);
+      @include mainFont(800);
+      color: $accentDark;
+      line-height: rem(30px);
+    }
+
+    p {
+      margin: 0 0 rem(30px);
+      color: darken($lightGray, 20%);
+      font-size: rem(17px);
+      line-height: rem(26px);
+    }
+
+    .tags a {
+      height: rem(30px);
+      line-height: rem(26px);
+      color: $accentDark;
+      padding: 0 rem(10px);
+      border: 1px solid $accentDark;
+      border-radius: 15px;
+      display: inline-block;
+      margin: 0 rem(10px) rem(10px) 0;
+      z-index: 50;
+
+      &:hover {
+        color: $primaryDark;
+        background: $accentDark;
+        border-color: $accentDark;
+      }
+    }
+
+    .cover {
+      position: relative;
+      display: block;
+
+      .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        color: $themeColor;
+        z-index: 1;
+      }
+
+      img {
+        position: relative;
+        z-index: 2;
+      }
+
+      .new-post-tag {
+        text-transform: uppercase;
+        display: inline-block;
+        background: $themeColor;
+        color: #fff;
+        font-size: rem(13px);
+        font-weight: 700;
+        line-height: rem(24px);
+        padding: 0 rem(8px);
+        position: absolute;
+        bottom: rem(8px);
+        left: 0;
+        z-index: 3;
+      }
+
+      .read-icon {
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: "";
+        width: rem(80px);
+        height: rem(80px);
+        border-radius: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: rem(-40px);
+        margin-left: rem(-40px);
+        border: 2px solid #fff;
+        color: $themeColor;
+        z-index: 4;
+
+        svg {
+          width: rem(48px);
+        }
+      }
+    }
+  }
+
+  .box-info {
+    padding: rem(15px);
+  }
+}

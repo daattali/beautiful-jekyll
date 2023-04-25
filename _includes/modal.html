@@ -1,0 +1,35 @@
+<div class="modal{% if include.showOnExit %} exit{% endif %}{% if include.closed %} closed{% endif %}">
+    <div class="window">
+        <svg class="close">
+            <use xlink:href="#icon-close"></use>
+        </svg>
+        <div class="header">
+            <h2>{{ include.title }}</h2>
+            <p>{{ include.subtitle }}</p>
+        </div>
+        <div class="content">
+            <ul>
+                {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
+                {% assign shuffled_array = next_posts | shuffle %}
+                {% for post in shuffled_array limit:2 %}
+                    <li>
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            <figure>
+                                {% if post.optimized_image %}
+                                    <img src="{{ post.optimized_image }}">
+                                {% elsif post.image %}
+                                    <img src="{{ post.image }}">
+                                {% else %}
+                                    <img src="/assets/img/off.jpg">
+                                {% endif %}
+                            </figure>
+                            <h3>{{ post.title }}</h3>
+                            <p>{{ post.description }}</p>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="mask"></div>
+</div>

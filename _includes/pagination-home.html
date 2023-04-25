@@ -1,0 +1,14 @@
+<!-- Pagination links -->
+<div class="pagination pagination-home">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous" onclick="ga('send', 'event', 'pagination', 'click', 'page previous')">
+            <svg><use xlink:href="#icon-arrow-right"></use></svg>
+        </a>
+    {% endif %}
+    <span class="page_number ">{{ site.translations.pagination.page | default: "Page" }} {{ paginator.page }} {{ site.translations.pagination.of | default: "of" }} {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next" onclick="ga('send', 'event', 'pagination', 'click', 'page next')">
+            <svg><use xlink:href="#icon-arrow-right"></use></svg>
+        </a>
+    {% endif %}
+</div>

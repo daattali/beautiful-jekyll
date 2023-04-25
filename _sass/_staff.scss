@@ -1,0 +1,38 @@
+.staff {
+  @include media(">=sm") {
+    @include center(rem(800px));
+  }
+
+  .item:not(:last-child) {
+    border-bottom: 1px solid $lightGray;
+  }
+
+  img {
+    width: rem(150px);
+    margin: 0 rem(20px) rem(20px);
+
+    @include media(">=sm") {
+      width: rem(200px);
+      margin-bottom: rem(30px);
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-bottom: rem(10px);
+
+    &.name {
+      padding-top: rem(10px);
+    }
+
+    &.position {
+      font-size: rem(19px);
+      font-weight: normal;
+      font-style: italic;
+      color: #999;
+      padding-top: 0;
+      margin-bottom: rem(20px);
+    }
+  }
+}

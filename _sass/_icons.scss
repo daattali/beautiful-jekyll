@@ -1,0 +1,45 @@
+.icons-home {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding: rem(15px);
+    margin: rem(2px);
+    border-radius: 50%;
+    border: rem(2px) solid $accentDark;
+    line-height: 0;
+    transition: all 0.7s;
+
+    .icon {
+      fill: $accentDark;
+      @include size(18, 18);
+
+      @include media(">=sm") {
+        @include size();
+      }
+    }
+
+    &:hover {
+      background: $accentDark;
+
+      .icon {
+        fill: $texts;
+      }
+    }
+  }
+}
+
+.down {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  .icon {
+    @include align(both);
+    @include size(100, 100);
+    fill: $accentDark;
+    animation: pulse 1.3s infinite;
+  }
+}

@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+</head>
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+
+  <!-- Include the script that allows Netlify CMS login -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <!-- Register Color widget -->
+  <!-- https://github.com/ekoeryanto/netlify-cms-widgets/tree/master/widgets/color -->
+  <script src="../assets/js/react.min.js"></script>
+  <script src="../assets/js/widgets/color/react-color.min.js"></script>
+  <script src="../assets/js/widgets/color/color.min.js"></script>
+  <script>
+    CMS.registerWidget('color', NetlifyCMSWidgetColor.Control);
+  </script>
+
+  <!-- Register Page component -->
+  <script>
+    CMS.registerEditorComponent({
+      // Internal id of the component
+      id: "page",
+      // Visible label
+      label: "Page",
+      // Fields the user need to fill out when adding an instance of the component
+      fields: [],
+      // Pattern to identify a block as being an instance of this component
+      pattern: /^--page-break--$/,
+      // Function to extract data elements from the regexp match
+      fromBlock: function() {
+        return;
+      },
+      // Function to create a text block from an instance of this component
+      toBlock: function() {
+        return '--page-break--';
+      },
+      // Preview output for this component. Can either be a string or a React component
+      // (component gives better render performance)
+      toPreview: function(obj) {
+        return (
+          '<hr class="page-divider">'
+        );
+      }
+    });
+  </script>
+
+  <!-- Register Figure component -->
+  <script>
+    CMS.registerEditorComponent({
+      // Internal id of the component
+      id: "figure",
+      // Visible label
+      label: "Figure",
+      // Fields the user need to fill out when adding an instance of the component
+      fields: [
+        { name: 'image', label: 'Image', widget: 'image', allow_multiple: false },
+        { name: 'alt', label: 'Alternative Text', widget: 'string', required: false, hint: "Used for accessibility." },
+        { name: 'classes', label: 'Classes', widget: 'string', required: false, hint: 'Add styles to image.'},
+        { name: 'width', label: 'Width', widget: 'number', valueType: 'int', required: false },
+        { name: 'height', label: 'Height', widget: 'number', valueType: 'int', required: false },
+        { name: 'caption', label: 'Caption', widget: 'string', required: false },
+      ],
+      // Pattern to identify a block as being an instance of this component
+      pattern: /{%\s*figure\s*{\s*"image"\s*:\s*"(.*?)"\s*,?\s*(?:"alt"\s*:\s*"(.*?)")?\s*,?\s*(?:"classes"\s*:\s*"(.*?)")?\s*,?\s*(?:"width"\s*:\s*"([0-9]*)")?\s*,?\s*(?:"height"\s*:\s*"([0-9]*)")?\s*,?\s*(?:"caption"\s*:\s*"(.*?)")?\s*}\s*%}/,
+      // Function to extract data elements from the regexp match
+      fromBlock: function (match) {
+        return {
+           image: match[1] || '',
+           alt: match[2] || '',
+           classes: match[3] || '',
+           width: match[4] || '',
+           height: match[5] || '',
+           caption: match[6] || '',
+        };
+      },
+      // Function to create a text block from an instance of this component
+      toBlock: function (obj) {
+        if (obj.image) {
+          var image =  obj.image ? '"image": "' + obj.image + '"' : '';
+          var alt =  obj.alt ? ', "alt": "' + obj.alt + '"' : '';
+          var classes =  obj.classes ? ', "classes": "' + obj.classes + '"' : '';
+          var width = obj.width ? ', "width": "' + obj.width + '"' : '';
+          var height = obj.height ? ', "height": "' + obj.height + '"' : '';
+          var caption = obj.caption ? ', "caption": "' + obj.caption + '"' : '';
+          return '{% figure {' + image + alt + classes + width + height + caption + '} %}';
+        }
+        return '';
+      },
+      // Preview output for this component. Can either be a string or a React component
+      // (component gives better render performance)
+      toPreview: function (obj) {
+        var src = obj.image ? ' src="' + obj.image + '"' : '';
+        var alt = obj.alt ? ' alt="' + obj.alt + '"' : '';
+        var classes = obj.classes ? ' class="' + obj.classes + '"' : '';
+        var width = obj.width ? ' width="' + obj.width + '"' : '';
+        var height = obj.height ? ' height="' + obj.height + '"' : '';
+        var caption = obj.caption ? '<figcaption>' + obj.caption + '</figcaption>' : '';
+        return (
+          '<figure><img' + src + alt + classes + width + height + '>' + caption + '</figure>'
+        );
+      }
+    });
+  </script>
+
+  <!-- Register Figure Url component -->
+  <script>
+    CMS.registerEditorComponent({
+      // Internal id of the component
+      id: "figureUrl",
+      // Visible label
+      label: "Figure URL",
+      // Fields the user need to fill out when adding an instance of the component
+      fields: [
+        { name: 'image', label: 'Image URL', widget: 'string'},
+        { name: 'alt', label: 'Alternative Text', widget: 'string', required: false, hint: "Used for accessibility." },
+        { name: 'classes', label: 'Classes', widget: 'string', required: false, hint: 'Add styles to image.'},
+        { name: 'width', label: 'Width', widget: 'number', valueType: 'int', required: false },
+        { name: 'height', label: 'Height', widget: 'number', valueType: 'int', required: false },
+        { name: 'caption', label: 'Caption', widget: 'string', required: false },
+      ],
+      // Pattern to identify a block as being an instance of this component
+      pattern: /{%\s*figure_url\s*{\s*"image"\s*:\s*"(.*?)"\s*,?\s*(?:"alt"\s*:\s*"(.*?)")?\s*,?\s*(?:"classes"\s*:\s*"(.*?)")?\s*,?\s*(?:"width"\s*:\s*"([0-9]*)")?\s*,?\s*(?:"height"\s*:\s*"([0-9]*)")?\s*,?\s*(?:"caption"\s*:\s*"(.*?)")?\s*}\s*%}/,
+      // Function to extract data elements from the regexp match
+      fromBlock: function (match) {
+        return {
+           image: match[1] || '',
+           alt: match[2] || '',
+           classes: match[3] || '',
+           width: match[4] || '',
+           height: match[5] || '',
+           caption: match[6] || '',
+        };
+      },
+      // Function to create a text block from an instance of this component
+      toBlock: function (obj) {
+        if (obj.image) {
+          var image =  obj.image ? '"image": "' + obj.image + '"' : '';
+          var alt =  obj.alt ? ', "alt": "' + obj.alt + '"' : '';
+          var classes =  obj.classes ? ', "classes": "' + obj.classes + '"' : '';
+          var width = obj.width ? ', "width": "' + obj.width + '"' : '';
+          var height = obj.height ? ', "height": "' + obj.height + '"' : '';
+          var caption = obj.caption ? ', "caption": "' + obj.caption + '"' : '';
+          return '{% figure_url {' + image + alt + classes + width + height + caption + '} %}';
+        }
+        return '';
+      },
+      // Preview output for this component. Can either be a string or a React component
+      // (component gives better render performance)
+      toPreview: function (obj) {
+        var src = obj.image ? ' src="' + obj.image + '"' : '';
+        var alt = obj.alt ? ' alt="' + obj.alt + '"' : '';
+        var classes = obj.classes ? ' class="' + obj.classes + '"' : '';
+        var width = obj.width ? ' width="' + obj.width + '"' : '';
+        var height = obj.height ? ' height="' + obj.height + '"' : '';
+        var caption = obj.caption ? '<figcaption>' + obj.caption + '</figcaption>' : '';
+        return (
+          '<figure><img' + src + alt + classes + width + height + '>' + caption + '</figure>'
+        );
+      }
+    });
+  </script>
+
+  <!-- Include preview styles -->
+  <script>
+    CMS.registerPreviewStyle("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700");
+    CMS.registerPreviewStyle("/assets/css/preview.css");
+  </script>
+
+  <!-- Register the Post preview component -->
+  <script>
+    var PostPreview = createClass({
+      render: function() {
+
+        function formatDate(rawDate) {
+          var date = rawDate;
+
+          if (typeof date === 'string') {
+            date = new Date(date);
+          }
+
+          if (date) {
+            var months = 'January,February,Mark,April,May,June,July,August,September,October,November,December'.split(',');
+            var monthNumber = date.getMonth();
+            return months[monthNumber] + ' ' + date.getDate() + ', ' + date.getFullYear();
+          }
+        }
+
+        // Entry
+        var entry = this.props.entry;
+
+        // Elements
+        var elements = [];
+
+        // Paginate
+        var paginate = entry.getIn(['data', 'paginate']);
+
+        // Post Info
+        var postInfo = h('p', {'className': 'post-info'}, [
+                        h('svg', {}, [
+                          h('use', {'xlinkHref': '/assets/img/preview-sprite.svg#icon-calendar'})
+                        ]),
+                        h('time', {'className': 'date'}, formatDate(entry.getIn(['data', 'date'])))
+                      ]);
+        elements.push(postInfo);
+
+        // Post Title
+        var postTitle = h('h1', {'className': 'post-title'}, entry.getIn(['data', 'title']));
+        elements.push(postTitle);
+
+        // Post Subtitle
+        var postSubtitle = h('p', {'className': 'post-subtitle'}, entry.getIn(['data', 'subtitle']));
+        elements.push(postSubtitle);
+
+        // Featured Image
+        if (!paginate) {
+          var image = entry.getIn(['data', 'image']);
+          var bg = this.props.getAsset(image);
+          var featuredImage = h('img', {'className': 'post-cover', 'src': bg.toString()});
+          elements.push(featuredImage);
+        }
+
+        // Space
+        if (paginate) {
+          var space = h('br', {});
+          elements.push(space);
+        }
+
+        // Body
+        var body = h('div', {'className': 'text'}, this.props.widgetFor('body'));
+        elements.push(body);
+
+        return h('div', {}, elements);
+      }
+    });
+
+    CMS.registerPreviewTemplate('posts', PostPreview);
+  </script>
+
+  <!-- Register the Page preview component -->
+  <script>
+    var PagePreview = createClass({
+      render: function() {
+
+        // Entry
+        var entry = this.props.entry;
+
+        // Elements
+        var elements = [];
+
+        // Body
+        var body = h('div', {'className': 'text'}, this.props.widgetFor('body'));
+        elements.push(body);
+
+        return h('div', {}, elements);
+      }
+    });
+
+    CMS.registerPreviewTemplate('pages', PagePreview);
+  </script>
+
+  <!-- Register Image component -->
+  <!-- It's not possible to create this element just yet. There are two things needed in order to do so: -->
+  <!-- 1) Jekyll needs to update kramdown version up to 2.1.0, so we can use the :standlone feature with <figure></figure> -->
+  <!-- See: https://github.com/gettalong/kramdown/issues/48#issuecomment-455851003 -->
+  <!-- 2) However, it may not be possible, once Netlify CMS parses using Remark before parse using kramdown -->
+  <!-- See: https://github.com/netlify/netlify-cms/issues/1464#issuecomment-400470173 -->
+  <!-- Solution for now: -->
+  <!-- Keep using <img width="X" height="Y"> with <em></em> for caption -->
+  <script>
+    // CMS.registerEditorComponent({
+    //   // Internal id of the component
+    //   id: "image",
+    //   // Visible label
+    //   label: "Image",
+    //   // Fields the user need to fill out when adding an instance of the component
+    //   fields: [
+    //     { name: 'image', label: 'Image', widget: 'image', allow_multiple: false },
+    //     { name: 'alt', label: 'Alternative Text', widget: 'string', required: false, hint: "Used for accessibility." },
+    //     { name: 'title', label: 'Title', widget: 'string', required: false, hint: "Shown on hover." },
+    //     { name: 'width', label: 'Width', widget: 'number', valueType: 'int', required: false },
+    //     { name: 'height', label: 'Height', widget: 'number', valueType: 'int', required: false },
+    //     { name: 'classes', label: 'Classes', widget: 'string', required: false },
+    //   ],
+    //   // Pattern to identify a block as being an instance of this component
+    //   pattern: /^!\[(.*?)\]\((.*?)\s*(?:\"(.*?)\")?\)(?:{:\s*(?:width="([0-9]*)")?\s*(?:height="([0-9]*)?")?\s*(?:class="(.*?)")?})?$/,
+    //   //image "(.*?)"(\s+alt="(.*?)")?(\s+caption="(.*?)")?(\s+([0-9]+)w)?(\s+([0-9]+)h)?
+    //   //image "(.*?)"(\s+alt="(.*?)")?(\s+classes="(.*?)")?(\s+caption="(.*?)")?(\s+([0-9]+)w)?(\s+([0-9]+)h)?
+    //   //<figure>\s*<img\s*src="(\S*)"\s*(?:alt="(.*?)")?\s*(?:class="(.*?)")?\s*(?:width="([0-9]*)")?\s*(?:height="([0-9]*)")?>\s*(?:<figcaption>(.*?)<\/figcaption>)?\s*<\/figure>
+    //   // Function to extract data elements from the regexp match
+    //   fromBlock: function (match) {
+    //     return {
+    //       alt: match[1] || '',
+    //       image: match[2] || '',
+    //       title: match[3] || '',
+    //       width: match[4] || '',
+    //       height: match[5] || '',
+    //       classes: match[6] || ''
+    //     };
+    //   },
+    //   // Function to create a text block from an instance of this component
+    //   toBlock: function (obj) {
+    //     var alt = obj.alt ? obj.alt : '';
+    //     var src = obj.image ? obj.image : '';
+    //     var title = obj.title ? ' "' + obj.title + '"' : '';
+    //     var width = obj.width ? ' width="' + obj.width + '"' : '';
+    //     var height = obj.height ? ' height="' + obj.height + '"' : '';
+    //     var classes = obj.classes ? ' class="' + obj.classes + '"' : '';
+    //     return '![' + alt + '](' + src + title + '){:' + width + height + classes + '}';
+    //   },
+    //   // Preview output for this component. Can either be a string or a React component
+    //   // (component gives better render performance)
+    //   toPreview: function (obj) {
+    //     var src = obj.image ? ' src="' + obj.image + '"' : '';
+    //     var alt = obj.alt ? ' alt="' + obj.alt + '"' : '';
+    //     var title = obj.title ? ' title="' + obj.title + '"' : '';
+    //     var classes = obj.classes ? ' class="' + obj.classes + '"' : '';
+    //     var width = obj.width ? ' width="' + obj.width + '"' : '';
+    //     var height = obj.height ? ' height="' + obj.height + '"' : '';
+    //     return (
+    //       '<img' + src + alt + title + classes + width + height + '>'
+    //     );
+    //   }
+    // });
+  </script>
+</body>
+</html>

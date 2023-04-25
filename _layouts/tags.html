@@ -1,0 +1,38 @@
+---
+layout: minimal
+---
+
+{% assign date_format = site.date_format | default: "%m/%d/%Y" %}
+
+<div class="tags">
+  {% assign tags_list = site.tags %}
+    {% if tags_list.first[0] == null %}
+      {% for tag in tags_list %}
+          <a href="#{{ tag | slugify }}">#{{ tag }}</a>
+      {% endfor %}
+    {% else %}
+      {% for tag in tags_list %}
+          <a href="#{{ tag[0] | slugify }}">#{{ tag[0] }}</a>
+      {% endfor %}
+    {% endif %}
+  {% assign tags_list = nil %}
+</div>
+
+{% for tag in site.tags  %}
+  <a class="post-anchor" id="{{ tag[0] | slugify }}"></a>
+  <div class="tag-title">
+    <span>#{{ tag[0] }}</span>
+  </div>
+  <ul class="post-list">
+      {% assign pages_list = tag[1] %}
+      {% for post in pages_list reversed %}
+          {% if post.title != null and post.is_generated != true %}
+            {% if group == null or group == post.group %}
+              <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time></a></li>
+            {% endif %}
+          {% endif %}
+      {% endfor %}
+      {% assign pages_list = nil %}
+      {% assign group = nil %}
+  </ul>
+{% endfor %}

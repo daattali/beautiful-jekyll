@@ -1,0 +1,91 @@
+.author {
+  background: $lightGray;
+  display: table;
+  width: 100%;
+  padding: rem(40px) 0;
+  margin: rem(40px) 0;
+
+  @include media(">=sm") {
+    padding: rem(50px) 0;
+  }
+
+  .details {
+    margin: auto;
+    max-width: rem(800px);
+    padding: 0 rem(20px);
+
+    @include media("<sm") {
+      text-align: center;
+    }
+  }
+
+  svg {
+    @include size(25, 25);
+    margin-right: rem(10px);
+  }
+
+  a {
+    fill: darken($lightGray, 30%);
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+      fill: $themeColor;
+    }
+  }
+
+  img {
+    width: rem(150px);
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+
+    @include media(">=sm") {
+      width: rem(180px);
+      float: left;
+      margin-right: 3.125rem;
+    }
+  }
+
+  .def {
+    color: gray;
+    font-size: rem(18px);
+    @include mainFont(300);
+    margin: rem(10px);
+
+    @include media(">=sm") {
+      margin: 0;
+    }
+  }
+
+  .name {
+    margin: 0;
+
+    a {
+      @include mainFont();
+      text-decoration: none;
+      color: black;
+      font-size: rem(30px);
+
+      @include media(">=sm") {
+        font-size: rem(45px);
+      }
+
+      &:hover {
+        color: $texts;
+      }
+    }
+  }
+
+  .desc {
+    @include mainFont(300);
+    margin: rem(10px);
+    font-size: rem(16px);
+    line-height: rem(25px);
+
+    @include media(">=sm") {
+      font-size: rem(18px);
+    }
+  }
+}

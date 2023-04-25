@@ -1,0 +1,65 @@
+.flex-grid article {
+  opacity: 0;
+}
+
+.flex-grid article.shown {
+  opacity: 1;
+}
+
+.flex-grid article.animate {
+  animation: moveUp 0.65s;
+  opacity: 1;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  2%,
+  18% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  4%,
+  16% {
+    transform: translate3d(2px, 0, 0);
+  }
+  6%,
+  10%,
+  14% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  8%,
+  12% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes zoomIn {
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

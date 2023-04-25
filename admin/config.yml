@@ -1,0 +1,515 @@
+backend:
+  name: git-gateway
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "assets/img/uploads"
+collections:
+  - label: "Categories"
+    name: "categories"
+    folder: "category"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    preview_path: "category/{{slug}}"
+    extension: "md"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "category"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "hidden"
+        default: "{{slug}}"
+      - label: "Description"
+        name: "description"
+        widget: "string"
+        required: false
+  - label: "Posts"
+    name: "posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{title}}"
+    extension: "md"
+    fields:
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss"
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "post"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Subtitle"
+        name: "subtitle"
+        widget: "string"
+        required: false
+      - label: "Description"
+        name: "description"
+        hint: "This will be used across the pages and for search engines."
+        widget: "string"
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+        allow_multiple: false
+        required: false
+      - label: "Optimized Image"
+        name: "optimized_image"
+        widget: "image"
+        allow_multiple: false
+        required: false
+        hint: "You can set an optimized image version to show on the home page"
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "categories"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+      - label: "Tags"
+        name: "tags"
+        hint: "Separate with commas. These will also be used as keywords for search engines."
+        widget: "list"
+      - label: "Author"
+        name: "author"
+        widget: "relation"
+        collection: "authors"
+        displayFields: [display_name]
+        searchFields: [display_name]
+        valueField: "name"
+      - label: "Paginate"
+        name: "paginate"
+        widget: "boolean"
+        default: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+  - label: "Pages"
+    name: "pages"
+    folder: "pages"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    extension: "md"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "page"
+      - label: "Show in menu"
+        name: "menu"
+        widget: "boolean"
+        default: true
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Permalink"
+        name: "permalink"
+        widget: "hidden"
+        default: "/{{slug}}/"
+      - label: "Description"
+        name: "description"
+        hint: "This will be used as description for search engines."
+        widget: "string"
+        required: false
+      - label: "Keywords"
+        name: "tags"
+        hint: "Separate with commas. These will also be used as keywords for search engines."
+        widget: "list"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+  - label: "Authors"
+    name: "authors"
+    folder: "_authors/"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "author"
+      - label: "Photo"
+        name: "photo"
+        widget: "image"
+        required: false
+        hint: "Use a square picture"
+      - label: "Short Name"
+        name: "name"
+        widget: "string"
+      - label: "Diplay Name"
+        name: "display_name"
+        widget: "string"
+      - label: "Position"
+        name: "position"
+        widget: "string"
+        required: false
+      - label: "Bio"
+        name: "bio"
+        widget: "text"
+      - label: "GitHub Username"
+        name: "github_username"
+        widget: "string"
+        required: false
+      - label: "Facebook Username"
+        name: "facebook_username"
+        widget: "string"
+        required: false
+      - label: "Twitter Username"
+        name: "twitter_username"
+        widget: "string"
+        required: false
+      - label: "Instagram Username"
+        name: "instagram_username"
+        widget: "string"
+        required: false
+      - label: "LinkedIn Username"
+        name: "linkedin_username"
+        widget: "string"
+        required: false
+      - label: "Medium Username"
+        name: "medium_username"
+        widget: "string"
+        required: false
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    delete: false
+    files:
+      - label: "Site"
+        name: "site"
+        file: "src/yml/site.yml"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: "string"
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Description"
+            name: "description"
+            widget: "string"
+            hint: "This will be used as description for search engines."
+          - label: "Keywords"
+            name: "tags"
+            hint: "Separate with commas. These will also be used as keywords for search engines."
+            widget: "list"
+            required: false
+          - label: "Show Hero"
+            name: "show_hero"
+            widget: "boolean"
+            default: true
+          - label: "Posts per page"
+            name: "paginate"
+            widget: "number"
+            valueType: "int"
+            required: false
+            hint: "Leave it blank if you don't want pagination"
+          - label: "Menu"
+            name: "menu"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                hint: "Text that will show up in the menu"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+                hint: "Ex: /contact"
+          - label: "E-mail"
+            name: "email"
+            widget: "string"
+            hint: "Leave it blank if you don't want a contact page"
+            required: false
+          - label: "Disqus Username"
+            name: "disqus_username"
+            widget: "string"
+            hint: "Leave it blank if you don't want comments in posts"
+            required: false
+      - label: "Social"
+        name: "social"
+        file: "src/yml/social.yml"
+        fields:
+          - label: "GitHub Username"
+            name: "github_username"
+            widget: "string"
+            required: false
+          - label: "Facebook Username"
+            name: "facebook_username"
+            widget: "string"
+            required: false
+          - label: "Twitter Username"
+            name: "twitter_username"
+            widget: "string"
+            required: false
+          - label: "Instagram Username"
+            name: "instagram_username"
+            widget: "string"
+            required: false
+          - label: "LinkedIn Username"
+            name: "linkedin_username"
+            widget: "string"
+            required: false
+          - label: "Medium Username"
+            name: "medium_username"
+            widget: "string"
+            required: false
+      - label: "Theme"
+        name: "theme"
+        file: "src/yml/theme.yml"
+        fields:
+          - label: "Theme Color"
+            name: "themeColor"
+            widget: "color"
+            default: "#ff0a16"
+          - label: "Primary Dark Color"
+            name: "primaryDark"
+            widget: "color"
+            default: "#141414"
+          - label: "Accent Dark Color"
+            name: "accentDark"
+            default: "#ffffff"
+            widget: "color"
+          - label: "Light Gray Color"
+            name: "lightGray"
+            widget: "color"
+            default: "#f2f2f2"
+          - label: "Texts Color"
+            name: "texts"
+            widget: "color"
+            default: "#333333"
+      - label: "Posts"
+        name: "posts"
+        file: "src/yml/posts.yml"
+        fields:
+          - label: "Show time bar in posts"
+            name: "show_time_bar"
+            widget: "boolean"
+            default: true
+          - label: "Show modal on exit"
+            name: "show_modal_on_exit"
+            widget: "boolean"
+            default: false
+          - label: "Show modal on finish post"
+            name: "show_modal_on_finish_post"
+            widget: "boolean"
+            default: false
+          - label: "Two columns layout"
+            name: "two_columns_layout"
+            widget: "boolean"
+            default: true
+      - label: "Translations"
+        name: "translations"
+        file: "src/yml/translations.yml"
+        fields:
+          - label: "Texts"
+            name: "texts"
+            widget: "object"
+            fields:
+              - label: "New Post"
+                name: "new_post"
+                widget: "string"
+                required: false
+              - label: "See also"
+                name: "seel_also"
+                widget: "string"
+                required: false
+              - label: "Search"
+                name: "search"
+                widget: "string"
+                required: false
+              - label: "Share"
+                name: "share"
+                widget: "string"
+                required: false
+              - label: "Comments"
+                name: "comments"
+                widget: "string"
+                required: false
+          - label: "Buttons"
+            name: "button"
+            widget: "object"
+            fields:
+              - label: "Read Now"
+                name: "read_now"
+                widget: "string"
+                required: false
+              - label: "Share on Twitter"
+                name: "share_on_twitter"
+                widget: "string"
+                required: false
+              - label: "Share on Facebook"
+                name: "share_on_facebook"
+                widget: "string"
+                required: false
+          - label: "Pagination"
+            name: "pagination"
+            widget: "object"
+            fields:
+              - label: "Page"
+                name: "page"
+                widget: "string"
+                required: false
+              - label: "of"
+                name: "of"
+                widget: "string"
+                required: false
+              - label: "Next Page"
+                name: "next_page"
+                widget: "string"
+                required: false
+              - label: "Next Post"
+                name: "next_post"
+                widget: "string"
+                required: false
+          - label: "Recommendation"
+            name: "recommendation"
+            widget: "object"
+            fields:
+              - label: "Text"
+                name: "text"
+                widget: "string"
+                required: false
+              - label: "Go back to top"
+                name: "back_btn"
+                widget: "string"
+                required: false
+          - label: "Error 404"
+            name: "error_404"
+            widget: "object"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Message"
+                name: "message"
+                widget: "string"
+                required: false
+              - label: "Image Alt"
+                name: "image_alt"
+                widget: "string"
+                required: false
+          - label: "Contact Page"
+            name: "contact"
+            widget: "object"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Email Subject Title"
+                name: "subject"
+                widget: "string"
+                required: false
+              - label: "Submit Button Label"
+                name: "submit_btn"
+                widget: "string"
+                required: false
+              - label: "Fields Placeholder"
+                name: "placeholders"
+                widget: "object"
+                fields:
+                  - label: "Your Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Your Email"
+                    name: "email"
+                    widget: "string"
+                    required: false
+                  - label: "Your Message"
+                    name: "message"
+                    widget: "string"
+                    required: false
+              - label: "Fields Error"
+                name: "errors"
+                widget: "object"
+                fields:
+                  - label: "Locale"
+                    name: "locale"
+                    widget: "string"
+                    default: "en"
+                    hint: "Ex: en"
+                  - label: "Empty Name"
+                    name: "empty_name"
+                    widget: "string"
+                    hint: "Ex: Insert your name"
+                    required: false
+                  - label: "Empty Email"
+                    name: "empty_email"
+                    widget: "string"
+                    hint: "Ex: Insert your email"
+                    required: false
+                  - label: "Invalid Email"
+                    name: "invalid_email"
+                    widget: "string"
+                    hint: "Ex: Email is invalid"
+                    required: false
+                  - label: "Empty Message"
+                    name: "empty_message"
+                    widget: "string"
+                    hint: "Ex: Insert your message"
+                    required: false
+              - label: "Contact Feedback Page"
+                name: "after_send"
+                widget: "object"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    hint: "Ex: Message sent!"
+                    required: false
+                  - label: "Text"
+                    name: "message"
+                    widget: "string"
+                    hint: "Ex: Thank you for reaching us."
+                    required: false
+      - label: "Advanced"
+        name: "advanced"
+        file: "src/yml/advanced.yml"
+        fields:
+          - label: "Base URL"
+            name: "baseurl"
+            widget: "string"
+            hint: "The subpath of your site, e.g. /blog"
+          - label: "URL"
+            name: "url"
+            widget: "string"
+            hint: "The base hostname and protocol for your site, e.g. https://rossener.com"
+          - label: "Google Analytics ID"
+            name: "google_analytics"
+            widget: "string"
+            required: false
+          - label: "Language"
+            name: "language"
+            widget: "string"
+            hint: "Content language, ex: pt-BR, en, fr"
+          - label: "Categories folder"
+            name: "categories_folder"
+            widget: "string"
+            hint: "Folder where all the categories pages are. Ex: category"
+            required: false
+          - label: "Contact Feedback URL"
+            name: "sent_message_url"
+            hint: "URL where the user will be redirected for after submit the contact form. Ex: /contact/message-sent/"
+            required: false
+
+

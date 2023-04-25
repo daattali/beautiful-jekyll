@@ -1,4 +1,0 @@
----
-layout: ads
-title: ads
----
