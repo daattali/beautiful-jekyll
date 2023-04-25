@@ -40,50 +40,7 @@ Overall, while there are some potential disadvantages to using dependency inject
 
 Here is an example of using dependency injection in C# code:
 
-```c#
 
-// Define an interface for the dependency
-public interface IMessageService
-{
-    void SendMessage(string message);
-}
-
-// Define an implementation of the interface
-public class EmailService : IMessageService
-{
-    public void SendMessage(string message)
-    {
-        // Send an email with the message
-    }
-}
-
-// Define a class that depends on the interface
-public class MyController
-{
-    private readonly IMessageService _messageService;
-
-    public MyController(IMessageService messageService)
-    {
-        _messageService = messageService;
-    }
-
-    public void DoSomething()
-    {
-        // Use the message service to send a message
-        _messageService.SendMessage("Hello, world!");
-    }
-}
-
-// Set up dependency injection
-var serviceProvider = new ServiceCollection()
-    .AddSingleton<IMessageService, EmailService>()
-    .BuildServiceProvider();
-
-// Use the dependency in the controller
-var controller = serviceProvider.GetService<MyController>();
-controller.DoSomething();
-
-```
 
 In this example, we define an interface IMessageService that represents a dependency that our MyController class needs. We also define an implementation of the interface, EmailService, which sends an email with the message.
 
