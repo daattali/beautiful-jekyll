@@ -84,3 +84,13 @@ var controller = serviceProvider.GetService<MyController>();
 controller.DoSomething();
 
 ```
+
+In this example, we define an interface IMessageService that represents a dependency that our MyController class needs. We also define an implementation of the interface, EmailService, which sends an email with the message.
+
+Then, in our MyController class, we inject an instance of IMessageService into the constructor. This allows us to use any implementation of IMessageService without modifying the MyController class.
+
+Finally, we set up dependency injection using the ServiceCollection class and add a singleton instance of EmailService as the implementation of IMessageService. We then retrieve an instance of MyController from the service provider and use it to call DoSomething(), which sends a message using the EmailService implementation.
+
+Using dependency injection in this way allows us to write more flexible and testable code, since we can easily swap out dependencies without modifying the classes that depend on them.
+
+Here's an example unit test for the IMessageService interface:
