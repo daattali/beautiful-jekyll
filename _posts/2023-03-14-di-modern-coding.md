@@ -120,3 +120,5 @@ public class MessageServiceTests
 In this example, we're using the Moq mocking framework to create a mock IEmailSender object, which we can configure to return a value when its SendEmail method is called with specific arguments. We're then passing this mock object to the MessageService constructor using dependency injection.
 
 In the SendEmail_ValidEmail_ReturnsTrue test method, we're testing the SendEmail method of the MessageService class. We're passing in valid email parameters and expecting the method to return true. The Assert statement verifies that the result matches our expectation.
+
+Using dependency injection in our unit test allows us to easily mock the IEmailSender dependency and test the MessageService class in isolation, without relying on a real implementation of the IEmailSender. This makes our test more reliable and helps us to identify and fix issues more quickly.
