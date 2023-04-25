@@ -38,20 +38,49 @@ While dependency injection can offer significant advantages in software developm
 
 Overall, while there are some potential disadvantages to using dependency injection, these can generally be mitigated through careful design and implementation. By following best practices and using a well-designed DI framework, developers can enjoy the benefits of dependency injection without significant drawbacks.
 
-Using dependency injection in our unit test allows us to easily mock the IEmailSender dependency and test the MessageService class in isolation, without relying on a real implementation of the IEmailSender. This makes our test more reliable and helps us to identify and fix issues more quickly.
+Here is an example of using dependency injection in C# code:
 
-In .NET Core, the built-in dependency injection container is configured using the IServiceCollection interface. This interface provides methods to register services and dependencies, and then resolve them when needed. The container can be configured to use different lifetime scopes such as singleton, scoped, and transient depending on the requirements of the application.
+```c#
 
-The advantage of using dependency injection in .NET Core is that it simplifies the management of dependencies and allows for easier unit testing. Instead of creating and managing dependencies manually, the container can automatically resolve them and inject them into classes and components. This makes the code more modular, easier to maintain, and more flexible to change.
+// Define an interface for the dependency
+public interface IMessageService
+{
+    void SendMessage(string message);
+}
 
-.NET Core solves some of the potential disadvantages of dependency injection. Here are a few examples:
+// Define an implementation of the interface
+public class EmailService : IMessageService
+{
+    public void SendMessage(string message)
+    {
+        // Send an email with the message
+    }
+}
 
-1. Reduces boilerplate code: Dependency injection frameworks such as Microsoft.Extensions.DependencyInjection in .NET Core provide a lot of convenience and utility for registering and resolving dependencies without the need for boilerplate code.
+// Define a class that depends on the interface
+public class MyController
+{
+    private readonly IMessageService _messageService;
 
-2. Improves testability: .NET Core’s dependency injection framework allows you to easily replace dependencies with mock objects during testing, which makes it much easier to isolate and test individual components.
+    public MyController(IMessageService messageService)
+    {
+        _messageService = messageService;
+    }
 
-3. Enhances modularity and maintainability: With .NET Core’s dependency injection framework, components can be developed and tested in isolation, which can improve code maintainability and make it easier to update individual components without impacting the entire system.
+    public void DoSomething()
+    {
+        // Use the message service to send a message
+        _messageService.SendMessage("Hello, world!");
+    }
+}
 
-Overall, .NET Core’s built-in dependency injection framework provides a simple and effective way to manage dependencies in your application, and it helps to mitigate some of the common issues associated with manual dependency management.
+// Set up dependency injection
+var serviceProvider = new ServiceCollection()
+    .AddSingleton<IMessageService, EmailService>()
+    .BuildServiceProvider();
 
-When combined with other design patterns such as microservices, DDD, SOLID and Clean Architecture, dependency injection can significantly improve the overall quality and maintainability of a .NET Core application. It helps to enforce the separation of concerns and reduces the coupling between components. By adhering to these principles, developers can create scalable and maintainable software that is easier to modify, extend and test.
+// Use the dependency in the controller
+var controller = serviceProvider.GetService<MyController>();
+controller.DoSomething();
+
+```
