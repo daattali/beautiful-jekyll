@@ -40,3 +40,101 @@ Overall, while there are some potential disadvantages to using dependency inject
 
 Here is an example of using dependency injection in C# code:
 
+```c#
+
+// Define an interface for the dependency
+public interface IMessageService
+{
+    void SendMessage(string message);
+}
+
+// Define an implementation of the interface
+public class EmailService : IMessageService
+{
+    public void SendMessage(string message)
+    {
+        // Send an email with the message
+    }
+}
+
+// Define a class that depends on the interface
+public class MyController
+{
+    private readonly IMessageService _messageService;
+
+    public MyController(IMessageService messageService)
+    {
+        _messageService = messageService;
+    }
+
+    public void DoSomething()
+    {
+        // Use the message service to send a message
+        _messageService.SendMessage("Hello, world!");
+    }
+}
+
+// Set up dependency injection
+var serviceProvider = new ServiceCollection()
+    .AddSingleton<IMessageService, EmailService>()
+    .BuildServiceProvider();
+
+// Use the dependency in the controller
+var controller = serviceProvider.GetService<MyController>();
+controller.DoSomething();
+
+```
+
+In this example, we define an interface IMessageService that represents a dependency that our MyController class needs. We also define an implementation of the interface, EmailService, which sends an email with the message.
+
+Then, in our MyController class, we inject an instance of IMessageService into the constructor. This allows us to use any implementation of IMessageService without modifying the MyController class.
+
+Finally, we set up dependency injection using the ServiceCollection class and add a singleton instance of EmailService as the implementation of IMessageService. We then retrieve an instance of MyController from the service provider and use it to call DoSomething(), which sends a message using the EmailService implementation.
+
+Using dependency injection in this way allows us to write more flexible and testable code, since we can easily swap out dependencies without modifying the classes that depend on them.
+
+Here's an example unit test for the IMessageService interface:
+
+```c#
+
+public class MessageServiceTests
+{
+    [Fact]
+    public void SendEmail_ValidEmail_ReturnsTrue()
+    {
+        // Arrange
+        var mockEmailSender = new Mock<IEmailSender>();
+        mockEmailSender.Setup(s => s.SendEmail("test@example.com", "Test email", "This is a test email.")).Returns(true);
+        var messageService = new MessageService(mockEmailSender.Object);
+
+        // Act
+        var result = messageService.SendEmail("test@example.com", "Test email", "This is a test email.");
+
+        // Assert
+        Assert.True(result);
+    }
+}
+
+```
+
+In this example, we're using the Moq mocking framework to create a mock IEmailSender object, which we can configure to return a value when its SendEmail method is called with specific arguments. We're then passing this mock object to the MessageService constructor using dependency injection.
+
+In the SendEmail_ValidEmail_ReturnsTrue test method, we're testing the SendEmail method of the MessageService class. We're passing in valid email parameters and expecting the method to return true. The Assert statement verifies that the result matches our expectation.
+
+Using dependency injection in our unit test allows us to easily mock the IEmailSender dependency and test the MessageService class in isolation, without relying on a real implementation of the IEmailSender. This makes our test more reliable and helps us to identify and fix issues more quickly.
+
+In .NET Core, the built-in dependency injection container is configured using the IServiceCollection interface. This interface provides methods to register services and dependencies, and then resolve them when needed. The container can be configured to use different lifetime scopes such as singleton, scoped, and transient depending on the requirements of the application.
+
+The advantage of using dependency injection in .NET Core is that it simplifies the management of dependencies and allows for easier unit testing. Instead of creating and managing dependencies manually, the container can automatically resolve them and inject them into classes and components. This makes the code more modular, easier to maintain, and more flexible to change.
+
+.NET Core solves some of the potential disadvantages of dependency injection. Here are a few examples:
+
+1. Reduces boilerplate code: Dependency injection frameworks such as Microsoft.Extensions.DependencyInjection in .NET Core provide a lot of convenience and utility for registering and resolving dependencies without the need for boilerplate code.
+
+2. Improves testability: .NET Core’s dependency injection framework allows you to easily replace dependencies with mock objects during testing, which makes it much easier to isolate and test individual components.
+
+3. Enhances modularity and maintainability: With .NET Core’s dependency injection framework, components can be developed and tested in isolation, which can improve code maintainability and make it easier to update individual components without impacting the entire system.
+
+Overall, .NET Core’s built-in dependency injection framework provides a simple and effective way to manage dependencies in your application, and it helps to mitigate some of the common issues associated with manual dependency management.
+
+When combined with other design patterns such as microservices, DDD, SOLID and Clean Architecture, dependency injection can significantly improve the overall quality and maintainability of a .NET Core application. It helps to enforce the separation of concerns and reduces the coupling between components. By adhering to these principles, developers can create scalable and maintainable software that is easier to modify, extend and test.
