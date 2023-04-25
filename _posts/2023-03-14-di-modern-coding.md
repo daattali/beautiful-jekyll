@@ -94,3 +94,29 @@ Finally, we set up dependency injection using the ServiceCollection class and ad
 Using dependency injection in this way allows us to write more flexible and testable code, since we can easily swap out dependencies without modifying the classes that depend on them.
 
 Here's an example unit test for the IMessageService interface:
+
+```c#
+
+public class MessageServiceTests
+{
+    [Fact]
+    public void SendEmail_ValidEmail_ReturnsTrue()
+    {
+        // Arrange
+        var mockEmailSender = new Mock<IEmailSender>();
+        mockEmailSender.Setup(s => s.SendEmail("test@example.com", "Test email", "This is a test email.")).Returns(true);
+        var messageService = new MessageService(mockEmailSender.Object);
+
+        // Act
+        var result = messageService.SendEmail("test@example.com", "Test email", "This is a test email.");
+
+        // Assert
+        Assert.True(result);
+    }
+}
+
+```
+
+In this example, we're using the Moq mocking framework to create a mock IEmailSender object, which we can configure to return a value when its SendEmail method is called with specific arguments. We're then passing this mock object to the MessageService constructor using dependency injection.
+
+In the SendEmail_ValidEmail_ReturnsTrue test method, we're testing the SendEmail method of the MessageService class. We're passing in valid email parameters and expecting the method to return true. The Assert statement verifies that the result matches our expectation.
