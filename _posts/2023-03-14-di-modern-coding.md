@@ -40,7 +40,8 @@ Overall, while there are some potential disadvantages to using dependency inject
 
 Here is an example of using dependency injection in C# code:
 
-
+```c#
+```
 
 In this example, we define an interface IMessageService that represents a dependency that our MyController class needs. We also define an implementation of the interface, EmailService, which sends an email with the message.
 
@@ -53,25 +54,6 @@ Using dependency injection in this way allows us to write more flexible and test
 Here's an example unit test for the IMessageService interface:
 
 ```c#
-
-public class MessageServiceTests
-{
-    [Fact]
-    public void SendEmail_ValidEmail_ReturnsTrue()
-    {
-        // Arrange
-        var mockEmailSender = new Mock<IEmailSender>();
-        mockEmailSender.Setup(s => s.SendEmail("test@example.com", "Test email", "This is a test email.")).Returns(true);
-        var messageService = new MessageService(mockEmailSender.Object);
-
-        // Act
-        var result = messageService.SendEmail("test@example.com", "Test email", "This is a test email.");
-
-        // Assert
-        Assert.True(result);
-    }
-}
-
 ```
 
 In this example, we're using the Moq mocking framework to create a mock IEmailSender object, which we can configure to return a value when its SendEmail method is called with specific arguments. We're then passing this mock object to the MessageService constructor using dependency injection.
