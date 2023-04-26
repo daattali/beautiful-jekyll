@@ -6,7 +6,7 @@ layout: page
 
 ## Peer-reviewed research
 
-:page_facing_up: **Dimanchev, E.**, C.R. Knittel. 2023. [Designing climate policy mixes: Analytical and energy system modeling approaches](https://www.sciencedirect.com/science/article/pii/S0140988323001950). *Energy Economics*. 
+:page_facing_up: **Dimanchev, E.** and C.R. Knittel. 2023. [Designing climate policy mixes: Analytical and energy system modeling approaches](https://www.sciencedirect.com/science/article/pii/S0140988323001950). *Energy Economics*. 
 
   * Access: Open at the link above
 
