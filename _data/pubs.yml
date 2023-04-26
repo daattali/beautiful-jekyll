@@ -142,7 +142,7 @@
   \  author={Weng, Thomas and Held, David and Meier, Franziska and Mukadam, Mustafa},\n
   \  journal={arXiv preprint arXiv:2211.02647},\n
   \  year={2022}\n}"
-  img: ../pics/icra2023_logo.png
+  img: ../pics/ngdf_icra2023.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2211.02647
     '[Code]': https://github.com/facebookresearch/NGDF/
