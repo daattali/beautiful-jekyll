@@ -140,8 +140,8 @@
   bib: "@article{weng2022ngdf,\n
   \  title={Neural Grasp Distance Fields for Robot Manipulation},\n
   \  author={Weng, Thomas and Held, David and Meier, Franziska and Mukadam, Mustafa},\n
-  \  journal={arXiv preprint arXiv:2211.02647},\n
-  \  year={2022}\n}"
+  \  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},\n
+  \  year={2023}\n}"
   img: ../pics/ngdf_icra2023.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2211.02647
