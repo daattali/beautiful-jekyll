@@ -8,7 +8,7 @@ layout: page
 
 **Dimanchev, E.** and C.R. Knittel. 2023. [Designing climate policy mixes: Analytical and energy system modeling approaches](https://www.sciencedirect.com/science/article/pii/S0140988323001950). *Energy Economics*. 
 
-  * Access: Open at the link above
+  * Access: Open access at the link above
 
 **Dimanchev, E.**, D. Qorbani, M. Korpas. 2022. [Electric vehicle adoption dynamics on the road to deep decarbonization](https://onlinelibrary.wiley.com/doi/10.1002/9783527831425.ch8). Book chapter in "The 4Ds of Energy Transition: Decarbonization, Decreasing use, Decentralization, and Digitalization". Wiley. 
 * Access: Get in touch
@@ -20,7 +20,7 @@ layout: page
   * Code and data [link](https://doi.org/10.5281/zenodo.3773861)
   
 **Dimanchev, E.**, et al. 2019. [Health Co-Benefits of Sub-National Renewable Energy Policy in the U.S.](https://iopscience.iop.org/article/10.1088/1748-9326/ab31d9) *Environmental Research Letters* 14 085012.
-  * Access: Open at the link above
+  * Access: Open access at the link above
   * [Testimony](http://search-prod.lis.state.oh.us/cm_pub_api/api/unwrap/chamber/133rd_ga/ready_for_publication/committee_docs/cmte_s_energy_pu_1/testimony/cmte_s_energy_pu_1_2019-06-19-0800_742/testimonyemildimanchevmit.pdf) for the Ohio Senate
   * [Report](https://globalchange.mit.edu/publication/17278) including Ohio case study
   * Code and data [link](https://doi.org/10.5281/zenodo.3605637)
