@@ -74,8 +74,17 @@ Overall, remote working can be a great option for software-related positions, pa
 
 
 
-(1) Remote working - does it make us more or less productive?. https://www.weforum.org/agenda/2021/09/remote-working-hybrid-productivity/.
-(2) Why Remote Workers Are More Productive - Business News Daily. https://www.businessnewsdaily.com/15259-working-from-home-more-productive.html.
-(3) Workers Are Less Productive Working Remotely (At Least That ... - Forbes. https://www.forbes.com/sites/glebtsipursky/2022/11/03/workers-are-less-productive-working-remotely-at-least-thats-what-their-bosses-think/.
-(4) The Impact Of Remote Work On Productivity And Creativity - Forbes. https://www.forbes.com/sites/forbestechcouncil/2022/01/14/the-impact-of-remote-work-on-productivity-and-creativity/.
-(5) The remote work experiment that upped productivity 13% - BBC. https://www.bbc.com/worklife/article/20200710-the-remote-work-experiment-that-made-staff-more-productive.
+(1) Remote working - does it make us more or less productive?. 
+https://www.weforum.org/agenda/2021/09/remote-working-hybrid-productivity/.
+
+(2) Why Remote Workers Are More Productive - Business News Daily. 
+https://www.businessnewsdaily.com/15259-working-from-home-more-productive.html.
+
+(3) Workers Are Less Productive Working Remotely (At Least That ... - Forbes. 
+https://www.forbes.com/sites/glebtsipursky/2022/11/03/workers-are-less-productive-working-remotely-at-least-thats-what-their-bosses-think/.
+
+(4) The Impact Of Remote Work On Productivity And Creativity - Forbes. 
+https://www.forbes.com/sites/forbestechcouncil/2022/01/14/the-impact-of-remote-work-on-productivity-and-creativity/.
+
+(5) The remote work experiment that upped productivity 13% - BBC. 
+https://www.bbc.com/worklife/article/20200710-the-remote-work-experiment-that-made-staff-more-productive.
