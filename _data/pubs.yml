@@ -137,7 +137,7 @@
     with NGDF outperforms baselines by 63% execution success while generalizing to unseen query poses and unseen object shapes.
   authors: Thomas Weng, David Held, Franziska Meier, Mustafa Mukadam
   award: null
-  bib: "@article{weng2022ngdf,\n
+  bib: "@article{weng2023ngdf,\n
   \  title={Neural Grasp Distance Fields for Robot Manipulation},\n
   \  author={Weng, Thomas and Held, David and Meier, Franziska and Mukadam, Mustafa},\n
   \  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},\n
