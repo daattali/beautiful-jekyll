@@ -6,6 +6,8 @@ layout: page
 
 ## Peer-reviewed research
 
+**Dimanchev, E.**, C.R. Knittel. 2023. [Designing climate policy mixes: Analytical and energy system modeling approaches](https://www.sciencedirect.com/science/article/pii/S0140988323001950)). *Energy Economics*. 
+
 **Dimanchev, E.**, D. Qorbani, M. Korpas. 2022. [Electric vehicle adoption dynamics on the road to deep decarbonization](https://onlinelibrary.wiley.com/doi/10.1002/9783527831425.ch8). Book chapter in "The 4Ds of Energy Transition: Decarbonization, Decreasing use, Decentralization, and Digitalization". Wiley. 
 * Access: Get in touch
 * Model [link](https://zenodo.org/record/6191882#.YtkZVS8RrT8)
