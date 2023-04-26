@@ -34,7 +34,7 @@ Technology issues: When you work remotely, you rely heavily on technology to com
 
 Lack of structure: Remote working requires a certain degree of self-discipline and structure. Without the structure of a traditional office environment, some remote workers may struggle to stay focused and motivated.
 
-Productivity and Creativity: Remote work can also lead to a breakdown of critical bridging connections between team members across the organization which can negatively impact productivity and creativity⁴.
+Productivity and Creativity: Remote work can also lead to a breakdown of critical bridging connections between team members across the organization which can negatively impact productivity and creativity(4).
 
 **Tips on how to address the drawbacks of Remote Working**
 
