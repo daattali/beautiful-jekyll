@@ -78,7 +78,8 @@ display_categories: [work]
     
   <dt><img src="https://img.shields.io/badge/March. 2023-1138b2.svg"></dt>
     
-<dd>  Poster presentation at <a href="https://iabm2023.sciencesconf.org/"> IABM 2023</a>: <b>Wavelet-based multiscale atlas deformations </b> </dd>
+<dd>  Poster presentation at <a href="https://iabm2023.sciencesconf.org/"> IABM 2023</a>: <b>A multiscale algorithm for modelling
+fetal brain growth </b> </dd>
 
 
 </dl>
