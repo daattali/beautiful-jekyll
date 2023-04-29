@@ -9,9 +9,11 @@ subtitle: A lot of lines...
 
 ## ✔️ Open Source Projects
 
-- ### [Lines](https://linesapp.vercel.app/) - web3 app to share your thoughts in a decentralized and censorship resistant way
+- ### [Lines](https://linesapp.vercel.app/) - Decentralized Message Board Twitter Clone.
 
-- ### [Universe](https://universeapp.vercel.app/) - collections of tools to optimize your yield farming strategies
+- ### [Tiers](https://universeapp.vercel.app/) - Decentralized Subscription Dapp
+
+- ### [Mecenate](https://mecenateapp.vercel.app/) - Decentralized Anonymous Data Marketplace
 
 ## ✔️ Web3 Projects
 
