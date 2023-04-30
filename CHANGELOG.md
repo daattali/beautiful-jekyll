@@ -22,6 +22,7 @@
 - Added `footer-hover-col` config setting to customize the hover colour of links in the footer (#848)
 - Added social network links for Discord (#907), Kaggle (#961), and Hackerrank (#978)
 - Made the home page feed more accessible for screen readers (#950) 
+- When using Google Analytics config setting, encourage using the new `gtag` and discourage using the deprecated `google_analytics` (#1096)
 
 ## v5.0.0 (2020-09-15)
 
