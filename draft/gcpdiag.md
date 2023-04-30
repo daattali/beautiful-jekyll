@@ -17,7 +17,7 @@ tags: [GCPDiag, Troubleshooting, Best Practice, Misconfiguration, Security]
 {:toc}
 
 # What is the GCPDiag tool?
-GCPDiag is an opensource tool that can detect configuration issues within Google Cloud Projects. It is a command line tool that runs a series of automated checks against Google Cloud API's to identify a range of issues including errors (ERR) for things that are very likely misconfigured, warnings (WAR) things that are possibly wrong, best practices/opinionated recommendations (BP) and potential security (SEC) issues. 
+GCPDiag is an opensource tool that can detect configuration issues within Google Cloud Projects. It is a command line tool that runs a series of automated checks against Google Cloud API's to identify a range of issues including errors (ERR) for things that are very likely misconfigured, warnings (WAR) for things that are possibly wrong, opinionated recommendations/best practices (BP) and potential security (SEC) issues. 
 
 GCPDiag runs against a GCP project detecting issues against a series of rules, and generating a corresponding report that highlights any deviations from the list of expected conditions.
 
@@ -44,7 +44,7 @@ The tool can be targetted to run against all, or a selection of the following se
 
 GCPdiag is maintained by the Google Cloud Support team, based on their troubleshooting experience for Google Cloud customers, with contributions from the open source community.
 
-# What IAM Permissions does GCPDiag require?
+# What IAM permissions does GCPDiag require?
 The credentials used to run GCPDiag need to have the following minimum roles on the inspected project:
 
 - Viewer on the inspected project
