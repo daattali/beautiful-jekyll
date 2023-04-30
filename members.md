@@ -90,12 +90,12 @@ members:
             web_url: https://siddancha.github.io/
           - name: Xingyu Lin -> Post-doc with Pieter Abbeel at UC Berkeley
             web_url: https://xingyu-lin.github.io/
-          - name: Brian Okorn (co-advised with Martial Hebert)
+          - name: Brian Okorn (co-advised with Martial Hebert) -> Boston Dynamics AI Institute
             web_url: https://www.ri.cmu.edu/ri-people/brian-e-okorn/
       - name: Master's students (Reseach Master's)
         full: False
         list:
-          - name: Chuer Pan (MSR)
+          - name: Chuer Pan (MSR) -> Columbia PhD
             web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
           - name: Gaurav Pathak (MSR) -> Adobe
             web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
