@@ -2,7 +2,7 @@
 layout: post
 title: Hampi Travel Blog
 subtitle: Long back I've travelled to Hampi and I've found this blog in my notion.
-tags: [product management, Football]
+tags: [Travel, Hampi, Personal]
 comments: true
 ---
 
