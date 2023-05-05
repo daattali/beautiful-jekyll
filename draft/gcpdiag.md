@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Identifying and troubleshooting issues in GCP Projects with GCPDiag.
-subtitle: In this blog I cover the open source tool GCPDiag that helps identify misconfigurations and best practices across a range of Google Cloud offerings including GCE, GKE, BiqQuery...
+title: Identifying and troubleshooting issues in GCP Projects with gcpdiag.
+subtitle: In this blog I cover the open source tool gcpdiag that helps identify misconfigurations and best practices across a range of Google Cloud offerings including GCE, GKE, BiqQuery, GCS...
 #description: ""
 #cover-img: /assets/img/path.jpg
-#thumbnail-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
-#share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
+thumbnail-img: /assets/img/gcpdiag/gcpdiag-stethoscope.png
+share-img: /assets/img/gcpdiag/gcpdiag-stethoscope.png
 readtime: true
-share-title: "Identifying and troubleshooting issues in GCP Projects with GCP Diag"
-share-description: "In this blog I cover the open source tool GCPDiag that helps identify misconfigurations and best practices across a range of Google Cloud offerings including GCE, GKE, BiqQuery..."
+share-title: "Identifying and troubleshooting issues in GCP Projects with gcpdiag"
+share-description: "In this blog I cover the open source tool gcpdiag that helps identify misconfigurations and best practices across a range of Google Cloud offerings including GCE, GKE, BiqQuery, GCS..."
 #share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
-tags: [GCPDiag, Troubleshooting, Best Practice, Misconfiguration, Security]
+tags: [gcpdiag, Troubleshooting, Best Practice, Misconfiguration, Security]
 ---
 
 * toc
 {:toc}
 
-# What is the GCPDiag tool?
-GCPDiag is an opensource tool that can detect configuration issues within Google Cloud Projects. It is a command line tool that runs a series of automated checks against Google Cloud API's to identify a range of issues including errors (ERR) for things that are very likely misconfigured, warnings (WAR) for things that are possibly wrong, opinionated recommendations/best practices (BP) and potential security (SEC) issues. 
+# What is the gcpdiag tool?
+gcpdiag is an opensource tool that can detect configuration issues within Google Cloud Projects. It is a command line tool that runs a series of automated checks against Google Cloud API's to identify a range of issues including errors (ERR) for things that are very likely misconfigured, warnings (WAR) for things that are possibly wrong, opinionated recommendations/best practices (BP) and potential security (SEC) issues. 
 
-GCPDiag runs against a GCP project detecting issues against a series of rules, and generating a corresponding report that highlights any deviations from the list of expected conditions.
+gcpdiag runs against a GCP project detecting issues against a series of rules, and generating a corresponding report that highlights any deviations from the list of expected conditions.
 
 The tool can be targetted to run against all, or a selection of the following services:
 
@@ -42,16 +42,18 @@ The tool can be targetted to run against all, or a selection of the following se
 - TPU
 - VPC
 
-GCPdiag is maintained by the Google Cloud Support team, based on their troubleshooting experience for Google Cloud customers, with contributions from the open source community.
+gcpdiag is maintained by the Google Cloud Support team, based on their troubleshooting experience for Google Cloud customers, with contributions from the open source community.
 
-# What IAM permissions does GCPDiag require?
-The credentials used to run GCPDiag need to have the following minimum roles on the inspected project:
+# What IAM permissions does gcpdiag require?
+The credentials used to run gcpdiag need to have the following minimum roles on the inspected project:
 
-- Viewer on the inspected project
-- Service Usage Consumer on the project used for billing/quota enforcement, which is per default the project being inspected, but can be explicitely set using the --billing-project option
+- roles/viewer basic role on the inspected project.
+- roles/serviceusage.serviceUsageConsumer predefined role on the project used for billing/quota enforcement.
 
-# What API's does GCPDiag require?
-GCPDiag requires the following API's to be enabled on the GCP project to query:
+If the billing project differs from the project being inspected, this can be set using the --billing-project option.
+
+# What API's does gcpdiag require?
+gcpdiag requires the following API's to be enabled on the GCP project to inspect:
 
 - cloudresourcemanager.googleapis.com (Cloud Resource Manager API)
 - iam.googleapis.com (Identity and Access Management API)
@@ -67,70 +69,65 @@ gcloud --project=MYPROJECT services enable \
     logging.googleapis.com \
     serviceusage.googleapis.com
 ```
-***Code Example: Enabling GCPdiag's required API's with gcloud command line***
+***Code Example: Enabling gcpdiag's required API's with gcloud command line***
 
-# How to authenticate GCPDiag
-GCPDiag supports three methods of authentication:
+# How to authenticate gcpdiag
+gcpdiag supports three methods of authentication:
 
 1.  OAuth user consent flow
 2.  Application default credentials
 3.  Service account key
 
-By default, GCPdiag uses the OAuth user authentication flow, similarly to what gcloud does. It will print a URL that you need to access with a browser, and ask you to enter the token that you receive after you authenticate there.
+By default, gcpdiag uses the OAuth user authentication flow, similarly to how gcloud does. gcpdiag prints a URL to access with a browser, prompting for the token returned after authenticating with the URL.
 
-The credentials are then cached on disk, enabling you to keep running it for 1 hour. To remove cached authentication credentials, you can delete the $HOME/.cache/gcpdiag directory.
+The credentials are then cached on disk for 1 hour. To remove cached authentication credentials, you can delete the $HOME/.cache/gcpdiag directory.
 
-Note: if your organization has the “Block all third-party API access” policy set, you will need to either ask an organization admin to add gcpdiag to the list of trusted applications (client id: 539612726288-l17ksc9k8f0d63tfs53i45op9nel9h74.apps.googleusercontent.com), or use another authentication mechanism (such as application default credentials).
+Note: if your organization has the “Block all third-party API access” policy set, you will need to add gcpdiag to the list of trusted applications (client id: 539612726288-l17ksc9k8f0d63tfs53i45op9nel9h74.apps.googleusercontent.com), or use another authentication mechanism (such as application default credentials).
 
-GCPdiag can use Cloud SDK’s Application Default Credentials. This might require that you first run gcloud auth login --update-adc to update the cached credentials. This is the default in Cloud Shell because in that environment, ADC credentials are automatically provisioned.
+gcpdiag can also use Cloud SDK’s Application Default Credentials. This is the default in Cloud Shell because within that environment, ADC credentials are automatically provisioned.
 
-You can also use the --auth-key parameter to specify the private key of a service account.
-
-
+Alternatively, gcpdiag can authenticate with the private key of a service account using the --auth-key parameter.
 
 
-GCPDiag only checks configurations, it doesn't make any changes to resources even after detecting misconfigurations. 
-
-
-# How to install GCPDiag
-GCPdiag is preinstsalled to the Google Cloud Shell and can be run with the following command replacing MYPROJECT with the Google Cloud Project ID:
+# How to install gcpdiag
+gcpdiag is preinstsalled to the Google Cloud Shell and can be run with the following command replacing MYPROJECT with the Google Cloud Project ID to inspect:
 
 ```
 gcpdiag lint --project=MYPROJECT
 ```
-***Code Example: Running GCPdiag lint***
+***Code Example: Running gcpdiag lint***
 
-Alternatively, you can run GCPdiag using a shell wrapper that starts GCPdiag in a Docker container with the following code:
+Alternatively, you can run gcpdiag using a shell wrapper that starts gcpdiag in a Docker container with the following code:
 
 ```
 curl https://gcpdiag.dev/gcpdiag.sh >gcpdiag
 chmod +x gcpdiag
 ./gcpdiag lint --project=MYPROJECT
 ```
-***Code Example: Example shell wrapper for starting GCPdiag within a docker container***
+***Code Example: Example shell wrapper for starting gcpdiag within a docker container***
 
-# How do I use the GCPDiag tool?
+# How do I use the gcpdiag tool?
 
-Once you have enabled the relevant API's as per '[What API's does GCPDiag require?](/gcpdiag#what-apis-does-gcpdiag-require)' to run GCPDiag in its default form, simply run the following command from the Google Cloud Shell replacing MYPROJECT with your GCP project's ID:
+Once you have enabled the relevant API's as per '[What API's does gcpdiag require?](/gcpdiag#what-apis-does-gcpdiag-require)' to run gcpdiag in its default form, simply run the following command from the Google Cloud Shell replacing MYPROJECT with your GCP project's ID:
 
 ```
 gcpdiag lint --project=MYPROJECT
 ```
-***Code Example: Running GCPDiag***
+***Code Example: Running gcpdiag***
 
-This will run all the default checks (Error, Warning, Best Practice...) against all services within the targetted project, generating a summary of the tests performed including total skipped rules, ok rules and failed rules within the terminal window. Scrolling back through the terminal output enables you to identify what checks failed and provides guidance on how to align with the recommended best practices. 
+This will run all the default checks (Error, Warning, Best Practice, Security checks...) against all services within the targetted project, generating a summary of the tests performed including total skipped rules, ok rules and failed rules within the terminal window. Scrolling back through the terminal output enables you to identify what checks failed and provides guidance on how to align with the recommended best practices. 
 
-GCPdiag doesn't provide the functionality to remediate detected issues, it only highlights them.
+gcpdiag doesn't provide the functionality to remediate detected issues, it only highlights misconfigurations.
 
 ```
 gcpdiag lint --help
 ```
-***Code Example: GCPdiag lint help command***
+***Code Example: gcpdiag lint help command***
 
---help returns all the configurable options availabe to customise the checks the tool performs. This can be configured to only check select GCP products and services e.g. GKE only, to only check certain rule sets e.g. Best Practices only, and to filter what information is returned for checks that pass. Similarily you can define whether the results are presented in the terminal window, JSON or CSV format.
+--help returns all the configurable options availabe to customise the checks the tool performs. This can be configured to only check select GCP products and services e.g. limit checks to GKE only, to only check certain rule sets e.g. Best Practices only, and to filter what information is returned for checks that pass. Similarily you can define whether the results are presented in the terminal window, JSON or CSV format.
 
-The default settings for GCPdiag runs Auth-ADC for authentication, searches logs from the last 3 days, and outputs the results within the terminal.
+The default settings for gcpdiag runs Auth-ADC for authentication, searches logs from the last 3 days, and outputs the results within the terminal.
 
-![GCPDiag Open Source Tool](/assets/img/gcpdiag/gcpdiag-stethoscope.png "GCPDiag Open Source Tool")
+![gcpdiag Open Source Tool](/assets/img/gcpdiag/gcpdiag-stethoscope.png "gcpiag Open Source Tool")
  
-*GCPDiag (source: [GCPDiag](https://gcpdiag.dev))*
+*gcpdiag (source: [gcpiag](https://gcpdiag.dev))*
