@@ -1,15 +1,14 @@
 ---
 layout: post
 title: Identifying and troubleshooting issues in GCP Projects with gcpdiag.
-subtitle: In this blog I cover the open source tool gcpdiag that helps identify misconfigurations and best practices across a range of Google Cloud offerings including GCE, GKE, BiqQuery, GCS...
-#description: ""
+subtitle: In this blog I cover the open source tool gcpdiag that helps identify misconfigurations and best practices across a range of Google Cloud offerings including GCE, GKE, BigQuery, GCS, Cloud Run, Cloud SQL...
+#description: "In this blog I cover the open source tool gcpdiag that helps identify misconfigurations and best practices across a range of Google Cloud offerings including GCE, GKE, BigQuery, GCS, Cloud Run, Cloud SQL..."
 #cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/gcpdiag/gcpdiag-stethoscope.png
 share-img: /assets/img/gcpdiag/gcpdiag-stethoscope.png
 readtime: true
 share-title: "Identifying and troubleshooting issues in GCP Projects with gcpdiag"
-share-description: "In this blog I cover the open source tool gcpdiag that helps identify misconfigurations and best practices across a range of Google Cloud offerings including GCE, GKE, BiqQuery, GCS..."
-#share-img: /assets/img/pca/googlecloudprofessionalcloudarchitectbadge.png
+share-description: "In this blog I cover the open source tool gcpdiag that helps identify misconfigurations and best practices across a range of Google Cloud offerings including GCE, GKE, BigQuery, GCS, Cloud Run, CloudSQL..."
 tags: [gcpdiag, Troubleshooting, Best Practice, Misconfiguration, Security]
 ---
 
@@ -90,7 +89,7 @@ Alternatively, gcpdiag can authenticate with the private key of a service accoun
 
 
 # How to install gcpdiag
-gcpdiag is preinstsalled to the Google Cloud Shell and can be run with the following command replacing MYPROJECT with the Google Cloud Project ID to inspect:
+gcpdiag is preinstalled to the Google Cloud Shell and can be run with the following command replacing MYPROJECT with the Google Cloud Project ID to inspect:
 
 ```
 gcpdiag lint --project=MYPROJECT
@@ -115,19 +114,19 @@ gcpdiag lint --project=MYPROJECT
 ```
 ***Code Example: Running gcpdiag***
 
-This will run all the default checks (Error, Warning, Best Practice, Security checks...) against all services within the targetted project, generating a summary of the tests performed including total skipped rules, ok rules and failed rules within the terminal window. Scrolling back through the terminal output enables you to identify what checks failed and provides guidance on how to align with the recommended best practices. 
+This will run all the default checks (Error, Warning, Best Practice, Security checks...) against all services within the targeted project, generating a summary of the tests performed including total skipped rules, ok rules, and failed rules within the terminal window. Scrolling back through the terminal output enables you to identify what checks failed and provides guidance on how to align with the recommended best practices. 
 
-gcpdiag doesn't provide the functionality to remediate detected issues, it only highlights misconfigurations.
+gcpdiag does not provide the functionality to remediate detected issues, it only highlights misconfigurations.
 
 ```
 gcpdiag lint --help
 ```
 ***Code Example: gcpdiag lint help command***
 
---help returns all the configurable options availabe to customise the checks the tool performs. This can be configured to only check select GCP products and services e.g. limit checks to GKE only, to only check certain rule sets e.g. Best Practices only, and to filter what information is returned for checks that pass. Similarily you can define whether the results are presented in the terminal window, JSON or CSV format.
+--help returns all the configurable options available to customise the checks the tool performs. This can be configured to only check select GCP products and services e.g. limit checks to GKE only, to only check certain rule sets e.g. Best Practices only, and to filter what information is returned for checks that pass. Similarly, you can define whether the results are presented in the terminal window, JSON or CSV format.
 
 The default settings for gcpdiag runs Auth-ADC for authentication, searches logs from the last 3 days, and outputs the results within the terminal.
 
-![gcpdiag Open Source Tool](/assets/img/gcpdiag/gcpdiag-stethoscope.png "gcpiag Open Source Tool")
+![gcpdiag Open Source Tool](/assets/img/gcpdiag/gcpdiag-stethoscope.png "gcpdiag Open Source Tool")
  
-*gcpdiag (source: [gcpiag](https://gcpdiag.dev))*
+*gcpdiag (source: [gcpdiag](https://gcpdiag.dev))*
