@@ -15,6 +15,9 @@ subtitle: A lot of lines...
 
 - ### [Mecenate](https://mecenateapp.vercel.app/) - Decentralized Anonymous Data Marketplace
 
+- ### [Universe](https://universeapp.vercel.app/) - Decentralized Index Funds and Index Farms Optimizer
+
+
 ## ✔️ Web3 Projects
 
 - ### [Altair](https://app.nali.finance/altair-funds) - altair is a decentralized fund manager that allows you to crate and manage your own funds with a few clicks
