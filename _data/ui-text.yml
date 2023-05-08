@@ -82,6 +82,7 @@ tr: &DEFAULT_TR
   comment_success_msg        : "Yorumunuz için teşekkürler! Yorumunuz onaylandıktan sonra sitede gösterilecektir."
   comment_error_msg          : "Maalesef bir hata oluştu. Lütfen zorunlu olan tüm alanları doldurduğunuzdan emin olun ve sonrasında tekrar deneyin."
 tr-TR:
+
   <<: *DEFAULT_TR
 
 # Portuguese
