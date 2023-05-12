@@ -301,8 +301,8 @@
 {%- endif -%}
   
 {%- if site.social-network-links.discord -%}
-  {% assign discord_start = site.social-network-links.discord | slice: 0,5 -%}
-  {% unless discord_start == 'users' or discord_start == 'invit' -%}
+  {% assign discord_start = site.social-network-links.discord | split: "/" | first -%}
+  {% unless discord_start == 'users' or discord_start == 'invite' -%}
     {% assign discord_url_prefix = 'invite/' -%}
   {% endunless -%}
   <li class="list-inline-item">
