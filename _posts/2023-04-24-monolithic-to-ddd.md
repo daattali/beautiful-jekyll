@@ -33,8 +33,7 @@ To start building a distributed web application using a DDD approach that can ru
 In summary, building a distributed web application on the Microsoft cloud environment using a DDD approach can be a complex process, but it is well worth the effort. By breaking down your monolithic application into smaller, independent services, you can create an application that is more scalable, fault-tolerant, and easier to maintain over time. With the right tools and frameworks, such as .NET Core, Azure Functions, Azure App Service, and AKS, you can build a distributed web application that meets your needs and helps you achieve your business goals.
 
 
-**How can I use Azure Functions and Azure App Service, for example, in a on-premises environment?**
-
+## How can I use Azure Functions and Azure App Service, for example, in a on-premises environment?
 Azure Functions and Azure App Service are cloud-based services provided by Microsoft Azure, which are designed to run in the cloud. However, there are several ways that you can use these services in an on-premises environment.
 
 One way to use Azure Functions in an on-premises environment is to use Azure Functions Runtime, which is an open-source, cross-platform runtime that enables you to run Azure Functions on-premises or in other non-Azure environments. With Azure Functions Runtime, you can develop, test, and run Azure Functions locally, and then deploy them to an on-premises environment.
@@ -46,8 +45,7 @@ In addition to these options, you can also use other Azure services, such as Azu
 Overall, while Azure Functions and Azure App Service are primarily designed to run in the cloud, there are several options available that enable you to use these services in an on-premises environment, giving you the flexibility to choose the deployment option that best fits your needs and requirements.
 
 
-**[Bonus] Best practices coding for cloud:**
-
+## [Bonus] Best practices coding for cloud:
 When it comes to coding for the cloud, there are several best practices that developers should follow to ensure that their code is scalable, reliable, and secure. Here are some key best practices for coding with C# for the cloud:
 
 **Use asynchronous programming**: Asynchronous programming is a technique that allows multiple operations to be executed concurrently without blocking the main thread. This can greatly improve the performance of cloud-based applications, as it allows multiple requests to be processed at the same time.
@@ -63,6 +61,5 @@ When it comes to coding for the cloud, there are several best practices that dev
 Overall, following these best practices when coding for the cloud can help developers create applications that are scalable, reliable, and secure, ensuring that they can meet the demands of modern cloud-based environments.
 
 
-**Conclusion:**
-
+## Conclusion:
 In conclusion, converting a monolithic web app to a distributed web app using Domain-Driven Design principles is a powerful approach to improving the scalability, maintainability, and flexibility of your application. By taking advantage of the capabilities of the cloud and designing your application to be distributed, you can achieve greater resilience, scalability, and cost-efficiency, while still retaining the ability to run your application in an on-premises environment. With the right tools and strategies, it is possible to migrate to a DDD approach without disrupting your existing application, allowing you to take advantage of the benefits of modern software development practices and achieve greater business agility and success.
