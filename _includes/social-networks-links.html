@@ -301,8 +301,12 @@
 {%- endif -%}
   
 {%- if site.social-network-links.discord -%}
+  {% assign discord_start = site.social-network-links.discord | split: "/" | first -%}
+  {% unless discord_start == 'users' or discord_start == 'invite' -%}
+    {% assign discord_url_prefix = 'invite/' -%}
+  {% endunless -%}
   <li class="list-inline-item">
-    <a href="https://discord.com/{{ site.social-network-links.discord }}" title="Discord">
+    <a href="https://discord.com/{{discord_url_prefix}}{{site.social-network-links.discord}}" title="Discord">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
