@@ -80,6 +80,9 @@ display_categories: [work]
     
 <dd>  Poster presentation at <a href="https://iabm2023.sciencesconf.org/"> IABM 2023</a>: <b>A multiscale algorithm for modelling
 fetal brain growth </b> </dd>
+    
+    <dd>  Poster presentation at <a href="https://ai4healthschool.org/"> AI4Health Summer school</a>: <b>A multiscale algorithm for modelling
+fetal brain growth </b> </dd>
 
 
 </dl>
