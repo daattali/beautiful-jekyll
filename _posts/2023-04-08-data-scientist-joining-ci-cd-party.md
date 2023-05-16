@@ -145,7 +145,7 @@ cd .\fizz_buzz\
 ![vc-dm-13](/assets/data/2023-04-08-vc-dm-13.png){: .mx-auto.d-block :}
 
 
-When being run for the first time, a new `pyproject.toml` file is created within the same folder.
+When being run for the first time, a new `poetry.lock` file is created within the same folder.
 
 
 ## Conclusion
