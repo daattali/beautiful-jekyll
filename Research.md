@@ -76,10 +76,13 @@ display_categories: [work]
     
 <dd>  Poster presentation at <a href="https://fitng.org/"> FIT'NG 2022</a>: <b>A spatio-temporal atlas of the foetal brain with agenesis of the corpus callosum </b> </dd>
     
-  <dt><img src="https://img.shields.io/badge/March. 2023-1138b2.svg"></dt>
+  <dt><img src="https://img.shields.io/badge/March 2023-1138b2.svg"></dt>
     
 <dd>  Poster presentation at <a href="https://iabm2023.sciencesconf.org/"> IABM 2023</a>: <b>A multiscale algorithm for modelling
 fetal brain growth </b> </dd>
+    
+      <dt><img src="https://img.shields.io/badge/July 2023-1138b2.svg"></dt>
+
     
     <dd>  Poster presentation at <a href="https://ai4healthschool.org/"> AI4Health Summer school</a>: <b>A multiscale algorithm for modelling
 fetal brain growth </b> </dd>
