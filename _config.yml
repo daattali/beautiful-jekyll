@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My Website
+title: Vu Nguyen Huong
 
 # Your name to show in the footer
 author: Some Person
@@ -21,10 +21,10 @@ author: Some Person
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Contact:
+    - Facebook: "https://www.facebook.com/VuNguyenHuong.Official"
+    - Instagram: "https://www.instagram.com/vunguyenhuong.ins/"
+  # Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -49,20 +49,20 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "huongvnph27229@fpt.edu.vn"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  facebook: VuNguyenHuong.Official
+  github: vunguyenhuong
+  # twitter: daattali
+  # patreon: DeanAttali
+  # youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+ instagram: vunguyenhuong.ins
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
