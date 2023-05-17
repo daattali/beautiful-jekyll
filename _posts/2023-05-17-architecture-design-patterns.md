@@ -18,7 +18,7 @@ On the other hand, design patterns are more granular, localized solutions to rec
 
 In essence, while architecture offers a bird's eye view of the software structure, design patterns dive into the trenches, furnishing a reusable solution to a recurring problem within that structure.
 
-Exploring Major Architectural Styles 
+## Exploring Major Architectural Styles 
 
 1. Microservices Architecture: Microservices architecture has become prevalent in today's application development landscape. It involves designing a single application as a suite of small services, each running its own process and communicating through lightweight mechanisms. This architecture promotes the decoupling of components, making the system more flexible and resilient.
 
