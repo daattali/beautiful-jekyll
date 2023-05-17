@@ -8,12 +8,12 @@ comments: true
 
 ![SOLID Principles in C# - A Guide to Writing Robust and Maintainable Code](../assets/img/posts/solid.png){:class="img-responsive"}
 
-The SOLID principle is a set of guidelines that helps software developers build code that's simple to maintain, understand, and expand. It's an acronym for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles. In this article, we'll delve into each of these principles in detail and showcase how to put them into practice using C# programming language.
+The SOLID principle is a set of guidelines that helps software developers build code that's simple to maintain, understand and expand. It's an acronym for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles. In this article, we'll delve into each of these principles in detail and showcase how to put them into practice using C# programming language.
 
 ## [S] - Single Responsibility Principle (SRP)
 The Single Responsibility Principle (SRP) states that each class should have only one responsibility. In other words, a class should only be responsible for one thing. This principle makes code easier to understand and maintain, as it avoids unnecessary complexity and confusion.
 
-Let's take an example in C# to illustrate this principle. Imagine we have a CustomerRepository class that is responsible for managing the data access for the Customer entity in a database. It has three methods: Save, Update, and Delete.
+Let's take an example in C# to illustrate this principle. Imagine we have a CustomerRepository class that is responsible for managing the data access for the Customer entity in a database. It has three methods: Save, Update and Delete.
 
 ```c#
 
@@ -162,7 +162,7 @@ public class InMemoryCustomerRepository : ICustomerRepository
 In this example, the InMemoryCustomerRepository class is substitutable for the CustomerRepository class, as it implements the same ICustomerRepository interface and provides the same functionality. We can now use either class interchangeably without causing errors or unexpected behavior, adhering to the Liskov Substitution Principle.
 
 ## [I] - Interface Segregation Principle (ISP)
-The Interface Segregation Principle (ISP) states that classes should not be forced to implement interfaces they don't use. In other words, a class should only depend on the interfaces that it actually needs, and not on any additional ones that it doesn't.
+The Interface Segregation Principle (ISP) states that classes should not be forced to implement interfaces they don't use. In other words, a class should only depend on the interfaces that it actually needs and not on any additional ones that it doesn't.
 
 Let's continue with the example of the CustomerRepository class in C# to illustrate this principle. Suppose we have another interface called IOrderRepository that defines methods for managing orders in a database.
 
@@ -280,7 +280,7 @@ public class CustomerService
 In this modified example, we introduced an interface called ICustomerRepository that the CustomerRepository class now implements. The CustomerService class is now dependent on the abstraction, rather than the concrete implementation of the repository. This adheres to the DIP because the CustomerService class now depends on an abstraction, rather than a concrete implementation.
 
 ## Conclusion:
-In conclusion, the SOLID principles are a set of guidelines for software development that emphasize the importance of building code that is easy to maintain, understand, and extend. By following these principles, developers can create software that is flexible, robust, and easy to change.
+In conclusion, the SOLID principles are a set of guidelines for software development that emphasize the importance of building code that is easy to maintain, understand and extend. By following these principles, developers can create software that is flexible, robust, and easy to change.
 
 In this article, we discussed each of the SOLID principles in detail, along with code examples in C# to demonstrate how to implement them.
 
@@ -294,4 +294,4 @@ The Interface Segregation Principle (ISP) states that classes should not be forc
 
 Finally, the Dependency Inversion Principle (DIP) emphasizes the importance of depending on abstractions rather than concrete implementations. We demonstrated this principle using the example of a CustomerService class that depended on the abstraction of an ICustomerRepository interface, rather than the concrete implementation of a CustomerRepository class.
 
-By following these SOLID principles, developers can write code that is flexible, extensible, and easy to change. By adhering to these principles, developers can create software that is easy to maintain, understand, and extend, resulting in a more robust and flexible codebase that can better adapt to changing requirements over time.
+By following these SOLID principles, developers can write code that is flexible, extensible and easy to change. By adhering to these principles, developers can create software that is easy to maintain, understand, and extend, resulting in a more robust and flexible codebase that can better adapt to changing requirements over time.

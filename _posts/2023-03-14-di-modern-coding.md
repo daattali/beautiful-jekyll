@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding Dependency Injection in Modern Coding
-subtitle: Benefits, Drawbacks, and Implementation of Dependency Injection with code examples in C# 
+subtitle: Benefits, Drawbacks and Implementation of Dependency Injection with code examples in C# 
 tags: [di, dependency injection, microsoft, csharp, c#]
 comments: true
 ---
@@ -10,7 +10,7 @@ comments: true
 
 Dependency Injection (DI) is a programming concept that aims to reduce the coupling between components by decoupling the creation of dependencies from their use. In other words, instead of a component creating its own dependencies, it relies on an external entity to provide them. This external entity is usually a container or a framework responsible for managing dependencies.
 
-In practice, this means that instead of hardcoding dependencies within a class or method, the dependencies are passed to the class or method as parameters. This way, the class or method becomes more reusable, testable, and flexible. Additionally, it promotes the Single Responsibility Principle (SRP) by allowing the components to focus on their primary responsibility without worrying about creating or managing dependencies.
+In practice, this means that instead of hardcoding dependencies within a class or method, the dependencies are passed to the class or method as parameters. This way, the class or method becomes more reusable, testable and flexible. Additionally, it promotes the Single Responsibility Principle (SRP) by allowing the components to focus on their primary responsibility without worrying about creating or managing dependencies.
 
 For example, consider a class that sends an email. Without DI, the class may create its own instance of an email service, which creates tight coupling between the two components. On the other hand, with DI, the email service can be injected into the class as a dependency, making it more modular and decoupled.
 
@@ -24,7 +24,7 @@ There are several benefits of using DI in modern coding:
 
 4. Maintainability: DI promotes modularity and reduces coupling between components, making it easier to maintain the codebase.
 
-In conclusion, DI is an essential concept in modern coding that promotes decoupling and modularity in code components. By using DI, developers can build more testable, flexible, readable, and maintainable code.
+In conclusion, DI is an essential concept in modern coding that promotes decoupling and modularity in code components. By using DI, developers can build more testable, flexible, readable and maintainable code.
 
 While dependency injection can offer significant advantages in software development, there are also some potential disadvantages to consider:
 
@@ -123,9 +123,9 @@ In the SendEmail_ValidEmail_ReturnsTrue test method, we're testing the SendEmail
 
 Using dependency injection in our unit test allows us to easily mock the IEmailSender dependency and test the MessageService class in isolation, without relying on a real implementation of the IEmailSender. This makes our test more reliable and helps us to identify and fix issues more quickly.
 
-In .NET Core, the built-in dependency injection container is configured using the IServiceCollection interface. This interface provides methods to register services and dependencies, and then resolve them when needed. The container can be configured to use different lifetime scopes such as singleton, scoped, and transient depending on the requirements of the application.
+In .NET Core, the built-in dependency injection container is configured using the IServiceCollection interface. This interface provides methods to register services and dependencies and then resolve them when needed. The container can be configured to use different lifetime scopes such as singleton, scoped, and transient depending on the requirements of the application.
 
-The advantage of using dependency injection in .NET Core is that it simplifies the management of dependencies and allows for easier unit testing. Instead of creating and managing dependencies manually, the container can automatically resolve them and inject them into classes and components. This makes the code more modular, easier to maintain, and more flexible to change.
+The advantage of using dependency injection in .NET Core is that it simplifies the management of dependencies and allows for easier unit testing. Instead of creating and managing dependencies manually, the container can automatically resolve them and inject them into classes and components. This makes the code more modular, easier to maintain and more flexible to change.
 
 .NET Core solves some of the potential disadvantages of dependency injection. Here are a few examples:
 
@@ -135,6 +135,6 @@ The advantage of using dependency injection in .NET Core is that it simplifies t
 
 3. Enhances modularity and maintainability: With .NET Core's dependency injection framework, components can be developed and tested in isolation, which can improve code maintainability and make it easier to update individual components without impacting the entire system.
 
-Overall, .NET Core's built-in dependency injection framework provides a simple and effective way to manage dependencies in your application, and it helps to mitigate some of the common issues associated with manual dependency management.
+Overall, .NET Core's built-in dependency injection framework provides a simple and effective way to manage dependencies in your application and it helps to mitigate some of the common issues associated with manual dependency management.
 
 When combined with other design patterns such as microservices, DDD, SOLID and Clean Architecture, dependency injection can significantly improve the overall quality and maintainability of a .NET Core application. It helps to enforce the separation of concerns and reduces the coupling between components. By adhering to these principles, developers can create scalable and maintainable software that is easier to modify, extend and test.

@@ -8,7 +8,7 @@ comments: true
 
 ![Moving from Monolithic to Domain-Driven Design for a Distributed Web Application on Microsoft Cloud](../assets/img/posts/remote-work.jpg){:class="img-responsive"}
 
-Remote working has become increasingly popular over the years, particularly in the software industry. As someone who has been working with remote teams since 2008, and working from home since 2015, I can attest to the fact that there are both benefits and drawbacks to this style of work. In this article, I will discuss the advantages and disadvantages of remote working for software-related positions and my visions about future.
+Remote working has become increasingly popular over the years, particularly in the software industry. As someone who has been working with remote teams since 2008 and working from home since 2015, I can attest to the fact that there are both benefits and drawbacks to this style of work. In this article, I will discuss the advantages and disadvantages of remote working for software-related positions and my visions about future.
 
 ## Benefits of Remote Working
 Flexibility: One of the biggest advantages of remote working is the flexibility it provides. When you work remotely, you can set your own schedule and work from anywhere with an internet connection. This is particularly appealing to those who enjoy traveling or have family obligations. According to the Gartner 2021 Digital Worker Experience Survey, 43% of respondents said that flexibility in working hours helped them achieve greater productivity. 
@@ -41,16 +41,16 @@ To minimize distractions, remote workers can create a dedicated workspace that i
 
 To minimize communication challenges, remote workers can make an effort to over-communicate with their team. This may include using video conferencing software for important meetings or discussions, sending regular status updates or progress reports and being proactive in reaching out to team members when needed.
 
-To minimize technology issues, remote workers should ensure that they have a reliable internet connection and access to the necessary software and hardware. This may include investing in a high-quality router or modem, using a backup internet connection, and having a contingency plan in place in case of technology failures.
+To minimize technology issues, remote workers should ensure that they have a reliable internet connection and access to the necessary software and hardware. This may include investing in a high-quality router or modem, using a backup internet connection and having a contingency plan in place in case of technology failures.
 
-To minimize a lack of structure, remote workers should establish a consistent schedule and routine. This may include setting regular working hours, taking breaks at consistent intervals, and setting clear goals and deadlines for their work.
+To minimize a lack of structure, remote workers should establish a consistent schedule and routine. This may include setting regular working hours, taking breaks at consistent intervals and setting clear goals and deadlines for their work.
 
 In addition to these strategies, it's important for remote workers to prioritize their mental and physical health. This may include taking breaks throughout the day to stretch or exercise, practicing mindfulness or meditation.
 
 By implementing these strategies and prioritizing their well-being, remote workers can minimize the drawbacks of remote working and enjoy the many benefits that it has to offer.
 
 ## The Future of the Software Industry
-The software industry has seen tremendous growth in recent years, and this trend is expected to continue in the future. As more and more businesses move online, there is a growing demand for software developers, engineers, and other technology professionals.
+The software industry has seen tremendous growth in recent years and this trend is expected to continue in the future. As more and more businesses move online, there is a growing demand for software developers, engineers, and other technology professionals.
 
 Remote working is expected to play a key role in the future of the software industry. With advancements in technology, it has become easier than ever for teams to collaborate and work together remotely. This allows companies to tap into a larger pool of talent and build teams that are truly global.
 
@@ -59,9 +59,9 @@ Additionally, remote working has become increasingly popular among younger gener
 ## Conclusion
 In my opnion, it's unlikely that the trend of remote working in the software industry will change in the near future. In fact, many experts predict that remote work will continue to grow in popularity, even after the COVID-19 pandemic has subsided.
 
-The software industry is uniquely suited for remote work due to the nature of the work itself. Software development can be done from anywhere with an internet connection, making it easy for companies to hire talent from all over the world. Additionally, the industry has been early adopters of many of the technologies that make remote work possible, such as video conferencing, project management tools, and collaboration software.
+The software industry is uniquely suited for remote work due to the nature of the work itself. Software development can be done from anywhere with an internet connection, making it easy for companies to hire talent from all over the world. Additionally, the industry has been early adopters of many of the technologies that make remote work possible, such as video conferencing, project management tools and collaboration software.
 
-Remote work also offers many advantages for both employers and employees. For employers, it can lead to cost savings, increased productivity, and access to a larger pool of talent. For employees, it can offer greater flexibility, improved work-life balance, and the ability to work from anywhere.
+Remote work also offers many advantages for both employers and employees. For employers, it can lead to cost savings, increased productivity and access to a larger pool of talent. For employees, it can offer greater flexibility, improved work-life balance, and the ability to work from anywhere.
 
 While there are certainly challenges associated with remote work, such as social isolation and difficulty separating work and home life, many companies and employees have found ways to overcome these obstacles. As a result, it seems likely that remote work will continue to be a popular option for the software industry for years to come.
 
