@@ -44,7 +44,7 @@ Thus, while usually it will be marked, we jump over the first option and continu
 
 ![branches-2](/assets/data/2023-04-15-ci-pic-2.png){: .mx-auto.d-block :}
 
-Here, after setiing the `Branch name pattern`to `main`, we mark 'Require branches to be up to date before merging' to allow pull requests to be tested with the latest code and to prohibit bypassing the settings for any roles by choosing the `Do not allow bypassing the above settings` option:
+Here, after setting the `Branch name pattern` to `main`, we mark `Require branches to be up to date before merging` to allow pull requests to be tested with the latest code and to prohibit bypassing the settings for any roles by choosing the `Do not allow bypassing the above settings` option:
 
 ![branches-3](/assets/data/2023-04-15-ci-pic-3.png){: .mx-auto.d-block :}
 
@@ -61,11 +61,11 @@ Thus, to create a status check I add a corresponding config file to the reposito
 
 ![branches-5](/assets/data/2023-04-15-ci-pic-5.png){: .mx-auto.d-block :}
 
-The the full version of the code can be found [here](https://github.com/Zhenev/better-python-with-ci-cd/blob/main/.github/workflows/test-on-pr.yml).
+The full version of the code can be found [here](https://github.com/Zhenev/better-python-with-ci-cd/blob/main/.github/workflows/test-on-pr.yml).
 
 The provided YAML code represents a GitHub Actions workflow that automates testing operations for a project named "fizz_buzz" within the "better-python-with-ci-cd" repository. The workflow is triggered on push events to the "main" branch and pull requests being opened or synchronized for the "main" branch.
 
-The workflow consists of a single job named "test-fizz_buzz" that runs on an "ubuntu-latest" environment. It includes a matrix strategy that specifies the Python version (3.10.5) to be used for testing.
+The workflow consists of a single job named `test-fizz_buzz` that runs on an `ubuntu-latest` environment. It includes a matrix strategy that specifies the Python version `3.10.5` to be used for testing.
 
 The steps within the job are as follows:
 
@@ -79,7 +79,7 @@ The steps within the job are as follows:
 8. Run lint on fizz_buzz: Runs the Flake8 linter on the "fizz_buzz" directory to check for code style violations if the directory has changed.
 9. Test fizz_buzz with pytest: Runs pytest to execute tests located in the "fizz_buzz/tests" directory if the "fizz_buzz" directory has changed.
 
-In this workflow, several steps are conditional (if: env.PROJECT_CHANGED == 'true') and depend on whether changes have occurred in the `fizz_buzz` directory. These steps are skipped if no changes are detected, avoiding unnecessary operations and optimizing the workflow execution. One step, labeling the PR, was temporally disabled. We also remember that we do not have any real tests in the `fizz_buzz/tests` directory yet, since only initial test file set up was performed during the creation of the `fizz_buzz` project directory:
+In this workflow, several steps are conditional (if: `env.PROJECT_CHANGED == 'true'`) and depend on whether changes have occurred in the `fizz_buzz` directory. These steps are skipped if no changes are detected, avoiding unnecessary operations and optimizing the workflow execution. One step, labeling the PR, was temporally disabled. We also remember that we do not have any real tests in the `fizz_buzz/tests` directory yet, since only initial test file set up was performed during the creation of the `fizz_buzz` project directory:
 
 ![branches-9](/assets/data/2023-04-15-ci-pic-9.png){: .mx-auto.d-block :}
 
@@ -153,7 +153,7 @@ Now, I click `Create pull request`.... wait ...
 
 ![branches-13](/assets/data/2023-04-15-ci-pic-13.png){: .mx-auto.d-block :}
 
-...and fail!:)
+...and fail! :)
 
 
 ![branches-14](/assets/data/2023-04-15-ci-pic-14.png){: .mx-auto.d-block :}
