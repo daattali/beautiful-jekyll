@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microservices in Practice: APIs, Functions and More in a Global Taxi App
+title: Microservices in Practice - APIs, Functions and More in a Global Taxi App
 subtitle: APIs, Functions and More - Architecting a Global Taxi App with Azure
 tags: [azure, apis, serverlessFunctions, microservices, cloudComputing]
 comments: true
