@@ -36,7 +36,7 @@ In addition to providing a repository of solutions, Stack Overflow serves as a r
 Furthermore, the use of Stack Overflow transcends just problem-solving. It's also a learning platform where professionals can improve their understanding of different technologies. By reading through different questions and answers, professionals can broaden their knowledge base, keep up with the latest trends and even prepare for job interviews.
 
 ## Recherch on Stack Overflow's Influence
-Studies have revealed the depth of Stack Overflow's impact on the tech industry. According to the 2021 Stack Overflow Developer Survey, 92% of the respondents stated that they visit Stack Overflow at least a few times a week and 74% visit Stack Overflow daily.
+Studies have revealed the depth of Stack Overflow's impact on the tech industry. According to the 2021 Stack Overflow Developer Survey, 92% of the respondents stated that they visit Stack Overflow at least a few times a week and 74% visit Stack Overflow daily. The numbers are lower on 2022 Stack Overflow Developer Survey but still impressive once 81% of respondents visit Stack Overflow weekly and 53% of them visit daily.
 
 A study conducted by Bosu, Corley, Heaton and Chatterji in 2013 explored the role of Stack Overflow as a learning tool and found that participants learned something new in 69% of the visits and clarified their understanding in 77% of the visits.
 
