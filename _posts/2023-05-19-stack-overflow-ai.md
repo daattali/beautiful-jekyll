@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stack Overflow and AI - Evolving Together for the Future of the Tech Community
-subtitle: Understanding the Symbiosis of Community-Driven Platforms and Artificial Intelligence in Shaping the Next Generation of Problem-Solving and Innovation
+title: Stack Overflow and AI
+subtitle: Evolving Together for the Future of the Tech Community
 tags: [techCommunity, stackOverflow, AI, GPT, futureOfTech]
 comments: true
 ---
