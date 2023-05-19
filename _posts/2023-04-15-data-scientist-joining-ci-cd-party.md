@@ -122,10 +122,14 @@ In what follows, I will outline a specific use case for integrating changes that
 
 Let’s create a feature branch locally and then on the remote repository:
 
-```python
+```bash
 git checkout -b poetry-update
 git push origin poetry-update
 ```
+
+The first command, `git checkout -b poetry-update`, creates a new branch named `poetry-update` and switches to that branch. The `-b` flag indicates that a new branch is being created, and `poetry-update` is the name of the branch. By executing this command, I create a new branch and move to that branch to start making changes.
+
+The second command, `git push origin poetry-update`, pushes the newly created `poetry-update` branch to the remote repository. The push command is used to send the local branch and its commits to the remote repository, making it accessible to everyone having access to it.
 
 Now, a new branch called `poetry-update` is created on the remote repository: 
 
@@ -195,6 +199,16 @@ For this specific use case, we adopt a straightforward approach by merging the p
 
 ![branches-18](/assets/data/2023-04-15-ci-pic-18.png){: .mx-auto.d-block :}
 
+Now, what is left is to incorporate the latest updates into my local development environment. To this end, I fetch the changes locally and update the local copy of the `main` branch. To fetch the changes from the remote repository:
+```bash
+git fetch
+```
+To update the local copy of the main branch:
+```bash
+git checkout main
+git pull
+```
+The first command, `git checkout main`, switches to the `main` branch. The second command, `git pull`, fetches the latest changes from the remote `main` branch and merges them into your local copy of the `main` branch.
 
 ## Conclusion
 
