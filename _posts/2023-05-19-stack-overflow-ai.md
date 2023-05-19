@@ -37,3 +37,9 @@ Furthermore, the use of Stack Overflow transcends just problem-solving. It's als
 
 ## Recherch on Stack Overflow's Influence
 Studies have revealed the depth of Stack Overflow's impact on the tech industry. According to the 2021 Stack Overflow Developer Survey, 92% of the respondents stated that they visit Stack Overflow at least a few times a week and 74% visit Stack Overflow daily.
+
+A study conducted by Bosu, Corley, Heaton and Chatterji in 2013 explored the role of Stack Overflow as a learning tool and found that participants learned something new in 69% of the visits and clarified their understanding in 77% of the visits.
+
+Another study by Vasilescu, Filkov and Serebrenik also in 2013 investigated the correlation between participation on Stack Overflow and productivity in GitHub projects. They found that active participants on Stack Overflow tend to be more productive on GitHub, implying the learning and problem-solving on Stack Overflow translate to practical efficiency.
+
+The study **Learning from the Crowd: Collaborative Filtering Techniques for Identifying On-the-Job Performance of Professionals** by Ming, Chen and Weinberger in 2015 focused on data from Stack Overflow and identified strong correlations between performance on the platform and on-the-job performance.
