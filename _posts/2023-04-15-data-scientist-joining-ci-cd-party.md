@@ -159,7 +159,6 @@ Now, I click `Create pull request`.... wait ...
 
 ...and fail! :)
 
-
 ![branches-14](/assets/data/2023-04-15-ci-pic-14.png){: .mx-auto.d-block :}
 
 
@@ -169,7 +168,7 @@ Our status check failed, so now I proceed to investigate the details:
 
 ![branches-15](/assets/data/2023-04-15-ci-pic-15.png){: .mx-auto.d-block :}
 
-Here I see the annotation `Process completed with exit code 1.`. As we remember, the `test-fizz_buzz (3.10.5)` workflow includes checking that particular conditions are met:
+Here I see the annotation `Process completed with exit code 1.` As we remember, the [`test-fizz_buzz (3.10.5)` workflow](https://github.com/Zhenev/better-python-with-ci-cd/blob/main/.github/workflows/test-on-pr.yml) includes checking that two particular conditions are met and, if not, the process exits with `exit code `:
 1. There are changes in the code.
 2. The version is updated.
 
