@@ -2,12 +2,11 @@
 layout: post
 title: Portfolio
 subtitle: Picture Portfolio
+cover-img: assets/img/IMG_20230520_231741_985.jpg
 gh-repo: daattali/beautiful-jekyll
 tags: [Portfolio]
 comments: true
 ---
-   
-
 **Here is some bold text**
 ## Pictures
  
