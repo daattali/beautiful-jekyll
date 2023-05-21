@@ -25,7 +25,7 @@
   site: https://sites.google.com/view/one-policy-dress
   title: 'One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments'
   venue: 'Robotics: Science and Systems (RSS), 2023'
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/SQRCCQYAyiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   tags: 
     - deformable
     - affordance
