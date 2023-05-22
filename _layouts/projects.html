@@ -4,10 +4,9 @@ layout: page
 
 {{ content }}
 
-{% assign posts = paginator.posts | default: site.posts %}
 
 <div class="posts-list">
-    {% for post in posts %}
+    {% for post in site.projects %}
     <article class="post-preview">
 
         {%- capture thumbnail -%}
@@ -36,19 +35,7 @@ layout: page
 
         <a href="{{ post.url | absolute_url }}">
             <h2 class="post-title">{{ post.title | strip_html }}</h2>
-
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">
-                {{ post.subtitle | strip_html }}
-            </h3>
-            {% endif %}
         </a>
-
-        <p class="post-meta">
-            {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-            Posted on {{ post.date | date: date_format }}
-        </p>
-
         {% if thumbnail != "" %}
         <div class="post-image post-image-small">
             <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">

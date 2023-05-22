@@ -2,7 +2,7 @@
 layout: base
 ---
 
-{% include header.html type="post" %}
+{% include header.html type="project" %}
 
 <div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
     <div class="row">
@@ -46,18 +46,9 @@ layout: base
             </div>
             {% endif %}
 
-            <article role="main" class="blog-post">
+            <article role="main" class="project-post">
                 {{ content }}
             </article>
-
-            {% if page.tags.size > 0 %}
-            <div class="blog-tags">
-                <span>Tags:</span>
-                {% for tag in page.tags %}
-                <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-                {% endfor %}
-            </div>
-            {% endif %}
 
             {% if page.after-content %}
             <div class="after-content">

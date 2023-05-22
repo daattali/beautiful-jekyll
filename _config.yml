@@ -8,10 +8,20 @@ author: Diego Angulo Ramirez
 
 navbar-links:
   About Me: "aboutme"
+  Projects: /projects
+  CV: "cv"
+  Blog: /blog
   What's in here?:
     - Favorite song: "https://www.youtube.com/watch?v=47dtFZ8CFo8"
     - Something new?: "something"
-
+  
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title/
+  blog:
+    output: true
+    
 
 # --- Logo --- #
 
@@ -59,7 +69,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # Add a search button to the navbar
-post_search: false
+post_search: true
 
 # The keywords to associate with your website, for SEO purposes
 keywords: "diego,angulo,ramirez,ioi,obi,competitor,mipt,student,programmer,math,bolivia,cochabamba"
@@ -185,8 +195,9 @@ date_format: "%B %-d, %Y"
 timezone: "Europe/Moscow"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+# permalink: /:year-:month-:day-:title/
 paginate: 5
+paginate_path: "/blog/page:num/"
 
 kramdown:
   input: GFM
