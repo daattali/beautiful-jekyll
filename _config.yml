@@ -13,7 +13,7 @@ navbar-links:
   Blog: /blog
   What's in here?:
     - Favorite song: "https://www.youtube.com/watch?v=47dtFZ8CFo8"
-    - Something new?: "something"
+    - Problems created: "problemlist"
   
 collections:
   projects:
