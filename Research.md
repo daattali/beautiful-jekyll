@@ -42,13 +42,14 @@ R&R, **_Business and Politics_**.
 
 _Firms, Diplomats, and Piecemeal Globalization: How Corporate Interests Shape International Institutions_ (Book Project)
 
+The Bureaucratic Origins of International Law (with Matt Malis)
+
 Revolving Door Diplomats (with David Lindsey and Matt Malis)
 
 [Treaty Diplomacy and the Global Firm](assets/treaty_regimes_IPES.pdf)
 
 Transparency Shocks and Private Governance in Offshore Finance (with Daniel Berliner and Nikhil Kalyanpur)
 
-The Fiscal Legacy of Colonialism (with Vincent Arel-Bundock and Martin Hearson)
 
 
 
