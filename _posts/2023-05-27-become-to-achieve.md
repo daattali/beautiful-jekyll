@@ -38,8 +38,3 @@ To recognize whether a company is offering a healthy "become to achieve" environ
 
 ## Conclusion
 In conclusion, it's essential for organizations to adopt a balanced approach in promoting the "become to achieve" mindset. They should encourage growth and personal development while maintaining a healthy and sustainable work culture, taking into consideration other important aspects for career advancement.
-
-## References
-- Dweck, C. S. (2006). Mindset: The new psychology of success. New York: Random House.
-- Virtanen, M., Heikkilä, K., Jokela, M., Ferrie, J. E., Batty, G. D., Vahtera, J., & Kivimäki, M. (2012). Long working hours and coronary heart disease: a systematic review and meta-analysis. American journal of epidemiology, 176(7), 586-596.
-- Stanford University, (2014). The Productivity of Working Hours. The Economic Journal.
