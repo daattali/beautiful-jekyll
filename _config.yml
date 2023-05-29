@@ -20,7 +20,7 @@ author: Amos ljw
 ###############################################
 
 navbar-links:
-  Blog:
+  Blog: "index.html"
   About Me/Connect: "aboutme"
 #   Idea Record:
 #   Resources:
