@@ -3,11 +3,7 @@ layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
 ---
-
-刘君伟. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
+waiting update...
 
 What else do you need?
 
