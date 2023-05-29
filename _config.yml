@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: gogowaiting Website
+title: gogowaiting
 
 # Your name to show in the footer
 author: Amos ljw
@@ -20,11 +20,13 @@ author: Amos ljw
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://gogowaiting.github.io"
+  Blog:
+  About Me/Connect: "aboutme"
+  Idea Record:
+#   Resources:
+#     - Beautiful Jekyll: "https://beautifuljekyll.com"
+#     - Learn markdown: "https://www.markdowntutorial.com/"
+#   Author's home: "https://gogowaiting.github.io"
 
 ################
 # --- Logo --- #
@@ -94,7 +96,7 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "gogowaiting.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
