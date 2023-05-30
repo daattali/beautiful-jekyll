@@ -48,15 +48,9 @@ members:
           - name: Sashank Tirumala (MSR)
             photo_url: /img/members/sashank.jpg
             web_url: https://sashank-tirumala.github.io/
-          - name: Carl Qi (MSML)
-            photo_url: /img/members/carl.jpg
-            web_url: https://carl-qi.github.io/
           - name: Fan Yang (MSR)
             photo_url: /img/members/fanyang.jpg
             web_url: https://sites.google.com/view/fanyang98/
-          - name: Haolun (Harry) Zhang (MSR)
-            photo_url: /img/members/harry.jpg
-            web_url: https://harryzhangog.github.io/
           - name: Gunjan Sethi (MRSD)
             photo_url: /img/members/gunjans.JPEG
             web_url: https://www.ri.cmu.edu/ri-people/gunjan-sethi/
@@ -95,6 +89,10 @@ members:
       - name: Master's students (Reseach Master's)
         full: False
         list:
+          - name: Haolun (Harry) Zhang (MSR) -> MIT PhD
+            web_url: https://harryzhangog.github.io/
+          - name: Carl Qi (MSML) -> UT Austin PhD
+            web_url: https://carl-qi.github.io/
           - name: Chuer Pan (MSR) -> Columbia PhD
             web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
           - name: Gaurav Pathak (MSR) -> Adobe
