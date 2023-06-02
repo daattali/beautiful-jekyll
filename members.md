@@ -78,6 +78,9 @@ members:
           - name: Wen Hui Leng
             photo_url: /img/nophoto_faceboard_white.jpg
             web_url: 
+          - name: TJ Vitchutripop
+            photo_url: /img/members/tj.jpg
+            web_url: https://tjvitchutripop.github.io/
       # - name: Visiting Students
       #  full: false
        # list:
