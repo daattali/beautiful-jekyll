@@ -5,6 +5,29 @@ subtitle: For the MDS Capstone course
 
 ---
 
+2023:
+
+- [Autozen Technology](https://www.autozen.com/): _Autozen Valuation Guru_
+- [BGC Engineering Inc.](https://bgcengineering.ca/): _Predicting the largest floods in Canadian rivers_
+- [Citysage for Reliance Foundry](https://www.reliance-foundry.com/): _Noise Pollution: Spatial modelling and visualization of urban sound levels_
+- [Cymax Group Technologies](https://cymaxgroup.com/): _Product Knowledge Graph_
+- [EOAS department, UBC Faculty of Science](https://www.eoas.ubc.ca/): _Data Science for polar ice core climate reconstructions_
+- [GoldSpot Discoveries](https://goldspot.ca/): _A Study on the Effects of Representation Bias on AI Performance and Methods of Mitigating it_
+- [Insurance Corporation of BC](https://www.icbc.com/Pages/default.aspx): _Image Recognition of Vehicle Odometer Readings_
+- [Neotoma Paleoecology Database(University of Wisconsin – Madison)](https://www.neotomadb.org/): _Finding Fossils in the Literature_
+- [Olyns](https://www.olyns.com/): _The Price Is Right!_
+- [Rio Tinto Exploration](http://www.riotinto.com/): _Clean sat_
+- [Seaspan Corporation](https://www.seaspancorp.com/): _Development of operation and maintenance analytics platform for container ships_
+- [Sitewise Analytics](https://sitewise.com/): _Restaurant Segmentation Analysis_
+- [Slalom Consulting](https://www.slalom.com/): _Power Price Prediction - a short-term forecast_
+- [TRIUMF](https://www.triumf.ca/) and [UBC](https://www.ubc.ca/): _CALORICH AI_
+- [Trusting Pixels Inc.](https://www.trustingpixels.com/): _Compressed Softening Filter Detection_
+- [UBC Digital Emergency Medicine](https://digem.med.ubc.ca/): _Predictive analytics to support HLBC 8-1-1 and HEiDi triage_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Finding Football Talent with Wearable Technology Using PlayerMaker sensors to understand academy player performance_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Terrific Touch_
+- [Westland Insurance](https://www.westlandinsurance.ca/): _Predicting Customer Conversion_
+- [aDolus Inc](https://www.adolus.com/): _Can AI spot risky software in critical infrastructue?_
+
 2022:
 
 - [Canadian Campus Wellbeing Survey/UBC](https://pair.ubc.ca/surveys/canadian-campus-wellbeing-survey/): _Impact of COVID-19 on student mental health: Lessons from the CCWS_
