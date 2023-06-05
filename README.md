@@ -65,7 +65,7 @@ Scroll down to see the steps involved, but here is a 30-second video just as a r
 
 ### 1. Fork this project
 
-Click on the __*Fork*__ button at the top right corner of this page. Forking means that you now copied this entire project and all its files into your account. Don't click on the __*Create fork*__ button on the next page yet.
+Click on the __*Fork*__ button at the top right corner of this page. Forking means that you now copied this entire project and all its files into your account. Do not click on the __*Create fork*__ button on the next page yet.
 
 ### 2. Rename the repository to `YOURUSERNAME.github.io`
 
