@@ -43,7 +43,6 @@ __Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lat
 
 Developing and maintaining Beautiful Jekyll takes a lot of time and effort - thank you to anyone who helps fund this effort!
 
-- [LoadView-Testing](https://www.loadview-testing.com/products/jmeter-load-testing/)
 - [DoFollow](https://dofollow.co.uk/)
 - [\_hyp3ri0n](https://hyperiongray.com)
 
