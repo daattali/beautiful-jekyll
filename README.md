@@ -50,9 +50,9 @@ Developing and maintaining Beautiful Jekyll takes a lot of time and effort - tha
 
 # Build your website in 3 steps
 
-There's an easy way to build a website using Beautiful Jekyll, which is what this document will focus on. For most people (including myself!), the easy route is recommended.
+There are a few different ways to build a website using Beautiful Jekyll, and this document will only go through the simplest one: using a fork on GitHub. For most people (including myself!), this easy method is the recommended one.
 
-> If you're an advanced user that understands how GitHub Pages works, or if you're an expert user who knows how to use Ruby gems, then you can [skip the easy way](https://github.com/daattali/beautiful-jekyll#the-hard-way-using-ruby-gems) if you want more control.
+> Tip: The more advanced installation methods include either using GitHub Pages with remote themes, or using Ruby gems. You can head over to the [advanced installation section](https://github.com/daattali/beautiful-jekyll#the-harder-way-for-advanced-users) if you want more control, but I suggest you still read through the easy way first.
 
 ## The easy way (recommended!)
 
@@ -64,13 +64,13 @@ Scroll down to see the steps involved, but here is a 30-second video just as a r
 
 ### 1. Fork this project
 
-Click on the __*Fork*__ button at the top right corner of this page. Forking means that you now copied this entire project and all its files into your account. Do not click on the __*Create fork*__ button on the next page yet.
+Click on the __*Fork*__ button at the top right corner of this page. Forking means that you're copying this entire project and all its files into your account. Do not click on the __*Create fork*__ button on the next page yet.
 
 ### 2. Rename the repository to `YOURUSERNAME.github.io`
 
-You'll see the word "repository" used a lot in GitHub - it simply means "project". Under __*Repository name*__ you should see the name `beautiful-jekyll` - rename the repository to `YOURUSERNAME.github.io` (replace `YOURUSERNAME` with your GitHub user name). It's important to use this exact name so that GitHub will recognize it and automatically create a website for this project.   
+You'll see the word "repository" used a lot in GitHub - it simply means "project". Under __*Repository name*__ you should see the name `beautiful-jekyll`, this is where you need to rename your project to `YOURUSERNAME.github.io` (replace `YOURUSERNAME` with your GitHub user name). It's important to use this exact name so that GitHub will recognize it and automatically create a website for this project.   
 
-> If you want to use a different URL for your website, check out the [FAQ](https://beautifuljekyll.com/faq/#custom-domain)
+> Tip: If you want to use a different URL for your website, check out the [FAQ](https://beautifuljekyll.com/faq/#custom-domain)
  
 ### 3. Customize your website settings
 
@@ -84,7 +84,7 @@ If you named your project correctly and made an edit to the config file, your we
 
 Note that this was the easy way to create your website, but it does come at a cost: when Beautiful Jekyll gains new features in the future, *updating* your website to include all the latest features is cumbersome. See the [FAQ](https://beautifuljekyll.com/faq/#updating) for help with upgrading in the future.
 
-## The hard way (using ruby gems)
+## The harder way (for advanced users)
 
 If you followed the easy method above, then you already have your site and you can skip this section!
 
