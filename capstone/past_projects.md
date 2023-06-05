@@ -5,6 +5,61 @@ subtitle: For the MDS Capstone course
 
 ---
 
+2023:
+
+- [Autozen Technology](https://www.autozen.com/): _Autozen Valuation Guru_
+- [BGC Engineering Inc.](https://bgcengineering.ca/): _Predicting the largest floods in Canadian rivers_
+- [Citysage for Reliance Foundry](https://www.reliance-foundry.com/): _Noise Pollution: Spatial modelling and visualization of urban sound levels_
+- [Cymax Group Technologies](https://cymaxgroup.com/): _Product Knowledge Graph_
+- [EOAS department, UBC Faculty of Science](https://www.eoas.ubc.ca/): _Data Science for polar ice core climate reconstructions_
+- [GoldSpot Discoveries](https://goldspot.ca/): _A Study on the Effects of Representation Bias on AI Performance and Methods of Mitigating it_
+- [Insurance Corporation of BC](https://www.icbc.com/Pages/default.aspx): _Image Recognition of Vehicle Odometer Readings_
+- [Neotoma Paleoecology Database(University of Wisconsin – Madison)](https://www.neotomadb.org/): _Finding Fossils in the Literature_
+- [Olyns](https://www.olyns.com/): _The Price Is Right!_
+- [Rio Tinto Exploration](http://www.riotinto.com/): _Clean sat_
+- [Seaspan Corporation](https://www.seaspancorp.com/): _Development of operation and maintenance analytics platform for container ships_
+- [Sitewise Analytics](https://sitewise.com/): _Restaurant Segmentation Analysis_
+- [Slalom Consulting](https://www.slalom.com/): _Power Price Prediction - a short-term forecast_
+- [TRIUMF](https://www.triumf.ca/) and [UBC](https://www.ubc.ca/): _CALORICH AI_
+- [Trusting Pixels Inc.](https://www.trustingpixels.com/): _Compressed Softening Filter Detection_
+- [UBC Digital Emergency Medicine](https://digem.med.ubc.ca/): _Predictive analytics to support HLBC 8-1-1 and HEiDi triage_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Finding Football Talent with Wearable Technology Using PlayerMaker sensors to understand academy player performance_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Terrific Touch_
+- [Westland Insurance](https://www.westlandinsurance.ca/): _Predicting Customer Conversion_
+- [aDolus Inc](https://www.adolus.com/): _Can AI spot risky software in critical infrastructue?_
+
+2022:
+
+- [Canadian Campus Wellbeing Survey/UBC](https://pair.ubc.ca/surveys/canadian-campus-wellbeing-survey/): _Impact of COVID-19 on student mental health: Lessons from the CCWS_
+- [Corporate Finance Institute Education Inc.](https://corporatefinanceinstitute.com/): _Recency, Frequency, and Monetary Value Analysis_
+- [Corporate Finance Institute Education Inc.](https://corporatefinanceinstitute.com/): _Sales Forecasting_
+- [Defined Finance Ltd.](https://www.defined.fi/): _DeFi Dashboard: Follow and Forecast the Money_
+- [Glentel](https://www.glentel.com/home): _Practical people analytics for predicting retention_
+- [Glentel](https://www.glentel.com/home): _Practical people analytics for predicting employee performance_
+- [GoldSpot Discoveries](https://goldspot.ca/): _Detection and Mitigation of Data Drift and Model Decay_
+- [GoldSpot Discoveries](https://goldspot.ca/): _Panorama stitching of core-photos_
+- [Olyns](https://www.olyns.com/): _Prune CNN models to help people go green_
+- [OraQ AI](https://www.oraq.ai/): _Using NLP to untangle the complex web of dental conditions_
+- [Population Health Surveillance and Epidemiology](http://www.bccdc.ca/our-services/programs/population-public-health-surveillance): _BC Chronic Disease Visualization and Trend Analysis with R Shiny_
+- [Reliance Foundry Co. Ltd.](https://www.reliance-foundry.com/): _LiDAR object detection and classification for cities_
+- [Riversol Skincare Solutions Inc](https://www.riversol.com/): _Forecasting the success of online lead generation_
+- [Rocketbrew Inc.](https://www.therocketbrew.com/): _Creating (figurative) ecommerce shopping aisles with ML 🛒🛒🛒_
+- Seahorse Strategies: _Data Analytics for Stock Market Trading_
+- [Sensing in Biomechanical Processes Lab (SimPL)](https://simpl.mech.ubc.ca/): _Towards a simplified method for video confirmation of head impact events in contact sports_
+- [Sensorimotor Physiology Laboratory](https://kin.educ.ubc.ca/research/neuro-mechanical/sensorimotor-physiology-lab/): _Decomposition of muscle activity for sensorimotor neuroscience_
+- [Sitewise Analytics](https://sitewise.com/): _Determining Restaurant Sales Performance Drivers through Feature Selection_
+- [Suncor Energy Inc.](https://www.suncor.com/): _Modelling Heat Exchanger Units to Optimize Cleaning Schedules_
+- [TRIUMF](https://www.triumf.ca/): _RICH AI_
+- [Trusting Pixels Inc.](https://www.trustingpixels.com/): _IMAGE COMPARISON ANALYSIS_
+- [Trusting Pixels Inc.](https://www.trustingpixels.com/): _PHOTO WITHIN PHOTO DETECTION_
+- [UBC Animal Welfare Program](https://awp.landfood.ubc.ca/): _Cow bonds: Visualizing and assessing changes in the social networks of dairy cows_
+- [UBC Sauder](https://www.sauder.ubc.ca) and [TeejLab](https://teejlab.com/): _An Analytical Framework for Quantifying API Risks_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Passing Perfection - Using Optical Tracking and Event Data to Evaluate MLS Player’s Passing Tendencies_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Disruptive Defending - Using Optical Tracking and Event Data to Evaluate MLS Players’ Defensive Performance_
+- [Viewpoint AI](https://www.viewpoint.ai/): _Life Decision Support: Choose your best career path_
+- [Westland Insurance](https://www.westlandinsurance.ca/): _Predicting Customer Retention_
+- [World Bank](https://www.worldbank.org/en/home): (How quickly can South Asia transition to a green economy?)
+
 2021:
 
 - [Analytika](http://www.analytika.ca/): _Transforming Customer Experiences_
