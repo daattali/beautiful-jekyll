@@ -56,15 +56,15 @@
                     document.getElementById("parasha").innerHTML = element.hebrew;
                 }
                 if (element.category == "candles") {
-                    document.getElementById("candle-light").innerHTML = new Date(element.date).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    document.getElementById("candle-light").innerHTML = new Date(element.date).toLocaleTimeString([], {hourCycle: 'h23', hour: '2-digit', minute:'2-digit'});
                     // add 20 minutes to candle lighting time
                     let mincha = new Date(element.date);
                     mincha.setMinutes(mincha.getMinutes() + 20);
 
-                    document.getElementById("mincha").innerHTML = mincha.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    document.getElementById("mincha").innerHTML = mincha.toLocaleTimeString([], {hourCycle: 'h23', hour: '2-digit', minute:'2-digit'});
                 }
                 if (element.category == "havdalah") {
-                    document.getElementById("maariv").innerHTML = new Date(element.date).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    document.getElementById("maariv").innerHTML = new Date(element.date).toLocaleTimeString([], {hourCycle: 'h23', hour: '2-digit', minute:'2-digit'});
                 }
             });
         }
