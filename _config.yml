@@ -10,21 +10,20 @@
 ############################
 
 # Name of website
-title: Ohel Tefilla
+title: אהל תפילה
 
 # Your name to show in the footer
-author: Ohel Tefilla
+author: אהל תפילה
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  אודות: "about"
+  קבוצות ווטסאפ:
+    - קבוצת המניין: "https://chat.whatsapp.com/LqAKwn8nHdq4OXry1o7ojr"
+    - נשות אהל תפילה: "https://chat.whatsapp.com/CykrfeqjfJ72GjSQDIAghu"
 
 ################
 # --- Logo --- #

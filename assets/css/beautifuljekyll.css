@@ -108,6 +108,10 @@ img {
   margin-top: -1.5625rem;
 }
 
+div.container[role="main"] {
+  direction: rtl;
+}
+
 /* Comments */
 
 .disqus-comments {
