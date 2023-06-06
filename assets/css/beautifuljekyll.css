@@ -108,8 +108,9 @@ img {
   margin-top: -1.5625rem;
 }
 
-div.container[role="main"] {
-  direction: rtl;
+p, div, h2, h3, h4, h5, h6, li {
+  unicode-bidi: plaintext;
+  text-align: justify;
 }
 
 /* Comments */

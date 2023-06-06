@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        p, h2, h3 {
+            text-align: center;
+            align-items: center;
+        }
+
+        #zmanim {
+            border-radius: 25px;
+            border: 2px solid #161440;
+            padding: 10px;
+            }
+    </style>
+    <div id="zmanim" style="text-align: center;">
+            <h2 id="parasha"></h2>
+            <h3>ליל שבת</h3>
+            <p>הדלקת נרות: <span id="candle-light"></span></p>
+            <p>מנחה וקבלת שבת: <span id="mincha"></span></p>    
+            <h3>יום שבת</h3>
+            <p>שחרית: 8:40</p>
+            <p>שוכן עד: 9:00</p>
+            <p><b><u>דף היומי עם כיבוד קל</u></b></p>
+            <p>אבות ובנים: 18:00</p>
+            <p>מנחה: 18:30</p>
+            <p>מעריב וצאת שבת: <span id="maariv"></span></p>
+    </div>
+    <script>
+        const zmanim_url = "https://www.hebcal.com/zmanim?cfg=json&geonameid=295432"
+        const parasha_url = "https://www.hebcal.com/shabbat?cfg=json&b=40&geonameid=295432&M=on"
+        async function getZmanim() {
+            const response = await fetch(zmanim_url);
+
+            // Parsing it to JSON format
+            const data = await response.json();
+            console.log(data.results);
+        }
+
+        async function getParasha() {
+            const response = await fetch(parasha_url);
+
+            // Parsing it to JSON format
+            const data = await response.json();
+
+            data.items.forEach(element => {
+                if (element.category == "parashat") {
+                    document.getElementById("parasha").innerHTML = element.hebrew;
+                }
+                if (element.category == "candles") {
+                    document.getElementById("candle-light").innerHTML = new Date(element.date).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    // add 20 minutes to candle lighting time
+                    let mincha = new Date(element.date);
+                    mincha.setMinutes(mincha.getMinutes() + 20);
+
+                    document.getElementById("mincha").innerHTML = mincha.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                }
+                if (element.category == "havdalah") {
+                    document.getElementById("maariv").innerHTML = new Date(element.date).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                }
+            });
+        }
+
+        getParasha();
+
+
+    </script>
+</body>
+
+</html>
