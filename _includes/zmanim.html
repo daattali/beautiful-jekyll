@@ -33,6 +33,7 @@
             <p>אבות ובנים: 18:00</p>
             <p>מנחה: 18:30</p>
             <p>מעריב וצאת שבת: <span id="maariv"></span></p>
+            <p>מעריב ב': <span id="maarivB"></span></p>
     </div>
     <script>
         const zmanim_url = "https://www.hebcal.com/zmanim?cfg=json&geonameid=295432"
@@ -65,6 +66,10 @@
                 }
                 if (element.category == "havdalah") {
                     document.getElementById("maariv").innerHTML = new Date(element.date).toLocaleTimeString([], {hourCycle: 'h23', hour: '2-digit', minute:'2-digit'});
+                    // add 15 minutes to havdalah time
+                    let maarivB = new Date(element.date);
+                    maarivB.setMinutes(maarivB.getMinutes() + 15);
+                    document.getElementById("maarivB").innerHTML = maarivB.toLocaleTimeString([], {hourCycle: 'h23', hour: '2-digit', minute:'2-digit'});
                 }
             });
         }
