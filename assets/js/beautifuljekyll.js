@@ -1,6 +1,6 @@
 // Dean Attali / Beautiful Jekyll 2020
 
-var BeautifulJekyllJS = {
+let BeautifulJekyllJS = {
 
   bigImgEl : null,
   numImgs : null,
@@ -54,23 +54,23 @@ var BeautifulJekyllJS = {
 
       // 2fc73a3a967e97599c9763d05e564189
       // set an initial image
-      var imgInfo = BeautifulJekyllJS.getImgInfo();
-      var src = imgInfo.src;
-      var desc = imgInfo.desc;
+      const imgInfo = BeautifulJekyllJS.getImgInfo();
+      const src = imgInfo.src;
+      const desc = imgInfo.desc;
       BeautifulJekyllJS.setImg(src, desc);
 
       // For better UX, prefetch the next image so that it will already be loaded when we want to show it
-      var getNextImg = function() {
-        var imgInfo = BeautifulJekyllJS.getImgInfo();
-        var src = imgInfo.src;
-        var desc = imgInfo.desc;
+      const getNextImg = function() {
+        const imgInfo = BeautifulJekyllJS.getImgInfo();
+        const src = imgInfo.src;
+        const desc = imgInfo.desc;
 
-        var prefetchImg = new Image();
+        const prefetchImg = new Image();
         prefetchImg.src = src;
         // if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
 
         setTimeout(function(){
-          var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
+          const img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
           $(".intro-header.big-img").prepend(img);
           setTimeout(function(){ img.css("opacity", "1"); }, 50);
 
@@ -93,9 +93,9 @@ var BeautifulJekyllJS = {
   },
 
   getImgInfo : function() {
-    var randNum = Math.floor((Math.random() * BeautifulJekyllJS.numImgs) + 1);
-    var src = BeautifulJekyllJS.bigImgEl.attr("data-img-src-" + randNum);
-    var desc = BeautifulJekyllJS.bigImgEl.attr("data-img-desc-" + randNum);
+    const randNum = Math.floor((Math.random() * BeautifulJekyllJS.numImgs) + 1);
+    const src = BeautifulJekyllJS.bigImgEl.attr("data-img-src-" + randNum);
+    const desc = BeautifulJekyllJS.bigImgEl.attr("data-img-desc-" + randNum);
 
     return {
       src : src,
