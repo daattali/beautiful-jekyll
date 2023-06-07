@@ -50,9 +50,9 @@ Developing and maintaining Beautiful Jekyll takes a lot of time and effort - tha
 
 # Build your website in 3 steps
 
-There are a few different ways to build a website using Beautiful Jekyll, and this document will only go through the simplest one: using a fork on GitHub. For most people (including myself!), this easy method is the recommended one.
+There are a few different ways to build a website using Beautiful Jekyll, and this document will go through the simplest one: using a fork on GitHub. For most people (including myself!), this easy method is the recommended one.
 
-> Tip: The more advanced installation methods include either using GitHub Pages with remote themes, or using Ruby gems. You can head over to the [advanced installation section](https://github.com/daattali/beautiful-jekyll#the-harder-way-for-advanced-users) if you want more control, but I suggest you still read through the easy way first.
+> Tip: The more advanced installation methods include either using GitHub Pages with remote themes, or using Ruby gems. They provide you with more control, but are only intended for advanced users. You can head over to the [advanced installation section]([https://github.com/daattali/beautiful-jekyll#the-harder-way-for-advanced-users](https://beautifuljekyll.com/getstarted/#install-steps-hard)), but I suggest you still read through the easy method first.
 
 ## The easy way (recommended!)
 
@@ -76,19 +76,17 @@ You'll see the word "repository" used a lot in GitHub - it simply means "project
 
 Edit the `_config.yml` file to change any settings you want. To edit the file, first click on it to view the file, and on the next page click on the pencil icon to edit it (watch the video tutorial above if you're confused).  The settings in the file are self-explanatory and there are comments inside the file to help you understand what each setting does. Any line that begins with a hashtag (`#`) is a comment, and the other lines are actual settings. After changing the settings, click the green __*Commit changes*__ button to save these edits.
 
-Note that in the video above only one setting in the `_config.yml` file is edited, but you should go through the rest of the settings as well.
+> Note: In the video above, only one setting in the `_config.yml` file is edited, but you should go through the rest of the settings as well.
 
 ### 4. Congratulations! You have a website!
 
 If you named your project correctly and made an edit to the config file, your website should be ready in a minute or two at `https://YOURUSERNAME.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so. Your website will be initialized with several sample blog posts and a couple other pages.
 
-Note that this was the easy way to create your website, but it does come at a cost: when Beautiful Jekyll gains new features in the future, *updating* your website to include all the latest features is cumbersome. See the [FAQ](https://beautifuljekyll.com/faq/#updating) for help with upgrading in the future.
-
 ## The harder way (for advanced users)
 
-If you followed the easy method above, then you already have your site and you can skip this section!
+The instructions above explain how to use Beautiful Jekyll in the easiest way: by forking on GitHub. There are more [advanced installation methods](https://beautifuljekyll.com/getstarted/#install-steps-hard) that include either using GitHub Pages with remote themes, or using Ruby gems. They provide you with more control, but are only intended for advanced users.
 
-If you want to use Beautiful Jekyll as a ruby gem instead, follow the [advanced installation instructions](https://beautifuljekyll.com/getstarted/#install-steps-hard). This is harder to set up initially, but it makes it super easy to keep your site up to date with Beautiful Jekyll when more features are added in the future.
+> Note: Beautiful Jekyll was primarily designed to be used as a GitHub theme, so you will not get any support if you use this theme via Ruby gems. 
 
 # Plans
 
