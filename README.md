@@ -52,7 +52,7 @@ Developing and maintaining Beautiful Jekyll takes a lot of time and effort - tha
 
 There are a few different ways to build a website using Beautiful Jekyll, and this document will go through the simplest one: using a fork on GitHub. For most people (including myself!), this easy method is the recommended one.
 
-> Tip: The more advanced installation methods include either using GitHub Pages with remote themes, or using Ruby gems. They provide you with more control, but are only intended for advanced users. You can head over to the [advanced installation section]([https://github.com/daattali/beautiful-jekyll#the-harder-way-for-advanced-users](https://beautifuljekyll.com/getstarted/#install-steps-hard)), but I suggest you still read through the easy method first.
+Even if you choose to use one of the advanced installation methods, I still suggest you read through the easy method first.
 
 ## The easy way (recommended!)
 
