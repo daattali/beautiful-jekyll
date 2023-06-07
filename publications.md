@@ -5,7 +5,7 @@ subtitle:
 ---
 
 <!--Check out [this document](https://docs.google.com/document/d/1i3QrSpbLlRs28Q36Qig6iu1pL7XMSm0XzmdhTXJysk8/edit#) to see our research highlights! <br>-->
-Here is a [video](https://www.youtube.com/watch?v=BOH1w-K5ao8) (February 6, 2023) on some of our recent work.
+Here is a [video](https://www.youtube.com/watch?v=BOH1w-K5ao8) of a talk I gave (February 6, 2023) on some of our recent work.
 
 <!--Also, here is a [recent video](https://www.youtube.com/watch?v=YSj4cIFxvhc) (Dec 10, 2021) on some of our work.-->
 
