@@ -1,28 +1,44 @@
-## Unreleased version
+## v6.0.0 (2023-06-08)
+
+This version has been in the works for a few years. It includes several new features that were highly requested, numerous bug fixes, and aggresively encourages migrating from the old Google Universal Analytics to the new Analytics 4.
+
+#### Breaking changes
+
+- As of July 2023, Google Universal Analytics is going away and being replaced by Google Analytics 4. Beautiful Jekyll sites that still use the old analytics tag will show a warning to encourage them to move to Analytics 4 (#1096).
+- More control over RSS feed sharing: previously, an RSS feed was *always* generated, and if the config setting `rss-description` was set then there was an RSS icon in the footer. Now, an RSS feed is only generated when the config setting `rss-description` exists, and an RSS footer icon is only shown if `rss: true` is set in the `social-network-links` config settings.
+
+#### New parameters and settings
 
 - Added `navbar-var-length` config setting that allows the navigation menu to be the same length as the longest sub-menu, so that long words in the submenu are not cut off (#765) 
-- Added `post_search` config setting that creates a Search button in the navbar (older websites need to set `post_search: true` to enable this feature) (#770)
+- Added `post_search` config setting that creates a Search button in the navbar (#770)
 - Added `edit_page_button` config setting that adds a "Edit page" button to the footer (to edit the current page on GitHub) (#1004)
-- BREAKING CHANGE: More control over RSS feed sharing: previously, an RSS feed was *always* generated, and if the config setting `rss-description` was set then there was an RSS icon in the footer. Now, an RSS feed is only generated when the config setting `rss-description` exists, and an RSS footer icon is only shown if `rss: true` is set in the `social-network-links` config settings 
+- Added `footer-hover-col` config setting to customize the hover colour of links in the footer (#848)
+
+#### New features and improvements
+
+- Made the home page feed more accessible for screen readers (#950)
+- Added support for giscus comments (#886) and CommentBox (#960)
+- Added support for Cloudflare Analytics (#797)
+- Added Reddit in share options of posts (#815)
+
+#### Bug fixes
+
 - Fixed page titles, subtitles, and excerpts rendering correctly when there are special characeters in them (#856) 
-- Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari.
-- Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
 - Fixed bug where navbar secondary level dropdown items didn't inherit the same colour as the primary navbar links
 - Fixed bug where the navbar "burger" collapsed button didn't always revert back to a light colour
 - Fixed bug where using an image as a navbar title did not render in GitHub Project pages that did not have a custom domain
-- Fixed issue where image thumbnails on the feed page were always forced into a square rather than maintaining a proper image aspect ratio
-- Added support for Patreon, Medium, and Itch.io in the social network links in the footer (#783, #788)
+- Fixed bug where image thumbnails on the feed page were always forced into a square rather than maintaining a proper image aspect ratio
 - Fixed bug where special characters in the title led to broken share tags (#744)
-- Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
-- Added support for Cloudflare Analytics (#797)
-- Added Reddit in share options of posts (#815)
-- Added support for giscus comments (#886) and CommentBox (#960)
 - Fixed bug where staticman didn't work jQuery slim version is used (#766)
 - Fixed very long strings to wrap around the next line rather than go off-screen (#787)
-- Added `footer-hover-col` config setting to customize the hover colour of links in the footer (#848)
-- Added social network links for Discord (#907), Kaggle (#961), and Hackerrank (#978)
-- Made the home page feed more accessible for screen readers (#950) 
-- When using Google Analytics config setting, encourage using the new `gtag` and discourage using the deprecated `google_analytics` (#1096)
+
+#### Small changes
+
+- Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
+- Added social network links for Patreon, Medium, Itch.io, Discord, Kaggle, Hackerrank (#783, #788, #907, #961, #978)
+- Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari
+- Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
+
 
 ## v5.0.0 (2020-09-15)
 
@@ -68,7 +84,6 @@ One of the major changes in this version is that a lot of time was spent on reth
 
 - Upgraded kramdown to version 2.3.0 to fix security issues
 - Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version
-
 
 ## v4.1.0 (2020-08-08)
 
