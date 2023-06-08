@@ -31,23 +31,26 @@
 
         #timesheet {
             padding-top: 200px;
+            margin: 120px;
         }
 
         h1 {
             font-size: 100px;
             font-weight: 800;
+            margin-bottom: 50px;
         }
 
         h2 {
             font-size: 70px;
             font-weight: 700;
             margin-top: 30px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         p {
-            font-size: 55px;
-            margin: 20px;
+            font-size: 60px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         small {
@@ -76,30 +79,68 @@
             width: fit-content;
             block-size: fit-content;
             margin: auto;
-            margin-top: 50px
+            margin-top: 100px
+        }
+
+        .framed p {
+            margin: 20px;
+        }
+
+        .column {
+            float: right;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .note {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .withcomment {
+            margin-bottom: 5px;
         }
     </style>
     <div id="zmanim" style="text-align: center;">
         <div id="timesheet">
-            <h1 id="parasha">
-                </h2>
-                <h2>ליל שבת</h3>
-                    <p style="margin-bottom: 5px;">הדלקת נרות: <span id="candle-light"></span></p>
-                    <small>&rlm;40 דקות לפני השקיעה</small>
-                    <p>מנחה וקבלת שבת: <span id="mincha"></span></p>
-                    <h2>יום שבת</h3>
-                        <p>שחרית: 8:40</p>
-                        <p>שוכן עד: 9:00</p>
-                        <p style="font-size: 45px;"><b>דף היומי עם כיבוד קל <br> לאחר התפילה</b></p>
-                        <p>אבות ובנים: 18:00</p>
-                        <p>מנחה: 18:30</p>
-                        <p>מעריב וצאת שבת: <span id="maariv"></span></p>
-                        <p>מעריב ב'</small>: <span id="maarivB"></span></p>
+            <h1 id="parasha"></h1>
+                <div class="row">
+                    <div class="column">
+                        <h2>ליל שבת</h2>
+                            <p class="withcomment">הדלקת נרות: <span id="candle-light"></span></p>
+                            <small>&rlm;40 דקות לפני השקיעה</small>
+                            <p>מנחה וקבלת שבת: <span id="mincha"></span></p>
+                            <div class="framed">
+                                <p style="font-size: 40px;">התפילות מתקיימות<br>ליד חגואל 7, גישה דרך הפארק</p>
+                            </div>
+                    </div>
+                    <div class="column">
+                        <h2>יום שבת</h2>
+                            <p>שחרית: 8:40</p>
+                            <p>שוכן עד: 9:00</p>
+                            <p class="note">דף היומי עם כיבוד קל <br> לאחר התפילה</p>
+                            <p>אבות ובנים: 18:00</p>
+                            <p>מנחה: 18:30</p>
+                            <p>מעריב וצאת שבת: <span id="maariv"></span></p>
+                            <p>מעריב ב'</small>: <span id="maarivB"></span></p>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <h2>ימי חול</h2>
+                    <p class="withcomment">שחרית: 6:30</p>
+                    <small>מנין שחרית בחניית בניין 13</small>
+                    <p>ערבית ולימוד דף יומי: 20:15</p>
 
+                </div>
+                
         </div>
-        <div class="framed">
-            <p>ליד חגואל 7, גישה דרך הפארק</p>
-        </div>
+
     </div>
     <button id="download">Download</button>
     <script>
