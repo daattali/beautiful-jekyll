@@ -13,7 +13,8 @@
     <style>
         p,
         h1,
-        h2 {
+        h2,
+        small {
             text-align: center;
             align-items: center;
             font-family: 'Assistant', serif;
@@ -38,16 +39,20 @@
         }
 
         h2 {
-            font-size: 60px;
+            font-size: 70px;
             font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 25px;
         }
 
         p {
-            font-size: 40px;
+            font-size: 55px;
+            margin: 20px;
         }
 
         small {
-            font-size: 20px;
+            font-size: 30px;
+            margin-top: 5px;
         }
 
         button {
@@ -63,22 +68,37 @@
             font-size: 16px;
             border-radius: 4%;
         }
+
+        .framed {
+            border: 5px solid;
+            border-color: #171441;
+            border-radius: 15px;
+            width: fit-content;
+            block-size: fit-content;
+            margin: auto;
+            margin-top: 50px
+        }
     </style>
     <div id="zmanim" style="text-align: center;">
         <div id="timesheet">
             <h1 id="parasha">
                 </h2>
                 <h2>ליל שבת</h3>
-                    <p>הדלקת נרות: <span id="candle-light"></span></p>
+                    <p style="margin-bottom: 5px;">הדלקת נרות: <span id="candle-light"></span></p>
+                    <small>&rlm;40 דקות לפני השקיעה</small>
                     <p>מנחה וקבלת שבת: <span id="mincha"></span></p>
                     <h2>יום שבת</h3>
                         <p>שחרית: 8:40</p>
                         <p>שוכן עד: 9:00</p>
-                        <p><b><u>דף היומי עם כיבוד קל</u></b></p>
+                        <p style="font-size: 45px;"><b>דף היומי עם כיבוד קל <br> לאחר התפילה</b></p>
                         <p>אבות ובנים: 18:00</p>
                         <p>מנחה: 18:30</p>
                         <p>מעריב וצאת שבת: <span id="maariv"></span></p>
                         <p>מעריב ב'</small>: <span id="maarivB"></span></p>
+
+        </div>
+        <div class="framed">
+            <p>ליד חגואל 7, גישה דרך הפארק</p>
         </div>
     </div>
     <button id="download">Download</button>
