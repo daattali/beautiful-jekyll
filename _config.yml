@@ -176,7 +176,7 @@ footer-hover-col: "#0085A1"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
-# Gogle Universal Analytics ID -- deprecated
+# Google Universal Analytics ID -- deprecated
 # As of July 2023 this is no longer supported by Google! If you are still using `google_analytics`,
 # you should switch to using the `gtag` field above instead.
 #google_analytics: "UA-XXXXXXXX-X"
