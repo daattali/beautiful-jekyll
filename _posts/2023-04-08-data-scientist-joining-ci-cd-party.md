@@ -147,6 +147,7 @@ cd .\fizz_buzz\
 
 When being run for the first time, a new `poetry.lock` file is created within the same folder.
 
+NOTE: For each new project (folder) added to the repository, it is recommended to include a separate `pyproject.toml` file within the project folder. Opening the project folder as a separate project in a new IDE window allows proper isolation and management of dependencies for each project. In this case, the `pyproject.toml` file serves as the configuration for the project's dependencies using Poetry. Thus, PyCharm will automatically detect the presence of the `pyproject.toml` file and suggest creating a Poetry environment based on its contents. By accepting this suggestion, PyCharm will set up the project with the appropriate Poetry-based interpreter environment, allowing seamless integration with the specified dependencies.
 
 ## Conclusion
 
