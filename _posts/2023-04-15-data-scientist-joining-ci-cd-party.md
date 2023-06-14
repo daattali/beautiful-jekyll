@@ -79,7 +79,7 @@ The steps within the job are as follows:
 8. Run lint on fizz_buzz: Runs the Flake8 linter on the "fizz_buzz" directory to check for code style violations if the directory has changed.
 9. Test fizz_buzz with pytest: Runs pytest to execute tests located in the "fizz_buzz/tests" directory if the "fizz_buzz" directory has changed.
 
-In this workflow, several steps are conditional (if: `env.PROJECT_CHANGED == 'true'`) and depend on whether changes have occurred in the `fizz_buzz` directory. These steps are skipped if no changes are detected, avoiding unnecessary operations and optimizing the workflow execution. One step, labeling the PR, was temporally disabled. We also remember that we do not have any real tests in the `fizz_buzz/tests` directory yet, since only initial test file set up was performed during the creation of the `fizz_buzz` project directory:
+In this workflow, several steps are conditional (if: `env.PROJECT_CHANGED == 'true'`) and depend on whether changes have occurred in the `fizz_buzz` directory. These steps are skipped if no changes are detected, avoiding unnecessary operations and optimizing the workflow execution. One step, labeling the PR, will not work [until the `actions-ecosystem/action-add-labels` runner is upgraded to use Node.js 16](https://github.com/actions-ecosystem/action-add-labels/issues/459). We also remember that we do not have any real tests in the `fizz_buzz/tests` directory yet, since only initial test file set up was performed during the creation of the `fizz_buzz` project directory:
 
 ![branches-9](/assets/data/2023-04-15-ci-pic-9.png){: .mx-auto.d-block :}
 
