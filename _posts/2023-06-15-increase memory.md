@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hot add memory to a kubernetes node VM
-date: 2023-06-27T15:00:20.305Z
+date: 2023-06-15T15:00:20.305Z
 ---
 
 Recently I had to increase the memory in a bunch of Kubernetes nodes running on VMware and I wanted to avoid switching off the nodes as it means draining them first which sometimes take quite a bit of time and can get the customer slightly nervous. So I ended up doing it online thanks to memory hot add being enabled on the VMs.
