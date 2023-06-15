@@ -79,7 +79,7 @@
             width: fit-content;
             block-size: fit-content;
             margin: auto;
-            margin-top: 100px
+            margin-top: 90px
         }
 
         .framed p {
@@ -110,35 +110,36 @@
     <div id="zmanim" style="text-align: center;">
         <div id="timesheet">
             <h1 id="parasha"></h1>
-                <div class="row">
-                    <div class="column">
-                        <h2>ליל שבת</h2>
-                            <p class="withcomment">הדלקת נרות: <span id="candle-light"></span></p>
-                            <small>&rlm;40 דקות לפני השקיעה</small>
-                            <p>מנחה וקבלת שבת: <span id="mincha"></span></p>
-                            <div class="framed">
-                                <p style="font-size: 40px;">התפילות מתקיימות<br>ליד חגואל 7, גישה דרך הפארק</p>
-                            </div>
+            <div class="row">
+                <div class="column">
+                    <h2>ליל שבת</h2>
+                    <p class="note">דף היומי: <span id="day-yomi-friday"></span></p>
+                    <p class="withcomment">הדלקת נרות: <span id="candle-light"></span></p>
+                    <small>&rlm;40 דקות לפני השקיעה</small>
+                    <p>מנחה וקבלת שבת: <span id="mincha"></span></p>
+                    <div class="framed">
+                        <p style="font-size: 40px;">התפילות מתקיימות<br>ליד חגואל 7, גישה דרך הפארק</p>
                     </div>
-                    <div class="column">
-                        <h2>יום שבת</h2>
-                            <p>שחרית: 8:40</p>
-                            <p>שוכן עד: 9:00</p>
-                            <p class="note">דף היומי עם כיבוד קל <br> לאחר התפילה</p>
-                            <p>אבות ובנים: 18:00</p>
-                            <p>מנחה: 18:30</p>
-                            <p>מעריב וצאת שבת: <span id="maariv"></span></p>
-                            <p>מעריב ב'</small>: <span id="maarivB"></span></p>
-                    </div>                    
                 </div>
-                <div class="row">
-                    <h2>ימי חול</h2>
-                    <p class="withcomment">שחרית: 6:30</p>
-                    <small>מנין שחרית בחניית בניין 13</small>
-                    <p>ערבית ולימוד דף יומי: 20:15</p>
+                <div class="column">
+                    <h2>יום שבת</h2>
+                    <p>שחרית: 8:40</p>
+                    <p>שוכן עד: 9:00</p>
+                    <p class="note">דף היומי עם כיבוד קל <br> לאחר התפילה</p>
+                    <p>אבות ובנים: 18:00</p>
+                    <p>מנחה: 18:30</p>
+                    <p>מעריב וצאת שבת: <span id="maariv"></span></p>
+                    <p>מעריב ב'</small>: <span id="maarivB"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <h2>ימי חול</h2>
+                <p class="withcomment">שחרית: 6:30</p>
+                <small>מנין שחרית בחניית בניין 13</small>
+                <p>ערבית ולימוד דף יומי: 20:15</p>
 
-                </div>
-                
+            </div>
+
         </div>
 
     </div>
@@ -161,23 +162,32 @@
             const data = await response.json();
 
             data.items.forEach(element => {
-                if (element.category == "parashat") {
-                    document.getElementById("parasha").innerHTML = element.hebrew;
-                }
-                if (element.category == "candles") {
-                    document.getElementById("candle-light").innerHTML = new Date(element.date).toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
-                    // add 20 minutes to candle lighting time
-                    let mincha = new Date(element.date);
-                    mincha.setMinutes(mincha.getMinutes() + 20);
+                switch (element.category) {
+                    case "parashat":
+                        document.getElementById("parasha").innerHTML = element.hebrew;
+                        break;
+                    case "candles":
+                        document.getElementById("candle-light").innerHTML = new Date(element.date).toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
+                        // add 20 minutes to candle lighting time
+                        let mincha = new Date(element.date);
+                        mincha.setMinutes(mincha.getMinutes() + 20);
 
-                    document.getElementById("mincha").innerHTML = mincha.toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
-                }
-                if (element.category == "havdalah") {
-                    document.getElementById("maariv").innerHTML = new Date(element.date).toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
-                    // add 15 minutes to havdalah time
-                    let maarivB = new Date(element.date);
-                    maarivB.setMinutes(maarivB.getMinutes() + 15);
-                    document.getElementById("maarivB").innerHTML = maarivB.toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
+                        document.getElementById("mincha").innerHTML = mincha.toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
+                        let dafYomiFriday = new Date(element.date);
+                        dafYomiFriday.setMinutes(dafYomiFriday.getMinutes() - 5);
+                        document.getElementById("day-yomi-friday").innerHTML = dafYomiFriday.toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
+                        break;
+                    case "havdalah":
+                        document.getElementById("maariv").innerHTML = new Date(element.date).toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
+                        // add 15 minutes to havdalah time
+                        let maarivB = new Date(element.date);
+                        maarivB.setMinutes(maarivB.getMinutes() + 15);
+                        document.getElementById("maarivB").innerHTML = maarivB.toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
+
+                        break;
+
+                    default:
+                        break;
                 }
             });
         }
