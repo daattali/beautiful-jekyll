@@ -29,6 +29,10 @@ display_categories: [work]
 
 ### Conference articles
 
+<b>Un algorithme multiéchelle pour déformer les objets de façon réaliste - application à la modélisation de la croissance du cerveau foetal</b><br>
+     <font size="3"> Fleur Gaudfernau, Stéphanie Allassonniere, Erwan Le Pennec.<br>
+     GRETSI 2023, Grenoble  </font><br>
+
 <b>A multiscale algorithm for computing realistic image transformations – Application to the modelling of fetal brain growth</b><br>
      <font size="3"> Fleur Gaudfernau, Stéphanie Allassonniere, Erwan Le Pennec.<br>
      SPIE Medical Imaging 2023  </font><br>
@@ -37,7 +41,9 @@ display_categories: [work]
 <b>Analysis of the Anatomical Variability of Fetal Brains with Corpus Callosum Agenesis</b><br>
      <font size="3"> Fleur Gaudfernau, Eleonore Blondiaux, Stéphanie Allassonniere <br>
      MICCAI 2021 – Perinatal, Preterm and Paediatric Image Analysis Workshop, Oct 2021, Strasbourg.</font><br>
-     [![DOI:10.1007/978-3-030-87735-4_26](https://zenodo.org/badge/DOI/10.1007/978-3-030-87735-4_26.svg?colorB=7289da)](https://doi.org/10.1007/978-3-030-87735-4_26)   
+     [![DOI:10.1007/978-3-030-87735-4_26](https://zenodo.org/badge/DOI/10.1007/978-3-030-87735-4_26.svg?colorB=7289da)](https://doi.org/10.1007/978-3-030-87735-4_26) 
+
+     
 
 <hr style="border:1px solid #2b6777"/>
 
