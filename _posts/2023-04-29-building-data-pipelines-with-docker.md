@@ -192,7 +192,7 @@ By running the command above, I can create and enter a Docker container where I 
 - `--entrypoint=bash`: This option specifies that the `entrypoint` for the container should be set to the `bash` shell. The entrypoint is the command that is executed when the container starts. By setting it to `bash`, I override the default `entrypoint` defined in the Docker image, e.g. `python` prompt, and start a `bash` shell instead.
 - `python`: This argument specifies the name of the Docker image to use for the container. In this case, it is the Python image. The Docker daemon will pull the Python image from a Docker registry if it is not already available locally.
 
-NOTE: **The python images come in many flavors, each designed for a specific use case.** [link](https://hub.docker.com/_/python); however, the provided command does not explicitely include a version tag for the Python image, so it actually refers to the latest version available at the time of pulling, `python:latest`. In general, relying on the `latest` tag can potentially lead to compatibility issues or unexpected behavior if the base image gets updated.
+NOTE: **The python images come in many flavors, each designed for a specific use case** ([link](https://hub.docker.com/_/python); however, the provided command does not explicitely include a version tag for the Python image, so it actually refers to the latest version available at the time of pulling, `python:latest`. In general, relying on the `latest` tag can potentially lead to compatibility issues or unexpected behavior if the base image gets updated.
 
 Running the last command results in a sequence of messages:
 
@@ -399,7 +399,11 @@ What I actually want to accomplish, is to to build functionality to read source 
 To run a Postgres container, we need to configure it. One part of the configuration involves using environmental variables. For Postgres, we require `USER`, `PASSWORD`, and the database name. To set environmental variables when running a Docker container, use the `-e` flag:
 
 ```bash
-docker run -it -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_DB="postgres_test_db" postgres:13
+docker run -it \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="postgres_test_db" \
+postgres:13
 ```
 
 Another aspect of the configuration involves Docker volumes, which ensure data persistence in Docker. Since a database needs to store files in the file system, saving records requires specifying a location where the corresponding files can be stored. However, containers have their own isolated file systems, and when a container is stopped, the data stored within it is lost. To address this, Docker volumes provide a solution by mapping a folder on the host machine to a folder within the container.
@@ -410,10 +414,10 @@ To achieve this, the `-v` flag is used in the Docker command, allowing the speci
 
 ```bash
 docker run -it \
-	-e POSTGRES_USER="root" \
-	-e POSTGRES_PASSWORD="root" \
-	-e POSTGRES_DB="postgres_test_db" \
-	-v C:/../postgres_data_host: /var/lib/postgresql/data \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="postgres_test_db" \
+  -v C:/../postgres_data_host: /var/lib/postgresql/data \
 postgres:13
 ```
 
@@ -699,7 +703,7 @@ Alternatively, to keep it cleaner, we can use the header row of the source file:
 If we return to the `pgcli` prompt of the Postgres container and list the tables, we will see the `accelerometer_data` table:
 
 ```bash
-\dt
+root@127:postgres_test_db>\dt
 +--------+------------------+-------+-------+
 | Schema | Name             | Type  | Owner |
 |--------+------------------+-------+-------|
@@ -771,7 +775,7 @@ while True:
 		i += 1
 
     except StopIteration:
-        print("Finished ingesting data into the postgres database, total number of chunks - {i}.")
+        print("Finished ingesting data into the postgres database, number of chunks - {i}.")
         break
 ```
 
@@ -787,13 +791,14 @@ Collecting wget
   Preparing metadata (setup.py) ... done
 Building wheels for collected packages: wget
   Building wheel for wget (setup.py) ... done
-  Created wheel for wget: filename=wget-3.2-py3-none-any.whl size=9657 sha256=dc5703b5ea046bd28dd3da6ad22c00e04419c...
-  Stored in directory: /root/.cache/pip/wheels/f0/e4/9c/b3ed593784fe0147db216173b4046fce93fae7130b29e4464e
+  Created wheel for wget: filename=wget-3.2-py3-none-any.whl size=9657 sha256=dc5703b5ea046b...
+  Stored in directory: /root/.cache/pip/wheels/f0/e4/9c/b3ed593784fe0147db216173b4046fce93...
 Successfully built wget
 Installing collected packages: wget
 Successfully installed wget-3.2	
 root@763d96abefeb:/#
 ```
+The `ingest_data.py` file functions:
 
 ```python
 import wget
@@ -829,7 +834,8 @@ def main(params):
     table_name = params.table_name
     url = params.url
     
-    # the backup files can be gzipped, keep the correct extension for pandas to be able to open the file
+    # the backup files can be gzipped
+    # keep the correct extension for pandas to be able to open the file
     csv_name = __fetch_downloaded_file_name(url)
     if csv_name:
         try:
@@ -842,7 +848,9 @@ def main(params):
 
     engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
 
-    pd.read_csv(csv_name).head(n=0).to_sql(name=table_name, con=engine, index=False, if_exists='replace')
+    pd.read_csv(csv_name).head(n=0).to_sql(
+	name=table_name, con=engine, index=False, if_exists='replace'
+    )
     df_iter = pd.read_csv(csv_name, iterator=True, chunksize=50000)
 
     i = 1
@@ -861,7 +869,7 @@ def main(params):
             i += 1
 
         except StopIteration:
-            print(f"Finished ingesting data into the postgres database, total num of chunks = {i - 1}")
+            print(f"Finished ingesting data into the postgres database, {i - 1} chunks.")
             break
 
 ```
@@ -877,7 +885,10 @@ if __name__ == '__main__':
     parser.add_argument('--host', required=True, help='host for postgres')
     parser.add_argument('--port', required=True, help='port for postgres')
     parser.add_argument('--db', required=True, help='database name for postgres')
-    parser.add_argument('--table_name', required=True, help='name of the table where we will write the results to')
+    parser.add_argument(
+	    '--table_name', required=True,
+	    help='name of the table where we will write the results to'
+    )
     parser.add_argument('--url', required=True, help='url of the csv file')
 
     args = parser.parse_args()
@@ -902,7 +913,7 @@ NOTE: passing the password directly in the terminal is, of course, an unacceptab
 The output of the script should resemble the following:
 
 ```bash
-100% [..........................................................................] 3731094 / 3731094
+100% [...........................................................] 3731094 / 3731094
 accelerometer.csv downloaded.
 inserted chunk 1, took 1.247 second
 inserted chunk 2, took 1.494 second
@@ -963,21 +974,21 @@ Building the image took approximately 34 seconds:
 
 ```bash
 [+] Building 33.4s (9/9) FINISHED
- => [internal] load .dockerignore                                                                    0.0s
- => => transferring context: 2B                                                                      0.0s
- => [internal] load build definition from Dockerfile                                                 0.1s
- => => transferring dockerfile: 204B                                                                 0.0s
- => [internal] load metadata for docker.io/library/python:3.10                                       2.3s
- => CACHED [1/4] FROM docker.io/library/python:3.10@sha256:f5ef86211c0ef0db2e3059787088221602cad...  0.0s
- => [internal] load build context                                                                    0.0s
- => => transferring context: 36B                                                                     0.0s
- => [2/4] RUN pip install pandas sqlalchemy psycopg2 wget                                            29.2s
- => [3/4] WORKDIR /app                                                                               0.2s
- => [4/4] COPY ingest_data.py ingest_data.py                                                         0.2s
- => exporting to image                                                                               1.5s
- => => exporting layers                                                                              1.5s
- => => writing image sha256:17ebc2e45bb0eef04d843a799ccc425f90cf45b3305c814e4050f77d83358318         0.0s
- => => naming to docker.io/library/accelerometer_pipeline:0.0.1                                      0.0s
+ => [internal] load .dockerignore                                                         0.0s
+ => => transferring context: 2B                                                           0.0s
+ => [internal] load build definition from Dockerfile                                      0.1s
+ => => transferring dockerfile: 204B                                                      0.0s
+ => [internal] load metadata for docker.io/library/python:3.10                            2.3s
+ => CACHED [1/4] FROM docker.io/library/python:3.10@sha256:f5ef86211c0ef0db2e30597870...  0.0s
+ => [internal] load build context                                                         0.0s
+ => => transferring context: 36B                                                          0.0s
+ => [2/4] RUN pip install pandas sqlalchemy psycopg2 wget                                 29.2s
+ => [3/4] WORKDIR /app                                                                    0.2s
+ => [4/4] COPY ingest_data.py ingest_data.py                                              0.2s
+ => exporting to image                                                                    1.5s
+ => => exporting layers                                                                   1.5s
+ => => writing image sha256:17ebc2e45bb0eef04d843a799ccc425f90cf45b3305c814e4050f...      0.0s
+ => => naming to docker.io/library/accelerometer_pipeline:0.0.1                           0.0s
 ```
 
 We can now see the image listed:
@@ -1000,7 +1011,7 @@ docker run -it --network python_postgres accelerometer_pipeline:0.0.1 \
   --host=pstgr_cont --port=5432 \
   --db=postgres_test_db --table_name=accelerometer_data_dock \
   --url=https://archive.ics.uci.edu/ml/machine-learning-databases/00611/accelerometer.csv
-100% [..........................................................................] 3731094 / 3731094
+100% [................................................................] 3731094 / 3731094
 accelerometer.csv downloaded.
 inserted chunk 1, took 1.335 second
 inserted chunk 2, took 1.235 second
@@ -1061,9 +1072,10 @@ def __fetch_downloaded_file_name(url_string):
 
 
 def main():
-    """The script takes a set of Postgres database connection parameters, table name, and url, reads a csv file,
-    and uploads it into a Postgres db table. During the upload it reports how much time it took to upload each chunk
-    and how many chunks have been uploaded.
+    """The script takes a set of Postgres database connection parameters, table name,
+    and url, reads a csv file, and uploads it into a Postgres db table. During the
+    upload it reports how much time it took to upload each chunk and how many chunks
+    have been uploaded.
     """
     user = os.getenv("POSTGRES_USER")
     password = os.getenv("POSTGRES_PASSWORD")
@@ -1076,7 +1088,8 @@ def main():
     print(user)
     print(url)
 
-    # the backup files can be gzipped, keep the correct extension for pandas to be able to open the file
+    # the backup files can be gzipped
+    # keep the correct extension for pandas to be able to open the file
     csv_name = __fetch_downloaded_file_name(url)
     if csv_name:
         try:
@@ -1090,7 +1103,9 @@ def main():
 
     engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
 
-    pd.read_csv(csv_name).head(n=0).to_sql(name=table_name, con=engine, index=False, if_exists='replace')
+    pd.read_csv(csv_name).head(n=0).to_sql(
+	name=table_name, con=engine, index=False, if_exists='replace'
+    )
     df_iter = pd.read_csv(csv_name, iterator=True, chunksize=50000)
 
     i = 1
@@ -1109,7 +1124,7 @@ def main():
             i += 1
 
         except StopIteration:
-            print(f"Finished ingesting data into the postgres database, total num of chunks = {i - 1}")
+            print(f"Finished ingesting data into the postgres database, {i - 1} chunks.")
             break
 
 
