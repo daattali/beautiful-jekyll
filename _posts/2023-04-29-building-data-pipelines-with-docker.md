@@ -65,9 +65,6 @@ To create a container based on an image, select the image and click `Run`. Fill 
 
 Alternatively, you can use the command prompt:
 
-bash
-
-
 ```bash
 docker run -p 8080:5000 --name welcome-to-docker-app welcome-to-docker
 ```
