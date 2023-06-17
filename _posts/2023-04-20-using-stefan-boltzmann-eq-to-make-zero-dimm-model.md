@@ -3,7 +3,7 @@ layout: post
 title: Using the stefan-boltzmann equation to create a zero-dimensional climate model.
 subtitle: Using the stefan-boltzmann equation and simple algebra the temperature of a "naked" earth can be easily solved for.
 # cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/earth.png
+thumbnail-img: /assets/img/earth.jpg
 # share-img: /assets/img/path.jpg
 tags: [modeling, climate]
 ---
