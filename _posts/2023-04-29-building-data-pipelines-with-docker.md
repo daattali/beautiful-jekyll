@@ -1222,7 +1222,7 @@ secrets:
   postgres_db:
     file: ./config/postgres_db.txt
 ```
-### Database service
+#### Database service
 
 In this configuration of the database service:
 - It is defined with the image directive set to `postgres:13`, pulling the official Postgres Docker image version 13.
