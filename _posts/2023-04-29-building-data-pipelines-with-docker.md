@@ -192,7 +192,7 @@ By running the command above, I can create and enter a Docker container where I 
 - `--entrypoint=bash`: This option specifies that the `entrypoint` for the container should be set to the `bash` shell. The entrypoint is the command that is executed when the container starts. By setting it to `bash`, I override the default `entrypoint` defined in the Docker image, e.g. `python` prompt, and start a `bash` shell instead.
 - `python`: This argument specifies the name of the Docker image to use for the container. In this case, it is the Python image. The Docker daemon will pull the Python image from a Docker registry if it is not already available locally.
 
-NOTE: **The python images come in many flavors, each designed for a specific use case** ([link](https://hub.docker.com/_/python); however, the provided command does not explicitely include a version tag for the Python image, so it actually refers to the latest version available at the time of pulling, `python:latest`. In general, relying on the `latest` tag can potentially lead to compatibility issues or unexpected behavior if the base image gets updated.
+NOTE: **The python images come in many flavors, each designed for a specific use case** ([link](https://hub.docker.com/_/python)); however, the provided command does not explicitely include a version tag for the Python image, so it actually refers to the latest version available at the time of pulling, `python:latest`. In general, relying on the `latest` tag can potentially lead to compatibility issues or unexpected behavior if the base image gets updated.
 
 Running the last command results in a sequence of messages:
 
@@ -547,7 +547,7 @@ root@127:postgres_test_db>
 I am now connected to Postgres and can test the connection to the database. For example, let's list the available tables:
 
 ```bash
-\dt
+root@127:postgres_test_db>\dt
 +--------+------+------+-------+
 | Schema | Name | Type | Owner |
 |--------+------+------+-------|
@@ -775,7 +775,7 @@ while True:
 		i += 1
 
     except StopIteration:
-        print("Finished ingesting data into the postgres database, number of chunks - {i}.")
+        print("Finished ingesting data into the postgres database, {i} chunks.")
         break
 ```
 
@@ -791,8 +791,8 @@ Collecting wget
   Preparing metadata (setup.py) ... done
 Building wheels for collected packages: wget
   Building wheel for wget (setup.py) ... done
-  Created wheel for wget: filename=wget-3.2-py3-none-any.whl size=9657 sha256=dc5703b5ea046b...
-  Stored in directory: /root/.cache/pip/wheels/f0/e4/9c/b3ed593784fe0147db216173b4046fce93...
+  Created wheel for wget: filename=wget-3.2-py3-none-any.whl size=9657 sha256=dc5703b...
+  Stored in directory: /root/.cache/pip/wheels/f0/e4/9c/b3ed593784fe0147db216173b4...
 Successfully built wget
 Installing collected packages: wget
 Successfully installed wget-3.2	
@@ -822,9 +822,9 @@ def __fetch_downloaded_file_name(url_string):
 
 
 def main(params):
-    """ The function takes a set of parameters, reads a csv file, and uploads it into a Postgres db table.
-    During the upload it reports how much time it took to upload each chunk and how many chunks have been
-    uploaded.
+    """ The function takes a set of parameters, reads a csv file, and uploads it into
+    a Postgres db table. During the upload it reports how much time it took to upload
+    each chunk and how many chunks have been uploaded.
     """
     user = params.user
     password = params.password
@@ -974,21 +974,21 @@ Building the image took approximately 34 seconds:
 
 ```bash
 [+] Building 33.4s (9/9) FINISHED
- => [internal] load .dockerignore                                                         0.0s
- => => transferring context: 2B                                                           0.0s
- => [internal] load build definition from Dockerfile                                      0.1s
- => => transferring dockerfile: 204B                                                      0.0s
- => [internal] load metadata for docker.io/library/python:3.10                            2.3s
- => CACHED [1/4] FROM docker.io/library/python:3.10@sha256:f5ef86211c0ef0db2e30597870...  0.0s
- => [internal] load build context                                                         0.0s
- => => transferring context: 36B                                                          0.0s
- => [2/4] RUN pip install pandas sqlalchemy psycopg2 wget                                 29.2s
- => [3/4] WORKDIR /app                                                                    0.2s
- => [4/4] COPY ingest_data.py ingest_data.py                                              0.2s
- => exporting to image                                                                    1.5s
- => => exporting layers                                                                   1.5s
- => => writing image sha256:17ebc2e45bb0eef04d843a799ccc425f90cf45b3305c814e4050f...      0.0s
- => => naming to docker.io/library/accelerometer_pipeline:0.0.1                           0.0s
+ => [internal] load .dockerignore                                                 0.0s
+ => => transferring context: 2B                                                   0.0s
+ => [internal] load build definition from Dockerfile                              0.1s
+ => => transferring dockerfile: 204B                                              0.0s
+ => [internal] load metadata for docker.io/library/python:3.10                    2.3s
+ => CACHED [1/4] FROM docker.io/library/python:3.10@sha256:f5ef86211c0ef0db2e...  0.0s
+ => [internal] load build context                                                 0.0s
+ => => transferring context: 36B                                                  0.0s
+ => [2/4] RUN pip install pandas sqlalchemy psycopg2 wget                         29.2s
+ => [3/4] WORKDIR /app                                                            0.2s
+ => [4/4] COPY ingest_data.py ingest_data.py                                      0.2s
+ => exporting to image                                                            1.5s
+ => => exporting layers                                                           1.5s
+ => => writing image sha256:17ebc2e45bb0eef04d843a799ccc425f90cf45b3305c8...      0.0s
+ => => naming to docker.io/library/accelerometer_pipeline:0.0.1                   0.0s
 ```
 
 We can now see the image listed:
