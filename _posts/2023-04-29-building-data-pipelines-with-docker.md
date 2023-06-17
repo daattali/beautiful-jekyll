@@ -8,9 +8,9 @@ comments: true
 ---
 
 This blog post serves as a tutorial, aiming to provide an overview of how Docker Compose can be utilized with Python and Postgres to create a robust data ingestion pipeline app. Divided into three parts, this tutorial walks the reader through the fundamental concepts of Docker and Dockerfiles for container orchestration and offers hands-on implementation of a containerized data ingestion project through a carefully crafted Docker Compose script. Throughout this tutorial, I place special emphasis on essential concepts, including:
-- volume mounting for enabling persistent storage of data and a secure approach to passing environmental variables;
-- handling of environmental variables and adapting the script to load them from a configuration file;
-- enhancing clarity and maintaining an organized directory structure for a project.
+- Volume mounting for enabling persistent storage of data and a secure approach to passing environmental variables;
+- Handling of environmental variables and adapting the script to load them from a configuration file;
+- Enhancing clarity and maintaining an organized directory structure for a project.
 
 The full repository of this tutorial is available [here](https://github.com/Zhenev/better-python-with-ci-cd/tree/main/docker_python_postgres_tutorial).
 
@@ -1184,6 +1184,7 @@ POSTGRES_USER=root
 POSTGRES_PASSWORD=root
 POSTGRES_DB=machines_db
 ```
+### Docker Compose
 
 With the `postgres_db.env` configuration file also in place, we can now proceed to define the `docker-compose.yml` file:
 
@@ -1238,7 +1239,9 @@ Now, in the Python console we can approach the database from the host and see, t
 
 ## Summary
 
-In the first part of our exploration, I provided an introduction to Docker by exploring the core concepts of containers, how to run containers from pre-built images, and essential Docker commands. Next, I dove into juggling containers with Dockerfiles, which allow us to define container configurations, dependencies, and environments. I created Dockerfiles for Python and Postgres containers, including dockerizing a data ingestion script, and established communication between them using networks to manage them as one cohesive system. Finally, I tied it all together with a hands-on data engineering project. 
+In the first part of our exploration, I introduced Docker by discussing its core concepts such as running containers from pre-built images. Next, we delved into the topic of container orchestration using Dockerfiles, which enable us to define container configurations, manage dependencies, and set up environments. I created Dockerfiles for Python and Postgres containers, including dockerizing a data ingestion script, and established communication between them using networks to manage them as one cohesive system. Finally, I tied it all together with a hands-on data engineering project - implementation of a containerized data ingestion project through a Docker Compose script. Throughout this tutorial, I covered essential aspects of the Docker workflow, including basic commands, porting, volume mounting, handling environmental variables, and maintaining an organized directory structure for a project to enhance clarity.
+
+The full repository of this tutorial is available [here](https://github.com/Zhenev/better-python-with-ci-cd/tree/main/docker_python_postgres_tutorial).
 
 <sup>1</sup> See how to install Docker for different operating systems from this [chapter of the Docker Turotial by Nana Janashia](https://youtu.be/3c-iBn73dDE?t=1437).
 
