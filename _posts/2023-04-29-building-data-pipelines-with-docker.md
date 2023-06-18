@@ -1301,7 +1301,7 @@ Particularf measures can be implemented further down the road, aiming to enhance
 
 ### Performance and Cost
 1. Add data validation and quality checks at various stages of the pipeline.
-2. Testing. Goes without saying :joy:
+2. Testing. Goes without saying 😂
 3. Improving query performance:
 	- Analyze and optimize query execution plans, utilize indexing strategies, and leverage query tuning techniques to improve overall performance.
  	- Large datasets can be divided into smaller partitions or shards to improve query performance and enable distributed processing.
