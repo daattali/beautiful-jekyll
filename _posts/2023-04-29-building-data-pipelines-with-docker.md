@@ -1325,6 +1325,7 @@ Particularf measures can be implemented further down the road, aiming to enhance
   	- Integrate with authentication and access control mechanisms to enforce role-based permissions for accessing and interacting with data assets. 
 3. Implement data retention and archiving policies to manage data lifecycle.
 
+
 <sup>1</sup> See how to install Docker for different operating systems from this [chapter of the Docker Turotial by Nana Janashia](https://youtu.be/3c-iBn73dDE?t=1437).
 
 <sup>2</sup> I use [`poetry`](https://python-poetry.org) to manage the dependencies, for more details see my [Data Scientist Joining CI/CD party, Part 1](https://zhenev.github.io/2023-04-08-data-scientist-joining-ci-cd-party/) blog post.
