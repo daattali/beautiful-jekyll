@@ -42,9 +42,6 @@ members:
           - name: Mansi Agrawal (MSR)
             photo_url: /img/members/mansi.jpg
             web_url: https://mansiagarwal11.github.io/
-          - name: Sarthak Shetty (MSME)
-            photo_url: /img/members/sarthak.jpg
-            web_url: https://sarthakjshetty.github.io/
           - name: Sashank Tirumala (MSR)
             photo_url: /img/members/sashank.jpg
             web_url: https://sashank-tirumala.github.io/
@@ -95,6 +92,8 @@ members:
       - name: Master's students (Reseach Master's)
         full: False
         list:
+          - name: Sarthak Shetty (MSME) -> Path Robotics
+            web_url: https://sarthakjshetty.github.io/
           - name: Chuer Pan (MSR)
             web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
           - name: Gaurav Pathak (MSR) -> Adobe
