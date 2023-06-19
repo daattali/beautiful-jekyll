@@ -4,7 +4,7 @@ title: Research Areas
 subtitle:
 ---
 
-Many of our research projects are in one of the following general themes:
+Many of our research projects are in one of the following general themes. Note that this page is still being updated to include [all publications](../publications). 
 
 <div>
 {% for area in site.data.areas %}
@@ -22,7 +22,7 @@ Tracking involves consistently locating an object as it moves across a scene, or
 <summary style="display: list-item;"><b>Relevant Publications</b></summary>
 <div>
     <table cellpadding="10" width="100%">
-        {% assign pubs = site.data.pubs | where: 'tags', 'object-tracking' %}
+        {% assign pubs = site.data.pubs | where: 'tags', 'tracking' %}
         {% for pub in pubs %}
             {% include pub.html %}
         {% endfor %}

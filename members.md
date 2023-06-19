@@ -45,15 +45,9 @@ members:
           - name: Sashank Tirumala (MSR)
             photo_url: /img/members/sashank.jpg
             web_url: https://sashank-tirumala.github.io/
-          - name: Carl Qi (MSML)
-            photo_url: /img/members/carl.jpg
-            web_url: https://carl-qi.github.io/
           - name: Fan Yang (MSR)
             photo_url: /img/members/fanyang.jpg
             web_url: https://sites.google.com/view/fanyang98/
-          - name: Haolun (Harry) Zhang (MSR)
-            photo_url: /img/members/harry.jpg
-            web_url: https://harryzhangog.github.io/
           - name: Gunjan Sethi (MRSD)
             photo_url: /img/members/gunjans.JPEG
             web_url: https://www.ri.cmu.edu/ri-people/gunjan-sethi/
@@ -75,6 +69,9 @@ members:
           - name: Wen Hui Leng
             photo_url: /img/nophoto_faceboard_white.jpg
             web_url: 
+          - name: TJ Vitchutripop
+            photo_url: /img/members/tj.jpg
+            web_url: https://tjvitchutripop.github.io/
       # - name: Visiting Students
       #  full: false
        # list:
@@ -87,7 +84,7 @@ members:
             web_url: https://siddancha.github.io/
           - name: Xingyu Lin -> Post-doc with Pieter Abbeel at UC Berkeley
             web_url: https://xingyu-lin.github.io/
-          - name: Brian Okorn (co-advised with Martial Hebert)
+          - name: Brian Okorn (co-advised with Martial Hebert) -> Boston Dynamics AI Institute
             web_url: https://www.ri.cmu.edu/ri-people/brian-e-okorn/
       - name: Master's students (Reseach Master's)
         full: False
@@ -95,6 +92,11 @@ members:
           - name: Sarthak Shetty (MSME) -> Path Robotics
             web_url: https://sarthakjshetty.github.io/
           - name: Chuer Pan (MSR)
+          - name: Haolun (Harry) Zhang (MSR) -> MIT PhD
+            web_url: https://harryzhangog.github.io/
+          - name: Carl Qi (MSML) -> UT Austin PhD
+            web_url: https://carl-qi.github.io/
+          - name: Chuer Pan (MSR) -> Columbia PhD
             web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
           - name: Gaurav Pathak (MSR) -> Adobe
             web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
