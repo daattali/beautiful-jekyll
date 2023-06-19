@@ -6,9 +6,9 @@ display_categories: [work]
 ---
 
 During my PhD, I got to experience how rare open-source datasets of fetal brain MRIs -or their derivatives- are. One is often left to wander around the internet and research papers in the hope of finding this limited resource. 
-Here is a list of all the open-source datasets that I got to encounter (checked and approved): 
+Here is a list of all the open-source datasets that I encountered (checked and approved): 
 
-### Open-source datasets
+### Open-source datasets (last update: June 2023) 
 
 <table>
    
@@ -92,6 +92,15 @@ Here is a list of all the open-source datasets that I got to encounter (checked 
        <td>T1/ T2 MRI</td>
        <td>Intensity and tissue probability templates between 26-44 weeks</td>
        <td><a href="/"> <i class="fas fa-link"></i></a>
+          </td></tr>
+
+           <tr><td>2018</td>
+      <td>Bozek et al.</td>
+      <td>Neonatal cortical surface atlas</td>
+       <td></td>
+       <td>White, pial, midthickness surface templates between 28-44 weeks</td>
+       <td><a href="http://brain-development.org/
+brain-atlases/cortical-surface-atlas"> <i class="fas fa-link"></i></a>
           </td></tr>
    
     <tr><td>2021 & 2022</td>
