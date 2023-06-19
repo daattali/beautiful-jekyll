@@ -5,6 +5,9 @@ show-avatar: true
 display_categories: [work]
 ---
 
+During my PhD, I got to experience how rare open-source datasets of fetal brain MRIs -or their derivatives- are. One is often left to wander around the internet and research papers in the hope of finding this limited resource. 
+Here is a list of all the open-source datasets that I got to encounter (checked and approved): 
+
 ### Open-source datasets
 
 <table>
