@@ -1,11 +1,5 @@
 <div class="area">
     <h1>{{ area.title }}</h1>
-    <div class="area-images-container">
-        {% assign pubs = site.data.pubs | where: 'tags', area.tag %}
-        {% for pub in pubs limit:3%}
-            <img src="{{pub.img}}" class="area-images"/>
-        {% endfor %}
-    </div>
     <p class="area-blurb">{{ area.blurb }}</p>
     <details class="area-pubs">
         <summary style="display: list-item;"><b>Relevant Publications</b></summary>
