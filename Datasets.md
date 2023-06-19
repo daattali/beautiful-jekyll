@@ -162,16 +162,7 @@ brain-atlases/cortical-surface-atlas"> <i class="fas fa-link"></i></a>
        <td>Spherical templates of cortical curvature and sulcal depth</td>
        <td><a href="https://www.github.com/
 DevelopmentalImagingMCRI/MCRIBS"> <i class="fas fa-link"></i></a>
-          </td></tr>
-   
-    <tr><td>2021</td>
-      <td>Wu et al.</td>
-      <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
-       <td>T2 MRI</td>
-       <td>Intensity and tissue probability templates between 21-37 weeks</td>
-       <td><a href="https://github.com/DeepBMI/FBA-Chinese"> <i class="fas fa-link"></i></a>
-          </td></tr>
-   
+          </td></tr>   
   
 </table>
 
