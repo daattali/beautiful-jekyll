@@ -1297,7 +1297,7 @@ NOTE: The full repository of this tutorial is available [here](https://github.co
 
 ## Further Steps
 
-Particularf measures can be implemented further down the road, aiming to enhance the reliability, efficiency, and overall management and troubleshooting of a data pipeline, in general. These measures vary depending on the specific context and requirements of your data pipelines: some of them are relevant for the simple pipeline we have implemented, some are used in more sophisticated use cases. They focus on data quality, integrity, scalability, monitoring, security, and compliance aspects.
+Particularf measures can be implemented further down the road, aiming to enhance the reliability, efficiency, and overall management and troubleshooting of a data pipeline, in general. These measures vary depending on the business value context and requirements of the data pipelines behind: some of them are relevant for the simple pipeline we have implemented, some are used in more sophisticated use cases. They focus on data quality, integrity, scalability, observability, security, and compliance aspects.
 
 ### Performance and Cost
 1. Add data validation and quality checks at various stages of the pipeline.
@@ -1305,10 +1305,11 @@ Particularf measures can be implemented further down the road, aiming to enhance
 3. Improving query performance:
 - Analyze and optimize query execution plans, utilize indexing strategies, and leverage query tuning techniques to improve overall performance.
 - Large datasets can be divided into smaller partitions or shards to improve query performance and enable distributed processing.
-5. Scale the infrastructure to handle increasing data volumes and processing requirements. Considering the scalability and performance requirements of the data pipelines, data processing steps can be optimized and parallelization techniques and distributed computing frameworks can be utilized to handle large volumes of data efficiently.
-6. Depending on the specific context and requirements of the data pipelines, implementing additional measures such as data compression techniques, caching mechanisms, or leveraging cloud-native services for cost optimization can be considered. 
+4. Handling increasing data volumes and processing requirements.
+- Considering the scalability and performance requirements of the data pipelines, data processing steps can be optimized and parallelization techniques and distributed computing frameworks can be utilized to handle large volumes of data efficiently.
+- Implementing additional measures such as data compression techniques, caching mechanisms, or leveraging cloud-native services for cost optimization can be considered. 
 
-### Operations
+### Observability and Operations
 1. Implement logging and advanced error handling mechanisms. Capture and log relevant information during pipeline execution, including errors, warnings, and debugging details, to aid troubleshooting and auditing.
 2. Enhance workflow orchestration:
 - Implement version control practices to manage changes in pipeline configurations, scripts, and dependencies.
