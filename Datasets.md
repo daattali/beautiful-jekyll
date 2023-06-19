@@ -6,7 +6,7 @@ display_categories: [work]
 ---
 
 During my PhD, I got to experience how rare open-source datasets of fetal brain MRIs -or their derivatives- are. One is often left to wander around the internet and research papers in the hope of finding this limited resource. 
-Here is a list of all the open-source datasets that I encountered (checked and approved): 
+Here  list of all the open-source datasets that I encountered (checked and approved): 
 
 ### Open-source datasets (last update: June 2023) 
 
@@ -19,7 +19,6 @@ Here is a list of all the open-source datasets that I encountered (checked and a
   <th><img width=100/>Specificities<img width=100/>  </th>
   <th> Link</th>
    </tr>
-  
   
     <tr>
 <td>2010</td>
@@ -54,7 +53,6 @@ Here is a list of all the open-source datasets that I encountered (checked and a
        <td>T1/ T2 MRI</td>
        <td>Intensity and tissue probability templates between 28–44 GW</td>
        <td><a href="https://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-serag/"> <i class="fas fa-link"></i></a></td></tr>
-   
    
   <tr><td>2012</td>
       <td>Gousias et al.</td>
@@ -126,9 +124,7 @@ DevelopmentalImagingMCRI/MCRIBS"> <i class="fas fa-link"></i></a>
        <td>T2 MRI</td>
        <td>120 fetal brain MRIs (volume reconstructed and parcellated)</td>
        <td><a href="https://feta.grand-challenge.org/"> <i class="fas fa-link"></i></a>
-          </td></tr>
-   
-   
+          </td></tr>   
    
     <tr><td>2021</td>
       <td>Wu et al.</td>
