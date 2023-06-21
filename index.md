@@ -19,18 +19,26 @@ My thesis deals with the comparison of cytometric datasets. Metafora has develop
     <li>Wasserstein metrics and optimal transport.</li>
 </ul>
 
-<!-- ## Talks
+## Pre-prints
+Complete list on [ArXiv](https://arxiv.org/a/dussap_b_1.html).
+<ul>
+    <li>Label Shift Quantification with Robustness Guarantees via Distribution Feature Matching (with G.Blanchard and B.Chérief-Abdellatif) <a href="https://arxiv.org/abs/2306.04376">ArXiv preprint</a> and
+    <a href="https://plmlab.math.cnrs.fr/dussap/Label-shift-DFM">code</a></li>
+</ul>
+
+## Talks
 
 Invited talks
 <ul>
-    <li></li>
+    <li>Journées de Statistique de la Société Francaise de Statistique, 2023</li>
+    <li>DataShape Seminar, 2023 (<a href="/assets/files/slides/Porquerolles2023.pdf">slides</a>)</li>
 </ul>
 
 
-Poster presentations
+## Poster presentations
 <ul>
-    <li></li>
-</ul> -->
+    <li><a href="https://2023.ecmlpkdd.org/">ECML/PKDD 2023</a>, <i>Label Shift Quantification with Robustness Guarantees via Distribution Feature Matching</i> </li>
+</ul> 
 
 # Teaching
 
@@ -46,7 +54,7 @@ I Co-organize the seminar for master students in [Statistics and Machine Learnin
 
 # Short CV
 
-[Curriculum Vitae](/assets/files/CV-DussapBastien.pdf)
+[Curriculum Vitae](/assets/files/CV/CV-DussapBastien.pdf)
 
 Education
 <ul>
