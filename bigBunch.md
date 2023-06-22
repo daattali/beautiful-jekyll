@@ -13,6 +13,6 @@ Tap grapes to spell out words, slide over grapes for double points. Find the wor
 
 **Just start playing and have fun!**
 
-![](/assets/img/bigBunch_win_no_bg.png#center){:width="50%"}
+![](/assets/img/bigBunch_win_no_bg.png#center){:width="100%"}
 
 #### Available for iPad and iOS 16.0 and above
