@@ -20,7 +20,8 @@
   bib: "@inproceedings{Wang2023One,\n            title={One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments},\n            author={Wang, Yufei and Sun, Zhanyi and Erickson, Zackory and Held, David},\n            booktitle={Robotics: Science\
     \ and Systems (RSS)},\n            year={2023}\n       }"
   img: ../pics/RSS23-dressing.gif
-  links: {}
+  links: 
+    '[arXiv]': https://arxiv.org/abs/2306.12372
   short_id: Wang2023One
   site: https://sites.google.com/view/one-policy-dress
   title: 'One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments'
