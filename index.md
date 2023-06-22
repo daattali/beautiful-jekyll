@@ -32,6 +32,7 @@ Invited talks
 <ul>
     <li>Journées de Statistique de la Société Francaise de Statistique, 2023</li>
     <li>DataShape Seminar, 2023 (<a href="/assets/files/slides/Porquerolles2023.pdf">slides</a>)</li>
+    <li>Séminaire des doctorants de l'équipe <a href="https://www.imo.universite-paris-saclay.fr/fr/la-recherche/probabilites-et-statistiques/">Probabilité et Statististiques</a> de l'Institut de Mathématiques d'Orsay, 2023 (<a href="/assets/files/slides/BastienDussap%20-%20Pr%C3%A9sentation%20Doctorant.pdf">slides</a>)</li>
 </ul>
 
 
