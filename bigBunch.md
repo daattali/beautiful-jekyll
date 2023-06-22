@@ -14,6 +14,6 @@ Exercise your brain while learning new vocabulary as you make your way up the le
 
 **No account creation required. Just start playing and have fun!**
 
-![](/assets/img/bigBunch_win_white_bg.JPG#center){:width="50%"}
+![](/assets/img/bigBunch_win_no_bg.JPG#center){:width="50%"}
 
 #### Available for iPad and iOS 16.0 and above
