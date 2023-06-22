@@ -48,9 +48,6 @@ members:
           - name: Fan Yang (MSR)
             photo_url: /img/members/fanyang.jpg
             web_url: https://sites.google.com/view/fanyang98/
-          - name: Gunjan Sethi (MRSD)
-            photo_url: /img/members/gunjans.JPEG
-            web_url: https://www.ri.cmu.edu/ri-people/gunjan-sethi/
           - name: Bowen Jiang (MSR)
             photo_url: /img/members/bowenjiang.png
             web_url: https://www.ri.cmu.edu/ri-people/bowen-jiang-2/    
@@ -86,12 +83,12 @@ members:
             web_url: https://xingyu-lin.github.io/
           - name: Brian Okorn (co-advised with Martial Hebert) -> Boston Dynamics AI Institute
             web_url: https://www.ri.cmu.edu/ri-people/brian-e-okorn/
-      - name: Master's students (Reseach Master's)
+      - name: Master's students (Research Master's)
         full: False
         list:
           - name: Sarthak Shetty (MSME) -> Path Robotics
             web_url: https://sarthakjshetty.github.io/
-          - name: Chuer Pan (MSR)
+          - name: Chuer Pan (MSR) -> Columbia PhD
           - name: Haolun (Harry) Zhang (MSR) -> MIT PhD
             web_url: https://harryzhangog.github.io/
           - name: Carl Qi (MSML) -> UT Austin PhD
@@ -150,6 +147,7 @@ members:
       - name: Interns
         full: False
         list:
+                   - name: Gunjan Sethi (MRSD)
                    - name: Khush Agrawal (RISS)
                    - name: Pengsheng Guo
                    - name: Wen-Hsuan Chu
