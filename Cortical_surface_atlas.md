@@ -75,10 +75,6 @@ slider.oninput = function() {
   <head>
 <style>
 
-body {
-  margin: 0;
-  background-color: black;
-}
 
 section {
   text-align: center;
@@ -117,6 +113,7 @@ input {
 }
 </style> </head>
 
+
 <section class="timemachine">
 <form action="">
   <input type="range" />
@@ -152,11 +149,11 @@ function jsonFlickrApi(data) {
                                       });
     image_elements[Math.floor(e.target.value)].style.opacity = 1;
     // image_elements[Math.floor(e.target.value)].style.zIndex=100;
-   
 }); 
 }
  
 </script>
+
 <script src="https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=603db98e0031fb25a3e3a6fc44502683&user_id=25053835@N03&per_page=50&format=json&extras=description,license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media,path_alias,url_sq,url_t,url_s,url_q,url_m,url_n,url_z,url_c,url_l,url_o">
 </script>
 </html>
