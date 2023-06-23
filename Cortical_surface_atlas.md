@@ -16,7 +16,7 @@ display_categories: [work]
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 80%;
   height: 25px;
   background: #d3d3d3;
   outline: none;
@@ -47,7 +47,7 @@ display_categories: [work]
 
 .slider input[type="range"] {
 -webkit-appearance:none !important;
-width: 420px;
+width: 70%;
 height: 2px;
 background: black;
 border: none;
