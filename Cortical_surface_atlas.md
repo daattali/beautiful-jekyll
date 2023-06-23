@@ -76,7 +76,6 @@ section > figure > img {
 
 section > figure {
   opacity: 0;
-  transition: opacity 0.5s;
 }
 
 input {
