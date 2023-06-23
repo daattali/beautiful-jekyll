@@ -6,24 +6,23 @@ display_categories: [work]
 ---
 <html>
 <body>
-<script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
-<script type="text/javascript">
-  var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
-  var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance();
-  var actor              = vtk.Rendering.Core.vtkActor.newInstance();
-  var mapper             = vtk.Rendering.Core.vtkMapper.newInstance();
-  var cone               = vtk.Filters.Sources.vtkConeSource.newInstance();
-  reader.SetFileName('/assets/img/GeodesicRegression__GeodesicFlow__img__component_3__tp_159__age_35.90_smooth_300.vtk')
-  reader.Update()
-  actor.setMapper(mapper);
-  mapper.setInputData(reader.getOutput());
-  //mapper.setInputConnection(reader.getOutputPort());
+<script type="text/javascript">  
+  var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance();  
+  var actor = vtk.Rendering.Core.vtkActor.newInstance();
+  var mapper = vtk.Rendering.Core.vtkMapper.newInstance();
+  var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();  
+  //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+  reader.setUrl('/assets/img/GeodesicRegression__GeodesicFlow__img__component_3__tp_159__age_35.90_smooth_300.vtk');
+  var polydata = reader.getOutputData(0);  
+  actor.setMapper(mapper);  
+  mapper.setInputData(polydata);
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   renderer.resetCamera();
   var renderWindow = fullScreenRenderer.getRenderWindow();
-  renderWindow.render();
+  renderWindow.render(); 
+  
 </script>
 </body>
 </html>
