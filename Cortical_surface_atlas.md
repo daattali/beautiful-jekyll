@@ -45,7 +45,26 @@ display_categories: [work]
   cursor: pointer;
 }
 
-
+.slider input[type="range"] {
+-webkit-appearance:none !important;
+width: 420px;
+height: 2px;
+background: black;
+border: none;
+outline: none;
+}
+.slider input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none !important;
+width: 30px;
+height:30px;
+background: black;
+border: 2px solid black;
+border-radius: 50%;
+cursor: pointer;
+}
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+background: black;
+}
 
 section {
   text-align: center;
