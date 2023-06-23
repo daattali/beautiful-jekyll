@@ -6,7 +6,6 @@ display_categories: [work]
 ---
 <script>
 
-
 import '@kitware/vtk.js/favicon';
 
 // Load the rendering pieces we want to use (for both WebGL and WebGPU)
