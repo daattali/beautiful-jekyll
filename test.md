@@ -14,7 +14,7 @@ display_categories: [work]
   var actor              = vtk.Rendering.Core.vtkActor.newInstance();
   var mapper             = vtk.Rendering.Core.vtkMapper.newInstance();
   var cone               = vtk.Filters.Sources.vtkConeSource.newInstance();
-  reader.SetFileName('https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/GeodesicRegression__GeodesicFlow__img__component_3__tp_159__age_35.90_smooth_300.vtk')
+  reader.SetFileName('/assets/img/GeodesicRegression__GeodesicFlow__img__component_3__tp_159__age_35.90_smooth_300.vtk')
   reader.Update()
   actor.setMapper(mapper);
   mapper.setInputData(reader.getOutput());
