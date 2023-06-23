@@ -123,7 +123,7 @@ function jsonFlickrApi(data) {
     var img = document.createElement('img');
     img.src = mg;
     var numb = document.createElement('h2');
-    numb.textContent = i+1;
+    // numb.textContent = i+1;
     var fig = document.createElement('figure');
     fig.appendChild(img);
     fig.appendChild(numb);
