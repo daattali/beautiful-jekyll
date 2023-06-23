@@ -19,6 +19,14 @@ display_categories: [work]
 <td>Multiple formats, e.g. nifti, DICOM... </td>
 <td> <a href="http://www.itksnap.org/pmwiki/pmwiki.php"> <i class="fas fa-link"></i></a> </td>
 </tr>
+
+<tr>
+<td>Kitware Glance</td>    
+<td>Web application for object visualization</td>
+<td>Multiple formats, e.g. .vtk, .vtp... </td>
+<td> <a href="https://kitware.github.io/glance/app/"> <i class="fas fa-link"></i></a> </td>
+</tr>
+
    
 <tr>
 <td>MRICron</td>    
