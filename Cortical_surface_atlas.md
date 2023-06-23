@@ -117,12 +117,6 @@ input {
 }
 </style> </head>
 
-<section class="timemachine">
-<form action="">
-  <input type="range" />
-</form>
-</section>
-
 <script>
 
 var images;
