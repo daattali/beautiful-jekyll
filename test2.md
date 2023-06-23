@@ -19,8 +19,8 @@ display_categories: [work]
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   renderer.resetCamera();
-  camera.zoom(5);
-  renderer.setCamera(camera)
+  camera.zoom(15);
+  renderer.setCamera(camera);
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render();
 </script>
