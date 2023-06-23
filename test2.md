@@ -4,6 +4,7 @@ permalink: /Test_/
 show-avatar: true
 display_categories: [work]
 ---
+
 <html>
 <body>
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
@@ -33,7 +34,7 @@ display_categories: [work]
 		  renderer.addActor(actor);
 		  renderer.resetCamera();
 		  renderWindow.render();
-	});
+		});
 </script>
 </body>
 </html>
