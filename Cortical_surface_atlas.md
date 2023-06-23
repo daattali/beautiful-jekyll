@@ -72,6 +72,50 @@ slider.oninput = function() {
 ### another slider
 
 <html>
+  <head>
+<style>
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+section {
+  text-align: center;
+}
+figure {
+  margin: 0;
+}
+h2 {
+  position: absolute;
+  color: white;
+  font-size: 5em;
+  font-family: sans-serif;
+/*   bottom: 0; */
+/*   right: 40%; */
+}
+
+section > figure {
+  position: absolute;
+  height: 90vh;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+section > figure > img {
+  height: inherit;
+}
+
+section > figure {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+input {
+  width: 20vw;
+}
+</style> </head>
 
 <section class="timemachine">
 <form action="">
