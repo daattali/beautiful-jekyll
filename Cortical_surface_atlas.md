@@ -116,12 +116,11 @@ input {
 
 <section class="timemachine">
 <form action="">
-  <input type="range" />
+ <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 </form>
 </section>
 
 <script>
-
 var images;
 function jsonFlickrApi(data) {
   console.log(data);
