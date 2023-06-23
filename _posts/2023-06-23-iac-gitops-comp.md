@@ -4,7 +4,7 @@ title: Leveraging Continuous Delivery, Infrastructure as Code, and GitOps
 subtitle: Weighing Benefits and Considerations
 gh-repo: X4mp/X4mp.github.io
 gh-badge: [star, fork, follow]
-tags: [blog]
+tags: [blog, ai]
 comments: false
 ---
 
