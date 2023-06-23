@@ -17,9 +17,10 @@ display_categories: [work]
   reader.setUrl('https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/GeodesicRegression__GeodesicFlow__img__component_3__tp_159__age_35.90_smooth_300.vtk');
   //
   //reader.setUrl('https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/blob/master/assets/img/ImageToStl.com_deterministicatlas__estimatedparameters__template_img.vtp')
-  var polydata = reader.getOutputData(0);  
   actor.setMapper(mapper);  
-  mapper.setInputData(polydata);
+  //mapper.setInputData(polydata);
+  //var polydata = reader.getOutputData(0); 
+  mapper.setInputConnection(reader.getOutputPort());
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   renderer.resetCamera();
@@ -27,6 +28,7 @@ display_categories: [work]
   renderer.setCamera(camera);
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
+
   
 </script>
 </body>
