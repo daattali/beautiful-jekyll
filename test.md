@@ -5,6 +5,7 @@ show-avatar: true
 display_categories: [work]
 ---
 <html>
+ <center>
 <body>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">  
@@ -25,14 +26,14 @@ display_categories: [work]
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   renderer.resetCamera();
-  camera.zoom(5);
-  renderer.setCamera(camera);
+  camera.zoom(0.05);
+  renderer.setActiveCamera(camera);
   reader.setUrl('/assets/img/GeodesicRegression__GeodesicFlow__img__component_3__tp_159__age_35.90_smooth_300.vtk');
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
   
-
   
 </script>
 </body>
+</center>
 </html>
