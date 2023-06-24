@@ -25,7 +25,8 @@ display_categories: [work]
   actor.setMapper(mapper);  
   //mapper.setInputData(polydata);
   //var polydata = reader.getOutputData(0); 
-  mapper.setInputConnection(reader.getOutputPort());
+  //mapper.setInputConnection(reader.getOutputPort());
+  mapper.setInput(reader.getOutputData()); 
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   renderer.resetCamera();
