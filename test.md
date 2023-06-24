@@ -20,13 +20,13 @@ display_categories: [work]
   //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
   //
   //reader.setUrl('https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/blob/master/assets/img/ImageToStl.com_deterministicatlas__estimatedparameters__template_img.vtp')
- const promise = reader.setUrl(url).then(() => {
+  reader.setUrl(url).then(() => {
   reader.update();
+  mapper.setInput(reader.getOutput()); 
   actor.setMapper(mapper);  
   //mapper.setInputData(polydata);
-  //var polydata = reader.getOutputData(0); 
+  //var polydata = reader.getOutputData(0); or getOuput()??
   //mapper.setInputConnection(reader.getOutputPort());
-  mapper.setInput(reader.getOutputData()); 
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   renderer.resetCamera();
