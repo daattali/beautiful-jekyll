@@ -16,9 +16,12 @@ display_categories: [work]
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance();
   var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
+  const url              = '/assets/img/GeodesicRegression__GeodesicFlow__img__component_3__tp_159__age_35.90_smooth_300.vtk';
   //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
   //
   //reader.setUrl('https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/blob/master/assets/img/ImageToStl.com_deterministicatlas__estimatedparameters__template_img.vtp')
+ const promise = reader.setUrl(url).then(() => {
+  reader.update();
   actor.setMapper(mapper);  
   //mapper.setInputData(polydata);
   //var polydata = reader.getOutputData(0); 
@@ -28,11 +31,10 @@ display_categories: [work]
   renderer.resetCamera();
   camera.zoom(0.05);
   renderer.setActiveCamera(camera);
-  reader.setUrl('/assets/img/GeodesicRegression__GeodesicFlow__img__component_3__tp_159__age_35.90_smooth_300.vtk');
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
-  
-  
+});
+
 </script>
 </body>
 </center>
