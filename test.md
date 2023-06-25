@@ -30,9 +30,9 @@ display_categories: [work]
   //mapper.setInputConnection(reader.getOutputPort());
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
-  renderer.resetCamera();
-  camera.zoom(1);
-  renderer.setActiveCamera(camera);
+  renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
+  //camera.zoom(1);
+  //renderer.setActiveCamera(camera);
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
 </script>
