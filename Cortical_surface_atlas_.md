@@ -104,6 +104,7 @@ display_categories: [work]
   var fs = require('fs');
 var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
   document.getElementById("demo").innerHTML = files; 
+  document.write(files);
   
   var images = document.getElementById("sliderImages");
 
