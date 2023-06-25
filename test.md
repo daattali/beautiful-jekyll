@@ -27,6 +27,7 @@ display_categories: [work]
   //mapper.setInput(reader.getOutput()); or reader.getOutputData(0)
   mapper.setInputData(reader.getOutputData());
   actor.setMapper(mapper);  
+ actor.getProperty().setColor(1.0, 0.0, 0.0);
   //mapper.setInputData(polydata);
   //var polydata = reader.getOutputData(0); or getOuput()??
   //mapper.setInputConnection(reader.getOutputPort());
