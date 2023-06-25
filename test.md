@@ -16,7 +16,7 @@ display_categories: [work]
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance();
   var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
-  const url              = '/assets/img/GeodesicRegression__GeodesicFlow__img__component_3__tp_159__age_35.90_smooth_300.vtk';
+  const url              = '/assets/img/sub-sub-035_hole__filled.vtk';
   //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
   //
   //reader.setUrl('https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/blob/master/assets/img/ImageToStl.com_deterministicatlas__estimatedparameters__template_img.vtp')
