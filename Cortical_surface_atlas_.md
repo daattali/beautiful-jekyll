@@ -62,11 +62,23 @@ display_categories: [work]
 
 </style> 
 
-<div class="image mt-3 mb-3">
-    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00_smooth_300_.png">
-    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.10_smooth_300_.png">
-    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.20_smooth_300_.png">
+
+
+<div class="rangeslider">
+    <input type="range" min="1" max="3" value="3" class="myslider" id="sliderRange">
+    <div class="row mt-3">
+        <div class="col-4">
+            <h6 class="display-6">Starting From Scratch</h6>
+        </div>
+        <div class="col-4">
+            <p class="demo">I'm designing around a few pieces I already own</p>
+        </div>
+        <div class="col-4">
+            <h6 class="display-6">Mostly Furnished</h6>
+        </div>
+    </div>
 </div>
+
 <br>
 <br>
 <br>
@@ -81,23 +93,12 @@ display_categories: [work]
 <br>
 <br>
 
-<div class="rangeslider">
-    <input type="range" min="1" max="3" value="3" class="myslider" id="sliderRange">
-    <div class="row mt-3">
-        <div class="col-4">
-            <h6 class="display-6">Starting From Scratch</h6>
-            <p id="demo"> I'm designing the room </p>
-        </div>
-        <div class="col-4">
-            <h6 class="display-6">Somewhere in Between</h6>
-            <p class="demo">I'm designing around a few pieces I already own</p>
-        </div>
-        <div class="col-4">
-            <h6 class="display-6">Mostly Furnished</h6>
-            <p class="demo">I want to put the finishing touches on my room</p>
-        </div>
-    </div>
+<div class="image mt-3 mb-3">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.10_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.20_smooth_300_.png">
 </div>
+
 
 <script> 
   var fs = require('fs');
