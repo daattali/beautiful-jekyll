@@ -7,6 +7,7 @@ display_categories: [work]
 <html>
  <center>
 <body>
+<script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">  
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
@@ -20,7 +21,7 @@ display_categories: [work]
   //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
   //
   //reader.setUrl('https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/blob/master/assets/img/ImageToStl.com_deterministicatlas__estimatedparameters__template_img.vtp')
-  reader.setUrl(url).then(() => {
+  reader.setUrl(url);
   reader.update();
   mapper.setInput(reader.getOutput()); 
   actor.setMapper(mapper);  
@@ -30,12 +31,10 @@ display_categories: [work]
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   renderer.resetCamera();
-  camera.zoom(0.05);
+  camera.zoom(1);
   renderer.setActiveCamera(camera);
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
-});
-
 </script>
 </body>
 </center>
