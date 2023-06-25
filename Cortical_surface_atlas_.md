@@ -71,6 +71,15 @@ display_categories: [work]
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <div class="rangeslider">
     <input type="range" min="1" max="3" value="3" class="myslider" id="sliderRange">
