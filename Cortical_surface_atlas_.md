@@ -113,8 +113,6 @@ var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
     i = Number(this.value) - 1;
     images.children[i].style.display = 'block';
   });
-
-});
 </script> 
 </html>
 
