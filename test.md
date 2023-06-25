@@ -18,12 +18,13 @@ display_categories: [work]
   var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
   const url              = '/assets/img/sub-sub-035_hole__filled.vtk';
+ //camera = renderer.GetActiveCamera()
   //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  //
   //reader.setUrl('https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/blob/master/assets/img/ImageToStl.com_deterministicatlas__estimatedparameters__template_img.vtp')
   reader.setUrl(url);
   reader.update();
-  mapper.setInput(reader.getOutput()); 
+  //mapper.setInput(reader.getOutput()); 
+  mapper.setInputData(reader.getOutputData());
   actor.setMapper(mapper);  
   //mapper.setInputData(polydata);
   //var polydata = reader.getOutputData(0); or getOuput()??
