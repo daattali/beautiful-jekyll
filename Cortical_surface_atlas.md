@@ -108,8 +108,8 @@ input {
 <p>Drag the slider to display the current value.</p>
 
 <div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-  <p>Value: <span id="demo"></span></p>
+<input type="range" min="20.0" max="36.0" value="160" class="slider" id="myRange">
+<p>Value: <span id="demo"></span></p>
 </div>
 
 <script>
@@ -118,8 +118,18 @@ var output = document.getElementById("demo");
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+output.innerHTML = this.value;}
+
+  // Display the image based on 
+var src = "assets/img/atlas/Inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_"+ slider.value +"0_smooth_300_.png";
+img = document.createElement('img');
+document.getElementById("demo").innerHTML = src; 
+img.src = src;
+var numb = document.createElement('h2');
+var fig = document.createElement('figure');
+fig.appendChild(img);
+fig.appendChild(numb);
+document.querySelector('section').appendChild(fig); 
 </script>
 
 </body>
@@ -138,32 +148,34 @@ function jsonFlickrApi(data) {
   console.log(data);
   images = data.photos.photo.map(function(photo){return photo.url_z});
   image_elements = images.map(function(mg, i) {
-    var img = document.createElement('img');
-    img.src = mg;
+    var img = document.createElement('img'); // create img
+    img.src = mg; // create img path
     var numb = document.createElement('h2');
-    // numb.textContent = i+1;
     var fig = document.createElement('figure');
     fig.appendChild(img);
     fig.appendChild(numb);
     document.querySelector('section').appendChild(fig); 
     return fig;
   });
-   var slider = document.querySelector('input');
+  var slider = document.querySelector('input');
   slider.min = 0;
   slider.max = slider.value = images.length - 1;
   image_elements[slider.max].style.opacity = 1;
   // slider.step = 0.01;
   slider.addEventListener('input', function(e) {
-  // console.log(Math.floor(e.target.value));
-    image_elements.forEach(function(e){e.style.opacity=0;
-                                       // e.style.zIndex=-100;
+    image_elements.forEach(function(e){e.style.opacity=0; // e.style.zIndex=-100;
                                       });
     image_elements[Math.floor(e.target.value)].style.opacity = 1;
     // image_elements[Math.floor(e.target.value)].style.zIndex=100;
 }); 
 }
- 
 </script>
+
+<script>
+  
+
+</script>
+
 
 <script src="https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=603db98e0031fb25a3e3a6fc44502683&user_id=25053835@N03&per_page=50&format=json&extras=description,license,date_upload,date_taken,owner_name,icon_server,original_format,last_update,geo,tags,machine_tags,o_dims,views,media,path_alias,url_sq,url_t,url_s,url_q,url_m,url_n,url_z,url_c,url_l,url_o">
 </script>
