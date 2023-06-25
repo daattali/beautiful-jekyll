@@ -68,6 +68,10 @@ display_categories: [work]
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.20_smooth_300_.png">
 </div>
 <br>
+<br>
+<br>
+<br>
+
 <div class="rangeslider">
     <input type="range" min="1" max="3" value="3" class="myslider" id="sliderRange">
     <div class="row mt-3">
@@ -87,6 +91,10 @@ display_categories: [work]
 </div>
 
 <script> 
+  var fs = require('fs');
+var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
+  document.getElementById("demo").innerHTML = files; 
+  
   var images = document.getElementById("sliderImages");
 
   rangeslider.addEventListener('input', function() {
