@@ -83,9 +83,6 @@ display_categories: [work]
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 
 <div class="image mt-3 mb-3">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00_smooth_300_.png">
@@ -96,8 +93,6 @@ display_categories: [work]
 
 <script> 
 
-
-    
   var fs = require('fs');
 var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
   document.getElementById("demo").innerHTML = files; 
