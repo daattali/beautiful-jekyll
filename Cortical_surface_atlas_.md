@@ -114,7 +114,9 @@ window.addEventListener('load', function() {
 <br>
 <br>
 
-<a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk"> 
+<a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk">Visualize me in 3D online:</a>
+  
+  <a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk"> 
 Visualize me in 3D online:</a>
 
 
