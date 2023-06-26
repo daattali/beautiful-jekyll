@@ -1,0 +1,152 @@
+{% extends 'layout.html' %}
+
+{% block scripts %}
+  <script src="gif.js?v={{ version }}"></script>
+  <script src="scripts/main.js?v={{ version }}"></script>
+{% endblock %}
+
+{% block body %}
+
+  <h2>Usage</h2>
+  {{ contents['code.md'].html }}
+
+  <h2>Demo</h2>
+
+  <p>
+    GIF images are generated in the background using web workers. Hover the original and reference
+    tabs to see respective image.
+  </p>
+
+  <p>
+    Reference images are rendered with photoshop cs6 using the perceptual setting with no dither.
+  </p>
+
+  <div class="demo">
+    <div class="images">
+      <img class="render">
+      <img class="original" src="images/test/anim1.jpg">
+      <img class="original" src="images/test/anim2.jpg">
+      <img class="original" src="images/test/anim3.jpg">
+      <img class="original" src="images/test/anim4.jpg">
+      <img class="reference" src="images/test/anim-ref.gif">
+    </div>
+    <ul class="hover-buttons">
+      <li class="original">Original</li>
+      <li class="reference">Reference</li>
+    </ul>
+    <div class="controls">
+      <p class="quality">
+        <label>Quality</label>
+        <input type="range" step="1" min="1" max="30" value="20">
+        <span class="value">10</span>
+      </p>
+      <p class="delay">
+        <label>Delay</label>
+        <input type="range" step="1" min="0" max="1000" value="500">
+        <span class="value">500ms</span>
+      </p>
+      <p class="repeat">
+        <label>Repeat</label>
+        <input type="range" step="1" min="0" max="21" value="21">
+        <span class="value">forever</span>
+      </p>
+      <p class="dither">
+        <label>Dither</label>
+        <select>
+          <option selected>None</option>
+          <option>Atkinson</option>
+          <option>Atkinson-serpentine </option>
+          <option>FalseFloydSteinberg</option>
+          <option>FalseFloydSteinberg-serpentine</option>
+          <option>FloydSteinberg</option>
+          <option>FloydSteinberg-serpentine</option>
+          <option>Stucki</option>
+          <option>Stucki-serpentine</option>
+        </select>
+      </p>
+      <p class="info">
+        <pre>Loading...</pre>
+      </p>
+    </div>
+  </div>
+
+  <div class="demo">
+    <div class="images">
+      <img class="render">
+      <img class="original" src="images/test/test1-orig.jpg">
+      <img class="reference" src="images/test/test1-ref.gif">
+    </div>
+    <ul class="hover-buttons">
+      <li class="original">Original</li>
+      <li class="reference">Reference</li>
+    </ul>
+    <div class="controls">
+      <p class="quality">
+        <label>Quality</label>
+        <input type="range" step="1" min="1" max="30" value="20">
+        <span class="value">10</span>
+      </p>
+      <p class="dither">
+        <label>Dither</label>
+        <select>
+          <option selected>None</option>
+          <option>Atkinson</option>
+          <option>Atkinson-serpentine </option>
+          <option>FalseFloydSteinberg</option>
+          <option>FalseFloydSteinberg-serpentine</option>
+          <option>FloydSteinberg</option>
+          <option>FloydSteinberg-serpentine</option>
+          <option>Stucki</option>
+          <option>Stucki-serpentine</option>
+        </select>
+      </p>
+      <p class="info">
+        <pre>Loading...</pre>
+      </p>
+    </div>
+  </div>
+
+  <div class="demo">
+    <div class="images">
+      <img class="render">
+      <img class="original" src="images/test/test3-orig.png">
+      <img class="reference" src="images/test/test3-ref.gif">
+    </div>
+    <ul class="hover-buttons">
+      <li class="original">Original</li>
+      <li class="reference">Reference</li>
+    </ul>
+    <div class="controls">
+      <p class="quality">
+        <label>Quality</label>
+        <input type="range" step="1" min="1" max="30" value="20">
+        <span class="value">10</span>
+      </p>
+      <p class="dither">
+        <label>Dither</label>
+        <select>
+          <option selected>None</option>
+          <option>Atkinson</option>
+          <option>Atkinson-serpentine </option>
+          <option>FalseFloydSteinberg</option>
+          <option>FalseFloydSteinberg-serpentine</option>
+          <option>FloydSteinberg</option>
+          <option>FloydSteinberg-serpentine</option>
+          <option>Stucki</option>
+          <option>Stucki-serpentine</option>
+        </select>
+      </p>
+      <p class="info">
+        <pre>Loading...</pre>
+      </p>
+    </div>
+  </div>
+
+  <h2>Other tests</h2>
+  <ul>
+  {% for test in contents.tests._.pages %}
+    <li><a href="{{ test.url }}">{{ test.title }}</a></li>
+  {% endfor %}
+  </ul>
+
+{% endblock %}
