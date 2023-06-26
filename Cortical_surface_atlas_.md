@@ -67,7 +67,7 @@ display_categories: [work]
 
 <br>
 <br>
-<div class="image mt-3 mb-3" id="sliderImages">>
+<div class="image mt-10 mb-10" id="sliderImages">>
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_1__age_20.10_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_2__age_20.20_smooth_300_.png">
@@ -94,6 +94,16 @@ display_categories: [work]
     //document.write(prop);
     //document.getElementById('aaron-family').innerHTML += '<li>' + prop + '</li>';
   //}};
+
+///to write
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+output.innerHTML = this.value;}
+///end write
+  
 window.addEventListener('load', function() {
 
   var rangeslider = document.getElementById("sliderRange");
