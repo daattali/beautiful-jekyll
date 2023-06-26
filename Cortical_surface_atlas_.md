@@ -6,7 +6,7 @@ display_categories: [work]
 ---
 
 <html>
-  <style> 
+<style> 
 .rangeslider {
   width: 400px;
   margin: 0 auto;
@@ -25,14 +25,12 @@ display_categories: [work]
   width: 23px;
   height: 24px;
   border: 0;
-  background: url('contrasticon.png');
   cursor: pointer;
 }
 .slider::-moz-range-thumb {
   width: 23px;
   height: 25px;
   border: 0;
-  background: url('contrasticon.png');
   cursor: pointer;
 } 
 .myslider:hover {
@@ -65,13 +63,10 @@ display_categories: [work]
 </style> 
 
 
-
 <div class="rangeslider">
     <input type="range" min="1" max="3" value="3" class="myslider" id="sliderRange">
 </div>
 
-<br>
-<br>
 <br>
 <br>
 <div class="image mt-3 mb-3" id="sliderImages">>
@@ -87,11 +82,11 @@ var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
   document.getElementById("demo").innerHTML = files; 
   document.write(files);
 
-    var list = function(files) {
-  for (var prop in files) {
-    document.write(prop);
-    document.getElementById('aaron-family').innerHTML += '<li>' + prop + '</li>';
-  }};
+//var list = function(files) {
+  //for (var prop in files) {
+    //document.write(prop);
+    //document.getElementById('aaron-family').innerHTML += '<li>' + prop + '</li>';
+  //}};
       
   var rangeslider = document.getElementById("sliderRange"); // get slider value
   var images = document.getElementById("sliderImages"); // get images listed above
