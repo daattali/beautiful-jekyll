@@ -74,10 +74,10 @@ display_categories: [work]
 </div>
 
 <script> 
-  var fs = require('fs');
-var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
-  document.getElementById("demo").innerHTML = files; 
-  document.write(files);
+//  var fs = require('fs');
+//var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
+ // document.getElementById("demo").innerHTML = files; 
+ // document.write(files);
 
 //var list = function(files) {
   //for (var prop in files) {
