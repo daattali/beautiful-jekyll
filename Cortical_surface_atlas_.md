@@ -108,4 +108,8 @@ window.addEventListener('load', function() {
 </body>
 </html>
 
+<a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://data.kitware.com/api/v1/file/564a65d58d777f7522dbfb61/download/data.nrrd"> 
+Visualize me in 3D online:</a>
+
+
 
