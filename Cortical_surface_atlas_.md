@@ -5,6 +5,7 @@ show-avatar: true
 display_categories: [work]
 ---
 <html>
+  <head>
 <style> 
 .rangeslider {
   width: 400px;
@@ -61,13 +62,12 @@ display_categories: [work]
   margin: 5px;
 }
 </style> 
+  </head>
 <body>
 <div class="rangeslider">
     <input type="range" min="20.00" max="21.00" step="0.1" value="0.1" class="myslider" id="sliderRange">
 </div>
 
-<br>
-<br>
 <div class="image mt-10 mb-10" id="sliderImages">>
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_1__age_20.10_smooth_300_.png">
@@ -83,45 +83,13 @@ display_categories: [work]
 </div>
 
 <script> 
-//  var fs = require('fs');
-//var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
- // document.getElementById("demo").innerHTML = files; 
- // document.write(files);
-
-//var list = function(files) {
-  //for (var prop in files) {
-    //document.write(prop);
-    //document.getElementById('aaron-family').innerHTML += '<li>' + prop + '</li>';
-  //}};
-
-///to write
-
-///end write
-  
-window.addEventListener('load', function() {
-
-  var rangeslider = document.getElementById("sliderRange");
-  var images = document.getElementById("sliderImages");
-
-  var output = document.getElementById("demo");
-output.innerHTML = rangeslider.value;
-rangeslider.oninput = function() {
-output.innerHTML = this.value;}
-
-  rangeslider.addEventListener('input', function() {
-    for (var i = 0; i < images.children.length; i++) {
-      images.children[i].style.display = 'none';
-    }
-    i = Number(this.value) - 1;
-    images.children[i].style.display = 'block';
-  });
-
-});
-      
+   var rangeslider = document.getElementById("sliderRange"); 
+   var output = document.getElementById("demo"); 
+   output.innerHTML = rangeslider.value; 
+   rangeslider.oninput = function() { 
+       output.innerHTML = this.value; 
+  } 
 </script> 
-<br>
-<br>
-<br>
 </body>
 </html>
 
