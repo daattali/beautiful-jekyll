@@ -19,18 +19,26 @@ display_categories: [work]
   opacity: 0.8;
   margin-top: 100px;
 }
-.myslider::-webkit-slider-thumb {
+ .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('contrasticon.png');
   cursor: pointer;
-  background: #34495E;
-  width: 33%;
-  height: 20px;
 }
-
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  border: 0;
+  background: url('contrasticon.png');
+  cursor: pointer;
+} 
 .myslider:hover {
   opacity: 1;
 }
-
+////
 .image {
   position: relative;
   width: 400px;
