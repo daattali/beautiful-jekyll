@@ -65,7 +65,7 @@ display_categories: [work]
   </head>
 <body>
 <div class="rangeslider">
-    <input type="range" min="20.00" max="21.00" step="0.1" value="0.1" class="myslider" id="sliderRange">
+    <input type="range" min="20.00" max="21.00" step="0.1" value="0.1" class="myslider" id="sliderRange" onchange="myFunction(this.value)">
 </div>
 
 <div class="image mt-10 mb-10" id="sliderImages">>
@@ -83,12 +83,15 @@ display_categories: [work]
 </div>
 
 <script> 
-   var rangeslider = document.getElementById("sliderRange"); 
-   var output = document.getElementById("demo"); 
-   output.innerHTML = rangeslider.value; 
-   rangeslider.oninput = function() { 
-       output.innerHTML = this.value; 
-  } 
+  function myFunction(val) {
+    document.getElementById("demo").innerHTML = val;
+}
+  // var rangeslider = document.getElementById("sliderRange"); 
+   //var output = document.getElementById("demo"); 
+   //output.innerHTML = rangeslider.value; 
+   //rangeslider.oninput = function() { 
+    //   output.innerHTML = this.value; 
+  //} 
 </script> 
 </body>
 </html>
