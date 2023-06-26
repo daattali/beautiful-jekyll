@@ -79,7 +79,7 @@ display_categories: [work]
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_7__age_20.70_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_8__age_20.80_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_9__age_20.90_smooth_300_.png">
-    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_10__age_21.00_smooth_300_.png">  
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_2__tp_100__age_30.00_smooth_300_.png">  
 </div>
 </body>
 </html>
