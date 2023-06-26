@@ -68,17 +68,6 @@ display_categories: [work]
 
 <div class="rangeslider">
     <input type="range" min="1" max="3" value="3" class="myslider" id="sliderRange">
-    <div class="row mt-3">
-        <div class="col-4">
-            <h6 class="display-6">Starting From Scratch</h6>
-        </div>
-        <div class="col-4">
-            <p class="demo">I'm designing around a few pieces I already own</p>
-        </div>
-        <div class="col-4">
-            <h6 class="display-6">Mostly Furnished</h6>
-        </div>
-    </div>
 </div>
 
 <br>
