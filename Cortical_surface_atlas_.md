@@ -4,7 +4,6 @@ permalink: /Cortical_surface_atlas_/
 show-avatar: true
 display_categories: [work]
 ---
-
 <html>
 <style> 
 .rangeslider {
@@ -106,9 +105,9 @@ window.addEventListener('load', function() {
 <br>
 <br>
 </body>
-</html>
+</html>'/assets/img/sub-sub-035_hole__filled.vtk';
 
-<a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://data.kitware.com/api/v1/file/564a65d58d777f7522dbfb61/download/data.nrrd"> 
+<a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk"> 
 Visualize me in 3D online:</a>
 
 
