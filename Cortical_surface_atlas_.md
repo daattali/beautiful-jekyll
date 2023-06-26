@@ -38,23 +38,19 @@ display_categories: [work]
 .myslider:hover {
   opacity: 1;
 }
-////
 .image {
   position: relative;
   width: 400px;
   margin: 0 auto;
 }
-
 .image>img {
   position: absolute;
   display: none;
 }
-
 .image>img.visible,
 .image>img:first-child {
   display: block;
 }
-
 .sliderOutput>div {
   margin: 5px;
   width: 120px;
@@ -62,12 +58,10 @@ display_categories: [work]
   vertical-align: top;
   text-align: center;
 }
-
 .sliderOutput h6,
 .sliderOutput p {
   margin: 5px;
 }
-
 </style> 
 
 
@@ -96,7 +90,6 @@ display_categories: [work]
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.10_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_25.20_smooth_300_.png">
 </div>
-
 
 <script> 
 
