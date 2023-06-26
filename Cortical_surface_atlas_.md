@@ -15,7 +15,7 @@ display_categories: [work]
   background: #FCF3CF;
   width: 100%;
   height: 20px;
-  opacity: 0.8;
+  opacity: 1;
   margin-top: 100px;
   border-radius: 10px;
 }
@@ -97,18 +97,18 @@ display_categories: [work]
   //}};
 
 ///to write
-var slider = document.getElementById("sliderRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
 
-slider.oninput = function() {
-output.innerHTML = this.value;}
 ///end write
   
 window.addEventListener('load', function() {
 
   var rangeslider = document.getElementById("sliderRange");
   var images = document.getElementById("sliderImages");
+
+  var output = document.getElementById("demo");
+output.innerHTML = rangeslider.value;
+rangeslider.oninput = function() {
+output.innerHTML = this.value;}
 
   rangeslider.addEventListener('input', function() {
     for (var i = 0; i < images.children.length; i++) {
