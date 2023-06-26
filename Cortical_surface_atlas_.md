@@ -66,19 +66,13 @@ display_categories: [work]
 <body>
 <div class="rangeslider">
     <input type="range" min="20.00" max="21.00" step="0.1" value="0.1" class="myslider" 
-      id="sliderRange"
-      onchange="myFunction(this.value)"
-      oninput="myFunction(this.value)"
+      id="sliderRange" onchange="myFunction(this.value)" oninput="myFunction(this.value)"
       />
 </div>
 
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-
 
 
 <script> 
