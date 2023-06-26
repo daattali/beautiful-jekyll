@@ -67,7 +67,8 @@ display_categories: [work]
 <div class="rangeslider">
     <input type="range" min="20.00" max="21.00" step="0.1" value="0.1" class="myslider" 
       id="sliderRange" onchange="myFunction(this.value)" oninput="myFunction(this.value)"
-      />
+      >
+   <span id="myValue"></span>
 </div>
 
 <br>
@@ -75,9 +76,9 @@ display_categories: [work]
 <br>
 
 
-<script> 
+<script type="text/javascript"> 
   function myFunction(val) {
-    document.getElementById("demo").innerHTML = val;
+    document.getElementById("myValue").innerHTML = val;
 }
   // var rangeslider = document.getElementById("sliderRange"); 
    //var output = document.getElementById("demo"); 
