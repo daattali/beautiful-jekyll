@@ -17,17 +17,18 @@ display_categories: [work]
   height: 20px;
   opacity: 0.8;
   margin-top: 100px;
+  border-radius: 10px;
 }
  .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 23px;
+  width: 100%;
   height: 24px;
   border: 0;
   cursor: pointer;
 }
 .slider::-moz-range-thumb {
-  width: 23px;
+  width: 95%;
   height: 25px;
   border: 0;
   cursor: pointer;
@@ -96,7 +97,7 @@ display_categories: [work]
   //}};
 
 ///to write
-var slider = document.getElementById("myRange");
+var slider = document.getElementById("sliderRange");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value;
 
