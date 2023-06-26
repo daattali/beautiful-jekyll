@@ -76,6 +76,25 @@ display_categories: [work]
 <br>
 
 
+
+<script> 
+  function myFunction(val) {
+    document.getElementById("demo").innerHTML = val;
+}
+  // var rangeslider = document.getElementById("sliderRange"); 
+   //var output = document.getElementById("demo"); 
+   //output.innerHTML = rangeslider.value; 
+   //rangeslider.oninput = function() { 
+    //   output.innerHTML = this.value; 
+  //} 
+</script> 
+</body>
+
+<a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk">Visualize me in 3D online:</a>
+  
+  <a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk"> 
+Visualize me in 3D online:</a>
+
 <div class="image mt-10 mb-10" id="sliderImages">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_1__age_20.10_smooth_300_.png">
@@ -90,24 +109,5 @@ display_categories: [work]
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_2__tp_100__age_30.00_smooth_300_.png">  
 </div>
 
-<script> 
-  function myFunction(val) {
-    document.getElementById("demo").innerHTML = val;
-}
-  // var rangeslider = document.getElementById("sliderRange"); 
-   //var output = document.getElementById("demo"); 
-   //output.innerHTML = rangeslider.value; 
-   //rangeslider.oninput = function() { 
-    //   output.innerHTML = this.value; 
-  //} 
-</script> 
-</body>
 </html>
-
-<a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk">Visualize me in 3D online:</a>
-  
-  <a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk"> 
-Visualize me in 3D online:</a>
-
-
 
