@@ -7,6 +7,10 @@ display_categories: [work]
 <html>
  <center>
 <body>
+</body>
+</center>
+</html>
+
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">  
@@ -39,6 +43,4 @@ display_categories: [work]
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
 </script>
-</body>
-</center>
-</html>
+
