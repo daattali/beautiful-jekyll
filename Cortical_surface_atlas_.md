@@ -75,7 +75,6 @@ display_categories: [work]
 </div>
 
 <script> 
-
   var fs = require('fs');
 var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
   document.getElementById("demo").innerHTML = files; 
@@ -86,9 +85,11 @@ var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
     //document.write(prop);
     //document.getElementById('aaron-family').innerHTML += '<li>' + prop + '</li>';
   //}};
-      
-  var rangeslider = document.getElementById("sliderRange"); // get slider value
-  var images = document.getElementById("sliderImages"); // get images listed above
+
+window.addEventListener('load', function() {
+
+  var rangeslider = document.getElementById("sliderRange");
+  var images = document.getElementById("sliderImages");
 
   rangeslider.addEventListener('input', function() {
     for (var i = 0; i < images.children.length; i++) {
@@ -97,6 +98,9 @@ var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
     i = Number(this.value) - 1;
     images.children[i].style.display = 'block';
   });
+
+});
+      
 </script> 
 <br>
 <br>
