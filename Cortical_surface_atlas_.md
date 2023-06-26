@@ -68,6 +68,14 @@ display_categories: [work]
     <input type="range" min="20.00" max="21.00" step="0.1" value="0.1" class="myslider" id="sliderRange" onchange="myFunction(this.value)">
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 <div class="image mt-10 mb-10" id="sliderImages">>
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_1__age_20.10_smooth_300_.png">
