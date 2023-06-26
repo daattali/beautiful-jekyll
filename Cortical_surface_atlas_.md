@@ -82,7 +82,6 @@ display_categories: [work]
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_2__tp_100__age_30.00_smooth_300_.png">  
 </div>
 </body>
-</html>
 
 <script> 
 //  var fs = require('fs');
@@ -124,6 +123,7 @@ output.innerHTML = this.value;}
 <br>
 <br>
 <br>
+</html>
 
 <a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk">Visualize me in 3D online:</a>
   
