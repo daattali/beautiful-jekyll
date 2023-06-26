@@ -14,9 +14,12 @@ display_categories: [work]
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance();
   var actor = vtk.Rendering.Core.vtkActor.newInstance();
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance();
-  var cone = vtk.Filters.Sources.vtkConeSource.newInstance();
+  //var cone = vtk.Filters.Sources.vtkConeSource.newInstance();
+  const url              = '/assets/img/sub-sub-035_hole__filled.vtk';
+  var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
+  mapper.setInputData(reader.getOutputData());
   actor.setMapper(mapper);
-  mapper.setInputConnection(cone.getOutputPort());
+  //mapper.setInputConnection(cone.getOutputPort());
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   renderer.resetCamera();
