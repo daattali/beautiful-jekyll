@@ -62,7 +62,7 @@ display_categories: [work]
 </style> 
 <body>
 <div class="rangeslider">
-    <input type="range" min="1" max="3" value="3" class="myslider" id="sliderRange">
+    <input type="range" min="20.00" max="21.00" step="0.1" value="0.1" class="myslider" id="sliderRange">
 </div>
 
 <br>
@@ -71,6 +71,14 @@ display_categories: [work]
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_1__age_20.10_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_2__age_20.20_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_3__age_20.30_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_4__age_20.40_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_5__age_20.50_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_6__age_20.60_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_7__age_20.70_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_8__age_20.80_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_9__age_20.90_smooth_300_.png">
+    <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_10__age_21.00_smooth_300_.png">  
 </div>
 </body>
 </html>
