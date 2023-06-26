@@ -61,8 +61,7 @@ display_categories: [work]
   margin: 5px;
 }
 </style> 
-
-
+<body>
 <div class="rangeslider">
     <input type="range" min="1" max="3" value="3" class="myslider" id="sliderRange">
 </div>
@@ -99,10 +98,10 @@ var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
     images.children[i].style.display = 'block';
   });
 </script> 
-
 <br>
 <br>
 <br>
+</body>
 </html>
 
 
