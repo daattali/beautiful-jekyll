@@ -84,7 +84,7 @@ display_categories: [work]
 <br>
 <br>
 
-<div class="image mt-3 mb-3">
+<div class="image mt-3 mb-3" id="sliderImages">>
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.10_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_25.20_smooth_300_.png">
@@ -103,8 +103,9 @@ var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
     document.write(prop);
     document.getElementById('aaron-family').innerHTML += '<li>' + prop + '</li>';
   }
-  
-  var images = document.getElementById("sliderImages");
+      
+  var rangeslider = document.getElementById("sliderRange"); // get slider value
+  var images = document.getElementById("sliderImages"); // get images listed above
 
   rangeslider.addEventListener('input', function() {
     for (var i = 0; i < images.children.length; i++) {
@@ -114,6 +115,10 @@ var files = fs.readdirSync('/assets/atlas/inner_cortical_surface/');
     images.children[i].style.display = 'block';
   });
 </script> 
+
+<br>
+<br>
+<br>
 </html>
 
 
