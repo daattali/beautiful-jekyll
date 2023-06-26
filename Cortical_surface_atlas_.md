@@ -72,6 +72,8 @@ display_categories: [work]
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.10_smooth_300_.png">
     <img src="/assets/atlas/inner_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_25.20_smooth_300_.png">
 </div>
+</body>
+</html>
 
 <script> 
 //  var fs = require('fs');
@@ -84,7 +86,6 @@ display_categories: [work]
     //document.write(prop);
     //document.getElementById('aaron-family').innerHTML += '<li>' + prop + '</li>';
   //}};
-
 window.addEventListener('load', function() {
 
   var rangeslider = document.getElementById("sliderRange");
@@ -104,8 +105,6 @@ window.addEventListener('load', function() {
 <br>
 <br>
 <br>
-</body>
-</html>'/assets/img/sub-sub-035_hole__filled.vtk';
 
 <a href="https://kitware.github.io/itk-vtk-viewer/app/?fileToLoad=https://github.com/fleurgaudfernau/fleurgaudfernau.github.io/tree/master/assets/img/sub-sub-035_hole__filled.vtk"> 
 Visualize me in 3D online:</a>
