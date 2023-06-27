@@ -11,7 +11,7 @@ display_categories: [work]
 <script type="text/javascript">  
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
-    rootContainer: document.body,
+    //rootContainer: document.body,
     containerStyle: { width: '1000px', height: "800px" } 
   });
   var actor = vtk.Rendering.Core.vtkActor.newInstance();
