@@ -63,7 +63,7 @@ openGLRenderWindow.setSize(width, height);
 //orientationWidget.setMinPixelSize(100);
 //orientationWidget.setMaxPixelSize(300);
 //renderer.resetCamera();
-renderWindow.render();
+//renderWindow.render();
 </script>
 </body>
 </html>
