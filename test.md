@@ -31,9 +31,33 @@ display_categories: [work]
   camera.zoom(4);
   renderer.setActiveCamera(camera);
   var renderWindow = fullScreenRenderer.getRenderWindow();
-  renderWindow.render(); 
-  const axesActor = vtkAxesActor.newInstance();
-
+  // add axes
+  // Use OpenGL as the backend to view all this
+  const openGLRenderWindow = vtk.Rendering.OpenGL.vtkOpenGLRenderWindow.newInstance();
+  renderWindow.addView(openGLRenderWindow);
+  // Create a div section to put this into
+  const container = document.createElement('div');
+document.querySelector('body').appendChild(container);
+openGLRenderWindow.setContainer(container);
+  // Capture size of the container and set it to the renderWindow
+const { width, height } = container.getBoundingClientRect();
+openGLRenderWindow.setSize(width, height);
+  //Setup an interactor to handle mouse events
+  const interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
+  interactor.setView(openGLRenderWindow);
+  interactor.initialize();
+  interactor.bindEvents(container);
+  interactor.setInteractorStyle(vtk.Interaction.Style.vtkInteractorStyleTrackballCamera.newInstance());
+  //
+ // const axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
+  //const orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
+   // actor: axesActor,
+    //interactor: interactor,
+    //renderer: renderer,
+  //});
+  // render
+  // this was part of original code
+  //renderWindow.render(); 
 </script>
 </body>
 </html>
