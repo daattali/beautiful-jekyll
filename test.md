@@ -33,6 +33,7 @@ display_categories: [work]
   camera.zoom(4);
   renderer.setActiveCamera(camera);
   actor.getProperty().setColor(1, 1, 1);
+  renderWindow.render();
   //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
  // var renderWindow = fullScreenRenderer.getRenderWindow();
   // add axes
