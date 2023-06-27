@@ -74,7 +74,7 @@ display_categories: [work]
 function downloadTimeSeries() {
   const files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
   return Promise.all(
-    files.map((filename) => fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
+    files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
         const reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
         reader.parseAsArrayBuffer(binary);
         return reader.getOutputData(0); })
