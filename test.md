@@ -26,7 +26,7 @@ display_categories: [work]
   const url              = '/assets/img/sub-sub-035_hole_filled.vtp'; 
   reader.setUrl(url);
   mapper.setInputConnection(reader.getOutputPort());
-  actor.getProperty().setColor(1.0, 1.0, 1.0);
+  actor.getProperty().setColor(1, 1, 1);
   // Camera settings
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
   camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
