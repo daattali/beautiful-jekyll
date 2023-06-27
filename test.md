@@ -62,17 +62,61 @@ display_categories: [work]
   });
   orientationWidget.setEnabled(true);
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
-  //orientationWidget.setViewportSize(0.15);
-  //orientationWidget.setMinPixelSize(100);
-  //orientationWidget.setMaxPixelSize(300);
+  orientationWidget.setViewportSize(0.15);
   //renderer.resetCamera();
   //renderWindow.render();
   // add a control panel
   const controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Time step:</label> <input id='timeslider' type='range' min='0' max='10' step='1' /> </td> </tr> <tr> <td> <p>Time value: <span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
-  let timeSeriesData = [];
+  // Manage which brain we see
+  const BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
+function downloadTimeSeries() {
+  const files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
+  return Promise.all(
+    files.map((filename) => fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
+        const reader = vtkXMLPolyDataReader.newInstance();
+        reader.parseAsArrayBuffer(binary);
+        return reader.getOutputData(0); })
+    )
+  );
+}
+function getDataTimeStep(vtkObj) {
+  const arr = vtkObj.getFieldData().getArrayByName('TimeValue');
+  if (arr) {  return arr.getData()[0];  }
+  return null; }
+function setVisibleDataset(ds) {
+  mapper.setInputData(ds);
+  renderer.resetCamera();
+  renderWindow.render();
+}
+// UI control handling
+function uiUpdateSlider(max) {
   const timeslider = document.querySelector('#timeslider');
-  const timevalue = document.querySelector('#timevalue');
+  timeslider.min = 0;
+  timeslider.max = max - 1;
+  timeslider.step = 1;
+}
+let timeSeriesData = [];
+const timeslider = document.querySelector('#timeslider');
+const timevalue = document.querySelector('#timevalue');
+timeslider.addEventListener('input', (e) => {
+  const activeDataset = timeSeriesData[Number(e.target.value)];
+  if (activeDataset) {
+    setVisibleDataset(activeDataset);
+    timevalue.innerText = getDataTimeStep(activeDataset);
+  }
+});
+downloadTimeSeries().then((downloadedData) => {
+  timeSeriesData = downloadedData.filter((ds) => getDataTimeStep(ds) !== null);
+  timeSeriesData.sort((a, b) => getDataTimeStep(a) - getDataTimeStep(b));
+  uiUpdateSlider(timeSeriesData.length);
+  timeslider.value = 0;
+  // set up camera
+  renderer.getActiveCamera().setPosition(0, 55, -22);
+  renderer.getActiveCamera().setViewUp(0, 0, -1);
+  setVisibleDataset(timeSeriesData[0]);
+  timevalue.innerText = getDataTimeStep(timeSeriesData[0]);
+});
 </script>
 </body>
 </html>
