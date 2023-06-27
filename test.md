@@ -20,7 +20,8 @@ display_categories: [work]
   const url              = '/assets/img/cow.vtp';
   //const url              = '/assets/img/sub-sub-035_hole_filled.vtp';
   reader.setUrl(url);
-  mapper.setInputData(reader.getOutputData());
+  mapper.setInputConnection(reader.getOutputPort());
+  //mapper.setInputData(reader.getOutputData());
   actor.setMapper(mapper);  
   //mapper.setInputData(polydata);
   //var polydata = reader.getOutputData(0); or getOuput()??
