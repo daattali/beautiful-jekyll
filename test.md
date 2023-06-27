@@ -47,7 +47,7 @@ const { width, height } = container.getBoundingClientRect();
 openGLRenderWindow.setSize(width, height);
   //Setup an interactor to handle mouse events
   //const interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
-  cont interactor = renderWindow.getInteractor();
+  const interactor = renderWindow.getInteractor();
   interactor.setView(openGLRenderWindow);
   interactor.initialize();
   interactor.bindEvents(container);
