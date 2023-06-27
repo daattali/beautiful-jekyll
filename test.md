@@ -40,14 +40,13 @@ display_categories: [work]
   renderWindow.addView(openGLRenderWindow);
   // Create a div section to put this into
   const container = document.createElement('div');
-document.querySelector('body').appendChild(container);
-openGLRenderWindow.setContainer(container);
+  document.querySelector('body').appendChild(container);
+  openGLRenderWindow.setContainer(container);
   // Capture size of the container and set it to the renderWindow
-const { width, height } = container.getBoundingClientRect();
-openGLRenderWindow.setSize(width, height);
+  const { width, height } = container.getBoundingClientRect();
+  openGLRenderWindow.setSize(width, height);
   //Setup an interactor to handle mouse events
-  //const interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
-  const interactor = renderWindow.getInteractor();
+  const interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
   interactor.setView(openGLRenderWindow);
   interactor.initialize();
   interactor.bindEvents(container);
@@ -61,11 +60,11 @@ openGLRenderWindow.setSize(width, height);
   });
   orientationWidget.setEnabled(true);
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
-//orientationWidget.setViewportSize(0.15);
-//orientationWidget.setMinPixelSize(100);
-//orientationWidget.setMaxPixelSize(300);
-//renderer.resetCamera();
-renderWindow.render();
+  //orientationWidget.setViewportSize(0.15);
+  //orientationWidget.setMinPixelSize(100);
+  //orientationWidget.setMaxPixelSize(300);
+  //renderer.resetCamera();
+  renderWindow.render();
 </script>
 </body>
 </html>
