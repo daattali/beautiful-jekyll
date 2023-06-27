@@ -14,7 +14,7 @@ display_categories: [work]
     //rootContainer: document.body,
     containerStyle: { width: '1000px', height: "800px" } 
   });
-  var const renderWindow = fullScreenRenderer.getRenderWindow();
+  var renderWindow = fullScreenRenderer.getRenderWindow();
   //var renderWindow = vtk.Rendering.Core.vtkRenderWindow.newInstance();
   var renderer = fullScreenRenderer.getRenderer();
   //var renderer = vtk.Rendering.Core.vtkRenderer.newInstance();
