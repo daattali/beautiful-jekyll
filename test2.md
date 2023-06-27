@@ -11,6 +11,7 @@ display_categories: [work]
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">
+  import controlPanel from "https://github.com/Kitware/vtk-js/blob/master/Examples/Geometry/TimeSeries/controller.html"
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
     containerStyle: { width: '400px', height: "600px" } });
@@ -38,7 +39,7 @@ display_categories: [work]
   timeslider.max = max - 1;
   timeslider.step = 1;
   }
-  fullScreenRenderer.addController(vtk.Sources.LineSource.example.controlPanel.html);
+  fullScreenRenderer.addController(controlPanel);
   // end control
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render();
