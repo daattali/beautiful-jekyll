@@ -23,12 +23,12 @@ display_categories: [work]
   renderer.addActor(actor);
   renderer.resetCamera();
   //actor.getProperty().setColor(1.0, 0.0, 0.0);
-  //camera.zoom(1);
+  camera.zoom(1);
   //camera.setFocalPoint(380.97411895023845, 200.64760282840194, 94.93353212117555);
   //camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
   //camera.setViewUp(0.46926601607332835, -0.3433504107607388, -0.81357230876493);
   //camera.setViewAngle(30.0);
-  //renderer.setCamera(camera);
+  renderer.setCamera(camera);
   //renderer.setActiveCamera(camera);
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render();
