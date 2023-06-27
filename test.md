@@ -33,7 +33,7 @@ display_categories: [work]
   var renderWindow = fullScreenRenderer.getRenderWindow();
   // add axes
   // Use OpenGL as the backend to view all this
-  const openGLRenderWindow = vtk.Rendering.OpenGL.vtkOpenGLRenderWindow.newInstance();
+  const openGLRenderWindow = vtk.Rendering.OpenGL.vtkRenderWindow.newInstance();
   renderWindow.addView(openGLRenderWindow);
   // Create a div section to put this into
   const container = document.createElement('div');
