@@ -66,7 +66,7 @@ display_categories: [work]
   //renderer.resetCamera();
   //renderWindow.render();
   // add a control panel
-  const controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='0' max='10' step='1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
+  const controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='0' max='1' step='1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
   // Manage which brain we see
   const BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
