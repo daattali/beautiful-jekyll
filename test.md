@@ -9,20 +9,22 @@ display_categories: [work]
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">  
-  var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
-    background: [0, 0, 0],
+  //var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
+  //  background: [0, 0, 0],
     //rootContainer: document.body,
-    containerStyle: { width: '1000px', height: "800px" } 
-  });
+  //  containerStyle: { width: '1000px', height: "800px" } 
+  //});
+  //var renderer = fullScreenRenderer.getRenderer();
   var actor = vtk.Rendering.Core.vtkActor.newInstance();
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
   const url              = '/assets/img/sub-sub-035_hole_filled.vtp'; 
+  var renderWindow = vtk.Rendering.Core.vtkRenderWindow.newInstance();
+  var renderer = vtk.Rendering.Core.vtkRenderer.newInstance();
   actor.setMapper(mapper);  
   reader.setUrl(url);
   mapper.setInputConnection(reader.getOutputPort());
-  var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
   actor.getProperty().setColor(1.0, 1.0, 1.0);
@@ -30,7 +32,7 @@ display_categories: [work]
   camera.setViewAngle(30.0);
   camera.zoom(4);
   renderer.setActiveCamera(camera);
-  var renderWindow = fullScreenRenderer.getRenderWindow();
+ // var renderWindow = fullScreenRenderer.getRenderWindow();
   // add axes
   // Use OpenGL as the backend to view all this
   const openGLRenderWindow = vtk.Rendering.OpenGL.vtkRenderWindow.newInstance();
@@ -63,7 +65,7 @@ openGLRenderWindow.setSize(width, height);
 //orientationWidget.setMinPixelSize(100);
 //orientationWidget.setMaxPixelSize(300);
 //renderer.resetCamera();
-//renderWindow.render();
+renderWindow.render();
 </script>
 </body>
 </html>
