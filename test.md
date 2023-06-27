@@ -9,14 +9,15 @@ display_categories: [work]
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">  
-  //var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
-  //  background: [0, 0, 0],
+  var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
+    background: [0, 0, 0],
     //rootContainer: document.body,
-  //  containerStyle: { width: '1000px', height: "800px" } 
-  //});
-  //var renderer = fullScreenRenderer.getRenderer();
-  var renderWindow = vtk.Rendering.Core.vtkRenderWindow.newInstance();
-  var renderer = vtk.Rendering.Core.vtkRenderer.newInstance();
+    containerStyle: { width: '1000px', height: "800px" } 
+  });
+  var const renderWindow = fullScreenRenderer.getRenderWindow();
+  //var renderWindow = vtk.Rendering.Core.vtkRenderWindow.newInstance();
+  var renderer = fullScreenRenderer.getRenderer();
+  //var renderer = vtk.Rendering.Core.vtkRenderer.newInstance();
   var actor = vtk.Rendering.Core.vtkActor.newInstance();
   renderer.addActor(actor);
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
@@ -55,7 +56,7 @@ display_categories: [work]
   const axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
   const orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
   actor: axesActor,
-  interactor: interactor,
+  interactor: renderWindow.getInteractor(),
   renderer: renderer, 
   });
   orientationWidget.setEnabled(true);
