@@ -20,7 +20,7 @@ display_categories: [work]
   reader.setUrl(url);
   mapper.setInputConnection(reader.getOutputPort());
   actor.setMapper(mapper);  
-  actor.getProperty().setColor(1.0, 0.0, 0.0);
+  actor.getProperty().setColor(1.0, 1.0, 1.0);
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
