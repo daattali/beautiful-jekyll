@@ -25,7 +25,7 @@ display_categories: [work]
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
-  actor.getProperty().setColor(1.0, 0.0, 0.0);
+  //actor.getProperty().setColor(1.0, 0.0, 0.0);
   camera.zoom(0.05)
   camera.setViewAngle(30.0);
   renderer.setActiveCamera(camera)
