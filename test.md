@@ -14,21 +14,18 @@ display_categories: [work]
     containerStyle: { width: '1000px', height: "800px" } });
   var actor = vtk.Rendering.Core.vtkActor.newInstance();
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
-  //var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  //var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
-  //const url              = '/assets/img/cow.vtp';
+  var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
   const url              = '/assets/img/sub-sub-035_hole_filled.vtp';
   reader.setUrl(url);
   mapper.setInputConnection(reader.getOutputPort());
-  //mapper.setInputData(reader.getOutputData());
   actor.setMapper(mapper);  
-  //mapper.setInputData(polydata);
-  //var polydata = reader.getOutputData(0); or getOuput()??
-  //mapper.setInputConnection(reader.getOutputPort());
+  actor.getProperty().setColor(1.0, 0.0, 0.0);
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
-  renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
+  //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
+  camera.zoom(0.5)
+  renderer.setActiveCamera(camera)
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
 </script>
