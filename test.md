@@ -48,16 +48,22 @@ openGLRenderWindow.setSize(width, height);
   interactor.initialize();
   interactor.bindEvents(container);
   interactor.setInteractorStyle(vtk.Interaction.Style.vtkInteractorStyleTrackballCamera.newInstance());
-  //
- // const axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
-  //const orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
-   // actor: axesActor,
-    //interactor: interactor,
-    //renderer: renderer,
-  //});
-  // render
   // this was part of original code
   //renderWindow.render(); 
+  // create orientation widget - add orientation axes
+  const axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
+  const orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
+  actor: axesActor,
+  interactor: interactor,
+  renderer: renderer,
+  });
+  orientationWidget.setEnabled(true);
+  orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
+//orientationWidget.setViewportSize(0.15);
+//orientationWidget.setMinPixelSize(100);
+//orientationWidget.setMaxPixelSize(300);
+//renderer.resetCamera();
+renderWindow.render();
 </script>
 </body>
 </html>
