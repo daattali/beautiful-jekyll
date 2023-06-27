@@ -6,12 +6,11 @@ display_categories: [work]
 ---
 <html>
   <center>
-    https://github.com/Kitware/vtk-js/blob/master/Sources/Filters/Sources/LineSource/example/controlPanel.html
 <body>
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">
-  import controlPanel from "https://github.com/Kitware/vtk-js/blob/master/Examples/Geometry/TimeSeries/controller.html"
+//  import controlPanel from "https://github.com/Kitware/vtk-js/blob/master/Examples/Geometry/TimeSeries/controller.html"
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
     containerStyle: { width: '400px', height: "600px" } });
@@ -30,8 +29,8 @@ display_categories: [work]
   //camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
   //camera.setViewUp(0.46926601607332835, -0.3433504107607388, -0.81357230876493);
   //camera.setViewAngle(30.0);
-  renderer.setCamera(camera);
-  //renderer.setActiveCamera(camera);
+  //renderer.setCamera(camera);
+  renderer.setActiveCamera(camera);
   // control panel
   function uiUpdateSlider(max) {
   const timeslider = document.querySelector('#timeslider');
@@ -39,7 +38,7 @@ display_categories: [work]
   timeslider.max = max - 1;
   timeslider.step = 1;
   }
-  fullScreenRenderer.addController(controlPanel);
+  //fullScreenRenderer.addController(controlPanel);
   // end control
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render();
