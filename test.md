@@ -28,7 +28,7 @@ display_categories: [work]
   actor.getProperty().setColor(1.0, 1.0, 1.0);
   camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
   camera.setViewAngle(30.0);
-  camera.zoom(5);
+  camera.zoom(4);
   renderer.setActiveCamera(camera);
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
