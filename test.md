@@ -13,12 +13,11 @@ display_categories: [work]
     background: [0, 0, 0],
     containerStyle: { width: '400px', height: "600px" } });
   var actor = vtk.Rendering.Core.vtkActor.newInstance();
-  var mapper = vtk.Rendering.Core.vtkMapper.newInstance();
- //var mapper = vtk.Sources.Rendering.OpenGL.PolyDataMapper.newInstance();
-  var mapper             = vtk.Rendering.Core.vtkMapper.newInstance();
-  var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
+  var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
+  //var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
+  var reader = vtk.IO.Legacy.vtkXMLPolyDataReader.newInstance();
   //var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
-  const url              = '/assets/img/sub-sub-035_hole__filled.vtk';
+  const url              = '/assets/img/sub-sub-035_hole_filled.vtp';
  //camera = renderer.GetActiveCamera()
   //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
   //reader.setUrl('/assets/img/ImageToStl.com_deterministicatlas__estimatedparameters__template_img.vtp')
