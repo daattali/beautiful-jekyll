@@ -32,6 +32,21 @@ display_categories: [work]
   renderer.setActiveCamera(camera);
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
+  fullScreenRenderer.addController(<html><table>
+  <tr>
+    <td>
+      <label for="timeslider">Time step:</label>
+      <input id="timeslider" type="range" min="0" max="1" step="1" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Time value: <span id="timevalue">DOWNLOADING...</span></p></html>
+    </td>
+  </tr>
+</table></html>);
+  const axesActor = vtkAxesActor.newInstance();
+
 </script>
 </body>
 </html>
