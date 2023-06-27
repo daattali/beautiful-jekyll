@@ -13,10 +13,11 @@ display_categories: [work]
     background: [0, 0, 0],
     containerStyle: { width: '400px', height: "600px" } });
   var actor = vtk.Rendering.Core.vtkActor.newInstance();
-  //var mapper = vtk.Rendering.Core.vtkMapper.newInstance();
- var mapper = vtk.Sources.Rendering.OpenGL.PolyDataMapper.newInstance();
+  var mapper = vtk.Rendering.Core.vtkMapper.newInstance();
+ //var mapper = vtk.Sources.Rendering.OpenGL.PolyDataMapper.newInstance();
+  var mapper             = vtk.Rendering.Core.vtkMapper.newInstance();
   var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
-  var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
+  //var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
   const url              = '/assets/img/sub-sub-035_hole__filled.vtk';
  //camera = renderer.GetActiveCamera()
   //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
@@ -26,7 +27,7 @@ display_categories: [work]
   //mapper.setInput(reader.getOutput()); or reader.getOutputData(0)
   mapper.setInputData(reader.getOutputData());
   actor.setMapper(mapper);  
- actor.getProperty().setColor(1.0, 0.0, 0.0);
+ //actor.getProperty().setColor(1.0, 0.0, 0.0);
   //mapper.setInputData(polydata);
   //var polydata = reader.getOutputData(0); or getOuput()??
   //mapper.setInputConnection(reader.getOutputPort());
