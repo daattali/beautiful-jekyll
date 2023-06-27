@@ -46,19 +46,18 @@ openGLRenderWindow.setContainer(container);
 const { width, height } = container.getBoundingClientRect();
 openGLRenderWindow.setSize(width, height);
   //Setup an interactor to handle mouse events
-  const interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
+  //const interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
+  cont interactor = renderWindow.getInteractor();
   interactor.setView(openGLRenderWindow);
   interactor.initialize();
   interactor.bindEvents(container);
   interactor.setInteractorStyle(vtk.Interaction.Style.vtkInteractorStyleTrackballCamera.newInstance());
-  // this was part of original code
-  //renderWindow.render(); 
   // create orientation widget - add orientation axes
   const axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
   const orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
   actor: axesActor,
   interactor: interactor,
-  renderer: renderer,
+  renderer: renderer, 
   });
   orientationWidget.setEnabled(true);
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
