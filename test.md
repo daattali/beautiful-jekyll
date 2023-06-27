@@ -17,8 +17,8 @@ display_categories: [work]
   //var reader = vtk.IO.Legacy.vtkPolyDataReader.newInstance();
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
   //var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
-  const url              = '/assets/img/cow.vtp';
-  //const url              = '/assets/img/sub-sub-035_hole_filled.vtp';
+  //const url              = '/assets/img/cow.vtp';
+  const url              = '/assets/img/sub-sub-035_hole_filled.vtp';
   reader.setUrl(url);
   mapper.setInputConnection(reader.getOutputPort());
   //mapper.setInputData(reader.getOutputData());
