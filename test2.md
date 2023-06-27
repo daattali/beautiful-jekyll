@@ -6,6 +6,7 @@ display_categories: [work]
 ---
 <html>
   <center>
+    https://github.com/Kitware/vtk-js/blob/master/Sources/Filters/Sources/LineSource/example/controlPanel.html
 <body>
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
@@ -30,6 +31,15 @@ display_categories: [work]
   //camera.setViewAngle(30.0);
   renderer.setCamera(camera);
   //renderer.setActiveCamera(camera);
+  // control panel
+  function uiUpdateSlider(max) {
+  const timeslider = document.querySelector('#timeslider');
+  timeslider.min = 0;
+  timeslider.max = max - 1;
+  timeslider.step = 1;
+  }
+  fullScreenRenderer.addController(vtk.Sources.LineSource.example.controlPanel.html);
+  // end control
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render();
   
