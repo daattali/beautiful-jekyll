@@ -26,9 +26,9 @@ display_categories: [work]
   renderer.addActor(actor);
   //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
   actor.getProperty().setColor(1.0, 1.0, 1.0);
-  camera.zoom(0.5);
   camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
   camera.setViewAngle(30.0);
+  camera.zoom(0.5);
   renderer.setActiveCamera(camera);
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
