@@ -24,7 +24,7 @@ display_categories: [work]
   var renderer = fullScreenRenderer.getRenderer();
   renderer.addActor(actor);
   //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
-  camera.zoom(0.5)
+  camera.zoom(0.05)
   renderer.setActiveCamera(camera)
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
