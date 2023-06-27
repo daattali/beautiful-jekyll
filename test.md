@@ -15,23 +15,24 @@ display_categories: [work]
   //  containerStyle: { width: '1000px', height: "800px" } 
   //});
   //var renderer = fullScreenRenderer.getRenderer();
-  var actor = vtk.Rendering.Core.vtkActor.newInstance();
-  var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
-  var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
-  const url              = '/assets/img/sub-sub-035_hole_filled.vtp'; 
   var renderWindow = vtk.Rendering.Core.vtkRenderWindow.newInstance();
   var renderer = vtk.Rendering.Core.vtkRenderer.newInstance();
+  var actor = vtk.Rendering.Core.vtkActor.newInstance();
+  renderer.addActor(actor);
+  var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
   actor.setMapper(mapper);  
+  var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+  const url              = '/assets/img/sub-sub-035_hole_filled.vtp'; 
   reader.setUrl(url);
   mapper.setInputConnection(reader.getOutputPort());
-  renderer.addActor(actor);
-  //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
   actor.getProperty().setColor(1.0, 1.0, 1.0);
+  // Camera settings
+  var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
   camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
   camera.setViewAngle(30.0);
   camera.zoom(4);
   renderer.setActiveCamera(camera);
+  //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
  // var renderWindow = fullScreenRenderer.getRenderWindow();
   // add axes
   // Use OpenGL as the backend to view all this
