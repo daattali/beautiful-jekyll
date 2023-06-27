@@ -65,7 +65,7 @@ display_categories: [work]
   //orientationWidget.setMinPixelSize(100);
   //orientationWidget.setMaxPixelSize(300);
   //renderer.resetCamera();
-  renderWindow.render();
+  //renderWindow.render();
 </script>
 </body>
 </html>
