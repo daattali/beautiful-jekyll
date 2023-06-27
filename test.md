@@ -70,7 +70,7 @@ display_categories: [work]
   fullScreenRenderer.addController(controlPanel);
   // Manage which brain we see
   const BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
-  const { fetchBinary } = vtk.IO.Core.DataAccessHelper.vtkHttpDataAccessHelper;
+  const { fetchBinary } = vtk.IO.Core.DataAccessHelper.HttpDataAccessHelper;
 function downloadTimeSeries() {
   const files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
   return Promise.all(
