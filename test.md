@@ -15,17 +15,17 @@ display_categories: [work]
   var actor = vtk.Rendering.Core.vtkActor.newInstance();
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
-  const url              = '/assets/img/sub-sub-035_hole_filled.vtp';
+  const url              = '/assets/img/sub-sub-035_hole_filled.vtp'; 
   reader.setUrl(url);
   mapper.setInputConnection(reader.getOutputPort());
   actor.setMapper(mapper);  
   actor.getProperty().setColor(1.0, 1.0, 1.0);
   var renderer = fullScreenRenderer.getRenderer();
+  const camera = renderer.getActiveCamera();
   renderer.addActor(actor);
-  //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
-  camera.zoom(0.05)
-  renderer.setActiveCamera(camera)
+  renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
+  //camera.zoom(0.05)
+  //renderer.setActiveCamera(camera)
   var renderWindow = fullScreenRenderer.getRenderWindow();
   renderWindow.render(); 
 </script>
