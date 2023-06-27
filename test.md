@@ -9,6 +9,7 @@ display_categories: [work]
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">  
+  import controlPanel from './controller.html';
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
     //rootContainer: document.body,
@@ -67,6 +68,10 @@ display_categories: [work]
   //orientationWidget.setMaxPixelSize(300);
   //renderer.resetCamera();
   //renderWindow.render();
+  fullScreenRenderer.addController(controlPanel);
+  let timeSeriesData = [];
+  const timeslider = document.querySelector('#timeslider');
+  const timevalue = document.querySelector('#timevalue');
 </script>
 </body>
 </html>
