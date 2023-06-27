@@ -10,9 +10,7 @@ display_categories: [work]
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">  
-  const controlPanel = () =>{
-"<html><table> <tr>  <td> <label for='timeslider'>Time step:</label> <input id='timeslider' type='range' min='0' max='1' step='1' /> </td> </tr> <tr> <td> <p>Time value: <span id='timevalue'>DOWNLOADING...</span></p> </td> </tr></table></html>"
-};
+  const controlPanel = () =>{"<html><table> <tr>  <td> <label for='timeslider'>Time step:</label> <input id='timeslider' type='range' min='0' max='1' step='1' /> </td> </tr> <tr> <td> <p>Time value: <span id='timevalue'>...</span></p> </td> </tr></table></html>"};
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
     //rootContainer: document.body,
