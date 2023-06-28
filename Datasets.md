@@ -159,7 +159,7 @@ brain-atlases/cortical-surface-atlas"> <i class="fas fa-link"></i></a>
       <td>Adamson et al. (M-CRIB-S atlas)</td>
       <td>Neonatal cortical surface atlas (🧠)</td>
        <td></td>
-       <td>Spherical templates of cortical curvature and sulcal depth</td>
+       <td>White, pial and spherical templates + cortical curvature and sulcal depth</td>
        <td><a href="https://www.github.com/
 DevelopmentalImagingMCRI/MCRIBS"> <i class="fas fa-link"></i></a>
           </td></tr>   
