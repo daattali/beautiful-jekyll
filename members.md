@@ -147,7 +147,7 @@ members:
       - name: Interns
         full: False
         list:
-                   - name: Gunjan Sethi (MRSD)
+                   - name: Gunjan Sethi (MRSD) -> Raven Industries
                    - name: Khush Agrawal (RISS)
                    - name: Pengsheng Guo
                    - name: Wen-Hsuan Chu
