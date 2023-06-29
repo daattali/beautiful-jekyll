@@ -7,9 +7,9 @@ display_categories: [work]
 <html>
 <body>
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
-  <script type="text/javascript" src="require.js"></script>
-<script type="text/javascript">  
+<script defer type="text/javascript" src="https://unpkg.com/vtk.js"></script>
+  <script defer type="text/javascript" src="require.js"></script>
+<script defer type="text/javascript">  
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
     //rootContainer: document.body,
