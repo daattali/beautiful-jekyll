@@ -7,9 +7,8 @@ display_categories: [work]
 <html>
 <body>
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
-<script defer type="text/javascript" src="https://unpkg.com/vtk.js"></script>
-  <script defer type="text/javascript" src="require.js"></script>
-<script defer type="text/javascript">  
+<script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
+<script type="text/javascript">  
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
     //rootContainer: document.body,
@@ -72,14 +71,21 @@ display_categories: [work]
   fullScreenRenderer.addController(controlPanel);
   // Manage which brain we see
   //const BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
+  const BASE_URL = '/assets/atlas/outer_cortical_surface';
   const { fetchBinary } = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary;
 function downloadTimeSeries() {
   //const files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
-  var fs = require('fs');
-var files = fs.readdirSync('/assets/atlas/outer_cortical_surface/');
+  var filesss = [];
+  var c = 0;
+  var t = 0;
+  for (var 20.0 = 0; i < 36.0; i+=0.1) {
+  filesss[i] = "GeodesicRegression__GeodesicFlow__img__component_"+ c+ "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
+  if (i == 24.0 or i == 28.0 or i == 32.0) {c = c + 1;}
+  t = t + 1;
+  } 
   return Promise.all(
    // files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
-    files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${filename}`).then((binary) => {
+    files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
         const reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
         reader.parseAsArrayBuffer(binary);
         return reader.getOutputData(0); })
