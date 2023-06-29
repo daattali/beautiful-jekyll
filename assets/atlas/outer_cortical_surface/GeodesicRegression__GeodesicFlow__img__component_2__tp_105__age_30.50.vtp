@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <VTKFile type="PolyData" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
   <PolyData>
+    <FieldData>
+      <DataArray type="Float64" Name="TimeValue" NumberOfTuples="1" format="binary" RangeMin="30.5" RangeMax="30.5">
+        AQAAAACAAAAIAAAADgAAAA==eJxjYACCBjsHAAJEAP8=
+      </DataArray>
+    </FieldData>
     <Piece NumberOfPoints="29954" NumberOfVerts="0" NumberOfLines="0" NumberOfStrips="0" NumberOfPolys="59900">
       <PointData>
       </PointData>
