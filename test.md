@@ -7,6 +7,7 @@ display_categories: [work]
 <html>
 <body>
 <script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"></script>
+<script type="text/javascript" src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">  
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
@@ -71,7 +72,6 @@ display_categories: [work]
   fullScreenRenderer.addController(controlPanel);
   // Manage which brain we see
   //const BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
-  const BASE_URL = '/assets/atlas/outer_cortical_surface/';
   const { fetchBinary } = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary;
 function downloadTimeSeries() {
   //const files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
