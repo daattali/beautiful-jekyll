@@ -66,15 +66,20 @@ display_categories: [work]
   //renderer.resetCamera();
   //renderWindow.render();
   // add a control panel
-  const controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='0' max='1' step='1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
+  //const controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='0' max='1' step='1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
+  const controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
   // Manage which brain we see
-  const BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
+  //const BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
+  const BASE_URL = '/assets/atlas/outer_cortical_surface/';
   const { fetchBinary } = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary;
 function downloadTimeSeries() {
-  const files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
+  //const files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
+  var fs = require('fs');
+var files = fs.readdirSync('/assets/atlas/outer_cortical_surface/');
   return Promise.all(
-    files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
+   // files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
+    files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${filename}`).then((binary) => {
         const reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
         reader.parseAsArrayBuffer(binary);
         return reader.getOutputData(0); })
@@ -93,9 +98,9 @@ function setVisibleDataset(ds) {
 // UI control handling
 function uiUpdateSlider(max) {
   const timeslider = document.querySelector('#timeslider');
-  timeslider.min = 0;
+  timeslider.min = 20;
   timeslider.max = max - 1;
-  timeslider.step = 1;
+  timeslider.step = 0.1;
 }
 let timeSeriesData = [];
 const timeslider = document.querySelector('#timeslider');
@@ -111,7 +116,7 @@ downloadTimeSeries().then((downloadedData) => {
   timeSeriesData = downloadedData.filter((ds) => getDataTimeStep(ds) !== null);
   timeSeriesData.sort((a, b) => getDataTimeStep(a) - getDataTimeStep(b));
   uiUpdateSlider(timeSeriesData.length);
-  timeslider.value = 0;
+  timeslider.value = 20;
   // set up camera
   renderer.getActiveCamera().setPosition(0, 55, -22);
   renderer.getActiveCamera().setViewUp(0, 0, -1);
