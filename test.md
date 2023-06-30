@@ -112,11 +112,13 @@ var timevalue = document.querySelector('#timevalue');
 timeslider.addEventListener('input', (e) => {
   var activeDataset = timeSeriesData[Number(e.target.value)];
   if (activeDataset) {
+    console.log("activeDataset",activeDataset);
     setVisibleDataset(activeDataset);
     timevalue.innerText = getDataTimeStep(activeDataset);
   }
 });
 downloadTimeSeries().then((downloadedData) => {
+  console.log("downloadTimeSeries", downloadedData);
   timeSeriesData = downloadedData.filter((ds) => getDataTimeStep(ds) !== null);
   timeSeriesData.sort((a, b) => getDataTimeStep(a) - getDataTimeStep(b));
   uiUpdateSlider(timeSeriesData.length);
@@ -125,6 +127,7 @@ downloadTimeSeries().then((downloadedData) => {
   renderer.getActiveCamera().setPosition(0, 55, -22);
   renderer.getActiveCamera().setViewUp(0, 0, -1);
   setVisibleDataset(timeSeriesData[0]);
+  console.log("set up first view", timeSeriesData[0]);
   timevalue.innerText = getDataTimeStep(timeSeriesData[0]);
 });
 </script>
