@@ -77,6 +77,7 @@ function downloadTimeSeries() {
   var t = 0;
   for (var i = 20.0; i < 36.0; i += 0.1) {
   files[i] = "GeodesicRegression__GeodesicFlow__img__component_"+ c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
+  console.log(files[i])
   if (i == 24.0 || i == 28.0 || i == 32.0) {c = c + 1;}
   t = t + 1;
   } 
