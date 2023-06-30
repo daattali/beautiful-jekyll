@@ -131,7 +131,7 @@ Likewise, to remove one or more images from your system, you can use the followi
 docker rmi <image_name_or_id>
 ```
 
-`docker rm` is used to remove one or more containers from your system. `docker rmi` is used to remove one or more images from your system.
+`docker rm` is used to remove one or more containers from your system.
 
 
 #### Inspect Container
