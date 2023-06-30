@@ -78,7 +78,7 @@ function downloadTimeSeries() {
   for (var i = 20.0; i < 36.0; i += 0.1) {
   files[i] = "GeodesicRegression__GeodesicFlow__img__component_"+ c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log(files[i])
-  if (i == 24.0 || i == 28.0 || i == 32.0) {c = c + 1;}
+  if (i.toFixed(1) == 24.0 || i.toFixed(1) == 28.0 || i.toFixed(1) == 32.0) {c = c + 1;}
   t = t + 1;
   } 
   return Promise.all(
@@ -90,8 +90,9 @@ function downloadTimeSeries() {
   );
 }
 function getDataTimeStep(vtkObj) {
+  console.log(vtkObj)
   var arr = vtkObj.getFieldData().getArrayByName('TimeValue');
-  if (arr) {  return arr.getData()[0];  }
+  if (arr) {  console.log(arr.getData()[0]); return arr.getData()[0];  }
   return null; }
 function setVisibleDataset(ds) {
   mapper.setInputData(ds);
