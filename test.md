@@ -72,11 +72,11 @@ display_categories: [work]
   //var { fetchBinary } = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary;
 function downloadTimeSeries() {
   //var files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
-  var filesss = [];
+  var files = [];
   var c = 0;
   var t = 0;
   for (var i = 20.0; i < 36.0; i += 0.1) {
-  filesss[i] = "GeodesicRegression__GeodesicFlow__img__component_"+ c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
+  files[i] = "GeodesicRegression__GeodesicFlow__img__component_"+ c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   if (i == 24.0 || i == 28.0 || i == 32.0) {c = c + 1;}
   t = t + 1;
   } 
