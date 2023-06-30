@@ -21,8 +21,8 @@ display_categories: [work]
 
 <b>Cortico-Cerebellar Neurodynamics during Social Interaction in Autism Spectrum Disorder </b><br>
 <font size="3"> Fleur Gaudfernau, Aline Lefebvre, Denis-Alexander Engemann, Amandine Pedoux, Anna Bánki, Florence Baillin, Benjamin Landman, Frederique Amsellem, Thomas Bourgeron, Richard Delorme, Guillaume Dumas<br>
-NeuroImage: Clinical, 2023. </font><br>
-[![DOI:10.1016/j.nicl.2023.103465](https://zenodo.org/badge/DOI/10.1016/j.nicl.2023.103465.svg)](https://doi.org/10.1016/j.nicl.2023.103465)
+     NeuroImage: Clinical, 2023.</font><br>
+     [![DOI:10.1016/j.nicl.2023.103465](https://zenodo.org/badge/DOI/10.1016/j.nicl.2023.103465.svg)](https://doi.org/10.1016/j.nicl.2023.103465)
 
 <b>Characteristics associated with feeding organic foods during complementary feeding: the nationwide Étude Longitudinale Française depuis l’Enfance (ELFE) birth cohort<br></b>
      <font size="3"> Blandine de Lauzon-Guillain, Fleur Gaudfernau, Aurore Camier, Camille Davisse-Paturet, Sandrine Lioret, Sophie Nicklaus, Marie-Aline Charles, Emmanuelle Kesse-Guyot<br>
