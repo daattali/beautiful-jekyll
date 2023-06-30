@@ -67,7 +67,6 @@ display_categories: [work]
   var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
   // Manage which brain we see
-  //var BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
   var BASE_URL = '/assets/atlas/outer_cortical_surface';
   //var { fetchBinary } = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary;
 function downloadTimeSeries() {
@@ -76,13 +75,13 @@ function downloadTimeSeries() {
   var c = 0;
   var t = 0;
   for (var i = 20.0; i < 36.0; i += 0.1) {
-  files[i] = "GeodesicRegression__GeodesicFlow__img__component_"+ c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
+  files[i] = '/assets/atlas/outer_cortical_surface/' + "GeodesicRegression__GeodesicFlow__img__component_"+ c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log(files[i])
   if (i.toFixed(1) == 24.0 || i.toFixed(1) == 28.0 || i.toFixed(1) == 32.0) {c = c + 1;}
   t = t + 1;
   } 
   return Promise.all(
-    files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
+    files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${filename}`).then((binary) => {
       console.log("filename",filename);
         var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
         reader.parseAsArrayBuffer(binary);
