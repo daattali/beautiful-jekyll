@@ -1248,7 +1248,7 @@ NOTE: Using a volume mapping for the `python_connection.env` file is a way to pr
 
 #### Supporting the Dependent Service
 
-The `depends_on` instruction does not guarantee full readiness or availability of the dependent service, rather that the dependency service starts first. Additional mechanism is be required within the app script to ensure that the dependent service can successfully connect and interact with the dependency, such as implementing health checks and connection retries in the application code. To this end, I add the `check_database_health` function to the `ingest_data.py` file, and then use it within the `main` function:
+The `depends_on` instruction does not guarantee full readiness or availability of the dependent service, rather that the dependency service starts first. Additional mechanism is required within the app script to ensure that the dependent service can successfully connect and interact with the dependency, such as implementing health checks and connection retries in the application code. To this end, I add the `check_database_health` function to the `ingest_data.py` file, and then use it within the `main` function:
 
 ```python
 def check_database_health(db_url):
