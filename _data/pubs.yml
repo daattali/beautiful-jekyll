@@ -14,20 +14,48 @@
 #  tags: null
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+- abs: Many fabric handling and 2D deformable material tasks in homes and
+    industry require singulating layers of material such as opening a bag or
+    arranging garments for sewing. In contrast to methods requiring specialized
+    sensing or end effectors, we use only visual observations with ordinary parallel
+    jaw grippers. We propose SLIP, Singulating Layers using Interactive Perception,
+    and apply SLIP to the task of autonomous bagging. We develop SLIP-Bagging, a
+    bagging algorithm that manipulates a plastic or fabric bag from an unstructured
+    state, and uses SLIP to grasp the top layer of the bag to open it for object
+    insertion. In physical experiments, a YuMi robot achieves a success rate of 67%
+    to 81% across bags of a variety of materials, shapes, and sizes, significantly
+    improving in success rate and generality over prior work. Experiments also
+    suggest that SLIP can be applied to tasks such as singulating layers of folded
+    cloth and garments.
+  authors: Lawrence Yunliang Chen, Baiyu Shi, Roy Lin, Daniel Seita, Ayah Ahmad, Richard Cheng, Thomas Kollar, David Held, Ken Goldberg
+  award: null
+  bib: "@inproceedings{slipbagging2023,\n
+  \  title={{Bagging by Learning to Singulate Layers Using Interactive Perception}},\n
+  \  author={Lawrence Yunliang Chen and Baiyu Shi and Roy Lin and Daniel Seita and Ayah Ahmad and Richard Cheng and Thomas Kollar and David Held and Ken Goldberg},\n
+  \  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n
+  \  year={2023}\n}"
+  img: ../pics/slip-bagging-160.gif
+  links:
+    '[arXiv]': https://arxiv.org/abs/2303.16898
+  short_id: 2023slipbagging
+  site: https://sites.google.com/view/slip-bagging/
+  title: "Bagging by Learning to Singulate Layers Using Interactive Perception"
+  venue: International Conference on Intelligent Robots and Systems (IROS), 2023
+  video_embed: null
 - abs: 'Robot-assisted dressing could benefit the lives of many people such as older adults and individuals with disabilities. Despite such potential, robot-assisted dressing remains a challenging task for robotics as it involves complex manipulation of deformable cloth in 3D space. Many prior works aim to solve the robot-assisted dressing task, but they make certain assumptions such as a fixed garment and a fixed arm pose that limit their ability to generalize. In this work, we develop a robot-assisted dressing system that is able to dress different garments on people with diverse poses from partial point cloud observations, based on a learned policy. We show that with proper design of the policy architecture and Q function, reinforcement learning (RL) can be used to learn effective policies with partial point cloud observations that work well for dressing diverse garments. We further leverage policy distillation to combine multiple policies trained on different ranges of human arm poses into a single policy that works over a wide range of different arm poses. We conduct comprehensive real-world evaluations of our system with 510 dressing trials in a human study with 17 participants with different arm poses and dressed garments. Our system is able to dress 86\% of the length of the participants arms on average. Videos can be found on the anonymized project webpage: https://sites.google.com/view/one-policy-dress.'
   authors: Yufei Wang, Zhanyi Sun, Zackory Erickson*, David Held*
   award: null
   bib: "@inproceedings{Wang2023One,\n            title={One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments},\n            author={Wang, Yufei and Sun, Zhanyi and Erickson, Zackory and Held, David},\n            booktitle={Robotics: Science\
     \ and Systems (RSS)},\n            year={2023}\n       }"
   img: ../pics/RSS23-dressing.gif
-  links: 
+  links:
     '[arXiv]': https://arxiv.org/abs/2306.12372
   short_id: Wang2023One
   site: https://sites.google.com/view/one-policy-dress
   title: 'One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments'
   venue: 'Robotics: Science and Systems (RSS), 2023'
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/SQRCCQYAyiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  tags: 
+  tags:
     - deformable
     - affordance
 - abs: "To navigate in an environment safely and autonomously, robots must accurately estimate where obstacles are and how they move. Instead of using expensive traditional 3D sensors, we explore the use of a much cheaper, faster, and higher resolution alternative: programmable light curtains. Light curtains are a controllable depth sensor that sense only along a surface that the user selects. We adapt a probabilistic method based on particle filters and occupancy grids to explicitly estimate the position and velocity of 3D points in the scene using partial measurements made by light curtains. The central challenge is to decide where to place the light curtain to accurately perform this task. We propose multiple curtain placement strategies guided by maximizing information gain and verifying predicted object locations. Then, we combine these strategies using an online learning framework. We propose a novel self-supervised reward function that evaluates the accuracy of current velocity estimates using future light curtain placements. We use a multi-armed bandit framework to intelligently switch between placement policies in real time, outperforming fixed policies. We develop a full-stack navigation system that uses position and velocity estimates from light curtains for downstream tasks such as localization, mapping, path-planning, and obstacle avoidance. This work paves the way for controllable light curtains to accurately, efficiently, and purposefully perceive and navigate complex and dynamic environments."
@@ -118,7 +146,7 @@
     \ year={2023}\n
     \ }"
   img: ../pics/2023act.gif
-  links: 
+  links:
     '[arXiv]': https://arxiv.org/abs/2302.09502
   short_id: 2023act
   site: "https://sites.google.com/view/ss-mesh-recon/"
@@ -399,7 +427,7 @@
   title: Learning to Singulate Layers of Cloth based on Tactile Feedback
   venue: International Conference on Intelligent Robots and Systems (IROS), 2022
   video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/FTGbx1XDjJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  tags: 
+  tags:
     - deformable
     - multimodal
 - abs: Deformable object manipulation has many applications such as cooking and laundry
@@ -698,7 +726,7 @@
     via Inpainting</a>
   venue: British Machine Vision Conference (BMVC), 2021
   video_embed: null
-  tags: 
+  tags:
     - self-supervised
 - abs: "Benchmarks offer a scientific way to compare algorithms using scientific performance\
     \ metrics. Good benchmarks have two features: (a) wide audience appeal; (b) easily\
