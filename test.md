@@ -67,7 +67,7 @@ display_categories: [work]
   var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
   // Manage which brain we see
-  var BASE_URL = '/assets/atlas/outer_cortical_surface';
+  var BASE_URL = 'assets/atlas/outer_cortical_surface';
   //var { fetchBinary } = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary;
 function downloadTimeSeries() {
   //var files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
