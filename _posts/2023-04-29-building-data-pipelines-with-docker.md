@@ -1297,7 +1297,7 @@ NOTE: The full repository of this tutorial is available [here](https://github.co
 
 ## Further Steps
 
-Particularf measures can be implemented further down the road, aiming to enhance the reliability, efficiency, and overall management and troubleshooting of a data pipeline, in general. These measures vary depending on the business value context and requirements of the data pipelines behind: some of them are relevant for the simple pipeline we have implemented, some are used in more sophisticated use cases. They focus on data quality, integrity, scalability, observability, security, and compliance aspects.
+Particular measures can be implemented further down the road, aiming to enhance the reliability, efficiency, and overall management and troubleshooting of a data pipeline, in general. These measures vary depending on the business value context and requirements of the data pipelines behind: some of them are relevant for the simple pipeline we have implemented, some are used in more sophisticated use cases. They focus on data quality, integrity, scalability, observability, security, and compliance aspects.
 
 ### Performance and Cost
 1. Add data validation and quality checks at various stages of the pipeline.
