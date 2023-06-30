@@ -10,9 +10,7 @@ display_categories: [work]
     <img src="https://img.shields.io/badge/Made with Deformetrica-656262.svg" width="110"/></a><img src="/assets/img/deformetrica.png" alt="drawing" width="30"/></div>
     
 ### Preprints
-    
-<b>Cortico-Cerebellar Neurodynamics during Social Interaction in Autism Spectrum Disorder </b><br><font size="3"> Fleur Gaudfernau, Aline Lefebvre, Denis-Alexander Engemann, Amandine Pedoux, Anna Bánki, Florence Baillin, Benjamin Landman, Frederique Amsellem, Thomas Bourgeron, Richard Delorme, Guillaume Dumas</font><br><a href="https://hal.archives-ouvertes.fr/hal-03818265v1"> <img src="https://img.shields.io/badge/Read on HAL-636a77.svg" /> </a> <a href="https://www.medrxiv.org/content/10.1101/2022.10.17.22281189v1">  <img src="https://img.shields.io/badge/Read on MedRxiv-636a77.svg" /> </a> 
-    
+        
 <b>Wavelet-Based Multiscale Initial Flow For Improved Atlas Estimation in the Large Diffeomorphic Deformation Model Framework</b><br>
      <font size="3"> Fleur Gaudfernau, Eléonore Blondiaux, Stéphanie Allassonniere, Erwan Le Pennec</font><br>
       <a href="https://hal.archives-ouvertes.fr/hal-03620367v1"> <img src="https://img.shields.io/badge/Read on HAL-636a77.svg" /> </a> 
@@ -20,6 +18,12 @@ display_categories: [work]
 <hr style="border:1px solid #2b6777"/>
 
 ### Journal articles
+
+<b>Cortico-Cerebellar Neurodynamics during Social Interaction in Autism Spectrum Disorder </b><br>
+<font size="3"> Fleur Gaudfernau, Aline Lefebvre, Denis-Alexander Engemann, Amandine Pedoux, Anna Bánki, Florence Baillin, Benjamin Landman, Frederique Amsellem, Thomas Bourgeron, Richard Delorme, Guillaume Dumas<br>
+NeuroImage: Clinical, 2023. </font><br>
+[![DOI:10.1016/j.nicl.2023.103465](https://zenodo.org/badge/DOI/10.1016/j.nicl.2023.103465.svg)](https://doi.org/10.1016/j.nicl.2023.103465)
+
 <b>Characteristics associated with feeding organic foods during complementary feeding: the nationwide Étude Longitudinale Française depuis l’Enfance (ELFE) birth cohort<br></b>
      <font size="3"> Blandine de Lauzon-Guillain, Fleur Gaudfernau, Aurore Camier, Camille Davisse-Paturet, Sandrine Lioret, Sophie Nicklaus, Marie-Aline Charles, Emmanuelle Kesse-Guyot<br>
      British Journal of Nutrition, Cambridge University Press (CUP), 2021, 126 (8), pp.1215-1224.</font><br>
