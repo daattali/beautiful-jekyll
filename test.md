@@ -22,7 +22,7 @@ display_categories: [work]
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
   actor.setMapper(mapper);  
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  const url              = '/assets/img/sub-sub-035_hole_filled.vtp'; 
+  var url              = '/assets/img/sub-sub-035_hole_filled.vtp'; 
   reader.setUrl(url);
   mapper.setInputConnection(reader.getOutputPort());
   // Camera settings
@@ -37,27 +37,25 @@ display_categories: [work]
  // var renderWindow = fullScreenRenderer.getRenderWindow();
   // add axes
   // Use OpenGL as the backend to view all this
-  const openGLRenderWindow = vtk.Rendering.OpenGL.vtkRenderWindow.newInstance();
+  var openGLRenderWindow = vtk.Rendering.OpenGL.vtkRenderWindow.newInstance();
   renderWindow.addView(openGLRenderWindow);
   // Create a div section to put this into
-  const container = document.createElement('div');
+  var container = document.createElement('div');
   document.querySelector('body').appendChild(container);
   openGLRenderWindow.setContainer(container);
   // Capture size of the container and set it to the renderWindow
-  const { width, height } = container.getBoundingClientRect();
+  var { width, height } = container.getBoundingClientRect();
   openGLRenderWindow.setSize(width, height);
   //Setup an interactor to handle mouse events
-  const interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
+  var interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
   interactor.setView(openGLRenderWindow);
   interactor.initialize();
   interactor.bindEvents(container);
   interactor.setInteractorStyle(vtk.Interaction.Style.vtkInteractorStyleTrackballCamera.newInstance());
   // create orientation widget - add orientation axes
-  const axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
-  const orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
-  actor: axesActor,
-  interactor: renderWindow.getInteractor(),
-  renderer: renderer, 
+  var axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
+  var orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
+  actor: axesActor, interactor: renderWindow.getInteractor(), renderer: renderer, 
   });
   orientationWidget.setEnabled(true);
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
@@ -65,34 +63,33 @@ display_categories: [work]
   //renderer.resetCamera();
   //renderWindow.render();
   // add a control panel
-  //const controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='0' max='1' step='1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
-  const controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
+  //var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='0' max='1' step='1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
+  var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
   // Manage which brain we see
-  //const BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
-  const BASE_URL = '/assets/atlas/outer_cortical_surface';
-  const { fetchBinary } = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary;
+  //var BASE_URL = 'https://kitware.github.io/vtk-js-datasets/data/vtp/can/';
+  var BASE_URL = '/assets/atlas/outer_cortical_surface';
+  //var { fetchBinary } = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary;
 function downloadTimeSeries() {
-  //const files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
+  //var files = ['can_0.vtp','can_5.vtp','can_10.vtp', 'can_15.vtp','can_20.vtp','can_25.vtp','can_30.vtp','can_35.vtp','can_40.vtp'];
   var filesss = [];
   var c = 0;
   var t = 0;
   for (var 20.0 = 0; i < 36.0; i+=0.1) {
   filesss[i] = "GeodesicRegression__GeodesicFlow__img__component_"+ c+ "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
-  if (i == 24.0 or i == 28.0 or i == 32.0) {c = c + 1;}
+  if (i == 24.0 || i == 28.0 || i == 32.0) {c = c + 1;}
   t = t + 1;
   } 
   return Promise.all(
-   // files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
     files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${BASE_URL}/${filename}`).then((binary) => {
-        const reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+        var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
         reader.parseAsArrayBuffer(binary);
         return reader.getOutputData(0); })
     )
   );
 }
 function getDataTimeStep(vtkObj) {
-  const arr = vtkObj.getFieldData().getArrayByName('TimeValue');
+  var arr = vtkObj.getFieldData().getArrayByName('TimeValue');
   if (arr) {  return arr.getData()[0];  }
   return null; }
 function setVisibleDataset(ds) {
@@ -102,16 +99,16 @@ function setVisibleDataset(ds) {
 }
 // UI control handling
 function uiUpdateSlider(max) {
-  const timeslider = document.querySelector('#timeslider');
+  var timeslider = document.querySelector('#timeslider');
   timeslider.min = 20;
   timeslider.max = max - 1;
   timeslider.step = 0.1;
 }
 let timeSeriesData = [];
-const timeslider = document.querySelector('#timeslider');
-const timevalue = document.querySelector('#timevalue');
+var timeslider = document.querySelector('#timeslider');
+var timevalue = document.querySelector('#timevalue');
 timeslider.addEventListener('input', (e) => {
-  const activeDataset = timeSeriesData[Number(e.target.value)];
+  var activeDataset = timeSeriesData[Number(e.target.value)];
   if (activeDataset) {
     setVisibleDataset(activeDataset);
     timevalue.innerText = getDataTimeStep(activeDataset);
