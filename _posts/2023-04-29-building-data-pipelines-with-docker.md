@@ -7,7 +7,7 @@ tags: [docker, data engineering, dataops, workflow, tutorial]
 comments: true
 ---
 
-This blog post serves as a tutorial, aiming to provide an overview of how Docker Compose can be utilized with Python and Postgres to create a robust data ingestion pipeline app. Divided into three parts, this tutorial walks the reader through the fundamental concepts of Docker and Dockerfiles for container orchestration and offers hands-on implementation of a containerized data ingestion project through a carefully crafted Docker Compose script. Throughout this tutorial, I place special emphasis on essential concepts, including:
+This blog post serves as a tutorial, aiming to provide an overview of how Docker Compose can be utilized with Python and Postgres to create a robust data ingestion pipeline app. Divided into three parts, this tutorial walks the reader through the fundamental concepts of Docker and Dockerfiles for container orchestration<sup>1</sup> and offers hands-on implementation of a containerized data ingestion project through a carefully crafted Docker Compose script. Throughout this tutorial, I place special emphasis on essential concepts, including:
 - Volume mounting for enabling persistent storage of data and a secure approach to passing environmental variables;
 - Handling of environmental variables and adapting the script to load them from a configuration file;
 - Enhancing clarity and maintaining an organized directory structure for a project.
@@ -18,7 +18,7 @@ The full repository of this tutorial is available [here](https://github.com/Zhen
 
 ## Part 1. Intro to Docker
 
-### Installing Docker [Desktop GUI] on Windows<sup>1</sup>
+### Installing Docker [Desktop GUI] on Windows<sup>2</sup>
 
 To install Docker Desktop on Windows I perform two steps:
 1. [Download](https://docs.docker.com/desktop/install/windows-install/) the `Docker Desktop Installer.exe` file.
@@ -398,7 +398,7 @@ Name: test_series, dtype: int64
 
 What I actually want to accomplish, is to to build functionality to read source data (e.g., from source `csv` files), perform the necessary manipulations, and save the results in a database. For this purpose, a Postgres instance will be used. Let's run a Postgres container in Docker and use a simple Python script to populate it with data.
 
-To run a Postgres container, we need to configure it. One part of the configuration involves using environmental variables. For Postgres, we require `USER`, `PASSWORD`, and the database name. To set environmental variables when running a Docker container, use the `-e` flag:
+To run a Postgres container, we need to configure it. One part of the configuration involves using environmental variables. For Postgres, we require `USER`, `PASSWORD`, and the database name<sup>3</sup>. To set environmental variables when running a Docker container, use the `-e` flag:
 
 ```bash
 docker run -it \
@@ -1041,14 +1041,14 @@ mkdir app
 mkdir database
 mkdir config
 ```
-The next step is to define dependencies<sup>2</sup>:
+The next step is to define dependencies<sup>4</sup>:
 - I add a `pyproject.toml` file.
 - I reopen the `docker_python_postgres_tutorial` as a separate project in a new PyCharm window, which allows PyCharm to automatically detect the presence of the `pyproject.toml` file and suggest creating a Poetry environment based on its content. Thus, I set up the project with the appropriate Poetry-based interpreter environment.
 
 ![docker-2](/assets/data/2023-04-29-docker-pipeline-2.png){: .mx-auto.d-block :}
 
 ### The App Side
-I want to put the `ingest_data.py` script into the `app` folder. Let's upgrade it to read the necessary connection arguments and other configuration parameters from environment variables<sup>3</sup>:
+I want to put the `ingest_data.py` script into the `app` folder. Let's upgrade it to read the necessary connection arguments and other configuration parameters from a configuration file<sup>5</sup>:
 
 ```python
 import os
@@ -1327,8 +1327,12 @@ Particular measures can be implemented further down the road, aiming to enhance 
 4. Implement data retention and archiving policies to manage data lifecycle.
 
 
-<sup>1</sup> See how to install Docker for different operating systems from this [chapter of the Docker Turotial by Nana Janashia](https://youtu.be/3c-iBn73dDE?t=1437).
+<sup>1</sup> See more on containerization [here](https://www.redhat.com/en/topics/cloud-native-apps/what-is-containerization).
 
-<sup>2</sup> I use [`poetry`](https://python-poetry.org) to manage the dependencies, for more details see my [Data Scientist Joining CI/CD party, Part 1](https://zhenev.github.io/2023-04-08-data-scientist-joining-ci-cd-party/) blog post.
+<sup>2</sup> See how to install Docker for different operating systems from this [chapter of the Docker Turotial by Nana Janashia](https://youtu.be/3c-iBn73dDE?t=1437).
 
 <sup>3</sup> Although reading parameters from environment variables is intended to prevent their exposure, this method still carries a certain level of risk in terms of unintentional vulnerability. Docker Compose provides a way to read the parameters without having to use environment variables to store information. I consider this approach in the Database Side section.
+
+<sup>4</sup> I use [`poetry`](https://python-poetry.org) to manage the dependencies, for more details see my [Data Scientist Joining CI/CD party, Part 1](https://zhenev.github.io/2023-04-08-data-scientist-joining-ci-cd-party/) blog post.
+
+<sup>5</sup> Here, instead of using command-line arguments, we store the environmental variables in an `.env` file and make them available to the script.
