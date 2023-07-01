@@ -398,7 +398,7 @@ Name: test_series, dtype: int64
 
 What I actually want to accomplish, is to to build functionality to read source data (e.g., from source `csv` files), perform the necessary manipulations, and save the results in a database. For this purpose, a Postgres instance will be used. Let's run a Postgres container in Docker and use a simple Python script to populate it with data.
 
-To run a Postgres container, we need to configure it. One part of the configuration involves using environmental variables. For Postgres, we require `USER`, `PASSWORD`, and the database name. To set environmental variables when running a Docker container, use the `-e` flag:
+To run a Postgres container, we need to configure it. One part of the configuration involves using environmental variables. For Postgres, we require `USER`, `PASSWORD`, and the database name<sup>3</sup>. To set environmental variables when running a Docker container, use the `-e` flag:
 
 ```bash
 docker run -it \
@@ -1048,7 +1048,7 @@ The next step is to define dependencies<sup>4</sup>:
 ![docker-2](/assets/data/2023-04-29-docker-pipeline-2.png){: .mx-auto.d-block :}
 
 ### The App Side
-I want to put the `ingest_data.py` script into the `app` folder. Let's upgrade it to read the necessary connection arguments and other configuration parameters from environment variables<sup>3</sup>:
+I want to put the `ingest_data.py` script into the `app` folder. Let's upgrade it to read the necessary connection arguments and other configuration parameters from a configuration file<sup>5</sup>:
 
 ```python
 import os
@@ -1331,6 +1331,8 @@ Particular measures can be implemented further down the road, aiming to enhance 
 
 <sup>2</sup> See how to install Docker for different operating systems from this [chapter of the Docker Turotial by Nana Janashia](https://youtu.be/3c-iBn73dDE?t=1437).
 
-<sup>3</sup> I use [`poetry`](https://python-poetry.org) to manage the dependencies, for more details see my [Data Scientist Joining CI/CD party, Part 1](https://zhenev.github.io/2023-04-08-data-scientist-joining-ci-cd-party/) blog post.
+<sup>3</sup> Although reading parameters from environment variables is intended to prevent their exposure, this method still carries a certain level of risk in terms of unintentional vulnerability. Docker Compose provides a way to read the parameters without having to use environment variables to store information. I consider this approach in the Database Side section.
 
-<sup>4</sup> Although reading parameters from environment variables is intended to prevent their exposure, this method still carries a certain level of risk in terms of unintentional vulnerability. Docker Compose provides a way to read the parameters without having to use environment variables to store information. I consider this approach in the Database Side section.
+<sup>4</sup> I use [`poetry`](https://python-poetry.org) to manage the dependencies, for more details see my [Data Scientist Joining CI/CD party, Part 1](https://zhenev.github.io/2023-04-08-data-scientist-joining-ci-cd-party/) blog post.
+
+<sup>5</sup> Here, instead of using command-line arguments, we store the environmental variables in an `.env` file and make them available to the script.
