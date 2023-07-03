@@ -23,7 +23,7 @@ Here are two lists of all the open-source datasets that I encountered (checked a
     <tr>
 <td>2010</td>
       <td>Habas et al.</td>
-      <td> <p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
+      <td> Fetal brain spatiotemporal atlas</td>
        <td>T2 MRI</td>
        <td>Intensity and tissue probability templates between 20–24 GW</td>
        <td><a href="http://depts.washington.edu/bicg/research/fba.php"> <i class="fas fa-link"></i></a>
@@ -33,14 +33,14 @@ Here are two lists of all the open-source datasets that I encountered (checked a
    
    <tr><td>2012</td>
       <td>Serag et al.</td>
-      <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
+      <td>Fetal brain spatiotemporal atlas</td>
        <td>T2 MRI</td>
        <td>Intensity and tissue probability templates between 23–37 GW</td>
        <td><a href="https://brain-development.org/brain-atlases/fetal-brain-atlases/fetal-brain-atlas-serag/"> <i class="fas fa-link"></i></a></td></tr>
   
    <tr><td>2013</td>
       <td>Zhang et al.</td>
-      <td><p style="color:#CD5C5C">Fetal brain (post-mortem) spatiotemporal atlas</p></td>
+      <td>Fetal brain (post-mortem) spatiotemporal atlas</td>
        <td>T2 MRI</td>
        <td>Intensity and cortical surface templates between 15-22 GW</td>
        <td><a href="http://www.loni.ucla.edu/Atlases/Atlas_Detail.jsp?atlas_id=22"> <i class="fas fa-link"></i></a>
@@ -48,7 +48,7 @@ Here are two lists of all the open-source datasets that I encountered (checked a
       
    <tr><td>2017</td>
       <td>Gholipour et al.</td>
-      <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
+      <td>Fetal brain spatiotemporal atlas</td>
        <td>T2 MRI</td>
        <td>Intensity and tissue probability templates between 21-36 GW</td>
        <td><a href="http://crl.med.harvard.edu/research/fetal_brain_atlas/"> <i class="fas fa-link"></i></a>
@@ -64,7 +64,7 @@ Here are two lists of all the open-source datasets that I encountered (checked a
    
    <tr><td>2021</td>
       <td>Wu et al.</td>
-      <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
+      <td>Fetal brain spatiotemporal atlas</td>
        <td>T2 MRI</td>
        <td>Intensity and tissue probability templates between 21-37 GW</td>
        <td><a href="https://github.com/DeepBMI/FBA-Chinese"> <i class="fas fa-link"></i></a>
@@ -72,7 +72,7 @@ Here are two lists of all the open-source datasets that I encountered (checked a
    
    <tr><td>2021</td>
       <td>Fidon et al.</td>
-      <td><p style="color:#CD5C5C">Spatiotemporal atlas of the fetal brain with spina bifida</p></td>
+      <td>Spatiotemporal atlas of the fetal brain with spina bifida</td>
        <td>T2 MRI</td>
        <td>Intensity and tissue probability templates between 21-34 GW</td>
        <td><a href="https://github.com/LucasFidon/spina-bifida-MRI-atlas"> <i class="fas fa-link"></i></a>
@@ -80,7 +80,7 @@ Here are two lists of all the open-source datasets that I encountered (checked a
    
    <tr><td>2022</td>
       <td>Urru et al.</td>
-      <td><p style="color:#CD5C5C">Fetal brain spatiotemporal atlas</p></td>
+      <td>Fetal brain spatiotemporal atlas</td>
        <td>T2 MRI</td>
        <td>Intensity and tissue probability  templates between 28 – 44 weeks</td>
        <td><a href="https://github.com/urrand/perinatal-pipeline"> <i class="fas fa-link"></i></a>
