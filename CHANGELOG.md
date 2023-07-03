@@ -2,6 +2,7 @@
 
 - BREAKING CHANGE: Allow changing the order of the social network links that appear in the footer (#1152)
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156) 
+- Added social network link for GitLab (#1168)
 
 ## v6.0.1 (2023-06-08)
 
