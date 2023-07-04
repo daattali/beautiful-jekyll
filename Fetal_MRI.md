@@ -44,8 +44,8 @@ display_categories: [work]
       
 <tr>
 <td>Paraview</td>    
-<td>Surface visualisation</td>
-<td>.vtk</td>
+<td>Objects visualization (images, meshes, glyphs...)</td>
+<td>Multiple formats, e.g. .vtk, .vtp...</td>
 <td> <a href="https://www.paraview.org/"> <i class="fas fa-link"></i></a>  </td>
 </tr>
    
