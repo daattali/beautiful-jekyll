@@ -23,12 +23,6 @@ display_categories: [work]
   actor.setMapper(mapper);  
   // Camera settings
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
-  camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
-  camera.setViewAngle(30.0);
-  camera.zoom(4);
-  renderer.setActiveCamera(camera);
-  actor.getProperty().setColor(1, 1, 1);
-  renderWindow.render();
  // var renderWindow = fullScreenRenderer.getRenderWindow();
   // add axes
   var openGLRenderWindow = vtk.Rendering.OpenGL.vtkRenderWindow.newInstance();
@@ -88,15 +82,17 @@ reader.parseAsArrayBuffer(binary);
   });
 uiUpdateSlider(160);
 timeslider.value = 20;
+timevalue.innerText = 20;
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
 reader.setUrl(file);
 mapper.setInputConnection(reader.getOutputPort());
-renderer.getActiveCamera().setPosition(0, 55, -22);
-renderer.getActiveCamera().setViewUp(0, 0, -1);
-console.log("set up first view", file);
-timevalue.innerText = 20;
-  renderer.resetCamera();
+  camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
+  camera.setViewAngle(30.0);
+  camera.zoom(4);
+  renderer.setActiveCamera(camera);
+  actor.getProperty().setColor(1, 1, 1);
+//  renderer.resetCamera();
   renderWindow.render();
 </script>
 </body>
