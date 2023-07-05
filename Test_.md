@@ -21,10 +21,6 @@ display_categories: [work]
   renderer.addActor(actor);
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
   actor.setMapper(mapper);  
-  var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  var url              = '/assets/img/sub-sub-035_hole_filled.vtp'; 
-  reader.setUrl(url);
-  mapper.setInputConnection(reader.getOutputPort());
   // Camera settings
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
   camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
@@ -33,10 +29,8 @@ display_categories: [work]
   renderer.setActiveCamera(camera);
   actor.getProperty().setColor(1, 1, 1);
   renderWindow.render();
-  //renderer.resetCamera(); // after adding actor resetCamera() so that resetCamera() can take into consideration the bounds of all actors in the scene.
  // var renderWindow = fullScreenRenderer.getRenderWindow();
   // add axes
-  // Use OpenGL as the backend to view all this
   var openGLRenderWindow = vtk.Rendering.OpenGL.vtkRenderWindow.newInstance();
   renderWindow.addView(openGLRenderWindow);
   // Create a div section to put this into
@@ -60,8 +54,6 @@ display_categories: [work]
   orientationWidget.setEnabled(true);
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
   orientationWidget.setViewportSize(0.15);
-  //renderer.resetCamera();
-  //renderWindow.render();
   // add a control panel
   var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
@@ -77,7 +69,6 @@ function uiUpdateSlider(max) {
   timeslider.max = 36;
   timeslider.step = 0.1;
 }
-let timeSeriesData = [];
 var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
 timeslider.addEventListener('input', (e) => {
@@ -100,7 +91,8 @@ uiUpdateSlider(160);
 timeslider.value = 20;
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
-reader.setUrl(file);    
+reader.setUrl(url);
+mapper.setInputConnection(reader.getOutputPort());
 renderer.getActiveCamera().setPosition(0, 55, -22);
 renderer.getActiveCamera().setViewUp(0, 0, -1);
 console.log("set up first view", file);
@@ -109,9 +101,7 @@ console.log("set up first view", file);
 //reader.parseAsArrayBuffer(binary);
 //  setVisibleDataset(reader.getOutputData(0));
 //setVisibleDataset(reader.getOutputPort());
-  console.log("first view set", file);
 timevalue.innerText = time_0;
-mapper.setInputData(reader.getOutputPort());
   //renderer.resetCamera();
   renderWindow.render();
 </script>
