@@ -14,7 +14,7 @@ display_categories: [work]
 </tr>
 
  <tr>
-  <td colspan="4"> <img width=200/> Visualization tools <img width=200/> </td>
+  <td colspan="4"> <img width=200/> **Visualization** <img width=200/> </td>
  </tr>
       
 <tr>
@@ -52,8 +52,12 @@ display_categories: [work]
 <td>Multiple formats, e.g. .vtk, .vtp...</td>
 <td> <a href="https://www.paraview.org/"> <i class="fas fa-link"></i></a>  </td>
 </tr>
+
+ <tr>
+  <td colspan="4"> <img width=200/> **Volume reconstruction** <img width=200/> </td>
+ </tr>
    
-<tr style="border-top:2px solid #2b6777;">
+<tr style="border-top:3px solid #2b6777;">
 <td>NiftyMIC</td>    
 <td>Brain extraction, super-resolution brain volume reconstruction, reorientation in standard radiological anatomical planes</td>
 <td>Fetal MRI</td>
@@ -88,7 +92,19 @@ display_categories: [work]
 <td> <a href="https://github.com/bkainz/fetalReconstruction"> <i class="fas fa-link"></i></a>   </td>
 </tr>
 
-<tr style="border-top:2px solid #2b6777;">
+<tr>
+<td>fetal-brain-assessment</td>    
+<td>Fetal MRI Quality Assessment</td>
+<td>Fetal MRI</td>
+<td> <a href=https://github.com/FNNDSC/pl-fetal-brain-assessment"> <i class="fas fa-link"></i></a>   </td>
+</tr>
+
+
+<tr>
+  <td colspan="4"> <img width=200/> **Cortical surface extraction** <img width=200/> </td>
+ </tr>
+
+<tr style="border-top:3px solid #2b6777;">
 <td>dHCP structural pipeline</td>    
 <td>Structural analysis including segmentation and cortical surface extraction</td>
 <td>Neonatal brain MRI (T1 & T2)</td>
