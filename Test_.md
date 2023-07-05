@@ -66,16 +66,6 @@ display_categories: [work]
   //var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='0' max='1' step='1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
-  // Manage which brain we see
-  var files = [];
-  var c = 0;
-  var t = 0;
-  for (var i = 20.0; i < 21.0; i += 0.1) {
-  files[i] = '/assets/atlas/outer_cortical_surface/' + "GeodesicRegression__GeodesicFlow__img__component_"+ c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
-  console.log(files[i])
-  if (i.toFixed(1) == 24.0 || i.toFixed(1) == 28.0 || i.toFixed(1) == 32.0) {c = c + 1;}
-  t = t + 1;
-  };
 function setVisibleDataset(ds) {
   mapper.setInputData(ds);
   renderer.resetCamera();
@@ -92,22 +82,29 @@ let timeSeriesData = [];
 var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
 timeslider.addEventListener('input', (e) => {
-  console.log("action",e);
-  console.log("action",e.target.value);
-  //var activeDataset = timeSeriesData[Number(e.target.value)];
-   // setVisibleDataset(activeDataset);
-    timevalue.innerText = "bili";
+  var i = e.target.value;
+  var t = (i-20)*10;
+  var c = 0;
+  if (i.toFixed(1) >= 24.0) {c = c+1;}
+  if (i.toFixed(1) >= 28.0) {c = c+1;}
+  if (i.toFixed(1) >= 32.0) {c = c+1;}
+  timevalue.innerText = time;
+  var file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_' + c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
+  console.log("selected file", file);
+  var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+  reader.setUrl(file); 
+  setVisibleDataset(reader.getOutputPort());
   });
 const time_0 = 20;
 uiUpdateSlider(160);
 timeslider.value = 20;
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
-reader.setUrl(file);    
+  reader.setUrl(file);    
 // set up camera
 renderer.getActiveCamera().setPosition(0, 55, -22);
 renderer.getActiveCamera().setViewUp(0, 0, -1);
-  console.log("set up first view", file);
+console.log("set up first view", file);
 setVisibleDataset(reader.getOutputPort());
 timevalue.innerText = time_0;
 </script>
