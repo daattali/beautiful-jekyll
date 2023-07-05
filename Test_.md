@@ -63,7 +63,6 @@ display_categories: [work]
   //renderer.resetCamera();
   //renderWindow.render();
   // add a control panel
-  //var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='0' max='1' step='1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
 function setVisibleDataset(ds) {
@@ -88,7 +87,7 @@ timeslider.addEventListener('input', (e) => {
   if (i.toFixed(1) >= 24.0) {c = c+1;}
   if (i.toFixed(1) >= 28.0) {c = c+1;}
   if (i.toFixed(1) >= 32.0) {c = c+1;}
-  timevalue.innerText = time;
+  timevalue.innerText = i;
   var file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_' + c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log("selected file", file);
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
