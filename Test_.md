@@ -112,9 +112,8 @@ console.log("set up first view", file);
   console.log("first view set", file);
 timevalue.innerText = time_0;
 mapper.setInputData(reader.getOutputPort());
-  renderer.resetCamera();
+  //renderer.resetCamera();
   renderWindow.render();
-
 </script>
 </body>
 </html>
