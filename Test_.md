@@ -86,23 +86,17 @@ var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 reader.parseAsArrayBuffer(binary);
   setVisibleDataset(reader.getOutputData(0));
   });
-const time_0 = 20;
 uiUpdateSlider(160);
 timeslider.value = 20;
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
-reader.setUrl(url);
+reader.setUrl(file);
 mapper.setInputConnection(reader.getOutputPort());
 renderer.getActiveCamera().setPosition(0, 55, -22);
 renderer.getActiveCamera().setViewUp(0, 0, -1);
 console.log("set up first view", file);
-//const binary = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${file}`);
-//var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-//reader.parseAsArrayBuffer(binary);
-//  setVisibleDataset(reader.getOutputData(0));
-//setVisibleDataset(reader.getOutputPort());
-timevalue.innerText = time_0;
-  //renderer.resetCamera();
+timevalue.innerText = 20;
+  renderer.resetCamera();
   renderWindow.render();
 </script>
 </body>
