@@ -102,7 +102,7 @@ const time_0 = 20;
 uiUpdateSlider(160);
 timeslider.value = 20;
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
+const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
 reader.setUrl(file);    
 // set up camera
 renderer.getActiveCamera().setPosition(0, 55, -22);
