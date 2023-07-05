@@ -14,7 +14,7 @@ display_categories: [work]
 </tr>
 
  <tr>
-  <td colspan="4"> <img width=200/> **Visualization** <img width=200/> </td>
+  <td colspan="4"> <img width=200/> <b>Visualization</b> <img width=200/> </td>
  </tr>
       
 <tr style="border-top:3px solid #2b6777;">
@@ -54,7 +54,7 @@ display_categories: [work]
 </tr>
 
 <tr style="border-top:3px solid #2b6777;">
-  <td colspan="4"> <img width=200/> **Quality** <img width=200/> </td>
+  <td colspan="4"> <img width=200/> <b>Quality<b/> <img width=200/> </td>
  </tr>
 
 <tr style="border-top:3px solid #2b6777;">
@@ -66,7 +66,7 @@ display_categories: [work]
 
 
 <tr style="border-top:3px solid #2b6777;">
-  <td colspan="4"> <img width=200/> **Volume reconstruction** <img width=200/> </td>
+  <td colspan="4"> <img width=200/> <b>Volume reconstruction</b> <img width=200/> </td>
  </tr>
    
 <tr style="border-top:3px solid #2b6777;">
@@ -105,7 +105,7 @@ display_categories: [work]
 </tr>
 
 <tr style="border-top:3px solid #2b6777;">
-  <td colspan="4"> <img width=200/> **Cortical surface extraction** <img width=200/> </td>
+  <td colspan="4"> <img width=200/> <b>Cortical surface extraction</b> <img width=200/> </td>
  </tr>
 
 <tr style="border-top:3px solid #2b6777;">
