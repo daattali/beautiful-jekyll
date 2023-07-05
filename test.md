@@ -83,9 +83,10 @@ function downloadTimeSeries() {
   return Promise.all(
     files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${filename}`).then((binary) => {
       console.log("filename",filename);
-        var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-        reader.parseAsArrayBuffer(binary);
-      console.log(reader.getOutputData(0));
+      var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+      reader.parseAsArrayBuffer(binary);
+      console.log("binary",binary);
+      console.log("output data", reader.getOutputData(0));
         return reader.getOutputData(0); })
     )
   );
