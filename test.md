@@ -91,8 +91,9 @@ function downloadTimeSeries() {
   );
 }
 function getDataTimeStep(vtkObj) {
-  console.log(vtkObj)
+  console.log(vtkObj);
   var arr = vtkObj.getFieldData().getArrayByName('TimeValue');
+  console.log("time", arr);
   if (arr) {  console.log(arr.getData()[0]); return arr.getData()[0];  }
   return null; }
 function setVisibleDataset(ds) {
