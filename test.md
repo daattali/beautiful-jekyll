@@ -81,15 +81,25 @@ function downloadTimeSeries() {
   t = t + 1;
   } 
   return Promise.all(
-    files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${filename}`).then((binary) => {
+    files.map((filename) => {
       console.log("filename",filename);
       var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-      reader.parseAsArrayBuffer(binary);
-      console.log("binary",binary);
+      reader.setUrl(filename);
+    //  reader.getOutputPort());
+    //  console.log("binary",binary);
       console.log("output data", reader.getOutputData(0));
         return reader.getOutputData(0); })
     )
-  );
+ // return Promise.all(
+  //  files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${filename}`).then((binary) => {
+    //  console.log("filename",filename);
+     // var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+      //reader.parseAsArrayBuffer(binary);
+      //console.log("binary",binary);
+     // console.log("output data", reader.getOutputData(0));
+       // return reader.getOutputData(0); })
+    //)
+  //);
 }
 function getDataTimeStep(vtkObj) {
   console.log(vtkObj);
