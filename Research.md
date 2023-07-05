@@ -20,7 +20,7 @@ display_categories: [work]
 ### Journal articles
 
 <b>Cortico-Cerebellar Neurodynamics during Social Interaction in Autism Spectrum Disorder </b><br>
-<font size="3"> Fleur Gaudfernau, Aline Lefebvre, Denis-Alexander Engemann, Amandine Pedoux, Anna Bánki, Florence Baillin, Benjamin Landman, Frederique Amsellem, Thomas Bourgeron, Richard Delorme, Guillaume Dumas<br>
+     <font size="3"> Fleur Gaudfernau, Aline Lefebvre, Denis-Alexander Engemann, Amandine Pedoux, Anna Bánki, Florence Baillin, Benjamin Landman, Frederique Amsellem, Thomas Bourgeron, Richard Delorme, Guillaume Dumas<br>
      NeuroImage: Clinical, 2023.</font><br>
      [![DOI:10.1016/j.nicl.2023.103465](https://zenodo.org/badge/DOI/10.1016/j.nicl.2023.103465.svg)](https://doi.org/10.1016/j.nicl.2023.103465)
 
