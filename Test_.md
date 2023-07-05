@@ -66,19 +66,19 @@ function uiUpdateSlider(max) {
 var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
 timeslider.addEventListener('input', (e) => {
-  var i = e.target.value;
+  var i = Number(e.target.value);
   var t = (i-20)*10;
+  console.log("t",t)
   var c = 0;
-  if (i.toFixed(1) >= 24.0) {c = c+1;}
-  if (i.toFixed(1) >= 28.0) {c = c+1;}
-  if (i.toFixed(1) >= 32.0) {c = c+1;}
+  if (i >= 24.0) {c = c+1;}
+  if (i >= 28.0) {c = c+1;}
+  if (i >= 32.0) {c = c+1;}
   timevalue.innerText = i;
   var file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_' + c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log("selected file", file);
-  binary = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${file}`);
-var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-reader.parseAsArrayBuffer(binary);
-  setVisibleDataset(reader.getOutputData(0));
+  var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+  reader.setUrl(file);
+  mapper.setInputConnection(reader.getOutputPort());
   });
 uiUpdateSlider(160);
 timeslider.value = 20;
