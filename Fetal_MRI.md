@@ -12,6 +12,10 @@ display_categories: [work]
 <th> Data type  </th>
 <th> Link   </th>
 </tr>
+
+ <tr>
+  <td colspan="4"> <img width=200/> Visualization tools <img width=200/> </td>
+ </tr>
       
 <tr>
 <td>ITK Snap</td>    
