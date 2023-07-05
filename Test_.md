@@ -104,7 +104,7 @@ const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicF
 renderer.getActiveCamera().setPosition(0, 55, -22);
 renderer.getActiveCamera().setViewUp(0, 0, -1);
 console.log("set up first view", file);
-binary = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${file}`);
+const binary = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${file}`);
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 reader.parseAsArrayBuffer(binary);
   setVisibleDataset(reader.getOutputData(0));
