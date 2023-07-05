@@ -67,7 +67,7 @@ var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
 timeslider.addEventListener('input', (e) => {
   var i = Number(e.target.value);
-  var t = (i-20)*10;
+  var t = Math.round((i-20)*10);
   console.log("t",i,t)
   var c = 0;
   if (i >= 24.0) {c = c+1;}
