@@ -80,28 +80,29 @@ function downloadTimeSeries() {
   if (i.toFixed(1) == 24.0 || i.toFixed(1) == 28.0 || i.toFixed(1) == 32.0) {c = c + 1;}
   t = t + 1;
   } 
-  return Promise.all(
-    files.map((filename) => {
-      console.log("filename",filename);
-      var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-      reader.setUrl(filename);
-    //  reader.getOutputPort());
-    //  console.log("binary",binary);
-      console.log("output data", reader.getOutputData(0));
-      console.log("output data", reader.getOutputData());
-      console.log("output data", reader.getOutputPort());
-        return reader.getOutputPort(); })
-    )
- // return Promise.all(
-  //  files.map((filename) => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${filename}`).then((binary) => {
-    //  console.log("filename",filename);
-     // var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-      //reader.parseAsArrayBuffer(binary);
-      //console.log("binary",binary);
+//  return Promise.all(
+ //   files.map((filename) => {
+  //    console.log("filename",filename);
+    //  var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+     // reader.setUrl(filename);
      // console.log("output data", reader.getOutputData(0));
-       // return reader.getOutputData(0); })
-    //)
-  //);
+//      console.log("output data", reader.getOutputData());
+//      console.log("output data", reader.getOutputPort());
+//        return reader.getOutputPort(); })
+//    )
+  return Promise.all(
+   return files.map((filename) 
+      => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${filename}`).then((binary) => 
+    {
+   console.log("filename",filename);
+  var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+      reader.parseAsArrayBuffer(binary);
+      console.log("binary",binary);
+      console.log("output data", reader.getOutputData(0));
+        return reader.getOutputData(0); 
+      })
+    )
+  );
 }
 function getDataTimeStep(vtkObj) {
   console.log(vtkObj);
