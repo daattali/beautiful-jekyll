@@ -104,6 +104,13 @@ display_categories: [work]
 <td> <a href="https://github.com/bkainz/fetalReconstruction"> <i class="fas fa-link"></i></a>   </td>
 </tr>
 
+<tr>
+<td>NeSVor</td>    
+<td>Super-resolution brain volume reconstruction</td>
+<td>Fetal MRI</td>
+<td> <a href="https://github.com/daviddmc/NeSVoR"> <i class="fas fa-link"></i></a>   </td>
+</tr>
+
 <tr style="border-top:3px solid #2b6777;">
   <td colspan="4"> <img width=200/> <b>Cortical surface extraction</b> <img width=200/> </td>
  </tr>
