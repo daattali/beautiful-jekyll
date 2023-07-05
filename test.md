@@ -74,7 +74,7 @@ function downloadTimeSeries() {
   var files = [];
   var c = 0;
   var t = 0;
-  for (var i = 20.0; i < 36.0; i += 0.1) {
+  for (var i = 20.0; i < 21.0; i += 0.1) {
   files[i] = '/assets/atlas/outer_cortical_surface/' + "GeodesicRegression__GeodesicFlow__img__component_"+ c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log(files[i])
   if (i.toFixed(1) == 24.0 || i.toFixed(1) == 28.0 || i.toFixed(1) == 32.0) {c = c + 1;}
@@ -91,14 +91,14 @@ function downloadTimeSeries() {
 //        return reader.getOutputPort(); })
 //    )
   return Promise.all(
-   return files.map((filename) 
+  files.map((filename) 
       => vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${filename}`).then((binary) => 
     {
-   console.log("filename",filename);
+  // console.log("filename",filename);
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
       reader.parseAsArrayBuffer(binary);
-      console.log("binary",binary);
-      console.log("output data", reader.getOutputData(0));
+    //  console.log("binary",binary);
+  //    console.log("output data", reader.getOutputData(0));
         return reader.getOutputData(0); 
       })
     )
