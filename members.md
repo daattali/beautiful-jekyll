@@ -69,6 +69,9 @@ members:
           - name: TJ Vitchutripop
             photo_url: /img/members/tj.jpg
             web_url: https://tjvitchutripop.github.io/
+          - name: Yishu Li
+            photo_url: /img/members/yishu.jpg
+            web_url: 
       # - name: Visiting Students
       #  full: false
        # list:
