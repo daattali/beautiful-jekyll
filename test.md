@@ -99,8 +99,7 @@ function downloadTimeSeries() {
       reader.parseAsArrayBuffer(binary);
     //  console.log("binary",binary);
   //    console.log("output data", reader.getOutputData(0));
-        return reader.getOutputData(0); 
-      })
+        return reader.getOutputData(0);})
     )
   );
 }
