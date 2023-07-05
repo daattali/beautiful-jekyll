@@ -54,7 +54,7 @@ display_categories: [work]
 </tr>
 
 <tr style="border-top:3px solid #2b6777;">
-  <td colspan="4"> <img width=200/> <b>Quality ⭐<b/> <img width=200/> </td>
+  <td colspan="4"> <img width=200/> <b>Quality ⭐</b> <img width=200/> </td>
  </tr>
 
 <tr style="border-top:3px solid #2b6777;">
@@ -142,7 +142,5 @@ display_categories: [work]
 <td>T1 infant MRI</td>
 <td> <a href="https://surfer.nmr.mgh.harvard.edu/fswiki/infantFS"> <i class="fas fa-link"></i></a>  </td>
 </tr>
-   
-  
   
  </table>
