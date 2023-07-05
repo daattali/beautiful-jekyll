@@ -75,6 +75,7 @@ display_categories: [work]
   console.log(files[i])
   if (i.toFixed(1) == 24.0 || i.toFixed(1) == 28.0 || i.toFixed(1) == 32.0) {c = c + 1;}
   t = t + 1;
+  };
 function setVisibleDataset(ds) {
   mapper.setInputData(ds);
   renderer.resetCamera();
@@ -84,7 +85,7 @@ function setVisibleDataset(ds) {
 function uiUpdateSlider(max) {
   var timeslider = document.querySelector('#timeslider');
   timeslider.min = 20;
-  timeslider.max = max - 1;
+  timeslider.max = 36;
   timeslider.step = 0.1;
 }
 let timeSeriesData = [];
