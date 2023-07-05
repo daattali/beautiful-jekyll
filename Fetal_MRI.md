@@ -17,7 +17,7 @@ display_categories: [work]
   <td colspan="4"> <img width=200/> **Visualization** <img width=200/> </td>
  </tr>
       
-<tr>
+<tr style="border-top:3px solid #2b6777;">
 <td>ITK Snap</td>    
 <td>MRI visualization</td>
 <td>Multiple formats, e.g. nifti, DICOM... </td>
@@ -53,7 +53,19 @@ display_categories: [work]
 <td> <a href="https://www.paraview.org/"> <i class="fas fa-link"></i></a>  </td>
 </tr>
 
- <tr>
+<tr style="border-top:3px solid #2b6777;">
+  <td colspan="4"> <img width=200/> **Quality** <img width=200/> </td>
+ </tr>
+
+<tr style="border-top:3px solid #2b6777;">
+<td>fetal-brain-assessment</td>    
+<td>Fetal MRI Quality Assessment</td>
+<td>Fetal MRI</td>
+<td> <a href="https://github.com/FNNDSC/pl-fetal-brain-assessment"> <i class="fas fa-link"></i></a>   </td>
+</tr>
+
+
+<tr style="border-top:3px solid #2b6777;">
   <td colspan="4"> <img width=200/> **Volume reconstruction** <img width=200/> </td>
  </tr>
    
@@ -92,15 +104,7 @@ display_categories: [work]
 <td> <a href="https://github.com/bkainz/fetalReconstruction"> <i class="fas fa-link"></i></a>   </td>
 </tr>
 
-<tr>
-<td>fetal-brain-assessment</td>    
-<td>Fetal MRI Quality Assessment</td>
-<td>Fetal MRI</td>
-<td> <a href=https://github.com/FNNDSC/pl-fetal-brain-assessment"> <i class="fas fa-link"></i></a>   </td>
-</tr>
-
-
-<tr>
+<tr style="border-top:3px solid #2b6777;">
   <td colspan="4"> <img width=200/> **Cortical surface extraction** <img width=200/> </td>
  </tr>
 
