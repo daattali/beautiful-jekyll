@@ -90,24 +90,26 @@ timeslider.addEventListener('input', (e) => {
   timevalue.innerText = i;
   var file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_' + c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log("selected file", file);
-  var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  reader.setUrl(file); 
-  setVisibleDataset(reader.getOutputPort());
+  binary = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${file}`);
+var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+reader.parseAsArrayBuffer(binary);
+  setVisibleDataset(reader.getOutputData(0));
   });
 const time_0 = 20;
 uiUpdateSlider(160);
 timeslider.value = 20;
 //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
-  //reader.setUrl(file);    
+//reader.setUrl(file);    
 renderer.getActiveCamera().setPosition(0, 55, -22);
 renderer.getActiveCamera().setViewUp(0, 0, -1);
 console.log("set up first view", file);
-binary = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(file);
+binary = vtk.IO.Core.DataAccessHelper.get('http').fetchBinary(`${file}`);
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 reader.parseAsArrayBuffer(binary);
   setVisibleDataset(reader.getOutputData(0));
 //setVisibleDataset(reader.getOutputPort());
+  console.log("first view set", file);
 timevalue.innerText = time_0;
 
 </script>
