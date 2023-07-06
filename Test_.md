@@ -28,7 +28,7 @@ display_categories: [work]
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #04AA6D;
+  background: #3e5741;
   cursor: pointer;
 }
 .slider::-moz-range-thumb {
