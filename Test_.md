@@ -5,6 +5,41 @@ show-avatar: true
 display_categories: [work]
 ---
 <html>
+  <head>
+    <style>
+      .slidecontainer {
+  width: 100%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+</style>
+  </head>
+  
 <body>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">
@@ -45,7 +80,7 @@ display_categories: [work]
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
   orientationWidget.setViewportSize(0.25);
   // add a control panel
-  var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' style='margin: 1; width: 200px;'/> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
+  var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
 var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
@@ -66,9 +101,6 @@ timeslider.addEventListener('input', (e) => {
   renderWindow.render();
   });
 // time slider features
-//timeslider.min = 20;
-//timeslider.max = 36;
-//timeslider.step = 0.1;
 timeslider.value = 20;
 timevalue.innerText = "20 weeks";
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
