@@ -96,7 +96,10 @@ display_categories: [work]
   fullScreenRenderer.addController(controlPanel);
   var zoomslider = document.querySelector('#zoomslider');
   zoomslider.addEventListener('input', (e) => {
-      camera.zoom(Number(e.target.value));
+    camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
+  camera.setViewAngle(30.0);
+  camera.zoom(Number(e.target.value));
+ renderer.setActiveCamera(camera);
       renderWindow.render();
     });
 var timeslider = document.querySelector('#timeslider');
