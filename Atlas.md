@@ -58,7 +58,7 @@ display_categories: [work]
 <script type="text/javascript">
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
-    containerStyle: { width: '1000px', height: "800px" } 
+    containerStyle: { width: '1200px', height: "800px", margin: "100px"} 
   });
   var renderWindow = fullScreenRenderer.getRenderWindow();
   var renderer = fullScreenRenderer.getRenderer();
@@ -114,6 +114,11 @@ mapper.setInputConnection(reader.getOutputPort());
   camera.zoom(5);
  renderer.setActiveCamera(camera);
   actor.getProperty().setColor(1, 1, 1);
+  // add a button
+  const vrbutton = document.querySelector('.vrbutton');
+  vrbutton.addEventListener('click', (e) => {
+    
+  });
   renderWindow.render();
 </script>
 </body>
