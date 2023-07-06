@@ -17,8 +17,8 @@ author: Fleur Gaudfernau
 navbar-links:
   🏠 Home: "/"
   📔 Research: "Research"
-  🧠 Atlas viewer: "Atlas"
   🖊️ Codes: "Codes"
+  🧠 Atlas viewer: "Atlas"
   🗂️ Projects  :
     - Shape Analysis: "Shape_analysis"
     - Multiscale atlas estimation: "Multiscale_atlas_estimation"
