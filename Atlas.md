@@ -69,7 +69,7 @@ display_categories: [work]
 <script type="text/javascript">
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
-    containerStyle: { width: '1200px', height: "800px", margin: "300px"} 
+    containerStyle: { width: '1200px', height: "800px", margin-left: "300px"} 
   });
   var renderWindow = fullScreenRenderer.getRenderWindow();
   var renderer = fullScreenRenderer.getRenderer();
