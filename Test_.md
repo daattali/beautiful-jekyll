@@ -9,7 +9,6 @@ display_categories: [work]
     <style>
       .slidecontainer {
   width: 70%;
-  opacity: 0.5;
 }
 .slider {
   -webkit-appearance: none;
@@ -46,14 +45,12 @@ display_categories: [work]
   display: flex;
   justify-content: center;
   width: 1px;
-  background: gray;
   height: $unit;
   line-height: $unit * 5;
   margin-bottom: $unit*2;
 }
 </style>
   </head>
-  
 <body>
 <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
 <script type="text/javascript">
