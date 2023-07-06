@@ -13,7 +13,7 @@ display_categories: [work]
 }
 .slider {
   -webkit-appearance: none;
-  width: 80%;
+  width: 100%;
   height: 15px;
   border-radius: 5px;
   background: #000000;
@@ -48,7 +48,7 @@ display_categories: [work]
   width: 1px;
   height: $unit;
   line-height: $unit * 5;
-  margin-bottom: $unit*2;
+  margin-bottom: $unit;
 }
 </style>
   </head>
