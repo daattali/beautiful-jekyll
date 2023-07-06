@@ -21,6 +21,7 @@ display_categories: [work]
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  margin: 0;
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
