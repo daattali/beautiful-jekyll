@@ -8,14 +8,15 @@ display_categories: [work]
   <head>
     <style>
       .slidecontainer {
-  width: 100%;
+  width: 70%;
+  opacity: 0.7;
 }
 .slider {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
   border-radius: 5px;
-  background: #d3d3d3;
+  background: #000000;
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
@@ -80,19 +81,19 @@ display_categories: [work]
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
   orientationWidget.setViewportSize(0.25);
   // add a control panel
-  var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
+ // var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
+  var controlPanel = "<html><div class='slidecontainer'><label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/> <p><span id='timevalue'>...</span></p> </div></html>";
   fullScreenRenderer.addController(controlPanel);
 var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
 timeslider.addEventListener('input', (e) => {
   var i = Number(e.target.value);
   var t = Math.round((i-20)*10);
-  console.log("t",i,t)
   var c = 0;
   if (i >= 24.0) {c = c+1;}
   if (i >= 28.0) {c = c+1;}
   if (i >= 32.0) {c = c+1;}
-  timevalue.innerText = e.target.value + "weeks";
+  timevalue.innerText = e.target.value + " weeks";
   var file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_' + c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log("selected file", file);
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
@@ -102,7 +103,7 @@ timeslider.addEventListener('input', (e) => {
   });
 // time slider features
 timeslider.value = 20;
-timevalue.innerText = "20 weeks";
+timevalue.innerText = timeslider.value + " weeks";
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
 reader.setUrl(file);
