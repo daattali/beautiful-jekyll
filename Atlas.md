@@ -69,7 +69,7 @@ display_categories: [work]
 <script type="text/javascript">
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
-    containerStyle: { width: '1200px', height: "800px", margin-left: "300px"} 
+    containerStyle: { width: '1200px', height: "800px", marginLeft: "300px"} 
   });
   var renderWindow = fullScreenRenderer.getRenderWindow();
   var renderer = fullScreenRenderer.getRenderer();
@@ -86,8 +86,7 @@ display_categories: [work]
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
   orientationWidget.setViewportSize(0.25);
   // add a control panel
-  var controlPanel = "<html><div class='slidecontainer'><label for='zoomslider'>Zoom:</label> <input id='zoomslider' type='range' class='slider' min='3' max='7' step='0.5'/><p>" + "<label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/><div class='ticks'> <span class='tick'>22</span> <span class='tick'>24</span> <span class='tick'>26</span> <span class='tick'>28</span> <span class='tick'>30</span> <span class='tick'>32</span> <span class='tick'>34</span> <span class='tick'>36</span></div> <p><span id='timevalue'>...</span></p>   </div> </html>";
-  //  <button id='play' class='btn'><i class='fa fa-play-circle'></i>Play</button>
+  var controlPanel = "<html><div class='slidecontainer'><label for='zoomslider'>Zoom:</label> <input id='zoomslider' type='range' class='slider' min='3' max='7' step='0.5'/><p>" + "<label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/><div class='ticks'> <span class='tick'>22</span> <span class='tick'>24</span> <span class='tick'>26</span> <span class='tick'>28</span> <span class='tick'>30</span> <span class='tick'>32</span> <span class='tick'>34</span> <span class='tick'>36</span></div> <p><span id='timevalue'>...</span></p>  <button id='play' class='btn'><i class='fa fa-play-circle'></i>Play</button>  </div> </html>";
   fullScreenRenderer.addController(controlPanel);
   var zoomslider = document.querySelector('#zoomslider');
   zoomslider.addEventListener('input', (e) => {
