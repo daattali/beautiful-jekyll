@@ -9,6 +9,7 @@ display_categories: [work]
     <style>
       .slidecontainer {
   width: 70%;
+  background: #f0e7ce;
 }
 .slider {
   -webkit-appearance: none;
@@ -91,7 +92,7 @@ display_categories: [work]
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
   orientationWidget.setViewportSize(0.25);
   // add a control panel
-  var controlPanel = "<html><div class='slidecontainer'><label for='zoomslider'>Zoom:</label> <input id='zoomslider' type='range' class='slider' min='0' max='10' step='1'/><p><span id='zoomvalue'>5</span></p> </div>" + "<label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/><div class='ticks'> <span class='tick'>24</span></div>  <span class='tick'>28</span></div> <p><span id='timevalue'>...</span></p> </div></html>";
+  var controlPanel = "<html><div class='slidecontainer'><label for='zoomslider'>Zoom:</label> <input id='zoomslider' type='range' class='slider' min='0' max='10' step='1'/><p><span id='zoomvalue'>5</span></p> </div>" + "<label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/><div class='ticks'> <span class='tick'>24</span> <span class='tick'>28</span></div> <p><span id='timevalue'>...</span></p> </div></html>";
   fullScreenRenderer.addController(controlPanel);
   var zoomslider = document.querySelector('#zoomslider');
   var zoomvalue = document.querySelector('#zoomvalue');
