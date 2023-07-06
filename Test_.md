@@ -38,6 +38,19 @@ display_categories: [work]
   background: #3e5741;
   cursor: pointer;
 }
+.ticks {
+  display: flex;
+  justify-content: space-between;}
+.tick {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 1px;
+  background: gray;
+  height: $unit;
+  line-height: $unit * 5;
+  margin-bottom: $unit*2;
+}
 </style>
   </head>
   
