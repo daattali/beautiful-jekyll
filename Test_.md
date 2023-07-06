@@ -87,12 +87,12 @@ var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
 reader.setUrl(file);
 mapper.setInputConnection(reader.getOutputPort());
-  camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
-  camera.setViewAngle(30.0);
-  camera.zoom(4);
-  renderer.setActiveCamera(camera);
+  //camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
+  //camera.setViewAngle(30.0);
+  //camera.zoom(4);
+ // renderer.setActiveCamera(camera);
   actor.getProperty().setColor(1, 1, 1);
-//  renderer.resetCamera();
+  renderer.resetCamera();
   renderWindow.render();
 </script>
 </body>
