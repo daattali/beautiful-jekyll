@@ -10,7 +10,6 @@ display_categories: [work]
 <script type="text/javascript">
   var fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
     background: [0, 0, 0],
-    //rootContainer: document.body,
     containerStyle: { width: '1000px', height: "800px" } 
   });
   var renderWindow = fullScreenRenderer.getRenderWindow();
@@ -43,19 +42,13 @@ display_categories: [work]
   // create orientation widget - add orientation axes
   var axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
   var orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
-  actor: axesActor, interactor: renderWindow.getInteractor(), renderer: renderer, 
-  });
+  actor: axesActor, interactor: renderWindow.getInteractor(), renderer: renderer, });
   orientationWidget.setEnabled(true);
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
   orientationWidget.setViewportSize(0.15);
   // add a control panel
   var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
-function setVisibleDataset(ds) {
-  mapper.setInputData(ds);
-  renderer.resetCamera();
-  renderWindow.render();
-}
 // UI control handling
 function uiUpdateSlider(max) {
   var timeslider = document.querySelector('#timeslider');
@@ -79,6 +72,7 @@ timeslider.addEventListener('input', (e) => {
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
   reader.setUrl(file);
   mapper.setInputConnection(reader.getOutputPort());
+  renderWindow.render();
   });
 uiUpdateSlider(160);
 timeslider.value = 20;
@@ -87,12 +81,11 @@ var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
 reader.setUrl(file);
 mapper.setInputConnection(reader.getOutputPort());
-  //camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
-  //camera.setViewAngle(30.0);
-  //camera.zoom(4);
- // renderer.setActiveCamera(camera);
+  camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
+  camera.setViewAngle(30.0);
+  camera.zoom(5);
+ renderer.setActiveCamera(camera);
   actor.getProperty().setColor(1, 1, 1);
-  renderer.resetCamera();
   renderWindow.render();
 </script>
 </body>
