@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /Test_/
+permalink: /Atlas/
 show-avatar: true
 display_categories: [work]
 ---
