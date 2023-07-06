@@ -8,7 +8,6 @@ display_categories: [work]
   <head>
     <style>
       .slidecontainer {
-  margin: auto;
   width: 100%;
   border: 3px solid #73AD21;
   background: #f0e7ce;
