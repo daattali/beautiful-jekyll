@@ -47,9 +47,9 @@ display_categories: [work]
   display: flex;
   justify-content: center;
   width: 1px;
-  height: $unit * 0.7;
+  height: $unit;
   line-height: $unit * 5;
-  margin-bottom: $unit*1.5;
+  margin-bottom: $unit*2;
 }
 </style>
   </head>
@@ -71,20 +71,19 @@ display_categories: [work]
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
   // add axes
   var openGLRenderWindow = vtk.Rendering.OpenGL.vtkRenderWindow.newInstance();
-  renderWindow.addView(openGLRenderWindow);
-  // Create a div section to put this into
-  var container = document.createElement('div');
-  document.querySelector('body').appendChild(container);
-  openGLRenderWindow.setContainer(container);
+  // renderWindow.addView(openGLRenderWindow);
+  // var container = document.createElement('div');
+  // document.querySelector('body').appendChild(container);
+  // openGLRenderWindow.setContainer(container);
   // Capture size of the container and set it to the renderWindow
-  var { width, height } = container.getBoundingClientRect();
-  openGLRenderWindow.setSize(width, height);
+  // var { width, height } = container.getBoundingClientRect();
+  // openGLRenderWindow.setSize(width, height);
   //Setup an interactor to handle mouse events
-  var interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
-  interactor.setView(openGLRenderWindow);
-  interactor.initialize();
-  interactor.bindEvents(container);
-  interactor.setInteractorStyle(vtk.Interaction.Style.vtkInteractorStyleTrackballCamera.newInstance());
+  // var interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
+  // interactor.setView(openGLRenderWindow);
+  // interactor.initialize();
+  // interactor.bindEvents(container);
+  // interactor.setInteractorStyle(vtk.Interaction.Style.vtkInteractorStyleTrackballCamera.newInstance());
   // create orientation widget - add orientation axes
   var axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
   var orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
