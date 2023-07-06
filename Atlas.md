@@ -16,7 +16,7 @@ display_categories: [work]
   cursor: pointer;
 }
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: #202e21;
 }
       .slidecontainer {
   width: 100%;
