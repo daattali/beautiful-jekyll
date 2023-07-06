@@ -9,7 +9,6 @@ display_categories: [work]
     <style>
       .slidecontainer {
   width: 100%;
-  border: 3px solid #73AD21;
   background: #f0e7ce;
 }
 .slider {
@@ -61,29 +60,12 @@ display_categories: [work]
     containerStyle: { width: '1000px', height: "800px" } 
   });
   var renderWindow = fullScreenRenderer.getRenderWindow();
-  //var renderWindow = vtk.Rendering.Core.vtkRenderWindow.newInstance();
   var renderer = fullScreenRenderer.getRenderer();
-  //var renderer = vtk.Rendering.Core.vtkRenderer.newInstance();
   var actor = vtk.Rendering.Core.vtkActor.newInstance();
   renderer.addActor(actor);
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
   actor.setMapper(mapper);  
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
-  // add axes
-  var openGLRenderWindow = vtk.Rendering.OpenGL.vtkRenderWindow.newInstance();
-  // renderWindow.addView(openGLRenderWindow);
-  // var container = document.createElement('div');
-  // document.querySelector('body').appendChild(container);
-  // openGLRenderWindow.setContainer(container);
-  // Capture size of the container and set it to the renderWindow
-  // var { width, height } = container.getBoundingClientRect();
-  // openGLRenderWindow.setSize(width, height);
-  //Setup an interactor to handle mouse events
-  // var interactor = vtk.Rendering.Core.vtkRenderWindowInteractor.newInstance();
-  // interactor.setView(openGLRenderWindow);
-  // interactor.initialize();
-  // interactor.bindEvents(container);
-  // interactor.setInteractorStyle(vtk.Interaction.Style.vtkInteractorStyleTrackballCamera.newInstance());
   // create orientation widget - add orientation axes
   var axesActor = vtk.Rendering.Core.vtkAxesActor.newInstance();
   var orientationWidget = vtk.Interaction.Widgets.vtkOrientationMarkerWidget.newInstance({
