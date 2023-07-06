@@ -8,7 +8,9 @@ display_categories: [work]
   <head>
     <style>
       .slidecontainer {
+  margin: auto;
   width: 70%;
+  border: 3px solid #73AD21;
   background: #f0e7ce;
 }
 .slider {
