@@ -9,13 +9,13 @@ display_categories: [work]
     <style>
       .slidecontainer {
   margin: auto;
-  width: 70%;
+  width: 100%;
   border: 3px solid #73AD21;
   background: #f0e7ce;
 }
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 80%;
   height: 15px;
   border-radius: 5px;
   background: #000000;
@@ -48,9 +48,9 @@ display_categories: [work]
   display: flex;
   justify-content: center;
   width: 1px;
-  height: $unit;
+  height: $unit * 0.7;
   line-height: $unit * 5;
-  margin-bottom: $unit*2;
+  margin-bottom: $unit*1.5;
 }
 </style>
   </head>
