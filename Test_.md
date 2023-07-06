@@ -9,7 +9,7 @@ display_categories: [work]
     <style>
       .slidecontainer {
   width: 70%;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .slider {
   -webkit-appearance: none;
@@ -35,7 +35,7 @@ display_categories: [work]
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #04AA6D;
+  background: #3e5741;
   cursor: pointer;
 }
 </style>
@@ -82,7 +82,7 @@ display_categories: [work]
   orientationWidget.setViewportSize(0.25);
   // add a control panel
  // var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
-  var controlPanel = "<html><div class='slidecontainer'><label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/> <p><span id='timevalue'>...</span></p> </div></html>";
+  var controlPanel = "<html><div class='slidecontainer'><label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/><div class='ticks'> <span class='tick'>24</span></div>  <span class='tick'>28</span></div> <p><span id='timevalue'>...</span></p> </div></html>";
   fullScreenRenderer.addController(controlPanel);
 var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
