@@ -20,9 +20,7 @@ display_categories: [work]
   renderer.addActor(actor);
   var mapper = vtk.Rendering.Core.vtkMapper.newInstance(); // this is the right mapper
   actor.setMapper(mapper);  
-  // Camera settings
   var camera             = vtk.Rendering.Core.vtkCamera.newInstance();
- // var renderWindow = fullScreenRenderer.getRenderWindow();
   // add axes
   var openGLRenderWindow = vtk.Rendering.OpenGL.vtkRenderWindow.newInstance();
   renderWindow.addView(openGLRenderWindow);
@@ -45,17 +43,10 @@ display_categories: [work]
   actor: axesActor, interactor: renderWindow.getInteractor(), renderer: renderer, });
   orientationWidget.setEnabled(true);
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
-  orientationWidget.setViewportSize(0.15);
+  orientationWidget.setViewportSize(0.25);
   // add a control panel
   var controlPanel = "<html><table> <tr>  <td> <label for='timeslider'>Gestational age:</label> <input id='timeslider' type='range' min='20' max='36' step='0.1' /> </td> </tr> <tr> <td> <p><span id='timevalue'>...</span></p> </td> </tr></table></html>";
   fullScreenRenderer.addController(controlPanel);
-// UI control handling
-function uiUpdateSlider(max) {
-  var timeslider = document.querySelector('#timeslider');
-  timeslider.min = 20;
-  timeslider.max = 36;
-  timeslider.step = 0.1;
-}
 var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
 timeslider.addEventListener('input', (e) => {
@@ -66,7 +57,7 @@ timeslider.addEventListener('input', (e) => {
   if (i >= 24.0) {c = c+1;}
   if (i >= 28.0) {c = c+1;}
   if (i >= 32.0) {c = c+1;}
-  timevalue.innerText = i;
+  timevalue.innerText = e.target.value + "weeks";
   var file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_' + c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log("selected file", file);
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
@@ -74,9 +65,12 @@ timeslider.addEventListener('input', (e) => {
   mapper.setInputConnection(reader.getOutputPort());
   renderWindow.render();
   });
-uiUpdateSlider(160);
+// time slider features
+timeslider.min = 20;
+timeslider.max = 36;
+timeslider.step = 0.1;
 timeslider.value = 20;
-timevalue.innerText = 20;
+timevalue.innerText = "20 weeks";
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
 reader.setUrl(file);
