@@ -86,7 +86,7 @@ display_categories: [work]
   orientationWidget.setViewportCorner(vtk.Interaction.Widgets.vtkOrientationMarkerWidget.Corners.BOTTOM_RIGHT);
   orientationWidget.setViewportSize(0.25);
   // add a control panel
-  var controlPanel = "<html><div class='slidecontainer'><label for='zoomslider'>Zoom:</label> <input id='zoomslider' type='range' class='slider' min='0.4' max='5' step='0.2'/><p>" + "<label for='timeslider'>Gestational age:</label> <span id='timevalue'>20 weeks</span><input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/><div class='ticks'> <span class='tick'>20</span><span class='tick'>22</span> <span class='tick'>24</span> <span class='tick'>26</span> <span class='tick'>28</span> <span class='tick'>30</span> <span class='tick'>32</span> <span class='tick'>34</span> <span class='tick'>36</span></div> <div> <input type='checkbox' id='curv' name='curv'> <label for='curv'>Curvature</label> </div>  <button id='play' class='btn'><i class='fa fa-play-circle'></i>Play</button>  </div> </html>";
+  var controlPanel = "<html><div class='slidecontainer'><label for='zoomslider'>Zoom:</label> <input id='zoomslider' type='range' class='slider' min='0.4' max='5' step='0.2'/><p>" + "<label for='timeslider'>Gestational age:</label> <span id='timevalue'>20 weeks</span><input id='timeslider' type='range' class='slider' min='20' max='36' step='0.1'/><div class='ticks'> <span class='tick'>20</span><span class='tick'>22</span> <span class='tick'>24</span> <span class='tick'>26</span> <span class='tick'>28</span> <span class='tick'>30</span> <span class='tick'>32</span> <span class='tick'>34</span> <span class='tick'>36</span></div> <div> <input type='checkbox' id='curv' name='curv'> <label for='curv'>Curvature</label> </div>  <button id='play' class='btn' onclick="Click()"><i class='fa fa-play-circle'></i>Play</button>  </div> </html>";
   fullScreenRenderer.addController(controlPanel);
   var zoomslider = document.querySelector('#zoomslider');
   zoomslider.value = 1;
@@ -133,10 +133,10 @@ checkbox.addEventListener('change', function() {
   }
 });
   // add a button
-  const vrbutton = document.querySelector("input[id=play]");
-  vrbutton.addEventListener('click', (e) => {
-    console.log("hello!!!");
-  });
+ // const vrbutton = document.querySelector("input[id=play]");
+ // vrbutton.addEventListener('click', (e) => {
+  //  console.log("hello!!!");
+  //});
   mapper.setInputConnection(reader.getOutputPort());
   reader.setUrl(file).then(
     renderWindow.render()
