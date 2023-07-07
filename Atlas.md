@@ -142,7 +142,7 @@ checkbox.addEventListener('change', function() {
 };
   reader.setUrl(file).then(
   mapper.setInputConnection(reader.getOutputPort()).then(
-    renderWindow.render();
+    renderWindow.render()
     )
   ); //render window only when data loading done
 </script>
