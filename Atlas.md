@@ -124,14 +124,14 @@ const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicF
  renderer.setActiveCamera(camera);
   actor.getProperty().setColor(1, 1, 1);
   // add checkbox
-  var checkbox = document.querySelector("curv");
-checkbox.addEventListener('change', function() {
-  if (this.checked) {
-    console.log("Checkbox is checked..");
-  } else {
-    console.log("Checkbox is not checked..");
-  }
-});
+//  var checkbox = document.querySelector("curv");
+//checkbox.addEventListener('change', function() {
+//  if (this.checked) {
+//    console.log("Checkbox is checked..");
+//  } else {
+//    console.log("Checkbox is not checked..");
+//  }
+//});
   // add a button
   const vrbutton = document.querySelector('play');
   vrbutton.addEventListener('click', (e) => {
