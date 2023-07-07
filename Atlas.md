@@ -116,7 +116,7 @@ timeslider.addEventListener('input', (e) => {
 timeslider.value = 20;
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
-  camera.setPosition(27.519753836746474, 304.1863725248345, -279.2425808488232); // 27 604 -279
+  camera.setPosition(45.519753836746474, 504.1863725248345, -279.2425808488232); // 27 604 -279
   camera.setViewAngle(15.0/2);
  renderer.setActiveCamera(camera);
   actor.getProperty().setColor(1, 1, 1);
