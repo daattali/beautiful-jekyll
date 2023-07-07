@@ -94,8 +94,7 @@ display_categories: [work]
 camera.setViewAngle(15.0/(2*Number(e.target.value)));
     mapper.setInputConnection(reader.getOutputPort());
  renderer.setActiveCamera(camera);
-    reader.setUrl(file).then(
-    renderWindow.render() ); 
+    reader.setUrl(file).then(renderWindow.render);
     });
 var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
@@ -110,10 +109,8 @@ timeslider.addEventListener('input', (e) => {
   var file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_' + c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log("selected file", file);
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  reader.setUrl(file);
-  mapper.setInputConnection(reader.getOutputPort());
-  renderWindow.render();
-  console.log("input set");
+  //mapper.setInputConnection(reader.getOutputPort());
+  reader.setUrl(file).then(renderWindow.render);
   });
 // time slider features
 timeslider.value = 20;
