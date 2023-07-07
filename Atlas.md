@@ -108,9 +108,10 @@ timeslider.addEventListener('input', (e) => {
   timevalue.innerText = e.target.value + " weeks";
   var file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_' + c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log("selected file", file);
-  var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  mapper.setInputConnection(reader.getOutputPort());
-  reader.setUrl(file).then(renderWindow.render);
+  //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
+  reader.setUrl(file).then(
+  mapper.setInputConnection(reader.getOutputPort()),
+  renderWindow.render);
   });
 // time slider features
 timeslider.value = 20;
@@ -137,8 +138,10 @@ checkbox.addEventListener('change', function() {
   function Click() {
   console.log("click");
 };
-  mapper.setInputConnection(reader.getOutputPort());
-  reader.setUrl(file).then(renderWindow.render); //render window only when data loading done
+  reader.setUrl(file).then(
+  mapper.setInputConnection(reader.getOutputPort()),
+  renderWindow.render);
+  });
 </script>
 </body>
 </html>
