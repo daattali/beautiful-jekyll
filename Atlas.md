@@ -140,11 +140,8 @@ checkbox.addEventListener('change', function() {
   function Click() {
   console.log("click");
 };
-  reader.setUrl(file).then(
-  mapper.setInputConnection(reader.getOutputPort()).then(
-    renderWindow.render()
-    )
-  ); //render window only when data loading done
+  mapper.setInputConnection(reader.getOutputPort());
+  reader.setUrl(file).then(renderWindow.render); //render window only when data loading done
 </script>
 </body>
 </html>
