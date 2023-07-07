@@ -109,7 +109,7 @@ timeslider.addEventListener('input', (e) => {
   var file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_' + c + "__tp_"+ t +"__age_" + i.toFixed(1) + "0.vtp";
   console.log("selected file", file);
   var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
-  //mapper.setInputConnection(reader.getOutputPort());
+  mapper.setInputConnection(reader.getOutputPort());
   reader.setUrl(file).then(renderWindow.render);
   });
 // time slider features
