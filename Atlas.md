@@ -91,7 +91,7 @@ display_categories: [work]
   var zoomslider = document.querySelector('#zoomslider');
   zoomslider.value = 1;
   zoomslider.addEventListener('input', (e) => {
-camera.setViewAngle(15.0/Number(e.target.value));
+camera.setViewAngle(15.0/(4*Number(e.target.value)));
     mapper.setInputConnection(reader.getOutputPort());
  renderer.setActiveCamera(camera);
     reader.setUrl(file).then(
@@ -120,7 +120,7 @@ timeslider.value = 20;
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
   camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
-  camera.setViewAngle(15.0);
+  camera.setViewAngle(15.0/4);
  renderer.setActiveCamera(camera);
   actor.getProperty().setColor(1, 1, 1);
   // add checkbox
