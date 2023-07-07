@@ -92,8 +92,10 @@ display_categories: [work]
   zoomslider.value = 1;
   zoomslider.addEventListener('input', (e) => {
 camera.setViewAngle(15.0/Number(e.target.value));
+    mapper.setInputConnection(reader.getOutputPort());
  renderer.setActiveCamera(camera);
-      renderWindow.render();
+    reader.setUrl(file).then(
+    renderWindow.render() ); 
     });
 var timeslider = document.querySelector('#timeslider');
 var timevalue = document.querySelector('#timevalue');
@@ -117,8 +119,6 @@ timeslider.addEventListener('input', (e) => {
 timeslider.value = 20;
 var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
 const file = '/assets/atlas/outer_cortical_surface/GeodesicRegression__GeodesicFlow__img__component_0__tp_0__age_20.00.vtp';
-reader.setUrl(file);
-mapper.setInputConnection(reader.getOutputPort());
   camera.setPosition(27.519753836746474, 604.1863725248345, -279.2425808488232);
   camera.setViewAngle(15.0);
  renderer.setActiveCamera(camera);
@@ -137,7 +137,10 @@ checkbox.addEventListener('change', function() {
   vrbutton.addEventListener('click', (e) => {
     console.log("hello!!!");
   });
-  renderWindow.render();
+  mapper.setInputConnection(reader.getOutputPort());
+  reader.setUrl(file).then(
+    renderWindow.render()
+  ); //render window only when data loading done
 </script>
 </body>
 </html>
