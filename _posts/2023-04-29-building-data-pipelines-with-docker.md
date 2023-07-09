@@ -1297,34 +1297,12 @@ NOTE: The full repository of this tutorial is available [here](https://github.co
 
 ## Further Steps
 
-Particular measures can be implemented further down the road, aiming to enhance the reliability, efficiency, and overall management and troubleshooting of a data pipeline, in general. These measures vary depending on the business value context and requirements of the data pipelines behind: some of them are relevant for the simple pipeline we have implemented, some are used in more sophisticated use cases. They focus on data quality, integrity, scalability, observability, security, and compliance aspects.
-
-### Performance and Cost
-1. Add data validation and quality checks at various stages of the pipeline.
-2. Testing. Goes without saying 😂
-3. Improving query performance:
-- Analyze and optimize query execution plans, utilize indexing strategies, and leverage query tuning techniques to improve overall performance.
-- Large datasets can be divided into smaller partitions or shards to improve query performance and enable distributed processing.
-4. Handling increasing data volumes and processing requirements.
-- Considering the scalability and performance requirements of the data pipelines, data processing steps can be optimized and parallelization techniques and distributed computing frameworks can be utilized to handle large volumes of data efficiently.
-- Implementing additional measures such as data compression techniques, caching mechanisms, or leveraging cloud-native services for cost optimization can be considered. 
-
-### Observability and Operations
-1. Implement logging and advanced error handling mechanisms. Capture and log relevant information during pipeline execution, including errors, warnings, and debugging details, to aid troubleshooting and auditing.
-2. Enhance workflow orchestration:
-- Implement version control practices to manage changes in pipeline configurations, scripts, and dependencies.
-- Implement CI/CD for seamless deployment and updates to the data pipeline.
-- Utilize workflow orchestration tools to manage the end-to-end execution of complex data pipelines, ensuring proper sequencing and dependencies.
-4. Establish backup mechanisms to protect data and develop recovery plans for the database to ensure continuity of operations in case of failures or disruptions.
-5. Set up a monitoring system to track the health and optimize the performance of the data pipelines. This includes monitoring resource utilization, data flow, latency, and error rates and setting thresholds and alerts when anomalies or issues are detected.
-
-### Data Governance and Security
-1. Implement appropriate security measures to protect sensitive data. This includes encrypting data at rest and in transit, implementing access controls based on role-based access control (RBAC) or other authentication mechanisms, adhering to data privacy standards and performing auditing for data of various sensitivity, security assessments.
-2. Integrate a data catalog or metadata management system to act ad a central hub for documenting and managing data-related policies, standards, and guidelines.
-- Maintain data lineage records to track the origin, transformations, and destinations of data to help in understanding the data flow, data dependencies, and facilitates troubleshooting and auditing.
-- Store privacy-related information, such as data sensitivity levels, data classification, and access controls.
-- Integrate with authentication and access control mechanisms to enforce role-based permissions for accessing and interacting with data assets. 
-4. Implement data retention and archiving policies to manage data lifecycle.
+Particular measures can be implemented further down the road, aiming to enhance the reliability, efficiency, and overall management of data pipelines in general. These measures vary depending on the business value context and requirements of the data pipelines behind: some of them are relevant for the simple pipeline we have implemented, some are used in more sophisticated use cases. They can be grouped into several topics:
+- Testing and data validation - goes without saying. 😂
+- Observability and troubleshooting.
+- Performance and optimization.
+- Data governance.
+- Security.
 
 
 <sup>1</sup> See more on containerization [here](https://www.redhat.com/en/topics/cloud-native-apps/what-is-containerization).
