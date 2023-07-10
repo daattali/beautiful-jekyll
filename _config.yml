@@ -50,7 +50,7 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "coniareconio@gmail.com"
+  email: "dev.scobru@pm.me"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #  facebook: deanattali
   github: scobru
@@ -69,7 +69,7 @@ social-network-links:
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-#  telegram: yourname
+telegram: scobru
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
