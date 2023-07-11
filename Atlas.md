@@ -140,7 +140,7 @@ checkbox.addEventListener('change', function() {
 };
   reader.setUrl(file).then(
   mapper.setInputConnection(reader.getOutputPort());
-  renderWindow.render;);
+  renderWindow.render(););
   //});
 </script>
 </body>
