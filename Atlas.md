@@ -139,9 +139,9 @@ checkbox.addEventListener('change', function() {
   console.log("click");
 };
   reader.setUrl(file).then(
-  mapper.setInputConnection(reader.getOutputPort()),
-  renderWindow.render);
-  });
+  mapper.setInputConnection(reader.getOutputPort());
+  renderWindow.render;);
+  //});
 </script>
 </body>
 </html>
