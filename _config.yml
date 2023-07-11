@@ -26,7 +26,8 @@ navbar-links:
   Home: "https://BastienDussap.github.io"
   #Publication: "pages/research"
   About me:
-    - CV: "/assets/files/CV-DussapBastien.pdf"
+    - CV: "/assets/files/CV/CV-DussapBastien.pdf"
+    - Publication: "https://scholar.google.com/citations?user=sdbXVlIAAAAJ&hl=fr&oi=ao"
     - Address: "pages/address"
   Links:
     - IMO: "https://www.imo.universite-paris-saclay.fr/fr/"
