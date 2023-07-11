@@ -133,7 +133,7 @@ Here are two lists of all the open-source datasets that I encountered (checked a
    <tr><td>2017</td>
       <td>Alexander et al. (M-CRIB atlas)</td>
       <td>10-subject brain atlas</td>
-       <td>Meshes</td>
+       <td>T1/T2 MRI</td>
        <td>Intensity and tissue probability templates between 40-43 weeks</td>
        <td><a href="https://github.com/DevelopmentalImagingMCRI/M-CRIB_atlas"> <i class="fas fa-link"></i></a>
           </td></tr>   
