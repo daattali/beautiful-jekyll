@@ -176,7 +176,7 @@ DevelopmentalImagingMCRI/MCRIBS"> <i class="fas fa-link"></i></a>
       <td>O' Reilly al.</td>
       <td>Infant cortical surface atlas (🧠)</td>
        <td>Meshes</td>
-       <td>Pial and white surface templates</td>
+       <td>Pial and white surface templates (> 2 weeks)</td>
        <td><a href="https://www.nitrc.org/projects/neurodevdata"> <i class="fas fa-link"></i></a>
           </td></tr>   
           
