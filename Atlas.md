@@ -110,8 +110,8 @@ timeslider.addEventListener('input', (e) => {
   console.log("selected file", file);
   //var reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
   reader.setUrl(file).then(
-  //mapper.setInputConnection(reader.getOutputPort()),
-  renderWindow.render);
+  mapper.setInputConnection(reader.getOutputPort()),
+  renderWindow.render());
   });
 // time slider features
 timeslider.value = 20;
@@ -141,7 +141,6 @@ checkbox.addEventListener('change', function() {
   reader.setUrl(file).then(
   mapper.setInputConnection(reader.getOutputPort()),
   renderWindow.render());
-  //});
 </script>
 </body>
 </html>
