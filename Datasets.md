@@ -130,6 +130,14 @@ Here are two lists of all the open-source datasets that I encountered (checked a
        <td>Tissue probability templates between 27-45 GW</td>
        <td><a href="https://brain-development.org/brain-atlases/neonatal-brain-atlases/neonatal-brain-atlas-makropoulos/"> <i class="fas fa-link"></i></a></td></tr>
 
+   <tr><td>2017</td>
+      <td>Alexander et al. (M-CRIB atlas)</td>
+      <td>10-subject brain atlas</td>
+       <td>Meshes</td>
+       <td>Intensity and tissue probability templates between 40-43 weeks</td>
+       <td><a href="https://github.com/DevelopmentalImagingMCRI/M-CRIB_atlas"> <i class="fas fa-link"></i></a>
+          </td></tr>   
+
    <tr><td>2018</td>
       <td>Schuh et al.</td>
       <td>Neonatal brain spatiotemporal atlas</td>
