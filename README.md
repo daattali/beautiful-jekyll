@@ -105,6 +105,24 @@ Any markdown or HTML file that you create will be available on your website unde
 
 Files you create inside the [`_posts`](./_posts) directory will be treated as blog entries. You can look at the existing files there to get an idea of how to write blog posts. Note the format of the blog post files - they must follow the naming convention of `YEAR-MONTH-DAY-title.md`. After you successfully add your own post, you can delete the existing files inside [`_posts`](./_posts) to remove the sample posts, as those are just demo posts to help you learn.
 
+## Hint: Adding images to posts
+
+There is a Jekyll issue when we want to add some image to posts, which could affect your project. So, for example, if you want to add an image, using markdown, it should be something like that:
+
+> `![image-name](/location-in-your-repo/image.jpg)`
+
+But this don't work with Jekyll. You can read more about that topic [here](https://mademistakes.com/mastering-jekyll/site-url-baseurl/) , but there is two ways to add images to posts easily.
+
+- Using *relative_url* Jekyll filter
+
+So it should be:
+
+> `![image-name]( {{ "/location-in-your-repo/image.jpg" | relative_url }} )`
+
+- Using the full path with your repo name
+
+> `![image-name](/repo-name/location-in-your-repo/image.jpg)`
+
 # Customizing parameters for each page
 
 **One last important thing**: In order to have your new pages use this template and not just be plain HTML pages, **you must add [YAML front matter](https://jekyllrb.com/docs/front-matter/) to the top of each page**:
