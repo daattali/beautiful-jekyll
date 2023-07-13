@@ -10,11 +10,11 @@
 <section id = "social-share-section">
   <span class="sr-only">Share: </span>
 
-  {% if site.share-links-active.twitter %}
+  {% if site.share-links-active.threads %}
     <a href="https://twitter.com/intent/tweet?text={{ page.title | strip_html | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
-      class="btn btn-social-icon btn-twitter" title="Share on Threads">
+      class="btn btn-social-icon btn-threads" title="Share on Threads">
       <span class="fab fa-fw fa-threads" aria-hidden="true"></span>
-      <span class="sr-only">Twitter</span>
+      <span class="sr-only">Threads</span>
     </a>
   {% endif %}
 

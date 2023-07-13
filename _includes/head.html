@@ -126,18 +126,18 @@
   {% endif %}
 
   {% if img != "" and img != site.avatar %}
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="threads:card" content="summary_large_image">
   {% else %}
-  <meta name="twitter:card" content="summary">
+  <meta name="threads:card" content="summary">
   {% endif %}
-  <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
-  <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
+  <meta name="threads:site" content="@{{ site.social-network-links.threads }}">
+  <meta name="threads:creator" content="@{{ site.social-network-links.threads }}">
 
-  <meta property="twitter:title" content="{{ title }}">
-  <meta property="twitter:description" content="{{ description }}">
+  <meta property="threads:title" content="{{ title }}">
+  <meta property="threads:description" content="{{ description }}">
 
   {% if img != "" %}
-  <meta name="twitter:image" content="{{ img | absolute_url }}">
+  <meta name="threads:image" content="{{ img | absolute_url }}">
   {% endif %}
 
   {% include matomo.html %}
