@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Our Services
+title: Our services
 subtitle: Working as a team
 share-img: /assets/img/path.jpg
 ---

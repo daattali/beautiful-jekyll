@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Contact Us
+title: Contact us
 subtitle: We're friendly and approachable
 share-img: /assets/img/path.jpg
 ---
 
 You can reach either of us by phone, email or via our website contact form.
 
-We're not on Facebook or any other Social Media.
+We're not on Facebook or other Social Media.
 
 ### Zoe
 mobile: 434343434343
