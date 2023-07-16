@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How we work
-subtitle: Working as a team
+subtitle: Making everything clear
 share-img: /assets/img/path.jpg
 ---
 
