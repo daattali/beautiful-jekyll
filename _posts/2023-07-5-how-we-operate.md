@@ -5,7 +5,9 @@ subtitle: Reliability and good communications
 share-img: /assets/img/path.jpg
 ---
 
-We understand how frustrating it can be when contractors don't show up and don't warn you first.
+We understand how frustrating it is when, without warning, contractors don't show up. Or when they disappear leaving work uncompleted.
+
+
 
 ## Handyman Work
 
