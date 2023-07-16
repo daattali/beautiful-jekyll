@@ -5,7 +5,7 @@ subtitle: We're friendly and approachable
 share-img: /assets/img/path.jpg
 ---
 
-You can reach either of us by phone, email or via the website contact form below.
+You can reach either of us by phone, email or via our website contact form.
 
 We're not on Facebook or any other Social Media.
 
