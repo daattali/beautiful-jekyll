@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Contact Us!
+title: Contact Us
 share-img: /assets/img/path.jpg
 ---
 
