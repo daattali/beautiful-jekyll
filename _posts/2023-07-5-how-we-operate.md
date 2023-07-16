@@ -39,6 +39,7 @@ We take payments by bank transfer or cheque.
 - We will delete your contact details after six months unless you request otherwise.
 
 - We don't share your data with third parties
+kukiyuhoiuyoiu
 
 
 
