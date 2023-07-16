@@ -20,8 +20,11 @@ author: Bill Cane
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
+  About Us: "aboutme"
+  Services:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Contact:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
