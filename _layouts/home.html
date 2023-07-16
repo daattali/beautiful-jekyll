@@ -46,10 +46,10 @@ layout: page
         {% endif %}
       </a>
 
-      <p class="post-meta">
+<!--      <p class="post-meta">
         {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
         Posted on {{ post.date | date: date_format }}
-      </p>
+      </p>-->
 
       {% if thumbnail != "" %}
       <div class="post-image post-image-small">
@@ -78,7 +78,7 @@ layout: page
       </div>
       {% endunless %}
 
-      {% if site.feed_show_tags != false and post.tags.size > 0 %}
+<!--      {% if site.feed_show_tags != false and post.tags.size > 0 %}
       <div class="blog-tags">
         <span>Tags:</span>
         <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
@@ -90,7 +90,7 @@ layout: page
           {% endfor %}
         </ul>
       </div>
-      {% endif %}
+      {% endif %}-->
 
     </article>
   </li>
