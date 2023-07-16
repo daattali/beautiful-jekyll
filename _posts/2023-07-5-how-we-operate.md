@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How we operate
-subtitle: With clarity and good communications
+subtitle: Reliability and good communications
 share-img: /assets/img/path.jpg
 ---
 
