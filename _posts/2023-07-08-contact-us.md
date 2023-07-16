@@ -5,7 +5,7 @@ subtitle: We're friendly and approachable
 share-img: /assets/img/path.jpg
 ---
 
-You can reach either of us by phone, email or via our website contact form.
+Reach us by phone, email or via our website contact form.
 
 We're not on Facebook or other Social Media.
 
@@ -20,8 +20,14 @@ mobile: 646464646464
 email: bill@billandzoe.uk
 
 
-Please don't use this form for sensitive information such as bank details.
+Please don't use this website form to send sensitive information such as bank details. It isn't secure enough for that.
 
+Zoe and Bill Cane
+1 Spring Cottages
+Mark's Corner
+Newport
+Isle of Wight
+PO30 5UD
 
 
 

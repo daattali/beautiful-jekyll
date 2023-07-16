@@ -25,4 +25,14 @@ When the work is finished we will invoice you for payment within one month.
 
 We take payments by bank transfer or cheque.
 
-We are privacy-focussed.
+## Privacy
+
+We will respect your property and privacy and won't discuss your affairs with anyone else.
+
+We don't keep a customer list.
+
+We will delete your contact details after six months unless you request otherwise.
+
+
+
+
