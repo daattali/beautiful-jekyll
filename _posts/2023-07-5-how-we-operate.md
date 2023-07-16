@@ -25,14 +25,18 @@ We understand how frustrating it is when contractors don't show up or disappear 
 ## Privacy
 
 We won't...
-  - discuss your property or affairs with anyone else
-  - put your details on a customer list
-  - share any of your data with third parties
+  - discuss your property or affairs with anyone
+  - keep your details on a customer list or other storage system
+  - share your data with a third party
 
 We will delete...
-  - your email or text communications after one year
-  - your contact details after six months unless you request otherwise
-  - any information received through our website form after one month
+  - email or text communications after one year
+  - contact details after six months, unless you request otherwise
+  - information from our website form after one month
+
+You have the right to request us to...
+  - provide you with a copy of your personal data.
+  - delete your personal data.
 
 
 
