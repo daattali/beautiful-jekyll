@@ -5,7 +5,7 @@ subtitle: Reliability and good communications
 share-img: /assets/img/path.jpg
 ---
 
-We understand how frustrating it is when, without warning, contractors don't show up. Or when they disappear leaving work uncompleted.
+We understand how frustrating it is when contractors don't show up, or when they disappear leaving work uncompleted. We want to avoid those situations.
 
 
 
@@ -38,7 +38,13 @@ We take payments by bank transfer or cheque.
 
 - We will delete your contact details after six months unless you request otherwise.
 
-- We don't share your data with third parties
+- We will delete your email or text communications after one year.
+
+- We will delete any information received via our website form after one month,
+
+- We don't share your data with third parties.
+
+
 kukiyuhoiuyoiu
 
 
