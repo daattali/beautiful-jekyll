@@ -1,11 +1,11 @@
 ---
 layout: post
-title: How we operate
+title: How we Operate
 subtitle: Reliability and good communications
 share-img: /assets/img/path.jpg
 ---
 
-We understand how frustrating it is when contractors don't show up, or when they disappear leaving work uncompleted. We want to avoid those situations.
+We understand how frustrating it is when contractors don't show up or they disappear leaving work uncompleted. We want to avoid those situations.
 
 
 

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Contact us
+title: Contact Us
 subtitle: We're friendly and approachable
 share-img: /assets/img/path.jpg
 ---
 
-Reach us by phone, email or via our website contact form.
+Reach us by phone, email or fill in our website contact form.
 
 We're not on Facebook or other Social Media.
 
