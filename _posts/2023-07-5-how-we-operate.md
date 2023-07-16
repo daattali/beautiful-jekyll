@@ -5,7 +5,7 @@ subtitle: Reliability and good communications
 share-img: /assets/img/path.jpg
 ---
 
-We understand how frustrating it is when contractors don't show up or they disappear leaving work uncompleted. We want to avoid those situations.
+We understand how frustrating it is when contractors don't show up or disappear leaving work uncompleted. We want to avoid those situations.
 
 
 
@@ -24,15 +24,15 @@ We understand how frustrating it is when contractors don't show up or they disap
 
 ## Privacy
 
-We will not...
-  - discuss your property or your affairs with anyone else
+We won't...
+  - discuss your property or affairs with anyone else
   - put your details on a customer list
   - share any of your data with third parties
 
 We will delete...
   - your email or text communications after one year
   - your contact details after six months unless you request otherwise
-  - any information received via our website form after one month
+  - any information received through our website form after one month
 
 
 
