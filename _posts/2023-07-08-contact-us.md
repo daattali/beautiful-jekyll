@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Contact Us
+subtitle: We're friendly and approachable
 share-img: /assets/img/path.jpg
 ---
 
