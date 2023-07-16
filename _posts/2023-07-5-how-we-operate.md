@@ -5,7 +5,10 @@ subtitle: Reliability and good communications
 share-img: /assets/img/path.jpg
 ---
 
+We understand how frustrating it can be when contractors don't show up and don't warn you first.
+
 ## Handyman Work
+
 
 One free visit to discuss what you want done.
 
@@ -27,11 +30,13 @@ We take payments by bank transfer or cheque.
 
 ## Privacy
 
-We will respect your property and privacy and won't discuss your affairs with anyone else.
+- We will respect your property and privacy and won't discuss your affairs with anyone else.
 
-We don't keep a customer list.
+- We don't keep a customer list.
 
-We will delete your contact details after six months unless you request otherwise.
+- We will delete your contact details after six months unless you request otherwise.
+
+- We don't share your data with third parties
 
 
 
