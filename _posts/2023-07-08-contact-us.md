@@ -7,7 +7,6 @@ share-img: /assets/img/path.jpg
 
 Reach us by phone, email or fill in our website contact form.
 
-We're not on Facebook or other Social Media.
 
 ### Zoe
 mobile: 434343434343
@@ -19,6 +18,7 @@ mobile: 646464646464
 
 email: bill@billandzoe.uk
 
+We're not on Facebook or other Social Media.
 
 Don't use this website form to send sensitive information like bank details. It isn't secure enough for that.
 
