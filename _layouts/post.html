@@ -182,11 +182,11 @@ layout: base
 
 Please don't use this form to send sensitive information like bank details. It isn't secure enough for that.
 
-  {% if page.social-share %}
+<!--  {% if page.social-share %}
         {% include social-share.html %}
-      {% endif %}-->
+  {% endif %}-->
 
-      <ul class="pagination blog-pager">
+  <ul class="pagination blog-pager">
         {% if page.previous.url %}
         <li class="page-item previous">
           <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">&larr; Previous</a>
@@ -197,8 +197,8 @@ Please don't use this form to send sensitive information like bank details. It i
           <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">Next &rarr;</a>
         </li>
         {% endif %}
-      </ul>
-      {% include comments.html %}
+  </ul>
+      {% include comments.html %}-->
     </div>
   </div>
 </div>
