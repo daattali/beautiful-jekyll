@@ -64,7 +64,7 @@ layout: base
   <fieldset id="fs-frm-inputs">
     <label for="full-name">Your name</label>
     <input type="text" name="name" id="full-name" required="" data-protonpass-field="">
-    <label for="email-address">Your email address</label>
+    <label for="email-address">Your email addresszzz</label>
     <div class="protonpass-input protonpass-input--wrapper" style="display: none;"><button class="protonpass-input protonpass-input--icon" tabindex="-1" style="z-index: 1; top: 8.5px; right: -697.333px; width: 28px; height: 28px; --protonpass-icon-lineheight: 28px; --protonpass-icon-fontsize: 11.2px; background-image: url(&quot;moz-extension://f826a0ef-24b8-48b1-af6d-412bdb190af0/assets/protonpass-icon-active.svg&quot;) !important;" type="button"></button></div><input type="email" name="_replyto" id="email-address" required="" data-protonpass-field="" data-protonpass-field-type="email" style="padding-right: 44.2667px !important;" data-protonpass-styles-reset="{&quot;width&quot;:&quot;&quot;,&quot;max-width&quot;:&quot;&quot;,&quot;padding-right&quot;:&quot;&quot;}">
     <label for="message">How can we help you?</label>
     <textarea rows="5" name="message" id="message" required=""></textarea>
@@ -181,23 +181,6 @@ layout: base
 </style>
 
 
-<!--  {% if page.social-share %}
-        {% include social-share.html %}
-  {% endif %}-->
-
-  <ul class="pagination blog-pager">
-        {% if page.previous.url %}
-        <li class="page-item previous">
-          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">&larr; Previous</a>
-        </li>
-        {% endif %}
-        {% if page.next.url %}
-        <li class="page-item next">
-          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">Next &rarr;</a>
-        </li>
-        {% endif %}
-  </ul>
-      {% include comments.html %}-->
     </div>
   </div>
 </div>
