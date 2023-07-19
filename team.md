@@ -28,23 +28,6 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 ## The Team 
 
 
-#### Florencia D'Andrea, Postdoctoral Research and Teaching Fellow
-
-<img src='../img/team/florencia.jpg'   align="left" width="32%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-Florencia D'Andrea joined the MDS team at UBC in the summer of 2021. Florencia's field of work has been ecotoxicology, specializing in Pesticide Risk Assessment. She studied at the University of Buenos Aires where she obtained her Bachelor's, and Doctorate in Biology. During her PhD, she worked with multiple databases and used a model to simulate the environmental fate of pesticides. 
-Florencia has a teaching degree at the University the Buenos Aires. She has been an instructor for The Carpentries and is an RStudio Certified Trainer for Tidyverse and Shiny. When Florencia is not teaching or working, she can be found listening to podcasts, hiking or doing yoga.  <br>
-<br>
-
-<i>In the last 6 months, Florencia has gained experience developing Shiny apps.</i> <br>
-
-<i>Florencia's favourite data science topics are visualization, reproducibility and software development. </i> <br>
-
-<a href="https://florencia.netlify.app/" target="_blank">Learn more about Florencia here.</a>
-
-</p>
-
-
 #### Daniel Chen, Postdoctoral Research and Teaching Fellow
 
 
@@ -130,16 +113,6 @@ Varada Kolhatkar joined the MDS program in October 2018 as a teaching and resear
 </p>
 
 
-#### Rodolfo Lourenzutti, Co-Director and Assistant Professor of Teaching
-
-
-<img src='../img/team/rodolfo.jpeg'  align="left" width="32%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-Originally from Vila Velha, a coastal town in Brazil, Rodolfo Lourenzutti has a long-standing passion for data analysis, which drove him to pursuit a B.Sc and M.Sc in Statistics at the Federal University of Espírito Santo, and Federal University of Minas Gerais, respectively. For his PhD, Rodolfo switched fields to computer science, in which he obtained a PhD from the Federal University of Espírito Santo. Rodolfo has a diverse experience in Brazil as well as Canada. During his Ph.D., he spent 10 months working at the department of Electrical and Computer Engineering at University of Alberta. After completing his doctorate, he worked as Postdoctoral Fellow at University of Alberta in the Department of Civil & Environmental Engineering for 18 months. Rodolfo has taught in MDS for two years, and joined UBC’s STAT department in 2020.  <br>
-<br>
-
-</p>
-
 #### Quan Nguyen, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/quan.jpeg'   align="left" width="34.5%" style="margin-right: 5px;"/>
@@ -172,7 +145,7 @@ Joel began his involvement with MDS as a TA while working on his PhD and joined 
 
 </p>
 
-#### Alexi Rodríguez-Arelis, Postdoctoral Research and Teaching Fellow
+#### Alexi Rodríguez-Arelis, Assistant Professor of Teaching
 
 <img src='../img/team/alexi.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
@@ -189,7 +162,7 @@ Alexi commenced his current role at MDS in January 2021. He completed his PhD in
 
 
 
-#### Tiffany Timbers, Co-Director and Assistant Professor of Teaching (On Leave)
+#### Tiffany Timbers, Co-Director and Assistant Professor of Teaching
 
 <img src='../img/team/tiffany.png'  align="left" width="33%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
