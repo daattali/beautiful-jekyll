@@ -7,7 +7,9 @@ share-img: /assets/img/path.jpg
 
 We're a married couple based in Cowes and Newport on the Isle of Wight.
 
-Each of us has a different focus but together we provide a range of domestic property services.
+Each of us has a different focus but we complement each other to provide a range of domestic property services.
+
+We will normally work together on a job
 
 
 we sdrg trg strh strh strh strh sths trh
