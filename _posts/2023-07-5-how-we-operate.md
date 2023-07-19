@@ -5,14 +5,14 @@ subtitle: Reliability and good communications
 share-img: /assets/img/path.jpg
 ---
 
-We understand how frustrating it is when contractors don't show up or disappear leaving work uncompleted. We want to avoid those situations.
+We understand how frustrating it is when contractors don't show up or leave work uncompleted. We want to avoid those situations.
 
 
 
 ## Handyman Work
 
 
-  - One free visit to discuss what you want done.
+  - One free visit to discuss your job.
   - Free written estimate.
   - Minimum charge for handyman work is £50 excluding materials.
   - We require payment for materials up front.
