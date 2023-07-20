@@ -34,14 +34,16 @@ We won't...
   - keep your details on a customer list or other storage system
   - share your data with a third party
 
-We will delete...
-  - email or text communications after one year
-  - contact details after six months, unless you request otherwise
-  - information from our website form after one month
+We will...
+  - delete email or text communications after one year
+  - delete contact details after six months, unless you request otherwise
+  - delete information from our website contact form after one month
 
 You have the right to request us to...
   - provide you with a copy of your personal data.
   - delete your personal data.
+
+In practice you personal data will consist only of emails, texts
 
 
 
