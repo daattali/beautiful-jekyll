@@ -2,7 +2,7 @@
 layout: post
 title: How we Work
 subtitle: Reliability and good communications
-share-img: /assets/img/path.jpg
+#share-img: /assets/img/path.jpg
 ---
 
 We understand how frustrating it is when contractors don't show up or leave work uncompleted. We want to avoid those situations.

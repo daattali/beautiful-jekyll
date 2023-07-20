@@ -2,7 +2,7 @@
 layout: post
 title: Property Services
 subtitle: Working as a team
-share-img: /assets/img/path.jpg
+#share-img: /assets/img/path.jpg
 ---
 
 We're a married couple based in Cowes and Newport on the Isle of Wight.
