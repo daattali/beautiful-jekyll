@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How we Operate
+title: How we Work
 subtitle: Reliability and good communications
 share-img: /assets/img/path.jpg
 ---
@@ -9,9 +9,7 @@ We understand how frustrating it is when contractors don't show up or leave work
 
 
 
-## Handyman Work
-
-
+#### Handyman work
   - One free visit to discuss your job.
   - Free written estimate.
   - Minimum charge for handyman work is £50 excluding materials.
@@ -22,7 +20,14 @@ We understand how frustrating it is when contractors don't show up or leave work
   - When the work is finished we will invoice you for payment within one month.
   - We take payments by bank transfer or cheque.
 
-## Privacy
+#### Pet sitting
+  - Two free visits to get to know your pet and join you on a walk.
+  - Stay in your house for £30 per day or part of day.
+  - We may charge more if there
+
+#### Domestic cleaning
+
+#### Privacy
 
 We won't...
   - discuss your property or affairs with anyone
