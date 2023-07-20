@@ -12,14 +12,3 @@ Each of us has a different focus but we complement each other to provide a range
 We will normally work together on a job
 
 
-we sdrg trg strh strh strh strh sths trh
-
-Call Zoe on <a href="tel:+1234567890">82734827368</a>
-Text Zoe on <a href="sms:+1234567890">82734827368</a>
-Email Zoe at <a href="mailto:bill@zoeandbill.uk">bill@zoeandbill.uk</a>
-
-Call Bill on <a href="tel:+1234567890">82734827368</a>
-Text Bill on <a href="sms:+1234567890">82734827368</a>
-Email Zoe at <a href="mailto:bill@zoeandbill.uk">bill@zoeandbill.uk</a>
-
-Or use the contact form below...
