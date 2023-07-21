@@ -27,8 +27,6 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## The Team 
 
-<br>
-
 #### Katie Burak, Assistant Professor of Teaching
 
 <img src='../img/team/katie.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
@@ -201,7 +199,7 @@ Betty Zhao joined the MDS program in January 2022 as a course coordinator. She w
 
 <br>
 <br>
-
+<br>
 
 ## Past Team Members
 
