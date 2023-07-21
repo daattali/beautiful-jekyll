@@ -27,6 +27,21 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## The Team 
 
+#### Katie Burak, Assistant Professor of Teaching
+
+<img src='../img/team/katie.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Katie joined UBC and began her role with MDS in July 2023. She completed her PhD in Statistics at the University of Alberta where her academic work focused on increasing the computational efficiency of nonparametric approaches such as bootstrapping using concentration of measure. She has previously organized a variety of outreach events such as data science camps and has a passion for statistical education and community outreach. When Katie is not teaching, you can find her hiking, skiing or playing tennis. <br>
+<br>
+
+<i>In the last 6 months, Katie has learned how incredible the trails are in Pacific Spirit Park.</i> <br>
+
+<i>Katie's favourite data science topics involve the applications of statistics, such as modelling and statistical inference.</i> <br>
+
+<a href="https://alexrod.netlify.app/" target="_blank">Learn more about Alexi here.</a>
+
+</p>
+
 
 #### Daniel Chen, Postdoctoral Research and Teaching Fellow
 
