@@ -27,6 +27,8 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## The Team 
 
+<br>
+
 #### Katie Burak, Assistant Professor of Teaching
 
 <img src='../img/team/katie.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
@@ -42,6 +44,8 @@ Katie joined UBC and began her role with MDS in July 2023. She completed her PhD
 
 </p>
 
+<br>
+<br>
 
 #### Daniel Chen, Postdoctoral Research and Teaching Fellow
 
@@ -194,6 +198,9 @@ Betty Zhao joined the MDS program in January 2022 as a course coordinator. She w
 <a href="https://www.linkedin.com/in/mengxinzhao/" target="_blank">Learn more about Betty here.</a>
 
 </p>
+
+<br>
+<br>
 
 
 ## Past Team Members
