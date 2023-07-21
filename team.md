@@ -38,7 +38,7 @@ Katie joined UBC and began her role with MDS in July 2023. She completed her PhD
 
 <i>Katie's favourite data science topics involve the applications of statistics, such as modelling and statistical inference.</i> <br>
 
-<a href="https://alexrod.netlify.app/" target="_blank">Learn more about Alexi here.</a>
+<a href="https://www.linkedin.com/in/katie-burak-a9a12615b/?originalSubdomain=ca" target="_blank">Learn more about Katie here.</a>
 
 </p>
 
