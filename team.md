@@ -63,21 +63,6 @@ at a computer learing how to CAD design something to print on his 3D printer.
 <br>
 <br>
 
-#### Mike Gelbart, Associate Professor of Teaching (On Leave)
-
-<img src="../img/team/mike.jpg" align="left" width="34.5%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-  Mike Gelbart joined UBC in 2015 and was part of the team that designed the MDS curriculum. He attended Princeton University where he obtained an undergraduate degree in physics and worked on research projects in biophysics. Mike then changed directions and received a PhD from the machine learning group at Harvard University. Mike is passionate about education. Recently he has co-founded the Vancouver Independent School for Science and Technology, a not-for-profit STEM high school. When Mike isn't teaching, you can find him at home with his kids or driving them somewhere new, riding his bike or playing video games. <br>
-<br>
-
-<i>In the last 6 months, Mike has learned that graph neural networks are becoming an increasingly popular and powerful tool for harnessing network data. He also learned how much temperature affects the quality of his sleep.</i> <br>
-
-<i>Mike's favourite data science topic is interpreting ML models. </i> <br>
-
-<a href="https://www.mikegelbart.com/" target="_blank">Learn more about Mike here.</a>
-
-</p>
-
 #### Gittu George, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/gittu.png'   align="left" width="31%" style="margin-right: 5px;"/>
@@ -196,3 +181,14 @@ Betty Zhao joined the MDS program in January 2022 as a course coordinator. She w
 </p>
 
 
+## Past Team Members
+
+- **Tomas Beuzen** (Now Data Scientist at Solar Analytics)
+- **Vincenzo Coia** (Now Senior Data Scientist I at BGC Engineering Inc.)
+- **Giulio Valentino Dalla Riva** (Now Senior Lecturer in Data Science at University of Canterbury)
+- **Florencia D'Andrea** (Now Contractor - Data Analyst/Research Software Engineer at Washington State university)
+- **Mike Gelbart** (Now Co-Founder and Principal of [VISST](https://www.visst.ca/#team))
+- **Rodolfo Lourenzutti** (Now tenure-track Professor of Teaching in the Dept. of Statistics at UBC)
+- **Firas Moosvi** (Now Lecturer in the Computer Science, Mathematics, Physics, and Statistics department at UBC Okanagan)
+- **Arman Seyed-Ahmadi** (Now Research Scientist at Genentech)
+- **Shaun Sun** (Now Assistant Professor in the Department of Mathematics and Statistics at University of the Fraser Valley)
