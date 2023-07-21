@@ -44,6 +44,7 @@ Katie joined UBC and began her role with MDS in July 2023. She completed her PhD
 
 <br>
 <br>
+<br>
 
 #### Daniel Chen, Postdoctoral Research and Teaching Fellow
 
