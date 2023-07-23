@@ -1,11 +1,10 @@
 [Dolphin]
-PreviewsShown=false
+HeaderColumnWidths=703,141,132,133
 SortHiddenLast=true
-SortRole=creationtime
-Timestamp=2023,7,19,18,46,26.602
+Timestamp=2023,7,23,22,9,4.913
 Version=4
 ViewMode=1
-VisibleRoles=Details_text,Details_accesstime,CustomizedDetails
+VisibleRoles=CustomizedDetails,Details_text,Details_modificationtime,Details_creationtime,Details_accesstime
 
 [Settings]
 HiddenFilesShown=true

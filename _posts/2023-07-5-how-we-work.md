@@ -19,6 +19,7 @@ We understand how frustrating it is when contractors don't show up or leave work
   - Cleaning up afterwards is part of the service.
   - When the work is finished we will invoice you for payment within one month.
   - We take payments by bank transfer or cheque.
+  -
 
 #### Pet sitting XX
   - Two free visits to get to know your pet and join you on a walk.
