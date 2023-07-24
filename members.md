@@ -45,9 +45,6 @@ members:
           - name: Sashank Tirumala (MSR)
             photo_url: /img/members/sashank.jpg
             web_url: https://sashank-tirumala.github.io/
-          - name: Fan Yang (MSR)
-            photo_url: /img/members/fanyang.jpg
-            web_url: https://sites.google.com/view/fanyang98/
           - name: Bowen Jiang (MSR)
             photo_url: /img/members/bowenjiang.png
             web_url: https://www.ri.cmu.edu/ri-people/bowen-jiang-2/    
@@ -89,6 +86,8 @@ members:
       - name: Master's students (Research Master's)
         full: False
         list:
+          - name: Fan Yang -> Michigan PhD
+            web_url: https://fanyangcmu.github.io
           - name: Sarthak Shetty (MSME) -> Path Robotics
             web_url: https://sarthakjshetty.github.io/
           - name: Chuer Pan (MSR) -> Columbia PhD
