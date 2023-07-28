@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: /qpq/
+title: /jord/
 
 # Your name to show in the footer
 author: Jón Björn Salenger
@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/qpq_trans_128.png"
+avatar: "/assets/img/jord_2_128x128.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -81,7 +81,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: /qpq/ rss feed.
+rss-description: /jord/ rss feed.
 
 ###########################
 # --- General options --- #
