@@ -9,9 +9,8 @@ We're a married couple based in Cowes and Newport on the Isle of Wight.
 
 Each of us has a different focus but we complement each other to provide a range of domestic property services.
 
-
-
-
+<h3><a href="another_page.html">Bill - Handyman Services</a></h3>
+<h3><a href="another_page.html">Zoe - Pet Sitting, House Sitting, Domestic Cleaning</a></h3>
 
 We will normally work together on a job
 
