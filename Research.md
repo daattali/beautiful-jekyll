@@ -25,13 +25,13 @@ title: ""
 ### Working Papers
 
 [Informational Lobbying and Commercial Diplomacy](assets/amcham_adst_1.0.0.pdf)<br>
-Under Review.
+R&R, **_American Journal of Political Science_**.
 
 [Exporting Capital, Importing Law](assets/kalyanpur_thrall_march_2023.pdf) (with Nikhil Kalyanpur)<br>
-Previously (briefly) titled "The Oligarch's Offshore Dilemma." Under Review.
+Previously (briefly) titled "The Oligarch's Offshore Dilemma."
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
-David A. Lake Award for best paper presented at IPES 2020. Under Review.
+David A. Lake Award for best paper presented at IPES 2020.
 
 [The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
 R&R, **_Business and Politics_**.
