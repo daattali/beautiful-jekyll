@@ -38,6 +38,11 @@ UBC uses a percentage grade system from 0 to 100%. The following table shows an 
 | 60-63  |	C  |
 | 0-59 	 |  F (Fail)  |
 
+### Group project
+
+Near the end of a group project, everyone is required to complete a team work reflection. This deliverable is an *individual* report intended to give you an avenue to present your viewpoint as to how the project went, how the group worked together, and your role in the group. Each group member must complete this form to report on the contributions of **yourself** and the other group members. This is a private, individual report, meaning that none of your group members will see this report.
+
+When needed, we will also use the team work reflection, data from remote version control repositories, and/or interviews with team members to assess group performance and adjust the final grades of individuals using the [project contribution multiplier](https://github.com/UBC-MDS/public/blob/master/rubric/rubric_multiplier.md).
 
 ### Failed courses and C/C+ grades
 
