@@ -1,16 +1,16 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About this blog
+subtitle: no pain no money
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is SEOKJUN YOON. Messages that this blog contains:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
+- system trading
+- Detailed analysis of stocks
+- investment scenario
+- health  
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I started my first stock in my freshman year of college. Since then, I have become interested in investment in earnest through COVID-19. I've traded futures, done coins, and invested in bonds. Now I'm going to study about quant
