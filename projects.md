@@ -9,10 +9,11 @@ The projects that I need to share.
         -- Winston S. Churchill*
 
 ***
-### 1. Face Match api
+### 1. SkyLane Education
 
-An api provides compares faces with my faces & return a meaningful response.
-Live demo : [api](https://face-match-api.herokuapp.com)
+Description: A consultancy services that work with universities in renowned countries like the UK, USA, Canada, Australia, Dubai, Malta, Ireland, New Zealand and many others for studying and working abroad. Our range of free services, transparency, easy communication and networking with partners across the globe stands us apart. Study abroad with scholarship, with or without IELTS, and get a work permit after your study from Bangladesh with free consultancy. 
+
+Live demo : [live link](https://skylaneeducation.com/)
 
 ***
 
@@ -35,7 +36,7 @@ In this project I'm building a Face mask detector that detects whether a person 
 
 ### 5. Elephant Detection
 In this project I'm building a detector that detects an elephant inside an iamge/video. I've share a you-tube video of my project which is given below.
-<p align='center'>                                                                                                             
+<p align='center'>       
 <img src='https://user-images.githubusercontent.com/35966401/90336845-4de9a100-e000-11ea-890e-bf55d897f3ea.jpg' alt='elephant'>
 </p>
 
