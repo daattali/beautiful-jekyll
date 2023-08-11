@@ -12,12 +12,6 @@ members:
             web_url: https://davheld.github.io
   - name: Current members
     list:
-      - name: Post-Docs
-        full: true
-        list:
-          - name: Daniel Seita
-            photo_url: http://www.cs.cmu.edu/~dseita/images/Daniel-Spring-2021.JPG
-            web_url: http://www.cs.cmu.edu/~dseita/
       - name: PhD students
         full: true
         list:
@@ -39,12 +33,6 @@ members:
       - name: Masters students
         full: true
         list:
-          - name: Mansi Agrawal (MSR)
-            photo_url: /img/members/mansi.jpg
-            web_url: https://mansiagarwal11.github.io/
-          - name: Sashank Tirumala (MSR)
-            photo_url: /img/members/sashank.jpg
-            web_url: https://sashank-tirumala.github.io/
           - name: Bowen Jiang (MSR)
             photo_url: /img/members/bowenjiang.png
             web_url: https://www.ri.cmu.edu/ri-people/bowen-jiang-2/    
@@ -57,9 +45,6 @@ members:
       - name: Undergraduate Students
         full: true
         list:
-          - name: Edward Li
-            photo_url: /img/members/edward.jpg
-            web_url:
           - name: Wen Hui Leng
             photo_url: /img/nophoto_faceboard_white.jpg
             web_url: 
@@ -74,6 +59,11 @@ members:
        # list:
   - name: <a name="alumni"></a>Alumni
     list:
+      - name: Post-Doc alumni
+        full: False
+        list:
+          - name: Daniel Seita -> Assistant Professor at USC
+            web_url: https://danielseita.github.io/
       - name: PhD alumni
         full: False
         list:
@@ -82,25 +72,28 @@ members:
           - name: Xingyu Lin -> Post-doc with Pieter Abbeel at UC Berkeley
             web_url: https://xingyu-lin.github.io/
           - name: Brian Okorn (co-advised with Martial Hebert) -> Boston Dynamics AI Institute
-            web_url: https://www.ri.cmu.edu/ri-people/brian-e-okorn/
+            web_url: http://brianokorn.com/
       - name: Master's students (Research Master's)
         full: False
         list:
-          - name: Fan Yang -> Michigan PhD
+          - name: Mansi Agrawal (MSR) -> Amazon
+            web_url: https://mansiagarwal11.github.io/
+          - name: Sashank Tirumala (MSR) -> AIM Intelligent Machines
+            web_url: https://sashank-tirumala.github.io/
+          - name: Fan Yang (MSR) -> Michigan PhD
             web_url: https://fanyangcmu.github.io
           - name: Sarthak Shetty (MSME) -> Path Robotics
             web_url: https://sarthakjshetty.github.io/
-          - name: Chuer Pan (MSR) -> Columbia PhD
+          - name: Chuer Pan (MSR) -> Stanford PhD
+            web_url: https://chuerpan.com/
           - name: Haolun (Harry) Zhang (MSR) -> MIT PhD
             web_url: https://harryzhangog.github.io/
           - name: Carl Qi (MSML) -> UT Austin PhD
             web_url: https://carl-qi.github.io/
-          - name: Chuer Pan (MSR) -> Columbia PhD
-            web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
           - name: Gaurav Pathak (MSR) -> Adobe
             web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
           - name: Zixuan Huang (MSR) -> Michigan PhD
-            web_url: https://www.ri.cmu.edu/ri-people/zixuan-huang/
+            web_url: https://zxhuang97.github.io/
           - name: Yufei Wang (MSCS) -> CMU PhD
             web_url: https://yufeiwang63.github.io/
           - name: Harshit Sikchi (MSCS) -> UT Austin PhD
@@ -146,6 +139,7 @@ members:
           - name: Rashmi Anil
           - name: Patrick Liu
           - name: Jake Olkin
+          - name: Edward Li
       - name: Interns
         full: False
         list:
