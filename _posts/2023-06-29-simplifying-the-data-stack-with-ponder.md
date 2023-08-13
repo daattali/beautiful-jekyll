@@ -2,7 +2,7 @@
 layout: post
 title: Symplifying the Data Stack with Ponder
 subtitle: Running pandas directly on data warehouses
-thumbnail-img: /assets/img/2021-06-29-thumb.png
+thumbnail-img: /assets/img/2023-06-29-thumb.png
 tags: [pandas, data engineering, dataops, workflow, ponder]
 comments: true
 ---
@@ -17,10 +17,14 @@ Not affiliated, but spreading the love. Because the capability of running pandas
 
 Just pure beauty.
 
-![ponder-1](/assets/data/2023-06-29-ponder-1.png){: .mx-auto.d-block :}
-![ponder-2](/assets/data/2023-06-29-ponder-2.png){: .mx-auto.d-block :}
-![ponder-3](/assets/data/2023-06-29-ponder-3.png){: .mx-auto.d-block :}
+![ponder-1](/assets/data/2023-06-29-ponder-1.jpg){: .mx-auto.d-block :}
+
+![ponder-2](/assets/data/2023-06-29-ponder-2.jpg){: .mx-auto.d-block :}
+
+![ponder-3](/assets/data/2023-06-29-ponder-3.jpg){: .mx-auto.d-block :}
+
 ![ponder-4](/assets/data/2023-06-29-ponder-4.png){: .mx-auto.d-block :}
+
 ![ponder-5](/assets/data/2023-06-29-ponder-5.png){: .mx-auto.d-block :}
 
 [Try it](https://app.ponder.io/signup) yourself.
