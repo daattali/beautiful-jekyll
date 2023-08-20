@@ -2,7 +2,8 @@
 layout: page 
 title: About Me 
 subtitle:
-comments: true published: true
+comments: false 
+published: true
 ---
 
 <p class="about-text">
