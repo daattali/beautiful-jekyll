@@ -1,5 +1,6 @@
 ---
-layout: page title: About Me 
+layout: page 
+title: About Me 
 subtitle:
 comments: true published: true
 ---

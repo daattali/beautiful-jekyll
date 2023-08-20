@@ -1,5 +1,6 @@
 ---
-layout: page title: My Work 
+layout: page 
+title: My Work 
 published: true 
 meta-title: Richard Decal - CV - resume 
 meta-description: CV for Richard B. Decal 
