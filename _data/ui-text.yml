@@ -172,18 +172,18 @@ zh-HK:
 # German / Deutsch
 # ----------------
 de: &DEFAULT_DE
-  comments_label             : "Hinterlassen Sie einen Kommentar"
+  comments_label             : "Hinterlasse einen Kommentar"
   comments_title             : "Kommentare"
-  comment_form_info          : "Ihre E-Mail Adresse wird nicht veröffentlicht. Benötigte Felder sind markiert"
+  comment_form_info          : "Die E-Mail Adresse wird nicht veröffentlicht. Benötigte Felder sind markiert"
   comment_form_comment_label : "Kommentar"
   comment_form_md_info       : "Markdown wird unterstützt."
   comment_form_name_label    : "Name"
-  comment_form_email_label   : "E-Mail-Addresse"
+  comment_form_email_label   : "E-Mail-Adresse"
   comment_form_website_label : "Webseite (optional)"
   comment_btn_submit         : "Kommentar absenden"
   comment_btn_submitted      : "Versendet"
-  comment_success_msg        : "Danke für Ihren Kommentar! Er wird auf der Seite angezeigt, nachdem er geprüft wurde."
-  comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte füllen Sie alle benötigten Felder aus und versuchen Sie es erneut."
+  comment_success_msg        : "Danke für den Kommentar! Er wird nach Prüfung auf der Seite angezeigt."
+  comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte fülle alle benötigten Felder aus und versuche es erneut."
 de-DE:
   <<: *DEFAULT_DE
 de-AT:
@@ -256,7 +256,7 @@ ru-RU:
 lt: &DEFAULT_LT
   comments_label             : "Palikti komentarą"
   comments_title             : "Komentaras"
-  comment_form_info          : "El. pašto adresas nebus viešinamas. Būtini laukai pažymėti."
+  comment_form_info          : "El. pašto adresas nebus viešinamas. Būtini laukai pažymėti"
   comment_form_comment_label : "Komentaras"
   comment_form_md_info       : "Markdown palaikomas."
   comment_form_name_label    : "Vardas"
@@ -292,7 +292,7 @@ gr-GR:
 sv: &DEFAULT_SV
   comments_label             : "Lämna en kommentar"
   comments_title             : "Kommentarer"
-  comment_form_info          : "Din e-post adress kommer inte att publiceras. Obligatoriska fält är markerade."
+  comment_form_info          : "Din e-post adress kommer inte att publiceras. Obligatoriska fält är markerade"
   comment_form_comment_label : "Kommentar"
   comment_form_md_info       : "Använd Markdown för text-formateringen."
   comment_form_name_label    : "Namn"
@@ -350,7 +350,7 @@ id-ID:
 vi: &DEFAULT_VI
   comments_label             : "Để lại bình luận"
   comments_title             : "Bình luận"
-  comment_form_info          : "Email của bạn sẽ được giữ bí mật. Các phần bắt buộc được đánh dấu."
+  comment_form_info          : "Email của bạn sẽ được giữ bí mật. Các phần bắt buộc được đánh dấu"
   comment_form_comment_label : "Bình luận"
   comment_form_md_info       : "Hỗ trợ Markdown."
   comment_form_name_label    : "Tên"
@@ -386,7 +386,7 @@ da-DK:
 pl: &DEFAULT_PL
   comments_label             : "Zostaw komentarz"
   comments_title             : "Komentarze"
-  comment_form_info          : "Twój adres email nie będzie udostępiony. Wymagane pola są oznaczone."
+  comment_form_info          : "Twój adres email nie będzie udostępiony. Wymagane pola są oznaczone"
   comment_form_comment_label : "Skomentuj"
   comment_form_md_info       : "Markdown jest wspierany"
   comment_form_name_label    : "Imię"
@@ -440,7 +440,7 @@ sk-SK:
 hu: &DEFAULT_HU
   comments_label             : "Szólj hozzá!"
   comments_title             : "Hozzászólások"
-  comment_form_info          : "Az e-mail címed nem lesz publikus. A csillagozott mezők kitöltése kötelező."
+  comment_form_info          : "Az e-mail címed nem lesz publikus. A csillagozott mezők kitöltése kötelező"
   comment_form_comment_label : "Hozzászólás"
   comment_form_md_info       : "Támogatott formázási mód: Markdown"
   comment_form_name_label    : "Név"
@@ -487,7 +487,7 @@ pa: &DEFAULT_PA
   comment_success_msg        : "ਤੁਹਾਡੀਆਂ ਟਿੱਪਣੀਆਂ ਲਈ ਧੰਨਵਾਦ! ਇਹ ਮਨਜ਼ੂਰੀ ਮਿਲਣ ਦੇ ਬਾਅਦ ਸਾਈਟ 'ਤੇ ਦਿਖਾਇਆ ਜਾਵੇਗਾ।"
   comment_error_msg          : "ਮੁਆਫ ਕਰਨਾ, ਤੁਹਾਡੀ ਅਧੀਨਗੀ ਵਿੱਚ ਕੋਈ ਗਲਤੀ ਹੋਈ ਸੀ ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਾਰੇ ਲੋੜੀਂਦੇ ਖੇਤਰ ਪੂਰੇ ਹੋ ਗਏ ਹਨ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
 pa-IN:
-  <<: *DEFAULT_PA  
+  <<: *DEFAULT_PA
 
 # Another locale
 # --------------

@@ -4,6 +4,27 @@
   {% endfor %}
 {% endif %}
 
+{% if layout.common-js %}
+  {% for js in layout.common-js %}
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    {% if js contains 'jquery' %}
+      <script>
+        if (typeof jQuery == 'undefined') {
+          document.write('<script src="{{ js | relative_url }}"></scr' + 'ipt>');
+        }
+      </script>
+    {% else %}
+      <script src="{{ js | relative_url }}"></script>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if site.site-js %}
+  {% for js in site.site-js %}
+    <script src="{{ js | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+
 {% if page.ext-js %}
   {% for js in page.ext-js %}
     {% include ext-js.html js=js %}
@@ -12,21 +33,6 @@
 
 {% if page.js %}
   {% for js in page.js %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
-  {% endfor %}
-{% endif %}
-
-{% if layout.common-js %}
-  {% for js in layout.common-js %}
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    {% if js contains 'jquery' %}
-      <script>
-      	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
-      	}
-      </script>
-    {% else %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
-    {% endif %}
+    <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
