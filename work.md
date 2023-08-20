@@ -3,7 +3,7 @@ layout: page title: My Work
 published: true 
 meta-title: Richard Decal - CV - resume 
 meta-description: CV for Richard B. Decal 
-bigimg: /img/AIBS_presentation_crop.jpg
+cover-img: /img/AIBS_presentation_crop.jpg
 ---
 
 My mission is to leverage my talents and interests to positively impact in the world. 
