@@ -31,7 +31,7 @@ navbar-links:
     - Q&A: "https://stackoverflow.com/users/4212158/crypdick"
     - Photography: "https://www.flickr.com/photos/richarddecal/albums/72157640025469005/"
   Work: "work"
-  Personal: "personal"
+  Personal/Contact: "personal"
 av-search: "search"
 
 # Image to show in the navigation bar - image must be a square (width = height)

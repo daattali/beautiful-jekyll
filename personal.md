@@ -18,6 +18,13 @@ For work, I use machine learning to scale ecosystem restoration using drones. <a
 </p>
 
 ---
+## Contact
+
+The best place to reach me is at *public at richarddecal dot c-o-m*, or via text if you have my number. I also have a [Twitter](https://twitter.com/AIjedi).
+
+## Outdoors
+
+- I spend as much time as possible outdoors. I love hiking, camping, mountain biking, kayaking, and rock climbing.
 
 ## Travel
 
@@ -51,8 +58,6 @@ For work, I use machine learning to scale ecosystem restoration using drones. <a
 
 ## IT
 
-- **Cloud server** - I run various self-hosted services: Nextcloud, Plex, a Tor node, and more.
-- **[Mobile library](https://github.com/PirateBox-Dev/PirateBox-Mesh)** - I converted a Raspberry Pi into an awesome
-  mobile filesharing mesh network.
-- **Personal Assistant** - I also converted a Raspberry Pi into a fully open-source digital assistant using Mycroft.ai.
-- **Ultimate remote development workstation** - I am constantly improving my mobile workstation so that I can work anywhere while still being ergonomic. My current setup is a NReal AR headset, a 5G hotspot, and a remote tunnel.
+- [**Self-hosted services**](https://github.com/awesome-selfhosted/awesome-selfhosted) - My server runs Nextcloud, Plex, a Tor relay, an email server, a ZFS NAS, and more.
+- **DIY Smart Home** - I made various smart-home devices: a [smart mirror](https://magicmirror.builders/), automated hydroponics for my garden, a mobile [filesharing mesh network](https://github.com/PirateBox-Dev/PirateBox-Mesh), a [digitial assistant](https://mycroft.ai/), and more.
+- **Remote development** - I am persuing the ultimate mobile ergonomic workstation. My current setup is a NReal air headset, a 5G hotspot, and a remote tunnel over Android.
