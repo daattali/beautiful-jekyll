@@ -6,22 +6,29 @@ meta-description: CV for Richard B. Decal
 bigimg: /img/AIBS_presentation_crop.jpg
 ---
 
-My mission is to leverage my talents and interests to do the _most_ good in the world. Naturally, I gravitated to
-machine learning, which can exponentially amplify my productivity using automation. 
+My mission is to leverage my talents and interests to positively impact in the world. 
+I see machine learning as a tool to maximize my impact. 
 
-At the moment, I am the Lead ML Engineer at Dendra Systems, where I work on scaling up ecosystem monitoring and 
-restoration using smart drones. Our moonshot plan is to scale our operations to the trillion-tree scale, which would 
-be enough carbon sequestered to offset all the carbon released into the atmosphere since the Industrial Revolution.
+At am currently Lead ML Scientist at Dendra Systems, where I work on scaling up ecosystem monitoring and 
+restoration using smart drones.
 
-For detailed information about my education, conferences, talks, teaching, etc. please refer to my CV:
+For a 1-page summary of my career, please refer to **my resume**:
+
 <center>
 <div class="get-started-wrap">
   <a class="btn btn-success btn-lg get-started-btn" href="https://raw.githubusercontent.com/crypdick/Decal-LaTeX-CV/master/Richard-Decal-resume.pdf">Download ML Resume (pdf)</a>
-
-    <a class="btn btn-success btn-lg get-started-btn" href="https://raw.githubusercontent.com/crypdick/Decal-LaTeX-CV/master/RDecal-ML-CV.pdf">Download ML CV (pdf)</a>
-
 </div>
 </center>
+
+For a comprehensive summary, please refer to **my CV**:
+<center>
+<div class="get-started-wrap">
+    <a class="btn btn-success btn-lg get-started-btn" href="https://raw.githubusercontent.com/crypdick/Decal-LaTeX-CV/master/RDecal-ML-CV.pdf">Download ML CV (pdf)</a>
+</div>
+</center>
+
+
+In a past life, I was a molecular biologist. Over the years I researched colon cancer, Parkinson's disease, olfaction, and organic chemistry.
 
 ---
 
@@ -31,7 +38,7 @@ For detailed information about my education, conferences, talks, teaching, etc. 
 
 _[Dendra Systems](www.dendra.io) - Feb. 2020 → Now_
 
-I am currently the Lead ML engineer at a start-up fighting climate change and deforestation using tree-planting drones.
+I am currently the Lead ML engineer at a start-up fighting climate change and deforestation using tree-planting drones. Please refer to CV for detail.
 
 ### Improving Remote Monitoring of Cardiac Patients by Automatically Detecting Arrythmias
 

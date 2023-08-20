@@ -39,6 +39,7 @@ The best place to reach me is at *public at richarddecal dot c-o-m*, or via text
 - Talk for TA3M Seattle: "How AI can be abused by surveillance
   states" ([presentation slides](https://docs.google.com/presentation/d/1lfn3T7R-ufjbzfmlVSMgAIyjC6hYhTTC41LMleQNFcQ/edit?usp=sharing))
 - Interview with KOMO news in Seattle over the net neutrality debate
+- For my academic/industry talks, please refer to my <a href="/work">work page</a>.
 
 ## Volunteering
 
