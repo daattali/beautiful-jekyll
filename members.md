@@ -76,7 +76,7 @@ members:
       - name: Master's students (Research Master's)
         full: False
         list:
-          - name: Mansi Agrawal (MSR) -> Amazon
+          - name: Mansi Agarwal (MSR) -> Amazon Robotics
             web_url: https://mansiagarwal11.github.io/
           - name: Sashank Tirumala (MSR) -> AIM Intelligent Machines
             web_url: https://sashank-tirumala.github.io/
