@@ -12,7 +12,7 @@ The Master of Data Science Policies and Regulations are part of the campus-wide 
 
 Attendance in lectures and lab sessions is not mandatory but highly recommended. You will get the most out of the program if you show up in person. 
 
-**If you are feeling unwell, are experiencing any flu-like symptoms, or have reason to believe you may have Covid-19, please do not come to any in-person meetings including lectures, labs, office hours, or quizzes**. For quizzes specifically, see the information on "Remote quiz requests" below.
+**If you are feeling unwell, are experiencing any flu-like symptoms, or have reason to believe you may have Covid-19, please do not come to any in-person meetings including lectures, labs, office hours, or quizzes**.
 
 ## Academic concession policy
 
@@ -38,6 +38,11 @@ UBC uses a percentage grade system from 0 to 100%. The following table shows an 
 | 60-63  |	C  |
 | 0-59 	 |  F (Fail)  |
 
+### Group project
+
+Near the end of a group project, everyone is required to complete a team work reflection. This deliverable is an *individual* report intended to give you an avenue to present your viewpoint as to how the project went, how the group worked together, and your role in the group. Each group member must complete this form to report on the contributions of **yourself** and the other group members. This is a private, individual report, meaning that none of your group members will see this report.
+
+When needed, we will also use the team work reflection, data from remote version control repositories, and/or interviews with team members to assess group performance and adjust the final grades of individuals using the [project contribution multiplier](https://github.com/UBC-MDS/public/blob/master/rubric/rubric_multiplier.md).
 
 ### Failed courses and C/C+ grades
 
@@ -85,22 +90,11 @@ the internet, software documentation, etc.
 
 The following are also **NOT** permitted:
 
-- taking a quiz from a remote location without prior permission (see below on how to obtain permission)
+- taking a quiz from a remote location
 - leaving the quiz room early with your laptop
 - leaving and re-entering the quiz room (unless approved by the instructor, please talk to the instructor before the quiz if you think you might have to leave the room during the quiz)
 
 Failing to observe the above expectations may result in a zero grade for the quiz in question.
-
-### Remote quiz requests
-
-In some cases you may be able to take a quiz but not able to do so from UBC campus (for example, due to mild illness). 
-In this case, you must fill out an MDS remote quiz request form explaining
-why you are unable to be physically present for the quiz **at least 2 hours before the quiz**. We understand that in some cases (e.g. you wake up and you realize that you are sick) you may only be able to make this determination at the last-minute. We ask that if you need to request a remote quiz, you do so as early as possible and provide appropriate documentation. 
-
-There are two forms, one for courses that start with the DSCI course code and one for courses that start with the COLX course code. Please fill out the appropriate form based on which course you are submitting the request for:
-
-- [DSCI 5XX MDS-V and MDS-CL remote quiz request form](https://ubc.ca1.qualtrics.com/jfe/form/SV_d6eseEoTCL2ficu) 
-- [COLX 5XX MDS-CL remote quiz request form](https://ubc.ca1.qualtrics.com/jfe/form/SV_dncGBB8xlFI5gHQ) 
 
 ## Plagiarism
 
