@@ -35,17 +35,17 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Basic Statistics](https://www.coursera.org/learn/basic-statistics), from University of Amsterdam (Coursera)
 
 ### Calculus
-- [Essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) (YouTube series)
+- (Highly recommended) [Essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) (YouTube series)
 - [Calculus One](https://www.coursera.org/learn/calculus1), from The Ohio State University (Coursera)
 - Calculus: Single Variable, [Part 1](https://www.coursera.org/learn/single-variable-calculus), [Part 2](https://www.coursera.org/learn/differentiation-calculus), [Part 3](https://www.coursera.org/learn/integration-calculus) from U. Pennsylvania (Coursera)
 - Calculus 1, [Differentiation](https://www.edx.org/course/calculus-1a-differentiation-mitx-18-01-1x) and [Integration](https://www.edx.org/course/calculus-1b-integration-mitx-18-01-2x) from MIT (edX)
 
 ### Linear algebra
-- [Essence of linear algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) (YouTube series)
+- (Highly recommended) [Essence of linear algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) (YouTube series)
+- [MIT A 2020 Vision of Linear Algebra, Spring 2020 by Gilbert Strang](https://github.ubc.ca/MDS-2023-24/DSCI_563_unsup-learn_instructors/issues/80)
 - [Immersive linear algebra](http://immersivemath.com/ila/index.html), interactive e-book
-- [Introduction to Linear Models and Matrix Algebra](https://www.edx.org/course/introduction-linear-models-matrix-harvardx-ph525-2x-0) with R, from Harvard U. (edX)
 - [Linear Algebra Refresher Course](https://www.udacity.com/course/linear-algebra-refresher-course--ud953) with Python (Udacity).
-- [Applications of Linear Algebra Part 1](https://www.edx.org/course/applications-linear-algebra-part-1-davidsonx-d003x-1), from Davidson College (edX)
+- [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra)
 
 ### General
 - [Data Analysis for the Life Sciences](https://leanpub.com/dataanalysisforthelifesciences) by Rafael A Irizarry and Michael I Love (has a suggested price but can be accessed for $0)
