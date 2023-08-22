@@ -47,6 +47,10 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Linear Algebra Refresher Course](https://www.udacity.com/course/linear-algebra-refresher-course--ud953) with Python (Udacity).
 - [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra)
 
+### Scientific communication
+- [Writing Resources](https://writing.library.ubc.ca/writing-resources/) from UBC
+- [Writing in the Sciences](https://www.classcentral.com/course/sciwrite-464), by Stanford University via Coursera (free to audit)
+
 ### General
 - [Data Analysis for the Life Sciences](https://leanpub.com/dataanalysisforthelifesciences) by Rafael A Irizarry and Michael I Love (has a suggested price but can be accessed for $0)
 - A variety of [free O'Reilly Ebooks on data science](http://www.oreilly.com/data/free/archive.html)
