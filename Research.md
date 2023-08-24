@@ -5,6 +5,9 @@ title: ""
 
 ### Peer-reviewed Publications
 
+[5] [The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/BAP_revised.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
+**_Business and Politics_**, Forthcoming.
+
 [4] [Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/sqad007.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
 **_International Studies Quarterly_**, 2023, 67(1).
 
@@ -32,9 +35,6 @@ Previously (briefly) titled "The Oligarch's Offshore Dilemma."
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
 David A. Lake Award for best paper presented at IPES 2020.
-
-[The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/WFT_Nov2021_final_identified.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
-R&R, **_Business and Politics_**.
 
 [Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/GASB_anon.pdf) (with Nathan M. Jensen)
 
