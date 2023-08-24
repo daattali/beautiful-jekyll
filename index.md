@@ -13,4 +13,4 @@ I study the politics of business, diplomacy, and global governance. My book proj
 <br><br>
 Prior to joining Columbia, I was a postdoctoral fellow at Princeton University's <a href="https://niehaus.princeton.edu/">Niehaus Center for Globalization and Governance</a>. I received my PhD from the Department of Government at The University of Texas at Austin.<br><br>
 
-You can view my CV (updated July 2023) [here](assets/Thrall_CV_August_2023.pdf).
+You can view my CV (updated August 2023) [here](assets/Thrall_CV_August_2023_2.pdf).
