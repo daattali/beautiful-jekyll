@@ -46,6 +46,7 @@ Developing and maintaining Beautiful Jekyll takes a lot of time and effort - tha
 
 - [DoFollow](https://dofollow.co.uk/)
 - [\_hyp3ri0n](https://hyperiongray.com)
+- [Varna Sri Raman](https://about.me/varna)
 
 **[Become a sponsor for Beautiful Jekyll and unlock new features\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)**
 
