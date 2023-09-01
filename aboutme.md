@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Senior Google Cloud Architect at EPAM/
+subtitle: Senior Google Cloud Architect at EPAM
 #cover-img: assets/img/hello_world.jpeg
 #share-title: 
 #share-img: 
