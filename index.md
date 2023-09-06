@@ -7,13 +7,10 @@ use-site-title: true
 
 ## Welcome to the 2023-2024 season!
 
-Information about this year's math club will be available by early October. Please subscribe to the
-[RMS PTSA Bear Tracks newsletter](http://tinyurl.com/GetBearTracks)
-to be notified when registration becomes available.
+More information about this year's math club will be available by early October. Please subscribe to the
+[RMS PTSA Bear Tracks newsletter](http://tinyurl.com/GetBearTracks) to be among the first to know.
 
 1. New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
-
-<!--1. Learn about this year's coaching and competition plans at our [virtual parent night](https://youtu.be/oAYHsTi_Vp4).-->
 
 2. Parent night details coming soon!
 
@@ -21,15 +18,24 @@ to be notified when registration becomes available.
 
 4. Your parent and student emails will be added as guests to the RMS PTSA Math Club group so you can access 
 the PTSA Office 365 portal. The first round of accounts and kickoff email will be sent in early October.
-<!--If you do not receive a notification email within 48 hours of registering, 
+
+5. Become an <a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a> and volunteer to [proctor](https://www.signupgenius.com/go/10C0F49AAAE22A5F4CF8-coaching2).
+
+<!--1. New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
+
+1. Learn about this year's coaching and competition plans at our [virtual parent night](https://youtu.be/oAYHsTi_Vp4).
+
+1. **(Required)** Register for the [2023-2024 math club](http://rmsptsa.org/Packet/MathClubReg).
+
+1. Your parent and student emails will be added as guests to the RMS PTSA Math Club group so you can access 
+the PTSA Office 365 portal. If you do not receive a notification email within 48 hours of registering, 
 please [contact the chair](mailto:mathclubchair@rmsptsa.org). This is a manual process, so please be patient.
 
 5. Create a [Microsoft account](https://account.microsoft.com) associated with the email registered with your PTSA account so you can access our [Office 365 portal](portal).
 
 6. Opt in to [competitions](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B571B3375-9DF4-42A2-B345-8313C7182EEF%7D&file=Competitions%20%26%20Teams.xlsx&action=default&mobileredirect=true).
--->
 
-5. Become an <a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a> and volunteer to [proctor](https://www.signupgenius.com/go/10C0F49AAAE22A5F4CF8-coaching2).
+5. Become an <a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a> and volunteer to [proctor](https://www.signupgenius.com/go/10C0F49AAAE22A5F4CF8-coaching2).-->
 
 ## Top links
 
