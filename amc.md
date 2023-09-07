@@ -26,5 +26,3 @@ this very challenging round.
 The AIME is an invitation-only exam available to the top performers of the AMC 10 exams. The bulk of
 competitors skews towards 12th grade, so it is extremely challenging for middle school students. Top
 performers from the AIME are invited to continue on to the USA Junior Math Olympiad.
-
-**Our club does not run AIME exams.** You will need to find another provider.
