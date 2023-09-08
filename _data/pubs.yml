@@ -25,7 +25,7 @@
   site: https://hacman-2023.github.io/
   title: "Learning Hybrid Actor-Critic Maps for 6D Non-Prehensile Manipulation"
   venue: Conference on Robot Learning (CoRL), 2023
-  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZEPiwF18mA" title="Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  video_embed: <iframe width="560" height="396" src="https://hacman-2023.github.io/static/videos/zoomed_website.mp4" title="Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   tags:
       - 3D_afford_obj_manip
       - rl_algs
