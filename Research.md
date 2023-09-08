@@ -5,7 +5,7 @@ title: ""
 
 ### Peer-reviewed Publications
 
-[5] [The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/BAP_revised.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
+[5] [The Promise of Economic Integration: Evidence from the First Bank in an American Indian Nation](assets/BAP_final.pdf) (with D.L. Feir and Rachel L. Wellhausen)<br>
 **_Business and Politics_**, Forthcoming.
 
 [4] [Global Value Chains as a Constraint on Sovereignty: Evidence from Investor-State Dispute Settlement](assets/sqad007.pdf) (with Carolina Moehlecke and Rachel L. Wellhausen)<br>
@@ -36,11 +36,12 @@ Previously (briefly) titled "The Oligarch's Offshore Dilemma."
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
 David A. Lake Award for best paper presented at IPES 2020.
 
-[Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/GASB_anon.pdf) (with Nathan M. Jensen)
+[Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/gasb_anon_bjps.pdf) (with Nathan M. Jensen)<br>
+Under Review.
 
 ### Works in Progress
 
-_Firms, Diplomats, and Piecemeal Globalization: How Corporate Interests Shape International Institutions_ (Book Project)
+_Piecemeal Diplomacy: Globalization, Interest Groups, and the Atomization of Foreign Policy_ (Book Project)
 
 The Bureaucratic Origins of International Law (with Matt Malis)
 
@@ -49,6 +50,8 @@ Revolving Door Diplomats (with David Lindsey and Matt Malis)
 [Treaty Diplomacy and the Global Firm](assets/treaty_regimes_IPES.pdf)
 
 Transparency Shocks and Private Governance in Offshore Finance (with Daniel Berliner and Nikhil Kalyanpur)
+
+Measuring Academic Prestige (with Anne Meng)
 
 
 
