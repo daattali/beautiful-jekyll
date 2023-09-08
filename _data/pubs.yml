@@ -14,6 +14,21 @@
 #  tags: null
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+- abs: Manipulating objects without grasping them is an essential component of human dexterity, referred to as non-prehensile manipulation. Non-prehensile manipulation may enable more complex interactions with the objects, but also presents challenges in reasoning about gripper-object interactions. In this work, we introduce Hybrid Actor-Critic Maps for Manipulation (HACMan), a reinforcement learning approach for 6D non-prehensile manipulation of objects using point cloud observations. HACMan proposes a temporally-abstracted and spatially-grounded object-centric action representation that consists of selecting a contact location from the object point cloud and a set of motion parameters describing how the robot will move after making contact. We modify an existing off-policy RL algorithm to learn in this hybrid discrete-continuous action representation. We evaluate HACMan on a 6D object pose alignment task in both simulation and in the real world. On the hardest version of our task, with randomized initial poses, randomized 6D goals, and diverse object categories, our policy demonstrates strong generalization to unseen object categories without a performance drop, achieving an 89% success rate on unseen objects in simulation and 50% success rate with zero-shot transfer in the real world. Compared to alternative action representations, HACMan achieves a success rate more than three times higher than the best baseline. With zero-shot sim2real transfer, our policy can successfully manipulate unseen objects in the real world for challenging non-planar goals, using dynamic and contact-rich non-prehensile skills.
+  authors: Wenxuan Zhou, Bowen Jiang, Fan Yang, Chris Paxton*, David Held*
+  award: <award>Oral Presentation</award>  (Selection rate 6.6%)
+  bib: null
+  img: ../pics/hacman-v2.gif
+  links:
+      '[arXiv]': https://arxiv.org/abs/2305.03942
+  short_id: hacman
+  site: https://hacman-2023.github.io/
+  title: "Learning Hybrid Actor-Critic Maps for 6D Non-Prehensile Manipulation"
+  venue: Conference on Robot Learning (CoRL), 2023
+  video_embed: <iframe width="560" height="396" src="https://hacman-2023.github.io/static/videos/zoomed_website.mp4" title="Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+      - 3D_afford_obj_manip
+      - rl_algs
 - abs: Many fabric handling and 2D deformable material tasks in homes and
     industry require singulating layers of material such as opening a bag or
     arranging garments for sewing. In contrast to methods requiring specialized
