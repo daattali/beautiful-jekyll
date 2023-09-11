@@ -33,12 +33,13 @@ Invited talks
     <li>Journées de Statistique de la Société Francaise de Statistique, 2023 (<a href="/assets/files/slides/JdS2023.pdf">slides</a>)</li>
     <li>DataShape Seminar, 2023 (<a href="/assets/files/slides/Porquerolles2023.pdf">slides</a>)</li>
     <li>Séminaire des doctorants de l'équipe <a href="https://www.imo.universite-paris-saclay.fr/fr/la-recherche/probabilites-et-statistiques/">Probabilité et Statististiques</a> de l'Institut de Mathématiques d'Orsay, 2023 (<a href="/assets/files/slides/BastienDussap%20-%20Pr%C3%A9sentation%20Doctorant.pdf">slides</a>)</li>
+    <li><a href="https://2023.ecmlpkdd.org/">ECML/PKDD 2023</a>, <i>Label Shift Quantification with Robustness Guarantees via Distribution Feature Matching (RT Track – Best paper Runner-Up)</i></li>
 </ul>
 
 
 ## Poster presentations
 <ul>
-    <li><a href="https://2023.ecmlpkdd.org/">ECML/PKDD 2023</a>, <i>Label Shift Quantification with Robustness Guarantees via Distribution Feature Matching</i> </li>
+    <li><a href="https://2023.ecmlpkdd.org/">ECML/PKDD 2023</a>, <i>Label Shift Quantification with Robustness Guarantees via Distribution Feature Matching (RT Track – Best paper Runner-Up)</i>, <a href="/assets/files/slides/Poster - ECML2023.pdf">Poster</a></li>
 </ul> 
 
 # Teaching
