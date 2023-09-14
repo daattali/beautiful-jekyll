@@ -56,8 +56,8 @@ function renderNavigation() {
 		desktopXml += `<li class="nav-link" ${LINK_KEY}="${item.link}">${item.label}</li>`;
 	});
 
-	mobileXml += `<li class="nav-link" ${LINK_KEY}=""><a href="https://www.topcv.vn/xem-cv/VVJaVFMFB1UBAgwCBFFRAldXCQJQU1ZSAVNUBg5be6" target="_blank"><i class="fas fa-file-pdf"></i></a></li>`;
-	desktopXml += `<li class="nav-link" ${LINK_KEY}=""><a href="https://www.topcv.vn/xem-cv/VVJaVFMFB1UBAgwCBFFRAldXCQJQU1ZSAVNUBg5be6" target="_blank">My CV</a></li>`;
+	mobileXml += `<li class="nav-link" ${LINK_KEY}=""><a href="https://www.topcv.vn/xem-cv/BVEACFFUWlZXDVZUCQAAAlVUVgFWUlUDVg9SXA8530" target="_blank"><i class="fas fa-file-pdf"></i></a></li>`;
+	desktopXml += `<li class="nav-link" ${LINK_KEY}=""><a href="https://www.topcv.vn/xem-cv/BVEACFFUWlZXDVZUCQAAAlVUVgFWUlUDVg9SXA8530" target="_blank">My CV</a></li>`;
 
 	$('#mobileNavLinks').html(mobileXml);
 	$('#desktopNavLinks').html(desktopXml);

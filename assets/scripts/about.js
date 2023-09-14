@@ -1,13 +1,13 @@
 const INTRODUCES = [
-	'🤵 I graduated at DUT - Danang University of Technology. My major is Control Engineering and Automation.',
-	'👨‍💻  I have been learning web programming for 6 months.',
-	'🎯 Future Goals: Learn more technologies. Learning to become a full-stack developer.',
+	'🤵 I graduated at DUT - Danang University of Technology. My major is Control Engineering and Automation',
+	'👨‍💻  I\'m a Front-end Developer',
+	'🎯 Future Goals: Learn more technologies. Learning to become a full-stack developer',
 ];
 
 const SKILLS = [
 	{
 		label: 'Front-end Technologies',
-		content: 'ReactJS, HTML5, CSS3, SCSS, Redux,',
+		content: 'HTML5, CSS3, SCSS, ReactJS, Vue, Javascript, Typescript',
 	},
 	{
 		label: 'Embedded Technologies',
@@ -19,11 +19,11 @@ const SKILLS = [
 	// },
 	{
 		label: 'Development Tools / Teamwork Tools',
-		content: 'Git, Github, Notion, VSCode.',
+		content: 'Vscode, Git, Backlog',
 	},
 	{
 		label: 'Others',
-		content: 'Basic design skill Office tool.',
+		content: 'Docker, Linux system',
 	},
 ];
 

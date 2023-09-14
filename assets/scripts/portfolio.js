@@ -5,7 +5,7 @@ const OPTIONS = [
 	{
 		key: 'all',
 		label: 'All',
-		title: 'All Projects',
+		title: 'All Projects (Updated soon)',
 	},
 	{
 		key: 'mern',
@@ -120,27 +120,24 @@ function renderProject(projects = []) {
 			<a class="cur-pointer show-detail" ${DETAIL_KEY}="${id}">
 				<i class="fas fa-info-circle project-icon"></i>
 			</a>
-			${
-				video && video !== ''
-					? `<a href="${video}" target="_blank">
+			${video && video !== ''
+				? `<a href="${video}" target="_blank">
 							<i	i class="fas fa-play-circle project-icon"></i>
 						</a>`
-					: ''
+				: ''
 			}
-			${
-				github && github !== ''
-					? `	<a href="${github}" target="_blank">
+			${github && github !== ''
+				? `	<a href="${github}" target="_blank">
 								<i class="fab fa-github project-icon"></i>
 						</a>`
-					: ''
+				: ''
 			}
-		${
-			liveDemo && liveDemo !== ''
+		${liveDemo && liveDemo !== ''
 				? `<a href="${liveDemo}" target="_blank">
 					<i class="fas fa-eye project-icon"></i>
 				</a>`
 				: ''
-		}
+			}
 
 		</div>
 	</div>

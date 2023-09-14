@@ -13,7 +13,7 @@ const CONTACT_INFOS = [
 	},
 	{
 		label: 'Graduate',
-		content: 'Danang University of Technology HCM City (DUT)',
+		content: 'Danang University of Technology (DUT)',
 	},
 	{
 		label: 'Major',
@@ -28,7 +28,7 @@ const CONTACT_INFOS = [
 const CONTACT_SOCIAL_NETWORKS = [
 	{
 		label: 'Phone',
-		content: '(+84) xxxxxxxxx',
+		content: '(+84) 949370348',
 		link: '#',
 		iconClass: 'fas fa-phone-square-alt',
 	},
@@ -81,14 +81,14 @@ function renderSocialNetworks() {
 		xml += `<li>
       <i class="${item.iconClass} contact-icon"></i>
       <span class="label">${item.label}:&nbsp;&nbsp;</span>
-      <a href="${item.link}" class="link content">${item.content}</a>
+      <a href="${item.link}" target="_blank" class="link content">${item.content}</a>
     </li>`;
 	});
 
 	xml += `<li>
 	<i class="fas fa-download contact-icon"></i>
 	<span class="label">Download My CV:&nbsp;&nbsp;</span>
-	<a href="https://www.topcv.vn/xem-cv/VVJaVFMFB1UBAgwCBFFRAldXCQJQU1ZSAVNUBg5be6" class="link content" target="_blank">Link</a>
+	<a href="https://www.topcv.vn/xem-cv/BVEACFFUWlZXDVZUCQAAAlVUVgFWUlUDVg9SXA8530" class="link content" target="_blank">Link</a>
 </li>`;
 
 	$('#contactSocialNetwork').html(xml);

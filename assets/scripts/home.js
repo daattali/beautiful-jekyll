@@ -19,10 +19,6 @@ const SOCIAL_LIST = [
     link: "https://www.instagram.com/namlhh/",
     iconClass: "fab fa-instagram-square",
   },
-  {
-    link: "https://nhim411.github.io",
-    iconClass: "fas fa-blog",
-  },
 ];
 
 $(document).ready(function () {
