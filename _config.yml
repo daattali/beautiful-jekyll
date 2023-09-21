@@ -23,6 +23,7 @@ navbar-links:
   News: "news"
   ZD Marketplace: "TODO"
   Report issues: "https://github.com/djmartins88/zd_handy_notes/issues"
+  Terms & Conditions: "terms"
   Resources:
     - Learn markdown: "https://www.markdowntutorial.com/"
 
