@@ -9,13 +9,13 @@ throughout the year.
 
 # Getting started
 
-Our official web site is http://rmsmath.sharplogic.com. This site includes our coaching session schedule, 
+Our official web site is [https://rmsmath.sharplogic.com](https://rmsmath.sharplogic.com). This site includes our coaching session schedule, 
 homework assignments, competition schedule, and more. It also includes links to most of the resources listed 
 here, so this should be the first place you go when looking for information. Please don't email the chair or 
 coaches for something that is already published on the site.
 
-We have two videos published to our YouTube channel that are highly recommended for new members. Our math 
-club overview explains the program and the virtual parent night talks about our plans for this year.
+If you're new to the math club, you should check out our [overview video on YouTube](https://www.youtube.com/watch?v=HP58Q_IAsq8&ab_channel=RedmondMiddleSchoolMathClub)
+that explains the overall philosophy of the club and how we work to help everyone grow.
 
 # Email
 
