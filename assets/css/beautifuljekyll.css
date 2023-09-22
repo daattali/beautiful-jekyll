@@ -186,8 +186,6 @@ p, div, h2, h3, h4, h5, h6, li {
 }
 
 .navbar-custom .navbar-nav .nav-link {
-  padding-top: 0;
-  padding-bottom: 0;
   line-height: 1.25rem;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem;
