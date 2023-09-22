@@ -6,9 +6,10 @@ subtitle: Our competition calendar
 
 Competition schedule coming soon!
 
-<!--| Date                  | Competition		| Time & Location | Registration | Registration Deadline
+| Date                  | Competition		| Time & Location | Registration | Registration Deadline
 | -----------           | --------            | --- | ----- | --- |
-|November 10, 2022      | [AMC 10A](/amc) | 2:50-4:30 RMS Library | Closed | October 25, 2022
+|November 8, 2023      | [AMC 10A](/amc) | 4:30-5:30 RMS Library | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B571B3375-9DF4-42A2-B345-8313C7182EEF%7D&file=Competitions%20%26%20Teams.xlsx) | October 24, 2023
+<!--
 |November 16, 2022      | [AMC 10B](/amc) | 1:20-3:00 RMS Library | Closed | October 25, 2022
 |December 7, 2022       | [Mathcrafters](https://www.mathcrafters.com/Play/Watch/1) | 1:10-3:30 RMS Commons | -- | --
 |January 11, 2023		| [Mathcounts School Round](/mathcounts) |  1:20-2:30 RMS Commons | Closed | January 6, 2023
