@@ -34,7 +34,7 @@ R&R, **_American Journal of Political Science_**.
 Previously (briefly) titled "The Oligarch's Offshore Dilemma."
 
 [Spillover Effects in International Law: Evidence from Tax Planning](assets/taxplanning_WP.pdf) <br>
-David A. Lake Award for best paper presented at IPES 2020.
+David A. Lake Award for best paper presented at IPES 2020. Under Review.
 
 [Does Transparency Improve Public Policy? Evidence from a Tax Incentive Transparency Initiative](assets/gasb_anon_bjps.pdf) (with Nathan M. Jensen)<br>
 Under Review.
