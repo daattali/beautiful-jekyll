@@ -4,55 +4,42 @@ title: Coaching sessions
 subtitle: Weekly coaching sessions at RMS
 ---
 
-**For the forseeable future, all sessions will be held over Microsoft Teams and all rooms are open to everyone. 
-See [the schedule](/schedule) for details. The information below is a reference for how in-person sessions were run in
-past years. Please note that exact details are subject to change if/when we return to in-person sessions.**
-
 RMS Math Club membership is available to all students at Redmond Middle School. We provide coaching for students at
 every level of experience in order to foster an environment of skill development. Learn more about 
 [joining](/) and the [session schedule](/schedule).
 
 # Expectations
-Math club members are expected to regularly attend our weekly coaching sessions on Fridays from 2:50-4:00 in Red Cedar pod.
+Math club members are expected to regularly attend our weekly coaching sessions in the RMS Commons.
 They are also expected to complete and bring their Math Club-assigned homework each week. There are no special performance
 expectations beyond participation. We recognize that every student develops at their own pace and try to provide a
 positive and productive experience for everyone.
 
-Our coaching sessions are held across three rooms: Varsity, Club, and Homework.
+Our coaching sessions are held across three days: Monday, Wednesday, and Friday.
 
-# Varsity Room
-The Varsity room is for members of our Varsity group, which is an earn-in group formed within the math club.
-Membership qualification is objective and based purely on performance in math competitions.
-The focus of this group is to provide in-depth training on advanced topics for the students who have proven 
-results in middle school math competitions. Every sanctioned competition will provide an opportunity for any 
-student to earn their way into the group moving forward. Once in the group, weekly homework and attendance is
-mandatory, and those who do not participate are at risk of relegation. 
+# Monday - Fundamentals
 
-## Varsity Qualifiers
-- Top 10 in the RMS Math Club Benchmark or Final exams
-- Honor Roll of Distinction (top 1%) on the AMC 8
-- Certificate of Achievement on the AMC 10
-- Making the RMS Mathcounts team (top 10 in school round)
-- Making an RMS Math is Cool Masters team (top 4 from RMS grade in Math is Cool regional)
-- Individual placement (trophy-level) in sanctioned events like Math is Cool, Knights of Pi, or the Washington State Math Championships
+The focus of the Monday sessions is to focus on developing a better foundation in that week's topic, such as
+triangle geometry, factorials, probability, and more. The homework assignment is a single 10-question "stretch"
+from our homework packet. Just do the best you can because coaches will go over all the questions for everyone.
 
-# Club Room
-Non-Varsity students will be split each week based on their homework performance for the weekly topic.
-Those who have completed the homework and demonstrated a mastery of the subject will join the Club room
-for more advanced training on that topic. The focus of the Club room is to prepare students to tackle
-challenging competition problems. Please remind your student that homework completion is mandatory to
-attend the Club room, so they need to bring it with them each week.
+# Wednesday - Competition Training
 
-# Homework Room
-Those who did not complete the homework-or those who need help with the topic-will attend the Homework room.
-The focus of the Homework room is to help the students build a better foundation in that week’s topic so they
-can feel more confident in tackling future homework assignments. The coach will work through each of the
-homework questions and cover additional enrichment as time permits.
+The focus of the Wednesday sessions is to prepare students to tackle challenging competition problems. The homework due
+at each Wednesday session is from a past competition. Given the challenge of these problems, it's expected that members
+will struggle with some/most of the questions. As a result, the homework is to _attempt_ the assignment so that they have
+familiarity with the more challenging questions and can get more out of the coaching.
+
+# Friday - Various Activities
+
+Friday sessions will vary from week to week and may not be held every week. These sessions will range from internal exams
+to mock competitions to gaming parties and more. Please check your email and the [session schedule](/schedule) page for the latest details.
 
 # Competitions & Teams
-All students are encouraged-but not required-to participate in all eligible competitions.
-Parents are responsible for forming teams, which may draw from both the Varsity and Club members.
-Signup spreadsheets will be provided to help parents in forming teams on a per-competition basis.
+All students are encouraged–but not required–to participate in all eligible competitions. Parents are responsible for forming teams, 
+which are usually restricted to up to four students from the same grade. Exact rules vary, so be sure to read the emails and check the
+schedule and competition site. Use the 
+[signup spreadsheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B571B3375-9DF4-42A2-B345-8313C7182EEF%7D&file=Competitions%20%26%20Teams.xlsx)
+to coordinate with other members/parents in forming teams on a per-competition basis.
 
 # Parent Proctors
 We are required to staff each room with a parent proctor for the duration of each math club meeting.
