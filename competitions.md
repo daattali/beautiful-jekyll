@@ -8,6 +8,14 @@ subtitle: Our competition calendar
 | -----------           | --------            | --- | ----- | --- |
 | November 8, 2023      | [AMC 10A](/amc) | 4:30-5:30 RMS Library | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B571B3375-9DF4-42A2-B345-8313C7182EEF%7D&file=Competitions%20%26%20Teams.xlsx) | October 24, 2023
 | November 14, 2023      | AMC 10B |  | | October 31, 2023
+|       | Mathcrafters |  | | 
+|      | Mathcounts School Round |  | | December 13, 2023
+| January 18 to 24, 2024      | AMC 8 |  | | December 16, 2023
+| February, 2024      | Mathcounts Chapter Round |  | | By Invitation
+| February 10, 2024      | Math is Cool Regionals | Liberty High School | | Jan 11, 2024
+| March, 2024      | Mathcounts State Round |  | | By Invitation
+|       | Math is Cool Masters  |  | | By Invitation
+|       | Mustang Math  |  | | 
 
 <!--
 |November 16, 2022      | [AMC 10B](/amc) | 1:20-3:00 RMS Library | Closed | October 25, 2022
