@@ -7,6 +7,7 @@ subtitle: Our competition calendar
 | Date                  | Competition		| Time & Location | Registration | Registration Deadline
 | -----------           | --------            | --- | ----- | --- |
 | November 8, 2023      | [AMC 10A](/amc) | 4:30-5:30 RMS Library | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B571B3375-9DF4-42A2-B345-8313C7182EEF%7D&file=Competitions%20%26%20Teams.xlsx) | October 24, 2023
+| November 14, 2023      | AMC 10B |  | | October 31, 2023
 
 <!--
 |November 16, 2022      | [AMC 10B](/amc) | 1:20-3:00 RMS Library | Closed | October 25, 2022
