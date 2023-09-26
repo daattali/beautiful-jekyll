@@ -30,6 +30,9 @@ members:
           - name: Jenny Wang
             photo_url: https://www.ri.cmu.edu/app/uploads/2021/07/Wang_Jenny-scaled.jpg
             web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
+          - name: Yilin Wu
+            photo_url: https://yilin-wu98.github.io/images/yilinwu_photo.jpg
+            web_url: https://yilin-wu98.github.io/
       - name: Masters students
         full: true
         list:
