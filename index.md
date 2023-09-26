@@ -19,7 +19,7 @@ More information about this year's math club will be available after parent nigh
 4. Your parent and student emails will be added as guests to the RMS PTSA Math Club group so you can access 
 the PTSA Office 365 portal. The first round of accounts and kickoff email will be sent in early October.
 
-5. Become an <a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a> and volunteer to [proctor](https://www.signupgenius.com/go/10C0F49AAAE22A5F4CF8-coaching2).
+5. Become an <a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a>.
 
 6. Opt in to [competitions](/competitions).
 
