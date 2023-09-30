@@ -52,11 +52,9 @@ round-avatar: true
 social-network-links:
   email: "jjh_0213@naver.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  # facebook: deanattali
+# facebook: deanattali
   github: 213JJH
-  # twitter: daattali
-  # patreon: DeanAttali
-  # youtube: c/daattali
+# youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
