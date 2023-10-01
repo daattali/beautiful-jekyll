@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: 인턴
+subtitle: mango bingsu joa
 ---
 
 ### My name is Dana Kim. 
