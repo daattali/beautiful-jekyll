@@ -15,34 +15,36 @@ The Mathcounts Toolkit can be downloaded [here](/files/Mathcounts%20Toolkit.pdf)
 
 _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then that takes precedence over this schedule.
 
-| Week Of	| Fundamentals (Mon 4:30-5:30)		| Competition Training (Wed 3:30-4:30)  | Variety (Fri 4:30-5:30) |
-| ----------|-------------			| ----------- | ----------- |
-| 31-Oct	| Factorials			| TBD | TBD |
-| 7-Nov 	| Right Triangles	| TBD | TBD |
-| 14-Nov	| Probability			| TBD | TBD |
-| 21-Nov	| Fractions				| TBD | TBD |
-| 28-Nov	| Area					  | TBD | TBD |
-| 5-Dec		| Patterns				| TBD | TBD |
-| 12-Dec	| Work					  | TBD | TBD |
-| 19-Dec	| _No School_    	| TBD | TBD |
-| 26-Dec	| _No School_			| TBD | TBD |
-| 2-Jan		| _No School_ 		| TBD | TBD |
-| 9-Jan		| Counting				| TBD | TBD |
-| 16-Jan	| _No School_			| TBD | TBD |
-| 23-Jan	| Circles				  | TBD | TBD |
-| 30-Jan	| Similarity			| TBD | TBD |
-| 6-Feb		| Pascal's Triangle	| TBD | TBD |
-| 13-Feb	| Logic					  | TBD | TBD |
-| 20-Feb	| _No School_ 		| TBD | TBD |
-| 27-Feb	| Sequences				| TBD | TBD |
-| 6-Mar	  | Systems of Equations | TBD | TBD |
-| 13-Mar	| Travel    			| TBD | TBD |
-| 20-Mar	| _Cancelled_			| TBD | TBD |
-| 27-Mar	| Angles and Arcs	| TBD | TBD |
-| 3-Apr		| Expected Value	| TBD | TBD |
-| 10-Apr	| _No School_			|  _No School_ | _No School_ |
-| 17-Apr	| Surface Area & Volume | TBD | TBD |
-| 24-Apr	| Bases					| TBD | TBD |
+Sessions in (parentheses) are competitions. Only attend if you are [registered for that competition](/competitions).
+
+| Week Of	| Fundamentals (Mon 4:30-5:30)		| Competition Training (Wed 3:30-4:30)  | Variety (Fri 4:30-5:30)   |
+| ------- | ------------------------------- | ------------------------------------- | ------------------------- |
+| 30-Oct	| Factorials			                |                                       |                           |
+| 6-Nov 	| Right Triangles                	| (AMC 10A)                             | _No School_               |
+| 13-Nov	| Probability	                		|                                       |                           |
+| 20-Nov	| Fractions		                		| _Half Day_                            | _No School_               |
+| 27-Nov	| Area				                	  |                                       |                           |
+| 4-Dec		| Patterns		                		|                                       |                           |
+| 11-Dec	| Work				                	  |                                       |                           |
+| 18-Dec	| _No School_                    	| _No School_                           | _No School_               |
+| 25-Dec	| _No School_	                		| _No School_                           | _No School_               |
+| 1-Jan		| _No School_ 	                	|                                       |                           |
+| 8-Jan		| Counting		                		|                                       | (Mathcounts School Round) |
+| 15-Jan	| _No School_		                	|                                       | (AMC 8)                   |
+| 22-Jan	| Circles				                  |                                       |                           |
+| 29-Jan	| Similarity		                	|                                       |                           |
+| 5-Feb		| Pascal's Triangle              	|                                       |                           |
+| 12-Feb	| Logic					                  |                                       | _No School_               |
+| 19-Feb	| _No School_ 	                	|                                       |                           |
+| 26-Feb	| Sequences			                	|                                       |                           |
+| 4-Mar	  | Systems of Equations            |                                       | _No School_               |
+| 11-Mar	| Travel                    			|                                       |                           |
+| 18-Mar	| Mixture                   			|                                       |                           |
+| 25-Mar	| Angles and Arcs                	|                                       |                           |
+| 1-Apr		| Expected Value                	|                                       |                           |
+| 8-Apr 	| _No School_		                	|  _No School_                          | _No School_               |
+| 15-Apr	| Surface Area & Volume           |                                       |                           |
+| 22-Apr	| Bases				                    |                                       |                           |
 
 [2022-2023 schedule](/schedule-2223.md)
 
