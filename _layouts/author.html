@@ -1,0 +1,31 @@
+---
+layout: page
+title: {{ page.name }}
+---
+
+{% if page.picture %}
+    <center><img class="author-profile-image" src="/{{ page.picture }}" alt="{{ page.name }}" width="200" height="200" /></center>
+{% endif %}
+<h1 class="site-title">{{ page.name }}</h1>
+{% if page.bio %}
+    <div class="author-bio">{{ page.bio }}</div>
+{% endif %}
+{% if page.location %}
+    <div class="author-location">{{ page.location }}</div>
+{% endif %}
+
+{% assign number_of_posts = 0 %}
+{% for post in site.posts %}
+    {% if post.authors contains page.username or page.username == post.author %}
+        {% assign number_of_posts = number_of_posts | plus: 1 %}
+    {% endif %}
+{% endfor %}
+{% if number_of_posts == 0 %}No posts{% elsif number_of_posts == 1 %}1 post{% else %}{{ number_of_posts }} posts{% endif %}
+
+<ul>
+{% for post in site.posts %}
+    {% if post.authors contains page.username or page.username == post.author %}
+       <li> <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>

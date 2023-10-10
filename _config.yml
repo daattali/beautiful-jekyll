@@ -274,7 +274,15 @@ defaults:
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
-      layout: "page"
+      layout: "page" 
+  - 
+    scope:
+      path: ""
+      type: authors #Create /authors/<author-names>.html
+    values:
+      layout: author
+      permalink: /authors/:slug
+
 
 # Exclude these files from production site
 exclude:
@@ -290,6 +298,10 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+
+collections:
+  authors:
+    output: true #output authors web pages
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
