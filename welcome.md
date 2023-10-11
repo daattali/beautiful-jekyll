@@ -79,7 +79,7 @@ Please update the information for your status on these competitions ahead of the
 If you don't see a competition listed, then it's not one we officially support. Generally speaking, 
 we support major national competition series like the AMC series and Mathcounts. We also support 
 regional team competitions like Math Is Cool. If you'd like to recommend a competition, please let us know
-at mathclubchair@rmsptsa.org. Everyone is encouraged to participate in whatever 
+at [mathclubchair@rmsptsa.org](mailto:mathclubchair@rmsptsa.org). Everyone is encouraged to participate in whatever 
 competitions they find interesting, even if participation isn't managed by the club. 
 No competition is required.
 
