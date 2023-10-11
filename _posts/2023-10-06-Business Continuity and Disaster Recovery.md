@@ -41,7 +41,7 @@ As mentioned previously, both framework aim at protecting workloads availability
 
 ### Disaster Recovery
 
-In most virtual environments, Disaster Recovery happens through the use of replication technologies such as BDRSuite which allows you to replicate VMs from a primary site to a secondary site, ensuring that all your data and applications are available in the event of a disaster or downtime. Once the virtual machines are replicated, [BDRSuite](http://www.vxav.fr/img/BDRSuite_Banner3.png) monitors the primary site for changes and automatically replicates any updates to the secondary site. This ensures that the secondary site is always up-to-date and ready for use in the event of a disaster.
+In most virtual environments, Disaster Recovery happens through the use of replication technologies such as BDRSuite which allows you to replicate VMs from a primary site to a secondary site, ensuring that all your data and applications are available in the event of a disaster or downtime. Once the virtual machines are replicated, [BDRSuite](https://www.bdrsuite.com/) monitors the primary site for changes and automatically replicates any updates to the secondary site. This ensures that the secondary site is always up-to-date and ready for use in the event of a disaster.
 
 One of the key metrics is the Recovery Point Objective (RPO) which dictates the frequency of replications, a.k.a. the amount of acceptable data loss. BDRSuite allows you to replicate the changes on the VM in primary site to replica VM on different site as often as every 15 mins or hourly/daily/weekly.
 
@@ -100,4 +100,4 @@ In this blog about disaster recovery and business continuity, we've learned why 
 
 From risk assessment to recovery planning, these practices create a framework for resilience. Real-world examples illustrate their importance as these principles are not just wise but crucial. They protect reputation, data, and customer service.
 
-As we wrap up, check out [BDRSuite Backup and Replication](http://www.vxav.fr/img/BDRSuite_Banner3.png) to take the first steps to bolster your organization's readiness.
+As we wrap up, check out [BDRSuite Backup and Replication](https://www.bdrsuite.com/) to take the first steps to bolster your organization's readiness.
