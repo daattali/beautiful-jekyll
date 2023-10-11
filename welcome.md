@@ -17,7 +17,7 @@ coaches for something that is already published on the site.
 If you're new to the math club, you should check out our [overview video on YouTube](https://www.youtube.com/watch?v=HP58Q_IAsq8&ab_channel=RedmondMiddleSchoolMathClub)
 that explains the overall philosophy of the club and how we work to help everyone grow.
 
-# Email
+# Email Notifications
 
 When students are registered for math club, the student email provided and the PTSA parent email are added 
 to the MathClub group in the PTSA Office 365 account. All important math club emails will be sent to that 
@@ -54,8 +54,9 @@ meeting. You must have a PTSA membership and be a LWSD-approved volunteer, which
 covers you for two years. See our 
 [proctor instructions](/parents).
 
-You can sign up for proctoring slots using our [SignupGenius link](https://www.signupgenius.com/go/70A0F4CABAF22A1FE3-45129095-rmsmath#/). The curriculum and coaching are handled by
-our coaches, so the work is very light. You can also help out students if you're interested.
+You can sign up for proctoring slots using our [SignupGenius link](https://www.signupgenius.com/go/70A0F4CABAF22A1FE3-45129095-rmsmath#/). 
+The curriculum and coaching are handled by our coaches, so the work is very light. You can also help out students
+if you're interested.
 
 ## What if we don't have proctor volunteers?
 
@@ -65,7 +66,7 @@ Parent emails are available in the
 [competition sheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B571B3375-9DF4-42A2-B345-8313C7182EEF%7D&file=Competitions%20%26%20Teams.xlsx)
 if you need to find a replacement.
 
-Sessions will be cancelled in advance if we do not have proctors lined up by the previous Friday. 
+Sessions in the upcoming week will be cancelled in advance if we do not have proctors lined up by the previous Friday. 
 We used to try to find and/or accept last-minute replacements, but it never really worked so we won't
 support it this year. If you would like to step up as a semi-permenant proctor, please let us know at
 [mathclubchair@rmsptsa.org](mailto:mathclubchair@rmsptsa.org).
