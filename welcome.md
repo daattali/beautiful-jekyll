@@ -49,16 +49,17 @@ There are no separate schedule invites, so it's recommended you add a recurring 
 
 # Proctoring
 
-We are required to have an adult proctor for each club meeting. You must have a PTSA membership and be an 
-LWSD-approved volunteer, which is a simple online process that covers you for two years. See our 
+Proctoring is essential for the success of a club meeting. We are required to have an adult proctor for each club 
+meeting. You must have a PTSA membership and be a LWSD-approved volunteer, which is a simple online process that 
+covers you for two years. See our 
 [proctor instructions](/parents).
 
-You can sign up for proctoring slots on the volunteer sheet. The curriculum and coaching are handled by
+You can sign up for proctoring slots using our [SignupGenius link](https://www.signupgenius.com/go/70A0F4CABAF22A1FE3-45129095-rmsmath#/). The curriculum and coaching are handled by
 our coaches, so the work is very light. You can also help out students if you're interested.
 
 ## What if we don't have proctor volunteers?
 
-If the scheduled proctor does not show up to start a meeting, then that session will be cancelled. 
+If we don't have a proctor, or the scheduled proctor does not show up to start a meeting, then that session will be cancelled. 
 If you need to cancel, please find a replacement because we need to cancel the session otherwise. 
 Parent emails are available in the
 [competition sheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B571B3375-9DF4-42A2-B345-8313C7182EEF%7D&file=Competitions%20%26%20Teams.xlsx)
@@ -67,7 +68,7 @@ if you need to find a replacement.
 Sessions will be cancelled in advance if we do not have proctors lined up by the previous Friday. 
 We used to try to find and/or accept last-minute replacements, but it never really worked so we won't
 support it this year. If you would like to step up as a semi-permenant proctor, please let us know at
-mathclubchair@rmsptsa.org.
+[mathclubchair@rmsptsa.org](mailto:mathclubchair@rmsptsa.org).
 
 # Competitions
 
