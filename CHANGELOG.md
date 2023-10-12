@@ -4,7 +4,7 @@
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156) 
 - Added social network link for GitLab (#1168)
 - Added instructions and example on how to fix image links in project sites (#1171)
-- Added social network link for Bluesky
+- Added social network link for Bluesky (#1218)
 
 ## v6.0.1 (2023-06-08)
 
