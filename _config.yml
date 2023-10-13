@@ -257,12 +257,20 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 
-############################################################
-# Site configuration for the Jekyll 3 Pagination Gem
-# The values here represent the defaults if nothing is set
-pagination:
-  enabled: true
-  per_page: 5
+###############################################################################
+#           Site configuration for the Jekyll 3 Pagination Gem.               #
+#         The values here represent the defaults if nothing is set            #
+#                                                                             #
+#            This plugin is not supported on github pages.                    #
+#                                                                             #
+# You will also have to disable jekyll-paginate and enable jekyll-oaginate-v2 #
+# in the plugins configuration. You will need to edit the                     #
+# beautiful-jekyll-theme.gemspec to disable jeykell-paginate and enable       #
+# jeykll-paginate-v2                                                          #
+###############################################################################
+#pagination:
+#  enabled: true
+#  per_page: 5
 
 ############################################################
 
@@ -283,7 +291,15 @@ defaults:
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
-      layout: "page"
+      layout: "page" 
+  - 
+    scope:
+      path: ""
+      type: authors #Create /authors/<author-names>.html
+    values:
+      layout: author
+      permalink: /authors/:slug
+
 
 # Exclude these files from production site
 exclude:
@@ -298,7 +314,12 @@ exclude:
 
 plugins:
   - jekyll-paginate
+#  - jekyll-paginate-v2
   - jekyll-sitemap
+
+collections:
+  authors:
+    output: true #output authors web pages
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
