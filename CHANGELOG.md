@@ -3,7 +3,7 @@
 - BREAKING CHANGE: upgrade to use jekyll-paginate-v2. This will require a "bundle install" and "bundle clean" for current self-hosted installs. This requires Jekyll 3.0 or later (which should be everyone)
 - BREAKING CHANGE: Allow changing the order of the social network links that appear in the footer (#1152)
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156) 
-- Added social network link for GitLab (#1168)
+- Added social network links for GitLab, Bluesky (#1168, #1218)
 - Added instructions and example on how to fix image links in project sites (#1171)
 
 ## v6.0.1 (2023-06-08)
