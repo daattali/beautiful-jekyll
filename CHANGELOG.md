@@ -1,6 +1,7 @@
 ## Unreleased version
 
 - BREAKING CHANGE: Allow changing the order of the social network links that appear in the footer (#1152)
+- BREAKING CHANGE: `google-scholar` social network link no longer requires the prefix `citations?user=`; if you previously set this parameter, it needs to be updated (#1189)  
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156) 
 - Added social network links for GitLab, Bluesky (#1168, #1218)
 - Added instructions and example on how to fix image links in project sites (#1171)
