@@ -255,7 +255,15 @@ timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+# The values here represent the defaults if nothing is set
+pagination:
+  enabled: true
+  per_page: 5
+
+############################################################
 
 kramdown:
   input: GFM
@@ -296,7 +304,7 @@ exclude:
   - docs/
 
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
 
 collections:
