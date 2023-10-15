@@ -313,8 +313,8 @@ exclude:
   - docs/
 
 plugins:
-  - jekyll-paginate
-#  - jekyll-paginate-v2
+#  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
 
 collections:
