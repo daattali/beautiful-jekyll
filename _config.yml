@@ -20,6 +20,9 @@ author: Wurara - Giddens Ko
 ###############################################
 
 navbar-links:
+  guide:
+    - kadaza: "https://kadaza.com"
+    - buzzing: "https://buzzing.com"
   Developer Resources:
     - 算法动画: "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
     - leetcode刷题: "https://leetcode.com/explore/"
