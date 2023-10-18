@@ -17,7 +17,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sub Title", name: "subtitletitle", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Cover Image", name: "cover-img", widget: "image", optional: true}
-      - {label: "Thumbnail Image", name: "thumbnail-img", widget: "image", optional: true}
+      - {label: "Cover Image", name: "cover-img", widget: "image", required: false}
+      - {label: "Thumbnail Image", name: "thumbnail-img", widget: "image", required: false}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
