@@ -23,6 +23,8 @@ navbar-links:
   guide:
     - kadaza: "https://kadaza.com"
     - buzzing: "https://buzzing.com"
+    - 程序员客栈: "https://www.proginn.com"
+    - 码市: "https://www.codemart.com"
   Developer Resources:
     - 算法动画: "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
     - leetcode刷题: "https://leetcode.com/explore/"
