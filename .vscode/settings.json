@@ -11,4 +11,7 @@
         "MIIC",
         "Waukesha"
     ],
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "master"
+    ],
 }
