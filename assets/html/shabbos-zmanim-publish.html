@@ -126,16 +126,15 @@
                     <p>שחרית: 8:40</p>
                     <p>שוכן עד: 9:00</p>
                     <p class="note">דף היומי עם כיבוד קל <br> לאחר התפילה</p>
-                    <p>אבות ובנים: 17:30</p>
-                    <p>מנחה: 18:00</p>
-                    <p>מעריב וצאת שבת: <span id="maariv"></span></p>
-                    <p>מעריב ב'</small>: <span id="maarivB"></span></p>
+                    <p>אבות ובנים: 17:00</p>
+                    <p>מנחה: 17:30</p>
+                    <p>צאת שבת: <span id="maariv"></span></p>
                 </div>
             </div>
             <div class="row">
                 <h2>ימי חול</h2>
                 <p class="withcomment">שחרית: 6:30</p>
-                <p>ערבית ולימוד דף יומי: 20:15</p>
+                <p>לימוד דף יומי: 20:15</p>
                 <small>התפילות בחול יתקיימו בחניית בניין 13</small>
 
 
@@ -183,7 +182,7 @@
                         // add 15 minutes to havdalah time
                         let maarivB = new Date(element.date);
                         maarivB.setMinutes(maarivB.getMinutes() + 15);
-                        document.getElementById("maarivB").innerHTML = maarivB.toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
+                        // document.getElementById("maarivB").innerHTML = maarivB.toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
 
                         break;
 
