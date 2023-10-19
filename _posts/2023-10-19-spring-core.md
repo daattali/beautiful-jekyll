@@ -1,3 +1,14 @@
+---
+layout: post
+title: springcore
+subtitle: springframework
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [srping,java,doc]
+---
+
+
 ## srping-core
 
 ### 1. Ioc容器
