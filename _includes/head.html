@@ -25,8 +25,10 @@
 
   <title>{{ title }}</title>
 
-  {% if site.author %}
-  <meta name="author" content="{{ site.author }}">
+  {% if page.author %}
+    <meta name="author" content="{{ page.author | strip_html }}">
+  {% elsif site.author %}
+    <meta name="author" content="{{ site.author }}">
   {% endif %}
 
   <meta name="description" content="{{ description }}">

@@ -492,6 +492,13 @@ footer .footer-custom-content {
 .post-heading .post-meta {
   display: inline-block;
 }
+
+.post-heading .post-meta .post-author,
+.post-preview .post-meta .post-author {
+  font-weight: bold;
+  color: #404040;
+}
+
 @media (max-width: 767px) {
   .post-heading .post-meta {
     display: block;
