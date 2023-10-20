@@ -34,6 +34,9 @@ Invited talks
     <li>Séminaire des doctorants de l'équipe <a href="https://www.imo.universite-paris-saclay.fr/fr/la-recherche/probabilites-et-statistiques/">Probabilité et Statististiques</a> de l'Institut de Mathématiques d'Orsay, 2023 (<a href="/assets/files/slides/BastienDussap%20-%20Pr%C3%A9sentation%20Doctorant.pdf">slides</a>)</li>
     <li><a href="https://2023.ecmlpkdd.org/">ECML/PKDD 2023</a>, <i>Label Shift Quantification with Robustness Guarantees via Distribution Feature Matching (RT Track – Best Student Paper)
     </i>(<a href="/assets/files/slides/BastienDussap - ECML.pdf">slides</a>)</li>
+    <li>Workshop 
+    <i><a href=https://project.inria.fr/fastbig/stats-workshop-october-19th-2023>Efficient Statistical Testing for high-dimensional model (FAST-BIG)</a></li> (<a href="/assets/files/slides/BastienDussap - Workshop FASTBIG 2023.pdf">slides</a>)
+    </li>
 </ul>
 
 
