@@ -4,10 +4,10 @@
 title: Fur Squared
 
 # Short description of your site
-description: "Fur Squared 2023: Coming Soon!"
+description: "Fur Squared 2024: World of Innovation"
 
 # Your name to show in the footer
-author: Fur Squared
+author: Two Ferrets Co. dba Fur Squared
 
 url: "https://fursquared.com"
 
@@ -41,7 +41,7 @@ navbar-links:
 avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
