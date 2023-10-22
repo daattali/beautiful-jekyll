@@ -15,23 +15,23 @@ url: "https://fursquared.com"
 
 navbar-links:
   Convention:
-    - Registration: "registration"
-    - Programming: 'programming'
+  # - Registration: "registration"
+  # - Programming: 'programming'
     - Dealer's Den: "dealers"
-    - Video Games: "video-games"
+  # - Video Games: "video-games"
   Info:
-    - About: "about"
-    - Hotel: "hotel"
-    - Guest of Honor: "goh"
-    - Code of Conduct: "code-of-conduct"
-    - Covid Policy: "covid-policy"
+  # - About: "about"
+  # - Hotel: "hotel"
+  # - Guest of Honor: "goh"
+  # - Code of Conduct: "code-of-conduct"
+  # - Covid Policy: "covid-policy"
   Join The Fun:
-    - Volunteer: "volunteer"
+  # - Volunteer: "volunteer"
     - Dealers Den: "dealers"
-    - Night Market: "night-market"
-    - Dance Events: "dance-events"
-    - Artist Alley: "artist-alley"
-  Contact Us: "contact"
+  #  - Night Market: "night-market"
+  #  - Dance Events: "dance-events"
+  #  - Artist Alley: "artist-alley"
+  # Contact Us: "contact"
 
 
 # --- Logo --- #
@@ -105,22 +105,22 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#2a194d"
-navbar-text-col: "#64CE70"
+navbar-col: "#3B1700"
+navbar-text-col: "#FFE0CC"
 navbar-logo-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
 
 page-col: "#995C44"
 page-text-col: "#FFFFFF"
-header-col: "#64CE70"
+header-col: "#FFE0CC"
 link-col: "#FFDDA8"
 hover-col: "#A87242"
 selection-col: "#FFDDA8"
-selection-bg-col: "#64CE70"
+selection-bg-col: "#FFE0CC"
 
-button-col: "#2a194d"
-button-bg-col: "#64CE70"
-button-hover-col: "#2a194d"
+button-col: "#692800"
+button-bg-col: "#FFE0CC"
+button-hover-col: "#692800"
 button-bg-hover-col: "#FFFFFF"
 
 footer-col: "#3B1700"
