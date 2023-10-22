@@ -38,7 +38,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/2024/Avatar-for-Twitter-Temp.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: false
@@ -83,13 +83,14 @@ social-network-links:
 # Select which social network share links to show in posts
 share-links-active:
   twitter: true
+  mastodon: true
   facebook: false
   linkedin: false
   vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "fursquared.com"
+url-pretty: "FurSquared.com"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -104,42 +105,30 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-#417f5e dark green
-#f8e780 yellow
-#f05123 orange
-#ccce92 tan green
-#c2ce9d light green?
-
-navbar-col: "#417f5e"
-navbar-hover-bg-col: "#34664b"
-navbar-text-col: "#f8e780"
-navbar-text-hover-col: "#f37a58"
+navbar-col: "#2a194d"
+navbar-text-col: "#64CE70"
 navbar-logo-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
-navbar-toggler-bg-col: "#f8e780"
-navbar-toggler-open-bg-col: "#f37a58"
-navbar-toggler-icon-filter: "none"
-navbar-toggler-icon-open-filter: "none"
 
-page-col: "#F8E780"
-page-text-col: "#417F5E"
-header-col: "#417f5e"
-link-col: "#F05123"
-hover-col: "#f37a58"
-selection-col: "#f05123"
-selection-bg-col: "#FFFFFF"
+page-col: "#995C44"
+page-text-col: "#FFFFFF"
+header-col: "#64CE70"
+link-col: "#FFDDA8"
+hover-col: "#A87242"
+selection-col: "#FFDDA8"
+selection-bg-col: "#64CE70"
 
-button-col: "#FFFFFF"
-button-bg-col: "#417f5e"
-button-hover-col: "#417f5e"
-button-bg-hover-col: "#417f5e"
+button-col: "#2a194d"
+button-bg-col: "#64CE70"
+button-hover-col: "#2a194d"
+button-bg-hover-col: "#FFFFFF"
 
-footer-col: "#F8E780"
-footer-text-col: "#417F5E"
-footer-link-col: "#F05123"
+footer-col: "#3B1700"
+footer-text-col: "#FFFFFF"
+footer-link-col: "#FFDDA8"
 footer-icon-col: "#FFFFFF"
-footer-icon-fill-col: "#417F5E"
-footer-icon-hover-col: "#417F5E"
+footer-icon-fill-col: "#8C5A2B"
+footer-icon-hover-col: "#A87242"
 footer-icon-fill-hover-col: "white"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
@@ -148,7 +137,7 @@ footer-icon-fill-hover-col: "white"
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
-blog-img: "/assets/img/furassic-park-logo-colored-min.png"
+blog-img: "/assets/img/2024/Avatar-for-Twitter-Temp.png"
 
 # --- Web Statistics Section --- #
 
