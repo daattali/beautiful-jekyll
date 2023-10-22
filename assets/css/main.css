@@ -101,7 +101,7 @@ hr.small {
 
 .button {
   display: inline-block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times New Roman', serif;
   font-size: 0.875rem;
   color: {{ site.button-col | default: "white" }};
   background-color: {{ site.button-bg-col | default: "black" }};
@@ -174,7 +174,7 @@ img {
 .navbar-custom {
   background-color: {{ site.navbar-col | default: "#F5F5F5" }};
   border-bottom: 1px solid {{ site.navbar-border-col | default: "#EAEAEA" }};
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
   {% if site.navbar-img %}
     background-image: url({{ site.navbar-img | relative_url }});
     background-attachment: fixed;
@@ -499,7 +499,7 @@ footer .list-inline {
   margin-bottom: 1.875rem;
 }
 footer .copyright {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
@@ -511,7 +511,7 @@ footer .theme-by {
 footer .footer-custom-content {
   text-align: center;
   margin-bottom: 0.9375rem;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
 }
 
 @media (min-width: 768px) {
@@ -578,7 +578,7 @@ footer .footer-custom-content {
   margin: 0 0 0.625rem;
 }
 .post-preview .post-entry {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
 }
 .post-entry-container {
   display: inline-block;
@@ -616,7 +616,7 @@ footer .footer-custom-content {
 /* --- Tags --- */
 
 .blog-tags {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
   color: #F0512;
   font-size: 0.9375rem;
   margin-bottom: 1.875rem;
@@ -721,7 +721,7 @@ footer .footer-custom-content {
   font-size: 1.6875rem;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
   font-weight: 300;
   margin: 0.625rem 0 0;
 }
@@ -746,7 +746,7 @@ footer .footer-custom-content {
   padding: 0.3125rem 0.625rem;
   font-size: 0.6875rem;
   color: #EEE;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
   right: 0;
   bottom: 0;
   display: none;
@@ -861,7 +861,7 @@ footer .footer-custom-content {
 }
 
 .pagination .page-item .page-link {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
   text-transform: uppercase;
   font-size: 0.875rem;
   font-weight: 800;
@@ -1016,7 +1016,7 @@ pre {
 }
 
 #full-tags-list {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
 }
 
 #full-tags-list .tag-entry {
@@ -1075,7 +1075,7 @@ main.coming-soon .main-logo {
 main.coming-soon p {
   line-height: 1.1em;
   margin: 0px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
   font-weight: bold;
   font-size: 2vmax;
   text-align: center;
@@ -1091,7 +1091,7 @@ footer {
   margin-top: 0px;
   flex-shrink: 0;
   border: none;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times '
 }
 
 .img-smol {
