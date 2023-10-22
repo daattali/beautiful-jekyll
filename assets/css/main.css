@@ -889,7 +889,7 @@ table tbody tr:nth-child(even) {
   background-color: #A87242;
 }
 table tbody tr:nth-child(odd) {
-  background-color: #995C44;
+  background-color: #855934;
 }
 table tbody tr td {
   border: 1px solid {{ site.navbar-border-col | default: "#cccccc" }};
