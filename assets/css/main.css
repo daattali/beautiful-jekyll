@@ -30,8 +30,8 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Times New Roman', serif;
   font-weight: 800;
   line-height: 1.25;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   color: {{ site.header-col | default: "white" }}
 }
 
@@ -874,6 +874,7 @@ footer .footer-custom-content {
 table {
   padding: 0;
   width: 100%;
+  color: #FFFFFF;
 }
 table thead tr th {
   font-weight: bold;
@@ -884,17 +885,11 @@ table thead tr th {
   padding: 0.375rem 0.8125rem;
 }
 
-/* #417f5e dark green
-#f8e780 yellow
-#f05123 orange
-#ccce92 tan green
-#c2ce9d light green? */
-
 table tbody tr:nth-child(even) {
-  background-color: #ccce92;
+  background-color: #A87242;
 }
 table tbody tr:nth-child(odd) {
-  background-color: #c2ce9d;
+  background-color: #995C44;
 }
 table tbody tr td {
   border: 1px solid {{ site.navbar-border-col | default: "#cccccc" }};
