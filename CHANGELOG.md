@@ -5,6 +5,7 @@
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156) 
 - Added social network links for GitLab, Bluesky (#1168, #1218)
 - Added instructions and example on how to fix image links in project sites (#1171)
+- Pagination buttons: use nicer arrows, and don't show text on small screens (#1221)
 
 ## v6.0.1 (2023-06-08)
 
