@@ -38,14 +38,7 @@
           {% endif %}
           
           {% if include.type == "post" %} 
-            {% if page.author %}
-              <div class="meta"> By:
-                {% assign url = page.author | slugify | prepend: 'authors/' %}
-                <a class="post-author" href="{{ url | strip | relative_url }}">
-                  {{ page.author }}
-                </a>
-              </div>
-            {% endif %}
+            {% if page.author %} <h3 class="post-meta">By: {{ page.author | strip_html }} </h3><br />{% endif %}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
             {% if page.last-updated %}
               <span class="post-meta">
@@ -80,14 +73,7 @@
           {% endif %}
 
           {% if include.type == "post" %} 
-            {% if page.author %}
-              <div class="post-author"> By:
-                {% assign url = page.author | slugify | prepend: 'authors/' %}
-                <a href="{{ url | strip | relative_url }}">
-                  {{ page.author }}
-                </a>
-              </div>
-            {% endif %}
+            {% if page.author %} <h3 class="post-meta"> By: {{ page.author | strip_html }} </h3><br />{% endif %}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
             {% if page.last-updated %}
               <span class="post-meta">
