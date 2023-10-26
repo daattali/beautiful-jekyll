@@ -36,8 +36,11 @@
               <h2 class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</h2>
             {% endif %}
           {% endif %}
-
-          {% if include.type == "post" %}
+          
+          {% if include.type == "post" %} 
+            {% if page.author %}
+              By <strong>{{ page.author | strip_html }}</strong><br>
+            {% endif%}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
             {% if page.last-updated %}
               <span class="post-meta">
@@ -71,7 +74,10 @@
             {% endif %}
           {% endif %}
 
-          {% if include.type == "post" %}
+          {% if include.type == "post" %} 
+            {% if page.author %}
+              By <strong>{{ page.author | strip_html }}</strong><br>
+            {% endif%}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
             {% if page.last-updated %}
               <span class="post-meta">

@@ -25,8 +25,15 @@
 
   <title>{{ title }}</title>
 
-  {% if site.author %}
-  <meta name="author" content="{{ site.author }}">
+  {% capture author %}
+    {%- if page.author -%}
+      {{  page.author | strip_html }}
+    {%- elsif site.author -%}
+      {{ site.author }}
+    {%- endif -%}
+  {% endcapture %}
+  {% if author != "" %}
+  <meta name="author" content="{{ author }}">
   {% endif %}
 
   <meta name="description" content="{{ description }}">
@@ -112,7 +119,9 @@
 
   {% if page.id %}
   <meta property="og:type" content="article">
-  <meta property="og:article:author" content="{{ site.author }}">
+  {% if author != "" %}
+  <meta property="og:article:author" content="{{ author }}">
+  {% endif %}
   <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
