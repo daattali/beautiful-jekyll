@@ -21,6 +21,9 @@ body {
   background-attachment: fixed;
   {% endif %}
   overflow-wrap: break-word;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 p {
   line-height: 1.5;
