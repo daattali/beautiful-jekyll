@@ -1,6 +1,7 @@
 ## Unreleased version
 - BREAKING CHANGE: Allow changing the order of the social network links that appear in the footer (#1152)
 - BREAKING CHANGE: `google-scholar` social network link no longer requires the prefix `citations?user=`; if you previously set this parameter, it needs to be updated (#1189)
+- The footer of a page always sticks to the bottom, even on short pages (#576)
 - Added `author` YAML parameter to allow specifying the author(s) of a post (#1220)
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156)
 - Added social network links for GitLab, Bluesky (#1168, #1218)
