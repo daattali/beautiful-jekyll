@@ -29,7 +29,7 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 18-Dec	| _No School_                    	| _No School_                           | _No School_               |
 | 25-Dec	| _No School_	                		| _No School_                           | _No School_               |
 | 1-Jan		| _No School_ 	                	|                                       |                           |
-| 8-Jan		| Counting		                		|                                       | (Mathcounts School Round) |
+| 8-Jan		| Bases   		                		|                                       | (Mathcounts School Round) |
 | 15-Jan	| _No School_		                	|                                       | (AMC 8)                   |
 | 22-Jan	| Circles				                  |                                       |                           |
 | 29-Jan	| Similarity		                	|                                       |                           |
@@ -44,7 +44,7 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 1-Apr		| Expected Value                	|                                       |                           |
 | 8-Apr 	| _No School_		                	|  _No School_                          | _No School_               |
 | 15-Apr	| Surface Area & Volume           |                                       |                           |
-| 22-Apr	| Bases				                    |                                       |                           |
+| 22-Apr	| Measurement                     |                                       |                           |
 
 [2022-2023 schedule](/schedule-2223.md)
 
