@@ -874,8 +874,8 @@ footer .footer-custom-content {
 table {
   padding: 0;
   width: 100%;
-  color: #FFFFFF;
 }
+
 table thead tr th {
   font-weight: bold;
   border: 1px solid {{ site.navbar-border-col | default: "#cccccc" }};
@@ -1103,12 +1103,4 @@ footer {
   float: right;
   margin-right: 1em;
   width: 25%;
-}
-
-table {
-  table-layout: fixed;
-  max-width: 600px;
-}
-table thead tr th {
-     color: #ccce92;
 }
