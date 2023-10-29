@@ -23,7 +23,7 @@ navbar-links:
   # - About: "about"
     - Hotel: "hotel"
   # - Guest of Honor: "goh"
-  # - Code of Conduct: "code-of-conduct"
+    - Code of Conduct: "code-of-conduct"
   # - Covid Policy: "covid-policy"
   Join The Fun:
   # - Volunteer: "volunteer"
