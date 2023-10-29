@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto bowl</title>
+    <style type="text/css">
+        @media (max-width: 767px) {
+            .hidden-mobile {
+                display: none;
+            }
+
+            label span {
+                display: none;
+            }
+
+            /*
+            form label {
+                margin-left: 10px;
+                margin-right: 10px; 
+            }*/
+            .container>.column {
+                flex: 100%;
+                order: 1
+            }
+
+            .center-column {
+                order: 0
+            }
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto
+                /* background-color: #281b24; */
+                max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            min-height: 450px;
+            background-position: top;
+            display: flex;
+            align-items: flex-end;
+            justify-items: center;
+            justify-content: center;
+        }
+
+        #start_btn {
+            background: transparent;
+            border: none;
+            opacity: 65%;
+            width: 38%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        #inputs {
+            text-align: center;
+        }
+
+        #controls {
+            color: rgba(255, 255, 255, 0.7);
+            font-family: fantasy;
+            padding: 30px;
+        }
+
+        #bowl {
+            width: 100%;
+        }
+
+        /* add styles for the button */
+        #play {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #player {
+            bottom: 0;
+        }
+
+        /* styles for the two columns of text */
+        .column {
+            font-size: 18px;
+
+            flex: 45%;
+        }
+
+        /* styles for the radio buttons */
+        input[type="radio"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-right: 10px;
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        /* styles for selected radio button */
+        input[type="radio"]:checked {
+            box-shadow: 0 0 10px #fff;
+        }
+
+        /* colors for the 7 chakras */
+        input.chakra-radios[value="1"] {
+            background-color: #ff0000;
+        }
+
+        input.chakra-radios[value="2"] {
+            background-color: #ff7f00;
+        }
+
+        input.chakra-radios[value="3"] {
+            background-color: #ffff00;
+        }
+
+        input.chakra-radios[value="4"] {
+            background-color: #00ff00;
+        }
+
+        input.chakra-radios[value="5"] {
+            background-color: #0000ff;
+        }
+
+        input.chakra-radios[value="6"] {
+            background-color: #4b0082;
+        }
+
+        input.chakra-radios[value="7"] {
+            background-color: #8b00ff;
+        }
+
+        /* label {
+            display: inline-block;
+            margin-right: 5px;
+        } */
+
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 2px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 31px;
+            height: 31px;
+            /* border-radius: 50%; */
+            background-image: url('slider.png');
+            background-position: center;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            /* border-radius: 50%; */
+            background: url('slider.png') center;
+            cursor: pointer;
+        }
+
+        .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: center;
+            display: flex;
+            /* or inline-flex */
+        }
+
+        .center-column,
+        .column {
+            padding-top: 15px;
+        }
+
+        .center-column {
+            flex: 10%
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #bigbowl {
+            top: 15px;
+            position: absolute;
+            background: transparent;
+            border: none;
+            max-width: 400px;
+        }
+
+        #bigbowl img {
+            width: 100%;
+        }
+
+        #bigbowl .shadow {
+            top: 38%;
+            position: absolute;
+            left: 10%;
+            z-index: -1;
+            opacity: 0.75;
+        }
+
+        body {
+            background-image: url('bg2.webp');
+        }
+
+        .audio-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .audio-wrapper label {
+            flex-basis: 100px;
+            margin-right: 20px;
+        }
+
+        .audio-wrapper audio {
+            background: transparent;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tablinks {
+            background-color: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border-top: none;
+        }
+
+        /* Style the active tablink */
+        .tablinks.active {
+            border-bottom: 1px solid white;
+        }
+        .column input[type="radio"]:checked + .tabcontent {
+            display: block;
+        }
+        .column input[type="radio"] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hidden">
+            <audio id="player2" controls>
+                <source id="" src="bowl.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="header">
+            <button id="bigbowl" onclick="hit_bowl()">
+                <img src="bell.webp" alt="">
+                <img class='shadow' src="shadow.webp" alt="">
+            </button>
+            <br>
+            <audio id="player" controls>
+                <source id="audio_src" src="7_crown.mp3" type="audio/mp3">
+            </audio>
+            <br>
+        </div>
+        <div id="controls">
+            <div class="slidecontainer container">
+                <input type="range" min="0.5" max="100" step="0.5" value="0.5" class="slider" id="period">
+                <p id="value">0.5 minute(s)</p>
+                <!-- <input type="number" id="period" value="1"> -->
+            </div>
+            </br />
+            <form action="#" id="inputs">
+                <div class="container">
+                    <div class="column" id='quote1'>Smile! you are alive!</div>
+                    <div class="center-column"><button id='start_btn' onclick="kick()">
+                            <!-- <img id='bowl' src="bowl.png" alt=""> -->
+                            <img src="icon.png" width="38px" alt="">
+                        </button>
+                    </div>
+                    <div class="column" id="quote2">
+                        <div class="tabs">
+                            <label class="tablinks" for="tab1">Base Ambience
+                                Sounds</label>
+                            <!-- <button class="tablinks active" onclick="openTab(event, 'tab1')"></button> -->
+                            <label class="tablinks" for="tab2">More...</label>
+                            <!-- <button class="tablinks" onclick="openTab(event, 'tab3')">Tab 3</button> -->
+                        </div>
+                        <input type="radio" name="tab-group" checked id="tab1">
+                        <div class="tabcontent">
+                            <div class="audio-wrapper">
+                                <label for="river-audio">River</label>
+                                <audio id="river-audio" controls loop>
+                                    <source src="audio/river.mp3" type="audio/mp3" data-track-number="1">
+                                </audio>
+                            </div>
+                            <div class="audio-wrapper">
+                                <label for="ocean-audio">Ocean</label>
+                                <audio id="ocean-audio" controls loop>
+                                    <source src="audio/ocean.mp3" type="audio/mp3" data-track-number="2">
+                                </audio>
+                            </div>
+                            <div class="audio-wrapper">
+                                <label for="bird-audio">Bird</label>
+                                <audio id="bird-audio" controls loop>
+                                    <source src="audio/bird.mp3" type="audio/mp3" data-track-number="3">
+                                </audio>
+                            </div>
+                        </div>
+                        <input type="radio" name="tab-group" id="tab2">
+                        <div class="tabcontent">
+                            <h2>Tab 2</h2>
+                            <p>This is the content of tab 2.</p>
+                        </div>
+                        <!-- <div id="tab3" class="tabcontent">
+                            <h2>Tab 3</h2>
+                            <p>This is the content of tab 3.</p>
+                          </div> -->
+
+                    </div>
+                </div>
+        </div>
+        <br style="clear: both;">
+        <div class="container">
+            <label>
+                <input type="radio" class="chakra-radios" name="sound" value="1">
+                <span>
+                    Root Chakra
+                </span>
+            </label>
+            <label>
+                <input type="radio" class="chakra-radios" name="sound" value="2">
+                <span>
+                    Sacral Chakra
+            </label>
+            <label>
+                <input type="radio" class="chakra-radios" name="sound" value="3">
+                <span>
+                    Solar Plexus Chakra</span>
+            </label>
+            <label>
+                <input type="radio" class="chakra-radios" name="sound" value="4">
+                <span>
+                    Heart Chakra
+            </label>
+            <label>
+                <input type="radio" class="chakra-radios" name="sound" value="5">
+                <span>Throat Chakra
+            </label>
+            <label>
+                <input type="radio" class="chakra-radios" name="sound" value="6">
+                <span> Third Eye Chakra
+            </label>
+            <label>
+                <input type="radio" class="chakra-radios" name="sound" checked value="7">
+                <span> Crown Chakra
+            </label>
+        </div>
+        <br><br>
+        </form>
+    </div>
+    <script>
+        files = [
+            '1_root.mp3',
+            '2_sacral.mp3',
+            '3_solar_plexus.mp3',
+            '4_heart.mp3',
+            '6_eye.mp3',
+            '5_throat.mp3',
+            '7_crown.mp3'
+        ];
+
+        let quotes = [
+            "It is only when the mind is not escaping in any form that it is possible to see the whole movement of thought as it is and therefore come directly into contact with that which is timeless - Jiddu Krishnamurti",
+            "The highest form of intelligence is to observe yourself without judgement - Jiddu Krishnamurti",
+            "To be aware of a single shortcoming in oneself is more useful than to be aware of a thousand in someone else. - Jiddu Krishnamurti",
+            "The most difficult thing in the world is to know yourself. - Jiddu Krishnamurti",
+            "The primary cause of unhappiness is never the situation but your thoughts about it. - Eckhart Tolle",
+            "Realize deeply that the present moment is all you have. Make the NOW the primary focus of your life. - Eckhart Tolle",
+            "The power for creating a better future is contained in the present moment: You create a good future by creating a good present. - Eckhart Tolle",
+            "The mind is a superb instrument if used rightly. Used wrongly, however, it becomes very destructive. - Eckhart Tolle",
+            "The past has no power to stop you from being present now. Only your grievance about the past can do that. - Eckhart Tolle",
+            "Being spiritual has nothing to do with what you believe and everything to do with your state of consciousness. - Eckhart Tolle",
+            "The most common ego identifications have to do with possessions, the work you do, social status and recognition, knowledge and education, physical appearance, special abilities, relationships, personal and family history, belief systems, and often nationalistic, racial, religious, and other collective identifications. - Eckhart Tolle",
+            "The greatest achievement of humanity is not its works of art, science, or technology, but the recognition of its own dysfunction. - Eckhart Tolle",
+            "The present moment is the only point of power. The past has no power to stop you from being present now. The future has no power to stop you from being present now. - Eckhart Tolle",
+            "Awareness is the greatest agent for change. - Eckhart Tolle",
+            "WHAT A LIBERATION TO REALIZE THAT THE “VOICE IN MY HEAD” IS NOT WHO I AM. WHO AM I THEN? THE ONE WHO SEES THAT. - Eckhart Tolle",
+            "WHAT YOU REACT TO IN OTHERS, YOU STRENGTHEN IN YOURSELF. - Eckhart Tolle",
+            "THE PRIMARY CAUSE OF UNHAPPINESS IS NEVER THE SITUATION BUT YOUR THOUGHTS ABOUT IT. - Eckhart Tolle",
+            "PRESENCE IS WHEN YOU'RE NO LONGER WAITING FOR THE NEXT MOMENT, BELIEVING THAT THE NEXT MOMENT WILL BE MORE FULFILLING THAN THIS ONE. - Eckhart Tolle",
+            "DON'T THINK OF YOURSELF AS HAVING A PAST, DON'T THINK OF YOURSELF AS HAVING A FUTURE. WHAT'S LEFT? - Eckhart Tolle",
+            "BE AWARE OF YOUR BREATHING. NOTICE HOW THIS TAKES ATTENTION AWAY FROM YOUR THINKING AND CREATES SPACE. - Eckhart Tolle",
+            "HERE IS A NEW SPIRITUAL PRACTICE FOR YOU: DON'T TAKE YOUR THOUGHTS TOO SERIOUSLY. - Eckhart Tolle",
+            "GUILT, REGRET, RESENTMENT, SADNESS, AND ALL FORMS OF NON-FORGIVENESS ARE CAUSED BY TOO MUCH PAST AND NOT ENOUGH PRESENCE. - Eckhart Tolle",
+            "IF YOU DON'T HAVE A GOOD RELATIONSHIP WITH THE NOW, YOU DON'T HAVE A GOOD RELATIONSHIP WITH LIFE. - Eckhart Tolle",
+            "IT IS NOT UNCOMMON FOR PEOPLE TO SPEND THEIR WHOLE LIFE WAITING TO START LIVING. - Eckhart Tolle",
+            "MOST HUMANS ARE NEVER FULLY PRESENT IN THE NOW, BECAUSE UNCONSCIOUSLY THEY BELIEVE THAT THE NEXT MOMENT MUST BE MORE IMPORTANT THAN THIS ONE. BUT THEN YOU MISS YOUR WHOLE LIFE, WHICH IS NEVER NOT NOW. - Eckhart Tolle",
+            "DON'T WAIT TO BE SUCCESSFUL AT SOME FUTURE POINT. HAVE A SUCCESSFUL RELATIONSHIP WITH THE PRESENT MOMENT AND BE FULLY PRESENT IN WHATEVER YOU ARE DOING. THAT IS SUCCESS. - Eckhart Tolle",
+            "ACKNOWLEDGING THE GOOD THAT YOU ALREADY HAVE IN YOUR LIFE IS THE FOUNDATION FOR ALL ABUNDANCE. - Eckhart Tolle",
+            "LIFE WILL GIVE YOU WHATEVER EXPERIENCE IS MOST HELPFUL FOR THE EVOLUTION OF YOUR CONSCIOUSNESS. HOW DO YOU KNOW THIS IS THE EXPERIENCE YOU NEED? BECAUSE THIS IS THE EXPERIENCE YOU ARE HAVING AT THE MOMENT. - Eckhart Tolle",
+            "YOU ARE THE UNIVERSE, EXPRESSING ITSELF AS A HUMAN FOR A LITTLE WHILE. - Eckhart Tolle",
+            "YOU ARE THE SKY. THE CLOUDS ARE WHAT HAPPENS, WHAT COMES AND GOES. - Eckhart Tolle",
+            "Why does the mind habitually deny or resist the now? because it cannot function and remain in control without time, which is past and future, so it perceives the timeless now as threatening. time and mind are in fact inseparable. - Eckhart Tolle",
+            "WORDS REDUCE REALITY TO SOMETHING THE HUMAN MIND CAN GRASP, WHICH ISN’T VERY MUCH. - Eckhart Tolle",
+            "Nature does not hurry, yet everything is accomplished. - Lao Tzu",
+            "Smile! you are alive!",
+            "The journey of a thousand miles begins with one step. - Lao Tzu",
+            "He who knows others is wise; he who knows himself is enlightened. - Lao Tzu",
+            "The world is a sacred vessel that cannot be acted upon, it can only be held. He who holds it, holds it in trust; he who acts upon it, spoils it. - Lao Tzu",
+            "The most precious gift we can offer anyone is our attention. - Thich Nhat Hanh",
+            "Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor. - Thich Nhat Hanh",
+            "The greatest gift is the gift of understanding. - Thich Nhat Hanh",
+            "The present moment is filled with joy and happiness. If you are attentive, you will see it. - Thich Nhat Hanh",
+            "The miracle is not to fly in the air, or to walk on the water, but to walk on the earth. - Thich Nhat Hanh",
+            "The most basic and powerful way to connect to another person is to listen. Just listen. Perhaps the most important thing we ever give each other is our attention. - Thich Nhat Hanh",
+            "We have more possibilities available in each moment than we realize. - Thich Nhat Hanh",
+            "When you love someone, the best thing you can offer is your presence. How can you love if you are not there? - Thich Nhat Hanh",
+            "The mind can go in a thousand directions, but on this beautiful path, I walk in peace. With each step, the wind blows. With each step, a butterfly flutters by. - Thich Nhat Hanh",
+            "Life is available only in the present moment. - Thich Nhat Hanh",
+            "The best way to take care of the future is to take care of the present moment. - Thich Nhat Hanh",
+            "The goal is not to be better than the other man, but your previous self. - Dalai Lama",
+            "The ultimate authority must always rest with the individual's own reason and critical analysis. - Dalai Lama",
+            "The true hero is one who conquers his own anger and hatred. - Dalai Lama",
+            "The ultimate source of happiness is not money and power, but warm-heartedness. - Dalai Lama",
+            "The purpose of our lives is to be happy. - Dalai Lama",
+            "We can never obtain peace in the outer world until we make peace with ourselves. - Dalai Lama",
+            "If you want others to be happy, practice compassion. If you want to be happy, practice compassion. - Dalai Lama",
+            "Happiness is not something ready made. It comes from your own actions. - Dalai Lama",
+            "Be kind whenever possible. It is always possible. - Dalai Lama",
+            "The more you are motivated by love, the more fearless and free your action will be. - Dalai Lama"
+        ];
+        var col1 = document.getElementById("quote1");
+        // var col2 = document.getElementById("quote2");
+        var music = document.getElementById("player");
+        var bowl = document.getElementById("player2");
+        var button = document.getElementById("start_btn");
+        var input = document.getElementById("period");
+        var y = document.getElementById("value");
+        var source = document.getElementById('audio_src');
+        var radios = document.getElementsByName('sound');
+        col1.innerHTML = quotes[Math.floor(Math.random() * quotes.length)]
+        // col2.innerHTML = quotes[Math.floor(Math.random()*quotes.length)]
+        input.oninput = function () {
+            y.innerHTML = this.value + ' minute(s)';
+        }
+        // Register a service worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').then(registration => {
+                    console.log('Service worker registered: ', registration);
+                }).catch(error => {
+                    console.log('Service worker registration failed: ', error);
+                });
+            });
+        }
+        function setSource() {
+            var selectedSound = document.querySelector('input[name="sound"]:checked');
+            if (selectedSound) {
+                opt = selectedSound.value - 1;
+                source.src = files[opt];
+            }
+            // audio.volume = volume / 100;
+            music.load();
+        }
+        // function change_file() {
+        //     opt = chakra.value - 1
+        //     source.src = files[opt]
+        //     music.load();
+        // }
+        const myWorker = new Worker('./worker.js');
+
+        function hit_bowl() {
+            bowl.play();
+        }
+        function kick() {
+            const period = input.value * 60 //seconds
+            music.play();
+            myWorker.postMessage([period]);
+            button.disabled = true;
+        }
+        myWorker.onmessage = (e) => {
+            // result.textContent = e.data;
+            console.log('Message received from worker');
+            music.play();
+        }
+
+        for (var i = 0, length = radios.length; i < length; i++) {
+            radios[i].addEventListener('change', setSource);
+        }
+    </script>
+    </div>
+</body>
+
+</html>

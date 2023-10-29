@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Từ Chuyển niệm đến Tùy duyên</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="b07cd880-a568-4b53-9c28-7882c7d808c1" class="page serif"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1604951832436-90867d74f4de?ixlib=rb-4.0.3&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">✏️</span></div><h1 class="page-title">Từ Chuyển niệm đến Tùy duyên</h1></header><div class="page-body"><div id="c47cb7cc-1d71-4909-bd8b-7d4e48c4adfa" class="column-list"><div id="32c77a39-db8a-4ad2-b46a-b0cb1e6d3a2e" style="width:43.75%" class="column"><p id="e0f09207-3100-46ea-b0bb-f48da6dac7ac" class="block-color-gray">10 March 2023</p><p id="41f5370f-b584-4ea5-adab-6c5f08ac3b93" class="">
+</p></div><div id="f549b115-9f68-4e25-8165-151bacfa5944" style="width:56.24999999999998%" class="column"><p id="7c806f95-0b35-43f1-85b4-2d40b85501bc" class="block-color-gray">Nguyên Đắc Nguyện </p><p id="dc82d4ab-0fce-41a5-931f-3ad048718b3d" class="">
+</p></div></div><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="4e607eaa-8129-4f92-a5f6-2cacc7f29e6f"><div style="font-size:1.5em"><span class="icon">❓</span></div><div style="width:100%">Ta không vui bởi sự việc không vui hay do cách ta nhìn nhận?</div></figure><p id="248075fb-8785-4e75-964e-4421f287d2c3" class="">Bạn đã bao giờ tự hỏi tại sao mỗi người chúng ta lại có những phản ứng khác nhau đối với cùng một tình huống xảy ra? Tại sao khi một chuyện thuận lợi xảy ra, một người có thể buồn bã, thất vọng, lo lắng hoặc tức giận, trong khi người khác có thể giữ bình tĩnh và đối mặt với tình huống đó một cách khôn ngoan?</p><p id="72dd38e1-449f-47b5-bc8b-f45ff2bb14be" class="">Điều gì khiến ta cảm thụ và phản ứng theo cách mà ta đang làm? Có gì quy định rằng khi một chuyện không may xảy ra ta phải buồn, lo sợ, tức giận không? Đây là những câu hỏi mà chúng ta cần suy nghĩ để hiểu rõ hơn về cách vận hành của tâm trí và cảm xúc?</p><p id="e8e64b24-0ed6-41de-9041-40f2b5267ba3" class="">Các sách và khoá học tư duy thành công thường nói về tư duy tích cực và cách quản lý cảm xúc. Tuy nhiên, việc quản lý cảm xúc không chỉ đơn thuần là việc tập trung vào những suy nghĩ tích cực, mà còn là việc thay đổi cách nhìn nhận về những tình huống khó khăn hay những sự việc trái ý muốn.</p><p id="de554b11-ee04-4132-8ef9-9476f5baa35f" class="">Một trong những phương pháp để thay đổi cách nhìn nhận đó là chuyển niệm hay còn gọi là chuyển hoá ý nghĩa tích cực (từ những sự việc tiêu cực). Chuyển niệm là quá trình thay đổi cách nhìn nhận về một tình huống bằng cách tìm ra những ý nghĩa tích cực từ đó.</p><p id="af41df1b-6eb2-4d19-9f1f-a8dc9943e149" class=""> Ví dụ, khi một cuộc phỏng vấn làm việc không thành công, thay vì nghĩ rằng mình thất bại hoặc tự trách mình, bạn có thể chuyển niệm bằng cách tìm ra những bài học từ trải nghiệm đó và cố gắng cải thiện kỹ năng của mình trong lần phỏng vấn tiếp theo. </p><p id="39d67fce-aefe-4189-8f1e-2340e31149dd" class="">Bằng cách thay đổi góc nhìn và thái độ của một người đối với cùng một sự việc, nhận thức và cảm xúc của người đó với sự việc có thể hoàn toàn thay đổi. Khi nhìn sâu hơn, người ta có thể tìm thấy ý nghĩa tích cực trong cái không vừa ý. Vậy nên kết luận rằng :</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="3dc57273-e7ee-4e0b-9358-a779d59a3179"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Cảm xúc tiêu cực sinh ra không phải bởi sự việc xảy ra mà phần nhiều là do góc nhìn và thái độ của ta đối với sự việc đó.</div></figure><p id="3fb385be-0ac6-4da8-8fac-66f84d46bc91" class="">Hoàn toàn không có gì trong vũ trụ quy định ta nhất định phải buồn khổ khi gặp nghịch cảnh cả.  Bởi vì cũng là sự việc đó nhưng  khi người nghĩ thoáng hoặc có khả năng chuyển niệm thì vẫn có thể ung dung và tin tưởng hơn ở lần phỏng vấn sau.</p><p id="254c3f56-3e37-4141-9668-dbb8b00f1f3e" class="">Tuy biết là vậy nhưng đâu phải lúc nào mình cũng nhớ để mà “chuyển niệm” đâu? Hay khi cảm xúc tiêu cực mạnh quá thì phải làm thế nào?</p><p id="b8c763df-e95e-41e0-8727-4fe117c0efbf" class="">Đúng là như vậy, hơn cả chuyển niệm và tư duy tích cực, ta có thể trang bị cho mình một thế giới quan ngoại hạng để vô tư đối diện mọi nghịch cảnh. Có câu chuyện thiền kể rằng:</p><blockquote id="00218f05-0826-4c91-b714-d2eb20a13000" class="">Có một ông lão kia sinh sống gần biên ải (tức Tái Ông). Nhà ông nuôi một con ngựa quý. Thế nào nó tự nhiên đi vào đất bắc mất hút. Những người quen biết đến nhà hỏi thăm an ủi, ông nói với họ: “Mất ngựa biết đâu lại là điềm may”. Quả nhiên, mấy hôm sau con ngựa nọ trở về, lại “rủ” thêm mấy con tuấn mã nữa đi cùng. Anh em láng giềng đến chia vui, ông lại chép miệng nói: “Ôi dào! Được thêm ngựa biết đâu lại là hoạ đó”.<p id="0c730220-b0bb-4101-b7db-98130edbc11e" class="">Được ngựa mới, con trai ông thấy ngựa đẹp bèn mải mê tập cưỡi. Nhưng con ngựa mới chưa được thuần kỹ nên lồng lên hại con ông ngã gãy cả chân. Trước sự kiện này, mọi người lại tới an ủi, nhưng Tái Ông vẫn ung dung: “Biết đâu lại là phúc đó!”. Không ngờ sau đó, đất nước bị giặc giã, trai tráng tất thảy phải ra trận. Thanh niên trong làng đi mười về một còn đâu nằm lại ngoài chiến trường. Riêng cậu con trai ông vì tàn tật mà được ở lại và sống sót. Quả là “trong phúc có hoạ”, “trong hoạ lại có phúc”. Sự đời thật khó mà lường.</p></blockquote><p id="8c5aad8e-94f5-4363-b765-d09651ceeac2" class="">Trong câu chuyện ngụ ngôn trên, người trong làng ông tuy có lòng tốt nhưng hết lần này tới lần khác họ đều phán.. trật lất. Khi phúc sắp tới thì họ chia buồn, còn khi hoạ sắp tới thì họ chúc mừng. Đơn cử như việc con ông ngã ngựa mà tránh được họa binh đao thì người ta lại tưởng là xui rủi mà chia buồn.</p><p id="ebc07798-0c87-41d7-8c57-3ba4c7eb7358" class="">Trong khi đó, ông lão chứng kiến tất cả những sự kiện được, mất diễn ra với một tâm thái bình thản không ngờ, chấp nhận mọi chuyện diễn ra như nó đang là.</p><p id="ea2016cb-80a8-438c-a32b-3005340f587e" class="">Thế giới quan ngoại hạng ở đây chính là “Vạn sự tùy duyên” - là cách nhìn nhận tất cả các sự kiện trong cuộc đời một cách khách quan, không đánh giá tốt hay xấu, không can thiệp vào các sự kiện đó.</p><figure id="bb641ca5-4e81-4bda-b5ff-3aab1132c542" class="image"><a href="assets/img/chuyen-niem//Untitled.png"><img style="width:2137px" src="assets/img/chuyen-niem//Untitled.png"/></a></figure><p id="8f432817-9eb9-44d4-a16c-33f16fc729f1" class="">Cái tâm thái tùy duyên này không phải chỉ xuất hiện ở văn hóa Phương Đông hay văn hóa Phật Giáo. Trong văn hóa Thiên Chúa Giáo, họ có một câu bất hủ đó là &quot;Let it be&quot;.</p><p id="20fed790-e2d7-41f0-ae24-52ea0ae53004" class="">Tuy nhiên từ đâu người ta có thể có được tâm thái như vậy trước những sóng gió của cuộc đời? Khi quan sát kỹ, chúng ta sẽ nhận ra rằng: giống như những diễn biến của câu chuyện nhà Tái Ông, tất cả sự việc trên đời đều tuân theo một quy luật vận hành của nhân quả. Chuyện này xảy ra do một chuyện khác trước đó rồi tới lượt nó lại là nhân duyên của những chuyện đi sau. Cứ thế tạo thành chuỗi liên tục mà không thể tìm ra nguồn gốc. </p><p id="cc1ecbec-177a-4096-a840-605221f668b5" class="">Trong đó mỗi sự việc diễn ra đều đúng theo các nhân đã đặt ra và đúng theo quy luật tự nhiên còn gọi là Luật Nhân Quả. Trong khi chúng ta thường chấp vào tốt và xấu, được và mất, xong sinh ra ham thích hay chối bỏ thì câu chuyện lại cho ta thấy cả tốt xấu, được mất đều là tương đối. Và “lấy” hay “bỏ” đều là mê muội. Bởi vì sao? Nếu mất ngựa là điều ta không mong muốn thì tự nhiên ta lại chối bỏ luôn cả việc được thêm ngựa. Hay khi con trai bị gãy chân là điều ta muốn “bỏ” nhưng khi con trai nhờ đó mà thoát họa ta lại thấy đó là điều người khác “thà vậy còn hơn” mà không được. </p><p id="08ba767e-af45-4102-a872-c8830e23332d" class="">Quy luật mọi việc do duyên sinh này bao trùm tất cả. Và trong lịch sử loài người vì không biết tới điều đó nên sinh tâm lấy-bỏ và cuối cùng chuốc lấy tai họa. Ví như thời Đại Nhảy Vọt, người ta vì không biết chim sẻ là thiên địch của châu chấu nên tàn sát chim trên diện rộng. Chỉ hai năm sau, nạn dịch châu chấu gây ra nạn đói chết hàng triệu người ở Trung Quốc, người ta mới nhận ra sai lầm và sửa sai. Tùy duyên chính là sống thuận tự nhiên một cách sâu sắc.</p><figure id="28f25cb4-8f15-4c9b-9049-c9bf5fff2922" class="image"><a href="assets/img/chuyen-niem//Untitled%201.png"><img style="width:2070px" src="assets/img/chuyen-niem//Untitled%201.png"/></a></figure><p id="8ed07d71-2815-4c8f-a62c-085047392134" class="">Người sống với tâm tùy duyên ( phương Tây gọi là thuận theo ý chúa/ý thượng đế) tới đâu thì có khả năng đối diện với nghịch cảnh với sự bình thản nhiều tới đó. Khi đó không cần phải cố gắng chuyển niệm vì sự lạc quan và ở người đó không lay chuyển được. </p><p id="dd02fbc8-119b-402f-a858-27eca5a5dd49" class="">Nguyên Đắc Nguyện </p><p id="252c1c4a-14f6-44f8-afa6-48df30cc6678" class="">Tri ân chư Phật, chư tổ sư, và sư phụ tôi Thầy Pháp Nhật. </p><p id="928cc273-5c7e-40c0-ab33-23f92beeff12" class="">
+</p>
+</p><p id="aa140cb3-d18d-4936-b13a-4a4d0c1d4e93" class="">
+</p><hr id="0fa837d2-5f20-4d8a-a479-b8ee8298375d"/><h3 id="446209a3-825e-4d95-ac70-3c9780f1fcd2" class="">Bài sau: </h3><figure id="24c194b8-6094-4197-a4ae-f2169a646b77"><a href="https://hankphung.github.io/blog/ken-nguoi-doc-5.html" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Kén người đọc #5</div></div><div class="bookmark-href">https://hankphung.github.io/blog/ken-nguoi-doc-5.html</div></div></a></figure><p id="b9c8709f-5235-4ea5-a24f-fda4bc06960d" class="">
+</p><p id="0317e307-9079-466e-aaf2-cb2116024dd3" class="">
+</p></div>
+</article></body></html>
