@@ -19,7 +19,7 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 
 | Week Of	| Fundamentals (Mon 4:30-5:30)		| Competition Training (Wed 3:30-4:30)  | Variety (Fri 4:30-5:30)   |
 | ------- | ------------------------------- | ------------------------------------- | ------------------------- |
-| 30-Oct	| Factorials			                |                                       | Welcome Party             |
+| 30-Oct	| Factorials			                | [2020 AMC 8](https://artofproblemsolving.com/wiki/index.php/2020_AMC_8_Problems)                            | Welcome Party             |
 | 6-Nov 	| Right Triangles                	| (AMC 10A)                             | _No School_               |
 | 13-Nov	| Probability	                		|                                       |                           |
 | 20-Nov	| Fractions		                		| _Half Day_                            | _No School_               |
