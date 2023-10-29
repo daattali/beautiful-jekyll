@@ -19,9 +19,9 @@ navbar-links:
   # - Programming: 'programming'
     - Dealer's Den: "dealers"
   # - Video Games: "video-games"
-  # Info:
+  Info:
   # - About: "about"
-  # - Hotel: "hotel"
+    - Hotel: "hotel"
   # - Guest of Honor: "goh"
   # - Code of Conduct: "code-of-conduct"
   # - Covid Policy: "covid-policy"

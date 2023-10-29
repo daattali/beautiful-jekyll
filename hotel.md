@@ -1,12 +1,12 @@
 ---
-layout: page
-title: Fur Squared 2023 Hotel Information
-subtitle: Sheraton Milwaukee Brookfield Hotel
+layout: hotel
+title: Fur Squared 2024 Hotel Information
+subtitle: Introducing Our New Venue, The Hilton Milwaukee City Center!
 ---
-## Overflow Block at the Hilton Garden Inn
 
-Due to overwhelming demand, we have reserved rooms in the nearby Hilton Garden Inn, attached to the Brookfield Convention Center!
-[Click here to book at the overflow Hotel!](https://www.hilton.com/en/attend-my-event/fursquaredoverflowblock/)
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
 
 ## Booking at the Sheraton
 
@@ -22,8 +22,4 @@ The Hilton Garden Inn (Overflow)
 
 ## Room Rates
 
-Queen rooms are $185/night after tax at Hilton Garden Inn.
-
 ## No Breakfast Buffet
-
-Unfortunately there won't be a daily free breakfast buffet, sorry!
