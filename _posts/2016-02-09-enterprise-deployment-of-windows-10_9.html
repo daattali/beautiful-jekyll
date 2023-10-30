@@ -1,0 +1,16 @@
+---
+layout: post
+title: Enterprise deployment of Windows 10 Deployment via System Center configuration
+  Manager and Office 365
+date: '2016-02-09T09:06:00.001-08:00'
+author: syswow64
+tags:
+- SCCM
+- enterprise
+- Office 365
+modified_time: '2020-01-17T04:20:27.861-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-6146926918720184309
+blogger_orig_url: https://www.syswow64.co.uk/2016/02/enterprise-deployment-of-windows-10_9.html
+---
+
+Enterprise deployment of Windows 10 Deployment via System Center configuration Manager and Office 365<br /><br />In this blog I will discuss Windows 10 deployment as well as what has changed in System Center Configuration Manager. In addition servicing models for Windows 10, SCCM, and Office 365.<br /><br />The latest version of SCCM has re-branded itself without a year designation i.e. SCCM 2012 R2. &nbsp;It has rather adopted the SaaS model of Windows 10 and updates will flow down more frequently rendering the year in the title obselete. The new name is System Center Configuration Manager 1511 (current branch). &nbsp;The 1511 designation implies that the the current branch is 2015 November.<br /><br />Within the Configuration Manager console updates synchronise when the 'Service Connection Point' role is configured. &nbsp;This role supports In-console updates for Configuration Manager infrastructure and clients, and replaces the following separate update methods previously understood within SCCM:<br />Service packs<br />Cumulative updates<br />Extensions for Microsoft Intune<br />Individual fixes<br /><br />Office 365 servicing model is similar to Windows 10 in the fact that there is a Current Branch and Current Branch for Business release of updates. &nbsp;Within SCCM it is possible to deploy these branches via SCCM&nbsp;+ WSUS as a normal Windows update deployment package, making use of Distribution Points rather than clients directly connecting to the Internet. &nbsp;Unfortunately the process to synchronize the update with WSUS is manual however, the effort is minimal. The link referenced below refers to the Technical release however,<br /><br /><br /><br /><br />References<br />Finding documentation is now a little harder since the year has been dropped. Please see useful links below.<br /><br />ConfigMgr 1511 Supported Configurations<br />https://technet.microsoft.com/en-us/library/mt589499.aspx<br /><br />Supported client counts and site system scale<br />https://technet.microsoft.com/en-us/library/mt589738.aspx<br /><br />SQL requirements (CU requirements, collation requirements, etc)<br />https://technet.microsoft.com/en-us/library/mt589592.aspx<br /><br />Recommended hardware specs for ConfigMgr<br />https://technet.microsoft.com/en-us/library/mt589500.aspx<br /><br />SCCM 1511 – Step by Step Installation Guide<br />http://sccmentor.com/2015/12/27/sccm-1511-step-by-step-installation-guide/<br /><br />Upgrade to Windows 10 with System Center Configuration Manager<br />https://technet.microsoft.com/en-us/library/mt426642(v=vs.85).aspx<br /><br />Manage Office 365 client updates with System Center Configuration Manager<br />https://technet.microsoft.com/library/mt628083.aspx#BKMK_ImportUpdates<br /><br /><br />

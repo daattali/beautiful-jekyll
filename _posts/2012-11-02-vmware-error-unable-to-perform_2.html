@@ -1,0 +1,18 @@
+---
+layout: post
+title: |-
+  VMWare error: Unable to perform the operation. There is no available
+  vRam capacity.
+date: '2012-11-02T06:28:00.001-07:00'
+author: syswow64
+tags:
+- VMWare
+- virtual machines
+- enterprise-it
+- vram
+modified_time: '2020-01-17T04:20:29.860-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-1903486882358356136
+blogger_orig_url: https://www.syswow64.co.uk/2012/11/vmware-error-unable-to-perform_2.html
+---
+
+Cannot Add or Connect an ESXi Host to vCenter Server<br/>You cannot add an ESXi host to vCenter Server.<br/><br/><strong>Problem</strong><br/>You attempt to add or connect an ESXi host to vCenter Server but the operation is unsuccessful and you receive<br/>the following error message.<br/><br/><em>"Unable to perform the operation. There is no available vRAM capacity."</em><br/><br/><strong>Cause </strong><br/><br/>The vCenter Server system to which you tried to add the host to is licensed with a license key of vCenter Server Essentials that is part of the Essentials Kits. vCenter Server 5.0 Essentials licenses are hard-enforced, you cannot exceed the amount of pooled vRAM for vSphere 5.0 Essentials license keys that are assigned to the ESXi 5.0 hosts while the hosts are managed by vCenter Server. The memory that is configured to the powered-on virtual machines on the host that you try to add or reconnect exceeds the amount of pooled vRAM for vSphere Essentials. For details about vRAM and vRAM pooling, see “Licensing for ESXi 5.0 Hosts,” on page 68.<br/><br/>Solution<br/>Reduce the amount of memory that is configured for the powered-on virtual machines and retry to add or<br/>connect the ESXi host to vCenter Server.

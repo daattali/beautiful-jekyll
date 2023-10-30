@@ -1,0 +1,15 @@
+---
+layout: post
+title: |-
+  HOW TO: Install Imported Certificates on a Web Server in Windows Server
+  2003
+date: '2012-11-12T09:46:00.001-08:00'
+author: syswow64
+tags:
+- IIS
+modified_time: '2020-01-17T04:20:29.684-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-3129634251003788520
+blogger_orig_url: https://www.syswow64.co.uk/2012/11/how-to-install-imported-certificates-on_12.html
+---
+
+<h3 id="tocHeadRef">Assign the Imported Certificate to the Web Site</h3><br/><ol><br/>	<li>Click <strong>Start</strong>, point to <strong>Administrative Tools</strong>, and then click <strong>Internet Information Services (IIS) Manager</strong>.</li><br/>	<li>In the left pane, click your server.</li><br/>	<li>In the right pane, double-click <strong>Web Sites</strong>.</li><br/>	<li>In the right pane, right-click the Web site you want to assign the certificate to, and then click <strong>Properties</strong>.</li><br/>	<li>Click <strong>Directory Security</strong>, and then click <strong>Server Certificate</strong>.</li><br/>	<li>On the <strong>Welcome to the Web Certificate Wizard</strong> page, click <strong>Next</strong>.</li><br/>	<li>On the <strong>Server Certificate</strong> page, click <strong>Assign an existing certificate</strong>, and then click <strong>Next</strong>.</li><br/>	<li>On the <strong>Available Certificates</strong> page, click the installed certificate you want to assign to this Web site, and then click <strong>Next</strong>.</li><br/>	<li>On the <strong>SSL Port</strong> page, configure the SSL port number. The default port of 443 is appropriate for most situations.</li><br/>	<li>Click <strong>Next</strong>.</li><br/>	<li>On the <strong>Certificate Summary</strong> page, review the information about the certificate, and then click <strong>Next</strong>.</li><br/>	<li>On the <strong>Completing the Web Server Certificate Wizard</strong> page, click <strong>Finish</strong>, and then click <strong>OK</strong>.</li><br/></ol><br/><a href="http://support.microsoft.com/kb/816794">http://support.microsoft.com/kb/816794</a>

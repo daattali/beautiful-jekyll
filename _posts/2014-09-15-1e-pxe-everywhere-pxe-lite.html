@@ -1,0 +1,32 @@
+---
+layout: post
+title: 1e PXE Everywhere / PXE Lite
+date: '2014-09-15T08:31:00.000-07:00'
+author: syswow64
+tags:
+- PXE Everywhere
+- pxe
+- NOMAD
+- 1e
+modified_time: '2014-09-22T09:58:44.047-07:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-884720299438775167
+blogger_orig_url: https://www.syswow64.co.uk/2014/09/1e-pxe-everywhere-pxe-lite.html
+---
+
+1e PXE Everywhere / PXE Lite<br />
+Overview:<br />
+Dell Venue 11 Pro to PXE boot using 1e PXE Everywhere results in the message below and fails to load the boot image.<br />
+<br />
+Checking&nbsp; Media Presence<br />
+Media&nbsp; Present<br />
+Start PXE over IPv4<br />
+<br />
+PXELiteServer.log details<br />
+Sending DHCP ACK to [D4##:##:##:##:D3:F5] at client 10.160.3.204:68&nbsp;PXELiteDhcpFilter_D4##:##:##:##:D3:F5&nbsp;15/09/2014 16:18:49&nbsp;11412 (0x2C94)<br />
+Error: recvfrom failed (DHCP). The virtual circuit was reset by the remote side&nbsp;PXELiteDhcpFilter_D4##:##:##:##:D3:F5&nbsp;15/09/2014 16:18:49&nbsp;11412 (0x2C94)<br />
+<br />
+<br />
+More to follow.. Leave feedback on your successes<br />
+<br /><br />
+Resolution: In my case I was using PXE Everywhere v2.2 which will support laptops with UEFI as well as Legacy boot options. However, tablets like the Venue 11 Pro are native UEFI and this is currently not supported! I big surprise considering the demands on Enterprise IT to deploy&nbsp;Windows 8.1&nbsp;as just another OS (JAOS we'll see if it catches on).&nbsp; 1e reported that in v2.3 due later this year (todays date: 22/09/2014) UEFI native will be fully supported.<br />
+<br />

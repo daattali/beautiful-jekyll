@@ -1,0 +1,22 @@
+---
+layout: post
+title: NOMAD 1E not responding to a package status request
+date: '2012-12-06T06:17:00.001-08:00'
+author: syswow64
+tags:
+- MDT
+- SCCM
+- server 2008
+- enterprise-it
+- Software
+- WDS
+- NOMAD
+- Scripts
+- software microsoft
+- Windows 7
+modified_time: '2020-01-17T04:20:29.600-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-6016016539114760995
+blogger_orig_url: https://www.syswow64.co.uk/2012/12/nomad-1e-not-responding-to-package_6.html
+---
+
+<strong>Overview</strong>: During a SCCM task sequence a specific application is to be installed.  The task sequence is designed to use a NOMAD cache to poll the source.  The sequence fails as no available cache is available.<br/><br/><strong>How to troubleshoot?</strong><br/><br/>On the NOMAD cacheing server Open regedit and check the package status details.<br/><br/>Select the sub folder that corresponds to the cached item and review the details on the right.  You should check the following item are present and correct<br/><br/><strong>[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\1E\NomadBranch\PkgStatus\LDC002FE]</strong><br/>"Percent"="100.000"<br/>"Version"="2"<br/>"CachePriority"="1"<br/>"CacheToFolder"="D:\\NomadBranchCache"<br/>"ReturnStatus"="Completed Successfully"<br/>"AlreadyCached"="0"<br/><br/><strong>Also check the logs for specific behaviour.</strong> C:\ProgramData\1E\NomadBranch\LogFiles<br/><br/>The log should state "CacheStatus: (ELD)  pkgID="LDC002FE"(0) local=100.000%<br/>verifiedUTC=09/04/2012

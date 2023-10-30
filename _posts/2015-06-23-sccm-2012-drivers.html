@@ -1,0 +1,127 @@
+---
+layout: post
+title: SCCM 2012 Drivers
+date: '2015-06-23T10:32:00.000-07:00'
+author: syswow64
+tags:
+- Drivers
+- enterprise-it
+- task sequence
+- sccm
+modified_time: '2015-11-08T12:30:13.418-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-3288477150596926314
+blogger_orig_url: https://www.syswow64.co.uk/2015/06/sccm-2012-drivers.html
+---
+
+<div>
+<a href="https://www.blogger.com/blogger.g?blogID=4452544758446808584" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="https://www.blogger.com/blogger.g?blogID=4452544758446808584" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="https://www.blogger.com/blogger.g?blogID=4452544758446808584" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="https://www.blogger.com/blogger.g?blogID=4452544758446808584" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="https://www.blogger.com/blogger.g?blogID=4452544758446808584" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="https://www.blogger.com/blogger.g?blogID=4452544758446808584" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a>DRIVER MANAGEMENT</div>
+<div>
+<br /></div>
+<div>
+<br /></div>
+<div>
+1.1<span class="Apple-tab-span" style="white-space: pre;"> </span>KEY STEPS</div>
+<div>
+•<span class="Apple-tab-span" style="white-space: pre;"> </span>Identify drivers that match Hardware IDs</div>
+<div>
+•<span class="Apple-tab-span" style="white-space: pre;"> </span>Installing, and capturing drivers</div>
+<div>
+•<span class="Apple-tab-span" style="white-space: pre;"> </span>Importing drivers, categorising, and creating a driver package</div>
+<div>
+•<span class="Apple-tab-span" style="white-space: pre;"> </span>Updating Task Sequences</div>
+<div>
+•<span class="Apple-tab-span" style="white-space: pre;"> </span>Identifying missing drivers if necessary.</div>
+<div>
+<br /></div>
+<div>
+1.2<span class="Apple-tab-span" style="white-space: pre;"> </span>IDENTIFYING DRIVERS&nbsp;</div>
+<div>
+The first step in identifying drivers can be timely depending on the hardware vendor. &nbsp;Vendors provide self-service support pages; it is possible to find the model and specific supported drivers.</div>
+<div>
+With the example of Dell computers; it is possible to download all the drivers for a particular model via driver CABs from the community pages. &nbsp;This does allow you to proceed quickly but the CAB will typically contains extra drivers to cater to all variances of the model. NOTE: do not import the whole CAB into SCCM. &nbsp;The install and capture procedure will ensure the driver package is a small as possible.</div>
+<div>
+http://en.community.dell.com/techcenter/enterprise-client/w/wiki/2065.dell-command-deploy-driver-packs-for-enterprise-client-os-deployment&nbsp;</div>
+<div>
+Extract the CAB using 7-Zip/WinZip. &nbsp;This will produce several subfolders including an x64 and x86 architecture. &nbsp;Copy the appropriate folder to a USB key for the next stage.</div>
+<div>
+<br /></div>
+<div>
+1.3<span class="Apple-tab-span" style="white-space: pre;"> </span>INSTALL AND CAPTURE DRIVERS</div>
+<div>
+This section will describe how to capture a Dell Latitude E7440 laptop.</div>
+<div>
+It is important to start with a freshly built computer; built using an ISO image without any drivers or applications installed. It is not necessary to set a specific hostname or password as this system will not be joined to the domain; it should reimaged upon completion to fully test driver package.</div>
+<div>
+Once the system is installed open the ‘Device Manager’ devmgmt.msc and you will see a lot of missing driver, unidentified devices.</div>
+<div>
+&nbsp; &nbsp;</div>
+<div>
+Using the Dell driver cab previously extracted, right click each device to update/install a driver. Specify a specific install location by ‘Browsing your computer to the USB stick and then let Windows search the folder and subfolders for a matching driver. Some devices are identified and installed with Generic drivers; ensure they are also updated i.e. RAID controllers, Audio, graphics. &nbsp;It is recommended that all devices are reviewed before proceeding to next step, this will ensure the lastest drivers are in use on all devices.</div>
+<div>
+</div>
+<div>
+1.4<span class="Apple-tab-span" style="white-space: pre;"> </span>INSTALL AND CAPTURE PROCE</div>
+<div>
+Once all the device drivers have been installed or updated we are in a position to capture these drivers for SCCM.</div>
+<div>
+Navigate to: C:\Windows\System32\DriverStore\FileRepository&nbsp;</div>
+<div>
+Sort this directory by Date modifed. Assuming the day is 29/06/2015 select all folders with this modified date and copy to a subfolder on your USB stick with a suitable name i.e. Dell_E7440_Drivers_Captured_A01</div>
+<div>
+<br /></div>
+<div>
+</div>
+<div>
+1.5<span class="Apple-tab-span" style="white-space: pre;"> </span>IMPORTING DRIVERS INTO SCCM</div>
+<div>
+The drivers identified and copyied into folder Dell_E7440_Drivers_Captured_A01 should now be copied to the SCCM server ready to be imported.</div>
+<div>
+\\PriSCCM01\SOURCES$\OSD\DriverSource\Dell_E7440_Drivers_Captured_A01&nbsp;</div>
+<div>
+1.<span class="Apple-tab-span" style="white-space: pre;"> </span>Import the drivers capture above into SCCM with a unique category&nbsp;</div>
+<div>
+2.<span class="Apple-tab-span" style="white-space: pre;"> </span>Specifying location \\PriSCCM01\SOURCES$\OSD\DriverPackage\Dell_E7440_Driver_Package_A01&nbsp;</div>
+<div>
+3.<span class="Apple-tab-span" style="white-space: pre;"> </span>Create a package and leave update distribution point selected. DO NOT select or update boot images</div>
+<div>
+4.<span class="Apple-tab-span" style="white-space: pre;"> </span>Select all drivers with category and move to subfolder i.e. Drivers\Dell\E7440</div>
+<div>
+</div>
+<div>
+5.<span class="Apple-tab-span" style="white-space: pre;"> </span>Create a similar folder structure within Driver Packages clearly identify drivers packages and models. Move the new driver package from the root locations.</div>
+<div>
+</div>
+<div>
+6.<span class="Apple-tab-span" style="white-space: pre;"> </span>If you review the Driver \\PriSCCM01\SOURCES$\OSD\DriverPackage\Dell_E7440_Driver_Package_A01 this folder has been populated with UUID stype folders and these should not be modified (they are managed by SCCM).</div>
+<div>
+1.6<span class="Apple-tab-span" style="white-space: pre;"> </span>UPDATING THE TASK SEQUENCE</div>
+<div>
+1.<span class="Apple-tab-span" style="white-space: pre;"> </span>To avoid complications during testing copy your live task sequence then modify the ‘Apply Device Drivers’ step.</div>
+<div>
+2.<span class="Apple-tab-span" style="white-space: pre;"> </span>Click ‘Add’ &gt; Apply Driver Package. &nbsp;Modify the Name to reflect model, version etc</div>
+<div>
+3.<span class="Apple-tab-span" style="white-space: pre;"> </span>Browse and select the new driver package</div>
+<div>
+4.<span class="Apple-tab-span" style="white-space: pre;"> </span>Select Options tab</div>
+<div>
+</div>
+<div>
+5.<span class="Apple-tab-span" style="white-space: pre;"> </span>Add a condition. WMI Query will only apply this step if the condition is evaluated to be true.&nbsp;</div>
+<div>
+SELECT * FROM Win32_ComputerSystem WHERE Model LIKE '%Latitude E7440%'</div>
+<div>
+<br /></div>
+<div>
+</div>
+<div>
+<br /></div>
+<div>
+1.7<span class="Apple-tab-span" style="white-space: pre;"> </span>IDENTIFY MISSING DRIVERS</div>
+<div>
+<br /></div>
+<div>
+<br /></div>
+<div>
+Deploy the new task sequence and build the E7440 previously used to capture drivers. After the build is complete review the device manager for any missing drivers. &nbsp;In most cases if if step 1.3 was thourough this will be complete; if drivers are missing install and capture the missing drivers as outlined in step 1.4 and import into SCCM and assign to the Driver package. Ensure the new Driver Package is distributed to all in scope DPs before runnign the Task Sequence again.</div>
+<div>
+<br /></div>

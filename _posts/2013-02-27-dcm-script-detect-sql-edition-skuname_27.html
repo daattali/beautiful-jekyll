@@ -1,0 +1,20 @@
+---
+layout: post
+title: 'DCM Script Detect SQL Edition SKUNAME '
+date: '2013-02-27T09:11:00.003-08:00'
+author: syswow64
+tags:
+- SQL
+- Compliance
+- SCCM
+- enterprise
+- WMI
+- DCM
+- SJUNAME
+- microsoft
+modified_time: '2020-01-17T04:20:29.042-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-5559400975710298206
+blogger_orig_url: https://www.syswow64.co.uk/2013/02/dcm-script-detect-sql-edition-skuname_27.html
+---
+
+<span style="font-size: xx-small;"></span><br />The script below will check if you have&nbsp;a version of SQLServer insalled and Echo the Edition Skuname and process Architecture.&nbsp; This is particulary useful if you deem SQL Server on workstations to be a&nbsp;non-compliant trigger.&nbsp; Now you can validate whether the echoed line is not allowed i.e SQL Server Enterprise<br /><span style="font-size: xx-small;"></span><br /><span style="font-size: xx-small;"></span><br /><span style="font-size: xx-small;">On Error Resume Next<br />' First try SQL Server 2008/2008 R2:<br />Set objWMIService = GetObject("WINMGMTS:\\.\root\Microsoft\SqlServer\ComputerManagement10")<br />If Err.Number &lt;&gt; 0 Then<br />&nbsp;&nbsp;&nbsp; ' Next, try SQL Server 2005:<br />&nbsp;&nbsp;&nbsp; Set objWMIService = GetObject("WINMGMTS:\\.\root\Microsoft\SqlServer\ComputerManagement")<br />&nbsp;&nbsp;&nbsp; If Err.Number &lt;&gt; 0 Then<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ' Next, try SQL Server 2012:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Set objWMIService = GetObject("WINMGMTS:\\.\root\Microsoft\SqlServer\ComputerManagement11")<br />&nbsp;&nbsp;&nbsp; End If<br />End If</span><br /><span style="font-size: xx-small;">Set colItems = objWMIService.ExecQuery( _<br />&nbsp;&nbsp;&nbsp; "select * from SqlServiceAdvancedProperty where SQLServiceType = 1 AND PropertyName = 'SKUNAME'") <br />For Each objItem in colItems <br />&nbsp;&nbsp;&nbsp; Wscript.Echo&nbsp; objItem.PropertyStrValue<br />Next</span><br /><span style="font-size: xx-small;"></span><br />

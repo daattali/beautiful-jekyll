@@ -1,0 +1,44 @@
+---
+layout: post
+title: 'Windows 7 / 8.1 : Dynamically load drivers in a SCCM 2012 task sequence'
+date: '2014-09-22T10:26:00.000-07:00'
+author: syswow64
+tags:
+- MDT
+- Windows 8.1
+- enterprise-it
+- Pre-cache
+- windows
+- NOMAD
+- 1e
+- windows 7
+- MDT database
+- task sequence
+modified_time: '2014-09-22T10:26:51.643-07:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-5131985862365324367
+blogger_orig_url: https://www.syswow64.co.uk/2014/09/windows-7-81-dynamically-load-drivers.html
+---
+
+Windows 7 / 8.1 : Dynamically load drivers in a SCCM 2012 task sequence with Nomad<br />
+<br />
+<br />
+Overview: Within your organisation you have many different types of computer models.&nbsp; You want a single build task sequence that can dynamically select the correct driver package to install with the OS.<br />
+<br />
+<br />
+The Answer: To achieve the dynamic selection it is necessary to implement a MDT 2013 database (supply link) in which the Task Sequence will gather the assigned PackageID based on a Model type WMI query.<br />
+<br />
+<br />
+With this Task Sequence variable %OSDDRIVERPACKAGE% it is possible to use a command line to run an election and locate the PackageID within the local subnet.<br />
+<br />
+<br />
+<strong><br /></strong><br />
+<strong>NomadPackageLocator.exe -Nomad_local -RemoveHTTPLocations -RequireNomad -HideErrorDialog -RestrictPackages=%OSDDRIVERPACKAGE%</strong><br />
+<br />
+<br />
+Then as a follow up step the use of SMSNomad.exe prestage command will query the DP for the package and then download the Package from the winner of the election<br />
+<br />
+<br />
+<strong>SMSNomad.exe --s --Prestage --pp=http://%SMSDP%/SMS_PP_SMSPKG$/%OSDDRIVERPACKAGE%</strong><br />
+<strong><br /></strong><br />
+<strong><em>More details surrounding the database creation, Single Site Store, and things to watch out for in the log to follow.&nbsp; Use the comment field if you wish me to expand on any particular point.</em></strong><br />
+<br />

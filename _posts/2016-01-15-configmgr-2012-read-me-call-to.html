@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'ConfigMgr 2012 [READ ME] Call to HttpSendRequestSync failed for port 443 with
+  status code 403, text: Forbidden'
+date: '2016-01-15T08:57:00.002-08:00'
+author: syswow64
+tags:
+- SCCM 2012
+- Certificates
+- SSL
+- configmgr
+modified_time: '2020-01-17T04:20:27.897-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-3369167220508257310
+blogger_orig_url: https://www.syswow64.co.uk/2016/01/configmgr-2012-read-me-call-to.html
+---
+
+<br />SYMPTOM :<br />======================================================================================<br />MP Control Manager detected management point is not responding to HTTP requests. &nbsp;The HTTP status code and text is 403.<br />======================================================================================<br /><br />CAUSE :<br />======================================================================================<br />Client certificate revocation was enabled.<br />======================================================================================<br /><br />RESOLUTION :<br />======================================================================================<br />In order to resolve the issue We followed a series of steps.<br /><br />1.<span class="Apple-tab-span" style="white-space: pre;"> </span>Checked the Virtual directories of the management Point.<br />2.<span class="Apple-tab-span" style="white-space: pre;"> </span>We were getting Error 403.2, 500.19, 403.14 while browsing the SMS_MP virtual directory.<br />3.<span class="Apple-tab-span" style="white-space: pre;"> </span>We corrected the error 403.2, by enabling the READ permission on HANDLER MAPPINGS. To correct the Error 500.19, we added authenticated users and give them READ and execute permission &nbsp;and at last to correct the 403.14 we enabled the DIRECTORY BROWSING.<br />4.<span class="Apple-tab-span" style="white-space: pre;"> </span>We restarted the SMS EXEC service and IIS but that did not resolve the issue.<br />5.<span class="Apple-tab-span" style="white-space: pre;"> </span>We investigated further IIS logs and found that its giving error 403.13 and 403.16 while connecting to the same SMS_MP Virtual directory.<br />6.<span class="Apple-tab-span" style="white-space: pre;"> </span>To correct the 403.13 error;<br />We created DWORD value DEFAULT SLL CERT CHECK MODE and set the value to 1 to disable the CRL check for Client certificate.<br />7.<span class="Apple-tab-span" style="white-space: pre;"> </span>To correct the 403.16<br />We created two registry values at HKey_Local_Machine\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL;<br />SendTrustedIssuerList = 0 (stop sending list of trusted root certification authorities during the TLS/SSL handshake process)<br />ClientAuthTrustMode = 2 (Set trust mode to Exclusive CA Trust, requires that a client certificate chain to either an intermediate CA certificate or root certificate in the caller-specified trusted issuer store.)<br /><div><br /></div>

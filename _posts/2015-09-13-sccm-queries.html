@@ -1,0 +1,108 @@
+---
+layout: post
+title: SCCM Queries
+date: '2015-09-13T06:34:00.000-07:00'
+author: syswow64
+tags:
+- SQL
+- enterprise-it
+- SCCM 2012
+- uac
+- software microsoft
+- sccm
+- Windows 7
+modified_time: '2015-10-20T01:41:49.574-07:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-5514995850530031517
+blogger_orig_url: https://www.syswow64.co.uk/2012/09/sccm-queries.html
+---
+
+<br />
+<br />
+<strong>Is Installed Query : Internet Explorer 11</strong><br />
+<br />
+select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_SoftwareFile on SMS_G_System_SoftwareFile.ResourceID = SMS_R_System.ResourceId where SMS_G_System_SoftwareFile.FileName = "iexplore.exe" and SMS_G_System_SoftwareFile.FilePath like "%Program Files%" and SMS_G_System_SoftwareFile.FileVersion like "11%"<br />
+<br />
+Or via Applications installed (Control Panel)<br />
+<br />
+select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from&nbsp; SMS_R_System inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "CtrlWork%"<br />
+<br />
+<br />
+<br />
+<br />
+<table><tbody>
+<tr><td colspan="2" valign="top"><br />
+<div align="left">
+Search by Network Name or Last logon username</div>
+<br />
+<br />
+<h3 align="left">
+_Search by Network Name:</h3>
+<br />
+<div align="left">
+select Name, IPAddresses, LastLogonUserName, MACAddresses, ResourceId, ResourceType from&nbsp; SMS_R_System where Name like ##PRM:SMS_R_System.Name## order by Name, IPAddresses, LastLogonUserName, MACAddresses</div>
+<br />
+<div align="left">
+<br /></div>
+<br />
+<br />
+<h3 align="left">
+_Search by Last Logon Username:</h3>
+<br />
+<div align="left">
+select Name, LastLogonUserName, IPAddresses, MACAddresses, ResourceId, ResourceType from&nbsp; SMS_R_System where LastLogonUserName like ##PRM:SMS_R_System.LastLogonUserName## order by Name, LastLogonUserName, IPAddresses, MACAddresses</div>
+<br />
+<div align="left">
+<br /></div>
+<br />
+<br />
+<h3 align="left">
+_Search Application AddRemove Name:</h3>
+<br />
+<div align="left">
+select SMS_R_System.Name, SMS_R_System.IPAddresses, SMS_R_System.LastLogonUserName, SMS_R_System.MACAddresses, SMS_R_System.ResourceId, SMS_R_System.ResourceType from&nbsp; SMS_R_System inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like ##PRM:SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName## order by SMS_R_System.Name, SMS_R_System.IPAddresses, SMS_R_System.LastLogonUserName, SMS_R_System.MACAddresses</div>
+<br />
+<div align="left">
+<br /></div>
+<br />
+<br />
+<h3 align="left">
+_Search&nbsp;Active Directory Security Groups:</h3>
+<br />
+<div align="left">
+(Contains data only from AD Security Group Discovery, not NT User Group Discovery.)</div>
+<br />
+<div align="left">
+select Name, UsergroupName, WindowsNTDomain, NetworkOperatingSystem, AgentName, AgentSite, AgentTime, ResourceId, ResourceType, UniqueUsergroupName from sms_r_usergroup where AgentName = "SMS_AD_SECURITY_GROUP_DISCOVERY_AGENT"</div>
+<br />
+<div align="left">
+<br /></div>
+<br />
+<br />
+<h3 align="left">
+_Package ID:</h3>
+<br />
+<div align="left">
+select packageid, name from sms_package</div>
+<br />
+<div align="left">
+<br /></div>
+<br />
+<br />
+<h3 align="left">
+_Collection ID:</h3>
+<br />
+<div align="left">
+select collectionid, name from sms_collection<br />
+<br />
+<h3>
+_AD User group Collection</h3>
+<br />
+select<br />
+<br />
+SMS_R_USER.ResourceID,SMS_R_USER.ResourceType,SMS_R_USER.Name,SMS_R_USER.UniqueUserName,SMS_R_USER.WindowsNTDomain<br />
+<br />
+from SMS_R_User<br />
+<br />
+where SMS_R_User.UserGroupName = "&lt;Domain&gt;\\&lt;AD Group&gt;"</div>
+<br /></td></tr>
+</tbody></table>

@@ -1,0 +1,33 @@
+---
+layout: post
+title: Script Windows 7 Library
+date: '2013-01-03T06:37:00.001-08:00'
+author: syswow64
+tags:
+modified_time: '2013-03-20T08:13:33.476-07:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-4414065284240870448
+blogger_orig_url: https://www.syswow64.co.uk/2013/01/script-windows-7-library.html
+---
+
+<b>
+Question: 
+</b>
+ What is the best way to script the creation of a Window 7 Library item within Explorer?
+
+</br>
+</br>
+
+<b>
+Answer: 
+</b>
+</br>
+</br>
+Set oShell = CreateObject( "WScript.Shell" )<br />userp=oShell.ExpandEnvironmentStrings("%userprofile%")<br />
+strFolder = "" &amp; userp &amp; "\Documents\SymantecCloudBackup"<br />set objFSO = createobject("Scripting.FileSystemObject")
+
+</br>
+</br>
+
+if objFSO.FolderExists(strFolder) = False then<br />&nbsp;objFSO.CreateFolder strFolder<br /><br />else<br /><br />end if<br />
+WScript.Sleep 3000<br />
+set objShell = wscript.createObject("wscript.shell") <br />shlib1 = "cmd.exe /C C:\ProgramData\1E\NomadBranch\LDC0032F_Cache\shlib create %userprofile%\AppData\Roaming\Microsoft\Windows\Libraries\SymantecCloudBackup.library-ms"<br />shlib2 = "cmd.exe /C C:\ProgramData\1E\NomadBranch\LDC0032F_Cache\shlib add %userprofile%\AppData\Roaming\Microsoft\Windows\Libraries\SymantecCloudBackup.library-ms " &amp; strFolder &amp; ""<br />objShell.Run shlib1<br />objShell.Run shlib2

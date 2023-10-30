@@ -1,0 +1,18 @@
+---
+layout: post
+title: 'Windows 8.1: How to install .NET 3.5'
+date: '2014-09-22T10:00:00.003-07:00'
+author: syswow64
+tags:
+- ".net"
+- Windows 8.1
+- enterprise-it
+- windows
+- 1e
+- Windows update
+modified_time: '2020-01-17T04:20:28.562-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-2763572509362476908
+blogger_orig_url: https://www.syswow64.co.uk/2014/09/windows-81-how-to-install-net-35_22.html
+---
+
+Windows 8.1: How to install .NET 3.5<br /><br />Overview: When you try to install .NET 3.5 through the control panel you have the choice to search Windows update servers or specify media.&nbsp; In either case you are unable to install .NET with an error.<br /><br /><br />The solution:<br />1. Copy the d:\SXS folder from the media to the C drive.<br />2. Open and Administrator command prompt.<br />3. Type: <br />dism.exe /online /enable-feature /featurename:NetFX3 /Source:c:\sxs /<br />4. .NET has been successfully installed.
