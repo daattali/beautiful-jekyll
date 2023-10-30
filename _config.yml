@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: End User Computing Blog
 
 # Your name to show in the footer
-author: Some Person
+author: Jonathan Proctor
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://syswow64.co.uk"
 
 ################
 # --- Logo --- #
