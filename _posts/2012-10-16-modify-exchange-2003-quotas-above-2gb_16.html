@@ -1,0 +1,21 @@
+---
+layout: post
+title: |-
+  Modify Exchange 2003 Quotas above the 2Gb GUI AD Users and Computers
+  Limit
+date: '2012-10-16T05:08:00.001-07:00'
+author: syswow64
+tags:
+- computer
+- technology
+- adsi
+- quotas
+- 2gb
+- Exchange
+- Software
+modified_time: '2020-01-17T04:20:30.296-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-3557890382658021770
+blogger_orig_url: https://www.syswow64.co.uk/2012/10/modify-exchange-2003-quotas-above-2gb_16.html
+---
+
+<b><ins>Modify Exchange 2003 Quotas above the 2Gb GUI AD Users and Computers Limit</ins></b><br/><ol><br/>	<li>Login to DC with ADSI Edit installed</li><br/>	<li>Create an MMC and add the ADSI Edit snap in</li><br/>	<li>Connect to the domain</li><br/>	<li>Navigate through ADIS Edit GUI to find user</li><br/>	<li>Right click and choose "properties"</li><br/>	<li>Modify these values</li><br/></ol><br/><a href="https://wiki.snellgroup.com/pages/createpage.action?spaceKey=IT&amp;title=MDBOverQuotaLimit&amp;linkCreation=true&amp;fromPageId=5540378">MDBOverQuotaLimit</a> (Prohibit Send at.... value)<br/><br/><a href="https://wiki.snellgroup.com/pages/createpage.action?spaceKey=IT&amp;title=MDBStorageQuota&amp;linkCreation=true&amp;fromPageId=5540378">MDBStorageQuota</a> (Issue Warning at....value)<br/><br/>e.g.<br/><br/>Set <a href="https://wiki.snellgroup.com/pages/createpage.action?spaceKey=IT&amp;title=MDBOverQuotaLimit&amp;linkCreation=true&amp;fromPageId=5540378">MDBOverQuotaLimit</a> = "3000000" to set a 3.0Gb limit<br/><br/>Set <a href="https://wiki.snellgroup.com/pages/createpage.action?spaceKey=IT&amp;title=MDBStorageQuota&amp;linkCreation=true&amp;fromPageId=5540378">MDBStorageQuota</a> = "2800000" to set a 2.8Gb warning

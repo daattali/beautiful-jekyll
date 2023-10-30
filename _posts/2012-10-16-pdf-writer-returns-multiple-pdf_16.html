@@ -1,0 +1,15 @@
+---
+layout: post
+title: PDF writer returns multiple PDF documents not just one!
+date: '2012-10-16T04:55:00.001-07:00'
+author: syswow64
+tags:
+- excel
+- Software
+- pdf writer
+modified_time: '2020-01-17T04:20:30.475-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-8014623260491894108
+blogger_orig_url: https://www.syswow64.co.uk/2012/10/pdf-writer-returns-multiple-pdf_16.html
+---
+
+Q) When i go to produce a PDF from an Excel spreadsheet, it will break my multi worksheet document into several PDF requests.<br/><br/>A) The issue was caused by having different page properties on different worksheets. When sent through the Adobe PDF printer (or Cute PDF) as soon as it got to a worksheet with different properties is will see it as a different request and prompts for a PDF file name.<br/><br/>To resolve this issue see below.<br/><br/>1 Right click a worksheet and "select all sheets"<br/>2 Select 'Page Layout' tab and 'Print Titles'<br/>3 On the 'Page' tab select the print quality to 600 DPI and click OK<br/><br/>This will make a change on all worksheets, and if you go to file print or through Acrobat &gt; combine it will convert all

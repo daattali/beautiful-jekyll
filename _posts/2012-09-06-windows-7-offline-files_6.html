@@ -1,0 +1,15 @@
+---
+layout: post
+title: Windows 7 Offline Files
+date: '2012-09-06T06:53:00.002-07:00'
+author: syswow64
+tags:
+- offline files
+- enterprise-it
+- windows 7
+modified_time: '2017-08-03T00:42:55.975-07:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-6082856936497718617
+blogger_orig_url: https://www.syswow64.co.uk/2012/09/windows-7-offline-files_6.html
+---
+
+<table><br/><tbody><br/><tr><br/><td colspan="2" valign="top"><br/><p align="left">How to completely remove Offline files.</p><br/><p align="left">1. Navigate to the following location in the registry:<br/><strong>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Csc\Parameters</strong></p><br/><p align="left">2. Create a new <strong>DWORDValue</strong> called <strong>FormatDatabase</strong> , with the value <strong>1</strong><br/>3. Reboot (the new key we created will delete itself after rebooting along with the Offline cache)</p><br/></td><br/></tr><br/></tbody><br/></table>

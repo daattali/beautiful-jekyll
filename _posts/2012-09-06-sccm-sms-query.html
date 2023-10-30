@@ -1,0 +1,16 @@
+---
+layout: post
+title: SCCM SMS Query
+date: '2012-09-06T06:54:00.000-07:00'
+author: syswow64
+tags:
+- technology
+- enterprise-it
+- business
+- software
+modified_time: '2012-12-31T06:42:52.474-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-309435568968100431
+blogger_orig_url: https://www.syswow64.co.uk/2012/09/sccm-sms-query.html
+---
+
+How to query for an application but exclude another defined query.<br/><br/>This would be useful if you want to only target a specific kind of computer. For example when upgrading from Office 2003 to Office 2007 and you want to keep Access 2003 present. You want to target only computer with office 2003 that have no sign of 2007.<br/><br/>Create a query that target all instance of 2007 (collectionid 'S010014D')<br/><br/>select SMS_R_System.ResourceID,SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier,<br/><br/>SMS_R_System.ResourceDomainORWorkgroup,SMS_R_System.Client from SMS_R_System inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName = "Microsoft Office Professional Plus 2007"<br/><br/>Then create another query searches for all instances of 2003 excluding the previous query results.<br/><br/>select SMS_R_System.ResourceID,SMS_R_System.ResourceType,SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier,<br/><br/>SMS_R_System.ResourceDomainORWorkgroup,SMS_R_System.Client from SMS_R_System inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName = "Microsoft Office Professional Edition 2003" and SMS_R_System.ResourceId not in (SELECT ResourceID FROM SMS_FullCollectionMembership WHERE collectionid IN('S010014D'))

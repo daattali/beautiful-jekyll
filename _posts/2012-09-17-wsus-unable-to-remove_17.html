@@ -1,0 +1,15 @@
+---
+layout: post
+title: WSUS unable to remove
+date: '2012-09-17T01:29:00.001-07:00'
+author: syswow64
+tags:
+- enterprise-it
+- wsus
+- microsoft
+modified_time: '2020-01-17T04:20:31.251-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-2738271629682699841
+blogger_orig_url: https://www.syswow64.co.uk/2012/09/wsus-unable-to-remove_17.html
+---
+
+<p>If you are unable to remove WSUS in order to reinstall. <br />Open regedit and go to the following key :</p><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Update Services\Server\Setup\"wYukonInstalled"=dword:00000001</p><p>Change the value from 1 to 0</p>

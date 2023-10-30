@@ -1,0 +1,21 @@
+---
+layout: post
+title: 'Logs in c:\windows\system32\LogFiles\W3SVC1 filling up C: drive'
+date: '2012-10-19T01:25:00.000-07:00'
+author: syswow64
+tags:
+- computer
+- command c
+- logfiles
+- server 2008
+- cmd exe
+- Software
+- Scripts
+- IIS
+- Windows 7
+modified_time: '2012-12-31T06:39:52.197-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-7827872991519830903
+blogger_orig_url: https://www.syswow64.co.uk/2012/10/logs-in-cwindowssystem32logfilesw3svc1.html
+---
+
+A solution is to periodically purge the oldest logfiles. This is easily done by creating a scheduled task with following command:<br/><br/>C:\&gt;Forfiles.exe /P C:\WINDOWS\system32\LogFiles\W3SVC1 /M *.log /D -30 /C "Cmd.exe /C del @path"<br/><br/>&nbsp;<br/><br/>See <a href="http://technet.microsoft.com/en-us/library/cc753551(v=ws.10).aspx">http://technet.microsoft.com/en-us/library/cc753551(v=ws.10).aspx</a>

@@ -1,0 +1,12 @@
+---
+layout: post
+title: CA ARCserve Error E12532
+date: '2012-09-19T05:58:00.001-07:00'
+author: syswow64
+tags:
+modified_time: '2020-01-17T04:20:31.106-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-3393961009542248818
+blogger_orig_url: https://www.syswow64.co.uk/2012/09/ca-arcserve-error-e12532_19.html
+---
+
+<strong>The volume shadow service provider was unable to complete the operation as it has insufficient storage space. Check the volume shadow service use limit.</strong><br/><br/>Log onto the server that failed to backup and open a command prompt.<br/><br/>Type: vssadmin list writers<br/><br/>all writers should be in a stable state<br/><br/>If not see <a href="http://support.microsoft.com/kb/940184" target="_blank">http://support.microsoft.com/kb/940184</a><br/><br/>NOTE: check server has suitable disk space.

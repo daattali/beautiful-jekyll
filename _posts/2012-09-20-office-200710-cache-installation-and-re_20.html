@@ -1,0 +1,14 @@
+---
+layout: post
+title: Office 2007/10 Cache installation and re-installation
+date: '2012-09-20T08:41:00.001-07:00'
+author: syswow64
+tags:
+- enterprise-it
+- office. microsoft
+modified_time: '2017-08-03T00:42:55.557-07:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-7886751019068132002
+blogger_orig_url: https://www.syswow64.co.uk/2012/09/office-200710-cache-installation-and-re_20.html
+---
+
+<ol><br/>	<li>On the network installation point, open the Config.xml file in a text editor, such as Notepad. For information about the Config.xml file, see <a href="http://technet.microsoft.com/en-us/library/cc179195.aspx">Config.xml file in Office 2010</a>.<br/><br/>By default, Config.xml is located in the core product folder for the Office product that you are installing. For example, if you install Microsoft Office Professional Plus 2010, open the Config.xml file in the ProPlus.WW folder.</li><br/>	<li>Find the <strong>LIS</strong> element (<strong>&lt;LIS&gt;</strong>); remove the comment marks in the line by deleting the opening <strong>&lt;!--</strong> and closing <strong>--&gt;</strong> tags.</li><br/>	<li>Set the <strong>&lt;CACHEACTION&gt;</strong> attribute to <strong>"CacheOnly"</strong>.<br/><br/>The line in Config.xml should look as shown in the following example.<br/><div><br/><div></div><br/><div><br/><div></div><br/><div id="CodeSnippetContainerCode_390400b5-e1f9-45d4-932f-bcdf24b54c0d" dir="ltr"><br/><div><br/><pre>&lt;LIS CACHEACTION="CacheOnly" /&gt;</pre><br/></div><br/></div><br/></div><br/></div></li><br/>	<li>Save the Config.xml file.</li><br/>	<li>Run Setup.exe on users' computers; on the Setup command line, specify the path of the modified Config.xml file.<br/><br/>You must use a fully qualified path. For example: <strong>\\server\share\Office14\setup.exe /config </strong><strong>\\server\share\Office14\ProPlus.WW\Config.xml</strong><br/><br/>where <em>Office14</em> is the root of the network installation point.</li><br/></ol><br/>How to run another cache install (i.e with a different language).  Best to remove the first cached installed by specifying the RemoveCacheOnly command in the config.xml file.<br/><br/>If you precache the local installation source on users' computers and then later have to remove it, you can set the <strong>&lt;CACHEACTION&gt;</strong> attribute to <strong>"RemoveCacheOnly"</strong> and run Setup again. This setting works only if users have not yet installed Office.
