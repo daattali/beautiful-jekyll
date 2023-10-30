@@ -1,0 +1,12 @@
+---
+layout: post
+title: SCCM Task Sequence Variables Get-TSVariables
+date: '2016-06-09T07:30:00.003-07:00'
+author: syswow64
+tags:
+modified_time: '2020-01-17T04:20:27.523-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-6609359654228369865
+blogger_orig_url: https://www.syswow64.co.uk/2016/06/sccm-task-sequence-variables-get_9.html
+---
+
+<div class="MsoListParagraph" style="mso-list: l0 level1 lfo1; text-indent: -18.0pt;"><!--[if !supportLists]--><span style="color: #1f497d; mso-bidi-font-family: Calibri; mso-fareast-font-family: Calibri;">1.<span style="font-size: 7pt; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="color: #1f497d;">If you embed the following script into the task sequence (new command line with package) it will output all variables and you can confirm the value applied.<o:p></o:p></span></div><div class="MsoListParagraph"><span style="color: #1f497d;"><a href="http://deploymentresearch.com/Research/Post/475/List-Task-Sequence-Variables-in-SCCM-2012">http://deploymentresearch.com/Research/Post/475/List-Task-Sequence-Variables-in-SCCM-2012</a><o:p></o:p></span></div><div class="MsoListParagraph"><br /></div><div class="MsoListParagraph"><span style="color: #1f497d;">cscript EnumTSVariables.vbs &gt; X:\Result.txt<o:p></o:p></span></div><div class="MsoListParagraph"><span style="color: #1f497d;">‘Script<o:p></o:p></span></div><div class="MsoListParagraph"><br /></div><div class="MsoListParagraph"><span style="color: #1f497d;">Dim oTSEnv <o:p></o:p></span></div><div class="MsoListParagraph"><br /></div><div class="MsoListParagraph"><span style="color: #1f497d;">Set oTSEnv = CreateObject("Microsoft.SMS.TSEnvironment") <o:p></o:p></span></div><div class="MsoListParagraph"><br /></div><div class="MsoListParagraph"><span style="color: #1f497d;">Dim oVar<o:p></o:p></span></div><div class="MsoListParagraph"><br /></div><div class="MsoListParagraph"><span style="color: #1f497d;">For Each oVar In oTSEnv.GetVariables<o:p></o:p></span></div><div class="MsoListParagraph"><span style="color: #1f497d;">&nbsp;&nbsp;&nbsp; WScript.Echo " "<o:p></o:p></span></div><div class="MsoListParagraph"><span style="color: #1f497d;">&nbsp;&nbsp;&nbsp; WScript.Echo "&nbsp; "&amp; oVar &amp; vbTab &amp; oTSEnv(oVar) &amp; vbTab<o:p></o:p></span></div><br /><div class="MsoListParagraph"><span style="color: #1f497d;">Next<o:p></o:p></span></div>

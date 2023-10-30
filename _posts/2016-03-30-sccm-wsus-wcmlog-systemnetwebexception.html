@@ -1,0 +1,76 @@
+---
+layout: post
+title: 'SCCM WSUS WCM.log - System.Net.WebException: The request failed with HTTP
+  status 404'
+date: '2016-03-30T03:14:00.001-07:00'
+author: syswow64
+tags:
+modified_time: '2016-04-07T20:46:08.502-07:00'
+thumbnail: https://1.bp.blogspot.com/-_YH3y0Ob814/VvuleJiYwhI/AAAAAAAABNE/BQk1RTlObuUC0dGh-BlOAytysaHVkSk-g/s72-c/WCMLog.jpg
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-7806833863578753477
+blogger_orig_url: https://www.syswow64.co.uk/2016/03/sccm-wsus-wcmlog-systemnetwebexception.html
+---
+
+System.Net.WebException: The request failed with HTTP status 404: Not Found.~~ &nbsp; at Microsoft.UpdateServices.Administration.AdminProxy.CreateUpdateServer(Object[] args)~~ &nbsp; at Microsoft.SystemsManagementServer.WSUS.WSUSServer.ConnectToWSUSServer(String ServerName, Boolean UseSSL, Int32 PortNumber)<br />
+<br />
+<b>Overview:</b><br />
+<br />
+I was recently working with a customer who was receiving a HTTP 404 error in the WCM.log.<br />
+<br />
+<ul>
+<li>Confirmed the following ports are open (80,443,135,445,8530,8531)</li>
+<li>WSUS sites are accessible via URL HTTP</li>
+<li>Boundaries and Boundary groups for content and site assignment are configured correctly for DEV domain.</li>
+<li>Distribution Point and Management Point roles are fully functionality</li>
+<li>WSUS on Server2.dev.local manually synchronized from the Internet</li>
+<li>Remote Registry and remote WMI tested with success.</li>
+</ul>
+<br />
+<div>
+<div class="MsoNormal">
+<b>Lab Environment Expected behaviour:</b></div>
+<div class="MsoNormal">
+<br /></div>
+<div class="MsoNormal">
+In my lab environment I have two forests/domains “Contoso.local” and “DEV20.local”; untrusted; Windows firewall ON with default values.</div>
+<div class="MsoNormal">
+<br /></div>
+<div class="MsoNormal">
+</div>
+<ul>
+<li>I have added the Site System server role (SUP) to Dev20.local &nbsp;with a “WSUS Server Connection Account” (DEV20\LabAdmin).</li>
+<li>In the WCM.log (Fig1) you can see the successful connection to the dev2 server. Once this connection is made the WSUS installation is configured as a downstream server and the site will synchronize.</li>
+<li>Wireshark (Fig2) reveals the connection address, Src +Dst Ports, and the authentication negotiation between the domains and importantly a success connection.</li>
+<li>I have not been able to recreate the “System.Net.WebException: The request failed with HTTP status 404: Not Found” error within my lab most likely due to the specific infrastructure setup at Client site&nbsp;&nbsp;(Proxy, Firewall rules)&nbsp;</li>
+</ul>
+<br />
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-_YH3y0Ob814/VvuleJiYwhI/AAAAAAAABNE/BQk1RTlObuUC0dGh-BlOAytysaHVkSk-g/s1600/WCMLog.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="186" src="https://1.bp.blogspot.com/-_YH3y0Ob814/VvuleJiYwhI/AAAAAAAABNE/BQk1RTlObuUC0dGh-BlOAytysaHVkSk-g/s400/WCMLog.jpg" width="400" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+Fig 1</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-J1QNde9cXKE/Vvuon02CEQI/AAAAAAAABNU/ZTYFRRbCR3kUXAJWeaaPtjpwwfqog7MNg/s1600/WireShark.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="210" src="https://1.bp.blogspot.com/-J1QNde9cXKE/Vvuon02CEQI/AAAAAAAABNU/ZTYFRRbCR3kUXAJWeaaPtjpwwfqog7MNg/s400/WireShark.jpg" width="400" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+Fig 2</div>
+<div>
+<b>Solution</b>:</div>
+<div>
+Remove the Proxy configurations from both the Site Server and Site System. While the site may not Synchronize with Microsoft Update servers, it will still allow connectivity between the Site Server and the Site System. Restart the SMS_Executive Service and review the WCM.log</div>
+<div>
+<br /></div>
+<div>
+This proved that the issue at the client site was Proxy related. Sounds like the proxy bypass rules in IE don't seem to apply to the SCCM proxy configuration. dev.local lookups should bypass the proxy.</div>
+<div>
+Client to check rules on the proxy that can intercept traffic bound for non port 80/443 ports and forward accordingly (external sites on random ports). Client to intercept the dev.local traffic on the Proxy server and forward from the DMZ back into dev.local</div>
+<div class="MsoListParagraph" style="mso-list: l0 level1 lfo1; text-indent: -18.0pt;">
+<span style="font-family: &quot;calibri&quot; , sans-serif; font-size: 11.0pt;"><br /><!--[endif]--></span></div>
+<div class="MsoListParagraph" style="mso-list: l0 level1 lfo1; text-indent: -18.0pt;">
+<span style="color: #1f497d;"><br /></span></div>
+<div class="MsoListParagraph" style="mso-list: l0 level1 lfo1; text-indent: -18.0pt;">
+<span style="color: #1f497d;"><br /></span></div>
+</div>

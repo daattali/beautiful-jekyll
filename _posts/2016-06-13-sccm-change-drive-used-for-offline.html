@@ -1,0 +1,16 @@
+---
+layout: post
+title: SCCM - Change the drive used for offline servicing of OSD images
+date: '2016-06-13T02:39:00.003-07:00'
+author: syswow64
+tags:
+- SCCM
+- OSD
+- SCCM 2012
+- WMI
+modified_time: '2020-01-17T04:20:27.489-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-7000026271733590519
+blogger_orig_url: https://www.syswow64.co.uk/2016/06/sccm-change-drive-used-for-offline.html
+---
+
+<h2>Change the drive used for offline servicing of OSD images</h2><br />Offline Servicing OSD images wihin SCCM is a useful feature. &nbsp;I have heard SCCM Professional say it is good and bad but this post is is specifically around changing the default location used to stage the Windows image.<br /><br />By default SCCM will use the drive in which the Configuration Manager is installed (i.e. Drive E) even if it is running low on diskspace. &nbsp;But assuming you have a new drive F: with plenty of space the procedure below will details how to change this.<br /><br />Assuming your site code is P01<br />Launch wbemtest.exe and connect to: &nbsp;root\sms\site_P01<br /><br />Click Query and enter:&nbsp;SELECT * FROM SMS_SCI_Component WHERE SiteCode=’P01’ AND ItemName LIKE ‘SMS_OFFLINE_SERVICING_MANAGER%’<br /><br />Double click the &nbsp;query result<br />Double click Props (Scroll down second from bottom)<br />Click View Embedded<br />There will be four entries listed. Through a process of trial and error double click each one looking for PropertyName field "StagingDrive"<br /><br />Change the Value1 in the list to F: (see above new drive with plenty of space)<br /><br />Save Object<br />Click Close<br />Click Save Property<br />Click Save Object<br />Click close.

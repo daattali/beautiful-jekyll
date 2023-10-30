@@ -1,0 +1,12 @@
+---
+layout: post
+title: SCCM - Create Client Authentication Certificate for Workgroup machine
+date: '2016-03-16T02:18:00.002-07:00'
+author: syswow64
+tags:
+modified_time: '2020-01-17T04:20:27.603-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-5697629206709793100
+blogger_orig_url: https://www.syswow64.co.uk/2016/03/sccm-create-client-authentication_16.html
+---
+
+Content of ConfigMgrClientCertificateWorkgroup.inf<br /><br />[NewRequest]<br />Subject = "CN=WorkgroupServerName"<br />MachineKeySet = True<br />Exportable = TRUE<br />KeyLength = 2048<br />[RequestAttributes]<br />CertificateTemplate = ConfigMgrClientCertificateWorkgroup<br /><br /><br />Certreq -new ConfigMgrClientCertificateWorkgroup.inf ConfigMgrClientCertificateWorkgroup.req<br /><br />certreq -submit ConfigMgrClientCertificateWorkgroup.req ConfigMgrClientCertificateWorkgroup.cer<br />Select DomainControllerName<br /><br />certreq -accept ConfigMgrClientCertificateWorkgroup.cer<br /><br />Open MMC Certificates Machine and export Cert with private keys<br /><br />Import New Cert into into Workgroup system certificate store<br />Import Trusted Root Cert - Local-CA<br /><br />Install CCMSetup with following command line<br /><br />ccmsetup.exe SMSSITECODE=P01 DNSSUFFIX=domain.co.uk /UsePKICert /NOCRLCheck CCMHOSTNAME="IBCM.domain.co.uk"<br /><br />Open LocationServices.log and look for the following entry<br /><br />LSUpdateInternetManagementPoints: Successfully refreshed internet MPs from MP ibcm.domain.co.uk.
