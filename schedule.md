@@ -4,8 +4,6 @@ title: Session Schedule
 subtitle: Our coaching session schedule
 ---
 
-Coaching sessions will be held in the RMS Commons.
-
 The homework packet used for the Fundamentals sessions on Mondays may be downloaded [here](/files/Homework%20Packet.pdf). The 10-question assignment for each
 Fundamentals session comes from this packet. For example, when the _Factorials_ stretch is being covered, you only need to complete the 10-question
 section under the _Factorials_ header in the packet. It is expected that all members will attempt to complete the assignment 
@@ -16,6 +14,8 @@ The Mathcounts Toolkit can be downloaded [here](/files/Mathcounts%20Toolkit.pdf)
 _Cancelled_ sessions are in _italics_. If a session is cancelled via email, then that takes precedence over this schedule.
 
 Sessions in (parentheses) are competitions. There won't be normal sessions on competition days. Only attend if you are [registered for that competition](/competitions).
+
+**Coaching Location: RMS Commons**
 
 | Week Of	| Fundamentals (Mon 4:30-5:30)		| Competition Training (Wed 3:30-4:30)  | Variety (Fri 4:30-5:30)   |
 | ------- | ------------------------------- | ------------------------------------- | ------------------------- |
