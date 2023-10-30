@@ -13,7 +13,7 @@
 title: End User Computing Blog
 
 # Your name to show in the footer
-author: .Jonathan Proctor.
+author: Jonathan Proctor
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -50,13 +50,13 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "JP@syswow64.co.uk"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  #facebook: deanattali
+  github: systemcenterblog
+  twitter: syswow64blog
+  #patreon: DeanAttali
+  youtube: @MicrosoftIntune
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
