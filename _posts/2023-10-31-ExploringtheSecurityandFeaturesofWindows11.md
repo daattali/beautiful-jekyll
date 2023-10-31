@@ -3,6 +3,9 @@ layout: post
 title: "Exploring the Security and Features of Windows 11"
 date: 2023-10-31
 author: Your Name
+cover-img: /assets/img/Windows11.jpg
+thumbnail-img: /assets/img/Windows11thumb.png
+share-img: /assets/img/Windows11.jpg
 categories: [Operating Systems, Windows]
 ---
 2023-10-30-Post1.md
