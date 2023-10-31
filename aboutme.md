@@ -10,13 +10,13 @@ Highly skilled and experienced client-focused technology services manager with a
 
 
 ### Certifications
-Microsoft® Certified Solutions Associate: Windows 10
-Microsoft® Certified Solutions Expert: Mobility
-Microsoft Specialist: Windows 7, Configuring
-Microsoft Specialist: Server Virtualization with Windows Server Hyper-V and System Center
-Microsoft Certified Professional
-Microsoft® Certified Technology Specialist: Windows Server 2008 Active Directory, Configuration
-Microsoft® Certified Technology Specialist: Windows Server 2008 Network Infrastructure, Configuration
+-Microsoft® Certified Solutions Associate: Windows 10
+-Microsoft® Certified Solutions Expert: Mobility
+-Microsoft Specialist: Windows 7, Configuring
+-Microsoft Specialist: Server Virtualization with Windows Server Hyper-V and System Center
+-Microsoft Certified Professional
+-Microsoft® Certified Technology Specialist: Windows Server 2008 Active Directory, Configuration
+-Microsoft® Certified Technology Specialist: Windows Server 2008 Network Infrastructure, Configuration
 
 ### LinkedIn
 
