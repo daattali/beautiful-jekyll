@@ -15,7 +15,7 @@ Microsoft's Windows operating system has come a long way in terms of both design
 
 ## **Sleek Design and Productivity Enhancements**
 
-![Windows11](/assets/img/Windows11.jpg){:class="img-responsive"}
+![Windows11](/assets/img/Windows11.jpg)
 
 The first thing you'll notice about Windows 11 is its sleek and modern design. The Start menu is centered, with a clean and minimalist taskbar. This design overhaul not only improves aesthetics but also aids in productivity. Features like Snap Layouts and Snap Groups make multitasking more intuitive, allowing you to arrange and manage open windows more efficiently.
 
