@@ -4,7 +4,7 @@ title: "Exploring the Security and Features of Windows 11"
 date: 2023-10-31
 author: Jonathan Proctor
 cover-img: /assets/img/Windows11.jpg
-thumbnail-img: /assets/img/Windows11thumb.png
+thumbnail-img: /assets/img/Windows11thumb.jpg
 share-img: /assets/img/Windows11.jpg
 categories: [Operating Systems, Windows]
 ---
