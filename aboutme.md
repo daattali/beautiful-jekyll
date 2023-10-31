@@ -1,16 +1,23 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: End User Computing Manager
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Jonathan Proctor. I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Highly skilled and experienced client-focused technology services manager with a strong background in engineering modern desktop solutions and supporting infrastructure. Proficient in the low-level design and engineering of solutions including Intune, Windows 10/11, Autopilot, Group Policy, Configuration Policy, and Conditional Access Policies. Experienced in the engineering of supporting infrastructure and toolsets, and proficient in the development and maintenance of technical documentation. Proven track record of managing a team of 9 senior engineers and delivering successful technology solutions to support the company's IT and business strategies. Committed to staying up to date on the latest industry trends and developments and delivering world-class expertise and innovative solutions.
 
-What else do you need?
 
-### My story
+### Certifications
+Microsoft® Certified Solutions Associate: Windows 10
+Microsoft® Certified Solutions Expert: Mobility
+Microsoft Specialist: Windows 7, Configuring
+Microsoft Specialist: Server Virtualization with Windows Server Hyper-V and System Center
+Microsoft Certified Professional
+Microsoft® Certified Technology Specialist: Windows Server 2008 Active Directory, Configuration
+Microsoft® Certified Technology Specialist: Windows Server 2008 Network Infrastructure, Configuration
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### LinkedIn
+
+https://www.linkedin.com/in/syswow64/
