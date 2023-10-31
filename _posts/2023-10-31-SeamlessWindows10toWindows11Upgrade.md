@@ -2,7 +2,7 @@
 layout: post
 title: "Seamless Windows 10 to Windows 11 Upgrade with ConfigMgr and Intune WuFB"
 date: 2023-10-31
-author: Your Name
+author: Jonathan Proctor
 categories: [Windows, IT, Configuration Management]
 ---
 
