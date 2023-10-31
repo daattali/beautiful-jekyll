@@ -2,13 +2,13 @@
 layout: post
 title: "Exploring the Security and Features of Windows 11"
 date: 2023-10-31
-author: Your Name
+author: Jonathan Proctor
 cover-img: /assets/img/Windows11.jpg
 thumbnail-img: /assets/img/Windows11thumb.png
 share-img: /assets/img/Windows11.jpg
 categories: [Operating Systems, Windows]
 ---
-2023-10-30-Post1.md
+
 # Introduction
 
 Microsoft's Windows operating system has come a long way in terms of both design and security. With the release of Windows 11, users can expect a more streamlined and visually appealing experience while also benefiting from enhanced security features. In this blog post, we'll explore the security and features of Windows 11.
