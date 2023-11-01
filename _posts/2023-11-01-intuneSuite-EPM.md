@@ -12,7 +12,7 @@ comments: true
 ---
 
 {: .box-success}
-This is a post about my experiences with Endpoint Priviledge Management.  I strongly encourage you to [take 5 minutes to ready Sandy Zeng learn how to write in markdown](https://msendpointmgr.com/2023/03/25/intune-suite-epm-first-look/) - This post will provide my own how to guide.
+This is a post about my experiences with Endpoint Priviledge Management.  I strongly encourage you to [take 5 minutes to read Sandy Zeng take on EPM](https://msendpointmgr.com/2023/03/25/intune-suite-epm-first-look/) - This post will provide my own how to guide.
 
 **Here is some bold text**
 
