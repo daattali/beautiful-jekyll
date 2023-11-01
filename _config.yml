@@ -22,6 +22,7 @@ author: Jonathan Proctor
 navbar-links:
   About Me: "aboutme"
   Resources:
+    - MSEndpointMgr: "https://msendpointmgr.com/"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://syswow64.co.uk"
