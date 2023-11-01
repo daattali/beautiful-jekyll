@@ -38,7 +38,7 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 19-Feb	| _No School_ 	                	|                                       |                           |
 | 26-Feb	| Sequences			                	|                                       |                           |
 | 4-Mar	  | Systems of Equations            |                                       | _No School_               |
-| 11-Mar	| Travel                    			|                                       |                           |
+| 11-Mar	| Travel                    			|                                       | _Cacelled, Commons unavailable_               |
 | 18-Mar	| Mixture                   			|                                       |                           |
 | 25-Mar	| Angles and Arcs                	|                                       |                           |
 | 1-Apr		| Expected Value                	|                                       |                           |
