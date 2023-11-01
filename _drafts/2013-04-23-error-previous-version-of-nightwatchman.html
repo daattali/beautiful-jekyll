@@ -1,0 +1,52 @@
+---
+layout: post
+title: Error A Previous version of Nightwatchman has been detected on your machine.  You
+  must remove Nightwatchman before continuing with the install
+date: '2013-04-23T05:55:00.003-07:00'
+author: syswow64
+tags:
+- MST
+- scripting
+- nightwatchman
+- 1e
+- MSI
+- packaging
+- sccm
+modified_time: '2013-04-23T05:56:16.963-07:00'
+thumbnail: http://3.bp.blogspot.com/-VGW7XaBlMW0/UXaDvyXwkDI/AAAAAAAAA6Q/qWqm5A-MCsQ/s72-c/Nightwatchman+error.png
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-12364636698257859
+blogger_orig_url: https://www.syswow64.co.uk/2013/04/error-previous-version-of-nightwatchman.html
+---
+
+<h2 class="separator" style="clear: both; text-align: left;">
+&nbsp;</h2>
+<h2 class="separator" style="clear: both; text-align: left;">
+"Error A Previous version of Nightwatchman has been detected on your machine.&nbsp; You must remove Nightwatchman before continuing with the install"</h2>
+<div class="separator" style="clear: both; text-align: left;">
+<a href="http://3.bp.blogspot.com/-VGW7XaBlMW0/UXaDvyXwkDI/AAAAAAAAA6Q/qWqm5A-MCsQ/s1600/Nightwatchman+error.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-VGW7XaBlMW0/UXaDvyXwkDI/AAAAAAAAA6Q/qWqm5A-MCsQ/s1600/Nightwatchman+error.png" height="123" width="320" /></a></div>
+<a href="http://3.bp.blogspot.com/-VGW7XaBlMW0/UXaDvyXwkDI/AAAAAAAAA6Q/qWqm5A-MCsQ/s1600/Nightwatchman+error.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"></a><br />
+<a href="http://3.bp.blogspot.com/-VGW7XaBlMW0/UXaDvyXwkDI/AAAAAAAAA6Q/qWqm5A-MCsQ/s1600/Nightwatchman+error.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><div style="text-align: left;">
+&nbsp;</div>
+</a><br />
+<br />
+The uninstaller via command line or Programs and Features would result in the above error message.<br />
+<br />
+It was discovered that the MST file previously used to configure the MSI had been copied from from an earlier version 5, and had included references to the previous product ID.<br />
+<br />
+By deleting the Transforms record the uninstallation was able to complete.<br />
+<br />
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="color: #1f497d; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 11pt;">[HKEY_CLASSES_ROOT\Installer\Products\E5A3EA51A6783284B9EDA9396E6A772C]<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="color: #1f497d; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 11pt;">"ProductName"="1E Agent"<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="color: #1f497d; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 11pt;">"PackageCode"="7D32A2D932D351543AA64E478D052BFD"<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="color: #1f497d; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 11pt;">"Version"=dword:06000064<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="color: #1f497d; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 11pt;">"Transforms"=C:\WINDOWS\Installer\{15AE3A5E-876A-4823-9BDE-9A93E6A677C2}\Custom1EAgent.mst<o:p></o:p></span></div>

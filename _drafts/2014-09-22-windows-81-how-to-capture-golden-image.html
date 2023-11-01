@@ -1,0 +1,30 @@
+---
+layout: post
+title: 'Windows 8.1: How to capture a golden image and preserve the Metro layout.'
+date: '2014-09-22T10:05:00.000-07:00'
+author: syswow64
+tags:
+- unattend.xml
+- Windows 8.1
+- windows
+- Golden Image
+- CopyProfile
+- Sysprep
+modified_time: '2014-09-22T10:05:18.306-07:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-8899679493192428717
+blogger_orig_url: https://www.syswow64.co.uk/2014/09/windows-81-how-to-capture-golden-image.html
+---
+
+<br />
+Windows 8.1: How to capture a golden image and preserve the Metro layout.<br />
+<br />Overview: There are several ways in which it is possible to customize the start screen/ Metro layout in Windows 8.1 (GPO, PowerShell, XML). I didn’t want to use GPO as the menu options would be enforced preventing the end user from making customizations and PowerShell would only modify the current users profile.&nbsp; The intention was to provide an out of box experience that was customized for each users who logs in.<br />
+The use of ‘CopyProfile’ during the image capture is able to apply a default layout for each user who logs in after being built.<br />
+<br /><br />
+The solution:<br />&nbsp;1. Customize the Metro layout, start screen etc<br />2. Create an XML file called Unattend.xml<br />3. Open Unattend.xml with notepad and copy the corresponding text below (Choose the correct OS architecture). Save to C:\Windows\System32\Sysprep<br />
+[64-bit Unattend.xml]<br /><span style="font-size: xx-small;">&lt;?xml version="1.0" encoding="utf-8"?&gt;<br />&lt;unattend xmlns="urn:schemas-microsoft-com:unattend"&gt;<br />&nbsp;&nbsp;&nbsp; &lt;settings pass="specialize"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;component name="Microsoft-Windows-Shell-Setup" processorArchitecture<strong>="amd64"</strong> publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="</span><a href="http://schemas.microsoft.com/WMIConfig/2002/State"><span style="font-size: xx-small;">http://schemas.microsoft.com/WMIConfig/2002/State</span></a><span style="font-size: xx-small;">" xmlns:xsi="</span><a href="http://www.w3.org/2001/XMLSchema-instance"><span style="font-size: xx-small;">http://www.w3.org/2001/XMLSchema-instance</span></a><span style="font-size: xx-small;">"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;CopyProfile&gt;true&lt;/CopyProfile&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/component&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/settings&gt;<br />&nbsp;&nbsp;&nbsp; &lt;cpi:offlineImage cpi:source="wim:f:/sw_dvd9_sa_win_ent_8.1_64bit_english_-2_mlf_x19-49847/sources/install.wim#Windows 8.1 Enterprise" xmlns:cpi="urn:schemas-microsoft-com:cpi" /&gt;<br />&lt;/unattend&gt;</span><br />
+<br /><br />
+[32-bit Unattend.xml]<br />
+<span style="font-size: xx-small;">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><span style="font-size: xx-small;">&lt;unattend xmlns="urn:schemas-microsoft-com:unattend"&gt;</span><span style="font-size: xx-small;">&nbsp;&nbsp;&nbsp; &lt;settings pass="specialize"&gt;</span><span style="font-size: xx-small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;component name="Microsoft-Windows-Shell-Setup" processorArchitecture<strong>="x86"</strong> publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="</span><a href="http://schemas.microsoft.com/WMIConfig/2002/State"><span style="font-size: xx-small;">http://schemas.microsoft.com/WMIConfig/2002/State</span></a><span style="font-size: xx-small;">" xmlns:xsi="</span><a href="http://www.w3.org/2001/XMLSchema-instance"><span style="font-size: xx-small;">http://www.w3.org/2001/XMLSchema-instance</span></a><span style="font-size: xx-small;">"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;CopyProfile&gt;true&lt;/CopyProfile&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/component&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/settings&gt;<br />&nbsp;&nbsp;&nbsp; &lt;cpi:offlineImage cpi:source="wim:f:/sw_dvd9_sa_win_ent_8.1_64bit_english_-2_mlf_x19-49847/sources/install.wim#Windows 8.1 Enterprise" xmlns:cpi="urn:schemas-microsoft-com:cpi" /&gt;<br />&lt;/unattend&gt;</span><br />
+<span style="font-size: xx-small;"></span><br />4. Open Admin command prompt and type:<br />&nbsp;C:\Windows\System32\Sysprep\Sysprep /generalize /oobe /shutdown<br />
+<br /><br />
+TechNet reference.<br /><a href="http://technet.microsoft.com/en-us/library/hh825135.aspx">http://technet.microsoft.com/en-us/library/hh825135.aspx</a>

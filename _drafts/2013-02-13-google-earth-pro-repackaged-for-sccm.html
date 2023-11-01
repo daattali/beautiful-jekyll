@@ -1,0 +1,134 @@
+---
+layout: post
+title: Google Earth Pro Repackaged for SCCM with license key
+date: '2013-02-13T08:42:00.003-08:00'
+author: syswow64
+tags:
+- google
+- google earth pro
+- sccm
+modified_time: '2013-02-13T08:55:35.798-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-4084877305274986680
+blogger_orig_url: https://www.syswow64.co.uk/2013/02/google-earth-pro-repackaged-for-sccm.html
+---
+
+Tags: install google earth pro with license key<br />
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Google Earth Pro can be downloaded here </span><a href="http://www.google.com/earth/download/gep/agree.html"><span style="color: blue; font-family: Book Antiqua;">http://www.google.com/earth/download/gep/agree.html</span></a><o:p></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Select Version 7.0 and un-tick “allow Google Earth to
+install Recommended Updates Automatically”.<span style="mso-spacerun: yes;">&nbsp;
+</span>Most Enterprise software is highly controlled and making sure versions
+are consistent and understood is essential.<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">GoogleEarthProWin.exe can be installed silently with the
+following switch.<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">GoogleEarthProWin.exe /S /v/qn /V"/qn ALLUSERS=1"<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Or you can extract the exe to get at the MSI using a tool
+like 7zip.<span style="mso-spacerun: yes;">&nbsp; </span>The switch here is: msiexec
+/i "Google Earth Pro.msi" /qn<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">The issue that most SCCM Admins face is how to deploy Google
+Earth Pro with the license details included in the package.<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">In my example I will use InstallShield to create an MST file
+to transform the MSI file.<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Once you have installed GEP you will be prompted for the username
+and password credentials.<span style="mso-spacerun: yes;">&nbsp; </span>Input them,
+and click “Auto login”.<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;(Please be careful when modifying the registry, i accept no responsibility)</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Open Regedit and navigate to top level path representing
+your current user hive. i.e HKEY_Users\S-1-5-21-########<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Right Click: <span style="mso-spacerun: yes;">&nbsp;</span>Software/Google/Google Earth Pro and export reg
+key ( i.e. C:\temp\gep\gep.reg)<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Change the key path to HKLM and remove all entries except
+for, as below:<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">[HKEY_LOCAL_MACHINE\SOFTWARE\Google\Google Earth Pro]<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">"AData"=hex:<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">"HideUserData"=dword:00000001<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">"Passport"="Insert Password"<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">"Username"="Insert Username"<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">"DisableDeactivation"=dword:00000001<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">This is all that is required to for any user to open Google
+Earth Pro without being prompted for credentials.<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Now open Installshield and create a new MST project.<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Click on System Configuration\Registry\<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Right click on HKLM and select Import Reg file… Select the
+Reg created above.<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Save the project to make the MST file (GoogleEarthPro7.0.mst)<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">Now using the MSI extracted earlier you can transform the
+MSI with the following command line.<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<o:p><span style="font-family: Book Antiqua;">&nbsp;</span></o:p></div>
+<br />
+<div class="MsoNormal" style="margin: 0cm 0cm 0pt;">
+<span style="font-family: Book Antiqua;">msiexec /i "Google Earth Pro.msi"
+TRANSFORMS=GoogleEarthPro7.0.mst /l*v C:\temp\Logs\GoogleEarthPro7.0.log /qn <o:p></o:p></span></div>

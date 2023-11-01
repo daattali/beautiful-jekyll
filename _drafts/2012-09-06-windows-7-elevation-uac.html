@@ -1,0 +1,16 @@
+---
+layout: post
+title: Windows 7 Elevation UAC
+date: '2012-09-06T06:50:00.000-07:00'
+author: syswow64
+tags:
+- enterprise-it
+- uac
+- software microsoft
+- windows 7
+modified_time: '2012-12-31T06:42:52.468-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-1735780804060012753
+blogger_orig_url: https://www.syswow64.co.uk/2012/09/windows-7-elevation-uac.html
+---
+
+<table><br/><tbody><br/><tr><br/><td colspan="2" valign="top"><br/><p align="left">How to Create a Elevated Program Shortcut without a UAC Prompt</p><br/><p align="left"><a href="http://www.sevenforums.com/tutorials/11949-elevated-program-shortcut-without-uac-prompt-create.html">http://www.sevenforums.com/tutorials/11949-elevated-program-shortcut-without-uac-prompt-create.html</a></p><br/><p align="left"> The use of a schedule task to elevate priviledges works well with programs required within the Startup folder.</p><br/><p align="left"></p><br/><p align="left"></p><br/><p align="left">HKEY_CURRENT_USER\Software\Microsoft\WindowsNT\CurrentVersion\AppCompatFlags\Layers<br/><br/>Create a Dword, named the path to the executable:  C:\windows\regedit.exe</p><br/><p align="left"></p><br/><p align="left">Set it value to: RUNASINVOKER</p><br/></td><br/></tr><br/></tbody><br/></table>

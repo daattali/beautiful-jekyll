@@ -1,0 +1,19 @@
+---
+layout: post
+title: SCCM PXE Task Sequence
+date: '2012-10-22T06:38:00.000-07:00'
+author: syswow64
+tags:
+- deployment status
+- server 2008
+- pxe
+- software
+- windows 7
+- task sequence
+- sccm
+modified_time: '2012-12-31T06:39:52.191-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-6835545956928643803
+blogger_orig_url: https://www.syswow64.co.uk/2012/10/sccm-pxe-task-sequence.html
+---
+
+Step 1<br/><br/>1 Check DHCP scope has option 66 with the SCCM server name set as the value.<br/>2 WDS service is installed and running.<br/>3 Under site Systems select the SCCM server and make sure "ConfigMgr PXE service point" role is installed<br/>3.1 For a lab environment. Enable "Allow this PXE... to repond to incoming PXE requests" and "Respond to PXE request on all network interfaces".<br/>4 Create a Collection called "Bare Metal OSD deployment"<br/><br/>Step 2<br/><br/>5 Click on "Computer Asscocation"  &gt; "Import computer Information" &gt; Import single computer<br/>5.1 Enter Computer name and MAC address to define system &gt; Add to "Bare Metal OSD deployment" collection<br/>6 Under the node OSD in SCCM click on "Task Sequence"&gt; Select the TS you want to deploy to the collection &gt; Right click and "Advertise", specify the "bare metal OSD deployments".<br/>6.1 Set as mandatory assignemtn. Tick "Ignore maintenance windows when running program and "Allow system restart outside maintenance Window.<br/>6.2 Select "access content directly from a DP ...."<br/><br/>Summary<br/><br/>Setup WDS, DHCP scope, PXE point service, Advertised Task Sequence, Imported system via MAC address and added to collection. SCCM is ready next step is to restart the computer defined for a network boot, typically F12.<br/><br/>The computer will advertise that it is looking for a PXE service, the DHCP server will point it to the SCCM server that will then pick up the computer and push a Win PE image following the TS options.<br/><br/>Deployment<br/><br/>7 While SCCM WinPE  is deploying the WIM file it is possible to press F8 to bring up a DOS window and exam the SMSTSLog directory.<br/><br/>\\Map network drive: enter credentials<br/>x:\&gt; net use z: \\sccm\c$\tempsmslog<br/><br/>\\Copy all logs files to z:\<br/>x:\&gt; copy z:\ *.log<br/><br/>Now on your SCCM server\c$\tempsmslog folder you will find a smsts.log file.  Open with trace32 to troubleshoot.<br/><br/>7.1 Alternatively within SCCM select the Reporting Node and run the "Deployment status of all task sequence advertisements".  This report details the last action, exit code and Action output.

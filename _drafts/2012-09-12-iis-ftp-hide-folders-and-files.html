@@ -1,0 +1,20 @@
+---
+layout: post
+title: IIS FTP Hide folders and Files
+date: '2012-09-12T08:42:00.000-07:00'
+author: syswow64
+tags:
+- computer
+- setup ftp
+- business
+- software
+- ftp
+- software microsoft
+- iis
+- setup folder
+modified_time: '2012-12-31T06:42:36.394-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-7771928877635831723
+blogger_orig_url: https://www.syswow64.co.uk/2012/09/iis-ftp-hide-folders-and-files.html
+---
+
+<h3 id="tocHeadRef">Create the FTP Folder</h3><br/><ol><br/>	<li>Create a folder that you want the FTP service to point to.</li><br/>	<li>Right-click the folder, click <strong>Properties</strong>, and then click the <strong>Security</strong> tab. Grant Full Control permissions to only the Administrators group.<strong>NOTE</strong>: Remove the Everyone group if it is present.</li><br/>	<li>Click <strong>Advanced</strong>, and then click <strong>Add</strong> to add a new rule.</li><br/>	<li>In the account selection list, double-click the <strong>Anonymous User</strong> account or the group that is used for FTP access.</li><br/>	<li>In the <strong>Apply Onto</strong> drop-down list, select <strong>Files Only</strong>.</li><br/>	<li>Click to select <strong>Allow</strong> for the following permissions:<br/><ul><br/>	<li>List Folder/Read Data</li><br/>	<li>Read Attributes</li><br/>	<li>Read Extended Attributes</li><br/>	<li>Read Permissions</li><br/></ul><br/></li><br/>	<li>Click <strong>OK</strong>.</li><br/>	<li>Click <strong>Add</strong> to add another rule.</li><br/>	<li>Select the account that you selected in step 4.</li><br/>	<li>In the <strong>Apply Onto</strong> list, click to select <strong>This Folder only</strong>.</li><br/>	<li>Click to select <strong>Allow</strong> for the following permissions (note that List permissions are not listed):<br/><ul><br/>	<li>Create Files/Write Data</li><br/>	<li>Create Folders/Append Data</li><br/>	<li>Write Attributes</li><br/>	<li>Write Extended Attributes</li><br/>	<li>Read Permissions</li><br/></ul><br/></li><br/>	<li>Click <strong>OK</strong> until you have closed all of the property windows.</li><br/></ol><br/><a href="http://syswow64blog.files.wordpress.com/2012/09/ftp-public-hidden-folders21.png"><img class="alignnone size-full wp-image-70" title="ftp-public-hidden-folders2" src="http://syswow64blog.files.wordpress.com/2012/09/ftp-public-hidden-folders21.png" alt="" width="719" height="900" /></a><br/><br/><strong>It doesn't seem to be working...?</strong><br/><br/>If you are using virtual directories make sure you remove the tick box for virtual directories in "FTP Directory Browsing".  This will now remove the directory from view however, with a complete path you have access to the file without revealing other items in folder.  i.e ftp.domain.com\TechSales\file.txt<br/><br/><strong>Virtual directories that i want displayed are no longer available?</strong><br/><br/>The use of place holders will help.  Virtual directories have higher priority over physcial paths, as we have told iis not to display VD's a place holder will assist you with redirecting the user neatly.<br/><br/>To display an alias called CustomerDownloads (VD path <em>F:\virtualDirectory\CustomerDownload</em>s) previous displayed in the public folder; create an empty folder as a place holder visible to the anonymous user:  <em>ftproot\LocalUser\Public\CustomerDownload</em>

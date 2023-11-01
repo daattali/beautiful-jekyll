@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'SCCM Software Update - Job error 0x80004005 Failed to Add Update Source for
+  WUAgent '
+date: '2017-12-06T05:11:00.000-08:00'
+author: syswow64
+tags:
+- SCCM
+- WUAHandler.log
+- powershell
+- UpdateDeployment.log
+modified_time: '2020-01-17T04:20:26.918-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-618073369365219903
+blogger_orig_url: https://www.syswow64.co.uk/2017/12/sccm-software-update-job-error.html
+---
+
+<h2 class="tr_bq">SCCM Software Updates - Failed to Add Update Source for WUAgent&nbsp;</h2>Today I have been looking at a range of servers (Server 2008 /R2 2012 /R2) that were failing to communicate with the Software Update Point (SUP) in SCCM and retrieve deployment policy.<br /><br />The UpdateDeployment.log was reporting the Job error&nbsp;0x80004005<br /><blockquote class="tr_bq"><span style="font-size: xx-small;">Job error (0x80004005) received for assignment ({af7a48e6-d550-4070-dd9b-ecc234567584}) action UpdatesDeploymentAgent 12/6/2017 10:32:27 AM 2096 (0x0830)</span></blockquote><br />The WUAHandler.log&nbsp; was reporting "Unable to read existing WUA Group Policy object" and "Failed to Add Update Source for WUAgent&nbsp;"<br /><span style="font-size: xx-small;"><br /></span><br /><blockquote class="tr_bq"><span style="font-size: xx-small;">Unable to read existing WUA Group Policy object. Error = 0x80004005. WUAHandler 12/6/2017 3:41:00 AM 2828 (0x0B0C)</span><span style="font-size: xx-small;">Failed to Add Update Source for WUAgent of type (2) and id ({3AAB6A76-CE2D-4E8A-9F11-123AE69612A1}). Error = 0x80004005. WUAHandler 12/6/2017 11:03:31 AM 2276 (0x08E4)</span></blockquote><div><span style="font-size: xx-small;"><br /></span></div><div><span style="font-size: xx-small;"><br /></span></div><div>Until the agent can report back to the SUP, SCCM will not be able to summarize Software Update status and offer the appropriate updates via Software Center.&nbsp;</div><div><br /></div><div>The resolution was to stop the "Windows update" service and remove the Registry.pol file and the&nbsp;comment.cmtx file if present as well as the SoftwareDistribution folder.</div><div>(C:\Windows\System32\GroupPolicy\Machine\Registry.pol)</div><div>(C:\Windows\System32\GroupPolicy\Machine\comment.cmtx)</div><div>(C:\Windows\SoftwareDistribution)</div><div><br /></div><div>After restarting the "Windows update" service the SoftwareDistribution folder is created.</div><div>After the next SCCM "Update Deployment Cycle" the Registry.pol is created.</div><div><br /></div><div>The WUAHandler.log will now state the scan completed successfully.</div><div><br /></div><blockquote class="tr_bq"><span style="font-size: x-small;">Waiting for 2 mins for Group Policy to notify of WUA policy change...Waiting for 30 secs for policy to take effect on WU Agent.<br />Added Update Source ({abc123abc123abc123abc123}) of content type: 2<br />Async searching of updates using WUAgent started.<br />Async searching completed.<br />Successfully completed scan</span></blockquote>I have scripted the process to help others deploy a solution. If you think there is a better way to address this problem please leave a comment.<br /><br /><br /><br /><br /><script src="https://gist.github.com/systemcenterblog/84ae696c69ff546e5100fc75ec04bbae.js"></script>

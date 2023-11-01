@@ -1,0 +1,23 @@
+---
+layout: post
+title: Removing Built-in Store Applications from Windows 8.1
+date: '2013-11-07T07:13:00.000-08:00'
+author: syswow64
+tags:
+- Windows 8.1
+- Start Screen
+modified_time: '2013-11-07T07:16:38.000-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-5821239531569429935
+blogger_orig_url: https://www.syswow64.co.uk/2013/11/removing-built-in-applications-from.html
+---
+
+Customizing the Windows 8.1 Start Screen<br />
+Removing Built-in Applications from Windows 8.1<br />
+<br />
+This procedure only works when you are building your Reference Golden Image.&nbsp; The appx are removed and will not be installed for all new users who login in.<br />
+If you want to remove all of the built-in applications then you can use the following simple PowerShell commands:<br />
+<br />
+Get-AppXProvisionedPackage -online | Remove-AppxProvisionedPackage –online<br />
+Get-AppXPackage | Remove-AppxPackage<br />
+Once the apps are removed and the start screen is configured the way you want see my post on Exporting the layout and importing using powershell here.<br />
+<a href="http://www.syswow64.co.uk/2013/11/customize-windows-81-start-screen.html">http://www.syswow64.co.uk/2013/11/customize-windows-81-start-screen.html</a>

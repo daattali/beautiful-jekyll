@@ -1,0 +1,86 @@
+---
+layout: post
+title: 'Customize the Windows 8.1 Start Screen during MDT task sequence Enterprise
+  deployment '
+date: '2013-11-06T08:46:00.000-08:00'
+author: syswow64
+tags:
+- MDT
+- Windows 8.1
+- Export-StartLayout
+- powershell
+- Start Screen
+- Import-StartLayout
+modified_time: '2013-11-06T08:50:25.907-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-2641342789300486593
+blogger_orig_url: https://www.syswow64.co.uk/2013/11/customize-windows-81-start-screen.html
+---
+
+<h2 class="ms-rteElement-H2">
+<span id="ms-rterangecursor-start"></span>Customize the 
+Windows 8.1 Start Screen during MDT task sequence Enterprise deployment 
+</h2>
+<span id="ms-rterangepaste-start"></span>
+<br />
+<div>
+For enterprises, Windows 8.1 delivers the control around the Start Screen 
+that should have been there in Windows 8.0, there’s still no programmatic way to 
+pin or unpin shortcuts from the Start Screen.<br />
+<br />
+Windows 8.1 introduces a 
+Group Policy method for distributing a Start Screen layout, but that’s a policy 
+– i.e. it’s enforced&nbsp;that approach only makes 
+sense in specific cases (e.g. schools, kiosks etc.). Note that Start Screen 
+control is only available in Windows 8.1 Enterprise and Windows RT 
+8.1<br />
+<br />
+Microsoft have an article available on TechNet that describes a 
+number of ways that you can configure the default Start Screen experience that 
+will work for Windows 8/8.1, Window Server 2012 and Windows Server 2012 R2, but 
+the choices are:<br />
+1.Create a reference image and use the CopyProfile setting 
+in unattend.xml to customise the default profile including the Start 
+Screen<br />
+2.Use the StartTiles setting in unattend.xml to specify a list of 
+tiles to add to the Start Screen<br />
+3.Use SysPrep to generate 
+AppsFolderLayout.bin and then copy that to the default profile<br />
+<br />
+I suggest 
+you use the Powershell cmdlets that provides a way of getting your custom Start 
+Screen layout into the default profile. These works for all edition of Windows 
+8.1.<br />
+<br />
+This approach is really about customising the default Start Screen 
+experience (i.e. first logon). If you want control of the Start Screen (users 
+receive the same screen every session) you will need Windows 8.1 Enterprise or 
+Windows Server 2012 R2. You can use this method to customise a reference image, 
+an unattended deployment.<br />
+<br />
+High level overview:<br />
+1.Deploy and/or log 
+onto a machine that has the applications that you want to pin to the Start 
+Screen<br />
+2.Customise that Start Screen to your heart’s content<br />
+3.Export 
+the Start Screen configuration with Export-StartLayout<br />
+4.Import the Start 
+Screen configuration with Import-StartLayout<br />
+<br />
+To Export the Start Screen 
+layout in binary format, (Import-StartLayout won’t import XML files) see 
+Export-StartLayout command below:</div>
+<br />
+<div>
+Export-StartLayout -As BIN -Path CustomStartScreenLayout.bin -Verbose</div>
+<br />
+<div>
+The documentation for Import-StartLayout indicates that this cmdlet only 
+works against offline images (mounted with ImageX); however the cmdlet can be 
+run against the current Windows installation which is ideal for MDT task 
+sequence deployment. The following command will import the customisation into 
+the default profile of the local system. This will need to be run from an 
+elevated command prompt.</div>
+<br />
+<div>
+Import-StartLayout -LayoutPath .\Basic.bin -MountPath c:\</div>

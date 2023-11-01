@@ -1,0 +1,12 @@
+---
+layout: post
+title: OS WIM WAIK 1.1 Tools command lines
+date: '2012-10-07T02:27:00.000-07:00'
+author: syswow64
+tags:
+modified_time: '2012-12-31T06:42:36.349-08:00'
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-1931676079022962119
+blogger_orig_url: https://www.syswow64.co.uk/2012/10/os-wim-waik-11-tools-command-lines.html
+---
+
+Adding Drivers Using WAIK 1.1 Tools<br/><br/>If you were wondering how to execute the procedure using the WAIK 1.0 or 1.1 tools, here it is:<br/><br/>1. Mount the WIM file using imagex tool:<br/>IMAGEX /MOUNTRW "O:\Windows7.wim" 1 o:\mount<br/><br/>2. Inject drivers using peimg tool:<br/>peimg /inf=O:\H8DA8-2\S2K3_64\*.inf /image=o:\mount<br/><br/>*.inf is representing all the previous drivers that we added above. Repeat the command line for each file.<br/><br/>3. Commit changes:<br/>imagex /unmount /commit o:\mount<br/><br/>4. Add the new “Lite Touch Windows PE.WIM” on WDS as a “Boot Image”<br/><br/>dism /online /get-drivers /Format:Table &gt; c:\Driver-online.txt<br/><br/>Dism.exe /mount-wim /wimfile:"O:\Windows7.wim" /index:1 /mountdir:o:\mount<br/>dism /image:"o:\Temp\mount" /add-driver /driver:"O:\temp\drivers\iaAHCI\iaStor.inf"<br/>Dism /unmount-wim /Mountdir:o:\mount /commit<br/><br/>&nbsp;<br/><br/>---------<br/><br/>reg load HKLM\MY_SYSTEM "Windows\System32\config\system"<br/>reg delete HKLM\MY_SYSTEM\WPA /f<br/>reg unload HKLM\MY_SYSTEM<br/><br/>slmgr /dlv<br/><br/>slmgr /ipk HMG6P-<br/>---------------<br/><br/>Windows Server 2008 R2 Standard<br/>HMG6P-C7VGP-

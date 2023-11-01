@@ -1,0 +1,21 @@
+---
+layout: post
+title: SCCM Server Groups
+date: '2018-05-18T03:29:00.000-07:00'
+author: syswow64
+tags:
+- Server
+- SCCM
+- ServerGroups
+- enterprise
+- Software updates
+- wsus
+- Cluster
+- New Features
+modified_time: '2020-01-17T04:20:26.778-08:00'
+thumbnail: https://1.bp.blogspot.com/-FiSF3D7Tc7w/Wv6cOdvCoTI/AAAAAAAABXs/78mQDXuJyyMPCJRX-TEwhJSTspWodrRegCLcBGAs/s72-c/ServerGroups1.png
+blogger_id: tag:blogger.com,1999:blog-4452544758446808584.post-8181302787925980793
+blogger_orig_url: https://www.syswow64.co.uk/2018/05/sccm-server-groups.html
+---
+
+<br /><div class="MsoNormal"><span lang="EN-US">What Are Server Groups?<o:p></o:p></span></div><div class="MsoNormal"><br /></div><div class="MsoNormal"><span lang="EN-US">Within SCCM Assets and Compliance you can create a collection containing Server Client membership. Once the 'Server Group' feature is enabled the properties of the collection will contain an additional option to declare that all members of the collection are part of a server group.<span style="mso-spacerun: yes;">&nbsp; </span>This means SCCM knows that the servers within this collection must be treated with specific logic and settings.<o:p></o:p></span></div><div class="MsoNormal"><span lang="EN-US"><br /></span></div><div class="MsoNormal"><span lang="EN-US">In the example below the collection contains three nodes of a cluster and only one node may be Software Updated at a time.</span></div><div class="MsoNormal"><br /></div><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-FiSF3D7Tc7w/Wv6cOdvCoTI/AAAAAAAABXs/78mQDXuJyyMPCJRX-TEwhJSTspWodrRegCLcBGAs/s1600/ServerGroups1.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="601" data-original-width="1078" height="356" src="https://1.bp.blogspot.com/-FiSF3D7Tc7w/Wv6cOdvCoTI/AAAAAAAABXs/78mQDXuJyyMPCJRX-TEwhJSTspWodrRegCLcBGAs/s640/ServerGroups1.png" width="640" /></a></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />Once policy is received for the Software Update Group deployment an election is held in which one of the nodes will engage a lock state forcing the other nodes to wait until it has been released.<br /><br />The UpdatesDeployment.log details the 'Lock State'. Once the node has taken the lock (Lock State: 1) the server will then run the 'Node Drain Script' and continue if the script has an exit code of 0 zero or if the script times out (600 seconds default).<br /><br />After the main deployment is complete the 'Node resume script' is run and the lock state is returned to 2.<br /><br />'Node Drain Script' [Untested in Production]<br /><script src="https://gist.github.com/systemcenterblog/6c0ca59c41c9a7ae3f2c36b69e5d1b19.js"></script> <br />'Node resume script'<br />Resume-ClusterNode<br /><br /><b>Lock States</b><br />There are four lock states:<br /><br />Waiting for Lock: 0<br />Have Lock: 1<br />Released Lock: 2<br />Node Script Failed: 3<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-4tXYSSd7hK4/Wv6eJd7754I/AAAAAAAABX4/k7SZM90e-8Ic7PGgbDnqNeO7U-07IemXQCLcBGAs/s1600/ServerGroupsLogs1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="498" data-original-width="1140" height="278" src="https://1.bp.blogspot.com/-4tXYSSd7hK4/Wv6eJd7754I/AAAAAAAABX4/k7SZM90e-8Ic7PGgbDnqNeO7U-07IemXQCLcBGAs/s640/ServerGroupsLogs1.png" width="640" /></a></div><br />The SQL script below will report on all Server Groups with Pre and Post Actions as well as current client Lock states.<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-Ei2Dm9wOX_Q/Wv6jen0JlGI/AAAAAAAABYE/0OdkHYcGCdYhLwzw3XZ15vUT6wTJBRcRQCLcBGAs/s1600/ServerGroupsSQL1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="413" data-original-width="1178" height="224" src="https://4.bp.blogspot.com/-Ei2Dm9wOX_Q/Wv6jen0JlGI/AAAAAAAABYE/0OdkHYcGCdYhLwzw3XZ15vUT6wTJBRcRQCLcBGAs/s640/ServerGroupsSQL1.png" width="640" /></a></div><br /><script src="https://gist.github.com/systemcenterblog/7ad38649c3a08d19be07b67d335d849c.js"></script> gg
