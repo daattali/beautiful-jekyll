@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: develop # Branch to update (optional; defaults to master)
+
+publish_mode: editorial_workflow
+
+media_folder: "uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sub Title", name: "subtitletitle", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Cover Image", name: "cover-img", widget: "image", required: false}
+      - {label: "Thumbnail Image", name: "thumbnail-img", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
