@@ -17,7 +17,7 @@ Coming Soon!
 
 | Date | Milestone |
 | --- | --- |
-| November 1, 2023 | Dealer Application Closes |
+| November 9, 2023 | Dealer Application Closes |
 | November 15, 2023 | Schedule and Maps Available |
 
 ### Become a Dealer at Fur Squared!
