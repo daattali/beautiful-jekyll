@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code of Conduct
-subtitle: How to get along with us
+subtitle: How to Get Along With Us
 ---
 
 ## **Code of Conduct**
