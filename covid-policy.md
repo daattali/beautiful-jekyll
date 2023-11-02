@@ -3,9 +3,7 @@ layout: page
 title: 'Covid Policy'
 permalink: /covid-policy/
 ---
-## Notice
-
-Following a careful evaluation of current public health trends we have prepared the following COVID-19 Policy for FurSquared 2024:
+## Following a careful evaluation of current public health trends we have prepared the following COVID-19 Policy for FurSquared 2024
 
 Proof of vaccination for COVID-19 will no longer be required to attend FurSquared 2024, however we strongly urge everyone to keep their vaccinations up-to-date, especially when reformulated boosters become available to the general population this fall (2023). Additionally, while FurSquared encourages masks for all attendees in public and convention spaces, masks will not be required.
 
