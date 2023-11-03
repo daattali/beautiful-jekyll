@@ -15,12 +15,6 @@ members:
       - name: PhD students
         full: true
         list:
-          - name: Thomas Weng
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/04/weng_thomas_2018.jpg
-            web_url: https://www.thomasweng.com
-          - name: Wenxuan Zhou
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/07/zhou_wenxuan_2019_1.jpg
-            web_url: https://wenxuan-zhou.github.io/
           - name: Ben Eisner
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/07/Eisner_Benjamin_2020.png
             web_url: http://beisner.me/
@@ -76,6 +70,10 @@ members:
             web_url: https://xingyu-lin.github.io/
           - name: Brian Okorn (co-advised with Martial Hebert) -> Boston Dynamics AI Institute
             web_url: http://brianokorn.com/
+          - name: Thomas Weng
+            web_url: https://www.thomasweng.com
+          - name: Wenxuan Zhou
+            web_url: https://wenxuan-zhou.github.io/
       - name: Master's students (Research Master's)
         full: False
         list:
