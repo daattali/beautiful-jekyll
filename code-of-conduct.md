@@ -66,6 +66,15 @@ Sales of merchandise by approved Fur Squared dealers and artists will be handled
 
 Transactions should take place through private communication in the method of the dealer's choice. In the interest of maintaining the security of sensitive financial information, no divulging of personal financial information or sale should take place in a public area. Conversations about potential sales should be limited to the Dealer’s Den or Artist’s Alley channels in the Fur Squared Discord, and no solicitation for sales should take place in any other chat area.
 
+The Night Market is an 18+ space and ID’s are already checked at the entrance, so vendors in the Night Market are not required to check ID’s.
+
+### **NFT’s & AI Art**
+
+Fur Squared prohibits any sale and/or promotion of anything related to NFTs (Non Fungible Tokens) at your dealer table. We also do not allow the sale and/or promotion of “AI art”. If we
+learn that this is happening, your dealer status will immediately be revoked and you will be required to remove your items from the Dealer's Den, with the possibility of not being allowed back in future events.
+
+Note: Having participated in the past will not have an impact on you.
+
 ### **Use of Fur Squared Images or Footage:**
 
 Fur Squared members should be aware that audio and/or video recordings are frequently made in convention areas and that their likenesses may appear in those recordings. Individual members agree to assign without compensation the use of their likeness(es) at Fur Squared for the use of promotional material such as the highlights videos.
