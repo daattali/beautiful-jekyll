@@ -26,7 +26,7 @@ Would you like to join us with all of your artistic echelon? Apply as one of our
 
 #### To join our menagerie of wares in Dealers Den:
 
-- Please take some time to review our [Terms of Service](https://drive.google.com/file/d/1oIv3mUEoxZbwWlGRlS8EI6C5FZVmgG8H/view).
+- Please take some time to review our [Code of Conduct](/code-of-conduct).
 - [Apply for our 2024 Dealers Den](https://forms.gle/uEizk3CUqcSq9RKY9).
 
 #### Are your wares a little too spicy for our regular Dealers Den?
