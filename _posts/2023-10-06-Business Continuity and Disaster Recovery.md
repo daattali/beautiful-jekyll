@@ -101,3 +101,21 @@ In this blog about disaster recovery and business continuity, we've learned why 
 From risk assessment to recovery planning, these practices create a framework for resilience. Real-world examples illustrate their importance as these principles are not just wise but crucial. They protect reputation, data, and customer service.
 
 As we wrap up, check out [BDRSuite Backup and Replication](https://www.bdrsuite.com/) to take the first steps to bolster your organization's readiness.
+
+nodeClasses:
+  default:
+    template: ubuntu-2004-kube-v1.24.11
+    cloneMode: "linkedClone"
+    diskGiB: 40
+    numCPUs: 6
+    memoryMiB: 10240
+    folder: "Giantswarm"
+    resourcePool: "giantswarm"
+    network:
+      devices:
+      - networkName: 'LS-GS-CAPV'
+        dhcp4: true
+nodePools:
+  worker:
+    class: "default"
+    replicas: 2
