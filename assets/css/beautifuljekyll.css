@@ -740,39 +740,6 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   }
 }
 
-.header-section.has-img .no-img {
-  margin-top: 0;
-  background-color: #FCFCFC;
-  margin: 0 0 2.5rem;
-  padding: 1.25rem 0;
-  box-shadow: 0 0 0.3125rem #AAA;
-}
-/* Many phones are 320 or 360px, so make sure images are a proper aspect ratio in those cases */
-.header-section.has-img .intro-header.no-img {
-  display: none;
-}
-@media (max-width: 365px) {
-  .header-section.has-img .intro-header.no-img {
-    display: block;
-  }
-  .intro-header.big-img {
-    width: 100%;
-    height: 13.75rem;
-  }
-  .intro-header.big-img .page-heading,
-  .intro-header.big-img .post-heading {
-    display: none;
-  }
-  .header-section.has-img .big-img {
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 325px) {
-  .intro-header.big-img {
-    height: 12.5rem;
-  }
-}
-
 #header-gh-btns {
   margin-bottom: 0.9375rem;
 }
