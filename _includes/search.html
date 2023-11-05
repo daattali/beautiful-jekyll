@@ -14,7 +14,7 @@
           "title"    : "{% if post.title != "" %}{{ post.title | strip_html | escape }}{% else %}{{ post.excerpt | strip_html | escape | strip }}{%endif%}", \
           "desc"     : "{% if post.title != "" %}{{ post.title | strip_html | escape }}{% else %}{{ post.excerpt | strip_html | escape | strip }}{%endif%}", \
           "category" : "{{ post.tags | join: \', \' }}", \
-          "url"      : "{{ site.baseurl }}{{ post.url }}", \
+          "url"      : "{{ site.baseurl }}{{ post.url | escape }}", \
           "date"     : "{{ post.date | date: "%B %e, %Y" | default: "January 1, 1970" }}" \
         }, \
       {% endfor %} \
