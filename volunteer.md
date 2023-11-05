@@ -25,6 +25,10 @@ Love the fursuiters?  Want to help them out?  In the Headless Lounges, you can m
 
 Have a good, strong back? We need people to help us with moving equipment and convention materials from storage, setting them up, and then taking them down once the convention is over.  We need help to make sure sites are set up and taken down flawlessly, and as quickly as possible.
 
+## Registration
+
+Are you a social butterfly that loves meeting new people in high volumes. Looking for something that has you more in one spot with the ability to sit down. Registration is for you and we'd love to have more people helping out handing out badges, crowd controlling lines and giving out Swag this year!
+
 ## Sponsor's Lounge
 
 Is hospitality more to your liking? Help us serve snacks and drinks to tired and thirsty conventioneers in our con suite.
