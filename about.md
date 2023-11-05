@@ -1,12 +1,8 @@
 ---
 layout: page
 title: About
-subtitle: What is Fur Squared all about?
+subtitle: Fur Squared is a furry convention held in Southeastern Wisconsin. Read this page to learn more about the convention!
 ---
-Fur Squared is a furry convention typically held in Brookfield, WI!
-<!-- ### Q: What is your COVID-19 policy?
-
-See this page [https://fursquared.com/covid-policy](https://fursquared.com/covid-policy) -->
 
 ### Q: What is a furry convention?
 
@@ -18,13 +14,17 @@ There is no minimum level of "furriness" needed to attend. You do not need a fur
 
 ### Q: Which charity does FurSquared support?
 
-FurSquared has been delighted to partner with [Humane Animal Welfare Society (HAWS) of Waukesha County](https://hawspets.org/) since the convention’s inception. We are pleased to welcome them back in 2023 and encourage our attendees to support them in any way they are able. Whether it is a few dollars contributed through the wide variety of charity-based paneling and events, sharing their mission with others via word of mouth, every contribution matters.
+FurSquared has been delighted to partner with [Humane Animal Welfare Society (HAWS) of Waukesha County](https://hawspets.org/) since the convention’s inception. We are pleased to welcome them back in 2024 and encourage our attendees to support them in any way they are able. Whether it is a few dollars contributed through the wide variety of charity-based paneling and events, sharing their mission with others via word of mouth, every contribution matters.
 
 HAWS is a non-profit organization established in 1965 that assists over 6,000 animals each year and welcomes more than 31,000 human visitors annually. As an “open admissions” shelter, they accept animals regardless of age, health, temperament or breed. They also offer programs and services that promote responsible pet ownership, preventing animal abuse and neglect in the community. HAWS promotes the humane care and treatment of all animals, in support of cooperative humane efforts throughout the state of Wisconsin. HAWS is a member of the Wisconsin Federated Humane Societies.
 
 ### Q: How can I keep up with what’s happening with the con?
 
-We’ll be posting updates here on the website [RSS](https://fursquared.com/feed), [Twitter](https://twitter.com/fursquared), [Telegram](https://t.me/fursquared), and [Mastodon](https://mastodon.furrycon.social/@fursquared).
+We’ll be posting updates here on the website [RSS](https://fursquared.com/feed), [Twitter / X](https://twitter.com/fursquared), [Telegram](https://t.me/fursquared), and [Mastodon](https://mastodon.furrycon.social/@fursquared).
+
+### Q: What is your COVID-19 policy?
+
+See this page [https://fursquared.com/covid-policy](https://fursquared.com/covid-policy)
 
 ### Q: I have a question not on this page. What can I do?
 

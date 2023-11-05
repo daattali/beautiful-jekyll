@@ -3,7 +3,7 @@ layout: page
 title: Volunteer
 subtitle: Looking to help out Fur Squared?
 ---
-Are you interested in making a difference with our growing convention? Fur Squared is staffed entirely by volunteers. Won't you help us out by volunteering? It's easy, fun and there are some great benefits to pitching in. There are plenty of opportunities available for all of our attendees.
+Are you Interested in making a difference with our growing convention? Fur Squared is staffed entirely by volunteers. Won't you help us out by volunteering? It's easy, fun and there are some great benefits to pitching in. There are plenty of opportunities available for all of our attendees.
 
 ## Crowd Control
 
@@ -19,11 +19,11 @@ Filling in for staff for those unforeseen events which invariably come up, or ju
 
 ## Headless Lounges
 
-Love the fursuiters? Want to help them out? In the Headless Lounges, you can make sure there are plenty of cold towels and bottles of water available for fursuit performers while they rest up.
+Love the fursuiters?  Want to help them out?  In the Headless Lounges, you can make sure there are plenty of cold towels and bottles of water available for fursuit performers while they rest up.
 
 ## Logistics
 
-Have a good, strong back? We need people to help us with moving equipment and convention materials from storage, setting them up, and then taking them down once the convention is over. We need help to make sure sites are set up and taken down flawlessly, and as quickly as possible.
+Have a good, strong back? We need people to help us with moving equipment and convention materials from storage, setting them up, and then taking them down once the convention is over.  We need help to make sure sites are set up and taken down flawlessly, and as quickly as possible.
 
 ## Sponsor's Lounge
 
@@ -37,22 +37,12 @@ Finding your way around a large hotel in unfamiliar territory can be baffling; e
 
 First off, you'll have the thanks of our entire staff and all our attendees, as well as the knowledge that you helped run the best Fur Squared yet\! However, there are other benefits too. For volunteering, you will receive the following:
 
-| Time Given | Rewards |
-| --- | --- |
-| Any | A ribbon identifying you as being part of our group of convention volunteers |
-| 2 Hours | Small Sponsor Gift (our dice bag and a glow necklace from our 2nd year) |
-| 6 Hours | T-shirt with exclusive artwork |
-| 10 Hours | Sponsor Stuff Bag (rest of the sponsor swag) |
-| 12 Hours | Free Registration for Fur Squared 2024 |
+### 2023 Volunteer Rewards To Be Announced
 
 **Note:** Any hours logged before opening ceremonies or after closing ceremonies will count as **double hours** toward your total hours of logged service.
 
 ## Interested In Volunteering?
 
-there are a couple of ways of signing up:
+New this year, volunteer registration will be tied to your convention registration! When registering for the con, you can opt in to volunteer. If you have already registered, you can still volunteer by using the Edit Registration link in your confirmation email and opting in to volunteer. (Edit Registration links will be available soon.)
 
-* Fill out the volunteer application form [F2 2023 Volunteers Application](https://docs.google.com/forms/d/1o_SrBQnAzMfTpXp7B99gYvccm80BVg_YUDaygr9EhiI/){: target="_blank" rel="noopener"}
-* Contact us ahead of time at [volunteers@fursquared.com](mailto:volunteers@fursquared.com). In the email, let us know your availability, special skills and desired position.
-* Sign up at the door when you arrive at the convention. We'll have gopher log sheets and documentation available at the Volunteers Desk (Wisconsin 7 Room) as soon as the convention starts.
-
-If you have any questions, or need information, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com)
+If you have any questions, or need information, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com). Thank you so much for your interest in helping out Fur Squared\!
