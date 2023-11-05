@@ -20,7 +20,7 @@ navbar-links:
     - Dealer's Den: "dealers"
   # - Video Games: "video-games"
   Info:
-  # - About: "about"
+    - About: "about"
   # - Hotel: "hotel"
   # - Guest of Honor: "goh"
     - Code of Conduct: "code-of-conduct"
@@ -105,32 +105,32 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#3B1700"
-navbar-text-col: "#FFE0CC"
+navbar-col: "#051623"
+navbar-text-col: "#FCEDD4"
 navbar-logo-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
-navbar-text-hover-col: "#3B1700"
-navbar-hover-bg-col: "#A87242"
+navbar-text-hover-col: "#051623"
+navbar-hover-bg-col: "#57183E"
 
 page-col: "#995C44"
 page-text-col: "#FFFFFF"
-header-col: "#FFDDA8"
-link-col: "#FFE0CC"
-hover-col: "#A87242"
+header-col: "#051623"
+link-col: "#E8A56C"
+hover-col: "#57183E"
 selection-col: "#692800"
-selection-bg-col: "#FFE0CC"
+selection-bg-col: "#FCEDD4"
 
 button-col: "#692800"
-button-bg-col: "#FFE0CC"
+button-bg-col: "#FCEDD4"
 button-hover-col: "#692800"
 button-bg-hover-col: "#FFFFFF"
 
-footer-col: "#3B1700"
+footer-col: "#051623"
 footer-text-col: "#FFFFFF"
-footer-link-col: "#FFDDA8"
+footer-link-col: "#E8A56C"
 footer-icon-col: "#FFFFFF"
 footer-icon-fill-col: "#8C5A2B"
-footer-icon-hover-col: "#A87242"
+footer-icon-hover-col: "#57183E"
 footer-icon-fill-hover-col: "white"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
