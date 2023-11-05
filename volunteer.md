@@ -43,6 +43,6 @@ First off, you'll have the thanks of our entire staff and all our attendees, as 
 
 ## Interested In Volunteering?
 
-New this year, volunteer registration will be tied to your convention registration! When registering for the con, you can opt in to volunteer. If you have already registered, you can still volunteer by using the Edit Registration link in your confirmation email and opting in to volunteer. (Edit Registration links will be available soon.)
+Looking to Volunteer this year for Fur Squared  2024? If you haven't already Pre-Registered for our 2024 event then you'll be glad to know you can also fill out our Volunteer form during your Registration Process. Already Registered and changed your mind? No worries soon you'll be able to pull back up your Registration and not only Upgrade your attending tier but you'll also be able to fill out Volunteer information there as well. The option is not yet ready but as soon as it is we'll have our Social media team and site updated and announcing the exciting news. Thank you for taking interest in Volunteering for Fur Squared  2024!
 
 If you have any questions, or need information, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com). Thank you so much for your interest in helping out Fur Squared\!
