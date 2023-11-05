@@ -37,7 +37,7 @@ Finding your way around a large hotel in unfamiliar territory can be baffling; e
 
 First off, you'll have the thanks of our entire staff and all our attendees, as well as the knowledge that you helped run the best Fur Squared yet\! However, there are other benefits too. For volunteering, you will receive the following:
 
-### 2023 Volunteer Rewards To Be Announced
+### 2024 Volunteer Rewards To Be Announced
 
 **Note:** Any hours logged before opening ceremonies or after closing ceremonies will count as **double hours** toward your total hours of logged service.
 
