@@ -1,9 +1,8 @@
 ---
 layout: page
 title: About
-subtitle: What is Fur Squared all about?
+subtitle: Fur Squared is a furry convention held in Southeastern Wisconsin. Read this page to learn more about the convention!
 ---
-Fur Squared is a furry convention typically held in Brookfield, WI!
 
 ### Q: What is a furry convention?
 
