@@ -27,7 +27,7 @@ Have a good, strong back? We need people to help us with moving equipment and co
 
 ## Registration
 
-Are you a social butterfly that loves meeting new people in high volumes. Looking for something that has you more in one spot with the ability to sit down. Registration is for you and we'd love to have more people helping out handing out badges, crowd controlling lines and giving out Swag this year!
+Are you a social butterfly that loves meeting new people in high volumes? Looking for something that has you more in one spot with the ability to sit dow? Registration is for you and we'd love to have more people helping out handing out badges, crowd controlling lines and giving out Swag this year!
 
 ## Sponsor's Lounge
 
@@ -39,9 +39,13 @@ Finding your way around a large hotel in unfamiliar territory can be baffling; e
 
 ## What's in it for you?
 
-First off, you'll have the thanks of our entire staff and all our attendees, as well as the knowledge that you helped run the best Fur Squared yet\! However, there are other benefits too. For volunteering, you will receive the following:
+What's in it for you? First off, you'll have the thanks of our entire staff and all our attendees, as well as the knowledge that you helped run the best Fur Squared yet! However, there are other benefits too. For volunteering, you will receive the following:
 
-### 2024 Volunteer Rewards To Be Announced
+- A ribbon identifying you as being part of our group of convention volunteers.
+- For 2 hours of logged service, you receive a F2 Bandana.
+- For 6 hours of logged service, you will receive a T-shirt with exclusive artwork designed by one of our guests of honor.
+- For 10 hours of logged service, you will receive a Sponsor Stuff Bag (rest of the sponsor swag).
+- For 12 hours of logged service, you will receive Free Registration for Fur Squared 2025.
 
 **Note:** Any hours logged before opening ceremonies or after closing ceremonies will count as **double hours** toward your total hours of logged service.
 
