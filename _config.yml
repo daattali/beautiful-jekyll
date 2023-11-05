@@ -106,7 +106,7 @@ excerpt_length: 50
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
 header-col: "#995C44"
-navbar-col: "#AB4E36"
+navbar-col: "#995C44"
 navbar-text-col: "#FCEDD4"
 navbar-logo-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
