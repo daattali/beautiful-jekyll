@@ -1,0 +1,23 @@
+---
+layout: none
+---
+
+{
+  "name": "{{ site.title }}",
+  "short_name": {{ "site.title }}",
+   "icons": [
+       {
+          "src": "/assets/favocon/android-chrome-192x192.png?version={{ site.favicon-revision }}",
+          "sizes": "192x192",
+          "type": "image/png"
+     },
+    {
+            "src": "/assets/favocon/android-chrome-512x512.png?version={{ site.favicon-revision }}",
+            "sizes": "512x512",
+            "type": "image/png"
+      }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

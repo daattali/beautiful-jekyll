@@ -1,0 +1,19 @@
+---
+comment: this page needs front matter so jekyll will process the liquid
+---
+
+{%- if site.title -%}
+  <meta name="apple-mobile-web-app-title" content="{{ site.title | strip_html}}">
+  <meta name="application-name" content="{{ site.title | strip_html }}">
+{% endif %}
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favkcon/apple-touch-icon.png?version={{ site.favicon-revision }}">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?version={{ site.favicon-revision }}">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?version={{ site.favicon-revision }}">
+<link rel="manifest" href="/assets/favicon/site.webmanifest?version={{ site.favicon-revision }}">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?version={{ site.favicon-revision }}" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico?version={{ site.favicon-revision }}">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?version={{ site.favicon-revision }}">
+<meta name="theme-color" content="#ffffff">

@@ -122,6 +122,13 @@ navbar-var-length: false
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
 
+# Enable the favicon for your website. This is the icon that appears on the tab of the web browser
+# To setup your favicon go to https://realfavicongenerator.net and follow the instructions, download the favions 
+# and place them into /assets/favicon.
+# if you change the favicon images, you must increment the revision to force sites to update.
+
+favicon-revision: 1
+
 ######################################
 # --- Colours / background image --- #
 ######################################

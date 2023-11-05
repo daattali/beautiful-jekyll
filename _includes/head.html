@@ -49,6 +49,10 @@
   {% if site.rss-description %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   {% endif %}
+  
+  {%- if site.favicon-revision -%}
+    {% include favicon.html %}
+  {% endif %}
 
   {% include gtag.html %}
   {% include gtm_head.html %}
