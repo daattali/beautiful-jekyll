@@ -42,6 +42,9 @@ members:
           - name: Octavian Donca (MSR)
             photo_url: https://www.ri.cmu.edu/app/uploads/2023/09/odonca-1-300x450.jpg
             web_url: https://www.ri.cmu.edu/ri-people/octavian-donca/
+          - name: Eric Cai (MSR)
+            photo_url: /img/members/ericcai.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/ericcai/
       - name: Undergraduate Students
         full: true
         list:
