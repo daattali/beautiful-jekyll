@@ -40,17 +40,17 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Covid Policy"
-        name: "covid-policy"
-        file: "covid-policy.md"
+      - label: "Contact"
+        name: "contact"
+        file: "contact.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Contact"
-        name: "contact"
-        file: "contact.md"
+      - label: "Covid Policy"
+        name: "covid-policy"
+        file: "covid-policy.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
           - {label: "Title", name: "title", widget: "string"}
@@ -75,6 +75,14 @@ collections:
       - label: "Hotel"
         name: "hotel"
         file: "hotel.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Poster"
+        name: "poster"
+        file: "poster.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
           - {label: "Title", name: "title", widget: "string"}
