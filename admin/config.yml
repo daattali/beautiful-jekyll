@@ -32,3 +32,19 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Dealers Page"
+        name: "dealers"
+        file: "dealers.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Code of Conduct Page"
+        name: "code-of-conduct"
+        file: "code-of-conduct.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
