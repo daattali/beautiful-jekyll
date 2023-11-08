@@ -27,7 +27,7 @@ Have a good, strong back? We need people to help us with moving equipment and co
 
 ## Registration
 
-Are you a social butterfly that loves meeting new people in high volumes? Looking for something that has you more in one spot with the ability to sit dow? Registration is for you and we'd love to have more people helping out handing out badges, crowd controlling lines and giving out Swag this year!
+Are you a social butterfly that loves meeting new people in high volumes? Looking for something that has you more in one spot with the ability to sit down? Registration is for you and we'd love to have more people helping out handing out badges, crowd controlling lines and giving out Swag this year!
 
 ## Sponsor's Lounge
 
