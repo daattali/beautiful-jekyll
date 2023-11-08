@@ -4,22 +4,12 @@ title: Poster Terms
 subtitle: About Fur Squared's Poster Giveaway
 ---
 
-Poster tier for Fur Squared 2024 will be happening differently this year
-compared to the last few. There will be no lottery this year for Fur Squared
-2024. This year we’re happy to announce that for the 10th anniversary we
-will be taking in the first 100 that pay for “Poster”. No more waiting to see if
-you’re one of the lucky few instead you’ll know right away! Once all 100
-slots have been paid Fur Squared will announce on Twitter, Telegram, etc
-on this page about all slots being filled.
+Poster tier for Fur Squared 2024 will be happening differently this year compared to the last few. There will be no lottery this year for Fur Squared 2024. This year we’re happy to announce that for the 10th anniversary we will be taking in the first 100 that pay for “Poster”. No more waiting to see if
+you’re one of the lucky few instead you’ll know right away! Once all 100 slots have been paid Fur Squared will announced on Twitter, Telegram, etc. on this page about all slots being filled.
 
-If you found yourself already registered for Fur Squared 2024 but did not
-select “Poster” as your registration level there’s good news for you. You will
-still be able to find the edit registration link in your email to upgrade to
-“Poster”. You will need to pay the difference between Super Sponsor and
-Poster in order to finalize your slot in our poster.
+If you found yourself already registered for Fur Squared 2024 but did not select “Poster” as your registration level there’s good news for you. You will still be able to find the edit registration link in your email to upgrade to “Poster”. You will need to pay the difference between Super Sponsor and Poster in order to finalize your slot in our poster.
 
-If you have any further questions about our poster this year please reach
-out to [poster@fursquared.com](mailto:poster@fursquared.com).
+If you have any further questions about our poster this year please reach out to [poster@fursquared.com](mailto:poster@fursquared.com).
 
 | Date | Milestone |
 | --- | --- |
