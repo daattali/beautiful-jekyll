@@ -1,20 +1,14 @@
 ---
 layout: page
-title: Fur Squared 2023 Registration!!
-subtitle: Registration and benefits of Fur Squared
-css:
+title: Fur Squared 2024 Registration
+subtitle: Coming Soon!
 ---
-| Date | Milestone |
-| --- | --- |
-| Jan 29, 2023 | Pre-Reg opens |
-| Feb 5, 2023 | Poster Lottery closes |
-| Feb 6, 2023 | Poster Lottery upgrades begin |
-| Feb 9, 2023 | Poster Lottery upgrades end |
-| Mar 24, 2023 | Pre-Reg closes |
+
+# Registration will be opening soon! Please follow this page and our social media for updates.
 
 ## COVID-19 Information
 
-**Vaccine records will be required & checked before you receive your badge.** **Masks worn properly will be required at all times in hotel and convention space.**
+**Proof of vaccination for COVID-19 will no longer be required to attend FurSquared 2024, however we strongly urge everyone to keep their vaccinations up-to-date, especially when reformulated boosters become available to the general population this fall (2023). Additionally, while FurSquared encourages masks for all attendees in public and convention spaces, masks will not be required. FurSquared may amend this policy as necessary for the safety of everyone at the convention.**
 
 Further details about this policy can be reviewed on our dedicated [COVID-19 policy page](/covid-policy).
 
@@ -34,37 +28,38 @@ Further details about this policy can be reviewed on our dedicated [COVID-19 pol
 * Special super sponsor goodies and swag.
 * This year’s t-shirt.
 * A special super sponsor item.
-* An invitation to our Guest of Honor dinner Saturday night.
+* An invitation to our Guest of Honor dinner.
 
-Please be aware that Pre-Registration prices will end March 23rd, 2023 at 11:59 PM CST. Prices then will become Walk-In prices.
+Please be aware that Pre-Registration prices will end at a date to be determined. Prices then will become Walk-In prices.
 
 ## Pricing
 
 | Level | Pre-Registration | Walk-In Registration |
 | --- | --- | --- |
-| Attendee | $50 | $60 |
-| Sponsor | $85 | $95 |
-| Super Sponsor | $150 | $160 |
+| Attendee | $70 | $75 |
+| Sponsor | $120 | $130 |
+| Super Sponsor | $170 | $180 |
+| Poster | $250 | Not Available |
 
 | Day | Daily Badges |
 | --- | --- |
-| Friday | $30 |
-| Satuday | $30 |
-| Sunday | $20 |
+| Friday | $35 |
+| Satuday | $35 |
+| Sunday | $25 |
 
 Should you lose your badge and require a reprint, you will have to pay a $20 reprint fee. If you find your original badge, you can return your reprint and receive a refund.
 
-Super sponsors will not be eligible for refunds after March 6th. If you registered for a super sponsor and cannot make it to the convention, you may request a rollover for next year.
+Super sponsors will not be eligible for refunds after a date to be determined. If you registered for a super sponsor and cannot make it to the convention, you may request a rollover for next year.
 
 ## Parents wishing to attend with a minor: fear not, we got you!
 
-Parent in tow badges can be supplied please inquire at the door to receive one. Any Questions on how that works please email us [registration@fursquared.com](mailto:registration@fursquared.com)
+Parent in tow badges can be supplied, please inquire at the door to receive one. For questions, please contact [registration@fursquared.com](mailto:registration@fursquared.com)
 
-Check back here and/or follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared) for any updates that may come this way.
+Check back here and/or follow us on social media for any updates that may come this way.
 
 ## Parental Consent
 
-The file located below is for a Notary consent form for minors between the ages of 14-17 to attend the convention without an adult. Reminder: all Minors in this age group that are eligible to receive a vaccine must show proof of vaccination before a registration can be completed. Without proof of vaccination a registration WILL NOT be given.
+The file located below is for a Notary consent form for minors between the ages of 14-17 to attend the convention without an adult.
 
 [Get the parental consent form](https://docs.google.com/document/d/1BDVSTUA_VEBAOYD_VgRfCxz_o4K1o3Xg5ZRDSsEmp4c/edit){: target="_blank" rel="noopener"}
 
@@ -74,7 +69,7 @@ Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<b
 
 # FAQ
 
-## What kind of ID is valid for checking in to get my badge during registration and vaccine check?
+## What kind of ID is valid for checking in to get my badge during registration?
 
 * We require you to have a government issued ID that has your picture and date of birth on it along with legal first and last name. If you have changed your name the ID’s first and last legal names should match that what was submitted during your registration.
 
@@ -94,7 +89,7 @@ Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<b
 
 ## I’m accompanying someone to the convention as a caretaker and I am required to be with them always. Do I get a caretaker badge?
 
-* FurSquared will happily assist with caretakers and their registrations. There must be at least one purchased attending badge by the person who is attending for themself. Please reach out to registration@fursquared.com so we can assist you ahead of time.
+* FurSquared will happily assist with caretakers and their registrations. There must be at least one purchased attending badge by the person who is attending for themselves. Please reach out to registration@fursquared.com so we can assist you ahead of time.
 
 ## Will there be daily badges for the weekend?
 
@@ -103,7 +98,3 @@ Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<b
 ## Help! I’ve lost my badge at the convention! What should I do?!?!
 
 * You will be required to head back to registration and purchase a reprint. Please clearly state that you require a reprint to staff when you arrive. A reprint will result in a $20 fee. However, if you should find your badge after you have purchased a reprint, you may bring back the reprinted badge to registration and receive a refund of the reprinted badge. It will be destroyed and then you will receive the refund.
-
-# The Registration Link
-
-[https://reg.fursquared.com](https://reg.fursquared.com)
