@@ -32,14 +32,6 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Dealers"
-        name: "dealers"
-        file: "dealers.md"
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Sub Title", name: "subtitle", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
       - label: "Code of Conduct"
         name: "code-of-conduct"
         file: "code-of-conduct.md"
@@ -56,14 +48,6 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Volunteer"
-        name: "volunteer"
-        file: "volunteer.md"
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Sub Title", name: "subtitle", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
       - label: "Contact"
         name: "contact"
         file: "contact.md"
@@ -72,9 +56,9 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Registration"
-        name: "registration"
-        file: "registration.md"
+      - label: "Dealers"
+        name: "dealers"
+        file: "dealers.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
           - {label: "Title", name: "title", widget: "string"}
@@ -104,9 +88,25 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Registration"
+        name: "registration"
+        file: "registration.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - label: "Theme"
         name: "theme"
         file: "theme.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Volunteer"
+        name: "volunteer"
+        file: "volunteer.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
           - {label: "Title", name: "title", widget: "string"}
