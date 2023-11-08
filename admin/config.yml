@@ -21,3 +21,14 @@ collections:
       - {label: "Thumbnail Image", name: "thumbnail-img", widget: "image", required: false}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "about.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
