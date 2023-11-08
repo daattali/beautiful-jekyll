@@ -1,9 +1,10 @@
 ---
 layout: page
 title: About
-subtitle: Fur Squared is a furry convention held in Southeastern Wisconsin. Read this page to learn more about the convention!
+subtitle: Fur Squared is a furry convention held in Southeastern Wisconsin. Read
+  this page to learn more about the convention!
 ---
-
+honk
 ### Q: What is a furry convention?
 
 Also known as a furry con or fur con, a furry convention is a large gathering of those in the [furry fandom](https://whatarefurries.com/). At these multi-day events, those in the fandom meet up, patronize vendors, and attend smaller events called "panels".
