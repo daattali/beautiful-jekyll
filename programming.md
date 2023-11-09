@@ -15,9 +15,7 @@ Never hosted an event before? Got a wacky idea but aren't sure if it'll take off
 
 Calling all gadgeteers! Our DJ submissions are officially open! Think you’ve got a track the world isn’t ready for? What better time to shine than now?
 
-Submissions will close on 12/10! More info below! 
-
-<https://forms.gle/BF3EwjLyHtY94uqi9>
+Submissions will close on 12/10! More info at: <https://forms.gle/BF3EwjLyHtY94uqi9>
 
 *Our DJ selection is done by a blind selection to minimize potential bias. Submissions are anonymized, then submitted to our 3 person DJ selection team for ranking and final selection.*
 
