@@ -11,6 +11,14 @@ If you have an event you'd like to host at F2 - a meetup, a discussion, a demons
 
 Never hosted an event before? Got a wacky idea but aren't sure if it'll take off? Don't be shy - we love innovation, and you'll not find a more welcoming audience! We're happy to work with you to flesh out an idea, and offer advice for running your panel.
 
+## DJ Submissions
+
+Calling all gadgeteers! Our DJ submissions are officially open! Think you’ve got a track the world isn’t ready for? What better time to shine than now?
+
+Submissions will close on 12/10! More info at: <https://forms.gle/BF3EwjLyHtY94uqi9>
+
+*Our DJ selection is done by a blind selection to minimize potential bias. Submissions are anonymized, then submitted to our 3 person DJ selection team for ranking and final selection.*
+
 ## Contact Us
 
 Have any programming-related questions or concerns? Email us at [programming@fursquared.com](mailto:programming@fursquared.com).
