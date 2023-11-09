@@ -47,8 +47,6 @@ Please be aware that Pre-Registration prices will end at a date to be determined
 | Satuday | $35 |
 | Sunday | $25 |
 
-Should you lose your badge and require a reprint, you will have to pay a $20 reprint fee. If you find your original badge, you can return your reprint and receive a refund.
-
 Super sponsors will not be eligible for refunds after a date to be determined. If you registered for a super sponsor and cannot make it to the convention, you may request a rollover for next year.
 
 ## Parents wishing to attend with a minor: fear not, we got you!
