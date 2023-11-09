@@ -97,4 +97,4 @@ Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<b
 
 ## Help! I’ve lost my badge at the convention! What should I do?!?!
 
-* You will be required to head back to registration and purchase a reprint. Please clearly state that you require a reprint to staff when you arrive. A reprint will result in a $20 fee. However, if you should find your badge after you have purchased a reprint, you may bring back the reprinted badge to registration and receive a refund of the reprinted badge. It will be destroyed and then you will receive the refund.
+* You will be required to head back to registration and purchase another level that you had previously purchased. Please clearly state that you require a reprint to staff when you arrive. A reprint will result in the cost of the level you had purchased prior. However, if you should find your badge after you have purchased a reprint, you may bring back the reprinted badge to registration and receive a refund of the reprinted badge. It will be destroyed and then you will receive a refund.
