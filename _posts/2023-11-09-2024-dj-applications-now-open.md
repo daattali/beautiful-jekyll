@@ -3,6 +3,13 @@ layout: post
 title: 2024 DJ Applications Now Open
 subtitle: Submissions close 12/10/23
 date: 2023-11-09T03:42:08.765Z
+tags:
+  - DJ
+  - DJ application
+  - dance
+  - music
+  - openapplication
+  - ""
 ---
 Calling all gadgeteers! Our DJ submissions are officially open! Think you’ve got a track the world isn’t ready for? What better time to shine than now?
 
