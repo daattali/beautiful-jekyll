@@ -8,7 +8,7 @@ tags:
   - DJ application
   - dance
   - music
-  - openapplication
+  - open application
   - ""
 ---
 Calling all gadgeteers! Our DJ submissions are officially open! Think you’ve got a track the world isn’t ready for? What better time to shine than now?
