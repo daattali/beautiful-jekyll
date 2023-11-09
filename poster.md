@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Poster Terms
-subtitle: About Fur Squared's Poster Giveaway
+subtitle: About Fur Squared's Poster
 ---
 
 Poster tier for FurSquared 2024 will be happening differently this year compared to the last few. There will be no lottery this year for FurSquared 2024. This year we’re happy to announce that for the 10th anniversary we will be taking in the first 100 that pay for “Poster”. No more waiting to see if you’re one of the lucky few instead you’ll know right away! Once all 100 slots have been paid FurSquared will announce on Twitter, Telegram, etc. on this page about all slots being filled.
