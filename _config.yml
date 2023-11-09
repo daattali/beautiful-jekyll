@@ -16,7 +16,7 @@ url: "https://fursquared.com"
 navbar-links:
   Convention:
   # - Registration: "registration"
-  # - Programming: 'programming'
+    - Programming: 'programming'
     - Dealer's Den: "dealers"
   # - Video Games: "video-games"
   Info:
@@ -27,7 +27,7 @@ navbar-links:
     - Covid Policy: "covid-policy"
   Join The Fun:
     - Volunteer: "volunteer"
-    - Dealers Den: "dealers"
+  # - Dealers Den: "dealers"
   #  - Night Market: "night-market"
   #  - Dance Events: "dance-events"
   #  - Artist Alley: "artist-alley"
