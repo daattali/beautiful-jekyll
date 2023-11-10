@@ -22,8 +22,11 @@ body {
   {% endif %}
   overflow-wrap: break-word;
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-direction: column;
+}
+body > main {
+  flex: 1;
 }
 p {
   line-height: 1.5;
