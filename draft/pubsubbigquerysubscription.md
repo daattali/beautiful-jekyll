@@ -15,11 +15,16 @@ tags: [BigQuery Subscription, Pub/Sub, Data Ingestion, ELT, Analytics]
 {:toc}
 
 # Google Cloud Pub/Sub BigQuery Subscriptions
-Google Cloud Pub/Sub's BigQuery subscriptions simplify data ingestion pipelines that require little or no data transformation. Applications performing extract, load and transform (ELT) pipelines no longer need to make use of the likes of Dataflow to subscribe to your Pub/Sub topic and load data into BigQuery. Pub/Sub BigQuery subscriptions enable you to send messages to BigQuery directly as they are received.
+Google Cloud Pub/Sub's BigQuery subscriptions simplify data ingestion pipelines that require little or no data transformation. Applications performing extract, load and transform (ELT) pipelines no longer need to make use of Cloud Functions or Dataflow to subscribe to your Pub/Sub topic and load data into BigQuery. Pub/Sub BigQuery subscriptions enable you to send messages to BigQuery directly as they are received.
 
 Messages can be loaded into BigQuery in two ways. The default method is loading the messages in their raw format. Within BigQuery, the messages are stored in the defined table in JSON format under a data column. Alternatively, a schema can be defined on the Pub/Sub topic to define the format of message fields. The BigQuery subscription then uses this schema to load the defined message fields into corresponding BigQuery table columns. In addition, metadata can be populated to help track information such as message ingestion time etc. 
 
-If a message is received with additional fields not defined within the schema, BigQuery subscriptions will fail to write the message to the table (check if BQ fails, or if Pub/Sub rejects message). To mitigate this, Pub/Sub Topics (or schema?) should be configured to automatically drop unknown fields. This ensures the data is still written to BigQuery, but any additional message fields not defined within the schema are dropped.
+<insert diagram of bigQuery JSON data table>
+<insert diagram of schema, and BigQuery populated table>
+
+If a message is received with additional fields not defined within the schema, BigQuery subscriptions can be configured to drop the message. If the BigQuery subscription doesn't enable dropping unknown message fields, the messages with extra fields remain in the subscription backlog. <test if it drops only the unknown message fields and pushes to BigQuery still, or drops entire message>
+
+<check true statement> To mitigate this, Pub/Sub Topics (or schema?) should be configured to automatically drop unknown fields. This ensures the data is still written to BigQuery, but any additional message fields not defined within the schema are dropped.
 
 Once data is loaded into BigQuery, simple SQL transformation can be performed on the raw data. With BigQuery scheduled queries you can automate SQL tranformation tasks based on a cron schedule you define.
 
@@ -35,6 +40,9 @@ The Pub/Sub service account requires write access to the BigQuery target table, 
 # Defining Pub/Sub Topic Schema
 The Pub/Sub Topic schema
 
+<Example code creating pub/sub topic schema>
+
+# Creating BigQuery Subscription
 
 gcpdiag requires the following API's to be enabled on the GCP project to inspect:
 
