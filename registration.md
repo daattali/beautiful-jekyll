@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Fur Squared 2024 Registration
-subtitle: Coming Soon!
+subtitle: Please read the information on this page, then click the link at the bottom to register!
 ---
-
-# Registration will be opening soon! Please follow this page and our social media for updates.
 
 ## COVID-19 Information
 
@@ -41,10 +39,12 @@ Please be aware that Pre-Registration prices will end at a date to be determined
 | Super Sponsor | $170 | $180 |
 | Poster | $250 | Not Available |
 
-| Day | Daily Badges |
+<br/>
+
+| Daily Badge | Price |
 | --- | --- |
 | Friday | $35 |
-| Satuday | $35 |
+| Saturday | $35 |
 | Sunday | $25 |
 
 Super sponsors will not be eligible for refunds after a date to be determined. If you registered for a super sponsor and cannot make it to the convention, you may request a rollover for next year.
@@ -96,3 +96,7 @@ Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<b
 ## Help! I’ve lost my badge at the convention! What should I do?!?!
 
 * You will be required to head back to registration and purchase another level that you had previously purchased. Please clearly state that you require a reprint to staff when you arrive. A reprint will result in the cost of the level you had purchased prior. However, if you should find your badge after you have purchased a reprint, you may bring back the reprinted badge to registration and receive a refund of the reprinted badge. It will be destroyed and then you will receive a refund.
+
+# I've Read All This, Now Where Do I Register?
+
+[Click here to register!](https://reg.fursquared.com/registration/){: target="_blank" rel="noopener"}
