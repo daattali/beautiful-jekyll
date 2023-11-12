@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Fur Squared 2024 Registration
+subtitle: Please read the information on this page, then click the link at the bottom to register!
 ---
 
 ## COVID-19 Information
@@ -40,7 +41,7 @@ Please be aware that Pre-Registration prices will end at a date to be determined
 
 <br/> <br/>
 
-| Day | Daily Badges |
+| Daily Badge | Price |
 | --- | --- |
 | Friday | $35 |
 | Saturday | $35 |
