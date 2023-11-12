@@ -39,7 +39,7 @@ Please be aware that Pre-Registration prices will end at a date to be determined
 | Super Sponsor | $170 | $180 |
 | Poster | $250 | Not Available |
 
-<br/> <br/>
+<br/>
 
 | Daily Badge | Price |
 | --- | --- |
