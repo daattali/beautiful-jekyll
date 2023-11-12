@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Registration Opening 11/12/23
-subtitle: Registration begins at 12PM CST 11/12/23
+title: Registration Now Open!
+subtitle: Secure your badge now!
 date: 2023-11-12T12:00:00.765Z
 tags:
   - registration
