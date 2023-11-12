@@ -8,11 +8,11 @@ subtitle: How to Get Along With Us
 
 The following general rule supersedes all others listed below and may be invoked at any time:
 
-**Any action or behavior that causes significant interference with convention operations, excessive discomfort to other attendees, or adversely affects Fur Squared's relationship with its guests, its venues or the public is strictly forbidden and may result in permanent suspension of membership.**
+**Any action or behavior that causes significant interference with convention operations, excessive discomfort to other attendees, or adversely affects Fur Squared's relationship with its guests, its venues or the public is strictly forbidden and may result in permanent suspension of attendance.**
 
 ### **Introduction:**
 
-The primary purpose of Fur Squared is for our attendees to have fun. To ensure that the greatest number of people achieve this objective, we have established certain rules of conduct. Fur Squared welcomes all parties with an interest in anthropomorphic animals; however, the convention's management reserves the right to deny or revoke the membership of any individual at any time for any reason.
+The primary purpose of Fur Squared is for our attendees to have fun. To ensure that the greatest number of people achieve this objective, we have established certain rules of conduct. Fur Squared welcomes all parties with an interest in anthropomorphic animals; however, the convention's management reserves the right to deny or revoke the attendance of any individual at any time for any reason.
 
 The parent company, Two Ferrets, also reserves the right to amend these rules at any time without prior or posted notice and reserves the sole right of interpretation. In any dispute, the general rule above will apply. If you have any questions, please contact the convention operations staff for assistance.
 
@@ -43,7 +43,7 @@ Any other action that shall, at the sole discretion of Fur Squared staff, be dee
 
 ### **Harassment:**
 
-Harassment of any kind, including deliberate intimidation, stalking, or unwanted attention, will not be tolerated. If people tell you "no" or to leave them alone, your business with them is done. If you continue to attempt to have contact with those people, you may be removed from event spaces. Fur Squared is not responsible for solving any interpersonal problems that may arise between individual members and will use its sole discretion in determining appropriate interventionary measures.
+Harassment of any kind, including deliberate intimidation, stalking, or unwanted attention, will not be tolerated. If people tell you "no" or to leave them alone, your business with them is done. If you continue to attempt to have contact with those people, you may be removed from event spaces. Fur Squared is not responsible for solving any interpersonal problems that may arise between individual attendees and will use its sole discretion in determining appropriate interventionary measures.
 
 Harassment includes (but is not limited to):
 
@@ -77,9 +77,9 @@ Note: Having participated in the past will not have an impact on you.
 
 ### **Use of Fur Squared Images or Footage:**
 
-Fur Squared members should be aware that audio and/or video recordings are frequently made in convention areas and that their likenesses may appear in those recordings. Individual members agree to assign without compensation the use of their likeness(es) at Fur Squared for the use of promotional material such as the highlights videos.
+Fur Squared attendees should be aware that audio and/or video recordings are frequently made in convention areas and that their likenesses may appear in those recordings. Individual attendees agree to assign without compensation the use of their likeness(es) at Fur Squared for the use of promotional material such as the highlights videos.
 
-The name "Fur Squared" and the Fur Squared logo are registered service marks of Two Ferrets, and must not be used in any fashion that disparages or dilutes that mark. Members agree to remove from circulation or publication any image or recording that in the sole opinion of Two Ferrets misrepresents or defames its service mark.
+The name "Fur Squared" and the Fur Squared logo are registered service marks of Two Ferrets, and must not be used in any fashion that disparages or dilutes that mark. Attendees agree to remove from circulation or publication any image or recording that in the sole opinion of Two Ferrets misrepresents or defames its service mark.
 
 ### **Payments to Fur Squared and other money matters:**
 
@@ -87,9 +87,9 @@ Donations to Fur Squared unfortunately are not deductible from individual U.S. F
 
 Checks that are presented against insufficient funds will be charged a fee of $30 per check.
 
-Fur Squared also accepts Visa, Mastercard, American Express, JCB, Discover, and Diners Club cards. Chargebacks (denying a charge) that are made for the sole purpose of avoiding payment, that are made without sufficient cause, or that are made without first attempting to resolve the dispute with Fur Squared may result in permanent revocation of membership privileges and possible legal action.
+Fur Squared also accepts Visa, Mastercard, American Express, JCB, Discover, and Diners Club cards. Chargebacks (denying a charge) that are made for the sole purpose of avoiding payment, that are made without sufficient cause, or that are made without first attempting to resolve the dispute with Fur Squared may result in permanent revocation of attendance privileges and possible legal action.
 
-Fur Squared cannot involve itself in financial disputes between individual members, and cannot divulge information about an individual member to any party other than to banking officials or legal authorities.
+Fur Squared cannot involve itself in financial disputes between individual attendees, and cannot divulge information about an individual attendee to any party other than to banking officials or legal authorities.
 
 ### **Miscellaneous notes:**
 
@@ -99,8 +99,8 @@ This Code of Conduct is only enforceable to the extent that Fur Squared leadersh
 
 The Board may, upon receipt of information, ban or bar someone from event spaces or events based on a ban, bar, or notice from other legal entities (venues, organizations, conventions, online platforms, law enforcement, etc), given the following: the Board has gone to every effort to ensure those bans are reputable, and not rooted in interpersonal issues, bias, or malice; the ban or bar was enacted due to harassment, violence, or physical, sexual, emotional abuse, or incitement of any of the above.
 
-Please be reminded that these rules involve, of course, "worst-case" scenarios and are put into place to ensure the safety and comfort of our members. They are also not all-inclusive: **in all cases, the singular rule that supersedes all others is, "any action or behavior that causes significant interference with convention operations, excessive discomfort to other attendees, or adversely affects Fur Squared's relationship with its guests, its venue or the public is strictly forbidden and may result in removal."**
+Please be reminded that these rules involve, of course, "worst-case" scenarios and are put into place to ensure the safety and comfort of our attendees. They are also not all-inclusive: **in all cases, the singular rule that supersedes all others is, "any action or behavior that causes significant interference with convention operations, excessive discomfort to other attendees, or adversely affects Fur Squared's relationship with its guests, its venue or the public is strictly forbidden and may result in removal."**
 
-Fur Squared is prepared to deal with any or all of the above scenarios in as rapid and efficient a manner as possible should they occur. We thank our members for their past cooperation and for their continued assistance in making this a safe and enjoyable experience for everyone. Have fun - just please remember to be courteous of those around you while doing so\!
+Fur Squared is prepared to deal with any or all of the above scenarios in as rapid and efficient a manner as possible should they occur. We thank our attendees for their past cooperation and for their continued assistance in making this a safe and enjoyable experience for everyone. Have fun - just please remember to be courteous of those around you while doing so\!
 
 ~The Board & Staff of Fur Squared & Two Ferrets
