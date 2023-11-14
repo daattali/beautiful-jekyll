@@ -10,8 +10,6 @@ Phone: (414) 271-7250</h3>
 
 <h3><a href="https://www3.hilton.com/en/hotels/wisconsin/hilton-milwaukee-city-center-MKEMHHF/index.html">Hotel Website</a></h3>
 
-<br />
-
 ## Rates and Booking
 <h3>$159 / Night</h3>
 <h3>Parking: $12 Per Vehicle / Day, Includes In-and-Out Privileges</h3>
