@@ -19,7 +19,7 @@ navbar-links:
     - Programming: 'programming'
     - Dealer's Den: "dealers"
   # - Video Games: "video-games"
-  Info:
+  Information:
     - About: "about"
     - Hotel: "hotel"
   # - Guest of Honor: "goh"
