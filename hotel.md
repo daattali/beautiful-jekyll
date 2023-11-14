@@ -18,7 +18,7 @@ Phone: (414) 271-7250</h3>
 <h3><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MKEMHHF&arrivalDate=2024-02-22&departureDate=2024-02-26&groupCode=96L&room1NumAdults=1">Reserve a Room Here</a></h3>
 
 <div align="center">
-  <h2>Please be aware of scammers. Only reserve rooms from this site and only room with people you know and trust. If an offer sounds too good to be true, it likely is!</h2>
+  <h3>Please be aware of scammers. Only reserve rooms from this site and only room with people you know and trust. If an offer sounds too good to be true, it likely is!</h3>
 </div>
 
 ## Alternative Transportation
