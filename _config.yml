@@ -21,14 +21,14 @@ navbar-links:
   # - Video Games: "video-games"
   Info:
     - About: "about"
-  # - Hotel: "hotel"
+    - Hotel: "hotel"
   # - Guest of Honor: "goh"
     - Code of Conduct: "code-of-conduct"
     - Covid Policy: "covid-policy"
   Join The Fun:
     - Attend: "registration"
     - Volunteer: "volunteer"
-  # - Dealers Den: "dealers"
+    - Dealers Den: "dealers"
   #  - Night Market: "night-market"
   #  - Dance Events: "dance-events"
   #  - Artist Alley: "artist-alley"
