@@ -23,11 +23,9 @@ Phone: (414) 271-7250</h3>
 
 <hr>
 
-## Alternate Transportation
+## Other Ways to Get To Fur Squared
 
-There are other ways to get to Fur Squared besides driving and parking at the hotel! A few options are available for you to consider.
-
-Keep in mind the Milwaukee County Transit System
+There are other ways to get to Fur Squared besides driving and parking at the hotel! A few options are available for you to consider. These options may be cheaper, more convenient, or more environmentally friendly than driving yourself. As a bonus, you can also use these options to get around Milwaukee during the convention and explore the city if you wish!
 
 ## From the Milwaukee Intermodal Station
 
