@@ -70,16 +70,16 @@ members:
       - name: PhD alumni
         full: False
         list:
-          - name: Siddharth Ancha (co-advised with Srinivasa Narasimhan) -> Post-doc with Nick Roy at MIT
-            web_url: https://siddancha.github.io/
-          - name: Xingyu Lin -> Post-doc with Pieter Abbeel at UC Berkeley
-            web_url: https://xingyu-lin.github.io/
-          - name: Brian Okorn (co-advised with Martial Hebert) -> Boston Dynamics AI Institute
-            web_url: http://brianokorn.com/
-          - name: Thomas Weng
-            web_url: https://www.thomasweng.com
           - name: Wenxuan Zhou
             web_url: https://wenxuan-zhou.github.io/
+          - name: Thomas Weng -> Boston Dynamics AI Institute
+            web_url: https://www.thomasweng.com
+          - name: Brian Okorn (co-advised with Martial Hebert) -> Boston Dynamics AI Institute
+            web_url: http://brianokorn.com/
+          - name: Xingyu Lin -> Post-doc with Pieter Abbeel at UC Berkeley
+            web_url: https://xingyu-lin.github.io/
+          - name: Siddharth Ancha (co-advised with Srinivasa Narasimhan) -> Post-doc with Nick Roy at MIT
+            web_url: https://siddancha.github.io/
       - name: Master's students (Research Master's)
         full: False
         list:
