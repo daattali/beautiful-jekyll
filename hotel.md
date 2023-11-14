@@ -10,18 +10,16 @@ Phone: (414) 271-7250</h3>
 
 <h3><a href="https://www3.hilton.com/en/hotels/wisconsin/hilton-milwaukee-city-center-MKEMHHF/index.html">Hotel Website</a></h3>
 
-## Room Rates and Booking
-<h3>$159 / Night</h3>
-<h3><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MKEMHHF&arrivalDate=2024-02-22&departureDate=2024-02-26&groupCode=96L&room1NumAdults=1">Reserve a Room Here</a></h3>
 <br />
 
-## Parking
-<h3>$12 Per Vehicle / Day</h3>
-<h3>Parking includes in and out privileges.</h3>
-<br />
+## Rates and Booking
+<h3>$159 / Night</h3>
+<h3>Parking: $12 Per Vehicle / Day, Includes In-and-Out Privileges</h3>
+<h3><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MKEMHHF&arrivalDate=2024-02-22&departureDate=2024-02-26&groupCode=96L&room1NumAdults=1">Reserve a Room Here</a></h3>
+
 <h2>Please be aware of scammers. Only reserve rooms from this site and only room with people you know and trust. If an offer sounds too good to be true, it likely is!</h2>
 
-# Alternative Transportation
+## Alternative Transportation
 
 There are other ways to get to Fur Squared besides driving and parking at the hotel! A few options are available for you to consider.
 
