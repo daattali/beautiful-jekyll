@@ -21,7 +21,7 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | ------- | ------------------------------- | ------------------------------------- | ------------------------- |
 | 30-Oct	| Factorials			                | [2020 AMC 8](https://artofproblemsolving.com/wiki/index.php/2020_AMC_8_Problems)            | Welcome Party             |
 | 6-Nov 	| Right Triangles                	| (AMC 10A)                             | _No School_               |
-| 13-Nov	| Probability	                		| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems)            | _Cancelled, No Topic_     |
+| 13-Nov	| Probability	                		| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems)            | College Bowl Throwdown    |
 | 20-Nov	| Fractions		                		| _Half Day_                            | _No School_               |
 | 27-Nov	| Area				                	  | [RMS Mathcounts School Round](https://rmsmath.sharplogic.com/files/RMS%202223M%20Exam.pdf)  | Knights of Pi Mock Competition  |
 | 4-Dec		| Patterns		                		| Knights of Pi Problems                | _Cancelled, Knights of Pi Preparation_  |
