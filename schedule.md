@@ -29,9 +29,9 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 18-Dec	| _No School_                    	| _No School_                           | _No School_               |
 | 25-Dec	| _No School_	                		| _No School_                           | _No School_               |
 | 1-Jan		| _No School_ 	                	|                                       |                           |
-| 8-Jan		| Bases   		                		|                                       | (Mathcounts School Round) |
+| 8-Jan		| Circles  		                		|                                       | (Mathcounts School Round) |
 | 15-Jan	| _No School_		                	|                                       | (AMC 8)                   |
-| 22-Jan	| Circles				                  |                                       |                           |
+| 22-Jan	| _Cancelled, School Social_      |                                       |                           |
 | 29-Jan	| Similarity		                	|                                       |                           |
 | 5-Feb		| Pascal's Triangle              	|                                       |                           |
 | 12-Feb	| Logic					                  |                                       | _No School_               |
@@ -40,7 +40,7 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 4-Mar	  | Systems of Equations            |                                       | _No School_               |
 | 11-Mar	| Travel                    			|                                       | _Cacelled, Commons unavailable_               |
 | 18-Mar	| Mixture                   			|                                       |                           |
-| 25-Mar	| Angles and Arcs                	|                                       |                           |
+| 25-Mar	| Bases                         	|                                       |                           |
 | 1-Apr		| Expected Value                	|                                       |                           |
 | 8-Apr 	| _No School_		                	|  _No School_                          | _No School_               |
 | 15-Apr	| Surface Area & Volume           |                                       |                           |
