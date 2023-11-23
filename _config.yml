@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: My Copied Website
 
 # Your name to show in the footer
-author: Some Person
+author: ToQ
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -22,9 +22,9 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Google : "https://www.google.com/"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://www.facebook.com/tophuquy.999"
 
 ################
 # --- Logo --- #
@@ -50,13 +50,10 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "tophuquy2712@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  facebook: tophuquy.999
+  github: QT069
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
