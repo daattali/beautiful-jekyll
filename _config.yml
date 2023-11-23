@@ -51,7 +51,7 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "tophuquy2712@gmail.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+    # remove this line if you don't want to show an RSS link at the bottom
   facebook: tophuquy.999
   github: QT069
 #  medium: yourname
@@ -94,7 +94,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "google.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
