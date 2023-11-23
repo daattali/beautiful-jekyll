@@ -11,7 +11,7 @@ Tui tên là Tô Phú Quý, đây là 1 cái web được chỉnh lại từ cá
 
 ### Contact me via FB thought i rarely reply facebook messages. 
 
-Click ![**this**](facebook.com/tophuquy.999)
+Click [**this**](facebook.com/tophuquy.999)
 
 
 
