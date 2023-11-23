@@ -1,16 +1,18 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Overthinking but never confide
 ---
+Tui tên là Tô Phú Quý, đây là 1 cái web được chỉnh lại từ cái template có sẵn trên github, ai bit j đâu ak 
 
-My name is Inigo Montoya. I have the following qualities:
+- T-rex all the times..
+- Thinking 'bout her :<
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+### Contact me via FB thought i rarely reply facebook messages. 
 
-### My story
+Click ![**this**](facebook.com/tophuquy.999)
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+
+
