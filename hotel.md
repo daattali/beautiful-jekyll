@@ -29,7 +29,9 @@ There are other ways to get to Fur Squared besides driving and parking at the ho
 
 ## From the Milwaukee Intermodal Station
 
-The Milwaukee Intermodal Station is the main train and bus station in Milwaukee. It's located at 433 W St Paul Ave, Milwaukee, WI 53203. The station is served by Amtrak Empire Builder and Hiawatha trains along with buses from Greyhound, Megabus, and other lines.
+The Milwaukee Intermodal Station is the main train and bus station in Milwaukee. It's located at 433 W St Paul Ave, Milwaukee, WI 53203. The station is served by Amtrak trains along with buses from Greyhound and other providers. It is the closest regional transit station to the hotel.
+
+Station information, including a listing of all bus services and Amtrak lines, can be found on the [station's website](https://wisconsindot.gov/pages/travel/rail/mis.aspx).
 
 - **Walk**: The hotel is about a third of a mile from the station. It's a 7-10 minute walk depending on your pace and traffic.
 - **Bublr Bikes**: There is a [Bublr Bikes](https://bublrbikes.org) dock at the station that houses up to 8 bikes. You can rent a bike and ride it to the hotel. The closest dock to the hotel is at 5th and Wisconsin, about a block from the hotel, outside the Baird Center.
@@ -40,13 +42,14 @@ Milwaukee Mitchell International Airport is the main airport serving the Milwauk
 
 - **Milwaukee County Transit System**: The Milwaukee County Transit System (MCTS) operates bus route 80 to Downtown Milwaukee, with a stop at 6th and Wisconsin right outside the hotel! [Click here for more information](https://www.ridemcts.com/routes-schedules/80).
 - **Rideshare**: Uber and Lyft both operate at the airport. Request a ride and you'll be picked up at the rideshare zone outside baggage claim.
+- **GO Riteway**: GO Riteway operates a shuttle service from the airport to Downtown Milwaukee. [Click here for more information](https://goriteway.com/ride-services/airport-transportation/).
 
 ## From The Greater Milwaukee Area
 
 If you live in the Milwaukee area, are staying with a friend, or otherwise looking for other local transportation options, here are a few options to consider.
 
 - **Milwaukee County Transit System**: The Milwaukee County Transit System (MCTS) operates bus routes throughout the Milwaukee area. Wisconsin Avenue, where our hotel is located, is a huge corridor for bus travel in the area. [Click here for more information](https://www.ridemcts.com/routes-schedules).
-- **Wisconsin Coach Lines**: Wisconsin Coach Lines operates bus service from Milwaukee to Chicago and back. Buses stop at and near 6th and Wisconsin, right outside the hotel! [Click here for more information](https://www.coachusa.com/wisconsin-coach).
+- **Wisconsin Coach Lines**: Wisconsin Coach Lines operates bus service from a number of regional park and ride lots to Downtown Milwaukee. Buses stop near the hotel! [Click here for more information](https://www.coachusa.com/wisconsin-coach).
 
 ## From Chicago
 
@@ -57,4 +60,4 @@ If you live in the Milwaukee area, are staying with a friend, or otherwise looki
 ## Accessible Transportation
 
 - **Tootl Transport**: Tootl Transport is a Milwaukee-based rideshare service that specializes in accessible transportation. [Click here for more information](https://www.ridetootl.com/milwaukee/).
-- **Milwaukee Transit Plus**: Milwaukee Transit Plus is a paratransit service operated by the Milwaukee County Transit System (MCTS). If you have an ADA paratransit certification from another transit agency, you may have reciprocity in Milwaukee, but you need to send documents and make arrangements before your visit. [Click here for more information](https://www.ridemcts.com/accessibility/transit-plus/paratransit-service-for-visitors).
+- **Milwaukee Transit Plus**: Milwaukee Transit Plus is a paratransit service operated by the Milwaukee County Transit System. It is recommended you call ahead and make arrangements in case documentation is needed. [Click here for more information](https://www.ridemcts.com/accessibility/transit-plus/paratransit-service-for-visitors).
