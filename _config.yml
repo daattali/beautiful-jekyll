@@ -18,20 +18,21 @@ navbar-links:
     - Registration: "registration"
     - Programming: 'programming'
     - Dealer's Den: "dealers"
-  # - Video Games: "video-games"
+  # - Night Market: "night-market"
+  # - Dance Events: "dance-events"
+  # - Artist Alley: "artist-alley"
+    - Video Games: "video-games"
+    - Photos: "https://fursquared.smugmug.com/"
   Information:
     - About: "about"
     - Hotel: "hotel"
   # - Guest of Honor: "goh"
     - Code of Conduct: "code-of-conduct"
     - Covid Policy: "covid-policy"
-  Join The Fun:
+  Get Involved:
     - Attend: "registration"
     - Volunteer: "volunteer"
-    - Dealer's Den: "dealers"
-  #  - Night Market: "night-market"
-  #  - Dance Events: "dance-events"
-  #  - Artist Alley: "artist-alley"
+    - Vend: "dealers"
   Contact Us: "contact"
 
 
@@ -62,7 +63,7 @@ social-network-links:
   telegram: fursquaredchat
   discord: Tzhc4KCXre
   rss: true
-#  facebook: deanattali
+  bluesky: fursquared.com
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
