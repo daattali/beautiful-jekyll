@@ -13,5 +13,4 @@ Dealers: There are rooms set aside to ensure you have a place to stay if you are
 
 We look forward to seeing everyone next year at our new venue! Until then, have a great holiday season!
 
-[Book a Hotel Room](https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MKEMHHF&arrivalDate=2024-02-22&departureDate=2024-02-26&groupCode=96L&room1NumAdults=1
-)
+[Book a Hotel Room](/hotel)

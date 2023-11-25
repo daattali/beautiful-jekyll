@@ -23,9 +23,9 @@ Phone: (414) 271-7250</h3>
 
 <hr>
 
-## Alternate Transportation
+## Other Ways to Get To Fur Squared
 
-There are other ways to get to Fur Squared besides driving and parking at the hotel! A few options are available for you to consider.
+There are other ways to get to Fur Squared besides driving and parking at the hotel! A few options are available for you to consider. These options may be cheaper, more convenient, or more environmentally friendly than driving yourself. As a bonus, you can also use these options to get around Milwaukee during the convention and explore the city if you wish!
 
 ## From the Milwaukee Intermodal Station
 
@@ -40,3 +40,21 @@ Milwaukee Mitchell International Airport is the main airport serving the Milwauk
 
 - **Milwaukee County Transit System**: The Milwaukee County Transit System (MCTS) operates bus route 80 to Downtown Milwaukee, with a stop at 6th and Wisconsin right outside the hotel! [Click here for more information](https://www.ridemcts.com/routes-schedules/80).
 - **Rideshare**: Uber and Lyft both operate at the airport. Request a ride and you'll be picked up at the rideshare zone outside baggage claim.
+
+## From The Greater Milwaukee Area
+
+If you live in the Milwaukee area, are staying with a friend, or otherwise looking for other local transportation options, here are a few options to consider.
+
+- **Milwaukee County Transit System**: The Milwaukee County Transit System (MCTS) operates bus routes throughout the Milwaukee area. Wisconsin Avenue, where our hotel is located, is a huge corridor for bus travel in the area. [Click here for more information](https://www.ridemcts.com/routes-schedules).
+- **Wisconsin Coach Lines**: Wisconsin Coach Lines operates bus service from Milwaukee to Chicago and back. Buses stop at and near 6th and Wisconsin, right outside the hotel! [Click here for more information](https://www.coachusa.com/wisconsin-coach).
+
+## From Chicago
+
+- **Amtrak**: Amtrak operates the Hiawatha train between Chicago and Milwaukee. Trains stop at the Milwaukee Intermodal Station, about a third of a mile from the hotel. [Click here for more information](https://www.amtrak.com/routes/hiawatha-train.html).
+- **Metra**: Metra operates the Union Pacific North line between the Chicago area and Kenosha, WI. You can then connect to the Amtrak or carpool to Milwaukee. [Click here for more information](https://metrarail.com/maps-schedules/train-lines/UP-N).
+- **Wisconsin Coach Lines**: Wisconsin Coach Lines operates a bus service from O'Hare Airport to the Intermodal Station, about a third of a mile from the hotel. [Click here for more information](https://www.coachusa.com/wisconsin-coach).
+
+## Accessible Transportation
+
+- **Tootl Transport**: Tootl Transport is a Milwaukee-based rideshare service that specializes in accessible transportation. [Click here for more information](https://www.ridetootl.com/milwaukee/).
+- **Milwaukee Transit Plus**: Milwaukee Transit Plus is a paratransit service operated by the Milwaukee County Transit System (MCTS). If you have an ADA paratransit certification from another transit agency, you may have reciprocity in Milwaukee, but you need to send documents and make arrangements before your visit. [Click here for more information](https://www.ridemcts.com/accessibility/transit-plus/paratransit-service-for-visitors).

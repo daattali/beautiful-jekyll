@@ -51,6 +51,6 @@ What's in it for you? First off, you'll have the thanks of our entire staff and 
 
 ## Interested In Volunteering?
 
-Looking to Volunteer this year for Fur Squared  2024? If you haven't already Pre-Registered for our 2024 event then you'll be glad to know you can also fill out our Volunteer form during your Registration Process. Already Registered and changed your mind? No worries soon you'll be able to pull back up your Registration and not only Upgrade your attending tier but you'll also be able to fill out Volunteer information there as well. The option is not yet ready but as soon as it is we'll have our Social media team and site updated and announcing the exciting news. Thank you for taking interest in Volunteering for Fur Squared  2024!
+Looking to Volunteer this year for Fur Squared  2024? If you haven't already Pre-Registered for our 2024 event then you'll be glad to know you can also fill out our Volunteer form during your Registration Process. Already registered and changed your mind? Use the Edit Registration link in your email to login, where you can sign up to volunteer. Thank you for taking interest in Volunteering for Fur Squared  2024!
 
 If you have any questions, or need information, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com). Thank you so much for your interest in helping out Fur Squared\!
