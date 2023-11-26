@@ -26,7 +26,7 @@ Alternatively, a schema can be defined on the Pub/Sub topic to define the format
 <insert diagram of schema, and BigQuery populated table>
 
 <Insert table detailing addional metadata attributes>
-With write additional metadata enabled, the BigQuery needs to have the following fields defined. However, these fields must not be defined within the Topic schema. 
+With write additional metadata enabled, the BigQuery schema needs to have the following fields defined. However, these fields must not be defined within the Topic schema itself. 
 
 REVIEW TABLE AS THESE DON'T APPEAR TO ALIGN WITH WHAT I WAS EXPECTING.
 
@@ -59,11 +59,11 @@ The Pub/Sub service account requires write access to the BigQuery target table, 
 <Example code applying permissions to table. Update previous sentence to clarify tf or gcloud cmd>
 
 ```
-***Code Example: Creating a Pub/Sub topic schema with Terraform***
+***Code Example: Applying required permissions to BigQuery table with Terraform***
 
 
 # Defining Pub/Sub Topic Schema
-The Pub/Sub Topic schema defines the fields within the message that correspond to the columns within the BigQuery table. For this to work, the Topic Schema names and value types must match the BigQuery schema names and value types. Any optional fields within the Topic schema must also be optional within BigQuery schema. However required fields within the Topic schema do not need to be required within the BigQuery schema. If there are any fields within the BigQuery schema that are not present within the Topic schema, this fields must be in nullable mode within BigQuery schema.
+The Pub/Sub Topic schema defines the fields within the message that correspond to the columns within the BigQuery table. For this to work, the Topic Schema names and value types must match the BigQuery schema names and value types. Any optional fields within the Topic schema must also be optional within BigQuery schema. However required fields within the Topic schema do not need to be required within the BigQuery schema. If there are any fields within the BigQuery schema that are not present within the Topic schema, these fields must be in nullable mode within BigQuery schema.
 
 ```
 <Example code creating pub/sub topic schema>
@@ -73,9 +73,24 @@ The Pub/Sub Topic schema defines the fields within the message that correspond t
 
 # Creating BigQuery Subscription
 
+```
+<Example code creating BigQuery Subscriptionn>
+
+```
+***Code Example: Creating a BigQuery subscription with Terraform***
 
 # Defining Exponential Backoff
 
+```
+<Example code defining exponential backoff>
+
+```
+***Code Example: Defining exponential backoff for failed message publishing with Terraform***
 
 # Configuring Dead Letter Topic
 
+```
+<Example code creating Dead Letter Topic>
+
+```
+***Code Example: Creating a Dead Letter Topic with Terraform***
