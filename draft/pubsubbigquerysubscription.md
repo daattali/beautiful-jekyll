@@ -28,6 +28,8 @@ Alternatively, a schema can be defined on the Pub/Sub topic to define the format
 <Insert table detailing addional metadata attributes>
 With write additional metadata enabled, the BigQuery needs to have the following fields defined. However, these fields must not be defined within the Topic schema. 
 
+REVIEW TABLE AS THESE DON'T APPEAR TO ALIGN WITH WHAT I WAS EXPECTING.
+
 | Parameters        	| Value                                                                                                                                                                                                                    	|
 |-------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | subscription_name 	| STRING Name of a subscription.                                                                                                                                                                                      	|
