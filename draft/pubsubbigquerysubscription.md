@@ -53,11 +53,28 @@ Messages target the BigQuery Write API- upon successful write to BigQuery table,
 <Architecture diagram demonstrating exponential backoff and forwarding to dead letter queu>
 
 # What IAM permissions do Pub/Sub BigQuery Subscriptions require?
-The Pub/Sub service account requires write access to the BigQuery target table, and read access to the table metadata. These permissions can be granted by applying the following Terraform or gcloud commands.
+The Pub/Sub service account requires write access to the BigQuery target table, and read access to the table metadata. These permissions can be granted by applying the following Terraform code. The google_bigquery_table_iam_member resource creates a non authoritative update to the IAM bindings, preserving any existing table bindings.
 
 ```
-<Example code applying permissions to table. Update previous sentence to clarify tf or gcloud cmd>
+resource "google_bigquery_table_iam_member" "member" {
+  project = google_bigquery_table.test.project
+  dataset_id = google_bigquery_table.test.dataset_id
+  table_id = google_bigquery_table.test.table_id
+  role = "roles/bigquery.dataEditot"
+  member = "user:jane@example.com"
+}
 
+resource "google_project_iam_member" "viewer" {
+  project = data.google_project.project.project_id
+  role   = "roles/bigquery.metadataViewer"
+  member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
+}
+
+resource "google_project_iam_member" "editor" {
+  project = data.google_project.project.project_id
+  role   = "roles/bigquery.dataEditor"
+  member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
+}
 ```
 ***Code Example: Applying required permissions to BigQuery table with Terraform***
 
@@ -66,16 +83,78 @@ The Pub/Sub service account requires write access to the BigQuery target table, 
 The Pub/Sub Topic schema defines the fields within the message that correspond to the columns within the BigQuery table. For this to work, the Topic Schema names and value types must match the BigQuery schema names and value types. Any optional fields within the Topic schema must also be optional within the BigQuery schema. However required fields within the Topic schema do not need to be required within the BigQuery schema. If there are any fields within the BigQuery schema that are not present within the Topic schema, these fields must be in nullable mode within BigQuery schema.
 
 ```
-<Example code creating pub/sub topic schema>
+resource "google_pubsub_schema" "cloudbabbleschema" {
+  name = "cloudbabbleschema"
+  type = "AVRO"
+  definition = "{\n  \"type\" : \"record\",\n  \"name\" : \"Avro\",\n  \"fields\" : [\n    {\n      \"name\" : \"StringField\",\n      \"type\" : \"string\"\n    },\n    {\n      \"name\" : \"IntField\",\n      \"type\" : \"int\"\n    }\n  ]\n}\n"
+}
 
+resource "google_pubsub_topic" "cloudbabbletopic" {
+  name = "cloud-babble-topic"
+
+  depends_on = [google_pubsub_schema.cloudbabbleschema]
+  schema_settings {
+    schema = "projects/my-project-name/schemas/example"
+    encoding = "JSON"
+  }
+}
 ```
 ***Code Example: Creating a Pub/Sub topic schema with Terraform***
 
 # Creating BigQuery Subscription
+The following Terraform code provisions a BigQuery subscription.
 
 ```
-<Example code creating BigQuery Subscriptionn>
+resource "google_pubsub_topic" "cloudbabbletopic" {
+  name = "cloudbabble-topic"
+}
 
+resource "google_pubsub_subscription" "cloudbabblesubscription" {
+  name  = "cloudbabble-subscription"
+  topic = google_pubsub_topic.cloudbabbletopic.name
+
+  bigquery_config {
+    table = "${google_bigquery_table.test.project}.${google_bigquery_table.test.dataset_id}.${google_bigquery_table.test.table_id}"
+  }
+
+  depends_on = [google_project_iam_member.viewer, google_project_iam_member.editor]
+}
+
+data "google_project" "project" {
+}
+
+resource "google_project_iam_member" "viewer" {
+  project = data.google_project.project.project_id
+  role   = "roles/bigquery.metadataViewer"
+  member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
+}
+
+resource "google_project_iam_member" "editor" {
+  project = data.google_project.project.project_id
+  role   = "roles/bigquery.dataEditor"
+  member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
+}
+
+resource "google_bigquery_dataset" "test" {
+  dataset_id = "example_dataset"
+}
+
+resource "google_bigquery_table" "test" {
+  deletion_protection = false
+  table_id   = "example_table"
+  dataset_id = google_bigquery_dataset.test.dataset_id
+
+  schema = <<EOF
+[
+  {
+    "name": "data",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "The data"
+  }
+]
+EOF
+}
 ```
 ***Code Example: Creating a BigQuery subscription with Terraform***
 
