@@ -25,8 +25,9 @@ description: Virtualization technologies - Xavier Avrillier
 navbar-links:
   Partners:
     - BDRSuite (by Vembu): "bdrsuite"
+    - Nakivo: "nakivo"
   Ebook : 
-    - PowerCLI (Altaro): "https://www.altaro.com/ebook/powercli.php?LP=vxav-Web-listing-ebook-powercli&Cat=SC&utm_source=vxav&utm_medium=sc&utm_campaign=ebook-powercli&utm_content=web-listing"
+    - PowerCLI (Altaro - 2019): "https://www.altaro.com/ebook/powercli.php?LP=vxav-Web-listing-ebook-powercli&Cat=SC&utm_source=vxav&utm_medium=sc&utm_campaign=ebook-powercli&utm_content=web-listing"
   About Me: "aboutme"
   Contact: "contact"
   #Resources:
