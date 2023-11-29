@@ -57,9 +57,12 @@ members:
           - name: Yishu Li
             photo_url: /img/members/yishu.jpg
             web_url: 
-      # - name: Visiting Students
-      #  full: false
-       # list:
+      - name: Visiting Students
+        full: true
+        list:
+          - name: Angela Rodriguez-Izquierdo
+            photo_url: https://www.ri.cmu.edu/app/uploads/2023/09/AngelaR_2023.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/angela-rodriguez-izquierdo-gallardo/
   - name: <a name="alumni"></a>Alumni
     list:
       - name: Post-Doc alumni
