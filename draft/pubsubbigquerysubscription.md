@@ -15,9 +15,11 @@ tags: [BigQuery Subscription, Pub/Sub, Data Ingestion, ELT, Analytics]
 {:toc}
 
 # Google Cloud's Pub/Sub BigQuery Subscriptions
-Google Cloud's Pub/Sub BigQuery subscriptions simplify data ingestion pipelines that require little or no data transformation. Applications performing extract, load and transform (ELT) data pipelines no longer need to make use of Cloud Functions or Dataflow to subscribe to a Pub/Sub topic and load data into BigQuery. Instead Pub/Sub BigQuery subscriptions send messages directly to BigQuery as they are received, in one of two ways.
+Google Cloud's Pub/Sub BigQuery subscriptions simplify data ingestion pipelines that require little or no data transformation. Applications performing extract, load and transform (ELT) data pipelines no longer need to make use of Cloud Functions or Dataflow to subscribe to a Pub/Sub topic and load data into BigQuery. Instead Pub/Sub BigQuery subscriptions send messages directly to BigQuery as they are received.
 
-The default method loads the messages in their raw format, into the BigQuery table under a data field.
+************insert architecture diagram***********
+
+Messages are sent to BigQuery in one of two ways. The default method loads the messages in their raw format, into the BigQuery table under a data field.
 
 ************insert diagram of default data ingestion***************88
 
