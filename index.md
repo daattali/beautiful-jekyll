@@ -7,7 +7,7 @@ use-site-title: true
 
 ## About Me
 
-I am currently a Data Scientist at Meta working on the Ads Core ML team. I have an Economics PhD from New York University. My academic research focused on industrial organization, applied econometrics and behavioral economics. Outside of work, I like to code, play around with interesting datasets, climb and bike around the city.
+I am currently leading the Core Risk and Core Growth Applied Science and Analytics Engineer teams at Ramp. Our teams build the core ML models and data products powering Risk Management and Growth at Ramp. Prior to joining Ramp, I worked as a Data Scientist at Meta on their Ads Core ML team. Before that, I completed my Economics PhD at New York University. My academic research interests were primarily focused on industrial organization, applied econometrics and behavioral economics. Outside of work, I like to code, play around with interesting datasets, bike around, and spend time with my wife and our pup, Archie. 
 
 ## Some links
 
