@@ -15,7 +15,7 @@ tags: [BigQuery Subscription, Pub/Sub, Data Ingestion, ELT, Analytics]
 {:toc}
 
 # Google Cloud's Pub/Sub BigQuery Subscriptions
-Google Cloud's Pub/Sub BigQuery subscriptions simplify data ingestion pipelines that require little or no data transformation. Applications performing extract, load and transform (ELT) data pipelines no longer need to make use of Cloud Functions or Dataflow to subscribe to a Pub/Sub topic and load data into BigQuery. Instead Pub/Sub BigQuery subscriptions send messages directly to BigQuery as they are received in one of two ways.
+Google Cloud's Pub/Sub BigQuery subscriptions simplify data ingestion pipelines that require little or no data transformation. Applications performing extract, load and transform (ELT) data pipelines no longer need to make use of Cloud Functions or Dataflow to subscribe to a Pub/Sub topic and load data into BigQuery. Instead Pub/Sub BigQuery subscriptions send messages directly to BigQuery as they are received, in one of two ways.
 
 The default method loads the messages in their raw format, into the BigQuery table under a data field.
 <insert diagram of default data ingestion>
@@ -46,9 +46,9 @@ To mitigate this, Pub/Sub Topic schemas should be configured to automatically dr
 
 Once data is loaded into BigQuery, simple SQL transformations can be performed on the raw data. With BigQuery scheduled queries you can automate SQL tranformation tasks based on a cron schedule you define.
 
-Pub/Sub BigQuery subscriptions also remove the requirement to have Pub/Sub Topic clients configured as subscribers. The Pub/Sub BigQuery subscription defines the BigQuery table data will be loaded into and is automatically pushed to BigQuery.
+Pub/Sub BigQuery subscriptions also remove the requirement to have Pub/Sub Topic clients configured as subscribers. The Pub/Sub BigQuery subscription defines the BigQuery table data will be loaded into and is automatically pushed directly to BigQuery.
 
-Messages target the BigQuery Write API- upon successful write to BigQuery table, the Pub/Sub message is ackowledged. If the message fails to be written to the table, it is negatively acknowledged to Pub/Sub and Pub/Sub will attempt to write the data to BigQuery again. By configuring an exponential backoff, Pub/Sub will wait the defined amount of time before attempting to write a previously failed message, incrementing the wait period until it reaches the defined threshold for failed delivery attempts. Once this threshold has been met, the message can then be sent to a Dead Letter queue for manual review and intervention. The messages sent to the Dead Letter Queue include an additional CloudPubSubDeadLetterSourceDeliveryErrorMessage attribute which defines the reason the message couldn't be written to BigQuery.
+Messages target the BigQuery Write API- upon successful write to the BigQuery table, the Pub/Sub message is ackowledged. If the message fails to be written to the table, it is negatively acknowledged to Pub/Sub and Pub/Sub will attempt to write the data to BigQuery again. By configuring an exponential backoff, Pub/Sub will wait the defined amount of time before attempting to write a previously failed message, incrementing the wait period until it reaches the defined threshold for failed delivery attempts. Once this threshold has been met, the message can then be sent to a Dead Letter queue for manual review and intervention. The messages sent to the Dead Letter Queue include an additional CloudPubSubDeadLetterSourceDeliveryErrorMessage attribute which defines the reason the message couldn't be written to BigQuery.
 
 <Architecture diagram demonstrating exponential backoff and forwarding to dead letter queu>
 
@@ -80,7 +80,7 @@ resource "google_project_iam_member" "editor" {
 
 
 # Defining Pub/Sub Topic Schema
-The Pub/Sub Topic schema defines the fields within the message that correspond to the columns within the BigQuery table. For this to work, the Topic Schema names and value types must match the BigQuery schema names and value types. Any optional fields within the Topic schema must also be optional within the BigQuery schema. However required fields within the Topic schema do not need to be required within the BigQuery schema. If there are any fields within the BigQuery schema that are not present within the Topic schema, these fields must be in nullable mode within BigQuery schema.
+The Pub/Sub Topic schema defines the fields within the message that correspond to the columns within the BigQuery table. For this to work, the Topic Schema names and value types must match the BigQuery schema names and value types. Any optional fields within the Topic schema must also be optional within the BigQuery schema. However, required fields within the Topic schema do not need to be required within the BigQuery schema. If there are any fields within the BigQuery schema that are not present within the Topic schema, these fields must be in a nullable mode within the BigQuery schema.
 
 ```
 resource "google_pubsub_schema" "cloudbabbleschema" {
@@ -159,6 +159,7 @@ EOF
 ***Code Example: Creating a BigQuery subscription with Terraform***
 
 # Defining Exponential Backoff
+The following terraform code defines an exponential backoff for messages that fail to write to the BigQuery table and are negatively acknowledged.
 
 ```
 <Example code defining exponential backoff>
@@ -167,7 +168,7 @@ EOF
 ***Code Example: Defining exponential backoff for failed message publishing with Terraform***
 
 # Configuring Dead Letter Topic
-
+The following terraform code provides an example Dead Letter Topic configuration for messages that fail to write to BigQuery within the defined threshold for failed delivery attempts. 
 ```
 <Example code creating Dead Letter Topic>
 
