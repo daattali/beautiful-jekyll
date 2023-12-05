@@ -45,6 +45,9 @@ members:
           - name: Eric Cai (MSR)
             photo_url: /img/members/ericcai.jpg
             web_url: https://www.ri.cmu.edu/ri-people/ericcai/
+          - name: Lifan Yu (MSCV)
+            photo_url: /img/members/lifanyu.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/lifan-yu/
       - name: Undergraduate Students
         full: true
         list:
