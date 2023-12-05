@@ -74,7 +74,7 @@ attrs_base = time_experiment(stmt="InventoryAttrs(item='banana', price=1.99, qua
 We can easily see that `dataclass` and `attrs` is much much faster. This is a well known outcome. The reason is that `pydantic` not only initializes an object, it also runs validation on the attributes of the object, i.e. checking the `item` is actually a `str` etc.
 
 <center>
-    <img src="../posts_images/2023-12-04-performancePythonDataclasses/basicExperiments.png" class="center" width="400" height="500">
+    <img src="../posts_images/2023-12-04-performancePythonDataclasses/basicExperiments.png" class="center" width="500" height="300">
 </center>
 
 Let's try to do an apples to apples comparison by adding validation requirements to `attrs`. Note, there are no methods to validate `dataclass` within the standard library, so we ignore it.
@@ -103,7 +103,7 @@ attrs_validated = time_experiment(stmt="InventoryAttrsValidated(item='banana', p
 We can see that even with validation, `attrs` performs better than `pydantic`:
 
 <center>
-    <img src="../posts_images/2023-12-04-performancePythonDataclasses/basicValidationExperiments.png" class="center" width="400" height="500">
+    <img src="../posts_images/2023-12-04-performancePythonDataclasses/basicValidationExperiments.png" class="center" width="500" height="300">
 </center>
 
 ## Trying to speed up Pydantic...unsuccessfully
@@ -145,7 +145,7 @@ pydantic_model_constructs = time_experiment(stmt="InventoryPydantic.model_constr
 Surprisingly, none of these methods sped up Pydantic. Note, this may simply be due to the simplicity of the class. 
 
 <center>
-    <img src="../posts_images/2023-12-04-performancePythonDataclasses/pydanticSpeedupExperiments.png" class="center" width="400" height="500">
+    <img src="../posts_images/2023-12-04-performancePythonDataclasses/pydanticSpeedupExperiments.png" class="center" width="500" height="300">
 </center>
 
 ## Trying to speed up Dataclass and Attrs...somewhat successfully
@@ -163,7 +163,7 @@ attrs_positional_and_keyword_with_validation = time_experiment(stmt="InventoryAt
 `pydantic` requires keyword arguments, so we can only test this for `attrs`. What we see is quite a performance improvement. Interestingly, when you run validation for `attrs` this goes away. 
 
 <center>
-    <img src="../posts_images/2023-12-04-performancePythonDataclasses/positionalKeywordArgsExperiments.png" class="center" width="400" height="500">
+    <img src="../posts_images/2023-12-04-performancePythonDataclasses/positionalKeywordArgsExperiments.png" class="center" width="500" height="300">
 </center>
 
 The impact of `positional` versus `keyword` arguments was fairly surprising to me, though there's some talk of this when I do some searches. I had assumed that when you pass in an argument, it gets bound to an attribute in the same manner, regardless of if you passed it in as a `positional` or a `keyword` argument. Turns out this is wrong, and there's a bit of a rabbit hole you can go down, see this (potentially outdated) [blog post](https://eli.thegreenplace.net/2012/03/23/python-internals-how-callables-work). TLDR; there are optimizations within `CPython` for when a function is called, if the function only provides positional arguments there's a faster path that's taken. 
@@ -185,7 +185,7 @@ pydantic_date = time_experiment(stmt="InventoryPydanticDate(item='banana', price
 We see that `pydantic` is signficantly slower with datetime. This was actually discussed in one of the [blog posts](https://stefan.sofa-rockers.org/2020/05/29/attrs-dataclasses-pydantic/) mentioned up top. `pydantic` uses it's own home rolled date time validation. 
 
 <center>
-    <img src="../posts_images/2023-12-04-performancePythonDataclasses/datetimeExperiments.png" class="center" width="400" height="500">
+    <img src="../posts_images/2023-12-04-performancePythonDataclasses/datetimeExperiments.png" class="center" width="500" height="300">
 </center>
 
 # Conclusion
@@ -193,7 +193,7 @@ We see that `pydantic` is signficantly slower with datetime. This was actually d
 Overall, we see some interesting overall performance differences. 
 
 <center>
-    <img src="../posts_images/2023-12-04-performancePythonDataclasses/allExperiments.png" class="center" width="400" height="500">
+    <img src="../posts_images/2023-12-04-performancePythonDataclasses/allExperiments.png" class="center" width="500" height="300">
 </center>
 
 The most surprising was definitely around `positional` and `keyword` arguments, as well as, how `datetime` can slow down `pydantic` performance. Other areas of investigation here are, measuring performance for more complex classes (both nested and `enum`), measuring memory usage differences, as well as, further investigating how to speed up `pydantic` performance. 
