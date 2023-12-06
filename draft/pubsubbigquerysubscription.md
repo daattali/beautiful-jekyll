@@ -23,7 +23,7 @@ Google Cloud's Pub/Sub BigQuery subscriptions simplify data ingestion pipelines 
 
 Messages are sent to BigQuery in one of two ways. The default method loads the messages in their raw format, into the BigQuery table under a data column/field.
 
-![BigQuery Subscription Default Data Ingestion Format](/assets/img/bigquerysub/pubsub sub raw data column.PNG "BigQuery Subscription Default Data Ingestion Format")
+![BigQuery Subscription Default Data Ingestion Format](/assets/img/bigquerysub/pubsub-sub-raw-data-column.PNG "BigQuery Subscription Default Data Ingestion Format")
  
 *Example BigQuery Subscription Default Data Ingestion Format*
 
