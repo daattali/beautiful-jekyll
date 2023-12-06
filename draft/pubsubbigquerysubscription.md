@@ -23,15 +23,25 @@ Google Cloud's Pub/Sub BigQuery subscriptions simplify data ingestion pipelines 
 
 Messages are sent to BigQuery in one of two ways. The default method loads the messages in their raw format, into the BigQuery table under a data column/field.
 
-![BigQuery Subscription Default Data Ingestion Format](/assets/img/bigquerysub/pubsub-sub-raw-data-column.PNG "BigQuery Subscription Default Data Ingestion Format")
+![BigQuery Subscription Default Data Ingestion Format](/assets/img/bigquerysub/pubsub-subscription-raw-data-column.PNG "BigQuery Subscription Default Data Ingestion Format")
  
 *Example BigQuery Subscription Default Data Ingestion Format*
 
-Alternatively, a schema can be defined on the Pub/Sub topic to define the format of message fields. The BigQuery subscription then uses this schema to load the defined message fields into corresponding BigQuery table fields. In addition, metadata can be populated to help track information such as message ingestion time etc. 
+Alternatively, a schema can be defined on the Pub/Sub topic to define the format of message fields. The BigQuery subscription then uses this schema to load the defined message fields into corresponding BigQuery table fields. 
 
 
-**************insert diagram of bigQuery JSON data table>**************
-***************insert diagram of schema, and BigQuery populated table***************
+![BigQuery Subscription With Schema Data Ingestion Format](/assets/img/bigquerysub/pubsub-subscription-with-schema-format.PNG "BigQuery Subscription with Schema Data Ingestion Format")
+ 
+*Example BigQuery Subscription with Schema Data Ingestion Format*
+
+In addition, metadata can be populated to help track information such as message ingestion time etc. 
+
+
+
+![BigQuery Subscription Schema Format with Metadata](/assets/img/bigquerysub/pubsub-subscription-schema-with-metadata.PNG "BigQuery Subscription Schema Format with Metadata")
+ 
+*Example BigQuery Subscription Schema with Metadata format*
+
 
 **************Insert table detailing addional metadata attributes>***************
 With write additional metadata enabled, the BigQuery schema needs to have the following fields defined. However, these fields must not be defined within the Topic schema itself. 
