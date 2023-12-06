@@ -99,18 +99,18 @@ resource "google_project_iam_member" "editor" {
 The Pub/Sub Topic schema defines the fields within the message that correspond to the columns within the BigQuery table. For this to work, the Topic Schema names and value types must match the BigQuery schema names and value types. Any optional fields within the Topic schema must also be optional within the BigQuery schema. However, required fields within the Topic schema do not need to be required within the BigQuery schema. If there are any fields within the BigQuery schema that are not present within the Topic schema, these fields must be in a nullable mode within the BigQuery schema.
 
 ```
-resource "google_pubsub_schema" "cloudbabbleschema" {
-  name = "cloudbabbleschema"
+resource "google_pubsub_schema" "cloudbabbleschema01" {
+  name = "cloud-babble-schema-01"
   type = "AVRO"
-  definition = "{\n  \"type\" : \"record\",\n  \"name\" : \"Avro\",\n  \"fields\" : [\n    {\n      \"name\" : \"StringField\",\n      \"type\" : \"string\"\n    },\n    {\n      \"name\" : \"IntField\",\n      \"type\" : \"int\"\n    }\n  ]\n}\n"
+  definition = "{\n  \"type\" : \"record\",\n  \"name\" : \"Avro\",\n  \"fields\" : [\n    {\n      \"name\" : \"Username\",\n      \"type\" : \"string\"\n    },\n    {\n      \"name\" : \"Age\",\n      \"type\" : \"int\"\n    },\n    {\n      \"name\" : \"ActiveMember\",\n      \"type\" : \"boolean\"\n    }\n  ]\n}\n"
 }
 
-resource "google_pubsub_topic" "cloudbabbletopic" {
-  name = "cloud-babble-topic"
+resource "google_pubsub_topic" "cloudbabbletopic01" {
+  name = "cloud-babble-topic-01"
 
-  depends_on = [google_pubsub_schema.cloudbabbleschema]
+  depends_on = [google_pubsub_schema.cloudbabbleschema01]
   schema_settings {
-    schema = "projects/my-project-name/schemas/example"
+    schema = "projects/playground-s-11-dc8e382e/schemas/cloud-babble-schema-01"
     encoding = "JSON"
   }
 }
@@ -121,13 +121,10 @@ resource "google_pubsub_topic" "cloudbabbletopic" {
 The following Terraform code provisions a BigQuery subscription.
 
 ```
-resource "google_pubsub_topic" "cloudbabbletopic" {
-  name = "cloudbabble-topic"
-}
 
-resource "google_pubsub_subscription" "cloudbabblesubscription" {
-  name  = "cloudbabble-subscription"
-  topic = google_pubsub_topic.cloudbabbletopic.name
+resource "google_pubsub_subscription" "cloudbabblesubscription01" {
+  name  = "cloud-babble-subscription-01"
+  topic = google_pubsub_topic.cloudbabbletopic01.name
 
   bigquery_config {
     table = "${google_bigquery_table.test.project}.${google_bigquery_table.test.dataset_id}.${google_bigquery_table.test.table_id}"
