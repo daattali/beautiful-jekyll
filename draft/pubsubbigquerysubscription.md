@@ -43,10 +43,7 @@ In addition, metadata can be populated to help track information such as message
 *Example BigQuery Subscription Schema with Metadata format*
 
 
-**************Insert table detailing addional metadata attributes>***************
 With write additional metadata enabled, the BigQuery schema needs to have the following fields defined. However, these fields must not be defined within the Topic schema itself. 
-
-**************REVIEW TABLE AS THESE DON'T APPEAR TO ALIGN WITH WHAT I WAS EXPECTING.**************8
 
 | Parameters        	| Value                                                                                                                                                                                                                    	|
 |-------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -55,7 +52,7 @@ With write additional metadata enabled, the BigQuery schema needs to have the fo
 | publish_time      	| TIMESTAMP The time of publishing a message.                                                                                                                                                                         	|
 | data              	| BYTES, STRING, or JSON The message body. The data field is required for all destination BigQuery tables that don't select Use topic schema. If the field is of type JSON, then the message body must be valid JSON. 	|
 | attributes        	| STRING or JSON A JSON object containing all message attributes. It also contains additional fields that are part of the Pub/Sub message including the ordering key, if present.                                     	|
-
+*BigQuery Subscription Metadata Fields/Columns*
 
 
 If a message is received with additional fields not defined within the schema, BigQuery subscriptions can be configured to drop the message. If the BigQuery subscription doesn't enable drop unknown fields, the messages with extra fields remain in the subscription backlog. The subscription will then end up in an error state.
