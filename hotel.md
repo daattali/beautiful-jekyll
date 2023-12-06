@@ -3,6 +3,9 @@ layout: page
 title: Hotel Information
 subtitle: Introducing Our New Venue!
 ---
+<div align="center">
+  <img src="{{ 'assets/img/hilton_inside.jpg' | relative_url }}" />
+</div>
 
 # Hilton Milwaukee City Center
 <h3>509 W Wisconsin Ave<br/>Milwaukee, WI 53203<br />
@@ -14,6 +17,8 @@ Phone: (414) 271-7250</h3>
 <h3>$159 / Night</h3>
 <h3>Parking: $12 Per Vehicle / Day, Includes In-and-Out Privileges</h3>
 <h3><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MKEMHHF&arrivalDate=2024-02-22&departureDate=2024-02-26&groupCode=96L&room1NumAdults=1">Reserve a Room Here</a></h3>
+
+<h4>If you need an accessible room, please book a regular room though the link above, then call the hotel at (414) 271-7250 with your reservation number and let them know you need an accessible room.</h4>
 
 <hr>
 
