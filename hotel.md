@@ -4,7 +4,7 @@ title: Hotel Information
 subtitle: Introducing Our New Venue!
 ---
 <div align="center">
-  <img src="{{ 'assets/img/hilton_inside.jpg' | relative_url }}" />
+  <img src="{{ 'assets/img/2024/hilton_inside.jpg' | relative_url }}" />
 </div>
 
 # Hilton Milwaukee City Center
@@ -28,7 +28,7 @@ Phone: (414) 271-7250</h3>
 
 <hr>
 
-## Other Ways to Get To Fur Squared
+# Other Ways to Get To Fur Squared
 
 There are other ways to get to Fur Squared besides driving and parking at the hotel! A few options are available for you to consider. These options may be cheaper, more convenient, or more environmentally friendly than driving yourself. As a bonus, you can also use these options to get around Milwaukee during the convention and explore the city if you wish!
 
