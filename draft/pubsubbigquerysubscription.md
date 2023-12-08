@@ -60,7 +60,7 @@ If a message is received with additional fields not defined within the schema, B
 
 To mitigate this, Pub/Sub Topic schemas should be configured to automatically drop unknown fields. This ensures the data is still written to BigQuery, but any additional message fields not defined within the schema are dropped.
 
-Once data is loaded into BigQuery, simple SQL transformations can be performed on the raw data. With BigQuery scheduled queries you can automate SQL tranformation tasks based on a cron schedule you define.
+Once data is loaded into BigQuery, simple SQL transformations can be performed on the raw data. With BigQuery scheduled queries you can automate SQL transformation tasks based on a cron schedule you define.
 
 Pub/Sub BigQuery subscriptions also remove the requirement to have Pub/Sub Topic clients configured as subscribers. The Pub/Sub BigQuery subscription defines the BigQuery table data will be loaded into and is automatically pushed directly to BigQuery.
 
