@@ -132,19 +132,29 @@ resource "google_pubsub_subscription" "cloudbabblesubscription01" {
 ```
 ***Code Example: Creating a BigQuery subscription with Pub/Sub Topic Schema with Terraform***
 
-# Defining Exponential Backoff
-The following terraform code defines an exponential backoff for messages that fail to write to the BigQuery table and are negatively acknowledged.
-
-```
-<Example code defining exponential backoff>
-
-```
-***Code Example: Defining exponential backoff for failed message publishing with Terraform***
-
 # Configuring Dead Letter Topic
 The following terraform code provides an example Dead Letter Topic configuration for messages that fail to write to BigQuery within the defined threshold for failed delivery attempts. 
 ```
-<Example code creating Dead Letter Topic>
+# create dead letter topic
+resource "google_pubsub_topic" "cloudbabble_dead_letter" {
+  name = "cloudbabble-dead-letter"
+}
+
+#create pub/sub bigquery subscription for defined topic
+resource "google_pubsub_subscription" "cloudbabblesubscription01" {
+  name  = "cloudbabblesubscription01"
+  topic = google_pubsub_topic.cloudbabbletopic01.name
+
+  bigquery_config {
+    table = "${google_bigquery_table.cloudbabbletable01.project}.${google_bigquery_table.cloudbabbletable01.dataset_id}.${google_bigquery_table.cloudbabbletable01.table_id}"
+    use_topic_schema = true
+  }
+
+# configure dead letter policy
+  dead_letter_policy {
+    dead_letter_topic = google_pubsub_topic.cloudbabble_dead_letter.id
+    max_delivery_attempts = 10
+  }
 
 ```
-***Code Example: Creating a Dead Letter Topic with Terraform***
+***Code Example: Creating a Dead Letter Topic and Policy with Terraform***
