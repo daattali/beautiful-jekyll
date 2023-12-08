@@ -34,7 +34,7 @@ Alternatively, a schema can be defined on the Pub/Sub topic to define the format
  
 *Example BigQuery Subscription with Schema Data Ingestion Format*
 
-In addition, metadata can be populated to help track information such as message ingestion time etc. 
+In addition, metadata can be populated to help track information such as subscription name, message ingestion time etc. 
 
 
 
