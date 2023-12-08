@@ -66,8 +66,6 @@ Pub/Sub BigQuery subscriptions also remove the requirement to have Pub/Sub Topic
 
 Messages target the BigQuery Write API- upon successful write to the BigQuery table, the Pub/Sub message is ackowledged. If the message fails to be written to the table, it is negatively acknowledged to Pub/Sub and Pub/Sub will attempt to write the data to BigQuery again. By configuring an exponential backoff, Pub/Sub will wait the defined amount of time before attempting to write a previously failed message, incrementing the wait period until it reaches the defined threshold for failed delivery attempts. Once this threshold has been met, the message can then be sent to a Dead Letter queue for manual review and intervention. The messages sent to the Dead Letter Queue include an additional CloudPubSubDeadLetterSourceDeliveryErrorMessage attribute which defines the reason the message couldn't be written to BigQuery.
 
-**************Architecture diagram demonstrating exponential backoff and forwarding to dead letter queu>**************
-
 # What IAM permissions do Pub/Sub BigQuery Subscriptions require?
 The Pub/Sub service account requires write access to the BigQuery target table, and read access to the table metadata. These permissions can be granted by applying the following Terraform code. The google_bigquery_table_iam_member resource creates a non authoritative update to the IAM bindings, preserving any existing table bindings.
 
