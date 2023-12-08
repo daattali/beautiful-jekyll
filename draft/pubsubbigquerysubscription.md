@@ -72,22 +72,14 @@ Messages target the BigQuery Write API- upon successful write to the BigQuery ta
 The Pub/Sub service account requires write access to the BigQuery target table, and read access to the table metadata. These permissions can be granted by applying the following Terraform code. The google_bigquery_table_iam_member resource creates a non authoritative update to the IAM bindings, preserving any existing table bindings.
 
 ```
-resource "google_bigquery_table_iam_member" "member" {
-  project = google_bigquery_table.test.project
-  dataset_id = google_bigquery_table.test.dataset_id
-  table_id = google_bigquery_table.test.table_id
-  role = "roles/bigquery.dataEditot"
-  member = "user:jane@example.com"
-}
-
-resource "google_project_iam_member" "viewer" {
-  project = data.google_project.project.project_id
+resource "google_bigquery_dataset_iam_member" "viewer" {
+  dataset_id = google_bigquery_dataset.cloudbabbledataset01.dataset_id
   role   = "roles/bigquery.metadataViewer"
   member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
 }
 
-resource "google_project_iam_member" "editor" {
-  project = data.google_project.project.project_id
+resource "google_bigquery_dataset_iam_member" "editor" {
+  dataset_id = google_bigquery_dataset.cloudbabbledataset01.dataset_id
   role   = "roles/bigquery.dataEditor"
   member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
 }
@@ -100,26 +92,27 @@ The Pub/Sub Topic schema defines the fields within the message that correspond t
 
 ```
 resource "google_pubsub_schema" "cloudbabbleschema01" {
-  name = "cloud-babble-schema-01"
+  name = "cloudbabbleschema01"
   type = "AVRO"
   definition = "{\n  \"type\" : \"record\",\n  \"name\" : \"Avro\",\n  \"fields\" : [\n    {\n      \"name\" : \"Username\",\n      \"type\" : \"string\"\n    },\n    {\n      \"name\" : \"Age\",\n      \"type\" : \"int\"\n    },\n    {\n      \"name\" : \"ActiveMember\",\n      \"type\" : \"boolean\"\n    }\n  ]\n}\n"
 }
 ```
+***Code Example: Creating a Pub/Sub topic schema with Terraform***
 
 Once you have defined the Pub/Sub schema, you can then create a Topic configured with the schema. This Topic will then only accept messages that adhere to the defined schema.
 
 ```
 resource "google_pubsub_topic" "cloudbabbletopic01" {
-  name = "cloud-babble-topic-01"
+  name = "cloudbabbletopic01"
 
   depends_on = [google_pubsub_schema.cloudbabbleschema01]
   schema_settings {
-    schema = "projects/var.project-id/schemas/cloud-babble-schema-01"
+    schema = "projects/${data.google_project.project.number}/schemas/cloudbabbleschema01"
     encoding = "JSON"
   }
 }
 ```
-***Code Example: Creating a Pub/Sub topic schema with Terraform***
+***Code Example: Creating a Pub/Sub topic with schema with Terraform***
 
 # Creating BigQuery Subscription
 The following Terraform code provisions a BigQuery subscription.
