@@ -1,46 +1,46 @@
 ---
 layout: post
-title: Simplifying data ingestion with Google Cloud Pub/Sub's BigQuery Subscriptions
-subtitle: In this blog I cover how to implement a simple data ingestion and analytics pipeline using Google Cloud Pub/Sub's BigQuery Subscription service.
+title: Simplifying data ingestion with Google Cloud's Pub/Sub BigQuery Subscriptions
+subtitle: In this blog I cover how to implement a simple data ingestion pipeline using Google Cloud Pub/Sub's BigQuery Subscription service including example Terraform code.
 #cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/gcpdiag/gcpdiag-stethoscope.png
-share-img: /assets/img/gcpdiag/gcpdiag-stethoscope.png
+#thumbnail-img: /assets/img/gcpdiag/gcpdiag-stethoscope.png
+#share-img: /assets/img/gcpdiag/gcpdiag-stethoscope.png
 readtime: true
-share-title: "Simplifying data ingestion with Google Cloud Pub/Sub's BigQuery Subscription"
-share-description: "In this blog I cover how to implement a simple data ingestion and analytics pipeline using Google Cloud Pub/Sub's BigQuery Subscription service."
-tags: [BigQuery Subscription, Pub/Sub, Data Ingestion, ELT, Analytics]
+share-title: "Simplifying data ingestion with Google Cloud's Pub/Sub BigQuery Subscription"
+share-description: "In this blog I cover how to implement a simple data ingestionpipeline using Google Cloud's Pub/Sub BigQuery Subscription service including example Terraform code."
+tags: [BigQuery Subscription, Pub/Sub, Data Ingestion, ELT]
 ---
 
 * toc
 {:toc}
 
 # Google Cloud's Pub/Sub BigQuery Subscriptions
-Google Cloud's Pub/Sub BigQuery subscriptions simplify data ingestion pipelines that require little or no data transformation. Applications performing extract, load and transform (ELT) data pipelines no longer need to make use of Cloud Functions or Dataflow to subscribe to a Pub/Sub topic and load data into BigQuery. Instead Pub/Sub BigQuery subscriptions send messages directly to BigQuery as they are received.
+Google Cloud's Pub/Sub BigQuery subscriptions simplify data ingestion pipelines that require little or no data transformation. Applications performing extract, load and transform (ELT) tasks no longer need to make use of Cloud Functions or Dataflow to subscribe to a Pub/Sub topic and load data into BigQuery. Instead, Pub/Sub BigQuery subscriptions send messages directly to BigQuery as they are received.
 
 ![Pub/Sub BigQuery Subscription](/assets/img/bigquerysub/pubsub-bigquery-subscription.png "Pub/Sub BigQuery Subscription")
  
-*Pub/Sub BigQuery Subscription*
+*Pub/Sub BigQuery Subscription Architecture*
 
-Messages are sent to BigQuery in one of two ways. The default method loads the messages in their raw format, into the BigQuery table under a data column/field.
+Messages are sent to BigQuery in one of two ways. The default method loads the messages in their raw format, into the BigQuery table under a data column/field for later manipulation.
 
 ![BigQuery Subscription Default Data Ingestion Format](/assets/img/bigquerysub/pubsub-subscription-raw-data-column.PNG "BigQuery Subscription Default Data Ingestion Format")
  
 *Example BigQuery Subscription Default Data Ingestion Format*
 
-Alternatively, a schema can be defined on the Pub/Sub topic to define the format of message fields. The BigQuery subscription then uses this schema to load the defined message fields into corresponding BigQuery table fields. 
+Alternatively, a schema can be configured on the Pub/Sub Topic to define the format of message fields. The Piub/Sub BigQuery Subscription then uses this schema to load the defined message fields into the corresponding BigQuery table fields. 
 
 
 ![BigQuery Subscription With Schema Data Ingestion Format](/assets/img/bigquerysub/pubsub-subscription-with-schema-format.PNG "BigQuery Subscription with Schema Data Ingestion Format")
  
 *Example BigQuery Subscription with Schema Data Ingestion Format*
 
-In addition, metadata can be populated to help track information such as subscription name, message ingestion time etc. 
+In addition, metadata can be populated to help track information such as subscription name, message publish time etc. 
 
 
 
 ![BigQuery Subscription Schema Format with Metadata](/assets/img/bigquerysub/pubsub-subscription-schema-with-metadata.PNG "BigQuery Subscription Schema Format with Metadata")
  
-*Example BigQuery Subscription Schema with Metadata format*
+*Example BigQuery Subscription Schema with Metadata Format*
 
 
 With write additional metadata enabled, the BigQuery schema needs to have the following fields defined. However, these fields must not be defined within the Topic schema itself. 
@@ -56,28 +56,32 @@ With write additional metadata enabled, the BigQuery schema needs to have the fo
 
 *BigQuery Subscription Metadata Fields/Columns*
 
-If a message is received with additional fields not defined within the schema, BigQuery subscriptions can be configured to drop the message. If the BigQuery subscription doesn't enable drop unknown fields, the messages with extra fields remain in the subscription backlog. The subscription will then end up in an error state.
+If a message is received with additional fields not defined within the schema, BigQuery subscriptions can be configured to drop the message. If the BigQuery subscription doesn't enable drop unknown fields, the messages with extra fields remain in the subscription backlog. The subscription will then end up in an errored state.
 
 To mitigate this, Pub/Sub Topic schemas should be configured to automatically drop unknown fields. This ensures the data is still written to BigQuery, but any additional message fields not defined within the schema are dropped.
 
-Once data is loaded into BigQuery, simple SQL transformations can be performed on the raw data. With BigQuery scheduled queries you can automate SQL transformation tasks based on a cron schedule you define.
+Once data is loaded into BigQuery, simple SQL transformations can be performed on the raw data. With BigQuery scheduled queries, you can automate SQL transformation tasks based on a cron schedule you define.
 
-Pub/Sub BigQuery subscriptions also remove the requirement to have Pub/Sub Topic clients configured as subscribers. The Pub/Sub BigQuery subscription defines the BigQuery table data will be loaded into and is automatically pushed directly to BigQuery.
+Pub/Sub BigQuery subscriptions also remove the requirement to have Pub/Sub Topic clients configured as subscribers. The Pub/Sub BigQuery Subscription defines the BigQuery table data will be loaded into and is automatically pushed directly to BigQuery.
 
-Messages target the BigQuery Write API- upon successful write to the BigQuery table, the Pub/Sub message is ackowledged. If the message fails to be written to the table, it is negatively acknowledged to Pub/Sub and Pub/Sub will attempt to write the data to BigQuery again. By configuring an exponential backoff, Pub/Sub will wait the defined amount of time before attempting to write a previously failed message, incrementing the wait period until it reaches the defined threshold for failed delivery attempts. Once this threshold has been met, the message can then be sent to a Dead Letter queue for manual review and intervention. The messages sent to the Dead Letter Queue include an additional CloudPubSubDeadLetterSourceDeliveryErrorMessage attribute which defines the reason the message couldn't be written to BigQuery.
+Messages target the BigQuery Write API- upon successful write to the BigQuery table, the Pub/Sub message is ackowledged. If the message fails to be written to the table, it is negatively acknowledged to Pub/Sub and Pub/Sub will attempt to write the data to BigQuery again. By configuring an exponential backoff, Pub/Sub will wait the defined amount of time before attempting to write a previously failed message, incrementing the wait period until it reaches the defined threshold for failed delivery attempts. Once this threshold has been met, the message is forwarded to a Dead Letter queue for manual review and intervention. The messages sent to the Dead Letter Queue include an additional CloudPubSubDeadLetterSourceDeliveryErrorMessage attribute which defines the reason the message couldn't be written to BigQuery.
 
 # What IAM permissions do Pub/Sub BigQuery Subscriptions require?
 The Pub/Sub service account requires write access to the BigQuery target table, and read access to the table metadata. These permissions can be granted by applying the following Terraform code. The google_bigquery_table_iam_member resource creates a non authoritative update to the IAM bindings, preserving any existing table bindings.
 
 ```
-resource "google_bigquery_dataset_iam_member" "viewer" {
+# grant pub/sub service account metadataViewer permissions on BigQuery target table
+resource "google_bigquery_table_iam_member" "viewer" {
   dataset_id = google_bigquery_dataset.cloudbabbledataset01.dataset_id
+  table_id = google_bigquery_table.cloudbabbletable01.table_id
   role   = "roles/bigquery.metadataViewer"
   member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
 }
 
-resource "google_bigquery_dataset_iam_member" "editor" {
+# grant pub/sub service account dataeditor permissions on BigQuery target table
+resource "google_bigquery_table_iam_member" "editor" {
   dataset_id = google_bigquery_dataset.cloudbabbledataset01.dataset_id
+  table_id = google_bigquery_table.cloudbabbletable01.table_id
   role   = "roles/bigquery.dataEditor"
   member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
 }
