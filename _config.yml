@@ -18,6 +18,8 @@ navbar-links:
     - Registration: "registration"
     - Programming: 'programming'
     - Dealer's Den: "dealers"
+    - Artist Alley: "artist-alley"
+    - Poster: "poster"
   # - Night Market: "night-market"
   # - Dance Events: "dance-events"
   # - Artist Alley: "artist-alley"
