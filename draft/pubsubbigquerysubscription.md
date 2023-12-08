@@ -104,13 +104,17 @@ resource "google_pubsub_schema" "cloudbabbleschema01" {
   type = "AVRO"
   definition = "{\n  \"type\" : \"record\",\n  \"name\" : \"Avro\",\n  \"fields\" : [\n    {\n      \"name\" : \"Username\",\n      \"type\" : \"string\"\n    },\n    {\n      \"name\" : \"Age\",\n      \"type\" : \"int\"\n    },\n    {\n      \"name\" : \"ActiveMember\",\n      \"type\" : \"boolean\"\n    }\n  ]\n}\n"
 }
+```
 
+Once you have defined the Pub/Sub schema, you can then create a Topic configured with the schema. This Topic will then only accept messages that adhere to the defined schema.
+
+```
 resource "google_pubsub_topic" "cloudbabbletopic01" {
   name = "cloud-babble-topic-01"
 
   depends_on = [google_pubsub_schema.cloudbabbleschema01]
   schema_settings {
-    schema = "projects/playground-s-11-dc8e382e/schemas/cloud-babble-schema-01"
+    schema = "projects/var.project-id/schemas/cloud-babble-schema-01"
     encoding = "JSON"
   }
 }
