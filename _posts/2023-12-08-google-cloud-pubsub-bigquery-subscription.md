@@ -19,7 +19,7 @@ Google Cloud's Pub/Sub BigQuery subscriptions simplify data ingestion pipelines 
 
 ![Pub/Sub BigQuery Subscription](/assets/img/bigquerysub/pubsub-bigquery-subscription.png "Pub/Sub BigQuery Subscription")
  
-*Pub/Sub BigQuery Subscription Architecture*
+***Pub/Sub BigQuery Subscription Architecture***
 
 Messages are sent to BigQuery in one of two ways. The default method loads the messages in their raw format, into the BigQuery table under a data column/field for later manipulation.
 
@@ -32,7 +32,7 @@ Alternatively, a schema can be configured on the Pub/Sub Topic to define the for
 
 ![BigQuery Subscription With Schema Data Ingestion Format](/assets/img/bigquerysub/pubsub-subscription-with-schema-format.PNG "BigQuery Subscription with Schema Data Ingestion Format")
  
-*Example BigQuery Subscription with Schema Data Ingestion Format*
+***Example BigQuery Subscription with Schema Data Ingestion Format***
 
 In addition, metadata can be populated to help track information such as subscription name, message publish time etc. 
 
@@ -40,7 +40,7 @@ In addition, metadata can be populated to help track information such as subscri
 
 ![BigQuery Subscription Schema Format with Metadata](/assets/img/bigquerysub/pubsub-subscription-schema-with-metadata.PNG "BigQuery Subscription Schema Format with Metadata")
  
-*Example BigQuery Subscription Schema with Metadata Format*
+***Example BigQuery Subscription Schema with Metadata Format***
 
 
 With write additional metadata enabled, the BigQuery schema needs to have the following fields defined. However, these fields must not be defined within the Topic schema itself. 
@@ -54,7 +54,7 @@ With write additional metadata enabled, the BigQuery schema needs to have the fo
 | attributes        	| STRING or JSON A JSON object containing all message attributes. It also contains additional fields that are part of the Pub/Sub message including the ordering key, if present.                                     	|
 
 
-*BigQuery Subscription Metadata Fields/Columns*
+***BigQuery Subscription Metadata Fields/Columns***
 
 If a message is received with additional fields not defined within the schema, BigQuery subscriptions can be configured to drop the message. If the BigQuery subscription doesn't enable drop unknown fields, the messages with extra fields remain in the subscription backlog. The subscription will then end up in an errored state.
 
