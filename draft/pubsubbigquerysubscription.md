@@ -117,54 +117,20 @@ The following Terraform code provisions a BigQuery subscription.
 
 ```
 
+#create pub/sub bigquery subscription for defined topic
 resource "google_pubsub_subscription" "cloudbabblesubscription01" {
-  name  = "cloud-babble-subscription-01"
+  name  = "cloudbabblesubscription01"
   topic = google_pubsub_topic.cloudbabbletopic01.name
 
   bigquery_config {
-    table = "${google_bigquery_table.test.project}.${google_bigquery_table.test.dataset_id}.${google_bigquery_table.test.table_id}"
+    table = "${google_bigquery_table.cloudbabbletable01.project}.${google_bigquery_table.cloudbabbletable01.dataset_id}.${google_bigquery_table.cloudbabbletable01.table_id}"
+    use_topic_schema = true
   }
 
-  depends_on = [google_project_iam_member.viewer, google_project_iam_member.editor]
-}
-
-data "google_project" "project" {
-}
-
-resource "google_project_iam_member" "viewer" {
-  project = data.google_project.project.project_id
-  role   = "roles/bigquery.metadataViewer"
-  member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
-}
-
-resource "google_project_iam_member" "editor" {
-  project = data.google_project.project.project_id
-  role   = "roles/bigquery.dataEditor"
-  member = "serviceAccount:service-${data.google_project.project.number}@gcp-sa-pubsub.iam.gserviceaccount.com"
-}
-
-resource "google_bigquery_dataset" "test" {
-  dataset_id = "example_dataset"
-}
-
-resource "google_bigquery_table" "test" {
-  deletion_protection = false
-  table_id   = "example_table"
-  dataset_id = google_bigquery_dataset.test.dataset_id
-
-  schema = <<EOF
-[
-  {
-    "name": "data",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "The data"
-  }
-]
-EOF
+  depends_on = [google_bigquery_dataset_iam_member.viewer, google_bigquery_dataset_iam_member.editor]
 }
 ```
-***Code Example: Creating a BigQuery subscription with Terraform***
+***Code Example: Creating a BigQuery subscription with Pub/Sub Topic Schema with Terraform***
 
 # Defining Exponential Backoff
 The following terraform code defines an exponential backoff for messages that fail to write to the BigQuery table and are negatively acknowledged.
