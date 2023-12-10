@@ -21,6 +21,7 @@ author: Corrado Mazzarelli
 
 navbar-links:
   About Me: "aboutme"
+  Curriculum Vitae: "/assets/pdf/resume6.3.pdf"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
