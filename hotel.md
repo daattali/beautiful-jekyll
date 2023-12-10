@@ -16,6 +16,7 @@ Phone: (414) 271-7250</h3>
 ## Rates and Booking
 <h3>$159 / Night</h3>
 <h3>Parking: $12 Per Vehicle / Day, Includes In-and-Out Privileges</h3>
+<h3>Con Block Rates Close 2/7/2024!</h3>
 <h3><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MKEMHHF&arrivalDate=2024-02-23&departureDate=2024-02-25&groupCode=96L&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink">Reserve a Room Here</a></h3>
 
 <h4>If you need an accessible room, please book a regular room though the link above, then call the hotel at (414) 271-7250 with your reservation number and let them know you need an accessible room.</h4>
