@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: Corrado R. Mazzarelli
+title: "Corrado R. Mazzarelli"
 
 # Your name to show in the footer
-author: Corrado Mazzarelli
+author: "Corrado Mazzarelli"
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -22,9 +22,8 @@ author: Corrado Mazzarelli
 navbar-links:
   About Me: "aboutme"
   Curriculum Vitae: "/assets/pdf/resume6.3.pdf"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  Projects:
+    - DJ Assistant: "https://github.com/CorMazz/DanceDJAssistant"
   Author's home: "https://deanattali.com"
 
 ################
