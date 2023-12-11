@@ -19,13 +19,13 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 
 | Week Of	| Fundamentals (Mon 4:30-5:30)		| Competition Training (Wed 3:30-4:30)  | Variety (Fri 4:30-5:30)   |
 | ------- | ------------------------------- | ------------------------------------- | ------------------------- |
-| 30-Oct	| Factorials			                | [2020 AMC 8](https://artofproblemsolving.com/wiki/index.php/2020_AMC_8_Problems)            | Welcome Party             |
+| 30-Oct	| Factorials			                | [2020 AMC 8](https://artofproblemsolving.com/wiki/index.php/2020_AMC_8_Problems)            | Welcome Party  |
 | 6-Nov 	| Right Triangles                	| (AMC 10A)                             | _No School_               |
-| 13-Nov	| Probability	                		| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems)            | College Bowl Throwdown    |
+| 13-Nov	| Probability	                		| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems)            | College Bowl Throwdown |
 | 20-Nov	| Fractions		                		| _Half Day_                            | _No School_               |
 | 27-Nov	| Area				                	  | [RMS Mathcounts School Round](https://rmsmath.sharplogic.com/files/RMS%202223M%20Exam.pdf)  | Knights of Pi Mock Competition  |
 | 4-Dec		| Patterns		                		| Knights of Pi Problems                | _Cancelled, Knights of Pi Preparation_  |
-| 11-Dec	| Work				                	  |                                       |                           |
+| 11-Dec	| Work				                	  | [2018 AMC 8](https://artofproblemsolving.com/wiki/index.php/2018_AMC_8)                     |  |
 | 18-Dec	| _No School_                    	| _No School_                           | _No School_               |
 | 25-Dec	| _No School_	                		| _No School_                           | _No School_               |
 | 1-Jan		| _No School_ 	                	|                                       |                           |
