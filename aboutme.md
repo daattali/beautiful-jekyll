@@ -1,16 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Me
+subtitle: Past Experience & Future Goals
 ---
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+My name is Corrado Mazzarelli. I am a proud Italo-Puerto Riqueno-American with a passion for aerospace and mechanical engineering. I started my academic journey at Rensselaer Polytechnic Institute (RPI), delving into the intricacies of aerospace and mechanical systems. Currently, I'm pursuing my master's degree in aerospace at Georgia Tech, deepening my understanding of the field. My journey into coding began as a means to conquer homework challenges during my time at RPI, but it quickly evolved into a genuine fascination. Working at GE after graduating from RPI only fueled my coding enthusiasm, presenting me with diverse opportunities to apply this skill. Beyond the world of engineering and coding, you'll find me on the dance floor, indulging in my love for west coast swing. In my spare time, I also enjoy exploring the fascinating realm of data science techniques, adding an extra layer of excitement to my journey.
