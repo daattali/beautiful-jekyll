@@ -20,10 +20,11 @@ author: Corrado R. Mazzarelli
 ###############################################
 
 navbar-links:
+  Home: "cormazz.github.io"
   About Me: "aboutme"
   Curriculum Vitae: "/assets/pdf/Resume 6.3.pdf"
   Projects:
-    - DJ Assistant: https://github.com/CorMazz/DanceDJAssistant""
+    - DJ Assistant: "https://github.com/CorMazz/DanceDJAssistant"
 
 ################
 # --- Logo --- #
