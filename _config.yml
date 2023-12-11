@@ -22,10 +22,8 @@ author: Corrado R. Mazzarelli
 navbar-links:
   About Me: "aboutme"
   Curriculum Vitae: "/assets/pdf/Resume 6.3.pdf"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Projects:
+    - DJ Assistant: https://github.com/CorMazz/DanceDJAssistant""
 
 ################
 # --- Logo --- #
