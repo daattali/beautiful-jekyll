@@ -13,11 +13,26 @@ Night Market will be using the same space as Artists Alley (Oak) and as such ind
 
 ## Table Costs
 
-_Dealers Den (single table, 72” x 30”)						 $100.00_
-
-_Night Market (single table, 72” x 18”)						   $40.00_
+| Vendor Location | Table Dimensions | Cost |
+| --------------- | ---------------- | ---- |
+| Dealers Den | single table, 72” x 30” | $100.00 |
+| Night Market | single table, 72” x 18” | $40.00 |
 
 Note that there are no daily pricing options this year; all listed prices are for the duration of the Convention. Please also note that there are no half-table options at this time.
+
+
+# Dealers Den Setup & Teardown
+
+The Dealers Den will be open for vendors only on Thursday afternoon from 6 PM until 11 PM, and early Friday morning at 8 AM before it opens to regular attendees at 10 AM. If you have already picked up your badge, carts and the hotel’s service elevator are available upon request.
+
+Teardown and loadout will be on Sunday after the Dealers Den closes at 4 PM. Note that you will need to sign out with a member of staff before leaving to verify that your table and area is clear and that no trash is left behind.
+
+
+# Night Market Setup & Teardown
+
+Night Market takes place in the same room as Artists Alley, taking the space over after dark. As such, setup and teardown will be on a nightly basis; you will have two hours after Artist Alley closes at 7 PM for setup before Night Market opens to the public at 9 PM, and you will have one hour after Night Market closes at 1 AM for teardown. Please note that you will need to make sure to completely clear your table and area each night and will need to sign out with a member of staff before leaving to verify that your table and area is clear and that no trash is left behind.
+
+Vendors are allowed to leave early each night if they wish, but will still be required to sign out with a member of staff as noted above to ensure their table and area are clear.
 
 
 ## Electricity
@@ -49,20 +64,6 @@ If you have submitted an application and were placed on the Waitlist, please rem
 # Badge Pickup
 
 If you are picking up badges for yourself or your assistant, you may do so on Thursday at Con Ops (Golda Meir), right next to the main Dealers Den. If you are picking your badge(s) up on Friday, you will need to pick them up at Registration.
-
-
-# Dealers Den Setup & Teardown
-
-The Dealers Den will be open for vendors only on Thursday afternoon from 6 PM until 11 PM, and early Friday morning at 8 AM before it opens to regular attendees at 10 AM. If you have already picked up your badge, carts and the hotel’s service elevator are available upon request.
-
-Teardown and loadout will be on Sunday after the Dealers Den closes at 4 PM. Note that you will need to sign out with a member of staff before leaving to verify that your table and area is clear and that no trash is left behind.
-
-
-# Night Market Setup & Teardown
-
-Night Market takes place in the same room as Artists Alley, taking the space over after dark. As such, setup and teardown will be on a nightly basis; you will have two hours after Artist Alley closes at 7 PM for setup before Night Market opens to the public at 9 PM, and you will have one hour after Night Market closes at 1 AM for teardown. Please note that you will need to make sure to completely clear your table and area each night and will need to sign out with a member of staff before leaving to verify that your table and area is clear and that no trash is left behind.
-
-Vendors are allowed to leave early each night if they wish, but will still be required to sign out with a member of staff as noted above to ensure their table and area are clear.
 
 
 # Lunch!
