@@ -4,6 +4,20 @@ title: Dealer's Den
 subtitle: Welcome, welcome, one and all! With all of these dazzling wares we’re sure you will find something of satisfaction! We bring you fantastic and fascinating stock from all over fandom to our humble little con.
 ---
 
+# Dealers Den & Night Market Hours
+![Dealer's Den Schedule](/uploads/f2-dealers-den-schedule.png)
+
+
+# After Hours
+
+Please note that once the Dealers Den is closed for the evening, nobody will be allowed inside. As a general rule, even staff are not allowed inside the room after hours; the only exception would be a Dealers Den lead and only then if they are accompanied by a member of our Security team. Please double and triple check to make sure that you have all of your personal belongings with you when you leave; items such as personal ID, money, phones, etc that you might need should not be left in the Den overnight.
+
+
+# Lunch!
+
+On Friday and Saturday, the Dealers Den will close for one hour from 12 PM to 1 PM to allow our vendors a break and time to eat lunch. You are welcome to bring food into the Den to eat during this time, or you can leave to find lunch elsewhere if you’d like. The Den will be completely closed down and attendees will not be allowed in during this time, so please feel free to come and go as needed. We want our vendors to stay fed and hydrated!
+
+
 # Table Dimensions, Amenities & Pricing
 
 Individual vendor spaces in the main (Regency Ballroom) and overflow (Juneau) Dealers Dens are six feet by six feet; this includes one table with dimensions of six feet by thirty inches and a space of 3.5 feet behind it. Two chairs and a basic tablecloth will be provided per table.
@@ -65,19 +79,6 @@ If you have submitted an application and were placed on the Waitlist, please rem
 
 If you are picking up badges for yourself or your assistant, you may do so on Thursday at Con Ops (Golda Meir), right next to the main Dealers Den. If you are picking your badge(s) up on Friday, you will need to pick them up at Registration.
 
-
-# Lunch!
-
-On Friday and Saturday, the Dealers Den will close for one hour from 12 PM to 1 PM to allow our vendors a break and time to eat lunch. You are welcome to bring food into the Den to eat during this time, or you can leave to find lunch elsewhere if you’d like. The Den will be completely closed down and attendees will not be allowed in during this time, so please feel free to come and go as needed. We want our vendors to stay fed and hydrated!
-
-
-# Dealers Den & Night Market Hours
-![Dealer's Den Schedule](/uploads/f2-dealers-den-schedule.png)
-
-
-# After Hours
-
-Please note that once the Dealers Den is closed for the evening, nobody will be allowed inside. As a general rule, even staff are not allowed inside the room after hours; the only exception would be a Dealers Den lead and only then if they are accompanied by a member of our Security team. Please double and triple check to make sure that you have all of your personal belongings with you when you leave; items such as personal ID, money, phones, etc that you might need should not be left in the Den overnight.
 
 # Code of Conduct
 - Please take some time to review our [Code of Conduct](/code-of-conduct).
