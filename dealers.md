@@ -7,15 +7,11 @@ subtitle: Welcome, welcome, one and all! With all of these dazzling wares we’r
 ---
 # Dealers Den & Night Market Hours
 
-![Dealer's Den Schedule](/uploads/f2-dealers-den-schedule.png)
+![Dealer's Den Schedule](/uploads/photo_2023-12-13_15-25-56.jpg)
 
 # After Hours
 
-Please note that once the Dealers Den is closed for the evening, nobody will be allowed inside. As a general rule, even staff are not allowed inside the room after hours; the only exception would be a Dealers Den lead and only then if they are accompanied by a member of our Security team. Please double and triple check to make sure that you have all of your personal belongings with you when you leave; items such as personal ID, money, phones, etc that you might need should not be left in the Den overnight.
-
-# Lunch!
-
-On Friday and Saturday, the Dealers Den will close for one hour from 12 PM to 1 PM to allow our vendors a break and time to eat lunch. You are welcome to bring food into the Den to eat during this time, or you can leave to find lunch elsewhere if you’d like. The Den will be completely closed down and attendees will not be allowed in during this time, so please feel free to come and go as needed. We want our vendors to stay fed and hydrated!
+Please note that once the Dealers Den is closed for the evening, nobody will be allowed inside. As a general rule, even staff are not allowed inside the room after hours; the only exception would be a Dealers Den lead and only then if they are accompanied by a member of our Security team. Please double and triple check to make sure that you have all of your personal belongings with you when you leave; items such as personal ID, money, phones, etc. that you might need should not be left in the Den overnight.
 
 # Table Dimensions, Amenities & Pricing
 
@@ -56,6 +52,10 @@ Once a sharing request has been made, Dealers Den staff will contact the vendor 
 
 Note that sharing table space without prior approval is not allowed and is grounds for loss of vendor space. Requests to share vendor space must be made no later than two weeks prior to the start of the Convention. The primary dealer for a vendor space is responsible for their space and for ensuring Dealers Den rules and policies are followed by all vendors in it.
 
+# Taxes
+
+You are legally required to have a Tax ID in order to sell things in Wisconsin. If you are selected as a F2 Dealer, you will need a valid Tax ID in order to sell your wares at the convention. If you do not have a Wisconsin Tax ID already, you can apply for one directly at <https://tap.revenue.wi.gov/mta> . 
+
 # Payment, Cancellations & Refunds
 
 Once you have received your email of approval, payment for your table is expected within seven days of notification. Please make this payment promptly, as failure to do so will result in your registration token being revoked and your spot being given to another vendor.
@@ -72,7 +72,7 @@ If you are picking up badges for yourself or your assistant, you may do so on Th
 
 # Code of Conduct
 
-* Please take some time to review our [Code of Conduct](/code-of-conduct).
+Please take some time to review our [Code of Conduct](/code-of-conduct).
 
 # Need Help?
 
