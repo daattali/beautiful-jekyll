@@ -7,15 +7,11 @@ subtitle: Welcome, welcome, one and all! With all of these dazzling wares we’r
 ---
 # Dealers Den & Night Market Hours
 
-![Dealer's Den Schedule](/uploads/f2-dealers-den-schedule.png)
+![Dealer's Den Schedule](/uploads/photo_2023-12-13_15-25-56.jpg)
 
 # After Hours
 
 Please note that once the Dealers Den is closed for the evening, nobody will be allowed inside. As a general rule, even staff are not allowed inside the room after hours; the only exception would be a Dealers Den lead and only then if they are accompanied by a member of our Security team. Please double and triple check to make sure that you have all of your personal belongings with you when you leave; items such as personal ID, money, phones, etc that you might need should not be left in the Den overnight.
-
-# Lunch!
-
-On Friday and Saturday, the Dealers Den will close for one hour from 12 PM to 1 PM to allow our vendors a break and time to eat lunch. You are welcome to bring food into the Den to eat during this time, or you can leave to find lunch elsewhere if you’d like. The Den will be completely closed down and attendees will not be allowed in during this time, so please feel free to come and go as needed. We want our vendors to stay fed and hydrated!
 
 # Table Dimensions, Amenities & Pricing
 
