@@ -56,6 +56,10 @@ Once a sharing request has been made, Dealers Den staff will contact the vendor 
 
 Note that sharing table space without prior approval is not allowed and is grounds for loss of vendor space. Requests to share vendor space must be made no later than two weeks prior to the start of the Convention. The primary dealer for a vendor space is responsible for their space and for ensuring Dealers Den rules and policies are followed by all vendors in it.
 
+# Taxes
+
+You are legally required to have a Tax ID in order to sell things in Wisconsin. If you are selected as a F2 Dealer, you will need a valid Tax ID in order to sell your wares at the convention. If you do not have a Wisconsin Tax ID already, you can apply for one directly at <https://tap.revenue.wi.gov/mta> . 
+
 # Payment, Cancellations & Refunds
 
 Once you have received your email of approval, payment for your table is expected within seven days of notification. Please make this payment promptly, as failure to do so will result in your registration token being revoked and your spot being given to another vendor.
