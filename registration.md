@@ -28,9 +28,9 @@ Further details about this policy can be reviewed on our dedicated [COVID-19 pol
 * A special super sponsor item.
 * An invitation to our Guest of Honor dinner.
 
-Please be aware that Pre-Registration prices will end at a date to be determined. Prices then will become Walk-In prices.
-
 ## Pricing
+
+**Pre-registration ends on February 21, 2024 at 11:59PM.** After this date, registration prices will switch to Walk-In pricing.
 
 | Level | Pre-Registration | Walk-In Registration |
 | --- | --- | --- |
@@ -43,9 +43,9 @@ Please be aware that Pre-Registration prices will end at a date to be determined
 
 | Daily Badge | Price |
 | --- | --- |
-| Friday | $35 |
-| Saturday | $35 |
-| Sunday | $25 |
+| Friday | $40 |
+| Saturday | $40 |
+| Sunday | $35 |
 
 Super sponsors will not be eligible for refunds after a date to be determined. If you registered for a super sponsor and cannot make it to the convention, you may request a rollover for next year.
 
@@ -59,7 +59,7 @@ Check back here and/or follow us on social media for any updates that may come t
 
 The file located below is for a Notary consent form for minors between the ages of 14-17 to attend the convention without an adult.
 
-[Get the parental consent form](https://docs.google.com/document/d/1BDVSTUA_VEBAOYD_VgRfCxz_o4K1o3Xg5ZRDSsEmp4c/edit){: target="_blank" rel="noopener"}
+[Get the parental consent form](https://static.fursquared.com/documents/f2-2024-consent-form.pdf){: target="_blank" rel="noopener"}
 
 ## Questions or Concerns?
 
