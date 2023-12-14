@@ -4,8 +4,8 @@ title: Preparing for the Google Cloud Professional Cloud Database Engineer certi
 subtitle: In this blog I cover Google Cloud’s Professional Cloud Database Engineer certification and offer my advice and guidance on preparing to become a certified Google Cloud Professional Cloud Database Engineer.
 #description: ""
 #cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/pca/googlecloudprofessionalclouddatabaseengineerbadge.png
-share-img: /assets/img/pca/googlecloudprofessionalclouddatabaseengineerbadge.png
+thumbnail-img: /assets/img/pcdbe/googlecloudprofessionalclouddatabaseengineerbadge.png
+share-img: /assets/img/pcdbe/googlecloudprofessionalclouddatabaseengineerbadge.png
 readtime: true
 share-title: "How to prepare for the Google Cloud Professional Cloud Database Engineer certification"
 share-description: "In this blog I cover Google Cloud’s Professional Cloud Database Engineer certification and offer my advice and guidance on preparing to become a certified Google Cloud Professional Cloud Database Engineer."
@@ -15,6 +15,9 @@ tags: [Google Cloud Professional Cloud Database Engineer, PCDBE, Certification, 
 
 * toc
 {:toc}
+
+
+For me, this was my 9th Google Cloud certification, and the experience from the previous certifications (and numerous recertifications over the years!), definitely helped answering several of the questions. From all of the  exams to date, I felt the Cloud Database Engineer certification was one of the easier professional certifications. Whilst I have been working with Google Cloud for many years and have a lot of experience with Cloud SQL, my preparation for this certification was a lot shorter than i expected. I did a review of the exam guide, completed the [Professional Cloud Database Engineer Certification Learning Path](https://partner.cloudskillsboost.google/paths/81) on Google Cloud Skills Boost for Partners and a ran through Google's test questions which surprisngly left me feeling confident I was ready for the exam. Had I not been working on Google Cloud for such a long time  and not completed other certificaitons then I can see there may have been gaps in my knowledge, and I would have struggled with some of the questions that focussed more around security for instance.
 
 # What is the Google Cloud Professional Cloud Database Engineer certification?
 
@@ -33,15 +36,29 @@ The Professional Cloud Database Engineer exam assesses your ability to:
 
 *Google Cloud Professional Cloud Database Engineer Badge*
 
-Section 1: Design scalable and highly available cloud database solutions (~42% of the exam)
-Section 2: Manage a solution that can span multiple database solutions (~34% of the exam)
-Section 3: Migrate data solutions (~14% of the exam)
-Section 4: Deploy scalable and highly available databases in Google Cloud (~10% of the exam)
+The [exam guide](https://cloud.google.com/learn/certification/guides/cloud-database-engineer) is split into four main sections as follows:
+
+- Section 1: Design scalable and highly available cloud database solutions (~42% of the exam)
+- Section 2: Manage a solution that can span multiple database solutions (~34% of the exam)
+- Section 3: Migrate data solutions (~14% of the exam)
+- Section 4: Deploy scalable and highly available databases in Google Cloud (~10% of the exam)
+
+Google Cloud provides a range of database options including relational, non-relational, in memory and bare metal solutions.
+
+# Google Cloud Relational Database Options
+
+Cloud SQL
+Cloud Spanner
+Bare metal solution
+
+# Google Cloud Non-Relational Database Options
+
+Cloud BigTable
+Memorystore
+Firebase
 
 
-For me, this was my 9th Google Cloud certification, and the experience from the previous certifications (and numerous recertifications over the years!), definitely helped answering several of the questions. From all of the  exams to date, I felt the Cloud Database Engineer certification was one of the easier professional certifications. Whilst I have been working with Google Cloud for many years and have a lot of experience with Cloud SQL, my preparation for this certification was a lot shorter than i expected. I did a review of the exam guide, completed the [Professional Cloud Database Engineer Certification Learning Path](https://partner.cloudskillsboost.google/paths/81) on Google Cloud Skills Boost for Partners and a ran through Google's test questions which surprisngly left me feeling confident I was ready for the exam. Had I not been working on Google Cloud for such a long time  and not completed other certificaitons then I can see there may have been gaps in my knowledge, and I would have struggled with some of the questions that focussed more around security for instance.
-
-
+priyanka diagram ref
 
 The exam had a lot of questions focussed on Cloud SQL, predominently MySQL and PostgreSQL. AlloyDB wasn't covered as it isn't currently covered within the exam guide. I'd say 50-60% of my questions were Cloud SQL related in one way or another. This included questions focussed on selecting when Cloud SQL would be the best Google product for a particular use case, methods of securing Cloud SQL including CMEK and IAM permissions, defining maintenance windows for automated maintencne, CloudSQL auth proxy, highly available regional Cloud SQL instances, and how to architect a multi region Cloud SQL architecture for DR purposes. Similarly there were questions focussed around monitoring and troubleshooting Cloud SQL and application issues related to the database
 
