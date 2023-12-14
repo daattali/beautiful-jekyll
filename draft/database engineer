@@ -1,0 +1,19 @@
+this certification was the 9th certification i have from googke cloud. the experience of other certifications definitely helped answer several pf the wuestions.
+
+questions focussed heavily on Cloud SQL. predominantly MySqL and PostgresSQL. AlloyDB wasnt covered. there werre slso various wuestiond for Spanner, optimising performance (spasner and cloudswl).
+
+migration approaches including dumps, inports from files and database migration service.
+
+oracle vare metal as s service also appeared in a couple of auestions.
+
+then yhere were questions on optimising swl, deploying swl for mukti region atchitectires, optimising for read iopps, adjusting specifications of instances, performing dr failover and faillvacks.
+
+no wuestions focussed on swl codecetc.  i fid hs e one that tewauired familiarity with command line syntax for cloudswl.
+
+security arose, covering authrntication options, encryption, data protection, cost optimisation, backupp and maintenance windows.
+
+in trrms if difficulty, i felt this was one of the easier certifications. hoeever this may aldo be yo the fact ive been working with goigke cloud for a lonh tine day to day and have bern certifying snd recertifying fir over 5yeats! this experience definitely helps particularly ehen youre regukatly working with thr database proucts.
+
+terraform code wuestion! firebasecalso croppedc upl a coupke ofvtomrs.
+
+bigtable was covered a few tines ad well.
