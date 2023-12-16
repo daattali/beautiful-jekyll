@@ -10,21 +10,18 @@
 ############################
 
 # Name of website
-title: My Website
+title: Kyoungseok Jang
 
 # Your name to show in the footer
-author: Some Person
+author: Kyoungseok Jang
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  About Me: I am a postdoctoral researcher working with Prof. Komiyama Junpei at NYU. Before this, I did my first postdoc with Prof. Kwang-Sung Jun at the University of Arizona. I got my Ph.D. in the Department of Mathematical Science at KAIST (Korea Advanced Institute of Science and Technology) with the advisor Wanmo Kang. My research interests lie in the mathematical analysis of machine learning problems. More specifically, my research has been focused on
+multi-armed bandits, best-arm identification, and generalization bounds (PAC-Bayes bound).
 
 ################
 # --- Logo --- #
