@@ -8,8 +8,7 @@ author: Kyoungseok Jang
 ###############################################
 
 navbar-links:
-  About Me: I am a postdoctoral researcher working with Prof. Komiyama Junpei at NYU. Before this, I did my first postdoc with Prof. Kwang-Sung Jun at the University of Arizona. I got my Ph.D. in the Department of Mathematical Science at KAIST (Korea Advanced Institute of Science and Technology) with the advisor Wanmo Kang. My research interests lie in the mathematical analysis of machine learning problems. More specifically, my research has been focused on
-multi-armed bandits, best-arm identification, and generalization bounds (PAC-Bayes bound).
+  About Me: I am a postdoctoral researcher working with Prof. Komiyama Junpei at NYU. Before this, I did my first postdoc with Prof. Kwang-Sung Jun at the University of Arizona. I got my Ph.D. in the Department of Mathematical Science at KAIST (Korea Advanced Institute of Science and Technology) with the advisor Wanmo Kang. My research interests lie in the mathematical analysis of machine learning problems. More specifically, my research has been focused on multi-armed bandits, best-arm identification, and generalization bounds (PAC-Bayes bound).
 
 ################
 # --- Logo --- #
