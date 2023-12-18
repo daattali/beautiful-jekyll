@@ -152,6 +152,29 @@ fig.add_trace(
 fig.show(renderer="browser")
 {% endhighlight %}
 
+## Take the STFT
+There are several inputs to the STFT. The most important of which are the window type, the window size, and the window overlap. I left the window type as the default value provided by scipy, but the window type and the window size were carefully selected to achieve a desired level of temporal accuracy which was specified as an input. The temporal resolution (in seconds) says how many seconds pass between each point that the STFT samples the frequency. Thus, any changes in frequency that happen faster than the temporal resolution will not be detected. It was important to maintain the temporal resolution below the rate at which the data changed from low frequency to high frequency. Per the Uncertainty Principle, the temporal resolution is a trade-off of spectral resolution, so increasing the temporal resolution would lower the spectral resolution, possibly to the point of losing the ability to distinguish between the sections of the signal.
+
+{% highlight javascript linenos %}
+# First determine the sampling frequency (fs)
+# Convert to float by dividing a time delta by another TD
+fs = datetime.timedelta(seconds=1) / (df[time_col].gather([1])[0] - df[time_col].gather([0])[0])
+
+# Determine the samples per window and window overlap to get the desired temporal resolution
+# https://dsp.stackexchange.com/questions/42428/understanding-overlapping-in-stft
+# I did the math to determine the formula for nperseg and noverlap Assume we want 12.5% overlap (default from Scipy)
+overlap_fraction = 0.125
+nperseg = int(temporal_resolution * fs / (1-overlap_fraction))
+noverlap = int(overlap_fraction*nperseg)
+
+f, t, Sxx = spectrogram(y, fs, nperseg=nperseg, noverlap=noverlap, scaling="spectrum")
+
+# Zoom the data to the range we care about (below max detection frequency)
+max_detection_frequency = np.max(np.array(list(frequency_ranges.values())))
+idx = f < max_detection_frequency*1.1
+f, Sxx = f[idx], Sxx[idx, :]
+{% endhighlight %}
+
 # Resources
 
 ## Data-Driven Science and Engineering
