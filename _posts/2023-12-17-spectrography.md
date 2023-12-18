@@ -94,7 +94,7 @@ Instead of using Pandas, I opted for [Polars](https://pola.rs/). Polars is essen
 [Scipy](https://scipy.org/) is another powerhouse in scientific Python analysis. Here specifically I leveraged scipy.signal.spectrogram, which automatically calculates the spectrogram for you.
 
 ## Scikit-Learn
-Beloved to machine learning enthusiasts everywhere [scikit-learn](https://scikit-learn.org/stable/index.html) contains prebuilt machine learning models ready to implement. In this case, I leveraged their data scaling and DBSCAN clustering implementations. 
+Beloved to machine learning enthusiasts everywhere, [scikit-learn](https://scikit-learn.org/stable/index.html) contains prebuilt machine learning models ready to implement. In this case, I leveraged their data scaling and DBSCAN clustering implementations. 
 
 ## Plotly
 [Plotly](https://plotly.com/python/) is a widely used plotting library which enables easy interactive plots which can be saved as interactive. They are the plots you'll see embedded here.
@@ -105,9 +105,10 @@ Beloved to machine learning enthusiasts everywhere [scikit-learn](https://scikit
 ## Tqdm
 [Tqdm](https://tqdm.github.io/) is just a progress bar library. I like to use it to let me know how long my scripts are taking. 
 
+{: .box-note}
 **Note:** An environment.yml file is included in the GitHub repository to allow you to recreate a functional Anaconda environment.
 
-# Methodology
+# Code Implementation
 
 ## Generate Data
 First we have to generate some representative data. I did this using numpy to generate a few different sinusoids with the desired frequencies and amplitudes and then save that data as a .csv. The original data is the first plot shown above. If you want more data, check out `generate_example_data.py` in the repo.
@@ -175,6 +176,9 @@ max_detection_frequency = np.max(np.array(list(frequency_ranges.values())))
 idx = f < max_detection_frequency*1.1
 f, Sxx = f[idx], Sxx[idx, :]
 {% endhighlight %}
+
+## To Be Continued
+It's late and I want to go to bed. I'll finish this another time.
 
 # Resources
 
