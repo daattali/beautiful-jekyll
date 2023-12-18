@@ -10,7 +10,7 @@ author: Corrado R. Mazzarelli
 ---
 
 {: .box-success}
-All the material used to create this is within the GitHub repository linked above. I strongly encourage you to explore the [resources](#resources) linked below. They have guided me on my data science journey and it is truly some remarkable information, all available for free.
+All the material used to create this is within the GitHub repository linked above. I strongly encourage you to explore the [resources](#resources) linked below. They have guided me on my data science journey and it is truly some remarkable information, all available for free. This article will be written with the assumption that you are familiar with Python, and have watched the reference videos on the discrete Fourier transform 
 
 # Concept
 While working at GE, I did my best to seek out fun data science projects to sate intellectual curiosity. Two years ago, someone approached me and asked if there was a way to cluster periodic data based on its frequency. The goal was to turn a plot of data that looked like this:
@@ -26,6 +26,34 @@ into this
 
 ## Context
 I'm not going to go too in depth here regarding what testing GE was doing. However, the data was from a wear test rig where different samples of material were rubbed against each other and properties such as load and displacement were recorded. This data could be used to help describe material properties to let engineers predict the life of different gas turbine components. In this case, there were low-frequency, high-amplitude sections of the data interspersed between high-frequency, low-amplitude sections. If you need a refresher on those, [check this out](https://www.mathsisfun.com/algebra/amplitude-period-frequency-phase-shift.html). 
+
+## Personal History and Motivation
+When I first wrote the script for GE 2 years ago, I had never heard of a spectrogram and had just learned about the Fourier transform and its uses. Funnily enough, when I was trying to use the Fourier transform to determine the frequency of the signal at a certain time, I had the idea to take a "rolling Fourier transform," which is exactly what the spectrogram is. I "independently discovered" the spectrogram and made a crude interpretation of it in Python. After following some Dr. Brunton's lecture series (in the [resources](#resources)) and I learned about the spectrogram, I decided to endeavor to rewrite my script for fun, implementing my newfound tools to improve it and then give the improved version to my friend over in the Wear Laboratory. 
+
+# Python Libraries
+
+## Numpy
+[Numpy](https://numpy.org/) is a powerhouse in scientific Python analysis, and needs no introduction.
+
+## Polars
+Instead of using Pandas, I opted for [Polars](https://pola.rs/). Polars is essentially much faster Pandas that has a lazy API which was useful for processing the ~billion data points in the data from the lab. One downside to Polars is that it is still new and does not have the community support/integration that Pandas enjoys. 
+
+## Scipy
+[Scipy](https://scipy.org/) is another powerhouse in scientific Python analysis. Here specifically I leveraged scipy.signal.spectrogram, which automatically calculates the spectrogram for you.
+
+## Scikit-Learn
+Beloved to machine learning enthusiasts everywhere [scikit-learn](https://scikit-learn.org/stable/index.html) contains prebuilt machine learning models ready to implement. In this case, I leveraged their data scaling and DBSCAN clustering implementations. 
+
+## Plotly
+[Plotly](https://plotly.com/python/) is a widely used plotting library which enables easy interactive plots which can be saved as interactive. They are the plots you'll see embedded here.
+
+## Plotly-Resampler
+[Plotly-resampler](https://github.com/predict-idlab/plotly-resampler) is a Python library that utilizes Dash to create a dynamically updating Plotly chart that only displays a limited number of data points to ensure the plot doesn't become bloated and slow. This was very useful for the GE implementation, since there were about a billion data points to plot. A limitation of plotly-resampler is that it requires an actively running Python kernel, so the plots cannot be saved as interactive.
+
+## Tqdm
+[Tqdm](https://tqdm.github.io/) is just a progress bar library. I like to use it to let me know how long my scripts are taking. 
+
+**Note:** An environment.yml file is included in the GitHub repository to allow you to recreate a functional Anaconda environment.
 
 ## Here is a secondary heading
 
