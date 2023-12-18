@@ -10,7 +10,7 @@ author: Corrado R. Mazzarelli
 ---
 
 {: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+All the material used to create this is within the GitHub repository linked above. I strongly encourage you to explore the [resources](#resources) linked below. They have guided me on my data science journey and it is truly some remarkable information, all available for free.
 
 **Here is some bold text**
 
@@ -90,4 +90,6 @@ If the above image is broken, then you'll need to follow the instructions [in th
 
 ![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
 
-{% include bp.spectrography.spectrogram.html %}
+{% include bp.spectrography/spectrogram.html %}
+
+# Resources
