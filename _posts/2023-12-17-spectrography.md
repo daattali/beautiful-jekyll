@@ -12,7 +12,20 @@ author: Corrado R. Mazzarelli
 {: .box-success}
 All the material used to create this is within the GitHub repository linked above. I strongly encourage you to explore the [resources](#resources) linked below. They have guided me on my data science journey and it is truly some remarkable information, all available for free.
 
-**Here is some bold text**
+# Concept
+While working at GE, I did my best to seek out fun data science projects to sate intellectual curiosity. Two years ago, someone approached me and asked if there was a way to cluster periodic data based on its frequency. The goal was to turn a plot of data that looked like this:
+
+{% include bp.spectrography/initial_data.html %}
+
+into this
+
+{% include bp.spectrography/clustered_data.html %}
+
+{: .box-note}
+**Note:** If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as html files.
+
+## Context
+I'm not going to go too in depth here regarding what testing GE was doing. However, the data was from a wear test rig where different samples of material were rubbed against each other and properties such as load and displacement were recorded. This data could be used to help describe material properties to let engineers predict the life of different gas turbine components. In this case, there were low-frequency, high-amplitude sections of the data interspersed between high-frequency, low-amplitude sections. If you need a refresher on those, [check this out](https://www.mathsisfun.com/algebra/amplitude-period-frequency-phase-shift.html). 
 
 ## Here is a secondary heading
 
