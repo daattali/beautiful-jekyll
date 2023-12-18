@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fourier Time Series Analysis In Python
-subtitle: Data Segmentation with the Spectrogram and DBSCAN Clustering
+subtitle: Data Segmentation with the STFT and DBSCAN Clustering
 gh-repo: cormazz/spectrography
 gh-badge: [star, fork, follow]
 tags: [machine-learning, python, clustering, dbscan, spectrogram]
@@ -38,6 +38,8 @@ Once the hyperparameters were tuned, the DBSCAN algorithm did an excellent job s
 
 {% include bp.spectrography/clustered_data.html %}
 
+In conclusion, this project demonstrated the synergy between signal processing techniques like STFT, frequency analysis, and clustering algorithms like DBSCAN. By combining these methods, I successfully transformed and clustered periodic data, providing a comprehensive and insightful representation of the underlying patterns in the original time series.
+
 # Introduction
 
 ## Context
@@ -73,9 +75,10 @@ The Uncertainty Principle also manifests as spectral uncertainty when performing
 In summary, the Uncertainty Principle introduces a fundamental constraint on the joint precision of time and frequency measurements in signal analysis. This principle influences the design choices made when configuring the parameters of the STFT, such as the choice of window size and overlap. Striking a balance between time and frequency resolutions is crucial to effectively extract meaningful information from signals while acknowledging the inherent limitations imposed by the Uncertainty Principle.
 
 ### DBSCAN Clustering
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a clustering algorithm commonly used in machine learning and data analysis. Unlike traditional clustering algorithms that assume clusters have a specific shape, size, or density, DBSCAN identifies clusters based on the density of data points in a region. It can find clusters of arbitrary shapes and is robust to noise. DBSCAN categorizes points as core points, border points, or noise, providing a flexible and effective approach to cluster analysis.
 
 ### Polars Lazy Execution
-
+Polars is a data manipulation library in the Rust programming language that introduces the concept of lazy execution. Lazy execution delays the actual computation until the result is explicitly needed, optimizing performance by avoiding unnecessary calculations. Polars allows users to build a sequence of transformations on large datasets without immediately computing the results. This can be advantageous when working with big data, as it enables more efficient resource utilization and can lead to faster overall processing times when the final results are requested.
 
 
 # Python Libraries
