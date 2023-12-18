@@ -46,6 +46,38 @@ I'm not going to go too in depth here regarding what testing GE was doing. Howev
 ## Personal History and Motivation
 When I first wrote the script for GE 2 years ago, I had never heard of a spectrogram and had just learned about the Fourier transform and its uses. Funnily enough, when I was trying to use the Fourier transform to determine the frequency of the signal at a certain time, I had the idea to take a "rolling Fourier transform," which is exactly what the spectrogram is. I "independently discovered" the spectrogram and made a crude interpretation of it in Python. After following some Dr. Brunton's lecture series (in the [resources](#resources)) and I learned about the spectrogram, I decided to endeavor to rewrite my script for fun, implementing my newfound tools to improve it and then give the improved version to my friend over in the Wear Laboratory. 
 
+## Interesting Concepts
+
+### Short-Time Fourier Transform
+The Short-Time Fourier Transform is a signal processing technique used to analyze the frequency content of a signal over time. Unlike the traditional Fourier Transform, which provides information about the entire duration of a signal, STFT breaks the signal into short, overlapping time segments and performs a Fourier Transform on each segment. This allows for a more detailed examination of how the frequency components of a signal change over time, making STFT particularly useful in applications such as audio signal processing and time-frequency analysis.
+
+### Uncertainty Principle
+The Uncertainty Principle is a fundamental concept in quantum mechanics, formulated by Werner Heisenberg. It states that certain pairs of physical properties (such as position and momentum) cannot both be precisely measured simultaneously. The more accurately one property is known, the less accurately the other can be known. This principle challenges the classical notion of absolute precision in measurements and introduces a fundamental limit to the predictability of particle behavior at the quantum level.
+
+When considering the Uncertainty Principle in the context of the Short-Time Fourier Transform (STFT), it's helpful to explore how this principle manifests as temporal and spectral uncertainty in the analysis of signals.
+
+#### Temporal Uncertainty:
+The Uncertainty Principle, as applied to the temporal domain in the context of STFT, implies that there is a fundamental limit to how precisely we can simultaneously determine the time and frequency characteristics of a signal. When using STFT, the trade-off between time and frequency resolution becomes apparent. This trade-off is a result of the windowing process inherent in STFT.
+
+**Short Time Windows:** Using shorter time windows in the STFT improves temporal resolution by capturing rapid changes in the signal. However, this comes at the cost of frequency resolution. Short windows are less effective in accurately identifying the frequency content of signals with longer durations or those that change more slowly over time.
+
+**Long Time Windows:** Conversely, using longer time windows enhances frequency resolution but diminishes temporal resolution. Longer windows are better suited for capturing the frequency components of slowly varying signals but might miss the nuances of rapidly changing portions.
+
+#### Spectral Uncertainty:
+The Uncertainty Principle also manifests as spectral uncertainty when performing STFT.
+
+**Narrow Frequency Windows:** Employing narrow frequency windows in STFT improves frequency specificity, enabling the detection of signals with precise frequency components. However, this increases uncertainty in the time domain. Narrow windows might not capture the dynamics of signal changes occurring within each window.
+
+**Wide Frequency Windows:** On the other hand, wider frequency windows enhance temporal coherence by encompassing a broader range of frequencies. Nevertheless, this approach sacrifices frequency precision, making it challenging to pinpoint the exact frequencies present in the signal.
+
+In summary, the Uncertainty Principle introduces a fundamental constraint on the joint precision of time and frequency measurements in signal analysis. This principle influences the design choices made when configuring the parameters of the STFT, such as the choice of window size and overlap. Striking a balance between time and frequency resolutions is crucial to effectively extract meaningful information from signals while acknowledging the inherent limitations imposed by the Uncertainty Principle.
+
+### DBSCAN Clustering
+
+### Polars Lazy Execution
+
+
+
 # Python Libraries
 
 ## Numpy
@@ -98,7 +130,6 @@ fig.add_trace(
         showlegend=True
     ),
 )
-pbar.update(1)
 fig.show(renderer="browser")
 {% endhighlight %}
 
@@ -115,7 +146,6 @@ fig.add_trace(
         showlegend=True
     ),
 )
-pbar.update(1)
 fig.show(renderer="browser")
 {% endhighlight %}
 
