@@ -12,7 +12,7 @@ author: Corrado R. Mazzarelli
 {: .box-success}
 All the material used to create this is within the GitHub repository linked above. I strongly encourage you to explore the [resources](#resources) linked below. They have guided me on my data science journey and it is truly some remarkable information, all available for free. This article will be written with the assumption that you are familiar with Python, and have watched the reference videos on the discrete Fourier transform 
 
-# Concept
+# Summary
 While working at GE, I did my best to seek out fun data science projects to sate intellectual curiosity. Two years ago, someone approached me and asked if there was a way to cluster periodic data based on its frequency. The goal was to turn a plot of data that looked like this:
 
 {% include bp.spectrography/initial_data.html %}
@@ -22,7 +22,23 @@ into this
 {% include bp.spectrography/clustered_data.html %}
 
 {: .box-note}
-**Note:** If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as html files.
+**Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as html files.
+
+I did this by transforming the data into the frequency domain where high and low frequencies could easily be seen using the short-time-Fourier-transform, which essentially takes the normal Fourier transform but on a rolling window, thus trading temporal certainty for spectral certainty. That spectrogram looked like this
+
+{% include bp.spectrography/spectrogram.html %}
+
+This plot shows the energy in each frequency at a given time. From here, the dominant frequencies were drawn out by simply finding the frequency with the most energy (the most yellow on the plot) at a certain time, and plotted. 
+
+{% include bp.spectrography/dominant_frequency_plot.html %}
+
+It would be simple to draw a line to separate out the high frequency from the low frequency data; however, that would neglect the temporal separation of the different sections of data. Thus, DBSCAN clustering was used to temporally and spectrally cluster the data.
+
+{% include bp.spectrography/clustered_dominant_frqeuencies.html %}
+
+Once the hyperparameters were tuned, the DBSCAN algorithm did an excellent job segmenting the data into different clusters. The identified clusters were then mapped onto the original data, and the final plot shown above was created.
+
+# Introduction
 
 ## Context
 I'm not going to go too in depth here regarding what testing GE was doing. However, the data was from a wear test rig where different samples of material were rubbed against each other and properties such as load and displacement were recorded. This data could be used to help describe material properties to let engineers predict the life of different gas turbine components. In this case, there were low-frequency, high-amplitude sections of the data interspersed between high-frequency, low-amplitude sections. If you need a refresher on those, [check this out](https://www.mathsisfun.com/algebra/amplitude-period-frequency-phase-shift.html). 
@@ -54,6 +70,54 @@ Beloved to machine learning enthusiasts everywhere [scikit-learn](https://scikit
 [Tqdm](https://tqdm.github.io/) is just a progress bar library. I like to use it to let me know how long my scripts are taking. 
 
 **Note:** An environment.yml file is included in the GitHub repository to allow you to recreate a functional Anaconda environment.
+
+# Methodology
+
+## Generate Data
+First we have to generate some representative data. I did this using numpy to generate a few different sinusoids with the desired frequencies and amplitudes and then save that data as a .csv. The original data is the first plot shown above. If you want more data, check out `generate_example_data.py` in the repo.
+
+## Load the Data
+Now, we use Polars to load the data, using their pl.scan_csv() functionality. This lazily scans a CSV so that only the required data is read from the file when you finally instruct Polars to actually load the file. In this case, we didn't really have to lazily scan the .csv, but that is vestigial from the real data implementation. 
+
+{% highlight javascript linenos %}
+df = pl.scan_csv(files, try_parse_dates=True).collect()
+{% endhighlight %}
+
+## Plot the Original Data
+
+### Plotly
+In this case, we used vanilla Plotly to create a plot of the original data since there weren't too many data points. 
+
+{% highlight javascript linenos %}
+fig = go.Figure()
+fig.add_trace(
+    go.Scattergl(
+        x=x,
+        y=y,
+        name='Vertical Displacement',
+        showlegend=True
+    ),
+)
+pbar.update(1)
+fig.show(renderer="browser")
+{% endhighlight %}
+
+### Plotly Resampler
+If there was a lot of data generated, we would have to use 
+
+{% highlight javascript linenos %}
+fig = go.Figure()
+fig.add_trace(
+    go.Scattergl(
+        x=x,
+        y=y,
+        name='Vertical Displacement',
+        showlegend=True
+    ),
+)
+pbar.update(1)
+fig.show(renderer="browser")
+{% endhighlight %}
 
 ## Here is a secondary heading
 
@@ -96,12 +160,7 @@ foo(3)
 
 And here is the same code yet again but with line numbers:
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
+
 
 ## Boxes
 You can add notification, warning and error boxes like this:
