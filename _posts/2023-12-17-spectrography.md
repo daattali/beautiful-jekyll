@@ -107,7 +107,7 @@ First we have to generate some representative data. I did this using numpy to ge
 ## Load the Data
 Now, we use Polars to load the data, using their pl.scan_csv() functionality. This lazily scans a CSV so that only the required data is read from the file when you finally instruct Polars to actually load the file. In this case, we didn't really have to lazily scan the .csv, but that is vestigial from the real data implementation. 
 
-{% highlight javascript linenos %}
+{% highlight python linenos %}
 df = pl.scan_csv(files, try_parse_dates=True).collect()
 {% endhighlight %}
 
@@ -116,7 +116,7 @@ df = pl.scan_csv(files, try_parse_dates=True).collect()
 ### Plotly
 In this case, we used vanilla Plotly to create a plot of the original data since there weren't too many data points. 
 
-{% highlight javascript linenos %}
+{% highlight python linenos %}
 fig = go.Figure()
 fig.add_trace(
     go.Scattergl(
@@ -132,7 +132,7 @@ fig.show(renderer="browser")
 ### Plotly Resampler
 If there was a lot of data generated, we would have to use 
 
-{% highlight javascript linenos %}
+{% highlight python linenos %}
 fig = go.Figure()
 fig.add_trace(
     go.Scattergl(
@@ -148,7 +148,7 @@ fig.show(renderer="browser")
 ## Take the STFT
 There are several inputs to the STFT. The most important of which are the window type, the window size, and the window overlap. I left the window type as the default value provided by scipy, but the window type and the window size were carefully selected to achieve a desired level of temporal accuracy which was specified as an input. The temporal resolution (in seconds) says how many seconds pass between each point that the STFT samples the frequency. Thus, any changes in frequency that happen faster than the temporal resolution will not be detected. It was important to maintain the temporal resolution below the rate at which the data changed from low frequency to high frequency. Per the Uncertainty Principle, the temporal resolution is a trade-off of spectral resolution, so increasing the temporal resolution would lower the spectral resolution, possibly to the point of losing the ability to distinguish between the sections of the signal.
 
-{% highlight javascript linenos %}
+{% highlight python linenos %}
 # First determine the sampling frequency (fs)
 # Convert to float by dividing a time delta by another TD
 fs = datetime.timedelta(seconds=1) / (df[time_col].gather([1])[0] - df[time_col].gather([0])[0])
