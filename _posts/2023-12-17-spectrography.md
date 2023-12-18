@@ -1,12 +1,12 @@
 ---
 layout: post
-title: New Title
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
+title: Fourier Time Series Analysis In Python
+subtitle: Data Segmentation with the Spectrogram and DBSCAN Clustering
+gh-repo: cormazz/spectrography
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
-author: Bill Smith
+author: Corrado R. Mazzarelli
 ---
 
 {: .box-success}
