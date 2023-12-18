@@ -2,9 +2,9 @@
 layout: post
 title: Dance DJ Assistant
 subtitle: Organizing Playlists with Python
-gh-repo: none
+gh-repo: cormazz/dancedjassistant
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [spotify, spotipy, assignment-problem]
 comments: true
 author: Corrado R. Mazzarelli
 ---
