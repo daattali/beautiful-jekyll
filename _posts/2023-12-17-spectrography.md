@@ -13,7 +13,7 @@ author: Corrado R. Mazzarelli
 This article explores separating parts of a signal based on the dominant frequency in that part of the signal. All the material used to create this is within the GitHub repository linked above. **I strongly encourage you to explore the [resources](#resources) linked below.** They have guided me on my engineering journey and it is truly some remarkable information, all available for free. This article will be written with the assumption that you are familiar with Python, and have watched the reference videos on the discrete Fourier transform, the short-time-Fourier-transform, and clustering algorithms. 
 
 # Summary
-While working at GE, I did my best to seek out fun data science projects to sate intellectual curiosity. Two years ago, someone approached me and asked if there was a way to cluster periodic data based on its frequency. The goal was to turn a plot of data that looked like this:
+While working at GE, I did my best to seek out fun data science projects to sate intellectual curiosity. Two years ago, someone approached me and asked if there was a way to cluster periodic data based on its frequency. The goal was to take a plot of data that looked like this:
 
 {% include bp.spectrography/initial_data.html %}
 
@@ -73,6 +73,14 @@ DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a cluste
 ### Polars Lazy Execution
 Polars is a data manipulation library in the Rust programming language that introduces the concept of lazy execution. Lazy execution delays the actual computation until the result is explicitly needed, optimizing performance by avoiding unnecessary calculations. Polars allows users to build a sequence of transformations on large datasets without immediately computing the results. This can be advantageous when working with big data, as it enables more efficient resource utilization and can lead to faster overall processing times when the final results are requested.
 
+### Aliasing
+Aliasing is a phenomenon in signal processing and digital signal analysis where a signal's true characteristics become distorted or misrepresented due to undersampling or inadequate sampling rates. This occurs when a signal contains frequencies higher than half of the sampling rate (the Nyquist frequency), leading to the misinterpretation of these high-frequency components as lower frequencies.
+
+In the context of digital signal processing, aliasing can result in the creation of false, lower-frequency components that were not present in the original signal. This phenomenon is commonly observed when a signal is improperly sampled or when its frequency content exceeds the Nyquist limit, causing the sampled signal to "fold" back into lower frequencies.
+
+Aliasing can introduce errors and artifacts in various applications, including audio processing, image processing, and data acquisition. To mitigate aliasing, it is essential to adhere to proper sampling practices, ensuring that the sampling frequency is sufficiently high to accurately represent the signal's frequency content without introducing distortions. Anti-aliasing filters are often employed to remove high-frequency components before sampling, preventing aliasing and preserving the fidelity of the original signal during digitization. 
+
+In this case, zoom in on the high frequency portion of the data. You'll notice until you get really, really close, the data does not look like a proper sine wave. This is because when you are zoomed out, you're witnessing the effects of aliasing and the data appears to be a different frequency than it really is. 
 
 # Python Libraries
 
