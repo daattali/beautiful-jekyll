@@ -4,7 +4,7 @@ title: Fourier Time Series Analysis In Python
 subtitle: Data Segmentation with the Spectrogram and DBSCAN Clustering
 gh-repo: cormazz/spectrography
 gh-badge: [star, fork, follow]
-tags: [machine-learning, python, ]
+tags: [machine-learning, python, clustering, dbscan, spectrogram]
 comments: true
 author: Corrado R. Mazzarelli
 ---
@@ -41,7 +41,7 @@ Once the hyperparameters were tuned, the DBSCAN algorithm did an excellent job s
 # Introduction
 
 ## Context
-I'm not going to go too in depth here regarding what testing GE was doing. However, the data was from a wear test rig where different samples of material were rubbed against each other and properties such as load and displacement were recorded. This data could be used to help describe material properties to let engineers predict the life of different gas turbine components. In this case, there were low-frequency, high-amplitude sections of the data interspersed between high-frequency, low-amplitude sections. If you need a refresher on those, [check this out](https://www.mathsisfun.com/algebra/amplitude-period-frequency-phase-shift.html). 
+I'm not going to go too in depth here regarding what testing GE was doing. However, the data was from a wear test rig where different samples of material were rubbed against each other and properties such as load and displacement were recorded. This data could be used to help describe material properties to let engineers predict the life of different gas turbine components. In this case, there were low-frequency, high-amplitude sections of the data interspersed between high-frequency, low-amplitude sections. 
 
 ## Personal History and Motivation
 When I first wrote the script for GE 2 years ago, I had never heard of a spectrogram and had just learned about the Fourier transform and its uses. Funnily enough, when I was trying to use the Fourier transform to determine the frequency of the signal at a certain time, I had the idea to take a "rolling Fourier transform," which is exactly what the spectrogram is. I "independently discovered" the spectrogram and made a crude interpretation of it in Python. After following some Dr. Brunton's lecture series (in the [resources](#resources)) and I learned about the spectrogram, I decided to endeavor to rewrite my script for fun, implementing my newfound tools to improve it and then give the improved version to my friend over in the Wear Laboratory. 
