@@ -4,7 +4,7 @@ title: Fourier Time Series Analysis In Python
 subtitle: Data Segmentation with the STFT and DBSCAN Clustering
 gh-repo: cormazz/spectrography
 gh-badge: [star, fork, follow]
-tags: [machine-learning, python, clustering, dbscan, spectrogram]
+tags: [machine-learning, python, clustering, dbscan, spectrogram, stft, ]
 comments: true
 author: Corrado R. Mazzarelli
 ---
