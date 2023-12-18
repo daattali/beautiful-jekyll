@@ -17,9 +17,7 @@ While working at GE, I did my best to seek out fun data science projects to sate
 
 {% include bp.spectrography/initial_data.html %}
 
-into this
-
-{% include bp.spectrography/clustered_data.html %}
+and label the different sections.
 
 {: .box-note}
 **Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as html files.
