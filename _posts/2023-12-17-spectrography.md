@@ -17,10 +17,7 @@ While working at GE, I did my best to seek out fun data science projects to sate
 
 {% include bp.spectrography/initial_data.html %}
 
-and label the different sections.
-
-{: .box-note}
-**Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as html files.
+and label the different sections based on their frequencies. 
 
 I did this by transforming the data into the frequency domain where high and low frequencies could easily be seen using the short-time-Fourier-transform, which essentially takes the normal Fourier transform but on a rolling window, thus trading temporal certainty for spectral certainty. That spectrogram looked like this:
 
@@ -37,6 +34,9 @@ It would be simple to draw a line to separate out the high frequency from the lo
 Once the hyperparameters were tuned, the DBSCAN algorithm did an excellent job segmenting the data into different clusters. The identified clusters were then mapped onto the original data, and the final plot was created.
 
 {% include bp.spectrography/clustered_data.html %}
+
+{: .box-note}
+**Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as html files.
 
 In conclusion, this project demonstrated the synergy between signal processing techniques like STFT, frequency analysis, and clustering algorithms like DBSCAN. By combining these methods, I successfully transformed and clustered periodic data, providing a comprehensive and insightful representation of the underlying patterns in the original time series.
 
@@ -58,19 +58,12 @@ The Uncertainty Principle is a fundamental concept in quantum mechanics, formula
 
 When considering the Uncertainty Principle in the context of the Short-Time Fourier Transform (STFT), it's helpful to explore how this principle manifests as temporal and spectral uncertainty in the analysis of signals.
 
-#### Temporal Uncertainty:
-The Uncertainty Principle, as applied to the temporal domain in the context of STFT, implies that there is a fundamental limit to how precisely we can simultaneously determine the time and frequency characteristics of a signal. When using STFT, the trade-off between time and frequency resolution becomes apparent. This trade-off is a result of the windowing process inherent in STFT.
-
 **Short Time Windows:** Using shorter time windows in the STFT improves temporal resolution by capturing rapid changes in the signal. However, this comes at the cost of frequency resolution. Short windows are less effective in accurately identifying the frequency content of signals with longer durations or those that change more slowly over time.
 
-**Long Time Windows:** Conversely, using longer time windows enhances frequency resolution but diminishes temporal resolution. Longer windows are better suited for capturing the frequency components of slowly varying signals but might miss the nuances of rapidly changing portions.
+**Long Time Windows:** Conversely, using longer time windows enhances frequency resolution but diminishes temporal resolution. Longer windows are better suited for capturing the frequency components of slowly varying signals but might miss the nuances of rapidly changing parts of the signal (ie, exactly when the signal switches from low frequency to high frequency)
 
-#### Spectral Uncertainty:
-The Uncertainty Principle also manifests as spectral uncertainty when performing STFT.
-
-**Narrow Frequency Windows:** Employing narrow frequency windows in STFT improves frequency specificity, enabling the detection of signals with precise frequency components. However, this increases uncertainty in the time domain. Narrow windows might not capture the dynamics of signal changes occurring within each window.
-
-**Wide Frequency Windows:** On the other hand, wider frequency windows enhance temporal coherence by encompassing a broader range of frequencies. Nevertheless, this approach sacrifices frequency precision, making it challenging to pinpoint the exact frequencies present in the signal.
+#### Effects
+The Uncertainty Principle manifests itself in two places. First, if you zoom in on the final identified clusters plot at a transition between low and high frequency, you will notice a small portion of the signal misidentified as noise. This is because there is not enough temporal accuracy to determine when exactly the signal switches between frequencies. Second, if you look at the legend of the final plot, the frequencies of the different clusters are identified as 1.17 Hz and 30.51 Hz. The actual frequencies area 0.05 Hz and 30 Hz. This is an artifact of the spectral uncertainty that we incurred when we gained temporal certainty. 
 
 In summary, the Uncertainty Principle introduces a fundamental constraint on the joint precision of time and frequency measurements in signal analysis. This principle influences the design choices made when configuring the parameters of the STFT, such as the choice of window size and overlap. Striking a balance between time and frequency resolutions is crucial to effectively extract meaningful information from signals while acknowledging the inherent limitations imposed by the Uncertainty Principle.
 
