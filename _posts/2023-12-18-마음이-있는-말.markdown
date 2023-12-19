@@ -1,6 +1,13 @@
 ---
 title: 마음이 있는 말
-layout: default
+layout: post #default
+title: 2023년 12월 첫번째 글
+subtitle: 오랜만에 만나서 얻는 통찰!
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [test]
+comments: true
+author: 잠자리
 ---
 
 # "마음이 있어요. 말만 그런게 아니라."
