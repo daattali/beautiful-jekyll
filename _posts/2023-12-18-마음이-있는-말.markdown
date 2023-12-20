@@ -22,3 +22,5 @@ _layout:{{ page.layout }}_
 차리고 살아야 참 되게 살겠구나.
 
 #참말 #속인말 #거짓말 #아무말 #빈말 #허튼말
+
+{{ include footer.html }}
