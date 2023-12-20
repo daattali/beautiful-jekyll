@@ -1,5 +1,5 @@
 ---
-title: 마음이 있는 말
+title: 마음이 있는 말 {page.layout}
 layout: post #default
 title: 2023년 12월 첫번째 글
 subtitle: 오랜만에 만나서 얻는 통찰!
