@@ -193,8 +193,15 @@ footer-hover-col: "#0085A1"
 # disqus: "jwsheen2-github-io"
 
 # To use **Facebook Comments**, create a Facebook app and fill in the Facebook App ID
-fb_comment_id: "jumysheen"
+# fb_comment_id:  "jumysheen"
 
+comments:
+	provider : "facebook"
+	facebook:
+		appid : 4609846799055590
+		num_posts : # 5 (default)
+		colorscheme : # "light" (default), "dark"
+    
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
 #commentbox: "" # Project ID, e.g. "5694267682979840-proj"
 
@@ -246,7 +253,7 @@ fb_comment_id: "jumysheen"
 date_format: "%B %-d, %Y"
 
 # Facebook App ID
-fb_app_id: "jumysheen"
+fb_app_id: 4609846799055590 #"jumysheen" 
 
 #################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #
