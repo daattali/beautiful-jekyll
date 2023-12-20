@@ -1,7 +1,7 @@
 ---
 title: 마음에 있는 말 
 layout: post
-subtitle: 오랜만에 만나보고 나서 뒤따라 오는 생각
+subtitle: 오랜만에 지인을 만난 후 드는 생각
 gh-repo: jwsheen2/jwsheen2.github.io
 # gh-badge: [star, fork, follow]
 tags: [daily]
