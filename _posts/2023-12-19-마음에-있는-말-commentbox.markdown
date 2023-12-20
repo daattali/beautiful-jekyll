@@ -1,7 +1,7 @@
 ---
 title: 마음에 있는 말 
 layout: post
-subtitle: 오랜만에 만나서 얻는 통찰!
+subtitle: 오랜만에 만나보고 나서 뒤따라 오는 생각
 gh-repo: jwsheen2/jwsheen2.github.io
 # gh-badge: [star, fork, follow]
 tags: [daily]
@@ -24,7 +24,7 @@ _layout:{{ page.layout }}_
 #참말 #속인말 #거짓말 #아무말 #빈말 #허튼말
 
 <!-- begin wwww.htmlcommentbox.com -->
- <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment</a> is loading comments...</div>
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">JWSheen2</a> is loading comments...</div>
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
  <script type="text/javascript" id="hcb"> 
  /*<!--*/ 
