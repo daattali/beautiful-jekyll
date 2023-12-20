@@ -1,7 +1,7 @@
 ---
 title: 마음이 있는 말 {page.layout}
 layout: post #default
-title: 2023년 12월 첫번째 글
+# title: 2023년 12월 첫번째 글
 subtitle: 오랜만에 만나서 얻는 통찰!
 # gh-repo: jwsheen2/jwsheen2.github.io
 # gh-badge: [star, fork, follow]
