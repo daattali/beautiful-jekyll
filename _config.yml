@@ -60,7 +60,7 @@ social-network-links:
   # youtube: "@daattali"
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+ linkedin: jaewoong-shin
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -83,7 +83,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
 # --- General options --- #
@@ -198,6 +198,7 @@ footer-hover-col: "#0085A1"
     
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
 #commentbox: "" # Project ID, e.g. "5694267682979840-proj"
+commentbox: "5706743287906304-proj" 
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,
@@ -254,7 +255,7 @@ fb_app_id: 4609846799055590 #"jumysheen"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Asia/Seoul"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
