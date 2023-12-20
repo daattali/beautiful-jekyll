@@ -3,9 +3,9 @@ title: 마음이 있는 말
 layout: post #default
 title: 2023년 12월 첫번째 글
 subtitle: 오랜만에 만나서 얻는 통찰!
-gh-repo: daattali/beautiful-jekyll
+gh-repo: jwsheen2/jwsheen2.github.io
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [daily]
 comments: true
 author: 잠자리
 ---
