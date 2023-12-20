@@ -189,10 +189,10 @@ footer-hover-col: "#0085A1"
 # --- Comments --- #
 ####################
 
-# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-disqus: "jwsheen2-github-io"
+# To use **Disqus comments**, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
+# disqus: "jwsheen2-github-io"
 
-# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
+# To use **Facebook Comments**, create a Facebook app and fill in the Facebook App ID
 fb_comment_id: "jumysheen"
 
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
