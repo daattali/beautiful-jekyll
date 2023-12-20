@@ -1,6 +1,6 @@
 ---
 title: 마음에 있는 말 
-layout: base
+layout: post
 subtitle: 오랜만에 만나서 얻는 통찰!
 gh-repo: jwsheen2/jwsheen2.github.io
 # gh-badge: [star, fork, follow]
@@ -30,8 +30,8 @@ _layout:{{ page.layout }}_
  /*<!--*/ 
  if(!window.hcb_user){hcb_user={};} (
     function(){
-        // var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";
-        var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://jwsheen2.github.io";
+        var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";
+        // var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://jwsheen2.github.io";
         s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24vWlypRhEeCl4fBxZBzlSz."+"&opts=16798&num=10&ts=1703048411143");
         if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);
     }
