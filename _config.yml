@@ -194,13 +194,7 @@ footer-hover-col: "#0085A1"
 
 # To use **Facebook Comments**, create a Facebook app and fill in the Facebook App ID
 # fb_comment_id:  "jumysheen"
-
-comments:
-	provider : "facebook"
-	facebook:
-		appid : 4609846799055590
-		num_posts : # 5 (default)
-		colorscheme : # "light" (default), "dark"
+fb_comment_id:  4609846799055590
     
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
 #commentbox: "" # Project ID, e.g. "5694267682979840-proj"
