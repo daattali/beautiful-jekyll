@@ -1,0 +1,14 @@
+---
+title: 드립커피 내리는 방법
+layout: post #default
+subtitle: 명동 토박이 나떼조아 버전 드립커피 맛있게 내리는 강좌 기본 1
+gh-repo: jwsheen2/jwsheen2.github.io
+# gh-badge: [star, fork, follow]
+tags: [daily]
+comments: true
+author: 잠자리
+---
+
+# 커피는 자연에서 채굴한 힐링차입니다.
+https://youtu.be/dDt7Ttz9wIo
+<iframe width="840" height="480" src="https://www.youtube.com/embed/dDt7Ttz9wIo" title="드립커피 내리는 방법" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
