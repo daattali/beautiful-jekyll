@@ -1,0 +1,29 @@
+---
+layout:  default #blog #post #list
+title: Youtube에 주먹눈 펑펑 동영상 올리기
+---
+# 눈오는 날 동영상에 남기고
+==휴대폰 동영상 촬영==으로 장면을 남겼다
+
+# Youtube `채널`` 동영상 올리기 
+* video_ID : **BR2LkyvSykI**
+    - youtube에 동영상을 올리면 자동 생성되는 ID
+* URL: [https://youtu.be/BR2LkyvSykI](https://youtu.be/BR2LkyvSykI)
+
+### #1 Youtube 채널 제공하는 resource 사용(image,url) 
+image : https://img.youtube.com/vi/**{your video_ID}**/**{default.jpg |hqdefault.jpg |mqdefault.jpg}**
+video : https://youtu.be/**{your video_ID}**
+
+`[![주먹눈이 펑펑](https://img.youtube.com/vi/BR2LkyvSykI/mqdefault.jpg)](https://youtu.be/BR2LkyvSykI)`
+
+[![주먹눈이 펑펑](https://img.youtube.com/vi/BR2LkyvSykI/mqdefault.jpg)](https://youtu.be/BR2LkyvSykI "주먹눈이 펑펑 - Click to Watch!")
+
+`[![주먹눈이 펑펑](https://img.youtube.com/vi/BR2LkyvSykI/mqdefault.jpg)](https://www.youtube.com/embed/BR2LkyvSykI)`
+
+[![주먹눈이 펑펑](https://img.youtube.com/vi/BR2LkyvSykI/mqdefault.jpg)](https://www.youtube.com/embed/BR2LkyvSykI "주먹눈이 펑펑 - Click to Watch!")
+
+### #2 iframe으로 동영상 가두기 (화면 비율 16:9)
+
+`<iframe width="840" height="480" src="https://www.youtube.com/embed/BR2LkyvSykI" title="주먹눈이 날리네" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/BR2LkyvSykI" title="주먹눈이 날리네" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
