@@ -9,6 +9,7 @@ comments: true
 author: 잠자리
 ---
 
-![](/assets/img/말씀DST.jpg){ :width="600px" }  
+# '녀겨서 말하는 임자' Domain Story Telling 
+![](/assets/img/말씀DST.jpg){:width="600px"}  
 
 [한국말 말차림법, 최봉영] 책을 읽으며 '말 차림'을 익히고 있다.  
