@@ -245,7 +245,7 @@ Note, that we also zoomed the data in within the frequency realm. Since our data
 Next we'll identify the dominant frequency from the spectrogram. If you recall the spectrogram diagram above, that is the portion of the spectrogram with the most energy, which was the most yellow.
 
 {% highlight python linenos %}
-#dominant_frequencies = f[np.argmax(Sxx, axis=0)]
+dominant_frequencies = f[np.argmax(Sxx, axis=0)]
 {% endhighlight %}
 
 ## Temporally Cluster the Dominant Frequencies
