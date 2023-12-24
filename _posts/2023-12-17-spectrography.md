@@ -10,7 +10,7 @@ author: Corrado R. Mazzarelli
 ---
 
 {: .box-success}
-This article explores separating parts of a signal based on the dominant frequency in that part of the signal. All the material used to create this is within the GitHub repository linked above. **I strongly encourage you to explore the [resources](#resources) linked below.** They have guided me on my engineering journey and it is truly some remarkable information, all available for free. This article will be written with the assumption that you are familiar with Python, and have watched the reference videos on the discrete Fourier transform, the short-time-Fourier-transform, and clustering algorithms. 
+This article explores separating parts of a signal based on the dominant frequency in that part of the signal. All the material used to create this is within the GitHub repository linked above. **I strongly encourage you to explore the [resources](#resources) linked below.** They have guided me on my engineering journey and it is truly some remarkable information, all available for free. This article will be written with the assumption that you are familiar with Python, and have watched the reference videos on the discrete Fourier transform, the fast Fourier transform, the Uncertainty Principle, and clustering algorithms. 
 
 * Do not remove this line (it will not be displayed)
 {:toc}
@@ -103,7 +103,7 @@ Beloved to machine learning enthusiasts everywhere, [scikit-learn](https://sciki
 [Plotly](https://plotly.com/python/) is a widely used plotting library which enables easy interactive plots which can be saved as interactive. They are the plots you'll see embedded here.
 
 ## Plotly-Resampler
-[Plotly-resampler](https://github.com/predict-idlab/plotly-resampler) is a Python library that utilizes Dash to create a dynamically updating Plotly chart that only displays a limited number of data points to ensure the plot doesn't become bloated and slow. This was very useful for the GE implementation, since there were about a billion data points to plot. A limitation of plotly-resampler is that it requires an actively running Python kernel, so the plots cannot be saved as interactive.
+[Plotly-resampler](https://github.com/predict-idlab/plotly-resampler) is a Python library that utilizes Dash to create a dynamically updating Plotly chart that only displays a limited number of data points to ensure the plot doesn't become bloated and slow. This was very useful for the GE implementation, since there were about a billion data points to plot. A limitation of plotly-resampler is that it requires an active Python kernel, so the plots cannot be saved as interactive.
 
 ## Tqdm
 [Tqdm](https://tqdm.github.io/) is just a progress bar library. I like to use it to let me know how long my scripts are taking. 
@@ -114,10 +114,68 @@ Beloved to machine learning enthusiasts everywhere, [scikit-learn](https://sciki
 # Code Implementation
 
 ## Generate Data
-First we have to generate some representative data. I did this using numpy to generate a few different sinusoids with the desired frequencies and amplitudes and then save that data as a .csv. The original data is the first plot shown above. If you want more data, check out `generate_example_data.py` in the repo.
+First we have to generate some representative data. I did this using numpy to generate a few different sinusoids with the desired frequencies and amplitudes and then save that data as a .csv. The original data is the first plot shown above. If you want more data, check out `generate_example_data.py` in the repo. The important things to note from this section of code is that our sampling frequency is 149 Hz, our low frequency data is 0.05 Hz, and the high frequency data is 30 Hz.
+
+{% highlight python linenos %}
+    # Define properties for each section: 
+    section_properties = [
+        
+        # (num_cycles, amplitude, frequency, noise_percentage)
+    
+        (5, 0.01, 1, 10),  # Noisy filler data
+        (3, 50, 0.05, 0.01),  # Num cycles, high amplitude, low frequency, 1% Gaussian noise
+        (3, 0.01, 1, 10),  # Noisy filler data
+        (10000, 0.5, 30, 0.02),   # Num cycles, low amplitude, high frequency, 2% Gaussian noise
+        (3, 0.01, 1, 10),  # Noisy filler data
+        (5, 50, 0.05, 0.01),  # Num cycles, high amplitude, low frequency, 1% Gaussian noise
+        (20000, 0.5, 30, 0.02),   # Num cycles, low amplitude, high frequency, 2% Gaussian noise
+        (7, 50, 0.05, 0.01),  # Num cycles, high amplitude, low frequency, 1% Gaussian noise
+        (5, 0.01, 1, 10),  # Noisy filler data
+    ]
+    
+    # Set the sampling frequency
+    sampling_frequency = 149
+{% endhighlight %}
+
+## Define Inputs
+
+Here we define some inputs, like the folder to look for the data in and what the different column names are. The important items to note here are the frequency ranges that we specify, and the temporal resolution. The frequency ranges are where we are looking to determine if a frequency is low, high, or anywhere in between that we specify. This is a good example of using generic configuration and structuring your code to read the configuration. When I wrote the original version two years ago, the code could only determine two frequencies, high and low. Now, all we have to do is add another element to this list and the script can label that frequency range as well. The second thing is the temporal resolution. Again, that is how fast we can see changes in frequency. In this case, we can determine if the frequency changes every 0.75 seconds. 
+
+{% highlight python linenos %}
+plot_original_data = True  # Plot the original data using Plotly resampler
+debug_plots = True  # Plot optional plots to see what the script is doing behind the scenes
+plot_all_clusters = True  # Plot the final results
+
+data_folder = r"."
+files = glob.glob(os.path.join(data_folder, "example_data*.csv")) 
+
+time_col = "Time"  # The column name for the time
+y_col = "Signal"  # The column name for the dependent data to be clustered
+
+
+frequency_ranges = {  # The different frequency ranges to be identified
+    # "name": (min, max) in Hz
+    "Low": (0, 5),
+    "High": (25, 45)
+}
+
+"""
+This is how many seconds we want between times we determine the frequency. The smaller this is, the longer the run time.
+See the note above. 
+"""
+temporal_resolution = 0.75  # seconds
+
+
+"""
+Eps is the greediness of the clustering. Larger eps means larger clusters. Too large and all the data will be one 
+cluster. Too small and all the data will be considered noise. Min samples is the minimum number of points in the 
+spectrogram space (see the dominant frequencies plot in debug mode) for a cluster to be considered a cluster.
+"""
+clustering_parameters = {"eps": 0.17, "min_samples": 50}
+{% endhighlight %}
 
 ## Load the Data
-Now, we use Polars to load the data, using their pl.scan_csv() functionality. This lazily scans a CSV so that only the required data is read from the file when you finally instruct Polars to actually load the file. In this case, we didn't really have to lazily scan the .csv, but that is vestigial from the real data implementation. 
+Now, we use Polars to load the data, using their pl.scan_csv() functionality. This lazily scans a CSV so that only the required data is read from the file when you finally instruct Polars to actually load the file. In this case, we didn't really have to lazily scan the .csv since there wasn't a lot of data and we weren't doing any preprocessing on it, but that is vestigial from the real implementation. 
 
 {% highlight python linenos %}
 df = pl.scan_csv(files, try_parse_dates=True).collect()
@@ -180,8 +238,105 @@ idx = f < max_detection_frequency*1.1
 f, Sxx = f[idx], Sxx[idx, :]
 {% endhighlight %}
 
-## To Be Continued
-It's late and I want to go to bed. I'll finish this another time.
+Note, that we also zoomed the data in within the frequency realm. Since our data was sampled higher than the Nyquist frequency, we were able to resolve frequencies higher than we cared about (since we know our highest frequency is 30 Hz). Thus, to make the spectrogram prettier, we just chopped off those higher frequencies that we didn't care about.
+
+## Identify Dominant Frequencies
+
+Next we'll identify the dominant frequency from the spectrogram. If you recall the spectrogram diagram above, that is the portion of the spectrogram with the most energy, which was the most yellow.
+
+{% highlight python linenos %}
+#dominant_frequencies = f[np.argmax(Sxx, axis=0)]
+{% endhighlight %}
+
+## Temporally Cluster the Dominant Frequencies
+
+Here we use the DBCSAN algorithm to identify the clusters from the dominant frequency plot. We use tqdm to create a progress bar as this runs to see how long it takes. Then we create an Sklearn scaling pipeline to scale our data to have 0 mean and unit variance. This wasn't entirely necessary, and the algorithm worked without it, but it can generally help your machine learning algorithms if the data is properly scaled. 
+
+Once we had the clusters identified, we determined the average frequency of that cluster and stored that information for later. 
+
+{% highlight python linenos %}
+with tqdm(total=1, desc="Temporally Clustering Dominant Frequencies") as pbar:
+    pipeline = make_pipeline(StandardScaler(), DBSCAN(**clustering_parameters))
+    X = np.column_stack((t, dominant_frequencies))  # Cluster with time as a factor
+    cluster_labels = pipeline.fit_predict(X)
+
+    # Identify the cluster frequencies
+    cluster_frequencies = {}
+    for cluster_label in sorted(np.unique(cluster_labels)):
+        cluster_frequency = np.mean(dominant_frequencies[cluster_labels == cluster_label])
+        cluster_frequencies[cluster_label] = cluster_frequency
+
+    # Label the frequency as the correct type
+    cluster_types = {}
+
+    for cluster_label, cluster_frequency in cluster_frequencies.items():
+        if cluster_label == -1:  # -1 is the noise cluster
+            cluster_types[cluster_label] = "Noise"
+        else:
+            # Search for the first frequency range that the cluster frequency falls in and set that as the label
+            for i, (cluster_type, (f_min, f_max)) in enumerate(frequency_ranges.items()):
+                if f_min <= cluster_frequency <= f_max:
+                    cluster_types[cluster_label] = cluster_type
+                    break
+                if i == len(frequency_ranges):
+                    raise ValueError("A frequency was detected that does not fall within the desired frequency ranges.")
+
+    pbar.update(1)
+{% endhighlight %}
+
+## Identify Cluster Start and End Times
+
+We had the data clustered at the temporal resolution of the STFT. Meaning, whereas our original data had a point every 1/149th of a second (inverse of our sampling frequency), the STFT data had a point every 0.75 seconds (the temporal resolution we specified in the beginning). We need to determine the start and end time of each cluster, that way we can go back to the big dataframe of our original data and label the clusters there, since right now we only have the data labeled at the STFT temporal resolution. 
+
+{% highlight python linenos %}
+with tqdm(total=1, desc="Labeling Clusters") as pbar:
+    cluster_times = {}
+    for cluster_label in np.unique(cluster_labels):
+        cluster_time = (t[cluster_labels == cluster_label])
+        cluster_times[cluster_label] = (np.min(cluster_time), np.max(cluster_time))
+{% endhighlight %}
+
+## Label the Original Data
+
+Finally, now that we know what times each cluster starts and ends at, we can go back to the original data and label each point that falls within those clusters. We use the lazy api of Polars since we are looping through the DataFrame once per cluster and we don't want to initiate the calculations until we're done looping. This saves us time by letting Polars optimize the execution behind the scenes. 
+
+{% highlight python linenos %}
+    test_start_time = df[time_col].gather([1])[0]  # Get the start time of the test
+    df = df.lazy()  # Return to lazy execution mode
+    df = df.with_columns(pl.lit(-1).alias("Cluster"))  # Add a cluster label column with the default value of -1
+    df = df.with_columns(pl.lit("Noise").alias("Cluster Type"))
+
+    # Loop over each cluster
+    for cluster_label, (start_time, end_time) in cluster_times.items():
+        # Skip the noise cluster
+        if cluster_label == -1:
+            continue
+        
+        # Start and end time are in seconds, referenced to 0. We want them to be relative to the start of the dataframe
+        # and as datetime objects so that we can add them to the start time
+        cluster_start_time = test_start_time + datetime.timedelta(seconds=start_time)
+        cluster_end_time = test_start_time + datetime.timedelta(seconds=end_time)
+
+        # Label data points within the cluster time range with the cluster label
+        mask = (pl.col(time_col) >= cluster_start_time) & (pl.col(time_col) <= cluster_end_time)
+        df = df.with_columns([
+            pl.when(mask).then(pl.lit(cluster_label)).otherwise(pl.col("Cluster")).alias("Cluster"),
+            pl.when(mask)
+                .then(
+                    pl.lit(cluster_types[cluster_label]))
+                .otherwise(
+                    pl.col("Cluster Type")
+                )
+                .alias("Cluster Type")
+        ])
+
+    df = df.collect()
+    pbar.update(1)
+{% endhighlight %}
+
+# Conclusion
+
+Again, this project demonstrated the synergy between signal processing techniques like STFT, frequency analysis, and clustering algorithms like DBSCAN. By combining these methods, I successfully transformed and clustered periodic data, providing a comprehensive and insightful representation of the underlying patterns in the original time series.
 
 # Resources
 
