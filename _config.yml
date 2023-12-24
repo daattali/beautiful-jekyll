@@ -10,17 +10,17 @@
 ############################
 
 # Name of website
-title: My Website
+title: Welcome to My Website
 
 # Your name to show in the footer
-author: Some Person
+author: Prasanth Kumar
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "about me"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
