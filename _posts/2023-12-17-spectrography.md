@@ -345,6 +345,7 @@ Again, this project demonstrated the synergy between signal processing technique
 
 ## 3Blue1Brown
 Created by mathematician Grant Sanderson, [3Blue1Brown](https://www.3blue1brown.com/) is a youtube channel that creates math visualizations and explanations to help people understand complex concepts.
+
 **Relevant Lectures**
 - [Fourier Series](https://www.youtube.com/watch?v=r6sGWTCMz2k)
 - [Fourier Transform](https://www.youtube.com/watch?v=spUNpyF58BY)
