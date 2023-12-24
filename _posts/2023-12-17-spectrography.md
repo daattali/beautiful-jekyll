@@ -298,7 +298,7 @@ with tqdm(total=1, desc="Labeling Clusters") as pbar:
 
 ## Label the Original Data
 
-Finally, now that we know what times each cluster starts and ends at, we can go back to the original data and label each point that falls within those clusters. We use the lazy api of Polars since we are looping through the DataFrame once per cluster and we don't want to initiate the calculations until we're done looping. This saves us time by letting Polars optimize the execution behind the scenes. 
+Finally, now that we know what times each cluster starts and ends at, we can go back to the original data and label each point that falls within those clusters. We use the lazy API of Polars since we are looping through the DataFrame once per cluster and we don't want to initiate the calculations until we're done looping. This saves us time by letting Polars optimize the execution behind the scenes. 
 
 {% highlight python linenos %}
     test_start_time = df[time_col].gather([1])[0]  # Get the start time of the test
