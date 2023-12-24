@@ -1,0 +1,27 @@
+---
+layout: post
+title: Diamonds EDA Using in R
+subtitle: Excerpt from Soulshaping by Jeff Brown
+cover-img: /assets/img/Diamonds_EDA/EDA_Diamonds.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [books, test]
+author: Sharon Smith and Barry Simpson
+---
+
+
+```{r Chunk Setup, include=FALSE}
+knitr::opts_chunk$set(comment = "", message = FALSE, warning =FALSE)
+```
+
+```{r EDA}
+library(DataExplorer)
+library(tidyverse) # For data, Data Wrangling and Visualization
+
+# Report without a Response Variable
+create_report(diamonds)
+
+# Report with a Response Variable
+create_report(diamonds, y = "price")
+```
+
