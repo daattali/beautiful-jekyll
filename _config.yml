@@ -264,8 +264,7 @@ paginate: 5
 kramdown:
   input: Kramdown
   syntax_highlighter: coderay
-  Options:
-    html_to_native : true
+  html_to_native: true
   # input: GFM
 
 # Default YAML values (more information on Jekyll's site)
