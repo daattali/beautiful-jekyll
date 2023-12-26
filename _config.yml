@@ -265,7 +265,7 @@ kramdown:
   # input: Kramdown
   # syntax_highlighter: coderay
   html_to_native: true
-  # input: GFM
+  input: GFM
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
