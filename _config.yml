@@ -262,8 +262,8 @@ permalink: /:year-:month-:day-:title/
 paginate: 5
 
 kramdown:
-  input: Kramdown
-  syntax_highlighter: coderay
+  # input: Kramdown
+  # syntax_highlighter: coderay
   html_to_native: true
   # input: GFM
 
