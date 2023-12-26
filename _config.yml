@@ -263,6 +263,7 @@ paginate: 5
 
 kramdown:
   input: Kramdown
+  syntax_highlighter: coderay
   # input: GFM
 
 # Default YAML values (more information on Jekyll's site)
