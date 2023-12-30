@@ -13,7 +13,7 @@
 title: Oluwaseun Ajao - AI | LLM | Machine Learning
 
 # Your name to show in the footer
-author: Oluwaseun ajao
+author: Oluwaseun Ajao
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -57,28 +57,28 @@ social-network-links:
   #  twitter: daattali
   #  patreon: DeanAttali
   #  youtube: "@daattali"
-#  medium: yourname
-#  reddit: yourname
+  #  medium: yourname
+  #  reddit: yourname
   linkedin: seunajao
-#  xing: yourname
+  #  xing: yourname
   stackoverflow: "Seun AJAO"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  bluesky: yourname
+  #  snapchat: deanat78
+  #  instagram: deanat78
+  #  spotify: yourname
+  #  telephone: +14159998888
+  #  steam: deanat78
+  #  twitch: yourname
+  #  yelp: yourname
+  #  telegram: yourname
+  #  calendly: yourname
+  #  mastodon: instance.url/@username
+  #  bluesky: yourname
   ORCID: 0000-0002-6606-6569
   google-scholar: https://scholar.google.com/citations?user=XAzESeUAAAAJ&hl=en
-#  discord: "invite_code" or "users/userid" or "invite/invite_code" 
-#  kaggle: yourname
-#  hackerrank: yourname
-#  gitlab: yourname
+  #  discord: "invite_code" or "users/userid" or "invite/invite_code" 
+  #  kaggle: yourname
+  #  hackerrank: yourname
+  #  gitlab: yourname
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
@@ -97,7 +97,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "seunajao.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
