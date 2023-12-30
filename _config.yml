@@ -73,8 +73,8 @@ stackoverflow: "Seun AJAO"
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  bluesky: yourname
-  ORCID: 0000-0002-6606-6569
-#  google-scholar: https://scholar.google.com/citations?user=XAzESeUAAAAJ&hl=en
+ORCID: 0000-0002-6606-6569
+google-scholar: https://scholar.google.com/citations?user=XAzESeUAAAAJ&hl=en
 #  discord: "invite_code" or "users/userid" or "invite/invite_code" 
 #  kaggle: yourname
 #  hackerrank: yourname
@@ -120,7 +120,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "AI, LLM, ML, Machine Learning"
 
 ######################################
 # --- Colours / background image --- #
@@ -252,7 +252,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "United Kingdom/London"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
