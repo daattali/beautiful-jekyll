@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: Oluwaseun Ajao - AI | LLM | Machine Learning
 
 # Your name to show in the footer
-author: Some Person
+author: Oluwaseun ajao
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -22,9 +22,9 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    # - Beautiful Jekyll: "https://beautifuljekyll.com"
+    # - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://www.linkedin.com/in/seunajao/"
 
 ################
 # --- Logo --- #
@@ -50,18 +50,18 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
+  email: "seunclick01@gmail.com"
+  # rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  #  facebook: deanattali
+  github: SeunAjao
+  #  twitter: daattali
+  #  patreon: DeanAttali
+  #  youtube: "@daattali"
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+linkedin: seunajao
 #  xing: yourname
-#  stackoverflow: "3943160/daattali"
+stackoverflow: "Seun AJAO"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  spotify: yourname
@@ -73,8 +73,8 @@ social-network-links:
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  bluesky: yourname
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
+  ORCID: 0000-0002-6606-6569
+#  google-scholar: https://scholar.google.com/citations?user=XAzESeUAAAAJ&hl=en
 #  discord: "invite_code" or "users/userid" or "invite/invite_code" 
 #  kaggle: yourname
 #  hackerrank: yourname
