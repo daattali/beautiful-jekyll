@@ -59,9 +59,9 @@ social-network-links:
   #  youtube: "@daattali"
 #  medium: yourname
 #  reddit: yourname
-linkedin: seunajao
+  linkedin: seunajao
 #  xing: yourname
-stackoverflow: "Seun AJAO"
+  stackoverflow: "Seun AJAO"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  spotify: yourname
@@ -73,8 +73,8 @@ stackoverflow: "Seun AJAO"
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  bluesky: yourname
-ORCID: 0000-0002-6606-6569
-google-scholar: https://scholar.google.com/citations?user=XAzESeUAAAAJ&hl=en
+  ORCID: 0000-0002-6606-6569
+  google-scholar: https://scholar.google.com/citations?user=XAzESeUAAAAJ&hl=en
 #  discord: "invite_code" or "users/userid" or "invite/invite_code" 
 #  kaggle: yourname
 #  hackerrank: yourname
