@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Want to know more?
 ---
 
 My name is Oluwaseun Ajao. You can call me Seun (Sean)
