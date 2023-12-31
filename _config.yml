@@ -25,7 +25,7 @@ navbar-links:
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
     # - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://www.linkedin.com/in/seunajao/"
-  My CV: 
+  My CV: "/assets/Resume-Oluwaseun-Ajao.pdf"
 
 ################
 # --- Logo --- #
