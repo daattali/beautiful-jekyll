@@ -22,7 +22,7 @@ author: Vincent Engel
 navbar-links:
   About Me: "aboutme"
   Projects:
-    - Image Compare Android App: "https://beautifuljekyll.com"
+    - Image Compare Android App: "https://github.com/VincentEngel/VES-Image-Compare"
 
 ################
 # --- Logo --- #
