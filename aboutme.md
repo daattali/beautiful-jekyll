@@ -1,16 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Vincent Engel. I work as a software engineer and do some technical projects in my free time.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+You can find my projects on my [GitHub](https://github.com/VincentEngel)
 
-What else do you need?
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### If you want to get into contact with me, please use my email address from below
