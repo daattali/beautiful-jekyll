@@ -21,10 +21,11 @@ author: Oluwaseun Ajao
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
+  Publications:
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
     # - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://www.linkedin.com/in/seunajao/"
+  My CV: 
 
 ################
 # --- Logo --- #
