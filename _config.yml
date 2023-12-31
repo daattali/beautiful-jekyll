@@ -99,6 +99,9 @@ share-links-active:
 # Remove this if you don't want a link in the footer
 url-pretty: "MyWebsite.com"
 
+# Post header styling - Options: square, wide, none (Default: square)
+post_header_style: square
+
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
 

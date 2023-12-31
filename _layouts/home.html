@@ -54,7 +54,13 @@ layout: page
         Posted on {{ post.date | date: date_format }}
       </p>
 
-      {% if thumbnail != "" %}
+      {% if site.post_header_img == wide %}
+      <div class="">
+         <a href="{{ post.url | absolute_url }}" aria-label="Header">
+            <img src="{{ thumbnail | absolute_url }}" class="post-header-image" alt="Post header">
+         </a>
+      </div>
+      {% elsif site.post_header_img == square %}
       <div class="post-image post-image-small">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
           <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
@@ -63,7 +69,7 @@ layout: page
       {% endif %}
 
       {% unless site.feed_show_excerpt == false %}
-      {% if thumbnail != "" %}
+      {% if thumbnail != "" and site.post_header_img == none %}
       <div class="post-image post-image-short">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
           <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
