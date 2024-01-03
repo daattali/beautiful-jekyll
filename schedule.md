@@ -28,7 +28,7 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 11-Dec	| Work				                	  | [2018 AMC 8](https://artofproblemsolving.com/wiki/index.php/2018_AMC_8)                     | _Cancelled, no topic_  |
 | 18-Dec	| _No School_                    	| _No School_                           | _No School_               |
 | 25-Dec	| _No School_	                		| _No School_                           | _No School_               |
-| 1-Jan		| _No School_ 	                	|                                       |                           |
+| 1-Jan		| _No School_ 	                	| [2023 Mathcounts Chapter Sprint](https://www.mathcounts.org/sites/default/files/2023%20Chapter%20Competition%20Sprint%20Round.pdf)    |                           |
 | 8-Jan		| Circles  		                		|                                       | (Mathcounts School Round) |
 | 15-Jan	| _No School_		                	|                                       | (AMC 8)                   |
 | 22-Jan	| _Cancelled, School Social_      |                                       |                           |
