@@ -1003,6 +1003,7 @@ pre {
   text-align: center;
   padding: 1rem;
 }
+
 #nav-search-exit {
   position: absolute;
   top: 1.5rem;
@@ -1030,6 +1031,10 @@ pre {
   outline: none;
   border: none;
   padding: 0 3rem;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#nav-search-input::-webkit-input-placeholder {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 @media (max-width: 1199px) {
   #nav-search-input {
