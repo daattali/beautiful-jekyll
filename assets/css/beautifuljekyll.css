@@ -1033,9 +1033,7 @@ pre {
   padding: 0 3rem;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-#nav-search-input::-webkit-input-placeholder {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+
 @media (max-width: 1199px) {
   #nav-search-input {
     width: 75%;
@@ -1074,6 +1072,7 @@ pre {
 #search-results-container a {
   color: #fff;
   text-decoration: none;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #search-results-container a:hover {
   color: #fff;
