@@ -20,7 +20,8 @@ First come, first served style OR until the deadline closes on **January 8th**. 
 
 - - -
 
- **Already registered but want to get in on this?** No problem - Registrations can be upgraded with ease!
+ **Already registered but want to get in on this?**\
+No problem - Registrations can be upgraded with ease!
 
 \- Return to your confirmation email.
 
