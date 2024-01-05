@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Poster Terms
-subtitle: About Fur Squared's Poster Registration Tier
+subtitle: About FurSquared's Poster Registration Tier
 ---
 <div align="center">
   <img src="{{ 'uploads/f2-2023-poster-small.jpg' | relative_url }}" />
@@ -14,7 +14,7 @@ If you found yourself already registered for FurSquared 2024 but did not select 
 If you have any further questions about our poster this year please reach out to [poster@fursquared.com](mailto:poster@fursquared.com).
 
 # Information Required for the Poster Tier
-To participate in Fur Squared's 2024 poster, we need several details about the character to be drawn:
+To participate in FurSquared's 2024 poster, we need several details about the character to be drawn:
 
 - Character name
 - Description

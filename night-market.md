@@ -27,9 +27,9 @@ css:
 
 At this time, we have completed accepting Dealer applications. Please keep an eye on the email you provided in your application, including your SPAM folder.
 
-As indicated above, Dealer Notifications are sent out on February 12, 2023 and you will have two weeks to complete your registration and payment so that you can sell at Fur Squared.
+As indicated above, Dealer Notifications are sent out on February 12, 2023 and you will have two weeks to complete your registration and payment so that you can sell at FurSquared.
 
-As of February 27, 2023 any dealers that have not completed their registration/payment will be passed over for wait-listed applicants. IF YOU ARE HAVING ANY ISSUES please email [dealers@fursquared.com](mailto:dealers@fursquared.com) so we may assist. We hope everyone will enjoy Fur Squared 2023!!
+As of February 27, 2023 any dealers that have not completed their registration/payment will be passed over for wait-listed applicants. IF YOU ARE HAVING ANY ISSUES please email [dealers@fursquared.com](mailto:dealers@fursquared.com) so we may assist. We hope everyone will enjoy FurSquared 2023!!
 
 Allikuja (they/them) & GotherineFoxx (they/them)
 

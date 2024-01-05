@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fur Squared 2024 Registration
+title: FurSquared 2024 Registration
 subtitle: Please read the information on this page, then click the link at the bottom to register!
 ---
 
@@ -63,7 +63,7 @@ The file located below is for a Notary consent form for minors between the ages 
 
 ## Questions or Concerns?
 
-Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<br>Fur Squared thanks you for your patience.
+Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<br>FurSquared thanks you for your patience.
 
 # FAQ
 

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Volunteer
-subtitle: Looking to help out Fur Squared?
+subtitle: Looking to help out FurSquared?
 ---
-Are you Interested in making a difference with our growing convention? Fur Squared is staffed entirely by volunteers. Won't you help us out by volunteering? It's easy, fun and there are some great benefits to pitching in. There are plenty of opportunities available for all of our attendees.
+Are you Interested in making a difference with our growing convention? FurSquared is staffed entirely by volunteers. Won't you help us out by volunteering? It's easy, fun and there are some great benefits to pitching in. There are plenty of opportunities available for all of our attendees.
 
 ## Crowd Control
 
@@ -11,7 +11,7 @@ For those with skill at directing traffic, we need a few good furs to make sure 
 
 ## Door Duty
 
-For the safety and comfort of our attendees, convention-only spaces are reserved for registered Fur Squared guests. All you need to do is to make sure that folks are displaying their convention badges while they're in our convention-only areas.
+For the safety and comfort of our attendees, convention-only spaces are reserved for registered FurSquared guests. All you need to do is to make sure that folks are displaying their convention badges while they're in our convention-only areas.
 
 ## Duties As Assigned
 
@@ -39,18 +39,18 @@ Finding your way around a large hotel in unfamiliar territory can be baffling; e
 
 ## What's in it for you?
 
-What's in it for you? First off, you'll have the thanks of our entire staff and all our attendees, as well as the knowledge that you helped run the best Fur Squared yet! However, there are other benefits too. For volunteering, you will receive the following:
+What's in it for you? First off, you'll have the thanks of our entire staff and all our attendees, as well as the knowledge that you helped run the best FurSquared yet! However, there are other benefits too. For volunteering, you will receive the following:
 
 - A ribbon identifying you as being part of our group of convention volunteers.
 - For 2 hours of logged service, you receive a small sponsor gift.
 - For 6 hours of logged service, you will receive a FurSquared-branded bandana.
 - For 10 hours of logged service, you will receive a FurSquared t-shirt.
-- For 14 hours of logged service, you will receive free attendee registration for Fur Squared 2025.
+- For 14 hours of logged service, you will receive free attendee registration for FurSquared 2025.
 
 **Note:** Any hours logged before opening ceremonies or after closing ceremonies will count as **double hours** toward your total hours of logged service.
 
 ## Interested In Volunteering?
 
-Looking to Volunteer this year for Fur Squared  2024? If you haven't already Pre-Registered for our 2024 event then you'll be glad to know you can also fill out our Volunteer form during your Registration Process. Already registered and changed your mind? Use the Edit Registration link in your email to login, where you can sign up to volunteer. Thank you for taking interest in Volunteering for Fur Squared  2024!
+Looking to Volunteer this year for FurSquared  2024? If you haven't already Pre-Registered for our 2024 event then you'll be glad to know you can also fill out our Volunteer form during your Registration Process. Already registered and changed your mind? Use the Edit Registration link in your email to login, where you can sign up to volunteer. Thank you for taking interest in Volunteering for FurSquared  2024!
 
-If you have any questions, or need information, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com). Thank you so much for your interest in helping out Fur Squared\!
+If you have any questions, or need information, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com). Thank you so much for your interest in helping out FurSquared\!

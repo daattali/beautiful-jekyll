@@ -17,7 +17,7 @@ Applications have been reviewed and acceptance emails have gone out!  Please che
 We've gotten some questions from y'all about our artist alley this year, and while we don't have concrete answers yet, all information and details will be posted to [the artist alley page!](/artist-alley)
 
 # Poster
-We have previous year examples and details of the amazing [Fur Squared Poster here!](/poster)
+We have previous year examples and details of the amazing [FurSquared Poster here!](/poster)
 
 # Hotel Details
 We have made some updates and clarifications over at the [Hotel Page.](/hotel)
