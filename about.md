@@ -28,4 +28,4 @@ See this page [https://fursquared.com/covid-policy](https://fursquared.com/covid
 
 ### Q: I have a question not on this page. What can I do?
 
-If you have a question, check out our [contact page](http://www.fursquared.com/contact) for a breakdown of who to contact about what, ask in the [FurSquared chat](https://t.me/fursquaredchat), or reach out to us on [Twitter](https://twitter.com/fursquared)!
+If you have a question, check out our [contact page](http://www.fursquared.com/contact) for a breakdown of who to contact about what, ask in the [FurSquared Chat](https://t.me/fursquaredchat), or reach out to us on [Twitter](https://twitter.com/fursquared)!
