@@ -18,6 +18,7 @@ Further details about this policy can be reviewed on our dedicated [COVID-19 pol
 
 * Access to our con suite for the duration of the convention.
 * Additional bonus goodies and swag.
+* This year's t-shirt.
 
 **Super Sponsor:**<br>Grants general admission to the convention Friday, Saturday, and Sunday.<br>In addition, you get:
 
