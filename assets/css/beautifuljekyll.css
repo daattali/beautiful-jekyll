@@ -1068,6 +1068,7 @@ pre {
   font-size: 1.5rem;
   max-height: calc(100vh - 6.5rem);
   overflow-y: auto;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #search-results-container a {
   color: #fff;
