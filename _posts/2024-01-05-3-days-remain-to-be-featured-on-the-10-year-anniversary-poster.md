@@ -12,7 +12,7 @@ Every year the F2 art team puts together a BIG poster. This year we’re going e
 
 **✨THERE IS NO LOTTO SYSTEM THIS YEAR✨**
 
-First come, first served style OR until the deadline closes on January 8th. That means there’s no waiting - once you register at that tier, you’re in!* 
+First come, first served style OR until the deadline closes on **January 8th**. That means there’s no waiting - once you register at that tier, you’re in!* 
 
 *\*we reserve the right to deny your application for any reason that would go against our convention TOS.*\
 \
