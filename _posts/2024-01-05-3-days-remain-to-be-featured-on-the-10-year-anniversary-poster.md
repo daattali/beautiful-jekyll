@@ -34,10 +34,10 @@ No problem - Registrations can be upgraded with ease!
 
 \- [registration@fursquared.com](mailto:registration@fursquared.com) is here to help if you run into trouble
 
-\- - - - - -
 
- Quick History
 
-The Poster started as a passion project of one VERY determined kobold, XanniTheBlue, to include every single Super Sponsor into one magnificent poster each and every year. It was something that always stood out as something unique and very special to FurSquared, but eventually became so full of furries that it became unreasonable for one artist to handle.
+**Quick History**
 
-The tradition lives on today thanks to many other Very Determined Artists, but has since adopted a limit cap of 50 attendees for the sake of these artists. Normally there would be a lottery system for who gets to join the Where’s Waldo style fun, but this year we’re doing something different. This year, we’re going hard.
+*The Poster started as a passion project of one VERY determined kobold, XanniTheBlue, to include every single Super Sponsor into one magnificent poster each and every year. It was something that always stood out as something unique and very special to FurSquared, but eventually became so full of furries that it became unreasonable for one artist to handle.*
+
+*The tradition lives on today thanks to many other Very Determined Artists, but has since adopted a limit cap of 50 attendees for the sake of these artists. Normally there would be a lottery system for who gets to join the Where’s Waldo style fun, but this year we’re doing something different. This year, we’re going hard.*
