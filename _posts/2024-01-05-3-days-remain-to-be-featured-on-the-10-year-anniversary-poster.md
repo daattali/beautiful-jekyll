@@ -31,7 +31,7 @@ No problem - Registrations can be upgraded with ease!
 
 \- Can’t find the confirmation email? Click the “resend email” link at the bottom of the Registration page on your website.
 
-\- registration@fursquared.com is here to help if you run into trouble
+\- [registration@fursquared.com](mailto:registration@fursquared.com) is here to help if you run into trouble
 
 \- - - - - -
 
