@@ -17,8 +17,11 @@ First come, first served style OR until the deadline closes on **January 8th**. 
 *\*we reserve the right to deny your application for any reason that would go against our convention TOS.*\
 \
 **✨PLUS you’ll receive all the goodies and perks that the Super Sponsors get!✨**
+
+**Every poster is a treasured part of FurSquared history; We would love for you to join us in this keystone memory. ❤️**
 ___
-**Already registered but want to get in on this?**\
+**Already registered but want to get in on this?**
+\
 No problem - Registrations can be upgraded with ease!
 
 \- Return to your confirmation email.
