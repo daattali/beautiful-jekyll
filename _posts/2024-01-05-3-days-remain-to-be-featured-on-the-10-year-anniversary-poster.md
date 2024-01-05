@@ -20,7 +20,7 @@ First come, first served style OR until the deadline closes on **January 8th**. 
 
 - - -
 
- Already registered but want to get in on this? No problem - Registrations can be upgraded with ease!
+ **Already registered but want to get in on this?** No problem - Registrations can be upgraded with ease!
 
 \- Return to your confirmation email.
 
@@ -31,8 +31,6 @@ First come, first served style OR until the deadline closes on **January 8th**. 
 \- Can’t find the confirmation email? Click the “resend email” link at the bottom of the Registration page on your website.
 
 \- registration@fursquared.com is here to help if you run into trouble
-
-Every poster is a treasured part of FurSquared history; Come be a part of this keystone memory. ❤️
 
 \- - - - - -
 
