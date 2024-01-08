@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My Website
+title: Baltej Giri Blogpost
 
 # Your name to show in the footer
 author: Baltej Giri
@@ -20,11 +20,11 @@ author: Baltej Giri
 ###############################################
 
 navbar-links:
-  About Me: "about me"
+  About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://baltehgirigithub.io"
+    #- Beautiful Jekyll: "https://beautifuljekyll.com"
+    #- Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://baltejgiri.github.io"
 
 ################
 # --- Logo --- #
