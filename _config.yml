@@ -9,8 +9,11 @@
 # --- Required options --- #
 ############################
 
+# in responsive view, show sidebar toggle button?
+toggle-sidebar-button: true
+
 # Name of website
-title: Baltej Giri Blogpost
+title: Baltej Giri
 
 # Your name to show in the footer
 author: Baltej Giri
@@ -21,10 +24,13 @@ author: Baltej Giri
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
+  Resume: "resume.pdf"
+  #Blogs: "blogs"
+  #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     #- Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://baltejgiri.github.io"
+  #Documentaion : "create a documentation .md file"
+  
 
 ################
 # --- Logo --- #
