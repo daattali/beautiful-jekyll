@@ -21,7 +21,7 @@ Cisco Systems is my choice of vendor to follow their curriculum to assess my kno
 
 I am a big advocate for Open Source, I use Linux based Operating Systems, Applications and Software’s to home lab or run home network solution like pfSense for firewall, Raspberry Pi (pi-hole OS) for DNS, TureNAS for Network Storage, Open VPN and so on.
 
-Idea to have this blog post, to store the documentations of home labs and journey through it. Once again, I thank you for taking time to be here 
+Idea to have this blog post, to store the documentations of home labs and journey through it. Once again, I thank you for taking time to be here.
 
 ### How to find me?
-Available on Social platforms; Linkedin and X. I love Networking Community called The Art of Network Engineering and you can find me in their their discord group as well.
+Available on Social platforms; Linkedin and X. I love Networking Community called The Art of Network Engineering and you can find me in their discord group as well.
