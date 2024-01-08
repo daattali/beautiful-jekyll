@@ -13,9 +13,9 @@ My name is Baltej Giri. I am a Computer Networking Professional with six plus ye
 
 ### My background
 
-Born and raise in Northern part of India lived in a farmhouse with parents where I completing my High School at a private school. My father always wanted me to get higer education in a westren country so we planed my move to New Zealand. I spend about four years there completing my Education in Business Managment therefore I moved back to India in 2014. Where I got married to my beautiful wife Sonia Goswami, together we migrated to Canada in 2016 to began our new life and fulfill our dreams. We landed in beautiful place called Okanagan Valley in British Columbia in the month of Janurary and experience first snow fall. 
+Born and raised in Northern part of India, lived in a farmhouse with parents where I completing my High School at a private school. My father always wanted me to get higer education in a westren country so we planed my move to New Zealand. I spend about four years there completing my Education in Business Managment therefore I moved back to India in 2014. Where I got married to my beautiful wife Sonia Goswami, together we migrated to Canada in 2016 to began our new life and fulfill our dreams. We landed in beautiful place called Okanagan Valley in British Columbia in the month of Janurary and experience first snow fall. We welcomed our very handsome son Rehaan Giri Goswami in 2018.
 
-Moving alone from personal story, I am enthusiastic about all things regarding Computers and Networks. I have six years of experience in Information Technology with excellent communication skills.
+Moving along from personal story, I am enthusiastic about all things regarding Computers and Networks. I have six years of experience in Information Technology with excellent communication skills.
 
 Cisco Systems is my choice of vendor to follow their curriculum to assess my knowledge through their certifications. I am currently self stuyding for Cisco Certified Network Associate exam using official Cert Guide from Wendell Odom and hands on practice with Cisco Packet Tracer and Eve-ng. My roadmap is to certified in Enterprise networking at professional and expert level using Cisco certification track.
 
