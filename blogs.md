@@ -1,3 +1,4 @@
 ---
-permanent: _posts
+layout: base
+title: Blogs
 ---
