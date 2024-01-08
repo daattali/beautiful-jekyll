@@ -1,0 +1,3 @@
+---
+permanent: _posts
+---
