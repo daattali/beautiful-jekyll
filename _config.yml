@@ -20,7 +20,7 @@ author: Baltej Giri
 ###############################################
 
 navbar-links:
-  About Me: "whoami"
+  About Me: "about me"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
