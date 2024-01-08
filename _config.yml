@@ -13,18 +13,18 @@
 title: My Website
 
 # Your name to show in the footer
-author: Some Person
+author: Baltej Giri
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "whoami"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://baltehgirigithub.io"
 
 ################
 # --- Logo --- #
@@ -52,14 +52,14 @@ round-avatar: true
 social-network-links:
   email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
+  #facebook: deanattali
+  github: baltejgiri.github.io
+  twitter: giribaltej
+  #patreon: DeanAttali
+  #youtube: "@daattali"
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+linkedin: baltej-giri
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
