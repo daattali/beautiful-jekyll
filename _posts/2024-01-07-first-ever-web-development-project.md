@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web development first time ever
+title: First Ever Web Development Project
 subtitle: Google is my friend, or now ChatGPT
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
