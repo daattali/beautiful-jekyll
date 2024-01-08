@@ -24,8 +24,8 @@ author: Baltej Giri
 
 navbar-links:
   About Me: "aboutme"
+  Blogs: "/posts/"
   Resume: "resume.pdf"
-  Blogs: "blogs"
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     #- Learn markdown: "https://www.markdowntutorial.com/"
