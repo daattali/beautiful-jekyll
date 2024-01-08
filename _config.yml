@@ -25,6 +25,7 @@ author: Baltej Giri
 navbar-links:
   About Me: "aboutme"
   Blogs: "blogs"
+    - _posts/
   Resume: "resume.pdf"
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
