@@ -9,6 +9,7 @@ My name is Baltej Giri. I am a Computer Networking Professional with six plus ye
 - Communication
 - Problem-solvings
 - Computer Network Administration
+- Cloud Networking
 
 ### My background
 
