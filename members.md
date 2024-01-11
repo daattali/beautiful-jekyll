@@ -48,6 +48,9 @@ members:
           - name: Lifan Yu (MSCV)
             photo_url: /img/members/lifanyu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/lifan-yu/
+          - name: Haoyue Liu (MSCV)
+            photo_url: /img/members/haoyueliu.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/haoyue-liu/
       - name: Undergraduate Students
         full: true
         list:
