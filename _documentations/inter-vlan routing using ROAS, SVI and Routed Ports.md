@@ -1,4 +1,4 @@
-## LAB Configuration for in-vlan routing using ROAS, SVI and Routed Ports
+## LAB Configuration for inter-vlan routing using ROAS, SVI and Routed Ports
 
 ### Multi-layer Switch Configuration 
 Mutlilayer Switch configuration with Switch Virtual Interface for VLAN 10 and 11.
