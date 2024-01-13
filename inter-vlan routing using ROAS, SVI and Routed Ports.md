@@ -1,3 +1,9 @@
+---
+layout: page
+title: Documentation
+subtitle: CCNA Notes
+---
+
 ## LAB Configuration for inter-vlan routing using ROAS, SVI and Routed Ports
 
 ### Multi-layer Switch Configuration 
