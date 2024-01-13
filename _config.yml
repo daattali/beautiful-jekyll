@@ -29,7 +29,8 @@ navbar-links:
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     #- Learn markdown: "https://www.markdowntutorial.com/"
-  Documentaion : _documentations/vol_1_chapter_17_lab1/"
+  Documentaion:
+    - _documentations/
   
 
 ################
