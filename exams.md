@@ -45,6 +45,7 @@ anonymous score data. Students can pick up their answer sheets to learn their sc
 | December 6, 2019 | [2019-2020 Mathcounts School](/files/RMS%201920M%20Exam.pdf) | [Answer Key](/files/RMS%201920M%20Exam%20Key.pdf)
 | January 12, 2022 | [2021-2022 Mathcounts School](/files/RMS%202122M%20Exam.pdf) | [Answer Key](/files/RMS%202122M%20Exam%20Key.pdf)
 | January 11, 2023 | [2022-2023 Mathcounts School](/files/RMS%202223M%20Exam.pdf) | [Answer Key](/files/RMS%202223M%20Exam%20Key.pdf)
+| January 12, 2024 | [2023-2024 Mathcounts School](/files/RMS%202324M%20Exam.pdf) | [Answer Key](/files/RMS%202324M%20Exam%20Key.pdf)
 
 ## Other Internal Competition Rounds
 During the course of the season we may also administer additional competition rounds, such as mock team rounds. Those rounds may follow 
