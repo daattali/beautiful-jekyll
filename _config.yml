@@ -29,7 +29,8 @@ navbar-links:
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     #- Learn markdown: "https://www.markdowntutorial.com/"
-  Documentaion: "inter-vlan routing using ROAS, SVI and Routed Ports.md"
+  Documentaion: 
+    - Inter-Vlan Routing: "inter-vlan routing using ROAS, SVI and Routed Ports.md"
   
 
 ################
