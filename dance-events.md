@@ -15,6 +15,12 @@ This tournament style competition is an exciting event where dancers freestyle t
 
 [Sign Up](https://forms.gle/U3VtPtojA1jNUBpAA){: .button target="_blank" rel="noopener"}
 
-## Down Bad Furlesque
+## Down Bad Furlesque (18+)
 
-Down Bad Furlesque is an adult performance show mixing the art of acting, dance, costuming, and fursuiting! This is also a charity event, where attendance members can donate money on behalf of any performer. This incredibly popular event is a must see, raising incredible amounts of money for charity... amongst other things... Auditions will be opening soon!
+DBF is an adult variety show mixing the art of acting, dance, and fursuiting! Come witness the magic of the stage as our performers put on a top-notch show for you!
+
+We are currently accepting auditions for our FurSquared 2024 show! Please thoroughly read the details and rules on the form before submitting your video and information.
+
+You must be 18 years or older to audition/attend the event!
+
+[Audition Form](https://forms.gle/U3VtPtojA1jNUBpAA){: .button target="_blank" rel="noopener"}
