@@ -1,0 +1,49 @@
+---
+layout: post
+title: Jan 8, 2:44 PM - Blog #3
+subtitle: Continuation of Our Carbon Calculator Journey
+gh-repo: your-repo-name
+gh-badge: [star, fork, follow]
+tags: [carbon calculator, coding, development]
+comments: true
+author: Your Name
+---
+
+{: .box-note}
+**Note:** This blog post continues our journey with the carbon calculator, detailing recent developments and plans.
+
+# Jan 8, 2:44 PM - Blog #3
+
+Welcome back to Blog #3! Lots of stuff has happened in the past few weeks so let's get right into it.
+
+When I wrote my last entry it was Christmas Eve and Joe and I just finished a 12-hour coding day where we started to build our first basic program in Wix Velo code. After that, I began to reach out to developers for help as I realized there was too much to learn and we needed some guidance and help to build our first version of the calculator. Below is a picture of the message I sent out to our developers.
+
+![Image Description](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/8ea40cc4-4cad-4925-a6bc-7b66e356c595)
+
+After I sent this I got a response very quickly from the S9 Consulting Developers and we hopped on a call on Dec 26th. I was impressed with their response time and commitment to work over the holidays. It became apparent very quickly that they would be the first developers we hired to help with our MVP.
+
+In the call, Carlos Cortez and I discussed what our vision for Forevergreen.earth was and what we could do with the $500 budget. We agreed that the Dev team would fully integrate our current version of the calculator into Wix Velo and add a login system for users to sign in and adjust their data. Carlos sent over the statement of work that day and we got to building.
+
+I also spent a lot of time building out easy-to-follow blogs and documentation of our current version and what we were going for. I published these on our test site as well as the Forevergreen site. Below are the links to each blog if you want to check them out.
+
+Links to blogs and resources:
+- [Forevergreen Calculator Overview](https://www.forevergreen.earth/post/forevergreen-calculator-overview)
+- [Forevergreen Excel Calculator Guide](https://jpearson906.wixsite.com/carbon-calc/post/forevergreen-excel-calculator-guide)
+- [Current Calculator on Convert Calculator](https://jpearson906.wixsite.com/carbon-calc/post/current-calculator-on-convert-calculator)
+- [Our test site (this website)](https://jpearson906.wixsite.com/carbon-calc/post/our-test-site-this-website)
+
+I am interested to see if these proved to be helpful for the team.
+
+Since I handed off the actual development to the infinitely more skilled Wix Velo Devs, I have recently had some more time to continue on my Replit 100 Days of Code. I have been learning a ton about Python and even some HTML (which is how I made this blog). If you follow me on Twitter you will see I post the code for every lesson along with some other cool stuff every once in a while.
+
+> Thanks to [@Replit](https://twitter.com/Replit) I have the skills to make my own link tree Day 75 of [#Replit100DaysOfCode](https://twitter.com/hashtag/Replit100DaysOfCode?src=hash&ref
+_src=twsrc%5Etfw) #100DaysOfCode.
+
+Join me on @Replit https://t.co/JZ6PlHkwB0 pic.twitter.com/8dKZ9Asx2X
+— Jack Pearson (@jpear715) January 8, 2024
+
+Here you can see my most recent lesson Day 75 where I coded a simple linktree for myself. I have learned a TON about coding just from these lessons and I am excited to finish these lessons so I can learn more.
+
+Looking forward, we will have a fully functional calculator coded on Wix Velo by S9 Consulting by/on Jan 15th. After that, my current plan is to spend 2 weeks studying that code and improving little things here and there so that on Feb 1 we can have a product that provides a cool service for our users and can collect revenues.
+
+Thank you for following along with my blog!
