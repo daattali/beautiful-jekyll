@@ -1,3 +1,17 @@
+---
+layout: post
+title: Dec 24, 8:29 PM - Blog #2
+subtitle: Progress Update on the Carbon Calculator
+gh-repo: your-repo-name
+gh-badge: [star, fork, follow]
+tags: [carbon calculator, coding, development]
+comments: true
+author: Your Name
+---
+
+{: .box-note}
+**Note:** This blog post updates our progress on the carbon calculator.
+
 # Dec 24, 8:29 PM - Blog #2
 
 Hello! This is my second blog post updating our progress on the carbon calculator.
