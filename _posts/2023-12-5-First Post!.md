@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog Post - Carbon-Calc.com
+title: First Blog Post!!!
 ---
 
 ## Navigation
