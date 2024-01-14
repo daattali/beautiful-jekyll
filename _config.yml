@@ -36,6 +36,7 @@ navbar-links:
     - Vend: "dealers"
   Contact Us: "contact"
 
+
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
@@ -108,7 +109,7 @@ excerpt_length: 50
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#995C44"
-navbar-text-col: "#FCEDD4"
+navbar-text-col: "#f9e9db"
 navbar-logo-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
 navbar-text-hover-col: "#FFFFFF"
@@ -117,7 +118,7 @@ navbar-hover-bg-col: "#57183E"
 page-col: "#AB4E36"
 header-col: "#FCEDD4"
 page-text-col: "#FFFFFF"
-link-col: "#E8A56C"
+link-col: "#f9e9db"
 hover-col: "#57183E"
 selection-col: "#692800"
 selection-bg-col: "#FCEDD4"
