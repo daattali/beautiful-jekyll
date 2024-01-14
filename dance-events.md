@@ -5,7 +5,7 @@ subtitle:
 ---
 ## Fursuit Dance Competition
 
-: In this competition, dancers will perform choreographed routines to a panel of judges. All competitors will be in fursuit, guaranteeing some of the most talented, but also adorable performances you will see at FurSquared! If you are interested in competing, you are welcome to sign up at the link bellow. There is no age restriction, young or old we would love to see what you have to offer! All competitors must attend prelims, which will be posted in the schedule. If you are unavailable during the time, feel free to email us a video submission at [dance@fursquared.com](mailto:dance@fursquared.com).
+In this competition, dancers will perform choreographed routines to a panel of judges. All competitors will be in fursuit, guaranteeing some of the most talented, but also adorable performances you will see at FurSquared! If you are interested in competing, you are welcome to sign up at the link bellow. There is no age restriction, young or old we would love to see what you have to offer! All competitors must attend prelims, which will be posted in the schedule. If you are unavailable during the time, feel free to email us a video submission at [dance@fursquared.com](mailto:dance@fursquared.com).
 
 [Sign Up](https://forms.gle/cg6nPqVZeiT3qVGs9){: .button target="_blank" rel="noopener"}
 
