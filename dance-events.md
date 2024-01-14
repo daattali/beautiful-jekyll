@@ -13,7 +13,7 @@ subtitle:
 
 This tournament style competition is an exciting event where dancers freestyle to randomized music. However this competition has a twist, it also allows the dancers to raise money for our lovely charity! Between each round while the judges deliberate, collectors will run around the audience and collect cash donations in the name of each competitor. These donations will be counted and whichever performer raises the most money will earn a special placement and prize. This competition has two divisions, fursuit and non-suit. If you are interested in competing, everyone is welcome! However, make sure to sign up quickly since this competition is first come first serve!
 
-<br><br>[Sign Up](https://forms.gle/U3VtPtojA1jNUBpAA){: .button target="_blank" rel="noopener"}
+[Sign Up](https://forms.gle/U3VtPtojA1jNUBpAA){: .button target="_blank" rel="noopener"}
 
 ## Down Bad Furlesque
 
