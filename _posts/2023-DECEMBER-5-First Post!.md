@@ -1,0 +1,56 @@
+---
+layout: post
+title: Blog Post - Carbon-Calc.com
+---
+
+## Navigation
+
+- [About](#about)
+- [Carbon Calc](#faq)
+- [Blog](#blog)
+- [Try the Carbon Calc](#)
+
+## Blog Content
+
+**This is my first blog post that I wrote on Dec 5, 2023**
+
+_Dec 5 1:58pm - Blog #1_
+
+Hello! Welcome to my blog! Super pumped you are reading this and hopefully it can help others learn from my process. My goal for this blog is to document my process of building my first product and a real piece of code. I want to learn along with the progression of this blog to see where I learned, failed, and improved to hopefully maximize my growth.
+
+This first post is exciting as I have no lines of code written! There is much to be done and I am very excited to learn. I have some experience in Java as I learned it last year through an online course and course at Pitt. I am confident I can build my product here and implement it into WIX.
+
+So where am I in the process? Well, it is currently the week before finals, so I will not be able to make much progress this week. That being said, there is much progress to update you on so far, and the next update should be post-finals once I start to code.
+
+Here is the current carbon calculator on our website. [Forevergreen Earth Carbon Calculator](https://www.forevergreen.earth/carbon-calculator)
+
+### Screen #1 Onboarding
+
+![Screen #1 Onboarding](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/e16175a6-2fae-4a19-96df-44049edd121d)
+
+### Screen #2 Transportation
+
+![Screen #2 Transportation](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/cf77f8a9-d27b-4233-9094-f216d1cd5a9a)
+
+### Screen #3 Diet
+
+![Screen #3 Diet](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/fc6566af-c478-4ff7-a9d6-845edd4a5a97)
+
+### Screen #4 Energy/Utilities
+
+![Screen #4 Energy/Utilities](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/84f75566-a0be-4d40-a649-8b8c9ea8eb6b)
+
+### Screen #5 Breakdown
+
+![Screen #5 Breakdown](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/d79b91ae-63be-4b3c-980e-0ab12dcf2fc3)
+![Additional Screen #5 Breakdown](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/8687e18f-47fc-4e1b-b574-648134edb298)
+
+### Email Returned to User
+
+![Email Returned to User](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/717bf1a6-95ab-4383-82bc-7d6887e14c48)
+
+As you can see the calculator is pretty robust and has a lot of questions. Although the email is very very basic it is a good start and I will learn how to add charts and further links to this through MailChimp or a different email listing service.
+
+All of this was completed over Thanksgiving Break which was only a week. With a better plan of action and a full month of Christmas, we should have a product/service to track data for users and provide them with connections to solutions. Once I have this MVP finalized we can pass this over to a better-suited development team, and I can focus on other areas.
+
+Thank you for reading! I think this practice will help me a lot in my product development and a great tool for later to catch others up to speed
