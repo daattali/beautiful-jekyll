@@ -21,8 +21,7 @@ navbar-links:
     - Artist Alley: "artist-alley"
     - Poster: "poster"
   # - Night Market: "night-market"
-  # - Dance Events: "dance-events"
-  # - Artist Alley: "artist-alley"
+    - Dance Events: "dance-events"
     - Video Games: "video-games"
     - Photos: "https://fursquared.smugmug.com/"
   Information:
@@ -36,7 +35,6 @@ navbar-links:
     - Volunteer: "volunteer"
     - Vend: "dealers"
   Contact Us: "contact"
-
 
 # --- Logo --- #
 
