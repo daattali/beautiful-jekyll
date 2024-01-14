@@ -1,18 +1,56 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
-tags: [books, test]
-author: Sharon Smith and Barry Simpson
+title: Blog Post - Carbon-Calc.com
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+## Navigation
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+- [About](#about)
+- [Carbon Calc](#faq)
+- [Blog](#blog)
+- [Try the Carbon Calc](#)
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
+## Blog Content
 
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+**This is my first blog post that I wrote on Dec 5, 2023**
+
+_Dec 5 1:58pm - Blog #1_
+
+Hello! Welcome to my blog! Super pumped you are reading this and hopefully it can help others learn from my process. My goal for this blog is to document my process of building my first product and a real piece of code. I want to learn along with the progression of this blog to see where I learned, failed, and improved to hopefully maximize my growth.
+
+This first post is exciting as I have no lines of code written! There is much to be done and I am very excited to learn. I have some experience in Java as I learned it last year through an online course and course at Pitt. I am confident I can build my product here and implement it into WIX.
+
+So where am I in the process? Well, it is currently the week before finals, so I will not be able to make much progress this week. That being said, there is much progress to update you on so far, and the next update should be post-finals once I start to code.
+
+Here is the current carbon calculator on our website. [Forevergreen Earth Carbon Calculator](https://www.forevergreen.earth/carbon-calculator)
+
+### Screen #1 Onboarding
+
+![Screen #1 Onboarding](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/e16175a6-2fae-4a19-96df-44049edd121d)
+
+### Screen #2 Transportation
+
+![Screen #2 Transportation](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/cf77f8a9-d27b-4233-9094-f216d1cd5a9a)
+
+### Screen #3 Diet
+
+![Screen #3 Diet](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/fc6566af-c478-4ff7-a9d6-845edd4a5a97)
+
+### Screen #4 Energy/Utilities
+
+![Screen #4 Energy/Utilities](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/84f75566-a0be-4d40-a649-8b8c9ea8eb6b)
+
+### Screen #5 Breakdown
+
+![Screen #5 Breakdown](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/d79b91ae-63be-4b3c-980e-0ab12dcf2fc3)
+![Additional Screen #5 Breakdown](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/8687e18f-47fc-4e1b-b574-648134edb298)
+
+### Email Returned to User
+
+![Email Returned to User](https://github.com/jackforevergreen/jackforevergreen.github.io/assets/151107754/717bf1a6-95ab-4383-82bc-7d6887e14c48)
+
+As you can see the calculator is pretty robust and has a lot of questions. Although the email is very very basic it is a good start and I will learn how to add charts and further links to this through MailChimp or a different email listing service.
+
+All of this was completed over Thanksgiving Break which was only a week. With a better plan of action and a full month of Christmas, we should have a product/service to track data for users and provide them with connections to solutions. Once I have this MVP finalized we can pass this over to a better-suited development team, and I can focus on other areas.
+
+Thank you for reading! I think this practice will help me a lot in my product development and a great tool for later to catch others up to speed
