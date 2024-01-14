@@ -21,9 +21,11 @@ author: Jack Pearson
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://carbon-calc.com/"
-    - Learn markdown: "https://carbon-calc.com/"
+  Other Sites I made:
+    - Forevergreen.earth: "https://www.forevergreen.earth/"
+    - Diamond Tropical Hardwoods: "https://www.diamondtropicalhardwoods.com/"
+    - Brian Pearson Music: "https://www.brianpearsonmusic.com/"
+
   Author's home: "https://carbon-calc.com/"
 
 ################
