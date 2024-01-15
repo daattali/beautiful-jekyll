@@ -48,7 +48,7 @@ init_db()
 def index():
     return render_template('index.html')
 
-@app.route('/submit-your-data', methods=['POST'])
+@app.route('/submit', methods=['POST'])
 def calculate_footprint():
     # Extracting data from form
     name = request.form.get('name')
