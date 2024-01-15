@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Results</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Results</title>
 </head>
 <body>
-<h1>Carbon Footprint Results</h1>
-<p>Your carbon footprint is: <strong>{{ total }}</strong> tons of CO2 per year</p>
-<p>That means you emit <strong>{{ month }}</strong>tons of C02 per month</p>
-<p>Visit Forevergreen.earth now!</p>
+    <h1>Submission Successful</h1>
+    <p>Thank you, <strong>{{ name }}</strong>, for submitting your information.</p>
+    <p>We have received the following details:</p>
+    <ul>
+        <li>Name: <strong>{{ name }}</strong></li>
+        <li>Email: <strong>{{ email }}</strong></li>
+    </ul>
+    <p>Visit Forevergreen.earth now!</p>
 </body>
 </html>
