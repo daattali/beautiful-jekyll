@@ -46,7 +46,7 @@ init_db()
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('calc.html')
 
 @app.route('/submit', methods=['POST'])
 def calculate_footprint():
