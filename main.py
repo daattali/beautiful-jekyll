@@ -45,7 +45,7 @@ def init_db():
 init_db()
 
 @app.route('/')
-def index():
+def calc():
     return render_template('calc.html')
 
 @app.route('/submit', methods=['POST'])
