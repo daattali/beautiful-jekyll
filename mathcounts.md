@@ -15,7 +15,7 @@ please see [the competition schedule](/competitions).
 The first round of the competition is the **School** round. This event is implemented by our math
 club and features [an exam](/exams) drafted by our coaches to effectively differentiate participants.
 We do not use the School round materials provided by Mathcounts as they do not offer an appropriate level
-competition for our membership.
+of competition for our membership.
 
 # Chapter
 
@@ -26,7 +26,7 @@ This competition is usually held in Building 33 of the Microsoft campus.
 # State
 
 The third round is the **State** round, which invites top teams and individual performers from the Chapter
-round. This competition is usually held in Building 33 of the Microsoft campus.
+round. This competition is usually held in the Amazon Meeting Center in Seattle.
 
 # National
 
