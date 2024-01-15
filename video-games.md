@@ -6,11 +6,10 @@ subtitle:
 
 # Schedule
 
-Times will be updated but are likely to remain as shown.
 * **Fri:** 10 AM to Midnight
-  * **Mario Kart:** ???
+  * **[Mario Kart](https://challonge.com/FurSquared2024MarioKart){: target="_blank" rel="noopener"}:** 4:30 PM - 6 PM
 * **Sat:** 10 AM to Midnight
-  * **Smash Tournament:** 2 PM to 5 PM
+  * **[Smash Tournament](https://challonge.com/FurSquared2024Smash){: target="_blank" rel="noopener"}:** 2 PM to 5 PM
 * **Sun:** 10 AM to 5 PM
 
 # Play-Throughs, Speedruns, and Demos
@@ -25,7 +24,7 @@ There isn’t a hard deadline for filling this out, but the sooner, the more lik
 
 We’re running our tournaments using [Challonge](https://challonge.com/communities/FurSquaredGaming){: target="_blank" rel="noopener"}, for more info and signups check back later for links:
 * [Smash](https://challonge.com/FurSquared2024Smash){: target="_blank" rel="noopener"}
-* [Mario Kart](https://challonge.com/FurSquared2024MarioKart){: target="_blank" rel="noopener"} (coming soon!)
+* [Mario Kart](https://challonge.com/FurSquared2024MarioKart){: target="_blank" rel="noopener"}
 
 # Lending and Donating Games and Equipment
 
