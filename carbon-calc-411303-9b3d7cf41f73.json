@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "carbon-calc-411303",
+  "private_key_id": "9b3d7cf41f7302139d7f7d87cc89dddf2bb99688",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtxdG4Iil5OQ9u\naKuXj37ZMJ18rbRHmgA/JE8nyQY8wI12o/NYtLp32rgKLFifzdnlFbysEvP55DoD\nKGE/I6p6UkwbbEaiEnSnuhcE8zX0vrt52LHzsbOKT8D/myAFWccbZbzd+6PdPPCq\nLmFa/X9w3E5b6u1Zk9yablMVKcycJO3PgevCJeXsPeMY2ErfyJiWIxQcaRzlP1iX\niKNqSEWFCm/kboLIN2G1aD6u8jpek2m4albQ1nyTNFAFdu4+s1Z/vwfP2zvw1Gja\nb5tGStZ2/4Su+Asc77cb49YWI12+zJ2UG2tOCeXbf5C34h5mIbdtfoK64gHZ3D02\nSaCMgxhJAgMBAAECggEAAJzS+GsfF5PdO7J+YCowlQNwBA0ou7b8WmMH/IuGHtwy\ndG5PlM9CVZCU/WFZ84e/sP334VHVUzhsEI2I/oIQFbHwIGrNUx944gltZARm0NZv\n1aWDtinkg2n5oeMgg+BQUkqb8yy5s1gHB0SOih1VF52RNNmtbo5imePUbQAtvMC2\nyZk1PDO1pvOpohbAJkF/v71isLRmt3Ewy6YVz+AeBmsnLSOc38FpOBPeo8bFGZOQ\nctGYLbQdbVJsf8pXTd61g5a1uAYqGmVXvI+oiGfpr06hWvGqaEGV4kqv6qIaIIzX\nL80Tu5RvmjfBVwGhXuCZbxMVU5q9RIo6b7EXxPYjUQKBgQDXBRBGfh4IJssI92oG\nMDGOTAjAz/U3Q+YqaaPOeiwZZnPiSmxfpDAkywcL+gc4YA/2z8ngQFDJqu+cALAQ\nnHaFXkew6JflWIZAnBhlatFj9K2BQEh5IzU0AnB/N9QyGBkigkDG+NmXjYii4UMn\n4WrCgX1yUfGd54E8SnyIV527+QKBgQDO5EnzcHKOeLzyqUvrn8vd864zfHDnYf4m\nijdnQZM/xoWVVsiTY4lYtQcy9GvOjoMREF6abz5SmpqLCbwyFU5FG6faWQ0inZhp\nNGEcqp6SbTp4VrZFxySJUZVeoqzYY6keSk+X18TnqqaPB/19N2Znt8SVyKE9TdMS\nQEZb67Yy0QKBgBho6sAV8TLbtJEABXlOX1HYL+YztZLgknCeLYpzNC5uAxndeRAi\ng5Spt9MUP12XCjjqvfBHXOSIE0uSiGpaWNorKdhbj2Lp+dO75Mkep0bBsDDMK24V\nISUWYc8Pd3d4ZOIWB2SPO6SI3Mog6I7OeGA8cxFXXCag8Xr2ucyApdeBAoGAcmrm\nSu9hK1GyjTD7f6+7+1+Mc4Tam9whxgaiZURqvtZ3ggOgoYJmrtxOwutRw8YkzgcT\niq0C9oPx+/rCTaBizO1igurEzOQDKguBuWzSjYBC2dJ6s1RS7G5mARROKs3S9aF7\nKyp1BvnlayysD9fXlnyXB48RPOoRVQKe5q8Q8EECgYEAiZHnW/nbHwgw6vW61zHO\nr02ErLprTnYzIJCquh/9+udDwgZDiSj0VcHogUUOfp7LMHMYRXnQBudBOx+rx2iO\ndftq7MZDumcM6mYVNeyf9NOmycKIOaUxADFg2iKJ6G5ZnRssCekwLcT/0bAXisph\nRWZmFVFGVVcsh8jxGvEViyg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "carbon-calc@carbon-calc-411303.iam.gserviceaccount.com",
+  "client_id": "108016395482645711217",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/carbon-calc%40carbon-calc-411303.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
