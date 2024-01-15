@@ -1,7 +1,31 @@
 from flask import Flask, render_template, request
 import sqlite3
+from google.oauth2.service_account import Credentials
+from googleapiclient.discovery import build
 
 app = Flask(__name__)
+
+# Google Sheets setup
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+SERVICE_ACCOUNT_FILE = 'path/to/your/service-account.json'  # Replace with your path
+SPREADSHEET_ID = 'your-spreadsheet-id'  # Replace with your Spreadsheet ID
+
+creds = None
+creds = Credentials.from_service_account_file(
+        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+
+def save_to_sheet(data):
+    service = build('sheets', 'v4', credentials=creds)
+    sheet = service.spreadsheets()
+    values = [data]  # Data should be a list
+    body = {
+        'values': values
+    }
+    result = sheet.values().append(
+        spreadsheetId=SPREADSHEET_ID,
+        range="Sheet1",  # Update with your sheet name
+        valueInputOption="USER_ENTERED",
+        body=body).execute()
 
 # Database setup
 def init_db():
@@ -36,6 +60,9 @@ def calculate_footprint():
     cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))
     conn.commit()
     conn.close()
+
+    # Save to Google Sheets
+    save_to_sheet([name, email])
 
     # Returning the results
     return render_template('results.html', name=name, email=email)
