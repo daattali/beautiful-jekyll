@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 # Google Sheets setup
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-SERVICE_ACCOUNT_FILE = 'path/to/your/service-account.json'  # Replace with your path
-SPREADSHEET_ID = 'your-spreadsheet-id'  # Replace with your Spreadsheet ID
+SERVICE_ACCOUNT_FILE = 'carbon-calc-411303-9b3d7cf41f73.json'  # Replace with your path
+SPREADSHEET_ID = '18nBR3dxfyJm9xUC6TjjOdBzCzKTMrbwE6FHPnZDjfEQ'  # Replace with your Spreadsheet ID
 
 creds = None
 creds = Credentials.from_service_account_file(
