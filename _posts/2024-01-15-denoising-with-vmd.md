@@ -28,11 +28,12 @@ I created two traces of representative data: Pressure and Temperature, using a s
 
 Here are the plots of the generated signals. 
 
-I did this by transforming the data into the frequency domain where high and low frequencies could easily be seen using the short-time-Fourier-transform, which essentially takes the normal Fourier transform but on a rolling window, thus trading temporal certainty for spectral certainty. That spectrogram looked like this:
-
 {% include bp.vmd_denoising/generated_data.html %}
 
-This plot shows the energy in each frequency at a given time. From here, the dominant frequencies were drawn out by simply finding the frequency with the most energy (the most yellow on the plot) at a certain time, and plotted. 
+{: .box-note}
+**Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as html files.
+
+From this point, the two primary hyperparameters of VMD, &alpha and k, were varied. &alpha is the bandwidth penalty, and k is the number of modes. Increasing &alpha makes it so that each mode covers a smaller frequency band, and increasing k decomposes the original signal into more modes (see below for more details). 
 
 {% include bp.spectrography/dominant_frequency_plot.html %}
 
@@ -44,8 +45,7 @@ Once the hyperparameters were tuned, the DBSCAN algorithm did an excellent job s
 
 {% include bp.spectrography/clustered_data.html %}
 
-{: .box-note}
-**Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as html files.
+
 
 In conclusion, this project demonstrated the synergy between signal processing techniques like STFT, frequency analysis, and clustering algorithms like DBSCAN. By combining these methods, I successfully transformed and clustered periodic data, providing a comprehensive and insightful representation of the underlying patterns in the original time series.
 
