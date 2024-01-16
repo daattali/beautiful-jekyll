@@ -30,8 +30,8 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 25-Dec	| _No School_	                		| _No School_                           | _No School_               |
 | 1-Jan		| _No School_ 	                	| [2023 Mathcounts Chapter Sprint](https://www.mathcounts.org/sites/default/files/2023%20Chapter%20Competition%20Sprint%20Round.pdf)    | _Cancelled, no topic_ |
 | 8-Jan		| _Cancelled_	                		| [MIC 2020-2021](https://academicsarecool.com/#/samples)           | (Mathcounts School Round) |
-| 15-Jan	| _No School_		                	| [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/)   | (AMC 8)                   |
-| 22-Jan	| _Cancelled, School Social_      | [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/)   |                           |
+| 15-Jan	| _No School_		                	| [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/) Problem 1 - 20  | (AMC 8)                   |
+| 22-Jan	| _Cancelled, School Social_      | [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/) Problem 21 - 30  |                           |
 | 29-Jan	| Similarity		                	|                                       |                           |
 | 5-Feb		| Circles                       	|                                       |                           |
 | 12-Feb	| Logic					                  |                                       | _No School_               |
