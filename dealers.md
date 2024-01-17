@@ -7,7 +7,7 @@ subtitle: Welcome, welcome, one and all! With all of these dazzling wares we’r
 ---
 # Dealers Den & Night Market Hours
 
-![Dealer's Den Schedule](/uploads/photo_2023-12-13_15-25-56.jpg)
+![Dealer's Den Schedule](/uploads/F2DD_site_sched_rev2.png)
 
 # After Hours
 
