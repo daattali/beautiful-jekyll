@@ -21,12 +21,5 @@ In sum, the paper [(Chen et al.)](#the-steady-state-detection-paper) describes a
 
 I created two traces of representative data: _pressure_ and _temperature_, using a script which allows me to draw the trace in MS Paint, then load it into Python, give it a time x-axis, and optionally add noise and outliers. For instance, below is the raw _pressure_ trace as a PNG image. 
 
-{% include bp.vmd_denoising/paint_drawing_pressure_trace.png %}
 
-Here are the plots of the generated signals. Notice how the _pressure_ trace in the plot matches the image above. 
-
-{% include bp.vmd_denoising/generated_data.html %}
-
-{: .box-note}
-**Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as .html files.
 
