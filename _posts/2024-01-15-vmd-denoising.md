@@ -52,9 +52,6 @@ From this point, the two primary hyperparameters of VMD, &alpha and k, were vari
 ## Plotly
 [Plotly](https://plotly.com/python/) is a widely used plotting library which enables easy interactive plots which can be saved as interactive. They are the plots you'll see embedded here.
 
-## Plotly-Resampler
-[Plotly-resampler](https://github.com/predict-idlab/plotly-resampler) is a Python library that utilizes Dash to create a dynamically updating Plotly chart that only displays a limited number of data points to ensure the plot doesn't become bloated and slow. This was very useful for the GE implementation, since there were about a billion data points to plot. A limitation of plotly-resampler is that it requires an active Python kernel, so the plots cannot be saved as interactive.
-
 ## Tqdm
 [Tqdm](https://tqdm.github.io/) is just a progress bar library. I like to use it to let me know how long my scripts are taking. 
 
