@@ -25,14 +25,14 @@ I created two traces of representative data: _pressure_ and _temperature_, using
 
 Here are the plots of the generated signals. Notice how the _pressure_ trace in the plot matches the image above.
 
-### Generated Data Plot
+### Figure 1: Experimental Data Plot
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/generated_data.html)
 {% include bp.vmd_denoising/generated_data.html %}
 
 {: .box-note}
 **Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as .html files.
 
-From this point, the two primary hyperparameters of VMD, &alpha and k, were varied. &alpha is the bandwidth penalty, and k is the number of modes. Increasing &alpha makes it so that each mode covers a smaller frequency band, and increasing k decomposes the original signal into more modes (see below for more details). 
+From this point, the two primary hyperparameters of VMD, $\alpha$ and k, were varied. &alpha is the bandwidth penalty, and k is the number of modes. Increasing $\alpha$ makes it so that each mode covers a smaller frequency band, and increasing k decomposes the original signal into more modes (see below for more details). 
 
 
 # Introduction
