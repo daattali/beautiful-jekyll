@@ -32,7 +32,7 @@ Here are the plots of the generated signals. Notice how the _pressure_ trace in 
 {: .box-note}
 **Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as .html files.
 
-From this point, the two primary hyperparameters of VMD, α and k, were varied. α is the bandwidth penalty, and k is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing k decomposes the original signal into more modes (see below for more details). 
+From this point, α and k, the two primary hyperparameters of VMD,  were varied. α is the bandwidth penalty, and k is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing k decomposes the original signal into more modes (see below for more details). 
 
 
 # Introduction
