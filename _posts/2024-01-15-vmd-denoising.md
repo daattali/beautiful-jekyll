@@ -9,6 +9,8 @@ comments: true
 author: Corrado R. Mazzarelli
 ---
 
+# This is a Work-In-Progress
+
 * Do not remove this line (it will not be displayed)
 {:toc}
 
@@ -19,7 +21,7 @@ After researching methods for steady state detection, I stumbled across variatio
 
 In sum, the paper [(Chen et al.)](#the-steady-state-detection-paper) describes a technique for using Bayesian optimization to choose the optimal hyperparameters for VMD such that the denoised signal captures a large amount of the variation of the original noisy signal, while having less Gaussian noise. I explored the optimization to understand the effects of the hyperparameters and the ultimate results. 
 
-I created two traces of representative data: _pressure_ and _temperature_, using a script which allows me to draw the trace in MS Paint, then load it into Python, give it a time x-axis, and optionally add noise and outliers. For instance, below is the raw _pressure_ trace as a PNG image. 
+I created two traces of representative data: _pressure_ and _temperature_, using a script which allows me to draw the trace in MS Paint, then load it into Python, give it a time x-axis, and optionally add noise and outliers. For instance, below is the raw _pressure_ trace as a PNG image. You might have to zoom in to see it; the trace is one pixel thick. 
 
 ![Pressure Trace](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/paint_drawing_pressure_trace.png){: .mx-auto.d-block :}
 
@@ -32,15 +34,15 @@ Here are the plots of the generated signals. Notice how the _pressure_ trace in 
 {: .box-note}
 **Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as .html files.
 
-From this point, α and k, the two primary hyperparameters of VMD,  were varied. α is the bandwidth penalty, and k is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing k decomposes the original signal into more modes (see below for more details). 
+From this point, α and _k_, the two primary hyperparameters of VMD,  were varied. α is the bandwidth penalty, and _k_ is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing _k_ decomposes the original signal into more modes (see below for more details). 
 
-The original paper used VMD to decompose the signal into k modes, and then added together a subset of those modes that captured the majority of the variance of the original signal to create a reconstructed signal. An example of this signal reconstruction is shown in [Figure 2](###Figure 2: VM) below.
+The original paper used VMD to decompose the signal into _k_ modes, and then added together a subset of those modes that captured the majority of the variance of the original signal to create a reconstructed signal. An example of this signal reconstruction is shown in [Figure 2](###Figure 2: VM) below.
 
 ### Figure 2: Example of Decomposed and Reconstructed Signal
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.alpha_4000.k_5.individual_scatter.html)
 {% include bp.vmd_denoising/noisy_pressure.alpha_4000.k_5.individual_scatter.html %}
 
-Notice how the first mode captures the majority of the low frequency (does not change very fast/sporadically) trend in the data, whereas the additional modes capture higher frequency, lower magnitude variations in the data.
+Notice how the first mode captures the majority of the low frequency trend in the data (does not change very fast/sporadically), whereas the additional modes capture higher frequency, lower magnitude variations in the data.
 
 The reconstructed signal was then compared to the original signal using the following equation for the signal to noise ratio (SNR).
 
@@ -48,7 +50,14 @@ $$
 \text{SNR} = 10 \log_{10} \left( \frac{\sum_{i=1}^{N_f} f^2}{\sum_{i=1}^{N_f} (f - f_{\text{rec}})^2} \right)
 $$
 
-Note that this SNR metric penalizes any difference from the original signal. Thus, when the paper uses this SNR metric as the objective function when optimizing the VMD hyperparameters, the optimization will converge to the hyperparameters which result in a reconstructed signal that is most similar to the original, noisy signal, possibly capturing the noise in the reconstruction. In the case of the paper, the true noiseless signal was unknown. However, for this study, the true signal was available. Thus, the following heatmaps of SNR vs. varying VMD hyperparameters were created. On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology.
+Note that this SNR metric penalizes any difference from the original signal. Thus, when the paper uses this SNR metric as the objective function when optimizing the VMD hyperparameters, the optimization will converge to the hyperparameters which result in a reconstructed signal that is most similar to the original, noisy signal, possibly capturing the noise in the reconstruction. 
+
+In the case of the paper, the true noiseless signal was unknown. However, for this study, the true signal was available. Thus, the following heatmaps of SNR vs. varying VMD hyperparameters were created. 
+
+![Noisy Pressure Signal to Noise Heatmap](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.snr_heatmap.png){: .mx-auto.d-block :}
+
+
+On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology.
 
 # Introduction
 
