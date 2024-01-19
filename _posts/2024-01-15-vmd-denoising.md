@@ -40,13 +40,15 @@ The original paper used VMD to decompose the signal into k modes, and then added
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.alpha_4000.k_5.individual_scatter.html)
 {% include bp.vmd_denoising/noisy_pressure.alpha_4000.k_5.individual_scatter.html %}
 
+Notice how the first mode captures the majority of the low frequency (does not change very fast/sporadically) trend in the data, whereas the additional modes capture higher frequency, lower magnitude variations in the data.
+
 The reconstructed signal was then compared to the original signal using the following equation for the signal to noise ratio (SNR).
 
 $$
 \text{SNR} = 10 \log_{10} \left( \frac{\sum_{i=1}^{N_f} f^2}{\sum_{i=1}^{N_f} (f - f_{\text{rec}})^2} \right)
 $$
 
-Note that this SNR metric penalizes any difference from the original signal. Thus, when the paper uses this SNR metric for the objective function when optimizing the VMD hyperparameters, the 
+Note that this SNR metric penalizes any difference from the original signal. Thus, when the paper uses this SNR metric as the objective function when optimizing the VMD hyperparameters, the optimization will converge to the hyperparameters which result in a reconstructed signal that is most similar to the original, noisy signal, possibly capturing the noise in the reconstruction. In the case of the paper, the true noiseless signal was unknown. However, for this study, the true signal was available. Thus, the following heatmaps of SNR vs. varying VMD hyperparameters were created. On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology.
 
 # Introduction
 
