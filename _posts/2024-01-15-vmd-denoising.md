@@ -9,13 +9,13 @@ comments: true
 author: Corrado R. Mazzarelli
 ---
 
-# This is a Work-In-Progress
+# This is a Work-In-Progress -- Last Updated 1/18/24
 
 * Do not remove this line (it will not be displayed)
 {:toc}
 
 # Summary
-Something I noticed in the Combustion organization at GE is that we had terabytes of time series data, but we only actually used steady state sections of that data. Seeing this, I endeavored to create a Python tool which would comb through the existing data GE had and locate additional steady state points that we could use to increase our confidence in characterizing our combustor performance. We already paid for the data; why not get our money's worth?
+Something I noticed in the Combustion organization at GE is that we had terabytes of time series data, but we only actually used steady state sections of that data that were manually identified on the day of the test. Seeing this, I endeavored to create a Python tool which would comb through the existing data GE had and locate additional steady state points that we could use to increase our confidence in characterizing our combustor performance. We already paid for the data; why not get our money's worth?
 
 After researching methods for steady state detection, I stumbled across variational mode decomposition (VMD) as a method for preprocessing real-world, noisy data, before proceeding with the steady state detection. 
 
@@ -32,7 +32,7 @@ Here are the plots of the generated signals. Notice how the _pressure_ trace in 
 {% include bp.vmd_denoising/generated_data.html %}
 
 {: .box-note}
-**Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as .html files.
+**Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as .html files. You can also click on the _Standalone Figure_ link to get a larger version of the figure. 
 
 From this point, α and _k_, the two primary hyperparameters of VMD,  were varied. α is the bandwidth penalty, and _k_ is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing _k_ decomposes the original signal into more modes (see below for more details). 
 
@@ -56,8 +56,7 @@ In the case of the paper, the true noiseless signal was unknown. However, for th
 
 ![Noisy Pressure Signal to Noise Heatmap](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.snr_heatmap.png){: .mx-auto.d-block :}
 
-
-On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology.
+On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology. As expected, 
 
 # Introduction
 
