@@ -13,7 +13,7 @@ author: Corrado R. Mazzarelli
 {:toc}
 
 # Summary
-Something I noticed in the Combustion organization at GE is that we had terabytes of time series data, but we only actually used steady state sections of that data. Seeing this, I endeavored to create a Python tool which would comb through the existing data GE had and locate additional steady state points that we could use to increase our confidence in characterizing our combustor performance. We already paid for the data, why not get our money's worth?
+Something I noticed in the Combustion organization at GE is that we had terabytes of time series data, but we only actually used steady state sections of that data. Seeing this, I endeavored to create a Python tool which would comb through the existing data GE had and locate additional steady state points that we could use to increase our confidence in characterizing our combustor performance. We already paid for the data; why not get our money's worth?
 
 After researching methods for steady state detection, I stumbled across variational mode decomposition (VMD) as a method for preprocessing real-world, noisy data, before proceeding with the steady state detection. 
 
@@ -24,7 +24,9 @@ I created two traces of representative data: _pressure_ and _temperature_, using
 ![Pressure Trace](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/paint_drawing_pressure_trace.png){: .mx-auto.d-block :}
 
 Here are the plots of the generated signals. Notice how the _pressure_ trace in the plot matches the image above.
-[### Figure 1](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/generated_data.html)
+
+### Generated Data Plot
+[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/generated_data.html)
 {% include bp.vmd_denoising/generated_data.html %}
 
 {: .box-note}
