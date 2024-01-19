@@ -34,6 +34,12 @@ Here are the plots of the generated signals. Notice how the _pressure_ trace in 
 
 From this point, α and k, the two primary hyperparameters of VMD,  were varied. α is the bandwidth penalty, and k is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing k decomposes the original signal into more modes (see below for more details). 
 
+The original paper used VMD to decompose the signal into k modes, and then added together a subset of those modes that captured the majority of the variance of the original signal to create a reconstructed signal. The reconstructed signal was then compared to the original signal using the following equation for the signal to noise ratio (SNR).
+
+$$
+\text{SNR} = 10 \log_{10} \left( \frac{\sum_{i=1}^{N_f} f_i^2}{\sum_{i=1}^{N_f} (f - f_{\text{rec}})^2} \right)
+$$
+
 
 # Introduction
 
@@ -82,6 +88,7 @@ From this point, α and k, the two primary hyperparameters of VMD,  were varied.
 ## The Steady State Detection Paper
 This is the paper I was reading to learn about steady state detection where I found this method for first denoising the data. 
 [Shuo Chen, Cong Yu, Yukun Zhu, Wei Fan, Haiquan Yu, Tihua Zhang, (2024). NOx formation model for utility boilers using robust two-step steady-state detection and multimodal residual convolutional auto-encoder, Journal of the Taiwan Institute of Chemical Engineers, Volume 155, 105252, ISSN 1876-1070, https://doi.org/10.1016/j.jtice.2023.105252.](https://www.sciencedirect.com/science/article/pii/S1876107023005795)
+[Another Link](https://www.researchgate.net/publication/376134958_NOx_formation_model_for_utility_boilers_using_robust_two-step_steady-state_detection_and_multimodal_residual_convolutional_auto-encoder)
 
 ## The Original VMD Paper
 This is the paper that originally proposed and explained VMD. 
