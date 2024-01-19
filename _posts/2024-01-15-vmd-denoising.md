@@ -34,12 +34,19 @@ Here are the plots of the generated signals. Notice how the _pressure_ trace in 
 
 From this point, α and k, the two primary hyperparameters of VMD,  were varied. α is the bandwidth penalty, and k is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing k decomposes the original signal into more modes (see below for more details). 
 
-The original paper used VMD to decompose the signal into k modes, and then added together a subset of those modes that captured the majority of the variance of the original signal to create a reconstructed signal. The reconstructed signal was then compared to the original signal using the following equation for the signal to noise ratio (SNR).
+The original paper used VMD to decompose the signal into k modes, and then added together a subset of those modes that captured the majority of the variance of the original signal to create a reconstructed signal. An example of this signal reconstruction is shown in [Figure 2](###Figure 2: VM) below.
+
+### Figure 2: Example of Decomposed and Reconstructed Signal
+[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.alpha_4000.k_5.individual_scatter.html)
+{% include bp.vmd_denoising/noisy_pressure.alpha_4000.k_5.individual_scatter.html %}
+
+The reconstructed signal was then compared to the original signal using the following equation for the signal to noise ratio (SNR).
 
 $$
-\text{SNR} = 10 \log_{10} \left( \frac{\sum_{i=1}^{N_f} f_i^2}{\sum_{i=1}^{N_f} (f - f_{\text{rec}})^2} \right)
+\text{SNR} = 10 \log_{10} \left( \frac{\sum_{i=1}^{N_f} f^2}{\sum_{i=1}^{N_f} (f - f_{\text{rec}})^2} \right)
 $$
 
+Note that this SNR metric penalizes any difference from the original signal. Thus, when the paper uses this SNR metric for the objective function when optimizing the VMD hyperparameters, the 
 
 # Introduction
 
