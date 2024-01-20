@@ -100,7 +100,7 @@ share-links-active:
 # Remove this if you don't want a link in the footer
 url-pretty: "MyWebsite.com"
 
-# Show the site title in the <title> of all pages in addition to the page title
+# Add the website title to the title of every page
 title-on-all-pages: true
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
