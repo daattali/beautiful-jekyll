@@ -9,7 +9,7 @@ comments: true
 author: Corrado R. Mazzarelli
 ---
 
-# This is a Work-In-Progress -- Last Updated 1/18/24
+# This is a Work-In-Progress -- Last Updated 1/20/24
 
 * Do not remove this line (it will not be displayed)
 {:toc}
@@ -36,7 +36,7 @@ Here are the plots of the generated signals. Notice how the _pressure_ trace in 
 
 From this point, α and _k_, the two primary hyperparameters of VMD,  were varied. α is the bandwidth penalty, and _k_ is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing _k_ decomposes the original signal into more modes (see below for more details). 
 
-The original paper used VMD to decompose the signal into _k_ modes, and then added together a subset of those modes that captured the majority of the variance of the original signal to create a reconstructed signal. An example of this signal reconstruction is shown in [Figure 2](###Figure 2: VM) below.
+The original paper used VMD to decompose the signal into _k_ modes, and then added together a subset of those modes that captured the majority of the variance of the original signal to create a reconstructed signal. An example of this signal reconstruction is shown in [Figure 2](#figure-2-example-of-decomposed-and-reconstructed-signal) below.
 
 ### Figure 2: Example of Decomposed and Reconstructed Signal
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.alpha_4000.k_5.individual_scatter.html)
@@ -54,9 +54,14 @@ Note that this SNR metric penalizes any difference from the original signal. Thu
 
 In the case of the paper, the true noiseless signal was unknown. However, for this study, the true signal was available. Thus, the following heatmaps of SNR vs. varying VMD hyperparameters were created. 
 
-![Noisy Pressure Signal to Noise Heatmap](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.snr_heatmap.png){: .mx-auto.d-block :}
+### Figure 3: Noisy Pressure SNR Heatmap
+![Noisy Pressure 'Signal to Noise Ratio' Heatmap](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.snr_heatmap.png){: .mx-auto.d-block :}
 
-On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology. As expected, 
+On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology. As expected, the estimated SNR was maximized at a value of 28.41 with low α and _k_ parameters, (100 and 2 respectively), which corresponds to limited change from the noisy signal. This is seen in the left side of [Figure 3](#figure-3-noisy-pressure-snr-heatmap) where the yellow appears in the top left of the heatmap. The SNR of the reconstructed signal compared to the true noiseless signal is maximized at a value of 43.95 with α of 10,000 and _k_ of 8.  Thus, the methodology utilized in [the paper](#the-steady-state-detection-paper) is overly conservative in noise removal.
+
+The following plot shows the comparison between [the paper's](#the-steady-state-detection-paper) optimal reconstructed signal and the true optimal reconstructed signal. 
+
+
 
 # Introduction
 
