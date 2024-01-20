@@ -42,7 +42,6 @@ Effect: A higher alpha constrains the bandwidths of the modes, resulting in narr
 
 Definition: _K_ represents the number of modes that the VMD algorithm aims to extract from the input signal. It is a crucial hyperparameter as it determines the complexity of the decomposition and the number of oscillatory components in the final result.
 
-
 ### Signal to Noise Ratio
 
 The Signal-to-Noise Ratio (SNR) is a fundamental concept in signal processing and communication engineering. It quantifies the ratio of the power of a signal to the power of background noise. In other words, SNR provides a measure of how much the desired signal stands out from the surrounding noise. A higher SNR indicates a clearer and more reliable signal, making it easier to distinguish and interpret. SNR is a crucial metric in various applications, including telecommunications, audio processing, and image analysis, where the fidelity of the signal is of paramount importance.
@@ -51,7 +50,6 @@ The Signal-to-Noise Ratio (SNR) is a fundamental concept in signal processing an
 
 Bayesian Optimization is an optimization technique commonly used for optimizing complex and computationally expensive functions. Unlike traditional optimization methods, Bayesian Optimization leverages probabilistic models to estimate the objective function and its uncertainty. By iteratively selecting the most promising points to evaluate, based on the current model, it efficiently navigates the search space to find the optimum with minimal function evaluations. Bayesian Optimization is particularly valuable in scenarios where each function evaluation is costly, such as in hyperparameter tuning for machine learning algorithms or optimizing parameters in scientific experiments.
 
-
 # Methodology & Results
 
 I created two traces of representative data: _pressure_ and _temperature_, using a script which allows me to draw the trace in MS Paint, then load it into Python, give it a time x-axis, and optionally add noise and outliers. For instance, below is the raw _pressure_ trace as a PNG image. You might have to zoom in to see it; the trace is one pixel thick. 
@@ -59,7 +57,7 @@ I created two traces of representative data: _pressure_ and _temperature_, using
 ### Figure 1: PNG Pressure Trace
 ![Pressure Trace](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/paint_drawing_pressure_trace.png){: .mx-auto.d-block :}
 
-Here are the plots of the generated signals. Notice how the _pressure_ trace in the [Figure 2](#figure-2-experimental-data-plot) matches the line in [Figure 1](#figure-1-png-pressure-trace) above.
+Here are the plots of the generated signals. Notice how the _pressure_ trace in [Figure 2](#figure-2-experimental-data-plot) matches the line in [Figure 1](#figure-1-png-pressure-trace) above.
 
 ### Figure 2: Experimental Data Plot
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/generated_data.html)
@@ -118,11 +116,13 @@ The following plot shows the comparison between [the paper's](#the-steady-state-
 
 ## The Steady State Detection Paper
 This is the paper I was reading to learn about steady state detection where I found this method for first denoising the data. 
+
 [Shuo Chen, Cong Yu, Yukun Zhu, Wei Fan, Haiquan Yu, Tihua Zhang, (2024). NOx formation model for utility boilers using robust two-step steady-state detection and multimodal residual convolutional auto-encoder, Journal of the Taiwan Institute of Chemical Engineers, Volume 155, 105252, ISSN 1876-1070, https://doi.org/10.1016/j.jtice.2023.105252.](https://www.sciencedirect.com/science/article/pii/S1876107023005795)
 
 [Another Link](https://www.researchgate.net/publication/376134958_NOx_formation_model_for_utility_boilers_using_robust_two-step_steady-state_detection_and_multimodal_residual_convolutional_auto-encoder)
 
 ## The Original VMD Paper
 This is the paper that originally proposed and explained VMD. 
+
 [Zosso, Dominique & Dragomiretskiy, Konstantin. (2013). Variational Mode Decomposition. IEEE Transactions on Signal Processing. 62. 10.1109/TSP.2013.2288675.](https://ww3.math.ucla.edu/camreport/cam13-22.pdf)
 
