@@ -15,11 +15,6 @@ author: Corrado R. Mazzarelli
 {:toc}
 
 # Summary
-Something I noticed in the Combustion organization at GE is that we had terabytes of time series data, but we only actually used steady state sections of that data that were manually identified on the day of the test. Seeing this, I endeavored to create a Python tool which would comb through the existing data GE had and locate additional steady state points that we could use to increase our confidence in characterizing our combustor performance. We already paid for the data; why not get our money's worth?
-
-After researching methods for steady state detection, I stumbled across variational mode decomposition (VMD) as a method for preprocessing real-world, noisy data, before proceeding with the steady state detection. 
-
-In sum, the paper [(Chen et al.)](#the-steady-state-detection-paper) describes a technique for using Bayesian optimization to choose the optimal hyperparameters for VMD such that the denoised signal captures a large amount of the variation of the original noisy signal, while having less Gaussian noise. I explored the optimization to understand the effects of the hyperparameters and the ultimate results. 
 
 I created two traces of representative data: _pressure_ and _temperature_, using a script which allows me to draw the trace in MS Paint, then load it into Python, give it a time x-axis, and optionally add noise and outliers. For instance, below is the raw _pressure_ trace as a PNG image. You might have to zoom in to see it; the trace is one pixel thick. 
 
@@ -62,19 +57,39 @@ On the left, the reconstructed signal was compared to the original noisy signal 
 The following plot shows the comparison between [the paper's](#the-steady-state-detection-paper) optimal reconstructed signal and the true optimal reconstructed signal. 
 
 
-
 # Introduction
 
 ## Context
+Something I noticed in the Combustion organization at GE is that we had terabytes of time series data, but we only actually used steady state sections of that data that were manually identified on the day of the test. Seeing this, I endeavored to create a Python tool which would comb through the existing data GE had and locate additional steady state points that we could use to increase our confidence in characterizing our combustor performance. We already paid for the data; why not get our money's worth?
 
+After researching methods for steady state detection, I stumbled across variational mode decomposition (VMD) as a method for preprocessing real-world, noisy data, before proceeding with the steady state detection. 
 
-## Personal History and Motivation
-
+In sum, the paper [(Chen et al.)](#the-steady-state-detection-paper) describes a technique for using Bayesian optimization to choose the optimal hyperparameters for VMD such that the denoised signal captures a large amount of the variation of the original noisy signal, while having less Gaussian noise. I explored the optimization to understand the effects of the hyperparameters and the ultimate results. 
 
 ## Interesting Concepts
 
+### Variational Mode Decomposition
+
+Variational Mode Decomposition (VMD) is a powerful signal processing technique that aims to decompose a complex signal into a sum of simpler oscillatory modes. Unlike traditional methods such as Fourier analysis, VMD does not rely on predefined basis functions. Instead, it formulates the decomposition as an optimization problem, seeking modes that are both sparse and well-localized in the time-frequency domain. This approach makes VMD particularly effective for extracting hidden patterns and structures in signals with non-stationary and nonlinear characteristics.
+
+### Signal to Noise Ratio
+
+The Signal-to-Noise Ratio (SNR) is a fundamental concept in signal processing and communication engineering. It quantifies the ratio of the power of a signal to the power of background noise. In other words, SNR provides a measure of how much the desired signal stands out from the surrounding noise. A higher SNR indicates a clearer and more reliable signal, making it easier to distinguish and interpret. SNR is a crucial metric in various applications, including telecommunications, audio processing, and image analysis, where the fidelity of the signal is of paramount importance.
+
+### Bayesian Optimization
+
+Bayesian Optimization is an optimization technique commonly used for optimizing complex and computationally expensive functions. Unlike traditional optimization methods, Bayesian Optimization leverages probabilistic models to estimate the objective function and its uncertainty. By iteratively selecting the most promising points to evaluate, based on the current model, it efficiently navigates the search space to find the optimum with minimal function evaluations. Bayesian Optimization is particularly valuable in scenarios where each function evaluation is costly, such as in hyperparameter tuning for machine learning algorithms or optimizing parameters in scientific experiments.
+
+
+
+# Methodology & Results
+
+# Conclusion
 
 # Python Libraries
+
+## VMDpy
+[vmdpy](https://pypi.org/project/vmdpy/) is a library containing an implementation of VMD based off of the original paper by [Dragomiretskiy & Zosso](#the-original-vmd-paper).
 
 ## Numpy
 [Numpy](https://numpy.org/) is a powerhouse in scientific Python analysis, and needs no introduction.
@@ -87,23 +102,6 @@ The following plot shows the comparison between [the paper's](#the-steady-state-
 
 {: .box-note}
 **Note:** An environment.yml file is included in the GitHub repository to allow you to recreate a functional Anaconda environment.
-
-# Code Implementation
-
-## Generate Data
-
-## Define Inputs
-
-
-## Load the Data
-
-## Plot the Original Data
-
-### Plotly
-
-
-# Conclusion
-
 
 # References
 
