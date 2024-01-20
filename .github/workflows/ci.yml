@@ -4,12 +4,23 @@ jobs:
   build:
     name: Build Jekyll
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby_version: ['3.3']
+        jekyll_version: ['3.9.4', '4.3.3']
     steps:
       - uses: actions/checkout@v3
-      - name: Build the site in the jekyll/builder container
-        run: |
-          export JEKYLL_VERSION=3.8
-          docker run \
-          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          -e PAGES_REPO_NWO=${{ github.repository }} \
-          jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby_version }}
+      - name: Install the specified version of Jekyll
+        run: gem install -v ${{ matrix.jekyll_version }} jekyll
+      - name: Install dependencies
+        run: bundle install --without=jekyll
+      - name: Build site
+        run: bundle exec jekyll build --future
+      - name: Capture built site as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-ruby${{ matrix.ruby_version}}-jekyll${{ matrix.jekyll_version }}
+          path: _site
