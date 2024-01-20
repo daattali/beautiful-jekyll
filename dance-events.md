@@ -23,4 +23,4 @@ We are currently accepting auditions for our FurSquared 2024 show! Please thorou
 
 You must be 18 years or older to audition/attend the event!
 
-[Audition Form](https://forms.gle/U3VtPtojA1jNUBpAA){: .button target="_blank" rel="noopener"}
+[Audition Form](https://docs.google.com/forms/d/e/1FAIpQLSc5tRYvpNr1aUwio_ZUkwoqiT3bM8HkMhwJLYerQHmzFYMAcA/viewform){: .button target="_blank" rel="noopener"}
