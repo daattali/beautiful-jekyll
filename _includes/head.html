@@ -13,7 +13,7 @@
   {% endcapture %}
 
   {% capture title %}
-    {%- if site.title_on_all_pages and (site.title != pagetitle) -%}
+    {%- if site.title and site.title-on-all-pages and (site.title != pagetitle) -%}
       {{ pagetitle }} | {{ site.title }}
     {%- else -%}
       {{ pagetitle }}

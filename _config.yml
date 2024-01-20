@@ -10,9 +10,9 @@
 ############################
 
 # Name of website
-title: My Website
+title: My website
 # Show the site title in the <title> of all pages in addition to the page title
-title_on_all_pages: false
+title-on-all-pages: true
 
 # Your name to show in the footer
 author: Some Person
