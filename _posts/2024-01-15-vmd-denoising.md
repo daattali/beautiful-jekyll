@@ -105,6 +105,7 @@ On the left, the reconstructed signal was compared to the original noisy signal 
 ## The Steady State Detection Paper
 This is the paper I was reading to learn about steady state detection where I found this method for first denoising the data. 
 [Shuo Chen, Cong Yu, Yukun Zhu, Wei Fan, Haiquan Yu, Tihua Zhang, (2024). NOx formation model for utility boilers using robust two-step steady-state detection and multimodal residual convolutional auto-encoder, Journal of the Taiwan Institute of Chemical Engineers, Volume 155, 105252, ISSN 1876-1070, https://doi.org/10.1016/j.jtice.2023.105252.](https://www.sciencedirect.com/science/article/pii/S1876107023005795)
+
 [Another Link](https://www.researchgate.net/publication/376134958_NOx_formation_model_for_utility_boilers_using_robust_two-step_steady-state_detection_and_multimodal_residual_convolutional_auto-encoder)
 
 ## The Original VMD Paper
