@@ -16,24 +16,63 @@ author: Corrado R. Mazzarelli
 
 # Summary
 
+Variational mode decomposition (VMD) was explored as a methodology for denoising data, based on prior work by [(Chen et al.)](#the-steady-state-detection-paper). An artificial dataset was generated with both clean and noisy signals, and then VMD performed on the signals while varying the VMD hyperparemeters α and _k_. The signal to noise ratio (SNR) as described by the paper was used to characterize the proficiency in denoising. Two SNRs were obtained for each set of VMD hyperparameters: estimated SNR, which compares the denoised signal to the noisy signal, and true SNR, which compares the denoised signal to the original clean signal. It was discovered that the paper's methodology for denoising was overly conservative in removing noise and its optimization would settle upon the VMD hyperparameters that least changed the signal fed to the algorithm leaving room for a 25% improvement in true signal to noise.
+
+# Introduction
+
+## Context
+Something I noticed in the Combustion organization at GE is that we had terabytes of time series data, but we only actually used steady state sections of that data that were manually identified on the day of the test. Seeing this, I endeavored to create a Python tool which would comb through the existing data GE had and locate additional steady state points that we could use to increase our confidence in characterizing our combustor performance. We already paid for the data; why not get our money's worth?
+
+After researching methods for steady state detection, I stumbled across variational mode decomposition (VMD) as a method for preprocessing real-world, noisy data, before proceeding with the steady state detection. 
+
+In sum, the paper [(Chen et al.)](#the-steady-state-detection-paper) describes a technique for using Bayesian optimization to choose the optimal hyperparameters for VMD such that the denoised signal captures a large amount of the variation of the original noisy signal, while having less Gaussian noise. I explored the optimization to understand the effects of the hyperparameters and the ultimate results. 
+
+## Interesting Concepts
+
+### Variational Mode Decomposition
+
+Variational Mode Decomposition (VMD) is a powerful signal processing technique that aims to decompose a complex signal into a sum of simpler oscillatory modes. Unlike traditional methods such as Fourier analysis, VMD does not rely on predefined basis functions. Instead, it formulates the decomposition as an optimization problem, seeking modes that are both sparse and well-localized in the time-frequency domain. This approach makes VMD particularly effective for extracting hidden patterns and structures in signals with non-stationary and nonlinear characteristics. VMD has two primary hyperparameters, α and _k_.
+
+**Alpha (α):**
+Definition: Alpha is a key hyperparameter in VMD that sets the mode bandwidth limit criterion. It influences the width of the extracted oscillatory modes.
+
+Effect: A higher alpha constrains the bandwidths of the modes, resulting in narrower modes that capture more localized frequency information. On the other hand, a lower alpha allows for broader modes that may capture broader frequency components.
+
+**K (Number of Modes):**
+
+Definition: _K_ represents the number of modes that the VMD algorithm aims to extract from the input signal. It is a crucial hyperparameter as it determines the complexity of the decomposition and the number of oscillatory components in the final result.
+
+
+### Signal to Noise Ratio
+
+The Signal-to-Noise Ratio (SNR) is a fundamental concept in signal processing and communication engineering. It quantifies the ratio of the power of a signal to the power of background noise. In other words, SNR provides a measure of how much the desired signal stands out from the surrounding noise. A higher SNR indicates a clearer and more reliable signal, making it easier to distinguish and interpret. SNR is a crucial metric in various applications, including telecommunications, audio processing, and image analysis, where the fidelity of the signal is of paramount importance.
+
+### Bayesian Optimization
+
+Bayesian Optimization is an optimization technique commonly used for optimizing complex and computationally expensive functions. Unlike traditional optimization methods, Bayesian Optimization leverages probabilistic models to estimate the objective function and its uncertainty. By iteratively selecting the most promising points to evaluate, based on the current model, it efficiently navigates the search space to find the optimum with minimal function evaluations. Bayesian Optimization is particularly valuable in scenarios where each function evaluation is costly, such as in hyperparameter tuning for machine learning algorithms or optimizing parameters in scientific experiments.
+
+
+# Methodology & Results
+
 I created two traces of representative data: _pressure_ and _temperature_, using a script which allows me to draw the trace in MS Paint, then load it into Python, give it a time x-axis, and optionally add noise and outliers. For instance, below is the raw _pressure_ trace as a PNG image. You might have to zoom in to see it; the trace is one pixel thick. 
 
+### Figure 1: PNG Pressure Trace
 ![Pressure Trace](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/paint_drawing_pressure_trace.png){: .mx-auto.d-block :}
 
-Here are the plots of the generated signals. Notice how the _pressure_ trace in the plot matches the image above.
+Here are the plots of the generated signals. Notice how the _pressure_ trace in the [Figure 2](#figure-2-experimental-data-plot) matches the line in [Figure 1](#figure-1-png-pressure-trace) above.
 
-### Figure 1: Experimental Data Plot
+### Figure 2: Experimental Data Plot
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/generated_data.html)
 {% include bp.vmd_denoising/generated_data.html %}
 
 {: .box-note}
 **Note:** Try moving the plot around, zooming in, and clicking on legend entries. If you like these plots, look into [Plotly](https://plotly.com/python/) which allows you to save interactive plots as .html files. You can also click on the _Standalone Figure_ link to get a larger version of the figure. 
 
-From this point, α and _k_, the two primary hyperparameters of VMD,  were varied. α is the bandwidth penalty, and _k_ is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing _k_ decomposes the original signal into more modes (see below for more details). 
+From this point, α and _k_, the two primary hyperparameters of VMD,  were varied. α is the bandwidth penalty, and _k_ is the number of modes. Increasing α makes it so that each mode covers a smaller frequency band, and increasing _k_ decomposes the original signal into more modes (see [here](#variational-mode-decomposition) for more details). 
 
-The original paper used VMD to decompose the signal into _k_ modes, and then added together a subset of those modes that captured the majority of the variance of the original signal to create a reconstructed signal. An example of this signal reconstruction is shown in [Figure 2](#figure-2-example-of-decomposed-and-reconstructed-signal) below.
+The original paper used VMD to decompose the signal into _k_ modes, and then added together a subset of those modes that captured the majority of the variance of the original signal to create a reconstructed signal. An example of this signal reconstruction is shown in [Figure 3](#figure-3-example-of-decomposed-and-reconstructed-signal) below.
 
-### Figure 2: Example of Decomposed and Reconstructed Signal
+### Figure 3: Example of Decomposed and Reconstructed Signal
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.alpha_4000.k_5.individual_scatter.html)
 {% include bp.vmd_denoising/noisy_pressure.alpha_4000.k_5.individual_scatter.html %}
 
@@ -49,40 +88,12 @@ Note that this SNR metric penalizes any difference from the original signal. Thu
 
 In the case of the paper, the true noiseless signal was unknown. However, for this study, the true signal was available. Thus, the following heatmaps of SNR vs. varying VMD hyperparameters were created. 
 
-### Figure 3: Noisy Pressure SNR Heatmap
+### Figure 4: Noisy Pressure SNR Heatmap
 ![Noisy Pressure 'Signal to Noise Ratio' Heatmap](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/noisy_pressure.snr_heatmap.png){: .mx-auto.d-block :}
 
-On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology. As expected, the estimated SNR was maximized at a value of 28.41 with low α and _k_ parameters, (100 and 2 respectively), which corresponds to limited change from the noisy signal. This is seen in the left side of [Figure 3](#figure-3-noisy-pressure-snr-heatmap) where the yellow appears in the top left of the heatmap. The SNR of the reconstructed signal compared to the true noiseless signal is maximized at a value of 43.95 with α of 10,000 and _k_ of 8.  Thus, the methodology utilized in [the paper](#the-steady-state-detection-paper) is overly conservative in noise removal.
+On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology. As expected, the estimated SNR was maximized at a value of 28.41 with low α and _k_ parameters, (100 and 2 respectively), which corresponds to limited change from the noisy signal. This is seen in the left side of [Figure 4](#figure-4-noisy-pressure-snr-heatmap) where the yellow appears in the top left of the heatmap. The SNR of the reconstructed signal compared to the true noiseless signal is maximized at a value of 43.95 with α of 10,000 and _k_ of 8.  Thus, the methodology utilized in [the paper](#the-steady-state-detection-paper) is overly conservative in noise removal.
 
 The following plot shows the comparison between [the paper's](#the-steady-state-detection-paper) optimal reconstructed signal and the true optimal reconstructed signal. 
-
-
-# Introduction
-
-## Context
-Something I noticed in the Combustion organization at GE is that we had terabytes of time series data, but we only actually used steady state sections of that data that were manually identified on the day of the test. Seeing this, I endeavored to create a Python tool which would comb through the existing data GE had and locate additional steady state points that we could use to increase our confidence in characterizing our combustor performance. We already paid for the data; why not get our money's worth?
-
-After researching methods for steady state detection, I stumbled across variational mode decomposition (VMD) as a method for preprocessing real-world, noisy data, before proceeding with the steady state detection. 
-
-In sum, the paper [(Chen et al.)](#the-steady-state-detection-paper) describes a technique for using Bayesian optimization to choose the optimal hyperparameters for VMD such that the denoised signal captures a large amount of the variation of the original noisy signal, while having less Gaussian noise. I explored the optimization to understand the effects of the hyperparameters and the ultimate results. 
-
-## Interesting Concepts
-
-### Variational Mode Decomposition
-
-Variational Mode Decomposition (VMD) is a powerful signal processing technique that aims to decompose a complex signal into a sum of simpler oscillatory modes. Unlike traditional methods such as Fourier analysis, VMD does not rely on predefined basis functions. Instead, it formulates the decomposition as an optimization problem, seeking modes that are both sparse and well-localized in the time-frequency domain. This approach makes VMD particularly effective for extracting hidden patterns and structures in signals with non-stationary and nonlinear characteristics.
-
-### Signal to Noise Ratio
-
-The Signal-to-Noise Ratio (SNR) is a fundamental concept in signal processing and communication engineering. It quantifies the ratio of the power of a signal to the power of background noise. In other words, SNR provides a measure of how much the desired signal stands out from the surrounding noise. A higher SNR indicates a clearer and more reliable signal, making it easier to distinguish and interpret. SNR is a crucial metric in various applications, including telecommunications, audio processing, and image analysis, where the fidelity of the signal is of paramount importance.
-
-### Bayesian Optimization
-
-Bayesian Optimization is an optimization technique commonly used for optimizing complex and computationally expensive functions. Unlike traditional optimization methods, Bayesian Optimization leverages probabilistic models to estimate the objective function and its uncertainty. By iteratively selecting the most promising points to evaluate, based on the current model, it efficiently navigates the search space to find the optimum with minimal function evaluations. Bayesian Optimization is particularly valuable in scenarios where each function evaluation is costly, such as in hyperparameter tuning for machine learning algorithms or optimizing parameters in scientific experiments.
-
-
-
-# Methodology & Results
 
 # Conclusion
 
