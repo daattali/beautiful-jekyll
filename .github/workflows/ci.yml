@@ -4,23 +4,12 @@ jobs:
   build:
     name: Build Jekyll
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby_version: ['3.3']
-        jekyll_version: ['3.9.4', '4.3.3']
     steps:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ matrix.ruby_version }}
-      - name: Install the specified version of Jekyll
-        run: gem install -v ${{ matrix.jekyll_version }} jekyll
+          ruby-version: '3.3'
       - name: Install dependencies
-        run: bundle install --without=jekyll
+        run: bundle install && bundle exec appraisal install
       - name: Build site
-        run: bundle exec jekyll build --future
-      - name: Capture built site as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: site-ruby${{ matrix.ruby_version}}-jekyll${{ matrix.jekyll_version }}
-          path: _site
+        run: bundle exec appraisal jekyll build --future
