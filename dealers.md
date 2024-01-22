@@ -5,13 +5,19 @@ subtitle: Welcome, welcome, one and all! With all of these dazzling wares we’r
   sure you will find something of satisfaction! We bring you fantastic and
   fascinating stock from all over fandom to our humble little con.
 ---
-# Dealers Den & Night Market Hours
+# Dealer's Den & Night Market Hours
 
 ![Dealer's Den Schedule](/uploads/F2DD_site_sched_rev2.png)
 
 # After Hours
 
 Please note that once the Dealers Den is closed for the evening, nobody will be allowed inside. As a general rule, even staff are not allowed inside the room after hours; the only exception would be a Dealers Den lead and only then if they are accompanied by a member of our Security team. Please double and triple check to make sure that you have all of your personal belongings with you when you leave; items such as personal ID, money, phones, etc. that you might need should not be left in the Den overnight.
+
+# Dealer's Den & Night Market Maps
+
+![Dealer's Den Map](/assets/img/maps/map_dealersden.png)
+![Night Market Map](/assets/img/maps/map_nightmarket.png)
+<!--- ![Dealer's Den Lines](/assets/img/maps/map_dealers_lines.png) --->
 
 # Table Dimensions, Amenities & Pricing
 
