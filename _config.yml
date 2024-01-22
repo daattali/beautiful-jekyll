@@ -17,6 +17,7 @@ navbar-links:
   Convention:
     - Registration: "registration"
     - Programming: 'programming'
+    - Guests of Honor: 'goh'
     - Dealer's Den: "dealers"
     - Artist Alley: "artist-alley"
     - Poster: "poster"
