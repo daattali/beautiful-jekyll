@@ -4,6 +4,15 @@ title: Lukas Käll
 subtitle: Professor of Applied Systems Biology
 cover-img: /assets/img/lukas_chair.png
 share-img: /assets/img/lukas_chair.png
+social-network-links:
+  email: "lukas.kall@scilifelab.se"
+  github: "percolator"
+  bluesky: "lukaskall.bsky.social"
+  ORCID: "0000-0001-5689-9797"
+  google-scholar: "aZALISYAAAAJ"
+  phone: "+46769425179"
+
+
 
 ---
 
