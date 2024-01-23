@@ -9,23 +9,31 @@ comments: true
 author: Corrado R. Mazzarelli
 ---
 
-# This is a Work-In-Progress (Last Worked On 1/21/24)
-
 * Do not remove this line (it will not be displayed)
 {:toc}
 
 # Context
 This was a homework assignment for the class AE6766 at Georgia Tech, but I wanted to hone my visualization skills using Plotly so I put a little extra effort into it. 
 
+# Task
+
+For a mixture of propane and air at varying [equivalence ratios](#equivalence-ratio) and starting at STP, determine the [adiabatic combustion temperature](#adiabatic-combustion-temperature) and [equilibrium gas composition](#equilibrium-gas-composition) at constant pressure.
+
+# Results
+
+[Figure 1](#figure-1-equilibrium-composition-mole-fraction-animation) contains an animation showing how the equilibrium composition changes as a function of the equivalence ratio. At a phi of 0 there is no fuel, so the mole fraction of oxygen is 21%, as the assumed composition of air was 21% O2, 79% N2. Then, from phi of 0 to 0.7 O2 begins to get converted to CO2 and H20 as the products of propane combustion. At a phi of 0.8 we begin to see additional species such as OH which form as intermediaries to the combustion reaction and from the dissociation of water as the adiabatic temperature begins to rise. In fact, the changing compositions viewed here are a result of both the changing intial composition of the gas mixture (more propane as phi increases) and because the adiabatic temperature changes with phi, as visible in [Figure 2](#figure-2-equilibrium-combustion). As phi climbs above 1, CO becomes a major component of the equilibrium mixture as there is not enough oxygen to bring the combustion reaction to completion. 
+
 ### Figure 1: Equilibrium Composition Mole Fraction Animation
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.equilibrium_cantera/HP_mole_fraction_animation.html)
 {% include bp.equilibrium_cantera/HP_mole_fraction_animation.html %}
+
+In [Figure 2](#figure-2-equilibrium-combustion) the adiabatic combustion temperature, the [specific heat capacity Cp](#specific-heat-capacity), and the equilibrium compostion can be viewed in a line plot. The portion interest in this plot is the adiabatic combustion temperature. It is clear from the plot that the temperature peaks when phi is equal to 1, since that is where the gas mixture is [stoichimetric](#stoichimetric-ratio). 
 
 ### Figure 2: Equilibrium Combustion 
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.equilibrium_cantera/HP.html)
 {% include bp.equilibrium_cantera/HP.html %}
 
-# Interesting Concepts
+# Concepts
 
 ## Equilibrium Gas Composition
 
@@ -38,6 +46,18 @@ Understanding equilibrium gas composition is crucial in various fields, includin
 The equivalence ratio is a parameter used in combustion engineering to describe the ratio of the actual fuel-to-oxidizer mixture to the stoichiometric fuel-to-oxidizer ratio required for complete combustion. It is a key factor in determining the efficiency and characteristics of combustion processes. The equivalence ratio influences whether a mixture is fuel-rich, stoichiometric, or fuel-lean.
 
 An equivalence ratio equal to 1 indicates a stoichiometric mixture, where all the fuel and oxidizer react completely. Values greater than 1 signify a fuel-rich mixture, while values less than 1 indicate a fuel-lean mixture. Engineers use the equivalence ratio to optimize combustion processes, ensuring efficient energy release and minimizing the production of pollutants.
+
+## Adiabatic Combustion Temperature
+
+The adiabatic combustion temperature refers to the theoretical temperature reached during combustion when the process is adiabatic, meaning there is no heat exchange with the surroundings. When pressure is held constant during combustion, it is known as constant-pressure or isobaric combustion.
+
+## Specific Heat Capacity
+
+Cp represents the specific heat capacity at constant pressure. Specific heat capacity is a measure of the amount of heat energy required to raise the temperature of a unit mass of a substance by 1 degree Celsius (or 1 Kelvin).
+
+## Stoichimetric Ratio
+
+Stoichiometric refers to the precise balance of reactants in a chemical reaction according to the mole ratios indicated by the balanced chemical equation. In a stoichiometrically balanced reaction, the number of moles of each reactant and product is in the exact proportion specified by the coefficients in the balanced equation.
 
 ## Cantera
 
