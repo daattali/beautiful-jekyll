@@ -47,6 +47,10 @@ In the realm of thermodynamics, equilibrium gas composition refers to the distri
 
 Understanding equilibrium gas composition is crucial in various fields, including chemistry, chemical engineering, and environmental science. It helps predict the distribution of different molecules in a gas phase under specific conditions, allowing scientists and engineers to optimize processes and design systems with greater efficiency.
 
+## Stoichimetric Ratio
+
+Stoichiometric refers to the precise balance of reactants in a chemical reaction according to the mole ratios indicated by the balanced chemical equation. In a stoichiometrically balanced reaction, the number of moles of each reactant and product is in the exact proportion specified by the coefficients in the balanced equation.
+
 ## Equivalence Ratio
 
 The equivalence ratio is a parameter used in combustion engineering to describe the ratio of the actual fuel-to-oxidizer mixture to the stoichiometric fuel-to-oxidizer ratio required for complete combustion. It is a key factor in determining the efficiency and characteristics of combustion processes. The equivalence ratio influences whether a mixture is fuel-rich, stoichiometric, or fuel-lean.
@@ -60,10 +64,6 @@ The adiabatic combustion temperature refers to the theoretical temperature reach
 ## Specific Heat Capacity
 
 Cp represents the specific heat capacity at constant pressure. Specific heat capacity is a measure of the amount of heat energy required to raise the temperature of a unit mass of a substance by 1 degree Celsius (or 1 Kelvin).
-
-## Stoichimetric Ratio
-
-Stoichiometric refers to the precise balance of reactants in a chemical reaction according to the mole ratios indicated by the balanced chemical equation. In a stoichiometrically balanced reaction, the number of moles of each reactant and product is in the exact proportion specified by the coefficients in the balanced equation.
 
 ## Cantera
 
