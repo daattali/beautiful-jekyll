@@ -1,4 +1,7 @@
-{% if not page.social-network-links %}
+{% if page.social-network-links %}
+    {% set site.social-network-links =  page.social-network-links %}
+{% endif %}
+
 {% if site.social-network-links %}
 <ul class="list-inline text-center footer-links">
 
