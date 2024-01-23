@@ -17,7 +17,7 @@ This was a homework assignment for the class AE6766 at Georgia Tech, but I wante
 
 # Task
 
-For a mixture of propane and air at varying [equivalence ratios](#equivalence-ratio) and starting at STP, determine the [adiabatic combustion temperature](#adiabatic-combustion-temperature) and [equilibrium gas composition](#equilibrium-gas-composition) at constant pressure.
+For a mixture of propane and air at varying [equivalence ratios](#equivalence-ratio) and starting at STP, determine the [adiabatic combustion temperature](#adiabatic-combustion-temperature) and [equilibrium gas composition](#equilibrium-gas-composition) (for these specific species) at constant pressure.
 
 # Results
 
@@ -32,6 +32,12 @@ In [Figure 2](#figure-2-equilibrium-combustion) the adiabatic combustion tempera
 ### Figure 2: Equilibrium Combustion 
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.equilibrium_cantera/HP.html)
 {% include bp.equilibrium_cantera/HP.html %}
+
+## Shortfalls of the Analysis
+
+This assignment neglected NOx production in the desired species. NOx, or nitrogen oxides, play a significant role in combustion processes and their environmental impact. These compounds, such as nitrogen dioxide (NO2) and nitric oxide (NO), are formed during high-temperature combustion reactions, particularly in engines and power plants. NOx emissions contribute to air pollution and have adverse effects on human health, including respiratory issues and the formation of ground-level ozone. Additionally, NOx is a key precursor to acid rain, which can harm ecosystems and aquatic environments. Ignoring NOx production in articles on combustion overlooks a crucial aspect of the process and its environmental consequences, emphasizing the importance of addressing and mitigating NOx emissions for sustainable and cleaner combustion technologies.
+
+The production of nitrogen oxides (NOx) in combustion processes is a complex series of chemical reactions involving nitrogen and oxygen present in the air. The primary mechanism leading to NOx formation is known as thermal NOx formation. At high temperatures, typically above 1,400 degrees Celsius (2,552 degrees Fahrenheit), nitrogen and oxygen molecules in the air react to form nitrogen oxides. Control and reduction of NOx emissions often involve optimizing combustion conditions, employing exhaust gas recirculation, and using selective catalytic reduction (SCR) technologies to convert NOx into less harmful nitrogen and water vapor. Understanding the scientific basis of NOx formation is crucial for developing strategies to mitigate its environmental impact and promote cleaner combustion technologies.
 
 # Concepts
 
