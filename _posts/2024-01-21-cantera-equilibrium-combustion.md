@@ -13,7 +13,7 @@ author: Corrado R. Mazzarelli
 {:toc}
 
 # Context
-This was a homework assignment for the class AE6766 at Georgia Tech, but I wanted to hone my visualization skills using Plotly so I put a little extra effort into it. 
+This was a homework assignment for the class _AE6766 Combustion_ at Georgia Tech, but I wanted to hone my visualization skills using Plotly so I put a little extra effort into it. 
 
 # Task
 
