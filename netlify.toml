@@ -1,0 +1,15 @@
+[[plugins]]
+  package = "@netlify/plugin-a11y"
+  [plugins.inputs]
+    # Check all HTML files in this project (the default behavior)
+    #checkPaths = ['/']
+    # Do not fail the build if a11y issues are found
+    failWithIssues = false
+    # Ignore all HTML files in `/admin`
+    ignoreDirectories = ['/admin']
+    # Ignore any accessibility issues associated with an element matching this selector
+    #ignoreElements = '.jumbotron > h2'
+    # Ignore any accessibility issues associated with this rule code or type
+    #ignoreGuidelines = ['WCAG2AA.Principle1.Guideline1_4.1_4_6.G17']
+    # Perform a11y check against WCAG 2.1 AAA
+    #wcagLevel = 'WCAG2AAA'
