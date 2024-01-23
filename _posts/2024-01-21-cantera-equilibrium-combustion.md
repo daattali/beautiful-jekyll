@@ -79,6 +79,13 @@ Engineers and researchers use Cantera to model and simulate complex chemical pro
 
 # Code
 
+## Environment.yml
+
+[Link to environment.yml](https://corradomazzarelli.com/assets/blog_posts/bp.equilibrium_cantera/environment.yml)
+
+
+## Source Code 
+
 {% highlight python linenos %}
 # -*- coding: utf-8 -*-
 """
