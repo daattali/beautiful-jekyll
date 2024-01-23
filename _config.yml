@@ -17,10 +17,7 @@ navbar-links:
   Convention:
     - Registration: "registration"
     - Programming: 'programming'
-    - Dealer's Den: "dealers"
-    - Artist Alley: "artist-alley"
     - Poster: "poster"
-  # - Night Market: "night-market"
     - Dance Events: "dance-events"
     - Video Games: "video-games"
     - Photos: "https://fursquared.smugmug.com/"
@@ -30,6 +27,11 @@ navbar-links:
   # - Guest of Honor: "goh"
     - Code of Conduct: "code-of-conduct"
     - Covid Policy: "covid-policy"
+  Dealers and Artists:
+    - Artist Alley: "artist-alley"
+    - Dealer's Den: "dealers"
+    - Dealer's Gallery: "https://dealers.fursquared.com"
+    - Dealing At F2: "dealing-at-f2"
   Get Involved:
     - Attend: "registration"
     - Volunteer: "volunteer"

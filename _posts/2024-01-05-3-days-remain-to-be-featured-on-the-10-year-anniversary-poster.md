@@ -3,7 +3,7 @@ layout: post
 title: 3 Days Remain to be Featured on the 10 Year Anniversary Poster!
 subtitle: ENDS 1/8/23 - Don’t miss your opportunity to be drawn into F2 History!
 date: 2024-01-05T18:01:40.857Z
-cover-img: /uploads/screenshot-2024-01-05-at-12.31.54 pm.png
+cover-img: /uploads/screenshot-2024-01-05-at-12.31.54pm.png
 ---
 Every year the F2 art team puts together a BIG poster. This year we’re going even bigger.  For this momentous occasion, we've doubled our limit:\
 \
