@@ -76,3 +76,187 @@ Engineers and researchers use Cantera to model and simulate complex chemical pro
 
 ## Plotly
 [Plotly](https://plotly.com/python/) is a widely used plotting library which enables easy interactive plots which can be saved as interactive. They are the plots you'll see embedded here.
+
+# Code
+
+{% highlight python linenos %}
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jan 20 12:37:29 2024
+
+@author: mazzac3
+"""
+
+import numpy as np
+import pandas as pd
+import cantera as ct
+from tqdm import tqdm
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+
+# ----------------------------------------------------------------------------------------------------------------------
+# Define Inputs
+# ----------------------------------------------------------------------------------------------------------------------
+
+
+# phi_vals = np.around(np.linspace(0.6, 1.4, 9), decimals=2)
+phi_vals = np.around(np.linspace(0, 2, 21), decimals=2)
+p_0 = 101325  # Pa
+T_0 = 298  # K
+equilibration_modes = {
+    "HP": "Constant Enthalpy and Pressure",
+    # "TP": "Constant Temperature and Pressure",
+    # "TV": "Constant Temperature and Volume",
+    # "SP": "Constant Entropy and Pressure",
+    # "SV": "Constant Entropy and Volume",
+    "UV": "Constant Internal Energy and Volume"
+}
+
+
+
+air = "O2:0.21,N2:0.79"  # Define the oxidizer composition
+fuel = "C3H8:1"
+species_list = ['CO2', 'CO', 'H2O', 'H2', 'O2', 'OH', 'O', 'H']
+
+# ----------------------------------------------------------------------------------------------------------------------
+#%% Generate Results
+# ----------------------------------------------------------------------------------------------------------------------
+
+
+gas = ct.Solution('gri30.yaml')  # Create the gas mixture
+
+# Initialize a dictionary to hold the results
+raw_results = {}
+
+#  https://cantera.org/examples/python/thermo/equivalenceRatio.py.html
+for equilibration_mode in equilibration_modes:
+    raw_results[equilibration_mode] = ans = {}  # Create a dict to store the results
+    ans["Tad"] = np.zeros_like(phi_vals)  # Put a location to store Tad
+    ans["Cp"] = np.zeros_like(phi_vals)  # Put a location to store Cp
+    ans["Mole Fractions"] = np.zeros((len(phi_vals), len(species_list)))
+    
+    for i, phi in enumerate(tqdm(phi_vals, desc=f"Processing Constant {equilibration_mode}")):
+        
+        # Mix the fuel and air according to phi
+        gas.set_equivalence_ratio(phi=phi, fuel=fuel, oxidizer=air)
+        
+        # Set the starting temperature and pressure
+        gas.TP = T_0, p_0
+        
+        # Equilibrate the gas at constant pressure
+        gas.equilibrate(equilibration_mode)
+        
+        # grab the desired outputs
+        ans["Tad"][i] = gas.T
+        ans["Cp"][i] = gas.cp
+        ans["Mole Fractions"][i] = gas[species_list].X
+        
+    
+
+# ----------------------------------------------------------------------------------------------------------------------
+#%% Format Results
+# ----------------------------------------------------------------------------------------------------------------------
+
+result_dataframes = {} # store
+for equilibration_mode in raw_results:
+    
+    # This could be refactored but it's not worth the effort
+    
+    # Put the mole fractions into dataframes
+    raw_results[equilibration_mode]["Mole Fractions"] = pd.DataFrame(
+        raw_results[equilibration_mode]["Mole Fractions"],
+        columns=species_list,
+        index=phi_vals
+    )
+    
+    
+    # Put the temperatures into dataframes
+    raw_results[equilibration_mode]["Tad"] = pd.DataFrame(
+        raw_results[equilibration_mode]["Tad"],
+        columns=["Tad"],
+        index=phi_vals
+    )
+    
+    # Put the Cp into dataframes
+    raw_results[equilibration_mode]["Cp"] = pd.DataFrame(
+        raw_results[equilibration_mode]["Cp"],
+        columns=["Cp"],
+        index=phi_vals
+    )
+    
+    # Combine the dataframes
+    result_dataframes[equilibration_mode] = pd.concat([
+        raw_results[equilibration_mode]["Mole Fractions"],
+        raw_results[equilibration_mode]["Tad"],
+        raw_results[equilibration_mode]["Cp"],],
+        axis=1
+    )
+    
+    
+
+# ----------------------------------------------------------------------------------------------------------------------
+#%% Plot Results
+# ----------------------------------------------------------------------------------------------------------------------
+
+# Create plots for the homework
+for equilibration_mode, df in result_dataframes.items():
+    
+    # Create subplots
+    fig = make_subplots(rows=3, cols=1, subplot_titles=['Tad', "Cp" , 'Species Mole Fractions'], shared_xaxes=True)
+    
+    # Add the species
+    for col in df.columns:
+        row = 1 if col =="Tad" else 2 if col == "Cp" else 3
+        
+        # Add the traces
+        fig.add_trace(go.Scatter(x=phi_vals, y=df[col], mode='lines', name=col), row=row, col=1)
+
+   # Update layout
+    fig.update_layout(
+        xaxis3=dict(title='Phi'),
+        yaxis=dict(title='Temperature (K)'),
+        yaxis2=dict(title='Cp (J/kg.K)'),
+        yaxis3=dict(title='Mole Fraction'),
+        title=f'{equilibration_modes[equilibration_mode]} -- Propane Equilibrium Combustion',
+        hovermode='x unified'  # Set xunified hovermode
+    )
+
+    fig.show(renderer="browser")
+    fig.write_html(f"../plots/{equilibration_mode}.html")
+
+# ----------------------------------------------------------------------------------------------------------------------
+#%% Create Mole Fraction Animation 
+# ----------------------------------------------------------------------------------------------------------------------
+
+# Create plots for the homework
+for equilibration_mode, df in result_dataframes.items():
+    
+    # Reformat the DF for the animation 
+    reformatted_df = pd.concat(
+        [
+            pd.DataFrame({
+                "Phi": phi_vals,
+                "Species": [species] * len(phi_vals),
+                "Mole Fraction": df[species].tolist(),
+            })
+        for species in species_list]
+    ).reset_index(drop=True)
+    
+    
+    # Create subplots
+    fig = px.bar(
+        reformatted_df,
+        x="Species", 
+        y="Mole Fraction",
+        color="Species", 
+        animation_frame="Phi", 
+        range_y=[0, 0.25],
+        title=f'{equilibration_modes[equilibration_mode]} -- Propane Equilibrium Combustion Composition'
+        )
+    
+    fig.show(renderer="browser")
+    fig.write_html(f"../plots/{equilibration_mode}_mole_fraction_animation.html")
+
+{% endhighlight %}
