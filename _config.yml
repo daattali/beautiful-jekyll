@@ -21,12 +21,14 @@ author: Lukas Käll
 
 navbar-links:
   Members:
-    - "people/lukas"
+    - Lukas Käll: "/people/lukas"
   Tools:
     - Phobius: "https://phobius.sbc.su.se/"
     - Percolator: "https://percolator.ms"
+    - MaRaCluster: "https://github.com/statisticalbiotechnology/maracluster"
     - Triqler: "https://github.com/statisticalbiotechnology/triqler"
   Publications: "https://scholar.google.se/citations?user=aZALISYAAAAJ&hl=en"
+  Finding us: "/finding-us"
 
 ################
 # --- Logo --- #
