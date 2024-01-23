@@ -9,7 +9,7 @@
 {%- if my_links -%}
 <ul class="list-inline text-center footer-links">
 
-{%- for network in site.social-network-links -%}
+{%- for network in my_links -%}
 
   {%- if network[0] == "rss" and network[1] and site.rss-description -%}
   <li class="list-inline-item">
