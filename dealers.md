@@ -74,7 +74,7 @@ subtitle: Welcome, welcome, one and all! With all of these dazzling wares we’r
 
 # Dealers Den & Night Market Hours
 
-| Day   | Dealer's Den | Night Market |
+| Day | Dealer's Den | Night Market |
 | :---: | :---: | :---: |
 | **Friday** | 10AM - 6PM | 9PM - 1AM |
 | **Saturday** | 10AM - 6PM | 9PM - 1AM |
