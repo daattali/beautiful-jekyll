@@ -74,6 +74,23 @@ subtitle: Welcome, welcome, one and all! With all of these dazzling wares we’r
 
 # Dealers Den & Night Market Hours
 
+|    | Dealer's Den | Night Market |
+| --- | :---: | :---: |
+| **Friday** | 10AM - 6PM | 9PM - 1AM |
+| **Saturday** | 10AM - 6PM | 9PM - 1AM |
+| **Sunday** | 10AM - 4PM | Closed |
+
+Dealer's Den:
+  Public Hours:
+    Friday: 10AM - 6PM
+    Saturday: 10AM - 6PM
+    Sunday: 10AM - 4PM
+
+Night Market Hours:
+  Public hours:
+    Friday: 9 PM ~ 1AM
+    Saturday: 9 PM ~ 1AM
+
 ![Dealer's Den Schedule](/uploads/F2DD_site_sched_rev2.png)
 
 # After Hours
