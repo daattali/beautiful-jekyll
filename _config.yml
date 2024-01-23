@@ -20,11 +20,13 @@ author: Lukas Käll
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Members:
+    - "people/lukas"
+  Tools:
+    - Phobius: "https://phobius.sbc.su.se/"
+    - Percolator: "https://percolator.ms"
+    - Triqler: "https://github.com/statisticalbiotechnology/triqler"
+  Publications: "https://scholar.google.se/citations?user=aZALISYAAAAJ&hl=en"
 
 ################
 # --- Logo --- #
