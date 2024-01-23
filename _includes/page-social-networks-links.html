@@ -1,8 +1,7 @@
-{% if not page.social-network-links %}
-{% if site.social-network-links %}
+{% if page.social-network-links %}
 <ul class="list-inline text-center footer-links">
 
-{%- for network in site.social-network-links -%}
+{%- for network in page.social-network-links -%}
 
   {%- if network[0] == "rss" and network[1] and site.rss-description -%}
   <li class="list-inline-item">
@@ -371,5 +370,4 @@
 {%- endfor -%}
 
 </ul>
-{% endif %}
 {% endif %}
