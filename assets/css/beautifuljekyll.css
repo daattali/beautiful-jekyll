@@ -515,7 +515,7 @@ footer .footer-custom-content {
   margin-left: 0.625rem;
   height: 12rem;
   width: 12rem;
-}
+}.post
 .post-preview .post-image {
   filter: grayscale(40%);
 }
@@ -641,7 +641,7 @@ footer .footer-custom-content {
   position: relative;
 }
 .intro-header.big-img {
-  background: no-repeat top center;
+  background: no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -660,7 +660,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: no-repeat top center;
+  background: no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
