@@ -22,8 +22,8 @@ author: Corrado R. Mazzarelli
 navbar-links:
   Home: "cormazz.github.io"
   About Me: "aboutme"
-  Curriculum Vitae: "/assets/pdf/Resume 6.3.pdf"
-  Projects:
+  Resume: "/assets/pdf/Resume 6.3.pdf"
+  Highlighted Projects:
     - DJ Assistant: "https://github.com/CorMazz/DanceDJAssistant"
     - Spectrogram: "https://github.com/CorMazz/spectrography"
 
