@@ -641,7 +641,7 @@ footer .footer-custom-content {
   position: relative;
 }
 .intro-header.big-img {
-  background: no-repeat center center;
+  background: no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
