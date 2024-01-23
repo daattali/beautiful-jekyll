@@ -10,7 +10,8 @@ social-network-links:
   bluesky: "lukaskall.bsky.social"
   ORCID: "0000-0001-5689-9797"
   google-scholar: "aZALISYAAAAJ"
-  phone: "+46769425179"
+  telephone: "+46769425179"
+  linkedin: "lukaskall"
 
 
 

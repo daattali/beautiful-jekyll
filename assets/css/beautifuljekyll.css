@@ -660,7 +660,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: no-repeat center center;
+  background: no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
