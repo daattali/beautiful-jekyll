@@ -1,12 +1,12 @@
 {%- if site.social-network-links -%}
-  {%- set my_links = site.social-network-links -%}
+  {%- assign my_links = site.social-network-links -%}
 {%- endif -%}
 {%- if page.social-network-links -%}
-  {%- set my_links = page.social-network-links -%}
+  {%- assign my_links = page.social-network-links -%}
 {%- endif -%}
 
 
-{%- if my_links is defined -%}
+{%- if my_links -%}
 <ul class="list-inline text-center footer-links">
 
 {%- for network in site.social-network-links -%}
