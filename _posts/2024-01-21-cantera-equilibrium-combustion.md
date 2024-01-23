@@ -108,7 +108,6 @@ from plotly.subplots import make_subplots
 # ----------------------------------------------------------------------------------------------------------------------
 
 
-# phi_vals = np.around(np.linspace(0.6, 1.4, 9), decimals=2)
 phi_vals = np.around(np.linspace(0, 2, 21), decimals=2)
 p_0 = 101325  # Pa
 T_0 = 298  # K
@@ -152,7 +151,7 @@ for equilibration_mode in equilibration_modes:
         # Set the starting temperature and pressure
         gas.TP = T_0, p_0
         
-        # Equilibrate the gas at constant pressure
+        # Equilibrate the gas at constant XX properties
         gas.equilibrate(equilibration_mode)
         
         # grab the desired outputs
@@ -217,10 +216,9 @@ for equilibration_mode, df in result_dataframes.items():
     for col in df.columns:
         row = 1 if col =="Tad" else 2 if col == "Cp" else 3
         
-        # Add the traces
         fig.add_trace(go.Scatter(x=phi_vals, y=df[col], mode='lines', name=col), row=row, col=1)
 
-   # Update layout
+   # Update title and stuff
     fig.update_layout(
         xaxis3=dict(title='Phi'),
         yaxis=dict(title='Temperature (K)'),
@@ -237,7 +235,6 @@ for equilibration_mode, df in result_dataframes.items():
 #%% Create Mole Fraction Animation 
 # ----------------------------------------------------------------------------------------------------------------------
 
-# Create plots for the homework
 for equilibration_mode, df in result_dataframes.items():
     
     # Reformat the DF for the animation 
@@ -252,7 +249,7 @@ for equilibration_mode, df in result_dataframes.items():
     ).reset_index(drop=True)
     
     
-    # Create subplots
+    # Create the animation
     fig = px.bar(
         reformatted_df,
         x="Species", 
