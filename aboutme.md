@@ -10,7 +10,7 @@ Welcome to Cory's Journey:
 
 In the tapestry of my life, passion is the vibrant thread that weaves through every chapter. From taking on lead roles in high school musicals to waltzing across the floor as captain of the RPI collegiate ballroom dance team, I've embraced each opportunity with an unyielding enthusiasm for excellence.
 
-My journey extends beyond the physical stage and limelight, as academic pursuits were another place I shined. Achieving a perfect 4.0 in an accelerated 3-year undergradate course of study and graduate school wasn't merely about grades; it was a testament to my voracious appetite for learning. I thrived not just in the pursuit of knowledge but in the application of it.
+My journey extends beyond the physical stage and limelight, as academic pursuits were another place I shined. Achieving a perfect 4.0 in an accelerated 3-year undergradate course of study and while working full-time through graduate school wasn't merely about grades; it was a testament to my voracious appetite for learning. I thrived not just in the pursuit of knowledge but in the application of it.
 
 As a stellar engineer in the Edison Engineering Development Program at GE Vernova, I've demonstrated that past successes predict future returns. Each milestone achieved is a stepping stone toward a future where innovation, dedication, and a love for learning converge. The path I've walked is marked by a consistent commitment to excellence, setting the stage for what lies ahead.
 
