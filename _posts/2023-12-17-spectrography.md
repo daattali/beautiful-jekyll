@@ -18,28 +18,29 @@ This article explores separating parts of a signal based on the dominant frequen
 # Summary
 While working at GE, I did my best to seek out fun data science projects to sate intellectual curiosity. Two years ago, someone approached me and asked if there was a way to cluster periodic data based on its frequency. The goal was to take a plot of data that looked like this:
 
+[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/initial_data.html)
 {% include bp.spectrography/initial_data.html %}
 
 and label the different sections based on their frequencies. 
 
 I did this by transforming the data into the frequency domain where high and low frequencies could easily be seen using the short-time-Fourier-transform, which essentially takes the normal Fourier transform but on a rolling window, thus trading temporal certainty for spectral certainty. That spectrogram looked like this:
 
-[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.equilibrium_cantera/spectrogram.html)
+[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/spectrogram.html)
 {% include bp.spectrography/spectrogram.html %}
 
 This plot shows the energy in each frequency at a given time. From here, the dominant frequencies were drawn out by simply finding the frequency with the most energy (the most yellow on the plot) at a certain time, and plotted. 
 
-[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.equilibrium_cantera/dominant_frequency_plot.html)
+[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/dominant_frequency_plot.html)
 {% include bp.spectrography/dominant_frequency_plot.html %}
 
 It would be simple to draw a line to separate out the high frequency from the low frequency data; however, that would neglect the temporal separation of the different sections of data. Thus, DBSCAN clustering was used to temporally and spectrally cluster the data.
 
-[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.equilibrium_cantera/clustered_dominant_frequencies.html)
+[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/clustered_dominant_frequencies.html)
 {% include bp.spectrography/clustered_dominant_frequencies.html %}
 
 Once the hyperparameters were tuned, the DBSCAN algorithm did an excellent job segmenting the data into different clusters. The identified clusters were then mapped onto the original data, and the final plot was created.
 
-[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.equilibrium_cantera/clustered_data.html)
+[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/clustered_data.html)
 {% include bp.spectrography/clustered_data.html %}
 
 {: .box-note}
