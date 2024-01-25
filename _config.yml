@@ -24,8 +24,7 @@ navbar-links:
   About Me: "aboutme"
   Resume: "/assets/pdf/Resume 6.3.pdf"
   Highlighted Projects:
-    - DJ Assistant: "https://github.com/CorMazz/DanceDJAssistant"
-    - Spectrogram: "https://github.com/CorMazz/spectrography"
+    - Spectrogram: "https://www.corradomazzarelli.com/2023-12-17-spectrography/"
 
 ################
 # --- Logo --- #
