@@ -6,7 +6,7 @@ subtitle: Past Experience & Future Goals
 
 # Note to the Reader
 
-Welcome to Cory's Journey:
+**Welcome to Cory's Journey:**
 
 In the tapestry of my life, passion is the vibrant thread that weaves through every chapter. From taking on lead roles in high school musicals to waltzing across the floor as captain of the RPI collegiate ballroom dance team, I've embraced each opportunity with an unyielding enthusiasm for excellence.
 
@@ -16,8 +16,9 @@ As a stellar engineer in the Edison Engineering Development Program at GE Vernov
 
 Join me on this journey where passion fuels purpose, drive propels progress, and the quest for knowledge is an everlasting dance. Together, we'll navigate the symphony of success, harmonizing past achievements with the promise of an even brighter future.
 
-Sincerely,
-Corrado R. Mazzarelli
+**Sincerely,**
+
+**_Corrado Mazzarelli_**
 
 # Personal History
 
