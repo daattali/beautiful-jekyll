@@ -18,6 +18,7 @@ This article explores separating parts of a signal based on the dominant frequen
 # Summary
 While working at GE, I did my best to seek out fun data science projects to sate intellectual curiosity. Two years ago, someone approached me and asked if there was a way to cluster periodic data based on its frequency. The goal was to take a plot of data that looked like this:
 
+### Figure 1: Initial Data
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/initial_data.html)
 {% include bp.spectrography/initial_data.html %}
 
@@ -25,21 +26,25 @@ and label the different sections based on their frequencies.
 
 I did this by transforming the data into the frequency domain where high and low frequencies could easily be seen using the short-time-Fourier-transform, which essentially takes the normal Fourier transform but on a rolling window, thus trading temporal certainty for spectral certainty. That spectrogram looked like this:
 
+### Figure 2: Spectrogram
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/spectrogram.html)
 {% include bp.spectrography/spectrogram.html %}
 
 This plot shows the energy in each frequency at a given time. From here, the dominant frequencies were drawn out by simply finding the frequency with the most energy (the most yellow on the plot) at a certain time, and plotted. 
 
+### Figure 3: Dominant Frequency Plot
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/dominant_frequency_plot.html)
 {% include bp.spectrography/dominant_frequency_plot.html %}
 
 It would be simple to draw a line to separate out the high frequency from the low frequency data; however, that would neglect the temporal separation of the different sections of data. Thus, DBSCAN clustering was used to temporally and spectrally cluster the data.
 
+### Figure 4: Clustered Dominant Frequency Plot
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/clustered_dominant_frequencies.html)
 {% include bp.spectrography/clustered_dominant_frequencies.html %}
 
 Once the hyperparameters were tuned, the DBSCAN algorithm did an excellent job segmenting the data into different clusters. The identified clusters were then mapped onto the original data, and the final plot was created.
 
+### Figure 5: Final Clustered Data
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.spectrography/clustered_data.html)
 {% include bp.spectrography/clustered_data.html %}
 
@@ -71,7 +76,7 @@ When considering the Uncertainty Principle in the context of the Short-Time Four
 **Long Time Windows:** Conversely, using longer time windows enhances frequency resolution but diminishes temporal resolution. Longer windows are better suited for capturing the frequency components of slowly varying signals but might miss the nuances of rapidly changing parts of the signal (ie, exactly when the signal switches from low frequency to high frequency)
 
 #### Effects
-The Uncertainty Principle manifests itself in two places. First, if you zoom in on the final identified clusters plot at a transition between low and high frequency, you will notice a small portion of the signal misidentified as noise. This is because there is not enough temporal accuracy to determine when exactly the signal switches between frequencies. Second, if you look at the legend of the final plot, the frequencies of the different clusters are identified as 1.17 Hz and 30.51 Hz. The actual frequencies are 0.05 Hz and 30 Hz. This is an artifact of the spectral uncertainty that we incurred when we gained temporal certainty. 
+The Uncertainty Principle manifests itself in two places. First, if you zoom in on the [final identified clusters plot](#figure-5-final-clustered-data) at a transition between low and high frequency, you will notice a small portion of the signal misidentified as noise. This is because there is not enough temporal accuracy to determine when exactly the signal switches between frequencies. Second, if you look at the legend that plot, the frequencies of the different clusters are identified as 1.17 Hz and 30.51 Hz. The actual frequencies are 0.05 Hz and 30 Hz. This is an artifact of the spectral uncertainty that we incurred when we gained temporal certainty. 
 
 In summary, the Uncertainty Principle introduces a fundamental constraint on the joint precision of time and frequency measurements in signal analysis. This principle influences the design choices made when configuring the parameters of the STFT, such as the choice of window size and overlap. Striking a balance between time and frequency resolutions is crucial to effectively extract meaningful information from signals while acknowledging the inherent limitations imposed by the Uncertainty Principle.
 
@@ -88,7 +93,7 @@ In the context of digital signal processing, aliasing can result in the creation
 
 Aliasing can introduce errors and artifacts in various applications, including audio processing, image processing, and data acquisition. To mitigate aliasing, it is essential to adhere to proper sampling practices, ensuring that the sampling frequency is sufficiently high to accurately represent the signal's frequency content without introducing distortions. Anti-aliasing filters are often employed to remove high-frequency components before sampling, preventing aliasing and preserving the fidelity of the original signal during digitization. 
 
-In this case, zoom in on the high frequency portion of the data. You'll notice until you get really, really close, the data does not look like a proper sine wave. This is because when you are zoomed out, you're witnessing the effects of aliasing and the data appears to be a different frequency than it really is. 
+In this case, zoom in on the high frequency portion of [the data](#figure-1-initial-data). You'll notice until you get really, really close, the data does not look like a proper sine wave. This is because when you are zoomed out, you're witnessing the effects of aliasing and the data appears to be a different frequency than it really is. 
 
 # Python Libraries
 
