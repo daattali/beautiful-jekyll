@@ -30,3 +30,4 @@ VPC flow logs, how to enable, how there work, when to use them.
 Firewall rules- defining correct priority, integrating with hierarchical firewall policies, how to defer to next levwl,
 Load balancers- cloud armour and protection it can offer to external https load balancer. When to select network load balancer, when to opt for TCP load balancer.
 Internl load balancer in front of IDS?
+GKE CLUSTwr sizing, default number of pods, how to configure with out RFC1918 ange (also similar for VPC network design). Configuring private GKE cluster. Accessing private clusters. Thwsse quetions brought a welcome relief due to a lot of familiarility day to dy ith GKE.
