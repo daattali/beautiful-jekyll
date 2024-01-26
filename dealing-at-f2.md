@@ -80,6 +80,21 @@ If you have submitted an application and were placed on the Waitlist, please rem
 
 If you are picking up badges for yourself or your assistant, you may do so on Thursday at Con Ops (Golda Meir), right next to the main Dealers Den. If you are picking your badge(s) up on Friday, you will need to pick them up at Registration.
 
+**Shipping Items to the Hotel**
+-------------------------------
+For vendors that may want to ship merchandise directly to the hotel instead of having to travel with stock, the hotel can receive and hold packages. Please note that there is a flat holding fee of $7.39 per package; this will apply to all standard packaging, as well as larger packages such as pelican cases.
+
+Pallets or skidded merchandise are only accepted via special arrangement and should not be shipped without prior communication and approval. Before shipping any palletized or skidded merchandise, please call +1 (414) 271-7250.
+
+When shipping to the hotel, please make sure that the package label is addressed to the hotel address as listed below, and please make sure that the label includes your (or the recipient's) name, arrival date, and reservation confirmation number. Finally, make sure to pay all fees and costs at the time of shipping as the hotel will not accept packages that are sent C.O.D. (Cash On Delivery).
+
+The shipping address for the hotel is:
+
+**Hilton Milwaukee City Center**<br>
+**509 W Wisconsin Ave**<br>
+**Milwaukee, WI 53203**
+
+
 **Code of Conduct**
 -------------------
 
