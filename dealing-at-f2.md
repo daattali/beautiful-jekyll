@@ -2,9 +2,11 @@
 layout: page
 title: Dealing at Fur Squared
 subtitle: Information for the people dealing at Fur Squared
+toc: true
 ---
 
-# Dealer's Den Hours & Schedule
+**Dealer's Den Hours & Schedule**
+---------------------------------
 
 ![Dealer's Den Schedule](https://fursquared.com/uploads/F2DD_site_sched_rev2.png)
 
