@@ -4,7 +4,7 @@ title: Visualizing & Animating Equilibrium Combustion Products vs. Equivalence R
 subtitle: Using Cantera and Plotly Animations
 gh-repo: cormazz/vmd-denoising
 gh-badge: [star, fork, follow]
-tags: [python, cantera, combustion, Georgia Tech, plotly, animation]
+tags: [python, cantera, combustion, georgia tech, plotly, animation]
 comments: true
 author: Corrado R. Mazzarelli
 ---
