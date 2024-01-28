@@ -4,12 +4,14 @@ title: Fourier Time Series Analysis In Python
 subtitle: Data Segmentation with the STFT and DBSCAN Clustering
 gh-repo: cormazz/spectrography
 gh-badge: [star, fork, follow]
-thumbnail-img: /assets/blog_posts/bp.spectrography/cover_image.png
-share-img: /assets/blog_posts/bp.spectrography/cover_image.png
+
 tags: [machine-learning, python, clustering, dbscan, spectrogram, stft, ]
 comments: true
 author: Corrado R. Mazzarelli
 ---
+
+thumbnail-img: /assets/blog_posts/bp.spectrography/cover_image.png
+share-img: /assets/blog_posts/bp.spectrography/cover_image.png
 
 {: .box-success}
 This article explores separating parts of a signal based on the dominant frequency in that part of the signal. All the material used to create this is within the [GitHub repository](https://github.com/cormazz/spectrography). **I strongly encourage you to explore the [resources](#resources) linked below.** They have guided me on my engineering journey and it is truly some remarkable information, all available for free. This article will be written with the assumption that you are familiar with Python, and have watched the reference videos on the discrete Fourier transform, the fast Fourier transform, the Uncertainty Principle, and clustering algorithms. 
