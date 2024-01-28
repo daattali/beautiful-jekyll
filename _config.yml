@@ -25,6 +25,7 @@ navbar-links:
   Resume: "/assets/pdf/Resume 6.3.pdf"
   Highlighted Projects:
     - Spectrogram: "https://www.corradomazzarelli.com/2023-12-17-spectrography/"
+    - CFD Solver: "https://www.corradomazzarelli.com/2024-01-26-cfd/"
 
 ################
 # --- Logo --- #
