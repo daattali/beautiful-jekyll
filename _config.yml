@@ -20,7 +20,7 @@ author: Corrado R. Mazzarelli
 ###############################################
 
 navbar-links:
-  Home: "cormazz.github.io"
+  Home: "corradomazzarelli.com"
   About Me: "aboutme"
   Resume: "/assets/pdf/Resume 6.3.pdf"
   Highlighted Projects:
@@ -97,7 +97,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "cormazz.github.io"
+url-pretty: "corradomazzarelli.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
