@@ -9,8 +9,7 @@ comments: true
 author: Corrado R. Mazzarelli
 ---
 
-# Summary
-
+{: .box-success}
 Variational mode decomposition (VMD) was explored as a methodology for denoising data, based on prior work by [(Chen et al.)](#the-steady-state-detection-paper). An artificial dataset was generated with both clean and noisy signals, and then VMD performed on the signals while varying the VMD hyperparemeters α and _k_. The signal to noise ratio (SNR) as described by the paper was used to characterize the proficiency in denoising. Two SNRs were obtained for each set of VMD hyperparameters: estimated SNR, which compares the denoised signal to the noisy signal, and true SNR, which compares the denoised signal to the original clean signal. It was discovered that the paper's methodology for denoising was overly conservative in removing noise and its optimization would settle upon the VMD hyperparameters that least changed the signal fed to the algorithm leaving room for a 25% improvement in true signal to noise. Ultimately, VMD was essentially just functioning as a low-pass filter and alternative methods such as a rolling average or a Butterworth filter would be simpler, more widely used, and easier to understand. 
 
 
@@ -99,6 +98,14 @@ The following plot shows the comparison between [the paper's](#the-steady-state-
 In this figure it is clear to see that the reconstructed signal created with the paper's methodology is less faithful to the original clean pressure signal, even though it has a higher estimated SNR. The true optimal signal is shown on the plot for comparison. 
 
 # Conclusion
+
+The exploration of variational mode decomposition (VMD) for denoising, inspired by the work of [(Chen et al.)](#the-steady-state-detection-paper), has revealed insights into the methodology's strengths and limitations. The investigation focused on an artificial dataset with clean and noisy signals, utilizing VMD with varying hyperparameters α and k. The signal-to-noise ratio (SNR) was employed to assess denoising efficacy, distinguishing between estimated SNR (comparing the denoised signal to the noisy signal) and true SNR (comparing the denoised signal to the original clean signal).
+
+The findings suggest that the paper's denoising methodology, driven by the optimization of VMD hyperparameters using an SNR metric, tends to be overly conservative. The optimization process converges to hyperparameters that make minimal changes to the signal, resulting in a high estimated SNR but leaving room for a significant 25% improvement in true SNR.
+
+VMD, in this context, essentially functions as a low-pass filter. While the methodology presented in the paper provides insights, alternative and simpler approaches such as a rolling average or a Butterworth filter may offer more practical solutions, being widely used and easier to interpret.
+
+In conclusion, while VMD presents a viable denoising approach, careful consideration of hyperparameters is crucial. The study recommends reevaluating the optimization metric and exploring alternative methods that offer simplicity and widespread applicability.
 
 # Python Libraries
 
