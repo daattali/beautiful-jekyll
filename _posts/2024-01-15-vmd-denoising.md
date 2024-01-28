@@ -94,9 +94,9 @@ The following plot shows the comparison between [the paper's](#the-steady-state-
 
 ### Figure 5: Final Comparison Between Optimally Reconstructed Signals
 [Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/final_results_comparison.html)
-{% include bp.vmd_denoising/final_results_comparison %}
+{% include bp.vmd_denoising/final_results_comparison.html %}
 
-In this figure 
+In this figure it is clear to see that the reconstructed signal created with the paper's methodology is less faithful to the original clean pressure signal, even though it has a higher estimated SNR. The true optimal signal is shown on the plot for comparison. 
 
 # Conclusion
 
