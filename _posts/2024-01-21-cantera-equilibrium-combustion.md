@@ -11,7 +11,7 @@ comments: true
 author: Corrado R. Mazzarelli
 ---
 
-# Context
+{: .box-success}
 This was a homework assignment for the class _AE6766 Combustion_ at Georgia Tech, but I wanted to hone my visualization skills using Plotly so I put a little extra effort into it. 
 
 * Do not remove this line (it will not be displayed)
