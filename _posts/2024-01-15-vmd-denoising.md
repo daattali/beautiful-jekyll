@@ -4,6 +4,9 @@ title: Denoising Time Series Data with Variational Mode Decomposition In Python
 subtitle: A Precursor to Steady State Detection
 gh-repo: cormazz/vmd-denoising
 gh-badge: [star, fork, follow]
+cover-img: /assets/blog_posts/bp.vmd_denoising/cover_image.png
+thumbnail-img: /assets/blog_posts/bp.vmd_denoising/thumbnail.png
+share-img: /assets/blog_posts/bp.vmd_denoising/thumbnail.png
 tags: [python, vmd, denoising, time-series]
 comments: true
 author: Corrado R. Mazzarelli
