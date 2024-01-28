@@ -9,14 +9,13 @@ comments: true
 author: Corrado R. Mazzarelli
 ---
 
-# This is a Work-In-Progress -- Last Updated 1/20/24
+# Summary
+
+Variational mode decomposition (VMD) was explored as a methodology for denoising data, based on prior work by [(Chen et al.)](#the-steady-state-detection-paper). An artificial dataset was generated with both clean and noisy signals, and then VMD performed on the signals while varying the VMD hyperparemeters α and _k_. The signal to noise ratio (SNR) as described by the paper was used to characterize the proficiency in denoising. Two SNRs were obtained for each set of VMD hyperparameters: estimated SNR, which compares the denoised signal to the noisy signal, and true SNR, which compares the denoised signal to the original clean signal. It was discovered that the paper's methodology for denoising was overly conservative in removing noise and its optimization would settle upon the VMD hyperparameters that least changed the signal fed to the algorithm leaving room for a 25% improvement in true signal to noise. Ultimately, VMD was essentially just functioning as a low-pass filter and alternative methods such as a rolling average or a Butterworth filter would be simpler, more widely used, and easier to understand. 
+
 
 * Do not remove this line (it will not be displayed)
 {:toc}
-
-# Summary
-
-Variational mode decomposition (VMD) was explored as a methodology for denoising data, based on prior work by [(Chen et al.)](#the-steady-state-detection-paper). An artificial dataset was generated with both clean and noisy signals, and then VMD performed on the signals while varying the VMD hyperparemeters α and _k_. The signal to noise ratio (SNR) as described by the paper was used to characterize the proficiency in denoising. Two SNRs were obtained for each set of VMD hyperparameters: estimated SNR, which compares the denoised signal to the noisy signal, and true SNR, which compares the denoised signal to the original clean signal. It was discovered that the paper's methodology for denoising was overly conservative in removing noise and its optimization would settle upon the VMD hyperparameters that least changed the signal fed to the algorithm leaving room for a 25% improvement in true signal to noise.
 
 # Introduction
 
@@ -92,6 +91,12 @@ In the case of the paper, the true noiseless signal was unknown. However, for th
 On the left, the reconstructed signal was compared to the original noisy signal (as performed in the paper), and on the right the reconstructed signal was compared to the original clean signal to see the true denoising potential of the methodology. As expected, the estimated SNR was maximized at a value of 28.41 with low α and _k_ parameters, (100 and 2 respectively), which corresponds to limited change from the noisy signal. This is seen in the left side of [Figure 4](#figure-4-noisy-pressure-snr-heatmap) where the yellow appears in the top left of the heatmap. The SNR of the reconstructed signal compared to the true noiseless signal is maximized at a value of 43.95 with α of 10,000 and _k_ of 8.  Thus, the methodology utilized in [the paper](#the-steady-state-detection-paper) is overly conservative in noise removal.
 
 The following plot shows the comparison between [the paper's](#the-steady-state-detection-paper) optimal reconstructed signal and the true optimal reconstructed signal. 
+
+### Figure 5: Final Comparison Between Optimally Reconstructed Signals
+[Standalone Figure](https://corradomazzarelli.com/assets/blog_posts/bp.vmd_denoising/final_results_comparison.html)
+{% include bp.vmd_denoising/final_results_comparison %}
+
+In this figure 
 
 # Conclusion
 
