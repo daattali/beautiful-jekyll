@@ -33,8 +33,9 @@ Close
 **Please remember to check out at the info desk when you leave the alley for the day!**
 This way, people on the waiting list can participate AND you get the opportunity to sign up for the next day’s lotto immediately! Failure to check out may result in disqualification for the following day.
 
-How to Participate:
-Option 1: On-Site Lotto Signups
+### How to Participate:
+
+#### Option 1: On-Site Lotto Signups
 
 * Sign up in-person before the lotto draw times (see time table above). This is done at the Artist Alley Info Desk, right outside of the Artist Alley. You can be added to the waitlist any time throughout the day.
 * The Lotto will run when the Alley opens for Setup (see time table above).
@@ -53,7 +54,7 @@ Info we’ll need from you:
 * Badge Number
 * Telegram @ or Phone Number
 
-#### Rules and Other Info
+### Rules and Other Info
 
 * **Do not post things on walls.** This is a historical hotel with historical walls, please be respectful. **If this rule broken, you will be immediately removed from the Artist Alley and disallowed from entering the lotto for the rest of the weekend.** Depending on severity, your badge may be revoked completely.
 * **Please clean your area for the next person when you check out.**
@@ -72,7 +73,7 @@ Info we’ll need from you:
 
 If you have questions about whether or not your items fall in the guidelines, please email **art@fursquared.com** before the con or find **RenaCat** or other Artist Alley Staff in-person by the **Artist Alley Info Desk** or via the **Artist Alley Telegram Channel**.
 
-This year, most of our at-con announcements will be made through telegram! Go to [ **Link will be available Wednesday 2/21/24** ] to keep yourself updated!\
+This year, most of our at-con announcements will be made through telegram! Go to [ **Link will be available Wednesday 2/21/24** ] to keep yourself updated!
 
 Be Kind. Have Fun. Make Bank.
 Good Luck!
