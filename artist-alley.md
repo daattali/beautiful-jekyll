@@ -77,5 +77,5 @@ If you have questions about whether or not your items fall in the guidelines, pl
 
 This year, most of our at-con announcements will be made through telegram! Go to [ **Link will be available Wednesday 2/21/24** ] to keep yourself updated!
 
-Be Kind. Have Fun. Make Bank.
+Be Kind. Have Fun. Make Bank.\
 Good Luck!
