@@ -32,9 +32,9 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 8-Jan		| _Cancelled_	                		| [MIC 2020-2021](https://academicsarecool.com/#/samples)           | (Mathcounts School Round) |
 | 15-Jan	| _No School_		                	| _No School_ | (AMC 8)                   |
 | 22-Jan	| _Cancelled, School Social_      | _Cancelled_ | _Cancelled, no topic_ |
-| 29-Jan	| Similarity		                	| [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/) Problem 1 - 20 |                           |
-| 5-Feb		| Circles                       	| [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/) Problem 21 - 30 |                           |
-| 12-Feb	| Logic					                  |                                       | _No School_               |
+| 29-Jan	| Similarity		                	| [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/) Problem 1 - 20 | _Cancelled, no topic_ |
+| 5-Feb		| Circles                       	| _Cancelled, coaches in math competition_ | _Cancelled, no topic_ |
+| 12-Feb	| Logic					                  | [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/) Problem 21 - 30 | _No School_               |
 | 19-Feb	| _No School_ 	                	|                                       |                           |
 | 26-Feb	| Pascal's Triangle              	|                                       |                           |
 | 4-Mar	  | Sequences                       |                                       | _No School_               |
