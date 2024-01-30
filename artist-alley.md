@@ -40,7 +40,7 @@ This way, people on the waiting list can participate AND you get the opportunity
 
 ### Rules and Other Info
 
-* **Do not post things on walls.** This is a historical hotel with historical walls, please be respectful. **If this rule broken, you will be immediately removed from the Artist Alley and disallowed from entering the lotto for the rest of the weekend.** Depending on severity, your badge may be revoked completely.
+* **Do not post things on walls.** This is a historical hotel with historical walls, please be respectful. **If this rule is broken, you will be immediately removed from the Artist Alley and disallowed from entering the lotto for the rest of the weekend.** Depending on severity, your badge may be revoked completely.
 * **Please clean your area for the next person when you check out.**
 * **Each person gets ½ of a table.** Please don’t encroach into your neighbor’s space.
 * **Cover those bits: Minors will be present at the con, so please have NSFW pieces clearly marked and censored.**
