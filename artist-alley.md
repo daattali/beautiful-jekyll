@@ -9,8 +9,9 @@ subtitle: Hours, Rules, and Other Fun Info!
 
 The Artist Alley runs on a lottery system where new participants are chosen daily. You can enter the lottery in-person at the Artist Alley Info Desk or via Telegram.
 Sign up early via the Artist Alley Telegram Channel: \[Link will be available Wednesday 2/21/24 ]
-\
+
 **HOURS**
+
 
 
 ### Please remember to check out at the info desk when you leave the alley for the day!
