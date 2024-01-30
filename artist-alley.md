@@ -12,7 +12,7 @@ Sign up early via the Artist Alley Telegram Channel: \[Link will be available We
 
 **HOURS**
 
-
+![](/uploads/f2_2024_artistalley_hours.png)
 
 ### Please remember to check out at the info desk when you leave the alley for the day!
 
