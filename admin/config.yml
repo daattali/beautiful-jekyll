@@ -32,6 +32,14 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Sub Title", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Artist Alley"
+        name: "artist-alley"
+        file: "artist-alley.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub Title", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - label: "Code of Conduct"
         name: "code-of-conduct"
         file: "code-of-conduct.md"
