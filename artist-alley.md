@@ -11,16 +11,7 @@ The Artist Alley runs on a lottery system where new participants are chosen dail
 Sign up early via the Artist Alley Telegram Channel: \[Link will be available Wednesday 2/21/24 ]
 \
 **HOURS**
-Friday
-Saturday
-Sunday
-Sign Up
-10:30 AM
-9:30 AM
-9:30 AM
-Lotto/Setup
-12:00 PM
-1
+
 
 ### Please remember to check out at the info desk when you leave the alley for the day!
 
