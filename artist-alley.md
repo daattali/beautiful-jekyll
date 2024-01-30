@@ -43,14 +43,16 @@ This way, people on the waiting list can participate AND you get the opportunity
 * The Lotto will run when the Alley opens for Setup (see time table above).
 * If your name is chosen in the lotto, you get 1 hour to set up. If you haven’t checked in and claimed your table before the Artist Alley opens to the public, you have a 15 minute grace period to do so before your spot is forfeited and given to the next person on the waitlist.
 * Waitlisted people will be contacted via Text/Telegram when a spot opens up.
-  Option 2: Telegram Lotto Signups
+
+### Option 2: Telegram Lotto Signups
+
 * Go to the Artist Alley Telegram Announcement Channel \[Link will be available Wednesday 2/21/24 ]
 * Find the pinned message titled “LOTTO SIGN UP”
 * Comment with your Badge Name, Badge Number, and all days that you would like to enter the lotto (Friday, Saturday, and/or Sunday).
 * That’s it! The list of lotto winners and waitlist will be posted in the channel each morning.
 * If you would like to add/remove days that you are signed up for, just reply to your original comment with the changes and tag @renacat before the next lotto pull.
 
-Info we’ll need from you:
+**Info we’ll need from you:**
 
 * Badge Name
 * Badge Number
