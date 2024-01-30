@@ -5,7 +5,7 @@ css:
   - /assets/css/theme-2022/artist-alley.css
 subtitle: Hours, Rules, and Other Fun Info!
 ---
-## **Artist Alley**
+# **Artist Alley**
 
 The Artist Alley runs on a lottery system where new participants are chosen daily. You can enter the lottery in-person at the Artist Alley Info Desk or via Telegram.
 Sign up early via the Artist Alley Telegram Channel: \[Link will be available Wednesday 2/21/24 ]
@@ -31,12 +31,13 @@ Close
 5:00 PM
 4:00 PM
 
-**Please remember to check out at the info desk when you leave the alley for the day!**
-This way, people on the waiting list can participate AND you get the opportunity to sign up for the next day’s lotto immediately! Failure to check out may result in disqualification for the following day.
+### Please remember to check out at the info desk when you leave the alley for the day!
 
-### How to Participate:
+This way, people on the waiting list can participate AND you get the opportunity to sign up for the next day’s lotto immediately! **Failure to check out may result in disqualification for the following day.**
 
-#### Option 1: On-Site Lotto Signups
+## How to Participate:
+
+### Option 1: On-Site Lotto Signups
 
 * Sign up in-person before the lotto draw times (see time table above). This is done at the Artist Alley Info Desk, right outside of the Artist Alley. You can be added to the waitlist any time throughout the day.
 * The Lotto will run when the Alley opens for Setup (see time table above).
