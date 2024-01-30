@@ -9,23 +9,15 @@ subtitle: Introducing Our New Venue!
 
 # Hilton Milwaukee City Center
 
-<h3>509 W Wisconsin Ave<br/>Milwaukee, WI 53203<br />
-Phone: (414) 271-7250</h3>
+509 W Wisconsin Ave<br/>Milwaukee, WI 53203<br />
+Phone: (414) 271-7250
 
-<h3><a href="https://www3.hilton.com/en/hotels/wisconsin/hilton-milwaukee-city-center-MKEMHHF/index.html">Hotel Website</a></h3>
+<a href="https://www3.hilton.com/en/hotels/wisconsin/hilton-milwaukee-city-center-MKEMHHF/index.html">Hotel Website</a>
 
-## Rates and Booking
+## Hotel Rates and Booking
 
-<h3>$159 / Night</h3>
-<h3>Parking: $12 Per Vehicle / Day, Includes In-and-Out Privileges. 
+$159 / Night
 
-You MUST validate your parking ticket! There are two ways:
-
-1. Take the parking ticket to the front desk, and ask to have it attached to your room reservation.
-
-2. If you are not staying overnight, you can acquire a voucher from Registration on the 4th floor and take that to the hotel front desk, along with your parking ticket.
-
-</h3>
 <h3>Con Block Rates Close 2/7/2024!</h3>
 <h3><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MKEMHHF&arrivalDate=2024-02-23&departureDate=2024-02-25&groupCode=96L&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink">Reserve a Room Here</a></h3>
 
@@ -38,6 +30,15 @@ You MUST validate your parking ticket! There are two ways:
 </div>
 
 <hr>
+
+## Parking Rates
+$12 Per Vehicle / Day, Includes In-and-Out Privileges.
+
+You MUST validate your parking ticket! There are two ways:
+
+1. Take the parking ticket to the front desk, and ask to have it attached to your room reservation.
+2. If you are not staying overnight, you can acquire a voucher from Registration on the 4th floor and take that to the hotel front desk, along with your parking ticket.
+
 
 # Other Ways to Get To FurSquared
 
