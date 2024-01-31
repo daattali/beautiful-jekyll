@@ -16,6 +16,7 @@ subtitle: Welcome, welcome, one and all! With all of these dazzling wares we’r
 | PT           | Alkali Anonymous          |
 | 7            | B.B’s Art Boutique        |
 | 8            | BlindCoyote               |
+| 15           | Blue Canary Gallery       |
 | PT           | Boozy Badger              |
 | 15           | Brian Reynolds            |
 | 3            | ChaosCostumes LLC         |
