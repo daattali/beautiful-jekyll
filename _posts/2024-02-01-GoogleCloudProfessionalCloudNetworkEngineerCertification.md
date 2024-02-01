@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Preparing for the Google Cloud Professional Network Engineer certification
-subtitle: "This blog equips you with the knowledge and tools to tackle Google Cloud's Professional Cloud Network Engineer certification. Dive into:
-Exam essentials: Understand key skills tested and Google's expectations.
-Your study plan: Discover best practices, recommended resources, and practice tips.
-Insider knowledge: Gain insights on exam format, structure, and potential challenges.
-My experience: Learn from my journey and benefit from valuable advice I have gleaned after achieving this certification three times."
+subtitle: "This blog equips you with the knowledge and tools to tackle Google Cloud's Professional Cloud Network Engineer certification. Dive into exam essentials: Understand key skills tested and Google's expectations.
+Your study plan: Discover best practices, recommended resources, and practice tips. Insider knowledge: Gain insights on exam format, structure, and potential challenges. My experience: Learn from my journey and benefit from valuable advice I have gleaned after achieving this certification three times."
 #description: ""
 #cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/pcne/googlecloudprofessionalcloudnetworkengineerbadge.png
