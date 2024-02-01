@@ -42,10 +42,13 @@ The Professional Cloud Network Engineer exam assesses your ability to:
 # Who is the Google Cloud Professional Cloud Network Engineer certification aimed at?
 
 The Google Cloud Professional Cloud Network Engineer certification is a specialist Professional level certification. I would recommend those new to Google Cloud certifications initially start with the following certifications before targeting the specialist certifications:
+
 1.	Google Cloud Digital Lead (CDL)
 2.	Google Cloud Associate Cloud Engineer (ACE)
 3.	Google Cloud Professional Cloud Architect
+
 These certifications provide a good foundation to help you progress to the more specialist Professional certifications.
+
 # How difficult is the Google Cloud Professional Cloud Network Engineer certification?
 
 Google Cloud has 3 levels of certifications starting at the entry level with Cloud Digital Leader, Associate Cloud Engineer, and a range of Professional level specialist certifications. 
@@ -105,16 +108,19 @@ You will also need to delve into the intricacies of Google Cloud's Load Balancin
 - Priyanka Vergadia aka The Cloud Girl
 
 ## Google Cloud Skills Boost Learning Path: Preparing for Your Professional Cloud Network Engineer Journey
+
 [Google Cloud Skills Boost Network Engineer Learning Path]( https://www.cloudskillsboost.google/paths/14) is an online self-paced training course. The content is presented in a series of thirteen courses covering the areas included within the exam guide, and a series of Quests providing lab scenarios for you to practice and gain hands-on experience. Each course has several modules consisting of a series of videos, labs and an end of module quiz to assess your understanding of the content covered. 
 
 The platform also enables you to play the videos at a faster speed, enabling you to reduce the time to complete the course and speed through areas you are already familiar with.
 
 ## Google Cloud Documentation
+
 I'm a big fan of [Google Cloud Documentation](https://cloud.google.com/docs). There are documentation pages for each Google product, providing overviews, getting started guides, code samples, and the Cloud Architecture Framework and Cloud Architecture Center for further guidance and best practices. Reading the associated product documentation pages after completing training courses helps to further embed your knowledge and clarify any points you may still be struggling with.
 
 On this occasion, my main revision was based on the topics listed within the exam guide, and reviewing the relevant Google Cloud docs for the topics I felt I needed to brush up on. 
 
 ## Google Cloud Solutions
+
 [Google Cloud Solutions](https://cloud.google.com/docs/tutorials) provides a vast range of QuickStart’s and tutorials to guide you through, and provide hands on experience with Google Cloud's products and services. These tutorials prove invaluable providing additional experience working with some of the services you may be less familiar with.
 
 ## Priyanka Vergadia aka The Cloud Girl
