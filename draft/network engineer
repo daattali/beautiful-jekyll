@@ -17,16 +17,16 @@ share-img: /assets/img/pcne/googlecloudprofessionalcloudnetworkengineerbadge.png
 tags: [Google Cloud Professional Cloud Network Engineer, PCNE, Certification, Exam, Guidance]
 ---
 
-Last week I embarked upon my latest certification renewal- Google Cloud Professional Cloud Network Engineer (PCNE). This was my third time certifying as a Professional Cloud Network Engineer having initially passed in January 2020, renewed in 2022, and again in 2024. The exam guide was recently updated, so it was good to see newer content included in some of the questions, and for anyone wondering if the updated exam is as difficult as it's predecessor: it is, if not tougher! 
+Last week I embarked upon my latest certification renewal- Google Cloud Professional Cloud Network Engineer (PCNE). This was my third time certifying as a Professional Cloud Network Engineer having initially passed in January 2020, renewed in 2022, and again in 2024. The exam had been updated this time, so it was good to see newer content included in some of the questions, and for anyone wondering if the updated exam is still as difficult as its predecessor: it is, if not tougher! 
 
-As a Google Cloud Professional with nine certifications under my belt, and aiming for my tenth (Professional Machine Learning Engineer pending…), I thought I’d write this blog to share my experience, exam tips, thoughts, preparation and general guidance to help others planning to take this exam.
+As a Google Cloud Professional with nine certifications under my belt and aiming for my tenth (Professional Machine Learning Engineer pending…), I thought I’d write this blog to share my experience, exam tips, thoughts, preparation, and general guidance to help others planning to take this exam.
 
 * toc
 {:toc}
 
 # What is the Google Cloud Professional Cloud Network Engineer certification?
 
-Google Cloud's Professional Cloud Network Engineer (PCNE) is one of Google's most challenging professional certifications. Google Cloud's Professional certifications are role based certifications to measure an individual’s proficiency at performing a specific role using Google Cloud technology. As per [Google's definition:](https://cloud.google.com/learn/certification/cloud-network-engineer) 
+Google Cloud's Professional Cloud Network Engineer (PCNE) is one of Google's most challenging professional certifications. Google Cloud's Professional certifications are role-based certifications to measure an individual’s proficiency at performing a specific role using Google Cloud technology. As per [Google's definition:](https://cloud.google.com/learn/certification/cloud-network-engineer) 
 
 A Professional Cloud Network Engineer implements and manages network architectures in Google Cloud. This individual may work on networking or cloud teams with architects who design cloud infrastructure. The Cloud Network Engineer uses the Google Cloud Console and/or command line interface, and leverages experience with network services, application and container networking, hybrid and multi-cloud connectivity, implementing VPCs, and security for established network architectures to ensure successful cloud implementations.
 
@@ -38,21 +38,17 @@ The Professional Cloud Network Engineer exam assesses your ability to:
 - Implement hybrid interconnectivity
 - Manage, monitor, and optimize network operations
 
-![Google Cloud Professional Cloud Network Engineer Badge](/assets/img/pca/googlecloudprofessionalcloudnetworkengineer.png "Google Cloud Professional Cloud Network Engineer Badge")
+![Google Cloud Professional Cloud Network Engineer Badge](/assets/img/pcne/googlecloudprofessionalcloudnetworkengineer.png "Google Cloud Professional Cloud Network Engineer Badge")
 
 *Google Cloud Professional Cloud Network Engineer Badge*
 
 # Who is the Google Cloud Professional Cloud Network Engineer certification aimed at?
 
-The Google Cloud Professional Cloud Network Engineer certification is aimed at Cloud Architects,  Solutions Architects, Network Engineer and any other roles who are responsible for....
-
-
-who are responsible for assessing business requirements and designing Google Cloud environments. Architects need to have a thorough understanding of all Google Cloud's products including Compute, Storage, Networks, Data, Development and Security. They need to be able to assess business requirements, identifying both functional and non functional requirements and then design a secure, resilient, scalable architecture selecting the most appropriate Google Cloud services.
-
-Whilst the primary roles targeted by this certification are architects, there are many certified people without an architecture background. Before the introduction of the Google Cloud Digital Leader certification, people looking to demonstrate their Google Cloud expertise had to choose between PCA and ACE. ACE has a more hands on delivery focus as a Cloud Engineer versus PCA.
-
-For people new to Google Cloud, I recommend they initially pass the Google Cloud Digital Leader certification, then progress to the Google Cloud Associate Engineer certification before proceeding with the Google Cloud Professional Architect certification. I also suggest planning ACE and PCA in close succession as there is significant overlap in the content of each so it can save study time whilst the content of ACE is fresh in memory and you're preparing for PCA.
-
+The Google Cloud Professional Cloud Network Engineer certification is a specialist Professional level certification. I would recommend those new to Google Cloud certifications initially start with the following certifications before targeting the specialist certifications:
+1.	Google Cloud Digital Lead (CDL)
+2.	Google Cloud Associate Cloud Engineer (ACE)
+3.	Google Cloud Professional Cloud Architect
+These certifications provide a good foundation to help you progress to the more specialist Professional certifications.
 # How difficult is the Google Cloud Professional Cloud Network Engineer certification?
 
 Google Cloud has 3 levels of certifications starting at the entry level with Cloud Digital Leader, Associate Cloud Engineer, and a range of Professional level specialist certifications. 
@@ -66,30 +62,31 @@ Below are my recommendations on how best to prepare for the Professional Cloud N
 # Exam Guide: Your North Star in the Cloud
 {:.no_toc}
 
-Having heard musings about the exam being recently updated, and seeing various comments it was now tougher than ever, I made sure I thoroughly reviewed all the content on the exam guide. Frustratingly Google doesn’t publish deltas or historical versions, so it wasn’t easy to identify exactly what was new in this release vs previous releases. That being said, certain elements were clearly new as they haven't been GA for particularly long times e.g. firewall insights and hierarchical firewall policies. As for all exams, my first piece of advice is to review the [Google Cloud Professional Cloud Network Engineer exam guide](https://cloud.google.com/learn/certification/guides/cloud-network-engineer) to get an understanding of the topics in scope of the exam, and assess how confident you feel with each topic.
+Having heard musings about the exam being recently updated, and seeing various comments it was now tougher than ever, I made sure I thoroughly reviewed all the content on the exam guide. Frustratingly Google doesn’t publish deltas or historical versions, so it wasn’t easy to identify exactly what was new in this release vs previous releases. That being said, certain elements were clearly new as they haven't been GA for particularly long times e.g. firewall insights and hierarchical firewall policies. 
+As for all exams, my first piece of advice is to review the [Google Cloud Professional Cloud Network Engineer exam guide](https://cloud.google.com/learn/certification/guides/cloud-network-engineer) to get an understanding of the topics in scope of the exam, and assess how confident you feel with each topic. This baseline then enables you to target your training on areas you feel weakest in.
 
 The exam guide breaks down exam content into five sections, providing a weighted percentage for each. These sections are:
 
-•	Section 1: Designing, planning, and prototyping a Google Cloud network (~26% of the exam)
-•	Section 2: Implementing Virtual Private Cloud (VPC) instances (~21% of the exam)
-•	Section 3: Configuring network services (~23% of the exam)
-•	Section 4: Implementing hybrid interconnectivity (~14% of the exam)
-•	Section 5: Managing, monitoring, and optimizing network operations (~16% of the exam)
+-	Section 1: Designing, planning, and prototyping a Google Cloud network (~26% of the exam)
+-	Section 2: Implementing Virtual Private Cloud (VPC) instances (~21% of the exam)
+-	Section 3: Configuring network services (~23% of the exam)
+-	Section 4: Implementing hybrid interconnectivity (~14% of the exam)
+-	Section 5: Managing, monitoring, and optimizing network operations (~16% of the exam)
 
 Whilst I clearly got questions across all of these sections, it felt like a large portion of the exam focussed heavily on section 4: implementing hybrid interconnectivity. I had a lot of questions related to:
 
-•	High availability VPN configuration, performance and best practice.
-•	Route based routing and policy based routing.
-•	Dedicated and partner interconnect connections and VLAN attachments.
-•	Cloud Router- BGP peering, route priority, MED, custom routes.
+-	High availability VPN configuration, performance and best practice.
+-	Dynamic routing, route-based routing and policy-based routing.
+-	Dedicated and partner interconnect connections and VLAN attachments.
+-	Cloud Router- BGP peering, route priority, MED, custom routes.
 
-These areas are not my daily grind. My present role as a Google Cloud Architect is more typically involved in app modernisation and data pipelines for large enterprise organisations, so I don’t get involved day to day in deploying and configuring network connectivity with Cloud VPN, Cloud Routers and interconnects. However, I recalled these topics being a key area in previous versions of this exam, and so I spent a lot of my preparation reading Google Cloud docs on each of these areas. Any whitepapers, blogs, best practices I could find on the topic I read! This definitely paid off as a lot of the exam focussed on them, and some questions specifically required knowledge of the performance of each solution, how and when to scale out for increased performance and what Google recommended best practices are for each.
+These areas are not my daily grind. My present role as a Google Cloud Architect is more typically involved in app modernisation and data migrations for large enterprise organisations, so I don’t get involved day to day in deploying and configuring network connectivity with Cloud VPN, Cloud Routers and interconnects. However, I recalled these topics being a key area in previous versions of this exam, and so I spent a lot of my preparation reading Google Cloud docs on each of these areas. Any whitepapers, blogs, best practices I could find on the topic I read! This definitely paid off as a lot of the exam focussed on them, and some questions specifically required knowledge of the performance of each solution, how and when to scale out for increased performance and what Google recommended best practices are for each.
 
-It's also essential you understand how BGP routing works, and what alternative options exist if you have legacy infrastructure that  doesn’t support BGP.
+It's also essential you understand how BGP routing works, and what alternative options exist if you have legacy infrastructure that doesn’t support BGP.
 
-I’d also suggest focusing on VPC architecture options- understanding when to use standalone vs shared VPC, regional vs multi regional VPCs, peering, routing and connecting to managed services like Cloud SQL.
+I’d also suggest focusing on VPC architecture options- understanding when to use standalone vs shared VPC, regional vs multi regional VPCs, peering, routing, and connecting to managed services like Cloud SQL.
 
-The exam also covers Google Kubernetes Engine networking requirements, so understanding Kubernetes networking, cluster modes, subnet sizes, master authorised network access to the control plane and how these are configured are essential if you don’t have much day to day experience working with GKE.
+The exam also covers Google Kubernetes Engine networking requirements, so understanding Kubernetes networking, cluster modes, subnet sizes, master authorised network access to the control plane and how these are configured are essential if you don’t have much day-to-day experience working with GKE.
 
 From a security perspective, you need to:
 
@@ -99,8 +96,9 @@ From a security perspective, you need to:
 - Configure Cloud DNS, knowing when to use Private zones vs Public zones and how to forward back to on premise DNS servers.
 - Understand the added security benefits of DNSSEC and how it can be enabled.
 - Grasp the distinct roles of traditional VPC firewall rules and hierarchical firewall policies.
+- Identify what firewall rules take priority over others, and how to enable logging.
 
-You're also going to need to delve into the intricacies of Google Cloud's Load Balancing options from External TCP/UDP Network Load Balancers, Internal TCP/UDP Load Balancers, External HTTP(S) Load Balancers, to Internal HTTP(S) Load Balancers and ensuring you select the optimal solution for your application's requirements. The exam also validates your understanding of configuring these load balancers including how to perform health checks, configuring firewall rules to permit the required flows and configuring backend services that effectively scale.
+You will also need to delve into the intricacies of Google Cloud's Load Balancing options from External TCP/UDP Network Load Balancers, Internal TCP/UDP Load Balancers, External HTTP(S) Load Balancers, to Internal HTTP(S) Load Balancers and ensuring you select the optimal solution for your application's requirements. The exam also validates your understanding of configuring these load balancers including how to perform health checks, configuring firewall rules to permit the required flows and configuring backend services that effectively scale.
 
 # Recommended training material and courses for Google Cloud Professional Cloud Network Engineer certification including practice exam question sources.
 
@@ -110,14 +108,14 @@ You're also going to need to delve into the intricacies of Google Cloud's Load B
 - Priyanka Vergadia aka The Cloud Girl
 
 ## Google Cloud Skills Boost Learning Path: Preparing for Your Professional Cloud Network Engineer Journey
-[Google Cloud Skills Boost Preparing for Your Professional Cloud Network Engineer Journey Learning Path](https://www.cloudskillsboost.google/course_templates/383) is an online self-paced training course. The content is presented in a series of six courses covering the areas included within the exam guide, and a series of Quests providing lab scenarios for you to practice and gain hands-on experience. Each course has several modules consisting of a series of videos, labs and an end of module quiz to assess your understanding of the content covered. 
+[Google Cloud Skills Boost Network Engineer Learning Path]( https://www.cloudskillsboost.google/paths/14) is an online self-paced training course. The content is presented in a series of thirteen courses covering the areas included within the exam guide, and a series of Quests providing lab scenarios for you to practice and gain hands-on experience. Each course has several modules consisting of a series of videos, labs and an end of module quiz to assess your understanding of the content covered. 
 
 The platform also enables you to play the videos at a faster speed, enabling you to reduce the time to complete the course and speed through areas you are already familiar with.
 
 ## Google Cloud Documentation
 I'm a big fan of [Google Cloud Documentation](https://cloud.google.com/docs). There are documentation pages for each Google product, providing overviews, getting started guides, code samples, and the Cloud Architecture Framework and Cloud Architecture Center for further guidance and best practices. Reading the associated product documentation pages after completing training courses helps to further embed your knowledge and clarify any points you may still be struggling with.
 
-On this occassion, my main revision was based on the topics listed within the exam guide, and reviewing the relevant Google Cloud docs for the topics i felt i needed to brush up on. 
+On this occasion, my main revision was based on the topics listed within the exam guide, and reviewing the relevant Google Cloud docs for the topics I felt I needed to brush up on. 
 
 ## Google Cloud Solutions
 [Google Cloud Solutions](https://cloud.google.com/docs/tutorials) provides a vast range of QuickStart’s and tutorials to guide you through, and provide hands on experience with Google Cloud's products and services. These tutorials prove invaluable providing additional experience working with some of the services you may be less familiar with.
@@ -126,9 +124,9 @@ On this occassion, my main revision was based on the topics listed within the ex
 
 For those who benefit more from visual learning- Priyanka Vergadia aka The Cloud Girl has created an excellent collection of [sketchnotes](https://thecloudgirl.dev/sketchnote.html) covering a wide range of Google Cloud products, services, and concepts in an easy to digest format.
 
-![Example sketchnote for Google Cloud compute options from Priyanka Vergadia](/assets/img/cdl/sketchnotecomputeoptions.jpg "Example sketchnote for Google Cloud compute options from Priyanka Vergadia")
+![Example sketchnote for Google Cloud Load Balancing options from Priyanka Vergadia](/assets/img/pcne/sketchnoteloadbalanceroptions.jpg "Example sketchnote for Google Cloud Load Balancer options from Priyanka Vergadia")
 
-*Example sketchnote for Google Cloud Compute Options from [Priyanka Vergadia](https://thecloudgirl.dev/gcpcompute.html)* 
+*Example sketchnote for Google Cloud Load Balancer Options from [Priyanka Vergadia]( https://thecloudgirl.dev/CLB.html)* 
 
 The sketchnotes have been released as a book titled [Visualising Google Cloud](https://thecloudgirl.dev) which is a handy reference for getting to grips with Google Cloud's products and concepts for the Professional Cloud Architect and subsequent associate and professional exams. It is also a handy reference to have for day-to-day use as you are learning more about Google Cloud’s offerings.
 
@@ -178,7 +176,8 @@ It is best to book your exam ahead of time, as this gives you a date to work tow
 # How long is the Google Cloud Professional Cloud Network Engineer exam?
 {:.no_toc}
 
-The PCNE exam is a two hour exam during which you will need to answer 50-60 multiple choice and multiple select questions. I find for the majority of the professional certifications, I typically complete my first pass of the answers within an hour, however on the latest PCNE exam I recall being 50% through the exam and having hit the one hour mark. This got me rather worried that i wouldn't have time to review my questions and potentially may need to rush answering some of the later questions! Fortunately the second half of questions were shorter and/or quicker for me to answer leaving me with 15 minutes to review and revisit any questions I was unsure on.
+The Professional Cloud Network Engineer exam is a two-hour exam during which you will need to answer 50-60 multiple choice and multiple select questions. 
+I find for many of the professional certifications, I typically complete my first pass of the answers within an hour, however on the latest Professional Cloud Network Engineer exam I recall being 50% through the exam and having hit the one-hour mark. This got me rather worried that I wouldn't have time to review my questions and potentially may need to rush answering some of the later questions! Fortunately, the second half of questions were shorter and/or quicker for me to answer leaving me with 15 minutes to review and revisit any questions I was unsure on.
 
 # How long is the Google Cloud Professional Cloud Network Engineer certification valid?
 {:.no_toc}
@@ -190,33 +189,11 @@ All Google Cloud Professional certifications are valid for 2 years. You can rece
 
 The Google Cloud Professional Cloud Network Engineer exam costs $200 USD.
 
-Thanks for taking the time to read this blog, I hope you find it useful in preparing for the Google Cloud Professional Cloud Architect certification. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
+Thanks for taking the time to read this blog, I hope you find it useful in preparing for the Google Cloud Professional Cloud Network Engineer certification. Please feel free to share, [subscribe](https://www.cloudbabble.co.uk/subscribe) to be alerted to future posts, follow me on [LinkedIn](https://linkedin.com/in/jamiethompson85), and react/comment below! 
+
+If you're new to Google Cloud certifications, or you're deciding what certification to do next, check out my other blog posts covering:
+
+- [Google Cloud Professional Cloud Architect Certification](https://www.cloudbabble.co.uk/2023-02-28-Google-Cloud-Professional-Cloud-Architect/)
+- [Google Cloud Digital Leader Certification](https://www.cloudbabble.co.uk/2022-12-06-GoogleCloudDigitalLeaderCertification/)
 
 Do reach out if you would like me to cover any particular areas of Google Cloud products, concepts or certifications in future posts.
-
-
-
-
-
-
-
-
-
-
-
-*****************
-The Google Cloud Network Engineer certification is one of the most challenging Google Cloud certifications. This is probably due to the majority of Google Cloud customers I have worked with being enterprise customers, and my engagement is usually in regards to migrating and modernising their applications to Google Cloud rather than designing and implementing the initial network architecture.
-This was my second time recertifying my CNE, and it was good to see new topics following the exam being revamped. This included the introduction of hierarchical firewall policies, VPC service controls and Network Information Cenrtre. The exam guide provides a breakdown percentage for the weight of content covered in the exam. Personally I found there to be a lot of VPN related questions. Fortunately this is an area I refreshed on prior to the certification as I have limited real world exposure to VPN connectivity- the clients ihave worked with have all had dedicated or partner interconnects. It’s good to have an understanding of the maximum bandwidth supported for HA VPN, how many active tunnels are recommended, how to increase the speed of each, how to configure BGP peering, the APIPA range used for BGP peers and how to share routes to and from on premise. 
-As to be expected, routing related questions took a large part of the exam. It’s key to understand BGP, default VPC routing modes, what routing options are available if on premise doesn’t support BGP, and how to configure custom routes.
-Shared VPC host projects, and service projects.
-Routing traffic via IDS. Packet mirroring, and 
-Customising default routes- configuring VPC to route via a device instead of direct to internet.
-VPC service controls- how to enforce connections to services that only support VPC SC, how to enforce access to Google Cloud API’s and services without routing over the internet and how to configure DNS in order to route private.googleapis.com or restricted.googleapis.com.
-Interconnects another hot topic- when to favour dedicated vs partner, VLAN attachment, how to increase bandwidth of VLAN attachments.
-From an IAM perspective, there wasn’t a lot of questions. I would recommend reviewing the roles of network admin vs security admin and the differences between each.
-Logging- identify routing failure issues from logs, relevant filters for components.
-VPC flow logs, how to enable, how there work, when to use them.
-Firewall rules- defining correct priority, integrating with hierarchical firewall policies, how to defer to next levwl,
-Load balancers- cloud armour and protection it can offer to external https load balancer. When to select network load balancer, when to opt for TCP load balancer.
-Internl load balancer in front of IDS?
-GKE CLUSTwr sizing, default number of pods, how to configure with out RFC1918 ange (also similar for VPC network design). Configuring private GKE cluster. Accessing private clusters. Thwsse quetions brought a welcome relief due to a lot of familiarility day to dy ith GKE.
