@@ -35,7 +35,7 @@ The Professional Cloud Network Engineer exam assesses your ability to:
 - Implement hybrid interconnectivity
 - Manage, monitor, and optimize network operations
 
-![Google Cloud Professional Cloud Network Engineer Badge](/assets/img/pcne/googlecloudprofessionalcloudnetworkengineer.png "Google Cloud Professional Cloud Network Engineer Badge")
+![Google Cloud Professional Cloud Network Engineer Badge](/assets/img/pcne/googlecloudprofessionalcloudnetworkengineerbadge.png "Google Cloud Professional Cloud Network Engineer Badge")
 
 *Google Cloud Professional Cloud Network Engineer Badge*
 
