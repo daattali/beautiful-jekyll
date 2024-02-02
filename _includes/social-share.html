@@ -11,7 +11,7 @@
   <span class="sr-only">Share: </span>
 
   {% if site.share-links-active.twitter %}
-    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | strip_html | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
       class="btn btn-social-icon btn-twitter" title="Share on Twitter">
       <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
       <span class="sr-only">Twitter</span>
@@ -39,6 +39,14 @@
       class="btn btn-social-icon btn-vk" title="Share on VK">
       <span class="fab fa-fw fa-vk" aria-hidden="true"></span>
       <span class="sr-only">VK</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.reddit %}
+    <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-reddit" title="Share on Reddit">
+      <span class="fab fa-fw fa-reddit" aria-hidden="true"></span>
+      <span class="sr-only">Reddit</span>
     </a>
   {% endif %}
 
