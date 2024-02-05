@@ -14,6 +14,26 @@
 #  tags: null
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+- abs: Safe Reinforcement Learning (RL) plays an important role in applying RL algorithms to safety-critical real-world applications, addressing the trade-off between maximizing rewards and adhering to safety constraints. This work introduces a novel approach that combines RL with trajectory optimization to manage this trade-off effectively. Our approach embeds safety constraints within the action space of a modified Markov Decision Process (MDP). The RL agent produces a sequence of actions that are transformed into safe trajectories by a trajectory optimizer, thereby effectively ensuring safety and increasing training stability. This novel approach excels in its performance on challenging Safety Gym tasks, achieving significantly higher rewards and near-zero safety violations during inference. The method's real-world applicability is demonstrated through a safe and effective deployment in a real robot task of box-pushing around obstacles.
+  authors: Fan Yang, Wenxuan Zhou, Zuxin Liu, Ding Zhao, David Held
+  award: null
+  bib: "@article{yang2023reinforcement,
+  \ title={Reinforcement Learning in a Safety-Embedded MDP with Trajectory Optimization},
+  \ author={Yang, Fan and Zhou, Wenxuan and Liu, Zuxin and Zhao, Ding and Held, David},
+  \ journal={arXiv preprint arXiv:2310.06903},
+  \ year={2023}
+  \ }"
+  img: ../pics/ICRA2024_SEMDP.gif
+  links:
+      '[arXiv]': https://arxiv.org/pdf/2310.06903.pdf
+  short_id: yang2023reinforcement
+  site: https://sites.google.com/view/safemdp
+  title: "Reinforcement Learning in a Safety-Embedded MDP with Trajectory Optimization"
+  venue: International Conference on Robotics and Automation (ICRA), 2023
+  video_embed: null
+  tags:
+      - safe_reinforcement_learning
+
 - abs: Understanding and manipulating articulated objects, such as doors and drawers, is crucial for robots operating in human environments. We wish to develop a system that can learn to articulate novel objects with no prior interaction, after training on other articulated objects. Previous approaches for articulated object manipulation rely on either modular methods which are brittle or end-to-end methods, which lack generalizability. This paper presents FlowBot++, a deep 3D vision-based robotic system that predicts dense per-point motion and dense articulation parameters of articulated objects to assist in downstream manipulation tasks. FlowBot++ introduces a novel per-point representation of the articulated motion and articulation parameters that are combined to produce a more accurate estimate than either method on their own. Simulated experiments on the PartNet-Mobility dataset validate the performance of our system in articulating a wide range of objects, while real-world experiments on real objects' point clouds and a Sawyer robot demonstrate the generalizability and feasibility of our system in real-world scenarios.
   authors: Harry Zhang, Ben Eisner, David Held
   award: null
