@@ -5,19 +5,11 @@ subtitle: Things to do at FurSquared
 ---
 ## Programming Submissions
 
-Calling all and gearhead gadgeteers, whizzbang wizards, electric entertainers, and ingenious inventors of incredible items - we are now accepting programming submissions for FurSquared 2024! With a new hotel comes more space, and as always we need *your* help to fill it!
-
-If you have an event you'd like to host at F2 - a meetup, a discussion, a demonstration of your latest technology of the future - you can apply at <https://forms.gle/XGkGNkE8wwovJTSG7> until November 30th.
-
-Never hosted an event before? Got a wacky idea but aren't sure if it'll take off? Don't be shy - we love innovation, and you'll not find a more welcoming audience! We're happy to work with you to flesh out an idea, and offer advice for running your panel.
+Submissions are now closed, panelists have been contacted, and the schedule is being finalized. Thank you to everyone who submitted a panel!
 
 ## DJ Submissions
 
-Calling all gadgeteers! Our DJ submissions are officially open! Think you’ve got a track the world isn’t ready for? What better time to shine than now?
-
-Submissions will close on 12/10! More info at: <https://forms.gle/BF3EwjLyHtY94uqi9>
-
-*Our DJ selection is done by a blind selection to minimize potential bias. Submissions are anonymized, then submitted to our 3 person DJ selection team for ranking and final selection.*
+DJ's have been contacted and our schedule is being finalized. Thank you to everyone who submitted to DJ at FurSquared!
 
 ## Contact Us
 

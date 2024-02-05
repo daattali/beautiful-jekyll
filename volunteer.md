@@ -47,10 +47,12 @@ What's in it for you? First off, you'll have the thanks of our entire staff and 
 - For 10 hours of logged service, you will receive a FurSquared t-shirt.
 - For 14 hours of logged service, you will receive free attendee registration for FurSquared 2025.
 
-**Note:** Any hours logged before opening ceremonies or after closing ceremonies will count as **double hours** toward your total hours of logged service.
+**Note:** Any hours logged before opening ceremonies or after closing ceremonies will count as **double hours** toward your total hours of logged service. DJ’s and Panelists will count towards your total hours of logged service.
 
 ## Interested In Volunteering?
 
 Looking to Volunteer this year for FurSquared  2024? If you haven't already Pre-Registered for our 2024 event then you'll be glad to know you can also fill out our Volunteer form during your Registration Process. Already registered and changed your mind? Use the Edit Registration link in your email to login, where you can sign up to volunteer. Thank you for taking interest in Volunteering for FurSquared  2024!
+
+You can also sign up at the door when you arrive at the convention. We'll have volunteer log sheets and documentation available at the Volunteers Desk as soon as the convention starts.
 
 If you have any questions, or need information, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com). Thank you so much for your interest in helping out FurSquared\!
