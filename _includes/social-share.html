@@ -34,6 +34,15 @@
     </a>
   {% endif %}
 
+  {% if site.share-links-active.hackernews %}
+  <a href="https://news.ycombinator.com/submitlink?u={{ page.url | absolute_url | url_encode }}&t={{ page.title }} "
+      class="btn btn-social-icon" title="Share on Hacker News">
+      <img src="/assets/img/y18.svg">
+      <span class="sr-only">Hacker News</span>
+    </a>
+  {% endif %}
+
+
   {% if site.share-links-active.vk %}
     <a href="https://vk.com/share.php?url={{ page.url | absolute_url | url_encode }}"
       class="btn btn-social-icon btn-vk" title="Share on VK">
