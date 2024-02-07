@@ -37,9 +37,3 @@ Attendees are not allowed to bring large roller bags or carts into the Dealers D
 # Food & Drink
 
 Attendees are not allowed to bring food into the Dealers Den or Night Market. Attendees may bring a drink in IF it is non-spillable: by definition, this means that it is only allowed if it could be turned upside down and nothing spills. Open cans, drinks with lids that don't completely seal, etc do not count as non-spillable and will not be allowed. Staff and Vendors may bring food and drinks into the Dealers Den and Night Market.
-
-
-# Waitlist
-
-Dealers Den staff will reach out to Vendors on the waitlist if there are any openings 3 days before the con; Vendors will have 24 hours to respond. Any tables forfeited before noon on Friday will, at staff’s discretion, be given to an available Vendor.
-

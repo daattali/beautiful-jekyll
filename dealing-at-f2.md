@@ -72,15 +72,19 @@ Once you have received your email of approval, payment for your table is expecte
 
 If you have already paid for your table and need to cancel for any reason, you may do so for a refund of your table cost (minus a 5% handling fee) until January 12, 2024. Any cancellation requests after that date will not be able to be refunded.
 
+Note: Assistants need to purchase their own badges. [Click here to learn how to add a Dealer Assistant](/dealer-assistant)
+
 **Waitlist**
 ------------
 
 If you have submitted an application and were placed on the Waitlist, please remember to watch for emails from Dealers Den staff; in the case of a cancellation, vendors on the Waitlist may be contacted to fill the space. If contacted, you have seven days to confirm your interest and make payment. Once payment has been received, staff will proceed with placement.
 
+Dealers Den staff will reach out to Vendors on the waitlist if there are any openings 3 days before the con; Vendors will have 24 hours to respond. Any tables forfeited before noon on Friday will, at staff’s discretion, be given to an available Vendor.
+
 **Badge Pickup**
 ----------------
 
-If you are picking up badges for yourself or your assistant, you may do so on Thursday at Con Ops (Golda Meir), right next to the main Dealers Den. If you are picking your badge(s) up on Friday, you will need to pick them up at Registration.
+If you are picking up badges for yourself or your assistant, you may do so on Thursday outside Founders Room (headless lounge), right next to the main Dealers Den. If you are picking your badge(s) up on Friday, you will need to pick them up at Registration.
 
 **Shipping Items to the Hotel**
 -------------------------------
@@ -100,7 +104,9 @@ The shipping address for the hotel is:
 **Code of Conduct**
 -------------------
 
-Please take some time to review our [Code of Conduct](https://fursquared.com/code-of-conduct).
+Please review our [Dealer Code of Conduct](/dealer-coc)
+
+Note that the above is an extension of our primary [Code of Conduct](/code-of-conduct).
 
 **Need Help?**
 --------------
