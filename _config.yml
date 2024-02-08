@@ -36,7 +36,6 @@ navbar-links:
   Information:
     - About: "about"
     - Hotel: "hotel"
-  # - Guest of Honor: "goh"
     - Code of Conduct: "code-of-conduct"
     - Covid Policy: "covid-policy"
   Dealers and Artists:
@@ -44,6 +43,7 @@ navbar-links:
     - Dealer's Den: "dealers"
     - Dealer's Gallery: "https://dealers.fursquared.com"
     - Dealing At F2: "dealing-at-f2"
+    - Dealer Code of Conduct: "dealer-coc"
   Get Involved:
     - Attend: "registration"
     - Volunteer: "volunteer"
