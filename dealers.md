@@ -87,7 +87,9 @@ Please note that once the Dealers Den is closed for the evening, nobody will be 
 
 # Code of Conduct
 
-Please take some time to review our [Code of Conduct](/code-of-conduct).
+Please review our [Dealer Code of Conduct](/dealer-coc)
+
+Note that the above is an extension of our primary [Code of Conduct](/code-of-conduct).
 
 # Need Help?
 
