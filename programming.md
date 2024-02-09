@@ -5,12 +5,8 @@ subtitle: Things to do at FurSquared
 ---
 ## Programming Submissions
 
-Submissions are now closed, panelists have been contacted, and the schedule is being finalized. Thank you to everyone who submitted a panel!
+[Click here to access our schedule of events for 2024!](https://schedule.fursquared.com/f2-2024/talk/){: .button target="_blank" rel="noopener"}
 
-## DJ Submissions
-
-DJ's have been contacted and our schedule is being finalized. Thank you to everyone who submitted to DJ at FurSquared!
-
-## Contact Us
+## Contact the Programming Department
 
 Have any programming-related questions or concerns? Email us at [programming@fursquared.com](mailto:programming@fursquared.com).

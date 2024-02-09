@@ -15,7 +15,11 @@ The Hilton Milwaukee City Center, originally opened in 1928 as the Milwaukee Sch
 Phone: (414) 271-7250<br/>
 <a href="https://www3.hilton.com/en/hotels/wisconsin/hilton-milwaukee-city-center-MKEMHHF/index.html">Venue Website</a>
 
-### WARNING: The Hilton Milwaukee City Center is a historic landmark and is governed by laws regulating them. Intentionally damaging or defacing the venue is a crime and will be prosecuted as a Class I felony! We urge you to please place stickers on our designated sticker statutes instead, as we will be auctioning them off for charity and your stickers will live on! Also, please do not place posters or other items on any surface without staff approval. Thank you for respecting our venue's historic status, which will help us continue to use it for future events.
+<hr>
+  <div align="center">
+### Attention: The Hilton Milwaukee City Center is a historic landmark governed by strict regulations. Damage or defacement of the venue is a Class I felony and will be prosecuted. Please place stickers only on designated sticker statues, as they will be auctioned for charity. Do not affix posters or items to any surfaces without staff approval. Your cooperation preserves the venue's historic status and our ability to use it for future years. Thank you.
+  </div>
+<hr>
 
 # Venue Map
 
@@ -38,7 +42,7 @@ However, there are nearby hotels that still have rooms available with pricing co
 <hr>
 
 <div align="center">
-  <h3><em>Please be aware of scammers. Only reserve rooms from trusted sites and only room with people you know and trust. If an offer sounds too good to be true, it likely is!</em></h3>
+  <h3><em>Please be aware of scams. Only reserve rooms from trusted sites and only room with people you know and trust. If an offer sounds too good to be true, it likely is!</em></h3>
 </div>
 
 <hr>
