@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Poster Terms
 subtitle: About FurSquared's Poster Registration Tier
 ---

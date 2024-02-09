@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Add a Dealer Assistant
 subtitle: Instructions for adding an assistant to your dealer table
 ---

@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: 'Covid Policy'
 permalink: /covid-policy/
 ---

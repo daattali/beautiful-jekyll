@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Dealer's Den
 subtitle: Welcome, welcome, one and all! With all of these dazzling wares we’re
   sure you will find something of satisfaction! We bring you fantastic and

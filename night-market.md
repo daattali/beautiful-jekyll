@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Night Market
 subtitle: Come and see dealers offering their spiciest work! (18+ only)
 css:

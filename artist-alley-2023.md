@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Artist Alley
 css:
     - /assets/css/theme-2022/artist-alley.css

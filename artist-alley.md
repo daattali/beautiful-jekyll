@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Artist Alley
 css:
   - /assets/css/theme-2022/artist-alley.css
@@ -48,7 +49,7 @@ This way, people on the waiting list can participate AND you get the opportunity
 * **There will be no access to electrical outlets.** Having a portable power bank is highly recommended.
 * **A communal laminator will be set up at the Info desk.** Lamination sheets will be provided for a $1 donation to the charity, or you can bring your own.
 * **Please use headphones if you’d like to listen to music.**
-* **Keep displays at a reasonable height - about 2 standard gridwall cubes \[14x14 inches] high.** 
+* **Keep displays at a reasonable height - about 2 standard gridwall cubes \[14x14 inches] high.**
 * **Don’t starve yourself, but please keep food and drinks off the tables to protect yours and others’ artwork!** Open drink cups without lids are not ideal.
 * **All artwork for sale or on display should be created by you.**
 * **AI art is not allowed.**

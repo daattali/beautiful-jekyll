@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Discord Information
 subtitle: Discord Main Events Live Chat
 ---

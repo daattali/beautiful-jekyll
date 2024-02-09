@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: FurSquared 2024 Registration
 subtitle: Please read the information on this page, then click the link at the bottom to register!
 ---

@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Contact Us
 subtitle: Information to reach the staff of FurSquared
 ---

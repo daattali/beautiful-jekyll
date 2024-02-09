@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Code of Conduct
 subtitle: How to Get Along With Us
 ---

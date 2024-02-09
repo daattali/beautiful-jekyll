@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Staff
 subtitle: Our staff team, and how to join
 ---

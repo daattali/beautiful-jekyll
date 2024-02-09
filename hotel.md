@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Hotel Information
 subtitle: Introducing Our New Venue! Keep Reading for Information on the Hilton Milwaukee City Center, Hotels, Parking, Travel Options, and Food!
 ---
@@ -18,7 +19,7 @@ Phone: (414) 271-7250<br/>
 <hr>
   <div align="center">
 
-### Attention: The Hilton Milwaukee City Center is a historic landmark governed by strict regulations. Damage or defacement of the venue is a Class I felony and will be prosecuted. Please place stickers only on designated sticker statues, as they will be auctioned for charity. Do not affix posters or items to any surfaces without staff approval. Your cooperation preserves the venue's historic charm and our ability to use it for future years. Thank you.
+### Attention: The Hilton Milwaukee City Center is a historic landmark governed by strict regulations. Damage or defacement of the venue is a Class I felony and will be prosecuted. Please place stickers only on designated sticker statues, as they will be auctioned for charity. Do not affix posters or items to any surfaces without staff approval. Your cooperation preserves the venue's history and our ability to use it for future years. Thank you.
 
   </div>
 <hr>

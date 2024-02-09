@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Programming
 subtitle: Things to do at FurSquared
 ---

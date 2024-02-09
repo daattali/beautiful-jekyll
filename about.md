@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: About
 subtitle: FurSquared is a furry convention held in Southeastern Wisconsin. Read
   this page to learn more about the convention!

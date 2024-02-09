@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Volunteer
 subtitle: Looking to help out FurSquared?
 ---

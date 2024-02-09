@@ -1,5 +1,6 @@
 ---
 layout: page
+full-width: true
 title: Dealer Code of Conduct
 subtitle: Code of Conduct additions for the Dealer's Den
 ---
