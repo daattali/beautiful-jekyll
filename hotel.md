@@ -53,7 +53,7 @@ For the Hilton Milwaukee City Center garage, parking is $12 per Vehicle each day
 
 You MUST validate your parking ticket! There are two ways:
 
-1. Take the parking ticket to the front desk, and ask to have it attached to your room reservation.
+1. Take the parking ticket to the front desk, and ask to have it attached to your room reservation. You may have multiple vehicles attached to a single room reservation.
 2. If you are not staying overnight, you can acquire a voucher from Registration on the 4th floor and take that to the hotel front desk, along with your parking ticket.
 
 There are also other lots available in the area. We recommend checking out [SpotHero](https://spothero.com) for parking options and booking in advance. [A promotion code is available](https://spothero.com/about/promo-code) for first-time users of the app.
