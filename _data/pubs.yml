@@ -14,6 +14,26 @@
 #  tags: null
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+- abs: Many robot manipulation tasks can be framed as geometric reasoning tasks, where an agent must be able to precisely manipulate an object into a position that satisfies the task from a set of initial conditions. Often, task success is defined based on the relationship between two objects - for instance, hanging a mug on a rack. In such cases, the solution should be equivariant to the initial position of the objects as well as the agent, and invariant to the pose of the camera. This poses a challenge for learning systems which attempt to solve this task by learning directly from high-dimensional demonstrations: the agent must learn to be both equivariant as well as precise, which can be challenging without any inductive biases about the problem. In this work, we propose a method for precise relative pose prediction which is provably SE(3)-equivariant, can be learned from only a few demonstrations, and can generalize across variations in a class of objects. We accomplish this by factoring the problem into learning an SE(3) invariant task-specific representation of the scene and then interpreting this representation with novel geometric reasoning layers which are provably SE(3) equivariant. We demonstrate that our method can yield substantially more precise placement predictions in simulated placement tasks than previous methods trained with the same amount of data, and can accurately represent relative placement relationships data collected from real-world demonstrations.
+  authors: Ben Eisner, Yi Yang, Todor Davchev, Mel Vecerik, Jonathan Scholz, David Held
+  award: null
+  bib: "@article{eisner2024deep,
+  \ title={Deep {SE}(3)-Equivariant Geometric Reasoning for Precise Placement Tasks},
+  \ author={Ben Eisner and Yi Yang and Todor Davchev and Mel Vecerik and Jonathan Scholz and David Held},
+  \ booktitle={The Twelfth International Conference on Learning Representations},
+  \ year={2024},
+  \ url={https://openreview.net/forum?id=2inBuwTyL2}
+  \ }"
+  img: ../pics/ICRA2024_SEMDP.gif
+  links:
+      '[OpenReview]': https://openreview.net/forum?id=2inBuwTyL2
+  short_id: eisner2024geometric
+  site: https://sites.google.com/view/reldist-iclr-2023
+  title: "Deep SE(3)-Equivariant Geometric Reasoning for Precise Placement Tasks"
+  venue: International Conference on Learning Representations (ICLR), 2024
+  video_embed: null
+  tags:
+      - geometric_reasoning
 - abs: Safe Reinforcement Learning (RL) plays an important role in applying RL algorithms to safety-critical real-world applications, addressing the trade-off between maximizing rewards and adhering to safety constraints. This work introduces a novel approach that combines RL with trajectory optimization to manage this trade-off effectively. Our approach embeds safety constraints within the action space of a modified Markov Decision Process (MDP). The RL agent produces a sequence of actions that are transformed into safe trajectories by a trajectory optimizer, thereby effectively ensuring safety and increasing training stability. This novel approach excels in its performance on challenging Safety Gym tasks, achieving significantly higher rewards and near-zero safety violations during inference. The method's real-world applicability is demonstrated through a safe and effective deployment in a real robot task of box-pushing around obstacles.
   authors: Fan Yang, Wenxuan Zhou, Zuxin Liu, Ding Zhao, David Held
   award: null
