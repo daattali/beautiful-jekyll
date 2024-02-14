@@ -34,6 +34,25 @@
   tags:
       - safe_reinforcement_learning
 
+- abs: Relative placement tasks are an important category of tasks in which one object needs to be placed in a desired pose relative to another object.  Previous work has shown success in learning relative placement tasks from just a small number of demonstrations, when using relational reasoning networks with geometric inductive biases. However, such methods fail to consider that demonstrations for the same task can be fundamentally multimodal, like a mug hanging on any of n racks. We propose a method that retains the provably translation-invariant and relational properties of prior work but incorporates additional properties that account for multimodal, distributional examples. We show that our method is able to learn precise relative placement tasks with a small number of multimodal demonstrations with no human annotations across a diverse set of objects within a category.
+  authors: Jenny Wang*, Octavian Donca*, David Held
+  award: null
+  bib: "@article{wang2024taxposed,
+  \ title={Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation},
+  \ author={Wang, Jenny and Donca, Octavian and Held, David},
+  \ journal={IEEE International Conference on Robotics and Automation (ICRA), 2024},
+  \ year={2024}
+  \ }"
+  img: ../pics/icra2024.png
+  links:
+  short_id: wang2024taxposed
+  site: https://sites.google.com/view/tax-posed/home
+  title: "Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation"
+  venue: International Conference on Robotics and Automation (ICRA), 2024
+  video_embed: null
+  tags:
+      - affordance
+
 - abs: Understanding and manipulating articulated objects, such as doors and drawers, is crucial for robots operating in human environments. We wish to develop a system that can learn to articulate novel objects with no prior interaction, after training on other articulated objects. Previous approaches for articulated object manipulation rely on either modular methods which are brittle or end-to-end methods, which lack generalizability. This paper presents FlowBot++, a deep 3D vision-based robotic system that predicts dense per-point motion and dense articulation parameters of articulated objects to assist in downstream manipulation tasks. FlowBot++ introduces a novel per-point representation of the articulated motion and articulation parameters that are combined to produce a more accurate estimate than either method on their own. Simulated experiments on the PartNet-Mobility dataset validate the performance of our system in articulating a wide range of objects, while real-world experiments on real objects' point clouds and a Sawyer robot demonstrate the generalizability and feasibility of our system in real-world scenarios.
   authors: Harry Zhang, Ben Eisner, David Held
   award: null
