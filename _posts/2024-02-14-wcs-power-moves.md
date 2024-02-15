@@ -41,8 +41,14 @@ A simple, useful way of counting the music is to replace the 1 of every set of 8
 
 {: style="text-align: center;"}
 **1**, 2, 3, 4, 5, 6, 7, 8
+
+{: style="text-align: center;"}
 **2**, 2, 3, 4, 5, 6, 7, 8
+
+{: style="text-align: center;"}
 **3**, 2, 3, 4, 5, 6, 7, 8
+
+{: style="text-align: center;"}
 **4**, 2, 3, 4, 5, 6, 7, 8
 
 ## What is Hitting the Phrase?
