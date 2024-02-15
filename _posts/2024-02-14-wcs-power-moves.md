@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hitting" the Music in West Coast Swing
+title: Hitting the Music in West Coast Swing
 subtitle: The Theory Behind Nailing Every Phrase Change
 thumbnail-img: /assets/blog_posts/bp.cfd/cover_img.png
 share-img: /assets/blog_posts/bp.cfd/cover_img.png
@@ -40,10 +40,10 @@ Counting the music is relatively simple. Instead of counting and then starting o
 A simple, useful way of counting the music is to replace the 1 of every set of 8 beats with the number of the current measure. For instance, you would count one phrase of music as follows:
 
 {: style="text-align: center;"}
-1, 2, 3, 4, 5, 6, 7, 8
-2, 2, 3, 4, 5, 6, 7, 8
-3, 2, 3, 4, 5, 6, 7, 8
-4, 2, 3, 4, 5, 6, 7, 8
+**1**, 2, 3, 4, 5, 6, 7, 8
+**2**, 2, 3, 4, 5, 6, 7, 8
+**3**, 2, 3, 4, 5, 6, 7, 8
+**4**, 2, 3, 4, 5, 6, 7, 8
 
 ## What is Hitting the Phrase?
 When the phrase change comes, you want to hit what is known as the major 1, which is the 1 just after the last phrase has ended. 
