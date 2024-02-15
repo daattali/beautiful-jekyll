@@ -9,7 +9,7 @@ comments: true
 author: Corrado R. Mazzarelli
 ---
 
-# Summary
+# Summary:
 Music in WCS has big moments where it is fun to hit the music. These moments usually happen on the _major one_, directly after a phrase, which is a collection of 32 beats, divided into 4, 8-beat long measures. To hit the 1 of the new phrase with a _power move_ such as a dip or a ride, take note of how many beats the power move requires. If a power move requires 5 beats, then start that power move on the 5th beat of the 4th measure in the music. The goal is to get the number of beats the power move requires and the beat in the 4th measure that you begin the power move on to sum to 10. That will ensure that you 'hit' the music with your power move at just the right time. 
 
 * Do not remove this line (it will not be displayed)
@@ -76,32 +76,32 @@ The following is a list of “power moves” that you can use to hit the phrase 
 
 ## 1 Count
 
-Sugar Tuck Position [Both]
+- Sugar Tuck Position [Both]
 
 ## 3 Count
 
-Rainbow [Right]
-Walk to Side [Both]
-Reverse Monkey Bars [Right]
-Handshake Hold Side Dip [Right]
-Hip Catch [Right]
-Slingshot [Left]
+- Rainbow [Right]
+- Walk to Side [Both]
+- Reverse Monkey Bars [Right]
+- Handshake Hold Side Dip [Right]
+- Hip Catch [Right]
+- Slingshot [Left]
 
 ## 5 Count
 
-Left Side Pass with Inside Turn to a Dip [Left]
-Underarm Pass to Duck [Both]
-One Footed Spin [Right]
-First 4 Counts of a Whip into a Ride on 5 [Both]
-Right Side Pass with Inside Duck Turn into Side Dip [Right]
-Right Side Pass with Inside Duck Turn into Ride [Both]
-Sugar Tuck with Multiple Back and Forths [Both]
+- Left Side Pass with Inside Turn to a Dip [Left]
+- Underarm Pass to Duck [Both]
+- One Footed Spin [Right]
+- First 4 Counts of a Whip into a Ride on 5 [Both]
+- Right Side Pass with Inside Duck Turn into Side Dip [Right]
+- Right Side Pass with Inside Duck Turn into Ride [Both]
+- Sugar Tuck with Multiple Back and Forths [Both]
 
 ## 7 Count
 
-Whip with Inside Turn to a Duck [Both]
+- Whip with Inside Turn to a Duck [Both]
 
 ## 9 Count
 
-Whip with Triple Outside Turn [Both]
+- Whip with Triple Outside Turn [Both]
 
