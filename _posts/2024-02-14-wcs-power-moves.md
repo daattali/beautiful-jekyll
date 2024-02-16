@@ -101,14 +101,15 @@ The following is a list of “power moves” that you can use to hit the phrase 
 
 - Rainbow [Right]
 - Walk to Side [Both]
-- Reverse Monkey Bars [Right]
+- [Reverse Monkey Bars](https://www.youtube.com/watch?v=d0-BRWinWMU) [Right]
 - Handshake Hold Side Dip [Right]
-- Hip Catch [Right]
-- Slingshot [Left]
+- Right Side Pass Hip Catch [Right]
+- [Slingshot](https://www.youtube.com/watch?v=0a2z7VlTKGs) [Left]
 
 ## 5 Count
 
 - Left Side Pass with Inside Turn to a Dip [Left]
+- [Left Side Pass with a Wrap to Hip Catch](https://www.youtube.com/watch?v=xKIxj10nX7w) [Right]
 - Underarm Pass to Duck [Both]
 - One Footed Spin [Right]
 - First 4 Counts of a Whip into a Ride on 5 [Both]
