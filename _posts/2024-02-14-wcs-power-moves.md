@@ -2,6 +2,8 @@
 layout: post
 title: Hitting the Music in West Coast Swing
 subtitle: The Theory Behind Nailing Every Phrase Change
+thumbnail-img: /assets/blog_posts/bp.wcs_power_moves/cover_image.png
+share-img: /assets/blog_posts/bp.wcs_power_moves/cover_image.png
 tags: [dancer, west coast swing, ]
 comments: true
 author: Corrado R. Mazzarelli
