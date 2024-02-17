@@ -63,6 +63,18 @@ The file located below is for a Notary consent form for minors between the ages 
 
 [Get the parental consent form](https://static.fursquared.com/documents/f2-2024-consent-form.pdf){: target="_blank" rel="noopener"}
 
+## Refund Policy
+
+Refunds are handled depending on your badge level and when the request for a refund is made.
+
+Attendee level badges: Full refunds are available any time before the convention. 
+
+Poster, Sponsor, and Super Sponsor level badges: Full refunds are available if the refund request was made on or before February 10, 2024. After that date, only a 50% refund will be issued except in special cases.
+
+After the convention starts, all refunds will be denied except for special cases.
+
+For more information or to request re-evaluation of an existing refund case, please email [registration@fursquared.com](mailto:registration@fursquared.com).
+
 ## Questions or Concerns?
 
 Email us at: [registration@fursquared.com](mailto:registration@fursquared.com)<br>FurSquared thanks you for your patience.
