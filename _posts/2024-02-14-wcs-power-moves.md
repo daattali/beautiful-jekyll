@@ -91,7 +91,7 @@ Certain songs are exceptions to this rule. For instance, 12 bar blues songs do n
 
 # Figure Compendium
 
-The following is a list of “power moves” that you can use to hit the phrase change. The direction in brackets indicates from the lead’s perspective which way the audience should be when beginning the figure. 
+The following is a list of “power moves” that you can use to hit the phrase change. The direction in brackets indicates which way the audience should be when beginning the figure from the lead’s perspective.
 
 ## 1 Count
 
