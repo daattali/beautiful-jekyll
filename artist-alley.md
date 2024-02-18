@@ -43,7 +43,7 @@ This way, people on the waiting list can participate AND you get the opportunity
 
 * **Do not post things on walls.** This is a historical hotel with historical walls, please be respectful. **If this rule is broken, you will be immediately removed from the Artist Alley and disallowed from entering the lotto for the rest of the weekend.** Depending on severity, your badge may be revoked completely.
 * **Please clean your area for the next person when you check out.**
-* **Each person gets ½ of a table.** Please don’t encroach into your neighbor’s space.
+* **Each person gets ½ of a table.** The table space amounts to 36” x 18” per person. Please don’t encroach into your neighbor’s space.
 * **Cover those bits: Minors will be present at the con, so please have NSFW pieces clearly marked and censored.**
 * **If you’re away from your table for more than 30 minutes, your spot will be forfeited to the next person on the waiting list.** Some exceptions may apply - come talk to us at the desk if you’ll be away for a while. You’re not a prisoner, but we want to make sure that the small space can cater to as many artists as possible over the weekend, and abandoned tables are discouraging to both commissioners and those on the waitlist.
 * **There will be no access to electrical outlets.** Having a portable power bank is highly recommended.
