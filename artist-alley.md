@@ -59,7 +59,7 @@ This way, people on the waiting list can participate AND you get the opportunity
 
 If you have questions about whether or not your items fall in the guidelines, please email **art@fursquared.com** before the con or find **RenaCat** or other Artist Alley Staff in-person by the **Artist Alley Info Desk** or via the **Artist Alley Telegram Channel**.
 
-This year, most of our at-con announcements will be made through telegram! Go to [ **Link will be available Wednesday 2/21/24** ] to keep yourself updated!
+This year, most of our at-con announcements will be made through telegram! Join the 2024 Artist Alley Channel to keep yourself updated!
 
 Be Kind. Have Fun. Make Bank.\
 Good Luck!
