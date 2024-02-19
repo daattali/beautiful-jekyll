@@ -12,6 +12,7 @@ date: 2024-02-19T16:58:32.182Z
 10 AM - 8 PM\
 11 PM - 2 AM
 
-Saturday 9a-9p
+**Saturday**\
+9 AM - 9 PM
 
 Giveaways, information and free condoms & other safer sex materials will also be available at our table. Our Prevention team is here to help you with any questions you may have!
