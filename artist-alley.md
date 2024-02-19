@@ -15,7 +15,9 @@ You can enter the lottery in-person at the Artist Alley Info Desk or via Telegra
 
 ### <p align="center">Please remember to check out at the info desk when you leave the alley for the day!
 
-<p align="center">This way, people on the waiting list can participate AND you get the opportunity to sign up for the next day’s lotto immediately! **Failure to check out may result in disqualification for the following day.**
+<p align="center">This way, people on the waiting list can participate AND you get the opportunity to sign up for the next day’s lotto immediately!
+
+**<p align="center">Failure to check out may result in disqualification for the following day.**
 
 ## How to Participate:
 
