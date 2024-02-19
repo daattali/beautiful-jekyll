@@ -47,11 +47,11 @@ This way, people on the waiting list can participate AND you get the opportunity
 
   This year will be collecting information for state sales tax filing.
 
-  The Google form will be provided to fill out before the convention on telegram. On it we will need some personal information including (name, address, and email)
+  The Google form will be provided to fill out before the convention on telegram. On it we will need some personal information including: name, address, and email.
 
-  We will also be collecting your sales tax id or the last four of your social security number at the convention when you get your table. 
+  We will also be collecting your sales tax id **OR** the last four of your social security number at the convention when you get your table. 
 
-  If you have any questions please message @Kashiru on telegram
+  If you have any questions please message @Kashiru on telegram.
 * **Please clean your area for the next person when you check out.**
 * **Each person gets ½ of a table.** The table space amounts to 36” x 18” per person. Please don’t encroach into your neighbor’s space.
 * **Cover those bits: Minors will be present at the con, so please have NSFW pieces clearly marked and censored.**
