@@ -28,7 +28,7 @@ This way, people on the waiting list can participate AND you get the opportunity
 
 ### Option 2: Telegram Lotto Signups
 
-* Go to the Artist Alley Telegram Announcement Channel \[Link will be available Wednesday 2/21/24 ]
+* Go to the [Artist Alley Telegram Channel](https://t.me/+q-VDZfvAePZjYjFh)
 * Find the pinned message titled “LOTTO SIGN UP”
 * Comment with your Badge Name, Badge Number, and all days that you would like to enter the lotto (Friday, Saturday, and/or Sunday).
 * That’s it! The list of lotto winners and waitlist will be posted in the channel each morning.
