@@ -13,9 +13,9 @@ You can enter the lottery in-person at the Artist Alley Info Desk or via Telegra
 
 ![Hours: Friday: Sign Up 10:30 AM. Lotto/Setup 12 PM. Open to Public 1 PM. Close 5 PM. Saturday: Sign Up 9:30 AM. Lotto/Set Up 10 AM. Open To Public 11 AM. Close 5 PM. Sunday: Sign Up 9:30 AM. Lotto/Setup 10 AM. Open To Public 11 AM. Close 4 PM.](/uploads/f2_2024_artistalley_hours.png)
 
-### Please remember to check out at the info desk when you leave the alley for the day!
+### <p align="center">Please remember to check out at the info desk when you leave the alley for the day!
 
-This way, people on the waiting list can participate AND you get the opportunity to sign up for the next day’s lotto immediately! **Failure to check out may result in disqualification for the following day.**
+<p align="center">This way, people on the waiting list can participate AND you get the opportunity to sign up for the next day’s lotto immediately! **Failure to check out may result in disqualification for the following day.**
 
 ## How to Participate:
 
