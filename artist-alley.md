@@ -77,7 +77,7 @@ subtitle: Hours, Rules, and Other Fun Info!
 
 If you have questions about whether or not your items fall in the guidelines, please email **art@fursquared.com** before the con or find **RenaCat** or other Artist Alley Staff in-person by the **Artist Alley Info Desk** or via the **Artist Alley Telegram Channel**.
 
-<p align="center">This year, most of our at-con announcements will be made through telegram! Join the [2024 Artist Alley Channel](https://t.me/+q-VDZfvAePZjYjFh) to keep yourself updated!
+<p align="center">This year, most of our at-con announcements will be made through telegram! Join the to keep yourself updated!
 
 <p align="center">Be Kind. Have Fun. Make Bank.
 
