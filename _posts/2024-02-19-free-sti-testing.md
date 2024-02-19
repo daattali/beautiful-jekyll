@@ -8,7 +8,9 @@ date: 2024-02-19T16:58:32.182Z
 \
 <ins>**Hours**</ins>
 
-Friday 10a-8p
+**Friday**\
+10 AM - 8 PM\
+11 PM - 2 AM
 
 Saturday 9a-9p
 
