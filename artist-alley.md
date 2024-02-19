@@ -6,10 +6,10 @@ css:
   - /assets/css/theme-2022/artist-alley.css
 subtitle: Hours, Rules, and Other Fun Info!
 ---
-## **<p align="center">The Artist Alley runs on a lottery system where new participants are chosen daily.**\
-#### You can enter the lottery in-person at the Artist Alley Info Desk or via Telegram.
-### **Sign up early via the**
-### [2024 Artist Alley Telegram Channel](https://t.me/+q-VDZfvAePZjYjFh)
+## **<p align="center">The Artist Alley runs on a lottery system where new participants are chosen daily.**
+#### <p align="center">You can enter the lottery in-person at the Artist Alley Info Desk or via Telegram.
+### **<p align="center">Sign up early via the**
+### <p align="center">[2024 Artist Alley Telegram Channel](https://t.me/+q-VDZfvAePZjYjFh)</p>
 
 
 ![Hours: Friday: Sign Up 10:30 AM. Lotto/Setup 12 PM. Open to Public 1 PM. Close 5 PM. Saturday: Sign Up 9:30 AM. Lotto/Set Up 10 AM. Open To Public 11 AM. Close 5 PM. Sunday: Sign Up 9:30 AM. Lotto/Setup 10 AM. Open To Public 11 AM. Close 4 PM.](/uploads/f2_2024_artistalley_hours.png)
