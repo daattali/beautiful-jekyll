@@ -8,10 +8,8 @@ date: 2024-02-19T16:58:32.182Z
 
 Giveaways, information and free condoms & other safer sex materials will also be available at our table. Our Prevention team is here to help you with any questions you may have!
 
-Hours 
+**Hours** 
 
 Friday 10a-8p
 
 Saturday 9a-9p
-
-And dances!
