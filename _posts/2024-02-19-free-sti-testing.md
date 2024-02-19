@@ -6,7 +6,7 @@ date: 2024-02-19T16:58:32.182Z
 ---
 **Vivent Health** will be on site providing free, confidential rapid HIV/Syphilis screening, as well as free full panel STI testing available to attendees! Results for HIV & Syphilis will be ready within 20 minutes.\
 \
-**Hours** 
+<ins>**Hours**</ins>
 
 Friday 10a-8p
 
