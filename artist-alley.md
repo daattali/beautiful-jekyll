@@ -17,7 +17,7 @@ subtitle: Hours, Rules, and Other Fun Info!
 ### <p align="center">[2024 Artist Alley Telegram Channel](https://t.me/+q-VDZfvAePZjYjFh)</p>
 
 <p align="center">
-<img src="/uploads/f2_2024_artistalley_hours.png" ![Hours: Friday: Sign Up 10:30 AM. Lotto/Setup 12 PM. Open to Public 1 PM. Close 5 PM. Saturday: Sign Up 9:30 AM. Lotto/Set Up 10 AM. Open To Public 11 AM. Close 5 PM. Sunday: Sign Up 9:30 AM. Lotto/Setup 10 AM. Open To Public 11 AM. Close 4 PM.]>
+<img src="/uploads/f2_2024_artistalley_hours.png" !\[Hours: Friday: Sign Up 10:30 AM. Lotto/Setup 12 PM. Open to Public 1 PM. Close 5 PM. Saturday: Sign Up 9:30 AM. Lotto/Set Up 10 AM. Open To Public 11 AM. Close 5 PM. Sunday: Sign Up 9:30 AM. Lotto/Setup 10 AM. Open To Public 11 AM. Close 4 PM.]>
 </p>
 
 ### <p align="center">Please remember to check out at the info desk when you leave the alley for the day!
