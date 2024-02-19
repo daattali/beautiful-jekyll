@@ -47,7 +47,7 @@ This way, people on the waiting list can participate AND you get the opportunity
 
   This year will be collecting information for state sales tax filing.
 
-  The Google form will be provided to fill out before the convention on telegram. On it we will need some personal information including: name, address, and email.
+  The Google form will be provided to fill out before the convention via the 2024 Artist Alley Announcement Channel. On it we will need some personal information including: name, address, and email.
 
   We will also be collecting your sales tax id **OR** the last four of your social security number at the convention when you get your table. 
 
