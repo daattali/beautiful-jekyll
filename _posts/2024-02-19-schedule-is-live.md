@@ -9,4 +9,4 @@ Our schedule is fully live! Come take a look at the panels we are offering so yo
 
 https://schedule.fursquared.com/f2-2024/talk/\
 \
-If any changes should arise during the con, this schedule will update and an announcement will go out of social media.
+If any changes should arise during the con, this schedule will update and an announcement will go out on social media.
