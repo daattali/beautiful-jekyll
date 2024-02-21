@@ -25,31 +25,31 @@ url: "https://fursquared.com"
 ###############################################
 
 navbar-links:
-  Convention:
-    - Registration: "registration"
-    - Programming: 'programming'
-    - Guests of Honor: 'goh'
-    - Poster: "poster"
+  Activities:
+    - Schedule: 'programming'
+    - Artist Alley: "artist-alley"
     - Dance Events: "dance-events"
+    - Dealer's Den: "dealers"
+    - Guests of Honor: 'goh'
+    - STI Testing: "sti-testing"
     - Video Games: "video-games"
-    - Photos: "https://fursquared.smugmug.com/"
   Information:
     - About: "about"
+    - Conbook: "assets/FurSquared_2024_Conbook.pdf"
     - Hotel: "hotel"
     - Code of Conduct: "code-of-conduct"
     - Covid Policy: "covid-policy"
-    - STI Testing: "sti-testing"
+    - Photos: "https://fursquared.smugmug.com/"
+    - Poster: "poster"
+    - Volunteer: "volunteer"
   Dealers and Artists:
     - Artist Alley: "artist-alley"
     - Dealer's Den: "dealers"
     - Dealer's Gallery: "https://dealers.fursquared.com"
     - Dealing At F2: "dealing-at-f2"
     - Dealer Code of Conduct: "dealer-coc"
-  Get Involved:
-    - Attend: "registration"
-    - Volunteer: "volunteer"
-    - Vend: "dealers"
   Contact Us: "contact"
+  Register: "registration"
 
 
 ################
