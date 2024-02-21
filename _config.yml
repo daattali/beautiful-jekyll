@@ -30,12 +30,12 @@ navbar-links:
     - Artist Alley: "artist-alley"
     - Dance Events: "dance-events"
     - Dealer's Den: "dealers"
-    - Guests of Honor: 'goh'
     - STI Testing: "sti-testing"
     - Video Games: "video-games"
   Information:
     - About: "about"
     - Conbook: "assets/FurSquared_2024_Conbook.pdf"
+    - Guests of Honor: 'goh'
     - Hotel: "hotel"
     - Code of Conduct: "code-of-conduct"
     - Covid Policy: "covid-policy"
