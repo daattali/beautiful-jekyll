@@ -10,27 +10,26 @@ comments: true
 author: Lantana Park
 ---
 
-
 Introduction of pwn.college
 
 pwn.college is an online platform to learn about core concept of cyber security.
 
 How to get started
 
-I connected pwn workspace throgh SSH. 
+I connected pwn workspace throgh SSH.
 
-1. Get the SSH key 
-`ssh-keygen -f key -N''`
+1. Get the SSH key
+   `ssh-keygen -f key -N''`
 
 2. Input the SSH key in the setting
 
 3. Connect its ssh server
-`ssh -i key hacker@dojo.pwn.college`
+   `ssh -i key hacker@dojo.pwn.college`
 
 Program Misuse: Privilege Escalation
 
 - There are two directory we need to go through
-one is /challenge(to check a quest) and the other is /flag(to get a flag)
+  one is /challenge(to check a quest) and the other is /flag(to get a flag)
 
 Level 1 - the SUID bit on /usr/bin/cat.
 
@@ -46,11 +45,11 @@ Level 2 - the SUID bit on /usr/bin/more
 
 Answer: pwn.college{QHV-ipnvyIz8Nc8hGg_3SYOSlTF.0FN0EDL0MjM3QzW}
 
-`more` command allows users to view the text files in the command prompt and do scroll up and down through the page. 
+`more` command allows users to view the text files in the command prompt and do scroll up and down through the page.
 
 ```bash
 `more /flag`
-``` 
+```
 
 Level 3 - the SUID bit on /usr/bin/less
 
@@ -66,7 +65,7 @@ Level 4 - the SUID bit on /usr/bin/tail
 
 Answer: pwn.college{w18iyy6r_Q4PqyYwepwYYLMVjcA.0lN0EDL0MjM3QzW}
 
-`tail` command allows users to view the last few lines of a file. It can be also used to monitor the file changes in real time. 
+`tail` command allows users to view the last few lines of a file. It can be also used to monitor the file changes in real time.
 
 ```bash
 `tail /flag`
@@ -76,7 +75,7 @@ Level 5 - the SUID bit on /usr/bin/head
 
 Answer: pwn.college{kPSTIF4gcgWqfG-LxDqDEc_Y1mK.01N0EDL0MjM3QzW}
 
-`head` command allows users to modify and output and display the wanted amount of data. By default, it shows the first 10 lines. 
+`head` command allows users to modify and output and display the wanted amount of data. By default, it shows the first 10 lines.
 
 ```bash
 `head /flag`
@@ -86,7 +85,7 @@ Level 6 - the SUID bit on /usr/bin/sort
 
 Answer: pwn.college{sR_JFVkHOraSTyrEERthPJHkFmq.0FO0EDL0MjM3QzW}
 
-`sort` command sorts the contents of a text file, line by line. 
+`sort` command sorts the contents of a text file, line by line.
 
 ```bash
 `sort /flag`
@@ -96,7 +95,7 @@ Level 7 - the SUID bit on /usr/bin/vim
 
 Answer: pwn.college{kmOZJ-C1zDmicWdPZmQxfdA48mN.0VO0EDL0MjM3QzW}
 
-`vim` is a editor to create or edit a text file. There are two modes in vim. One is the command mode and another is the insert mode. In the command mode, users can insert text. 
+`vim` is a editor to create or edit a text file. There are two modes in vim. One is the command mode and another is the insert mode. In the command mode, users can insert text.
 
 ```bash
 `vim /flag`
@@ -128,8 +127,8 @@ Answer: pwn.college{AUiUyAs5rn99guDsmcLextnwB0i.0lM1EDL0MjM3QzW}
 
 `rev` is to reverse the lines characterwise. It reverses the order of the characters in each lines by copying the specified files to the standard output.
 
-```bash 
-`rev /flag` 
+```bash
+`rev /flag`
 `echo "}WzQ3MjM0LDE1Ml0.i0BwntxeLcmsDug99nr5sAyUiUA{egelloc.nwp" | rev`
 ```
 
@@ -145,11 +144,120 @@ find . -exec /bin/sh -p \;
 cat /flag
 ```
 
+Level 26 - the SUID bit on /usr/bin/make
 
+Answer: pwn.college{s0oqIbabpdJC-23-Uu5Y21RGCCW.0FO2EDL0MjM3QzW}
 
+`make` is a utility for building and maintaining groups of programs and files form source code. It allows users to install and compile many utilities from the terminal.
 
+In this command `echo 'password:;cat /flag'`, at first I made a shell command to execute the 'cat /flag' command via 'make' and then, in the `make -f - password`, I made targeted password in the arbitary shell is executed.
 
+Please keep in mind, this process does not involve creating an 'password' file. The purpose of this command is to execute the `cat /flag` command via `make`.
 
+```bash
+echo 'password:;cat /flag' | make -f - password
+```
 
+Level 27 - the SUID bit on /usr/bin/nice
+
+Answer: pwn.college{wRMEE6k8uu6sobd3Hfkf-l4BzhB.0VO2EDL0MjM3QzW}
+
+`nice` launches a process with a user-defined scheduling priority and helps in execution of a program/process with modified scheduling priority.
+
+If I want to specify a different niceness value, I can use the -n option followed by the desired priority adjustment. For example, to run cat /flag with a niceness value of 15, I can use: `nice -n 15 cat /flag`
+
+```bash
+nice cat /flag
+```
+
+Level 28 - the SUID bit on /usr/bin/timeout
+
+Answer: pwn.college{cDc6BkglFWPDbdwI7TMjNuTlWDn.0FM3EDL0MjM3QzW}
+
+`timeout` runs a command with a time limit.
+
+```bash
+timeout 5 cat /flag
+```
+
+Level 29 - the SUID bit on /usr/bin/stdbuf
+
+Answer: pwn.college{cR0TeJSB2raThFbiBIs87t63BuY.0VM3EDL0MjM3QzW}
+
+`stdbuf` allows users to modify the buffering operation for the input/output streams. `stdbuf` is particularly useful when I need to monitor logs in real-time or minimize delays in data transmission between multiple programs. For example, buffering can introduce delays when the output of one program needs to be immediately processed by another program. By adjusting buffering with stdbuf, you can achieve faster data processing.
+
+```bash
+stdbuf -o0 cat /flag
+```
+
+Level 30 - the SUID bit on /usr/bin/setarch
+
+Answer: pwn.college{AkH0h0pB9gMYhJU9YeUXv-WZ472.0lM3EDL0MjM3QzW}
+
+`setarch` allows users to run a program with a modified architecture environment, which can be useful for testing software under different kernel and CPU settings. 
+
+```bash
+setarch x86_64 cat /flag
+```
+
+Level 31 - the SUID bit on /usr/bin/watch
+
+Answer: pwn.college{QH3lv5d6078FQQz0bjfYQhpRtke.01M3EDL0MjM3QzW}
+
+`watch` is useful when I have to execute a command repeatedly and watch the command output change over time. For example, I can use the watch command to monitor the system uptime or disk usage.
+
+In this command, I used -x option because I wanted to pass command to the exec.
+
+```bash
+watch -x cat /flag
+```
+
+Level 32 - the SUID bit on /usr/bin/socat
+
+Answer: pwn.college{g6zmXWWESnZFPUaPUIsLlf1w-eP.0FN3EDL0MjM3QzW}
+
+`socat` is allows users to transfer data bidirectionally between network connections. 
+
+In this command, I used `-u` option becuase I wanted data to flow from the first specified address and then used `STDIN` because I wanted to read the input.
+
+```bash
+socat -u FILE:/flag,create STDIN
+```
+
+Level 33 - the SUID bit on /usr/bin/whiptail
+
+Answer: pwn.college{4RBo4J5kMMoyHpzN7AqRMFH47sG.0VN3EDL0MjM3QzW}
+
+`whiptail` displays dialog boxes from the shell script.
+
+I used `--textbox` option to display the contents of a text file in a dialog box. Additionally I set the size. `--textbox <file> <height> <width>`
+
+```bash
+whiptail --textbox /flag 20 20
+```
+
+Level 34 - the SUID bit on /usr/bin/awk
+
+Answer: pwn.college{0wQ8fhAfmQdX3A_Vt6tkhDsewpD.0lN3EDL0MjM3QzW}
+
+`awk` is widely used command for text processing. 
+
+In this command, I wanted to print all the contents of the file using `awk`
+
+```bash
+awk '{print $0}' /flag
+```
+
+Level 35 - the SUID bit on /usr/bin/sed
+
+Answer: pwn.college{A50F5WAgo7e99SHynqGRpGPQp0_.01N3EDL0MjM3QzW}
+
+`sed` is a non-interactive text editor and aloows users insert, delete, search and replace. And it proceeds line by line, so each line is read individually, processed,and then output again.
+
+With `-n`, `sed` will not print anything unless explicitly instructed to do so by a command. And I specified which line I want to print appending `p`(to print every lines explicitly)
+
+```bash
+sed -n 'p' /flag
+```
 
 
