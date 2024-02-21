@@ -27,7 +27,7 @@ Phone: (414) 271-7250<br/>
 <div align="center">
   <img alt="A map of the venue. Please ask a staff member any questions."  src="{{ 'assets/img/maps/map_venue.png' | relative_url }}" />
 
-  <h4><a href="{{ 'assets/img/maps/vertical_con_map.png' | relative_url }}"target="_new">Click here for a mobile-friendly vertical version of the map.</a></h4>
+  <h4><a href="/assets/img/maps/vertical_con_map.png" target="_new">Click here for a mobile-friendly vertical version of the map.</a></h4>
 </div>
 
 # Hotel Recommendations
