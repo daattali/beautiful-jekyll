@@ -1,7 +1,7 @@
 ---
 layout: page
 full-width: true
-title: Hotel Information
+title: Hotel and Milwaukee Area Information
 subtitle: Introducing Our New Venue! Keep Reading for Information on the Hilton Milwaukee City Center, Hotels, Parking, Travel Options, and Food!
 ---
 <div align="center">
