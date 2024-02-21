@@ -8,7 +8,7 @@ layout: base
   <div class="row">
     <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
 
-      {% if page.gh-repo %}
+      <!-- {% if page.gh-repo %}
         {% assign gh_split =  page.gh-repo | split:'/'  %}
         {% assign gh_user =  gh_split[0]  %}
         {% assign gh_repo =  gh_split[1]  %}
@@ -29,7 +29,7 @@ layout: base
             {% endfor %}
           {% endif %}
         </div>
-      {% endif %}
+      {% endif %} -->
 
       {% if page.before-content %}
         <div class="before-content">
