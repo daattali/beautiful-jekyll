@@ -6,25 +6,23 @@ css:
   - /assets/css/theme-2022/artist-alley.css
 subtitle: Hours, Rules, and Other Fun Info!
 ---
-![]()
 
-## **<p align="center">The Artist Alley runs on a lottery system where new participants are chosen daily.**
+## **The Artist Alley runs on a lottery system where new participants are chosen daily.**
 
-#### <p align="center">You can enter the lottery in-person at the Artist Alley Info Desk or via Telegram.
+#### You can enter the lottery in-person at the Artist Alley Info Desk or via Telegram.
 
-### **<p align="center">Sign up early via the**
+### **Sign up early via the**
 
-### <p align="center">[2024 Artist Alley Telegram Channel](https://t.me/+q-VDZfvAePZjYjFh)</p>
+### [2024 Artist Alley Telegram Channel](https://t.me/+q-VDZfvAePZjYjFh)</p>
 
-<p align="center">
 <img src="/uploads/f2_2024_artistalley_hours.png" !\\\[Hours: Friday: Sign Up 10:30 AM. Lotto/Setup 12 PM. Open to Public 1 PM. Close 5 PM. Saturday: Sign Up 9:30 AM. Lotto/Set Up 10 AM. Open To Public 11 AM. Close 5 PM. Sunday: Sign Up 9:30 AM. Lotto/Setup 10 AM. Open To Public 11 AM. Close 4 PM.]>
 </p>
 
-### <p align="center">Please remember to check out at the info desk when you leave the alley for the day!
+### Please remember to check out at the info desk when you leave the alley for the day!
 
-<p align="center">This way, people on the waiting list can participate AND you get the opportunity to sign up for the next day’s lotto immediately!
+This way, people on the waiting list can participate AND you get the opportunity to sign up for the next day’s lotto immediately!
 
-**<p align="center">Failure to check out may result in disqualification for the following day.**
+**Failure to check out may result in disqualification for the following day.**
 
 ## How to Participate:
 
@@ -58,7 +56,7 @@ subtitle: Hours, Rules, and Other Fun Info!
 
   The Google form will be provided to fill out before the convention via the 2024 Artist Alley Announcement Channel. On it we will need some personal information including: name, address, and email.
 
-  We will also be collecting your sales tax id **OR** the last four of your social security number at the convention when you get your table. 
+  We will also be collecting your sales tax id **OR** the last four of your social security number at the convention when you get your table.
 
   If you have any questions please message [Kashiru](https://t.me/kashiru) on telegram.
 * **Please clean your area for the next person when you check out.**
@@ -79,6 +77,6 @@ If you have questions about whether or not your items fall in the guidelines, pl
 
 This year, most of our at-con announcements will be made through telegram! Join the [2024 Artist Alley Channel](https://t.me/+q-VDZfvAePZjYjFh) to keep yourself updated!
 
-<p align="center">Be Kind. Have Fun. Make Bank.
+Be Kind. Have Fun. Make Bank.
 
-<p align="center">Good Luck!
+Good Luck!

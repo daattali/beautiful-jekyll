@@ -84,6 +84,7 @@ Milwaukee Mitchell International Airport is the main airport serving the Milwauk
 If you live in the Milwaukee area, are staying with a friend, or otherwise looking for other local transportation options, here are a few options to consider.
 
 * **Milwaukee County Transit System**: The Milwaukee County Transit System (MCTS) operates bus routes throughout the Milwaukee area. Wisconsin Avenue, where our Hilton is located, is a huge corridor for bus travel in the area. [Click here for more information](https://www.ridemcts.com/routes-schedules).
+** **MCTS Connect 1 Free Bus Service**: MCTS operates a free bus service called Connect 1 that runs from the Watertown Plank Park and Ride direct to the Hilton at the stop on 5th and Wisconsin. [Click here for more information](https://www.ridemcts.com/routes-schedules/connect-1).
 * **Wisconsin Coach Lines**: Wisconsin Coach Lines operates bus service from a number of regional park and ride lots to Downtown Milwaukee. Buses stop near the Hilton! [Click here for more information](https://www.coachusa.com/wisconsin-coach).
 
 ## From Chicago
