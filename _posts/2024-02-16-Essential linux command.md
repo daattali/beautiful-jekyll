@@ -313,4 +313,16 @@ cat /myflag
 
 Level 40 - set the SUID bit on /usr/bin/mv
 
+Answer: pwn.college{srAEsZ8yGzV0Za_PdVRNy3WQSfV.0lM4EDL0MjM3QzW}
 
+`mv` is used to move files. In this command, I had to open a path for priviilege escalation using `mv`. There is dark side of using the `mv` command. I can move the `cat` to be able to executable into `mv`. That means I tried to essentially overwrite the `mv` binary with the `cat` binary in the `/usr/bin` directory. So, after executing this command, when I run the `mv`, it will behaves as `cat` instead of its original move functionality.
+
+```bash
+mv /usr/bin/cat /usr/bin/mv
+# overwrite the binary cat -> move
+/challenge/babysuid_level40
+# executing a binary located at the path
+mv /flag
+# with the elevated privilieges through suid, I attempted to read the /flag file.
+```
+Level 41
