@@ -260,4 +260,57 @@ With `-n`, `sed` will not print anything unless explicitly instructed to do so b
 sed -n 'p' /flag
 ```
 
+Level 36 - the SUID bit on /usr/bin/ed
+
+Answer: pwn.college{cEe-__iRw_vEgfXYNTMtACiFNF4.0FO3EDL0MjM3QzW}
+
+`ed` is a interactive line-oriented text editor. It is used to create, display, modify and otherwise manipulate text files. Users can interact with `ed` through commands.
+
+```bash
+ed /flag
+vim
+```
+Level 37 - the SUID bit on /usr/bin/chown
+
+Answer: pwn.college{gqg9sqiZFX7alxGIZ98v3-Qs9Dw.0VO3EDL0MjM3QzW}
+
+`chown` allows users to change the user and/or group ownership of a give file, directory, or sybolic link. Since I have user ID 1000, I changed the ownership 1000. I can revise the 1000 into hacker.
+
+```bash
+hacker@program-misuselevel37:$ id
+uid=1000(hacker) gid=1000(hacker) groups=1000(hacker)
+```
+
+```bash
+chown 1000 /flag
+cat /flag
+```
+Level 38 - the SUID bit on /usr/bin/chmod
+
+Answer: pwn.college{spxq7iZ7P8nd3idDyxiIZL0nOO0.0FM4EDL0MjM3QzW}
+
+`chmod` allows users to set or modify a file's permissions.
+
+In this command, `777` represents the permission settings I am applying to the file or directory. In LINUX, file permissions are based on a three-digit code where each digit can range from 0 to 7. Each digit represents the permissions for the user (owner), group, and others (everyone else), in that order. The value `7` in linux permissions represents full permissions: read (4), write (2), and execute (1). Adding these up gives you 7, meaning full permissions.
+Therefore, 777 means I am setting the permissions so that the user, the group, and others can all read, write, and execute the file or directory.
+
+
+```bash
+chmod 777 /flag
+cat /flag
+```
+
+Level 39 - set the SUID bit on /usr/bin/cp
+
+Answer: pwn.college{ghmegt2gKsBtigrS10kfFdOUyhR.0VM4EDL0MjM3QzW}
+
+`cp` is used to copy files and directories. The copied files usually inherites the permission of the original file. However, in this command, I could control this behavior using the `--no-preserve` option with `cp`.
+
+```bash
+cp --no-preserve=mode /flag /myflag
+cat /myflag
+```
+
+Level 40 - set the SUID bit on /usr/bin/mv
+
 
