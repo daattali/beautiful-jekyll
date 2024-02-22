@@ -35,7 +35,7 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 29-Jan	| Similarity		                	| [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/) Problem 1 - 20 | _Cancelled, no topic_ |
 | 5-Feb		| Circles                       	| _Cancelled, coaches in math competition_ | Math Is Cool Team Prep |
 | 12-Feb	| Logic					                  | [2024 Mathcounts School](https://rmsmath.sharplogic.com/exams/) Problem 21 - 30 | _No School_               |
-| 19-Feb	| _No School_ 	                	| [2022 AMC 8](https://artofproblemsolving.com/wiki/index.php/2022_AMC_8) |                           |
+| 19-Feb	| _No School_ 	                	| [2022 AMC 8](https://artofproblemsolving.com/wiki/index.php/2022_AMC_8) | _Cancelled, no topic_ |
 | 26-Feb	| Pascal's Triangle              	|                                       |                           |
 | 4-Mar	  | Sequences                       |                                       | _No School_               |
 | 11-Mar	| Systems of Equations       			|                                       | _Cacelled, Commons unavailable_               |
