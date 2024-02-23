@@ -4,7 +4,7 @@ full-width: true
 title: STI Testing
 description: Information about Vivent Heath's free HIV/Syphilis testing provided at FurSquared this year.
 ---
-Vivent Health will be on site providing free, confidential rapid HIV/Syphilis screening, as well as free full panel STI testing available to attendees! Results for HIV & Syphilis will be ready within 20 minutes.
+Vivent Health will be on site providing free, confidential rapid HIV/Syphilis screening, as well as free full panel STI testing to attendees! Results for HIV & Syphilis will be ready within 20 minutes.
 
 ## Hours
 
