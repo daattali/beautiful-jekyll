@@ -194,7 +194,7 @@ Level 30 - the SUID bit on /usr/bin/setarch
 
 Answer: pwn.college{AkH0h0pB9gMYhJU9YeUXv-WZ472.0lM3EDL0MjM3QzW}
 
-`setarch` allows users to run a program with a modified architecture environment, which can be useful for testing software under different kernel and CPU settings. 
+`setarch` allows users to run a program with a modified architecture environment, which can be useful for testing software under different kernel and CPU settings.
 
 ```bash
 setarch x86_64 cat /flag
@@ -216,7 +216,7 @@ Level 32 - the SUID bit on /usr/bin/socat
 
 Answer: pwn.college{g6zmXWWESnZFPUaPUIsLlf1w-eP.0FN3EDL0MjM3QzW}
 
-`socat` is allows users to transfer data bidirectionally between network connections. 
+`socat` is allows users to transfer data bidirectionally between network connections.
 
 In this command, I used `-u` option becuase I wanted data to flow from the first specified address and then used `STDIN` because I wanted to read the input.
 
@@ -240,9 +240,7 @@ Level 34 - the SUID bit on /usr/bin/awk
 
 Answer: pwn.college{0wQ8fhAfmQdX3A_Vt6tkhDsewpD.0lN3EDL0MjM3QzW}
 
-`awk` is widely used command for text processing. 
-
-In this command, I wanted to print all the contents of the file using `awk`
+`awk` is widely used command for text processing. In this command, I wanted to print all the contents of the file using `awk`
 
 ```bash
 awk '{print $0}' /flag
@@ -250,7 +248,7 @@ awk '{print $0}' /flag
 
 Level 35 - the SUID bit on /usr/bin/sed
 
-Answer: pwn.college{A50F5WAgo7e99SHynqGRpGPQp0_.01N3EDL0MjM3QzW}
+Answer: pwn.college{A50F5WAgo7e99SHynqGRpGPQp0\_.01N3EDL0MjM3QzW}
 
 `sed` is a non-interactive text editor and aloows users insert, delete, search and replace. And it proceeds line by line, so each line is read individually, processed,and then output again.
 
@@ -262,7 +260,7 @@ sed -n 'p' /flag
 
 Level 36 - the SUID bit on /usr/bin/ed
 
-Answer: pwn.college{cEe-__iRw_vEgfXYNTMtACiFNF4.0FO3EDL0MjM3QzW}
+Answer: pwn.college{cEe-\_\_iRw_vEgfXYNTMtACiFNF4.0FO3EDL0MjM3QzW}
 
 `ed` is a interactive line-oriented text editor. It is used to create, display, modify and otherwise manipulate text files. Users can interact with `ed` through commands.
 
@@ -270,6 +268,7 @@ Answer: pwn.college{cEe-__iRw_vEgfXYNTMtACiFNF4.0FO3EDL0MjM3QzW}
 ed /flag
 vim
 ```
+
 Level 37 - the SUID bit on /usr/bin/chown
 
 Answer: pwn.college{gqg9sqiZFX7alxGIZ98v3-Qs9Dw.0VO3EDL0MjM3QzW}
@@ -285,6 +284,7 @@ uid=1000(hacker) gid=1000(hacker) groups=1000(hacker)
 chown 1000 /flag
 cat /flag
 ```
+
 Level 38 - the SUID bit on /usr/bin/chmod
 
 Answer: pwn.college{spxq7iZ7P8nd3idDyxiIZL0nOO0.0FM4EDL0MjM3QzW}
@@ -294,13 +294,12 @@ Answer: pwn.college{spxq7iZ7P8nd3idDyxiIZL0nOO0.0FM4EDL0MjM3QzW}
 In this command, `777` represents the permission settings I am applying to the file or directory. In LINUX, file permissions are based on a three-digit code where each digit can range from 0 to 7. Each digit represents the permissions for the user (owner), group, and others (everyone else), in that order. The value `7` in linux permissions represents full permissions: read (4), write (2), and execute (1). Adding these up gives you 7, meaning full permissions.
 Therefore, 777 means I am setting the permissions so that the user, the group, and others can all read, write, and execute the file or directory.
 
-
 ```bash
 chmod 777 /flag
 cat /flag
 ```
 
-Level 39 - set the SUID bit on /usr/bin/cp
+Level 39 - the SUID bit on /usr/bin/cp
 
 Answer: pwn.college{ghmegt2gKsBtigrS10kfFdOUyhR.0VM4EDL0MjM3QzW}
 
@@ -325,4 +324,98 @@ mv /usr/bin/cat /usr/bin/mv
 mv /flag
 # with the elevated privilieges through suid, I attempted to read the /flag file.
 ```
-Level 41
+
+Level 41 - set the SUID bit on /usr/bin/perl
+
+Answer: pwn.college{wZPrtu-L0vx7jpeLkjIj3bc_gk5.01M4EDL0MjM3QzW}
+
+Perl officially stands for "Practical Extraction and Report Language.". If I use `perl` command, it invokes the perl interpreter, which is used to execute perl scripts. `-n`make the program read input line by line, but it does not automatically print the lines. `e` allows me to specify a line of script directly on the command line. And it is what makes it possilbe to execute perl code without needing to write a script file. `"print"` is to be executed for each line of the input file.
+
+In short, `perl` enters a loop where it reads /flag(filename) line by line. For each line, it executes the print command. Since `print` is called without specific arguments, it prints the contents.
+
+```bash
+perl -ne "print" /flag
+```
+
+Level 42 - set the SUID bit on /usr/bin/python.
+
+Answer: pwn.college{kdID5er9qHEA6XihDvSPJlZOyIQ.0FN4EDL0MjM3QzW}
+
+`python` invokes python program interpreter.
+
+```bash
+python /flag
+```
+
+Level 43 - the SUID bit on /usr/bin/ruby
+
+Answer: pwn.college{k5fRyb6pVBtFJGO6S8Uq1bC07HR.0VN4EDL0MjM3QzW}
+
+`ruby` invokes ruby program interpreter
+
+```bash
+ruby /flag
+```
+
+Level 44 - the SUID bit on /usr/bin/bash
+
+Answer: pwn.college{M01NrvGNVhClH5p0HpZA8RgtHWt.0lN4EDL0MjM3QzW}
+
+`bash` is an sh-compatible command language interpreter that executes commands read from the standard input or from a file. `/usr/bin/bash -p` means I want to new a new bash retaining the privilieges of the effective user ID. And then within the new bash, I can read the file using `cat`
+
+```bash
+/usr/bin/bash -p
+# make a new bash with the retained privilege.
+cat /flag
+# read the file within the newly invoked bash.
+```
+
+Level 45 - the SUID bit on /usr/bin/date
+
+Answer: pwn.college{YTqMkMxYHMAMdI3CxO4EEJ8oiyo.01N4EDL0MjM3QzW}
+
+`date` command is to display the system date and time, and set the date and time of the system. With `--file=filename` option, I can display the date string present at each line of file in the date and time formate.
+
+```bash
+date --file=/flag
+```
+
+Level 46 - the SUID bit on /usr/bin/dmesg
+
+Answer: pwn.college{Uqh_AOfFq2BgYf_4cVJorF4zkGD.0FO4EDL0MjM3QzW}
+
+`dmesg` is to print and control all messages from the kernel right buffer, which is a data structure used to store log message. With the option `-F` reads the messages from the given file.
+
+```bash
+dmesg -F /flag
+```
+
+Level 47 - the SUID bit on /usr/bin/wc
+
+Answer: pwn.college{M46b9kvru240lgAq0FTNR37YcW9.0VO4EDL0MjM3QzW}
+
+`wc` prints newline, word, and byte counts for each file. `--files0-from=filename` reads input from the file.
+
+```bash
+wc --files0-from=/flag
+```
+
+Level 48 - the SUID bit on /usr/bin/gcc
+
+Answer: pwn.college{UnvGd7PJc2Li7MUWz4cE8NAhPbe.0FM5EDL0MjM3QzW}
+
+`gcc` is a feature-rich set of compilers for various programming languages, most notably C and C++, allowing developers to compile source code into executable programs. With `-x` option, I can specify explicitly the language for the following input files. I set c to compile this file.
+
+```bash
+gcc -x c /flag
+```
+
+Level 49 - the SUID bit on /usr/bin/as
+
+`as` reads assembly language(a low-level programming language that is closer to machine code) instructions from a source file and produces an object file in binary format.
+
+Answer: pwn.college{8U-rX7iW3yukkktKWa-xDQppk7R.0VM5EDL0MjM3QzW}
+
+```bash
+as /flag
+```
