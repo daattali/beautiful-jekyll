@@ -1,7 +1,7 @@
 ---
 layout: post
 title: File permission in linux
-subtitle: Solution for Bandit wargames
+subtitle: Here I want to explain about what is file permission in linux
 # cover-img: /assets/img/banditlogo.png
 # thumbnail-img: /assets/img/overthewire.jpeg
 # share-img: /assets/img/path.jpg
@@ -10,7 +10,7 @@ comments: true
 author: Lantana Park
 ---
 
-
+![file permission](/assets/img/pwn-college-program-misuse/Screenshot%202024-02-23%20at%2013.32.21.png)
 
 # Mastering File Permissions in Linux
 
@@ -30,12 +30,14 @@ To view the permissions of a file, you can use the `ls -l` command in the termin
 
 The permissions are displayed in the format `drwxrwxrwx`, where:
 d / rwx / rwx / rwx
+
 - `d` indicates if it's a directory (a dash `-` represents a file).
 - The first `rwx` set shows the owner's permissions.
 - The second `rwx` set shows the group's permissions.
 - The third `rwx` set shows the permissions for others.
 
 Each character represents:
+
 - `r` - Read permission. (4)
 - `w` - Write permission. (2)
 - `x` - Execute permission. (1)
@@ -55,5 +57,4 @@ For example, to add execute permission for the owner, you would use:
 chmod 750 filename
 ```
 
-- It means that all permission(read, write and execute) will be assigned to the owner, users who belongs to group can read and execute and others have on permission about the file.  
-
+- It means that all permission(read, write and execute) will be assigned to the owner, users who belongs to group can read and execute and others have on permission about the file.

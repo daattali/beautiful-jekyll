@@ -31,6 +31,8 @@ Program Misuse: Privilege Escalation
 - There are two directory we need to go through
   one is /challenge(to check a quest) and the other is /flag(to get a flag)
 
+- In this game, I need to escalte privilege to the root level by running an suid bit binary. And then capture the flag.
+
 Level 1 - the SUID bit on /usr/bin/cat.
 
 Answer: pwn.college{gjH7qtwyI85Casi0wlbiFF21WWV.01M0EDL0MjM3QzW}
