@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [pwn college] Fundamental - Program Misuse
+title: pwn college Fundamental - Program Misuse
 subtitle: How to Read Sensitive Files with SUID bit on the Commands and How to Escalate Privilege
 # cover-img: /assets/img/banditlogo.png
 # thumbnail-img: /assets/img/overthewire.jpeg
