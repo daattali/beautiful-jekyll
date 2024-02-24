@@ -441,6 +441,6 @@ wget --post-file=/flag http://127.0.0.1:8888
 
 Level 51 - the SUID bit on /usr/bin/ssh-keygen
 
-Answer: 
+Answer:
 
 ---end---
