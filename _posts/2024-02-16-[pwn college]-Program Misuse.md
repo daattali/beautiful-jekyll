@@ -414,10 +414,33 @@ gcc -x c /flag
 
 Level 49 - the SUID bit on /usr/bin/as
 
-`as` reads assembly language(a low-level programming language that is closer to machine code) instructions from a source file and produces an object file in binary format.
-
 Answer: pwn.college{8U-rX7iW3yukkktKWa-xDQppk7R.0VM5EDL0MjM3QzW}
+
+`as` reads assembly language(a low-level programming language that is closer to machine code) instructions from a source file and produces an object file in binary format.
 
 ```bash
 as /flag
 ```
+
+Level 50 - the SUID bit on /usr/bin/wget
+
+Answer: pwn.college{gJZac_7kEHApg98oKE2-XE1wghC.0lM5EDL0MjM3QzW}
+
+`wget` allows users to download files from the internet. It supports HTTP, HTTPS, and FTP protocoles, as well as retrieval through HTTP proxies.
+
+In order to solve this question, I opened a netcat listener on port 8888, `nc -l -p 8888&`. `-l` tells Netcat to listen incoming connections, `-p 8888` specifies the port number on which Netcat listens, and `&` places this command in the background.
+
+Additionally, `--post-file=/flag` tells `wget` to read the content of the `/flag` file and use them as the data for an HTTP POST request. And I specified the local address and port number where Netcat is listening.
+
+Finally, after executing the `wget` command, `wget` atteps to send the contents of `/flag` to the specified address(`http://127.0.0.1:8888`). And, Netcat, listening on port 8888, receives the connection and prints the contents of the `/flag` file to the terminal where it is running. This allowed me to read the file.
+
+```bash
+nc -l -p 8888 &
+wget --post-file=/flag http://127.0.0.1:8888
+```
+
+Level 51 - the SUID bit on /usr/bin/ssh-keygen
+
+Answer: 
+
+---end---
