@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Asciidoctor 1.5.4">
+  <meta name="author" content="Firstname Lastname">
+  <title>AsciiDoc Article Title</title>
+  <link rel="stylesheet" href="https://asciidoclive.com/assets/asciidoctor.js/css/asciidoctor.css">
+</head>
+
+<body class="article">
+  <div id="header">
+    <h1>AsciiDoc Article Title</h1>
+    <div class="details">
+      <span id="author" class="author">Firstname Lastname</span><br>
+      <span id="email" class="email"><a href="mailto:author@asciidoctor.org">author@asciidoctor.org</a></span><br>
+      <span id="revnumber">version 3.0,</span>
+      <span id="revdate">July 29, 2022</span>
+      <br><span id="revremark">AsciiDoc article template</span>
+    </div>
+    <div id="toc" class="toc">
+      <div id="toctitle">Table of Contents</div>
+      <ul class="sectlevel1">
+        <li><a href="#_first_level_heading">First level heading</a>
+          <ul class="sectlevel2">
+            <li><a href="#_second_level_heading">Second level heading</a></li>
+          </ul>
+        </li>
+        <li><a href="#_first_level_heading_2">First level heading</a></li>
+        <li><a href="#_first_level_heading_3">First level heading</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="content">
+    <div id="preamble">
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>Content entered directly below the header but before the first section
+            heading is called the preamble.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_first_level_heading">First level heading</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>This is a paragraph with a <strong>bold</strong> word and an <em>italicized</em>            word.</p>
+        </div>
+        <div class="imageblock">
+          <div class="content">
+            <img src="image-file-name.png" alt="I am the image alt text.">
+          </div>
+          <div class="title">Figure 1. Image caption</div>
+        </div>
+        <div class="paragraph">
+          <p>This is another paragraph.<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup></p>
+        </div>
+        <div class="sect2">
+          <h3 id="_second_level_heading">Second level heading</h3>
+          <div class="ulist">
+            <div class="title">Unordered list title</div>
+            <ul>
+              <li>
+                <p>list item 1</p>
+                <div class="ulist">
+                  <ul>
+                    <li>
+                      <p>nested list item</p>
+                      <div class="ulist">
+                        <ul>
+                          <li>
+                            <p>nested nested list item 1</p>
+                          </li>
+                          <li>
+                            <p>nested nested list item 2</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <p>list item 2</p>
+              </li>
+            </ul>
+          </div>
+          <div class="paragraph">
+            <p>This is a paragraph.</p>
+          </div>
+          <div class="exampleblock">
+            <div class="title">Example 1. Example block title</div>
+            <div class="content">
+              <div class="paragraph">
+                <p>Content in an example block is subject to normal substitutions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="sidebarblock">
+            <div class="content">
+              <div class="title">Sidebar title</div>
+              <div class="paragraph">
+                <p>Sidebars contain aside text and are subject to normal substitutions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="sect3">
+            <h4 id="_third_level_heading">Third level heading</h4>
+            <div id="id-for-listing-block" class="listingblock">
+              <div class="title">Listing block title</div>
+              <div class="content">
+                <pre>Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.</pre>
+              </div>
+            </div>
+            <div class="sect4">
+              <h5 id="_fourth_level_heading">Fourth level heading</h5>
+              <table class="tableblock frame-all grid-all spread">
+                <caption class="title">Table 1. Table title</caption>
+                <colgroup>
+                  <col style="width: 50%;">
+                  <col style="width: 50%;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="tableblock halign-left valign-top">Column heading 1</th>
+                    <th class="tableblock halign-left valign-top">Column heading 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tableblock halign-left valign-top">
+                      <p class="tableblock">Column 1, row 1</p>
+                    </td>
+                    <td class="tableblock halign-left valign-top">
+                      <p class="tableblock">Column 2, row 1</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tableblock halign-left valign-top">
+                      <p class="tableblock">Column 1, row 2</p>
+                    </td>
+                    <td class="tableblock halign-left valign-top">
+                      <p class="tableblock">Column 2, row 2</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="sect5">
+                <h6 id="_fifth_level_heading">Fifth level heading</h6>
+                <div class="quoteblock">
+                  <blockquote>
+                    <div class="paragraph">
+                      <p>I am a block quote or a prose excerpt. I am subject to normal
+                        substitutions.</p>
+                    </div>
+                  </blockquote>
+                  <div class="attribution">
+                    &#8212; firstname lastname<br>
+                    <cite>movie title</cite>
+                  </div>
+                </div>
+                <div class="verseblock">
+                  <pre class="content">I am a verse block.
+  Indents and endlines are preserved in verse blocks.</pre>
+                  <div class="attribution">
+                    &#8212; firstname lastname<br>
+                    <cite>poem title and more</cite>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_first_level_heading_2">First level heading</h2>
+      <div class="sectionbody">
+        <div class="admonitionblock tip">
+          <table>
+            <tr>
+              <td class="icon">
+                <div class="title">Tip</div>
+              </td>
+              <td class="content">
+                There are five admonition labels: Tip, Note, Important, Caution and Warning.
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="olist arabic">
+          <ol class="arabic">
+            <li>
+              <p>ordered list item</p>
+              <div class="olist loweralpha">
+                <ol class="loweralpha" type="a">
+                  <li>
+                    <p>nested ordered list item</p>
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <p>ordered list item</p>
+            </li>
+          </ol>
+        </div>
+        <div class="paragraph">
+          <p>The text at the end of this sentence is cross referenced to <a href="#_third_level_heading">the third level heading</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_first_level_heading_3">First level heading</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>This is a link to the <a href="https://docs.asciidoctor.org/home/">Asciidoctor documentation</a>.
+            This is an attribute reference <a href="https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/">that links this text to the AsciiDoc Syntax Quick Reference</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footnotes">
+    <hr>
+    <div class="footnote" id="_footnote_1">
+      <a href="#_footnoteref_1">1</a>. I am footnote text and will be displayed at
+      the bottom of the article.
+    </div>
+  </div>
+</body>
+
+</html>
