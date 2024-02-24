@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Essential linux command _ Program Misuse/pwn college
-subtitle: How to Read Sensitive Files with SUID set on the Commands and How to Escalate Privilege
+title: [pwn college] Fundamental - Program Misuse
+subtitle: How to Read Sensitive Files with SUID bit on the Commands and How to Escalate Privilege
 # cover-img: /assets/img/banditlogo.png
 # thumbnail-img: /assets/img/overthewire.jpeg
 # share-img: /assets/img/path.jpg
