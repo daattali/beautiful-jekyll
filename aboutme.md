@@ -5,18 +5,13 @@ layout: page
 ---
 
 Hello, I’m Musa 👋 
-a Software Developer focused on Apple platforms.
+a Software Developer specialized in iOS Development 
 based in Munich.
 
-I love developing high-quality products, solutions, and sharing my knowledge. I use Github to host my hobby projects and contribute to interesting projects to me.
+Developing mobile apps is a passion that extends beyond my professional life. I read, sometimes write, and work on side projects in my free time. I simply enjoy being productive.
 
-My name is Inigo Montoya. I have the following qualities:
+Different from my profession, there are other things that connect me to life. I write, not only technical stuff, but also ordinary things in daily life. I enjoy wandering in the city, going for hikes, cycling, and swimming.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+<!-- ### My story
 
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions. -->
