@@ -3,7 +3,7 @@ layout: post
 title: pwn college Fundamental - Program Misuse
 subtitle: How to Read Sensitive Files with SUID bit on the Commands and How to Escalate Privilege
 # cover-img: /assets/img/banditlogo.png
-# thumbnail-img: /assets/img/overthewire.jpeg
+thumbnail-img: /assets/img/pwnCollege.jpeg
 # share-img: /assets/img/path.jpg
 tags: [CLI, security, linux, pwn, college]
 comments: true

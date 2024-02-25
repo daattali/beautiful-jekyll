@@ -1,9 +1,9 @@
 ---
 layout: post
-title: pwn college Intro to Cybersecurity - Talking Web
+title: pwn college Intro to Cybersecurity - Talking Web (class)
 # subtitle: How to Read Sensitive Files with SUID bit on the Commands and How to Escalate Privilege
 # cover-img: /assets/img/banditlogo.png
-# thumbnail-img: /assets/img/overthewire.jpeg
+thumbnail-img: /assets/img/pwnCollege.jpeg
 # share-img: /assets/img/path.jpg
 tags: [web, security, www, pwn, college]
 comments: true
@@ -73,15 +73,67 @@ Introduction
 
 ## URLs and encoding
 
-What is URL
+What is URI (Uniform Resource Identifier)
 
-- It is composed of a number of things.
+- The primary purpose of a URI is to identify a resource either by location, or a name, or both `https://www.example.com/page.html` is a URI that is also a URL because it locates a resource on the internet. `urn:isbn:0451450523` is a URI that is a URN, which names a resource (in this case, the book with the `ISBN 0451450523`) without specifying its location.
+
+### What is URL (Uniform Resource Locator)
+
+- A URL is to provide the address of a resource on the web, making it accessible via the internet.
   ![HTTPscheme](/assets/img/talkingWeb/Screenshot%202024-02-24%20at%2022.39.49.png)
 
+### Encoding in URLs
 
+- Encoding within URLs is crucial due to the limitations in the characters that can be safely used in URLs and HTTP requests. Characters such as spaces and certain symbols have special meanings or are not allowed in URLs. To include these characters, they must be percent-encoded. This process involves replacing the character with a percent sign % followed by two hexadecimal digits representing the character's ASCII code. For example, a space is encoded as %20.
 
-  State
-  HTTP is stateless protocol.
+- This encoding ensures that the server can correctly parse the HTTP request and the URL, avoiding misunderstandings caused by special characters. For instance, in an HTTP request, spaces and other disallowed characters in URLs are replaced with their percent-encoded equivalents to maintain the integrity of the request.
 
-solution: use HTTP headers for maintaining state
-http cookies
+![hex](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2009.22.52.png)
+
+![encodedrequest](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2009.23.02.png)
+
+### Content Type
+
+- In HTTP requests, the Content-Type header is crucial as it tells the server the type of data the client is sending.
+
+#### Content-Type: application/x-www-form-urlencoded
+
+- This content type is used when submitting simple data forms. Data sent with this content type is encoded as key-value pairs, similar to query parameters in the URL.
+  Content-Type: application/json
+
+![urlencoded](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2009.22.52.png)
+
+#### Content-Type: application/json
+
+- It is indicating that the body of my HTTP request is formatted as a JSON string. JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is often used in RESTful APIs for communicating complex structures because it can easily represent objects and arrays.
+
+![json](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2009.23.02.png)
+
+## State in the HTTP request
+
+- The HTTP protocol is inherently stateless, meaning that it does not inherently remember or track the state of the communication between a client and a server. This characteristic implies that, without additional mechanisms, the server cannot recognize if a client has previously logged in or performed any other action that alters their interaction state.
+
+### solution for maintaing state
+
+#### using HTTP headers for maintaining state
+
+- One common solution to overcome the statelessness of HTTP is the use of cookies.
+
+1. Setting a Cookie: The server initiates state management by sending a `Set-Cookie` header in its response. This header contains the cookie data that the client's browser should store.
+
+![basiccookie1](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.17.06.png)
+![basiccookie2](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.17.13.png)
+
+2. Sending the Cookie: On subsequent requests to the same server, the client’s browser automatically includes the cookie with the `Cookie` header, thus informing the server of the client's previous interactions.
+
+![authcookie1](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.17.36.png)
+![authcookie2](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.17.45.png)
+
+### Session IDs for Enhanced Security
+
+- To further secure the communication and ensure that session identifiers (like cookies) are not easily hijacked or guessed by malicious actors, it's important to use secure, hard-to-guess session IDs.
+
+![session1](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.16.png)
+![session2](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.24.png)
+![session3](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.31.png)
+![session4](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.37.png)

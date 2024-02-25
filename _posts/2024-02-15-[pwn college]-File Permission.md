@@ -3,7 +3,7 @@ layout: post
 title: File permission in linux
 subtitle: Here I want to explain about what is file permission in linux
 # cover-img: /assets/img/banditlogo.png
-# thumbnail-img: /assets/img/overthewire.jpeg
+thumbnail-img: /assets/img/pwnCollege.jpeg
 # share-img: /assets/img/path.jpg
 tags: [file permission, security, linux, seuid]
 comments: true

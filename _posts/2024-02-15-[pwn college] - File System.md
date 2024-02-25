@@ -4,7 +4,7 @@ title: File system in linux
 subtitle: Here I want to explain about what is file system in linux
 # gh-repo: daattali/beautiful-jekyll
 # cover-img: /assets/img/banditlogo.png
-# thumbnail-img: /assets/img/overthewire.jpeg
+thumbnail-img: /assets/img/pwnCollege.jpeg
 # gh-badge: [star, fork, follow]
 tags: [Linux, pwn college, wargames, file system]
 comments: true
