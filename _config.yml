@@ -22,11 +22,8 @@ author: Sofia Cantalupo
 ###############################################
 
 navbar-links:
-  About Me: "about me"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Home: "home"
+
 
 ################
 # --- Logo --- #
