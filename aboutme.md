@@ -1,8 +1,14 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+# title: About me
+# subtitle: Why you'd want to go on a date with me
 ---
+
+Hello, I’m Musa 👋 
+a Software Developer focused on Apple platforms.
+based in Munich.
+
+I love developing high-quality products, solutions, and sharing my knowledge. I use Github to host my hobby projects and contribute to interesting projects to me.
 
 My name is Inigo Montoya. I have the following qualities:
 
