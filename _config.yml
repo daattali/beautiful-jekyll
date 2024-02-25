@@ -20,7 +20,7 @@ author: Sofia Cantalupo
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "about me"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
