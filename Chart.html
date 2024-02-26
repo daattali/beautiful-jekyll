@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        
+        // Draw the chart
+        function drawChart(data) {
+            var chartData = google.visualization.arrayToDataTable([
+                ['Category', 'Amount'],
+                ['Transportation', data.trans],
+                ['Diet', data.diet],
+                ['Energy', data.energy]
+            ]);
+
+            var options = {'title':'User Carbon Footprint', 'width':550, 'height':400};
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(chartData, options);
+        }
+
+        // Listen for messages
+        window.addEventListener('message', (event) => {
+            if (event.data && event.data.trans && event.data.diet && event.data.energy) {
+                google.charts.setOnLoadCallback(() => drawChart(event.data));
+            }
+        }, false);
+    </script>
+</head>
+<body>
+    <div id="piechart"></div>
+</body>
+</html>
