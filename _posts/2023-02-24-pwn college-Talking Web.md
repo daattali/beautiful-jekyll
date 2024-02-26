@@ -137,3 +137,104 @@ What is URI (Uniform Resource Identifier)
 ![session2](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.24.png)
 ![session3](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.31.png)
 ![session4](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.37.png)
+
+Level 1 - Send an HTTP request using curl
+
+Answer: pwn.college{sF9Oa9stL-78VlBWpBns1Z1p7bT.dhjNyMDL0MjM3QzW}
+
+`curl` allows data transfer to ro from a server and it is designed to work without user interaction.
+
+```bash
+curl http://localhost:80
+```
+
+Level 2 - Send an HTTP request using nc
+
+Answer: pwn.college{Ius0FneVO0ONejUoCiJ4e2CL--O.dljNyMDL0MjM3QzW}
+
+`nc` can be used to establish a simple network connection.
+
+```bash
+printf "GET / HTTP/1.0\r\n\r\n" | nc localhost 80
+```
+
+Level 3 - Send an HTTP request using python
+
+Answer: pwn.college{0qZDIIurK5i34hcDLH9VIFztKG9.dBzNyMDL0MjM3QzW}
+
+I made a file _ password.py, and input this script to print the response.text
+
+```bash
+import requests
+# First, I need to make sure if requests library is installed
+
+url = 'http://localhost:80'
+# second, I need to input the url that I want to make a request to
+
+response = requests.get(url)
+# third, I am making a GET reqeust 
+
+print(response.text)
+# Print the response
+```
+
+And then
+```bash
+python password.py
+# Executing the file
+```
+
+Level 4 - Set the host header in an HTTP request using curl
+
+Answer: pwn.college{EYe66lsgLvadoXImXYNocZI8FgE.dFzNyMDL0MjM3QzW}
+
+`curl -h` command is used to display information about the HTTP headers in a request or response.
+
+```bash
+curl -H "Host: 18870d24d0ea39d48596c23222ca9251" http://localhost:80
+```
+
+I could know about the host name by this process. This value has been changed over the quests. I want to know how to get the value beforehand...
+
+```bash
+hacker@talking-weblevel4:$ curl -H "User-Agent:admin" http://localhost:80
+Incorrect host: value localhost, should be 18870d24d0ea39d48596c23222ca9251
+```
+
+Level 5 - Set the host header in an HTTP request using nc
+
+Answer: pwn.college{cDghuH-Opdkyofiiv1zj0H-QjUY.dJzNyMDL0MjM3QzW}
+
+```bash
+hacker@talking-weblevel5:$ nc localhost 80
+GET / HTTP/1.1
+Host: 9f74083f3fff6de9d7642f65073b47ba
+Connection:close
+# And twice enter to make sure the request
+```
+
+Level 6 - Set the host header in an HTTP request using python
+
+Answer: pwn.college{48RdtN--DAM2_Nw9sPIIMG4t_Rm.dNzNyMDL0MjM3QzW}
+
+1. I revised the password.py to set the host header
+
+```bash
+import requests
+
+url = 'http://localhost:80'
+headers = {"Host":"c1ea0a2936bbbf142aa34cc19a03f4c3"}
+
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
+```
+
+2. And the run the python file
+
+```bash
+python password.py
+```
+
+
