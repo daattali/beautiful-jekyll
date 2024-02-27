@@ -162,7 +162,7 @@ Level 3 - Send an HTTP request using python
 
 Answer: pwn.college{0qZDIIurK5i34hcDLH9VIFztKG9.dBzNyMDL0MjM3QzW}
 
-I made a file _ password.py, and input this script to print the response.text
+I made a file \_ password.py, and input this script to print the response.text
 
 ```bash
 import requests
@@ -172,13 +172,14 @@ url = 'http://localhost:80'
 # second, I need to input the url that I want to make a request to
 
 response = requests.get(url)
-# third, I am making a GET reqeust 
+# third, I am making a GET reqeust
 
 print(response.text)
 # Print the response
 ```
 
 And then
+
 ```bash
 python password.py
 # Executing the file
@@ -237,4 +238,147 @@ print(response.text)
 python password.py
 ```
 
+Level 7 - Set the path in an HTTP request using curl
 
+Answer: pwn.college{0woYeC-dLbfeVHcluF1SZ-Z8YNh.dRzNyMDL0MjM3QzW}
+
+```bash
+curl http://localhost:80/0d03ee73b35284664fc7011ac1943c63
+```
+
+Level 8 - Set the path in an HTTP request using nc
+
+Answer: pwn.college{sHyWXhM2iQJZpxtzhT-7FalInGE.dVzNyMDL0MjM3QzW}
+
+```bash
+nc localhost 80
+
+GET /00b14d85e680a2d0d14e8e79298011af HTTP/1.0
+Host: pwn.college
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.8.10
+Date: Tue, 27 Feb 2024 08:59:20 GMT
+Content-Length: 58
+Server: pwn.college
+Connection: close
+```
+
+Level 9 - Set the path in an HTTP request using python
+
+Answer: pwn.college{QMewxOSkIc0\_\_\_G1rc2vmFs83re.dZzNyMDL0MjM3QzW}
+
+In the python script,
+
+```bash
+import requests
+
+url = 'http://localhost:80/f92e810f03ce1e7772fa138748b595d8'
+
+headers = {"Host":"pwn.college"}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
+```
+
+```bash
+python password.py
+```
+
+Level 10 - URL encode a path in an HTTP request using curl
+
+Answer: pwn.college{ICTwKToaWyu9Ya6j9uVahOGyU33.ddzNyMDL0MjM3QzW}
+
+```bash
+curl "http://localhost:80/fe805947%209c8d33ec/2c2fd66c%20fcce0b09"
+```
+
+Level 11 - URL encode a path in an HTTP request using nc
+
+Answer: pwn.college{QAtBVzTgsdMDs8uiqsq4y8lxrYj.dhzNyMDL0MjM3QzW}
+
+```bash
+nc localhost 80
+
+GET /2641977c%20473c3a5f/4381b7b6%20c0adb5bf HTTP/1.1
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.8.10
+Date: Tue, 27 Feb 2024 09:48:07 GMT
+Content-Length: 58
+Server: pwn.college
+Connection: close
+```
+
+Level 12 - URL encode a path in an HTTP request using python
+
+Answer: pwn.college{gpAQlgO1ouZb7T_piqZxgNXWncG.dlzNyMDL0MjM3QzW}
+
+In the python script,
+
+```bash
+import requests
+
+url = 'http://localhost:80/aacc060a%20cd9077b4/fc46353e%208561b879'
+
+headers = {"Host":"pwn.college"}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
+```
+
+```bash
+python password.py
+```
+
+Level 13 - Specify an argument in an HTTP request using curl
+
+Answer: pwn.college{8AGJOnqazr4TgNWC1I6DGar9n_c.dBDOyMDL0MjM3QzW}
+
+`-G` tells `curl` to send the data specified with the `-d` option in the URL's query string. `-d` specifies the data to be sent with the request. In order to send arguments in the query string of a GET request, combining `-G` with `-d` is necessary.
+
+```bash
+curl -G -d'a=f83adfc329b071d0f9a2909758f8caf8' http://localhost:80
+```
+
+Level 14 - Specify an argument in an HTTP request using nc
+
+Answer: pwn.college{QjGW5sTSXTN7OnbXWO_0IMIR4l9.dFDOyMDL0MjM3QzW}
+
+```bash
+nc localhost 80
+
+GET /?a=004699053d33b5ac054e70f3c8236621 HTTP/1.1
+Host: pwn.college
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.8.10
+Date: Tue, 27 Feb 2024 15:27:10 GMT
+Content-Length: 58
+Server: pwn.college
+Connection: close
+```
+
+Level 15 - Specify an argument in an HTTP request using python
+
+Answer: pwn.college{M172kHnaNc8eiYCEk2Om3lPcpRx.dJDOyMDL0MjM3QzW}
+
+In the python script,
+
+```bash
+import requests
+
+url = 'http://localhost:80/?a=bb9701210ad49e697a3abe5344782ace'
+
+headers = {"Host":"pwn.college"}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
+```
+
+```bash
+python password.py
+```
