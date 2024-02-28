@@ -426,7 +426,7 @@ Level 19 - Include form data in an HTTP request using curl
 
 Answer: pwn.college{UQRKdiPciCArkTaJ-\_nzFtNweSO.dZDOyMDL0MjM3QzW}
 
-`curl -F` allows me to interact with the web forms that require complex data or files. It is typically a POST request that submits form data, specifically `multipart/form-data` which is often used for file uploads but can be used for any form data. 
+`curl -F` allows me to interact with the web forms that require complex data or files. It is typically a POST request that submits form data, specifically `multipart/form-data` which is often used for file uploads but can be used for any form data.
 
 ```bash
 curl -F a=61c6252329f744855af0785f27072c61 http://localhost:80
@@ -434,4 +434,40 @@ curl -F a=61c6252329f744855af0785f27072c61 http://localhost:80
 
 Level 20 - Include form data in an HTTP request using nc
 
-Answer: 
+Answer: pwn.college{U6nr9yNlv7GXeRyiOR-lawNHIfN.ddDOyMDL0MjM3QzW}
+
+In the content content length, I should include the length of `a=`. So it should be 34. Due to that, I got many request error messages.
+
+By default, `echo` outputs its arguments to standard output without modification. When `-e` is used, it interprets backslash-escaped characters in the arguments. 
+
+`\n` for a newline
+`\t` for a tab
+`\r` for a carriage return
+
+```bash
+echo -e "POST / HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 34\r\n\r\na=5d75e8b6d224cfc0e9ff76897c1f5ea0" | nc localhost 80
+```
+
+Level 21 - Include form data in an HTTP request using python
+
+Answer: pwn.college{sLNc7olxe02Da3bj8bggUCjZBTE.dhDOyMDL0MjM3QzW}
+
+In the python script,
+
+```bash
+import requests
+
+url = 'http://localhost:80'
+
+form_data = {'a': 'd3eca9842d7c55eda0c15eb31c980dee'}
+
+response = requests.post(url, data=form_data)
+```
+
+And then
+
+```bash
+python password.py
+```
+
+Level 22 -
