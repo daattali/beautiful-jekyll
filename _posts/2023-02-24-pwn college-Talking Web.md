@@ -382,3 +382,56 @@ print(response.text)
 ```bash
 python password.py
 ```
+
+Level 16 - Specify multiple arguments in an HTTP request using curl
+
+Answer: pwn.college{80WJwGjNmqFelLUcQmU5-OY9zrb.dNDOyMDL0MjM3QzW}
+
+`curl -d` allows users to send the POST request. This option is used when I want to make submit form data or make a POST request to a web server.
+
+```bash
+curl -G -d'a=7e2ba0ce4f17f9bcfd4a0a0df7b67ddb' -d 'b=80d0fb21%20f50d2be7%26079486a0%23807223ff' http://localhost:80
+```
+
+Level 17 - Specify multiple arguments in an HTTP request using nc
+
+Answer: pwn.college{USWHwf0zOF3gWc4cEfUWxYiJbS-.dRDOyMDL0MjM3QzW}
+
+```bash
+nc localhost 80
+
+GET /?a=bf7c80ab95cf875ca77990b868f50fc3&b=410b771e%20c27f8533%26e39f3a1a%2357d327cf HTTP/1.1
+Host: pwn.college
+```
+
+Level 18 - Specify multiple arguments in an HTTP request using python
+
+Answer: pwn.college{kCUaYjqVxauC1hjQ8hwd1qkdciG.dVDOyMDL0MjM3QzW}
+
+In the python, still I need to know how I can know the argument key beforehead. Because, after having error, I am getting the proper argument values.
+
+```bash
+import requests
+
+url = 'http://localhost:80/?a=c98f25f0613252265f0f0ac8352466c9&b=ffd1fbbd%2011485d1c%265a5b6b3e%23b4e28b4f'
+
+headers = {"Host":"pwn.college"}
+```
+
+```bash
+python password.py
+```
+
+Level 19 - Include form data in an HTTP request using curl
+
+Answer: pwn.college{UQRKdiPciCArkTaJ-\_nzFtNweSO.dZDOyMDL0MjM3QzW}
+
+`curl -F` allows me to interact with the web forms that require complex data or files. It is typically a POST request that submits form data, specifically `multipart/form-data` which is often used for file uploads but can be used for any form data. 
+
+```bash
+curl -F a=61c6252329f744855af0785f27072c61 http://localhost:80
+```
+
+Level 20 - Include form data in an HTTP request using nc
+
+Answer: 
