@@ -1,8 +1,8 @@
 ---
 layout: post
 title: pwn college Intro to Cybersecurity - Talking Web (class)
-# subtitle: How to Read Sensitive Files with SUID bit on the Commands and How to Escalate Privilege
-# cover-img: /assets/img/banditlogo.png
+subtitle: Sending HTTP requests using nc and curl
+cover-img: /assets/img/pwnCollege.jpeg
 thumbnail-img: /assets/img/pwnCollege.jpeg
 # share-img: /assets/img/path.jpg
 tags: [web, security, www, pwn, college]
@@ -137,6 +137,11 @@ What is URI (Uniform Resource Identifier)
 ![session2](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.24.png)
 ![session3](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.31.png)
 ![session4](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.37.png)
+
+In summary, (after solving the dojos)
+- **For simplicity and direct HTTP/HTTPS interactions**: `curl` is the go-to tool due to its ease of use and extensive feature set for web protocols.
+- **For low-level network interactions**: `nc` is useful, though not specifically designed for HTTP, it shines in custom or educational networking scenarios.
+- **For programming and automation within larger applications**: `Python` (especially with libraries like requests) offers the most flexibility and power, allowing for sophisticated request handling, data processing, and integration into applications or data pipelines.
 
 Level 1 - Send an HTTP request using curl
 
@@ -438,7 +443,7 @@ Answer: pwn.college{U6nr9yNlv7GXeRyiOR-lawNHIfN.ddDOyMDL0MjM3QzW}
 
 In the content content length, I should include the length of `a=`. So it should be 34. Due to that, I got many request error messages.
 
-By default, `echo` outputs its arguments to standard output without modification. When `-e` is used, it interprets backslash-escaped characters in the arguments. 
+By default, `echo` outputs its arguments to standard output without modification. When `-e` is used, it interprets backslash-escaped characters in the arguments.
 
 `\n` for a newline
 `\t` for a tab
@@ -470,4 +475,137 @@ And then
 python password.py
 ```
 
-Level 22 -
+Level 22 - Include form data with multiple fields in an HTTP request using curl
+
+I set `''` in the `b` value because it should be transmitted as a string. If I want to delete `''`, I need to encode the url.
+
+Answer: pwn.college{oloebTWo_1BdDZ_vyUVLnw5MVSP.dlDOyMDL0MjM3QzW}
+
+```bash
+curl -F a=b7faa3a289b8ca44f0c637173d888229 -F b='c1f3aede 2ddc2692&0f1959ef#1025ccb6' http://localhost:80
+```
+
+Level 23 - Include form data with multiple fields in an HTTP request using nc
+
+Answer: pwn.college{svPiyEzOPq4XxyJn3_YC9qTKPUb.dBTOyMDL0MjM3QzW}
+
+```bash
+echo -e 'POST / HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 78\r\n\r\na=34b9e8db82feb5cb73e0f376bf0056e7&b=760da8be%20f606ec84%266c2e1f05%23842bf776' | nc 127.0.0.1 80
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.8.10
+Date: Thu, 29 Feb 2024 09:26:57 GMT
+Content-Length: 58
+Server: pwn.college
+Connection: close
+```
+
+Level 24 - Include form data with multiple fields in an HTTP request using python
+
+Answer: pwn.college{gA2rft2lExO6AteejzHsWDu9r56.dFTOyMDL0MjM3QzW}
+
+```bash
+import requests
+
+url = 'http://localhost:80'
+
+form_data = {
+        'a': '99dbc6ff6ad5d852d239f17106948c5e',
+        'b': '56cf540b 559ea0b9&83033239#5ca77e82'}
+
+response = requests.post(url, data=form_data)
+
+print(response.text)
+```
+
+```bash
+python password.py
+```
+
+Level 25 - Include json data in an HTTP request using curl
+
+Answer: pwn.college{MksPhQxpAWT6RyCTGBgYwBInBCy.dJTOyMDL0MjM3QzW}
+
+In this command I set the application/json as content-type.
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"a": "64194cf6b2140c8ae8f4f51263cc702a"}' http://127.0.0.1:80
+```
+
+Level 26 - Include json data in an HTTP request using nc
+
+Answer: pwn.college{Y0h1OcDY10P1kQOIppst2d2WF1q.dNTOyMDL0MjM3QzW}
+
+```bash
+echo -e "POST / HTTP/1.1\r\nHost: localhost\r\nContent-Type: application/json\r\nContent-Length: $(echo -n '{"a": "425c8817be2901a7ef9e58e371d6dcf4"}' | wc -c)\r\n\r\n{\"a\": \"425c8817be2901a7ef9e58e371d6dcf4\"}" | nc localhost 80
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.8.10
+Date: Thu, 29 Feb 2024 09:51:50 GMT
+Content-Length: 58
+Server: pwn.college
+Connection: close
+```
+
+Level 27 - Include json data in an HTTP request using python
+
+Answer: pwn.college{s5eZ_YvEkSHLmaggh7vU6xPespg.dRTOyMDL0MjM3QzW}
+
+In the python script,
+
+```bash
+import requests
+import json
+
+url = 'http://localhost:80'
+
+headers = {
+        'Content-Type': 'application/json'}
+
+data = {
+        'a': 'c8dc31316eb08bd197cc36a6cca58e64'}
+
+response = requests.post(url, headers=headers, json=data)
+
+print(response.text)
+```
+
+```bash
+python password.py
+```
+
+Level 28 - Include complex json data in an HTTP request using curl
+
+Answer: pwn.college{UlADu70-J-Mtjqzb74nToeUvmgK.dVTOyMDL0MjM3QzW}
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"a": "e66a8e8b496bcf6844192de6235a2f6c", "b": {"c": "e24744e3", "d": ["3d7c54ca", "799690c7 dc8c9f88&c27473d7#ee8dba9a"]}}' http://127.0.0.1:80
+```
+
+Level 30 - Include complex json data in an HTTP request using python
+
+Answer: pwn.college{Ec64Er8CbVnN6h57DI7GiU8MFeZ.ddTOyMDL0MjM3QzW}
+
+In the python script,
+
+```bash
+import requests
+import json
+
+url = 'http://localhost:80'
+
+headers = {
+        'Content-Type': 'application/json'}
+
+data = {
+        'a': '368740ea70f261538ae7ec115ece14d3',
+        'b': {'c': '728c88d8', 'd': ['61ef16c4', 'f6c6a682 b867b715&5e8372c6#098a04c8']}}
+
+response = requests.post(url, headers=headers, json=data)
+
+print(response.text)
+```
+
+```bash
+python password.py
+```
