@@ -10,7 +10,7 @@ comments: true
 author: Lantana Park
 ---
 
-Introduction
+# Introduction
 
 ## World Wide Web (WWW)
 
@@ -139,6 +139,7 @@ What is URI (Uniform Resource Identifier)
 ![session4](/assets/img/talkingWeb/Screenshot%202024-02-25%20at%2010.23.37.png)
 
 In summary, (after solving the dojos)
+
 - **For simplicity and direct HTTP/HTTPS interactions**: `curl` is the go-to tool due to its ease of use and extensive feature set for web protocols.
 - **For low-level network interactions**: `nc` is useful, though not specifically designed for HTTP, it shines in custom or educational networking scenarios.
 - **For programming and automation within larger applications**: `Python` (especially with libraries like requests) offers the most flexibility and power, allowing for sophisticated request handling, data processing, and integration into applications or data pipelines.
@@ -605,6 +606,212 @@ response = requests.post(url, headers=headers, json=data)
 
 print(response.text)
 ```
+
+```bash
+python password.py
+```
+
+Level 31 - Follow an HTTP redirect from HTTP response using curl
+
+Answer: pwn.college{k2vM_zuuL_EQlcTBKbOBoGJFANK.dhTOyMDL0MjM3QzW}
+
+`-L` tells `curl` to follow any redirects.
+
+```bash
+curl -L http://localhost:80
+```
+
+Level 32 - Follow an HTTP redirect from HTTP response using nc
+
+Answer: pwn.college{wGa6qiYynjNN13FBajPuCU_BuRT.dlTOyMDL0MjM3QzW}
+
+```bash
+echo -e "GET /d2d1b4f4fe80b991df81fa547365e9ab HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n" | nc 127.0.0.1 80
+```
+
+Level 33 - Follow an HTTP redirect from HTTP response using python
+
+Answer: pwn.college{s89JjbXIvdW0notLs6Ph2xHeg63.dBDMzMDL0MjM3QzW}
+
+In python script,
+
+```bash
+import requests
+
+url = 'http://localhost:80'
+
+response = requests.get(url)
+
+print(response.text)
+print(response.url)
+print(response.status_code)
+```
+
+```bash
+python password.py
+```
+
+Level 34 - Include a cookie from HTTP response using curl
+
+Answer: pwn.college{oruIxp4lB1cj5sj_ANXt-XwH3tN.dFDMzMDL0MjM3QzW}
+
+`-v` stands for "verbose". When used, `curl` will provide additional details about the request and reponse process.
+`--cookie` allows me to send a cookie with the request.
+
+```bash
+curl -v --cookie "cookie=7db39f47473ac8cd4c34a07f49c7861b" http://localhost:80
+```
+
+Level 35 - Include a cookie from HTTP response using nc
+
+Answer: pwn.college{c2e9nK_s7qWM1_Gn5DM3VAohghl.dJDMzMDL0MjM3QzW}
+
+In this command, I made/saved the response in response.txt.
+
+```bash
+echo -e "GET / HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n" | nc 127.0.0.1 80 > response.txt
+
+cat response.txt
+
+HTTP/1.1 302 FOUND
+Server: Werkzeug/3.0.1 Python/3.8.10
+Date: Fri, 01 Mar 2024 08:51:48 GMT
+Content-Length: 189
+Location: /
+Set-Cookie: cookie=4cdc8da9406b7d70d39edd6a230a8f1b; Path=/
+Server: pwn.college
+Connection: close
+
+<!doctype html>
+<html lang=en>
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to the target URL: <a href="/">/</a>. If not, click the link.
+
+nc localhost 80
+GET / HTTP/1.1
+Host: 127.0.0.1
+Cookie: cookie=4cdc8da9406b7d70d39edd6a230a8f1b
+Connection: close
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.8.10
+Date: Fri, 01 Mar 2024 08:54:27 GMT
+Content-Length: 58
+Server: pwn.college
+Connection: close
+```
+
+Level 36 - Include a cookie from HTTP response using python
+
+Answer: pwn.college{s8Jr6pQ9FocXcxD0NUV0hvK2hdW.dNDMzMDL0MjM3QzW}
+
+In the python script,
+
+```bash
+import requests
+
+url = 'http://localhost:80'
+
+response = requests.get(url)
+
+cookies = response.cookies
+
+print(cookies)
+
+print(response.text)
+print(response.url)
+print(response.status_code)
+```
+
+```bash
+python password.py
+```
+
+Level 37 - Make multiple requests in response to stateful HTTP responses using curl
+
+Answer: pwn.college{Uo4BatEKm20JfYpBf_KzJK_0r0U.dRDMzMDL0MjM3QzW}
+
+Initially, `cookies.txt` can be empty or contain the initial session cookie. `curl` will update `cookies.txt` with new cookies from responses and use them in subsequent requests as it follows redirects.
+
+```bash
+curl -v --cookie "session=eyJzdGF0ZSI6MX0.ZeGcog.fmzIQCWo1dMYwZS2gbSitec_8Ok" http://localhost:80
+
+Trying 127.0.0.1:80...
+TCP_NODELAY set
+Connected to localhost (127.0.0.1) port 80 (#0)
+> GET / HTTP/1.1
+> Host: localhost
+> User-Agent: curl/7.68.0
+> Accept: /
+> Cookie: session=eyJzdGF0ZSI6Mn0.ZeGdSA.xv03oCAPPiTE06-q8_ffZicWlsY
+>
+Mark bundle as not supporting multiuse
+< HTTP/1.1 302 FOUND
+< Server: Werkzeug/3.0.1 Python/3.8.10
+< Date: Fri, 01 Mar 2024 14:16:29 GMT
+< Content-Length: 9
+< Location: /
+< Server: pwn.college
+< Vary: Cookie
+< Set-Cookie: session=eyJzdGF0ZSI6M30.ZeHjPQ.fIYV9kKFlY0QGELiP4Lz_WgfgsA; HttpOnly; Path=/
+< Connection: close
+<
+state: 2
+# It shows the progression of the session
+Closing connection 0
+
+curl -v -L -c cookies.txt -b cookies.txt http://localhost:80
+# I used `-L` option in `curl` to follow the redirects and `-b`(to read cookies from a file)/`-c`(to save cookies to a file) to handle cookies automatically.
+
+Trying 127.0.0.1:80...
+TCP_NODELAY set
+Connected to localhost (127.0.0.1) port 80 (#0)
+> GET / HTTP/1.1
+> Host: localhost
+> User-Agent: curl/7.68.0
+> Accept: /
+> Cookie: session=eyJzdGF0ZSI6NH0.ZeGdlg.UxH1HyiEOENvasKxuDvJxxQFEQU
+>
+Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Server: Werkzeug/3.0.1 Python/3.8.10
+< Date: Fri, 01 Mar 2024 14:16:41 GMT
+< Content-Length: 58
+< Server: pwn.college
+< Vary: Cookie
+Replaced cookie session="eyJzdGF0ZSI6NX0.ZeHjSQ.bpV7lHedxDsoTRwb7jEuz-jh0D4" for domain localhost, path /, expire 0
+< Set-Cookie: session=eyJzdGF0ZSI6NX0.ZeHjSQ.bpV7lHedxDsoTRwb7jEuz-jh0D4; HttpOnly; Path=/
+< Connection: close
+<
+pwn.college{Uo4BatEKm20JfYpBf_KzJK_0r0U.dRDMzMDL0MjM3QzW}
+Closing connection 0
+```
+
+Level 38 - Make multiple requests in response to stateful HTTP responses using nc
+
+Answer: pwn.college{8AdjSf5opJ7TUJhxB6ZIjJYfNXY.dVDMzMDL0MjM3QzW}
+
+```bash
+nc localhost 80
+
+GET / HTTP/1.1
+Host: localhost
+Cookie: session=eyJzdGF0ZSI6M30.ZeGlQA.JYiEYNElFPaPOZ-g3ETDI5pdc74
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.8.10
+Date: Fri, 01 Mar 2024 09:54:27 GMT
+Content-Length: 58
+Server: pwn.college
+Vary: Cookie
+Set-Cookie: session=eyJzdGF0ZSI6NH0.ZeGl0w.4L9TIn7Vie6chL6tVYgPZIUFOSM; HttpOnly; Path=/
+Connection: close
+```
+
+Level 39 - Make multiple requests in response to stateful HTTP responses using python
+
+Answer: pwn.college{EW7_SK2K0Ut1BB0ukXcyLjHG7zS.dZDMzMDL0MjM3QzW}
 
 ```bash
 python password.py
