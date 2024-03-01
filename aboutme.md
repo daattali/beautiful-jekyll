@@ -4,7 +4,7 @@ title: About me
 subtitle: Get in touch with me
 ---
 
-My name is Lantana Gayeong Park. I have the following qualities:
+My name is Lantana Park. I have the following qualities:
 
 - I am a software engineer, specialized in Security in Berlin, Germany
 
