@@ -1,16 +1,14 @@
 ---
 layout: page
+nav-short: true
 # title: About me
 # subtitle: Why you'd want to go on a date with me
 ---
+Hello! 👋 I’m Musa, a software developer with expertise in iOS Development, currently based in Munich.
 
-Hello, I’m Musa 👋 
-a Software Developer specialized in iOS Development 
-based in Munich.
+Developing mobile apps is more than just a profession to me; it's a passion that extends beyond my work life. I enjoy reading technical material, occasional writing, and working on side projects. Learning and productivity are constant sources of motivation in my life.
 
-Developing mobile apps is a passion that extends beyond my professional life. I read, sometimes write, and work on side projects in my free time. I simply enjoy being productive.
-
-Different from my profession, there are other things that connect me to life. I write, not only technical stuff, but also ordinary things in daily life. I enjoy wandering in the city, going for hikes, cycling, and swimming.
+If you want to learn more about my professional career, please, visit my [**Linkedin**](https://www.linkedin.com/in/musakokcen/).
 
 <!-- ### My story
 

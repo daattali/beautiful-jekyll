@@ -20,8 +20,9 @@ author: Musa Kökçen
 ###############################################
 
 navbar-links:
+  Blog: "/"
   About Me: "aboutme"
-  Projects: "mkprojects"
+  Projects: "projects"
 
 ################
 # --- Logo --- #
@@ -51,11 +52,11 @@ social-network-links:
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
    github: musatrtr
    twitter: musakkcn
+   linkedin: musakokcen
   # patreon: musakkcn
   # youtube: "@musakkcn"
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: musakokcen
 #  xing: yourname
 #  stackoverflow: "3943160/musakokcen"
 #  snapchat: musakokcen
@@ -100,7 +101,7 @@ url-pretty: "https://musatrtr.github.io/"
 title-on-all-pages: true
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 10000
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
@@ -109,7 +110,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # Add a search button to the navbar
-post_search: true
+post_search: false
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
 edit_page_button: false
@@ -133,7 +134,7 @@ navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
-link-col: "#008AFF"
+link-col: "#404040"
 hover-col: "#0085A1"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
