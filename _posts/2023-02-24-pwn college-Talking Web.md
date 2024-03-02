@@ -1,6 +1,6 @@
 ---
 layout: post
-title: pwn college Intro to Cybersecurity - Talking Web (class)
+title: pwn college Intro to Cybersecurity - Talking Web
 subtitle: Sending HTTP requests using nc, curl, python
 cover-img: /assets/img/pwnCollege.jpeg
 thumbnail-img: /assets/img/pwnCollege.jpeg
