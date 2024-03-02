@@ -7,7 +7,6 @@ thumbnail-img: /assets/img/pwnCollege.jpeg
 # share-img: /assets/img/path.jpg
 tags: [web, security, www, pwn, college, server]
 comments: true
-layout: default
 author: Lantana Park
 ---
 
@@ -23,6 +22,12 @@ author: Lantana Park
 
 ### Linux process
 socket
+TCP/IP network connection
+
+### HTTP
+
+### Multiprocessing
+
 
 
 
