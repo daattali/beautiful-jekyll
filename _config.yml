@@ -24,10 +24,10 @@ navbar-links:
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
-  Documents: "documents"
-      - pwn college
-      - OverTheWire
-      - Leanring @ CODE
+  # Documents: "documents"
+  #     - pwn college
+  #     - OverTheWire
+  #     - Leanring @ CODE
 
 ################
 # --- Logo --- #
