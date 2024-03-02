@@ -24,7 +24,10 @@ navbar-links:
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
-  # Author's home: "https://deanattali.com"
+  Documents: "documents"
+      - pwn college
+      - OverTheWire
+      - Leanring @ CODE
 
 ################
 # --- Logo --- #
@@ -193,7 +196,7 @@ footer-hover-col: "#0085A1"
 ####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+disqus: "gayeongpark"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
