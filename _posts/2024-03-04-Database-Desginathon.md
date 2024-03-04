@@ -147,4 +147,10 @@ erDiagram
     POSTS ||--o{ COMMENTS : "has"
 ```
 
-## 4
+## 4 The Symphony Orchestra concert DB
+
+## 5 A Cable TV company 
+
+## 6 Justiz: a large law firm (Physical data modeling)
+
+## 7 Faster: a mini bus solution
