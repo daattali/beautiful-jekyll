@@ -2,7 +2,7 @@
 layout: post
 title: Database designathon
 subtitle: Practice for making data modeling
-cover-img: /assets/img/blackboard.jpeg
+cover-img: /assets/img/designathon/coverdesginathon.png
 thumbnail-img: /assets/img/designathon/coverdesginathon.png
 # share-img: /assets/img/path.jpg
 tags: [database, desginthon, database, modeling, conceptual modeling]
@@ -34,7 +34,7 @@ erDiagram
 
 ## 2. The companyDB
 
-![company](/assets/img/designathon/mermaid-diagram-2024-03-04-094749.png)
+![company](/assets/img/designathon/mermaid-diagram-2024-03-04-184246.png)
 
 1. Company-Employee: A "One-to-Many" relationship, indicating that a company employs many employees, but each employee works for a single company.
 2. Company-Project: Another "One-to-Many" relationship, showing that a company can have multiple projects, with each project belonging to one company.
