@@ -14,6 +14,14 @@ author: Lantana Park
 
 ![seccer team](/assets/img/designathon/mermaid-diagram-2024-02-26-102446.png)
 
+```bash
+erDiagram
+    PLAYER ||--|| TEAM : "belong"
+    TEAM ||--o{ PLAYERS : "has many"
+    MATCHES }o--o{ TEAM : "participate"
+    MATCHES ||--o{ PLAYERS : "have many"
+```
+
 - A player belongs a team
 - A team participates many matches
 - A team has many players
@@ -40,7 +48,7 @@ erDiagram
     EMPLOYEE ||--o{ PROJECT : "involved in many"
     EMPLOYEE {
         string EmployeeID PK
-        string ProjectMangerID 
+        string ProjectMangerID
         string Name
         string role
         string Team
@@ -63,11 +71,8 @@ erDiagram
 
 1. COMPANY: This entity represents a company. It has attributes such as CompanyID (Primary Key), Name, Zip, Country, Address1, State, and Employed_staff_number.
 
-2. EMPLOYEE: This entity represents an employee. It has attributes like EmployeeID (Primary Key), ProjectManagerID, Name, Role, and Team. An employee "has many" projects (denoted by the o{} notation).
+2. EMPLOYEE: This entity represents an employee. It has attributes like EmployeeID (Primary Key), ProjectManagerID, Name, Role, and Team. An employee "has many" projects.
 
 3. PROJECT: This entity represents a project. It has attributes such as ProjectID (Primary Key), ProjectName, EmployeeID (Foreign Key), Location, and Budget. A project "has many" employees involved in it.
 
-4. MANAGER: This entity represents a manager. It has attributes like ManagerID (Primary Key) and EmployeeID (Foreign Key). An employee "reports to" a manager (denoted by the ||--|| notation).
-
-
-
+4. MANAGER: This entity represents a manager. It has attributes like ManagerID (Primary Key) and EmployeeID (Foreign Key). An employee "reports to" a manager.
