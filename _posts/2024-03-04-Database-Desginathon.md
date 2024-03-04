@@ -2,7 +2,7 @@
 layout: post
 title: Database designathon
 subtitle: Practice for making data modeling
-cover-img: /assets/img/designathon/coverdesginathon.png
+cover-img: /assets/img/blackboard.jpeg
 thumbnail-img: /assets/img/designathon/coverdesginathon.png
 # share-img: /assets/img/path.jpg
 tags: [database, desginthon, database, modeling, conceptual modeling]
