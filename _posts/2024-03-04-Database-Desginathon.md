@@ -151,3 +151,5 @@ erDiagram
     USERS ||--o{ COMMENTS : "creates"
     POSTS ||--o{ COMMENTS : "has"
 ```
+
+## 4 
