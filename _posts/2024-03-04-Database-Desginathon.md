@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Database designathon
-# subtitle: Sending HTTP requests using nc, curl, python
-cover-img: /assets/img/designathon/coverdesginathon.png
+subtitle: Practice for making data modeling
+cover-img: /assets/img/blackboard.jpeg
 thumbnail-img: /assets/img/designathon/coverdesginathon.png
 # share-img: /assets/img/path.jpg
 tags: [database, desginthon, database, modeling, conceptual modeling]
