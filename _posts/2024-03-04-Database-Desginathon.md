@@ -27,11 +27,6 @@ erDiagram
     MATCHES ||--o{ PLAYERS : "have many"
 ```
 
-- A player belongs a team
-- A team participates many matches
-- A team has many players
-- Players have many matches
-
 ## 2. The companyDB
 
 ![company](/assets/img/designathon/mermaid-diagram-2024-03-04-184246.png)
@@ -152,4 +147,4 @@ erDiagram
     POSTS ||--o{ COMMENTS : "has"
 ```
 
-## 4 
+## 4
