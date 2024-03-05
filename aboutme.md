@@ -6,10 +6,24 @@ subtitle: Get in touch with me
 
 My name is Lantana Park. I have the following qualities:
 
-- I am a software engineer, specialized in Security in Berlin, Germany
+```javascript
+const description =
+  "I am developing web application with consideration of security threat.";
+
+const me = {
+  name: "Lantana Park",
+  codeSkills: ["JavaScript", "TypeScript", "HTML5", "CSS3", "NOSQL"],
+  technologies: {
+    frontEnd: {},
+    backEnd: {},
+    databases: ["MongoDB"],
+    design: ["Figma"],
+  },
+};
+```
 
 What else do you need? Please send me email!
 
 ### My story
 
-I'm a software engineer, specializing in Security. 
+With creative mindset, I am developing application with
