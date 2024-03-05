@@ -100,7 +100,7 @@ The following is a list of “power moves” that you can use to hit the phrase 
 ## 3 Count
 
 - Rainbow [Right]
-- Walk to Side [Both]
+- Walk to Side (What is this Called?) [Both]
 - [Reverse Monkey Bars](https://www.youtube.com/watch?v=d0-BRWinWMU) [Right]
 - Handshake Hold Side Dip [Right]
 - Right Side Pass Hip Catch [Right]
@@ -120,6 +120,7 @@ The following is a list of “power moves” that you can use to hit the phrase 
 ## 7 Count
 
 - Whip with Inside Turn to a Duck [Both]
+- Left Side Pass with Triple Inside Turn [Left]
 
 ## 9 Count
 
