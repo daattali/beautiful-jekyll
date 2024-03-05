@@ -81,7 +81,7 @@ Answer: pwn.college{MM1df7-gRuQ2vzJN3-PeIj4IE0o.dFDL0MjM3QzW}
 
 I just executed `./embryoio_level1`. It was really easy.
 
-```bash
+```
 hacker@program-interaction~level1:/challenge$ ./embryoio_level1
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
@@ -107,7 +107,7 @@ I just entered the given password. (Please notice the comment below)
 
 Answer: pwn.college{0hfnIDhKT2ODaO0bTomrOLDUvU8.dJDL0MjM3QzW}
 
-```bash
+```
 hacker@program-interaction~level2:/challenge$ ./embryoio_level2
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
@@ -137,7 +137,7 @@ Level 3
 
 Answer: pwn.college{skmKbsQNpO-lGxa0QszFXnsy3vs.dNDL0MjM3QzW}
 
-```bash
+```
 hacker@program-interaction~level3:/challenge$ ./embryoio_level3
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
@@ -192,7 +192,7 @@ Level 4
 
 Answer: pwn.college{cx_aFNZCLwdhkdS2jxIdek94-lu.dRDL0MjM3QzW}
 
-```bash
+```
 hacker@program-interaction~level4:/challenge$ export jqtuxe=rhdidouonf
 # making environment
 hacker@program-interaction~level4:/challenge$ ./embryoio_level4
@@ -222,7 +222,7 @@ Level 5
 
 Answer: pwn.college{gXtxqLvdk0CHJhL6I64c3sgkfk0.dVDL0MjM3QzW}
 
-```bash
+```
 hacker@program-interaction~level5:/challenge$ echo yorlicln > /tmp/tlvzpz
 # outputs the string I was given as password and then redirects to the specific file path
 hacker@program-interaction~level5:/challenge$ ./embryoio_level5 < /tmp/tlvzpz
@@ -261,7 +261,7 @@ Level 6
 
 Answer: pwn.college{IjKXSn1onXWW14aDnA_lqpW0Wq5.dZDL0MjM3QzW}
 
-```bash
+```
 hacker@program-interaction~level6:/challenge$ ./embryoio_level6 > /tmp/enhwpg
 # redirect the file into the path
 
@@ -297,7 +297,7 @@ Level 7
 
 Answer: pwn.college{oHiGzdU7crzuyeeCirJ1D30c2Hi.ddDL0MjM3QzW}
 
-```bash
+```
 hacker@program-interaction~level7:/challenge$ env -i ./embryoio_level7
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
