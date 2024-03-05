@@ -22,8 +22,8 @@ author: Corrado R. Mazzarelli
 navbar-links:
   Intellectual Pursuits: "cormazz.github.io"
   Personal Passions: "https://www.corradomazzarelli.com/personal-posts"
-  About Me: "aboutme"
   Resume: "/assets/pdf/Resume 6.3.pdf"
+  About Me: "aboutme"
   Highlighted Projects:
     - Spectrogram: "https://www.corradomazzarelli.com/2023-12-17-spectrography/"
     - CFD Solver: "https://www.corradomazzarelli.com/2024-01-26-cfd/"
