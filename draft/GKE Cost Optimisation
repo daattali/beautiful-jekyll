@@ -1,0 +1,22 @@
+Finops, focus on optimising GKE costs
+Look at Bin Size
+Look
+
+How much of cluster resources are used within cluster.
+
+Efficient bin packing
+Allocatable cluster resoueces vs requested resources
+
+3 main areas to monitor resources. CPU, memory and pods per node.
+
+Aggregate clusrter monitoring. Per cluster high level summary bin acking
+Larger cluster, diverse 
+
+Per node pool monitoring can identiy target areas were bin packing can be improved.
+Under utilisation may not be a problem at aggregate cluster level.
+
+Collect allocatable resources: total cpu/memory available
+Requested reources: Recommended reousrces: recommendations from platform from likes of veritcal pod autpscaler
+Used resources.
+
+https://www.google.com/search?q=monitoring+for+efficient+cluster+binpacking+gke&rlz=1C1GCER_en&oq=monitoring+for+efficient+cluster+binpacking+gke&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKAB0gEIODU1OGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#vhid=JI_jzdEAnbyK_M&vssid=videos-d674aac9
