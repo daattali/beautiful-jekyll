@@ -5,7 +5,15 @@ subtitle: Practice for making data modeling
 cover-img: /assets/img/Blackboard.png
 thumbnail-img: /assets/img/designathon/coverdesginathon.png
 # share-img: /assets/img/path.jpg
-tags: [database, desginthon, database, modeling, conceptual modeling]
+tags:
+  [
+    database,
+    desginathon,
+    database,
+    modeling,
+    conceptual data modeling,
+    physical data modeling,
+  ]
 comments: true
 author: Lantana Park
 ---
@@ -147,10 +155,10 @@ erDiagram
     POSTS ||--o{ COMMENTS : "has"
 ```
 
-## 4 The Symphony Orchestra concert DB
+## 4. The Symphony Orchestra concert DB
 
-## 5 A Cable TV company 
+## 5. A Cable TV company
 
-## 6 Justiz: a large law firm (Physical data modeling)
+## 6. Justiz: a large law firm (Physical data modeling)
 
-## 7 Faster: a mini bus solution
+## 7. Faster: a mini bus solution
