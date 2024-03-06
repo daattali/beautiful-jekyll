@@ -10,7 +10,7 @@ comments: true
 author: Lantana Park
 ---
 
-1. OWASP webGoat A1 - Broken Access Control
+## OWASP webGoat A1 - Broken Access Control
 
 Sesstion ID should be complex and rendom. If not, the application is highly susceptible to session-based brute force attacks.
 
