@@ -7,7 +7,8 @@ subtitle: Get in touch with me
 My name is Lantana Park. I have the following qualities:
 
 ```javascript
-const description = "I am developing web application with consideration of security threat.";
+const description =
+  "I am developing web applications with consideration of security threats.";
 
 const me = {
   name: "Lantana Gayeong Park",
