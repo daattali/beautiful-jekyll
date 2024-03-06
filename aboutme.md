@@ -7,15 +7,16 @@ subtitle: Get in touch with me
 My name is Lantana Park. I have the following qualities:
 
 ```javascript
-const description =
-  "I am developing web application with consideration of security threat.";
+const description = "I am developing web application with consideration of security threat.";
 
 const me = {
-  name: "Lantana Park",
-  codeSkills: ["JavaScript", "TypeScript", "HTML5", "CSS3", "NOSQL"],
+  name: "Lantana Gayeong Park",
+  language: ["JavaScript", "TypeScript", "NoSQL", "Python"],
   technologies: {
-    frontEnd: {},
-    backEnd: {},
+    frontEnd: ["Next.js", "React.js", "React Native"],
+    backEnd: ["Express.js", "Node.js", "Mongoose"],
+    others: ["Mapbox", "Linux"],
+    cloud: ["Docker"],
     databases: ["MongoDB"],
     design: ["Figma"],
   },
