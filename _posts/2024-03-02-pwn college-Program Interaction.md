@@ -79,10 +79,9 @@ Level 1
 
 Answer: pwn.college{MM1df7-gRuQ2vzJN3-PeIj4IE0o.dFDL0MjM3QzW}
 
-I just executed `./embryoio_level1`. It was really easy.
-
 ```
 hacker@program-interaction~level1:/challenge$ ./embryoio_level1
+<!-- just executes this file -->
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
 
@@ -127,7 +126,7 @@ ONWARDS TO GREATNESS!
 [TEST] This program expects you to enter a simple password (specifically, kateygrd). Send it now!
 [INFO] Reading in your input now...
 kateygrd
-# Here
+<!-- here -->
 [GOOD] You successfully passed the password!
 [GOOD] Success! You have satisfied all execution requirements. Here is your flag:
 pwn.college{0hfnIDhKT2ODaO0bTomrOLDUvU8.dJDL0MjM3QzW}
@@ -165,7 +164,7 @@ Traceback (most recent call last):
 IndexError: list index out of range
 
 hacker@program-interaction~level3:/challenge$ ./embryoio_level3 vuharmqbcy
-# I executed the file and input the password.
+<!-- I executed the file and input the password. -->
 
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
@@ -194,9 +193,9 @@ Answer: pwn.college{cx_aFNZCLwdhkdS2jxIdek94-lu.dRDL0MjM3QzW}
 
 ```
 hacker@program-interaction~level4:/challenge$ export jqtuxe=rhdidouonf
-# making environment
+<!-- making environment -->
 hacker@program-interaction~level4:/challenge$ ./embryoio_level4
-# and then executed the file
+<!-- and then executed the file -->
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
 the challenge will check that env[KEY] holds value VALUE (listed to the right as KEY:VALUE) : jqtuxe:rhdidouonf
@@ -224,9 +223,9 @@ Answer: pwn.college{gXtxqLvdk0CHJhL6I64c3sgkfk0.dVDL0MjM3QzW}
 
 ```
 hacker@program-interaction~level5:/challenge$ echo yorlicln > /tmp/tlvzpz
-# outputs the string I was given as password and then redirects to the specific file path
+<!-- outputs the string I was given as password and then redirects to the specific file path -->
 hacker@program-interaction~level5:/challenge$ ./embryoio_level5 < /tmp/tlvzpz
-# redirects the opposite direction from the above and then execute the file using the input from /tmp/tlvzpz
+<!-- redirects the opposite direction from the above and then execute the file using the input from /tmp/tlvzpz -->
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
 the challenge will check that input is redirected from a specific file path : /tmp/tlvzpz
@@ -263,10 +262,10 @@ Answer: pwn.college{IjKXSn1onXWW14aDnA_lqpW0Wq5.dZDL0MjM3QzW}
 
 ```
 hacker@program-interaction~level6:/challenge$ ./embryoio_level6 > /tmp/enhwpg
-# redirect the file into the path
+<!-- redirect the file into the path -->
 
 hacker@program-interaction~level6:/challenge$ cat /tmp/enhwpg
-# and the read the redirected file
+<!-- and the read the redirected file -->
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
 the challenge will check that output is redirected to a specific file path : /tmp/enhwpg
@@ -299,6 +298,7 @@ Answer: pwn.college{oHiGzdU7crzuyeeCirJ1D30c2Hi.ddDL0MjM3QzW}
 
 ```
 hacker@program-interaction~level7:/challenge$ env -i ./embryoio_level7
+<!-- `-i` option initialize a new environment, completely empty of any inherited environment variables -->
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
 the challenge will check that the environment is empty (except LC_CTYPE, which is impossible to get rid of in some cases)
@@ -321,3 +321,179 @@ pwn.college{oHiGzdU7crzuyeeCirJ1D30c2Hi.ddDL0MjM3QzW}
 ```
 
 Level 8
+
+Answer: pwn.college{gJ6f5Gk8a3JTmOxqADQLZ6VFkma.dhDL0MjM3QzW}
+
+In shell script,
+
+```
+#!/bin/bash
+<!-- 'hashbang` indicates which interpreter should be used to execute the script. And I specified the path to the bash interpreter. Thanks to this line, users can run this script directly by its name(`./my_script.sh`) without having to explicitly invoke the interpreter(`bash my_script.sh`) -->
+/challenge/embryoio_level8
+```
+
+```
+hacker@program-interaction~level8:/tmp$ touch my_script.sh
+<!-- makes the file -->
+hacker@program-interaction~level8:/tmp$ vim my_script.sh
+<!-- edits the file -->
+hacker@program-interaction~level8:/tmp$ chmod 777 my_script.sh
+<!-- edit  access permission -->
+hacker@program-interaction~level8:/tmp$ bash my_script.sh
+<!-- execute the file, I can use `./my_script.sh`, instead of the command above -->
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{gJ6f5Gk8a3JTmOxqADQLZ6VFkma.dhDL0MjM3QzW}
+```
+
+Level 9
+
+Answer: pwn.college{Y4xmn15kVTEUBmgx-0htJlWcujk.dlDL0MjM3QzW}
+
+In the shell script,
+
+```
+#!/bin/bash
+PASSWORD="psndxcok"
+<!-- declares the password variable -->
+/challenge/embryoio_level9
+<!-- and then specify path to execute the file -->
+```
+
+```
+hacker@program-interaction~level9:/tmp$ echo "psndxcok" | ./my_script.sh
+<!-- with this value, executes the file -->
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+the challenge will check for a hardcoded password over stdin : psndxcok
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[TEST] This program expects you to enter a simple password (specifically, psndxcok). Send it now!
+[INFO] Reading in your input now...
+[GOOD] You successfully passed the password!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{Y4xmn15kVTEUBmgx-0htJlWcujk.dlDL0MjM3QzW}
+```
+
+Level 10
+
+Answer: pwn.college{gF_LtU0_sXHLodCVGJlB2PGacwh.QXwEDL0MjM3QzW}
+
+```
+#!/bin/bash
+/challenge/embryoio_level10 mnxlozbnvg
+<!-- with the argument passed, executes the file -->
+```
+
+```
+hacker@program-interaction~level10:/tmp$ bash my_script.sh
+<!-- executes this file -->
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+the challenge will check that argv[NUM] holds value VALUE (listed to the right as NUM:VALUE) : 1:mnxlozbnvg
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[TEST] My argv[1] should have a value of mnxlozbnvg! Let's check...
+[GOOD] You successfully passed the argument value check!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{gF_LtU0_sXHLodCVGJlB2PGacwh.QXwEDL0MjM3QzW}
+```
+
+Level 11
+
+Answer: pwn.college{EXTUh_1TKc0QxR0qA1YNWEx_jfU.QXxEDL0MjM3QzW}
+
+In the shell script,
+```
+#!/bin/bash
+export wdcxzm=bzykoxwgzx
+<!-- set environment value -->
+/challenge/embryoio_level11
+<!-- and then run this program -->
+```
+
+```
+hacker@program-interaction~level11:/tmp$ bash  my_script.sh
+<!-- Again, `./my_script.sh` will generate same result -->
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+the challenge will check that env[KEY] holds value VALUE (listed to the right as KEY:VALUE) : wdcxzm:bzykoxwgzx
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[TEST] My 'wdcxzm' environment variable should have a value of bzykoxwgzx! Let's check...
+[GOOD] You successfully passed the environment value check!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{EXTUh_1TKc0QxR0qA1YNWEx_jfU.QXxEDL0MjM3QzW}
+```
+
+Level 12
+
+Answer: pwn.college{oP1N6y4aAAqOBui3rQSRL2cpUB8.QXyEDL0MjM3QzW}
+
+In the shell script,
+```
+#!/bin/bash
+PASSWORD="ndalulxw"
+/challenge/embryoio_level12
+```
+
+```
+hacker@program-interaction~level12:/tmp$ echo "ndalulxw" > /tmp/bnitsh
+<!-- creates a file with content. Printing the string to the standard output, redirects the output of the command on its left to the file on its right -->
+hacker@program-interaction~level12:/tmp$ bash my_script.sh < /tmp/bnitsh
+<!-- executing a shell script with input redirection -->
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+the challenge will check that input is redirected from a specific file path : /tmp/bnitsh
+the challenge will check for a hardcoded password over stdin : ndalulxw
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected a file called /tmp/bnitsh to my stdin. Checking...
+[TEST] I will now check that you redirected /tmp/bnitsh to/from my stdin.
+
+[ADVICE] File descriptors are inherited from the parent, unless the FD_CLOEXEC is set by the parent on the file descriptor.
+[ADVICE] For security reasons, some programs, such as python, do this by default in certain cases. Be careful if you are
+[ADVICE] creating and trying to pass in FDs in python.
+[GOOD] The file at the other end of my stdin looks okay!
+[TEST] This program expects you to enter a simple password (specifically, ndalulxw). Send it now!
+[INFO] Reading in your input now...
+[GOOD] You successfully passed the password!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{oP1N6y4aAAqOBui3rQSRL2cpUB8.QXyEDL0MjM3QzW}
+```
+
+Level 13
+
