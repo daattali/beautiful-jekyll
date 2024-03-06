@@ -39,7 +39,7 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 26-Feb	| _Cancelled, coaching conflict_ 	| [2023 Math Counts State Sprint Round](https://www.mathcounts.org/resources/past-competitions) |  _Cancelled, no tipic_ |
 | 4-Mar	  | Sequences                       | [2023 Math Counts State Target and Team Rounds](https://www.mathcounts.org/resources/past-competitions)                                      | _No School_               |
 | 11-Mar	| Systems of Equations       			| [2023 Math Counts State Countdown Round (Part 1)](https://www.mathcounts.org/resources/past-competitions)              | _Cacelled, Commons unavailable_               |
-| 18-Mar	| Mixture                   			| [2023 Math Counts State Countdown Round (Part 2)](https://www.mathcounts.org/resources/past-competitions)               |                           |
+| 18-Mar	| Mixture                   			| [2023 Math Counts State Countdown Round (Part 2)](https://www.mathcounts.org/resources/past-competitions)               | Mathcrafters party                   |
 | 25-Mar	| Bases                         	|                                       |                           |
 | 1-Apr		| Expected Value                	|                                       |                           |
 | 8-Apr 	| _No School_		                	|  _No School_                          | _No School_               |
