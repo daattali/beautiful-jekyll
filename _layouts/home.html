@@ -36,7 +36,7 @@ layout: page
       {% endif %}
       {% endif %}
 
-      <a href="{{ post.url | absolute_url }}">
+      <!-- <a href="{{ post.url | absolute_url }}"> -->
         <h2 class="post-title">{{ post.title | strip_html }}</h2>
 
         {% if post.subtitle %}
@@ -44,7 +44,7 @@ layout: page
           {{ post.subtitle | strip_html }}
           </h3>
         {% endif %}
-      </a>
+      <!-- </a> -->
 
       {% if post.author %}
         <span>By <strong>{{ post.author | strip_html }}</strong></span>
@@ -72,12 +72,13 @@ layout: page
       {% endif %}
 
       <div class="post-entry">
-        {% assign excerpt_length = site.excerpt_length | default: 50 %}
+        <!-- {% assign excerpt_length = site.excerpt_length | default: 50 %}
         {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
           <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
+        {% endif %} -->
+        {{ post.content }}
       </div>
       {% endunless %}
 
