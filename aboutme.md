@@ -38,4 +38,4 @@ My current dedication to security comes from understanding the critical importan
 
 2. TOEFL 92 [until DEC]
 
-3. Always do what makes me excited
+3. Always do what excites me
