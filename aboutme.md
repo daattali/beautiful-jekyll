@@ -11,7 +11,7 @@ const description =
   "I am developing web applications with the consideration of security threats.";
 
 const me = {
-  name: "Lantana Gayeong Park",
+  fullName: "Lantana Gayeong Park",
   language: ["JavaScript", "TypeScript", "NoSQL", "Python"],
   technologies: {
     frontEnd: ["Next.js", "React.js", "React Native"],
@@ -28,4 +28,4 @@ What else do you need? Please send me email!
 
 ### My story
 
-With creative mindset, I am developing web applications.
+I am developing web applications with creative mindset. 
