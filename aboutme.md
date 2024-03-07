@@ -8,7 +8,7 @@ My name is Lantana Park. I have the following qualities:
 
 ```javascript
 const description =
-  "I am developing web applications with consideration of security threats.";
+  "I am developing web applications with the consideration of security threats.";
 
 const me = {
   name: "Lantana Gayeong Park",
@@ -28,4 +28,4 @@ What else do you need? Please send me email!
 
 ### My story
 
-With creative mindset, I am developing application with
+With creative mindset, I am developing web applications.
