@@ -193,7 +193,7 @@ Answer: pwn.college{cx_aFNZCLwdhkdS2jxIdek94-lu.dRDL0MjM3QzW}
 
 ```
 hacker@program-interaction~level4:/challenge$ export jqtuxe=rhdidouonf
-<!-- making environment -->
+<!-- makes environment -->
 hacker@program-interaction~level4:/challenge$ ./embryoio_level4
 <!-- and then executed the file -->
 WELCOME! This challenge makes the following asks of you:
@@ -262,10 +262,10 @@ Answer: pwn.college{IjKXSn1onXWW14aDnA_lqpW0Wq5.dZDL0MjM3QzW}
 
 ```
 hacker@program-interaction~level6:/challenge$ ./embryoio_level6 > /tmp/enhwpg
-<!-- redirect the file into the path -->
+<!-- redirects the file into the path -->
 
 hacker@program-interaction~level6:/challenge$ cat /tmp/enhwpg
-<!-- and the read the redirected file -->
+<!-- and the reads the redirected file -->
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : bash
 the challenge will check that output is redirected to a specific file path : /tmp/enhwpg
@@ -593,7 +593,7 @@ Type 'copyright', 'credits' or 'license' for more information
 IPython 8.12.3 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]: import subprocess;subprocess.run(["./embryoio_level15"])
-<!-- running the ./embryoio_level15 -->
+<!-- and then running the ./embryoio_level15 -->
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : ipython
 
@@ -653,7 +653,7 @@ ONWARDS TO GREATNESS!
 [TEST] This program expects you to enter a simple password (specifically, usaxszyn). Send it now!
 [INFO] Reading in your input now...
 usaxszyn
-<!-- input password here -->
+<!-- password here -->
 [GOOD] You successfully passed the password!
 [GOOD] Success! You have satisfied all execution requirements. Here is your flag:
 pwn.college{Yr-B3CW7dZZGbHy9_u4_x6VwSW6.QX2EDL0MjM3QzW}
@@ -673,7 +673,7 @@ Type 'copyright', 'credits' or 'license' for more information
 IPython 8.12.3 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]: import subprocess;subprocess.run(["./embryoio_level17","woblfjdnxf"])
-<!-- running file with the value -->
+<!-- and then run file with the value -->
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : ipython
 the challenge will check that argv[NUM] holds value VALUE (listed to the right as NUM:VALUE) : 1:woblfjdnxf
@@ -713,7 +713,7 @@ Type 'copyright', 'credits' or 'license' for more information
 IPython 8.12.3 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]: import subprocess
-<!-- importing subprocess module -->
+<!-- import subprocess module -->
 In [2]: %env bxajoa=vchylivxon
 env: bxajoa=vchylivxon
 <!-- I used `%env` magic command in IPython to set an environment variable. It sets the variable in the environment of the IPython process itself, not in a Python variable named env that I can pass around. -->
@@ -754,13 +754,13 @@ Answer: pwn.college{IzI9oWQgZRp3x0_L9xkqNssPZPg.QX5EDL0MjM3QzW}
 
 ```
 hacker@program-interaction~level19:/challenge$ ipython
-<!-- open ipython shell -->
+<!-- opens ipython shell -->
 Python 3.8.10 (default, Nov 22 2023, 10:22:35)
 Type 'copyright', 'credits' or 'license' for more information
 IPython 8.12.3 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]: import subprocess
-<!-- importing subprocess module to run the file -->
+<!-- imports subprocess module to run the file -->
 
 In [2]: with open('/tmp/etksmq', 'r') as file : subprocess.run(["./embryoio_level19"], stdin=file)
 <!-- opens /tmp/etksmq for reading ('r') and then runs ./embryoio_level19, passing the file as stdin. This effectively redirects the input from /tmp/etksmq to the challenge program, mimicking the input redirection you would normally do in a shell with < /tmp/etksmq. -->
@@ -805,19 +805,19 @@ Answer: pwn.college{YB8atyeBY4fDlB4Uk_LweNFMz7Z.QXwIDL0MjM3QzW}
 
 ```
 hacker@program-interaction~level20:/challenge$ ipython
-<!-- opening the shell -->
+<!-- opens the shell -->
 Python 3.8.10 (default, Nov 22 2023, 10:22:35)
 Type 'copyright', 'credits' or 'license' for more information
 IPython 8.12.3 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]: import subprocess
-<!-- importing subprocess module -->
+<!-- imports subprocess module -->
 In [2]: with open('/tmp/ultuey', 'w') as file: subprocess.run(["./embryoio_level20"], stdout=file)
-<!-- open a file with write mode with specifies path of the redirected file and then run with the stdout to the file -->
+<!-- opens a file with write mode with specified path of the redirected file and then run with the stdout to the file -->
 In [3]: with open('/tmp/ultuey', 'r') as file:
    ...:     contents = file.read()
    ...:     print(contents)
-   <!-- and then open the redirected file and then print the output -->
+   <!-- and then opens the redirected file and then print the output -->
 WELCOME! This challenge makes the following asks of you:
 the challenge checks for a specific parent process : ipython
 the challenge will check that output is redirected to a specific file path : /tmp/ultuey
