@@ -581,7 +581,7 @@ Why do I need to import subprocess?
 
 - It ensures the script is executed directly by the Python interpreter used by IPython, **maintaining the necessary parent-child relationship between processes.**
 
-- `!./embryoio_level15` can run the file in ipython script. However, this shell is a child of the IPython process but is not the same as running the command directly within the Python (IPython) process itself. That means the environment and process hierarchy checks the challenge performs may not pass because the immediate parent of the challenge process is a temporary shell, not Python directly.
+- `!./embryoio_level15` can run the file in ipython script. And this shell is also a child of the IPython process but is not the same as running the command directly within the Python (IPython) process itself.
 
 Answer: pwn.college{o0C1Whx_WrcRmufhYZWeyz94D0s.QX1EDL0MjM3QzW}
 
