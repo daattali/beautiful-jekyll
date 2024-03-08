@@ -44,7 +44,7 @@ I have to intercept the HTTP request for login using burp suit and then going th
 
 ## Steps to attack
 
-1. Send login request many times using Burp repeater.
+- Send login requests many times using Burp repeater.
 
 ![repeater](/assets/img/sessionhijacking/Screenshot%202024-03-08%20at%2016.25.07.png)
 
@@ -60,7 +60,7 @@ I noticed that when the session id was authenticated, it gives me 2 steps increa
 
 So authenticated session id will be `6734358475426208556` in the first part and then second part will be from `1709916877788` to `1709916886839`
 
-2. Make intruder to send many request with possible payload.
+- Make intruder to send many request with possible payload.
 
 ![intruder](/assets/img/sessionhijacking/Screenshot%202024-03-08%20at%2018.04.07.png)
 
@@ -70,7 +70,7 @@ Let's try post request with the value
 
 `6734358475426208556-1709916877788`
 
-3. Send post request with the authenticated session id
+- Send post request with the authenticated session id
 
 ![success](/assets/img/sessionhijacking/Screenshot%202024-03-08%20at%2018.03.25.png)
 
