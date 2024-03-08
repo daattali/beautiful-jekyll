@@ -1,10 +1,10 @@
 ---
 layout: page
 nav-short: true
-# title: About me
-# subtitle: Why you'd want to go on a date with me
+title: ""
+subtitle: Hello 👋
 ---
-Hello! 👋 I’m Musa, a software developer with expertise in iOS Development, currently based in Munich.
+I’m Musa, a software developer with expertise in iOS Development, currently based in Munich.
 
 Developing mobile apps is more than just a profession to me; it's a passion that extends beyond my work life. I enjoy reading technical material, occasional writing, and working on side projects. Learning and productivity are constant sources of motivation in my life.
 
