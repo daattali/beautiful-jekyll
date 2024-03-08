@@ -80,4 +80,4 @@ Success! V
 
 Randomized(unpredictable) session ID or token value
 
---- Next **Insecure Direct Object References** ---
+--- Next Insecure Direct Object References ---
