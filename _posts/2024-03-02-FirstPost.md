@@ -10,8 +10,7 @@ author: Musa Kökçen
 nav-short: true
 ---
 
-I'm glad to welcome you to my personal website. It has been a long time since I wanted to have a modest blog where I could introduce myself, share my thoughts/knowledge, and showcase my work. Here, you will find three things: a page with short information about me, the projects I've worked on, and my occasional blog posts.
-
-Hope you will visit soon again and find some valuable content. 
-Bests,
+Welcome to my personal website! <br><br>
+I've been thinking about creating a modest blog where I can introduce myself, share my thoughts and knowledge, and showcase my work for quite some time now. Here, you'll discover three main sections: a brief overview of who I am, the projects I've been involved in, and occasional blog posts. I hope you will visit soon again and find some valuable content. <br><br>
+Best regards,<br>
 Musa
