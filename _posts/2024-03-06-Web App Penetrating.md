@@ -72,7 +72,7 @@ Let's try post request with the value
 
 ![success](/assets/img/sessionhijacking/Screenshot%202024-03-08%20at%2018.03.25.png)
 
-Success! ![alt text](image.png)
+Success! ![alt text](/assets/img/sessionhijacking/image.png)
 
 ## How to defend from session hijacking attacks
 
