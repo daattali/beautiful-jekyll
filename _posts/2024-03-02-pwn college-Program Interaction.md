@@ -848,3 +848,322 @@ ONWARDS TO GREATNESS!
 [GOOD] Success! You have satisfied all execution requirements. Here is your flag:
 pwn.college{YB8atyeBY4fDlB4Uk_LweNFMz7Z.QXwIDL0MjM3QzW}
 ```
+
+Level 21
+
+Answer: pwn.college{wQMLkpfGh9WXvCxtL8zRocYlgct.QXxIDL0MjM3QzW}
+
+```
+hacker@program-interaction~level21:/challenge$ ipython
+Python 3.8.10 (default, Nov 22 2023, 10:22:35)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.12.3 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import subprocess
+<!-- calls the subprocess module -->
+In [2]: result = subprocess.run(["./embryoio_level21"], env={})
+<!-- runs this program with environment variables holds empty value  -->
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : ipython
+the challenge will check that the environment is empty (except LC_CTYPE, which is impossible to get rid of in some cases)
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] We will now check that that the process is an interactive ipython instance.
+
+[INFO] Since ipython runs as a script inside python, this will check a few things:
+[INFO] 1. That the process itself is python.
+[INFO] 2. That the module being run in python is ipython.
+[INFO] If the process being checked is just a normal 'ipython', you'll be okay!
+
+[INFO] The process' executable is /usr/bin/python3.8.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be python3.8.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should launch me with an empty environment. Checking...
+[GOOD] You successfully passed the empty environment check!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{wQMLkpfGh9WXvCxtL8zRocYlgct.QXxIDL0MjM3QzW}
+```
+
+Level 22
+
+Answer: pwn.college{AB9gFodyapgph-pPeNcH3ZV7hU5.QXyIDL0MjM3QzW}
+
+```
+#!/usr/bin/python3.8
+<!-- indicates the path to the python interpreter that should be used to run this script -->
+
+import subprocess
+<!-- calls subprocess module -->
+
+file_path = "/challenge/embryoio_level22"
+<!-- assigns the string to the file_path variable representing the path to the external program that the script intends to execute -->
+
+result = subprocess.run([file_path])
+```
+
+```
+hacker@program-interaction~level22:/tmp$ ./my_script.py
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : python
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] We will now check that that the process is a non-interactive python instance (i.e., an executing python script).
+[INFO] The process' executable is /usr/bin/python3.8.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be python3.8.
+[GOOD] You have passed the checks on the parent process!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{AB9gFodyapgph-pPeNcH3ZV7hU5.QXyIDL0MjM3QzW}
+```
+
+Level 23
+
+Answer: pwn.college{oDX-O26HfL_HQB_ydL7Ux2c3yko.QXzIDL0MjM3QzW}
+
+```
+#!/usr/bin/python3.8
+
+import subprocess
+
+file_path = "/challenge/embryoio_level23"
+
+result = subprocess.run([file_path])
+```
+
+```
+hacker@program-interaction~level23:/tmp$ ./my_script.py
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : python
+the challenge will check for a hardcoded password over stdin : dremewyh
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] We will now check that that the process is a non-interactive python instance (i.e., an executing python script).
+[INFO] The process' executable is /usr/bin/python3.8.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be python3.8.
+[GOOD] You have passed the checks on the parent process!
+[TEST] This program expects you to enter a simple password (specifically, dremewyh). Send it now!
+[INFO] Reading in your input now...
+dremewyh
+<!-- Password here -->
+[GOOD] You successfully passed the password!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{oDX-O26HfL_HQB_ydL7Ux2c3yko.QXzIDL0MjM3QzW}
+```
+
+Level 24
+
+Answer: pwn.college{wtNYpZLg6YIV_VaytuZIfyyyug7.QX0IDL0MjM3QzW}
+
+```
+#!/usr/bin/python3.8
+
+import subprocess
+
+file_path = "/challenge/embryoio_level24"
+
+result = subprocess.run([file_path, "mgwynwblde"])
+```
+
+```
+hacker@program-interaction~level24:/tmp$ ./my_script.py
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : python
+the challenge will check that argv[NUM] holds value VALUE (listed to the right as NUM:VALUE) : 1:mgwynwblde
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] We will now check that that the process is a non-interactive python instance (i.e., an executing python script).
+[INFO] The process' executable is /usr/bin/python3.8.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be python3.8.
+[GOOD] You have passed the checks on the parent process!
+[TEST] My argv[1] should have a value of mgwynwblde! Let's check...
+[GOOD] You successfully passed the argument value check!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{wtNYpZLg6YIV_VaytuZIfyyyug7.QX0IDL0MjM3QzW}
+```
+
+Level 25
+
+Answer: pwn.college{4OHO-tyKiKgS1xAnmP5FkmgNgDR.QX1IDL0MjM3QzW}
+
+```
+#!/usr/bin/python3.8
+
+import subprocess
+
+file_path = "/challenge/embryoio_level25"
+
+result = subprocess.run([file_path], env={"qpvtwc":"eghdabuygy"})
+```
+
+```
+hacker@program-interaction~level25:/tmp$ ./my_script.py
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : python
+the challenge will check that env[KEY] holds value VALUE (listed to the right as KEY:VALUE) : qpvtwc:eghdabuygy
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] We will now check that that the process is a non-interactive python instance (i.e., an executing python script).
+[INFO] The process' executable is /usr/bin/python3.8.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be python3.8.
+[GOOD] You have passed the checks on the parent process!
+[TEST] My 'qpvtwc' environment variable should have a value of eghdabuygy! Let's check...
+[GOOD] You successfully passed the environment value check!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{4OHO-tyKiKgS1xAnmP5FkmgNgDR.QX1IDL0MjM3QzW}
+```
+
+Level 26
+
+Answer: pwn.college{QKvaAEdda7bur5DvgjUzbpt4xaB.QX2IDL0MjM3QzW}
+
+```
+#!/usr/bin/python3.8
+
+import subprocess
+
+file_path = "/challenge/embryoio_level26"
+
+with open('/tmp/isodpx', 'r') as input_file:
+<!-- reads /tmp/isodpx as input file and then run the embryoio file with input file. I stored the password "gkbdahrs" in the isodpx file -->
+    subprocess.run(file_path, stdin=input_file)
+```
+
+```
+hacker@program-interaction~level26:/tmp$ ./my_script.py
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : python
+the challenge will check that input is redirected from a specific file path : /tmp/isodpx
+the challenge will check for a hardcoded password over stdin : gkbdahrs
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] We will now check that that the process is a non-interactive python instance (i.e., an executing python script).
+[INFO] The process' executable is /usr/bin/python3.8.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be python3.8.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected a file called /tmp/isodpx to my stdin. Checking...
+[TEST] I will now check that you redirected /tmp/isodpx to/from my stdin.
+
+[ADVICE] File descriptors are inherited from the parent, unless the FD_CLOEXEC is set by the parent on the file descriptor.
+[ADVICE] For security reasons, some programs, such as python, do this by default in certain cases. Be careful if you are
+[ADVICE] creating and trying to pass in FDs in python.
+[GOOD] The file at the other end of my stdin looks okay!
+[TEST] This program expects you to enter a simple password (specifically, gkbdahrs). Send it now!
+[INFO] Reading in your input now...
+[GOOD] You successfully passed the password!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{QKvaAEdda7bur5DvgjUzbpt4xaB.QX2IDL0MjM3QzW}
+```
+
+Level 27
+
+Answer: pwn.college{YtAmKwlId08HuMZbF_uBqZ7tNlf.QX3IDL0MjM3QzW}
+
+```
+#!/usr/bin/python3.8
+
+import subprocess
+
+file_path = "/challenge/embryoio_level27"
+
+with open('/tmp/kvqktq', 'w') as file:
+    subprocess.run(file_path, stdout=file)
+
+with open('/tmp/kvqktq', 'r') as file:
+    print(file.read())
+```
+
+```
+hacker@program-interaction~level27:/tmp$ ./my_script.py
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : python
+the challenge will check that output is redirected to a specific file path : /tmp/kvqktq
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] We will now check that that the process is a non-interactive python instance (i.e., an executing python script).
+[INFO] The process' executable is /usr/bin/python3.8.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be python3.8.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected my stdout to a file called /tmp/kvqktq. Checking...
+[TEST] I will now check that you redirected /tmp/kvqktq to/from my stdout.
+
+[ADVICE] File descriptors are inherited from the parent, unless the FD_CLOEXEC is set by the parent on the file descriptor.
+[ADVICE] For security reasons, some programs, such as python, do this by default in certain cases. Be careful if you are
+[ADVICE] creating and trying to pass in FDs in python.
+[GOOD] The file at the other end of my stdout looks okay!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{YtAmKwlId08HuMZbF_uBqZ7tNlf.QX3IDL0MjM3QzW}
+```
+
+Level 28
+
+Answer: pwn.college{8EyUS3JW21gtPLHNkZ11-zQzA5R.QX4IDL0MjM3QzW}
+
+```
+#!/usr/bin/python3.8
+
+import subprocess
+
+file_path = "/challenge/embryoio_level28"
+
+result = subprocess.run([file_path], env={})
+```
+
+```
+hacker@program-interaction~level28:/tmp$ ./my_script.py
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : python
+the challenge will check that the environment is empty (except LC_CTYPE, which is impossible to get rid of in some cases)
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] We will now check that that the process is a non-interactive python instance (i.e., an executing python script).
+[INFO] The process' executable is /usr/bin/python3.8.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be python3.8.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should launch me with an empty environment. Checking...
+[GOOD] You successfully passed the empty environment check!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{8EyUS3JW21gtPLHNkZ11-zQzA5R.QX4IDL0MjM3QzW}
+```
+
+Level 29
+
+From now on, I am going to c programming for making binary file.
