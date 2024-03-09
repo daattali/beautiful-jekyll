@@ -24,7 +24,7 @@ It is a technique used by attackers to take over the internet session. This is t
 
 **Let's start from what is session?**
 
-Our computer uses HTTP requests to communicate with users and websites. Unfortunately, HTTP requests are stateless, which means HTTP exchanges do not tell a website that went on before. So, even if you logged in (by matching user ID and password) and then want to navigate to a new page, this website does not know if you are an authenticated user and then this would obviously make for an terrible user experience.
+Computer uses HTTP requests to communicate with users and websites. Unfortunately, HTTP requests are stateless, which means HTTP exchanges do not tell a website that went on before. So, even if you logged in (by matching user ID and password) and then want to navigate to a new page, this website does not know if you are an authenticated user and then this would obviously make for an terrible user experience.
 
 Session can be one of resolutions to this issue. A session referes to the interaction between a user and a website within a given timeframe until the users logs out or the session expires due to inactivity on the website.
 

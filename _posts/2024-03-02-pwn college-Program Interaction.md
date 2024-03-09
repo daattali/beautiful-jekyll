@@ -5,7 +5,7 @@ title: pwn college Fundamentals - Program Interaction
 cover-img: /assets/img/pwnCollege.jpeg
 thumbnail-img: /assets/img/pwnCollege.jpeg
 # share-img: /assets/img/path.jpg
-tags: [web, security, www, pwn, college, linux]
+tags: [web, security, pwn, college, linux]
 comments: true
 author: Lantana Park
 ---
@@ -20,11 +20,9 @@ author: Lantana Park
 
 - A binary file is a file that contains data in binary form. This means it is stored in a format that is directly readable by a computer, not in a human-readable format like text files.
 
-### What is ELF files
+### What is ELF files 🧚‍♂️
 
-- ELF, which stands for Executable and Linkable Format, was designed by the Unix System Laboratories and has become widely adopted in various Unix-like operating systems, including Linux. ELF files are a specific type of binary file that follows a particular structure **defining how data and code are organized within the file.** This structure allows the operating system to know how to load and execute the file or how an executable can utilize a shared library.
-
-Tools like `readelf`, `nm`, and `patchelf` can be used to interact with ELF files.
+- ELF(Executable and Linkable Format) files are a specific type of binary file that follows a particular structure defining how data and code are organized within the file. This structure allows the operating system to know how to load and execute the file or how an executable can utilize a shared library.
 
 An ELF file typically contains several sections that include:
 
@@ -39,33 +37,76 @@ An ELF file typically contains several sections that include:
 
 ### What is symbols in binary?
 
+- **Symbol** refer to names used to represent various elements within a piece of software. These elements can include **functions**, **variables**, and **other types of identifiers** that have been coded into a program.
+
 - Symbols in ELF files are used to resolve library calls and find functions and variables.
+
+### Tools to interact with ELF
+
+`gcc` makes ELF file (allows compile)
+`readelf` parses ELF header
+`objdump` parses ELF header and disassemble the source code
+`nm` views ELF symbols
+`patchelf` changes some ELF properties
+`objcopy` swaps out (replace) ELF sections
+`strace` monitors the system calls and signals
 
 ## Linux Process Loading
 
 `cat /flag`
 
-- A process is an individual program running on a computer, such as a browser or terminal.
+### Process Creation
 
-- Processes are created through forking or cloning, with a parent process giving rise to child processes.
+![load](/assets/img/programInteraction/Screenshot%202024-03-09%20at%2013.47.41.png)
 
-- Linux processes have attributes like state, priority, parent-child relationships, and shared resources.
+Upon running cat /flag, the system begins by initiating a new process. This involves the allocation of resources necessary for the process to run, including the creation of a unique virtual address space for it, enabled by the operating system's virtual memory system. This space allows the process to operate as if it has its own dedicated memory, facilitating the execution of multiple applications concurrently by simulating more RAM than physically available through disk space.
 
-- Processes have their own memory space and security context.
+### Process Loading
 
-- The loading process involves determining the file type and loading it into memory.
+1. Executable Permission Check: The system checks if the cat executable has the required permissions set to allow its execution, ensuring security by preventing unauthorized file execution.
 
-- The kernel looks for shebang lines or checks the kernel configuration to determine the appropriate interpreter for script files.
+2. Identifying the File Type: The kernel reads the ELF header of /bin/cat to determine the file type, identifying it as either statically or dynamically linked. This step is crucial for understanding how to properly load the file into memory.
 
-- For dynamically linked ELF files, the kernel loads both the interpreter and the original binary into memory.
+- Static File: Contains all necessary code within the executable, making it larger but self-contained.
+
+- Dynamically Linked File: Requires external libraries to be loaded at runtime, reducing the file size and allowing for shared library use.
+  Loading the Program and Its Interpreter: For dynamically linked files, such as cat, the kernel loads both the program and its dynamic linker into the process's virtual address space. This involves setting up the memory addresses the process will use, isolated from other processes to ensure security and stability.
+
+5. Locating and Loading Required Libraries: The dynamic linker identifies and loads all necessary shared libraries (e.g., libc) into the virtual address space, managing dependencies to ensure the program has access to all the code it needs.
+
+6. Relocation and Symbol Resolution: Adjusts the program's internal addresses to correspond with the actual memory locations of the loaded libraries and links program functions and variables with their real implementations in these libraries.
+
+### `cat` is initialized
+
+With the cat executable now loaded, along with its required libraries and all symbols resolved, control is transferred to the program's entry point. This marks the beginning of the program's execution phase.
+
+At this point, cat is fully initialized and begins to execute its primary function: reading the contents of the /flag file and displaying them to the user. This involves reading from the specified file and writing the contents to the standard output, effectively completing the command's operation.
 
 ## Linux Process Execution
 
+### `cat` is lauched
+
+![lauching](/assets/img/programInteraction/Screenshot%202024-03-09%20at%2016.24.20.png)
+
 - Linux process execution involves loading a program into the virtual memory space of a process.
 
-- The execution of a program is handled by a function called libsy start main.
+- The execution of a program is handled by a function called libc start main.
+
+### `cat` reads its arguments and environment
+
+![arugments](/assets/img/programInteraction/Screenshot%202024-03-09%20at%2016.31.59.png)
 
 - Environment variables are used to pass additional arguments to a program.
+
+### `cat` does its thing.
+
+![function](/assets/img/programInteraction/Screenshot%202024-03-09%20at%2016.38.40.png)
+
+![syscall](/assets/img/programInteraction/Screenshot%202024-03-09%20at%2016.43.44.png)
+
+![signals](/assets/img/programInteraction/Screenshot%202024-03-09%20at%2016.56.40.png)
+
+![sharememory](/assets/img/programInteraction/Screenshot%202024-03-09%20at%2016.57.31.png)
 
 - Library functions and system calls are used to interact with the outside world and perform complex tasks.
 
@@ -74,6 +115,10 @@ An ELF file typically contains several sections that include:
 - System calls are the primary way to interact with the Linux operating system.
 
 - The strace command can be used to trace system calls and understand program execution.
+
+### `cat` terminates
+
+![termination](/assets/img/programInteraction/Screenshot%202024-03-09%20at%2016.52.46.png)
 
 Level 1
 
