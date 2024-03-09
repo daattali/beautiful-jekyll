@@ -5,12 +5,12 @@ subtitle: Explore the way to attack web applications with kali linux and OWASP -
 # cover-img: /assets/img/banditlogo.png
 thumbnail-img: /assets/img/OWASP_Logo.png
 # share-img: /assets/img/path.jpg
-tags: [web, security, session, attack, burp]
+tags: [web, security, session, attack, burp, owasp]
 comments: true
 author: Lantana Park
 ---
 
-## OWASP webGoat A1 - Broken Access Control
+## OWASP webGoat A1 - Broken Access Control | hijacking session
 
 ![index](/assets/img/sessionhijacking/Screenshot%202024-03-08%20at%2018.03.44.png)
 
