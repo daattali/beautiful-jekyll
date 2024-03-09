@@ -61,17 +61,17 @@ Success!
 
 **How to defend this attack**
 
-1. Proper Authorization Checks
+1. **Proper Authorization Checks**
    Ensure users have the right permissions before allowing access to any data or functionality.
 
-2. Indirect Object References
+2. **Indirect Object References**
    Use non-guessable tokens instead of direct references like database IDs to refer to objects, enhancing security.
 
-3. Strong Session Management
+3. **Strong Session Management**
    Implement secure session management practices, including secure cookies and session timeouts, to prevent session hijacking.
 
-4. Input Validation
+4. **Input Validation**
    Validate and sanitize user inputs to prevent malicious data from being processed.
 
-5. Minimize Sensitive Information Exposure
+5. **Minimize Sensitive Information Exposure**
    Limit the exposure of sensitive information and avoid predictable IDs for user data.
