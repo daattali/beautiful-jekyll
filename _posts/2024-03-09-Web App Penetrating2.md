@@ -42,7 +42,7 @@ If someone realizes that changing the number `123` to `124` in the address (to `
 
 ![prediction](/assets/img/IDOR/Screenshot%202024-03-09%20at%2019.14.10.png)
 
-4. I needed to view other's profile. In order to do that, I   send some requests with the increased value of user Id. And the caught the profile of `Buffalo Bill`
+4. I needed to view other's profile. In order to do that, I send some requests with the increased value of user Id. And the caught the profile of `Buffalo Bill`
 
 ![otherProfile](/assets/img/IDOR/Screenshot%202024-03-09%20at%2019.19.38.png)
 
@@ -59,7 +59,7 @@ In order to modify the content,
 
 Success!
 
-**How to defend this attack**
+**How to defend from this attack**
 
 1. **Proper Authorization Checks**
    Ensure users have the right permissions before allowing access to any data or functionality.
