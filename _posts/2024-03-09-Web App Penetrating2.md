@@ -22,7 +22,7 @@ Each cabinet should have its own unique key and its number should not be visible
 
 If someone realizes that changing the number `123` to `124` in the address (to `http://example.com/bankstatements?statementId=124`) bypasses security checks, allowing them to access information linked to `124` without authorization, they could potentially view another person's profile or even steal bank statements. This represents a significant security flaw, as it allows individuals to access information they should not be able to see.
 
-## Steps to attach
+## Steps to attack
 
 1. Log in with authorized user
 
