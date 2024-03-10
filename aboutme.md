@@ -28,9 +28,11 @@ What else do you need? Please send me email!
 
 ### My story
 
-Over the years, I have honed my skills in both frontend and backend development, constantly learning and adapting to the rapid changes in web technologies.
+With a Bachelor's degree in Fine Art, I have been captivated by diverse issues, channeling my creativity onto the canvas. My previous career enriched this perspective, as I supported problem solvers and witnessed firsthand how creative solutions could be applied in real-world scenarios.
 
-My current dedication to security comes from understanding the critical importance of protecting data and privacy in today's digital world. This has led me to integrate best practices in cybersecurity into every project I work on, aiming to build applications that are not just efficient and aesthetically pleasing, but also robust against potential threats.
+In recent years, I have delved into the tech world, mastering frontend and backend development with JavaScript. This journey was propelled by my ambition to become a comprehensive problem-solver, blending the systematic rigor of programming with the innovative problem-solving techniques from my art background.
+
+My interest in cybersecurity is growing as I recognize the critical need to protect data and privacy in our increasingly digital society. As I learn, I am beginning to incorporate cybersecurity best practices into every aspect of my work, aiming to deliver creative security solutions to any potential challenges. As I continue my studies, I am actively seeking opportunities to apply and further develop my skills in the cybersecurity field.
 
 ### 2024 goals
 
