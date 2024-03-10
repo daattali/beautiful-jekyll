@@ -51,11 +51,11 @@ social-network-links:
   # email: "someone@example.com"
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
    github: musatrtr
-   twitter: musakkcn
+#   twitter: musakkcn
    linkedin: musakokcen
   # patreon: musakkcn
   # youtube: "@musakkcn"
-#  medium: yourname
+  medium: musakokcen
 #  reddit: yourname
 #  xing: yourname
 #  stackoverflow: "3943160/musakokcen"
