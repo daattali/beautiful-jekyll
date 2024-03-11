@@ -104,7 +104,7 @@ const applyCoupon = (category) => (discount) => (items) => {
   };
 ```
 
-[currying](/assets/img/functionalProgramming/Screenshot%202024-03-02%20at%2022.36.45.png)
+![currying](/assets/img/functionalProgramming/Screenshot%202024-03-02%20at%2022.36.45.png)
 
 4. Recursion
 
