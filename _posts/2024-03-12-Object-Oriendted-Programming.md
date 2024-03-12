@@ -10,7 +10,7 @@ comments: true
 author: Lantana Park
 ---
 
-<iframe src="https://www.loom.com/share/092080785c894d588f7b06a93ada2eb3?sid=5cffc91e-d4eb-40c0-b0de-2f36f70d9a33" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 30%; height: 30%;"></iframe>
+[Watch the video here to view my explaination](https://www.loom.com/share/092080785c894d588f7b06a93ada2eb3?sid=c177950a-94e3-4145-8c74-0ecaf754a611)
 
 ```javascript
 // Configuration
