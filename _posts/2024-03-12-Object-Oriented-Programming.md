@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Object Oriendted programming
+title: Object Oriented programming
 subtitle: Practice for concept of object oriented programming
 # cover-img: /assets/img/banditlogo.png
 # thumbnail-img: /assets/img/OWASP_Logo.png
