@@ -14,9 +14,9 @@ author: Lantana Park
 
 1. Pure function
 
-```JavaScript
+```javascript
 function greet(name) {
-  return `Hi, ${name}`
+  return `Hi, ${name}`;
 }
 ```
 
@@ -26,7 +26,7 @@ function greet(name) {
 
     - isPrime.js
 
-    ```JavaScript
+    ```javascript
     /*
     The cart is an array of objects like this:
     var cart=[
@@ -37,12 +37,12 @@ function greet(name) {
     ]
     \*/
     function isPrime(item) {
-    return item.type === "prime"
+      return item.type === "prime";
     }
 
     function primeItems(cart) {
-    // write your code here
-    return cart.filter(isPrime)
+      // write your code here
+      return cart.filter(isPrime);
     }
     ```
 
@@ -50,13 +50,13 @@ function greet(name) {
 
     - isNotPrime.js
 
-    ```JavaScript
-    const _ = require('underscore');
-    const isPrime = require('./isPrime.js');
+    ```javascript
+    const _ = require("underscore");
+    const isPrime = require("./isPrime.js");
 
     function notPrimeItems(cart) {
-    // Using _.reject to filter out items where type is not 'prime'
-    return _.reject(cart, (item) => item.type === 'prime');
+      // Using _.reject to filter out items where type is not 'prime'
+      return _.reject(cart, (item) => item.type === "prime");
     }
     ```
 
@@ -64,16 +64,16 @@ function greet(name) {
 
     - coupons.js
 
-    ```JavaScript
+    ```javascript
     function applyCoupon(cart) {
-        return cart.map((items) => {
-            if (items.category === 'tech') {
-                return {
-                    price: items.price * 0.8
-                };
-            }
-            return items;
-        });
+      return cart.map((items) => {
+        if (items.category === "tech") {
+          return {
+            price: items.price * 0.8,
+          };
+        }
+        return items;
+      });
     }
     ```
 
@@ -81,11 +81,13 @@ function greet(name) {
 
     - totalCost.js
 
-    ```JavaScript
-    function totalCost(cart){
-    // write your code here
-    return cart.reduce((accumulator, currentValue) => accumulator + currentValue.price,
-    0)
+    ```javascript
+    function totalCost(cart) {
+      // write your code here
+      return cart.reduce(
+        (accumulator, currentValue) => accumulator + currentValue.price,
+        0
+      );
     }
     ```
 
@@ -93,29 +95,31 @@ function greet(name) {
 
 3.  Currying
 
-```JavaScript
+```javascript
 const applyCoupon = (category) => (discount) => (items) => {
-    if (items.category === category) {
-      return {
-        price: items.price * (1 - discount)
-      };
-    }
-    return items;
-  };
+  if (items.category === category) {
+    return {
+      price: items.price * (1 - discount),
+    };
+  }
+  return items;
+};
 ```
 
 ![currying](/assets/img/functionalProgramming/Screenshot%202024-03-02%20at%2022.36.45.png)
 
 4. Recursion
 
-```JavaScript
+```javascript
 const buildTree = (list, parent) => {
-    let tree = {};
-    list.filter(items => items.parent === parent).forEach(items => {
+  let tree = {};
+  list
+    .filter((items) => items.parent === parent)
+    .forEach((items) => {
       tree[items.id] = buildTree(list, items.id);
     });
-    return tree;
-  };
+  return tree;
+};
 ```
 
 ![recursion](/assets/img/functionalProgramming/Screenshot%202024-03-04%20at%2022.00.51.png)
