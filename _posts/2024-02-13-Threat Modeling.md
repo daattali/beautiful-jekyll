@@ -29,3 +29,4 @@ The second recommendation is to adopt a collaborative, team based approach. So b
 The third recommendation is to start threat modelling 'little and often'. Rather than trying to analyse your entire system upfront, build your team's muscle memory with threat modelling a little bit at a time.
 
 For information, you can visit [article](https://martinfowler.com/articles/agile-threat-modelling.html)
+
