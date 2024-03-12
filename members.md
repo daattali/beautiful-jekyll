@@ -55,7 +55,7 @@ members:
         full: true
         list:
           - name: Wen Hui Leng
-            photo_url: /img/nophoto_faceboard_white.jpg
+            photo_url: /img/members/wleng.jpg
             web_url: 
           - name: TJ Vitchutripop
             photo_url: /img/members/tj.jpg
