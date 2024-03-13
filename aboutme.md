@@ -17,7 +17,7 @@ const me = {
     frontEnd: ["Next.js", "React.js", "React Native", "Redux toolkit"],
     backEnd: ["NoSQL", "SQL", "Express.js", "Node.js", "Mongoose"],
     others: ["Mapbox", "Linux"],
-    cloud: ["Docker"],
+    cloud: ["Docker", "AWS S3"],
     databases: ["MongoDB"],
     design: ["Figma"],
   },
