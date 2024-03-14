@@ -14,9 +14,8 @@ subtitle: Our competition calendar
 | February 3, 2024  | [Mathcounts Chapter Round](/mathcounts) | Microsoft Building 33 | By Invitation |
 | February 10, 2024 | [Math is Cool Regionals](/mathiscool) | Liberty High School | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B6A365444-F8CA-4087-9D13-2A268FEEA9B1%7D&file=Competitions%20&%20Teams.xlsx=&action=default&mobileredirect=true) | Jan 11, 2024
 | _TBD March, 2024_ | [Mathcounts State Round](/mathcounts) | TBD | By Invitation |
-| April 20, 2024 | [Math Bowl](https://www.wastudentmath.org/contests/mathbowl/) | Eastlake High School | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B6A365444-F8CA-4087-9D13-2A268FEEA9B1%7D&file=Competitions%20&%20Teams.xlsx=&action=default&mobileredirect=true) | April 6, 2024
+| April 21, 2024 | [Math Bowl](https://www.wastudentmath.org/contests/mathbowl/) | Eastlake High School | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/r/sites/mathclub/_layouts/15/Doc.aspx?sourcedoc=%7B6A365444-F8CA-4087-9D13-2A268FEEA9B1%7D&file=Competitions%20&%20Teams.xlsx=&action=default&mobileredirect=true) | April 6, 2024
 | April 27, 2024    | [Math is Cool Masters](/mathiscool)  | Moses Lake HS | By Invitation | 
-| _TBD_      | Mathcrafters |  | | 
 | _TBD_      | Mustang Math Tournament |  | | 
 
 
