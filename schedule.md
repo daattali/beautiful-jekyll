@@ -39,9 +39,9 @@ Sessions in (parentheses) are competitions. There won't be normal sessions on co
 | 26-Feb	| _Cancelled, coaching conflict_ 	| [2023 Math Counts State Sprint Round](https://www.mathcounts.org/resources/past-competitions) |  _Cancelled, no topic_ |
 | 4-Mar	  | Sequences                       | _Cancelled, coach unavailable_ | _No School_               |
 | 11-Mar	| Systems of Equations       			| [2023 Math Counts State Target and Team Rounds](https://www.mathcounts.org/resources/past-competitions) | _Cancelled, Commons unavailable_               |
-| 18-Mar	| Mixture  / [2023 Math Counts State Countdown Round (Part 1)](https://www.mathcounts.org/resources/past-competitions) | _Cancelled_  | Mathcrafters party (2:30-3:30 RMS Commons) |
-| 25-Mar	| Bases / [2023 Math Counts State Countdown Round (Part 2)](https://www.mathcounts.org/resources/past-competitions) | _Cancelled_ |                          |
-| 1-Apr		| Expected Value                	| _Cancelled_                           |                           |
+| 18-Mar	| Mixture                         | _Cancelled_  | Mathcrafters party (2:30-3:30 RMS Commons) |
+| 25-Mar	| Bases   / [2023 Math Counts State Countdown Round (Part 1)](https://www.mathcounts.org/resources/past-competitions) | _Cancelled_ |                          |
+| 1-Apr		| Expected Value  / [2023 Math Counts State Countdown Round (Part 2)](https://www.mathcounts.org/resources/past-competitions)	| _Cancelled_                           |                           |
 | 8-Apr 	| _No School_		                	|  _No School_                          | _No School_               |
 | 15-Apr	| Surface Area & Volume           |  _Cancelled_                          |                           |
 | 22-Apr	| Measurement                     |  _Cancelled_                          |                           |
