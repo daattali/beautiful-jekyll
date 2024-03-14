@@ -51,7 +51,7 @@ If someone realizes that changing the number `123` to `124` in the address (to `
 
 In order to modify the content,
 
-- It should be PUT request
+- It should be `PUT` request (Because it is to edit the existing data)
 - Content-Type: application/json
 - Content-Length: 91
 - {"role": 1, "color": "red", "size": "large", "name": "Buffalo Bill", "userId": "2342388"}

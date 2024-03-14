@@ -1209,6 +1209,337 @@ ONWARDS TO GREATNESS!
 pwn.college{8EyUS3JW21gtPLHNkZ11-zQzA5R.QX4IDL0MjM3QzW}
 ```
 
-Level 29
+Level 36
 
-From now on, I am going to c programming for making binary file.
+Answer: pwn.college{kXcw02yESKeQK0yJIxZ9QQ_XlaW.QX2MDL0MjM3QzW}
+
+`./embryoio_level36 | cat`
+
+To explain this command, it executes the file `./embryoio_level36` at first. And then, because of `|` (pipe operator), it takes the output of the command on its leftside `./embryoio_level36` and uses it as the input for the coammdn on its rightside `cat`
+
+```
+hacker@program-interaction~level36:/challenge$ ./embryoio_level36 | cat
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : bash
+the challenge checks for a specific process at the other end of stdout : cat
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is the bash shell. If this is a check for the parent process, then,
+[TEST] most likely, this is what you do by default anyways, but we'll check just in case...
+[INFO] The process' executable is /usr/bin/bash.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be bash.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected my stdout to another process. Checking...
+[TEST] Performing checks on that process!
+[INFO] The process' executable is /usr/bin/cat.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be cat.
+[GOOD] You have passed the checks on the process on the other end of my stdout!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{kXcw02yESKeQK0yJIxZ9QQ_XlaW.QX2MDL0MjM3QzW}
+```
+
+Level 37
+
+Answer: pwn.college{s-cMYXjt4OGH4AK27FLSVkDJKqf.QX3MDL0MjM3QzW}
+
+To explain this command, execting the file and then taking the output from the file and then, with the output, searching text which includes `pwn.college`
+
+```
+hacker@program-interaction~level37:/challenge$ ./embryoio_level37
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : bash
+the challenge checks for a specific process at the other end of stdout : grep
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is the bash shell. If this is a check for the parent process, then,
+[TEST] most likely, this is what you do by default anyways, but we'll check just in case...
+[INFO] The process' executable is /usr/bin/bash.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be bash.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected my stdout to another process. Checking...
+[FAIL] You did not satisfy all the execution requirements.
+[FAIL] Specifically, you must fix the following issue:
+[FAIL]    stdout of this process does not appear to be a pipe!
+hacker@program-interaction~level37:/challenge$ ./embryoio_level37 | grep "pwn.college"
+pwn.college{s-cMYXjt4OGH4AK27FLSVkDJKqf.QX3MDL0MjM3QzW}
+```
+
+Level 38
+
+Answer: pwn.college{kJe9eEAfa4P1f7NhhzCAcKD6RBv.QX4MDL0MjM3QzW}
+
+`sed` performs lots of functions on file like searching, find and replace, insertion or deletion.
+
+Putting it all together, `./embryoio_level38 | sed ''` will execute the `embryoio_level38` program, then pass its output through `sed` without making any changes to the output.
+
+```
+hacker@program-interaction~level38:/challenge$ ./embryoio_level38 | sed ''
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : bash
+the challenge checks for a specific process at the other end of stdout : sed
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is the bash shell. If this is a check for the parent process, then,
+[TEST] most likely, this is what you do by default anyways, but we'll check just in case...
+[INFO] The process' executable is /usr/bin/bash.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be bash.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected my stdout to another process. Checking...
+[TEST] Performing checks on that process!
+[INFO] The process' executable is /usr/bin/sed.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be sed.
+[GOOD] You have passed the checks on the process on the other end of my stdout!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{kJe9eEAfa4P1f7NhhzCAcKD6RBv.QX4MDL0MjM3QzW}
+```
+
+Level 39
+
+Answer: pwn.college{QSRW5Lo2YSPZY_g16jOpNtMUt1G.QX5MDL0MjM3QzW}
+
+Reverse the flag twice
+
+```
+hacker@program-interaction~level39:/challenge$ ./embryoio_level39 | rev | sort | rev
+ONWARDS TO GREATNESS!
+[TEST] Performing checks on that process!
+[GOOD] You have passed the checks on the parent process!
+[GOOD] You have passed the checks on the process on the other end of my stdout!
+[TEST] Checking to make sure the process is the bash shell. If this is a check for the parent process, then,
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[TEST] most likely, this is what you do by default anyways, but we'll check just in case...
+[TEST] You should have redirected my stdout to another process. Checking...
+[INFO] If you pass these checks, you will receive the flag.
+[INFO] To pass the checks, the executable must be bash.
+[INFO] The process' executable is /usr/bin/bash.
+[INFO] This challenge will now perform a bunch of checks.
+[TEST] Performing checks on the parent process of this process.
+[INFO] To pass the checks, the executable must be rev.
+[INFO] The process' executable is /usr/bin/rev.
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : bash
+the challenge checks for a specific process at the other end of stdout : rev
+pwn.college{QSRW5Lo2YSPZY_g16jOpNtMUt1G.QX5MDL0MjM3QzW}
+```
+
+Level 40
+
+Answer: pwn.college{AuGVkREcz6i_sMAyJiipEKjYGG0.QXwQDL0MjM3QzW}
+
+```
+hacker@program-interaction~level40:/challenge$ cat | ./embryoio_level40
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : bash
+the challenge checks for a specific process at the other end of stdin : cat
+the challenge will check for a hardcoded password over stdin : gycmhymh
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is the bash shell. If this is a check for the parent process, then,
+[TEST] most likely, this is what you do by default anyways, but we'll check just in case...
+[INFO] The process' executable is /usr/bin/bash.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be bash.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected another process to my stdin. Checking...
+[TEST] Performing checks on that process!
+[INFO] The process' executable is /usr/bin/cat.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be cat.
+[GOOD] You have passed the checks on the process on the other end of my stdin!
+[TEST] This program expects you to enter a simple password (specifically, gycmhymh). Send it now!
+[INFO] Reading in your input now...
+gycmhymh
+[GOOD] You successfully passed the password!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{AuGVkREcz6i_sMAyJiipEKjYGG0.QXwQDL0MjM3QzW}
+```
+
+Level 42
+
+Answer: pwn.college{c2I5XTffLzIZVAJ-HPTRnAV57L8.QXyQDL0MjM3QzW}
+
+```
+hacker@program-interaction~level42:/tmp$ ./my_script.sh
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+the challenge checks for a specific process at the other end of stdout : cat
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected my stdout to another process. Checking...
+[TEST] Performing checks on that process!
+[INFO] The process' executable is /usr/bin/cat.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be cat.
+[GOOD] You have passed the checks on the process on the other end of my stdout!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{c2I5XTffLzIZVAJ-HPTRnAV57L8.QXyQDL0MjM3QzW}
+
+hacker@program-interaction~level42:/tmp$ cat my_script.sh
+#!/bin/bash
+/challenge/embryoio_level42 | cat
+```
+
+Level 43
+
+Answer: pwn.college{gt4fphgHImUpOrnexj9fMWE3irC.QXzQDL0MjM3QzW}
+
+```
+hacker@program-interaction~level43:/tmp$ ./my_script.sh
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+the challenge checks for a specific process at the other end of stdout : grep
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected my stdout to another process. Checking...
+[TEST] Performing checks on that process!
+[INFO] The process' executable is /usr/bin/grep.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be grep.
+[GOOD] You have passed the checks on the process on the other end of my stdout!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{gt4fphgHImUpOrnexj9fMWE3irC.QXzQDL0MjM3QzW}
+
+hacker@program-interaction~level43:/tmp$ cat my_script.sh
+#!/bin/bash
+/challenge/embryoio_level43 | grep ""
+hacker@program-interaction~level43:/tmp$
+```
+
+Level 44
+
+Answer: pwn.college{sH4mZqaMD_6-aCVCHR6x8HlydRv.QX0QDL0MjM3QzW}
+
+```
+hacker@program-interaction~level44:/tmp$ ./my_script.sh
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+the challenge checks for a specific process at the other end of stdout : sed
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected my stdout to another process. Checking...
+[TEST] Performing checks on that process!
+[INFO] The process' executable is /usr/bin/sed.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be sed.
+[GOOD] You have passed the checks on the process on the other end of my stdout!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{sH4mZqaMD_6-aCVCHR6x8HlydRv.QX0QDL0MjM3QzW}
+
+hacker@program-interaction~level44:/tmp$ cat my_script.sh
+#!/bin/bash
+/challenge/embryoio_level44 | sed ""
+hacker@program-interaction~level44:/tmp$
+```
+
+Level 45
+
+Answer: pwn.college{UdjxARW8N7NhSm5yGhvg6PURx10.QX1QDL0MjM3QzW}
+
+```
+hacker@program-interaction~level45:/tmp$ ./my_script.sh
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+the challenge checks for a specific process at the other end of stdout : rev
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected my stdout to another process. Checking...
+[TEST] Performing checks on that process!
+[INFO] The process' executable is /usr/bin/rev.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be rev.
+[GOOD] You have passed the checks on the process on the other end of my stdout!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{UdjxARW8N7NhSm5yGhvg6PURx10.QX1QDL0MjM3QzW}
+
+hacker@program-interaction~level45:/tmp$ cat my_script.sh
+#!/bin/bash
+/challenge/embryoio_level45 | rev | rev
+hacker@program-interaction~level45:/tmp$
+```
+
+Level 46
+
+Answer: pwn.college{Efj0EEg-C5LZsFMRB33c3IJ0niy.QX2QDL0MjM3QzW}
+
+```
+hacker@program-interaction~level46:/tmp$ ./my_script.sh
+WELCOME! This challenge makes the following asks of you:
+the challenge checks for a specific parent process : shellscript
+the challenge checks for a specific process at the other end of stdin : cat
+the challenge will check for a hardcoded password over stdin : hbdizecg
+
+ONWARDS TO GREATNESS!
+
+[INFO] This challenge will now perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the flag.
+[TEST] Performing checks on the parent process of this process.
+[TEST] Checking to make sure the process is a non-interactive shell script.
+[GOOD] You have passed the checks on the parent process!
+[TEST] You should have redirected another process to my stdin. Checking...
+[TEST] Performing checks on that process!
+[INFO] The process' executable is /usr/bin/cat.
+[INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
+[INFO] To pass the checks, the executable must be cat.
+[GOOD] You have passed the checks on the process on the other end of my stdin!
+[TEST] This program expects you to enter a simple password (specifically, hbdizecg). Send it now!
+[INFO] Reading in your input now...
+hbdizecg
+[GOOD] You successfully passed the password!
+[GOOD] Success! You have satisfied all execution requirements. Here is your flag:
+pwn.college{Efj0EEg-C5LZsFMRB33c3IJ0niy.QX2QDL0MjM3QzW}
+
+hacker@program-interaction~level46:/tmp$ cat my_script.sh
+#!/bin/bash
+cat | /challenge/embryoio_level46
+```
+
+Level 47
+
+Answer:
