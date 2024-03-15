@@ -18,7 +18,7 @@ author: Lantana Park
 
 Any values stored in the authentication cookie should be secure and not easily guessable. If they are predictable, attackers could potentially generate authentication cookies for different users.
 
-In this task, I used Base64 and hexadecimal strings to decode the cookie value because, to my knowledge, there isn't a direct method to decode from Base64 to a plain text string (in a human-understandable format).
+In this task, I used Base64 and hexdump strings to decode the cookie value because, to my knowledge, there isn't a direct method to decode from Base64 to a plain text string (in a human-understandable format).
 
 ### what is Base64?
 
@@ -55,7 +55,7 @@ I could know it was encoded by base64. I had solved a similar task in the bandit
 
 So I decoded the BS64 value into human-readable text string.
 
-I decoded the BS64 value to the hexdecimal string.
+I decoded the BS64 value to the hexdump string.
 
 `webgoat` - `59516e4d454541494b7374616f67626577`
 
@@ -71,7 +71,7 @@ So I could find the pattern for these cookie values
 
 `YQnMEEAIKs` was followed with the reversed username.
 
-Since I needed to find the cookie value of `tom`, I tried to encode the `YQnMEEAIKsmot` value into hexdecimal and then BS64.
+Since I needed to find the cookie value of `tom`, I tried to encode the `YQnMEEAIKsmot` value into hexdump and then BS64.
 
 `YQnMEEAIKsmot`
 `59516E4D454541494B736D6F74`
