@@ -102,7 +102,7 @@ Let's start attacking the IP address `10.10.108.94`.
 
    Since I knew there was an SSH service running on port `2222`, I tried to log in with SSH and the username.
 
-   In this situation, I got this shell. However, it is not enough to control this system entirely. I had to obtain the root account.
+   In this situation, I got this shell. However, it is not enough to control this system entirely. I have to obtain the root account.
 
    ![ssh](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2022.25.27.png)
 
@@ -126,7 +126,7 @@ Let's start attacking the IP address `10.10.108.94`.
 
    Answer: vim
 
-   Sorry, I did not capture the terminal command. I used `sudo -l` to list the permissions granted to the privileged user (or to a specified user) in the sudoers file.
+   Sorry, I did not capture the terminal command screen. I used `sudo -l` to list the permissions granted to the privileged user (or to a specified user) in the sudoers file.
 
    I could know `/usr/bin/vim`. It indicates that the admin user has sudo privileges to run the Vim text editor with root privileges.
 
