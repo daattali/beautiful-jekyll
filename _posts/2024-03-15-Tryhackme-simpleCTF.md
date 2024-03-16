@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tryhackme - SimpeCTF
+title: Tryhackme - SimpleCTF
 subtitle: tryhackme simpleCTF walkthrough
 # cover-img: /assets/img/banditlogo.png
 thumbnail-img: /assets/img/tryhackme/simpleCTF/logo.png
