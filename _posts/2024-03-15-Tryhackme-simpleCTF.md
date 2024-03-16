@@ -16,13 +16,13 @@ Let's start attacking the IP address `10.10.108.94`.
 
 1. How many services are running under port 1000?
 
-![first](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2023.36.40.png)
+    ![first](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2023.36.40.png)
 
-Answer: 2
+    Answer: 2
 
-`nmap -sTU -p 1000 10.10.108.94`
+    `nmap -sTU -p 1000 10.10.108.94`
 
-`nmap -sTU` performs a service version detection scan for both TCP and UDP, and `-p 1000` specifies the port number.
+    `nmap -sTU` performs a service version detection scan for both TCP and UDP, and `-p 1000` specifies the port number.
 
 **What is TCP(Transmission Control Protocol)?**
 
