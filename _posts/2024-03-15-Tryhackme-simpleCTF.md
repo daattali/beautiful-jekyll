@@ -44,15 +44,15 @@ Let's start attacking the IP address `10.10.108.94`.
 
    Answer: CVE-2019-9053
 
-   Upon scanning the target IP address, a web application is indicated by the presence of an HTTP service. Thus, I visited the website using the IP address in the browser.
+   Upon scanning the target IP address with `nmap`, a web application is indicated by the presence of an HTTP service. Thus, I visited the website using the IP address in the browser.
 
    ![website](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-16%20at%2009.36.16.png)
 
-   And then I wanted to find hidden directories of this website. So, I used `gobuster` to find directories.
+   And then I wanted to find hidden directories of this website. So, I used `gobuster` to find its directories.
 
    ![finddir](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2020.54.56.png)
 
-   When using tools like `Gobuster` to find hidden directories on a web server, a wordlist is essential because `Gobuster` operates by brute-forcing URLs on the target server. It does not inherently "know" what directories might exist on the target; instead, it relies on trying a series of potential directory names provided in a wordlist.
+   When using tools like `Gobuster` to find hidden directories on a web server, a wordlist is essential because `Gobuster` operates by brute-forcing URLs on the target server. It does not inherently know what directories might exist on the target; instead, it relies on trying a series of potential directory names provided in a wordlist.
 
    As a result, I could find there are `/index.html` and `robots.txt` with a 200 status and `/simple/` with a 301 status.
 
@@ -82,7 +82,7 @@ Let's start attacking the IP address `10.10.108.94`.
 
    Answer: secret
 
-   To find the password, I tried to perform SQL injection. At first, I downloaded the python code on the CVE website and then ran the python code with the IP address and wordlist to crack the password.
+   To find the password, I tried to perform SQL injection. At first, I downloaded the python source code of its vulnerability on the CVE website and then ran the python code with the IP address and wordlist to crack the password.
 
    ![python](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2020.54.56.png)
 
@@ -92,7 +92,7 @@ Let's start attacking the IP address `10.10.108.94`.
 
    ![error2](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2022.12.55.png)
 
-   Finally, after revsing some lines, I could get the password.
+   Finally, after revising some lines and resolving these errors, I could get the password.
 
    ![password](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2022.17.47.png)
 
@@ -102,7 +102,7 @@ Let's start attacking the IP address `10.10.108.94`.
 
    Since I knew there was an SSH service running on port `2222`, I tried to log in with SSH and the username.
 
-   In this situation, I got this shell. However, it is not enough to control this system entirely. I have to obtain the root account.
+   In this situation, I got this shell. However, it is not enough to control this system entirely. I had to obtain the root account.
 
    ![ssh](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2022.25.27.png)
 
@@ -119,6 +119,8 @@ Let's start attacking the IP address `10.10.108.94`.
    Answer: sunbath
 
    I went to the `home` directory to find something. In the home directory, there were `mitch` and `sunbath` folders.
+
+   ![sunbath](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2022.28.43.png)
 
 9. What can you leverage to spawn a privileged shell?
 
