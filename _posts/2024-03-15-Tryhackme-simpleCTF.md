@@ -16,29 +16,29 @@ Let's start attacking the IP address `10.10.108.94`.
 
 1. How many services are running under port 1000?
 
-    ![first](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2023.36.40.png)
+![first](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2023.36.40.png)
 
-    Answer: 2
+Answer: 2
 
-    `nmap -sTU -p 1000 10.10.108.94`
+`nmap -sTU -p 1000 10.10.108.94`
 
-    `nmap -sTU` performs a service version detection scan for both TCP and UDP, and `-p 1000` specifies the port number.
+`nmap -sTU` performs a service version detection scan for both TCP and UDP, and `-p 1000` specifies the port number.
 
-    **What is TCP(Transmission Control Protocol)?**
+**What is TCP(Transmission Control Protocol)?**
 
-    - it is a connection-oriented protocol that establishes a two-way communication between hosts. It ensures the delivery of packets in the order they were sent, which is critical for applications where data must be received reliably and in order, such as web pages (HTTP), file transfers (FTP), and email (SMTP).
+- it is a connection-oriented protocol that establishes a two-way communication between hosts. It ensures the delivery of packets in the order they were sent, which is critical for applications where data must be received reliably and in order, such as web pages (HTTP), file transfers (FTP), and email (SMTP).
 
-    **What is UDP(User Datagram Protocol)?**
+**What is UDP(User Datagram Protocol)?**
 
-    - It is a connectionless protocol that sends messages, called datagrams, without establishing a prior connection. This is useful for services that require speed and efficiency over reliability, such as video streaming or online gaming.
+- It is a connectionless protocol that sends messages, called datagrams, without establishing a prior connection. This is useful for services that require speed and efficiency over reliability, such as video streaming or online gaming.
 
 2. What is running on the higher port?
 
 ![portscan](/assets/img/tryhackme/simpleCTF/Screenshot%202024-03-15%20at%2020.19.55.png)
 
-    Answer: ssh
+Answer: ssh
 
-    `nmap -sV 10.10.108.94` scans hosts and services with this IP address. `-sV` attempts version detection for each open port found during the scan.
+`nmap -sV 10.10.108.94` scans hosts and services with this IP address. `-sV` attempts version detection for each open port found during the scan.
 
 3. What's the CVE you're using against the application?
 
