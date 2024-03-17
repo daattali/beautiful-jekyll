@@ -106,10 +106,9 @@
   <meta name="twitter:image" content="{{ img | absolute_url }}" />
   {% endif %} {% include matomo.html %} {% if page.comments and
   site.staticman.repository and site.staticman.branch %} <link rel="stylesheet"
-  href="{{ "/assets/css/staticman.css" | relative_url }}"> {% endif %} 
-  <!-- {% assign
+  href="{{ "/assets/css/staticman.css" | relative_url }}"> {% endif %} {% assign
   favicon_exists = site.static_files | where: "path", "/favicon.ico" | size %}
-  {% if favicon_exists == 1 %} -->
+  {% if favicon_exists == 1 %}
   <link
     rel="icon"
     type="image/png"
