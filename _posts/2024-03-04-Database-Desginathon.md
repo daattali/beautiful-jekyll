@@ -5,54 +5,54 @@ subtitle: Practice for making data modeling
 # cover-img: /assets/img/Blackboard.png
 # thumbnail-img: /assets/img/designathon/coverdesginathon.png
 # share-img: /assets/img/path.jpg
-tags: [database, desginathon, database, modeling]
+tags: [database modeling, desginathon]
 comments: true
 author: Lantana Park
 ---
 
 ## 1. Soccer team
 
-1. Player-Team: Each player belongs to exactly one team.
-2. Team-Players: Teams consist of multiple players.
-3. Match-Team: Teams participate in matches, with each match involving multiple teams.
-4. Match-Players: Matches feature many players, indicating broad participation across events.
+1. Each player belongs to exactly one team.
+2. Teams consist of multiple players.
+3. Teams participate in matches, with each match involving multiple teams.
+4. Matches feature many players, indicating broad participation across events.
 
 ```
 erDiagram
-    PLAYER ||--|| TEAM : "belong"
+    PLAYERS ||--|| TEAM : "belong"
     TEAM ||--o{ PLAYERS : "has many"
-    MATCHES }o--o{ TEAM : "participate"
+    TEAM ||--o{ MATCHES : "participate in"
     MATCHES ||--o{ PLAYERS : "have many"
 ```
 
-![seccer team](/assets/img/designathon/mermaid-diagram-2024-02-26-102446.png)
+![seccer team](/assets/img/designathon/mermaid-diagram-2024-03-18-100005.png)
 
 ## 2. The companyDB
 
-1. Company-Employee: A "One-to-Many" relationship, indicating that a company employs many employees, but each employee works for a single company.
-2. Company-Project: Another "One-to-Many" relationship, showing that a company can have multiple projects, with each project belonging to one company.
-3. Employee-Project (involved in many): This represents a "Many-to-Many" relationship. Employees can be involved in many projects, and projects can have many employees working on them.
-4. Project-Employee (has many): While appearing similar to the above, this contextually suggests the allocation of employees to projects, typically reflecting roles or responsibilities within those projects.
-5. Employee-Manager: A "One-to-One" relationship, indicating that each employee reports to a single manager. This relationship is unique and exclusive, showing a direct reporting line.
-6. Employee-Project (manages): A "One-to-Many" relationship, where an employee (likely in a managerial or leadership role) manages multiple projects, showcasing the responsibility of project oversight.
+1. A company employs many employees.
+2. A company can have multiple projects, with each project belonging to one company.
+3. Employee-Project: Each Employee can be involved in many projects, and each project can have many employees working on them.
+4. Employee-Manager: Each employee reports to a single manager.
+5. Employee-Project: An employee manages multiple projects.
 
 ```
 erDiagram
-COMPANY {
+    COMPANY {
         string CompanyID PK
         string Name
         string Zip
         string Country
         string Address1
         string State
+        string Business_registration_number
         number Employed_staff_number
-
     }
     EMPLOYEE {
         string EmployeeID PK
-        string ProjectMangerID
+        string ProjectMangerID FK
+        string Involved_ProjectID FK
         string Name
-        string role
+        string Role
         string Team
     }
     PROJECT {
@@ -66,7 +66,7 @@ COMPANY {
         string ManagerID PK
         string EmployeeID FK
         string Name
-        string role
+        string Role
         string Team
     }
 
@@ -78,7 +78,7 @@ COMPANY {
     EMPLOYEE ||--|{ PROJECT : "manages"
 ```
 
-![company](/assets/img/designathon/mermaid-diagram-2024-03-04-184246.png)
+![company](/assets/img/designathon/mermaid-diagram-2024-03-18-151244.png)
 
 ## 3. Academic Social Network
 
@@ -159,7 +159,6 @@ My assumption
 
 ```
 erDiagram
-
     Season {
         string seasonID PK
         string name
@@ -221,7 +220,6 @@ erDiagram
     COMPANY {
     string name
     }
-
     CUSTOMER {
         string CustomerID PK
         string Name
