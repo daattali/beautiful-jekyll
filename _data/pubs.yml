@@ -14,26 +14,47 @@
 #  tags: null
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+- abs: Robot-assisted dressing could profoundly enhance the quality of life of adults with physical disabilities. To achieve this, a robot can benefit from both visual and force sensing. The former enables the robot to ascertain human body pose and garment deformations, while the latter helps maintain safety and comfort during the dressing process. In this paper, we introduce a new technique that leverages both vision and force modalities for this assistive task. Our approach first trains a vision-based dressing policy using reinforcement learning in simulation with varying body sizes, poses, and types of garments. We then learn a force dynamics model for action planning to ensure safety. Due to limitations of simulating accurate force data when deformable garments interact with the human body, we learn a force dynamics model directly from real-world data. Our proposed method combines the vision-based policy, trained in simulation, with the force dynamics model, learned in the real world, by solving a constrained optimization problem to infer actions that facilitate the dressing process without applying excessive force on the person. We evaluate our system in simulation and in a real-world human study with 10 participants across 240 dressing trials, showing it greatly outperforms prior baselines. Video demonstrations are available on our project website. 
+  authors: Zhanyi Sun*, Yufei Wang*, Zackory Erickson&dagger, David Held&dagger
+  award: null
+  bib: "@article{sun2024force,
+  \ title={Force-Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing},
+  \ author={Sun, Zhanyi and Wang, Yufei and Held, David and Erickson, Zackory},
+  \ journal={IEEE Robotics and Automation Letters},
+  \ year={2024}
+  }"
+  img: ../pics/FCVP-RAL-24.png
+  links: 
+      '[arXiv]': https://arxiv.org/abs/2311.04390
+  short_id: sun2024safe
+  site: https://sites.google.com/view/dressing-fcvp
+  title: "Force Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing"
+  venue: Robotics and Automation Letters (RAL)
+  video_embed: null
+  tags:
+    - deformable
+    - multimodal
+
 - abs: The ability to identify important objects in a complex and dynamic driving environment is essential for autonomous driving agents to make safe and efficient driving decisions. It also helps assistive driving systems decide when to alert drivers. We tackle object importance estimation in a data-driven fashion and introduce HOIST - Human-annotated Object Importance in Simulated Traffic. HOIST contains driving scenarios with human-annotated importance labels for vehicles and pedestrians. We additionally propose a novel approach that relies on counterfactual reasoning to estimate an object's importance. We generate counterfactual scenarios by modifying the motion of objects and ascribe importance based on how the modifications affect the ego vehicle's driving. Our approach outperforms strong baselines for the task of object importance estimation on HOIST. We also perform ablation studies to justify our design choices and show the significance of the different components of our proposed approach.
-   authors: Pranay Gupta and Abhijat Biswas and Henny Admoni and David Held
-   award: null
-   bib: "@article{gupta2023object,
-   \ title={Object Importance Estimation using Counterfactual Reasoning for Intelligent Driving},
-   \ author={Gupta, Pranay and Biswas, Abhijat and Admoni, Henny and Held, David},
-   \ journal={arXiv preprint arXiv:2312.02467},
-   \ year={2023}
-   \ }"
-   img: ../pics/gupta2023object.png
-   links: 
-       '[arXiv]': https://arxiv.org/abs/2312.02467
-       '[Code]': https://github.com/vehicle-importance/oiecr
-   short_id: gupta2023object
-   site: https://vehicle-importance.github.io/
-   title: Object Importance Estimation using Counterfactual Reasoning for Intelligent Driving
-   venue: Robotics and Automation Letters (RAL)
-   video_embed: null
-   tags: 
-       - auto_driving
+  authors: Pranay Gupta and Abhijat Biswas and Henny Admoni and David Held
+  award: null
+  bib: "@article{gupta2023object,
+  \ title={Object Importance Estimation using Counterfactual Reasoning for Intelligent Driving},
+  \ author={Gupta, Pranay and Biswas, Abhijat and Admoni, Henny and Held, David},
+  \ journal={arXiv preprint arXiv:2312.02467},
+  \ year={2023}
+  \ }"
+  img: ../pics/gupta2023object.png
+  links: 
+      '[arXiv]': https://arxiv.org/abs/2312.02467
+      '[Code]': https://github.com/vehicle-importance/oiecr
+  short_id: gupta2023object
+  site: https://vehicle-importance.github.io/
+  title: "Object Importance Estimation using Counterfactual Reasoning for Intelligent Driving"
+  venue: Robotics and Automation Letters (RAL)
+  video_embed: null
+  tags: 
+      - auto_driving
 - abs: Many robot manipulation tasks can be framed as geometric reasoning tasks, where an agent must be able to precisely manipulate an object into a position that satisfies the task from a set of initial conditions. Often, task success is defined based on the relationship between two objects - for instance, hanging a mug on a rack. In such cases, the solution should be equivariant to the initial position of the objects as well as the agent, and invariant to the pose of the camera. This poses a challenge for learning systems which attempt to solve this task by learning directly from high-dimensional demonstrations - the agent must learn to be both equivariant as well as precise, which can be challenging without any inductive biases about the problem. In this work, we propose a method for precise relative pose prediction which is provably SE(3)-equivariant, can be learned from only a few demonstrations, and can generalize across variations in a class of objects. We accomplish this by factoring the problem into learning an SE(3) invariant task-specific representation of the scene and then interpreting this representation with novel geometric reasoning layers which are provably SE(3) equivariant. We demonstrate that our method can yield substantially more precise placement predictions in simulated placement tasks than previous methods trained with the same amount of data, and can accurately represent relative placement relationships data collected from real-world demonstrations.
   authors: Ben Eisner, Yi Yang, Todor Davchev, Mel Vecerik, Jonathan Scholz, David Held
   award: null
