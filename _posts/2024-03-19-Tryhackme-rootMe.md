@@ -88,3 +88,5 @@ In this post, I mention several IP addresses that I am attacking due to terminat
    I executed the command python -c `'import os; os.execl("/bin/sh", "sh", "-p")'` to exploit the SUID permission of the Python script. `python` calls the python interpreter, `'-c` tells python to execute the string, `import os` imports os modules, which provides a way of using operating system dependent functionality. And `os.execl("/bin/sh", "sh","-p")` replace the current executing process with a new process and privileges of the process.
 
    ![final](/assets/img/rootMe/Screenshot%202024-03-20%20at%2009.26.05.png)
+
+   ![success](/assets/img/rootMe/Screenshot%202024-03-20%20at%2010.50.21.png)
