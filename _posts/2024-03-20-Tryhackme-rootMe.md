@@ -24,6 +24,10 @@ In this post, I mention several IP addresses that I am attacking due to terminat
 
    I added the `-sV` option to the nmap scanning command to check the service version.
 
+   **What is Apache?**
+
+   - It is HTTP web server and can be installed on a physical server. Apache also commonly installed on virtual servers in cloud computing environments. It serves as the software layer that handles the receipt and processing of requests from the internet, such as a user's request to view a webpage, and then delivers the appropriate content (webpages, images and files) back to the user's browser.
+
    ![nmap](/assets/img/rootMe/Screenshot%202024-03-19%20at%2013.50.22.png)
 
 3. What service is running on port 22?
@@ -47,20 +51,27 @@ In this post, I mention several IP addresses that I am attacking due to terminat
    Answer: THM{y0u_g0t_a_sh3ll}
 
    To begin with, I visited the found pages. And then I found there is a page for input form. It seems that I can upload something and php is not permitted.
+
    ![main](/assets/img/rootMe/Screenshot%202024-03-19%20at%2010.59.47.png)
+
    ![form](/assets/img/rootMe/Screenshot%202024-03-19%20at%2009.47.22.png)
 
    It was a tricky question because the concept of a php reverse shell was new to me. However I could guess this http website can be developed by php because there was `/index.php`. So I searched about php reverse shell. I found some useful information to do the php reverse shell. `https://pentestmonkey.net/tools/web-shells/php-reverse-shell`
 
    Initially, I downloaded a PHP reverse shell file (`git clone https://github.com/pentestmonkey/php-reverse-shell.git`).Additionally, configured my local machine ip address (not target ip address) and specific port because these are necessary to establish a connection back to my machine from a remote system. And then I uploaded the file to the form, since php file is not allowed, I changed `php` into `php5`.
+
    ![configuration](/assets/img/rootMe/Untitled%20design.png)
+
    ![upload](/assets/img/rootMe/Screenshot%202024-03-19%20at%2009.49.02.png)
+
    ![php5](/assets/img/rootMe/Screenshot%202024-03-19%20at%2010.57.04.png)
 
    Secondly, I opend the port to listen outcomes of the connection between my local machine and remote target system. Please keep in mind, when the port is open, run the php file again by clicking the php file in the `/uploads`.
 
    Finally, after listening port, I could access a shell from the target system and then used the `find . -type f -name "user.txt"` command to find the user.txt file somewhere else.
+
    ![findfile](/assets/img/rootMe/Screenshot%202024-03-19%20at%2011.22.45.png)
+
    ![gotshell](/assets/img/rootMe/Screenshot%202024-03-19%20at%2011.23.26.png)
 
 6. Search for files with SUID permission, which file is weird?
@@ -71,13 +82,14 @@ In this post, I mention several IP addresses that I am attacking due to terminat
 
    I executed the command `sudo find / -perm /4000 2>/dev/null`. The `-perm /4000` option filters the search results to only include files with the SUID bit set. Meanwhile, `2>/dev/null` redirects all error messages that might occur during the search, such as 'Permission denied' messages, to `/dev/null`, effectively hiding them.
 
-   According to the results, I could know which files have SUID bit and then, since I have solved some tasks of using SUID in python scripting from pwn.college and bandit, I decided to use `/usr/bin/python`.
+   According to the results, I could know which files have SUID bit and then, since I have solved some tasks of using SUID in python scripting from pwn.college and bandit, I decided to use `/usr/bin/python`. However, to make sure, I copies and pasted the SUID file path to correct this answer. And then I ultimately could find this answer.
 
    **What is Set User ID(SUID) bit?**
 
    - It is a special type of file permission. When the SUID bit is set on an executable file, users who run that executable file obtain the permissions of the file owner to execute the file.
 
    ![suid](/assets/img/rootMe/Screenshot%202024-03-20%20at%2009.10.36.png)
+
    ![suid2](/assets/img/rootMe/Screenshot%202024-03-20%20at%2009.10.52.png)
 
 7. root.txt
