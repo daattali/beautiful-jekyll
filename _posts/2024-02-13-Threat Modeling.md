@@ -30,7 +30,6 @@ The third recommendation is to start threat modelling 'little and often'. Rather
 
 For information, you can visit [article](https://martinfowler.com/articles/agile-threat-modelling.html)
 
-On the 5th class, I got a chance to get feedback about my code from peers. It was really appreciated time because while developing this website alone, I could not have a real-discussion and get feedback and cheers from diverse people. Here I am going to share some feedback I got during the class.
 
 1. Set the time limiting from when users get the token url to click the token url
 
