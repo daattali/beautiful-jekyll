@@ -264,6 +264,7 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
-remote_theme: pages-themes/hacker@v0.2.0
+# remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/merlot@v0.2.0
 
-theme: jekyll-theme-merlot
+theme: jekyll-theme-architect
