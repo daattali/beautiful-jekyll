@@ -40,7 +40,7 @@ In this post, I mention several IP addresses that I am attacking due to terminat
 
    I used `gobuster` to find the hidden directories by brute-forcing. I found several directories, including `/css`, `/index.php`, `/panel/`, `/uploads/`, and `/js`.
 
-   ![gobuster](/assets/img/rootMe/Screenshot%202024-03-19%20at%2009.18.42.png)
+   ![gobuster](/assets/img/rootMe/Screenshot%202024-03-19%20at%2009.23.44.png)
 
 5. Find a form to upload and get a reverse shell, and find the flag in user.txt
 
