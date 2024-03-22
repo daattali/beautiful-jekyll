@@ -63,6 +63,18 @@
   </li>
   {%- endif -%}
 
+  {%- if network[0] == "whatsapp" -%}
+  <li class="list-inline-item">
+    <a href="https://wa.me/{{ network[1] }}" title="Whatsapp">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Whatsapp</span>
+    </a>
+  </li>
+  {%- endif -%}
+
   {%- if network[0] == "github" -%}
   <li class="list-inline-item">
     <a href="https://github.com/{{ network[1] }}" title="GitHub">
