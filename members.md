@@ -75,6 +75,9 @@ members:
           - name: Bharath Hegde
             photo_url: /img/members/bharath.jpg
             web_url: https://bharath-hegde.github.io/
+          - name: Ziyu Wang
+            photo_url: /img/members/Ziyu_Wang.jpg
+            web_url: 
   - name: <a name="alumni"></a>Alumni
     list:
       - name: Post-Doc alumni
