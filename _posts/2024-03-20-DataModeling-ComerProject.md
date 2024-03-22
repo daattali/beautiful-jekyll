@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Modeling - Comer project
-subtitle: Practice to make a data modeling for Comer project (web application)
+subtitle: Practice to make a data modeling for Comer project (web application - solo project)
 # thumbnail-img: /assets/img/rootMe/11d59cb34397e986062eb515f4d32421.png
 tags: [MongoDB, data modeling, user case, NOSQL]
 comments: true
@@ -18,13 +18,13 @@ Node.js, Express.js, Mongoose, MongoDB(NoSQL)
 
 1. **Users:**
 
-   They have the capability to create an account, view booked experiences, and access their previously opened sessions. Users can also edit their profiles. To sign up, individuals must provide an email address, create a password, and confirm that password. Upon submitting this information, they will receive an email containing a verification token. This token is appended to a URL; clicking on the hyperlinked URL in the email activates the user's account, allowing them to participate in any desired activities on the website. If users verify their email addresses, the email token string will change from a string to a null value. Additionally, users can reset their passwords once their email addresses are found in the database. Finally, users can delete their accounts, which will change their isActive status to false.
+   They have the capability to create an account, view booked experiences, and access their previously opened events. Users can also edit their profiles. They also can find forgotpassword and reset the password. They cannot save prevously saved password, so it should not be matched with the current password and old one. To sign up, individuals must provide an email address, create a password, and confirm that password again. Upon submitting this information, they will receive an email containing a verification token. This token is appended to a URL(user will be redirected to this url address); clicking on the hyperlinked URL in the email activates the user's account, allowing them to participate in any desired activities on the website. If users complete to verify their email addresses, the email token string will change from a string to a null value. Additionally, users can reset their passwords once their email addresses are found in the database. In this sitation, emailToken will be issued. Once user click the url sent to their email address, the emailToken will be changed into null. And then user can reset the password, which should not be matched with the previously saved password. Finally, users can delete their accounts, which will change their isActive status to false, not deleting whole data.
 
    ![login](/assets/img/comerProject/Screenshot%202024-03-20%20at%2020.51.19.png)
 
 2. **Experiences:**
 
-   Users can create/edit events. They can upload image files, which are stored on AWS S3. The event details, including title, description, perks (such as food, beverages, transportation, equipment, and others), guest requirements (minimum age, allowance of kids and pets, maximum group size), languages spoken, general availability (start time, end time, date range), tags, price (with currency), additional notes for consideration by users, likes from other users, and cancellation policy, are stored in the database. To facilitate event location, information such as country, city, state, address (including street number), longitude, latitude, coordinates, and full address are also stored in the database. These location details are provided via the Mapbox library from the client side.
+   Users can create/edit events. They can upload image files, which are stored on AWS S3 bucket. The event details, including title, description, perks (such as food, beverages, transportation, equipment, and others), guest requirements (minimum age, allowance of kids and pets, maximum group size), languages spoken, general availability (start time, end time, date range), tags, price with currency, additional notes for consideration by users, likes from other users, and cancellation policy, are stored in the database. To facilitate event location, information such as country, city, state, address (including street number), longitude, latitude, coordinates, and full address are also stored in the database. These location details are provided via the Mapbox library from the client side.
 
    ![opening1](/assets/img/comerProject/Screenshot%202024-03-20%20at%2020.54.14.png)
 
@@ -102,7 +102,7 @@ erDiagram
          string food "Description of Food Provided"
          string beverage "Description of Beverages Provided"
          string transportation "Description of Transportation Provided"
-         string alcohole "Description of Alcohol Provided"
+         string alcohol "Description of Alcohol Provided"
          string equipment "Description of any equipment Provided"
          string others "Description of any others Provided"
     }
@@ -119,13 +119,14 @@ erDiagram
     AVAILABILITY {
         string _id PK "Unique identifier for availability record"
         string experienceId FK "Reference to Experience"
-        array dateMaxGuestPairs "Array of Date, Time, and Guest Information"
+        object[] dateMaxGuestPairs "Array of Date, Time, and Guest Information"
+        object[] booking "Array of booking detailed information"
         dateTime createdAt "Creation Timestamp"
         dateTime updatedAt "Last Update Timestamp"
     }
 
     DATEMAXGUESTPAIR {
-        string _id "Unique identifier for date-maxGuest pair"
+        string _id PK "Unique identifier for date-maxGuest pair"
         dateTime date "Date of Availability"
         string startTime "Start Time"
         string endTime "End Time"
@@ -135,11 +136,11 @@ erDiagram
     }
 
     BOOKING {
-        string _id "Unique identifier for booking"
+        string _id PK "Unique identifier for booking"
         dateTime date "Date of Booking"
-        string slotId "Reference to DateMaxGuestPair"
-        string userId "User who made the booking"
-        string experienceId "Reference to Experience"
+        string slotId FK "Reference to DateMaxGuestPair"
+        string userId FK "User who made the booking"
+        string experienceId FK "Reference to Experience"
         string experienceTitle "Title of the Experience"
         string userEmail "Email of the User"
         string startTime "Start Time"
