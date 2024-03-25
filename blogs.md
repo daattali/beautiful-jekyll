@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Blogs
-subtitle: Home for my publications
+subtitle: Here I write regularly once in a year or so
 ---
 
 {% assign posts = paginator.posts | default: site.posts %}
 
 <div class="posts-list">
   {% for post in posts %}
+
   <article class="post-preview">
 
     {%- capture thumbnail -%}
@@ -22,16 +23,17 @@ subtitle: Home for my publications
       {% else %}
       {% endif %}
     {% endcapture %}
+
     {% assign thumbnail=thumbnail | strip %}
 
     {% if site.feed_show_excerpt == false %}
-    {% if thumbnail != "" %}
-    <div class="post-image post-image-normal">
-      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-        <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
-      </a>
-    </div>
-    {% endif %}
+        {% if thumbnail != "" %}
+        <div class="post-image post-image-normal">
+            <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+                <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+            </a>
+        </div>
+        {% endif %}
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">

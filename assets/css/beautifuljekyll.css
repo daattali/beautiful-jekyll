@@ -21,6 +21,12 @@ body {
   background-attachment: fixed;
   {% endif %}
   overflow-wrap: break-word;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body > main {
+  flex: 1;
 }
 p {
   line-height: 1.5;
@@ -181,8 +187,6 @@ img {
 }
 
 .navbar-custom .navbar-nav .nav-link {
-  padding-top: 0;
-  padding-bottom: 0;
   line-height: 1.25rem;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem;
@@ -247,22 +251,28 @@ img {
 }
 
 .navbar-custom .nav-item.dropdown .dropdown-menu {
-  min-width: 0;
   margin-top: 0;
   font-size: 1em;
   border: 0;
   padding: 0;
+  {% if site.navbar-var-length %}
+  min-width: 100%;
+  {% else %}
+  min-width: 0;
   width: 100%;
   word-break: break-word;
+  {% endif %}
 }
+
 .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
-  white-space: normal;
   padding: 0.625rem;
   background-color: {{ site.navbar-col | default: "#EAEAEA" }};
   text-decoration: none !important;
-  border-width: 0 1px 1px 1px;
   font-weight: normal;
   color: {{ site.navbar-text-col | default: "#404040" }};
+  {% unless site.navbar-var-length %}
+  white-space: normal;
+  {% endunless %}
 }
 
 @media (min-width: 1200px) {
@@ -274,6 +284,10 @@ img {
     padding-left: 0.625rem;
     border: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
     border-width: 0 1px 1px;
+  }
+
+  .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item:first-child {
+    border-top-width: 1px;
   }
 }
 
@@ -432,6 +446,10 @@ footer .footer-custom-content {
 
 /* --- Post preview (feed) --- */
 
+.posts-list {
+    margin: 0;
+}
+
 .post-preview {
   padding: 1.25rem 0;
   border-bottom: 1px solid #eee;
@@ -560,6 +578,10 @@ footer .footer-custom-content {
 .blog-tags span {
   color: {{ site.text-col | default: "#404040" }};
   opacity: 0.8;
+}
+
+.blog-tags .list-inline-item {
+  margin-right: 0;
 }
 
 .blog-tags a {
@@ -721,39 +743,6 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   }
 }
 
-.header-section.has-img .no-img {
-  margin-top: 0;
-  background-color: #FCFCFC;
-  margin: 0 0 2.5rem;
-  padding: 1.25rem 0;
-  box-shadow: 0 0 0.3125rem #AAA;
-}
-/* Many phones are 320 or 360px, so make sure images are a proper aspect ratio in those cases */
-.header-section.has-img .intro-header.no-img {
-  display: none;
-}
-@media (max-width: 365px) {
-  .header-section.has-img .intro-header.no-img {
-    display: block;
-  }
-  .intro-header.big-img {
-    width: 100%;
-    height: 13.75rem;
-  }
-  .intro-header.big-img .page-heading,
-  .intro-header.big-img .post-heading {
-    display: none;
-  }
-  .header-section.has-img .big-img {
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 325px) {
-  .intro-header.big-img {
-    height: 12.5rem;
-  }
-}
-
 #header-gh-btns {
   margin-bottom: 0.9375rem;
 }
@@ -795,6 +784,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   background-color: #FFF;
   border-radius: 0;
   color: {{ site.text-col | default: "#404040" }};
+  padding: 0.75rem 1rem;
 }
 @media (min-width: 768px) {
   .pagination .page-item .page-link {
@@ -1002,6 +992,7 @@ pre {
 
 /* Search bar */
 #beautifuljekyll-search-overlay {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: none;
   z-index: 999999;
   position: fixed;
@@ -1013,6 +1004,7 @@ pre {
   text-align: center;
   padding: 1rem;
 }
+
 #nav-search-exit {
   position: absolute;
   top: 1.5rem;
@@ -1041,6 +1033,7 @@ pre {
   border: none;
   padding: 0 3rem;
 }
+
 @media (max-width: 1199px) {
   #nav-search-input {
     width: 75%;
