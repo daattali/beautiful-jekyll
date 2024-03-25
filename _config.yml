@@ -1,9 +1,13 @@
-# Welcome to Beautiful Jekyll!
-# This config file is meant for settings that affect your entire website. When you first
-# set up your website you should go through all these settings and edit them, but after
-# the initial set up you won't need to come back to this file often.
+###########################################################
+### Welcome to Beautiful Jekyll!
+### This config file is meant for settings that affect your entire website. When you first
+### set up your website you should go through all these settings and edit them, but after
+### the initial set up you won't need to come back to this file often.
+###########################################################
 
+############################
 # --- Required options --- #
+############################
 
 # Name of website
 title: Md Abdullahil Shafi
@@ -14,7 +18,9 @@ description: A virtual proof that I exist
 # Your name to show in the footer
 author: Md Abdullahil Shafi
 
+###############################################
 # --- List of links in the navigation bar --- #
+###############################################
 
 navbar-links:
   About Me: "aboutme"
@@ -23,7 +29,9 @@ navbar-links:
   Job History: "jobhistory"
   Homepage: "/"
 
+################
 # --- Logo --- #
+################
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
@@ -37,9 +45,12 @@ round-avatar: true
 #title-img: /path/to/image
 
 
+#####################################
 # --- Footer social media links --- #
+#####################################
 
 # Select the social network links that you want to show in the footer.
+# You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "shafi.cse.buet@gmail.com"
@@ -47,10 +58,11 @@ social-network-links:
   facebook: 0.mash.000
   github: shafi-
   twitter: bd_shafi
-#  patreon: DeanAttali
-#  youtube: c/daattali
-#  medium: yourname
-#  reddit: yourname
+  # patreon: DeanAttali
+  # youtube: "@daattali"
+  # whatsapp: 15551212
+  # medium: yourname
+  # reddit: yourname
   linkedin: md-abdullahil-shafi
 #  xing: yourname
   stackoverflow: "2442877/shafi"
@@ -64,17 +76,22 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
+#  bluesky: yourname
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid 
+#  discord: "invite_code" or "users/userid" or "invite/invite_code" 
 #  kaggle: yourname
   hackerrank: Shafi100
+#  gitlab: yourname
+#  itchio: yourname
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
 # rss-description: This website is a virtual proof that I exist
 
+###########################
 # --- General options --- #
+###########################
 
 # Select which social network share links to show in posts
 share-links-active:
@@ -86,6 +103,9 @@ share-links-active:
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
 # url-pretty: "Md Abdullahil Shafi"
+
+# Add the website title to the title of every page
+title-on-all-pages: true
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -99,10 +119,20 @@ feed_show_tags: true
 # Add a search button to the navbar
 post_search: true
 
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
+
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: false
+
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
 
+######################################
 # --- Colours / background image --- #
+######################################
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
@@ -136,13 +166,12 @@ footer-hover-col: "#0085A1"
 #site-js:
 #  - "/assets/js/custom-script.js"
 
+#################################
 # --- Web Analytics Section --- #
+#################################
 
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
-
-# Fill in your Google Analytics ID to track your website using Google Analytics
-#google_analytics: ""
+# Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
+#gtag: "G-XXXXXXXXXX"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 cloudflare_analytics: "0a017806d87249ff9519e0ce8a011d06"
@@ -158,7 +187,14 @@ cloudflare_analytics: "0a017806d87249ff9519e0ce8a011d06"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
+# Google Universal Analytics ID -- deprecated
+# As of July 2023 this is no longer supported by Google! If you are still using `google_analytics`,
+# you should switch to using the `gtag` field above instead.
+#google_analytics: "UA-XXXXXXXX-X"
+
+####################
 # --- Comments --- #
+####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
@@ -209,7 +245,9 @@ cloudflare_analytics: "0a017806d87249ff9519e0ce8a011d06"
 #  emit-metadata: 0
 #  theme: light
 
+################
 # --- Misc --- #
+################
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
@@ -217,7 +255,9 @@ date_format: "%B %-d, %Y"
 # Facebook App ID
 #fb_app_id: ""
 
+#################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #
+#################################################################################
 
 # Output options (more information on Jekyll's site)
 timezone: "Bangladesh/Dhaka"
