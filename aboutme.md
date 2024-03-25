@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A summary about me as a software engineer
 ---
 
 My name is Md Abdullahil Shafi. Software engineer by profession. Loves to travel, food and playing football.
