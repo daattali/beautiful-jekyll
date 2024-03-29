@@ -10,6 +10,72 @@ comments: true
 author: Lantana Park
 ---
 
+## What is OOP(Object Oriented Programming)?
+
+It is one of the programming concept and has three main concepts: class and instance, inheritance, and encampsulation.
+
+As far as I understood, it allows me to group related information together so that I can produce shorter and more reuseable code.
+
+Building blocks: Classes, Objects, Methods, Attributes
+
+```javascript
+// Class is a blueprint
+class Student {
+  name, nationality,languages;
+  // Constructor for creating and initializing objects
+  constructor(name, nationality, languages) {
+    this.name = name; // Attribute storing name
+    this.nationality = nationality; // Attribute storing nationality
+    this.languages = languages; // Attrubute stroing nationality
+  }
+  // Method of the student class
+  introduceSelf() {
+    console.log(
+      // `this.name` refers to the property `name` of the current instance of the `Student` class. By using `this.name`, I can reach the value inside of class
+      `My name is ${this.name}. I'm from ${this.nationality} and can speak ${this.languages}.`
+    );
+  }
+}
+// Creating an object 'lantana' from the student class
+const lantana = new Student("Lantana Park", "Korea", "Korean and English");
+// Calling introductSelf method on the lantana object
+lantana.introduceSelf();
+```
+
+## Priciples of OOP
+
+There are 4 pillars of OOP
+
+Encapsulation, Abstraction, Inheritance, Polymorphism
+
+1. Encapsulatiol
+   This is the concept
+
+```javascript
+class Student {
+  #name; // `#name` is a private field
+  #major;
+
+  constructor(name) {
+    this.#name = name;
+  }
+
+  getName() {
+    return this.#name;
+  }
+
+  setName(name) {
+    this.#name = name;
+  }
+}
+
+const person = new Person("John Doe");
+console.log(person.getName()); // John Doe
+person.setName("Jane Doe");
+console.log(person.getName()); // Jane Doe
+// person.#name; // SyntaxError: Private field '#name' must be declared in an enclosing class
+```
+
 [Watch the video here to view my explaination](https://www.loom.com/share/092080785c894d588f7b06a93ada2eb3?sid=c177950a-94e3-4145-8c74-0ecaf754a611)
 
 ```javascript
