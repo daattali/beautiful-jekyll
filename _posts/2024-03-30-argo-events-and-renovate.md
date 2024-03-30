@@ -20,7 +20,7 @@ Webhooks are used everywhere, it means that something exposes an http endpoint, 
 
 This is what I am going to use here with Argo Events. The idea is to create a Renovate pod when I access `argo-events.int.vxav.fr/renovate`, which I can simple add as a button on my dashboard.
 
-![renovate-webhook](renovate-webhook.png)
+![renovate-webhook](/img/renovate-webhook.png)
 
 ## Argo Events
 
@@ -30,7 +30,7 @@ This was the super short summary of Argo Events but you can learn more about the
 
 Note that I am not using Argo Workflows here, only Argo Events. Argo Workflows can be triggered by Argo Events and are very powerful workflow engine for Kubernetes but way overkill for my simple use case.
 
-![Argo Events](argo-events-diagram.png)
+![Argo Events](/img/argo-events-diagram.png)
 
 ## Installation of Argo Events via ArgoCD
 
@@ -240,11 +240,11 @@ spec:
 
 Once you merge all these into the repo, ArgoCD will create the Argo App.
 
-![argo-events-app](argo-events-app.png)
+![argo-events-app](/img/argo-events-app.png)
 
 which will then apply the resources in `/gitops/argo-events/` and install everything for you.
 
-![argo-events-resources](argo-events-resources.png)
+![argo-events-resources](/img/argo-events-resources.png)
 
 Once you observed that everything has been created successfully in the Kubernetes cluster, you can check that it works by accessing the webhook and it should start a Renovate pod.
 
@@ -262,7 +262,7 @@ renovate-webhooked-g97hc   1/1     Running     0          118s
 renovate-webhooked-g97hc   0/1     Completed   0          4m31s
 ```
 
-![renovate-pr](renovate-pr.png)
+![renovate-pr](/img/renovate-pr.png)
 
 ## Adding a button in Homepage dashboard
 
@@ -281,7 +281,7 @@ In the case of [Homepage](https://gethomepage.dev/latest/configs/services/), I s
 
 And this is what it looks like on the dashboard. It will now start a Renovate pod when I click on that button.
 
-![renovate-in-homepage](renovate-in-homepage.png)
+![renovate-in-homepage](/img/renovate-in-homepage.png)
 
 ## Wrap up
 
