@@ -102,7 +102,7 @@ const handlePerksChange = (e) => {
 
 ### Pure functions
 
-- It always returns the same output for the same input (name) without causing any side effects.
+It always returns the same output for the same input (name) without causing any side effects.
 
 ```javascript
 function greet(name) {
@@ -126,130 +126,130 @@ addToCount(5); // 15
 
 ### Higher Order Functions
 
-- Higher-order functions are a concept in functional programming. They are functions that can take other functions as arguments or return function as their results. It characteristic allows for a higher level of abstraction in programming, enabling more flexible and reusable code.
+Higher-order functions are a concept in functional programming. They are functions that can take other functions as arguments or return function as their results. It characteristic allows for a higher level of abstraction in programming, enabling more flexible and reusable code.
 
-  1. In javaScript, `map` is a higher-order function that transforms an array by applying a function to all of its elements and returning a new array with the results.
+- In javaScript, `map` is a higher-order function that transforms an array by applying a function to all of its elements and returning a new array with the results.
 
-    ```javascript
-    const numbers = [1, 2, 3, 4];
-    const squares = numbers.map((x) => x * x); // Applying a function to square each element
-    console.log(numbers); // [1, 2, 3, 4]
-    console.log(squares); // [1, 4, 9, 16]
-    ```
+  ```javascript
+  const numbers = [1, 2, 3, 4];
+  const squares = numbers.map((x) => x * x); // Applying a function to square each element
+  console.log(numbers); // [1, 2, 3, 4]
+  console.log(squares); // [1, 4, 9, 16]
+  ```
 
-  2. `filter` is another higher-order function that creates a new array with all elements that pass the test implemented by the provided function.
+- `filter` is another higher-order function that creates a new array with all elements that pass the test implemented by the provided function.
 
-    In my code example,
+  In my code example,
 
-    ```javascript
-    {
-      bookings.map((bookingGroup, groupIndex) => (
-        <article key={groupIndex}>
-          {bookingGroup.booking
-            .filter((booking) => booking.userEmail === authUser.email)
-            .map((booking, index) => (
-              <div
-                key={index}
-                className="flex justify-between mx-auto max-w-2xl p-5 ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"
-              >
-                <p className="flex text-xl items-center justify-center">
-                  {booking.date.split("T")[0]}
+  ```javascript
+  {
+    bookings.map((bookingGroup, groupIndex) => (
+      <article key={groupIndex}>
+        {bookingGroup.booking
+          .filter((booking) => booking.userEmail === authUser.email)
+          .map((booking, index) => (
+            <div
+              key={index}
+              className="flex justify-between mx-auto max-w-2xl p-5 ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"
+            >
+              <p className="flex text-xl items-center justify-center">
+                {booking.date.split("T")[0]}
+              </p>
+              <p className="flex text-lg items-center justify-center">
+                {booking.startTime} - {booking.endTime}
+              </p>
+              <Link to={`/product/${booking.experienceId}`}>
+                <p className="flex text-2xl items-center justify-center">
+                  {booking.experienceTitle}
                 </p>
-                <p className="flex text-lg items-center justify-center">
-                  {booking.startTime} - {booking.endTime}
-                </p>
-                <Link to={`/product/${booking.experienceId}`}>
-                  <p className="flex text-2xl items-center justify-center">
-                    {booking.experienceTitle}
-                  </p>
-                </Link>
-                <div>
-                  <button
-                    className="flex rounded-md border border-transparent bg-red-700 px-6 py-2 text-md font-medium text-white shadow-sm        hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
-                    onClick={() => cancelBooking(booking._id)}
-                  >
-                    Cancel booking
-                  </button>
-                </div>
+              </Link>
+              <div>
+                <button
+                  className="flex rounded-md border border-transparent bg-red-700 px-6 py-2 text-md font-medium text-white shadow-sm        hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                  onClick={() => cancelBooking(booking._id)}
+                >
+                  Cancel booking
+                </button>
               </div>
-            ))}
-        </article>
-      ));
-    }
-    ```
-
-  3. `reduce` method is a higher-order function. It operates on arrays and takes a callback function as an argument, applying this callback to reduce the array to a single value.
-
-    ```javascript
-    let numbers = [5, 20, 100, 60, 1];
-    const maxValue = numbers.reduce((max, curr) => {
-      if (curr > max) max = curr;
-      return max;
-    });
-    console.log(numbers); // [5, 20, 100, 60, 1]
-    console.log(maxValue); // 100
-    ```
-
-  To explain with my source code,
-
-  in this express.js server code, middleware functions are used to process requests. The `authenticateUser` middleware checks if the user is  anthenticated before processing to the route handler. Middleware functions in this code below are higher-order functions because they take   three arguments: `req` (the request object), `res` (the response object), and `next` (a function to call the next middleware in the stack).
-  
-  The `next` argument is particularly significant because it allows `authenticateUser` to control the flow of the application by deciding   whether to proceed to the next piece of middleware in the stack or terminate the chain based on authentication logic. Since `next` function   has the potential to call this function depending on the outcome of its internal logic, the ability to take and invoke functions makes  middleware inherently higher-order.
-  
-  ```javascript
-  // middleware
-  const authenticateUser = async (req, res, next) => {
-    try {
-      const authAccessToken = req.cookies["accessToken"];
-      if (!authAccessToken) {
-        return res.status(401).json("Access token not found!");
-      }
-  
-      const payload = jwt.verify(authAccessToken, process.env.ACCESS_SECRET);
-  
-      if (!payload) {
-        return res.status(401).json("Unauthorized!");
-      }
-  
-      const user = await User.findById(payload.id);
-      if (!user || (!user.isVerified && !user.isActive)) {
-        return res.status(401).json("Unauthorized!");
-      }
-  
-      req.user = user;
-      next();
-    } catch (error) {
-      next(error);
-    }
-  };
+            </div>
+          ))}
+      </article>
+    ));
+  }
   ```
-  
-  Additionally, in the route handler `router.get("/:id", authenticateUser, async (req, res) => {})`, the use of `authenticateUser` as   middleware before the asynchronous route handler also illustrates the use of higher-order functions. The middleware preprocesses the  request, applying authentication logic, before passing control to the route handler.
-  
+
+- `reduce` method is a higher-order function. It operates on arrays and takes a callback function as an argument, applying this callback to reduce the array to a single value.
+
   ```javascript
-  // server code to get an authenticated user profile data
-  router.get("/:id", authenticateUser, async (req, res) => {
-    try {
-      const user = await User.findById(req.params.id);
-  
-      if (!user) {
-        return res.status(404).json("User not found");
-      }
-  
-      if (user.id !== req.user.id) {
-        return res.status(404).json("User not found");
-      }
-  
-      res.status(200).json(user);
-    } catch (error) {
-      res.status(500).json({ error: "Server Error!" });
-    }
+  let numbers = [5, 20, 100, 60, 1];
+  const maxValue = numbers.reduce((max, curr) => {
+    if (curr > max) max = curr;
+    return max;
   });
+  console.log(numbers); // [5, 20, 100, 60, 1]
+  console.log(maxValue); // 100
   ```
+
+To explain with my source code,
+
+in this express.js server code, middleware functions are used to process requests. The `authenticateUser` middleware checks if the user is anthenticated before processing to the route handler. Middleware functions in this code below are higher-order functions because they take three arguments: `req` (the request object), `res` (the response object), and `next` (a function to call the next middleware in the stack).
+
+The `next` argument is particularly significant because it allows `authenticateUser` to control the flow of the application by deciding whether to proceed to the next piece of middleware in the stack or terminate the chain based on authentication logic. Since `next` function has the potential to call this function depending on the outcome of its internal logic, the ability to take and invoke functions makes middleware inherently higher-order.
+
+```javascript
+// middleware
+const authenticateUser = async (req, res, next) => {
+  try {
+    const authAccessToken = req.cookies["accessToken"];
+    if (!authAccessToken) {
+      return res.status(401).json("Access token not found!");
+    }
+
+    const payload = jwt.verify(authAccessToken, process.env.ACCESS_SECRET);
+
+    if (!payload) {
+      return res.status(401).json("Unauthorized!");
+    }
+
+    const user = await User.findById(payload.id);
+    if (!user || (!user.isVerified && !user.isActive)) {
+      return res.status(401).json("Unauthorized!");
+    }
+
+    req.user = user;
+    next();
+  } catch (error) {
+    next(error);
+  }
+};
+```
+
+Additionally, in the route handler `router.get("/:id", authenticateUser, async (req, res) => {})`, the use of `authenticateUser` as middleware before the asynchronous route handler also illustrates the use of higher-order functions. The middleware preprocesses the request, applying authentication logic, before passing control to the route handler.
+
+```javascript
+// server code to get an authenticated user profile data
+router.get("/:id", authenticateUser, async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+
+    if (!user) {
+      return res.status(404).json("User not found");
+    }
+
+    if (user.id !== req.user.id) {
+      return res.status(404).json("User not found");
+    }
+
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(500).json({ error: "Server Error!" });
+  }
+});
+```
 
 ### Currying
 
-- Currying is a functional programming concept where a function that takes multiple arguments is transformed into a sequence of nested functions, each taking a single argument. For example, `function (a, b, c)` can be `function (a) (b) (c)`.
+Currying is a functional programming concept where a function that takes multiple arguments is transformed into a sequence of nested functions, each taking a single argument. For example, `function (a, b, c)` can be `function (a) (b) (c)`.
 
 ```javascript
 // The function applyShipCost takes three arguments sequentially, country, flatRate, order
@@ -277,7 +277,7 @@ console.log(applyShippingToUSA(order));
 
 ### Recursion
 
-- It is the concept of a function calling itself directly or indirectly to solve a problem. This approach is particularly useful for tasks that can be broken down into smaller, similar tasks.
+It is the concept of a function calling itself directly or indirectly to solve a problem. This approach is particularly useful for tasks that can be broken down into smaller, similar tasks.
 
 ```javascript
 const buildHierarchy = (employees, managerId) => {
