@@ -2,6 +2,7 @@
 layout: post
 title: Start Renovate from a dashboard with Argo Events
 date: 2024-03-30T11:00:20.305Z
+fb-img: /img/argo-events-fb-img.png
 ---
 
 Over the last few months I have been slowly adding features to my home setup (I don't call it a home lab). I have several services I use at home like Home Assistant, Zigbee2mqtt, ESPHome dashboard and many more, running on a K3s node (mini pc with core-i3 and 16GB of RAM). Everything is defined in yaml manifests stored in a private Github repo and reconciled in the Kubernetes cluster by ArgoCD. 
@@ -20,7 +21,7 @@ Webhooks are used everywhere, it means that something exposes an http endpoint, 
 
 This is what I am going to use here with Argo Events. The idea is to create a Renovate pod when I access `argo-events.int.vxav.fr/renovate`, which I can simple add as a button on my dashboard.
 
-![renovate-webhook](/img/renovate-webhook.png)
+![renovate-webhook](/img/argo-events-fb-img.png)
 
 ## Argo Events
 
