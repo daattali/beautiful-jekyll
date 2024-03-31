@@ -14,7 +14,7 @@ author: Lantana Park
 
 - It is a declarative programming paradigm style and takes an input value and produces an output value.
 
-- It is an **immutable data structures and algorithms.**
+- It is an immutable data structures and algorithms.
 
 - It is higher-order functions.
 
