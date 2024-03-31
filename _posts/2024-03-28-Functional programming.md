@@ -112,39 +112,83 @@ console.log(greet("lantana"));
 // Hi, lantana
 ```
 
+However, the code below is **not** pure function because count was declared outside of the function. So that side effect can be happeded.
+
+```javascript
+let count = 10;
+
+function addToCount(num) {
+  count += num;
+}
+
+addToCount(5); // 15
+```
+
 2. Higher Order Functions
 
 - Higher-order functions are a concept in functional programming. They are functions that can take other functions as arguments or return function as their results. It characteristic allows for a higher level of abstraction in programming, enabling more flexible and reusable code.
 
   1. In javaScript, `map` is a higher-order function that transforms an array by applying a function to all of its elements and returning a new array with the results.
 
-```javascript
-const numbers = [1, 2, 3, 4];
-const squares = numbers.map((x) => x * x); // Applying a function to square each element
-console.log(numbers); // [1, 2, 3, 4]
-console.log(squares); // [1, 4, 9, 16]
-```
+  ```javascript
+  const numbers = [1, 2, 3, 4];
+  const squares = numbers.map((x) => x * x); // Applying a function to square each element
+  console.log(numbers); // [1, 2, 3, 4]
+  console.log(squares); // [1, 4, 9, 16]
+  ```
 
-2. `filter` is another higher-order function that creates a new array with all elements that pass the test implemented by the provided function.
+  2. `filter` is another higher-order function that creates a new array with all elements that pass the test implemented by the provided function.
 
-```javascript
-const numbers = [1, 2, 3, 4];
-const evens = numbers.filter((x) => x % 2 === 0); // Filtering even numbers
-console.log(numbers); // [1, 2, 3, 4]
-console.log(evens); // [2, 4]
-```
+  In my code example,
 
-3. `reduce` method is a higher-order function. It operates on arrays and takes a callback function as an argument, applying this callback to reduce the array to a single value.
+  ```javascript
+  {
+    bookings.map((bookingGroup, groupIndex) => (
+      <article key={groupIndex}>
+        {bookingGroup.booking
+          .filter((booking) => booking.userEmail === authUser.email)
+          .map((booking, index) => (
+            <div
+              key={index}
+              className="flex justify-between mx-auto max-w-2xl p-5 ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"
+            >
+              <p className="flex text-xl items-center justify-center">
+                {booking.date.split("T")[0]}
+              </p>
+              <p className="flex text-lg items-center justify-center">
+                {booking.startTime} - {booking.endTime}
+              </p>
+              <Link to={`/product/${booking.experienceId}`}>
+                <p className="flex text-2xl items-center justify-center">
+                  {booking.experienceTitle}
+                </p>
+              </Link>
+              <div>
+                <button
+                  className="flex rounded-md border border-transparent bg-red-700 px-6 py-2 text-md font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                  onClick={() => cancelBooking(booking._id)}
+                >
+                  Cancel booking
+                </button>
+              </div>
+            </div>
+          ))}
+      </article>
+    ));
+  }
+  ```
 
-```javascript
-let numbers = [5, 20, 100, 60, 1];
-const maxValue = numbers.reduce((max, curr) => {
-  if (curr > max) max = curr;
-  return max;
-});
-console.log(numbers); // [5, 20, 100, 60, 1]
-console.log(maxValue); // 100
-```
+  3. `reduce` method is a higher-order function. It operates on arrays and takes a callback function as an argument, applying this callback to reduce the array to a single value.
+
+  ```javascript
+  let numbers = [5, 20, 100, 60, 1];
+  const maxValue = numbers.reduce((max, curr) => {
+    if (curr > max) max = curr;
+    return max;
+  });
+  console.log(numbers); // [5, 20, 100, 60, 1]
+  console.log(maxValue); // 100
+  ```
 
 To explain with my source code,
 
@@ -183,7 +227,7 @@ const authenticateUser = async (req, res, next) => {
 Additionally, in the route handler `router.get("/:id", authenticateUser, async (req, res) => {})`, the use of `authenticateUser` as middleware before the asynchronous route handler also illustrates the use of higher-order functions. The middleware preprocesses the request, applying authentication logic, before passing control to the route handler.
 
 ```javascript
-// server code to get the user's profile data
+// server code to get an authenticated user profile data
 router.get("/:id", authenticateUser, async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
@@ -205,44 +249,133 @@ router.get("/:id", authenticateUser, async (req, res) => {
 
 3. Currying
 
--  Currying is a functional programming concept where a function that takes multiple arguments is transformed into a sequence of nested functions, each taking a single argument. For example, `function(a, b, c)` can be `function (a) (b) (c)`.
+- Currying is a functional programming concept where a function that takes multiple arguments is transformed into a sequence of nested functions, each taking a single argument. For example, `function (a, b, c)` can be `function (a) (b) (c)`.
 
 ```javascript
-// The function applyShipCost takes three arguments sequentially
-// 
+// The function applyShipCost takes three arguments sequentially, country, flatRate, order
+// According to the variable, named 'applyShippingToUSA', 'USA' for the country and '10' for the flat rate are assgined to the 'applyShippingCost' function.
+// However, this does not execute the final function yet. Instead, it creates a new function, 'applyShippingToUSA'.
 const applyShippingCost = (country) => (flatRate) => (order) => {
+  // Since 'USA' from order object === 'USA' the arugment value assgined at first
   if (order.shipTo === country) {
     return {
       ...order,
+      // copy the created order object
       shippingCost: flatRate,
+      // add these key and value in the object
     };
   }
   return order;
+  // return the order object
 };
 
-const applyShippingToUSA = applyShippingCost('USA')(10); 
-const order = { item: 'Book', shipTo: 'USA', price: 15 };
+const applyShippingToUSA = applyShippingCost("USA")(10);
+const order = { item: "Book", shipTo: "USA", price: 15 };
 console.log(applyShippingToUSA(order));
+// {item: "Book", shipTo: "USA", price: 15, shippingCost: 10}
 ```
-
-
 
 4. Recursion
 
-```javascript
-const buildTree = (list, parent) => {
-  let tree = {};
-  list
-    .filter((items) => items.parent === parent)
-    .forEach((items) => {
-      tree[items.id] = buildTree(list, items.id);
-    });
-  return tree;
-};
-```
+- It is the concept of a function calling itself directly or indirectly to solve a problem. This approach is particularly useful for tasks that can be broken down into smaller, similar tasks.
 
-![recursion](/assets/img/functionalProgramming/Screenshot%202024-03-04%20at%2022.00.51.png)
+```javascript
+const buildHierarchy = (employees, managerId) => {
+  let hierarchy = {};
+  employees
+    .filter((employee) => employee.managerId === managerId)
+    .forEach((employee) => {
+      hierarchy[employee.id] = {
+        ...employee,
+        reports: buildHierarchy(employees, employee.id),
+      };
+    });
+  return hierarchy;
+};
+
+// Sample data
+const employees = [
+  { id: "1", name: "CEO", managerId: null },
+  { id: "2", name: "CTO", managerId: "1" },
+  { id: "3", name: "CFO", managerId: "1" },
+  { id: "4", name: "Engineer", managerId: "2" },
+  { id: "5", name: "Accountant", managerId: "3" },
+  { id: "6", name: "Tech Lead", managerId: "2" },
+];
+
+// Usage
+const companyHierarchy = buildHierarchy(employees, null);
+console.log(companyHierarchy);
+```
 
 5. Functors
 
+It has a container that holds a value and provides a way to apply a function to that value without modifying the container's structure. Any type that has a map function can be functor.
+
+![functors](/assets/img/functionalProgramming/functor-example.jpg)
+
+In this code example, by defining a structure(`createBox`), this function encapsulates a value and provides a `map` to apply transformations to that value, returning a new instance of the structure with the transformed value.
+
+```javascript
+// A function that creates a box
+const createBox = (value) => ({
+  // The map function applies a transformation to the box's value
+  map: (fn) => createBox(fn(value)),
+  // A utility function to view the value inside the box
+  fold: () => value,
+});
+
+// Usage
+const box = createBox(5)
+  .map((value) => value + 2) // Returns a new box with value 7
+  .map((value) => value * 2) // Returns a new box with value 14
+  .fold(); // Extracts the value from the box
+
+console.log(box); // 14
+```
+
+In my code example, I used functor concept like this.
+
+Here, `.map()` is used to transform each comment in the comments array into a JSX element. This transformation is applied without mutating the original comments array, returning a new array of React elements where each element represents a Comment component.
+
+```javascript
+<div className="flex-col">
+  {comments.map((comment) => (
+    <div className="flex-block" key={comment._id}>
+      <Comment comment={comment} />
+    </div>
+  ))}
+</div>
+```
+
 6. Monads
+
+It has structures that wrap or encapsulate values just like functors but add an extra layer of functionality, like chaining operation.
+
+One of the key reasons for using monads is to avoid nested structures when chaining operations that return a context (like arrays or promises).
+
+The code demonstrates chaining asynchronous operations using Promises, where `jwtInterceptor.get()` returns a Promise. This promise is then chained with `.then()` for the next operation on the successful response and `.catch()` for error handling. This chaining and handling of asynchronous operations without deeply nested callbacks illustrate the monadic property of handling side effects in a clean, functional manner.
+
+```javascript
+useEffect(() => {
+  // Define the fetchData function using promise chaining
+  function fetchData() {
+    jwtInterceptor
+      .get("/experiences", {
+        headers: { "content-Type": "application/json" },
+        withCredentials: true,
+      })
+      .then((response) => {
+        // Directly handling the transformation of the response data
+        const products = response.data;
+      })
+      .catch((error) => {
+        // Handle any errors that occur during fetching or transformation
+        console.error("Fetching error:", error);
+      });
+  }
+
+  // Invoke fetchData to perform the operation
+  fetchData();
+}, []); // Empty dependency array means this effect runs once on mount
+```
