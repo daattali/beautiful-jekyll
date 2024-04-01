@@ -15,7 +15,7 @@
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
 - abs: Robot-assisted dressing could profoundly enhance the quality of life of adults with physical disabilities. To achieve this, a robot can benefit from both visual and force sensing. The former enables the robot to ascertain human body pose and garment deformations, while the latter helps maintain safety and comfort during the dressing process. In this paper, we introduce a new technique that leverages both vision and force modalities for this assistive task. Our approach first trains a vision-based dressing policy using reinforcement learning in simulation with varying body sizes, poses, and types of garments. We then learn a force dynamics model for action planning to ensure safety. Due to limitations of simulating accurate force data when deformable garments interact with the human body, we learn a force dynamics model directly from real-world data. Our proposed method combines the vision-based policy, trained in simulation, with the force dynamics model, learned in the real world, by solving a constrained optimization problem to infer actions that facilitate the dressing process without applying excessive force on the person. We evaluate our system in simulation and in a real-world human study with 10 participants across 240 dressing trials, showing it greatly outperforms prior baselines. Video demonstrations are available on our project website. 
-  authors: Zhanyi Sun*, Yufei Wang*, Zackory Erickson&dagger, David Held&dagger
+  authors: Zhanyi Sun*, Yufei Wang*, Zackory Erickson&dagger;, David Held&dagger;
   award: null
   bib: "@article{sun2024force,
   \ title={Force-Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing},
@@ -29,7 +29,7 @@
   short_id: sun2024safe
   site: https://sites.google.com/view/dressing-fcvp
   title: "Force Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing"
-  venue: Robotics and Automation Letters (RAL)
+  venue: Robotics and Automation Letters (RAL), 2024
   video_embed: null
   tags:
     - deformable
