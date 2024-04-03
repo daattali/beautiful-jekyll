@@ -1,3 +1,6 @@
+---
+layout: null
+---
 // Dean Attali / Beautiful Jekyll 2023
 
 let BeautifulJekyllJS = {
@@ -82,7 +85,7 @@ let BeautifulJekyllJS = {
             getNextImg();
           }, 1000);
           //});
-        }, 6000);
+        }, {{ site.header-img-rotate-ms }});
       };
 
       // If there are multiple images, cycle through them

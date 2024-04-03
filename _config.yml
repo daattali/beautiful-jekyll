@@ -125,6 +125,9 @@ edit_page_button: true
 # See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
 navbar-var-length: false
 
+# Time in milliseconds for how often the header images rotate.
+header-img-rotate-ms: 6000
+
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
 
