@@ -120,21 +120,25 @@ author: Lantana Park
 
    ![extracted](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-02%20at%2022.37.17.png)
 
-   Since I need to find zip password, I tried to unzip this file.
+   Since I needed to find the zip password, I tried to unzip this file.
 
-   First attemp was failed,
+   First attempt to unzip `8702.zip` was failed,
 
    ![failedUnzip](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2013.01.19.png)
 
-   Through this fail, I noticed that there was version incompatibility. So I decided to use tool - `7z` to unzip this file.
+   I noticed that there was version incompatibility of `unzip` tool. So I decided to use tool - `7z` to unzip this file.
 
    ![7z](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2014.32.30.png)
 
-   I needed to crack the password of a `ZIP` file at first.
+   Yes, I needed to crack the password of a `8702.zip` file at first.
 
-   For cracking the password of the `zip` file, I used `John the Ripper` because it is a popular for cracking hashed password and handles different types of encrypted zip files.
+   For cracking the password of the `8702.zip` file, I used `John the Ripper` because it is a popular tool for cracking hashed password and handles different types of encrypted zip files.
+
+   I initially tried to extract the hash from the zip file. Because `John the Ripper` does not work directly with `zip` files. Instead, I tried to extract hash of the password from the `zip` file. `zip2john 8702.zip > 8702.hash` creates a file named `8702.hash` containing the hash extracted from `8702.zip`
 
    ![crackPassword1](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2015.44.34.png)
+
+   With the hash file prepared, I can now use the `John the Ripper` to attempt to crack the password using `john`.
 
    ![crackPassword2](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-02%20at%2022.12.27.png)
 
@@ -142,7 +146,7 @@ author: Lantana Park
 
    Answer: Area51
 
-   To get the clue, I needed to upzip the `8702.zip` files. Since I already cracked the password using `John the Ripper`, I thought it will be easy to check the files in the zip file. However there are issues (version incompatibility) during unzipping the zip file. I decided to use `7z`, which is new tool to unzip.
+   To get the clue, I needed to upzip the `8702.zip` files. Since I already cracked the password using `John the Ripper` from the previous task, I thought it will be easy to check the files in the zip file. However there are issues (version incompatibility) during unzipping the zip file. I decided to use `7z`, which is new tool to unzip.
 
    ![errorUnzip](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2013.01.19.png)
 
@@ -154,7 +158,7 @@ author: Lantana Park
 
    ![readingAgentR](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2015.55.06.png)
 
-   I deduced that `QXJlYTUx` was encoded using Base64. There are a reason for that. Typically encoded BS64 ends with one or two `=` characters as padding though, the length of a BS64 encoded string is typically a multiple of 4, if not, it is padded with `=` to make until it is. Since the length of 'QXJlYTUx' is 8 characters, I recognized it is encoded using BS64.
+   I deduced that `QXJlYTUx` was encoded using Base64. There are a reason for that. Typically encoded BS64 ends with one or two `=` characters as padding though, the length of a BS64 encoded string is typically a multiple of 4, if not, it is padded with `=` to make until it is. Since the length of `QXJlYTUx` is 8 characters, I recognized it is encoded using BS64.
 
    ![encoding](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2016.25.14.png)
 
@@ -166,7 +170,7 @@ author: Lantana Park
 
    **What is steghide?**
 
-   It allows you yo hide data within various kinds of image and audio files without noticeable alterations to the file. This can be used to communicate in a completely invisible manner. So, when you dwonload files (including image and audio files), you should be careful and have to check if there is concealed files in it.
+   It allows you to hide data within various kinds of image and audio files without noticeable alterations to the file. This can be used to communicate in a completely invisible manner. So, when you dwonload files (including image and audio files), you should be careful and have to check if there is concealed executable codes or files.
 
    ![steg](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-02%20at%2022.51.03.png)
 
@@ -200,7 +204,7 @@ author: Lantana Park
 
     According to the hint, I needed to reverse the given image file and then do something related to foxnews.
 
-    In order to view this photo, I need to save the image file to my local system.
+    In order to view this photo, I saved the image file to my local system.
 
     Saving an image or any file from a remote system to my local machine via SSH could be done using `SCP` (Secure Copy Protocol). Sinc one line is just required to save the files of SSH. I choose to use `SCP`.
 
@@ -244,7 +248,7 @@ author: Lantana Park
 
     Following the instructions from the identified exploit, the root flag `b53a02f55b57d4439e3341834d70c062` was obtained.
 
-    ![root](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2017.09.15.png)
+    ![root](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2009.20.15.png)
 
     And reading the file.
 
