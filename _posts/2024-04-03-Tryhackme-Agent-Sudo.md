@@ -40,17 +40,17 @@ author: Lantana Park
 
    Using Burp Suite, I changed the user-agent to various codenames (A, B, C...) to gather any information about the agent's name.
 
-   First, I made an repeater on the `GET` request for sending repeating `GET` requests, and then changed `user-agent` under `A`, `B`, `C`.
+   First, I made an repeater on the `GET` request for sending repeating `GET` requests by changing `user-agent` under `A`, `B`, `C`.
 
-   When I changed it is `A` and `B`, there is no different response with `202` status.
+   When I changed it is `A` and `B`, there is no different response with `200` status.
 
    ![A](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2010.38.57.png)
 
-   Fortunately, once I send request under `user-agent` `C`, I could get different response.
+   Fortunately, once I send request under `user-agent` `C`, I could get different response with `302` status.
 
    ![C](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-02%20at%2012.49.32.png)
 
-   In this response above, I found that there is a `agent_C_attention.php` hidden redirected location. So, I visit this page on the browser.
+   In this response above, I found that there is a `agent_C_attention.php` hidden redirected location. So, I visited this page on the browser.
 
    ![chris](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-02%20at%2023.42.54.png)
 
@@ -62,9 +62,11 @@ author: Lantana Park
 
    I used `hydra` for brute-force password cracking, knowing the username was `chris`.
 
-   `-l` is for username, the reason for using `-l` (lowercase) specifically is that I needed to specify a single username to try
+   `-l` is for username, the reason for using `-l` (lowercase) specifically is that I needed to specify a single username - `chris` to try
 
    `-P` is for password, the reason for using `-P` (uppercase) specifically is that I needed to specify a file containing a list of password wordlist to attemp the brute-forcing.
+
+   As it was FTP(File Transfer Protocol), I needed to set `ftp://` and then appended ip number of target machine.
 
    I set the thread count to `-t 16`, the maximum for Kali Linux, to expedite the process, and optionally added the verbose `-V` option.
 
@@ -95,6 +97,8 @@ author: Lantana Park
    ![textFile](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2012.31.06.png)
 
    Upon reading the txt file, I noticed useful information within the image files.
+
+   ![clue](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2021.07.45.png)
 
    To investigate these image files, I used `binwalk` because I found that it is a tool for searching a given image for embeded files and executable code.
 
