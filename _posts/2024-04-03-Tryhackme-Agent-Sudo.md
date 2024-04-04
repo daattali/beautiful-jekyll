@@ -42,15 +42,15 @@ author: Lantana Park
 
    First, I made an repeater on the `GET` request for sending repeating `GET` requests by changing `user-agent` under `A`, `B`, `C`.
 
-   When I changed it is `A` and `B`, there is no different response with `200` status.
+   When I changed it is `A` and `B`, there was no different response with `200` status.
 
    ![A](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-03%20at%2010.38.57.png)
 
-   Fortunately, once I send request under `user-agent` `C`, I could get different response with `302` status.
+   Fortunately, once I sent a request under `user-agent` `C`, I could get different response with `302` status.
 
    ![C](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-02%20at%2012.49.32.png)
 
-   In this response above, I found that there is a `agent_C_attention.php` hidden redirected location. So, I visited this page on the browser.
+   In this response above, I found that there was a `agent_C_attention.php` hidden redirected location. So, I visited this page on the browser.
 
    ![chris](/assets/img/tryhackme/agentSudo/Screenshot%202024-04-02%20at%2023.42.54.png)
 
