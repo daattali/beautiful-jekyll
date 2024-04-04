@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: Jason Benassi
 
 # Your name to show in the footer
-author: Some Person
+author: Jason Benassi
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -136,7 +136,7 @@ navbar-var-length: false
 navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
+page-col: "#000F09"
 text-col: "#404040"
 link-col: "#008AFF"
 hover-col: "#0085A1"
