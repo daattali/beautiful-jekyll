@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My Testwebsite
+title: Ramon's Blog 
 
 # Your name to show in the footer
 author: Ramon
@@ -56,7 +56,7 @@ social-network-links:
   github: daattali
   twitter: daattali
   patreon: DeanAttali
-  youtube: "@daattali"
+#  youtube: "@daattali"
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
