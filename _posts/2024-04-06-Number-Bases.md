@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number bases - Essential math
-subtitle: In order to understand crypto, I had a deep dive into number bases
+subtitle: In order to understand crypto, let's deep dive into number bases
 # cover-img: /assets/img/banditlogo.png
 thumbnail-img: /assets/img/crypto/crypto.png
 # share-img: /assets/img/path.jpg
@@ -40,10 +40,10 @@ For example,
 
 If I convert `1011` into decimal
 
-1 _ 2^0 = 1
-1 _ 2^1 = 2
-0 _ 2^2 = 0
-1 _ 2^3 = 8
+1 X 2^0 = 1
+1 X 2^1 = 2
+0 X 2^2 = 0
+1 X 2^3 = 8
 
 ---
 
@@ -77,8 +77,8 @@ For example,
 
 If I convert `23` into decimal
 
-3 _ 4^0 = 3 _ 1 = 3
-2 _ 4^1 = 2 _ 4 = 8
+3 X 4^0 = 3 X 1 = 3
+2 X 4^1 = 2 X 4 = 8
 
 ---
 
