@@ -40,10 +40,10 @@ For example,
 
 If I convert `1011` into decimal
 
-1 X 2^0 = 1
-1 X 2^1 = 2
-0 X 2^2 = 0
-1 X 2^3 = 8
+- 1 X 2^0 = 1
+- 1 X 2^1 = 2
+- 0 X 2^2 = 0
+- 1 X 2^3 = 8
 
 ---
 
@@ -77,8 +77,8 @@ For example,
 
 If I convert `23` into decimal
 
-3 X 4^0 = 3 X 1 = 3
-2 X 4^1 = 2 X 4 = 8
+- 3 X 4^0 = 3 X 1 = 3
+- 2 X 4^1 = 2 X 4 = 8
 
 ---
 
@@ -92,10 +92,10 @@ I can represent like 23<sub>4</sub> = 11
 
 Computers represent and process all information using just two digits: 0, 1. These digits, known as bits, correspond to low (0) and high (1) voltage states in the computer hardware, enabling data storage and processing.
 
-1 Kilobyte(1KB) 2^10 = 1,024
-1 Megabyte(1MB) 2^20 = 1,048,576
-1 Gigabyte(1GB) 2^30 = 1,073,741,824
-1 Terabyte(1TB) 2^40 = 1,099,511,627,776
+- 1 Kilobyte(1KB) 2^10 = 1,024
+- 1 Megabyte(1MB) 2^20 = 1,048,576
+- 1 Gigabyte(1GB) 2^30 = 1,073,741,824
+- 1 Terabyte(1TB) 2^40 = 1,099,511,627,776
 
 # Hexadecimal
 
