@@ -205,6 +205,87 @@ Thus, **4D 61 69 6E** in hexadecimal is **Main** in text string based on ASCII
 
 ![ASCII](/assets/img/crypto/Screenshot%202024-04-07%20at%2011.42.23.png)
 
+# What is Base 64?
+
+Base 2, 4, and 10 are used for numerical representation and arithmetic operations. Base 64, however, is used for encoding binary data into a textual format, serving as a bridge between binary data and systems that handle text.
+
+To show how it encode binary data, I am going to encode `lantana` using base64
+
+1. Convert Characters to ASCII values
+
+![ASCII](/assets/img/crypto/Screenshot%202024-04-07%20at%2011.42.23.png)
+
+l = 108</br>
+a = 97</br>
+n = 110</br>
+t = 116</br>
+a = 97</br>
+n = 110</br>
+a = 97
+
+2. Convert ASCII values to binary
+
+I used arithmetic method to convert the ASCII values to binary
+
+For instance, in the `108` value
+
+108 / 2 = 54 remainder 0
+54 / 2 = 27 remainder 0
+27 / 2 = 13 remainder 1
+13 / 2 = 6 remainder 1
+6 / 2 = 3 remainder 0
+3 / 2 = 1 remainder 1
+1 / 2 = 0 remainder 1
+
+And then appended `0` to represent this converted binary value as a full byte(8 bits)
+
+`108` can be converted into `01101100`
+
+108 = 01101100</br>
+97 = 01100001</br>
+110 = 01101110</br>
+116 = 01110100</br>
+97 = 01100001</br>
+110 = 01101110</br>
+97 = 01100001
+
+3. Concatenate Binary Values
+
+I concatenated the binary strings into one long string.
+
+`01101100 01100001 01101110 01110100 01100001 01101110 01100001`
+
+4. Divide into 6-bit Groups
+
+I divide this concatenated binary string into 6-bit groups. If the total number of bits isn't a multiple of 6 digits, I padded it with zeros on the right
+
+`011011 000110 000101 101110 011101 000110 000101 101110 011000 01` (Division)
+
+`011011 000110 000101 101110 011101 000110 000101 101110 011000 010000` (Padding to ensure 6 digits in wach group)
+
+5. Convert Each 6-bit Group to a Base64 Value
+
+Using the Base64 index talbe, I converted each 6-digit group to its corresponding Base64 character.
+
+011011 = b</br>
+000110 = G</br>
+000101 = F</br>
+101110 = u</br>
+011101 = t</br>
+000110 = G</br>
+000101 = F</br>
+101110 = u</br>
+011000 = Y</br>
+010000 = Q
+
+`bGFudGFuYQ`
+
+6. Padding the Base64 encoded string
+
+Since the original binary string didn't divide evenly into 6-bit groups, I added two "=" characters to the end of the Base64 string to indicate the padding.
+
+`bGFudGFuYQ==`
+
 # The modulo operator
 
 With modular arithmetic, we can convert freely each numeral method.
