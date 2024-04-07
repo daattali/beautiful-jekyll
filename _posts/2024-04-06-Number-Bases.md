@@ -26,7 +26,7 @@ Since number bases are fundamental concept in computer science that underpins ev
 
 ## How to count numbers in Binary(Base 2) and covert to Decimal(Base10)
 
-**Base 2** is a numeric method of representing numbers using only two numbers **0, 1.** This is foundational to digital computing and eletronics, as it reflects state of computer hardware conponents, which can be either **off(0)** or **on(1)**. knowing binary helps programmers understand how a computer "thinks" and processes information at the most fundamental level. It's especially used in creating and optimizing programs that work closely with the computer's hardware.
+**Base 2** is a numeric method of representing numbers using only two numbers, **0** and **1**. This is foundational to digital computing and eletronics, as it reflects state of computer hardware conponents, which can be either **off(0)** or **on(1)**. knowing binary helps programmers understand how a computer "thinks" and processes information at the most fundamental level. It's especially used in creating and optimizing programs that work closely with the computer's hardware.
 
 **Base 10** is a nummeric method of representting numbers using 10 digit numbers from **0 to 9**. Even though computers naturally "speak" and "think" in binary, they need to interact with humans who use the decimal numeral system. So, when we're making software that people will use, such as apps on a phone or computer programs, we often work in decimal to make inputs (like typing numbers into a calculator app) and outputs (like seeing your bank balance) understandable.
 
@@ -239,6 +239,8 @@ And then I can read off by reading **backwards** along the remainders
 
 The concept of "Bicimals", refers to the way fractional numbers are represented in binary (Base2).
 
+In short, the digits after the decimal point are called "bicimals"
+
 For example, when we represent 12.75(adding decimals after the decimal point) === 1275/100
 
 in Base 10(decimal),
@@ -264,3 +266,7 @@ When I try to represent 0.3 (or 3/10) in binary, I ended up with a series that g
 I made an example using javaScript because it uses binary floating-point for numeric values, which leads to the same kind of precision issues.
 
 ![greatExample](/assets/img/crypto/Screenshot%202024-04-07%20at%2014.56.13.png)
+
+However, computer represent 0.5 precisely. Because, to perfectly represent 0.5 (which is half of 1) in binary, we only need one digit after the decimal point, making the binary number 0.1. This shows us that binary 0.1 is exactly equal to decimal 0.5, hence the answer to the question is 1.
+
+![greatExample2](/assets/img/crypto/Screenshot%202024-04-07%20at%2016.18.35.png)
