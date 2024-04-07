@@ -172,12 +172,12 @@ Furthermore, hexadecimal can be translated into text string using ASCII (America
 
     - Each pair of hexadecimal digits represents one byte (8 bits), and in the context of text, one byte usually corresponds to one character in the ASCII table. For example, in **4D 61 69 6E**:
 
-      **4D** is one byte<br/>
-      **61** is one byte<br/>
-      **69** is one byte<br/>
-      **6e** is one byte
+    **4D** is one byte<br/>
+    **61** is one byte<br/>
+    **69** is one byte<br/>
+    **6e** is one byte
 
-      2<sup>4</sup> = 8 bits
+    2<sup>4</sup> = 8 bits
 
 2.  Convert hexadecimal to decimal
 
