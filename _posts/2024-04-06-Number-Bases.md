@@ -267,7 +267,7 @@ To show how it encode binary data, I am going to encode `lantana` using base64
 
    Using the Base64 index talbe, I converted each 6-digit group to its corresponding Base64 character.
 
-   ![Base64](/assets/img/crypto/Screenshot%202024-04-07%20at%2016.18.35.png)
+   ![Base64](/assets/img/crypto/Base_64_table_index.png)
 
    011011 = b<br/>
    000110 = G<br/>
