@@ -16,6 +16,14 @@ Since number bases are fundamental concept in computer science that underpins ev
 
 # How to count the bases(Base 2, Base 4 and Base 10)?
 
+## What is bit and byte?
+
+- **Bit** is a binary digit because it is alway on one of two states(0 - low voltage, 1 - high voltage).
+
+- **Byte** is a group of binary digits or bits, consisting 8 digits in binary.
+
+![difference](/assets/img/crypto/bits-and-bytes-units-of-data_1_en.jpeg)
+
 ## How to count numbers in Binary(Base 2) and covert to Decimal(Base10)
 
 **Base 2** is a numeric method of representing numbers using only two numbers **0, 1.** This is foundational to digital computing and eletronics, as it reflects state of computer hardware conponents, which can be either **off(0)** or **on(1)**. knowing binary helps programmers understand how a computer "thinks" and processes information at the most fundamental level. It's especially used in creating and optimizing programs that work closely with the computer's hardware.
