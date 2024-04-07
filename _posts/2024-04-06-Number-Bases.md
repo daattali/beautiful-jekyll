@@ -5,7 +5,7 @@ subtitle: In order to understand basic crypto, let's deep dive into number bases
 # cover-img: /assets/img/banditlogo.png
 thumbnail-img: /assets/img/crypto/crypto.png
 # share-img: /assets/img/path.jpg
-tags: [Number bases, cryto, computer basics]
+tags: [number bases, crypto, computer basics]
 comments: true
 author: Lantana Park
 ---
