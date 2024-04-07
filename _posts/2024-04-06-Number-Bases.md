@@ -18,7 +18,7 @@ Since number bases are fundamental concept in computer science that underpins ev
 
 ## How to count numbers in Binary(Base 2) and covert to Decimal(Base10)
 
-**Base 2** is a numeric method of representing numbers using only two numbers **0, 1.** This is foundational to digital computing and eletronics, as it reflects state of computer hardware conponents, which can be either off(0) or on (1). knowing binary helps programmers understand how a computer "thinks" and processes information at the most fundamental level. It's especially used in creating and optimizing programs that work closely with the computer's hardware.
+**Base 2** is a numeric method of representing numbers using only two numbers **0, 1.** This is foundational to digital computing and eletronics, as it reflects state of computer hardware conponents, which can be either **off(0)** or **on(1)**. knowing binary helps programmers understand how a computer "thinks" and processes information at the most fundamental level. It's especially used in creating and optimizing programs that work closely with the computer's hardware.
 
 **Base 10** is a nummeric method of representting numbers using 10 digit numbers from **0 to 9**. Even though computers naturally "speak" and "think" in binary, they need to interact with humans who use the decimal numeral system. So, when we're making software that people will use, such as apps on a phone or computer programs, we often work in decimal to make inputs (like typing numbers into a calculator app) and outputs (like seeing your bank balance) understandable.
 
@@ -214,7 +214,7 @@ If I convert **11(decimal)** into **binary(base2)**
 2/2 = 1r**0**<br/>
 1/2 = 0r**1**<br/>
 
-And then I can read off by reading backwards along the remainders
+And then I can read off by reading **backwards** along the remainders
 
 **11** in Decimal **1011<sub>2</sub>**
 
@@ -223,10 +223,36 @@ Moreover, if I change 11(Decimal) into Quaternary(Base 4)
 11/4 = 2R**3**<br/>
 2/4 = 0R**2**<br/>
 
-And then I can read off by reading backwards along the remainders
+And then I can read off by reading **backwards** along the remainders
 
 **11** in Decimal is converted into <sub>23</sub>4
 
 # Bicimals: fractional quantities in binary
 
+The concept of "Bicimals", refers to the way fractional numbers are represented in binary (Base2).
+
+For example, when we represent 12.75(adding decimals after the decimal point) === 1275/100
+
+in Base 10(decimal),
+
+(1 X 10) + (2 X 1) + (7 X 0.1) + (5 X 0.01) = 12.75
+
+in Base 2(binary) 1100.11 can be calculated to 12.75
+
+(1 X 8) + (1 X 4) + (0 X 2) + (0 X 1) + (1 X 1/2) + (1 X 1/4)
+
+= 8 + 4 + 1/2(0.5) + 1/4(0.25)
+
+= 12 + 3/4(0.75)
+
+= 12.75
+
+So, the binary coding of 12.75 is 1100.11<sub>2</sub>
+
 # Binary cannot store all decimal numbers
+
+When I try to represent 0.3 (or 3/10) in binary, I ended up with a series that goes on forever: 0.30000000000000004... and so on. This series is binary's attempt to get as close as possible to 0.3 but it never quite gets there, just like we cannot never perfectly fill a square box with round oranges.
+
+I made an example using javaScript because it uses binary floating-point for numeric values, which leads to the same kind of precision issues.
+
+![greatExample](/assets/img/crypto/Screenshot%202024-04-07%20at%2014.56.13.png)
