@@ -42,9 +42,9 @@ For example,
 
 If I convert `1011` into decimal
 
-1 X 2^0 = 1..
-1 X 2^1 = 2..
-0 X 2^2 = 0..
+1 X 2^0 = 1<br/>
+1 X 2^1 = 2<br/>
+0 X 2^2 = 0<br/>
 1 X 2^3 = 8
 
 ---
@@ -196,6 +196,8 @@ Furthermore, hexadecimal can be translated into text string using ASCII (America
 Thus, **4D 61 69 6E** in hexadecimal is **Main** in text string based on ASCII
 
 ![ASCII](/assets/img/crypto/Screenshot%202024-04-07%20at%2011.42.23.png)
+
+
 
 # The modulo operator
 
