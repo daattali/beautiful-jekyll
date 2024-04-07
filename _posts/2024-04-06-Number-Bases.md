@@ -261,7 +261,7 @@ To show how it encode binary data, I am going to encode `lantana` using base64
 
    `011011 000110 000101 101110 011101 000110 000101 101110 011000 01` (Division)
 
-   `011011 000110 000101 101110 011101 000110 000101 101110 011000 010000` (Padding to ensure 6 digits in wach group)
+   `011011 000110 000101 101110 011101 000110 000101 101110 011000 010000` (Padding to ensure 6 digits in this divided group)
 
 5. Convert Each 6-bit Group to a Base64 Value
 
