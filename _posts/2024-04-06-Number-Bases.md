@@ -73,7 +73,7 @@ It is a numertic method of representing numbers using four different numbers **0
 - **Base 4: 23 -- Base 10: 11**
 - Base 4: 30 -- Base 10: 12
 
-In order to convert Base 4 into Decimal, I can multiply each digit by its place value and sum the results.
+In order to convert Quaternary(Base 4) into Decimal(Base 10), I can multiply each digit by its place value and sum the results.
 
 For example,
 
@@ -86,7 +86,7 @@ If I convert `23` into decimal
 
 3 + 8 = 11
 
-In other notation of Base 4,
+In other notation of Quaternary(Base 4),
 
 I can represent like 23<sub>4</sub> = 11
 
@@ -94,10 +94,10 @@ I can represent like 23<sub>4</sub> = 11
 
 Computers represent and process all information using just two digits: 0, 1. These digits, known as bits, correspond to low (0) and high (1) voltage states in the computer hardware, enabling data storage and processing.
 
-1 Kilobyte(1KB) 2^10 = 1,024<br/>
-1 Megabyte(1MB) 2^20 = 1,048,576<br/>
-1 Gigabyte(1GB) 2^30 = 1,073,741,824<br/>
-1 Terabyte(1TB) 2^40 = 1,099,511,627,776
+1 Kilobyte(1KB) 2<sup>10</sup> = 1,024<br/>
+1 Megabyte(1MB) 2<sup>20</sup> = 1,048,576<br/>
+1 Gigabyte(1GB) 2<sup>30</sup> = 1,073,741,824<br/>
+1 Terabyte(1TB) 2<sup>40</sup> = 1,099,511,627,776
 
 # Hexadecimal
 
@@ -113,7 +113,7 @@ Here's how the digits in hexadecimal correspond to decimal values:
 - E represents 14(decimal)
 - F represents 15(decimal)
 
-Hexadecimal is particularly useful in computer science and digital electronics because it provides a more human-friendly way of representing binary data. Since 16 is a power of 2 (specifically, 2^4), each hexadecimal digit can represent four binary digits (bits). This makes conversion between binary and hexadecimal straightforward and much easier than converting between binary and decimal. For instance, the binary sequence 1010 1101 is easily broken down into two groups of four (1010 and 1101), which directly convert to hexadecimal digits AD.
+Hexadecimal is particularly useful in computer science and digital electronics because it provides a more human-friendly way of representing binary data. Since 16 is a power of 2 (specifically, 2<sup>4</sup>), each hexadecimal digit can represent four binary digits (bits). This makes conversion between binary and hexadecimal straightforward and much easier than converting between binary and decimal. For instance, the binary sequence 1010 1101 is easily broken down into two groups of four (1010 and 1101), which directly convert to hexadecimal digits AD.
 
 ## Translate binary into hexadecimal vice versa
 
@@ -177,7 +177,7 @@ Furthermore, hexadecimal can be translated into text string using ASCII (America
       **69** is one byte<br/>
       **6e** is one byte
 
-      2^4 = 8 bits
+      2<sup>4</sup> = 8 bits
 
 2.  Convert hexadecimal to decimal
 
@@ -199,7 +199,33 @@ Thus, **4D 61 69 6E** in hexadecimal is **Main** in text string based on ASCII
 
 # The modulo operator
 
+With modular arithmetic, we can convert freely each numeral method.
+
+The picture below is to understand what is modular arithmetic.
+
+![modular](/assets/img/crypto/Screenshot%202024-04-07%20at%2013.28.07.png)
+
 # Converting from decimal to other bases
+
+If I convert **11(decimal)** into **binary(base2)**
+
+11/2 = 5R**1**<br/>
+5/2 = 2r**1**<br/>
+2/2 = 1r**0**<br/>
+1/2 = 0r**1**<br/>
+
+And then I can read off by reading backwards along the remainders
+
+**11** in Decimal **1011<sub>2</sub>**
+
+Moreover, if I change 11(Decimal) into Quaternary(Base 4)
+
+11/4 = 2R**3**<br/>
+2/4 = 0R**2**<br/>
+
+And then I can read off by reading backwards along the remainders
+
+**11** in Decimal is converted into <sub>23</sub>4
 
 # Bicimals: fractional quantities in binary
 
