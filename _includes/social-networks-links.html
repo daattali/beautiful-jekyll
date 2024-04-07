@@ -379,6 +379,18 @@
   </li>
   {%- endif -%}
 
+  {%- if network[0] == "untappd" -%}
+  <li class="list-inline-item">
+    <a href="https://untappd.com/user/{{ network[1] }}" title="Untappd">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-untappd fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Untappd</span>
+   </a>
+  </li>
+  {%- endif -%}
+
 {%- endfor -%}
 
 </ul>
