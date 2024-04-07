@@ -114,6 +114,7 @@ Here's how the digits in hexadecimal correspond to decimal values:
 - F represents 15(decimal)
 
 Hexadecimal is particularly useful in computer science and digital electronics because it provides a more human-friendly way of representing binary data. Since 16 is a power of 2 (specifically, 2<sup>4</sup>), each hexadecimal digit can represent four binary digits (bits). This makes conversion between binary and hexadecimal straightforward and much easier than converting between binary and decimal.
+
 ## Translate binary into hexadecimal vice versa
 
 Translating between binary (base 2) and hexadecimal (base 16) is a straightforward process because each hexadecimal digit exactly corresponds to four binary digits (bits). Here I can show you how these can be traslated each other.
