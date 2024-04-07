@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Ramon's Blog 
+title: Ramons Blog 
 
 # Your name to show in the footer
 author: Ramon
@@ -20,11 +20,11 @@ author: Ramon
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  About Me: "Über mich"
+  #Resources:
+    #- Beautiful Jekyll: "https://beautifuljekyll.com"
+    #- Learn markdown: "https://www.markdowntutorial.com/"
+  #Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -50,12 +50,12 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  #email: "someone@example.com"
-  #rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  #facebook: deanattali
+#  email: "someone@example.com"
+#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+#  facebook: deanattali
   github: gtxmen
   twitter: RamonFranke
-  #patreon: DeanAttali
+#  patreon: DeanAttali
 #  youtube: "@daattali"
 #  medium: yourname
 #  reddit: yourname
@@ -75,7 +75,7 @@ social-network-links:
 #  bluesky: yourname
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
-#  discord: "invite_code" or "users/userid" or "invite/invite_code" 
+   discord: "gtxmen"
 #  kaggle: yourname
 #  hackerrank: yourname
 #  gitlab: yourname
