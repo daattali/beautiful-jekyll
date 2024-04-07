@@ -215,12 +215,18 @@ To show how it encode binary data, I am going to encode `lantana` using base64
 
    ![ASCII](/assets/img/crypto/Screenshot%202024-04-07%20at%2011.42.23.png)
 
-   l = 108</br>
-   a = 97</br>
-   n = 110</br>
-   t = 116</br>
-   a = 97</br>
-   n = 110</br>
+   l = 108
+
+   a = 97
+
+   n = 110
+
+   t = 116
+
+   a = 97
+
+   n = 110
+
    a = 97
 
 2. Convert ASCII values to binary
@@ -230,23 +236,35 @@ To show how it encode binary data, I am going to encode `lantana` using base64
    For instance, in the `108` value
 
    108 / 2 = 54 remainder 0
+
    54 / 2 = 27 remainder 0
+
    27 / 2 = 13 remainder 1
+
    13 / 2 = 6 remainder 1
+
    6 / 2 = 3 remainder 0
+
    3 / 2 = 1 remainder 1
+
    1 / 2 = 0 remainder 1
 
    And then appended `0` to represent this converted binary value as a full byte(8 bits)
 
    `108` can be converted into `01101100`
 
-   108 = 01101100</br>
-   97 = 01100001</br>
-   110 = 01101110</br>
-   116 = 01110100</br>
-   97 = 01100001</br>
-   110 = 01101110</br>
+   108 = 01101100
+
+   97 = 01100001
+
+   110 = 01101110
+
+   116 = 01110100
+
+   97 = 01100001
+
+   110 = 01101110
+
    97 = 01100001
 
 3. Concatenate Binary Values
@@ -269,15 +287,24 @@ To show how it encode binary data, I am going to encode `lantana` using base64
 
    ![Base64](/assets/img/crypto/Screenshot%202024-04-07%20at%2016.18.35.png)
 
-   011011 = b</br>
-   000110 = G</br>
-   000101 = F</br>
-   101110 = u</br>
-   011101 = t</br>
-   000110 = G</br>
-   000101 = F</br>
-   101110 = u</br>
-   011000 = Y</br>
+   011011 = b
+
+   000110 = G
+
+   000101 = F
+
+   101110 = u
+
+   011101 = t
+
+   000110 = G
+
+   000101 = F
+
+   101110 = u
+
+   011000 = Y
+
    010000 = Q
 
    `bGFudGFuYQ`
