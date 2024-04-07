@@ -42,10 +42,10 @@ For example,
 
 If I convert `1011` into decimal
 
-1 X 2^0 = 1<br/>
-1 X 2^1 = 2<br/>
-0 X 2^2 = 0<br/>
-1 X 2^3 = 8
+1 X 2<sup>0</sup> = 1<br/>
+1 X 2<sup>1</sup> = 2<br/>
+0 X 2<sup>2</sup> = 0<br/>
+1 X 2<sup>3</sup> = 8
 
 ---
 
@@ -79,8 +79,8 @@ For example,
 
 If I convert `23` into decimal
 
-3 X 4^0 = 3 X 1 = 3..
-2 X 4^1 = 2 X 4 = 8
+3 X 4<sup>0</sup> = 3 X 1 = 3<br/>
+2 X 4<sup>1</sup> = 2 X 4 = 8
 
 ---
 
@@ -94,10 +94,10 @@ I can represent like 23<sub>4</sub> = 11
 
 Computers represent and process all information using just two digits: 0, 1. These digits, known as bits, correspond to low (0) and high (1) voltage states in the computer hardware, enabling data storage and processing.
 
-- 1 Kilobyte(1KB) 2^10 = 1,024
-- 1 Megabyte(1MB) 2^20 = 1,048,576
-- 1 Gigabyte(1GB) 2^30 = 1,073,741,824
-- 1 Terabyte(1TB) 2^40 = 1,099,511,627,776
+1 Kilobyte(1KB) 2^10 = 1,024<br/>
+1 Megabyte(1MB) 2^20 = 1,048,576<br/>
+1 Gigabyte(1GB) 2^30 = 1,073,741,824<br/>
+1 Terabyte(1TB) 2^40 = 1,099,511,627,776
 
 # Hexadecimal
 
@@ -159,9 +159,9 @@ Hexadecimal: **1A3F**
 
 1. Convert each hexadecimal digit to binary:
 
-1 (hexadecimal) = 0001 (binary)..
-A (hexadecimal) = 1010 (binary)..
-3 (hexadecimal) = 0011 (binary)..
+1 (hexadecimal) = 0001 (binary)<br/>
+A (hexadecimal) = 1010 (binary)<br/>
+3 (hexadecimal) = 0011 (binary)<br/>
 F (hexadecimal) = 1111 (binary)
 
 Therefore, **1A3F** in hexadecimal is **0001101000111111** in binary.
@@ -172,32 +172,30 @@ Furthermore, hexadecimal can be translated into text string using ASCII (America
 
     - Each pair of hexadecimal digits represents one byte (8 bits), and in the context of text, one byte usually corresponds to one character in the ASCII table. For example, in **4D 61 69 6E**:
 
-      **4D** is one byte..
-      **61** is one byte..
-      **69** is one byte..
+      **4D** is one byte<br/>
+      **61** is one byte<br/>
+      **69** is one byte<br/>
       **6e** is one byte
 
       2^4 = 8 bits
 
 2.  Convert hexadecimal to decimal
 
-        4D → 77..
-        61 → 97..
-        69 → 105..
-        6E → 110
+    4D → 77<br/>
+    61 → 97<br/>
+    69 → 105<br/>
+    6E → 110
 
 3.  Look up each decimal value in the ASCII table below to get the corresponding character
 
-        77 → M..
-        97 → a..
-        105 → i..
-        110 → n
+    77 → M<br/>
+    97 → a<br/>
+    105 → i<br/>
+    110 → n
 
 Thus, **4D 61 69 6E** in hexadecimal is **Main** in text string based on ASCII
 
 ![ASCII](/assets/img/crypto/Screenshot%202024-04-07%20at%2011.42.23.png)
-
-
 
 # The modulo operator
 
