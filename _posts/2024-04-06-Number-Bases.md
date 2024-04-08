@@ -63,7 +63,7 @@ In other notation of Base 2,
 
 I can represent like 1011<sub>2</sub> = 11
 
-## How to count numbers in Quanternary(Base 4) and convert to decimal (Base 10)
+## How to count numbers in quaternary(Base 4) and convert to decimal (Base 10)
 
 It is a numertic method of representing numbers using four different numbers **0, 1, 2, 3**.
 
@@ -81,7 +81,7 @@ It is a numertic method of representing numbers using four different numbers **0
 - **Base 4: 23 -- Base 10: 11**
 - Base 4: 30 -- Base 10: 12
 
-In order to convert Quaternary(Base 4) into Decimal(Base 10), I can multiply each digit by its place value and sum the results.
+In order to convert quaternary(Base 4) into Decimal(Base 10), I can multiply each digit by its place value and sum the results.
 
 For example,
 
@@ -94,7 +94,7 @@ If I convert `23` into decimal
 
 3 + 8 = 11
 
-In other notation of Quaternary(Base 4),
+In other notation of quaternary(Base 4),
 
 I can represent like 23<sub>4</sub> = 11
 
@@ -309,7 +309,7 @@ And then I can read off by reading **backwards** along the remainders
 
 **11** in Decimal **1011<sub>2</sub>**
 
-Moreover, if I change 11(Decimal) into Quaternary(Base 4)
+Moreover, if I change 11(Decimal) into quaternary(Base 4)
 
 11/4 = 2R**3**<br/>
 2/4 = 0R**2**<br/>
