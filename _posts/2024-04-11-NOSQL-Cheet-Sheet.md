@@ -92,8 +92,7 @@ distrubution is important in Nosql because of its characteristics. It relys on h
 
 MongoDB is classified as a **CP** data store. Because it resolves network partitions by maintaining consistency, while compromising on availability.
 
-MongoDB uses the single master node that receives all write operations. The primary node is the source of truth for all data writes. When the primary node becomes unavailable, the secondary node, replicated from the primary node(Consistency), will be elected as the new primary node. 
-
+MongoDB uses the single master node that receives all write operations. The primary node is the source of truth for all data writes. When the primary node becomes unavailable, the secondary node, replicated from the primary node(Consistency), will be elected as the new primary node.
 
 # Search and indexing in NoSQL databases
 
