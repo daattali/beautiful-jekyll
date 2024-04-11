@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NOSQL assessment cheat sheet
-subtitle: In order to get prepared to NOSQL database (particularly MongoDB), I made a cheat sheet
+subtitle: Let's geting prepared to NOSQL database (particularly MongoDB)
 # cover-img: /assets/img/banditlogo.png
 # thumbnail-img: /assets/img/crypto/crypto.png
 # share-img: /assets/img/path.jpg
