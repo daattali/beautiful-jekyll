@@ -107,6 +107,12 @@ Computers represent and process all information using just two digits: 0, 1. The
 1 Gigabyte(1GB) 2<sup>30</sup> = 1,073,741,824<br/>
 1 Terabyte(1TB) 2<sup>40</sup> = 1,099,511,627,776
 
+## In Kilobyte, why it is 1024, not 1000.
+
+In most contexts outside of computing, the prefix "kilo-" refers to a thousand units(1000). For example, a kilogram means 1000 grams. However, within the realm of computing, 'kilobyte' has historically often referred to 1024 bytes instead of 1000.
+
+**It is based on the way computers process information. Computers operates on a binary system, using only ones and zeros.**
+
 # Hexadecimal
 
 Hexadecimal, also known as **base 16**, is a numeral method that extends beyond the familiar decimal (base 10) method by using sixteen distinct symbols for its digits instead of ten. While the decimal system uses the digits 0 through 9, the hexadecimal system uses 0 through 9 to represent values zero to nine, and then it uses the letters A through F to represent values ten to fifteen. Hexadecimal acts as a bridge between the binary world of computers and the more understandable decimal system for humans. It's much easier to read and write for us, especially when dealing with large amounts of binary data, because it makes a compact way to write longer binary sequences.
