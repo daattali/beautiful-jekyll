@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NOSQL assessment cheat sheet
-subtitle: Let's geting prepared to NOSQL database (particularly MongoDB)
+subtitle: Let's getting prepared to NOSQL database (particularly MongoDB)
 # cover-img: /assets/img/banditlogo.png
 # thumbnail-img: /assets/img/crypto/crypto.png
 # share-img: /assets/img/path.jpg
@@ -52,7 +52,7 @@ author: Lantana Park
 
 ## advantages of Nosql
 
-1.  Scalability
+1.  Scalability (Horizontal)
 
     NoSQL, especially MongoDB, designed for horizontal scalability. That means NoSQL database like MongoDB can handle large volumes of data by distributing it across multiple servers (sharding). That makes it easier to scale out (horizontal scaling). Thus, since it provides horizontal scalability, it allows me to use of cheaper and standard machines and can be more cost-efficient at scale.
 
@@ -90,9 +90,10 @@ distrubution is important in Nosql because of its characteristics. It relys on h
 
 ## MongoDB and the CAP theorem
 
-Relative to the CAP theorem, MongoDB is a CP data store—it resolves network partitions by maintaining consistency, while compromising on availability.
+MongoDB is classified as a **CP** data store. Because it resolves network partitions by maintaining consistency, while compromising on availability.
 
-MongoDB is a single-master system—each replica set can have only one primary node that receives all the write operations. All other nodes in the same replica set are secondary nodes that replicate the primary node's operation log and apply it to their own data set. By default, clients also read from the primary node, but they can also specify a read preference that allows them to read from secondary nodes.
+MongoDB uses the single master node that receives all write operations. The primary node is the source of truth for all data writes. When the primary node becomes unavailable, the secondary node, replicated from the primary node(Consistency), will be elected as the new primary node. 
+
 
 # Search and indexing in NoSQL databases
 
