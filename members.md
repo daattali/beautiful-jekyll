@@ -78,6 +78,9 @@ members:
           - name: Ziyu Wang
             photo_url: /img/members/Ziyu_Wang.jpg
             web_url: 
+          - name: Chialing Kuo
+            photo_url: /img/members/chialiang.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/chia-liang-kuo/
   - name: <a name="alumni"></a>Alumni
     list:
       - name: Post-Doc alumni
