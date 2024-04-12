@@ -36,7 +36,7 @@
     - multimodal
 
 - abs: The ability to identify important objects in a complex and dynamic driving environment is essential for autonomous driving agents to make safe and efficient driving decisions. It also helps assistive driving systems decide when to alert drivers. We tackle object importance estimation in a data-driven fashion and introduce HOIST - Human-annotated Object Importance in Simulated Traffic. HOIST contains driving scenarios with human-annotated importance labels for vehicles and pedestrians. We additionally propose a novel approach that relies on counterfactual reasoning to estimate an object's importance. We generate counterfactual scenarios by modifying the motion of objects and ascribe importance based on how the modifications affect the ego vehicle's driving. Our approach outperforms strong baselines for the task of object importance estimation on HOIST. We also perform ablation studies to justify our design choices and show the significance of the different components of our proposed approach.
-  authors: Pranay Gupta and Abhijat Biswas and Henny Admoni and David Held
+  authors: Pranay Gupta, Abhijat Biswas, Henny Admoni, David Held
   award: null
   bib: "@article{gupta2023object,
   \ title={Object Importance Estimation using Counterfactual Reasoning for Intelligent Driving},
