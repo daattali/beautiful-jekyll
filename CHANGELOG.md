@@ -7,6 +7,7 @@
 - Added `author` YAML parameter to allow specifying the author(s) of a post (#1220)
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156)
 - Added social network links for GitLab, Bluesky, Whatsapp, Untappd (#1168, #1218, #1299, #1307)
+- Use CSS variables (#661)
 - Added instructions and example on how to fix image links in project sites (#1171)
 - Pagination buttons: use nicer arrows, and don't show text on small screens (#1221)
 - Updated Yelp URL format - if you previously used the `yelp` social network config parameter, you might need to update the config value (#1259)
