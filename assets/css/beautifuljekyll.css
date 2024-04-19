@@ -11,9 +11,9 @@ html {
 }
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 1.125rem;
-  color: {{ site.text-col | default: "#404040" }};
+  font-family: sans-serif;
+  font-size: 1 rem;
+  color: {{ site.text-col | default: "#000000" }};
   position: relative;
   background-color: {{ site.page-col | default: "#FFFFFF" }};
   {% if site.page-img %}
@@ -33,9 +33,9 @@ p {
   margin: 1.875rem 0;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  line-height: 1.1;
+  font-family: sans-serif;
+  /* font-weight: 600;
+  line-height: 1; */
 }
 h1 {
   font-size: 2.25rem;
