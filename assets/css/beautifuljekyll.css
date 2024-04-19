@@ -38,19 +38,19 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1; */
 }
 h1 {
-  font-size: 2.25rem;
+  font-size: 6.25rem;
 }
 h2 {
-  font-size: 1.875rem;
+  font-size: 6.875rem;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 10;
 }
 h4 {
-  font-size: 1.125rem;
+  font-size: 6.125rem;
 }
 h1, h2, h3, h4 {
-  margin-top: 1.25rem;
+  margin-top: 6.25rem;
 }
 a {
   color: {{ site.link-col | default: "#008AFF" }};
