@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Big Bunch - Spanish Vocabulary Edition
+title: WordBunch - Spanish Vocabulary Edition
 subtitle: Find a bunch of Spanish words.
 ---
 
