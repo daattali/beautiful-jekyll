@@ -73,7 +73,7 @@
   site: https://sites.google.com/view/reldist-iclr-2023
   title: "Deep SE(3)-Equivariant Geometric Reasoning for Precise Placement Tasks"
   venue: International Conference on Learning Representations (ICLR), 2024
-  video_embed: null
+  video_embed: https://recorder-v3.slideslive.com/?share=92250&s=b9f932be-9352-4ef2-bcd2-56eea1e15aef
   tags:
       - geometric_reasoning
 - abs: Safe Reinforcement Learning (RL) plays an important role in applying RL algorithms to safety-critical real-world applications, addressing the trade-off between maximizing rewards and adhering to safety constraints. This work introduces a novel approach that combines RL with trajectory optimization to manage this trade-off effectively. Our approach embeds safety constraints within the action space of a modified Markov Decision Process (MDP). The RL agent produces a sequence of actions that are transformed into safe trajectories by a trajectory optimizer, thereby effectively ensuring safety and increasing training stability. This novel approach excels in its performance on challenging Safety Gym tasks, achieving significantly higher rewards and near-zero safety violations during inference. The method's real-world applicability is demonstrated through a safe and effective deployment in a real robot task of box-pushing around obstacles.
