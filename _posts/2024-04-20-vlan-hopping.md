@@ -29,11 +29,13 @@ Um das Feld Status zuverstehen ist die Vorkenntnis wichtig das noch weitere Swit
 
 //Noch eine Tabelle in der steht welche Zustand (on,off, desirable) bei welche Switchport Konfig zutrifft.
 
-## IST-Zustand
+## Der Versuch
 
+### IST-Zustand
+![Topology](/assets/img/vlan_hopping/cml_topology.png)
 
 Konfig des Interfaces:
----
+~~~
 Switch1#show run int gi0/1
 Building configuration...
 
@@ -43,10 +45,10 @@ interface GigabitEthernet0/1
  description Attk-Kali
  negotiation auto
 end
----
+~~~
 
 .Show int status:
----
+~~~
 Switch1#show int status
 
 Port      Name               Status       Vlan       Duplex  Speed Type 
@@ -54,10 +56,10 @@ Gi0/0                        connected    trunk      a-full   auto RJ45
 Gi0/1     Attk-Kali          connected    1          a-full   auto RJ45
 Gi0/2     Client-Office      connected    10         a-full   auto RJ45
 Gi0/3                        connected    1          a-full   auto RJ45
----
+~~~
 
 .Show int switchport
----
+~~~
 Switch1#show int gi0/1 switchport 
 Name: Gi0/1
 Switchport: Enabled
@@ -86,11 +88,11 @@ Capture VLANs Allowed: ALL
 
 Protected: false
 Appliance trust: none
----
+~~~
 
 
 Ausgabe nach dem Angriff:
-----
+~~~
 Switch1#show int status
 
 Port      Name               Status       Vlan       Duplex  Speed Type 
@@ -126,9 +128,9 @@ Capture VLANs Allowed: ALL
 
 Protected: false
 Appliance trust: none
-----
+~~~
 
----
+~~~
 
 
 ![DAD](/assets/img/ipv6/ipv6_dad_keinedopplung.jpg)
