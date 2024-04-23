@@ -28,44 +28,112 @@ Um das Feld Status zuverstehen ist die Vorkenntnis wichtig das noch weitere Swit
 | auto | desirable | Trunk | DTP-Pakete werden von beiden Switchen gesendet |  
 
 //Noch eine Tabelle in der steht welche Zustand (on,off, desirable) bei welche Switchport Konfig zutrifft.
-### 1. Interface Identifier:
 
-~~~
-Physische Adresse . . . . . . . . : 7C-10-C9-41-1E-90
-gebildete EUI-64 Adresse . . . . .: 7E10:C9FF:FE41:1E90
-~~~
+## IST-Zustand
+
+
+Konfig des Interfaces:
+---
+Switch1#show run int gi0/1
+Building configuration...
+
+Current configuration : 77 bytes
+!
+interface GigabitEthernet0/1
+ description Attk-Kali
+ negotiation auto
+end
+---
+
+.Show int status:
+---
+Switch1#show int status
+
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Gi0/0                        connected    trunk      a-full   auto RJ45
+Gi0/1     Attk-Kali          connected    1          a-full   auto RJ45
+Gi0/2     Client-Office      connected    10         a-full   auto RJ45
+Gi0/3                        connected    1          a-full   auto RJ45
+---
+
+.Show int switchport
+---
+Switch1#show int gi0/1 switchport 
+Name: Gi0/1
+Switchport: Enabled
+Administrative Mode: dynamic auto
+Operational Mode: static access
+Administrative Trunking Encapsulation: negotiate
+Operational Trunking Encapsulation: native
+Negotiation of Trunking: On
+Access Mode VLAN: 1 (default)
+Trunking Native Mode VLAN: 1 (default)
+Administrative Native VLAN tagging: enabled
+Voice VLAN: none
+Administrative private-vlan host-association: none 
+Administrative private-vlan mapping: none 
+Administrative private-vlan trunk native VLAN: none
+Administrative private-vlan trunk Native VLAN tagging: enabled
+Administrative private-vlan trunk encapsulation: dot1q
+Administrative private-vlan trunk normal VLANs: none
+Administrative private-vlan trunk associations: none
+Administrative private-vlan trunk mappings: none
+Operational private-vlan: none
+Trunking VLANs Enabled: ALL
+Pruning VLANs Enabled: 2-1001
+Capture Mode Disabled
+Capture VLANs Allowed: ALL
+
+Protected: false
+Appliance trust: none
+---
+
+
+Ausgabe nach dem Angriff:
+----
+Switch1#show int status
+
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Gi0/0                        connected    trunk      a-full   auto RJ45
+Gi0/1     Attk-Kali          connected    trunk      a-full   auto RJ45
+Gi0/2     Client-Office      connected    10         a-full   auto RJ45
+Gi0/3                        connected    1          a-full   auto RJ45
+Switch1#show int gi0/1 switchport 
+Name: Gi0/1
+Switchport: Enabled
+Administrative Mode: dynamic auto
+Operational Mode: trunk
+Administrative Trunking Encapsulation: negotiate
+Operational Trunking Encapsulation: dot1q
+Negotiation of Trunking: On
+Access Mode VLAN: 1 (default)
+Trunking Native Mode VLAN: 1 (default)
+Administrative Native VLAN tagging: enabled
+Voice VLAN: none
+Administrative private-vlan host-association: none 
+Administrative private-vlan mapping: none 
+Administrative private-vlan trunk native VLAN: none
+Administrative private-vlan trunk Native VLAN tagging: enabled
+Administrative private-vlan trunk encapsulation: dot1q
+Administrative private-vlan trunk normal VLANs: none
+Administrative private-vlan trunk associations: none
+Administrative private-vlan trunk mappings: none
+Operational private-vlan: none
+Trunking VLANs Enabled: ALL
+Pruning VLANs Enabled: 2-1001
+Capture Mode Disabled
+Capture VLANs Allowed: ALL
+
+Protected: false
+Appliance trust: none
+----
+
+---
+
 
 ![DAD](/assets/img/ipv6/ipv6_dad_keinedopplung.jpg)
 
 
 ## Links
 https://de.wikipedia.org/wiki/Dynamic_Trunking_Protocol
-
-## Table Styling in Markdown
-
-<style>
-    .heatMap {
-        width: 70%;
-        text-align: center;
-    }
-    .heatMap th {
-        background: grey;
-        word-wrap: break-word;
-        text-align: center;
-    }
-    .heatMap tr:nth-child(1) { background: red; }
-    .heatMap tr:nth-child(2) { background: orange; }
-    .heatMap tr:nth-child(3) { background: green; }
-</style>
-
-<div class="heatMap">
-
-| Everything | in this table | is Centered | and the table will only take up 70% of the screen width | 
-| -- | -- | -- | -- |
-| This | is | a | Red Row |
-| This | is | an | Orange Row |
-| This | is | a | Green Row |
-
-</div>
-
-Another text
+https://jay-miah.co.uk/index.php/vlan-hopping-concept-attack-example-and-prevention/
