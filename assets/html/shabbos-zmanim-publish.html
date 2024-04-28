@@ -117,28 +117,23 @@
                     <p class="withcomment">הדלקת נרות: <span id="candle-light"></span></p>
                     <small>&rlm;40 דקות לפני השקיעה</small>
                     <p>מנחה וקבלת שבת: <span id="mincha"></span></p>
-                    <div class="framed">
-                        <p style="font-size: 40px;">התפילות מתקיימות<br>ליד חגואל 7, גישה דרך הפארק</p>
-                    </div>
                 </div>
                 <div class="column">
                     <h2>יום שבת</h2>
                     <p>שחרית: 8:40</p>
                     <p>שוכן עד: 9:00</p>
-                    <p class="note">דף היומי עם כיבוד קל <br> לאחר התפילה</p>
-                    <p>אבות ובנים: 17:00</p>
-                    <p>מנחה: 17:30</p>
-                    <p>צאת שבת: <span id="maariv"></span></p>
+                    <small>סוזק"ש: <span id="sofZmanShma"></span></small>
+                    <p class="note">דף היומי עם קידוש <br> לאחר התפילה</p>
+                    <p>מנחה: 18:30</p>
+                    <p>מעריב וצאת שבת: <span id="maariv"></span></p>
                 </div>
             </div>
             <div class="row">
-                <h2>ימי חול</h2>
-                <p class="withcomment">שחרית: 6:30</p>
-                <p>לימוד דף יומי: 20:15</p>
-                <small>התפילות בחול יתקיימו בחניית בניין 13</small>
-
-
+                    <div class="framed">
+                        <p style="font-size: 40px;">התפילות מתקיימות<br>באופן זמני בחניה של בניין 13</p>
+                    </div>
             </div>
+            <h1>שבת שלום לכולם</h1>
 
         </div>
 
@@ -185,7 +180,8 @@
                         // document.getElementById("maarivB").innerHTML = maarivB.toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
 
                         break;
-
+                    case "sofZmanShma":
+                      document.getElementById("sofZmanShma").innerHTML = new Date(element.date).toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
                     default:
                         break;
                 }
