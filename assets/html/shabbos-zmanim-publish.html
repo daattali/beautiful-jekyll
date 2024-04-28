@@ -147,15 +147,7 @@
 
             // Parsing it to JSON format
             const data = await response.json();
-            data.items.forEach(element => {
-                switch (element.category) {
-                    case "sofZmanShma":
-                        document.getElementById("sofZmanShma").innerHTML = new Date(element.date).toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
-                        break;
-                    default:
-                        break;
-                }
-            });
+            document.getElementById("sofZmanShma").innerHTML = new Date(data.times.sofZmanShma).toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
         }
 
         async function getParasha() {
