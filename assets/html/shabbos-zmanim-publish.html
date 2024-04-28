@@ -147,6 +147,15 @@
 
             // Parsing it to JSON format
             const data = await response.json();
+            data.items.forEach(element => {
+                switch (element.category) {
+                    case "sofZmanShma":
+                        document.getElementById("sofZmanShma").innerHTML = new Date(element.date).toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
+                        break;
+                    default:
+                        break;
+                }
+                        
             console.log(data.results);
         }
 
@@ -180,8 +189,6 @@
                         // document.getElementById("maarivB").innerHTML = maarivB.toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
 
                         break;
-                    case "sofZmanShma":
-                      document.getElementById("sofZmanShma").innerHTML = new Date(element.date).toLocaleTimeString([], { hourCycle: 'h23', hour: '2-digit', minute: '2-digit' });
                     default:
                         break;
                 }
@@ -189,6 +196,7 @@
         }
 
         getParasha();
+        getZmanim();
 
         //Creating dynamic link that automatically click
         function downloadURI(uri, name) {
