@@ -16,27 +16,12 @@ Für diese Aushandlung senden Cisco Switche DTP-Frames an die Multicast-MAC-Adre
 
 Um das Feld Status zu verstehen, ist die Vorkenntnis wichtig, dass es noch weitere Switchport Modes gibt. Das Feld gibt dann an, in welchem Switchport Mode sich der Port befindet. Die Switche entscheiden dann anhand des empfangenen Frames, für welchen Port Sie sich entscheiden. Ein Port wird zum Trunk, wenn folgende Kombinationen aufeinandertreffen:
 
-// Tabelle mit allen Möglichkeiten Zuständen
-// Noch überprüfen
- 
-|Switch1 | Switch2  | Zustand | Bemerkung |
-|:------ |:-------- |:------- |:--------- |
-| on | on | Trunk | DTP-Pakete werden von beiden Switches gesendet |
-| on | off | Kein Trunk | DTP-Pakete werden nur von SW2 gesendet |
-| on | auto | Trunk | DTP-Pakete werden von beiden SW gesendet | 
-| on | desirable | Trunk | DTP-Pakete werden von beiden Switchen gesendet | 
-| auto | auto | Kein Trunk | DTP-Pakete werden von beiden Switchen gesendet |
-| auto | desirable | Trunk | DTP-Pakete werden von beiden Switchen gesendet |  
-
-
 | Administrative Mode | Access | Trunk | Dynamic Auto | Dynamic Desirable |
 |---------------------|--------|-------|--------------|-------------------|
-| Access              | Access | -     | Access       | Access            |
-| Trunk               | -      | Trunk | Trunk        | Trunk             |
-| Dynamic Auto        | Access | Trunk | Access       | Trunk             |
-| Dynamic Desirable   | Access | Trunk | Trunk        | Trunk             |
-
-//Noch eine Tabelle in der steht welche Zustand (on,off, desirable) bei welche Switchport Konfig zutrifft.
+| **Access**          | Access | -     | Access       | Access            |
+| **Trunk**           | -      | Trunk | Trunk        | Trunk             |
+| **Dynamic Auto**    | Access | Trunk | Access       | Trunk             |
+| **Dynamic Desirable** | Access | Trunk | Trunk        | Trunk             |
 
 ## Der Versuch
 
@@ -124,14 +109,14 @@ Yersinia zeichnet jetzt empfangene DTP-Pakete auf. In unserem Fall können wir a
 Zum nachvollziehen hier Links ein Bild des DTP-Frames von dem Switch, rechts ein Paket von unserem Angreifer.
 
 Switch | Angreifer
-- | - 
-![ping-test](/assets/img/vlan_hopping/dtp-switch.png)| ![ping-test](/assets/img/vlan_hopping/dtp-attk-marked.png)
+------ | --------- 
+![ping-test](/assets/img/vlan_hopping/dtp-switch.png) | ![ping-test](/assets/img/vlan_hopping/dtp-attk-marked.png)
 
 Hier zwei Bilder von Frames nach dem ausgehandelten Trunk.
 
 Switch | Angreifer
-- | - 
-![ping-test](/assets/img/vlan_hopping/dtp-switch-2.png)| ![ping-test](/assets/img/vlan_hopping/attk-trunk.png)
+------ | --------- 
+![ping-test](/assets/img/vlan_hopping/dtp-switch-2.png) | ![ping-test](/assets/img/vlan_hopping/attk-trunk.png)
 
 Switch-Status nach dem Angriff:
 ~~~
@@ -176,7 +161,7 @@ Appliance trust: none
 
 Der eigentliche Angriff bzw die Ausnutzung des DTP-Protokolls ist damit abgehandelt. Zwischen unserem Angriffs-PC und dem Switch besteht ein Trunk Port und wir zugriff auf alle VLANs innerhalb des Trunks. Zur Demonstration, was das bedeuten kann, können wir unter dem Linux zwei Subinterfaces konfigurieren, eines im VLAN10 und ein weiteres in VLAN30. Duch die TRUNK-Verbindung sollten wir beide Rechner anpingen können. 
 
-Unsere neue Konfig von /etc/network/interfaces
+Unsere neue Konfig von `/etc/network/interfaces`
 ~~~
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
@@ -198,14 +183,9 @@ iface eth0.30 inet static
  netmask 255.255.255.0
 ~~~
 
-Nach einem Neustart des Networking-Services ist ein Ping über die Subinterfaces möglich.
-~~~
-sudo service networking restart
-~~~
+Nach einem Neustart des Networking-Services `sudo service networking restart` ist ein Ping über die Subinterfaces möglich.
 
 ![ping-test](/assets/img/vlan_hopping/kali_successfull_pings.png)
-
-![DAD](/assets/img/ipv6/ipv6_dad_keinedopplung.jpg)
 
 
 ## Links
