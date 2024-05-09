@@ -12,7 +12,7 @@ Als Einleitung eine Übersicht über DTP, das Cisco Dynamic Trunking Protocol. D
 
 ![dtp-frame](/assets/img/vlan_hopping/DTP-Paket.png)
 
-In dem Feld __Trunk Status__ gibt es die beiden Felder __Trunk Operating Status__ und __Trunk Administrativ Status__. Wichtig für die Aushandlung über DTP ist der Wert in dem Feld __Trunk Administrativ Status__, das andere Feld spiegelt den aktuellen Port-Zustand wieder. In der unten stehenden Tabelle sind die Kombinationen aufgeschrieben, welche zu einem Trunk Port führen würden. Zur Erklärung, wenn beide Switche mit dem Port-Mode __Dynamic Auto__ konfiguriert sind, bleiben beide Ports im Zustand __Access__. Es werden also keine VLANs getaggt bzw keine weiteren VLANs als ein vorkonfiguriertes übertragen. Befindet sich ein Port im Mode __Trunk__ und der Port des zweiten Switches im Mode __Auto__ wird automatisch ein Trunk aufgebaut. Sofern nicht anders konfiguriert (was bei der Standardkonfiguration der Fall ist) werden alle VLANS (1-4096) übertragen, sofern diese auf dem Switch konfiguriert sind.
+In dem Feld *Trunk Status* gibt es die beiden Felder *Trunk Operating Status* und *Trunk Administrativ Status*. Wichtig für die Aushandlung über DTP ist der Wert in dem Feld *Trunk Administrativ Status*, das andere Feld spiegelt den aktuellen Port-Zustand wieder. In der unten stehenden Tabelle sind die Kombinationen aufgeschrieben, welche zu einem Trunk Port führen würden. Zur Erklärung, wenn beide Switche mit dem Port-Mode *Dynamic Auto* konfiguriert sind, bleiben beide Ports im Zustand *Access*. Es werden also keine VLANs getaggt bzw keine weiteren VLANs als ein vorkonfiguriertes übertragen. Befindet sich ein Port im Mode *Trunk* und der Port des zweiten Switches im Mode *Auto* wird automatisch ein Trunk aufgebaut. Sofern nicht anders konfiguriert (was bei der Standardkonfiguration der Fall ist) werden alle VLANS (1-4096) übertragen, sofern diese auf dem Switch konfiguriert sind.
 
 | Administrative Status | Access | Trunk | Dynamic Auto | Dynamic Desirable |
 |---------------------|--------|-------|--------------|-------------------|
@@ -32,7 +32,7 @@ Nachfolgend habe ich das Ganze mal in CML nachgebaut, um die Einfachheit zu verd
 An dieser Stelle ist noch zu erwähnen, dass ein frisch ausgepackter Cisco Switch standardmäßig DTP verwendet. Das heißt, jeder Port im Default-Zustand ohne Konfiguration lässt einen Trunk Port zu.
 
 ### IST-Zustand
-Etwas zum Versuchsaufbau, wir haben zwei L2-Switche bzw __eine Broadcast-Domäne__. Auf den Switchen gibt es jeweils das VLAN 10 und VLAN 30 in dem sich jeweils ein Client befindet. An Switch1 haben wir als unseren __Angreifer__ eine Kali-Linux-Maschine mit dem Tool "Yersinia". Den Port von Switch1 an dem das Kali-Linux hängt, bezeichne ich weiter im Artikel als Angriffsport.
+Etwas zum Versuchsaufbau, wir haben zwei L2-Switche bzw *eine Broadcast-Domäne*. Auf den Switchen gibt es jeweils das VLAN 10 und VLAN 30 in dem sich jeweils ein Client befindet. An Switch1 haben wir als unseren *Angreifer* eine Kali-Linux-Maschine mit dem Tool "Yersinia". Den Port von Switch1 an dem das Kali-Linux hängt, bezeichne ich weiter im Artikel als Angriffsport.
 
 ![Topology](/assets/img/vlan_hopping/cml_topology.png)
 
@@ -62,7 +62,7 @@ Gi0/2     Client-Office      connected    10         a-full   auto RJ45
 Gi0/3                        connected    1          a-full   auto RJ45
 ~~~
 
-Wenn wir uns den Switchport genauer anschauen, erkennen wir, dass das DT-Protokoll (DTP) automatisch aktiv ist und auf __dynamic auto__ steht. Wir erinnern uns an die zu Beginn gezeigte Tabelle, bei der Kombination "auto-zu-desirable" entsteht automatisch ein Trunk!
+Wenn wir uns den Switchport genauer anschauen, erkennen wir, dass das DT-Protokoll (DTP) automatisch aktiv ist und auf *dynamic auto* steht. Wir erinnern uns an die zu Beginn gezeigte Tabelle, bei der Kombination "auto-zu-desirable" entsteht automatisch ein Trunk!
 ~~~
 Switch1#show int gi0/1 switchport 
 Name: Gi0/1
@@ -191,7 +191,7 @@ Nach einem Neustart des Networking-Services `sudo service networking restart` is
 Eine schnelle und einfache Methode!
 
 ## Prävention
-So einfach der Angriff ist, so einfach kann man sich auch davor schützen. Natürlich gilt immer der Grundsatz, alles abzuschalten was nicht gebraucht wird (das spart auch noch Strom), so also auch den Port. Mit dem Befehl `switchport nonegotiate` wird DTP auf Ports deaktiviert, was zur Standardkonfiguration der Ports gehören sollte. Zusätzlich ist es ratsam, Ports als Access Ports zu konfigurieren und in ein Dummy-VLAN zu "parken". Das liegt an der vielseitigen Verwendung des __VLAN 1__ bei Cisco Switchen. Darüber finden beispielsweise auch Aushandlungen für STP/CDP. Zuletzt kann auch das __nativ Vlan__ vorsorglich konfiguriert werden. Dies spielt zwar so lange keine Rolle, bis der Modus wieder in einen Trunk konfiguriert wird, besser ist es dennoch. Es könnte also folgende Port-Konfiguration konfiguriert werden.
+So einfach der Angriff ist, so einfach kann man sich auch davor schützen. Natürlich gilt immer der Grundsatz, alles abzuschalten was nicht gebraucht wird (das spart auch noch Strom), so also auch den Port. Mit dem Befehl `switchport nonegotiate` wird DTP auf Ports deaktiviert, was zur Standardkonfiguration der Ports gehören sollte. Zusätzlich ist es ratsam, Ports als Access Ports zu konfigurieren und in ein Dummy-VLAN zu "parken". Das liegt an der vielseitigen Verwendung des *VLAN 1* bei Cisco Switchen. Darüber finden beispielsweise auch Aushandlungen für STP/CDP. Zuletzt kann auch das *nativ Vlan* vorsorglich konfiguriert werden. Dies spielt zwar so lange keine Rolle, bis der Modus wieder in einen Trunk konfiguriert wird, besser ist es dennoch. Es könnte also folgende Port-Konfiguration konfiguriert werden.
 
 ~~~
 vlan 999
