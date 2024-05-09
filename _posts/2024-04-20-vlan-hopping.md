@@ -24,10 +24,10 @@ In dem Feld __Trunk Status__ gibt es die beiden Felder __Trunk Operating Status_
 Das Gefährliche aber ist, dass ein Angreifer somit ungewollt einen Trunk Port provozieren kann (und somit auf alle VLANs Zugriff hat) wenn die Gegenstelle nicht abgesichert wird. 
 Nachfolgend habe ich das Ganze mal in CML nachgebaut, um die Einfachheit zu verdeutlichen und das Protokoll besser zu verstehen. Anschließend gebe ich meinen Rat zur Prävention.
 
-> [!IMPORTANT]
-> Ich möchte auf keinen Fall zu Straftaten verleihten. Das gezeigte Tutorial ist zum Lernen bzw Verstehen von Netzwerken gedacht und soll zugleich Bewusstsein schafen.
-
 ## Der Versuch
+{: .box-warning}
+**Warning:** Ich möchte auf keinen Fall zu Straftaten verleihten. Das gezeigte Tutorial ist zum Lernen bzw Verstehen von Netzwerken gedacht und soll zugleich Bewusstsein schafen.
+
 An dieser Stelle ist noch zu erwähnen, dass ein frisch ausgepackter Cisco Switch standardmäßig DTP verwendet. Das heißt, jeder Port im Default-Zustand ohne Konfiguration lässt einen Trunk Port zu.
 
 ### IST-Zustand
@@ -205,5 +205,5 @@ shutdown
 ~~~
 
 ## Links
-https://de.wikipedia.org/wiki/Dynamic_Trunking_Protocol
+https://de.wikipedia.org/wiki/Dynamic_Trunking_Protocol  
 https://jay-miah.co.uk/index.php/vlan-hopping-concept-attack-example-and-prevention/
