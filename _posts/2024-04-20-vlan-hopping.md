@@ -27,7 +27,7 @@ Nachfolgend habe ich das Ganze mal in CML nachgebaut, um die Einfachheit zu verd
 ## Der Versuch
 
 {: .box-warning}
-**Warning:** Ich möchte auf keinen Fall zu Straftaten verleihten. Das gezeigte Tutorial ist zum Lernen bzw Verstehen von Netzwerken gedacht und soll zugleich Bewusstsein schafen.
+**Achtung!:** Ich möchte auf keinen Fall zu Straftaten verleihten. Das gezeigte Tutorial ist zum Lernen bzw Verstehen von Netzwerken gedacht und soll zugleich Bewusstsein schafen.
 
 An dieser Stelle ist noch zu erwähnen, dass ein frisch ausgepackter Cisco Switch standardmäßig DTP verwendet. Das heißt, jeder Port im Default-Zustand ohne Konfiguration lässt einen Trunk Port zu.
 
