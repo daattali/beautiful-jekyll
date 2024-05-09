@@ -7,30 +7,35 @@ author: Ramon Franke
 last_modified_at: 2024-04-17
 ---
 
-Disclaimer einfügen!!!!
 ## DTP: Dynamic Trunking Protokol
-Als Einleitung eine Übersicht über DTP, das Cisco Dynamic Trunking Protocol. Das Protokoll ist zum automatischen Aushandeln von Trunking Ports. Trunking Ports sind Ports, über die mehrere VLANS übertragen werden.
-Für diese Aushandlung senden Cisco Switche DTP-Frames an die Multicast-MAC-Adresse 01-00-0C-CC-CC-CC. Über die Frames finden dann die Verhandlungen des Port-Zustands statt. Zum einen wird der Port automatisch zu einem Trunking Port mit entsprechendem Protokoll (802.1q). Ein Frame sieht wie folgt aus: 
+Als Einleitung eine Übersicht über DTP, das Cisco Dynamic Trunking Protocol. Das Protokoll ist zum automatischen Aushandeln von Trunking Ports und soll den Administratoren von Netzwerken, Arbeit abnehmen. Kurz zur Erinnerung, Trunking Ports sind Ports, über die mehrere VLANs übertragen werden. Damit zwei Switche automatisch einen Trunk Port zueinander herstellen, werden DTP-Frames über die Multicast-MAC-Adresse 01-00-0C-CC-CC-CC gesendet. Über die Frames findet dann die Verhandlungen des Port-Zustands statt. Wenn die Bedingungen stimmen, wird automatisch ein Trunk Port ausgehandelt. Dazu gleich mehr, hier zunächst ein Auszug eines DTP-Frames: 
 
 ![dtp-frame](/assets/img/vlan_hopping/DTP-Paket.png)
 
-Um das Feld Status zu verstehen, ist die Vorkenntnis wichtig, dass es noch weitere Switchport Modes gibt. Das Feld gibt dann an, in welchem Switchport Mode sich der Port befindet. Die Switche entscheiden dann anhand des empfangenen Frames, für welchen Port Sie sich entscheiden. Ein Port wird zum Trunk, wenn folgende Kombinationen aufeinandertreffen:
+In dem Feld 'Trunk Status' gibt es die beiden Felder 'Trunk Operating Status' und 'Trunk Administrativ Status'. Wichtig für die Aushandlung über DTP ist der Wert in dem Feld 'Trunk Administrativ Status', das andere Feld spiegelt den aktuellen Port-Zustand wieder. In der unten stehenden Tabelle sind die Kombinationen aufgeschrieben, welche zu einem Trunk Port führen würden. Zur Erklärung, wenn beide Switche mit dem Port-Mode 'Dynamic Auto' konfiguriert sind, bleiben beide Ports im Zustand 'Access'. Es werden also keine VLANs getaggt bzw keine weiteren VLANs als ein vorkonfiguriertes übertragen. Befindet sich ein Port im Mode 'Trunk' und der Port des zweiten Switches im Mode 'Auto' wird automatisch ein Trunk aufgebaut. Sofern nicht anders konfiguriert (was bei der Standardkonfiguration der Fall ist) werden alle VLANS (1-4096) übertragen, sofern diese auf dem Switch konfiguriert sind.
 
-| Administrative Mode | Access | Trunk | Dynamic Auto | Dynamic Desirable |
+| Administrative Status | Access | Trunk | Dynamic Auto | Dynamic Desirable |
 |---------------------|--------|-------|--------------|-------------------|
 | **Access**          | Access | -     | Access       | Access            |
 | **Trunk**           | -      | Trunk | Trunk        | Trunk             |
 | **Dynamic Auto**    | Access | Trunk | Access       | Trunk             |
 | **Dynamic Desirable** | Access | Trunk | Trunk        | Trunk             |
 
+Das Gefährliche aber ist, dass ein Angreifer somit ungewollt einen Trunk Port provozieren kann (und somit auf alle VLANs Zugriff hat) wenn die Gegenstelle nicht abgesichert wird. 
+Nachfolgend habe ich das Ganze mal in CML nachgebaut, um die Einfachheit zu verdeutlichen und das Protokoll besser zu verstehen. Anschließend gebe ich meinen Rat zur Prävention.
+
+> [!IMPORTANT]
+> Ich möchte auf keinen Fall zu Straftaten verleihten. Das gezeigte Tutorial ist zum Lernen bzw Verstehen von Netzwerken gedacht und soll zugleich Bewusstsein schafen.
+
 ## Der Versuch
+An dieser Stelle ist noch zu erwähnen, dass ein frisch ausgepackter Cisco Switch standardmäßig DTP verwendet. Das heißt, jeder Port im Default-Zustand ohne Konfiguration lässt einen Trunk Port zu.
 
 ### IST-Zustand
-Zunächst einmal etwas zum Versuchsaufbau. Wir haben zwei L2-Switche bzw __eine Broadcast-Domäne__. Auf den Switchen gibt es jeweils das VLAN 10 und VLAN 30 in dem sich jeweils ein Client befindet. An Switch1 haben wir als unseren __Angreifer__ eine Kali-Linux-Maschine mit dem Tool "Yersinia". Den Port von Switch1 an dem das Kali-Linux hängt, bezeichne ich weiter im Artikel als Angriffsport.
+Etwas zum Versuchsaufbau, wir haben zwei L2-Switche bzw __eine Broadcast-Domäne__. Auf den Switchen gibt es jeweils das VLAN 10 und VLAN 30 in dem sich jeweils ein Client befindet. An Switch1 haben wir als unseren __Angreifer__ eine Kali-Linux-Maschine mit dem Tool "Yersinia". Den Port von Switch1 an dem das Kali-Linux hängt, bezeichne ich weiter im Artikel als Angriffsport.
 
 ![Topology](/assets/img/vlan_hopping/cml_topology.png)
 
-Hier ist zusehen, dass die Konfig des Angriffs-Ports fast "default" ist. Lediglich für eine bessere Nachvollziehbarkeit habe ich auf dem Port eine Description konfiguriert, die bei verschiedenen Ausgaben den Port kenntlicher macht.
+Hier ist zusehen, dass die Konfig des Angriffsports fast "default" ist. Lediglich für eine bessere Nachvollziehbarkeit habe ich auf dem Port eine Description konfiguriert, die bei verschiedenen Ausgaben den Port kenntlicher macht.
 
 Konfig des Interfaces:
 ~~~
@@ -95,7 +100,7 @@ Appliance trust: none
 - Taste G
 - Taste X
 
-Gehen wir den Test nun aktiv an und schwenken zu unserem Kali-Linux. Um dem Switch DTP-Pakete zusenden, verwenden wir das Tool Yersinia. Wir können dies direkt über die CLI oder über eine GUI erledigen. In unserem Test gehen wir direkt über die CLI und wählen  unser Inteface aus.
+Gehen wir den Test nun aktiv an und schwenken zu unserem Kali-Linux. Um dem Switch DTP-Pakete zusenden, verwenden wir das Tool Yersinia. Wir können dies direkt über die CLI oder über eine GUI erledigen. In unserem Test gehen wir direkt über die CLI und wählen unser Inteface aus.
 
 ![Yersinia-Interface-Selection](/assets/img/vlan_hopping/yersinia_interface_auswahl.png)
 
@@ -104,7 +109,7 @@ Yersinia zeichnet jetzt empfangene DTP-Pakete auf. In unserem Fall können wir a
 
 ![Yersinia-Attack-Selection](/assets/img/vlan_hopping/yersinia_attack_enabling_trunking.png)
 
- Nach Auswahl sendet Yersinia Pakete mit dem Typ ACCESS/Desirable, sprich unser Port ist noch im Mode Access, Mode Trunk wäre aber erwünscht. Rufen wir uns die Tabelle zu Beginn in Erinnerung: Bei der Kombination Switch1:Auto, Switch2:Desirable einigen sich die Switche auf einen Trunk Port. Das Resultat ist, dass ein DTP-Paket des Switches zurückkommt, mit TRUNK/AUTO, der Port-Mode ist also zu einem Trunk gewechselt. Nach kurzer Zeit sendet auch Yersinia ein Paket mit TRUNK/DESIRABLE.
+Nach Auswahl sendet Yersinia Pakete mit dem Typ ACCESS/Desirable, sprich unser Port ist noch im Mode Access, Mode Trunk wäre aber erwünscht. Rufen wir uns die Tabelle zu Beginn in Erinnerung: Bei der Kombination Switch1:Auto, Switch2:Desirable einigen sich die Switche auf einen Trunk Port. Das Resultat ist, dass ein DTP-Paket des Switches zurückkommt, mit TRUNK/AUTO, der Port-Mode ist also zu einem Trunk gewechselt. Nach kurzer Zeit sendet auch Yersinia ein Paket mit TRUNK/DESIRABLE.
 
 Zum nachvollziehen hier Links ein Bild des DTP-Frames von dem Switch, rechts ein Paket von unserem Angreifer.
 
@@ -159,7 +164,7 @@ Appliance trust: none
 
 ### Ausnutzen des Trunks
 
-Der eigentliche Angriff bzw die Ausnutzung des DTP-Protokolls ist damit abgehandelt. Zwischen unserem Angriffs-PC und dem Switch besteht ein Trunk Port und wir zugriff auf alle VLANs innerhalb des Trunks. Zur Demonstration, was das bedeuten kann, können wir unter dem Linux zwei Subinterfaces konfigurieren, eines im VLAN10 und ein weiteres in VLAN30. Duch die TRUNK-Verbindung sollten wir beide Rechner anpingen können. 
+Der eigentliche Angriff bzw die Ausnutzung des DTP-Protokolls ist damit abgehandelt. Zwischen unserem Angriffs-PC und dem Switch besteht ein Trunk Port und wir haben Zugriff auf alle VLANs innerhalb des Trunks. Zur Demonstration, was das bedeuten kann, können wir unter dem Linux zwei Subinterfaces konfigurieren, eines im VLAN10 und ein weiteres in VLAN30. Durch die TRUNK-Verbindung sollten wir beide Rechner anpingen können. 
 
 Unsere neue Konfig von `/etc/network/interfaces`
 ~~~
@@ -187,6 +192,22 @@ Nach einem Neustart des Networking-Services `sudo service networking restart` is
 
 ![ping-test](/assets/img/vlan_hopping/kali_successfull_pings.png)
 
+Eine schnelle und einfache Methode!
+
+## Prävention
+So einfach der Angriff ist, so einfach kann man sich auch davor schützen. Mit dem Befehl 'switchport nonegotiate' wird DTP auf Ports deaktiviert. Zusätzlich ist es ratsam, Ports als Access Ports zu konfigurieren und in ein Dummy-VLAN zu "parken". Das liegt an der vielseitigen Verwendung des VLAN 1 bei Cisco Switchen. Darüber finden beispielsweise auch Aushandlungen für STP/CDP. Zuletzt kann auch das **nativ Vlan** vorsorglich konfiguriert werden. Dies spielt zwar so lange keine Rolle, bis der Modus wieder in einen Trunk konfiguriert wird, besser ist es dennoch. Es könnte also folgende Port-Konfiguration konfiguriert werden.
+
+~~~
+vlan 999
+name dummy-vlan
+
+int gig0/0/1
+switchport mode access
+switchport trunk native vlan 999
+switchport access vlan 999
+switchport nonegotiate
+shutdown
+~~~
 
 ## Links
 https://de.wikipedia.org/wiki/Dynamic_Trunking_Protocol
