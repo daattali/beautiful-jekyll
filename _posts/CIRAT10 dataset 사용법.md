@@ -2,7 +2,7 @@
 layout: post
 title: CIRAT10 dataset 사용법
 ---
-'''
+'''py
 import torch
 from torchvision import transforms, datasets
 
