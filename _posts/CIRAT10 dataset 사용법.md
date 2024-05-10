@@ -1,7 +1,13 @@
 ---
 layout: post
 title: CIRAT10 dataset 사용법
+subtitle: dataset
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [books, test]
 ---
+
 '''py
 import torch
 from torchvision import transforms, datasets
