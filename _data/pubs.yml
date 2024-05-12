@@ -112,9 +112,9 @@
       year={2024}
     }
   img: ../pics/icra2024_taxposed.gif
-  links:
+  links: '[arXiv]': https://arxiv.org/abs/2405.04609
   short_id: wang2024taxposed
-  site: https://sites.google.com/view/tax-posed/home
+  site: https://sites.google.com/view/tax-posed
   title: "Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation"
   venue: International Conference on Robotics and Automation (ICRA), 2024
   video_embed: <iframe width="560" height="396" src="https://www.youtube.com/watch?v=DrqIwdD1SgM" title="Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
