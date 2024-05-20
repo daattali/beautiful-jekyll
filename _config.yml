@@ -7,6 +7,10 @@
 
 ############################
 # --- Required options --- #
+
+baseurl: "/ccpa" # the subpath of your site (remove if deploying to USERNAME.github.io)
+url: "https://USERNAME.github.io" # the base hostname and protocol for your site
+
 ############################
 
 # Name of website
