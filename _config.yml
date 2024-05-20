@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: Canadian Competitive Programming Association
 
 # Your name to show in the footer
-author: Some Person
+author: Christian Kapsales & Ramazan Rakhmatullin
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -22,9 +22,9 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Beautiful Jekyll: "https://dmoj.ca"
+    - Learn markdown: "https://codeforces.com"
+  Author's home: "ckaps1.github.io"
 
 ################
 # --- Logo --- #
@@ -53,7 +53,7 @@ social-network-links:
   email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: deanattali
-  github: daattali
+  github: CKaps1
   twitter: daattali
   patreon: DeanAttali
   youtube: "@daattali"
@@ -100,7 +100,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "ccpa.ca"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
