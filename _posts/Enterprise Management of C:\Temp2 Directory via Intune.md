@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Enterprise Management of C:\Temp2 Directory via Intune"
+title:  "Enterprise Management of C: Temp Directory via Intune"
 date:   2024-05-21
 Author: Jonathan Proctor
 categories: PowerShell, Intune, End User Computing
