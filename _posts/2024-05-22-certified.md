@@ -8,7 +8,6 @@ comments: true
 
 It's been 10 000 years, but I have an update. In my hands is a document that certifies my competency in (very) basic web development, programming, social media campaigns and tech support.
 
-{: .box-note}
 **This is my certificate:**
 
 ![My certificate](/assets/img/certificate.png)

@@ -12,7 +12,6 @@ Codenamed JimmysClassList, I think I have come up with my second project.
 
 JimmysClassList is an auto-timetabling application. Now you may say "But sevenem, there are loads of free timetable applications on GitHub!". Well, I looked at the most popular apps, and none of them seem to have features to **restrict certain classes to certain days or times**. Some of them actually require you to make the timetable by filling in a .json file, and the application simply reproduces the timetable in a table. These are not what I had in mind when I was imagining how it would look and run.
 
-{: .box-note}
 **This is my desired output:**
 
 ![Timetable produced](/assets/img/jimmy01.jpg)
