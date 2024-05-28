@@ -165,6 +165,7 @@ These are parameters that you may not use often, but can come in handy sometimes
 Parameter   | Description
 ----------- | -----------
 author      | Specify the author of a blog post (useful if a website has multiple authors).
+excerpt     | Specify the excerpt to show on the home page.
 readtime    | If you want a post to show how many minutes it will take to read it, use `readtime: true`.
 show-avatar | If you have an avatar configured in the `_config.yml` but you want to turn it off on a specific page, use `show-avatar: false`.
 social-share | By default, every blog post has buttons to share the page on social media. If you want to turn this feature off, use `social-share: false`.
