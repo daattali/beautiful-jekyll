@@ -215,6 +215,8 @@ Congratulations on making it this far! You now have all the tools to easily buil
 
 - You can also check out the [advanced installation methods](https://beautifuljekyll.com/getstarted/#install-steps-hard) that give you a little more control but are harder to use. Keep in mind that Beautiful Jekyll was primarily designed to be used as a GitHub theme, so you will not get any support if you choose one of the Ruby installation methods. 
 
+- Remember that Beautiful Jekyll is built on top of Jekyll. This means that reading through the [Jekyll documentation](https://jekyllrb.com/) will introduce you to many more features that you might find useful!
+
 # Getting help
 
 Visit the [FAQ page](https://beautifuljekyll.com/faq) for answers to commonly asked questions.
