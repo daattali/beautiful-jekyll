@@ -1,0 +1,16 @@
+{% if site.giscus.repository and site.giscus.hostname %}
+
+<script src="https://{{ site.giscus.hostname }}/client.js"
+        data-repo="{{ site.giscus.repository }}"
+        data-repo-id="{{ site.giscus.repository-id }}"
+        data-category="{{ site.giscus.category }}"
+        data-category-id="{{ site.giscus.category-id }}"
+        data-mapping="{{ site.giscus.mapping }}"
+        data-reactions-enabled="{{ site.giscus.reactions-enabled }}"
+        data-emit-metadata="{{ site.giscus.emit-metadata }}"
+        data-theme="{{ site.giscus.theme }}"
+        crossorigin="anonymous"
+        async>
+</script>
+
+{% endif %}

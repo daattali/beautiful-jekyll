@@ -1,7 +1,6 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem "github-pages", '197', group: :jekyll_plugins
+source "https://rubygems.org"
 
-# enable tzinfo-data for local build
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'jekyll-paginate'
+gemspec
+

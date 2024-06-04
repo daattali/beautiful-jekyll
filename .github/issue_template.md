@@ -1,3 +1,3 @@
-Thank you for submitting an issue!
+Please only submit feature suggestions or bug reports if you believe something is broken.
 
-Please only submit bug reports or feature suggestions. Please do not submit support requests and general help questions in this forum.
+If you need help, you can attend the [Office Hours](https://beautifuljekyll.com/officehours) (only available for [sponsors](https://beautifuljekyll.com/plans/)).
