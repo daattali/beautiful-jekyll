@@ -68,7 +68,7 @@
   site: https://sites.google.com/view/dressing-fcvp
   title: "Force Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing"
   venue: Robotics and Automation Letters (RAL), 2024
-  video_embed: null
+  video_embed: <iframe width="560" height="396" src="https://youtu.be/6lmWB-6uwoc?si=RAzTsOAz1V5hOJhW" title="Learning Generalized Articulated Objects Manipulation via Articulation Projections" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   tags:
     - deformable
     - multimodal
