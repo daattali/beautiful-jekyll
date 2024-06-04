@@ -2,7 +2,6 @@
 _site
 .sass-cache
 .vagrant
-
 # general
 .DS_Store
 Thumbs.db
@@ -10,8 +9,7 @@ ehthumbs.db
 <<<<<<< HEAD
 .Rproj.user
 =======
-
 Gemfile.lock
-
 beautiful-jekyll-theme-*.gem
 >>>>>>> dd16f4ab0516aa5d7aa1521b0a723bc04a46dfe3
+.Rhistory
