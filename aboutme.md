@@ -1,16 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Adventures in Curiosity
 ---
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Nathan C. Layman, PhD, is a research scientist specializing in the application of computational science and machine learning to ecological and evolutionary questions. His work includes developing predictive models for outbreak forecasting, enhancing wildlife disease surveillance through natural language processing, and mitigating viral spillover. Nathan is dedicated to open and reproducible science, with a strong focus on accurately capturing uncertainty in models. Outside of his research, he enjoys hiking and camping in the Pacific Northwest, spending quality time with his family. Nathan also has diverse interests ranging from sailing to machine learning, welding, woodworking, knife making, and playing fiddle music.
