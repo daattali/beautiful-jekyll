@@ -84,16 +84,16 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "someone@example.com"
+  email: "devoredevelops.vlghn@passfwd.com"
 #  reddit: yourname
 #  linkedin: daattali
-  email: "sayhello@devoredevelops.com"
+  email: "devoredevelops.vlghn@passfwd.com"
   # facebook: daattali
-  github: devoredevelops
-  twitter: jason_develops
+  github: https://github.com/devoredevelops
+  # twitter: jason_develops
 #  reddit: yourname
 #  google-plus: +DeanAttali
-  linkedin: jason-develops
+  linkedin: https://linkedin.com/in/devoredevelops
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -164,14 +164,14 @@ url-pretty: "DevoreDevelops.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
+excerpt_length: 80
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"
 
 # Ruby Date Format
-date_format: "%B %-d, %Y"
+date_format: "%Y-%m-%dT%H:%M:%S.%NZ"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
@@ -180,7 +180,7 @@ timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 3
 
 kramdown:
   input: GFM
@@ -270,7 +270,18 @@ prose:
 
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
+  # - jekyll-sitemap
+  # - jekyll-feed
+  # - jemoji
+  # - jekyll-gist
+  # - jekyll-github-metadata
+  # - jekyll-mentions
+  # - jekyll-redirect-from
+  # - jekyll-seo-tag
+  # - jekyll-sitemap-generator
+  # - jekyll-feed-generator
+  # - jekyll-avatar
+  # - jekyll-readme-index
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
