@@ -12,5 +12,7 @@ Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
 # editor
-*/.vscode/settings.json
 */.history/*
+
+tmp
+.vscode
