@@ -9,33 +9,61 @@ Greetings! My name is Jason Devore and I am a software developer with expertise 
 
 ### Social Media
 
-
 [Github](https://github.com/devoredevelops)
 
 [LinkedIn](https://www.linkedin.com/in/jason-develops/)
-
-[Twitter](https://twitter.com/jason_develops)
 
 ### Pronouns
 
 he/him/his
 
-### Current Location
+### Skills
 
-Kansas City Metro Area
-
-### Skills (in order of importance)
-
-* Python (Django)
-* JavaScript (AngularJS, jQuery)
-* SQL (MySQL, PostgreSQL, SQL Server)
-* Linux (CentOS, Debian, Ubuntu)
-* Ansible
-* Docker
-* Shell Script (BASH)
-* Git (GitLab, GitHub)
-* HTML
+* AngularJS
+* Azure Devops Pipelines
+* Bash
+* Big Panda
+* CloudFormation
 * CSS
+* Debian
+* Django
+* Django REST Framework (DRF)
+* Docker
+* DynamoDB
+* EC2
+* Express Step Functions
+* FastAPI
+* Feathers.js
+* Flask
+* Github Actions
+* Glue
+* HTML
+* IAM
+* jQuery
+* JSON
+* Kinesis Data Streams
+* Lambda
+* Linux
+* MongoDB
+* MySQL
+* PagerDuty
+* pip-tools
+* Poetry
+* PostgreSQL
+* Python
+* ServiceNow
+* Snowflake
+* SNS
+* SQL
+* SQLAlchemy
+* SQS
+* Terraform
+* Ubuntu
+* VPC
+* Vue
+* XML
+* YAML
+* Zsh
 
 ### Hobbies
 
