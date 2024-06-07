@@ -17,15 +17,16 @@
 - abs: "We present RoboGen, a generative robotic agent that automatically learns diverse robotic skills at scale via generative simulation. RoboGen leverages the latest advancements in foundation and generative models. Instead of directly using or adapting these models to produce policies or low-level actions, we advocate for a generative scheme, which uses these models to automatically generate diversified tasks, scenes, and training supervisions, thereby scaling up robotic skill learning with minimal human supervision. Our approach equips a robotic agent with a self-guided propose-generate-learn cycle: the agent first proposes interesting tasks and skills to develop, and then generates corresponding simulation environments by populating pertinent objects and assets with proper spatial configurations. Afterwards, the agent decomposes the proposed high-level task into sub-tasks, selects the optimal learning approach (reinforcement learning, motion planning, or trajectory optimization), generates required training supervision, and then learns policies to acquire the proposed skill. Our work attempts to extract the extensive and versatile knowledge embedded in large-scale models and transfer them to the field of robotics. Our fully generative pipeline can be queried repeatedly, producing an endless stream of skill demonstrations associated with diverse tasks and environments."
   authors: Yufei Wang*, Zhou Xian*, Feng Chen*, Tsun-Hsuan Wang, Yian Wang, Katerina Fragkiadaki, Zackory Erickson, David Held, Chuang Gan
   award: null
-  bib: "@inproceedings{wang2024robogen,
-  \ title={RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation},
-  \ author={Wang, Yufei and Zhou, Xian and Chen, Feng and Wang, Tsun-Hsuan and Wang, Yian and Fragkiadaki, Katerina and Erickson, Zackory and Held, David and Gan, Chuang},            
-  \ booktitle={International Conference on Machine Learning (ICML)},
-  \ year={2024}       
-  }"
+  bib: >
+    @inproceedings{wang2024robogen,
+      title={RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation},
+      author={Wang, Yufei and Zhou, Xian and Chen, Feng and Wang, Tsun-Hsuan and Wang, Yian and Fragkiadaki, Katerina and Erickson, Zackory and Held, David and Gan, Chuang},            
+      booktitle={International Conference on Machine Learning (ICML)},
+      year={2024}       
+    }
   img: ../pics/robogen-icml.png
   links: 
-      '[arXiv]': https://arxiv.org/abs/2306.12372
+      '[arXiv]': https://arxiv.org/abs/2311.01455
       '[Code]': https://github.com/Genesis-Embodied-AI/RoboGen
   short_id: wang2024robogen
   site: https://robogen-ai.github.io/
@@ -36,12 +37,13 @@
 - abs: Reward engineering has long been a challenge in Reinforcement Learning research, as it often requires extensive human effort. In this paper, we propose RL-VLM-F, a method that automatically generates reward functions for agents to learn new tasks, using only a text description of the task goal and the agent’s visual observations, by leveraging feedback from vision language foundation models (VLMs). The key to our approach is to query these models to give preferences over pairs of the agent’s image observations based on the text description of the task goal, and then learn a reward function from the preference labels. We demonstrate that RL-VLM-F successfully produces effective rewards and policies across various domains — including classic control, as well as manipulation of rigid, articulated, and deformable objects — without the need for human supervision, outperforming prior methods that use large pretrained models for reward generation under the same assumptions.
   authors: Yufei Wang*, Zhanyi Sun*, Jesse Zhang, Zhou Xian, Erdem Bıyık, David Held&dagger;, Zackory Erickson&dagger;
   award: null
-  bib: "@inproceedings{wang2024rlvlmf,
-  \ title={RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback},
-  \ author={Wang, Yufei and Sun, Zhanyi and Zhang, Jesse and Xian, Zhou and Biyik, Erdem and Held, David and Erickson, Zackory},            
-  \ booktitle={International Conference on Machine Learning (ICML)},
-  \ year={2024}       
-  }"
+  bib: >
+    @inproceedings{wang2024rlvlmf,
+      title={RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback},
+      author={Wang, Yufei and Sun, Zhanyi and Zhang, Jesse and Xian, Zhou and Biyik, Erdem and Held, David and Erickson, Zackory},            
+      booktitle={International Conference on Machine Learning (ICML)},
+      year={2024}       
+    }
   img: ../pics/RL-VLM-F-24-ICML.png
   links: 
       '[arXiv]': https://arxiv.org/abs/2402.03681
@@ -69,7 +71,7 @@
   site: https://sites.google.com/view/dressing-fcvp
   title: "Force Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing"
   venue: Robotics and Automation Letters (RAL), 2024
-  video_embed: <iframe width="560" height="396" src="https://youtu.be/6lmWB-6uwoc?si=RAzTsOAz1V5hOJhW" title="Learning Generalized Articulated Objects Manipulation via Articulation Projections" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/6lmWB-6uwoc?si=EzwZXtFb0En-f8w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   tags:
     - deformable
     - multimodal
@@ -156,7 +158,7 @@
   site: https://sites.google.com/view/tax-posed
   title: "Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation"
   venue: International Conference on Robotics and Automation (ICRA), 2024
-  video_embed: <iframe width="560" height="396" src="https://www.youtube.com/watch?v=DrqIwdD1SgM" title="Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  video_embed: null
   tags:
       - affordance
 
