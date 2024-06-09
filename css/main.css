@@ -786,3 +786,23 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
+
+
+.home-summary {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+.home-summary h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.home-summary p {
+  font-size: 1.2em;
+  color: #333;
+}

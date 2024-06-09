@@ -4,8 +4,13 @@ layout: base
 
 <div class="intro-header"></div>
 
+{% if page.url == '/' %}
+  <div class="home-summary">
+    <h1>Welcome to My Website</h1>
+    <p>This is a summary of what my website is about. Here you can find my portfolio, blog, and more.</p>
+  </div>
+{% endif %}
+
 <div role="main" class="container">
   {{ content }}
-  <h1>Welcome to My Website</h1>
-  <p>This is a summary of what my website is about. Here you can find my portfolio, blog, and more.</p>
 </div>
