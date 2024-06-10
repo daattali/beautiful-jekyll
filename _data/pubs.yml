@@ -113,6 +113,7 @@
   links:
       - '[arXiv]': https://arxiv.org/abs/2404.13478
       - '[OpenReview]': https://openreview.net/forum?id=2inBuwTyL2
+      - '[Code]': https://github.com/r-pad/taxpose
   short_id: eisner2024geometric
   site: https://sites.google.com/view/reldist-iclr-2023
   title: "Deep SE(3)-Equivariant Geometric Reasoning for Precise Placement Tasks"
