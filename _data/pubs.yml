@@ -155,6 +155,9 @@
   img: ../pics/icra2024_taxposed.gif
   links: 
       '[arXiv]': https://arxiv.org/abs/2405.04609
+      '[Poster]': https://sites.google.com/view/tax-posed/poster
+      '[Slides]': https://sites.google.com/view/tax-posed/slides
+      '[Code]': https://github.com/himty/taxposeD
   short_id: wang2024taxposed
   site: https://sites.google.com/view/tax-posed
   title: "Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation"
