@@ -91,7 +91,7 @@ members:
       - name: PhD alumni
         full: False
         list:
-          - name: Wenxuan Zhou
+          - name: Wenxuan Zhou -> Research Scientist at Meta
             web_url: https://wenxuan-zhou.github.io/
           - name: Thomas Weng -> Boston Dynamics AI Institute
             web_url: https://www.thomasweng.com
