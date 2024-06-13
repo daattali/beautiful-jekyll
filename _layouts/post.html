@@ -60,24 +60,21 @@ layout: base
         </div>
       {% endif %}
 
-      {% if page.social-share %}
-        {% include social-share.html %}
-      {% endif %}
 
       <ul class="pagination blog-pager">
         {% if page.previous.url %}
         <li class="page-item previous">
           <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">
-            <i class="fas fa-arrow-left" alt="Previous Post"></i>
-            <span class="d-none d-sm-inline-block">Previous Post</span>
+            <i class="fas fa-arrow-left" alt="Anterior"></i>
+            <span class="d-none d-sm-inline-block">Anterior</span>
           </a>
         </li>
         {% endif %}
         {% if page.next.url %}
         <li class="page-item next">
           <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">
-            <span class="d-none d-sm-inline-block">Next Post</span>
-            <i class="fas fa-arrow-right" alt="Next Post"></i>
+            <span class="d-none d-sm-inline-block">Siguiente</span>
+            <i class="fas fa-arrow-right" alt="Siguiente"></i>
           </a>
         </li>
         {% endif %}
