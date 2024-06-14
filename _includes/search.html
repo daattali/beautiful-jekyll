@@ -3,7 +3,7 @@
 <div id="beautifuljekyll-search-overlay">
 
   <div id="nav-search-exit" title="Exit search">✕</div>
-  <input type="text" id="nav-search-input" placeholder="Search">
+  <input type="text" id="nav-search-input" placeholder="Buscar">
   <ul id="search-results-container"></ul>
   
   <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
@@ -33,7 +33,8 @@
     var sjs = SimpleJekyllSearch({
       searchInput: document.getElementById('nav-search-input'),
       resultsContainer: document.getElementById('search-results-container'),
-      json: searchjson
+      json: searchjson,
+      noResultsText: `<li>Sin resultados.</li>`
     });
   </script>
 </div>
