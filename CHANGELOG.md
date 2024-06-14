@@ -12,6 +12,7 @@
 - Pagination buttons: use nicer arrows, and don't show text on small screens (#1221)
 - Updated Yelp URL format - if you previously used the `yelp` social network config parameter, you might need to update the config value (#1259)
 - Added `title-on-all-pages` config setting, that adds the website title to all page titles (#1272)
+- Change Twitter icon to X (#1193)
 - Upgraded font-awesome to 6.5.2 (#1330)
 
 ## v6.0.1 (2023-06-08)
