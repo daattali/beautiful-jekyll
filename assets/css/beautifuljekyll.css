@@ -1128,3 +1128,9 @@ pre {
     display: inline-block;
   }
 }
+
+
+.post-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
