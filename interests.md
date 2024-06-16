@@ -10,9 +10,6 @@ permalink: /interests/
 
 ## Real Estate Finance
 <div class="interest-section">
-  <div class="interest-img-wrapper">
-    <img src="/assets/img/real-estate.jpg" alt="Real Estate" class="interest-img">
-  </div>
   <div class="interest-text">
     <p>Funding of property investments and development projects:</p>
     <div class="interest-item">
@@ -34,9 +31,6 @@ permalink: /interests/
 
 ## Personal Finance Management
 <div class="interest-section">
-  <div class="interest-img-wrapper">
-    <img src="/assets/img/personal-finance.jpg" alt="Personal Finance" class="interest-img">
-  </div>
   <div class="interest-text">
     <p>Strategies and tools to manage personal financial health:</p>
     <div class="interest-item">
@@ -58,9 +52,6 @@ permalink: /interests/
 
 ## Private Equity
 <div class="interest-section">
-  <div class="interest-img-wrapper">
-    <img src="/assets/img/private-equity.jpg" alt="Private Equity" class="interest-img">
-  </div>
   <div class="interest-text">
     <p>Investing in private companies and working to improve their performance before selling at a profit:</p>
     <div class="interest-item">
@@ -78,9 +69,6 @@ permalink: /interests/
 
 ## Asset Management
 <div class="interest-section">
-  <div class="interest-img-wrapper">
-    <img src="/assets/img/asset-management.jpg" alt="Asset Management" class="interest-img">
-  </div>
   <div class="interest-text">
     <p>Managing investments on behalf of clients:</p>
     <div class="interest-item">
@@ -98,9 +86,6 @@ permalink: /interests/
 
 ## Data Analytics
 <div class="interest-section">
-  <div class="interest-img-wrapper">
-    <img src="/assets/img/data-analytics.jpg" alt="Data Analytics" class="interest-img">
-  </div>
   <div class="interest-text">
     <p>Analyzing data to uncover insights and drive decision-making:</p>
     <div class="interest-item">
@@ -133,4 +118,3 @@ permalink: /interests/
     </div>
   </div>
 </div>
-
