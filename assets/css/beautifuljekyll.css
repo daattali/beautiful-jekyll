@@ -1124,17 +1124,6 @@ pre {
   }
 }
 
-:root {
-  --body-font: 'Open Sans', sans-serif;
-}
-
-body {
-  font-family: var(--body-font);
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -1148,6 +1137,10 @@ nav {
   border: 1px solid #ddd;
   border-radius: 5px;
   text-align: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays on top */
 }
 
 nav ul {

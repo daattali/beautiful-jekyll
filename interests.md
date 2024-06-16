@@ -4,9 +4,9 @@ title: Interests
 permalink: /interests/
 ---
 
-# My Interests
+# Here are some of my interests:
 
-Here are some of my interests:
+
 
 ---
 layout: page
