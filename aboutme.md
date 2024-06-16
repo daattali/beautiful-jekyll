@@ -110,7 +110,7 @@ subtitle: Sophia Mick
 <section id="skills">
   <h2>Skills</h2>
 
-  <p><strong>Software Skills:</strong> Proficient in Excel, Python, Tableau, MySQL, R Studio, PowerPoint, Canva, C++<br>
-  <strong>General Skills:</strong> Project management, problem solving, verbal and written communication, analytical thinking, planning and scheduling, budgeting, data analysis, data visualization</p>
+  <p><strong>Software Skills:</strong> Proficient in Excel, Python, Tableau, MySQL, R Studio, PowerPoint, Canva<br>
+  <strong>General Skills:</strong> Project management, problem solving, verbal and written communication, analytical thinking, planning and scheduling, budgeting, data analysis</p>
 </section>
 
