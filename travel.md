@@ -4,8 +4,6 @@ title: My Travels
 permalink: /travels/
 ---
 
-# My Travels
-
 Welcome to my travel page! Here, you'll find stories and photos from my various travels around the world.
 
 ## Recent Trips
