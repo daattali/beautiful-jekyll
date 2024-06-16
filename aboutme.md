@@ -4,7 +4,6 @@ title: About me
 subtitle: Sophia Mick
 ---
 
-# About Me
 
 ## Sophia Mick
 **Location:** East Lansing, MI  
@@ -31,6 +30,15 @@ subtitle: Sophia Mick
 ---
 
 ### Professional Experience
+
+#### Tivity Health, Franklin, TN
+**Role:** Finance Transformation Intern
+**Dates:** May 2024 – Present  
+**Responsibilities:**
+- Analyze crucial financial data and present budget visualizations.
+- Convert data storage for ease of analysis in new acquisition.
+- Consolidate and convert essential reports between software.
+- Write Python programs analyze hundreds of weekly reports.
 
 #### Michigan State University, East Lansing, MI
 **Role:** Algorithmic Thinking and Programming Undergraduate Learning Assistant  
