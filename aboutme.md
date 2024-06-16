@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: About.
 subtitle: Sophia Mick
 ---
 <div class="profile-container">

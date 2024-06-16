@@ -21,9 +21,9 @@ author: Sophia Mick
 
 navbar-links:
   About Me: "aboutme"
-  Contact: "contact"
   Interests: "interests"
   Travels: "travels"
+  Contact: "contact"
 # Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"

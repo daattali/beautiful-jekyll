@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Contact.
 ---
 <header>
   <p>Feel free to reach out to me through any of the following methods:</p>

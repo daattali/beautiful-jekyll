@@ -137,21 +137,24 @@ let BeautifulJekyllJS = {
     });
   },
 
-  initGalleries : function() {
-    const toggleButtons = document.querySelectorAll('.toggle-button');
-    toggleButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const gallery = document.getElementById(this.dataset.gallery);
-        if (gallery.style.display === "none" || gallery.style.display === "") {
-          gallery.style.display = "block";
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggleButtons = document.querySelectorAll('.toggle-button');
+    toggleButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var galleryId = button.getAttribute('data-gallery');
+        var gallery = document.getElementById(galleryId);
+        if (gallery.style.display === 'none' || gallery.style.display === '') {
+          gallery.style.display = 'grid';
         } else {
-          gallery.style.display = "none";
+          gallery.style.display = 'none';
         }
       });
     });
-  }
+  });
+  
 };
 
 // 2fc73a3a967e97599c9763d05e564189
 
-document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);

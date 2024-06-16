@@ -1,11 +1,7 @@
 ---
 layout: page
-title: Interests
+title: Interests.
 permalink: /interests/
----
-
-# Here are some of my interests:
-
 ---
 
 ## Real Estate Finance
