@@ -4,4 +4,34 @@ title: Sophia Mick's Portfolio
 subtitle: Learn more about me!
 ---
 
-<img src="/assets/img/website-img.JPG" alt="My Profile Picture">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <style>
+    .responsive-img-container {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+    .responsive-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: top;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+
+  <p>And Go Green!</p>
+
+  <div class="responsive-img-container">
+    <img src="/assets/img/website-img.JPG" alt="My Profile Picture" class="responsive-img">
+  </div>
+
+</body>
+</html>
