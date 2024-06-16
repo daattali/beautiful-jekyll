@@ -1124,6 +1124,17 @@ pre {
   }
 }
 
+:root {
+  --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -1190,6 +1201,7 @@ p {
 ul {
   padding-left: 20px;
   margin-bottom: 20px;
+  line-height: 1.8;
 }
 
 ul li {
@@ -1198,4 +1210,18 @@ ul li {
 
 strong {
   font-weight: bold;
+}
+
+.responsibilities {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.responsibilities ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.responsibilities ul li {
+  margin-bottom: 10px;
 }

@@ -45,34 +45,40 @@ subtitle: Sophia Mick
   <p><strong>Role:</strong> Finance Transformation Intern<br>
   <strong>Dates:</strong> May 2024 – Present<br>
   <strong>Responsibilities:</strong></p>
-  <ul>
-    <li>Analyze crucial financial data and present budget visualizations.</li>
-    <li>Convert data storage for ease of analysis in new acquisition.</li>
-    <li>Consolidate and convert essential reports between software.</li>
-    <li>Write Python programs analyze hundreds of weekly reports.</li>
-  </ul>
+  <div class="responsibilities">
+    <ul>
+      <li>Analyze crucial financial data and present budget visualizations.</li>
+      <li>Convert data storage for ease of analysis in new acquisition.</li>
+      <li>Consolidate and convert essential reports between software.</li>
+      <li>Write Python programs analyze hundreds of weekly reports.</li>
+    </ul>
+  </div>
 
   <h3>Michigan State University, East Lansing, MI</h3>
   <p><strong>Role:</strong> Algorithmic Thinking and Programming Undergraduate Learning Assistant<br>
   <strong>Dates:</strong> Aug 2023 – Present<br>
   <strong>Responsibilities:</strong></p>
-  <ul>
-    <li>Teach students how to program with Python proficiently through analytical thinking.</li>
-    <li>Lead a class of students through a flipped classroom format, presenting weekly.</li>
-    <li>Coordinate class content for students with limited programming backgrounds, striving for all students to achieve high grades.</li>
-    <li>Teach two days each week, attend meetings, work with professors, and monitor online question forums.</li>
-  </ul>
+  <div class="responsibilities">
+    <ul>
+      <li>Teach students how to program with Python proficiently through analytical thinking.</li>
+      <li>Lead a class of students through a flipped classroom format, presenting weekly.</li>
+      <li>Coordinate class content for students with limited programming backgrounds, striving for all students to achieve high grades.</li>
+      <li>Teach two days each week, attend meetings, work with professors, and monitor online question forums.</li>
+    </ul>
+  </div>
 
   <h3>Bittersweet Rd. Family Dentists, Granger, IN</h3>
   <p><strong>Role:</strong> Lab Assistant<br>
   <strong>Dates:</strong> May 2018 – Aug. 2022<br>
   <strong>Responsibilities:</strong></p>
-  <ul>
-    <li>Run specialized lab equipment and utilize specialized skills to prepare doctors for appointments.</li>
-    <li>Follow OSHA regulations while strictly adhering to a patient schedule in a timely manner.</li>
-    <li>Implement technical knowledge of medical equipment for cleaning and prepping lab plates for appointments.</li>
-    <li>Perform non-surgical medical procedures and assist in surgical procedures.</li>
-  </ul>
+  <div class="responsibilities">
+    <ul>
+      <li>Run specialized lab equipment and utilize specialized skills to prepare doctors for appointments.</li>
+      <li>Follow OSHA regulations while strictly adhering to a patient schedule in a timely manner.</li>
+      <li>Implement technical knowledge of medical equipment for cleaning and prepping lab plates for appointments.</li>
+      <li>Perform non-surgical medical procedures and assist in surgical procedures.</li>
+    </ul>
+  </div>
 </section>
 
 <section id="leadership">
@@ -82,21 +88,25 @@ subtitle: Sophia Mick
   <p><strong>Role:</strong> Volunteer Coordinator<br>
   <strong>Dates:</strong> Aug. 2021 – Present<br>
   <strong>Responsibilities:</strong></p>
-  <ul>
-    <li>Community outreach and event organization for over 200 members.</li>
-    <li>Networking with community leaders.</li>
-    <li>Lead volunteers in weekly events.</li>
-  </ul>
+  <div class="responsibilities">
+    <ul>
+      <li>Community outreach and event organization for over 200 members.</li>
+      <li>Networking with community leaders.</li>
+      <li>Lead volunteers in weekly events.</li>
+    </ul>
+  </div>
 
   <h3>Michigan State Powerlifting Club, Board Member</h3>
   <p><strong>Role:</strong> Social Media Manager<br>
   <strong>Dates:</strong> Aug. 2021 – 2022<br>
   <strong>Responsibilities:</strong></p>
-  <ul>
-    <li>Organize meetings and events for over 200 members.</li>
-    <li>Increase meet participation through strategic marketing.</li>
-    <li>Drive competitive meet rankings.</li>
-  </ul>
+  <div class="responsibilities">
+    <ul>
+      <li>Organize meetings and events for over 200 members.</li>
+      <li>Increase meet participation through strategic marketing.</li>
+      <li>Drive competitive meet rankings.</li>
+    </ul>
+  </div>
 
   <h3>Memberships & Volunteering</h3>
   <ul>
@@ -113,4 +123,3 @@ subtitle: Sophia Mick
   <p><strong>Software Skills:</strong> Proficient in Excel, Python, Tableau, MySQL, R Studio, PowerPoint, Canva<br>
   <strong>General Skills:</strong> Project management, problem solving, verbal and written communication, analytical thinking, planning and scheduling, budgeting, data analysis</p>
 </section>
-
