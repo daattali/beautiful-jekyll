@@ -1387,3 +1387,16 @@ body {
 .gallery img:hover {
   transform: scale(1.1);
 }
+
+.profile-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd; /* Optional: add a border */
+}
