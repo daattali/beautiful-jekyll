@@ -4,8 +4,8 @@ title: About me
 subtitle: Sophia Mick
 ---
 
+# Sophia Mick
 
-## Sophia Mick
 **Location:** East Lansing, MI  
 **Phone:** (269) 635-0397  
 **Email:** [micksoph@msu.edu](mailto:micksoph@msu.edu)  
@@ -13,80 +13,91 @@ subtitle: Sophia Mick
 
 ---
 
-### Education
+<nav>
+  <ul>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Professional Experience</a></li>
+    <li><a href="#leadership">Leadership & Honors</a></li>
+    <li><a href="#skills">Skills</a></li>
+  </ul>
+</nav>
 
-#### Michigan State University, Broad College of Business, East Lansing, MI
-**Major:** Finance  
-**Minor:** Computer Science  
-**Dates:** Jan. 2021 – Dec. 2024  
-**GPA:** Major GPA: 3.8, Cumulative GPA: 3.67  
-**Honors:** Dean’s List
+<section id="education">
+  ### Education
 
-#### International Education Abroad, University of Athens, Athens, Greece
-**Courses:** 10 credits in Business Law and Ethics  
-**Dates:** July 2023  
-**GPA:** 4.0
+  #### Michigan State University, Broad College of Business, East Lansing, MI
+  **Major:** Finance  
+  **Minor:** Computer Science  
+  **Dates:** Jan. 2021 – Dec. 2024  
+  **GPA:** Major GPA: 3.8, Cumulative GPA: 3.67  
+  **Honors:** Dean’s List
 
----
+  #### International Education Abroad, University of Athens, Athens, Greece
+  **Courses:** 10 credits in Business Law and Ethics  
+  **Dates:** July 2023  
+  **GPA:** 4.0
+</section>
 
-### Professional Experience
+<section id="experience">
+  ### Professional Experience
 
-#### Tivity Health, Franklin, TN
-**Role:** Finance Transformation Intern
-**Dates:** May 2024 – Present  
-**Responsibilities:**
-- Analyze crucial financial data and present budget visualizations.
-- Convert data storage for ease of analysis in new acquisition.
-- Consolidate and convert essential reports between software.
-- Write Python programs analyze hundreds of weekly reports.
+  #### Tivity Health, Franklin, TN
+  **Role:** Finance Transformation Intern  
+  **Dates:** May 2024 – Present  
+  **Responsibilities:**
+  - Analyze crucial financial data and present budget visualizations.
+  - Convert data storage for ease of analysis in new acquisition.
+  - Consolidate and convert essential reports between software.
+  - Write Python programs analyze hundreds of weekly reports.
 
-#### Michigan State University, East Lansing, MI
-**Role:** Algorithmic Thinking and Programming Undergraduate Learning Assistant  
-**Dates:** Aug 2023 – Present  
-**Responsibilities:**
-- Teach students how to program with Python proficiently through analytical thinking.
-- Lead a class of students through a flipped classroom format, presenting weekly.
-- Coordinate class content for students with limited programming backgrounds, striving for all students to achieve high grades.
-- Teach two days each week, attend meetings, work with professors, and monitor online question forums.
+  #### Michigan State University, East Lansing, MI
+  **Role:** Algorithmic Thinking and Programming Undergraduate Learning Assistant  
+  **Dates:** Aug 2023 – Present  
+  **Responsibilities:**
+  - Teach students how to program with Python proficiently through analytical thinking.
+  - Lead a class of students through a flipped classroom format, presenting weekly.
+  - Coordinate class content for students with limited programming backgrounds, striving for all students to achieve high grades.
+  - Teach two days each week, attend meetings, work with professors, and monitor online question forums.
 
-#### Bittersweet Rd. Family Dentists, Granger, IN
-**Role:** Lab Assistant  
-**Dates:** May 2018 – Aug. 2022  
-**Responsibilities:**
-- Run specialized lab equipment and utilize specialized skills to prepare doctors for appointments.
-- Follow OSHA regulations while strictly adhering to a patient schedule in a timely manner.
-- Implement technical knowledge of medical equipment for cleaning and prepping lab plates for appointments.
-- Perform non-surgical medical procedures and assist in surgical procedures.
+  #### Bittersweet Rd. Family Dentists, Granger, IN
+  **Role:** Lab Assistant  
+  **Dates:** May 2018 – Aug. 2022  
+  **Responsibilities:**
+  - Run specialized lab equipment and utilize specialized skills to prepare doctors for appointments.
+  - Follow OSHA regulations while strictly adhering to a patient schedule in a timely manner.
+  - Implement technical knowledge of medical equipment for cleaning and prepping lab plates for appointments.
+  - Perform non-surgical medical procedures and assist in surgical procedures.
+</section>
 
----
+<section id="leadership">
+  ### Leadership & Honors
 
-### Leadership & Honors
+  #### Spartans for Change, Board Member
+  **Role:** Volunteer Coordinator  
+  **Dates:** Aug. 2021 – Present  
+  **Responsibilities:**
+  - Community outreach and event organization for over 200 members.
+  - Networking with community leaders.
+  - Lead volunteers in weekly events.
 
-#### Spartans for Change, Board Member
-**Role:** Volunteer Coordinator  
-**Dates:** Aug. 2021 – Present  
-**Responsibilities:**
-- Community outreach and event organization for over 200 members.
-- Networking with community leaders.
-- Lead volunteers in weekly events.
+  #### Michigan State Powerlifting Club, Board Member
+  **Role:** Social Media Manager  
+  **Dates:** Aug. 2021 – 2022  
+  **Responsibilities:**
+  - Organize meetings and events for over 200 members.
+  - Increase meet participation through strategic marketing.
+  - Drive competitive meet rankings.
 
-#### Michigan State Powerlifting Club, Board Member
-**Role:** Social Media Manager  
-**Dates:** Aug. 2021 – 2022  
-**Responsibilities:**
-- Organize meetings and events for over 200 members.
-- Increase meet participation through strategic marketing.
-- Drive competitive meet rankings.
+  #### Memberships & Volunteering
+  - Women in Computing, Member (Aug. 2022 – 2023)
+  - Women in Business, Member (Aug. 2022 – 2023)
+  - Haven House, Volunteer (Aug. 2021 – Present)
+  - Greater Lansing Food Bank, Volunteer (Aug. 2021 – Present)
+</section>
 
-#### Memberships & Volunteering
-- Women in Computing, Member (Aug. 2022 – 2023)
-- Women in Business, Member (Aug. 2022 – 2023)
-- Haven House, Volunteer (Aug. 2021 – Present)
-- Greater Lansing Food Bank, Volunteer (Aug. 2021 – Present)
+<section id="skills">
+  ### Skills
 
----
-
-### Skills
-
-**Software Skills:** Proficient in Excel, Python, Tableau, MySQL, R Studio, PowerPoint, Canva  
-**General Skills:** Project management, problem solving, verbal and written communication, analytical thinking, planning and scheduling, budgeting, data analysis
+  **Software Skills:** Proficient in Excel, Python, Tableau, MySQL, R Studio, PowerPoint, Canva  
+  **General Skills:** Project management, problem solving, verbal and written communication, analytical thinking, planning and scheduling, budgeting, data analysis
+</section>
