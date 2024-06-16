@@ -1314,3 +1314,24 @@ header p {
 .contact-form button:hover {
   background: darken(var(--button-color), 10%);
 }
+
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .contact-form div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-form div > div {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .contact-form div > div:last-child {
+    margin-right: 0;
+  }
+}
