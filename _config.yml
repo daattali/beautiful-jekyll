@@ -20,8 +20,8 @@ author: 罗奕颖
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
+  关于我: "aboutme"
+  资源:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
