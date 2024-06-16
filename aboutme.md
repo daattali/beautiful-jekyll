@@ -3,7 +3,9 @@ layout: page
 title: About me
 subtitle: Sophia Mick
 ---
-
+<div class="profile-container">
+  <img src="/assets/img/profile.png" alt="Profile Picture" class="profile-pic">
+</div>
 ---
 
 <nav>
