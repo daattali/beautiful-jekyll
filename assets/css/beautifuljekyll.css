@@ -1132,25 +1132,28 @@ pre {
 
 nav {
   background: #f8f8f8;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  text-align: center;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #007BFF;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -1158,9 +1161,41 @@ nav ul li a:hover {
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+section:last-of-type {
+  border-bottom: none;
 }
 
 section h2 {
   margin-top: 0;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: bold;
 }
