@@ -1218,3 +1218,99 @@ strong {
 .responsibilities ul li {
   margin-bottom: 10px;
 }
+
+:root {
+  --body-font: 'Open Sans', sans-serif;
+  --primary-color: #007BFF;
+  --secondary-color: #f8f8f8;
+  --border-color: #ddd;
+  --button-color: #007BFF;
+  --button-text-color: #fff;
+}
+
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-info {
+  background: var(--secondary-color);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  background: var(--secondary-color);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background: darken(var(--button-color), 10%);
+}
