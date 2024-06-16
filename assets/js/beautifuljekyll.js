@@ -1,5 +1,3 @@
-// Dean Attali / Beautiful Jekyll 2023
-
 let BeautifulJekyllJS = {
 
   bigImgEl : null,
@@ -29,6 +27,9 @@ let BeautifulJekyllJS = {
     BeautifulJekyllJS.initImgs();
 
     BeautifulJekyllJS.initSearch();
+
+    // Initialize gallery toggle functionality
+    BeautifulJekyllJS.initGalleries();
   },
 
   initNavbar : function() {
@@ -47,7 +48,7 @@ let BeautifulJekyllJS = {
   },
 
   initImgs : function() {
-    // If the page was large images to randomly select from, choose an image
+    // If the page has large images to randomly select from, choose an image
     if ($("#header-big-imgs").length > 0) {
       BeautifulJekyllJS.bigImgEl = $("#header-big-imgs");
       BeautifulJekyllJS.numImgs = BeautifulJekyllJS.bigImgEl.attr("data-num-img");
@@ -133,6 +134,20 @@ let BeautifulJekyllJS = {
         $("#beautifuljekyll-search-overlay").hide();
         $("body").removeClass("overflow-hidden");
       }
+    });
+  },
+
+  initGalleries : function() {
+    const toggleButtons = document.querySelectorAll('.toggle-button');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const gallery = document.getElementById(this.dataset.gallery);
+        if (gallery.style.display === "none" || gallery.style.display === "") {
+          gallery.style.display = "block";
+        } else {
+          gallery.style.display = "none";
+        }
+      });
     });
   }
 };

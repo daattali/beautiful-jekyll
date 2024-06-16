@@ -2,9 +2,7 @@
 layout: page
 title: Contact
 ---
-
 <header>
-  <h1>Contact Me</h1>
   <p>Feel free to reach out to me through any of the following methods:</p>
 </header>
 

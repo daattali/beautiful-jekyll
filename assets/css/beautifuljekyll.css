@@ -1131,13 +1131,13 @@ pre {
 }
 
 nav {
-  background: #f8f8f8;
+  background: var(--secondary-color);
   padding: 15px;
   margin-bottom: 30px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   text-align: center;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0;
   z-index: 1000; /* Ensures it stays on top */
@@ -1156,7 +1156,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #007BFF;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -1167,7 +1167,7 @@ nav ul li a:hover {
 section {
   margin-bottom: 50px;
   padding: 20px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
 }
 
 section:last-of-type {
@@ -1334,4 +1334,56 @@ header p {
   .contact-form div > div:last-child {
     margin-right: 0;
   }
+}
+:root {
+  --body-font: 'Open Sans', sans-serif;
+  --primary-color: #007BFF;
+  --secondary-color: #f8f8f8;
+  --border-color: #ddd;
+  --button-color: #007BFF;
+  --button-text-color: #fff;
+}
+
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.travel-section {
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.toggle-button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.gallery {
+  display: none;
+  margin-top: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 200px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }

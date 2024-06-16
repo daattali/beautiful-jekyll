@@ -4,13 +4,6 @@ title: About me
 subtitle: Sophia Mick
 ---
 
-# Sophia Mick
-
-**Location:** East Lansing, MI  
-**Phone:** (269) 635-0397  
-**Email:** [micksoph@msu.edu](mailto:micksoph@msu.edu)  
-**LinkedIn:** [www.linkedin.com/in/sophiamick](https://www.linkedin.com/in/sophiamick)
-
 ---
 
 <nav>
