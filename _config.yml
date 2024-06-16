@@ -22,10 +22,11 @@ author: Sophia Mick
 navbar-links:
   About Me: "aboutme"
   Contact: "contact"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Travels: "travels"
+# Resources:
+#    - Beautiful Jekyll: "https://beautifuljekyll.com"
+#    - Learn markdown: "https://www.markdowntutorial.com/"
+#  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
