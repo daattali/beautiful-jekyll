@@ -1429,3 +1429,47 @@ body {
 .interest-section strong {
   color: #2c3e50; /* Adjust the color as needed */
 }
+
+.interest-section {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.interest-img-wrapper {
+  flex: 0 0 150px;
+  margin-right: 20px;
+}
+
+.interest-img {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #ddd; /* Optional: add a border */
+}
+
+.interest-text {
+  flex: 1;
+}
+
+.interest-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.interest-line {
+  width: 4px;
+  height: 100%;
+  background-color: #2c3e50; /* Navy line color */
+  margin-right: 10px;
+}
+
+.interest-section strong {
+  color: #2c3e50; /* Adjust the color as needed */
+}
+
+.interest-section p {
+  margin: 0;
+}
