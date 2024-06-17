@@ -1,6 +1,6 @@
 ---
 layout: page
-title: My Travels.
+title: My Travels
 permalink: /travels/
 ---
 
@@ -11,7 +11,7 @@ Welcome to my travel page! Here, you'll find stories and photos from my various 
 ## Recent Trips
 
 ### Trip to Italy
-I spent 2 weeks in Italy traveling the Amalfi coast. Here I visited numerous historical sites including the Colosseum, Pompei, Pantheon, Saint Marks Basilica, Sistene Chapel, Trevi Fountain, Palazzo Vecchio, and a variety of famous museums.
+I spent 2 weeks in Italy traveling the Amalfi coast. Here I visited numerous historical sites including the Colosseum, Pompei, Pantheon, Saint Marks Basilica, Sistine Chapel, Trevi Fountain, Palazzo Vecchio, and a variety of famous museums.
 <div class="travel-section">
   <button class="toggle-button" data-gallery="gallery-italy">View Photos</button>
   <div id="gallery-italy" class="gallery">

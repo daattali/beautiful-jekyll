@@ -1351,68 +1351,36 @@ body {
   padding: 0;
 }
 
-/* Style for travel sections */
 .travel-section {
-  margin-bottom: 40px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .toggle-button {
   background-color: #004080;
   color: white;
-  padding: 10px 20px;
-  text-decoration: none;
   border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .toggle-button:hover {
-  background-color: #002060;
+  background-color: #003060;
 }
 
 .gallery {
   display: none;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .gallery img {
   width: 100%;
-  max-width: 300px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* General styling for the page */
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-}
-
-h1, h2, h3 {
-  color: #333;
-}
-
-p {
-  color: #555;
-  text-align: left;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-h2 {
-  margin-top: 40px;
-}
-
-h3 {
-  margin-top: 30px;
-}
-
 
 
 .profile-container {
