@@ -1422,21 +1422,24 @@ body {
   margin: 0;
 }
 
-/* Responsive image container */
 .responsive-img-container {
   width: 100%;
   height: 800px;
   overflow: hidden;
-  margin: 20px 0; /* Add some margin for spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-/* Responsive image */
 .responsive-img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  border-radius: 50%;
   object-fit: cover;
-  object-position: top;
+  object-position: center top;
 }
+
 
 /* General styling for consistency */
 body {
