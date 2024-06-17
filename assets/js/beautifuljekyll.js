@@ -140,11 +140,11 @@ let BeautifulJekyllJS = {
 
 
   document.addEventListener('DOMContentLoaded', function () {
-    var toggleButtons = document.querySelectorAll('.toggle-button');
-    toggleButtons.forEach(function (button) {
+    const toggleButtons = document.querySelectorAll('.toggle-button');
+    toggleButtons.forEach(button => {
       button.addEventListener('click', function () {
-        var galleryId = button.getAttribute('data-gallery');
-        var gallery = document.getElementById(galleryId);
+        const galleryId = button.getAttribute('data-gallery');
+        const gallery = document.getElementById(galleryId);
         if (gallery.style.display === 'none' || gallery.style.display === '') {
           gallery.style.display = 'grid';
         } else {
@@ -153,6 +153,8 @@ let BeautifulJekyllJS = {
       });
     });
   });
+  
+  
   
 };
 

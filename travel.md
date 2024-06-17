@@ -22,7 +22,7 @@ I spent 2 weeks in Italy traveling the Amalfi coast. Here I visited numerous his
 </div>
 
 ### Trip to Greece
-I studied abroad in Greece where I had the opportunity to work with Greek College Students and participate in the study of Business, Law, and Ethics. Over the span of 4 weeks, we were based in Athens, Syros, and Nafplion. I learned about the Greek economic system and how it compares to that in the United States, law and policy related to key business operations, and Greek history and culture. I was tought by professors from my home college as well as professors from the University of Athens and corporate representatives from companies like Coca-Cola. We hiked monuments, visited museums, and took cooking and dancing classes.
+I studied abroad in Greece where I had the opportunity to work with Greek College Students and participate in the study of Business, Law, and Ethics. Over the span of 4 weeks, we were based in Athens, Syros, and Nafplion. I learned about the Greek economic system and how it compares to that in the United States, law and policy related to key business operations, and Greek history and culture. I was taught by professors from my home college as well as professors from the University of Athens and corporate representatives from companies like Coca-Cola. We hiked monuments, visited museums, and took cooking and dancing classes.
 <div class="travel-section">
   <button class="toggle-button" data-gallery="gallery-greece">View Photos</button>
   <div id="gallery-greece" class="gallery">
@@ -33,7 +33,7 @@ I studied abroad in Greece where I had the opportunity to work with Greek Colleg
 </div>
 
 ### Trip to Spain
-In my travels to Spain, I had the opportunity to experience new cusine and art while learning about Spanish customs. 
+In my travels to Spain, I had the opportunity to experience new cuisine and art while learning about Spanish customs.
 <div class="travel-section">
   <button class="toggle-button" data-gallery="gallery-spain">View Photos</button>
   <div id="gallery-spain" class="gallery">

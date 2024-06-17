@@ -24,13 +24,11 @@ subtitle: Sophia Mick
   <p><strong>Major:</strong> Finance<br>
   <strong>Minor:</strong> Computer Science<br>
   <strong>Dates:</strong> Jan. 2021 – Dec. 2024<br>
-  <strong>GPA:</strong> Major GPA: 3.8, Cumulative GPA: 3.67<br>
   <strong>Honors:</strong> Dean’s List</p>
 
   <h3>International Education Abroad, University of Athens, Athens, Greece</h3>
   <p><strong>Courses:</strong> 10 credits in Business Law and Ethics<br>
   <strong>Dates:</strong> July 2023<br>
-  <strong>GPA:</strong> 4.0</p>
 </section>
 
 <section id="experience">
