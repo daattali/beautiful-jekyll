@@ -4,7 +4,7 @@ title: No sabes en que estado se encuentra tú Cliente, aquí te lo mostramos.
 subtitle: Clientes- Estado de Cliente
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
-tags: [clientes, comercial, factoring, estado, riesgo]
+tags: [clientes, comercial, factoring, estado, riesgo, deudor]
 comments: false
 author: Catalina Pinilla
 ---
