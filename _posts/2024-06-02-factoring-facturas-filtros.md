@@ -20,4 +20,4 @@ Con esto podrás ver la información solo de ese Deudor y seleccionar las column
   <img src="https://cdn.capitalexpress.cl/img/filtrodefiltrofacturas3.png" alt="filtrodefiltrofacturas3">
 </p>
 
-Con  los filtros que necesitas consultar activos podrás ver la información precisa que estas buscando sin datos que te interrumpan en tu negocio.
+Con los filtros que necesitas consultar activos podrás ver la información precisa que estas buscando sin datos que te interrumpan tu negocio.
