@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ¿Quieres evaluar tu competencia¿, te indicaremos como.
+title: ¿Quieres evaluar tu competencia?, te indicaremos como.
 subtitle: Clientes- Clientes
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
