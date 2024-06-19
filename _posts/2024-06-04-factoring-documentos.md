@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quieres ver los documentos que han sido adquiridos por Capital Express Servicios Financieros, ingresa de esta forma.
+title: ¿Quieres ver los documentos de tu cartera?, ingresa de esta forma.
 subtitle: Factoring - Documentos.
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
