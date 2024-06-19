@@ -8,7 +8,7 @@ tags: [documentos, comercial, cobranza]
 comments: false
 author: Catalina Pinilla
 ---
-Para navegar en este apartado contaras con los filtros de Cliente, Ejecutivo, Rango de fecha y folio. Nos encontraremos con todos los Documentos que han sido adquiridos por **Capital Express Servicios Financieros**, Facturas, cheques, Créditos directos, etc. Contarás con la opción de *Limpiar Filtros* en caso que quieras reiniciar tu busqueda. 
+Para navegar en este apartado contaras con los filtros de `Cliente`, `Ejecutivo`, `Rango de fecha` y `folio`. Nos encontraremos con todos los documentos asociados a tu cartera de clientes, Facturas, cheques, Créditos directos, etc. Contarás con la opción de *Limpiar Filtros* en caso que quieras reiniciar tu búsqueda. 
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/docfiltro1.png" alt="docfiltro1">
