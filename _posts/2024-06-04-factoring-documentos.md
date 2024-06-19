@@ -15,7 +15,7 @@ Para navegar en este apartado contaras con los filtros de `Cliente`, `Ejecutivo`
 </p>
 
 
-También contaremos con un filtrado de estado, que ayudará a ver si el documento se encuentra Vigente, Moroso, Cancelado, etc. Para tener una visión de como proceder con cada caso. 
+También cuentas con un filtrado de estado, que ayudará a ver si el documento se encuentra Vigente, Moroso, Cancelado, etc.
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/filtroestadodoc1.png" alt="filtroestadodoc">
