@@ -14,7 +14,7 @@ Junto con los filtros de Cliente, Ejecutivo, Rango de fecha y Folio, cuentas con
   <img src="https://cdn.capitalexpress.cl/img/filtrodefiltrofacturas1.png" alt="filtrodefiltrofacturas1">
 </p>
 
-Con esto podrás ver la información solo de ese Deudor, además junto con eso podrás seleccionar las columnas que quieres que se visualicen, eliminando las que no tienen información relevante para el caso que buscas. 
+Con esto podrás ver la información solo de ese Deudor y seleccionar las columnas que quieres visualizar, eliminando las que no tienen información relevante para el caso que buscas. 
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/filtrodefiltrofacturas3.png" alt="filtrodefiltrofacturas3">
