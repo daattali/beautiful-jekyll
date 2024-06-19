@@ -16,7 +16,7 @@ Al lado derecho, podemos ver las empresas de Factoring ordenados en preferencia 
   <img src="https://cdn.capitalexpress.cl/img/topfactoring2.png" alt="topfactoring">
 </p>
 
-En la parte inferior veras el detalle de la tabla de superior, pero separada por periodos, estos estaran separados por rangos de los días del mes y los que a su vez se encontrarán separados por los meses del año en curso.
+En la parte inferior veras el detalle de la venta, pero separada por periodos, estos estarán separados por rangos de los días del mes y los que a su vez se encontrarán separados por los meses del año en curso.
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/comprayventaperiodo3.png" alt="comprayventaperiodo">
