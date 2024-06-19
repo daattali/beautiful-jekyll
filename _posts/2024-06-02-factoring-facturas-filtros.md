@@ -8,7 +8,7 @@ tags: [facturas, comercial, búsqueda, buscar, filtro]
 comments: false
 author: Catalina Pinilla
 ---
-Junto con los filtros de Cliente, Ejecutivo, Rango de fecha y Folio, cuentas con la opción de filtrar por *Deudor*.
+Junto con los filtros de `Cliente`, `Ejecutivo`, `Rango de fecha` y `Folio`, cuentas con la opción de filtrar por *Deudor*.
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/filtrodefiltrofacturas1.png" alt="filtrodefiltrofacturas1">
