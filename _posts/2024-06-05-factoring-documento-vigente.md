@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ¿Quieres saber si el documento que buscas esta vigente o moroso?, aqui te indicamos como.
+title: ¿Quieres saber si el documento que buscas esta vigente o moroso?, aquí te indicamos como.
 subtitle: Documentos - Estado vigente.
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
