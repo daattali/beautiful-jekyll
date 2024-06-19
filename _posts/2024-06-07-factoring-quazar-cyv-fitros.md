@@ -4,7 +4,7 @@ title: Sintetiza la información de los documentos de tu Cliente
 subtitle: Compras, ventas y Factorización
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
-tags: [quazar, comercial, riesgo, factoring, filtros]
+tags: [comercial, riesgo, factoring, filtros]
 comments: false
 author: Catalina Pinilla
 ---
