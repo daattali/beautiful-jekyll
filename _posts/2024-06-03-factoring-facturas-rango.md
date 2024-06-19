@@ -15,7 +15,7 @@ En pantalla podrás ver el recuadro de *Seleccionar fecha*.
 </p>
 
 
-Podrás notar que el listado se filtró, junto con esto debes activar el switch de Crm para que asi veas reflejadas solo las facturas que pueden ser compradas por **Capital Express Servicios Financieros** en tu pantalla.
+Junto con esto debes activar el switch de CRM para que veas reflejadas solo las facturas que pueden ser compradas por **Capital Express Servicios Financieros** en tu pantalla.
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/crmboton1.png" alt="crmboton">
