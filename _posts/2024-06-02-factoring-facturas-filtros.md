@@ -4,7 +4,7 @@ title: Filtra la información en pantalla y mejora tus resultados.
 subtitle: Facturas - Filtros
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
-tags: [facturas, comercial, burcar, filtro]
+tags: [facturas, comercial, búsqueda, buscar, filtro]
 comments: false
 author: Catalina Pinilla
 ---
