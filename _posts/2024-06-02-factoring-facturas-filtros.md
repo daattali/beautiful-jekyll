@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtra la información en pantalla y  sintetizar los resultados.
+title: Filtra la información en pantalla y mejora tus resultados.
 subtitle: Facturas - Filtros
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
