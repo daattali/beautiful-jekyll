@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Acitva Rangos de fecha y el filtro CRM para ver que facturas podemos comprar. 
+title: Utiliza rangos de fecha y el filtro CRM para ver que facturas puedes comprar. 
 subtitle: Facturas - Rangos y facturas disponibles.
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
