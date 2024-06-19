@@ -13,10 +13,9 @@ author: Catalina Pinilla
  
  Si necesitas eliminar tus selecciones puedes limpiar los filtros que aplicaste en *Limpiar filtros*.
 
-<p align="center">
-  <img src="https://cdn.capitalexpress.cl/img/filtrofactura3.png" alt="limpiarfiltro">
-</p>
 
  *aquí un ejemplo*
 
-
+<p align="center">
+  <img src="https://cdn.capitalexpress.cl/img/filtrofactura3.png" alt="limpiarfiltro">
+</p>
