@@ -4,7 +4,7 @@ title: Acitva Rangos de fecha y el filtro CRM para ver que facturas podemos comp
 subtitle: Facturas - Rangos y facturas disponibles.
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
-tags: [facturas, comercial, burcar, filtro, compra]
+tags: [facturas, comercial, buscar, filtro, ventas, compras búsqueda]
 comments: false
 author: Catalina Pinilla
 ---
