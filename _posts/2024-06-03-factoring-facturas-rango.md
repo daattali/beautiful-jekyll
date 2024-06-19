@@ -21,4 +21,4 @@ Junto con esto debes activar el switch de CRM para que veas reflejadas solo las 
   <img src="https://cdn.capitalexpress.cl/img/crmboton1.png" alt="crmboton">
 </p>
 
-Así estarás seguro que los docuemntos en el listado son los que se pueden adquirir.
+Así estarás seguro que los documentos en el listado son los que se pueden adquirir, o fueron adquiridos por la competencia :(.
