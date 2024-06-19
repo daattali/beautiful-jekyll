@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sintetiza la información de los documentos de tu Cliente
-subtitle: Quazar - Compras, ventas y Factorizacion filtros
+subtitle: Compras, ventas y Factorización
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
 tags: [quazar, comercial, riesgo, factoring, filtros]
