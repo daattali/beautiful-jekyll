@@ -9,7 +9,7 @@ comments: false
 author: Catalina Pinilla
 ---
 
-Según el Cliente al cual quieres buscar, es aconsejable que indiques un periodo de fechas en el cual estas realizando la consulta, aplica la mayor cantidad de filtros en la parte superior para que la información siempre sea lo más acotada posible. Aquí nos mostrarán todos los documentos comprados por **Capital Express Servicios Financieros**, pero para saber cuales tienen un estado *vigente* utilizaremos la herramienta *filtrar por estado* y ahí dejaremos seleccionada solo la opción vigente y obtendremos lo que buscamos.
+Según el Cliente al cual quieres buscar, es aconsejable que indiques un periodo de fechas en el cual estas realizando la consulta, aplica la mayor cantidad de filtros en la parte superior para que la información siempre sea lo más precisa posible. Aquí nos mostrarán todos los documentos de tu cartera de clientes, pero para saber cuales tienen un estado *vigente* utilizaremos la herramienta *filtrar por estado* y ahí dejaremos seleccionada solo la opción vigente y obtendremos lo que buscamos.
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/filtromoradoc2.png" alt="filtroporestadodoc2">
