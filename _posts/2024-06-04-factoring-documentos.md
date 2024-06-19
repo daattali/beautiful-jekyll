@@ -23,15 +23,14 @@ También contaremos con un filtrado de estado, que ayudará a ver si el document
 
 En la última columna encontrarás el estado de *cobranza* que en caso que el documento cuente con información en ese apartado, podrás consultar aquí la información.
 
+*Aquí puedes ver la columna mencionada* 
+
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/cobranzadoc1.png" alt="cobranzadoc1">
 </p>
 
-
-*Aquí puedes ver la columna mencionada*
+*Esta es la información que encontrarás en este apartado*
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/estadodecobranza1.png" alt="estadodecobranza1">
 </p>
-
-*Esta es la información que encontrarás en este apartado*
