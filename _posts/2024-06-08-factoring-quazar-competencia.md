@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Necesitas ver como trabaja tu Cliete con los otros Factoring, te indicaremos como.
+title: ¿Quieres evaluar tu competencia¿, te indicaremos como.
 subtitle: Clientes- Clientes
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
