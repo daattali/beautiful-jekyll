@@ -57,9 +57,6 @@ members:
           - name: Wen Hui Leng
             photo_url: /img/members/wleng.jpg
             web_url: 
-          - name: TJ Vitchutripop
-            photo_url: /img/members/tj.jpg
-            web_url: https://tjvitchutripop.github.io/
           - name: Yishu Li
             photo_url: /img/members/yishu.jpg
             web_url:
@@ -171,6 +168,8 @@ members:
       - name: Interns
         full: False
         list:
+                   - name: Teeratham (TJ) Vitchutripop (RISS) -> Yale PhD
+                     web_url: https://tjvitchutripop.github.io/
                    - name: Gunjan Sethi (MRSD) -> Raven Industries
                    - name: Khush Agrawal (RISS)
                    - name: Pengsheng Guo
