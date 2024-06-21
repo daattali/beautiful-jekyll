@@ -19,3 +19,16 @@ author: Catalina Pinilla
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/filtrofactura3.png" alt="limpiarfiltro">
 </p>
+
+*Aquí te dejamos un vídeo explicando lo mencionado* 
+
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproducir Video desde Google Drive</title>
+</head>
+<body>
+    <iframe src="https://cdn.capitalexpress.cl/video/MódulodeFacturas.mp4" width="640" height="360" frameborder="0" allowfullscreen="true" allow="autoplay; encrypted-media"></iframe>
+</body>

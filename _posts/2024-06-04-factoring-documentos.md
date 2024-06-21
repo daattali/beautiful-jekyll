@@ -34,3 +34,9 @@ En la última columna encontrarás el estado de *cobranza* que en caso que el do
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/estadodecobranza1.png" alt="estadodecobranza1">
 </p>
+
+*Aquí te dejamos un vídeo explicando lo mencionado* 
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/módulodedocumentos.mp4" type="video/mp4">
+</video>

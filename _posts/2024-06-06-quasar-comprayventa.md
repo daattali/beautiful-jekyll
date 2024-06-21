@@ -21,3 +21,9 @@ En la parte inferior veras el detalle de la venta, pero separada por periodos, e
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/comprayventaperiodo3.png" alt="comprayventaperiodo">
 </p>
+
+*Aquí te dejamos un vídeo explicando lo mencionado* 
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/MódulodeComprasyVentas.mp4" type="video/mp4">
+</video>

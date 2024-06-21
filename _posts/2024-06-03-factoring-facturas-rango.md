@@ -22,3 +22,16 @@ Junto con esto debes activar el switch de CRM para que veas reflejadas solo las 
 </p>
 
 Así estarás seguro que los documentos en el listado son los que se pueden adquirir, o fueron adquiridos por la competencia :(.
+
+*Aquí te dejamos un vídeo explicando lo mencionado* 
+
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproducir Video desde Google Drive</title>
+</head>
+<body>
+    <iframe src="https://cdn.capitalexpress.cl/video/Obtener_facturas_de_un_cliente_en_el_rango_6 meses_que_se_puedan_comprar.mp4" width="640" height="360" frameborder="0" allowfullscreen="true" allow="autoplay; encrypted-media"></iframe>
+</body>

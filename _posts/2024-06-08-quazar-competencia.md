@@ -26,3 +26,9 @@ En la parte inferior verás el resumen de una año de los Documentos adquiridos 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/queazarcomprafactoringaño.png" alt="queazarcomprafactoringaño">
 </p>
+
+*Aquí te dejamos un vídeo explicando lo mencionado* 
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/MódulodeComprasyVentas.mp4" type="video/mp4">
+</video>

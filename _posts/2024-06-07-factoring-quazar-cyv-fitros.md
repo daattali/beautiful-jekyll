@@ -23,6 +23,14 @@ En pantalla tendrás toda la información de la cartera de tu Cliente, por lo qe
   <img src="https://cdn.capitalexpress.cl/img/compraventadeudor.png" alt="compraventadeudor">
 </p>
 
+*Aquí te dejamos un vídeo explicando lo mencionado* 
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/quasarfiltro1.mp4" type="video/mp4">
+</video>
+
+
+
 Otro filtro muy útil es el de *Calendario* el cual puedes usar si necesitas consultar un periodo en específico o acotar un rango de fechas que tú necesites definir, lo encontraras en *Selecciona una fecha*
 
 
@@ -54,3 +62,9 @@ Otro filtro muy útil es el de *Calendario* el cual puedes usar si necesitas con
       <img src="https://cdn.capitalexpress.cl/img/calendarioquazar2.png" alt="Calendario Quazar 2">
     </div>
   </div>
+
+*Aquí un ejemplo*
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/Obtener_el_analisis_de_competencia_de_un_cliente_en_un_rango_de_6_meses_y_de_un_factoring_en_especifico.mp4" type="video/mp4">
+</video>
