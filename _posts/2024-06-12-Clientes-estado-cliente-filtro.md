@@ -21,6 +21,11 @@ Puedes ver como desaparecieron los resultados de las otras tablas, mostrando sol
   <img src="https://cdn.capitalexpress.cl/img/resultrefuga.png" alt="resultrefuga">
 </p>
 
+*Aquí un ejemplo* 
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/Filtrar_el_estado_de_clientes_de_un_ejecutivo_pero_con_estado_en_pre_fuga (1).mp4" type="video/mp4">
+</video>
 Para restablecer los filtros debes oprimir el guión al lado de Estado y volveran a los valores predeterminados.
 
 <p align="center">

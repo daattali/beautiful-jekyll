@@ -14,3 +14,9 @@ Podrás ver por tablas divididos los Clientes que se encuentras Activos, Pre-fug
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/estadodeclientes.png" alt="estadodeclientes">
 </p>
+
+*Aquí un ejemplo*
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/Estadoclientes.mp4" type="video/mp4">
+</video>
