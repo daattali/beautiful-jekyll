@@ -9,7 +9,7 @@ comments: false
 author: Catalina Pinilla
 ---
 
-Mediante la Matriz de riesgo puedes consultar los datos reflejados   en el apartado de ´Documentos´, como por ejemplo  vemos el monto que tiene vigente tu cliente y en ´Factoring´ - ´Documentos´, con el filtro de ´documento vigente puedes´, puedes  ver que coincide con el monto de los valor de los documentos en pantalla.
+Mediante la Matriz de riesgo puedes consultar los datos reflejados   en el apartado de `Documentos`, como por ejemplo  vemos el monto que tiene vigente tu cliente y en `Factoring` - `Documentos`, con el filtro de `documento vigente puedes`, puedes  ver que coincide con el monto de los valor de los documentos en pantalla.
 
   <style>
     .container {
