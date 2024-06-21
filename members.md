@@ -152,9 +152,9 @@ members:
       - name: Undergraduate students
         full: False
         list:
-          - name: TJ Vitchutripop
-          - name: Yishu Li
-          - name: Angela Rodriguez-Izquierdo
+          - name: TJ Vitchutripop -> Yale PhD
+          - name: Yishu Li -> CMU MSR
+          - name: Angela Rodriguez-Izquierdo -> Princeton PhD
           - name: Rashmi Anil
           - name: Patrick Liu
           - name: Jake Olkin
