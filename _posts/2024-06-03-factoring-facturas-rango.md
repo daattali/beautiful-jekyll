@@ -4,7 +4,7 @@ title: Utiliza rangos de fecha y el filtro CRM para ver que facturas puedes comp
 subtitle: Facturas - Rangos y facturas disponibles.
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
-tags: [facturas, comercial, buscar, filtro, ventas, compras, búsqueda]
+tags: [facturas, comercial, buscar, filtro, ventas, compras búsqueda]
 comments: false
 author: Catalina Pinilla
 ---
@@ -22,3 +22,9 @@ Junto con esto debes activar el switch de CRM para que veas reflejadas solo las 
 </p>
 
 Así estarás seguro que los documentos en el listado son los que se pueden adquirir, o fueron adquiridos por la competencia :(.
+
+*Aquí te dejamos un vídeo explicando lo mencionado* 
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/Obtener_facturas_de_un_cliente_en_el_rango_6 meses_que_se_puedan_comprar.mp4" type="video/mp4">
+</video>
