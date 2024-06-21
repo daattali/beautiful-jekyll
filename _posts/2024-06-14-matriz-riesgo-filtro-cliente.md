@@ -39,7 +39,13 @@ Mediante la Matriz de riesgo puedes consultar los datos reflejados   en el apart
     </div>
   </div>
 
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/Filtrarmatrizderiesgoclientedeunclienteyverificarqueelmontototaldedocumentosvigentesesiguallacarteraclientevigente.mp4" type="video/mp4">
+</video>
+
 También puedes verificar que el monto de venta del un mes del presente año, coincida con el modulo de compras y ventas del mes reflejado. 
+
+<!-- aqui se actualizó la pagina por lo que no coinciden imagenes con el video -->
 
  <style>
     .container {
@@ -59,6 +65,8 @@ También puedes verificar que el monto de venta del un mes del presente año, co
       border-radius: 3px;
     }
   </style>
+  
+
 
   <div class="container">
     <div class="image-container">
@@ -68,6 +76,10 @@ También puedes verificar que el monto de venta del un mes del presente año, co
       <img src="https://cdn.capitalexpress.cl/img/quasarventamatriz.png" alt="quasarventamatriz">
     </div>
   </div>
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/Filtrar_matriz_de_riesgocaso2.mp4" type="video/mp4">
+</video>
 
   También puedes comprobar la cartera morosa, para esto debes ver en ocumentos con el Filtro ´Moroso´Activado y lo que se refleje en la columna ´Saldo´, la suma de esto, dará el total que muestra en Matriz de Riesgo.
 
@@ -98,3 +110,8 @@ También puedes verificar que el monto de venta del un mes del presente año, co
       <img src="https://cdn.capitalexpress.cl/img/saldomatrizmora.png" alt="saldomatrizmora">
     </div>
   </div>
+
+
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/Filtrar_matriz_de_riesgo_caso3.mp4" type="video/mp4">
+</video>
