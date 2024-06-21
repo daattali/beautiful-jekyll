@@ -4,7 +4,7 @@ title: Encuentra todas las facturas de tus Clientes.
 subtitle: Factoring - Facturas
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
-tags: [facturas, comercial, buscar]
+tags: [facturas, comercial, buscar, búsqueda]
 comments: false
 author: Catalina Pinilla
 ---

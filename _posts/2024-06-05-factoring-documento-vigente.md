@@ -19,7 +19,7 @@ Según el cliente al cual quieres buscar, es aconsejable que indiques un periodo
   <img src="https://cdn.capitalexpress.cl/img/estadovigentedoc.png" alt="estadovigentedoc">
 </p>
 
-siguiendo estos pasos podrás ver los documentos vigentes que tiene el cliente seleccionado en estos momentos y en el periodo de tiempo seleccionado. 
+Siguiendo estos pasos podrás ver los documentos vigentes que tiene el cliente seleccionado en estos momentos y en el periodo de tiempo seleccionado. 
 
 Ten los datos básicos para iniciar una búsqueda como nombre del `Cliente` y `Rango de fecha`, recuerda que mientras más datos ingreses mejores serán los resultados. Seguido de eso en *Filtrar por estado* selecciona la opción *Moroso* y verás como ahora solo te muestran los documentos con estado de mora.
 

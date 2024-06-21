@@ -8,9 +8,9 @@ tags: [comercial, riesgo, factoring]
 comments: false
 author: Catalina Pinilla
 ---
-Para comenzar debes seleccionar los filtros básicos para poder realizar una consulta, Cliente y Rango de fecha para que comience a arrojar resultados, sin esto no obtendremos información en la pantalla.
+Selecciona los filtros básicos para poder realizar una consulta, Cliente y Rango de fecha para que veas los primeros resultados, sin esto no obtendremos información en la pantalla.
 
-Al lado derecho, podemos ver las empresas de Factoring ordenados en preferencia del Cliente en relación a Documentos cedidos, apareciendo en primer lugar el que lidera los negocios y el total que aparece ahi, corresponde a los documentos Cedidos, más los Cedidos Reclamados.
+Al lado derecho, podemos ver las empresas de Factoring ordenados de mayor a menor en relación a documentos cedidos por el cliente, apareciendo en primer lugar el que lidera los negocios y el total que aparece ahi, corresponde a los documentos Cedidos, más los Cedidos Reclamados.
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/topfactoring2.png" alt="topfactoring">
