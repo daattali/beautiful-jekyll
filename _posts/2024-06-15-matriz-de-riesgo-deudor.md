@@ -8,7 +8,7 @@ tags: [clientes, comercial, factoring, estado, riesgo, deudor]
 comments: false
 author: Catalina Pinilla
 ---
-Mediante la Matriz de riesgo puedes consultar los datos de los deudores, para eso cuentas con el filtro ´Seleccione un deudor´, ahí podrás ver el detalle de este, observando datos como el nombre de este, rut, ranking, tipo de industria. Podrás observar datos de la  de la cartera vigente, morsa y pagada.
+Mediante la Matriz de riesgo puedes consultar los datos de los deudores, para eso cuentas con el filtro `Seleccione un deudor`, ahí podrás ver el detalle de este, observando datos como el nombre de este, rut, ranking, tipo de industria. Podrás observar datos de la  de la cartera vigente, morsa y pagada.
 Contarás con un evaluador donde podrás asignar una nota a ese deudor si consideras si es buen o mal pagador.
 
 <!-- imagen -->
