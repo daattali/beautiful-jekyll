@@ -9,7 +9,7 @@ comments: false
 author: Catalina Pinilla
 ---
 
-Cuando selecciones un deudor, verás su información reflejada en pantalla, para confirmar estos documentos que aparecen debes dirigirte a ´Factoring, ´Deudor´ y colocar en primer lugar todos los filtros que necesitas para que tu búsqueda sea focalizada, es decir, nombre del cliente, deudor al cual estas consultando y estado de factura que sea ¨Moroso´, en la columna de ´Saldo´verás reflejado los documentos que se muestran en la pantalla de ´Matriz de Riesgo´
+Cuando selecciones un deudor, verás su información reflejada en pantalla, para confirmar estos documentos que aparecen debes dirigirte a `Factoring`, `Deudor` y colocar en primer lugar todos los filtros que necesitas para que tu búsqueda sea focalizada, es decir, nombre del cliente, deudor al cual estas consultando y estado de factura que sea `Moroso`, en la columna de `Saldo` verás reflejado los documentos que se muestran en la pantalla de `Matriz de Riesgo`
 
 <!-- imagen -->
 
