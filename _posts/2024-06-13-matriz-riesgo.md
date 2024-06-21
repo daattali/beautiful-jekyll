@@ -15,7 +15,7 @@ En esta sección podrás ver la información básica del Cliente como su Nombre,
   <img src="https://cdn.capitalexpress.cl/img/matrizderiesgo.png" alt="matrizderiesgo">
 </p>
 
-Tendrás un apartado con datos externos donde podrás encontrar información como Dicom, Vehículos, Socios, , TGR, etc.
+Tendrás un apartado con datos externos donde podrás encontrar información como Dicom, Vehículos, Socios, TGR, etc.
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/dicommatriz.png" alt="dicommatriz">
