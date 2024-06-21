@@ -1143,3 +1143,6 @@ pre {
   width: 100%;
   aspect-ratio: 16/9;
 }
+.blog-post p img, .post-entry p img {
+  border-radius: 3px;
+}

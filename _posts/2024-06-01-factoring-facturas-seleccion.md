@@ -4,7 +4,7 @@ title: Encuentra todas las facturas de tus Clientes.
 subtitle: Factoring - Facturas
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
-tags: [facturas, comercial, burcar]
+tags: [facturas, comercial, buscar, búsqueda]
 comments: false
 author: Catalina Pinilla
 ---
@@ -13,10 +13,9 @@ author: Catalina Pinilla
  
  Si necesitas eliminar tus selecciones puedes limpiar los filtros que aplicaste en *Limpiar filtros*.
 
-<p align="center">
-  <img src="https://cdn.capitalexpress.cl/img/filtrofactura3.png" alt="limpiarfiltro">
-</p>
 
  *aquí un ejemplo*
 
-
+<p align="center">
+  <img src="https://cdn.capitalexpress.cl/img/filtrofactura3.png" alt="limpiarfiltro">
+</p>

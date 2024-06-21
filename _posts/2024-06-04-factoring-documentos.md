@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quieres ver los documentos que han sido adquiridos por Capital Express Servicios Financieros, ingresa de esta forma.
+title: ¿Quieres ver los documentos de tu cartera?, ingresa de esta forma.
 subtitle: Factoring - Documentos.
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
@@ -8,14 +8,14 @@ tags: [documentos, comercial, cobranza]
 comments: false
 author: Catalina Pinilla
 ---
-Para navegar en este apartado contaras con los filtros de Cliente, Ejecutivo, Rango de fecha y folio. Nos encontraremos con todos los Documentos que han sido adquiridos por **Capital Express Servicios Financieros**, Facturas, cheques, Créditos directos, etc. Contarás con la opción de *Limpiar Filtros* en caso que quieras reiniciar tu busqueda. 
+Para navegar en este apartado contaras con los filtros de `Cliente`, `Ejecutivo`, `Rango de fecha` y `folio`. Nos encontraremos con todos los documentos asociados a tu cartera de clientes, Facturas, cheques, Créditos directos, etc. Contarás con la opción de *Limpiar Filtros* en caso que quieras reiniciar tu búsqueda. 
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/docfiltro1.png" alt="docfiltro1">
 </p>
 
 
-También contaremos con un filtrado de estado, que ayudará a ver si el documento se encuentra Vigente, Moroso, Cancelado, etc. Para tener una visión de como proceder con cada caso. 
+También cuentas con un filtrado de estado, que ayudará a ver si el documento se encuentra Vigente, Moroso, Cancelado, etc.
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/filtroestadodoc1.png" alt="filtroestadodoc">
