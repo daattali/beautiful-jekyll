@@ -24,9 +24,6 @@ members:
           - name: Jenny Wang
             photo_url: https://www.ri.cmu.edu/app/uploads/2021/07/Wang_Jenny-scaled.jpg
             web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
-          - name: Yilin Wu
-            photo_url: https://yilin-wu98.github.io/images/yilinwu_photo.jpg
-            web_url: https://yilin-wu98.github.io/
       - name: Masters students
         full: true
         list:
@@ -57,21 +54,12 @@ members:
           - name: Wen Hui Leng
             photo_url: /img/members/wleng.jpg
             web_url: 
-          - name: TJ Vitchutripop
-            photo_url: /img/members/tj.jpg
-            web_url: https://tjvitchutripop.github.io/
-          - name: Yishu Li
-            photo_url: /img/members/yishu.jpg
-            web_url:
           - name: Yiming Fang
             photo_url: /img/members/yimingfang.jpg
             web_url: 
       - name: Visiting Students
         full: true
         list:
-          - name: Angela Rodriguez-Izquierdo
-            photo_url: https://www.ri.cmu.edu/app/uploads/2023/09/AngelaR_2023.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/angela-rodriguez-izquierdo-gallardo/
           - name: Bharath Hegde
             photo_url: /img/members/bharath.jpg
             web_url: https://bharath-hegde.github.io/
@@ -164,6 +152,9 @@ members:
       - name: Undergraduate students
         full: False
         list:
+          - name: TJ Vitchutripop
+          - name: Yishu Li
+          - name: Angela Rodriguez-Izquierdo
           - name: Rashmi Anil
           - name: Patrick Liu
           - name: Jake Olkin
