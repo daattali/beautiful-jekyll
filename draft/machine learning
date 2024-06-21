@@ -1,0 +1,34 @@
+Gearing Up for Machine Learning: My Journey to GCP Professional ML Engineer
+The last remaining Google Cloud certification for me to achieve is the Google Cloud Professional Machine Learning Engineer certification- this will then take me to 10/10 Google Cloud certifications. Whilst the certification has been on my radar for quite some time, I’ve postponed it to this point for various reasons:
+•	It’s considered to be the most challenging Google Cloud certification by many.
+•	I don’t have a mathematical or statistics background- references to functions like ReLu, Sin, Tan,  Standard deviation, Lambda etc. and the visual representation of the equations involved at times overwhelm and confuse me!
+•	Finding time to study the breadth and depth of the course amongst renewing existing certifications, work and family life proves challenging at the best of times.
+That being said, I’m hoping I can squeeze in this certification before my next bunch of renewals are due later this year.
+I’m hoping creation of blog posts on the topics I’m covering in preparation for the exam will reinforce my understanding/learning, but also share knowledge with others considering the certification, or interested in learning more about machine learning.
+Machine Learning: Unveiling the Magic
+Machine learning is a subfield of artificial intelligence (AI) that deals with the ability of computers to learn without explicit programming. Imagine a child learning to recognize different animals. Through exposure to pictures and real-life encounters, the child grasps the distinguishing features of each animal. Similarly, ML algorithms learn from data to make data-driven predictions or uncover hidden patterns.
+While AI is the broader concept of mimicking human intelligence in machines, machine learning provides the specific techniques and algorithms that enable this to happen. It's the engine that powers many of the intelligent applications we use today, from facial recognition software to recommendation systems.
+Supervised vs Unsupervised Learning: The Two Teachers
+There are two main categories of machine learning: supervised and unsupervised. Let's break them down:
+•	Supervised Learning: This is like having a teacher. We provide the algorithm with labeled data, where each data point has a corresponding label or outcome (think "cat" or "dog" for an image dataset). The algorithm then learns the relationship between these features and their labels. This newfound knowledge empowers it to predict labels for new, unseen data.
+o	Use Cases:
+	Spam filtering (classifying emails as spam or not-spam)
+	Image recognition (identifying objects in an image)
+	Stock price prediction (predicting future stock prices based on historical data)
+•	Unsupervised Learning: Here, the teacher takes a break. The algorithm is presented with unlabeled data and must independently discover inherent patterns or structures within it. This might involve grouping similar data points together (clustering) or identifying hidden relationships between features.
+o	Use Cases:
+	Customer segmentation (grouping customers with similar characteristics for targeted marketing)
+	Anomaly detection (identifying unusual patterns in data, like fraudulent transactions)
+	Recommendation systems (suggesting products to users based on their past purchases)
+Classification vs. Regression: Model Showdown
+Within supervised learning, we have two major model types: classification and regression.
+•	Classification Models: These excel at predicting discrete categories. Imagine sorting emails into spam or not-spam. Popular classification models include:
+o	Logistic Regression: Great for binary classifications (yes/no) and interpretable models.
+o	Support Vector Machines (SVMs): Powerful for high-dimensional data.
+o	Decision Trees & Random Forests: Easy to interpret and robust to irrelevant features.
+•	Regression Models: These predict continuous values. Think of forecasting house prices. Common regression models include:
+o	Linear Regression: The workhorse for simple relationships between features and a target value.
+o	Lasso & Ridge Regression: Regularized models to prevent overfitting, especially with many features.
+o	XGBoost & Random Forest Regression: Ensemble methods for improved accuracy on complex relationships.
+Choosing the right model depends on the problem you're trying to solve. Stay tuned for future posts where we'll delve deeper into specific models, explore Google Cloud's amazing suite of machine learning tools, and tackle the exciting world of deep learning! In the meantime, hit the comments below and share your experiences with ML – beginner or expert, all are welcome!
+
