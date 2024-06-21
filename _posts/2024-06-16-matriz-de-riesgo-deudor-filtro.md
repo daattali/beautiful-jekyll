@@ -16,12 +16,6 @@ Cuando selecciones un deudor, verás su información reflejada en pantalla, para
 *Aquí te dejamos un vídeo explicando lo mencionado* 
 
 
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproducir Video desde Google Drive</title>
-</head>
-<body>
-    <iframe src="https://cdn.capitalexpress.cl/video/Filtrarmatrizdeudordeundeudoryverificarqueelmontodelacarteramorosacoincidacon el montototal.mp4" width="640" height="360" frameborder="0" allowfullscreen="true" allow="autoplay; encrypted-media"></iframe>
-</body>
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.clvideo/Filtrarmatrizdeudordeundeudoryverificarqueelmontodelacarteramorosacoincidacon el montototal" type="video/mp4">
+</video>
