@@ -10,21 +10,24 @@
 ############################
 
 # Name of website
-title: My amazing website
+title: Raki Yoga
 
 # Your name to show in the footer
-author: Some Person
+author: jugal vaidya
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "1_aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Ayurveda Tipps: "2_ayurveda_tipps"
+    - Raki top 10 list: "3_raki_top_10_list"
+    - Recipes: "4_recipes"
+  Consultation: "5_consultation"
+  Contact: "6_contact"
+
 
 ################
 # --- Logo --- #
@@ -100,7 +103,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "rakiyoga.com"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
@@ -258,7 +261,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Germany/Berlin"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
