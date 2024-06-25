@@ -9,7 +9,7 @@ comments: false
 author: Catalina Pinilla
 ---
 
-En esta sección podrás ver la información básica del Cliente como su Nombre, Rut, Tipo de Ranking, Industria. Verás un resumen de la cartera del Cliente. Veras un gráfico con las compras y ventas anuales.
+En esta sección podrás ver la información básica del cliente como su Nombre, Rut, Tipo de Ranking, Industria. Verás un resumen de la cartera del cliente. Veras un gráfico con las compras y ventas anuales.
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/matrizderiesgo.png" alt="matrizderiesgo">

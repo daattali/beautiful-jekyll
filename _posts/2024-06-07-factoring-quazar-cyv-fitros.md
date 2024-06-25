@@ -9,7 +9,7 @@ comments: false
 author: Catalina Pinilla
 ---
 
-En pantalla tendrás toda la información de la cartera de tu Cliente, por lo qeu si necesitas estudiar los datos de un Deudor lo que debes hacer es clickear sobre el nombre de este uy automáticamente se relejará en pantalla sólo la información de ese deudor, recuerda que mientras más filtros utilices más focalizados serán tus resultados.
+En pantalla tendrás toda la información de la cartera de tu Cliente, por lo que si necesitas estudiar los datos de un Deudor lo que debes hacer es clickear sobre el nombre de este uy automáticamente se relejará en pantalla sólo la información de ese deudor, recuerda que mientras más filtros utilices más focalizados serán tus resultados.
 
 *Aquí puedes ver la diferencia cuando se muestra toda la información del Cliente*
 

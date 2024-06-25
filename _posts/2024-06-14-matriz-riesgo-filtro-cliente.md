@@ -9,7 +9,7 @@ comments: false
 author: Catalina Pinilla
 ---
 
-Mediante la Matriz de riesgo puedes consultar los datos reflejados   en el apartado de `Documentos`, como por ejemplo  vemos el monto que tiene vigente tu cliente y en `Factoring` - `Documentos`, con el filtro de `documento vigente puedes`, puedes  ver que coincide con el monto de los valor de los documentos en pantalla.
+Mediante la Matriz de riesgo puedes consultar los datos reflejados   en el apartado de ´Documentos´, como por ejemplo  vemos el monto que tiene vigente tu cliente y en ´Factoring´ - ´Documentos´, con el filtro de ´documento vigente puedes´, puedes  ver que coincide con el monto de los valor de los documentos en pantalla.
 
   <style>
     .container {
@@ -81,7 +81,7 @@ También puedes verificar que el monto de venta del un mes del presente año, co
   <source src="https://cdn.capitalexpress.cl/video/Filtrar_matriz_de_riesgocaso2.mp4" type="video/mp4">
 </video>
 
-  También puedes comprobar la cartera morosa, para esto debes ver en ocumentos con el Filtro ´Moroso´Activado y lo que se refleje en la columna ´Saldo´, la suma de esto, dará el total que muestra en Matriz de Riesgo.
+  También puedes comprobar la cartera morosa, para esto debes ver en documentos con el Filtro ´Moroso´Activado y lo que se refleje en la columna ´Saldo´, la suma de esto, dará el total que muestra en Matriz de Riesgo.
 
    <style>
     .container {
