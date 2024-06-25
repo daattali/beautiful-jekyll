@@ -4,7 +4,7 @@
 ## Project
 githubpage
 
-## CHIRPY Documentation
+## JEKYLL Documentation
 Documentation: https://beautifuljekyll.com/
 Mardown guide: https://www.markdownguide.org/tools/jekyll/
 Github: https://github.com/daattali/beautiful-jekyll
