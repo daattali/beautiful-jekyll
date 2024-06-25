@@ -9,7 +9,7 @@ comments: false
 author: Catalina Pinilla
 ---
 
-Para filtrar los Clientes por un estado en particular lo que debes hacer es en *Estado* dejar seleccionado slo los estados que quieres que se vean reflejados, es decir, si quieres ver los que estan en Pre-fuga, dejarás solo esa opción seleccionada. 
+Para filtrar los Clientes por un estado en particular lo que debes hacer es en *Estado* dejar seleccionado slo los estados que quieres que se vean reflejados, es decir, si quieres ver los que están en Pre-fuga, dejarás solo esa opción seleccionada. 
 
 <p align="center">
   <img src="https://cdn.capitalexpress.cl/img/estadoclientesprefuga.png" alt="estadoclientesprefuga">
