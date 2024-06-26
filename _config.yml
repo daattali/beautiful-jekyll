@@ -22,9 +22,10 @@ description: Nate's corner of the web
 navbar-links:
   About Me: "aboutme"
   CV: "CV"
-  Projects:
+  Projects and Code Examples:
     - WAHIS-WILD Sensitivity: "https://github.com/ecohealthalliance/woah-wahis-wild-sensitivity"
     - Automated Literature Searching: "https://github.com/ecohealthalliance/ehallm/blob/main/README.md"
+    - Chat Assisted Debugging: "https://github.com/n8layman/chad"
     - PREEMPT Lassa Fever: "https://preemptlassawestafrica.ibest.uidaho.edu/"
     - TDOA game: "https://n8-layman.shinyapps.io/tdoa/"
   Resources:
