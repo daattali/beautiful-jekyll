@@ -23,9 +23,8 @@ navbar-links:
   About Me: "aboutme"
   Curriculum vitae: "CV"
   Projects:
-    - Wildlife Disease Surveillance Sensitivity: "https://github.com/ecohealthalliance/woah-wahis-wild-sensitivity"
+    - WAHIS-WILD Sensitivity: "https://github.com/ecohealthalliance/woah-wahis-wild-sensitivity"
     - PREEMPT Lassa Fever: "https://preemptlassawestafrica.ibest.uidaho.edu/"
-    - ABO-NX: "https://hub.wsu.edu/fernandovillanea/abo-teaching-model/"
     - TDOA game: "https://n8-layman.shinyapps.io/tdoa/"
   Resources:
     - Statistical Inference: "https://github.com/rmcelreath/stat_rethinking_2023"
