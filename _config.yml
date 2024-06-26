@@ -21,7 +21,7 @@ description: Nate's corner of the web
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Curriculum vitae: "CV"
+  CV: "CV"
   Projects:
     - WAHIS-WILD Sensitivity: "https://github.com/ecohealthalliance/woah-wahis-wild-sensitivity"
     - PREEMPT Lassa Fever: "https://preemptlassawestafrica.ibest.uidaho.edu/"
