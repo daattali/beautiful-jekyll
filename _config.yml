@@ -24,6 +24,7 @@ navbar-links:
   CV: "CV"
   Projects:
     - WAHIS-WILD Sensitivity: "https://github.com/ecohealthalliance/woah-wahis-wild-sensitivity"
+    - Automated Literature Searching: "https://github.com/ecohealthalliance/ehallm/blob/main/README.md"
     - PREEMPT Lassa Fever: "https://preemptlassawestafrica.ibest.uidaho.edu/"
     - TDOA game: "https://n8-layman.shinyapps.io/tdoa/"
   Resources:
