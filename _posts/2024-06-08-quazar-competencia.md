@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Necesitas ver como trabaja tu Cliete con los otros Factoring, te indicaremos como.
-subtitle: Quazar - Competencia.
+subtitle: Quasar - Competencia.
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
-tags: [quazar, comercial, riesgo, factoring, filtros, competencia]
+tags: [quasar, comercial, riesgo, factoring, filtros, competencia]
 comments: false
 author: Catalina Pinilla
 ---

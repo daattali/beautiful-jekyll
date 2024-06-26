@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ve los detalles de compra y venta de los documentos según tus Clientes, de manera organizada y eficiente.
-subtitle: Quazar Compras, ventas y Factorización. 
+subtitle: Quasar Compras, ventas y Factorización. 
 gh-repo: /capitalexpress/capitalexpress.github.io
 gh-badge: [star, fork, follow]
 tags: [comercial, riesgo, factoring]
