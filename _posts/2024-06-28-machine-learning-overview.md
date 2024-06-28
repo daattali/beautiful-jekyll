@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gearing Up for Machine Learning: My Journey to GCP Professional ML Engineer
-subtitle: "To help reinforce my learning, I’m creating various blog posts on the topics I’m studying in preparation for the exam, and to assist anyone else embarking upon the  Google Cloud ML Engineer certification, or interested in learning more about machine learning topics. This blog post focuses on Machine Learning, how it relates to Artificial Intelligence and the common model types."
+subtitle: To help reinforce my learning, I’m creating various blog posts on the topics I’m studying in preparation for the exam, and to assist anyone else embarking upon the  Google Cloud ML Engineer certification, or interested in learning more about machine learning topics. This blog post focuses on Machine Learning, how it relates to Artificial Intelligence and the common model types.
 #description: ""
 #cover-img: /assets/img/path.jpg
 #thumbnail-img: /assets/img/pcne/googlecloudprofessionalcloudnetworkengineerbadge.png
