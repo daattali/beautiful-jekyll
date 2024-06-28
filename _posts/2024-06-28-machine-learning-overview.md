@@ -13,9 +13,6 @@ share-description: "To help reinforce my learning, I’m creating various blog p
 tags: [Google Cloud Professional Machine Learning Engineer, Machine Learning, Supervised, Classification, AI]
 ---
 
-* toc
-{:toc}
-
 # Machine Learning
 
 Machine learning (ML) is a subfield of artificial intelligence that deals with the ability of computers to learn without explicit programming. Imagine a child learning to recognize different animals. Through exposure to pictures and real-life encounters, the child grasps the distinguishing features of each animal. Similarly, machine learning algorithms learn from data to make data-driven predictions or uncover hidden patterns.
