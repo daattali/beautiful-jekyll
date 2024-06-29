@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: All you want to know
 subtitle: Ayurveda tips
 ---
 
