@@ -1,23 +1,30 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Ayurveda consultation and appointment
 ---
 
-Discover holistic wellness through Ayurveda, yoga, and meditation, embracing natural remedies, herbal supplements, and essential oils for stress relief, weight management, and overall health, while exploring mindfulness, organic living, and traditional Indian vedic medicine to achieve balance in mind, body, and spirit.
+**Discover Your Path to Wellness with Ayurveda**
+Welcome to Raki Yoga, where ancient wisdom meets modern health needs. Our seasoned Ayurvedic practitioners are here to guide you towards balance and vitality, using time-honored techniques tailored to your unique constitution.
 
-Rakesh Singh, also known as Raki is an experienced Ayurvedic practitioner with over 10 years of expertise, specializing in managing **autoimmune disorders** and **cancer** cases. His holistic approach focuses on addressing the root causes of health issues rather than just managing symptoms.
-As an Ayurvedic health consultant, Rakesh offers personalized treatment plans tailored to each client's unique needs. His mission is to empower individuals to take control of their health and well-being through natural and holistic methods.
+**Personalized Care for Your Dosha**
+Every individual is a unique blend of the three doshas - Vata, Pitta, and Kapha. At Roots & Rhythms, we don't believe in one-size-fits-all solutions. Our consultations are carefully crafted to address your specific dosha dominance:
 
-Raki's clients aim to achieve **freedom** from medications and supplements by restoring balance and harmony in their bodies and minds. Through Ayurvedic treatments, dietary recommendations, and lifestyle modifications, he helps clients optimize their health and achieve their wellness goals.
+Vata-Focused Sessions: If you're battling restlessness, irregular sleep, or digestive ups and downs, this is for you.
+Pitta-Balancing Consultations: Designed for those grappling with inflammation, skin flare-ups, or feeling constantly on edge.
+Kapha-Harmonizing Appointments: Perfect if you're looking to boost metabolism, shake off lethargy, or improve respiratory health.
 
-**Key services** offered by Raki include:
-- Personalized Ayurvedic consultations
-- Customized treatment plans for health issues
-- Dietary, lifestyle, yoga, pranayama recommendations as per individuals
-- Herbal remedies and natural therapies
-- Guidance on stress management and emotional balance
+**Our Consultation Process**
+During your visit, we'll dive deep into understanding your prakriti (innate nature) and current state of health. This involves:
+A thorough chat about your health history and concerns
+Tongue analysis
+A look at your overall appearance and energy
+Based on these insights, we'll craft a wellness plan that fits seamlessly into your life, including dietary tweaks, lifestyle adjustments, and herbal support.
 
-By combining traditional Ayurvedic wisdom with modern health practices, Raki helps clients address the underlying causes of their health issues and achieve long-lasting results.
+**When to Visit Us**
+We know life can be hectic, so we've set up our schedule to be as accommodating as possible:
+Weekdays: Pop in anytime between 9 AM and 7 PM
+Saturdays & Sunday : We offer virtual consultations by appointment
+
 
 ### My story
