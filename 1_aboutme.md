@@ -12,11 +12,11 @@ Raki's clients aim to achieve freedom from medications and supplements by restor
 
 Key services offered by Raki include:
 
-    Personalized Ayurvedic consultations
-    Customized treatment plans for health issues
-    Dietary, lifestyle, yoga, pranayama recommendations as per individuals
-    Herbal remedies and natural therapies
-    Guidance on stress management and emotional balance
+  -  Personalized Ayurvedic consultations
+  -  Customized treatment plans for health issues
+  -  Dietary, lifestyle, yoga, pranayama recommendations as per individuals
+  -  Herbal remedies and natural therapies
+  -  Guidance on stress management and emotional balance
 
 By combining traditional Ayurvedic wisdom with modern health practices, Raki helps clients address the underlying causes of their health issues and achieve long-lasting results.
 
