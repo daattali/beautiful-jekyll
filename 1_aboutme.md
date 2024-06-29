@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Ayurveda Coach and health consulting
 ---
 
 Discover holistic wellness through Ayurveda, yoga, and meditation, embracing natural remedies, herbal supplements, and essential oils for stress relief, weight management, and overall health, while exploring mindfulness, organic living, and traditional Indian vedic medicine to achieve balance in mind, body, and spirit.
