@@ -11,7 +11,9 @@ Welcome to Raki Yoga, where ancient wisdom meets modern health needs. Our season
 Every individual is a unique blend of the three doshas - Vata, Pitta, and Kapha. At Roots & Rhythms, we don't believe in one-size-fits-all solutions. Our consultations are carefully crafted to address your specific dosha dominance:
 
 Vata-Focused Sessions: If you're battling restlessness, irregular sleep, or digestive ups and downs, this is for you.
+
 Pitta-Balancing Consultations: Designed for those grappling with inflammation, skin flare-ups, or feeling constantly on edge.
+
 Kapha-Harmonizing Appointments: Perfect if you're looking to boost metabolism, shake off lethargy, or improve respiratory health.
 
 **Our Consultation Process**
