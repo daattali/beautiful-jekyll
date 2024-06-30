@@ -20,9 +20,9 @@ author: jugal vaidya
 ###############################################
 
 navbar-links:
-  About Me: "1_aboutme"
+  About me: "1_aboutme"
   Articles: "2_articles"
-  More:
+  More resources:
     - Ayurveda: "3_ayurveda_tipps"
     - Recipes: "4_recipes"
     - Consultation: "5_consultation"
