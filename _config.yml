@@ -20,13 +20,12 @@ author: jugal vaidya
 ###############################################
 
 navbar-links:
-  Blog Post: "0_blog_posts"
   About Me: "1_aboutme"
-  Resources:
-    - Ayurveda Tipps: "2_ayurveda_tipps"
-    - Raki top 10 list: "3_raki_top_10_list"
+  Articles: "2_articles"
+  More:
+    - Ayurveda: "3_ayurveda_tipps"
     - Recipes: "4_recipes"
-  Consultation: "5_consultation"
+    - Consultation: "5_consultation"
   Contact: "6_contact"
 
 
@@ -54,14 +53,14 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  email: "info@rakiyoga.com"
+#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+#  facebook: deanattali
+  github: rakiyoga
+  twitter: rakiyoga
+#  patreon: DeanAttali
+#  youtube: "@daattali"
+#  whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
