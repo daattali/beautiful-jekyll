@@ -20,6 +20,7 @@ author: jugal vaidya
 ###############################################
 
 navbar-links:
+  Blog Post: "0_blog_posts"
   About Me: "1_aboutme"
   Resources:
     - Ayurveda Tipps: "2_ayurveda_tipps"
