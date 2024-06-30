@@ -27,6 +27,3 @@ Based on these insights, we'll craft a wellness plan that fits seamlessly into y
 We know life can be hectic, so we've set up our schedule to be as accommodating as possible:
 Weekdays: Pop in anytime between 9 AM and 7 PM
 Saturdays & Sunday : We offer virtual consultations by appointment
-
-
-### My story
