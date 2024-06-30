@@ -11,4 +11,4 @@ subtitle: Ayurveda tips
 
 2. Further blogs to be added here
 
-### My story
+
