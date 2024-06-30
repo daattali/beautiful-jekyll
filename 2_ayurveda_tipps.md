@@ -1,14 +1,14 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: All you want to know
+subtitle: Ayurveda tips
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+1. Are you ready to welcome a new guest in your body? You can prepare yourself for any kind of flu, virus, bacteria with below recipe.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+![image](https://github.com/rakiyoga/rakiyoga.github.io/assets/32105064/c33a6756-2084-4753-bd4a-e36a414bf179)
 
-What else do you need?
+
+2. Further blogs to be added here
 
 ### My story

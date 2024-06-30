@@ -1,14 +1,12 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Recipe fo rhealing
+subtitle: Seasonal recipe to heal your body and soul
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Anti allergice soup recipe to modulate your immunity and balance your doshas
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+![image](https://github.com/rakiyoga/rakiyoga.github.io/assets/32105064/b7bfb3a0-083c-45e8-9895-62cbe824f7d9)
 
-What else do you need?
 
-### My sto
+Further recipe being updated.

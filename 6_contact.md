@@ -1,14 +1,16 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Contact me
+subtitle: Contact
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+We know life can be hectic, so we've set up our schedule to be as accommodating as possible:
+Weekdays: Pop in anytime between 9 AM and 7 PM
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Saturdays & Sundays: We offer virtual consultations by appointment
 
-What else do you need?
+Email: 	**kontakt@rakiyoga.de**
 
-### My sto
+Instagram: raki_yoga
+
+Telegram: raki_yoga
