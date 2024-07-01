@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Recipe fo rhealing
+title: Recipe for healing
 subtitle: Seasonal recipe to heal your body and soul
 ---
 
