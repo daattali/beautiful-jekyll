@@ -22,10 +22,9 @@ author: jugal vaidya
 navbar-links:
   About me: "1_aboutme"
   Articles: "2_articles"
-  More resources:
-    - Ayurveda: "3_ayurveda_tipps"
-    - Recipes: "4_recipes"
-    - Consultation: "5_consultation"
+  Ayurveda: "3_ayurveda_tipps"
+  Recipes: "4_recipes"
+  Consultation: "5_consultation"
   Contact: "6_contact"
 
 
@@ -35,7 +34,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/logo_rakiyoga.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -53,27 +52,27 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "info@rakiyoga.com"
+  email: "kontakt@rakiyoga.de"
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #  facebook: deanattali
-  github: rakiyoga
-  twitter: rakiyoga
+  github: rakaspace
+  twitter: raki_yoga
 #  patreon: DeanAttali
 #  youtube: "@daattali"
-#  whatsapp: 15551212
+  whatsapp: +49(0)17662233035
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: raki_yoga
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-#  telegram: yourname
+  telegram: Raki_Yoga
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  bluesky: yourname
@@ -88,7 +87,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
 # --- General options --- #
