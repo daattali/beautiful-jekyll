@@ -45,7 +45,8 @@ Note: this data is fictional!
 | Heart Disease      |        60 |
 | Heart Diease       |        58 |
 
-# Standardization by string distance
+  
+\# Standardization by string distance
 
 The most straight forward way to standardize a character vector is to
 use string distance. String distance is a measure of how different two
@@ -62,46 +63,15 @@ sequentially move down a vector, finding the best match within a given
 string distance and adopting it as the new standard. Graphically the
 algorithm should essentially do the following.
 
-<figure>
-<img src="/assets/img/fuzzy_harmonize_stringdist.png"
-alt="Harmonize vector using stringdist" />
-<figcaption aria-hidden="true">Harmonize vector using
-stringdist</figcaption>
-</figure>
+![](/assets/img/fuzzy_harmonize_stringdist.png)
 
-# To walk down the vector we could either use for loops or some kind of recursive function. Fortunately there is a function specifically for this kind of recursion in the purrr package, [reduce](https://blog.zhaw.ch/datascience/r-reduce-applys-lesser-known-brother/)! In order to use either approach we first need to define the function we want to apply between each element and the vector. I’m going to call the function `fuzzy_match` though that name may already be in use elsewhere.
-
-# Standardization by string distance
-
-The most straight forward way to standardize a character vector is use
-string distance. String distance is a measure of how different two
-strings are. The method I tend to use is
-[Jaro–Winkler](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance)
-distance. The distance returned is normalized so that a score of 0
-represents an exact match between two strings and a 1 maximal
-difference. This kind of operation involves so called `fuzzy` logic
-which, unlike boolean definitions of true and false, handles the case of
-partial matches. In R, the main package for calculating string distance
-is the [stringdist](https://github.com/markvanderloo/stringdist)
-package. For this use case we need to come up with an algorith that will
-sequentially move down a vector, finding the best match within a given
-string distance and adopting it as the new standard. Graphically the
-algorithm should essentially do the following.
-
-<figure>
-<img src="/assets/img/fuzzy_harmonize_stringdist.png"
-alt="Harmonize vector using stringdist" />
-<figcaption aria-hidden="true">Harmonize vector using
-stringdist</figcaption>
-</figure>
-
-To walk down the step the vector we could either use for loops or a
-recursive function. However there is a function specifically for this
-kind of recursion in the purrr package,
+To walk down the vector we could either use for loops or some kind of
+recursive function. Fortunately there is a function specifically for
+this kind of recursion in the purrr package,
 [reduce](https://blog.zhaw.ch/datascience/r-reduce-applys-lesser-known-brother/)!
-In order to use either approach we need to first define the function we
+In order to use either approach we first need to define the function we
 want to apply between each element and the vector. I’m going to call the
-function `fmatch` though that may already exist elsewhere.
+function `fuzzy_match` though that name may already be in use elsewhere.
 
 ``` r
 # This is pretty cool!
@@ -127,65 +97,71 @@ fuzzy_match <- function(vector, element, max_dist = 0.1) {
 Now we just need to invoke it using the reduce function as so:
 
 ``` r
-# I'm pretty proud of this one!
+# Slick right?
 outbreak_data <- outbreak_data |> 
-  mutate(standardized_disease_name = reduce(disease_name, fuzzy_match, max_dist = 0.1))
+  mutate(standardized_disease_name = reduce(disease_name, fuzzy_match, max_dist = 0.1)) |>
+  select(contains("name"), outbreaks)
 ```
 
 which produces the following:
 
-| disease_name       | outbreaks | standardized_disease_name |
-|:-------------------|----------:|:--------------------------|
-| Influenza          |        15 | Influenza                 |
-| Inflenza           |        10 | Influenza                 |
-| COVID-19           |        95 | COVID-19                  |
-| sars-covid-19      |        90 | sars-covid-19             |
-| Malaria            |        20 | Malaria                   |
-| Maleria            |        22 | Malaria                   |
-| malaria            |        20 | Malaria                   |
-| Diabetes           |        30 | Diabetes                  |
-| Diabetis           |        28 | Diabetes                  |
-| HIV/AIDS           |        75 | HIV/AIDS                  |
-| HIV                |        70 | HIV                       |
-| AIDS               |        65 | AIDS                      |
-| Tuberculosis       |        40 | Tuberculosis              |
-| Tuberclosis        |        38 | Tuberculosis              |
-| Alzheimers         |        23 | Alzheimers                |
-| Alzheimers Disease |        27 | Alzheimers Disease        |
-| Heart Disease      |        60 | Heart Disease             |
-| Heart Diease       |        58 | Heart Disease             |
+| disease_name       | standardized_disease_name | outbreaks |
+|:-------------------|:--------------------------|----------:|
+| Influenza          | Influenza                 |        15 |
+| Inflenza           | Influenza                 |        10 |
+| COVID-19           | COVID-19                  |        95 |
+| sars-covid-19      | sars-covid-19             |        90 |
+| Malaria            | Malaria                   |        20 |
+| Maleria            | Malaria                   |        22 |
+| malaria            | Malaria                   |        20 |
+| Diabetes           | Diabetes                  |        30 |
+| Diabetis           | Diabetes                  |        28 |
+| HIV/AIDS           | HIV/AIDS                  |        75 |
+| HIV                | HIV                       |        70 |
+| AIDS               | AIDS                      |        65 |
+| Tuberculosis       | Tuberculosis              |        40 |
+| Tuberclosis        | Tuberculosis              |        38 |
+| Alzheimers         | Alzheimers                |        23 |
+| Alzheimers Disease | Alzheimers Disease        |        27 |
+| Heart Disease      | Heart Disease             |        60 |
+| Heart Diease       | Heart Disease             |        58 |
 
 Notice how not everything was standardized? That’s because we chose a
 relatively stringent maximum disease distance. If we instead set
 `max_dist = 0.3` we get the following:
 
-| disease_name       | outbreaks | standardized_disease_name |
-|:-------------------|----------:|:--------------------------|
-| Influenza          |        15 | Influenza                 |
-| Inflenza           |        10 | Influenza                 |
-| COVID-19           |        95 | COVID-19                  |
-| sars-covid-19      |        90 | sars-covid-19             |
-| Malaria            |        20 | Malaria                   |
-| Maleria            |        22 | Malaria                   |
-| malaria            |        20 | Malaria                   |
-| Diabetes           |        30 | Diabetes                  |
-| Diabetis           |        28 | Diabetes                  |
-| HIV/AIDS           |        75 | HIV/AIDS                  |
-| HIV                |        70 | HIV/AIDS                  |
-| AIDS               |        65 | AIDS                      |
-| Tuberculosis       |        40 | Tuberculosis              |
-| Tuberclosis        |        38 | Tuberculosis              |
-| Alzheimers         |        23 | Alzheimers                |
-| Alzheimers Disease |        27 | Alzheimers                |
-| Heart Disease      |        60 | Heart Disease             |
-| Heart Diease       |        58 | Heart Disease             |
+| disease_name       | standardized_disease_name | outbreaks |
+|:-------------------|:--------------------------|----------:|
+| Influenza          | Influenza                 |        15 |
+| Inflenza           | Influenza                 |        10 |
+| COVID-19           | COVID-19                  |        95 |
+| sars-covid-19      | sars-covid-19             |        90 |
+| Malaria            | Malaria                   |        20 |
+| Maleria            | Malaria                   |        22 |
+| malaria            | Malaria                   |        20 |
+| Diabetes           | Diabetes                  |        30 |
+| Diabetis           | Diabetes                  |        28 |
+| HIV/AIDS           | HIV/AIDS                  |        75 |
+| HIV                | HIV/AIDS                  |        70 |
+| AIDS               | AIDS                      |        65 |
+| Tuberculosis       | Tuberculosis              |        40 |
+| Tuberclosis        | Tuberculosis              |        38 |
+| Alzheimers         | Alzheimers                |        23 |
+| Alzheimers Disease | Alzheimers                |        27 |
+| Heart Disease      | Heart Disease             |        60 |
+| Heart Diease       | Heart Disease             |        58 |
 
 The weakness of this approach is that it is not always clear what the
 best maximum distance to use is. If you set the maximum distance high
 enough you might be able to match difficult cases, such as
 `COVID-19 and sars-covid-19` but you run the risk of accidentally
 changing something too far, like matching `Heart Disease to Malaria`.
-It’s is not always clear where that border should be drawn.
+It’s is not always clear where that border should be drawn. Another
+problem is that this algorithm just chooses the first match to
+standardize on, not the best match. It could just as easily settle on
+converting everything to `melaria instead of Malaria`. It doesn’t know
+which of the two strings is *better* just how different two strings are
+from each other.
 
 ## Clustering
 
