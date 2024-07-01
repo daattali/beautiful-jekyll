@@ -69,13 +69,39 @@ alt="Harmonize vector using stringdist" />
 stringdist</figcaption>
 </figure>
 
-To walk down the vector we could either use for loops or some kind of
-recursive function. Fortunately there is a function specifically for
-this kind of recursion in the purrr package,
+# To walk down the vector we could either use for loops or some kind of recursive function. Fortunately there is a function specifically for this kind of recursion in the purrr package, [reduce](https://blog.zhaw.ch/datascience/r-reduce-applys-lesser-known-brother/)! In order to use either approach we first need to define the function we want to apply between each element and the vector. I’m going to call the function `fuzzy_match` though that name may already be in use elsewhere.
+
+# Standardization by string distance
+
+The most straight forward way to standardize a character vector is use
+string distance. String distance is a measure of how different two
+strings are. The method I tend to use is
+[Jaro–Winkler](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance)
+distance. The distance returned is normalized so that a score of 0
+represents an exact match between two strings and a 1 maximal
+difference. This kind of operation involves so called `fuzzy` logic
+which, unlike boolean definitions of true and false, handles the case of
+partial matches. In R, the main package for calculating string distance
+is the [stringdist](https://github.com/markvanderloo/stringdist)
+package. For this use case we need to come up with an algorith that will
+sequentially move down a vector, finding the best match within a given
+string distance and adopting it as the new standard. Graphically the
+algorithm should essentially do the following.
+
+<figure>
+<img src="/assets/img/fuzzy_harmonize_stringdist.png"
+alt="Harmonize vector using stringdist" />
+<figcaption aria-hidden="true">Harmonize vector using
+stringdist</figcaption>
+</figure>
+
+To walk down the step the vector we could either use for loops or a
+recursive function. However there is a function specifically for this
+kind of recursion in the purrr package,
 [reduce](https://blog.zhaw.ch/datascience/r-reduce-applys-lesser-known-brother/)!
-In order to use either approach we first need to define the function we
+In order to use either approach we need to first define the function we
 want to apply between each element and the vector. I’m going to call the
-function `fuzzy_match` though that name may already be in use elsewhere.
+function `fmatch` though that may already exist elsewhere.
 
 ``` r
 # This is pretty cool!
@@ -93,7 +119,7 @@ fuzzy_match <- function(vector, element, max_dist = 0.1) {
     }
   }
 
-  # Ff no match within max_dist is found, return the original element
+  # If no match within max_dist is found, return the original element
   return(c(vector, element))
 }
 ```
@@ -131,7 +157,7 @@ which produces the following:
 
 Notice how not everything was standardized? That’s because we chose a
 relatively stringent maximum disease distance. If we instead set
-`max_dist = 0.2` we get the following:
+`max_dist = 0.3` we get the following:
 
 | disease_name       | outbreaks | standardized_disease_name |
 |:-------------------|----------:|:--------------------------|
@@ -161,7 +187,7 @@ enough you might be able to match difficult cases, such as
 changing something too far, like matching `Heart Disease to Malaria`.
 It’s is not always clear where that border should be drawn.
 
-2.  Clustering
+## Clustering
 
 Another way to do essentially the same thing is through hierarchical
 clustering.
