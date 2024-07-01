@@ -47,8 +47,8 @@ Note: this data is fictional!
 
 # Standardization by string distance
 
-The most straight forward way to standardize a character vector is use
-string distance. String distance is a measure of how different two
+The most straight forward way to standardize a character vector is to
+use string distance. String distance is a measure of how different two
 strings are. The method I tend to use is
 [Jaro–Winkler](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance)
 distance. The distance returned is normalized so that a score of 0
@@ -69,19 +69,20 @@ alt="Harmonize vector using stringdist" />
 stringdist</figcaption>
 </figure>
 
-To walk down the step the vector we could either use for loops or a
-recursive function. However there is a function specifically for this
-kind of recursion in the purrr package,
+To walk down the vector we could either use for loops or some kind of
+recursive function. Fortunately there is a function specifically for
+this kind of recursion in the purrr package,
 [reduce](https://blog.zhaw.ch/datascience/r-reduce-applys-lesser-known-brother/)!
-In order to use either approach we need to first define the function we
+In order to use either approach we first need to define the function we
 want to apply between each element and the vector. I’m going to call the
-function `fmatch` though that may already exist elsewhere.
+function `fuzzy_match` though that name may already be in use elsewhere.
 
 ``` r
 # This is pretty cool!
-fmatch <- function(vector, element, max_dist = 0.1) {
+fuzzy_match <- function(vector, element, max_dist = 0.1) {
   
-  # return the closest matching element in the vector 
+  # Return the closest matching element in the vector 
+  # Add in a few guards against failure to match
   key <- vector[vector != element]
   dist <- stringdist::stringdist(element, key, method = "jw")
   if(!is.null(element)) {
@@ -92,7 +93,7 @@ fmatch <- function(vector, element, max_dist = 0.1) {
     }
   }
 
-  # or if no match within the appropriate distance is found, add the original element to the standardized vector
+  # Ff no match within max_dist is found, return the original element
   return(c(vector, element))
 }
 ```
@@ -100,9 +101,9 @@ fmatch <- function(vector, element, max_dist = 0.1) {
 Now we just need to invoke it using the reduce function as so:
 
 ``` r
-# I'm pretty proud of this one.
+# I'm pretty proud of this one!
 outbreak_data <- outbreak_data |> 
-  mutate(standardized_disease_name = reduce(disease_name, fmatch, max_dist = 0.1))
+  mutate(standardized_disease_name = reduce(disease_name, fuzzy_match, max_dist = 0.1))
 ```
 
 which produces the following:
@@ -161,4 +162,8 @@ changing something too far, like matching `Heart Disease to Malaria`.
 It’s is not always clear where that border should be drawn.
 
 2.  Clustering
+
+Another way to do essentially the same thing is through hierarchical
+clustering.
+
 3.  Natural Language Processing (NLP)
