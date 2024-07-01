@@ -66,15 +66,6 @@ The most straight forward way to standardize a character vector is to use string
 ![Harmonize vector using stringdist](/assets/img/fuzzy_harmonize_stringdist.png)
 
 To walk down the vector we could either use for loops or some kind of recursive function. Fortunately there is a function specifically for this kind of recursion in the purrr package, [reduce](https://blog.zhaw.ch/datascience/r-reduce-applys-lesser-known-brother/)! In order to use either approach we first need to define the function we want to apply between each element and the vector. I'm going to call the function `fuzzy_match` though that name may already be in use elsewhere.
-=======
-# Standardization by string distance
-
-The most straight forward way to standardize a character vector is use string distance. String distance is a measure of how different two strings are. The method I tend to use is [Jaro–Winkler](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance) distance. The distance returned is normalized so that a score of 0 represents an exact match between two strings and a 1 maximal difference. This kind of operation involves so called `fuzzy` logic which, unlike boolean definitions of true and false, handles the case of partial matches. In R, the main package for calculating string distance is the [stringdist](https://github.com/markvanderloo/stringdist) package. For this use case we need to come up with an algorith that will sequentially move down a vector, finding the best match within a given string distance and adopting it as the new standard. Graphically the algorithm should essentially do the following.
-
-![Harmonize vector using stringdist](/assets/img/fuzzy_harmonize_stringdist.png)
-
-To walk down the step the vector we could either use for loops or a recursive function. However there is a function specifically for this kind of recursion in the purrr package, [reduce](https://blog.zhaw.ch/datascience/r-reduce-applys-lesser-known-brother/)! In order to use either approach we need to first define the function we want to apply between each element and the vector. I'm going to call the function `fmatch` though that may already exist elsewhere.
-
 
 ```{r}
 # This is pretty cool!
