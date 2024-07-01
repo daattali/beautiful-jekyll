@@ -15,4 +15,4 @@ Instagram: raki_yoga
 
 Telegram: raki_yoga
 
-Whatsapp: +49(0)17662233035
+Tel / SMS : +49(0)17662233035
