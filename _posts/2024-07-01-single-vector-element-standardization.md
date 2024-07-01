@@ -2,7 +2,7 @@
 layout: post  
 title: Single Vector Element Standardization  
 subtitle: Finding harmony within oneself  
-image: /assets/img/path.jpg  
+image: /assets/img/inner-harmony.png  
 tags: [data, R, tricks]  
 ---  
 
@@ -20,7 +20,7 @@ each method.
 
 ## The vector to standardize
 
-Note: this data is fictional
+Note: this data is fictional!
 
 | disease_name       | outbreaks |
 |:-------------------|----------:|
