@@ -21,10 +21,21 @@ author: Nate Layman
 
 navbar-links:
   About Me: "aboutme"
+  CV: "CV"
+  Projects and Code Examples:
+    - WAHIS-WILD Sensitivity: "https://github.com/ecohealthalliance/woah-wahis-wild-sensitivity"
+    - Automated Literature Searching: "https://github.com/ecohealthalliance/ehallm/blob/main/README.md"
+    - Chat Assisted Debugging: "https://github.com/n8layman/chad"
+    - PREEMPT Lassa Fever: "https://preemptlassawestafrica.ibest.uidaho.edu/"
+    - TDOA game: "https://n8-layman.shinyapps.io/tdoa/"
   Resources:
-    - Curriculum vitae: "CV"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Statistical Inference: "https://github.com/rmcelreath/stat_rethinking_2023"
+    - Learn Markdown: "http://www.markdowntutorial.com/"
+    - How Git Works!: "https://jvns.ca/blog/2024/04/25/new-zine--how-git-works-/"
+    - Learn GitHub Actions: "https://docs.github.com/en/actions/learn-github-actions"
+    - Project Pipelines in R: "https://books.ropensci.org/targets/"
+    - A Useful Citation Formater: "https://citation.crosscite.org/"
+    - Citation Discovery Tool: "https://www.researchrabbit.ai/"
 
 ################
 # --- Logo --- #
