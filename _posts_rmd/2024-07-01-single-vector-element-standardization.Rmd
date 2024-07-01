@@ -19,6 +19,8 @@ knit: >
 `title: Single Vector Element Standardization`{=html} \
 `subtitle: Finding harmony within oneself`{=html} \
 `image: /assets/img/inner-harmony.png`{=html} \
+`cover-img: /assets/img/inner-harmony.png`{=html} \
+`share-img: /assets/img/inner-harmony.png`{=html} \
 `tags: [data, R, tricks]`{=html} \
 `---`{=html} \
 

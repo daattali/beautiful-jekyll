@@ -3,6 +3,8 @@ layout: post
 title: Single Vector Element Standardization  
 subtitle: Finding harmony within oneself  
 image: /assets/img/inner-harmony.png  
+cover-img: /assets/img/inner-harmony.png  
+share-img: /assets/img/inner-harmony.png  
 tags: [data, R, tricks]  
 ---  
 
