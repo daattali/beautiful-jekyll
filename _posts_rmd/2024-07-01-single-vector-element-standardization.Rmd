@@ -5,6 +5,13 @@ date: "`r Sys.Date()`"
 output:
   md_document:
     variant: gfm
+knit: >
+  (function(input_file, encoding) {
+    metadata <- rmarkdown::yaml_front_matter(input_file)
+    output_file = with(metadata, paste0(Sys.Date(), "-", gsub(" ", "-", title), ".md"))
+    output_dir = "../_posts"
+    rmarkdown::render(input = input_file, output_file = output_file, output_dir = output_dir)
+  })
 ---
 
 `---`{=html} \
