@@ -57,9 +57,9 @@ outbreak_data <- tribble(
 )
 knitr::kable(outbreak_data)
 ```
-
 \
-# Standardization by string distance
+
+## Standardization by string distance
 
 The most straight forward way to standardize a character vector is to use string distance. String distance is a measure of how different two strings are. The method I tend to use is [Jaro–Winkler](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance) distance. The distance returned is normalized so that a score of 0 represents an exact match between two strings and a 1 maximal difference. This kind of operation involves so called `fuzzy` logic which, unlike boolean definitions of true and false, handles the case of partial matches. In R, the main package for calculating string distance is the [stringdist](https://github.com/markvanderloo/stringdist) package. For this use case we need to come up with an algorith that will sequentially move down a vector, finding the best match within a given string distance and adopting it as the new standard. Graphically the algorithm should essentially do the following.
 
@@ -68,6 +68,8 @@ The most straight forward way to standardize a character vector is to use string
 To walk down the vector we could either use for loops or some kind of recursive function. Fortunately there is a function specifically for this kind of recursion in the purrr package, [reduce](https://blog.zhaw.ch/datascience/r-reduce-applys-lesser-known-brother/)! In order to use either approach we first need to define the function we want to apply between each element and the vector. I'm going to call the function `fuzzy_match` though that name may already be in use elsewhere.
 
 ```{r}
+library(stringdist)
+
 # This is pretty cool!
 fuzzy_match <- function(vector, element, max_dist = 0.1) {
   
@@ -93,18 +95,18 @@ Now we just need to invoke it using the reduce function as so:
 
 ``` {r}
 # Slick right?
-outbreak_data <- outbreak_data |> 
-  mutate(standardized_disease_name = reduce(disease_name, fuzzy_match, max_dist = 0.1)) |>
+outbreak_data_stringdist <- outbreak_data |> 
+  mutate(standardized_disease_name = reduce(disease_name, fuzzy_match, max_dist = 0.1)) |> 
   select(contains("name"), outbreaks)
 ```
 
 which produces the following:
 
 ```{r, echo = F}
-knitr::kable(outbreak_data)
+knitr::kable(outbreak_data_stringdist)
 ```
 
-Notice how not everything was standardized? That's because we chose a relatively stringent maximum disease distance. If we instead set `max_dist = 0.3` we get the following:
+Notice how not everything was standardized? That's because we chose a relatively stringent maximum string distance. If we instead set `max_dist = 0.3` we get the following:
 
 ```{r, echo = F}
 outbreak_data |> 
@@ -119,4 +121,29 @@ The weakness of this approach is that it is not always clear what the best maxim
 
 Another way to do essentially the same thing is through hierarchical clustering.
 
-3.  Natural Language Processing (NLP)
+##  Natural Language Processing (NLP)
+
+Finally we can turn to Natural Language Processing to standardize things for us. This approach has both advantages and dis-advantages. One of the advantages is that large language models like chatGPT may have an idea of which of two strings is better, given the context. That's a pretty big bonus. A disadvantage is that the results you get from these models are not as reproducible as a purely rules-based, or algorithmic approach. 
+
+There is also an element of trust that the results returned were not altered or biased in any way by the model. This isn't an issue with small datasets but could be a real concern when dealing with tables with millions of rows. Then it can be very difficult to tell if the model just happens to be biased against some of the results. Perhaps it is much more stringent about matching names starting with the letter 'J' than those that start with 'S'. 
+
+To perform vector harmonization using NLP in R we can turn to the [openai](https://irudnyts.github.io/openai/) package in R, which is a wrapper around OpenAI's API. In order to have a conversation with one of OpenAI's models we first have to set up the conversation including getting and OpenAI API key (available [here](https://platform.openai.com/api-keys), choosing which model we want to use, telling the model how it should act, and formatting our query appropriately. This involves a creating a series of lists.
+
+``` {r}
+library(openai)
+
+messages <-
+    list(
+      list("role" = "system",
+           "content" = "you act as a function that standardizes a provided vector and returns a vector of equal length formated as a JSON object."),
+      list("role" = "user",
+           "content" = "The following vector contains disease names. Please alter the following disease names to remove minor errors and formatting inconsistencies and to standardize on the appropriate disease name."),
+      list("role" = "user",
+           "content" = outbreak_data$disease_name)
+      )
+
+outbreak_data_nlp <- create_chat_completion(
+    model = "gpt-3.5-turbo",
+    messages = messages) 
+
+```

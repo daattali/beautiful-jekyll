@@ -46,7 +46,8 @@ Note: this data is fictional!
 | Heart Diease       |        58 |
 
   
-\# Standardization by string distance
+
+## Standardization by string distance
 
 The most straight forward way to standardize a character vector is to
 use string distance. String distance is a measure of how different two
@@ -72,6 +73,17 @@ this kind of recursion in the purrr package,
 In order to use either approach we first need to define the function we
 want to apply between each element and the vector. I’m going to call the
 function `fuzzy_match` though that name may already be in use elsewhere.
+
+``` r
+library(stringdist)
+```
+
+    ## 
+    ## Attaching package: 'stringdist'
+
+    ## The following object is masked from 'package:tidyr':
+    ## 
+    ##     extract
 
 ``` r
 # This is pretty cool!
@@ -127,7 +139,7 @@ which produces the following:
 | Heart Diease       | Heart Disease             |        58 |
 
 Notice how not everything was standardized? That’s because we chose a
-relatively stringent maximum disease distance. If we instead set
+relatively stringent maximum string distance. If we instead set
 `max_dist = 0.3` we get the following:
 
 | disease_name       | standardized_disease_name | outbreaks |
@@ -168,4 +180,31 @@ from each other.
 Another way to do essentially the same thing is through hierarchical
 clustering.
 
-3.  Natural Language Processing (NLP)
+## Natural Language Processing (NLP)
+
+Finally we can turn to Natural Language Processing to standardize things
+for us. This approach has both advantages and dis-advantages. One of the
+advantages is that large language models like chatGPT may have an idea
+of which of two strings is better, given the context. That’s a pretty
+big bonus. A disadvantage is that the results you get from these models
+are not as reproducible as a purely rules-based, or algorithmic
+approach.
+
+There is also an element of trust that the results returned were not
+altered or biased in any way by the model. This isn’t an issue with
+small datasets but could be a real concern when dealing with tables with
+millions of rows. Then it can be very difficult to tell if the model
+just happens to be biased against some of the results. Perhaps it is
+much more stringent about matching names starting with the letter ‘J’
+than those that start with ‘S’.
+
+To perform vector harmonization using NLP in R we can turn to the
+[openai](https://irudnyts.github.io/openai/) package in R, which is a
+wrapper around OpenAI’s API. In order to have a conversation with one of
+OpenAI’s models we first have to set up the conversation including
+choosing which model we want to use, telling the model who it should be,
+and formatting our query appropriately. This involves a series of lists.
+
+``` r
+library(openai)
+```
