@@ -110,8 +110,8 @@ Now we just need to invoke it using the reduce function as so:
 
 ``` r
 # Slick right?
-outbreak_data <- outbreak_data |> 
-  mutate(standardized_disease_name = reduce(disease_name, fuzzy_match, max_dist = 0.1)) |>
+outbreak_data_stringdist <- outbreak_data |> 
+  mutate(standardized_disease_name = reduce(disease_name, fuzzy_match, max_dist = 0.1)) |> 
   select(contains("name"), outbreaks)
 ```
 
@@ -142,26 +142,26 @@ Notice how not everything was standardized? That’s because we chose a
 relatively stringent maximum string distance. If we instead set
 `max_dist = 0.3` we get the following:
 
-| disease_name       | standardized_disease_name | outbreaks |
-|:-------------------|:--------------------------|----------:|
-| Influenza          | Influenza                 |        15 |
-| Inflenza           | Influenza                 |        10 |
-| COVID-19           | COVID-19                  |        95 |
-| sars-covid-19      | sars-covid-19             |        90 |
-| Malaria            | Malaria                   |        20 |
-| Maleria            | Malaria                   |        22 |
-| malaria            | Malaria                   |        20 |
-| Diabetes           | Diabetes                  |        30 |
-| Diabetis           | Diabetes                  |        28 |
-| HIV/AIDS           | HIV/AIDS                  |        75 |
-| HIV                | HIV/AIDS                  |        70 |
-| AIDS               | AIDS                      |        65 |
-| Tuberculosis       | Tuberculosis              |        40 |
-| Tuberclosis        | Tuberculosis              |        38 |
-| Alzheimers         | Alzheimers                |        23 |
-| Alzheimers Disease | Alzheimers                |        27 |
-| Heart Disease      | Heart Disease             |        60 |
-| Heart Diease       | Heart Disease             |        58 |
+| disease_name       | outbreaks | standardized_disease_name |
+|:-------------------|----------:|:--------------------------|
+| Influenza          |        15 | Influenza                 |
+| Inflenza           |        10 | Influenza                 |
+| COVID-19           |        95 | COVID-19                  |
+| sars-covid-19      |        90 | sars-covid-19             |
+| Malaria            |        20 | Malaria                   |
+| Maleria            |        22 | Malaria                   |
+| malaria            |        20 | Malaria                   |
+| Diabetes           |        30 | Diabetes                  |
+| Diabetis           |        28 | Diabetes                  |
+| HIV/AIDS           |        75 | HIV/AIDS                  |
+| HIV                |        70 | HIV/AIDS                  |
+| AIDS               |        65 | AIDS                      |
+| Tuberculosis       |        40 | Tuberculosis              |
+| Tuberclosis        |        38 | Tuberculosis              |
+| Alzheimers         |        23 | Alzheimers                |
+| Alzheimers Disease |        27 | Alzheimers                |
+| Heart Disease      |        60 | Heart Disease             |
+| Heart Diease       |        58 | Heart Disease             |
 
 The weakness of this approach is that it is not always clear what the
 best maximum distance to use is. If you set the maximum distance high
@@ -200,11 +200,86 @@ than those that start with ‘S’.
 
 To perform vector harmonization using NLP in R we can turn to the
 [openai](https://irudnyts.github.io/openai/) package in R, which is a
-wrapper around OpenAI’s API. In order to have a conversation with one of
-OpenAI’s models we first have to set up the conversation including
-choosing which model we want to use, telling the model who it should be,
-and formatting our query appropriately. This involves a series of lists.
+wrapper around OpenAI’s API. The rist step is to aquire an OpenAI API
+key which is available [here](https://platform.openai.com/api-keys). The
+API key needs to be loaded as a system variable using
+Sys.setenv(OPENAI_API_KEY=…) or in your project .env file. If you do
+choose to store it there it would be worth looking into
+[git-crypt](https://medium.com/@sumitkum/securing-your-secret-keys-with-git-crypt-b2fa6ffed1a6)
+to secure your .env file. Make sure to do this *before* you add your
+key!
+
+Once the API key is acquired, we have still have to set some more things
+up. This includes choosing which model we want to use, telling the model
+how it should act and formatting our query appropriately. In R this
+involves generating a nested list.
 
 ``` r
 library(openai)
+library(jsonlite)
+```
+
+    ## 
+    ## Attaching package: 'jsonlite'
+
+    ## The following object is masked from 'package:purrr':
+    ## 
+    ##     flatten
+
+``` r
+messages <-
+    list(
+      list("role" = "system",
+           "content" = "you act as a function that standardizes a provided vector and returns a vector of equal length formated as a JSON object."),
+      list("role" = "user",
+           "content" = "The following vector contains disease names. Please alter the following disease names to remove minor errors and formatting inconsistencies and to standardize on the appropriate disease name."),
+      list("role" = "user",
+           "content" = paste(outbreak_data$disease_name, collapse = ","))
+      )
+
+messages
+```
+
+    ## [[1]]
+    ## [[1]]$role
+    ## [1] "system"
+    ## 
+    ## [[1]]$content
+    ## [1] "you act as a function that standardizes a provided vector and returns a vector of equal length formated as a JSON object."
+    ## 
+    ## 
+    ## [[2]]
+    ## [[2]]$role
+    ## [1] "user"
+    ## 
+    ## [[2]]$content
+    ## [1] "The following vector contains disease names. Please alter the following disease names to remove minor errors and formatting inconsistencies and to standardize on the appropriate disease name."
+    ## 
+    ## 
+    ## [[3]]
+    ## [[3]]$role
+    ## [1] "user"
+    ## 
+    ## [[3]]$content
+    ## [1] "Influenza,Inflenza,COVID-19,sars-covid-19,Malaria,Maleria,malaria,Diabetes,Diabetis,HIV/AIDS,HIV,AIDS,Tuberculosis,Tuberclosis,Alzheimers,Alzheimers Disease,Heart Disease,Heart Diease"
+
+Now we can submit our query, extract the data from the response, and add
+a column of standardized disease names. Sometimes however, the model
+will return a malformed JSON object, or will reply as a paragraph of
+text instead of a structured object. In those cases the whole thing
+won’t work. It’s also not easy to tell the model how aggressive it
+should be in standardizing. But hey, if it doesn’t work we can always
+re-submit the query until it does!
+
+``` r
+response <- create_chat_completion(
+    model = "gpt-3.5-turbo",
+    messages = messages) |>
+  bind_cols() 
+
+outbreak_data_nlp <- outbreak_data |> 
+  mutate(standardized_disease_name = response$message.content |> 
+           jsonlite::fromJSON() |> 
+           unlist()) |> 
+  select(contains("name"), everything())
 ```
