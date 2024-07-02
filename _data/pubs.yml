@@ -14,6 +14,25 @@
 #  tags: null
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+- abs: We present HACMan++, a reinforcement learning framework using a novel action space of spatially-grounded parameterized motion primitives for manipulation tasks.
+  authors: Bowen Jiang*, Yilin Wu*, Wenxuan Zhou, Chris Paxton, David Held
+  award: null
+  bib: >
+    @inproceedings{jiang2024hacman++,
+      title={HACMan++: Spatially-Grounded Motion Primitives for Manipulation},
+      author={Jiang, Bowen and Wu, Yilin and Zhou, Wenxuan and Paxton, Chris and Held, David},
+      booktitle={Robotics: Science and Systems (RSS)},
+      year={2024}
+    }
+  img: ../pics/hacman++.gif
+  links:
+      '[arXiv (coming soon)]': https://r-pad.github.io/publications/
+  short_id: jiang2024hacman++
+  site: null
+  title: "HACMan++: Spatially-Grounded Motion Primitives for Manipulation"
+  venue: 'Robotics: Science and Systems (RSS), 2024'
+  video_embed: null
+
 - abs: "We present RoboGen, a generative robotic agent that automatically learns diverse robotic skills at scale via generative simulation. RoboGen leverages the latest advancements in foundation and generative models. Instead of directly using or adapting these models to produce policies or low-level actions, we advocate for a generative scheme, which uses these models to automatically generate diversified tasks, scenes, and training supervisions, thereby scaling up robotic skill learning with minimal human supervision. Our approach equips a robotic agent with a self-guided propose-generate-learn cycle: the agent first proposes interesting tasks and skills to develop, and then generates corresponding simulation environments by populating pertinent objects and assets with proper spatial configurations. Afterwards, the agent decomposes the proposed high-level task into sub-tasks, selects the optimal learning approach (reinforcement learning, motion planning, or trajectory optimization), generates required training supervision, and then learns policies to acquire the proposed skill. Our work attempts to extract the extensive and versatile knowledge embedded in large-scale models and transfer them to the field of robotics. Our fully generative pipeline can be queried repeatedly, producing an endless stream of skill demonstrations associated with diverse tasks and environments."
   authors: Yufei Wang*, Zhou Xian*, Feng Chen*, Tsun-Hsuan Wang, Yian Wang, Katerina Fragkiadaki, Zackory Erickson, David Held, Chuang Gan
   award: null

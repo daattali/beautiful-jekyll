@@ -83,7 +83,7 @@ members:
           - name: Zhanyi Sun (MSR) -> Stanford PhD
             web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/
           - name: Bowen Jiang (MSR) -> UT Austin PhD
-            web_url: https://www.ri.cmu.edu/ri-people/bowen-jiang-2/    
+            web_url: https://jiangbowen0008.github.io/    
           - name: Jenny Wang -> Walt Disney Imagineering 
             web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
           - name: Mansi Agarwal (MSR) -> Amazon Robotics
