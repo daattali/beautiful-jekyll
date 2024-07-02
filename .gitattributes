@@ -46,3 +46,7 @@ Dockerfile text eol=lf
 *.mp3 binary
 *.ogg binary
 *.flv binary
+
+
+## Encrypted Files
+.env filter=git-crypt diff=git-crypt
