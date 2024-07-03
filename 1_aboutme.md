@@ -1,27 +1,26 @@
 ---
 layout: page
 title: About me
-subtitle: Ayurveda Coach and health consulting
+subtitle: Ayurveda health consultant
 ---
+**Hippocrates: You are what you eat.
+Ayurveda: You are what you digest.**
 
-Discover holistic wellness through Ayurveda, yoga, and meditation, embracing natural remedies, herbal supplements, and essential oils for stress relief, weight management, and overall health, while exploring mindfulness, organic living, and traditional Indian vedic medicine to achieve balance in mind, body, and spirit.
+![image](https://github.com/rakiyoga/rakiyoga.github.io/assets/32105064/86d59767-aeff-4ca8-ae6f-415ec112822b)
+
+Ayurvedic Harmony:
+Attaining balance in mind, body, and spirit for overall well-being and vitality.
+Principle of ayurveda lies on Balancing the three doshas; Vata, Pitta, and Kapha,for optimal health.
 
 ![image](https://github.com/rakiyoga/rakiyoga.github.io/assets/32105064/dc6bbaed-6411-4c7d-a269-b28939a194b7)
 
-Rakesh Singh, also known as Raki is an experienced Ayurvedic practitioner with over 10 years of expertise, specializing in managing **autoimmune disorders** and **cancer** cases. His holistic approach focuses on addressing the root causes of health issues rather than just managing symptoms. As an Ayurvedic health consultant, Rakesh offers personalized treatment plans tailored to each client's unique needs. His mission is to empower individuals to take control of their health and well-being through natural and holistic methods.
 
-Raki's clients aim to achieve freedom from medications and supplements by restoring balance and harmony in their bodies and minds. Through Ayurvedic treatments, dietary recommendations, and lifestyle modifications, he helps clients optimize their health and achieve their wellness goals.
 
-Key services offered by Raki include:
+Rakesh Singh, or Raki, gained Ayurvedic wisdom from Dr. Dilip Gadgil and other esteemed vaidyas in India, experts in healing cancer. With over 10 years of experience, Raki specializes in autoimmune disorders and cancer. His holistic approach addresses root causes of health issues.
 
-  -  Personalized Ayurvedic consultations
-  -  Customized treatment plans for health issues
-  -  Dietary, lifestyle, yoga, pranayama recommendations as per individuals
-  -  Herbal remedies and natural therapies
-  -  Guidance on stress management and emotional balance
+As an Ayurvedic health consultant, Raki offers personalized treatment plans tailored to each client’s needs, empowering them to take control of their health through natural methods. Raki helps clients achieve freedom from medications by restoring balance and harmony in body and mind through Ayurvedic treatments, dietary recommendations, and lifestyle changes.
 
-By combining traditional Ayurvedic wisdom with modern health practices, Raki helps clients address the underlying causes of their health issues and achieve long-lasting results.
-
+Discover holistic wellness through Ayurveda, yoga, and meditation, embracing natural remedies, herbal supplements, and super foods for stress relief, weight management, and overall health, while exploring mindfulness, organic living, and traditional Indian vedic medicine to achieve balance in mind, body, and spirit.
 
 ### My Certificates
 My recent certifications
