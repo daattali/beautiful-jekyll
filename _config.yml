@@ -13,7 +13,7 @@
 title: Raki Yoga
 
 # Your name to show in the footer
-author: jugal vaidya
+# author: jugal vaidya
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -21,7 +21,7 @@ author: jugal vaidya
 
 navbar-links:
   About me: "1_aboutme"
-  Articles: "2_blog"
+  Blog: "2_blog"
   Ayurveda: "3_ayurveda_tipps"
   Recipes: "4_recipes"
   Consultation: "5_consultation"
