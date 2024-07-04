@@ -22,10 +22,10 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Donacion: "Dona"
-  Resources:
+  Programas: "Donarrr"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Galeria: "galeria"
 
 ################
 # --- Logo --- #
