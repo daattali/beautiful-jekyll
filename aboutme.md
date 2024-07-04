@@ -1,16 +1,18 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Acerca de programa
+subtitle: que saber de mi 
 ---
 
-My name is EDUARDO ND I have the following qualities:
+Mi nombre es Mesihas:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Brillo
+- Estallidos de estrellas
+
+- Degradados morados
 
 What else do you need?
 
-### My story
+### Por qué el diseño de Airbnb es una clase magistral de UX/UI
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Airbnb ha revolucionado la industria hotelera, y una parte importante de su éxito se puede atribuir a su excepcional experiencia de usuario (UX) y diseño de interfaz de usuario (UI).
