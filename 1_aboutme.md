@@ -7,6 +7,12 @@ subtitle: Ayurveda health consultant
 
 **AYURVEDA: You are what you digest.**
 
+**लोकः समस्तः सुखिनो भवन्तु**  (Sanskrit Mantra: lokah samastah sukhino bhavantu)
+
+Mögen alle Wesen in allen Welten glücklich und zufrieden sein.
+
+May all beings in all worlds be happy and free.
+
 ![comp](https://github.com/rakiyoga/rakiyoga.github.io/assets/32105064/f366491e-829a-42a8-aa02-2cf42bc21684)
 
 
