@@ -10,16 +10,13 @@ Weekdays: Pop in anytime between 9 AM and 7 PM
 Saturdays & Sunday : We offer virtual consultations by appointment
 
 Email: 	**kontakt@rakiyoga.de**
-
 Instagram: raki_yoga
-
 Telegram: raki_yoga
 
 
-
-
 Our goal is to lead you to a balanced life and provide you with the tools to care for your health in the long term. By combining traditional Ayurvedic wisdom with modern health practices, we help you address the causes of your ailments and achieve sustainable results.
-Important: Our offerings do not replace a visit to a doctor. Please always consult a medical professional for health problems!  We provide supplementary support on your path to greater well-being.
+
+**Disclaimer**: Our offerings do not replace a visit to a doctor. Please always consult a medical professional for health problems!  We provide supplementary support on your path to greater well-being.
 
 SMS / telephone: +49(0)17662233035
 
