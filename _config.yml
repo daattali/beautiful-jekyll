@@ -21,7 +21,7 @@ author: Some Person
 
 navbar-links:
   About Me: "aboutme"
-  Donacion: "Donacion"
+  Donacion: "Dona"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
