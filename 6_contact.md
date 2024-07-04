@@ -20,11 +20,10 @@ Our goal is to lead you to a balanced life and provide you with the tools to car
 
 **Disclaimer**: Our offerings do not replace a visit to a doctor. Please always consult a medical professional for health problems!  We provide supplementary support on your path to greater well-being.
 
-SMS / telephone: +49(0)17662233035
-
 Address:
 Heidekamp 49,
 12437 Berlin
 Germany
+SMS / telephone: +49(0)17662233035
 
 We look forward to getting to know you and working together on your health.
