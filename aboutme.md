@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acerca de programa
+title: Quienes somos
 subtitle: que saber de mi 
 ---
 
