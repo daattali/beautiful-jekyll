@@ -10,7 +10,9 @@ Weekdays: Pop in anytime between 9 AM and 7 PM
 Saturdays & Sunday : We offer virtual consultations by appointment
 
 Email: 	**kontakt@rakiyoga.de**
+
 Instagram: raki_yoga
+
 Telegram: raki_yoga
 
 
