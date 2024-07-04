@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: Ayurveda consultation and appointment
+title: Ayurveda Consultation
+subtitle: Ayurveda Consultation and appointment
 ---
 
 **Discover Your Path to Wellness with Ayurveda**
@@ -25,7 +25,6 @@ Every individual is a unique blend of the three doshas - Vata, Pitta, and Kapha.
 - Vata-Focused Sessions: If you're battling restlessness, irregular sleep, or digestive ups and downs, this is for you.
 - Pitta-Balancing Consultations: Designed for those grappling with inflammation, skin flare-ups, or feeling constantly on edge.
 - Kapha-Harmonizing Appointments: Perfect if you're looking to boost metabolism, shake off lethargy, or improve respiratory health. 
-
 
 **Our Consultation Process**
 During your visit, we'll dive deep into understanding your prakriti (innate nature) and current state of health. This involves:

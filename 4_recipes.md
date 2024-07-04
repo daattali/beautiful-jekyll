@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Ayurvedic Recipes for Healing and Balance
+subtitle: Seasonal recipe to heal your body and soul
 ---
 Embrace the wisdom of Ayurveda and nourish your body, mind, and soul with these delicious and healing recipes. Whether you're looking to boost your immunity, balance your doshas, or simply savor the flavors of the season, these Ayurvedic dishes will leave you feeling rejuvenated and in harmony with nature.
 

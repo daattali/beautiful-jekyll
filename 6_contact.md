@@ -15,7 +15,6 @@ Instagram: raki_yoga
 
 Telegram: raki_yoga
 
-
 Our goal is to lead you to a balanced life and provide you with the tools to care for your health in the long term. By combining traditional Ayurvedic wisdom with modern health practices, we help you address the causes of your ailments and achieve sustainable results.
 
 **Disclaimer**: Our offerings do not replace a visit to a doctor. Please always consult a medical professional for health problems!  We provide supplementary support on your path to greater well-being.
