@@ -45,4 +45,6 @@ Ahora solo aparecerá el Cliente seleccionado en pantalla.
 </p>
 
 *Te dejamos aquí un par de videos explicando el filtro de estado* 
-<iframe width="100%" height="400" src="https://www.loom.com/embed/e1bd694f195c49048f76f41cb33f2c6e" frameborder="0" allowfullscreen></iframe>
+<video width="100%"  controls>
+  <source src="https://cdn.capitalexpress.cl/video/Estadoclientes.mp4" type="video/mp4">
+</video>
