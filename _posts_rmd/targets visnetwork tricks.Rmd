@@ -1,0 +1,45 @@
+---
+title: "Targets Visnetwork Tricks"
+author: "Nathan Layman"
+date: "`r Sys.Date()`"
+output:
+  md_document:
+    variant: gfm
+knit: >
+  (function(input_file, encoding) {
+    metadata <- rmarkdown::yaml_front_matter(input_file)
+    output_file = paste0("_posts/", Sys.Date(), "-", gsub(" ", "-", metadata$title), ".md")
+    rmarkdown::render(input = input_file, output_file = xfun::from_root(output_file))
+  })
+---
+
+```{=html}
+---
+layout: post
+title: Targets Visnetwork Tricks
+subtitle: Visualizing downstream targets using iGraph and visnetwork
+image: 
+cover-img: 
+share-img: 
+tags: [data, R, targets, tricks]
+---
+```
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(fig.path=paste0("../assets/img/", Sys.Date(), "-", gsub(" ", "-", metadata$title), "_files/"))
+
+library(tidyverse)
+library(openai)
+library(jsonlite)
+library(stringdist)
+library(DT)
+library(here)
+library(rmarkdown)
+library(ggdendro)
+
+old_posts <- list.files(here::here("_posts"))
+old_posts <- grep(gsub(" ", "-", metadata$title), old_posts, value = T)
+file.remove(here::here("_posts", old_posts))
+```
+
