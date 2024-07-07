@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My website
+title: Fundaciòn San Vicente Pallotti
 
 # Your name to show in the footer
 author: Some Person
@@ -21,10 +21,11 @@ author: Some Person
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
+  Donacion: "Dona"
+  Programas: "Donarrr"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Galeria: "galeria"
 
 ################
 # --- Logo --- #
@@ -32,14 +33,14 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+# avatar: "/assets/img/logo-FSVP-02.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: /assets/img/logo-FSVP-04.png
 
 
 #####################################
@@ -50,21 +51,21 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "fundacionsanvicentepallotti52@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  facebook: https://www.facebook.com/p/Fundacion-San-Vicente-Pallotti-vzla-100069215535439/?paipv=0&eav=AfZd5VC0PCFlxPg2_3BOZHpJiG3hrKkOm8FGDtV4AqnoTGHPLiP0Q5jHDxnfbSNGDps&_rdr
+  github: https://fundacionsanvicentepallotti.github.io/
+  twitter: https://x.com/FSPallottivzla
+  patreon: # DeanAttali
+  youtube: "https://www.youtube.com/@seducidosporcristo"
+  whatsapp: # 15551212
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: https://www.instagram.com/fundacionsanvicentepallotti/?hl=es
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
@@ -95,7 +96,9 @@ rss-description: This website is a virtual proof that I'm awesome
 share-links-active:
   twitter: true
   facebook: true
-  linkedin: true
+  youtube: true
+  instagram: true
+  linkedin: false
   vk: false
 
 # How to display the link to your website in the footer

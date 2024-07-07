@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Quienes somos
-subtitle: que saber de mi 
+title: Dona
+subtitle: Colabora mas
 ---
 
 Mi nombre es Mesihas:
