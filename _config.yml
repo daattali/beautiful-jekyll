@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: Amaljith
 
 # Your name to show in the footer
-author: Some Person
+author: Amaljith
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -22,10 +22,8 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
-
+    - amaljith: "https://amaljith.co.in"
+ 
 ################
 # --- Logo --- #
 ################
