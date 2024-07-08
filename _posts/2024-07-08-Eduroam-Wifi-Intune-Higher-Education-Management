@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Higher Education Management of 'Eduroam Wi-Fi' via Intune"
+date:   2024-07-08
+Author: Jonathan Proctor
+categories: PowerShell, Intune, End User Computing
+---
+
+# Higher Education Management of 'Eduroam Wi-Fi' via Intune
+
+This article provides a detailed explanation of how to setup Eduroam wi-fi via Intune for both on campus and off campus via a wi-Fi Intune policy. The Profiles to create performs the following tasks:
+
+1. **Deploys USER and COMPUTER certificates** via an NDES serve policy.
+2. **Imports a RADIUS certificate** trusted and used by your on premise Radius server into the local computers Trusted Root Certificate Authority.
+3. **Configures an Intune Wi-Fi profile** that uses EAP-TLS and authenticates using USER or COMPUTER certifcates.
+
+## NDES Server Details
+
+### NDES
+The script begins by creating a new directory named `Temp` in the `C:\` drive using the `New-Item` cmdlet:
+
+~~~
+Screenshot
+~~~
+###  Radius Certificate
+DEscription
+
+~~~
+Screenshot
+~~~
+###  Wi-Fi Profile
+Description
+~~~
+Screenshot
+~~~
+### Conclusion
+Conclusion Description
