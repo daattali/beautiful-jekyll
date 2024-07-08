@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Blog
+title: Insights
 subtitle: Ancient Ayurveda for mordern health issues  
 ---
