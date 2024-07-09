@@ -1,5 +1,5 @@
 ---
-title: "Targets Visnetwork Tricks"
+title: "Which Beer is Best"
 author: "Nathan Layman"
 date: "`r Sys.Date()`"
 output:
@@ -16,7 +16,7 @@ knit: >
 ```{=html}
 ---
 layout: post
-title: Targets Visnetwork Tricks
+title: Which Beer is Best
 subtitle: Visualizing downstream targets using iGraph and visnetwork
 image: 
 cover-img: 
@@ -24,7 +24,6 @@ share-img:
 tags: [data, R, targets, tricks]
 ---
 ```
-
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(fig.path=paste0("../assets/img/", Sys.Date(), "-", gsub(" ", "-", metadata$title), "_files/"))
@@ -43,3 +42,4 @@ old_posts <- grep(gsub(" ", "-", metadata$title), old_posts, value = T)
 file.remove(here::here("_posts", old_posts))
 ```
 
+[https://www.kaggle.com/datasets/ruthgn/beer-profile-and-ratings-data-set](https://www.kaggle.com/datasets/ruthgn/beer-profile-and-ratings-data-set)

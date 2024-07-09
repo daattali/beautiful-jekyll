@@ -1,0 +1,61 @@
+---
+title: "Targets Visnetwork Tricks"
+author: "Nathan Layman"
+date: "`r Sys.Date()`"
+output:
+  md_document:
+    variant: gfm
+knit: >
+  (function(input_file, encoding) {
+    metadata <- rmarkdown::yaml_front_matter(input_file)
+    output_file = paste0("_posts/", Sys.Date(), "-", gsub(" ", "-", metadata$title), ".md")
+    rmarkdown::render(input = input_file, output_file = xfun::from_root(output_file))
+  })
+---
+
+```{=html}
+---
+layout: post
+title: Targets Visnetwork Tricks
+subtitle: Visualizing downstream targets using iGraph and visnetwork
+image: 
+cover-img: 
+share-img: 
+tags: [data, R, targets, tricks]
+---
+```
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(fig.path=paste0("../assets/img/", Sys.Date(), "-", gsub(" ", "-", metadata$title), "_files/"))
+
+library(tidyverse)
+library(openai)
+library(jsonlite)
+library(stringdist)
+library(DT)
+library(here)
+library(rmarkdown)
+library(ggdendro)
+
+old_posts <- list.files(here::here("_posts"))
+old_posts <- grep(gsub(" ", "-", metadata$title), old_posts, value = T)
+file.remove(here::here("_posts", old_posts))
+```
+
+## Targets project pipeline manager
+
+This post is a place where I can collect tips and tricks for visualizing project pipelines in my pipeline manager of choice, [targets](https://books.ropensci.org/targets/). `Targets` oraganizes a project into a set of discrete computational steps called 'targets'. By tracking the dependencies of the whole workflow, `targets` can stip parts of the pipeline whos dependencies have not changed.
+
+### Tar plan
+
+Related targets can be grouped, mostly for organizational purposes into 
+
+## Visualizing the pipeline
+
+### Visualizing specific targets
+
+### Visualizing tar_plans
+
+### Visualizing everything downstream from a target
+
+### tar_mermaid and github
