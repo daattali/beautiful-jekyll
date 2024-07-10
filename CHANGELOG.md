@@ -5,6 +5,7 @@
 - Added explicit support for favicons, you only need to add a `favicon.ico` file to the root directory
 - The footer of a page always sticks to the bottom, even on short pages (#576)
 - Added `author` YAML parameter to allow specifying the author(s) of a post (#1220)
+- Fixed bug where search results broke if a post title had a backslash (#1279)
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156)
 - Added social network links for GitLab, Bluesky, Whatsapp, Untappd (#1168, #1218, #1299, #1307)
 - Use CSS variables (#661)
