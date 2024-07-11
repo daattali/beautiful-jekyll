@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: Vivek Singh
 
 # Your name to show in the footer
-author: Some Person
+author: Vivek Singh
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -50,14 +50,14 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "vivek.singh@plymouth.ac.uk"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+  #facebook: deanattali
+  github: https://github.com/Viveksbawa
+  #twitter: daattali
   patreon: DeanAttali
   youtube: "@daattali"
-  whatsapp: 15551212
+  # whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
