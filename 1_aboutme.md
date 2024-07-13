@@ -19,7 +19,7 @@ Principle of ayurveda lies on Balancing the three doshas; Vata, Pitta, and Kapha
 
 
 
-I am Rakesh Singh, also known as Raki, and I have been fortunate to acquire profound Ayurvedic knowledge under the guidance of renowned experts like Dr. GADGIL DILIP PRABHAKAR. With over 10 years of experience, I focus on **autoimmune disorders** and **cancer**, offering personalized treatment plans that address root causes of health issues. 
+I am Rakesh Singh, also known as Raki, and I have been fortunate to acquire profound Ayurvedic knowledge under the guidance of renowned experts like Dr. GADGIL DILIP PRABHAKAR. With over 10 years of experience, I focus on **autoimmune disorders** and **cancer**, neurological & neurodegenerative disorders, hormonal & psychological disorders and offering personalized treatment plans that address root causes of health issues. 
 
 As an Ayurvedic health consultant, I empower clients to take control of their health through natural methods, helping them achieve **freedom** from medications and health supplements. Through Ayurvedic treatments, dietary recommendations, and lifestyle changes, I guide clients on a path to healing and wellness.
 
