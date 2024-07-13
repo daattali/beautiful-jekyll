@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Oxocard Science+
-subtitle: Neues Spielzeug 
+title: Umgebungsmonitoring mit dem Science+
+subtitle: Zeit zum Lüften
 comments: true
 author: Ramon Franke
 last_modified_at: 2024-06-14
@@ -34,8 +34,7 @@ def updateAdaIO(feed: byte[120], value):
         print("error while sending POST" + readRequestJSON("data"))
 ~~~
 
-Den vollständigen Code zum Nachmachen findest du hier: https://github.com/gtxmen/nanopy-adaio-envmonitoring/tree/main
-
+Den vollständigen Code zum Nachmachen findest du hier: [Nanopy-Envmonitoring](https://github.com/gtxmen/nanopy-adaio-envmonitoring/tree/main)
 ## AdaIO
 Zunächst wollte ich eine Schritt-für-Schritt-Erklärung schreiben. Adafruit hat aber super tolle Dokumentationen, auf die ich weiter unten verweise. Darüber hinaus ist auch die Nutzeroberfläche intuitiv, dass mir eine Anleitung als nichtig erschien. Hier aber ein Überblick zu AdaIO und was aus meinen Daten geworden ist:
 Wie kurz eingeleitet, ist AdaIO ein Service von Adafruit. Um die Datenbanken zu füllen, kann man die API verwenden. Dafür braucht man wie üblich einen API-Key, der sich unter den Einstellungen generieren lässt. AdaIO arbeitet mit "Feeds", das sind im Wesentlichen Sammlungen von Datenpunkten. Ich kann zum Beispiel die CO2-Messwerte meines Sensors an den Feed "co2" senden. Unter dem Feed habe ich dann eine Liste mit den gesendeten CO2-Werten. Mit den Feeds lässt sich dann super weiter arbeiten.  
@@ -44,11 +43,9 @@ Hier ein Beispiel:
 AdaIO bringt direkt die eigene Funktion mit, die Feeds grafisch darzustellen. Das heißt, ihr könnt direkt Dashboards mit Graphen, Reglern oder Diagrammen erstellen.
 ![dashboard](/assets/img/oxocard/dashboard.png) 
 
-
-
-https://io.adafruit.com/blog/
-https://learn.adafruit.com/welcome-to-adafruit-io/getting-started-with-adafruit-io
-https://io.adafruit.com/api/docs/#adafruit-io-http-api
-
 ## Links
-https://oxocard.ch/
+
+[Oxocard](https://oxocard.ch/)  
+[Adrafruit-Blog](https://io.adafruit.com/blog/)  
+[Getting Started with Adafruit](https://learn.adafruit.com/welcome-to-adafruit-io/getting-started-with-adafruit-io)  
+[Adafruit-IO-API](https://io.adafruit.com/api/docs/#adafruit-io-http-api)
