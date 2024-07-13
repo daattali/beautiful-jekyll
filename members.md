@@ -21,15 +21,9 @@ members:
           - name: Yufei Wang<br>(co-advised with Zackory Erickson)
             photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
             web_url: https://yufeiwang63.github.io/
-          - name: Jenny Wang
-            photo_url: https://www.ri.cmu.edu/app/uploads/2021/07/Wang_Jenny-scaled.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
       - name: Masters students
         full: true
-        list:   
-          - name: Zhanyi Sun (MSR)
-            photo_url: /img/members/zhanyi.png
-            web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/
+        list:
           - name: Pranay Gupta (MSR)
             photo_url: /img/members/pranaygupta.jpg
             web_url: https://www.ri.cmu.edu/ri-people/pranay-gupta/
@@ -57,9 +51,6 @@ members:
       - name: Visiting Students
         full: true
         list:
-          - name: Bharath Hegde
-            photo_url: /img/members/bharath.jpg
-            web_url: https://bharath-hegde.github.io/
           - name: Ziyu Wang
             photo_url: /img/members/Ziyu_Wang.jpg
             web_url: 
@@ -89,9 +80,12 @@ members:
       - name: Master's students (Research Master's)
         full: False
         list:
+          - name: Zhanyi Sun (MSR) -> Stanford PhD
+            web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/
           - name: Bowen Jiang (MSR) -> UT Austin PhD
-            photo_url: /img/members/bowenjiang.png
-            web_url: https://jiangbowen0008.github.io/
+            web_url: https://jiangbowen0008.github.io/    
+          - name: Jenny Wang -> Walt Disney Imagineering 
+            web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
           - name: Mansi Agarwal (MSR) -> Amazon Robotics
             web_url: https://mansiagarwal11.github.io/
           - name: Sashank Tirumala (MSR) -> AIM Intelligent Machines
@@ -131,6 +125,8 @@ members:
       - name: Visiting Reseachers
         full: False
         list:
+            - name: Bharath Hegde
+              web_url: https://bharath-hegde.github.io/
             - name: Himangi Mittal -> CMU MSR
               web_url: https://himangim.github.io/
             - name: Jianren Wang -> CMU PhD
