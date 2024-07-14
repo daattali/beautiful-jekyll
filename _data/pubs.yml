@@ -30,7 +30,7 @@
   short_id: jiang2024hacman++
   site: https://sgmp-rss2024.github.io/
   title: "HACMan++: Spatially-Grounded Motion Primitives for Manipulation"
-  venue: Robotics: Science and Systems (RSS), 2024
+  venue: 'Robotics: Science and Systems (RSS), 2024'
   video_embed: <iframe width="560" height="396" src="https://sgmp-rss2024.github.io/static/videos/all_v2.mp4" title="HACMan++:Spatially-Grounded Motion Primitives for Manipulation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   tags:
       - rl
