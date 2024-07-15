@@ -223,7 +223,6 @@
   links:
       '[arXiv]': https://arxiv.org/abs/2305.03942
       '[Code]': https://github.com/HACMan-2023/HACMan
-      '[PDF]': https://openreview.net/pdf?id=fa7FzDjhzs9
   short_id: hacman
   site: https://hacman-2023.github.io/
   title: "HACMan: Learning Hybrid Actor-Critic Maps for 6D Non-Prehensile Manipulation"
