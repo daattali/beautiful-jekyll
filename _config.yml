@@ -29,7 +29,7 @@ navbar-links:
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     #- Learn markdown: "https://www.markdowntutorial.com/"
-  Documentaion: "/_documentation/2024-07-20-Routing using Multilayer and Router on Stick.md/"
+  # Documentaion: "/_documentation/2024-07-20-Routing using Multilayer and Router on Stick.md/"
   
   #"inter-vlan routing using ROAS, SVI and Routed Ports.md"
   
