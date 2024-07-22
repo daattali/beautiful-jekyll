@@ -22,9 +22,7 @@ Mutlilayer Switch configuration with Switch Virtual Interface for VLAN 10 and 11
 - Connectivity between both VLANs is tested using ping command from a endpoint to another of each vlan.
 - Configuration is saved on multilayer switch at last.
 ```
-    <html>
-      <head>
-      enable
+<code>
 configure terminal
 no banner exec
 no banner incoming
@@ -76,8 +74,7 @@ ip route 192.168.13.0 255.255.255.0 200.10.50.2
  show interface status
  !
 copy running-config startup-config
-      </head>
-    </html>
+</code>
 
 
 ```
@@ -85,11 +82,11 @@ copy running-config startup-config
 Router's Gi0/0 port is configured as a point-to-point link with Multi-layer switch and interface Gi0/1 and sub-interfaces Gi0/1.12 and Gi0/1.13 for router on stick.
 
 ```
-enable
-configure terminal
-no banner exec
-no banner incoming
-no banner login
+<code>enable</code>
+<code>configure terminal</code>
+<code>no banner exec</code>
+<code>no banner incoming</code>
+<code>no banner login</code>
 !
 hostname router-1
 !
