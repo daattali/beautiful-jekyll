@@ -22,6 +22,8 @@ Mutlilayer Switch configuration with Switch Virtual Interface for VLAN 10 and 11
 - Connectivity between both VLANs is tested using ping command from a endpoint to another of each vlan.
 - Configuration is saved on multilayer switch at last.
 ```
+ <html>
+      <head>
 <code>
 configure terminal
 no banner exec
@@ -75,6 +77,8 @@ ip route 192.168.13.0 255.255.255.0 200.10.50.2
  !
 copy running-config startup-config
 </code>
+</head>
+    </html>
 
 
 ```
