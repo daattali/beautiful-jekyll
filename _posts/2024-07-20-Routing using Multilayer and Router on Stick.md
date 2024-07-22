@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Routing using Multilayer and Router on Stick.
-subtitle: CCNA Notes
-author: Baltej Giri
+#subtitle: CCNA Notes
 tags: [documents]
+author: Baltej Giri
 ---
 
 ## LAB Configuration for inter-vlan routing using ROAS, SVI and Routed Ports
@@ -22,7 +22,9 @@ Mutlilayer Switch configuration with Switch Virtual Interface for VLAN 10 and 11
 - Connectivity between both VLANs is tested using ping command from a endpoint to another of each vlan.
 - Configuration is saved on multilayer switch at last.
 ```
-(enable
+    <html>
+      <head>
+      enable
 configure terminal
 no banner exec
 no banner incoming
@@ -73,7 +75,10 @@ ip route 192.168.13.0 255.255.255.0 200.10.50.2
  !
  show interface status
  !
-copy running-config startup-config)
+copy running-config startup-config
+      </head>
+    </html>
+
 
 ```
 ### Router Configuration
