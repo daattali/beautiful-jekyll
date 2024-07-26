@@ -21,7 +21,7 @@ subtitle: A glimpse into who I am
 
 ## 📬 Get in Touch
 
-Feel free to reach out via email at [someone@example.com] or connect with me on [GitHub](https://github.com/choiyounghwan123).
+Feel free to reach out via email at [fdgdfgdgf123@icloud.com] or connect with me on [GitHub](https://github.com/choiyounghwan123).
 
 Thank you for visiting my blog! 😊
 
