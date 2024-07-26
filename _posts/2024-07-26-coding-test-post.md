@@ -3,6 +3,8 @@ layout: post
 title: "백준 11720번 [PYTHON]"
 subtitle: "숫자의 합"
 date: 2024-07-26
+cover-img: /assets/img/baekjoon11720-cover.png
+thumbnail-img: /assets/img/baekjoon11720-cover.png
 tags: [coding-tests]
 ---
 
