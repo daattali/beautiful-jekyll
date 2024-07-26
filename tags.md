@@ -5,8 +5,22 @@ permalink: /tags/
 ---
 
 <h1>Tags</h1>
-<ul>
+<div class="tags-container">
   {% for tag in site.tags %}
-    <li><a href="{{ site.baseurl }}/tags/{{ tag[0] }}">{{ tag[0] }}</a></li>
+    <div class="tag-section">
+      <h2>{{ tag[0] }}</h2>
+      <ul>
+        {% for post in tag[1] %}
+          <li>
+            <a href="{{ post.url }}">
+              {% if post.thumbnail-img %}
+                <img src="{{ post.thumbnail-img }}" alt="{{ post.title }} thumbnail" class="thumbnail">
+              {% endif %}
+              {{ post.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   {% endfor %}
-</ul>
+</div>
