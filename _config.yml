@@ -20,7 +20,11 @@ author: Younghwan Choi
 ###############################################
 
 navbar-links:
+  Home: "/"
   About Me: "aboutme"
+  Blog: "/blog/"
+  Projects: "/projects/"
+  Contact: "/contact/"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
