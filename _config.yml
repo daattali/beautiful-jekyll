@@ -20,10 +20,11 @@ author: Younghwan Choi
 ###############################################
 
 navbar-links:
-  Home: "/"
   About Me: "aboutme"
-  Blog: "/blog/"
-  Projects: "/projects/"
+  Data Science: "/tags/data-science/"
+  Coding Test: "/tags/coding-tests/"
+  Back End: "/tags/back-end/"
+  AI: "/tags/ai/"
   Contact: "/contact/"
 
 ################
