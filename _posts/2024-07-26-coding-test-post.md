@@ -12,7 +12,7 @@ tags: [coding-tests]
 
 **숫자의 합**: [숫자의 합 (백준 11720번)](https://www.acmicpc.net/problem/11720)
 
-** 문제 설명**:
+**문제 설명**:
 N개의 숫자가 공백없이 쓰여있다. 이 숫자를 모두 합해서 출력하는 프로그램을 작성하시오.
 
 **입력**:
@@ -42,4 +42,4 @@ N개의 숫자가 공백없이 쓰여있다. 이 숫자를 모두 합해서 출�
 
     for num in nums:
         sum += int(num)
-    print(sum)
+  print(sum)
