@@ -296,4 +296,11 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+# _config.yml 파일
 
+# Utterances comments 설정
+utterances:
+  repository: choiyounghwan123/choiyounghwan123.github.io # GitHub 사용자명/저장소명
+  issue-term: pathname # blog post 경로를 기반으로 issue를 생성
+  theme: github-light # Utterances 테마
+  label: blog-comments # 생성된 issue에 추가할 라벨
