@@ -1,0 +1,55 @@
+/* assets/css/style.css */
+
+/* 태그 버튼 스타일 */
+.tag-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag-btn {
+  margin-bottom: 10px;
+}
+
+/* 포스트 리스트 스타일 */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.tag-entry {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tag-entry a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.tag-entry a:hover {
+  text-decoration: underline;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.entry-date {
+  margin-left: auto;
+  font-size: 0.9em;
+  color: #666;
+}
