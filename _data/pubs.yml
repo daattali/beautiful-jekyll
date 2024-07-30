@@ -14,6 +14,8 @@
 #  tags: null
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
+
+
 - abs: "Autonomous systems that efficiently utilize tools can assist humans in completing many common tasks such as cooking and cleaning. However, current systems fall short of matching human-level of intelligence in terms of adapting to novel tools. Prior works based on affordance often make strong assumptions about the environments and cannot scale to more complex, contact-rich tasks. In this work, we tackle this challenge and explore how agents can learn to use previously unseen tools to manipulate deformable objects. We propose to learn a generative model of the tool-use trajectories as a sequence of tool point clouds, which generalizes to different tool shapes. Given any novel tool, we first generate a tool-use trajectory and then optimize the sequence of tool poses to align with the generated trajectory. We train a single model on four different challenging deformable object manipulation tasks, using demonstration data from only one tool per task. The model generalizes to various novel tools, significantly outperforming baselines. We further test our trained policy in the real world with unseen tools, where it achieves the performance comparable to human."
   authors: Carl Qi*, Yilin Wu*, Lifan Yu, Haoyue Liu, Bowen Jiang, Xingyu Lin**, David Held** 
   award: null
