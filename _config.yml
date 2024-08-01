@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My website
+title: Harish Sarma
 
 # Your name to show in the footer
 author: Harish sarma
@@ -21,10 +21,10 @@ author: Harish sarma
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  #Resources:
+  #  - Beautiful Jekyll: "https://beautifuljekyll.com"
+   # - Learn markdown: "https://www.markdowntutorial.com/"
+  #Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -51,10 +51,9 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "harishsarma.v@gmail.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: 
+  #facebook: 
   github: harishsarmav
-  twitter: harishsharma_v
+  twitter: harishsarma_v
   #youtube: ""
   #whatsapp: 15551212
 #  medium: yourname
@@ -84,7 +83,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+#rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
 # --- General options --- #
@@ -108,10 +107,10 @@ title-on-all-pages: true
 excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
+feed_show_excerpt: false
 
 # Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
+feed_show_tags: false
 
 # Add a search button to the navbar
 post_search: true
@@ -261,7 +260,7 @@ date_format: "%B %-d, %Y"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+#paginate: 5
 
 kramdown:
   input: GFM
@@ -271,10 +270,10 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      #type: "posts"
     values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
+      #layout: "post"
+      #comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
@@ -294,7 +293,7 @@ exclude:
   - docs/
 
 plugins:
-  - jekyll-paginate
+  #- jekyll-paginate
   - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
