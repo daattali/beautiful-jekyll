@@ -20,11 +20,12 @@
   authors: Carl Qi*, Yilin Wu*, Lifan Yu, Haoyue Liu, Bowen Jiang, Xingyu Lin**, David Held** 
   award: null
   bib: >
-      @inproceedings{qitooluse2024,\n
-      title={{Learning Generalizable Tool-use Skills through Trajectory Generation}},\n
-      author={Carl Qi and Yilin Wu and Lifan Yu and Haoyue Liu and Bowen Jiang and Xingyu Lin and David Held},\n
-      booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n
-      year={2024}\n}"
+      @inproceedings{qitooluse2024,
+      title={{Learning Generalizable Tool-use Skills through Trajectory Generation}},
+      author={Carl Qi and Yilin Wu and Lifan Yu and Haoyue Liu and Bowen Jiang and Xingyu Lin and David Held},
+      booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+      year={2024}
+      }
   img: ../pics/toolgen_realworld.gif
   links: 
       '[arXiv]': https://arxiv.org/abs/2310.00156
