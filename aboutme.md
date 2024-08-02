@@ -4,12 +4,28 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Harish Sarma. I have the following qualities:
+<img style="display: block; margin: 0 auto;" alt="coding" width="498" src="programmer.gif">
 
+My name is Harish Sarma, a Passionate software Engineer, based in India.  
+
+I have the following qualities:
 - I am kind and considerate.
+- Enjoy reading books, and am a movie enthusiast.
+- I believe in the power of continuous learning and the impact of coding in shaping the future. 
 - I'm extremely loyal to my family.
 - I'm a good listener and enjoy meaningful conversations.
 - I have a positive outlook on life and strive to make the best of every situation.
+
+I Like to talk about
+
+-- Tech 👨🏻‍💻
+- I love to do iOS automations & shortcuts workarounds, and staying in shape.
+- Shortcuts & Automations
+  
+-- Fun & Games 🕺🏻
+- Marvel Comics
+- Movies
+- Video gaming
 
 What else do you need?
 
