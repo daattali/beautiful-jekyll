@@ -272,10 +272,10 @@ kramdown:
 defaults:
   -
     scope:
-      path: "_posts/myfile.md"
-      type: "posts"
+      path: "myfile"
+      type: "home"
     values:
-      layout: "post"
+      layout: "home"
       #comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
