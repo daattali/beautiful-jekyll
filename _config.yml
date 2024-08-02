@@ -21,9 +21,10 @@ author: Harish sarma
 
 navbar-links:
   About Me: "aboutme"
-  #Resources:
-  #  - Beautiful Jekyll: "https://beautifuljekyll.com"
-   # - Learn markdown: "https://www.markdowntutorial.com/"
+  #Contact: "contact"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
 
 ################
@@ -57,7 +58,7 @@ social-network-links:
   #youtube: ""
   #whatsapp: 15551212
 #  medium: yourname
-#  reddit: yourname
+  reddit: u/Relevant-Plantain615
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
@@ -94,6 +95,7 @@ share-links-active:
   twitter: true
   facebook: false
   linkedin: false
+  reddit: true
   vk: false
 
 # How to display the link to your website in the footer
@@ -270,7 +272,7 @@ defaults:
   -
     scope:
       path: ""
-      #type: "posts"
+      type: "posts"
     values:
       #layout: "post"
       #comments: true  # add comments to all blog posts
