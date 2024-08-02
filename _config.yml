@@ -272,10 +272,10 @@ kramdown:
 defaults:
   -
     scope:
-      path: ""
+      path: "_posts/myfile.md"
       type: "posts"
     values:
-      #layout: "post"
+      layout: "post"
       #comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
@@ -296,7 +296,7 @@ exclude:
   - docs/
 
 plugins:
-  #- jekyll-paginate
+  - jekyll-paginate
   - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
