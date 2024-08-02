@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
 ---
-
+### 
 <img style="display: block; margin: 0 auto;" alt="coding" width="498" src="assets/img/programmer.gif">
 
 My name is Harish Sarma, a Passionate software Engineer, based in India.  
