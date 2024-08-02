@@ -33,7 +33,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "assets/img/beach.jpg"
+avatar: "assets/img/withcar.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -291,7 +291,7 @@ defaults:
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-      path: "myfile.md" # any file that's not a post will be a "page" layout by default
+      path: "myfile" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
 

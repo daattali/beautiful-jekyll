@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A glimpse into my world
 ---
 <!-- <img style="display: block; margin: 0 auto;" alt="coding" width="498" src="assets/img/programmer.gif"> -->
 
@@ -9,7 +9,6 @@ My name is Harish Sarma, a Passionate software Engineer, based in India.
 
 I have the following qualities:
 - I am kind and considerate.
-- I believe in the power of continuous learning and the impact of coding in shaping the future. 
 - I'm extremely loyal to my family.
 - I'm a good listener and enjoy meaningful conversations.
 - I have a positive outlook on life and strive to make the best of every situation.
@@ -19,6 +18,7 @@ I Like to talk about
 -- Tech 👨🏻‍💻
 - I love to do iOS automations & shortcuts workarounds, and staying in shape.
 - Shortcuts & Automations
+- I believe in the power of continuous learning and the impact of coding in shaping the future. 
   
 -- Fun & Games 🕺🏻
 - Marvel Comics
