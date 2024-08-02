@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: home
 title: iOS Shortcuts and Automations
 subtitle: There's lots to learn!
 gh-repo: harishsarmav/beautiful-jekyll
