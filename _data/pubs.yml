@@ -31,7 +31,7 @@
   site: https://sites.google.com/view/toolgen
   title: "Learning Generalizable Tool-use Skills through Trajectory Generation"
   venue: "International Conference on Intelligent Robots and Systems (IROS), 2024"
-  video_embed: <iframe width="560" height="315" src="https://drive.google.com/file/d/1SkrXppsyAaQwmkxqO2Vs5-Mb6WlsbZYZ/view" title="Learning Generalizable Tool-use Skills through Trajectory Generation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/iheVOX8jG_8" title="Learning Generalizable Tool-use Skills through Trajectory Generation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   tags: 
       - deformable
 
