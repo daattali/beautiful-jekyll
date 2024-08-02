@@ -10,7 +10,6 @@ My name is Harish Sarma, a Passionate software Engineer, based in India.
 
 I have the following qualities:
 - I am kind and considerate.
-- Enjoy reading books, and am a movie enthusiast.
 - I believe in the power of continuous learning and the impact of coding in shaping the future. 
 - I'm extremely loyal to my family.
 - I'm a good listener and enjoy meaningful conversations.
