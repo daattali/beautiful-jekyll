@@ -2,16 +2,13 @@
 layout: post
 title: Unlocking the Power of AI - How to Build a Simple AI Chatbot
 subtitle: A Hands-On Guide to Creating Your First AI Chatbot
-date:   2024-08-05 00:08:00 +0530
-categories: jekyll update
-gh-badge: [star, fork, follow]
+date: 2024-08-05 00:20:00 +0530
 tags: [ai, python, chatbot]
-# comments: true
+comments: false
 author: Harish Sarma
 readtime: true
 ---
 
-{: .box-success}
 Below, you’ll find a step-by-step guide to building a simple AI chatbot using Python. This guide is designed to help you get started with AI and create a functional chatbot that you can customize and expand upon.
 
 **Here’s What You’ll Learn**:
@@ -44,8 +41,7 @@ Click to Expand: Follow the instructions to build your chatbot and learn how AI 
 <ul>
     <li>Create a new Python file, e.g., `chatbot.py`.</li>
     <li>Add the following code to set up and train your chatbot:</li>
-    <pre><code>
-from chatterbot import ChatBot
+    <pre><code>from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 # Create a new chatbot instance
@@ -70,8 +66,7 @@ if __name__ == "__main__":
             print("Goodbye!")
             break
         response = get_response(user_input)
-        print(f"Bot: {response}")
-    </code></pre>
+        print(f"Bot: {response}")</code></pre>
 </ul>
 </details>
 
@@ -99,8 +94,7 @@ if __name__ == "__main__":
 <h3><ins>How to Customize</ins></h3>
 <ul>
     <li>Modify the training data by adding custom responses:</li>
-    <pre><code>
-from chatterbot.trainers import ListTrainer
+    <pre><code>from chatterbot.trainers import ListTrainer
 
 custom_trainer = ListTrainer(chatbot)
 
@@ -113,8 +107,7 @@ custom_conversations = [
     "I am a chatbot created by Harish."
 ]
 
-custom_trainer.train(custom_conversations)
-    </code></pre>
+custom_trainer.train(custom_conversations)</code></pre>
     <li>Add this code before your interaction loop in `chatbot.py`.</li>
 </ul>
 </details>
