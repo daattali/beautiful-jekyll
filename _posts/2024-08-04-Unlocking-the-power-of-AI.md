@@ -2,14 +2,15 @@
 layout: post
 title: Unlocking the Power of AI - How to Build a Simple AI Chatbot
 subtitle: A Hands-On Guide to Creating Your First AI Chatbot
-date: 2024-08-04 18:40:00 +0530
+date:   2024-08-04 18:40:00 +0530
 categories: jekyll update
 gh-badge: [star, fork, follow]
 tags: [ai, python, chatbot]
-comments: true
+# comments: true
 author: Harish Sarma
+readtime: true
 ---
-
+{: .box-success}
 Below, you’ll find a step-by-step guide to building a simple AI chatbot using Python. This guide is designed to help you get started with AI and create a functional chatbot that you can customize and expand upon.
 
 **Here’s What You’ll Learn**:

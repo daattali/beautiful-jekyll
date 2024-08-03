@@ -6,8 +6,9 @@ date:   2024-08-03 12:40:00 +0530
 categories: jekyll update
 gh-badge: [star, fork, follow]
 tags: [ios shortcuts]
-comments: true
+# comments: true
 author: Harish sarma
+readtime: true
 ---
 
 Below, you’ll find a selection of useful iOS shortcuts that can help you streamline your daily tasks and enhance productivity. Each section offers a specific shortcut with instructions on how to use it.
