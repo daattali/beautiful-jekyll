@@ -2,11 +2,9 @@
 layout: post
 title: Unlocking the Power of iOS Shortcuts
 subtitle: Simplify Your Life with Powerful Automations
-gh-repo: harishsarmav/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [ios shortcuts]
 comments: true
-mathjax: true
 author: Harish sarma
 ---
 
