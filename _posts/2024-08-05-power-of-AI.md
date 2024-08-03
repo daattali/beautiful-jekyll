@@ -3,7 +3,7 @@ layout: post
 title: How to Build a Simple AI Chatbot
 subtitle: A Hands-On Guide to Creating Your First AI Chatbot
 cover-img: "assets/img/ai.jpg"
-date: 2024-08-04 00:58:00 +0530
+date: 2024-08-04 01:01:00 +0530
 tags: [ai, python, chatbot]
 comments: false
 author: Harish Sarma
