@@ -3,10 +3,10 @@ layout: post
 title: Unlocking the Power of iOS Shortcuts
 subtitle: Simplify Your Life with Powerful Automations
 cover-img: "assets/img/shortcut.jpg"
-date:   2024-08-03 12:40:00 +0530
+date:   2024-08-03 12:40:00 IST
 tags: [ios shortcuts]
 comments: false
-author: Harish Sarma
+author: Harish sarma
 readtime: true
 ---
 
@@ -43,7 +43,7 @@ Explore these shortcuts to make your iOS experience more efficient and enjoyable
 Click here: 👉
     
 <!-- <a href="https://www.icloud.com/shortcuts/6b4e5d4d307643a7bf1452db76564025">Pomodoro Timer for Mac</a> -->
-<a href="https://www.icloud.com/shortcuts/6b4e5d4d307643a7bf1452db76564025" class="btn" style="color: #000; background-color: #FF5733;"> Pomodoro Timer</a>
+<a href="https://www.icloud.com/shortcuts/6b4e5d4d307643a7bf1452db76564025" class="btn" style="color: black; background-color: #FFEB3B;"> Pomodoro Timer</a>
 <br>
 
 <h3>Note: For iPhone it is available by default in shortcuts Gallery</h3>
@@ -70,7 +70,7 @@ Click here: 👉
 <h3> <ins>Download the Shortcut</ins></h3>
 Click here: 👉
 <!-- <a href="https://www.icloud.com/shortcuts/c8ea021e30084979aed442cd5baf7c90">Paytm Quick Access</a> -->
-<a href="https://www.icloud.com/shortcuts/c8ea021e30084979aed442cd5baf7c90" class="btn" style="color: #000; background-color: #FF5733;"> Paytm Quick Access</a>
+<a href="https://www.icloud.com/shortcuts/c8ea021e30084979aed442cd5baf7c90" class="btn" style="color: black; background-color: #FFEB3B;"> Paytm Quick Access</a>
 
 </details>
 
@@ -114,7 +114,7 @@ Click here: 👉
 <h3> <ins>Download the Shortcut</ins> </h3>
 Click here: 👉 
 <!-- <a href="https://www.icloud.com/shortcuts/5e394786a33f4980b45dac44ea83d7ea">Birthday Wisher</a> -->
-<a href="https://www.icloud.com/shortcuts/5e394786a33f4980b45dac44ea83d7ea" class="btn" style="color: #000; background-color: #FF5733;"> Birthday Wisher</a>
+<a href="https://www.icloud.com/shortcuts/5e394786a33f4980b45dac44ea83d7ea" class="btn" style="color: black; background-color: #FFEB3B;"> Birthday Wisher</a>
 
 </details>
 
@@ -138,9 +138,35 @@ Click here: 👉
 <h3> <ins> Download the shortcut: </ins> </h3>
 Click here : 👉 
 <!-- <a href="https://www.icloud.com/shortcuts/269519fa5b98406f8f57e7a8ee552873">Software Update</a> -->
-<a href="https://www.icloud.com/shortcuts/269519fa5b98406f8f57e7a
+<a href="https://www.icloud.com/shortcuts/269519fa5b98406f8f57e7a8ee552873" class="btn" style="color: black; background-color: #FFEB3B;"> Software Update</a>
 
+</details>
 
-Feel free to discuss anything, share your ideas, or seek assistance with any shortcuts-related issues. Your thoughts and questions are always welcome! If you love these shortcuts, please drop a ❤️.
+---
 
-Join the conversation by clicking here 👉 [Discussions](https://github.com/harishsarmav/harishsarma_v/discussions)
+<details>
+    <summary style="font-weight: 800;">App Updates <img alt="Timer" width="20" src="https://emoji.discadia.com/emojis/97563baf-95e8-4320-bed8-6c4d300859fc.PNG"> </summary>
+<h3><ins>Overview</ins></h3>
+<p> The App Store Updates Shortcut simplifies the process of checking for and installing updates for your installed apps from the App Store. With just a tap, you can quickly access the App Store's update section, view available app updates, and install them, ensuring that all your apps are running the latest versions. </p>
+
+<h3> <ins>How to Use</ins> </h3>
+<ul>    
+<li> Click the provided link to download and install the App Updates shortcut on your iOS device. </li>
+<li> Locate and tap the "App Updates" shortcut on your device. </li>
+<li> Tap on the ⓘ icon and add it your Home screen </li>
+<li> The shortcut instantly takes you to the App Store's update section. </li>
+<li> Within the update section, you can efficiently check for available updates for all your installed apps. </li>
+<li> If updates are available, you can choose to initiate the installation process directly from this section, ensuring your apps are up to date. </li>
+</ul>
+
+<h3> <ins> Download the shortcut:</ins> </h3>
+Click here: 👉 
+<!-- <a href="https://www.icloud.com/shortcuts/c1c557f07d2f4204ba89f2132a0bc0b2">App Updates</a> -->
+<a href="https://www.icloud.com/shortcuts/c1c557f07d2f4204ba89f2132a0bc0b2" class="btn" style="color: black; background-color: #FFEB3B;"> App Updates</a>
+
+</details>
+
+---
+
+<p> Feel free to discuss anything, share your ideas, or seek assistance with any shortcuts-related issues. Your thoughts and questions are always welcome! If you love these shortcuts, please drop a ❤️. </p>
+<p> Join the conversation by clicking here 👉🏻 <a href="https://github.com/harishsarmav/harishsarma_v/discussions" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a> </p>
