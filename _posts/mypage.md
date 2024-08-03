@@ -2,6 +2,8 @@
 layout: post
 title: Unlocking the Power of iOS Shortcuts
 subtitle: Simplify Your Life with Powerful Automations
+date:   2024-08-03 12:40:00 +0530
+categories: jekyll update
 gh-badge: [star, fork, follow]
 tags: [ios shortcuts]
 comments: true
