@@ -2,6 +2,7 @@
 layout: post
 title: Unlocking the Power of AI - How to Build a Simple AI Chatbot
 subtitle: A Hands-On Guide to Creating Your First AI Chatbot
+cover-img: "assets/img/ai.jpg"
 date: 2024-08-05 00:20:00 +0530
 tags: [ai, python, chatbot]
 comments: false
