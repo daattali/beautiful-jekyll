@@ -18,7 +18,7 @@ Click to Expand: Follow the instructions to build your chatbot and learn how AI 
 **Step-by-Step Instructions**:
 
 <details>
-    <summary style="font-weight: 800;">Step 1: Set Up Your Environment <img alt="Setup" width="20" src="https://img.icons8.com/material-outlined/24/000000/setup.png"> </summary>
+    <summary style="font-weight: 800;">Step 1: Set Up Your Environment</summary>
 
 <h3><ins>Overview</ins></h3>
 <p>First, you need to install the necessary Python library to get started with building your chatbot. This setup will ensure that you have the tools required for the project.</p>
@@ -32,7 +32,7 @@ Click to Expand: Follow the instructions to build your chatbot and learn how AI 
 </details>
 
 <details>
-    <summary style="font-weight: 800;">Step 2: Create Your Chatbot <img alt="Create" width="20" src="https://img.icons8.com/material-outlined/24/000000/create.png"> </summary>
+    <summary style="font-weight: 800;">Step 2: Create Your Chatbot</summary>
 
 <h3><ins>Overview</ins></h3>
 <p>In this step, you’ll create a Python script to define and train your chatbot. This script will also include a loop for interacting with the chatbot.</p>
@@ -71,7 +71,7 @@ if __name__ == "__main__":
 </details>
 
 <details>
-    <summary style="font-weight: 800;">Step 3: Run Your Chatbot <img alt="Run" width="20" src="https://img.icons8.com/material-outlined/24/000000/run.png"> </summary>
+    <summary style="font-weight: 800;">Step 3: Run Your Chatbot</summary>
 
 <h3><ins>Overview</ins></h3>
 <p>Now that you’ve created your chatbot, you’ll run the script to see it in action. This step will allow you to interact with your chatbot and test its responses.</p>
@@ -86,7 +86,7 @@ if __name__ == "__main__":
 </details>
 
 <details>
-    <summary style="font-weight: 800;">Step 4: Customize Your Chatbot <img alt="Customize" width="20" src="https://img.icons8.com/material-outlined/24/000000/customize.png"> </summary>
+    <summary style="font-weight: 800;">Step 4: Customize Your Chatbot</summary>
 
 <h3><ins>Overview</ins></h3>
 <p>Enhance your chatbot by adding custom responses. This step will show you how to personalize your chatbot to make it more engaging and useful.</p>
