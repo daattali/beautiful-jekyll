@@ -41,9 +41,7 @@ round-avatar: true
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 #title-img: /path/to/image
-collections:
-  posts:
-    output: true
+
 
 #####################################
 # --- Footer social media links --- #
@@ -282,20 +280,23 @@ kramdown:
   input: GFM
 
 # Default YAML values (more information on Jekyll's site)
+collections:
+  posts:
+    output: true
 defaults:
   -
     scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "default"
       #comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
-      path: "" # any file that's not a post will be a "page" layout by default
-    values:
-      layout: "page"
+#  -
+#    scope:
+#      path: "" # any file that's not a post will be a "page" layout by default
+#    values:
+#      layout: "page"
 
 # Exclude these files from production site
 exclude:
