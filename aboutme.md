@@ -17,14 +17,14 @@ I’m known for a few defining qualities:
 
 **Tech 👨🏻‍💻**
 
-**iOS Automations & Shortcuts**: I’m fascinated by how technology can simplify our lives.
+**iOS Automations & Shortcuts**: I’m fascinated by how technology can simplify our lives. <br>
 **Continuous Learning**: I’m a firm believer in the power of learning and coding to shape the future.
 
 **Fun & Games 🕺🏻**
 
-**Marvel Comics**: Big fan of Marvel’s superheroes and their epic stories.
-**Movies**: I enjoy exploring different genres and stories through film.
-**Video Gaming**: Gaming is a great way to unwind and challenge myself.
+**Marvel Comics**: Big fan of Marvel’s superheroes and their epic stories. <br>
+**Movies**: I enjoy exploring different genres and stories through film. <br>
+**Video Gaming**: Gaming is a great way to unwind and challenge myself. <br>
 
 
 **Curious to Know More?**
