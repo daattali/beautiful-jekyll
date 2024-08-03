@@ -2,7 +2,7 @@
 layout: post
 title: Unlocking the Power of AI - How to Build a Simple AI Chatbot
 subtitle: A Hands-On Guide to Creating Your First AI Chatbot
-date:   2024-08-04 18:40:00 +0530
+date:   2024-08-05 00:08:00 +0530
 categories: jekyll update
 gh-badge: [star, fork, follow]
 tags: [ai, python, chatbot]
