@@ -41,7 +41,9 @@ round-avatar: true
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 #title-img: /path/to/image
-
+collections:
+  posts:
+    output: true
 
 #####################################
 # --- Footer social media links --- #
@@ -63,8 +65,8 @@ social-network-links:
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
+  instagram: i_am_harishsarma
+  spotify: harish
 #  telephone: +14159998888
 #  steam: deanat78
 #  twitch: yourname
