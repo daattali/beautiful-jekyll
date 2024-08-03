@@ -1,7 +1,7 @@
 ---
 layout: home
-title: iOS Shortcuts and Automations
-subtitle: There's lots to learn!
+title: Unlocking the Power of iOS Shortcuts
+subtitle: Simplify Your Life with Powerful Automations
 gh-repo: harishsarmav/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
@@ -158,10 +158,5 @@ Click here: 👉
 
 </details>
 
----
-
-Loading more...
-
---- 
 <p> Feel free to discuss anything, share your ideas, or seek assistance with any shortcuts-related issues. Your thoughts and questions are always welcome! If you love these shortcuts, please drop a ❤️. </p>
 <p> Join the conversation by clicking here 👉🏻 <a href="https://github.com/harishsarmav/harishsarma_v/discussions" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a> </p>
