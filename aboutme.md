@@ -1,33 +1,34 @@
 ---
 layout: page
 title: About me
-subtitle: A glimpse into my world
+subtitle: Welcome to my corner of the internet! I’m Harish Sarma, a passionate software engineer based in India.
 ---
 <!-- <img style="display: block; margin: 0 auto;" alt="coding" width="498" src="assets/img/programmer.gif"> -->
 
-My name is Harish Sarma, a Passionate software Engineer, based in India.  
+A Bit About Me:
 
-I have the following qualities:
-- I am kind and considerate.
-- I'm extremely loyal to my family.
-- I'm a good listener and enjoy meaningful conversations.
-- I have a positive outlook on life and strive to make the best of every situation.
+I’m a friendly and dedicated individual with a few qualities that define me:
 
-I Like to talk about
+Kind and Considerate: I always strive to be understanding and compassionate.
+Loyal to Family: My family means the world to me.
+Good Listener: I enjoy deep and meaningful conversations.
+Positive Outlook: I try to make the best out of every situation and approach life with optimism.
 
--- Tech 👨🏻‍💻
-- I love to do iOS automations & shortcuts workarounds, and staying in shape.
-- Shortcuts & Automations
-- I believe in the power of continuous learning and the impact of coding in shaping the future. 
-  
--- Fun & Games 🕺🏻
-- Marvel Comics
-- Movies
-- Video gaming
+My Interests:
 
-What else do you need?
+Tech 👨🏻‍💻
 
-friend me to know more about me.
+iOS Automations & Shortcuts: I’m fascinated by how technology can simplify our lives.
+Continuous Learning: I’m a firm believer in the power of learning and coding to shape the future.
+Fun & Games 🕺🏻
+
+Marvel Comics: Big fan of Marvel’s superheroes and their epic stories.
+Movies: I enjoy exploring different genres and stories through film.
+Video Gaming: Gaming is a great way to unwind and challenge myself.
+
+
+Curious to Know More?
+Feel free to connect with me to learn more about my journey, interests, or just to chat!
 
 <!-- ### My story -->
 
