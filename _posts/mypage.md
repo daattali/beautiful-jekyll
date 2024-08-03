@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: post
 title: Unlocking the Power of iOS Shortcuts
 subtitle: Simplify Your Life with Powerful Automations
 gh-repo: harishsarmav/beautiful-jekyll
