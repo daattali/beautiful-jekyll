@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unlocking the Power of AI: How to Build a Simple AI Chatbot
+title: Unlocking the Power of AI - How to Build a Simple AI Chatbot
 subtitle: A Hands-On Guide to Creating Your First AI Chatbot
 date: 2024-08-04 18:40:00 +0530
 categories: jekyll update
