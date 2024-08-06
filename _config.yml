@@ -20,9 +20,10 @@ author: Harish sarma
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
   Blog: "/"
-#  Contact: "contact"
+  About Me: "aboutme"
+  Contact:
+    - Instagram: "i_am_harishsarma"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
