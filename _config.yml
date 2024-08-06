@@ -23,7 +23,7 @@ navbar-links:
   Blog: "/"
   About Me: "aboutme"
   Contact:
-    - Instagram: "i_am_harishsarma"
+    - Instagram: "https://instagram.com/i_am_harishsarma"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
