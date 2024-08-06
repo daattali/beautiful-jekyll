@@ -118,3 +118,6 @@ Enhance your chatbot by adding custom responses. This step will show you how to 
 - Add this code before your interaction loop in `chatbot.py`.
 
 Congratulations! You’ve built a basic AI chatbot using Python. This simple project introduces you to the core concepts of AI and natural language processing. Feel free to experiment and customize further to explore the endless possibilities of AI.
+
+<p> Feel free to discuss anything, share your ideas, or seek assistance with any shortcuts-related issues. Your thoughts and questions are always welcome! If you love these shortcuts, please drop a ❤️. </p>
+<p> Join the conversation by clicking here 👉🏻 <a href="https://github.com/harishsarmav/HarishHub/discussions/2" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a> </p>

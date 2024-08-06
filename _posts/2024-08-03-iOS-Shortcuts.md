@@ -169,4 +169,4 @@ Click here: 👉
 ---
 
 <p> Feel free to discuss anything, share your ideas, or seek assistance with any shortcuts-related issues. Your thoughts and questions are always welcome! If you love these shortcuts, please drop a ❤️. </p>
-<p> Join the conversation by clicking here 👉🏻 <a href="https://github.com/harishsarmav/hsv/discussions/1" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a> </p>
+<p> Join the conversation by clicking here 👉🏻 <a href="https://github.com/harishsarmav/HarishHub/discussions/1" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a> </p>
