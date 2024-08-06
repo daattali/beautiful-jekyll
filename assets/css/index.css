@@ -1,0 +1,36 @@
+.list-filters {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .list-filters {
+      margin-top: 2.5rem;
+    }
+  }
+  
+  .list-filters .list-filter  {
+    text-decoration: none !important;
+    margin-right: 0.9375rem;
+    border: 1px solid #777;
+    padding: 0.3125rem 0.625rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .list-filters .list-filter.filter-selected,
+  .list-filters .list-filter:hover {
+    color: #fff;
+    background: #444;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .list-filters .list-filter {
+      font-size: 1rem;
+      margin-right: 0;
+      margin-bottom: -1px;
+      display: block;
+    }
+  }
