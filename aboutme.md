@@ -35,9 +35,9 @@ I’m known for a few defining qualities:
 
 Feel free to connect with me to learn more about my journey, interests, or just to chat! You can reach out to me via the icons in the footer below:
 
-- **Instagram 📸**: [Instagram](https://instagram.com/i_am_harishsarma)
-- **X 🐦**: [X](https://x.com/harishsarma_v)
-- **Reddit 👽**: [Reddit](https://www.reddit.com/user/Relevant-Plantain615/)
-- **Gmail 📧**: [harishsarma.v@gmail.com](mailto:harishsarma.v@gmail.com)
+- **📸 Instagram**: [Instagram](https://instagram.com/i_am_harishsarma)
+- **🐦 X**: [X](https://x.com/harishsarma_v)
+- **👽 Reddit**: [Reddit](https://www.reddit.com/user/Relevant-Plantain615/)
+- **📧 Gmail**: [harishsarma.v@gmail.com](mailto:harishsarma.v@gmail.com)
 
 Thank you for visiting my page!
