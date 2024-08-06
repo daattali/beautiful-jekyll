@@ -51,6 +51,6 @@ E-commerce platforms are increasingly using AI to offer highly personalized shop
 
 The advancements in AI technology are opening up new possibilities and transforming industries in profound ways. From drug discovery to climate change mitigation, AI is proving to be a powerful tool in addressing some of the most pressing challenges of our time. Stay tuned for more updates as we continue to witness the evolution of AI and its impact on our world.
 
-Feel free to share your thoughts on these developments or discuss any other tech news in the comments below!
+<!-- Feel free to share your thoughts on these developments or discuss any other tech news in the comments below!
 
-<p>Join the conversation and stay updated with the latest tech trends by clicking here 👉🏻 <a href="https://github.com/harishsarmav/harishsarma_v/discussions" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a></p>
+<p>Join the conversation and stay updated with the latest tech trends by clicking here 👉🏻 <a href="https://github.com/harishsarmav/harishsarma_v/discussions" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a></p> -->
