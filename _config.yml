@@ -24,6 +24,9 @@ navbar-links:
   About Me: "aboutme"
   Contact:
     - Instagram: "https://instagram.com/i_am_harishsarma"
+    - X: "https://x.com/harishsarma_v"
+    - Reddit: "https://www.reddit.com/user/Relevant-Plantain615/"
+    - Gmail: "mailto:harishsarma.v@gmail.com"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
