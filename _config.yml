@@ -21,10 +21,7 @@ author: Harish sarma
 
 navbar-links:
   Home: "/"
-  About Me / Contact: 
-    - Personal Bio: "aboutme"
-    - Career: "career"
-    - Gallery: "gallery"
+  About Me / Contact: "aboutme"
   Projects: "projects"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
