@@ -1,10 +1,9 @@
 ---
 layout: page
 title: About me
-cover-img: "assets/img/programmer.gif"
 subtitle: Welcome to my corner of the internet! I’m Harish Sarma, a passionate software engineer based in India.
 ---
-<!-- <img style="display: block; margin: 0 auto;" alt="coding" width="498" src="assets/img/programmer.gif"> -->
+<img style="display: block; margin: 0 auto;" alt="coding" width="498" src="assets/img/programmer.gif">
 
 **A Bit About Me**
 
@@ -25,7 +24,7 @@ I’m known for a few defining qualities:
 - **Movies**: I enjoy exploring different genres and stories through film.
 - **Video Gaming**: Gaming is a great way to unwind and challenge myself.
 
-**Career**:
+## <img src="assets\img\career.png" height="50px"> My career
 
 - **Current Role**: Software Engineer
 - **Skills**:
@@ -36,9 +35,9 @@ I’m known for a few defining qualities:
 
 Feel free to connect with me to learn more about my journey, interests, or just to chat! You can reach out to me via the icons in the footer below:
 
-- **Instagram**: [Instagram](https://instagram.com/i_am_harishsarma)
-- **X**: [X](https://x.com/harishsarma_v)
-- **Reddit**: [Reddit](https://www.reddit.com/user/Relevant-Plantain615/)
-- **Gmail**: [harishsarma.v@gmail.com](mailto:harishsarma.v@gmail.com)
+- **📸 Instagram**: [Instagram](https://instagram.com/i_am_harishsarma)
+- **🐦 X**: [X](https://x.com/harishsarma_v)
+- **👽 Reddit**: [Reddit](https://www.reddit.com/user/Relevant-Plantain615/)
+- **📧 Gmail**: [harishsarma.v@gmail.com](mailto:harishsarma.v@gmail.com)
 
 Thank you for visiting my page!
