@@ -20,8 +20,9 @@ author: Harish sarma
 ###############################################
 
 navbar-links:
-  Blog: "/"
+  Home: "/"
   About Me: "aboutme"
+  Projects: ""
   Contact:
     - Instagram: "https://instagram.com/i_am_harishsarma"
     - X: "https://x.com/harishsarma_v"
