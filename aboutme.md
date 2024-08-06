@@ -28,7 +28,8 @@ I’m known for a few defining qualities:
 
 
 **Curious to Know More?**
-Feel free to connect with me to learn more about my journey, interests, or just to chat!
+Feel free to connect with me to learn more about my journey, interests, or just to chat! You can reach out to me via the icons in the footer below.
+
 
 <!-- ### My story -->
 

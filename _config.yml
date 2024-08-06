@@ -25,11 +25,6 @@ navbar-links:
     - Personal Bio: "aboutme"
     - Career: "career"
     - Gallery: "gallery"
-    - Contact: 
-      - Instagram: "https://instagram.com/i_am_harishsarma"
-      - X: "https://x.com/harishsarma_v"
-      - Reddit: "https://www.reddit.com/user/Relevant-Plantain615/"
-      - Gmail: "mailto:harishsarma.v@gmail.com"
   Projects: "projects"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
