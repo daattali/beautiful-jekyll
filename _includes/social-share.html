@@ -25,6 +25,14 @@
       <span class="sr-only">Facebook</span>
     </a>
   {% endif %}
+  
+  {% if site.share-links-active.whatsapp %}
+    <a href="https://api.whatsapp.com/send?text={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-whatsapp" title="Share on WhatsApp">
+      <span class="fab fa-fw fa-whatsapp" aria-hidden="true"></span>
+      <span class="sr-only">WhatsApp</span>
+    </a>
+  {% endif %}
 
   {% if site.share-links-active.linkedin %}
     <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
