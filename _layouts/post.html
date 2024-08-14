@@ -16,11 +16,12 @@ layout: base
             margin: 0;
             padding: 0;
         }
-        .container-md, .container-fluid {
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-        }
+  .container-md, .container-fluid {
+        width: 95%; /* 90%에서 95%로 늘립니다 */
+        max-width: 1200px; /* 최대 너비를 설정합니다 */
+        margin: auto;
+        padding: 20px;
+    }
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -40,13 +41,21 @@ layout: base
         #header-gh-btns {
             margin-bottom: 20px;
         }
-        .blog-post {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 5px;
-        }
+     .blog-post {
+        background: #fff;
+        padding: 30px; /* 패딩을 조금 늘립니다 */
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 5px;
+    }
+    .blog-post h1 {
+        font-size: 2.5em; /* 타이틀 폰트 크기를 조절합니다 */
+        line-height: 1.2; /* 줄 간격을 조절합니다 */
+        margin-bottom: 20px;
+        word-break: keep-all; /* 단어 단위로 줄바꿈 */
+        overflow-wrap: break-word; /* 긴 단어의 경우 줄바꿈 */
+    }
+
         .blog-tags {
             margin: 20px 0;
         }
@@ -79,6 +88,11 @@ layout: base
             background: #e8e8e8;
             border-radius: 5px;
         }
+            @media (max-width: 768px) {
+        .blog-post h1 {
+            font-size: 2em; /* 모바일에서는 폰트 크기를 줄입니다 */
+        }
+    }
     </style>
 </head>
 <body>
