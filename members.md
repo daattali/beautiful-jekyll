@@ -42,9 +42,6 @@ members:
       - name: Undergraduate Students
         full: true
         list:
-          - name: Wen Hui Leng
-            photo_url: /img/members/wleng.jpg
-            web_url: 
           - name: Yiming Fang
             photo_url: /img/members/yimingfang.jpg
             web_url: 
@@ -155,6 +152,7 @@ members:
           - name: Patrick Liu
           - name: Jake Olkin
           - name: Edward Li
+          - name: Wen Hui Leng -> CMU MS ECE
       - name: Interns
         full: False
         list:
