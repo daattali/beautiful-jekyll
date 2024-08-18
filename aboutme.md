@@ -38,6 +38,6 @@ Feel free to connect with me to learn more about my journey, interests, or just 
 - **📸 Instagram**: [Instagram](https://instagram.com/i_am_harishsarma)
 - **🐦 X**: [X](https://x.com/harishsarma_v)
 - **👽 Reddit**: [Reddit](https://www.reddit.com/user/Relevant-Plantain615/)
-- **📧 Gmail**: [harishsarma.v@gmail.com](mailto:harishsarma.v@gmail.com)
+<!-- - **📧 Gmail**: [harishsarma.v@gmail.com](mailto:harishsarma.v@gmail.com) -->
 
 Thank you for visiting my page!
