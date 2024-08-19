@@ -21,6 +21,7 @@ author: Paulette Melchiori
 
 navbar-links:
   About Me: "aboutme"
+  Animation Projects: "animationProjects"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
