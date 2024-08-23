@@ -162,31 +162,31 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#995C44"
-navbar-text-col: "#f9e9db"
+navbar-col: "#231d41"
+navbar-text-col: "#FFFFFF"
 navbar-logo-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
 navbar-text-hover-col: "#FFFFFF"
-navbar-hover-bg-col: "#57183E"
+navbar-hover-bg-col: "#342B6D"
 
-page-col: "#AB4E36"
-header-col: "#FCEDD4"
+page-col: "#342B6D"
+header-col: "#FCD41B"
 page-text-col: "#FFFFFF"
-link-col: "#f9e9db"
-hover-col: "#FCEDD4"
+link-col: "#D11C5D"
+hover-col: "#D11C5D"
 selection-col: "#692800"
 
-button-col: "#692800"
-button-bg-col: "#FCEDD4"
-button-hover-col: "#692800"
-button-bg-hover-col: "#FFFFFF"
+button-col: "#000000"
+button-bg-col: "#FCD41B"
+button-hover-col: "#000000"
+button-bg-hover-col: "#FFE020"
 
-footer-col: "#995C44"
+footer-col: "#231d41"
 footer-text-col: "#FFFFFF"
-footer-link-col: "#FCEDD4"
-footer-icon-col: "#FFFFFF"
-footer-icon-fill-col: "#692800"
-footer-icon-hover-col: "#57183E"
+footer-link-col: "#D11C5D"
+footer-icon-col: "#342B6D"
+footer-icon-fill-col: "#FFFFFF"
+footer-icon-hover-col: "#FFFFFF"
 footer-icon-fill-hover-col: "white"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
