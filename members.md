@@ -42,9 +42,6 @@ members:
       - name: Undergraduate Students
         full: true
         list:
-          - name: Yiming Fang
-            photo_url: /img/members/yimingfang.jpg
-            web_url: 
       - name: Visiting Students
         full: true
         list:
@@ -153,6 +150,7 @@ members:
           - name: Jake Olkin
           - name: Edward Li
           - name: Wen Hui Leng -> CMU MS ECE
+          - name: Yiming Fang
       - name: Interns
         full: False
         list:
