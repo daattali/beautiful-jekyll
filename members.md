@@ -154,6 +154,7 @@ members:
       - name: Interns
         full: False
         list:
+                   - name: Sreyas Venkataraman (RISS)
                    - name: Gunjan Sethi (MRSD) -> Raven Industries
                    - name: Khush Agrawal (RISS)
                    - name: Pengsheng Guo
