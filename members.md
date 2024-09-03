@@ -44,16 +44,19 @@ members:
         list:
           - name: Yiming Fang
             photo_url: /img/members/yimingfang.jpg
-            web_url: 
+            web_url:
       - name: Visiting Students
         full: true
         list:
           - name: Ziyu Wang
             photo_url: /img/members/Ziyu_Wang.jpg
-            web_url: 
+            web_url:
           - name: Chialing Kuo
             photo_url: /img/members/chialiang.jpg
             web_url: https://www.ri.cmu.edu/ri-people/chia-liang-kuo/
+          - name: Jacinto Suner
+            photo_url: /img/members/jacintosuner.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/jacinto-suner/
   - name: <a name="alumni"></a>Alumni
     list:
       - name: Post-Doc alumni
@@ -80,8 +83,8 @@ members:
           - name: Zhanyi Sun (MSR) -> Stanford PhD
             web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/
           - name: Bowen Jiang (MSR) -> UT Austin PhD
-            web_url: https://jiangbowen0008.github.io/    
-          - name: Jenny Wang -> Walt Disney Imagineering 
+            web_url: https://jiangbowen0008.github.io/
+          - name: Jenny Wang -> Walt Disney Imagineering
             web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
           - name: Mansi Agarwal (MSR) -> Amazon Robotics
             web_url: https://mansiagarwal11.github.io/
@@ -122,11 +125,11 @@ members:
       - name: Visiting Reseachers
         full: False
         list:
-            - name: Bharath Hegde
-              web_url: https://bharath-hegde.github.io/
-            - name: Himangi Mittal -> CMU MSR
-              web_url: https://himangim.github.io/
-            - name: Jianren Wang -> CMU PhD
+          - name: Bharath Hegde
+            web_url: https://bharath-hegde.github.io/
+          - name: Himangi Mittal -> CMU MSR
+            web_url: https://himangim.github.io/
+          - name: Jianren Wang -> CMU PhD
       - name: Master's students (Capstone Project)
         full: False
         list:
@@ -156,23 +159,22 @@ members:
       - name: Interns
         full: False
         list:
-                   - name: Gunjan Sethi (MRSD) -> Raven Industries
-                   - name: Khush Agrawal (RISS)
-                   - name: Pengsheng Guo
-                   - name: Wen-Hsuan Chu
-                   - name: Akshay Dharmavaram
-                   - name: Yifan Qiao
-                   - name: Tiancheng Jin
-                   - name: Stephanie Milani
-                   - name: Shubham Sahoo
-                   - name: Rohan Chacko
-                   - name: Khush Agrawal (RISS)
-                   - name: Yimin Tang (RISS)
-                   - name: Ziwen (Leo) Zhuang (RISS)
-                   - name: Zhaoyuan (Andy) Fang
-                   - name: Yujie Lu
-                   - name: Amith Pallankize
-
+          - name: Gunjan Sethi (MRSD) -> Raven Industries
+          - name: Khush Agrawal (RISS)
+          - name: Pengsheng Guo
+          - name: Wen-Hsuan Chu
+          - name: Akshay Dharmavaram
+          - name: Yifan Qiao
+          - name: Tiancheng Jin
+          - name: Stephanie Milani
+          - name: Shubham Sahoo
+          - name: Rohan Chacko
+          - name: Khush Agrawal (RISS)
+          - name: Yimin Tang (RISS)
+          - name: Ziwen (Leo) Zhuang (RISS)
+          - name: Zhaoyuan (Andy) Fang
+          - name: Yujie Lu
+          - name: Amith Pallankize
 ---
 
 <div class="row">
@@ -212,7 +214,6 @@ members:
     {% endfor %}
   {% endfor %}
 </div>
-
 
 <!-- <h3 id="undergraduate-students">Undergraduate students</h3>
 <ul>
