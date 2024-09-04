@@ -1,0 +1,88 @@
+---
+layout: page
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100-Hour Countdown Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .timer {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="timer" id="timer">100:00:00</div>
+
+    <div class="controls">
+        <button id="startStopBtn">Start</button>
+    </div>
+
+    <script>
+        let timeRemaining = 100 * 60 * 60;
+        let timerInterval = null;
+        let isRunning = false;
+
+        function formatTime(seconds) {
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = seconds % 60;
+            return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        }
+
+        function updateDisplay() {
+            const timerElement = document.getElementById('timer');
+            timerElement.innerText = formatTime(timeRemaining);
+        }
+
+        function toggleTimer() {
+            const startStopBtn = document.getElementById('startStopBtn');
+            
+            if (isRunning) {
+                clearInterval(timerInterval);
+                startStopBtn.innerText = 'Start';
+            } else {
+                timerInterval = setInterval(() => {
+                    if (timeRemaining > 0) {
+                        timeRemaining--;
+                        updateDisplay();
+                    } else {
+                        clearInterval(timerInterval);
+                        startStopBtn.innerText = 'Start';
+                        isRunning = false;
+                        alert("Time's up!");
+                    }
+                }, 1000);
+                startStopBtn.innerText = 'Stop';
+            }
+
+            isRunning = !isRunning;
+        }
+
+        document.getElementById('startStopBtn').addEventListener('click', toggleTimer);
+        updateDisplay();
+    </script>
+
+</body>
+</html>

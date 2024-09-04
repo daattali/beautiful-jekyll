@@ -4,6 +4,13 @@ layout: page
 
 {{ content }}
 
+<!-- Button to go to the Timer page -->
+<div style="text-align: center; margin-top: 20px;">
+  <a href="timer.html" class="btn btn-primary" style="font-size: 20px; padding: 10px 20px; text-decoration: none; background-color: #007bff; color: white; border-radius: 5px;">
+      Go to Countdown Timer
+  </a>
+</div>
+
 {% assign posts = paginator.posts | default: site.posts %}
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
