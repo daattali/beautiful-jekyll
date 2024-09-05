@@ -21,21 +21,9 @@ members:
           - name: Yufei Wang<br>(co-advised with Zackory Erickson)
             photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
             web_url: https://yufeiwang63.github.io/
-          - name: Jenny Wang
-            photo_url: https://www.ri.cmu.edu/app/uploads/2021/07/Wang_Jenny-scaled.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
-          - name: Yilin Wu
-            photo_url: https://yilin-wu98.github.io/images/yilinwu_photo.jpg
-            web_url: https://yilin-wu98.github.io/
       - name: Masters students
         full: true
         list:
-          - name: Bowen Jiang (MSR)
-            photo_url: /img/members/bowenjiang.png
-            web_url: https://www.ri.cmu.edu/ri-people/bowen-jiang-2/    
-          - name: Zhanyi Sun (MSR)
-            photo_url: /img/members/zhanyi.png
-            web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/
           - name: Pranay Gupta (MSR)
             photo_url: /img/members/pranaygupta.jpg
             web_url: https://www.ri.cmu.edu/ri-people/pranay-gupta/
@@ -54,30 +42,9 @@ members:
       - name: Undergraduate Students
         full: true
         list:
-          - name: Wen Hui Leng
-            photo_url: /img/members/wleng.jpg
-            web_url: 
-          - name: TJ Vitchutripop
-            photo_url: /img/members/tj.jpg
-            web_url: https://tjvitchutripop.github.io/
-          - name: Yishu Li
-            photo_url: /img/members/yishu.jpg
-            web_url:
-          - name: Yiming Fang
-            photo_url: /img/members/yimingfang.jpg
-            web_url: 
       - name: Visiting Students
         full: true
         list:
-          - name: Angela Rodriguez-Izquierdo
-            photo_url: https://www.ri.cmu.edu/app/uploads/2023/09/AngelaR_2023.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/angela-rodriguez-izquierdo-gallardo/
-          - name: Bharath Hegde
-            photo_url: /img/members/bharath.jpg
-            web_url: https://bharath-hegde.github.io/
-          - name: Ziyu Wang
-            photo_url: /img/members/Ziyu_Wang.jpg
-            web_url: 
   - name: <a name="alumni"></a>Alumni
     list:
       - name: Post-Doc alumni
@@ -88,7 +55,7 @@ members:
       - name: PhD alumni
         full: False
         list:
-          - name: Wenxuan Zhou
+          - name: Wenxuan Zhou -> Research Scientist at Meta
             web_url: https://wenxuan-zhou.github.io/
           - name: Thomas Weng -> Boston Dynamics AI Institute
             web_url: https://www.thomasweng.com
@@ -101,6 +68,12 @@ members:
       - name: Master's students (Research Master's)
         full: False
         list:
+          - name: Zhanyi Sun (MSR) -> Stanford PhD
+            web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/
+          - name: Bowen Jiang (MSR) -> UT Austin PhD
+            web_url: https://jiangbowen0008.github.io/    
+          - name: Jenny Wang -> Walt Disney Imagineering 
+            web_url: https://www.ri.cmu.edu/ri-people/jenny-wang/
           - name: Mansi Agarwal (MSR) -> Amazon Robotics
             web_url: https://mansiagarwal11.github.io/
           - name: Sashank Tirumala (MSR) -> AIM Intelligent Machines
@@ -140,9 +113,12 @@ members:
       - name: Visiting Reseachers
         full: False
         list:
+            - name: Bharath Hegde
+              web_url: https://bharath-hegde.github.io/
             - name: Himangi Mittal -> CMU MSR
               web_url: https://himangim.github.io/
             - name: Jianren Wang -> CMU PhD
+            - name: Ziyu Wang
       - name: Master's students (Capstone Project)
         full: False
         list:
@@ -161,10 +137,15 @@ members:
       - name: Undergraduate students
         full: False
         list:
+          - name: TJ Vitchutripop -> Yale PhD
+          - name: Yishu Li -> CMU MSR
+          - name: Angela Rodriguez-Izquierdo -> Princeton PhD
           - name: Rashmi Anil
           - name: Patrick Liu
           - name: Jake Olkin
           - name: Edward Li
+          - name: Wen Hui Leng -> CMU MS ECE
+          - name: Yiming Fang
       - name: Interns
         full: False
         list:

@@ -14,15 +14,103 @@
 #  tags: null
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
-- abs: Robot-assisted dressing could profoundly enhance the quality of life of adults with physical disabilities. To achieve this, a robot can benefit from both visual and force sensing. The former enables the robot to ascertain human body pose and garment deformations, while the latter helps maintain safety and comfort during the dressing process. In this paper, we introduce a new technique that leverages both vision and force modalities for this assistive task. Our approach first trains a vision-based dressing policy using reinforcement learning in simulation with varying body sizes, poses, and types of garments. We then learn a force dynamics model for action planning to ensure safety. Due to limitations of simulating accurate force data when deformable garments interact with the human body, we learn a force dynamics model directly from real-world data. Our proposed method combines the vision-based policy, trained in simulation, with the force dynamics model, learned in the real world, by solving a constrained optimization problem to infer actions that facilitate the dressing process without applying excessive force on the person. We evaluate our system in simulation and in a real-world human study with 10 participants across 240 dressing trials, showing it greatly outperforms prior baselines. Video demonstrations are available on our project website. 
-  authors: Zhanyi Sun*, Yufei Wang*, Zackory Erickson&dagger;, David Held&dagger;
+
+
+- abs: "Autonomous systems that efficiently utilize tools can assist humans in completing many common tasks such as cooking and cleaning. However, current systems fall short of matching human-level of intelligence in terms of adapting to novel tools. Prior works based on affordance often make strong assumptions about the environments and cannot scale to more complex, contact-rich tasks. In this work, we tackle this challenge and explore how agents can learn to use previously unseen tools to manipulate deformable objects. We propose to learn a generative model of the tool-use trajectories as a sequence of tool point clouds, which generalizes to different tool shapes. Given any novel tool, we first generate a tool-use trajectory and then optimize the sequence of tool poses to align with the generated trajectory. We train a single model on four different challenging deformable object manipulation tasks, using demonstration data from only one tool per task. The model generalizes to various novel tools, significantly outperforming baselines. We further test our trained policy in the real world with unseen tools, where it achieves the performance comparable to human."
+  authors: Carl Qi*, Yilin Wu*, Lifan Yu, Haoyue Liu, Bowen Jiang, Xingyu Lin&dagger;, David Held&dagger;
   award: null
-  bib: "@article{sun2024force,
-  \ title={Force-Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing},
-  \ author={Sun, Zhanyi and Wang, Yufei and Held, David and Erickson, Zackory},
-  \ journal={IEEE Robotics and Automation Letters},
-  \ year={2024}
-  }"
+  bib: >
+    @inproceedings{qitooluse2024,
+      title={Learning Generalizable Tool-use Skills through Trajectory Generation},    
+      author={Qi, Carl and Wu, Yilin and Yu, Lifan and Liu, Haoyue and Jiang, Bowen and Lin, Xingyu and Held, David},   
+      booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},   
+      year={2024}  
+    }
+  img: ../pics/toolgen_realworld.gif
+  links: 
+      '[arXiv]': https://arxiv.org/abs/2310.00156
+  short_id: qitooluse2024
+  site: https://sites.google.com/view/toolgen
+  title: "Learning Generalizable Tool-use Skills through Trajectory Generation"
+  venue: "International Conference on Intelligent Robots and Systems (IROS), 2024"
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/iheVOX8jG_8" title="Learning Generalizable Tool-use Skills through Trajectory Generation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags: 
+      - deformable
+
+
+- abs: "We present HACMan++, a reinforcement learning framework using a novel action space of spatially-grounded parameterized motion primitives for manipulation tasks."
+  authors: Bowen Jiang*, Yilin Wu*, Wenxuan Zhou, Chris Paxton, David Held
+  award: null
+  bib: >
+    @inproceedings{jiang2024hacman++,
+      title={HACMan++: Spatially-Grounded Motion Primitives for Manipulation},
+      author={Jiang, Bowen and Wu, Yilin and Zhou, Wenxuan and Paxton, Chris and Held, David},
+      booktitle={Robotics: Science and Systems (RSS)},
+      year={2024}
+    }
+  img: ../pics/hacman++.gif
+  links:
+      '[arXiv]': https://arxiv.org/pdf/2407.08585
+  short_id: jiang2024hacman
+  site: https://sgmp-rss2024.github.io/
+  title: "HACMan++: Spatially-Grounded Motion Primitives for Manipulation"
+  venue: 'Robotics: Science and Systems (RSS), 2024'
+  video_embed: <iframe width="560" height="396" src="https://sgmp-rss2024.github.io/static/videos/all_v2.mp4" title="HACMan++:Spatially-Grounded Motion Primitives for Manipulation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags:
+      - rl
+      - affordance
+
+
+- abs: "We present RoboGen, a generative robotic agent that automatically learns diverse robotic skills at scale via generative simulation. RoboGen leverages the latest advancements in foundation and generative models. Instead of directly using or adapting these models to produce policies or low-level actions, we advocate for a generative scheme, which uses these models to automatically generate diversified tasks, scenes, and training supervisions, thereby scaling up robotic skill learning with minimal human supervision. Our approach equips a robotic agent with a self-guided propose-generate-learn cycle: the agent first proposes interesting tasks and skills to develop, and then generates corresponding simulation environments by populating pertinent objects and assets with proper spatial configurations. Afterwards, the agent decomposes the proposed high-level task into sub-tasks, selects the optimal learning approach (reinforcement learning, motion planning, or trajectory optimization), generates required training supervision, and then learns policies to acquire the proposed skill. Our work attempts to extract the extensive and versatile knowledge embedded in large-scale models and transfer them to the field of robotics. Our fully generative pipeline can be queried repeatedly, producing an endless stream of skill demonstrations associated with diverse tasks and environments."
+  authors: Yufei Wang*, Zhou Xian*, Feng Chen*, Tsun-Hsuan Wang, Yian Wang, Katerina Fragkiadaki, Zackory Erickson, David Held, Chuang Gan
+  award: null
+  bib: >
+    @inproceedings{wang2024robogen,
+      title={RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation},
+      author={Wang, Yufei and Zhou, Xian and Chen, Feng and Wang, Tsun-Hsuan and Wang, Yian and Fragkiadaki, Katerina and Erickson, Zackory and Held, David and Gan, Chuang},            
+      booktitle={International Conference on Machine Learning (ICML)},
+      year={2024}       
+    }
+  img: ../pics/robogen-icml.png
+  links: 
+      '[arXiv]': https://arxiv.org/abs/2311.01455
+      '[Code]': https://github.com/Genesis-Embodied-AI/RoboGen
+  short_id: wang2024robogen
+  site: https://robogen-ai.github.io/
+  title: "RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation"
+  venue: International Conference on Machine Learning (ICML), 2024
+  video_embed: null
+
+- abs: Reward engineering has long been a challenge in Reinforcement Learning research, as it often requires extensive human effort. In this paper, we propose RL-VLM-F, a method that automatically generates reward functions for agents to learn new tasks, using only a text description of the task goal and the agent’s visual observations, by leveraging feedback from vision language foundation models (VLMs). The key to our approach is to query these models to give preferences over pairs of the agent’s image observations based on the text description of the task goal, and then learn a reward function from the preference labels. We demonstrate that RL-VLM-F successfully produces effective rewards and policies across various domains — including classic control, as well as manipulation of rigid, articulated, and deformable objects — without the need for human supervision, outperforming prior methods that use large pretrained models for reward generation under the same assumptions.
+  authors: Yufei Wang*, Zhanyi Sun*, Jesse Zhang, Zhou Xian, Erdem Bıyık, David Held&dagger;, Zackory Erickson&dagger;
+  award: null
+  bib: >
+    @inproceedings{wang2024rlvlmf,
+      title={RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback},
+      author={Wang, Yufei and Sun, Zhanyi and Zhang, Jesse and Xian, Zhou and Biyik, Erdem and Held, David and Erickson, Zackory},            
+      booktitle={International Conference on Machine Learning (ICML)},
+      year={2024}       
+    }
+  img: ../pics/RL-VLM-F-24-ICML.png
+  links: 
+      '[arXiv]': https://arxiv.org/abs/2402.03681
+      '[Code]': https://github.com/yufeiwang63/RL-VLM-F
+  short_id: wang2024rlvlmf
+  site: https://rlvlmf2024.github.io/
+  title: "RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback"
+  venue: International Conference on Machine Learning (ICML), 2024
+  video_embed: null
+
+- abs: Robot-assisted dressing could profoundly enhance the quality of life of adults with physical disabilities. To achieve this, a robot can benefit from both visual and force sensing. The former enables the robot to ascertain human body pose and garment deformations, while the latter helps maintain safety and comfort during the dressing process. In this paper, we introduce a new technique that leverages both vision and force modalities for this assistive task. Our approach first trains a vision-based dressing policy using reinforcement learning in simulation with varying body sizes, poses, and types of garments. We then learn a force dynamics model for action planning to ensure safety. Due to limitations of simulating accurate force data when deformable garments interact with the human body, we learn a force dynamics model directly from real-world data. Our proposed method combines the vision-based policy, trained in simulation, with the force dynamics model, learned in the real world, by solving a constrained optimization problem to infer actions that facilitate the dressing process without applying excessive force on the person. We evaluate our system in simulation and in a real-world human study with 10 participants across 240 dressing trials, showing it greatly outperforms prior baselines. Video demonstrations are available on our project website. 
+  authors: Zhanyi Sun*, Yufei Wang*, David Held&dagger;, Zackory Erickson&dagger;
+  award: null
+  bib: >
+    @article{sun2024force,
+      title={Force-Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing},
+      author={Sun, Zhanyi and Wang, Yufei and Held, David and Erickson, Zackory},
+      journal={IEEE Robotics and Automation Letters},
+      year={2024}
+    }
   img: ../pics/FCVP-RAL-24.png
   links: 
       '[arXiv]': https://arxiv.org/abs/2311.04390
@@ -30,20 +118,21 @@
   site: https://sites.google.com/view/dressing-fcvp
   title: "Force Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing"
   venue: Robotics and Automation Letters (RAL), 2024
-  video_embed: null
+  video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/6lmWB-6uwoc?si=EzwZXtFb0En-f8w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   tags:
     - deformable
     - multimodal
 
 - abs: The ability to identify important objects in a complex and dynamic driving environment is essential for autonomous driving agents to make safe and efficient driving decisions. It also helps assistive driving systems decide when to alert drivers. We tackle object importance estimation in a data-driven fashion and introduce HOIST - Human-annotated Object Importance in Simulated Traffic. HOIST contains driving scenarios with human-annotated importance labels for vehicles and pedestrians. We additionally propose a novel approach that relies on counterfactual reasoning to estimate an object's importance. We generate counterfactual scenarios by modifying the motion of objects and ascribe importance based on how the modifications affect the ego vehicle's driving. Our approach outperforms strong baselines for the task of object importance estimation on HOIST. We also perform ablation studies to justify our design choices and show the significance of the different components of our proposed approach.
-  authors: Pranay Gupta and Abhijat Biswas and Henny Admoni and David Held
+  authors: Pranay Gupta, Abhijat Biswas, Henny Admoni, David Held
   award: null
-  bib: "@article{gupta2023object,
-  \ title={Object Importance Estimation using Counterfactual Reasoning for Intelligent Driving},
-  \ author={Gupta, Pranay and Biswas, Abhijat and Admoni, Henny and Held, David},
-  \ journal={arXiv preprint arXiv:2312.02467},
-  \ year={2023}
-  \ }"
+  bib: >
+    @article{gupta2023object,
+      title={Object Importance Estimation using Counterfactual Reasoning for Intelligent Driving},
+      author={Gupta, Pranay and Biswas, Abhijat and Admoni, Henny and Held, David},
+      journal={arXiv preprint arXiv:2312.02467},
+      year={2023}
+    }
   img: ../pics/gupta2023object.png
   links: 
       '[arXiv]': https://arxiv.org/abs/2312.02467
@@ -55,19 +144,23 @@
   video_embed: null
   tags: 
       - auto_driving
-- abs: Many robot manipulation tasks can be framed as geometric reasoning tasks, where an agent must be able to precisely manipulate an object into a position that satisfies the task from a set of initial conditions. Often, task success is defined based on the relationship between two objects - for instance, hanging a mug on a rack. In such cases, the solution should be equivariant to the initial position of the objects as well as the agent, and invariant to the pose of the camera. This poses a challenge for learning systems which attempt to solve this task by learning directly from high-dimensional demonstrations - the agent must learn to be both equivariant as well as precise, which can be challenging without any inductive biases about the problem. In this work, we propose a method for precise relative pose prediction which is provably SE(3)-equivariant, can be learned from only a few demonstrations, and can generalize across variations in a class of objects. We accomplish this by factoring the problem into learning an SE(3) invariant task-specific representation of the scene and then interpreting this representation with novel geometric reasoning layers which are provably SE(3) equivariant. We demonstrate that our method can yield substantially more precise placement predictions in simulated placement tasks than previous methods trained with the same amount of data, and can accurately represent relative placement relationships data collected from real-world demonstrations.
+
+- abs: "Many robot manipulation tasks can be framed as geometric reasoning tasks, where an agent must be able to precisely manipulate an object into a position that satisfies the task from a set of initial conditions. Often, task success is defined based on the relationship between two objects - for instance, hanging a mug on a rack. In such cases, the solution should be equivariant to the initial position of the objects as well as the agent, and invariant to the pose of the camera. This poses a challenge for learning systems which attempt to solve this task by learning directly from high-dimensional demonstrations - the agent must learn to be both equivariant as well as precise, which can be challenging without any inductive biases about the problem. In this work, we propose a method for precise relative pose prediction which is provably SE(3)-equivariant, can be learned from only a few demonstrations, and can generalize across variations in a class of objects. We accomplish this by factoring the problem into learning an SE(3) invariant task-specific representation of the scene and then interpreting this representation with novel geometric reasoning layers which are provably SE(3) equivariant. We demonstrate that our method can yield substantially more precise placement predictions in simulated placement tasks than previous methods trained with the same amount of data, and can accurately represent relative placement relationships data collected from real-world demonstrations."
   authors: Ben Eisner, Yi Yang, Todor Davchev, Mel Vecerik, Jonathan Scholz, David Held
   award: null
-  bib: "@article{eisner2024deep,
-  \ title={Deep {SE}(3)-Equivariant Geometric Reasoning for Precise Placement Tasks},
-  \ author={Ben Eisner and Yi Yang and Todor Davchev and Mel Vecerik and Jonathan Scholz and David Held},
-  \ booktitle={The Twelfth International Conference on Learning Representations},
-  \ year={2024},
-  \ url={https://openreview.net/forum?id=2inBuwTyL2}
-  \ }"
+  bib: >
+    @article{eisner2024deep,
+      title={Deep {SE}(3)-Equivariant Geometric Reasoning for Precise Placement Tasks},
+      author={Ben Eisner and Yi Yang and Todor Davchev and Mel Vecerik and Jonathan Scholz and David Held},
+      booktitle={The Twelfth International Conference on Learning Representations},
+      year={2024},
+      url={https://openreview.net/forum?id=2inBuwTyL2}
+    }
   img: ../pics/reldist.webp
   links:
-      '[OpenReview]': https://openreview.net/forum?id=2inBuwTyL2
+      - '[arXiv]': https://arxiv.org/abs/2404.13478
+      - '[OpenReview]': https://openreview.net/forum?id=2inBuwTyL2
+      - '[Code]': https://github.com/r-pad/taxpose
   short_id: eisner2024geometric
   site: https://sites.google.com/view/reldist-iclr-2023
   title: "Deep SE(3)-Equivariant Geometric Reasoning for Precise Placement Tasks"
@@ -78,12 +171,13 @@
 - abs: Safe Reinforcement Learning (RL) plays an important role in applying RL algorithms to safety-critical real-world applications, addressing the trade-off between maximizing rewards and adhering to safety constraints. This work introduces a novel approach that combines RL with trajectory optimization to manage this trade-off effectively. Our approach embeds safety constraints within the action space of a modified Markov Decision Process (MDP). The RL agent produces a sequence of actions that are transformed into safe trajectories by a trajectory optimizer, thereby effectively ensuring safety and increasing training stability. This novel approach excels in its performance on challenging Safety Gym tasks, achieving significantly higher rewards and near-zero safety violations during inference. The method's real-world applicability is demonstrated through a safe and effective deployment in a real robot task of box-pushing around obstacles.
   authors: Fan Yang, Wenxuan Zhou, Zuxin Liu, Ding Zhao, David Held
   award: null
-  bib: "@article{yang2023reinforcement,
-  \ title={Reinforcement Learning in a Safety-Embedded MDP with Trajectory Optimization},
-  \ author={Yang, Fan and Zhou, Wenxuan and Liu, Zuxin and Zhao, Ding and Held, David},
-  \ journal={arXiv preprint arXiv:2310.06903},
-  \ year={2023}
-  \ }"
+  bib: >
+    @article{yang2023reinforcement,
+      title={Reinforcement Learning in a Safety-Embedded MDP with Trajectory Optimization},
+      author={Yang, Fan and Zhou, Wenxuan and Liu, Zuxin and Zhao, Ding and Held, David},
+      journal={arXiv preprint arXiv:2310.06903},
+      year={2023}
+    }
   img: ../pics/ICRA2024_SEMDP.gif
   links:
       '[arXiv]': https://arxiv.org/pdf/2310.06903.pdf
@@ -98,16 +192,21 @@
 - abs: Relative placement tasks are an important category of tasks in which one object needs to be placed in a desired pose relative to another object.  Previous work has shown success in learning relative placement tasks from just a small number of demonstrations, when using relational reasoning networks with geometric inductive biases. However, such methods fail to consider that demonstrations for the same task can be fundamentally multimodal, like a mug hanging on any of n racks. We propose a method that retains the provably translation-invariant and relational properties of prior work but incorporates additional properties that account for multimodal, distributional examples. We show that our method is able to learn precise relative placement tasks with a small number of multimodal demonstrations with no human annotations across a diverse set of objects within a category.
   authors: Jenny Wang*, Octavian Donca*, David Held
   award: null
-  bib: "@article{wang2024taxposed,
-  \ title={Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation},
-  \ author={Wang, Jenny and Donca, Octavian and Held, David},
-  \ journal={IEEE International Conference on Robotics and Automation (ICRA), 2024},
-  \ year={2024}
-  \ }"
-  img: ../pics/icra2024.png
-  links:
+  bib: >
+    @article{wang2024taxposed,
+      title={Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation},
+      author={Wang, Jenny and Donca, Octavian and Held, David},
+      journal={IEEE International Conference on Robotics and Automation (ICRA), 2024},
+      year={2024}
+    }
+  img: ../pics/icra2024_taxposed.gif
+  links: 
+      '[arXiv]': https://arxiv.org/abs/2405.04609
+      '[Poster]': https://sites.google.com/view/tax-posed/poster
+      '[Slides]': https://sites.google.com/view/tax-posed/slides
+      '[Code]': https://github.com/himty/taxposeD
   short_id: wang2024taxposed
-  site: https://sites.google.com/view/tax-posed/home
+  site: https://sites.google.com/view/tax-posed
   title: "Learning Distributional Demonstration Spaces for Task-Specific Cross-Pose Estimation"
   venue: International Conference on Robotics and Automation (ICRA), 2024
   video_embed: null
@@ -117,11 +216,13 @@
 - abs: Understanding and manipulating articulated objects, such as doors and drawers, is crucial for robots operating in human environments. We wish to develop a system that can learn to articulate novel objects with no prior interaction, after training on other articulated objects. Previous approaches for articulated object manipulation rely on either modular methods which are brittle or end-to-end methods, which lack generalizability. This paper presents FlowBot++, a deep 3D vision-based robotic system that predicts dense per-point motion and dense articulation parameters of articulated objects to assist in downstream manipulation tasks. FlowBot++ introduces a novel per-point representation of the articulated motion and articulation parameters that are combined to produce a more accurate estimate than either method on their own. Simulated experiments on the PartNet-Mobility dataset validate the performance of our system in articulating a wide range of objects, while real-world experiments on real objects' point clouds and a Sawyer robot demonstrate the generalizability and feasibility of our system in real-world scenarios.
   authors: Harry Zhang, Ben Eisner, David Held
   award: null
-  bib: "@inproceedings{zhang2023fbpp,\n
-  \  title={FlowBot++: Learning Generalized Articulated Objects Manipulation via Articulation Projection},\n
-  \  author={Zhang, Harry and Eisner, Ben and Held, David},\n
-  \  journal={Conference on Robot Learning (CoRL)},\n
-  \  year={2023},\n}"
+  bib: > 
+    @inproceedings{zhang2023fbpp,
+      title={FlowBot++: Learning Generalized Articulated Objects Manipulation via Articulation Projection},
+      author={Zhang, Harry and Eisner, Ben and Held, David},
+      journal={Conference on Robot Learning (CoRL)},
+      year={2023}
+    }
   img: ../pics/fbpp.gif
   links:
       '[arXiv]': https://arxiv.org/abs/2306.12893
@@ -135,16 +236,17 @@
 - abs: Manipulating objects without grasping them is an essential component of human dexterity, referred to as non-prehensile manipulation. Non-prehensile manipulation may enable more complex interactions with the objects, but also presents challenges in reasoning about gripper-object interactions. In this work, we introduce Hybrid Actor-Critic Maps for Manipulation (HACMan), a reinforcement learning approach for 6D non-prehensile manipulation of objects using point cloud observations. HACMan proposes a temporally-abstracted and spatially-grounded object-centric action representation that consists of selecting a contact location from the object point cloud and a set of motion parameters describing how the robot will move after making contact. We modify an existing off-policy RL algorithm to learn in this hybrid discrete-continuous action representation. We evaluate HACMan on a 6D object pose alignment task in both simulation and in the real world. On the hardest version of our task, with randomized initial poses, randomized 6D goals, and diverse object categories, our policy demonstrates strong generalization to unseen object categories without a performance drop, achieving an 89% success rate on unseen objects in simulation and 50% success rate with zero-shot transfer in the real world. Compared to alternative action representations, HACMan achieves a success rate more than three times higher than the best baseline. With zero-shot sim2real transfer, our policy can successfully manipulate unseen objects in the real world for challenging non-planar goals, using dynamic and contact-rich non-prehensile skills.
   authors: Wenxuan Zhou, Bowen Jiang, Fan Yang, Chris Paxton*, David Held*
   award: <award>Oral Presentation</award>  (Selection rate 6.6%)
-  bib: "@inproceedings{zhou2023hacman,\n
-  \  title={HACMan: Learning Hybrid Actor-Critic Maps for 6D Non-Prehensile Manipulation},\n
-  \  author={Zhou, Wenxuan and Jiang, Bowen and Yang, Fan and Paxton, Chris and Held, David},\n
-  \  journal={Conference on Robot Learning (CoRL)},\n
-  \  year={2023},\n}"
+  bib: >
+    @inproceedings{zhou2023hacman,
+      title={HACMan: Learning Hybrid Actor-Critic Maps for 6D Non-Prehensile Manipulation},
+      author={Zhou, Wenxuan and Jiang, Bowen and Yang, Fan and Paxton, Chris and Held, David},
+      journal={Conference on Robot Learning (CoRL)},
+      year={2023},
+    }
   img: ../pics/hacman-v2.gif
   links:
       '[arXiv]': https://arxiv.org/abs/2305.03942
       '[Code]': https://github.com/HACMan-2023/HACMan
-      '[PDF]': https://openreview.net/pdf?id=fa7FzDjhzs9
   short_id: hacman
   site: https://hacman-2023.github.io/
   title: "HACMan: Learning Hybrid Actor-Critic Maps for 6D Non-Prehensile Manipulation"
@@ -168,11 +270,12 @@
     cloth and garments.
   authors: Lawrence Yunliang Chen, Baiyu Shi, Roy Lin, Daniel Seita, Ayah Ahmad, Richard Cheng, Thomas Kollar, David Held, Ken Goldberg
   award: null
-  bib: "@inproceedings{slipbagging2023,\n
-  \  title={{Bagging by Learning to Singulate Layers Using Interactive Perception}},\n
-  \  author={Lawrence Yunliang Chen and Baiyu Shi and Roy Lin and Daniel Seita and Ayah Ahmad and Richard Cheng and Thomas Kollar and David Held and Ken Goldberg},\n
-  \  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n
-  \  year={2023}\n}"
+  bib: >
+    @inproceedings{slipbagging2023,\n
+      title={{Bagging by Learning to Singulate Layers Using Interactive Perception}},\n
+      author={Lawrence Yunliang Chen and Baiyu Shi and Roy Lin and Daniel Seita and Ayah Ahmad and Richard Cheng and Thomas Kollar and David Held and Ken Goldberg},\n
+      booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n
+      year={2023}\n}"
   img: ../pics/slip-bagging-160.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2303.16898
@@ -184,7 +287,8 @@
 - abs: 'Robot-assisted dressing could benefit the lives of many people such as older adults and individuals with disabilities. Despite such potential, robot-assisted dressing remains a challenging task for robotics as it involves complex manipulation of deformable cloth in 3D space. Many prior works aim to solve the robot-assisted dressing task, but they make certain assumptions such as a fixed garment and a fixed arm pose that limit their ability to generalize. In this work, we develop a robot-assisted dressing system that is able to dress different garments on people with diverse poses from partial point cloud observations, based on a learned policy. We show that with proper design of the policy architecture and Q function, reinforcement learning (RL) can be used to learn effective policies with partial point cloud observations that work well for dressing diverse garments. We further leverage policy distillation to combine multiple policies trained on different ranges of human arm poses into a single policy that works over a wide range of different arm poses. We conduct comprehensive real-world evaluations of our system with 510 dressing trials in a human study with 17 participants with different arm poses and dressed garments. Our system is able to dress 86\% of the length of the participants arms on average. Videos can be found on the anonymized project webpage: https://sites.google.com/view/one-policy-dress.'
   authors: Yufei Wang, Zhanyi Sun, Zackory Erickson*, David Held*
   award: null
-  bib: "@inproceedings{Wang2023One,\n            title={One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments},\n            author={Wang, Yufei and Sun, Zhanyi and Erickson, Zackory and Held, David},\n            booktitle={Robotics: Science\
+  bib: >
+    @inproceedings{Wang2023One,\n            title={One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments},\n            author={Wang, Yufei and Sun, Zhanyi and Erickson, Zackory and Held, David},\n            booktitle={Robotics: Science\
     \ and Systems (RSS)},\n            year={2023}\n       }"
   img: ../pics/RSS23-dressing.gif
   links:
@@ -200,14 +304,15 @@
 - abs: "To navigate in an environment safely and autonomously, robots must accurately estimate where obstacles are and how they move. Instead of using expensive traditional 3D sensors, we explore the use of a much cheaper, faster, and higher resolution alternative: programmable light curtains. Light curtains are a controllable depth sensor that sense only along a surface that the user selects. We adapt a probabilistic method based on particle filters and occupancy grids to explicitly estimate the position and velocity of 3D points in the scene using partial measurements made by light curtains. The central challenge is to decide where to place the light curtain to accurately perform this task. We propose multiple curtain placement strategies guided by maximizing information gain and verifying predicted object locations. Then, we combine these strategies using an online learning framework. We propose a novel self-supervised reward function that evaluates the accuracy of current velocity estimates using future light curtain placements. We use a multi-armed bandit framework to intelligently switch between placement policies in real time, outperforming fixed policies. We develop a full-stack navigation system that uses position and velocity estimates from light curtains for downstream tasks such as localization, mapping, path-planning, and obstacle avoidance. This work paves the way for controllable light curtains to accurately, efficiently, and purposefully perceive and navigate complex and dynamic environments."
   authors: Siddharth Ancha, Gaurav Pathak, Ji Zhang, Srinivasa Narasimhan, David Held
   award: null
-  bib: "@inproceedings{ancha2023rss,\n
-    \ title     = {Active Velocity Estimation using Light Curtains via Self-Supervised Multi-Armed Bandits},\n
-    \ author    = {Siddharth Ancha AND Gaurav Pathak AND Ji Zhang AND Srinivasa Narasimhan AND David Held},\n
-    \ booktitle = {Proceedings of Robotics: Science and Systems},\n
-    \ year      = {2023},\n
+  bib: >
+    @inproceedings{ancha2023rss,\n
+        title     = {Active Velocity Estimation using Light Curtains via Self-Supervised Multi-Armed Bandits},\n
+        author    = {Siddharth Ancha AND Gaurav Pathak AND Ji Zhang AND Srinivasa Narasimhan AND David Held},\n
+        booktitle = {Proceedings of Robotics: Science and Systems},\n
+        year      = {2023},\n
     \ address   = {Daegu, Republic of Korea},\n
     \ month     = {July},\n
-  }"
+      }
   img: ../pics/rss2023lightcurtains.png
   links:
     '[arXiv]': https://arxiv.org/abs/2302.12597
@@ -223,13 +328,14 @@
 - abs: "Predicting how the world can evolve in the future is crucial for motion planning in autonomous systems. Classical methods are limited because they rely on costly human annotations in the form of semantic class labels, bounding boxes, and tracks or HD maps of cities to plan their motion — and thus are difficult to scale to large unlabeled datasets. One promising self-supervised task is 3D point cloud forecasting from unannotated LiDAR sequences. We show that this task requires algorithms to implicitly capture (1) sensor extrinsics (i.e., the egomotion of the autonomous vehicle), (2) sensor intrinsics (i.e., the sampling pattern specific to the particular LiDAR sensor), and (3) the shape and motion of other objects in the scene. But autonomous systems should make predictions about the world and not their sensors! To this end, we factor out (1) and (2) by recasting the task as one of spacetime (4D) occupancy forecasting. But because it is expensive to obtain ground-truth 4D occupancy, we “render” point cloud data from 4D occupancy predictions given sensor extrinsics and intrinsics, allowing one to train and test occupancy algorithms with unannotated LiDAR sequences. This also allows one to evaluate and compare point cloud forecasting algorithms across diverse datasets, sensors, and vehicles."
   authors: Tarasha Khurana, Peiyun Hu, David Held, Deva Ramanan
   award: null
-  bib: "@inproceedings{Khurana2023point,\n
-    \ title={Point Cloud Forecasting as a Proxy for 4D Occupancy Forecasting},\n
-    \ author={Khurana, Tarasha and Hu, Peiyun and Held, David and Ramanan, Deva},\n
-    \ booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and\
+  bib: >
+    @inproceedings{Khurana2023point,\n
+        title={Point Cloud Forecasting as a Proxy for 4D Occupancy Forecasting},\n
+        author={Khurana, Tarasha and Hu, Peiyun and Held, David and Ramanan, Deva},\n
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and\
     \ Pattern Recognition (CVPR)},\n
-    \ year={2023}\n
-    \ }"
+        year={2023}\n
+      }
   img: ../pics/cvpr2023_logo.png
   links:
   short_id: Khurana2023point
@@ -243,12 +349,13 @@
 - abs: "Physical interaction with textiles, such as assistive dressing, relies on advanced dextreous capabilities. The underlying complexity in textile behavior when being pulled and stretched, is due to both the yarn material properties and the textile construction technique. Today, there are no commonly adopted and annotated datasets on which the various interaction or property identification methods are assessed. One important property that affects the interaction is material elasticity that results from both the yarn material and construction technique: these two are intertwined and, if not known a-priori, almost impossible to identify through sensing commonly available on robotic platforms. We introduce Elastic Context (EC), a concept that integrates various properties that affect elastic behavior, to enable a more effective physical interaction with textiles. The definition of EC relies on stress/strain curves commonly used in textile engineering, which we reformulated for robotic applications. We employ EC using Graph Neural Network (GNN) to learn generalized elastic behaviors of textiles. Furthermore, we explore the effect the dimension of the EC has on accurate force modeling of non-linear real-world elastic behaviors, highlighting the challenges of current robotic setups to sense textile properties."
   authors: Alberta Longhini, Marco Moletta, Alfredo Reichlin, Michael C. Welle, Alexander Kravberg, Yufei Wang, David Held, Zackory Erickson, Danica Kragic
   award: null
-  bib: "@inproceedings{Longhini2023elastic,\n
-    \ title={Elastic Context: Encoding Elasticity for Data-driven Models of Textiles },\n
-    \ author={Longhini, Alberta and Moletta, Marco  and  Reichlin, Alfredo and Welle, Michael C.  and  Kravberg, Alexander and Wang, Yufei and Held, David and Erickson, Zackory  and Kragic, Danica },\n
-    \ booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
-    \ year={2023}\n
-    \ }"
+  bib: >
+    @inproceedings{Longhini2023elastic,\n
+        title={Elastic Context: Encoding Elasticity for Data-driven Models of Textiles },\n
+        author={Longhini, Alberta and Moletta, Marco  and  Reichlin, Alfredo and Welle, Michael C.  and  Kravberg, Alexander and Wang, Yufei and Held, David and Erickson, Zackory  and Kragic, Danica },\n
+        booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
+        year={2023}\n
+      }
   img: ../pics/ICRA23-ElasticContext.png
   links:
     '[arXiv]': https://arxiv.org/abs/2209.05428
@@ -260,13 +367,13 @@
 - abs: "We study the problem of learning graph dynamics of deformable objects which generalize to unknown physical properties. In particular, we leverage a latent representation of elastic physical properties of cloth-like deformable objects which we explore through a pulling interaction. We propose EDO-Net (Elastic Deformable Object - Net), a model trained in a self-supervised fashion on a large variety of samples with different elastic properties. EDO-Net jointly learns an adaptation module, responsible for extracting a latent representation of the physical properties of the object and a forward-dynamics module, which leverages the latent representation to predict future states of cloth-like objects, represented as graphs. We evaluate EDO-Net both in simulation and real world, assessing its capabilities of: 1) generalizing to unknown physical properties of cloth-like deformable objects, 2) transferring the learned representation to new downstream tasks."
   authors: Alberta Longhini*, Marco Moletta*, Alfredo Reichlin, Michael C. Welle, David Held, Zackory Erickson, Danica Kragic
   award: null
-  bib: "@inproceedings{Longhini2023EDO,\n
-    \ title={EDO-Net: Learning Elastic Properties of Deformable Objects from Graph Dynamics
-},\n
-    \ author={Longhini, Alberta and Moletta, Marco and  Reichlin, Alfredo and Welle, Michael C. and Held, David  and Erickson, Zackory  and Kragic, Danica },\n
-    \ booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
-    \ year={2023}\n
-    \ }"
+  bib: >
+    @inproceedings{Longhini2023EDO,
+      title={EDO-Net: Learning Elastic Properties of Deformable Objects from Graph Dynamics},
+      author={Longhini, Alberta and Moletta, Marco and  Reichlin, Alfredo and Welle, Michael C. and Held, David  and Erickson, Zackory  and Kragic, Danica },
+      booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},
+      year={2023}
+    }
   img: ../pics/EDONet.png
   links:
     '[arXiv]': https://arxiv.org/abs/2209.08996
@@ -278,12 +385,13 @@
 - abs: State estimation is one of the greatest challenges for cloth manipulation due to cloth's high dimensionality and self-occlusion. Prior works propose to identify the full state of crumpled clothes by training a mesh reconstruction model in simulation. However, such models are prone to suffer from a sim-to-real gap due to differences between cloth simulation and the real world. In this work, we propose a self-supervised method to finetune a mesh reconstruction model in the real world. Since the full mesh of crumpled cloth is difficult to obtain in the real world, we design a special data collection scheme and an action-conditioned model-based cloth tracking method to generate pseudo-labels for self-supervised learning. By finetuning the pretrained mesh reconstruction model on this pseudo-labeled dataset, we show that we can improve the quality of the reconstructed mesh without requiring human annotations, and improve the performance of downstream manipulation task.
   authors: Zixuan Huang, Xingyu Lin, David Held
   award: null
-  bib: "@inproceedings{huang2023act,\n
-    \ title={Self-supervised Cloth Reconstruction via Action-conditioned Cloth Tracking},\n
-    \ author={Huang, Zixuan and Lin, Xingyu and Held, David},\n
-    \ booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
-    \ year={2023}\n
-    \ }"
+  bib: >
+    @inproceedings{huang2023act,\n
+        title={Self-supervised Cloth Reconstruction via Action-conditioned Cloth Tracking},\n
+        author={Huang, Zixuan and Lin, Xingyu and Held, David},\n
+        booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
+        year={2023}\n
+      }
   img: ../pics/2023act.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2302.09502
@@ -307,11 +415,12 @@
     with NGDF outperforms baselines by 63% execution success while generalizing to unseen query poses and unseen object shapes.
   authors: Thomas Weng, David Held, Franziska Meier, Mustafa Mukadam
   award: null
-  bib: "@article{weng2023ngdf,\n
-  \  title={Neural Grasp Distance Fields for Robot Manipulation},\n
-  \  author={Weng, Thomas and Held, David and Meier, Franziska and Mukadam, Mustafa},\n
-  \  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},\n
-  \  year={2023}\n}"
+  bib: >
+    @article{weng2023ngdf,\n
+      title={Neural Grasp Distance Fields for Robot Manipulation},\n
+      author={Weng, Thomas and Held, David and Meier, Franziska and Mukadam, Mustafa},\n
+      booktitle={IEEE International Conference on Robotics and Automation (ICRA)},\n
+      year={2023}\n}"
   img: ../pics/ngdf_icra2023.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2211.02647
@@ -341,11 +450,12 @@
     one item across a variety of initial bag configurations
   authors: Lawrence Yunliang Chen, Baiyu Shi, Daniel Seita, Richard Cheng, Thomas Kollar, David Held, Ken Goldberg
   award: null
-  bib: "@inproceedings{autobag2023,\n
-  \  title={{AutoBag: Learning to Open Plastic Bags and Insert Objects}},\n
-  \  author={Lawrence Yunliang Chen and Baiyu Shi and Daniel Seita and Richard Cheng and Thomas Kollar and David Held and Ken Goldberg},\n
-  \  booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
-  \  year={2023}\n}"
+  bib: >
+    @inproceedings{autobag2023,\n
+      title={{AutoBag: Learning to Open Plastic Bags and Insert Objects}},\n
+      author={Lawrence Yunliang Chen and Baiyu Shi and Daniel Seita and Richard Cheng and Thomas Kollar and David Held and Ken Goldberg},\n
+      booktitle={IEEE International Conference on Robotics and Automation (ICRA), 2023},\n
+      year={2023}\n}"
   img: ../pics/autobag-ICRA2023.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2210.17217
@@ -374,12 +484,13 @@
     with various size, density, surface friction, and shape with a 78% success rate.
   authors: Wenxuan Zhou, David Held
   award: <award>Oral Presentation</award>  (Selection rate 6.5%)
-  bib: "@inproceedings{zhou2022ungraspable,\n
-    \ title={{Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity}},\n
-    \ author={Zhou, Wenxuan and Held, David},\n
-    \ booktitle={Conference on Robot Learning (CoRL)},\n
-    \ year={2022}\n
-    \ }"
+  bib: >
+    @inproceedings{zhou2022ungraspable,\n
+        title={{Learning to Grasp the Ungraspable with Emergent Extrinsic Dexterity}},\n
+        author={Zhou, Wenxuan and Held, David},\n
+        booktitle={Conference on Robot Learning (CoRL)},\n
+        year={2022}\n
+      }
   img: ../pics/ungraspable.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2211.01500
@@ -394,12 +505,13 @@
 - abs: How do we imbue robots with the ability to efficiently manipulate unseen objects and transfer relevant skills based on demonstrations? End-to-end learning methods often fail to generalize to novel objects or unseen configurations. Instead, we focus on the task-specific pose relationship between relevant parts of interacting objects. We conjecture that this relationship is a generalizable notion of a manipulation task that can transfer to new objects in the same category; examples include the relationship between the pose of a pan relative to an oven or the pose of a mug relative to a mug rack. We call this task-specific pose relationship “cross-pose” and provide a mathematical definition of this concept. We propose a vision-based system that learns to estimate the cross-pose between two objects for a given manipulation task using learned cross-object correspondences. The estimated cross-pose is then used to guide a downstream motion planner to manipulate the objects into the desired pose relationship (placing a pan into the oven or the mug onto the mug rack). We demonstrate our method’s capability to generalize to unseen objects, in some cases after training on only 10 demonstrations in the real world. Results show that our system achieves state-of-the-art performance in both simulated and real-world experiments across a number of tasks.
   authors: Chuer Pan*, Brian Okorn*, Harry Zhang*, Ben Eisner*, David Held
   award: null
-  bib: "@inproceedings{pan2022tax,\n
-    \ title={TAX-Pose: Task-Specific Cross-Pose Estimation for Robot Manipulation},\n
-    \ author={Pan, Chuer and Okorn, Brian and Zhang, Harry and Eisner, Ben and Held, David},\n
-    \ booktitle={Conference on Robot Learning (CoRL)},\n
-    \ year={2022}\n
-    \ }"
+  bib: >
+    @inproceedings{pan2022tax,\n
+        title={TAX-Pose: Task-Specific Cross-Pose Estimation for Robot Manipulation},\n
+        author={Pan, Chuer and Okorn, Brian and Zhang, Harry and Eisner, Ben and Held, David},\n
+        booktitle={Conference on Robot Learning (CoRL)},\n
+        year={2022}\n
+      }
   img: ../pics/taxpose-web.gif
   links:
     '[PDF]': https://arxiv.org/pdf/2211.09325.pdf
@@ -427,12 +539,13 @@
   authors: "Daniel Seita, Yufei Wang\u2020, Sarthak J Shetty\u2020, Edward Yao Li\u2020\
     , Zackory Erickson, David Held"
   award: null
-  bib: "@inproceedings{Seita2022toolflownet,\n
-    \ title={{ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from Point Clouds}},\n
-    \ author={Seita, Daniel and Wang, Yufei and Shetty, Sarthak, and Li, Edward and Erickson, Zackory and Held, David},\n
-    \ booktitle={Conference on Robot Learning (CoRL)},\n
-    \ year={2022}\n
-    \ }"
+  bib: >
+    @inproceedings{Seita2022toolflownet,\n
+        title={{ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from Point Clouds}},\n
+        author={Seita, Daniel and Wang, Yufei and Shetty, Sarthak, and Li, Edward and Erickson, Zackory and Held, David},\n
+        booktitle={Conference on Robot Learning (CoRL)},\n
+        year={2022}\n
+      }
   img: ../pics/toolflownet.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2211.09006
@@ -466,14 +579,15 @@
   authors: Xingyu Lin*, Carl Qi*, Yunchu Zhang, Zhiao Huang, Katerina Fragkiadaki,
     Yunzhu Li, Chuang Gan, David Held
   award: null
-  bib: "@inproceedings{\n
+  bib: >
+    @inproceedings{\n
     \ lin2022planning,\n
-    \ title={Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation},\n
-    \ author={Xingyu Lin and Carl Qi and Yunchu Zhang and Yunzhu Li and Zhiao Huang and Katerina Fragkiadaki and Chuang Gan and David Held},\n
-    \ booktitle={6th Annual Conference on Robot Learning},\n
-    \ year={2022},\n
-    \ url={https://openreview.net/forum?id=tyxyBj2w4vw}\n
-    \ }"
+        title={Planning with Spatial-Temporal Abstraction from Point Clouds for Deformable Object Manipulation},\n
+        author={Xingyu Lin and Carl Qi and Yunchu Zhang and Yunzhu Li and Zhiao Huang and Katerina Fragkiadaki and Chuang Gan and David Held},\n
+        booktitle={6th Annual Conference on Robot Learning},\n
+        year={2022},\n
+        url={https://openreview.net/forum?id=tyxyBj2w4vw}\n
+      }
   img: ../pics/2022_pasta.gif
   links:
     '[OpenReview]': https://openreview.net/forum?id=tyxyBj2w4vw
@@ -501,12 +615,13 @@
     \ consistent relative orientation frame much faster than algorithms that purely operate in the SO(3) space."
   authors: Brian Okorn*, Chuer Pan*, Martial Hebert, David Held
   award: null
-  bib: "@inproceedings{okorndeep,\n
-      \ title={Deep Projective Rotation Estimation through Relative Supervision},\n
-      \ author={Okorn, Brian and Pan, Chuer and Hebert, Martial and Held, David},\n
-      \ booktitle={Conference on Robot Learning (CoRL)}\n
-      \ year={2022},\n
-      \ }"
+  bib: >
+    @inproceedings{okorndeep,\n
+          title={Deep Projective Rotation Estimation through Relative Supervision},\n
+          author={Okorn, Brian and Pan, Chuer and Hebert, Martial and Held, David},\n
+          booktitle={Conference on Robot Learning (CoRL)}\n
+          year={2022},\n
+        }
   img: ../pics/mrp_website_text.png
   links:
     '[arXiv]': https://arxiv.org/pdf/2211.11182.pdf
@@ -548,15 +663,17 @@
   authors: Sashank Tirumala*, Thomas Weng*, Daniel Seita*, Oliver Kroemer, Zeynep
     Temel, David Held
   award: <award>Best Paper at <a href="https://romado-workshop.github.io/ROMADO2022/">ROMADO-SI</a></award>
-  bib: "@INPROCEEDINGS{tirumala2022reskin,\n
-  \ author={Tirumala, Sashank and Weng, Thomas and Seita, Daniel and Kroemer, Oliver and Temel, Zeynep and Held, David},\n
-  \ booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n
-  \ title={Learning to Singulate Layers of Cloth using Tactile Feedback},\n
-  \ year={2022},\n
-  \ volume={},\n
-  \ number={},\n
-  \ pages={7773-7780},\n
-  \ doi={10.1109/IROS47612.2022.9981341}\n}"
+  bib: >
+    @inproceedings{tirumala2022reskin,
+      author={Tirumala, Sashank and Weng, Thomas and Seita, Daniel and Kroemer, Oliver and Temel, Zeynep and Held, David},
+      booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+      title={Learning to Singulate Layers of Cloth using Tactile Feedback},
+      year={2022},
+      volume={},
+      number={},
+      pages={7773-7780},
+      doi={10.1109/IROS47612.2022.9981341}
+    }
   img: ../pics/iros2022-singulating-layers-fabric-reskin-400x210.gif
   links:
     '[arXiv]': https://arxiv.org/abs/2207.11196
@@ -585,7 +702,8 @@
     dough into a target shape.
   authors: Carl Qi, Xingyu Lin, David Held
   award: null
-  bib: "@ARTICLE{qi2022dough, \nauthor={Qi, Carl and Lin, Xingyu and Held, David},\n\
+  bib: >
+    @article{qi2022dough, \nauthor={Qi, Carl and Lin, Xingyu and Held, David},\n\
     journal={IEEE Robotics and Automation Letters}, \ntitle={Learning Closed-Loop\
     \ Dough Manipulation Using a Differentiable Reset Module}, \nyear={2022},\nvolume={7},\n\
     number={4},\npages={9857-9864},\ndoi={10.1109/LRA.2022.3191239}}"
@@ -618,16 +736,17 @@
     physically assistive tasks with cloth.
   authors: Yufei Wang, David Held, Zackory Erickson
   award: null
-  bib: "@article{wang2022visual, \n
-  \ title={Visual Haptic Reasoning: Estimating Contact Forces by Observing Deformable Object Interactions}, \n
-  \ author={Wang, Yufei and Held, David and Erickson, Zackory}, \n
-  \ journal={IEEE Robotics and Automation Letters}, \n
-  \ volume={7}, \n
-  \ number={4}, \n
-  \ pages={11426--11433}, \n
-  \ year={2022}, \n
-  \ publisher={IEEE} \n
-  \ }"
+  bib: >
+    @article{wang2022visual,
+      title={Visual Haptic Reasoning: Estimating Contact Forces by Observing Deformable Object Interactions},
+      author={Wang, Yufei and Held, David and Erickson, Zackory},
+      journal={IEEE Robotics and Automation Letters},
+      volume={7},
+      number={4},
+      pages={11426--11433},
+      year={2022},
+      publisher={IEEE}
+    }
   img: ../pics/visual-haptic-reasoning-IROS.gif
   links:
     '[PDF]': https://arxiv.org/pdf/2208.05632.pdf
@@ -657,7 +776,8 @@
     achieves state-of-the-art performance in both simulated and real-world experiments.
   authors: Ben Eisner*, Harry Zhang*, David Held
   award: <award>Best Paper Finalist (Selection Rate 1.5%)</award>
-  bib: "@inproceedings{EisnerZhang2022FLOW,\n            title={FlowBot3D: Learning\
+  bib: >
+    @inproceedings{EisnerZhang2022FLOW,\n            title={FlowBot3D: Learning\
     \ 3D Articulation Flow to Manipulate Articulated Objects},\n            author={Eisner*,\
     \ Ben and Zhang*, Harry and Held,David},\n            booktitle={Robotics: Science\
     \ and Systems (RSS)},\n            year={2022}\n       }"
@@ -690,7 +810,8 @@
     \ optimization."
   authors: Zixuan Huang, Xingyu Lin, David Held
   award: null
-  bib: "@inproceedings{huang2022medor,\n            title={Mesh-based Dynamics Model\
+  bib: >
+    @inproceedings{huang2022medor,\n            title={Mesh-based Dynamics Model\
     \ with Occlusion Reasoning for Cloth Manipulation},\n            author={Huang,\
     \ Zixuan and Lin, Xingyu and Held,David},\n            booktitle={Robotics: Science\
     \ and Systems (RSS)},\n            year={2022}\n       }"
@@ -815,8 +936,9 @@
     pose estimation at real-time speeds, without requiring human annotations.
   authors: Qiao Gu, Brian Okorn, David Held
   award: null
-  bib: "@ARTICLE{ral2022ossid,\n  author={Gu, Qiao and Okorn, Brian and Held, David},\n\
-    \  journal={IEEE Robotics and Automation Letters}, \n  title={OSSID: Online Self-Supervised\
+  bib: >
+    @article{ral2022ossid,\n  author={Gu, Qiao and Okorn, Brian and Held, David},\n\
+        journal={IEEE Robotics and Automation Letters}, \n  title={OSSID: Online Self-Supervised\
     \ Instance Detection by (And For) Pose Estimation}, \n  year={2022},\n  volume={7},\n\
     \  number={2},\n  pages={3022-3029},\n  doi={10.1109/LRA.2022.3145488}}"
   img: ../pics/ossid.jpg
@@ -851,10 +973,11 @@
     and real-world LiDAR dataset, Semantic KITTI.
   authors: Himangi Mittal, Brian Okorn, Arpit Jangid, David Held
   award: <award>Oral presentation</award> (Selection rate 3.3%)
-  bib: "@article{mittal2021self,\n  title={Self-Supervised Point Cloud Completion\
+  bib: >
+    @article{mittal2021self,\n  title={Self-Supervised Point Cloud Completion\
     \ via Inpainting},\n  author={Mittal, Himangi and Okorn, Brian and Jangid, Arpit\
     \ and Held, David},\n  journal={British Machine Vision Conference (BMVC), 2021},\n\
-    \  year={2021}\n}"
+        year={2021}\n}"
   img: ../pics/bmvc2-2021.gif
   links:
     '[PDF]': https://arxiv.org/pdf/2111.10701.pdf
@@ -986,7 +1109,8 @@
     cloth shapes, such as T-shirts and rectangular cloths.
   authors: Thomas Weng, Sujay Bajracharya, Yufei Wang, David Held
   award: null
-  bib: "@inproceedings{weng2021fabricflownet,\n title={FabricFlowNet: Bimanual Cloth\
+  bib: >
+    @inproceedings{weng2021fabricflownet,\n title={FabricFlowNet: Bimanual Cloth\
     \ Manipulation \n    with a Flow-based Policy},\n author={Weng, Thomas and Bajracharya,\
     \ Sujay and \n    Wang, Yufei and Agrawal, Khush and Held, David},\n booktitle={Conference\
     \ on Robot Learning},\n year={2021}\n}"
@@ -1052,7 +1176,8 @@
     we explore the use of a much cheaper and higher resolution sensor:'
   authors: Siddharth Ancha, Gaurav Pathak, Srinivasa Narasimhan, David Held
   award: null
-  bib: "@INPROCEEDINGS{Ancha-RSS-21,\n    AUTHOR    = {Siddharth Ancha AND Gaurav\
+  bib: >
+    @inproceedings{Ancha-RSS-21,\n    AUTHOR    = {Siddharth Ancha AND Gaurav\
     \ Pathak AND Srinivasa G. Narasimhan AND David Held},\n    TITLE     = {Active\
     \ Safety Envelopes using Light Curtains with Probabilistic Guarantees},\n    BOOKTITLE\
     \ = {Proceedings of Robotics: Science and Systems},\n    YEAR      = {2021},\n\
@@ -1091,7 +1216,8 @@
     any retraining.
   authors: Brian Okorn*, Qiao Gu*, Martial Hebert, David Held
   award: null
-  bib: "@inproceedings{okorn2021zephyr,\n                    title={Zephyr: Zero-shot\
+  bib: >
+    @inproceedings{okorn2021zephyr,\n                    title={Zephyr: Zero-shot\
     \ pose hypothesis rating},\n                    author={Okorn, Brian and Gu, Qiao\
     \ and Hebert, Martial and Held, David},\n                    booktitle={2021 IEEE\
     \ International Conference on Robotics and Automation (ICRA)},\n             \
@@ -1120,7 +1246,8 @@
     when RGB cameras are used in tandem with a Light Curtain.
   authors: Yaadhav Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan
   award: null
-  bib: "@inproceedings{cvpr2021raajexploiting,\n    title     = {Exploiting & Refining\
+  bib: >
+    @inproceedings{cvpr2021raajexploiting,\n    title     = {Exploiting & Refining\
     \ Depth Distributions with Triangulation Light Curtains},\n    author    = {Yaadhav\
     \ Raaj, Siddharth Ancha, Robert Tamburo, David Held, Srinivasa Narasimhan},\n\
     \    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and\
@@ -1155,10 +1282,11 @@
     approaches lead to significant reduction in collision rates.
   authors: Peiyun Hu, Aaron Huang, John Dolan, David Held, Deva Ramanan
   award: null
-  bib: "@inproceedings{cvpr2021husafe,\n                    title={Safe Local Motion\
+  bib: >
+    @inproceedings{cvpr2021husafe,\n                    title={Safe Local Motion\
     \ Planning with Self-Supervised Freespace Forecasting},\n                    author={Peiyun\
     \ Hu, Aaron Huang, John Dolan, David Held, Deva Ramanan},\n                  \
-    \  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern\
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern\
     \ Recognition (CVPR)},\n                    year={2021}}"
   img: ../pics/peiyunff.gif
   links:
@@ -1311,7 +1439,8 @@
     cloud detection.'
   authors: Xia Chen, Jianren Wang, David Held, Martial Hebert
   award: null
-  bib: "@inproceedings{xia20panonet3d,\n    author = \"Chen, Xia \n    and Wang, Jianren\
+  bib: >
+    @inproceedings{xia20panonet3d,\n    author = \"Chen, Xia \n    and Wang, Jianren\
     \ \n    and Held, David \n    and Hebert, Martial\",\n    title = \"PanoNet3D:\
     \ Combining Semantic and Geometric Understanding for LiDARPoint Cloud Detection\"\
     ,\n    booktitle = \"3DV\",\n    year = \"2020\"\n}"
@@ -1340,7 +1469,8 @@
     \ uncertainty-guided light curtains to successively improve detection accuracy."
   authors: Siddharth Ancha, Yaadhav Raaj, Peiyun Hu, Srinivasa Narasimhan, David Held
   award: <award>Spotlight presentation</award> (Selection rate 5.3%)
-  bib: "@InProceedings{Ancha_2020_ECCV,\n  author=\"Ancha, Siddharth\n  and Raaj,\
+  bib: >
+    @inproceedings{Ancha_2020_ECCV,\n  author=\"Ancha, Siddharth\n  and Raaj,\
     \ Yaadhav\n  and Hu, Peiyun\n  and Narasimhan, Srinivasa G.\n  and Held, David\"\
     ,\n  editor=\"Vedaldi, Andrea\n  and Bischof, Horst\n  and Brox, Thomas\n  and\
     \ Frahm, Jan-Michael\",\n  title=\"Active Perception Using Light Curtains for\
@@ -1375,7 +1505,8 @@
     success. Video and other supplementary materials are available at:'
   authors: Jianing Qian*, Thomas Weng*, Luxin Zhang, Brian Okorn, David Held
   award: null
-  bib: "@InProceedings{Qian_2020_IROS,\n
+  bib: >
+    @inproceedings{Qian_2020_IROS,\n
     author={Qian, Jianing and Weng, Thomas and Zhang, Luxin and Okorn, Brian and Held, David},
     booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
     title={Cloth Region Segmentation for Robust Grasp Selection},
@@ -1411,7 +1542,8 @@
     frames, towards effective and accurate 3D tracking.
   authors: Jianren Wang, Siddharth Ancha, Yi-Ting Chen, David Held
   award: null
-  bib: "@inproceedings{jianren20s3da,\n    author = \"Wang, Jianren \n    and Ancha,\
+  bib: >
+    @inproceedings{jianren20s3da,\n    author = \"Wang, Jianren \n    and Ancha,\
     \ Siddharth \n    and Chen, Yi-Ting \n    and Held, David\",\n    title = \"Uncertainty-aware\
     \ Self-supervised 3D Data Association\",\n    booktitle = \"IROS\",\n    year\
     \ = \"2020\"\n}"
@@ -1459,7 +1591,8 @@
     MOT systems.
   authors: Xinshuo Weng, Jianren Wang, David Held, Kris Kitani
   award: null
-  bib: "@article{Weng2020_AB3DMOT, \nauthor = {Weng, Xinshuo and Wang, Jianren and\
+  bib: >
+    @article{Weng2020_AB3DMOT, \nauthor = {Weng, Xinshuo and Wang, Jianren and\
     \ Held, David and Kitani, Kris}, \njournal = {IROS}, \ntitle = {3D Multi-Object\
     \ Tracking: A Baseline and New Evaluation Metrics}, \nyear = {2020} \n}"
   img: ../pics/ab3dmot.jpg
@@ -1603,10 +1736,11 @@
     perception systems as a reliable instance detection method.
   authors: Siddharth Ancha*, Junyu Nan*, David Held
   award: null
-  bib: "@inproceedings{FlowVerify2019CoRL,\n  author    = {Siddharth Ancha and\n \
+  bib: >
+    @inproceedings{FlowVerify2019CoRL,\n  author    = {Siddharth Ancha and\n \
     \              Junyu Nan and\n               David Held},\n  editor    = {Leslie\
     \ Pack Kaelbling and\n               Danica Kragic and\n               Komei Sugiura},\n\
-    \  title     = {Combining Deep Learning and Verification for Precise Object Instance\n\
+        title     = {Combining Deep Learning and Verification for Precise Object Instance\n\
     \               Detection},\n  booktitle = {3rd Annual Conference on Robot Learning,\
     \ CoRL 2019, Osaka, Japan,\n               October 30 - November 1, 2019, Proceedings},\n\
     \  series    = {Proceedings of Machine Learning Research},\n  volume    = {100},\n\
