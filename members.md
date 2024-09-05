@@ -45,9 +45,6 @@ members:
       - name: Visiting Students
         full: true
         list:
-          - name: Ziyu Wang
-            photo_url: /img/members/Ziyu_Wang.jpg
-            web_url: 
           - name: Chialing Kuo
             photo_url: /img/members/chialiang.jpg
             web_url: https://www.ri.cmu.edu/ri-people/chia-liang-kuo/
@@ -124,6 +121,7 @@ members:
             - name: Himangi Mittal -> CMU MSR
               web_url: https://himangim.github.io/
             - name: Jianren Wang -> CMU PhD
+            - name: Ziyu Wang
       - name: Master's students (Capstone Project)
         full: False
         list:
