@@ -46,7 +46,7 @@ members:
         full: true
         list:
           - name: Jacinto Suner
-            photo_url: /img/members/jacintosuner.jpg
+            photo_url: https://www.ri.cmu.edu/app/uploads/2024/09/Jacinto-Suner-2024.jpg
             web_url: https://www.ri.cmu.edu/ri-people/jacinto-suner/
   - name: <a name="alumni"></a>Alumni
     list:
