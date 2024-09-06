@@ -40,7 +40,7 @@
   venue: "Annual Review of Control, Robotics, and Autonomous Systems, 2024"
   img: ''
   
-  - authors: Siddharth Ancha, Gaurav Pathak, Ji Zhang, Srinivasa Narasimhan, David Held;
+- authors: Siddharth Ancha, Gaurav Pathak, Ji Zhang, Srinivasa Narasimhan, David Held;
   title: "Active Velocity Estimation using Light Curtains via Self-Supervised Multi-Armed Bandits"
   venue: "Autonomous Robotics, 2024"
   img: ''
