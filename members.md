@@ -36,6 +36,9 @@ members:
           - name: Kallol Saha (MSR)
             photo_url: /img/members/kallol.jpg
             web_url: https://kallol-saha.github.io/
+          - name: Sriram Krishna (MSR)
+            photo_url: https://www.ri.cmu.edu/app/uploads/2024/08/sskrishn_0162-300x450.jpg
+            web_url: https://sriramsk1999.github.io/
           - name: Lifan Yu (MSCV)
             photo_url: /img/members/lifanyu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/lifan-yu/
