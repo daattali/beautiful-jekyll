@@ -36,6 +36,9 @@ members:
           - name: Kallol Saha (MSR)
             photo_url: /img/members/kallol.jpg
             web_url: https://kallol-saha.github.io/
+          - name: Yishu Li (MSR)
+            photo_url: /img/members/yishu.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/yishu-li/
           - name: Lifan Yu (MSCV)
             photo_url: /img/members/lifanyu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/lifan-yu/
