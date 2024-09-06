@@ -15,6 +15,22 @@
 # Current tags for research areas, see the research areas page for more details:
 # deform_obj_manip, 3D_afford_obj_manip, multimodal, rl_algs, auto_driving, active_perception, self_sup_rob
 
+- authors: Eric Cai, Octavian Donca, Ben Eisner, David Held;
+  title: "Non-rigid Relative Placement through 3D Dense Diffusion"
+  venue: "Conference on Robot Learning (CoRL), 2024"
+  img: ''
+
+- authors: Yishu Li*, Wen Hui Leng*, Yiming Fang*, Ben Eisner, David Held;
+  title: "FlowBotHD: History-Aware Diffuser Handling Ambiguities in Articulated Objects Manipulation"
+  venue: "Conference on Robot Learning (CoRL), 2024"
+  img: ''
+
+- authors: Modeling Drivers’ Situational Awareness from Eye Gaze for Driving Assistance;
+  title: "Abhijat Biswas, Pranay Gupta, Shreeya Khurana, David Held, Henny Admoni"
+  venue: "Conference on Robot Learning (CoRL), 2024"
+  img: ''
+
+
 - authors: Xialin He, Chengjing Yuan, Wenxuan Zhou, Ruihan Yang, David Held, Xiaolong Wang;
   title: "Visual Manipulation with Legs"
   venue: "Conference on Robot Learning (CoRL), 2024"
