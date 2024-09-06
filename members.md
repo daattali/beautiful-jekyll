@@ -33,6 +33,9 @@ members:
           - name: Eric Cai (MSR)
             photo_url: /img/members/ericcai.jpg
             web_url: https://www.ri.cmu.edu/ri-people/ericcai/
+          - name: Kallol Saha (MSR)
+            photo_url: /img/members/kallol.jpg
+            web_url: https://kallol-saha.github.io/
           - name: Lifan Yu (MSCV)
             photo_url: /img/members/lifanyu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/lifan-yu/
