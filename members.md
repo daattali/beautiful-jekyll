@@ -45,6 +45,9 @@ members:
           - name: Haoyue Liu (MSCV)
             photo_url: /img/members/haoyueliu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/haoyue-liu/
+          - name: Mino Nakura (MSR)
+            photo_url: /img/members/mino.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/maxwell-mino-nakura-fan/
       - name: Undergraduate Students
         full: true
         list:
