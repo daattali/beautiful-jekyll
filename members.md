@@ -21,6 +21,9 @@ members:
           - name: Yufei Wang<br>(co-advised with Zackory Erickson)
             photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
             web_url: https://yufeiwang63.github.io/
+          - name: Ying Yuan
+            photo_url: /img/members/yingyuan.jpg
+            web_url: https://yingyuan0414.github.io/
       - name: Masters students
         full: true
         list:
