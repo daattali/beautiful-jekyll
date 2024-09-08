@@ -21,6 +21,9 @@ members:
           - name: Yufei Wang<br>(co-advised with Zackory Erickson)
             photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
             web_url: https://yufeiwang63.github.io/
+          - name: Ying Yuan
+            photo_url: /img/members/yingyuan.jpg
+            web_url: https://yingyuan0414.github.io/
       - name: Masters students
         full: true
         list:
@@ -39,12 +42,18 @@ members:
           - name: Yishu Li (MSR)
             photo_url: /img/members/yishu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/yishu-li/
+          - name: Sriram Krishna (MSR)
+            photo_url: https://www.ri.cmu.edu/app/uploads/2024/08/sskrishn_0162-300x450.jpg
+            web_url: https://sriramsk1999.github.i
           - name: Lifan Yu (MSCV)
             photo_url: /img/members/lifanyu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/lifan-yu/
           - name: Haoyue Liu (MSCV)
             photo_url: /img/members/haoyueliu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/haoyue-liu/
+          - name: Mino Nakura (MSR)
+            photo_url: /img/members/mino.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/maxwell-mino-nakura-fan/
       - name: Undergraduate Students
         full: true
         list:
