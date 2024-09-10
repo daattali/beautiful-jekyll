@@ -44,7 +44,7 @@ members:
             web_url: https://www.ri.cmu.edu/ri-people/yishu-li/
           - name: Sriram Krishna (MSR)
             photo_url: https://www.ri.cmu.edu/app/uploads/2024/08/sskrishn_0162-300x450.jpg
-            web_url: https://sriramsk1999.github.i
+            web_url: https://sriramsk1999.github.io/
           - name: Lifan Yu (MSCV)
             photo_url: /img/members/lifanyu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/lifan-yu/
