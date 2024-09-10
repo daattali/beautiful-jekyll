@@ -54,6 +54,9 @@ members:
           - name: Mino Nakura (MSR)
             photo_url: /img/members/mino.jpg
             web_url: https://www.ri.cmu.edu/ri-people/maxwell-mino-nakura-fan/
+          - name: Lyuxing He (MSAI)
+            photo_url: /img/members/lyuxinghe.jpg
+            web_url: https://lyuxinghe.github.io/
       - name: Undergraduate Students
         full: true
         list:
