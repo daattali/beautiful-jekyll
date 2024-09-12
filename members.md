@@ -57,6 +57,9 @@ members:
           - name: Lyuxing He (MSAI)
             photo_url: /img/members/lyuxinghe.jpg
             web_url: https://lyuxinghe.github.io/
+          - name: Kyutae Sim (MSR)
+            photo_url: /img/members/kyutae.png
+            web_url: https://ktsim01.github.io/
       - name: Undergraduate Students
         full: true
         list:
