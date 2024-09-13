@@ -5,7 +5,7 @@ subtitle: Lets start with few words about me
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-# # tags: [books, test]
+tags: [overview]
 # author: Sharon Smith and Barry Simpson
 ---
 
