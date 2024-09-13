@@ -1,9 +1,7 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
+title: Overview
+subtitle: Lets start with few words about me.
 tags: [test]
 comments: true
 mathjax: true
