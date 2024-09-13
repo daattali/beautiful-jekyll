@@ -11,7 +11,7 @@ Here are some of the projects I've worked on:
 <ul>
   {% for post in site.posts %}
     {% if post.categories contains 'projects' %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
     {% endif %}
   {% endfor %}
 </ul>
