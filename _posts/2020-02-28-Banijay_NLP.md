@@ -63,6 +63,14 @@ The performance of various models was analyzed to determine the best-performing 
 
 We utilized the Hugging Face platform to test and fine-tune several transformer models. BERT was successfully implemented and trained on our dataset, leading to significant improvements in emotion classification accuracy.
 
+## 📸 Presentation Snippets
+
+Here are some snapshots from our project presentation:
+
+![Presentation Snapshot 1]({{ '/assets/img/banijay_presentation1.png' | relative_url }})
+![Presentation Snapshot 2]({{ '/assets/img/banijay_presentation2.png' | relative_url }})
+![Presentation Snapshot 3]({{ '/assets/img/banijay_presentation3.png' | relative_url }})
+
 ## 🔗 Links
 
 - [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2022-2023/tree/main/Banijay_Emotion_Classification)
