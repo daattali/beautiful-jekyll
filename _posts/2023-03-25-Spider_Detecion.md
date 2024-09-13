@@ -44,7 +44,7 @@ The goal was to create an application that could reliably identify spiders and a
 
 ## 🔗 GitHub Repository
 
-- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2022-2023/tree/main/Spider%20Detector%20App)
+- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2022-2023)
 
 ## 🛠 Skills
 

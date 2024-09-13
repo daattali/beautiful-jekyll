@@ -41,7 +41,7 @@ The project culminated in a detailed technical report, which covered all aspects
 
 ## 🔗 Links
 
-- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2022-2023/tree/main/NPEC_Plant_Analysis)
+- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2023-2024)
 
 ## 🛠 Skills
 

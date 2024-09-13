@@ -74,7 +74,7 @@ Here are some snapshots from our project presentation:
 
 ## 🔗 Links
 
-- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2022-2023/tree/main/Banijay_Emotion_Classification)
+- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2023-2024)
 
 ## 🛠 Skills
 

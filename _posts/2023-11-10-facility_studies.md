@@ -46,7 +46,7 @@ Here are a few snapshots from the interactive Streamlit dashboard:
 
 ## 🔗 Links
 
-- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2022-2023/tree/main/BUAS_Facility_Management)
+- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2023-2024)
 - [Explore the Interactive Streamlit Dashboard](https://projects-2023-2024-htqyxiv6mmvbvvq9aoy97w.streamlit.app/)
 
 ## 🛠 Skills

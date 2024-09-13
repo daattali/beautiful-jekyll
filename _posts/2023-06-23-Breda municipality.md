@@ -52,7 +52,7 @@ Here are a few snapshots from the Streamlit dashboard:
 
 ## 🔗 GitHub Repository
 
-- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2022-2023/tree/main/Breda_Municipality_safty)
+- [View the Project on GitHub](https://github.com/DominikSzewczyk224180/Projects-2022-2023)
 
 ## 🌐 Streamlit Dashboard
 
