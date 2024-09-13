@@ -2,7 +2,9 @@
 layout: post
 title: Overview
 subtitle: Lets start with few words about me.
+cover-img: /assets/img/path.jpg
 tags: [Overview]
+date: 2025-01-01 00:00:00
 author: Dominik Szewczyk
 ---
 
