@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI-Powered Spider Detector App: Enhancing Tourist Safety
+title: AI-Powered Spider Detector App; Enhancing Tourist Safety
 subtitle: Leveraging Convolutional Neural Networks for Spider Identification
 gh-repo: DominikSzewczyk224180/Projects-2022-2023
 gh-badge: [star, fork, follow]
