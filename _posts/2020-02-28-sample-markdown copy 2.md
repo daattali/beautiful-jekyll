@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
+title: Tracking and Exploring Global Progress on Sustainable Development Goals
+subtitle: An analysis of renewable energy consumption in Europe
+gh-repo: DominikSzewczyk224180/Projects-2022-2023
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [SDGs, Renewable Energy, Data Analysis]
 comments: true
-mathjax: true
-author: Bill Smith
+mathjax: false
+author: Dominik Szewczyk
 ---
 
 {: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+This project focused on Sustainable Development Goal 7: "Affordable and Clean Energy." Conducted in collaboration with the SGD Hub at Breda University of Applied Sciences, the research aimed to identify European countries exceeding the global average in renewable energy consumption and to understand their strategies.
 
 **Here is some bold text**
 
