@@ -1,0 +1,52 @@
+---
+layout: post
+title: Tracking and Exploring Global Progress on Sustainable Development Goals
+subtitle: An analysis of renewable energy consumption in Europe
+gh-repo: DominikSzewczyk224180/Projects-2022-2023
+gh-badge: [star, fork, follow]
+tags: [SDGs, Renewable Energy, Data Analysis]
+comments: true
+mathjax: false
+author: Dominik Szewczyk
+---
+
+{: .box-success}
+This project focused on Sustainable Development Goal 7: "Affordable and Clean Energy." Conducted in collaboration with the SGD Hub at Breda University of Applied Sciences, the research aimed to identify European countries exceeding the global average in renewable energy consumption and to understand their strategies.
+
+**Project Duration:** September 2022 - November 2022
+
+## 🌍 Project Overview
+
+The goal was to analyze and track global and country-level progress towards SDGs, particularly focusing on renewable energy consumption in Europe.
+
+## 📊 Data Gathering & Analysis
+
+- **Data Source:** SDGDataBank
+- **Techniques Used:** Exploratory Data Analysis (EDA)
+- **Tools:** Power BI
+
+Using SDGDataBank, data was gathered and analyzed to gain insights into renewable energy consumption. Power BI was employed to visualize findings and create an interactive dashboard.
+
+## 🎉 Dashboard Presentation
+
+The results were presented to students, mentors, and SGD Hub members, receiving positive feedback for its insightful analysis and effective visualization.
+
+## 🌱 Valuable Contributions
+
+This project contributes essential insights into successful renewable energy adoption, aiding global efforts in sustainable development.
+
+## 🔗 Links
+
+- [Power BI Interactive Dashboard](https://github.com/DominikSzewczyk224180/Projects-2022-2023/blob/main/SDG_Renewable_Energy/SDGIndicatorsDashboard_Dominik%20Szewczyk.pbix)
+- [Power BI Dashboard PDF Version](https://github.com/DominikSzewczyk224180/Projects-2022-2023/blob/main/SDG_Renewable_Energy/SDGIndicatorsDashboard_Dominik%20Szewczyk%20PDF.pdf)
+- [Dashboard Presentation Feedback](https://github.com/DominikSzewczyk224180/Projects-2022-2023/blob/main/SDG_Renewable_Energy/Dashboard%20presenting%20feedback.pdf)
+
+## 🛠 Skills
+
+- Business Understanding
+- GitHub
+- Data Visualization
+- Design Thinking
+- Data Science
+- Data Analysis
+- Microsoft Power BI
