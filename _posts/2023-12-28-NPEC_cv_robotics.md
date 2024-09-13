@@ -27,7 +27,7 @@ Computer vision was central to this project. I applied various CV techniques to 
 
 In the robotics component, I simulated the development of a precision liquid handling robot. Using a PID controller, I programmed the robot to dispense liquids accurately. The integration of computer vision with robotics enabled precise liquid delivery to targeted root tips. This synergy demonstrated the effective combination of vision-based analysis with robotic automation, enhancing the precision of plant inoculation processes.
 
-![Robot Liquid Dispensing]({{ '/assets/img/robot.gif' | relative_url }})
+![Robot Liquid Dispensing]({{ '/assets/img/robot.png' | relative_url }})
 
 
 ## 🚀 Reinforcement Learning
