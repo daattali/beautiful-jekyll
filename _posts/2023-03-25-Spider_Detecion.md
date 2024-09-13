@@ -8,6 +8,7 @@ tags: [Spider Detector, AI, Convolutional Neural Networks]
 comments: true
 mathjax: false
 author: Dominik Szewczyk
+categories: projects
 ---
 
 {: .box-success}

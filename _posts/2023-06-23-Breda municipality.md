@@ -8,6 +8,7 @@ tags: [Breda Municipality, Safety, Predictive Modeling]
 comments: true
 mathjax: false
 author: Dominik Szewczyk
+categories: projects
 ---
 
 {: .box-success}

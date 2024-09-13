@@ -8,6 +8,7 @@ tags: [NLP, Machine Learning, Emotion Classification, Transformer Models]
 comments: true
 mathjax: false
 author: Dominik Szewczyk
+categories: projects
 ---
 
 {: .box-success}

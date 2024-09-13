@@ -8,6 +8,7 @@ tags: [AI, Facility Management, Data Analysis]
 comments: true
 mathjax: false
 author: Dominik Szewczyk
+categories: projects
 ---
 
 {: .box-success}

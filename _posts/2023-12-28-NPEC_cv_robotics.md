@@ -8,6 +8,7 @@ tags: [AI, Computer Vision, Robotics, Reinforcement Learning]
 comments: true
 mathjax: false
 author: Dominik Szewczyk
+categories: projects
 ---
 
 {: .box-success}
