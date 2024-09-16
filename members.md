@@ -60,6 +60,9 @@ members:
           - name: Kyutae Sim (MSR)
             photo_url: /img/members/kyutae.png
             web_url: https://ktsim01.github.io/
+          - name: Divyam Goel (MSR)
+            photo_url: /img/members/divyam.jpg
+            web_url: https://dv-fenix.github.io/
       - name: Undergraduate Students
         full: true
         list:
