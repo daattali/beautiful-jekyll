@@ -2,7 +2,7 @@
 layout: post  
 title: Choosing the Right Programming Language for Your Project  
 subtitle: A Guide to Picking the Best Language for Your Development Needs  
-cover-img: "assets/img/hello_world.jpg"  
+cover-img: "assets/img/programming.jpg"  
 date: 2024-09-16 23:00:00 IST  
 tags: [programming, software development, languages]  
 comments: false  
