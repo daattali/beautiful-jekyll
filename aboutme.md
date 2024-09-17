@@ -15,14 +15,14 @@ subtitle: Welcome to my corner of the internet! I’m Harish Sarma, a passionate
 
 ## 💻 My Interests:
 
-### Tech 👨🏻‍💻
-- **📱 iOS Automations & Shortcuts**: _I’m fascinated by how technology can simplify our lives_.
-- **📚 Continuous Learning**: _I’m a firm believer in the power of learning and coding to shape the future_.
+- ### Tech 👨🏻‍💻
+  - **📱 iOS Automations & Shortcuts**: _I’m fascinated by how technology can simplify our lives_.
+  - **📚 Continuous Learning**: _I’m a firm believer in the power of learning and coding to shape the future_.
 
-### Fun & Games 🎮
-- **💥 Marvel Comics**: _Big fan of Marvel’s superheroes and their epic stories_.
-- **🎬 Movies**: _I enjoy exploring different genres and stories through film_.
-- **🎮 Video Gaming**: _Gaming is a great way to unwind and challenge myself_.
+- ### Fun & Games 🎮
+  - **💥 Marvel Comics**: _Big fan of Marvel’s superheroes and their epic stories_.
+  - **🎬 Movies**: _I enjoy exploring different genres and stories through film_.
+  - **🎮 Video Gaming**: _Gaming is a great way to unwind and challenge myself_.
 
 ## 🛠️ My Career
 
