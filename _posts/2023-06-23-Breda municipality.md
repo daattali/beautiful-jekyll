@@ -5,6 +5,7 @@ subtitle: Improving Neighborhood Safety with Data-Driven Insights
 gh-repo: DominikSzewczyk224180/Projects-2022-2023
 gh-badge: [star, fork, follow]
 tags: [Breda Municipality, Safety, Predictive Modeling]
+thumbnail-img: /assets/img/dashboard_snapshot4.png
 comments: true
 mathjax: false
 author: Dominik Szewczyk

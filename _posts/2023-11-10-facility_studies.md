@@ -5,6 +5,7 @@ subtitle: A Comprehensive Study at Breda University of Applied Sciences
 gh-repo: DominikSzewczyk224180/Projects-2022-2023
 gh-badge: [star, fork, follow]
 tags: [AI, Facility Management, Data Analysis]
+thumbnail-img: /assets/img/dashboard_snapshot7.png
 comments: true
 mathjax: false
 author: Dominik Szewczyk

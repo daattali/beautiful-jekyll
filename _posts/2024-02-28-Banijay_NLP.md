@@ -5,6 +5,7 @@ subtitle: A Collaborative Project with Banijay
 gh-repo: DominikSzewczyk224180/Projects-2022-2023
 gh-badge: [star, fork, follow]
 tags: [NLP, Machine Learning, Emotion Classification, Transformer Models]
+thumbnail-img: /assets/img/banijay_presentation1.png
 comments: true
 mathjax: false
 author: Dominik Szewczyk
