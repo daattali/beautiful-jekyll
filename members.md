@@ -24,6 +24,9 @@ members:
           - name: Ying Yuan
             photo_url: /img/members/yingyuan.jpg
             web_url: https://yingyuan0414.github.io/
+          - name: Amber Li
+            photo_url: https://www.ri.cmu.edu/app/uploads/2024/08/amberli2_0319-300x450.jpg
+            web_url: https://amburger66.github.io/
       - name: Masters students
         full: true
         list:
