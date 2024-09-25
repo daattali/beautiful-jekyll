@@ -84,11 +84,11 @@ members:
         list:
           - name: Wenxuan Zhou -> Research Scientist at Meta
             web_url: https://wenxuan-zhou.github.io/
-          - name: Thomas Weng -> Boston Dynamics AI Institute
+          - name: Thomas Weng -> Boston Dynamics AI Institute -> AI Institute
             web_url: https://www.thomasweng.com
-          - name: Brian Okorn (co-advised with Martial Hebert) -> Boston Dynamics AI Institute
+          - name: Brian Okorn (co-advised with Martial Hebert) -> Boston Dynamics AI Institute -> AI Institute
             web_url: http://brianokorn.com/
-          - name: Xingyu Lin -> Post-doc with Pieter Abbeel at UC Berkeley
+          - name: Xingyu Lin -> Post-doc with Pieter Abbeel at UC Berkeley -> OpenAI
             web_url: https://xingyu-lin.github.io/
           - name: Siddharth Ancha (co-advised with Srinivasa Narasimhan) -> Post-doc with Nick Roy at MIT
             web_url: https://siddancha.github.io/
