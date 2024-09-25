@@ -30,9 +30,6 @@ members:
       - name: Masters students
         full: true
         list:
-          - name: Pranay Gupta (MSR)
-            photo_url: /img/members/pranaygupta.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/pranay-gupta/
           - name: Octavian Donca (MSR)
             photo_url: https://www.ri.cmu.edu/app/uploads/2023/09/odonca-1-300x450.jpg
             web_url: https://www.ri.cmu.edu/ri-people/octavian-donca/
@@ -98,6 +95,8 @@ members:
       - name: Master's students (Research Master's)
         full: False
         list:
+          - name: Pranay Gupta (MSR) -> CMU PhD
+            web_url: https://pranaygupta36.github.io/
           - name: Zhanyi Sun (MSR) -> Stanford PhD
             web_url: https://www.ri.cmu.edu/ri-people/zhanyi-sun/
           - name: Bowen Jiang (MSR) -> UT Austin PhD
