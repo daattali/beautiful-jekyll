@@ -72,12 +72,6 @@
   </div>
 
   <!-- Load script to handle comment form submission -->
-  <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-  <script>
-    if (typeof jQuery == 'undefined') {
-      document.write('<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></scr' + 'ipt>');
-    }
-  </script>
   <script src="{{ "/assets/js/staticman.js" | relative_url }}"></script>
 </div>
 {% endif %}

@@ -2,18 +2,19 @@
 layout: null
 ---
 
-(function ($) {
-  $('#new_comment').submit(function () {
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('new_comment').addEventListener('submit', function(event) {
+    event.preventDefault();
     const form = this;
 
-    $(form).addClass('disabled');
+    form.classList.add('disabled');
 
     {% assign sm = site.staticman -%}
     const endpoint = '{{ sm.endpoint }}';
     const repository = '{{ sm.repository }}';
     const branch = '{{ sm.branch }}';
     const url = endpoint + repository + '/' + branch + '/comments';
-    const data = $(this).serialize();
+    const data = new URLSearchParams(new FormData(form)).toString();
 
     const xhr = new XMLHttpRequest();
     xhr.open("POST", url);
@@ -31,35 +32,36 @@ layout: null
     };
 
     function formSubmitted() {
-      $('#comment-form-submit').addClass('d-none');
-      $('#comment-form-submitted').removeClass('d-none');
-      $('.page__comments-form .js-notice').removeClass('alert-danger');
-      $('.page__comments-form .js-notice').addClass('alert-success');
+      document.getElementById('comment-form-submit').classList.add('d-none');
+      document.getElementById('comment-form-submitted').classList.remove('d-none');
+      const notice = document.querySelector('.page__comments-form .js-notice');
+      notice.classList.remove('alert-danger');
+      notice.classList.add('alert-success');
       showAlert('success');
     }
 
     function formError() {
-      $('#comment-form-submitted').addClass('d-none');
-      $('#comment-form-submit').removeClass('d-none');
-      $('.page__comments-form .js-notice').removeClass('alert-success');
-      $('.page__comments-form .js-notice').addClass('alert-danger');
+      document.getElementById('comment-form-submitted').classList.add('d-none');
+      document.getElementById('comment-form-submit').classList.remove('d-none');
+      const notice = document.querySelector('.page__comments-form .js-notice');
+      notice.classList.remove('alert-success');
+      notice.classList.add('alert-danger');
       showAlert('failure');
-      $(form).removeClass('disabled');
+      form.classList.remove('disabled');
     }
 
     xhr.send(data);
-
-    return false;
   });
 
   function showAlert(message) {
-    $('.page__comments-form .js-notice').removeClass('d-none');
-    if (message == 'success') {
-      $('.page__comments-form .js-notice-text-success').removeClass('d-none');
-      $('.page__comments-form .js-notice-text-failure').addClass('d-none');
+    const notice = document.querySelector('.page__comments-form .js-notice');
+    notice.classList.remove('d-none');
+    if (message === 'success') {
+      document.querySelector('.page__comments-form .js-notice-text-success').classList.remove('d-none');
+      document.querySelector('.page__comments-form .js-notice-text-failure').classList.add('d-none');
     } else {
-      $('.page__comments-form .js-notice-text-success').addClass('d-none');
-      $('.page__comments-form .js-notice-text-failure').removeClass('d-none');
+      document.querySelector('.page__comments-form .js-notice-text-success').classList.add('d-none');
+      document.querySelector('.page__comments-form .js-notice-text-failure').classList.remove('d-none');
     }
   }
-})(jQuery);
+});

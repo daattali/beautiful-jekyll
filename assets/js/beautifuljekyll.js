@@ -2,27 +2,29 @@
 
 let BeautifulJekyllJS = {
 
-  bigImgEl : null,
-  numImgs : null,
+  bigImgEl: null,
+  numImgs: null,
 
-  init : function() {
+  init: function() {
     setTimeout(BeautifulJekyllJS.initNavbar, 10);
 
+    let navbar = document.querySelector(".navbar");
+
     // Shorten the navbar after scrolling a little bit down
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar").addClass("top-nav-short");
-        } else {
-            $(".navbar").removeClass("top-nav-short");
-        }
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        navbar.classList.add("top-nav-short");
+      } else {
+        navbar.classList.remove("top-nav-short");
+      }
     });
 
     // On mobile, hide the avatar when expanding the navbar menu
-    $('#main-navbar').on('show.bs.collapse', function () {
-      $(".navbar").addClass("top-nav-expanded");
+    document.getElementById('main-navbar').addEventListener('show.bs.collapse', function() {
+      navbar.classList.add("top-nav-expanded");
     });
-    $('#main-navbar').on('hidden.bs.collapse', function () {
-      $(".navbar").removeClass("top-nav-expanded");
+    document.getElementById('main-navbar').addEventListener('hidden.bs.collapse', function() {
+      navbar.classList.remove("top-nav-expanded");
     });
 
     // show the big header image
@@ -31,26 +33,30 @@ let BeautifulJekyllJS = {
     BeautifulJekyllJS.initSearch();
   },
 
-  initNavbar : function() {
+  initNavbar: function() {
     // Set the navbar-dark/light class based on its background color
-    const rgb = $('.navbar').css("background-color").replace(/[^\d,]/g,'').split(",");
+    const rgb = getComputedStyle(document.querySelector('.navbar')).backgroundColor.replace(/[^\d,]/g, '').split(",");
     const brightness = Math.round(( // http://www.w3.org/TR/AERT#color-contrast
       parseInt(rgb[0]) * 299 +
       parseInt(rgb[1]) * 587 +
       parseInt(rgb[2]) * 114
     ) / 1000);
+
+    let navbar = document.querySelector(".navbar");
     if (brightness <= 125) {
-      $(".navbar").removeClass("navbar-light").addClass("navbar-dark");
+      navbar.classList.remove("navbar-light");
+      navbar.classList.add("navbar-dark");
     } else {
-      $(".navbar").removeClass("navbar-dark").addClass("navbar-light");
+      navbar.classList.remove("navbar-dark");
+      navbar.classList.add("navbar-light");
     }
   },
 
-  initImgs : function() {
-    // If the page was large images to randomly select from, choose an image
-    if ($("#header-big-imgs").length > 0) {
-      BeautifulJekyllJS.bigImgEl = $("#header-big-imgs");
-      BeautifulJekyllJS.numImgs = BeautifulJekyllJS.bigImgEl.attr("data-num-img");
+  initImgs: function() {
+    // If the page has large images to randomly select from, choose an image
+    if (document.getElementById("header-big-imgs")) {
+      BeautifulJekyllJS.bigImgEl = document.getElementById("header-big-imgs");
+      BeautifulJekyllJS.numImgs = BeautifulJekyllJS.bigImgEl.getAttribute("data-num-img");
 
       // 2fc73a3a967e97599c9763d05e564189
       // set an initial image
@@ -69,19 +75,19 @@ let BeautifulJekyllJS = {
         prefetchImg.src = src;
         // if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
 
-        setTimeout(function(){
-          const img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
-          $(".intro-header.big-img").prepend(img);
-          setTimeout(function(){ img.css("opacity", "1"); }, 50);
+        setTimeout(function() {
+          const img = document.createElement("div");
+          img.className = "big-img-transition";
+          img.style.backgroundImage = 'url(' + src + ')';
+          document.querySelector(".intro-header.big-img").prepend(img);
+          setTimeout(function() { img.style.opacity = "1"; }, 50);
 
           // after the animation of fading in the new image is done, prefetch the next one
-          //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
           setTimeout(function() {
             BeautifulJekyllJS.setImg(src, desc);
             img.remove();
             getNextImg();
           }, 1000);
-          //});
         }, 6000);
       };
 
@@ -92,46 +98,51 @@ let BeautifulJekyllJS = {
     }
   },
 
-  getImgInfo : function() {
+  getImgInfo: function() {
     const randNum = Math.floor((Math.random() * BeautifulJekyllJS.numImgs) + 1);
-    const src = BeautifulJekyllJS.bigImgEl.attr("data-img-src-" + randNum);
-    const desc = BeautifulJekyllJS.bigImgEl.attr("data-img-desc-" + randNum);
+    const src = BeautifulJekyllJS.bigImgEl.getAttribute("data-img-src-" + randNum);
+    const desc = BeautifulJekyllJS.bigImgEl.getAttribute("data-img-desc-" + randNum);
 
     return {
-      src : src,
-      desc : desc
+      src: src,
+      desc: desc
     }
   },
 
-  setImg : function(src, desc) {
-    $(".intro-header.big-img").css("background-image", 'url(' + src + ')');
+  setImg: function(src, desc) {
+    document.querySelector(".intro-header.big-img").style.backgroundImage = 'url(' + src + ')';
+
+    let imgDesc = document.querySelector(".img-desc");
     if (typeof desc !== typeof undefined && desc !== false) {
-      $(".img-desc").text(desc).show();
+      imgDesc.textContent = desc;
+      imgDesc.style.display = "block";
     } else {
-      $(".img-desc").hide();
+      imgDesc.style.display = "none";
     }
   },
 
-  initSearch : function() {
+  initSearch: function() {
     if (!document.getElementById("beautifuljekyll-search-overlay")) {
       return;
     }
 
-    $("#nav-search-link").click(function(e) {
+    document.getElementById("nav-search-link").addEventListener('click', function(e) {
       e.preventDefault();
-      $("#beautifuljekyll-search-overlay").show();
-      $("#nav-search-input").focus().select();
-      $("body").addClass("overflow-hidden");
+      document.getElementById("beautifuljekyll-search-overlay").style.display = "block";
+      const searchInput = document.getElementById("nav-search-input");
+      searchInput.focus();
+      searchInput.select();
+      document.body.classList.add("overflow-hidden");
     });
-    $("#nav-search-exit").click(function(e) {
+    document.getElementById("nav-search-exit").addEventListener('click', function(e) {
       e.preventDefault();
-      $("#beautifuljekyll-search-overlay").hide();
-      $("body").removeClass("overflow-hidden");
+      document.getElementById("beautifuljekyll-search-overlay").style.display = "none";
+      document.body.classList.remove("overflow-hidden");
     });
-    $(document).on('keyup', function(e) {
-      if (e.key == "Escape") {
-        $("#beautifuljekyll-search-overlay").hide();
-        $("body").removeClass("overflow-hidden");
+    document.addEventListener('keyup', function(e) {
+      if (e.key === "Escape") {
+        document.getElementById("beautifuljekyll-search-overlay").style.display = "none";
+        document.body.classList.remove("overflow-hidden");
       }
     });
   }
