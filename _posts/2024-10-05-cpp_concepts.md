@@ -149,4 +149,3 @@ Understanding and effectively using pointers, classes, and smart pointers is cri
 Feel free to share your thoughts or questions about these concepts in the comments below!
 
 <p>Want to discuss more C++ topics? Join the conversation here 👉🏻 <a href="https://github.com/harishsarmav/harishsarma_v/discussions" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a></p>
-```
