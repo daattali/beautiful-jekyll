@@ -15,6 +15,8 @@ title: harishsarma_v
 # Your name to show in the footer
 author: Harish sarma
 
+baseurl: "https://harishsarmav.github.io/" # or "/your_base_url" if you have a subdirectory
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -95,7 +97,7 @@ social-network-links:
 # Select which social network share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
+  facebook: false
   linkedin: true
   reddit: true
   whatsapp: true
@@ -277,7 +279,7 @@ timezone: "Asia/Kolkota"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-#paginate: 5
+paginate: 5
 
 kramdown:
   input: GFM
@@ -295,7 +297,7 @@ defaults:
     values:
       layout: "default"
       show-share: true
-      #comments: true  # add comments to all blog posts
+      comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
 
   -
@@ -317,6 +319,7 @@ exclude:
   - docs/
 
 plugins:
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
 # Beautiful Jekyll / Dean Attali
