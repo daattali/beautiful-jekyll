@@ -114,7 +114,7 @@ excerpt_length: 50
 feed_show_excerpt: false
 
 # Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: false
+feed_show_tags: true
 
 # Add a search button to the navbar
 post_search: true
