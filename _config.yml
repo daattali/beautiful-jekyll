@@ -61,7 +61,7 @@ social-network-links:
   #whatsapp: 15551212
 #  medium: yourname
   reddit: Relevant-Plantain615
-#  linkedin: daattali
+  linkedin: Harish sarma Velavalapalli
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -95,10 +95,11 @@ social-network-links:
 # Select which social network share links to show in posts
 share-links-active:
   twitter: true
-  facebook: false
-  linkedin: false
+  facebook: true
+  linkedin: true
   reddit: true
-  vk: false
+  whatsapp: true
+
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
