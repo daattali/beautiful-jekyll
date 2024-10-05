@@ -15,7 +15,7 @@ title: harishsarma_v
 author: Harish Sarma
 
 # Base URL for your website
-baseurl: "" # or "/your_base_url" if you have a subdirectory
+#baseurl: "" # or "/your_base_url" if you have a subdirectory
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -63,6 +63,13 @@ share-links-active:
   reddit: true
   whatsapp: true
 
+# How to display the link to your website in the footer
+# Remove this if you don't want a link in the footer
+#url-pretty: "MyWebsite.com"
+# Add the website title to the title of every page
+title-on-all-pages: true
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+# Excerpt settings
 # Excerpt settings
 excerpt_length: 50
 feed_show_excerpt: false
@@ -74,6 +81,11 @@ post_search: true
 # Add a button in the footer to edit the current page
 edit_page_button: true
 
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: false
+# The keywords to associate with your website, for SEO purposes
 # Keywords for SEO
 #keywords: "my,list,of,keywords"
 
@@ -132,13 +144,14 @@ date_format: "%B %-d, %Y"
 # Timezone setting
 timezone: "Asia/Kolkata"
 
-# Markdown settings
-markdown: kramdown
-highlighter: rouge
+
 
 # Default permalink structure
 permalink: /:year-:month-:day-:title/
 paginate: 5
+
+kramdown:
+  input: GFM
 
 # Default YAML values
 collections:
@@ -176,6 +189,5 @@ exclude:
 
 # Jekyll plugins
 plugins:
-  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
