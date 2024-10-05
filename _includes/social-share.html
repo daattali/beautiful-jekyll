@@ -50,6 +50,15 @@
     </a>
   {% endif %}
 
+  <!-- Add WhatsApp sharing -->
+  {% if site.share-links-active.whatsapp %}
+    <a href="https://api.whatsapp.com/send?text={{ page.title | strip_html | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-whatsapp" title="Share on WhatsApp">
+      <span class="fab fa-fw fa-whatsapp" aria-hidden="true"></span>
+      <span class="sr-only">WhatsApp</span>
+    </a>
+  {% endif %}
+
 </section>
 
 {% endif %}
