@@ -14,8 +14,11 @@ title: harishsarma_v
 # Your name to show in the footer
 author: Harish Sarma
 
+<<<<<<< HEAD
 # Base URL for your website
 #baseurl: "" # or "/your_base_url" if you have a subdirectory
+=======
+>>>>>>> 9bd632acc79ef8af6a2132072a4fdbc9e4d536df
 
 ###############################################
 # --- List of links in the navigation bar --- #
