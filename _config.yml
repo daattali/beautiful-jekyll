@@ -144,7 +144,7 @@ timezone: "Asia/Kolkata"
 
 # Default permalink structure
 permalink: /blog/:title/
-paginate: 5
+paginate: 10
 paginate_path: "/page:num/"
 
 
