@@ -67,10 +67,9 @@ share-links-active:
 title-on-all-pages: true
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 # Excerpt settings
-# Excerpt settings
 excerpt_length: 50
 feed_show_excerpt: false
-feed_show_tags: true
+feed_show_tags: false
 
 # Add a search button to the navbar
 post_search: true
@@ -144,8 +143,10 @@ timezone: "Asia/Kolkata"
 
 
 # Default permalink structure
-permalink: /:year-:month-:day-:title/
+permalink: /blog/:title/
 paginate: 5
+paginate_path: "/page:num/"
+
 
 kramdown:
   input: GFM
