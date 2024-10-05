@@ -5,7 +5,7 @@ subtitle: Simplify Your Life with Powerful Automations
 cover-img: "assets/img/shortcut.jpg"
 date:   2024-08-03 12:40:00 IST
 tags: [ios shortcuts]
-comments: false
+comments: true
 author: Harish sarma
 readtime: true
 ---
