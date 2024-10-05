@@ -14,6 +14,8 @@ title: harishsarma_v
 # Your name to show in the footer
 author: Harish Sarma V
 
+baseurl: ""
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
