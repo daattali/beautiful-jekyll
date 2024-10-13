@@ -22,8 +22,8 @@ author: Some Person
 navbar-links:
   About Me: "aboutme" 
 #Resources: "Category"
-Projects: "Projects"
-Blog: "Blog"
+Projects: "projects"
+Blog: "blog"
  Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
