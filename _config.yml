@@ -21,13 +21,14 @@ author: Some Person
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
+ 
+#Resources: "Category"
+Projects: "Projects"
+Blog: "Blog"
+ Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
   # Author's home: "https://deanattali.com"
-Resources: "Category"
-PROJECT: "Project"
-BLOG: "Blog"
 
 
 ################
