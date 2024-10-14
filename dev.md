@@ -23,7 +23,6 @@ subtitle: A lot of lines...
 
 - ### [Nimbus2000](https://nimbus2000.vercel.app/) - Nimbus 2000 is an project aiming to deliver more accurate price predictions for the cryptocurrency market. It leverages the OpenBB SDK to provide users with a feature-rich dashboard displaying results from various prediction algorithms, including linear regression, TCN, N-Beats, NHITS, ARIMA and more .
 
-
 ## ✔️ Web3 Projects
 
 - ### [Altair](https://app.nali.finance/altair-funds) - altair is a decentralized fund manager that allows you to create and manage your own funds with a few clicks
