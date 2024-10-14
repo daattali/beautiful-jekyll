@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Always An Adventure - AAA
+title: A bit of Everything-share
 
 # Your name to show in the footer
 author: Zhaoyu(Jackie) Shi
@@ -21,11 +21,13 @@ author: Zhaoyu(Jackie) Shi
 
 navbar-links:
   Me: "aboutme"
+  Scientific: "https://github.com/Zhaoyu-Shi829/ML-on-Drag-Prediction"
+    - Research: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
   Media:
     - Photo: "https://beautifuljekyll.com"
-      - Behind the photo: ""
+      - Behind the photo: "https://github.com/Zhaoyu-Shi829/ML-on-Drag-Prediction"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Scientific: "https://github.com/Zhaoyu-Shi829/ML-on-Drag-Prediction"
+  
   
 
 
