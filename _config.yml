@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Waldo & Milo
+title: Always An Adventure - AAA
 
 # Your name to show in the footer
 author: Zhaoyu(Jackie) Shi
@@ -22,7 +22,8 @@ author: Zhaoyu(Jackie) Shi
 navbar-links:
   Me: "aboutme"
   Media:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Photo: "https://beautifuljekyll.com"
+      - Behind the photo: ""
     - Learn markdown: "https://www.markdowntutorial.com/"
   Scientific: "https://github.com/Zhaoyu-Shi829/ML-on-Drag-Prediction"
   
