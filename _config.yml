@@ -20,11 +20,13 @@ author: Zhaoyu(Jackie) Shi
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
+  Me: "aboutme"
+  Media:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Research project: "https://github.com/Zhaoyu-Shi829/ML-on-Drag-Prediction"
+  Scientific: "https://github.com/Zhaoyu-Shi829/ML-on-Drag-Prediction"
+  
+
 
 ################
 # --- Logo --- #
