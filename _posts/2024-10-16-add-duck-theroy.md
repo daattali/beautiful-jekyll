@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Duck Theroy
+title: Add Duck Theory
 tags: [Tips, Tricks, Funny, Story]
 comments: true
 date: 2024-10-16
