@@ -27,7 +27,7 @@ navbar-links:
   Blogs: "blogs"
   Projects: "projects"
   Job History: "jobhistory"
-  Homepage: "/"
+  Tools: "https://by-shafi.netlify.app"
 
 ################
 # --- Logo --- #
