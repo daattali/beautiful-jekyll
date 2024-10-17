@@ -21,10 +21,10 @@ author: LABMUSAS | IHAC | UFBA
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Links:
+    - LABMUSAS: "https://labmusas.wordpress.com"
+    - IHAC: "https://ihac.ufba.br/"
+  Author's home: "https://labmusas.wordpress.com"
 
 ################
 # --- Logo --- #
