@@ -39,12 +39,15 @@ members:
           - name: Kallol Saha (MSR)
             photo_url: /img/members/kallol.jpg
             web_url: https://kallol-saha.github.io/
-          - name: Yishu Li (MSR)
-            photo_url: /img/members/yishu.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/yishu-li/
           - name: Sriram Krishna (MSR)
             photo_url: https://www.ri.cmu.edu/app/uploads/2024/08/sskrishn_0162-300x450.jpg
             web_url: https://sriramsk1999.github.io/
+          - name: Yishu Li (MSR)
+            photo_url: /img/members/yishu.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/yishu-li/
+          - name: Alexis Hao (MSR)
+            photo_url: /img/members/alexis.jpg
+            web_url: hhttps://www.ri.cmu.edu/ri-people/vivian-hao/
           - name: Lifan Yu (MSCV)
             photo_url: /img/members/lifanyu.jpg
             web_url: https://www.ri.cmu.edu/ri-people/lifan-yu/
