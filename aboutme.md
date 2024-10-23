@@ -25,6 +25,9 @@ Recently, I have mastered the intricacies of MLOps, particularly within cloud en
 ### Data Analysis & Engineering
 Data analysis has been at the core of all my projects. I’ve honed my skills in Python, leveraging tools like NumPy, Pandas, and Matplotlib to analyze datasets and extract meaningful insights. I’ve also used R for academic surveys and SQL for database querying. I’m well-versed in creating interactive dashboards, such as the Power BI dashboard that tracks country progress toward Sustainable Development Goals (SDGs). Following best practices in Exploratory Data Analysis (EDA), I ensure my analyses are thorough, reliable, and easy to communicate through clear visualizations.
 
+### Natural Language Processing (NLP)
+I have developed expertise in NLP through projects involving advanced text processing and emotion classification. My skills include preprocessing techniques such as text cleaning, tokenization, stemming, and the use of word embeddings like TF-IDF and custom models. I am experienced with transformer models like BERT, which I have fine-tuned for tasks such as emotion detection and sentiment analysis. Additionally, I have implemented various NLP models, including Naïve Bayes, Logistic Regression, HMM, CRF, RNN, and LSTM, for text classification tasks. My proficiency extends to using platforms like Hugging Face for working with large language models to optimize NLP workflows.
+
 ---
 
 ## Soft Skills
