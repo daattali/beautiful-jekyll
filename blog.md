@@ -36,6 +36,6 @@ true
 
 ### Contact
 
-* Email : bylhw1234@gmail.com
-* Git : https://github.com/ihyunu
-* Blog : https://ihyunu.github.io/
+* Email : sjpark.free@gmail.com
+* Git : https://github.com/sjpark2free
+* Blog : https://sjpark2free.github.io/
