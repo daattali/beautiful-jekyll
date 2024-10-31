@@ -33,10 +33,22 @@
   video_embed: null
   award: <award>Spotlight Presentation</award> 
 
-- authors: Eric Cai, Octavian Donca, Ben Eisner, David Held;
+- abs: "The task of \"relative placement\" is to predict the placement of one object in relation to another, e.g. placing a mug onto a mug rack. Through explicit object-centric geometric reasoning, recent methods for relative placement have made tremendous progress towards data-efficient learning for robot manipulation while generalizing to unseen task variations. However, they have yet to represent deformable transformations, despite the ubiquity of non-rigid bodies in real world settings. As a first step towards bridging this gap, we propose \"cross-displacement\" - an extension of the principles of relative placement to geometric relationships between deformable objects - and present a novel vision-based method to learn cross-displacement through dense diffusion. To this end, we demonstrate our method's ability to generalize to unseen object instances, out-of-distribution scene configurations, and multimodal goals on multiple highly deformable tasks (both in simulation and in the real world) beyond the scope of prior works."
+  authors: Eric Cai, Octavian Donca, Ben Eisner, David Held
+  bib: >
+    @inproceedings{cai2024tax3d,
+      title={Non-rigid Relative Placement through 3D Dense Diffusion},
+      author={Cai, Eric and Donca, Octavian and Eisner, Ben and Held, David},
+      booktitle={Conference on Robot Learning (CoRL)},
+      year={2024}
+    }
+  site: https://sites.google.com/view/tax3d-corl-2024
   title: "Non-rigid Relative Placement through 3D Dense Diffusion"
   venue: "Conference on Robot Learning (CoRL), 2024"
-  img: ''
+  img: '../pics/corl2024_tax3d.gif'
+  short_id: cai2024tax3d
+  links:
+      '[arXiv]': https://arxiv.org/abs/2410.19247
 
 - authors: Yishu Li*, Wen Hui Leng*, Yiming Fang*, Ben Eisner, David Held;
   title: "FlowBotHD: History-Aware Diffuser Handling Ambiguities in Articulated Objects Manipulation"
