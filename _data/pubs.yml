@@ -65,6 +65,7 @@
   short_id: liflowbothd
   links:
       '[arXiv]': https://arxiv.org/abs/2410.07078
+      '[Code]': https://github.com/liy1shu/FlowBotHD/
 
 - authors: Abhijat Biswas, Pranay Gupta, Shreeya Khurana, David Held, Henny Admoni;
   title: "Modeling Drivers' Situational Awareness from Eye Gaze for Driving Assistance"
