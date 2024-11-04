@@ -21,12 +21,13 @@ author: Md Abdullahil Shafi
 
 navbar-links:
   About Me: "aboutme"
+  Blogs: "blogs"
   Projects: "projects"
   Job History: "jobhistory"
   # Resources:
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
     # - Learn markdown: "https://www.markdowntutorial.com/"
-  Homepage: "/"
+  Tools: "https://tools.shafi.me"
 
 ################
 # --- Logo --- #
@@ -103,6 +104,9 @@ share-links-active:
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "Md Abdullahil Shafi"
+
+# Add the website title to the title of every page
+title-on-all-pages: true
 
 # Add the website title to the title of every page
 title-on-all-pages: true
@@ -304,4 +308,5 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
-remote_theme: pages-themes/hacker@v0.2.0
+# remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/merlot@v0.2.0

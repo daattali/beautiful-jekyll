@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jest Error Parser with Diff</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .output-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .output-container>div {
+            flex: 1;
+            width: 48vw;
+            overflow: auto;
+        }
+
+        .received-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .output {
+            flex: 1;
+            margin: 0 10px;
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        .diff-container {
+            display: none;
+        }
+
+        .diff {
+            background-color: #ffeb3b;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsondiffpatch@0.6.0/lib/formatters/styles/html.min.css">
+</head>
+
+<body>
+
+    <h1>Jest Error Parser</h1>
+    <p>Paste your Jest error string below and click "Parse".</p>
+
+    <textarea id="jestError" placeholder="Paste Jest error string here...">
+        Expected: ObjectContaining {"details": {"answerSheetId": Any<String>, "enrollment": {"accessCode": "123412341234", "assignmentType": "user", "candidateBizId": "user-biz-id", "candidateId": "0cb98f3e-d06e-4c19-83bf-e83f3515d2c0", "deliveryMode": "ONLINE", "id": Any<String>, "minor": false, "organizationId": "fec8ec07-d497-4996-94a9-ca9cb2c19e66", "parentId": null, "reasonableAdjustment": null, "sectionBizIds": null, "sessionId": "801472f9-5b31-4102-a2a9-bde246dafda7"}, "paperId": "0853c3b5-4523-4fe6-9fcf-2ce79f6f9e38"}, "id": Any<String>, "name": "CandidateEnrolledEvent", "occurredAt": Any<Date>}, ObjectContaining {"candidateId": {"DataType": "String", "StringValue": "0cb98f3e-d06e-4c19-83bf-e83f3515d2c0"}, "deliveryMode": {"DataType": "String", "StringValue": "ONLINE"}}
+        Received: {"details": {"answerSheetId": "92822b84-263a-4334-b8f6-18d5162f2efb", "enrollment": {"accessCode": "123412341234", "assignmentType": "user", "candidateBizId": "user-biz-id", "candidateId": "0cb98f3e-d06e-4c19-83bf-e83f3515d2c0", "deliveryMode": "ONLINE", "examParts": [], "id": "c4bdd624-7750-4e59-806c-3ca3510c28f2", "minor": false, "organizationId": "fec8ec07-d497-4996-94a9-ca9cb2c19e66", "parentId": null, "reasonableAdjustment": null, "sectionBizIds": null, "sessionId": "801472f9-5b31-4102-a2a9-bde246dafda7", "testCenterBizId": undefined}, "paperId": "0853c3b5-4523-4fe6-9fcf-2ce79f6f9e38"}, "id": "11b46e2e-5626-4a57-85a3-091140186cfc", "name": "CandidateEnrolledEvent", "occurredAt": 2024-10-15T12:13:42.905Z}, {"candidateId": {"DataType": "String", "StringValue": "0cb98f3e-d06e-4c19-83bf-e83f3515d2c0"}, "canvasVersion": {"DataType": "String", "StringValue": "2"}, "deliveryMode": {"DataType": "String", "StringValue": "ONLINE"}, "provider": {"DataType": "String", "StringValue": "scheduling-service"}, "testCenterBizId": {"DataType": "String", "StringValue": "exists: false"}}
+    </textarea>
+    <button onclick="parseJestError()">Parse</button>
+
+    <h2>Results:</h2>
+    <div class="output-container">
+        <div class="expected-container">
+            <h3>Expected:</h3>
+            <pre id="expectedOutput" class="output"></pre>
+        </div>
+        <div class="received-container">
+            <div class="received-header">
+                <h3>Received:</h3>
+                <button onclick="toggleDiff()">Toggle Diff</button>
+            </div>
+            <pre id="receivedOutput" class="output"></pre>
+        </div>
+    </div>
+
+    <div class="diff-container">
+        <h3>Diff:</h3>
+        <div id="diffOutput" class="diff"></div>
+    </div>
+
+    <script type="module">
+        import JsonDiff from 'https://esm.sh/json-diff@1.0.6';
+        import * as jsondiffpatch from 'https://esm.sh/jsondiffpatch@0.6.0';
+        import * as annotatedFormatter from 'https://esm.sh/jsondiffpatch@0.6.0/formatters/annotated';
+        import * as htmlFormatter from 'https://esm.sh/jsondiffpatch@0.6.0/formatters/html';
+
+        window.settings = {
+            showUnchanged: true
+        };
+
+        window.parseJestError = function parseJestError() {
+            const jestError = document.getElementById('jestError').value;
+            const dateRegex = /(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z)/gu;
+
+            const stringFix = jestError
+                .replace(/Any<String>/gu, `"Any<String>"`)
+                .replace(/Any<Date>/gu, `"Any<Date>"`)
+                .replace(/\n/gu, '')
+                .replace(/Expected: /gu, '')
+                .replace(/ObjectContaining /gu, '')
+                .replace(/ArrayContaining /gu, '')
+                .replace(/undefined/gu, '"undefined"')
+                .replace(dateRegex, '"$1"');
+
+            // Divide into expected and received arrays
+            let [expected, received] = stringFix.split('Received:');
+            expected = `[${expected.trim()}]`;
+            received = `[${received.trim()}]`;
+
+            // Display the results
+            document.getElementById('expectedOutput').textContent = JSON.stringify(JSON.parse(expected, null, 2), null, 2);
+            document.getElementById('receivedOutput').innerHTML = getDiff(expected, received);
+            // document.getElementById('receivedOutput').textContent = JSON.stringify(JSON.parse(received, null, 2), null, 2);
+
+            // Use json-diff to show the differences
+            showDiff(expected, received);
+            // showDiffOld(expected, received);
+        };
+
+        window.toggleDiff = function toggleDiff() {
+            if (window.settings.showUnchanged) {
+                window.settings.showUnchanged = false;
+                htmlFormatter.hideUnchanged();
+            } else {
+                window.settings.showUnchanged = true;
+                htmlFormatter.showUnchanged();
+            }
+        };
+
+        window.getDiff = function getDiff(expected, received) {
+            try {
+                const expectedJson = JSON.parse(expected, null, 2);
+                const receivedJson = JSON.parse(received, null, 2);
+                const diff = jsondiffpatch.diff;
+                const differences = diff(expectedJson, receivedJson);
+
+                return htmlFormatter.format(differences, expectedJson);
+            } catch (error) {
+                return 'Error parsing JSON: ' + error.message;
+            }
+        };
+
+        window.showDiff = function showDiff(expected, received) {
+            try {
+                const expectedJson = JSON.parse(expected, null, 2);
+                const receivedJson = JSON.parse(received, null, 2);
+
+                const diff = jsondiffpatch.diff;
+                const differences = diff(expectedJson, receivedJson);
+                const diffOutput = document.getElementById('diffOutput');
+
+                window.d = {
+                    expectedJson,
+                    receivedJson,
+                    differences
+                };
+
+                // Display the diff result
+                diffOutput.innerHTML = htmlFormatter.format(differences, expectedJson);
+            } catch (error) {
+                document.getElementById('diffOutput').textContent = 'Error parsing JSON: ' + error.message;
+            }
+        };
+
+        window.showDiffOld = function showDiffOld(expected, received) {
+            try {
+                const expectedJson = JSON.parse(expected);
+                const receivedJson = JSON.parse(received);
+                const diff = JsonDiff.diff(expectedJson, receivedJson);
+                const diffOutput = document.getElementById('diffOutput');
+
+                // Display the diff result
+                diffOutput.textContent = JSON.stringify(diff, null, 2) || 'No differences';
+            } catch (error) {
+                document.getElementById('diffOutput').textContent = 'Error parsing JSON: ' + error.message;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

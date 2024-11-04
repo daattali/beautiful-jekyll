@@ -318,7 +318,6 @@
     </a>
   </li>
   {%- endif -%}
-
   {%- if network[0] == "medium" -%}
   <li class="list-inline-item">
     <a href="https://medium.com/@{{ network[1] }}" title="Medium">
@@ -342,7 +341,6 @@
    </a>
   </li>
   {%- endif -%}
-
   {%- if network[0] == "discord" -%}
   {% assign discord_start = network[1] | split: "/" | first -%}
   {% unless discord_start == 'users' or discord_start == 'invite' -%}
@@ -358,7 +356,6 @@
    </a>
   </li>
   {%- endif -%}
-
   {%- if network[0] == "kaggle" -%}
   <li class="list-inline-item">
     <a href="https://www.kaggle.com/{{ network[1] }}" title="Kaggle">
