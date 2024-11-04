@@ -1,5 +1,17 @@
 {% if site.google_analytics %}
 <!-- Google Analytics -->
+{% unless site.gtag %}
+<div id="bj-ganalytics-deprecated-msg" style="position: fixed; background: #b90404; bottom: 0; width: 100%; z-index: 10000; color: #f0f0f0; text-align: center; padding: 0.5rem;">
+  <div title="Close" onclick="$(this).parent().remove()" style="position: absolute; right: 5px; top: 0; font-size: 1.5em; line-height: 1; cursor: pointer;">&times;</div>
+  <div style="max-width: 800px; margin: auto; font-size: 1.1em;">
+    This website is using outdated Google Analytics
+    <details style="font-size: 0.8em;">
+      <summary>More info</summary>
+      As of July 2023, Google's Universal Analytics is going away and being replaced by Google Analytics 4. This website is still using the old Universal Analytics. In order to remove this message, the website owner must remove the <code>google_analytics</code> property in the website's config file, and optionally replace it with the new <code>gtag</code> property.
+    </details>
+  </div>
+</div>
+{% endunless %}
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {

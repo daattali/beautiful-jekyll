@@ -3,27 +3,25 @@ layout: null
 ---
 
 (function ($) {
-  var $comments = $('.js-comments');
-
   $('#new_comment').submit(function () {
-    var form = this;
+    const form = this;
 
     $(form).addClass('disabled');
 
     {% assign sm = site.staticman -%}
-    var endpoint = '{{ sm.endpoint }}';
-    var repository = '{{ sm.repository }}';
-    var branch = '{{ sm.branch }}';
-    let url = endpoint + repository + '/' + branch + '/comments';
-    let data = $(this).serialize();
+    const endpoint = '{{ sm.endpoint }}';
+    const repository = '{{ sm.repository }}';
+    const branch = '{{ sm.branch }}';
+    const url = endpoint + repository + '/' + branch + '/comments';
+    const data = $(this).serialize();
 
-    var xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
     xhr.open("POST", url);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
     xhr.onreadystatechange = function () {
       if(xhr.readyState === XMLHttpRequest.DONE) {
-        var status = xhr.status;
+        const status = xhr.status;
         if (status >= 200 && status < 400) {
           formSubmitted();
         } else {
