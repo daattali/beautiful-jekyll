@@ -2,7 +2,7 @@
 layout: post
 title: Trubleshooting IPv4 Routing
 subtitle: A topic from CCNA.
-cover-img: /assets/img/path.jpg
+cover-img: /assets/img/trubleshooting.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [blogs]
