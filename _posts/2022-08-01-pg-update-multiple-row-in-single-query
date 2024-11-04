@@ -1,0 +1,23 @@
+---
+layout: post
+title: Postgres update multiple rows based on multiple conditions in single query
+subtitle: Points that can help you in code reviewing
+tags: [Tips, Tricks, Postgres, SQL, Quicker]
+comments: true
+---
+
+When you need to update multiple rows based on multiple conditions, ever wonder if that can be done in a single query?
+
+Here is a solution:
+```sql
+update account 
+set currency = nv.currency
+from
+    ( values
+        (12, 'EURO'),
+        (18, 'DOLLAR'),
+        (13, 'Pound')
+    ) as nv (id, currency)
+where account.id = nv.id ;
+```
+Credit goes to [here](https://dba.stackexchange.com/a/246759/81095).
