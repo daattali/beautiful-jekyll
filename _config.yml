@@ -10,21 +10,20 @@
 ############################
 
 # Name of website
-title: My website
+title: Portfolio of Ameen Abdelmutalab
 
 # Your name to show in the footer
-author: Some Person
+author:  "Ameen Abdelmutalab"
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Home: "/"
+  Projects: "/projects"
+  Blogs: "/blogs"
+  Certificates: "/certificates""
 
 ################
 # --- Logo --- #
@@ -32,7 +31,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/ameen5.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
