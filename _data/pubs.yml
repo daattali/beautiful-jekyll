@@ -50,10 +50,22 @@
   links:
       '[arXiv]': https://arxiv.org/abs/2410.19247
 
-- authors: Yishu Li*, Wen Hui Leng*, Yiming Fang*, Ben Eisner, David Held;
+- abs: "We introduce a novel approach for manipulating articulated objects which are visually ambiguous, such doors which are symmetric or which are heavily occluded. These ambiguities can cause uncertainty over different possible articulation modes: for instance, when the articulation direction (e.g. push, pull, slide) or location (e.g. left side, right side) of a fully closed door are uncertain, or when distinguishing features like the plane of the door are occluded due to the viewing angle. To tackle these challenges, we propose a history-aware diffusion network that can model multi-modal distributions over articulation modes for articulated objects; our method further uses observation history to distinguish between modes and make stable predictions under occlusions. Experiments and analysis demonstrate that our method achieves state-of-art performance on articulated object manipulation and dramatically improves performance for articulated objects containing visual ambiguities."
+  authors: Yishu Li*, Wen Hui Leng*, Yiming Fang*, Ben Eisner, David Held;
+  bib: >
+    @inproceedings{liflowbothd,
+      title={FlowBotHD: History-Aware Diffuser Handling Ambiguities in Articulated Objects Manipulation},
+      author={Li, Yishu and Leng, Wen Hui and Fang, Yiming and Eisner, Ben and Held, David},
+      booktitle={8th Annual Conference on Robot Learning}
+    }
+  site: https://flowbothd.github.io/
   title: "FlowBotHD: History-Aware Diffuser Handling Ambiguities in Articulated Objects Manipulation"
   venue: "Conference on Robot Learning (CoRL), 2024"
-  img: ''
+  img: '../pics/corl2024_flowbothd.gif'
+  short_id: liflowbothd
+  links:
+      '[arXiv]': https://arxiv.org/abs/2410.07078
+      '[Code]': https://github.com/liy1shu/FlowBotHD/
 
 - authors: Abhijat Biswas, Pranay Gupta, Shreeya Khurana, David Held, Henny Admoni;
   title: "Modeling Drivers' Situational Awareness from Eye Gaze for Driving Assistance"
