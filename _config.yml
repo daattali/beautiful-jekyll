@@ -20,10 +20,10 @@ author:  "Ameen Abdelmutalab"
 ###############################################
 
 navbar-links:
-  Home: "/Home"
+  Home: "/"
   Projects: "/projects"
   Blogs: "/blogs"
-  Certificates: "/certificates""
+  Certificates: "/certificates"
 
 ################
 # --- Logo --- #
