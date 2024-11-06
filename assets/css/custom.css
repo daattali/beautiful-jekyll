@@ -1,0 +1,15 @@
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar-container img {
+  border-radius: 50%; /* Keeps the circular shape */
+  width: 150px;      /* Adjust width as desired */
+  height: 150px;     /* Adjust height as desired */
+}
+
+.site-title, .site-description {
+  text-align: left;
+}
