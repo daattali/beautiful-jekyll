@@ -1,15 +1,16 @@
-.avatar-container {
+.profile-img-left {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Circular shape */
+  margin-right: 20px; /* Adds spacing between image and text */
+}
+
+.header-section .intro-header .row {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
-.avatar-container img {
-  border-radius: 50%; /* Keeps the circular shape */
-  width: 150px;      /* Adjust width as desired */
-  height: 150px;     /* Adjust height as desired */
+.header-section h1, .header-section h2, .header-section .post-meta {
+  margin: 0; /* Adjusts spacing for alignment */
 }
 
-.site-title, .site-description {
-  text-align: left;
-}
