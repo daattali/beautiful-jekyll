@@ -67,6 +67,7 @@
 /* New Styles for Blog Post Layout with Image on the Right */
 .post-preview {
     display: flex;
+    flex-direction: column; /* Change to column to stack items vertically */
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
