@@ -3,7 +3,6 @@ layout: page
 title: "Blog"
 permalink: /blog/
 ---
-<h1>Blog</h1>
 Welcome to my blog! Here, I share articles, insights, and tutorials on data science and machine learning.
 
 {% for post in site.posts %}
