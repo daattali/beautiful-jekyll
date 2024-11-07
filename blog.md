@@ -7,9 +7,13 @@ Welcome to my blog! Here, I share articles, insights, and tutorials on data scie
 
 {% for post in site.posts %}
 <div class="post-preview">
-  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <h2>
+    <img src="/path/to/your/image.jpg" alt="Post Image" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h2>
   <p>{{ post.excerpt }}</p>
   <small>Posted on {{ post.date | date: "%B %-d, %Y" }} by {{ post.author }}</small>
   <hr>
 </div>
 {% endfor %}
+
