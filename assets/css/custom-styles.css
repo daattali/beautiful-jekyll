@@ -63,3 +63,34 @@
     margin-bottom: 10px;
     text-align: center;
 }
+
+/* New Styles for Blog Post Layout with Image on the Right */
+.post-preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.post-preview div {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.post-preview img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
