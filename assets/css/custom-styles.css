@@ -1,26 +1,26 @@
 /* Main content area styling for wider layout */
 .container-md.medium-post-container {
-    max-width: 900px; /* Increase the width as needed */
-    margin: 0 auto; /* Center-aligns the content */
+    max-width: 900px; /* Set desired width */
+    margin: 0 auto; /* Center-aligns the container */
     padding: 20px; /* Adds space around the content */
 }
 
-/* Override Bootstrap column classes for wider layout */
+/* Restore Bootstrap's default behavior for centering columns */
 @media (min-width: 1200px) {
     .col-xl-8 {
-        max-width: 100%; /* Allow full-width content within the container */
+        /* Remove max-width: 100%; to keep centered layout */
     }
     .offset-xl-2 {
-        margin-left: 0; /* Remove extra offset for full-width content */
+        /* Keep default offset to center the content */
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .col-lg-10 {
-        max-width: 100%; /* Allow full-width content within the container */
+        /* Remove max-width: 100%; to keep centered layout */
     }
     .offset-lg-1 {
-        margin-left: 0; /* Remove extra offset for full-width content */
+        /* Keep default offset to center the content */
     }
 }
 
@@ -34,7 +34,7 @@
 
 /* Center and widen images within post content */
 .medium-post-content img {
-    max-width: 100%; /* Ensures images fit within the container */
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto; /* Center-align images */
@@ -42,67 +42,47 @@
 
 /* Limit the maximum size of the main post image */
 .medium-post-image {
-    max-width: 100%; /* Ensures the image is responsive */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 500px; /* Limits the height to prevent it from being too large */
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
     display: block;
     margin: 20px auto; /* Centers the image */
 }
 
-/* Styling for tags, pagination, and meta */
-.medium-post-meta,
-.blog-tags,
-.pagination {
-    font-size: 16px;
-    color: #666;
-}
-
-.medium-post-title {
-    font-size: 2.5em;
-    line-height: 1.2;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* New Styles for Blog Post Layout */
+/* Additional styles for the post layout */
 .post-preview {
     display: flex;
-    flex-direction: row; /* Keeps image and text side by side */
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-/* Ensures the text content is stacked vertically */
 .post-preview .text-content {
-    flex: 1; /* Makes text content fill available space */
+    flex: 1;
     display: flex;
-    flex-direction: column; /* Stacks title and content vertically */
+    flex-direction: column;
 }
 
-/* Post Title Styling */
 .post-title {
     font-size: 2em;
     margin: 0 0 10px;
     display: block;
 }
 
-/* Padding between content sections */
 .post-preview div {
     flex: 1;
     padding-right: 15px;
 }
 
-/* Image Styling within Post Preview */
 .post-preview img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 8px;
-    margin-left: 15px; /* Space between image and text content */
+    margin-left: 15px;
 }
 
-/* Excerpt Styling for Clamping Text */
 .excerpt {
     display: -webkit-box;
     -webkit-line-clamp: 2;
