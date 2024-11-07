@@ -1,4 +1,3 @@
-@@ -1,19 +1,21 @@
 ---
 layout: page
 title: "Blog"
