@@ -1,0 +1,20 @@
+.post-preview {
+  margin-bottom: 20px;
+}
+
+.post-preview h2 a {
+  color: #333; /* Customize the color */
+  text-decoration: none;
+}
+
+.post-preview h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-preview p {
+  color: #666;
+}
+
+.post-preview small {
+  color: #999;
+}
