@@ -7,8 +7,8 @@ Welcome to my blog! Here, I share articles, insights, and tutorials on data scie
 
 
 {% for post in site.posts %}
-<div class="post-preview" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
-  <div style="flex: 1; padding-right: 15px;">
+<div class="post-preview" style="margin-bottom: 20px;">
+  <div style="padding-right: 15px;">
     <h2 style="margin: 0;">
       <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #333;">{{ post.title }}</a>
     </h2>
@@ -20,4 +20,5 @@ Welcome to my blog! Here, I share articles, insights, and tutorials on data scie
   {% endif %}
 </div>
 <hr>
+
 {% endfor %}
