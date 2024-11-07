@@ -1,72 +1,21 @@
-/* Container for the Medium-style post layout */
-.medium-post-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: "Georgia", serif;
-  line-height: 1.7;
-  color: #333;
+/* Main content area styling */
+.container, .post-container, .content {
+    max-width: 800px; /* Increase the width as needed */
+    margin: 0 auto; /* Center-aligns the content */
+    padding: 20px; /* Adds space around the content */
 }
 
-/* Post Image */
-.medium-post-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+/* Adjust body text for readability */
+body {
+    font-size: 18px; /* Adjust font size for readability */
+    line-height: 1.6; /* Improve line spacing */
+    color: #333; /* Darker color for better readability */
 }
 
-/* Post Title */
-.medium-post-title {
-  font-size: 2.5em;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-  margin: 0 0 10px;
-}
-
-/* Post Meta (Date and Author) */
-.medium-post-meta {
-  font-size: 0.9em;
-  text-align: center;
-  color: #888;
-  margin-bottom: 20px;
-}
-
-/* Post Content */
-.medium-post-content {
-  font-size: 1.1em;
-  color: #4a4a4a;
-  line-height: 1.8;
-}
-
-/* Tags */
-.blog-tags span {
-  font-weight: bold;
-}
-
-.blog-tags a {
-  color: #3498db;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.blog-tags a:hover {
-  text-decoration: underline;
-}
-
-/* Pagination Links */
-.pagination.blog-pager {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
-
-.pagination.blog-pager .page-item a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.pagination.blog-pager .page-item a:hover {
-  text-decoration: underline;
+/* Center and widen images */
+.post-content img {
+    max-width: 100%; /* Ensures images fit within the container */
+    height: auto; /* Maintains image aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center-align images */
 }
