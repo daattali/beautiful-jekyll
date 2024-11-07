@@ -1,0 +1,8 @@
+.post-preview h2 a {
+  color: blue; /* Change this to your preferred shade of blue */
+  text-decoration: none;
+}
+
+.post-preview h2 a:hover {
+  text-decoration: underline;
+}
