@@ -1,5 +1,5 @@
 /* Main content area styling */
-.container, .post-container, .content {
+.container-md.medium-post-container {
     max-width: 800px; /* Increase the width as needed */
     margin: 0 auto; /* Center-aligns the content */
     padding: 20px; /* Adds space around the content */
@@ -13,7 +13,7 @@ body {
 }
 
 /* Center and widen images */
-.post-content img {
+.medium-post-content img {
     max-width: 100%; /* Ensures images fit within the container */
     height: auto; /* Maintains image aspect ratio */
     display: block;
