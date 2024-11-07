@@ -1,4 +1,4 @@
-/* Main content area styling for wider layout */
+ /* Main content area styling for wider layout */
 .container-md.medium-post-container {
     max-width: 900px; /* Increase the width as needed */
     margin: 0 auto; /* Center-aligns the content */
@@ -38,17 +38,6 @@
     height: auto;
     display: block;
     margin: 20px auto; /* Center-align images */
-}
-
-/* Center the main post image */
-.medium-post-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px; /* Optional: Add space above */
-    margin-bottom: 20px; /* Optional: Add space below */
-    max-width: 100%; /* Ensures it stays responsive */
-    height: auto; /* Maintains aspect ratio */
 }
 
 /* Styling for tags, pagination, and meta */
