@@ -71,7 +71,7 @@
   {% endif %}
 
   {% if layout.common-css %}
-    {% for css in layout.common-css %}
+    {% for css in page.common-css or site.common-css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% endif %}
