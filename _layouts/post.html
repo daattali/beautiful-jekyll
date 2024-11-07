@@ -13,11 +13,9 @@ layout: base
         <img src="{{ page.image | relative_url }}" alt="Post Image" class="medium-post-image">
       {% endif %}
 
-      <!-- Post Title -->
-      {#<h1 class="medium-post-title">{{ page.title }}</h1>#}
-      <h1 class="medium-post-title">**TEST TITLE: {{ page.title }}**</h1>
+      <!-- Single Post Title -->
+      <h1 class="medium-post-title">{{ page.title }}</h1>
 
-      
       <!-- Post Meta (Author and Date) -->
       <div class="medium-post-meta">
         <p>By {{ page.author }} | {{ page.date | date: "%B %-d, %Y" }}</p>
@@ -28,42 +26,7 @@ layout: base
         {{ content }}
       </div>
 
-      <!-- Tags (if available) -->
-      {% if page.tags.size > 0 %}
-        <div class="blog-tags">
-          <span>Tags:</span>
-          {% for tag in page.tags %}
-            <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-          {% endfor %}
-        </div>
-      {% endif %}
-
-      <!-- Pagination Links -->
-      <ul class="pagination blog-pager">
-        {% if page.previous.url %}
-          <li class="page-item previous">
-            <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" title="{{page.previous.title | strip_html | xml_escape}}">
-              <i class="fas fa-arrow-left"></i> Previous Post
-            </a>
-          </li>
-        {% endif %}
-        {% if page.next.url %}
-          <li class="page-item next">
-            <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" title="{{page.next.title | strip_html | xml_escape}}">
-              Next Post <i class="fas fa-arrow-right"></i>
-            </a>
-          </li>
-        {% endif %}
-      </ul>
-
-      <!-- Social Share (if available) -->
-      {% if page.social-share %}
-        {% include social-share.html %}
-      {% endif %}
-
-      <!-- Comments (if available) -->
-      {% include comments.html %}
-
+      <!-- Additional Sections (Tags, Pagination, etc.) -->
     </div>
   </div>
 </main>
