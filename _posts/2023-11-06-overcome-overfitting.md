@@ -2,9 +2,11 @@
 layout: post
 title: "How to Overcome Overfitting in Machine Learning"
 date: 2023-11-06
-author: Ameen Abdelmutalab
+author: "Ameen Abdelmutalab"
 tags: [machine learning, overfitting, data science, regularization]
+image: "/assets/images/post-image.jpg"
 ---
+
 
 Overfitting is a common challenge in machine learning where a model performs exceptionally well on training data but fails to generalize to new, unseen data. This problem arises when a model learns the noise and details in the training dataset rather than the underlying pattern, leading to poor performance in real-world applications. In this blog post, I’ll discuss what causes overfitting, how to detect it, and effective strategies to overcome it.
 
