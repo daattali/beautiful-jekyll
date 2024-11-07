@@ -6,7 +6,6 @@ layout: page
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
   {% for post in posts %}
   <li class="post-preview">
@@ -21,31 +20,28 @@ layout: page
           {% else %}
             {{ post.cover-img }}
           {% endif %}
-        {% else %}
         {% endif %}
       {% endcapture %}
-      {% assign thumbnail=thumbnail | strip %}
+      {% assign thumbnail = thumbnail | strip %}
 
-      {% if site.feed_show_excerpt == false %}
+      <!-- Display the thumbnail if it exists -->
       {% if thumbnail != "" %}
-      <div class="post-image post-image-normal">
+      <div class="post-image">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
           <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
         </a>
       </div>
       {% endif %}
-      {% endif %}
 
+      <!-- Post Title and Subtitle -->
       <a href="{{ post.url | absolute_url }}">
         <h2 class="post-title">{{ post.title | strip_html }}</h2>
-
         {% if post.subtitle %}
-          <h3 class="post-subtitle">
-          {{ post.subtitle | strip_html }}
-          </h3>
+          <h3 class="post-subtitle">{{ post.subtitle | strip_html }}</h3>
         {% endif %}
       </a>
 
+      <!-- Author and Date -->
       {% if post.author %}
         <span>By <strong>{{ post.author | strip_html }}</strong></span>
       {% endif %}
@@ -54,23 +50,7 @@ layout: page
         Posted on {{ post.date | date: date_format }}
       </p>
 
-      {% if thumbnail != "" %}
-      <div class="post-image post-image-small">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
-        </a>
-      </div>
-      {% endif %}
-
-      {% unless site.feed_show_excerpt == false %}
-      {% if thumbnail != "" %}
-      <div class="post-image post-image-short">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
-        </a>
-      </div>
-      {% endif %}
-
+      <!-- Post Excerpt with "Read More" link -->
       <div class="post-entry">
         {% assign excerpt_length = site.excerpt_length | default: 50 %}
         {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
@@ -79,16 +59,15 @@ layout: page
           <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
       </div>
-      {% endunless %}
 
+      <!-- Tags (if any) -->
       {% if site.feed_show_tags != false and post.tags.size > 0 %}
       <div class="blog-tags">
         <span>Tags:</span>
-        <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
         <ul class="d-inline list-inline" role="list">
           {% for tag in post.tags %}
           <li class="list-inline-item">
-            <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+            <a href="{{ '/tags' | absolute_url }}#{{ tag }}">{{ tag }}</a>
           </li>
           {% endfor %}
         </ul>
@@ -100,6 +79,7 @@ layout: page
   {% endfor %}
 </ul>
 
+<!-- Pagination -->
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
   {% if paginator.previous_page %}
