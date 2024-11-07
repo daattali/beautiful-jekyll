@@ -1,7 +1,65 @@
-.post-preview h2 a {
-  color: blue; /* Change this to your preferred shade of blue */
-  text-decoration: none;
+/* Main content area styling for wider layout */
+.container-md.medium-post-container {
+    max-width: 900px; /* Increase the width as needed */
+    margin: 0 auto; /* Center-aligns the content */
+    padding: 20px; /* Adds space around the content */
 }
-.post-preview h2 a:hover {
-  text-decoration: underline;
+
+/* Override Bootstrap column classes for wider layout */
+@media (min-width: 1200px) {
+    .col-xl-8 {
+        max-width: 100%; /* Allow full-width content within the container */
+    }
+    .offset-xl-2 {
+        margin-left: 0; /* Remove extra offset for full-width content */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .col-lg-10 {
+        max-width: 100%; /* Allow full-width content within the container */
+    }
+    .offset-lg-1 {
+        margin-left: 0; /* Remove extra offset for full-width content */
+    }
+}
+
+/* Improve readability for the post content */
+.medium-post-content {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Center and widen images within post content */
+.medium-post-content img {
+    max-width: 100%; /* Ensures images fit within the container */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center-align images */
+}
+
+/* Limit the maximum size of the main post image */
+.medium-post-image {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 500px; /* Limits the height to prevent it from being too large */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
+/* Styling for tags, pagination, and meta */
+.medium-post-meta,
+.blog-tags,
+.pagination {
+    font-size: 16px;
+    color: #666;
+}
+
+.medium-post-title {
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-align: center;
 }
