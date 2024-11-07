@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "List of Certificates"
+title: "Certificates"
 permalink: /certificates/
 ---
 
-## Certificates
+## List of Certificates
 Here are some certifications I've earned:
 
 - **Databases and SQL for Data Science with Python**  
