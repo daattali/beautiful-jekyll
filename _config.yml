@@ -292,6 +292,10 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+# _config.yml
+site-css:
+  - "/assets/css/custom-styles.css"
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
