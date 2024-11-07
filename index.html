@@ -4,14 +4,10 @@ title: "My website"
 subtitle: "This is where I will tell my friends way too much about me"
 ---
 
-## Recent Blog Posts
 
-{% for post in site.posts limit:5 %}
-<div class="post-preview">
-  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-  <p>{{ post.excerpt }}</p>
-  <small>Posted on {{ post.date | date: "%B %-d, %Y" }} by {{ post.author }}</small>
-  <hr>
-</div>
-{% endfor %}
+<!-- Main welcome message or content without listing recent blog posts -->
+
+<p>Welcome to my website! Explore the sections to learn more about my projects, thoughts, and latest updates.</p>
+
+<a href="/blog/" class="button">Go to Blog</a>
 
