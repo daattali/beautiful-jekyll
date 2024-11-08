@@ -8,9 +8,8 @@ permalink: /projects/project-1/
 This page contains blog-style entries detailing the progress and updates for Project 1.
 
 ## Blog Entries
-{% assign project_posts = site.pages | where_exp: "item", "item.path contains '_project_posts'" %}
-{% for post in project_posts %}
-- [{{ post.title }}]({{ post.url }})
+{% for post in site.project_posts %}
+- [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
 [GitHub Repository for Project 1](https://github.com/yourusername/project-1)
