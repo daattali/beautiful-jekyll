@@ -1,14 +1,14 @@
 ---
 layout: page
 title: "Project 1"
-permalink: /projects/project-1/
+permalink: /projects/project1/
 ---
 
 # Project 1
 This page contains blog-style entries detailing the progress and updates for Project 1.
 
 ## Blog Entries
-{% assign project_posts = site.pages | where_exp: "item", "item.path contains 'projects/project-1/_project_posts'" %}
+{% assign project_posts = site.pages | where_exp: "item", "item.path contains 'projects/project1/_project_posts'" %}
 {% for post in project_posts %}
 - [{{ post.title }}]({{ post.url }})
 {% endfor %}
