@@ -37,6 +37,15 @@
     border-radius: 5px; /* Slight rounding for softer look */
 }
 
+/* Specific style for the featured image at the top of the post */
+.featured-image {
+    max-width: 80%; /* Adjust to fit within content width */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center-align the image */
+    border-radius: 5px; /* Optional: add slight rounding for a softer look */
+}
+
 /* Simplify post preview layout for main blog page */
 .post-preview {
     display: flex;
