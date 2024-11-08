@@ -1,6 +1,6 @@
 /* Main content area styling for wider layout */
 .container-md.medium-post-container {
-    max-width: 2000px; /* Set desired width */
+    max-width: 1000px; /* Set desired width */
     margin: 0 auto; /* Center-aligns the container */
     padding: 20px; /* Adds space around the content */
 }
