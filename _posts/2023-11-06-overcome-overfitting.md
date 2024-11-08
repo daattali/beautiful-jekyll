@@ -10,6 +10,10 @@ image: "/assets/img/overfitting.png"
 
 Overfitting is a common challenge in machine learning where a model performs exceptionally well on training data but fails to generalize to new, unseen data. This problem arises when a model learns the noise and details in the training dataset rather than the underlying pattern, leading to poor performance in real-world applications. In this blog post, I’ll discuss what causes overfitting, how to detect it, and effective strategies to overcome it.
 
+![Overfitting Example](assets/img/overfitting.png)
+
+*Figure 1. The green line represents an overfitted model, while the black line represents a regularized model. The green line closely follows the training data, but it is likely to have a higher error rate on new data (illustrated by black-outlined dots) compared to the black line. Image from [Wikipedia](https://en.wikipedia.org/wiki/Overfitting), licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0).*
+
 ## What Causes Overfitting?
 Overfitting typically occurs when a model is too complex for the amount of training data available, causing it to "memorize" the data rather than learn the general patterns. Factors contributing to overfitting include:
 - **High model complexity**: Using a model with too many parameters or high capacity (e.g., deep neural networks) for a small dataset.
