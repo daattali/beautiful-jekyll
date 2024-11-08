@@ -14,3 +14,4 @@ This page contains blog-style entries detailing the progress and updates for Pro
 {% endfor %}
 
 [GitHub Repository for Project 1](https://github.com/yourusername/project-1)
+
