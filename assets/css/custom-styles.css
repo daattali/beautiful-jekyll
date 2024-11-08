@@ -44,7 +44,8 @@
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px auto; /* Center-align images */
+    margin: 25px auto; /* Add margin to center-align images */
+    border-radius: 5px; /* Optional: add slight rounding for a softer look */
 }
 
 /* Limit the maximum size of the main post image */
