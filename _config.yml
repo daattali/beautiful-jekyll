@@ -15,6 +15,11 @@ title: "Exploring Data Science with Ameen"
 # Your name to show in the footer
 author:  "Ameen Abdelmutalab"
 
+# Collection settings
+collections:
+  project_posts:
+    output: true
+    permalink: /projects/project-1/:title/
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
