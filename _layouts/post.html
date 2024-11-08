@@ -10,12 +10,7 @@ layout: base
 
       <!-- Post Image (if available) -->
       {% if page.image %}
-        <div class="post-image">
-                <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}" style="max-width: 100%; display: block; margin: 20px auto;">
-                <p style="text-align: center; font-size: 0.9em; color: #555;">
-                Figure 1. The green line represents an overfitted model, while the black line represents a regularized model. The green line closely follows the training data, but it is likely to have a higher error rate on new data (illustrated by black-outlined dots) compared to the black line. Image from <a href="https://en.wikipedia.org/wiki/Overfitting" target="_blank">Wikipedia</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>.
-                </p>
-        </div>
+        <img src="{{ page.image | relative_url }}" alt="Post Image" class="medium-post-image">
       {% endif %}
 
       <!-- Post Title -->
