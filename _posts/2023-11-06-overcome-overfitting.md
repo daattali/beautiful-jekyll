@@ -4,7 +4,7 @@ title: "How to Overcome Overfitting in Machine Learning"
 date: 2023-11-06
 author: "Ameen Abdelmutalab"
 tags: [machine learning, overfitting, data science, regularization]
-image: "/assets/img/post1_img.png"
+image: "/assets/img/overfitting.png"
 ---
 
 
