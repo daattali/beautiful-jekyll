@@ -1,8 +1,8 @@
-/* Main content area styling for wider layout */
+/* Main content area styling for centered layout */
 .container-md.medium-post-container {
-    max-width: 1000px; /* Set desired width */
+    max-width: 850px; /* Set narrower width for centered layout */
     margin: 0 auto; /* Center-aligns the container */
-    padding: 20px; /* Adds space around the content */
+    padding: 20px 30px; /* Adds top/bottom and side padding */
 }
 
 /* Center-align post title and metadata */
@@ -11,32 +11,13 @@
     margin-bottom: 20px; /* Adds space below title */
 }
 
-/* Restore Bootstrap's default behavior for centering columns */
-@media (min-width: 1200px) {
-    .col-xl-8 {
-        /* Remove max-width: 100%; to keep centered layout */
-    }
-    .offset-xl-2 {
-        /* Keep default offset to center the content */
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .col-lg-10 {
-        /* Remove max-width: 100%; to keep centered layout */
-    }
-    .offset-lg-1 {
-        /* Keep default offset to center the content */
-    }
-}
-
-/* Refine readability for post content */
+/* Improve readability for the post content */
 .medium-post-content {
     font-size: 18px;
-    line-height: 1.8; /* Slightly increase line height */
+    line-height: 1.8;
     color: #333;
     margin-top: 20px;
-    text-align: justify; /* Justify text for a cleaner look */
+    text-align: justify; /* Justify text */
 }
 
 /* Center and widen images within post content */
@@ -44,58 +25,20 @@
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 25px auto; /* Add margin to center-align images */
-    border-radius: 5px; /* Optional: add slight rounding for a softer look */
+    margin: 25px auto; /* Center-align images with extra margin */
+    border-radius: 5px; /* Slight rounding for softer look */
 }
 
-/* Limit the maximum size of the main post image */
-.medium-post-image {
-    max-width: 100%;
-    height: auto;
-    max-height: 500px;
-    display: block;
-    margin: 20px auto; /* Centers the image */
-}
-
-/* Additional styles for the post layout */
+/* Simplify post preview layout for main blog page */
 .post-preview {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    flex-direction: column; /* Stack preview items vertically */
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.post-preview .text-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.post-title {
-    font-size: 2em;
-    margin: 0 0 10px;
-    display: block;
-}
-
-.post-preview div {
-    flex: 1;
-    padding-right: 15px;
-}
-
-.post-preview img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-left: 15px;
-}
-
-.excerpt {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #666;
+.post-preview .text-content, .post-preview img {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
