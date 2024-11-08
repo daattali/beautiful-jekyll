@@ -30,12 +30,13 @@
     }
 }
 
-/* Improve readability for the post content */
+/* Refine readability for post content */
 .medium-post-content {
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.8; /* Slightly increase line height */
     color: #333;
     margin-top: 20px;
+    text-align: justify; /* Justify text for a cleaner look */
 }
 
 /* Center and widen images within post content */
