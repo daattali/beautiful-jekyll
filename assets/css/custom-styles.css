@@ -5,6 +5,12 @@
     padding: 20px; /* Adds space around the content */
 }
 
+/* Center-align post title and metadata */
+.post-title, .post-meta {
+    text-align: center;
+    margin-bottom: 20px; /* Adds space below title */
+}
+
 /* Restore Bootstrap's default behavior for centering columns */
 @media (min-width: 1200px) {
     .col-xl-8 {
