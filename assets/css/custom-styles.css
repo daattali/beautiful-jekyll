@@ -8,7 +8,15 @@
 /* Center-align post title and metadata */
 .post-title, .post-meta {
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 20px; /* Adds space below title */
+}
+
+/* Style for author name and date */
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
 }
 
 /* Improve readability for the post content */
@@ -41,4 +49,18 @@
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
+}
+
+/* Center the main content container, if needed */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure the author image and title are vertically aligned */
+.post-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
