@@ -1,6 +1,6 @@
 /* Main content area styling for centered layout */
 .container-md.medium-post-container {
-    max-width: 1600px; /* Set narrower width for centered layout */
+    max-width: 1000px; /* Set narrower width for centered layout */
     margin: 0 auto; /* Center-aligns the container */
     padding: 20px 30px; /* Adds top/bottom and side padding */
 }
