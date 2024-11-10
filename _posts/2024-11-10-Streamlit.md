@@ -1,4 +1,11 @@
-
+---
+layout: post
+title: "What is Streamlit"
+date: 2024-11-10
+author: "Ameen Abdelmutalab"
+tags: [data science, kaggle, google colab, dataset, tutorial]
+image: "/assets/img/streamlit.png"
+---
 
 # Streamlit: A Beginner's Guide to Building Interactive Web Apps for Data Science
 
