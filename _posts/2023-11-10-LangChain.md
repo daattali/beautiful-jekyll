@@ -4,7 +4,7 @@ title: "What is LangChain"
 date: 2023-11-10
 author: "Ameen Abdelmutalab"
 tags: [data science, kaggle, google colab, dataset, tutorial]
-image: "/assets/img/post_kaggle_colab.png"
+image: "/assets/img/langchain.png"
 ---
 LangChain is an open-source framework designed to simplify the creation and deployment of applications that use language models. It provides tools and integrations to streamline processes involved in building applications powered by large language models (LLMs) like OpenAI's GPT, enabling developers to manage complex interactions, workflows, and data flows within these applications. LangChain is especially beneficial for applications that involve conversational AI, question answering, summarization, data retrieval, and more.
 
