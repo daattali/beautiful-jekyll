@@ -151,3 +151,5 @@ When you upload a CSV file, Streamlit will read it into a pandas DataFrame and d
 Once you’re ready to share your app, you can deploy it with just a few clicks. Streamlit offers a cloud platform, **Streamlit Community Cloud**, where you can deploy your app for free. You just need to link your GitHub repository with your Streamlit app code, and it will be live online, ready to share with others.
 
 Alternatively, you can deploy Streamlit apps on other cloud providers like Heroku, AWS, or Google Cloud.
+
+You can find the code for this tutorial on my [GitHub repository](https://github.com/AminAbd/Blogs_Codes/tree/master/streamlit_Basics).
