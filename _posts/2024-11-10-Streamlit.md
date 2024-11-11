@@ -123,6 +123,11 @@ st.pyplot(fig)
 
 Streamlit also allows you to build more complex interactions. For instance, if you’re building a machine learning app, you could add a file uploader for users to upload data, and then run your model on that data.
 
+## GitHub Repository
+
+You can find the code for this tutorial on my [GitHub repository](https://github.com/AminAbd/Blogs_Codes/tree/master/streamlit_Basics).
+
+
 Here’s an example of how you can use Streamlit’s file uploader to read and display a CSV file:
 
 ```python
