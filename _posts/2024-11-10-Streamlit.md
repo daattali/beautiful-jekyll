@@ -75,6 +75,8 @@ streamlit run app.py
 
 Streamlit will start a local server, and you can view your app in your browser at `http://localhost:8501`. You should see a simple app with a title and a line of text.
 
+(/assets/img/streamlit1.png)
+
 ### Step 3: Adding Interactivity with Widgets
 
 One of Streamlit’s most powerful features is its interactive widgets. Let’s add a slider and use it to display different values dynamically.
