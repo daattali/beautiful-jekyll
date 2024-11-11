@@ -1,3 +1,9 @@
+### 사용법
+- 글 작성법
+1. _posts 폴더에서 create new file
+2. 파일 제목 생성 규칙 YEAR-MON-DAY-title.md
+
+
 # Beautiful Jekyll
 
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
