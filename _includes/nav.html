@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 
-    {%- if site.title-img -%}
+<!--     {%- if site.title-img -%}
       <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
     {%- elsif site.title -%}
       <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a>
-    {%- endif -%}
+    {%- endif -%} -->
   
 <!--     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
       {% endfor %}
     {% endif %}
   
-    {% if site.avatar and page.show-avatar != false %}
+<!--     {% if site.avatar and page.show-avatar != false %}
       <div class="avatar-container">
         <div class="avatar-img-border">
           <a href="{{ '' | absolute_url }}">
@@ -55,7 +55,7 @@
           </a>
         </div>
       </div>
-    {% endif %}
+    {% endif %} -->
   
   </nav>
   
