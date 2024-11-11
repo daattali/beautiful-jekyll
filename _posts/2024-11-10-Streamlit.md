@@ -95,6 +95,7 @@ st.write("You selected:", number)
 
 Reload your app, and you’ll see a slider that allows you to pick a number between 0 and 100. The selected value is displayed below the slider, updating in real-time as you move it.
 
+![Alt text](/assets/img/streamlit2.png)
 ### Step 4: Visualizing Data with Streamlit
 
 Streamlit makes it easy to display data visualizations from popular Python libraries like Matplotlib, Plotly, and Altair. Here’s an example using Matplotlib to create a simple line chart.
