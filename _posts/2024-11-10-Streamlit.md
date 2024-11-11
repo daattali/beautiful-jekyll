@@ -118,7 +118,7 @@ ax.plot(x, y)
 # Display the plot in the Streamlit app
 st.pyplot(fig)
 ```
-
+![Alt text](/assets/img/streamlit3.png)
 ### Step 5: Adding More Complex Interactions
 
 Streamlit also allows you to build more complex interactions. For instance, if you’re building a machine learning app, you could add a file uploader for users to upload data, and then run your model on that data.
@@ -138,7 +138,7 @@ if uploaded_file is not None:
     st.write("Data Preview:")
     st.write(data)
 ```
-
+![Alt text](/assets/img/streamlit4.png)
 When you upload a CSV file, Streamlit will read it into a pandas DataFrame and display the first few rows.
 
 ## Deploying Your Streamlit App
