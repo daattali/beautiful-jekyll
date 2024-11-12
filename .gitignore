@@ -1,13 +1,24 @@
-# project
-_site
-.sass-cache
-.vagrant
+# Jekyll
+_site/
 
-# general
+# Cache et fichiers temporaires
+.sass-cache/
+.vagrant/
+
+# Système
 .DS_Store
 Thumbs.db
 ehthumbs.db
 
+# Dépendances Ruby
 Gemfile.lock
+vendor/bundle/
 
+# Dépendances Node.js (si applicable)
+node_modules/
+
+# Fichiers log
+*.log
+
+# Gemmes spécifiques au thème
 beautiful-jekyll-theme-*.gem

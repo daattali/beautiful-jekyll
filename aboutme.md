@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: À propos de moi
+subtitle: Découvrez qui je suis
 ---
-
+je suis bouazza amal 
 My name is Inigo Montoya. I have the following qualities:
 
 - I rock a great mustache
