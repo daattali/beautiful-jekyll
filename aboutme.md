@@ -3,13 +3,17 @@ layout: page
 title: À propos de moi
 subtitle: Découvrez qui je suis
 ---
-je suis bouazza amal 
+Je suis Bouazza Amal 
 My name is Inigo Montoya. I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- amalbouazza4@gmail.com
+- Gammarth la marsa
+- Née le 15/09/1994
+- Tunisienne
+- Véhicule personnel
+-  Gammarth
+- 90 174 975
 
-What else do you need?
 
 ### My story
 

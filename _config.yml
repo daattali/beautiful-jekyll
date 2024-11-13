@@ -13,7 +13,7 @@
 title: Profil Bouazza Amal 
 
 # Your name to show in the footer
-author: bouazza amal
+author: Bouazza amal
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -23,8 +23,8 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Learn markdown: ""
+  Author's home: ""
 
 ################
 # --- Logo --- #
