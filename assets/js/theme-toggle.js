@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
   const toggleButton = document.getElementById("theme-toggle");
 
+  if (!toggleButton) {
+    console.error("Toggle button not found in the DOM.");
+    return;
+  }
+
   // Check if a preferred theme is saved in localStorage
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
