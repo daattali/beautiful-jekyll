@@ -13,6 +13,7 @@ layout: base
     </div>
   {% endif %}
 
+  <!-- Add your main content here -->
   {{ content }}
 
   {% if page.after-content %}
@@ -24,5 +25,7 @@ layout: base
   {% endif %}
 </main>
 
-<!-- Add this where you want the button to appear, e.g., in the header or navbar -->
-<button id="theme-toggle">Toggle Theme</button>
+<!-- Add the theme toggle button here, inside main to ensure visibility -->
+<button id="theme-toggle" style="position: fixed; top: 10px; right: 10px; padding: 10px 20px; background-color: #0085A1; color: #fff; border: none; cursor: pointer; border-radius: 5px; z-index: 1000;">
+  Toggle Theme
+</button>
