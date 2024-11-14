@@ -73,3 +73,37 @@
     flex-direction: column;
     align-items: center;
 }
+
+/* Dark mode styles */
+.dark-mode body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .container-md.medium-post-container {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .post-title, .dark-mode .post-meta {
+    color: #dddddd;
+}
+
+.dark-mode .post-meta {
+    color: #a0a0a0;
+}
+
+.dark-mode .medium-post-content {
+    color: #e0e0e0;
+}
+
+.dark-mode .post-preview {
+    background-color: #282828;
+}
+
+.dark-mode .post-author {
+    color: #cccccc;
+}
+
+/* Customize any other specific dark mode styles here */
+
