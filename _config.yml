@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: Andrew John
 
 # Your name to show in the footer
-author: Some Person
+author: Andrew John
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -24,7 +24,6 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
