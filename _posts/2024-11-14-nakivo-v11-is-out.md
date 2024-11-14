@@ -8,7 +8,7 @@ fb-img: null
 
 The world of virtualisation has been shaken up in the last year and a half with Broadcom acquiring VMware and pushing many customers to look for alternatives, along with the growing need for multi-tenancy and saas. Following its 3 months release cycle, Nakivo recently released major version NAKIVO Backup & Replication v11 which is available already. This new version brings several interesting features to stay at the tip of the spear including Agentless Backup for Proxmox VE, Backup to Cloud for Microsoft 365, Source-Side Backup Encryption and more.
 
-[![Try Nakivo v11](/img/2022-11-27-15-48-45.png)](https://www.nakivo.com/resources/releases/v11/)
+[![Try Nakivo v11](https://www.nakivo.com/res/images/pages/vmware-backup/v2/ques.webp)](https://www.nakivo.com/resources/releases/v11/)
 
 ## Agentless Backup for Proxmox VE 8.0 to 8.2
 
