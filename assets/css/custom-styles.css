@@ -2,7 +2,7 @@
 .container-md.post-container {
     max-width: 1000px; /* Set narrower width for centered layout */
     margin: 0 auto; /* Center-aligns the container */
-    padding: 20px 30px; /* Adds top/bottom and side padding */
+    padding: 20px; /* Adds top/bottom and side padding */
 }
 
 /* Center-align post title and metadata */
