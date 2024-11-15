@@ -6,19 +6,21 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Quantitative Analytics
 
 # Your name to show in the footer
-author: Some Person
+author: Julie Chen
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: Hi there, I'm a computer science major studying to become a Quantitative Analyst. I have experience with Python, C++, SQL, and R. I enjoy machine learning related projects, particularly related to stock trading. Below are some of my projects.
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Stock Trading AI (LSTM + TA + MAE + MSE): "https://colab.research.google.com/drive/1hOqZ6gfRCWpeqa2iLZkhKAGWNCJK-ati#scrollTo=72U9TdtONyNe"
+    - Union Density Data Analysis: "https://colab.research.google.com/drive/1CfuT0oZebLgeOqNfeJcLA547gheC6F64"
+    - Gamma World 2e Tabletop character generator + environment simulator: "https://colab.research.google.com/drive/1-H2BaVn_AskSBaPg3pvrGiOhagqCFtwT"
+    - Genetic Optimization Algoritm: "https://colab.research.google.com/drive/1x_eTa8wVp0ATWUPv5QthnzQ33pTzwToZ"
+  MSJC Clubs directory: "https://www.msjc.edu/studentgovernmentassociation/clubs.html"
 
 # --- Logo --- #
 
@@ -39,13 +41,8 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "0715895@my.msjc.edu"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
