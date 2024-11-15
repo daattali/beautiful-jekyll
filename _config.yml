@@ -303,9 +303,3 @@ site-css:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
-# Add custom JavaScript file for theme toggle
-site-js:
-  - "/assets/js/theme-toggle.js"
-
-
