@@ -7,7 +7,6 @@ tags: [git, GitHub, version control, tutorial, VS Code, development]
 image: "/assets/img/vscode-github.png"
 ---
 
-# How to Link VS Code to GitHub: A Step-by-Step Guide
 
 Connecting Visual Studio Code (VS Code) to GitHub is essential for developers looking to manage code, track changes, and collaborate effectively. This post covers everything you need to know to link VS Code to GitHub, including how to set up version control, commit changes, push code, ignore files, and manage branch names like `main` and `master`. 
 
