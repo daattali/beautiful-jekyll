@@ -1,4 +1,5 @@
 <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
+
   {%- if site.title-img -%}
     <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
   {%- elsif site.title -%}
@@ -19,7 +20,7 @@
               {%- for childlink in link[1] -%}
                 {%- for linkparts in childlink %}
                   <a class="dropdown-item" href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
-                {%- endfor %}
+                {%- endfor -%}
               {%- endfor %}
             </div>
           </li>
@@ -27,15 +28,8 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
           </li>
-        {%- endif %}
-      {%- endfor %}
-
-      <li class="nav-item">
-        <button id="theme-toggle" class="btn btn-outline-secondary nav-link">
-          <span id="theme-icon">🌞</span> Theme
-        </button>
-      </li>
-
+        {%- endif -%}
+      {%- endfor -%}
       {% if site.post_search %}
         <li class="nav-item">
           <a class="nav-link" id="nav-search-link" href="#" title="Search">
@@ -43,7 +37,26 @@
             <span id="nav-search-text">Search</span>
           </a>
         </li>
-      {% endif %}
+      {%- endif -%}
     </ul>
   </div>
+
+  {% if site.navbar-extra %}
+    {% for file in site.navbar-extra %}
+      {% include {{ file }} %}
+    {% endfor %}
+  {% endif %}
+
+  {% if site.avatar and page.show-avatar != false %}
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="{{ '/' | absolute_url }}">
+          <img alt="Navigation bar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
+        </a>
+      </div>
+    </div>
+  {% endif %}
+
 </nav>
+
+{% include search.html %}
