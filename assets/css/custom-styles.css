@@ -1,6 +1,6 @@
 /* Main content area styling for centered layout */
 .container-md.post-container {
-    max-width: 1000px; /* Set narrower width for centered layout */
+    max-width: 800px; /* Set narrower width for centered layout */
     margin: 0 auto; /* Center-aligns the container */
     padding: 20px; /* Adds top/bottom and side padding */
 }
@@ -26,7 +26,6 @@
     font-size: 18px;
     line-height: 1.8;
     color: #333;
-    margin-top: 20px;
     text-align: justify; /* Justify text */
 }
 
