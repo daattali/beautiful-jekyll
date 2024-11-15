@@ -4,25 +4,25 @@ layout: base
 
 {% include header.html type="post" %}
 
-<main class="container-md medium-post-container">
+<main class="container-md post-container">
   <div class="row">
     <div class="col-xl-10 col-lg-12">
 
       <!-- Post Image (if available) -->
       {% if page.image %}
-        <img src="{{ page.image | relative_url }}" alt="Post Image" class="medium-post-image">
+        <img src="{{ page.image | relative_url }}" alt="Post Image" class="post-image">
       {% endif %}
 
       <!-- Post Title -->
+      <h1 class="post-title">{{ page.title }}</h1>
 
-      
       <!-- Post Meta (Author and Date) -->
-      <div class="medium-post-meta">
+      <div class="post-meta">
         <p>By {{ page.author }} | {{ page.date | date: "%B %-d, %Y" }}</p>
       </div>
 
       <!-- Post Content -->
-      <div class="blog-post medium-post-content">
+      <div class="blog-post post-content">
         {{ content }}
       </div>
 
