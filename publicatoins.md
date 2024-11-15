@@ -1,35 +1,33 @@
 ---
 layout: page
-title: "Certificates"
-permalink: /certificates/
+title: "Publications"
+permalink: /publications/
 ---
 
-## List of Certificates
-Here are some certifications I've earned:
+## List of Publications
+Here are some of my publications:
 
-- **Databases and SQL for Data Science with Python**  
-  *Issued by Coursera*  
-  Course on databases and SQL fundamentals for data science using Python  
-  [View Certificate](https://coursera.org/share/33947140200b0426f73ce0f28a76e629)
+- **Title of Publication 1**  
+  *Published in Journal Name, Year*  
+  Brief description of the publication, its focus, or findings.  
+  [View Publication](https://linktopublication.com)
 
-- **Machine Learning Specialization**  
-  *Issued by Coursera*  
-  In-depth specialization covering foundational and advanced machine learning techniques  
-  [View Certificate](https://www.coursera.org/account/accomplishments/specialization/AQ7MSWZGQK47)
+- **Title of Publication 2**  
+  *Published in Journal Name, Year*  
+  Summary or key points covered in this publication.  
+  [View Publication](https://linktopublication.com)
 
-- **Introduction to Tableau**  
-  *Issued by Coursera*
-  Foundational course on data visualization and analytics using Tableau  
-  [View Certificate](https://coursera.org/share/3e90358ab86e4e69eb9e5de0901bb231)
+- **Title of Publication 3**  
+  *Published in Conference or Journal Name, Year*  
+  Brief explanation of the research or results presented.  
+  [View Publication](https://linktopublication.com)
 
-- **Explore Core Data Concepts in Microsoft Azure**  
-  *Issued by Coursera*  
-  Introduction to core data concepts and services in Microsoft Azure  
-  [View Certificate](https://coursera.org/share/05292e3aecf224d11edccbc91f13bdaf)
-  
-- **Microsoft Azure SQL**  
-  *Issued by Coursera*  
-  Course on using SQL within Microsoft Azure for data management and analytics  
-  [View Certificate](https://coursera.org/share/52ffd31656e693089e8cb343106fa637)
-  
+- **Title of Publication 4**  
+  *Published in Journal Name, Year*  
+  Overview of the publication’s significance or contribution to the field.  
+  [View Publication](https://linktopublication.com)
 
+- **Title of Publication 5**  
+  *Published in Journal Name, Year*  
+  Description or focus of this research work.  
+  [View Publication](https://linktopublication.com)
