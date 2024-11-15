@@ -10,7 +10,7 @@ Here are some of my publications:
 - **Automatic modulation classification based on high order cumulants and hierarchical polynomial classifiers**  
   *A. Abdelmutalab, K. Assaleh, M. El-Tarhuni*  
   Published in *Physical Communication*, Volume 21, Pages 10-18, 2016.  
-  [View Publication](https://www.sciencedirect.com/science/article/abs/pii/S1874490716301094)
+  [View Publication](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yfD8PpEAAAAJ&citation_for_view=yfD8PpEAAAAJ:d1gkVwhDpl0C)
 
 
 - **Automatic modulation classification using polynomial classifiers**  
