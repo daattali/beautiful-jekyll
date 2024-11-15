@@ -21,6 +21,8 @@
 
 /* Improve readability for the post content */
 .post-content {
+    margin: 0 auto;
+    padding: 0 20px;
     font-size: 18px;
     line-height: 1.8;
     color: #333;
