@@ -4,8 +4,6 @@
   --text-color: #404040;
   --link-color: #008AFF;
   --hover-color: #0085A1;
-  --meta-text-color: #666;
-  --post-content-color: #333;
 }
 
 /* Dark Theme */
@@ -14,11 +12,9 @@
   --text-color: #f1f1f1;
   --link-color: #66c2ff;
   --hover-color: #00aaff;
-  --meta-text-color: #aaaaaa;
-  --post-content-color: #dddddd;
 }
 
-/* Apply theme variables to body and links */
+/* Apply colors to body and links */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -31,6 +27,7 @@ a {
 a:hover {
   color: var(--hover-color);
 }
+
 
 /* Main content area styling for centered layout */
 .container-md.medium-post-container {
