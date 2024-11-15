@@ -75,3 +75,11 @@
     flex-direction: column;
     align-items: center;
 }
+
+/* Add top padding on mobile to prevent overlap with the fixed navbar */
+@media (max-width: 767px) {
+    .navbar-mobile-adjustment + .container-md.post-container,
+    .navbar-mobile-adjustment + main {
+        padding-top: 80px; /* Adjust based on the height of your navbar */
+    }
+}
