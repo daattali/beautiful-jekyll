@@ -4,6 +4,8 @@
   --text-color: #404040;
   --link-color: #008AFF;
   --hover-color: #0085A1;
+  --meta-text-color: #666;
+  --post-content-color: #333;
 }
 
 /* Dark Theme */
@@ -12,80 +14,96 @@
   --text-color: #f1f1f1;
   --link-color: #66c2ff;
   --hover-color: #00aaff;
+  --meta-text-color: #aaaaaa;
+  --post-content-color: #dddddd;
+}
+
+/* Apply theme variables to body and links */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--hover-color);
 }
 
 /* Main content area styling for centered layout */
 .container-md.medium-post-container {
-    max-width: 1000px; /* Set narrower width for centered layout */
-    margin: 0 auto; /* Center-aligns the container */
-    padding: 20px 30px; /* Adds top/bottom and side padding */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px;
 }
 
 /* Center-align post title and metadata */
 .post-title, .post-meta {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px; /* Adds space below title */
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 /* Style for author name and date */
 .post-meta {
-    font-size: 0.9em;
-    color: #666;
-    margin-top: 5px;
+  font-size: 0.9em;
+  color: var(--meta-text-color);
+  margin-top: 5px;
 }
 
 /* Improve readability for the post content */
 .medium-post-content {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #333;
-    margin-top: 20px;
-    text-align: justify; /* Justify text */
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--post-content-color);
+  margin-top: 20px;
+  text-align: justify;
 }
 
 /* Center and widen images within post content */
 .medium-post-content img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 25px auto; /* Center-align images with extra margin */
-    border-radius: 5px; /* Slight rounding for softer look */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 25px auto;
+  border-radius: 5px;
 }
 
 /* Specific style for the featured image at the top of the post */
 .featured-image {
-    max-width: 80%; /* Adjust to fit within content width */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Center-align the image */
-    border-radius: 5px; /* Optional: add slight rounding for a softer look */
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
 }
 
 /* Simplify post preview layout for main blog page */
 .post-preview {
-    display: flex;
-    flex-direction: column; /* Stack preview items vertically */
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .post-preview .text-content, .post-preview img {
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Center the main content container, if needed */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Ensure the author image and title are vertically aligned */
 .post-author {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
