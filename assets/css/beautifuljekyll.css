@@ -5,7 +5,8 @@ layout: null
 @import url("pygment_highlights.css");
 
 :root {
-  /* config file CSS variables */
+
+  /* Light Mode (Default) */
   --page-col: {{ site.page-col | default: "#FFFFFF" }};
   --text-col: {{ site.text-col | default: "#404040" }};
   --link-col: {{ site.link-col | default: "#008AFF" }};
@@ -24,6 +25,22 @@ layout: null
   --mid-col: #808080;
 }
 
+                       
+body.dark-mode {
+  /* Dark Mode Overrides */
+  --page-col: #121212; /* Dark background color */
+  --text-col: #f0f0f0; /* Light text color */
+  --link-col: #76a9ff; /* Softer link color */
+  --hover-col: #4b8bdb; /* Softer hover color */
+  --navbar-col: #1c1c1c; /* Dark navbar background */
+  --navbar-text-col: #e0e0e0; /* Light navbar text */
+  --navbar-border-col: #333333; /* Dark border color */
+  --footer-col: #1c1c1c; /* Dark footer background */
+  --footer-text-col: #bbbbbb; /* Softer footer text */
+  --footer-link-col: #76a9ff; /* Light link color */
+  --footer-hover-col: #4b8bdb; /* Hover color for links in footer */
+}
+                       
 /* --- General --- */
 
 html {
