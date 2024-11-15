@@ -4,7 +4,7 @@ title: "How to Link VS Code to GitHub: A Step-by-Step Guide"
 date: 2024-11-11
 author: "Ameen Abdelmutalab"
 tags: [git, GitHub, version control, tutorial, VS Code, development]
-image: "/assets/img/vscode-github.png"
+image: "/assets/img/VSGit.png"
 ---
 
 
