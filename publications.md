@@ -7,27 +7,32 @@ permalink: /publications/
 ## List of Publications
 Here are some of my publications:
 
-- **Title of Publication 1**  
-  *Published in Journal Name, Year*  
-  Brief description of the publication, its focus, or findings.  
-  [View Publication](https://linktopublication.com)
+- **Automatic modulation classification based on high order cumulants and hierarchical polynomial classifiers**  
+  *A. Abdelmutalab, K. Assaleh, M. El-Tarhuni*  
+  Published in *Physical Communication*, Volume 21, Pages 10-18, 2016.  
+  [View Publication](#)
 
-- **Title of Publication 2**  
-  *Published in Journal Name, Year*  
-  Summary or key points covered in this publication.  
-  [View Publication](https://linktopublication.com)
+- **Automatic modulation classification using polynomial classifiers**  
+  *A. Abdelmutalab, K. Assaleh, M. El-Tarhuni*  
+  Presented at *2014 IEEE 25th Annual International Symposium on Personal, Indoor, and Mobile Radio Communications*.  
+  [View Publication](#)
 
-- **Title of Publication 3**  
-  *Published in Conference or Journal Name, Year*  
-  Brief explanation of the research or results presented.  
-  [View Publication](https://linktopublication.com)
+- **Automatic modulation classification using hierarchical polynomial classifier and stepwise regression**  
+  *A. Abdelmutalab, K. Assaleh, M. El-Tarhuni*  
+  Presented at *2016 IEEE Wireless Communications and Networking Conference*, Pages 1-5.  
+  [View Publication](#)
 
-- **Title of Publication 4**  
-  *Published in Journal Name, Year*  
-  Overview of the publication’s significance or contribution to the field.  
-  [View Publication](https://linktopublication.com)
+- **Pedestrian detection using MB-CSP model and boosted identity aware non-maximum suppression**  
+  *A. Abdelmutalab, C. Wang*  
+  Published in *IEEE Transactions on Intelligent Transportation Systems*, Volume 23, Issue 12, Pages 24454-24463, 2022.  
+  [View Publication](#)
 
-- **Title of Publication 5**  
-  *Published in Journal Name, Year*  
-  Description or focus of this research work.  
-  [View Publication](https://linktopublication.com)
+- **Learning-based automatic modulation classification**  
+  *A.E. Abdelmutalab*  
+  Published in 2015.  
+  [View Publication](#)
+
+- **Pedestrian Detection Systems Focusing on Occluded and Small-Scale Individuals**  
+  *A. Abdelmutalab*  
+  Concordia University, 2023.  
+  [View Publication](#)
