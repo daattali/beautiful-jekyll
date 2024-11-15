@@ -8,30 +8,13 @@ layout: base
   <div class="row">
     <div class="col-xl-10 col-lg-12">
 
-      <!-- Post Title and Subtitle -->
-      <h1 class="post-title">{{ page.title }}</h1>
-      {% if page.subtitle %}
-        <h2 class="post-subtitle">{{ page.subtitle }}</h2>
-      {% endif %}
-
-      <!-- Author and Date -->
-      <div class="post-meta">
-        {% if page.author %}
-          <span>By <strong>{{ page.author }}</strong></span>
-        {% endif %}
-        <p>
-          {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-          Posted on {{ page.date | date: date_format }}
-        </p>
-      </div>
-
       <!-- Post Image (if available) -->
       {% if page.image %}
         <img src="{{ page.image | relative_url }}" alt="Post Image" class="post-image">
       {% endif %}
 
       <!-- Post Content -->
-      <div class="post-content">
+      <div class="blog-post post-content">
         {{ content }}
       </div>
 
