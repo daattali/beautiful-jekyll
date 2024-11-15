@@ -27,7 +27,7 @@
     line-height: 1.8;
     color: #333;
     margin-top: 20px;
-    text-align: center; /* Justify text */
+    text-align: center; /* FIX: Changed to center alignment */
 }
 
 /* Center and widen images within post content */
