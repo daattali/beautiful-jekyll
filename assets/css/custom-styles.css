@@ -1,3 +1,19 @@
+/* Light Theme (default) */
+:root {
+  --background-color: #FFFFFF;
+  --text-color: #404040;
+  --link-color: #008AFF;
+  --hover-color: #0085A1;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --text-color: #f1f1f1;
+  --link-color: #66c2ff;
+  --hover-color: #00aaff;
+}
+
 /* Main content area styling for centered layout */
 .container-md.medium-post-container {
     max-width: 1000px; /* Set narrower width for centered layout */
