@@ -1,16 +1,18 @@
 /* Main content area styling for centered layout */
 .container-md.post-container {
-    max-width: 100%; /* Set a more readable width for centered layout */
-    margin: 0 auto; /* Center-aligns the container */
-    padding: 20px; /* Adds top/bottom and side padding */
-    text-align: center; /* Center-align direct child elements */
+    max-width: 800px; /* Optional: set a more readable width */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Center-align post title and metadata */
-.post-title, .post-meta {
+/* Center-align post title */
+.post-title {
+    display: block;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 20px; /* Adds space below title */
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 /* Style for author name and date */
@@ -18,16 +20,18 @@
     font-size: 0.9em;
     color: #666;
     margin-top: 5px;
+    text-align: center;
 }
 
 /* Improve readability for the post content */
 .post-content {
+    max-width: 800px; /* Optional: Set readable width */
     padding: 0 20px;
     font-size: 18px;
     line-height: 1.8;
     color: #333;
     margin-top: 20px;
-    text-align: center; /* FIX: Changed to center alignment */
+    text-align: center;
 }
 
 /* Center and widen images within post content */
@@ -35,23 +39,14 @@
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 25px auto; /* Center-align images with extra margin */
-    border-radius: 5px; /* Slight rounding for softer look */
-}
-
-/* Specific style for the featured image at the top of the post */
-.featured-image {
-    max-width: 80%; /* Adjust to fit within content width */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Center-align the image */
-    border-radius: 5px; /* Optional: add slight rounding for a softer look */
+    margin: 25px auto;
+    border-radius: 5px;
 }
 
 /* Simplify post preview layout for main blog page */
 .post-preview {
     display: flex;
-    flex-direction: column; /* Stack preview items vertically */
+    flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
 }
