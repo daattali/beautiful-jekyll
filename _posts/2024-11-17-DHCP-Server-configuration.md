@@ -9,8 +9,7 @@ tags: [blogs]
 author: Baltej Giri
 ---
 
-DHCP SERVER LAB
------------------
+# DHCP SERVER LAB
 Configuring DHCP on router and switch while using vlans can be tricky but it is a common practive if an enterprise choose to use the DHCP server funtion either on cisco router or Cisco's layer 3 swithes.
 
 The following instructions are required to configure the DHCP Server Lab on a Cisco Router, this lab include the setup of; ip address exclude list on each vlan and setting switch as the default gateway for each vlan but dns server as router. At last we need to verify the connectivity from PC 1 to PC 2.
@@ -18,6 +17,7 @@ The following instructions are required to configure the DHCP Server Lab on a Ci
 There are some additional protocols setup. A routing configuration is required on both switch and router to route traffic between different netoworks. Switch needs DHCP request forwarding setup, a DHCP request messages are send by PC's, there messages are a broadcast messages by default layer 3 switches does not forward boradcast messages to routers thus we need to confiure DHCP forwarding on switch.
 
 The following bullet points are the overall point of view of how this lab should be configured.
+
 1. Exclude first 10 IP addresses in each subnet from pool, Pool names = vlan10 and vlan20
 2. Networks: 10.1.10.0/24 (vlan10) and 10.1.20.0/24 (vlan20)
 3. Default Gateway: Switch1
