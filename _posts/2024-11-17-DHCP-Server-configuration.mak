@@ -1,3 +1,13 @@
+---
+layout: post
+title: DHCP Server Configuration
+subtitle: A topic from CCNA.
+#cover-img: /assets/img/trubleshooting.jpg
+thumbnail-img: /assets/img/thumb.png
+#share-img: /assets/img/path.jpg
+tags: [blogs]
+author: Baltej Giri
+---
 # DHCP SERVER LAB
 -----------------
 Configuring DHCP on router and switch while using vlans can be tricky but it is a common practive if an enterprise choose to use the DHCP server funtion either on cisco router or Cisco's layer 3 swithes.
