@@ -8,7 +8,8 @@ subtitle: A topic from CCNA.
 tags: [blogs]
 author: Baltej Giri
 ---
-# DHCP SERVER LAB
+
+DHCP SERVER LAB
 -----------------
 Configuring DHCP on router and switch while using vlans can be tricky but it is a common practive if an enterprise choose to use the DHCP server funtion either on cisco router or Cisco's layer 3 swithes.
 
