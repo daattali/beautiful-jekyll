@@ -1,22 +1,53 @@
 ---
 layout: post
-title: DHCP Server Configuration
+title: Cisco Router as a DHCP Server
 subtitle: A topic from CCNA.
-#cover-img: /assets/img/trubleshooting.jpg
+#cover-img: /assets/img/cisco_router_as_a_dhcp_server.jpg
 #thumbnail-img: /assets/img/thumb.png
 #share-img: /assets/img/path.jpg
 tags: [blogs]
 author: Baltej Giri
 ---
 
+#### What is this blog about?
+This blog is from a topic from CCNA exam and I am documenting my journey to be a CCNA certified, more specifically I am writing this blog on a topic "Cisco Router as a DHCP server". This document will have four parts, the first part is about introduction of this lab, second part where I have designed a logical diagram of this network, the third part where the actual fun begins, the configuration, and the last part is making sure we're getting the anticipated results. 
+
 # Cisco Router as a DHCP Server
-A cisco router or a cisco switch can be used as a DHCP server. An enterprise can decide to configure DHCP service on a Cisco Router or Switch depanding their infrastrcure design/need. In this blog, a simple yet complex network design is used to demonstrate the concept of DHCP service on Cisco router. This network design consists of a router, mulilayer switch and two PCs. The complexity of this design is in the configuration of DHCP server using Cisco router concept.
 
-in an enterprise class network if we choose to use the DHCP server funtion either on cisco router or Cisco's layer 3 swithes.
+A Cisco router or a Cisco switch can be used as a DHCP server. An enterprise can decide to configure DHCP server on a Cisco router or switch depending their infrastructure design. In this blog, a simple yet complex network design is used to demonstrate the concept of DHCP server on Cisco router. This network design consists of a router, multi-layer switch and two PCs. The complexity of this design is in the configuration of DHCP server using Cisco router concept.
 
-The following instructions are required to configure the DHCP Server Lab on a Cisco Router, this lab include the setup of; ip address exclude list on each vlan and setting switch as the default gateway for each vlan but dns server as router. At last we need to verify the connectivity from PC 1 to PC 2.
+This lab has more than just getting a DHCP server service configured on router. For example, router will have a routing protocol setup, switch will have VLANs, routing and DHCP forwarding service.
 
-There are some additional protocols setup. A routing configuration is required on both switch and router to route traffic between different netoworks. Switch needs DHCP request forwarding setup, a DHCP request messages are send by PC's, there messages are a broadcast messages by default layer 3 switches does not forward boradcast messages to routers thus we need to confiure DHCP forwarding on switch.
+A routing protocol is required on both switch and router to route traffic between different networks. Switch needs DHCP forwarding enabled on each VLAN because PCs sends out DHCP Discover message when it starts up, and DHCP server responses with a DHCP Offer message. The client then selects a server and broadcasts a DHCP Request message. This process uses a broadcast message. A layer 3 switch does not forward broadcast packets that are designated to other devices.
+
+There are some other protocols and features enabled in this lab i.e. cdp neighbour to view the neighbour device and interface from each other. One of my favourite feature i like to enable on all network devices is ```logging synchronous```. This feature keeps the input line of text in your control otherwise network devices logs displaying on CLI can ghost your place in the line.
+
+In the end I have sectioned the part of documentation to show the verification of working lab. Verification is important as it make us sure network device is doing what we have told it to do. Additionally, verification commands are also used to troubleshoot the issues. 
+
+## Resources
+
+- Packet Tracer
+- Cisco ISR4321 Router
+- Cisco 3650 Multi-layer Switch
+- Two PCs
+- Github pages to host this blog-post.
+- Notepad++
+- Markdown (.md) file format to write this blog-post
+
+## IP Addresses
+The table below shows the IP addresses used on router's and switch's interfaces.
+
+<pre>
+| Device | IP Address    | Interface           |
+|--------|---------------|---------------------|
+| Router | 10.1.1.254/24 | Interface gig0/0/0  |
+| Router | 1.1.1.1/32    | Interface loopback0 |
+| Switch | 10.1.10.1/24  | Interface vlan 10   |
+| Switch | 10.1.20.1/24  | Interface vlan 20   |
+| Switch | 10.1.1.1/24   | Interface vlan 1    |
+</pre>
+
+A routing configuration is required on both switch and router to route traffic between different networks. Switch needs DHCP request forwarding setup, a DHCP request messages are send by PC's, there messages are a broadcast messages by default layer 3 switches does not forward broadcast messages to routers thus we need to configure DHCP forwarding on switch.
 
 The following bullet points are the overall point of view of how this lab should be configured.
 
@@ -131,9 +162,9 @@ The detailed ip address and vlans information is in the logical diagram of this 
 		sw-1(config-if)#exit
 	</pre>
 
-This compeltes the configuration on router and switch. The PC1 and PC2 needs to have network interface card (NIC) configured to use the ip address from DHCP instead Static. If the lap is done in simulator or emulators then you may need to configure these settings otherwise the actual computers does have DHCP enabled on their NICs.
+This completes the configuration on router and switch. The PC1 and PC2 needs to have network interface card (NIC) configured to use the ip address from DHCP instead Static. If the lap is done in simulator or emulators then you may need to configure these settings otherwise the actual computers does have DHCP enabled on their NICs.
 
-Next section shows the verification of routing, cdp neighbors, ip addresses verification, and ping connectivity on router, switch and pc's.
+Next section shows the verification of routing, cdp neighbours, ip addresses verification, and ping connectivity on router, switch and pc's.
 
 ## Verification
 
@@ -216,9 +247,7 @@ Next section shows the verification of routing, cdp neighbors, ip addresses veri
 	- Ping test from PC 1 to PC 2 and PC 2 to PC1.
 	- PC 1 can ping to PC 2 successfully.
 		<pre>
-			C:\>ping 10.1.20.11
-			Pinging 10.1.20.11 with 32 bytes of data:
-			
+			C:\>ping 10.1.20.11			
 			Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
 			Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
 			Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
