@@ -9,7 +9,7 @@ tags: [blogs]
 author: Baltej Giri
 ---
 
-# Cisco Router as DHCP Server
+# Cisco Router as a DHCP Server
 A cisco router or a cisco switch can be used as a DHCP server. An enterprise can decide to configure DHCP service on a Cisco Router or Switch depanding their infrastrcure design/need. In this blog, a simple yet complex network design is used to demonstrate the concept of DHCP service on Cisco router. This network design consists of a router, mulilayer switch and two PCs. The complexity of this design is in the configuration of DHCP server using Cisco router concept.
 
 in an enterprise class network if we choose to use the DHCP server funtion either on cisco router or Cisco's layer 3 swithes.
