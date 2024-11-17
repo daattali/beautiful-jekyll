@@ -9,8 +9,10 @@ tags: [blogs]
 author: Baltej Giri
 ---
 
-# DHCP Server Lab using Cisco router
-Configuring DHCP on a cisco router or a cisco switch with multiple networks (vlans) can be tricky. An enterprise can decide to configure in an enterprise class network if we choose to use the DHCP server funtion either on cisco router or Cisco's layer 3 swithes.
+# Cisco Router as DHCP Server
+A cisco router or a cisco switch can be used as a DHCP server. An enterprise can decide to configure DHCP service on a Cisco Router or Switch depanding their infrastrcure design/need. In this blog, a simple yet complex network design is used to demonstrate the concept of DHCP service on Cisco router. This network design consists of a router, mulilayer switch and two PCs. The complexity of this design is in the configuration of DHCP server using Cisco router concept.
+
+in an enterprise class network if we choose to use the DHCP server funtion either on cisco router or Cisco's layer 3 swithes.
 
 The following instructions are required to configure the DHCP Server Lab on a Cisco Router, this lab include the setup of; ip address exclude list on each vlan and setting switch as the default gateway for each vlan but dns server as router. At last we need to verify the connectivity from PC 1 to PC 2.
 
@@ -27,7 +29,7 @@ The following bullet points are the overall point of view of how this lab should
 The detailed ip address and vlans information is in the logical diagram of this lab.
 
 ## Configuration
-### Router1
+### Router
 
 - IP address configuration on both interfaces <code>gig0/0/0</code> and <code>loopback 0</code>.
 	<pre>
@@ -66,7 +68,7 @@ The detailed ip address and vlans information is in the logical diagram of this 
 	cdp run
 	</pre>
 
-### Switch 1
+### Switch
 
 - Creating vlans on switch and assigning interfaces gig1/0/2-3 to respective vlans; vlan10 and vlan20
 	<pre>
