@@ -9,8 +9,8 @@ tags: [blogs]
 author: Baltej Giri
 ---
 
-# DHCP SERVER LAB
-Configuring DHCP on router and switch while using vlans can be tricky but it is a common practive if an enterprise choose to use the DHCP server funtion either on cisco router or Cisco's layer 3 swithes.
+# DHCP Server Lab using Cisco router
+Configuring DHCP on a cisco router or a cisco switch with multiple networks (vlans) can be tricky. An enterprise can decide to configure in an enterprise class network if we choose to use the DHCP server funtion either on cisco router or Cisco's layer 3 swithes.
 
 The following instructions are required to configure the DHCP Server Lab on a Cisco Router, this lab include the setup of; ip address exclude list on each vlan and setting switch as the default gateway for each vlan but dns server as router. At last we need to verify the connectivity from PC 1 to PC 2.
 
@@ -189,66 +189,58 @@ Next section shows the verification of routing, cdp neighbors, ip addresses veri
 		All possible debugging has been turned off
 	</pre>
 - Now we can verify ip addresses on both pc-1 and pc-2 as well as a ping test from one pc to another.
-PC 1
-	<pre>
-		C:\>ipconfig
-		FastEthernet0 Connection:(default port)
-		Connection-specific DNS Suffix..: 
-		Link-local IPv6 Address.........: FE80::201:C9FF:FEE3:8437
-		IPv6 Address....................: ::
-		IPv4 Address....................: 10.1.10.11
-		Subnet Mask.....................: 255.255.255.0
-		Default Gateway.................: ::
-						 10.1.10.1
-	</pre>
-PC 2
-	<pre>
-		C:\>ipconfig
-
-		FastEthernet0 Connection:(default port)
-
-		Connection-specific DNS Suffix..: 
-		Link-local IPv6 Address.........: FE80::200:CFF:FE59:952A
-		IPv6 Address....................: ::
-		IPv4 Address....................: 10.1.20.11
-		Subnet Mask.....................: 255.255.255.0
-		Default Gateway.................: ::
-										10.1.20.1
-	</pre>
-
-Ping test from PC 1 to PC 2 and PC 2 to PC1.
-	<pre>
-		C:\>ping 10.1.20.11
-
-		Pinging 10.1.20.11 with 32 bytes of data:
-
-		Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
-		Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
-		Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
-		Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
-
-		Ping statistics for 10.1.20.11:
-		Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-		Approximate round trip times in milli-seconds:
-		Minimum = 0ms, Maximum = 0ms, Average = 0ms
-	</pre>
-PC 2
-<pre>
-	C:\>ping 10.1.10.11
-
-	Pinging 10.1.10.11 with 32 bytes of data:
-
-	Reply from 10.1.10.11: bytes=32 time<1ms TTL=127
-	Reply from 10.1.10.11: bytes=32 time<1ms TTL=127
-	Reply from 10.1.10.11: bytes=32 time<1ms TTL=127
-	Reply from 10.1.10.11: bytes=32 time<1ms TTL=127
-
-	Ping statistics for 10.1.10.11:
-    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-	Approximate round trip times in milli-seconds:
-    Minimum = 0ms, Maximum = 0ms, Average = 0ms
-</pre>
-
+	- PC 1 receiced IPv4 address of 10.1.10.11 with subnet mask 255.255.255.0 and default gateway address 10.1.10.1 from the DHCP server, from router (rtr-1) in this case.
+		<pre>
+			C:\>ipconfig
+			FastEthernet0 Connection:(default port)
+			Connection-specific DNS Suffix..: 
+			Link-local IPv6 Address.........: FE80::201:C9FF:FEE3:8437
+			IPv6 Address....................: ::
+			IPv4 Address....................: 10.1.10.11
+			Subnet Mask.....................: 255.255.255.0
+			Default Gateway.................: ::10.1.10.1
+		</pre>
+	- PC 2 receiced IPv4 address of 10.1.20.11 with subnet mask 255.255.255.0 and default gateway address 10.1.20.1 from the DHCP server from router (rtr-1) similar to PC1.
+		<pre>
+			C:\>ipconfig
+			FastEthernet0 Connection:(default port)
+			Connection-specific DNS Suffix..: 
+			Link-local IPv6 Address.........: FE80::200:CFF:FE59:952A
+			IPv6 Address....................: ::
+			IPv4 Address....................: 10.1.20.11
+			Subnet Mask.....................: 255.255.255.0
+			Default Gateway.................: ::10.1.20.1
+		</pre>
+	- Ping test from PC 1 to PC 2 and PC 2 to PC1.
+	- PC 1 can ping to PC 2 successfully.
+		<pre>
+			C:\>ping 10.1.20.11
+			Pinging 10.1.20.11 with 32 bytes of data:
+			
+			Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
+			Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
+			Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
+			Reply from 10.1.20.11: bytes=32 time<1ms TTL=127
+				
+			Ping statistics for 10.1.20.11:
+			Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+			Approximate round trip times in milli-seconds:
+			Minimum = 0ms, Maximum = 0ms, Average = 0ms
+		</pre>
+	- PC2 can also ping to PC2, these ping tests proves out that the routing is working between both networks.
+		<pre>
+			C:\>ping 10.1.10.11
+			Pinging 10.1.10.11 with 32 bytes of data:
+			Reply from 10.1.10.11: bytes=32 time<1ms TTL=127
+			Reply from 10.1.10.11: bytes=32 time<1ms TTL=127
+			Reply from 10.1.10.11: bytes=32 time<1ms TTL=127
+			Reply from 10.1.10.11: bytes=32 time<1ms TTL=127
+			Ping statistics for 10.1.10.11:
+	
+		    	Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+			Approximate round trip times in milli-seconds:
+		    	Minimum = 0ms, Maximum = 0ms, Average = 0ms
+		</pre>
 ### Switch
 - Switch (sw-1) has static route 1.1.1.1 learnt by 10.1.1.254.
 	<pre>
