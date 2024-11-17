@@ -2,7 +2,7 @@
 layout: post
 title: Cisco Router as a DHCP Server
 subtitle: A topic from CCNA.
-#cover-img: /assets/img/cisco_router_as_a_dhcp_server.jpg
+#cover-img: /assets/img/Router_as_a_DHCP_Server_Diagram.png
 #thumbnail-img: /assets/img/thumb.png
 #share-img: /assets/img/path.jpg
 tags: [blogs]
