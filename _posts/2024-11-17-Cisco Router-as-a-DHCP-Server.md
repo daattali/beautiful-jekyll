@@ -59,6 +59,9 @@ The following bullet points are the overall point of view of how this lab should
 
 The detailed ip address and vlans information is in the logical diagram of this lab.
 
+## Design
+[Cisco Router as a DHCP Server](/assets/img/Router_as_a_DHCP_Server_Diagram.png)
+
 ## Configuration
 ### Router
 
