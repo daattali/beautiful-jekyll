@@ -25,6 +25,9 @@ author: Baltej Giri
 navbar-links:
   About Me: "aboutme"
   Blogs: "blogs"
+    - Categories
+      - Networking
+      - Linux
   #Resume: "resume.pdf"
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
