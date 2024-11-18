@@ -1,6 +1,10 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gemspec
+# Core Jekyll gem
+gem 'jekyll'
 
+# Dependencies for timezone support on Windows
+gem 'tzinfo'
+gem 'tzinfo-data'
+gem 'jekyll-paginate'
+gem 'jekyll-sitemap'

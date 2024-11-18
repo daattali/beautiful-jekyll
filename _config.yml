@@ -58,6 +58,7 @@ social-network-links:
   email: "ameen.abdelmutalab@gmail.com"
   linkedin: "ameen-abdelmutalab"  # Your LinkedIn profile ID
   github: "AminAbd"
+  google-scholar: "yfD8PpEAAAAJ"  # Replace with your Google Scholar profile ID
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
@@ -263,6 +264,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:year-:month-:day-:title/
 paginate: 5
+paginate_path: "/page:num/"
 
 kramdown:
   input: GFM
