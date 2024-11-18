@@ -9,7 +9,7 @@ tags: [blogs]
 author: Baltej Giri
 ---
 
-**Preface**
+##### Preface
 Hello fellow learners, I am writing this blog to document my understanding on DHCP server. DHCP servers can be setup in multiple ways, in this blog I am covering the details on how to setup DHCP server on a Cisco router. This blog has four parts, the first part is about an introduction. In the second part, I have designed a logical diagram of the network. The third part, the configuration on all network devices used in this lab. The last part is about verification, verification of configuration is important as it makes sure we're getting the anticipated results. 
 
 # Introduction
@@ -61,6 +61,7 @@ The following bullet points are the overall point of view of how this lab should
 The detailed ip address and vlans information is in the logical diagram of this lab.
 
 ## Design
+The design is created using Microsoft Visio. The design is simple yet complex, it carries both layer 2 and layer 3 technologies of OSI model. Switch's virtual interface 1 is used as a default gateway which creates a need of IP DHCP helper and routing between different networks.
 ![Router_as_a_DHCP_Server_Diagram](https://baltejgiri.github.io/assets/img/Router_as_a_DHCP_Server_Diagram.png)
 
 ## Configuration
