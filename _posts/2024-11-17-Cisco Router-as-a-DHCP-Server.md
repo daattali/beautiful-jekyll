@@ -69,39 +69,39 @@ The design is created using Microsoft Visio. The design is simple yet complex, i
 
 - IP address configuration on both interfaces ```gig0/0/0``` and ```loopback 0```.
 	<pre>
-	Router(config)#interface gig0/0/0
-	Router(config-if)#ip address 10.1.1.254 255.255.255.0
-	Router(config-if)#no shutdown
-	Router(config-if)#exit
-	Router(config)#interface loopback0
-	Router(config-if)#ip address 1.1.1.1 255.255.255.255
-	Router(config-if)#no shutdown
-	Router(config-if)#end
+		Router(config)#interface gig0/0/0
+		Router(config-if)#ip address 10.1.1.254 255.255.255.0
+		Router(config-if)#no shutdown
+		Router(config-if)#exit
+		Router(config)#interface loopback0
+		Router(config-if)#ip address 1.1.1.1 255.255.255.255
+		Router(config-if)#no shutdown
+		Router(config-if)#end
 	</pre>
 - Configuring ip addresses exclude list for both subnets, subnet ```10.1.10.0/24``` and ```10.1.20.0/24```
 	Router(config)#ip dhcp excluded-address 10.1.10.1 10.1.10.10
 	Router(config)#ip dhcp excluded-address 10.1.20.1 10.1.20.10
 - Creating ip dhcp pool name, pool names: vlan10 and vlan20 and assigning network address, default router and dns server addresses.
 	<pre>
-	Router(config)#ip dhcp pool vlan10
-	Router(dhcp-config)#network 10.1.10.0 255.255.255.0
-	Router(dhcp-config)#default-router 10.1.10.1
-	Router(dhcp-config)#dns-server 10.1.1.254
-	Router(dhcp-config)#exit
-	Router(config)#ip dhcp pool vlan20
-	Router(dhcp-config)#network 10.1.20.0 255.255.255.0
-	Router(dhcp-config)#default-router 10.1.20.1
-	Router(dhcp-config)#dns-server 10.1.1.254
+		Router(config)#ip dhcp pool vlan10
+		Router(dhcp-config)#network 10.1.10.0 255.255.255.0
+		Router(dhcp-config)#default-router 10.1.10.1
+		Router(dhcp-config)#dns-server 10.1.1.254
+		Router(dhcp-config)#exit
+		Router(config)#ip dhcp pool vlan20
+		Router(dhcp-config)#network 10.1.20.0 255.255.255.0
+		Router(dhcp-config)#default-router 10.1.20.1
+		Router(dhcp-config)#dns-server 10.1.1.254
 	</pre>
 
 - Creating a static route on router  using it's loopback ip address as network to point all incoming traffic from network 10.1.10.0/24.
 	<pre>
-	Router(config)#ip route 10.1.10.0 255.255.255.0 10.1.1.1
+		Router(config)#ip route 10.1.10.0 255.255.255.0 10.1.1.1
 	</pre>
 
-- Enable CDP on switch to view the neighbor device and it's connected ports.
+- Enable CDP on router to view the neighbor device and it's connected ports.
 	<pre>
-	Router(config)#cdp run
+		Router(config)#cdp run
 	</pre>
 
 ### Switch
@@ -176,10 +176,10 @@ The verification of working configuration and protocol can be tested on a router
 ### Router
 - We can see both switch and router are learning static routes.
 	<pre>
-		Router#show ip route static 
-		 10.0.0.0/8 is variably subnetted, 4 subnets, 2 masks
-	S       10.1.10.0/24 [1/0] via 10.1.1.1
-	S       10.1.20.0/24 [1/0] via 10.1.1.1
+			Router#show ip route static 
+			 10.0.0.0/8 is variably subnetted, 4 subnets, 2 masks
+		S       10.1.10.0/24 [1/0] via 10.1.1.1
+		S       10.1.20.0/24 [1/0] via 10.1.1.1
 	</pre>
 - CDP neighbor command shows us, sw-1 is connected to rtr-1's local interface gig0/0/0 and it shows switch's (sw-1) port id is gig1/0/1
 	<pre>
