@@ -24,7 +24,7 @@ author: Baltej Giri
 
 navbar-links:
   About Me: "aboutme"
-  #Blogs: "blogs"
+  Blogs: "blogs"
   #Resume: "resume.pdf"
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
@@ -40,7 +40,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/profile_picture_2.jpg"
+avatar: "/assets/img/profile_picture_3.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -151,7 +151,7 @@ footer-hover-col: "#0085A1"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
+navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
