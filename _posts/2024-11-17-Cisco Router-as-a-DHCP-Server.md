@@ -60,11 +60,11 @@ The following bullet points are the overall point of view of how this lab should
 
 The detailed ip address and vlans information is in the logical diagram of this lab.
 
-## Design
+# Design
 The design is created using Microsoft Visio. The design is simple yet complex, it carries both layer 2 and layer 3 technologies of OSI model. Switch's virtual interface 1 is used as a default gateway which creates a need of IP DHCP helper and routing between different networks.
 ![Router_as_a_DHCP_Server_Diagram](https://baltejgiri.github.io/assets/img/Router_as_a_DHCP_Server_Diagram.png)
 
-## Configuration
+# Configuration
 ### Router
 
 - IP address configuration on both interfaces <code>gig0/0/0</code> and <code>loopback 0</code>.
@@ -171,7 +171,7 @@ This completes the configuration on router and switch. The PC1 and PC2 needs to 
 
 Next section shows the verification of routing, cdp neighbours, ip addresses verification, and ping connectivity on router, switch and pc's.
 
-## Verification
+# Verification
 
 ### Router
 - We can see both switch and router are learing static routes.
