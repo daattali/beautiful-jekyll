@@ -9,10 +9,11 @@ tags: [blogs]
 author: Baltej Giri
 ---
 
-#### What is this blog about?
-This blog is from a topic from CCNA exam and I am documenting my journey to be a CCNA certified, more specifically I am writing this blog on a topic "Cisco Router as a DHCP server". This document will have four parts, the first part is about introduction of this lab, second part where I have designed a logical diagram of this network, the third part where the actual fun begins, the configuration, and the last part is making sure we're getting the anticipated results. 
+**Preface**
+Hello fellow learners, I am writing this blog to document my understanding on DHCP server. DHCP servers can be setup in multiple ways, in this blog I am covering the details on how to setup DHCP server on a Cisco router. This blog has four parts, the first part is about an introduction. In the second part, I have designed a logical diagram of the network. The third part, the configuration on all network devices used in this lab. The last part is about verification, verification of configuration is important as it makes sure we're getting the anticipated results. 
 
-# Cisco Router as a DHCP Server
+# Introduction
+## Cisco Router as a DHCP Server
 
 A Cisco router or a Cisco switch can be used as a DHCP server. An enterprise can decide to configure DHCP server on a Cisco router or switch depending their infrastructure design. In this blog, a simple yet complex network design is used to demonstrate the concept of DHCP server on Cisco router. This network design consists of a router, multi-layer switch and two PCs. The complexity of this design is in the configuration of DHCP server using Cisco router concept.
 
@@ -20,11 +21,11 @@ This lab has more than just getting a DHCP server service configured on router. 
 
 A routing protocol is required on both switch and router to route traffic between different networks. Switch needs DHCP forwarding enabled on each VLAN because PCs sends out DHCP Discover message when it starts up, and DHCP server responses with a DHCP Offer message. The client then selects a server and broadcasts a DHCP Request message. This process uses a broadcast message. A layer 3 switch does not forward broadcast packets that are designated to other devices.
 
-There are some other protocols and features enabled in this lab i.e. cdp neighbour to view the neighbour device and interface from each other. One of my favourite feature i like to enable on all network devices is ```logging synchronous```. This feature keeps the input line of text in your control otherwise network devices logs displaying on CLI can ghost your place in the line.
+There are some other protocols and features enabled in this lab i.e. cdp neighbor to view the neighbor device and interface from each other. One of my favorite feature i like to enable on all network devices is ```logging synchronous```. This feature keeps the input line of text in control otherwise network devices logs displaying on CLI can ghost your place in the line.
 
 In the end I have sectioned the part of documentation to show the verification of working lab. Verification is important as it make us sure network device is doing what we have told it to do. Additionally, verification commands are also used to troubleshoot the issues. 
 
-## Resources
+### Resources
 
 - Packet Tracer
 - Cisco ISR4321 Router
@@ -34,7 +35,7 @@ In the end I have sectioned the part of documentation to show the verification o
 - Notepad++
 - Markdown (.md) file format to write this blog-post
 
-## IP Addresses
+### IP Addresses
 The table below shows the IP addresses used on router's and switch's interfaces.
 
 <pre>
