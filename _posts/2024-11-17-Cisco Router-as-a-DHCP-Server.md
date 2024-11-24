@@ -7,6 +7,7 @@ subtitle: A topic from CCNA.
 #share-img: /assets/img/path.jpg
 tags: [blogs]
 author: Baltej Giri
+full-width: true
 ---
 
 ##### Preface
