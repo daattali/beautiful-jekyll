@@ -29,10 +29,10 @@ navbar-links:
       - Networking:
       - Linux:
   #Resume: "resume.pdf"
-  #Posts:
+  Posts:
     - Blogs: "https://beautifuljekyll.com"
     - Documents: "https://www.markdowntutorial.com/"
-  # Documentations: "/_documentation/2024-07-20-Routing using Multilayer and Router on Stick.md/"
+  Documentations: "/_documentation/2024-07-20-Routing using Multilayer and Router on Stick.md/"
   
   #"inter-vlan routing using ROAS, SVI and Routed Ports.md"
   
