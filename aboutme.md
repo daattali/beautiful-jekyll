@@ -2,6 +2,7 @@
 layout: page
 title: Whoami
 subtitle: Everyday learner
+full-width: true
 ---
 
 My name is Baltej Giri. I am a Computer Networking Professional with six plus years of experience in Information Technology. My core skills are :
