@@ -1,11 +1,8 @@
 ---
 layout: page
-title: Documentation
+title: Routing using Multilayer and Router on Stick..
 subtitle: CCNA Notes
 ---
-layout: post
-title: Routing using Multilayer and Router on Stick..
-subtitle: Where am i in my career and learning..
 # cover-img: assets/img/where_am_i.jpg
 # thumbnail-img: /assets/img/thumb.png
 # share-img: /assets/img/path.jpg
