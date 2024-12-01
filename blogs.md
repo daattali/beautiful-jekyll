@@ -1,9 +1,5 @@
-path:
-tags: [blogs]
-author: Baltej Giri
 ---
-
----
-layout: base
-title: postsß
+layout: page
+title: Blogs
+full-width: true
 ---
