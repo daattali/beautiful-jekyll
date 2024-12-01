@@ -24,18 +24,10 @@ author: Baltej Giri
 
 navbar-links:
   About Me: "aboutme"
-  #Blogs: "blogs"
+  Blogs: "blogs"
     - Categories:
       - Networking:
       - Linux:
-  #Resume: "resume.pdf"
-  Resources:
-    - Blogs: "https://beautifuljekyll.com"
-    - Documents: "https://www.markdowntutorial.com/"
-  Documentations: "documentations"
-  
-  #"inter-vlan routing using ROAS, SVI and Routed Ports.md"
-  
 
 ################
 # --- Logo --- #

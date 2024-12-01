@@ -1,9 +1,9 @@
-path: _posts/
+path:
 tags: [blogs]
 author: Baltej Giri
 ---
 
 ---
 layout: base
-title: posts
+title: postsß
 ---
