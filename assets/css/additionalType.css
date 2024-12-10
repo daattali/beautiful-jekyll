@@ -6,3 +6,75 @@
     margin-left: 50px;
     margin-right:50px;
 }
+
+  /* Quote https://codepen.io/jupago/pen/GPxqLX
+ 
+  /* Blockquote main style */
+  .blockquote {
+      position: relative;
+      /*font-family: 'Barlow Condensed', sans-serif;*/
+      max-width: 900px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      align-self: center;
+      /*background-color: #292a2b;*/
+  }
+  
+  /* Blockquote header */
+  .blockquote h1 {
+      /*font-family: 'Abril Fatface', cursive;*/
+      position: relative; /* for pseudos */
+      color: #363636;
+      font-family:Lucida Sans;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1;
+      margin: 0;
+      border: 2px solid #fff;
+      border: solid 10px;
+      border-radius:20px;
+      padding: 25px;
+  }
+  
+  /* Blockquote right double quotes */
+  .blockquote h1:after {
+      content:"";
+      position: absolute;
+      border: 10px solid #363636;
+      border-radius: 0 100% 0 0;
+      width: 60px;
+      height: 60px;
+      bottom: -62px;
+      left: 50px;
+      border-bottom: none;
+      border-left: none;
+      z-index: 3; 
+  }
+  
+  /* increase header size after 600px */
+  @media all and (min-width: 600px) {
+      .blockquote h1 {
+          font-size: 3rem;
+          line-height: 1.2;
+     }
+  
+  }
+  
+  /* Blockquote subheader */
+  .blockquote h4 {
+      position: relative;
+      color: #363636;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0;
+      padding-top: 15px;
+      z-index: 1;
+      margin-left:150px;
+      padding-left:12px;
+  }
+  
+   
+  .blockquote h4:first-letter {
+    margin-left:-12px;
+  }

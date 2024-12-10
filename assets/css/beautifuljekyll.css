@@ -708,9 +708,17 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   color: #FFF;
   text-shadow: 1px 1px 3px #000;
 }
+
+@font-face {
+  font-family: 'Violence'; /*a name to be used later*/
+  src: url(../font/Violent\ Desire.ttf); /*URL to font*/
+}
+
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 3.125rem;
+  font-size: 7rem;
+  font-family: 'Violence';
+  text-shadow: 20px 20px 5px black;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
@@ -763,7 +771,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
     padding: 9.375rem 0;
   }
   .intro-header .page-heading h1 {
-    font-size: 5rem;
+    font-size: 10rem;
   }
   .intro-header .post-heading h1 {
     font-size: 3.125rem;
