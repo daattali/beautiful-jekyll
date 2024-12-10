@@ -407,6 +407,7 @@ img {
 /* --- Footer --- */
 
 footer {
+  z-index: 1; 
   padding: 1.875rem 0;
   border-top: 1px var(--footer-col) solid;
   margin-top: 3.125rem;
