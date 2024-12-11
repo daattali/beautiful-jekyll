@@ -224,14 +224,15 @@ img {
 .navbar-toggler {
   font-size: 1rem;
   margin: 0.5rem 0;
+  background-color: #b8b8b8;
 }
 .navbar-custom .navbar-toggler:focus,
 .navbar-custom .navbar-toggler:hover {
-  background-color: initial;
+  background-color: #AB0000;
 }
 
 .navbar-custom .navbar-toggler[aria-expanded="true"] {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #AB0000;
 }
 
 .dropdown-toggle::after {
@@ -677,7 +678,7 @@ footer .footer-custom-content {
   background-size: cover;
   -o-background-size: cover;
   margin-top: 3.1875rem; /* The small navbar is 50px tall + 1px border */
-  margin-bottom: 2.1875rem;
+  margin-bottom: 10px;
 }
 nav.top-nav-short-permanent ~ header > .intro-header {
   margin-top: 5rem;

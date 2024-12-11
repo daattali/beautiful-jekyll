@@ -4,7 +4,6 @@ title: Datasets
 subtitle: Don't add to much datasets,they said...
 ---
 
-<details>
-  <summary>CMU dataset</summary>
-  
-</details>
+<h1 style="text-align: center;">CMU movie dataset</h1>
+<h1 style="text-align: center;">Kaggle dataset</h1>
+<h1 style="text-align: center;">FBI dataset</h1>

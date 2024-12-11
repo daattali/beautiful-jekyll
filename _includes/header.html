@@ -62,4 +62,66 @@
   {% endfor %}
 {% endif %}
 
+{% if page.blood %}
+<div class="drops">  
+  <div class="drop1"></div>
+  <div class="drop2"></div>
+  <div class="drop2"></div>
+  <div class="drop2"></div>
+  <div class="drop2"></div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+  <filter id="liquid">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="liquid" />
+  </filter>
+</defs>
+</svg>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    function createRandomMarginAnimation() {
+      const drops = document.querySelectorAll('.drop2');
+      if (drops.length === 0) return; // Exit if the .drop2 element is not found
+
+      const diff = 200;
+      const maxWidth = window.innerWidth;
+
+      drops.forEach((drop, index) => {
+      const timing = Math.random() * 8+2;
+      const timing2 = Math.random() * 3+1;
+      const startMargin = Math.random() * maxWidth;
+      const offset = (Math.random() * diff * 2) - diff; 
+      let endMargin = startMargin + offset;
+
+      // Ensure endMargin stays within screen bounds
+      endMargin = Math.max(0, Math.min(endMargin, maxWidth));
+
+      const animationName = `marginChange_${Math.floor(Math.random() * 100000)}`;
+ 
+      const keyframes = `
+        @keyframes ${animationName} {
+          0% { margin-left: ${startMargin}px; }
+          100% { margin-left: ${endMargin}px; }
+        }
+      `;
+      const styleSheet = document.styleSheets[0];
+      styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+
+      // Update the animation on this element
+      const w = Math.random()*20 + 15;
+      drop.style.width = `${w}px`;
+      drop.style.height = `${w + Math.random()*10 - 5}px`;
+      drop.style.animation = `drop ${timing}s cubic-bezier(1,.19,.66,.12) ${timing2}s infinite, ${animationName} ${timing}s ease-in-out ${timing2}s infinite alternate`;
+    });
+  }
+
+  // Initialize the animation
+  createRandomMarginAnimation();
+  //setInterval(createRandomMarginAnimation, 2000);
+});
+</script>
+{% endif %}
+
 </header>
