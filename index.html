@@ -6,23 +6,24 @@ cover-img: "assets/img/redBackground.png"
 blood: true
 ---
 
-
-    <div class="blockquote">
-      <h1>
-        "<span style="color:#e74848">Violence.</span> in real life is terrible; violence in movies can be cool. It's just another colour to work with."
-       </h1>
-      <h4>Quentin Tarantino</h4>
-    </div>
+<div class="blockquote">
+  <h1>
+    "<span style="color:#e74848">Violence.</span> in real life is terrible; violence in movies can be cool. It's just another colour to work with."
+   </h1>
+  <h4>Quentin Tarantino</h4>
+</div>
+<p>
     Violence, according to the <a target="_blank" href="https://www.undrr.org/understanding-disaster-risk/terminology/hips/so0006#:~:text=Violence%20refers%20to%20the%20intentional,a%20community%2C%20or%20a%20government.">UUDR</a>, 
     refers to the intentional or unintentional use of force whether physical or psychological, threatened or actual, against an individual, oneself, or against a group of people, a community, or a government. <br/>
     We all have a feeling about what violence is. Everyday violence seems to be on the rise worldwide, as a study on the perception of violence in one's own neighborhood states. <br/>
     In parallel, a lot of movies depict violence. The impact of seen such fictional violence is a <a target="_blank" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10262287/#:~:text=The%20results%20demonstrate%20that%20the,reduces%20behavioral%20inhibition%20in%20adolescents.
     ">global concern</a>,.  
     <h1 style="text-align: center;">How do real word violence and movies violence influence each other ? </h1>
-    Do violent movies increase real-world violence, or do they serve as a release that reduces it? Catharsis or Crocodile tears ? 
-    <br/><br/>
-    This study will focuss on United state of America, relating violent events within each states to the release of violent movies in the area. 
-
+    Is there a significant (positive or negative) correlation between the prevalence of violent movies and reported violent crimes in the US? Can we identify periods of abnormally many releases of violent movies?
+Can we identify genres that are particularly violent? Do violent movies increase real-world violence, or do they serve as a release that reduces it? Catharsis or Crocodile tears ? 
+</p><p>
+    This study will focus on United state of America, relating violent events within each states to the release of violent movies in the area. 
+  </p>
     
 
 <p class="oldBox">
@@ -34,9 +35,56 @@ blood: true
 </p>
 
 <h1 style="text-align: center">The data journey</h1>
-<h2 style="color: #AB0000;">Movie violence</h2>
-<h2 style="color: #AB0000;">Real life violence</h2>
-<h2 style="color: #AB0000;">Put it all together : a correlation? </h2>
+
+<p>
+Data cleaning, origin and exploration are developed in the dataset page. 
+Similarly all the models and methods implemented are explained in the models and methods page. 
+Here, we will focus on the workflow, visualization and findings.
+</p>
+<img style="align-content: center;"src="assets/diagram/workflow.png" alt="Workflow">
+
+<p>
+To be able to correlate real life violence and movies violences, we first have to quantify violence on both side. <br/>
+Our data journey will begin with the study of violence in movies starting from the CMU movie dataset. <br/>
+Secondly, we will analysis the national incident-based reporting system of the FBI to construct a violence score for each states of america.<br/>
+Finally, we will asses the correlation between the two metrics using an auto-regressive distributed lack model.
+</p>
+<h2>Movie violence classification</h2>
+
+<p>
+The central dataset for our study is the CMU Dataset. Since time will play a crucial role in our study and precise release dates are often unavailable, missing dates were filled using The Movies Dataset from Kaggle. 
+More about the data cleaning steps in the dataset page.
+</p>
+
+<h4>Violence subjectivity</h4>
+<p>
+  For our purpose, we need to classify american movies in different level of violence, using only the plots. 
+But how can we quantify violence ? What we consider violent or not is highly subjective. 
+</p>
+<p>
+  After data cleaning, we conducted a pilot survey to manually classify a group of movies between 3 categories :
+  <ul>
+    <li>Violent</li>
+    <li>Mildly violent</li>
+    <li>Non-violent</li>
+  </ul>
+ Movies have been classified multiple times to compare the result between different individuals. 
+ - show result
+ We conclude that a clear definition of violence will be crucial to classify the data. 
+ We engineered a prompt with a clear classification task, the definition of each level of violence and examples. We classified between the 3 levels and between 2 levels : violent and non-violent.
+
+ - show definition
+ - show prompt 
+ - show examples
+
+ result ? 
+</p>
+
+<h4>Movie violence classification</h4>
+To classify the data, We used the large language model Chat-GPT-4o mini. 
+
+<h2>Real life violence</h2>
+<h2>Put it all together : a correlation? </h2>
 
 <h1 style="text-align: center">Conclusion</h1>
 
