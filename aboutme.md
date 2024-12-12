@@ -4,13 +4,14 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
 ### My story
+I studied Mechanical Engineering at the Technion, and  I am currently persuing my Master's in the 
+I am a Mechanical Engineering MSc student with a passion for Control, Robotics, and Biomechanics. I have worked part time for over three years as an Energy Systems Modeling Engineer at Brightmerge during my BSc., and currently I'm doing my research at the [Neurobotics and Bionic Limbs Lab](https://enabletechnion.com/). 
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+My main interests include:
+- Control systems
+- Robotics
+- Biomechanics and Bionics
+- Nonlinear dynamics 
+- Machine Learning
+- Vibration Theory
