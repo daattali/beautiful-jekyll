@@ -4,13 +4,10 @@ title: Model & method
 subtitle: what we used, how and why
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+<h1 id="#LLM">LLM for violence classification</h1>
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+<h1>Sentiment analysis</h1>
 
-What else do you need?
+<h1>Empath model</h1>
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+<h1>Auto-regressive distributed lack model</h1>

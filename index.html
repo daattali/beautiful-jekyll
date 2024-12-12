@@ -8,14 +8,14 @@ blood: true
 
 <div class="blockquote">
   <h1>
-    "<span style="color:#e74848">Violence.</span> in real life is terrible; violence in movies can be cool. It's just another colour to work with."
+    "<span style="color:#e74848">Violence</span> in real life is terrible; violence in movies can be cool. It's just another colour to work with."
    </h1>
-  <h4>Quentin Tarantino</h4>
+  <h4 style="color:#e74848">Quentin Tarantino</h4>
 </div>
 <p>
     Violence, according to the <a target="_blank" href="https://www.undrr.org/understanding-disaster-risk/terminology/hips/so0006#:~:text=Violence%20refers%20to%20the%20intentional,a%20community%2C%20or%20a%20government.">UUDR</a>, 
     refers to the intentional or unintentional use of force whether physical or psychological, threatened or actual, against an individual, oneself, or against a group of people, a community, or a government. <br/>
-    We all have a feeling about what violence is. Everyday violence seems to be on the rise worldwide, as a study on the perception of violence in one's own neighborhood states. <br/>
+    We all have a feeling about what violence is. Everyday violence seems to be on the rise worldwide, as a <a target="_blank" href="https://www.ipsos.com/sites/default/files/ct/news/documents/2023-06/Ipsos-Global-Advisor-Crime-Law-Enforcement-Full-Report.pdf">study</a> on the perception of violence in one's own neighborhood states. <br/>
     In parallel, a lot of movies depict violence. The impact of seen such fictional violence is a <a target="_blank" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10262287/#:~:text=The%20results%20demonstrate%20that%20the,reduces%20behavioral%20inhibition%20in%20adolescents.
     ">global concern</a>,.  
     <h1 style="text-align: center;">How do real word violence and movies violence influence each other ? </h1>
@@ -24,7 +24,6 @@ Can we identify genres that are particularly violent? Do violent movies increase
 </p><p>
     This study will focus on United state of America, relating violent events within each states to the release of violent movies in the area. 
   </p>
-    
 
 <p class="oldBox">
   Crocodile tears. https://en.wikipedia.org/wiki/Crocodile_tears
@@ -50,7 +49,6 @@ Secondly, we will analysis the national incident-based reporting system of the F
 Finally, we will asses the correlation between the two metrics using an auto-regressive distributed lack model.
 </p>
 <h2>Movie violence classification</h2>
-
 <p>
 The central dataset for our study is the CMU Dataset. Since time will play a crucial role in our study and precise release dates are often unavailable, missing dates were filled using The Movies Dataset from Kaggle. 
 More about the data cleaning steps in the dataset page.
@@ -62,29 +60,76 @@ More about the data cleaning steps in the dataset page.
 But how can we quantify violence ? What we consider violent or not is highly subjective. 
 </p>
 <p>
-  After data cleaning, we conducted a pilot survey to manually classify a group of movies between 3 categories :
+  After data cleaning, we conducted a pilot survey to manually classify a subset of movies between 3 categories :
   <ul>
     <li>Violent</li>
-    <li>Mildly violent</li>
-    <li>Non-violent</li>
+    <li>Mild</li>
+    <li>Peaceful</li>
   </ul>
- Movies have been classified multiple times to compare the result between different individuals. 
- - show result
- We conclude that a clear definition of violence will be crucial to classify the data. 
- We engineered a prompt with a clear classification task, the definition of each level of violence and examples. We classified between the 3 levels and between 2 levels : violent and non-violent.
+ Movies have been classified multiple times to compare the result between different individuals. We relabelled all data with ambiguous result to create a validation set for the classification model.
+</p>
+<div class="flourish-embed flourish-scatter" data-src="visualisation/20744430"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20744430/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+<p>
+150 movies have been labelled, across the 80 that have at least be labelled two times, <b>30%</b> have been labelled differently. 
+Especially, 3 movies have been assigned to opposite labels ! (two had the 3 labels and one had the opposite). 
+We conclude that the notion of violence is complex and that a clear definition of each level of violence will be crucial for the following steps.
+</p>
+<h4>Movie violence classification</h4>
+<p>
+To classify the data, We used the large language model <a target="_blank" href="https://platform.openai.com/docs/models#gpt-4o-mini">Chat-GPT-4o mini</a> from OpenIA. 
 
- - show definition
- - show prompt 
- - show examples
+We first classified the data between the 3 levels as for human labelled data, and secondly between 2 levels : violent and non-violent. We engineered a prompt with a clear classification task, the definition of each level of violence and examples.
+<div class="hover-container">
+  Here for a deeper look into the model.
+    <a href="3Methods#LLM" class="card">
+         <h3 class="card__title">LLM model</h3>
+         <div class="bloodCard">
+          <div class="drops"> 
+            <div class="drop1"></div>
+            <div class="drop3"></div>
+          </div> 
+      </div>
+    </a>
+  </div>
+</p>
+<p>
+Here are the scale given to the model...<br/>
+<code style="color: red">
+  ### Violence scale : ### <br/><br/>
 
- result ? 
+  - **Peaceful**: The text describes no physical or psychological violence. There are no aggression, conflict, or harm to people or animals. Suitable for all audiences.<br/>
+  - **Mild**: The level of violence is medium or uncertain. There might be moments of tension or mild conflict, such as arguments. Mild action or suspense is allowed.<br/>
+  - **Violent**: The text describe extreme physical or psychological violence, such as physical aggression, conflict, or harm. Scenes may include fighting, injury, rape. It a prominent feature of the film.<br/><br/>
+
+### Instructions ### <br/><br/>
+Assign a level of violence to each plot movie plot below. Respond with a dictionary where the keys are the plot numbers (e.g., 'plot1', 'plot2') and the values are the levels of violence ('Peaceful', 'Mild', 'Violent')</code>
 </p>
 
-<h4>Movie violence classification</h4>
-To classify the data, We used the large language model Chat-GPT-4o mini. 
+<p>
+  ...And some examples.<br/>
+  <code style="color: red">
+    Here are some examples for each label : <br/>
+        - **Peaceful**: plot1 :'norma and malcolm miochaels are a middle-aged married couple who are in the midst of a midlife crisis. both decide to separate and begin their lives anew away from each other. however, problems ensue once they discover that they are no longer as young as they used to be.'
+        plot2:'in the 1840s, two sisters fall in love with the same man. while drunk, the man writes a letter proposing marriage to the wrong one.'<br/>
+        - **Mild**: plot1:'set in the 19th century, the plot centered around a man  who is falsely accused murder. the other side of the door was shot in monterrey, mexico.{{cite web}}'
+        plot2:'in a desperate, but not-too-courageous, attempt to end his life, a man hires a murderer to do the job for him. soon, though, things are looking better and the he must now avoid the hit.'<br/>
+        - **Violent**: plot1:'Richard Beck  is a police detective who believed that rape victims are to blame for the crime. He is later raped by two of the suspects he had been chasing. Ultimately, he changes his beliefs about rape victims. This made for TV movie was groundbreaking in that it portrayed the rape of a man by two other men, and because of this it has become a cult classic.'
+        plot2:'newlywed carl  goes to war where he endures major suffering. back home, wife pauli  starves, becomes a prostitute to survive, and their baby dies.'
+  </code>
+</p> 
+<p>
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/20746442"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20746442/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+The last model end up with <b>66.38% accuracy</b> on the validation set. <br/>
+At both extreme, the model success to label the data most of the time, with some mislabelling to "Mild". Out of 116 movies, only 2 have a opposite labelling (violent to peaceful). 
+Interestingly, the model tends to be more extreme than humans, labelling half of the mild category as peaceful of violent. For following analysis, we may remove the mild category. 
+<br/><br/>
+The model perform relatively well. However, we saw that this labelling is subjective. To assess our classification, we will analyse the data using the Empath model.
+</p>
+
+<h4>Validation of the classification</h4>
 
 <h2>Real life violence</h2>
 <h2>Put it all together : a correlation? </h2>
 
 <h1 style="text-align: center">Conclusion</h1>
-

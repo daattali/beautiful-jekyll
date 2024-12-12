@@ -1,3 +1,10 @@
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+
+html { scroll-behavior: smooth; }
+
 .oldBox {
     background-color: rgb(142, 132, 65);
     border-radius: 10px;
@@ -78,3 +85,58 @@
   .blockquote h4:first-letter {
     margin-left:-12px;
   }
+
+  /*Deep dive card*/
+  
+  .hover-container {
+    display: inline;
+    position: relative;
+    color: crimson;
+    font-weight: bold;
+    padding-bottom: 40px;
+  }
+
+  .hover-container:hover .card{
+    display: block;
+  }
+
+  .card {
+    position: absolute;
+    z-index: 1;
+    display: None;
+    height: 200px;
+    width: 200px;
+    border-radius: calc(var(--curve) * 1px);
+    text-decoration: none;
+    background: url("../img/DeepDive.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.bloodCard {
+    padding-top: 200px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.card:hover {
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.7), rgba(255, 0, 0, 0)) , 
+                url("../img/DeepDive.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover .bloodCard {
+    opacity: 1;
+}
+
+.card__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; 
+    padding: 20px;
+    font-size: 1em;
+    color: #fff;
+}

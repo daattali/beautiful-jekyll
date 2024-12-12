@@ -47,6 +47,16 @@
     background-color: #7A0000;
     animation: drop 4s cubic-bezier(1,.19,.66,.12) 2s infinite;
   }
+
+  .drop3 {
+    width: 20px;
+    height: 30px;
+    margin: auto;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #7A0000;
+    animation: drop 4s cubic-bezier(1,.19,.66,.12) 2s infinite;
+  }
   
   .drop1 {
     position: absolute;
