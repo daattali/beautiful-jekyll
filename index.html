@@ -135,6 +135,16 @@ The model perform relatively well. However, we saw that this labelling is subjec
 
 <h4>Validation of the classification</h4>
 
+<p>
+Now that the films are classified, we want to take a closer look at them before feeding them into our research model of the correlation between real and cinematic violence. <br/>
+As a first step, we perform a 2-dimensional PCA regression on the entire dataset and represent the two main components. We see clusters! In fact, films dominated by emotions such that: kill, negative_emotion, death and crime are most correlated on the upper part of the plot. The lower part, on the other hand, is dominated by films of categories such that: children, party, home, wedding, family. <br/>
+Clearly, the two types of films seem to be quite distinct: on the one hand, films that we can classify as violent and, on the other hand, peaceful films. <br/>
+
+Armed with this information, we move on to the analysis of the films as categorised by Chat-GPT-4o mini, hoping to validate their classification. <br/>
+For this, we extract the ten most represented categories in both categories. We clearly see a difference: violent films are categorised by kill, death, fight, war, etc.; whereas non-violent films deal with topics such as: travelling, communication, friends, wedding, etc. <br/>
+For a more visual representation, we choose 10 films at random, for which we represent the percentage for each of the 10 most present categories.
+</p>
+
 <h2>Real life violence</h2>
 <h2>Put it all together : a correlation? </h2>
 
