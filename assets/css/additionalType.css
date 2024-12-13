@@ -8,18 +8,23 @@
     src: url(../font/RusticRoadway.otf); /*URL to font*/
   }
 
+  @font-face {
+    font-family: 'OnceUponATime'; /*a name to be used later*/
+    src: url(../font/Beyond\ Wonderland.ttf); /*URL to font*/
+  }
+
 html { scroll-behavior: smooth; }
 
-.oldBox {
-    background-color: rgb(142, 132, 65);
-    border-radius: 10px;
-    border-color: black;
-    border-width: 10px;
-    margin-left: 50px;
-    margin-right:50px;
+.DataStory {
+  text-align: center;
+  font-family: 'OnceUponATime';
+  font-size: 100px;
+  color: #AB0000;
+  text-shadow: 10px 10px 5px rgba(19, 19, 19, 0.409);
 }
 
-  /* Quote https://codepen.io/jupago/pen/GPxqLX
+
+  /* Quote https://codepen.io/jupago/pen/GPxqLX ---------------------------------------------------*/
  
   /* Blockquote main style */
   .blockquote {
@@ -66,7 +71,7 @@ html { scroll-behavior: smooth; }
   /* increase header size after 600px */
   @media all and (min-width: 600px) {
       .blockquote h1 {
-          font-size: 3rem;
+          font-size: 2rem;
           line-height: 1.2;
      }
   
@@ -91,7 +96,7 @@ html { scroll-behavior: smooth; }
     margin-left:-12px;
   }
 
-  /*Deep dive card*/
+  /* Deep dive card ---------------------------------------------------*/
   
   .hover-container {
     display: inline;
@@ -146,7 +151,7 @@ html { scroll-behavior: smooth; }
     color: #fff;
 }
 
-/*Note for funfact*/
+/* PostIT ---------------------------------------------------*/
 
 .postIT {
     margin: auto;
@@ -213,3 +218,284 @@ html { scroll-behavior: smooth; }
     position:relative;
     z-index:5;
   }
+
+  /* Newspaper https://codepen.io/grinberg/pen/WVwaYr ---------------------------------------------------*/
+
+  /*––––––––––––––––––Fonts Links––––––––––––––––––––*/
+@import url('https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700');
+@import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700&display=swap');
+
+
+
+/*––––––––––––––––––Header of Newspaper––––––––––––––––––––*/
+.header
+{
+    padding-top: 10px;
+    background-image: url(../img/PAPER.jpeg);
+}
+
+.header__info
+{
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100px;
+    padding: 10px 10px;
+    border: 1px solid;
+    font-size: 0.5em;
+}
+
+.header__weather
+{
+    float: right;
+    padding-right: 10px;
+    width: 100px;
+}
+
+.header__weather-title
+{
+    margin: 0;
+    text-align: center;
+    font-family: Space Mono, monospace;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.header__weather-text
+{
+    margin: 0;
+    text-align: justify;
+    font-size: 0.4em;
+    line-height: 1.1;
+}
+
+.header__title
+{
+    font-family: UnifrakturCook, fantasy;
+    overflow: visible;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+
+/*––––––––––––––––––Under Header of Newspaper–––––––––––––––––*/
+.sub-header
+{
+    padding: 5px 0;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-image: url(../img/PAPER.jpeg);
+}
+
+.sub-header__copyright
+{
+    display: inline-block;
+    font-size: .4em;
+    margin: 0 30px;
+}
+
+.sub-header__create-date
+{
+  font-size: 0.8em;
+}
+
+.sub-header__number
+{
+  padding-left: 10px;
+  font-size: 0.8em;
+}
+
+.sub-header__price
+{
+    float: right;
+}
+
+
+/*––––––––––––––––––Main Content––––––––––––––––*/
+.content_newpaper
+{
+    display: flex;
+    background-image: url(../img/PAPER.jpeg);
+}
+
+/*––––––––––––––––––Article Block–––––––––––––––––––––*/
+.article__title
+{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Six Caps, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.article__help
+{
+    margin-top: 10px !important;
+    margin-bottom: 4px !important;
+}
+
+
+.article__add-text
+{
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-style: oblique;
+    font-size: .4rem;
+    text-align: justify;
+    text-indent: 2ex;
+}
+
+.article__author
+{
+    display: block;
+    font-weight: bold;
+    font-size: .4rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.article__content {
+    font-size: .6em;
+    text-indent: 2ex;
+    text-align: justify;
+    margin: 0;
+}
+
+.article__content p {
+    margin: 3px;
+}
+
+.article_columns_two .article__content {
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.article_columns_two .article__title
+{
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    font-size: 1.15em;
+    text-align:center;
+}
+
+.article_columns_two .article__author {
+    column-span: all;
+}
+
+.article_columns_two .article__continue {
+    column-span: all;
+}
+
+.article__continue
+{
+    display: block;
+    font-size: .8rem;
+    font-style: oblique;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.article__subtitle
+{
+    margin: 10px 0;
+    font-family: Times New Roman, serif;
+    font-weight: bold;
+    font-size: 1.17em;
+    text-align: center;
+}
+
+
+/*––––––––––––––––––Main Photo Block–––––––––*/
+.main-photo__wrapper
+{
+    margin: 0;
+}
+
+.main-photo__img
+{
+    width: 100%;
+    filter: sepia(75%);
+}
+
+.main-photo__title
+{
+    margin: 2px;
+    font-weight: bold;
+}
+
+.main-photo__caption {
+    font-size: .7rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.main-photo__desc
+{
+    margin-bottom: 20px;
+    font-size: .8em;
+}
+
+/*––––––––––––––––––Horizontal Line ––––––––––––––––*/
+.line
+{
+    border-top: 1px solid #000;
+}
+
+.line.line_type_bold
+{
+    margin-bottom: 3px;
+    border-width: 2px;
+}
+
+.line.line_type_short
+{
+    width: 70px;
+    margin: 0 auto;
+}
+
+/*––––––––––––––––––Center Columns––––––––––––––––––*/
+
+
+.article__title_font_racing {
+    font-family: Racing Sans One, sans-serif;
+    font-size: 2em;
+}
+
+.article__title_font_farsan {
+    font-family: Farsan, sans-serif;
+    font-style: italic;
+    font-size: 2.3em;
+}
+
+.center-column
+{
+    margin-top: 20px;
+    padding: 0 10px;
+    flex-grow: 2;
+}
+
+/*––––––––––––––––––Aside Columns––––––––––––––––––*/
+.left-column
+{
+    border-right: 1px solid #000;
+}
+
+.right-column
+{
+    border-left: 1px solid #000;
+}
+
+.right-column,
+.left-column
+{
+    box-sizing: border-box;
+    width: 150px;
+    margin-top: 20px;
+    padding: 0 10px;
+    flex-shrink: 0;
+    filter: blur(2.5px);
+}
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––––*/
