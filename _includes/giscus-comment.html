@@ -6,9 +6,19 @@
         data-category="{{ site.giscus.category }}"
         data-category-id="{{ site.giscus.category-id }}"
         data-mapping="{{ site.giscus.mapping }}"
+        data-strict="{{ site.giscus.strict }}"
         data-reactions-enabled="{{ site.giscus.reactions-enabled }}"
         data-emit-metadata="{{ site.giscus.emit-metadata }}"
-        data-theme="{{ site.giscus.theme }}"
+        data-input-position="{{ site.giscus.input-position }}"
+        {% assign theme = site.giscus.theme %}
+        {% if theme | slice: 0 == '/' %}
+            {% assign theme = theme | absolute_url %}
+        {% endif %}
+        data-theme="{{ theme }}"
+        data-lang="{{ site.giscus.lang }}"
+        {% if site.giscus.lazy-loading == true %}
+            data-loading="lazy"
+        {% endif %}
         crossorigin="anonymous"
         async>
 </script>
