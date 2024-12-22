@@ -1,0 +1,22 @@
+---
+layout: post
+title: Dell Firmware upgrade with Lifecycle Controller
+date: 2024-12-22T11:42:20.305Z
+nobanner: "yes"
+fb-img: null
+---
+
+During my years as a VMware sysadmin I got to do quite a bit of hardware work with firmware, drivers, compatibility and so on. But since I transition to the cloud native world this part of IT has moved further away from me for obvious reasons. Now lately I am getting back into this as part of a project at work around bare-metal and I figured I would use my Dell R430 for the first POC. Which includes upgrading firmware on the machine.
+
+I used to have a VM with Dell OpenManage Enterprise to upgrade everything quick and easy but I wiped my ESXi disk and I couldn't really be bothered reinstalling it since this machine will be wiped completely and I won't be using ESXi at all so I thought I'd just upgrade the firmware manually. 
+
+## Dell firmware upgrade with Lifecycle Controller
+
+There are [several methods](https://www.dell.com/support/kbdoc/en-us/000128194/updating-firmware-and-drivers-on-dell-emc-poweredge-servers) to upgrade firmware on a Dell server but I went with the Dell Lifecycle Controller option for the sake of simplicity.
+
+I just wanted to run through the steps here because the online documentation is a bit lacking and I'm pretty sure I will have forgotten all about it by the next time I want to do this again.
+
+- First, let's boot in the lifecycle controller by pressing F10
+
+![alt text](firmware1.png)
+
