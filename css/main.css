@@ -135,9 +135,10 @@ img {
 }
 
 .intro-text p {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.6;
   color: #404040;
+  background-color: #404040;
 }
 
 .navbar-custom .navbar-brand:hover,
