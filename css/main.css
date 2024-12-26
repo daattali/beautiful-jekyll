@@ -132,13 +132,13 @@ img {
   margin: 30px auto;
   max-width: 800px;
   padding: 20px;
+  background-color: #404040;
 }
 
 .intro-text p {
   font-size: 1em;
   line-height: 1.6;
   color: #404040;
-  background-color: #404040;
 }
 
 .navbar-custom .navbar-brand:hover,
