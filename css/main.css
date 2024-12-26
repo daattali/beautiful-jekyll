@@ -127,6 +127,19 @@ img {
   color: {{ site.navbar-text-col }};
 }
 
+.intro-text {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.intro-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #404040;
+}
+
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
