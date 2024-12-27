@@ -275,7 +275,7 @@ img {
 
 footer {
   padding: 30px 0;
-  border-top: 1px #b3b3b3 solid;
+  /* border-top: 1px #b3b3b3 solid; */
   margin-top: 50px;
   font-size: 14px;
   background-color: {{ site.footer-col }};
@@ -541,7 +541,7 @@ footer .theme-by {
   .intro-header .post-heading h1 {
     font-size: 50px;
   }
-  .intro-header.big-img .img-desc {
+  .intro-header.big-img .img-desc { 
     font-size: 14px;
   }
 }
