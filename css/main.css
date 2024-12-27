@@ -135,7 +135,7 @@ img {
 }
 
 .intro-text p {
-  font-size: 1em; /* if you want to change the summary text size */
+  font-size: 1.1em; /* if you want to change the summary text size */
   line-height: 1.6;
   color: hsl(0, 0%, 25%);
 }
