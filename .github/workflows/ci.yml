@@ -6,11 +6,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
+      - name: Install Bundler
+        run: gem install bundler
       - name: Install dependencies
-        run: bundle install && bundle exec appraisal install
+        run: |
+          bundle install
+          gem install appraisal # Appraisal gem 설치
       - name: Setup Pages
         id: configure-pages
         uses: actions/configure-pages@v5
