@@ -10,9 +10,15 @@ members:
           - name: David Held
             photo_url: https://davheld.github.io/DavidHeld_files/DavidHeld.jpg
             web_url: https://davheld.github.io
-  - name: Current members
+  - name: Current Members
     list:
-      - name: PhD students
+	  - name: Post-Doc
+        full: true
+        list:
+          - name: Tal Daniel<br>(co-hosted with Deepak Pathak)
+            photo_url: https://github.com/r-pad/r-pad.github.io/blob/master/img/members/taldaniel.jpg
+            web_url: https://taldatech.github.io
+      - name: PhD Students
         full: true
         list:
           - name: Ben Eisner
@@ -27,7 +33,7 @@ members:
           - name: Amber Li
             photo_url: https://www.ri.cmu.edu/app/uploads/2024/08/amberli2_0319-300x450.jpg
             web_url: https://amburger66.github.io/
-      - name: Masters students
+      - name: Masters Students
         full: true
         list:
           - name: Octavian Donca (MSR)
