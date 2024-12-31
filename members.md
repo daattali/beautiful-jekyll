@@ -12,7 +12,7 @@ members:
             web_url: https://davheld.github.io
   - name: Current Members
     list:
-	  - name: Post-Doc
+      - name: Post-Doc
         full: true
         list:
           - name: Tal Daniel<br>(co-hosted with Deepak Pathak)
