@@ -473,7 +473,7 @@ footer .theme-by {
   transition: opacity 1s linear;
 }
 .intro-header .page-heading {
-  text-align: center;
+  text-align: left;
 }
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
