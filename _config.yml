@@ -22,7 +22,9 @@ author: Zhaoyu(Jackie) Shi
 navbar-links:
   About me: "aboutme"
   Scientific: 
-    - Research: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
+    - Computational Fluid Dynamics: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
+    - AI insights:
+    - My Data Pool: 
   Media:
     - Photo: "https://beautifuljekyll.com"
     - Behind the photo: "https://github.com/Zhaoyu-Shi829/ML-on-Drag-Prediction"
