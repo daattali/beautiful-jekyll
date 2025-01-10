@@ -1,5 +1,8 @@
 ---
 layout: page
+body {
+    font-size: 14px; /* Adjust the size as needed */
+}
 title: My journey
 subtitle: what you **DO** matters and do what you truly **CARE**
 ---
