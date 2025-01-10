@@ -20,15 +20,15 @@ author: Zhaoyu (Jackie) Shi
 ###############################################
 
 navbar-links:
-  About me: "aboutme"
-  Scientific: 
+  Simple me: "aboutme"
+  Scientific Updates: 
     - Fluid Dynamics: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
-    - AI insights:
+    - AI insights: " "
     - My Data Pool: 
-  Media:
-    - Photo: "https://beautifuljekyll.com"
+  Random Bubbles:
+    - Photo Collection: "https://beautifuljekyll.com"
     - Behind the photo: "https://github.com/Zhaoyu-Shi829/ML-on-Drag-Prediction"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Views: "https://www.markdowntutorial.com/"
   
   
 ################
@@ -40,7 +40,7 @@ navbar-links:
 avatar: "/assets/img/profile.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: false
+round-avatar: True
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
@@ -55,29 +55,18 @@ round-avatar: false
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "shizhaoyu829@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
-#  medium: yourname
+  github: Zhaoyu-Shi829
+#  youtube: "@daattali"
 #  reddit: yourname or r/yoursubreddit
-#  linkedin: daattali
-#  xing: yourname
+  linkedin: Zhaoyu Shi
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
 #  bluesky: yourname
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
@@ -90,7 +79,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I am awesome and confused 
+rss-description: I am just trying to survive in the AI-fueled Model House : 
 
 ###########################
 # --- General options --- #
@@ -105,7 +94,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "my-struggle-.com"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
