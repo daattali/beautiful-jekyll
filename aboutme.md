@@ -1,13 +1,13 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: My journey
+subtitle: what you DO matters and do what you truly CARE
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Tjena folks! Thanks for your either 'Determistic' or 'Stocastic' visits 🚀 I My chinese name is Zhaoyu, but Jackie is approved 😉. The  I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- what is 
+- 
 
 What else do you need?
 
