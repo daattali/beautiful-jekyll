@@ -13,14 +13,14 @@
 title: CHAM SOC VET THUONG
 
 # Your name to show in the footer
-author: Some Person
+author: Trang Ho - Khoa Dieu Duong
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About/Contact: "aboutme"
+  About: "aboutme"
   Liệu pháp phút áp lực âm: "lieuphaphutam"
   Chăm sóc vết thương:
     - Trước phẫu thuật: "truocphauthuat"
