@@ -21,11 +21,11 @@ author: Some Person
 
 navbar-links:
   About/Contact: "aboutme"
-  Liệuphápphútáplựcâm: "lieuphaphutam"
-  Chămsócvếtthương:
-    - Trướcphẫuthuật: "truocphauthuat"
-    - Sauphẫuthuật: "sauphauthuat"
-  Chỉđịnhvàchốngchỉđịnh: "https://www.markdowntutorial.com/
+  Liệu pháp phút áp lực âm: "lieuphaphutam"
+  Chăm sóc vết thương:
+    - Trước phẫu thuật: "truocphauthuat"
+    - Sau phẫu thuật: "sauphauthuat"
+  Chỉ định và chống chỉ định: "https://www.markdowntutorial.com/"
 
 ################
 # --- Logo --- #
