@@ -20,7 +20,6 @@ author: Trang Ho - Khoa Dieu Duong
 ###############################################
 
 navbar-links:
-  About: "aboutme"
   Liệu pháp phút áp lực âm: "lieuphaphutam"
   Chăm sóc vết thương:
     - Trước phẫu thuật: "truocphauthuat"
