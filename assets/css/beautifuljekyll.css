@@ -19,8 +19,6 @@ layout: null
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
   /* common CSS variables */
-/*   --body-font: 'Flavors', 'Times New Roman', serif;
-  --header-font: 'Mystery Quest', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   --body-font: 'Crimson Text', cursive;
   --header-font: 'Mystery Quest', cursive;
   --mid-col: #808080;
@@ -177,7 +175,7 @@ img {
   line-height: 1.5;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -352,6 +350,88 @@ img {
   left: 50%;
   width: 3.125rem;
   bottom: -1.5rem;
+  transition: all 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+/* Hover animation */
+.navbar-custom .avatar-container:hover {
+  transform: scale(1.1) rotate(10deg);
+  cursor: pointer;
+}
+
+/* Add a fun border glow */
+.navbar-custom .avatar-container .avatar-img-border {
+  width: 100%;
+  margin-left: -50%;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 136, 255, 0.6);
+  animation: glowing 3s infinite;
+  transition: all 0.3s ease;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Glowing animation */
+@keyframes glowing {
+  0% { box-shadow: 0 0 15px rgba(0, 136, 255, 0.6); }
+  50% { box-shadow: 0 0 25px rgba(0, 136, 255, 0.8); }
+  100% { box-shadow: 0 0 15px rgba(0, 136, 255, 0.6); }
+}
+
+/* Apply floating animation to avatar */
+.navbar-custom .avatar-container {
+  animation: float 6s ease-in-out infinite;
+}
+
+.navbar-custom .avatar-container .avatar-img {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+  .navbar-custom.top-nav-regular .avatar-container {
+    width: 6.25rem;
+    bottom: -1.9375rem;
+  }
+  
+  /* Add tilt effect on hover for larger screens */
+  .navbar-custom.top-nav-regular .avatar-container:hover {
+    transform: scale(1.15) rotate(15deg);
+  }
+  
+  .navbar-custom.top-nav-regular .avatar-container .avatar-img-border {
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 136, 255, 0.7);
+  }
+}
+
+/* Hide animation when navbar is expanded */
+.navbar-custom.top-nav-expanded .avatar-container {
+  display: none;
+}
+
+/* Smooth transition when scrolling */
+.navbar-custom.top-nav-short .avatar-container {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* .navbar-custom .avatar-container {
+  position: absolute;
+  left: 50%;
+  width: 3.125rem;
+  bottom: -1.5rem;
   transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -404,7 +484,7 @@ img {
   .navbar-custom.top-nav-regular .avatar-container .avatar-img {
     width: 100%;
   }
-}
+} */
 
 /* --- Footer --- */
 
