@@ -24,12 +24,12 @@ layout: null
   --mid-col: #808080; */
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Flavors&family=Mystery+Quest&display=swap");
 
 :root {
   /* common CSS variables */
   --body-font: 'Patrick Hand';
-  --header-font: 'Architects Daughtert';
+  --header-font: 'Flavors';
   --mid-col: #808080;
 }
 
@@ -41,7 +41,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   color: var(--text-col);
   position: relative;
   background-color: var(--page-col);
@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1.1;
 }
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.0rem;
 }
 h2 {
   font-size: 1.875rem;
