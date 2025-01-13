@@ -28,8 +28,8 @@ layout: null
 
 :root {
   /* common CSS variables */
-  --body-font: 'Flavors', 'Times New Roman', serif;
-  --header-font: 'Mystery Quest', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --body-font: 'Flavors';
+  --header-font: 'Mystery Quest';
   --mid-col: #808080;
 }
 
