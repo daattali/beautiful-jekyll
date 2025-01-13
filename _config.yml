@@ -20,10 +20,10 @@ author: Zhaoyu (Jackie) Shi
 ###############################################
 
 navbar-links:
-  Simple me: "aboutme"
+  Updated me: "aboutme"
   Scientific Updates: 
     - Fluid Dynamics: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
-    - AI insights: " "
+    - AI in CFD: " "
     - My Data Pool: 
   Random Bubbles:
     - Photo Collection: "https://beautifuljekyll.com"
