@@ -424,8 +424,8 @@ img {
   }
 }
 
-
-/* .navbar-custom .avatar-container {
+/*
+.navbar-custom .avatar-container {
   position: absolute;
   left: 50%;
   width: 3.125rem;
@@ -435,37 +435,37 @@ img {
 }
 
 /* Hover animation */
-.navbar-custom .avatar-container:hover {
+/* .navbar-custom .avatar-container:hover {
   transform: scale(1.1) rotate(10deg);
   cursor: pointer;
-}
+} */
 
 /* Add a fun border glow */
-.navbar-custom .avatar-container .avatar-img-border {
+/* .navbar-custom .avatar-container .avatar-img-border {
   width: 100%;
   margin-left: -50%;
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(0, 136, 255, 0.6);
   animation: glowing 3s infinite;
   transition: all 0.3s ease;
-}
+} */
 
 /* Floating animation */
-@keyframes float {
+/* @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
-}
+} */
 
 /* Glowing animation */
-@keyframes glowing {
+/* @keyframes glowing {
   0% { box-shadow: 0 0 15px rgba(0, 136, 255, 0.6); }
   50% { box-shadow: 0 0 25px rgba(0, 136, 255, 0.8); }
   100% { box-shadow: 0 0 15px rgba(0, 136, 255, 0.6); }
-}
+} */
 
 /* Apply floating animation to avatar */
-.navbar-custom .avatar-container {
+/* .navbar-custom .avatar-container {
   animation: float 6s ease-in-out infinite;
 }
 
@@ -475,9 +475,9 @@ img {
   display: block;
   transition: all 0.3s ease;
 }
-
+ */
 /* Media query for larger screens */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .navbar-custom.top-nav-regular .avatar-container {
     width: 6.25rem;
     bottom: -1.9375rem;
@@ -495,17 +495,18 @@ img {
 }
 
 /* Hide animation when navbar is expanded */
-.navbar-custom.top-nav-expanded .avatar-container {
+/* .navbar-custom.top-nav-expanded .avatar-container {
   display: none;
-}
+} */
 
 /* Smooth transition when scrolling */
-.navbar-custom.top-nav-short .avatar-container {
+/* .navbar-custom.top-nav-short .avatar-container {
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
   transition: all 0.5s ease-in-out;
-} */
+}  */
+
 
 /* .navbar-custom .avatar-container {
   position: absolute;
