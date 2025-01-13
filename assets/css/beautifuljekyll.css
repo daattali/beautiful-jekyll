@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-@import url("https://fonts.googleapis.com/css2?family=Flavors&family=Mystery+Quest&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Flavors&family=Mystery+Quest:wght@400;800&display=swap");
 @import url("pygment_highlights.css");
 
 :root {
@@ -21,8 +21,8 @@ layout: null
   /* common CSS variables */
 /*   --body-font: 'Flavors', 'Times New Roman', serif;
   --header-font: 'Mystery Quest', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  --body-font: 'Flavors';
-  --header-font: 'Mystery Quest';
+  --body-font: 'Flavors', cursive;
+  --header-font: 'Mystery Quest', cursive;
   --mid-col: #808080;
 }
 
@@ -34,7 +34,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   color: var(--text-col);
   position: relative;
   background-color: var(--page-col);
