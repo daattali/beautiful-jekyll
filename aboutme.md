@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Me - A reformed Fluid Dynamicist
-subtitle: This is a container to collect my thoughts and  
 ---
 
-Tjena folks! Thanks for your either 'Determistic' or 'Stocastic' visits today 🚀. I am Jackie (my mandarin name is Zhaoyu, be creative to pronounce 😉). I came from a "small" city Datong in China -- in the sense of ecnomic influence. I haven been working on Computational Fluid Dynamics (CFD) for almost all my academic life so far. It all starts from   obtained my doctoral degree 
+Tjena folks! Thanks for your either 'Determistic' or 'Stocastic' visits today 🚀. I am Jackie (my mandarin name is Zhaoyu, be creative to pronounce 😉). I came from a "small" city Datong in China -- in the sense of economic influence. I have been working on Computational Fluid Dynamics (CFD) for almost all my academic life so far. It all started from a glimpse of the [gallery of fluid motion](https://gfm.aps.org/) when I was a naive batchelor student in uni trying to figure out what I was gonna do in the future. I was facinated. Later I obtained my doctoral degree at NTNU.
 
 
 ### My journey
