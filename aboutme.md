@@ -1,13 +1,10 @@
 ---
 layout: page
-body {
-    font-size: 14px; /* Adjust the size as needed */
-}
-title: My journey
-subtitle: what you **DO** matters and do what you truly **CARE**
+title: Me - A reformed **Fluid Dynamicist**
+subtitle: This is a container to collect my thoughts and  
 ---
 
-Tjena folks! Thanks for your either 'Determistic' or 'Stocastic' visits today 🚀. I am Dr. Zhaoyu Shi, obtained my doctoral degree  The  I have the following qualities:
+Tjena folks! Thanks for your either 'Determistic' or 'Stocastic' visits today 🚀. I am Jackie (my mandarin name is Zhaoyu, 召宇, be creative to pronounce 😉). I came from a "small" city Datong in China -- in the sense of ecnomic influence.   obtained my doctoral degree 
 
 - 
 - 
