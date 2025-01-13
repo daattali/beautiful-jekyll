@@ -24,12 +24,12 @@ layout: null
   --mid-col: #808080; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Flavors&family=Mystery+Quest&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Architects+Daughter&display=swap");
 
 :root {
   /* common CSS variables */
-  --body-font: 'Flavors';
-  --header-font: 'Mystery Quest';
+  --body-font: 'Patrick Hand';
+  --header-font: 'Architects Daughtert';
   --mid-col: #808080;
 }
 
