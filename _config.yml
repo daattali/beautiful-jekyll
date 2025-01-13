@@ -21,14 +21,13 @@ author: Zhaoyu (Jackie) Shi
 
 navbar-links:
   Updated me: "aboutme"
-  Scientific Updates: 
-    - Fluid Dynamics: " "
-    - AI in CFD: " "
+  Scientific Stuff: 
+    - Fluid Dynamics: 
+    - AI in CFD: 
     - My Data Pool: 
-  Random Bubbles:
-    - Photo Collection: "https://beautifuljekyll.com"
-    - Behind the photo: "https://github.com/Zhaoyu-Shi829/ML-on-Drag-Prediction"
-    - Views: "https://www.markdowntutorial.com/"
+  Media hub:
+    - Photo Collection:  
+    - Movie chitchat:
   
   
 ################
