@@ -484,7 +484,7 @@ img {
   }
   
   /* Add tilt effect on hover for larger screens */
-  .navbar-custom.top-nav-regular .avatar-container:hover {
+/*   .navbar-custom.top-nav-regular .avatar-container:hover {
     transform: scale(1.15) rotate(15deg);
   }
   
@@ -492,7 +492,7 @@ img {
     width: 100%;
     box-shadow: 0 0 20px rgba(0, 136, 255, 0.7);
   }
-}
+} */
 
 /* Hide animation when navbar is expanded */
 /* .navbar-custom.top-nav-expanded .avatar-container {
