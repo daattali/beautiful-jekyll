@@ -22,12 +22,12 @@ author: Zhaoyu (Jackie) Shi
 navbar-links:
   Updated me: "aboutme"
   Scientific Stuff: 
-    - Fluid Dynamics: 
-    - AI in CFD: 
-    - My Data Pool: 
+    #- Fluid Dynamics: 
+    #- AI in CFD: 
+    #- My Data Pool: 
   Media hub:
-    - Photo Collection:  
-    - Movie chitchat:
+    #- Photo Collection:  
+    #- Movie chitchat:
   
   
 ################
