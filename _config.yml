@@ -22,7 +22,7 @@ author: Zhaoyu (Jackie) Shi
 navbar-links:
   Updated me: "aboutme"
   Scientific Updates: 
-    - Fluid Dynamics: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
+    - Fluid Dynamics: " "
     - AI in CFD: " "
     - My Data Pool: 
   Random Bubbles:
@@ -57,10 +57,10 @@ round-avatar: True
 social-network-links:
   email: "shizhaoyu829@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  github: Zhaoyu-Shi829
+  github: "https://github.com/Zhaoyu-Shi829"
 #  youtube: "@daattali"
 #  reddit: yourname or r/yoursubreddit
-  linkedin: Zhaoyu Shi
+  linkedin: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
 #  instagram: deanat78
@@ -68,8 +68,8 @@ social-network-links:
 #  telephone: +14159998888
 #  steam: deanat78
 #  bluesky: yourname
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
+   ORCID: "https://orcid.org/0000-0002-8542-523X"
+   google-scholar: "https://scholar.google.com/citations?user=GVeDOGgAAAAJ&hl=en"
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
 #  kaggle: yourname
 #  hackerrank: yourname
@@ -79,7 +79,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: I am just trying to survive in the AI-fueled Model House : 
+rss-description: I am just trying to survive in the AI-fueled World Model.
 
 ###########################
 # --- General options --- #
@@ -87,14 +87,14 @@ rss-description: I am just trying to survive in the AI-fueled Model House :
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
+  twitter: false
+  facebook: false
   linkedin: true
   vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "my-struggle-.com"
+url-pretty: "my-rollercoster-path.com"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
