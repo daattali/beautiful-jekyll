@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Me - A reformed **Fluid Dynamicist**
+title: Me - A reformed Fluid Dynamicist
 subtitle: This is a container to collect my thoughts and  
 ---
 
