@@ -57,9 +57,11 @@ social-network-links:
   email: "shizhaoyu829@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: "https://github.com/Zhaoyu-Shi829"
+  ORCID: "https://orcid.org/0000-0002-8542-523X"
+  google-scholar: "https://scholar.google.com/citations?user=GVeDOGgAAAAJ&hl=en"
+  linkedin: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
 #  youtube: "@daattali"
 #  reddit: yourname or r/yoursubreddit
-  linkedin: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
 #  instagram: deanat78
@@ -67,8 +69,6 @@ social-network-links:
 #  telephone: +14159998888
 #  steam: deanat78
 #  bluesky: yourname
-   ORCID: "https://orcid.org/0000-0002-8542-523X"
-   google-scholar: "https://scholar.google.com/citations?user=GVeDOGgAAAAJ&hl=en"
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
 #  kaggle: yourname
 #  hackerrank: yourname
