@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-@import url("https://fonts.googleapis.com/css2?family=Flavors&family=Mystery+Quest:wght@400;800&display=swap");
+@import url("https://fonts.google.com/specimen/Fredericka+the+Great?preview.text=hello%20there&categoryFilters=Feeling:%2FExpressive%2FInnovative");
 @import url("pygment_highlights.css");
 
 :root {
@@ -20,7 +20,7 @@ layout: null
 
   /* common CSS variables */
   --body-font: 'Crimson Text', cursive;
-  --header-font: 'Mystery Quest', cursive;
+  --header-font: 'Fredericka the Great', cursive;
   --mid-col: #808080;
 }
 
@@ -423,149 +423,6 @@ img {
     transform: rotate(-5deg);
   }
 }
-
-/*
-.navbar-custom .avatar-container {
-  position: absolute;
-  left: 50%;
-  width: 3.125rem;
-  bottom: -1.5rem;
-  transition: all 0.5s ease-in-out;
-  transform-origin: center;
-}
-
-/* Hover animation */
-/* .navbar-custom .avatar-container:hover {
-  transform: scale(1.1) rotate(10deg);
-  cursor: pointer;
-} */
-
-/* Add a fun border glow */
-/* .navbar-custom .avatar-container .avatar-img-border {
-  width: 100%;
-  margin-left: -50%;
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(0, 136, 255, 0.6);
-  animation: glowing 3s infinite;
-  transition: all 0.3s ease;
-} */
-
-/* Floating animation */
-/* @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-} */
-
-/* Glowing animation */
-/* @keyframes glowing {
-  0% { box-shadow: 0 0 15px rgba(0, 136, 255, 0.6); }
-  50% { box-shadow: 0 0 25px rgba(0, 136, 255, 0.8); }
-  100% { box-shadow: 0 0 15px rgba(0, 136, 255, 0.6); }
-} */
-
-/* Apply floating animation to avatar */
-/* .navbar-custom .avatar-container {
-  animation: float 6s ease-in-out infinite;
-}
-
-.navbar-custom .avatar-container .avatar-img {
-  width: 100%;
-  border-radius: 50%;
-  display: block;
-  transition: all 0.3s ease;
-}
- */
-/* Media query for larger screens */
-/* @media (min-width: 1200px) {
-  .navbar-custom.top-nav-regular .avatar-container {
-    width: 6.25rem;
-    bottom: -1.9375rem;
-  }
-  
-  /* Add tilt effect on hover for larger screens */
-/*   .navbar-custom.top-nav-regular .avatar-container:hover {
-    transform: scale(1.15) rotate(15deg);
-  }
-  
-  .navbar-custom.top-nav-regular .avatar-container .avatar-img-border {
-    width: 100%;
-    box-shadow: 0 0 20px rgba(0, 136, 255, 0.7);
-  }
-} */
-
-/* Hide animation when navbar is expanded */
-/* .navbar-custom.top-nav-expanded .avatar-container {
-  display: none;
-} */
-
-/* Smooth transition when scrolling */
-/* .navbar-custom.top-nav-short .avatar-container {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(20px);
-  transition: all 0.5s ease-in-out;
-}  */
-
-
-/* .navbar-custom .avatar-container {
-  position: absolute;
-  left: 50%;
-  width: 3.125rem;
-  bottom: -1.5rem;
-  transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-}
-.navbar-custom.top-nav-short .avatar-container {
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility linear 0.5s, opacity 0.5s ease-in-out;
-  -webkit-transition: visibility linear 0.5s, opacity 0.5s ease-in-out;
-  -moz-transition: visibility linear 0.5s, opacity 0.5s ease-in-out;
-}
-
-.navbar-custom .avatar-container .avatar-img-border {
-  width: 100%;
-  margin-left: -50%;
-  {% unless site.round-avatar == false %}
-    border-radius: 50%;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 0.5rem rgba(0, 0, 0, .8);
-  {% endunless %}
-}
-.navbar-custom .avatar-container .avatar-img {
-  width: 100%;
-  {% unless site.round-avatar == false %}
-    border-radius: 50%;
-  {% endunless %}
-  display: block;
-}
-
-.navbar-custom.top-nav-expanded .avatar-container {
-  display: none;
-}
-
-@media (min-width: 1200px) {
-  .navbar-custom.top-nav-regular .avatar-container {
-    width: 6.25rem;
-    bottom: -1.9375rem;
-  }
-
-  .navbar-custom.top-nav-regular .avatar-container .avatar-img-border {
-    width: 100%;
-    {% unless site.round-avatar == false %}
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    {% endunless %}
-  }
-
-  .navbar-custom.top-nav-regular .avatar-container .avatar-img {
-    width: 100%;
-  }
-} */
 
 /* --- Footer --- */
 
