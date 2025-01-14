@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Me - A reformed Fluid Dynamicist
+title: The reformed Fluid Dynamicist
 ---
 
 ### My passion for fluid dynamics
