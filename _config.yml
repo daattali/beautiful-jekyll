@@ -13,7 +13,7 @@
 title: Lagrangian Tracking of Thoughts & Insights
 
 # Your name to show in the footer
-author: Zhaoyu Shi - Jackie's Lab
+author: Dr. Zhaoyu Shi
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -26,8 +26,8 @@ navbar-links:
     - AI in CFD: "ML" 
     - My Data Pool: "datasource"
   Media Bubble:
-    #- Photo Collection:  
-    #- Movie chitchat:
+    - Article Collection:  
+    - Stochastic share:
   
   
 ################
@@ -60,21 +60,6 @@ social-network-links:
   ORCID: "https://orcid.org/0000-0002-8542-523X"
   google-scholar: "https://scholar.google.com/citations?user=GVeDOGgAAAAJ&hl=en"
   linkedin: "https://www.linkedin.com/in/zhaoyu-shi-0708b3202/"
-#  youtube: "@daattali"
-#  reddit: yourname or r/yoursubreddit
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  bluesky: yourname
-#  discord: "invite_code" or "users/userid" or "invite/invite_code"
-#  kaggle: yourname
-#  hackerrank: yourname
-#  gitlab: yourname
-#  itchio: yourname
-#  untappd: yourname
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
@@ -93,10 +78,10 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "my-rollercoster-path.com"
+url-pretty: "Jackie's Container"
 
 # Add the website title to the title of every page
-title-on-all-pages: true
+title-on-all-pages: false
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
