@@ -22,9 +22,9 @@ author: Zhaoyu (Jackie) Shi
 navbar-links:
   Updated me: "aboutme"
   Scientific Hub: 
-    #- Computational Fluid Dynamics (CFD): 
-    #- AI in CFD: 
-    #- My Data Pool: 
+    - Computational Fluid Dynamics (CFD): "cfd"
+    - AI in CFD: "ML" 
+    - My Data Pool: "datasource"
   Media Bubble:
     #- Photo Collection:  
     #- Movie chitchat:
