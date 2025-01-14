@@ -66,7 +66,8 @@ social-network-links:
 rss-description: I am just trying to survive in the AI-fueled World Model.
 
 # remove 'Powered by BeautifuL Jekyll' at footer
-remove-build-credit: true
+head-scripts:
+  - /assets/js/custom.js
 
 ###########################
 # --- General options --- #
