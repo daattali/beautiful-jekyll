@@ -65,13 +65,16 @@ social-network-links:
 # The URL for the feed will be https://<your_website>/feed.xml
 rss-description: I am just trying to survive in the AI-fueled World Model.
 
+# remove 'Powered by BeautifuL Jekyll' at footer
+remove-build-credit: true
+
 ###########################
 # --- General options --- #
 ###########################
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: false
+  twitter: true
   facebook: false
   linkedin: true
   vk: false
