@@ -63,7 +63,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: I am just trying to survive in the AI-fueled World Model.
+# rss-description: I am just trying to survive in the AI-fueled World Model.
 
 ###########################
 # --- General options --- #
@@ -73,8 +73,9 @@ rss-description: I am just trying to survive in the AI-fueled World Model.
 share-links-active:
   twitter: false
   facebook: false
-  linkedin: true
   email: true
+  linkedin: true
+  
   
 
 # How to display the link to your website in the footer
