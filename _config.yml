@@ -20,7 +20,7 @@ author: Dr. Zhaoyu Shi
 ###############################################
 
 navbar-links:
-  Updated me: "aboutme"
+  Me: "aboutme"
   Scientific Hub: 
     - Computational Fluid Dynamics (CFD): "cfd"
     - AI in CFD: "ML" 
