@@ -21,7 +21,7 @@
       {% endif %}
       {{ site.time | date: '%Y' }}
 
-      {% if page.url == "/" and if site.url-pretty %}
+      {% if page.url == "/" and site.url-pretty %}
         &nbsp;&bull;&nbsp;
         <span class="author-site">
           <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '/' | absolute_url }}{% endif %}">{{ site.url-pretty }}</a>
