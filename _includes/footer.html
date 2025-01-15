@@ -15,11 +15,15 @@
         </div>
       {% endif %}
       <p class="copyright text-muted">
-      {% if site.author %}
+      {% if page.url == "/" and site.author %}
         {{ site.author }}
         &nbsp;&bull;&nbsp;
       {% endif %}
-      {{ site.time | date: '%Y' }}
+
+      {% if page.url == "/" %}
+        {{ site.time | date: '%Y' }}
+      &nbsp;&bull;&nbsp;
+      {% endif %}  
 
       {% if page.url == "/" and site.url-pretty %}
         &nbsp;&bull;&nbsp;
