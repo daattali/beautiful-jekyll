@@ -54,7 +54,7 @@ round-avatar: True
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "https://www.ntnu.edu/"
+  email: "shizhaoyu829@gmail.com"
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: "https://github.com/Zhaoyu-Shi829"
   ORCID: "https://orcid.org/0000-0002-8542-523X"
@@ -75,8 +75,6 @@ share-links-active:
   facebook: false
   email: true
   linkedin: true
-  
-  
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
