@@ -5,7 +5,7 @@ cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [CFD, software]
-author: Sharon Smith and Barry Simpson
+# author: Zhaoyu Shi
 ---
 
 This page is constantly under construction, I'm trying...
