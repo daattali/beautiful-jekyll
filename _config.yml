@@ -26,8 +26,8 @@ navbar-links:
     - AI in CFD: "ML" 
     - My Data Pool: "datasource"
   Media Bubble:
-    - Article Collection:  
-    - Stochastic share:
+    - Article Collection: "Tech Insights" 
+    - Photo Album: "Milo och Waldo"
   
   
 ################
@@ -64,10 +64,6 @@ social-network-links:
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
 rss-description: I am just trying to survive in the AI-fueled World Model.
-
-# remove 'Powered by BeautifuL Jekyll' at footer
-head-scripts:
-  - /assets/js/custom.js
 
 ###########################
 # --- General options --- #
