@@ -530,6 +530,9 @@ footer .footer-custom-content {
 .post-preview .post-title {
   font-size: 1.875rem;
   margin-top: 0;
+  white-space: nowrap;   /* Prevents the text from wrapping to the next line */
+  overflow: hidden;    /* Ensures any overflow is hidden */
+  text-overflow: ellipsis; /* Adds an ellipsis (...) if the text overflows */
 }
 .post-preview .post-subtitle {
   margin: 0;
