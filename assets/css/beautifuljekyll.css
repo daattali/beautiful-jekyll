@@ -19,7 +19,7 @@ layout: null
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
   /* common CSS variables */
-  --body-font: 'Crimson Text', cursive;
+  --body-font: 'Agdasima', cursive;
   --header-font: 'Fredericka the Great', cursive;
   --mid-col: #808080;
 }
