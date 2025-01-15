@@ -54,7 +54,7 @@ round-avatar: True
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "shizhaoyu829@gmail.com"
+  email: "https://www.ntnu.edu/"
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: "https://github.com/Zhaoyu-Shi829"
   ORCID: "https://orcid.org/0000-0002-8542-523X"
