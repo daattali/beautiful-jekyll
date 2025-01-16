@@ -531,6 +531,7 @@ footer .footer-custom-content {
 .post-preview .post-title {
   font-size: 1.875rem;
   margin-top: 0;
+  max-width: 1400px;
   white-space: nowrap;   /* Prevents the text from wrapping to the next line */
   overflow: hidden;    /* Ensures any overflow is hidden */
   text-overflow: ellipsis; /* Adds an ellipsis (...) if the text overflows */
@@ -582,7 +583,7 @@ footer .footer-custom-content {
 .post-preview .post-image-short {
   margin-top: -2.1875rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .post-preview .post-image {
     height: 9rem;
     width: 9rem;
