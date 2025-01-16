@@ -622,6 +622,26 @@ footer .footer-custom-content {
   }
 }
 
+/* --- Content--- */
+.container,
+.content-container,
+.posts-list,
+.post-preview {
+  max-width: 1400px;  /* Increase from default */
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Adjust media query for larger screens */
+@media (min-width: 1400px) {
+  .container,
+  .content-container,
+  .posts-list,
+  .post-preview {
+    width: 90%;
+  }
+}
+
 /* --- Tags --- */
 
 .blog-tags {
