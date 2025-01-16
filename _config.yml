@@ -29,7 +29,6 @@ navbar-links:
     - Article Collection: "Tech Insights" 
     - Photo Album: "Milo och Waldo"
   
-  
 ################
 # --- Logo --- #
 ################
@@ -73,7 +72,7 @@ social-network-links:
 share-links-active:
   twitter: false
   facebook: false
-  email: true
+  email: false
   linkedin: true
 
 # How to display the link to your website in the footer
