@@ -531,7 +531,7 @@ footer .footer-custom-content {
 .post-preview .post-title {
   font-size: 1.875rem;
   margin-top: 0;
-  max-width: 1400px;
+  max-width: 3000px;
   white-space: nowrap;   /* Prevents the text from wrapping to the next line */
   overflow: hidden;    /* Ensures any overflow is hidden */
   text-overflow: ellipsis; /* Adds an ellipsis (...) if the text overflows */
@@ -552,7 +552,7 @@ footer .footer-custom-content {
 .post-heading .post-meta {
   display: inline-block;
 }
-@media (max-width: 1400px) {
+@media (max-width: 3000px) {
   .post-heading .post-meta {
     display: block;
     margin-bottom: 0;
@@ -583,7 +583,7 @@ footer .footer-custom-content {
 .post-preview .post-image-short {
   margin-top: -2.1875rem;
 }
-@media (max-width: 1400px) {
+@media (max-width: 3000px) {
   .post-preview .post-image {
     height: 9rem;
     width: 9rem;
@@ -602,7 +602,7 @@ footer .footer-custom-content {
   max-width: 6.25rem;
   max-height: 6.25rem;
 }
-@media (max-width: 1400px) {
+@media (max-width: 3000px) {
   .post-preview .post-image {
     display: none;
   }
@@ -618,7 +618,7 @@ footer .footer-custom-content {
 @media (min-width: 768px) {
   .post-preview .post-title {
     font-size: 2.25rem;
-    max-width: 1400px;
+    max-width: 3000px;
   }
 }
 
