@@ -30,6 +30,10 @@ layout: base
           {% endif %}
         </div>
       {% endif %}
+      
+      <div class="post-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+        {{ page.title }}
+      </div>
 
       {% if page.before-content %}
         <div class="before-content">
