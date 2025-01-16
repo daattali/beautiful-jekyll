@@ -1,9 +1,10 @@
 ---
 layout: post
 title: What's new on CFD?
-cover-img: /assets/img/voronoi.jpeg
+subtitle: My dear passion - Scientific Computing 
+cover-img: /assets/img/flow.jpeg
 thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+# share-img: /assets/img/path.jpg
 tags: [CFD,Software]
 # author: Zhaoyu Shi
 ---
