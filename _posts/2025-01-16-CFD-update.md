@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What's new on CFD 🤔?
+title: What's new in CFD 🤔?
 subtitle: My dear passion - Scientific Computing 
 cover-img: /assets/img/flow.jpeg
 thumbnail-img: /assets/img/thumb.png
