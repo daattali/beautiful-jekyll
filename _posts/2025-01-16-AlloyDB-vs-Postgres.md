@@ -18,7 +18,9 @@ tags: [AlloyDB, PostrgreSQL, Google Cloud, Hybrid Analytical Transactional Workl
 
 ## Database Modernisation and PostgreSQL
 
-As more organizations embrace PostgreSQL during database modernisation and Cloud migration, Google Cloud's AlloyDB presents a compelling alternative to standard PostgreSQL deployments, offering significant performance and scalability advantages. This blog post dives deep into the features and performance of AlloyDB, highlighting its advantages for database administrators, application teams, and Google Cloud customers and providing an insight into how it achieves greater performance.
+As more organizations embrace PostgreSQL during database modernisation and Cloud migration, Google Cloud's AlloyDB presents a compelling alternative to standard PostgreSQL deployments, offering significant performance and scalability advantages. 
+
+This blog post dives deep into the features and performance of AlloyDB, highlighting its advantages for database administrators, application teams, and Google Cloud customers and providing an insight into how it achieves greater performance.
 
 ## AlloyDB Overview
 AlloyDB is Google Cloud’s latest managed PostgreSQL offering for application workloads requiring optimal performance, reliability and scalability vs standard PostgreSQL. 
