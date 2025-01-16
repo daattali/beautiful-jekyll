@@ -552,7 +552,7 @@ footer .footer-custom-content {
 .post-heading .post-meta {
   display: inline-block;
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .post-heading .post-meta {
     display: block;
     margin-bottom: 0;
