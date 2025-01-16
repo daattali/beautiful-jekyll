@@ -1,9 +1,9 @@
 ---
 layout: post
 title: What's new on CFD?
-cover-img: /assets/img/voronoi.jpg
+cover-img: /assets/img/voronoi.jpeg
 thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpeg
+share-img: /assets/img/path.jpg
 tags: [CFD, software]
 # author: Zhaoyu Shi
 ---
