@@ -1,4 +1,5 @@
 ---
 layout: post
-title: life-update
+title: Nice snapshot of Life
+
 ---
