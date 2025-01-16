@@ -1,5 +1,6 @@
 ---
 layout: post
-title: Nice snapshot of Life
+title: Nice snapshots of Life
+subtitle: The only place that calms me down 🫧
 
 ---
