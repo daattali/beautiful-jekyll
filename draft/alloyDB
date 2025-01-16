@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Maximising PostgreSQL performance with AlloyDB. How AlloyDB increases analytical workload performance by up to 100X! Looking for a high performing transactional or analytical database? Here's why you should consider AlloyDB
-subtitle: 
+title: AlloyDB vs PostgreSQL: Unleash Performance, Slash Costs, Simplify Data Stack
+subtitle: Learn how AlloyDB enables organisations to improve performance, save costs and simplify architecture vs traditional PostgreSQL offerings
 #description: ""
 #cover-img: /assets/img/path.jpg
-#thumbnail-img: /assets/img/pcne/googlecloudprofessionalcloudnetworkengineerbadge.png
-#share-img: /assets/img/pcne/googlecloudprofessionalcloudnetworkengineerbadge.png
+thumbnail-img: /assets/img/alloydb/alloydblogo.png
+share-img: /assets/img/alloydb/alloydblogo.png
 readtime: true
-share-title: "Looking for a high performing transactional or analytical database? Here's why you should consider AlloyDB"
+share-title: "AlloyDB vs PostgreSQL: Unleash Performance, Slash Costs, Simplify Data Stack"
 share-description: "TXXXXX"
 #share-img: /assets/img/pcne/googlecloudprofessionalcloudnetworkengineerbadge.png
 tags: [AlloyDB, PostrgreSQL, Google Cloud, Hybrid Analytical Transactional Workload, Database]
