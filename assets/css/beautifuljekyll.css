@@ -529,7 +529,7 @@ footer .footer-custom-content {
 }
 
 .post-preview .post-title {
-  font-size: 1.0rem; /* original size is 1.875 */
+  font-size: 1.875rem; 
   margin-top: 0;
   
 }
@@ -541,7 +541,7 @@ footer .footer-custom-content {
 .post-preview .post-meta,
 .post-heading .post-meta {
   color: var(--mid-col);
-  font-size: 1.0rem;   /* original size is 1.125 */
+  font-size: 1.125rem;   
   font-style: italic;
   margin: 0 0 0.625rem;
   font-family: var(--body-font);
@@ -742,7 +742,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 3.125rem;
+  font-size: 2.125rem;  /* original size is 3.125 */
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
