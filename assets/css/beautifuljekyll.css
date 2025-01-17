@@ -505,12 +505,13 @@ footer .footer-custom-content {
   border-bottom: 1px solid #eee;
   overflow: hidden;
 }
-.container {
-  max-width: 60%; /* Increase this percentage to occupy more space */
-  width: 60%;     /* Ensure the width matches the max-width */
-  margin: 0 auto; /* Keep the content centered */
-  padding: 0 1rem; /* Add some padding to prevent text from hitting the edges */
-}
+/* .container {
+  max-width: 60%; 
+  width: 60%;    
+  margin: 0 auto; 
+  padding: 0 1rem; 
+} 
+*/
 
 @media (min-width: 768px) {
   .post-preview {
