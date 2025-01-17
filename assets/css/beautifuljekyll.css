@@ -541,7 +541,7 @@ footer .footer-custom-content {
 .post-preview .post-meta,
 .post-heading .post-meta {
   color: var(--mid-col);
-  font-size: 1.125rem;
+  font-size: 1.0rem;   /* original size is 1.125 */
   font-style: italic;
   margin: 0 0 0.625rem;
   font-family: var(--body-font);
