@@ -349,7 +349,7 @@ img {
 .navbar-custom .avatar-container {
   position: absolute;
   left: 50%;
-  width: 4.125rem;
+  width: 3.125rem;
   bottom: -1.5rem;
   transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -507,7 +507,7 @@ footer .footer-custom-content {
 }
 .container {
   max-width: 90%; 
-  width: 60%;    
+  width: 90%;    
   margin: 0 auto; 
   padding: 0 1rem; 
 } 
