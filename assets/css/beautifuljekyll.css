@@ -47,7 +47,7 @@ body {
   flex-direction: column;
 }
 body > main {
-  flex: 2;
+  flex: 1;
 }
 p {
   line-height: 1.5;
@@ -505,13 +505,12 @@ footer .footer-custom-content {
   border-bottom: 1px solid #eee;
   overflow: hidden;
 }
-/* .container {
+.container {
   max-width: 60%; 
   width: 60%;    
   margin: 0 auto; 
   padding: 0 1rem; 
 } 
-*/
 
 @media (min-width: 768px) {
   .post-preview {
