@@ -33,7 +33,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: var(--text-col);
   position: relative;
   background-color: var(--page-col);
@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1.1;
 }
 h1 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 h2 {
   font-size: 1.0rem;
