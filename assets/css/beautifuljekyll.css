@@ -795,14 +795,14 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 @media (min-width: 1200px) {
   .intro-header {
-    margin-top: 6.125rem;
+    margin-top: 8.125rem;
   }
   .intro-header.big-img {
     margin-top: 5.6875rem; /* Full navbar is small navbar + 20px padding on each side when expanded */
   }
   .intro-header.big-img .page-heading,
   .intro-header.big-img .post-heading {
-    padding: 7.375rem 0;
+    padding: 9.375rem 0;
   }
   .intro-header .page-heading h1 {
     font-size: 2.5rem;
