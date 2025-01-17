@@ -176,7 +176,7 @@ img {
   line-height: 1.5;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-  font-size: 1.25rem;
+  font-size: 1.625rem;   /* let's see 1.25 */
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -742,7 +742,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 2.125rem;  /* original size is 3.125 */
+  font-size: 3.125rem;  /* original size is 3.125 */
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
