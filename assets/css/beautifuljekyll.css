@@ -418,10 +418,10 @@ img {
     transform: rotate(0);
   }
   25% {
-    transform: rotate(5deg);
+    transform: rotate(10deg);
   }
   75% {
-    transform: rotate(-5deg);
+    transform: rotate(-10deg);
   }
 }
 
@@ -505,12 +505,6 @@ footer .footer-custom-content {
   border-bottom: 1px solid #eee;
   overflow: hidden;
 }
-.container {
-  max-width: 90%; 
-  width: 90%;    
-  margin: 0 auto; 
-  padding: 0 1rem; 
-} 
 
 @media (min-width: 768px) {
   .post-preview {
@@ -626,14 +620,14 @@ footer .footer-custom-content {
 }
 
 /* --- Content--- */
-.container,
+/* .container,
 .content-container,
 .posts-list,
 .post-preview {
-  max-width: 1400px;  /* Increase from default */
+  max-width: 1400px; 
   margin: 0 auto;
   width: 100%;
-}
+} */
 
 /* Adjust media query for larger screens */
 @media (min-width: 1400px) {
