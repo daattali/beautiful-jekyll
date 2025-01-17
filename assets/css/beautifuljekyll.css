@@ -529,7 +529,7 @@ footer .footer-custom-content {
 }
 
 .post-preview .post-title {
-  font-size: 1.875rem; 
+  font-size: 0.875rem; /*  1.875*/
   margin-top: 0;
   
 }
