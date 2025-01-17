@@ -33,7 +33,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-size: 1.25rem;
+  font-size: 5rem;
   color: var(--text-col);
   position: relative;
   background-color: var(--page-col);
