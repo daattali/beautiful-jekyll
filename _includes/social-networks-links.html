@@ -63,6 +63,18 @@
   </li>
   {%- endif -%}
 
+  {%- if network[0] == "whatsapp" -%}
+  <li class="list-inline-item">
+    <a href="https://wa.me/{{ network[1] }}" title="Whatsapp">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Whatsapp</span>
+    </a>
+  </li>
+  {%- endif -%}
+
   {%- if network[0] == "github" -%}
   <li class="list-inline-item">
     <a href="https://github.com/{{ network[1] }}" title="GitHub">
@@ -89,19 +101,23 @@
 
   {%- if network[0] == "twitter" -%}
   <li class="list-inline-item">
-    <a href="https://twitter.com/{{ network[1] }}" title="Twitter">
+    <a href="https://twitter.com/{{ network[1] }}" title="X (Twitter)">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+        <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
       </span>
-      <span class="sr-only">Twitter</span>
+      <span class="sr-only">X (Twitter)</span>
    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "reddit" -%}
+  {% assign reddit_start = network[1] | split: "/" | first -%}
+  {% unless reddit_start == 'r' or reddit_start == 'u' -%}
+    {% assign reddit_url_prefix = 'u/' -%}
+  {% endunless -%}
   <li class="list-inline-item">
-    <a href="https://reddit.com/u/{{ network[1] }}" title="Reddit">
+    <a href="https://reddit.com/{{ reddit_url_prefix }}{{ network[1] }}" title="Reddit">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
@@ -260,7 +276,7 @@
     <a rel="me" href="https://bsky.app/profile/{{ network[1] }}" title="Bluesky">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-square fa-stack-1x fa-inverse"></i>
+        <i class="fas fa-brands fa-bluesky fa-stack-1x fa-inverse"></i>
       </span>
       <span class="sr-only">Bluesky</span>
     </a>
@@ -302,7 +318,7 @@
     </a>
   </li>
   {%- endif -%}
-  
+
   {%- if network[0] == "medium" -%}
   <li class="list-inline-item">
     <a href="https://medium.com/@{{ network[1] }}" title="Medium">
@@ -326,7 +342,7 @@
    </a>
   </li>
   {%- endif -%}
-  
+
   {%- if network[0] == "discord" -%}
   {% assign discord_start = network[1] | split: "/" | first -%}
   {% unless discord_start == 'users' or discord_start == 'invite' -%}
@@ -342,7 +358,7 @@
    </a>
   </li>
   {%- endif -%}
-  
+
   {%- if network[0] == "kaggle" -%}
   <li class="list-inline-item">
     <a href="https://www.kaggle.com/{{ network[1] }}" title="Kaggle">
@@ -363,6 +379,18 @@
         <i class="fab fa-hackerrank fa-stack-1x fa-inverse"></i>
       </span>
       <span class="sr-only">Hackerrank</span>
+   </a>
+  </li>
+  {%- endif -%}
+
+  {%- if network[0] == "untappd" -%}
+  <li class="list-inline-item">
+    <a href="https://untappd.com/user/{{ network[1] }}" title="Untappd">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-untappd fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Untappd</span>
    </a>
   </li>
   {%- endif -%}
