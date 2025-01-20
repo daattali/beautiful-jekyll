@@ -13,7 +13,7 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://tamaki.ai"
 
 # --- Logo --- #
 
@@ -34,10 +34,10 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+  email: "eduardo@tamaki.ai"
+# facebook: deanattali
+  github: ertamaki
+  twitter: er_tamaki
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -53,9 +53,8 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-
+  ORCID: 0000-0001-7728-0520
+  google-scholar: https://scholar.google.com/citations?user=SFUk2OQAAAAJ&hl=en&oi=ao
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
 rss-description: This website is a virtual proof that I'm awesome
