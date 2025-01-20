@@ -1,3 +1,9 @@
 ### where i share ML/DL-enhanced CFD/CAE applications
 
-There is a fancier word Digital Twins, it is essentially CAE, leveraging computing hardware and software, together with tools (OpenFOAM, Ansys Fleunt...)
+<p>
+  Physics-Informed Neural Networks (PINNS)
+</p>
+a review on **Nautre Physics** by the research group led by George Em Karniadakis 
+
+
+
