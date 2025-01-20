@@ -206,7 +206,7 @@ img {
 
 .navbar-custom .navbar-nav .nav-item {
   text-transform: uppercase;
-  font-size: 0.8125rem;
+  font-size: 1.625rem;   /* right bar - me, ai, cfd*/
   letter-spacing: 0.0625rem;
 }
 
