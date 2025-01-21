@@ -7,7 +7,30 @@ layout: page
 {% assign posts = paginator.posts | default: site.posts %}
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-<ul class="po{ thumbnail | absolute_url }}" alt="Post thumbnail">
+<ul class="posts-list list-unstyled" role="list">
+  {% for post in posts %}
+  <li class="post-preview">
+    <article>
+
+      {%- capture thumbnail -%}
+        {% if post.thumbnail-img %}
+          {{ post.thumbnail-img }}
+        {% elsif post.cover-img %}
+          {% if post.cover-img.first %}
+            {{ post.cover-img[0].first.first }}
+          {% else %}
+            {{ post.cover-img }}
+          {% endif %}
+        {% else %}
+        {% endif %}
+      {% endcapture %}
+      {% assign thumbnail=thumbnail | strip %}
+
+      {% if site.feed_show_excerpt == false %}
+      {% if thumbnail != "" %}
+      <div class="post-image post-image-normal">
+        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
         </a>
       </div>
       {% endif %}
