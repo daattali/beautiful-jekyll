@@ -614,7 +614,7 @@ footer .footer-custom-content {
 
 @media (min-width: 768px) {
   .post-preview .post-title {
-    font-size: 1.25rem;  /* size of post-title on the homepage */
+    font-size: 1.825rem;  
   }
 }
 
@@ -742,7 +742,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 2.825rem;  /* original size is 3.125 */
+  font-size: 1.125rem;  /* size of all post titles on the homepage, 3.125 */
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
