@@ -1,16 +1,18 @@
 ---
 layout: page
-title: About me
+title: About us
 subtitle: Why you'd want to go on a date with me
 ---
+### Bio
+Ola’s bio goes hereLinks to Gscholar, Orcid, UoB profile
 
-My name is Inigo Montoya. I have the following qualities:
+insert Ola's headshot
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+###Collaborators
+Detailed credits of all collaborators
 
-What else do you need?
+###Acknowledgements
+Acknowledgements of funders
 
-### My story
+insert logos of funders
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
