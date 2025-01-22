@@ -276,7 +276,7 @@ img {
 
 .navbar-custom .nav-item.dropdown .dropdown-menu {
   margin-top: 0;
-  font-size: 0.3em;  /* dropdown item size*/
+  font-size: 0.8em;  /* dropdown item size*/
   border: 0;
   padding: 0;
   {% if site.navbar-var-length %}
@@ -742,7 +742,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 3.125rem;  /* original size is 3.125 */
+  font-size: 2.825rem;  /* original size is 3.125 */
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
