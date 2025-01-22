@@ -45,9 +45,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-/* Add canvas for the smoke effect */
+  /* Add canvas for the smoke effect */
   overflow: hidden; /* Ensure smoke effect fits within the viewport */
 }
 /* Add canvas specifically for the smoke background */
