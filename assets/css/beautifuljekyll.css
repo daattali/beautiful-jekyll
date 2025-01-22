@@ -614,7 +614,7 @@ footer .footer-custom-content {
 
 @media (min-width: 768px) {
   .post-preview .post-title {
-    font-size: 1.825rem;  /* size of post-title on the homepage */
+    font-size: 1.25rem;  /* size of post-title on the homepage */
   }
 }
 
