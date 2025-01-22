@@ -123,7 +123,7 @@
   <meta property="og:description" content="{{ description }}">
 
   {% if img != "" %}
-  <meta property="og:image" content="{{ img | absolute_url }}">
+  <meta property="og:image" content="{{ img }}">
   {% endif %}
 
   {% if page.id %}
@@ -132,12 +132,12 @@
   <meta property="og:article:author" content="{{ author }}">
   {% endif %}
   <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:url" content="{{ page.url }}">
+  <link rel="canonical" href="{{ page.url  }}">
   {% else %}
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}">
-  <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
+  <meta property="og:url" content="{{ page.url | strip_index }}">
+  <link rel="canonical" href="{{ page.url | strip_index }}">
   {% endif %}
 
   {% if img != "" and img != site.avatar %}
@@ -163,7 +163,7 @@
 
   {% assign favicon_exists = site.static_files | where: "path", "/favicon.ico" | size %}
   {% if favicon_exists == 1 %}
-  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
+  <link rel="icon" href="{{ '/favicon.ico' }}" />
   {% endif %}
 
   {% if page.head-extra %}

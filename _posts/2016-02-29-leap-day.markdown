@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Leap day...'
+categories: javascript
+excerpt: 'Leap day, more like leap year...'
+---
+
+Been overseeing and managing two seperate projects that have very heavily javascript influenced over the last few months. Choosing the right technology to solve the needs of the client is something I am passionate about. I have also spent years diversifying my knowledge of many technologies, mostly focused on Javascript and the associated frameworks of the day. Let's take a quick walk through each project, the problem we are solving and the implementation.
+
+The first project has a business requirement for what I would call near real-time components, and the components need to be embedded into an [Open Atrium](http://www.openatrium.com/) site. Another future need was to allow these components to be embeddable in other business sites and use cases, so this led the architecting of a [Node.js](https://nodejs.org/en/) set of APIs that provide the server-side rendered [React.js](https://facebook.github.io/react/) components and JSON data endpoints to provide data to these components after they are instantiated, rendered and embedded.  
+
+The second project is a very tech-forward website, that is using [Drupal 8](http://drupal.org) for the content management and on the front-end many data sevices that will feed [Angular 2](http://angular.io) based web components.  After following what the Angular team's blog's and podcast conversations recently, there is a clear architectural paradigm that is surfacing ([Redux](https://github.com/reactjs/redux) style data flow and state management).  A good write-up of this type of architecture is located at this [blog post](http://victorsavkin.com/post/137821436516/managing-state-in-angular-2-applications).
+  
