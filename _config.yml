@@ -20,12 +20,15 @@ author: Some Person
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
+  About Us: "aboutme"
+  News:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
-  Something: "https://google.com"
+  Publications: "https://deanattali.com"
+  Digital Twins: "https://google.com"
+  Cyber Security: "https://gmail.com"
+  Creative Resources: "https://bbc.com"
+  Get in touch: "https://github.com"
 
 ################
 # --- Logo --- #
