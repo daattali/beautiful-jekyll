@@ -3,7 +3,7 @@ layout: page
 title: About us
 
 ---
-### Bio
+
 
 ![Gif 12271](assets/img/12271.gif){:style="display:block; margin-left:auto; margin-right:auto"}{: width="450" }
 
