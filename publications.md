@@ -1,7 +1,7 @@
 ---
 title: Publications
 ---
-
+![glitch1013](assets/img/1013.gif)
 will need index function
 
 Michalec, O., Shreeve, B. and Rashid, A. (2023) Who will keep the lights on? Expertise and inclusion in cyber security visions of future energy systems. Energy Research and Social Science, 
@@ -17,5 +17,5 @@ Michalec, O., Milyaeva, S. and Rashid, A. (2021) Reconfiguring governance: How c
 
 Michalec, O., van der Linden, D., Milyaeva, S. and Rashid, A. (2020) Industry Responses to the European Directive on Security of Network and Information Systems (NIS): Understanding policy implementation practices across critical infrastructures. Symposium on Usable Privacy and Security
 
-![glitch1013](assets/img/1013.gif)
-#cover-img: "assets/img/1013.gif"
+
+
