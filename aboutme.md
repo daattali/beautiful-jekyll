@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About us
-subtitle: Why you'd want to go on a date with me
+subtitle: *
 ---
 ### Bio
 Ola’s bio goes hereLinks to Gscholar, Orcid, UoB profile
