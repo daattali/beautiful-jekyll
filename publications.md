@@ -1,7 +1,7 @@
 ---
 title: Publications
 ---
-![glitch1013](assets/img/1013.gif){:style="display:block; margin-left:auto; margin-right:auto"}{: width="450" }
+![glitch1013](assets/img/1013.gif){:style="display:block; margin-left:auto; margin-right:auto"}{: width="350" }{: height="350" }
 will need index function
 
 Michalec, O., Shreeve, B. and Rashid, A. (2023) Who will keep the lights on? Expertise and inclusion in cyber security visions of future energy systems. Energy Research and Social Science, 
