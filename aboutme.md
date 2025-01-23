@@ -12,7 +12,7 @@ Ola’s research interests revolve around understanding how experts from diverse
 [Orcid](https://orcid.org/0000-0003-3807-0197)
 [University of Bristol profile](https://www.bristol.ac.uk/people/person/Ola-Michalec-71ecc9a4-46cc-44f7-b382-ab767d7dc1c5/)
 
-insert Ola's headshot
+![my headshot](assets/img/2019 CDT Cyber Oct machines small-6.jpg)
 
 ### Collaborators
 We would like to credit the following collaborators who contributed to the project.....
