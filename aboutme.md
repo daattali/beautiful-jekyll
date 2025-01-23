@@ -5,7 +5,7 @@ title: About us
 ---
 
 
-![Gif 12271](assets/img/12271.gif){:style="display:block; margin-left:auto; margin-right:auto"}{: width="450" }
+![Gif 12271](assets/img/12271.gif){:style="display:block; margin-left:auto; margin-right:auto"}{: width="350" }{: height-="350" }
 
 
 
@@ -23,7 +23,7 @@ Ola’s research interests revolve around understanding how experts from diverse
 
 [University of Bristol profile](https://www.bristol.ac.uk/people/person/Ola-Michalec-71ecc9a4-46cc-44f7-b382-ab767d7dc1c5/)
 
-![my headshot](assets/img/2019 CDT Cyber Oct machines small-6.jpg){: width="450" }
+![my headshot](assets/img/2019 CDT Cyber Oct machines small-6.jpg){: width="350" }{:style="display:block; margin-left:auto; margin-right:auto"}
 
 ### Collaborators
 We would like to credit the following collaborators who contributed to the project.....ESC, illustrators etc ian
