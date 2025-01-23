@@ -24,5 +24,7 @@ We would like to credit the following collaborators who contributed to the proje
 ### Acknowledgements
 We would like to thank our funders for enabling us to share our research, public engagement and conference activities: Bristol Digital Futures Institute, Bristol Cyber Security Group, Innovation Launchpad Network+ (Researcher-in-Residence Scheme), Research England (C-DICE: The Centre for Postdoctoral Development in Cities, Infrastructure and Energy).
 
-insert logos of funders
-
+![bdfi logo](assets/img/bdfi-logo.jpeg)
+![cdice](assets/img/cdice.jpeg)
+![esc logo](assets/img/esc-logo.png)
+![innovation launchpad logo](assets/img/innovationnetwork.png)
