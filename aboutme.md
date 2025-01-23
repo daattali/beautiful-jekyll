@@ -16,7 +16,7 @@ Ola’s research interests revolve around understanding how experts from diverse
 
 [University of Bristol profile](https://www.bristol.ac.uk/people/person/Ola-Michalec-71ecc9a4-46cc-44f7-b382-ab767d7dc1c5/)
 
-![my headshot](assets/img/2019 CDT Cyber Oct machines small-6.jpg){: width="250" }
+![my headshot](assets/img/2019 CDT Cyber Oct machines small-6.jpg){: width="450" }
 
 ### Collaborators
 We would like to credit the following collaborators who contributed to the project.....ESC, illustrators etc
@@ -26,7 +26,7 @@ We would like to thank our funders for enabling us to share our research, public
 
 Logos will need to be resized/ put against the same background colour
 
-![bdfi logo](assets/img/bdfi-logo.jpeg)
-![cdice](assets/img/cdice.jpeg)
-![esc logo](assets/img/esc-logo.png)
-![innovation launchpad logo](assets/img/innovationnetwork.png)
+![bdfi logo](assets/img/bdfi-logo.jpeg){: width="150" }
+![cdice](assets/img/cdice.jpeg){: width="150" }
+![esc logo](assets/img/esc-logo.png){: width="150" }
+![innovation launchpad logo](assets/img/innovationnetwork.png){: width="150" }
