@@ -24,7 +24,7 @@ navbar-links:
   News:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Publications: "https://deanattali.com"
+  Publications: "publications"
   Digital Twins: "https://google.com"
   Cyber Security: "https://gmail.com"
   Creative Resources: "https://bbc.com"
