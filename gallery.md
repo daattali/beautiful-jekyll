@@ -13,7 +13,7 @@ permalink: /gallery/
   </div>
   <div class="gallery-item">
     <img src="{{ '/assets/gallery/image2.jpg' | relative_url }}" alt="Image 2">
-    <div class="caption">The Origin Myth/div>
+    <div class="caption">The Origin Myth</div>
   </div>
   <div class="gallery-item">
     <img src="{{ '/assets/gallery/image3.png' | relative_url }}" alt="Image 3">
