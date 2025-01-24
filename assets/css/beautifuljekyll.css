@@ -1119,8 +1119,8 @@ pre {
   grid-template-columns: repeat(3, 1fr); /* 3 images per row */
   gap: 1rem;
   margin-top: 2rem;
-  grid-auto-rows: 1fr; /* Ensures uniform row heights */
   grid-auto-rows: 300px; /* Ensure all rows are 300px tall, or use 1fr for flexibility */
+  grid-auto-flow: row dense; /* Fills empty spaces more efficiently */
 }
 
 .gallery-item {
