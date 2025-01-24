@@ -4,7 +4,7 @@ layout: page
 permalink: /gallery/
 ---
 
-
+TODO: each project leads to a sub page
 
 <div class="gallery">
   <div class="gallery-item">
