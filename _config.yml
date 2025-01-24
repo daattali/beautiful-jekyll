@@ -21,10 +21,8 @@ author: Ola Michalec
 
 navbar-links:
   About Us: "aboutme"
-  News:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Publications: "publications"
+  News: paginate_path: "/news/page:num/"
+  Public"ations: "publications"
   Digital Twins: "https://google.com"
   Cyber Security: "https://gmail.com"
   Creative Resources: "https://bbc.com"
