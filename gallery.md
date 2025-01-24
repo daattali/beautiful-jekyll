@@ -15,13 +15,17 @@ permalink: /gallery/
   <div class="gallery-item">
     <img src="{{ '/assets/gallery/image3.png' | relative_url }}" alt="Image 3">
   </div>
-   <div class="gallery-item">
-    <img src="{{ '/assets/gallery/image4.jpg' | relative_url }}" alt="Image 4">
-      <div class="gallery-item">
+  <div class="gallery-item">
+     <img src="{{ '/assets/gallery/image4.jpg' | relative_url }}" alt="Image 4">
+  </div>
+  <div class="gallery-item">
     <img src="{{ '/assets/gallery/image5.png' | relative_url }}" alt="Image 5">
-         <div class="gallery-item">
+  </div>
+  <div class="gallery-item">
     <img src="{{ '/assets/gallery/image6.png' | relative_url }}" alt="Image 6">
-            <div class="gallery-item">
+  </div>
+  <div class="gallery-item">
     <img src="{{ '/assets/gallery/image7.jpg' | relative_url }}" alt="Image 7">
+  </div>
   <!-- Add more images as needed -->
 </div>
