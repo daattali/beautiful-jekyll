@@ -23,7 +23,12 @@ navbar-links:
   About Us: "aboutme"
   News: "news"
   Publications: "publications"
-  Digital Twins: "https://google.com"
+  Digital Twins: 
+   - Hype: "Hype"
+   - Policy: "policy-reccomendations"
+   - Public Engagement: "public-engagement"
+   - Ethics: "ethics"
+   - Data sharing: "data-sharing"
   Cyber Security: 
    - Innovation: "cyber1"
    - Regulations: "cyber2"
