@@ -10,6 +10,7 @@ title: About us
 
 
 
+TODO: complete the collaborators and acknowledgements list
 
 This website is built by Dr Ola Michalec. Ola is a Lecturer in Digital Futures based at the University of Bristol Business School (Bristol Digital Futures Institute).
 
