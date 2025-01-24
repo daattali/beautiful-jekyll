@@ -12,7 +12,9 @@ will need filtering function???
 
 #### 2024
 
-* **Consultation response:** data sharing infra + citizen data sharing
+* **Consultation response:** Data sharing infrastructure. Response to Ofgem. By Michalec, O. ![Full text](assets/documents/DSI-consultation-michalec-200924.pdf).
+
+* **Consultation response:**  citizen data sharing
 
 * **Journal article:** "Electric feels: The role of visual methods in energy futuring". In:L Geo: Geography and Environment. By: Michalec, O., Bourne, J., Collver, J., Hart, M. F., Nasr, A., & Ormian, L. [Full text](https://doi.org/10.1002/geo2.156)
   
