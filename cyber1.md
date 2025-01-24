@@ -4,7 +4,7 @@ title: Innovation
 
 ![Cyber1](assets/img/cyber1.gif){:style="display:block; margin-left:auto; margin-right:auto"}{: width="350" }{: height="350" }
 
-
+TODO: rewrite to highlight main findings
 
 ### Understanding disruptive powers of IoT in the energy sector 
 
