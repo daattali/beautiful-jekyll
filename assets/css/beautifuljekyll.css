@@ -1119,6 +1119,8 @@ pre {
   grid-template-columns: repeat(3, 1fr); /* 3 images per row */
   gap: 1rem;
   margin-top: 2rem;
+  grid-auto-rows: 1fr; /* Ensures uniform row heights */
+  grid-auto-rows: 300px; /* Ensure all rows are 300px tall, or use 1fr for flexibility */
 }
 
 .gallery-item {
@@ -1130,7 +1132,7 @@ pre {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures images are cropped to fit the square */
-  max-height: 500px;
+  max-height: 300px;
   border-radius: 8px;
 }
 
