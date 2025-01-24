@@ -1130,7 +1130,7 @@ pre {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures images are cropped to fit the square */
-  max-height: 768px;
+  max-height: 500px;
   border-radius: 8px;
 }
 
