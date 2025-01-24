@@ -3,7 +3,7 @@ title: Regulations
 ---
 ![cyber2](assets/img/cyber2.gif){:style="display:block; margin-left:auto; margin-right:auto"}{: width="350" }{: height="350" }
 
-
+TODO: rewrite to focus on findings
 
 ### How many shades of NIS? Understanding organisational cultures and sectoral differences during cyber security policy implementation
 
