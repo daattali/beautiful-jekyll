@@ -3,7 +3,7 @@ title: "Creative resources"
 layout: page
 permalink: /gallery/
 ---
-# My Gallery
+
 
 <div class="gallery">
   <div class="gallery-item">
