@@ -12,7 +12,7 @@ will need filtering function???
 
 #### 2024
 
-* **Consultation response:** Data sharing infrastructure. Response to Ofgem. By Michalec, O. ![Full text](assets/documents/DSI-consultation-michalec-200924.pdf).
+* **Consultation response:** Data sharing infrastructure. Response to Ofgem. By Michalec, O. [Full text](assets/documents/DSI-consultation-michalec-200924.pdf).
 
 * **Consultation response:**  citizen data sharing
 
