@@ -1,7 +1,7 @@
 ---
 title: Creative resources
 layout: page
-permalink: /assets/gallery
+permalink: "/assets/gallery"
 ---
 <div class="gallery">
   <div class="gallery-item">
