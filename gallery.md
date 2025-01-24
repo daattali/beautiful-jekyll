@@ -1,8 +1,10 @@
 ---
-title: Creative resources
+title: "Creative resources"
 layout: page
-permalink: /assets/gallery/
+permalink: /gallery/
 ---
+# My Gallery
+
 <div class="gallery">
   <div class="gallery-item">
     <img src="{{ '/assets/gallery/image1.jpeg' | relative_url }}" alt="Image 1">
