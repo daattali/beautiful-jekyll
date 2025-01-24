@@ -1114,32 +1114,34 @@ pre {
 #nav-search-text {
   display: none;
 }
-
-@media (max-width: 1199px) {
-  #nav-search-icon {
-    display: none;
-  }
-  #nav-search-text {
-    display: inline-block;
-  }
-}
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
   gap: 1rem;
   margin-top: 2rem;
 }
 
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ensures images are cropped to fit the square */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 image per row on mobile */
   }
 }
 
