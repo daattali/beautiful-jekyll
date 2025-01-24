@@ -1,10 +1,10 @@
 ---
-title: "Creative resources"
+title: "Artworks"
 layout: page
 permalink: /gallery/
 ---
 
-### Click on images to learn more about our creative projects
+#### Click on images to learn more about our creative projects
 
 <div class="gallery">
   <div class="gallery-item">
