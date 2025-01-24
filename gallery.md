@@ -9,6 +9,7 @@ permalink: /gallery/
 <div class="gallery">
   <div class="gallery-item">
     <img src="{{ '/assets/gallery/image1.jpeg' | relative_url }}" alt="Image 1">
+    <div class="caption">Digital twin stories</div>
   </div>
   <div class="gallery-item">
     <img src="{{ '/assets/gallery/image2.jpg' | relative_url }}" alt="Image 2">
