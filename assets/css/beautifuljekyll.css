@@ -1126,6 +1126,7 @@ pre {
 .gallery-item {
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item img {
@@ -1134,8 +1135,13 @@ pre {
   object-fit: cover; /* Ensures images are cropped to fit the square */
   max-height: 300px;
   border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
+.gallery-item:hover img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
