@@ -4,17 +4,15 @@ title: Publications
 ![glitch1013](assets/img/1013.gif){:style="display:block; margin-left:auto; margin-right:auto"}{: width="350" }{: height="350" }
 
 
-will need filtering function???
-
 #### 2025
 
-**Coming up: more peer-reviewed articles and podcast episodes!**
+  **Coming up: reports, peer-reviewed articles and podcast episodes!**
 
 #### 2024
 
-* **Consultation response:** Data sharing infrastructure. Response to Ofgem. By Michalec, O. [Full text](assets/documents/DSI-consultation-michalec-200924.pdf).
+* **Consultation response:** "Data sharing infrastructure". Response to Ofgem. By Michalec, O. [Full text](assets/documents/DSI-consultation-michalec-200924.pdf).
 
-* **Consultation response:**  citizen data sharing
+* **Consultation response:** "Data Sharing in a Digital Future". Response to Ofgem. By REPHRAIN Research Centre, led by Michalec, O., [Full text](assets/documents/Ofgem-data-sharing-response-UoB-REPHRAIN.pdf) 
 
 * **Journal article:** "Electric feels: The role of visual methods in energy futuring". In:L Geo: Geography and Environment. By: Michalec, O., Bourne, J., Collver, J., Hart, M. F., Nasr, A., & Ormian, L. [Full text](https://doi.org/10.1002/geo2.156)
   
@@ -28,14 +26,13 @@ will need filtering function???
 
 * **Report:** "What’s next for the NIS Regulations? Findings from the RITICS Fellowship". Michalec, O.  [Full text](https://ritics.org/wp-content/uploads/2023/06/Whats-next-for-NIS-RITICS-report-final-310123.pdf)
 
-
 #### 2022
 
 * **Journal article:** "When the future meets the past: can safety and cyber security coexist in modern critical infrastructures?" By Michalec, O., Milyaeva, S. and Rashid, A. In: Big Data and Society. [Full text](https://doi.org/10.1177/20539517221108369)
 
 * **Journal article:** "Data Ethics Club: Creating a Collaborative Space to Discuss Data Ethics". By Di Cara, N., Zelenka, N., Day, H., Bennet, E., Hanschke, V., Maggio, V., Michalec, O et al. In: Patterns. [Full text](https://doi.org/10.1016/j.patter.2022.100537)
 
-* **Consultation response:** Delivering a smart and secure electricity system: the interoperability and cyber security of energy smart appliances and remote load control. BEIS Consultation, sole author
+* **Consultation response:** "Delivering a smart and secure electricity system: the interoperability and cyber security of energy smart appliances and remote load control". Response to BEIS. By Michalec, O., [Full text](assets/documents/Consultation_response_form-ESA-Michalec270922.pdf)
 
 * **Briefing:** How to talk about security of emerging technologies? By Michalec, O. [Full text](https://petras-iot.org/wp-content/uploads/2022/03/How-to-talk-about-cybersecurity-of-emerging-technologies.pdf)
 
