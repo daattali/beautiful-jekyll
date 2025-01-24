@@ -24,7 +24,9 @@ navbar-links:
   News: "news"
   Publications: "publications"
   Digital Twins: "https://google.com"
-  Cyber Security: "https://gmail.com"
+  Cyber Security: 
+   - Innovation: "cyber1"
+   - Regulations: "cyber2"
   Artworks: "gallery"
   
 
