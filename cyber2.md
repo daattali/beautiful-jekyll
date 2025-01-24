@@ -12,11 +12,11 @@ The project developed an empirically-grounded understanding of the role and impa
 *Project team*: Prof. Awais Rashid (PI), Dr Dirk van der Linden (Co-I), Dr Sveta Milyaeva (Co-I), Dr Ola Michalec (PDRA). We were funded by the Research Institute in Trustworthy Inter-connected Cyber-Physical Systems (RITICS).
 
 *Outputs:*
-* **Journal article:** "When the future meets the past: can safety and cyber security coexist in modern critical infrastructures?" By Michalec, O., Milyaeva, S. and Rashid, A. In: Big Data and Society. [Full text](https://doi.org/10.1177/20539517221108369)
+* **Journal article:** "When the future meets the past: can safety and cyber security coexist in modern critical infrastructures?". 2022. By Michalec, O., Milyaeva, S. and Rashid, A. In: Big Data and Society. [Full text](https://doi.org/10.1177/20539517221108369)
 
-* **Journal article:** "Reconfiguring governance: How cyber security regulations are reconfiguring water governance". By Michalec, O., Milyaeva, S. and Rashid, A. In: Regulation and Governance. [Full text](https://doi.org/10.1111/rego.12423)
+* **Journal article:** "Reconfiguring governance: How cyber security regulations are reconfiguring water governance". 2022. By Michalec, O., Milyaeva, S. and Rashid, A. In: Regulation and Governance. [Full text](https://doi.org/10.1111/rego.12423)
 
-* **Journal article:**  "Industry Responses to the European Directive on Security of Network and Information Systems (NIS): Understanding policy implementation practices across critical infrastructures". By: Michalec, O., van der Linden, D., Milyaeva, S. and Rashid, A. In: Symposium on Usable Privacy and Security. [Full text](https://www.usenix.org/conference/soups2020/presentation/michalec)
+* **Journal article:**  "Industry Responses to the European Directive on Security of Network and Information Systems (NIS): Understanding policy implementation practices across critical infrastructures". 2022. By: Michalec, O., van der Linden, D., Milyaeva, S. and Rashid, A. In: Symposium on Usable Privacy and Security. [Full text](https://www.usenix.org/conference/soups2020/presentation/michalec)
 
 
 ### Project title: What’s next for the NIS Directive? Extending the community of interest to better understand the Indicators of Good Practice
@@ -28,7 +28,7 @@ This project contributed towards build a community of both cyber security expert
 *Project team*: Dr Ola Michalec (Fellow)
 
 *Outputs*:
-* **Report:** "Resolving Anti-Patterns in Industrial Control Systems Environments". Contribution to the Report by the National Cyber Security Centre Industrial Control Systems Community of Interest. [Full text](https://ritics.org/wp-content/uploads/2023/10/ICS-COI-Resolving-Anti-Patterns.pdf)
+* **Report:** "Resolving Anti-Patterns in Industrial Control Systems Environments". 2023. Contribution to the Report by the National Cyber Security Centre Industrial Control Systems Community of Interest. [Full text](https://ritics.org/wp-content/uploads/2023/10/ICS-COI-Resolving-Anti-Patterns.pdf)
 
-* **Report:** "What’s next for the NIS Regulations? Findings from the RITICS Fellowship". Michalec, O.  [Full text](https://ritics.org/wp-content/uploads/2023/06/Whats-next-for-NIS-RITICS-report-final-310123.pdf)
+* **Report:** "What’s next for the NIS Regulations? Findings from the RITICS Fellowship". 2023. Michalec, O.  [Full text](https://ritics.org/wp-content/uploads/2023/06/Whats-next-for-NIS-RITICS-report-final-310123.pdf)
 
