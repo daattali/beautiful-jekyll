@@ -21,8 +21,8 @@ author: Ola Michalec
 
 navbar-links:
   About Us: "aboutme"
-  News: paginate_path: "/news/page:num/"
-  Public"ations: "publications"
+  News: "news"
+  Publications: "publications"
   Digital Twins: "https://google.com"
   Cyber Security: "https://gmail.com"
   Creative Resources: "https://bbc.com"
