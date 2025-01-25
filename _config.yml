@@ -1,13 +1,9 @@
-###########################################################
-### Welcome to Beautiful Jekyll!
-### This config file is meant for settings that affect your entire website. When you first
-### set up your website you should go through all these settings and edit them, but after
-### the initial set up you won't need to come back to this file often.
-###########################################################
+# Welcome to Beautiful Jekyll!
+# This config file is meant for settings that affect your entire website. When you first
+# set up your website you should go through all these settings and edit them, but after
+# the initial set up you won't need to come back to this file often.
 
-############################
 # --- Required options --- #
-############################
 
 # Name of website
 title: Pengfei Tian
@@ -15,21 +11,17 @@ title: Pengfei Tian
 # Your name to show in the footer
 author: Pengfei Tian
 
-###############################################
 # --- List of links in the navigation bar --- #
-###############################################
 
 navbar-links:
-  CV: "downloads/CV.pdf"
-  Full Publications: "https://scholar.google.dk/citations?user=p4T8WvYAAAAJ&hl=en"
+  CV: "downloads/CV-1.pdf"
+  Publications: "https://scholar.google.dk/citations?user=p4T8WvYAAAAJ&hl=en"
 
-################
 # --- Logo --- #
-################
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/profile1.jpg"
+avatar: "/assets/img/people.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -39,27 +31,21 @@ round-avatar: true
 #title-img: /path/to/image
 
 
-#####################################
 # --- Footer social media links --- #
-#####################################
 
 # Select the social network links that you want to show in the footer.
-# You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "ftian@lila.ai"
-  # rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  # facebook: deanattali
-  # github: daattali
+#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+#  facebook: deanattali
+#  github: daattali
   twitter: pengfei10
-  # patreon: DeanAttali
-  # youtube: "@daattali"
-  # whatsapp: 15551212
+#  patreon: DeanAttali
 #  medium: yourname
-#  reddit: yourname or r/yoursubreddit
+#  reddit: noambrown
 #  linkedin: daattali
 #  xing: yourname
-#  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  spotify: yourname
@@ -70,23 +56,17 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
-#  bluesky: yourname
 #  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: "invite_code" or "users/userid" or "invite/invite_code"
+  google-scholar: citations?user=p4T8WvYAAAAJ
+#  discord: invite/invite_code or users/userid 
 #  kaggle: yourname
 #  hackerrank: yourname
-#  gitlab: yourname
-#  itchio: yourname
-#  untappd: yourname
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
 
-###########################
 # --- General options --- #
-###########################
 
 # Select which social network share links to show in posts
 share-links-active:
@@ -97,47 +77,37 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-#url-pretty: "MyWebsite.com"
-
-# Add the website title to the title of every page
-#title-on-all-pages: true
+#url-pretty: "noambrown.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
+feed_show_excerpt: false
 
 # Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
+feed_show_tags: false
 
 # Add a search button to the navbar
-post_search: true
+post_search: false
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
-edit_page_button: true
-
-# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
-# If this setting is off, then long sub-menu words might get cut off
-# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
-navbar-var-length: false
+edit_page_button: false
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
 
-######################################
 # --- Colours / background image --- #
-######################################
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
@@ -161,12 +131,13 @@ footer-hover-col: "#0085A1"
 #site-js:
 #  - "/assets/js/custom-script.js"
 
-#################################
 # --- Web Analytics Section --- #
-#################################
 
-# Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
-#gtag: "G-XXXXXXXXXX"
+# Fill in your Google Analytics gtag.js ID to track your website using gtag
+#gtag: ""
+
+# Fill in your Google Analytics ID to track your website using Google Analytics
+#google_analytics: ""
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""
@@ -182,14 +153,7 @@ footer-hover-col: "#0085A1"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
-# Google Universal Analytics ID -- deprecated
-# As of July 2023 this is no longer supported by Google! If you are still using `google_analytics`,
-# you should switch to using the `gtag` field above instead.
-#google_analytics: "UA-XXXXXXXX-X"
-
-####################
 # --- Comments --- #
-####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
@@ -211,23 +175,23 @@ footer-hover-col: "#0085A1"
 #  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 # To use Staticman comments, uncomment the following section. You may leave the reCaptcha
-# section commented if you aren't using reCaptcha for spam protection.
-# Using Staticman requires advanced knowledge, please consult
-# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further
-# instructions. For any support with staticman please direct questions to staticman and
+# section commented if you aren't using reCaptcha for spam protection. 
+# Using Staticman requires advanced knowledge, please consult 
+# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further 
+# instructions. For any support with staticman please direct questions to staticman and 
 # not to BeautifulJekyll.
 #staticman:
 #  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
 #  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
-#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well)
+#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
 #    siteKey  : # You need to apply for a site key on Google
 #    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
 
 # To use giscus comments:
-# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository,
+# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository, 
 # (2) Install the giscus app in your repository (details at https://giscus.app),
-# (3) Fill in *all* the parameters below
+# (3) Fill in *all* the parameters below 
 # See more details about giscus and each of the following parameters at https://giscus.app
 #giscus:
 #  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
@@ -240,9 +204,7 @@ footer-hover-col: "#0085A1"
 #  emit-metadata: 0
 #  theme: light
 
-################
 # --- Misc --- #
-################
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
@@ -250,12 +212,10 @@ date_format: "%B %-d, %Y"
 # Facebook App ID
 #fb_app_id: ""
 
-#################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #
-#################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -297,4 +257,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
