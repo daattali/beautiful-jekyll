@@ -5,7 +5,7 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     {% if site.title %}
-    <title>{{ site.title | xml_escape }}</title>
+    <title>{{ site.title | xml_escape }}{% if site.subtitle %} - {{ site.subtitle | xml_escape }}{% endif %}</title>
     {% endif %}
     {% if site.rss-description %}
     <description>{{ site.rss-description | xml_escape }}</description>
@@ -15,7 +15,7 @@ layout: null
     {% assign excerpt_length = site.excerpt_length | default: 50 %}
     {% for post in site.posts limit:20 %}
       <item>
-        <title>{{ post.title | strip_html | xml_escape }}</title>
+        <title>{{ post.title | strip_html | xml_escape }}{% if post.subtitle %} - {{ post.subtitle | strip_html | xml_escape }}{% endif %}</title>
         <description>
           {% if post.subtitle %}{{ post.subtitle | strip_html | xml_escape }} - {% endif %}
           {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}
