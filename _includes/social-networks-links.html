@@ -395,6 +395,18 @@
   </li>
   {%- endif -%}
 
+  {%- if network[0] == "strava" -%}
+  <li class="list-inline-item">
+    <a href="https://www.strava.com/athletes/{{ site.social-network-links.strava}}" title="Strava">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-strava fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Strava</span>
+   </a>
+  </li>
+  {%- endif -%}
+
 {%- endfor -%}
 
 </ul>
