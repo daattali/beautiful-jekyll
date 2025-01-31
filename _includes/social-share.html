@@ -18,6 +18,14 @@
     </a>
   {% endif %}
 
+  {% if site.share-links-active.bluesky %}
+    <a href="https://bsky.app/intent/compose?text={{ page.title | strip_html | url_encode }}%0A{{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-bluesky" title="Share on Bluesky">
+      <span class="fab fa-fw fa-bluesky" aria-hidden="true"></span>
+      <span class="sr-only">Bluesky</span>
+    </a>
+  {% endif %}
+
   {% if site.share-links-active.facebook %}
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
       class="btn btn-social-icon btn-facebook" title="Share on Facebook">
