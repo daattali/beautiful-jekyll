@@ -2,7 +2,7 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     {% if site.title %}
     <title>{{ site.title | xml_escape }}</title>
@@ -16,6 +16,11 @@ layout: null
     {% for post in site.posts limit:20 %}
       <item>
         <title>{{ post.title | strip_html | xml_escape }}</title>
+        {% if post.author %}
+        <dc:creator><![CDATA[ {{ post.author | xml_escape }} ]]></dc:creator>
+        {% elsif site.author %}
+        <dc:creator><![CDATA[ {{ site.author | xml_escape }} ]]></dc:creator>
+        {% endif %}
         <description>
           {% if post.subtitle %}{{ post.subtitle | strip_html | xml_escape }} - {% endif %}
           {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}
