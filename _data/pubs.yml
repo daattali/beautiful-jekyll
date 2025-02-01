@@ -27,6 +27,7 @@
   img: ../pics/splatsim.gif
   links: 
       '[arXiv]': https://arxiv.org/abs/2409.10161
+      '[Code]': https://github.com/qureshinomaan/SplatSim
   short_id: qureshi2024splatsim
   title: "SplatSim: Zero-Shot Sim2Real Transfer of RGB Manipulation Policies Using Gaussian Splatting"
   venue: IEEE International Conference on Robotics and Automation (ICRA), 2025
