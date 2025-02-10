@@ -1,16 +1,34 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Background
+subtitle: Machine/Statistical Learning, NLP,Computer Vision, Quantitative Finance 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scientist:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I am interested in Applying mathematics, statistics,economics and computer science concepts in solving business, economic, finance and industrial problems. 
+- I am broadly interested in applied statistical methods such as non-parametric methods,exact statistical methods, bayesian inference, hierachical/multilevel  models, time series, survival analysis ,Markov Chain Monte-carlo etc. 
+- Machine learning (deep learning, recommender systems, natural language processing, network analysis), Clustering Algorithms,   Dimensionality Reduction   
+- Sample Size Estimation and Power Analysis. 
+- Optimization techniques (linear / nonlinear programming, dynamic / stochastic programming) 
+- Quantitative finance ( Monte Carlo simulation, risk quantification, portfolio optimization, economic scenario generation)  
+- Distributed computer  storage and processing : Spark, SQL ,GPU computing  
 
-What else do you need?
 
-### My story
+###  Programming Languages: 
+-  R, Matlab, Python,Julia,Scala, C++, Octave, SAS, Stata
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+###   My History 
+ I  begun my  academic research career  in  bio-statistical fields such as applying statistical models in investigating  pediatric  and thoracic oncology. I have being involved in applying state of the art machine learning, deep learning and natural language processing techniques in solving problems in the automobile industry, finance and insurance industries. 
+ 
+     
+     
+###  Education
+
+* Ph.D (2016),  Statistics, University of Memphis
+* M.Sc (2014),  Statistics, University of Memphis
+* MA  (2017),  Economics,  University of Memphis
+* M.Sc (2012),  Mathematics, Middle Tennessee State University
+* B.Sc (2007),  Mathematics , Kwame Nkrumah University of Science and Technology
+
