@@ -8,6 +8,7 @@
 - Fixed bug where search results broke if a post title had a backslash (#1279)
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156)
 - Added social network links for GitLab, Bluesky, Whatsapp, Untappd (#1168, #1218, #1299, #1307)
+- Support reddit social network link to either be a subreddit or a user (#1371)
 - Use CSS variables (#661)
 - Added instructions and example on how to fix image links in project sites (#1171)
 - Pagination buttons: use nicer arrows, and don't show text on small screens (#1221)
