@@ -1,7 +1,6 @@
 ---
 ---
 
-hype paper
-TL;DR
+paper tldr
 conference presentation
 guy's image?
