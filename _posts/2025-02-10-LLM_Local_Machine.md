@@ -1,11 +1,14 @@
 ---
 layout: post
-title: Seeral Ways To Run LLM's On Your Local Machine
-subtitle:  LLM's On Zero Dollars
+title:  Run LLM's On Your Local Machine
+subtitle:   LLM's On Zero Dollars
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
 tags: [LLM, Ollama, Huggingface, Llama, VLLM, LM Studio, GPT4All]
 ---
+
+
+**Overview**
 
 
 ### Overview
