@@ -74,10 +74,13 @@ members:
             web_url: https://dv-fenix.github.io/
           - name: Pratik Bhowal (MSR)
             photo_url: /img/members/pratik.jpg
-            web_url: https://www.linkedin.com/in/pratik-bhowal-1066aa198/ 
+            web_url: https://www.linkedin.com/in/pratik-bhowal-1066aa198/
       - name: Undergraduate Students
         full: true
         list:
+          - name: Daniel Guo
+            photo_url: /img/members/danielguo.png
+            web_url: https://www.linkedin.com/in/dlcguo/
       - name: Visiting Students
         full: true
         list:
