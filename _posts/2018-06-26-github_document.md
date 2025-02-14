@@ -486,6 +486,6 @@ DT::datatable(orange[1:10, 1:10])
 
 
 
-#{% include /img/ETF/p1.html %}
+
 
 
