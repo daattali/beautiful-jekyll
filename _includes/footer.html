@@ -15,8 +15,8 @@
         {{ site.author }}
         &nbsp;&bull;&nbsp;
       {% endif %}
-      {{ site.time | date: '%Y' }}
-
+      <! -- {{ site.time | date: '%Y' }} -->
+      {{ site.title | title: 'Copyright © 2023-2028' }}
       {% if site.url-pretty %}
         &nbsp;&bull;&nbsp;
         <span class="author-site">
