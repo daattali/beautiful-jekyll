@@ -21,13 +21,10 @@ author: Edwin Ang
 
 navbar-links:
   Company Info: "aboutme"
- # Announcement:
- #   - Beautiful Jekyll: "https://beautifuljekyll.com"
- #   - Learn markdown: "https://www.markdowntutorial.com/"
   Announcement: "" 
-  Financial Report: ""
-  Other Documents: ""
-  Manner For Dissemination Of Corporate Communications To The Shareholders: ""
+  Other Documents:
+    - Financial Report: ""
+    - Manner For Dissemination Of Corporate Communications To The Shareholders: ""
 
 ################
 # --- Logo --- #
