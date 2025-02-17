@@ -10,21 +10,25 @@
 ############################
 
 # Name of website
-title: My test website
+title: Prosperity Steel United Singapore
 
 # Your name to show in the footer
-author: Some Person
+author: Edwin Ang
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Company Info: "aboutme"
+  	
+ # Announcement:
+ #   - Beautiful Jekyll: "https://beautifuljekyll.com"
+ #   - Learn markdown: "https://www.markdowntutorial.com/"
+  Announcement: "" 
+  Financial Report: ""
+  Other Documents: ""
+  Manner For Dissemination Of Corporate Communications To The Shareholders: ""
 
 ################
 # --- Logo --- #
@@ -32,7 +36,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/PSU_logo.jpeg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
