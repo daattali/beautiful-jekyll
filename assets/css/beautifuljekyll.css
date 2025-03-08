@@ -18,8 +18,8 @@ layout: null
   --footer-link-col: {{ site.footer-link-col | default: "#404040" }};
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
-  /* common CSS variables */
-  --body-font: 'Lora', 'Times New Roman', serif;
+  /* common CSS variables 'Lora', 'Times New Roman', serif */
+  --body-font: 'Ubuntu Mono', monospace;
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mid-col: #808080;
 }
