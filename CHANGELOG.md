@@ -17,6 +17,7 @@
 - Change Twitter icon to X (#1193)
 - Upgraded font-awesome to 6.5.2 (#1330)
 - Fixed tables not having a scroll bar when wider than the page (usually happened on mobile) (#1452)
+- Add author name to RSS feed (#1442)
 
 ## v6.0.1 (2023-06-08)
 
