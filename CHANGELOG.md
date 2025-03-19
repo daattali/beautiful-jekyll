@@ -7,7 +7,7 @@
 - Added `author` YAML parameter to allow specifying the author(s) of a post (#1220)
 - Fixed bug where search results broke if a post title had a backslash (#1279)
 - Fixed bug where hovering over search results showed the text "{desc}" (#1156)
-- Added social network links for GitLab, Bluesky, Whatsapp, Untappd (#1168, #1218, #1299, #1307)
+- Added social network links for GitLab, Bluesky, Whatsapp, Untappd, Strava (#1168, #1218, #1299, #1307, #1443)
 - Support reddit social network link to either be a subreddit or a user (#1371)
 - Use CSS variables (#661)
 - Added instructions and example on how to fix image links in project sites (#1171)
@@ -16,6 +16,8 @@
 - Added `title-on-all-pages` config setting, that adds the website title to all page titles (#1272)
 - Change Twitter icon to X (#1193)
 - Upgraded font-awesome to 6.5.2 (#1330)
+- Fixed tables not having a scroll bar when wider than the page (usually happened on mobile) (#1452)
+- Add author name to RSS feed (#1442)
 
 ## v6.0.1 (2023-06-08)
 

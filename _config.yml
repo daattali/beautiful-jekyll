@@ -82,6 +82,7 @@ social-network-links:
 #  gitlab: yourname
 #  itchio: yourname
 #  untappd: yourname
+#  strava: youruserid
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
@@ -97,6 +98,7 @@ share-links-active:
   facebook: true
   linkedin: true
   vk: false
+  reddit: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
