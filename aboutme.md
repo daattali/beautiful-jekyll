@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About me
-permalink: /about/
-subtitle: Why you'd want to go on a date with me
+permalink: /aboutme/
+subtitle: Introduction
 ---
 
 # 안녕하세요 👋 

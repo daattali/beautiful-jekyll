@@ -20,7 +20,7 @@ author: 전주현 (Jeon Ju Hyeon)
 ###############################################
 
 navbar-links:
-  About Me: "중앙대학교 국제물류학과/응용통계학과 재학중이며, 다양한 Computer Science와 Data Analytics에 대해 학습하고 있습니다다"
+  About Me: "/aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
