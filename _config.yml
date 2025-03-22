@@ -10,17 +10,17 @@
 ############################
 
 # Name of website
-title: My website
+title: 전주현's Github !
 
 # Your name to show in the footer
-author: Some Person
+author: 전주현 (Jeon Ju Hyeon)
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "중앙대학교 국제물류학과/응용통계학과 재학중이며, 다양한 Computer Science와 Data Analytics에 대해 학습하고 있습니다다"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
@@ -50,12 +50,12 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "jhj030722@naver.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
+  github: https://github.com/jhj030722
+  # twitter: daattali
+  # patreon: DeanAttali
   youtube: "@daattali"
   whatsapp: 15551212
 #  medium: yourname
@@ -77,7 +77,7 @@ social-network-links:
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
-#  kaggle: yourname
+kaggle: jhj030722
 #  hackerrank: yourname
 #  gitlab: yourname
 #  itchio: yourname
@@ -260,7 +260,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Asia/Seoul"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
