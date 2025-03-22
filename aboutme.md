@@ -1,16 +1,31 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+permalink: /aboutme/
+subtitle: Introduction
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+# 안녕하세요 👋 
+ 
+저는 머신러닝/딥러닝을 통한 다양한 물류 도메인 문제 해결과 컴퓨터 사이언스에 관심 있는 대학생입니다. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+저는 중앙대학교에서 **국제물류학과**와 **응용통계학과**를 전공하며,  
+데이터 분석과 컴퓨터 사이언스를 공부하고 있는 **전주현**입니다.
 
-What else do you need?
+새로운 것을 배우는 걸 좋아하고,  
+**문제 해결**과 **효율적인 구조화**에 큰 흥미를 느낍니다.  
+최근에는 **딥러닝 기반 챗봇 개발**과 **데이터 기반의 예측 모델링**에 관심을 갖고 학습하는 중입니다.
 
-### My story
+이 블로그는 제가 배우고 경험한 것들을 기록하고,  
+누군가에게는 작은 도움이 될 수 있기를 바라는 마음으로 운영합니다.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+💡 함께 성장하고 소통하는 공간이 되었으면 좋겠어요!  
+감사합니다 :)
+
+---
+
+📫 **Contact**  
+- 📧 Email: jhj030722@naver.com  
+- 💻 GitHub: [github.com/jhj030722](https://github.com/jhj030722)
+
+
