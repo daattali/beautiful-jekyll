@@ -1,0 +1,29 @@
+---
+title: Work Packages
+description: Are you interested in sleep data? The methods? Perhaps explainability? Find below what we do in these fields!
+css: /assets/css/wps.css
+---
+
+<h3 class="text-center"> {{ page.description }} </h3></br>
+
+<div class="row justify-content-center">
+  {% for wp in site.wps %}
+  <div class="p-2 d-flex align-items-stretch">
+    <div class="card mb-3" style="max-width: 540px;">
+      <a href="{{ wp.url }}">
+      <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="/assets/img/thumb.png" class="card-img" alt="Work Package {{ wp.id }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">WP{{ wp.number }}: {{ wp.name }}</h5>
+              <p class="card-text">{{ wp.description }}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>

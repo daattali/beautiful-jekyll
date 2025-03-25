@@ -1,5 +1,60 @@
 ---
 layout: home
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+title: NGS-TEST-ORG
+subtitle: This is the site of NGS-TEST-ORG
+description: Here we are putting some information about the page and what do we do and so.
+css: /assets/css/index.css
 ---
+
+<h3 class="text-center"> {{ page.description }} </h3>
+
+</br>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="about">
+        <img class="d-block w-100 carousel-img" src="assets/img/path.jpg" alt="About">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="card-title">About</h5>
+          <p class="card-text">Find more about the project!</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="wps">
+        <img class="d-block w-100 carousel-img" src="assets/img/path.jpg" alt="Work Packages">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="card-title">Work Packages</h5>
+          <p class="card-text">Discover the many things we do!</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="team">
+        <img class="d-block w-100 carousel-img" src="assets/img/path.jpg" alt="Team">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="card-title">Team</h5>
+          <p class="card-text">Get to know the people behind!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</br>
+
+<h3 class="text-center">Latest posts</h3>

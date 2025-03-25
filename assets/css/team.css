@@ -1,0 +1,8 @@
+.member {
+  transition: all .5s;
+  filter: grayscale(100%);
+}
+
+.member:hover {
+  filter: grayscale(0%);
+}

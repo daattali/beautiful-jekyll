@@ -13,16 +13,16 @@ layout: page
     <article>
 
       {%- capture thumbnail -%}
-        {% if post.thumbnail-img %}
-          {{ post.thumbnail-img }}
-        {% elsif post.cover-img %}
-          {% if post.cover-img.first %}
-            {{ post.cover-img[0].first.first }}
-          {% else %}
-            {{ post.cover-img }}
-          {% endif %}
-        {% else %}
-        {% endif %}
+      {% if post.thumbnail-img %}
+      {{ post.thumbnail-img }}
+      {% elsif post.cover-img %}
+      {% if post.cover-img.first %}
+      {{ post.cover-img[0].first.first }}
+      {% else %}
+      {{ post.cover-img }}
+      {% endif %}
+      {% else %}
+      {% endif %}
       {% endcapture %}
       {% assign thumbnail=thumbnail | strip %}
 
@@ -37,21 +37,21 @@ layout: page
       {% endif %}
 
       <a href="{{ post.url | absolute_url }}">
-        <h2 class="post-title">{{ post.title | strip_html }}</h2>
+        <h4 class="post-title">{{ post.title | strip_html }}</h4>
 
-        {% if post.subtitle %}
-          <h3 class="post-subtitle">
+        <!-- {% if post.subtitle %}
+        <h5 class="post-subtitle">
           {{ post.subtitle | strip_html }}
-          </h3>
-        {% endif %}
+        </h5>
+        {% endif %} -->
       </a>
 
-      {% if post.author %}
-        <span>By <strong>{{ post.author | strip_html }}</strong></span>
-      {% endif %}
+      <!-- {% if post.author %}
+      <span>By <strong>{{ post.author | strip_html }}</strong></span>
+      {% endif %} -->
       <p class="post-meta">
         {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-        Posted on {{ post.date | date: date_format }}
+        {{ post.date | date: date_format }}
       </p>
 
       {% if thumbnail != "" %}
@@ -76,24 +76,26 @@ layout: page
         {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-          <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+        <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
       </div>
       {% endunless %}
 
-      {% if site.feed_show_tags != false and post.tags.size > 0 %}
-      <div class="blog-tags">
-        <span>Tags:</span>
-        <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-        <ul class="d-inline list-inline" role="list">
-          {% for tag in post.tags %}
-          <li class="list-inline-item">
-            <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
+      <!--
+        {% if site.feed_show_tags != false and post.tags.size > 0 %}
+        <div class="blog-tags">
+          <span>Tags:</span>
+          <role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics>
+          <ul class="d-inline list-inline" role="list">
+            {% for tag in post.tags %}
+            <li class="list-inline-item">
+              <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      -->
 
     </article>
   </li>
