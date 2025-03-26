@@ -1,6 +1,7 @@
 ## Unreleased version
 - BREAKING CHANGE: Allow changing the order of the social network links that appear in the footer (#1152)
 - BREAKING CHANGE: `google-scholar` social network link no longer requires the prefix `citations?user=`; if you previously set this parameter, it needs to be updated (#1189)
+- BREAKING CHANGE: `jQuery` is no longer included by default; if you use jQuery, you need to include it yourself (#1375)
 - Added `mathjax` YAML parameter to allow support for MathJax, used to write LaTeX expressions (#195)
 - Added explicit support for favicons, you only need to add a `favicon.ico` file to the root directory
 - The footer of a page always sticks to the bottom, even on short pages (#576)
@@ -18,6 +19,7 @@
 - Upgraded font-awesome to 6.5.2 (#1330)
 - Fixed tables not having a scroll bar when wider than the page (usually happened on mobile) (#1452)
 - Add author name to RSS feed (#1442)
+- Upgraded bootstrap to 5.5.3 (#1375)
 
 ## v6.0.1 (2023-06-08)
 
