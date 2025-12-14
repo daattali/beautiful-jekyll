@@ -1,8 +1,0 @@
-/* Make navbar avatar larger and well aligned */
-.avatar-container .avatar-img {
-  height: 65px !important;     /* increase size; try 60–80px */
-  width: 65px !important;      /* keep it square */
-  margin-top: 4px !important;  /* move it down if too high */
-  border-radius: 50%;          /* keeps it round */
-  object-fit: cover;           /* ensures it crops nicely */
-}
