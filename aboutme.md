@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Get to know me!
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Breena Simi Kumar, and I am a rising junior at Michigan State University, pursuing a degree in Data Science with a minor in Business. I am passionate about the intersection of technology and strategy, and I hope to build a career in technology consulting, ideally internationally. I'm currently a data analytics intern at Health Alliance Plan, where I work alongside other colleagues in order to create data visualizations and use data extraction.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Beyond academics, I have a deep appreciation for travel and exploring diverse cultures. One of my favorite places I’ve visited is Fiji—a destination especially close to my heart, as it’s where my family is from. Additionally, outside of school, I'm a part of a professional business fraternity, Delta Sigma Pi, and a consulting club, SCNO (Students Consulting for Nonprofit Organizations).
 
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+This website is intended to be a living portfolio where I can document and share my growth, projects, and experiences in data science. I hope it will serve as both a reflection of my journey and a hub for staying organized as I continue to develop professionally.
