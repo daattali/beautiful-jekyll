@@ -1,5 +1,17 @@
 name: Beautiful Jekyll CI
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
+
+# Add permissions
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Add concurrency group
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     name: Build Jekyll
@@ -24,3 +36,16 @@ jobs:
         run: bundle exec appraisal jekyll build --future --config _config_ci.yml,_config.yml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+
+  # Add deployment
+  deploy:
+    name: Deploy to GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
