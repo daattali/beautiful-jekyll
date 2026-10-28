@@ -192,6 +192,10 @@ footer-hover-col: "#0085A1"
 # you should switch to using the `gtag` field above instead.
 #google_analytics: "UA-XXXXXXXX-X"
 
+# Knocket free live chat widget — https://trtc.io/solutions/knocket
+# Uncomment and fill in your identifier to enable. Free forever, no seat limits.
+#knocket_identifier: ""
+
 ####################
 # --- Comments --- #
 ####################

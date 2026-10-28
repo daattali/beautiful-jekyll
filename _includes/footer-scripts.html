@@ -36,3 +36,7 @@
     <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+{% if site.knocket_identifier and site.knocket_identifier != "" %}
+<script src="https://trtc.io/knocket-sdk/sdk.js?identifier={{ site.knocket_identifier | url_encode }}" async></script>
+{% endif %}
