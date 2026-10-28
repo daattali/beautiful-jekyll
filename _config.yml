@@ -6,25 +6,29 @@
 ###########################################################
 
 ############################
-# --- Required options --- #
+# --- Required options --- 
 ############################
 
 # Name of website
-title: My website
+title: Energy Futures
 
 # Your name to show in the footer
-author: Some Person
+author: Ola Michalec
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
+  About Us: "aboutme"
+  News:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Publications: "https://deanattali.com"
+  Digital Twins: "https://google.com"
+  Cyber Security: "https://gmail.com"
+  Creative Resources: "https://bbc.com"
+  Get in touch: "https://abc.com"
 
 ################
 # --- Logo --- #
@@ -32,14 +36,14 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+#avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+#round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: "/assets/img/avatar-icon.png"
 
 
 #####################################
@@ -50,17 +54,17 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+ #  email: "someone@example.com"
+ #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+ #  facebook: deanattali
+ #  github: daattali
+#   twitter: daattali
+ #  patreon: DeanAttali
+ #  youtube: "@daattali"
+ #  whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
-#  linkedin: daattali
+ linkedin: "https://www.linkedin.com/in/dr-ola-michalec-95b036a2/"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -73,9 +77,9 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
-#  bluesky: yourname
+bluesky: "https://bsky.app/profile/olamichalec.bsky.social"
 #  ORCID: your ORCID ID
-#  google-scholar: your google scholar
+google-scholar: "https://scholar.google.com/citations?user=abDmargAAAAJ&hl=en&oi=ao"
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
 #  kaggle: yourname
 #  hackerrank: yourname
