@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#003087"/>
+  <defs>
+    <clipPath id="cap">
+      <rect x="10" y="55" width="180" height="90" rx="45"/>
+    </clipPath>
+  </defs>
+  <rect x="10" y="55" width="180" height="90" rx="45" fill="#003087"/>
+  <rect x="100" y="55" width="90" height="90" fill="#005eb8" clip-path="url(#cap)"/>
+  <line x1="100" y1="57" x2="100" y2="143" stroke="white" stroke-width="1.5" opacity="0.25"/>
+  <text x="53" y="112" text-anchor="middle" dominant-baseline="middle"
+    font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="white">Rx</text>
+  <g clip-path="url(#cap)">
+    <polyline points="113,73 130,73 130,83 150,83 150,70 170,70"
+      fill="none" stroke="white" stroke-width="1.2" opacity="0.45"/>
+    <line x1="150" y1="70" x2="150" y2="93" stroke="white" stroke-width="1.2" opacity="0.45"/>
+    <polyline points="113,127 133,127 133,115 158,115 158,127 178,127"
+      fill="none" stroke="white" stroke-width="1.2" opacity="0.45"/>
+    <circle cx="113" cy="73" r="3.5" fill="white" opacity="0.8"/>
+    <circle cx="130" cy="83" r="3" fill="#ffb81c"/>
+    <circle cx="150" cy="83" r="3.5" fill="white" opacity="0.8"/>
+    <circle cx="170" cy="70" r="3.5" fill="white" opacity="0.8"/>
+    <circle cx="150" cy="93" r="3" fill="#ffb81c"/>
+    <circle cx="113" cy="127" r="3.5" fill="white" opacity="0.8"/>
+    <circle cx="133" cy="115" r="3" fill="#ffb81c"/>
+    <circle cx="158" cy="115" r="3" fill="white" opacity="0.6"/>
+    <circle cx="178" cy="127" r="3.5" fill="white" opacity="0.8"/>
+    <rect x="153" y="87" width="10" height="10" rx="2" fill="none" stroke="white" stroke-width="1.2" opacity="0.5"/>
+  </g>
+  <rect x="10" y="55" width="180" height="90" rx="45" fill="none" stroke="white" stroke-width="1.5" opacity="0.15"/>
+</svg>

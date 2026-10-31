@@ -1,8 +1,13 @@
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{% assign header_cover_img = page.cover-img %}
 
-{% if page.cover-img %}
-  <div id="header-big-imgs" data-num-img={% if page.cover-img.first %}{{ page.cover-img.size }}{% else %}1{% endif %}
-    {% for bigimg in page.cover-img %}
+{% if include.type == "post" and page.tags contains "WIALT" %}
+  {% assign header_cover_img = false %}
+{% endif %}
+
+{% if header_cover_img %}
+  <div id="header-big-imgs" data-num-img={% if header_cover_img.first %}{{ header_cover_img.size }}{% else %}1{% endif %}
+    {% for bigimg in header_cover_img %}
     {% assign imgnum = forloop.index %}
     {% for imginfo in bigimg %}
     {% if imginfo[0] %}
@@ -16,8 +21,8 @@
   ></div>
 {% endif %}
 
-<header class="header-section {% if page.cover-img %}has-img{% endif %}">
-<div class="intro-header {% if page.cover-img %} big-img {% endif %}">
+<header class="header-section {% if header_cover_img %}has-img{% endif %}">
+<div class="intro-header {% if header_cover_img %} big-img {% endif %}">
   {% if page.cover-img or page.title %}
   <div class="container-md">
     <div class="row">
@@ -37,7 +42,7 @@
             {% if page.author %}
               By <strong>{{ page.author | strip_html }}</strong><br>
             {% endif%}
-            <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
+            <span class="post-meta">Posted on {% if page.display_date %}{{ page.display_date }}{% else %}{{ page.date | date: date_format }}{% endif %}</span>
             {% if page.last-updated %}
               <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
@@ -53,7 +58,7 @@
     </div>
   </div>
   {% endif %}
-  {% if page.cover-img %}<span class='img-desc'></span>{% endif %}
+  {% if header_cover_img %}<span class='img-desc'></span>{% endif %}
 </div>
 
 {% if page.header-extra %}

@@ -4,6 +4,7 @@ let BeautifulJekyllJS = {
 
   bigImgEl : null,
   numImgs : null,
+  themeMedia : null,
 
   init : function() {
     setTimeout(BeautifulJekyllJS.initNavbar, 10);
@@ -34,6 +35,79 @@ let BeautifulJekyllJS = {
     BeautifulJekyllJS.initImgs();
 
     BeautifulJekyllJS.initSearch();
+    BeautifulJekyllJS.initThemeToggle();
+  },
+
+  initThemeToggle : function() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) {
+      return;
+    }
+
+    BeautifulJekyllJS.themeMedia = window.matchMedia
+      ? window.matchMedia('(prefers-color-scheme: dark)')
+      : null;
+
+    const getSavedTheme = function() {
+      try {
+        const theme = localStorage.getItem('site-theme');
+        return theme === 'light' || theme === 'dark' ? theme : null;
+      } catch (error) {
+        return null;
+      }
+    };
+
+    const applyTheme = function(theme) {
+      const isDark = theme === 'dark';
+      document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+      toggle.setAttribute('aria-pressed', String(isDark));
+      toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      toggle.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+      toggle.querySelector('i').className = isDark
+        ? 'fa-solid fa-sun'
+        : 'fa-solid fa-moon';
+      toggle.querySelector('span').textContent = isDark ? 'Light mode' : 'Dark mode';
+    };
+
+    const applyPreferredTheme = function() {
+      const savedTheme = getSavedTheme();
+      applyTheme(savedTheme || (BeautifulJekyllJS.themeMedia && BeautifulJekyllJS.themeMedia.matches
+        ? 'dark'
+        : 'light'));
+    };
+
+    toggle.addEventListener('click', function() {
+      const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark'
+        ? 'light'
+        : 'dark';
+      applyTheme(nextTheme);
+      try {
+        localStorage.setItem('site-theme', nextTheme);
+      } catch (error) {
+        // The current page still changes theme when storage is disabled.
+      }
+    });
+
+    if (BeautifulJekyllJS.themeMedia) {
+      const handleSystemThemeChange = function() {
+        if (!getSavedTheme()) {
+          applyPreferredTheme();
+        }
+      };
+      if (BeautifulJekyllJS.themeMedia.addEventListener) {
+        BeautifulJekyllJS.themeMedia.addEventListener('change', handleSystemThemeChange);
+      } else if (BeautifulJekyllJS.themeMedia.addListener) {
+        BeautifulJekyllJS.themeMedia.addListener(handleSystemThemeChange);
+      }
+    }
+
+    window.addEventListener('storage', function(event) {
+      if (event.key === 'site-theme') {
+        applyPreferredTheme();
+      }
+    });
+
+    applyPreferredTheme();
   },
 
   initNavbar : function() {

@@ -5,21 +5,31 @@ layout: base
 <div class="intro-header"></div>
 
 <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
-  {% if page.before-content %}
-    <div class="before-content">
-      {% for file in page.before-content %}
-        {% include {{ file }} %}
-      {% endfor %}
-    </div>
-  {% endif %}
+  <div class="row page-layout-row">
+    <div class="{% if page.full-width %} col {% else %} col-12 col-lg-8 page-main-content {% endif %}">
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
 
-  {{ content }}
+      {{ content }}
 
-  {% if page.after-content %}
-    <div class="after-content">
-      {% for file in page.after-content %}
-        {% include {{ file }} %}
-      {% endfor %}
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
-  {% endif %}
+
+    {% unless page.full-width %}
+      <div class="col-12 col-lg-4">
+        {% include tag-sidebar.html %}
+      </div>
+    {% endunless %}
+  </div>
 </main>

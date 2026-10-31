@@ -1,0 +1,52 @@
+{%- capture sidebar_tags -%}
+  {%- for tag in site.tags -%}
+    {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign sidebar_tags = sidebar_tags | split: ',' | sort -%}
+{%- assign post_years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" | sort: 'name' | reverse -%}
+
+<aside class="tag-sidebar" aria-labelledby="tag-sidebar-title">
+  <nav class="post-archive" aria-labelledby="post-archive-title">
+    <h2 id="post-archive-title">Browse by year</h2>
+    <p>Explore published posts by date.</p>
+    <ul class="tag-sidebar-list" role="list">
+      {% for year in post_years %}
+        <li>
+          <details class="tag-sidebar-group">
+            <summary>{{ year.name }} <span>{{ year.items.size }}</span></summary>
+            <ul role="list">
+              {% assign yearly_posts = year.items | sort: 'date' | reverse %}
+              {% for post in yearly_posts %}
+                <li>
+                  <a href="{{ post.url | relative_url }}">{{ post.title | strip_html | escape }}</a>
+                  <time class="post-archive-date" datetime="{{ post.date | date_to_xmlschema }}">{% if post.display_date %}{{ post.display_date }}{% else %}{{ post.date | date: "%B %-d" }}{% endif %}</time>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <section class="topic-archive" aria-labelledby="tag-sidebar-title">
+    <h2 id="tag-sidebar-title">Browse by topic</h2>
+    <p>Choose a tag to find related posts.</p>
+    <ul class="tag-sidebar-list" role="list">
+      {% for tag in sidebar_tags %}
+        <li>
+          <details class="tag-sidebar-group">
+            <summary>{{ tag | escape }} <span>{{ site.tags[tag].size }}</span></summary>
+            <ul role="list">
+              {% assign tagged_posts = site.tags[tag] | sort: 'date' | reverse %}
+              {% for post in tagged_posts %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title | strip_html | escape }}</a></li>
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</aside>

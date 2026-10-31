@@ -1,6 +1,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script>
+    (function () {
+      var theme = null;
+      try {
+        theme = localStorage.getItem('site-theme');
+      } catch (error) {
+        // Storage may be disabled; use the system preference instead.
+      }
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 
   {% capture pagetitle %}
     {%- if page.share-title -%}
