@@ -10,10 +10,14 @@
 ############################
 
 # Name of website
-title: Welcome to Julius's Homepage~
+title: Zhiyu (Julius) Wu
+description: "Zhiyu (Julius) Wu, Ph.D. student at UIUC working on machine learning systems and efficient LLM serving."
 
 # Your name to show in the footer
-author: Some Person
+author: Zhiyu (Julius) Wu
+# Name as it appears in author lists; bolded automatically in publications
+author-short: Zhiyu Wu
+cv: "/assets/CV.pdf"
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -23,8 +27,8 @@ navbar-links:
   # About Me: "aboutme"
   Projects: "projects"
   Research: "research"
-  Experiences: "experiences"
-  Blogs: "blogs"
+  Experience: "experiences"
+  Blog: "blogs"
 #   Resources:
 #     - Beautiful Jekyll: "https://beautifuljekyll.com"
 #     - Learn markdown: "https://www.markdowntutorial.com/"

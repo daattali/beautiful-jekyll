@@ -1,0 +1,28 @@
+# Publications, newest first. "Zhiyu Wu" in the author list is bolded automatically.
+- title: "JITServe: SLO-aware LLM Serving with Imprecise Request Information"
+  url: https://arxiv.org/abs/2504.20068
+  venue: NSDI
+  year: 2026
+  authors: "Wei Zhang*, Zhiyu Wu*, Yi Mu, Rui Ning, Banruo Liu, Nikhil Sarda, Myungjin Lee, Fan Lai"
+  note: "* Equal contribution"
+
+- title: "CacheFlow: Efficient LLM Serving with 3D-Parallel KV Cache Restoration"
+  url: https://arxiv.org/abs/2604.25080
+  venue: Preprint
+  preprint: true
+  year: 2026
+  authors: "Sean Nian, Jiahao Fang, Qilong Feng, Zhiyu Wu, Fan Lai"
+
+- title: "The ML.ENERGY Benchmark: Toward Automated Inference Energy Measurement and Optimization"
+  url: https://arxiv.org/abs/2505.06371
+  venue: NeurIPS
+  year: 2025
+  authors: "Jae-Won Chung, Jiachen Liu, Jeff J Ma, Ruofan Wu, Oh Jun Kweon, Yuxuan Xia, Zhiyu Wu, Mosharaf Chowdhury"
+  note: "Spotlight"
+
+- title: "Andes: Defining and Enhancing Quality-of-Experience in LLM-Based Text Streaming Services"
+  url: https://arxiv.org/abs/2404.16283
+  venue: Preprint
+  preprint: true
+  year: 2024
+  authors: "Jiachen Liu, Zhiyu Wu, Jae-Won Chung, Fan Lai, Myungjin Lee, Mosharaf Chowdhury"

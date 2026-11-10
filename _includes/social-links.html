@@ -1,0 +1,8 @@
+{% assign links = site.social-network-links %}
+<ul class="social" role="list">
+  {% if links.email %}<li><a href="mailto:{{ links.email }}" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i>{% if include.labels %}<span>Email</span>{% endif %}</a></li>{% endif %}
+  {% if links.github %}<li><a href="https://github.com/{{ links.github }}" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i>{% if include.labels %}<span>GitHub</span>{% endif %}</a></li>{% endif %}
+  {% if links.linkedin %}<li><a href="https://www.linkedin.com/in/{{ links.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i>{% if include.labels %}<span>LinkedIn</span>{% endif %}</a></li>{% endif %}
+  {% if links.scholar %}<li><a href="https://scholar.google.com/citations?user={{ links.scholar }}" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i>{% if include.labels %}<span>Scholar</span>{% endif %}</a></li>{% endif %}
+  {% if include.labels and site.cv %}<li><a href="{{ site.cv | relative_url }}" aria-label="CV" title="CV"><i class="fa-solid fa-file-lines"></i><span>CV</span></a></li>{% endif %}
+</ul>

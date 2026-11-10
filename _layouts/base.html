@@ -1,39 +1,48 @@
----
-common-css:
-  - "/assets/css/bootstrap-social.css"
-  - "/assets/css/beautifuljekyll.css"
-common-ext-css:
-  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    sri: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-  - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  - "https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
-  - "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-common-ext-js:
-  - href: "https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    sri: "sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-  - href: "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    sri: "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    sri: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-common-js:
-  - "/assets/js/beautifuljekyll.js"
----
-
 <!DOCTYPE html>
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
-<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
-{% include head.html %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.url == "/" %}{% assign full_title = site.title %}{% else %}{% assign full_title = page.title | append: " · " | append: site.title %}{% endif %}
+  <title>{{ full_title | strip_html }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace }}">
+  <meta property="og:title" content="{{ full_title | strip_html }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace }}">
+  <meta property="og:image" content="{{ site.avatar | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ site.avatar | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
 
 <body>
-  {% include gtm_body.html %}
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.author }}</a>
+      <nav class="site-nav" aria-label="Main">
+        {% for link in site.navbar-links %}
+          {% assign href = '/' | append: link[1] %}
+          <a href="{{ href | relative_url }}"{% if page.url contains link[1] %} aria-current="page"{% endif %}>{{ link[0] }}</a>
+        {% endfor %}
+        {% if site.cv %}<a href="{{ site.cv | relative_url }}">CV</a>{% endif %}
+      </nav>
+    </div>
+  </header>
 
-  {% include nav.html %}
+  <main class="wrap">
+    {{ content }}
+  </main>
 
-  {{ content }}
-
-  {% include footer.html %}
-
-  {% include footer-scripts.html %}
-
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>&copy; {{ 'now' | date: '%Y' }} {{ site.author }}</span>
+      {% include social-links.html %}
+    </div>
+  </footer>
 </body>
 </html>

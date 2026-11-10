@@ -4,8 +4,16 @@ title: Projects
 # subtitle: 
 ---
 
+### Triton GPU Programming and Attention Kernels
+April 2026 – July 2026; ByteDance AML
+
+- Extended the official Triton tutorials into a structured learning resource, with detailed explanations and implementation walkthroughs for GPU kernel programming.
+- Wrote in-depth tutorials on FlashAttention and other attention variants, connecting algorithmic design to Triton kernel implementations and performance considerations.
+- Co-developed and delivered an eight-session internal lecture series for the ByteDance AML group on Triton fundamentals and attention kernel implementation.
+
 ### ML.ENERGY.LEADERBOARD
 May 2023 – Sept. 2023; Symbiotic Lab
+
 - Developed the [ML.ENERGY Leaderboard](https://ml.energy/leaderboard/?__theme=light), an open-source platform for benchmarking the energy efficiency and NLP performance of LLM models.
 - Defined performance metrics and implemented scripts for optimized batched inference, ensuring precise energy and performance measurements.
 - Contributed to the online Chatbot Arena, gathering data on models' energy consumption and performance.

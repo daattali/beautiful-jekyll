@@ -1,0 +1,12 @@
+<ol class="pubs" role="list">
+  {% for pub in site.data.publications %}
+  <li class="pub">
+    <div class="pub-venue{% if pub.preprint %} is-preprint{% endif %}">{{ pub.venue }} {{ pub.year }}</div>
+    <div class="pub-body">
+      <a class="pub-title" href="{{ pub.url }}">{{ pub.title }}</a>
+      <div class="pub-authors">{{ pub.authors | replace: site.author-short, '<strong>Zhiyu Wu</strong>' }}</div>
+      {% if pub.note %}<div class="pub-note">{{ pub.note }}</div>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>

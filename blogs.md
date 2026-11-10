@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-subtitle: Research update; sharing my life
+title: Blog
+subtitle: Research updates and press
 ---
 
 - [Andes: Defining and Enhancing Quality-of-Experience in LLM-Based Text Streaming Services](https://llm-qoe.github.io/)
