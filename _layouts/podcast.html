@@ -16,18 +16,19 @@ layout: base
       {% endif %}
 
       <article>
+        <p><i class="fa-solid fa-dollar-sign"></i> marks a show I pay to support. If you only try a few, start with those.</p>
         {% for groups in site.data.podcasts %}
         <section>
-          <h3>{{groups.section}} Podcasts</h3>
+          <h3>{{ groups.section }}</h3>
           <ul class="podcasts">
-            {% for podcast in groups.podcasts %} {{ podcast.inspect }}
+            {% for podcast in groups.podcasts %}
+            {% assign home = podcast.url | default: podcast.support | default: podcast.rss %}
             <li class="podcast">
-              <a class="podcast-url" href="{{ podcast.url }}">{{podcast.name}}</a>
-              <a class="podcast-icon" href="{{ podcast.itunes }}"><i class="fa-brands fa-apple fa-lg"></i></a>
-              |<a class="podcast-icon" href="{{ podcast.rss }}"><i class="fa fa-rss-square fa-lg"></i></a>
-              {% if podcast.twitter %} | <a class="podcast-icon" href="https://twitter.com/{{ podcast.twitter }}">
-                <i class="fa-brands fa-twitter-square fa-lg"></i></a>
-              {% endif %}
+              {% if home %}<a class="podcast-url" href="{{ home }}">{{ podcast.name }}</a>{% else %}{{ podcast.name }}{% endif %}
+              {% if podcast.itunes %} <a class="podcast-icon" href="{{ podcast.itunes }}" title="Apple Podcasts"><i class="fa-brands fa-apple fa-lg"></i></a>{% endif %}
+              {% if podcast.rss %} <a class="podcast-icon" href="{{ podcast.rss }}" title="RSS feed"><i class="fa fa-rss-square fa-lg"></i></a>{% endif %}
+              {% if podcast.x %} <a class="podcast-icon" href="https://x.com/{{ podcast.x }}" title="X"><i class="fa-brands fa-x-twitter fa-lg"></i></a>{% endif %}
+              {% if podcast.support %} <a class="podcast-icon" href="{{ podcast.support }}" title="I pay to support this show"><i class="fa-solid fa-dollar-sign fa-lg"></i></a>{% endif %}
             </li>
             {% endfor %}
           </ul>

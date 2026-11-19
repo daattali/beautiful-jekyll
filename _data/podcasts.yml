@@ -1,63 +1,297 @@
-- section: Technology
-  podcasts: 
-    - name: Giant Robots Smashing into other Giant Robots
-      url: http://giantrobots.fm/
-      itunes: https://itunes.apple.com/us/podcast/giant-robots-smashing-into/id535121941
-      rss: http://simplecast.fm/podcasts/271/rss
-      twitter: thoughtbot
-    - name: Art of Product
-      url: http://artofproductpodcast.com/
-      itunes: https://itunes.apple.com/us/podcast/the-art-of-product/id1243627144
-      rss: http://artofproductpodcast.com/rss
-- section: Comedy
+# Generated from a Pocket Casts OPML export by build_podcasts.py.
+# Private/paid feed URLs are intentionally omitted.
+
+- section: "Film"
   podcasts:
-    - name: All Fantasy Everything
-      url: https://headgum.com/all-fantasy-everything
-      itunes: https://itunes.apple.com/us/podcast/id1155320115?at=1000lMpE&ct=hgdotcom-podcast-page
-      rss: https://warp.gumballcdn.com/v1/rss?rss=https://rss.art19.com/all-fantasy-everything
-      twitter: AllFantasyPod
-    - name: Never Not Funny
-      url: https://www.nevernotfunny.com/
-      itunes: https://podcasts.apple.com/us/podcast/never-not-funny/id142348028
-      rss: https://rss.art19.com/never-not-funny
-      twitter: nevernotfunny  
-- section: Film & Pop Culture
+    - name: "Geek On Film"
+      url: "https://geekonfilm.com/"
+      itunes: "https://podcasts.apple.com/us/podcast/geek-on-film/id1637502307"
+      rss: "https://rss.buzzsprout.com/2622803.rss"
+      x: "geekonfilmcom"
+    - name: "The A24 Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/the-a24-podcast/id1351044991"
+      rss: "https://anchor.fm/s/40560b4/podcast/rss"
+    - name: "Academy Conversations Uncut"
+      itunes: "https://podcasts.apple.com/us/podcast/academy-conversations-uncut/id1596351881"
+      rss: "https://anchor.fm/s/71df90c8/podcast/rss"
+    - name: "Ankler Agenda"
+      itunes: "https://podcasts.apple.com/us/podcast/ankler-agenda/id1603732137"
+      rss: "https://feeds.megaphone.fm/AMI5751986813"
+    - name: "The Big Picture"
+      itunes: "https://podcasts.apple.com/us/podcast/the-big-picture/id1439252196"
+      rss: "https://feeds.megaphone.fm/the-big-picture"
+    - name: "Blank Check with Griffin & David"
+      itunes: "https://podcasts.apple.com/us/podcast/blank-check-with-griffin-david/id981330533"
+      rss: "https://feeds.acast.com/public/shows/6ac4309aaef0446505856133"
+      support: "https://www.patreon.com/blankcheck"
+    - name: "The Box Office Podcast"
+      url: "https://scottmendelson.substack.com/"
+      itunes: "https://podcasts.apple.com/us/podcast/id1731232795"
+      rss: "https://api.substack.com/feed/podcast/2074579.rss"
+      support: "https://scottmendelson.substack.com/subscribe"
+    - name: "Critical Darlings"
+      itunes: "https://podcasts.apple.com/us/podcast/critical-darlings/id1885681327"
+      rss: "https://feeds.acast.com/public/shows/6ace5e1794a3daa98e83c0ec"
+    - name: "The Director’s Cut - A DGA Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/the-directors-cut-a-dga-podcast/id1067471691"
+      rss: "https://feed.podbean.com/thedirectorscutadgapodcast/feed.xml"
+    - name: "/Film Weekly"
+      itunes: "https://podcasts.apple.com/us/podcast/film-weekly/id1254073246"
+      rss: "https://feeds.redcircle.com/2c557d25-e308-43fd-a875-b6ef76535c2b"
+    - name: "The Filmcast"
+      url: "https://www.slashfilm.com/category/features/slashfilmcast/"
+      itunes: "https://podcasts.apple.com/us/podcast/the-filmcast-aka-the-slashfilmcast/id281400220"
+      rss: "https://audioboom.com/channels/4997224.rss"
+      x: "slashfilmcast"
+    - name: "Filmspotting"
+      url: "https://www.filmspotting.net/"
+      itunes: "https://podcasts.apple.com/us/podcast/filmspotting/id73330112"
+      rss: "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/d28227f8-56d8-46d9-b2c5-b3d3012db5ab/83c52568-54c6-438a-8751-b3d3012db5c3/podcast.rss"
+      x: "filmspotting"
+      support: "https://filmspotting.supportingcast.fm/"
+    - name: "Filmspotting: Streaming Video Unit (SVU)"
+      itunes: "https://podcasts.apple.com/us/podcast/filmspotting-streaming-video-unit-svu/id527373269"
+      rss: "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/4c8c6932-8105-467b-b755-b441013e0e00/b79146bb-f9df-49a4-a258-b441013e0e12/podcast.rss"
+      x: "filmspotting"
+    - name: "FilmWeek"
+      itunes: "https://podcasts.apple.com/us/podcast/filmweek/id211687974"
+      rss: "https://www.omnycontent.com/d/playlist/acc8cc57-ff7c-44c5-9bd6-ab0900fbdc43/b8eef1ff-8d0d-43d5-b470-ab81016f9909/afcdd804-9a3c-46c9-9771-ab81016f9917/podcast.rss"
+    - name: "IndieWire: Screen Talk"
+      itunes: "https://podcasts.apple.com/us/podcast/indiewire-screen-talk/id893977298"
+      rss: "https://feeds.megaphone.fm/PMC7846561481"
+    - name: "The Letterboxd Show"
+      itunes: "https://podcasts.apple.com/us/podcast/the-letterboxd-show/id1498263634"
+      rss: "https://anchor.fm/s/133d445c/podcast/rss"
+    - name: "Little Gold Men by Vanity Fair"
+      itunes: "https://podcasts.apple.com/us/podcast/little-gold-men-by-vanity-fair/id1042433465"
+      rss: "https://feeds.megaphone.fm/CNE1745045118"
+    - name: "MUBI Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/mubi-podcast/id1569229544"
+      rss: "https://rss.buzzsprout.com/1788738.rss"
+    - name: "The Next Best Picture Podcast"
+      url: "https://nextbestpicture.com/"
+      itunes: "https://podcasts.apple.com/us/podcast/the-next-best-picture-podcast/id1087678387"
+      rss: "https://rss.art19.com/the-next-best-picture-podcast"
+      support: "https://www.patreon.com/NextBestPicture"
+    - name: "The Next Picture Show"
+      itunes: "https://podcasts.apple.com/us/podcast/the-next-picture-show/id1057714949"
+      rss: "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/81061d4f-3e05-4354-a8f2-b441013e0ddc/c493e4ba-8ddc-431b-af4f-b441013e0de6/podcast.rss"
+    - name: "The No Film School Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/the-no-film-school-podcast/id1078804724"
+      rss: "https://feeds.megaphone.fm/NNLLC3229488573"
+    - name: "The Rewatchables"
+      itunes: "https://podcasts.apple.com/us/podcast/the-rewatchables/id1268527882"
+      rss: "https://feeds.megaphone.fm/the-rewatchables"
+    - name: "Ruined with Alison Leiby and Halle Kiefer"
+      itunes: "https://podcasts.apple.com/us/podcast/ruined-with-alison-leiby-and-halle-kiefer/id1528202364"
+      rss: "https://feeds.simplecast.com/LSvHPx7y"
+    - name: "This Had Oscar Buzz"
+      itunes: "https://podcasts.apple.com/us/podcast/this-had-oscar-buzz/id1397188193"
+      rss: "https://fightinginthewarroom.com/THOB/feed/podcast/"
+    - name: "The Town with Matthew Belloni"
+      itunes: "https://podcasts.apple.com/us/podcast/the-town-with-matthew-belloni/id1612131897"
+      rss: "https://feeds.megaphone.fm/the-town-with-matthew-belloni"
+    - name: "Weekend Film Reviews"
+      itunes: "https://podcasts.apple.com/us/podcast/weekend-film-reviews/id73331687"
+      rss: "https://feed.cdnstream1.com/zjb/feed/download/0c/2f/a2/0c2fa2ea-2757-40eb-8135-99b3c9c78156.xml"
+- section: "TV & Pop Culture"
   podcasts:
-    - name: Geek On Film 
-      url: https://geekonfilm.com/
-      itunes: https://podcasts.apple.com/us/podcast/geek-on-film/id1637502307
-      rss: https://anchor.fm/s/93628d7c/podcast/rss
-      twitter: https://x.com/geekonfilmcom
-    - name: /Filmcast
-      url: https://www.slashfilm.com/category/features/slashfilmcast/
-      itunes: https://podcasts.apple.com/us/podcast/the-filmcast-aka-the-slashfilmcast/id281400220
-      rss: https://audioboom.com/channels/4997224.rss
-      twitter: slashfilmcast  
-    - name: Pop Culture Happy Hour
-      url: https://www.npr.org/podcasts/510282/pop-culture-happy-hour
-      itunes: https://podcasts.apple.com/podcast/id278974813?mt=2&at=11l79Y&ct=nprdirectory
-      rss: https://feeds.npr.org/510282/podcast.xml
-      twitter: pchh
-    - name: Slash Film Daily
-      url: https://daily.slashfilm.com/
-      itunes: https://podcasts.apple.com/us/podcast/film-daily/id1254073246
-      rss: https://www.podbean.com/site/podcatcher/index/feedurl/http%253A%252F%252Fdaily.slashfilm.com%252Ffeed.xml
-      twitter: SlashFilmDaily
-    - name: The Big Picture
-      url: https://www.theringer.com/the-big-picture
-      itunes: https://podcasts.apple.com/us/podcast/the-big-picture/id1439252196
-      rss: https://open.spotify.com/show/6mTel3azvnK8isLs4VujvF?si=a3d9d3488f5542cf
-      twitter: TheBigPic
-- section: Politics
+    - name: "Cannonball with Wesley Morris"
+      itunes: "https://podcasts.apple.com/us/podcast/cannonball-with-wesley-morris/id1151436460"
+      rss: "https://feeds.simplecast.com/XguOuIhG"
+    - name: "Critics at Large | The New Yorker"
+      itunes: "https://podcasts.apple.com/us/podcast/critics-at-large-the-new-yorker/id1704902371"
+      rss: "https://feeds.megaphone.fm/CNE4835008151"
+    - name: "Fat Man Beyond"
+      itunes: "https://podcasts.apple.com/us/podcast/fat-man-beyond/id532661418"
+      rss: "https://feeds.soundcloud.com/users/soundcloud:users:79294269/sounds.rss"
+    - name: "House of R"
+      itunes: "https://podcasts.apple.com/us/podcast/house-of-r/id1703286315"
+      rss: "https://feeds.megaphone.fm/house-of-r"
+    - name: "I Think You're Overthinking It"
+      itunes: "https://podcasts.apple.com/us/podcast/i-think-youre-overthinking-it/id355187485"
+      rss: "https://feeds.megaphone.fm/QCD8618740501"
+    - name: "iFanboy - Comic Books"
+      itunes: "https://podcasts.apple.com/us/podcast/ifanboy-comic-books/id90983408"
+      rss: "https://feeds.captivate.fm/ifanboy/"
+    - name: "IMDb Is Obsessed"
+      itunes: "https://podcasts.apple.com/us/podcast/imdb-is-obsessed/id1595906837"
+      rss: "https://rss.art19.com/imdb-is-obsessed"
+    - name: "The Official Game of Thrones Podcast: House of the Dragon"
+      itunes: "https://podcasts.apple.com/us/podcast/the-official-game-of-thrones-podcast-house-of-the-dragon/id1635830141"
+      rss: "https://feeds.megaphone.fm/WMHY9427820236"
+    - name: "Oh, hi! Stories Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/oh-hi-stories-podcast/id1747442202"
+      rss: "https://rss.buzzsprout.com/2366881.rss"
+    - name: "Pop Culture Happy Hour"
+      url: "https://www.npr.org/podcasts/510282/pop-culture-happy-hour"
+      itunes: "https://podcasts.apple.com/podcast/id278974813"
+      rss: "https://feeds.npr.org/510282/podcast.xml"
+      x: "pchh"
+    - name: "Pop Cultured"
+      itunes: "https://podcasts.apple.com/us/podcast/pop-cultured/id1824053249"
+      rss: "https://rss.libsyn.com/shows/585690/destinations/5081745.xml"
+      support: "https://www.patreon.com/popcultured"
+    - name: "Prestige Junkie"
+      itunes: "https://podcasts.apple.com/us/podcast/prestige-junkie/id1746560024"
+      rss: "https://feeds.megaphone.fm/prestigejunkie"
+    - name: "The Prestige TV Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/the-prestige-tv-podcast/id1586390793"
+      rss: "https://feeds.megaphone.fm/tvconcierge"
+    - name: "The Ringer-Verse"
+      itunes: "https://podcasts.apple.com/us/podcast/the-ringer-verse/id1558211702"
+      rss: "https://feeds.megaphone.fm/the-ringer-verse"
+      x: "RingerVerse"
+    - name: "The Sam Sanders Show"
+      itunes: "https://podcasts.apple.com/us/podcast/the-sam-sanders-show/id1771084688"
+      rss: "https://feed.cdnstream1.com/zjb/feed/download/ac/28/59/ac28594c-e1d0-4231-8728-61865cdc80e8.xml"
+    - name: "Still Watching"
+      itunes: "https://podcasts.apple.com/us/podcast/still-watching/id1328561705"
+      rss: "https://feeds.megaphone.fm/CNE6434730989"
+    - name: "The Watch"
+      itunes: "https://podcasts.apple.com/us/podcast/the-watch/id1111739567"
+      rss: "https://feeds.megaphone.fm/the-watch"
+    - name: "X-Ray Vision"
+      itunes: "https://podcasts.apple.com/us/podcast/x-ray-vision/id1581853115"
+      rss: "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/c4d5247b-874a-40bb-a201-b12500ec6f12/743baaf0-fd7c-49ce-b056-b12500ec6f46/podcast.rss"
+- section: "Technology & Product"
   podcasts:
-    - name: Pod Save America
-      url: https://crooked.com/podcast-series/pod-save-america/
-      itunes: https://itunes.apple.com/us/podcast/pod-save-america/id1192761536
-      rss: http://feeds.feedburner.com/pod-save-america
-      twitter: podsaveamerica
-    - name: 538
-      url: https://fivethirtyeight.com/podcasts/
-      itunes: https://itunes.apple.com/us/podcast/fivethirtyeight-elections/id1077418457
-      rss: https://www.espn.com/espnradio/feeds/rss/podcast.xml?id=14554755
-      twitter: FiveThirtyEight
-      
+    - name: "Giant Robots Smashing Into Other Giant Robots"
+      url: "https://giantrobots.fm/"
+      itunes: "https://podcasts.apple.com/us/podcast/giant-robots-smashing-into/id535121941"
+      rss: "https://feeds.fireside.fm/giantrobots/rss"
+      x: "thoughtbot"
+    - name: "The Last Invention"
+      itunes: "https://podcasts.apple.com/us/podcast/the-last-invention/id1839942885"
+      rss: "https://feeds.megaphone.fm/thelastinvention"
+    - name: "Pivot"
+      itunes: "https://podcasts.apple.com/us/podcast/pivot/id1073226719"
+      rss: "https://feeds.megaphone.fm/pivot"
+    - name: "The Product Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/the-product-podcast/id1219400787"
+      rss: "https://rss.buzzsprout.com/90361.rss"
+- section: "Government & Civic Tech"
+  podcasts:
+    - name: "The Business of Government Hour"
+      itunes: "https://podcasts.apple.com/us/podcast/the-business-of-government-hour/id348958188"
+      rss: "https://feeds.feedburner.com/TheBusinessOfGovernmentRadioHour"
+    - name: "Civic Tech Chat"
+      itunes: "https://podcasts.apple.com/us/podcast/civic-tech-chat/id1350640468"
+      rss: "https://feeds.transistor.fm/civic-tech-chat"
+    - name: "Community IT Innovators Nonprofit Technology Topics"
+      itunes: "https://podcasts.apple.com/us/podcast/community-it-innovators-nonprofit-technology-topics/id1536843269"
+      rss: "https://rss.buzzsprout.com/1029925.rss"
+    - name: "Game Changers for Government Contractors"
+      itunes: "https://podcasts.apple.com/us/podcast/game-changers-for-government-contractors/id1124575635"
+      rss: "https://feeds.captivate.fm/gamechangers/"
+    - name: "GovLove - A Podcast About Local Government"
+      itunes: "https://podcasts.apple.com/us/podcast/govlove-a-podcast-about-local-government/id993270804"
+      rss: "https://rss.libsyn.com/shows/105324/destinations/565967.xml"
+    - name: "The GovNavigators Show"
+      itunes: "https://podcasts.apple.com/us/podcast/the-govnavigators-show/id1678987678"
+      rss: "https://rss.buzzsprout.com/2159024.rss"
+      x: "GovNavigators"
+    - name: "Think Civic"
+      itunes: "https://podcasts.apple.com/us/podcast/think-civic/id1549813677"
+      rss: "https://anchor.fm/s/431e16d8/podcast/rss"
+- section: "Arizona & Phoenix"
+  podcasts:
+    - name: "Arizona Technology Council’s TechFocus Member Spotlight Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/arizona-technology-councils-techfocus-member-spotlight/id1800734692"
+      rss: "https://feed.podbean.com/aztechfocus/feed.xml"
+    - name: "AZ TechCast"
+      itunes: "https://podcasts.apple.com/us/podcast/az-techcast/id1773712292"
+      rss: "https://feed.podbean.com/aztechcast/feed.xml"
+    - name: "Phoenix Prosperity Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/phoenix-prosperity-podcast/id1739575515"
+      rss: "https://www.phoenixprosperitypodcast.com/feed.xml"
+    - name: "Venture Cafe Phoenix an Extraordinary Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/venture-cafe-phoenix-an-extraordinary-podcast/id6784308078"
+      rss: "https://api.riverside.com/hosting/CVPHZ9KL.rss"
+      x: "VentureCafePHX"
+- section: "News & Politics"
+  podcasts:
+    - name: "All In with Chris Hayes"
+      itunes: "https://podcasts.apple.com/us/podcast/all-in-with-chris-hayes/id1314170606"
+      rss: "https://feeds.simplecast.com/K5Wu8vub"
+    - name: "The Daily"
+      itunes: "https://podcasts.apple.com/us/podcast/the-daily/id1200361736"
+      rss: "https://feeds.simplecast.com/Sl5CSM3S"
+    - name: "The Ezra Klein Show"
+      itunes: "https://podcasts.apple.com/us/podcast/the-ezra-klein-show/id1548604447"
+      rss: "https://feeds.simplecast.com/kEKXbjuJ"
+    - name: "FiveThirtyEight Politics"
+      itunes: "https://podcasts.apple.com/us/podcast/fivethirtyeight-politics/id1077418457"
+      rss: "https://feeds.megaphone.fm/ESP8794877317"
+    - name: "Hysteria"
+      itunes: "https://podcasts.apple.com/us/podcast/hysteria/id1399025196"
+      rss: "https://audioboom.com/channels/5166619.rss"
+    - name: "Lovett or Leave It"
+      itunes: "https://podcasts.apple.com/us/podcast/lovett-or-leave-it/id1216346463"
+      rss: "https://audioboom.com/channels/5166622.rss"
+    - name: "Mo News"
+      itunes: "https://podcasts.apple.com/us/podcast/mo-news/id1629167542"
+      rss: "https://feeds.megaphone.fm/ADV8678235965"
+    - name: "The NPR Politics Podcast"
+      itunes: "https://podcasts.apple.com/us/podcast/the-npr-politics-podcast/id1057255460"
+      rss: "https://feeds.npr.org/510310/podcast.xml"
+    - name: "Pod Save America"
+      itunes: "https://podcasts.apple.com/us/podcast/pod-save-america/id1192761536"
+      rss: "https://audioboom.com/channels/5166624.rss"
+    - name: "Pod Save the World"
+      itunes: "https://podcasts.apple.com/us/podcast/pod-save-the-world/id1200016351"
+      rss: "https://audioboom.com/channels/5166626.rss"
+    - name: "Political Gabfest"
+      itunes: "https://podcasts.apple.com/us/podcast/political-gabfest/id158004641"
+      rss: "https://my.slate.com/podcasts/feeds/political-gabfest/"
+    - name: "The Powers That Be: Daily"
+      itunes: "https://podcasts.apple.com/us/podcast/the-powers-that-be-daily/id1586269186"
+      rss: "https://rss.amperwave.net/v2/feed/audacynetwork/powers-that-be"
+    - name: "The Rachel Maddow Show"
+      itunes: "https://podcasts.apple.com/us/podcast/the-rachel-maddow-show/id294055449"
+      rss: "https://feeds.simplecast.com/LU_7w7GU"
+    - name: "Still Counting"
+      itunes: "https://podcasts.apple.com/us/podcast/still-counting/id6804845033"
+      rss: "https://audioboom.com/channels/5174627.rss"
+    - name: "Up First from NPR"
+      itunes: "https://podcasts.apple.com/us/podcast/up-first-from-npr/id1222114325"
+      rss: "https://feeds.npr.org/510318/podcast.xml"
+    - name: "What A Day"
+      itunes: "https://podcasts.apple.com/us/podcast/what-a-day/id1483692776"
+      rss: "https://audioboom.com/channels/5166630.rss"
+- section: "Comedy"
+  podcasts:
+    - name: "Alison Rosen Is Your New Best Friend"
+      itunes: "https://podcasts.apple.com/us/podcast/alison-rosen-is-your-new-best-friend/id379453196"
+      rss: "https://rss.libsyn.com/shows/35168/destinations/86968.xml"
+    - name: "All Fantasy Everything"
+      url: "https://headgum.com/all-fantasy-everything"
+      itunes: "https://podcasts.apple.com/us/podcast/id1155320115"
+      rss: "https://rss.art19.com/all-fantasy-everything"
+      x: "AllFantasyPod"
+    - name: "Childish"
+      itunes: "https://podcasts.apple.com/us/podcast/childish/id1440327855"
+      rss: "https://rss.libsyn.com/shows/136370/destinations/844412.xml"
+    - name: "The Daily Show: Ears Edition"
+      itunes: "https://podcasts.apple.com/us/podcast/the-daily-show-ears-edition/id1334878780"
+      rss: "https://feeds.megaphone.fm/QCD2422844292"
+    - name: "Dumb People Town"
+      itunes: "https://podcasts.apple.com/us/podcast/dumb-people-town/id1187357113"
+      rss: "https://rss.art19.com/dumb-people-town-podcast"
+    - name: "How To Survive with Danielle & Kristine"
+      itunes: "https://podcasts.apple.com/us/podcast/how-to-survive-with-danielle-kristine/id1586894471"
+      rss: "https://rss.art19.com/how-to-survive"
+      x: "podhowtosurvive"
+    - name: "Mohr Stories"
+      itunes: "https://podcasts.apple.com/us/podcast/mohr-stories/id448795390"
+      rss: "https://feeds.megaphone.fm/ROOSTER2948275094"
+    - name: "Nerd Poker"
+      itunes: "https://podcasts.apple.com/us/podcast/nerd-poker/id582573564"
+      rss: "https://rss.libsyn.com/shows/98150/destinations/510364.xml"
+      x: "nerdpokerpod"
+    - name: "Never Not Funny"
+      url: "https://www.nevernotfunny.com/"
+      itunes: "https://podcasts.apple.com/us/podcast/never-not-funny/id142348028"
+      rss: "https://rss.art19.com/never-not-funny"
+      x: "nevernotfunny"
+      support: "https://www.nevernotfunny.com/"
