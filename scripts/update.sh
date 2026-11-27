@@ -7,9 +7,9 @@ cd "$(dirname "$0")/.."
 MESSAGE="${1:-Update website}"
 git add -A
 if git diff --cached --quiet; then
-  echo "No changes to publish."
-  exit 0
+  echo "No new changes to save; publishing anything not yet uploaded."
+else
+  git commit -m "$MESSAGE"
 fi
-git commit -m "$MESSAGE"
 git push
 echo "Pushed! The live site updates in about a minute. Progress: the Actions tab of your repository."

@@ -43,6 +43,13 @@ git config user.name  >/dev/null || git config user.name  "$USER_NAME"
 git config user.email >/dev/null || git config user.email "$USER_NAME@users.noreply.github.com"
 if [ -n "$(git ls-files)" ]; then git rm -r -q .; fi
 ( cd "$SITE_DIR" && tar -cf - --exclude=./.git . ) | tar -xf -
+if [ "$BRANCH" != "main" ] && [ "$BRANCH" != "master" ]; then
+  # make the deploy workflow run on pushes to this repository's branch too
+  sed -i.bak "s/branches: \[main, master\]/branches: [main, master, $BRANCH]/" .github/workflows/deploy.yml
+  rm -f .github/workflows/deploy.yml.bak
+  grep -q "branches: \[main, master, $BRANCH\]" .github/workflows/deploy.yml \
+    || { echo "Couldn't add '$BRANCH' to .github/workflows/deploy.yml; add it to the 'branches:' line by hand."; exit 1; }
+fi
 git add -A
 git commit -q -m "Launch new website (old site saved in branch $BACKUP)"
 

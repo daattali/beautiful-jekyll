@@ -59,6 +59,11 @@
 
   // ---- Publication filters (hide empty year groups too) ----
   var chips = document.querySelectorAll('[data-filter]');
+  var countEl = document.getElementById('pub-count');
+  if (countEl) {
+    var total = document.querySelectorAll('[data-tags]').length;
+    countEl.textContent = total + (total === 1 ? ' entry' : ' entries');
+  }
   chips.forEach(function (chip) {
     chip.addEventListener('click', function () {
       var f = chip.getAttribute('data-filter'), shown = 0;

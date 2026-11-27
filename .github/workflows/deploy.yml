@@ -5,7 +5,7 @@ name: Deploy website
 
 on:
   push:
-    branches: [main]
+    branches: [main, master] # whichever your repository uses
   workflow_dispatch: # lets you re-run it by hand from the Actions tab
 
 permissions:

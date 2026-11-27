@@ -3,5 +3,5 @@
 # Usage: bash scripts/preview.sh   then open http://localhost:8000   (Ctrl+C to stop)
 cd "$(dirname "$0")/.."
 PORT="${1:-8000}"
-echo "Preview running at http://localhost:$PORT  (press Ctrl+C to stop)"
-if command -v python3 >/dev/null; then python3 -m http.server "$PORT"; else python -m http.server "$PORT"; fi
+echo "Preview running at http://127.0.0.1:$PORT  (only visible on this computer; press Ctrl+C to stop)"
+if command -v python3 >/dev/null; then python3 -m http.server "$PORT" --bind 127.0.0.1; else python -m http.server "$PORT" --bind 127.0.0.1; fi

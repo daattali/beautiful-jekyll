@@ -32,27 +32,41 @@ scripts/                   setup, preview, update and custom-domain helpers
    `profile.jpg` in `assets/` and replace the `<div class="avatar" …>…</div>` block in `index.html` with
    `<div class="avatar" style="padding:0"><img src="assets/profile.jpg" alt="Aarushi Sehgal"></div>`.
 
-## Publish (about 5 minutes)
+## Publish
 
 You need a free GitHub account, **git** (https://git-scm.com/downloads) and the **GitHub CLI**
-(https://cli.github.com). On Windows, use *Git Bash*.
+(https://cli.github.com), or install both with `conda install -c conda-forge git gh`. On Windows, use *Git Bash*.
 
 ```bash
 gh auth login                 # once: log in to GitHub
-cd path/to/aarushi-website
+cd path/to/aarushi-website    # this unzipped folder
+```
+
+**You already have a `<username>.github.io` site (for example an old Jekyll site on `master`):**
+
+```bash
+bash scripts/replace-old-site.sh
+```
+
+This saves your old site in a branch called `old-site-backup` (nothing is lost), replaces the files on
+your existing branch with the new site, switches Pages to GitHub Actions, and publishes. It also creates
+a folder called `<username>.github.io` next to this one: **make all future changes there.**
+
+**You don't have one yet:**
+
+```bash
 bash scripts/setup.sh         # creates the repo, uploads the site, turns on Pages
 ```
 
-The site goes live at `https://<your-username>.github.io/` within a couple of minutes
-(watch the repository's **Actions** tab). Keep the default repository name: the 404 page assumes
-the site lives at the root of the address.
+Either way, the site is live at `https://<your-username>.github.io/` within a couple of minutes
+(watch the repository's **Actions** tab). The 404 page assumes the site lives at the root of the address.
 
-**Already set up the earlier version?** Replace the files in your existing folder with these
-(delete the old `about/` folder), then run `bash scripts/update.sh "New design"`.
+**Want your old site back?** On GitHub: *Settings › Pages › Source › Deploy from a branch*, and pick
+`old-site-backup`.
 
-**No terminal?** Create a public repository named `<your-username>.github.io`, upload everything
+**No terminal?** In your repository on GitHub, delete the old files, upload everything from this folder
 except `scripts/` and `.github/`, then set **Settings › Pages › Source** to *Deploy from a branch*,
-branch `main`, folder `/ (root)`.
+your branch (`master` or `main`), folder `/ (root)`.
 
 ## Making changes
 
@@ -81,6 +95,6 @@ Then add the DNS records it prints at your registrar, and switch on HTTPS once t
 
 ## Troubleshooting
 
-- **First Actions run failed:** expected, since Pages wasn't on yet. `setup.sh` re-runs it; or click **Run workflow** under *Actions › Deploy website*.
+- **First Actions run failed:** usually because Pages wasn't switched to GitHub Actions yet. Set *Settings › Pages › Source* to **GitHub Actions**, then click **Run workflow** under *Actions › Deploy website*.
 - **"Broken link" in Actions:** the error names the page and the link to fix.
 - **Changes not showing:** wait a minute, then hard-refresh (Ctrl+Shift+R, or Cmd+Shift+R on a Mac).

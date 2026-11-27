@@ -6,6 +6,7 @@
   var COLS = 14, ROWS = 9;
   var state = { seed: 7, level: 'moderate', guess: null, streak: 0 };
   var tissue = root.querySelector('.tissue');
+  var rowsDesc = document.getElementById('tissue-rows');
   var cells = [];
   for (var i = 0; i < COLS * ROWS; i++) {
     var c = document.createElement('span');
@@ -42,6 +43,22 @@
     tissue.setAttribute('aria-label', revealed
       ? 'Illustration of a tissue: ' + s.pct + ' percent of 126 cells carry a mosaic repeat.'
       : 'Illustration of a tissue of 126 cells, some carrying a mosaic repeat. Guess the share below.');
+    // Row-by-row text version of the grid for screen readers (the same detail a sighted player sees)
+    if (rowsDesc) {
+      var lines = ['Tissue sample, ' + ROWS + ' rows of ' + COLS + ' cells. Columns are numbered 1 to ' + COLS + ' from the left.'];
+      for (var r = 0; r < ROWS; r++) {
+        var gained = [], lost = [];
+        for (var c = 0; c < COLS; c++) {
+          var t = s.types[r * COLS + c];
+          if (t === 'exp') gained.push(c + 1); else if (t === 'con') lost.push(c + 1);
+        }
+        var parts = [];
+        if (gained.length) parts.push('gained a unit at column' + (gained.length > 1 ? 's ' : ' ') + gained.join(', '));
+        if (lost.length) parts.push('lost a unit at column' + (lost.length > 1 ? 's ' : ' ') + lost.join(', '));
+        lines.push('Row ' + (r + 1) + ': ' + (parts.length ? parts.join('; ') : 'all cells at the inherited length') + '.');
+      }
+      rowsDesc.textContent = lines.join(' ');
+    }
     readout.textContent = revealed ? s.pct + '%' : '?';
     // four options: the answer plus three decoys
     var rand = rng((state.seed + 101) * 2246822519), offs = [-14, -9, -5, 4, 7, 11, 16], picks = [s.pct], tries = 0;

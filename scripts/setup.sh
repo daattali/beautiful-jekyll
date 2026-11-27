@@ -28,8 +28,26 @@ git branch -M main
 
 # Create the GitHub repository (or reuse it if it already exists) and push
 if gh repo view "$USER_NAME/$REPO" >/dev/null 2>&1; then
-  git remote get-url origin >/dev/null 2>&1 || git remote add origin "https://github.com/$USER_NAME/$REPO.git"
-  git push -u origin main
+  echo ""
+  echo "You already have a repository called $REPO (probably an older website)."
+  echo "Run this instead. It saves the old site in a backup branch and puts the new one live:"
+  echo "    bash scripts/replace-old-site.sh"
+  exit 1
+fi
+# Create the repository and upload. A leftover 'origin' must already point at this repository,
+# so the site can never be pushed somewhere unintended.
+if ORIGIN_URL="$(git remote get-url --push origin 2>/dev/null)"; then
+  if echo "$ORIGIN_URL" | grep -qiE "github\.com[:/]$USER_NAME/$REPO(\.git)?/?$"; then
+    gh repo create "$REPO" --public --description "Personal website of Aarushi Sehgal"
+    git push -u origin main
+  else
+    echo ""
+    echo "This folder's git 'origin' points to: $ORIGIN_URL"
+    echo "That isn't $USER_NAME/$REPO, so nothing was created or uploaded."
+    echo "If this folder should publish to $REPO, run:  git remote remove origin"
+    echo "and then run this script again."
+    exit 1
+  fi
 else
   gh repo create "$REPO" --public --source . --remote origin --push \
     --description "Personal website of Aarushi Sehgal"

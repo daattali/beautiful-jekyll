@@ -53,6 +53,7 @@ a { color: var(--theme); text-decoration: none; }
 a:hover { color: var(--theme-hover); text-decoration: underline; text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; border-radius: 6px; }
 [hidden] { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .wrap { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
 .skip { position: absolute; left: -999px; top: 0; background: var(--text); color: var(--bg); padding: .75rem 1rem; z-index: 100; }
 .skip:focus { left: 1rem; top: 1rem; }
@@ -260,8 +261,8 @@ input[type="range"] { width: 100%; min-height: 40px; margin: 0; accent-color: va
 .site-footer a { color: var(--text-light); border-bottom: 1px solid var(--divider); }
 .site-footer a:hover { color: var(--theme); text-decoration: none; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
-.to-top { position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 40; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--divider); background: var(--bg); color: var(--text); display: grid; place-items: center; cursor: pointer; opacity: 0; transform: translateY(8px); pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
-.to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+.to-top { position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 40; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--divider); background: var(--bg); color: var(--text); display: grid; place-items: center; cursor: pointer; opacity: 0; visibility: hidden; transform: translateY(8px); pointer-events: none; transition: opacity .25s ease, transform .25s ease, visibility 0s linear .25s; }
+.to-top.show { opacity: 1; visibility: visible; transform: none; pointer-events: auto; transition: opacity .25s ease, transform .25s ease, visibility 0s; }
 .to-top:hover { border-color: var(--theme); color: var(--theme); }
 .to-top svg { width: 18px; height: 18px; }
 .toast { position: fixed; left: 50%; bottom: 1.5rem; transform: translateX(-50%); background: var(--text); color: var(--bg); padding: .5rem 1rem; border-radius: 999px; font-weight: 600; font-size: .88rem; z-index: 99; }
