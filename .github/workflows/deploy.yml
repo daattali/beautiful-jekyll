@@ -1,0 +1,72 @@
+# Publishes the website to GitHub Pages every time you push to the main branch.
+# One-time requirement: repository Settings > Pages > Source = "GitHub Actions"
+# (scripts/setup.sh turns this on for you).
+name: Deploy website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # lets you re-run it by hand from the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check every page exists and is complete
+        run: |
+          for f in index.html research/index.html publications/index.html tools/index.html cv/index.html 404.html; do
+            test -f "$f" || { echo "::error::$f is missing"; exit 1; }
+            grep -q "</html>" "$f" || { echo "::error::$f looks incomplete (no closing </html>)"; exit 1; }
+          done
+          test -f assets/Aarushi_Sehgal_CV.pdf || { echo "::error::The CV PDF is missing from assets/"; exit 1; }
+      - name: Check internal links
+        run: |
+          # every href="./..." or "../..." must point at a real file or folder
+          status=0
+          for page in $(find . -name "*.html" -not -path "./.git/*"); do
+            dir=$(dirname "$page")
+            for link in $(grep -oE "href=\"\.{1,2}/[^\"#?]*" "$page" | sed "s/^href=\"//"); do
+              target="$dir/$link"
+              if [ ! -e "$target" ] && [ ! -e "${target}index.html" ]; then
+                echo "::error file=$page::Broken link: $link"; status=1
+              fi
+            done
+          done
+          exit $status
+      - name: Warn about unfilled placeholders
+        run: |
+          if grep -rnE "\[(What you love|A book you|Your favorite beach|A surprising fact)" --include=*.html .; then
+            echo "::warning::Some off-the-clock placeholders on the home page are still in [brackets]."
+          fi
+
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Collect the files to publish
+        run: |
+          mkdir _site
+          # copy everything except the repo machinery (scripts, README, workflow)
+          tar -cf - --exclude=./.git --exclude=./.github --exclude=./scripts --exclude=./README.md --exclude=./_site . | tar -xf - -C _site
+          touch _site/.nojekyll
+          find _site -type f | sort
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

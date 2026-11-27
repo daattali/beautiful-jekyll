@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aarushi Sehgal | tools</title>
+<meta name="description" content="Open-source tools by Aarushi Sehgal for tandem repeat analysis, including prancSTR for detecting somatic mosaicism.">
+<meta property="og:title" content="Aarushi Sehgal | tools">
+<meta property="og:description" content="Open-source tools by Aarushi Sehgal for tandem repeat analysis, including prancSTR for detecting somatic mosaicism.">
+<meta property="og:type" content="website">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav">
+<div class="wrap">
+<a class="brand" href="../">Aarushi Sehgal</a>
+<nav class="nav" aria-label="Main">
+<a href="../">about</a>
+<a href="../research/">research</a>
+<a href="../publications/">publications</a>
+<a href="../tools/" aria-current="page">tools</a>
+<a href="../cv/">cv</a>
+</nav>
+<button type="button" class="theme-toggle" aria-label="Switch theme"></button>
+</div>
+</header>
+<main id="main">
+<div class="wrap">
+<section class="page-head">
+<h1 class="page-title">tools</h1>
+<p class="page-intro">Free, open-source software for analyzing tandem repeats. Jump straight to what fits your data:</p>
+<nav class="chooser" aria-label="Choose a tool">
+<a href="#prancstr">Short reads, mosaic repeats: <b>prancSTR</b></a>
+<a href="#longtr">Long reads, repeat genotypes: <b>LongTR</b></a>
+<a href="#single-cell">Single cells, lineages: <b>single-cell prancSTR</b></a>
+<a href="#pangenome">Pangenomes and biobanks: <b>pangenome toolkit</b></a>
+</nav>
+</section>
+
+<h2 class="section-title">software</h2>
+<article class="spec" id="prancstr">
+<div class="logo" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i class="h"></i><i class="h"></i><i></i><i></i><i class="h"></i><i class="a"></i><i></i><i></i><i></i><i></i><i></i></div>
+<div>
+<h3 class="spec-title"><a href="https://trtools.readthedocs.io/">prancSTR</a><span class="status">Available</span></h3>
+<p class="spec-desc">Detects somatic mosaicism at short tandem repeats from short-read sequencing, with no matched control sample required.</p>
+</div>
+<div class="spec-actions">
+<a class="open" href="https://trtools.readthedocs.io/" aria-label="Open the prancSTR documentation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+<a href="../publications/#prancstr">Original publication</a>
+<a class="ext" href="https://github.com/gymrek-lab/TRTools">GitHub</a>
+</div>
+<dl class="spec-meta">
+<div><dt>Data</dt><dd>Short-read sequencing</dd></div>
+<div><dt>Finds</dt><dd>Mosaic repeat alleles and their fractions</dd></div>
+<div><dt>Control sample</dt><dd>Not needed</dd></div>
+<div><dt>My role</dt><dd>Lead developer</dd></div>
+<div class="wide"><dt>Install (pip)</dt><dd><div class="cmd"><code>pip install trtools</code><button type="button" data-copy="pip install trtools" data-copy-msg="Command copied">Copy</button></div></dd></div>
+<div class="wide"><dt>Then check it works</dt><dd><div class="cmd"><code>prancSTR --help</code><button type="button" data-copy="prancSTR --help" data-copy-msg="Command copied">Copy</button></div></dd></div>
+<div class="full"><dt>Or with conda</dt><dd><div class="cmd"><code>conda install -c conda-forge -c bioconda trtools</code><button type="button" data-copy="conda install -c conda-forge -c bioconda trtools" data-copy-msg="Command copied">Copy</button></div></dd></div>
+</dl>
+</article>
+
+<article class="spec" id="longtr">
+<div class="logo" aria-hidden="true"><i class="a"></i><i class="h"></i><i></i><i class="k"></i><i class="h"></i><i></i><i class="k"></i><i class="a"></i><i></i><i class="k"></i><i class="a"></i><i class="h"></i><i class="k"></i><i class="a"></i><i class="h"></i><i></i></div>
+<div>
+<h3 class="spec-title"><a href="https://github.com/gymrek-lab/LongTR">LongTR</a><span class="status">Available</span></h3>
+<p class="spec-desc">Genotypes tandem repeats genome-wide from long-read sequencing, reporting full allele sequences rather than just lengths.</p>
+</div>
+<div class="spec-actions">
+<a class="open" href="https://github.com/gymrek-lab/LongTR" aria-label="Open LongTR on GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+<a href="../publications/#longtr">Original publication</a>
+<a class="ext" href="https://github.com/gymrek-lab/LongTR">GitHub</a>
+</div>
+<dl class="spec-meta">
+<div><dt>Data</dt><dd>Long-read sequencing</dd></div>
+<div><dt>Finds</dt><dd>Repeat lengths and full allele sequences</dd></div>
+<div><dt>Best for</dt><dd>Long and complex repeats</dd></div>
+<div><dt>My role</dt><dd>Contributor</dd></div>
+</dl>
+</article>
+
+<h2 class="section-title">in development</h2>
+<article class="spec" id="single-cell">
+<div class="logo" aria-hidden="true"><i class="a"></i><i></i><i></i><i></i><i class="a"></i><i class="a"></i><i></i><i></i><i></i><i class="a"></i><i class="h"></i><i></i><i></i><i></i><i class="h"></i><i class="h"></i></div>
+<div>
+<h3 class="spec-title">Single-cell prancSTR<span class="status dev">In development</span></h3>
+<p class="spec-desc">Joint inference of mosaic repeats across thousands of single cells, to reconstruct how cells in a tissue are related.</p>
+</div>
+<div class="spec-actions">
+<a class="open" href="mailto:aasehgal@ucsd.edu?subject=Single-cell%20prancSTR" aria-label="Email about early access to single-cell prancSTR"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+<a href="mailto:aasehgal@ucsd.edu?subject=Single-cell%20prancSTR">Ask about early access</a>
+</div>
+<dl class="spec-meta">
+<div><dt>Data</dt><dd>Single-cell whole-genome sequencing</dd></div>
+<div><dt>Finds</dt><dd>Cell lineages from repeat mutations</dd></div>
+<div class="wide"><dt>Partner</dt><dd>Boston Children’s Hospital</dd></div>
+</dl>
+</article>
+
+<article class="spec" id="pangenome">
+<div class="logo" aria-hidden="true"><i></i><i></i><i class="h"></i><i></i><i></i><i></i><i></i><i></i><i class="a"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="h"></i></div>
+<div>
+<h3 class="spec-title">Pangenome toolkit<span class="status dev">In development</span></h3>
+<p class="spec-desc">Combines population-scale pangenome graphs with biobank data for complex variant analysis, GWAS and fine-mapping.</p>
+</div>
+<div class="spec-actions">
+<a class="open" href="mailto:aasehgal@ucsd.edu?subject=Pangenome%20toolkit" aria-label="Email about the pangenome toolkit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+<a href="mailto:aasehgal@ucsd.edu?subject=Pangenome%20toolkit">Get in touch</a>
+</div>
+<dl class="spec-meta">
+<div><dt>Data</dt><dd>Pangenome graphs and biobank cohorts</dd></div>
+<div><dt>Use it for</dt><dd>GWAS loci and fine-mapping</dd></div>
+<div class="wide"><dt>Built with</dt><dd>Multi-institutional collaborators across the US and Africa</dd></div>
+</dl>
+</article>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>© 2026 Aarushi Sehgal. Built with care in San Diego.</p>
+<div class="footer-links"><a href="mailto:aasehgal@ucsd.edu">email</a><a href="https://www.linkedin.com/in/aarushi-sehgal-352965124/">linkedin</a><a href="../assets/Aarushi_Sehgal_CV.pdf" download>cv (pdf)</a></div>
+</div>
+</footer>
+<button type="button" class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></svg></button>
+</body>
+</html>
