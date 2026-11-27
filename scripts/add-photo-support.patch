@@ -1,0 +1,42 @@
+From 03085fb5fed29ea8225336ecdcc842988b03aef9 Mon Sep 17 00:00:00 2001
+From: aarushi03 <suzy20159@gmail.com>
+Date: Fri, 27 Nov 2026 02:21:38 +0000
+Subject: [PATCH] Support a profile photo in the home page circle
+
+---
+ README.md         | 5 +++--
+ assets/styles.css | 2 ++
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+diff --git a/README.md b/README.md
+index 5d8c6da..1998102 100644
+--- a/README.md
++++ b/README.md
+@@ -29,8 +29,9 @@ scripts/                   setup, preview, update and custom-domain helpers
+ 3. **Facts to double-check:** the paper summaries on `publications/index.html`, and the prancSTR install
+    commands and GitHub links on `tools/index.html`.
+ 4. **Optional photo.** The round mosaic on the home page stands in for a photo. To use yours, put
+-   `profile.jpg` in `assets/` and replace the `<div class="avatar" …>…</div>` block in `index.html` with
+-   `<div class="avatar" style="padding:0"><img src="assets/profile.jpg" alt="Aarushi Sehgal"></div>`.
++   `profile.jpg` in `assets/` and replace the `<div class="avatar" …>…</div>` line in `index.html` with
++   `<div class="avatar photo"><img src="assets/profile.jpg" alt="Aarushi Sehgal"></div>`.
++   A roughly square photo of at least 600 × 600 pixels and under 300 KB works best.
+ 
+ ## Publish
+ 
+diff --git a/assets/styles.css b/assets/styles.css
+index 271c493..0ee7ada 100644
+--- a/assets/styles.css
++++ b/assets/styles.css
+@@ -112,6 +112,8 @@ main { min-height: 60vh; }
+ .avatar i.a { background: var(--mosaic-a); }
+ .avatar i.h { background: var(--mosaic-h); }
+ .avatar img { grid-column: 1 / -1; grid-row: 1 / -1; width: 100%; height: 100%; object-fit: cover; }
++.avatar.photo { display: block; padding: 0; }
++.avatar.photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+ @media (max-width: 760px) {
+   .about { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
+   .avatar { order: -1; width: 140px; padding: 9px; gap: 2px; }
+-- 
+2.43.0
+
